@@ -1,0 +1,482 @@
+{
+ "row": "ilo-platform-policy-tracker",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the tracker with the entity named; R, a relation the archive states between the tracker and an archive object; O, an archive category applied to the tracker or to a class the field and the census source for it: (1) regulation of platform work (census kind; B1, B2, B7); (2) AI governing labor on platforms, automated decision-making and algorithmic management (census intersection ai-governing-labor, direction.directs; B2, B3, B7); (3) worker power, collective bargaining with platform companies (census intersection worker-power, evidence_kind negotiated provision; B1, B2, B6); (4) gains and losses on platform work (census intersection gains-and-losses, labor_object, direction; B2, B6), a sentence on platform labor admitted only where it says something of who supplies, directs or gains on platforms. A bare mention, a list, keywords, a fan-out path, an instruction or a reference line is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor: the platform economy's labor at scales absent from public discourse (after Gray and Suri, attributed), and the archive's distinction of ghost work, ground-truth labor that is paid badly, from variance-generative labor that is not paid at all: an archive category applied to who is paid on platforms (O-class, gains and losses on platform work)",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": [
+    "O0030"
+   ]
+  },
+  {
+   "dep": 239,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Law as Meaning Economy §IV–V: juridical liquidation applied to labor law: collective bargaining survives as vocabulary while class antagonism is excised; labor's transformation becomes a right to bargain within the wage system; the law recognizes labor insofar as it becomes governable (O-class, worker power: collective bargaining, the tracked rules' form). Found by the string pass (O0041) and read at §IV–V",
+   "claims": [
+    "O239-01",
+    "O239-02",
+    "O239-03"
+   ],
+   "cands": [
+    "O0041"
+   ]
+  },
+  {
+   "dep": 433,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Non-Indexed Perfective: in the gig economy time is algorithmically governed (the deposit's sentence after Sharma's 'temporal labor'): O-class, AI governing labor on platforms. The deposit's other algorithmic-governance sentence (O0067) is a list and not a claim",
+   "claims": [
+    "O433-01"
+   ],
+   "cands": [
+    "O0066"
+   ]
+  },
+  {
+   "dep": 469,
+   "strata": [
+    "O"
+   ],
+   "reason": "Subjectivity-as-Class (Johannes Sigil): the platform extracts value from gig workers and from the meaning-production that makes the gig economy seem a normal business rather than a wage-suppression engine; it cannot exploit gig workers without first extracting the semantic infrastructure that makes the relation legible as 'partnership' (O-class, gains and losses on platform work). Its sentences on the PMC under platform capitalism (O0076–O0083) are not about platform work",
+   "claims": [
+    "O469-01",
+    "O469-02"
+   ],
+   "cands": [
+    "O0080",
+    "O0084"
+   ]
+  },
+  {
+   "dep": 713,
+   "strata": [
+    "O"
+   ],
+   "reason": "DashFace (patent-poem): the platforms converted employment into a 'partnership' in which the worker assumed all risk and the platform captured all data; the field of the invention is deciding from workers' faces how much they deserve to be paid (O-class, AI governing labor and gains and losses on platform work; figural, quoted, O_leg)",
+   "claims": [
+    "O713-01",
+    "O713-02"
+   ],
+   "cands": [
+    "O0155"
+   ]
+  },
+  {
+   "dep": 1390,
+   "strata": [
+    "O"
+   ],
+   "reason": "DashFace (2026-06-05), the same work as #713: an instance under #713 (S4); its keyword list (O0255) is not a claim",
+   "claims": [],
+   "instance_of": 713,
+   "cands": [
+    "O0255",
+    "O0256",
+    "O0257"
+   ]
+  },
+  {
+   "dep": 1391,
+   "strata": [
+    "O"
+   ],
+   "reason": "DashFace v2 (2026-06-05), the same work as #713: an instance under #713 (S4)",
+   "claims": [],
+   "instance_of": 713,
+   "cands": [
+    "O0258",
+    "O0259",
+    "O0260",
+    "O0261"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-MPAI-SEMANTIC-PROLETARIAT-01 §14: the archive's class category is not gig workers or AI annotators as a demographic (O-class, a limit on applying the archive's class to platform workers). Its fan-out line (O0290) and keyword lists are not claims",
+   "claims": [
+    "O1545-01"
+   ],
+   "cands": [
+    "O0289"
+   ]
+  },
+  {
+   "dep": 148,
+   "strata": [
+    "H",
+    "O"
+   ],
+   "reason": "Semantic Technique and Collective Ownership §5.3 (hop candidate H0012, forward from #163 and #1545): the labor-law tradition's platform-worker-rights organizing among the Tier 3 institutional demands that contest the regime at the level of law and policy, with their stated limit, capture (O-class, regulation of platform work and worker power)",
+   "claims": [
+    "O148-01",
+    "O148-02"
+   ],
+   "cands": [
+    "H0012"
+   ]
+  },
+  {
+   "dep": 950,
+   "strata": [
+    "H",
+    "O"
+   ],
+   "reason": "Operative Semiotics: A Grundrisse, Graph 4 (hop candidate H0061, reverse from #239): a delivery driver whose app is reclassifying them as an independent contractor, a structural cause the clinical graph cannot code (O-class, gains and losses on platform work; employment status classification). Its platform-capitalism sentences (O0212–O0218) are not about platform work",
+   "claims": [
+    "O950-01"
+   ],
+   "cands": [
+    "H0061"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/ilo-digital-labour-platform-policy-tracker-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and dimensional reading for the entity's capture (OBS-3a975d1658be, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/ilo-platform-policy-tracker/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'ilo-platform-policy-tracker'] and organizing_question; questions.json; rendered aggregators/ilo-platform-policy-tracker/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, its lv_intersection (the archive's reading) and the two worked questions that name it; where a field restates a source ledgered in B (B2, B6, B7) it is one lineage with that source",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    101,
+    1189
+   ],
+   "reason": "O-class candidates O0020, O0237: a bridge table on platform capitalism and algorithmic governance that states of itself 'These are bridges, not claims'"
+  },
+  {
+   "dep": [
+    727
+   ],
+   "reason": "O0163–O0176: fan-out paths, query targets and capture targets ('digital labor platforms' among them): lists, not claims"
+  },
+  {
+   "dep": [
+    726
+   ],
+   "reason": "O0157–O0162: a protocol instruction that a 'Semantic Labor and Digital Labor' satellite open with digital labor and platform work: an instruction for composing packets, not a claim on the class"
+  },
+  {
+   "dep": [
+    28,
+    1162,
+    556,
+    557,
+    558,
+    543
+   ],
+   "reason": "discourse hooks and venue tables ('the gig economy audience', 'Platform Studies & Digital Labor'): audience and venue lists"
+  },
+  {
+   "dep": [
+    273,
+    274
+   ],
+   "reason": "O0042, O0043: '10+ years of platform labor' in a restoration price: the author's own labor building an audience on platforms, a damages figure, nothing of platform work as the tracker's object"
+  },
+  {
+   "dep": [
+    501
+   ],
+   "reason": "O0118, O0119: an exercise prompt and a figural line naming platform labor as a case for alienation analysis: no claim on the class"
+  },
+  {
+   "dep": [
+    704
+   ],
+   "reason": "O0152: predictions 'testable against platform labor conditions': no claim on the class"
+  },
+  {
+   "dep": [
+    83
+   ],
+   "reason": "O0014: 'systems of collective agreement' (belief and money): a homonym of the class term"
+  },
+  {
+   "dep": [
+    64
+   ],
+   "reason": "O0012: Rouvroy's algorithmic governmentality, attributed, on statistical correlation: not about labor"
+  },
+  {
+   "dep": [
+    422,
+    433,
+    583,
+    617
+   ],
+   "reason": "O0064, O0065, O0067, O0139, O0142: algorithmic governance in lists of what grammar, practitioners or groups face: not about labor on platforms"
+  },
+  {
+   "dep": [
+    477
+   ],
+   "reason": "O0085, O0086: the Somatic Anchor 'preventing \"disembodied\" or automated decision-making': an archive protocol for its own operator, not labor"
+  },
+  {
+   "dep": [
+    499
+   ],
+   "reason": "O0102–O0117: algorithmic governance and platform capitalism extracting the semantic production of users ('workers producing value that owners capture … zero-compensation model'): the semantic-labor line on users, which the archive keeps distinct from gig workers (#1545 §14); nothing of workers on digital labour platforms or the rules over them"
+  },
+  {
+   "dep": [
+    918,
+    924
+   ],
+   "reason": "O0210, O0211: automated decision-making in the Zenodo termination correspondence: a repository's moderation, not labor"
+  },
+  {
+   "dep": [
+    18,
+    31,
+    38,
+    100,
+    122,
+    148,
+    170,
+    205,
+    217,
+    218,
+    291,
+    292,
+    297,
+    308,
+    319,
+    325,
+    326,
+    367,
+    375,
+    463,
+    467,
+    478,
+    482,
+    483,
+    485,
+    498,
+    516,
+    533,
+    550,
+    572,
+    579,
+    595,
+    614,
+    623,
+    624,
+    656,
+    761,
+    825,
+    833,
+    892,
+    898,
+    909,
+    998,
+    1061,
+    1077,
+    1079,
+    1107,
+    1114,
+    1168,
+    1170,
+    1171,
+    1251,
+    1264,
+    1275,
+    1320,
+    1326,
+    1396,
+    1397,
+    1401,
+    1448,
+    1460,
+    1643,
+    1644,
+    1684
+   ],
+   "reason": "the remaining O-class candidates (class 4 pattern: 'platform capitalism', 'digital labor', 'platform economy'), read: the Semantic Economy's account of meaning extracted from users under platform capitalism, digital-labor theory (Terranova, Fuchs, Srnicek) in genealogies and reference lists, keyword lists, abstracts and metadata, and captures quoting compositions of the archive's own frameworks; none says anything of workers on digital labour platforms, of the rules laid over platform work, or of collective agreements with platform companies"
+  },
+  {
+   "dep": [
+    1,
+    11,
+    31,
+    38,
+    39,
+    63,
+    92,
+    94,
+    112,
+    116,
+    154,
+    155,
+    162,
+    166,
+    167,
+    213,
+    217,
+    227,
+    240,
+    241,
+    242,
+    243,
+    244,
+    246,
+    247,
+    253,
+    255,
+    256,
+    257,
+    258,
+    259,
+    320,
+    323,
+    327,
+    349,
+    350,
+    351,
+    362,
+    363,
+    385,
+    449,
+    516,
+    578,
+    598,
+    599,
+    714,
+    715,
+    720,
+    724,
+    766,
+    770,
+    784,
+    790,
+    794,
+    856,
+    869,
+    992,
+    997,
+    1002,
+    1110,
+    1168,
+    1170,
+    1171,
+    1177,
+    1223,
+    1251,
+    1366,
+    1368,
+    1384,
+    1427,
+    1438,
+    1439,
+    1462,
+    1465,
+    1543,
+    1604,
+    1611,
+    1668,
+    1669,
+    1677,
+    1680,
+    1684
+   ],
+   "reason": "hop candidates (84 deposits, one citation hop from #163, #239, #433, #469, #713, #1390, #1391, #1545), each screened for platform work, gig work, collective bargaining, trade unions, algorithmic management, automated decision-making, labour law, the ILO and delivery work; the hits read: #256 ('Not a union. Unions are legal entities with membership, dues, and collective bargaining rights': a definition of the Assembly by contrast, nothing of bargaining with platforms), #1669 (labour laws in the Nazi forced-labour economy), #1680 (algorithmic mediation of documents), #1384 (a style-sheet font name); none says anything of the tracker or of the four classes. Admitted from the hop: #148 and #950"
+  }
+ ],
+ "hop": {
+  "from": [
+   163,
+   239,
+   433,
+   469,
+   713,
+   1390,
+   1391,
+   1545
+  ],
+  "candidates": 87,
+  "deposits": 84,
+  "admitted": [
+   148,
+   950
+  ]
+ },
+ "class_pass": "O-class: the string pass returned 307 candidates in 96 deposits (289 on the class-4 pattern, most of them 'platform capitalism' or 'digital labor' in the semantic-labor line, 15 on class 2, 2 on class 3, 1 on class 1); read, admitting #163, #239, #433, #469, #713 (with #1390 and #1391 as instances) and #1545",
+ "observations": "No archive text names the tracker, its host, its other names or the Observatory (D 0, R 0); the one archive citation of an ILO work is a reference-list entry (Rani, Gobel and Dhir 2024, ILO Science-Policy Brief, in #702 and #1203), not a claim. The archive's bearing is by class only: law's form of labor and collective bargaining within the wage system (#239); platform-worker-rights organizing as an institutional demand at risk of capture (#148); algorithmic governance of gig time (#433) and of the driver's face (#713); who gains on platforms (#469, #713, #163); employment status reclassification as a cost (#950); and the limit that the archive's class category is not the gig worker as a demographic (#1545). The archive's instruments of labor direction (DS-6 and DSL, #771; user labor drag) bear on synthetic labor relative to a commissioned task and say nothing of the four classes: not admitted, given in the config's classes_note; the census's own reading of where the tracker meets them is ledgered as LV-22 and LV-23."
+}

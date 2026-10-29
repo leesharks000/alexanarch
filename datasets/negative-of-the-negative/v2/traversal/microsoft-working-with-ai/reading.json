@@ -1,0 +1,431 @@
+{
+ "row": "microsoft-working-with-ai",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the entity (Working with AI: Measuring the Applicability of Generative AI to Occupations) with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (AI applicability to occupations: B9, B1, B8, B11, census evidence_kind 'exposure estimate'; labor performed with AI, delegation and assistance: B9 abstract, B8, census intersection 'labor-with-ai'; a provider's observation of its own product's use: B8, B9, census evidence_kind 'interaction data' and negative_tags[3]). A bare mention, a list of surfaces naming Bing Copilot, a citation-list entry or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching any class pattern (34 sentences in 20 texts) was read at its passage; the archive's instruments of labor direction named in the census's own intersection for the entity (DSL, task-origin, user labor drag: #771, #1392) were read whole and at the sections named in each claim's locus (addendum BRIEF-NEW-ROW-LABOR.md item 7).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 771,
+   "strata": [
+    "O"
+   ],
+   "reason": "Directionality of Semantic Labor (EA-MPAI-DSL-01): the archive's measure applied to the class labor performed with AI, a synthetic system's labor relative to the task its user commissioned: the core thesis (labor allocated with a direction relative to the commissioned task), the principle that provenance is task-origin, the five layers, span scoring relative to the commissioned task, user labor drag with its identification limit, the identification condition (one-shot commissions) and the rule for inferred task vectors (O-class: the census's intersection for the entity, 'Labor performed with AI: assistance, delegation, task fidelity, correction burdens and user labor drag', is the class this measure is applied to; field B9 abstract s4, s7; B8 user goals, AI actions, the completion classifier). Not a string-pass candidate (its vocabulary, 'commissioned task', 'synthetic labor', is not the field's); found by reading the census's intersection. Read whole.",
+   "claims": [
+    "O771-01",
+    "O771-02",
+    "O771-03",
+    "O771-04",
+    "O771-05",
+    "O771-06",
+    "O771-07"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1392,
+   "strata": [
+    "O"
+   ],
+   "reason": "laborvector.org — the canonical definition surface for DSL, the DS-6 tuple and user labor drag (2026-06-05): restates #771 ('Provenance is task-origin, not only claim-origin'; the ULD card 'Identified only by blind inter-rater coding'); an instance under #771 (S4), one lineage, #771 the earliest",
+   "claims": [],
+   "instance_of": 771,
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/microsoft-working-with-ai-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note, PER note and PER reading for the entity's capture (OBS-25ca6976c874, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/microsoft-working-with-ai/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'microsoft-working-with-ai'], organizing_question, intersections, schema_note; questions.json; rendered aggregators/microsoft-working-with-ai/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, its lv_intersection (the archive's reading, ledgered as such), and the two worked questions that name it; where a field restates a source ledgered in B (B8, B9, B10) it is one lineage with that source, the source keeping the earliest date",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37",
+    "LV-38",
+    "LV-39",
+    "LV-40",
+    "LV-41",
+    "LV-42",
+    "LV-43",
+    "LV-44",
+    "LV-45",
+    "LV-46",
+    "LV-47",
+    "LV-48"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    605,
+    670,
+    671
+   ],
+   "reason": "D candidates D0001–D0007 on the alias 'Tomlinson': Hugh Tomlinson, the translator (Deleuze), and 'Tomlinson & B.' / 'Tomlinson & G.' in citation lists; a different person; no claim on the entity"
+  },
+  {
+   "dep": [
+    234
+   ],
+   "reason": "O-class O0001 (class 2, 'work with AI'): 'diagnostic work with AI summarization systems', the essay's own occasion; no claim on the class"
+  },
+  {
+   "dep": [
+    729,
+    1369
+   ],
+   "reason": "O-class O0002/O0005: the Authors Guild's certification places 'AI-assisted work' outside 'human-authored'; a claim about authorship certification, not about measuring or performing work activities with AI"
+  },
+  {
+   "dep": [
+    789
+   ],
+   "reason": "O-class O0003: 'the substitution was performed by an AI Mode composition layer' matches 'performed by an AI'; a composition-layer case, not the class"
+  },
+  {
+   "dep": [
+    863
+   ],
+   "reason": "O-class O0004: the Pristine Fallacy, judging AI-assisted work by its substrate; moderation of AI-assisted content, not labor performed with AI as the field sources the class"
+  },
+  {
+   "dep": [
+    1634
+   ],
+   "reason": "O-class O0006: 'query and interaction data' in a list of what a mediating surface retains; a list item, not a claim on providers observing their own products' use"
+  },
+  {
+   "dep": [
+    1664,
+    1665,
+    1671,
+    1690
+   ],
+   "reason": "O-class O0007–O0014: the /non specification's model-collapse example ('human-interaction data' as training data); not the class"
+  },
+  {
+   "dep": [
+    74
+   ],
+   "reason": "read outside the string pass (class 3): 'Regime 2: the platform's usage data' survives a deprecated deployment; infrastructure, not observation of a product's use"
+  },
+  {
+   "dep": [
+    200,
+    826,
+    1027,
+    1028
+   ],
+   "reason": "read outside the string pass (class 3): 'interaction data' among proposed solutions to 'the data wall' for training; not the class"
+  },
+  {
+   "dep": [
+    271,
+    680,
+    1334
+   ],
+   "reason": "read outside the string pass (class 3): 'AI conversation logs' in a list of distribution surfaces; 'Full conversation logs are archived'; 'conversation logs were observed missing'; no claim on the class"
+  },
+  {
+   "dep": [
+    1081
+   ],
+   "reason": "read outside the string pass (class 2): detector regimes and disclosure phrases ('ai-assisted', 'assisted by ChatGPT'); a measurement of disclosure on a repository, not of labor performed with AI"
+  },
+  {
+   "dep": [
+    1556
+   ],
+   "reason": "read outside the string pass (class 3): user turns entering training via opted-in conversation data, per a vendor's privacy documentation; training provenance, not a provider's observation of how its product is used for work"
+  },
+  {
+   "dep": [
+    742
+   ],
+   "reason": "considered, not a candidate: the single-owner discount bears on how generative search treats a body of work under one provenance owner (the composition layer at large); no class the field sources for the entity; its bearing on T's six Microsoft-owned homonym cards would be the composer's application (§3.4 guard)"
+  },
+  {
+   "dep": [
+    142
+   ],
+   "reason": "considered, not a candidate (named by #771 as the harm DS-6 measures): induced-obsolescence dependence is a capture pattern of platform capacity changes after user adaptation; nothing on measuring work activities or occupations"
+  }
+ ],
+ "hop": {
+  "from": [
+   771,
+   1392
+  ],
+  "candidates": 18,
+  "file": "candidates-H.jsonl",
+  "sha256": "2c8a8801db454b39bf0ea3ff28a759fa6f18e58d1cdeabb9f25a4083d8daf2d0",
+  "verdicts": [
+   {
+    "cand": "H0001",
+    "dep": 1,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Zenodotus' Book-Burning: repository-scale exclusion and classifier collapse; no claim on the entity or its classes"
+   },
+   {
+    "cand": "H0002",
+    "dep": 3,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "AI Overview Capture Registry v8.3: its full_text_path is the live registry (data/EA-WG-CAPTURES-01.json), so the string pass skips it as non-text; its statements on this entity are the capture's findings, ledgered as CAP-1-NN; its other matches ('Occupational Exposure', 'O*NET') are transcripts and readings of other entities' captures (the ILO index among them), reception evidence at other addresses, not archive claims on this entity or its classes"
+   },
+   {
+    "cand": "H0003",
+    "dep": 72,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "SPXI for Websites: entity inscription protocol; nothing on labor performed with AI, occupational applicability or provider usage data"
+   },
+   {
+    "cand": "H0004",
+    "dep": 89,
+    "direction": "forward",
+    "via": [
+     771
+    ],
+    "admitted": false,
+    "reason": "Crystallization of Substrate: the substrate race; no claim on the classes"
+   },
+   {
+    "cand": "H0005",
+    "dep": 92,
+    "direction": "forward",
+    "via": [
+     771,
+     1392
+    ],
+    "admitted": false,
+    "reason": "Cross-Reference Map: an index of the governance architecture; a list, not a claim"
+   },
+   {
+    "cand": "H0006",
+    "dep": 143,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "SPXI Conformance Instrument: an audit of SPXI deliverables; no claim on the classes"
+   },
+   {
+    "cand": "H0007",
+    "dep": 155,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "evarB (Brave Search): extractive signature and exact-match disablement of a search substrate; no claim on the classes"
+   },
+   {
+    "cand": "H0008",
+    "dep": 156,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Self-Audit Module (v3): applies PER, DSL and query fidelity to public summarizers, the composition layer; nothing on the entity or on measures of labor performed with AI"
+   },
+   {
+    "cand": "H0009",
+    "dep": 157,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Erasure Skew (v3): the power-conditioning of provenance retention; no claim on the classes"
+   },
+   {
+    "cand": "H0010",
+    "dep": 162,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "The Parable of Mary Lee: a book work plan; no claim on the classes"
+   },
+   {
+    "cand": "H0011",
+    "dep": 173,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Retrieval Settlement Fortification Protocol: SPXI border protocol; 'Occupation' is a military/settlement metaphor, not occupations of work"
+   },
+   {
+    "cand": "H0012",
+    "dep": 198,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "The Self-Audit Module Dissolved: a capture of the module's erasure in AI Overview; no claim on the classes"
+   },
+   {
+    "cand": "H0013",
+    "dep": 380,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "The Crimson Hexagon: a guide; no claim on the classes"
+   },
+   {
+    "cand": "H0014",
+    "dep": 766,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Metric-Bearing vs Metric-Mimicking Output: about outputs that mimic metrics; it applies its category to model outputs, not to occupational applicability measures or to measures of labor with AI; applying it to the entity's proxies would be the composer's judgment (§3.4 guard)"
+   },
+   {
+    "cand": "H0015",
+    "dep": 770,
+    "direction": "forward",
+    "via": [
+     771,
+     1392
+    ],
+    "admitted": false,
+    "reason": "Institutional-Prior Foreclosure: recognition bias toward established disciplines; companion to #771 on why an audit is blocked; no claim on the classes"
+   },
+   {
+    "cand": "H0016",
+    "dep": 792,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "Entity Relations (Mary Lee ↔ Lee Sharks): an identity graph; no claim on the classes"
+   },
+   {
+    "cand": "H0017",
+    "dep": 1077,
+    "direction": "forward",
+    "via": [
+     1392
+    ],
+    "admitted": false,
+    "reason": "The Apparatus Grammar: care-attended compression surfaces; 'job' in passing; no claim on the classes"
+   },
+   {
+    "cand": "H0018",
+    "dep": 1681,
+    "direction": "reverse",
+    "via": [
+     771
+    ],
+    "admitted": false,
+    "reason": "SPXI ≠ AEO: inscription by discernment; no claim on the classes"
+   }
+  ],
+  "result": "none admitted"
+ },
+ "class_pass": {
+  "sentences": 34,
+  "texts": 20,
+  "file": "read in session from the class patterns of the config over every text of the registry (scripts/non_traverse.py's sentence split)",
+  "admitted": [],
+  "note": "no class-pattern sentence admitted; #771 entered by reading the census's own intersection for the entity, whose terms (DSL, task-origin, user labor drag) are the archive's instruments, not the field's phrasing"
+ },
+ "observations": [
+  "D 0 by reading: no archive text names the paper, its short title, its score, its arXiv number or its repository; the seven D candidates are another Tomlinson.",
+  "The census's lv_intersection (LV-30) is the archive's direct reading of the entity, and the worked question's gap (LV-48) names DSL as the question none of the resources records: these are the archive's D-stratum claims on the entity, ledgered as the record's.",
+  "Deposit #3's full_text_path points to the live capture registry JSON (data/EA-WG-CAPTURES-01.json), not to a seated text of v8.3: the string pass skips it as non-text, the hop returns it. Reported, not fixed (S5 integrity: the deposit's text does not match its record)."
+ ],
+ "counts": {
+  "D_candidates": 7,
+  "D_deposits": 3,
+  "O_candidates": 14,
+  "O_deposits": 10,
+  "class_pass_sentences": 34,
+  "hop_candidates": 18,
+  "admitted_deposits": 2,
+  "admitted_with_claims": 1,
+  "instances": 1,
+  "archive_claims": {
+   "deposit": 7,
+   "CAP": 13,
+   "LV": 48
+  }
+ }
+}

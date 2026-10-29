@@ -1,0 +1,198 @@
+{
+ "row": "ilo-platform-policy-tracker",
+ "address": "ILO Digital Labour Platform Policy Tracker",
+ "entity": "the Digital Labour Platform Policy Tracker (digitallabour.ilo.org) of the International Labour Organization (ILO), a key feature of its Observatory on AI and Work in the Digital Economy: a global tracker of laws, policies and decisions on platform work, launched 14 August 2025, with a component on collective bargaining agreements between trade unions and platform companies added 7 November 2025; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/ilo-platform-policy-tracker/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ilo-platform-policy-tracker",
+  "address": "ILO Digital Labour Platform Policy Tracker",
+  "entity": "the Digital Labour Platform Policy Tracker (digitallabour.ilo.org) of the International Labour Organization (ILO), a key feature of its Observatory on AI and Work in the Digital Economy: a global tracker of laws, policies and decisions on platform work, launched 14 August 2025, with a component on collective bargaining agreements between trade unions and platform companies added 7 November 2025; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/ilo-platform-policy-tracker/)",
+  "row_type": "C (a public entity on which the archive bears: a policy tracker; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\b(Global )?(Digital Labou?r )?(Platform )?Policy Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bDigital Labou?r Platform (Policy )?Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPolicy Tracker on Digital Labou?r Platforms\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bdigitallabour\\.ilo\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bObservatory on (Artificial Intelligence|AI) and Work in the Digital Economy\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "regulation of platform work (laws, policies and decisions on digital labour platforms)",
+    "pattern": "\\b(regulat\\w* (of )?(\\w+ ){0,3}(platform|gig) (work|workers|labou?r|economy)|(platform|gig)[- ](work|workers?|economy) (law|legislation|regulation|polic(y|ies))|digital labou?r platforms?)\\b",
+    "flags": "i",
+    "basis": "field: B2 (the launch page: 'Global tracker of laws, policies, and decisions on platform work'; 'In many countries, governments are taking steps — or are engaged in discussions — to regulate work on digital platforms'); B1 (the tracker's homepage: 'a comprehensive overview of global policies, legislation, collective bargaining agreements, and judicial decisions related to digital labour platforms'); B7 (the Observatory page). The census's kind for the entity ('global policy tracker (a database of legislation, policies and decisions, with a collective bargaining agreements component)') and evidence_kind 'policy tracker' (LV record, census.json rows[slug == 'ilo-platform-policy-tracker'].kind, .evidence_kind)."
+   },
+   {
+    "term": "AI governing labor on platforms: automated decision-making systems (algorithms) and algorithmic management of workers",
+    "pattern": "\\b(automated decision[- ]making|algorithmic(ally)? (management|manag\\w+|govern\\w*|control|boss\\w*)|algorithms? (that )?(manage|govern|direct|allocate)s? (\\w+ ){0,2}(work|workers|labou?r))\\b",
+    "flags": "i",
+    "basis": "field: B2 ('automated decision-making systems (algorithms)' among the issues the tracker sheds light on); B3 (the ILO's platforms portal lists 'Algorithmic management in the workplace' as a related topic); B7 (the Observatory's thematic area 'Algorithmic management'). The census's intersection 'ai-governing-labor' for the entity ('AI governing labor: hiring, surveillance, scheduling, quotas, evaluation and discipline') and its direction.directs ('platform companies, with the automated decision-making systems (algorithms) the tracked rules address') (LV record, census.json .intersections, .direction)."
+   },
+   {
+    "term": "worker power on platforms: collective bargaining agreements between trade unions and platform companies",
+    "pattern": "\\b(collective(ly)? bargain\\w*|collective agreements?|trade unions?|union contracts?)\\b",
+    "flags": "i",
+    "basis": "field: B6 (the CBA expansion: 'agreements concluded between trade unions and platform companies across various countries and sectors'); B2 ('contract termination, including suspension and collective bargaining'); B1 ('includes collective bargaining agreements which are publicly available in Europe'). The census's intersection 'worker-power' ('bargaining, organizing, consent, refusal, contestation and enforceable protections') and evidence_kind 'negotiated provision' for the entity (LV record, census.json .intersections, .evidence_kind)."
+   },
+   {
+    "term": "gains and losses on platforms: remuneration, social security and who captures the gains of platform work",
+    "pattern": "\\b((platform|gig)[- ](work|workers?|economy|capitalism|labou?r)|digital labou?r)\\b",
+    "flags": "i",
+    "basis": "field: B2 ('These challenges include securing adequate incomes, social security, occupational safety and health, and other protections'; remuneration among the tracked issues); B6 ('work and employment on digital labour platforms'). The census's intersection 'gains-and-losses' ('wages, employment, workload, credit, ownership, and who captures productivity gains'), labor_object 'work and employment on digital labour platforms' and direction (supplies 'workers on digital labour platforms'; gains 'not recorded as outcomes') (LV record, census.json .intersections, .labor_object, .direction)."
+   }
+  ],
+  "classes_note": "Four classes, each the census's own kind or intersection for the entity, stated by field sources at the loci given: (1) regulation of platform work, the census kind 'global policy tracker' (B1, B2, B7); (2) AI governing labor, the rules on automated decision-making systems (algorithms) the tracker records (census intersection 'ai-governing-labor', direction.directs; B2, B3, B7); (3) worker power, collective bargaining agreements between trade unions and platform companies (census intersection 'worker-power', evidence_kind 'negotiated provision'; B1, B2, B6); (4) gains and losses on platform work, the incomes, social security and protections the tracked rules address (census intersection 'gains-and-losses', labor_object, direction; B2, B6). Class (4) is the tracked labor itself, and a sentence on platform labor is admitted only where it says something of who supplies, directs or gains on platforms, the census's organizing question. The aliases are the tracker's names in the census's aka and the field (Digital Labour Platform Policy Tracker; Global Policy Tracker on Digital Labour Platforms; Policy Tracker on Digital Labour Platforms; Digital Labour Platform Tracker; Digital Labour Policy Tracker), its host, and the Observatory it is part of (the Observatory is a distinct entity; a candidate naming it alone is read for the tracker and otherwise rejected). The Decent Work in the Platform Economy Convention, 2026 (No. 193) is a distinct entity (card B3) and not an alias. The archive's instruments of labor direction bear on synthetic labor relative to a commissioned task and are not classes of the tracker: the Directionality of Semantic Labor and the Directionality Stack DS-6 (#771, Abstract and §1, 'A synthetic labor surface does not merely produce tokens; it allocates labor'), User Labor Drag (#771 §8), and the semantic-labor line (Semantic Labor as 'the meaning-production extension of digital labor', AXN-0278 table). The census's own reading places the tracker's meeting with them 'at the layer of rules on who may direct labor and how', and states none on DSL, task-origin or user labor drag (lv_intersection, ledgered as LV-); they enter A only where a deposit's sentence says something of one of the four classes. Admission by reading (§3.4): a bare list of fields, keywords, a fan-out path or a reference line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'ILO Digital Labour Platform Policy Tracker' (ilo-digital-labour-platform-policy-tracker-aio-20261029, OBS-3a975d1658be, ADDR-f3e6787adee7), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#163, #239, #433, #469, #713 with its instances #1390 and #1391, #1545).",
+  "hop_from": [
+   163,
+   239,
+   433,
+   469,
+   713,
+   1390,
+   1391,
+   1545
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 307,
+  "O_deposits": 96,
+  "H_candidates": 87
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "18": 7,
+   "28": 1,
+   "31": 2,
+   "38": 1,
+   "64": 2,
+   "83": 1,
+   "100": 2,
+   "101": 8,
+   "122": 3,
+   "148": 2,
+   "163": 1,
+   "170": 1,
+   "205": 5,
+   "217": 2,
+   "218": 2,
+   "239": 1,
+   "273": 1,
+   "274": 1,
+   "291": 4,
+   "292": 1,
+   "297": 2,
+   "308": 5,
+   "319": 2,
+   "325": 2,
+   "326": 2,
+   "367": 1,
+   "375": 1,
+   "422": 2,
+   "433": 2,
+   "463": 1,
+   "467": 7,
+   "469": 9,
+   "477": 2,
+   "478": 6,
+   "482": 2,
+   "483": 1,
+   "485": 2,
+   "498": 4,
+   "499": 16,
+   "501": 2,
+   "516": 1,
+   "533": 3,
+   "543": 5,
+   "550": 2,
+   "556": 2,
+   "557": 2,
+   "558": 2,
+   "572": 1,
+   "579": 1,
+   "583": 1,
+   "595": 1,
+   "614": 1,
+   "617": 1,
+   "623": 6,
+   "624": 1,
+   "656": 1,
+   "704": 4,
+   "713": 2,
+   "726": 6,
+   "727": 14,
+   "761": 1,
+   "825": 10,
+   "833": 10,
+   "892": 10,
+   "898": 1,
+   "909": 1,
+   "918": 1,
+   "924": 1,
+   "950": 7,
+   "998": 2,
+   "1061": 1,
+   "1077": 1,
+   "1079": 1,
+   "1107": 4,
+   "1114": 2,
+   "1162": 1,
+   "1168": 1,
+   "1170": 1,
+   "1171": 2,
+   "1189": 7,
+   "1251": 1,
+   "1264": 2,
+   "1275": 2,
+   "1320": 4,
+   "1326": 4,
+   "1390": 3,
+   "1391": 4,
+   "1396": 10,
+   "1397": 3,
+   "1401": 10,
+   "1448": 1,
+   "1460": 1,
+   "1545": 5,
+   "1643": 2,
+   "1644": 12,
+   "1684": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "1add8501ab1022916dc7a5ea3ab409ba6228630f23088dd56b2406173d458bb6",
+  "candidates-H.jsonl": "c071f27b541c390604d3db069bac2bd810e2bfd2100c5a1698dd1e684ef38f75"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

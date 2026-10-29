@@ -1,0 +1,1289 @@
+{
+ "row": "yale-budget-lab-ai-tracker",
+ "address": "Yale Budget Lab AI labor market",
+ "addresses": [
+  "Yale Budget Lab AI labor market"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or key takeaways, defined terms and methods, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the census's PDF text, the Wikipedia response summary and raw wikitext, or the card's title for the unreachable video card; 56/56 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the Lab's first report of 1 October 2025; B2 the tracker page; B3 the Lab's exposure review; B4 the State of the Economy note; B5 a Quest Means Business video, unreachable); 'own_page', the census's own pages that T did not surface (B6, the tracker's PDF, copied from the census's saved copy; B7, the September CPS update page, which the census records as 403 and is unread; the census's other own page, the tracker page, is card B2, byte-identical, carried once as a card); 'wikipedia', no article (B8), with the one article that cites the first report. No third-party source was read by the census (every evidence basis is 'operator'), so there is no 'census_third_party' origin in this row. All four of the reachable cards are the operator's own pages; no card is a homonym.",
+ "lineage_note": "Lineages: what it is: the Lab's ongoing tracker of AI's impact on the labor market (B6); the operator and the authors (B1, B2, B4); the analysis it continues: the first report and its documentation (B1, B3, B6); updates, versions and data access (B1, B2, B6); the unit: three sections on monthly CPS data (B6); method: occupational dissimilarity, and synthetic differences-in-differences (B1, B4); headline: no clear economy-wide disruption (B1); finding: the occupational mix (B1, B2); finding: exposure and usage against employment and unemployment (B1, B2); finding: exposed against unexposed workers, employment and wages (B2, B4); the September 2026 update (B6); recent college graduates (B1); the labor market around it (B4); the limit: not yet, and the findings may change (B1, B3, B4, B6); exposure metrics: what they measure and what they do not (B1, B3); usage data: its source, its reach and the data the Lab asks for (B1); reception: the encyclopedia (B8); reception: broadcast (B5). The tracker's takeaways are one work in two instances (B2 the page, B6 the PDF), and the plan to update regularly one lineage across B1 and B2, the earliest instance (B1, 1 October 2025) keeping the date. The census's findings, unit, method, limit, lifecycle and data-access quotes restate B2 and B6 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/ (Bn.html raw and Bn.txt text extracted with scripts and styles stripped, by the census's own extraction rule; B6.pdf and B6.txt copied from the census; B7-census-403.html the census's 403 response; B8-* the raw Wikipedia responses, B8.txt a summary of codes and notices with the cited sentence); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "The Budget Lab — Evaluating the Impact of AI on the Labor Market: Current State of Affairs | The Budget Lab",
+   "url": "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs",
+   "kind": "Overview card (the Lab's first report, 1 October 2025, Gimbel, Kinder, Kendall and Lee; the census's unread source yale-budget-lab-ai-tracker--first-report)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B1.html",
+     "sha256": "065e453aacdb846ce0b085eecb9ad7d6fe6ca47902e6f1f2d68bd13dab6e189d"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B1.txt",
+     "sha256": "8d18c4b7761bfe5f88ec0bd09a95c80e682917a11e15d42215916f04d9afe90e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:32Z",
+    "http": 200,
+    "url": "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B1.html",
+    "raw_sha256": "065e453aacdb846ce0b085eecb9ad7d6fe6ca47902e6f1f2d68bd13dab6e189d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "yale-budget-lab-ai-tracker--first-report",
+     "http": "403",
+     "fetched": "2026-10-29T21:49:16Z",
+     "sha256": "2e2d66450aadab2d32cadd4ef1983db827783113aea5e93e2f1b8631b4d49987",
+     "body": "'160.79.106.143 has been banned' (30 bytes)",
+     "agrees": false
+    }
+   },
+   "names_operator": "yes ('The Budget Lab', 'Martha Gimbel , Executive Director of the Budget Lab', '© 2026 Yale University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL linked from the Lab's own pages (B2, B4: href to research/evaluating-impact-ai-labor-market-current-state-affairs) and confirmed by the page's canonical link and title (identical to the card title). The census recorded this page as HTTP 403 ('has been banned') at 21:49:16Z and left it unread; the card fetch with the same agent string answered 200 at 22:30:32Z. First fetch; no retry.",
+   "surfaced_by_T": [
+    {
+     "slug": "yale-budget-lab-ai-labor-market-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Evaluating the Impact of AI on the Labor Market: Current State of Affairs | The Budget Lab",
+   "card_snippet": "Findings: Broader US labor market shows no discernible disruption or acceleration in occupational mix change 33 months post-ChatGPT launch; trends mirror histor...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "The Budget Lab — Tracking the Impact of AI on the Labor Market | The Budget Lab",
+   "url": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market",
+   "kind": "Overview card (the tracker's own page, dated 14 October 2026; the census's own page yale-budget-lab-ai-tracker--tracker)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B2.html",
+     "sha256": "7efbd4d59a4fa6327f6051e259ffd11d84915c75f7ad3c1ddc8d4343fcb68e1c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B2.txt",
+     "sha256": "94e3c0200ab0b481637721515f95fae8194879d45abff1d2f142688906a2fe87"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:34Z",
+    "http": 200,
+    "url": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B2.html",
+    "raw_sha256": "7efbd4d59a4fa6327f6051e259ffd11d84915c75f7ad3c1ddc8d4343fcb68e1c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B2.txt"
+    ],
+    "census_copy": {
+     "src": "yale-budget-lab-ai-tracker--tracker",
+     "sha256": "7efbd4d59a4fa6327f6051e259ffd11d84915c75f7ad3c1ddc8d4343fcb68e1c",
+     "read": "2026-10-29",
+     "http": "200",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('The Budget Lab', 'Copyright ©2026 Yale University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the census record's url field, confirmed by the page title (identical to the card title). Byte-identical to the census's saved copy (sha256 7efbd4d5…, read the same day) and its extracted text identical to the census's .txt, so the census's own page is carried once, as this card.",
+   "surfaced_by_T": [
+    {
+     "slug": "yale-budget-lab-ai-labor-market-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Tracking the Impact of AI on the Labor Market | The Budget Lab",
+   "card_snippet": "Key Takeaways * The occupational mix is not yet changing in ways that clearly align with the introduction of AI into the workforce. * Measures of AI usage show ...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "The Budget Lab — Labor Market AI Exposure: What Do We Know? | The Budget Lab",
+   "url": "https://budgetlab.yale.edu/research/labor-market-ai-exposure-what-do-we-know",
+   "kind": "Overview card (the Lab's exposure review, 19 February 2026, Gimbel, Kendall and Kulsakdinun: the 'Gimbel, Kendall, and Kulsakdinun (2026)' the tracker cites)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B3.html",
+     "sha256": "c17cecc68b86f6562b742b51d4cc0c8c335c304105c60b5da803da33843e7e4a"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B3.txt",
+     "sha256": "5a37e388f7ec1f93c495cb637507058db4944dbf9effc3f647385f0d34db391d"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "between 2026-10-29T22:30:34Z and 22:31:34Z",
+      "http": 403,
+      "bytes": 30,
+      "url": "https://budgetlab.yale.edu/research/labor-market-ai-exposure-what-do-we-know",
+      "result": "refused (403, 30 bytes); the body was written to a scratch probe file that the next probe overwrote, so it is not kept; the Lab's server answered other refusals that minute with '<ip> has been banned'"
+     },
+     {
+      "at": "2026-10-29T22:34:11Z",
+      "http": 200,
+      "url": "https://budgetlab.yale.edu/research/labor-market-ai-exposure-what-do-we-know",
+      "sha256": "c17cecc68b86f6562b742b51d4cc0c8c335c304105c60b5da803da33843e7e4a",
+      "result": "the page (canonical link and og:title confirm the card title)"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B3.html",
+    "raw_sha256": "c17cecc68b86f6562b742b51d4cc0c8c335c304105c60b5da803da33843e7e4a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('The Budget Lab', the authors at the Lab)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL linked from the Lab's own pages (B1, B4 href to research/labor-market-ai-exposure-what-do-we-know); two WebSearches on the title returned other Budget Lab pages. First fetch refused (HTTP 403); one later fetch with the same agent string and the same command answered 200. No other agent string or route was tried.",
+   "surfaced_by_T": [
+    {
+     "slug": "yale-budget-lab-ai-labor-market-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Labor Market AI Exposure: What Do We Know? | The Budget Lab",
+   "card_snippet": "AI Measures: Seven evaluated metrics (Eloundou et al., Eisfeldt et al., Felten et al., Tomlinson et al., Webb) assess generative AI task completion and patent l...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "The Budget Lab — AI Is Probably Not (Yet) the Reason for Labor Market Weakening | The Budget Lab",
+   "url": "https://budgetlab.yale.edu/research/ai-probably-not-yet-reason-labor-market-weakening",
+   "kind": "Overview card (the Lab's State of the Economy note, Ryan Nunn, 7 May 2026, introducing the synthetic differences-in-differences analysis)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B4.html",
+     "sha256": "e0811bd485fd98cd911e56de07abb47e9487b57695f51547a50c5399d2165210"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B4.txt",
+     "sha256": "cb1a4388cdde94d650dcf23e307ecf41d38c4743c2fad9798b2f6f77d3ce770e"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "between 2026-10-29T22:30:34Z and 22:31:34Z",
+      "http": 200,
+      "result": "answered 200 (1,117,634 bytes) to a scratch probe whose file the next probe overwrote; refetched for saving"
+     },
+     {
+      "at": "2026-10-29T22:31:34Z",
+      "http": 200,
+      "sha256": "e0811bd485fd98cd911e56de07abb47e9487b57695f51547a50c5399d2165210",
+      "result": "saved (same byte count)"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "url": "https://budgetlab.yale.edu/research/ai-probably-not-yet-reason-labor-market-weakening",
+    "raw": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B4.html",
+    "raw_sha256": "e0811bd485fd98cd911e56de07abb47e9487b57695f51547a50c5399d2165210",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B4.txt"
+    ]
+   },
+   "names_operator": "yes ('The Budget Lab', 'New Budget Lab research')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the slug of the card title, confirmed by the page <title> (identical to the card title) and linked from B1. The note's PDF (node/1495/pdf) answered 403 to a probe and is not a source of the row.",
+   "surfaced_by_T": [
+    {
+     "slug": "yale-budget-lab-ai-labor-market-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "AI Is Probably Not (Yet) the Reason for Labor Market Weakening | The Budget Lab",
+   "card_snippet": "Labor Market Conditions: Cooling economy with low layoffs, low hiring, and an unemployment rate rising to 4.3% by March 2026. AI Impact Analysis: Budget Lab res...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "YouTube·Quest Means Business — Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted ...",
+   "url": null,
+   "kind": "Overview card (a video, 5:33; unreachable: no URL found)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch 'Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted Quest Means Business YouTube' (no youtube.com result)",
+     "WebSearch 'youtube.com \"Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted\"' (no youtube.com result)",
+     "WebSearch '\"Martha Gimbel\" \"Quest Means Business\" AI youtube' (no youtube.com result)"
+    ],
+    "note": "The video's URL could not be found from its title and channel; the rail gives no snippet, only the title and the length. Admitted through its title (§3.1(a): a video card through title and snippet); the title stands as its only text."
+   },
+   "names_operator": "yes ('Yale Budget Lab Executive Director Martha Gimbel', in the title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "yale-budget-lab-ai-labor-market-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted ...",
+   "card_snippet": null,
+   "card_note": "video, 5:33"
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "the census's own page (not surfaced by T)",
+   "card": "The Budget Lab — Tracking the Impact of AI on the Labor Market (printable PDF of the tracker, Version 1.0, 15 September 2026)",
+   "url": "https://budgetlab.yale.edu/sites/default/files/page_to_pdf/1419/publication_1419.pdf",
+   "kind": "own page: the tracker's printable PDF (node 1419), the census's source yale-budget-lab-ai-tracker--first-report-pdf",
+   "files": {
+    "B6.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B6.pdf",
+     "sha256": "9bcf775f43ed575636765e73b3cad8cfb62fb413e94428b92efdfabb086bafc0"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B6.txt",
+     "sha256": "6a1c4bade1ce5498466e7d968f62c1efbb8694f10525db47426ccf73c22efeac"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "yale-budget-lab-ai-tracker--first-report-pdf",
+     "url": "https://budgetlab.yale.edu/sites/default/files/page_to_pdf/1419/publication_1419.pdf",
+     "sha256": "9bcf775f43ed575636765e73b3cad8cfb62fb413e94428b92efdfabb086bafc0",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:50:24Z",
+     "http": "200",
+     "agrees": true
+    },
+    "how": "copied from the census's saved copy (sources/yale-budget-lab-ai-tracker--first-report-pdf.html.gz, gunzipped; a PDF, so saved as B6.pdf) and its pdftotext text (.txt); not refetched",
+    "raw": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B6.pdf",
+    "raw_sha256": "9bcf775f43ed575636765e73b3cad8cfb62fb413e94428b92efdfabb086bafc0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('The Budget Lab')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards on the operator's ruling; not surfaced by T. The census's id calls it 'first-report-pdf', but its content is the tracker's PDF (title 'Tracking the Impact of AI on the Labor Market', 'Published: July 16, 2026 Updated: September 15, 2026'), not the first report of October 2025 (card 1, B1). The text of the second page breaks off in the methods paragraph, as the census records.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the census's own page (unread)",
+   "card": "The Budget Lab — Evaluating the Impact of AI on the Labor Market: September CPS Update (unread)",
+   "url": "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-september-cps-update",
+   "kind": "own page, unread: the census recorded HTTP 403",
+   "files": {
+    "B7-census-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B7-census-403.html",
+     "sha256": "bfa6a45b2e4a901f66905e5f67f06f52043234aa3e1f179b2805c3222ba6d41d"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "census_copy": {
+     "src": "yale-budget-lab-ai-tracker--september-cps-update",
+     "http": "403",
+     "fetched": "2026-10-29T21:50:24Z",
+     "sha256": "bfa6a45b2e4a901f66905e5f67f06f52043234aa3e1f179b2805c3222ba6d41d",
+     "body": "160.79.106.138 has been banned"
+    },
+    "note": "Recorded as unread, as the census records it (substitution 3); not refetched. The census's 30-byte response is copied as B7-census-403.html. No text, no claims."
+   },
+   "names_operator": "n/a (unread)",
+   "names_archive": "n/a (unread)",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Tracking the Impact of AI on the Labor Market (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Tracking_the_Impact_of_AI_on_the_Labor_Market&action=raw",
+   "kind": "Wikipedia (no article; one article cites the first report)",
+   "files": {
+    "B8-raw-1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-1.wiki",
+     "sha256": "c4d6083b9996928aaf8e0038125986cbca6e527bd91e1a777db8bae5956e37ab"
+    },
+    "B8-raw-2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-2.wiki",
+     "sha256": "b3fba02907d87432a637e18099d3a4a3773fd237cbbe770847dc730e11d502f2"
+    },
+    "B8-raw-3.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-3.wiki",
+     "sha256": "58b5a7260be17e52e43840376a0d0b87bfc87c0ee3f5ae5a0a13dda8c9b1c683"
+    },
+    "B8-raw-4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-4.wiki",
+     "sha256": "c3cb5cbd424da6fa9c63ad8db1d458ff49b4c2a4ba7266d1e1ae7ea9a1e32adc"
+    },
+    "B8-raw-5.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-5.wiki",
+     "sha256": "701bab5d0b4d640a7c7144931439f18a0e688d926441620b3eea0f1555314542"
+    },
+    "B8-raw-6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-raw-6.wiki",
+     "sha256": "ce161d16545c4445ba9ebe423a64da986d12010c4d31db6af646a11f5c4326d8"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8.html",
+     "sha256": "fa2b9b57afe3489f8d79762c3a15cf92f2946e4941c87f4c34bfd308db01721b"
+    },
+    "B8-search-1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-search-1.html",
+     "sha256": "83997ec892ea915c252e17c5964f93c93d2874950d72ea057b8c93045ba22243"
+    },
+    "B8-search-2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-search-2.html",
+     "sha256": "4890abd1539dea97628b79caa46d72cf7611474858c24ae539f9070caae57c7c"
+    },
+    "B8-genai.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-genai.wiki",
+     "sha256": "db3accea590930f616901a624bbb5d87251abde46a079b7ed923f545bbf028a1"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8.txt",
+     "sha256": "0c9f7f1bb585d775ae3a7a065bca11aef51148d38709ac1e2012d33b55de3dd7"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:02Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Tracking_the_Impact_of_AI_on_the_Labor_Market&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:04Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=AI_Labor_Market_Tracker&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:06Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=The_Budget_Lab_at_Yale&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:08Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Budget_Lab_at_Yale&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:11Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Yale_Budget_Lab&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:13Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=The_Budget_Lab&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:37Z",
+      "url": "https://en.wikipedia.org/wiki/Tracking_the_Impact_of_AI_on_the_Labor_Market?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:32:40Z",
+      "url": "Special:Search \"Budget Lab\" Yale (article space)",
+      "http": 200,
+      "result": "9 results, none an article on the Lab or the tracker; Generative AI among them"
+     },
+     {
+      "at": "2026-10-29T22:32:43Z",
+      "url": "Special:Search \"Tracking the Impact of AI on the Labor Market\" (article space)",
+      "http": 200,
+      "result": "'There were no results matching the query.'"
+     },
+     {
+      "at": "2026-10-29T22:33:08Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Generative_AI&action=raw&redirect=no",
+      "http": 200,
+      "result": "section 'Fears over job losses', line 267: the sentence citing the first report"
+     }
+    ],
+    "raw_sha256": "fa2b9b57afe3489f8d79762c3a15cf92f2946e4941c87f4c34bfd308db01721b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8.txt",
+     "datasets/negative-of-the-negative/v2/intake/yale-budget-lab-ai-tracker-20261029/B8-genai.wiki"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "the Generative AI article names 'The Budget Lab at Yale' in its citation",
+   "names_archive": "no",
+   "note": "No article and no redirect for the tracker's title, its alias, or four forms of the Lab's name; the article-space search for the title returns nothing. The Lab is cited across Wikipedia (tariffs, tips, inflation); one article, Generative AI, cites the tracker's first report. B8.txt summarises the codes and notices and quotes that sentence from the raw wikitext."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Introduction ¶1",
+   "quote": "This interactive tool contains The Budget Lab's ongoing analysis of potential AI impacts on the labor market.",
+   "claim": "the tracker defined by its operator: an interactive tool holding the Lab's ongoing analysis of potential AI impacts on the labor market",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the Lab's ongoing tracker of AI's impact on the labor market",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "title and dateline",
+   "quote": "Tracking the Impact of AI on the Labor Market October 14, 2026 | Updated: October 14, 2026",
+   "claim": "the tracker's page, titled 'Tracking the Impact of AI on the Labor Market', dated and updated 14 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Copyright ©2026 Yale University. All rights reserved. The Budget Lab 127 Wall Street, New Haven, CT 06511",
+   "claim": "the page is The Budget Lab's, under Yale University's copyright, all rights reserved",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "title, byline and date",
+   "quote": "Evaluating the Impact of AI on the Labor Market: Current State of Affairs Martha Gimbel , Molly Kinder , Joshua Kendall and Maddie Lee October 1, 2025",
+   "claim": "the first report: 'Evaluating the Impact of AI on the Labor Market: Current State of Affairs', by Martha Gimbel, Molly Kinder, Joshua Kendall and Maddie Lee, 1 October 2025",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the analysis it continues: the first report and its documentation",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Authors",
+   "quote": "Martha Gimbel , Executive Director of the Budget Lab Molly Kinder , Senior Fellow – Brookings Metro Joshua Kendall , Research Fellow at the Budget Lab Maddie Lee , Research Assistant at the Budget Lab",
+   "claim": "the authors' positions: Gimbel the Lab's executive director, Kinder a senior fellow at Brookings Metro, Kendall and Lee of the Lab",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Key Takeaways 1",
+   "quote": "While the occupational mix is changing more quickly than it has in the past, it is not a large difference and predates the widespread introduction of AI in the workforce.",
+   "claim": "October 2025: the occupational mix changing faster than in the past, by no large difference, and from before AI's widespread introduction",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: the occupational mix",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Key Takeaways 2",
+   "quote": "Currently, measures of exposure, automation, and augmentation show no sign of being related to changes in employment or unemployment.",
+   "claim": "October 2025: exposure, automation and augmentation measures show no sign of relation to employment or unemployment",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: exposure and usage against employment and unemployment",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Key Takeaways 3",
+   "quote": "Better data is needed to fully understand the impact of AI on the labor market.",
+   "claim": "the report's stated need: better data to understand AI's labor-market impact fully",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "usage data: its source, its reach and the data the Lab asks for",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Key Takeaways 4",
+   "quote": "We plan on updating this analysis regularly moving forward to see how the impact of AI on the labor market changes over time.",
+   "claim": "October 2025: the plan to update the analysis regularly",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Key Takeaways 4",
+   "quote": "We plan on updating this analysis regularly moving forward to see how the impact of AI on the labor market changes over time.",
+   "claim": "the tracker page carries the same plan to update regularly",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "First, is the pace of labor market change in this 33-month period of employment disruption different from past periods of early technological change? Second, is there evidence of economy-wide employment effects?",
+   "claim": "the report's two questions: whether labor-market change in 33 months differs from earlier technological change, and whether there are economy-wide employment effects",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: occupational dissimilarity, and synthetic differences-in-differences",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "Overall, our metrics indicate that the broader labor market has not experienced a discernible disruption since ChatGPT’s release 33 months ago, undercutting fears that AI automation is currently eroding the demand for cognitive labor across the economy.",
+   "claim": "the report's headline: no discernible disruption of the broader labor market in the 33 months since ChatGPT's release",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline: no clear economy-wide disruption",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "Of course, our analysis is not predictive of the future.",
+   "claim": "the report's limit: the analysis does not predict the future",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the limit: not yet, and the findings may change",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Appendix ¶2",
+   "quote": "We adapt Duncan and Duncan’s methodology to construct a dissimilarity index of the change in the occupational mix over time using monthly CPS data.",
+   "claim": "the churn measure: a dissimilarity index of the occupational mix over time, adapted from Duncan and Duncan, on monthly CPS data",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: occupational dissimilarity, and synthetic differences-in-differences",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Is this Time Different?' ¶3",
+   "quote": "Note that a change over this time period simply reflects change — it does not take a stance on the cause of that change.",
+   "claim": "the churn measure's own limit: it records change and takes no stance on its cause",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: occupational dissimilarity, and synthetic differences-in-differences",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Is this Time Different?' ¶6",
+   "quote": "Repeating this analysis by industry similarly suggests a limited effect of AI.",
+   "claim": "by industry the analysis suggests a limited effect of AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: the occupational mix",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Recent College Graduates' ¶1",
+   "quote": "If generative AI were in fact substantially changing the labor market for recent college graduates, we would expect to see a growing dissimilarity in the occupational mix between these two groups. … However, our results should be interpreted with caution particularly given small sample sizes.",
+   "claim": "recent graduates: a growing dissimilarity against older workers would be expected if AI were changing their market; the results are to be read with caution for small samples",
+   "modality": "hypothesis",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "recent college graduates",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Recent College Graduates' ¶1",
+   "quote": "The dissimilarity has increased slightly faster in recent months than it did in a previous time period, which could be consistent with a recent paper from Brynjolfsson et al. showing a possible impact of AI on employment of early career workers. It could also simply reflect a slowing labor market.",
+   "claim": "the graduates' dissimilarity rose slightly faster, possibly consistent with Brynjolfsson et al. or with a slowing labor market",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "recent college graduates",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OpenAI's \"Exposure\" Data' ¶1",
+   "quote": "This refers, generally, to whether utilizing ChatGPT4 technology can help reduce the time it takes to complete the occupation’s tasks by at least 50%.",
+   "claim": "the exposure measure used: OpenAI's, whether ChatGPT-4 technology can cut an occupation's task time by at least 50%",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OpenAI's \"Exposure\" Data' ¶4",
+   "quote": "The share of workers in the lowest, middle, and highest occupational exposure groups stay stable at around 29%, 46% and 18%, respectively.",
+   "claim": "the shares of workers in low, middle and high exposure groups stable at about 29%, 46% and 18%",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: exposure and usage against employment and unemployment",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OpenAI's \"Exposure\" Data' ¶5",
+   "quote": "Even when specifically examining the unemployed population, there is no clear growth in exposure to generative AI.",
+   "claim": "no clear growth in the generative-AI exposure of the unemployed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: exposure and usage against employment and unemployment",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Insights from AI \"Exposure\" and Usage' ¶2",
+   "quote": "Unfortunately, comprehensive usage data is not publicly available. The best available data we have is from OpenAI and Anthropic , respectively, that detail the occupations that are most “exposed” to genAI tools (a theoretical, forward-looking metric across all jobs) and that have the highest actual usage of one specific AI tool, Claude (a more narrow, present-focused metric).",
+   "claim": "the data providers: OpenAI for exposure (theoretical, forward-looking) and Anthropic for actual usage of one tool, Claude; comprehensive usage data is not public",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "usage data: its source, its reach and the data the Lab asks for",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Anthropic's Usage Measure' ¶4",
+   "quote": "Anthropic’s data on AI usage shows similar trends of stability over time, rather than disruption.",
+   "claim": "Anthropic's usage data shows stability over time, not disruption",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: exposure and usage against employment and unemployment",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data Limitations' ¶2",
+   "quote": "A key limitation of OpenAI’s “exposure” data is that it is not based on actual usage, and should therefore be interpreted as a theoretical estimate of the jobs and sectors that could , in theory, be impacted.",
+   "claim": "the exposure data's limit: not based on actual usage; a theoretical estimate of what could be impacted",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data Limitations' ¶6",
+   "quote": "Thus data from Claude usage alone is not representative of how workers across the economy are using AI chatbots and tools.",
+   "claim": "the usage data's limit: Claude usage alone does not represent how workers across the economy use AI tools",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "usage data: its source, its reach and the data the Lab asks for",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data Limitations' ¶7",
+   "quote": "To accurately measure AI’s impact on the labor force, the most important data needed is comprehensive usage data from all the leading AI companies at the individual and enterprise level, including APIs.",
+   "claim": "the data the Lab asks for: comprehensive usage data from all the leading AI companies, individual and enterprise, APIs included",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "usage data: its source, its reach and the data the Lab asks for",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Summary",
+   "quote": "While anxiety over the effects of AI on today’s labor market is widespread, our data suggests it remains largely speculative.",
+   "claim": "the report's summary: widespread anxiety over AI's labor-market effects remains largely speculative on its data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "headline: no clear economy-wide disruption",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Summary",
+   "quote": "While generative AI looks likely to join the ranks of transformative, general purpose technologies, it is too soon to tell how disruptive the technology will be to jobs.",
+   "claim": "too soon to tell how disruptive generative AI will be to jobs, though it looks likely to be a general purpose technology",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "the limit: not yet, and the findings may change",
+   "date": "2025-10-01 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d18c4b7761bfe5f…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Key Takeaways 1",
+   "quote": "The occupational mix is not yet changing in ways that clearly align with the introduction of AI into the workforce.",
+   "claim": "the tracker: the occupational mix is not yet changing in ways clearly aligned with AI's introduction",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "finding: the occupational mix",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Key Takeaways 2",
+   "quote": "Measures of AI usage show no connection to changes in employment or unemployment.",
+   "claim": "the tracker: AI usage measures show no connection to changes in employment or unemployment",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "finding: exposure and usage against employment and unemployment",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Key Takeaways 3",
+   "quote": "A synthetic differences-in-differences analysis of AI exposure does not yet clearly indicate an AI-related labor market footprint.",
+   "claim": "the tracker: the synthetic differences-in-differences analysis does not yet clearly indicate an AI-related labor-market footprint",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "finding: exposed against unexposed workers, employment and wages",
+   "date": "2026-10-14 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 94e3c0200ab0b481…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "title, byline and date",
+   "quote": "Labor Market AI Exposure: What Do We Know? Martha Gimbel , Joshua Kendall and Ryan Kulsakdinun February 19, 2026",
+   "claim": "the exposure review: 'Labor Market AI Exposure: What Do We Know?', by Gimbel, Kendall and Kulsakdinun, 19 February 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the analysis it continues: the first report and its documentation",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Takeaways 1–2",
+   "quote": "AI exposure metrics broadly agree with each other, but that they disagree with each other more on highly exposed occupations. The key point of disagreement between different AI exposure metrics is in the magnitude of exposure, not whether an occupation is exposed.",
+   "claim": "exposure metrics broadly agree, disagree more on highly exposed occupations, and differ in magnitude more than in whether an occupation is exposed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Takeaways 3",
+   "quote": "Occupational exposure to AI is not indicative of a jobs AI will automate out of existence. Rather, it indicates places in the labor market where AI could have an impact.",
+   "claim": "the governing limit: exposure does not indicate jobs AI will automate away, only places where AI could have an impact",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Many analysts—including those at The Budget Lab—utilize Eloundou et al.’s exposure metrics, which measure Generative AI’s (GenAI) ability to speed up work task completion.",
+   "claim": "the Lab among the analysts who use Eloundou et al.'s exposure metrics, which measure GenAI's ability to speed task completion",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Appendix, Measures",
+   "quote": "Microsoft researchers Tomlinson et al. (2025) created the ai_applicability_score. … They distinguish their work from other researchers by looking at individual conversations with Microsoft’s Copilot AI.",
+   "claim": "one of the seven metrics is Microsoft researchers' AI applicability score, built from individual Copilot conversations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "exposure metrics: what they measure and what they do not",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Where do we go from here?' ¶2",
+   "quote": "This analysis is a reminder to be humble about how much we know about where AI disruption to the labor market could be going.",
+   "claim": "the review's limit: humility about where AI disruption of the labor market could go",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the limit: not yet, and the findings may change",
+   "date": "2026-02-19 (report date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5a37e388f7ec1f93…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "title, byline and date",
+   "quote": "AI Is Probably Not (Yet) the Reason for Labor Market Weakening Ryan Nunn May 7, 2026",
+   "claim": "the State of the Economy note: 'AI Is Probably Not (Yet) the Reason for Labor Market Weakening', Ryan Nunn, 7 May 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Key Takeaways 3–4",
+   "quote": "New Budget Lab research subjects the jobs data to an econometric method that makes AI-exposed and unexposed occupations comparable The results do not yet show clear indication of labor market effects of AI",
+   "claim": "the note: new research makes exposed and unexposed occupations comparable, and its results do not yet show clear labor-market effects of AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "finding: exposed against unexposed workers, employment and wages",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "A relatively recent methodological innovation, called synthetic differences-in-differences, helps to distinguish any genuine impact of AI on exposed occupations from the persistent differences between exposed and unexposed jobs.",
+   "claim": "the method: synthetic differences-in-differences, separating a genuine AI impact on exposed occupations from persistent differences between exposed and unexposed jobs",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: occupational dissimilarity, and synthetic differences-in-differences",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "The estimate is close to zero and cannot be distinguished from it, statistically speaking. The same is true for Figure 2, which shows impacts on inflation-adjusted hourly wages.",
+   "claim": "the estimates for employment in the average exposed occupation and for inflation-adjusted hourly wages are close to zero and statistically indistinguishable from it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "finding: exposed against unexposed workers, employment and wages",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "From its post-pandemic low of 3.4% in April 2023, the unemployment rate has risen to 4.3% in March 2026—a higher though still healthy level. Both layoffs and hires have been low, with unemployed job seekers having an especially difficult and worsening experience.",
+   "claim": "the market around it: unemployment from 3.4% (April 2023) to 4.3% (March 2026), low layoffs and low hires, a worsening experience for the unemployed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the labor market around it",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶2–3",
+   "quote": "many have suspected that it bears the imprint of widespread AI adoption by employers. … However, the weight of the evidence—to date—does not support this conjecture.",
+   "claim": "the conjecture that the cooled market bears the imprint of employers' AI adoption is not supported by the weight of the evidence to date",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the labor market around it",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "One feature of that previous analysis is that it does not rely on AI exposure metrics and is not subject to critiques of those measures. However, it does not formally attempt to identify effects of AI.",
+   "claim": "the churn analysis: free of exposure metrics and their critiques, and not a formal attempt to identify AI's effects",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: occupational dissimilarity, and synthetic differences-in-differences",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶7",
+   "quote": "AI seems quite likely to eventually leave its mark on the labor market, even if it has not already.",
+   "claim": "the Lab's expectation: AI quite likely to leave its mark on the labor market eventually, even if not already",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "the limit: not yet, and the findings may change",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "footnote 1",
+   "quote": "A principal reason for this low growth is the slowdown in net immigration, which reduced labor force growth.",
+   "claim": "a principal reason for low payroll growth: the slowdown in net immigration",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the labor market around it",
+   "date": "2026-05-07 (note date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 cb1a4388cdde94d6…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title (video; unreachable)",
+   "quote": "Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted ...",
+   "claim": "a Quest Means Business video (5:33) in which the Lab's executive director speaks on why AI hasn't disrupted (the title truncated)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: broadcast",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; no snippet on the rail)"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "header",
+   "quote": "Published: July 16, 2026 Updated: September 15, 2026",
+   "claim": "the tracker published 16 July 2026, updated 15 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "'AI Labor Market Tracker' panel",
+   "quote": "Updated: September 15, 2026 Version 1.0",
+   "claim": "Version 1.0, updated 15 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Current Update, September 15, 2026, ¶1",
+   "quote": "The Budget Lab's labor market analysis, updated to incorporate August 2026 CPS microdata, does not provide clear evidence of labor market disruption associated with AI. Churn across occupations, AI exposure among the unemployed, and usage data all remain flat, lie within historical ranges, or continue along pre-AI trends.",
+   "claim": "the September 2026 update, on August 2026 CPS microdata: no clear evidence of AI-associated disruption; churn, exposure among the unemployed and usage data flat, within historical ranges or on pre-AI trends",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the September 2026 update",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Current Update, ¶2",
+   "quote": "Of course, these findings may change as new data become available. The Budget Lab plans to continue monitoring AI-relevant trends to assess how job impacts might change.",
+   "claim": "the tracker's stated limit: the findings may change with new data; monitoring continues",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the limit: not yet, and the findings may change",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Introduction ¶1",
+   "quote": "Major categories of analysis can be accessed by clicking tabs towards the top of the page with the following names: Occupational churn, AI metrics, and Comparisons of AI-exposed and unexposed workers.",
+   "claim": "three sections: occupational churn, AI metrics, comparisons of AI-exposed and unexposed workers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: three sections on monthly CPS data",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Introduction ¶2",
+   "quote": "Occupational churn, AI-exposure rates of the unemployed, and related analysis can be found in Gimbel et al. (2025). Details of AI exposure metrics are discussed in Gimbel, Kendall, and Kulsakdinun (2026).",
+   "claim": "its documentation: Gimbel et al. (2025) for churn and the exposure of the unemployed; Gimbel, Kendall and Kulsakdinun (2026) for the exposure metrics",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the analysis it continues: the first report and its documentation",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "'AI Labor Market Tracker' panel",
+   "quote": "Download All Data",
+   "claim": "the tracker's data downloadable ('Download All Data')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates, versions and data access",
+   "date": "2026-07-16 (published; this text updated 2026-09-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 6a1c4bade1ce5498…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: six titles; rendered page; article-space search",
+   "quote": "HTTP 404. Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article on the tracker under its title or alias, nor on the Lab under four forms of its name, and no article text with the tracker's title",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0c9f7f1bb585d775…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Generative AI, section 'Fears over job losses'",
+   "quote": "However, a 2025 study concluded that the US labor market had so far not experienced a discernible disruption from generative AI.",
+   "claim": "Wikipedia's article on generative AI reports the first report (cited by title and URL) as concluding no discernible disruption of the US labor market so far",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched; the citation accessed 2026-01-12)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0c9f7f1bb585d775…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "The Budget Lab — Evaluating the Impact of AI on the Labor Market: Current State of Affairs | The Budget Lab",
+  "B2": "The Budget Lab — Tracking the Impact of AI on the Labor Market | The Budget Lab",
+  "B3": "The Budget Lab — Labor Market AI Exposure: What Do We Know? | The Budget Lab",
+  "B4": "The Budget Lab — AI Is Probably Not (Yet) the Reason for Labor Market Weakening | The Budget Lab",
+  "B5": "YouTube·Quest Means Business — Yale Budget Lab Executive Director Martha Gimbel on why AI hasn't disrupted ...",
+  "B6": "The Budget Lab — Tracking the Impact of AI on the Labor Market (printable PDF of the tracker, Version 1.0, 15 September 2026)",
+  "B7": "The Budget Lab — Evaluating the Impact of AI on the Labor Market: September CPS Update (unread)",
+  "B8": "Wikipedia — Tracking the Impact of AI on the Labor Market (no article)"
+ }
+}

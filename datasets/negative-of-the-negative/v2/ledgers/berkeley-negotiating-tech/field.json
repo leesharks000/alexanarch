@@ -1,0 +1,1206 @@
+{
+ "row": "berkeley-negotiating-tech",
+ "address": "Negotiating Tech",
+ "addresses": [
+  "Negotiating Tech"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes cut verbatim from the saved page text by anchors (whitespace-normalised for the check), or the card snippet as shown, checked by script",
+ "B_note": "The field B (§0.4, §3.1(a)) has the briefs' origins, kept apart: 'card' (B1: T's first card, the entity's own overview page, fetched with the census agent string; the one card of fourteen that concerns the entity); 'own_page' (B2: the census's saved copy of the same page, its one cited source, basis 'operator'; text identical to B1's); 'wikipedia' (B3: no article; 404 at every title tried, the searches rate-limited); 'census_third_party': none (the census read no third-party source for the entity). The other thirteen cards (HC2–HC14) are the homonym's, individual salary negotiation, and are recorded with their sense outside B (brief addendum, item 5).",
+ "lineage_note": "Lineages group the field's claims for the rail: what it is (F1, F3, F42); the name (F2); what it is not, model language (F5, F34); scale (F4, F20, F21, F22); the unit (F14, F16, F17); method (F19, F23, F24, F36); the six sections (F7–F13, F41, F44); the language of technology (F26–F29); AI named in few contracts (F30, F31); time span (F32, F33); stated limits (F15, F18, F25); who made it (F6, F38, F39, F43); lifecycle (F37); access and labelling (F35, F40). Every claim has one source instance in B1 and a second, identical, in B2 (one document, §3.6).",
+ "pages": "saved verbatim in datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/ (B1.html raw and B1.txt text with scripts and styles stripped, by the census's own extraction rule; B1.headers.txt; B2 gunzipped from the census's copy with its .txt copied; W*.html the Wikipedia 404 and 429 responses, W0 the control; T1-negotiating-tech-aio-20261029.txt the registry's transcript string)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "T1 card 1 (negotiating-tech-aio-20261029)",
+   "card": "UC Berkeley Labor Center — Negotiating tech - UC Berkeley Labor Center",
+   "url": "https://laborcenter.berkeley.edu/negotiating-tech/",
+   "kind": "the entity's own overview page, surfaced as T's first card",
+   "card_snippet": "Jul 2, 2025 — This searchable inventory documents how unions have addressed workplace technologies through collective bargaining.",
+   "card_note": "card as shown: site 'UC Berkeley Labor Center', title 'Negotiating tech - UC Berkeley Labor Center', snippet dated 'Jul 2, 2025'",
+   "surfaced_by_T": true,
+   "fetched": "fetched verbatim 2026-10-29 22:31:17 UTC with curl -sSL -m 30 -A 'Mozilla/5.0 (compatible; Labor-Vector-census)'; HTTP 200, final URL unchanged; html sha256 26ad269f9d0b81f17b6a85176cff6410c52c6040cfce3c9f36388e9d7b565597 (103,406 bytes), text sha256 1ffa7a4c532ec156e615d0308d71a96ee53e9e785c88afabae5b6427509cd0e2; the URL found by the card's title and site (the title is the page's <title>, the site its host's institution) and confirmed as the census's url field. The extracted text is byte-identical to the census's saved copy (B2.txt); the html differs from the census's (sha256 334a2b141c608f567f39ba1da80e84bf5dec195e898250999fc24254b1686205) in page bytes only.",
+   "files": {
+    "html": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/B1.html",
+    "txt": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/B1.txt",
+    "headers": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/B1.headers.txt"
+   },
+   "http": 200,
+   "sha256_html": "26ad269f9d0b81f17b6a85176cff6410c52c6040cfce3c9f36388e9d7b565597",
+   "unreachable": false,
+   "names_operator": "yes ('researched and developed by Lisa Kresge as a project of the UC Berkeley Labor Center’s Technology and Work Program')",
+   "names_archive": "no (none of Alexanarch, Lee Sharks, Labor Vector, laborvector, Crimson Hexagonal, MMRS in the saved text)",
+   "note": "the one card of T that concerns the entity (brief addendum, item 5); its snippet is the page's first sentence verbatim, and its date is the page's last update (F1, F3, F6). The field claims are extracted once from this text and carry B2 as an instance (one document, §3.6)."
+  },
+  {
+   "id": "B2",
+   "origin": "own_page",
+   "entity": "berkeley-negotiating-tech",
+   "url": "https://laborcenter.berkeley.edu/negotiating-tech/",
+   "kind": "the entity's own overview page, the census's saved copy (the source the census record cites, basis 'operator')",
+   "fetched": "the census's saved copy (sources/berkeley-negotiating-tech--inventory.html.gz, gunzipped; berkeley-negotiating-tech--inventory.txt copied), fetched by the census 2026-10-29T21:49:17Z, HTTP 200; not refetched; gunzipped html sha256 334a2b141c608f567f39ba1da80e84bf5dec195e898250999fc24254b1686205 (equal to the census's), text sha256 1ffa7a4c532ec156e615d0308d71a96ee53e9e785c88afabae5b6427509cd0e2",
+   "files": {
+    "html": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/B2.html",
+    "txt": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/B2.txt"
+   },
+   "http": 200,
+   "sha256_html": "334a2b141c608f567f39ba1da80e84bf5dec195e898250999fc24254b1686205",
+   "census_source": "berkeley-negotiating-tech--inventory",
+   "census_basis": "operator",
+   "read": "2026-10-29",
+   "surfaced_by_T": "yes, as B1 (the same URL is T's first card); this copy is admitted per the operator's ruling of 2026-10-29",
+   "admitted": "per the operator's ruling of 2026-10-29 (the rows are built 'as against their wikipedia articles if they exist, their own pages, etc.'): the one source the census record cites, basis 'operator'",
+   "names_operator": "yes ('researched and developed by Lisa Kresge as a project of the UC Berkeley Labor Center’s Technology and Work Program')",
+   "names_archive": "no (none of Alexanarch, Lee Sharks, Labor Vector, laborvector, Crimson Hexagonal, MMRS in the saved text)",
+   "note": "the same document as B1, a second copy: its text equals B1.txt byte for byte. It carries no claims of its own; every F claim from the page lists it as an instance. The census reads only this overview page; its six section pages are unchecked (LV-42)."
+  },
+  {
+   "id": "B3",
+   "origin": "wikipedia",
+   "result": "no article",
+   "url": "https://en.wikipedia.org/wiki/Negotiating_Tech",
+   "kind": "Wikipedia: no article for the entity, its full title, its operator (at two titles) or its compiler",
+   "fetched": "raw wikitext requested 2026-10-29 22:31:50–22:32:47 UTC with the census agent string: 'Negotiating_Tech', 'Negotiating_tech' and the full title answer HTTP 404 (Wikimedia 'Not Found'); so do 'UC_Berkeley_Labor_Center', 'Center_for_Labor_Research_and_Education' and 'Lisa_Kresge'; a control request for 'Collective_bargaining' returns its wikitext (HTTP 200), so the 404s are answers. The main-namespace searches and the rendered page were rate-limited (HTTP 429) and are unread; one search was repeated once with the same agent after a pause, also 429, and not retried further (brief addendum, item 4).",
+   "files": {},
+   "http": 404,
+   "sha256_html": null,
+   "requests": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_Tech&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W1-Negotiating_Tech-404.html",
+     "time": "2026-10-29 22:31:50 UTC",
+     "sha256": "fb0832e5f2da1dcc7050da7d82c9e659822a7f01e221b21d9054592cb32f416a"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_tech&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W2-Negotiating_tech-404.html",
+     "time": "2026-10-29 22:31:53 UTC",
+     "sha256": "a60723d1830dcd1d73bd60c050c1e9209164bd1e342fef44dc80bfaa47748663"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_Tech:_An_Inventory_of_U.S._Union_Contract_Provisions_for_the_Digital_Age&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W3-full-title-404.html",
+     "time": "2026-10-29 22:31:57 UTC",
+     "sha256": "344a78363a4f3a550f0b7a3165379bb907e510c5b3823e7c0e5b908f3fc6beca"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=UC_Berkeley_Labor_Center&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W4-UC_Berkeley_Labor_Center-404.html",
+     "note": "the operator: no article at this title",
+     "time": "2026-10-29 22:32:01 UTC",
+     "sha256": "48e04fea9e1560276878337318a62cb6c94a892049bcab642913303461712ad0"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Center_for_Labor_Research_and_Education&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W5-Center_for_Labor_Research_and_Education-404.html",
+     "note": "the operator's formal name: no article at this title",
+     "time": "2026-10-29 22:32:04 UTC",
+     "sha256": "2e18f299a0ed6a26a673bbebeb0b60c83bb615e402ad9935c7eb0041bce51283"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Collective_bargaining&action=raw",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W0-control-Collective_bargaining.raw.txt",
+     "note": "control: the agent string reaches an existing article (wikitext returned); recorded to show the 404s are answers, not refusals; not ledgered",
+     "time": "2026-10-29 22:32:10 UTC",
+     "sha256": "a658e26506bd46cde788f36cc685e7900bdfadfa46dae41d2060300e290921f6"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Negotiating+Tech%22&srnamespace=0&srlimit=50&format=json",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W6-429.html",
+     "note": "rate-limited",
+     "time": "2026-10-29 22:32:41 UTC",
+     "sha256": "070521b2fdd96d5ef8e1a7681ad067d76a43d2adf2af31902c5335f79275412e"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22UC+Berkeley+Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W7-429.html",
+     "note": "rate-limited",
+     "time": "2026-10-29 22:32:44 UTC",
+     "sha256": "06e3e0d1df7e9260ff1736f0eb1d27d58dc0421665692daa5bbff13b1b7ace50"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Lisa_Kresge&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W8-Lisa_Kresge-404.html",
+     "note": "the compiler: no article",
+     "time": "2026-10-29 22:32:47 UTC",
+     "sha256": "3af0f323bdd89f504eb268526472a1639b7b4519162fe6e8ae3f88b84825273f"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Kresge%22+%22Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W9-429.html",
+     "note": "rate-limited",
+     "time": "2026-10-29 22:32:50 UTC",
+     "sha256": "b47bb13f6aa66c68b2b3d6e8df4cdba935397850b722ae71cc9d410d2ef1586b"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Negotiating+Tech%22&srnamespace=0&srlimit=50&format=json",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W6-429-retry.html",
+     "note": "the same agent, after a 75-second pause; rate-limited again; not retried further",
+     "time": "2026-10-29 22:34:16 UTC",
+     "sha256": "8cde8d93c981b0aded34a49eee63c1cb845c619a646c113ac4d51c41a80d85a3"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22UC+Berkeley+Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W7-429-retry.html",
+     "note": "the same agent, after a pause; rate-limited again; not retried further",
+     "time": "2026-10-29 22:34:37 UTC",
+     "sha256": "64964d081d54e20ef45587d86a9aff474b948f9a90a492b9430768736dc82cdc"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Negotiating_Tech",
+     "http": 429,
+     "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W10-rendered-Negotiating_Tech-429.html",
+     "note": "the rendered page: rate-limited; not retried",
+     "time": "2026-10-29 22:34:58 UTC",
+     "sha256": "23e9a4395d9a4a644d9ca3fc616bf50b10c680d4855c08bff68ea29bd83a30cb"
+    }
+   ],
+   "checked": "2026-10-29 22:31:50–22:34:58 UTC",
+   "surfaced_by_T": "no",
+   "names_operator": "n/a (no article)",
+   "names_archive": "n/a (no article)",
+   "note": "No article holds the entity at its name, at its full title, or under its operator's or compiler's name, as far as the title requests show; whether another article mentions the inventory is unread (the full-text searches were refused by rate limit). Recorded as a fact of the row; no field claim."
+  }
+ ],
+ "wikipedia": {
+  "id": "B3",
+  "origin": "wikipedia",
+  "result": "no article",
+  "url": "https://en.wikipedia.org/wiki/Negotiating_Tech",
+  "kind": "Wikipedia: no article for the entity, its full title, its operator (at two titles) or its compiler",
+  "fetched": "raw wikitext requested 2026-10-29 22:31:50–22:32:47 UTC with the census agent string: 'Negotiating_Tech', 'Negotiating_tech' and the full title answer HTTP 404 (Wikimedia 'Not Found'); so do 'UC_Berkeley_Labor_Center', 'Center_for_Labor_Research_and_Education' and 'Lisa_Kresge'; a control request for 'Collective_bargaining' returns its wikitext (HTTP 200), so the 404s are answers. The main-namespace searches and the rendered page were rate-limited (HTTP 429) and are unread; one search was repeated once with the same agent after a pause, also 429, and not retried further (brief addendum, item 4).",
+  "files": {},
+  "http": 404,
+  "sha256_html": null,
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_Tech&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W1-Negotiating_Tech-404.html",
+    "time": "2026-10-29 22:31:50 UTC",
+    "sha256": "fb0832e5f2da1dcc7050da7d82c9e659822a7f01e221b21d9054592cb32f416a"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_tech&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W2-Negotiating_tech-404.html",
+    "time": "2026-10-29 22:31:53 UTC",
+    "sha256": "a60723d1830dcd1d73bd60c050c1e9209164bd1e342fef44dc80bfaa47748663"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Negotiating_Tech:_An_Inventory_of_U.S._Union_Contract_Provisions_for_the_Digital_Age&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W3-full-title-404.html",
+    "time": "2026-10-29 22:31:57 UTC",
+    "sha256": "344a78363a4f3a550f0b7a3165379bb907e510c5b3823e7c0e5b908f3fc6beca"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=UC_Berkeley_Labor_Center&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W4-UC_Berkeley_Labor_Center-404.html",
+    "note": "the operator: no article at this title",
+    "time": "2026-10-29 22:32:01 UTC",
+    "sha256": "48e04fea9e1560276878337318a62cb6c94a892049bcab642913303461712ad0"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Center_for_Labor_Research_and_Education&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W5-Center_for_Labor_Research_and_Education-404.html",
+    "note": "the operator's formal name: no article at this title",
+    "time": "2026-10-29 22:32:04 UTC",
+    "sha256": "2e18f299a0ed6a26a673bbebeb0b60c83bb615e402ad9935c7eb0041bce51283"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Collective_bargaining&action=raw",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W0-control-Collective_bargaining.raw.txt",
+    "note": "control: the agent string reaches an existing article (wikitext returned); recorded to show the 404s are answers, not refusals; not ledgered",
+    "time": "2026-10-29 22:32:10 UTC",
+    "sha256": "a658e26506bd46cde788f36cc685e7900bdfadfa46dae41d2060300e290921f6"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Negotiating+Tech%22&srnamespace=0&srlimit=50&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W6-429.html",
+    "note": "rate-limited",
+    "time": "2026-10-29 22:32:41 UTC",
+    "sha256": "070521b2fdd96d5ef8e1a7681ad067d76a43d2adf2af31902c5335f79275412e"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22UC+Berkeley+Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W7-429.html",
+    "note": "rate-limited",
+    "time": "2026-10-29 22:32:44 UTC",
+    "sha256": "06e3e0d1df7e9260ff1736f0eb1d27d58dc0421665692daa5bbff13b1b7ace50"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Lisa_Kresge&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W8-Lisa_Kresge-404.html",
+    "note": "the compiler: no article",
+    "time": "2026-10-29 22:32:47 UTC",
+    "sha256": "3af0f323bdd89f504eb268526472a1639b7b4519162fe6e8ae3f88b84825273f"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Kresge%22+%22Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W9-429.html",
+    "note": "rate-limited",
+    "time": "2026-10-29 22:32:50 UTC",
+    "sha256": "b47bb13f6aa66c68b2b3d6e8df4cdba935397850b722ae71cc9d410d2ef1586b"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Negotiating+Tech%22&srnamespace=0&srlimit=50&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W6-429-retry.html",
+    "note": "the same agent, after a 75-second pause; rate-limited again; not retried further",
+    "time": "2026-10-29 22:34:16 UTC",
+    "sha256": "8cde8d93c981b0aded34a49eee63c1cb845c619a646c113ac4d51c41a80d85a3"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22UC+Berkeley+Labor+Center%22&srnamespace=0&srlimit=50&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W7-429-retry.html",
+    "note": "the same agent, after a pause; rate-limited again; not retried further",
+    "time": "2026-10-29 22:34:37 UTC",
+    "sha256": "64964d081d54e20ef45587d86a9aff474b948f9a90a492b9430768736dc82cdc"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Negotiating_Tech",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/berkeley-negotiating-tech-20261029/W10-rendered-Negotiating_Tech-429.html",
+    "note": "the rendered page: rate-limited; not retried",
+    "time": "2026-10-29 22:34:58 UTC",
+    "sha256": "23e9a4395d9a4a644d9ca3fc616bf50b10c680d4855c08bff68ea29bd83a30cb"
+   }
+  ],
+  "checked": "2026-10-29 22:31:50–22:34:58 UTC",
+  "surfaced_by_T": "no",
+  "names_operator": "n/a (no article)",
+  "names_archive": "n/a (no article)",
+  "note": "No article holds the entity at its name, at its full title, or under its operator's or compiler's name, as far as the title requests show; whether another article mentions the inventory is unread (the full-text searches were refused by rate limit). Recorded as a fact of the row; no field claim."
+ },
+ "homonym_cards": [
+  {
+   "id": "HC2",
+   "origin": "card (homonym)",
+   "role": "T1 card 2 (negotiating-tech-aio-20261029)",
+   "card": "LinkedIn·Arpita Das — HOW TO NEGOTIATE SALARY IN TECH? I used to think negotiating offers felt awkward. Like I was being difficult. But here’s what I’ve learned (mostly the hard way): 1. Don’t say a number first: If… | Arpita Das | 16 comments",
+   "url": null,
+   "card_snippet": "Strategy: Avoid first-number disclosures (use minimum-acceptable ranges); research compensation via Levels.fyi, Blind, Leetcode Discuss, and network connections...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC3",
+   "origin": "card (homonym)",
+   "role": "T1 card 3 (negotiating-tech-aio-20261029)",
+   "card": "YouTube·Colin Lernell — Negotiating +40% With No Other Job Offers In 2025 (From a Sr. Director In Tech)",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 2m",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC4",
+   "origin": "card (homonym)",
+   "role": "T1 card 4 (negotiating-tech-aio-20261029)",
+   "card": "Medium·Rebecca Andersen — How to Negotiate Your Job Offer Like a Boss | by Rebecca Andersen | BerkeleyISchool | Medium",
+   "url": null,
+   "card_snippet": "Objective: Match compensation to value, support oneself, and ensure fair alignment with industry, domain, and company size. Receiving: Convey enthusiasm, apprec...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "a Berkeley publication (the UC Berkeley School of Information's Medium) in the homonym's sense: the university name, not the entity"
+  },
+  {
+   "id": "HC5",
+   "origin": "card (homonym)",
+   "role": "T1 card 5 (negotiating-tech-aio-20261029)",
+   "card": "YouTube·The Pragmatic Engineer — How to Negotiate a Big Tech Offer as a Software Engineer",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 17:17",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC6",
+   "origin": "card (homonym)",
+   "role": "T1 card 6 (negotiating-tech-aio-20261029)",
+   "card": "next play | Ben Lang·next play — Everything you need to know about negotiating tech offers",
+   "url": null,
+   "card_snippet": "Josh Doody is a salary negotiation coach who helps clients increase offers by an average of 16%. Tactics: Ask for 10-20% above the initial offer based on an \"ag...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC7",
+   "origin": "card (homonym)",
+   "role": "T1 card 7 (negotiating-tech-aio-20261029)",
+   "card": "Tech Interview Handbook — Ten rules of negotiation | Tech Interview Handbook",
+   "url": null,
+   "card_snippet": "Documentation: Record all recruiter call details in writing to inform decisions. Negotiation Power: Keep doors open, protect information by not revealing curren...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC8",
+   "origin": "card (homonym)",
+   "role": "T1 card 8 (negotiating-tech-aio-20261029)",
+   "card": "Reddit·r/ITCareerQuestions — We seriously need a megathread for negotiation tips regarding salary. - Reddit",
+   "url": null,
+   "card_snippet": "August 18, 2024 — Beyond Salary Benefits: When negotiating, consider including non-monetary benefits such as increased PTO, remote work flexibility, improved 401k matching, or ot...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC9",
+   "origin": "card (homonym)",
+   "role": "T1 card 9 (negotiating-tech-aio-20261029)",
+   "card": "YouTube·Colin Lernell — We negotiated 300+ tech job offers and learned this",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 11m",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC10",
+   "origin": "card (homonym)",
+   "role": "T1 card 10 (negotiating-tech-aio-20261029)",
+   "card": "Goldman Sachs — Salary negotiation strategies everyone in tech already knows — but you don’t | Candor",
+   "url": null,
+   "card_snippet": "Compensation: Base salary, equity (RSUs/options), benefits, annual/signing bonuses, perks; level determines seniority and comp mix. Equity: 4-year vest with 1-y...",
+   "card_note": null,
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "site label 'Goldman Sachs', title ending '| Candor': recorded as shown"
+  },
+  {
+   "id": "HC11",
+   "origin": "card (homonym)",
+   "role": "T1 card 11 (negotiating-tech-aio-20261029)",
+   "card": "YouTube·CareerShakers — How to Negotiate a top Tech Job offer (From a Recruiter)",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 15:40",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC12",
+   "origin": "card (homonym)",
+   "role": "T1 card 12 (negotiating-tech-aio-20261029)",
+   "card": "YouTube·A Life Engineered — Negotiation Expert: How To 3X Your Tech Salary",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 2m",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC13",
+   "origin": "card (homonym)",
+   "role": "T1 card 13 (negotiating-tech-aio-20261029)",
+   "card": "Instagram·Yudi J (Pritesh Jagani) Study Abroad (USA) & Career Coach — I accepted my first US job offer without negotiating a single thing. I wish I knew ...",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 1:24",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  },
+  {
+   "id": "HC14",
+   "origin": "card (homonym)",
+   "role": "T1 card 14 (negotiating-tech-aio-20261029)",
+   "card": "LinkedIn·Jess Ramos⚡️ — Negotiating salary as a data analyst: A $71K to $153K success story | Jess Ramos⚡️ ...",
+   "url": null,
+   "card_snippet": null,
+   "card_note": "video, 1:00",
+   "sense": "individual salary and job-offer negotiation in the technology industry (the homonym's sense)",
+   "surfaced_by_T": true,
+   "in_B": false,
+   "fetched": "not fetched: a card of the homonym, outside the field B by the brief addendum (item 5: 'the other cards are recorded as the homonym's, with their sense'); its title and snippet as shown are its record here",
+   "names_operator": "no",
+   "names_archive": "no"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "card 1 snippet as shown (T1 card rail)",
+   "quote": "Jul 2, 2025 — This searchable inventory documents how unions have addressed workplace technologies through collective bargaining.",
+   "claim": "the card: dated Jul 2, 2025, and the page's self-description",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "from": "card snippet",
+   "quote_ok": true,
+   "checked_against": "the card snippet as shown in the Capture Registry's cite_list (T1 card 1), the card's own text; its sentence after the date also stands verbatim in B1.txt"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "page title",
+   "quote": "Negotiating Tech: An Inventory of U.S. Union Contract Provisions for the Digital Age",
+   "claim": "the name: the full title",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "Overview, sentence 1",
+   "quote": "This searchable inventory documents how unions have addressed workplace technologies through collective bargaining.",
+   "claim": "what it is: a searchable inventory of how unions have addressed workplace technologies through collective bargaining",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Overview, sentence 2",
+   "quote": "It includes provisions from more than 175 agreements, drawn from a review of over 500 contracts, and highlights a range of strategies, including securing rights and protections, shaping how technologies are introduced and used, and establishing governance mechanisms.",
+   "claim": "more than 175 agreements from a review of over 500; strategies: rights and protections, how technologies are introduced and used, governance",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: agreements and provisions",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "Overview, sentence 3",
+   "quote": "Designed as an informational resource rather than a source of model language, the inventory offers insight into how unions are responding to emerging technologies through recent agreements, while also showing how long-standing provisions remain relevant in today’s rapidly evolving digital workplace.",
+   "claim": "an informational resource, not a source of model language; recent agreements and long-standing provisions",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is not: model language",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "Overview, credit",
+   "quote": "The inventory was researched and developed by Lisa Kresge as a project of the UC Berkeley Labor Center’s Technology and Work Program , and was last updated on July 2, 2025.",
+   "claim": "researched and developed by Lisa Kresge, UC Berkeley Labor Center Technology and Work Program; last updated 2 July 2025",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "section 1, Technology definitions",
+   "quote": "Provides definitions of key workplace technologies—like AI and wearables—as well as definitions of technological change itself.",
+   "claim": "section 1: definitions of workplace technologies and of technological change",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "section 2, Foundational technology rights",
+   "quote": "Features contract provisions that establish union and worker rights when employers introduce new or modified technologies, including advance notice, information, negotiation, participation, and jurisdiction, typically outlined in technological change clauses.",
+   "claim": "section 2: rights on introduction of technology: notice, information, negotiation, participation, jurisdiction",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "section 3, Employer commitments in technology implementation",
+   "quote": "Details contract provisions that protect workers during technological change, including guarantees around job security, pay, retraining, and safe, accessible working conditions.",
+   "claim": "section 3: employer guarantees: job security, pay, retraining, working conditions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "section 4, Governance of workplace technology applications",
+   "quote": "Highlights collective bargaining provisions that govern the use of workplace technologies, including electronic monitoring and surveillance, HR and workforce management systems, and job-related digital tools.",
+   "claim": "section 4: provisions governing electronic monitoring and surveillance, HR and workforce management systems, digital tools",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "section 5, Participation in technology governance",
+   "quote": "Documents agreements that create joint committees, advisory groups, and other collaborative mechanisms for co-governance of workplace technologies.",
+   "claim": "section 5: joint committees and co-governance mechanisms",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "section 6, Other workplace technology provisions",
+   "quote": "Outlines additional contract language on data collection, data rights and protections, and negotiated standards for telework and remote work.",
+   "claim": "section 6: data collection, data rights, telework",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "section 1, second sentence",
+   "quote": "These definitions establish a foundation for worker protections, employer responsibilities, and union involvement in shaping tech-driven change.",
+   "claim": "definitions as a foundation for protections, employer responsibilities and union involvement",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "How to use the inventory, Contract provisions",
+   "quote": "They are either direct excerpts of contract language or paraphrased summaries when needed to clarify complex language, condense long clauses, or highlight key ideas shared across multiple agreements.",
+   "claim": "the unit: direct excerpts or paraphrased summaries",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a provision, linked to its agreement",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "How to use the inventory, Contract provisions",
+   "quote": "References to specific employers or unions are generally omitted.",
+   "claim": "employer and union names generally omitted",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "its stated limits",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "How to use the inventory, Contract provisions",
+   "quote": "When a clause touches on multiple issues, it may appear in more than one subsection.",
+   "claim": "a clause may appear in more than one subsection",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a provision, linked to its agreement",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "How to use the inventory, Access full contracts",
+   "quote": "Each provision or summary is accompanied by a link to the complete collective bargaining agreement, allowing users to review the full language",
+   "claim": "each provision linked to its complete agreement",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a provision, linked to its agreement",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "How to use the inventory, Search the inventory",
+   "quote": "Keep in mind that many agreements don’t mention specific technologies by name. Instead, they often use functional terms like “automated,” “electronic,” or “monitoring.”",
+   "claim": "many agreements do not name technologies; they use functional terms",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "its stated limits",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "These sources include public databases such as the U.S. Department of Labor’s Office of Labor-Management Standards (OLMS) repository and the Office of Personnel Management’s CBA database, as well as union and employer websites and direct contributions from unions.",
+   "claim": "sources: OLMS, OPM's CBA database, union and employer websites, union contributions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: sources, search, coding",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "In total, the research reviewed over 500 collective bargaining agreements from both public and private sector unions across a range of industries.",
+   "claim": "over 500 agreements reviewed, public and private sector",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: agreements and provisions",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "Of these, more than 175 agreements containing relevant technology-related provisions were included in the final inventory.",
+   "claim": "more than 175 included",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: agreements and provisions",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "With over 950 technology-related contract provisions referenced, the inventory offers a rich picture of how unions are addressing workplace technology.",
+   "claim": "over 950 provisions referenced",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: agreements and provisions",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F23": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "Contracts were identified and reviewed using keyword searches focused on terms such as surveillance, monitoring, and automation, followed by manual review to locate relevant content.",
+   "claim": "keyword search (surveillance, monitoring, automation) and manual review",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: sources, search, coding",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F24": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "Each provision was then analyzed using a structured coding framework that captures four key dimensions: bargaining strategy, technology type and function, worker and union rights, and employer obligations.",
+   "claim": "coded on four dimensions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: sources, search, coding",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F25": {
+   "source": "B1",
+   "locus": "FAQ, How were contracts selected and sourced",
+   "quote": "While not exhaustive of all sectors, the inventory provides a detailed view into how unions are engaging with digital workplace technologies through collective bargaining.",
+   "claim": "not exhaustive of all sectors",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "its stated limits",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F26": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "Many provisions refer broadly to “technology” or “technological change,” and some specifically mention “automation.”",
+   "claim": "provisions refer broadly to technology, technological change, automation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it finds: the language of technology",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F27": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "The use of such broad terms allows a single clause to cover diverse technologies, helping contracts stay relevant as new tools and systems emerge.",
+   "claim": "broad terms cover diverse technologies and keep contracts relevant",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it finds: the language of technology",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F28": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "This approach is especially valuable for preemptive language that secures rights and protections in anticipation of, or prior to, the adoption of new technologies.",
+   "claim": "broad terms valuable for preemptive language",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it finds: the language of technology",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F29": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "Some provisions address workplace-specific systems, while others cite particular technologies such as GPS, surveillance cameras, computers, handheld devices, or internet-based tools.",
+   "claim": "named technologies: GPS, surveillance cameras, computers, handheld devices, internet-based tools",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it finds: the language of technology",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F30": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "A few recent contracts explicitly reference artificial intelligence or generative AI, though most do not name AI or other emerging technologies directly.",
+   "claim": "a few recent contracts name AI or generative AI; most do not",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it finds: AI named in few contracts",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F31": {
+   "source": "B1",
+   "locus": "FAQ, What types of technologies",
+   "quote": "This type of specific language is more common in clauses focused on the governance and regulation of how particular technologies are used in the workplace, often involving mechanisms for participatory oversight or joint decision-making.",
+   "claim": "specific language more common in governance clauses, with participatory oversight",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it finds: AI named in few contracts",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F32": {
+   "source": "B1",
+   "locus": "FAQ, What is the time span",
+   "quote": "The inventory includes provisions from contracts negotiated across several decades.",
+   "claim": "contracts across several decades",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "time span: decades of contracts",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F33": {
+   "source": "B1",
+   "locus": "FAQ, What is the time span",
+   "quote": "Some were established many years ago, showing that longstanding language around technology remains relevant even as new innovations emerge.",
+   "claim": "older language remains relevant",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "time span: decades of contracts",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F34": {
+   "source": "B1",
+   "locus": "FAQ, Does the inventory include best practices or model language?",
+   "quote": "No. The inventory highlights actual negotiated provisions but does not offer model contract language. Instead, it aims to surface strategies unions have used in practice.",
+   "claim": "no model contract language; strategies unions have used",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is not: model language",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F35": {
+   "source": "B1",
+   "locus": "FAQ, What is the naming convention",
+   "quote": "Each contract is labeled with the acronym of the local union or unions that negotiated it and, when applicable, the acronym of the national or affiliated union.",
+   "claim": "contracts labeled by union acronym",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and labelling",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F36": {
+   "source": "B1",
+   "locus": "FAQ, What is the naming convention",
+   "quote": "Sources include OLMS (Office of Labor-Management Standards), OPM (Office of Personnel Management), and publicly posted collective bargaining agreements (PCBA).",
+   "claim": "identifier sources: OLMS, OPM, PCBA",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: sources, search, coding",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F37": {
+   "source": "B1",
+   "locus": "FAQ, Will new contracts be added",
+   "quote": "Yes. We plan to update this inventory periodically and welcome suggestions for contracts to include or ideas to improve coverage and usability. The most recent update was made on July 2, 2025.",
+   "claim": "periodic updates planned; last update 2 July 2025",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: updates",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F38": {
+   "source": "B1",
+   "locus": "FAQ, How can I cite this inventory?",
+   "quote": "Kresge, Lisa. “Negotiating tech: An inventory of U.S. union contract provisions for the digital age.” Center for Labor Research and Education, University of California, Berkeley. July 2025.",
+   "claim": "citation: Kresge, July 2025, Center for Labor Research and Education, UC Berkeley",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F39": {
+   "source": "B1",
+   "locus": "credits, Funding",
+   "quote": "Funding support provided by John D. and Catherine T. MacArthur Foundation and Omidyar Network",
+   "claim": "funded by the MacArthur Foundation and Omidyar Network",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F40": {
+   "source": "B1",
+   "locus": "footer",
+   "quote": "© Copyright 2026 UC Berkeley Labor Center",
+   "claim": "copyright 2026 UC Berkeley Labor Center; no licence stated on the page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and labelling",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F41": {
+   "source": "B1",
+   "locus": "How to use the inventory, Organization",
+   "quote": "The inventory has six main sections, each focused on a different area of union-negotiated workplace technology provisions.",
+   "claim": "six sections",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F42": {
+   "source": "B1",
+   "locus": "How to use the inventory",
+   "quote": "The inventory is designed to help users locate and understand how unions have addressed workplace technologies in collective bargaining agreements.",
+   "claim": "its purpose: to help users locate and understand provisions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F43": {
+   "source": "B1",
+   "locus": "FAQ, How can I contact you?",
+   "quote": "For questions, submissions, or technical assistance related to digital workplace technologies and technology bargaining, please contact Lisa Kresge, UC Berkeley Labor Center",
+   "claim": "contact: Lisa Kresge",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  },
+  "F44": {
+   "source": "B1",
+   "locus": "How to use the inventory, Looking for specific technologies?",
+   "quote": "For a focused list of named technologies see Section 4.4, which catalogs explicit technology mentions along with links to the relevant contracts.",
+   "claim": "Section 4.4 lists named technologies",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the six sections",
+   "instances": [
+    "B2"
+   ],
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1ffa7a4c532ec156…), whitespace-normalised; identical to B2.txt, the census's saved copy"
+  }
+ },
+ "field_sources": {
+  "B1": "UC Berkeley Labor Center — Negotiating tech (T1 card 1; the entity's own overview page, fetched 2026-10-29) — https://laborcenter.berkeley.edu/negotiating-tech/",
+  "B2": "the same overview page, the Labor Vector census's saved copy (basis 'operator', read 2026-10-29) — https://laborcenter.berkeley.edu/negotiating-tech/",
+  "B3": "Wikipedia: no article (the entity, its full title, its operator and its compiler answer 404)"
+ }
+}

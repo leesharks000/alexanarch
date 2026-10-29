@@ -1,0 +1,67 @@
+{
+ "row": "openai-gdpval",
+ "address": "GDPval",
+ "entity": "GDPval (openai.com/index/gdpval/), OpenAI's benchmark of AI model performance on real-world economically valuable tasks: 1,320 tasks (the full set) across 44 occupations in the 9 sectors contributing most to U.S. GDP, constructed from the work product of industry professionals averaging 14 years' experience, graded by blinded pairwise expert comparison of model and human deliverables, with a 220-task gold subset open-sourced and an experimental automated grader (Patwardhan and 18 others, OpenAI; PDF 25 September 2025, arXiv:2510.04374 v1 5 October 2025); formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/openai-gdpval/)",
+ "row_type": "C (a public entity on which the archive bears: a task benchmark; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bGDP-?val\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b2510\\.04374\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "benchmarks of AI capability (on occupational, real-world or economically valuable tasks; what a benchmark score measures)",
+   "pattern": "\\b(benchmark(s|ed|ing)?|capability evaluations?)\\b[^.]{0,80}\\b(occupations?|occupational|knowledge[- ]work|economically valuable|real[- ]world (tasks|work)|professional (tasks|work)|labou?r market|human experts?)\\b|\\b(occupations?|occupational|knowledge[- ]work|economically valuable|professional (tasks|work)|human experts?)\\b[^.]{0,80}\\bbenchmark(s|ed|ing)?\\b|\\bbenchmarks? (measures?|scores?|cannot|can ?not|do(es)? not|miss(es)?)\\b|\\bwhat benchmarks measure\\b|\\bthe property (no )?benchmarks? measures?\\b",
+   "flags": "i",
+   "basis": "field: B3 (arXiv:2510.04374, Abstract: 'We introduce GDPval, a benchmark evaluating AI model capabilities on real-world economically valuable tasks'); B8 (the paper's HTML v1, §1: 'AI capability evaluations can provide clearer, more directly attributable evidence about model abilities'); B4 (the paper's PDF, the same abstract); B2 (Artificial Analysis: 'tests AI models on real-world tasks across 44 occupations'); B7 (Inspect Evals: 'GDPval measures model performance on economically valuable, real-world tasks across 44 occupations'). The census's own kind ('benchmark (an evaluation dataset with an experimental automated grader)') and evidence_kind ('task benchmark') for the entity (LV record, census.json rows[slug == 'openai-gdpval'].kind, .evidence_kind)."
+  },
+  {
+   "term": "one-shot, precisely specified commissioned tasks",
+   "pattern": "\\bone[- ]shot (commission|task|prompt)s?\\b|\\bcommissioned (task|direction)s?\\b|\\btask[- ]origin\\b|\\bprecisely[- ]specified\\b",
+   "flags": "i",
+   "basis": "field: B8 §5 Limitations, 'Tasks are precisely-specified and one-shot, not interactive' and 'For GDPval, we provide the full context of the task in the prompt'; B8 §2.3 ('a request (often with reference files) and a deliverable (work product)'). Archive: the LV record's lv_intersection ('a task an expert wrote, a fixed commission'; 'task-origin is the experts' own work product') and the census intersection 'labor-with-ai' ('assistance, delegation, task fidelity')."
+  },
+  {
+   "term": "the user's review and redo of model output (correction burden, user labor drag)",
+   "pattern": "\\b(user labou?r drag|correction burdens?|review (and|or) redo|fix it yourself|redo(ing)? (the )?work|managing the substrate)\\b",
+   "flags": "i",
+   "basis": "field: B8 §3.2 ('Here, an expert human samples from a model, reviews outputs, and if unsatisfactory, resamples and repeats. If no satisfactory output is obtained, the human completes the task themselves.') and A.2.1 ('When incorporating time to review and redo work, the payoff from using a model shrinks.'). Archive: the census intersection 'labor-with-ai' ('assistance, delegation, task fidelity, correction burdens and user labor drag', census.json intersections) and the LV record's lv_intersection ('counts the expert's review and redo time against the model, which is where it meets user labor drag')."
+  },
+  {
+   "term": "expert labor producing AI evaluation (task writing, review, grading, annotation)",
+   "pattern": "\\b(annotators?|annotation (work|labou?r)|data[- ]label(l)?(ing|ers?)|evaluation labou?r|expert (graders?|raters?|annotators?|reviewers?)|human raters?|ghost work|crowd ?work(ers?)?|click ?work(ers?)?)\\b",
+   "flags": "i",
+   "basis": "field: B8 §2.2 ('We recruited expert industry professionals to create realistic tasks based on their professional work experience'), §2.5 ('Additional occupational experts were sourced to grade human and model deliverables'), A.5.2 ('Human reviewers conducted multiple rounds of review on each task'); B10 (Wikipedia, 'Tasks made by professionals averaging 14 years of experience'). Archive: the census intersection 'labor-producing-ai' ('annotation, moderation, evaluation, maintenance, and creative or scholarly work entering training and retrieval') and the LV record's labor_object ('the same professionals' labor as task writers, reviewers and graders')."
+  },
+  {
+   "term": "model graders and self-preference (LLM as judge)",
+   "pattern": "\\b(LLM[- ]as[- ]an?[- ]judge|LLM judges?|automated graders?|model[- ]graded|self[- ]preference|favou?r (their|its) own (responses|outputs))\\b",
+   "flags": "i",
+   "basis": "field: B8 A.6.2 ('Our automated grader, based on GPT-5-high, shows lower correlation with human expert graders when assessing outputs from capable OpenAI models. This aligns with empirical evidence that models often favor their own responses'); B2 (Artificial Analysis: 'an LLM judge picks a winner'); B7 (Inspect Evals: 'Our automated grader runs pairwise comparisons against a golden set of human solutions, using GPT-5'). Census negative_tags[4] ('an automated grader based on an OpenAI model')."
+  }
+ ],
+ "classes_note": "Five classes, each the census's own kind or intersection for the entity, stated by field sources at the loci given: (1) task benchmarks of AI capability on occupational and economically valuable work (census kind 'benchmark', evidence_kind 'task benchmark'; B3 Abstract, B4, B8 §1, B2, B7); (2) one-shot, precisely specified commissioned tasks (B8 §5 Limitations, §2.3; the LV record's lv_intersection 'a fixed commission' and intersection labor-with-ai 'task fidelity'), the class on which the archive's DSL (#771) states its identification condition; (3) the user's review and redo of model output (B8 §3.2, A.2.1; intersection labor-with-ai 'correction burdens and user labor drag'), the class of #771's User Labor Drag; (4) expert labor producing AI evaluation, the professionals as task writers, reviewers and graders (B8 §2.2, §2.5, A.5.2; B10; intersection labor-producing-ai 'annotation, moderation, evaluation'); (5) model graders and their self-preference (B8 A.6.2; B2; B7; census negative_tags). The archive's instruments of labor direction (DSL and the DS-6 directionality stack, #771; its canonical definition surface on laborvector.org, #1392; User Labor Drag, #771 §8) bear on classes (2) and (3) at the loci given in reading.json; the semantic-labor line bears on (4) only where a sentence says something of the labor that produces evaluations or training data as a class. The aliases are the entity's name (GDPval; 'GDP-val' and case variants matched) and its arXiv number. 'GDPval-AA' (Artificial Analysis's evaluation framework on OpenAI's GDPval dataset) is a distinct entity the alias pattern also matches; a sentence naming it is read for what it says of GDPval. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (DSL, task-origin, user labor drag, the directionality stack, semantic labor, provenance erasure) to one of the classes; a bare list, a citation-list entry or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'GDPval' (gdpval-aio-20261029, OBS-ef64b7d44199, ADDR-d4b480b48aca), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record and the worked question that names it) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#48, #163, #199, #308, #533, #623, #637, #771, #778, #855, #856, #1023, #1392, #1545).",
+ "hop_from": [
+  48,
+  163,
+  199,
+  308,
+  533,
+  623,
+  637,
+  771,
+  778,
+  855,
+  856,
+  1023,
+  1392,
+  1545
+ ]
+}

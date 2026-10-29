@@ -1,0 +1,91 @@
+{
+ "row": "coworker-bossware-database",
+ "address": "Bossware and Employment Tech Database",
+ "entity": "The Bossware and Employment Tech Database (home.coworker.org/worktech/), Coworker.org's database of more than 550 labor-focused technology products (635 product rows of 54 columns in the page saved 2026-10-29), researched November 2020 to May 2021 and published 17 November 2021 with its accompanying report, Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power (Wilneida Negrón, PhD; CC BY-NC-ND 4.0); formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/coworker-bossware-database/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "coworker-bossware-database",
+  "address": "Bossware and Employment Tech Database",
+  "entity": "The Bossware and Employment Tech Database (home.coworker.org/worktech/), Coworker.org's database of more than 550 labor-focused technology products (635 product rows of 54 columns in the page saved 2026-10-29), researched November 2020 to May 2021 and published 17 November 2021 with its accompanying report, Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power (Wilneida Negrón, PhD; CC BY-NC-ND 4.0); formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/coworker-bossware-database/)",
+  "row_type": "C (a public entity on which the archive bears: a database of workplace technology products; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bBossware and Employment Tech\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bCoworker\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bLittle Tech\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bworktech\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bNegr[oó]n\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "bossware: technology through which employers monitor and manage workers",
+    "pattern": "\\b(bossware|workplace (monitoring|surveillance)|employee (monitoring|surveillance|tracking)|worker (monitoring|surveillance|tracking)|(monitor|surveil|track)(s|ed|ing)? (the )?(workers|employees)|algorithmic management)\\b",
+    "flags": "i",
+    "basis": "field: B1 (the database page: 'the database covers products that use technology like AI, location tracking, and biometrics to manage employees and collect their data — often without their knowledge'; title 'Bossware and Employment Tech Database'); B9 (the report, §The Scope of the Study: 'sectors the most susceptible to algorithmic management, time tracking, and employment and labor organizing surveillance'); B2 (Vanderbilt: 'workplace monitoring platforms'); B5 (NYT snippet: 'technology and AI tools used by managers to supervise, surveil, and track employee habits'). The Labor Vector census's own primary intersection for the entity, 'ai-governing-labor' ('AI governing labor: hiring, surveillance, scheduling, quotas, evaluation and discipline'; census.json intersections, rows[slug == 'coworker-bossware-database'].intersections[0])."
+   },
+   {
+    "term": "the collection and commodification of workers' data",
+    "pattern": "\\b(workers?'? data|employee data|data (about|on|from|of) (the )?(workers|employees)|datafication of (employment|work|labou?r))\\b",
+    "flags": "i",
+    "basis": "field: B1 ('to manage employees and collect their data'); B9 (Executive Summary, finding 1: 'Accelerating the commodification of low-wage workers' data'; 'Deepening and accelerating the datafication of employment'); B2 ('sharing personal data about workers'). The census's lv_intersection: 'the products through which employers direct work and collect workers' data' (census.json rows[slug == 'coworker-bossware-database'].lv_intersection)."
+   },
+   {
+    "term": "hiring, recruitment and screening technology",
+    "pattern": "\\b(hiring (and recruitment )?(technolog\\w*|platforms?|tools?|software|funnels?)|recruit(ment|ing) (technolog\\w*|platforms?|tools?|software)|(technical[- ]hiring|AI interview|interview) (screening )?(platforms?|firms?)|applicant tracking|pre-hire assessments?|screening platforms?|HireVue)\\b",
+    "flags": "i",
+    "basis": "field: B1 (the database page: 'companies — and their products and investors — that touch every part of the labor process, from hiring to productivity monitoring and more'; the table's category 'Labor Market Optimization', 242 of 635 rows, among them 'HireVue AI Facial Recognition' ('HireVue's Hiring Intelligence Platform claims to deliver the best talent, faster, with video interviews and AI-driven pre-hire assessments'), 'Arctic Shores' and 'Arya AI Recruiting Platform'); B9 (the report's taxonomy, '4. Labor, job market, workplace optimization • Hiring and recruitment'; Table of Contents, 'Low-wage workers must navigate scientifically questionable hiring and background check technologies'). The census's primary intersection 'ai-governing-labor' ('AI governing labor: hiring, surveillance, scheduling, quotas, evaluation and discipline'; census.json intersections)."
+   }
+  ],
+  "classes_note": "Three classes, each sourced for the entity by the field at the loci given and matching the census's own primary intersection ('ai-governing-labor') and its lv_intersection reading: (1) bossware, the technology through which employers monitor and manage workers (B1, B9, B2, B5; census intersections[0]); (2) the collection and commodification of workers' data (B1, B9, B2; census lv_intersection); (3) hiring, recruitment and screening technology, the database's category 'Labor Market Optimization' (B1 scope and table; B9 taxonomy and Table of Contents; census intersections[0], 'hiring'). The third class was stated after a first reading of the archive's class matches found #747's passage on AI interview platforms (HireVue) and before that passage was read for admission, as §3.4's guard requires: class membership sourced from the field by locus, never by the composer's judgment. The census's kind ('database') and evidence kinds ('product inventory', 'rating against standards') are carried as the record's claims (LV-), not as class patterns. The archive's instruments of labor direction bear on these classes only through the census's reading: the census places the database at 'the layer of who directs labor' of the directionality stack and finds that 'DSL and task-origin find no measurement in it' (census.json rows[slug == 'coworker-bossware-database'].lv_intersection), ledgered as LV-. The instruments themselves are defined on synthetic labor: #771 (Directionality of Semantic Labor, AXN-02D1, Abstract: 'the *direction* in which a synthetic system's labor flows relative to the task its user commissioned'; §1, layer C, 'capacity to direct labor: can the user enforce the intended direction at all?'; §8, User Labor Drag, the user's labor 'redirected into managing the substrate rather than advancing the object') and #1392 (laborvector.org canonical definition surface, AXN-0581, the DS-6 tuple). Neither applies its category to employers' products or to workers' data: they are given here with their loci, and are admitted only if a sentence of theirs makes a claim on either class (§3.4). The aliases are the database's name, its operator (Coworker.org), its report's name for the marketplace it catalogues ('Little Tech', case-sensitive), the URL slug the composition used as a name ('worktech', T: 'Coworker Worktech Database') and the report's author. Admission by reading (§3.4): D where a deposit names the database and says something of it; O-class where a sentence applies an archive category to bossware or to workers' data as a class; a bare mention, a list, a citation-list entry or a reference line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Bossware and Employment Tech Database' (bossware-and-employment-tech-database-aio-20261029, OBS-ac3acd79e5f3, ADDR-bc5215fba8fa), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#747).",
+  "hop_from": [
+   747
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 5,
+  "O_deposits": 2,
+  "H_candidates": 2
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "159": 1,
+   "747": 4
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "b8f3911237720727c4516ef5bebc9439a2705456dc51d03c9cd837fe92960f2b",
+  "candidates-H.jsonl": "d2e18cdc1f67d53af5c3f5c22812e0eaf81e4dfe1b56bc460d89f32c6249f10a"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,104 @@
+{
+ "row": "microsoft-working-with-ai",
+ "address": "Microsoft Working with AI",
+ "entity": "Working with AI: Measuring the Applicability of Generative AI to Occupations (Microsoft Research: Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts, Siddharth Suri; arXiv:2507.07935, v1 10 July 2025, v7 23 October 2026, NeurIPS 2026; results files at github.com/microsoft/working-with-ai, v1.1, CC BY 4.0): 200k anonymized Bing Copilot conversations from the United States, 1 January to 30 September 2024, classified by an LLM pipeline to O*NET intermediate work activities as user goals and as AI actions, with completion, impact-scope and thumbs-feedback measures combined into an occupation-level AI applicability score; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/microsoft-working-with-ai/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "microsoft-working-with-ai",
+  "address": "Microsoft Working with AI",
+  "entity": "Working with AI: Measuring the Applicability of Generative AI to Occupations (Microsoft Research: Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts, Siddharth Suri; arXiv:2507.07935, v1 10 July 2025, v7 23 October 2026, NeurIPS 2026; results files at github.com/microsoft/working-with-ai, v1.1, CC BY 4.0): 200k anonymized Bing Copilot conversations from the United States, 1 January to 30 September 2024, classified by an LLM pipeline to O*NET intermediate work activities as user goals and as AI actions, with completion, impact-scope and thumbs-feedback measures combined into an occupation-level AI applicability score; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/microsoft-working-with-ai/)",
+  "row_type": "C (a public entity on which the archive bears: a paper with results files, a provider's observation of its own product's use; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bWorking with AI\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bAI applicability scores?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b2507\\.07935\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "microsoft/working-with-ai",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bTomlinson\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI applicability to, or impact on, occupations",
+    "pattern": "\\b(AI (applicability|exposure|impact) (to|on|of) (\\w+ ){0,2}(occupations?|jobs?|work)|occupational (AI )?(exposure|impact|implications)|exposure (index|score|estimates?) (to|of|for) (generative )?AI|O\\*NET)\\b",
+    "flags": "i",
+    "basis": "field: B9 (arXiv:2507.07935 abstract: 'to measure AI applicability to occupations'; 'the O*NET work activities assisted or performed by AI'); B1 (the Microsoft Research page: 'how real-world usage compares to predictions of occupational AI impact'); B8 (README: 'which occupations AI may be applicable to'); B11 (Wikipedia, 'Workplace impact of artificial intelligence', the paper's paragraph). The census's own evidence_kind for the entity ('exposure estimate') (LV record, census.json rows[slug == 'microsoft-working-with-ai'].evidence_kind)."
+   },
+   {
+    "term": "labor performed with AI: work activities assisted or performed by an AI system, delegation and assistance",
+    "pattern": "\\b(delegat\\w* (\\w+ ){0,3}tasks? to (an )?AI|AI[- ]assisted (work|tasks?)|(assisted|performed) by (an )?AI|use AI to assist|labou?r performed with AI|work(ing)? with AI|completed the user'?s goal)\\b",
+    "flags": "i",
+    "basis": "field: B9 (abstract: 'the O*NET work activities assisted or performed by AI'; 'which occupations are more likely to delegate tasks to AI and which are more likely to use AI to assist existing workflows'; 'AI-assisted work activities'); B8 (README: 'where our completion classfiier indicates that the LLM completed the user’s goal'; user goals and AI actions reported separately). The census's own intersection for the entity, 'labor-with-ai' ('Labor performed with AI: assistance, delegation, task fidelity, correction burdens and user labor drag') (census.json rows[...].intersections; intersections['labor-with-ai'])."
+   },
+   {
+    "term": "a provider's observation of its own product's use (platform-specific usage data)",
+    "pattern": "\\b(conversation (data|logs)|usage data|interaction data|(its|their) own (product|users|platform)'?s? (use|usage|conversations|data)|platform-specific (observation|data|record))\\b",
+    "flags": "i",
+    "basis": "field: B8 (README: 'These results were computed from Bing Copilot conversation data, which was originally collected by Microsoft'); B9 (abstract: 'we analyze a dataset of 200k anonymized conversations with Microsoft Bing Copilot'). The census's own evidence_kind ('interaction data') and negative tag ('NOT independent of the provider: a platform-specific observation of Microsoft's own product, published by Microsoft Research') (census.json rows[...].evidence_kind, .negative_tags[3])."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own intersection, kind of evidence or negative tag for the entity, stated by field sources at the loci given: (1) AI applicability to occupations, the census's 'exposure estimate' (B9 abstract, B1 abstract, B8, B11); (2) labor performed with AI, the census's intersection 'labor-with-ai' (B9 abstract: delegation against assistance, work activities assisted or performed by AI; B8: user goals and AI actions, the completion classifier); (3) a provider's observation of its own product's use, the census's 'interaction data' and its fourth negative tag (B8, B9). The archive's instruments of labor direction bear on class (2): the Directionality of Semantic Labor (#771, abstract, §1, §4, §8 User Labor Drag, §9 the identification condition), the DS-6 directionality stack (#771 §6; #1392, the laborvector.org definition surface), task-origin (#771 abstract and core thesis); and on class (3) the census's own reading. The census's lv_intersection is the archive's reading and is ledgered as such (LV record). The aliases are the paper's short title (case-sensitive, so that the lower-case phrase 'working with AI' in the archive's prose does not count as the name), its score, its arXiv number, its repository and its first author. 'Microsoft', 'Copilot' and 'Bing Copilot' are not aliases: Microsoft is the operator and the homonym's subject (the company's own AI products and workforce, composed by T), Bing Copilot the product whose conversations the entity observes. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to a class above; a bare list of surfaces naming Bing Copilot, a citation-list entry or a reference line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Microsoft Working with AI' (microsoft-working-with-ai-aio-20261029, OBS-25ca6976c874, ADDR-fbfc6406f398), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis and query note at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#771, #1392).",
+  "hop_from": [
+   771,
+   1392
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 7,
+  "D_deposits": 3,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 14,
+  "O_deposits": 10,
+  "H_candidates": 18
+ },
+ "per_deposit": {
+  "D": {
+   "605": 3,
+   "670": 2,
+   "671": 2
+  },
+  "R": {},
+  "O": {
+   "234": 1,
+   "729": 1,
+   "789": 1,
+   "863": 1,
+   "1369": 1,
+   "1634": 1,
+   "1664": 2,
+   "1665": 2,
+   "1671": 2,
+   "1690": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "2fe7abd30d9fc0b61a8790ef1b20ddb66ce167202b9bc45bc63d19165023a0b0",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "6e5ec8c1adc39c00ee26e6837f29e34014b3b8b4ab9681b259bc88658a07f772",
+  "candidates-H.jsonl": "2c8a8801db454b39bf0ea3ff28a759fa6f18e58d1cdeabb9f25a4083d8daf2d0"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

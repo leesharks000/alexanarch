@@ -1,0 +1,298 @@
+{
+ "row": "fairwork-cloudwork",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Fairwork Cloudwork Ratings with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (cloudwork: B1 'Defining cloudwork', B4, B10, B6, census unit and labor_object; AI data work: B1 'Data work', B8, B9, B6, census intersection labor-producing-ai; algorithmic management: B1 p. 21, census intersection ai-governing-labor; rating platforms against minimum labour standards: B1, B2, B3, census kind and evidence_kind). A bare mention, a list of keywords or hooks, a citation-list entry, a reference line, a cost line or a methods line naming annotators as raters is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, the sentences of the archive matching 'ghost work', 'data workers', 'Mechanical Turk', 'platform work' and 'digital labor platform' were read at their passages (one, #144, admitted). The hop candidates were each searched for the entity's names and the four class patterns (with 'annotators', 'moderators', 'gig workers'), and every passage found was read.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 18,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Economy (Marxian accounting framework), Part I §I.4d: content moderators, the workers of the AI-data-work class the field names (B8 'annotate data and moderate content'; B9 'content moderation'), perform semantic labor in its most brutal form; meaning produced by bodies at metabolic cost. The archive's category (semantic labor, somatic backing) applied to the class. String-pass candidates O0003, O0004",
+   "claims": [
+    "O18-01"
+   ],
+   "cands": [
+    "O0003",
+    "O0004"
+   ]
+  },
+  {
+   "dep": 533,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Groundskeeper's Treatise, diagnostic Step 1: annotators named among the sources of semantic labor whose concealment marks extraction (bearing-cost). The archive's category applied to annotators as a source class. Candidate O0015",
+   "claims": [
+    "O533-01"
+   ],
+   "cands": [
+    "O0015"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure: semantic extraction has consequences for real workers; content moderators and data labelers performing RLHF have their labor extracted and bear non-compensation materially. The archive's category (semantic extraction) applied to the class. Candidate O0020 (O0018, O0019, O0021, O0022 are keywords, a quotation of Ford and Iliadis, a sentence on Gray and Suri and a reference line: not admitted separately)",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0020"
+   ]
+  },
+  {
+   "dep": 144,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Administrators of Meaning (axial negation graph), node on Gray & Suri and Rahman & Sultana: the hidden-labor literature stops at task-labor, annotation and moderation, and cannot name that the erased thing is the provenance of meaning. The archive's negation applied to the account of the class. Read outside the string pass (class match 'hidden human labor' without a category term the script reads)",
+   "claims": [
+    "O144-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor: ghost work (annotators, content moderators, ground-truth labelers, micro-task workers) is ground-truth labor, distinct from variance-generative labor; it scales and is paid badly. The archive's categories applied to the class. Candidate O0006 (O0007, a table row, not admitted)",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": [
+    "O0006"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-MPAI-SEMANTIC-PROLETARIAT-01: the semantic proletariat is not AI annotators or gig workers (a class relation, not a demographic); the bridge path from moderators and annotators runs through semantic labor to it. The archive's category applied to, and distinguished from, the class. Candidates O0038, O0039",
+   "claims": [
+    "O1545-01",
+    "O1545-02"
+   ],
+   "cands": [
+    "O0038",
+    "O0039"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER reading notes for the entity's capture (OBS-65077a500a26, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'fairwork-cloudwork'] and organizing_question; questions.json; rendered aggregators/fairwork-cloudwork/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, and the two worked questions that name it; where a field restates a source ledgered in B (the report B1, the home page B10, Fairwork AI B9) it is one lineage with that source; lv_intersection is the archive's reading, ledgered as such",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37",
+    "LV-38"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1,
+    862
+   ],
+   "reason": "O0001, O0002, O0029, O0030: Zenodo's content moderators, repository moderation staff: not the class (AI data work) and nothing said of it"
+  },
+  {
+   "dep": [
+    28,
+    1162
+   ],
+   "reason": "O0005, O0031: a list of discourse hooks ('Platform Studies & Digital Labor ... The gig economy audience'): no claim"
+  },
+  {
+   "dep": [
+    163
+   ],
+   "reason": "O0007: a literature table row (Mertonian cumulative advantage ...): no claim on the class (the deposit is admitted on O0006 and its next paragraph)"
+  },
+  {
+   "dep": [
+    222
+   ],
+   "reason": "O0008: 'Who Gets Hurt' lists content moderators' invisible labor and damage without applying an archive category; the category is applied to the same workers in #18 (admitted)"
+  },
+  {
+   "dep": [
+    247
+   ],
+   "reason": "O0009: a before/after table of a probe ('invisible labor' → 'competitive advantage'): a record of a composition, not a claim on the class"
+  },
+  {
+   "dep": [
+    308
+   ],
+   "reason": "O0010: a reference list (Ferrante, Gray & Suri): no claim"
+  },
+  {
+   "dep": [
+    433
+   ],
+   "reason": "O0011: time 'algorithmically governed' in the gig economy, a gloss on Sharma's temporal labor about ranking by recency: no archive category applied to algorithmic management of workers"
+  },
+  {
+   "dep": [
+    469
+   ],
+   "reason": "O0012, O0013: the platform's extraction from gig workers as an example in a critique of the centrist extremist's cognitive labor; the gig economy here is undifferentiated (the field keeps cloudwork apart from geographically tethered work, B1 F24) and the claim is about the centrist extremist, not the class"
+  },
+  {
+   "dep": [
+    499
+   ],
+   "reason": "O0014: 'data labor' activism listed as a strategic response: no claim on the class"
+  },
+  {
+   "dep": [
+    534
+   ],
+   "reason": "O0016 (and hop H0030): Claude's constitution does not mention the labor conditions of the data annotators: a claim about the document's silences, not about the class"
+  },
+  {
+   "dep": [
+    580,
+    635,
+    716,
+    1680
+   ],
+   "reason": "O0017, O0023, O0025, O0040: annotators as raters in a method or pilot (inter-rater reliability, Likert scoring, PER annotation, agreement on weights): not the class"
+  },
+  {
+   "dep": [
+    623
+   ],
+   "reason": "O0018, O0019, O0021, O0022: keywords, a quotation of Ford and Iliadis, a sentence on Gray and Suri, a reference line; the deposit is admitted on O0020"
+  },
+  {
+   "dep": [
+    713,
+    1390,
+    1391
+   ],
+   "reason": "O0024, O0033–O0037: DashFace, the patent-poem on a gig delivery driver's face: geographically tethered work, which the field keeps apart from cloudwork (B1 F24); the keyword lines are not claims"
+  },
+  {
+   "dep": [
+    726,
+    727
+   ],
+   "reason": "O0026, O0027, O0028: bleed protocols and fan-out paths listing digital labor platforms and data labor as neighbouring fields to open with: no claim on the class"
+  },
+  {
+   "dep": [
+    1282
+   ],
+   "reason": "O0032: an invoice-leak tree ('$0.00 invoices for ghost work'): no claim"
+  },
+  {
+   "dep": [
+    1545
+   ],
+   "reason": "none rejected; admitted on O0038, O0039"
+  }
+ ],
+ "hop": {
+  "from": [
+   18,
+   144,
+   163,
+   533,
+   623,
+   1545
+  ],
+  "candidates": 87,
+  "admitted": 0,
+  "reading": "each of the 87 hop texts searched for the entity's names, the four class patterns and 'annotators', 'moderators', 'gig workers'; 79 had no such passage (no claim on the entity or a sourced class); the passages in #1, #28, #534, #892, #1162, #1427, #1634, #1680 were read and rejected (Zenodo moderation; discourse hooks; Claude's constitution's silences; a harassment moderator; CERN's scientific workers; a centralized moderator; annotator agreement on weights). #532 (H0029) has no full_text_path in the registry and was not read (S5, reported)"
+ },
+ "class_pass": "O-class: the string pass returned 40 candidates in 26 deposits; read by passage, it admitted #18, #533, #623, #163 and #1545; #144 was admitted on a class match outside the pass; the hop of 87 admitted none",
+ "observations": "No archive text names Fairwork, the Cloudwork Ratings, cloudwork or fair.work (D 0, R 0). The archive's bearing is ontological and by class only, all on AI data work: its workers perform semantic labor at bodily cost (#18), their labor is extracted (#623), they are bearing-cost sources whose concealment marks extraction (#533), ghost work is ground-truth labor against variance-generative labor (#163), the hidden-labor literature stops short of the provenance of meaning (#144), and the semantic proletariat is derived through them and not identical with them (#1545); and the archive's records of the entity, the Labor Vector census record (with its lv_intersection) and the capture. No archive text applies an archive category to cloudwork as such, to algorithmic management or to rating platforms against labour standards. The archive's instruments of labor direction (DSL #771, its stack and user labor drag; #1392) measure a synthetic system's labor and the user's and do not apply to the class; they stand in the config's classes_note with their loci.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 40,
+   "O_deposits": 26,
+   "H_candidates": 87
+  },
+  "deposits_candidate": 27,
+  "deposits_admitted": 6,
+  "deposits_admitted_with_claims": 6,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 87,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "lv": 38,
+   "deposit": 8
+  }
+ }
+}

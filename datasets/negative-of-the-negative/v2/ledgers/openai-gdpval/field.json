@@ -1,0 +1,1628 @@
+{
+ "row": "openai-gdpval",
+ "address": "GDPval",
+ "addresses": [
+  "GDPval"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: abstract or opening, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the PDF's pdftotext and pdfinfo text, the Wikipedia response summary, or the card's title and snippet for the two unreachable cards; 67/67 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 OpenAI's own page, unreachable: HTTP 403; B2 Artificial Analysis's GDPval-AA page; B3 the arXiv abstract page, byte-identical to the census's own page openai-gdpval--arxiv and carried once, as a card; B4 the paper as a PDF on OpenAI's CDN; B5 the Hugging Face dataset; B6 Vivek Haldar's video, title only, HTTP 429; B7 the Inspect Evals page); 'own_page', the census's own page that T did not surface (B8, the paper's HTML v1, copied from the census's saved copy; the census's other own pages are cards B1 and B3, carried once as cards); 'wikipedia', no article (B9), and the GDPval item in the article 'AI agent benchmark' (B10), which the search for the name returns. The census read no third-party source (all its sources carry basis 'operator' or 'observed'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "The paper is one work in three instances (B3 abstract page, B4 PDF created 2025-09-25, B8 HTML arXiv v1 2025-10-05): one lineage per claim, the earliest instance keeping the date; B8 is quoted for its clean text and each B8 quote found in the PDF's text is marked also_in B4, the lineage's earliest instance. The census's evidence quotes are the paper's (B3, B8); its fields that restate them are one lineage with the field source (§3.6). GDPval-AA (B2) and the Inspect Evals implementation (B7) are distinct entities; their claims about GDPval are carried as theirs, in their own lineages, except where they state GDPval's own scope or speed (F54, F60), carried in the field's lineages at attributed grade.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B4.pdf with B4.txt and B4-layout.txt by pdftotext and B4-info.txt by pdfinfo; B1-403.html the 403 challenge page and B1-census-403.html the census's own 403 copy; B6-search.html the YouTube results page that gave the video's URL and B6-429.html the watch page's 429; B8 copied from the census's saved copy; B9 .wiki, .html, -variant.wiki, -search-429.html, -search.html raw Wikipedia responses with B9.txt a summary of codes and notices; B10 .wiki, .html, .txt the article 'AI agent benchmark'); sha256 per file in each source's 'files'",
+ "fetch_agent": "Mozilla/5.0 (compatible; Labor-Vector-census) for every fetch (BRIEF-NEW-ROW-LABOR.md §4); no source refusing it was retried with another agent string or by another route",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "OpenAI — Measuring the performance of our models on real-world tasks | OpenAI",
+   "url": "https://openai.com/index/gdpval/",
+   "kind": "Overview card (OpenAI's own page; the census's own page openai-gdpval--post; unreachable: HTTP 403)",
+   "files": {
+    "B1-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B1-403.html",
+     "sha256": "07799b36bc6e4a9610c6a63d597b232519e345705e884aa764ed1f4f6325bea2"
+    },
+    "B1-census-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B1-census-403.html",
+     "sha256": "b0a7ee49cca701cbc40625e050aaca241349f4b61557dd8184d22f8b095996cb"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:14Z",
+      "http": 403,
+      "sha256": "07799b36bc6e4a9610c6a63d597b232519e345705e884aa764ed1f4f6325bea2",
+      "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+      "result": "a 9,771-byte challenge page (the word 'challenge' four times in it), saved as B1-403.html"
+     },
+     {
+      "at": "2026-10-29T21:49:14Z",
+      "http": 403,
+      "sha256": "b0a7ee49cca701cbc40625e050aaca241349f4b61557dd8184d22f8b095996cb",
+      "by": "the census (sources/manifest.json openai-gdpval--post)",
+      "result": "the census's own fetch: 403, text_chars 0; copied as B1-census-403.html"
+     }
+    ],
+    "note": "URL found by WebSearch on the card's title and site (the result 'openai.com/index/gdpval'); it is the census's own page for the entity (openai-gdpval--post). One fetch with the brief's honest agent string returned HTTP 403 with a challenge page; per the brief (§4) no other agent string or route was tried. The census's 403 of 21:49 is copied beside it. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('OpenAI' as the card's site and in its title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "carried once, as the card: the census's own page is the same URL, unread by the census and here",
+   "card_title": "Measuring the performance of our models on real-world tasks | OpenAI",
+   "card_snippet": "GDPval: Evaluation measuring model performance on 1,320 specialized tasks across 44 knowledge work occupations from 9 U.S. GDP-contributing industries (threshol...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 1
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Artificial Analysis — GDPval-AA v2.1 Benchmark - Artificial Analysis",
+   "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+   "kind": "Overview card (a third party's evaluation framework on OpenAI's dataset, a distinct entity)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B2.html",
+     "sha256": "e320651e4d74e7af6a2efb611bb8deefaf46ad7d62e8958d67f2782c1b40e2f1"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B2.txt",
+     "sha256": "654fea0c38d45ae683d2b35720c625d66316f3b09eb3965a7253b7c270f6bc9e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:16Z",
+    "http": 200,
+    "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B2.html",
+    "raw_sha256": "e320651e4d74e7af6a2efb611bb8deefaf46ad7d62e8958d67f2782c1b40e2f1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('OpenAI's GDPval dataset'; the paper's 19 authors listed)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site; the page's <title> is 'GDPval-AA v2.1 Benchmark | Artificial Analysis'. The page carries a paragraph headed 'Abstract' under 'Publication' that is not the paper's abstract (compare B3 Abstract): it is quoted as Artificial Analysis's text (F54), attributed.",
+   "card_title": "GDPval-AA v2.1 Benchmark - Artificial Analysis",
+   "card_snippet": "GDPval-AA v2.1 Benchmark LegacyAgenticKnowledge WorkWritingReasoningInstruction FollowingTool UseMultimodalBusinessFinanceLegalMedicalHumanities GDPval-AA v2. 1...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 2
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "arXiv — [2510.04374] GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+   "url": "https://arxiv.org/abs/2510.04374",
+   "kind": "Overview card (the paper's abstract page; the census's own page openai-gdpval--arxiv, byte-identical)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B3.html",
+     "sha256": "904393337a8b91ee7b387d650a2eb4c89dd29d4040b7c228c8b57e25fb991835"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B3.txt",
+     "sha256": "6e4ebc1a8814c4ba0a4f2ecf49a6e3f4b44b9ef8b252b1a95643f39d60db517a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:17Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2510.04374",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B3.html",
+    "raw_sha256": "904393337a8b91ee7b387d650a2eb4c89dd29d4040b7c228c8b57e25fb991835",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B3.txt"
+    ],
+    "note": "byte-identical to the census's saved copy openai-gdpval--arxiv (sha256 904393337a8b91ee…, read 2026-10-29), so carried once, as a card"
+   },
+   "names_operator": "yes (the 19 authors; correspondence and affiliation on the paper)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the arXiv number in the card's title.",
+   "card_title": "[2510.04374] GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+   "card_snippet": "[2510.04374] GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks Scheduled maintenance: Today - Please check here for updates:Stat...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 3
+    }
+   ]
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "OpenAI — gdpval: evaluating ai model performance - OpenAI",
+   "url": "https://cdn.openai.com/pdf/d5eb7428-c4e9-4a33-bd86-86dd4bcf12ce/GDPval.pdf",
+   "kind": "Overview card (the paper as a PDF on OpenAI's CDN, created 2025-09-25: the earliest fetched instance of the paper)",
+   "files": {
+    "B4.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4.pdf",
+     "sha256": "37c7604bc9da68cd8d9345ad16938164fe985182ad723fcb09e9415f84dc25d4"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4.txt",
+     "sha256": "f1fa9ebb67ac6ec3d4184040e369a0d93049b2ebfa8b65f200c06c5e0ac4e23f"
+    },
+    "B4-layout.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4-layout.txt",
+     "sha256": "381209fb880cdb070074dea53b6fdde2e65ef6a70611f9e01f5df7e5a406a895"
+    },
+    "B4-info.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4-info.txt",
+     "sha256": "b0063449a685d2bc7207c37157b98a28da9b6e9795ce3ebd3fe53011834f3ae7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:21Z",
+    "http": 200,
+    "url": "https://cdn.openai.com/pdf/d5eb7428-c4e9-4a33-bd86-86dd4bcf12ce/GDPval.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4.pdf",
+    "raw_sha256": "37c7604bc9da68cd8d9345ad16938164fe985182ad723fcb09e9415f84dc25d4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4.txt",
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B4-info.txt"
+    ],
+    "note": "text by pdftotext (B4.txt; B4-layout.txt with -layout); B4-info.txt is pdfinfo's output (CreationDate 2025-09-25)"
+   },
+   "names_operator": "yes ('OpenAI' under the author list)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and snippet; the snippet's sentence ('Our paper introduces the first version of GDPval, a benchmark evaluating AI model performance on real-world economically valuable tasks. GDPval covers the top 9…') is in the PDF's §1 (F2). The paper's text in the PDF matches the arXiv v1 HTML (B8) at every quote checked (field_claims[*].also_in).",
+   "card_title": "gdpval: evaluating ai model performance - OpenAI",
+   "card_snippet": "Our paper introduces the first version of GDPval, a benchmark evaluating AI model performance on real-world economically valuable tasks. GDPval covers the top 9...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 4
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Hugging Face — openai/gdpval · Datasets at Hugging Face",
+   "url": "https://huggingface.co/datasets/openai/gdpval",
+   "kind": "Overview card (the operator's dataset page)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B5.html",
+     "sha256": "1de40771dafd9ab66e4debd6e6eeea9a1f4584979fc0189c4ae04ebdd0c55f9e"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B5.txt",
+     "sha256": "a87b38c91f3d9a86100681e4c51fb04f63beef009692d471d69da681dc1784c0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:21Z",
+    "http": 200,
+    "url": "https://huggingface.co/datasets/openai/gdpval",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B5.html",
+    "raw_sha256": "1de40771dafd9ab66e4debd6e6eeea9a1f4584979fc0189c4ae04ebdd0c55f9e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('openai' as the dataset's owner, 'OpenAI 43.8k')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (the dataset id). No license is stated on the served page.",
+   "card_title": "openai/gdpval · Datasets at Hugging Face",
+   "card_snippet": "Dataset: openai/gdpval on Hugging Face (Parquet format, <1K size, 220 rows, 2.29 GB total file size). Modalities: Text. Libraries: Datasets, pandas, Polars, xet...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 5
+    }
+   ]
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "YouTube·Vivek Haldar — GDPval: An AI benchmark for real-world tasks (video, 11:23)",
+   "url": "https://www.youtube.com/watch?v=R1O-lUKlAys",
+   "kind": "Overview card (video; title only)",
+   "files": {
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B6-search.html",
+     "sha256": "f83812ae662370236ca9659f1ffd6a3db56ce5adec83552b542736fb22e15371"
+    },
+    "B6-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B6-429.html",
+     "sha256": "ffa2a4f6dd5b641a4346a85fd5d71b2064ea8e45dd2ee53ff5ebed6a62edc475"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:00Z",
+      "http": 200,
+      "url": "https://www.youtube.com/results?search_query=GDPval+An+AI+benchmark+for+real-world+tasks+Vivek+Haldar",
+      "sha256": "f83812ae662370236ca9659f1ffd6a3db56ce5adec83552b542736fb22e15371",
+      "result": "a YouTube results page giving the video id R1O-lUKlAys under the card's title, by Vivek Haldar, '11 minutes, 23 seconds'"
+     },
+     {
+      "at": "2026-10-29T22:32:11Z",
+      "http": 429,
+      "url": "https://www.youtube.com/watch?v=R1O-lUKlAys",
+      "sha256": "ffa2a4f6dd5b641a4346a85fd5d71b2064ea8e45dd2ee53ff5ebed6a62edc475",
+      "result": "HTTP 429 (3,272 bytes); not retried"
+     }
+    ],
+    "note": "WebSearch did not find the video; its URL came from a YouTube results page fetched with the honest agent. The watch page answered 429 and was not retried by another route; no transcript was fetched. Admitted through its title (the card carries no snippet)."
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "GDPval: An AI benchmark for real-world tasks",
+   "card_snippet": null,
+   "card_note": "video, 11:23",
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 6
+    }
+   ]
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "GitHub Pages documentation — GDPval – Inspect Evals - GitHub Pages",
+   "url": "https://ukgovernmentbeis.github.io/inspect_evals/evals/gdpval/index.html",
+   "kind": "Overview card (a third party's implementation of the gold subset, a distinct entity)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B7.html",
+     "sha256": "db6622b4af38050431dc894d0e47a6d91f1640b67e1f103a78c310c5842a6e19"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B7.txt",
+     "sha256": "7116b9eb5f5b66bac773e42fc1c7a5f354da254833ba5cedcbd596f217d6a48b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:48Z",
+    "http": 200,
+    "url": "https://ukgovernmentbeis.github.io/inspect_evals/evals/gdpval/index.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B7.html",
+    "raw_sha256": "db6622b4af38050431dc894d0e47a6d91f1640b67e1f103a78c310c5842a6e19",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B7.txt"
+    ]
+   },
+   "names_operator": "yes ('the OpenAI auto grader', 'the official GDPval leaderboard by OpenAI')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "WebSearch did not return the page; its URL came from the link './evals/gdpval/index.html' on the Inspect Evals index (https://ukgovernmentbeis.github.io/inspect_evals/, HTTP 200, not saved). The page's <title> is 'GDPval – Inspect Evals'; the card's snippet is the page's first paragraph.",
+   "card_title": "GDPval – Inspect Evals - GitHub Pages",
+   "card_snippet": "GDPval measures model performance on economically valuable, real-world tasks across 44 occupations. The first version of this evaluation spans 44 occupations se...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "gdpval-aio-20261029",
+     "card": 7
+    }
+   ]
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the census's own page (the paper's HTML, arXiv v1); not surfaced by T",
+   "card": "arXiv — GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks (HTML, v1)",
+   "url": "https://arxiv.org/html/2510.04374v1",
+   "kind": "own page, saved by the census (sources/openai-gdpval--paper-html, read 2026-10-29)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B8.html",
+     "sha256": "1d4c4f2494000318567a5b82504d7154119aa88a40ba11c18568a4dea718c5d9"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B8.txt",
+     "sha256": "bf50b5c5608086dca1e39492d365a66fb164d90a3b60cf4d0aa39ea3d8f21ddd"
+    }
+   },
+   "fetched": {
+    "by": "the census",
+    "at": "2026-10-29T21:56:25Z",
+    "http": 200,
+    "url": "https://arxiv.org/html/2510.04374v1",
+    "raw": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B8.html",
+    "raw_sha256": "1d4c4f2494000318567a5b82504d7154119aa88a40ba11c18568a4dea718c5d9",
+    "census_sha256": "1d4c4f2494000318567a5b82504d7154119aa88a40ba11c18568a4dea718c5d9",
+    "read": "2026-10-29",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B8.txt"
+    ],
+    "note": "copied from the census's saved copy (html gunzipped; .txt copied); the sha256 matches the census record; not refetched"
+   },
+   "names_operator": "yes (author block 'OpenAI'; 'Correspondence to tejal@openai.com')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted per the operator's ruling ('their own pages'); not surfaced by T, though it is the same work as cards B3 and B4.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B9",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — GDPval (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=GDPval&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B9.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9.wiki",
+     "sha256": "8a1e7da066ff8c2b1695e4f70fc7ad874960b2dc0e421cc2cd0b775ab4713056"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9.html",
+     "sha256": "d7a7c9e4258e64985cf61361fd6130d9a6abe2420218e1b51d21cac65a97af5f"
+    },
+    "B9-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9-variant.wiki",
+     "sha256": "fef283f04f017ec84a3dba258508b544e6cd5e6dc649ce737ac11a25bdbf8db7"
+    },
+    "B9-search-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9-search-429.html",
+     "sha256": "d1584927871bf524c00010d9f1699c1de2b0b8afcae814cb37e4a7807a2c11b9"
+    },
+    "B9-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9-search.html",
+     "sha256": "1b0fdaea45329611aedc998dc8702e2b427f9f06d3edb79c3ad3abc65842f233"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9.txt",
+     "sha256": "13e34e1adcf88d985964351feb60afffe32f81cb135120f90ce87a7224fa29f0"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:33Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=GDPval&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:35Z",
+      "url": "https://en.wikipedia.org/wiki/GDPval?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:32:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=GDPVal&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:53Z",
+      "url": "Special:Search \"GDPval\" (article space)",
+      "http": 429,
+      "result": "rate-limited; refetched with the same agent"
+     },
+     {
+      "at": "2026-10-29T22:33:21Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22GDPval%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'Results 1 – 2 of 2': AI agent benchmark; Comparison of generative AI models"
+     }
+    ],
+    "raw_sha256": "d7a7c9e4258e64985cf61361fd6130d9a6abe2420218e1b51d21cac65a97af5f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B9.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "surfaced_by_T": [],
+   "note": "No article and no redirect under either spelling. The name occurs in two articles' text: 'AI agent benchmark' (ledgered as B10, its GDPval item) and 'Comparison of generative AI models' (which names GDPval-AA, a distinct entity; not ledgered). B9.txt is a summary of the codes and notices, its quoted strings taken from the saved responses."
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the GDPval item in 'AI agent benchmark', §Benchmarks, 'Economic'",
+   "card": "Wikipedia — AI agent benchmark (the GDPval item)",
+   "url": "https://en.wikipedia.org/wiki/AI_agent_benchmark",
+   "kind": "Wikipedia (a section of another article that names the entity; no redirect)",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B10.wiki",
+     "sha256": "87edcbedc1e0e6854b31b3b30d04dc45d304f89f0ba97924da21967ba19fce11"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B10.html",
+     "sha256": "3be91030981967b083c9e8ced0c33a995377c77d3eddd38cf2e72e3dd3ea39df"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B10.txt",
+     "sha256": "ec6893fc1c953a169d14d117c0513b63395b11cb40e37c820666cda7995c4791"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:34Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=AI_agent_benchmark&action=raw",
+      "http": 200,
+      "sha256": "87edcbedc1e0e6854b31b3b30d04dc45d304f89f0ba97924da21967ba19fce11"
+     },
+     {
+      "at": "2026-10-29T22:33:38Z",
+      "url": "https://en.wikipedia.org/wiki/AI_agent_benchmark",
+      "http": 200,
+      "sha256": "3be91030981967b083c9e8ced0c33a995377c77d3eddd38cf2e72e3dd3ea39df"
+     }
+    ],
+    "raw_sha256": "3be91030981967b083c9e8ced0c33a995377c77d3eddd38cf2e72e3dd3ea39df",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/openai-gdpval-20261029/B10.txt"
+    ]
+   },
+   "names_operator": "yes ('only available internally in OpenAI'; the arXiv citation's authors)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [],
+   "note": "The article carries a maintenance tag ('This article relies excessively on references to primary sources', October 2026). Its GDPval item cites only the arXiv paper; its held-out-set sentence (1,100 tasks internal) and 'finetuned version of GPT-5' are not in the field's other texts in those words."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "We introduce GDPval, a benchmark evaluating AI model capabilities on real-world economically valuable tasks.",
+   "claim": "GDPval defined by its authors: a benchmark evaluating AI model capabilities on real-world economically valuable tasks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a benchmark of model capability on economically valuable tasks",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": [
+    "B4 (the abstract, in the PDF)"
+   ]
+  },
+  "F2": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "p. 1, §1 ¶2 (the card's own text)",
+   "quote": "Our paper introduces the first version of GDPval, a benchmark evaluating AI model performance on real-world economically valuable tasks.",
+   "claim": "the paper introduces the first version of GDPval, a benchmark of model performance on economically valuable tasks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a benchmark of model capability on economically valuable tasks",
+   "date": "2025-09-25 (PDF CreationDate)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 f1fa9ebb67ac6ec3…), saved text B4-info.txt (sha256 b0063449a685d2bc…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "GDPval covers the majority of U.S. Bureau of Labor Statistics Work Activities for 44 occupations across the top 9 sectors contributing to U.S. GDP (Gross Domestic Product).",
+   "claim": "coverage: most BLS Work Activities for 44 occupations in the top 9 sectors of U.S. GDP",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope and count: 1,320 tasks, 44 occupations, 9 sectors",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": [
+    "B4 (the abstract, in the PDF)"
+   ]
+  },
+  "F4": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1 ¶1 s3–5",
+   "quote": "Therefore, while informative when available, these methods are lagging indicators of AI impacts. We consider an alternate method for understanding the potential economic impacts of AI: directly measuring AI model capabilities. AI capability evaluations can provide clearer, more directly attributable evidence about model abilities, allowing us to assess economic relevance ahead of widespread adoption.",
+   "claim": "adoption, usage and GDP indicators are lagging; the paper measures capability directly, to assess economic relevance ahead of adoption",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "positioning: capability measured ahead of adoption",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F5": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1, bullet 'Representative breadth', s3",
+   "quote": "We also build on production AI usage analyses (e.g., Tamkin et al. (2024) ; Chatterji et al. (2025) ; Appel et al. (2025) ) to cover areas where model adoption is still emerging.",
+   "claim": "it builds on production usage analyses (among them Appel et al. 2025) to cover areas where adoption is still emerging",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "positioning: capability measured ahead of adoption",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1, bullet 'Realism'",
+   "quote": "Unlike AI benchmarks in the style of an academic test that focus on reasoning difficulty (e.g., Phan et al. (2025) ; Hendrycks et al. (2020) ; Rein et al. (2023) ; Liu et al. (2023) ), tasks are based on actual work product from industry experts, validated through multiple rounds and review, and tied to time and cost required for completion.",
+   "claim": "set against academic-test benchmarks of reasoning difficulty: tasks from actual work product, reviewed, tied to time and cost",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "against academic-test benchmarks",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1, bullet 'Representative breadth', s1",
+   "quote": "the GDPval full set covers 1,320 tasks across 44 occupations, sourced to cover the majority of Work Activities tracked by O*NET for each occupation",
+   "claim": "the full set: 1,320 tasks across 44 occupations, sourced to cover most O*NET Work Activities per occupation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scope and count: 1,320 tasks, 44 occupations, 9 sectors",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F8": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.1 ¶1",
+   "quote": "GDPval covers tasks from 9 sectors and 44 occupations that collectively earn $3T annually.",
+   "claim": "9 sectors and 44 occupations that collectively earn $3T a year",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope and count: 1,320 tasks, 44 occupations, 9 sectors",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F9": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.1 step 1",
+   "quote": "Selected sectors that contribute over 5% to US GDP as determined by Q2 2024 Value Added by Industry as a Percentage of Gross Domestic Product",
+   "claim": "sectors selected at over 5% of U.S. GDP (Q2 2024 value added)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "selection: sectors by GDP share, occupations by wages, digital by model classification",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F10": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.1 step 2",
+   "quote": "we prompted GPT-4o to classify each task as digital or non-digital, and then classified the overall occupation as digital if at least 60% of its component tasks were digital.",
+   "claim": "occupations classified 'predominantly digital' by GPT-4o's classification of their O*NET tasks, at a 60% threshold",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "selection: sectors by GDP share, occupations by wages, digital by model classification",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F11": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.3 s1",
+   "quote": "Each GDPval task consists of two primary components: a request (often with reference files) and a deliverable (work product).",
+   "claim": "the unit: a request, often with reference files, and a deliverable",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: a request and a deliverable",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F12": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1 ¶4 s3",
+   "quote": "Each task is constructed based on actual work product created by an expert professional.",
+   "claim": "each task built from actual work product of an expert professional",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "task-origin: the experts' own work product",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "Tasks are constructed from the representative work of industry professionals with an average of 14 years of experience.",
+   "claim": "tasks constructed from the representative work of professionals averaging 14 years' experience",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "task-origin: the experts' own work product",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": [
+    "B4 (the abstract, in the PDF)"
+   ]
+  },
+  "F14": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.2 s2 and s6",
+   "quote": "Experts were required to have a minimum of 4 years of professional experience in their occupation … Experts were well compensated for their time and experience.",
+   "claim": "the experts: at least 4 years in the occupation; 'well compensated', with no rate given",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the experts: recruitment, experience, compensation",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F15": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Acknowledgements s2",
+   "quote": "We are also grateful to our vendor partners for their collaboration and support throughout this research, and extend a special thank you to the industry experts who contributed their time and expertise to GDPval, without whom this work would not have been possible.",
+   "claim": "the authors thank unnamed vendor partners and the industry experts, 'without whom this work would not have been possible'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the experts: recruitment, experience, compensation",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F16": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.4 s1–2",
+   "quote": "All 1,320 tasks in the full GDPval set went through an iterative review pipeline involving both automated model-based screening and multiple stages of human expert review. Each task received an average of five human reviews (with a minimum of three reviews).",
+   "claim": "every task through model screening and several stages of expert review, five reviews on average, three at least",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "direction of the work: review and quality control",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F17": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.5.1 ¶2 s2; A.5.2 s3",
+   "quote": "Experts retained final responsibility for task accuracy and completeness; the model did not autonomously alter tasks. … Initially, our researchers manually reviewed all tasks to identify experts who produced consistently high-quality tasks; these individuals were trained and promoted to reviewers.",
+   "claim": "the experts kept final responsibility, the model altering nothing; the researchers reviewed all tasks and promoted experts to reviewers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "direction of the work: review and quality control",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.5 ¶1",
+   "quote": "we conducted blinded expert pairwise comparisons, where experts in the relevant occupation were presented with a request and reference files and asked to rank two or more unlabeled work deliverables.",
+   "claim": "grading: blinded pairwise comparison by experts in the occupation, ranking unlabeled deliverables",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "grading: blinded pairwise expert comparison",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F19": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.5 ¶2 s1",
+   "quote": "On average, grading each comparison for the gold subset took over an hour.",
+   "claim": "each comparison took over an hour to grade",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "grading: blinded pairwise expert comparison",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F20": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§3.1, footnote 2, s1",
+   "quote": "We aimed to keep comparisons as blind as possible, but model samples may still have been identifiable due to stylistic differences.",
+   "claim": "the blinding was not complete: model samples may have been identifiable by style",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "grading: blinded pairwise expert comparison",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F21": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.5 ¶3 s2",
+   "quote": "Although limited, the automated grader is faster and cheaper than expert grading, and achieves 66% agreement with human expert graders, only 5% below human expert inter-rating agreement of 71%.",
+   "claim": "the experimental automated grader: 66% agreement with experts against 71% between experts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the automated grader and its limits",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F22": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.6.2 ¶2 s1–2",
+   "quote": "Our automated grader, based on GPT-5-high, shows lower correlation with human expert graders when assessing outputs from capable OpenAI models. This aligns with empirical evidence that models often favor their own responses",
+   "claim": "the grader, based on GPT-5-high, agrees less with experts on capable OpenAI models' outputs, in line with models favouring their own responses",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the automated grader and its limits",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F23": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§5, 'Cost'",
+   "quote": "Constructing and running our evaluation is expensive, particularly with industry expert graders. For this reason, we make an automated grader proxy available, but do not consider it a full substitute for industry expert graders.",
+   "claim": "expert grading is expensive; the automated grader is a proxy, not a full substitute",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the automated grader and its limits",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F24": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Figure 5 caption",
+   "quote": "On human pairwise comparisons, models are beginning to approach parity with industry experts on the GDPval gold subset.",
+   "claim": "models beginning to approach parity with industry experts on the gold subset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline finding: approaching parity with experts",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F25": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§3.1 ¶1, last two sentences",
+   "quote": "on the GDPval gold subset, 47.6% of deliverables by Claude Opus 4.1 were graded as better than (wins) or as good as (ties) the human deliverable. Model deliverables outperformed or matched expert humans’ deliverables in just over half the tasks.",
+   "claim": "47.6% of Claude Opus 4.1's deliverables graded as good as or better than the human's; 'just over half the tasks' in the next sentence",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "headline finding: approaching parity with experts",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F26": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Figure 6 caption",
+   "quote": "Performance of OpenAI frontier models increased roughly linearly over time on the GDPval gold subset.",
+   "claim": "OpenAI frontier models' performance rose roughly linearly over time",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "trend: roughly linear improvement",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F27": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§3.1 ¶1",
+   "quote": "Claude Opus 4.1 was the best performing model on the GDPval gold subset, excelling in particular on aesthetics (e.g., document formatting, slide layout), while GPT-5 excelled in particular on accuracy (e.g., carefully following instructions, performing correct calculations)",
+   "claim": "Claude Opus 4.1 best overall, on aesthetics; GPT-5 best on accuracy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "models compared: aesthetics and accuracy",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F28": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Figure 8 caption",
+   "quote": "Across models, experts most often preferred the human deliverable because models failed to fully follow instructions on GDPval tasks.",
+   "claim": "experts preferred the human deliverable most often because models failed to follow instructions fully",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "why models lose: instructions, and the severity of failures",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F29": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.6 ¶2 s2",
+   "quote": "Another roughly 29% of ratings were for bad or catastrophic (with roughly 3% of failures marked as catastrophic).",
+   "claim": "of GPT-5's losses, about 29% rated bad or catastrophic, about 3% catastrophic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "why models lose: instructions, and the severity of failures",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F30": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§3.2 ¶1 s4–5",
+   "quote": "Here, an expert human samples from a model, reviews outputs, and if unsatisfactory, resamples and repeats. If no satisfactory output is obtained, the human completes the task themselves.",
+   "claim": "the scenario: the expert samples, reviews, resamples, and completes the task themselves if nothing satisfies",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "speed and cost: the expert's review and redo",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F31": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.1 Table 2, row gpt-5, and the sentence after it",
+   "quote": "gpt-5 39.0% 90x 1.12x 1.39x 474x 1.18x 1.63x … When incorporating time to review and redo work, the payoff from using a model shrinks.",
+   "claim": "GPT-5 at a 39.0% win rate: 90x naive speed, 1.12x tried once, 1.39x tried n times; once review and redo are counted 'the payoff from using a model shrinks'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "speed and cost: the expert's review and redo",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.1, after Table 2, s2–4",
+   "quote": "We do not include consideration of the time taken to review a human professional deliverable, although this would commonly occur for tasks in GDPval (either self-review of the professional’s own work or review by a supervisor of a team member’s work). We also do not include the possibility that the human deliverable is also undesirable. One further limitation of this analysis is that it does not capture the cost of catastrophic mistakes, which can be disproportionately expensive in some domains.",
+   "claim": "the analysis omits review of human deliverables, undesirable human deliverables and the cost of catastrophic mistakes",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "speed and cost: the expert's review and redo",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F33": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.1, footnote 9",
+   "quote": "We are over-penalizing the model here, because the win rate after each completion likely goes up (because the professional will adjust the prompt to the model to fix the errors) and the review time also goes down as the professional gets more comfortable with the task.",
+   "claim": "the try-n-times estimate over-penalizes the model: the professional adjusts the prompt and reviews faster",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "speed and cost: the expert's review and redo",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.1, footnotes 6 and 7",
+   "quote": "Because times were self-reported, it is possible that experts under-estimated or over-estimated time taken … Because our experts were recruited specifically for being highly experienced in their field, these wage estimates likely underestimate their true market cost.",
+   "claim": "completion times self-reported; BLS median wages likely underestimate the experts' market cost",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "valuing the experts' time",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§2.3 s4",
+   "quote": "Each task’s dollar value was estimated by multiplying the average estimated completion time by median hourly wages for the corresponding occupation from OEWS data",
+   "claim": "a task's dollar value: estimated completion time times the occupation's median hourly wage (OEWS)",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "valuing the experts' time",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1, bullet 'Long-horizon difficulty'",
+   "quote": "Tasks require an average of 7 hours of work for an expert professional to complete. On the high end, tasks span up to multiple weeks of work.",
+   "claim": "an average of 7 hours of expert work per task, up to weeks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "task length",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.5 s2",
+   "quote": "Win rates are highest for shorter tasks (0–2 hours) and decline steadily as completion time increases.",
+   "claim": "win rates highest on 0–2 hour tasks, falling as completion time rises",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "task length",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s6",
+   "quote": "We also demonstrate that increased reasoning effort, increased task context, and increased scaffolding improves model performance on GDPval.",
+   "claim": "more reasoning effort, task context and scaffolding improve performance",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reasoning, context and scaffolding",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": [
+    "B4 (the abstract, in the PDF)"
+   ]
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§5, 'Dataset size'",
+   "quote": "The GDPval full set currently consists of only 44 occupations and 30 total tasks per occupation. It is therefore a limited, initial cut of knowledge work tasks, not a comprehensive evaluation of all possible occupational tasks.",
+   "claim": "a limited, initial cut: 44 occupations, 30 tasks each, not a comprehensive evaluation",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: size, scope, one-shot specification",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§5, 'Focus on self-contained knowledge work' s2–3",
+   "quote": "Manual labor and physical tasks are not included in the current version. Moreover, tasks that involve extensive tacit knowledge, access to personally identifiable information, use of proprietary software tools, or communication between individuals are out of scope for the current evaluation.",
+   "claim": "out of scope: manual and physical labor, tacit knowledge, personal data, proprietary tools, communication between people",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: size, scope, one-shot specification",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§5, 'Tasks are precisely-specified and one-shot, not interactive' (heading and s1)",
+   "quote": "Tasks are precisely-specified and one-shot, not interactive: … For GDPval, we provide the full context of the task in the prompt, but in real life it often takes effort to figure out the full context of a task and understand what to work on.",
+   "claim": "tasks precisely specified and one-shot, full context given in the prompt, where real work must find its context",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: size, scope, one-shot specification",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.2.7 ¶2 s2; ¶3",
+   "quote": "We collected and graded GPT-5 completions with expert human graders and found the model’s performance was worse on under-specified prompts. … As a note: this experiment was run on an earlier version of the GDPval gold subset, and therefore the observed win rates do not match those in the main text of the paper.",
+   "claim": "on under-specified prompts GPT-5 did worse; the experiment ran on an earlier gold subset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: size, scope, one-shot specification",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§4 s1 and s3",
+   "quote": "We open-source the prompts and reference files in our 220-task gold subset. … Please note that the tasks in the open sourced set have been scrubbed of information that could be used to identify the expert who wrote the task.",
+   "claim": "the gold subset's prompts and reference files open-sourced, scrubbed of what could identify the expert who wrote each task",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the open gold subset and the held-out set",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A.6.3 s1",
+   "quote": "In the open-source set we mark 12 out of 220 tasks as ungradable due to limitations of the automated grader.",
+   "claim": "12 of the 220 open tasks marked ungradable by the automated grader",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the open gold subset and the held-out set",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1, bullet 'No “upper limit”' s2",
+   "quote": "Currently, we compare model outputs against a human expert baseline, but we could replace our baseline with increasingly strong models over time and keep evaluating.",
+   "claim": "the human expert baseline could be replaced by increasingly strong models",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "win rate as metric: the human baseline replaceable",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§6, last sentence",
+   "quote": "We hope this work contributes to the science of tracking model progress, so that we have better data to assess the social impacts of AI models.",
+   "claim": "its stated aim: tracking model progress, for better data on AI's social impacts",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "positioning: capability measured ahead of adoption",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "§1 ¶4 s6; §5 'Dataset size' s3",
+   "quote": "Future GDPval iterations will incorporate greater breadth, realism, interactivity, and contextual nuance. … We are expanding the dataset size.",
+   "claim": "future iterations to add breadth, realism, interactivity and context; the dataset being expanded",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and lifecycle",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "header",
+   "quote": "License: CC BY 4.0 … arXiv:2510.04374v1 [cs.LG] 05 Oct 2025",
+   "claim": "arXiv v1, 5 October 2025, under CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "PDF metadata (pdfinfo, saved as B4-info.txt)",
+   "quote": "CreationDate: Thu Sep 25 17:03:48 2025 EDT",
+   "claim": "the PDF on OpenAI's CDN, created 25 September 2025, ten days before arXiv v1",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "2025-09-25 (PDF CreationDate)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 f1fa9ebb67ac6ec3…), saved text B4-info.txt (sha256 b0063449a685d2bc…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "title and authors; B8 author footnote",
+   "quote": "View a PDF of the paper titled GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks, by Tejal Patwardhan and 18 other authors",
+   "claim": "Tejal Patwardhan and 18 other authors, of OpenAI",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2025-10-05 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": []
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "author block and footnote",
+   "quote": "Amelia Glaese Jerry Tworek OpenAI … Equal contribution. Correspondence to tejal@openai.com.",
+   "claim": "the authors' affiliation OpenAI; correspondence to an openai.com address",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 bf50b5c5608086dc…), whitespace-normalised",
+   "also_in": [
+    "B4 (the same sentence in the PDF on OpenAI's CDN, 2025-09-25)"
+   ]
+  },
+  "F52": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "header ¶1",
+   "quote": "GDPval-AA v2.1 is Artificial Analysis' evaluation framework for OpenAI's GDPval dataset. It tests AI models on real-world tasks across 44 occupations and 9 major industries. Models are given shell access and web browsing capabilities in an agentic loop via Stirrup to solve tasks, with Elo ratings derived from blind pairwise comparisons.",
+   "claim": "GDPval-AA v2.1: Artificial Analysis's framework on OpenAI's dataset, agentic, rated by Elo from blind pairwise comparisons",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "derivative: GDPval-AA (Artificial Analysis)",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 654fea0c38d45ae6…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "FAQ 'How does GDPval-AA v2.1 decide which model did better?'",
+   "quote": "For each matchup, the two outputs are anonymized and an LLM judge picks a winner.",
+   "claim": "in GDPval-AA an LLM judge, not an expert, picks each winner",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "derivative: GDPval-AA (Artificial Analysis)",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 654fea0c38d45ae6…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'Publication' block, the paragraph headed 'Abstract'",
+   "quote": "Initial results indicate that frontier AI models are approaching the quality of work produced by human experts, with models able to perform certain professional tasks approximately 100 times faster and at a fraction of the cost compared to human experts.",
+   "claim": "Artificial Analysis's 'Abstract' of the paper: models approaching experts' quality and about 100 times faster at a fraction of the cost (a text the paper's own abstract does not carry)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "speed and cost: the expert's review and redo",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 654fea0c38d45ae6…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "leaderboard summary",
+   "quote": "Claude Opus 5.5 (Max, Default Fallback) scores the highest on GDPval-AA v2.1 with a score of 1866",
+   "claim": "on GDPval-AA v2.1 Claude Opus 5.5 leads, Elo 1866 (as served 2026-10-29)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derivative: GDPval-AA (Artificial Analysis)",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 654fea0c38d45ae6…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s4–5",
+   "quote": "We find that frontier model performance on GDPval is improving roughly linearly over time, and that the current best frontier models are approaching industry experts in deliverable quality. We analyze the potential for frontier models, when paired with human oversight, to perform GDPval tasks cheaper and faster than unaided experts.",
+   "claim": "the abstract: roughly linear improvement, the best models approaching experts in deliverable quality, and the potential, with human oversight, to work cheaper and faster than unaided experts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline finding: approaching parity with experts",
+   "date": "2025-09-25 (the PDF, B4; arXiv v1 2025-10-05)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6e4ebc1a8814c4ba…), whitespace-normalised",
+   "also_in": [
+    "B4 (the abstract, in the PDF)"
+   ]
+  },
+  "F57": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "dataset card",
+   "quote": "Dataset for GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks. … 220 real-world knowledge tasks across 44 occupations. … Each task consists of a text prompt and a set of supporting reference files.",
+   "claim": "the Hugging Face dataset: 220 tasks across 44 occupations, each a prompt and reference files",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the open gold subset and the held-out set",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a87b38c91f3d9a86…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "dataset viewer, columns and first row",
+   "quote": "deliverable_files listlengths 0 6 … rubric_pretty stringlengths 1.15k 15.8k … \"author_type\": \"human\"",
+   "claim": "the served dataset also carries deliverable files and rubrics, rubric items marked as human-authored",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the open gold subset and the held-out set",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a87b38c91f3d9a86…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Downloads last month'; 'Models trained or fine-tuned on openai/gdpval'",
+   "quote": "Downloads last month 271,657 … Browse 47 models trained on this dataset",
+   "claim": "271,657 downloads in the last month; 47 models trained on the dataset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: the dataset's downloads and models trained on it",
+   "date": "undated (served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a87b38c91f3d9a86…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Overview ¶1 s3–4; ¶2",
+   "quote": "The GDPval full set includes 1,320 specialized tasks (220 in the gold open-sourced set), each meticulously crafted and vetted by experienced professionals with over 14 years of experience on average from these fields. Every task is based on real work products, such as a legal brief, an engineering blueprint, a customer support conversation, or a nursing care plan. The version here only includes the 220 tasks in the gold open-sourced set.",
+   "claim": "Inspect Evals: tasks crafted by professionals 'with over 14 years of experience on average', from real work products such as a legal brief or an engineering blueprint; its version has the 220 open tasks only",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derivative: the Inspect Evals implementation",
+   "date": "undated (changelog [2-A] 2026-02-16; served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 7116b9eb5f5b66ba…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Overview ¶3; Judging ¶1",
+   "quote": "Scoring this eval involves saving the results as their own dataset, uploading it to huggingface, and submitting it to the OpenAI auto grader. … Note that OpenAI provides their automated grader model for free.",
+   "claim": "scoring runs through OpenAI's auto grader, which OpenAI provides free",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "derivative: the Inspect Evals implementation",
+   "date": "undated (changelog [2-A] 2026-02-16; served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 7116b9eb5f5b66ba…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Replication Notes",
+   "quote": "Average Score: 47.3% ± 6.2% … We note that the official score reported in the official GDPval leaderboard by OpenAI reports a lower score of 31.9% (wins only) and 34.6% (wins and ties).",
+   "claim": "the Inspect replication of GPT-5 (low) scored 47.3% ± 6.2%, against 31.9% (wins) and 34.6% (wins and ties) on OpenAI's official leaderboard",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derivative: the Inspect Evals implementation",
+   "date": "undated (changelog [2-A] 2026-02-16; served 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 7116b9eb5f5b66ba…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card title and snippet (OpenAI's page unreachable: HTTP 403)",
+   "quote": "GDPval: Evaluation measuring model performance on 1,320 specialized tasks across 44 knowledge work occupations from 9 U.S. GDP-contributing industries (threshol...",
+   "claim": "OpenAI's page, by its card: an evaluation of model performance on 1,320 tasks across 44 knowledge-work occupations from 9 U.S. GDP-contributing industries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scope and count: 1,320 tasks, 44 occupations, 9 sectors",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F64": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title (video, 11:23; unreachable: HTTP 429)",
+   "quote": "GDPval: An AI benchmark for real-world tasks",
+   "claim": "Vivek Haldar's video: 'an AI benchmark for real-world tasks'",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a benchmark of model capability on economically valuable tasks",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (video, unreachable; no snippet)"
+  },
+  "F65": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles GDPval and GDPVal; article-space search",
+   "quote": "Wikipedia does not have an article with this exact name. … Results 1 – 2 of 2 … AI agent benchmark … Comparison of generative AI models",
+   "claim": "Wikipedia has no article on GDPval; an article-space search for the name returns two articles, 'AI agent benchmark' and 'Comparison of generative AI models'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 13e34e1adcf88d98…), whitespace-normalised"
+  },
+  "F66": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "'AI agent benchmark', §Benchmarks, 'Economic' (the GDPval item), s1–3",
+   "quote": "GDPval: 1,320 tasks evaluating AI agents on real-world knowledge-work deliverables across 44 occupations from the top 9 U.S. GDP-contributing industries. Tasks made by professionals averaging 14 years of experience. The full evaluation is by blinded expert pairwise comparison against human expert deliverables, each comparison costing 1 human hour on average.",
+   "claim": "the encyclopedia's item: 1,320 tasks across 44 occupations, professionals averaging 14 years, blinded expert pairwise comparison at about an hour each",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ec6893fc1c953a16…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "'AI agent benchmark', the GDPval item, s4–6",
+   "quote": "A gold subset of 220 tasks is publicly available. The public set can be graded by a finetuned version of GPT-5. The held-out set of 1,100 tasks is only available internally in OpenAI, and external models cannot be submitted for grading on this set.",
+   "claim": "the encyclopedia: 220 public tasks gradable by a finetuned GPT-5; the held-out 1,100 internal to OpenAI, closed to external models",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the open gold subset and the held-out set",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ec6893fc1c953a16…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "OpenAI — Measuring the performance of our models on real-world tasks | OpenAI",
+  "B2": "Artificial Analysis — GDPval-AA v2.1 Benchmark - Artificial Analysis",
+  "B3": "arXiv — [2510.04374] GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+  "B4": "OpenAI — gdpval: evaluating ai model performance - OpenAI",
+  "B5": "Hugging Face — openai/gdpval · Datasets at Hugging Face",
+  "B6": "YouTube·Vivek Haldar — GDPval: An AI benchmark for real-world tasks (video, 11:23)",
+  "B7": "GitHub Pages documentation — GDPval – Inspect Evals - GitHub Pages",
+  "B8": "arXiv — GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks (HTML, v1)",
+  "B9": "Wikipedia — GDPval (no article)",
+  "B10": "Wikipedia — AI agent benchmark (the GDPval item)"
+ }
+}

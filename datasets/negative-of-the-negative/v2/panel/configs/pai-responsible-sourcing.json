@@ -1,0 +1,75 @@
+{
+ "row": "pai-responsible-sourcing",
+ "address": "Partnership on AI Responsible Sourcing",
+ "entity": "Responsible Sourcing Across the Data Supply Line (partnershiponai.org/workstream/responsible-sourcing/), the workstream of the Partnership on AI's AI, Labor, and the Economy programme (posts from 22 December 2020 to 29 April 2026) that develops recommendations and practitioner resources to improve the working conditions of data enrichment workers: the white paper Responsible Sourcing of Data Enrichment Services (June 2021), the Responsible Data Enrichment Sourcing Library with its five Data Enrichment Sourcing Guidelines (16 November 2022, developed in partnership with DeepMind and adopted by DeepMind organization-wide), the DeepMind case study, and the Vendor Engagement Guidance and Transparency Template (introduced August 2024, finalized versions April 2026); formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/pai-responsible-sourcing/)",
+ "row_type": "C (a public entity on which the archive bears: a workstream and resource library of practitioner guidance; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bResponsible Sourcing Across the Data Supply Line\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bResponsible (Data Enrichment )?Sourcing (workstream|Library)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bResponsible Data Enrichment Sourcing\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bData Enrichment Sourcing Guidelines\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bImproving Conditions for Data Enrichment Workers\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bResponsible Sourcing of Data Enrichment Services\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bPartnership on (AI|Artificial Intelligence)\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "data enrichment work: the human labor of labeling, annotating, cleaning and reviewing data for AI",
+   "pattern": "\\b(data (enrichment|annotation|label(l)?ing|label(l)?ers?|annotators?|cleaners?)|annotation (work|workers?|labou?r)|data workers?|ghost work|content moderat(ors?|ion)|crowd ?workers?|click ?workers?|micro-?task(s| workers?)?|human[- ]in[- ]the[- ]loop|ground-truth labou?r)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the workstream page, Overview: 'Data labelers, data cleaners, and others who contribute human judgment to artificial intelligence (AI) systems play a critical role in developing this technology'; 'What Is Data Enrichment?': 'Data enrichment is a broadly defined term that encapsulates various types of data preparation and cleaning as well as human-review processes', with content moderation listed); B8 (the library, ¶1: 'the extensive labor that goes into building them is often overlooked, performed by faraway workers under precarious conditions'); B2 (the white paper's page: 'this process is highly labor-intensive'); B3 ('Data enrichment workers, the people who label and annotate the training data'); B6 (OECD.AI: 'This critical work is done by data enrichment workers'). The census's own labor_object and intersection for the entity (Labor Vector record, census.json rows[slug == 'pai-responsible-sourcing'].labor_object, .intersections ['labor-producing-ai'])."
+  },
+  {
+   "term": "the AI data supply chain and its responsible sourcing",
+   "pattern": "\\b((AI )?data supply (chain|line)s?|responsible(ly)? sourc(ing|ed)|supply chains? of (AI|data|training data)|AI supply chains?|AI value chains?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (Background: 'healthy and fair working conditions across the data supply line'); B3 ('The AI data supply chain remains largely opaque and unregulated, leaving these workers without sufficient protections'); B2 (the white paper's title and 'The decisions AI developers make while procuring enriched data have a meaningful impact on the working conditions of data enrichment professionals'). The census's own name and kind for the entity (census.json rows[slug == 'pai-responsible-sourcing'].name, .kind)."
+  },
+  {
+   "term": "the pay of data enrichment workers: living wage and the time around the task",
+   "pattern": "\\b(living wages?|(unpaid|uncompensated) (time|labou?r|work)|time spent reading instructions|per[- ]task (rate|pay)s?)\\b",
+   "flags": "i",
+   "basis": "field: B8 (Guideline 1: 'Ensure all data enrichment workers are paid above the local living wage'; 'including time spent reading instructions, going through any training and reviewing work before submission'); B3 ('Research has shown that these workers often face low wages'). The census's own findings[1] and intersection 'gains-and-losses' for the entity (census.json rows[slug == 'pai-responsible-sourcing'].findings, .intersections)."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own intersection, labor object or kind for the entity, stated by field sources at the loci given: (1) data enrichment work as the labor producing AI (census labor_object; intersection labor-producing-ai, 'Labor producing AI: annotation, moderation, evaluation, maintenance, and creative or scholarly work entering training and retrieval'; B1 Overview and 'What Is Data Enrichment?', B8 ¶1, B2, B3, B6); (2) the AI data supply chain and its responsible sourcing (census name and kind; B1 Background, B2, B3); (3) the pay of data enrichment workers, living wage and the time around the task (census findings[1]; intersection gains-and-losses, 'Distribution of gains and losses: wages, employment, workload, credit, ownership, and who captures productivity gains'; B8 Guideline 1, B3). The archive's instruments of labor direction bear on these classes and are read, not assigned: the Directionality of Semantic Labor (DSL, #771, 'A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task'; its canonical surface laborvector.org, #1392), and user labor drag; the census's lv_intersection for the entity reads Guideline 1's counting of time spent reading instructions, training and reviewing work before submission as 'the resource's own accounting of uncompensated labor around a task' and keeps it in PAI's terms (census.json rows[slug == 'pai-responsible-sourcing'].lv_intersection), and DSL is admitted only where its text says something of a class above. The semantic-labor line (#1545 the semantic proletariat as class relation; #163 tail-preserving labor against ground-truth labor; #623 semantic infrastructure; #533, #534, #144 on hidden annotation labor) enters only where a sentence applies its category to data enrichment work, the data supply chain or the pay of data workers. The aliases are the entity's name, its akas in the census (the workstream, the library, its page title 'Improving Conditions for Data Enrichment Workers', the guidelines), the white paper's title, and the operator's name (Partnership on AI), the last to find any archive sentence on the operator that bears on the workstream; a sentence naming the operator for another of its works is not a claim on the entity. 'DeepMind' is not an alias: it is the partner developer, a separate entity. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to a class above; a bibliography line, a citation of Gray and Suri alone, or a list of occupations is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Partnership on AI Responsible Sourcing' (partnership-on-ai-responsible-sourcing-aio-20261029, OBS-e7c7f9858080, ADDR-3a844d278d4e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#137, #144, #163, #209, #222, #308, #512, #533, #534, #623, #923, #1070, #1254, #1545).",
+ "hop_from": [
+  137,
+  144,
+  163,
+  209,
+  222,
+  308,
+  512,
+  533,
+  534,
+  623,
+  923,
+  1070,
+  1254,
+  1545
+ ]
+}

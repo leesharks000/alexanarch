@@ -1,0 +1,2905 @@
+<style>
+#main .colour-to-edge{
+	background-color:#00adbc;
+	color:#000000;
+	font-weight:600!important;
+}
+
+
+
+#page-title-banner{
+	background:#f4f4f4!important;
+	margin-bottom:0px;
+}
+
+.text-container a{
+	color:#d40a67;
+}
+
+.text-container h3{
+	font-weight:bold;
+	color:#1b1464;
+}
+
+</style>
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" >
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" >
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fairwork | Fairwork AI</title>
+<link data-rocket-prefetch href="https://fonts.googleapis.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://kit.fontawesome.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://challenges.cloudflare.com" rel="dns-prefetch">
+<link data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Roboto%7CLexend%7CIBM%20Plex%20Serif&#038;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css?family=Roboto%7CLexend%7CIBM%20Plex%20Serif&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CLexend%7CIBM%20Plex%20Serif&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2024/01/18_Cloudwork_ClickWorkers@3x1-1.png" fetchpriority="high">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="Fairwork">
+	<meta name="twitter:title" content="Fairwork AI">
+	<meta name="twitter:image" content="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2020/11/Fairwork-logo-700x385.jpg">	
+	<meta name="twitter:description" content="Fairwork's research into the labour that powers AI">
+	<meta property="og:card" content="summary_large_image">
+	<meta property="og:site" content="Fairwork">
+	<meta property="og:title" content="Fairwork AI">
+	    <meta property="og:image" content="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2020/11/Fairwork-logo-700x385.jpg">	
+	<meta property="og:description" content="Fairwork's research into the labour that powers AI">
+	<meta property="og:image:secure" content="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2020/11/Fairwork-logo-700x385.jpg">
+	<meta property="og:type" content="website">
+		<meta property="og:url" content="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">
+
+	<meta name="description" content="...">
+	<link rel="shortcut icon" href="https://fairwork.oii.ox.ac.uk/wp-content/themes/oii-satellite/assets/images/favicon.ico" type="image/icon">
+    <link rel="icon" href="https://fairwork.oii.ox.ac.uk/wp-content/themes/oii-satellite/assets/images/favicon.ico" type="image/icon">		
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://fairwork.oii.ox.ac.uk/xmlrpc.php">
+	
+	<!-- ADDITIONS -->
+	
+		
+	<link data-minify="1" rel="stylesheet" href="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/zfa3gmc.css?ver=1792138701">
+	<script src="https://kit.fontawesome.com/3573f07752.js" crossorigin="anonymous"></script>
+	<script data-minify="1" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/ajax/libs/jquery/3.3.1/jquery.min.js?ver=1792138701"></script>
+	
+
+	<script>
+	
+		// This should be put in a separate file in next iteration.
+		  document.onkeyup = PresTab;
+	 
+		   function PresTab(e)
+		   {
+			   var keycode = (window.event) ? event.keyCode : e.keyCode;
+			   if (keycode == 9){
+				   $("body").addClass("user-is-tabbing");
+			   }
+			   
+		   }
+		   
+		   
+			// Check whether a keyboard user. If so, class is applied that makes the focus much more obvious.
+			    document.onkeyup = PresTab;
+			    function PresTab(e)
+			    {
+				   var keycode = (window.event) ? event.keyCode : e.keyCode;
+				   if (keycode == 9){
+					   $("body").addClass("user-is-tabbing");
+				   }
+				   
+			    }		
+				
+			// Check whether a touchscreen user
+				document.addEventListener("touchstart", function(){
+					$("body").addClass("touched");
+				});		   
+		   
+		   
+		   
+	</script>	
+	<!--[if lt IE 9]>
+	<script src="https://fairwork.oii.ox.ac.uk/wp-content/themes/oii-satellite/js/html5.js"></script>
+	<![endif]-->
+	
+	
+	<meta name='robots' content='max-image-preview:large' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://fairwork.oii.ox.ac.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffairwork.oii.ox.ac.uk%2Fen%2Ffw%2Ffairwork-ai%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://fairwork.oii.ox.ac.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffairwork.oii.ox.ac.uk%2Fen%2Ffw%2Ffairwork-ai%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='formidable-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/plugins/formidable/css/formidableforms11.css?ver=1792138701' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*wp_block_styles_on_demand_placeholder:6ae38c4b38205*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="wp-block-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the block styles printed at wp_footer." }
+/*# sourceURL=wp-block-styles-placeholder-inline-css */
+</style>
+<style id="wp-global-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the global-styles printed at wp_footer." }
+/*# sourceURL=wp-global-styles-placeholder-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='logo-style-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/plugins/oii-basics/assets/css/logo-style.css?ver=1792138701' media='all' />
+<link data-minify="1" rel='stylesheet' id='an-style-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellites-fairwork/assets/css/action-network-style-embed-whitelabel-v3.css?ver=1792138701' media='all' />
+<link data-minify="1" rel='stylesheet' id='oii-satellites-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/style.css?ver=1792138701' media='all' />
+<link data-minify="1" rel='stylesheet' id='oii-satellites-comprop-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellites-fairwork/style.css?ver=1792138701' media='all' />
+<style id="inline-style-inline-css">
+
+
+
+					
+					.ai .rating-bar-proportion, .ai .principle-icon, .ai .principle-total, .ai .inner-principle-circle, #main #language-bar.ai{
+						background-color:#29b0cf;
+					}	
+					
+					.term-ai .quote-box, .term-ai .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.ai .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .ai .principle-row, .term-ai .fairwork-blog.box, .term-ai .quote-box, .ai button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.ai .principle-circle svg .cls-1, .ai .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.ai #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.ai .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.albania .rating-bar-proportion, .albania .principle-icon, .albania .principle-total, .albania .inner-principle-circle, #main #language-bar.albania{
+						background-color:#B780A0;
+					}	
+					
+					.term-albania .quote-box, .term-albania .quote-box img{
+						border-color:#B780A0;
+					}
+					
+					.albania .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .albania .principle-row, .term-albania .fairwork-blog.box, .term-albania .quote-box, .albania button.tab-link.active-tab-link{
+						background-color:#DDC0D1!important;
+
+					}
+					
+					.albania .principle-circle svg .cls-1, .albania .principle-circle svg .cls-1{
+						fill:#B780A0;
+					}
+					
+					.albania #rating-notes{
+						border-left: 5px solid #B780A0;
+					}
+					
+					.albania .principle-row{
+						border-bottom: 2px dotted #B780A0;
+					}
+					
+					
+
+
+					
+					.argentina .rating-bar-proportion, .argentina .principle-icon, .argentina .principle-total, .argentina .inner-principle-circle, #main #language-bar.argentina{
+						background-color:#29b0cf;
+					}	
+					
+					.term-argentina .quote-box, .term-argentina .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.argentina .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .argentina .principle-row, .term-argentina .fairwork-blog.box, .term-argentina .quote-box, .argentina button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.argentina .principle-circle svg .cls-1, .argentina .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.argentina #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.argentina .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.australia .rating-bar-proportion, .australia .principle-icon, .australia .principle-total, .australia .inner-principle-circle, #main #language-bar.australia{
+						background-color:#;
+					}	
+					
+					.term-australia .quote-box, .term-australia .quote-box img{
+						border-color:#;
+					}
+					
+					.australia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .australia .principle-row, .term-australia .fairwork-blog.box, .term-australia .quote-box, .australia button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.australia .principle-circle svg .cls-1, .australia .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.australia #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.australia .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.austria .rating-bar-proportion, .austria .principle-icon, .austria .principle-total, .austria .inner-principle-circle, #main #language-bar.austria{
+						background-color:#49b170;
+					}	
+					
+					.term-austria .quote-box, .term-austria .quote-box img{
+						border-color:#49b170;
+					}
+					
+					.austria .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .austria .principle-row, .term-austria .fairwork-blog.box, .term-austria .quote-box, .austria button.tab-link.active-tab-link{
+						background-color:#bde0cf!important;
+
+					}
+					
+					.austria .principle-circle svg .cls-1, .austria .principle-circle svg .cls-1{
+						fill:#49b170;
+					}
+					
+					.austria #rating-notes{
+						border-left: 5px solid #49b170;
+					}
+					
+					.austria .principle-row{
+						border-bottom: 2px dotted #49b170;
+					}
+					
+					
+
+
+					
+					.bangladesh .rating-bar-proportion, .bangladesh .principle-icon, .bangladesh .principle-total, .bangladesh .inner-principle-circle, #main #language-bar.bangladesh{
+						background-color:#ff729c;
+					}	
+					
+					.term-bangladesh .quote-box, .term-bangladesh .quote-box img{
+						border-color:#ff729c;
+					}
+					
+					.bangladesh .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .bangladesh .principle-row, .term-bangladesh .fairwork-blog.box, .term-bangladesh .quote-box, .bangladesh button.tab-link.active-tab-link{
+						background-color:#f9dae6!important;
+
+					}
+					
+					.bangladesh .principle-circle svg .cls-1, .bangladesh .principle-circle svg .cls-1{
+						fill:#ff729c;
+					}
+					
+					.bangladesh #rating-notes{
+						border-left: 5px solid #ff729c;
+					}
+					
+					.bangladesh .principle-row{
+						border-bottom: 2px dotted #ff729c;
+					}
+					
+					
+
+
+					
+					.belgium .rating-bar-proportion, .belgium .principle-icon, .belgium .principle-total, .belgium .inner-principle-circle, #main #language-bar.belgium{
+						background-color:#dca037;
+					}	
+					
+					.term-belgium .quote-box, .term-belgium .quote-box img{
+						border-color:#dca037;
+					}
+					
+					.belgium .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .belgium .principle-row, .term-belgium .fairwork-blog.box, .term-belgium .quote-box, .belgium button.tab-link.active-tab-link{
+						background-color:#ffe6ca!important;
+
+					}
+					
+					.belgium .principle-circle svg .cls-1, .belgium .principle-circle svg .cls-1{
+						fill:#dca037;
+					}
+					
+					.belgium #rating-notes{
+						border-left: 5px solid #dca037;
+					}
+					
+					.belgium .principle-row{
+						border-bottom: 2px dotted #dca037;
+					}
+					
+					
+
+
+					
+					.bosnia-and-herzegovina .rating-bar-proportion, .bosnia-and-herzegovina .principle-icon, .bosnia-and-herzegovina .principle-total, .bosnia-and-herzegovina .inner-principle-circle, #main #language-bar.bosnia-and-herzegovina{
+						background-color:#49b170;
+					}	
+					
+					.term-bosnia-and-herzegovina .quote-box, .term-bosnia-and-herzegovina .quote-box img{
+						border-color:#49b170;
+					}
+					
+					.bosnia-and-herzegovina .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .bosnia-and-herzegovina .principle-row, .term-bosnia-and-herzegovina .fairwork-blog.box, .term-bosnia-and-herzegovina .quote-box, .bosnia-and-herzegovina button.tab-link.active-tab-link{
+						background-color:#bde0cf!important;
+
+					}
+					
+					.bosnia-and-herzegovina .principle-circle svg .cls-1, .bosnia-and-herzegovina .principle-circle svg .cls-1{
+						fill:#49b170;
+					}
+					
+					.bosnia-and-herzegovina #rating-notes{
+						border-left: 5px solid #49b170;
+					}
+					
+					.bosnia-and-herzegovina .principle-row{
+						border-bottom: 2px dotted #49b170;
+					}
+					
+					
+
+
+					
+					.brazil .rating-bar-proportion, .brazil .principle-icon, .brazil .principle-total, .brazil .inner-principle-circle, #main #language-bar.brazil{
+						background-color:#af79cf;
+					}	
+					
+					.term-brazil .quote-box, .term-brazil .quote-box img{
+						border-color:#af79cf;
+					}
+					
+					.brazil .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .brazil .principle-row, .term-brazil .fairwork-blog.box, .term-brazil .quote-box, .brazil button.tab-link.active-tab-link{
+						background-color:#f0d6ff!important;
+
+					}
+					
+					.brazil .principle-circle svg .cls-1, .brazil .principle-circle svg .cls-1{
+						fill:#af79cf;
+					}
+					
+					.brazil #rating-notes{
+						border-left: 5px solid #af79cf;
+					}
+					
+					.brazil .principle-row{
+						border-bottom: 2px dotted #af79cf;
+					}
+					
+					
+
+
+					
+					.canada .rating-bar-proportion, .canada .principle-icon, .canada .principle-total, .canada .inner-principle-circle, #main #language-bar.canada{
+						background-color:#;
+					}	
+					
+					.term-canada .quote-box, .term-canada .quote-box img{
+						border-color:#;
+					}
+					
+					.canada .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .canada .principle-row, .term-canada .fairwork-blog.box, .term-canada .quote-box, .canada button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.canada .principle-circle svg .cls-1, .canada .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.canada #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.canada .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.chile .rating-bar-proportion, .chile .principle-icon, .chile .principle-total, .chile .inner-principle-circle, #main #language-bar.chile{
+						background-color:#b4bf56;
+					}	
+					
+					.term-chile .quote-box, .term-chile .quote-box img{
+						border-color:#b4bf56;
+					}
+					
+					.chile .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .chile .principle-row, .term-chile .fairwork-blog.box, .term-chile .quote-box, .chile button.tab-link.active-tab-link{
+						background-color:#e8ead4!important;
+
+					}
+					
+					.chile .principle-circle svg .cls-1, .chile .principle-circle svg .cls-1{
+						fill:#b4bf56;
+					}
+					
+					.chile #rating-notes{
+						border-left: 5px solid #b4bf56;
+					}
+					
+					.chile .principle-row{
+						border-bottom: 2px dotted #b4bf56;
+					}
+					
+					
+
+
+					
+					.cloudwork .rating-bar-proportion, .cloudwork .principle-icon, .cloudwork .principle-total, .cloudwork .inner-principle-circle, #main #language-bar.cloudwork{
+						background-color:#f68ea8;
+					}	
+					
+					.term-cloudwork .quote-box, .term-cloudwork .quote-box img{
+						border-color:#f68ea8;
+					}
+					
+					.cloudwork .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .cloudwork .principle-row, .term-cloudwork .fairwork-blog.box, .term-cloudwork .quote-box, .cloudwork button.tab-link.active-tab-link{
+						background-color:#f5c2cf!important;
+
+					}
+					
+					.cloudwork .principle-circle svg .cls-1, .cloudwork .principle-circle svg .cls-1{
+						fill:#f68ea8;
+					}
+					
+					.cloudwork #rating-notes{
+						border-left: 5px solid #f68ea8;
+					}
+					
+					.cloudwork .principle-row{
+						border-bottom: 2px dotted #f68ea8;
+					}
+					
+					
+
+
+					
+					.colombia .rating-bar-proportion, .colombia .principle-icon, .colombia .principle-total, .colombia .inner-principle-circle, #main #language-bar.colombia{
+						background-color:#dca037;
+					}	
+					
+					.term-colombia .quote-box, .term-colombia .quote-box img{
+						border-color:#dca037;
+					}
+					
+					.colombia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .colombia .principle-row, .term-colombia .fairwork-blog.box, .term-colombia .quote-box, .colombia button.tab-link.active-tab-link{
+						background-color:#ffe6ca!important;
+
+					}
+					
+					.colombia .principle-circle svg .cls-1, .colombia .principle-circle svg .cls-1{
+						fill:#dca037;
+					}
+					
+					.colombia #rating-notes{
+						border-left: 5px solid #dca037;
+					}
+					
+					.colombia .principle-row{
+						border-bottom: 2px dotted #dca037;
+					}
+					
+					
+
+
+					
+					.croatia .rating-bar-proportion, .croatia .principle-icon, .croatia .principle-total, .croatia .inner-principle-circle, #main #language-bar.croatia{
+						background-color:#;
+					}	
+					
+					.term-croatia .quote-box, .term-croatia .quote-box img{
+						border-color:#;
+					}
+					
+					.croatia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .croatia .principle-row, .term-croatia .fairwork-blog.box, .term-croatia .quote-box, .croatia button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.croatia .principle-circle svg .cls-1, .croatia .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.croatia #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.croatia .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.denmark .rating-bar-proportion, .denmark .principle-icon, .denmark .principle-total, .denmark .inner-principle-circle, #main #language-bar.denmark{
+						background-color:#;
+					}	
+					
+					.term-denmark .quote-box, .term-denmark .quote-box img{
+						border-color:#;
+					}
+					
+					.denmark .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .denmark .principle-row, .term-denmark .fairwork-blog.box, .term-denmark .quote-box, .denmark button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.denmark .principle-circle svg .cls-1, .denmark .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.denmark #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.denmark .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.ecuador .rating-bar-proportion, .ecuador .principle-icon, .ecuador .principle-total, .ecuador .inner-principle-circle, #main #language-bar.ecuador{
+						background-color:#ec6907;
+					}	
+					
+					.term-ecuador .quote-box, .term-ecuador .quote-box img{
+						border-color:#ec6907;
+					}
+					
+					.ecuador .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .ecuador .principle-row, .term-ecuador .fairwork-blog.box, .term-ecuador .quote-box, .ecuador button.tab-link.active-tab-link{
+						background-color:#f8c6a1!important;
+
+					}
+					
+					.ecuador .principle-circle svg .cls-1, .ecuador .principle-circle svg .cls-1{
+						fill:#ec6907;
+					}
+					
+					.ecuador #rating-notes{
+						border-left: 5px solid #ec6907;
+					}
+					
+					.ecuador .principle-row{
+						border-bottom: 2px dotted #ec6907;
+					}
+					
+					
+
+
+					
+					.egypt .rating-bar-proportion, .egypt .principle-icon, .egypt .principle-total, .egypt .inner-principle-circle, #main #language-bar.egypt{
+						background-color:#f39762;
+					}	
+					
+					.term-egypt .quote-box, .term-egypt .quote-box img{
+						border-color:#f39762;
+					}
+					
+					.egypt .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .egypt .principle-row, .term-egypt .fairwork-blog.box, .term-egypt .quote-box, .egypt button.tab-link.active-tab-link{
+						background-color:#f6c0a0!important;
+
+					}
+					
+					.egypt .principle-circle svg .cls-1, .egypt .principle-circle svg .cls-1{
+						fill:#f39762;
+					}
+					
+					.egypt #rating-notes{
+						border-left: 5px solid #f39762;
+					}
+					
+					.egypt .principle-row{
+						border-bottom: 2px dotted #f39762;
+					}
+					
+					
+
+
+					
+					.europe .rating-bar-proportion, .europe .principle-icon, .europe .principle-total, .europe .inner-principle-circle, #main #language-bar.europe{
+						background-color:#;
+					}	
+					
+					.term-europe .quote-box, .term-europe .quote-box img{
+						border-color:#;
+					}
+					
+					.europe .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .europe .principle-row, .term-europe .fairwork-blog.box, .term-europe .quote-box, .europe button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.europe .principle-circle svg .cls-1, .europe .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.europe #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.europe .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.france .rating-bar-proportion, .france .principle-icon, .france .principle-total, .france .inner-principle-circle, #main #language-bar.france{
+						background-color:#B780A0;
+					}	
+					
+					.term-france .quote-box, .term-france .quote-box img{
+						border-color:#B780A0;
+					}
+					
+					.france .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .france .principle-row, .term-france .fairwork-blog.box, .term-france .quote-box, .france button.tab-link.active-tab-link{
+						background-color:#DDC0D1!important;
+
+					}
+					
+					.france .principle-circle svg .cls-1, .france .principle-circle svg .cls-1{
+						fill:#B780A0;
+					}
+					
+					.france #rating-notes{
+						border-left: 5px solid #B780A0;
+					}
+					
+					.france .principle-row{
+						border-bottom: 2px dotted #B780A0;
+					}
+					
+					
+
+
+					
+					.georgia .rating-bar-proportion, .georgia .principle-icon, .georgia .principle-total, .georgia .inner-principle-circle, #main #language-bar.georgia{
+						background-color:#ea4f8a;
+					}	
+					
+					.term-georgia .quote-box, .term-georgia .quote-box img{
+						border-color:#ea4f8a;
+					}
+					
+					.georgia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .georgia .principle-row, .term-georgia .fairwork-blog.box, .term-georgia .quote-box, .georgia button.tab-link.active-tab-link{
+						background-color:#FAD6E4!important;
+
+					}
+					
+					.georgia .principle-circle svg .cls-1, .georgia .principle-circle svg .cls-1{
+						fill:#ea4f8a;
+					}
+					
+					.georgia #rating-notes{
+						border-left: 5px solid #ea4f8a;
+					}
+					
+					.georgia .principle-row{
+						border-bottom: 2px dotted #ea4f8a;
+					}
+					
+					
+
+
+					
+					.germany .rating-bar-proportion, .germany .principle-icon, .germany .principle-total, .germany .inner-principle-circle, #main #language-bar.germany{
+						background-color:#29b0cf;
+					}	
+					
+					.term-germany .quote-box, .term-germany .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.germany .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .germany .principle-row, .term-germany .fairwork-blog.box, .term-germany .quote-box, .germany button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.germany .principle-circle svg .cls-1, .germany .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.germany #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.germany .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.ghana .rating-bar-proportion, .ghana .principle-icon, .ghana .principle-total, .ghana .inner-principle-circle, #main #language-bar.ghana{
+						background-color:#ea4f8a;
+					}	
+					
+					.term-ghana .quote-box, .term-ghana .quote-box img{
+						border-color:#ea4f8a;
+					}
+					
+					.ghana .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .ghana .principle-row, .term-ghana .fairwork-blog.box, .term-ghana .quote-box, .ghana button.tab-link.active-tab-link{
+						background-color:#FAD6E4!important;
+
+					}
+					
+					.ghana .principle-circle svg .cls-1, .ghana .principle-circle svg .cls-1{
+						fill:#ea4f8a;
+					}
+					
+					.ghana #rating-notes{
+						border-left: 5px solid #ea4f8a;
+					}
+					
+					.ghana .principle-row{
+						border-bottom: 2px dotted #ea4f8a;
+					}
+					
+					
+
+
+					
+					.hong-kong .rating-bar-proportion, .hong-kong .principle-icon, .hong-kong .principle-total, .hong-kong .inner-principle-circle, #main #language-bar.hong-kong{
+						background-color:#;
+					}	
+					
+					.term-hong-kong .quote-box, .term-hong-kong .quote-box img{
+						border-color:#;
+					}
+					
+					.hong-kong .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .hong-kong .principle-row, .term-hong-kong .fairwork-blog.box, .term-hong-kong .quote-box, .hong-kong button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.hong-kong .principle-circle svg .cls-1, .hong-kong .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.hong-kong #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.hong-kong .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.india .rating-bar-proportion, .india .principle-icon, .india .principle-total, .india .inner-principle-circle, #main #language-bar.india{
+						background-color:#dca037;
+					}	
+					
+					.term-india .quote-box, .term-india .quote-box img{
+						border-color:#dca037;
+					}
+					
+					.india .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .india .principle-row, .term-india .fairwork-blog.box, .term-india .quote-box, .india button.tab-link.active-tab-link{
+						background-color:#ffe6ca!important;
+
+					}
+					
+					.india .principle-circle svg .cls-1, .india .principle-circle svg .cls-1{
+						fill:#dca037;
+					}
+					
+					.india #rating-notes{
+						border-left: 5px solid #dca037;
+					}
+					
+					.india .principle-row{
+						border-bottom: 2px dotted #dca037;
+					}
+					
+					
+
+
+					
+					.indonesia .rating-bar-proportion, .indonesia .principle-icon, .indonesia .principle-total, .indonesia .inner-principle-circle, #main #language-bar.indonesia{
+						background-color:#9D9BC5;
+					}	
+					
+					.term-indonesia .quote-box, .term-indonesia .quote-box img{
+						border-color:#9D9BC5;
+					}
+					
+					.indonesia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .indonesia .principle-row, .term-indonesia .fairwork-blog.box, .term-indonesia .quote-box, .indonesia button.tab-link.active-tab-link{
+						background-color:#D6D5E7!important;
+
+					}
+					
+					.indonesia .principle-circle svg .cls-1, .indonesia .principle-circle svg .cls-1{
+						fill:#9D9BC5;
+					}
+					
+					.indonesia #rating-notes{
+						border-left: 5px solid #9D9BC5;
+					}
+					
+					.indonesia .principle-row{
+						border-bottom: 2px dotted #9D9BC5;
+					}
+					
+					
+
+
+					
+					.international .rating-bar-proportion, .international .principle-icon, .international .principle-total, .international .inner-principle-circle, #main #language-bar.international{
+						background-color:#;
+					}	
+					
+					.term-international .quote-box, .term-international .quote-box img{
+						border-color:#;
+					}
+					
+					.international .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .international .principle-row, .term-international .fairwork-blog.box, .term-international .quote-box, .international button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.international .principle-circle svg .cls-1, .international .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.international #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.international .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.italy .rating-bar-proportion, .italy .principle-icon, .italy .principle-total, .italy .inner-principle-circle, #main #language-bar.italy{
+						background-color:#D60C42;
+					}	
+					
+					.term-italy .quote-box, .term-italy .quote-box img{
+						border-color:#D60C42;
+					}
+					
+					.italy .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .italy .principle-row, .term-italy .fairwork-blog.box, .term-italy .quote-box, .italy button.tab-link.active-tab-link{
+						background-color:#f2b6c6!important;
+
+					}
+					
+					.italy .principle-circle svg .cls-1, .italy .principle-circle svg .cls-1{
+						fill:#D60C42;
+					}
+					
+					.italy #rating-notes{
+						border-left: 5px solid #D60C42;
+					}
+					
+					.italy .principle-row{
+						border-bottom: 2px dotted #D60C42;
+					}
+					
+					
+
+
+					
+					.jordan .rating-bar-proportion, .jordan .principle-icon, .jordan .principle-total, .jordan .inner-principle-circle, #main #language-bar.jordan{
+						background-color:#b4bf56;
+					}	
+					
+					.term-jordan .quote-box, .term-jordan .quote-box img{
+						border-color:#b4bf56;
+					}
+					
+					.jordan .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .jordan .principle-row, .term-jordan .fairwork-blog.box, .term-jordan .quote-box, .jordan button.tab-link.active-tab-link{
+						background-color:#e8ead4!important;
+
+					}
+					
+					.jordan .principle-circle svg .cls-1, .jordan .principle-circle svg .cls-1{
+						fill:#b4bf56;
+					}
+					
+					.jordan #rating-notes{
+						border-left: 5px solid #b4bf56;
+					}
+					
+					.jordan .principle-row{
+						border-bottom: 2px dotted #b4bf56;
+					}
+					
+					
+
+
+					
+					.kenya .rating-bar-proportion, .kenya .principle-icon, .kenya .principle-total, .kenya .inner-principle-circle, #main #language-bar.kenya{
+						background-color:#B780A0;
+					}	
+					
+					.term-kenya .quote-box, .term-kenya .quote-box img{
+						border-color:#B780A0;
+					}
+					
+					.kenya .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .kenya .principle-row, .term-kenya .fairwork-blog.box, .term-kenya .quote-box, .kenya button.tab-link.active-tab-link{
+						background-color:#DDC0D1!important;
+
+					}
+					
+					.kenya .principle-circle svg .cls-1, .kenya .principle-circle svg .cls-1{
+						fill:#B780A0;
+					}
+					
+					.kenya #rating-notes{
+						border-left: 5px solid #B780A0;
+					}
+					
+					.kenya .principle-row{
+						border-bottom: 2px dotted #B780A0;
+					}
+					
+					
+
+
+					
+					.lebanon .rating-bar-proportion, .lebanon .principle-icon, .lebanon .principle-total, .lebanon .inner-principle-circle, #main #language-bar.lebanon{
+						background-color:#29b0cf;
+					}	
+					
+					.term-lebanon .quote-box, .term-lebanon .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.lebanon .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .lebanon .principle-row, .term-lebanon .fairwork-blog.box, .term-lebanon .quote-box, .lebanon button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.lebanon .principle-circle svg .cls-1, .lebanon .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.lebanon #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.lebanon .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.mexico .rating-bar-proportion, .mexico .principle-icon, .mexico .principle-total, .mexico .inner-principle-circle, #main #language-bar.mexico{
+						background-color:#ea4f8a;
+					}	
+					
+					.term-mexico .quote-box, .term-mexico .quote-box img{
+						border-color:#ea4f8a;
+					}
+					
+					.mexico .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .mexico .principle-row, .term-mexico .fairwork-blog.box, .term-mexico .quote-box, .mexico button.tab-link.active-tab-link{
+						background-color:#FAD6E4!important;
+
+					}
+					
+					.mexico .principle-circle svg .cls-1, .mexico .principle-circle svg .cls-1{
+						fill:#ea4f8a;
+					}
+					
+					.mexico #rating-notes{
+						border-left: 5px solid #ea4f8a;
+					}
+					
+					.mexico .principle-row{
+						border-bottom: 2px dotted #ea4f8a;
+					}
+					
+					
+
+
+					
+					.morocco .rating-bar-proportion, .morocco .principle-icon, .morocco .principle-total, .morocco .inner-principle-circle, #main #language-bar.morocco{
+						background-color:#ea4f8a;
+					}	
+					
+					.term-morocco .quote-box, .term-morocco .quote-box img{
+						border-color:#ea4f8a;
+					}
+					
+					.morocco .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .morocco .principle-row, .term-morocco .fairwork-blog.box, .term-morocco .quote-box, .morocco button.tab-link.active-tab-link{
+						background-color:#FAD6E4!important;
+
+					}
+					
+					.morocco .principle-circle svg .cls-1, .morocco .principle-circle svg .cls-1{
+						fill:#ea4f8a;
+					}
+					
+					.morocco #rating-notes{
+						border-left: 5px solid #ea4f8a;
+					}
+					
+					.morocco .principle-row{
+						border-bottom: 2px dotted #ea4f8a;
+					}
+					
+					
+
+
+					
+					.netherlands .rating-bar-proportion, .netherlands .principle-icon, .netherlands .principle-total, .netherlands .inner-principle-circle, #main #language-bar.netherlands{
+						background-color:#;
+					}	
+					
+					.term-netherlands .quote-box, .term-netherlands .quote-box img{
+						border-color:#;
+					}
+					
+					.netherlands .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .netherlands .principle-row, .term-netherlands .fairwork-blog.box, .term-netherlands .quote-box, .netherlands button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.netherlands .principle-circle svg .cls-1, .netherlands .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.netherlands #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.netherlands .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.nigeria .rating-bar-proportion, .nigeria .principle-icon, .nigeria .principle-total, .nigeria .inner-principle-circle, #main #language-bar.nigeria{
+						background-color:#b4bf56;
+					}	
+					
+					.term-nigeria .quote-box, .term-nigeria .quote-box img{
+						border-color:#b4bf56;
+					}
+					
+					.nigeria .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .nigeria .principle-row, .term-nigeria .fairwork-blog.box, .term-nigeria .quote-box, .nigeria button.tab-link.active-tab-link{
+						background-color:#e8ead4!important;
+
+					}
+					
+					.nigeria .principle-circle svg .cls-1, .nigeria .principle-circle svg .cls-1{
+						fill:#b4bf56;
+					}
+					
+					.nigeria #rating-notes{
+						border-left: 5px solid #b4bf56;
+					}
+					
+					.nigeria .principle-row{
+						border-bottom: 2px dotted #b4bf56;
+					}
+					
+					
+
+
+					
+					.pakistan .rating-bar-proportion, .pakistan .principle-icon, .pakistan .principle-total, .pakistan .inner-principle-circle, #main #language-bar.pakistan{
+						background-color:#49b170;
+					}	
+					
+					.term-pakistan .quote-box, .term-pakistan .quote-box img{
+						border-color:#49b170;
+					}
+					
+					.pakistan .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .pakistan .principle-row, .term-pakistan .fairwork-blog.box, .term-pakistan .quote-box, .pakistan button.tab-link.active-tab-link{
+						background-color:#bde0cf!important;
+
+					}
+					
+					.pakistan .principle-circle svg .cls-1, .pakistan .principle-circle svg .cls-1{
+						fill:#49b170;
+					}
+					
+					.pakistan #rating-notes{
+						border-left: 5px solid #49b170;
+					}
+					
+					.pakistan .principle-row{
+						border-bottom: 2px dotted #49b170;
+					}
+					
+					
+
+
+					
+					.paraguay .rating-bar-proportion, .paraguay .principle-icon, .paraguay .principle-total, .paraguay .inner-principle-circle, #main #language-bar.paraguay{
+						background-color:#49b170;
+					}	
+					
+					.term-paraguay .quote-box, .term-paraguay .quote-box img{
+						border-color:#49b170;
+					}
+					
+					.paraguay .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .paraguay .principle-row, .term-paraguay .fairwork-blog.box, .term-paraguay .quote-box, .paraguay button.tab-link.active-tab-link{
+						background-color:#bde0cf!important;
+
+					}
+					
+					.paraguay .principle-circle svg .cls-1, .paraguay .principle-circle svg .cls-1{
+						fill:#49b170;
+					}
+					
+					.paraguay #rating-notes{
+						border-left: 5px solid #49b170;
+					}
+					
+					.paraguay .principle-row{
+						border-bottom: 2px dotted #49b170;
+					}
+					
+					
+
+
+					
+					.peru .rating-bar-proportion, .peru .principle-icon, .peru .principle-total, .peru .inner-principle-circle, #main #language-bar.peru{
+						background-color:#9D9BC5;
+					}	
+					
+					.term-peru .quote-box, .term-peru .quote-box img{
+						border-color:#9D9BC5;
+					}
+					
+					.peru .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .peru .principle-row, .term-peru .fairwork-blog.box, .term-peru .quote-box, .peru button.tab-link.active-tab-link{
+						background-color:#D6D5E7!important;
+
+					}
+					
+					.peru .principle-circle svg .cls-1, .peru .principle-circle svg .cls-1{
+						fill:#9D9BC5;
+					}
+					
+					.peru #rating-notes{
+						border-left: 5px solid #9D9BC5;
+					}
+					
+					.peru .principle-row{
+						border-bottom: 2px dotted #9D9BC5;
+					}
+					
+					
+
+
+					
+					.philippines .rating-bar-proportion, .philippines .principle-icon, .philippines .principle-total, .philippines .inner-principle-circle, #main #language-bar.philippines{
+						background-color:#29b0cf;
+					}	
+					
+					.term-philippines .quote-box, .term-philippines .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.philippines .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .philippines .principle-row, .term-philippines .fairwork-blog.box, .term-philippines .quote-box, .philippines button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.philippines .principle-circle svg .cls-1, .philippines .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.philippines #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.philippines .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.poland .rating-bar-proportion, .poland .principle-icon, .poland .principle-total, .poland .inner-principle-circle, #main #language-bar.poland{
+						background-color:#ff729c;
+					}	
+					
+					.term-poland .quote-box, .term-poland .quote-box img{
+						border-color:#ff729c;
+					}
+					
+					.poland .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .poland .principle-row, .term-poland .fairwork-blog.box, .term-poland .quote-box, .poland button.tab-link.active-tab-link{
+						background-color:#f9dae6!important;
+
+					}
+					
+					.poland .principle-circle svg .cls-1, .poland .principle-circle svg .cls-1{
+						fill:#ff729c;
+					}
+					
+					.poland #rating-notes{
+						border-left: 5px solid #ff729c;
+					}
+					
+					.poland .principle-row{
+						border-bottom: 2px dotted #ff729c;
+					}
+					
+					
+
+
+					
+					.romania .rating-bar-proportion, .romania .principle-icon, .romania .principle-total, .romania .inner-principle-circle, #main #language-bar.romania{
+						background-color:#;
+					}	
+					
+					.term-romania .quote-box, .term-romania .quote-box img{
+						border-color:#;
+					}
+					
+					.romania .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .romania .principle-row, .term-romania .fairwork-blog.box, .term-romania .quote-box, .romania button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.romania .principle-circle svg .cls-1, .romania .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.romania #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.romania .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.serbia .rating-bar-proportion, .serbia .principle-icon, .serbia .principle-total, .serbia .inner-principle-circle, #main #language-bar.serbia{
+						background-color:#9D9BC5;
+					}	
+					
+					.term-serbia .quote-box, .term-serbia .quote-box img{
+						border-color:#9D9BC5;
+					}
+					
+					.serbia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .serbia .principle-row, .term-serbia .fairwork-blog.box, .term-serbia .quote-box, .serbia button.tab-link.active-tab-link{
+						background-color:#D6D5E7!important;
+
+					}
+					
+					.serbia .principle-circle svg .cls-1, .serbia .principle-circle svg .cls-1{
+						fill:#9D9BC5;
+					}
+					
+					.serbia #rating-notes{
+						border-left: 5px solid #9D9BC5;
+					}
+					
+					.serbia .principle-row{
+						border-bottom: 2px dotted #9D9BC5;
+					}
+					
+					
+
+
+					
+					.singapore .rating-bar-proportion, .singapore .principle-icon, .singapore .principle-total, .singapore .inner-principle-circle, #main #language-bar.singapore{
+						background-color:#;
+					}	
+					
+					.term-singapore .quote-box, .term-singapore .quote-box img{
+						border-color:#;
+					}
+					
+					.singapore .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .singapore .principle-row, .term-singapore .fairwork-blog.box, .term-singapore .quote-box, .singapore button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.singapore .principle-circle svg .cls-1, .singapore .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.singapore #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.singapore .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.south-africa .rating-bar-proportion, .south-africa .principle-icon, .south-africa .principle-total, .south-africa .inner-principle-circle, #main #language-bar.south-africa{
+						background-color:#49b170;
+					}	
+					
+					.term-south-africa .quote-box, .term-south-africa .quote-box img{
+						border-color:#49b170;
+					}
+					
+					.south-africa .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .south-africa .principle-row, .term-south-africa .fairwork-blog.box, .term-south-africa .quote-box, .south-africa button.tab-link.active-tab-link{
+						background-color:#bde0cf!important;
+
+					}
+					
+					.south-africa .principle-circle svg .cls-1, .south-africa .principle-circle svg .cls-1{
+						fill:#49b170;
+					}
+					
+					.south-africa #rating-notes{
+						border-left: 5px solid #49b170;
+					}
+					
+					.south-africa .principle-row{
+						border-bottom: 2px dotted #49b170;
+					}
+					
+					
+
+
+					
+					.spain .rating-bar-proportion, .spain .principle-icon, .spain .principle-total, .spain .inner-principle-circle, #main #language-bar.spain{
+						background-color:#B780A0;
+					}	
+					
+					.term-spain .quote-box, .term-spain .quote-box img{
+						border-color:#B780A0;
+					}
+					
+					.spain .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .spain .principle-row, .term-spain .fairwork-blog.box, .term-spain .quote-box, .spain button.tab-link.active-tab-link{
+						background-color:#DDC0D1!important;
+
+					}
+					
+					.spain .principle-circle svg .cls-1, .spain .principle-circle svg .cls-1{
+						fill:#B780A0;
+					}
+					
+					.spain #rating-notes{
+						border-left: 5px solid #B780A0;
+					}
+					
+					.spain .principle-row{
+						border-bottom: 2px dotted #B780A0;
+					}
+					
+					
+
+
+					
+					.tanzania .rating-bar-proportion, .tanzania .principle-icon, .tanzania .principle-total, .tanzania .inner-principle-circle, #main #language-bar.tanzania{
+						background-color:#dca037;
+					}	
+					
+					.term-tanzania .quote-box, .term-tanzania .quote-box img{
+						border-color:#dca037;
+					}
+					
+					.tanzania .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .tanzania .principle-row, .term-tanzania .fairwork-blog.box, .term-tanzania .quote-box, .tanzania button.tab-link.active-tab-link{
+						background-color:#ffe6ca!important;
+
+					}
+					
+					.tanzania .principle-circle svg .cls-1, .tanzania .principle-circle svg .cls-1{
+						fill:#dca037;
+					}
+					
+					.tanzania #rating-notes{
+						border-left: 5px solid #dca037;
+					}
+					
+					.tanzania .principle-row{
+						border-bottom: 2px dotted #dca037;
+					}
+					
+					
+
+
+					
+					.thailand .rating-bar-proportion, .thailand .principle-icon, .thailand .principle-total, .thailand .inner-principle-circle, #main #language-bar.thailand{
+						background-color:#D60C42;
+					}	
+					
+					.term-thailand .quote-box, .term-thailand .quote-box img{
+						border-color:#D60C42;
+					}
+					
+					.thailand .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .thailand .principle-row, .term-thailand .fairwork-blog.box, .term-thailand .quote-box, .thailand button.tab-link.active-tab-link{
+						background-color:#f2b6c6!important;
+
+					}
+					
+					.thailand .principle-circle svg .cls-1, .thailand .principle-circle svg .cls-1{
+						fill:#D60C42;
+					}
+					
+					.thailand #rating-notes{
+						border-left: 5px solid #D60C42;
+					}
+					
+					.thailand .principle-row{
+						border-bottom: 2px dotted #D60C42;
+					}
+					
+					
+
+
+					
+					.tunisia .rating-bar-proportion, .tunisia .principle-icon, .tunisia .principle-total, .tunisia .inner-principle-circle, #main #language-bar.tunisia{
+						background-color:#;
+					}	
+					
+					.term-tunisia .quote-box, .term-tunisia .quote-box img{
+						border-color:#;
+					}
+					
+					.tunisia .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .tunisia .principle-row, .term-tunisia .fairwork-blog.box, .term-tunisia .quote-box, .tunisia button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.tunisia .principle-circle svg .cls-1, .tunisia .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.tunisia #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.tunisia .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.turkey .rating-bar-proportion, .turkey .principle-icon, .turkey .principle-total, .turkey .inner-principle-circle, #main #language-bar.turkey{
+						background-color:#;
+					}	
+					
+					.term-turkey .quote-box, .term-turkey .quote-box img{
+						border-color:#;
+					}
+					
+					.turkey .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .turkey .principle-row, .term-turkey .fairwork-blog.box, .term-turkey .quote-box, .turkey button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.turkey .principle-circle svg .cls-1, .turkey .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.turkey #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.turkey .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.uganda .rating-bar-proportion, .uganda .principle-icon, .uganda .principle-total, .uganda .inner-principle-circle, #main #language-bar.uganda{
+						background-color:#ec6907;
+					}	
+					
+					.term-uganda .quote-box, .term-uganda .quote-box img{
+						border-color:#ec6907;
+					}
+					
+					.uganda .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .uganda .principle-row, .term-uganda .fairwork-blog.box, .term-uganda .quote-box, .uganda button.tab-link.active-tab-link{
+						background-color:#f8c6a1!important;
+
+					}
+					
+					.uganda .principle-circle svg .cls-1, .uganda .principle-circle svg .cls-1{
+						fill:#ec6907;
+					}
+					
+					.uganda #rating-notes{
+						border-left: 5px solid #ec6907;
+					}
+					
+					.uganda .principle-row{
+						border-bottom: 2px dotted #ec6907;
+					}
+					
+					
+
+
+					
+					.ukraine .rating-bar-proportion, .ukraine .principle-icon, .ukraine .principle-total, .ukraine .inner-principle-circle, #main #language-bar.ukraine{
+						background-color:#;
+					}	
+					
+					.term-ukraine .quote-box, .term-ukraine .quote-box img{
+						border-color:#;
+					}
+					
+					.ukraine .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .ukraine .principle-row, .term-ukraine .fairwork-blog.box, .term-ukraine .quote-box, .ukraine button.tab-link.active-tab-link{
+						background-color:#!important;
+
+					}
+					
+					.ukraine .principle-circle svg .cls-1, .ukraine .principle-circle svg .cls-1{
+						fill:#;
+					}
+					
+					.ukraine #rating-notes{
+						border-left: 5px solid #;
+					}
+					
+					.ukraine .principle-row{
+						border-bottom: 2px dotted #;
+					}
+					
+					
+
+
+					
+					.uk .rating-bar-proportion, .uk .principle-icon, .uk .principle-total, .uk .inner-principle-circle, #main #language-bar.uk{
+						background-color:#ff729c;
+					}	
+					
+					.term-uk .quote-box, .term-uk .quote-box img{
+						border-color:#ff729c;
+					}
+					
+					.uk .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .uk .principle-row, .term-uk .fairwork-blog.box, .term-uk .quote-box, .uk button.tab-link.active-tab-link{
+						background-color:#f9dae6!important;
+
+					}
+					
+					.uk .principle-circle svg .cls-1, .uk .principle-circle svg .cls-1{
+						fill:#ff729c;
+					}
+					
+					.uk #rating-notes{
+						border-left: 5px solid #ff729c;
+					}
+					
+					.uk .principle-row{
+						border-bottom: 2px dotted #ff729c;
+					}
+					
+					
+
+
+					
+					.us .rating-bar-proportion, .us .principle-icon, .us .principle-total, .us .inner-principle-circle, #main #language-bar.us{
+						background-color:#29b0cf;
+					}	
+					
+					.term-us .quote-box, .term-us .quote-box img{
+						border-color:#29b0cf;
+					}
+					
+					.us .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .us .principle-row, .term-us .fairwork-blog.box, .term-us .quote-box, .us button.tab-link.active-tab-link{
+						background-color:#cbeaef!important;
+
+					}
+					
+					.us .principle-circle svg .cls-1, .us .principle-circle svg .cls-1{
+						fill:#29b0cf;
+					}
+					
+					.us #rating-notes{
+						border-left: 5px solid #29b0cf;
+					}
+					
+					.us .principle-row{
+						border-bottom: 2px dotted #29b0cf;
+					}
+					
+					
+
+
+					
+					.uruguay .rating-bar-proportion, .uruguay .principle-icon, .uruguay .principle-total, .uruguay .inner-principle-circle, #main #language-bar.uruguay{
+						background-color:#ec6907;
+					}	
+					
+					.term-uruguay .quote-box, .term-uruguay .quote-box img{
+						border-color:#ec6907;
+					}
+					
+					.uruguay .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .uruguay .principle-row, .term-uruguay .fairwork-blog.box, .term-uruguay .quote-box, .uruguay button.tab-link.active-tab-link{
+						background-color:#f8c6a1!important;
+
+					}
+					
+					.uruguay .principle-circle svg .cls-1, .uruguay .principle-circle svg .cls-1{
+						fill:#ec6907;
+					}
+					
+					.uruguay #rating-notes{
+						border-left: 5px solid #ec6907;
+					}
+					
+					.uruguay .principle-row{
+						border-bottom: 2px dotted #ec6907;
+					}
+					
+					
+
+
+					
+					.vietnam .rating-bar-proportion, .vietnam .principle-icon, .vietnam .principle-total, .vietnam .inner-principle-circle, #main #language-bar.vietnam{
+						background-color:#B780A0;
+					}	
+					
+					.term-vietnam .quote-box, .term-vietnam .quote-box img{
+						border-color:#B780A0;
+					}
+					
+					.vietnam .rating-bar-100, #platform.uk button.tab-link.active-tab-link, .vietnam .principle-row, .term-vietnam .fairwork-blog.box, .term-vietnam .quote-box, .vietnam button.tab-link.active-tab-link{
+						background-color:#DDC0D1!important;
+
+					}
+					
+					.vietnam .principle-circle svg .cls-1, .vietnam .principle-circle svg .cls-1{
+						fill:#B780A0;
+					}
+					
+					.vietnam #rating-notes{
+						border-left: 5px solid #B780A0;
+					}
+					
+					.vietnam .principle-row{
+						border-bottom: 2px dotted #B780A0;
+					}
+					
+					
+
+					.style-rule{
+						background-color:blue;
+					}
+			
+			
+/*# sourceURL=inline-style-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='OIItemplate-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/style.css?ver=1792138701' media='all' />
+<link data-minify="1" rel='stylesheet' id='moove_gdpr_frontend-css' href='https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main.css?ver=1792138701' media='all' />
+<style id="moove_gdpr_frontend-inline-css">
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.moove-gdpr-infobar-settings-btn,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.moove-gdpr-infobar-settings-btn {
+					background-color: transparent;
+					box-shadow: inset 0 0 0 1px currentColor;
+					opacity: .7;
+					color: #202020;
+				}
+
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.moove-gdpr-infobar-settings-btn:hover,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.moove-gdpr-infobar-settings-btn:hover {
+					background-color: #202020;
+					box-shadow: none;
+					color: #fff;
+					opacity: 1;
+				}
+
+				#moove_gdpr_cookie_info_bar:not(.gdpr-full-screen-infobar).moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.moove-gdpr-infobar-settings-btn, #moove_gdpr_cookie_info_bar:not(.gdpr-full-screen-infobar).moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.moove-gdpr-infobar-settings-btn {
+					background-color: transparent;
+					box-shadow: inset 0 0 0 1px currentColor;
+					opacity: .7;
+					color: #fff;
+				}
+
+				#moove_gdpr_cookie_info_bar:not(.gdpr-full-screen-infobar).moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.moove-gdpr-infobar-settings-btn:hover, #moove_gdpr_cookie_info_bar:not(.gdpr-full-screen-infobar).moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.moove-gdpr-infobar-settings-btn:hover {
+					box-shadow: none;
+					opacity: 1;
+					color: #202020;
+					background-color: #fff;
+				}
+			#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:&#039;Nunito&#039;,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green,.gdpr-blocked-recaptcha .gdpr-shr-button.button-green{background-color:#0C4DA2;border-color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover,.gdpr-blocked-recaptcha .gdpr-shr-button.button-green:hover{background-color:#fff;color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#0C4DA2;border:1px solid #0C4DA2}#moove_gdpr_cookie_info_bar span.moove-gdpr-infobar-allow-all.focus-g,#moove_gdpr_cookie_info_bar span.moove-gdpr-infobar-allow-all:focus,#moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-allow-all.focus-g,#moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-allow-all:focus,#moove_gdpr_cookie_info_bar span.moove-gdpr-infobar-reject-btn.focus-g,#moove_gdpr_cookie_info_bar span.moove-gdpr-infobar-reject-btn:focus,#moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-reject-btn.focus-g,#moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-reject-btn:focus,#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus,#moove_gdpr_cookie_info_bar button.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar button.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #0C4DA2;-moz-box-shadow:0 0 1px 3px #0C4DA2;box-shadow:0 0 1px 3px #0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,button.change-settings-button.focus-g,button.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#0C4DA2}#moove_gdpr_cookie_modal .moove-gdpr-branding.focus-g span,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main a.focus-g,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .gdpr-cd-details-toggle.focus-g{color:#0C4DA2}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}
+/*# sourceURL=moove_gdpr_frontend-inline-css */
+</style>
+<script id="jquery-core-js" src="https://fairwork.oii.ox.ac.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://fairwork.oii.ox.ac.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://fairwork.oii.ox.ac.uk/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fairwork.oii.ox.ac.uk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+
+<link rel='shortlink' href='https://fairwork.oii.ox.ac.uk/?p=32474' />
+<script>document.documentElement.className += " js";</script>
+<style id="wp-custom-css">
+.footnote-container p, .footnote-container li   {
+	font-size:1em;
+}
+</style>
+	
+
+
+<style>
+			
+
+		/* If the search box is open, and the screen-width is smaller than the menu when the search box is open, always hide the main menu, and show the "backto-menu-button" */
+
+		@media screen and (max-width:1194.8px){
+	
+			.search-box-is-open .main-menu-container{
+				display:none;
+			}			
+			
+			.search-box-is-open #backto-menu-button{
+				display:block;
+			}
+			
+		}
+
+	
+		@media screen and (min-width:992px){
+			.main-menu-container{
+				display:block;
+			}				
+			#menu-button{
+				display:none;
+			}			
+
+			#mobile-menu{
+				display:none!important;	
+			}
+
+
+			button#search-button{
+				right: -4px;
+			}
+
+
+			#search-form form input[type=text] {
+				right: 35px;
+			}
+
+
+			
+						
+		}
+
+		@media screen and (max-width:992px){
+			.search-box-is-open #backto-menu-button{
+				display:none;
+			}
+		}
+
+
+	
+			#mobile-menu ul.section-third-level-items{
+				width:calc(100% - 30px);
+				margin-left:30px;
+			}
+			
+			#mobile-menu ul.section-third-level-items{
+				width:calc(100% - 30px);
+				margin-left:30px;
+			}
+			
+			#mobile-menu ul.section-third-level-items > li{
+				display: list-item;
+				list-style-type:disc;
+			}
+			
+			#mobile-menu ul.section-third-level-items li > a{
+				text-transform: none;
+				font-family: 'Roboto';
+				font-size:15px;
+				letter-spacing:0px;
+			}
+			
+	@media screen and (min-width:992px){
+			#mobile-menu ul.section-first-level-items li > a{
+				margin-right: 40px;
+			}
+	}
+			
+
+
+@media screen and (min-width: 580px){
+
+	#main #language-bar.colour-to-edge{
+		font-weight:100!important;
+		background-color:#e60045;
+		margin-top: 30px;
+	}
+}
+@media screen and (min-width: 768px){
+
+	#main #language-bar.colour-to-edge{
+		margin-top: 10px;
+	}
+}
+
+
+
+@media screen and (min-width: 768px){
+	nav.oii-colour-to-edge{
+		top:120px;
+	}
+
+	#logos-container{
+		height:10px;
+	}
+	
+	#main{
+		margin-top:10px;
+		margin-bottom:0px;
+	}
+
+}
+
+</style>
+
+<link rel="canonical" href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">
+<meta name="generator" content="WP Rocket 3.24" data-wpr-features="wpr_minify_js wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop" /></head>
+
+<body class="wp-singular fwpageen-template-default single single-fwpageen postid-32474 wp-theme-oii-satellite wp-child-theme-oii-satellites-fairwork">
+
+	<div  id="page" class="fairworkx hfeed site">
+	
+		<header  id="masthead" class="site-header" role="banner">
+
+			<div  class="container" id="logos-container">
+										
+					<a href='/en/fw/homepage'>
+						<div id="site-logo" style="width:220px">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 220 65" style="enable-background:new 0 0 220 65;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:#28285B;}
+	.st1a{fill:#E50A46;}
+	.st2a{fill:none;}
+</style>
+<path class="st01" d="M38,46.1c-3.4,3.4-7.8,5.2-12.5,5.2s-9.2-1.8-12.5-5.2c-3.2-3.2-5-7.3-5.2-11.8H1.2c0.4,13,11.1,23.5,24.3,23.5
+	s23.8-10.5,24.3-23.5h-6.5C43,38.8,41.1,43,38,46.1z"/>
+<path class="st1a" d="M43.1,32.8h6.5C49.3,20,39,9.7,26.2,9.3v6.5c4.4,0.2,8.6,2,11.8,5.2S43,28.4,43.1,32.8z"/>
+<path class="st1a" d="M12.9,21c3.2-3.2,7.3-5,11.8-5.2V9.3C11.9,9.7,1.6,20,1.2,32.8h6.5C7.9,28.4,9.7,24.2,12.9,21z"/>
+<ellipse class="st01" cx="25.4" cy="40.5" rx="9.3" ry="9.3"/>
+<path class="st2a" d="M169.2,30.8c-2,0-3.6,0.6-4.8,1.8c-1.3,1.2-1.9,3.1-1.9,5.6v3.4c0,2.5,0.6,4.3,1.9,5.6c1.3,1.2,2.9,1.8,4.8,1.8
+	c2,0,3.6-0.6,4.8-1.8c1.3-1.2,1.9-3.1,1.9-5.6v-3.4c0-2.5-0.6-4.3-1.9-5.6C172.8,31.4,171.1,30.8,169.2,30.8z"/>
+<path class="st2a" d="M97.4,32.1c-0.5-0.4-1.2-0.7-2-0.9c-0.7-0.2-1.5-0.3-2.3-0.3c-2.1,0-3.7,0.6-4.9,2c-1.2,1.3-1.8,3-1.8,5.1V42
+	c0,2.1,0.6,3.8,1.8,5.1c1.2,1.3,2.8,2,4.9,2c0.8,0,1.6-0.1,2.3-0.3c0.7-0.2,1.4-0.5,2-0.9c0.5-0.4,1-0.9,1.3-1.5s0.5-1.3,0.5-2.1
+	v-8.8c0-0.6-0.1-1.3-0.5-1.8C98.4,33,97.9,32.5,97.4,32.1z"/>
+<polygon class="st01" points="62.5,51.7 66.4,51.7 66.4,37.3 80.2,37.3 80.2,33.9 66.4,33.9 66.4,23.2 81.6,23.2 81.6,19.8 
+	62.5,19.8 "/>
+<path class="st01" d="M99.1,31.9H99c-0.6-1.5-1.5-2.6-2.7-3.3c-1.2-0.7-2.6-1.1-4.2-1.1c-1.5,0-2.8,0.3-4,0.9c-1.2,0.6-2.2,1.4-3,2.5
+	c-0.8,1.1-1.5,2.3-1.9,3.9c-0.4,1.5-0.7,3.2-0.7,5.1s0.2,3.6,0.7,5.1c0.4,1.5,1.1,2.8,1.9,3.9s1.9,1.9,3,2.5c1.2,0.6,2.5,0.9,4,0.9
+	c3.2,0,5.5-1.5,6.9-4.3h0.2v3.8h3.7V28.2h-3.6V31.9z M99.1,44.2c0,0.8-0.1,1.5-0.5,2.1s-0.7,1.1-1.3,1.5c-0.5,0.4-1.2,0.7-2,0.9
+	s-1.5,0.3-2.3,0.3c-2.1,0-3.7-0.6-4.9-2c-1.2-1.3-1.8-3-1.8-5.1v-4.1c0-2.1,0.6-3.8,1.8-5.1c1.2-1.3,2.8-2,4.9-2
+	c0.8,0,1.6,0.1,2.3,0.3s1.4,0.5,2,0.9c0.5,0.4,1,0.9,1.3,1.5c0.3,0.6,0.5,1.2,0.5,1.8V44.2z"/>
+<rect x="106" y="28.1" class="st01" width="3.7" height="23.6"/>
+<path class="st01" d="M119.1,29.5c-1.1,0.9-1.9,1.9-2.3,3h-0.2v-4.3h-3.7v23.6h3.7v-16c0-1.1,0.5-2.1,1.7-2.8
+	c1.1-0.7,2.6-1.1,4.6-1.1h2.1v-3.7h-1.4C121.7,28.1,120.2,28.5,119.1,29.5z"/>
+<polygon class="st01" points="155.4,28.1 152.8,38.3 150.4,48.7 150.3,48.7 147.4,38.3 144.3,28.1 141.1,28.1 138.1,38.3 135.2,48.7 
+	135.1,48.7 132.6,38.3 130.1,28.1 126.6,28.1 132.9,51.7 137.3,51.7 140.6,40.4 142.6,33.2 142.7,33.2 144.8,40.4 148,51.7 
+	152.6,51.7 158.8,28.1 "/>
+<path class="st01" d="M176.9,30.9c-0.9-1.1-2.1-1.9-3.4-2.5c-1.3-0.6-2.7-0.9-4.3-0.9c-1.6,0-3,0.3-4.3,0.9c-1.3,0.6-2.4,1.4-3.4,2.5
+	c-0.9,1.1-1.7,2.4-2.2,3.9c-0.5,1.5-0.8,3.2-0.8,5.1c0,1.9,0.2,3.6,0.8,5.1c0.5,1.5,1.2,2.8,2.2,3.9c0.9,1.1,2.1,1.9,3.4,2.5
+	c1.3,0.6,2.8,0.9,4.3,0.9c1.6,0,3-0.3,4.3-0.9s2.4-1.4,3.4-2.5c0.9-1.1,1.7-2.4,2.2-3.9c0.5-1.5,0.8-3.2,0.8-5.1
+	c0-1.9-0.2-3.6-0.8-5.1C178.6,33.3,177.8,32,176.9,30.9z M175.9,41.6c0,2.5-0.6,4.3-1.9,5.6c-1.3,1.2-2.9,1.8-4.8,1.8
+	c-2,0-3.6-0.6-4.8-1.8c-1.3-1.2-1.9-3.1-1.9-5.6v-3.4c0-2.5,0.6-4.3,1.9-5.6c1.3-1.2,2.9-1.8,4.8-1.8c2,0,3.6,0.6,4.8,1.8
+	c1.3,1.2,1.9,3.1,1.9,5.6V41.6z"/>
+<path class="st01" d="M188.4,29.5c-1.1,0.9-1.9,1.9-2.3,3h-0.2v-4.3h-3.7v23.6h3.7v-16c0-1.1,0.5-2.1,1.7-2.8
+	c1.1-0.7,2.6-1.1,4.6-1.1h2.1v-3.7h-1.4C191,28.1,189.5,28.5,188.4,29.5z"/>
+<polygon class="st01" points="215.8,28.1 211.3,28.1 204.7,35.3 201,39.3 200.8,39.3 200.8,17.9 197.2,17.9 197.2,51.7 200.8,51.7 
+	200.8,43.3 204.4,39.7 212.2,51.7 216.6,51.7 207.1,37.5 "/>
+<ellipse class="st01" cx="107.9" cy="23.4" rx="1.8" ry="1.8"/>
+</svg>
+					
+						</div>
+					</a>
+												
+			</div>							
+
+			<!-- MAIN MENU -->					
+			<nav class="oii-colour-to-edge">	
+				<div class="container">
+					
+						<div class="row" >
+							<div class="oii-row-background">
+								<div class="full-size-menu">
+										<!-- THE MENU BUTTON -->
+										<button aria-haspopup="true" role="navigation" id="menu-button" class="menu-closed">
+											<span class="visuallyhidden">Main menu</span>
+													<div class="menu-line" id="menu-line-1"></div>
+													<div class="menu-line" id="menu-line-2a"></div>
+													<div class="menu-line" id="menu-line-2b"></div>
+													<div class="menu-line" id="menu-line-3"></div>
+										</button>
+										<!-- THE PSEUDO-MENU BUTTON. This appears when the search box is open (and won't fit in the available space). Clicking it closes the search box and reveals the menu in the bar --> 
+										<button id="backto-menu-button" role="navigation">
+											<span class="visuallyhidden">Back to menu from search</span>
+													<div class="menu-line" id="menu-line-1c"></div>
+													<div class="menu-line" id="menu-line-2c"></div>
+													<div class="menu-line" id="menu-line-3c"></div>
+										</button>
+									
+										<!-- THE MAIN MENU -->
+										<div class="main-menu-container">
+											<div class="menu-main_menu_en-container"><ul id="menu-main_menu_en" class="menu"><li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href='https://fairwork.oii.ox.ac.uk/en/fw/about/'><span class='dropbtn'>About</span></a>
+	<div class="dropdown-content"><ul class="dropdown-column">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/people/">People</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/sponsors/">Sponsors</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/collaborators/">Collaborators</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/observatory/">Fairwork Observatory</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/impact/">Impact</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/faqs/">FAQ</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/jobs/">Jobs</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/contact/">Contact</a>
+		</li>
+	</ul></div>
+
+	</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href='https://fairwork.oii.ox.ac.uk/en/fw/ratings/'><span class='dropbtn'>Ratings</span></a>
+	</li>
+
+</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href='https://fairwork.oii.ox.ac.uk/en/fw/principles/'><span class='dropbtn'>Principles</span></a>
+	<div class="dropdown-content"><ul class="dropdown-column">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/fairwork-principles-location-based-work/">Location-based Platform Work Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/cloudwork-principles/">Cloudwork (Online Work) Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/ai-principles/">AI Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/methodology/">Methodology</a>
+		</li>
+	</ul></div>
+
+	</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen current-menu-ancestor current-menu-parent menu-item-has-children'><a href='https://fairwork.oii.ox.ac.uk/en/fw/publications/'><span class='dropbtn'>Publications</span></a>
+	<div class="dropdown-content"><ul class="dropdown-column">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-reports/">Fairwork reports</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/policy-briefs/">Policy briefs</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/opinion-pieces/">Opinion pieces</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/academic-papers/">Academic Publications</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/gender/">Gender</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen current-menu-item'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">Fairwork AI</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-sex-work-project/">Fairwork Sex Work Project</a>
+		</li>
+	</ul></div>
+
+	</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href='https://fairwork.oii.ox.ac.uk/en/fw/news/'><span class='dropbtn'>News</span></a>
+	<div class="dropdown-content"><ul class="dropdown-column">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/blog/">Blog</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/podcasts/">Podcasts</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/coverage/">Press Coverage</a>
+		</li>
+	</ul></div>
+
+	</li>
+
+</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href='https://fairwork.oii.ox.ac.uk/en/fw/engage/'><span class='dropbtn'>Engage</span></a>
+	<div class="dropdown-content"><ul class="dropdown-column">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/join-the-pledge-together-for-platform-work/">Join the Pledge</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/resources-and-tools/">Resources &amp; Tools</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/unions/">Unions &amp; Workers’ Associations</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/manifesto-fairer-platform-work/">Global Manifesto: Fairer Platform Work</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/feedback/">Feedback</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/visual-materials/">Visual Materials</a>
+		</li>
+	</ul></div>
+
+	</li>
+<li class='top-level-menu-item  menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href='https://fairwork.oii.ox.ac.uk/en/fw/certification/'><span class='dropbtn'>Certification</span></a>
+	</li>
+
+</li>
+</ul></div>										</div>
+										<!-- THE SEARCH BOX -->
+										<button class="moveable-search-button" id="search-button" aria-label="Search icon to open site search box" onclick="opensearchbox()">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.49 17.49">
+				<path d="M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z" transform="translate(-3 -3)"></path>
+		</svg>
+	</button>	
+
+
+<div id="search-form">
+			<form action="https://fair.work/en/fw/" method="get">
+				
+				<input type="text" name="s" class="search-field" value="" placeholder="Search:">
+				<input type="hidden" name="lang" value="en">
+				<input  class="moveable-search-button" type="submit" alt="Search" value="">	
+			</form>
+</div>
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- THE MOBILE DROPDOWN -->
+					<div id="mobile-menu">
+							<div class="container">
+								<div class="row">
+									<div class="menu-main_menu_en-container"><ul id="menu-main_menu_en-1" class="menu">
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">Mobile Menu Column 1</a><div class='col  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children'><ul class='section-first-level-items'>
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/">About</a>
+	<ul class="section-second-level-items">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/people/">People</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/sponsors/">Sponsors</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/collaborators/">Collaborators</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/observatory/">Fairwork Observatory</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/impact/">Impact</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/about/faqs/">FAQ</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/jobs/">Jobs</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/contact/">Contact</a>
+		</li>
+
+	</ul>
+
+	</li>
+
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/ratings/">Ratings</a>
+	</li>
+
+</ul>
+
+</li>
+
+<li class=' menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">Mobile Menu Column 2</a><div class='col  menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children'><ul class='section-first-level-items'>
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/">Principles</a>
+	<ul class="section-second-level-items">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/fairwork-principles-location-based-work/">Location-based Platform Work Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/cloudwork-principles/">Cloudwork (Online Work) Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/principles/ai-principles/">AI Principles</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/methodology/">Methodology</a>
+		</li>
+
+	</ul>
+
+	</li>
+
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen current-menu-ancestor current-menu-parent menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/publications/">Publications</a>
+	<ul class="section-second-level-items">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-reports/">Fairwork reports</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/policy-briefs/">Policy briefs</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/opinion-pieces/">Opinion pieces</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/academic-papers/">Academic Publications</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/gender/">Gender</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen current-menu-item'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">Fairwork AI</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-sex-work-project/">Fairwork Sex Work Project</a>
+		</li>
+
+	</ul>
+
+	</li>
+
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/news/">News</a>
+	<ul class="section-second-level-items">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/blog/">Blog</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/podcasts/">Podcasts</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/coverage/">Press Coverage</a>
+		</li>
+
+	</ul>
+
+	</li>
+
+</ul>
+
+</li>
+
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/fairwork-ai/">Mobile Menu Column 3</a><div class='col  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children'><ul class='section-first-level-items'>
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen menu-item-has-children'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/">Engage</a>
+	<ul class="section-second-level-items">
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/join-the-pledge-together-for-platform-work/">Join the Pledge</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/resources-and-tools/">Resources &amp; Tools</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/unions/">Unions &amp; Workers’ Associations</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/manifesto-fairer-platform-work/">Global Manifesto: Fairer Platform Work</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/feedback/">Feedback</a>
+		</li>
+
+		<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/engage/visual-materials/">Visual Materials</a>
+		</li>
+
+	</ul>
+
+	</li>
+
+	<li class=' menu-item menu-item-type-post_type menu-item-object-fwpageen'><a href="https://fairwork.oii.ox.ac.uk/en/fw/certification/">Certification</a>
+	</li>
+
+</ul>
+
+</li>
+</ul></div>								</div>
+							</div>	
+					</div>										
+			</nav>		
+
+
+								
+		</header><!-- #masthead -->
+
+		<main id="main">
+
+		<div id="language-bar" class="colour-to-edge" style="margin-bottom:0px">
+
+			<div class="container">
+
+						<div class="language-container">
+							Language:	
+
+	<select id="language-changer" name="translate">
+		<option value="en" selected>English</option>
+		<option value="de" >Deutsch</option>
+	</select>
+
+	
+						</div>
+					
+			</div>
+		</div>
+
+
+<div class="colour-to-edge" id="page-title-banner">
+	<div class="container">
+	
+							
+						
+			<section>
+				<h1 class="large-h1" style="padding-bottom: 30px;">
+						Fairwork AI				</h1>	
+			</section>
+				
+	
+
+	</div>
+</div>
+<div class="container">
+		<div class="text-container">
+	
+
+
+		<h3><strong><img fetchpriority="high" decoding="async" class="aligncenter" src="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2024/01/18_Cloudwork_ClickWorkers@3x1-1.png" width="559" height="299" /></strong></h3>
+<h3><strong>Understanding the Labour Behind AI</strong></h3>
+<p class="isSelectedEnd">There is nothing “artificial” about the immense amount of human labour that builds, supports, and maintains AI systems. From data annotation and content moderation to model evaluation and warehouse logistics, millions of workers contribute to the development and deployment of AI technologies.</p>
+<p class="isSelectedEnd">Fairwork investigates the labour that underpins AI systems through independent research, worker engagement, and evidence-based analysis. In doing so, our work has documented the conditions of AI data work, exposed hidden AI supply chains, and identified the governance challenges associated with increasingly fragmented forms of digital labour.</p>
+<p class="isSelectedEnd">Through independent research, worker engagement, and evidence-based analysis, Fairwork makes visible the labour practices, risks, and inequalities that underpin today’s AI economy.</p>
+<h3><b>What We Study</b></h3>
+<p class="isSelectedEnd">Fairwork’s research examines how AI systems are built, maintained, and governed, with a particular focus on the workers who make these systems possible.</p>
+<p class="isSelectedEnd">Our work explores:</p>
+<ul data-spread="false">
+<li>Data annotation and model evaluation</li>
+<li>Content moderation</li>
+<li>AI supply chains and outsourcing</li>
+<li>Platform work and digital labour</li>
+<li>Labour governance and regulation</li>
+<li>Worker voice and representation</li>
+<li>Responsible AI policy and practice</li>
+</ul>
+<p class="isSelectedEnd">By combining worker engagement, company evaluations, policy analysis, and field research, Fairwork contributes evidence to debates on labour standards, AI governance, and the organisation of digital work.</p>
+<h3><strong>What Our Research Shows</strong></h3>
+<p class="isSelectedEnd">Through its research, Fairwork has:</p>
+<ul data-spread="false">
+<li>Documented the conditions of AI data work, including data annotation, content moderation, model evaluation, and related forms of digital labour</li>
+<li>Exposed hidden AI supply chains, making visible work that is often outsourced, geographically dispersed, and difficult for clients and regulators to trace</li>
+<li>Identified labour risks across digital labour systems, including low pay, insecure contracts, opaque management practices, and limited worker voice</li>
+<li>Shown how fragmented outsourcing can create governance gaps across clients, platforms, suppliers, and subcontractors</li>
+<li>Developed the Fairwork Principles as a framework for assessing fairness in digital labour and improving labour standards across sectors</li>
+</ul>
+<p class="isSelectedEnd">Together, these findings contribute to a clearer understanding of how AI systems are produced, where accountability breaks down, and what is required to improve the conditions of the workers who power them.</p>
+<h3><strong>The Fairwork AI Principles</strong></h3>
+<p class="isSelectedEnd">One of Fairwork’s core contributions has been the development of the Fairwork Principles, a globally recognised framework for evaluating fairness in digital labour.</p>
+<div style="text-align: center"><img decoding="async" src="https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/11/2025/04/Fairwork-Principles-1.png" /></div>
+<p style="text-align: center"><button class="call-to-action-button button-size-normal" onclick="window.location.href=&quot;https://fairwork.oii.ox.ac.uk/en/fw/principles/ai-principles/&quot;">Explore the Fairwork AI Principles</button></p>
+<p class="isSelectedEnd">Developed through extensive consultation with workers, researchers, policymakers, trade unions, and industry stakeholders, the Principles have become an internationally recognised benchmark for understanding and evaluating labour standards in the digital economy.</p>
+<p class="isSelectedEnd">Today, they inform Fairwork’s research, ratings, policy engagement, and evaluation activities across multiple sectors and regions.</p>
+<h3>Publications &amp; Reports</h3>
+<p class="isSelectedEnd">Fairwork publishes ratings reports, case studies, policy briefs, and academic research examining labour conditions across digital platforms and AI supply chains.</p>
+<p class="isSelectedEnd">Our research has been conducted in partnership with organisations including the Global Partnership on Artificial Intelligence (GPAI), Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), governments, trade unions, civil society organisations, and academic institutions.</p>
+<p class="isSelectedEnd">Together, these publications contribute to a growing evidence base on digital labour, AI supply chains, labour governance, and the conditions of the workers who power AI systems.</p>
+<p style="text-align: center"><button class="call-to-action-button button-size-normal" onclick="window.location.href=&quot;https://fairwork.oii.ox.ac.uk/en/ratings/ai/&quot;">Browse Publications &amp; Reports</button></p>
+<h3>From Research to Practice</h3>
+<p class="isSelectedEnd">Fairwork’s research has informed the development of an independent evaluation and certification framework for organisations seeking to assess and improve labour conditions across AI supply chains.</p>
+<p class="isSelectedEnd">Grounded in the Fairwork Principles and informed by worker experiences, this framework translates research into practical tools for understanding labour risks, strengthening accountability, and supporting more responsible AI governance.</p>
+<p style="text-align: center"><button class="call-to-action-button button-size-normal" onclick="window.location.href=&quot;https://fairwork.oii.ox.ac.uk/en/fw/certification/&quot;">Explore Certification</button></p>
+
+	</div>
+</div>
+		
+
+		</div><!-- Container -->
+	</div><!-- Main content -->	
+	</main>
+    <footer style="background-color: #110f50;color:#FFFFFF;">
+    	<div class="container" style="background-color:#002147">
+    		<div class="column-container with-3-columns">
+				<div class="column column-3 no-button">
+					<img style="width:200px;margin-top:40px" alt="Oxford Internet Institute" src="https://www.oii.ox.ac.uk/wp-content/themes/OII2022/assets/logos/OII-white-text-140.png">
+					<div style="margin-top:30px">
+										Stephen A. Schwarzman Centre for the Humanities<br/>
+    University of Oxford<br/>
+    Radcliffe Observatory Quarter<br/>
+    Woodstock Road<br/>
+    Oxford<br/>
+    OX2 6GG<br/><br/>
+
+					</div>
+				</div>
+				
+						<style>
+							.footer-social-media-icons{
+								width:32px;
+								height:32px;
+								float:left;
+								display:relative;
+								margin-right:10px;
+								cursor:pointer;
+							}
+							.st0{
+									fill:#FFFFFF;
+									transition:1s ease fill;
+							}
+							svg:hover .st0{
+									fill:#36A9E1;
+							}
+							
+							#mc_embed_signup_scroll p{
+								color: #FFFFFF;
+								font-size: 15px;
+								font-weight: normal;
+								font-family: 'Lato';
+								margin-bottom: 10px;
+							}
+							
+							input#mc-embedded-subscribe{
+								background: none;
+								color: inherit;
+								border: 2px solid #FFFFFF;
+								font: inherit;
+								cursor: pointer;
+								outline: inherit;
+								-webkit-box-shadow: 0 1px 1px transparent;
+								box-shadow: 0 1px 1px transparent;
+								border-radius: 20px;
+								color: #FFFFFF;
+								font-family: 'Lato';
+								padding: 8px;
+								padding-left: 16px;
+								padding-right: 16px;
+								font-size: 14px;
+								margin-top:15px;
+								margin-bottom:30px;
+							}
+							
+							input#mc-embedded-subscribe:hover{
+								color: #36A9E1;
+								border: 2px solid #36A9E1;								
+							}
+							
+							input#mce-EMAIL	{
+								height: 17px;
+								width:184px;
+								padding:8px;
+								line-height: 1.3;
+								border-radius: 20px!important;
+								border-color: #cccccc;
+							}
+							
+						</style>
+						
+				<div class="column column-3 no-button">
+					<div style="margin-top:40px">
+						<div id="site-logo-white" style="width:220px">
+							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.44 48.53"><defs><style>.cls-1{fill:#fff;}</style></defs><title>fairwork-logo-white</title><path class="cls-1" d="M38,46.13A17.72,17.72,0,0,1,7.73,34.37H1.19a24.26,24.26,0,0,0,48.5,0H43.16A17.57,17.57,0,0,1,38,46.13Z" transform="translate(-1.19 -9.33)"/><path class="cls-1" d="M43.15,32.82h6.54A24.28,24.28,0,0,0,26.21,9.33v6.53a17.74,17.74,0,0,1,16.94,17Z" transform="translate(-1.19 -9.33)"/><path class="cls-1" d="M12.89,21.05a17.6,17.6,0,0,1,11.77-5.18V9.33A24.28,24.28,0,0,0,1.19,32.82H7.72A17.64,17.64,0,0,1,12.89,21.05Z" transform="translate(-1.19 -9.33)"/><circle class="cls-1" cx="24.25" cy="31.18" r="9.35"/><polygon class="cls-1" points="61.33 42.41 65.18 42.41 65.18 27.95 79.06 27.95 79.06 24.53 65.18 24.53 65.18 13.83 80.38 13.83 80.38 10.46 61.33 10.46 61.33 42.41"/><path class="cls-1" d="M99.15,31.91H99a6.39,6.39,0,0,0-2.68-3.27A7.81,7.81,0,0,0,92,27.56a9.17,9.17,0,0,0-4,.88,8.85,8.85,0,0,0-3,2.49,11.32,11.32,0,0,0-1.9,3.91,19.42,19.42,0,0,0,0,10.26A11.78,11.78,0,0,0,85,49a8.85,8.85,0,0,0,3,2.49,9,9,0,0,0,4,.88A7.18,7.18,0,0,0,98.9,48h.2v3.81h3.66V28.25H99.15Zm0,12.31a4,4,0,0,1-.49,2.05,4.25,4.25,0,0,1-1.32,1.51,5.78,5.78,0,0,1-2,.93,9,9,0,0,1-2.35.35,6.22,6.22,0,0,1-4.88-2A7.48,7.48,0,0,1,86.35,42v-4a7.25,7.25,0,0,1,1.81-5.13A6.21,6.21,0,0,1,93,30.84a7.27,7.27,0,0,1,2.35.34,6.91,6.91,0,0,1,2,.93,4.62,4.62,0,0,1,1.32,1.46,3.5,3.5,0,0,1,.49,1.81Z" transform="translate(-1.19 -9.33)"/><rect class="cls-1" x="104.85" y="18.77" width="3.66" height="23.59"/><path class="cls-1" d="M119.08,29.47a7.41,7.41,0,0,0-2.3,3h-.24V28.15h-3.67V51.74h3.67v-16a3.33,3.33,0,0,1,1.66-2.83,8.28,8.28,0,0,1,4.64-1.13H125V28.1h-1.42A6.66,6.66,0,0,0,119.08,29.47Z" transform="translate(-1.19 -9.33)"/><polygon class="cls-1" points="154.23 18.77 151.64 28.98 149.25 39.33 149.15 39.33 146.22 28.98 143.14 18.77 139.92 18.77 136.94 28.98 134.06 39.33 133.96 39.33 131.42 28.98 128.93 18.77 125.36 18.77 131.66 42.41 136.11 42.41 139.38 31.08 141.43 23.85 141.48 23.85 143.58 31.08 146.86 42.41 151.4 42.41 157.65 18.77 154.23 18.77"/><path class="cls-1" d="M176.86,30.93a9.5,9.5,0,0,0-3.37-2.49,10.55,10.55,0,0,0-4.34-.88,10.73,10.73,0,0,0-4.35.88,9.59,9.59,0,0,0-3.37,2.49,12.27,12.27,0,0,0-2.2,3.91,15.09,15.09,0,0,0-.78,5.08,14.7,14.7,0,0,0,.78,5.08,11.88,11.88,0,0,0,2.2,3.91,9.59,9.59,0,0,0,3.37,2.49,11.17,11.17,0,0,0,8.69,0,10,10,0,0,0,3.37-2.49,12.27,12.27,0,0,0,2.2-3.91,15.09,15.09,0,0,0,.78-5.08,15.09,15.09,0,0,0-.78-5.08A10.63,10.63,0,0,0,176.86,30.93Zm-.92,10.7a7.59,7.59,0,0,1-1.86,5.57A6.68,6.68,0,0,1,169.24,49a6.52,6.52,0,0,1-4.83-1.81c-1.27-1.22-1.86-3.08-1.86-5.57V38.21a7.59,7.59,0,0,1,1.86-5.57,6.67,6.67,0,0,1,4.83-1.8,6.52,6.52,0,0,1,4.84,1.8c1.27,1.22,1.86,3.08,1.86,5.57Z" transform="translate(-1.19 -9.33)"/><path class="cls-1" d="M188.39,29.47a7.47,7.47,0,0,0-2.29,3h-.25V28.15h-3.66V51.74h3.66v-16a3.36,3.36,0,0,1,1.66-2.83,8.31,8.31,0,0,1,4.64-1.13h2.15V28.1h-1.37A6.89,6.89,0,0,0,188.39,29.47Z" transform="translate(-1.19 -9.33)"/><polygon class="cls-1" points="214.61 18.77 210.16 18.77 203.47 26 199.85 30 199.66 30 199.66 8.56 196 8.56 196 42.41 199.66 42.41 199.66 33.96 203.18 30.34 211.04 42.41 215.44 42.41 205.86 28.14 214.61 18.77"/><circle class="cls-1" cx="106.68" cy="14.05" r="1.83"/></svg>					
+						</div><br/>
+					
+						<form action="https://actionnetwork.org/forms/fairwork-newsletter" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+						<div id="mc_embed_signup">
+							<div id="mc_embed_signup_scroll">
+								<p id="mcformlabel">Sign up for the Fairwork newsletter</p>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>					
+							</div>
+						</form>
+						</div>
+						
+			
+						</div>
+				</div>
+				<div class="column column-3 no-button">
+				
+					<div style="margin-top:50px">
+					
+						Email us: <a href="mailto:info@fair.work">info@fair.work</a><br/><br/>
+	
+					
+						
+						<a role="navigation" href="https://www.facebook.com/TowardsFairWork" target="_blank">
+						<div class="footer-social-media-icons">
+							
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+								<title>Fairwork Facebook link</title>
+								<g>
+									<path class="st0" d="M71,1C32.3,1,1,32.3,1,71c0,38.7,31.3,70,70,70s70-31.3,70-70C141,32.3,109.7,1,71,1z M91,43.4l-8.9,0
+										c-6.4,0-7.7,3.1-7.7,7.6v9.9h16.4l-2,15.6H75.4V117l-16.6,0V76.5H45V60.9h13.8V49.5c0-13.4,8.2-20.8,20.1-20.8
+										c5.7,0,10.6,0.4,12.1,0.6V43.4z"/>
+								</g>
+								</svg>	
+							
+						</div>
+						</a>
+						<a href="https://www.youtube.com/channel/UC-DyfwUBCeryF2j1d8CIM-A" target="_blank">
+								<div class="footer-social-media-icons">
+									
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+											 <title>YouTube link</title>
+										<g>
+											<g>
+												<path class="st0" d="M73.3,61.9c-4.4-2.3-8.7-4.5-13.1-6.8l-1.4-0.8V56v30v1.6l1.4-0.7c4.8-2.5,9.6-5,14.4-7.5L89,71.9l1.7-0.9
+													L89,70.2C83.7,67.4,78.5,64.7,73.3,61.9z"/>
+											</g>
+											<g>
+												<path class="st0" d="M71,1C32.3,1,1,32.3,1,71c0,38.7,31.3,70,70,70s70-31.3,70-70C141,32.3,109.7,1,71,1z M118.3,72.3h-0.7
+													c0-0.1,0-0.2,0-0.3c0,4.1,0,7.4-0.2,10.7c-0.2,3.7-0.6,7.3-1.4,10.8c-0.6,2.6-2,4.9-3.8,6.6c-1.9,1.7-4.2,2.8-6.8,3.1
+													c-5.6,0.6-11.3,0.9-17,1.1c-5.7,0.2-11.4,0.2-17,0.2c-5.7,0-11.4,0-17-0.2c-5.7-0.2-11.4-0.5-17-1.1c-2.6-0.3-5-1.4-6.8-3.1
+													c-1.9-1.7-3.2-4-3.8-6.6c-0.8-3.5-1.2-7.1-1.4-10.8c-0.2-3.7-0.2-7.3-0.2-10.8c0-3.5,0-7.2,0.2-10.9c0.2-3.7,0.6-7.3,1.4-10.8
+													c0.6-2.6,2-4.9,3.8-6.6c1.9-1.7,4.2-2.8,6.8-3.1c5.6-0.6,11.3-0.9,17-1.1c5.7-0.2,11.4-0.2,17-0.2c5.7,0,11.4,0,17,0.2
+													c5.7,0.2,11.4,0.5,17,1.1c2.6,0.3,5,1.4,6.8,3.1v0c1.9,1.7,3.2,4,3.8,6.6c1.6,6.8,1.6,14.2,1.6,21.8c0-0.4,0-0.9,0-1.3h0.7V72.3z"
+													/>
+											</g>
+										</g>
+										</svg>					
+
+								
+								</div>						
+						</a>						
+						
+						<a role="navigation" href="https://www.twitter.com/TowardsFairwork" target="_blank">
+						<div class="footer-social-media-icons">
+							
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+								<title>Fairwork Twitter link</title>
+								<g>
+									<path class="st0" d="M71,1C32.3,1,1,32.3,1,71c0,38.7,31.3,70,70,70s70-31.3,70-70C141,32.3,109.7,1,71,1z M108.3,53.7l0.1,2.5
+										c0,25.1-19.1,54-54,54c-10.7,0-20.7-3.1-29.1-8.5c1.5,0.2,3,0.3,4.5,0.3c8.9,0,17.1-3,23.6-8.1c-8.3-0.2-15.3-5.6-17.7-13.2
+										c1.2,0.2,2.3,0.4,3.6,0.4c1.7,0,3.4-0.2,5-0.7C35.5,78.5,29,70.8,29,61.7v-0.2c2.6,1.4,5.5,2.3,8.6,2.4c-5.1-3.4-8.4-9.2-8.4-15.8
+										c0-3.5,0.9-6.7,2.6-9.5c9.4,11.5,23.3,19,39.1,19.8c-0.4-1.8-0.6-3.7-0.4-5.6C71,43,79.1,35.3,88.8,35c5.7-0.2,10.8,2.2,14.4,6
+										c4.3-0.9,8.4-2.4,12.1-4.6c-1.4,4.4-4.4,8.1-8.3,10.5c3.8-0.5,7.5-1.5,10.9-3C115.2,47.7,112,51,108.3,53.7z"/>
+								</g>
+								</svg>
+							
+						</div>
+						</a>
+						<a role="navigation" href="https://www.linkedin.com/company/towardsfairwork" target="_blank">
+						<div class="footer-social-media-icons">
+							
+								<svg viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+						<title>Fairwork LinkedIn link</title>
+						<g>
+							<path class="st0" d="M74.2,63.5v-0.1C74.1,63.4,74.1,63.5,74.2,63.5L74.2,63.5z"/>
+							<path class="st0"  d="M70.8,0.9c-38.7,0-70,31.3-70,70c0,38.7,31.3,70,70,70c38.7,0,70-31.3,70-70C140.8,32.2,109.5,0.9,70.8,0.9z M51,101.8
+								H36.2V57H51V101.8z M43.6,50.9L43.6,50.9c-5.1,0-8.3-3.4-8.3-7.7c0-4.4,3.3-7.7,8.4-7.7c5.1,0,8.2,3.3,8.3,7.7
+								C52,47.5,48.8,50.9,43.6,50.9z M104.7,101.8H89.8v-24c0-6-2.2-10.1-7.5-10.1c-4.1,0-6.6,2.8-7.6,5.4c-0.4,1-0.5,2.3-0.5,3.6v25
+								H59.3c0,0,0.2-40.6,0-44.8h14.9v6.3c2-3.1,5.5-7.4,13.4-7.4c9.8,0,17.1,6.4,17.1,20.2V101.8z"/>
+						</g>
+						</svg>
+							
+						</div>
+						</a>	
+						<a role="navigation" href="https://www.instagram.com/towards_fairwork/" target="_blank">
+						<div class="footer-social-media-icons">
+							
+						
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="cls-1" d="M19.1,9.7c-0.8,0-1.1,0-3.1,0c-2.1,0-2.3,0-3.1,0c-2.1,0.1-3.1,1.1-3.2,3.2c0,0.8,0,1.1,0,3.1
+								c0,2.1,0,2.3,0,3.1c0.1,2.1,1.1,3.1,3.2,3.2c0.8,0,1.1,0,3.1,0c2.1,0,2.3,0,3.1,0c2.1-0.1,3.1-1.1,3.2-3.2c0-0.8,0-1.1,0-3.1
+								c0-2.1,0-2.3,0-3.1C22.2,10.8,21.2,9.8,19.1,9.7z M16,20c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4C20,18.2,18.2,20,16,20z M20.1,12.8
+								c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C21.1,12.4,20.7,12.8,20.1,12.8z"/>
+							<circle class="cls-1" cx="16" cy="16" r="2.6"/>
+							<path class="cls-1" d="M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16s16-7.2,16-16S24.8,0,16,0z M23.7,19.2c-0.1,2.8-1.7,4.4-4.5,4.5
+								c-0.8,0-1.1,0-3.2,0s-2.4,0-3.2,0C10,23.6,8.4,22,8.3,19.2c0-0.8,0-1.1,0-3.2s0-2.4,0-3.2C8.4,10,10,8.4,12.8,8.3
+								c0.8,0,1.1,0,3.2,0s2.4,0,3.2,0c2.8,0.1,4.4,1.7,4.5,4.5c0,0.8,0,1.1,0,3.2S23.7,18.4,23.7,19.2z"/>
+						</g>
+						</svg>
+							
+						</div>
+						</a>	
+						
+						
+					</div>
+				</div>
+
+    		</div>
+    	</div>
+		<div style="clear:both"></div>
+    	<div class="bottom-bar">
+			<div class="container">
+				<div class="row">
+					<div class="oii-footer-text">
+														<div class="oii_basics_footer_text" >
+			© <a href="http://www.oii.ox.ac.uk/">Oxford Internet Institute</a> 2026 | <a href="https://www.oii.ox.ac.uk/terms-of-use/">Terms of Use</a> | <a href="http://www.oii.ox.ac.uk/privacy-policy/">Privacy Policy</a> | 
+			<a href="https://www.oii.ox.ac.uk/cookie-statement/">Cookie Statement</a> | 
+			<a href="https://www.oii.ox.ac.uk/copyright-policy/">Copyright Policy</a> | <a href="https://www.oii.ox.ac.uk/accessibility-statement-for-oxford-internet-institute-websites/">Accessibility</a> | <a href="mailto:webhelp@oii.ox.ac.uk">Email Webmaster</a>
+		</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+    </footer>
+    <script>
+				( function() {
+					const style = document.createElement( 'style' );
+					style.appendChild( document.createTextNode( '#frm_field_218_container,#frm_field_219_container,#frm_field_220_container,#frm_field_221_container,#frm_field_222_container,#frm_field_223_container,#frm_field_224_container,#frm_field_225_container,#frm_field_226_container {visibility:hidden;overflow:hidden;width:0;height:0;position:absolute;}' ) );
+					document.head.appendChild( style );
+					document.currentScript?.remove();
+				} )();
+			</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/sites/11/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/oii-satellites-fairwork/*","/wp-content/themes/oii-satellite/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<!--copyscapeskip-->
+	<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" aria-labelledby="moove_gdpr_cookie_info_bar_title" tabindex="-1" style="display: none;">
+	<div class="moove-gdpr-info-bar-container">
+				<div id="moove_gdpr_cookie_info_bar_title" class="gdpr-sr-only" role="heading" aria-level="2">GDPR Cookie Banner</div>
+		<div class="moove-gdpr-info-bar-content">
+		
+<div class="moove-gdpr-cookie-notice">
+  <p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <button  aria-haspopup="dialog" data-href="#moove_gdpr_cookie_modal" class="change-settings-button gdpr-settings-btn-style-2">settings</button>.</p>
+</div>
+<!--  .moove-gdpr-cookie-notice -->
+		
+<div class="moove-gdpr-button-holder">
+			<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept" >Accept</button>
+						<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 "  aria-label="Reject">Reject</button>
+							<button class="mgbutton moove-gdpr-infobar-settings-btn change-settings-button gdpr-fbo-2 gdpr-settings-btn-style-2" aria-haspopup="dialog" data-href="#moove_gdpr_cookie_modal"  aria-label="Settings">Settings</button>
+			</div>
+<!--  .button-container -->
+		</div>
+		<!-- moove-gdpr-info-bar-content -->
+	</div>
+	<!-- moove-gdpr-info-bar-container -->
+	</aside>
+	<!-- #moove_gdpr_cookie_info_bar -->
+	<!--/copyscapeskip-->
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/wp-admin/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|http://(/%5B/%5D+)?/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://fairwork.oii.ox.ac.uk","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="language-switch-js-extra">
+var switchlang = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","a_value":"10"};
+var globallang = {"de":"32475","en":"32474","es":"32477","hi":"32479","ka":"32481","curr":"e"};
+//# sourceURL=language-switch-js-extra
+</script>
+<script id="language-switch-js-before">
+var taxorpost = "post";
+//# sourceURL=language-switch-js-before
+</script>
+<script data-minify="1" id="language-switch-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellites-fairwork/assets/js/language-switch.js?ver=1792138701"></script>
+<script id="paginated-posts-js-extra">
+var fairworkpagination = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","a_value":"10"};
+var pagination = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","a_value":"10"};
+//# sourceURL=paginated-posts-js-extra
+</script>
+<script id="paginated-posts-js" src="https://fairwork.oii.ox.ac.uk/wp-content/themes/oii-satellites-fairwork/assets/js/paginated-posthsi.js"></script>
+<script id="accordion-js-extra">
+var accordion = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","a_value":"10"};
+//# sourceURL=accordion-js-extra
+</script>
+<script id="accordion-js" src="https://fairwork.oii.ox.ac.uk/wp-admin/js/accordion.min.js?ver=7.1.4"></script>
+<script id="paginated-posts2-js-extra">
+var pagination = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","a_value":"10","security":"78598f5e5e"};
+//# sourceURL=paginated-posts2-js-extra
+</script>
+<script data-minify="1" id="paginated-posts2-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellites-fairwork/assets/js/paginated-posts2.js?ver=1792138701"></script>
+<script data-minify="1" id="carousel-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/assets/js/carousel.js?ver=1792138701"></script>
+<script data-minify="1" id="tablink-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/assets/js/tablink.js?ver=1792138701"></script>
+<script data-minify="1" id="sliding-row-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/assets/js/sliding-row.js?ver=1792138701"></script>
+<script data-minify="1" id="mobile-menu-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/themes/oii-satellite/assets/js/mobile-menu.js?ver=1792138701"></script>
+<script id="moove_gdpr_frontend-js-extra">
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","post_id":"32474","plugin_dir":"https://fairwork.oii.ox.ac.uk/wp-content/plugins/gdpr-cookie-compliance","show_icons":"all","is_page":"","ajax_cookie_removal":"false","strict_init":"2","enabled_default":{"strict":2,"third_party":0,"advanced":0,"performance":0,"preference":0},"geo_location":"false","force_reload":"false","is_single":"1","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"strict\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"},\"advanced\":{\"header\":\"\u003C!-- Global site tag (gtag.js) - Google Analytics --\u003E\\r\\n\u003Cscript data-gdpr async src=\\\"https:\\/\\/www.googletagmanager.com\\/gtag\\/js?id=UA-623501-1\\\"\u003E\u003C\\/script\u003E\\r\\n\u003Cscript data-gdpr\u003E\\r\\n  window.dataLayer = window.dataLayer || [];\\r\\n  function gtag(){dataLayer.push(arguments);}\\r\\n  gtag('js', new Date());\\r\\n\\r\\n  gtag('config', 'UA-7954451-45');\\r\\n\u003C\\/script\u003E\\r\\n\u003C!-- Meta Pixel Code --\u003E\\r\\n\u003Cscript data-gdpr\u003E\\r\\n!function(f,b,e,v,n,t,s)\\r\\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\\r\\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\\r\\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\\r\\nn.queue=[];t=b.createElement(e);t.async=!0;\\r\\nt.src=v;s=b.getElementsByTagName(e)[0];\\r\\ns.parentNode.insertBefore(t,s)}(window, document,'script',\\r\\n'https:\\/\\/connect.facebook.net\\/en_US\\/fbevents.js');\\r\\nfbq('init', '457811569817498');\\r\\nfbq('track', 'PageView');\\r\\n\u003C\\/script\u003E\\r\\n\u003Cnoscript\u003E\u003Cimg height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none\\\"\\r\\nsrc=\\\"https:\\/\\/www.facebook.com\\/tr?id=457811569817498&ev=PageView&noscript=1\\\"\\r\\n\\/\u003E\u003C\\/noscript\u003E\\r\\n\u003C!-- End Meta Pixel Code --\u003E\\r\\n\\r\\n\u003Cscript data-gdpr type=\\\"text\\/javascript\\\"\u003E\\r\\n_linkedin_partner_id = \\\"3067369\\\";\\r\\nwindow._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];\\r\\nwindow._linkedin_data_partner_ids.push(_linkedin_partner_id);\\r\\n\u003C\\/script\u003E\u003Cscript data-gdpr type=\\\"text\\/javascript\\\"\u003E\\r\\n(function(l) {\\r\\nif (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};\\r\\nwindow.lintrk.q=[]}\\r\\nvar s = document.getElementsByTagName(\\\"script\\\")[0];\\r\\nvar b = document.createElement(\\\"script\\\");\\r\\nb.type = \\\"text\\/javascript\\\";b.async = true;\\r\\nb.src = \\\"https:\\/\\/snap.licdn.com\\/li.lms-analytics\\/insight.min.js\\\";\\r\\ns.parentNode.insertBefore(b, s);})(window.lintrk);\\r\\n\u003C\\/script\u003E\\r\\n\u003Cnoscript\u003E\\r\\n\u003Cimg height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\" src=\\\"https:\\/\\/px.ads.linkedin.com\\/collect\\/?pid=3067369&fmt=gif\\\" \\/\u003E\\r\\n\u003C\\/noscript\u003E\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","parent_domain_cookies":["_ga","_fbp","_gid","_gat","__utma","__utmb","__utmc","__utmt","__utmz","_gcl_","_gac_","_fbc"],"wp_consent_api":"false","gdpr_nonce":"108cc1f9e3","gdpr_focus_cb":"false","gdpr_a11y_strict_first":"Turn on %s first to change this setting."};
+//# sourceURL=moove_gdpr_frontend-js-extra
+</script>
+<script data-minify="1" id="moove_gdpr_frontend-js" src="https://fairwork.oii.ox.ac.uk/wp-content/cache/min/11/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=1792138701"></script>
+<script id="moove_gdpr_frontend-js-after">
+var gdpr_c=document.cookie.match(/(?:^|;\s*)moove_gdpr_popup=([^;]*)/);var gdpr_d=gdpr_c?JSON.parse(decodeURIComponent(gdpr_c[1])):{};var gdpr_consent__strict=gdpr_d.strict==="1"?"true":"false";var gdpr_consent__thirdparty=gdpr_d.thirdparty==="1"?"true":"false";var gdpr_consent__advanced=gdpr_d.advanced==="1"?"true":"false";var gdpr_consent__performance=gdpr_d.performance==="1"?"true":"false";var gdpr_consent__preference=gdpr_d.preference==="1"?"true":"false";var _cc=[];if(gdpr_d.strict==="1")_cc.push("strict");if(gdpr_d.thirdparty==="1")_cc.push("thirdparty");if(gdpr_d.advanced==="1")_cc.push("advanced");if(gdpr_d.performance==="1")_cc.push("performance");if(gdpr_d.preference==="1")_cc.push("preference");var gdpr_consent__cookies=_cc.join("|");
+//# sourceURL=moove_gdpr_frontend-js-after
+</script>
+<script id="formidable-js-extra">
+var frm_js = {"ajax_url":"https://fairwork.oii.ox.ac.uk/wp-admin/admin-ajax.php","images_url":"https://fairwork.oii.ox.ac.uk/wp-content/plugins/formidable/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"1c124da155","id":"ID","no_results":"No results match","file_spam":"That file looks like Spam.","calc_error":"There is an error in the calculation in the field with key","empty_fields":"Please complete the preceding required fields before uploading a file.","focus_first_error":"1","include_alert_role":"1","include_resend_email":""};
+var frm_password_checks = {"eight-char":{"label":"Eight characters minimum","regex":"/^.{8,}$/","message":"Passwords require at least 8 characters"},"lowercase":{"label":"One lowercase letter","regex":"#[a-z]+#","message":"Passwords must include at least one lowercase letter"},"uppercase":{"label":"One uppercase letter","regex":"#[A-Z]+#","message":"Passwords must include at least one uppercase letter"},"number":{"label":"One number","regex":"#[0-9]+#","message":"Passwords must include at least one number"},"special-char":{"label":"One special character","regex":"/(?=.*[^a-zA-Z0-9])/","message":"Password is invalid"}};
+var frmCheckboxI18n = {"errorMsg":{"min_selections":"This field requires a minimum of %1$d selected options but only %2$d were submitted."}};
+//# sourceURL=formidable-js-extra
+</script>
+<script id="formidable-js" src="https://fairwork.oii.ox.ac.uk/wp-content/plugins/formidable-pro/js/frm.min.js?ver=6.33.1-7.0-jquery"></script>
+<script id="formidable-js-after">
+window.frm_js.repeaterRowDeleteConfirmation = "Are you sure you want to delete this row?";
+window.frm_js.datepickerLibrary = "default";
+//# sourceURL=formidable-js-after
+</script>
+<script id="captcha-api-js" defer="defer" async="async" src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=frmTurnstile&#038;render=explicit&#038;ver=3"></script>
+<script>
+/*<![CDATA[*/
+__frmDropzone=[{"maxFilesize":67.11,"minFilesize":"","maxFiles":1,"htmlID":"file31","label":"field_ii4ck","uploadMultiple":false,"fieldID":"31","formID":"5","parentFormID":"5","fieldName":"item_meta[31]","mockFiles":[],"defaultMessage":"Drop files here to upload","fallbackMessage":"Your browser does not support drag and drop file uploads.","fallbackText":"Please use the fallback form below to upload your files like in the olden days.","fileTooBig":"That file is too big. It must be less than {{maxFilesize}}MB.","fileTooSmall":"That file is too small. It must be greater than {{minFilesize}}MB.","invalidFileType":"File Upload is invalid","responseError":"Server responded with {{statusCode}} code.","cancel":"Cancel upload","cancelConfirm":"Are you sure you want to cancel this upload?","remove":"Remove file","maxFilesExceeded":"You have uploaded more than 1 file(s).","resizeHeight":null,"resizeWidth":null,"timeout":300000,"checkHoneypot":true},{"maxFilesize":67.11,"minFilesize":"","maxFiles":1,"htmlID":"file38","label":"field_ii4ck8e4994b6e9","uploadMultiple":false,"fieldID":"38","formID":"6","parentFormID":"6","fieldName":"item_meta[38]","mockFiles":[],"defaultMessage":"Drop files here to upload","fallbackMessage":"Your browser does not support drag and drop file uploads.","fallbackText":"Please use the fallback form below to upload your files like in the olden days.","fileTooBig":"That file is too big. It must be less than {{maxFilesize}}MB.","fileTooSmall":"That file is too small. It must be greater than {{minFilesize}}MB.","invalidFileType":"File Upload is invalid","responseError":"Server responded with {{statusCode}} code.","cancel":"Cancel upload","cancelConfirm":"Are you sure you want to cancel this upload?","remove":"Remove file","maxFilesExceeded":"You have uploaded more than 1 file(s).","resizeHeight":null,"resizeWidth":null,"timeout":300000,"checkHoneypot":true},{"maxFilesize":67.11,"minFilesize":"","maxFiles":1,"htmlID":"file51","label":"field_ii4ck571b0c186b","uploadMultiple":false,"fieldID":"51","formID":"8","parentFormID":"8","fieldName":"item_meta[51]","mockFiles":[],"defaultMessage":"Drop files here to upload","fallbackMessage":"Your browser does not support drag and drop file uploads.","fallbackText":"Please use the fallback form below to upload your files like in the olden days.","fileTooBig":"That file is too big. It must be less than {{maxFilesize}}MB.","fileTooSmall":"That file is too small. It must be greater than {{minFilesize}}MB.","invalidFileType":"File Upload is invalid","responseError":"Server responded with {{statusCode}} code.","cancel":"Cancel upload","cancelConfirm":"Are you sure you want to cancel this upload?","remove":"Remove file","maxFilesExceeded":"You have uploaded more than 1 file(s).","resizeHeight":null,"resizeWidth":null,"timeout":300000,"checkHoneypot":true}];/*]]>*/
+</script>
+
+    
+	<!--copyscapeskip-->
+	<!-- V1 -->
+			<dialog id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" open tabindex="-1" aria-modal="true" aria-label="GDPR Settings Screen">
+	<div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+				<button class="moove-gdpr-modal-close" aria-label="Close GDPR Cookie Settings">
+			<span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
+			<span class="gdpr-icon moovegdpr-arrow-close"></span>
+		</button>
+				<div class="moove-gdpr-modal-left-content">
+		
+<div class="moove-gdpr-company-logo-holder">
+	<img src="https://fairwork.oii.ox.ac.uk/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png" alt="Fairwork"   width="350"  height="233"  class="img-responsive" />
+</div>
+<!--  .moove-gdpr-company-logo-holder -->
+		<ul id="moove-gdpr-menu" role="tablist" aria-label="Cookie categories">
+			
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected" role="presentation">
+	<button data-href="#privacy_overview" id="gdpr-tab-privacy_overview" class="moove-gdpr-tab-nav" role="tab" aria-selected="true" aria-controls="privacy_overview" aria-label="Privacy Overview">
+	<span class="gdpr-nav-tab-title">Privacy Overview</span>
+	</button>
+</li>
+
+	<li class="menu-item-strict-necessary-cookies menu-item-off" role="presentation">
+	<button data-href="#strict-necessary-cookies" id="gdpr-tab-strict-necessary-cookies" class="moove-gdpr-tab-nav" role="tab" aria-selected="false" aria-controls="strict-necessary-cookies" tabindex="-1" aria-label="Strictly Necessary Cookies">
+		<span class="gdpr-nav-tab-title">Strictly Necessary Cookies</span>
+	</button>
+	</li>
+
+
+	<li class="menu-item-off menu-item-third_party_cookies" role="presentation">
+	<button data-href="#third_party_cookies" id="gdpr-tab-third_party_cookies" class="moove-gdpr-tab-nav" role="tab" aria-selected="false" aria-controls="third_party_cookies" tabindex="-1" aria-label="YouTube &amp; Vimeo">
+		<span class="gdpr-nav-tab-title">YouTube &amp; Vimeo</span>
+	</button>
+	</li>
+
+	<li class="menu-item-advanced-cookies menu-item-off" role="presentation">
+	<button data-href="#advanced-cookies" id="gdpr-tab-advanced-cookies" class="moove-gdpr-tab-nav" role="tab" aria-selected="false" aria-controls="advanced-cookies" tabindex="-1" aria-label="Analytics">
+		<span class="gdpr-nav-tab-title">Analytics</span>
+	</button>
+	</li>
+
+
+		</ul>
+		
+<div class="moove-gdpr-branding-cnt">
+			<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class='moove-gdpr-branding'>Powered by&nbsp; <span>GDPR Cookie Compliance</span><span class="gdpr-sr-only"> (opens in a new tab)</span></a>
+		</div>
+<!--  .moove-gdpr-branding -->
+		</div>
+		<!--  .moove-gdpr-modal-left-content -->
+		<div class="moove-gdpr-modal-right-content">
+		<div class="moove-gdpr-modal-title">
+			 
+		</div>
+		<!-- .moove-gdpr-modal-ritle -->
+		<div class="main-modal-content">
+
+			<div class="moove-gdpr-tab-content">
+			
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+			<div class="tab-title" role="heading" aria-level="2"><span class="gdpr-tab-title-text">Privacy Overview</span></div>
+		<div class="moove-gdpr-tab-main-content">
+	<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
+		</div>
+	<!--  .moove-gdpr-tab-main-content -->
+
+</div>
+<!-- #privacy_overview -->
+			
+  <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
+        <div class="tab-title" role="heading" aria-level="2"><span class="gdpr-tab-title-text">Strictly Necessary Cookies</span></div>
+    <div class="moove-gdpr-tab-main-content">
+      <ul>
+<li><strong>moove_gdrp_popup -  </strong>a cookie that saves your preferences for cookie settings. Without this cookie, the screen offering you cookie options will appear on every page you visit.</li>
+</ul>
+<p>This cookie remains on your computer for 365 days, but you can adjust your preferences at any time by clicking on the "Cookie settings" link in the website footer.</p>
+<p>Please note that if you visit the Oxford University website, any cookies you accept there will appear on our site here too, this being a subdomain. To control them, you must change your cookie preferences on the main University website.</p>
+      <div class="moove-gdpr-status-bar gdpr-checkbox-disabled checkbox-selected">
+        <div class="gdpr-cc-form-wrap">
+          <div class="gdpr-cc-form-fieldset">
+            <label class="cookie-switch" for="moove_gdpr_strict_cookies">    
+              <input type="checkbox" aria-label="Strictly Necessary Cookies" disabled checked="checked"  value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
+              <span class="cookie-slider cookie-round gdpr-sr" aria-hidden="true" data-text-enable="Enabled" data-text-disabled="Disabled">
+                <span class="gdpr-sr-label">
+                  <span class="gdpr-sr-enable">Enabled</span>
+                  <span class="gdpr-sr-disable">Disabled</span>
+                </span>
+              </span>
+            </label>
+          </div>
+          <!-- .gdpr-cc-form-fieldset -->
+        </div>
+        <!-- .gdpr-cc-form-wrap -->
+      </div>
+      <!-- .moove-gdpr-status-bar -->
+                                              
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+  <!-- #strict-necesarry-cookies -->
+			
+  <div id="third_party_cookies" class="moove-gdpr-tab-main" style="display:none">
+        <div class="tab-title" role="heading" aria-level="2"><span class="gdpr-tab-title-text">YouTube &amp; Vimeo</span></div>
+    <div class="moove-gdpr-tab-main-content">
+      <p>This website uses the following additional cookies from third party websites:</p>
+<ul>
+<li><strong>YouTube</strong> tracks the YouTube videos you watch that are embedded on our webpages.</li>
+<li><strong>Doubleclick</strong> monitors the adverts you see on YouTube. This cookie is automatically added by YouTube, but the OII does not display any adverts.</li>
+<li><strong>Vimeo</strong> tracks the Vimeo videos you watch that are embedded on our webpages</li>
+</ul>
+<p>These cookies will remain on your computer for 365 days, but you can edit your preferences at any time through the "Cookie Settings" in the website footer.</p>
+      <div class="moove-gdpr-status-bar">
+        <div class="gdpr-cc-form-wrap">
+          <div class="gdpr-cc-form-fieldset">
+            <label class="cookie-switch" for="moove_gdpr_performance_cookies">    
+              <input type="checkbox" aria-label="YouTube &amp; Vimeo" value="check" name="moove_gdpr_performance_cookies" id="moove_gdpr_performance_cookies" >
+              <span class="cookie-slider cookie-round gdpr-sr" aria-hidden="true" data-text-enable="Enabled" data-text-disabled="Disabled">
+                <span class="gdpr-sr-label">
+                  <span class="gdpr-sr-enable">Enabled</span>
+                  <span class="gdpr-sr-disable">Disabled</span>
+                </span>
+              </span>
+            </label>
+          </div>
+          <!-- .gdpr-cc-form-fieldset -->
+        </div>
+        <!-- .gdpr-cc-form-wrap -->
+      </div>
+      <!-- .moove-gdpr-status-bar -->
+             
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+  <!-- #third_party_cookies -->
+			
+  <div id="advanced-cookies" class="moove-gdpr-tab-main" style="display:none">
+        <div class="tab-title" role="heading" aria-level="2"><span class="gdpr-tab-title-text">Analytics</span></div>
+    <div class="moove-gdpr-tab-main-content">
+      <p>This website uses Google Tags and Google Analytics to collect anonymised information such as the number of visitors to the site, and the most popular pages. Keeping these cookies enabled helps the OII improve our website.</p>
+<p>Enabling this option will allow cookies from:</p>
+<ul>
+<li><strong>Google Analytics </strong>- tracking visits to the ox.ac.uk and fair.work domains</li>
+<li><strong>YouTube -</strong> owned by Google. The cookie will track the OII videos that you watch on our site. This option will not allow cookies from doubleclick.net, however.</li>
+<li><strong>Meta Pixel -</strong> tracking visits to the fair.work domain.</li>
+<li><strong>LinkedIn</strong> - tracking visits to the fairwork domain.</li>
+<li></li>
+</ul>
+<p>These cookies will remain on your website for 365 days, but you can edit your cookie preferences at any time via the "Cookie Settings" button in the website footer.</p>
+      <div class="moove-gdpr-status-bar">
+        <div class="gdpr-cc-form-wrap">
+          <div class="gdpr-cc-form-fieldset">
+            <label class="cookie-switch" for="moove_gdpr_advanced_cookies">    
+              <input type="checkbox" aria-label="Analytics" value="check" name="moove_gdpr_advanced_cookies" id="moove_gdpr_advanced_cookies" >
+              <span class="cookie-slider cookie-round gdpr-sr" aria-hidden="true" data-text-enable="Enabled" data-text-disabled="Disabled">
+                <span class="gdpr-sr-label">
+                  <span class="gdpr-sr-enable">Enabled</span>
+                  <span class="gdpr-sr-disable">Disabled</span>
+                </span>
+              </span>
+            </label>
+          </div>
+          <!-- .gdpr-cc-form-fieldset -->
+        </div>
+        <!-- .gdpr-cc-form-wrap -->
+      </div>
+      <!-- .moove-gdpr-status-bar -->
+         
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+  <!-- #advanced-cookies -->
+									
+			</div>
+			<!--  .moove-gdpr-tab-content -->
+		</div>
+		<!--  .main-modal-content -->
+		<div class="moove-gdpr-modal-footer-content">
+			<div class="moove-gdpr-button-holder">
+						<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Enable All">Enable All</button>
+								<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Save Settings">Save Settings</button>
+				</div>
+<!--  .moove-gdpr-button-holder -->
+		</div>
+		<!--  .moove-gdpr-modal-footer-content -->
+		</div>
+		<!--  .moove-gdpr-modal-right-content -->
+
+		<div class="moove-clearfix"></div>
+
+	</div>
+	<!--  .moove-gdpr-modal-content -->
+	</dialog>
+	<!-- #moove_gdpr_cookie_modal -->
+	<!--/copyscapeskip-->
+	
+	
+  </body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1793297483 -->

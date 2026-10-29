@@ -1,0 +1,1367 @@
+{
+ "row": "turkopticon",
+ "address": "Turkopticon",
+ "addresses": [
+  "Turkopticon"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the PDF's extracted text, the Wikipedia response summary, or the card's title and snippet for the unreachable cards; 59/59 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 turkopticon.net, the operator's home page; B2 the ACM Digital Library page of the CHI 2013 paper, unreachable; B3 SSRN, the 2008–2015 lessons paper, unreachable; B4 a Reddit thread on the expansion, unreachable; B5 the CHI 2013 paper as a PDF on the course site crowdsourcing-class.org; B6 the operator's LinkedIn article of 4 September 2026; B7 a one-minute video, title only); 'own_page', the census's own pages that T did not surface (B8 the FAQ of 18 July 2023; B9 the announcement of the expansion; the census's third own page, the home page, is card B1, byte-identical, carried once as a card); 'wikipedia', no article (B10). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B8, B9); mission and values (B1); the review tool (B3, B5, B8); origin and founders (B2, B5, B8); requesters (B3, B5, B8); worker invisibility and human computation (B5); moderation, accountability, protection from retaliation (B5, B8); the design's compromise and limits (B5); reach and use (B5, B9); operator and organization (B8, B9); independence from Amazon and a working relationship with it (B8, B9); organizing work on Mechanical Turk (B9); the expansion to all data workers (B4, B6, B9); Mechanical Turk's closure and after (B6); data, research and consent (B8); access (B8); versions and dates (B8); reception, the encyclopedia (B10). The CHI 2013 paper is one work in two cards (B2, the ACM page, unreachable; B5, the PDF): one lineage per claim, B5's text carrying it. The census's mission, self_description, operator, founders, amazon, founded, gains, unit, unit_fair, pay_hr, directs, moderation, api, api_permission, api_limit, api_rate, license, limit_research, limit_anonymized, faq_version, transition, method_organizing, reinstatement, expansion, campaign and still_used quotes restate B1, B8 and B9 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1, B8, B9 the census's saved copies (B1 also refetched as the card, byte-identical); B2-403.html, B3-403.html the bot-check responses; B4-try1.html the Reddit search shell; B5.pdf the paper with B5.txt and B5-layout.txt by pdftotext; B6-try1.html the LinkedIn company page from which the article's URL was taken; B10 .wiki, .html, -variant.wiki, -search.html raw Wikipedia responses with B10.txt a summary of codes and notices; T1-turkopticon-aio-20261029.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page turkopticon--home, byte-identical)",
+   "card": "turkopticon. — turkopticon.",
+   "url": "https://turkopticon.net/",
+   "kind": "Overview card (the operator's home page: mission, vision, values); the census's own page turkopticon--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B1.html",
+     "sha256": "0d6a298b57985d706e5887fbf9a4951be8466da8f1d8ce2ee6209a6554d97ed9"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B1.txt",
+     "sha256": "e0c9015cfa49f609128805557ba91deb611886222b10a8919a11861592b454fb"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:53Z",
+    "http": 200,
+    "url": "https://turkopticon.net/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B1.html",
+    "raw_sha256": "0d6a298b57985d706e5887fbf9a4951be8466da8f1d8ce2ee6209a6554d97ed9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "turkopticon--home",
+     "sha256": "0d6a298b57985d706e5887fbf9a4951be8466da8f1d8ce2ee6209a6554d97ed9",
+     "read": "2026-10-29",
+     "http": "200",
+     "fetched": "2026-10-29T21:49:05Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('Turkopticon', 'Our Organization is led by data workers')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site ('turkopticon.') and snippet (the page's mission sentence, verbatim). The fetch is byte-identical to the census's saved copy turkopticon--home (sha256 0d6a298b…, read the same day), so the card and the census's own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes. The page carries no date.",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "turkopticon.",
+   "card_snippet": "Turkopticon's mission is to organize data workers to build collective power, improve working conditions, and hold platforms, companies, and institutions account...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "ACM Digital Library — Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+   "url": "https://dl.acm.org/doi/10.1145/2470654.2470742",
+   "kind": "Overview card (the founders' CHI 2013 paper at the ACM Digital Library; unreachable)",
+   "files": {
+    "B2-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B2-403.html",
+     "sha256": "1044e8ee0ae1f9990ec03022354dd3399f8f6758ed4d7b07b8de9fba069c867e"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:01Z",
+      "url": "https://dl.acm.org/doi/10.1145/2470654.2470742",
+      "http": 403,
+      "sha256": "1044e8ee0ae1f9990ec03022354dd3399f8f6758ed4d7b07b8de9fba069c867e",
+      "result": "a bot check ('<title>Just a moment...</title>', Cloudflare challenge page) refusing the census agent; not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Turkopticon: interrupting worker invisibility in amazon mechanical turk\" dl.acm.org doi 10.1145/2470654.2470742' (the DOI confirmed by an api.openalex.org result for doi:10.1145/2470654.2470742)"
+    ],
+    "note": "The Digital Library page refused the honest agent with a bot check (HTTP 403). Recorded as unreachable; the card's title and snippet stand as its only text. The same paper's text is card 5's (B5), fetched from crowdsourcing-class.org, the card the composition itself surfaced; the paper is one work in two cards, one lineage."
+   },
+   "names_operator": "yes (the paper's title names the entity; the authors are the founders, not on the card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+   "card_snippet": "Turkopticon: interrupting worker invisibility in amazon mechanical turk * CHI * CHI '13 * Turkopticon: interrupting worker invisibility in amazon mechanical tur...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "SSRN eLibrary — Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015 by M. Six Silberman, Lilly Irani :: SSRN",
+   "url": "https://papers.ssrn.com/abstract=2729498",
+   "kind": "Overview card (the founders' paper on running Turkopticon, 2008–2015, at SSRN; unreachable)",
+   "files": {
+    "B3-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B3-403.html",
+     "sha256": "71f0ccaffa1ef31cd01aa522b481dda86339f6a7aefee0de0551fb45fc472695"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:02Z",
+      "url": "https://papers.ssrn.com/abstract=2729498 (redirected to https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2729498)",
+      "http": 403,
+      "sha256": "71f0ccaffa1ef31cd01aa522b481dda86339f6a7aefee0de0551fb45fc472695",
+      "result": "a bot check ('<title>Just a moment...</title>', Cloudflare challenge page) refusing the census agent; not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015\" SSRN' (https://papers.ssrn.com/abstract=2729498)"
+    ],
+    "note": "SSRN refused the honest agent with a bot check (HTTP 403). Recorded as unreachable; the card's title and snippet stand as its only text. Copies of the paper on other hosts (the author's site) were found by the search and not fetched: fetching them would be a route around the card's refusal."
+   },
+   "names_operator": "yes (the founders, M. Six Silberman and Lilly Irani, in the title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015 by M. Six Silberman, Lilly Irani :: SSRN",
+   "card_snippet": "Context: Amazon Mechanical Turk (AMT) allows independent contractor workers to complete tasks for requesters who can arbitrarily reject and withhold pay for sub...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Reddit — Turkopticon is expanding its mission! : r/mturk - Reddit",
+   "url": null,
+   "kind": "Overview card (a thread in r/mturk; unreachable)",
+   "files": {
+    "B4-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B4-try1.html",
+     "sha256": "754109eccf1a1f100761ca231b6849a24f03c8f862fb8f0662ec2f7a3d944fc9"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:59Z",
+      "url": "https://www.reddit.com/r/mturk/search/?q=%22Turkopticon%20is%20expanding%22&restrict_sr=1",
+      "http": 200,
+      "sha256": "754109eccf1a1f100761ca231b6849a24f03c8f862fb8f0662ec2f7a3d944fc9",
+      "result": "the site's script shell (<title>Reddit</title>), no results text and no thread"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Turkopticon is expanding its mission\" r/mturk reddit' (no reddit.com result)",
+     "WebSearch 'site:reddit.com mturk \"Turkopticon is expanding its mission\"' (no reddit.com result)",
+     "WebSearch 'Turkopticon expanding mission data workers multiple platforms reddit mturk Krystal Kauffman' (no reddit.com result)"
+    ],
+    "note": "The thread's URL could not be found: three searches on the card's title returned no reddit.com link, and the subreddit's search page serves an unauthenticated fetch a script shell without results. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (the snippet names the entity, not its operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "Turkopticon is expanding its mission! : r/mturk - Reddit",
+   "card_snippet": "Turkopticon Expansion: Turkopticon is broadening its focus to advocate for data workers across multiple platforms, not solely Amazon Mechanical Turk.",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Crowdsourcing and Human Computation — Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+   "url": "http://crowdsourcing-class.org/readings/downloads/ethics/turkopticon.pdf",
+   "kind": "Overview card (the founders' CHI 2013 paper, PDF, on the reading list of the course 'Crowdsourcing and Human Computation'; Irani and Silberman, CHI 2013, Paris, pp. 611–620)",
+   "files": {
+    "B5.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5.pdf",
+     "sha256": "c52d284c61b5afa1a1d458e2ad8b210a6a0dd9d158865ebf58b93380d4dea86f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5.txt",
+     "sha256": "bc527298181c583748c60ebfe15bfc9fe24d7b10efc0237218d3db04f786d4e8"
+    },
+    "B5-layout.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5-layout.txt",
+     "sha256": "6dbd4a275b8b6258c8c51eb72f30c70a61c45af1044a4d4f34d94937d83c935d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:33:02Z",
+    "http": 200,
+    "url": "http://crowdsourcing-class.org/readings/downloads/ethics/turkopticon.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5.pdf",
+    "raw_sha256": "c52d284c61b5afa1a1d458e2ad8b210a6a0dd9d158865ebf58b93380d4dea86f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5.txt",
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B5-layout.txt"
+    ],
+    "searches": [
+     "WebSearch 'crowdsourcing-class.org Turkopticon interrupting worker invisibility in amazon mechanical turk pdf' (no crowdsourcing-class.org result)",
+     "WebSearch 'site:crowdsourcing-class.org turkopticon' (no crowdsourcing-class.org result)",
+     "WebSearch '\"Crowdsourcing and Human Computation\" class readings turkopticon.pdf Callison-Burch' (no crowdsourcing-class.org result)"
+    ],
+    "note": "The card's site is the name of the course at crowdsourcing-class.org; no search returned the file, and the URL was tried on the course's readings path. The fetched PDF is the card's: its section 'TURKOPTICON: THE SYSTEM' opens with the card's snippet verbatim ('Turkopticon is a browser extension for Firefox and Chrome that augments workers’ view of their AMT HIT lists with information other work…'). Text by pdftotext (B5.txt, reading order; B5-layout.txt, layout)."
+   },
+   "names_operator": "yes (the authors: Lilly C Irani, UC Irvine; M. Six Silberman, Bureau of Economic Interpretation)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 5
+    }
+   ],
+   "id": "B5",
+   "card_title": "Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+   "card_snippet": "TURKOPTICON: THE SYSTEM Turkopticon is a browser extension for Firefox and Chrome that augments workers' view of their AMT HIT lists with information other work...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "LinkedIn — Turkopticon is Still Here!",
+   "url": "https://www.linkedin.com/pulse/turkopticon-still-here-turkopticon-koouc",
+   "kind": "Overview card (the operator's article on LinkedIn, 'Published Sep 4, 2026', signed '–The Turkopticon Team')",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B6.html",
+     "sha256": "cde6cf74fac8ae6dfef771e755210d7cf6076db1bb88896af542a25e815378aa"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B6.txt",
+     "sha256": "7e6a81ccbe5c343d66f0ffc821a9c37bf894ea9606d6007e6979021055b00a11"
+    },
+    "B6-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B6-try1.html",
+     "sha256": "3dbfca06674fc25a3781a7af0cec613f7eb15ec41f473febcba3fdaefb976800"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:34:28Z",
+    "http": 200,
+    "url": "https://www.linkedin.com/pulse/turkopticon-still-here-turkopticon-koouc",
+    "raw": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B6.html",
+    "raw_sha256": "cde6cf74fac8ae6dfef771e755210d7cf6076db1bb88896af542a25e815378aa",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B6.txt"
+    ],
+    "tries": [
+     {
+      "at": "2026-10-29T22:34:00Z",
+      "url": "https://www.linkedin.com/company/turkopticon/",
+      "http": 200,
+      "sha256": "3dbfca06674fc25a3781a7af0cec613f7eb15ec41f473febcba3fdaefb976800",
+      "result": "the operator's LinkedIn company page (guest view), whose feed carries the post 'Turkopticon is Still Here!' (datePublished 2026-09-04) and the article's URL; saved as B6-try1.html, not ledgered"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Turkopticon is Still Here\" LinkedIn' (no linkedin.com result)",
+     "WebSearch 'site:linkedin.com \"Turkopticon is Still Here\"' (no linkedin.com result)",
+     "WebSearch 'Turkopticon LinkedIn article \"Still Here\" Amazon Mechanical Turk platform landscape organizing data workers' (no linkedin.com result)"
+    ],
+    "note": "No search returned the article; its URL was taken from the operator's own company page on LinkedIn, fetched with the census agent. The article's opening sentence is the card's snippet ('For many workers, Amazon Mechanical Turk has been a familiar part of the platform landscape for years. With Amazon …'); its <title> is the card's title."
+   },
+   "names_operator": "yes ('Turkopticon', '–The Turkopticon Team')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 6
+    }
+   ],
+   "id": "B6",
+   "card_title": "Turkopticon is Still Here!",
+   "card_snippet": "Organizing data workers to hold platforms… * For many workers, Amazon Mechanical Turk has been a familiar part of the platform landscape for years. With Amazon ...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 7 (video)",
+   "card": "YouTube·Platform Cooperativism — Lilly Irani | Community Voices",
+   "url": null,
+   "kind": "Overview card (a video, 1m, on the Platform Cooperativism channel; title only)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch '\"Lilly Irani\" \"Community Voices\" Platform Cooperativism YouTube' (no youtube.com result)",
+     "WebSearch 'youtube \"Lilly Irani | Community Voices\"' (no youtube.com result)",
+     "(the third search on the founders' names, 'Turkopticon expanding mission … Krystal Kauffman', returned no video either)"
+    ],
+    "note": "A video card is admitted through its title and snippet (§3.1(a)). Its URL could not be found and the card carries no snippet; its title names a founder and says nothing of the entity, so it yields no field claim. Recorded as title-only."
+   },
+   "names_operator": "no (the title names a founder, Lilly Irani, not the entity)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "turkopticon-aio-20261029",
+     "card": 7
+    }
+   ],
+   "id": "B7",
+   "card_title": "Lilly Irani | Community Voices",
+   "card_snippet": null,
+   "card_note": "video, 1m"
+  },
+  {
+   "origin": "own_page",
+   "role": "the census own page turkopticon--faq (not surfaced by T)",
+   "card": "Turkopticon — Turkopticon FAQ Version July 18 2023",
+   "url": "https://turkopticon.net/faq/index.html",
+   "kind": "own page (the FAQ, version of 18 July 2023, a rewrite of the 2014 FAQ), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B8.html",
+     "sha256": "d46d655396550f62dd6818bb854b1fe29659f3c636907ad47f87045395af4fbf"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B8.txt",
+     "sha256": "0dbadfcba6a240146e3eb5d4ac7c6c8a8067829583bc69b5504cf32c56d811c7"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "turkopticon--faq",
+    "read": "2026-10-29",
+    "http": "200",
+    "fetched": "2026-10-29T21:49:06Z",
+    "url": "https://turkopticon.net/faq/index.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B8.html",
+    "raw_sha256": "d46d655396550f62dd6818bb854b1fe29659f3c636907ad47f87045395af4fbf",
+    "census_sha256": "d46d655396550f62dd6818bb854b1fe29659f3c636907ad47f87045395af4fbf",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.html.gz (gunzipped) and turkopticon--faq.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B8.txt"
+    ],
+    "check": "a fetch at 2026-10-29T22:31:53Z with the census agent returned the same bytes (HTTP 200, sha256 d46d6553…); that copy was not kept"
+   },
+   "names_operator": "yes ('Turkopticon is maintained by the committee and volunteers from Tech Workers Coalition'; the founders)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T.",
+   "surfaced_by_T": [],
+   "id": "B8"
+  },
+  {
+   "origin": "own_page",
+   "role": "the census own page turkopticon--whats-next (not surfaced by T)",
+   "card": "Turkopticon blog — Breaking News: What is Next for Turkopticon?",
+   "url": "https://blog.turkopticon.net/?p=3600",
+   "kind": "own page (the operator's announcement of the expansion, by Krystal Kauffman, undated), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B9.html",
+     "sha256": "be82055a7a38f37b2082a83e6d70e2c2523512cb494e62370b1b5aeb01cdd24e"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B9.txt",
+     "sha256": "532748ad9c261f87760fb9036c0e03878f4fe2db9e59b59f706dba770c9b32bd"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "turkopticon--whats-next",
+    "read": "2026-10-29",
+    "http": "200",
+    "fetched": "2026-10-29T21:49:07Z",
+    "url": "https://blog.turkopticon.net/?p=3600",
+    "final_url": "https://blog.turkopticon.net/?page_id=3600",
+    "raw": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B9.html",
+    "raw_sha256": "be82055a7a38f37b2082a83e6d70e2c2523512cb494e62370b1b5aeb01cdd24e",
+    "census_sha256": "be82055a7a38f37b2082a83e6d70e2c2523512cb494e62370b1b5aeb01cdd24e",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.html.gz (gunzipped) and turkopticon--whats-next.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B9.txt"
+    ]
+   },
+   "names_operator": "yes ('Turkopticon staff', 'by Krystal Kauffman', the founders)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling; not surfaced by T. The saved copy is intact (its sha256 matches the census's record), so it was copied and not refetched. The page carries no date; 'The last five years' after the 2019 transition places it in or after 2024.",
+   "surfaced_by_T": [],
+   "id": "B9"
+  },
+  {
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Turkopticon (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Turkopticon&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10.wiki",
+     "sha256": "fba5dc819a28952b8a1a89f165936b833c4e91cd53d31ffb40c915aebc4bd47a"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10.html",
+     "sha256": "c20fd5af1c5614424fb8860b4d364af21ca180ed76d2c2fe369c2236e6c7759e"
+    },
+    "B10-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10-variant.wiki",
+     "sha256": "e037a307b47446aa829e939deace256748fb521c7518f81bee65596286b41858"
+    },
+    "B10-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10-search.html",
+     "sha256": "c7c8be40308af241d4ecc9be3cce8b2de66e4328e4dd9299f9f4d1f9fa9c6a40"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10.txt",
+     "sha256": "4c2663cbea5fff9f7e2e2852438ecb2447a455dbbb7ec54a76a5d1652897fd23"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:41Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Turkopticon&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:31:42Z",
+      "url": "https://en.wikipedia.org/wiki/Turkopticon?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:31:42Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=TurkOpticon&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:31:45Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Turkopticon%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'Results 1 – 4 of 4': Amazon Mechanical Turk; Lilly Irani; Crowdsourcing; Human-based computation (articles that mention the name; none is an article on it)"
+     }
+    ],
+    "raw_sha256": "c20fd5af1c5614424fb8860b4d364af21ca180ed76d2c2fe369c2236e6c7759e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/turkopticon-20261029/B10.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect. Four articles mention the name (Amazon Mechanical Turk, Lilly Irani, Crowdsourcing, Human-based computation); they are articles on other entities and are recorded, not ledgered.",
+   "surfaced_by_T": [],
+   "id": "B10"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Our Mission",
+   "quote": "Turkopticon’s mission is to organize data workers to build collective power, improve working conditions, and hold platforms, companies, and institutions accountable to the labor they rely on.",
+   "claim": "the operator's mission: to organize data workers to build collective power, improve conditions, and hold platforms, companies and institutions accountable to the labor they rely on",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "mission and values: organizing data workers",
+   "date": "undated (the page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0c9015cfa49f609…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Vision",
+   "quote": "We envision Turkopticon as a worker-led hub where data workers can find support, build power, and negotiate better working conditions.",
+   "claim": "its vision: a worker-led hub where data workers find support, build power and negotiate better conditions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission and values: organizing data workers",
+   "date": "undated (the page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0c9015cfa49f609…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Our Values: Worker-Led",
+   "quote": "Our Organization is led by data workers, ensuring our advocacy, resources, and support reflect the real and current conditions workers face.",
+   "claim": "led by data workers",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission and values: organizing data workers",
+   "date": "undated (the page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0c9015cfa49f609…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Our Values: Horizontal Structure",
+   "quote": "We are committed to a structure where leadership is shared, voices are valued, and decisions are made with transparency and care.",
+   "claim": "a horizontal structure: shared leadership, transparent decisions",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission and values: organizing data workers",
+   "date": "undated (the page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0c9015cfa49f609…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet (ACM Digital Library unreachable: HTTP 403, bot check)",
+   "quote": "Turkopticon: interrupting worker invisibility in amazon mechanical turk * CHI * CHI '13",
+   "claim": "the founders' paper on the entity was published at CHI 2013",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders",
+   "date": "2013 (CHI '13, on the card)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title (SSRN unreachable: HTTP 403, bot check)",
+   "quote": "Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015 by M. Six Silberman, Lilly Irani",
+   "claim": "the founders' account of the entity as an employer reputation system they operated, 2008–2015",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "undated on the card (covers 2008–2015)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (SSRN unreachable)",
+   "quote": "Context: Amazon Mechanical Turk (AMT) allows independent contractor workers to complete tasks for requesters who can arbitrarily reject and withhold pay for sub",
+   "claim": "the context: on AMT, requesters can arbitrarily reject the work of independent-contractor workers and withhold pay",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "requesters: not employers in law, in power over workers",
+   "date": "undated on the card (covers 2008–2015)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F8": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet (Reddit unreachable)",
+   "quote": "Turkopticon is expanding its mission! … Turkopticon Expansion: Turkopticon is broadening its focus to advocate for data workers across multiple platforms, not solely Amazon Mechanical Turk.",
+   "claim": "a thread in r/mturk reports the expansion: advocacy for data workers across platforms, not only Mechanical Turk",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the expansion to all data workers",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F9": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "We then present Turkopticon, an activist system that allows workers to publicize and evaluate their relationships with employers.",
+   "claim": "the founders define it as an activist system that lets workers publicize and evaluate their relationships with employers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s2–3",
+   "quote": "This paper offers an analysis of Amazon Mechanical Turk, a popular human computation system, as a site of technically mediated worker-employer relations. We argue that human computation currently relies on worker invisibility.",
+   "claim": "the founders: AMT is a site of technically mediated worker–employer relations, and human computation relies on worker invisibility",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "worker invisibility and human computation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "As a common infrastructure, Turkopticon also enables workers to engage one another in mutual aid.",
+   "claim": "as common infrastructure it enables mutual aid among workers",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "worker invisibility and human computation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "TURKOPTICON: THE SYSTEM ¶1 (the card's snippet)",
+   "quote": "Turkopticon is a browser extension for Firefox and Chrome that augments workers’ view of their AMT HIT lists with information other workers have provided about employers (“Requesters” in AMT parlance).",
+   "claim": "a browser extension that adds to workers' AMT HIT lists what other workers report about employers, 'Requesters' in AMT's term",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "TURKOPTICON: THE SYSTEM ¶2",
+   "quote": "Turkopticon collects quantitative ratings from reviewers on four qualities that we hypothesized would be relevant based on the Workers’ Bill of Rights survey. … Communicativity: How responsive has this requester been to communications or concerns you have raised? … Promptness: How promptly has this requester approved your work and paid?",
+   "claim": "four ratings, chosen from the Workers' Bill of Rights survey: communicativity, generosity, fairness, promptness",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "TURKOPTICON: THE SYSTEM ¶3",
+   "quote": "Turkopticon is named for panopticon, a prison surveillance design most famously analyzed by Foucault.",
+   "claim": "the name is the panopticon's",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "METHOD AND OUR STANCE ¶1",
+   "quote": "Turkopticon grew out of a tactical media art project intended to raise questions about the ethics of human computation.",
+   "claim": "it grew out of a tactical media art project on the ethics of human computation",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "METHOD AND OUR STANCE ¶2; Workers' 'Bill of Rights'",
+   "quote": "67 respondents answered our open-ended question survey about what they would desire as a “Workers’ Bill of Rights.” … 35 workers felt that their work was regularly rejected unfairly or arbitrarily",
+   "claim": "the founders' survey: 67 workers on a 'Workers' Bill of Rights', 35 of whom felt their work was regularly rejected unfairly or arbitrarily",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "requesters: not employers in law, in power over workers",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Employing Humans-as-a-Service ¶3",
+   "quote": "Once a worker submits work, the employer can choose whether to pay for it. This discretion allows employers to reject work that does not meet their needs, but also enables wage theft.",
+   "claim": "the employer's discretion to pay enables wage theft",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "requesters: not employers in law, in power over workers",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "BACKGROUND ¶2",
+   "quote": "Amazon legally defines the workers as contractors subject to laws designed for freelancers and consultants; this framing attempts to strip workers of minimum wage requirements in their countries.",
+   "claim": "Amazon defines the workers as contractors, a framing that strips them of minimum wage",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "worker invisibility and human computation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Humans-as-a-service ¶1",
+   "quote": "When Jeff Bezos launched AMT to an MIT audience in 2006, he announced: “You’ve heard of software-as-a-service. Now this is human-as-a-service”",
+   "claim": "Bezos launched AMT as 'human-as-a-service' (2006)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "worker invisibility and human computation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013); the statement 2006",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Comment Moderation",
+   "quote": "Any Turkopticon user can flag a review. A moderator has to add a second flag to hide the review from the site.",
+   "claim": "a review is hidden only when a moderator adds a second flag",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "moderation, accountability and protection from retaliation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Reputation without Retribution",
+   "quote": "Turkopticon attempts to prevent employers from retaliating against workers writing reviews by obfuscating workers’ email addresses.",
+   "claim": "reviewers' email addresses are obfuscated against employers' retaliation",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "moderation, accountability and protection from retaliation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Tactical Quantification",
+   "quote": "Tactical quantification is a use of numbers not because they are more accurate, rational, or optimizable [10], but because they are partial, fast, and cheap – a way of making do in highly constrained circumstances.",
+   "claim": "the founders' term for the ratings: tactical quantification, numbers used because partial, fast and cheap",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the design's compromise and its stated limits",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Tactical Quantification ¶4",
+   "quote": "In this sense, Turkopticon is not an expression of our own values, or even the values of the users we interviewed, but a compromise between those values and the weight of the existing infrastructural norms that torqued our design decisions",
+   "claim": "its design is a compromise with AMT's infrastructural norms, not its makers' or its users' values",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the design's compromise and its stated limits",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Tactical Quantification ¶3",
+   "quote": "The “generosity” category, for example, has strained under the weight of representing such a subjective assessment.",
+   "claim": "the 'generosity' rating strained under a subjective assessment",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the design's compromise and its stated limits",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "THE AMBIVALENCE OF SUCCESS IN ACTIVIST TECHNOLOGIES ¶2",
+   "quote": "However, Turkopticon’s existence sustains and legitimizes AMT by helping safeguard its workers.",
+   "claim": "by safeguarding its workers, it sustains and legitimizes AMT",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the design's compromise and its stated limits",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "THE AMBIVALENCE OF SUCCESS ¶2",
+   "quote": "Ideally, however, we hoped that Amazon would change its systems design to include worker safeguards. This has not happened. Instead, Turkopticon has become a piece of software that workers rely on funded through subsidies from academic research – an unsustainable foundation for such a critical tool.",
+   "claim": "Amazon did not build worker safeguards; the tool rests on academic subsidies, an unsustainable foundation",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the design's compromise and its stated limits",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction (first page, right column)",
+   "quote": "The system receives 100,000 page views a month and has become a staple tool for many AMT workers, installed over 7,000 times at time of writing.",
+   "claim": "100,000 page views a month; installed over 7,000 times (2013)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and use",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "For many workers, Amazon Mechanical Turk has been a familiar part of the platform landscape for years. With Amazon announcing that MTurk will close on September 30, 2026, we know many workers may be wondering what that means for Turkopticon.",
+   "claim": "Amazon announced that MTurk would close on 30 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Mechanical Turk's closure and after",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶2–3",
+   "quote": "The short answer is that we are still here . Turkopticon may have started as a resource for MTurk workers, but our work has changed and expanded over the years. As data work moved onto more platforms, we did too.",
+   "claim": "it continues after MTurk: started for MTurk workers, it moved with data work onto more platforms",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Mechanical Turk's closure and after",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "Today, Turkopticon supports and advocates for platform data workers wherever they are working. That includes people doing AI training and evaluation, data annotation, surveys, transcription, content moderation, and other forms of platform-based data work.",
+   "claim": "it supports and advocates for platform data workers wherever they work, AI training and evaluation, annotation, transcription and content moderation among them",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the expansion to all data workers",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "Turkopticon will continue to provide support, share information and resources, listen to workers’ concerns, and advocate for better treatment across the platform data work industry. We also continue working to build relationships with platforms so that workers’ concerns can be heard directly and we can push for fairer policies, clearer communication, and better treatment when problems arise.",
+   "claim": "support, information, advocacy across the industry, and relationships with platforms to push for fairer policies",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "Mechanical Turk's closure and after",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶8",
+   "quote": "Turkopticon isn’t tied to one platform. We’re here for the workers, and that isn’t changing.",
+   "claim": "not tied to one platform",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Mechanical Turk's closure and after",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "Platforms open and close. Work disappears. Workers can be suspended or deactivated with little or no explanation.",
+   "claim": "platforms open and close; workers are suspended or deactivated with little or no explanation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Mechanical Turk's closure and after",
+   "date": "2026-09-04 (Published Sep 4, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7e6a81ccbe5c343d…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.1. What is Turkopticon?",
+   "quote": "Turkopticon used to be a volunteer run software project and now it is a worker-run organizing and advocacy project, and software is one of the things we do.",
+   "claim": "the FAQ: once a volunteer-run software project, now a worker-run organizing and advocacy project, software one of the things it does",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a worker-run organizing and advocacy project",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.3. Who organizes Turkopticon?",
+   "quote": "The committee is made up of Alex, Ashley, Brook, Krystal, Clearblue, Phil, Krista, with other dedicated Turk workers. Turkopticon is maintained by the committee and volunteers from Tech Workers Coalition.",
+   "claim": "organized by a committee of Turk workers and maintained with volunteers from Tech Workers Coalition",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator and organization",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.3; 1.4",
+   "quote": "Turkopticon was founded by Lilly Irani and Six Silberman when they were kids. … Lilly and Six had worked as programmers and wanted to support Turkers in finding better work.",
+   "claim": "founded by Lilly Irani and Six Silberman, programmers who wanted to help Turkers find better work",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and founders",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.5. Is Turkopticon associated with Amazon?",
+   "quote": "1.5. Is Turkopticon associated with Amazon? No. It is not and it has never been.",
+   "claim": "not associated with Amazon, now or ever",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "independence from Amazon, and a working relationship with it",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.6. Why was Turkopticon built?",
+   "quote": "Turkopticon started in 2008 as a class project to raise awareness about the unaccountability of Mechanical Turk requesters. We saw requesters and researchers celebrating how cheaply they could get work done on Mechanical Turk and we felt this was wrong.",
+   "claim": "begun in 2008 as a class project against the unaccountability of requesters, after seeing them celebrate how cheaply work could be had",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and founders",
+   "date": "2023-07-18 (FAQ version); the event 2008",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "1.6",
+   "quote": "We didn't understand why Amazon didn't build in a requester reputation system, like Amazon Marketplace and eBay have. Building Turkopticon was our way of making this point.",
+   "claim": "built to make the point that Amazon had no requester reputation system, as Amazon Marketplace and eBay have",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "2.2. What are the requester \"attributes\"",
+   "quote": "What are the requester \"attributes\" (\"comm\", \"pay\", \"fair\", and \"fast\")? … fairness (\"fair\"): How fair has this requester been in approving or rejecting your work? … promptness (\"fast\"): How promptly has this requester approved your work and paid? … We have added a pay/hr attribute in place of the 1-5 scale rating for pay/generosity.",
+   "claim": "four requester attributes, 'comm', 'pay', 'fair' and 'fast', with pay/hr replacing the 1–5 generosity scale",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the review tool: workers rate the requesters they work for",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "2.6. Can I delete my review?",
+   "quote": "The main reason we don't allow deletion of reviews is accountability.",
+   "claim": "reviews cannot be deleted, for accountability",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "moderation, accountability and protection from retaliation",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "6.1",
+   "quote": "While requesters are not employers in the legal sense, requesters are in a position of power over workers by virtue of making payment decisions that may have significant practical consequences.",
+   "claim": "requesters are not employers in law, but hold power over workers through payment decisions",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "requesters: not employers in law, in power over workers",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "2.10. What is a flag",
+   "quote": "If a review has at least two flags, and at least one is from a moderator, the review is hidden.",
+   "claim": "two flags, one a moderator's, hide a review",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "moderation, accountability and protection from retaliation",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "4.1; 4.3–4.5",
+   "quote": "The Turkopticon API is a PHP file that accepts Mechanical Turk requester IDs and returns the information about those requesters available in the Turkopticon database. … It has not been tested with more than a hundred or so, however. … 4.4. Do I need permission to use it? No. … If you call the API more than once a second, you will receive an error message.",
+   "claim": "a public API returns what the database holds on requester IDs; no permission needed; rate-limited; untested beyond about a hundred IDs",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the API and the licence",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "4.6. Can I see the code?",
+   "quote": "It is licensed under the GNU Affero General Public License .",
+   "claim": "the code is under the GNU AGPL",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the API and the licence",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "7.3",
+   "quote": "we do not use Turkopticon data to produce research. We have published papers about Turkopticon, but we do not publish papers using Turkopticon data. Use of Turkopticon is not implicit consent to being a research subject.",
+   "claim": "its data is not used for research; papers are about it, not from its data; use is not consent to being a research subject",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "data, research and consent",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "7.3",
+   "quote": "Thus Turkopticon's first responsibility is to the community of workers that relies on it.",
+   "claim": "its first responsibility is to the workers who rely on it",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "data, research and consent",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "7.2",
+   "quote": "We have not done this so far, although we might be willing to consider it. We would consult publicly with workers first",
+   "claim": "no anonymized extract released; workers would be consulted publicly first",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "data, research and consent",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "3.3",
+   "quote": "A version of Turkopticon posted in 2010–2011 did collect anonymized data automatically. This code was written by an economist who wanted to make actual wage data available to Turkers, but it was removed because of privacy concerns.",
+   "claim": "a 2010–2011 version collected anonymized wage data and was removed for privacy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data, research and consent",
+   "date": "2023-07-18 (FAQ version); the event 2010–2011",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "title; preamble",
+   "quote": "Turkopticon FAQ Version July 18 2023 … This document is a rewrite of the 2014 FAQ , which it replaces.",
+   "claim": "the FAQ of 18 July 2023 replaces the 2014 FAQ",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates of the record",
+   "date": "2023-07-18 (FAQ version)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0dbadfcba6a24014…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "Drs. Lilly Irani and M. Six Silberman unveiled Turkopticon in 2008, a platform that did just that. … It was the first tool of its kind and is still widely used by the turker community today.",
+   "claim": "unveiled in 2008 by Irani and Silberman; the first tool of its kind, still widely used",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and use",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶2",
+   "quote": "In 2019, Turkopticon began the process of transitioning to a worker-led, worker-run advocacy organization in addition to hosting the original tool and website.",
+   "claim": "from 2019, a transition to a worker-led, worker-run advocacy organization, keeping the tool and site",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a worker-run organizing and advocacy project",
+   "date": "undated (after the 2019 transition: 'The last five years'); the event 2019",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "Turkopticon staff developed a working relationship with Amazon. We implemented a system to help workers who have had their accounts mistakenly suspended get them reinstated. … A weekly report is prepared and sent to AMT staff that reports “bad” requesters with low approval ratings.",
+   "claim": "a working relationship with Amazon; account reinstatement; a weekly report to AMT staff on bad requesters",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "organizing work on Mechanical Turk",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "For the last couple of years, we have hosted worker forums to facilitate conversations between workers, answer questions, and offer assistance.",
+   "claim": "worker forums",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing work on Mechanical Turk",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶5",
+   "quote": "we have decided to expand our efforts to assist ALL data workers! Going forward, we will work to improve conditions for data workers worldwide.",
+   "claim": "the expansion: all data workers, worldwide",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the expansion to all data workers",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "¶6",
+   "quote": "We will continue our work with AMT, especially our mass rejection campaign.",
+   "claim": "it would continue its AMT work, the mass rejection campaign above all",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing work on Mechanical Turk",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "byline",
+   "quote": "by Krystal Kauffman",
+   "claim": "the announcement is signed by Krystal Kauffman",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator and organization",
+   "date": "undated (after the 2019 transition: 'The last five years')",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 532748ad9c261f87…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles Turkopticon and TurkOpticon; article-space search",
+   "quote": "raw wikitext (action=raw, redirect=no), 2026-10-29T22:31:41Z: HTTP 404 … Wikipedia does not have an article with this exact name. … None is an article on Turkopticon and none is a redirect to one.",
+   "claim": "Wikipedia has no article on Turkopticon and no redirect; four articles mention it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 4c2663cbea5fff9f…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Bootstrapping a Collective System ¶4",
+   "quote": "DoloresLabs supported us because they believed that crowdlabor industries would benefit from a fairer labor market; Turkopticon promised to remedy the information asymmetry between workers and employers, repairing Mechanical Turk into a more “transparent” marketplace [6]. Our team, by contrast, built Turkopticon in part to draw attention to commodification and exploitation in large-scale crowdsourcing markets.",
+   "claim": "two readings of its purpose: its ally DoloresLabs' (remedying information asymmetry, a more 'transparent' marketplace) and, by contrast, the founders' (drawing attention to commodification and exploitation)",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "worker invisibility and human computation",
+   "date": "2013-04-27 (CHI 2013, Paris, 27 April–2 May 2013)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 bc527298181c5837…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "turkopticon. — turkopticon.",
+  "B2": "ACM Digital Library — Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+  "B3": "SSRN eLibrary — Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015 by M. Six Silberman, Lilly Irani :: SSRN",
+  "B4": "Reddit — Turkopticon is expanding its mission! : r/mturk - Reddit",
+  "B5": "Crowdsourcing and Human Computation — Turkopticon: interrupting worker invisibility in amazon mechanical turk",
+  "B6": "LinkedIn — Turkopticon is Still Here!",
+  "B7": "YouTube·Platform Cooperativism — Lilly Irani | Community Voices",
+  "B8": "Turkopticon — Turkopticon FAQ Version July 18 2023",
+  "B9": "Turkopticon blog — Breaking News: What is Next for Turkopticon?",
+  "B10": "Wikipedia — Turkopticon (no article)"
+ }
+}

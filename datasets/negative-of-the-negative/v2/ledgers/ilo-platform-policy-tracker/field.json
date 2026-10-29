@@ -1,0 +1,1125 @@
+{
+ "row": "ilo-platform-policy-tracker",
+ "address": "ILO Digital Labour Platform Policy Tracker",
+ "addresses": [
+  "ILO Digital Labour Platform Policy Tracker"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia response summary and the saved wikitext, or the card's title and snippet for the two unreachable cards; 45/45 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the tracker's homepage; B2 the ILO's launch item, byte-identical to the census's own page and carried once, as a card; B3 the ILO's digital labour platforms portal; B4 the Medium post, unreachable; B5 the ILO video, unreachable, title only); 'own_page', the census's own pages that T did not surface (B6, the CBA expansion item; B7, the Observatory portal; both copied from the census's saved copies); 'wikipedia', no article (B8), the tracker cited once in article space. The census read no third-party source (every evidence basis is 'operator' or 'observed'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B2, B3, B7); purpose and audience (B1, B2, B7); the issues (B2); the unit and method (B2, B6); coverage now (B1, B2); the CBA component (B1, B6); the next phase (B1, B6); the Observatory (B2, B7); the context of platform work (B2, B3); the makers (B1); the Convention No. 193, a distinct instrument (B3, B5); the neighbour, AI impact on jobs (B7); reception (B8); dates (B2, B4, B6); algorithmic management (B3, B7). The ILO's single description of the tracker ('Global policy tracker providing a comprehensive overview of legislative initiatives concerning digital labour platforms') recurs on B2 (¶1, 2025-08-14, earliest), B3 and B7: one lineage, B2 keeping the date. The census's kind, self_description, audience, issues, unit, part_of, cba_unit, cba_coverage, data_access, limit, observatory and observatory_2 quotes restate B2, B6 and B7 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B2.txt, B6.txt and B7.txt are the census's own text extractions, copied; B4-publication-403.html and B4-feed-404.html Medium's responses; B5-search.html and B5-429.html YouTube's responses; B8 .wiki, .html, -variant*, -search, -linksearch and -santosh-lad* raw Wikipedia responses, with B8.txt a summary of codes and the one citation); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "International Labour Organization — Homepage | Digital Labour Platform Tracker",
+   "url": "https://digitallabour.ilo.org/",
+   "kind": "Overview card (the tracker's own homepage, the application the census did not save)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B1.html",
+     "sha256": "a0263bc6dd6c7e39fdaa2a0ea8f8b5bd675c88349e140dd363d213a5ec49a0e6"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B1.txt",
+     "sha256": "f54b322696266a88f16652e5152415827ab4be1a87dd877cec0982673dea8200"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:08Z",
+    "http": 200,
+    "url": "https://digitallabour.ilo.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B1.html",
+    "raw_sha256": "a0263bc6dd6c7e39fdaa2a0ea8f8b5bd675c88349e140dd363d213a5ec49a0e6",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B1.txt"
+    ],
+    "note": "a first fetch at 2026-10-29T22:30:51Z (HTTP 200, 87018 bytes, sha256 67a33bf7152f9f93…) was not kept; the page carries per-request tokens, so its hash differs by fetch; the saved copy is the second fetch"
+   },
+   "names_operator": "yes ('International Labour Organization', 'ILO is a specialized agency of the United Nations')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (the page's <title> is 'Homepage | Digital Labour Platform Tracker', identical to the card title) and the census's url field (the launch page's 'Click here' link). The card's snippet ('The International Labour Organization's Digital Labour Platform Tracker provides a global overview of platform work policies, covering legislation, collective b...') is not the page's text: the page has no meta description and no such sentence; its own opening is F1. Recorded, not ledgered. The census did not save this page (census unchecked[0]: 'the tracker application at digitallabour.ilo.org (not saved): its record counts, countries, fields and any licence'); it is read here as a card.",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Homepage | Digital Labour Platform Tracker",
+   "card_snippet": "The International Labour Organization's Digital Labour Platform Tracker provides a global overview of platform work policies, covering legislation, collective b...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "International Labour Organization — ILO launches Global Policy Tracker on Digital Labour Platforms | International Labour Organization",
+   "url": "https://www.ilo.org/resource/news/ilo-launches-global-policy-tracker-digital-labour-platforms",
+   "kind": "Overview card (the ILO's launch news item, 14 August 2025; the census's own page ilo-platform-policy-tracker--launch)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B2.html",
+     "sha256": "9b2b9a1fdd16b54bd33f3cd2635d9dafde961d4bb706e0a7bf958df5dde6bb07"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B2.txt",
+     "sha256": "ea7af83567fbbc47131a5dc1ae7b0efda809cae7befa79e23203f4a40cfb07d7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:10Z",
+    "http": 200,
+    "url": "https://www.ilo.org/resource/news/ilo-launches-global-policy-tracker-digital-labour-platforms",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B2.html",
+    "raw_sha256": "9b2b9a1fdd16b54bd33f3cd2635d9dafde961d4bb706e0a7bf958df5dde6bb07",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B2.txt"
+    ],
+    "census_copy": {
+     "src": "ilo-platform-policy-tracker--launch",
+     "sha256": "9b2b9a1fdd16b54bd33f3cd2635d9dafde961d4bb706e0a7bf958df5dde6bb07",
+     "fetched": "2026-10-29T21:49:11Z",
+     "agrees": true,
+     "note": "the fetch is byte-identical to the census's saved copy; B2.txt is the census's own text extraction (ilo-platform-policy-tracker--launch.txt), copied, so that the record's quotes and the field's are checked against one text"
+    }
+   },
+   "names_operator": "yes ('The International Labour Organization (ILO)', '© 1996-2026 International Labour Organization (ILO)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site and confirmed against the census's source list. The card's snippet ('Initiative: International Labour Organization (ILO) Global Policy Tracker on Digital Labour Platforms (part of ILO Observatory on AI and Work in the Digital Eco...') is a labelled summary, not the page's text ('Initiative:' does not occur in the page). Carried once, as a card: it is also the census's own page.",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "ILO launches Global Policy Tracker on Digital Labour Platforms | International Labour Organization",
+   "card_snippet": "Initiative: International Labour Organization (ILO) Global Policy Tracker on Digital Labour Platforms (part of ILO Observatory on AI and Work in the Digital Eco...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "International Labour Organization — Digital labour platforms | International Labour Organization",
+   "url": "https://www.ilo.org/topics-and-sectors/digital-labour-platforms",
+   "kind": "Overview card (the ILO's topic portal on digital labour platforms, undated; items dated to 2026-10-20)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B3.html",
+     "sha256": "b9b778e34d8e08e3d8df234efb5eeed3054f5f498ad3e3d5bdfa7ad86c982842"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B3.txt",
+     "sha256": "53c786d12eee1d13321a0d41819efa57c7e6b69b00b40dbc4611252bfa8e1422"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:44Z",
+    "http": 200,
+    "url": "https://www.ilo.org/topics-and-sectors/digital-labour-platforms",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B3.html",
+    "raw_sha256": "b9b778e34d8e08e3d8df234efb5eeed3054f5f498ad3e3d5bdfa7ad86c982842",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('International Labour Organization'; it lists the 'Policy Tracker on Digital Labour Platforms' with an 'Explore' link)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by the card's title (the page's <title> is identical) and a WebSearch result ('Topic portal', https://www.ilo.org/topics-and-sectors/digital-labour-platforms). The card's snippet ('Core Development: International Labour Conference adopted the Decent Work in the Platform Economy Convention, 2026 (No. 193), establishing the first internation...') is a labelled summary of the page's ¶2–3 ('Core Development:' does not occur in the page). Not one of the census's sources.",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Digital labour platforms | International Labour Organization",
+   "card_snippet": "Core Development: International Labour Conference adopted the Decent Work in the Platform Economy Convention, 2026 (No. 193), establishing the first internation...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Medium·Reshaping Work — Mapping the Future of Platform Work: How the ILO's New Tracker Helps",
+   "url": null,
+   "kind": "Overview card (unreachable: no URL found; medium.com refuses the census agent with a bot check)",
+   "files": {
+    "B4-publication-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B4-publication-403.html",
+     "sha256": "3a9fe6ac95acacfb28e3d62407e5e5696d6f9fd019420837c3ac6481f9316602"
+    },
+    "B4-feed-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B4-feed-404.html",
+     "sha256": "dbc71e9dd47f2493b43ca42a025a6e8da82f34b6caaa080f829cf8b4013966b2"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "what": "WebSearch on the card's title and site, four queries ('\"Mapping the Future of Platform Work: How the ILO's New Tracker Helps\" Medium Reshaping Work'; 'medium.com \"Reshaping Work\" ILO Global Policy Tracker platform work'; '\"How the ILO's New Tracker Helps\"'; '\"Mapping the Future of Platform Work\" ILO tracker')",
+      "result": "no result for the post"
+     },
+     {
+      "at": "2026-10-29T22:32:08Z",
+      "url": "https://medium.com/reshaping-work",
+      "http": 403,
+      "sha256": "3a9fe6ac95acacfb28e3d62407e5e5696d6f9fd019420837c3ac6481f9316602",
+      "result": "Cloudflare 'Attention Required!' bot check (5188 bytes, saved as B4-publication-403.html)"
+     },
+     {
+      "at": "2026-10-29T22:32:08Z",
+      "url": "https://medium.com/feed/reshaping-work",
+      "http": 404,
+      "sha256": "dbc71e9dd47f2493b43ca42a025a6e8da82f34b6caaa080f829cf8b4013966b2",
+      "result": "'Not Found – Medium' (saved as B4-feed-404.html)"
+     }
+    ],
+    "note": "Fetched with the census agent 'Mozilla/5.0 (compatible; Labor-Vector-census)'. The publication page refused that agent with a bot check; per the addendum (§4) it was not retried with another agent string or by any other route. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('the International Labour Organization' in the snippet; 'the ILO' in the title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Mapping the Future of Platform Work: How the ILO's New Tracker Helps",
+   "card_snippet": "What is the Global Policy Tracker? The Global Policy Tracker serves as an online platform launched by the International Labour Organization in August 2025 to tr...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (video)",
+   "card": "YouTube·International Labour Organization — Decent work in the platform economy: how a new global labour standard can help ...",
+   "url": null,
+   "kind": "Overview card (video, '2m'; admitted through its title: the card has no snippet and the video page refused the census agent)",
+   "files": {
+    "B5-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B5-search.html",
+     "sha256": "de52930a44e70ade02961e237932f4d92a4607961000bf3aa47be8272e4d7184"
+    },
+    "B5-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B5-429.html",
+     "sha256": "0203c9a075bef7f92f2f563ad62b73c4d56201ea386fdcc5eb5f8adf5821715c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "what": "WebSearch on the card's title and site",
+      "result": "no YouTube result; ILO podcast pages of a longer title ('… can help make it a reality', podcast.ilo.org) and an unrelated ILO video ('Standard Setting on Decent Work in the Platform Economy at the 114th ILC', tCWj36bn3mM, by YouTube oEmbed before the refusal below)"
+     },
+     {
+      "at": "2026-10-29T22:33:13Z",
+      "url": "https://www.youtube.com/results?search_query=Decent+work+in+the+platform+economy+how+a+new+global+labour+standard+can+help",
+      "http": 200,
+      "sha256": "de52930a44e70ade02961e237932f4d92a4607961000bf3aa47be8272e4d7184",
+      "result": "a result 'Decent work in the platform economy: how a new global labour standard can help make it a reality', International Labour Organization, videoId Cmv4lC7acPY, length 24:01, '2mo ago' (saved as B5-search.html)"
+     },
+     {
+      "at": "2026-10-29T22:33:24Z",
+      "url": "https://www.youtube.com/watch?v=Cmv4lC7acPY",
+      "http": 429,
+      "sha256": "0203c9a075bef7f92f2f563ad62b73c4d56201ea386fdcc5eb5f8adf5821715c",
+      "result": "redirected to google.com/sorry (a bot check; saved as B5-429.html)"
+     }
+    ],
+    "note": "The search result's title extends the card's truncated title and its channel is the card's, but its length (24:01) is not the card's '2m' (which may be the card's age, '2mo', or a different, shorter cut); the identity of the card's video is not established. The watch page refused the census agent; per the addendum (§4) it was not retried and no transcript was sought by another route. The card's title stands as its only text (the card has no snippet)."
+   },
+   "names_operator": "yes (the channel, 'International Labour Organization')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Decent work in the platform economy: how a new global labour standard can help ...",
+   "card_snippet": null,
+   "card_note": "video, 2m"
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "the census's own page ilo-platform-policy-tracker--cba-expansion (not surfaced by T)",
+   "card": "International Labour Organization — ILO expands Digital Labour Platform Policy Tracker to include collective bargaining agreements",
+   "url": "https://www.ilo.org/resource/news/ilo-expands-digital-labour-platform-policy-tracker-include-collective",
+   "kind": "own page (the ILO's news item of 7 November 2025 on the CBA component), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B6.html",
+     "sha256": "278fc5938b834101eccc81a185b6549b45ad483099ffba38553fda529f9ff28e"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B6.txt",
+     "sha256": "90fd76faadde919146c87df691024e9f5e1632ca02d99e3fcfc6ed0cdbe0ad71"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "ilo-platform-policy-tracker--cba-expansion",
+    "read": "2026-10-29",
+    "census_fetched": "2026-10-29T21:49:11Z",
+    "http": "200",
+    "url": "https://www.ilo.org/resource/news/ilo-expands-digital-labour-platform-policy-tracker-include-collective",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B6.html",
+    "raw_sha256": "278fc5938b834101eccc81a185b6549b45ad483099ffba38553fda529f9ff28e",
+    "census_sha256": "278fc5938b834101eccc81a185b6549b45ad483099ffba38553fda529f9ff28e",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.html.gz (gunzipped) and ilo-platform-policy-tracker--cba-expansion.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B6.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('The International Labour Organization (ILO)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (its sha256 matches the manifest), so it was copied and not refetched."
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the census's own page ilo-platform-policy-tracker--observatory (not surfaced by T)",
+   "card": "International Labour Organization — Observatory on AI and Work in the Digital Economy",
+   "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+   "kind": "own page (the ILO Observatory's portal, items dated to 2026-10-29), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B7.html",
+     "sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B7.txt",
+     "sha256": "6842ee98a74e8d2ea0e79aefa20c417e744421c5e27fd1f3fa0fc0f0fea20de8"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "ilo-platform-policy-tracker--observatory",
+    "read": "2026-10-29",
+    "census_fetched": "2026-10-29T21:49:12Z",
+    "http": "200",
+    "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B7.html",
+    "raw_sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44",
+    "census_sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--observatory.html.gz (gunzipped) and ilo-platform-policy-tracker--observatory.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B7.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('The ILO Observatory on Artificial Intelligence and Work in the Digital Economy')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29; not surfaced by T (T names the Observatory in its body, with markers, but no card is this page). Copied from the census's intact saved copy."
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Digital Labour Platform Policy Tracker (no article; cited once, in Santosh Lad)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Digital_Labour_Platform_Policy_Tracker&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8.wiki",
+     "sha256": "bc60e3433d6da08f0dfcc90bd02fee5aaff62f4bfee27c7abffc94406ce7a9c6"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8.html",
+     "sha256": "fd7cb8c1590a90330fe0cb70a8af26145d8987179f3b28e53835d2975767e9c7"
+    },
+    "B8-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-variant1.wiki",
+     "sha256": "f6c627b209ea859863f9738a6bac5767a3783250527c8ac44565755167b62e06"
+    },
+    "B8-variant2-429.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-variant2-429.wiki",
+     "sha256": "a32c6f48de9fa2588a0a8a7630da32cba3e68b0ed05d5f841216abbcb09002d1"
+    },
+    "B8-variant2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-variant2.wiki",
+     "sha256": "7e99bf9be9891a4fe5927e3d4e712570776ec28e2075f8a345f24217c98a45fc"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-search.html",
+     "sha256": "006af4c79befccddf8fbf4ff53bfcd34b718f7ee2661d2ce1f645171b1e2a737"
+    },
+    "B8-linksearch.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-linksearch.html",
+     "sha256": "8d57d145af8792f374498e4aea77a7fae55d7f50facacd1f26635cc994426704"
+    },
+    "B8-santosh-lad-429.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-santosh-lad-429.wiki",
+     "sha256": "50bbfd850ab7356080fb9607a1d9260f70066640507e0b87ebf17bfb34e3b1d2"
+    },
+    "B8-santosh-lad.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-santosh-lad.wiki",
+     "sha256": "4781c434590433a274d36d6c685bdaf97f37820f11d54323bd2a231b3cce3093"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8.txt",
+     "sha256": "603e9b1ed17c4b15c43ac0717b297ce50d3ce33a618dc7a03a612b5582f607a9"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:34:05Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Digital_Labour_Platform_Policy_Tracker&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:34:08Z",
+      "url": "https://en.wikipedia.org/wiki/Digital_Labour_Platform_Policy_Tracker?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:34:11Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Digital_Labour_Platform_Tracker&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:34:14Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Global_Policy_Tracker_on_Digital_Labour_Platforms&action=raw&redirect=no",
+      "http": 429,
+      "result": "rate-limited; refetched"
+     },
+     {
+      "at": "2026-10-29T22:34:38Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Global_Policy_Tracker_on_Digital_Labour_Platforms&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:34:16Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Digital+Labour+Platform%22+tracker&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "no article of the name; one result, Santosh Lad, matching in a reference"
+     },
+     {
+      "at": "2026-10-29T22:34:54Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:LinkSearch&target=digitallabour.ilo.org&namespace=0",
+      "http": 200,
+      "result": "one article links the tracker's host: Santosh Lad"
+     },
+     {
+      "at": "2026-10-29T22:34:59Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Santosh_Lad&action=raw",
+      "http": 429,
+      "result": "rate-limited; refetched"
+     },
+     {
+      "at": "2026-10-29T22:35:23Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Santosh_Lad&action=raw",
+      "http": 200
+     }
+    ],
+    "raw_sha256": "fd7cb8c1590a90330fe0cb70a8af26145d8987179f3b28e53835d2975767e9c7",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8.txt",
+     "datasets/negative-of-the-negative/v2/intake/ilo-platform-policy-tracker-20261029/B8-santosh-lad.wiki"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no (the citation names the tracker and its host, not the ILO)",
+   "names_archive": "no",
+   "note": "No article and no redirect for three of the entity's names; in article space the tracker appears once, as a cited source (a legislation page of the tracker) in the article on Santosh Lad, the Karnataka minister. HTTP 429 responses are rate limits, not refusals of the agent, and were refetched once after a pause."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "intro ¶ s1",
+   "quote": "This policy tracker aims to provide a comprehensive overview of global policies, legislation, collective bargaining agreements, and judicial decisions related to digital labour platforms.",
+   "claim": "the tracker defined by its homepage: an overview of global policies, legislation, collective bargaining agreements and judicial decisions on digital labour platforms, as its aim",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a global tracker of laws, policies and decisions on platform work",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "intro ¶ s2",
+   "quote": "It is designed to serve as a practical resource for governments, employers’ and workers’ organizations, policymakers’, researchers, and anyone interested in understanding the policy developments in this area.",
+   "claim": "its audience: governments, employers' and workers' organizations, policymakers, researchers and anyone interested",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and audience: governments and social partners, social dialogue and evidence-based policymaking",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "intro ¶ s3",
+   "quote": "Currently, the tracker focuses on legislative developments worldwide, and includes collective bargaining agreements which are publicly available in Europe.",
+   "claim": "its present coverage: legislative developments worldwide, and publicly available collective bargaining agreements in Europe",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "coverage now: legislation worldwide, by country",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "intro ¶ s4",
+   "quote": "The tracker will further develop the collective bargaining agreements in other regions as well as the judicial decisions.",
+   "claim": "the stated limit: collective agreements in other regions and judicial decisions are still to be developed",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": true,
+   "const": true,
+   "lineage": "the next phase: judicial decisions, wider coverage, continuous updating",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "intro ¶ s5",
+   "quote": "The tracker will be regularly updated as new regulations, agreements, and decisions emerge.",
+   "claim": "it will be updated as new regulations, agreements and decisions emerge",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "the next phase: judicial decisions, wider coverage, continuous updating",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "country grid",
+   "quote": "China 8 Legislation … Italy 1 Legislation 5 Collective Bargaining Agreements 7 Other initiatives … United States of America 10 Legislation",
+   "claim": "the homepage's grid lists 33 countries with their records by category, among them China (8 legislation), Italy (1 legislation, 5 collective agreements, 7 other initiatives) and the United States (10 legislation); summed over the grid, 58 legislation, 15 collective agreements, 11 other initiatives (the composer's count of the grid)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage now: legislation worldwide, by country",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Other iniatitives' panel",
+   "quote": "Tuscany Guidelines for Digital Platform Riders Country: Italy Level: Regional Date of initiative: 2021",
+   "claim": "a third category beside legislation and agreements, 'Other initiatives', holds regional and local instruments such as the Tuscany Guidelines for Digital Platform Riders",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage now: legislation worldwide, by country",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Legislation' panel, first item",
+   "quote": "Labour Modernisation Act (Act No. 27,802) Country: Argentina Legislation type: Statutory act Date of adoption: 2026",
+   "claim": "its latest listed legislation is of 2026 (Argentina's Labour Modernisation Act; New Zealand's Employment Relations Amendment Act 2026), each with country, type and date of adoption",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage now: legislation worldwide, by country",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collective Bargaining Agreements' panel, first item",
+   "quote": "Multiparty agreement for Swiss couriers Country: Switzerland Level: Company Date of agreement: 2019",
+   "claim": "the collective agreements it lists include one in Switzerland, each with country, level and date",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collective bargaining agreements component",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Partners' — 'Experts'",
+   "quote": "We would like to thank the following legal scholars who have helped us through the process.",
+   "claim": "it thanks twelve legal scholars who helped compile it (Antonio Aloisi, Miriam A. Cherry, Silvia Rainone and others)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: the ILO and the legal scholars",
+   "date": "undated homepage (fetched 2026-10-29; its latest items dated 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f54b322696266a88…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "title panel",
+   "quote": "Global tracker of laws, policies, and decisions on platform work",
+   "claim": "the launch item's description of the tracker: a global tracker of laws, policies and decisions on platform work",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a global tracker of laws, policies and decisions on platform work",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The International Labour Organization (ILO) is launching a new global policy tracker to provide a comprehensive overview of legislative initiatives concerning digital labour platforms.",
+   "claim": "the ILO launches a global policy tracker to give a comprehensive overview of legislative initiatives on digital labour platforms",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a global tracker of laws, policies and decisions on platform work",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "subtitle",
+   "quote": "A new ILO resource to support evidence-based policymaking and social dialogue on platform work.",
+   "claim": "its purpose: evidence-based policymaking and social dialogue on platform work",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and audience: governments and social partners, social dialogue and evidence-based policymaking",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "dateline",
+   "quote": "14 August 2025",
+   "claim": "launched 14 August 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: launch and the CBA component",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2 s2",
+   "quote": "In many countries, governments are taking steps — or are engaged in discussions — to regulate work on digital platforms.",
+   "claim": "governments in many countries are regulating, or discussing how to regulate, work on digital platforms",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the context: platform work, its opportunities, deficits and regulation",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2 s3",
+   "quote": "The global policy tracker is designed to equip governments, and employers’ and workers' representatives, with information to facilitate discussions and foster decent work in the platform economy.",
+   "claim": "it is designed to inform governments and employers' and workers' representatives, to facilitate discussion and foster decent work in the platform economy",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and audience: governments and social partners, social dialogue and evidence-based policymaking",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3 s1",
+   "quote": "The digital transformation of the workplace, accelerated by the proliferation of platforms, has generated new income-generating opportunities for women, young people, and persons with disabilities, among others.",
+   "claim": "platforms have generated new income opportunities, among others for women, young people and persons with disabilities",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the context: platform work, its opportunities, deficits and regulation",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3 s3",
+   "quote": "These challenges include securing adequate incomes, social security, occupational safety and health, and other protections, while ensuring fundamental principles and rights at work.",
+   "claim": "the challenges of platform work: adequate incomes, social security, safety and health and other protections, with fundamental principles and rights at work",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the context: platform work, its opportunities, deficits and regulation",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4 s1",
+   "quote": "The global policy tracker provides comprehensive and up-to-date information on existing regulations worldwide",
+   "claim": "it provides comprehensive, up-to-date information on existing regulations worldwide",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage now: legislation worldwide, by country",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4 s2",
+   "quote": "As a key feature of the ILO Observatory on AI and Work in the Digital Economy , it will serve as a practical resource for governments, employers’ and workers’ organizations, policymakers, researchers, and anyone interested in understanding the policy developments in this area.",
+   "claim": "it is a key feature of the ILO Observatory on AI and Work in the Digital Economy and a practical resource for governments, the social partners, policymakers and researchers",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of the Observatory on AI and Work in the Digital Economy",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5 s1",
+   "quote": "By consolidating information on national and regional legislative and policy initiatives, the tracker aims to facilitate social dialogue and evidence-based policymaking.",
+   "claim": "its unit and method: it consolidates information on national and regional legislative and policy initiatives",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and method: national and regional initiatives, consolidated and monitored",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5 s2",
+   "quote": "It will shed light on how different jurisdictions address issues such as employment status classification, remuneration, automated decision-making systems (algorithms), working time, workers’ personal data and privacy, occupational safety and health, contract termination, including suspension and collective bargaining, among others, in the context of platform work.",
+   "claim": "the issues: employment status classification, remuneration, automated decision-making systems (algorithms), working time, workers' personal data and privacy, safety and health, contract termination including suspension, and collective bargaining",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the issues it tracks",
+   "date": "2025-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 ea7af83567fbbc47…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s1",
+   "quote": "In June 2026, the International Labour Conference adopted the Decent Work in the Platform Economy Convention, 2026 (No. 193).",
+   "claim": "the International Labour Conference adopted the Decent Work in the Platform Economy Convention, 2026 (No. 193) in June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Decent Work in the Platform Economy Convention, 2026 (No. 193), a distinct instrument",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s3",
+   "quote": "The Convention promotes decent work opportunities and measures to facilitate formalization, as well as establishing protections for digital platform workers.",
+   "claim": "the Convention promotes decent work and formalization and establishes protections for digital platform workers",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Decent Work in the Platform Economy Convention, 2026 (No. 193), a distinct instrument",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'New Convention on decent work in the platform economy' panel",
+   "quote": "This first international labour standard on the platform economy marks an important step in addressing a rapidly evolving area of the world of work.",
+   "claim": "it is the first international labour standard on the platform economy",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Decent Work in the Platform Economy Convention, 2026 (No. 193), a distinct instrument",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Policy Tracker on Digital Labour Platforms' panel",
+   "quote": "Policy Tracker on Digital Labour Platforms … Global policy tracker providing a comprehensive overview of legislative initiatives concerning digital labour platforms.",
+   "claim": "the portal places the tracker, under its name 'Policy Tracker on Digital Labour Platforms', as a global overview of legislative initiatives on digital labour platforms",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a global tracker of laws, policies and decisions on platform work",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1 s1",
+   "quote": "The nature and growth of the platform economy, notably digital labour platforms, is significantly transforming the world of work.",
+   "claim": "the growth of the platform economy, notably digital labour platforms, is transforming the world of work",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the context: platform work, its opportunities, deficits and regulation",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1 s3",
+   "quote": "These opportunities also exist alongside decent work deficits.",
+   "claim": "its opportunities stand beside decent work deficits",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the context: platform work, its opportunities, deficits and regulation",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Related topics'",
+   "quote": "Algorithmic management in the workplace Topic portal Algorithmic management in the workplace",
+   "claim": "the platforms portal lists algorithmic management in the workplace as a related topic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "algorithmic management, a theme beside the tracker",
+   "date": "undated portal (fetched 2026-10-29; items dated to 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 53c786d12eee1d13…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (Medium unreachable)",
+   "quote": "The Global Policy Tracker serves as an online platform launched by the International Labour Organization in August 2025",
+   "claim": "a third-party post: the Global Policy Tracker is an online platform the ILO launched in August 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "dates: launch and the CBA component",
+   "date": "undated (card snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as recorded in the registry's cite_list (unreachable)"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title (video; no snippet; unreachable)",
+   "quote": "Decent work in the platform economy: how a new global labour standard can help ...",
+   "claim": "an ILO video: how a new global labour standard can help decent work in the platform economy",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Decent Work in the Platform Economy Convention, 2026 (No. 193), a distinct instrument",
+   "date": "undated (card title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as recorded in the registry's cite_list (unreachable)"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "The International Labour Organization (ILO) has launched a new component of its Digital Labour Platform Policy Tracker, focusing specifically on collective bargaining agreements (CBAs) related to platform work.",
+   "claim": "a new component of the tracker on collective bargaining agreements related to platform work",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the collective bargaining agreements component",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶2 s1",
+   "quote": "This new resource offers an overview of agreements concluded between trade unions and platform companies across various countries and sectors.",
+   "claim": "its unit: agreements concluded between trade unions and platform companies across countries and sectors",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collective bargaining agreements component",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶2 s2",
+   "quote": "It provides details on each agreement’s content, scope, and legal status, helping users understand whether the agreements operate at the national, sectoral, or enterprise level within the European Union.",
+   "claim": "each agreement described by content, scope and legal status, at national, sectoral or enterprise level, within the European Union",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collective bargaining agreements component",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "allows users to filter information by country and platform type, and to explore descriptive summaries across a range of thematic areas.",
+   "claim": "access: filters by country and platform type, descriptive summaries across thematic areas",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collective bargaining agreements component",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶4",
+   "quote": "The new component is part of the ILO’s ongoing efforts to monitor global policy and regulatory developments related to work and employment on digital labour platforms.",
+   "claim": "the component is part of the ILO's monitoring of policy and regulation on work and employment on digital labour platforms",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and method: national and regional initiatives, consolidated and monitored",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶5",
+   "quote": "Looking ahead, the next phase of the project will focus on expanding geographic and thematic coverage, integrating judicial decisions related to the platform economy, and continuously updating the database with new legislation, and collective bargaining agreements.",
+   "claim": "the next phase: wider geographic and thematic coverage, judicial decisions integrated, continuous updating",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "the next phase: judicial decisions, wider coverage, continuous updating",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dateline",
+   "quote": "7 November 2025",
+   "claim": "the CBA component announced 7 November 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: launch and the CBA component",
+   "date": "2025-11-07",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90fd76faadde9191…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction s1",
+   "quote": "The ILO Observatory on Artificial Intelligence and Work in the Digital Economy is the leading international knowledge hub on the world-of-work dimensions of AI and the digital economy.",
+   "claim": "the Observatory describes itself as the leading international knowledge hub on the world-of-work dimensions of AI and the digital economy",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "part of the Observatory on AI and Work in the Digital Economy",
+   "date": "undated portal (census copy read 2026-10-29; items dated to 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction s2",
+   "quote": "It aims to support governments and social partners in understanding and managing the digital transformation of work.",
+   "claim": "the Observatory aims to support governments and social partners in understanding and managing the digital transformation of work",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of the Observatory on AI and Work in the Digital Economy",
+   "date": "undated portal (census copy read 2026-10-29; items dated to 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "'Policy Tracker on Digital Labour Platforms' panel",
+   "quote": "Global policy tracker providing a comprehensive overview of legislative initiatives concerning digital labour platforms.",
+   "claim": "the Observatory's first panel: the tracker, a global overview of legislative initiatives on digital labour platforms",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a global tracker of laws, policies and decisions on platform work",
+   "date": "undated portal (census copy read 2026-10-29; items dated to 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "'AI impact on jobs' panel",
+   "quote": "ILO researchers developed a methodology to estimate the effects of generative AI on existing occupations.",
+   "claim": "beside the tracker, the Observatory carries the ILO's estimate of generative AI's effects on occupations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the neighbour: AI impact on jobs",
+   "date": "undated portal (census copy read 2026-10-29; items dated to 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "'Thematic areas'",
+   "quote": "Thematic areas … Algorithmic management … Digital labour platforms",
+   "claim": "the Observatory's thematic areas include algorithmic management and digital labour platforms",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "algorithmic management, a theme beside the tracker",
+   "date": "undated portal (census copy read 2026-10-29; items dated to 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Wikipedia response, B8.html",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article on the tracker under three of its names, and no redirect",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (fetched); the citation's access-date 2026-08-27",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 603e9b1ed17c4b15…), B8-santosh-lad.wiki (sha256 4781c434590433a2…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Santosh Lad, ref name=\"gigact\" (B8-santosh-lad.wiki)",
+   "quote": "{{Cite web |title=Karnataka Platform Based Gig Workers (Social Security and Welfare) Act, 2025 {{!}} Digital Labour Platform Tracker |url=https://digitallabour.ilo.org/legislation/karnataka-platform-based-gig-workers-social-security-and-welfare-act-2025 |access-date=2026-08-27 |website=digitallabour.ilo.org}}",
+   "claim": "in article space the tracker appears once, as the cited source (its page on the Karnataka Platform Based Gig Workers Act, 2025) for a sentence in the article on Santosh Lad",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (fetched); the citation's access-date 2026-08-27",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 603e9b1ed17c4b15…), B8-santosh-lad.wiki (sha256 4781c434590433a2…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "International Labour Organization — Homepage | Digital Labour Platform Tracker",
+  "B2": "International Labour Organization — ILO launches Global Policy Tracker on Digital Labour Platforms | International Labour Organization",
+  "B3": "International Labour Organization — Digital labour platforms | International Labour Organization",
+  "B4": "Medium·Reshaping Work — Mapping the Future of Platform Work: How the ILO's New Tracker Helps",
+  "B5": "YouTube·International Labour Organization — Decent work in the platform economy: how a new global labour standard can help ...",
+  "B6": "International Labour Organization — ILO expands Digital Labour Platform Policy Tracker to include collective bargaining agreements",
+  "B7": "International Labour Organization — Observatory on AI and Work in the Digital Economy",
+  "B8": "Wikipedia — Digital Labour Platform Policy Tracker (no article; cited once, in Santosh Lad)"
+ }
+}

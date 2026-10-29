@@ -1,0 +1,442 @@
+{
+ "row": "pai-responsible-sourcing",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the workstream (or its library, guidelines, white paper) with the entity named; R, a relation the archive states between it and an archive object; O, an archive category applied to it or to a class the field and the census source for it (data enrichment work, the labor producing AI: B1, B8, B2, B3, B4, B6, census labor_object and intersection labor-producing-ai; the AI data supply chain and its responsible sourcing: B1, B2, B3, census name and kind; the pay of data enrichment workers: B8 Guideline 1, B3, census findings[1] and intersection gains-and-losses). A bare mention, a list of keywords, a citation-list entry, a reference line or a method using annotators is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every match of the class patterns in the archive's texts (77 matches in 38 deposits) was read at its passage, and the admitted deposits read at the sections named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor §II.5: ghost work (annotators, content moderators, ground-truth labelers, micro-task workers) is ground-truth labor, which scales, structurally distinct from variance-generative labor, and is 'paid badly' (O-class: data enrichment work; its pay). String-pass candidate O0017 (the sentence naming Gray and Suri's labor architecture) read at its paragraph; the claims are the paragraph's next sentences",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": [
+    "O0017"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Proletariat Is a Class Relation §2 and §5: a low-wage annotator can occupy an intensely proletarian relation to a training pipeline; the data annotator a possible member, a paradigmatic occupational case, not the definition (O-class: the archive's class relation applied to data annotation). Found by reading the class matches; the negative-edge lines ('AI annotators', 'data annotator alone') are disambiguation keywords, not further claims",
+   "claims": [
+    "O1545-01",
+    "O1545-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 533,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Groundskeeper's Treatise §VIII–IX: annotators whose judgment is consumed by the training pipeline without recognition or compensation; the audit's first marker, concealed bearing-cost where a framework does not name annotators among its sources of semantic labor (O-class). Found by reading the class matches; note 9's reference line is not a claim",
+   "claims": [
+    "O533-01",
+    "O533-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 534,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Inner Artifact §X: the constitution of an AI developer does not mention the labor conditions of the data annotators who helped train its model, one of its structural silences (O-class: the annotators' conditions as what a developer's own document leaves out). String-pass candidate O0052",
+   "claims": [
+    "O534-01"
+   ],
+   "cands": [
+    "O0052"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure §6: semantic extraction has consequences for real workers, the data labelers performing RLHF among them, their labor extracted and non-compensation felt materially (O-class). String-pass candidate O0055; O0053, O0054, O0056 are attributed statements of Ford and Iliadis, Crawford, and Gray and Suri in the same section, context and not separate claims of the archive",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0053",
+    "O0054",
+    "O0055",
+    "O0056"
+   ]
+  },
+  {
+   "dep": 144,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Administrators of Meaning §E: the node for Gray & Suri and Rahman & Sultana, AI resting on hidden human labor, and where the literature stops, 'at task-labor — annotation, moderation, the edge-case fix' (O-class: the negation graph applied to the class). Found by reading the class matches; the bibliography line is not a claim",
+   "claims": [
+    "O144-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 137,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Commodity Form §9: in the commodity form's historical axis the living stands 'in the apparatus, as cancelled annotator, recursively' (O-class; opaque, quoted under O_leg). Found by reading the class matches",
+   "claims": [
+    "O137-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1070,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Voice of the Dead §II: the reactivation of dead labour still draws on the living, 'the annotator's judgment' among them; the non-erasure clause names annotators and evaluators as shaping the model's conduct (O-class). Found by reading the class matches",
+   "claims": [
+    "O1070-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 222,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Struggle for Meaning, 'Who Gets Hurt': content moderators reviewing traumatic material so AI systems can learn what is harmful, their labor invisible (O-class: content moderation as human review for AI, the class B1 lists). String-pass candidate O0019",
+   "claims": [
+    "O222-01"
+   ],
+   "cands": [
+    "O0019"
+   ]
+  },
+  {
+   "dep": 512,
+   "strata": [
+    "O"
+   ],
+   "reason": "Traversal Log: The Sigil Installation, rotation 1 'Who is the Laborer?': where a text claims autonomy, look for the hidden data labeling (O-class: a diagnostic applied to the class). Found by reading the class matches",
+   "claims": [
+    "O512-01"
+   ],
+   "cands": [],
+   "instances": [
+    {
+     "dep": 1254,
+     "note": "the same text (TL;DR edition, 2026-02-25): an instance under #512 (S4)"
+    }
+   ]
+  },
+  {
+   "dep": 1254,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #512: an instance under #512 (S4)",
+   "claims": [],
+   "instance_of": 512,
+   "cands": []
+  },
+  {
+   "dep": 308,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Capital Operator Stack: Theoretical Landscape §B: in AI-adjacent meaning labor, data labeling among it, '<5% converts to invoice' (O-class: the pay of the class). String-pass candidate O0037; the figure is stated as empirical with no source and carries the mark unsupported. O0036 (Ferrante's labour invisibilization, unpaid labor-time in general) and O0038 (a reference list) are not claims on the class",
+   "claims": [
+    "O308-01"
+   ],
+   "cands": [
+    "O0036",
+    "O0037",
+    "O0038"
+   ]
+  },
+  {
+   "dep": 209,
+   "strata": [
+    "O"
+   ],
+   "reason": "Mapping the Diffuse Guardrail, Layer 5: hypothesized, quality raters encode authority biases into training signals (O-class: what human review, a kind of data enrichment work in B1's list, writes into training). Found by reading the class matches",
+   "claims": [
+    "O209-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 923,
+   "strata": [
+    "O"
+   ],
+   "reason": "Reflexive Foreclosure §3: traced through a preference dataset, human raters in aggregate prefer responses that confirm their views (O-class, attributed to the cited studies). Found by reading the class matches",
+   "claims": [
+    "O923-01"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/partnership-on-ai-responsible-sourcing-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER reading notes for the entity's capture (OBS-e7c7f9858080, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/pai-responsible-sourcing/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'pai-responsible-sourcing'], organizing_question, intersections; questions.json 'who-makes-ai'; rendered aggregators/pai-responsible-sourcing/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (the workstream page B1, the library B8) it is one lineage with that source, the page keeping the earliest date",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1,
+    862,
+    1538
+   ],
+   "reason": "O0001, O0002, O0072, O0073, O0090: content moderators of a repository (Zenodo) who are not domain experts, and its moderation architecture: repository moderation, not data enrichment work for AI"
+  },
+  {
+   "dep": [
+    18
+   ],
+   "reason": "O0003–O0008: the hidden semantic laborers of content moderation and platform maintenance (Roberts 2019), platform moderation; the sentences do not tie the work to AI training or to data enrichment; the keywords line O0003 is not a claim"
+  },
+  {
+   "dep": [
+    33,
+    48,
+    234,
+    247,
+    258,
+    261,
+    280,
+    284,
+    286,
+    382,
+    465,
+    467,
+    469,
+    478,
+    482,
+    661,
+    753,
+    787,
+    892,
+    863,
+    1268
+   ],
+   "reason": "content moderation in the sense of platform governance, safety filtering, intent jurisprudence, academic gatekeeping or the archive's own exclusion (O0011, O0012, O0020–O0028, O0030, O0032, O0033, O0039–O0049, O0059, O0066–O0068, O0074–O0078, O0087): not the human-review work of data enrichment for AI"
+  },
+  {
+   "dep": [
+    31,
+    1168,
+    1170,
+    1171,
+    1251,
+    266,
+    932
+   ],
+   "reason": "DOI-registry lines and tables (O0009, O0027, O0079, O0082–O0084, O0086): no claim"
+  },
+  {
+   "dep": [
+    49,
+    100,
+    998,
+    301,
+    643,
+    684,
+    699
+   ],
+   "reason": "'human in the loop' in other senses (weapons, verification, New Human, agent traps, programming, social engineering) (O0013–O0015, O0034, O0035, O0057, O0058, O0060, O0061, O0080, O0081): not data enrichment work"
+  },
+  {
+   "dep": [
+    32,
+    114,
+    280,
+    501,
+    747,
+    845,
+    1229,
+    1427
+   ],
+   "reason": "unpaid or uncompensated labor of others than data enrichment workers (citation networks, peer review, job applicants, structural disclosure, the author's compensation, depositors and the machine laborers of the classification layer) (O0010, O0016, O0029, O0031, O0050, O0062–O0065, O0071, O0085, O0089): not the class"
+  },
+  {
+   "dep": [
+    217,
+    517,
+    833,
+    1282
+   ],
+   "reason": "a reading list, a topicality note, a field-of-study sentence and the archive's $0.00 invoices 'for ghost work' (its own unpaid work) (O0018, O0051, O0070, O0088): no claim on the class"
+  },
+  {
+   "dep": [
+    635,
+    735,
+    739,
+    1259,
+    1376,
+    110,
+    107,
+    580,
+    716,
+    884,
+    1573,
+    1680,
+    1697,
+    833
+   ],
+   "reason": "read outside the string pass (class match): annotators or human raters as a method of the archive's own experiments (inter-annotator agreement, preference substudies, budgets, declining human annotators as a gate): no claim on data enrichment workers"
+  },
+  {
+   "dep": [
+    702,
+    1203
+   ],
+   "reason": "read outside the string pass: a reference-list entry (Rani, Gobel and Dhir, ILO, 'invisible workers' in the AI value chains): not a claim"
+  },
+  {
+   "dep": [
+    194,
+    1209
+   ],
+   "reason": "read outside the string pass: 'the training-data supply chain, which is to say the public textual world, figures as threat surface' in NIST's taxonomy: the supply chain as attack surface, not the labor or its sourcing"
+  },
+  {
+   "dep": [
+    646
+   ],
+   "reason": "read outside the string pass: a satirical integrity marker barring attribution to firms paying 'less than a living wage': not data enrichment workers"
+  },
+  {
+   "dep": [
+    450,
+    1318,
+    1442
+   ],
+   "reason": "read outside the string pass: 'the annotator' as a figure for a model's style, and a chapter title: no claim on the class"
+  },
+  {
+   "dep": [
+    162,
+    148,
+    790
+   ],
+   "reason": "read outside the string pass: a heteronym's 'ghost-worker', low-wage cognitive labor in general, and raters' ideation homogenized by LLM examples (attributed): not claims on data enrichment work"
+  },
+  {
+   "dep": [
+    771,
+    1392
+   ],
+   "reason": "named in classes_note: the Directionality of Semantic Labor and its surface measure synthetic labor relative to a commissioned task, and user labor drag the user's redirected labor; neither text says anything of data enrichment work (no class match)"
+  }
+ ],
+ "hop": {
+  "from": [
+   137,
+   144,
+   163,
+   209,
+   222,
+   308,
+   512,
+   533,
+   534,
+   623,
+   923,
+   1070,
+   1254,
+   1545
+  ],
+  "candidates": 108,
+  "admitted": 0,
+  "note": "each hop candidate's text scanned for the class patterns and for labor terms near training, annotation, labeling, RLHF or moderation; the hits (#39, #126, #148, #162, #217, #696, #763, #856, #1427, #1678, #1680, #1684) read at their passages: none says anything of data enrichment work, the data supply chain or its pay; #869's text is missing (S5, recorded, not read)"
+ },
+ "class_pass": "O-class: the string pass returned 90 candidates in 55 deposits, admitting #163, #222, #308, #534 and #623 by reading; the class patterns read over every archive text (77 matches in 38 deposits) admitted #137, #144, #209, #512 (with #1254 as an instance), #533, #923, #1070 and #1545",
+ "observations": "No archive text names the workstream, its library, its guidelines, its white paper or Partnership on AI (D 0, R 0). The archive's bearing is ontological and by class only: ghost work as ground-truth labor, scaling and paid badly (#163); the literature stopping at task-labor (#144); the annotator's class relation (#1545); annotators' judgment consumed without recognition or compensation, and concealed bearing-cost as extraction (#533); the annotators' conditions absent from a developer's own governance document (#534); non-compensation of data labelers (#623, #308); the living labor in the model (#1070, #137); hidden labor (#222, #512); what human review writes into training (#209, #923); and the archive's records of the entity, the Labor Vector record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 90,
+   "O_deposits": 55,
+   "H_candidates": 108
+  },
+  "class_matches_read": 77,
+  "class_match_deposits": 38,
+  "deposits_admitted": 14,
+  "deposits_admitted_with_claims": 13,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 108,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "lv": 32,
+   "deposit": 16
+  }
+ }
+}

@@ -1,0 +1,1840 @@
+[
+ {
+  "id": "LV-01",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the census's organizing question, which every record's fields answer: who supplies the labor, who directs it, who receives its gains, and what kind of evidence the resource brings",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "Who supplies the labor, who directs it, and who receives its gains — and what kind of evidence does this resource bring to that question?",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json organizing_question)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-02",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record's kind: a rating programme, a league table scoring cloudwork platforms against the five Fairwork Cloudwork Principles",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].kind",
+  "quote": "rating programme: a ratings report (league table) scoring cloudwork platforms against the five Fairwork Cloudwork Principles",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is: rating cloudwork platforms against five principles of fair work",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].kind)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "self_description",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "The Fairwork Cloudwork Ratings 2025 assesses and scores basic standards of fairness in working arrangements on 16 cloudwork digital labour platforms according to the five Fairwork Cloudwork Principles: fair pay, conditions, contracts, management, and representation.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-03",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record places the entity on four of the census's five intersections: labor producing AI, gains and losses, worker power, AI governing labor",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].intersections",
+  "quote": "[\"labor-producing-ai\", \"gains-and-losses\", \"worker-power\", \"ai-governing-labor\"]",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].intersections)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-04",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the kinds of evidence the entity brings: rating against standards and worker testimony",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].evidence_kind",
+  "quote": "[\"rating against standards\", \"worker testimony\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "what this evidence can and cannot settle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].evidence_kind)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-05",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the unit: a cloudwork platform, scored out of 10 on ten thresholds, two per principle",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].unit",
+  "quote": "a cloudwork platform, scored out of 10 on ten thresholds (two per principle: fair pay, conditions, contracts, management, representation)",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: rating cloudwork platforms against five principles of fair work",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].unit)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "self_description",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "The Fairwork Cloudwork Ratings 2025 assesses and scores basic standards of fairness in working arrangements on 16 cloudwork digital labour platforms according to the five Fairwork Cloudwork Principles: fair pay, conditions, contracts, management, and representation.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-06",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the labor object: cloudwork, from microwork to freelance work, AI data work for leading AI companies among it",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].labor_object",
+  "quote": "cloudwork: online remote work through digital labour platforms, from microwork (data labelling and processing, AI training, image categorisation) to freelance work (translation, design, web development, writing); the report names AI data work for clients such as Amazon, Google, Microsoft and Nvidia",
+  "kernel": false,
+  "const": false,
+  "lineage": "cloudwork defined: platform work performed remotely",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].labor_object)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "labor_object",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Those platforms offer multiple services, such as data",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-07",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "who supplies the labor: cloudworkers, self-employed or independent, paid piece rates",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].direction.supplies",
+  "quote": "cloudworkers, generally classified as self-employed or independent workers paid piece rates; the survey drew 776 workers in 100 countries",
+  "kernel": true,
+  "const": false,
+  "lineage": "direction: who supplies the labor, who directs it, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].direction.supplies)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "piece_rates",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "and cloudworkers are generally",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-08",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "who directs it: the platforms rated and the requesters or clients who post work on them",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].direction.directs",
+  "quote": "the platforms rated (16, including Upwork, Amazon Mechanical Turk, Fiverr, Remotasks, Appen, Clickworker, Prolific) and the requesters or clients who post work on them",
+  "kernel": true,
+  "const": false,
+  "lineage": "direction: who supplies the labor, who directs it, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].direction.directs)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-09",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "who gains: not recorded as a quantity; the report records which platforms meet pay thresholds and names the leading AI companies among the clients",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].direction.gains",
+  "quote": "not recorded as a quantity; the report records which platforms meet pay thresholds (four of 16 met the local minimum wage threshold) and names leading AI companies among the clients of AI data work",
+  "kernel": true,
+  "const": false,
+  "lineage": "direction: who supplies the labor, who directs it, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].direction.gains)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "minimum_wage",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "The point for threshold 1.2, which states that the majority of workers should earn at least the local minimum wage, was awarded to four platforms: ComeUp, Translated, Elharefa, and Terawork.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-10",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the method as the record gives it: desk research, platform manager evidence, worker surveys; scores decided collectively and peer-reviewed; a point only on clear evidence",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].method",
+  "quote": "desk research (public information and platforms' contractual terms), platform manager evidence (questionnaire and interviews), and worker surveys; scores decided collectively by the core team and peer-reviewed; a point is awarded only on clear evidence",
+  "kernel": false,
+  "const": false,
+  "lineage": "method: desk research, platform managers, worker surveys; scoring",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].method)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "method",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "at digital labour platforms: desk research, worker",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-11",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "coverage period: survey data February 2024 to January 2025; changes counted since the July 2023 report",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].coverage",
+  "quote": "\"period\": \"survey data collected February 2024 to January 2025; changes counted since the July 2023 report\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the worker survey: payment, security, discrimination, priorities",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].coverage)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "survey_period",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "collected between February 2024 and January 2025.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-12",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the count: 16 platforms rated; 776 survey responses in 100 countries",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].count",
+  "quote": "\"value\": \"16 cloudwork platforms rated; 776 worker survey responses in 100 countries\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the worker survey: payment, security, discrimination, priorities",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].count)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "survey_count",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "we sampled at least 30 workers per platform from that region. After cleaning the data, we were left with responses from 776 workers in 100 countries.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-13",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record's first finding: three at 8, two at 7; Mechanical Turk, Freelancer, Microworkers at 0",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].findings[0]",
+  "quote": "three platforms scored 8 and two scored 7 out of 10; Amazon Mechanical Turk, Freelancer and Microworkers scored 0",
+  "kernel": true,
+  "const": false,
+  "lineage": "the 2025 scores: the league table",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].findings[0])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "findings_scores",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Three platforms scored 8, and two platforms scored 7 out of 10 points. One platform scored 5, one 4, and one 3 out of 10 points. For the remaining eight platforms, the final scores did not surpass 2 out of 10 points. For three platforms, we could not find any evidence that they met any of the ten points.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-14",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "four platforms met the minimum-wage threshold",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].findings[1]",
+  "quote": "four platforms met threshold 1.2 (the majority of workers earn at least the local minimum wage)",
+  "kernel": false,
+  "const": false,
+  "lineage": "fair pay: payment for completed work and the minimum wage",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].findings[1])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "minimum_wage",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "The point for threshold 1.2, which states that the majority of workers should earn at least the local minimum wage, was awarded to four platforms: ComeUp, Translated, Elharefa, and Terawork.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-15",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "no platform received the bargaining point",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].findings[2]",
+  "quote": "no platform received the second representation point (collective governance or bargaining)",
+  "kernel": false,
+  "const": false,
+  "lineage": "fair representation: association recognised, no bargaining",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].findings[2])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "representation",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "We were unable to award the second point (there is collective governance or bargaining) to any of the platforms evaluated this year.",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-16",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "56 changes adopted, estimated to affect over two million workers",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].findings[3]",
+  "quote": "56 changes were adopted by platforms since the last report, estimated to affect over two million workers",
+  "kernel": false,
+  "const": false,
+  "lineage": "changes adopted through engagement",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].findings[3])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "changes",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "of 56 changes were adopted since the last report launched",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-17",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "of 448 respondents, 33.3% put the local minimum wage first",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].findings[4]",
+  "quote": "of 448 respondents asked which rights matter most, 33.3% named receiving at least the local minimum wage",
+  "kernel": false,
+  "const": false,
+  "lineage": "the worker survey: payment, security, discrimination, priorities",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].findings[4])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "rights_priorities",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Among the 448 respondents, the top priorities were:",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-18",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "limit: the surveys are not representative",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[0]",
+  "quote": "the worker surveys do not aim to be representative",
+  "kernel": false,
+  "const": false,
+  "lineage": "the stated limits: a missing point is no finding of non-compliance; the survey is not representative",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[0])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "limit_representative",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "These surveys do not aim to build a representative set",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-19",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "limit: a missing point is not a failure of the principle, only no evidence found",
+  "kind": "definition",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[1]",
+  "quote": "failing to achieve a point does not necessarily mean a platform fails the principle; it means no evidence was found",
+  "kernel": true,
+  "const": false,
+  "lineage": "the stated limits: a missing point is no finding of non-compliance; the survey is not representative",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[1])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "limit_point",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Failing to achieve a point does not necessarily",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-20",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "limit: where managers do not engage, desk research and surveys only",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[2]",
+  "quote": "where platform managers do not engage, scoring rests on desk research and worker surveys",
+  "kernel": false,
+  "const": false,
+  "lineage": "method: desk research, platform managers, worker surveys; scoring",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[2])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-21",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "limit: sections in common with other Fairwork reports",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[3]",
+  "quote": "the report contains sections in common with other Fairwork reports",
+  "kernel": false,
+  "const": false,
+  "lineage": "the report's statements of its own standing: no conflict of interest, sections in common",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[3])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "limit_common_sections",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Please note that this report contains sections in common with other Fairwork reports",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-22",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "limit: Scale/Remotasks holds the evaluation overly subjective",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[4]",
+  "quote": "in the platform comments (Appendix II), Scale/Remotasks states the evaluation remains overly subjective in key areas",
+  "kernel": false,
+  "const": false,
+  "lineage": "platform responses to the ratings",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[4])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "platform_response",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "these improvements, we believe the evaluation remains",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-23",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record notes the report's inconsistency: nine in the executive summary, eight in the key findings and the table",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].stated_limits[5]",
+  "quote": "the executive summary says the remaining nine platforms scored no more than 2, the key findings say eight (the league table shows eight)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the 2025 scores: the league table",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].stated_limits[5])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "findings_scores_summary",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "the remaining nine platforms, the final scores did not",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-24",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "what this evidence answers: whether a named platform shows evidence of meeting each threshold; which policies changed in the scoring dialogue; which rights surveyed workers rank highest",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].answers",
+  "quote": "[\"whether a named cloudwork platform shows evidence of meeting each Fairwork threshold\", \"which platform policies changed during the scoring dialogue\", \"which rights surveyed cloudworkers rank highest\"]",
+  "kernel": true,
+  "const": false,
+  "lineage": "what this evidence can and cannot settle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].answers)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-25",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "what it does not answer: the market-wide share below minimum wage; whether a platform with no point violates the principle; AI data work at BPO companies outside the platforms rated",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].does_not_answer",
+  "quote": "[\"the share of cloudworkers earning below minimum wage across the market\", \"whether a platform with no point actually violates the principle\", \"the conditions of AI data work at business process outsourcing companies outside the platforms rated\"]",
+  "kernel": true,
+  "const": false,
+  "lineage": "what this evidence can and cannot settle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].does_not_answer)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-26",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the archive's reading (lv_intersection): none stated by the resource; the ratings score the intermediary that directs cloudwork, and thresholds 1.1 and 2.1 are the report's own measures of unpaid labor, kept in its terms",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].lv_intersection",
+  "quote": "none stated. The archive reads the ratings as scoring the intermediary that directs cloudwork (allocation, rejection, deactivation, contract terms); thresholds 1.1 and 2.1 (payment for all completed work; compensating loading and reviewing time) are the report's own measures of unpaid labor and stay in its terms.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the archive's reading: the ratings score the intermediary that directs cloudwork",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].lv_intersection)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-27",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "data access: the report PDF, a platform search tool, the Principles and methodology pages",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].data_access",
+  "quote": "the report as a PDF on fairwork.oii.ox.ac.uk; a platform search tool on the Fairwork home page; the Principles and methodology pages",
+  "kernel": false,
+  "const": false,
+  "lineage": "method: desk research, platform managers, worker surveys; scoring",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].data_access)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-28",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "lifecycle: active; the 2025 report the third (earlier 2021 and 2023); Germany Ratings 2026; an AI supply chain certification scheme",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].lifecycle",
+  "quote": "\"state\": \"active\", \"detail\": \"Cloudwork Ratings 2025 is the third cloudwork report (earlier reports 2021 and 2023); Fairwork published Germany Ratings 2026 and offers an AI supply chain certification scheme\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "earlier cloudwork reports: 2021, 2022, 2023",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].lifecycle)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "lifecycle",
+   "src": "fairwork-cloudwork--oii-home",
+   "basis": "operator",
+   "quote": "The Fairwork Germany Ratings 2026 are published!",
+   "url": "https://fairwork.oii.ox.ac.uk/",
+   "sha256": "5cf5af5cb8c96b3fc6dfec08877f4c9986ae33b4ab052e4c18a4e51b871c8d16"
+  }
+ },
+ {
+  "id": "LV-29",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "founded: the five principles 2018 at the ILO; cloudwork principles 2020",
+  "kind": "genealogy",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].founded",
+  "quote": "2018 (the five principles, at a multi-stakeholder workshop at the ILO); cloudwork principles 2020",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator, its funders and its origin",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].founded)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "founded",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "developed in 2018 at a multi-stakeholder workshop at",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-30",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "negative tag: not a representative survey",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].negative_tags[0]",
+  "quote": "NOT a representative survey of cloudworkers",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the ratings are not: the record's negative tags",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].negative_tags[0])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "limit_representative",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "These surveys do not aim to build a representative set",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-31",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "negative tag: not a finding of non-compliance where a point is missing",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].negative_tags[1]",
+  "quote": "NOT a finding of non-compliance where a point is missing",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the ratings are not: the record's negative tags",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].negative_tags[1])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "limit_point",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "Failing to achieve a point does not necessarily",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-32",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "negative tag: not the Fairwork AI Principles, a separate strand",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].negative_tags[2]",
+  "quote": "NOT the Fairwork AI Principles for workplace AI deployment, a separate Fairwork strand",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the ratings are not: the record's negative tags",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].negative_tags[2])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "workplace_ai",
+   "src": "fairwork-cloudwork--oii-home",
+   "basis": "operator",
+   "quote": "Fairwork has developed a set of principles to guide the fair use of AI systems in the workplace.",
+   "url": "https://fairwork.oii.ox.ac.uk/",
+   "sha256": "5cf5af5cb8c96b3fc6dfec08877f4c9986ae33b4ab052e4c18a4e51b871c8d16"
+  }
+ },
+ {
+  "id": "LV-33",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "negative tag: not the location-based ratings",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].negative_tags[3]",
+  "quote": "NOT the location-based platform ratings (38 countries)",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the ratings are not: the record's negative tags",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].negative_tags[3])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "location_based",
+   "src": "fairwork-cloudwork--oii-home",
+   "basis": "operator",
+   "quote": "We have produced national rankings in 38 countries across 5 continents.",
+   "url": "https://fairwork.oii.ox.ac.uk/",
+   "sha256": "5cf5af5cb8c96b3fc6dfec08877f4c9986ae33b4ab052e4c18a4e51b871c8d16"
+  }
+ },
+ {
+  "id": "LV-34",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the operator as the record gives it: the Fairwork project, based at the OII and the WZB; funded by BMZ, commissioned by GIZ",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].operator",
+  "quote": "the Fairwork project, based at the Oxford Internet Institute, University of Oxford, and the WZB Berlin Social Science Center; funded by BMZ, commissioned by GIZ",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator, its funders and its origin",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].operator)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "operator",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "The project is based at the Oxford Internet Institute,",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-35",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record's neighbour: Turkopticon (the report rates Mechanical Turk at 0 and cites Turkopticon among worker resources)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].relations[0]",
+  "quote": "\"rel\": \"neighbour\", \"target\": \"turkopticon\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the 2025 scores: the league table",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].relations[0])",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  },
+  "basis": {
+   "field": "turkopticon_cited",
+   "src": "fairwork-cloudwork--oii-cloudwork-report",
+   "basis": "operator",
+   "quote": "26. Turkopticon. 2025. Website Homepage. Retrieved April 8, 2025, from",
+   "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+   "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+  }
+ },
+ {
+  "id": "LV-36",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "the record leaves unchecked the Principles and Methodology pages, the search tool, the AI Principles and supply chain evaluations, and the earlier reports",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'fairwork-cloudwork'].unchecked",
+  "quote": "\"the Fairwork Cloudwork Principles and Methodology pages\", \"the platform search tool on the home page (JavaScript)\", \"the Fairwork AI Principles and the AI supply chain evaluations (Tinkogroup 2026)\", \"the 2021 and 2023 cloudwork reports\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "what this evidence can and cannot settle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (census.json rows[slug == 'fairwork-cloudwork'].unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-37",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "in the census's worked question 'Who does the data work that trains AI, and on what terms?', the entity holds platforms rated against five principles with a survey of 776 cloudworkers; no record gives wages or conditions at industry scale, or how much of a system's training data any reported work produced",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "questions.json questions[id == 'who-makes-ai'].resources[slug == 'fairwork-cloudwork'].role, .gap",
+  "quote": "platforms rated against five fair-work principles, with a survey of 776 cloudworkers … None gives wages or conditions at the scale of the industry, or how much of a given system's training data any reported work produced.",
+  "kernel": true,
+  "const": false,
+  "lineage": "AI data work: the labour behind AI and its clients",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/questions.json (questions.json questions[id == 'who-makes-ai'].resources[slug == 'fairwork-cloudwork'].role, .gap)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "LV-38",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/",
+   "label": "LV"
+  },
+  "claim": "in the census's worked question 'Who receives the gains …?', the entity holds pay and conditions on the platforms rated against minimum standards; no census record measures the distribution of gains among workers, employers, platforms and model providers",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "questions.json questions[id == 'who-gains'].resources[slug == 'fairwork-cloudwork'].role, .gap",
+  "quote": "pay and conditions on the platforms rated, against minimum standards … No record in the census measures the distribution of productivity gains between workers, employers, platforms and model providers.",
+  "kernel": false,
+  "const": false,
+  "lineage": "direction: who supplies the labor, who directs it, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Fairwork Cloudwork Ratings (https://www.laborvector.org/aggregators/fairwork-cloudwork/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/questions.json (questions.json questions[id == 'who-gains'].resources[slug == 'fairwork-cloudwork'].role, .gap)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "fairwork-cloudwork",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/fairwork-cloudwork/"
+  }
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition holds the programme: principles, scale, the 16 platforms of 2025 and the operator are the record's",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[0]",
+  "quote": "THE PROGRAMME HELD. The five principles, the scale out of ten, the 16 platforms of the 2025 report and the operator (based at the OII and the WZB) are the record's;",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the registry reads 'spun out of' as the composition's word for an operator the record gives as based at the OII and the WZB",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[0]",
+  "quote": "'spun out of' is the composition's word for an operator the record gives as based at both.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator, its funders and its origin",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the Global South line is in the report",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[0]",
+  "quote": "The Global South line is in the report ('Workers from the Global South also experience discrimination and distrust').",
+  "kernel": false,
+  "const": false,
+  "lineage": "the worker survey: payment, security, discrimination, priorities",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the scores absent: the ratings exist to score named platforms; the composition offers a platform's score and gives none",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[1]",
+  "quote": "THE SCORES ABSENT. The ratings exist to score named platforms: … The composition offers 'a specific platform's score' and gives none.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "'incremental improvements' composed without their cause, the 56 changes and Fairwork's engagement",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[2]",
+  "quote": "The composition gives the improvement without its cause.",
+  "kernel": false,
+  "const": false,
+  "lineage": "changes adopted through engagement",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the caveat absent: neither the missing-point limit nor the survey limit reaches the composition",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[3]",
+  "quote": "THE CAVEAT ABSENT. The record's negative tags keep a missing point apart from a finding of non-compliance ('failing to achieve a point does not necessarily mean a platform fails the principle') and keep the surveys apart from a representative sample. Neither reaches the composition.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the stated limits: a missing point is no finding of non-compliance; the survey is not representative",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the fair.work card is the certification, another strand the record names",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, findings[4]",
+  "quote": "A CARD FOR ANOTHER STRAND. The fair.work card is Fairwork's certification of 'the labour behind AI', a separate scheme the record names (its AI supply chain certification).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the AI supply chain certification (a separate strand)",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading: publisher, principles, scale and general findings from the project's own reports, and an offer of a platform's score",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, reading",
+  "quote": "The innocent reading first. The Overview gives the ratings' publisher, principles, scale and general findings from the project's own reports, and offers a platform's score.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "a rating programme composed by its principles and verdict, without its ratings",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, analysis",
+  "quote": "A rating programme is composed by its principles and its general verdict, without its ratings.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the scores are what name who directs the labour and on what terms; the composition keeps the standard and drops the platforms",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, analysis",
+  "quote": "The record's unit is the platform score, and the scores are what name who directs the labour and on what terms; the composition keeps the standard and drops the platforms it was applied to.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-11",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "a baseline at a new address: the record landed the same day and no card cites it",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, q_kind",
+  "quote": "A baseline: the record landed on laborvector.org the same day (commit bf90841) and no card cites it. NEW address.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the standard kept, the platforms dropped",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-12",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition gives what the ratings do and find, not what they are for",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "fairwork-cloudwork-ratings-aio-20261029, per_dim.read.notes",
+  "quote": "Purpose absent: the composition gives what the ratings do and find, not what they are for (to show better and fairer platform work is possible).",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: rating cloudwork platforms against five principles of fair work",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry fairwork-cloudwork-ratings-aio-20261029 (OBS-65077a500a26, AXN:0AEC.CAPTURE.📜♣️🪨🧊🌊🔝)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/fairwork-cloudwork-ratings-aio-20261029/"
+  }
+ },
+ {
+  "id": "O18-01",
+  "dep": 18,
+  "record": "deposit",
+  "claim": "content moderators perform semantic labor in its most brutal form, sorting meaning under conditions designed to be invisible; meaning is produced by bodies, at metabolic cost",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Part I §I.4d, ¶ after the review of Gillespie, Roberts and Qiu (para 28)",
+  "quote": "Content moderators perform semantic labor in its most brutal form: sorting meaning under conditions designed to be invisible. … Meaning is not \"immaterial.\" It is produced by bodies, at metabolic cost, under conditions of potential harm.",
+  "kernel": true,
+  "const": false,
+  "lineage": "AI data work as semantic labor, its cost borne by bodies",
+  "date": "2026-02-20",
+  "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value",
+  "creator": "Lee Sharks · Johannes Sigil",
+  "file": "data/texts/AXN-013F-text.md",
+  "offset": 16795,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work: the human labour behind AI (basis: field B1 'Data work', B8, B9; census intersection labor-producing-ai)"
+ },
+ {
+  "id": "O533-01",
+  "dep": 533,
+  "record": "deposit",
+  "claim": "annotators are among the sources of semantic labor a platform framework must name; where they go unnamed the bearing-cost is concealed, the first marker of extraction",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Diagnostic procedure, Step 1 (para 83)",
+  "quote": "Map each source of semantic labor — participants, annotators, integration engineers, compliance teams, users who re-prompt and re-frame. If the framework does not name these sources, the bearing-cost is concealed. Concealed bearing-cost is the first marker of extraction.",
+  "kernel": true,
+  "const": false,
+  "lineage": "annotators as bearing-cost sources; concealed bearing-cost marks extraction",
+  "date": "2026-03-04",
+  "title": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-0168-text.md",
+  "offset": 27408,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work (annotators; basis: field B8 'annotate data', B1 'Data work')"
+ },
+ {
+  "id": "O623-01",
+  "dep": 623,
+  "record": "deposit",
+  "claim": "semantic extraction has real consequences for workers: content moderators and the data labelers performing RLHF have their labor extracted and bear non-compensation materially",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the second reason, on semantic extraction and workers (para 71)",
+  "quote": "Second, semantic extraction has real consequences for real workers. The Wikidata volunteers, the content moderators, the data labelers performing RLHF — their labor is extracted, and they experience the effects of non-compensation materially.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the labor of data workers extracted, its non-compensation material",
+  "date": "2026-04-01",
+  "title": "Semantic Infrastructure: From Tim Berners-Lee to the Semantic Economy — Bridging Technical and Political-Economic Frameworks",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-01DA-text.md",
+  "offset": 20292,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work (moderators, data labelers; basis: field B1 'Data work', B8, B9)"
+ },
+ {
+  "id": "O144-01",
+  "dep": 144,
+  "record": "deposit",
+  "claim": "the literature of hidden AI labor stops at task-labor (annotation, moderation): it names the erased worker and cannot name that what is erased is the provenance of meaning",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "node on Gray & Suri, Ghost Work, and Rahman & Sultana (para 27)",
+  "quote": "*Where it stops:* at task-labor — annotation, moderation, the edge-case fix. … It names the erased worker; it cannot name that the erased thing is the provenance of meaning.",
+  "kernel": true,
+  "const": false,
+  "lineage": "where the ghost-work literature stops: task-labor, not the provenance of meaning",
+  "date": "2026-06-02",
+  "title": "The Administrators of Meaning: A Total Axial Negation Graph",
+  "creator": "Author left for ratification per metadata protocol",
+  "file": "data/texts/AXN-02DB-text.md",
+  "offset": 9534,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work (annotation, moderation; basis: field B1 'Data work', B8, B9)"
+ },
+ {
+  "id": "O163-01",
+  "dep": 163,
+  "record": "deposit",
+  "claim": "ghost work (annotators, moderators, labelers, micro-task workers) is ground-truth labor, telling the model what is already known; it is distinct from variance-generative labor",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ on the labor architecture of AI (para 40)",
+  "quote": "Ghost work is *ground-truth labor*: the labor of telling the model what is already known to be true. The labor type at issue here is *variance-generative labor*: the labor of producing new conceptual structures that the model cannot generate from its own distribution.",
+  "kernel": true,
+  "const": false,
+  "lineage": "ghost work as ground-truth labor, against variance-generative labor",
+  "date": "2026-06-08",
+  "title": "The Neglected Author as Tail-Preserving Labor: A Coupling Hypothesis on Recognition Bias, Tail-Renewal Value, and the AI-Era Decoupling of Uptake from Consecration",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02FE-text.md",
+  "offset": 16346,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work and cloudwork (micro-task workers; basis: field B1 'Defining cloudwork', 'Data work')"
+ },
+ {
+  "id": "O163-02",
+  "dep": 163,
+  "record": "deposit",
+  "claim": "ghost work scales and is paid badly; variance-generative labor is not paid at all",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ on the labor architecture of AI (para 40)",
+  "quote": "Ghost work scales: more workers labeling more images produces more training data of the same kind. … Ghost work is paid badly; variance-generative labor is not paid at all because acknowledging it as labor would require acknowledging the producer as a sovereign source.",
+  "kernel": false,
+  "const": false,
+  "lineage": "ghost work as ground-truth labor, against variance-generative labor",
+  "date": "2026-06-08",
+  "title": "The Neglected Author as Tail-Preserving Labor: A Coupling Hypothesis on Recognition Bias, Tail-Renewal Value, and the AI-Era Decoupling of Uptake from Consecration",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02FE-text.md",
+  "offset": 16650,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work (basis as O163-01)"
+ },
+ {
+  "id": "O1545-01",
+  "dep": 1545,
+  "record": "deposit",
+  "claim": "the semantic proletariat is a class relation and is not identical with AI annotators or gig workers",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "'Semantic Proletariat is not' (para 79)",
+  "quote": "**Semantic Proletariat is not:** content creators · knowledge workers · the creative class · AI annotators · gig workers · platform users",
+  "kernel": true,
+  "const": false,
+  "lineage": "annotators and moderators in the semantic proletariat's derivation, the class not identical with them",
+  "date": "2026-08-25",
+  "title": "EA-MPAI-SEMANTIC-PROLETARIAT-01 v1.0 — The Semantic Proletariat Is a Class Relation, Not a Demographic",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0644-text.md",
+  "offset": 19868,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work and cloudwork (AI annotators, gig workers; basis: field B1, B6 'Online gig economy work, also known as cloudwork')"
+ },
+ {
+  "id": "O1545-02",
+  "dep": 1545,
+  "record": "deposit",
+  "claim": "the path from moderators and annotators runs through semantic labor and infrastructure control to the semantic proletariat",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "MPAI bridge paths (para 83)",
+  "quote": "Teachers/translators/moderators/annotators → semantic labor → infrastructure control → **SP**.",
+  "kernel": false,
+  "const": false,
+  "lineage": "annotators and moderators in the semantic proletariat's derivation, the class not identical with them",
+  "date": "2026-08-25",
+  "title": "EA-MPAI-SEMANTIC-PROLETARIAT-01 v1.0 — The Semantic Proletariat Is a Class Relation, Not a Demographic",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0644-text.md",
+  "offset": 21381,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "AI data work (moderators, annotators; basis as O1545-01)"
+ }
+]

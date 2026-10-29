@@ -1,0 +1,699 @@
+Session: Smart Tools, Smart Work                                                        CHI 2013: Changing Perspectives, Paris, France
+
+
+
+
+                    Turkopticon: Interrupting Worker Invisibility
+                            in Amazon Mechanical Turk
+                      Lilly C Irani                                                                  M. Six Silberman
+          UC Irvine, Department of Informatics                                                Bureau of Economic Interpretation
+                    Irvine, CA 92697                                                           six@economicinterpretation.org
+                   lirani@ics.uci.edu
+
+ABSTRACT                                                                             year of deployment. The system receives 100,000 page
+As HCI researchers have explored the possibilities of human                          views a month and has become a staple tool for many AMT
+computation, they have paid less attention to ethics and                             workers, installed over 7,000 times at time of writing.
+values of crowdwork. This paper offers an analysis of
+Amazon Mechanical Turk, a popular human computation                                  Turkopticon allows workers to create and use reviews of
+system, as a site of technically mediated worker-employer                            employers when choosing employers on AMT. Building and
+relations. We argue that human computation currently relies                          maintaining the system, as well as communicating about the
+on worker invisibility. We then present Turkopticon, an                              system with workers, has offered us a distinct vantage point
+activist system that allows workers to publicize and evaluate                        into the social processes of designing interventions into
+their relationships with employers. As a common                                      large-scale, real world systems. Turkopticon supports a
+infrastructure, Turkopticon also enables workers to engage                           thriving collective of workers engaged in mutual aid,
+one another in mutual aid. We conclude by discussing the                             brought together by our simple browser extension and web-
+potentials and challenges of sustaining activist technologies                        based technology.
+that intervene in large, existing socio-technical systems.                           This paper makes several contributions. First, it offers a case
+Author Keywords                                                                      study designing an intervention into a highly distributed
+Activism; infrastructure; human computation; Amazon                                  microlabor system. Second, it shows an example of systems
+Mechanical Turk; design; ethics                                                      design incorporating tools feminist analysis and reflexivity.
+                                                                                     Rather than conducting HCI research to reveal and represent
+ACM Classification Keywords                                                          values and positions, and then building systems to resolve
+H.5.m. Information interfaces and presentation (e.g., HCI):                          those political differences, we built a system to make
+Miscellaneous.                                                                       worker-employer relations visible and to provoke ethical
+INTRODUCTION                                                                         and political debate. Third, this paper contributes lessons
+Crowdsourcing and human computation are often described                              learned from intervening in existing, large-scale socio-
+as a new frontier for HCI research and creativity, and for                           technical systems (here, AMT) from its margins.
+technological progress more broadly. CHI researchers have                            METHOD AND OUR STANCE
+built word processors powered by crowds. Others have                                 This paper draws on four years of participant-observation as
+shown how usability and visualization evaluations can be                             design activists within AMT worker and technologist
+taken out of the lab and into the natural environments of                            communities. Turkopticon grew out of a tactical media art
+crowdworkers.                                                                        project intended to raise questions about the ethics of human
+These frontiers, however, are enabled by the novel                                   computation. Tactical media, one tradition within activist
+organization of digital workers, distributed across the world                        art, emphasizes developing urgent, culturally provocative
+and organized through task markets, APIs, and network                                interruptions and resistance through the design of media [13,
+connections. This paper looks behind the walls of                                    19, 21]. In addition to the interviews, observation, and
+abstraction that enable human computation in one specific                            casual conversation that feature in many HCI ethnographies,
+system, Amazon Mechanical Turk (AMT). We present                                     our encounters with Turk workers began through highly
+workers’ occupational hazards as human computers, and                                mediated “Human Intelligence Tasks” and feedback around
+explain the activist project we developed in response.                               Turkopticon. (We began this research in 2008, prior to the
+Turkopticon, the project we present, is a tool in its fourth                         growth of popular online worker forums turkernation.com
+                                                                                     and mturkforum.com.)
+Permission to make digital or hard copies of all or part of this work for            We conducted several informal surveys through Mechanical
+personal or classroom use is granted without fee provided that copies are            Turk. 67 respondents answered our open-ended question
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise,
+                                                                                     survey about what they would desire as a “Workers’ Bill of
+or republish, to post on servers or to redistribute to lists, requires prior         Rights.” Points of agreement among worker respondents on
+specific permission and/or a fee.                                                    this survey became the basis for the design of Turkopticon.
+CHI 2013, April 27–May 2, 2013, Paris, France.
+Copyright © 2013 ACM 978-1-4503-1899-0/13/04...$15.00.
+
+
+
+
+                                                                               611
+Session: Smart Tools, Smart Work                                              CHI 2013: Changing Perspectives, Paris, France
+
+The first author complements participant-observation, as a                Amazon legally defines the workers as contractors subject
+system builder of Turker tools, with observation and open-                to laws designed for freelancers and consultants; this
+ended interviews with AMT employers. She attended a                       framing attempts to strip workers of minimum wage
+major crowdsourcing conference as well two smaller                        requirements in their countries. United States workers are a
+crowdsourcing meetups. She also conducted open-ended                      significant minority, numbering at 46.8% in recent surveys
+interviews with four employers on AMT and numerous                        [24]. This framing, however, has not been tested in courts,
+conversations with other employers. These ethnographic                    and courts have deemed similar framings of distributed,
+data contextualize the data we generate as we design and                  non-computer data work illegal [18].
+maintain Turkopticon.
+                                                                          AMT can be described many ways. Explaining it as a
+Over the course of this research, each of our stances                     microlabor marketplace draws attention to pricing
+developed as a result of our own involvement with the                     mechanisms, how workers choose tasks, and how
+workers through the project, and through our evolving                     transactions are managed. Explaining it as a crowdsourcing
+understandings of the broader crowdsourcing community.                    platform draws attention to the dynamics of mass
+We began highly critical of the fragmentation of labor into               collaboration among workers, the aggregation of inputs, and
+hyper-temporary jobs, seeing them as an intensification of                the evaluation of the crowdsourced outputs. Explaining
+decades-old US trends toward part-time, contingent work                   AMT as a source of human computation resources,
+for employer flexibility and cost-cutting [3, 35]. AMT, it                however, is consistent with how both the computing
+seemed to us produced temporary employees at “the speed                   research community and Amazon’s own marketing frames
+of thought,” to borrow Bill Gates’ promissory turn of                     the system [e.g. 28].
+phrase, precisely by forgetting about ergonomics, repetitive
+                                                                          Dividing data work into small components is not itself new.
+stress injuries, and minimum wage laws. We were biased –
+                                                                          A 1985 case, Donovan vs DialAmerica, tells of an earlier
+decidedly so.
+                                                                          version of AMT-style labor. An employer sent cards with
+Our biases were validated by some workers and challenged                  names to home workers hired as independent contractors.
+by others. For each one who reported needing the money to                 These contractors had to ascertain the correct phone number
+pay for rent or groceries, there was another who did it for               for each name; they were paid per task. Courts decided that
+fun or to “kill time.”                                                    these workers were in fact employees entitled to minimum
+                                                                          wage under the Fair Labor Standards Act (FLSA) [18,
+We highlight our own stances under advisement of Borning
+                                                                          p.136]. Since the late 1990s, American companies have
+and Muller who, with many feminist scholars, call for
+                                                                          hired Business Process Outsourcing firms in English-
+researchers to shed trappings of objective authority and
+                                                                          speaking countries with lower costs of living to perform
+account for how our own contexts and assumptions shape
+                                                                          large volumes of data processing tasks that cannot be fully
+our research practices [7]. However, it is not only that our
+                                                                          automated.1
+biases distort our perception of reality that is out there in the
+world of AMT work. Certainly, we have much to learn                       Humans-as-a-service
+about how workers feel about their work and the problems                  AMT jumps beyond these older forms of information work
+they encounter, as we have published. But we also intervene               by setting workers up as resources that can be directly
+in AMT by building a technology used by its workers. By                   integrated into existing computer systems as “human
+intervening in the system as designers and as observers, we               computation.” When Jeff Bezos launched AMT to an MIT
+change the reality of the system itself [4, 29, 41]. The                  audience in 2006, he announced: “You’ve heard of
+ethical challenges and issues faced by workers, and the                   software-as-a-service. Now this is human-as-a-service” [5].
+ethical issues we face as researchers, are produced in the                Since launch, AMT has been marketed as one of Amazon’s
+encounters between us, the workers, and Turkopticon. This                 Web Services, alongside silicon computational cycles and
+paper offers a snapshot of the lessons we have learned and                data storage in the cloud. Bloggers and technologists have
+their implications for design practice at this point in the               followed suit, both in published sources and conferences
+evolving socio-technical system.                                          and meetups we attended, calling AMT a “Remote Person
+                                                                          Call” (playing off of “Remote Procedure Call”) and “the
+First, we explain AMT, focusing on the kinds of worker-                   Human API.” Crowdsourcing company CrowdFlower even
+employer relationships enabled by the system. We then                     coined the neologism “Labor-as-a-service (LaaS)” to market
+describe our motivations for building Turkopticon, the                    the value of crowdsourced workforces to companies.
+design of the system, and learnings relevant to the design of
+political and activist technologies.                                      This combination of abstraction and service orientation in
+                                                                          both the metaphors and infrastructural forms suggest a
+BACKGROUND: AMAZON MECHANICAL TURK (AMT)
+                                                                          particular kind of social relationship. “As-a-service” draws
+Amazon Mechanical Turk is a website and service operated
+by Amazon as a meeting place for requesters with large
+volumes of microtasks and workers who want to do those                    1
+                                                                            In 2012, a US Mechanical Turk worker filed a class action suit
+tasks, usually for money [24]. These tasks often add up to a              against Crowdflower for violations of FLSA. The outcome of the
+few dollars an hour for those experienced with the platform.              suit was unknown at time of press.
+
+
+
+
+                                                                    612
+Session: Smart Tools, Smart Work                                         CHI 2013: Changing Perspectives, Paris, France
+
+meaning from commonplace resonances of service. To serve              recognizes that systems that might hum along beyond notice
+is to make labor and attention available for those served; to         in one moment might break down and require maintenance
+promise service is to be bound, by duty or by wage, to the            and repair in another. And a system that might hum along
+will of the served. Among computer scientists, “as-a-                 beyond notice for an end-user might be very much the focus
+service” builds off of this common sense meaning and more             of attention for those in charge of maintaining it. The
+specifically suggests a division of technical labor by which          question “when is infrastructure?” then, suggests also
+programmers can access computational processing functions             asking, “for whom is infrastructure?” When it is working as
+housed and maintained on the Internet and by someone else.            infrastructure, AMT platform clearly hums along supporting
+As long as the service keeps running, programmers need not            the work of employers — the programmers, managers, and
+concern themselves with where the code is running, what               start up hackers who integrate human computation into their
+kind of machine it runs on, or who keeps the code running,            technologies. In this light, that the design features and
+but only the proper protocol for issuing the call through a           development of AMT has prioritized the needs of employers
+computer and receiving the response. As-a-service suggests            over workers is not surprising.
+an arrangement of computers, networks, system
+                                                                      Further, by hiding workers behind web forms and APIs,
+administrators, and real estate that allows programmers to
+                                                                      AMT helps employers see themselves as builders of
+access a range of computer services remotely and instantly.
+                                                                      innovative technologies, rather than employers unconcerned
+Framing workers on AMT as computational services is                   with working conditions. Suchman argues that there are
+more than just rhetorical flourish. Through AMT, employers            “agencies at the interface” that reconfigure the relations
+can literally access workers through APIs. Though a web               among humans and machines, making both what they are
+form-based interface is available, the API allows AMT                 [40]. AMT’s power lies in part in how it reconfigures social
+employers can put tasks into the workforce and integrate              relations, rendering Turk workers invisible [37], redirecting
+worker output directly into their algorithms. Techniques for          focus to the innovation of human computation as a field of
+integrating workers into computational technologies in this           technological achievement.
+way have been pioneered in HCI, in databases research, and
+                                                                      Employing Humans-as-a-Service
+in industry (see [42] for a summary). Twitter, for example,           In this section, we explain basic features of AMT and show
+has recently open sourced a visual toolkit for running human          how the design prioritizes the needs of employers.
+judgment experiments on AMT [12]. These experiments are
+a key component of developing, evaluating, and training               AMT employers define HITs on AMT by creating web-
+search and ranking algorithms. Twitter’s toolkit offers an            based forms that specify an information task and allow
+interface for building these experiments, providing                   workers to input a response. Tasks include structuring
+monitoring tools and visualizations interfacing with AMT’s            unstructured data (e.g. entering a given webpage into an
+24/7, massively distributed workforce through APIs.                   employer’s structured form fields), transcribing snippets of
+CrowdFlower also builds atop AMT’s APIs, offering                     audio, and labeling an image (e.g. as pornography or
+crowdsourced data processing tools tailored to needs                  violating given Terms of Service). Employers define the
+common to different industries.                                       structure of the data workers must input, create instructions,
+                                                                      specify the pool of information that must be processed, and
+We see here, then, that AMT brings together crowds of                 set a price. (Ipeirotis [22] offers an excellent background.)
+workers as a form of infrastructure, rendering employees
+into reliable sources of computation. As established                  The employer then defines criteria that candidate workers
+organizations develop and publicly release tools for the              must meet to work on the task. These criteria include the
+system, they embed computational microwork firmly in                  worker’s “approval rating” (the percentage of tasks the
+existing technological practices and systems. AMT is                  worker has performed that employers have approved and, by
+becoming infrastructure in the sense that Star & Ruhleder             consequence, paid for), the worker’s self-reported country,
+have analyzed it: AMT is shared, AMT is incorporated into             and whether the worker has completed certain skill-specific
+existing shared practices, and ideally, AMT is ready-to-hand          qualification exams offered on the platform. This filter
+and worked through not on. Working technological                      approach to choosing workers, as compared to more
+infrastructures, in Star & Ruhleder’s analyses, are used with         individualized evaluation and selection, allows employers to
+such fluency that they become taken-for-granted, humming              request work from thousands of temporary workers in a
+quietly and usefully in the background. The infrastructures           matter of hours.
+kept humming dutifully in the background in AMT are the
+                                                                      Once a worker submits work, the employer can choose
+socio-technical system of workers interacting with
+                                                                      whether to pay for it. This discretion allows employers to
+employers through APIs, spreadsheets, and minimal web-
+                                                                      reject work that does not meet their needs, but also enables
+based task forms.
+                                                                      wage theft. Because AMT’s participation agreement grants
+Ruhleder and Star famously called for going beyond a                  employers full intellectual property rights over submissions
+consideration of what is infrastructure to a consideration of         regardless of rejection, workers have no legal recourse
+when is infrastructure [34]. Asking when is infrastructure            against employers who reject work and then go on to use it.
+
+
+
+
+                                                                613
+Session: Smart Tools, Smart Work                                        CHI 2013: Changing Perspectives, Paris, France
+
+
+
+
+                        Fig. 1: What a worker sees: the Human intelligence Tasks (HITs) list on AMT.
+
+Employers vet worker outputs through automated                       Turkopticon has been designed to offer workers a way to
+approaches such as qualifying workers through test tasks to          dissent, holding requesters accountable and offering one
+which the correct answer is known or requesting responses            another mutual aid.
+to a single input from several workers and algorithmically
+                                                                     MOTIVATING TURKOPTICON
+eliminating any answers that do not agree with the majority.
+                                                                     Turkopticon developed as an ethically-motivated response
+Within this large scale, fast moving, and highly mediated            to workers’ invisibility in the design of AMT. We were
+workforce, dispute resolution between workers and                    troubled by a number of issues in our first encounters with
+employers becomes intractable. Workers dissatisfied with a           AMT, not only worker invisibility. Workers, even in the
+requester’s work rejection can contact the requester through         US, are paid below minimum wage in many cases.
+AMT’s web interface. Amazon does not require requesters              Technologist and research discourse seemed unconcerned
+to respond and many do not; several requesters have noted            with the human costs of human computation. Individuated
+that a thousand to one worker-to-requester ratio makes               workers had little opportunity to build solidarity, offering
+responding cost prohibitive. In the logic of massive crowd           them little chance of creating sufficiently coordinated
+collaborations, dispute resolution does not scale. Dahn              actions to exert pressure on employers and Amazon.
+Tamir, a large-scale requester, explained a logic the first
+                                                                     Rather than working from our own intuitions, however, we
+author heard from several Turk employers:
+                                                                     took seriously the possibility that this new form of work
+“You cannot spend time exchanging email. The time you                also might offer workers benefits and pleasures that we did
+spent looking at the email costs more than what you paid             not understand, or cause troubles we could not anticipate.
+them. This has to function on autopilot as an algorithmic            Survey research on Turk worker motivations, for example,
+system…and integrated with your business processes.”                 reports that though a significant minority of workers rely on
+                                                                     their income from the platform to pay for household
+Instead of eliciting a response, workers’ dispute messages           expenses. At the same time, other workers report working
+become signals to the employer. Rick, a CEO of a                     for fun or to pass the time while bored (sometimes even at
+crowdsourcing startup, explained to me that messages from            another job) [23, 22, 33].
+workers signal the algorithm’s performance in managing
+workers and tasks. If a particular way of determining                Workers’ “Bill of Rights”
+“correctness” for a task results in a large number of                To provoke workers’ imaginations about the infrastructural
+disputing messages, Rick’s team will look into revising the          possibilities, we placed a task onto AMT asking workers to
+algorithm but rarely will retroactively revise decisions.            articulate a “Worker’s Bill of Rights” from their
+Algorithmic management, here, precludes individually                 perspective. We chose this approach over a more neutral
+accountable relations.                                               battery of questions because of the highly mediated nature
+                                                                     of our interactions with workers through the medium of the
+Workers have limited options for dissent within AMT itself.          HIT. Workers paid per task — of which our question was
+Resistance through incorrect answers can simply be filtered          one — provided short answers to open-ended questions
+out through employer’s algorithmic tests of correctness.             based on our past experiences questioning workers in the
+Dissatisfied workers’ within AMT had little option other             platform. Asking a provocative question drew stronger,
+than to leave the system altogether. Because AMT treats              more detailed responses oriented towards concerns of
+workers interchangeably and because workers are so                   crowdsourcing ethics. We also sought permission from
+numerous (tens of thousands by the most conservative                 workers to publish their responses on the web in hopes of
+estimates), AMT can sustain the loss of workers who do not           generating interaction between workers and broader publics
+accept the system’s terms.                                           concerned with crowdsourcing.
+
+
+
+
+                                                               614
+Session: Smart Tools, Smart Work                                         CHI 2013: Changing Perspectives, Paris, France
+
+Our work treated crowdsourcing ethics as an open question            justify their rejections, and that workers have the right to
+about a new technology, still under negotiation. In                  confront employers about those rejections.
+structurationist terms, practices and meanings of the
+                                                                     A number of workers directed their frustrations towards
+technology had not yet stabilized [32]. Our ethical
+                                                                     Amazon itself. One worker was so frustrated that he or she
+questions, then, were not trying to get at some underlying,
+                                                                     thanked the first author by name for posting the HIT and
+stable truth, but rather at ongoing ethical and political
+                                                                     offering an opportunity to express his anger: “I don’t care
+negotiations among participants in crowdsourcing systems.
+                                                                     about the penny I didn’t earn for knowing the difference
+Like Bruckman and Hudson, we gathered empirical data on
+                                                                     between an apple and a giraffe, but I’m angry that MT will
+workers’ ethics — here framed as rights — to explore the
+                                                                     take requester’s money but not manage, oversee, or mediate
+ethical dimensions of crowdsourcing [9]. Rather than draw
+                                                                     the problems and injustices on their site.”
+firm conclusions here, however, we continue to keep the
+debate open. We grapple with the problem of advocacy as              Another worker noted the imbalance in Amazon’s priorities
+explained by Bardzell [2], in which Feminist HCI                     as they developed the AMT platform:
+practitioners both seek to bring about social progress, but
+                                                                     “I would also like workers to have more of a say around
+also question their own images of what such social progress
+                                                                     here, so that they can not easily be taken advantage of, and
+looks like. By publishing responses to our questions and
+                                                                     are treated fairly, as they should be. Amazon seems to pay
+building Turkopticon, as we will discuss, we sought to
+                                                                     more credence to the requesters, simply ignoring the fact
+provoke debate about progress in crowdsourcing and make
+questions of work conditions visible among technologists,            that without workers, nothing would be done!”
+policy makers, and the media.                                        We confirmed this priority with prominent requesters as
+                                                                     well as a source close to Amazon who wished to remain
+Workers’ responses to the question of a “Bill of Rights”
+                                                                     anonymous. Because Amazon collects money for task
+revealed a range of concerns, some broadly expressed
+                                                                     volume, Amazon has little reason to prioritize worker needs
+among workers and others that polarized.
+                                                                     in a market with a labor surplus.
+Of our 67 responses [42], workers recurringly raised a
+                                                                     Mutual Aid for Accountability
+number of issues:
+                                                                     Our exploratory interactions with workers left us with no
+•   35 workers felt that their work was regularly rejected           unified image of what workers are like and what
+    unfairly or arbitrarily                                          intervention might be “appropriate.” Those workers who
+                                                                     suggested action offered diverse ways forward. Some were
+•   26 workers demanded faster payment (Amazon allows
+                                                                     interested in a forum in which Turkers could air concerns
+    employers 30-days to evaluate and pay for work)
+                                                                     publicly without censorship or condescension, and worker
+•   7 explicitly mentioned a “minimum            wage"   or          visibility and dignity more generally. Others were interested
+    “minimum payment" per HIT                                        in a way to build long-term work relationships with prolific
+•   14 mentioned “fair" compensation generally                       requesters, and worker-requester relations generally. Several
+                                                                     respondents asked for unionization, while several others
+•   8 expressed dissatisfaction with employers’ and                  volunteered their aversion to unions.
+    Amazon’s lack of response to their concerns
+                                                                     There were few shared values and priorities that could guide
+The consequences of these occupational hazards for workers           the development of an infrastructure of mutual aid. There
+included lost or delayed income, accidental download of              were, however, possibilities for creating partial alliances —
+malware that damaged their computers, and reduced worker             points of common cause across diverse workers. Donna
+“approval ratings.” Approval ratings are one of the few              Haraway, a feminist STS scholar, argues for partial
+ways employers can filter workers. When an employer                  connections — alliances built on common cause rather than
+rejects an employer’s work, whether because it did not meet          common experience or identity — as a way to sustain
+their needs or simply so they employer did not have to pay,          political and ethical action across people with irreducible
+the worker’s approval rating goes down. If the rating goes           differences [20].2 We took inspiration from this approach.
+too far down, AMT will hide tasks requiring high ratings
+from the worker. Lost approval ratings, then, are lost
+opportunities for work which make it even more difficult to          2
+accumulate experiences to raise the rating again.                       Haraway’s argument responded to criticisms that socialist
+                                                                     feminism, a Marxist analysis of gender, claimed white women’s
+A Sense of Fairness                                                  experiences of gender marginalization as common cause for all
+Beyond the inconveniences and dangers of doing Turk                  women. Crenshaw, for example, countered that women exist at the
+work, several workers articulated a more general frustration         intersection of race, class, and gender categories; each intersection
+we characterize as a sense of fairness. This sense came              created specific kinds of vulnerabilities. What Haraway proposed
+through in numerous responses that requesters ought to               was a way to make progressive interventions without making
+                                                                     universalizing claims about the issues of all women. She did this
+respond to questions from workers, that requesters ought to
+                                                                     by proposing that women, as irreducibly different “cyborgs,” build
+                                                                     alliances based on common cause and partial connections [20].
+
+
+
+
+                                                               615
+Session: Smart Tools, Smart Work                                           CHI 2013: Changing Perspectives, Paris, France
+
+Motivated by responses to the “Bill of Rights,” we designed            name, and insert a small CSS button next to the name that,
+and built Turkopticon. Turkopticon responded in part to the            on mouse-over, launches more details on that requester. The
+occupational hazards of Turking listed above. We also built            extension issues an XMLHTTP request for details we have
+Turkopticon to offer workers ways of supporting one                    on the requester that then load in the background as the rest
+another in context of their existing practices. The system             of the “Available HIT” page renders.
+allows workers to make their relationships with employers
+                                                                       The embedded review overlay contains both averaged
+visible and call those employers to account. As workers
+                                                                       ratings of the requester, and a link to view all reviews and
+build up the record of relationships with employers, they
+                                                                       open-ended comments on the requester on our website. (See
+also build up a commons together with other contributors.
+                                                                       figure 2.) From this overlay, workers can also review
+By explicitly designing for scales beyond the individual or
+                                                                       requesters. When the worker clicks the requester review
+the dyadic relationship, we sought to build up a group of
+                                                                       link, we take them to Turkopticon’s requester review form
+people who see their interests as aligned with others [16,
+                                                                       with the requester ID we strip from page’s underlying
+31]. Dourish called this the design of politics; he calls for
+                                                                       HTML pre-populating the review’s form field. The
+moving beyond the user-technology dyad that often defines
+                                                                       embedded overlay is available anywhere in the AMT
+design interventions to the creation of larger scale
+                                                                       interface where a worker might see a requester: both at
+collectives and movements building on social software.
+                                                                       points where they are selecting HITs and where they are
+The crowd we wanted to mobilize into a collective,                     checking approval and payment status for submitted HITs.
+however, was constituted by an infrastructure we had no
+                                                                       Standardizing Requester Reputations
+control over – the AMT platform itself. In contrast to the
+                                                                       We now turn to how the kind of data we decided to collect
+collectives Dourish seeks to mobilize through Facebook, or
+                                                                       on requesters. Because the AMT model often has workers
+the Internet hackers Chris Kelty describes as building the             doing HITs from a large number of employers in a session,
+infrastructure that make their association possible [26, p.3],         we needed to offer workers a quick way to assess
+our task was to create a means of association people whose             employers. We also saw in the Bill of Rights that workers
+common cause was their work on AMT but who lack the                    were not unified in what they valued in an employer. Some
+technical skills to build infrastructures of assembly. Rather          wanted a short response time while others did not care, for
+than design a system anew, our work was to graft a new                 example. By taking ratings on various qualities rather than
+infrastructure onto an existing one.                                   taking an aggregating rating in the style of product review
+TURKOPTICON: THE SYSTEM                                                sites, we offered workers discretion in evaluating the
+Turkopticon is a browser extension for Firefox and Chrome              ratings.
+that augments workers’ view of their AMT HIT lists with
+                                                                       Turkopticon collects quantitative ratings from reviewers on
+information other workers have provided about employers
+                                                                       four qualities that we hypothesized would be relevant based
+(“Requesters” in AMT parlance). Workers enter reviews of
+                                                                       on the Workers’ Bill of Rights survey.
+employers that they have worked with, entering ratings of
+four qualities of employers as well as an open-ended                   •   Communicativity: How responsive has this requester
+comment explaining their rating. These reviews are                         been to communications or concerns you have raised?
+available on the Turkopticon website; workers can view
+                                                                       •   Generosity: How well has this requester paid for the
+both recent reviews, as well as all reviews for a particular
+                                                                           amount of time their HITs take?
+requester, identified by a unique Amazon requester ID.
+                                                                       •   Fairness: How fair has this requester been in approving
+Turkopticon is named for panopticon, a prison surveillance                 or rejecting your work?
+design most famously analyzed by Foucault. The prison is
+round with a guard tower in the center. The tower does not             •   Promptness: How promptly has this requester approved
+reveal whether the guard is present, so prisoners must                     your work and paid?
+assume they could be monitored at any moment. The                      A score of "0" means we have no data for that attribute
+possibility of surveillance, the theory goes, induces
+prisoners to discipline themselves. Turkopticon’s name                 We also require workers to enter a free-form text comment
+cheekily references the panopticon, pointing to our hope that          to contextualize their scores. We provide the free-form box
+the site could not only hold employers accountable, bu                 so that workers can share more nuanced, fine-grained stories
+induce better behavior.                                                of their experiences. We require workers to fill it, however,
+                                                                       because the substance of testimonials is one of the ways
+Going beyond simply a review site, we designed                         other workers can evaluate other workers credibility.
+Turkopticon to fit into workers existing Turking workflow.
+The browser extension – a Javascript userscript packaged               Bootstrapping a Collective System
+for both Firefox and Chrome – works by searching the                   Turkopticon is nothing without users and their reviews; like
+document object model (DOM) of AMT pages as the                        many CSCW systems, it requires a “critical mass” to serve
+worker browses. We locate links that contain requester IDs             users at all [1]. How to launch a brand new system when the
+in their target URLs, choose the link that is a requester              system has no content? Generating community around the
+                                                                       project was difficult because workers were so invisible,
+
+
+
+
+                                                                 616
+Session: Smart Tools, Smart Work                                         CHI 2013: Changing Perspectives, Paris, France
+
+
+
+
+                                                                              Fig. 3: Workers are protected from retribution
+                                                                                by the obfuscation of their email addresses.
+
+                                                                      incentives for requesters to write positive reviews for
+                                                                      themselves and, in practice, requesters attempt to do this.
+                                                                      We balanced the need for anonymity with reputation by
+                                                                      displaying users’ reviews signed with a partially obfuscated
+                                                                      email address. This email address is then linked to a page
+                                                                      that shows all reviews written by that user. Readers of
+                                                                      reviews can make judgments about the credibility of
+                                                                      workers by evaluating other contributions by the user and
+  Fig. 2: The Turkopticon browser add-on adds information             making their own decision about whether to engage the
+          about requesters provided by other workers.                 employer.
+largely separated from one another, and today’s prominent             Comment Moderation
+worker forums (e.g. TurkerNation or mturkforum) were                  After two years of running the tool unmoderated, we
+much smaller.                                                         developed a set of user interface designs to allow selected
+                                                                      users to moderate comments on the site. The mechanism is
+We overcame this problem by enlisting the support of                  technically simple, leaning on existing social practices and
+DoloresLabs, a crowdsourcing company that builds custom               community reputation. Any Turkopticon user can flag a
+toolkits for employers wishing to employ Mechanical Turk              review. A moderator has to add a second flag to hide the
+labor. DoloresLabs created a task for our team with a list of         review from the site.
+prominent requesters and solicited 300 initial reviews for
+which it compensated workers. The initial reviews seeded              We selected our first cohort of moderators by calculating the
+our database so new users installing Turkopticon could                most prolific reviewers on the site, emailing them
+immediately integrate the tool into their workflow. Rather            invitations to moderate Turkopticon, and posting the list of
+than requiring initial users to produce reviews, our                  those who accepted invitations to a widely read worker
+bootstrapping allowed for users to consume the reviews we             forum. We left nominations up for a week and received no
+hoped they would eventually produce and improve upon.                 objections, so we proceeded.
+
+Making alliance with a prominent employer in the                      In selecting moderators, we also attempted to align
+Mechanical Turk system was a double-edged sword.                      Turkopticon with other worker forums in two ways. First,
+DoloresLabs supported us because they believed that                   we selected moderators from the worker community who
+crowdlabor industries would benefit from a fairer labor               were engaged in debates and movements in worker forums
+market; Turkopticon promised to remedy the information                that we, as non-workers, had little visibility into. By letting
+asymmetry between workers and employers, repairing                    moderators in, we also gave them visibility and input into
+Mechanical Turk into a more “transparent” marketplace [6].            our design processes; based on this inside view, these
+Our team, by contrast, built Turkopticon in part to draw              moderators have been able to vouch for us during critical
+attention to commodification and exploitation in large-scale          junctures where a bug or misunderstood feature triggers
+crowdsourcing markets. Just as the Turkopticon tool was a             suspicions among users.
+way of building partial connections across workers, the               Along with moderation, we also introduced an option for
+Turkopticon design process made partial connections                   workers to take on screen names – self-chosen identifiers –
+despite different visions for the future of crowdsourcing.            in place of their obfuscated email addresses. This simple
+Reputation without Retribution                                        measure has made it possible for reviewers to choose to
+Turkopticon attempts to prevent employers from retaliating            harmonize their Turkopticon identity with their identity in
+against workers writing reviews by obfuscating workers’               other forums. We do not, however, force any harmonization.
+email addresses. As we designed Turkopticon, we                       We rely on primarily social moderation, by a small number
+anticipated that workers would fear retribution for writing           of moderators, for several reasons. First, automated
+critical reviews. Our discussions with workers on forums              approaches are difficult to implement in practice because
+have confirmed this at least for some workers. At tension             they cannot account for community-specific and emergent
+with the need for anonymity, however, is the need for                 norms [38]. Within the space of social moderation, broad-
+reputation among users of the system. There are high                  based community moderation (e.g. Slashdot [27]) is
+                                                                      susceptible to vandalism because our users are potentially
+
+
+
+                                                                617
+Session: Smart Tools, Smart Work                                          CHI 2013: Changing Perspectives, Paris, France
+
+from two competing classes with opposed incentives.                    technology design’s potential for sustaining new polities
+Requesters could easily make an account and begin flagging             that can become powerful foundations for social change.
+negative reviews they have received, or even pay Turk
+                                                                       Tactical Quantification
+workers to down vote their reviews. Moderators draw on                 Although quantification has myriad problems as a
+knowledge from their involvement in other worker forums                description of lived practice, Turkopticon employs tactical
+to judge the credibility of reviews in question.                       quantification to enable worker interaction and employer
+DISCUSSION                                                             accountability while integrating into the rhythms of AMT.
+                                                                       Tactical quantification is a use of numbers not because they
+Strengthening Ties Through Maintenance and Repair
+Though HCI has conventionally been concerned with the                  are more accurate, rational, or optimizable [10], but because
+                                                                       they are partial, fast, and cheap – a way of making do in
+design, deployment, and evaluation of technological
+                                                                       highly constrained circumstances.
+artifacts, the social and technical life of Turkopticon, like
+any technology, depends on ongoing maintenance and repair              We were skeptical of quantifying workers’ rich experiences
+[25]. Certainly, we do ongoing technical maintenance. For              and diverse frustrations, conditioned by their diverse social
+example, we have to rebuild the extension when Firefox and             positions and needs. HCI researchers have raised a number
+Chrome release versions with new requirements of add-ons;              of critiques of quantification in computational systems.
+server load that grew with use demanded that we rewrite                Quantification has been associated with failed, injurous
+code to make more efficient use of our servers resources.              modernist attempts to model, rationalize, and optimize
+Less remarked on, however, is the work of keeping up with              messy real world systems. These models necessarily
+changing design requirements as worker and requester                   universalize and simplify [10]. In the hands of powerful
+practices change. Comment moderation to cull increasing                actors, quantifying, approximate models can drive policies
+                                                                       that attempt to form the world in models’ images [17].
+requester reviews and profanity was one such change,
+already discussed. We also recently augmented the requester            The use of Turkopticon in the wild has, unsurprisingly,
+review form with a toggle indicating whether a requester               borne out some of these concerns. The “generosity”
+violates Amazon’s Terms and Conditions. These design                   category, for example, has strained under the weight of
+changes reflect changing norms as the kinds of tasks and               representing such a subjective assessment. Workers in India
+practices on AMT shift.                                                accustomed to much lower salaries and cost of living than
+As important as the specific design features that we add and           Americans may feel that a job averaging $2 an hour is
+upkeep are the community relationships we build and                    generous, while an American might balk at such a rate.
+strengthen through this ongoing maintenance of                         Standardizing ratings into quantified buckets was instead a
+Turkopticon. We learn of concerns and confusions through               compromise we made to our own values as designers in
+our user support forum, through our email, and through our             negotiating the power relations of the AMT ecosystem.
+moderators who face emerging review practices on the                   AMT emphasizes speed and scale [11, 36]. To attract and
+frontline of the Turkopticon reviews page. We, as systems              retain users, we had to begin with the norms of the
+designers and maintainers, gain from highly engaged                    infrastructure in which we intervened, lest we push too far
+workers who help us understand what it means to see like a             and become incompatible.
+Turk worker and keep up with changes to their evolving
+practices. We enlist moderators in discussions of web site             In this sense, Turkopticon is not an expression of our own
+policy and interaction design, and alter and repair the                values, or even the values of the users we interviewed, but a
+technology in response to their requests and observations.             compromise between those values and the weight of the
+Moderators here are not objects to be observed by us, but              existing infrastructural norms that torqued our design
+experts in their own right who participate in the collective           decisions as we intervened in this powerful, working real
+activism of keeping Turkopticon thriving. (Bardzell and                world system. In their analyses of the consequences of
+Bardzell have also argued for the incorporation of experts             infrastructural classifications, Bowker and Star use the
+into activist design.)                                                 concept of torque to describe the way people’s lives can be
+                                                                       twisted and shaped as they are forced to fit classification
+This work of maintenance and upgrading, undertaken with                systems and infrastructures, such as racial classifications on
+the participation of workers, does more than offer insight             government documents or disease categorizations. People
+into needs and requirements. This work strengthens ties and            live messy, fluid lives that can fall out of sync with the
+builds solidarity among workers collaborating on the                   rhythms, categories, and temporality of the infrastructure
+practical, shared, and political circumstances they face as            [8,p.190]. Bowker and Star note that more powerful actors
+crowdworkers. Dourish has argued that HCI research often               do not experience torque as they determine the categories of
+takes market framings for granted, individuating users as              the infrastructure and often experience those categories as
+decision-makers to be persuaded or empowered [16].                     natural. We were situated at the margins of a large, working
+Framings of social computing that emphasize networks and               sociotechnical system, trying to insert ourselves in. The
+interaction can similarly frame collectivity as an aggregation         design of Turkopticon, then, had to be as much an
+of individuals. We call on HCI researchers to instead see              expression of the standards and rhythms set by a large,
+
+
+
+
+                                                                 618
+Session: Smart Tools, Smart Work                                          CHI 2013: Changing Perspectives, Paris, France
+
+corporate infrastructure as it was of designer and user                platforms. This agonistic reminder disrupts the optimism
+values, desires, and politics. By intervening in a working,            that surrounds crowdpowered systems.
+real world collaborative technological system, we did not
+                                                                       However, Turkopticon’s existence sustains and legitimizes
+enjoy the luxuries of ethics- and values-oriented design
+                                                                       AMT by helping safeguard its workers. AMT relies on an
+projects that design technologies anew.
+                                                                       ecosystem of third party developers to provide functional
+Publics and their Means of Assembly                                    enhancements to AMT (e.g. CrowdFlower, SamaSource,
+A number of researchers have argued that design activities             Twitter). Turkopticon is a squeaky but reliable part of this
+can generate publics – groups that coalesce around                     ecosystem. Ideally, however, we hoped that Amazon would
+identification with a common problem and a shared effort to            change its systems design to include worker safeguards.
+resolve the problem [14, 30]. Activities such as exploratory           This has not happened. Instead, Turkopticon has become a
+prototyping or future-envisioning engage diverse                       piece of software that workers rely on funded through
+stakeholders in identifying causes of common concern.                  subsidies from academic research – an unsustainable
+Design engagement offers one way of collectively inquiring             foundation for such a critical tool.
+into assumptions, dependencies, and paths forward.
+                                                                       To stay vital, our team plans on developing new media
+Our early work on Turkopticon – especially the Workers’                interventions to give the Turkopticon community greater
+Bill of Rights – shared this spirit of engaging workers in             visibility to the press, to policy makers, and to organizers.
+imagining alternative ways of doing microlabor. Workers’               Through the design of layered infrastructures, we can
+responses revealed vastly disparate visions and self-                  support complex and overlapping publics that open up
+understandings when it came to issues of minimum wage,                 questions about possible futures once again.
+relations with requesters, and desire for additional forms of
+support. Moreover, workers distributed across the world                This paper has offered an account of an activist systems
+faced vastly different circumstances. Indian Turkers, for              development intervention into the crowdsourcing system
+example, tend to be highly educated and face lower costs of            AMT. We argued that AMT is predicated on
+living than Americans. Bringing these workers together as a            infrastructuring and hiding human labor, rendering it a
+public to engage in shared inquiry and democratic                      reliable computational resource for technologists. Based on
+interchange would require speaking across cultures,                    a “Workers’ Bill of Rights” meant to evoke workers’
+ideologies, and vastly different life circumstances.                   imaginations, we identify hazards of crowdwork and our
+Turkopticon performs an intermediate step in the formation             response as designers to those hazards – Turkopticon. The
+of publics by bringing people together around practical,               challenges of developing Turkopticon shows the challenges
+broadly shared concerns. By creating infrastructures for               of developing real-world technologies that intervene in
+mutual aid, we bolster the social interchange and                      existing, large-scale sociotechnical systems. Such activism
+interdependency that can become a foundation for a more                takes design out of the studio and into the wild, not only
+issue-oriented public. There have been calls in HCI for                testing the seeds of possible technological futures, but
+representing interdependence as a way of working towards               attempting to steer and shift the existing practices and
+more ethical and sustainable practices [31]. AMT’s labor               infrastructures of our technological present.
+market, however, individuates by design; workers are                   ACKNOWLEDGEMENTS
+independent by default. Turkopticon provides an                        We dedicate this paper to the memory of Beatriz da Costa,
+infrastructure through which workers can engage in                     the tactical media artist and professor who pushed us to take
+practices of interdependence, here as mutual aid.                      the plunge from imagining to building and maintaining. We
+THE AMBIVALENCE           OF    SUCCESS       IN   ACTIVIST
+                                                                       thank Chris Countryman, Paul Dourish, Gillian Hayes, Lynn
+TECHNOLOGIES                                                           Dombrowski, Karen Cheng, Khai Truong, and anonymous
+Turkopticon has succeeded in attracting a growing base of              reviewers for feedback. This work was supported by NSF
+users that sustain it as a platform for an information-sharing         Graduate Research Fellowship and NSF award 1025761.
+community. In part because of its practical embeddedness, it           REFERENCES
+has drawn sustained attention to ethical questions in                  1. Ackerman, M. 2000. The intellectual challenge of
+crowdsourcing over the course of its operation. This                      CSCW: The gap between social requirements and
+attention comes not only in the crowdsourcing community,                  technical feasibility. Human-computer interaction,
+but also in broader public fora. We have been invited to                  15(2), 179–203.
+speak at industry meetups and on Commonwealth Club
+panels on crowdsourcing. We have also attracted attention              2. Bardzell, S. 2010. Feminist HCI  : Taking Stock and
+                                                                          Outlining an Agenda for Design, Proc. CHI, 1301–1310.
+from journalists writing pieces on crowdsourcing in venues
+such as O’Reilly Radar, The Sacramento Bee, AlterNet, and              3. Barley, S.R. and Kunda, G. 2004. Gurus, hired guns,
+The San Jose Mercury News. As a media piece,                              and warm bodies: itinerant experts in a knowledge
+Turkopticon’s sustained dissent over the last four years has              economy. Princeton University Press.
+qualities of adversarial design [15]; the system stands as a
+visible reminder of the microlabors that sustain crowd
+
+
+
+
+                                                                 619
+Session: Smart Tools, Smart Work                                         CHI 2013: Changing Perspectives, Paris, France
+
+
+4. Berg, M. 1998. The politics of technology: On bringing             23.Ipeirotis, P. 2010. Analyzing the Mechanical Turk
+   social theory into technological design. ST&HV, 23(4),                Marketplace. XRDS, 17(2), 16-21.
+   456–490.                                                           24.Ipeirotis, P. 2008. Why People Participate in Mechanical
+5. Bezos, J. 2006. Opening Keynote. MIT Emerging                         Turk? Accessed: http://www.behind-the-enemy-
+   Technologies Conference. Accessed:                                    lines.com/2008/03/why-people-participate-on-
+   http://video.mit.edu/watch/opening-keynote-and-                       mechanical.html
+   keynote-interview-with-jeff-bezos-9197/                            25.Jackson, S., Pompe, A., and Krieshok, G. 2011. Things
+6. Biewald, L. 2009. “Turkopticon.” Crowdflower Blog.                    fall apart: maintenance, repair, and technology for
+   Accessed:                                                             education initiatives in rural Namibia. Proc iConference,
+   http://blog.crowdflower.com/2009/02/turkopticon/                      83–90.
+7. Borning, A. and Muller, M. 2012. Next steps for value              26.Kelty, C. 2012. Two Bits: The Cultural Significance of
+   sensitive design. Proc. CHI, 1125-1134.                               Free Software. Duke University Press.
+8. Bowker, G. & Star, S.L. 2000. Sorting Things Out:                  27.Lampe, C. and Resnick, P. 2004. Slash(dot) and burn.
+   Classification and Its Consequences. MIT Press.                       Proc SIGCHI 2004, 543–550.
+9. Bruckman, A. and Hudson, J.M. 2005. Using Empirical                28.Law, E. and Von Ahn, L. 2011. Human Computation.
+   Data to Reason about Internet Research Ethics. Proc.                  Morgan Claypool Publishers.
+   ECSCW, 287-306.                                                    29.Law, J. 2004. After method: mess in social science
+10.Brynjarsdottir, H., Håkansson, M., Pierce, J., Baumer,                research. Routledge.
+   E., DiSalvo, C., and Sengers, P. 2012. Sustainably                 30.LeDantec, C. 2012. Participation and Publics:
+   unpersuaded. Proc. CHI, 947–956.                                      Supporting Community Engagement, Proc. CHI 2012,
+11.Crenshaw, K. 1991. Mapping the Margins:                               1351-1360.
+   Intersectionality, Identity Politics, and Violence Against         31.Light, A. 2011. Digital interdependence and how to
+   Women of Color. Stanford Law Review, 43(6), 1241-                     design for it. Interactions, 18 (2), 34.
+   1299.
+                                                                      32.Orlikowski, W.J. 1992. The Duality of Technology:
+12.Crowdsourced data analysis with Clockwork Raven.                      Rethinking the Concept of Technology in Organizations.
+   Accessed at                                                           Organization Science, 3(3), 398–427.
+   http://engineering.twitter.com/2012/08/crowdsourced-
+   data-analysis-with.html                                            33.Ross, J., Irani, L., Silberman, M.S., et al. 2010. Who are
+                                                                         the crowdworkers?, EA CHI 2010 (alt.chi), 2863-2872.
+13.da Costa, B. and Philip, K., eds. 2008. Tactical
+   Biopolitics: Art, Activism, Technoscience. MIT Press.              34.Ruhleder, K. and Star, S.L. 2001. Steps Toward an
+                                                                         Ecology of Infrastructure: Design and Access for Large
+14.DiSalvo, C. 2009. Design and the Construction of                      Information Spaces. In J. Yates and J. Van Maanen, eds.,
+   Publics. Design Issues, 25(1), 48–63.                                 Information Technology and Organizational
+15.DiSalvo, C. 2012. Adversarial Design. MIT Press.                      Transformation: History, Rhetoric, and Practice. Sage,
+16.Dourish, P. 2010. HCI and environmental sustainability:               305–343.
+   the Design of Politics and Politics of Design. Proc. DIS           35.Smith, V. 1997. New Forms of Work Organization.
+   2010, 1–10.                                                           Annual Review of Sociology, 23, 315–339.
+17.Dourish, P. and Mainwaring, S. 2012. Ubicomp’s                     36.Snow, R., O’Connor, B., Jurafsky, D., & Ng, A.Y. 2008.
+   Colonial Impulse. Proc. Ubicomp.                                      Cheap and fast---but is it good?: Evaluating non-expert
+18.Felstiner, A. 2010. Working the Crowd  : Employment                   annotations for natural language tasks. Proc. EMNLP,
+   and Labor Law in the Crowdsourcing Industry. Berkeley                 254–263.
+   Journal of Employment & Labor Law, 32 (1), 143–204.                37.Star, S.L. and Strauss, A. 1999. Layers of Silence,
+19.Garcia, D. and Lovink, G. 1997. The ABC of tactical                   Arenas of Voice: The Ecology of Visible and Invisible
+   media. nettime listserv. Accessed:                                    Work. Proc. CSCW, 8, 9–30.
+   http://www.nettime.org/Lists-Archives/nettime-l-                   38.Sood, S., Antin, J., and Churchill, E. 2012. Profanity use
+   9705/msg00096.html                                                    in online communities. Proc. CHI 2012, 1481–1490.
+20.Haraway, D.J. 1990. Simians, Cyborgs, and Women: The               39.Suchman, L. 1995. Making Work Visible. CACM, 38(9).
+   Reinvention of Nature. Routledge.                                  40.Suchman, L. 2006. Human Machine Reconfigurations,
+21.Hirsch, T. 2009. Learning from activists. Interactions,               Cambridge Univ. Press.
+   16(3), 31–33.                                                      41.Taylor, A. 2011. Out There. Proc CHI, 685–694.
+22.Ipeirotis, P. 2010. Demographics of Mechanical Turk..              42.TurkWork. http://turkwork.differenceengines.com
+   NYU Working Paper No. CEDER-10-01
+
+
+
+                                                                620
+

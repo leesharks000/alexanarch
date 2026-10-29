@@ -1,0 +1,90 @@
+{
+ "row": "yale-budget-lab-ai-tracker",
+ "address": "Yale Budget Lab AI labor market",
+ "entity": "Tracking the Impact of AI on the Labor Market (the AI Labor Market Tracker; https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market), The Budget Lab at Yale's interactive tracker, published 16 July 2026, Version 1.0 updated 15 September 2026 with August 2026 CPS microdata, the page dated 14 October 2026, continuing the Lab's analysis 'Evaluating the Impact of AI on the Labor Market: Current State of Affairs' (Gimbel, Kinder, Kendall and Lee, 1 October 2025): occupational churn, AI exposure and usage metrics, and comparisons of AI-exposed and unexposed workers by synthetic differences-in-differences; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/yale-budget-lab-ai-tracker/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "yale-budget-lab-ai-tracker",
+  "address": "Yale Budget Lab AI labor market",
+  "entity": "Tracking the Impact of AI on the Labor Market (the AI Labor Market Tracker; https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market), The Budget Lab at Yale's interactive tracker, published 16 July 2026, Version 1.0 updated 15 September 2026 with August 2026 CPS microdata, the page dated 14 October 2026, continuing the Lab's analysis 'Evaluating the Impact of AI on the Labor Market: Current State of Affairs' (Gimbel, Kinder, Kendall and Lee, 1 October 2025): occupational churn, AI exposure and usage metrics, and comparisons of AI-exposed and unexposed workers by synthetic differences-in-differences; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/yale-budget-lab-ai-tracker/)",
+  "row_type": "C (a public entity on which the archive bears: a labor-market tracker; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\b(Yale )?Budget Lab\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bbudgetlab\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI Labor Market Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bTracking the Impact of AI on the Labor Market\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bEvaluating the Impact of AI on the Labor Market\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI exposure metrics for occupations",
+    "pattern": "\\b((gen(erative )?)?AI|GenAI|LLM|GPT)[- ]?(task )?exposure\\b|\\bexposure (metrics?|scores?|index|data)\\b|\\bEloundou\\b|\\bGPTs are GPTs\\b|\\bcapability projection\\b",
+    "flags": "i",
+    "basis": "field: B3 (the Lab's 'Labor Market AI Exposure: What Do We Know?', Key Takeaways: 'AI exposure metrics broadly agree with each other'; ¶1: 'Many analysts—including those at The Budget Lab—utilize Eloundou et al.'s exposure metrics'); B1 ('Insights from AI \"Exposure\" and Usage'; 'OpenAI's \"Exposure\" Data'); B6 (the tracker PDF: 'Details of AI exposure metrics are discussed in Gimbel, Kendall, and Kulsakdinun (2026)'). The census's evidence_kind 'exposure estimate' for the entity (LV record, census.json rows[slug == 'yale-budget-lab-ai-tracker'].evidence_kind)."
+   },
+   {
+    "term": "AI's observed effects on employment and the labor market",
+    "pattern": "\\blabou?r[- ]market (impacts?|effects?|disruption|footprint)\\b|\\b(labou?r|job|worker) displacement\\b|\\bwhich jobs AI (eliminates|replaces|automates)\\b|\\bAI[- ](driven )?(job loss(es)?|displacement)\\b|\\bemployment effects? of AI\\b",
+    "flags": "i",
+    "basis": "field: B2 (the tracker, Key Takeaways: 'does not yet clearly indicate an AI-related labor market footprint'); B1 ('Overall, our metrics indicate that the broader labor market has not experienced a discernible disruption'); B4 ('The results do not yet show clear indication of labor market effects of AI'). The census's evidence_kind 'observed employment outcome' and intersection 'gains-and-losses' for the entity (census.json rows[...].evidence_kind, .intersections)."
+   },
+   {
+    "term": "AI usage data as labor-market evidence",
+    "pattern": "\\b(AI|Claude|chatbot) usage (data|measures?|metrics?)\\b|\\bmeasures? of AI usage\\b|\\busage data from (all )?(the )?leading AI\\b",
+    "flags": "i",
+    "basis": "field: B2 ('Measures of AI usage show no connection to changes in employment or unemployment'); B1 ('Anthropic's Usage Measure'; 'the most important data needed is comprehensive usage data from all the leading AI companies'); census method ('usage measures set against employment and unemployment') and negative_tags ('NOT a usage dataset: it uses usage measures as inputs')."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own evidence kind or method for the entity, stated by field sources at the loci given: (1) AI exposure metrics for occupations (census evidence_kind 'exposure estimate'; B3 Key Takeaways and ¶1, B1 'OpenAI's \"Exposure\" Data', B6 Introduction); (2) AI's observed effects on employment and the labor market (census evidence_kind 'observed employment outcome', intersection 'gains-and-losses'; B2 Key Takeaways, B1 ¶4, B4 Key Takeaways); (3) AI usage data as labor-market evidence (census method and negative_tags; B2, B1 'Anthropic's Usage Measure' and 'Data Limitations'). The aliases are the Lab's name (Budget Lab, Yale Budget Lab, budgetlab) and the tracker's two titles and alias. The archive's instruments of labor direction bear on another intersection: Directionality of Semantic Labor (#771) measures 'Where Synthetic Labor Flows Relative to the Commissioned Task' (title), with user labor drag and the directionality stack, all on labor performed with AI inside a commissioned task (the census's 'labor-with-ai'); the census gives this entity 'gains-and-losses' only and its lv_intersection as 'none stated', and no field source states that the tracker measures task direction (B1 uses Anthropic's automation/augmentation categories of Claude usage as an input, 'Augmentation = Validation + Task Iteration + Learning'), so DSL, ULD and the stack enter only where a sentence applies them to one of the three classes, which the string pass tests. The semantic-labor line (e.g. #18, The Semantic Economy, §II, where Floridi's ledger has 'no account of who captures value') is tested the same way: admitted only where a sentence applies its category to a sourced class. Admission by reading (§3.4): a bare mention, a reference-list entry or a citation line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addendum BRIEF-NEW-ROW-LABOR.md; address 'Yale Budget Lab AI labor market' (yale-budget-lab-ai-labor-market-aio-20261029, OBS-9c44ea25d2ca, ADDR-2f74f55d9377), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#716).",
+  "hop_from": [
+   716
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 1,
+  "O_deposits": 1,
+  "H_candidates": 29
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "141": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "33e4048f9a997f2a77fc2929fcf77c45d2bf676ae36fdb3d84569c962e4ac9e4",
+  "candidates-H.jsonl": "ab00aa8f3e5a62b020373830b56e33cefb3e46d50e0431df2ff45292ef295799"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

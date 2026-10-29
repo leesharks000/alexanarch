@@ -1,0 +1,118 @@
+{
+ "row": "fairwork-cloudwork",
+ "address": "Fairwork Cloudwork Ratings",
+ "entity": "Fairwork Cloudwork Ratings (fairwork.oii.ox.ac.uk/en/ratings/cloudwork/), the ratings of the Fairwork project, based at the Oxford Internet Institute, University of Oxford, and the WZB Berlin Social Science Center, that score cloudwork (online remote) digital labour platforms out of 10 against the five Fairwork Cloudwork Principles (fair pay, conditions, contracts, management, representation); third report Fairwork Cloudwork Ratings 2025: Advancing Standards in Digital Labour and AI Supply Chain Governance (16 platforms; 776 workers in 100 countries); earlier reports 2021, 2022/2023; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/fairwork-cloudwork/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "fairwork-cloudwork",
+  "address": "Fairwork Cloudwork Ratings",
+  "entity": "Fairwork Cloudwork Ratings (fairwork.oii.ox.ac.uk/en/ratings/cloudwork/), the ratings of the Fairwork project, based at the Oxford Internet Institute, University of Oxford, and the WZB Berlin Social Science Center, that score cloudwork (online remote) digital labour platforms out of 10 against the five Fairwork Cloudwork Principles (fair pay, conditions, contracts, management, representation); third report Fairwork Cloudwork Ratings 2025: Advancing Standards in Digital Labour and AI Supply Chain Governance (16 platforms; 776 workers in 100 countries); earlier reports 2021, 2022/2023; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/fairwork-cloudwork/)",
+  "row_type": "C (a public entity on which the archive bears: a rating programme; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bFair ?work\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bcloud ?work (ratings?|report|principles)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bfair\\.work\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "cloudwork: online remote work through digital labour platforms (microwork and freelance work)",
+    "pattern": "\\b(cloud ?work(ers)?|digital labou?r platforms?|platform work(ers)?|online (gig|platform|remote) (work|workers|economy|labou?r)|crowd ?work(ers)?|micro ?work(ers)?|micro-?tasks?|gig (economy|work|workers))\\b",
+    "flags": "i",
+    "basis": "field: B1 (Fairwork Cloudwork Ratings 2025, Introduction, 'Defining cloudwork': 'work that can be performed remotely through a digital labour platform, we call cloudwork'; microwork and freelance as its two categories); B4 (the cloudwork ratings page); B10 (home: 'Cloudwork is work that can be performed online from anywhere in the world'); B6 ('Online gig economy work, also known as cloudwork'). Census labor_object and unit (cloudwork; a cloudwork platform) and intersection 'labor-producing-ai'."
+   },
+   {
+    "term": "AI data work: the human labour behind AI (annotation, labelling, moderation, model evaluation)",
+    "pattern": "\\b(ghost work|AI data work|data (work|workers|labou?r)|data label(l)?(ers|ing work)|annotat(ors|ion work(ers)?|ion labou?r)|content moderators|(invisible|hidden) (human )?(workers|labou?r)|human labou?r (behind|that builds|underpinning|underpins) (AI|the systems)|labou?r behind AI|micro-?task workers)\\b",
+    "flags": "i",
+    "basis": "field: B1 ('Data work': 'One growing and increasingly notable sector of cloudwork is data services for artificial intelligence development in international supply chains', 'AI data work', clients 'Amazon, Google, Microsoft, and Nvidia'); B9 (Fairwork AI: 'There is nothing “artificial” about the immense amount of human labour that builds, supports, and maintains AI systems'); B8 (fair.work: 'the millions of people who annotate data and moderate content'); B6 ('Many of these tasks are fundamental for developing AI systems'). Census intersection 'labor-producing-ai' and labor_object ('the report names AI data work')."
+   },
+   {
+    "term": "algorithmic management of platform workers",
+    "pattern": "\\b(algorithmic(ally)? manag(ement|ed)|automated (management|decision[- ]making|systems) (of|over|governing|affecting) (work|workers|labou?r)|work allocation algorithms?)\\b",
+    "flags": "i",
+    "basis": "field: B1 ('Platform work studies have highlighted how algorithmic management accentuates opacity in decisions affecting workers'; threshold 4.2, information 'about how work is allocated, including when algorithms are used'). Census intersection 'ai-governing-labor' for the entity."
+   },
+   {
+    "term": "rating platforms against minimum labour standards (fair work)",
+    "pattern": "\\b(fair work principles?|minimum (labou?r|fair work) standards|decent work standards|labou?r standards (for|on|in) (platforms?|platform work|cloudwork|AI supply chains?)|platform (ratings?|league table))\\b",
+    "flags": "i",
+    "basis": "field: B1 ('The Fairwork project studies working conditions on digital labour platforms and rates individual platforms based on their fairness to workers'); B3 (KCL: 'assesses and scores basic standards of fairness'); B2 (WZB: 'monitor and benchmark the platforms'). Census kind ('rating programme') and evidence_kind ('rating against standards')."
+   }
+  ],
+  "classes_note": "Four classes, each the census's own kind, unit, labor object or intersection for the entity, stated by field sources at the loci given: (1) cloudwork, online remote work through digital labour platforms (census unit and labor_object; intersection labor-producing-ai; B1 'Defining cloudwork', B4, B10, B6); (2) AI data work, the human labour behind AI (census intersection labor-producing-ai and labor_object; B1 'Data work', B9, B8, B6); (3) algorithmic management (census intersection ai-governing-labor; B1 p. 21 and threshold 4.2); (4) rating platforms against minimum labour standards (census kind and evidence_kind; B1 'The Fairwork Project', B3, B2). The census's two remaining intersections, gains-and-losses (pay: thresholds 1.1 and 1.2, B1) and worker-power (representation: thresholds 5.1 and 5.2, B1), are carried by the field in the report's own terms and are not separate string classes. The archive's instruments of labor direction bear on these classes only where an archive text applies them, and are recorded here with their loci without being applied by the composer: the Directionality of Semantic Labor (DSL, #771, AXN-02D1 line 5: 'Directionality of semantic labor measures where a synthetic system's labor flows relative to the commissioned task, across five layers (capacity, task-origin, retrieval, output, attribution)'), its directionality stack DS-6 and its extension user labor drag (#771 §8: 'When substrate output redirects the user's subsequent semantic labor into parsing, locating, and managing the substrate rather than advancing the object, the injury is upstream of the artifact and leaves no residue in it'), with the definition surface laborvector.org (#1392). Both measure a synthetic system's labor and the user's, not the labor of human workers supplying AI through platforms; none of them names Fairwork, cloudwork or platform ratings, and the census itself records lv_intersection 'none stated' for the entity. The semantic-labor line enters by reading where its texts apply semantic labor, extraction or bearing-cost to the workers of class (2) (reading.json). Aliases: 'Fairwork' (the programme and its project), 'Cloudwork Ratings/Report/Principles', the fair.work domain. 'Fair Work' as two words is not an alias: the Australian Fair Work Ombudsman, Fair Work Act 2009 and Fair Work Commission are homonyms (Wikipedia's search for 'Fairwork' returns them), and the pattern requires the closed form or a following 'work' joined. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (semantic labor, extraction, variance-generative labor, provenance erasure, DSL) to cloudwork, to AI data work, to algorithmic management or to rating platforms against labour standards as a class; a bare list, a citation-list entry, a reference line or a cost line naming a platform is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Fairwork Cloudwork Ratings' (fairwork-cloudwork-ratings-aio-20261029, OBS-65077a500a26, ADDR-72545b320935), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#18, #144, #163, #533, #623, #1545).",
+  "hop_from": [
+   18,
+   144,
+   163,
+   533,
+   623,
+   1545
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 40,
+  "O_deposits": 26,
+  "H_candidates": 87
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "1": 2,
+   "18": 2,
+   "28": 1,
+   "163": 2,
+   "222": 1,
+   "247": 1,
+   "308": 1,
+   "433": 1,
+   "469": 2,
+   "499": 1,
+   "533": 1,
+   "534": 1,
+   "580": 1,
+   "623": 5,
+   "635": 1,
+   "713": 1,
+   "716": 1,
+   "726": 1,
+   "727": 2,
+   "862": 2,
+   "1162": 1,
+   "1282": 1,
+   "1390": 2,
+   "1391": 3,
+   "1545": 2,
+   "1680": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "41275ca86a51030c68365fac9bd3f0fed19e69095774a0c11371cdef997f5b18",
+  "candidates-H.jsonl": "971d08b791c2e7ee313e1abc25aa3af37d56bbc1b52c93e354ea6de0095c9970"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

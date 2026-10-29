@@ -1,0 +1,456 @@
+{
+ "row": "turkopticon",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Turkopticon with the entity named; R, a relation the archive states between Turkopticon and an archive object; O, an archive category applied to Turkopticon or to a class the field and the census source for it (data work that trains and evaluates AI: B1, B4, B5, B6, B9, census intersections and labor_object; organizing data workers: B1, B8, B9, census kind, intersection and evidence kind; employer (requester) reputation systems: B3, B5, B8, census evidence kind and unit). A bare mention, an inter-annotator method, a figural use, a list of keywords or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching a class pattern was read at its passage (the class matches, 96 sentences in 50 texts), and the admitted deposits read at the paragraphs named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 256,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Assembly: a content moderator at a platform is Assembly, the platform's extraction model is not, by structural position (O-class, data work). Not a string-pass O candidate (no category term the script reads); found by reading the class matches",
+   "claims": [
+    "O256-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 478,
+   "strata": [
+    "O"
+   ],
+   "reason": "Grundrisse of Synthetic Coherence: the content moderator's work is an act of bearing, the archive's category (O-class, data work). Not a string-pass candidate at p27; found by reading the class matches (its p45 sentence is O0013)",
+   "claims": [
+    "O478-01"
+   ],
+   "cands": [
+    "O0013"
+   ]
+  },
+  {
+   "dep": 18,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Economy (Marxian accounting): content moderators perform semantic labor in its most brutal form, under conditions designed to be invisible, the somatic backing of semantic value; the training data derived from a moderator's decisions strips the somatic context (O-class, data work that trains and evaluates AI: content moderation is among the work B6 names)",
+   "claims": [
+    "O18-01",
+    "O18-02"
+   ],
+   "cands": [
+    "O0003",
+    "O0004",
+    "O0005"
+   ]
+  },
+  {
+   "dep": 533,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Groundskeeper's Treatise: participant exhaustion, annotators' judgment consumed by the training pipeline without recognition or compensation (O-class, data work; bearing-cost)",
+   "claims": [
+    "O533-01"
+   ],
+   "cands": [
+    "O0015"
+   ]
+  },
+  {
+   "dep": 534,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Inner Artifact: the absence of the labor conditions of the annotators who helped train Claude is a structural silence of Claude's constitution (O-class, data work)",
+   "claims": [
+    "O534-01"
+   ],
+   "cands": [
+    "O0016"
+   ]
+  },
+  {
+   "dep": 144,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Administrators of Meaning: the ghost-work literature stops at task-labor (annotation, moderation) and names the erased worker but not the erased provenance of meaning (O-class, data work). Not a string-pass candidate; found by reading the class matches",
+   "claims": [
+    "O144-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor: ghost work (annotators, content moderators, micro-task workers) is ground-truth labor, structurally distinct from variance-generative labor; ghost work paid badly (the paper's coupling hypothesis) (O-class, data work)",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": [
+    "O0009"
+   ]
+  },
+  {
+   "dep": 1070,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Voice of the Dead: annotators and evaluators shape the model; naming the dead must not erase the workers still present to contest their extraction (O-class, data work). Not a string-pass candidate; found by reading the class matches",
+   "claims": [
+    "O1070-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Proletariat Is a Class Relation: a low-wage annotator can occupy an intensely proletarian relation to a training pipeline; the semantic proletariat is not AI annotators or gig workers as a demographic (O-class, data work)",
+   "claims": [
+    "O1545-01",
+    "O1545-02"
+   ],
+   "cands": [
+    "O0039",
+    "O0040"
+   ]
+  },
+  {
+   "dep": 1439,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Labor Movement Is Not Only Labor Against AI: the archive's sense, cross-substrate semantic labor, is distinguished from data-worker organising (O-class, organizing data workers)",
+   "claims": [
+    "O1439-01"
+   ],
+   "cands": [
+    "O0037"
+   ]
+  },
+  {
+   "dep": 499,
+   "strata": [
+    "O"
+   ],
+   "reason": "Autonomous Semantic Warfare (Rex Fraction): 'data labor' activism as the response to invisible data labor; the labor organizing principle, do not organize on platforms that can shut you down, as the logic of control of the means of semantic production (O-class, organizing data workers)",
+   "claims": [
+    "O499-01",
+    "O499-02"
+   ],
+   "cands": [
+    "O0014"
+   ]
+  },
+  {
+   "dep": 49,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Hacking (Talos Morrow): a worked COS diagnosis of a major AI summarizer's treatment of a labor-organizing query (use-value reduction, safety softening), the archive's category applied to the composition of the class (O-class, organizing data workers)",
+   "claims": [
+    "O49-01"
+   ],
+   "cands": [
+    "O0006",
+    "O0007"
+   ]
+  },
+  {
+   "dep": 247,
+   "strata": [
+    "O"
+   ],
+   "reason": "PROBE-RESULT-004: the definition lets a content moderator say 'I perform semantic labor that is systematically undervalued': an instance under #18's lineage (S4: no mechanism, qualification or basis added)",
+   "claims": [],
+   "instance_of": 18,
+   "cands": [
+    "O0011"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure: content moderators and data labelers performing RLHF, their labor extracted and uncompensated: an instance under #533's lineage (S4)",
+   "claims": [],
+   "instance_of": 533,
+   "cands": [
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/turkopticon-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, PER notes and query note for the entity's capture (OBS-5e387092d3d1, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/turkopticon/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'turkopticon'], organizing_question; questions.json who-makes-ai; rendered aggregators/turkopticon/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, and the worked question that names it; where a field restates a source ledgered in B (the FAQ B8, the announcement B9, the home page B1) it is one lineage with that source; lv_intersection is the archive's reading, ledgered as such",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1,
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "content moderators of a repository (Zenodo's), not data work for AI"
+  },
+  {
+   "dep": 137,
+   "cands": [
+    "O0008"
+   ],
+   "reason": "a table of the commodity form; no class term in the claim"
+  },
+  {
+   "dep": 222,
+   "cands": [
+    "O0010"
+   ],
+   "reason": "'Content moderators … Their labor is invisible': a claim on the class, but no archive category is applied in it (the invisibility is the field's own term, B5 F10); recorded, not admitted under the O guard"
+  },
+  {
+   "dep": 308,
+   "cands": [
+    "O0012"
+   ],
+   "reason": "a reference list"
+  },
+  {
+   "dep": 580,
+   "cands": [
+    "O0017"
+   ],
+   "reason": "inter-annotator method"
+  },
+  {
+   "dep": 635,
+   "cands": [
+    "O0023"
+   ],
+   "reason": "inter-annotator method"
+  },
+  {
+   "dep": 716,
+   "cands": [
+    "O0024"
+   ],
+   "reason": "inter-annotator method (PER pilot)"
+  },
+  {
+   "dep": 726,
+   "cands": [
+    "O0025"
+   ],
+   "reason": "a protocol for satellite pages (an order of terms), no claim of the class"
+  },
+  {
+   "dep": 727,
+   "cands": [
+    "O0026"
+   ],
+   "reason": "a map of inward retrieval paths, no claim of the class"
+  },
+  {
+   "dep": 782,
+   "cands": [
+    "O0027"
+   ],
+   "reason": "Mechanical Turk as a panel source in a cost table"
+  },
+  {
+   "dep": 796,
+   "cands": [
+    "O0028"
+   ],
+   "reason": "platform users' scrolling as data-labor: users, not data workers"
+  },
+  {
+   "dep": 825,
+   "cands": [
+    "O0029"
+   ],
+   "reason": "the maryleelabor capture"
+  },
+  {
+   "dep": 833,
+   "cands": [
+    "O0030"
+   ],
+   "reason": "inter-coder method; and the maryleelabor capture"
+  },
+  {
+   "dep": 862,
+   "cands": [
+    "O0031",
+    "O0032"
+   ],
+   "reason": "the same (Zenodo's moderators)"
+  },
+  {
+   "dep": 1225,
+   "cands": [
+    "O0033"
+   ],
+   "reason": "the same text as #796"
+  },
+  {
+   "dep": 1282,
+   "cands": [
+    "O0034"
+   ],
+   "reason": "figural ($0.00 invoices for ghost work, the archive's own)"
+  },
+  {
+   "dep": 1396,
+   "cands": [
+    "O0035"
+   ],
+   "reason": "the same capture"
+  },
+  {
+   "dep": 1401,
+   "cands": [
+    "O0036"
+   ],
+   "reason": "the same capture"
+  },
+  {
+   "dep": 1442,
+   "cands": [
+    "O0038"
+   ],
+   "reason": "figural (the author as annotator)"
+  },
+  {
+   "dep": 1573,
+   "cands": [
+    "O0041"
+   ],
+   "reason": "'no annotator' in a self-diagnostic"
+  },
+  {
+   "dep": 1680,
+   "cands": [
+    "O0042"
+   ],
+   "reason": "agreement between annotators on weights (method)"
+  }
+ ],
+ "hop": {
+  "from": [
+   18,
+   49,
+   144,
+   163,
+   247,
+   256,
+   478,
+   499,
+   533,
+   534,
+   623,
+   1070,
+   1439,
+   1545
+  ],
+  "candidates": 154,
+  "admitted": 0,
+  "reading": "each hop candidate read by title and by a scan of its text for the three class patterns and for labelers, labeling, gig, platform workers, worker organizing, crowd, ghost, RLHF, trainers, raters, piecework, task workers and outsourcing; the semantic-labor and class papers among them (#20, #39, #449, #784, #1427, #1438, #1462, #1465, #1634) were read at those terms and say nothing of the classes; the sentences that do match are the string pass's own rejected candidates (#1, #148, #217, #892, #1668, #1680); none admitted"
+ },
+ "observations": "No archive text names Turkopticon, turkopticon.net or turkopticon.ucsd.edu, nor its founders as such (D 0, R 0); the archive's 'Silberman' is Steve Silberman (#476, #1147, citing NeuroTribes), a distinct person. The archive's bearing is ontological and by class only: data work as semantic labor (#18, #256, #478), ground-truth labor (#163), participant exhaustion (#533), a structural silence (#534), the limit of the ghost-work literature (#144), the living workers beside the dead (#1070), class as a relation (#1545); organizing data workers set apart from cross-substrate semantic labor (#1439), its consciousness-raising and its platform dependence (#499), and its treatment by summarizers (#49). The third class, employer reputation systems, has no archive sentence. The archive's instruments of labor direction (DSL, #771, #1392; the directionality stack; user labor drag) measure labor performed with AI, which is not one of the census's intersections for the entity, and enter no stratum; the census's lv_intersection reads 'none stated'.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 42,
+   "O_deposits": 32,
+   "H_candidates": 154
+  },
+  "class_sentences_read": 96,
+  "deposits_candidate": 35,
+  "deposits_admitted": 14,
+  "deposits_admitted_with_claims": 12,
+  "instances_grouped_S4": 2,
+  "hop_candidates": 154,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "lv": 37,
+   "deposit": 16
+  }
+ }
+}

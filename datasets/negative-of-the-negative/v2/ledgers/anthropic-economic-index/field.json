@@ -1,0 +1,1609 @@
+{
+ "row": "anthropic-economic-index",
+ "address": "Anthropic Economic Index",
+ "addresses": [
+  "Anthropic Economic Index"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the arXiv PDF's extracted text, the home page's meta description, the Wikipedia response summary, or the card's title and snippet for the unreachable and video cards; 63/63 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), four origins kept apart: 'card', every card on the transcript's rail (B1 the index's home page, which is also the census's own page; B2 the arXiv abstract page of the third report, with its PDF; B3 Anthropic's launch post on X, unreachable; B4 Peter McCrory's LinkedIn post, refused; B5 a Substack post, unreachable; B6 a Reddit post, bot check; B7–B9 three videos, titles only, B9's title 'YouTube'); 'own_page', the census's own pages that T did not surface (B10 the Hugging Face README, B11 the January 2026 report, B12 the June 2026 report, copied from the census's saved copies); 'census_third_party', the census's one third-party source (B13 the Stanford Canaries Dashboard); 'wikipedia', no article (B14).",
+ "lineage_note": "Lineages: what it is: a provider's index of how its own model is used (B1, B3, B10, B11); augmentation and automation (B1, B2, B11, B12); the platform observed: Claude.ai, Cowork, Claude Code and the first-party API (B2, B12); geography: the Anthropic AI Usage Index (B2, B6, B11); open data, licence and releases (B2, B10); the series: launch, reports and authors (B2, B4, B10); the economic primitives (B5, B11); reception: video titles (B7, B8); task success, as Claude assesses it, and its selection (B11); the stated limits: directional, not causal, usage not aggregates (B11, B12); the method: Claude classifies sampled transcripts (B11, B12); tasks and occupations: concentration and coverage (B11, B12); productivity, skill and the estimate's limits (B11); reception: who uses the index (B11, B13); the survey of Claude users (B12); reception: the encyclopedia (B14). The third report is one work in two instances (B2 abstract page and PDF): one source, two files. The census's self_description, platform, method, supplies, directs, limit_success, limit_survey, limit_displacement, lv_turns, third_party_description, neighbour_microsoft and founded quotes restate B10, B11, B12 and B13 (one lineage each with the page; the page keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1-meta.txt the home page's meta description; B2-pdf.pdf and B2-pdf.txt the third report and its pdftotext text; B2-html.html arXiv's 404 for an HTML version; B3-try*, B4-try1, B5-try1, B6-try1 the unreachable cards' responses; B10–B13 copied from the census's saved copies; B14 .wiki, .html, -search.html, -429a/b/c.html raw Wikipedia responses with B14.txt a summary of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Anthropic — The Anthropic Economic Index \\ Anthropic",
+   "url": "https://www.anthropic.com/economic-index",
+   "kind": "Overview card (the operator's index home page, 'Last updated: June 26, 2026'; also the census's own page anthropic-economic-index--home)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1.html",
+     "sha256": "5826fbe934a6006957f555d0ad06f4a528ad473610a00dd3285df39ebb7f0483"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1.txt",
+     "sha256": "b8b5b752dfc3d43a785ec576e856d6ca174e8dcce277c498c7f8dc50ba96cb7e"
+    },
+    "B1-meta.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1-meta.txt",
+     "sha256": "ec32a9a4f752463841d87473fcd8a9b643c6ee531fb23a72fd60d2937be55ee5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:21Z",
+    "http": 200,
+    "url": "https://www.anthropic.com/economic-index",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1.html",
+    "raw_sha256": "5826fbe934a6006957f555d0ad06f4a528ad473610a00dd3285df39ebb7f0483",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1.txt",
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B1-meta.txt"
+    ],
+    "census_copy": {
+     "src": "anthropic-economic-index--home",
+     "sha256": "b29a39839c9952f64f475d9fe1830bc35fe7dfebab7246b7cc97602a8fde669e",
+     "fetched": "2026-10-29T21:49:14Z",
+     "raw_identical": false,
+     "text_identical": true,
+     "note": "the census's copy and this fetch differ in their raw bytes (the page's build hashes) and agree in their extracted text, byte for byte"
+    }
+   },
+   "names_operator": "yes ('Anthropic', '© 2026 Anthropic PBC')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch and by the census's own page; the page's <title> is the card's title. The served page is a JavaScript application: its text is the heading, the dateline and 'Loading data'; its <meta name=\"description\"> carries the page's own description, extracted to B1-meta.txt. The card's snippet ('Anthropic Economic Index Report See the analysis behind the numbers … Read the report Download dataset ...') is not in the served page (neither 'See the analysis' nor 'Download dataset' occurs in B1.html): the snippet's words are the rendered application's, not the saved page's. Recorded, not resolved. Carried once, as a card: the census's own page anthropic-economic-index--home is this page.",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "The Anthropic Economic Index \\ Anthropic",
+   "card_snippet": "Anthropic Economic Index Report See the analysis behind the numbers and what these patterns reveal about AI's economic impact. Read the report Download dataset ...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "arXiv — Anthropic Economic Index report: Uneven geographic and enterprise ...",
+   "url": "https://arxiv.org/abs/2511.15080",
+   "kind": "Overview card (the arXiv abstract page of the third report, submitted 19 November 2025; the report is dated September 15, 2025), with its PDF",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2.html",
+     "sha256": "7ec69692ed49318432438856fcdd3e33dfd9bd1d3edc5bb4ce20200bfcc54bbe"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2.txt",
+     "sha256": "8be2d69464fff3df450a7b20ba25d4ba1eb59c5e215eaa61a4c962cde7201552"
+    },
+    "B2-pdf.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2-pdf.pdf",
+     "sha256": "42c34a517e9184ff06d5e3ab084e8a70c013c6fda60db4c97407bfbd582fde42"
+    },
+    "B2-pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2-pdf.txt",
+     "sha256": "7fbaa53eb5ef08cfc32f4247e15d65df6557b1da94eeeafe04c79936f6ec74ad"
+    },
+    "B2-html.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2-html.html",
+     "sha256": "5d975d049b4859ed173b43be5cf99c807df20863573076b5e51ba3a3b883404f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:21Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2511.15080",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2.html",
+    "raw_sha256": "7ec69692ed49318432438856fcdd3e33dfd9bd1d3edc5bb4ce20200bfcc54bbe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2.txt",
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B2-pdf.txt"
+    ],
+    "pdf": {
+     "at": "2026-10-29T22:32:10Z",
+     "http": 200,
+     "url": "https://arxiv.org/pdf/2511.15080",
+     "sha256": "42c34a517e9184ff06d5e3ab084e8a70c013c6fda60db4c97407bfbd582fde42",
+     "text": "pdftotext -layout"
+    },
+    "tries": [
+     {
+      "at": "2026-10-29T22:30:23Z",
+      "url": "https://arxiv.org/html/2511.15080",
+      "http": 404,
+      "result": "no HTML version (B2-html.html)"
+     }
+    ]
+   },
+   "names_operator": "yes (the authors; 'Anthropic Economic Index'; the PDF's acknowledgements)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the snippet's arXiv number ([2511.15080]). The snippet's maintenance notice is the page's banner. No HTML version exists (404); the PDF was fetched beside the abstract page to read the card's own report, and its text holds the composition's geographic examples (Australia 4.10, Switzerland 2.81, Luxembourg 2.74 in its top twenty, the United States 3.62).",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Anthropic Economic Index report: Uneven geographic and enterprise ...",
+   "card_snippet": "[2511.15080] Anthropic Economic Index report: Uneven geographic and enterprise AI adoption Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:0...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "X — Anthropic on X: \"Today we’re launching the Anthropic Economic Index …\" / X",
+   "url": null,
+   "kind": "Overview card (Anthropic's launch post on X; unreachable)",
+   "files": {
+    "B3-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B3-try1.html",
+     "sha256": "c196bdbe833a71ac5f60e69341d93744e022832ead59845cc2a9d4386d740f81"
+    },
+    "B3-try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B3-try2.html",
+     "sha256": "8ba5281b6bec2ce6dda030f3abfba37bec5cb12c5e04d28e088ce8a7ae004a16"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:28Z",
+      "url": "https://x.com/AnthropicAI",
+      "http": 200,
+      "sha256": "c196bdbe833a71ac5f60e69341d93744e022832ead59845cc2a9d4386d740f81",
+      "result": "the profile's script shell (<title>Anthropic (@AnthropicAI) / X</title>); 'Economic Index' occurs nowhere in the response"
+     },
+     {
+      "at": "2026-10-29T22:31:30Z",
+      "url": "https://x.com/search?q=%22launching%20the%20Anthropic%20Economic%20Index%22",
+      "http": 200,
+      "sha256": "8ba5281b6bec2ce6dda030f3abfba37bec5cb12c5e04d28e088ce8a7ae004a16",
+      "result": "redirected to the login flow (x.com/i/jf/onboarding); no results text"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Today we're launching the Anthropic Economic Index\" x.com AnthropicAI' (no x.com result)",
+     "WebSearch 'site:x.com AnthropicAI \"launching the Anthropic Economic Index\"' (no x.com result)",
+     "WebSearch '\"AnthropicAI/status\" \"Economic Index\" launching' (no x.com result)"
+    ],
+    "note": "The post's status URL could not be found, and x.com serves an unauthenticated fetch a script shell or a login redirect. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('Anthropic on X')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Anthropic on X: \"Today we’re launching the Anthropic Economic Index, a new initiative aimed at understanding AI's impact on the economy over time. The Index’s first paper analyzes millions of anonymized Claude conversations to reveal how AI is being used today in tasks across the economy.\" / X",
+   "card_snippet": "Launch: Anthropic Economic Index analyzing millions of anonymized Claude conversations to track AI's economic impact. Usage by Job Type: Computer and mathematic...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "LinkedIn — Peter McCrory - Economic Index: Uneven AI adoption - LinkedIn",
+   "url": null,
+   "kind": "Overview card (a LinkedIn post by Peter McCrory; unreachable: refused)",
+   "files": {
+    "B4-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B4-try1.html",
+     "sha256": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:32Z",
+      "url": "https://www.linkedin.com/in/peter-mccrory",
+      "http": 999,
+      "sha256": "644031a68bde879af85bcc9cb3e6fa1e9a6b0f61d49307581974b5dbc09d3de8",
+      "result": "LinkedIn's refusal code 999 with a cookie script; no post text"
+     }
+    ],
+    "searches": [
+     "WebSearch 'Peter McCrory \"Economic Index: Uneven AI adoption\" LinkedIn' (no linkedin.com result)",
+     "WebSearch 'site:linkedin.com Peter McCrory \"third Anthropic Economic Index report\"' (no post)",
+     "WebSearch '\"Today we released our third Anthropic Economic Index report\" McCrory' (no linkedin.com result)"
+    ],
+    "note": "The post's URL could not be found; the one LinkedIn fetch (the author's profile path) was refused with HTTP 999 and was not retried with another agent or by any other route. The card's title and snippet stand."
+   },
+   "names_operator": "yes (McCrory: 'our third Anthropic Economic Index report')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Peter McCrory - Economic Index: Uneven AI adoption - LinkedIn",
+   "card_snippet": "Today we released our third Anthropic Economic Index report where we document the contours of AI adoption across 150+ countries, across US states, and among bus...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Substack — 7 Key Findings from the New Anthropic Economic Index Report",
+   "url": null,
+   "kind": "Overview card (a Substack post; unreachable)",
+   "files": {
+    "B5-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B5-try1.html",
+     "sha256": "fbbc9cf71c269231d04b26509590d01637499780f15adc0f3580277a9e96cd06"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:32Z",
+      "url": "https://substack.com/search/7%20Key%20Findings%20from%20the%20New%20Anthropic%20Economic%20Index%20Report?searching=all_posts",
+      "http": 200,
+      "sha256": "fbbc9cf71c269231d04b26509590d01637499780f15adc0f3580277a9e96cd06",
+      "result": "Substack's search application shell, the query echoed in the search box; no result post in the served page"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"7 Key Findings from the New Anthropic Economic Index Report\" substack' (no result)",
+     "WebSearch '\"7 Key Findings\" \"Anthropic Economic Index\"' (no result)",
+     "WebSearch 'substack \"Key Findings\" \"Anthropic Economic Index\" \"economic primitives\" Thursday' (no result)"
+    ],
+    "note": "The post could not be found by title; recorded as unreachable. The card's title and snippet stand."
+   },
+   "names_operator": "yes ('Anthropic released its latest Economic Index report')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "7 Key Findings from the New Anthropic Economic Index Report",
+   "card_snippet": "Anthropic released its latest Economic Index report on Thursday, introducing “economic primitives” (metrics designed to measure the foundational impact of AI on...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Reddit — Anthropic Economic Index: AI adoption remains highly ... - Reddit",
+   "url": null,
+   "kind": "Overview card (a Reddit post; unreachable: bot check)",
+   "files": {
+    "B6-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B6-try1.html",
+     "sha256": "71ee727e270480793ccc106795d67d7e3d4ec8a286f77b9ae1a6ef86187b281c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:31Z",
+      "url": "https://www.reddit.com/search/?q=%22Anthropic%20Economic%20Index%3A%20AI%20adoption%20remains%20highly%22",
+      "http": 200,
+      "sha256": "71ee727e270480793ccc106795d67d7e3d4ec8a286f77b9ae1a6ef86187b281c",
+      "result": "a JavaScript challenge page (form fields 'js_challenge', 'jsc_token'): a bot check; no post text"
+     }
+    ],
+    "searches": [
+     "WebSearch 'reddit \"Anthropic Economic Index: AI adoption remains highly\"' (no reddit.com result)",
+     "WebSearch 'site:reddit.com \"Anthropic Economic Index\" \"AI adoption remains highly\"' (no reddit.com result)",
+     "WebSearch '\"Anthropic User Index (AUI)\" normalization reddit' (no reddit.com result)"
+    ],
+    "note": "Reddit answered the honest agent with a bot check; per the brief it is recorded as unreachable and was not retried with another agent string or by any other route. The card's title and snippet stand."
+   },
+   "names_operator": "no (the snippet names the 'Anthropic User Index')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "Anthropic Economic Index: AI adoption remains highly ... - Reddit",
+   "card_snippet": "Anthropic User Index (AUI) Normalization: The US-state and international AUI indexes are normalized such that an average of 1 represents a perfect ratio between...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "YouTube·Standarity — Ask Claude About the Anthropic Economic Index",
+   "url": null,
+   "kind": "Overview card (video; admitted through its title, the card carrying no snippet)",
+   "files": {},
+   "fetched": {
+    "video": true,
+    "searches": [
+     "WebSearch 'youtube \"Ask Claude About the Anthropic Economic Index\" Standarity' (no youtube.com result)"
+    ],
+    "note": "§3.1(a): a video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; no URL was found, and the card has no snippet"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "Ask Claude About the Anthropic Economic Index",
+   "card_snippet": null,
+   "card_note": "video, 2m"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "YouTube·Vinh Nguyen — [Podcast] Anthropic Economic Index: The Real Report Card on AI",
+   "url": null,
+   "kind": "Overview card (video; admitted through its title, the card carrying no snippet)",
+   "files": {},
+   "fetched": {
+    "video": true,
+    "searches": [
+     "WebSearch 'youtube \"Anthropic Economic Index: The Real Report Card on AI\" podcast Vinh Nguyen' (no youtube.com result)"
+    ],
+    "note": "§3.1(a): a video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; no URL was found, and the card has no snippet"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 8
+    }
+   ],
+   "card_title": "[Podcast] Anthropic Economic Index: The Real Report Card on AI",
+   "card_snippet": null,
+   "card_note": "video, 39:46"
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "YouTube·VibeDoc — YouTube",
+   "url": null,
+   "kind": "Overview card (video; admitted through its title, the card carrying no snippet)",
+   "files": {},
+   "fetched": {
+    "video": true,
+    "searches": [],
+    "note": "§3.1(a): a video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; no URL was found, and the card has no snippet; its title is only 'YouTube', so the card carries no claim and no kernel (recorded)"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "anthropic-economic-index-aio-20261029",
+     "card": 9
+    }
+   ],
+   "card_title": "YouTube",
+   "card_snippet": null,
+   "card_note": "video, 6:37"
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the census's own page anthropic-economic-index--readme (not surfaced by T)",
+   "card": "Hugging Face — Anthropic/EconomicIndex README",
+   "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/raw/main/README.md",
+   "kind": "Hugging Face — Anthropic/EconomicIndex README (raw)",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B10.html",
+     "sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B10.txt",
+     "sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "anthropic-economic-index--readme",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:14Z",
+    "http": "200",
+    "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/raw/main/README.md",
+    "final_url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/raw/main/README.md",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B10.html",
+    "raw_sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0",
+    "census_sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.html.gz (gunzipped) and anthropic-economic-index--readme.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B10.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Anthropic'; press@anthropic.com; the citations)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (its sha256 matches the census's manifest), so it was copied and not refetched."
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "role": "the census's own page anthropic-economic-index--jan-2026 (not surfaced by T)",
+   "card": "Anthropic — Anthropic Economic Index report: Economic primitives",
+   "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+   "kind": "Anthropic — Anthropic Economic Index report: Economic primitives (15 January 2026)",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B11.html",
+     "sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B11.txt",
+     "sha256": "1b5b928b9f12d14f47043b64b2b8ff977cc9fd69f39165246ab62fa73686ffcb"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "anthropic-economic-index--jan-2026",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:14Z",
+    "http": "200",
+    "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+    "final_url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B11.html",
+    "raw_sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d",
+    "census_sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.html.gz (gunzipped) and anthropic-economic-index--jan-2026.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B11.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Anthropic'; the authors)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling; not surfaced by T. Copied from the census's saved copy (sha256 matches); not refetched. Read through."
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "role": "the census's own page anthropic-economic-index--jun-2026 (not surfaced by T)",
+   "card": "Anthropic — Anthropic Economic Index report: Cadences",
+   "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+   "kind": "Anthropic — Anthropic Economic Index report: Cadences (26 June 2026)",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B12.html",
+     "sha256": "31119973d1365f0d032ec513de32c1a72ce2fe04cd62eb1d7da8a9fad6435e21"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B12.txt",
+     "sha256": "8752146430c2cf28b25f407fff1472bee27ce24782a87dafaf73708cc1d4f8da"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "anthropic-economic-index--jun-2026",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:50:23Z",
+    "http": "200",
+    "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+    "final_url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B12.html",
+    "raw_sha256": "31119973d1365f0d032ec513de32c1a72ce2fe04cd62eb1d7da8a9fad6435e21",
+    "census_sha256": "31119973d1365f0d032ec513de32c1a72ce2fe04cd62eb1d7da8a9fad6435e21",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jun-2026.html.gz (gunzipped) and anthropic-economic-index--jun-2026.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B12.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Anthropic'; the authors)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling; not surfaced by T. Copied from the census's saved copy (sha256 matches); not refetched. Read through."
+  },
+  {
+   "id": "B13",
+   "origin": "census_third_party",
+   "role": "the census's third-party source stanford-canaries--dashboard (basis 'third_party'; not surfaced by T)",
+   "card": "Stanford Digital Economy Lab — Canaries Dashboard",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "kind": "Stanford Digital Economy Lab — Canaries Dashboard (a third party's account)",
+   "files": {
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B13.html",
+     "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B13.txt",
+     "sha256": "c75299602d1ce1c1c8d571f02f36654bd9de884821d26de957398da7583aa983"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "stanford-canaries--dashboard",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:16Z",
+    "http": "200",
+    "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+    "final_url": "https://digitaleconomy.stanford.edu/project/indicators/canaries-dashboard/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B13.html",
+    "raw_sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31",
+    "census_sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.html.gz (gunzipped) and stanford-canaries--dashboard.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B13.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (it names the index and Anthropic's ratios)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's one third-party source for the entity (evidence.third_party_description), admitted under its own origin 'census_third_party', kept apart from the cards, the own pages and Wikipedia. Copied from the census's saved copy (sha256 matches); not refetched."
+  },
+  {
+   "id": "B14",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Anthropic Economic Index (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Anthropic_Economic_Index&action=raw",
+   "kind": "Wikipedia (no article; one article-space mention, as a country ranking)",
+   "files": {
+    "B14.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14.wiki",
+     "sha256": "c3510621b10d41b55dd7a731f5aa203c355a3e64fdb642550e915721274d6010"
+    },
+    "B14.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14.html",
+     "sha256": "cbb55d5ec3e42aa3d292abcdd4ab122507b0a991a801f7cb1b3aa2dca8741ed2"
+    },
+    "B14-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14-search.html",
+     "sha256": "9e41d54ac8e9a502c97cd5e80433e48d6ca49b648f41a1ba25afda38f3fa8770"
+    },
+    "B14-429a.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14-429a.html",
+     "sha256": "59fc6519afb80b4ce23f837251960426b631160cbfb2953779db7e1009447826"
+    },
+    "B14-429b.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14-429b.html",
+     "sha256": "3d6780b934621470de351dc8bbc1cf676e22674ebbe3b37b038576d104c83737"
+    },
+    "B14-429c.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14-429c.html",
+     "sha256": "e55e71d003569b42f13b83da34f7f0f87336e76644ba449744d26479bd8bce7a"
+    },
+    "B14.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14.txt",
+     "sha256": "343575d5bcd66736ed32419d5b173f80f4c5c71dab8e0531a3ac7a6bd1ac3fee"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:17Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Anthropic_Economic_Index&action=raw&redirect=no",
+      "http": 429,
+      "result": "rate-limited (B14-429a.html); refetched with the same agent after a wait"
+     },
+     {
+      "at": "2026-10-29T22:33:17Z",
+      "url": "https://en.wikipedia.org/wiki/Anthropic_Economic_Index?redirect=no",
+      "http": 429,
+      "result": "rate-limited (B14-429b.html); refetched"
+     },
+     {
+      "at": "2026-10-29T22:33:20Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Anthropic+Economic+Index%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "one result: 'International rankings of Malaysia' ('Anthropic Economic Index 2025, ranked 64th out of 115 countries')"
+     },
+     {
+      "at": "2026-10-29T22:33:54Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Anthropic_Economic_Index&action=raw&redirect=no",
+      "http": 429,
+      "result": "rate-limited (B14-429c.html); refetched"
+     },
+     {
+      "at": "2026-10-29T22:34:01Z",
+      "url": "https://en.wikipedia.org/wiki/Anthropic_Economic_Index?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:34:51Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Anthropic_Economic_Index&action=raw&redirect=no",
+      "http": 404
+     }
+    ],
+    "raw_sha256": "cbb55d5ec3e42aa3d292abcdd4ab122507b0a991a801f7cb1b3aa2dca8741ed2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/anthropic-economic-index-20261029/B14.txt"
+    ],
+    "note": "HTTP 429 is Wikipedia's rate limit, not a refusal of the agent; the same requests with the same agent were repeated after a wait, as the olmotrace row did. B14.txt is a summary of the codes with the notices verbatim."
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect; the only article-space text containing the name is a line of 'International rankings of Malaysia' that uses the index as a country ranking."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page text (heading and dateline)",
+   "quote": "Anthropic Economic Index Understanding AI’s effects on the economy Last updated: June 26, 2026",
+   "claim": "the index's home page names it 'Understanding AI’s effects on the economy', last updated 26 June 2026",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a provider's index of how its own model is used",
+   "date": "2026-06-26 (page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b8b5b752dfc3d43a…), saved text B1-meta.txt (sha256 ec32a9a4f7524638…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "<meta name=\"description\"> (B1-meta.txt)",
+   "quote": "The Anthropic Economic Index reveals the shape of AI adoption across the world. Here, you can explore the data behind our research to understand how people are using Claude across every US state and hundreds of occupations.",
+   "claim": "the home page's own description: the shape of AI adoption across the world, explored as how people use Claude across US states and occupations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a provider's index of how its own model is used",
+   "date": "2026-06-26 (page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b8b5b752dfc3d43a…), saved text B1-meta.txt (sha256 ec32a9a4f7524638…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "<meta name=\"description\"> (B1-meta.txt)",
+   "quote": "see how people are using AI to augment or automate their work—that is, whether they prefer to collaborate with, or delegate to, Claude.",
+   "claim": "augment or automate defined on the home page as collaborating with, or delegating to, Claude",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2026-06-26 (page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b8b5b752dfc3d43a…), saved text B1-meta.txt (sha256 ec32a9a4f7524638…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "In this report, we document patterns of Claude usage over time, in 150+ countries, across US states, and among businesses deploying Claude through the API.",
+   "claim": "the third report's scope: patterns of Claude usage over time, in 150+ countries, US states and businesses using the API",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the platform observed: Claude.ai, Cowork, Claude Code and the first-party API",
+   "date": "2025-09-15 (report; arXiv v1 2025-11-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract, finding (1)",
+   "quote": "Users increasingly entrust Claude with more autonomy, with directive task delegation rising from 27% to 39% in the past eight months.",
+   "claim": "directive task delegation rose from 27% to 39% in eight months",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2025-09-15 (report; arXiv v1 2025-11-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract, finding (2)",
+   "quote": "Claude usage is geographically concentrated with high income countries overrepresented in global usage relative to their working age population.",
+   "claim": "Claude usage geographically concentrated, high-income countries overrepresented relative to working-age population",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "2025-09-15 (report; arXiv v1 2025-11-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract, finding (4)",
+   "quote": "API customers use Claude to automate tasks with greater specialization among use cases most amenable to programmatic access.",
+   "claim": "API customers use Claude to automate tasks, specialised toward uses amenable to programmatic access",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2025-09-15 (report; arXiv v1 2025-11-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "To enable researchers and policymakers to further study the impact of AI on the economy, we additionally open-source the underlying data for this report.",
+   "claim": "the underlying data open-sourced for researchers and policymakers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, licence and releases",
+   "date": "2025-09-15 (report; arXiv v1 2025-11-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "authors; submission history",
+   "quote": "Authors: Ruth Appel , Peter McCrory , Alex Tamkin , Miles McCain , Tyler Neylon , Michael Stern … [Submitted on 19 Nov 2025]",
+   "claim": "the third report's authors (Appel, McCrory, Tamkin, McCain, Neylon, Stern), on arXiv 19 November 2025",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the series: launch, reports and authors",
+   "date": "2025-11-19 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8be2d69464fff3df…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PDF p. 13, the AUI defined",
+   "quote": "introducing a new measure called the Anthropic AI Usage Index (AUI): For each geography, we calculate its share of Claude usage, and its share of the working-age population (ages 15-64).",
+   "claim": "the Anthropic AI Usage Index (AUI): a geography's share of Claude usage divided by its share of the working-age population",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "2025-09-15 (report)",
+   "quote_ok": true,
+   "checked_against": "saved text B2-pdf.txt (sha256 7fbaa53eb5ef08cf…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PDF p. 13, ranking",
+   "quote": "Israel leads global per capita Claude usage with an Anthropic AI Usage Index of 7 … Singapore follows at 4.57, while Australia (4.10), New Zealand (4.05) and South Korea (3.73) round out the top five countries in terms of per capita Claude usage. … Top 20 countries by Anthropic AI Usage Index … Switzerland N = 4.3k 2.81 … Luxembourg N = 333 2.74",
+   "claim": "the top five by AUI: Israel 7, Singapore 4.57, Australia 4.10, New Zealand 4.05, South Korea 3.73 (Switzerland 2.81 and Luxembourg 2.74 in the figure's top 20)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "2025-09-15 (report)",
+   "quote_ok": true,
+   "checked_against": "saved text B2-pdf.txt (sha256 7fbaa53eb5ef08cf…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PDF p. 3",
+   "quote": "If the productivity gains are larger for high-adoption economies, current usage patterns suggest that the benefits of AI may concentrate in already-rich regions—possibly increasing global economic inequality and reversing growth convergence seen in recent decades.",
+   "claim": "conditional: if gains are larger where adoption is high, the benefits of AI may concentrate in already-rich regions",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "2025-09-15 (report)",
+   "quote_ok": true,
+   "checked_against": "saved text B2-pdf.txt (sha256 7fbaa53eb5ef08cf…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PDF p. 4",
+   "quote": "77% of business uses involve automation usage patterns, compared to about 50% for Claude.ai users.",
+   "claim": "1P API: 77% of business uses automation, against about 50% on Claude.ai (August 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2025-09-15 (report)",
+   "quote_ok": true,
+   "checked_against": "saved text B2-pdf.txt (sha256 7fbaa53eb5ef08cf…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PDF p. 4, open data",
+   "quote": "At present, geographic usage patterns are only available for Claude.ai traffic.",
+   "claim": "a stated limit of the release: geographic patterns only for Claude.ai traffic",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, licence and releases",
+   "date": "2025-09-15 (report)",
+   "quote_ok": true,
+   "checked_against": "saved text B2-pdf.txt (sha256 7fbaa53eb5ef08cf…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title (unreachable)",
+   "quote": "Today we’re launching the Anthropic Economic Index, a new initiative aimed at understanding AI's impact on the economy over time. The Index’s first paper analyzes millions of anonymized Claude conversations to reveal how AI is being used today in tasks across the economy.",
+   "claim": "Anthropic's launch post: a new initiative to understand AI's impact on the economy over time; the first paper analyses millions of anonymised Claude conversations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a provider's index of how its own model is used",
+   "date": "undated on the card (the launch, 2025-02-10, per B10)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Today we released our third Anthropic Economic Index report where we document the contours of AI adoption across 150+ countries, across US states, and among bus...",
+   "claim": "Peter McCrory, on LinkedIn: the third report documents AI adoption across 150+ countries, US states and businesses",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the series: launch, reports and authors",
+   "date": "undated on the card (the third report, 2025-09-15)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "Anthropic released its latest Economic Index report on Thursday, introducing “economic primitives” (metrics designed to measure the foundational impact of AI on...",
+   "claim": "a Substack: the latest report introduced 'economic primitives', metrics of the foundational impact of AI",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the economic primitives",
+   "date": "undated on the card (the primitives report, Thursday 2026-01-15)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F18": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "Anthropic User Index (AUI) Normalization: The US-state and international AUI indexes are normalized such that an average of 1 represents a perfect ratio between...",
+   "claim": "a Reddit post: the AUI normalised so that 1 is a perfect ratio; the index named 'Anthropic User Index'",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)",
+   "marks": {
+    "contradicts_primary": "B2-pdf PDF p. 13: 'Anthropic AI Usage Index (AUI)'; B11: 'the Anthropic AI Usage Index (AUI)'"
+   }
+  },
+  "F19": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "video card title (YouTube·Standarity, 2m)",
+   "quote": "Ask Claude About the Anthropic Economic Index",
+   "claim": "a two-minute video: asking Claude about the index",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: video titles",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (video card)"
+  },
+  "F20": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "video card title (YouTube·Vinh Nguyen, 39:46)",
+   "quote": "[Podcast] Anthropic Economic Index: The Real Report Card on AI",
+   "claim": "a podcast presents the index as 'the real report card on AI'",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: video titles",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (video card)"
+  },
+  "F21": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## Overview",
+   "quote": "The Anthropic Economic Index provides insights into how AI is being incorporated into real-world tasks across the modern economy.",
+   "claim": "the dataset's self-description: insights into how AI is incorporated into real-world tasks across the economy",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a provider's index of how its own model is used",
+   "date": "read 2026-10-29 (sixth release 2026-06-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## Data Releases, 2025-02-10",
+   "quote": "Initial release with O*NET task mappings, automation vs. augmentation data, and more",
+   "claim": "the initial release, 10 February 2025: O*NET task mappings and automation vs. augmentation data",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the series: launch, reports and authors",
+   "date": "2025-02-10",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## Data Releases, labor market impacts",
+   "quote": "**[Labor market impacts](https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts)**: Job exposure and task penetration data",
+   "claim": "a 'Labor market impacts' release of job exposure and task penetration data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, licence and releases",
+   "date": "read 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## License; YAML header",
+   "quote": "Data released under CC-BY, code released under MIT License. … license: mit",
+   "claim": "licence: data CC-BY, code MIT in the body; the YAML header gives 'license: mit'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, licence and releases",
+   "date": "read 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised",
+   "marks": {
+    "internally_inconsistent": "README body '## License': 'Data released under CC-BY, code released under MIT License.'; YAML header: 'license: mit'"
+   }
+  },
+  "F25": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## Citation, Sixth release",
+   "quote": "author = {Maxim Massenkoff and Eva Lyubich and Szymon Sacher and Zoe Hitzig and Shaoyi Zhang and Ryan Heller and Peter McCrory}, title = {Anthropic Economic Index report: Cadences}, date = {2026-06-26},",
+   "claim": "the sixth report, 'Cadences', 26 June 2026, and its authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the series: launch, reports and authors",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "## Citation, Second release",
+   "quote": "title={Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations},",
+   "claim": "the second release's paper: 'Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations' (arXiv:2503.04761)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the series: launch, reports and authors",
+   "date": "2025 (arXiv:2503.04761)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 7f3a9c7c8fb2c04c…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Introduction ¶1",
+   "quote": "These “primitives”—simple, foundational measures of how Claude is used, which we generate by asking Claude specific questions about anonymized Claude.ai and first-party (1P) API transcripts—cover five dimensions relevant to AI’s economic impact: user and AI skills, how complex tasks are, the degree of autonomy afforded to Claude, how successful Claude is, and whether Claude is used for personal, educational, or work purposes.",
+   "claim": "the economic primitives defined: measures generated by asking Claude questions about anonymised transcripts, on five dimensions (skills, complexity, autonomy, success, use case)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the economic primitives",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 2, 'Dimensions of AI use'",
+   "quote": "AI autonomy measures the degree to which users delegate decision-making to Claude.",
+   "claim": "AI autonomy defined: the degree to which users delegate decision-making to Claude",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the economic primitives",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 2, 'Dimensions of AI use'",
+   "quote": "Task success measures Claude’s assessment of whether Claude completes tasks successfully. Task success helps assess whether tasks can be automated effectively (can a task be automated at all?) and efficiently (how many attempts would it take to automate a task?).",
+   "claim": "task success defined as Claude's assessment of whether Claude completes tasks; used to assess whether and how efficiently tasks can be automated",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "task success, as Claude assesses it, and its selection",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 2, 'Selecting and validating'",
+   "quote": "We propose that multiple simple primitives, even if somewhat noisy and not perfectly accurate by themselves, can together provide important signals on how AI is being used. We therefore mainly tested for directional accuracy.",
+   "claim": "the primitives tested mainly for directional accuracy; noisy and not perfectly accurate singly",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: directional, not causal, usage not aggregates",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 2, 'Selecting and validating'",
+   "quote": "For Claude.ai, we evaluated the classifier performance compared to a human researcher on a small set of transcripts in which users gave feedback to Claude.ai and for which we thus have permission to look at underlying transcripts. … Neither data sources are fully representative of Claude.ai or 1P API traffic",
+   "claim": "validation against a human researcher on a small set of feedback transcripts; neither validation source fully representative",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Claude classifies sampled transcripts",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 4, 'Task horizon'",
+   "quote": "In our data, users choose which tasks to bring to Claude. This means observed success rates reflect not just model capability but also user judgment about what will work, the cost of setting up the problem for Claude, and the expected time savings if the task succeeds.",
+   "claim": "users choose the tasks; observed success reflects user judgment and cost of setup as well as capability",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "task success, as Claude assesses it, and its selection",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Introduction, 'Claude succeeds on most tasks'",
+   "quote": "We find that Claude generally succeeds at the tasks it is given, and that the education level of its responses tends to match the user's input. Claude struggles on more complex tasks",
+   "claim": "finding: Claude generally succeeds at the tasks it is given and struggles on more complex ones",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "task success, as Claude assesses it, and its selection",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 1",
+   "quote": "Data from November 2025 points to a broad-based shift back toward augmented use on Claude.ai: The share of conversations classified as augmented jumped 5pp to 52% and the share deemed automated fell 4pp to 45%.",
+   "claim": "November 2025: augmentation 52%, automation 45% on Claude.ai",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 1, 'Augmentation is again dominant'",
+   "quote": "Since our first report, we have classified conversations into one of five interaction types, which we group into two broader categories: automation and augmentation.",
+   "claim": "five interaction types grouped into automation and augmentation since the first report",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Introduction",
+   "quote": "While we see over 3,000 unique work tasks in Claude.ai, the top 10 most common tasks account for 24% of our sampled conversations … In contrast, automated use remains dominant in 1P API traffic, reflecting its programmatic nature.",
+   "claim": "over 3,000 work tasks, the top ten 24% of conversations; automation dominant in 1P API traffic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 1",
+   "quote": "The most prevalent task in November 2025—modifying software to correct errors—alone represented 6% of usage.",
+   "claim": "the most prevalent task, modifying software to correct errors, 6% of usage",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 1",
+   "quote": "computer and mathematical tasks—like modifying software to correct errors—continue to dominate Claude usage overall, representing a third of conversations on Claude.ai and nearly half of 1P API traffic. … The second largest share of Claude.ai usage in November 2025 was in the Educational Instruction and Library category.",
+   "claim": "computer and mathematical tasks a third of Claude.ai and nearly half of API traffic; educational instruction second on Claude.ai",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 4, coverage",
+   "quote": "Combining across reports, 49% of jobs have seen AI usage for at least a quarter of their tasks.",
+   "claim": "across reports, 49% of jobs have seen AI usage for at least a quarter of their tasks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 1, summary",
+   "quote": "Worldwide, uneven adoption remains well-explained by GDP per capita.",
+   "claim": "worldwide, uneven adoption well explained by GDP per capita",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "geography: the Anthropic AI Usage Index",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 4, opening",
+   "quote": "In a simple task removal exercise inspired by Autor and Thompson (2025) , Claude's tendency to cover higher-education tasks produces a net deskilling effect across most occupations, as the tasks AI handles are often the more skilled components of a job.",
+   "claim": "in a task-removal exercise, removing the higher-education tasks Claude covers deskills most occupations",
+   "modality": "documented",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "productivity, skill and the estimate's limits",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Concluding Remarks ¶2",
+   "quote": "If these tasks shrink for US workers, the net effect could be to deskill jobs. But these impacts depend crucially on complementarity across tasks, and whether increased productivity at a certain task may increase the demand for it.",
+   "claim": "the deskilling is conditional: it depends on complementarity across tasks and on whether productivity raises demand",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "productivity, skill and the estimate's limits",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 4, opening",
+   "quote": "Adjusting productivity estimates for task reliability roughly halves the implied gains, from 1.8 to about 1.0 percentage points of annual labor productivity growth over the next decade. However, these estimates reflect current model capabilities, and all signs suggest that reliability over increasingly long-running tasks will improve.",
+   "claim": "adjusted for task reliability, implied labor productivity growth halves from 1.8 to about 1.0 points a year; estimates reflect current capabilities",
+   "modality": "documented",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "productivity, skill and the estimate's limits",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 3",
+   "quote": "Importantly, the primitives themselves are not necessarily causal factors",
+   "claim": "the primitives are not necessarily causal factors",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: directional, not causal, usage not aggregates",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 2, validation",
+   "quote": "the automation/augmentation distinction from prior reports has already been used by external researchers to analyze labor market shifts ( Brynjolfsson, Chandar & Chen, 2025 )",
+   "claim": "the automation/augmentation distinction used by external researchers (Brynjolfsson, Chandar and Chen, 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: who uses the index",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Chapter 4, footnote 3",
+   "quote": "See also Tomlinson et al (2025) for a related AI applicability score.",
+   "claim": "a related AI applicability score: Tomlinson et al. (2025)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: who uses the index",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Concluding Remarks ¶4",
+   "quote": "We will track these dynamics over time, providing a longitudinal view of AI's role in the economy.",
+   "claim": "the index's stated purpose: a longitudinal view of AI's role in the economy",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a provider's index of how its own model is used",
+   "date": "2026-01-15",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "footnote 01",
+   "quote": "This includes chat conversations and Cowork sessions from consumer (Free/Pro/Max) accounts on both Claude.ai and the Claude desktop app. \"First-party API\" or 1P API refers to developer traffic routed directly through Anthropic's own programming interface, which is distinct from both Anthropic's consumer-facing Claude.ai application and third-party platforms such as Amazon Bedrock or Google Cloud Vertex.",
+   "claim": "the platform observed: consumer chat and Cowork on Claude.ai and the desktop app, and first-party API traffic, distinct from third-party platforms",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the platform observed: Claude.ai, Cowork, Claude Code and the first-party API",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "footnote 02",
+   "quote": "Throughout, all analyses are based on privacy-preserving classifiers: transcripts are only read by another instance of Claude.",
+   "claim": "transcripts read only by another instance of Claude (privacy-preserving classifiers)",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the method: Claude classifies sampled transcripts",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Cadences ¶1",
+   "quote": "Our new privacy-preserving telemetry, which continuously samples a slice of conversations every day, allows us to study daily and hourly patterns in usage, in contrast to the seven-day samples each previous Economic Index report drew on.",
+   "claim": "since the June 2026 report, continuous daily sampling, where earlier reports drew seven-day samples",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Claude classifies sampled transcripts",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Introduction ¶1",
+   "quote": "Chat transcripts no longer fully capture how people are using AI, and our methods for studying Claude’s economic impacts have had to adapt.",
+   "claim": "chat transcripts no longer fully capture use; the methods adapted",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: directional, not causal, usage not aggregates",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Perceptions, 'AI and work tasks'",
+   "quote": "we constructed a measure of observed exposure , which captures the share of occupational tasks we already see being done with Claude.",
+   "claim": "observed exposure: the share of an occupation's tasks already seen being done with Claude",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "footnotes, collaboration modes",
+   "quote": "Directive: Human delegates complete task execution to AI with minimal interaction - Feedback Loop: Human and AI engage in iterative dialogue to complete task with human mainly providing feedback from the environment - Task Iteration: Human and AI engage in iterative dialogue to complete a task with the human refining the AI outputs - Learning: Human seeks understanding and explanation rather than direct task completion - Validation: Human uses AI to check or validate their own work",
+   "claim": "the five collaboration modes defined: directive, feedback loop, task iteration, learning, validation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "augmentation and automation",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Artifacts, 'Cost tracks the value of work'",
+   "quote": "In conversations mapped to higher-wage occupations, Claude produces more (1.34 times as much output per turn), while users engage more (1.53 times as many turns)",
+   "claim": "in higher-wage occupations Claude produces 1.34 times the output per turn and users take 1.53 times as many turns",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tasks and occupations: concentration and coverage",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Perceptions ¶2",
+   "quote": "In April 2026, we launched the Anthropic Economic Index Survey to build on this work. … To characterize each respondent's usage patterns, we randomly sample up to 20 sessions per person within this time window … Our final linked sample consists of about 9,700 survey respondents.",
+   "claim": "the Economic Index Survey, launched April 2026, linked to up to 20 sessions per respondent; about 9,700 respondents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the survey of Claude users",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Perceptions, 'Who responded'",
+   "quote": "The Economic Index Survey is not representative of the general population. We reach a random sample of Claude users, there may be selection in who completes the survey, and we filter out infrequent users from our analysis.",
+   "claim": "the survey is not representative of the general population: a random sample of Claude users, selection in completion, infrequent users filtered out",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the survey of Claude users",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Perceptions, 'AI and jobs'",
+   "quote": "10% rated losing their own jobs as likely or very likely.",
+   "claim": "10% of respondents rated losing their own jobs likely or very likely",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the survey of Claude users",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Introduction, Chapter 3 preview",
+   "quote": "people who use Claude in the most automated way expect AI to take on more of their tasks in the next year, yet feel the most optimistic about what that means for their work, anticipating positive impacts on pay, job security, and meaning.",
+   "claim": "the most automated users expect AI to take on more of their tasks and are the most optimistic about pay, security and meaning",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the survey of Claude users",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Perceptions, hopes",
+   "quote": "The third most common theme, expressed by about one third of survey respondents, was one of shared prosperity: the hope that the economic gains from AI will be widely shared.",
+   "claim": "about a third of respondents hope the economic gains from AI will be widely shared",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the survey of Claude users",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Discussion ¶4",
+   "quote": "Accurately classifying the work that Claude does will remain a moving target. … Ultimately, Claude’s impact on the economy will be visible in economic aggregates like employment and productivity as much as its usage logs.",
+   "claim": "classifying Claude's work a moving target; the impact visible in employment and productivity aggregates as much as in usage logs",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: directional, not causal, usage not aggregates",
+   "date": "2026-06-26",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8752146430c2cf28…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B13",
+   "origin": "census_third_party",
+   "locus": "'Automation vs. Complementarity' ¶1",
+   "quote": "The Anthropic Economic Index summarizes total usage at the occupation level and further decomposes this usage into automation and augmentation patterns.",
+   "claim": "a third party's account: the index summarises usage by occupation and decomposes it into automation and augmentation",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: who uses the index",
+   "date": "undated (dashboard sample to April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 c75299602d1ce1c1…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B13",
+   "origin": "census_third_party",
+   "locus": "'Employment Trends by Usage Pattern'",
+   "quote": "We group employees by their age and their occupations’ Anthropic Economic Index augmentation and automation ratios. Among early-career workers, the automation ratio shows a noticeable relationship with employment trends: occupations with a higher automation ratio see declines or more muted increases in the employment index.",
+   "claim": "the Canaries Dashboard groups workers by the index's ratios; among early-career workers a higher automation ratio goes with declines or muted increases in employment",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: who uses the index",
+   "date": "undated (dashboard sample to April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 c75299602d1ce1c1…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title 'Anthropic Economic Index'; article-space search",
+   "quote": "2026-10-29T22:34:51Z HTTP 404 (B14.wiki). … Wikipedia does not have an article with this exact name. … One result (data-mw-num-results-total=\"1\"): \"frameless image layout International rankings of Malaysia countries Life expectancy 2017: ranked 109th out of 224 countries Anthropic Economic Index 2025, ranked 64th out of 115 countries",
+   "claim": "Wikipedia has no article on the index; its only article-space mention lists it as a country ranking ('Anthropic Economic Index 2025, ranked 64th out of 115 countries', International rankings of Malaysia)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B14.txt (sha256 343575d5bcd66736…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Anthropic — The Anthropic Economic Index \\ Anthropic",
+  "B2": "arXiv — Anthropic Economic Index report: Uneven geographic and enterprise ...",
+  "B3": "X — Anthropic on X: \"Today we’re launching the Anthropic Economic Index …\" / X",
+  "B4": "LinkedIn — Peter McCrory - Economic Index: Uneven AI adoption - LinkedIn",
+  "B5": "Substack — 7 Key Findings from the New Anthropic Economic Index Report",
+  "B6": "Reddit — Anthropic Economic Index: AI adoption remains highly ... - Reddit",
+  "B7": "YouTube·Standarity — Ask Claude About the Anthropic Economic Index",
+  "B8": "YouTube·Vinh Nguyen — [Podcast] Anthropic Economic Index: The Real Report Card on AI",
+  "B9": "YouTube·VibeDoc — YouTube",
+  "B10": "Hugging Face — Anthropic/EconomicIndex README",
+  "B11": "Anthropic — Anthropic Economic Index report: Economic primitives",
+  "B12": "Anthropic — Anthropic Economic Index report: Cadences",
+  "B13": "Stanford Digital Economy Lab — Canaries Dashboard",
+  "B14": "Wikipedia — Anthropic Economic Index (no article)"
+ }
+}

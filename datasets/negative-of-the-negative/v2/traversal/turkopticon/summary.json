@@ -1,0 +1,122 @@
+{
+ "row": "turkopticon",
+ "address": "Turkopticon",
+ "entity": "Turkopticon (turkopticon.net), founded in 2008 by Lilly Irani and M. Six Silberman as a review site and browser add-on through which Amazon Mechanical Turk workers rate the requesters they work for (Irani and Silberman, CHI 2013); since 2019 a worker-led, worker-run organizing and advocacy project maintained by a committee of Turk workers with volunteers from Tech Workers Coalition, expanded to all data workers; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/turkopticon/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "turkopticon",
+  "address": "Turkopticon",
+  "entity": "Turkopticon (turkopticon.net), founded in 2008 by Lilly Irani and M. Six Silberman as a review site and browser add-on through which Amazon Mechanical Turk workers rate the requesters they work for (Irani and Silberman, CHI 2013); since 2019 a worker-led, worker-run organizing and advocacy project maintained by a committee of Turk workers with volunteers from Tech Workers Coalition, expanded to all data workers; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/turkopticon/)",
+  "row_type": "C (a public entity on which the archive bears: a worker-run organizing and advocacy project with a review tool; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bTurk-?opticon\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bturkopticon\\.(net|ucsd\\.edu)\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "data work that trains and evaluates AI (data workers, annotators, content moderators, crowdworkers, Mechanical Turk workers)",
+    "pattern": "\\b(data[- ]work(ers?)?|data[- ]labou?r(ers?)?|data[- ]label+ers?|data annotat\\w*|annotators?|crowd ?work(ers?)?|click ?work(ers?)?|ghost work|micro-?task workers?|microwork\\w*|human computation|content moderators?|data enrichment|Mechanical Turk|MTurk|Turkers?)\\b",
+    "flags": "i",
+    "basis": "field: B1 (turkopticon.net, Our Mission: 'to organize data workers'); B6 (Turkopticon on LinkedIn, 2026-09-04: 'platform data workers wherever they are working. That includes people doing AI training and evaluation, data annotation, surveys, transcription, content moderation'); B9 (the operator's announcement: 'expand our efforts to assist ALL data workers'); B4 (the Reddit card: 'advocate for data workers across multiple platforms'); B5 (Irani and Silberman, CHI 2013: Amazon Mechanical Turk 'a popular human computation system'). The census's own intersection ('labor-producing-ai') and labor_object ('the work of Amazon Mechanical Turk workers (Turkers) on HITs posted by requesters; since the expansion, data workers on all data-work platforms') for the entity (LV record, census.json rows[slug == 'turkopticon'].intersections, .labor_object)."
+   },
+   {
+    "term": "organizing data workers (worker-led organizing and advocacy)",
+    "pattern": "\\b(worker[- ](led|run|organi[sz]\\w+|power|advocacy)|organi[sz]ing (data |platform |gig )?workers|data[- ]workers? organi[sz]\\w+|labou?r organi[sz]\\w+|platform[- ]worker[- ]rights organi[sz]\\w+)\\b",
+    "flags": "i",
+    "basis": "field: B8 (FAQ 1.1: 'a worker-run organizing and advocacy project'); B1 (Our Mission: 'to organize data workers to build collective power'; Our Values: 'Worker-Led'); B9 ('a worker-led, worker-run advocacy organization'). The census's own kind ('worker-run organizing and advocacy project, with a review site and browser add-on rating Amazon Mechanical Turk requesters'), intersection ('worker-power') and evidence_kind ('organizing resource') for the entity (LV record, census.json rows[slug == 'turkopticon'].kind, .intersections, .evidence_kind)."
+   },
+   {
+    "term": "employer (requester) reputation systems",
+    "pattern": "\\b(employer reputation|requester reputation|reputation systems? for (employers|requesters)|requester reviews?|reviews? of (employers|requesters)|rate (their )?(employers|requesters))\\b",
+    "flags": "i",
+    "basis": "field: B3 (the SSRN card's title: 'Operating an Employer Reputation System: Lessons from Turkopticon, 2008-2015'); B8 (FAQ 1.6: 'We didn't understand why Amazon didn't build in a requester reputation system, like Amazon Marketplace and eBay have.'); B5 (CHI 2013: 'Workers enter reviews of employers that they have worked with'). The census's own evidence_kind ('rating against standards', 'worker testimony') and unit ('a worker's review of a Mechanical Turk requester') for the entity (LV record, census.json rows[slug == 'turkopticon'].evidence_kind, .unit)."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own kind, intersection, evidence kind, unit or labor object for the entity, stated by field sources at the loci given: (1) data work that trains and evaluates AI, Turkopticon's labor object (census intersections 'labor-producing-ai', labor_object; B1, B4, B5, B6, B9); (2) organizing data workers (census kind 'worker-run organizing and advocacy project', intersection 'worker-power', evidence_kind 'organizing resource'; B1, B8, B9); (3) employer (requester) reputation systems (census evidence_kind 'rating against standards', unit; B3, B5, B8). The census's third intersection, 'gains-and-losses', is carried by the record's direction.gains ('not recorded as a quantity') and enters no class pass of its own. The aliases are the entity's name (Turkopticon; 'TO' is not used, being too short to match only the entity) and its two hosts (turkopticon.net; turkopticon.ucsd.edu, named in the FAQ). Lilly Irani and M. Six Silberman are the founders, persons distinct from the entity, and Amazon Mechanical Turk is the platform it rates requesters on, an entity distinct from it; neither is an alias. The archive's instruments of labor direction, the Directionality of Semantic Labor (DSL, #771; its canonical surface #1392), the directionality stack and user labor drag, measure labor performed with AI relative to the commissioned task (the census intersection 'labor-with-ai'), which is not one of the census's intersections for this entity; the census's lv_intersection for it reads 'none stated', and its reading that the review answers 'who directs the labor from the side of the one who supplies it' is the archive's reading, ledgered as LV-NN, not a class. The archive's semantic-labor line (#18, #163, #1439, #1545 among it) enters only where a sentence applies its category to a class above. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (semantic labor, the semantic proletariat as a class relation, ground-truth labor, bearing, dead labour, the summarizer's treatment of labor-organizing content) to one of the three classes; a bare mention, an inter-annotator method, a reference line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Turkopticon' (turkopticon-aio-20261029, OBS-5e387092d3d1, ADDR-6f55603abf37), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record and the worked question that names it) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#18, #49, #144, #163, #247, #256, #478, #499, #533, #534, #623, #1070, #1439, #1545).",
+  "hop_from": [
+   18,
+   49,
+   144,
+   163,
+   247,
+   256,
+   478,
+   499,
+   533,
+   534,
+   623,
+   1070,
+   1439,
+   1545
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 42,
+  "O_deposits": 32,
+  "H_candidates": 154
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "1": 2,
+   "18": 3,
+   "49": 2,
+   "137": 1,
+   "163": 1,
+   "222": 1,
+   "247": 1,
+   "308": 1,
+   "478": 1,
+   "499": 1,
+   "533": 1,
+   "534": 1,
+   "580": 1,
+   "623": 5,
+   "635": 1,
+   "716": 1,
+   "726": 1,
+   "727": 1,
+   "782": 1,
+   "796": 1,
+   "825": 1,
+   "833": 1,
+   "862": 2,
+   "1225": 1,
+   "1282": 1,
+   "1396": 1,
+   "1401": 1,
+   "1439": 1,
+   "1442": 1,
+   "1545": 2,
+   "1573": 1,
+   "1680": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "c19de64799eaf15fa1c685d6e376e64e42af2a667a22bb04225c781e6f962a88",
+  "candidates-H.jsonl": "d1c1b7346b731a82241d29093c761eb692100058205093b743abc9f44b17e53b"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

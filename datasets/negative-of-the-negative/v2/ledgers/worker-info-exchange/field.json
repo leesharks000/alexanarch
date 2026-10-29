@@ -1,0 +1,1165 @@
+{
+ "row": "worker-info-exchange",
+ "address": "Worker Info Exchange",
+ "addresses": [
+  "Worker Info Exchange"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia responses, or the card's title for the one unreachable card; 51/51 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the organisation's home page; B2 the foundation's home page; B3 the foundation's post of 29 April 2026; B4 a Facebook video, unreachable, title only); 'own_page', the census's own page T did not surface (B5, About Us, copied from the census's saved copy; the census's other own page, the home page, is card B1, byte-identical, carried once as a card); 'wikipedia', no article (B6, with the one mention in another article). The census read no third-party source (both its sources carry basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B3); where and under what name (B1); the problem it names (B1, B2, B5); the three strands (B1, B3, B5); the route under law (B3, B5); the foundation (B2); the Uber action (B1, B2, B3); dynamic pay (B1, B2, B3); research (B1, B2, B3); reports and news (B1); founding, people and status (B1); Uber's share of the fare (B4); reception, the encyclopedia (B6). The census's self_description, unit, directs, method, operator_london, uber_action, news_pay, news_sue and data_trusts quotes restate B1 and B5 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B5 copied from the census's saved copy; B6 .wiki, .html, .txt, -variant.wiki, -search.html/.txt and -mention.wiki the raw Wikipedia responses and their text); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Worker Info Exchange — Worker Info Exchange | Data Rights for Digital Workers | London",
+   "url": "https://www.workerinfoexchange.org/",
+   "kind": "Overview card (the entity's own home page; the census's own page worker-info-exchange--home)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B1.html",
+     "sha256": "fbcd4b9857cdf882e627f0b6dca7594aae14ed9fde1f5de887ea2ff5f357c03e"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B1.txt",
+     "sha256": "f38e30b680ecd654acac18edfc7f73c2342737b5a5c55a0df1518c086bb32d9d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:33:23Z",
+    "http": 200,
+    "url": "https://www.workerinfoexchange.org/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B1.html",
+    "raw_sha256": "fbcd4b9857cdf882e627f0b6dca7594aae14ed9fde1f5de887ea2ff5f357c03e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "worker-info-exchange--home",
+     "sha256": "fbcd4b9857cdf882e627f0b6dca7594aae14ed9fde1f5de887ea2ff5f357c03e",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:10Z",
+     "http": "200",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('Worker Info Exchange', '© 2025 Worker Info Exchange'; Stichting WIE International named as bringing the Uber action)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title, identical to the page's <title>, and the census's own source url. The fetch with the honest agent is byte-identical to the census's saved copy (sha256 fbcd4b98…, fetched 2026-10-29T21:49:10Z), so the card and the census's own page are one page, carried once, as a card; its text file is the census's text byte for byte. The card's snippet ('Organization: Worker Info Exchange (London non-profit; Stichting WIE International). Mission: Help gig workers reclaim workplace data control, challenge algorit...') is in the form of a generated summary ('Organization:', 'Mission:'), not text of the page: neither 'Organization:' nor 'Mission:' occurs in B1.txt. Recorded, not resolved, and not ledgered as a field claim.",
+   "surfaced_by_T": [
+    {
+     "slug": "worker-info-exchange-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Worker Info Exchange | Data Rights for Digital Workers | London",
+   "card_snippet": "Organization: Worker Info Exchange (London non-profit; Stichting WIE International). Mission: Help gig workers reclaim workplace data control, challenge algorit...",
+   "card_note": null,
+   "claims": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13"
+   ],
+   "kernel": [
+    "F2",
+    "F5"
+   ]
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Stichting WIE International — Stichting WIE International – Defending the rights of gig economy workers in the platform economy",
+   "url": "https://workerinfoexchange.nl/",
+   "kind": "Overview card (the home page of Stichting WIE International, the Dutch foundation, © 2026)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B2.html",
+     "sha256": "7e7a4ed8a97e904ef34e05150dd0334d0e062234e20b697c0023f2a4dc73e32a"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B2.txt",
+     "sha256": "51771d10440d09cb89ee16c31bf6b24f2d6bacdc91e81ee09c06c58f3be427bd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:33:24Z",
+    "http": 200,
+    "url": "https://workerinfoexchange.nl/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B2.html",
+    "raw_sha256": "7e7a4ed8a97e904ef34e05150dd0334d0e062234e20b697c0023f2a4dc73e32a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('Stichting WIE International, a Dutch foundation working in cooperation with Worker Info Exchange'; 'Research by Oxford University and Worker Info Exchange')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found from the entity's own home page, which links workerinfoexchange.nl (B1.html), after a WebSearch on the card's title and site returned no match; confirmed by the page's <title>, identical to the card title. The card's snippet ('Organization: Stichting WIE International (in cooperation with Worker Info Exchange) defending gig worker rights in Netherlands, UK, Europe. Problem: Uber's pos...') is a generated summary in the same form as card 1's; its words 'in cooperation with Worker Info Exchange' and 'Netherlands, UK, Europe' stand in the page. Not ledgered as a field claim. Not one of the census's sources (the census read workerinfoexchange.org only).",
+   "surfaced_by_T": [
+    {
+     "slug": "worker-info-exchange-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Stichting WIE International – Defending the rights of gig economy workers in the platform economy",
+   "card_snippet": "Organization: Stichting WIE International (in cooperation with Worker Info Exchange) defending gig worker rights in Netherlands, UK, Europe. Problem: Uber's pos...",
+   "card_note": null,
+   "claims": [
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29"
+   ],
+   "kernel": [
+    "F15",
+    "F20",
+    "F21",
+    "F26"
+   ]
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Stichting WIE International — Worker Info Exchange partners with TUC on “landmark” new reportexposing the ...",
+   "url": "https://workerinfoexchange.nl/worker-info-exchange-partners-with-tuc-on-landmark-new-reportexposing-the-human-cost-of-ubers-dynamic-pay/",
+   "kind": "Overview card (a news post on Stichting WIE International's site, dated 29 April 2026)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B3.html",
+     "sha256": "ed8b2c1e81711d15449c4aa2c76cae0aebd01545637c87d13d3feea6d3d43eaa"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B3.txt",
+     "sha256": "278ef6e79fc6fecdc2c109c2493c934bf38dfbd7148986dec7809560206ba253"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:33:24Z",
+    "http": 200,
+    "url": "https://workerinfoexchange.nl/worker-info-exchange-partners-with-tuc-on-landmark-new-reportexposing-the-human-cost-of-ubers-dynamic-pay/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B3.html",
+    "raw_sha256": "ed8b2c1e81711d15449c4aa2c76cae0aebd01545637c87d13d3feea6d3d43eaa",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('Worker Info Exchange (WIE)'; 'James Farrar, Director of WIE'; 'Cansu Safak, Research Lead at WIE'; '© Stichting WIE International 2026')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found in the foundation's own news feed (workerinfoexchange.nl/feed/ and /news-research/), whose item title is the card's title in full ('… reportexposing the human cost of Uber’s dynamic pay', the missing space the site's own), after a WebSearch on the title returned no match. The card's snippet ('Apr 29, 2026 — About Worker Info Exchange · Secure workers' right to access and understand the data that controls their work. · Investigate how algorithms ...') is the page's text: its date and its 'About Worker Info Exchange' list.",
+   "surfaced_by_T": [
+    {
+     "slug": "worker-info-exchange-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Worker Info Exchange partners with TUC on “landmark” new reportexposing the ...",
+   "card_snippet": "Apr 29, 2026 — About Worker Info Exchange · Secure workers' right to access and understand the data that controls their work. · Investigate how algorithms ...",
+   "card_note": null,
+   "claims": [
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45"
+   ],
+   "kernel": [
+    "F32",
+    "F34",
+    "F44"
+   ]
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (video)",
+   "card": "Facebook·NOVO ORG — Uber's share of rider fares increased, to taking 29-50% from drivers according ...",
+   "url": null,
+   "kind": "Overview card (a Facebook video, 1:38, by NOVO ORG; no snippet)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29, before 22:32Z",
+      "how": "WebSearch: NOVO ORG facebook video Uber's share of rider fares increased taking 29-50% from drivers according",
+      "result": "no Facebook or NOVO ORG result"
+     },
+     {
+      "at": "2026-10-29, before 22:32Z",
+      "how": "WebSearch: \"NOVO ORG\" Uber share of rider fares 29-50% drivers video",
+      "result": "no Facebook or NOVO ORG result"
+     },
+     {
+      "at": "2026-10-29, before 22:32Z",
+      "how": "WebSearch: facebook.com NOVO ORG reel Uber's share of rider fares increased",
+      "result": "no Facebook or NOVO ORG result"
+     }
+    ],
+    "result": "no URL could be found; the card's link in the paste is an opaque google.com/goto token (the capture's card note), which is not followed; no fetch made. Its title stands as its only text (the card carries no snippet); a video card is admitted through title and snippet (§3.1(a))."
+   },
+   "names_operator": "no (the title names Uber, not the entity)",
+   "names_archive": "no (title only)",
+   "note": "Unreachable: title only. The title is truncated at 'according ...', so the source of the 29–50% figure is not shown.",
+   "surfaced_by_T": [
+    {
+     "slug": "worker-info-exchange-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Uber's share of rider fares increased, to taking 29-50% from drivers according ...",
+   "card_snippet": null,
+   "card_note": "video, [1:38](https://www.google.com/goto?url=CAESxwEB6zswFYqhrosFrttu6V8VaxmMyTSUBFKLRd1VOZwE-Noza5d7afdLwzlo2ifB6bk0zVGDAlZcrY3S6s2KOkDwhgqYOKe_CxurZl_w9dTGL5g6MLhysTHwCt_8SkoHrQR8Z7iQxig1p01x-BY_0DgieA7uXTazzXOKaqFiWm6qBqE64Rm8M8OBfAgdZacZeg5hoaFUyoNiboFtPX_EQ7XEquztFV_sPjTiBKYTFyWrPlo7XWo-H7BQYSAqUW7qtJFyEabsq-al)",
+   "claims": [
+    "F46"
+   ],
+   "kernel": [
+    "F46"
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "role": "the entity's own page cited by the census record, not surfaced by T",
+   "card": "Worker Info Exchange — About Us | Worker Info Exchange",
+   "url": "https://www.workerinfoexchange.org/about-us",
+   "kind": "own page (the census's saved copy worker-info-exchange--about-us)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B5.html",
+     "sha256": "2ebc0cea511e10f80e14023eb2f66ce08ff3e7dfe2cef52d8364045d0bce5697"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B5.txt",
+     "sha256": "1f0a16cc5665b426d694fd398f823475d5c013e56094a2ad8994ab0e2fdf4d2a"
+    }
+   },
+   "fetched": {
+    "copied_from_census": true,
+    "census_src": "worker-info-exchange--about-us",
+    "url": "https://www.workerinfoexchange.org/about-us",
+    "read": "2026-10-29",
+    "census_fetched": "2026-10-29T21:49:51Z",
+    "http": "200",
+    "raw": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B5.html",
+    "raw_sha256": "2ebc0cea511e10f80e14023eb2f66ce08ff3e7dfe2cef52d8364045d0bce5697",
+    "census_sha256": "2ebc0cea511e10f80e14023eb2f66ce08ff3e7dfe2cef52d8364045d0bce5697",
+    "agrees": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('About Us | Worker Info Exchange')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Copied from the census's saved copy (gunzipped; sha256 matches the manifest and the census record); not refetched. Not surfaced by T: admitted beside the cards on the operator's ruling ('as against their wikipedia articles if they exist, their own pages, etc.'). The census's other own page, the home page, is card B1 (byte-identical), carried once as a card.",
+   "surfaced_by_T": [],
+   "claims": [
+    "F47",
+    "F48",
+    "F49"
+   ],
+   "kernel": [
+    "F47",
+    "F48"
+   ]
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Worker Info Exchange (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Worker_Info_Exchange&action=raw",
+   "kind": "Wikipedia (no article; one mention in another article)",
+   "files": {
+    "B6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6.wiki",
+     "sha256": "41eeea9370e0f34d4fcc65d389959305e0e3c61a761874c6750df6ddf078295c"
+    },
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6.html",
+     "sha256": "a6f7416f8f4b66758bae767d871caf23b40219e6874d07e83daa7b99af5584cf"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6.txt",
+     "sha256": "5ac6345347ce465223e03c85f6a4b29c559fcc70c1a12b16fba62deafaa030a3"
+    },
+    "B6-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6-variant.wiki",
+     "sha256": "9e1f1e976ab964b65fa753f10846fecc61981d28fa9be0656ac36dd56fa253e2"
+    },
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6-search.html",
+     "sha256": "5c45ca84f480d8d3a6811b2f95afdf120398967ebe9fb982e1ff6bcc55e36578"
+    },
+    "B6-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6-search.txt",
+     "sha256": "ede5e98a87361839c75ea2143eb4c79d4fbbd4f8d0c4f513a8b1c7c4f4d970e0"
+    },
+    "B6-mention.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/worker-info-exchange-20261029/B6-mention.wiki",
+     "sha256": "daf053456632f2a70cf2cfd111b2803abf3b98f374ed585d642c283e00001a43"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "tries": [
+     {
+      "at": "2026-10-29T22:34:08Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Worker_Info_Exchange&action=raw",
+      "http": 404,
+      "result": "'Error: 404, Not Found' (B6.wiki)"
+     },
+     {
+      "at": "2026-10-29T22:34:09Z",
+      "url": "https://en.wikipedia.org/wiki/Worker_Info_Exchange",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.' (B6.html, B6.txt)"
+     },
+     {
+      "at": "2026-10-29T22:34:10Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Worker_Info_Exchange_(organization)&action=raw",
+      "http": 404,
+      "result": "not found (B6-variant.wiki)"
+     },
+     {
+      "at": "2026-10-29T22:34:10Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Worker+Info+Exchange%22&title=Special%3ASearch&ns0=1&fulltext=1",
+      "http": 200,
+      "result": "'Result 1 of 1': International Alliance of App-based Transport Workers (B6-search.html, B6-search.txt)"
+     },
+     {
+      "at": "2026-10-29T22:34:29Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=International_Alliance_of_App-based_Transport_Workers&action=raw",
+      "http": 200,
+      "result": "the one mention, 'History' section, with a red link [[Worker Info Exchange]] (B6-mention.wiki)"
+     }
+    ]
+   },
+   "names_operator": "the mention names it ('NGO [[Worker Info Exchange]]')",
+   "names_archive": "no",
+   "note": "No article and no redirect: the raw wikitext and the rendered page are both HTTP 404; a full-text search of article space for \"Worker Info Exchange\" returns one result, the article on the International Alliance of App-based Transport Workers, whose History section links the name as a red link. The mention is ledgered as the encyclopedia's one statement of the entity, at its locus; it is not the entity's article.",
+   "surfaced_by_T": [],
+   "claims": [
+    "F50",
+    "F51"
+   ],
+   "kernel": [
+    "F50"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page title",
+   "quote": "Worker Info Exchange | Data Rights for Digital Workers | London",
+   "claim": "the entity's own page names it for data rights for digital workers, in London",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "where and under what name: London, digital workers",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1",
+   "quote": "Worker Info Exchange is a non-profit helping workers reclaim control over the data collected from them at work. We help workers turn data into power — challenging unfair algorithmic systems and holding tech platforms to account.",
+   "claim": "Worker Info Exchange defined by itself: a non-profit helping workers reclaim control over the data collected from them at work, turning data into power, challenging unfair algorithmic systems and holding tech platforms to account",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a non-profit helping workers turn the data collected from them at work into power",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶2",
+   "quote": "Stichting WIE International has launched a new collective action against Uber over its unfair dynamic pay system to stop algorithmic wage cuts and secure compensation for the damages drivers have suffered.",
+   "claim": "Stichting WIE International has launched a collective action against Uber over its dynamic pay system, to stop algorithmic wage cuts and secure compensation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Digital rights' ¶",
+   "quote": "Opaque automated management systems foster exploitation and discrimination. We challenge these practices through three strands of activity",
+   "claim": "opaque automated management systems foster exploitation and discrimination; it challenges them through three strands of activity",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the problem it names: workers managed by hidden algorithms",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data access' ¶",
+   "quote": "We facilitate data access by making specific subject access and data portability requests on behalf of workers. Our goal is to create transparency over their working conditions by interrogating how their work is allocated, how their pay is determined and how their performance is assessed.",
+   "claim": "its first strand: subject access and data portability requests made on behalf of workers, to create transparency over how their work is allocated, how their pay is determined and how their performance is assessed",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the three strands: data access, data investigations, data trusts",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data investigations' ¶",
+   "quote": "We carry out targeted investigations and data analyses to expose unfair algorithmic decision making. These investigations support the strategic litigation work through which we help workers contest illegal automated dismissals and management decisions.",
+   "claim": "its second strand: targeted investigations and data analyses exposing unfair algorithmic decision making, supporting strategic litigation against illegal automated dismissals and management decisions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "the three strands: data access, data investigations, data trusts",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Data trusts' ¶",
+   "quote": "We support trade unions and grassroots worker organisations to aggregate their data with other workers through the development of data trusts. Armed with powerful analysis, workers can be better resourced for collective bargaining and action.",
+   "claim": "its third strand: supporting trade unions and grassroots worker organisations to aggregate their data through data trusts, for collective bargaining and action",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "the three strands: data access, data investigations, data trusts",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "menu, 'Research'",
+   "quote": "Managed by Bots Report Just Eat Report McMisery Report Dying for Data Report Workers' Recommendations on EU Directive",
+   "claim": "its research reports: Managed by Bots, Just Eat, McMisery, Dying for Data, and Workers' Recommendations on the EU Directive",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reports and news on its own site",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'News', item 1",
+   "quote": "Liverpool Uber drivers hit by falling pay and soaring commission fees as AI controlled \"dynamic pay\" takes hold Worker Info Exchange Jul 23",
+   "claim": "its latest news item (dated Jul 23, no year shown): Liverpool Uber drivers hit by falling pay and soaring commission fees as AI-controlled dynamic pay takes hold",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'News', item 2",
+   "quote": "Drivers in UK and Europe set to sue Uber for unfair pay set by algorithm Worker Info Exchange Nov 20, 2025",
+   "claim": "news, 20 November 2025: drivers in the UK and Europe set to sue Uber for unfair pay set by algorithm",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2025-11-20",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'News', item 3",
+   "quote": "New Research Exposes Deepening Exploitation of Uber Drivers by Algorithmic Pay Worker Info Exchange Jun 19, 2025",
+   "claim": "news, 19 June 2025: new research exposing deepening exploitation of Uber drivers by algorithmic pay",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2025-06-19",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© 2025 Worker Info Exchange",
+   "claim": "the site's copyright year is 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "founding, people and status",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Worker Info Exchange's Equivalency Determination (ED) is certified by NGOsource.",
+   "claim": "its equivalency determination is certified by NGOsource",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "founding, people and status",
+   "date": "2025 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "hero ¶1",
+   "quote": "The platform economy is sold as a story of freedom, yet hidden algorithms decide who works, who waits, and who earns.",
+   "claim": "the platform economy is sold as freedom while hidden algorithms decide who works, who waits and who earns",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the problem it names: workers managed by hidden algorithms",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "hero ¶2",
+   "quote": "Stichting WIE International holds platforms to account and defends the rights of gig workers in the Netherlands, the UK, and Europe.",
+   "claim": "Stichting WIE International defined by itself: it holds platforms to account and defends gig workers' rights in the Netherlands, the UK and Europe",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the foundation: Stichting WIE International, in cooperation with WIE",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶1",
+   "quote": "From 2020, Uber quietly started making changes to its systems to make driver pay dynamic.",
+   "claim": "from 2020 Uber began changing its systems to make driver pay dynamic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶2",
+   "quote": "Behind the promise of “fairer” pricing, this system quietly shifted risk onto drivers while enabling Uber to increase its hidden commission — in some cases taking nearly half of the fare.",
+   "claim": "dynamic pay shifted risk onto drivers and let Uber increase its hidden commission, in some cases to nearly half the fare",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶2",
+   "quote": "Before the introduction of Dynamic Pay, driver earnings were calculated transparently, based on fixed per-minute and per-kilometer/mile rates, with Uber’s commission set at 25%.",
+   "claim": "before dynamic pay, earnings were calculated from fixed per-minute and per-distance rates with a 25% commission",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶3",
+   "quote": "After the introduction of Dynamic Pay, driver pay and work allocation became variable, non-transparent and determined in real time by Uber’s algorithm.",
+   "claim": "after dynamic pay, driver pay and work allocation became variable, non-transparent and set in real time by Uber's algorithm",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶4",
+   "quote": "Research by Oxford University and Worker Info Exchange, based on 1.5 million trips, shows falling driver pay, increased unpaid waiting time, and growing inequality, with most drivers earning less while Uber profits more.",
+   "claim": "research by Oxford University and Worker Info Exchange on 1.5 million trips shows falling pay, more unpaid waiting time and growing inequality, most drivers earning less while Uber profits more",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Problem: Dynamic Pay' ¶4",
+   "quote": "Stichting WIE International has launched the Dynamic Pay Claim under Dutch WAMCA law to challenge this system, expose its impact, and seek remedies for affected drivers.",
+   "claim": "Stichting WIE International brings the Dynamic Pay Claim under the Dutch WAMCA law",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Dynamic Pay Claim' ¶1",
+   "quote": "The foundation also wants to enforce transparency regarding the use and training of the underlying algorithms as well as secure compensation for drivers who have suffered damages as a result of Dynamic Pay.",
+   "claim": "the claim seeks transparency on the use and training of the algorithms and compensation for drivers' damages",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Dynamic Pay Claim' ¶1",
+   "quote": "Stichting WIE International is also fighting for drivers whose personal data was unlawfully transferred to the United States by Uber between 2021 and September 2023.",
+   "claim": "the foundation also acts for drivers whose personal data Uber unlawfully transferred to the United States between 2021 and September 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Dynamic Pay Claim' ¶2",
+   "quote": "At the moment, Stichting WIE International is focusing on drivers from the Netherlands, Belgium, France, Germany, Poland, Romania and the United Kingdom who have driven for Uber at any time after November 2020.",
+   "claim": "the claim covers drivers from seven countries who drove for Uber after November 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'The Dynamic Pay Claim' ¶3",
+   "quote": "There are no upfront fees for drivers — case costs are covered by third-party funding.",
+   "claim": "no upfront fees; costs covered by third-party funding",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'Our Mission' ¶1",
+   "quote": "Stichting WIE International, a Dutch foundation working in cooperation with Worker Info Exchange, empowers gig workers to fight back with their data against platform service providers.",
+   "claim": "Stichting WIE International is a Dutch foundation working in cooperation with Worker Info Exchange (two bodies)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the foundation: Stichting WIE International, in cooperation with WIE",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'Our Mission', list",
+   "quote": "Access their rights under the GDPR to request and understand their data … Expose unfair practices through participatory research and audits … Advocate for systemic change with trade unions, policymakers, and courts … Obtain compensation for workers to make up for inflicted harm",
+   "claim": "the foundation's four aims: GDPR data access, participatory research and audits, advocacy with unions, policymakers and courts, compensation",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: Stichting WIE International, in cooperation with WIE",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'What We Do', Research & Evidence",
+   "quote": "We partner with leading universities and worker groups to audit platform algorithms. Our studies have revealed falling pay, rising inequality, and a lack of transparency in the gig economy.",
+   "claim": "it partners with universities and worker groups to audit platform algorithms; its studies found falling pay, rising inequality and opacity",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'What We Do', Worker Empowerment",
+   "quote": "Through workshops and legal support, we equip workers to use their own data to demand transparency and accountability.",
+   "claim": "workshops and legal support equip workers to use their own data",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: Stichting WIE International, in cooperation with WIE",
+   "date": "2026 (site copyright; read 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt, whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "headline and date",
+   "quote": "Worker Info Exchange partners with TUC on “landmark” new reportexposing the human cost of Uber’s dynamic pay … April 29, 2026",
+   "claim": "29 April 2026: Worker Info Exchange partners with the TUC on a report on the human cost of Uber's dynamic pay",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "Worker Info Exchange (WIE), a non‑profit organisation turning worker data into collective power , has today welcomed the TUC’s new report, The Human Price of Dynamic Pay , as a landmark investigation into the impact of algorithmic pay systems on drivers’ lives.",
+   "claim": "WIE welcomed the TUC's report The Human Price of Dynamic Pay as a landmark investigation of algorithmic pay",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "WIE was research partner with the TUC on the project to document how Uber’s move to dynamic pay has deepened insecurity across the ride‑hail and delivery economy.",
+   "claim": "WIE was the TUC's research partner on the project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "The report draws on powerful first-hand testimony from eleven Uber and delivery drivers who describe how the company’s “dynamic pay” system, a constantly shifting, algorithmic model that determines how much workers earn on each job, has eroded income stability, increased unpaid hours, and worsened mental and physical health.",
+   "claim": "the report rests on the testimony of eleven drivers: dynamic pay eroded income stability, increased unpaid hours and worsened health",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "WIE, through its Dynamic Pay campaign , is currently coordinating a collective legal action against Uber in the Dutch courts, arguing that the company’s dynamic pricing systems breach drivers’ data protection and transparency rights under EU law.",
+   "claim": "WIE, through its Dynamic Pay campaign, is coordinating the collective legal action against Uber in the Dutch courts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶7",
+   "quote": "James Farrar, Director of WIE, comments … That dynamic pay is not innovation, it’s exploitation by algorithm, a business model built on secrecy and unequal power.",
+   "claim": "its Director, James Farrar: dynamic pay is exploitation by algorithm, built on secrecy and unequal power",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶9",
+   "quote": "Cansu Safak, Research Lead at WIE, comments … a decline in wages that our earlier participatory audit with Oxford University, built from drivers’ own data subject access requests, had already exposed in numbers.",
+   "claim": "its Research Lead, Cansu Safak: the earlier participatory audit with Oxford University was built from drivers' own data subject access requests",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶10",
+   "quote": "With no transparency over the conditions they work under, drivers have been forced to turn to data protection law as the only remaining route to assert their rights.",
+   "claim": "Safak: data protection law is drivers' only remaining route to assert their rights",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the route: workers' digital rights under the law",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "subhead",
+   "quote": "We need enforcement rather than reform. Drivers are already workers, but government has no appetite for enforcing the law.",
+   "claim": "its position: drivers are already workers; enforcement, not reform",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the route: workers' digital rights under the law",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F39": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'WIE's Dynamic Pay legal action' ¶2",
+   "quote": "WIE argues that Uber’s use of algorithmically set dynamic pay is unlawful under Article 22 of the EU General Data Protection Regulation (GDPR), which gives drivers the right not to be subject to decisions based solely on automated decision-making, including profiling.",
+   "claim": "WIE argues dynamic pay is unlawful under GDPR Article 22, the right not to be subject to solely automated decisions",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F40": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'WIE's Dynamic Pay legal action' ¶2",
+   "quote": "Uber is also not transparent about how its algorithm works, and has used drivers’ own historical data to train the system that now determines their pay.",
+   "claim": "Uber trained the pay system on drivers' own historical data, without transparency",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F41": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'WIE's Dynamic Pay legal action' ¶3",
+   "quote": "Separately, Uber has already been fined for unlawfully transferring driver data to the United States between August 2021 and September 2023.",
+   "claim": "Uber was fined for unlawfully transferring driver data to the United States, August 2021 to September 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Uber collective action: the Dynamic Pay Claim",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F42": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'WIE's Dynamic Pay legal action' ¶5",
+   "quote": "Joint analysis by Oxford University and WIE , covering 1.5 million Uber trips between 2016 and 2024, found that after the introduction of dynamic pricing in 2023, drivers’ real pay declined, volatility increased, and Uber’s profit margins rose sharply.",
+   "claim": "the joint Oxford–WIE analysis of 1.5 million trips (2016–2024) found that after dynamic pricing in 2023 real pay fell, volatility rose and Uber's margins rose sharply",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research: the Oxford audit and the TUC report",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'WIE's Dynamic Pay legal action' ¶6",
+   "quote": "Under the system, two drivers performing identical trips can be paid vastly different amounts, with Uber keeping more than half of the fare in many cases.",
+   "claim": "identical trips can be paid very differently, Uber keeping more than half the fare in many cases",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dynamic pay: what changed for drivers",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F44": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'About Worker Info Exchange'",
+   "quote": "Worker Info Exchange (WIE) is an independent non‑profit organisation that helps platform workers turn their data into power. Founded in 2020, WIE works with drivers, couriers and trade‑union partners to:",
+   "claim": "WIE: an independent non-profit, founded in 2020, helping platform workers turn their data into power, with drivers, couriers and trade-union partners",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a non-profit helping workers turn the data collected from them at work into power",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F45": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'About Worker Info Exchange', list",
+   "quote": "Secure workers’ right to access and understand the data that controls their work. … Investigate how algorithms determine pay, performance and job allocation. … Build data trusts so workers can combine and analyse their data collectively. … Support unions and grassroots organisations in using data for collective action, bargaining and transparency.",
+   "claim": "its four aims: data access, investigation of algorithms, data trusts, support for unions and grassroots organisations",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the three strands: data access, data investigations, data trusts",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt, whitespace-normalised"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title (video, 1:38; no snippet)",
+   "quote": "Uber's share of rider fares increased, to taking 29-50% from drivers according ...",
+   "claim": "a video: Uber's share of rider fares increased, to taking 29–50% from drivers, according to a source the truncated title does not show",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Uber's share of the fare (the video card)",
+   "date": "undated (video card; observed 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "the card's title (unreachable card; title only)"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "About Us ¶1",
+   "quote": "Digital rights are increasingly important in the fight for worker rights for gig workers who are managed and controlled at work by hidden algorithms. Opaque automated management systems foster exploitation and discrimination. They facilitate illegal workplace practices including unfair work allocation, performance management and dismissals.",
+   "claim": "gig workers are managed and controlled at work by hidden algorithms; opaque automated management systems foster exploitation and discrimination and facilitate illegal practices in work allocation, performance management and dismissals",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the problem it names: workers managed by hidden algorithms",
+   "date": "undated (read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "About Us ¶2",
+   "quote": "Our solution is to help workers assert their digital rights under the law so that they may take control of their data, have full transparency of how they have been subject to algorithmic management and to challenge illegal or unfair automated management decisions.",
+   "claim": "its solution: workers asserting their digital rights under the law, to take control of their data, see how they were subject to algorithmic management and challenge automated management decisions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the route: workers' digital rights under the law",
+   "date": "undated (read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised"
+  },
+  "F49": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "About Us ¶3",
+   "quote": "We will do this by supporting trade unions and grassroots worker organisations to access and aggregate their data with other workers through the development of data trust(s). Armed with powerful analysis, workers can better monitor their conditions at work and take action to improve things whether on the streets, in the courts or in the legislature.",
+   "claim": "it will do this through data trusts with unions and grassroots organisations, so workers can act on the streets, in the courts or in the legislature",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the three strands: data access, data investigations, data trusts",
+   "date": "undated (read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "rendered page https://en.wikipedia.org/wiki/Worker_Info_Exchange (HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article on Worker Info Exchange",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (B6.html's text), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "International Alliance of App-based Transport Workers, 'History' (wikitext, B6-mention.wiki line 25)",
+   "quote": "In July 2020, IAATW together with the [[App Drivers and Couriers Union]] and NGO [[Worker Info Exchange]] started a campaign of [[Uber BV v Aslam|supporting Uber drivers in filing legal complaints against the company]] for failing to provide access to their personal data.",
+   "claim": "Wikipedia's one statement of the entity, in another article, with a red link to its name: in July 2020 it joined IAATW and the ADCU in supporting Uber drivers' legal complaints for access to their personal data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2020-07 (the event; the article as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-mention.wiki, whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Worker Info Exchange — Worker Info Exchange | Data Rights for Digital Workers | London",
+  "B2": "Stichting WIE International — Stichting WIE International – Defending the rights of gig economy workers in the platform economy",
+  "B3": "Stichting WIE International — Worker Info Exchange partners with TUC on “landmark” new reportexposing the ...",
+  "B4": "Facebook·NOVO ORG — Uber's share of rider fares increased, to taking 29-50% from drivers according ...",
+  "B5": "Worker Info Exchange — About Us | Worker Info Exchange",
+  "B6": "Wikipedia — Worker Info Exchange (no article)"
+ }
+}

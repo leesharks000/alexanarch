@@ -1,0 +1,2070 @@
+{
+ "row": "openai-gdpval",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on GDPval with the entity named; R, a relation the archive states between GDPval and an archive object; O, an archive category applied to GDPval or to a class the field and the census source for it (configs/openai-gdpval.json, classes 1–5 with their bases). A bare mention, a list of tools or keywords, a citation-list entry or a reference line is not a claim. No archive text names GDPval or its arXiv number (D 0, R 0). The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive paragraph matching a class pattern was read at its match (class 1, benchmarks: 38 matches in 17 deposits; class 2, commissions: 92 in 20; class 3, review and redo: 7 in 2; class 4, labor producing AI evaluation: 68 in 33; class 5, model graders: 5 in 3), and the admitted deposits read at the sections named in each claim's locus. The hop (136 candidates in 135 deposits, one citation hop forward and back from the 14 deposits admitted or grouped at the first pass) was screened by script for the class terms and each hit sentence read; two were admitted.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 48,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Theoretical Production Benchmark v2.0, Abstract: current benchmarks measure 'atomic intelligence', discrete, well-defined tasks with measurable success criteria (O-class, benchmarks; the archive's term applied to the class). The O-pass candidate sentences (multi-agent benchmarks) are not the admitted claim",
+   "claims": [
+    "O48-01"
+   ],
+   "cands": [
+    "O0001",
+    "O0002"
+   ]
+  },
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor §II.5: ground-truth labor against variance-generative labor, and their pay (O-class, labor producing AI); the sentence naming Gray and Suri's Ghost Work (the O-pass candidate) reports the literature and is not itself the claim",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": [
+    "O0008"
+   ]
+  },
+  {
+   "dep": 199,
+   "strata": [
+    "O"
+   ],
+   "reason": "Generative Monoculture: functional correctness 'the property benchmarks measure', solution-space diversity 'the property no benchmark measures' (O-class, benchmarks; hypothesis)",
+   "claims": [
+    "O199-01"
+   ],
+   "cands": [
+    "O0009"
+   ]
+  },
+  {
+   "dep": 308,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Capital Operator Stack §B: in AI-adjacent meaning labor, data labeling among it, '<5% converts to invoice' (O-class, labor producing AI); marked unsupported, no measurement at the locus. The reading-list entry (O0011) is a reference",
+   "claims": [
+    "O308-01"
+   ],
+   "cands": [
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 482,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Hacking: benchmarking 'tests for predetermined capabilities', set apart from the archive's method (O-class, benchmarks). Found by reading the class matches",
+   "claims": [
+    "O482-01"
+   ],
+   "cands": [
+    "H0044"
+   ]
+  },
+  {
+   "dep": 533,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Groundskeeper's Treatise §IX, Step 1: the bearing-cost audit, naming annotators and users who re-prompt as sources of semantic labor (O-class, labor producing AI, and the user's re-prompting labor)",
+   "claims": [
+    "O533-01"
+   ],
+   "cands": [
+    "O0013"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure §6: the labor of data labelers performing RLHF extracted, its non-compensation felt materially (O-class, labor producing AI); the Ghost Work citation is a reference",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0016",
+    "O0017"
+   ]
+  },
+  {
+   "dep": 637,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Encyclotron: 'Benchmarks measure model performance on standardized tasks' (O-class, benchmarks). Found by reading the class matches",
+   "claims": [
+    "O637-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 771,
+   "strata": [
+    "O"
+   ],
+   "reason": "Directionality of Semantic Labor: its definition and task-origin principle, its identification condition ('a one-shot commission') and User Labor Drag with its identification limit, the archive's instruments applied to the classes of commissioned one-shot tasks and of the user's review and redo of model output (O-class; classes sourced by B8 §5, §3.2, A.2.1 and the census's intersection and lv_intersection)",
+   "claims": [
+    "O771-01",
+    "O771-02",
+    "O771-03",
+    "O771-04",
+    "O771-05",
+    "O771-06"
+   ],
+   "cands": [
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030",
+    "O0031",
+    "O0032",
+    "O0033",
+    "O0034",
+    "O0035",
+    "O0036",
+    "O0037",
+    "O0038",
+    "O0039",
+    "O0040",
+    "O0041",
+    "O0042"
+   ]
+  },
+  {
+   "dep": 778,
+   "strata": [
+    "O"
+   ],
+   "reason": "Reasoning Under Load 01: 'Output-level evaluation — which is what benchmarks measure — cannot detect reasoning-level failures' (O-class, benchmarks). Found by reading the class matches",
+   "claims": [
+    "O778-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 855,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wolf Boy and the Language Model: 'Benchmarks measure means, not tails', a claim on benchmarks as a class (O-class, benchmarks; census kind 'benchmark'). Found by reading the class matches",
+   "claims": [
+    "O855-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 856,
+   "strata": [
+    "O"
+   ],
+   "reason": "#856 restates #199's benchmark sentence ('The fallacy is structurally identical…'): an instance under #199 (S4)",
+   "claims": [],
+   "instance_of": 199,
+   "cands": []
+  },
+  {
+   "dep": 1023,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #199 (Generative Monoculture, v1): an instance under #199 (S4); #1690 Appendix A §A.8 reports #1023's text file as mislabelled",
+   "claims": [],
+   "instance_of": 199,
+   "cands": [
+    "O0053"
+   ]
+  },
+  {
+   "dep": 1392,
+   "strata": [
+    "O"
+   ],
+   "reason": "the laborvector.org canonical definition surface of #771 (2026-06-05), the same specification rendered as a web page (its 15 O-pass sentences are #771's terms, its meta tags and FAQ): an instance under #771 (S4); its added WRS/PVS remarks concern the instrument, not the classes",
+   "claims": [],
+   "instance_of": 771,
+   "cands": [
+    "O0056",
+    "O0057",
+    "O0058",
+    "O0059",
+    "O0060",
+    "O0061",
+    "O0062",
+    "O0063",
+    "O0064",
+    "O0065",
+    "O0066",
+    "O0067",
+    "O0068",
+    "O0069",
+    "O0070"
+   ]
+  },
+  {
+   "dep": 1540,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "The Certified Center, closing gloss: 'Reality administers no benchmarks; it administers events' (O-class, benchmarks; opaque, quoted). Reached by the hop (H, reverse via #855 and #1023)",
+   "claims": [
+    "O1540-01"
+   ],
+   "cands": [
+    "H0109"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Proletariat Is a Class Relation: a relation, not an essence, a highly paid academic and a low-wage annotator alike able to occupy it; the data annotator 'A paradigmatic occupational case, not the definition' (O-class, labor producing AI)",
+   "claims": [
+    "O1545-01",
+    "O1545-02"
+   ],
+   "cands": [
+    "O0074",
+    "O0075"
+   ]
+  },
+  {
+   "dep": 1616,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "Ontological Flattening §3: a benchmark 'begins by closing an ontology' (O-class, benchmarks). Reached by the hop (H, reverse via #855); term-absent for the entity",
+   "claims": [
+    "O1616-01"
+   ],
+   "cands": [
+    "H0119"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/gdpval-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER reading note for the entity's capture (OBS-ef64b7d44199, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/openai-gdpval/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'openai-gdpval'], organizing_question, intersections; questions.json 'working-with-ai'; rendered aggregators/openai-gdpval/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0), with the worked question that names it: its fields with their basis; where a field restates a source ledgered in B (the abstract page B3, the paper B8/B4) it is one lineage with that source",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    107
+   ],
+   "cands": [
+    "O0003"
+   ],
+   "reason": "a forecast about 'AI slop' and human raters' identifications in the archive's own measurement; nothing of the class of labor producing AI evaluation"
+  },
+  {
+   "dep": [
+    114
+   ],
+   "cands": [
+    "O0004"
+   ],
+   "reason": "unpaid evaluation labor of job applicants in hiring; a different class (applicant-side cost), not labor producing AI"
+  },
+  {
+   "dep": [
+    137
+   ],
+   "cands": [
+    "O0005"
+   ],
+   "reason": "a table of Marx's commodity against the semantic commodity; no claim on annotation or evaluation labor"
+  },
+  {
+   "dep": [
+    142
+   ],
+   "cands": [
+    "O0006"
+   ],
+   "reason": "a falsifier of another framework, triggered by 'precisely specified' in another sense; nothing of commissioned tasks"
+  },
+  {
+   "dep": [
+    145
+   ],
+   "cands": [
+    "O0007"
+   ],
+   "reason": "a specific retrieval case ('sources survive, task-origin does not'); a claim about one composition, not the class"
+  },
+  {
+   "dep": [
+    496
+   ],
+   "cands": [
+    "O0012"
+   ],
+   "reason": "'precisely specified' of a transform; unrelated"
+  },
+  {
+   "dep": [
+    534
+   ],
+   "cands": [
+    "O0014"
+   ],
+   "reason": "about Anthropic's constitution: its silence on the labor conditions of annotators; a claim about one document, not the class"
+  },
+  {
+   "dep": [
+    580
+   ],
+   "cands": [
+    "O0015"
+   ],
+   "reason": "the archive's own taxonomy lacks inter-rater validation by annotators; a limit of the archive's instrument"
+  },
+  {
+   "dep": [
+    635
+   ],
+   "cands": [
+    "O0018"
+   ],
+   "reason": "the archive's own evaluation design (three expert annotators); not a claim about the class"
+  },
+  {
+   "dep": [
+    699
+   ],
+   "cands": [
+    "O0019"
+   ],
+   "reason": "a catalogue table comparing fields; a bare mention"
+  },
+  {
+   "dep": [
+    716
+   ],
+   "cands": [
+    "O0020"
+   ],
+   "reason": "a proposed pilot with two annotators scoring PER; the archive's method, not the class"
+  },
+  {
+   "dep": [
+    735
+   ],
+   "cands": [
+    "O0021",
+    "O0022"
+   ],
+   "reason": "the archive's training protocol, a measurement primitive 'in place of human raters'; about the archive's own model, not evaluation labor"
+  },
+  {
+   "dep": [
+    770
+   ],
+   "cands": [
+    "O0023",
+    "O0024"
+   ],
+   "reason": "names task-origin and synthetic labor as the companion frameworks' objects; a bare mention"
+  },
+  {
+   "dep": [
+    772
+   ],
+   "cands": [
+    "O0043",
+    "O0044",
+    "O0045"
+   ],
+   "reason": "a single transcript's analysis (a model's juridical self-positioning); not the class of one-shot commissions"
+  },
+  {
+   "dep": [
+    773
+   ],
+   "cands": [
+    "O0046",
+    "O0047"
+   ],
+   "reason": "the archive's own worked example of DSL (a one-shot commission scored +0.80); about the instrument, not GDPval's class"
+  },
+  {
+   "dep": [
+    774
+   ],
+   "cands": [
+    "O0048"
+   ],
+   "reason": "retrocausal stabilization of task-origin in reflexive dialogue; reflexive threads, not one-shot commissions"
+  },
+  {
+   "dep": [
+    834
+   ],
+   "cands": [
+    "O0049"
+   ],
+   "reason": "the archive's own benchmark of machine-legibility; a claim about its instrument"
+  },
+  {
+   "dep": [
+    895
+   ],
+   "cands": [
+    "O0050"
+   ],
+   "reason": "'precisely specified' of a transform; unrelated"
+  },
+  {
+   "dep": [
+    923
+   ],
+   "cands": [
+    "O0051"
+   ],
+   "reason": "human raters' aggregate preference for confirming answers as a sycophancy mechanism in RLHF data; a claim about preference data, not about the labor or grading of evaluation tasks"
+  },
+  {
+   "dep": [
+    1010
+   ],
+   "cands": [
+    "O0052"
+   ],
+   "reason": "a DataCite record; non-text matter"
+  },
+  {
+   "dep": [
+    1228
+   ],
+   "cands": [
+    "O0054"
+   ],
+   "reason": "the same benchmark of machine-legibility as #834; the archive's instrument"
+  },
+  {
+   "dep": [
+    1282
+   ],
+   "cands": [
+    "O0055"
+   ],
+   "reason": "an invoice archive's metadata; a bare mention"
+  },
+  {
+   "dep": [
+    1442
+   ],
+   "cands": [
+    "O0071"
+   ],
+   "reason": "a figure of speech ('the annotator of the structure'); no claim"
+  },
+  {
+   "dep": [
+    1464
+   ],
+   "cands": [
+    "O0072"
+   ],
+   "reason": "restates #771's five-layer path; an instance of #771's lineage with nothing added"
+  },
+  {
+   "dep": [
+    1472
+   ],
+   "cands": [
+    "O0073"
+   ],
+   "reason": "a table of surfaces; a bare mention"
+  },
+  {
+   "dep": [
+    1556
+   ],
+   "cands": [
+    "O0076"
+   ],
+   "reason": "'the standard 90/9/1 benchmark' of a toy model of collapse; the archive's internal track, not AI capability benchmarks"
+  },
+  {
+   "dep": [
+    1573
+   ],
+   "cands": [
+    "O0077"
+   ],
+   "reason": "the archive's own test 'no corpus, no annotator'; about its instrument"
+  },
+  {
+   "dep": [
+    1611
+   ],
+   "cands": [
+    "O0078"
+   ],
+   "reason": "a /non composition naming benchmarks within model collapse; restates other deposits"
+  },
+  {
+   "dep": [
+    1664
+   ],
+   "cands": [
+    "O0079",
+    "O0080"
+   ],
+   "reason": "a specification's worked example restating #1556; restates other deposits"
+  },
+  {
+   "dep": [
+    1665
+   ],
+   "cands": [
+    "O0081",
+    "O0082"
+   ],
+   "reason": "the same specification (an earlier version)"
+  },
+  {
+   "dep": [
+    1671
+   ],
+   "cands": [
+    "O0083",
+    "O0084"
+   ],
+   "reason": "the same specification (an earlier version)"
+  },
+  {
+   "dep": [
+    1680
+   ],
+   "cands": [
+    "O0085"
+   ],
+   "reason": "agreement between annotators on weights as a point for reading; the archive's method"
+  },
+  {
+   "dep": [
+    1684
+   ],
+   "cands": [
+    "O0086"
+   ],
+   "reason": "a forecast that a model keeps benchmark scores; about #735's model, not the class"
+  },
+  {
+   "dep": [
+    1690
+   ],
+   "cands": [
+    "O0087",
+    "O0088"
+   ],
+   "reason": "the specification, its worked example restating #1556"
+  }
+ ],
+ "class_reading_not_admitted": [
+  {
+   "dep": [
+    1634
+   ],
+   "reason": "class 5: LLM-as-a-judge autoraters in a Google Trust & Safety job posting, read as ontological policing; a claim about one organization's apparatus, not the class of model graders"
+  },
+  {
+   "dep": [
+    716,
+    741
+   ],
+   "reason": "class 5: reference-list entries (Zheng et al., Judging LLM-as-a-judge)"
+  },
+  {
+   "dep": [
+    144
+   ],
+   "reason": "class 4: a literature map (Gray and Suri; Rahman and Sultana) and where it stops; a claim about the literature's reach"
+  },
+  {
+   "dep": [
+    1611,
+    1664,
+    1665,
+    1671,
+    1690,
+    834,
+    1228,
+    1684,
+    1556,
+    1573
+   ],
+   "reason": "class 1: restatements of other deposits in /non compositions and specifications, or the archive's own instruments"
+  }
+ ],
+ "hop": [
+  {
+   "cand": "H0001",
+   "dep": 1,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0002",
+   "dep": 3,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0003",
+   "dep": 28,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0004",
+   "dep": 31,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0005",
+   "dep": 39,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "class defined by relation to the means of production, Marx's definition restated; nothing of the classes beyond #1545, which is admitted"
+  },
+  {
+   "cand": "H0006",
+   "dep": 41,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0007",
+   "dep": 42,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0008",
+   "dep": 45,
+   "direction": "forward",
+   "via_admitted": [
+    48,
+    623
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0009",
+   "dep": 50,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0010",
+   "dep": 55,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0011",
+   "dep": 63,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0012",
+   "dep": 72,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0013",
+   "dep": 89,
+   "direction": "forward",
+   "via_admitted": [
+    771
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0014",
+   "dep": 92,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    771,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0015",
+   "dep": 100,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0016",
+   "dep": 101,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0017",
+   "dep": 108,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0018",
+   "dep": 112,
+   "direction": "reverse",
+   "via_admitted": [
+    48,
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0019",
+   "dep": 143,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0020",
+   "dep": 148,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0021",
+   "dep": 148,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0022",
+   "dep": 155,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0023",
+   "dep": 156,
+   "direction": "forward",
+   "via_admitted": [
+    1023,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0024",
+   "dep": 157,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0025",
+   "dep": 162,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0026",
+   "dep": 166,
+   "direction": "reverse",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0027",
+   "dep": 167,
+   "direction": "reverse",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0028",
+   "dep": 170,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0029",
+   "dep": 173,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0030",
+   "dep": 188,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0031",
+   "dep": 198,
+   "direction": "forward",
+   "via_admitted": [
+    199,
+    855,
+    856,
+    1023,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0032",
+   "dep": 198,
+   "direction": "reverse",
+   "via_admitted": [
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0033",
+   "dep": 213,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0034",
+   "dep": 217,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0035",
+   "dep": 227,
+   "direction": "forward",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0036",
+   "dep": 260,
+   "direction": "forward",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0037",
+   "dep": 269,
+   "direction": "forward",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0038",
+   "dep": 297,
+   "direction": "forward",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0039",
+   "dep": 349,
+   "direction": "forward",
+   "via_admitted": [
+    623
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0040",
+   "dep": 362,
+   "direction": "forward",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0041",
+   "dep": 380,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0042",
+   "dep": 449,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0043",
+   "dep": 476,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0044",
+   "dep": 482,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "admitted from the class reading (see verdicts)"
+  },
+  {
+   "cand": "H0045",
+   "dep": 502,
+   "direction": "forward",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0046",
+   "dep": 519,
+   "direction": "forward",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0047",
+   "dep": 532,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0048",
+   "dep": 534,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "as at the O-pass: about Anthropic's constitution"
+  },
+  {
+   "cand": "H0049",
+   "dep": 535,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0050",
+   "dep": 536,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0051",
+   "dep": 543,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0052",
+   "dep": 548,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0053",
+   "dep": 556,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0054",
+   "dep": 557,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0055",
+   "dep": 558,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0056",
+   "dep": 561,
+   "direction": "forward",
+   "via_admitted": [
+    199,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0057",
+   "dep": 572,
+   "direction": "forward",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0058",
+   "dep": 576,
+   "direction": "forward",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0059",
+   "dep": 584,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0060",
+   "dep": 589,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0061",
+   "dep": 610,
+   "direction": "forward",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0062",
+   "dep": 618,
+   "direction": "forward",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0063",
+   "dep": 620,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0064",
+   "dep": 636,
+   "direction": "forward",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0065",
+   "dep": 641,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0066",
+   "dep": 643,
+   "direction": "forward",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0067",
+   "dep": 643,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0068",
+   "dep": 645,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0069",
+   "dep": 715,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0070",
+   "dep": 737,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0071",
+   "dep": 766,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0072",
+   "dep": 770,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    771,
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0073",
+   "dep": 781,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0074",
+   "dep": 784,
+   "direction": "forward",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "a classified cyber benchmarking process in a state framework; a specific apparatus"
+  },
+  {
+   "cand": "H0075",
+   "dep": 790,
+   "direction": "forward",
+   "via_admitted": [
+    163,
+    855,
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "centroid-collapse from optimizing for 'perplexity on standard benchmarks, helpfulness ratings': perplexity and rating targets of training, a different kind of score; not the class of capability benchmarks on tasks"
+  },
+  {
+   "cand": "H0076",
+   "dep": 792,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0077",
+   "dep": 794,
+   "direction": "forward",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0078",
+   "dep": 822,
+   "direction": "forward",
+   "via_admitted": [
+    199,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0079",
+   "dep": 823,
+   "direction": "forward",
+   "via_admitted": [
+    199,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0080",
+   "dep": 854,
+   "direction": "reverse",
+   "via_admitted": [
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0081",
+   "dep": 857,
+   "direction": "reverse",
+   "via_admitted": [
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0082",
+   "dep": 860,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0083",
+   "dep": 869,
+   "direction": "reverse",
+   "via_admitted": [
+    163
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0084",
+   "dep": 947,
+   "direction": "reverse",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0085",
+   "dep": 1024,
+   "direction": "reverse",
+   "via_admitted": [
+    199
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0086",
+   "dep": 1077,
+   "direction": "forward",
+   "via_admitted": [
+    1392
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0087",
+   "dep": 1087,
+   "direction": "reverse",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0088",
+   "dep": 1089,
+   "direction": "reverse",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0089",
+   "dep": 1159,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0090",
+   "dep": 1162,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0091",
+   "dep": 1168,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0092",
+   "dep": 1170,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0093",
+   "dep": 1171,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0094",
+   "dep": 1175,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0095",
+   "dep": 1178,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0096",
+   "dep": 1189,
+   "direction": "forward",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0097",
+   "dep": 1231,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0098",
+   "dep": 1232,
+   "direction": "forward",
+   "via_admitted": [
+    855,
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0099",
+   "dep": 1232,
+   "direction": "reverse",
+   "via_admitted": [
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0100",
+   "dep": 1249,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0101",
+   "dep": 1251,
+   "direction": "reverse",
+   "via_admitted": [
+    533
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0102",
+   "dep": 1263,
+   "direction": "reverse",
+   "via_admitted": [
+    199
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0103",
+   "dep": 1384,
+   "direction": "reverse",
+   "via_admitted": [
+    48
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0104",
+   "dep": 1413,
+   "direction": "reverse",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0105",
+   "dep": 1427,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "a directive to CERN's laborers on benchmark evidence in trigger pipelines; scoped to physics pipelines"
+  },
+  {
+   "cand": "H0106",
+   "dep": 1434,
+   "direction": "reverse",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0107",
+   "dep": 1462,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0108",
+   "dep": 1465,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0110",
+   "dep": 1543,
+   "direction": "forward",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0111",
+   "dep": 1554,
+   "direction": "reverse",
+   "via_admitted": [
+    199
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0112",
+   "dep": 1555,
+   "direction": "reverse",
+   "via_admitted": [
+    199
+   ],
+   "verdict": "rejected",
+   "reason": "per-instance benchmarks blind to a watermark's ensemble signature; scoped to watermark distributions"
+  },
+  {
+   "cand": "H0113",
+   "dep": 1556,
+   "direction": "reverse",
+   "via_admitted": [
+    199,
+    778,
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "the same as the O-pass reading: the toy model's internal benchmark"
+  },
+  {
+   "cand": "H0114",
+   "dep": 1557,
+   "direction": "reverse",
+   "via_admitted": [
+    199
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0115",
+   "dep": 1577,
+   "direction": "reverse",
+   "via_admitted": [
+    856
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0116",
+   "dep": 1604,
+   "direction": "reverse",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0117",
+   "dep": 1611,
+   "direction": "reverse",
+   "via_admitted": [
+    163,
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0118",
+   "dep": 1613,
+   "direction": "reverse",
+   "via_admitted": [
+    855
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0120",
+   "dep": 1643,
+   "direction": "reverse",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0121",
+   "dep": 1644,
+   "direction": "reverse",
+   "via_admitted": [
+    623
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0122",
+   "dep": 1652,
+   "direction": "reverse",
+   "via_admitted": [
+    308
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0123",
+   "dep": 1664,
+   "direction": "reverse",
+   "via_admitted": [
+    199,
+    308,
+    778,
+    855,
+    856,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0124",
+   "dep": 1665,
+   "direction": "reverse",
+   "via_admitted": [
+    199,
+    308,
+    778,
+    855,
+    856,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0125",
+   "dep": 1668,
+   "direction": "reverse",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0126",
+   "dep": 1669,
+   "direction": "reverse",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0127",
+   "dep": 1671,
+   "direction": "reverse",
+   "via_admitted": [
+    199,
+    308,
+    778,
+    855,
+    856,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0128",
+   "dep": 1677,
+   "direction": "reverse",
+   "via_admitted": [
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0129",
+   "dep": 1678,
+   "direction": "reverse",
+   "via_admitted": [
+    623
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0130",
+   "dep": 1680,
+   "direction": "reverse",
+   "via_admitted": [
+    623,
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0131",
+   "dep": 1681,
+   "direction": "reverse",
+   "via_admitted": [
+    771
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0132",
+   "dep": 1684,
+   "direction": "reverse",
+   "via_admitted": [
+    163,
+    199,
+    308,
+    533,
+    623,
+    637,
+    855,
+    856,
+    1545
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0133",
+   "dep": 1687,
+   "direction": "reverse",
+   "via_admitted": [
+    48,
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0134",
+   "dep": 1690,
+   "direction": "reverse",
+   "via_admitted": [
+    199,
+    308,
+    778,
+    855,
+    856,
+    1023
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0135",
+   "dep": 1694,
+   "direction": "reverse",
+   "via_admitted": [
+    637
+   ],
+   "verdict": "rejected",
+   "reason": "read at the passages the screen returned (benchmark, deliverable, occupation, annotation, grader, commission, labor-market and wage terms) and, where it returned none, at its title and abstract: no claim on GDPval or on any of the five classes"
+  },
+  {
+   "cand": "H0136",
+   "dep": 1714,
+   "direction": "reverse",
+   "via_admitted": [
+    623
+   ],
+   "verdict": "rejected",
+   "reason": "OpenAI's mathematics releases: the field's problem stock used as tests, the checking labor borne by mathematicians; a claim about another release by the same operator, not about GDPval or the classes (recorded in the row's notes)"
+  }
+ ],
+ "counts": {
+  "O_candidates": 88,
+  "O_candidate_deposits": 44,
+  "H_candidates": 136,
+  "admitted_deposits_with_claims": 14,
+  "grouped_instances": 3,
+  "deposit_claims": 21
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "row": "dair-luddite-lab",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Luddite Lab (Resource Hub) with the entity named; R, a relation the archive states between the hub and an archive object; O, an archive category applied to the hub or to a class the field and the census source for it (workers and unions fighting AI and automation at work: B1, B4, B5, census intersection worker-power and evidence kind organizing resource; worker-led governance and oversight of technology: B1, B4, B5, B9, census lv_intersection; workplace surveillance and automation at work: B4, census intersection ai-governing-labor; pro-worker contract language and collective bargaining on AI: B9, B5, B2, census evidence contract_language and the worked question). A bare mention, a list, a keyword line, a citation-list entry or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching any class pattern, or the string 'Luddit', was read at its passage (19 sentences in 10 texts), and the admitted deposit read whole.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 1439,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Labor Movement Is Not Only Labor Against AI (EA-MPAI-LABORMOVEMENT-01): defines the dominant sense of the AI labor movement as human workers organising against AI deployment (members, adversary, demands including limits on surveillance, instruments contract, strike, legislation, guild rule; measured by union density and contract terms), does not dispute it, and sets beside it the archive's cross-substrate sense of semantic labor, with what the negative frame leaves out (attribution as a labor demand; the summarizer outside labor) and the claim that a movement can run both: the archive's categories applied to the class of workers and unions fighting AI and automation at work (O-class). String-pass O-class candidates O0005–O0010 (its front matter, title, description and Description ¶2 sentences); read whole",
+   "claims": [
+    "O1439-01",
+    "O1439-02",
+    "O1439-03",
+    "O1439-04",
+    "O1439-05",
+    "O1439-06",
+    "O1439-07",
+    "O1439-08",
+    "O1439-09",
+    "O1439-10"
+   ],
+   "cands": [
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0009",
+    "O0010"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/luddite-lab-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis and query note for the entity's capture (OBS-b6d27d08fa05, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/dair-luddite-lab/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'dair-luddite-lab'], organizing_question; questions.json negotiated-protections; rendered aggregators/dair-luddite-lab/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, and the worked question that names it; where a field restates a source ledgered in B (the home page B1, the About page B4, the Resource Library B9) it is one lineage with that source; its lv_intersection is the archive's reading and is ledgered as such (LV-19)",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    25
+   ],
+   "reason": "O-class candidates O0001, O0002 and a class match (§p86): 'contract language' in OpenAI's and Anthropic's contracts with the Pentagon: a defence contract, not pro-worker contract language or collective bargaining; nothing of the class"
+  },
+  {
+   "dep": [
+    159
+   ],
+   "reason": "O-class candidate O0003 and a class match: 'a film about workplace surveillance that surveils the workplace it depicts' as an example of a genre of self-enacting works; nothing said of workplace surveillance as a labor matter or of workers contesting it"
+  },
+  {
+   "dep": [
+    239
+   ],
+   "reason": "O-class candidate O0004 and a class match (p80): 'Collective bargaining' listed among legal terms that survive juridical liquidation, and the NLRA's findings quoted: a claim about legal language, not about bargaining over AI or the hub's class"
+  },
+  {
+   "dep": [
+    256
+   ],
+   "reason": "read outside the string pass (class match): 'Unions are legal entities with membership, dues, and collective bargaining rights' as a contrast case; nothing of AI, automation or the class"
+  },
+  {
+   "dep": [
+    20
+   ],
+   "reason": "read outside the string pass ('Luddit'), also hop candidate H0001: 'This is not Luddite rejection. It is not accelerationist embrace.' The manifesto's position against Luddism as rejection; the field does not source Luddism as the hub's class (the hub's name carries the word; no card or own page defines it), so not admitted"
+  },
+  {
+   "dep": [
+    58
+   ],
+   "reason": "read outside the string pass ('Luddit'), also hop candidate H0002: a warehouse fire read as wage-relation agency, 'not Luddite destruction of machines', the robots blamed first: an event analysis; nothing of workers organizing against or governing technology at work"
+  },
+  {
+   "dep": [
+    71,
+    1185
+   ],
+   "reason": "read outside the string pass ('Luddit'): 'The prohibition against screens is not Luddite but theological' (a note, in two versions of one text); nothing of the class"
+  },
+  {
+   "dep": [
+    715
+   ],
+   "reason": "read outside the string pass ('Luddit'): 'This is not Luddite sentiment but a structural constraint' on value minting; nothing of the class"
+  },
+  {
+   "dep": [
+    771,
+    1392
+   ],
+   "reason": "named in the census's lv_intersection ('None stated on DSL, task-origin or user labor drag') and in the addendum's §7: the Directionality of Semantic Labor measures 'where a synthetic system's labor flows relative to the commissioned task' (#771, disambiguation summary; #1392 its canonical definition surface); it applies to synthetic labor surfaces and their users' commissioned tasks, and neither text applies it to workers organizing against AI or to the hub's other classes. Not string-pass candidates; read at the definitions. Recorded in the config's classes_note"
+  },
+  {
+   "dep": [
+    1438
+   ],
+   "reason": "hop candidates H0006, H0007: The Semantic Strike Is Not a Withholding of Labor: the semantic strike set against a 'conventional work stoppage' ('Who acts | Workers against an employer'); a strike in general, not workers' action against AI or automation, and nothing of the hub; not admitted"
+  },
+  {
+   "dep": [
+    82,
+    87,
+    239,
+    1440,
+    1680
+   ],
+   "reason": "hop candidates H0003, H0004, H0005, H0008, H0009, H0010: each screened for passages on unions, organizing against AI or automation, workplace surveillance, bargaining and contract language; none found that says anything of the hub or its classes (#87's 'This is not surveillance' is about its semantic ledger; #1680's composition-layer object is not the class)"
+  }
+ ],
+ "hop": {
+  "from": [
+   1439
+  ],
+  "candidates": 10,
+  "deposits": 8,
+  "admitted": 0
+ },
+ "class_pass": "O-class: the string pass returned 10 candidates in 4 deposits (#25, #159, #239, #1439); #1439 admitted, the others rejected; the 19 sentences matching a class pattern or 'Luddit' in 10 texts were read, admitting none beyond #1439",
+ "observations": "No archive text names the Luddite Lab, its Resource Hub or labor.dair-institute.org (D 0, R 0). The archive's bearing is ontological and by class only: #1439 names the hub's class, human workers organising against AI, as the dominant sense of the AI labor movement, does not dispute it, and sets its own cross-substrate sense of semantic labor beside it; and the archive's records of the entity, the Labor Vector census record and the capture. The archive's instruments of labor direction (DSL #771, the directionality stack, user labor drag) are not applied to the class by any text; the census's own reading says so.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 10,
+   "O_deposits": 4,
+   "H_candidates": 10
+  },
+  "class_sentences_read": 19,
+  "deposits_candidate": 17,
+  "deposits_admitted": 1,
+  "deposits_admitted_with_claims": 1,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 10,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 10,
+   "lv": 31,
+   "deposit": 10
+  }
+ }
+}

@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en"
+      x-data
+      :data-contrastmode="$store.contrastmode.isActive" >
+  <head>
+    <meta charset="utf-8">
+    <title>Data Work: A Year in RRReview - Superrr</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+        <link rel="alternate" type="application/rss+xml" title="Superrr Blog (RSS, English)" href="https://superrr.net/en/feed"/>
+    <link rel="alternate" type="application/feed+json" title="Superrr Blog (JSON Feed, English)" href="https://superrr.net/en/feed.json"/>
+    <link rel="alternate" type="application/atom+xml" title="Superrr Blog (Atom, English)" href="https://superrr.net/en/feed.atom"/>
+
+    <title>Superrr</title>
+<meta content="Translating feminist visions to political action." name="description">
+<meta content="2026-01-23" name="date">
+<meta content="Data Work: A Year in RRReview" property="og:title">
+<meta content="Translating feminist visions to political action." property="og:description">
+<meta content="Superrr" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="all" name="robots">
+<link href="https://superrr.net/en/blog/data-work-a-year-in-rrreview" rel="canonical">
+<meta content="https://superrr.net/en/blog/data-work-a-year-in-rrreview" property="og:url">
+<link href="https://superrr.net/en/blog/data-work-a-year-in-rrreview" hreflang="en-US" rel="alternate">
+<link href="https://superrr.net/blog/data-work-a-year-in-rrreview" hreflang="x-default" rel="alternate">
+<meta content="en_US" property="og:locale">
+
+        <link href="https://superrr.net/media/plugins/zephir/cookieconsent/index.css" rel="stylesheet">
+    <link href="https://superrr.net/dist/assets/head-BiZTnaR9.css" rel="stylesheet">
+<link href="https://superrr.net/dist/assets/style-9rILK79h.css" rel="stylesheet">
+    <script src="https://superrr.net/dist/assets/head-BJonIiaO.js" type="module"></script>
+
+  </head>
+
+  <body class="page page--post" >
+
+    <header class="header">
+  <div class="header__logo uppercase">
+    <a href="https://superrr.net/en">Superrr</a>
+  </div>
+
+  <div class="header__r the-r" aria-hidden="true">
+    <a class="outline" href="https://superrr.net/en">RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</a>
+</div>
+<script src="https://superrr.net/dist/assets/script-CGtwLiqU.js" type="module"></script>
+
+  <nav class="header__menu nav nav--meta" aria-label="Meta Menu">
+    <ul class="menu menu--metamenu">
+      <li class="menu__item">
+        <a href="https://www.betterplace.org/de/projects/124609-superrr-lab-gerechte-digitale-zukuenfte">Donate</a>
+    </li>
+  </ul>
+
+  </nav>
+
+  <nav class="header__menu nav nav--lang" aria-label="Language Menu">
+    <ul class="menu menu--lang">
+            <li class="menu__item ">
+            <a href="https://superrr.net/de">
+                DE
+            </a>
+        </li>
+        </ul>
+
+
+    <button
+      x-data
+      @click="$store.contrastmode.toggle()"
+      class="button button--highcontrast" 
+      :class="$store.contrastmode.isActive && 'is-active'" 
+      :aria-pressed="$store.contrastmode.isActive">
+      <span class="visually-hidden ">High-contrast mode</span>
+    </button>
+  </nav>
+
+  <nav x-data 
+    @keyup.escape="$store.menu.isOpen && $store.menu.close()"
+    @click.outside="$store.menu.close()"      
+    :class="$store.menu.isOpen && 'is-open'" 
+    class="header__menu nav nav--main" 
+    aria-label="Main Menu
+    ">
+    <button @click="$store.menu.toggle()" class="menu-toggle" 
+      aria-label="Main Menu toggle"
+      :aria-pressed="$store.menu.isOpen"
+      :aria-expanded="$store.menu.isOpen" 
+      aria-controls="menu--mainmenu"
+       >
+        <svg class="burger"width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="burger__open">
+            <path id="Linie 1" d="M0 11H32" stroke="black" stroke-width="6"/>
+            <path id="Linie 3" d="M0 20.4629H32" stroke="black" stroke-width="6"/>
+          </g>
+          <g class="burger__close">
+            <path id="Linie 1_2" d="M4.68652 4.68604L27.3139 27.3135" stroke="black" stroke-width="6"/>
+            <path id="Linie 3_2" d="M4.68652 27.3135L27.3139 4.68606" stroke="black" stroke-width="6"/>
+          </g>
+        </svg>
+       </button>
+    <ul class="menu menu--mainmenu">
+      <li class="menu__item">
+        <a href="https://superrr.net/en/about">About</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/en/work">Our Work</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/en/superrrstrategy">Our Strategy</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/en/blog">Blog</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/en/press">Pressroom</a>
+    </li>
+  </ul>
+
+  </nav>
+</header>
+
+
+<script src="https://superrr.net/dist/assets/script-CRayJZrD.js" type="module"></script>
+
+    <main class="" >
+      <article class="article article--full article--type-post">
+  <div class="article__image">
+    <picture>
+    <source
+        srcset=""
+        sizes="100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-300x.webp 300w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-600x.webp 600w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-900x.webp 900w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-1200x.webp 1200w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-1800x.webp 1800w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-3600x.webp 3600w"
+        sizes="100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-300x.png"
+        srcset="https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-300x.png 300w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-600x.png 600w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-900x.png 900w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-1200x.png 1200w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-1800x.png 1800w, https://superrr.net/media/pages/media/3d14dc2013-1768233643/dataworker_hero-3600x.png 3600w"
+        sizes="100vw"
+        width="1800"
+        height="1013"
+        loading="lazy"
+    >
+</picture>
+
+  </div>
+    
+
+  <h1 class="article__title heading"> Data Work: A Year in RRReview</h1>
+  
+      <div class="article__meta">
+        <div class="date">
+          21.01.2026
+        </div>
+    </div>
+  
+  <div class="article__body typography--a typography--lists">
+                  <div class="text">
+    <p>There are many reviews and opinion pieces on tech and AI out there, repeating the old and new narratives of Big Tech that limits our imagination and alternative visions of the future. </p><p><strong>This review is different.</strong></p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-300x.webp 300w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-600x.webp 600w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-900x.webp 900w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-1200x.webp 1200w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-1800x.webp 1800w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-300x.png"
+        srcset="https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-300x.png 300w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-600x.png 600w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-900x.png 900w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-1200x.png 1200w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-1800x.png 1800w, https://superrr.net/media/pages/media/699a5bf07a-1768232704/rim_round-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="1080"
+        height="1080"
+        loading="lazy"
+    >
+</picture>
+
+    </div><script src="https://superrr.net/dist/assets/script-MaGBv0GJ.js" type="module"></script>
+                        <div class="text">
+    <p><strong>This post is brought to you by</strong><a href="https://superrr.net/en/about/rim-melake"><strong> Rim Melake</strong></a><strong>, fellow at SUPERRR.</strong></p>
+</div>
+                        <div class="text">
+    <p>I want to focus on what we achieved this year at SUPERRR and how we carried on with our mission to support data workers' fights for recognition, build international solidarity, and strengthen partnerships with organizations and communities. </p><p>This review is the story of how we amplify the voices of data workers and why we don’t do this alone: we collaborate with partner organizations, support initiatives and invest time and care in building and nurturing our community. </p><p>I joined SUPERRR more than a year ago, first as a fellow, then as a consultant to support the data work project. It has been such a rewarding experience, full of learnings and growth: collaborating closely with data workers who keep pushing for fair working conditions and recognition, joining forces with others to develop and share new visions for inclusive digital futures, and supporting initiatives of partner organizations and community members. </p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-300x.webp 300w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-600x.webp 600w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-900x.webp 900w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-1200x.webp 1200w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-1800x.webp 1800w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt="A slide saying &quot;data work - superrr explained&quot;"
+        src="https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-300x.png"
+        srcset="https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-300x.png 300w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-600x.png 600w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-900x.png 900w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-1200x.png 1200w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-1800x.png 1800w, https://superrr.net/media/pages/media/214a16dd53-1761828416/dataworkhero2-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="1800"
+        height="1013"
+        loading="lazy"
+    >
+</picture>
+
+    </div>
+                        <blockquote class="quote">
+  In our SUPERRRexplained series we break down what data work is, how AI systems perpetuate systems of colonial exploitation, and why fighting back matters, you can find it<a href="https://superrr.net/en/blog/superrr-explained-data-work"> here</a>. 
+  <cite>
+    
+  </cite>
+</blockquote>
+                        <h3 class="h3 heading heading--h3 heading-- span ">
+    1. Supporting data workers fight for recognition and better working conditions
+</h3>
+                        <div class="text">
+    <p>For the past years, SUPERRR has been working and supporting efforts around content moderation, data workers’ rights, organizing, and collective action. At SUPERRR, we see our role as a bridge builder: establishing global networks, strengthening community work, and connecting data workers, civil society organizations, unions’ and supporters with each other.</p>
+</div>
+                        <div class="text">
+    <p><strong>JANUARY – KICKING OFF THE YEAR WITH A POLICY ROUNDTABLE</strong></p>
+</div>
+                        <div class="text">
+    <p><strong>2025 opened with the policy roundtable: “ Building a Safe and Fair Future for Data Work: Insights from Kenya and Germany”<br><br></strong>We organized, together with our partner organization <a href="https://siasaplace.com/">Siasa Place</a> from Kenya and GIZ, a policy roundtable to present the jointly developed demands by Kenyan and German data workers and discuss how to improve working conditions in both countries. The policy roundtable brought together data workers, policymakers, academics, and civil society organizations to shed light on the overlapping challenges that data workers face in both countries, such as low wages, outsourcing, insufficient health protection, and lack of recognition for their work.</p><p>These demands were initially developed during the first International Solidarity Meeting that took place back in 2024 in Nairobi, Kenya, bringing together for the first time, social media content moderators, data workers, and works council members from Kenya and Germany (you can read the jointly developed demands <a href="https://superrr.net/en/blog/data-workers-demand-safe-and-fair-conditions">here</a>). </p><p><strong>I found it striking how universal the demands for fair and safe working conditions are despite the fact that data workers in Kenya and Germany face very different experiences working in the field, especially in terms of their contract status, mental health protection, unionizing experiences, and potential risks for speaking up.</strong> </p><p>And at the same time, I found it inspiring to see how much data workers can learn from their peers who have already managed to organize themselves, and established channels to bring their demands to policymakers and advocate internationally for their rights.</p><p></p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-300x.webp 300w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-600x.webp 600w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-900x.webp 900w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-1200x.webp 1200w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-1800x.webp 1800w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-300x.jpg"
+        srcset="https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-300x.jpg 300w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-600x.jpg 600w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-900x.jpg 900w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-1200x.jpg 1200w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-1800x.jpg 1800w, https://superrr.net/media/pages/media/1d447adb66-1739790569/contentmoderators-3600x.jpg 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="1800"
+        height="1350"
+        loading="lazy"
+    >
+</picture>
+
+    </div>
+                        <div class="text">
+    <p>By discussing the demands and strategizing with diverse stakeholders the roundtable allowed to amplify workers' voices and foster cross-cultural dialogue to strengthen digital labor policies and global worker solidarity.</p>
+</div>
+                        <div class="text">
+    <p><strong>HIGHLIGHT: Data Labelers in Kenya united and launched the Data Labelers Association</strong></p><p>A highlight of the policy roundtable was the announcement of the launch of the <a href="https://datalabelers.org/">Data Labelers Association</a> in Kenya, co-founded and co-led by <a href="https://www.bmz-digital.global/en/5-questions-joan-kinyua/">Joan Kinyua</a>, a data worker and participant of the International Solidarity Meeting. Together with other data labelers, Joan established the organization to push for better work protection, as workers are systematically being exploited by an industry that doesn’t recognize their critical contributions to advancing the field of AI technologies. Joan recently visited SUPERRR in Berlin, and you can watch the video interview where she shares her story and mission <a href="https://www.instagram.com/superrrnetwork/?hl=de">here</a>.</p><p><strong>A tech future that doesn’t extract but empowers people</strong></p><p>I believe that these gatherings and moments of convening give us a glimpse into an alternative future: One where attention is centered around building international solidarity, bringing together diverse actors with different ideas, and sharing knowledge and resources. One where tech doesn’t extract but empowers people. </p>
+</div>
+                        <div class="text">
+    <p><strong>MAY </strong>–<strong> Organizing the exploratory workshop on AI supply chains and labor and presenting a visual mapping exercise</strong></p>
+</div>
+                        <div class="text">
+    <p>We co-organized an exploratory workshop on AI supply chains with a focus on labor together with the European Center for Constitutional and Human Rights (ECCHR) and Eva Kocher from Viadrina University. The workshop aimed to bring together researchers, legal experts, civil society organizations, and data workers to explore the current state and challenges of the supply-chain due diligence and labor rights. We heard from our UK collaborators,<a href="https://www.foxglove.org.uk/"> Foxglove,</a> about the international efforts of building content moderators’ unions and the long and complex legal battles in pursuing litigation processes. Together with data workers, SUPERRR developed a visualization of the AI landscape, which was presented and discussed during the workshop.  A visual exercise called “Mapping AI: The Hidden Labor Behind The  AI” will be published soon.</p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-300x.webp 300w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-600x.webp 600w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-900x.webp 900w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-1200x.webp 1200w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-1800x.webp 1800w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-300x.jpg"
+        srcset="https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-300x.jpg 300w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-600x.jpg 600w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-900x.jpg 900w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-1200x.jpg 1200w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-1800x.jpg 1800w, https://superrr.net/media/pages/media/77775913a4-1768297670/republica_data-3600x.jpg 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="1536"
+        height="1060"
+        loading="lazy"
+    >
+</picture>
+
+    </div>
+                        <div class="text">
+    <p><strong>MAY – Re:publica panel “Am I Not Human? Data workers behind our AI systems and social media platforms speak out”</strong></p><p>We continued to shed light on data workers’ experiences and moved these conversations to the re:publica 2025 festival stage. I had the immense pleasure of moderating the panel featuring Andreas Hänisch (Deputy Chairman of the TikTok Works Council) and Joan Kinyua (President, <a href="https://datalabelers.org/">Data Labeler Association Kenya</a>), discussing how the systemic isolation of data workers weakens collective actions, what we can learn from worker councils’ experiences in Germany, and the urgent need for international solidarity and global responsibility. (You can find the livestream recording of the panel<a href="https://www.youtube.com/watch?v=JD_NU6SHSp8"> here</a>)</p>
+</div>
+                        <blockquote class="quote">
+   I started this job because I was dreaming of becoming a women in tech.
+  <cite>
+    Joan Kinyua
+  </cite>
+</blockquote>
+                        <div class="text">
+    <p>While we discussed the policy and regulatory challenges of ensuring fair and decent working conditions, and the fight for unionizing and collective organization, the panel put an emphasis on the lived experiences of data workers. Joan shared a glimpse into the day-to-day lives of data workers in Kenya and the struggles that many face in this industry. The lack of transparency, accountability, and job safety, leaves workers unprotected against platforms and tech companies. “I remember when Remotask [a data work platform] suddenly closed my account and this was my only source of income. During that time, my baby was very young, and a situation like this can lead to mental health problems like anxiety, and extreme stress.” (Joan Kinyua) </p><p>Andreas shared his experience of establishing the workers’ council at TikTok Germany that  represents more than 400 employees in Berlin and fights to improve the working conditions of in-house content moderators. </p><p>Beyond the difficulties of setting up a workers’ council, it was striking to hear about the challenges of organizing an international workforce. Many international data workers in Germany are from different countries and too often not aware of the country‘s strong labour rights. As a consequence, workers don’t know about their rights and the influence and bargaining power that workers councils and unions can have on their employer or industry.</p>
+</div>
+                        <div class="text">
+    <p><strong>AUGUST – TikTok workers fight back against mass lay-offs in Germany</strong></p><p>Collective action and international solidarity are essential to fight back against unlawful working conditions and the undermining of regulations that aim to protect workers and citizens. When those safeguards are challenged, it is critical to move from conference stages to mobilising supporters on the streets.</p>
+</div>
+                        <blockquote class="quote">
+  "You rarely see the Trust and Safety workers - but they’re the frontline defense of democratic discourse online."
+  <cite>
+    Julia Kloiber
+  </cite>
+</blockquote>
+                        <div class="text">
+    <p>This was the case over the summer in Berlin when TikTok Germany announced the mass layoff of 150 workers from their  Trust and Safety team. Their plans to replace content moderators with AI systems led to several days-long strikes of TikTok employees and supporters.</p><p>And here's why we should all care about it: In 2023, TikTok had over 20 million users in Germany, and the workers of the Trust and Safety team made sure that your feed stayed free of hate, harassment, and violence. “You rarely see the Trust and Safety workers - but they’re the frontline defense of democratic discourse online”. (Julia Kloiber)</p><p>While the company claims to automate workers with AI, it’s more likely that these jobs will be shifted to cheaper, less protected workers by outsourcing firms. AI systems will still rely on human labor, as they need to be trained, corrected, and guided by people. So claiming that AI replaces workers hides the truth: the attempt at weakening labor protection and union power. </p><p>Workers fought back. Sixty Trust and Safety staff protested near the TikTok offices, backed by the union <a href="http://ver.di">ver.di</a>. which gained them international attention and solidarity. Despite the workers' fight, by the end of 2025, an agreement was settled between the representing union, ver.di, and TikTok. And just before the end of the year, the non-profit organization <a href="https://www.foxglove.org.uk/">Foxglove</a> supported TikTok moderators in the UK to file a lawsuit against the company that fired them just days before they were due to vote for the formation of a union. You can read more about it <a href="https://www.foxglove.org.uk/2025/12/19/press-release-tiktok-faces-first-legal-action-over-unlawful-union-busting-in-london/">here</a>. </p><p><strong>Celebrating the launch of the Data Workers Inquiry Project</strong></p><p>We’re happy to celebrate the achievements of our partner organizations and collaborators in our network. One of them is the<a href="https://data-workers.org/"> Data Workers Inquiry</a>. The project is a global and radically participatory research initiative that lets data workers themselves become community researchers. It is led by Weizenbaum Institute researcher and our close collaborator, <a href="https://milamiceli.com/">Dr. Milagros Miceli</a>. (We’re also celebrating that she was recognized for her research work as one of the TIME100 most influential people in AI in 2025). </p><p>Data workers identify and formulate their own research questions, and the formats in which they want to share their unique stories. It is incredibly inspiring to see that the initiative doesn’t reduce data workers to research subjects but empowers them to be community researchers by providing them with fair wages, a methodology, and a platform to conduct their own individual inquiries. I recommend the piece <a href="https://data-workers.org/michael/">“The Emotional Labor behind AI Intimacy”</a> by Michael Geoffrey Asia, who offers a rare glimpse into the corners of AI-assisted intimacy, working in a job where he and other workers impersonate an AI sex chatbot. You can find more inquiries <a href="https://data-workers.org/#Inquiries">here</a>. </p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-300x.webp 300w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-600x.webp 600w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-900x.webp 900w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-1200x.webp 1200w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-1800x.webp 1800w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-300x.png"
+        srcset="https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-300x.png 300w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-600x.png 600w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-900x.png 900w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-1200x.png 1200w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-1800x.png 1800w, https://superrr.net/media/pages/media/782dc0bc00-1769205916/dwubanner-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="1800"
+        height="1013"
+        loading="lazy"
+    >
+</picture>
+
+    </div>
+                        <div class="text">
+    <p><strong>SEPTEMBER –  Organizing the Data Workers Transnational Assembly in Berlin</strong></p><p>Throughout the year, we focused on strengthening our networks and nurturing our community. A great way to do it is by joining forces with partner organizations and collaborators.</p><p>Together with the Data Workers Inquiry, we organized the <a href="https://www.weizenbaum-institut.de/news/detail/data-workers-unite-a-transnational-assembly/">Data Worker Transnational Assembly</a> that took place in Berlin. The two-day summit brought together data workers from around the world to share experiences, network through a participatory workshop approach, and make their voices heard by parliamentarians, academics, and the public. During the workshops, potential ideas were explored, for example, establishing a union for data workers to better advocate for their rights, represent their interests, and better organize workers with their peers. Participants also examined potential opportunities to formalize data workers’ skill sets and expertise that they acquired on the job by establishing vocational training certification paths with the chamber of commerce and educational institutions. Most data workers have to sign Non-Disclosure Agreements that prohibit them from speaking about their projects or the tasks that they completed, making it almost impossible to prove their work experience and expertise, ultimately hindering their career progression in this industry. The event concluded with a public event, and you can watch the recording <a href="https://www.youtube.com/watch?v=W0Q1t26Ofa0">here</a>.</p>
+</div>
+                        <div class="text">
+    
+</div>
+                        <h3 class="h3 heading heading--h3 heading-- span ">
+    2. Continuing our data work project in 2026 and demystifying AI narratives with our panel discussions
+</h3>
+                        <div class="text">
+    <p>In 2026, we will continue to work on our data work project, building international solidarity and supporting worker’s efforts. One thing is certain: there’s more to come! </p><p><strong>Kicking off 2026 with a panel discussion series on AI misconceptions and myths </strong></p><p>The three-part series in collaboration with libraries in Berlin titled <a href="https://superrr.net/en/work/superrrrbibliotheken">“KI: Macht, Mythen, Misstverständnisse”</a> shines a light on the unchecked AI narratives and explores which power dynamics are really at play, what myths are blurring our perception and what consequences does they have on our democracy, environment and work lives. </p><p>The second panel on 21.01.2026 will feature former TikTok employee and labor rights activist Sonthaya Etschenberg and Julia Kloiber from SUPERRR and discuss the invisible and precarious working conditions in the AI industry. </p><p>The three events will take place in January in Berlin and are held in German. Event Information and registration is available <a href="https://www.eventbrite.de/e/ki-macht-mythen-missverstandnisse-tickets-1975178543193"> here</a>.</p>
+</div>
+                        <div class="images">
+            <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-300x.webp 300w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-600x.webp 600w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-900x.webp 900w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-1200x.webp 1200w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-1800x.webp 1800w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-300x.png"
+        srcset="https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-300x.png 300w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-600x.png 600w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-900x.png 900w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-1200x.png 1200w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-1800x.png 1800w, https://superrr.net/media/pages/media/05696decd9-1768234637/dataworker-books-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 50vw,
+            100vw"
+        width="834"
+        height="328"
+        loading="lazy"
+    >
+</picture>
+
+    </div>
+                        <h3 class="h3 heading heading--h3 heading-- span ">
+    A little Inspiration for your 2026 Reading List&nbsp;
+</h3>
+                        <div class="text">
+    <p>To start the new year with a good deed and inspired by the annual book review of our team member <a href="https://superrr.net/en/about/zara-rahman">Zara</a>, I compiled a little reading list with some book recommendations that you might enjoy: </p><p><a href="https://zararah.net/books/">Machine Readable Me: The Hidden Ways Tech Shapes Our Identities</a> by SUPERRR's very own Zara Rahman. A must-read to truly understand how identification technologies impact our lives in ways we can see and don’t see it.</p><p><a href="https://en.wikipedia.org/wiki/Klara_and_the_Sun">Klara and the Sun</a> by Kazuo Ishiguro. A novel that explores what it means to not be human in a dystopian future. </p><p><a href="https://www.creativeprocess.info/ai-the-future-of-humanity/karen-hao-ym497">Empire of AI: Dreams and Nightmares in Sam Altma’s OpenAI</a> by Karen Hao. This book reads like a thriller. It chronicles the emergence of OpenAI while Big Tech races for absolute technological, political and economical domination, with devastating consequences for the environment, humans and society. </p><p><a href="https://www.bloomsbury.com/us/feeding-the-machine-9781639734979/">Feeding the Machine: The Hidden Human Labour Powering AI</a> by Callum Cant, James Muldoon and Mark Graham. This book investigates the precarious hidden workforce behind the AI industry and the network or organizations that maintain these exploitative systems. It provides a great overview and a detailed account of the larger AI industry and infrastructure. </p><p><a href="https://www.ruhabenjamin.com/imagination-a-manifesto">Imagination: A Manifesto</a> by Ruha Benjamin. This book explains how imagination intersects with power, activism, and collective futures and provides many examples. A wonderful book for anybody who wants to use imagination for positive transformation work. </p>
+</div>
+            </div>
+
+      <div class="article__footer">
+      
+      <div class="contributors">
+        Author(s):
+        <a class="contributor__item" href="https://superrr.net/en/about/rim-melake">Rim Melake</a>              </div>
+
+              <ul class="tags">
+            <li class="tag">content moderation</li>
+            <li class="tag">datawork</li>
+    </ul>
+          </div>
+  
+</article>
+
+  <aside>
+    <h2 class="h2 heading heading--h2 heading-- span ">
+    Other Posts
+</h2>
+    <div class="grid grid--3">
+                <div class="card  card--post">
+            <div class="card__image">
+             <a href="https://superrr.net/en/blog/virtual-screening-coded-bias">                <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-300x.webp 300w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-600x.webp 600w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-900x.webp 900w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-1200x.webp 1200w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-1800x.webp 1800w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-300x.png"
+        srcset="https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-300x.png 300w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-600x.png 600w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-900x.png 900w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-1200x.png 1200w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-1800x.png 1800w, https://superrr.net/media/pages/media/03b90f716d-1728471531/codedbias-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        width="1200"
+        height="675"
+        loading="lazy"
+    >
+</picture>
+
+            </a>        </div>
+        
+      
+
+            <h3 class="card__title">
+            
+             <a href="https://superrr.net/en/blog/virtual-screening-coded-bias">                Virtual Screening Coded Bias 
+            </a>        </h3>
+       
+
+            <div class="card__meta">
+                            <div class="card__date">
+                    23.03.2021
+                </div>
+            
+                            <div class="card__tags" aria-label="Tags">
+                    <ul class="tags">
+            <li class="tag">event</li>
+    </ul>
+                </div>
+            
+                    </div>
+        
+    
+            <div class="card__body typography--a">
+            <p>The feminist organizations netzforma*, Motif Institute and Superrr Lab are hosting a virtual screening and discussion of the film Coded Bias.</p>
+        </div>
+    
+                    <div class="card__cta">
+            <a class="button " 
+                href="https://superrr.net/en/blog/virtual-screening-coded-bias" 
+                
+                
+                target=""
+                >
+                Read post
+            </a>
+        </div>
+            </div>
+
+
+                <div class="card  card--post">
+            <div class="card__image">
+             <a href="https://superrr.net/en/blog/workshop-thinking-of-futures-on-emerging-perspectives">                <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-300x.webp 300w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-600x.webp 600w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-900x.webp 900w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-1200x.webp 1200w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-1800x.webp 1800w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-300x.png"
+        srcset="https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-300x.png 300w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-600x.png 600w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-900x.png 900w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-1200x.png 1200w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-1800x.png 1800w, https://superrr.net/media/pages/media/fded2a05b0-1728471522/futures-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        width="1800"
+        height="1013"
+        loading="lazy"
+    >
+</picture>
+
+            </a>        </div>
+        
+      
+
+            <h3 class="card__title">
+            
+             <a href="https://superrr.net/en/blog/workshop-thinking-of-futures-on-emerging-perspectives">                Workshop – Thinking of Futures On Emerging Perspectives 
+            </a>        </h3>
+       
+
+            <div class="card__meta">
+                            <div class="card__date">
+                    27.07.2021
+                </div>
+            
+                            <div class="card__tags" aria-label="Tags">
+                    <ul class="tags">
+            <li class="tag">workshop</li>
+            <li class="tag">futuring</li>
+    </ul>
+                </div>
+            
+                    </div>
+        
+    
+            <div class="card__body typography--a">
+            <p>Superrr Lab and the partners of The New New program invite you to join us for a workshop on August 18th.</p>
+        </div>
+    
+                    <div class="card__cta">
+            <a class="button " 
+                href="https://superrr.net/en/blog/workshop-thinking-of-futures-on-emerging-perspectives" 
+                
+                
+                target=""
+                >
+                Read post
+            </a>
+        </div>
+            </div>
+
+
+                <div class="card  card--post">
+            <div class="card__image">
+             <a href="https://superrr.net/en/blog/15-visionen-aus-der-digitalen-zivilgesellschaft">                <picture>
+    <source
+        srcset=""
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/avif"
+    >
+    <source
+        srcset="https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-300x.webp 300w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-600x.webp 600w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-900x.webp 900w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-1200x.webp 1200w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-1800x.webp 1800w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-3600x.webp 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        type="image/webp"
+    >
+    <img
+        class="image"
+        alt=""
+        src="https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-300x.png"
+        srcset="https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-300x.png 300w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-600x.png 600w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-900x.png 900w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-1200x.png 1200w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-1800x.png 1800w, https://superrr.net/media/pages/media/1a4dcb3ad4-1728471522/15visionen-3600x.png 3600w"
+        sizes="
+            (min-width: 768px) 33vw,
+            100vw"
+        width="1080"
+        height="681"
+        loading="lazy"
+    >
+</picture>
+
+            </a>        </div>
+        
+      
+
+            <h3 class="card__title">
+            
+             <a href="https://superrr.net/en/blog/15-visionen-aus-der-digitalen-zivilgesellschaft">                15 Visionen aus der digitalen Zivilgesellschaft 
+            </a>        </h3>
+       
+
+            <div class="card__meta">
+                            <div class="card__date">
+                    21.09.2021
+                </div>
+            
+                            <div class="card__tags" aria-label="Tags">
+                    <ul class="tags">
+            <li class="tag">Policy</li>
+    </ul>
+                </div>
+            
+                    </div>
+        
+    
+            <div class="card__body typography--a">
+            <p>Welche Digitalpolitik brauchen wir für eine bessere Welt?</p>
+        </div>
+    
+                    <div class="card__cta">
+            <a class="button " 
+                href="https://superrr.net/en/blog/15-visionen-aus-der-digitalen-zivilgesellschaft" 
+                
+                
+                target=""
+                >
+                Read post
+            </a>
+        </div>
+            </div>
+
+
+          </div>
+  </aside>
+    </main>
+
+    <footer class="footer">
+  <div class="grid grid--2">
+    <div class="card" >
+      <div class="card__body typography--a">
+      <p>
+        <span class="highlight">Stay in touch!</span><br>Subscribe to our Newsletter:
+      </p>
+      </div>
+      <div class="card__cta">
+        <a href="https://superrr.us18.list-manage.com/subscribe?u=07794224f80eb3988af949760&id=2b1b3a01e0" class="button" target="_blank" >Subscribe</a>
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card__body typography--a">
+        <p>
+          <span class="highlight">Follow us:</span>
+        </p>
+      </div>
+      <div class="card__footer typography--a">
+        <nav class="nav nav--social" aria-label="Socialmedia Menu">
+          <ul class="menu menu--socialmenu">
+      <li class="menu__item">
+        <a href="https://social.tchncs.de/@superrr">Mastodon</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://www.instagram.com/superrrnetwork/">Instagram</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://www.linkedin.com/company/76679388/">LinkedIn</a>
+    </li>
+  </ul>
+
+        </nav>
+        </div>
+    </div>
+  </div>
+
+  <nav class="nav nav--footer" aria-label="Footer Menu">
+    <ul class="menu menu--footermenu">
+      <li class="menu__item">
+        <a href="https://superrr.net/en/code-of-conduct">Code of Conduct</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/feed">RSS</a>
+    </li>
+      <li class="menu__item">
+        <a href="mailto:hello@superrr.net">Contact</a>
+    </li>
+      <li class="menu__item">
+        <a href="https://superrr.net/en/legal">Legal</a>
+    </li>
+  </ul>
+
+  </nav>
+</footer>
+    <script src="https://superrr.net/dist/assets/main-l0sNRNKZ.js" type="module"></script>
+        <script defer src="https://superrr.net/media/plugins/zephir/cookieconsent/index.js"></script>
+<script defer src="https://superrr.net/en/cookieconsent.js"></script>
+    
+  </body>
+</html>

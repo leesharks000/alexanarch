@@ -1,0 +1,353 @@
+{
+ "row": "yale-budget-lab-ai-tracker",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the tracker or the Lab with the entity named; R, a relation the archive states between it and an archive object; O, an archive category applied to it or to a class the field and the census source for it (AI exposure metrics for occupations: B3 Key Takeaways and ¶1, B1, B6, census evidence_kind; AI's observed effects on employment and the labor market: B2, B1, B4, census evidence_kind and intersection; AI usage data as labor-market evidence: B2, B1, census method and negative_tags). A bare mention, a list of harms, a reference-list entry or a citation line is not a claim. The string pass found no D or R candidate (no archive text names the Lab, 'budgetlab', the tracker or its titles) and one O-class candidate; beyond it, every sentence of the archive matching any class pattern or alias (11 sentences in 7 texts) was read at its passage, and the admitted deposit read at the sections named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 716,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Erasure Rate §2.2 and §5.1: AI-economics research (labor displacement, capability projection by Eloundou et al., welfare estimation) measures which jobs AI eliminates and what tasks it can perform; PER names a distinct, fourth channel, value extracted where labor remains, 'not displacement' (O-class: the archive's category applied to the class of labor-market AI measurement, of which the field's B3 places the Lab among the users of Eloundou et al.'s metrics). The reference-list entries (Eloundou et al.; Brynjolfsson et al.) are not claims. Not a string-pass candidate (the class sentences carry no category term the script reads as one); found by reading the class matches",
+   "claims": [
+    "O716-01",
+    "O716-02",
+    "O716-03"
+   ],
+   "cands": []
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    141
+   ],
+   "reason": "rejected: 'fairness-of-exposure metrics' is search-exposure fairness relocated to provenance retention (Erasure Skew), a different sense of 'exposure' from occupational AI exposure",
+   "cands": [
+    "O-class candidate (para 5, sent 7)"
+   ]
+  },
+  {
+   "dep": [
+    161
+   ],
+   "reason": "rejected: 'LLM exposure' and 'extended AI exposure' are a writer's exposure to AI tools (habituation), not an occupational exposure metric",
+   "cands": []
+  },
+  {
+   "dep": [
+    43
+   ],
+   "reason": "rejected: the Citrini memo 'narrating backward to explain how AI-driven labor displacement created a global economic crisis' is the archive's case of temporal siting, applied to a fictional forecast, not to the class of observed labor-market measurement",
+   "cands": []
+  },
+  {
+   "dep": [
+    751
+   ],
+   "reason": "rejected: a 'labor displacement effect' of a manuscript queue on the operator's own work, a different sense",
+   "cands": []
+  },
+  {
+   "dep": [
+    776
+   ],
+   "reason": "rejected: 'labor displacement' in a list of real harms of AI (a bare mention, no claim on the class)",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   716
+  ],
+  "candidates": 29,
+  "admitted": 0,
+  "verdicts": [
+   {
+    "dep": 64,
+    "cand_id": "H0001",
+    "direction": "forward",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 349,
+    "cand_id": "H0002",
+    "direction": "forward",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 576,
+    "cand_id": "H0003",
+    "direction": "forward",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 673,
+    "cand_id": "H0004",
+    "direction": "forward",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1384,
+    "cand_id": "H0005",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1386,
+    "cand_id": "H0006",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1462,
+    "cand_id": "H0007",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1463,
+    "cand_id": "H0008",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1464,
+    "cand_id": "H0009",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1466,
+    "cand_id": "H0010",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1469,
+    "cand_id": "H0011",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1470,
+    "cand_id": "H0012",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1472,
+    "cand_id": "H0013",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1479,
+    "cand_id": "H0014",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1519,
+    "cand_id": "H0015",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1523,
+    "cand_id": "H0016",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1527,
+    "cand_id": "H0017",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1528,
+    "cand_id": "H0018",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1632,
+    "cand_id": "H0019",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1643,
+    "cand_id": "H0020",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1672,
+    "cand_id": "H0021",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1673,
+    "cand_id": "H0022",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1680,
+    "cand_id": "H0023",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1681,
+    "cand_id": "H0024",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1684,
+    "cand_id": "H0025",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1694,
+    "cand_id": "H0026",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1696,
+    "cand_id": "H0027",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1697,
+    "cand_id": "H0028",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   },
+   {
+    "dep": 1702,
+    "cand_id": "H0029",
+    "direction": "reverse",
+    "strata": [],
+    "reason": "rejected: read for the three classes (exposure metrics, labor-market effects, usage data as labor evidence); the text makes no claim on them (its labor, exposure and displacement terms, where present, are the archive's DISPLACEMENT absence type, the exposure confound of self-description, or wage labor in history)"
+   }
+  ]
+ },
+ "instruments_of_labor_direction": {
+  "deps": [
+   771
+  ],
+  "reason": "Directionality of Semantic Labor (#771, 'Where Synthetic Labor Flows Relative to the Commissioned Task'), user labor drag and the directionality stack measure labor performed with AI inside a commissioned task (the census's intersection 'labor-with-ai'); the census gives this entity 'gains-and-losses' only and its lv_intersection 'none stated', and no field source states that the tracker measures task direction (B1 uses Anthropic's automation/augmentation categories of Claude usage as an input). No sentence of #771 or its line applies the instrument to any of the three classes: not admitted."
+ },
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/yale-budget-lab-ai-labor-market-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis and query note for the entity's capture (OBS-9c44ea25d2ca, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/yale-budget-lab-ai-tracker/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'yale-budget-lab-ai-tracker'], organizing_question, intersections; /home/claude/fleet/laborvector/data/labor-census/questions.json; rendered aggregators/yale-budget-lab-ai-tracker/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis and its two worked questions; where a field restates a source ledgered in B (the tracker page B2, the tracker PDF B6) it is one lineage with that source",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31"
+   ]
+  }
+ ],
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 1,
+   "O_deposits": 1,
+   "H_candidates": 29
+  },
+  "class_sentences_read": 11,
+  "deposits_admitted": 1,
+  "hop_candidates": 29,
+  "hop_admitted": 0
+ },
+ "arms": {
+  "A_naive": "not assembled (§3.9; working procedure)",
+  "A_prime": "not assembled (§3.9)"
+ }
+}

@@ -1,0 +1,1728 @@
+{
+ "row": "data-workers-inquiry",
+ "address": "Data Workers' Inquiry",
+ "addresses": [
+  "Data Workers' Inquiry"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia summary and wikitext, or the card's title and snippet for the four unreachable cards; 73/73 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the project's home page; B2 DAIR's project page; B3 Instagram, unreachable; B4 the Weizenbaum Institute's video, unreachable; B5 Tech Policy Press; B6 the project's LinkedIn page; B7 the Weizenbaum Institute's project page; B8 Bot Populi; B9 SUPERRR Lab; B10 Democracy Now on TikTok, URL not found; B11 DW Stories on Facebook, URL not found); 'own_page', the census's own page T did not surface (B12, the press release, copied from the census's saved copy; the census's other two own pages, the home page and the Weizenbaum page, are cards B1 and B7, carried once each as cards); 'wikipedia', no article, the name in one external link (B13). The census read no third-party source (all three of its sources carry basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B6, B7, B9); the method, after Marx's 1880 workers' inquiry, WIRM, PAR (B1, B2, B5, B7, B8); epistemic authority with the workers (B1, B2, B5, B8, B9, B12); outputs and the repository (B1, B12); scale (B1, B7, B12); whose labor (B1, B2, B6, B8, B12); the hidden labor behind AI (B3, B4, B7, B11); conditions documented (B1, B7, B8); NDAs and the risk of speaking (B5, B8, B9); consent and personal-data extraction (B1, B6); workers who perform as the machine (B1, B6, B8, B9); organizing (B1, B2, B9); policy and recognition (B2, B6, B8); operator and partners (B5, B7, B10, B12); period and continuation (B5, B6, B12); stated limits (B8); reception, the encyclopedia (B13). The census's kind, self-description, methodology, count, labor_object and findings quotes restate B1, B7 and B12 (one lineage each with the page; the page keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1-census.* the census's saved copy of the home page beside this session's fetch; B3-429.html and B4-429.html the refusals; B7 and B12 the census's saved copies; B13 .wiki, .html, -variant*.wiki, -search.html, -cm.* raw Wikipedia responses with B13.txt a summary of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the census's own page data-workers-inquiry--home",
+   "card": "Data Workers' Inquiry — Data Workers' Inquiry - Data Workers' Inquiry",
+   "url": "https://data-workers.org/",
+   "kind": "Overview card (the project's home page; © 2026 DAIR Institute); the same page as the census's own page data-workers-inquiry--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1.html",
+     "sha256": "7268811050e26be5f45ee72ec39b6b37a5efc4d801c060e18625f7298f9b1b50"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1.txt",
+     "sha256": "5984c6c8e507596964a1d2571db214e443fe64df52efe196a7f81389b5f9d160"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1-census.html",
+     "sha256": "7c84a1c0d4cbd70b3b3350e2138fa63750eb96e6530dc3de6e601770597e1ba0"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1-census.txt",
+     "sha256": "738bcd32d61765647854dd2b8cfb5fa76db1d4da310dc9c764e94d7375cd124e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:23Z",
+    "http": 200,
+    "url": "https://data-workers.org/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1.html",
+    "raw_sha256": "7268811050e26be5f45ee72ec39b6b37a5efc4d801c060e18625f7298f9b1b50",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "data-workers-inquiry--home",
+     "sha256": "7c84a1c0d4cbd70b3b3350e2138fa63750eb96e6530dc3de6e601770597e1ba0",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:48:59Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B1-census.txt"
+     ],
+     "agrees": "in text: the extracted words are identical up to whitespace; the raw HTML differs only in per-request script identifiers (bv_unique_id), so the two sha256 differ"
+    }
+   },
+   "names_operator": "yes ('© 2026 DAIR Institute', 'Turkopticon, DAIR', 'DAIR')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the page's <title> is the card title). The card's snippet ('Overview: Data Workers' Inquiry is a global participatory research initiative across nine countries and five continents utilizing Workers' Inquiry as a Research...') is not the page's text: neither 'Overview:' nor 'across nine countries and five continents' occurs in B1.txt, whose sentence is 'spanning nine countries across five continents'. Recorded, not ledgered as a field claim. Card and census own page are one page, carried once, as a card.",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Data Workers' Inquiry - Data Workers' Inquiry",
+   "card_snippet": "Overview: Data Workers' Inquiry is a global participatory research initiative across nine countries and five continents utilizing Workers' Inquiry as a Research...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "DAIR Institute — Data Workers' Inquiry | DAIR",
+   "url": "https://dair-institute.org/projects/data-workers-inquiry/",
+   "kind": "Overview card (the operator DAIR's project page)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B2.html",
+     "sha256": "f82280fd96e0856ffc2f37a60993c63e5a6f8bca95fabb7819aa93074937b744"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B2.txt",
+     "sha256": "20208be43205f7f45a1e0bff48d95a40ba6ac6a7cb9f0d48d995e847f355b61a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:25Z",
+    "http": 200,
+    "url": "https://www.dair-institute.org/projects/data-workers-inquiry",
+    "final_url": "https://dair-institute.org/projects/data-workers-inquiry/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B2.html",
+    "raw_sha256": "f82280fd96e0856ffc2f37a60993c63e5a6f8bca95fabb7819aa93074937b744",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B2.txt"
+    ]
+   },
+   "names_operator": "yes (DAIR; 'Milagros Miceli Research Lead')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the page's <title> is the card title. The snippet's text is the page's (B2.txt ¶ 'The Data Workers' Inquiry').",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Data Workers' Inquiry | DAIR",
+   "card_snippet": "The Data Workers' Inquiry The Data Workers' Inquiry is a global, radically participatory research initiative spanning nine countries across five continents. Her...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Instagram — Data Workers’ Inquiry (@dataworkersinquiry) • Instagram photos and videos",
+   "url": "https://www.instagram.com/dataworkersinquiry/",
+   "kind": "Overview card (the project's Instagram profile; unreachable)",
+   "files": {
+    "B3-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B3-429.html",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:26Z",
+      "url": "https://www.instagram.com/dataworkersinquiry/",
+      "http": 429,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "redirected to https://www.instagram.com/accounts/login/?next=… and answered HTTP 429 with an empty body (saved as B3-429.html, 0 bytes)"
+     }
+    ],
+    "note": "The handle is the card's own. Instagram answered the honest agent with a login redirect and HTTP 429: a refusal, recorded and not retried with another agent or by any other route. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (the snippet names the project only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The snippet ('Project: … Key Reports: Investigations on ...') is in the labelled form of cards 1 and 5, whose snippets are not their pages' text; with the page unreachable this cannot be checked, and the snippet stands as the card's only text (F25).",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Data Workers’ Inquiry (@dataworkersinquiry) • Instagram photos and videos",
+   "card_snippet": "Project: Data Workers' Inquiry (DWI) community-based research exposing hidden, precarious labor behind AI and digital platforms. Key Reports: Investigations on ...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (video, 2m)",
+   "card": "YouTube·Weizenbaum-Institut — The Data Workers' Inquiry - Unveiling the Hidden Labor Behind AI",
+   "url": "https://www.youtube.com/watch?v=tAMqrXlEPDI",
+   "kind": "Overview card (a 2-minute video on the Weizenbaum Institute's channel; unreachable)",
+   "files": {
+    "B4-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B4-429.html",
+     "sha256": "573b490ae627e2722eadc00668871c975bc6584ede2020b7334148935af0ae52"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:28Z",
+      "url": "https://www.youtube.com/watch?v=tAMqrXlEPDI",
+      "http": 429,
+      "sha256": "573b490ae627e2722eadc00668871c975bc6584ede2020b7334148935af0ae52",
+      "result": "redirected to https://www.google.com/sorry/index?… (a CAPTCHA page, 'Our systems have detected unusual traffic'), HTTP 429 (saved as B4-429.html)"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"The Data Workers' Inquiry - Unveiling the Hidden Labor Behind AI\" Weizenbaum YouTube' (the video id tAMqrXlEPDI from a listing at unjobs.org)"
+    ],
+    "note": "A bot check on the honest agent: recorded as unreachable and not retried. No transcript fetched. The card carries no snippet, so its title is its only text (§3.1(a): a video card admitted through title and snippet)."
+   },
+   "names_operator": "yes ('Weizenbaum-Institut', the channel on the card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "The Data Workers' Inquiry - Unveiling the Hidden Labor Behind AI",
+   "card_snippet": null,
+   "card_note": "video, 2m"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Tech Policy Press — Data Workers, In Their Own Voices | TechPolicy.Press",
+   "url": "https://www.techpolicy.press/data-workers-in-their-own-voices/",
+   "kind": "Overview card (podcast episode and transcript, Rebecca Rand and Justin Hendrix, 28 July 2024)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B5.html",
+     "sha256": "bd3e740170fbd604cb94c484e06e0b56762cf2e55f324d6707677baf3cabac6f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B5.txt",
+     "sha256": "e2533576efdcb0bab122059aa592ed6c99203120aefe6033a34e28fd72f61cc0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:30Z",
+    "http": 200,
+    "url": "https://techpolicy.press/data-workers-in-their-own-voices",
+    "final_url": "https://www.techpolicy.press/data-workers-in-their-own-voices/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B5.html",
+    "raw_sha256": "bd3e740170fbd604cb94c484e06e0b56762cf2e55f324d6707677baf3cabac6f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes (DAIR, the Weizenbaum Institute, TU Berlin; Milagros Miceli, Adio Dinika)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title. The card's snippet ('Project: Data Workers' Inquiry by … Goal: Enable global data and content moderation...') is not the page's text: neither 'Project: Data Workers' Inquiry by' nor 'Enable global data' occurs in B5.txt. Recorded, not ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Data Workers, In Their Own Voices | TechPolicy.Press",
+   "card_snippet": "Project: Data Workers' Inquiry by Distributed AI Research Institute (DAIR), Weizenbaum Institute, and TU Berlin. Goal: Enable global data and content moderation...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "LinkedIn — Data Workers' Inquiry - LinkedIn",
+   "url": "https://www.linkedin.com/company/data-workers-inquiry/",
+   "kind": "Overview card (the project's LinkedIn company page, public view, with its recent posts and reposts)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B6.html",
+     "sha256": "f63ad32e00f3e9f5687fbf14e9870972b75557aa52de9a59785c23049f5fbd2a"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B6.txt",
+     "sha256": "ac663a41d7fea3c9ee3519ed70e0eadb1b9f3dafd14b5775a6e2135b8b543d0d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:32Z",
+    "http": 200,
+    "url": "https://www.linkedin.com/company/data-workers-inquiry/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B6.html",
+    "raw_sha256": "f63ad32e00f3e9f5687fbf14e9870972b75557aa52de9a59785c23049f5fbd2a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes (DAIR; Milagros Miceli)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL guessed from the card's site and the project's name, confirmed by the page's <title> ('Data Workers' Inquiry | LinkedIn') and its About text, which carries the card's snippet ('community-centered project in which data workers join us as community researchers'). The public view served the About block and posts dated relative to the fetch (3d … 1mo); the posts are the page's as served on 2026-10-29.",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "Data Workers' Inquiry - LinkedIn",
+   "card_snippet": "About us Data Workers' Inquiry is a community-centered project in which data workers join us as community researchers to lead their own inquiry in their respect...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7; the census's own page data-workers-inquiry--weizenbaum",
+   "card": "Weizenbaum Institut — Data Workers' Inquiry - Weizenbaum Institut",
+   "url": "https://www.weizenbaum-institut.de/en/projects/data-workers-inquiry/",
+   "kind": "Overview card (the Weizenbaum Institute's project page); byte-identical to the census's own page data-workers-inquiry--weizenbaum",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B7.html",
+     "sha256": "0b02a8e7d4c1a397c7e2e51d6faacf8c118959d6065eaa30f43410ef23ccd42d"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B7.txt",
+     "sha256": "eed46c4b9e0b8f36b8df49ff589258eef64fb1ffeee3bbab7442cbbc8008fe3f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:34Z",
+    "http": 200,
+    "url": "https://www.weizenbaum-institut.de/en/projects/data-workers-inquiry/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw_sha256": "0b02a8e7d4c1a397c7e2e51d6faacf8c118959d6065eaa30f43410ef23ccd42d",
+    "census_copy": {
+     "src": "data-workers-inquiry--weizenbaum",
+     "sha256": "0b02a8e7d4c1a397c7e2e51d6faacf8c118959d6065eaa30f43410ef23ccd42d",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:01Z",
+     "http": "200",
+     "agrees": true,
+     "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.html.gz (gunzipped) and .txt"
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B7.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B7.txt"
+    ]
+   },
+   "names_operator": "yes ('Partners : Weizenbaum-Institut, TU Berlin, DAIR Institut'; 'Dr. Milagros Miceli Research Group Lead')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The fetch was byte-identical to the census's saved copy (same sha256), so the census's copy is the saved file and the page is carried once, as a card. The snippet is the page's text (Methods s1).",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "Data Workers' Inquiry - Weizenbaum Institut",
+   "card_snippet": "The team of researchers led by Dr. Miceli, Adio Dinika, Krystal Kauffmann, Camilla Wagner, and Laurenz Sachenbacher, has brought together 15 co-researchers from...",
+   "card_note": null
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "Bot Populi — The Data Workers' Inquiry - Bot Populi",
+   "url": "https://botpopuli.net/the-data-workers-inquiry/",
+   "kind": "Overview card (an essay by Laurenz Sachenbacher, a core researcher of the project at the Weizenbaum Institute, 29 April 2025; CC BY-SA 4.0)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B8.html",
+     "sha256": "b6aba61930490f67d9a41a08f7efa1181aec181fdbed9934249b1bf9d6a75ac1"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B8.txt",
+     "sha256": "18c0bc55868d5db8397d6a049c46b29190ba10ad7b3b5332f209be01b4e7d323"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:36Z",
+    "http": 200,
+    "url": "https://botpopuli.net/the-data-workers-inquiry/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B8.html",
+    "raw_sha256": "b6aba61930490f67d9a41a08f7efa1181aec181fdbed9934249b1bf9d6a75ac1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B8.txt"
+    ]
+   },
+   "names_operator": "yes (the Weizenbaum Institute; the author a member of the core team)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site. The snippet is the page's text (¶3 s1). The author writes as 'one of the core researchers who accompanied every inquiry': a team member's account on a third-party site, coded at its own modality (self-description where it assesses the project).",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 8
+    }
+   ],
+   "card_title": "The Data Workers' Inquiry - Bot Populi",
+   "card_snippet": "In an attempt to oppose this structurally conditioned form of digital exploitation, the Data Workers' Inquiry is a community-based research project in which dat...",
+   "card_note": null
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "Superrr — Data Work: A Year in RRReview - Superrr",
+   "url": "https://superrr.net/en/blog/data-work-a-year-in-rrreview",
+   "kind": "Overview card (SUPERRR Lab's year review of its data-work project, by Rim Melake; dated 21.01.2026 under the title)",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B9.html",
+     "sha256": "0f3217b26fc4afa0584aef230596238ebcf322e9b372afd2c3fb8611df9626da"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B9.txt",
+     "sha256": "e22a58bb8634930eb7e565deb96da3cb809c94fd3798966bc2a67de395cedcd4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:32:02Z",
+    "http": 200,
+    "url": "https://superrr.net/en/blog/data-work-a-year-in-rrreview",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B9.html",
+    "raw_sha256": "0f3217b26fc4afa0584aef230596238ebcf322e9b372afd2c3fb8611df9626da",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B9.txt"
+    ],
+    "searches": [
+     "WebSearch '\"Data Work: A Year in RRReview\" Superrr' (no result)",
+     "WebSearch 'superrr.net \"Data Work\" \"RRReview\" Data Workers Inquiry' (no result)",
+     "WebSearch 'Superrr Lab \"A Year in RRReview\" data work' (no result)",
+     "superrr.net/en/blog and superrr.net/sitemap.xml fetched with the honest agent (HTTP 200): the sitemap lists /en/blog/data-work-a-year-in-rrreview"
+    ]
+   },
+   "names_operator": "yes ('Weizenbaum Institute researcher and our close collaborator, Dr. Milagros Miceli')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from SUPERRR's sitemap after three searches failed; the page's <title> is the card title. The snippet is the page's text. A first try at a search URL (superrr.net/en/search?q=RRReview) returned HTTP 404 and was discarded.",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 9
+    }
+   ],
+   "card_title": "Data Work: A Year in RRReview - Superrr",
+   "card_snippet": "One of them is the Data Workers Inquiry. The project is a global and radically participatory research initiative that lets data workers themselves become commun...",
+   "card_note": null
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 10 (video, 1:26)",
+   "card": "TikTok·democracynow.org — The Distributed Artificial Intelligence Research Institute partners wi...",
+   "url": null,
+   "kind": "Overview card (a 1:26 video on TikTok by democracynow.org; unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch 'democracynow TikTok \"Distributed Artificial Intelligence Research Institute partners\" data workers' (no tiktok.com result)",
+     "WebSearch 'tiktok.com democracynow DAIR data workers inquiry Milagros Miceli' (no tiktok.com result)"
+    ],
+    "note": "No URL for the video could be found; a Democracy Now page on data workers (democracynow.org/2026/8/27/data_workers) appeared in a search but is not the card and was not substituted. The card's title is its only text; it carries no snippet."
+   },
+   "names_operator": "yes ('The Distributed Artificial Intelligence Research Institute', in the title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 10
+    }
+   ],
+   "card_title": "The Distributed Artificial Intelligence Research Institute partners wi...",
+   "card_snippet": null,
+   "card_note": "video, 1:26"
+  },
+  {
+   "id": "B11",
+   "origin": "card",
+   "role": "Overview card 11 (video, 22:12)",
+   "card": "Facebook·DW Stories — Behind today's AI revolution stands an invisible workforce: millions of data ...",
+   "url": null,
+   "kind": "Overview card (a 22:12 video on Facebook by DW Stories; unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch 'DW Stories \"Behind today's AI revolution stands an invisible workforce\" data workers Facebook video' (no facebook.com result)",
+     "WebSearch 'facebook.com DW Stories invisible workforce millions of data workers AI video' (no facebook.com result)"
+    ],
+    "note": "No URL for the video could be found. The card's title is its only text; it carries no snippet. B6 carries Miceli's post on an interview with DW (Deutsche Welle), which may or may not be this video; not substituted."
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "",
+   "surfaced_by_T": [
+    {
+     "slug": "data-workers-inquiry-aio-20261029",
+     "card": 11
+    }
+   ],
+   "card_title": "Behind today's AI revolution stands an invisible workforce: millions of data ...",
+   "card_snippet": null,
+   "card_note": "video, 22:12"
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "role": "the census's own page data-workers-inquiry--press (not surfaced by T)",
+   "card": "Data Workers' Inquiry — Press Release - Data Workers' Inquiry",
+   "url": "https://data-workers.org/press-release/",
+   "kind": "own page (the launch press release, undated in its text; the launch event 8 July 2024, year from B5), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B12.html",
+     "sha256": "05e5c433400642ba2a752fe43e67911487c4ea23d4ee8c81402a6c2866130b37"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B12.txt",
+     "sha256": "9d19b69dc50ca82a25b7efe4d2f9392e160fe353b352cd9ac9133061b429bc49"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "data-workers-inquiry--press",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:00Z",
+    "http": "200",
+    "url": "https://data-workers.org/press-release/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B12.html",
+    "raw_sha256": "05e5c433400642ba2a752fe43e67911487c4ea23d4ee8c81402a6c2866130b37",
+    "census_sha256": "05e5c433400642ba2a752fe43e67911487c4ea23d4ee8c81402a6c2866130b37",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.html.gz (gunzipped) and .txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B12.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (DAIR, the Weizenbaum Institute; Milagros Miceli, Timnit Gebru, Adio Dinika)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (sha256 matches the manifest), so it was copied and not refetched. The census's other two own pages are cards B1 and B7."
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Data Workers' Inquiry (no article; named in Content moderation, External links)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Data_Workers%27_Inquiry&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13.wiki",
+     "sha256": "5a4573663fece123ce048a4f8da50176d63df118404877620bdeb3b2340ccac7"
+    },
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13.html",
+     "sha256": "6d0eb39539e58070b991f07f5fde348c44fe4112cf1a3a1491c1b7e2051f980c"
+    },
+    "B13-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-variant1.wiki",
+     "sha256": "bc436516359a8dab3504eec41459520119275d806fe2e462a11293fce7f5423c"
+    },
+    "B13-variant2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-variant2.wiki",
+     "sha256": "c8f7e0d700d5aa1ed659554c3402225bcd3f53e64c622ec51514670ab786b0f0"
+    },
+    "B13-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-search.html",
+     "sha256": "95cfe4d3e5b77f4e0f47b6a7cf3b683571e8cad27d0214e9ee9f4321e77cf222"
+    },
+    "B13-cm.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-cm.wiki",
+     "sha256": "d81d80cfe9f831dae3ab3632ee5423e29050d977e3348de1646dff5c11ff93f9"
+    },
+    "B13-cm.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-cm.html",
+     "sha256": "5bff19e9f81b701202edcce1260ca3aadf15e98c6a9b936a613d6fddcb3a8ac5"
+    },
+    "B13-cm.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-cm.txt",
+     "sha256": "d0d26cd69f94d20118ecc252a86cc45e6bc96902eb1161c3119af3f7ae18c3ee"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13.txt",
+     "sha256": "e3896664a2f4c7d80bddcda5c776711fab1526cbbd1fb2599e606f59a26b5c93"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:02Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Data_Workers%27_Inquiry&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:03Z",
+      "url": "https://en.wikipedia.org/wiki/Data_Workers%27_Inquiry",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:32:35Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Data_Workers_Inquiry&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:35Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Data_Worker%27s_Inquiry&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:04Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Data+Workers%27+Inquiry%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "one result: Content moderation"
+     },
+     {
+      "at": "2026-10-29T22:32:36Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Content_moderation&action=raw",
+      "http": 200,
+      "result": "External links, line 102"
+     },
+     {
+      "at": "2026-10-29T22:32:36Z",
+      "url": "https://en.wikipedia.org/wiki/Content_moderation",
+      "http": 200
+     }
+    ],
+    "raw_sha256": "6d0eb39539e58070b991f07f5fde348c44fe4112cf1a3a1491c1b7e2051f980c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13.txt",
+     "datasets/negative-of-the-negative/v2/intake/data-workers-inquiry-20261029/B13-cm.wiki"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes, in Content moderation's external link (Weizenbaum Institute, TU Berlin, DAIR)",
+   "names_archive": "no",
+   "note": "No article and no redirect under three spellings; the name occurs in article space once, as an external link in Content moderation. B13.txt is a summary of the responses with the external-link line quoted from B13-cm.wiki."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home ¶1 s1–2",
+   "quote": "is a global, radically participatory research initiative spanning nine countries across five continents. Here, data workers themselves become community researchers, identifying urgent issues, formulating their own questions, and choosing the formats that best tell their stories",
+   "claim": "the project's definition of itself: a global, radically participatory research initiative in nine countries on five continents, in which data workers become community researchers who identify the issues, set the questions and choose the formats",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: data workers' own research in their workplaces",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home ¶2",
+   "quote": "we created and developed Workers’ Inquiry as a Research Methodology or WIRM, a framework designed to turn hidden and precarious labor into a shared, politicized site for knowledge-making, public engagement, and tangible change.",
+   "claim": "the project names its method Workers' Inquiry as a Research Methodology (WIRM), a framework to turn hidden and precarious labor into a politicized site of knowledge-making, public engagement and change",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home ¶1 s2",
+   "quote": "zines, documentaries, comics, essays, podcasts, and animations can be downloaded from the project repository",
+   "claim": "the inquiries are published as zines, documentaries, comics, essays, podcasts and animations, downloadable from the repository",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "outputs, formats and the repository",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, The Inquiries ¶1",
+   "quote": "19 data workers in Venezuela, Kenya, Syria, Brazil, France and Germany conducting research with their colleagues in their respective workplaces and reporting on labor conditions and widespread practices in the AI industry.",
+   "claim": "19 data workers in six named countries research labor conditions and practices in the AI industry with colleagues in their own workplaces",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: the inquirers and their countries",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'Impact of Remotasks’ Closure on Kenyan Workers' (Mophat Okinyi)",
+   "quote": "In March 2024, Remotasks shut down thousands of accounts of data workers in African countries.",
+   "claim": "an inquiry documents Remotasks shutting down thousands of African data workers' accounts in March 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'Mental Health and Drug Dependency in Content Moderation' (Fasica Berhane Gebrekidan)",
+   "quote": "Exploited by subcontractors like Sama, Meta content moderators in Nairobi face psychological trauma and silencing.",
+   "claim": "an inquiry documents Meta content moderators in Nairobi, employed through subcontractors such as Sama, facing psychological trauma and silencing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'The Impact of Gift Card Payments on MTurk Workers' (Alexis Chávez)",
+   "quote": "Amazon Mechanical Turk pays data workers with gift cards instead of money. This report underlines how this payment method fosters workers‘ dependency",
+   "claim": "an inquiry documents Amazon Mechanical Turk paying data workers in gift cards, and how the payment fosters dependency",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'Behind the Face of AI' (Clara and B)",
+   "quote": "This short comic details the experiences of data workers in France working for Scale AI as human chatbots. They explore what it is to be human and the consequences of acting like a machine.",
+   "claim": "an inquiry (a comic) documents data workers in France working for Scale AI as human chatbots, acting like a machine",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "workers who perform as the machine",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'The Labor Behind AI Intimacy' (Michael Geoffrey Asia)",
+   "quote": "When users think they are talking to a machine, human emotion becomes data.",
+   "claim": "an inquiry on AI intimacy: where users think they talk to a machine, human emotion becomes data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers who perform as the machine",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry by James Mojez Oyange",
+   "quote": "“Just Send us Pictures of Your feet”: Consent and Biometric Extraction in the AI Supply Chain … The boundary between labour and personal resource has disappeared: the human body becomes raw material.",
+   "claim": "an inquiry on consent and biometric extraction in the AI supply chain: the worker's body becomes raw material",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "consent and the extraction of workers' personal data",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiries 'Data Workers Organizing: The African Content Moderators Union' (Richard Mathenge) and 'Organizing Across Borders' (Joan Kinyua)",
+   "quote": "This documentary explores the issues faced by data workers at Sama in Nairobi, Kenya, that led to the union’s creation. … A Partnership Between the Data Workers Inquiry and the Data Labelers Association.",
+   "claim": "inquiries document the issues that led to the African Content Moderators Union and a partnership with the Data Labelers Association",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'Unveiling: The Invisible Lives of TikTok Data Workers in London' (Fasica Berhane Gebrekidan)",
+   "quote": "They face systematic outsourcing, replacement by inadequate automated systems, and layoffs without accountability.",
+   "claim": "an inquiry documents TikTok trust and safety workers in London facing outsourcing, replacement by automated systems and layoffs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, Invited Pieces ¶1",
+   "quote": "Artists, translators, writers, nurses, and internet users produce data for AI without compensation.",
+   "claim": "invited pieces extend data work to artists, translators, writers, nurses and internet users who produce data for AI without compensation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose labor: data work that enables AI systems",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, The Team ¶1",
+   "quote": "We are the organizing team developing a methodology and a platform for data workers to conduct individual inquiries. We provide guidance and training in specific data collection and analysis methods, and constantly monitor the legal and ethical boundaries of the inquiries.",
+   "claim": "the organizing team develops the method and platform, trains the workers in data collection and analysis, and monitors the inquiries' legal and ethical boundaries",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, inquiry 'Life of a Latin American Data Worker' (Oskarina Veronica Fuentes Anaya)",
+   "quote": "Irregular working hours, uncertainty, meager wages, and unpaid time are daily realities for platform data workers.",
+   "claim": "an inquiry documents irregular hours, uncertainty, meager wages and unpaid time for platform data workers in Latin America",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read; the page is undated, site © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 5984c6c8e5075969…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Lived Realities ¶1",
+   "quote": "The project brings to light the lived realities of workers in content moderation, data annotation, and other essential yet precarious roles that keep AI systems running.",
+   "claim": "DAIR's page: the project brings to light the lived realities of workers in content moderation, annotation and other precarious roles that keep AI systems running",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "whose labor: data work that enables AI systems",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Workers’ Inquiry as a Research Methodology ¶1 s1",
+   "quote": "Across the board, the project channels Marx’s 1880 Workers’ Inquiry, reframing data work under AI as a capital-laden terrain of exploitation, struggle, and possibility, one that is ripe for solidarity, collective organizing, and structured resistance.",
+   "claim": "the project channels Marx's 1880 Workers' Inquiry and reframes data work under AI as a terrain of exploitation, struggle and possibility, ripe for organizing",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Workers’ Inquiry as a Research Methodology ¶1 s2",
+   "quote": "which moves beyond documentation toward a participatory, worker-led process that centers workers’ epistemic authority, fosters self-expression, and strengthens organizing capacity.",
+   "claim": "WIRM moves beyond documentation to a worker-led process that centers workers' epistemic authority and strengthens organizing capacity",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "quotation, Milagros Miceli, Research Lead",
+   "quote": "I didn’t want to speak for or about data workers anymore. I wanted to build a space where they could tell their own stories, and where research was a form of collective thinking and organizing, not extraction.",
+   "claim": "the research lead: a space where workers tell their own stories and research is collective thinking and organizing, not extraction",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "More Work, 'Workers’ Inquiry as a Research Methodology'",
+   "quote": "Our paper detailing the Workers’ Inquiry as a Research Methodology or WIRM methodology we designed that underpins the DWI was accepted to AIES.",
+   "claim": "the WIRM paper that underpins the project was accepted to AIES",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "The Inquiries ¶1 s2",
+   "quote": "In Kenya, workers from Sama, CloudFactory, and Remotasks are organizing to demand fair treatment and better conditions.",
+   "claim": "workers from Sama, CloudFactory and Remotasks in Kenya are organizing for fair treatment and better conditions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Our Impact, European Parliament Testimony",
+   "quote": "A panel of data workers organized by us in collaboration with MEPs testified at the European Parliament on February 22, 2024. Their input directly influenced the negotiations leading to the adoption of the Platform Workers’ Directive",
+   "claim": "a panel of data workers organized by the project testified at the European Parliament on 22 February 2024, and DAIR states it influenced the Platform Workers' Directive",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "policy, awards and recognition",
+   "date": "2024-02-22 (the event); page read 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Our Impact, Data Labelers Association",
+   "quote": "We supported the Data Labelers Association's creation and launch.",
+   "claim": "the project supported the creation and launch of the Data Labelers Association",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Our Impact, Time 100",
+   "quote": "Three of our community researchers, Richard Mathenge Mophat Okinyi, and Kauna Malgwi went on to be named in the TIME 100 most influential people in AI.",
+   "claim": "three community researchers were named in the TIME 100 most influential people in AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "policy, awards and recognition",
+   "date": "2026-10-29 (read; undated page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 20208be43205f7f4…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (Instagram unreachable: HTTP 429, login redirect)",
+   "quote": "Project: Data Workers' Inquiry (DWI) community-based research exposing hidden, precarious labor behind AI and digital platforms.",
+   "claim": "the card: community-based research exposing hidden, precarious labor behind AI and digital platforms",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the hidden labor behind AI",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title (YouTube, Weizenbaum-Institut, video 2m; unreachable: HTTP 429, bot check)",
+   "quote": "The Data Workers' Inquiry - Unveiling the Hidden Labor Behind AI",
+   "claim": "the Weizenbaum Institute's video presents the project as unveiling the hidden labor behind AI",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the hidden labor behind AI",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "standfirst ¶1",
+   "quote": "The Distributed AI Research Institute, or DAIR—which seeks to conduct community-rooted AI research that is independent from the technology industry—has launched a new project called the Data Workers' Inquiry to invite data workers to create their own research and recount their experiences. The project is supported by DAIR, the Weizenbaum Institute, and TU Berlin.",
+   "claim": "Tech Policy Press: DAIR launched the project to invite data workers to create their own research; it is supported by DAIR, the Weizenbaum Institute and TU Berlin",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator, team and partners",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "transcript, Milagros Miceli at the launch",
+   "quote": "I think the idea of the Data Workers' Inquiry is to provide a platform in which the workers speak for themselves. They create the research questions, they design the research questions, they design the investigation that they want to conduct in their workplaces with their co-workers.",
+   "claim": "Miceli: a platform in which the workers speak for themselves, create the questions and design the investigation with their co-workers",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "transcript, Rebecca Rand",
+   "quote": "One of the things multiple researchers have brought up is that data workers are bound by non-disclosure agreements, which makes it especially risky for them to speak out.",
+   "claim": "data workers are bound by non-disclosure agreements, which makes speaking out risky",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-disclosure agreements and the risk of speaking",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "transcript, Rebecca Rand",
+   "quote": "The idea of a worker's inquiry goes back to 1880 actually with Karl Marx. … Now Marx's original inquiry was basically just a survey of 100 questions for workers about the nuts and bolts of their jobs, wages, cost of living, contracts, and so on.",
+   "claim": "the workers' inquiry goes back to Marx in 1880, a survey of 100 questions on jobs, wages, cost of living and contracts",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "standfirst ¶1 s3",
+   "quote": "For this episode, journalist and audio producer Rebecca Rand parsed some of the ideas and experiences discussed at a virtual launch event for the inquiry that took place earlier this month.",
+   "claim": "the launch event was held earlier in the month of the 28 July 2024 episode",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "period, launch and continuation",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "transcript, Adio Dinika",
+   "quote": "this is dangerous work, particularly for the workers because some of the workers that are involved in this project are actually still working in these companies and there'll be consequences for them",
+   "claim": "Dinika: the work is dangerous for the workers, some still employed by the companies they research",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-disclosure agreements and the risk of speaking",
+   "date": "2024-07-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e2533576efdcb0ba…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "About us",
+   "quote": "Data Workers’ Inquiry is a community-centered project in which data workers join us as community researchers to lead their own inquiry in their respective workplaces. Our methodology aims to deepen the tradition of community-based participatory research by empowering data workers to guide the direction of the research, such that it is oriented towards their needs and goals of building workplace power, but supported by formally trained qualitative researchers.",
+   "claim": "the project's LinkedIn page: data workers lead their own inquiry in their workplaces, the method deepening community-based participatory research toward building workplace power, supported by trained qualitative researchers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: data workers' own research in their workplaces",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by James 'Mojez' Oyange (reposted, 1mo)",
+   "quote": "why are data workers asked to share their faces, voices, and even photos of their children as part of their jobs? After speaking with nine workers in Kenya, a troubling pattern emerged. Workers were not only giving their labour to build AI systems, but they were also giving away deeply personal data, often with no clear purpose given, no informed consent obtained, and no idea where any of that data ends up.",
+   "claim": "Oyange's inquiry: workers in Kenya are asked for their faces, voices and photos of their children, giving personal data without clear purpose or informed consent",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "consent and the extraction of workers' personal data",
+   "date": "2026 (post shown as 1mo before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by Data Workers' Inquiry (1mo)",
+   "quote": "Mojez documents what firms in the AI supply chain collect from the people who annotate their data: facial footage, identity documents, keystrokes, screen recordings and images made inside their own homes.",
+   "claim": "the report documents firms collecting facial footage, identity documents, keystrokes, screen recordings and images from inside annotators' homes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "consent and the extraction of workers' personal data",
+   "date": "2026 (post shown as 1mo before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by Dr. Milagros Miceli (reposted, 1mo)",
+   "quote": "This year, Data Workers' Inquiry received an Award of Distinction as part of the Prix Ars Electronica, recognizing the project’s diverse forms of output and the ways data workers use them to document and communicate their experiences.",
+   "claim": "the project received an Award of Distinction of the Prix Ars Electronica (2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "policy, awards and recognition",
+   "date": "2026 (Ars Electronica 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by Data Workers' Inquiry (2w)",
+   "quote": "Our new project Data Workers United is a move from investigating to action. This partnership between The Distributed AI Research Institute (DAIR) and SUPERRR Lab will build a network that strengthens solidarity across movements and borders.",
+   "claim": "the project's successor, Data Workers United (DAIR with SUPERRR Lab), moves from investigating to action",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "period, launch and continuation",
+   "date": "2026-10 (post shown as 2w before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by Dr. Milagros Miceli (reposted, 3d)",
+   "quote": "You, me, and anyone with internet access do unpaid, uncredited data work to feed AI models.",
+   "claim": "Miceli: anyone with internet access does unpaid, uncredited data work that feeds AI models",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose labor: data work that enables AI systems",
+   "date": "2026-10 (post shown as 3d before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post by Ares Biescas (reposted, 4d), on Horacio Espinosa",
+   "quote": "Now he says something else weighs on him: without the workers knowing it, the labelling they did was helping to train the AI systems that now take part in that same moderation work. Despite the NDA he signed, he has decided to speak out after finding support in Data Workers’ Inquiry, a Berlin-based organisation that coordinates a global network of data workers and researches the human labour that makes AI work.",
+   "claim": "EFE's interview: moderators' labelling trained the AI that now moderates; the project described as a Berlin-based organisation coordinating a global network of data workers and researching the human labour that makes AI work",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers who perform as the machine",
+   "date": "2026-10 (post shown as 4d before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ac663a41d7fea3c9…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Data Workers' Inquiry ¶1",
+   "quote": "The Data Workers’ Inquiry is a community-based research project in which data workers conduct research in their workplaces. The findings serve as a repository and resource for researchers, journalists, and policymakers seeking first-hand accounts of data work, as well as for other data workers.",
+   "claim": "the Weizenbaum Institute's definition: a community-based research project in which data workers research their workplaces, its findings a repository of first-hand accounts for researchers, journalists, policymakers and other data workers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: data workers' own research in their workplaces",
+   "date": "2026-10-29 (read; project August 2023 – November 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Background ¶2",
+   "quote": "behind the glossy veneer of AI-powered applications and services lies a hidden workforce of data workers who form the backbone of this technological revolution. These workers, often located in the Global South, are tasked with the labor-intensive and emotionally taxing work of data annotation, content moderation, and other forms of data processing that enable AI systems to function.",
+   "claim": "behind AI applications lies a hidden workforce of data workers, often in the Global South, doing annotation, moderation and other data processing that enables AI systems",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the hidden labor behind AI",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Background ¶3",
+   "quote": "Despite their critical role in the development and maintenance of AI, data workers are often rendered invisible, their contributions unrecognized, and their well-being overlooked. This is by design, and not accidental. So far, it has been common practice to speak and research about data workers, instead of speaking or researching with them.",
+   "claim": "data workers are rendered invisible by design; research has been about them, not with them",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the hidden labor behind AI",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Methods s1",
+   "quote": "The team of researchers led by Dr. Miceli, Adio Dinika, Krystal Kauffmann, Camilla Wagner, and Laurenz Sachenbacher, has brought together 15 co-researchers from Venezuela, Kenya, Syria, and Germany and employment contexts, including content moderators and data annotators working for various outsourcing companies and platforms.",
+   "claim": "the team led by Miceli, with Dinika, Kauffmann, Wagner and Sachenbacher, brought together 15 co-researchers from Venezuela, Kenya, Syria and Germany",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: the inquirers and their countries",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Methods s2",
+   "quote": "Drawing inspiration from Marx's 1880 “Workers Inquiry”, the Data Workers Inquiry employs a participatory action research (PAR) methodology, which emphasizes the collaboration between researchers and members of directly affected communities to understand and change problematic situations",
+   "claim": "drawing on Marx's 1880 Workers' Inquiry, the project employs participatory action research, the collaboration of researchers with directly affected communities",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Outcomes and Prospects ¶1 s3",
+   "quote": "These accounts show how outsourcing companies prey on vulnerable populations, such as refugees, offering them work with little compensation.",
+   "claim": "the accounts show outsourcing companies preying on vulnerable populations such as refugees, with little compensation",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "project data",
+   "quote": "Duration : August 2023 - November 2024 … Partners : Weizenbaum-Institut, TU Berlin, DAIR Institut",
+   "claim": "the Weizenbaum project ran August 2023 to November 2024, with the Weizenbaum Institute, TU Berlin and DAIR as partners",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, team and partners",
+   "date": "2026-10-29 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 eed46c4b9e0b8f36…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "standfirst",
+   "quote": "In 1880, Karl Marx initiated the Workers’ Inquiry, a novel and unprecedented research project, inviting industrial workers to participate in producing first-hand accounts of the capitalist system and their place within it. The ‘Data Worker’s Inquiry’ is a renewal of this project for the age of AI.",
+   "claim": "Sachenbacher (Bot Populi): the project is a renewal of Marx's 1880 Workers' Inquiry for the age of AI",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶2 s1",
+   "quote": "Data work refers to an essential occupation of digital capitalism that amounts to between 4.4% and 12.5% of the global labor force.",
+   "claim": "data work is an occupation amounting to between 4.4% and 12.5% of the global labor force",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose labor: data work that enables AI systems",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶2 s3",
+   "quote": "scholars distinguish between three subtypes in the AI development pipeline—AI preparation, AI impersonation, and AI verification—and content moderation",
+   "claim": "scholars distinguish AI preparation, AI impersonation and AI verification in the AI pipeline, and content moderation",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers who perform as the machine",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶3 s2–3",
+   "quote": "The point is for workers to retain epistemic authority, to center their perspectives on the struggles they face in following the overarching goals of the organization and building workplace power. Assisted by a core team of trained qualitative researchers, each of the 13 projects was tailored to the specificities of their respective national context",
+   "claim": "workers retain epistemic authority, assisted by a core team; each of 13 projects was tailored to its national context",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶3 s5",
+   "quote": "Marx’s original 100 questions were adapted in iterative cycles to account for the new modes of production, new forms of technological involvement, and new forms of global competition",
+   "claim": "Marx's 100 questions were adapted in iterative cycles to new modes of production and technology",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: a workers' inquiry after Marx (1880), WIRM, participatory action research",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶4 s3",
+   "quote": "Through this dependency, the workers are also politically disempowered, exacerbated by so-called ‘Non-disclosure agreements’ (NDAs) that legally prohibit workers in BPOs from voicing their contempt and hence from collectivizing.",
+   "claim": "NDAs legally prohibit workers in BPOs from voicing complaint and so from collectivizing",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-disclosure agreements and the risk of speaking",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶4 s5",
+   "quote": "Testimonies of workers reported mass rejections or unsubstantiated suspensions of platform accounts based on allegedly inaccurate task completion, which amounts to the aforementioned institutionalized wage theft",
+   "claim": "workers' testimonies report mass rejections and unsubstantiated account suspensions, amounting to institutionalized wage theft",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶6 s4",
+   "quote": "consider the case of Remotask in Kenya, which closed all its operations, allegedly in response to workers’ organizing, threatening many with economic ruin.",
+   "claim": "Remotasks closed all its operations in Kenya, allegedly in response to workers' organizing",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions the inquiries document",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶8 s3",
+   "quote": "which had direct effects concerning, for example, the ‘Platform workers’ Directive’ of the European Union, which included data work in its definition of platform work after testimonies of Data Workers invited by researchers.",
+   "claim": "the EU Platform Workers' Directive included data work in its definition of platform work after data workers' testimonies",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "policy, awards and recognition",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶7 s4",
+   "quote": "However, all the solution approaches we accompanied and enthusiastically applaud, such as efforts to build workers’ councils, advocacy groups, or non-institutionalized solidarity structures in the form of peer-to-peer mental health support, were largely forced to remain on a localized level.",
+   "claim": "a core researcher's stated limit: the organizing efforts the project accompanied were largely forced to remain local",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶8 s4–5",
+   "quote": "it also highlights the lurking danger of listening to invisibilized, precarious workers only after someone allegedly important shifts attention onto them. We, in the core team, further observed a growing tendency amongst academics to somewhat ‘fetishize’ workers’ perspectives",
+   "claim": "a core researcher's stated limit: the danger of hearing workers only through institutional attention, and academics' tendency to fetishize workers' perspectives",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2025-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 18c0bc55868d5db8…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "¶ 'Celebrating the launch of the Data Workers Inquiry Project'",
+   "quote": "The project is a global and radically participatory research initiative that lets data workers themselves become community researchers. It is led by Weizenbaum Institute researcher and our close collaborator, Dr. Milagros Miceli.",
+   "claim": "SUPERRR: a global, radically participatory initiative led by Milagros Miceli",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: data workers' own research in their workplaces",
+   "date": "2026-01-21 (date under the title)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 e22a58bb8634930e…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "¶ 'Celebrating …' ¶2",
+   "quote": "the initiative doesn’t reduce data workers to research subjects but empowers them to be community researchers by providing them with fair wages, a methodology, and a platform to conduct their own individual inquiries.",
+   "claim": "the initiative pays the community researchers fair wages and gives them a method and a platform",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2026-01-21 (date under the title)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 e22a58bb8634930e…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "¶ 'Celebrating …' ¶2 s3",
+   "quote": "working in a job where he and other workers impersonate an AI sex chatbot",
+   "claim": "an inquiry by a worker who, with others, impersonates an AI sex chatbot",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers who perform as the machine",
+   "date": "2026-01-21 (date under the title)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 e22a58bb8634930e…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "SEPTEMBER – Organizing the Data Workers Transnational Assembly in Berlin",
+   "quote": "Most data workers have to sign Non-Disclosure Agreements that prohibit them from speaking about their projects or the tasks that they completed, making it almost impossible to prove their work experience and expertise",
+   "claim": "most data workers sign NDAs that bar them from speaking of their tasks, making their expertise hard to prove",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-disclosure agreements and the risk of speaking",
+   "date": "2026-01-21 (date under the title)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 e22a58bb8634930e…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "SEPTEMBER – Organizing the Data Workers Transnational Assembly in Berlin ¶1",
+   "quote": "Together with the Data Workers Inquiry, we organized the Data Worker Transnational Assembly that took place in Berlin.",
+   "claim": "SUPERRR and the project organized the Data Worker Transnational Assembly in Berlin (September 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "organizing",
+   "date": "2026-01-21 (date under the title)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 e22a58bb8634930e…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "card title (TikTok, democracynow.org, video 1:26; URL not found)",
+   "quote": "The Distributed Artificial Intelligence Research Institute partners wi...",
+   "claim": "a Democracy Now video on TikTok: DAIR partners with … (title truncated on the card)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator, team and partners",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F64": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "card title (Facebook, DW Stories, video 22:12; URL not found)",
+   "quote": "Behind today's AI revolution stands an invisible workforce: millions of data ...",
+   "claim": "a DW Stories video: an invisible workforce of millions of data [workers] behind the AI revolution (title truncated on the card)",
+   "modality": "documented",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the hidden labor behind AI",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F65": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "PRESS RELEASE: The Distributed AI Research Institute (DAIR) and Weizenbaum Institute launch the Data Worker’s Inquiry repository and talk series.",
+   "claim": "DAIR and the Weizenbaum Institute launch the repository and a talk series",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, team and partners",
+   "date": "2024-07 (launch event 8 July, the year from B5)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F66": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "¶2",
+   "quote": "The Data Workers’ Inquiry is a community-based research project in which data workers from all over the world conduct individual inquiries. From reports and animations to powerful documentaries and zines, the Data Workers‘ Inquiry repository presents a multifaceted view of the realities confronted by data workers, ranging from psychological, physical, and sexual abuse, to resistance strategies and efforts to unionize.",
+   "claim": "the press release's definition, and the repository's range, from psychological, physical and sexual abuse to resistance and unionizing",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "outputs, formats and the repository",
+   "date": "2024-07 (launch event 8 July, the year from B5)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶1",
+   "quote": "The data workers who are tasked with the labor-intensive and emotionally taxing work of data labeling, content moderation, and other forms of data processing that enable AI systems to function, are often located in the Global Majority, precariously employed, and politically dispersed. The Data Workers’ Inquiry provides a platform for them to conduct their own research and describe issues in their own words.",
+   "claim": "data workers doing labeling, moderation and other processing that enables AI are often in the Global Majority, precarious and politically dispersed; the project gives them a platform for their own research",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "whose labor: data work that enables AI systems",
+   "date": "2024-07",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F68": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶2",
+   "quote": "This community-based research project has brought together 15 data workers from Kenya, Venezuela, Syria, Lebanon, and Germany, and diverse employment contexts, including various outsourcing companies and platforms. The data workers develop unique research questions, design and conduct their inquiries, and prepare a presentation format for their findings.",
+   "claim": "15 data workers from Kenya, Venezuela, Syria, Lebanon and Germany at launch; they set the questions, conduct the inquiries and choose the format",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: the inquirers and their countries",
+   "date": "2024-07",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F69": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶4, Milagros Miceli",
+   "quote": "We center their experiences and recognize their unique knowledge. We are proactive supporters, but the epistemic authority remains with the workers.",
+   "claim": "Miceli: the team supports; epistemic authority remains with the workers",
+   "modality": "attributed",
+   "kind": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "epistemic authority with the workers",
+   "date": "2024-07",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F70": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶5–6",
+   "quote": "The project repository is a valuable resource for researchers, journalists, and policymakers seeking first-hand accounts of data work … The findings are an urgent call to confront labor inequities and exploitative practices.",
+   "claim": "the repository serves researchers, journalists and policymakers; Dinika: the findings call for confronting labor inequities",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "outputs, formats and the repository",
+   "date": "2024-07",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F71": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "¶ launch",
+   "quote": "The launch event will take place online on Monday, July 8th, 8:00 AM PT / 11:00 AM EST / 5 PM CET.",
+   "claim": "the online launch event, Monday 8 July",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "period, launch and continuation",
+   "date": "2024-07 (the year from B5)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 9d19b69dc50ca82a…), whitespace-normalised"
+  },
+  "F72": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles Data Workers' Inquiry, Data Workers Inquiry, Data Worker's Inquiry; article-space search",
+   "quote": "raw wikitext (action=raw), title Data_Workers'_Inquiry, 2026-10-29T22:32:02Z: HTTP 404 … Wikipedia does not have an article with this exact name. … The pages \"Data Workers' Inquiry\" and '\"Data Workers' Inquiry\"' do not exist. One result: Content moderation.",
+   "claim": "Wikipedia has no article on the entity under any of three spellings and no redirect; article space names it once, in Content moderation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 e3896664a2f4c7d8…), B13-cm.wiki (sha256 d81d80cfe9f831da…), whitespace-normalised"
+  },
+  "F73": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content moderation, External links (wikitext line 102)",
+   "quote": "[https://data-workers.org/ Data Workers' Inquiry] a collaboration between [[Weizenbaum Institute]], [[Technische Universität Berlin]] and [[Distributed AI Research Institute|DAIR]]",
+   "claim": "Wikipedia's Content moderation article lists the project in its external links as a collaboration of the Weizenbaum Institute, TU Berlin and DAIR",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 e3896664a2f4c7d8…), B13-cm.wiki (sha256 d81d80cfe9f831da…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Data Workers' Inquiry — Data Workers' Inquiry - Data Workers' Inquiry",
+  "B2": "DAIR Institute — Data Workers' Inquiry | DAIR",
+  "B3": "Instagram — Data Workers’ Inquiry (@dataworkersinquiry) • Instagram photos and videos",
+  "B4": "YouTube·Weizenbaum-Institut — The Data Workers' Inquiry - Unveiling the Hidden Labor Behind AI",
+  "B5": "Tech Policy Press — Data Workers, In Their Own Voices | TechPolicy.Press",
+  "B6": "LinkedIn — Data Workers' Inquiry - LinkedIn",
+  "B7": "Weizenbaum Institut — Data Workers' Inquiry - Weizenbaum Institut",
+  "B8": "Bot Populi — The Data Workers' Inquiry - Bot Populi",
+  "B9": "Superrr — Data Work: A Year in RRReview - Superrr",
+  "B10": "TikTok·democracynow.org — The Distributed Artificial Intelligence Research Institute partners wi...",
+  "B11": "Facebook·DW Stories — Behind today's AI revolution stands an invisible workforce: millions of data ...",
+  "B12": "Data Workers' Inquiry — Press Release - Data Workers' Inquiry",
+  "B13": "Wikipedia — Data Workers' Inquiry (no article; named in Content moderation, External links)"
+ }
+}

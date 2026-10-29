@@ -1,0 +1,280 @@
+{
+ "row": "ilo-genai-exposure-index",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop from the four deposits admitted",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the index with the entity named; R, a relation the archive states between the index and an archive object; O, an archive category applied to the index or to a class the field and the census source for it (occupational exposure to generative AI: census kind and evidence_kind, B1, B9 Abstract, B4; task-level automation potential: census unit and method, B9 §2, B2, B4; the employment effects of AI, the census intersection gains-and-losses: B9 §2 and Conclusion, B5). A bare mention, a reference line or a citation is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every sentence of the archive matching any class pattern (17 sentences in 15 texts) was read at its passage, and the admitted deposits read at the sections named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 499,
+   "strata": [
+    "O"
+   ],
+   "reason": "Autonomous Semantic Warfare (Rex Fraction), §2.5: AI as 'the full vertical integration of semantic production', which 'increasingly automates the labor (generation replacing human semantic labor)', its resources controlled by 'the same small set of corporations': the archive's category (semantic labor) applied to AI's automation of labor, the class the census places the entity in (gains and losses: employment, and who directs). String-pass candidate O0001.",
+   "claims": [
+    "O499-01",
+    "O499-02"
+   ],
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 521,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ghost Meaning (Rex Fraction), ¶10–11: an account of AI job loss, the Citrini memo's 'intelligence displacement spiral', read as retrocausal canon formation, 'a scenario, not a prediction': the archive's category applied to an account of the employment effects of AI. Found by reading the class matches.",
+   "claims": [
+    "O521-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1155,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #521 (Lee Sharks, the same date, ¶20–21): an instance under #521 (S4); also hop candidate H0035",
+   "claims": [],
+   "instance_of": 521,
+   "cands": []
+  },
+  {
+   "dep": 520,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ghost Meaning: Research Program and Citational Atlas (Rex Fraction): the annotation of the Citrini memo, whose displacement crisis 'has a policy resolution (redistribute gains)', against the semantic crisis: the archive's reading of an account of AI job loss and of the distribution of its gains. Found by reading the class matches.",
+   "claims": [
+    "O520-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 533,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Groundskeeper's Treatise (Johannes Sigil), 'Labor bearing-cost': labor that platforms displace 'does not vanish. It is *relocated*', captured by the steward 'as proprietary infrastructure', 'the *enclosure of interpretive labor*'; the next paragraph names generative AI among intelligence-generating platforms: the archive's categories applied to technology's displacement of labor and to who captures it. Found by reading the class matches.",
+   "claims": [
+    "O533-01",
+    "O533-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/ilo-generative-ai-and-jobs-index-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis and query note for the entity's capture (OBS-79a0cee7426a, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/ilo-genai-exposure-index/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'ilo-genai-exposure-index'], organizing_question and intersections; questions.json; rendered aggregators/ilo-genai-exposure-index/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0) and the worked question that names it: its fields with their basis; where a field restates an evidence quote from a source ledgered in B (the paper B9, the brief B2, the Observatory B10) it is one lineage with that source; its lv_intersection is the archive's reading, ledgered as such",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37",
+    "LV-38",
+    "LV-39",
+    "LV-40",
+    "LV-41",
+    "LV-42",
+    "LV-43",
+    "LV-44",
+    "LV-45",
+    "LV-46",
+    "LV-47",
+    "LV-48",
+    "LV-49",
+    "LV-50"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    819
+   ],
+   "reason": "O-class candidate O0002: 'Cultural capital is replaced by semantic labor': a claim about value-forms in Guillory's frame, not about the employment effects of AI"
+  },
+  {
+   "dep": [
+    1669
+   ],
+   "reason": "O-class candidate O0003 (and hop H0044): replacing qualified with unqualified workers in the Nazi war economy; not AI and not the class"
+  },
+  {
+   "dep": [
+    18
+   ],
+   "reason": "read outside the string pass (class match): Hardt and Negri's communicative labor 'replacing industrial labor': not AI"
+  },
+  {
+   "dep": [
+    161
+   ],
+   "reason": "read outside the string pass: 'LLM exposure' and 'AI exposure' in the sense of a writer's use of AI, not occupational exposure"
+  },
+  {
+   "dep": [
+    185,
+    817,
+    1530
+   ],
+   "reason": "read outside the string pass: 'displaced reader labor, a DSL question' in attribution sharding: the reader's labor of traversal, not the employment effects of AI; the Self-Audit Module's family tables"
+  },
+  {
+   "dep": [
+    513,
+    716
+   ],
+   "reason": "read outside the string pass: reference-list entries (Acemoglu and Restrepo, 'Automation and New Tasks: How Technology Displaces and Reinstates Labor')"
+  },
+  {
+   "dep": [
+    772
+   ],
+   "reason": "read outside the string pass: 'displacing the commissioned labor' in a close reading of a transcript: DSL's own vocabulary on performed work, not the class"
+  },
+  {
+   "dep": [
+    24,
+    28,
+    31,
+    41,
+    42,
+    112,
+    152,
+    174,
+    208,
+    227,
+    229,
+    310,
+    349,
+    476,
+    502,
+    510,
+    514,
+    522,
+    532,
+    534,
+    535,
+    536,
+    543,
+    548,
+    556,
+    557,
+    558,
+    577,
+    578,
+    584,
+    589,
+    870,
+    1107,
+    1110,
+    1159,
+    1162,
+    1168,
+    1170,
+    1171,
+    1177,
+    1251,
+    1429,
+    1669,
+    1684,
+    1687,
+    1694
+   ],
+   "reason": "hop candidates (one citation hop, forward and back, from #499, #520, #521, #533): read by title and searched for the entity's strings and the three class patterns; no sentence of theirs names the entity or bears on a class (catalogues, registries, workplans, navigation maps, the prediction index and the seat map listing the admitted deposits; works of the archive citing or cited by them on other subjects); #1107, the recovered blog text of #499, does not carry §2.5's sentence"
+  }
+ ],
+ "hop": {
+  "from": [
+   499,
+   520,
+   521,
+   533
+  ],
+  "candidates": 47,
+  "admitted": 0,
+  "instances": [
+   1155
+  ]
+ },
+ "class_pass": "O-class: the string pass returned 3 candidates (#499, #819, #1669), #499 admitted; the 17 sentences matching any class pattern in 15 texts were read, admitting #521 (with #1155 grouped as an instance), #520 and #533",
+ "observations": "No archive text names the index, its title, its working-paper number, its DOI, NASK's name for it or its lead author (D 0, R 0); the archive's only ILO reference is a reference-list entry to another ILO brief (#702, #1203). The archive's bearing is ontological and by class only: AI integrating the means of semantic production and automating its labor under concentrated ownership (#499); displaced labor relocated and enclosed (#533); an account of AI job loss as a scenario with a redistributive resolution (#521, #520); and the archive's records of the entity, the Labor Vector census record (with its lv_intersection, the archive's reading against DSL, task-origin and user labor drag) and the capture. The instruments of labor direction (#771, #1392) bear on performed work and are not applied by any archive sentence to the classes; they enter through the record's lv_intersection.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 3,
+   "O_deposits": 3,
+   "H_candidates": 47
+  },
+  "class_sentences_read": 17,
+  "deposits_candidate": 15,
+  "deposits_admitted": 5,
+  "deposits_admitted_with_claims": 4,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 47,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 11,
+   "lv": 50,
+   "deposit": 6
+  }
+ }
+}

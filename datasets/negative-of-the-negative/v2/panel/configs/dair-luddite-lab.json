@@ -1,0 +1,48 @@
+{
+ "row": "dair-luddite-lab",
+ "address": "Luddite Lab",
+ "entity": "the Luddite Lab Resource Hub (Luddite Lab; the Luddite Lab at DAIR), labor.dair-institute.org, a project of the Distributed AI Research Institute (DAIR) that provides resources for unions, labor organizations and organizers fighting AI and automation at work: case studies, primers and a resource library, with strategies for worker-led governance and oversight of new technology; launched 20 May 2026; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/dair-luddite-lab/)",
+ "row_type": "C (a public entity on which the archive bears: an organizing resource hub; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bLuddite Lab\\b(?!s)",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\blabor\\.dair-institute\\.org\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "workers and unions fighting AI and automation at work",
+   "pattern": "\\b(workers?|unions?|unionists?|organi[sz]ers?|labou?r organi[sz]ations?|labou?r movements?)\\b[^.]{0,80}\\b(fight\\w*|resist\\w*|push(es|ing)? back|refus\\w*|contest\\w*|organi[sz]\\w* against|against)\\b[^.]{0,60}\\b(AI|automation|technolog\\w+)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the hub's home page: 'resources for unions, labor organizations, and worker-organizers fighting AI and automation at work'); B4 (About: 'organizers fighting AI and automation at work'; 'a range of organizing strategies which workers have used to push back'); B5 (Buttondown: 'workers who want to push back against AI and other automation technology'). The census's intersection 'worker-power' and evidence kind 'organizing resource' for the entity (LV record, census.json rows[slug == 'dair-luddite-lab'].intersections, .evidence_kind)."
+  },
+  {
+   "term": "worker-led governance and oversight of technology at work",
+   "pattern": "\\b(worker[- ]led governance|governance and oversight of (new )?technology|technology governance|worker oversight of (new )?technolog\\w+|workers? governing technolog\\w+)\\b",
+   "flags": "i",
+   "basis": "field: B1 and B4 ('strategies for worker-led governance and oversight of new technology'); B9 (Resource Library: 'draft contract language for technology governance'); B5 ('strategies for governance and oversight of technology at work'). The census's lv_intersection names it as 'workers' strategies for refusing and governing technology at work' (LV record, .lv_intersection)."
+  },
+  {
+   "term": "workplace surveillance and automation at work",
+   "pattern": "\\b(workplace surveillance|surveillance (of workers|at work)|industrial automation|bossware)\\b",
+   "flags": "i",
+   "basis": "field: B4 (About: unionists 'fighting–and winning–against industrial automation and workplace surveillance at work'). The census's intersection 'ai-governing-labor' for the entity (LV record, .intersections; its definition 'hiring, surveillance, scheduling, quotas, evaluation and discipline')."
+  },
+  {
+   "term": "pro-worker contract language and collective bargaining on AI",
+   "pattern": "\\b(contract language|collective bargaining|bargaining contract|bargaining table)\\b",
+   "flags": "i",
+   "basis": "field: B9 (Resource Library: 'Examples of pro-worker contract language related to automation and AI'; 'repositories and examples of draft contract language for technology governance'); B5 ('unions in the bargaining contract process'); B2 (AI Weekly: 'giving organizers different ground to stand on in collective bargaining'). The census's evidence 'contract_language' and the worked question 'negotiated-protections' that names the entity (LV record, .evidence.contract_language; questions.json)."
+  }
+ ],
+ "classes_note": "Four classes, each the census's own intersection or kind for the entity, stated by field sources at the loci given: (1) workers and unions fighting AI and automation at work (census intersection worker-power, evidence kind organizing resource; B1, B4, B5); (2) worker-led governance and oversight of technology at work (B1, B4, B5, B9; census lv_intersection); (3) workplace surveillance and automation at work (census intersection ai-governing-labor; B4); (4) pro-worker contract language and collective bargaining on AI (B9, B5, B2; census evidence contract_language, worked question negotiated-protections). The aliases are the entity's names (Luddite Lab, the Luddite Lab Resource Hub, the Luddite Lab at DAIR) with the plural 'Luddite Labs' excluded, since Luddite Labs is the homonym on card 6 (a San Diego developer-tools company), and the hub's host. DAIR is the operator, not an alias. The archive's instruments of labor direction bear on these classes only where a deposit applies them to a class above: the Directionality of Semantic Labor (DSL, #771; its canonical definition surface #1392), the directionality stack and user labor drag (the census's lv_intersection: 'None stated on DSL, task-origin or user labor drag'), and the semantic-labor line (#1439 AI labor movement, #1438 semantic strike, #1545 semantic proletariat). Admission by reading (§3.4): D where a deposit names the hub and says something of it; O-class where a sentence applies an archive category to a class above; a bare list, a keyword line, a citation-list entry or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Luddite Lab' (luddite-lab-aio-20261029, OBS-b6d27d08fa05, ADDR-bfa6267bb3bc), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1439).",
+ "hop_from": [
+  1439
+ ]
+}

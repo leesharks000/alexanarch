@@ -1,0 +1,3 @@
+Redaction, 2026-10-29
+
+B7-search.html embeds a Google API key in a script of the page as served (a YouTube page or search page). The key is replaced in the saved copy by [REDACTED-ACCESS-KEY], so the repository can be pushed past GitHub's secret scanning. Nothing else in the file is changed; the sha256 recorded in field.json is of the bytes as fetched, before this redaction.

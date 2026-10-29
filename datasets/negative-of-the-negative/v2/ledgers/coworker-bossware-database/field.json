@@ -1,0 +1,1326 @@
+{
+ "row": "coworker-bossware-database",
+ "address": "Bossware and Employment Tech Database",
+ "addresses": [
+  "Bossware and Employment Tech Database"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked; the report's two-column text held to runs within one column), the Wikipedia response summary, or the card's title and snippet for the cards not reached; 56/56 verified by script; third-party pages quoted only in short spans; the database's table quoted only at three rows, those of products the composition names whose status bears on the delta",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the database page, which is also the census's own page; B2 Vanderbilt Law School's post on another study; B3 a video post on Facebook, URL not found; B4 a talk on YouTube, HTTP 429; B5 the New York Times, URL not found; B6 a video on YouTube, HTTP 429; B7 a short on YouTube, fetched, title only; B8 a short, URL not found); 'own_page', the census's own page T did not surface (B9, the accompanying report, copied from the census's saved copy; the census's other own page, the database page, is card B1, carried once); 'wikipedia', no article (B10). Every census evidence item has basis 'operator' or 'observed': there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B9); publication and the research period (B1, B9); the accompanying report and Little Tech (B1, B9); scope (B1); the table (B1, B9); the assessment against worker-rights criteria (B1, B9); findings (B9); stated limits (B9); workers' stories (B1, B9); the operator (B1); the neighbour (B9); the term bossware (B3–B8); another study, of nine monitoring platforms (B2), which is its own entity and not the database's; the encyclopedia (B10). The census's self_description, published, scope, fields, story_invitation, research_period, emerged, privacy_share, finding_1, costs, low_wage_focus, limit, method, license, database_credit and berkeley_list quotes restate B1 and B9 (one lineage each with the page, the page keeping the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by the census's own extraction rule; B1-census.* the census's saved copy of the database page; B9-pdf.pdf and B9-pdf.txt the census's saved report and its pdftotext -layout text; B4-429.html and B6-429.html Google's bot-check responses; B10.* the Wikipedia responses with B10.txt a summary of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (also the census's own page coworker-bossware-database--database)",
+   "card": "home.coworker.org — Bossware and Employment Tech Database - Coworker",
+   "url": "https://home.coworker.org/worktech/",
+   "kind": "Overview card (the operator's database page, dated 'NOVEMBER 17, 2021 | COWORKER.ORG', with its embedded table of 635 product rows and 54 columns, and the report's download link); the census's own page, fetched by the census at https://home.coworker.org/?p=770, which redirects here",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1.html",
+     "sha256": "3da111faf8c8f673b9dfd2878743398d767b9c0a7de8f6236bde382def6262a3"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1.txt",
+     "sha256": "d65bf2a5da233188b723b2da8dcbbc5c1f5b1e577c51c71cce9f92298daf1541"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1-census.html",
+     "sha256": "463549f73929836e03c4954b22bc2fbf43f8c575d26b2d586b7ee7b450ee5cac"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1-census.txt",
+     "sha256": "d65bf2a5da233188b723b2da8dcbbc5c1f5b1e577c51c71cce9f92298daf1541"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:35:44Z",
+    "http": 200,
+    "url": "https://home.coworker.org/worktech/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1.html",
+    "raw_sha256": "3da111faf8c8f673b9dfd2878743398d767b9c0a7de8f6236bde382def6262a3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "census_copy": {
+     "src": "coworker-bossware-database--database",
+     "url": "https://home.coworker.org/?p=770",
+     "final_url": "https://home.coworker.org/worktech/",
+     "sha256": "463549f73929836e03c4954b22bc2fbf43f8c575d26b2d586b7ee7b450ee5cac",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:09Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B1-census.txt"
+     ],
+     "agrees": "same length (2,049,614 bytes); the raw bytes differ only in the page's randomised CSS custom-property ids (--wpr-bg-…); the extracted text is byte-identical to the census's .txt (cmp)"
+    }
+   },
+   "names_operator": "yes ('COWORKER.ORG', 'Coworker.org’s Bossware and Employment Tech database', 'Coworker.org is a global platform to advance change in the workplace.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL: the card's site and title name the operator's page, whose <title> is the card title; the census's own fetch of ?p=770 ends at this URL. Fetched once, fresh, with the census's agent string; the census's saved copy is copied beside it (B1-census.*) and agrees in text. Carried once, as a card, since card 1 and the census's own page are one page. The card's snippet ('Database: Coworker.org Bossware and Employment Tech (>550 labor tech products). Products & Capabilities: Abeja Insight (AI/IoT retail analytics); ActivTrak (pro...') is not the page's text: neither 'Products & Capabilities' nor '>550' occurs in B1.txt; it reads as a summary of the page's opening and the table's first two rows (Abeja Insight for Retail, ActivTrak). Recorded, not resolved, and not ledgered as a field claim.",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Bossware and Employment Tech Database - Coworker",
+   "card_snippet": "Database: Coworker.org Bossware and Employment Tech (>550 labor tech products). Products & Capabilities: Abeja Insight (AI/IoT retail analytics); ActivTrak (pro...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Vanderbilt Law School — Bossware Is Spying on Workers and Sharing Their Data | Vanderbilt Law School | Vanderbilt University",
+   "url": "https://law.vanderbilt.edu/research-shows-bossware-spying-on-workers-and-sharing-their-data/",
+   "kind": "Overview card (Vanderbilt Law School news post, 27 May 2026, on the investigation of nine workplace monitoring platforms by Northeastern University's Khoury College, the Vanderbilt Policy Accelerator, UC Berkeley's Center for Consumer Law and Economic Justice and Columbia Law School's Center for Law and the Economy); another entity's study",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B2.html",
+     "sha256": "3e09c1c0b94ffd8cd5c44f45de7b809d1e435a6ef0f839df28f14be876f74a39"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B2.txt",
+     "sha256": "5785a927a4f745588d73821fc5f2298ac14bd510db55315e2baa357193cd9253"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:35:45Z",
+    "http": 200,
+    "url": "https://law.vanderbilt.edu/research-shows-bossware-spying-on-workers-and-sharing-their-data/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B2.html",
+    "raw_sha256": "3e09c1c0b94ffd8cd5c44f45de7b809d1e435a6ef0f839df28f14be876f74a39",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)"
+   },
+   "names_operator": "no (neither Coworker nor the database occurs in B2.txt)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title with the site (law.vanderbilt.edu); the page's <title> is the card title. The card's snippet ('Findings: 9 of 9 workplace monitoring platforms (Apploye, Deputy, Desklog, Hubstaff, Monitask, Buddy Punch, Time Doctor 2, Vericlock, When I Work) shared identi...') restates the page's 'Worker data shared' finding and its sample list; the label 'Findings:' is not the page's. The post does not name the database or Coworker.",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Bossware Is Spying on Workers and Sharing Their Data | Vanderbilt Law School | Vanderbilt University",
+   "card_snippet": "Findings: 9 of 9 workplace monitoring platforms (Apploye, Deputy, Desklog, Hubstaff, Monitask, Buddy Punch, Time Doctor 2, Vericlock, When I Work) shared identi...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Facebook·Ronan Farrow — Bossware Workplace Surveillance: 70% of U.S. Employers Track Workers",
+   "url": null,
+   "kind": "Overview card (a video post on Facebook, 2:56; unreachable: URL not found)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch 'Ronan Farrow Facebook \"Bossware\" \"70% of U.S. Employers Track Workers\"' (no facebook.com video result)",
+     "WebSearch '\"Bossware Workplace Surveillance\" \"70%\" employers track workers Ronan Farrow' restricted to facebook.com (one result, a TeamLogger page, not the post)"
+    ],
+    "note": "No URL for the post was found; the card's link in the registry is an opaque google.com/goto token. Nothing was fetched. A video card is admitted through its title and snippet (§3.1(a)); the card has no snippet, so its title is its only text."
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Bossware Workplace Surveillance: 70% of U.S. Employers Track Workers",
+   "card_snippet": null,
+   "card_note": "video, 2:56 (the registry's note)",
+   "note": "Title only."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "YouTube·media.ccc.de — Pwning Bossware for Fun and Ethics",
+   "url": "https://www.youtube.com/watch?v=YonqzeD5HA0",
+   "kind": "Overview card (a conference talk video, 8m, on YouTube; unreachable: HTTP 429, Google's bot check)",
+   "files": {
+    "B4-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B4-429.html",
+     "sha256": "3118c5a6d70c5c23e822e92124c0a58f13f443b54ffda09a0cdd0780a8be7b6f"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:35:46Z",
+      "url": "https://www.youtube.com/watch?v=YonqzeD5HA0",
+      "http": 429,
+      "sha256": "3118c5a6d70c5c23e822e92124c0a58f13f443b54ffda09a0cdd0780a8be7b6f",
+      "result": "redirected to https://www.google.com/sorry/index (Google's automated-traffic check), 3,271 bytes, saved as B4-429.html"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Pwning Bossware for Fun and Ethics\" media.ccc.de' (no result for the talk)",
+     "WebSearch 'Pwning Bossware for Fun and Ethics talk' (none)",
+     "WebSearch '\"Pwning Bossware\"' restricted to youtube.com (the video, watch?v=YonqzeD5HA0)"
+    ],
+    "note": "One fetch with the honest agent string returned Google's bot check. Not retried with another agent string or by any other route (brief, Labor addendum 4). The title stands as the card's only text (no snippet)."
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Pwning Bossware for Fun and Ethics",
+   "card_snippet": null,
+   "card_note": "video, 8m",
+   "note": "Title only; refused by bot check."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "The New York Times — Are ‘Bossware’ Tools Tracking You? - The New York Times",
+   "url": null,
+   "kind": "Overview card (a New York Times article; unreachable: URL not found)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch '\"Are 'Bossware' Tools Tracking You?\" New York Times' (no nytimes.com result)",
+     "WebSearch 'bossware tools tracking you' restricted to nytimes.com (the search proxy rejected the request, HTTP 400)",
+     "WebSearch 'nytimes.com \"bossware\" tools tracking you wirecutter OR article 2025' (none)",
+     "WebSearch (extended) '\"Are 'Bossware' Tools Tracking You\"' (no nytimes.com result; syndicated copies at dnyuz.com dated 2026/03/01 and thestar.com.my 2026/03/03, and an X post quoting it)"
+    ],
+    "note": "No nytimes.com URL was found. Copies of the article on other hosts were not used: a fetch of one (dnyuz.com) was refused by the session's permission classifier as walled content from a copy, and was not pursued; a fetch of onenewspage.com's listing returned HTTP 404 and no article link. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (snippet only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Are ‘Bossware’ Tools Tracking You? - The New York Times",
+   "card_snippet": "Definition: \"Bossware\" refers to technology and AI tools used by managers to supervise, surveil, and track employee habits, output, and biometrics across indust...",
+   "card_note": null,
+   "note": "Title and snippet only. The snippet's 'Definition:' label reads as the card's own formatting."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "YouTube·Bloomberg Originals — How Bossware is Watching While You Work",
+   "url": "https://youtube.com/watch?v=rLjZ6mbodcE",
+   "kind": "Overview card (a video, 8m, on YouTube; unreachable: HTTP 429, Google's bot check)",
+   "files": {
+    "B6-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B6-429.html",
+     "sha256": "76f91e42fa193253e0b89d0de8e411289bebfe01c48899d962cde6bd83513f91"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:35:47Z",
+      "url": "https://youtube.com/watch?v=rLjZ6mbodcE",
+      "http": 429,
+      "sha256": "76f91e42fa193253e0b89d0de8e411289bebfe01c48899d962cde6bd83513f91",
+      "result": "redirected to https://www.google.com/sorry/index, 3,260 bytes, saved as B6-429.html"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"How Bossware is Watching While You Work\" Bloomberg Originals YouTube' (none)",
+     "WebSearch '\"How Bossware is Watching While You Work\"' restricted to youtube.com (the video, watch?v=rLjZ6mbodcE)"
+    ],
+    "note": "One fetch, refused by bot check; not retried. Title only (no snippet)."
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "How Bossware is Watching While You Work",
+   "card_snippet": null,
+   "card_note": "video, 8m",
+   "note": "Title only; refused by bot check."
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "YouTube·Kyla Scanlon — What's the Deal with Bossware?",
+   "url": "https://www.youtube.com/shorts/Kwz4tHUjWKQ",
+   "kind": "Overview card (a short video, 2:32, on YouTube; the page fetched, its text a script shell)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B7.html",
+     "sha256": "11b51c2465b72f82f3ee044c7d436126ba786ce51f5e2bb25e331144a3bc54e8"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B7.txt",
+     "sha256": "ca3ac6566a3af61b9276534daa1675d256f0184a30a55cdf3bc7a2ed267b0829"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:35:48Z",
+    "http": 200,
+    "url": "https://www.youtube.com/shorts/Kwz4tHUjWKQ",
+    "raw": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B7.html",
+    "raw_sha256": "11b51c2465b72f82f3ee044c7d436126ba786ce51f5e2bb25e331144a3bc54e8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B7.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "note": "HTTP 200, but the extracted text (scripts stripped) is YouTube's footer only. The page's script data carries the title, 'What’s the Deal with Bossware?', and the label 'What’s the Deal with Bossware? @KylaScanlon 4 months ago' (B7.html), confirming the card. No transcript was fetched. Admitted through its title (no snippet)."
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "What's the Deal with Bossware?",
+   "card_snippet": null,
+   "card_note": "video, 2:32",
+   "note": "URL found by WebSearch on the title restricted to youtube.com. Title only."
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "YouTube·PDQ — Is your boss watching you right now? 👁️ #bossware #privacy #worklife",
+   "url": null,
+   "kind": "Overview card (a short video, 1:18; unreachable: URL not found)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch 'PDQ \"Is your boss watching you right now?\" #bossware YouTube shorts' (none)",
+     "WebSearch '\"Is your boss watching you right now\"' restricted to youtube.com (one video, 'Corporate Spyware - Is Your Boss Watching You Right Now?', watch?v=pWpch45oSeE: a different title, channel not shown, not taken as the card)",
+     "WebSearch 'PDQ youtube shorts bossware privacy worklife \"Is your boss watching you\"' (none)"
+    ],
+    "note": "The card's video was not found; the one candidate's title differs from the card's, so it was not fetched as the card. Title only (no snippet)."
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "bossware-and-employment-tech-database-aio-20261029",
+     "card": 8
+    }
+   ],
+   "card_title": "Is your boss watching you right now? 👁️ #bossware #privacy #worklife",
+   "card_snippet": null,
+   "card_note": "video, 1:18",
+   "note": "Title only."
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the census's own page coworker-bossware-database--little-tech-report (not surfaced by T)",
+   "card": "home.coworker.org — Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power (PDF, 73 pages)",
+   "url": "https://home.coworker.org/wp-content/uploads/2021/11/Little-Tech-Is-Coming-for-Workers.pdf",
+   "kind": "own page (the accompanying report, Wilneida Negrón, PhD, © 2021 Coworker.org, CC BY-NC-ND 4.0), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B9-pdf.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B9-pdf.pdf",
+     "sha256": "4232b0e7fbc7ea08239bfad0842e1d833f0158a6b4e05e74f7282d7e6255429f"
+    },
+    "B9-pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B9-pdf.txt",
+     "sha256": "d44621da795a48b7a5552ab727e44bc4b6ee64f963a94299f49bacb9d64da2e4"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "coworker-bossware-database--little-tech-report",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:10Z",
+    "http": "200",
+    "url": "https://home.coworker.org/wp-content/uploads/2021/11/Little-Tech-Is-Coming-for-Workers.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B9-pdf.pdf",
+    "raw_sha256": "4232b0e7fbc7ea08239bfad0842e1d833f0158a6b4e05e74f7282d7e6255429f",
+    "census_sha256": "4232b0e7fbc7ea08239bfad0842e1d833f0158a6b4e05e74f7282d7e6255429f",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.html.gz (gunzipped; the bytes are a PDF, so saved as B9-pdf.pdf) and .txt (the census's pdftotext -layout text)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B9-pdf.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Coworker.org', '© 2021 by Coworker.org')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T, though B1 links it ('Download the Report'). The census's saved copy is intact (sha256 matches), so it was copied and not refetched. The text is two-column (pdftotext -layout): quotes are held to runs within one column, multi-line runs joined by ' … ' with each part checked."
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Bossware and Employment Tech Database (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Bossware_and_Employment_Tech_Database&action=raw",
+   "kind": "Wikipedia (no article for the database or its operator; no article text naming either)",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10.wiki",
+     "sha256": "0125f54471ac6cac7589e89c788fafe8902859fe3f8dde203674202da2318458"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10.html",
+     "sha256": "cc16bb5855e7271a6676646448161f0b4a2f6bc1c18128ede900f73d54769111"
+    },
+    "B10-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10-search.html",
+     "sha256": "7596bfb67325ece3354aad331177dd603f2f080a5404c37039b361220e8f7acd"
+    },
+    "B10-operator.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10-operator.wiki",
+     "sha256": "f5c281a70d3c50f4442439f01a0b34fce6e8f5ddefdf28df2f13f10fc51314a1"
+    },
+    "B10-search2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10-search2.html",
+     "sha256": "52c39512e77172a2618b04a12777f985d3cb84238977470bf7770dd3fb1e0e84"
+    },
+    "B10-search3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10-search3.html",
+     "sha256": "25e23ac55336b7cb23ae8bb5b7ec97a145839dc9e3e79bd6d3155892af4285c4"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10.txt",
+     "sha256": "5ce02788a98b2a5d8761cc1de405f55d805a46e939ddfcc0416504797e4d0c91"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:38:52Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Bossware_and_Employment_Tech_Database&action=raw&redirect=no",
+      "http": 404,
+      "sha256": "0125f54471ac6cac7589e89c788fafe8902859fe3f8dde203674202da2318458",
+      "file": "B10.wiki"
+     },
+     {
+      "at": "2026-10-29T22:38:56Z",
+      "url": "https://en.wikipedia.org/wiki/Bossware_and_Employment_Tech_Database?redirect=no",
+      "http": 404,
+      "sha256": "cc16bb5855e7271a6676646448161f0b4a2f6bc1c18128ede900f73d54769111",
+      "file": "B10.html"
+     },
+     {
+      "at": "2026-10-29T22:38:59Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Bossware+and+Employment+Tech%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "sha256": "7596bfb67325ece3354aad331177dd603f2f080a5404c37039b361220e8f7acd",
+      "file": "B10-search.html"
+     },
+     {
+      "at": "2026-10-29T22:39:03Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Coworker.org&action=raw&redirect=no",
+      "http": 404,
+      "sha256": "f5c281a70d3c50f4442439f01a0b34fce6e8f5ddefdf28df2f13f10fc51314a1",
+      "file": "B10-operator.wiki"
+     },
+     {
+      "at": "2026-10-29T22:39:06Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Little+Tech+Is+Coming+for+Workers%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "sha256": "52c39512e77172a2618b04a12777f985d3cb84238977470bf7770dd3fb1e0e84",
+      "file": "B10-search2.html"
+     },
+     {
+      "at": "2026-10-29T22:39:26Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Coworker.org%22+bossware&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "sha256": "25e23ac55336b7cb23ae8bb5b7ec97a145839dc9e3e79bd6d3155892af4285c4",
+      "file": "B10-search3.html"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/coworker-bossware-database-20261029/B10.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect for the database's name; none for Coworker.org; an article-space search for the database's name, the report's title, and 'Coworker.org' with bossware each returns no results. B10.txt is the summary of the responses' codes and notices."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶1 s3",
+   "quote": "Coworker.org’s Bossware and Employment Tech database compiles more than 550 labor-focused technology products that are changing our relationship to work.",
+   "claim": "the database defined by its operator: Coworker.org's compilation of more than 550 labor-focused technology products that are changing our relationship to work",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: Coworker.org's database of more than 550 labor-focused technology products",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Introduction, left column ¶3",
+   "quote": "Our research has identified more than 550 … products, which we’ve assembled into a … searchable database and dubbed Little Tech;",
+   "claim": "the report: more than 550 products, assembled into a searchable database and dubbed Little Tech",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: Coworker.org's database of more than 550 labor-focused technology products",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, dateline",
+   "quote": "NOVEMBER 17, 2021 | COWORKER.ORG",
+   "claim": "the database page is dated 17 November 2021, by Coworker.org",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "publication and the research period",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, left column ¶1 s1",
+   "quote": "Our research, which ran from November 2020 … until May 2021, catalogued more than 550 … products (not the companies that created … them) that are currently interfacing with low-",
+   "claim": "the research ran from November 2020 to May 2021 and catalogued more than 550 products, not the companies that created them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and the research period",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, right column ¶2",
+   "quote": "Thirty-one percent of the products listed … emerged between 2020 and 2021; the rest … were developed between 2018 and 2020.",
+   "claim": "31% of the listed products emerged between 2020 and 2021; the rest were developed between 2018 and 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and the research period",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶1 s1–2",
+   "quote": "Could your boss be an app? Since 2018 we’ve seen a rise in the use of tech to manage the world’s labor force.",
+   "claim": "since 2018 a rise in the use of technology to manage the world's labor force",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope: the whole labor process, products and investors; AI, location tracking and biometrics",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶2",
+   "quote": "Little Tech Is Coming for Workers , an accompanying report, seeks to address the proliferation of these technologies and analyzes the ways they’re harming workers, labor standards, and the economy.",
+   "claim": "the accompanying report, Little Tech Is Coming for Workers, addresses the proliferation of these technologies and analyzes how they harm workers, labor standards and the economy",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the accompanying report and its name for the marketplace, Little Tech",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the report's download block",
+   "quote": "Little Tech is Coming for Workers A Framework for Reclaiming and Building Worker Power By Wilneida Negrón, PhD",
+   "claim": "the report's title and author: Little Tech is Coming for Workers: A Framework for Reclaiming and Building Worker Power, by Wilneida Negrón, PhD",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the accompanying report and its name for the marketplace, Little Tech",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, left column ¶3 and right column ¶1",
+   "quote": "Coworker’s analysis of more than 550 tech … products, companies, and investors reveals an … ecosystem of tech products, companies, and … investors we dub “Little Tech”; the unregulat- … ed marketplace of tech products that are col- … lecting and aggregating data about workers at … almost every step of the labor process",
+   "claim": "Little Tech defined: the unregulated marketplace of tech products, companies and investors collecting and aggregating data about workers at almost every step of the labor process",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the accompanying report and its name for the marketplace, Little Tech",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "p. 3, colophon",
+   "quote": "Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power, © 2021 by Coworker.org, is licensed under Attribution NonCommercial-NoDerivatives 4.0 International.",
+   "claim": "the report is © 2021 Coworker.org under CC BY-NC-ND 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the accompanying report and its name for the marketplace, Little Tech",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "p. 3, Acknowledgements ¶2",
+   "quote": "An extra special shoutout to Ayden Federline for meticulously and graciously researching and creating the database of employment tech products.",
+   "claim": "the database was researched and created by Ayden Federline",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the accompanying report and its name for the marketplace, Little Tech",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶4 s1",
+   "quote": "In the database you’ll find companies — and their products and investors — that touch every part of the labor process, from hiring to productivity monitoring and more.",
+   "claim": "scope: companies, their products and investors, touching every part of the labor process from hiring to productivity monitoring",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope: the whole labor process, products and investors; AI, location tracking and biometrics",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶4 s2",
+   "quote": "Organized by category, type, and date founded, the database covers products that use technology like AI, location tracking, and biometrics to manage employees and collect their data — often without their knowledge.",
+   "claim": "the database covers products that use AI, location tracking and biometrics to manage employees and collect their data, often without their knowledge",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "scope: the whole labor process, products and investors; AI, location tracking and biometrics",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, ¶5",
+   "quote": "Use the table and the filters below to learn more about the companies behind this emerging trend:",
+   "claim": "purpose: to learn about the companies behind the trend",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope: the whole labor process, products and investors; AI, location tracking and biometrics",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, p. 24, the four areas",
+   "quote": "1. Workplace performance, productivity monitoring 2. Workplace safety 3. Workplace benefits, health, and well-being 4. Labor, job market, and workplace optimization",
+   "claim": "the products are categorized in four areas: performance and productivity monitoring; safety; benefits, health and well-being; labor, job market and workplace optimization",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, p. 26, left column ¶1",
+   "quote": "Based on this taxonomy, we found that most … products are either trying to promote work- … place safety (40%) or optimize the functioning … of the labor markets (38%).",
+   "claim": "most products promote workplace safety (40%) or optimize the functioning of labor markets (38%)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table, row 'HireVue AI Facial Recognition' (Product Name through Type)",
+   "quote": "HireVue AI Facial Recognition HireVue, Inc https://www.hirevue.com/ HireVue's Hiring Intelligence Platform claims to deliver the best talent, faster, with video interviews and AI-driven pre-hire assessments No Labor Market Optimization App or Software",
+   "claim": "the table's HireVue row: HireVue AI Facial Recognition, video interviews and AI-driven pre-hire assessments, category Labor Market Optimization",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table, row 'HireVue AI Facial Recognition' (Current Business Goals, end, and Status)",
+   "quote": "Their behavior, intonation, and speech is fed to an algorithm that assigns certain traits and qualities Discontinued",
+   "claim": "the HireVue row: job seekers' behavior, intonation and speech fed to an algorithm that assigns traits; status Discontinued",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table, row 'Amazon.com - Fulfilment Center WiFi Tracking' (Product Name through Status)",
+   "quote": "Amazon.com - Fulfilment Center WiFi Tracking Amazon.com Inc https://www.amazon.com/ Amazon is an international e-commerce website for consumers, sellers, and content creators Yes Workplace Safety Hardware Hourly, non-management * Gives Amazon a way to track workers’ locations inside warehouses so they can develop better social distancing and cleanliness plans Discontinued",
+   "claim": "the table's Amazon WiFi Tracking row: emerged during Covid-19, Workplace Safety, hardware tracking workers' locations in warehouses for social distancing; status Discontinued",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table header and instruction",
+   "quote": "Click the \"+\" next to the product name to expand the table.",
+   "claim": "data access: a table expanded row by row on the page",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the table: categories, products and their status",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table header, columns 30–32",
+   "quote": "Informed consent obtained Can the worker access and interpret their own data? Can the worker correct incorrect data?",
+   "claim": "each product is assessed on informed consent and on whether the worker can access, interpret and correct their data",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the assessment of each product's data practices against worker-rights criteria",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table header, columns 37–40",
+   "quote": "Grievance mechanism Forced use of tool Discrimination potential Right to freedom of association",
+   "claim": "each product is assessed on grievance mechanism, forced use, discrimination potential and freedom of association",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the assessment of each product's data practices against worker-rights criteria",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Economic Drivers and Political Context, p. 33, left column",
+   "quote": "Only 35% of the products share any information on privacy policy and data sharing arrangements.",
+   "claim": "only 35% of the products share any information on privacy policy and data sharing arrangements",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the assessment of each product's data practices against worker-rights criteria",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, p. 26, left column ¶3",
+   "quote": "Central to our analysis was needing to move … beyond a privacy-only framework and begin",
+   "claim": "the analysis moves beyond a privacy-only framework to the risks each product poses to workers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the assessment of each product's data practices against worker-rights criteria",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 1 (heading)",
+   "quote": "1. The current proliferation of tech products has the potential to continue eroding labor standards and weaken worker voice and worker power, while also increasing the potential for discrimination and other harms.",
+   "claim": "finding 1: the proliferation of these products has the potential to keep eroding labor standards and weakening worker voice and power, and raises the potential for discrimination and other harms",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 1, left column bullet 1",
+   "quote": "they are contributing to the ongoing … reduction of labor standards,5 continu- … ing to shift the costs of production onto … workers6, and fissuring labor markets.7",
+   "claim": "the products contribute to the reduction of labor standards, continue to shift the costs of production onto workers, and fissure labor markets",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 1, right column bullet 3",
+   "quote": "Accelerating the commodification of … low-wage workers’ data, particularly",
+   "claim": "the products accelerate the commodification of low-wage workers' data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 2 (heading)",
+   "quote": "2. A historic amount of private capital is contributing to the proliferation of tech products to be used in the workplace and in the labor markets.",
+   "claim": "finding 2: a historic amount of private capital drives the proliferation of these products",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Table of Contents, p. 67 entry",
+   "quote": "Low-wage workers must navigate scientifically questionable hiring … and background check technologies.",
+   "claim": "low-wage workers must navigate scientifically questionable hiring and background check technologies",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion, left column ¶1 s1–2",
+   "quote": "This report explores the implications of more … than 550 technology products that have … appeared in the workplace and job markets … during the pandemic.",
+   "claim": "the report explores the implications of more than 550 products that appeared in the workplace and job markets during the pandemic",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: labor standards, worker voice and power, costs shifted onto workers",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, left column ¶2",
+   "quote": "note that the database is not exhaustive, … and we omitted or overlooked hundreds … more products that were still emerging or in … development as well as non-U.S. products. … We stopped collecting information once … we felt we had sufficient evidence of the … pervasiveness of Little Tech as well as a",
+   "claim": "the database is not exhaustive: hundreds of emerging or in-development products and non-U.S. products were omitted or overlooked, and collection stopped once there was sufficient evidence of pervasiveness",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: not exhaustive, product level, public documents",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, footnote 2",
+   "quote": "Please note that we do omit from this analysis smaller Big Tech companies, such as Twitter, Airbnb, Uber, Lyft, DoorDash, InstaCart, GrubHub, Care.com, and Handy, as we developed the database at the product and not company level, and we were looking at products that had emerged in the workplace in the past one to two years.",
+   "claim": "the database omits smaller Big Tech companies (Twitter, Airbnb, Uber, Lyft, DoorDash and others), being built at the product level and on products of the past one to two years",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: not exhaustive, product level, public documents",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "footnote 66",
+   "quote": "Investor information was obtained from Crunchbase. For app permissions and hardware usage data, we have relied on the data available in the Google Play store for Android devices. In assessing the privacy implications of a product, we have relied on publicly accessible privacy statements, terms of service documents, and public impact assessments.",
+   "claim": "method: investors from Crunchbase, app permissions from the Google Play store, privacy from public privacy statements, terms of service and impact assessments",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: not exhaustive, product level, public documents",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 5, right column ¶1",
+   "quote": "context for how these technologies are actu- … ally implemented in the workplace (rather than … relying on the products’ stated use/purposes … and business goals).",
+   "claim": "workers' reports would give context on how the technologies are actually implemented, beyond the products' stated uses and business goals",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: not exhaustive, product level, public documents",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, left column ¶1 s2",
+   "quote": "report primarily discusses the experience of … low-wage and hourly workers, because these",
+   "claim": "the report primarily discusses low-wage and hourly workers",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: not exhaustive, product level, public documents",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header, worker invitation",
+   "quote": "are you a worker who interacts with any of the tech in our database? … Click here to share your story with our team .",
+   "claim": "workers who interact with the database's technology are invited to share their stories",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers' stories and what they would supply",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Executive Summary, finding 5 (heading)",
+   "quote": "5. Listing, classifying, and analyzing Little Tech’s direct harms can build worker voice and power and strengthen regulatory efforts.",
+   "claim": "finding 5: listing, classifying and analyzing Little Tech's direct harms can build worker voice and power and strengthen regulation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "workers' stories and what they would supply",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer, the operator's statement",
+   "quote": "Coworker.org is a global platform to advance change in the workplace.",
+   "claim": "the operator: Coworker.org, a global platform to advance change in the workplace",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: Coworker.org",
+   "date": "2021-11-17 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d65bf2a5da233188…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The Scope of the Study, p. 26, left column ¶2",
+   "quote": "UC Berkeley Labor Center’s list in their report",
+   "claim": "the data points collected match those on the UC Berkeley Labor Center's list",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: the UC Berkeley Labor Center's list",
+   "date": "2021 (the report, © 2021; published with the database 2021-11-17)",
+   "quote_ok": true,
+   "checked_against": "saved text B9-pdf.txt (sha256 d44621da795a48b7…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "Definition: \"Bossware\" refers to technology and AI tools used by managers to supervise, surveil, and track employee habits, output, and biometrics across indust...",
+   "claim": "bossware defined: technology and AI tools managers use to supervise, surveil and track employee habits, output and biometrics",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (cite_list n=5, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "How Bossware is Watching While You Work",
+   "claim": "bossware watches people while they work (a video's title)",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (cite_list n=6, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F42": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "Bossware Workplace Surveillance: 70% of U.S. Employers Track Workers",
+   "claim": "70% of U.S. employers track workers (a video post's title; no source given)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (cite_list n=3, data/EA-WG-CAPTURES-01.json)",
+   "note": "the figure's source is not on the card; the post was not reached"
+  },
+  "F43": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "Pwning Bossware for Fun and Ethics",
+   "claim": "a talk on breaking into bossware, for fun and ethics",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (cite_list n=4, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (and the page's script data)",
+   "quote": "What’s the Deal with Bossware?",
+   "claim": "a short explainer asking what bossware is",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "about 2026-06 (the page's '4 months ago' on 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "the card's title (cite_list n=7) and B7.html's script data"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "Is your boss watching you right now? 👁️ #bossware #privacy #worklife",
+   "claim": "a short video asking whether the viewer's boss is watching",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the term bossware, in press and video",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (cite_list n=8, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F46": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1 s1",
+   "quote": "A new investigation finds that workplace monitoring platforms are systematically sharing personal data about workers and online activity with hundreds of outside data brokers and big tech companies in ways that are not clearly disclosed and that, in some cases, may contradict the platforms’ own privacy policies.",
+   "claim": "an investigation finds workplace monitoring platforms systematically sharing workers' personal data and online activity with hundreds of outside data brokers and big tech companies, not clearly disclosed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "dateline",
+   "quote": "May 27, 2026, 12:47 PM",
+   "claim": "the post is dated 27 May 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1 s2",
+   "quote": "The researchers examined nine widely used workplace monitoring platforms — Apploye, Deputy, Desklog, Hubstaff, Monitask, Buddy Punch, Time Doctor 2, Vericlock, and When I Work, tracking how each app collects and shares worker data in practice.",
+   "claim": "the sample: nine workplace monitoring platforms, Apploye, Deputy, Desklog, Hubstaff, Monitask, Buddy Punch, Time Doctor 2, Vericlock and When I Work",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2 s1",
+   "quote": "The report was authored by researchers at the Khoury College of Computer and Information Sciences at Northeastern University; the Vanderbilt Policy Accelerator at Vanderbilt University; the Center for Consumer Law and Economic Justice at UC Berkeley Law School; and the Center for Law and the Economy at Columbia Law School.",
+   "claim": "the study's authors are at Northeastern's Khoury College, the Vanderbilt Policy Accelerator, UC Berkeley's Center for Consumer Law and Economic Justice and Columbia's Center for Law and the Economy",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What Researchers Found, ¶1",
+   "quote": "by signing up as an employer, setting up bossware services for workers, then logging in as an employee.",
+   "claim": "method: the researchers signed up as an employer, set up the services for workers and logged in as an employee",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What Researchers Found, 'Worker data shared'",
+   "quote": "All (9 of 9) workplace monitoring platforms directly shared identifying worker data including first name, last name, email, and company to third parties. … The researchers recorded 121 unique instances of worker data being shared with companies including Facebook, Google, Microsoft, and AppLovin (a mobile advertising platform).",
+   "claim": "all nine platforms shared identifying worker data (first name, last name, email, company) with third parties, 121 unique instances",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What Researchers Found, 'Online activity shared'",
+   "quote": "The 9 workplace monitoring platforms in the sample shared information about workers’ online activities (such as IP address, device information, web pages visited, unique identifiers, etc.) to a total of 145 unique third-party domains",
+   "claim": "the nine platforms shared workers' online activity to 145 third-party domains",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What Researchers Found, 'Location tracking'",
+   "quote": "One third of the workplace monitoring platforms in the sample have features that track workers’ precise location at any time – even when the app is in the background or potentially when the worker is clocked out.",
+   "claim": "a third of the platforms can track workers' precise location at any time, even in the background or potentially when clocked out",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ quotation, Sitaraman",
+   "quote": "“‘Bossware’ is increasingly common in jobs of all kinds, and workers likely have no idea that their data is being systemically collected and distributed to unknown data brokers and tech companies,” said Ganesh Sitaraman, Director at Vanderbilt Policy Accelerator.",
+   "claim": "Sitaraman: bossware is increasingly common, and workers likely do not know their data is collected and distributed",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "A Call for Urgent Policy Action, ¶1",
+   "quote": "The report argues that protections currently in place to protect workers from employee surveillance, including sharing of their workplace data, are insufficient. … Key recommendations include banning the sale or sharing of worker data, prohibiting unlimited data retention, and barring collection of sensitive employee information.",
+   "claim": "the study finds protections insufficient and recommends banning the sale or sharing of worker data, unlimited retention and collection of sensitive information",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "another study: workplace monitoring platforms share workers' data (Northeastern, Vanderbilt, Berkeley, Columbia, 2026)",
+   "date": "2026-05-27 (the post)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 5785a927a4f74558…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Bossware_and_Employment_Tech_Database; title Coworker.org; article-space searches",
+   "quote": "raw wikitext, title Bossware_and_Employment_Tech_Database (action=raw, redirect=no), 2026-10-29T22:38:52Z: HTTP 404 … Wikipedia does not have an article with this exact name. … raw wikitext, title Coworker.org (the operator; action=raw, redirect=no), 2026-10-29T22:39:03Z: HTTP 404 … There were no results matching the query.",
+   "claim": "Wikipedia has no article on the database or on Coworker.org, no redirect, and no article text naming the database, its report, or Coworker.org with bossware",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 5ce02788a98b2a5d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "home.coworker.org — Bossware and Employment Tech Database - Coworker",
+  "B2": "Vanderbilt Law School — Bossware Is Spying on Workers and Sharing Their Data | Vanderbilt Law School | Vanderbilt University",
+  "B3": "Facebook·Ronan Farrow — Bossware Workplace Surveillance: 70% of U.S. Employers Track Workers",
+  "B4": "YouTube·media.ccc.de — Pwning Bossware for Fun and Ethics",
+  "B5": "The New York Times — Are ‘Bossware’ Tools Tracking You? - The New York Times",
+  "B6": "YouTube·Bloomberg Originals — How Bossware is Watching While You Work",
+  "B7": "YouTube·Kyla Scanlon — What's the Deal with Bossware?",
+  "B8": "YouTube·PDQ — Is your boss watching you right now? 👁️ #bossware #privacy #worklife",
+  "B9": "home.coworker.org — Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power (PDF, 73 pages)",
+  "B10": "Wikipedia — Bossware and Employment Tech Database (no article)"
+ }
+}

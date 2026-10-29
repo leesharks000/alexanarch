@@ -1,0 +1,1644 @@
+[
+ {
+  "id": "LV-01",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "the record's canonical name for the entity: Canaries Dashboard",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].name",
+  "quote": "Canaries Dashboard",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: the paper and the dashboard that extends it",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].name)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-02",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its other names: the dashboard's full title, the paper's title, and the bare phrase",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].aka",
+  "quote": "[\"AI Economic Indicators: Canaries Dashboard\", \"Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence\", \"Canaries in the Coal Mine\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: the paper and the dashboard that extends it",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].aka)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-03",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "the record's kind for the entity: a working paper and monthly-updated dashboard, one of the Lab's AI Economic Indicators",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].kind",
+  "quote": "working paper and monthly-updated dashboard, one of the Lab's AI Economic Indicators",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: the paper and the dashboard that extends it",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].kind)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "In collaboration with ADP Research, we summarize live labor market trends for a sample workers in firms using ADP payroll services.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F32",
+   "F33"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F32, F33): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-04",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "operator: the Stanford Digital Economy Lab with ADP Research; the paper by Brynjolfsson, Chandar and Chen",
+  "kind": "attribution",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].operator",
+  "quote": "Stanford Digital Economy Lab with ADP Research (paper by Erik Brynjolfsson, Bharat Chandar and Ruyu Chen)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator and the authors",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].operator)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "Stanford Digital Economy Lab and ADP Research. \"AI Economic Indicators: Canaries Dashboard.\"",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F36",
+   "F2"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F36, F2): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-05",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its intersection: the distribution of gains and losses",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].intersections",
+  "quote": "[\"gains-and-losses\"] — Distribution of gains and losses: wages, employment, workload, credit, ownership, and who captures productivity gains",
+  "kernel": true,
+  "const": true,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].intersections)",
+  "quote_check": "the field's value as JSON text, with the census's top-level intersections[gains-and-losses] text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-06",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its kind of evidence: an observed employment outcome",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].evidence_kind",
+  "quote": "[\"observed employment outcome\"]",
+  "kernel": true,
+  "const": true,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].evidence_kind)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-07",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its unit: monthly employment in a five-year balanced ADP sample by occupation, age, gender and exposure group",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].unit",
+  "quote": "monthly employment in a five-year balanced sample of firms using ADP payroll services, by occupation (over 730), age group, gender and AI-exposure group",
+  "kernel": false,
+  "const": false,
+  "lineage": "the data: ADP payroll records and the balanced sample",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].unit)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "We adopt the balanced sample approach of Brynjolfsson, Chandar, and Chen (2025) , including firms with 5 years of employment history in ADP.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F37"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F37): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-08",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "whose labor: the employment of workers in ADP firms matched to an occupation, grouped by age and occupational exposure",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].labor_object",
+  "quote": "the employment of workers in firms using ADP payroll services, matched to an occupation code, grouped by age and by their occupation's AI exposure",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].labor_object)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-09",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "who supplies the labor: workers in firms using ADP payroll services, through the payroll records",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].direction.supplies",
+  "quote": "workers in firms using ADP payroll services (the payroll records)",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].direction.supplies)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-10",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "who directs it: not recorded; the paper locates the change at the hiring margin without recording who decides",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].direction.directs",
+  "quote": "not recorded; the paper locates the change at the hiring margin ('reduced hiring of young workers') without recording who decides",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].direction.directs)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F8"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F8): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-11",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "who gains: costs as recorded (the 19% shortfall; adjustment through employment); who receives gains not recorded",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].direction.gains",
+  "quote": "costs as recorded: employment of young workers (22-25) in AI-exposed occupations stands 19% below where it would have been; adjustment runs through employment and base compensation shows no comparable adjustment; who receives gains is not recorded",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].direction.gains)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F6",
+   "F10"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F6, F10): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-12",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "method: ADP payroll data, a rolling balanced five-year sample, exposure matched through the BLS 2018 SOC crosswalk; descriptive indices and event-study regressions",
+  "kind": "function",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].method",
+  "quote": "high-frequency administrative payroll data from ADP, a balanced five-year firm sample rolled forward monthly, matched to AI-exposure measures (Eloundou et al. 2024 and the Anthropic Economic Index) through the BLS 2018 SOC crosswalk; descriptive employment indices and event-study regressions",
+  "kernel": false,
+  "const": false,
+  "lineage": "the data: ADP payroll records and the balanced sample",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].method)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "Using a sample of high-frequency administrative payroll data from ADP covering millions of U.S. workers through June 2026, we document six facts about the labor market following the widespread adoption of generative AI.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F4",
+   "F37"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F4, F37): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-13",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "coverage: the United States (ADP firms); employment indexed from November 2022; payroll data through June 2026; dashboard updated monthly, last 21 October 2026",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].coverage",
+  "quote": "{\"geography\": \"United States (firms using ADP payroll services)\", \"period\": \"employment indexed from November 2022 (ChatGPT's release); payroll data through June 2026 in the August 2026 paper; the dashboard updated monthly, last on 21 October 2026\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "the data: ADP payroll records and the balanced sample",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].coverage)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F4",
+   "F50"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F4, F50): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-14",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "count: 25,000 firms, 4.6 million matched workers, over 730 occupations, as of the dashboard launch",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].count",
+  "quote": "{\"value\": \"25,000 firms employing 4.6mm workers matched to an occupation code (November 2022), over 730 occupations; the paper: millions of U.S. workers\", \"as_of\": \"the dashboard launch (sample of the 5 years ending April 2026)\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "the data: ADP payroll records and the balanced sample",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].count)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "As of the Canaries Dashboard launch, our balanced sample of firms using ADP payroll services, spanning the 5 years ending in April 2026, consists of 25,000 firms. In November 2022, these firms employed 4.6mm workers successfully matched to an occupation code. This sample covers over 730 unique occupations.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F38"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F38): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-15",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "finding: no evidence of widespread, economy-wide job displacement",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].findings[0]",
+  "quote": "no evidence of widespread, economy-wide job displacement",
+  "kernel": false,
+  "const": false,
+  "lineage": "the six facts: displacement, the 19% gap, its widening, hiring, compensation",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].findings[0])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "We find no evidence of widespread, economy-wide job displacement.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F5"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F5): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-16",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "finding: young workers in exposed occupations 19% below where they would be; no comparable gap for experienced workers",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].findings[1]",
+  "quote": "employment of young workers (22-25) in AI-exposed occupations stands 19% below where it would be had it kept pace with less-exposed peers; experienced workers show no comparable gap",
+  "kernel": false,
+  "const": false,
+  "lineage": "the six facts: displacement, the 19% gap, its widening, hiring, compensation",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].findings[1])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "However, employment of young workers (ages 22–25) in AI-exposed occupations now stands 19% below where it would be had it kept pace with that of their less-exposed peers; experienced workers show no comparable gap.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F6"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F6): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-17",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "finding: declines where usage substitutes; flat or rising where it complements",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].findings[3]",
+  "quote": "declines concentrate where AI usage primarily substitutes for human tasks; where it complements workers, employment is flat or rising",
+  "kernel": false,
+  "const": false,
+  "lineage": "automation against augmentation",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].findings[3])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "Declines are concentrated in occupations where AI usage primarily substitutes for human tasks; where usage primarily complements workers, employment is flat or rising, especially for experienced workers",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F9"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F9): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-18",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "finding: early-career women contracting 4.5% a year against 2.5% for men; the gap driven by occupational composition",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].findings[5]",
+  "quote": "early-career women in the most-exposed quintile: employment contracting 4.5% a year since November 2022, against 2.5% for men; the gender gap is driven primarily by occupational composition",
+  "kernel": false,
+  "const": false,
+  "lineage": "gender",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].findings[5])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "In the most-exposed quintile, employment among early-career women has been contracting at 4.5% per year since the introduction of ChatGPT in November 2022, while employment for men of the same age is contracting at 2.5% per year.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F43",
+   "F44"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F43, F44): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-19",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its stated limit: early, descriptive indicators, not causal estimates",
+  "kind": "function",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].stated_limits[0]",
+  "quote": "early, descriptive indicators and not causal estimates",
+  "kernel": false,
+  "const": false,
+  "lineage": "the stated limit: descriptive and correlational, not causal",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].stated_limits[0])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "We interpret these facts as early, descriptive indicators—canaries in the coal mine—rather than causal estimates",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F13"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F13): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-20",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "its stated limits together: not causal; not representative; no entry and exit; attenuation; correlation",
+  "kind": "function",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].stated_limits",
+  "quote": "[\"early, descriptive indicators and not causal estimates\", \"the sample represents neither the entire U.S. labor market nor the universe of ADP firms\", \"the balanced sample shuts down firm entry and exit\", \"patterns attenuate when controlling for education, show some trends predating generative AI, and are more pronounced in the ADP sample than in national survey benchmarks\", \"the dashboard measures correlation\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "the sample's limits",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].stated_limits)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "Our sample represents neither the entire U.S. labor market nor the universe of firms using ADP payroll services.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F48",
+   "F49",
+   "F12",
+   "F47"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F48, F49, F12, F47): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-21",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "what it can answer: how employment trends differ by an occupation's automation versus augmentation ratio",
+  "kind": "function",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].answers[2]",
+  "quote": "how employment trends differ by an occupation's automation versus augmentation ratio of AI usage",
+  "kernel": false,
+  "const": false,
+  "lineage": "automation against augmentation",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].answers[2])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F41"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F41): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-22",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "what it cannot answer: whether AI exposure causes the employment change",
+  "kind": "function",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].does_not_answer[0]",
+  "quote": "whether AI exposure causes the employment change",
+  "kernel": true,
+  "const": false,
+  "lineage": "the stated limit: descriptive and correlational, not causal",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].does_not_answer[0])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F30",
+   "F47"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F30, F47): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-23",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "what it cannot answer: who directs the hiring decisions, or who receives the gains",
+  "kind": "function",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].does_not_answer[2]",
+  "quote": "who directs the hiring decisions, or who receives the gains",
+  "kernel": true,
+  "const": true,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].does_not_answer[2])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-24",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "the archive's reading: the automation-versus-augmentation grouping, borrowed from the Anthropic Economic Index, is where a usage measure of who directs the task meets an observed employment outcome; the resource reads it as correlation",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].lv_intersection",
+  "quote": "none stated. The archive's reading: the dashboard's automation-versus-augmentation grouping, borrowed from the Anthropic Economic Index, is where a usage measure of who directs the task meets an observed employment outcome; the resource itself reads it as correlation.",
+  "kernel": true,
+  "const": true,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].lv_intersection)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-25",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "lifecycle: active; updated monthly, last 21 October 2026; the divergence first documented August 2025, updated February 2026, revised 12 August 2026; an expanded, reweighted sample announced",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].lifecycle.detail",
+  "quote": "the dashboard updated monthly, last updated 21 October 2026; the paper first documented the divergence in August 2025, updated February 2026, revised 12 August 2026; an expanded and reweighted sample is announced",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and lifecycle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].lifecycle.detail)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "Last updated October 21, 2026. Results are updated monthly.",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F50",
+   "F51",
+   "F15",
+   "F16"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F50, F51, F15, F16): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-26",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "founded: August 2025, the paper's first version",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].founded",
+  "quote": "August 2025 (the paper's first version)",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and lifecycle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].founded)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "This divergence has widened steadily since we first documented it in August 2025.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F7",
+   "F21"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F7, F21): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-27",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "NOT a usage measure: its exposure and automation groupings come from Eloundou et al. (2024) and the Anthropic Economic Index",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].negative_tags[3]",
+  "quote": "NOT a usage measure: its exposure and automation groupings come from Eloundou et al. (2024) and the Anthropic Economic Index",
+  "kernel": false,
+  "const": false,
+  "lineage": "exposure and usage measures",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].negative_tags[3])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--dashboard",
+   "basis": "operator",
+   "quote": "We match the occupation-level ADP data to various measures of exposure: Eloundou et al. (2024) and the Anthropic Economic Index .",
+   "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+   "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+  },
+  "restates": [
+   "F39"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F39): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-28",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "NOT a finding of economy-wide displacement: it finds none",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].negative_tags[2]",
+  "quote": "NOT a finding of economy-wide displacement: it finds none",
+  "kernel": false,
+  "const": false,
+  "lineage": "the six facts: displacement, the 19% gap, its widening, hiring, compensation",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].negative_tags[2])",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "We find no evidence of widespread, economy-wide job displacement.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F5"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F5): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-29",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "relation: uses the Anthropic Economic Index, as an exposure measure and for its augmentation and automation ratios",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].relations[0]",
+  "quote": "{\"rel\": \"uses\", \"target\": \"anthropic-economic-index\", \"note\": \"as an AI-exposure measure and for its augmentation and automation ratios by occupation\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "exposure and usage measures",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].relations[0])",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "restates": [
+   "F39",
+   "F40"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F39, F40): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "LV-30",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "the census's organizing question, which the record answers for the entity",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "Who supplies the labor, who directs it, and who receives its gains — and what kind of evidence does this resource bring to that question?",
+  "kernel": true,
+  "const": true,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (organizing_question)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-31",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "in the worked question 'Which sources observe employment change, and which estimate exposure?': the entity as observed employment by age and exposure, monthly; the gap: no record establishes causation, and the two observed trackers differ",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "questions.json questions[id == 'observed-or-estimated']",
+  "quote": "Which sources observe employment change, and which estimate exposure? … observed: employment by age and AI exposure in ADP payroll records, monthly … No record establishes that exposure causes the employment change; the two observed trackers reach different readings of the same period.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/questions.json",
+  "quote_check": "within questions.json questions[id == 'observed-or-estimated'] (question, the resource's role, gap) (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-32",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "in the worked question 'Who receives the gains …?': the entity as costs observed against a counterfactual; the gap: no record measures the distribution of productivity gains",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "questions.json questions[id == 'who-gains']",
+  "quote": "Who receives the gains of labor performed with or for AI, and who bears the costs? … costs as observed: employment of young workers in exposed occupations against its counterfactual … No record in the census measures the distribution of productivity gains between workers, employers, platforms and model providers.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks: who supplies, who directs, who gains",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/questions.json",
+  "quote_check": "within questions.json questions[id == 'who-gains'] (question, the resource's role, gap) (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-33",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "what the census left unchecked: the PDF, the chart data, the February and August notes, the license",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].unchecked",
+  "quote": "[\"the paper's PDF (only its landing page was saved)\", \"the dashboard's chart data and its annualized results (JavaScript charts; 'Data' links not opened)\", \"the February 2026 update and the August 2026 notes from the authors\", \"the license of the data and the dashboard\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and lifecycle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].unchecked)",
+  "quote_check": "the field's value as its JSON text (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-34",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "license: not stated in the saved text",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].license",
+  "quote": "not stated in the saved text",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and lifecycle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].license)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "LV-35",
+  "dep": "LV",
+  "record": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/",
+   "label": "LV"
+  },
+  "claim": "data access: charts with 'Data' links; the paper as PDF; earlier versions by email",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'stanford-canaries'].data_access",
+  "quote": "the dashboard's charts, each with a 'Data' link; the paper as PDF; earlier versions of the paper on request by email",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and lifecycle",
+  "date": "2026-10-29",
+  "title": "Labor Vector meta-aggregator record: Canaries Dashboard (https://www.laborvector.org/aggregators/stanford-canaries/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/laborvector/data/labor-census/census.json (rows[slug == 'stanford-canaries'].data_access)",
+  "quote_check": "the field's value as loaded (whitespace-normalised)",
+  "entity": "stanford-canaries",
+  "surface": {
+   "url": "https://www.laborvector.org/aggregators/stanford-canaries/"
+  },
+  "basis": {
+   "src": "stanford-canaries--paper",
+   "basis": "operator",
+   "quote": "Email the Lab to request a previous version of the paper.",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+   "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+  },
+  "restates": [
+   "F17"
+  ],
+  "lineage_note": "restates the own page(s) or card ledgered in B (F17): one lineage with them (§3.6); the field source keeps the earliest date",
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the registry's entity for the capture: the Lab's dashboard with ADP Research, from the paper",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, findings[0]",
+  "quote": "The record's entity is the Stanford Digital Economy Lab's Canaries Dashboard with ADP Research, from the paper 'Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence'.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition carries the study in one bullet, at the grain of its subject",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, findings[0]",
+  "quote": "The composition carries the study in one bullet, at the grain of its subject (young workers' employment as an early indicator).",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the headline finding absent from the composition",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, findings[1]",
+  "quote": "THE FINDING ABSENT. The record's headline: employment of workers aged 22 to 25 in AI-exposed occupations stands 19% below where it would be had it kept pace with less-exposed peers, through reduced hiring, with no comparable gap for experienced workers and no evidence of economy-wide displacement.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the dashboard, its sample and its limits not composed",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, findings[2]",
+  "quote": "THE DASHBOARD AND ITS LIMITS ABSENT. The monthly dashboard (last updated 21 October 2026), its ADP sample and its own statement that the indicators are early, descriptive and not causal are not composed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the bare phrase a homonym of the study by construction; the question mark marks the title as a use of the idiom",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, findings[3]",
+  "quote": "THE ADDRESS. The bare phrase is a homonym of the study by construction; the paper's own question mark ('Canaries in the Coal Mine?') marks its title as a use of the idiom.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the name: canaries in the coal mine as an early signal",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading: the phrase an idiom before a title; the Overview reads it so, the paper a current use",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, reading",
+  "quote": "The phrase is an idiom before it is a paper's title, and the Overview reads it as the idiom, with the paper as a current use of it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the name: canaries in the coal mine as an early signal",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the idiom outranks the study, which survives as an example of the idiom's use",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, analysis",
+  "quote": "An idiom outranks the study named after it, which survives as an example of the idiom's use.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the record would be reached at the titled address or the Lab's name; the bare phrase gives the study as a figure of speech",
+  "kind": "prediction",
+  "modality": "hypothesis",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, analysis",
+  "quote": "The record would be reached at its title with its question mark or with the lab's name; the bare phrase gives the composition layer's account of the study as a figure of speech.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "a baseline: the census record landed the same day and no card cites it",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, q_kind",
+  "quote": "A baseline: the record landed on laborvector.org the same day (commit bf90841) and no card cites it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the record and the cards",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the name is also the idiom, and the composition gives that sense",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, q_kind",
+  "quote": "The name is also the idiom, and the composition gives that sense.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the name: canaries in the coal mine as an early signal",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-11",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the Lab named; no author; no identifier; the paper's page cited as card 1",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, per_note",
+  "quote": "The Stanford Digital Economy Lab named; no author; no identifier; the paper's page cited (card 1).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-12",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the bullet keeps the record's frame, 'early indicators', makes no causal or displacement claim, and carries neither the findings nor the sample limits",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, per_dim.read.notes",
+  "quote": "Claim boundary present beneath the gate: 'early indicators' is the record's own frame ('early, descriptive indicators—canaries in the coal mine—rather than causal estimates') and the bullet makes no causal or displacement claim; the findings (no economy-wide displacement; workers 22-25 in exposed occupations 19% below trend; through hiring) and the sample limits are not carried.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "CAP-1-13",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the generic sense is the target's own frame turned outward, not an inversion: the idiom is not carried to devalue the study",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "canaries-in-the-coal-mine-aio-20261029, per_dim.read.notes",
+  "quote": "The record's own title borrows the idiom, so the generic sense is the target's own frame turned outward; this is recorded here, and not as an inversion, since the idiom is not carried to devalue the study.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the name: canaries in the coal mine as an early signal",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry canaries-in-the-coal-mine-aio-20261029 (OBS-8527c06bd274, AXN:0AEA.CAPTURE.🌆🕓🌒🏛️🃏◀️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/canaries-in-the-coal-mine-aio-20261029/"
+  },
+  "quote_ok": true
+ },
+ {
+  "id": "O716-01",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "the class's channels named (labor displacement, capability projection, welfare): what they measure; a distinct channel where labor remains and the value tied to provenance is extracted, extraction without attribution",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.2 ¶ 'AI economics research focuses primarily on labor displacement'",
+  "quote": "AI economics research focuses primarily on labor displacement (Acemoglu and Restrepo 2019), capability projection (Eloundou et al. 2023), and welfare estimation (Brynjolfsson, Li, and Raymond 2023). These frameworks measure which jobs AI eliminates, what tasks it can perform, and what consumer surplus it generates. PER identifies a distinct channel: even when human labor *remains* (the author's work is used), the economic value tied to provenance — reputation, traffic, citation credit, contractual rights — is extracted by the system. This is not displacement; it is extraction without attribution.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the provenance channel: extraction without attribution",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "offset": 5283,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "the employment effects of AI (labor-market impact, displacement) (basis: field B1 title and abstract, B11, B1-pdf; census intersection 'gains-and-losses', evidence kind 'observed employment outcome')",
+  "quote_ok": true
+ },
+ {
+  "id": "O716-02",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "a fourth channel beside the class's three: compositional authority transfer, the rate at which AI synthesis captures value from authors by stripping attribution",
+  "kind": "stipulation",
+  "modality": "definition",
+  "strata": [
+   "O"
+  ],
+  "locus": "§5.1 ¶ 'Existing AI-economics research addresses three channels'",
+  "quote": "Existing AI-economics research addresses three channels: labor displacement, capability projection, and welfare estimation. PER addresses a fourth: **compositional authority transfer** — the rate at which AI synthesis captures value from human authors by stripping the attribution that would otherwise carry economic weight.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the provenance channel: extraction without attribution",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "offset": 11577,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "the employment effects of AI (labor-market impact, displacement) (basis: field B1 title and abstract, B11, B1-pdf; census intersection 'gains-and-losses', evidence kind 'observed employment outcome')",
+  "quote_ok": true
+ }
+]

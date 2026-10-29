@@ -1,0 +1,147 @@
+{
+ "row": "coworker-bossware-database",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Bossware and Employment Tech Database with the entity named (its name, Coworker.org, Little Tech, worktech, its report's author); R, a relation the archive states between the database and an archive object; O, an archive category applied to the database or to a class the field and the census source for it (bossware, the technology through which employers monitor and manage workers: B1, B9, B2, B5, census intersections[0]; the collection and commodification of workers' data: B1, B9, B2, census lv_intersection; hiring, recruitment and screening technology: B1 scope and table, B9 taxonomy and contents, census intersections[0]). A bare mention, a list, a citation-list entry or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every paragraph of the archive matching any class pattern was read (92 matches in 4 texts, 81 of them in the capture registry file itself), and the archive's labor instruments (#771, #1392) were read at the loci the classes note names.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 747,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Funnel as Capital (ERS-002): the archive's categories of screening as production (calibration intelligence, the recursive accumulation dynamic, Aggregate Applicant Reliance Cost) applied by the archive itself to technical hiring platforms and to AI interview platforms, HireVue named (§VIII), a class the field sources for the entity (hiring, recruitment and screening technology: the database's category 'Labor Market Optimization', its HireVue row; the report's taxonomy). String-pass candidates O0002–O0005; the paragraph of §VIII read whole, the abstract, §I, §II and §IX read for the definition and the limits",
+   "claims": [
+    "O747-01",
+    "O747-02",
+    "O747-03",
+    "O747-04",
+    "O747-05",
+    "O747-06",
+    "O747-07"
+   ],
+   "cands": [
+    "O0002",
+    "O0003",
+    "O0004",
+    "O0005"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/bossware-and-employment-tech-database-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER notes for the entity's capture (OBS-ac3acd79e5f3, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/coworker-bossware-database/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'coworker-bossware-database'], organizing_question and intersections; rendered aggregators/coworker-bossware-database/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (the database page B1, the report B9) it is one lineage with that source; lv_intersection is the archive's reading, ledgered as such (LV-17, LV-18)",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    159
+   ],
+   "reason": "O-class candidate O0001 (and its paragraph 7): 'a film about workplace surveillance whose camera surveils the workplace it depicts' is a hypothetical example of the genre the SEIPOC charter rewards (operative critique); nothing is said of bossware or of the products that monitor workers"
+  },
+  {
+   "dep": [
+    1639
+   ],
+   "reason": "class match (workers' data), not a string-pass candidate: 'credentials, worker data, and anything the report describes the agents obtaining were not sought and are not seated' is a seating note in an incident record; no claim on the class"
+  },
+  {
+   "dep": [
+    3
+   ],
+   "reason": "class matches (81) in the capture registry file itself, which deposit #3 resolves to: this capture's own record (ledgered as CAP-1-NN) and other captures' records; the registry's statements on this entity are the CAP claims"
+  },
+  {
+   "dep": [
+    771,
+    1392
+   ],
+   "reason": "read outside the string pass at the loci the classes note names (no class match): the Directionality of Semantic Labor and its definition surface measure the direction of a synthetic system's labor relative to the task its user commissioned (#771 Abstract; §1 layer C, 'capacity to direct labor: can the user enforce the intended direction at all?'; §8 User Labor Drag); no sentence applies the measure to employers' products, to workplace monitoring or to workers' data. They bear on the class only through the census's reading (LV-17, LV-18), which is ledgered"
+  },
+  {
+   "dep": [
+    713,
+    1390,
+    1391
+   ],
+   "reason": "read outside the string pass (found by a search for worker surveillance; no class match): the DashFace patent-poems ('a pilot study (n=0, because this product should never be built)') and their 'brief history of looking at workers' bear on gig platforms' surveillance of drivers, the platforms the database states it omits (B9 footnote 2: Uber, Lyft, DoorDash); opaque material on another class, not admitted"
+  },
+  {
+   "dep": [
+    1668
+   ],
+   "reason": "read outside the string pass: the measurement of labor shrinking 'from life to day to task to motion' concerns slave valuation and wage labor, not workplace technology products; no claim on the classes"
+  },
+  {
+   "dep": [
+    113,
+    1684
+   ],
+   "reason": "hop candidates (one citation hop from #747): #113 lists Applicant Reliance Cost 'across hiring and fellowship screening' among the archive's instruments (a bare list); #1684 indexes #747 ('holds the funnel to be accumulated capital'), a restatement with no claim of its own on the class"
+  }
+ ],
+ "hop": {
+  "from": [
+   747
+  ],
+  "candidates": 2,
+  "admitted": 0
+ },
+ "class_pass": "O-class: the string pass returned 5 candidates in 2 deposits (#159, #747); #747 admitted, #159 rejected. Every archive paragraph matching any class pattern (92 matches in #3, #159, #747, #1639) was read.",
+ "observations": "No archive text names the Bossware and Employment Tech Database, Coworker.org, Little Tech, the report or its author (D 0, R 0). The archive's bearing is by class only, through one deposit: hiring and screening technology read as production, in which the applicant supplies the labor, the screening operator captures calibration intelligence as institutional capital, and AI interview platforms such as HireVue collect candidates' video, audio and behavioural data at scale (#747). The census's own reading places the database at the layer of who directs labor of the directionality stack, with no measurement for DSL or task-origin (LV-17, LV-18). The archive holds no deposit on bossware, workplace monitoring or workers' data as such."
+}

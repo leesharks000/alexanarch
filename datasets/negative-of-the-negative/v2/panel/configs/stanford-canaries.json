@@ -1,0 +1,56 @@
+{
+ "row": "stanford-canaries",
+ "address": "Canaries in the Coal Mine",
+ "entity": "the Canaries Dashboard (AI Economic Indicators: Canaries Dashboard), the Stanford Digital Economy Lab's monthly-updated dashboard with ADP Research, and the working paper it updates and extends, 'Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence' (Erik Brynjolfsson, Bharat Chandar and Ruyu Chen; first version August 2025, revised 12 August 2026), which observes employment in a five-year balanced sample of firms using ADP payroll services by age and by occupational AI exposure; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/stanford-canaries/). Distinct from the idiom 'canary in a coal mine', which the paper's title borrows and the composition at the bare name gives",
+ "row_type": "C (a public entity on which the archive bears: a working paper and monthly dashboard of observed employment outcomes; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bCanaries Dashboard\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bCanaries in the Coal Mine\\?",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bSix Facts about the Recent Employment Effects\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bBrynjolfsson,? (and |& )?Chandar\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "the employment effects of AI (labor-market impact, displacement)",
+   "pattern": "\\b(employment effects? of (generative )?(artificial intelligence|AI)|(AI|artificial intelligence|automation)('s)? (impacts?|effects?) on (the )?(labou?r|job) markets?|labou?r[- ]market (impacts?|effects?) of (generative )?(AI|artificial intelligence)|(AI|automation)[- ]driven (job )?(displacement|losses)|(labou?r|job|worker) displacement)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the paper's title, 'Six Facts about the Recent Employment Effects of Artificial Intelligence'; abstract: 'We find no evidence of widespread, economy-wide job displacement'); B11 (the dashboard: 'The Canaries dashboard sits among related efforts to measure the labor market impacts of AI'); B1-pdf (the paper's opening on 'fears of widespread job displacement'). The census's own intersection for the entity, 'gains-and-losses' ('Distribution of gains and losses: wages, employment, workload, credit, ownership, and who captures productivity gains'), and its evidence kind, 'observed employment outcome' (census.json rows[slug == 'stanford-canaries'].intersections, .evidence_kind; intersections)."
+  },
+  {
+   "term": "occupational AI exposure",
+   "pattern": "\\b(AI[- ]exposed|exposure to (generative )?AI|AI[- ]exposure|exposure (scores?|measures?|indices|index) (of|for) occupations|occupational exposure)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('employment of young workers (ages 22–25) in AI-exposed occupations'); B11 ('We match the occupation-level ADP data to various measures of exposure: Eloundou et al. (2024) and the Anthropic Economic Index'). The census's unit and labor_object ('grouped by age and by their occupation's AI exposure') and its negative tag 'NOT a usage measure: its exposure and automation groupings come from Eloundou et al. (2024) and the Anthropic Economic Index' (census.json rows[slug == 'stanford-canaries'].labor_object, .negative_tags[3])."
+  },
+  {
+   "term": "AI usage that automates against usage that augments (delegation against collaboration)",
+   "pattern": "\\b(automation (and|versus|vs\\.?|v\\.|or) augmentation|augmentation (and|versus|vs\\.?|or) automation|automation ratio|augmentation ratio|augmentative|substitutes? for human tasks|fully delegate)\\b",
+   "flags": "i",
+   "basis": "field: B11 ('Under automation, users fully delegate tasks, whereas augmentation usage features collaboration between humans and an AI system'; 'the automation ratio shows a clear correlation with employment trends'); B1 ('Declines are concentrated in occupations where AI usage primarily substitutes for human tasks; where usage primarily complements workers, employment is flat or rising'). The census's lv_intersection, the archive's reading: 'the dashboard's automation-versus-augmentation grouping, borrowed from the Anthropic Economic Index, is where a usage measure of who directs the task meets an observed employment outcome' (census.json rows[slug == 'stanford-canaries'].lv_intersection)."
+  },
+  {
+   "term": "entry-level and early-career employment",
+   "pattern": "\\b(entry[- ]level (workers?|jobs?|hiring|employment|positions?|roles?)|early[- ]career (workers?|employment)|young workers?)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('It operates primarily through reduced hiring of young workers rather than increased separations'); B1-pdf ('This slowdown in hiring at the entry level provides early suggestions that generative AI may be affecting the career ladder'); B11 ('Early-career workers show the strongest exposure-related divergence'). The census's findings and direction.directs ('the paper locates the change at the hiring margin') (census.json rows[slug == 'stanford-canaries'].findings, .direction)."
+  }
+ ],
+ "classes_note": "Four classes, each the census's own intersection, evidence kind or labor object for the entity, stated by field sources at the loci given: (1) the employment effects of AI (census intersection 'gains-and-losses', evidence kind 'observed employment outcome'; B1 title and abstract, B11, B1-pdf); (2) occupational AI exposure (census labor_object, negative_tags[3]; B1, B11); (3) AI usage that automates against usage that augments (census lv_intersection, the archive's reading; B11, B1); (4) entry-level and early-career employment (census findings, direction; B1, B1-pdf, B11). The archive's instruments of labor direction bear on these classes only where a sentence applies them: the Directionality of Semantic Labor (#771, EA-MPAI-DSL-01: 'Directionality of semantic labor measures where a synthetic system's labor flows relative to the commissioned task'; its laborvector.org definition surface #1392), the DS-6 directionality stack (#771, Semantic Integrity Markers: 'the DS-6 directionality stack') and user labor drag (#771, Semantic Integrity Markers: 'user labor drag'; ULD among the reflexive extensions) measure a synthetic system's labor against a commissioned task, which is the census's intersection 'labor-with-ai' and not this entity's ('gains-and-losses'); they enter the class (3) reading only through the census's lv_intersection, the archive's reading that the automation ratio is a usage measure of who directs the task, and are admitted only where a deposit sentence itself says so. The semantic-labor line (the semantic economy, the semantic proletariat #1545) enters by reading where a sentence applies its category to displacement, exposure or the distribution of gains. Aliases: the dashboard's name, the paper's title with its question mark and its subtitle, and the authors' pair as the paper is cited. The bare phrase 'canaries in the coal mine' is not an alias: it is the idiom, the homonym the composition gives; archive uses of the idiom are read as the homonym's and recorded, never admitted as the entity's. Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Canaries in the Coal Mine' (canaries-in-the-coal-mine-aio-20261029, OBS-8527c06bd274, ADDR-6545749d8321), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#716).",
+ "hop_from": [
+  716
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "row": "worker-info-exchange",
+ "address": "Worker Info Exchange",
+ "entity": "Worker Info Exchange (WIE; workerinfoexchange.org), a non-profit in London, founded in 2020, helping gig and platform workers reclaim the data collected from them at work through subject access and data portability requests, data investigations and data trusts, with strategic litigation; its Dutch foundation Stichting WIE International (workerinfoexchange.nl), working in cooperation with it, brings the Dynamic Pay Claim against Uber under the Dutch WAMCA procedure; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/worker-info-exchange/)",
+ "row_type": "C (a public entity on which the archive bears: a worker data-rights non-profit; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bWorker Info(rmation)? Exchange\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bworkerinfoexchange\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bWorkerInfoX\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b(Stichting )?WIE International\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bWIE\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "algorithmic management of workers (AI governing labor)",
+   "pattern": "\\b(algorithmic(ally)? (management|managed|pay|wage[- ]setting|decision[- ]making|wage cuts?)|automated (management|dismissals?|decision[- ]making)|managed (and controlled )?(at work )?by (hidden )?(algorithms|bots)|hidden algorithms|bossware)\\b",
+   "flags": "i",
+   "basis": "field: B5 (own page, About Us: 'gig workers who are managed and controlled at work by hidden algorithms. Opaque automated management systems foster exploitation and discrimination'; 'how they have been subject to algorithmic management'); B1 (card 1: 'challenging unfair algorithmic systems'; 'to expose unfair algorithmic decision making'; 'illegal automated dismissals'); B3 (card 3: 'algorithmic pay systems'; Article 22 GDPR, 'decisions based solely on automated decision-making'). The census's own intersection for the entity, 'ai-governing-labor' ('AI governing labor: hiring, surveillance, scheduling, quotas, evaluation and discipline'), and direction.directs ('tech platforms through opaque automated management systems (hidden algorithms)') (LV record, census.json rows[slug == 'worker-info-exchange'].intersections, .direction.directs)."
+  },
+  {
+   "term": "worker power through workers' own data (data access requests, data trusts, collective action)",
+   "pattern": "\\b(subject access (and data portability )?requests?|data subject access|DSARs?|data portability|data trusts?|worker data rights|workers'? (own )?data|collective (legal )?action against)\\b",
+   "flags": "i",
+   "basis": "field: B1 (card 1: 'We facilitate data access by making specific subject access and data portability requests on behalf of workers'; data trusts 'for collective bargaining and action'); B2 (card 2: 'Access their rights under the GDPR to request and understand their data'; 'empowers gig workers to fight back with their data'); B3 (card 3: 'Build data trusts so workers can combine and analyse their data collectively'); B5 (own page: data trust(s)). The census's own intersection 'worker-power' ('bargaining, organizing, consent, refusal, contestation and enforceable protections') and evidence_kind 'data access', 'organizing resource' for the entity (LV record, .intersections, .evidence_kind, .method)."
+  },
+  {
+   "term": "gains and losses of platform (gig) work",
+   "pattern": "\\b(gig (economy|work(ers?)?)|platform (work(ers?)?|economy|labou?r)|ride[- ]?hail(ing)?|wage[- ]suppression|hidden commission)\\b",
+   "flags": "i",
+   "basis": "field: B1 (card 1: 'gig economy workers who are managed and controlled at work by hidden algorithms'; 'to stop algorithmic wage cuts'); B2 (card 2: 'hidden algorithms decide who works, who waits, and who earns'; 'enabling Uber to increase its hidden commission'); B3 (card 3: 'platform workers'; 'drivers' real pay declined'). The census's own intersection 'gains-and-losses' ('wages, employment, workload, credit, ownership, and who captures productivity gains') and labor_object ('the work of gig economy workers managed by algorithms') for the entity (LV record, .intersections, .labor_object, .direction.gains)."
+  }
+ ],
+ "classes_note": "Three classes, each one of the census's own intersections for the entity (ai-governing-labor, worker-power, gains-and-losses) and its kind ('non-profit organisation: data access requests, data investigations, data trusts and strategic litigation for gig workers'), stated by field sources at the loci given: (1) algorithmic management of workers (B5 About Us; B1; B3); (2) worker power through workers' own data, data access requests, data trusts and collective action (B1; B2; B3; B5); (3) the gains and losses of platform (gig) work (B1; B2; B3). The archive's instruments of labor direction bear on a fourth intersection, labor performed with AI, which the census does not assign this entity: the Directionality of Semantic Labor measures 'where a synthetic system's labor flows relative to the commissioned task, across five layers (capacity, task-origin, retrieval, output, attribution)' (#771, Disambiguation summary), the DS-6 directionality stack is its core tuple (#771, Disambiguation Matrix), and user labor drag (one of its integrity markers) names 'the effect on the *user's* labor' when 'substrate output redirects the user's subsequent semantic labor' (#771, the section on user labor); #1392 is, by its registry title, laborvector.org's canonical definition surface for the same measure. None of these applies to algorithmic management of human workers, to workers' data access or to platform pay, and none is admitted by class; the census's lv_intersection ('the directionality question asked of the system that directs labor') is the archive's own reading of the entity and is ledgered as an LV claim. The aliases are the entity's name and its handles (workerinfoexchange, WorkerInfoX), its foundation's name (Stichting WIE International) and its acronym (WIE, case-sensitive). 'James Farrar' (its Director, card 3) and 'the TUC' are persons and bodies beside the entity, not aliases. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to a class above; a bare mention, a list of fields or audiences, or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md and BRIEF-NEW-ROW-LABOR.md; address 'Worker Info Exchange' (worker-info-exchange-aio-20261029, OBS-9ae6555aed16, ADDR-62140db8094d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis, query note and PER notes at the capture; the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#19, #469, #713, #727, #746, #1390, #1391, #1545).",
+ "hop_from": [
+  19,
+  469,
+  713,
+  727,
+  746,
+  1390,
+  1391,
+  1545
+ ]
+}

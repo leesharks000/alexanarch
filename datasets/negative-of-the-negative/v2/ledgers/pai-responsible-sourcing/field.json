@@ -1,0 +1,1286 @@
+{
+ "row": "pai-responsible-sourcing",
+ "address": "Partnership on AI Responsible Sourcing",
+ "addresses": [
+  "Partnership on AI Responsible Sourcing"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); 51/51 verified by script; the one unreachable card (B7, a video) has no title or snippet text and yields no claim; third-party pages quoted in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the workstream page, which is also the census's own page; B2 PAI's 2021 post introducing the white paper; B3 PAI's 29 April 2026 post; B4 the workstream's archive listing with the DeepMind case study's executive summary; B5 Sama's post on the white paper; B6 the OECD.AI catalogue entry for the library; B7 a PAI video, unreachable); 'own_page', the census's other own page, the library (B8), which T did not surface, copied from the census's saved copy; 'wikipedia', no article for the entity (B9) and the operator's article (B10). No third-party source was read by the census (all its evidence has basis 'operator'), so there is no 'census_third_party' origin in this row. Fetches used the honest agent 'Mozilla/5.0 (compatible; Labor-Vector-census)'; the one refusal (YouTube's bot check, B7) was recorded and not retried.",
+ "lineage_note": "Lineages: what it is (B1, B6); the labor is essential (B1, B3); what data enrichment is (B1, B4); the diagnosis: invisibility, devaluing and its costs (B1, B2); the opacity of the data supply chain (B1, B3); whom it addresses (B1, B6); the operator, the programme and the dates (B1, B2, B3, B10); the white paper (B2, B5); procurement choices (B2); the method: interviews and workshops, 2020 (B2, B5, as two distinct instances: 'five-part', 'five-week'); the stated limits (B2, B4, B5, B8); conditions and the quality of AI (B3); the vendor guidance and transparency template (B3); BSR (B3); who supplies the labor (B4, B8); the DeepMind implementation (B4, B8); the implementation's reported effect (B4); the conditions research reports (B5, B8); the library's resources (B6, B8); the catalogue's classification (B6); the five guidelines (B8); guideline 1 (B8); payment for completed work and contestable rejections (B8); the encyclopedia's account (B10). The census's evidence quotes restate B1 and B8 (one lineage each with the page, the page keeping the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/ (Bn.html raw, with the Google Maps API key in PAI's pages redacted as the census did, Bn.txt text extracted with scripts and styles stripped; B1-census.* and B8.* the census's saved copies; B7-oembed.json and B7-watch-429.html the YouTube responses; B9.* and B10.* the Wikipedia responses, B9.txt a summary of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census's own page pai-responsible-sourcing--workstream)",
+   "card": "Partnership on AI — Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+   "url": "https://partnershiponai.org/workstream/responsible-sourcing/",
+   "kind": "Overview card (the workstream's own page, the operator's; undated, its updates dated 22 December 2020 to 29 April 2026)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1.html",
+     "sha256": "66de71dad6ea89e8b03d6ceb9f027166d49d5d0df69c09f84d46ad7b9cb9b6f2"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1.txt",
+     "sha256": "d47b580df5f9a987011e11b64b8e3d0fd7d3051df48c1c03a276877d38348050"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1-census.html",
+     "sha256": "dffdc0470860fc696e5d78e08d19ccc235f19721e5de4624410ddc85502f8b95"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1-census.txt",
+     "sha256": "fd8d4a832b4adf10fe0252059a657215320de80ca71e5b4f7b5a77633ab143ab"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:38Z",
+    "http": 200,
+    "url": "https://partnershiponai.org/workstream/responsible-sourcing/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1.html",
+    "raw_sha256": "66de71dad6ea89e8b03d6ceb9f027166d49d5d0df69c09f84d46ad7b9cb9b6f2",
+    "sha256_as_fetched": "f6a8d3637557a1db0b111daff2ef606816e56112dbf4c91191a74eceb669db46",
+    "redacted": "The page embeds a Google Maps API key in a script URL (maps.googleapis.com/maps/api/js?key=...); the key is replaced in the saved copy by [REDACTED-ACCESS-KEY], as the census did for its two saved copies (sources/REDACTION.txt), so the repository can be pushed past secret scanning. Nothing else is changed; 'sha256_as_fetched' is of the bytes as served, 'raw_sha256' of the saved (redacted) file. The .txt carries no key.",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "pai-responsible-sourcing--workstream",
+     "manifest_sha256": "0d85b11fe5482688d2055ec85ccb691ebddebaa45a2d935732a81ca7f5509988",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:05Z",
+     "http": "200",
+     "saved_as": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B1-census.html (gunzipped from /home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.html.gz, redacted by the census) and B1-census.txt (the census's text)",
+     "agrees": "in text: the text extracted from this fetch and from the census's saved copy by the same extractor is identical; the bytes differ (page nonces and build tokens), so the sha256 differ"
+    }
+   },
+   "names_operator": "yes ('Partnership on AI', '© 2026 Partnership on AI | All Rights Reserved', the programme 'AI, Labor, and the Economy')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (and it is the census's own page). The card's snippet ('Workstream: Responsible Sourcing Across the Data Supply Line by Partnership on AI aims to develop actionable recommendations and resources improving working con...') is not in the served page: the page says 'the Responsible Sourcing workstream aims to develop recommendations and actionable resources to improve the working conditions of these professionals', and neither 'actionable recommendations' nor 'improving working' occurs in B1.html; the snippet's words are not the page's. Recorded, not resolved. The card and the census's own page are one page, carried once, as a card; quotes are checked against B1.txt.",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+   "card_snippet": "Workstream: Responsible Sourcing Across the Data Supply Line by Partnership on AI aims to develop actionable recommendations and resources improving working con...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Partnership on AI — Responsible Sourcing of Data Enrichment Services",
+   "url": "https://partnershiponai.org/responsible-sourcing-considerations/",
+   "kind": "Overview card (the operator's post introducing the white paper, Sonam Jindal, 16 June 2021)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B2.html",
+     "sha256": "90b0c855cc54e64b3dcda4f1ebb69062a6329781a8421da026a02f8eeed8a546"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B2.txt",
+     "sha256": "9edfe79f5285dbe3ce1cf0a43d899397900b527ad32f94dc41968cf74b330a6d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:41Z",
+    "http": 200,
+    "url": "https://partnershiponai.org/responsible-sourcing-of-data-enrichment-services/ (redirected to https://partnershiponai.org/responsible-sourcing-considerations/)",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B2.html",
+    "raw_sha256": "90b0c855cc54e64b3dcda4f1ebb69062a6329781a8421da026a02f8eeed8a546",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B2.txt"
+    ],
+    "sha256_as_fetched": "bc08569cb4d695776295663385aed813e8c1e0c706266e2911d9af38de974028",
+    "redacted": "The page embeds a Google Maps API key in a script URL (maps.googleapis.com/maps/api/js?key=...); the key is replaced in the saved copy by [REDACTED-ACCESS-KEY], as the census did for its two saved copies (sources/REDACTION.txt), so the repository can be pushed past secret scanning. Nothing else is changed; 'sha256_as_fetched' is of the bytes as served, 'raw_sha256' of the saved (redacted) file. The .txt carries no key."
+   },
+   "names_operator": "yes ('Partnership on AI (PAI)', the byline Sonam Jindal)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site; the slug tried first redirected to the page served. The page's <title> is the card title with ' - Partnership on AI'; its date (June 16, 2021, article:published_time 2021-06-16) and byline and its first sentence are the card's snippet. An older copy of the same post at old.partnershiponai.org/responsible-sourcing-considerations/ (published_time 2021-06-16T23:21:32) was fetched at 22:30:44Z and not admitted: the card's site is the current one.",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Responsible Sourcing of Data Enrichment Services",
+   "card_snippet": "Responsible Sourcing of Data Enrichment Services Sonam Jindal June 16, 2021 As AI becomes increasingly pervasive, there has been growing and warranted concern o...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Partnership on AI — Responsible AI Starts with the Data Supply Chain - Partnership on AI",
+   "url": "https://partnershiponai.org/responsible-ai-starts-with-the-data-supply-chain/",
+   "kind": "Overview card (the operator's post, Michael George and Eliza McCullough, 29 April 2026)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B3.html",
+     "sha256": "9bcac5a973e6b6933b69a6684271b144dc2bfd94600c46ea151213e0a2b03fb7"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B3.txt",
+     "sha256": "c45e3557b4dbc28237a4cfe976bdead356c29a9ae0f057b2f6923ac384dfc942"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:47Z",
+    "http": 200,
+    "url": "https://partnershiponai.org/responsible-ai-starts-with-the-data-supply-chain/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B3.html",
+    "raw_sha256": "9bcac5a973e6b6933b69a6684271b144dc2bfd94600c46ea151213e0a2b03fb7",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B3.txt"
+    ],
+    "sha256_as_fetched": "cfb6a3d983d5c65b02a9a8e46765ca2e68f6983af09d7e257ec8b5fdc6f3fd18",
+    "redacted": "The page embeds a Google Maps API key in a script URL (maps.googleapis.com/maps/api/js?key=...); the key is replaced in the saved copy by [REDACTED-ACCESS-KEY], as the census did for its two saved copies (sources/REDACTION.txt), so the repository can be pushed past secret scanning. Nothing else is changed; 'sha256_as_fetched' is of the bytes as served, 'raw_sha256' of the saved (redacted) file. The .txt carries no key."
+   },
+   "names_operator": "yes ('Partnership on AI', 'PAI', the bylines)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site, confirmed by the page's <title> (identical to the card title). The snippet's two sentences are on the page. The census lists the workstream's blog posts and the 2024 vendor guidance and template as unchecked; this post is the latest of them and states the two resources' finalized versions.",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Responsible AI Starts with the Data Supply Chain - Partnership on AI",
+   "card_snippet": "The conditions under which data is produced directly affect the quality, safety, and reliability of the AI that is built on it. Since 2020, Partnership on AI ha...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Partnership on AI — Workstream: Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+   "url": "https://partnershiponai.org/workstream_tax/responsible-sourcing/",
+   "kind": "Overview card (the workstream's archive listing, headed 'Workstream: Responsible Sourcing Across the Data Supply Line', its newest item 29 April 2026, carrying the executive summary of the DeepMind case study, Sonam Jindal, 16 November 2022)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B4.html",
+     "sha256": "67d215a2f86eb3d02b1ac5ccff9d498408cfeb48f28a6928a760beb76da043bd"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B4.txt",
+     "sha256": "0bb8a51aadb30e75ba050331f63f38d5f783e76c78cbaba759148a0fa165146a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:50Z",
+    "http": 200,
+    "url": "https://partnershiponai.org/workstream_tax/responsible-sourcing/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B4.html",
+    "raw_sha256": "67d215a2f86eb3d02b1ac5ccff9d498408cfeb48f28a6928a760beb76da043bd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B4.txt"
+    ],
+    "sha256_as_fetched": "b28d7b26c855515adac6a18b1860a10f91cc2869fdffe4a89906357f2e060df4",
+    "redacted": "The page embeds a Google Maps API key in a script URL (maps.googleapis.com/maps/api/js?key=...); the key is replaced in the saved copy by [REDACTED-ACCESS-KEY], as the census did for its two saved copies (sources/REDACTION.txt), so the repository can be pushed past secret scanning. Nothing else is changed; 'sha256_as_fetched' is of the bytes as served, 'raw_sha256' of the saved (redacted) file. The .txt carries no key."
+   },
+   "names_operator": "yes ('Partnership on AI (PAI)', 'PAI Partner')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the snippet's sentence ('Last year, the Partnership on AI (PAI) published'). The page's heading is the card's title ('Workstream: Responsible Sourcing Across the Data Supply Line'); its <title> is 'Responsible Sourcing Across the Data Supply Line Archives - Partnership on AI'; its newest item is dated April 29, 2026, the card's date; the snippet's sentence is in the case study's executive summary the page carries. The case study's own page (partnershiponai.org/paper/implementing-responsible-data-enrichment-practices-at-an-ai-developer/, <title> 'Implementing Responsible Data Enrichment Practices at DeepMind') also carries the sentence and was fetched at 22:30:59Z; it was not admitted as the card, whose title and date are the listing's. The listing gives post authors other than the workstream page does (e.g. 'Thalia Khan' for the 29 April 2026 post, whose own page and the workstream page name Michael George and Eliza McCullough); recorded as the page gives it.",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Workstream: Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+   "card_snippet": "Apr 29, 2026 — Last year, the Partnership on AI (PAI) published “Responsible Sourcing of Data Enrichment Services,” a white paper exploring how the choices made by AI practiti...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Samasource — New White Paper by Partnership on AI: Responsible Sourcing of Data ... - Sama",
+   "url": "https://www.sama.com/blog/partnership-on-ai-whitepaper",
+   "kind": "Overview card (a blog post by Sama, a data annotation vendor, on the white paper; undated, it calls the 2021 white paper PAI's 'latest')",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B5.html",
+     "sha256": "47aa260d314bc0f9347f047b1e2507f723d6d8e6a5f79dea5ef66d785723587f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B5.txt",
+     "sha256": "856bc1e422edda4998995f9e3358913db8499b965e88b7eab4ab81888f8d39fe"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:54Z",
+    "http": 200,
+    "url": "https://www.sama.com/blog/partnership-on-ai-whitepaper",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B5.html",
+    "raw_sha256": "47aa260d314bc0f9347f047b1e2507f723d6d8e6a5f79dea5ef66d785723587f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('Partnership on AI (PAI)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site, confirmed by the page's <title> ('New White Paper by Partnership on AI: Responsible Sourcing of Data Enrichment Services | Sama'). The source is a vendor of data enrichment services (its page sells 'Data Annotation Services') writing of a white paper whose workshops it took part in; a third party to PAI, an interested one. The snippet's words are in the page ('... and other groups working to better understand AI's lasting impacts. Their latest white paper Responsible Sourcin...').",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "New White Paper by Partnership on AI: Responsible Sourcing of Data ... - Sama",
+   "card_snippet": "... companies building and using AI technology, and other groups working to better understand AI's lasting impacts. Their latest white paper Responsible Sourcin...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "OECD AI Policy Observatory — Responsible Data Enrichment Sourcing: Resource Library for AI Practitioners",
+   "url": "https://oecd.ai/en/catalogue/tools/responsible-data-enrichment-sourcing-resource-library-for-ai-practitioners",
+   "kind": "Overview card (the entry for the library in the OECD.AI Catalogue of Tools & Metrics for Trustworthy AI, 'Uploaded on Feb 14, 2023'; the entry is submitted by the tool's authors, the catalogue's disclaimer says)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B6.html",
+     "sha256": "1b3c797b45c90b376cb586e9b02c93a5b966810ca166c0da3b23d84858c645c5"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B6.txt",
+     "sha256": "9aab925f1ad953aa95039487393d263b8d98bd2c9431ce3d205ad473508ccbd6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:56Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/catalogue/tools/responsible-data-enrichment-sourcing-resource-library-for-ai-practitioners",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B6.html",
+    "raw_sha256": "1b3c797b45c90b376cb586e9b02c93a5b966810ca166c0da3b23d84858c645c5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('Partnership on AI (PAI)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site, confirmed by the page's <title> ('Responsible Data Enrichment Sourcing:  Resource Library for AI Practitioners - OECD.AI'). The snippet's date and sentence are on the page ('Uploaded on Feb 14, 2023'; 'To help fill this gap, Partnership on AI (PAI) shared the Responsible Data Enrichment Sourcing Library'). The entry's prose is in PAI's voice ('Our primary objective in sharing these resources'); the catalogue states its tools are 'solely those of the originating authors'. Its classification fields (tool type, maturity, usage rights) are the catalogue's form as filled.",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "Responsible Data Enrichment Sourcing: Resource Library for AI Practitioners",
+   "card_snippet": "Feb 14, 2023 — To help fill this gap, Partnership on AI (PAI) shared the Responsible Data Enrichment Sourcing Library, a set of resources AI organisations can use to formalise...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (video)",
+   "card": "YouTube·Partnership on AI — YouTube (video, 1:59)",
+   "url": null,
+   "kind": "Overview card (a video on Partnership on AI's YouTube channel, 1:59, no title or snippet on the card; unreachable)",
+   "files": {
+    "B7-oembed.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B7-oembed.json",
+     "sha256": "a98eb2385591334aa5c20cff0fee9cf997a1d62258c6497af32038ff22e80422"
+    },
+    "B7-watch-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B7-watch-429.html",
+     "sha256": "985c4e213e46ed86b17091ab73fdc44c93b31d9b625600b7ee4b96bd1b5a412a"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:29Z",
+      "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=LOSID_NgnwU&format=json",
+      "http": 200,
+      "sha256": "a98eb2385591334aa5c20cff0fee9cf997a1d62258c6497af32038ff22e80422",
+      "result": "oEmbed record of the video embedded on the library page (B8) and on PAI's 16 November 2022 post: title 'Responsibly Sourcing Enriched Data', author 'Partnership on AI'; no duration"
+     },
+     {
+      "at": "2026-10-29T22:32:29Z",
+      "url": "https://www.youtube.com/watch?v=LOSID_NgnwU",
+      "http": 429,
+      "sha256": "985c4e213e46ed86b17091ab73fdc44c93b31d9b625600b7ee4b96bd1b5a412a",
+      "result": "redirected to Google's 'sorry' bot check (HTTP 429); not retried, with another agent or by any other route (brief: a source that refuses the agent is recorded as unreachable)"
+     }
+    ],
+    "searches": [
+     "WebSearch 'youtube Partnership on AI \"Responsibly Sourcing Enriched Data\"' (no youtube.com result)"
+    ],
+    "note": "The card carries no title (its title is 'YouTube'), no snippet, the channel 'Partnership on AI' and the length 1:59. The one PAI video the field's pages embed (LOSID_NgnwU, 'Responsibly Sourcing Enriched Data') is a candidate; its length could not be read, so the card's video is not identified. Admitted through title and snippet (§3.1(a)): no text, no claims."
+   },
+   "names_operator": "yes ('Partnership on AI', the channel on the card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "partnership-on-ai-responsible-sourcing-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "YouTube",
+   "card_snippet": null,
+   "card_note": "video, 1:59"
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the census's own page pai-responsible-sourcing--library (not surfaced by T)",
+   "card": "Partnership on AI — Responsible Data Enrichment Sourcing Library (Improving Conditions for Data Enrichment Workers)",
+   "url": "https://partnershiponai.org/responsible-sourcing-library/",
+   "kind": "own page (the library: five guidelines, six resources, published 16 November 2022), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B8.html",
+     "sha256": "29cb71c483198416df13c8b533326eadd08ef7ad9792d3f629c752da03ec5ed9"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B8.txt",
+     "sha256": "389441dd67f7afefbf1a61128070cf22f58ca81b615fc540a21b80ef7f4d6eb4"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "pai-responsible-sourcing--library",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:04Z",
+    "http": "200",
+    "url": "https://partnershiponai.org/responsible-sourcing-library/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B8.html",
+    "raw_sha256": "29cb71c483198416df13c8b533326eadd08ef7ad9792d3f629c752da03ec5ed9",
+    "census_sha256": "1b82a03a457a6f41f0ffc717dd367fc6fff63f0a99e77078dff6666b72b786c5",
+    "agrees": "the census's manifest sha256 is of the bytes as fetched; the saved copy was redacted by the census (its Google Maps API key replaced by [REDACTED-ACCESS-KEY], sources/REDACTION.txt), so B8.html's sha256 differs from the manifest's by that redaction alone; the .txt is the census's, unchanged",
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.html.gz (gunzipped) and pai-responsible-sourcing--library.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B8.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('PAI', 'Partnership on AI', '© 2026 Partnership on AI | All Rights Reserved')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T, though it is the library the workstream page (B1) links ('Explore the Library') and the page whose guidelines the capture finds absent. The census's saved copy is intact apart from the recorded redaction, so it was copied and not refetched."
+  },
+  {
+   "id": "B9",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Responsible Sourcing Across the Data Supply Line (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Responsible_Sourcing_Across_the_Data_Supply_Line&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B9.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9.wiki",
+     "sha256": "3109a6714b4474d86e526cd32a0f3c0ac90e21f0849ab4d0bcedd39a7e6dc163"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9.html",
+     "sha256": "f5d461099ee395eabe8faba9324a73eddacaf6632896e4966b406ec4ec7ac093"
+    },
+    "B9-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9-variant.wiki",
+     "sha256": "6967f85d850580be37a1e4b6463bb375fc6991903f74173cfa41c23a68c1ccfe"
+    },
+    "B9-variant.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9-variant.html",
+     "sha256": "7ebe62eb689d07dd2b81614c63e599999ec908a10ba0c77bef2b1024e539b6b8"
+    },
+    "B9-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9-search.html",
+     "sha256": "a923147f4fd7a40ba2d8877864ba557971ea71159efdebf9f2fadbbedea46b7f"
+    },
+    "B9-search2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9-search2.html",
+     "sha256": "c528dd652b5703df782adb3c66967de760d45996bebd86fda5be7bb705f1f5b8"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9.txt",
+     "sha256": "7d5f440d5746f992e8e4e3deb2aa1cf8d7789c811ebbfc008a22e8e0aacc4f91"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:46Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Responsible_Sourcing_Across_the_Data_Supply_Line&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:34:28Z",
+      "url": "https://en.wikipedia.org/wiki/Responsible_Sourcing_Across_the_Data_Supply_Line?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:32:49Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Partnership_on_AI_Responsible_Sourcing&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:34:30Z",
+      "url": "https://en.wikipedia.org/wiki/Partnership_on_AI_Responsible_Sourcing?redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:32:53Z",
+      "url": "Special:Search \"Responsible Sourcing Across the Data Supply Line\" (article space)",
+      "http": 200,
+      "result": "'There were no results matching the query.'"
+     },
+     {
+      "at": "2026-10-29T22:32:57Z",
+      "url": "Special:Search \"Partnership on AI\" \"data enrichment\" (article space)",
+      "http": 200,
+      "result": "'There were no results matching the query.'"
+     }
+    ],
+    "raw_sha256": "f5d461099ee395eabe8faba9324a73eddacaf6632896e4966b406ec4ec7ac093",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B9.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect under the workstream's name or the address; no article text contains the workstream's name, or 'Partnership on AI' with 'data enrichment'. A fact of the row; no claims."
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "the operator's Wikipedia article (the entity has none)",
+   "card": "Wikipedia — Partnership on AI (the operator's article)",
+   "url": "https://en.wikipedia.org/wiki/Partnership_on_AI",
+   "kind": "Wikipedia (the operator's article, last edited 18 August 2026)",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B10.wiki",
+     "sha256": "08e1303706a2474f8ada972ca4fd4a4dd201ee0ded0bb2ba1e0435c2b5ef3f1d"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B10.html",
+     "sha256": "e20a6094f32daefdd52968d9c8f141cc349899c1fa2366f7c90bba0a6d5973d2"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B10.txt",
+     "sha256": "c4ac30257b20bca88dbba5805ceb8d123d20053a5d2462404cc8666bbde33591"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:32:51Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Partnership_on_AI&action=raw&redirect=no",
+      "http": 200,
+      "sha256": "08e1303706a2474f8ada972ca4fd4a4dd201ee0ded0bb2ba1e0435c2b5ef3f1d"
+     },
+     {
+      "at": "2026-10-29T22:34:25Z",
+      "url": "https://en.wikipedia.org/wiki/Partnership_on_AI?redirect=no",
+      "http": 200,
+      "sha256": "e20a6094f32daefdd52968d9c8f141cc349899c1fa2366f7c90bba0a6d5973d2"
+     }
+    ],
+    "raw_sha256": "e20a6094f32daefdd52968d9c8f141cc349899c1fa2366f7c90bba0a6d5973d2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pai-responsible-sourcing-20261029/B10.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (the article is the operator's)",
+   "names_archive": "no",
+   "note": "The operator's article exists (HTTP 200); neither its wikitext nor its rendered text contains 'Responsible Sourcing', 'data enrichment', 'sourcing', 'annotation' or 'labeling' (checked by script). It names the AI, Labor, and the Economy program, the workstream's programme in the record. It carries two maintenance notices: reliance on primary sources (April 2025) and suspected text from a large language model (October 2025). Admitted as the encyclopedia's account of the operator, as the iptc-metawatch and newsguard-ai-tracking-center rows admitted the operators' articles; ledgered: its opening, the founding, the programme sentence and the two notices."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Overview ¶1 s2",
+   "quote": "Drawing from a diverse range of perspectives, the Responsible Sourcing workstream aims to develop recommendations and actionable resources to improve the working conditions of these professionals.",
+   "claim": "the workstream defined by its operator: it aims to develop recommendations and actionable resources to improve the working conditions of data enrichment professionals",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: recommendations and resources to improve data enrichment workers' conditions",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Overview ¶1 s1",
+   "quote": "Data labelers, data cleaners, and others who contribute human judgment to artificial intelligence (AI) systems play a critical role in developing this technology.",
+   "claim": "the workers it concerns: data labelers, data cleaners and others who contribute human judgment to AI systems, critical to developing it",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the labor: data enrichment work is essential to AI",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Is Data Enrichment?' ¶2 s3",
+   "quote": "Data enrichment is a broadly defined term that encapsulates various types of data preparation and cleaning as well as human-review processes.",
+   "claim": "data enrichment defined: data preparation and cleaning, and human-review processes",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "what data enrichment is",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Is Data Enrichment?' ¶2 s4 and list",
+   "quote": "Enriched data is essential for the training and validation of supervised learning models, the dominant form of applied AI. … Content moderation … Validating algorithmic outputs and models",
+   "claim": "enriched data is essential for training and validating supervised models; the human-review work includes content moderation and validating algorithmic outputs and models",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what data enrichment is",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Background ¶2 s1, s3",
+   "quote": "Despite being an essential component of AI development, data enrichment work has for too long been both out of sight and out of mind for AI developers. … This disconnect leads to a devaluing of data enrichment work, poor working conditions for data enrichment workers, and, often, worse outcomes for AI development itself.",
+   "claim": "the diagnosis: data enrichment work out of sight of AI developers, the disconnect devaluing the work, bringing poor working conditions and, often, worse outcomes for AI development",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the diagnosis: invisibility, devaluing and its costs",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Background ¶3 s3",
+   "quote": "From AI developers we’ve heard sentiments like “We feel we must care about the transparency of our supply chain. But there is no transparency in data labeling. Guidelines on how to navigate this would be very useful.”",
+   "claim": "AI developers quoted: no transparency in data labeling; guidelines would be useful",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the opacity of the data supply chain",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Background ¶4",
+   "quote": "The Responsible Sourcing workstream addresses these questions by working to provide actionable guidance for data scientists, AI engineers, and product managers, to empower these critical ecosystem players to do their part in ensuring healthy and fair working conditions across the data supply line.",
+   "claim": "whom it addresses: actionable guidance for data scientists, AI engineers and product managers, toward healthy and fair working conditions across the data supply line",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "whom it addresses: AI practitioners",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "breadcrumb; Updates list (first and last items)",
+   "quote": "Workstreams / AI, Labor, and the Economy Responsible Sourcing Across the Data Supply Line … Responsible AI Starts with the Data Supply Chain Michael George, Eliza McCullough Apr 29, 2026 … Developing Guidance for Responsible Data Enrichment Sourcing B Cavello Dec 22, 2020",
+   "claim": "a workstream of PAI's AI, Labor, and the Economy programme, its updates dated from 22 December 2020 to 29 April 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2026-10-29 (page as fetched; undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d47b580df5f9a987…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1 s3",
+   "quote": "This white paper, “Responsible Sourcing of Data Enrichment Services,” addresses an often overlooked aspect of the development process and what AI practitioners can do to help improve it: the working conditions of data enrichment professionals, without whom the value being generated by AI would be impossible.",
+   "claim": "the white paper defined by its publisher: on the working conditions of data enrichment professionals and what AI practitioners can do to improve them",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the white paper: what AI practitioners can do",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1 s4",
+   "quote": "This paper’s recommendations will be an integral part of the shared prosperity targets being developed by Partnership on AI (PAI) as outlined in the AI and Shared Prosperity Initiative’s Agenda.",
+   "claim": "its recommendations to become part of PAI's shared prosperity targets",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2 s2–4",
+   "quote": "this process is highly labor-intensive and often requires data enrichment workers to review, classify, and otherwise manage massive amounts of data. Despite the foundational role played by these data enrichment professionals, a growing body of research reveals the precarious working conditions these workers face. This may be the result of efforts to hide AI’s dependence on this large labor force when celebrating the efficiency gains of technology.",
+   "claim": "enrichment is labor-intensive; research reveals precarious conditions; this may result from efforts to hide AI's dependence on this labor force",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the diagnosis: invisibility, devaluing and its costs",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'Data Enrichment Choices Impact Worker Well-being' ¶1 s2",
+   "quote": "The decisions AI developers make while procuring enriched data have a meaningful impact on the working conditions of data enrichment professionals.",
+   "claim": "procurement decisions of AI developers shape the working conditions of data enrichment professionals",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "procurement choices shape working conditions",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'Data Enrichment Choices Impact Worker Well-being' ¶1 s4 and list",
+   "quote": "this paper covers worker-centric considerations for AI companies making decisions in: selecting data enrichment providers, running pilots, designing data enrichment tasks and writing instructions, assigning tasks, defining payment terms and pricing, establishing a communication cadence with workers, conducting quality assurance, and offboarding workers from a project.",
+   "claim": "the paper's scope: eight decision points, from selecting providers and pilots to payment terms, quality assurance and offboarding",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the white paper: what AI practitioners can do",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4 s1–2",
+   "quote": "This paper draws heavily on insights and input gathered during semi-structured interviews with members of the AI enrichment ecosystem conducted throughout 2020 as well as during a five-part workshop series held in the fall of 2020. The workshop series brought together more than 30 professionals from different areas of the data enrichment ecosystem",
+   "claim": "method: interviews through 2020 and a five-part workshop series in fall 2020 with more than 30 professionals of the ecosystem",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: interviews and workshops, 2020",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5 s2",
+   "quote": "Additional work is needed to ensure industry practices recognize, appreciate, and fairly compensate the workers conducting data enrichment.",
+   "claim": "stated limit: additional work is needed for industry practice to recognize and fairly compensate data enrichment workers",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: a starting point; more work needed",
+   "date": "2021-06-16",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9edfe79f5285dbe3…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s3–6",
+   "quote": "Data enrichment workers, the people who label and annotate the training data on which these systems are built, are essential to AI, yet their contributions are frequently overlooked. Research has shown that these workers often face low wages, unclear expectations, and inadequate support. The AI data supply chain remains largely opaque and unregulated, leaving these workers without sufficient protections.",
+   "claim": "data enrichment workers label and annotate training data, essential and overlooked; research shows low wages, unclear expectations, inadequate support; the AI data supply chain opaque and unregulated",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the opacity of the data supply chain",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s7",
+   "quote": "The conditions under which data is produced directly affect the quality, safety, and reliability of the AI that is built on it.",
+   "claim": "the conditions of data production affect the quality, safety and reliability of the AI built on it",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "conditions and the quality of AI",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3 s1–2",
+   "quote": "Since 2020, Partnership on AI has spotlighted the importance of raising standards across the data enrichment supply chain to advance positive outcomes for the people powering these systems. In 2023, PAI released a first-of-its-kind AI job impact assessment and recommendations for the field with its Guidelines for AI and Shared Prosperity, which included recommendations around the responsible sourcing of data.",
+   "claim": "since 2020 PAI has worked to raise standards across the supply chain; its 2023 Guidelines for AI and Shared Prosperity included responsible-sourcing recommendations",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3 s3–4",
+   "quote": "But raising standards also requires practical tools that companies can put to use. As part of our work to support the implementation of the Guidelines, finalized versions of two of our resources, developed and refined in conversation with companies throughout the supply chain, as well as worker advocates, are now available: the Vendor Engagement Guidance, which helps companies have more accountable conversations with their downstream vendors about worker treatment, and the Transparency Template, which outlines what companies should be monitoring and publicly reporting about their data enrichment practices.",
+   "claim": "finalized versions (April 2026) of the Vendor Engagement Guidance (accountable conversations with downstream vendors about worker treatment) and the Transparency Template (what companies should monitor and publicly report about their data enrichment practices)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the vendor guidance and transparency template (2024–2026)",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶7 s1",
+   "quote": "PAI’s work in raising standards for data enrichment workers continues on through our support of our long-standing partner Business for Social Responsibility (BSR) via their initiative focused on labor rights in the AI data supply chain.",
+   "claim": "the work continues through PAI's support of BSR's initiative on labor rights in the AI data supply chain",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuation: BSR's initiative",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶9 s2–3",
+   "quote": "Legislative efforts are also underway that are focused on increasing the pay received by data enrichment workers and increasing transparency in the data enrichment supply chain, with more to come. Responsible AI cannot be achieved without the responsible treatment of the people whose labor makes AI possible.",
+   "claim": "legislative efforts on data enrichment workers' pay and supply-chain transparency are underway; responsible AI requires the responsible treatment of the people whose labor makes it possible",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the labor: data enrichment work is essential to AI",
+   "date": "2026-04-29",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c45e3557b4dbc282…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary ¶1",
+   "quote": "While these datasets can only be prepared by humans, the data enrichment workers who do so (performing tasks like data annotation, data cleaning, and human review of algorithmic outputs) are an often-overlooked part of the development lifecycle, frequently working in poor conditions continents away from AI-developing companies and their customers.",
+   "claim": "data enrichment workers, often overlooked, frequently working in poor conditions continents away from AI developers",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "who supplies the labor: faraway workers under precarious conditions",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary, 'Workers' box",
+   "quote": "we recognize the variety of employment statuses that can exist in the data enrichment industry, including independent contractors on self-service crowdsourcing platforms, subcontractors of data enrichment providers, and full-time employees.",
+   "claim": "'workers' covers independent contractors on crowdsourcing platforms, subcontractors of providers and full-time employees",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what data enrichment is",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary ¶2",
+   "quote": "This case study documents an effort to put that paper’s recommendations into practice at one AI developer: DeepMind, a PAI Partner.",
+   "claim": "the case study documents putting the white paper's recommendations into practice at one AI developer, DeepMind, a PAI Partner",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the DeepMind implementation: one developer",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary ¶3 s3",
+   "quote": "This case study serves as one such resource, offering a detailed account of DeepMind’s process and learnings for other organizations interested in improving their data enrichment sourcing practices.",
+   "claim": "the case study as a resource: DeepMind's process and learnings for other organizations",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the DeepMind implementation: one developer",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary ¶7",
+   "quote": "said that these new processes felt efficient and helped them think more deeply about the impact of their work on data enrichment workers",
+   "claim": "DeepMind's researchers reported the new processes efficient and prompting thought about the impact on workers",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the implementation's reported effect",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "case study executive summary ¶10 s2; table of contents",
+   "quote": "Furthermore, to identify where the implemented changes fall short of ideal, we plan to continue developing this work through engagement and convenings. … Limitations of Case Study Applicability",
+   "claim": "stated limit: the implemented changes may fall short of ideal; the case study carries a section on the limits of its applicability",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: a starting point; more work needed",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 0bb8a51aadb30e75…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶3 s3 and list",
+   "quote": "Their latest white paper Responsible Sourcing of Data Enrichment Services examines the working conditions of data enrichment professionals, and seeks to: Critically evaluate the impact of the industry’s current practices on workers; Explore practices the industry can adopt to improve worker well-being; and Advance the discourse around the future of data enrichment work and the indispensable role it plays in AI development.",
+   "claim": "Sama on the white paper: it evaluates the impact of current practices on workers, explores practices to improve well-being, and advances the discourse",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the white paper: what AI practitioners can do",
+   "date": "undated (calls the 2021 white paper PAI's 'latest')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 856bc1e422edda49…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶1 s5–6",
+   "quote": "Despite their foundational role, working conditions for data enrichment professions can be precarious: they can face wage uncertainty, low pay and limited career growth opportunities.",
+   "claim": "Sama: working conditions can be precarious: wage uncertainty, low pay, limited career growth",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditions research reports",
+   "date": "undated (calls the 2021 white paper PAI's 'latest')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 856bc1e422edda49…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶5 s1–2",
+   "quote": "Since data labeling is a key part of this equation, it was important for Sama to partner with PAI: to both share our lessons learned from several years of striving for more ethical supply chains, and to continue to learn from industry peers about responsible AI.In fall of 2020, Sama participated in the five-week series of Responsible Sourcingworkshops held by PAI",
+   "claim": "Sama, a data labeling vendor, partnered with PAI, sharing its lessons 'striving for more ethical supply chains', and took part in the five-week workshop series of fall 2020",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: interviews and workshops, 2020",
+   "date": "undated (calls the 2021 white paper PAI's 'latest')",
+   "note": "B2 says 'a five-part workshop series'; B5 says 'the five-week series': distinct instances (§3.6), carried as stated. 'Responsible Sourcingworkshops' is the page's text.",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 856bc1e422edda49…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶7",
+   "quote": "While more work and research is needed, Responsible Sourcing of Data Enrichment Services shares actionable insight that practitioners can use as a starting point to raise important conversations with internal stakeholders.",
+   "claim": "Sama: more work and research is needed; the paper is a starting point for conversations",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: a starting point; more work needed",
+   "date": "undated (calls the 2021 white paper PAI's 'latest')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 856bc1e422edda49…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "'About the tool' ¶1 s4–5",
+   "quote": "Despite growing awareness of their often precarious working conditions, there has been limited transparency about how AI practitioners are sourcing enriched data from these workers and little guidance on how they should. To help fill this gap, Partnership on AI (PAI) shared the Responsible Data Enrichment Sourcing Library, a set of resources AI organisations can use to formalise their data enrichment practices and have a positive impact on the lives of data enrichment workers.",
+   "claim": "the library, entered in the OECD.AI catalogue: resources AI organisations can use to formalise their data enrichment practices, filling a gap of transparency and guidance",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: recommendations and resources to improve data enrichment workers' conditions",
+   "date": "2023-02-14 (uploaded)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9aab925f1ad953aa…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "'About the tool' list",
+   "quote": "Local Living Wages Spreadsheet Template: A Google Sheets template to create a centralised resource for looking up living wage information for each of the geographic areas an organisation sources data enrichment labour from.",
+   "claim": "the library's resources include a living-wages spreadsheet template for each area an organisation sources data enrichment labour from",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library's resources",
+   "date": "2023-02-14 (uploaded)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9aab925f1ad953aa…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "'About the tool' ¶2 s4–5",
+   "quote": "Our primary objective in sharing these resources is to lower the barriers for companies interested in improving their data enrichment sourcing practices. Our intention is for the library to serve as a resource for champions within companies to advocate for their organisations to adopt responsible data enrichment sourcing practices.",
+   "claim": "objective: lower the barriers for companies; the library a resource for champions within companies",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "whom it addresses: AI practitioners",
+   "date": "2023-02-14 (uploaded)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9aab925f1ad953aa…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "catalogue fields 'Maturity', 'Usage rights'",
+   "quote": "Maturity: Implemented in multiple projects … Usage rights: Open source/Permissive",
+   "claim": "the catalogue entry classifies the tool as implemented in multiple projects, with open source/permissive usage rights",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue's classification",
+   "date": "2023-02-14 (uploaded)",
+   "note": "The catalogue's form as filled; the field's own pages name one implementation (B4, B8) and state no licence (B1, B8 footer: '© 2026 Partnership on AI | All Rights Reserved').",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9aab925f1ad953aa…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "disclaimer",
+   "quote": "Disclaimer: The tools and metrics featured herein are solely those of the originating authors and are not vetted or endorsed by the OECD or its member countries.",
+   "claim": "the catalogue's limit: entries are the originating authors' own, not vetted or endorsed by the OECD",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the catalogue's classification",
+   "date": "2026-10-29 (page as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9aab925f1ad953aa…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "'AI is powered by data enrichment workers…' s1–2",
+   "quote": "To create today’s machine learning (ML) models, AI developers require enriched datasets, vast quantities of information organized by humans so that it can be understood by machines. While these datasets can contain millions of individual entries, the extensive labor that goes into building them is often overlooked, performed by faraway workers under precarious conditions.",
+   "claim": "enriched datasets are organized by humans; the extensive labor is often overlooked, performed by faraway workers under precarious conditions",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "who supplies the labor: faraway workers under precarious conditions",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "'…but their contributions are often overlooked' s1–2",
+   "quote": "Research shows these workers often face inconsistent and inappropriate compensation for their work, unclear instructions, lack of recognition, and emotional and physical stress related to long, ad-hoc working hours. Under-appreciating the importance of this work doesn’t just impact the wellbeing of these workers, it also affects the quality of the data AI technology is built on.",
+   "claim": "research shows inconsistent and inappropriate compensation, unclear instructions, lack of recognition and stress from long ad-hoc hours; under-appreciation also affects data quality",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditions research reports",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "'How can AI companies make data enrichment work better?' s1–2",
+   "quote": "AI companies and the people that work for them have the power to improve the lives of data enrichment workers. When designing a project involving enriched data, there are five, worker-centric guidelines that AI practitioners should follow.",
+   "claim": "five worker-centric guidelines that AI practitioners should follow when designing a project involving enriched data",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the five guidelines",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Guideline 1, heading and ¶1, ¶3",
+   "quote": "1. Ensure all data enrichment workers are paid above the local living wage … AI Practitioners must pay workers/participants at least the living wage for their location. … including time spent reading instructions, going through any training and reviewing work before submission.",
+   "claim": "guideline 1: pay all data enrichment workers above the local living wage, counting time spent reading instructions, training and reviewing work before submission",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "guideline 1: the living wage, counting the time around the task",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Guideline 1 ¶3 s2, footnote",
+   "quote": "The per task rate should be based on the hourly living wage, divided by the adjusted number of tasks that can be completed in an hour. … We would discourage using a simple median, as this could cause half the workers to receive an insufficient wage.",
+   "claim": "the per-task rate from the hourly living wage; against a simple median, which could leave half the workers with an insufficient wage",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "guideline 1: the living wage, counting the time around the task",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Guideline 1 ¶4",
+   "quote": "AI Practitioners should pay for any work completed by workers to compensate for their time, being mindful that mass rejections of work completed without opportunities for redress impact the workers’ livelihood. The only exceptions should be in the cases of obvious abuse or fraud.",
+   "claim": "pay for any completed work; mass rejections without redress harm livelihoods; exceptions only for obvious abuse or fraud",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "payment for completed work and contestable rejections",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Guidelines 2 and 3, headings",
+   "quote": "2. Design and run a pilot before launching a data enrichment project … 3. Identify appropriate data enrichment workers for the desired task",
+   "claim": "guidelines 2 and 3: run a pilot before launching; identify appropriate workers for the task",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the five guidelines",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Guidelines 4 and 5, headings and notes",
+   "quote": "4. Provide verified instructions and/or training materials for data enrichment workers … Note: As discussed in Guideline 1, time spent reading instructions or in training should be compensated. … 5. Establish clear and regular communication mechanisms … including contesting any rejected work.",
+   "claim": "guidelines 4 and 5: verified instructions and training, the time compensated; clear communication, including contesting rejected work",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "payment for completed work and contestable rejections",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "after Guideline 5",
+   "quote": "These guidelines, based on PAI’s Responsible Sourcing of Data Enrichment Services white paper and developed in partnership with DeepMind, have been tested and adopted by DeepMind organization-wide.",
+   "claim": "the guidelines, based on the white paper and developed with DeepMind, tested and adopted by DeepMind organization-wide",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the DeepMind implementation: one developer",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "'What resources can help practitioners meet these guidelines?'",
+   "quote": "Data Enrichment Vendor Comparison Template A Google Sheets template for comparing various vendors of data enrichment services and surfacing relevant worker-centric considerations … DeepMind Case Study A case study detailing why DeepMind committed to the Data Enrichment Sourcing Guidelines, how they did it, and the impact of adopting these recommendations",
+   "claim": "the library's resources include the vendor comparison template and the DeepMind case study (six resources)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library's resources",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "'Help us advance this work'",
+   "quote": "To ensure our guidance truly improves conditions for data enrichment workers, we welcome feedback: … If you are interested in acting on these guidelines and resources or have feedback on how they can be improved, please get in touch.",
+   "claim": "stated limit: feedback invited from practitioners, workers and the AI community, to ensure the guidance improves conditions",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: a starting point; more work needed",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 389441dd67f7afef…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F48": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s1",
+   "quote": "Partnership on Artificial Intelligence to Benefit People and Society, otherwise known as Partnership on AI (PAI), is a nonprofit coalition committed to the responsible use of artificial intelligence.",
+   "claim": "the operator: PAI, a nonprofit coalition committed to the responsible use of AI",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2026-08-18 (last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 c4ac30257b20bca8…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History ¶1 s1",
+   "quote": "The Partnership on AI was publicly announced on September 28, 2016, with founding members Amazon, Facebook, Google, DeepMind, Microsoft, and IBM",
+   "claim": "PAI announced 28 September 2016, DeepMind among its founding members",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2026-08-18 (last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 c4ac30257b20bca8…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Mission and Principles ¶3 s1",
+   "quote": "The AI, Labor, and the Economy program serves as a collaborative platform, uniting economists, worker representative organizations, and PAI's partners to formulate a cohesive response on how AI can contribute to an inclusive economic future.",
+   "claim": "the AI, Labor, and the Economy program: a platform uniting economists, worker representative organizations and partners",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator, the programme and the dates",
+   "date": "2026-08-18 (last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 c4ac30257b20bca8…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "maintenance notices",
+   "quote": "This article relies excessively on references to primary sources. … This article appears to incorporate text from a large language model, which is prohibited in Wikipedia articles.",
+   "claim": "the article's notices: excessive reliance on primary sources; suspected text from a large language model",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia's account and its notices",
+   "date": "2026-08-18 (last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 c4ac30257b20bca8…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "Partnership on AI — Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+  "B2": "Partnership on AI — Responsible Sourcing of Data Enrichment Services",
+  "B3": "Partnership on AI — Responsible AI Starts with the Data Supply Chain - Partnership on AI",
+  "B4": "Partnership on AI — Workstream: Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+  "B5": "Samasource — New White Paper by Partnership on AI: Responsible Sourcing of Data ... - Sama",
+  "B6": "OECD AI Policy Observatory — Responsible Data Enrichment Sourcing: Resource Library for AI Practitioners",
+  "B7": "YouTube·Partnership on AI — YouTube (video, 1:59)",
+  "B8": "Partnership on AI — Responsible Data Enrichment Sourcing Library (Improving Conditions for Data Enrichment Workers)",
+  "B9": "Wikipedia — Responsible Sourcing Across the Data Supply Line (no article)",
+  "B10": "Wikipedia — Partnership on AI (the operator's article)"
+ }
+}

@@ -1,0 +1,1000 @@
+{
+ "row": "dair-luddite-lab",
+ "address": "Luddite Lab",
+ "addresses": [
+  "Luddite Lab"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia response summary, or the card's title and snippet for the two unreachable cards; 33/33 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail that concerns the entity (B1 the hub's home page; B2 AI Weekly's alert on the primer; B3 Alex Hanna's LinkedIn post, unreachable; B4 the hub's About page; B5 the Lab's newsletter page on Buttondown; B7 a video, title only, unreachable), with B6, the card of the homonym Luddite Labs, recorded as the homonym's and contributing no field claim; 'own_page', the census's own page that T did not surface (B9, the Resource Library index, copied from the census's saved copy; the census's other own pages, home and about, are cards B1 and B4, carried once, as cards); 'wikipedia', no article (B8). No third-party source was read by the census (every evidence quote has basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B4, B5); strategies for worker-led governance (B1, B4); the Lab and its hub, two offerings (B5); the sections (B1); the library (B9); the library's selection (B9); method (B4, B2); scope (B4); the primer (B2, with Hanna's post); the primer's argument (B2, attributed to the hub, with AI Weekly's own reading and Hanna's post); assessment from outside (B2); the team (B4, B2); the operator (B4, B5; B1's footer); the launch (B3); access and terms (B1); reception, circulation and the name (B2); the video (B7); reception, the encyclopedia (B8). The home page and the About page state the definition in two forms ('worker-organizers', 'organizers'): one lineage, B1 kept for the opening. The census's self_description, self_description_2, method, scope, operator, case_studies, primers, library, limit, contract_language, alt_tech, team and license quotes restate B1, B4 and B9 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2-node.html the AI Weekly page at its node address; B7-search.html the YouTube results page that gave the video's URL, B7-429.html the watch page's bot-check response; B8 .wiki, .html, -variant.*, -search.*, -dair.wiki the raw Wikipedia responses with B8.txt a summary of codes and notices; B9 copied from the census's saved copy; check-*.html/.txt pages fetched to check a card or the census and not ledgered); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "DAIR Institute — Luddite Lab",
+   "url": "https://labor.dair-institute.org/",
+   "kind": "Overview card (the hub's home page; the census's own page dair-luddite-lab--home)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B1.html",
+     "sha256": "343f27de7b8db2909fe18d9b46c59d38f4af31f9fde5208e2316cd8402fbad47"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B1.txt",
+     "sha256": "7653940c0676088242b1ef0693a2db5f4e61d791200422e6ff3ceda96643cc23"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:43Z",
+    "http": 200,
+    "url": "https://labor.dair-institute.org/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B1.html",
+    "raw_sha256": "343f27de7b8db2909fe18d9b46c59d38f4af31f9fde5208e2316cd8402fbad47",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "dair-luddite-lab--home",
+     "sha256": "343f27de7b8db2909fe18d9b46c59d38f4af31f9fde5208e2316cd8402fbad47",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:17Z",
+     "http": "200",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('The Luddite Lab is a project of the Distributed AI Research Institute.'; '© 2026 DAIR')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the hub's host, the census record's url). The fetch is byte-identical to the census's saved copy (sha256 343f27de…), so the card and the census's own page are one page, carried once, as a card. The card's snippet ('Home. The Luddite Lab Resource Hub provides resources for unions, labor organizations, and worker-organizers fighting AI and automation at work. The lab provide...') is the page's opening, verbatim.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Luddite Lab",
+   "card_snippet": "Home. The Luddite Lab Resource Hub provides resources for unions, labor organizations, and worker-organizers fighting AI and automation at work. The lab provide...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "AI Weekly — Luddite Lab Publishes Primer Reframing AI Job Displacement",
+   "url": "https://aiweekly.co/alerts/luddite-lab-publishes-primer-reframing-ai-job-displacement",
+   "kind": "Overview card (a third-party news alert, by Alexis Dufresne, published 2026-06-28, updated 2026-08-15)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B2.html",
+     "sha256": "bb1f1d81661b2a2ca4e48b02c3bb0e0f87f84afc8a53a09fa60ac2136540ab09"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B2.txt",
+     "sha256": "b993faafc51025cdbf239f94c7ef56b2d0f2b9127fd87f6399075b2da3cd3e9e"
+    },
+    "B2-node.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B2-node.html",
+     "sha256": "bb1f1d81661b2a2ca4e48b02c3bb0e0f87f84afc8a53a09fa60ac2136540ab09"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:44Z",
+    "http": 200,
+    "url": "https://aiweekly.co/alerts/luddite-lab-publishes-primer-reframing-ai-job-displacement",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B2.html",
+    "raw_sha256": "bb1f1d81661b2a2ca4e48b02c3bb0e0f87f84afc8a53a09fa60ac2136540ab09",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B2.txt"
+    ],
+    "also": {
+     "url": "https://aiweekly.co/node/4066",
+     "at": "2026-10-29T22:31:44Z",
+     "http": 200,
+     "sha256": "bb1f1d81661b2a2ca4e48b02c3bb0e0f87f84afc8a53a09fa60ac2136540ab09",
+     "note": "the same page at its node address (byte-identical)"
+    }
+   },
+   "names_operator": "yes ('a project of the Distributed AI Research Institute (DAIR)'; 'Alex Hanna, Director of Research at DAIR')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site; the page's <title> is the card title with ' | AI Weekly'. The card's snippet is the page's second paragraph, verbatim. The page quotes 'the hub's core argument, as stated on its project page'; the hub's primers page fetched as a check (check-primers.html, HTTP 200, 2026-10-29T22:34:43Z, sha256 6b184746…) lists the primer and does not carry the quoted sentences; the primer itself was not fetched. The page embeds Bluesky posts by Alex Hanna and others; they are quoted here only as the page carries them (attributed).",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Luddite Lab Publishes Primer Reframing AI Job Displacement",
+   "card_snippet": "The Luddite Lab, a project of the Distributed AI Research Institute (DAIR), describes its work as \"applied research insights into AI, automation, and the future...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "LinkedIn — Launching the Luddite Lab Resource Hub | Alex Hanna, Ph.D.",
+   "url": null,
+   "kind": "Overview card (unreachable: no URL found)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:30Z",
+      "what": "WebSearch: Alex Hanna LinkedIn \"Launching the Luddite Lab Resource Hub\"",
+      "result": "no linkedin.com result"
+     },
+     {
+      "at": "2026-10-29T22:30Z",
+      "what": "WebSearch: linkedin.com/posts alex hanna luddite lab resource hub launch DAIR \"THIS WEDNESDAY\"",
+      "result": "no linkedin.com result"
+     },
+     {
+      "at": "2026-10-29T22:31Z",
+      "what": "WebSearch: \"Luddite Lab Resource Hub\" Alex Hanna linkedin",
+      "result": "no linkedin.com result"
+     },
+     {
+      "at": "2026-10-29T22:32Z",
+      "what": "WebSearch: site:linkedin.com \"Luddite Lab Resource Hub\"",
+      "result": "no post URL (one unrelated profile)"
+     }
+    ],
+    "note": "No post URL could be found, so nothing was fetched. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('The Distributed AI Research Institute (DAIR)' in the snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The snippet's '5mo' and 'THIS WEDNESDAY' place the post in the week of the launch; the Luddite Lab newsletter's launch post (check-buttondown-launch.html, fetched 2026-10-29T22:31:47Z, sha256 a1a6b67b…) gives the launch as 'Wednesday, May 20 at 9 AM - 10 AM PDT' (posted May 5, 2026). That page is not a card and is not ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Launching the Luddite Lab Resource Hub | Alex Hanna, Ph.D.",
+   "card_snippet": "Alex Hanna, Ph.D.'s Post Alex Hanna, Ph. D. 5mo THIS WEDNESDAY: join The Distributed AI Research Institute (DAIR) as we launch the Luddite Lab Resource Hub, a r...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "DAIR Institute — About - Luddite Lab",
+   "url": "https://labor.dair-institute.org/about",
+   "kind": "Overview card (the hub's About page; the census's own page dair-luddite-lab--about)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B4.html",
+     "sha256": "be4ecd22800ef8d5071abe23be8bc64a8fa08cda7dfcdb6bb81dab006a27bee8"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B4.txt",
+     "sha256": "7febf71090dc5f34a674a772274cc2e636f2fb57ac60e9debcf03d8e44cf5744"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:43Z",
+    "http": 200,
+    "url": "https://labor.dair-institute.org/about",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B4.html",
+    "raw_sha256": "be4ecd22800ef8d5071abe23be8bc64a8fa08cda7dfcdb6bb81dab006a27bee8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B4.txt"
+    ],
+    "census_copy": {
+     "src": "dair-luddite-lab--about",
+     "sha256": "80633ec0d896874fc19f53c5b2aa43bad24d2565b5a81c79f2e89b4f70bfd150",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:18Z",
+     "http": "200",
+     "agrees": "text identical; bytes differ only in the page's script payload (a Next.js flight-data chunk index), checked by diff of the extracted text"
+    }
+   },
+   "names_operator": "yes ('The Luddite Lab is a project of the Distributed AI Research Institute (DAIR)'; the team's DAIR titles)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title. The page's text agrees with the census's saved copy (sha256 80633ec0…), so the card and the census's own page are one page, carried once, as a card. The card's snippet is the page's opening, verbatim. The census's evidence quote for the operator carries a space before the final period ('(DAIR) .'), as its own text extraction does; the text extracted here closes it up.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "About - Luddite Lab",
+   "card_snippet": "About The Luddite Lab Resource Hub provides resources for unions, labor organizations, and organizers fighting AI and automation at work. We provide strategies ...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Buttondown — The Luddite Lab - Buttondown",
+   "url": "https://buttondown.com/luddite-lab",
+   "kind": "Overview card (the Luddite Lab's newsletter page on Buttondown)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B5.html",
+     "sha256": "325f7f7e08aa875a0fa55753541aa48f999c63aea5efec564f51fe995cee6fb7"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B5.txt",
+     "sha256": "6109f1e46b794ffa7e068ebd2c2423db1c31ff0b5c2a495717362f71a0356ae7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:45Z",
+    "http": 200,
+    "url": "https://buttondown.com/luddite-lab",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B5.html",
+    "raw_sha256": "325f7f7e08aa875a0fa55753541aa48f999c63aea5efec564f51fe995cee6fb7",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('The Luddite Lab is a project of the Distributed AI Research Institute (DAIR).')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch (buttondown.com/luddite-lab/archive/ and its posts); the newsletter's root page carries the description the card's title names. The card's snippet ('The Luddite Lab Resource Hub focuses on developing tools, resources, and political education for both unions in the bargaining contract process and workers who ...') is not verbatim on the page or in its meta description, which read 'The Luddite Lab develops tools, resources, and political education for both unions in the bargaining contract process and workers who want to push back …': the snippet makes the Resource Hub the subject of what the page says of the Lab. Recorded, not resolved; the page's own words are ledgered. The archive page and the launch post were fetched as checks (check-buttondown-archive.*, check-buttondown-launch.*) and are not ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "The Luddite Lab - Buttondown",
+   "card_snippet": "The Luddite Lab Resource Hub focuses on developing tools, resources, and political education for both unions in the bargaining contract process and workers who ...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (the homonym's page)",
+   "card": "Luddite Labs — About us - Luddite Labs",
+   "url": "https://www.ludditelabs.io/about",
+   "kind": "Overview card of the homonym Luddite Labs (a San Diego software company), recorded as the homonym's, with its sense; not part of the entity's field claims",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B6.html",
+     "sha256": "911f1f151decec87628dea5492437dfcaeab2582c094ccfd2fd1bdfb0a3ba345"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B6.txt",
+     "sha256": "90497b4288b7cb1747a17c46f65258144010c2b963d5a37a9402253dab2150b9"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:48Z",
+      "url": "https://ludditelabs.com/about",
+      "http": null,
+      "result": "curl (56) CONNECT tunnel failed, response 502 (no page)"
+     },
+     {
+      "at": "2026-10-29T22:31:49Z",
+      "url": "https://www.ludditelabs.io/about",
+      "http": 200,
+      "sha256": "911f1f151decec87628dea5492437dfcaeab2582c094ccfd2fd1bdfb0a3ba345"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B6.html",
+    "raw_sha256": "911f1f151decec87628dea5492437dfcaeab2582c094ccfd2fd1bdfb0a3ba345",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "no (the homonym's own page; it names no DAIR)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "homonym": {
+    "name": "Luddite Labs",
+    "sense": "a software company in San Diego whose 'AI-powered tools help developers spend more time creating software solutions and less time debugging and maintaining code' (its About page); tools Autodoc and Code Search",
+    "quote": "Luddite Labs is empowering the next generation of software developers. We curate knowledge in software engineering and seamlessly deliver it into your workflow. Our AI-powered tools help developers spend more time creating software solutions and less time debugging and maintaining code."
+   },
+   "note": "URL by the card's site name: the .com host failed at the tunnel (502), the .io host served the page; its <title> 'About us - Luddite Labs - artificial intelligence and software engineering' begins with the card title, and the card's snippet is the page's opening, verbatim. A homonym (addendum §5 by analogy): the card concerns another entity and is recorded as the homonym's; no field claim of the entity is drawn from it.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "About us - Luddite Labs",
+   "card_snippet": "About us - Luddite Labs * About Luddite Labs * Luddite Labs is empowering the next generation of software developers. We curate knowledge in software engineerin...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (video)",
+   "card": "YouTube · Blood in the Machine — Why workers are turning on AI (video, 58:24)",
+   "url": "https://www.youtube.com/watch?v=uqGC7OePVrE",
+   "kind": "Overview card (a video; unreachable: bot check)",
+   "files": {
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B7-search.html",
+     "sha256": "f74316bb304a84c72c7f69017aac3634c146b2ca467bc38d08d045b1df997224"
+    },
+    "B7-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B7-429.html",
+     "sha256": "cbcf3f015d7a224b4f574416fe6d25e11e5ba837d79f33e248cbd9013ffc7fb9"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:03Z",
+      "url": "https://www.youtube.com/results?search_query=%22Why+workers+are+turning+on+AI%22+Blood+in+the+Machine",
+      "http": 200,
+      "sha256": "f74316bb304a84c72c7f69017aac3634c146b2ca467bc38d08d045b1df997224",
+      "result": "the results page lists videoId uqGC7OePVrE with the title 'Why workers are turning on AI' and the channel 'Blood in the Machine' (58 minutes): the URL found"
+     },
+     {
+      "at": "2026-10-29T22:33:19Z",
+      "url": "https://www.youtube.com/watch?v=uqGC7OePVrE",
+      "http": 429,
+      "sha256": "cbcf3f015d7a224b4f574416fe6d25e11e5ba837d79f33e248cbd9013ffc7fb9",
+      "result": "redirected to https://www.google.com/sorry/index (a bot check); saved as B7-429.html; not retried with another agent or route (addendum §4)"
+     }
+    ],
+    "note": "The watch page refused the honest agent with a bot check. The video is admitted through its title (the card has no snippet); no transcript or description was read."
+   },
+   "names_operator": "unknown (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Whether the video concerns the hub cannot be told from its title; it is carried as a card of the field, title only.",
+   "surfaced_by_T": [
+    {
+     "slug": "luddite-lab-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "Why workers are turning on AI",
+   "card_snippet": null,
+   "card_note": "video, 58:24"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Luddite Lab (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Luddite_Lab&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8.wiki",
+     "sha256": "9d40be6f73615b33ed0818dd61058978f785358a4e23d2f159e8abae86ca4464"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8.html",
+     "sha256": "193156675a5aabc992b65829d6802311d74c06b96642f2bb2fa2dff2ea0b4f6d"
+    },
+    "B8-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8-variant.wiki",
+     "sha256": "f2e0135401b16694794ea032e8b202730d4e094ed460b74fc04d346eb68eee95"
+    },
+    "B8-variant.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8-variant.html",
+     "sha256": "b8355602f5c4dce1e50938ffaea754b391c121d5b6a590bb47e16d91f071a6fa"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8-search.html",
+     "sha256": "717a716bd88466943c01eb8108b802431806c35bf31c51665629e8325ea8bfcd"
+    },
+    "B8-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8-search.txt",
+     "sha256": "baca36861553b583761ea2608eb842717bea6b131d179bc586ba6536b053f20c"
+    },
+    "B8-dair.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8-dair.wiki",
+     "sha256": "014ccad625102e9aa8d1fd3640cca7fe97ff641c789eb560217d70b734c3213a"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8.txt",
+     "sha256": "a625640f3deca18533657621f5b688176c9662f0339cdfba651853e90096e9b0"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "tries": [
+     {
+      "at": "2026-10-29T22:33:32Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Luddite_Lab&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:33:36Z",
+      "url": "https://en.wikipedia.org/wiki/Luddite_Lab?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T22:33:39Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Luddite_Lab_Resource_Hub&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:33:41Z",
+      "url": "https://en.wikipedia.org/wiki/Luddite_Lab_Resource_Hub?redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T22:33:43Z",
+      "url": "Special:Search \"Luddite Lab\" (article space, full text)",
+      "http": 429,
+      "result": "rate-limited; refetched with the same agent after a pause"
+     },
+     {
+      "at": "2026-10-29T22:34:20Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Luddite+Lab%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'There were no results matching the query.'"
+     },
+     {
+      "at": "2026-10-29T22:33:46Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Distributed_Artificial_Intelligence_Research_Institute&action=raw",
+      "http": 200,
+      "result": "the operator's article; no occurrence of 'Luddite'"
+     }
+    ],
+    "raw_sha256": "193156675a5aabc992b65829d6802311d74c06b96642f2bb2fa2dff2ea0b4f6d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B8.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "the operator's own article exists (B8-dair.wiki) and does not name the hub",
+   "names_archive": "no",
+   "note": "No article and no redirect under either name, and no article text containing \"Luddite Lab\". The operator's article (Distributed Artificial Intelligence Research Institute) was read for a section on the hub: it has none. B8.txt is a summary of the response codes and notices, written for this row."
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the census's own page dair-luddite-lab--resources (not surfaced by T)",
+   "card": "DAIR Institute — Resource Library - Luddite Lab",
+   "url": "https://labor.dair-institute.org/resources",
+   "kind": "own page (the hub's Resource Library index), cited by the Labor Vector census record; copied from the census's saved copy",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B9.html",
+     "sha256": "cbe511c0f9586442c40eb4ce302ce48e0ea63da93ba6c81b01716ec20788729f"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B9.txt",
+     "sha256": "495951fc6282d391ac2800a5bdb8659e2bca01940a6423844bccd738668e16de"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "dair-luddite-lab--resources",
+    "read": "2026-10-29",
+    "fetched": "2026-10-29T21:49:18Z",
+    "http": "200",
+    "url": "https://labor.dair-institute.org/resources",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B9.html",
+    "raw_sha256": "cbe511c0f9586442c40eb4ce302ce48e0ea63da93ba6c81b01716ec20788729f",
+    "census_sha256": "cbe511c0f9586442c40eb4ce302ce48e0ea63da93ba6c81b01716ec20788729f",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--resources.html.gz (gunzipped) and dair-luddite-lab--resources.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dair-luddite-lab-20261029/B9.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('The Luddite Lab is a project of the Distributed AI Research Institute.'; '© 2026 DAIR')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T, though it is linked from the hub's pages on cards 1 and 4. The census's saved copy is intact (its sha256 matches the census record), so it was copied and not refetched. The census's other own pages, home and about, are cards B1 and B4."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s1",
+   "quote": "The Luddite Lab Resource Hub provides resources for unions, labor organizations, and worker-organizers fighting AI and automation at work.",
+   "claim": "the hub defined by its home page: resources for unions, labor organizations and worker-organizers fighting AI and automation at work",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: resources for unions and organizers fighting AI and automation at work",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7653940c06760882…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About ¶1 s1",
+   "quote": "The Luddite Lab Resource Hub provides resources for unions, labor organizations, and organizers fighting AI and automation at work.",
+   "claim": "the About page's form of the definition ('organizers' for the home page's 'worker-organizers')",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: resources for unions and organizers fighting AI and automation at work",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "newsletter description s1",
+   "quote": "The Luddite Lab develops tools, resources, and political education for both unions in the bargaining contract process and workers who want to push back against AI and other automation technology.",
+   "claim": "the Lab's newsletter: it develops tools, resources and political education for unions in bargaining and for workers who want to push back against AI and automation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: resources for unions and organizers fighting AI and automation at work",
+   "date": "undated (the newsletter's first post 2025-10-30)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 6109f1e46b794ffa…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s2",
+   "quote": "The lab provides strategies for worker-led governance and oversight of new technology through case studies, primers, and a resource library.",
+   "claim": "it provides strategies for worker-led governance and oversight of new technology, through case studies, primers and a resource library",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "strategies for worker-led governance and oversight of new technology",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7653940c06760882…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About ¶1 s2",
+   "quote": "We provide strategies for worker-led governance and oversight of new technology through case studies, primers, and a resource library.",
+   "claim": "the About page states the same in the first person",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "strategies for worker-led governance and oversight of new technology",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "newsletter description s2",
+   "quote": "We aim to provide two different offerings: 1) an accessible resource hub which outlines case studies and strategies for governance and oversight of technology at work, both in general and for specific worker groups; and 2) trainings for unions, labor organizations, and worker organizations around automation and AI.",
+   "claim": "the Lab's two offerings: an accessible resource hub (case studies and strategies for governance and oversight of technology at work) and trainings for unions and worker organizations on automation and AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Lab and its hub: two offerings, the hub and trainings",
+   "date": "undated (the newsletter's first post 2025-10-30)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 6109f1e46b794ffa…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home, section blurbs",
+   "quote": "Case Studies … Stories from worker organizers resisting AI … Primers … Applied research insights into AI, automation, and the future of work … Resource Library … Additional resources from partners",
+   "claim": "its three sections: case studies (stories from worker organizers resisting AI), primers (applied research insights into AI, automation and the future of work), a resource library (additional resources from partners)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sections: case studies, primers, a resource library",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7653940c06760882…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F8": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library ¶1 s1",
+   "quote": "The following are a list of resources which the Luddite Lab team has reviewed and often used in conversations around generative AI in the workplace.",
+   "claim": "the library: resources the team has reviewed and often used in conversations about generative AI in the workplace",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: what it collects",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library ¶1 s2",
+   "quote": "The resources include research-based and policy-centered primers, organizing toolkits aimed at mobilizing non-unionized and precarious workers, tools for starting conversations with colleagues about generative AI, and repositories and examples of draft contract language for technology governance.",
+   "claim": "what it includes: research and policy primers, organizing toolkits for non-unionized and precarious workers, conversation tools on generative AI, and draft contract language for technology governance",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the library: what it collects",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library, categories",
+   "quote": "Research & Policy Primers … Organizing Toolkits … Popular education modules and activities to develop organizing skills and strategies … Political Education … Materials and activities to support political education",
+   "claim": "its categories of primers, organizing toolkits (popular education modules) and political education",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: what it collects",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F11": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library, category 'Contract Language'",
+   "quote": "Examples of pro-worker contract language related to automation and AI",
+   "claim": "a category of pro-worker contract language on automation and AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: what it collects",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library, category 'Alternative Technology Projects'",
+   "quote": "Examples of technology platforms built by workers, to protect their rights",
+   "claim": "a category of technology platforms built by workers to protect their rights",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: what it collects",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Resource Library ¶1 s3–4",
+   "quote": "We highlight those resources which we find to be helpful and actionable as organizing tools. This means we typically shy away from general statements of principles.",
+   "claim": "the library's stated selection: resources found helpful and actionable as organizing tools; it typically shies away from general statements of principles",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the library's selection: actionable organizing tools, not statements of principles",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 495951fc6282d391…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About ¶2 s1",
+   "quote": "This Resource Hub is the result of dozens of conversations with unionists from multiple different industries, such as journalism, entertainment, and nursing, who have been fighting–and winning–against industrial automation and workplace surveillance at work; literature reviews of existing struggles; and our background in the labor movement.",
+   "claim": "its method: dozens of conversations with unionists in journalism, entertainment, nursing and other industries who have been fighting and winning against industrial automation and workplace surveillance; literature reviews; the team's labor-movement background",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: conversations with unionists, literature reviews, a labor background",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'The resource hub grew from conversations' s1",
+   "quote": "The resource hub grew from conversations with union members across industries including journalism, entertainment, and nursing, combined with literature reviews and labor movement expertise.",
+   "claim": "AI Weekly restates the method",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: conversations with unionists, literature reviews, a labor background",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About ¶2 s2",
+   "quote": "This is a publicly accessible resource which not only discusses the harms of particular technologies, but also highlights a range of organizing strategies which workers have used to push back.",
+   "claim": "its scope: a publicly accessible resource on the harms of particular technologies and the organizing strategies workers have used to push back",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "scope: the harms of technologies and the strategies workers have used",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "TL;DR s1; ¶ 'A resource hub aimed at union organizers' s1",
+   "quote": "The Luddite Lab, a DAIR project, published a primer titled 'Myths About Generative AI, Productivity, and Job Displacement.' … offered in both a condensed executive summary and a full version",
+   "claim": "AI Weekly: it published a primer, 'Myths About Generative AI, Productivity, and Job Displacement', in an executive summary and a full version",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the primer: myths about generative AI, productivity and job displacement",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "embedded Bluesky post (Alex Hanna)",
+   "quote": "We are also releasing a new research primer, \"Myths about Generative AI, Productivity, and Labor Displacement\", which discusses five common myths around generative AI at work. This primer will be the first of many.",
+   "claim": "Alex Hanna, quoted on the page: a primer on five common myths about generative AI at work, 'the first of many' (her title has 'Labor Displacement')",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the primer: myths about generative AI, productivity and job displacement",
+   "date": "undated on the page (before 2026-06-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "embedded Bluesky post (Alex Hanna)",
+   "quote": "In our primer, we discuss how \"AI\" is a cudgel against workers and a set of technologies premised on labor intensification. They don't increase productivity and break work processes and norms.",
+   "claim": "Alex Hanna, quoted on the page: the primer treats 'AI' as a cudgel against workers and technologies premised on labor intensification, which do not increase productivity",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the primer's argument: displacement as a firm's market strategy",
+   "date": "undated on the page (before 2026-06-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'The hub's core argument' s1–2",
+   "quote": "The hub's core argument, as stated on its project page, is that workers are being displaced by AI \"not due to the actual ability of AI technology doing the jobs of workers to the same quality, or even to a sufficient quality.\" Instead, the lab characterizes it as \"a market-oriented move by firms to brag about becoming AI-first, while finding cost-savings by laying off employees.\"",
+   "claim": "AI Weekly, quoting the hub: workers are displaced not because AI does their jobs to the same or a sufficient quality, but by 'a market-oriented move by firms to brag about becoming AI-first, while finding cost-savings by laying off employees'",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the primer's argument: displacement as a firm's market strategy",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'The hub's core argument' s3",
+   "quote": "That reframing shifts the conversation from technological inevitability to strategic choice, giving organizers different ground to stand on in collective bargaining.",
+   "claim": "AI Weekly's own reading: the reframing moves the conversation from technological inevitability to strategic choice, and gives organizers ground in collective bargaining",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the primer's argument: displacement as a firm's market strategy",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'One thing to keep in mind' s1–2",
+   "quote": "One thing to keep in mind is that this is advocacy-oriented research. The primer's specific arguments are not retrievable from the public page without downloading the documents, so it is not possible to assess whether the \"myths\" framing holds up against the broader empirical literature on AI productivity.",
+   "claim": "AI Weekly's limit: advocacy-oriented research, whose 'myths' framing it could not assess against the empirical literature on AI productivity",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "assessment from outside: advocacy-oriented research",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Editor's note s1–3",
+   "quote": "The Luddite Lab's framing matters for practitioners on both sides of the bargaining table: if displacement is primarily a cost-cutting strategy rather than a genuine capability story, it changes what evidence is relevant in AI-related labor disputes. The primer format, available in both executive summary and full versions, is designed for practical use by organizers, not just academics. Watch whether this specific 'myths' framing starts appearing in collective bargaining proposals in journalism, entertainment, and nursing.",
+   "claim": "AI Weekly's editor's note: the framing bears on what evidence counts in AI-related labor disputes; the primer is made for organizers; whether it appears in collective bargaining proposals is a thing to watch",
+   "modality": "interpretation",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "assessment from outside: advocacy-oriented research",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "The Team",
+   "quote": "Alex Hanna … Director of Research, DAIR Institute … Adrienne Williams … Community-Based Researcher, DAIR Institute … Hannah Lipstein is a Research Associate with the Luddite Lab at DAIR.",
+   "claim": "the team as the About page lists it: Alex Hanna, Director of Research, DAIR Institute; Adrienne Williams, Community-Based Researcher; Hannah Lipstein, Research Associate with the Luddite Lab; no founder is named",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the team and who leads it",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Alumni; credits",
+   "quote": "Alumni … Tina M. Park … Executive Director, Upturn … Sophie Song … Data Center Policy Fellow, AI Now Institute",
+   "claim": "its alumni: Tina M. Park (Upturn) and Sophie Song (AI Now Institute)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the team and who leads it",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'The resource hub grew from conversations' s2",
+   "quote": "The team is led by Alex Hanna, Director of Research at DAIR, and Hannah Lipstein, Research Associate there.",
+   "claim": "AI Weekly: the team is led by Alex Hanna and Hannah Lipstein",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the team and who leads it",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About, closing line",
+   "quote": "The Luddite Lab is a project of the Distributed AI Research Institute (DAIR).",
+   "claim": "the operator: a project of the Distributed AI Research Institute (DAIR)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "the operator: a project of DAIR",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7febf71090dc5f34…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "newsletter description s3",
+   "quote": "The Luddite Lab is a project of the Distributed AI Research Institute (DAIR). You can learn more about DAIR at https://dair-institute.org.",
+   "claim": "the newsletter states the same",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: a project of DAIR",
+   "date": "undated (the newsletter's first post 2025-10-30)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 6109f1e46b794ffa…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title and snippet (LinkedIn unreachable: no URL found)",
+   "quote": "Alex Hanna, Ph.D.'s Post Alex Hanna, Ph. D. 5mo THIS WEDNESDAY: join The Distributed AI Research Institute (DAIR) as we launch the Luddite Lab Resource Hub, a r...",
+   "claim": "Alex Hanna's post announced DAIR's launch of the hub for 'THIS WEDNESDAY' (about five months before the capture)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the launch",
+   "date": "undated on the card ('5mo' before 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F30": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home, footer",
+   "quote": "Get in touch … Consultation Form … General Form … © 2026 DAIR. All rights reserved.",
+   "claim": "contact by consultation and general forms; © 2026 DAIR, all rights reserved",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and terms",
+   "date": "© 2026 (page read 2026-10-29; the hub launched 2026-05-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7653940c06760882…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶ 'The hub's core argument' s4; embedded post (ncaaupgip)",
+   "quote": "Six experts in our Who's Who directory shared the primer, suggesting the framing is already circulating among people who follow this beat. … This is also a really helpful resource from Luddite Labs at @dairinstitute.bsky.social for countering common arguments we hear in the university",
+   "claim": "AI Weekly: six experts shared the primer; one shared post calls the hub 'Luddite Labs at @dairinstitute'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: circulation and the name",
+   "date": "2026-06-28 (published; updated 2026-08-15)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b993faafc51025cd…), whitespace-normalised; each part of the multi-part quote checked"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (video unreachable: bot check)",
+   "quote": "Why workers are turning on AI",
+   "claim": "a video, 'Why workers are turning on AI', on the channel Blood in the Machine (58:24); its subject cannot be read beyond its title",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "workers turning on AI: the video",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable video card; no snippet)"
+  },
+  "F33": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles Luddite Lab and Luddite Lab Resource Hub; article-space search; the operator's article",
+   "quote": "raw wikitext (action=raw, redirect=no), title Luddite_Lab, 2026-10-29T22:33:32Z: HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query. … the operator's article, Distributed_Artificial_Intelligence_Research_Institute (raw wikitext), 2026-10-29T22:33:46Z: HTTP 200; the article does not contain the string \"Luddite\".",
+   "claim": "Wikipedia has no article on the hub under either name, no redirect, and no article text containing the name; the operator's article does not name it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a625640f3deca185…), whitespace-normalised; each part of the multi-part quote checked"
+  }
+ },
+ "field_sources": {
+  "B1": "DAIR Institute — Luddite Lab",
+  "B2": "AI Weekly — Luddite Lab Publishes Primer Reframing AI Job Displacement",
+  "B3": "LinkedIn — Launching the Luddite Lab Resource Hub | Alex Hanna, Ph.D.",
+  "B4": "DAIR Institute — About - Luddite Lab",
+  "B5": "Buttondown — The Luddite Lab - Buttondown",
+  "B6": "Luddite Labs — About us - Luddite Labs",
+  "B7": "YouTube · Blood in the Machine — Why workers are turning on AI (video, 58:24)",
+  "B8": "Wikipedia — Luddite Lab (no article)",
+  "B9": "DAIR Institute — Resource Library - Luddite Lab"
+ }
+}

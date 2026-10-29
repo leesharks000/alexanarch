@@ -1,0 +1,1711 @@
+{
+ "row": "ilo-genai-exposure-index",
+ "address": "ILO Generative AI and Jobs index",
+ "addresses": [
+  "ILO Generative AI and Jobs index"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw Wikipedia wikitext for the four citing articles, or the card's title and snippet for the four unreachable cards; 76/76 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the ILO's publication page; B2 the ILO's research brief page, byte-identical to the census's own page 'brief'; B3 a LinkedIn post, unreachable; B4 NASK's ILO–NASK Index page; B5 The People Space; B6 and B7 ILO videos, title only; B8 Scribd, unreachable); 'own_page', the census's own pages that T did not surface (B9 the working paper's HTML edition, copied from the census's saved copy and its text extracted here because the census's .txt is the raw HTML; B10 the ILO Observatory, the census's source for its evidence 'observatory'); 'wikipedia', no article, with the four articles that cite the paper (B11). The census read no third-party source for this record (every evidence item has basis 'operator'), so there is no 'census_third_party' origin. Fetches used the honest agent 'Mozilla/5.0 (compatible; Labor-Vector-census)'; no source refused it.",
+ "lineage_note": "Lineages, in the plan's order: what it is: the ILO's index of occupational exposure to GenAI, refined; the makers: the ILO, NASK and the authors; lineage: the 2023 index; method: workers scoring tasks, experts, LLMs, a predictor; the unit: a task's automation score, an occupation's mean and spread, four gradients; findings: shares of employment exposed, by income and sex; findings: which occupations; transformation over redundancy, and its qualification; the stated limits: exposure not impact, an upper threshold, a snapshot; the stated limits of the survey: Poland, the sample, the match; gains, direction and transition: what the index says of them; publication and access; where it lives: the ILO's Observatory and later work; reception: commentary; reception: the encyclopedia. The working paper is one work in its HTML edition (B9), its publication page (B1, carrying the abstract) and its Scribd copy (B8): one lineage per claim, B9 and B1 sharing the date 20 May 2025. The brief (B2) restates the paper's findings at its own grain. The census's evidence quotes restate B9, B2 and B10 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2.txt and B10.txt copied from the census; B9-census.txt the census's .txt for the paper, which is raw HTML; B11 .wiki, .html, -search.*, -cite1..5.wiki raw Wikipedia responses; B4-alt.* the redirect record for nask.pl/en/index; T1-ilo-generative-ai-and-jobs-index-aio-20261029.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "International Labour Organization — Generative AI and Jobs: A Refined Global Index of Occupational Exposure | International Labour Organization",
+   "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+   "kind": "Overview card (the ILO's publication page for Working Paper 140, 20 May 2025)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B1.html",
+     "sha256": "f53847a18e44fe9c14e94244c4b6526c329ead9e0db0467d300baf160448b421"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B1.txt",
+     "sha256": "1da4de837ab8e92f96164faddcace998ac5abcc7137332517b94731df3a91ce3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:26Z",
+    "http": 200,
+    "url": "https://www.ilo.org/node/706766",
+    "final_url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B1.html",
+    "raw_sha256": "f53847a18e44fe9c14e94244c4b6526c329ead9e0db0467d300baf160448b421",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B1.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)"
+   },
+   "names_operator": "yes ('International Labour Organization', 'ILO Working Paper 140', '© 1996-2026 International Labour Organization (ILO)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (ilo.org/node/706766, which redirects to the publication page); the page's <title> is the card title. The card's snippet ('Methodology: Updated 2025 ILO index combining 52,558 task automation data points, expert surveys, and Delphi discussions across ISCO-08 classifications, establi...') is not the page's wording: 'Methodology:' does not occur in the saved text. Recorded, not resolved.",
+   "card_title": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure | International Labour Organization",
+   "card_snippet": "Methodology: Updated 2025 ILO index combining 52,558 task automation data points, expert surveys, and Delphi discussions across ISCO-08 classifications, establi...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 1
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 (also the census's own page 'brief')",
+   "card": "International Labour Organization — Generative AI and jobs: A 2025 update | International Labour Organization",
+   "url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+   "kind": "Overview card (the ILO's research brief page, 20 May 2025)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B2.html",
+     "sha256": "d01982bba323de9605e1fb36bb76f3144de14b2c64e930355f9bd04c9e5c15de"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B2.txt",
+     "sha256": "a3dfbeb78b2a50b8543a02de5a7bdcd3559a5be53a0f3ae6e465cf7a52a1f4b7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:28Z",
+    "http": 200,
+    "url": "https://www.ilo.org/node/706776",
+    "final_url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B2.html",
+    "raw_sha256": "d01982bba323de9605e1fb36bb76f3144de14b2c64e930355f9bd04c9e5c15de",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "census_copy": {
+     "id": "ilo-genai-exposure-index--brief",
+     "url": "https://www.ilo.org/node/706776",
+     "sha256": "d01982bba323de9605e1fb36bb76f3144de14b2c64e930355f9bd04c9e5c15de",
+     "fetched": "2026-10-29T21:49:13Z",
+     "read": "2026-10-29"
+    }
+   },
+   "names_operator": "yes ('International Labour Organization', authors named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (ilo.org/node/706776, the census's own URL for the brief, which redirects to the brief's page). The fetch is byte-identical to the census's saved copy (sha256 d01982bb…): one source, carried once as a card, with the census's text extraction copied as B2.txt. The card's snippet ('Methodology: Updated 2025 ILO framework combining human and AI insight at the 6-digit occupational level across nearly 30,000 tasks, defining four gradients of ...') paraphrases bullets 2–3 of the page; 'Methodology:' does not occur in it.",
+   "card_title": "Generative AI and jobs: A 2025 update | International Labour Organization",
+   "card_snippet": "Methodology: Updated 2025 ILO framework combining human and AI insight at the 6-digit occupational level across nearly 30,000 tasks, defining four gradients of ...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 2
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "LinkedIn·Grace S. Thomson — A Refined Global Index of Occupational Exposure | Grace S. Thomson",
+   "url": null,
+   "kind": "Overview card (a LinkedIn post, '1y')",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "result": "unreachable: no URL found",
+    "tried": [
+     "WebSearch: 'Grace S. Thomson LinkedIn \"A Refined Global Index of Occupational Exposure\"'",
+     "WebSearch: 'linkedin.com/posts grace thomson International Labour Organization report Generative AI and Jobs May 2025 comprehensive assessment'",
+     "WebSearch: '\"Grace S. Thomson\" Generative AI and Jobs ILO'",
+     "WebSearch: 'site:linkedin.com \"Grace S. Thomson\"'",
+     "WebSearch: '\"Grace Thomson\" LinkedIn post ILO \"Generative AI and Jobs\" \"Refined Global Index\"'"
+    ],
+    "text": []
+   },
+   "names_operator": "yes in the snippet ('International Labour Organization')",
+   "names_archive": "no (card title and snippet)",
+   "note": "No search returned the post; its title and snippet stand as its only text (§3.1(a)). Not retried by any other route.",
+   "card_title": "A Refined Global Index of Occupational Exposure | Grace S. Thomson",
+   "card_snippet": "Grace S. Thomson's Post Grace S. Thomson 1y This International Labour Organization report on Generative AI and Jobs [May 2025] presents a comprehensive assessme...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 3
+    }
+   ]
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "NASK – Państwowy Instytut Badawczy — ILO-NASK Indeks",
+   "url": "https://www.nask.pl/index",
+   "kind": "Overview card (NASK's page for the ILO–NASK Index, English version; undated, © 2026)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B4.html",
+     "sha256": "54770c9c03391c095516f8ef35dc038ab303ac0a41d86aaa6384648191b342bc"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B4.txt",
+     "sha256": "998ee35dd2c9f7ebc0b87f18409f93664c00f1f9438b3489c4a7d2be309abeca"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:06Z",
+    "http": 200,
+    "url": "https://www.nask.pl/index",
+    "final_url": "https://www.nask.pl/index",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B4.html",
+    "raw_sha256": "54770c9c03391c095516f8ef35dc038ab303ac0a41d86aaa6384648191b342bc",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B4.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "also": {
+     "at": "2026-10-29T22:31:08Z",
+     "url": "https://www.nask.pl/en/index",
+     "http": 200,
+     "final_url": "https://www.nask.pl/index",
+     "result": "redirected to https://www.nask.pl/index; byte-identical to B4.html, not kept"
+    }
+   },
+   "names_operator": "yes ('International Labour Organization (ILO)', 'NASK Analysis and Research Office', 'NASK PIB')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch (results titled 'Hero background' for nask.pl/index and nask.pl/en/index); the page's <title> is the card title, 'ILO-NASK Indeks'. The card's snippet ('Methodology: Developed by ILO and NASK to assess generative AI's task-level impact on work, updating the ILO's 2023 Global Index using advanced AI and worker fa...') paraphrases the page; 'Methodology:' does not occur in it. The page serves English under the Polish title.",
+   "card_title": "ILO-NASK Indeks",
+   "card_snippet": "Methodology: Developed by ILO and NASK to assess generative AI's task-level impact on work, updating the ILO's 2023 Global Index using advanced AI and worker fa...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 4
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "The People Space — What ILO's Global Index tells us about GenAI and jobs | The People Space",
+   "url": "https://www.thepeoplespace.com/insights/ideas/what-ilos-global-index-tells-us-about-genai-and-jobs",
+   "kind": "Overview card (an article in an HR magazine by Sian Harrington, 4 June 2025)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B5.html",
+     "sha256": "674448bff10dc4e5ad71c7cbaae654b93a28674e1950fb20cd716bb2860ccbc9"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B5.txt",
+     "sha256": "22c31808fedd7a2088a740a0668e851cb8a26c53c78d34477891f046cfb406b0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:30:31Z",
+    "http": 200,
+    "url": "https://www.thepeoplespace.com/ideas/articles/what-ilos-global-index-tells-us-about-genai-and-jobs",
+    "final_url": "https://www.thepeoplespace.com/insights/ideas/what-ilos-global-index-tells-us-about-genai-and-jobs",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B5.html",
+    "raw_sha256": "674448bff10dc4e5ad71c7cbaae654b93a28674e1950fb20cd716bb2860ccbc9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B5.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)"
+   },
+   "names_operator": "yes ('International Labour Organization (ILO)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site; the page's <title> is the card title. The snippet ('The results bring clarity to what AI can and can't do in the workplace right now. * One in four jobs touched by GenAI but transformation, not replacement, is th...') is the article's ¶1 last sentence and its first subhead.",
+   "card_title": "What ILO's Global Index tells us about GenAI and jobs | The People Space",
+   "card_snippet": "The results bring clarity to what AI can and can't do in the workplace right now. * One in four jobs touched by GenAI but transformation, not replacement, is th...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 5
+    }
+   ]
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (video, 11m)",
+   "card": "YouTube·International Labour Organization — Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.",
+   "url": null,
+   "kind": "Overview card (a video, 11 minutes; no snippet)",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "result": "unreachable: no URL found; a video card is admitted through title and snippet (§3.1(a)), and this card has no snippet",
+    "tried": [
+     "WebSearch: 'youtube International Labour Organization \"Generative AI and Jobs: A global analysis of potential effects on job quantity and quality\"'",
+     "WebSearch: 'youtube.com watch ILO video \"Generative AI and Jobs\" global analysis potential effects job quantity quality'"
+    ],
+    "text": []
+   },
+   "names_operator": "yes ('International Labour Organization' as channel)",
+   "names_archive": "no (card title)",
+   "note": "The title is that of the ILO's 2023 working paper (Gmyrek, Berg and Bescond, Working Paper 96), the predecessor of the entity: the card concerns the entity's lineage, not the 2025 index. Title only.",
+   "card_title": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.",
+   "card_snippet": null,
+   "card_note": "video, 11m",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 6
+    }
+   ]
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (video, 3m)",
+   "card": "YouTube·International Labour Organization — How is generative AI reshaping gender inequalities at work?",
+   "url": null,
+   "kind": "Overview card (a video, 3 minutes; no snippet)",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "result": "unreachable: no URL found; admitted through its title",
+    "tried": [
+     "WebSearch: 'youtube ILO \"How is generative AI reshaping gender inequalities at work?\"' (returned an ILO podcast episode of that title, voices.ilo.org/podcast/how-is-generative-ai-reshaping-gender-inequalities-at-work, not the video; not fetched as the card)"
+    ],
+    "text": []
+   },
+   "names_operator": "yes ('International Labour Organization' as channel)",
+   "names_archive": "no (card title)",
+   "note": "Title only. The same title belongs to an ILO podcast episode found by the search; whether the video carries it is not established.",
+   "card_title": "How is generative AI reshaping gender inequalities at work?",
+   "card_snippet": null,
+   "card_note": "video, 3m",
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 7
+    }
+   ]
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "www.scribd.com — Generative AI and Jobs - A Refined Global Index of Occupational Exposure - Scribd",
+   "url": null,
+   "kind": "Overview card (a copy of the working paper's PDF on Scribd)",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "result": "unreachable: no URL found",
+    "tried": [
+     "WebSearch: 'scribd \"Generative AI and Jobs - A Refined Global Index of Occupational Exposure\"'",
+     "WebSearch: 'scribd.com document \"ILO Working Paper 140\" Generative AI and Jobs Gmyrek'",
+     "WebSearch: 'scribd \"A Refined Global Index of Occupational Exposure\"'",
+     "WebSearch: 'scribd.com/document Generative-AI-and-Jobs-A-Refined-Global-Index-of-Occupational-Exposure'"
+    ],
+    "text": []
+   },
+   "names_operator": "yes in the snippet ('ILO Working Paper 140')",
+   "names_archive": "no (card title and snippet)",
+   "note": "No search returned the Scribd page; its title and snippet stand as its only text. The snippet is the paper's front matter (series, date, title, authors).",
+   "card_title": "Generative AI and Jobs - A Refined Global Index of Occupational Exposure - Scribd",
+   "card_snippet": "ILO Working Paper 140. May / 2025. XX Generative AI and Jobs. A Refined Global Index of Occupational Exposure. Authors / Pawel Gmyrek, Janine Berg, Karol Kamińs...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "ilo-generative-ai-and-jobs-index-aio-20261029",
+     "card": 8
+    }
+   ]
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the census's own page 'wp140' (the working paper, HTML edition); not surfaced by T",
+   "card": "International Labour Organization — Generative AI and Jobs: A Refined Global Index of Occupational Exposure (ILO Working Paper 140, HTML edition)",
+   "url": "https://webapps.ilo.org/static/english/intserv/working-papers/wp140/index.html",
+   "kind": "own page (the working paper, HTML, read online)",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B9.html",
+     "sha256": "f33cc70351ee90684681a34ea4977fffca428b0d6712193450d0234c3ad8d743"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B9.txt",
+     "sha256": "df670a353638d4f5a90883e55843ca96ba06fcf8a7ef8260063e3633be5d70cb"
+    },
+    "B9-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B9-census.txt",
+     "sha256": "f33cc70351ee90684681a34ea4977fffca428b0d6712193450d0234c3ad8d743"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T21:49:13Z",
+    "http": 200,
+    "url": "https://webapps.ilo.org/static/english/intserv/working-papers/wp140/index.html",
+    "final_url": "https://webapps.ilo.org/static/english/intserv/working-papers/wp140/index.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B9.html",
+    "raw_sha256": "f33cc70351ee90684681a34ea4977fffca428b0d6712193450d0234c3ad8d743",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B9.txt"
+    ],
+    "census_copy": {
+     "id": "ilo-genai-exposure-index--wp140",
+     "sha256": "f33cc70351ee90684681a34ea4977fffca428b0d6712193450d0234c3ad8d743",
+     "read": "2026-10-29",
+     "copied": "gunzipped from /home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.html.gz"
+    }
+   },
+   "names_operator": "yes ('International Labour Organization', '© International Labour Organization 2025')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Copied from the census's saved copy, not refetched; B9.html's sha256 equals the manifest's. The census's .txt for this page (kept as B9-census.txt) is the raw HTML: the census extractor tests for '<html' in the first 2,000 characters, and this page begins with a <script> block, so its text was never extracted (text_chars 594,096 against 594,630 bytes). B9.txt is extracted here from B9.html by the census's own rule (scripts, styles, noscript and svg stripped; block ends kept as line breaks), and every quote from B9 is checked against it; all 35 of the census's evidence quotes are present in it. Not surfaced by T (no card is the HTML edition; card 1 is its publication page).",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the census's own page 'observatory' (cited by the record's evidence 'observatory', saved under the neighbour entity ilo-platform-policy-tracker); not surfaced by T",
+   "card": "International Labour Organization — Observatory on AI and Work in the Digital Economy",
+   "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+   "kind": "own page (the operator's portal that carries the index as 'AI impact on jobs')",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B10.html",
+     "sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B10.txt",
+     "sha256": "6842ee98a74e8d2ea0e79aefa20c417e744421c5e27fd1f3fa0fc0f0fea20de8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T21:49:12Z",
+    "http": 200,
+    "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+    "final_url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B10.html",
+    "raw_sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B10.txt"
+    ],
+    "census_copy": {
+     "id": "ilo-platform-policy-tracker--observatory",
+     "sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44",
+     "read": "2026-10-29",
+     "copied": "gunzipped from the census's saved copy; .txt copied"
+    }
+   },
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Copied from the census's saved copy, not refetched.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none); the articles that cite the paper",
+   "card": "Wikipedia — Generative AI and Jobs: A Refined Global Index of Occupational Exposure (no article; cited in four articles)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Generative_AI_and_Jobs:_A_Refined_Global_Index_of_Occupational_Exposure&action=raw",
+   "kind": "Wikipedia (no article; four articles cite the working paper)",
+   "files": {
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.wiki",
+     "sha256": "d7f4869449fc812b7919230fabd9f69a1d5bfe4558eb5b577b6d0c9996c2b065"
+    },
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.html",
+     "sha256": "deb96fb0cbb17facc8bd4752482fa7c3c31ad5385347b0791157a506dd03ffcf"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.txt",
+     "sha256": "a9035f27c3ae03175e13be1df872cec4047aaf5b94edf7623e7e36a5406d3c62"
+    },
+    "B11-v2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-v2.wiki",
+     "sha256": "5f558d12ca04a08554c6ac5f0ee4d575b2ad38d0b9ca319b8b3cf18bda82fce5"
+    },
+    "B11-v3.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-v3.wiki",
+     "sha256": "59ffffcd5631e0923e3a3ce916848a677161c29bb2ec27a9d0358fb489d12cf2"
+    },
+    "B11-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search.html",
+     "sha256": "1ce73c6879dd1017a8c3aa73ede1fe834d26e87a52777d7002ab001e315c0fd1"
+    },
+    "B11-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search.txt",
+     "sha256": "eef501ee8e758556f77935cb5f2a19c8a7656675cf9a056f585a04c2d6c52efb"
+    },
+    "B11-search2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search2.html",
+     "sha256": "0da44d709f6d7d8769e2e8a732f2b5029d42c0d8fff9040dce87ba59d4b46894"
+    },
+    "B11-search2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search2.txt",
+     "sha256": "f8be37fbb1efba418121d1c6cd5e71a70456c4268d206e3ce6d4562b9ed11639"
+    },
+    "B11-cite1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite1.wiki",
+     "sha256": "719476bdb279532f5f05c8294f56e73aa8f53733e3f67ac7fcdc1a45da82cf68"
+    },
+    "B11-cite2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite2.wiki",
+     "sha256": "92baee77399b5d21ed22ec1c2dde36fe3942323eac288604ecd0d48f165be5bb"
+    },
+    "B11-cite3.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite3.wiki",
+     "sha256": "e47d62e07a80383cf62bbc31ebf65f133181df2cec5f981b0b52739c92405014"
+    },
+    "B11-cite4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite4.wiki",
+     "sha256": "108b2c38e72d2e60f6c8d0f25cd45d16e5e6938410a5d2d72ece84475060e8ca"
+    },
+    "B11-cite5.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite5.wiki",
+     "sha256": "dd0e938684caf5d4dca728f8d9ce61a613e3884874c72375173df322d30920cd"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T22:31:37Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Generative_AI_and_Jobs:_A_Refined_Global_Index_of_Occupational_Exposure&action=raw&redirect=no",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.wiki"
+     },
+     {
+      "at": "2026-10-29T22:33:56Z",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI_and_Jobs:_A_Refined_Global_Index_of_Occupational_Exposure?redirect=no",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.html",
+      "result": "'Wikipedia does not have an article with this exact name.' (refetched once at this time: the first copy of the rendered 404 was overwritten in the intake folder by a copying slip, and fetched again)"
+     },
+     {
+      "at": "2026-10-29T22:31:42Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Global_Index_of_Occupational_Exposure_to_Generative_AI&action=raw&redirect=no",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-v2.wiki"
+     },
+     {
+      "at": "2026-10-29T22:31:44Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=ILO_Generative_AI_and_Jobs_index&action=raw&redirect=no",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-v3.wiki"
+     },
+     {
+      "at": "2026-10-29T22:31:47Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Refined+Global+Index+of+Occupational+Exposure%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search.html",
+      "result": "'Result 1 of 1': Software engineering (cites the paper)"
+     },
+     {
+      "at": "2026-10-29T22:31:49Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Generative+AI+and+Jobs%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search2.html",
+      "result": "'Results 1 – 5 of 5': Programmer, Software engineering, Artificial general intelligence (cites the 2023 paper), Technological unemployment, Gender equality in the technology industry"
+     },
+     {
+      "at": "2026-10-29T22:32:34Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Programmer&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite1.wiki"
+     },
+     {
+      "at": "2026-10-29T22:32:36Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Software_engineering&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite2.wiki"
+     },
+     {
+      "at": "2026-10-29T22:32:39Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Technological_unemployment&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite3.wiki"
+     },
+     {
+      "at": "2026-10-29T22:32:41Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Gender_equality_in_the_technology_industry&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite4.wiki"
+     },
+     {
+      "at": "2026-10-29T22:32:44Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Artificial_general_intelligence&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-cite5.wiki"
+     }
+    ],
+    "raw_sha256": "deb96fb0cbb17facc8bd4752482fa7c3c31ad5385347b0791157a506dd03ffcf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11.txt",
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search.txt",
+     "datasets/negative-of-the-negative/v2/intake/ilo-genai-exposure-index-20261029/B11-search2.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "the citing articles name the ILO in their references ('International Labour Organisation' in Software engineering); the 404 pages no",
+   "names_archive": "no",
+   "note": "No article and no redirect under the title, the Global Index's name or the capture's query; article-space search for the title's phrase and for 'Generative AI and Jobs' finds the paper cited in Programmer, Software engineering, Technological unemployment and Gender equality in the technology industry, and the 2023 paper in Artificial general intelligence. The four sentences that cite the 2025 paper are ledgered from the raw wikitext (cite1–cite4); the AGI citation is of the predecessor and is recorded, not ledgered."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶1 s1",
+   "quote": "This study updates the ILO’s 2023 Global Index of Occupational Exposure to Generative AI (GenAI), incorporating recent advances in the technology and increasing user familiarity with GenAI tools.",
+   "claim": "the study defined by its authors: an update of the ILO's 2023 Global Index of Occupational Exposure to GenAI, for advances in the technology and users' growing familiarity",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the ILO's index of occupational exposure to GenAI, refined",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the publication page, lede",
+   "quote": "This ILO Working Paper refines the global measurement of occupational exposure to generative AI by combining task-level data, expert input, and AI model predictions.",
+   "claim": "the ILO's page: the working paper refines the global measurement of occupational exposure to GenAI from task-level data, expert input and AI model predictions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the ILO's index of occupational exposure to GenAI, refined",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1da4de837ab8e92f…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "the brief's page, heading and lede",
+   "quote": "Research Brief Generative AI and jobs: A 2025 update This brief summarizes an ILO Working paper that refines the global assessment of occupational exposure to generative AI.",
+   "claim": "the research brief 'Generative AI and jobs: A 2025 update' summarizes the working paper",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the ILO's index of occupational exposure to GenAI, refined",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a3dfbeb78b2a50b8…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'How We Built the ILO–NASK Index' ¶1",
+   "quote": "The ILO–NASK Index was developed to better understand how generative AI may affect work at the task level.",
+   "claim": "NASK's page names it the ILO–NASK Index, built to understand how GenAI may affect work at the task level",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the ILO's index of occupational exposure to GenAI, refined",
+   "date": "undated on the page (© 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 998ee35dd2c9f7eb…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Introduction ¶3",
+   "quote": "the Research department of the ILO has partnered with NASK, the National Research Institute of the Ministry of Digital Affairs in Poland, to develop a more precise assessment of potential effects of GenAI on employment across countries.",
+   "claim": "the makers: the ILO's Research department in partnership with NASK, the National Research Institute of Poland's Ministry of Digital Affairs",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: the ILO, NASK and the authors",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Authors Who prepared the report?'",
+   "quote": "Authors Who prepared the report? NASK Analysis and Research Office … it played an active role in the preparation of this report.",
+   "claim": "NASK's page: the report prepared by the NASK Analysis and Research Office, the ILO having 'played an active role in the preparation'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the makers: the ILO, NASK and the authors",
+   "date": "undated on the page (© 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 998ee35dd2c9f7eb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Additional details', Author(s)",
+   "quote": "Author(s) Pawel Gmyrek Janine Berg Karol Kamiński Filip Konopczyński Agnieszka Ładna Balint Nafradi Konrad Rosłaniec Marek Troszyński",
+   "claim": "the ILO's page lists eight authors, Balint Nafradi among them",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: the ILO, NASK and the authors",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1da4de837ab8e92f…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "title block",
+   "quote": "Paweł Gmyrek Janine Berg Karol Kamiński Filip Konopczyński Agnieszka Ładna Konrad Rosłaniec Marek Troszyński Abstract",
+   "claim": "the working paper's own title block lists seven authors, without Balint Nafradi",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: the ILO, NASK and the authors",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Introduction ¶4",
+   "quote": "This study builds on the method developed by the ILO (Gmyrek, Berg and Bescond, 2023 - GBB hereafter) , which used task descriptions from the 4-digit International Standard Classification of Occupations (ISCO-08) and the GPT-4 model to estimate task-level and occupational scores of exposure to GenAI technology",
+   "claim": "its lineage: the 2023 method of Gmyrek, Berg and Bescond, ISCO-08 task descriptions scored with GPT-4",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "lineage: the 2023 index",
+   "date": "2023-08 (the first index), stated 2025-05-20",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title (video, 11m; unreachable: no URL found)",
+   "quote": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.",
+   "claim": "an ILO video card under the title of the 2023 working paper, the predecessor",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "lineage: the 2023 index",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F11": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶1 s2",
+   "quote": "Using a representative sample from the 29,753 tasks in the Polish occupational classification system and a survey of 1,640 people employed in each 1-digit ISCO-08 groups, we collect 52,558 data points regarding perceive potential of automation for 2,861 tasks.",
+   "claim": "the survey: 1,640 people employed in Poland scored a representative 2,861 of the 29,753 Polish tasks, 52,558 data points",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.3 Survey design and recruitment",
+   "quote": "This means that tasks of managers are assessed by individuals working as managers, tasks of professionals are assessed by professionals, etc.",
+   "claim": "each occupational group's tasks scored by people working in that group",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.1 Initial algorithmic predictions",
+   "quote": "relying on three advanced LLMs available on the market at the end of 2024: GPT-4, GPT-4o and Gemini Flash 1.5.",
+   "claim": "the first, purely algorithmic scoring by three LLMs, GPT-4, GPT-4o and Gemini Flash 1.5",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.1 Initial algorithmic predictions",
+   "quote": "a score ranging from 0 to 1 for each individual task, where 0 means the task cannot be automated and 1 means the task could be fully automated with GenAI technology (the task can be conducted without participation of a human operator).",
+   "claim": "the score defined: 0 a task that cannot be automated, 1 a task that could be fully automated, conducted without a human operator",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: a task's automation score, an occupation's mean and spread, four gradients",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶1 s3",
+   "quote": "We then compare this input with a survey and several rounds of Delphi-style discussions among a smaller group of international experts.",
+   "claim": "the workers' scores compared with an expert survey and Delphi-style rounds",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§4 Expert validation survey ¶1",
+   "quote": "While the experts are expected to have familiarity with the current family of generative AI technologies and their applications, expertise in AI design or development is not a requirement.",
+   "claim": "the experts chosen for knowledge of labour markets and tasks; AI design expertise not required, since technology experts tend to overstate capacities",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶1 s4",
+   "quote": "Based on this process, we create a repository of knowledge about task automation that goes beyond national specificities and use it to develop an AI assistant able to predict scores for tasks in the technical documentation of ISCO-08.",
+   "claim": "the human scores built into a repository from which an AI assistant predicts scores for ISCO-08's tasks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§8 Prediction of synthetic task-level scores",
+   "quote": "the correlation between predictions based on ISCO-08 tasks and Polish 6-digit tasks is 0.92, demonstrating exceptional stability of predictions.",
+   "claim": "predictions from ISCO-08 and from the Polish tasks correlate at 0.92, which the authors call exceptional stability",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: workers scoring tasks, experts, LLMs, a predictor",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§9 Adjusted Global Index ¶1",
+   "quote": "we rely on two moments of distribution: occupational mean and standard deviation (SD) of task-level scores pertaining to a given 4-digit occupation.",
+   "claim": "an occupation classed by two moments of its task scores, mean and standard deviation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: a task's automation score, an occupation's mean and spread, four gradients",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§9 ¶3 (the gradients)",
+   "quote": "Gradient 4 highlights occupations with the highest share of tasks exposed to potential GenAI-driven automation, and with a high consistency of this exposure across tasks (Highest exposure, low task variability).",
+   "claim": "Gradient 4 defined: the highest share of tasks exposed to potential automation, consistently across tasks (Table 5: mean ≥ 0.6 and mean − SD ≥ 0.5)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a task's automation score, an occupation's mean and spread, four gradients",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "the brief, bullet 3",
+   "quote": "Defines four progressively increasing gradients of GenAI exposure depending on the mean exposure score and the degree of task variability for each ISCO-08 occupation.",
+   "claim": "the brief: four gradients by mean score and task variability",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a task's automation score, an occupation's mean and spread, four gradients",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a3dfbeb78b2a50b8…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 Revised global employment estimates ¶1",
+   "quote": "we focus on the 112 occupations identified as exposed and estimate the share of employment that these occupations represent at the global, regional, and income-based levels.",
+   "claim": "employment shares estimated for the 112 exposed occupations, globally, by region and by income group, on the ILO's global estimation model",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a task's automation score, an occupation's mean and spread, four gradients",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶3 s1–2",
+   "quote": "Globally, one in four workers are in an occupation with some GenAI exposure. 3.3% of global employment falls into the highest exposure category, albeit with significant differences between female (4.7%) and male employment (2.4%).",
+   "claim": "one in four workers worldwide in an exposed occupation; 3.3% of employment in the highest gradient, 4.7% of female and 2.4% of male",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶3 s3",
+   "quote": "These differences increase with countries’ income (9.6% female vs 3.5% male in Gradient 4 in HICs), and so does the overall exposure (11% of total employment in LICs vs 34% in HICs).",
+   "claim": "exposure rises with income, 11% of employment in low-income against 34% in high-income countries; Gradient 4 in high-income countries 9.6% female, 3.5% male",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶2",
+   "quote": "However, when disaggregated by gender, 28% of male employment is exposed, with only 3.5% in gradient 4, compared to 41% of female employment, with 14.4% in gradient 3 and 9.6% in gradient 4.",
+   "claim": "in high-income countries 41% of female against 28% of male employment exposed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶3",
+   "quote": "Gender disparities are also more pronounced in wealthier regions, particularly in Europe and Central Asia, where 39% of female employment falls into one of the four exposure gradients compared to 26% for men.",
+   "claim": "in Europe and Central Asia 39% of female against 26% of male employment exposed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶3",
+   "quote": "These patterns reflect both occupational structures and the extent to which GenAI-exposed roles, such as clerical, financial, and customer service jobs, are concentrated in higher-income countries.",
+   "claim": "the patterns by income and sex reflect occupational structures and where exposed roles are concentrated",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Exposure is gendered and worse in wealthier economies' ¶2",
+   "quote": "This reflects the gendered distribution of clerical and customer-facing roles, which are both more exposed and more common among female workers.",
+   "claim": "The People Space: the gender gap reflects the gendered distribution of clerical and customer-facing roles",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Location matters. So does income.' ¶2",
+   "quote": "This difference is shaped by infrastructure, digital access and workforce structure.",
+   "claim": "The People Space: the income difference is shaped by infrastructure, digital access and workforce structure",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶4",
+   "quote": "In addition, the 2023 estimate attributed 13% of employment as subject to “augmentation” and an additional 16.2% of employment in “the big unknown”. The combined employment share for Gradients 1-3 for the world in the current analysis is 20.5%, 9 percentage points lower than combined shares of augmentation and “the big unknown” (29.2%) reported in 2023.",
+   "claim": "against 2023: Gradients 1–3 hold 20.5% of world employment, against 2023's 13% augmentation and 16.2% 'big unknown', 29.2% together",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage: the 2023 index",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶2 s2–3",
+   "quote": "Clerical occupations continue to have the highest exposure levels. Additionally, some strongly digitized occupations have increased exposure, highlighting the expanding abilities of GenAI regarding specialized tasks in professional and technical roles.",
+   "claim": "clerical occupations still the most exposed; some strongly digitized professional and technical occupations more exposed than in 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: which occupations",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§10 Changes to occupational classifications ¶2",
+   "quote": "Among the 13 occupations classified in gradient 4, the majority represent clerical roles, including data entry clerks, typists and word processing operators, accounting and bookkeeping clerks, and general office clerks.",
+   "claim": "13 occupations in Gradient 4, most of them clerical",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: which occupations",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶5",
+   "quote": "some occupations – such as financial analysts, and web and multimedia developers (gradient 4), as well as bank tellers, translators, applications programmers, investment advisers (gradient 3) – have increased their levels of exposure",
+   "claim": "rising: financial analysts and web and multimedia developers (Gradient 4), bank tellers, translators, applications programmers, investment advisers (Gradient 3)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: which occupations",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.1 Initial algorithmic predictions ¶2",
+   "quote": "the highest exposure to GenAI is typically observed among groups with the largest share of tasks of cognitive nature and it declines with tasks of physical nature, which are more prominent among occupational groups 4-9 (Figure 2).",
+   "claim": "exposure highest where tasks are cognitive; it declines with tasks of physical nature",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: which occupations",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§10 ¶2",
+   "quote": "our 2023 scores for such tasks, which reached 0.9 in some cases, reflected an overly optimistic assessment of full automation potential. In reality, many of these tasks still require substantial human effort.",
+   "claim": "a revision of its own 2023 scores for clerical tasks: overly optimistic about full automation",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage: the 2023 index",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "the brief, bullet 4",
+   "quote": "Overall, the automation scores are slightly lower than in 2023 (a mean automation score of 0.29 in 2025 versus 0.30 in 2023), though the variability of scores is considerably lower (standard deviation 0.14 in 2025 v. 0.30 in 2023).",
+   "claim": "mean score 0.29 against 0.30 in 2023; standard deviation 0.14 against 0.30",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "lineage: the 2023 index",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a3dfbeb78b2a50b8…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "the brief, bullet 5",
+   "quote": "Growing abilities of GenAI models in such areas as voice, image and video generation have increased automation scores for a range of tasks in media- and web-related occupations.",
+   "claim": "scores raised for media- and web-related tasks by voice, image and video generation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: which occupations",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a3dfbeb78b2a50b8…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶3 s4",
+   "quote": "As most occupations consist of tasks that require human input, transformation of jobs is the most likely impact of GenAI.",
+   "claim": "transformation of jobs the most likely impact, since most occupations hold tasks that require human input",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "transformation over redundancy, and its qualification",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "the brief, bullet 6",
+   "quote": "One in four workers across the world are in an occupation with some degree of GenAI exposure, but because of the continued need for human input, most jobs will be transformed rather than made redundant.",
+   "claim": "the brief: most jobs will be transformed rather than made redundant",
+   "modality": "interpretation",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "transformation over redundancy, and its qualification",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a3dfbeb78b2a50b8…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶6",
+   "quote": "Indeed, the results indicate that few jobs consist of tasks that are fully automatable with current GenAI technology; nearly all occupations have some tasks that require human input.",
+   "claim": "few jobs consist of fully automatable tasks; nearly every occupation has tasks requiring human input",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "transformation over redundancy, and its qualification",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶6",
+   "quote": "However, this does not mean that demand for these occupations will remain stable, as the efficiencies gained from introducing technology may mean that fewer workers are needed.",
+   "claim": "the qualification: demand for these occupations may still fall, since efficiencies may mean fewer workers",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "transformation over redundancy, and its qualification",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'How We Built the ILO–NASK Index' ¶4",
+   "quote": "The purpose of the ILO–NASK Index is not to predict the disappearance of jobs, but to identify where work is most likely to change.",
+   "claim": "NASK: the index's purpose is to identify where work is most likely to change, not to predict the disappearance of jobs",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "transformation over redundancy, and its qualification",
+   "date": "undated on the page (© 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 998ee35dd2c9f7eb…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶5",
+   "quote": "It is important to stress that these new estimates reflect “exposure” to GenAI and not the actual impact on employment. As in 2023, the 2025 estimates represent the upper threshold of the percentage of employment that could be affected if GenAI technology were fully implemented.",
+   "claim": "the stated limit: exposure, not the actual impact on employment; an upper threshold, if GenAI were fully implemented",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶5",
+   "quote": "Infrastructure constraints (electricity, broadband), insufficient digital skills, the cost of technology, and inherent operational difficulties associated with the technology are just some of the barriers to full adoption.",
+   "claim": "barriers to full adoption: infrastructure, skills, cost, operational difficulty, and acceptance",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§11 ¶7",
+   "quote": "Finally, the estimates do not account for new jobs that may be created, nor the technological advances that could potentially automate more tasks in the future. In that sense, our estimates present a static snapshot of the exposure of existing occupations to GenAI at the start of 2025.",
+   "claim": "no new jobs and no future advances counted: a static snapshot at the start of 2025",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶7",
+   "quote": "we stress that such exposure does not imply the immediate automation of an entire occupation, but rather the potential for a large share of its current tasks to be performed using this technology.",
+   "claim": "exposure is not the immediate automation of an occupation but the potential for a large share of its tasks",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§9 ¶5",
+   "quote": "We stress that these classifications merely suggest the general trends and types of occupations at different levels of exposure, since any type of task scoring system carries a degree of subjectivity.",
+   "claim": "the gradients suggest general trends only; any task scoring carries subjectivity",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "footnote 18",
+   "quote": "One of the limitations of the current approach is that neither ISCO-08 nor the Polish classification system includes information on the relative frequency or importance of tasks within occupations. As a result, all tasks are weighted equally when calculating exposure scores.",
+   "claim": "a stated limit: all tasks weighted equally, the classifications carrying no frequency or importance of tasks",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.4 Survey design limitations",
+   "quote": "On the downside, this survey design means that the sample may not represent the entire working population, and interpretability of opinions on the automation potential is limited to comparisons within each 1-digit group.",
+   "claim": "the survey's stated limit: the sample may not represent the working population; opinions comparable only within each 1-digit group",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits of the survey: Poland, the sample, the match",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§3.5 ¶8",
+   "quote": "For 91.5% of the tasks, respondents did not report performing a similar task in their work",
+   "claim": "for 91.5% of tasks, respondents did not report performing a similar task",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits of the survey: Poland, the sample, the match",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§2 Tasks and occupations in the 6-digit system in Poland ¶1",
+   "quote": "it seems reasonable to assume that Poland is representative of the upper threshold of automation potential, due to high availability of digital equipment and widespread internet access.",
+   "claim": "Poland assumed representative of the upper threshold of automation potential",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits of the survey: Poland, the sample, the match",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶3",
+   "quote": "The new global index presented in this paper is generic, due to the nature of ISCO-08 and the structure of tasks associated with occupations in this framework.",
+   "claim": "the index is generic, by the nature of ISCO-08; its strength a common global denominator",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits of the survey: Poland, the sample, the match",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶7",
+   "quote": "As argued by numerous economists, the key to unlocking the productivity benefits of GenAI lies not in the search of outright labour savings, but in the extent to which human expertise can be complemented with new technological capacities to reshape occupations and generate additional value-added",
+   "claim": "gains, as economists argue (Acemoglu, Autor): productivity benefits lie in complementing human expertise, not in outright labour savings",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "§10 ¶4",
+   "quote": "A key question – largely dependent on the policies shaping this evolution – is to what extent these jobs can retrain and retain existing workers, rather than drive labor churn through workforce replacement and the recruitment of typically younger specialists",
+   "claim": "whether digitized jobs retrain and retain workers or churn them through replacement depends on the policies shaping the change",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶8",
+   "quote": "there is need to ensure that the transition is managed through social dialogue, both to minimize “technological unemployment” and the hardship associated with it",
+   "claim": "the transition to be managed through social dialogue, to minimize 'technological unemployment'",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶8",
+   "quote": "Workers know their jobs best and can play an important role in the design, adaptation and use of the technology at the workplace, to the benefit of both working conditions and productivity.",
+   "claim": "workers know their jobs best and can shape the technology's design and use",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Abstract ¶3 s5",
+   "quote": "Linking our refined index with national micro data enables precise projections of such transformations, offering a foundation for social dialogue and targeted policy responses to manage the transition.",
+   "claim": "its use: linked to national microdata, a foundation for social dialogue and policy",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Conclusion ¶2",
+   "quote": "In addition, we make all task-level scores publicly available, which also makes it possible for researchers to organize the occupational exposure in different ways than our proposed framework of exposure gradients.",
+   "claim": "all task-level scores public (pgmyrek.github.io), so others can organize exposure differently",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and access",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Want to explore the full picture?'",
+   "quote": "Download the full dataset (csv)",
+   "claim": "NASK's page offers the full dataset as CSV",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and access",
+   "date": "undated on the page (© 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 998ee35dd2c9f7eb…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Publication details' and 'References'",
+   "quote": "Date 20 May 2025 … DOI: https://doi.org/10.54394/HETP0387",
+   "claim": "published 20 May 2025, DOI 10.54394/HETP0387",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and access",
+   "date": "2025-05-20 (page date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 1da4de837ab8e92f…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F61": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Copyright",
+   "quote": "© International Labour Organization 2025 Attribution 4.0 International (CC BY 4.0)",
+   "claim": "CC BY 4.0, © ILO 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication and access",
+   "date": "2025-05-20 (WP140)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 df670a353638d4f5…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "card snippet (Scribd unreachable: no URL found)",
+   "quote": "ILO Working Paper 140. May / 2025. XX Generative AI and Jobs. A Refined Global Index of Occupational Exposure. Authors / Pawel Gmyrek, Janine Berg, Karol Kamińs...",
+   "claim": "a copy of the paper on Scribd, under its own title and authors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "publication and access",
+   "date": "May 2025 (on the card)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F63": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'AI impact on jobs'",
+   "quote": "ILO researchers developed a methodology to estimate the effects of generative AI on existing occupations.",
+   "claim": "the ILO Observatory on AI and Work in the Digital Economy carries the index as 'AI impact on jobs'",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "where it lives: the ILO's Observatory and later work",
+   "date": "as fetched 2026-10-29T21:49:12Z (census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised"
+  },
+  "F64": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'Spotlight'",
+   "quote": "Disruption without dividend? - How the digital divide and task differences split GenAI’s global impact ILO working paper 166 … 17 March 2026 … Workers’ exposure to AI: What indicators tell us – and what they don’t Research brief … 17 April 2026",
+   "claim": "later ILO work on the Observatory: Working Paper 166 (17 March 2026) and a research brief on exposure indicators (17 April 2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "where it lives: the ILO's Observatory and later work",
+   "date": "as fetched 2026-10-29T21:49:12Z (census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 6842ee98a74e8d2e…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F65": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (LinkedIn unreachable: no URL found)",
+   "quote": "This International Labour Organization report on Generative AI and Jobs [May 2025] presents a comprehensive assessme...",
+   "claim": "a LinkedIn post (Grace S. Thomson): the report presents a comprehensive assessment",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: commentary",
+   "date": "'1y' on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F66": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Drawing on nearly 30,000 real-world tasks, more than 50,000 human assessments and expert validation it presents a refined global index of occupational exposure to generative AI.",
+   "claim": "The People Space (Sian Harrington): nearly 30,000 tasks, more than 50,000 human assessments and expert validation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: commentary",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'One in four jobs touched by GenAI' ¶1",
+   "quote": "Just 3.3% of jobs fall into the highest exposure category – those where most tasks could feasibly be handled by GenAI without human input.",
+   "claim": "The People Space glosses the highest gradient as jobs whose tasks could be handled without human input",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: commentary",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F68": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Caution, not panic: exposure is not impact' ¶1",
+   "quote": "A critical distinction in the ILO’s analysis is that exposure does not equal automation. These are best-case, upper-limit scenarios – estimates of what could be done with GenAI, not what will be.",
+   "claim": "The People Space carries the limit: exposure is not automation; upper-limit scenarios",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limits: exposure not impact, an upper threshold, a snapshot",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F69": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Location matters. So does income.' ¶2",
+   "quote": "But it also underscores the risk of a growing global divide in who is most impacted, and who benefits, from GenAI.",
+   "claim": "The People Space: the income gap underscores a divide in who is impacted and who benefits",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F70": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'What next?' ¶2",
+   "quote": "“The key to unlocking the productivity benefits of GenAI lies not in the search for labour savings, but in the extent to which human expertise can be complemented by new technological capacities.”",
+   "claim": "The People Space quotes the report's sentence with words changed ('outright' dropped; 'for' and 'by' for 'of' and 'with') and its attribution to economists dropped",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "gains, direction and transition: what the index says of them",
+   "date": "2025-06-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22c31808fedd7a20…), whitespace-normalised"
+  },
+  "F71": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (video, 3m; unreachable: no URL found)",
+   "quote": "How is generative AI reshaping gender inequalities at work?",
+   "claim": "an ILO video card on GenAI and gender inequalities at work",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: shares of employment exposed, by income and sex",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F72": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles 'Generative AI and Jobs: A Refined Global Index of Occupational Exposure', 'Global Index of Occupational Exposure to Generative AI', 'ILO Generative AI and Jobs index'",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article on the index under its title or the capture's name, and no redirect",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 a9035f27c3ae0317…), whitespace-normalised"
+  },
+  "F73": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Gender equality in the technology industry, §Statistics (cites WP140)",
+   "quote": "A [[United Nations]] report predicts that females will likely bear the brunt of future layoffs in technological fields.",
+   "claim": "Wikipedia cites WP140 for 'a United Nations report' predicting that women will bear the brunt of future layoffs in technological fields",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "article as fetched 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B11-cite4.wiki (sha256 108b2c38e72d2e60…), whitespace-normalised"
+  },
+  "F74": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Technological unemployment, §Artificial intelligence (cites WP140 beside Yahoo Lifestyle)",
+   "quote": "In Australia 49% of larger firms and 37% of Small and Medium Enterprises have cut roles as a result of AI.",
+   "claim": "Wikipedia cites WP140, beside a Yahoo Lifestyle report, for a claim on Australian firms cutting roles because of AI",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "article as fetched 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B11-cite3.wiki (sha256 e47d62e07a80383c…), whitespace-normalised"
+  },
+  "F75": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Software engineering, §Employment, United States (cites WP140 beside an HP blog)",
+   "quote": "Furthermore, the ratio of women in many software fields has also been declining over the years as compared to other engineering fields.",
+   "claim": "Wikipedia cites WP140 for the declining ratio of women in software fields",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "article as fetched 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B11-cite2.wiki (sha256 92baee77399b5d21…), whitespace-normalised"
+  },
+  "F76": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Programmer, §Market changes in the US (cites WP140 beside an HP blog)",
+   "quote": "enrollment in computer-related degrees and other STEM degrees (STEM attrition) … in the US has been dropping for years, especially for women,",
+   "claim": "Wikipedia cites WP140 for dropping US enrolment in computing and STEM degrees, especially for women",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "article as fetched 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B11-cite1.wiki (sha256 719476bdb279532f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "International Labour Organization — Generative AI and Jobs: A Refined Global Index of Occupational Exposure | International Labour Organization",
+  "B2": "International Labour Organization — Generative AI and jobs: A 2025 update | International Labour Organization",
+  "B3": "LinkedIn·Grace S. Thomson — A Refined Global Index of Occupational Exposure | Grace S. Thomson",
+  "B4": "NASK – Państwowy Instytut Badawczy — ILO-NASK Indeks",
+  "B5": "The People Space — What ILO's Global Index tells us about GenAI and jobs | The People Space",
+  "B6": "YouTube·International Labour Organization — Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.",
+  "B7": "YouTube·International Labour Organization — How is generative AI reshaping gender inequalities at work?",
+  "B8": "www.scribd.com — Generative AI and Jobs - A Refined Global Index of Occupational Exposure - Scribd",
+  "B9": "International Labour Organization — Generative AI and Jobs: A Refined Global Index of Occupational Exposure (ILO Working Paper 140, HTML edition)",
+  "B10": "International Labour Organization — Observatory on AI and Work in the Digital Economy",
+  "B11": "Wikipedia — Generative AI and Jobs: A Refined Global Index of Occupational Exposure (no article; cited in four articles)"
+ }
+}

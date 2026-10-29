@@ -1,0 +1,1228 @@
+{
+ "row": "microsoft-working-with-ai",
+ "address": "Microsoft Working with AI",
+ "addresses": [
+  "Microsoft Working with AI"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia 404 page's text, or the card's title and snippet for the six homonym cards; every quote verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)) for a homonym row (addendum BRIEF-NEW-ROW-LABOR.md item 5): the cards that concern the entity, its own pages and Wikipedia, with the census's third-party source kept apart. 'card': B1, the operator's publication page for the study (Overview card 1, fetched); B2–B7, the homonym's cards (Microsoft's own AI products, transformation, workforce and models), recorded with their sense, title and snippet and not fetched as field. 'own_page': B8 the results repository's README and B9 the arXiv abstract page (v7), both copied from the census's saved copies, not surfaced by T. 'census_third_party': B10, the Anthropic Economic Index report of January 2026 (footnote 3 only). 'wikipedia': B11, no article and no redirect; the article that cites the paper, 'Workplace impact of artificial intelligence', its paragraph on the paper ledgered.",
+ "lineage_note": "Lineages: what it is (B1, B8, B9; the census's name, kind and aka restate B8/B9); why, the economic effects of AI (B1 v1 wording, B9 v7 wording: one lineage, B1's July 2025 text the earlier); the data, one provider's own product (B1, B8); the unit (B8; the census's unit restates B8); the pipeline (B8, B9); success measures and the score (B1, B8); findings: information work (B1's July 2025 findings by occupation group, B9's v7 findings: one lineage with two versions, B1 earliest); the trend (B9); delegation and assistance (B9); against predictions (B1); the limit, applicability is not replacement (B1's link, B8); proxies (B8); consumer use (B8); coverage (B8); versions and access (B8, B9); operator and ethics (B8); neighbours (B10); reception, the encyclopedia (B11); the homonym's products (B2, B3, B6), transformation and workforce (B4, B5) and models (B7). The paper and its results files are one work in three instances in B (B1 the publication page with the v1 abstract; B9 the arXiv page at v7; B8 the README of results v1.1).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B8–B10 copied from the census's saved copies; B11.wiki, B11.html, B11.txt the citing Wikipedia article; W-* the raw Wikipedia responses (404s, searches), W-404.txt the text of one 404 page); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (the entity's card)",
+   "card": "Microsoft — Working with AI: Measuring the Applicability of Generative AI ... - Microsoft",
+   "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+   "kind": "Overview card (the operator's publication page at Microsoft Research: authors, 'July 2025', the abstract of the paper's first version, links to GitHub, the preprint and a blog note)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B1.html",
+     "sha256": "e1f8e1b60bb379f6fc8a8e4f53f969a0780fc9e44fa9cf360bf12524fbf9a074"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B1.txt",
+     "sha256": "c1ce357664ec70ea34e7b9d18aa341e1a9b49aa283a09afe10c71ae5429f374c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T22:31:37Z",
+    "http": 200,
+    "url": "https://www.microsoft.com/en-us/research/?p=1144520",
+    "final_url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B1.html",
+    "raw_sha256": "e1f8e1b60bb379f6fc8a8e4f53f969a0780fc9e44fa9cf360bf12524fbf9a074",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B1.txt"
+    ]
+   },
+   "names_operator": "yes ('Microsoft Research'; the five authors; the groups 'AI Interaction and Learning', 'Economics and Computation', 'AI Economy Institute', 'IDEAS Research'; 'Microsoft Research Redmond')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (the result 'https://www.microsoft.com/en-us/research/?p=1144520'), which redirects to the publication page; its <title> is the card's title in full ('Working with AI: Measuring the Applicability of Generative AI to Occupations - Microsoft Research'). The page's canonical slug keeps an earlier title, 'working-with-ai-measuring-the-occupational-implications-of-generative-ai'. The card's snippet ('We find the highest AI applicability scores for knowledge work occupation groups such as computer and mathematical, and office and ...') is the page's abstract (F6); the card's date 'Jul 10, 2025' is arXiv v1's, the page giving 'July 2025'. The page's abstract is the July 2025 text, not arXiv v7's (B9): it reports AI applicability by occupation group and the correlation with wage and education; v7's abstract reports information work, cross-sector applicability, delegation against assistance and a nine-month trend. The page links a Microsoft Research blog note, 'Applicability vs. job displacement: further notes on our recent research on AI and occupations' (F8), outside B and not fetched.",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Working with AI: Measuring the Applicability of Generative AI ... - Microsoft",
+   "card_snippet": "Jul 10, 2025 — We find the highest AI applicability scores for knowledge work occupation groups such as computer and mathematical, and office and ...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 (the homonym's)",
+   "card": "Microsoft — Microsoft Copilot: AI built for work",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's AI products: Microsoft Copilot for work (Microsoft 365 apps, Work IQ)",
+   "homonym": true,
+   "sense": "Microsoft's AI products: Microsoft Copilot for work (Microsoft 365 apps, Work IQ)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title and snippet)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Microsoft Copilot: AI built for work",
+   "card_snippet": "Core Features: Integrates Chat and Cowork via Home, embeds into Microsoft 365 apps (Word, Excel, PowerPoint, Outlook, Teams), and utilizes Work IQ for organizat...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (the homonym's)",
+   "card": "Microsoft — Microsoft AI - Business Solutions and Tools",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's AI products: business solutions and tools (Microsoft IQ, Microsoft 365 Copilot, Copilot Studio)",
+   "homonym": true,
+   "sense": "Microsoft's AI products: business solutions and tools (Microsoft IQ, Microsoft 365 Copilot, Copilot Studio)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title and snippet)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Microsoft AI - Business Solutions and Tools",
+   "card_snippet": "Products & Tools: Microsoft IQ (shared business understanding), Microsoft 365 Copilot (embedded app intelligence), Copilot Studio (agent building/extension), Mi...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (the homonym's)",
+   "card": "The Official Microsoft Blog — What we’ve learned from Microsoft's own AI transformation - The Official Microsoft Blog",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's own AI transformation: lessons from the company's internal deployment (the Official Microsoft Blog)",
+   "homonym": true,
+   "sense": "Microsoft's own AI transformation: lessons from the company's internal deployment (the Official Microsoft Blog)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "What we’ve learned from Microsoft's own AI transformation - The Official Microsoft Blog",
+   "card_snippet": "Lessons: Start with business outcomes, not technology (tool access doesn't equal transformation; focus on goals and moments that matter); Redesign entire workfl...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (the homonym's)",
+   "card": "YouTube·ABC News — Microsoft offers buyouts to 60000 employees as spending on AI grows",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's workforce: buyouts offered to 60,000 employees as AI spending grows (ABC News video, 1:53) — video card, admitted through title (no snippet on the rail)",
+   "homonym": true,
+   "sense": "Microsoft's workforce: buyouts offered to 60,000 employees as AI spending grows (ABC News video, 1:53)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Microsoft offers buyouts to 60000 employees as spending on AI grows",
+   "card_snippet": null,
+   "card_note": "video, 1:53"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (the homonym's)",
+   "card": "Microsoft — Microsoft Copilot Plans for Individuals | Microsoft 365",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's AI products: Copilot plans for individuals (Microsoft 365)",
+   "homonym": true,
+   "sense": "Microsoft's AI products: Copilot plans for individuals (Microsoft 365)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title and snippet)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "Microsoft Copilot Plans for Individuals | Microsoft 365",
+   "card_snippet": "Microsoft Copilot is an AI-powered assistant designed to help you be more productive. It can help you create content, find information, summarize documents, ema...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (the homonym's)",
+   "card": "Facebook — Microsoft is building its own AI model as it loosens ties to OpenAI",
+   "url": null,
+   "kind": "Overview card, the homonym's: Microsoft's models: its own MAI models and its ties to OpenAI (a Facebook post)",
+   "homonym": true,
+   "sense": "Microsoft's models: its own MAI models and its ties to OpenAI (a Facebook post)",
+   "files": {},
+   "fetched": {
+    "unreachable": false,
+    "not_fetched": true,
+    "reason": "the homonym's card (addendum BRIEF-NEW-ROW-LABOR.md item 5): the name 'Microsoft Working with AI' read as Microsoft's own AI products and workforce. Recorded with its sense, title and snippet; not searched for or fetched as field, since the field B for this row is the cards that concern the entity, its own pages and Wikipedia. Its title and snippet are its only text in this row."
+   },
+   "names_operator": "yes ('Microsoft' in the card's title and snippet)",
+   "names_archive": "no (none of the archive's names in the card's title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "microsoft-working-with-ai-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "Microsoft is building its own AI model as it loosens ties to OpenAI",
+   "card_snippet": "Feb 12, 2026 — Microsoft just weaponized Copilot with their own independent voice AI. They dropped MAI models and broke free from their OpenAI reliance completely. This isn't ...",
+   "card_note": null
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "entity": "microsoft-working-with-ai",
+   "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/README.md",
+   "kind": "own page: the results repository's README (github.com/microsoft/working-with-ai, raw), the census's source microsoft-working-with-ai--readme",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B8.html",
+     "sha256": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B8.txt",
+     "sha256": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "microsoft-working-with-ai--readme",
+     "file": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.html.gz (gunzipped) and .txt",
+     "sha256": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:15Z",
+     "http": "200",
+     "agrees": true
+    },
+    "refetched": false,
+    "note": "copied from the census's saved copy; the gunzipped bytes' sha256 equals the census's (manifest.json); the README is plain text, so B8.txt is the same bytes"
+   },
+   "http": 200,
+   "sha256_html": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3",
+   "census_source": "microsoft-working-with-ai--readme",
+   "census_basis": "operator",
+   "read": "2026-10-29",
+   "surfaced_by_T": false,
+   "admitted": "own page the census record cites (operator's ruling of 2026-10-29: 'as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T",
+   "names_operator": "yes ('This research was conducted by members of [Microsoft Research]'; the five authors; 'Microsoft Institutional Review Board')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "entity": "microsoft-working-with-ai",
+   "url": "https://arxiv.org/abs/2507.07935",
+   "kind": "own page: the paper's arXiv abstract page (arXiv:2507.07935, v7, 23 October 2026), the census's source microsoft-working-with-ai--arxiv",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B9.html",
+     "sha256": "8315551565cd59866e841acec8204a2a9579093b1d0266146968102fd6d43796"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B9.txt",
+     "sha256": "517fc35ecee104f481ecf77d7d8d75a90cec3317cdfebf11ee7ad893e8171ed3"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "microsoft-working-with-ai--arxiv",
+     "file": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.html.gz (gunzipped) and .txt",
+     "sha256": "8315551565cd59866e841acec8204a2a9579093b1d0266146968102fd6d43796",
+     "read": "2026-10-29",
+     "fetched": "2026-10-29T21:49:15Z",
+     "http": "200",
+     "agrees": true
+    },
+    "refetched": false,
+    "note": "copied from the census's saved copy; the gunzipped bytes' sha256 equals the census's (manifest.json)"
+   },
+   "http": 200,
+   "sha256_html": "8315551565cd59866e841acec8204a2a9579093b1d0266146968102fd6d43796",
+   "census_source": "microsoft-working-with-ai--arxiv",
+   "census_basis": "operator",
+   "read": "2026-10-29",
+   "surfaced_by_T": false,
+   "admitted": "own page the census record cites (operator's ruling of 2026-10-29); not surfaced by T",
+   "names_operator": "yes (the five authors; 'Microsoft Bing Copilot' in the abstract)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B10",
+   "origin": "census_third_party",
+   "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+   "kind": "third-party source the census read (basis 'third_party'): the Anthropic Economic Index report 'Economic primitives' (January 2026), footnote 3",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B10.html",
+     "sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B10.txt",
+     "sha256": "1b5b928b9f12d14f47043b64b2b8ff977cc9fd69f39165246ab62fa73686ffcb"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "anthropic-economic-index--jan-2026",
+     "file": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.html.gz (gunzipped) and .txt",
+     "sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d",
+     "read": "2026-10-29",
+     "http": "200",
+     "agrees": true
+    },
+    "refetched": false
+   },
+   "http": 200,
+   "sha256_html": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d",
+   "census_source": "anthropic-economic-index--jan-2026",
+   "census_basis": "third_party",
+   "read": "2026-10-29",
+   "surfaced_by_T": false,
+   "admitted": "census_third_party, kept apart from cards, own pages and Wikipedia (addendum item 3); only the sentence that names the entity is ledgered",
+   "names_operator": "the authors only ('Tomlinson et al (2025)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "result": "no article; no redirect; the paper is cited in one article, 'Workplace impact of artificial intelligence', whose paragraph on it is ledgered",
+   "url": "https://en.wikipedia.org/wiki/Workplace_impact_of_artificial_intelligence",
+   "target": "Workplace impact of artificial intelligence § Hazards › Psychosocial › Changes in work practices",
+   "redirect": null,
+   "section": "== Hazards == / === Psychosocial === / ==== Changes in work practices ==== (the paragraph beginning 'A 2025 preprint paper based on users' interactions with the AI chatbot Microsoft Copilot')",
+   "kind": "Wikipedia: no article for the entity; the article that cites it (last edited 23 October 2026)",
+   "files": {
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.wiki",
+     "sha256": "c38ff1b52fd14944977527be9997302f71cfdef83c584f2c7c25394db7caf1e8"
+    },
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.html",
+     "sha256": "a2483d45f8ad107588d803b028c8991821a719a67dd911c206f2362c45755ce1"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.txt",
+     "sha256": "d5c169b1494867c043af51f3c2f163d115ed073a813a1ac941b18742ad712a7a"
+    },
+    "W-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-404.txt",
+     "sha256": "f9572af637c0e131c9171a3e289277c15b00af20966c39e1b1a6abdab96ff9bd"
+    }
+   },
+   "requests": [
+    {
+     "at": "2026-10-29T22:32:02Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=Working_with_AI:_Measuring_the_Applicability_of_Generative_AI_to_Occupations&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-Working_with_AI__Measuring_the.raw.txt",
+     "sha256": "4bf1a6a8613bd2ed2285e19e15f0ebed7cb3b3523924445c7c6cbb4f2e60f919"
+    },
+    {
+     "at": "2026-10-29T22:32:02Z",
+     "url": "https://en.wikipedia.org/wiki/Working_with_AI:_Measuring_the_Applicability_of_Generative_AI_to_Occupations",
+     "http": 404,
+     "result": "'Wikipedia does not have an article with this exact name'",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-Working_with_AI__Measuring_the.html",
+     "sha256": "7a1d1059eb148b7e236aeafa8bfa658102c159a86f67d86088fa42d85f09c102"
+    },
+    {
+     "at": "2026-10-29T22:32:05Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=Working_with_AI&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-Working_with_AI.raw.txt",
+     "sha256": "6cf7fc698644adf10a8fd5b76c8f1a7a098c5dc6c65e582927f935d9997ba5f0"
+    },
+    {
+     "at": "2026-10-29T22:32:05Z",
+     "url": "https://en.wikipedia.org/wiki/Working_with_AI",
+     "http": 404,
+     "result": "'Wikipedia does not have an article with this exact name. Please search for Working with AI in Wikipedia to check for alternative titles or spellings.' (text: W-404.txt)",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-Working_with_AI.html",
+     "sha256": "dae8f617055aac049fe70d9a0adf9fefa87674904dc7631babe5c421787b052d"
+    },
+    {
+     "at": "2026-10-29T22:32:07Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=AI_applicability_score&action=raw",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-AI_applicability_score.raw.txt",
+     "sha256": "42eb66f1fa86d33f892f252d318a0233bf9458392ed6e463e0473ee91f1eace5"
+    },
+    {
+     "at": "2026-10-29T22:32:07Z",
+     "url": "https://en.wikipedia.org/wiki/AI_applicability_score",
+     "http": 404,
+     "result": "'Wikipedia does not have an article with this exact name'",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-AI_applicability_score.html",
+     "sha256": "843e1ef0ee4962b75ee931c31abbbf89d91699bdcdb9baca5df8ac350059fb63"
+    },
+    {
+     "at": "2026-10-29T22:32:08Z",
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Working+with+AI%22+applicability&srnamespace=0&format=json",
+     "http": 200,
+     "result": "totalhits 1: 'Workplace impact of artificial intelligence' (snippet: the citation of Tomlinson et al. 2025)",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-search1.json",
+     "sha256": "6f7af960ebcf467c98d652cbc238a3de0fe9786c7be25ae1bcf20f24a3b81cd6"
+    },
+    {
+     "at": "2026-10-29T22:32:08Z / 22:32:45Z",
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Working+with+AI%22+Tomlinson&srnamespace=0&format=json",
+     "http": 429,
+     "result": "rate-limited ('You are making too many requests to the API.'); one retry after a 15-second wait, again 429; not pursued",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-search2.json",
+     "sha256": "c8184edc74f6f6102907e1bbb656acf1f36f5fddc30e7ec5b890ccce8f13ffd3"
+    },
+    {
+     "at": "2026-10-29T22:32:09Z / 22:32:50Z",
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22AI+applicability+score%22&srnamespace=0&format=json",
+     "http": 429,
+     "result": "rate-limited; one retry, again 429; not pursued",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-search3.json",
+     "sha256": "8af5663114b9a2c3b9e4bd96867e9799fd829000d812c2bb4a1f6553bf22d358"
+    },
+    {
+     "at": "2026-10-29T22:32:56Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=Workplace_impact_of_artificial_intelligence&action=raw",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.wiki",
+     "sha256": "c38ff1b52fd14944977527be9997302f71cfdef83c584f2c7c25394db7caf1e8"
+    },
+    {
+     "at": "2026-10-29T22:33:01Z",
+     "url": "https://en.wikipedia.org/wiki/Workplace_impact_of_artificial_intelligence",
+     "http": 200,
+     "result": "rendered page; 'This page was last edited on 23 October 2026, at 12:50 (UTC).'",
+     "file": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.html",
+     "sha256": "a2483d45f8ad107588d803b028c8991821a719a67dd911c206f2362c45755ce1"
+    }
+   ],
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; Labor-Vector-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.html",
+    "raw_sha256": "a2483d45f8ad107588d803b028c8991821a719a67dd911c206f2362c45755ce1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/B11.txt",
+     "datasets/negative-of-the-negative/v2/intake/microsoft-working-with-ai-20261029/W-404.txt"
+    ]
+   },
+   "http": 200,
+   "sha256_html": "a2483d45f8ad107588d803b028c8991821a719a67dd911c206f2362c45755ce1",
+   "checked": "2026-10-29T22:32:02Z–22:33:01Z",
+   "surfaced_by_T": false,
+   "names_operator": "the paper's authors in the citation (Tomlinson, Jaffe, Wang, Counts, Suri); 'Microsoft Copilot' as the chatbot; not Microsoft Research",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, laborvector, Labor Vector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "No article under the paper's title, its short title or its score's name, and no redirect. The one article-space search that was not rate-limited finds a single article citing the paper. Its paragraph is Wikipedia's account of the entity and is ledgered (F43–F46); the 404 is ledgered as a fact of the row (F42). Two further searches were rate-limited (429), retried once each after a wait, and not pursued; no other agent string or route was tried."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s1",
+   "quote": "Given the rapid adoption of generative AI and its potential to impact a wide range of tasks, understanding the effects of AI on the economy is one of society’s most important questions.",
+   "claim": "the question the work answers: the effects of AI on the economy",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "why: the economic effects of AI",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s2",
+   "quote": "In this work, we take a step toward that goal by analyzing the work activities people do with AI, how successfully and broadly those activities are done, and combine that with data on what occupations do those activities.",
+   "claim": "what the work does: analyses the work activities people do with AI, how successfully and broadly, combined with data on which occupations do them",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: measuring AI's applicability to occupations from real use",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s3",
+   "quote": "We analyze a dataset of 200k anonymized and privacy-scrubbed conversations between users and Microsoft Bing Copilot, a publicly available generative AI system.",
+   "claim": "the data: 200k anonymized, privacy-scrubbed conversations between users and Microsoft Bing Copilot",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: one provider's own product, Bing Copilot",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s4",
+   "quote": "We find the most common work activities people seek AI assistance for involve gathering information and writing, while the most common activities that AI itself is performing are providing information and assistance, writing, teaching, and advising.",
+   "claim": "the July 2025 finding by side: users seek help gathering information and writing; the AI provides information and assistance, writes, teaches and advises",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: information work",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s5",
+   "quote": "Combining these activity classifications with measurements of task success and scope of impact, we compute an AI applicability score for each occupation.",
+   "claim": "the AI applicability score: activity classifications combined with task success and scope of impact, per occupation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "success measures and the AI applicability score",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s6 (the card's snippet)",
+   "quote": "We find the highest AI applicability scores for knowledge work occupation groups such as computer and mathematical, and office and administrative support, as well as occupations such as sales whose work activities involve providing and communicating information.",
+   "claim": "the July 2025 headline: the highest scores for knowledge work groups (computer and mathematical; office and administrative support) and for occupations such as sales",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: information work",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract s7",
+   "quote": "Additionally, we characterize the types of work activities performed most successfully, how wage and education correlate with AI applicability, and how real-world usage compares to predictions of occupational AI impact.",
+   "claim": "further analyses: activities performed most successfully; wage and education against applicability; real-world usage against predictions of occupational AI impact",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "against predictions of AI impact",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Blog & Podcasts' (link)",
+   "quote": "Blog & Podcasts … Applicability vs. job displacement: further notes on our recent research on AI and occupations",
+   "claim": "the operator's page links a note distinguishing applicability from job displacement (the note itself outside B, not fetched)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the limit: applicability is not replacement",
+   "date": "2025-07 (the page: 'July 2025'; arXiv v1 2025-07-10)",
+   "checked_against": "saved text B1.txt (sha256 c1ce357664ec70ea…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F9": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "¶2 s2",
+   "quote": "These describe how often Bing Copilot was used for different work activities, how successfully, and what this usage indicates about which occupations AI may be applicable to.",
+   "claim": "what the metrics describe: how often and how successfully Bing Copilot was used for work activities, and which occupations AI may be applicable to",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: measuring AI's applicability to occupations from real use",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F10": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "¶2 s3",
+   "quote": "The goal of these metrics is to measure how AI may be useful in different occupations.",
+   "claim": "the metrics' goal: how AI may be useful in different occupations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: measuring AI's applicability to occupations from real use",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F11": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "¶2 s1",
+   "quote": "In particular, they include our metrics aggregated at the O*NET intermediate work activity (IWA) and occupation (detailed 2018 SOC code) level.",
+   "claim": "the unit of aggregation: O*NET intermediate work activities and detailed 2018 SOC occupations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: user goals and AI actions mapped to O*NET work activities and occupations",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F12": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "File descriptions, iwa_metrics.csv",
+   "quote": "`iwa_metrics.csv`: IWA-level metrics, reported separately for user goals and AI actions.",
+   "claim": "user goals and AI actions reported separately",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: user goals and AI actions mapped to O*NET work activities and occupations",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F13": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "IWA-level metrics, completion",
+   "quote": "`completion_{user,ai}`: the fraction of conversations mapping to an IWA (as a user goal or AI action) where our completion classfiier indicates that the LLM completed the user’s goal.",
+   "claim": "completion: the fraction of conversations where the completion classifier indicates the LLM completed the user's goal ('classfiier' as written)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "success measures and the AI applicability score",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F14": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "IWA-level metrics, impact scope and feedback",
+   "quote": "`impact_scope_{user,ai}`: the fraction of conversations mapping to an IWA (as a user goal or AI action) where the classified scope of impact is moderate or higher. … `feedback_positive_fraction_{user,ai}`: of all thumbs reactions in Copilot-Thumbs on conversations mapping to an IWA (as a user goal or AI action), the fraction where the reaction was a thumbs up.",
+   "claim": "impact scope (classified moderate or higher) and positive feedback (the thumbs-up fraction in Copilot-Thumbs)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "success measures and the AI applicability score",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F15": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "IWA-level metrics, completion_x_scope_x_coverage",
+   "quote": "The two sides are averaged together to compute the final AI applicability scores reported in `ai_applicability_scores.csv`.",
+   "claim": "the score: the user-goal side and the AI-action side averaged",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "success measures and the AI applicability score",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F16": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Updates",
+   "quote": "(current) v1.1: referenced by the NeurIPS '26 version and by arXiv paper revisions v6 and v7. Adds physical task classification, nonphysical IWA weights, and nonphysical AI applicability score.",
+   "claim": "results v1.1, referenced by the NeurIPS 2026 version and arXiv v6–v7, adding physical-task classification and nonphysical weights and score",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions, data access and licence",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F17": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Missing data ¶1",
+   "quote": "This leaves us with 785 SOC codes covering 149.8 million workers according to the 2023 BLS Occupational Employment and Wage Statistics (OEWS) data (total US employment in 2023 OEWS data is 151.9 million).",
+   "claim": "coverage of occupations: 785 SOC codes, 149.8 million of 151.9 million US workers (2023 OEWS)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage: the United States, January–September 2024",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F18": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Transparency, Intended uses ¶2",
+   "quote": "The conversations contributing to these results are from Bing Copilot in the United States from January 1, 2024 to September 30, 2024, so may not represent AI usage in other countries.",
+   "claim": "the window and its limit: Bing Copilot in the US, 1 January to 30 September 2024, so may not represent other countries",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "coverage: the United States, January–September 2024",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F19": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Out-of-scope uses s1",
+   "quote": "Our metrics should not be misconstrued or misrepresented as measuring the ability of AI to replace jobs.",
+   "claim": "the stated limit: the metrics do not measure the ability of AI to replace jobs",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the limit: applicability is not replacement",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F20": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Out-of-scope uses s2",
+   "quote": "There is more to an occupation than the sum of its O*NET tasks, and our measures of success (completion, scope, and thumbs feedback) are proxies that do not capture full workplace capabilities.",
+   "claim": "an occupation is more than its tasks; completion, scope and thumbs feedback are proxies",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "success measures are proxies",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F21": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Out-of-scope uses s3",
+   "quote": "Rather, our metrics indicate (1) what a consumer LLM is used for, (2) in a relative sense, which of these uses are more or less successful, and (3) which occupations may find AI more useful or applicable as a result.",
+   "claim": "what the metrics indicate instead: what a consumer LLM is used for; relative success; which occupations may find AI more applicable",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: measuring AI's applicability to occupations from real use",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F22": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Data creation and processing ¶1",
+   "quote": "These results were computed from Bing Copilot conversation data, which was originally collected by Microsoft and consists of conversations between users and Bing Copilot.",
+   "claim": "the data were collected by Microsoft from its own product's users",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the data: one provider's own product, Bing Copilot",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F23": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Data creation and processing ¶2 s1",
+   "quote": "The classification of conversations into IWAs was performed by an LLM pipeline designed by Kiran Tomlinson, Siddharth Suri, and Scott Counts.",
+   "claim": "the classification was performed by an LLM pipeline the authors designed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the pipeline: an LLM classifier and its limit",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F24": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Limitations ¶2 s1–2",
+   "quote": "LLM-based classifiers are imperfect, so all metrics should be interpreted with caution. See the paper for the exact prompts we used and for interrater reliability with human annotators.",
+   "claim": "the classifier's limit: imperfect, metrics to be read with caution; prompts and interrater reliability in the paper",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the pipeline: an LLM classifier and its limit",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F25": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Limitations ¶2 s3–5",
+   "quote": "As these results are based on consumer AI usage, they do not represent the full distribution of AI use in the workplace. For some work tasks, AI tools are directly integrated into specialized software, or specific models are used for their dedicated capability or compliance with data security requirements.",
+   "claim": "consumer use does not represent workplace AI use, where tools are integrated into specialized software or chosen for capability or compliance",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "consumer use, not the workplace",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F26": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Limitations ¶1 s2",
+   "quote": "The majority of conversations were in English, but we did not filter by language.",
+   "claim": "language: mostly English, not filtered",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage: the United States, January–September 2024",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F27": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Ethics ¶1",
+   "quote": "Data analysis was conducted with approval from the Microsoft Institutional Review Board.",
+   "claim": "approval by the Microsoft Institutional Review Board",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, authors and ethics",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F28": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Contact s1",
+   "quote": "This research was conducted by members of [Microsoft Research](https://www.microsoft.com/en-us/research/).",
+   "claim": "the operator: members of Microsoft Research",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, authors and ethics",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F29": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "License s1",
+   "quote": "This repository is licensed under CC BY 4.0.",
+   "claim": "licence CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions, data access and licence",
+   "date": "undated README (results v1.1; read 2026-10-29)",
+   "checked_against": "saved text B8.txt (sha256 b98be795b8a96490…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F30": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s1",
+   "quote": "With generative AI emerging as a general-purpose technology, understanding its economic effects is among society's most pressing questions.",
+   "claim": "the question, in v7's words: the economic effects of a general-purpose technology",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "why: the economic effects of AI",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F31": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s2–3",
+   "quote": "Earlier work on AI impact largely relied on predictions of AI capabilities or focused narrowly on individual firms. Drawing instead on real-world AI usage, we analyze a dataset of 200k anonymized conversations with Microsoft Bing Copilot to measure AI applicability to occupations.",
+   "claim": "the definition by contrast: measured from real-world usage (200k Bing Copilot conversations), against earlier work's predictions of capability or single-firm studies",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: measuring AI's applicability to occupations from real use",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s4",
+   "quote": "We use an LLM-based pipeline to classify the O*NET work activities assisted or performed by AI in each conversation.",
+   "claim": "the pipeline classifies the O*NET work activities assisted or performed by AI in each conversation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the pipeline: an LLM classifier and its limit",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s5",
+   "quote": "We find that the most common and successful AI-assisted work activities involve information work--the creation, processing, and communication of information.",
+   "claim": "headline finding (v7): the most common and successful AI-assisted activities are information work",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: information work",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F34": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s6",
+   "quote": "At the occupation level, we find widespread AI applicability cutting across sectors, as most occupations have information work components.",
+   "claim": "at the occupation level, applicability cuts across sectors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: information work",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F35": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s7",
+   "quote": "Our methodology also allows us to predict which occupations are more likely to delegate tasks to AI and which are more likely to use AI to assist existing workflows.",
+   "claim": "the method predicts which occupations are more likely to delegate tasks to AI and which to use AI to assist existing workflows",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "delegation and assistance",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F36": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract s8",
+   "quote": "Finally, we see an increase in occupation-level AI applicability over our 9-month data period, driven primarily by people using AI for more varied tasks.",
+   "claim": "applicability rose over the nine months, driven mainly by more varied tasks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: the nine-month trend",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F37": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "submission line; Comments",
+   "quote": "[Submitted on 10 Jul 2025 ( v1 ), last revised 23 Oct 2026 (this version, v7)] … 50 pages; NeurIPS 2026",
+   "claim": "versions: v1 10 July 2025, v7 23 October 2026; 50 pages; NeurIPS 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions, data access and licence",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F38": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "abstract, last line",
+   "quote": "AI applicability scores and component usage and success metrics are available at this https URL .",
+   "claim": "data access: scores and component metrics published",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions, data access and licence",
+   "date": "2025-07-10 (v1); this page v7, 2026-10-23",
+   "checked_against": "saved text B9.txt (sha256 517fc35ecee104f4…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "footnote 3 (to 'The primitives introduced in this report can help better characterize how AI is changing the work content of occupations.')",
+   "quote": "See also Tomlinson et al (2025) for a related AI applicability score.",
+   "claim": "the Anthropic Economic Index report (January 2026) names the paper's score as related to its own measures",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the Anthropic Economic Index",
+   "date": "2026-01 (report date)",
+   "checked_against": "saved text B10.txt (sha256 1b5b928b9f12d14f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F40": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "rendered page for 'Working_with_AI' (and the full title, and 'AI_applicability_score'), HTTP 404",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article for the entity under its title, short title or score",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (checked)",
+   "checked_against": "saved text W-404.txt (sha256 f9572af637c0e131…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F41": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "'Workplace impact of artificial intelligence' § Hazards › Psychosocial › Changes in work practices, s1",
+   "quote": "A 2025 preprint paper based on users' interactions with the AI chatbot Microsoft Copilot identified forty jobs that the authors claimed had high overlaps with the capabilities of AI.",
+   "claim": "Wikipedia's account: a 2025 preprint, from users' interactions with Microsoft Copilot, identified forty jobs the authors claimed overlap highly with AI's capabilities",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-23 (last edit)",
+   "checked_against": "saved text B11.txt (sha256 d5c169b1494867c0…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F42": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "same paragraph, s2",
+   "quote": "Some media outlets used this paper to report on jobs becoming obsolete.",
+   "claim": "media used the paper to report jobs becoming obsolete",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-23 (last edit)",
+   "checked_against": "saved text B11.txt (sha256 d5c169b1494867c0…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F43": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "same paragraph, s3",
+   "quote": "Criticism of the paper suggesting that it had misrepresented typical workplace activities to augment AI's current performance.",
+   "claim": "criticism: the paper misrepresented typical workplace activities to augment AI's current performance (the sentence as written, without a main verb)",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-23 (last edit)",
+   "checked_against": "saved text B11.txt (sha256 d5c169b1494867c0…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "same paragraph, s4 (Campbell, Transactions of the Royal Historical Society, 10 December 2025)",
+   "quote": "The historian Chris Campbell argued that the \"report's methods, deliberately or otherwise, de-skill historians away from a job that requires high-level and deeply human analytical skills to one that is tasked solely with the retention and provision of knowledge. Under that flawed rubric, it is little wonder that historians have a high AI applicability score.\"",
+   "claim": "Campbell: the method de-skills historians to the retention and provision of knowledge, hence their high score",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2025-12-10 (Campbell)",
+   "checked_against": "saved text B11.txt (sha256 d5c169b1494867c0…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F45": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "Microsoft Copilot: AI built for work … Core Features: Integrates Chat and Cowork via Home, embeds into Microsoft 365 apps (Word, Excel, PowerPoint, Outlook, Teams), and utilizes Work IQ for organizat...",
+   "claim": "the homonym's card: Microsoft Copilot, embedded in Microsoft 365 apps",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's AI products",
+   "date": "2026-10-29 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F46": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "Microsoft AI - Business Solutions and Tools … Products & Tools: Microsoft IQ (shared business understanding), Microsoft 365 Copilot (embedded app intelligence), Copilot Studio (agent building/extension), Mi...",
+   "claim": "the homonym's card: Microsoft's AI business products",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's AI products",
+   "date": "2026-10-29 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F47": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "What we’ve learned from Microsoft's own AI transformation - The Official Microsoft Blog … Lessons: Start with business outcomes, not technology (tool access doesn't equal transformation; focus on goals and moments that matter); Redesign entire workfl...",
+   "claim": "the homonym's card: Microsoft's lessons from its own AI transformation, workflow redesign among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's own transformation and workforce",
+   "date": "2026-10-29 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title (video, 1:53; no snippet)",
+   "quote": "Microsoft offers buyouts to 60000 employees as spending on AI grows",
+   "claim": "the homonym's card: Microsoft's buyouts to 60,000 employees as AI spending grows",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's own transformation and workforce",
+   "date": "2026-10-29 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "Microsoft Copilot Plans for Individuals | Microsoft 365 … Microsoft Copilot is an AI-powered assistant designed to help you be more productive. It can help you create content, find information, summarize documents, ema...",
+   "claim": "the homonym's card: Microsoft Copilot as an assistant for individuals",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's AI products",
+   "date": "2026-10-29 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "Microsoft is building its own AI model as it loosens ties to OpenAI … Feb 12, 2026 — Microsoft just weaponized Copilot with their own independent voice AI. They dropped MAI models and broke free from their OpenAI reliance completely. This isn't ...",
+   "claim": "the homonym's card: Microsoft's own MAI models and its ties to OpenAI",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym: Microsoft's models",
+   "date": "2026-02-12 (card)",
+   "checked_against": "the card's title and snippet as seated in the registry (cite_list), whitespace-normalised",
+   "quote_ok": true
+  }
+ },
+ "field_sources": {
+  "B1": "Microsoft — Working with AI: Measuring the Applicability of Generative AI ... - Microsoft",
+  "B2": "Microsoft — Microsoft Copilot: AI built for work",
+  "B3": "Microsoft — Microsoft AI - Business Solutions and Tools",
+  "B4": "The Official Microsoft Blog — What we’ve learned from Microsoft's own AI transformation - The Official Microsoft Blog",
+  "B5": "YouTube·ABC News — Microsoft offers buyouts to 60000 employees as spending on AI grows",
+  "B6": "Microsoft — Microsoft Copilot Plans for Individuals | Microsoft 365",
+  "B7": "Facebook — Microsoft is building its own AI model as it loosens ties to OpenAI",
+  "B8": "own page — the results repository's README (github.com/microsoft/working-with-ai)",
+  "B9": "own page — arXiv:2507.07935 abstract page (v7)",
+  "B10": "census third party — Anthropic Economic Index report, January 2026 (footnote 3)",
+  "B11": "Wikipedia — no article; cited in 'Workplace impact of artificial intelligence'"
+ }
+}

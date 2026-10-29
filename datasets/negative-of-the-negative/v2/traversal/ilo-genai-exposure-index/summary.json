@@ -1,0 +1,103 @@
+{
+ "row": "ilo-genai-exposure-index",
+ "address": "ILO Generative AI and Jobs index",
+ "entity": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure (ILO Working Paper 140; Gmyrek, Berg, Kamiński, Konopczyński, Ładna, Nafradi, Rosłaniec, Troszyński; International Labour Organization with NASK; 20 May 2025; doi:10.54394/HETP0387), the index of occupational exposure to generative AI that updates the ILO's 2023 Global Index, with its research brief 'Generative AI and jobs: A 2025 update' and NASK's 'ILO–NASK Index' page; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/ilo-genai-exposure-index/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ilo-genai-exposure-index",
+  "address": "ILO Generative AI and Jobs index",
+  "entity": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure (ILO Working Paper 140; Gmyrek, Berg, Kamiński, Konopczyński, Ładna, Nafradi, Rosłaniec, Troszyński; International Labour Organization with NASK; 20 May 2025; doi:10.54394/HETP0387), the index of occupational exposure to generative AI that updates the ILO's 2023 Global Index, with its research brief 'Generative AI and jobs: A 2025 update' and NASK's 'ILO–NASK Index' page; formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/ilo-genai-exposure-index/)",
+  "row_type": "C (a public entity on which the archive bears: an exposure index; an entity of the Labor Vector meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bGenerative AI and Jobs\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bRefined Global Index\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bGlobal Index of Occupational Exposure\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bILO[–-]NASK\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(ILO )?Working Paper 140\\b|\\bWP ?140\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bHETP0387\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bGmyrek\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "occupational exposure to generative AI (exposure estimates)",
+    "pattern": "\\b(occupational exposure|exposure (index|indices|indicators?|estimates?|scores?|gradients?)|exposed (occupations|jobs|employment|workers)|(Gen ?AI|AI|LLM) exposure)\\b",
+    "flags": "i",
+    "basis": "archive (the Labor Vector census record): kind 'index of occupational exposure, published as a working paper with a research brief', evidence_kind ['exposure estimate'] (census.json rows[slug == 'ilo-genai-exposure-index'].kind, .evidence_kind); field: B1 (the ILO's page, 'This ILO Working Paper refines the global measurement of occupational exposure to generative AI'), B9 (WP140 Abstract: 'a new set of global estimates of employment shares exposed to GenAI'), B4 (NASK: 'which occupations are most exposed to GenAI')."
+   },
+   {
+    "term": "task-level automation potential (the task-based approach)",
+    "pattern": "\\b(task[- ]level (automation|scores?|exposure|assessments?)|automation (potential|scores?)|task-based (approach|framework|analys[ie]s)|bundle of tasks)\\b",
+    "flags": "i",
+    "basis": "archive: the census unit ('a task's automation score, aggregated to a 4-digit ISCO-08 occupation') and method (census.json rows[...].unit, .method); field: B9 §2 ('Analyses of employment effects of automation that use the task-based approach, including this study'; 'jobs are a “bundle of tasks”'), B2 ('task-level data'), B4 ('how generative AI may affect work at the task level')."
+   },
+   {
+    "term": "employment effects of AI: job loss, displacement, transformation (the distribution of gains and losses)",
+    "pattern": "\\b(technological unemployment|job (loss|losses|displacement|elimination|destruction)|(displac|replac)(e|es|ed|ing) (\\w+ ){0,2}(workers|jobs|labou?r)|employment effects?)\\b",
+    "flags": "i",
+    "basis": "archive: the census intersection for the entity, 'gains-and-losses' ('Distribution of gains and losses: wages, employment, workload, credit, ownership, and who captures productivity gains'; census.json intersections, rows[...].intersections); field: B9 §2 ('Analyses of employment effects of automation'), B9 Conclusion ('both to minimize “technological unemployment”'; 'Whether this leads to the disappearance of an occupation or workforce replacement'), B5 ('job transformation rather than job elimination')."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own kind, unit or intersection for the entity, stated by field sources at the loci given: (1) occupational exposure to generative AI, the census's kind and evidence_kind ('exposure estimate'; B1, B9 Abstract, B4); (2) task-level automation potential, the census's unit and method (B9 §2, B2, B4); (3) the employment effects of AI, the census's intersection 'gains-and-losses' (B9 §2 and Conclusion, B5). The archive's instruments of labor direction (the Directionality of Semantic Labor, #771, and its canonical surface #1392; the directionality stack; user labor drag) and its semantic-labor line bear on performed work, the interaction in which a system's labor advances or departs from a commissioned task; the census's lv_intersection places the entity against them ('it meets task-origin only as a prior on which tasks are exposed. It observes no performed work, so it cannot speak to whether a system's labor advanced a commissioned task, or to user labor drag'). They enter A only where a sentence applies them to the entity or to one of the three classes; DSL's own vocabulary (task-advancing, commissioned task) is not a class the field sources for the entity, and is not searched as one. Aliases: the title and its parts, the working-paper number, the DOI suffix, NASK's name for the index ('ILO–NASK Index') and the lead author's name (Gmyrek, which also finds the 2023 index, the predecessor in the entity's lineage). Admission by reading (§3.4): a bare mention, a reference-list line or a citation is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addendum BRIEF-NEW-ROW-LABOR.md (and BRIEF-NEW-ROW-PROVENANCE.md); address 'ILO Generative AI and Jobs index' (ilo-generative-ai-and-jobs-index-aio-20261029, OBS-79a0cee7426a, ADDR-fb3510e08ef5), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#499, #520, #521, #533).",
+  "hop_from": [
+   499,
+   520,
+   521,
+   533
+  ]
+ },
+ "texts_scanned": 1712,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 3,
+  "O_deposits": 3,
+  "H_candidates": 47
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "499": 1,
+   "819": 1,
+   "1669": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "e332affd2dc81b288acc2f20444cdef0daf98abaff5af3ad7959c9472bc9dab1",
+  "candidates-H.jsonl": "a1e4ccee4e3bab9c06e5e6d55a70d6cd3b4714da8072332e371dc1abf9f2e974"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

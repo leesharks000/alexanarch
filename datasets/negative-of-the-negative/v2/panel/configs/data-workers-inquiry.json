@@ -1,0 +1,60 @@
+{
+ "row": "data-workers-inquiry",
+ "address": "Data Workers' Inquiry",
+ "entity": "Data Workers' Inquiry (DWI; data-workers.org), the community-based, participatory research project of the Distributed AI Research Institute (DAIR) and the Weizenbaum Institute, with TU Berlin (project lead Milagros Miceli; Weizenbaum project phase August 2023 to November 2024), in which data workers (data labelers, annotators, content moderators) conduct inquiries in their own workplaces and publish them in formats they choose, after Marx's 1880 Workers' Inquiry, by the method the project names Workers' Inquiry as a Research Methodology (WIRM); formalized in the Labor Vector meta-aggregator record of 2026-10-29 (https://www.laborvector.org/aggregators/data-workers-inquiry/)",
+ "row_type": "C (a public entity on which the archive bears: a participatory research initiative and repository of worker-made inquiries; an entity of the Labor Vector meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bData Workers?['’‘]?s?['’‘]? Inquiry\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bdata-workers\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bWIRM\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bWorkers['’]? Inquiry as a Research Methodology\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "data work: annotation, labeling and content moderation as the labor that enables AI systems",
+   "pattern": "\\b(data (work|workers?|label+(ers?|ing)|annotat(ors?|ion))|annotators?|content moderat(ors?|ion)|ghost work|micro-?task(s| workers?)?)\\b",
+   "flags": "i",
+   "basis": "field: B7 (Weizenbaum project page, Background ¶2: 'tasked with the labor-intensive and emotionally taxing work of data annotation, content moderation, and other forms of data processing that enable AI systems to function'); B12 (press release, About ¶1, the same with 'data labeling'); B8 (Bot Populi ¶2: 'Data work refers to an essential occupation of digital capitalism'). The census's own intersection for the entity, 'labor-producing-ai' ('Labor producing AI: annotation, moderation, evaluation, maintenance, …'), and labor_object (census.json rows[slug == 'data-workers-inquiry'].intersections, .labor_object; intersections block)."
+  },
+  {
+   "term": "the hidden or invisible human labor behind AI",
+   "pattern": "\\b(hidden|invisible|invisibili[sz]ed|concealed|unseen) (human )?(labou?r|work(ers|force)?)\\b",
+   "flags": "i",
+   "basis": "field: B7 (Weizenbaum page, Background ¶2: 'a hidden workforce of data workers'; ¶3 'often rendered invisible … This is by design'); B4 (Weizenbaum-Institut video title: 'Unveiling the Hidden Labor Behind AI'); B3 (Instagram card snippet: 'exposing hidden, precarious labor behind AI'); B1 home ¶2 ('to turn hidden and precarious labor into a shared, politicized site for knowledge-making'). The census's lv_intersection reads the entity on this class (task-origin: 'the attribution of a composition to the system conceals the human labor that produced it')."
+  },
+  {
+   "term": "workers' inquiry (Marx, 1880)",
+   "pattern": "\\b(workers['’]? (inquiry|enqu[eê]te)|enqu[eê]te ouvri[eè]re|Arbeiterenquete)\\b",
+   "flags": "i",
+   "basis": "field: B7 (Weizenbaum page, Methods: 'Drawing inspiration from Marx's 1880 “Workers Inquiry”'); B2 (DAIR page: 'the project channels Marx’s 1880 Workers’ Inquiry'); B8 (Bot Populi ¶1: 'a renewal of this project for the age of AI'); B5 (Tech Policy Press: 'The idea of a worker's inquiry goes back to 1880 actually with Karl Marx'). The census's method field ('worker-written inquiry')."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own intersection, kind or method for the entity, stated by field sources at the loci given: (1) data work, the labor producing AI (census intersection 'labor-producing-ai', labor_object; B7, B12, B8); (2) the hidden human labor behind AI (B7, B4, B3, B1; the census's lv_intersection reads the entity here); (3) the workers' inquiry after Marx (census method; B7, B2, B8, B5). The census's other intersections for the entity, 'worker-power' and 'ai-governing-labor', are stated by the field as organizing (B1, B2, B9) and as metrics and management (B1 TikTok inquiry, B8 KPIs), and run through classes (1) and (2) here; they are not given patterns of their own because their terms ('union', 'KPI', 'surveillance') are not the entity's class in any field source. The archive's instruments of labor direction are read against these classes and not applied by the composer: the Directionality of Semantic Labor (#771, title and §0: 'where a synthetic system's labor flows relative to the commissioned task'; SIMs 'provenance is task-origin', 'the DS-6 directionality stack', 'user labor drag'; §8 ULD) measures the labor a synthetic system allocates relative to its user's commission, which is the census's intersection 'labor-with-ai' ('assistance, delegation, task fidelity, correction burdens and user labor drag'), an intersection the census does not give this entity; #771 says nothing of data work or of the human labor behind a system's output, so it bears on the entity only through the census's own lv_intersection reading (task-origin), which is ledgered as the record's claim (LV) and not as a deposit. The semantic-labor line (#18 'The Hidden Semantic Laborers: Content Moderation and Platform Maintenance', §I.4d; #623 §'Second'; #163 §II.5; #144 node E) applies the archive's categories to class (1) and (2) and is admitted by reading. Aliases: the entity's name with the apostrophe variants its own pages use (Data Workers' Inquiry, Data Worker’s Inquiry, Data Workers Inquiry), its domain, and its method's name and acronym. 'DWI' is not an alias pattern: as a bare string it is ambiguous (driving while intoxicated); it is read wherever the class or the name matches. DAIR and the Weizenbaum Institute are the operators, distinct entities, not aliases.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addendum BRIEF-NEW-ROW-LABOR.md; address \"Data Workers' Inquiry\" (data-workers-inquiry-aio-20261029, OBS-636828a941e9, ADDR-305c2994ed46), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture, the Labor Vector census record) are ledgered beside the deposits as CAP-1-NN and LV-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#18, #144, #163, #222, #247, #258, #308, #478, #533, #623, #1545).",
+ "hop_from": [
+  18,
+  144,
+  163,
+  222,
+  247,
+  258,
+  308,
+  478,
+  533,
+  623,
+  1545
+ ]
+}

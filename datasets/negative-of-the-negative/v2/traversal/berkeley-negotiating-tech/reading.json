@@ -1,0 +1,264 @@
+{
+ "row": "berkeley-negotiating-tech",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,712 archive texts found no D or R candidate: no deposit text names Negotiating Tech, laborcenter.berkeley.edu, Lisa Kresge, the UC Berkeley Labor Center or the Center for Labor Research and Education (also checked by grep over data/texts for 'Negotiating Tech', 'Kresge', 'Labor Center', 'laborcenter': no hit). O-class ran on two classes sourced from the field (config: 'collective bargaining over workplace technology (union contract provisions)', basis B1 title, Overview and section 2; 'employer governance of work through technology', basis B1 section 4 and FAQ) and returned three sentences in three deposits (#83, #159, #239). Admission by reading: a sentence is admitted to O when it applies an archive category to collective bargaining or to employer governance of work through technology, as a class. #239 admitted. The hop (H) ran from #239: 50 candidates, each scanned for the class terms (unions, collective bargaining, bargain*, collective agreement, contract language or provisions, workplace, employer, electronic monitoring, guild, WGA, SAG-AFTRA) and the hits read in context; #1439 and #256 admitted, the rest rejected. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (findings, reading, analysis, per_note, q_kind, per_dim) and the Labor Vector census record (census.json row, its organizing question and schema note; questions.json), ledgered as CAP-1-NN and LV-NN.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 239,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: #239 applies its category, juridical liquidation (the law's translation of labor's transformation into managed rights), to collective bargaining as a class: in its list of what law does to labor '\"Collective bargaining\" survives' while class antagonism is excised; labor's transformation becomes 'A right to bargain within the wage system'; the NLRA designed 'to channel labor conflict into administrable forms' by encouraging collective bargaining. Collective bargaining is the class the field gives the inventory (B1 Overview: 'through collective bargaining'). The archive's claim is on the class in U.S. law, not on the inventory or its provisions.",
+   "claims": [
+    "O239-01",
+    "O239-02",
+    "O239-03",
+    "O239-04",
+    "O239-05",
+    "O239-06"
+   ],
+   "cands": [
+    "O0003"
+   ]
+  },
+  {
+   "dep": 1439,
+   "strata": [
+    "O"
+   ],
+   "via": "H (hop from #239, reverse)",
+   "reason": "O-class, found by the hop: #1439 defines the dominant sense of 'AI labor movement' as 'Organised human labor action responding to the deployment of AI systems', its demands including 'limits on surveillance and forced adoption', its instruments 'contract, strike, legislation, guild rule', measured by 'Union density, contract terms', and states the sense is 'the majority usage' and 'well founded': the archive's category (the two senses of the AI labor movement) applied to organised labor's contracting over technology, the class of the inventory's provisions (B1 sections 2–4). It also records that 'the retrieval layer returns the negative sense almost exclusively' (§1), an observation about retrieval in general, carried at its own grade.",
+   "claims": [
+    "O1439-01",
+    "O1439-02",
+    "O1439-03",
+    "O1439-04"
+   ],
+   "cands": [
+    "H0049"
+   ]
+  },
+  {
+   "dep": 256,
+   "strata": [
+    "O"
+   ],
+   "via": "H (hop from #239, reverse)",
+   "reason": "O-class, thin: #256 defines its own term, the Assembly, against the union — 'Unions are legal entities with membership, dues, and collective bargaining rights. The Assembly is a structural position, not an institution.' — a claim on unions as the holders of collective bargaining rights, the class the field gives the inventory; its table of value capture ('Platforms, employers, aggregators') concerns human semantic labor generally and is not admitted.",
+   "claims": [
+    "O256-01"
+   ],
+   "cands": [
+    "H0019"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/negotiating-tech-aio-20261029/",
+   "reason": "the registry's findings, reading, analysis, PER note, query note and PER-dim reading at the entity's capture by name (OBS-d0620e198fd2, AXN:0AF2.CAPTURE.🧫🎨🤲↖️🌄🔓), read from data/EA-WG-CAPTURES-01.json (entries[527])",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15",
+    "CAP-1-16"
+   ]
+  },
+  {
+   "dep": "labor-vector-census",
+   "url": "https://www.laborvector.org/aggregators/berkeley-negotiating-tech/",
+   "reason": "the Labor Vector meta-aggregator census record of the entity (editor Lee Sharks; compiled 2026-10-29; schema 1.0): census.json row (fields and evidence), the census's organizing question and schema note, and questions.json (the worked question that names it); rendered at /home/claude/fleet/laborvector/aggregators/berkeley-negotiating-tech/index.html",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27",
+    "LV-28",
+    "LV-29",
+    "LV-30",
+    "LV-31",
+    "LV-32",
+    "LV-33",
+    "LV-34",
+    "LV-35",
+    "LV-36",
+    "LV-37",
+    "LV-38",
+    "LV-39",
+    "LV-40",
+    "LV-41",
+    "LV-42",
+    "LV-43",
+    "LV-44",
+    "LV-45",
+    "LV-46",
+    "LV-47",
+    "LV-48",
+    "LV-49",
+    "LV-50"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 83,
+   "reason": "O-class candidate O0001: 'systems of collective agreement' names belief and money, not collective bargaining (the pattern matched 'collective agreement'); says nothing of bargaining, unions or workplace technology",
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 159,
+   "reason": "O-class candidate O0002: 'A film about workplace surveillance' is an example of a genre of operative critique; the archive's category is applied to the film, not to employer governance of work through technology as a class",
+   "cands": [
+    "O0002"
+   ]
+  },
+  {
+   "dep": 244,
+   "reason": "hop candidate H0014: 'not a union' is a bare mention in defining the Assembly as a class position; no claim about unions or bargaining",
+   "cands": [
+    "H0014"
+   ]
+  },
+  {
+   "dep": 1438,
+   "reason": "hop candidate H0048: the labor strike ('Workers against an employer'; 'Concession from management') set against the semantic strike; the strike is not the class the field sources (collective bargaining over technology), and the brief confines classes to what B sources",
+   "cands": [
+    "H0048"
+   ]
+  },
+  {
+   "dep": 950,
+   "reason": "hop candidate H0036: 'workplace extraction' as a missing DSM diagnosis; not the class",
+   "cands": [
+    "H0036"
+   ]
+  },
+  {
+   "dep": 1684,
+   "reason": "hop candidate H0050: 'bargain' in other senses (the Bidirectional Bargain, the coupling bargain)",
+   "cands": [
+    "H0050"
+   ]
+  },
+  {
+   "dep": "the other 44 hop candidates",
+   "reason": "no class term in the text (registries, navigation maps, liquidation probes, governance instruments, packets): nothing on collective bargaining, union contracts or employer governance of work through technology; rejected without a sentence to read",
+   "cands": [
+    "H0001",
+    "H0002",
+    "H0003",
+    "H0004",
+    "H0005",
+    "H0006",
+    "H0007",
+    "H0008",
+    "H0009",
+    "H0010",
+    "H0011",
+    "H0012",
+    "H0013",
+    "H0015",
+    "H0016",
+    "H0017",
+    "H0018",
+    "H0020",
+    "H0021",
+    "H0022",
+    "H0023",
+    "H0024",
+    "H0025",
+    "H0026",
+    "H0027",
+    "H0028",
+    "H0029",
+    "H0030",
+    "H0031",
+    "H0032",
+    "H0033",
+    "H0034",
+    "H0035",
+    "H0037",
+    "H0038",
+    "H0039",
+    "H0040",
+    "H0041",
+    "H0042",
+    "H0043",
+    "H0044",
+    "H0045",
+    "H0046",
+    "H0047"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   239
+  ],
+  "candidates": 50,
+  "admitted": 2,
+  "note": "one citation hop forward and back from #239 (config hop_from); #1439 and #256 admitted by reading"
+ },
+ "class_pass": {
+  "classes": [
+   "collective bargaining over workplace technology (union contract provisions)",
+   "employer governance of work through technology (electronic monitoring and surveillance, HR and workforce management systems)"
+  ],
+  "candidates": 3,
+  "admitted": 1
+ },
+ "observations": "No deposit names the entity, its operator or its compiler. The archive bears on it through its two records (the census record, the Capture Registry entry) and on its class, collective bargaining, through #239 (law), #1439 (the AI labor movement's dominant sense) and #256 (the union against the Assembly). The archive's instruments of labor direction (Directionality of Semantic Labor, #771; the DS-6 directionality stack, #771 'Naming (for stable citation): the Directionality Stack, DS-6'; user labor drag, #771 §8 and #1392) measure 'the *direction* in which a synthetic system's labor flows relative to the task its user commissioned' (#771, Abstract): the class 'labor performed with AI', the census's intersection labor-with-ai, which the census does not give this entity and no field source states for it; the census's lv_intersection reads the inventory as meeting the stack 'at the contract layer' and holding 'no measure of task fidelity or user labor drag' (LV-29, LV-30), an archive reading ledgered as LV. Neither #771 nor #1392 is a candidate (no class term) and neither is admitted.",
+ "counts": {
+  "string_D": 0,
+  "string_R": 0,
+  "string_O_class": 3,
+  "hop_H": 50,
+  "admitted_deposits": 3,
+  "records": 2,
+  "archive_claims": 77,
+  "by_kind": {
+   "CAP": 16,
+   "LV": 50,
+   "deposit": 11
+  }
+ }
+}

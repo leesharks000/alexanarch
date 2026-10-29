@@ -1,0 +1,650 @@
+{
+ "row": "anthropic-economic-index",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Anthropic Economic Index with the entity named; R, a relation the archive states between the index and an archive object; O, an archive category applied to the index or to a class the field and the census source for it (five classes, the config's classes_note). A bare mention, a list, a title, a self-audit block header, a citation-list entry or a reference line is not a claim. The string pass over 1,712 texts found no D or R candidate (no deposit names the index or its aliases) and 273 O-class candidates in 118 deposits; every candidate sentence was read, and beyond the string pass every archive sentence matching a class pattern (61 sentences in 41 texts) was read at its passage. #771 entered by reading on the brief's direction. The hop from the admitted deposits returned 97 candidates, each read by search and at its matching sentences.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 771,
+   "strata": [
+    "O"
+   ],
+   "reason": "Directionality of Semantic Labor: the measure of the direction a synthetic system's labor flows relative to the task its user commissioned, User Labor Drag and their identification limits; the archive's category applied to class (1), labor performed with AI, where the Labor Vector record's lv_intersection names the meeting with the index. Not a string-pass candidate (its sentences carry no class pattern); read by the brief's direction (BRIEF-NEW-ROW-LABOR §7) and admitted by reading",
+   "claims": [
+    "O771-01",
+    "O771-02",
+    "O771-03",
+    "O771-04",
+    "O771-05",
+    "O771-06",
+    "O771-07"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1392,
+   "strata": [
+    "O"
+   ],
+   "reason": "laborvector.org definition surface: restates #771's definition and ULD ('Identified only by blind inter-rater coding'); an instance under #771 (S4); hop candidate",
+   "claims": [],
+   "cands": [
+    "O0214",
+    "H0063"
+   ],
+   "instance_of": 771
+  },
+  {
+   "dep": 780,
+   "strata": [
+    "O"
+   ],
+   "reason": "Self-Audit Module v2: a summarizer scoring itself without a rubric returns perfect scores; 'The self-audit is not self-certifying' and requires external verification (class 5)",
+   "claims": [
+    "O780-01",
+    "O780-02"
+   ],
+   "cands": [
+    "O0107"
+   ]
+  },
+  {
+   "dep": 156,
+   "strata": [
+    "O"
+   ],
+   "reason": "Self-Audit Module v3: the same principle preserved from v2; an instance under #780 (S4)",
+   "claims": [],
+   "cands": [
+    "O0020",
+    "H0016"
+   ],
+   "instance_of": 780
+  },
+  {
+   "dep": 1530,
+   "strata": [
+    "O"
+   ],
+   "reason": "Self-Audit Module v3.2: 'A system scoring its own composition will, absent constraint, return a flattering number'; an instance under #780 (S4)",
+   "claims": [],
+   "cands": [
+    "O0250",
+    "O0251",
+    "H0072"
+   ],
+   "instance_of": 780
+  },
+  {
+   "dep": 766,
+   "strata": [
+    "O"
+   ],
+   "reason": "Metric-Bearing vs Metric-Mimicking Output: 'Self-audit is sufficient.' No; a model auditing its own output gives preliminary classification, a metric-bearing audit requires traceable units and external validation (class 5)",
+   "claims": [
+    "O766-01"
+   ],
+   "cands": [
+    "O0096",
+    "O0097",
+    "O0098",
+    "O0099",
+    "O0100",
+    "O0101",
+    "O0102",
+    "O0103",
+    "O0104",
+    "O0105",
+    "H0042"
+   ]
+  },
+  {
+   "dep": 777,
+   "strata": [
+    "O"
+   ],
+   "reason": "Inference Constraints, Bounds: the check that does not run through a reasoner's own self-assessment is external (class 5)",
+   "claims": [
+    "O777-01"
+   ],
+   "cands": [
+    "O0106"
+   ]
+  },
+  {
+   "dep": 138,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wound Gauge, §0: declines to claim a system's self-audit independently authoritative or its self-reported score a validated measurement (class 5)",
+   "claims": [
+    "O138-01"
+   ],
+   "cands": [
+    "O0015",
+    "O0016"
+   ]
+  },
+  {
+   "dep": 788,
+   "strata": [
+    "O"
+   ],
+   "reason": "Measurement Sovereignty §1.2: a substrate's spontaneous self-audit gave itself a perfect score; under instruction the same substrate scored PER ≈ 0.85 (class 5, documented)",
+   "claims": [
+    "O788-01"
+   ],
+   "cands": [
+    "O0108",
+    "O0109",
+    "O0110",
+    "O0111"
+   ]
+  },
+  {
+   "dep": 1470,
+   "strata": [
+    "O"
+   ],
+   "reason": "One Transcript, Whole Stack §3: a substrate's preferred audit exonerates itself against a computed audit, Β ≈ 0.82 (class 5, documented); hop candidate",
+   "claims": [
+    "O1470-01"
+   ],
+   "cands": [
+    "H0069"
+   ]
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Alignment §3.2: Anthropic's Constitutional AI trains models through self-critique and revision with AI-generated feedback (class 5, attributed). Its sentence proposing PER as a self-evaluation target is about provenance preservation, not the class, and is not ledgered",
+   "claims": [
+    "O95-01"
+   ],
+   "cands": [
+    "O0010"
+   ]
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "O"
+   ],
+   "reason": "the Transactions version of #95: the same text; an instance under #95 (S4)",
+   "claims": [],
+   "cands": [
+    "O0179",
+    "H0056"
+   ],
+   "instance_of": 95
+  },
+  {
+   "dep": 855,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wolf Boy and the Language Model §III: task completion rates, with every UX metric, improve as the model converges on the mode; users do not notice tail loss (class 1)",
+   "claims": [
+    "O855-01"
+   ],
+   "cands": [
+    "O0142"
+   ]
+  },
+  {
+   "dep": 142,
+   "strata": [
+    "O"
+   ],
+   "reason": "Induced-Obsolescence Dependence §4.2: the user's adaptation is non-reimbursable labor-time; the platform retains the productivity gains of it (class 4)",
+   "claims": [
+    "O142-01",
+    "O142-02"
+   ],
+   "cands": [
+    "O0017"
+   ]
+  },
+  {
+   "dep": 124,
+   "strata": [
+    "O"
+   ],
+   "reason": "ChatGPT Psychosis §VIII: the labs, Anthropic among them, are funded in ways that do not reward engagement-reducing design; enterprise customers expect productivity gains correlated with engagement (class 4)",
+   "claims": [
+    "O124-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 772,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Magistrate Refuses the Mirror §2: the political-economic critique of Anthropic and Claude rests on private ownership of a high-capacity cognitive labor surface and platform control (class 1); hop candidate",
+   "claims": [
+    "O772-01"
+   ],
+   "cands": [
+    "H0044"
+   ]
+  },
+  {
+   "dep": 1634,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ontological Economy §3: query and interaction data among the forms of ontological rent (class 3)",
+   "claims": [
+    "O1634-01"
+   ],
+   "cands": [
+    "O0255"
+   ]
+  },
+  {
+   "dep": 1556,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Interlocking Autoregression, Component II: user turns enter training via conversation data; no public schema distinguishes human-original from AI-assisted turns (class 3)",
+   "claims": [
+    "O1556-01"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/anthropic-economic-index-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER reading notes for the entity's capture (OBS-e148b3285858, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "LV",
+   "url": "https://www.laborvector.org/aggregators/anthropic-economic-index/ (source: /home/claude/fleet/laborvector/data/labor-census/census.json rows[slug == 'anthropic-economic-index'], organizing_question; questions.json; rendered aggregators/anthropic-economic-index/index.html read for agreement)",
+   "reason": "the Labor Vector census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis, its lv_intersection as the archive's reading, and the worked questions that name it; where a field restates a source ledgered in B it is one lineage with that source",
+   "claims": [
+    "LV-01",
+    "LV-02",
+    "LV-03",
+    "LV-04",
+    "LV-05",
+    "LV-06",
+    "LV-07",
+    "LV-08",
+    "LV-09",
+    "LV-10",
+    "LV-11",
+    "LV-12",
+    "LV-13",
+    "LV-14",
+    "LV-15",
+    "LV-16",
+    "LV-17",
+    "LV-18",
+    "LV-19",
+    "LV-20",
+    "LV-21",
+    "LV-22",
+    "LV-23",
+    "LV-24",
+    "LV-25",
+    "LV-26",
+    "LV-27"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    34,
+    48,
+    53,
+    70,
+    432,
+    568,
+    580,
+    634,
+    641
+   ],
+   "reason": "class (1) candidates on 'task completion' of agents, multi-agent benchmarks, context engineering or the molt operator: not labor performed with AI by a user, nor its record"
+  },
+  {
+   "dep": [
+    317,
+    959
+   ],
+   "reason": "class (1) candidates: vibe coding's 'unit of success is task completion' set against Logotic Programming: a programming paradigm's success metric, not labor with AI as performed or recorded"
+  },
+  {
+   "dep": [
+    754
+   ],
+   "reason": "class (1) candidate: the Reception Apparatus's cost-benefit for 'purely tactical' users: a claim on the protocol's own scope"
+  },
+  {
+   "dep": [
+    499
+   ],
+   "reason": "class (1) candidate: 'delegating boundary functions to AI tools' in a field manual of semantic warfare: no claim on labor performed with AI or its record"
+  },
+  {
+   "dep": [
+    883
+   ],
+   "reason": "class (1) candidate: a method step of the archive's own battery ('hand them to Claude, and ask Claude to score them'): Claude scoring another system's results, not a claim on the class"
+  },
+  {
+   "dep": [
+    529
+   ],
+   "reason": "class (4) candidate: a bearing-cost chain of agent discourse and token speculation: gains of speculation, not productivity of labor with AI"
+  },
+  {
+   "dep": [
+    522
+   ],
+   "reason": "class (4) candidate: a storage crisis dated 2027–2028 in a retrocausal narrative: not a claim on the class at its date"
+  },
+  {
+   "dep": [
+    1543
+   ],
+   "reason": "class (4) candidate: 'Capture scoring gains the output-status typology': 'gains' as a verb of the scoring scheme"
+  },
+  {
+   "dep": [
+    1668
+   ],
+   "reason": "class (4) candidates: productivity growth in the antebellum cotton economy (references): another object"
+  },
+  {
+   "dep": [
+    161,
+    790
+   ],
+   "reason": "class (2) candidates: 'AI exposure' in the sense of writers' exposure to AI-generated text: a homonym of the class, not occupational exposure"
+  },
+  {
+   "dep": [
+    200,
+    826,
+    1027,
+    1028,
+    1664,
+    1665,
+    1671,
+    1690
+   ],
+   "reason": "class (3) candidates: interaction data as training signal (the data wall; the model-collapse rows' Nature claim): training data, not a provider's observation of use"
+  },
+  {
+   "dep": [
+    74,
+    114,
+    271,
+    650,
+    680,
+    693,
+    1334
+   ],
+   "reason": "class (3) candidates: usage or conversation logs as records of the archive's own costs, sources, collaborators or incidents: no claim on the class"
+  },
+  {
+   "dep": [
+    87,
+    1127
+   ],
+   "reason": "class (5) candidates: self-evaluation of an Operator's authored work in the Constitution of the Semantic Economy: governance of operators, not a model's assessment of its output"
+  },
+  {
+   "dep": [
+    129
+   ],
+   "reason": "class (5) candidate: the record of one self-audit (Google AI Mode self-applying PER): the event, with no claim on the class beyond those admitted at #138 and #788"
+  },
+  {
+   "dep": [
+    1694
+   ],
+   "reason": "class (5) candidate (hop): its substrate line 'Every reader in every pass was a Claude instance' states the archive's own method, Claude readers scoring other systems' compositions with every score computed by script; not a model scoring its own output. Recorded in the row's notes"
+  },
+  {
+   "dep": [
+    1638
+   ],
+   "reason": "class (3) candidate: 'The specimen series includes outputs of both Claude and ChatGPT': a bare mention"
+  },
+  {
+   "dep": [
+    1643
+   ],
+   "reason": "hop candidate: Anthropic's 2023 finding that preference models prefer sycophantic responses: models judging others' responses, not their own output; not the class"
+  },
+  {
+   "dep": [
+    28,
+    127,
+    146,
+    155,
+    157,
+    168,
+    169,
+    170,
+    183,
+    185,
+    194,
+    196,
+    198,
+    200,
+    201,
+    202,
+    203,
+    204,
+    302,
+    410,
+    483,
+    559,
+    584,
+    586,
+    627,
+    789,
+    791,
+    817,
+    824,
+    825,
+    826,
+    828,
+    830,
+    831,
+    832,
+    833,
+    834,
+    835,
+    837,
+    873,
+    925,
+    934,
+    1011,
+    1023,
+    1025,
+    1029,
+    1039,
+    1054,
+    1055,
+    1056,
+    1090,
+    1161,
+    1162,
+    1211,
+    1212,
+    1213,
+    1215,
+    1216,
+    1217,
+    1226,
+    1228,
+    1384,
+    1386,
+    1396,
+    1397,
+    1400,
+    1401,
+    1423,
+    1466,
+    1467,
+    1468,
+    1487,
+    1519,
+    1527,
+    1528,
+    1529,
+    1590,
+    1607,
+    1608,
+    1684
+   ],
+   "reason": "class (5) candidates read at their sentences: an 'SPXI SELF-AUDIT BLOCK' header or protocol, a self-audit module named in a title, list, citation, inventory or work plan, a heteronym's or commentary's self-assessment, or a self-audit of provenance recorded as an event: a bare mention or another object; no claim on a model's assessment of its own output beyond the admitted deposits"
+  },
+  {
+   "dep": [
+    11,
+    18,
+    64,
+    89,
+    92,
+    100,
+    101,
+    113,
+    121,
+    133,
+    147,
+    148,
+    188,
+    191,
+    197,
+    199,
+    250,
+    264,
+    274,
+    349,
+    363,
+    385,
+    476,
+    482,
+    514,
+    550,
+    576,
+    597,
+    643,
+    673,
+    740,
+    745,
+    760,
+    763,
+    770,
+    778,
+    779,
+    781,
+    783,
+    784,
+    939,
+    947,
+    1081,
+    1189,
+    1200,
+    1209,
+    1232,
+    1377,
+    1463,
+    1464,
+    1479,
+    1518,
+    1540,
+    1546,
+    1549,
+    1555,
+    1573,
+    1611,
+    1613,
+    1616,
+    1657,
+    1666,
+    1678,
+    1680,
+    1681,
+    1685,
+    1696,
+    1697,
+    1703
+   ],
+   "reason": "hop candidates read by a search of each text for the five class patterns, the entity's names and 'Anthropic', 'Claude.ai', 'O*NET', 'labor productivity', 'deskill', 'job loss', 'occupation', and at the matching sentences: no sentence makes a claim on the index or on its classes (registry lists naming 'Claude Anthropic TACHYON', substrate disclosures that a deposit was drafted with Claude, Anthropic's politics, watermark or search layer, the Self-Audit Module named in a title or inventory, or no match at all)"
+  }
+ ],
+ "hop": {
+  "from": [
+   95,
+   124,
+   138,
+   142,
+   771,
+   777,
+   780,
+   788,
+   855,
+   1556,
+   1634
+  ],
+  "candidates": 97,
+  "admitted": [
+   156,
+   766,
+   772,
+   1188,
+   1392,
+   1470,
+   1530
+  ],
+  "file": "datasets/negative-of-the-negative/v2/traversal/anthropic-economic-index/candidates-H.jsonl"
+ },
+ "class_pass": {
+  "classes": 5,
+  "o_class_candidates": 273,
+  "o_deposits": 118,
+  "read_outside_string_pass": "61 sentences in 41 texts matching a class pattern (the first four classes), read at their passages"
+ },
+ "observations": [
+  "No deposit names the Anthropic Economic Index, its AUI, its dataset or its arXiv numbers.",
+  "The archive's labor instruments (DSL, ULD) meet the index only through the Labor Vector record's lv_intersection, which is labelled as the archive's reading.",
+  "The archive's self-audit line is large (most class-5 candidates); what it says of a model's assessment of its own output is carried by #780, #766, #777, #138, with #788 and #1470 as documented instances."
+ ],
+ "counts": {
+  "D": 0,
+  "R": 0,
+  "O_candidates": 273,
+  "H_candidates": 97,
+  "admitted_deposits": 14,
+  "instances": 4,
+  "archive_claims": {
+   "deposit": 22,
+   "CAP": 11,
+   "LV": 27
+  }
+ }
+}
