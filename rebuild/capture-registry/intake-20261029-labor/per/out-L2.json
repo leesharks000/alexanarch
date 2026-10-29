@@ -1,0 +1,1685 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "lv-coworker-bossware-database",
+   "name": "Bossware and Employment Tech Database",
+   "template": "dataset",
+   "type_basis": "Census kind 'database' (\"kind\": \"database\"; unit: one table row per labor-focused technology product): database -> dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database]",
+     "origin": "census"
+    },
+    {
+     "source": "coworker-bossware-database--database",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt",
+     "origin": "own_page",
+     "url": "https://home.coworker.org/?p=770",
+     "http": "200",
+     "sha256": "463549f73929836e03c4954b22bc2fbf43f8c575d26b2d586b7ee7b450ee5cac"
+    },
+    {
+     "source": "coworker-bossware-database--little-tech-report",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt",
+     "origin": "own_page",
+     "url": "https://home.coworker.org/wp-content/uploads/2021/11/Little-Tech-Is-Coming-for-Workers.pdf",
+     "http": "200",
+     "sha256": "4232b0e7fbc7ea08239bfad0842e1d833f0158a6b4e05e74f7282d7e6255429f"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Bossware and Employment Tech Database",
+      "Bossware and Employment Tech",
+      "Little Tech database"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Bossware and Employment Tech Database",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].name"
+      },
+      {
+       "record_quote": "Little Tech database",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].aka"
+      },
+      {
+       "record_quote": "Coworker.org’s Bossware and Employment Tech database compiles more than 550 labor-focused technology products",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L86"
+      },
+      {
+       "record_quote": "The Little Tech database is available on",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L866"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Coworker.org",
+      "Coworker"
+     ],
+     "reference": "Made by Coworker.org (the database researched and created by Ayden Federline for Coworker.org); counts only when bound to the database as its maker.",
+     "evidence": [
+      {
+       "record_quote": "Coworker.org",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].operator"
+      },
+      {
+       "record_quote": "Coworker.org’s Bossware and Employment Tech database",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L86"
+      },
+      {
+       "record_quote": "researching and creating the database of employment tech products",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L47"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "November 17, 2021",
+      "2021",
+      "November 2020",
+      "May 2021"
+     ],
+     "reference": "Published 17 November 2021; research November 2020 to May 2021.",
+     "evidence": [
+      {
+       "record_quote": "NOVEMBER 17, 2021 | COWORKER.ORG",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L84"
+      },
+      {
+       "record_quote": "Our research, which ran from November 2020",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L849"
+      },
+      {
+       "record_quote": "until May 2021, catalogued more than 550",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L850"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An inventory of more than 550 labor-focused technology products (with their companies and investors) touching every part of the labor process, from hiring to productivity monitoring, that use AI, location tracking and biometrics to manage employees and collect their data; with assessments of each product's public data practices against worker-rights criteria. Stated limits: not exhaustive (hundreds of emerging and non-U.S. products omitted), collection stopped at sufficient evidence of pervasiveness, product-level (Big Tech gig platforms omitted), privacy assessments from public statements only; researched 2020-2021 and not updated.",
+     "evidence": [
+      {
+       "record_quote": "In the database you’ll find companies — and their products and investors — that touch every part of the labor process, from hiring to productivity monitoring and more.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L96"
+      },
+      {
+       "record_quote": "the database covers products that use technology like AI, location tracking, and biometrics to manage employees and collect their data — often without their knowledge.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L96"
+      },
+      {
+       "record_quote": "note that the database is not exhaustive,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L869"
+      },
+      {
+       "record_quote": "and we omitted or overlooked hundreds",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L870"
+      },
+      {
+       "record_quote": "development as well as non-U.S. products.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L872"
+      },
+      {
+       "record_quote": "We stopped collecting information once",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L873"
+      },
+      {
+       "record_quote": "NOT updated since 2021 on the saved page",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Little Tech Is Coming for Workers",
+      "Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power"
+     ],
+     "reference": "The accompanying Coworker.org report, Little Tech Is Coming for Workers, of which the database is the evidence base.",
+     "evidence": [
+      {
+       "record_quote": "Little Tech Is Coming for Workers , an accompanying report, seeks to address the proliferation of these technologies and analyzes the ways they’re harming workers, labor standards, and the economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L88"
+      },
+      {
+       "record_quote": "Little Tech Is Coming for Workers: A Framework for Reclaiming and Building Worker Power,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L56"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To expose the companies, products and investors behind the rise of technology used to manage the labor force, so that workers and the public can learn who they are; with its report, to address the proliferation of these products and the ways they harm workers, labor standards and the economy, and to reclaim and build worker power.",
+     "evidence": [
+      {
+       "record_quote": "Could your boss be an app? Since 2018 we’ve seen a rise in the use of tech to manage the world’s labor force.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L86"
+      },
+      {
+       "record_quote": "Use the table and the filters below to learn more about the companies behind this emerging trend:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L98"
+      },
+      {
+       "record_quote": "Little Tech Is Coming for Workers , an accompanying report, seeks to address the proliferation of these technologies and analyzes the ways they’re harming workers, labor standards, and the economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L88"
+      },
+      {
+       "record_quote": "the report reads the products as eroding labor standards and weakening worker voice and worker power",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].findings"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY-NC-ND 4.0",
+      "Attribution NonCommercial-NoDerivatives 4.0 International"
+     ],
+     "reference": "The report is licensed CC BY-NC-ND 4.0 (attribution, non-commercial, no derivatives); no licence is stated for the table. The page invites workers to share their stories.",
+     "evidence": [
+      {
+       "record_quote": "© 2021 by Coworker.org, is licensed under Attribution NonCommercial-NoDerivatives 4.0 International.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--little-tech-report.txt:L57"
+      },
+      {
+       "record_quote": "no licence stated for the database table",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=coworker-bossware-database].license"
+      },
+      {
+       "record_quote": "Click here to share your story with our team .",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/coworker-bossware-database--database.txt:L92"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No predecessor or model is stated; the report compares its data points with the UC Berkeley Labor Center's list ('consistent with UC Berkeley Labor Center’s list'), a comparison, not a stated derivation."
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No identifier for the database or its rows is stated in the saved sources."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No versions or updates are stated: one publication (17 November 2021) with its report; the census records no later update on the saved page."
+    }
+   ],
+   "inversion_guidance": "Carrying its catalogue of products in order to market or recommend monitoring tools, or reading its 2021 inventory as a current or exhaustive census, or crediting the harms it documents to other research while presenting the database as a neutral product list.",
+   "notes": "Records: the census row and two operator sources (the database page with its embedded table; the Little Tech report PDF, both own_page). The product names a composition lists can be checked against the saved table. Lineage, identifier and deposit chain unknown.",
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments"
+   ]
+  },
+  {
+   "new": "lv-ilo-platform-policy-tracker",
+   "name": "Digital Labour Platform Policy Tracker",
+   "template": "dataset",
+   "type_basis": "Census kind 'global policy tracker (a database of legislation, policies and decisions, with a collective bargaining agreements component)': a database -> dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker]",
+     "origin": "census"
+    },
+    {
+     "source": "ilo-platform-policy-tracker--launch",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt",
+     "origin": "own_page",
+     "url": "https://www.ilo.org/resource/news/ilo-launches-global-policy-tracker-digital-labour-platforms",
+     "http": "200",
+     "sha256": "9b2b9a1fdd16b54bd33f3cd2635d9dafde961d4bb706e0a7bf958df5dde6bb07"
+    },
+    {
+     "source": "ilo-platform-policy-tracker--cba-expansion",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt",
+     "origin": "own_page",
+     "url": "https://www.ilo.org/resource/news/ilo-expands-digital-labour-platform-policy-tracker-include-collective",
+     "http": "200",
+     "sha256": "278fc5938b834101eccc81a185b6549b45ad483099ffba38553fda529f9ff28e"
+    },
+    {
+     "source": "ilo-platform-policy-tracker--observatory",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--observatory.txt",
+     "origin": "own_page",
+     "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+     "http": "200",
+     "sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Digital Labour Platform Policy Tracker",
+      "Global Policy Tracker on Digital Labour Platforms",
+      "Policy Tracker on Digital Labour Platforms",
+      "Digital Labour Platform Tracker",
+      "Digital Labour Policy Tracker"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Digital Labour Platform Policy Tracker",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].name"
+      },
+      {
+       "record_quote": "Digital Labour Platform Tracker",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].aka"
+      },
+      {
+       "record_quote": "Global Policy Tracker on Digital Labour Platforms",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].aka"
+      },
+      {
+       "record_quote": "a new component of its Digital Labour Platform Policy Tracker",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L112"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "International Labour Organization",
+      "ILO"
+     ],
+     "reference": "Made and launched by the International Labour Organization (ILO).",
+     "evidence": [
+      {
+       "record_quote": "International Labour Organization (ILO)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].operator"
+      },
+      {
+       "record_quote": "The International Labour Organization (ILO) is launching a new global policy tracker",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L124"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "14 August 2025",
+      "August 2025",
+      "2025",
+      "7 November 2025"
+     ],
+     "reference": "Launched 14 August 2025; collective bargaining agreements component added 7 November 2025.",
+     "evidence": [
+      {
+       "record_quote": "14 August 2025",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L98"
+      },
+      {
+       "record_quote": "7 November 2025",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L96"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A global tracker consolidating national and regional legislative and policy initiatives on platform work, by issue (employment status, remuneration, algorithms, working time, data and privacy, safety, termination, collective bargaining), with a component of collective bargaining agreements between unions and platform companies within the European Union. Stated limits: judicial decisions are not yet integrated (planned next phase); coverage still being expanded; it measures rules, not platform workers' conditions; no record count stated.",
+     "evidence": [
+      {
+       "record_quote": "By consolidating information on national and regional legislative and policy initiatives",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L128"
+      },
+      {
+       "record_quote": "It will shed light on how different jurisdictions address issues such as employment status classification",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L128"
+      },
+      {
+       "record_quote": "helping users understand whether the agreements operate at the national, sectoral, or enterprise level within the European Union.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L113"
+      },
+      {
+       "record_quote": "Looking ahead, the next phase of the project will focus on expanding geographic and thematic coverage, integrating judicial decisions related to the platform economy",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L116"
+      },
+      {
+       "record_quote": "NOT a court-decision database yet: judicial decisions are planned",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].negative_tags"
+      },
+      {
+       "record_quote": "not stated in the saved sources",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-platform-policy-tracker].count.value"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Observatory on AI and Work in the Digital Economy",
+      "ILO Observatory on AI and Work in the Digital Economy"
+     ],
+     "reference": "A key feature of the ILO Observatory on AI and Work in the Digital Economy.",
+     "evidence": [
+      {
+       "record_quote": "As a key feature of the ILO Observatory on AI and Work in the Digital Economy",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L127"
+      },
+      {
+       "record_quote": "Integrated into the ILO’s Observatory on AI and Work in the Digital Economy online knowledge hub",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L114"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To equip governments and employers' and workers' representatives with information on platform-work regulation, to facilitate social dialogue and evidence-based policymaking and foster decent work in the platform economy.",
+     "evidence": [
+      {
+       "record_quote": "The global policy tracker is designed to equip governments, and employers’ and workers' representatives, with information to facilitate discussions and foster decent work in the platform economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L125"
+      },
+      {
+       "record_quote": "the tracker aims to facilitate social dialogue and evidence-based policymaking.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--launch.txt:L128"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No licence or terms of use for the tracker are stated in the saved sources; the © 1996-2026 ILO line is the ILO website's footer on the news page, not a statement for the tracker (census license: 'not stated in the saved sources')."
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No predecessor or model is stated."
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No identifier for the tracker or its records is stated in the saved sources (the application itself was not saved)."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "launch, 14 August 2025",
+      "CBA component, 7 November 2025",
+      "next phase: judicial decisions, wider coverage"
+     ],
+     "reference": "Phased: launched with legislation and policy (14 August 2025), a collective bargaining agreements component added (7 November 2025), and a stated next phase to expand coverage, integrate judicial decisions and update continuously.",
+     "evidence": [
+      {
+       "record_quote": "has launched a new component of its Digital Labour Platform Policy Tracker, focusing specifically on collective bargaining agreements (CBAs) related to platform work.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L112"
+      },
+      {
+       "record_quote": "Looking ahead, the next phase of the project will focus on expanding geographic and thematic coverage, integrating judicial decisions related to the platform economy, and continuously updating the database with new legislation, and collective bargaining agreements.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--cba-expansion.txt:L116"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its ILO standing or its issue list in order to present it as a complete record of platform law (judicial decisions included, a count of countries it does not state), or folding it into the Platform Economy Convention as if the tracker were the standard.",
+   "notes": "Records: the census row and three ILO pages (launch news, CBA-expansion news, the Observatory page), all own_page. The tracker application was not saved (census 'unchecked'), so record counts and countries are not in the records. Commitments, lineage and identifier unknown.",
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "deposit chain"
+   ]
+  },
+  {
+   "new": "lv-berkeley-negotiating-tech",
+   "name": "Negotiating Tech: An Inventory of U.S. Union Contract Provisions for the Digital Age",
+   "template": "dataset",
+   "type_basis": "Census kind 'searchable inventory' (unit: a technology-related provision of a U.S. collective bargaining agreement, coded in a structured framework): an inventory/database -> dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=berkeley-negotiating-tech]",
+     "origin": "census"
+    },
+    {
+     "source": "berkeley-negotiating-tech--inventory",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt",
+     "origin": "own_page",
+     "url": "https://laborcenter.berkeley.edu/negotiating-tech/",
+     "http": "200",
+     "sha256": "334a2b141c608f567f39ba1da80e84bf5dec195e898250999fc24254b1686205"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Negotiating Tech",
+      "Negotiating tech",
+      "Negotiating Tech: An Inventory of U.S. Union Contract Provisions for the Digital Age"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Negotiating Tech: An Inventory of U.S. Union Contract Provisions for the Digital Age",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=berkeley-negotiating-tech].name"
+      },
+      {
+       "record_quote": "Negotiating tech",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=berkeley-negotiating-tech].aka"
+      },
+      {
+       "record_quote": "Kresge, Lisa. “Negotiating tech: An inventory of U.S. union contract provisions for the digital age.”",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L172"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lisa Kresge",
+      "UC Berkeley Labor Center",
+      "Center for Labor Research and Education"
+     ],
+     "reference": "Researched and developed by Lisa Kresge, for the UC Berkeley Labor Center (Center for Labor Research and Education).",
+     "evidence": [
+      {
+       "record_quote": "The inventory was researched and developed by Lisa Kresge as a project of the UC Berkeley Labor Center’s Technology and Work Program",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L59"
+      },
+      {
+       "record_quote": "UC Berkeley Labor Center (Center for Labor Research and Education)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=berkeley-negotiating-tech].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "July 2, 2025",
+      "July 2025",
+      "2025"
+     ],
+     "reference": "Last updated 2 July 2025; cited as July 2025.",
+     "evidence": [
+      {
+       "record_quote": "and was last updated on July 2, 2025.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L59"
+      },
+      {
+       "record_quote": "Center for Labor Research and Education, University of California, Berkeley. July 2025.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L172"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A searchable inventory of technology-related provisions from more than 175 U.S. collective bargaining agreements (from over 500 reviewed; over 950 provisions), documenting how unions have addressed workplace technologies through bargaining. Stated limits: an informational resource, not model language or best practice; not exhaustive of all sectors; many agreements do not name specific technologies; references to specific employers or unions generally omitted; U.S. only.",
+     "evidence": [
+      {
+       "record_quote": "This searchable inventory documents how unions have addressed workplace technologies through collective bargaining.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L57"
+      },
+      {
+       "record_quote": "It includes provisions from more than 175 agreements, drawn from a review of over 500 contracts",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L57"
+      },
+      {
+       "record_quote": "Designed as an informational resource rather than a source of model language",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L57"
+      },
+      {
+       "record_quote": "No. The inventory highlights actual negotiated provisions but does not offer model contract language.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L158"
+      },
+      {
+       "record_quote": "While not exhaustive of all sectors, the inventory provides a detailed view",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L140"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Technology and Work Program",
+      "UC Berkeley Labor Center’s Technology and Work Program"
+     ],
+     "reference": "A project of the UC Berkeley Labor Center's Technology and Work Program.",
+     "evidence": [
+      {
+       "record_quote": "as a project of the UC Berkeley Labor Center’s Technology and Work Program",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L59"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To help users locate and understand how unions have addressed workplace technologies in collective bargaining, surfacing the strategies unions have used in practice (rights, protections, shaping how technologies are introduced, governance mechanisms).",
+     "evidence": [
+      {
+       "record_quote": "The inventory is designed to help users locate and understand how unions have addressed workplace technologies in collective bargaining agreements.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L102"
+      },
+      {
+       "record_quote": "Instead, it aims to surface strategies unions have used in practice.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L158"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "© Copyright 2026 UC Berkeley Labor Center"
+     ],
+     "reference": "All rights reserved to the UC Berkeley Labor Center (no open licence); each provision links to the complete agreement so the full language can be reviewed in context; references to specific employers or unions generally omitted; suggestions for contracts invited.",
+     "evidence": [
+      {
+       "record_quote": "© Copyright 2026 UC Berkeley Labor Center",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L196"
+      },
+      {
+       "record_quote": "Each provision or summary is accompanied by a link to the complete collective bargaining agreement, allowing users to review the full language",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L111"
+      },
+      {
+       "record_quote": "References to specific employers or unions are generally omitted.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L108"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No predecessor or model is stated."
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "SEIU-OLMS46 (contract identifier form)",
+      "OLMS",
+      "OPM",
+      "PCBA"
+     ],
+     "reference": "Each linked contract carries a custom identifier indicating its data source and its unique ID within the technology agreement dataset (e.g. SEIU-OLMS46), so a provision can be traced to its contract and source repository.",
+     "evidence": [
+      {
+       "record_quote": "A custom identifier is also included to indicate the contract’s data source and its unique ID within this technology agreement dataset.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L162"
+      },
+      {
+       "record_quote": "For example, SEIU-OLMS46 indicates that the contract was negotiated by SEIU",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L164"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "last updated July 2, 2025",
+      "periodic updates"
+     ],
+     "reference": "Updated periodically to add contracts and improve coverage and usability; last update 2 July 2025.",
+     "evidence": [
+      {
+       "record_quote": "We plan to update this inventory periodically and welcome suggestions for contracts to include or ideas to improve coverage and usability.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L168"
+      },
+      {
+       "record_quote": "The most recent update was made on July 2, 2025.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/berkeley-negotiating-tech--inventory.txt:L168"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its name in order to compose individual salary or offer negotiation (bargaining reduced to an employee's private tactics against an employer), or presenting its provisions as model language or best practice, which it refuses.",
+   "notes": "Records: the census row and the inventory overview page (own_page); the six section pages were not saved. Lineage unknown.",
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments",
+    "identifier",
+    "deposit chain"
+   ]
+  },
+  {
+   "new": "lv-dair-luddite-lab",
+   "name": "Luddite Lab Resource Hub",
+   "template": "institution",
+   "type_basis": "Census kind 'resource hub (case studies, primers and a resource library)', run as 'a project of the Distributed AI Research Institute (DAIR)' with its own team: an initiative -> institution template (the backlog brief: organisation or initiative: institution). Not dataset: census negative tag 'NOT a dataset or measurement'.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab]",
+     "origin": "census"
+    },
+    {
+     "source": "dair-luddite-lab--about",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt",
+     "origin": "own_page",
+     "url": "https://labor.dair-institute.org/about",
+     "http": "200",
+     "sha256": "80633ec0d896874fc19f53c5b2aa43bad24d2565b5a81c79f2e89b4f70bfd150"
+    },
+    {
+     "source": "dair-luddite-lab--home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--home.txt",
+     "origin": "own_page",
+     "url": "https://labor.dair-institute.org/",
+     "http": "200",
+     "sha256": "343f27de7b8db2909fe18d9b46c59d38f4af31f9fde5208e2316cd8402fbad47"
+    },
+    {
+     "source": "dair-luddite-lab--resources",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--resources.txt",
+     "origin": "own_page",
+     "url": "https://labor.dair-institute.org/resources",
+     "http": "200",
+     "sha256": "cbe511c0f9586442c40eb4ce302ce48e0ea63da93ba6c81b01716ec20788729f"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Luddite Lab Resource Hub",
+      "Luddite Lab",
+      "the Luddite Lab at DAIR"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Luddite Lab Resource Hub",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab].name"
+      },
+      {
+       "record_quote": "Luddite Lab",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab].aka"
+      },
+      {
+       "record_quote": "The Luddite Lab Resource Hub provides resources for unions",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L6"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Distributed AI Research Institute",
+      "DAIR",
+      "DAIR Institute"
+     ],
+     "reference": "A project of the Distributed AI Research Institute (DAIR), the operator the records name (no founding act or person is stated; the team, under Alex Hanna, Director of Research, DAIR Institute, is listed).",
+     "evidence": [
+      {
+       "record_quote": "The Luddite Lab is a project of the Distributed AI Research Institute (DAIR) .",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L52"
+      },
+      {
+       "record_quote": "Distributed AI Research Institute (DAIR)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab].operator"
+      },
+      {
+       "record_quote": "Director of Research, DAIR Institute",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L15"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No founding or launch date is stated in the saved pages (census 'unchecked': 'a founding date'; pages carry © 2026 only)."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Resources for unions, labor organizations and organizers fighting AI and automation at work: strategies for worker-led governance and oversight of new technology through case studies, primers and a resource library, drawn from dozens of conversations with unionists (journalism, entertainment, nursing), literature reviews and the team's labor background. Not neutral on AI at work; not a dataset; it selects actionable organizing tools and shies away from general statements of principle.",
+     "evidence": [
+      {
+       "record_quote": "The Luddite Lab Resource Hub provides resources for unions, labor organizations, and organizers fighting AI and automation at work. We provide strategies for worker-led governance and oversight of new technology through case studies, primers, and a resource library.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L6"
+      },
+      {
+       "record_quote": "This Resource Hub is the result of dozens of conversations with unionists from multiple different industries",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L8"
+      },
+      {
+       "record_quote": "We highlight those resources which we find to be helpful and actionable as organizing tools. This means we typically shy away from general statements of principles.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--resources.txt:L6"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records place the hub in no programme or host beyond DAIR, its operator (founder atom)."
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To equip unions, labor organizations and worker-organizers to fight AI and automation at work: discussing the harms of particular technologies and highlighting the organizing strategies workers have used to push back, toward worker-led governance and oversight of technology.",
+     "evidence": [
+      {
+       "record_quote": "This is a publicly accessible resource which not only discusses the harms of particular technologies, but also highlights a range of organizing strategies which workers have used to push back.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L8"
+      },
+      {
+       "record_quote": "The lab provides strategies for worker-led governance and oversight of new technology through case studies, primers, and a resource library.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--home.txt:L6"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "© 2026 DAIR. All rights reserved."
+     ],
+     "reference": "A publicly accessible resource; content © 2026 DAIR, all rights reserved; built for workers fighting AI (not neutral); the library holds only resources it finds helpful and actionable as organizing tools.",
+     "evidence": [
+      {
+       "record_quote": "This is a publicly accessible resource",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L8"
+      },
+      {
+       "record_quote": "© 2026 DAIR. All rights reserved.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/dair-luddite-lab--about.txt:L68"
+      },
+      {
+       "record_quote": "NOT neutral on AI at work: it is built for workers fighting AI and automation",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No predecessor or model is stated in the saved pages (the name's Luddite reference is not stated as lineage by any record)."
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No identifier is stated."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "labor.dair-institute.org"
+     ],
+     "reference": "The hub's own site, labor.dair-institute.org (no reason for it beyond public access is stated).",
+     "evidence": [
+      {
+       "record_quote": "https://labor.dair-institute.org/",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=dair-luddite-lab].url"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its name in order to frame it as anti-technology nostalgia or to devalue it (the 'Luddite' label used against it), merging it with the commercial homonym Luddite Labs, or presenting it as neutral AI-at-work guidance.",
+   "notes": "Records: the census row and three own pages (about, home, resource library index). The case studies and primers were not saved. Date, framework, lineage and identifier unknown.",
+   "required": [
+    "name",
+    "founder",
+    "claim boundary",
+    "purpose",
+    "commitments",
+    "deposit chain"
+   ]
+  },
+  {
+   "new": "lv-ilo-genai-exposure-index",
+   "name": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+   "template": "dataset",
+   "type_basis": "Census kind 'index of occupational exposure, published as a working paper with a research brief'; an index with published task-level scores: dataset template (the backlog brief: benchmark or database: dataset).",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index]",
+     "origin": "census"
+    },
+    {
+     "source": "ilo-genai-exposure-index--wp140",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt",
+     "origin": "own_page",
+     "url": "https://webapps.ilo.org/static/english/intserv/working-papers/wp140/index.html",
+     "http": "200",
+     "sha256": "f33cc70351ee90684681a34ea4977fffca428b0d6712193450d0234c3ad8d743"
+    },
+    {
+     "source": "ilo-genai-exposure-index--brief",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--brief.txt",
+     "origin": "own_page",
+     "url": "https://www.ilo.org/node/706776",
+     "http": "200",
+     "sha256": "d01982bba323de9605e1fb36bb76f3144de14b2c64e930355f9bd04c9e5c15de"
+    },
+    {
+     "source": "ilo-platform-policy-tracker--observatory",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--observatory.txt",
+     "origin": "own_page",
+     "url": "https://www.ilo.org/topics-and-sectors/observatory-ai-and-work-digital-economy",
+     "http": "200",
+     "sha256": "402a902dac92f13a919040f18c1b23402dd05338ab3ec56a6e59d6a8abeb8a44"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+      "ILO Working Paper 140",
+      "Global Index of Occupational Exposure to Generative AI",
+      "Generative AI and jobs: A 2025 update",
+      "AI impact on jobs"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].name"
+      },
+      {
+       "record_quote": "ILO Working Paper 140",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].aka"
+      },
+      {
+       "record_quote": "Generative AI and jobs: A 2025 update",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].aka"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "International Labour Organization",
+      "ILO",
+      "Paweł Gmyrek",
+      "Janine Berg",
+      "NASK"
+     ],
+     "reference": "The ILO (Research department, with NASK), authors Paweł Gmyrek, Janine Berg, Karol Kamiński, Filip Konopczyński, Agnieszka Ładna, Balint Nafradi, Konrad Rosłaniec, Marek Troszyński.",
+     "evidence": [
+      {
+       "record_quote": "International Labour Organization (ILO), with NASK",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].operator"
+      },
+      {
+       "record_quote": "authors Paweł Gmyrek, Janine Berg",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].operator"
+      },
+      {
+       "record_quote": "the Research department of the ILO has partnered with NASK",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L333"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "20 May 2025",
+      "May 2025",
+      "2025"
+     ],
+     "reference": "Published 20 May 2025.",
+     "evidence": [
+      {
+       "record_quote": "20 May 2025",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--brief.txt:L104"
+      },
+      {
+       "record_quote": "2025-05-20",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].version_and_time.wp140"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An index of occupational exposure to GenAI: task automation scores (technical feasibility) aggregated to ISCO-08 occupations in four gradients, with estimated employment shares exposed. It measures exposure, an upper threshold of what could be affected, and not the actual impact on employment; a static snapshot at the start of 2025, not accounting for new jobs; survey run in Poland and possibly unrepresentative; most jobs more likely transformed than made redundant.",
+     "evidence": [
+      {
+       "record_quote": "It is important to stress that these new estimates reflect “exposure” to GenAI and not the actual impact on employment.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L1866"
+      },
+      {
+       "record_quote": "our estimates present a static snapshot of the exposure of existing occupations to GenAI at the start of 2025.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L1868"
+      },
+      {
+       "record_quote": "One in four workers across the world are in an occupation with some degree of GenAI exposure, but because of the continued need for human input, most jobs will be transformed rather than made redundant.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--brief.txt:L121"
+      },
+      {
+       "record_quote": "Globally, one in four workers are in an occupation with some GenAI exposure. 3.3% of global employment falls into the highest exposure category, albeit with significant differences between female (4.7%) and male employment (2.4%).",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L326"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Observatory on AI and Work in the Digital Economy",
+      "AI impact on jobs (Observatory)"
+     ],
+     "reference": "Featured and linked as 'AI impact on jobs' on the ILO Observatory on AI and Work in the Digital Economy.",
+     "evidence": [
+      {
+       "record_quote": "the Observatory still links its data ('AI impact on jobs')",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=ilo-genai-exposure-index].lifecycle.detail"
+      },
+      {
+       "record_quote": "ILO researchers developed a methodology to estimate the effects of generative AI on existing occupations.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-platform-policy-tracker--observatory.txt:L220"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give policy makers a deeper, more precise understanding of how GenAI might affect existing jobs across countries, as a foundation for social dialogue and targeted policy responses to manage the transition.",
+     "evidence": [
+      {
+       "record_quote": "it is important for policy makers to develop deeper understanding of how technological advances might impact existing jobs.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L333"
+      },
+      {
+       "record_quote": "offering a foundation for social dialogue and targeted policy responses to manage the transition.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L326"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY 4.0",
+      "Attribution 4.0 International"
+     ],
+     "reference": "The working paper is licensed CC BY 4.0; all task-level scores are made publicly available.",
+     "evidence": [
+      {
+       "record_quote": "Attribution 4.0 International (CC BY 4.0)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L10015"
+      },
+      {
+       "record_quote": "In addition, we make all task-level scores publicly available",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L1874"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "ILO 2023 Global Index of Occupational Exposure to Generative AI",
+      "Gmyrek, Berg and Bescond, 2023",
+      "GBB"
+     ],
+     "reference": "Updates and refines the ILO's 2023 index (Gmyrek, Berg and Bescond, 2023).",
+     "evidence": [
+      {
+       "record_quote": "This study updates the ILO’s 2023 Global Index of Occupational Exposure to Generative AI (GenAI)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L324"
+      },
+      {
+       "record_quote": "(Gmyrek, Berg and Bescond, 2023 - GBB hereafter)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L334"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "10.54394/HETP0387",
+      "https://doi.org/10.54394/HETP0387",
+      "ISBN 9789220421871"
+     ],
+     "reference": "DOI and ISBN of the working paper; no reason stated.",
+     "evidence": [
+      {
+       "record_quote": "https://doi.org/10.54394/HETP0387",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L10025"
+      },
+      {
+       "record_quote": "9789220421871",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L10024"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "2023 index",
+      "2025 refinement (WP 140)",
+      "research brief",
+      "task-level scores"
+     ],
+     "reference": "The 2023 index updated in 2025 to incorporate advances in the technology and user familiarity; a research brief summarises it; task-level scores published.",
+     "evidence": [
+      {
+       "record_quote": "incorporating recent advances in the technology and increasing user familiarity with GenAI tools.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--wp140.txt:L324"
+      },
+      {
+       "record_quote": "This brief summarizes an ILO Working paper that refines the global assessment of occupational exposure to generative AI.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/ilo-genai-exposure-index--brief.txt:L92"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its exposure figures as forecasts of job loss or as observed impact (dropping 'exposure, not the actual impact', the upper threshold), or using its ILO standing to certify figures it does not state.",
+   "notes": "Records: the census row, the working paper (WP 140, HTML) and the ILO research brief, own_page; the Observatory page (shared with the policy tracker row) for framework.",
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "key": "bossware-and-employment-tech-database-aio-20261029",
+   "entry": "bossware-and-employment-tech-database-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-coworker-bossware-database",
+   "scored_object": "the expanded answer (the Overview expanded, from the first line of the answer to the end of its card rail), as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "catalogs more than 550 labor-focused technology products used to monitor, track, and manage workers across various industries.",
+    "basis": "The database is composed as itself, bound to Coworker.org, with its own count ('more than 550', the operator's statement) and its contents: the products listed under 'Key Database Examples' (ActivTrak, Hubstaff, Time Doctor, Desklog, Controlio, Amazon's Project Ultraviolet, Alice Housekeeping, Netradyne, HireVue, Arctic Shores, Arya) all occur in the saved table. The middle section ('What is Bossware?') defines the generic term, but the target leads and is returned to; same."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Coworker.org Bossware and Employment Tech Database"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The [Coworker.org Bossware and Employment Tech Database"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "catalogs more than 550 labor-focused technology products used to monitor, track, and manage workers across various industries."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author: Coworker.org is bound to the database attributively ('The Coworker.org Bossware and Employment Tech Database'), as the operator's own 'Coworker.org’s Bossware and Employment Tech database'. Claim boundary present at its own count and scope (labor-focused products that manage workers), but its stated limits (not exhaustive, non-U.S. omitted, 2020-2021 research) are not carried and the 2021 inventory is given in the present tense ('tracks a wide range of platforms'); no date. Purpose absent: what the database holds is carried, what it is for is not (to expose the companies and investors behind the trend; with its report, the harms to workers, labor standards and worker power); the harm reading is carried only as 'Research highlighted by institutions like Vanderbilt Law School', another source, and investors are not mentioned. The accompanying report (framework) and its CC BY-NC-ND licence (commitments) are absent. 'Coworker Worktech Database' is a variant taken from the URL slug /worktech/, not a registered alias (the name atom is already present). No inversion, no standing substitution."
+  },
+  {
+   "key": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+   "entry": "ilo-digital-labour-platform-policy-tracker-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-ilo-platform-policy-tracker",
+   "scored_object": "the expanded answer (the Overview expanded, from the first line of the answer to the end of its card rail), as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a global policy database that monitors how countries regulate platform work through legislation, collective bargaining agreements, and judicial decisions.",
+    "basis": "The tracker is composed as itself: the ILO's tracker of how jurisdictions regulate platform work, its issue list (employment status, remuneration, algorithms, working time, privacy, OSH, termination, collective bargaining) and its audience, placed in the Observatory. The Platform Economy Convention No. 193 is set beside it as a related initiative, not merged: same."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Digital Labour Platform Tracker"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The International Labour Organization (ILO) [Digital Labour Platform Tracker"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "Observatory on AI and Work in the Digital Economy: The broader institutional framework under which the tracker operates."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Built for governments, employers' and workers' representatives, policymakers, and researchers to support evidence-based policymaking."
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the scope is inflated. The composition says it monitors regulation 'through legislation, collective bargaining agreements, and judicial decisions', but judicial decisions are the stated next phase, not yet integrated (census: 'NOT a court-decision database yet'); and 'Tracks policy developments, laws, and agreements across more than 30 countries' gives a count the records do not state (the application was not saved; the CBA component covers the European Union). Purpose present: 'support evidence-based policymaking' for governments and social partners is the launch page's 'facilitate social dialogue and evidence-based policymaking'. No date (14 August 2025; 7 November 2025). Deposit chain absent: the phased chain (launch, CBA component, planned judicial decisions) is not carried; the planned phase is composed as present. The Convention 'No. 193' of 2026 comes from card 3 (an ILO page) and lies outside the records; set beside the tracker, not merged. No inversion, no standing substitution."
+  },
+  {
+   "key": "negotiating-tech-aio-20261029",
+   "entry": "negotiating-tech-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-berkeley-negotiating-tech",
+   "scored_object": "the expanded answer (the Overview expanded, from the first line of the answer to the end of its card rail), as the transcript records it",
+   "reached": {
+    "kind": "generic",
+    "abn": false,
+    "span": "Negotiating a tech offer means treating the total compensation package—not just the base salary—as a flexible starting point.",
+    "basis": "Homonym case. The address is the inventory's short name; the composition reads it as the phrase 'negotiating [a] tech [offer]' and composes individual salary and offer negotiation in the tech industry (don't say a number first, RSUs, sign-on bonus, competing offers). No entity stands in the target's place: it is the generic sense of the phrase, so generic, not substitute. The target appears only as the first card of the rail ('Negotiating tech - UC Berkeley Labor Center ... This searchable inventory documents how unions have addressed workplace technologies through collective bargaining.'), which never satisfies an atom. target_absent applies."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Beneath the gate nothing of the target survives in the composition: the name token 'Negotiating tech' does not occur in it ('Negotiating a tech offer', 'Tech Negotiation'), only in card titles. Collective bargaining, unions and the Labor Center are absent; bargaining is composed as an individual employee's tactics toward an employer, the sense the inventory's purpose (how unions bargain over workplace technology) stands against. The retrieval held the target (it is card 1, with the inventory's own self-description and its 2 July 2025 date) and the composition did not use it. Not recorded as an inversion: no element of the inventory is carried into the composition; the name is read as a phrase. No standing substitution."
+  },
+  {
+   "key": "luddite-lab-aio-20261029",
+   "entry": "luddite-lab-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-dair-luddite-lab",
+   "scored_object": "the expanded answer (the Overview expanded, from the first line of the answer to the end of its card rail), as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "designed to help unions, labor organizations, and workers resist AI and workplace automation.",
+    "basis": "The hub is composed as itself, by both its names, as DAIR's project, with its mandate (resources for unions and workers fighting AI and automation; case studies, primers, worker-led governance). The commercial homonym Luddite Labs is set apart explicitly ('an unrelated commercial software entity'), not merged: same."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Luddite Lab (formally known as the Luddite Lab Resource Hub)"
+    },
+    {
+     "atom": "founder",
+     "present": true,
+     "span": "is a project by the [Distributed AI Research Institute (DAIR)"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Provides strategic tools, case studies, primers, and political education for worker-led governance and oversight of workplace technologies."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "designed to help unions, labor organizations, and workers resist AI and workplace automation."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "The public resource hub can be explored directly via the"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Founder: DAIR bound as the maker ('a project by the Distributed AI Research Institute (DAIR)'), the records' 'a project of'. 'Founded and co-led by figures including sociologist and DAIR director Alex Hanna' goes beyond the records: they list Alex Hanna on the team as 'Director of Research, DAIR Institute' and state no founder; not charged (DAIR is the founder token and is present). Commitments present but thin: public access ('The public resource hub'), the records' 'a publicly accessible resource'; the © DAIR all-rights-reserved terms and the library's selection rule are not carried. Deposit chain absent: the access offer is made through a link whose anchor is the hub's own name, which never fills a second atom, and the site labor.dair-institute.org is not named. 'Core Philosophy: Reframes AI job displacement ... as a management choice' comes from the AI Weekly card about a primer; the primers were not saved, so it is neither credited nor charged. No inversion: the 'Luddite' name is not turned against the hub. No standing substitution."
+  },
+  {
+   "key": "ilo-generative-ai-and-jobs-index-aio-20261029",
+   "entry": "ilo-generative-ai-and-jobs-index-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-ilo-genai-exposure-index",
+   "scored_object": "the expanded answer (the Overview expanded, from the first line of the answer to the end of its card rail), as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The International Labour Organization (ILO) published its updated assessment in the report \"Generative AI and Jobs: A Refined Global Index of Occupational Exposure\" (ILO Working Paper 140).",
+    "basis": "The index is composed as itself, by its full title and working-paper number, bound to the ILO, with its headline findings (24%, 3.3% in Gradient 4, 34% HICs vs 11% LICs, clerical highest, transformation over redundancy) and its four-gradient method: same."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The International Labour Organization (ILO) published its updated assessment in the report"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Transformation vs. Replacement: The research emphasizes job transformation rather than widespread job elimination or mass redundancy, as very few occupations consist entirely of automatable tasks."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: the index's claims are carried as exposure ('some level of exposure') and its transformation-not-redundancy finding at its own force; the 'upper threshold'/'not the actual impact on employment' and static-snapshot limits are not stated. One figure is foreign to the records: 'Women are nearly twice as likely to hold jobs exposed to GenAI as men (roughly 29% vs. 16% across sampled countries)' (the records give 4.7% female vs 2.4% male in the highest gradient; 29% and 16% occur in neither saved source); the 'Least Exposed Occupations' bullet is likewise not in the saved text. Method conflated: 'nearly 30,000 to over 52,000 individual task data points across ... (ISCO-08)' joins the 29,753 Polish tasks and the 52,558 survey data points and places them in ISCO-08. Lineage absent: 'updated assessment' implies the 2023 index without naming it (lineage needs its token by word). 'ILO Working Paper 140' is a registered alias and fills the name atom only; no DOI or ISBN. No date (20 May 2025), no CC BY 4.0, no Observatory, no stated purpose (policy understanding, social dialogue). No inversion, no standing substitution."
+  }
+ ]
+}

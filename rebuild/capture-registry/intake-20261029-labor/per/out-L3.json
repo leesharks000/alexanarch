@@ -1,0 +1,1839 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "lv-anthropic-economic-index",
+   "name": "Anthropic Economic Index",
+   "template": "dataset",
+   "type_basis": "Census kind 'report series with data releases: six reports and their datasets, from the operator's own product usage'; its data releases sit in a Hugging Face dataset repository ('This repository contains multiple data releases, each with its own documentation:', readme L29), and a database or repository takes the dataset template (brief). The reports are the releases' documentation, so the series is read as one dataset with versioned releases rather than as an institution.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index]",
+     "origin": "census"
+    },
+    {
+     "source": "anthropic-economic-index--readme",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt",
+     "origin": "own_page",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/raw/main/README.md",
+     "http": "200",
+     "sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0"
+    },
+    {
+     "source": "anthropic-economic-index--home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--home.txt",
+     "origin": "own_page",
+     "url": "https://www.anthropic.com/economic-index",
+     "http": "200",
+     "sha256": "b29a39839c9952f64f475d9fe1830bc35fe7dfebab7246b7cc97602a8fde669e"
+    },
+    {
+     "source": "anthropic-economic-index--jan-2026",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt",
+     "origin": "own_page",
+     "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+     "http": "200",
+     "sha256": "8d0d80679aaf24b9fecdadb0d26bd44b50e8d90a2c4e7d01172d7b969f2d9d8d"
+    },
+    {
+     "source": "anthropic-economic-index--jun-2026",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jun-2026.txt",
+     "origin": "own_page",
+     "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+     "http": "200",
+     "sha256": "31119973d1365f0d032ec513de32c1a72ce2fe04cd62eb1d7da8a9fad6435e21"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Anthropic Economic Index",
+      "AEI",
+      "EconomicIndex",
+      "Anthropic Economic Index report",
+      "Anthropic Economic Index Survey"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "# The Anthropic Economic Index",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L21"
+      },
+      {
+       "record_quote": "Anthropic Economic Index",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].name"
+      },
+      {
+       "record_quote": "AEI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].aka"
+      },
+      {
+       "record_quote": "pretty_name: EconomicIndex",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L3"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Anthropic",
+      "Anthropic's Economics team"
+     ],
+     "reference": "Anthropic (its Economics team); the six reports carry named authors (e.g. the sixth: Maxim Massenkoff, Eva Lyubich, Szymon Sacher, Zoe Hitzig, Shaoyi Zhang, Ryan Heller, Peter McCrory).",
+     "evidence": [
+      {
+       "record_quote": "Anthropic (its Economics team)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].operator"
+      },
+      {
+       "record_quote": "author = {Maxim Massenkoff and Eva Lyubich and Szymon Sacher and Zoe Hitzig and Shaoyi Zhang and Ryan Heller and Peter McCrory},",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L67"
+      },
+      {
+       "record_quote": "© 2026 Anthropic PBC",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--home.txt:L38"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2025-02-10",
+      "February 2025",
+      "2026-01-15",
+      "January 2026",
+      "2026-03-24",
+      "March 2026",
+      "2026-06-26",
+      "June 26, 2026",
+      "June 2026"
+     ],
+     "reference": "Initial release 2025-02-10; fourth report 2026-01-15, fifth 2026-03-24, sixth 2026-06-26; the index page last updated June 26, 2026.",
+     "evidence": [
+      {
+       "record_quote": "- **[2025-02-10 Release](https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2025_02_10)**: Initial release with O*NET task mappings, automation vs. augmentation data, and more",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L38"
+      },
+      {
+       "record_quote": "date = {2026-06-26},",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L69"
+      },
+      {
+       "record_quote": "Last updated: June 26, 2026",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--home.txt:L9"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A platform-specific observation of how people use Anthropic's own product Claude (Claude.ai, Cowork, Claude Code, the first-party API), mapped to O*NET tasks by privacy-preserving Claude classifiers; it observes usage and survey responses, not employment outcomes; task success is Claude's own assessment; the primitives are directionally accurate, not exact, and not causal; the survey is not representative.",
+     "evidence": [
+      {
+       "record_quote": "Throughout the report we analyze a random sample of 1M conversations from Claude.ai Free, Pro and Max conversations",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L144"
+      },
+      {
+       "record_quote": "NOT a measure of AI use across providers: a platform-specific observation of Anthropic's own product, Claude (Claude.ai, Cowork, Claude Code and the first-party API), published by Anthropic",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].negative_tags"
+      },
+      {
+       "record_quote": "Task success measures Claude’s assessment of whether Claude completes tasks successfully.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L165"
+      },
+      {
+       "record_quote": "none of the measures should be taken as exact or definitive",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L172"
+      },
+      {
+       "record_quote": "The Economic Index Survey is not representative of the general population.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jun-2026.txt:L117"
+      },
+      {
+       "record_quote": "Importantly, the primitives themselves are not necessarily causal factors",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L228"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records place the Index in no programme, host or parent beyond its operator (Anthropic, already the author atom); the Economics team is the operator's unit, not a framework the Index serves."
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Understanding AI's effects on the economy: to enable researchers and the public to understand the economic implications of AI, tracked over time as a longitudinal view of AI's role in the economy.",
+     "evidence": [
+      {
+       "record_quote": "Anthropic Economic Index Understanding AI’s effects on the economy",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--home.txt:L8"
+      },
+      {
+       "record_quote": "This data release aims to enable researchers and the public to better understand the economic implications of AI and investigate the ways in which this transformative technology is already having an effect.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L69"
+      },
+      {
+       "record_quote": "We will track these dynamics over time, providing a longitudinal view of AI's role in the economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L336"
+      },
+      {
+       "record_quote": "The Anthropic Economic Index provides insights into how AI is being incorporated into real-world tasks across the modern economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L25"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC-BY",
+      "MIT License"
+     ],
+     "reference": "Data released openly under CC-BY and code under MIT (the data release is there to enable external researchers); all analysis privacy-preserving: transcripts read only by another instance of Claude, and cells below privacy thresholds filtered out.",
+     "evidence": [
+      {
+       "record_quote": "Data released under CC-BY, code released under MIT License.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L56"
+      },
+      {
+       "record_quote": "The data we release enable external researchers to analyze economic shifts in new ways.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L178"
+      },
+      {
+       "record_quote": "Throughout, all analyses are based on privacy-preserving classifiers: transcripts are only read by another instance of Claude.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jun-2026.txt:L169"
+      },
+      {
+       "record_quote": "For privacy reasons, our automated analysis system filters out any cells",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jan-2026.txt:L245"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "O*NET"
+     ],
+     "reference": "Its tasks are mapped to the O*NET task taxonomy from the initial release on; the source of its observations is Claude usage.",
+     "evidence": [
+      {
+       "record_quote": "Initial release with O*NET task mappings, automation vs. augmentation data, and more",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L38"
+      },
+      {
+       "record_quote": "task mapping to O*NET",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].method"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Anthropic/EconomicIndex",
+      "2503.04761",
+      "arXiv:2503.04761"
+     ],
+     "reference": "The Hugging Face dataset id and the second report's arXiv eprint; no reason for keeping them is stated. Counts only when offered as a way to locate the data or reports.",
+     "evidence": [
+      {
+       "record_quote": "data releases on Hugging Face (Anthropic/EconomicIndex), with prompt texts in an online appendix",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=anthropic-economic-index].data_access"
+      },
+      {
+       "record_quote": "eprint={2503.04761},",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L117"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "six reports",
+      "2025-02-10 Release",
+      "2025-03-27 Release",
+      "2025-09-15 Release",
+      "2026-01-15 Release",
+      "2026-03-24 Release",
+      "2026-06-26 Release"
+     ],
+     "reference": "Six reports with dated data releases, each with its own documentation; the June 2026 release changed the pipeline from seven-day samples to continuous daily sampling. Counts only when the chain is offered as a way to the data or its reasons discussed.",
+     "evidence": [
+      {
+       "record_quote": "This repository contains multiple data releases, each with its own documentation:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--readme.txt:L29"
+      },
+      {
+       "record_quote": "Our new privacy-preserving telemetry, which continuously samples a slice of conversations every day, allows us to study daily and hourly patterns in usage, in contrast to the seven-day samples each previous Economic Index report drew on.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/anthropic-economic-index--jun-2026.txt:L54"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying the Index's Claude-only observation against it (dismissing it as vendor marketing in place of its findings), or generalising it into a measure of AI use at large so that its own platform boundary is turned into a claim it does not make.",
+   "notes": "Built from the census row and the four saved operator sources (readme, home, January and June 2026 reports). The home page's data is a JavaScript application (only 'Loading data' saved). Platform-specific record (intake brief item 5): the claim boundary carries the Claude-only scope."
+  },
+  {
+   "new": "lv-openai-gdpval",
+   "name": "GDPval",
+   "template": "dataset",
+   "type_basis": "Census kind 'benchmark (an evaluation dataset with an experimental automated grader)'; its own abstract: 'We introduce GDPval, a benchmark evaluating AI model capabilities on real-world economically valuable tasks.' (arxiv L32). A benchmark takes the dataset template (brief).",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=openai-gdpval]",
+     "origin": "census"
+    },
+    {
+     "source": "openai-gdpval--arxiv",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt",
+     "origin": "own_page",
+     "url": "https://arxiv.org/abs/2510.04374",
+     "http": "200",
+     "sha256": "904393337a8b91ee7b387d650a2eb4c89dd29d4040b7c228c8b57e25fb991835"
+    },
+    {
+     "source": "openai-gdpval--paper-html",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt",
+     "origin": "own_page",
+     "url": "https://arxiv.org/html/2510.04374v1",
+     "http": "200",
+     "sha256": "1d4c4f2494000318567a5b82504d7154119aa88a40ba11c18568a4dea718c5d9"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "GDPval",
+      "GDPval gold subset",
+      "GDPval full set"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Title: GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L24"
+      },
+      {
+       "record_quote": "GDPval",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=openai-gdpval].name"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "OpenAI",
+      "Tejal Patwardhan"
+     ],
+     "reference": "OpenAI: the paper's 19 authors (Tejal Patwardhan first) give OpenAI as their affiliation, correspondence to an openai.com address.",
+     "evidence": [
+      {
+       "record_quote": "OpenAI: the paper's 19 authors (Tejal Patwardhan first; nine marked equal contribution) give OpenAI as their affiliation",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=openai-gdpval].operator"
+      },
+      {
+       "record_quote": "Correspondence to tejal@openai.com.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L179"
+      },
+      {
+       "record_quote": "by Tejal Patwardhan and 18 other authors",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L27"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2025-10-05",
+      "5 Oct 2025",
+      "October 2025",
+      "2025"
+     ],
+     "reference": "The first version, arXiv v1 of 5 October 2025.",
+     "evidence": [
+      {
+       "record_quote": "[Submitted on 5 Oct 2025]",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L22"
+      },
+      {
+       "record_quote": "arXiv:2510.04374v1 [cs.LG] 05 Oct 2025",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L148"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A benchmark of model capability on expert-written, precisely specified, one-shot tasks in 44 predominantly digital occupations of the top 9 U.S. GDP sectors, graded by blinded expert pairwise comparison (win rate); a limited, initial cut of knowledge work; physical, tacit and interpersonal work out of scope; not a measure of AI use in the economy, of employment, or of job replacement.",
+     "evidence": [
+      {
+       "record_quote": "We introduce GDPval, a benchmark evaluating AI model capabilities on real-world economically valuable tasks.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L32"
+      },
+      {
+       "record_quote": "It is therefore a limited, initial cut of knowledge work tasks, not a comprehensive evaluation of all possible occupational tasks.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L471"
+      },
+      {
+       "record_quote": "Manual labor and physical tasks are not included in the current version.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L475"
+      },
+      {
+       "record_quote": "we conducted blinded expert pairwise comparisons",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L409"
+      },
+      {
+       "record_quote": "deliverable parity with experts is NOT a finding of job replacement in the paper",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=openai-gdpval].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records place GDPval in no programme beyond OpenAI (the author atom); the automated grader at evals.openai.com is a service of the benchmark, not a framework named as housing it."
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To understand the potential economic impacts of AI by directly measuring model capabilities on real-world economically valuable tasks, ahead of widespread adoption, as an alternative to lagging indicators; and to facilitate future research on real-world model capabilities.",
+     "evidence": [
+      {
+       "record_quote": "We consider an alternate method for understanding the potential economic impacts of AI: directly measuring AI model capabilities.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L189"
+      },
+      {
+       "record_quote": "allowing us to assess economic relevance ahead of widespread adoption.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L189"
+      },
+      {
+       "record_quote": "to facilitate future research in understanding real-world model capabilities.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L32"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY 4.0"
+     ],
+     "reference": "Open-sources the 220-task gold subset (prompts and reference files) scrubbed of information identifying the expert who wrote each task; keeps human expert comparison as the recommended grading method and does not consider the automated grader a full substitute; the paper under CC BY 4.0; experts well compensated.",
+     "evidence": [
+      {
+       "record_quote": "We open-source the prompts and reference files in our 220-task gold subset.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L465"
+      },
+      {
+       "record_quote": "Please note that the tasks in the open sourced set have been scrubbed of information that could be used to identify the expert who wrote the task.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L465"
+      },
+      {
+       "record_quote": "we make an automated grader proxy available, but do not consider it a full substitute for industry expert graders.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L487"
+      },
+      {
+       "record_quote": "License: CC BY 4.0",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L146"
+      },
+      {
+       "record_quote": "Experts were well compensated for their time and experience.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L385"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "academic test",
+      "benchmarks in the style of an academic test",
+      "lagging indicators",
+      "O*NET",
+      "production AI usage analyses"
+     ],
+     "reference": "It answers AI benchmarks in the style of an academic test and the lagging adoption and usage indicators; it builds on O*NET work activities and on production AI usage analyses (Tamkin et al.; Chatterji et al.; Appel et al.).",
+     "evidence": [
+      {
+       "record_quote": "Realism : Unlike AI benchmarks in the style of an academic test that focus on reasoning difficulty",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L199"
+      },
+      {
+       "record_quote": "Therefore, while informative when available, these methods are lagging indicators of AI impacts.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L189"
+      },
+      {
+       "record_quote": "the GDPval full set covers 1,320 tasks across 44 occupations, sourced to cover the majority of Work Activities tracked by O*NET for each occupation",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L203"
+      },
+      {
+       "record_quote": "We also build on production AI usage analyses",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L204"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2510.04374",
+      "2510.04374",
+      "10.48550/arXiv.2510.04374",
+      "evals.openai.com"
+     ],
+     "reference": "The arXiv id and its DataCite DOI; the grading service address. No reason for keeping them is stated. Counts only when offered as a way to locate the work.",
+     "evidence": [
+      {
+       "record_quote": "arXiv:2510.04374 [cs.LG]",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L40"
+      },
+      {
+       "record_quote": "https://doi.org/10.48550/arXiv.2510.04374",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--arxiv.txt:L45"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "first version",
+      "full set",
+      "gold subset",
+      "220-task gold subset"
+     ],
+     "reference": "The first version (v1), a 1,320-task full set and an open-sourced 220-task gold subset with an experimental automated grader; future iterations announced. Counts when the gold subset or the versions are offered as a way to the work.",
+     "evidence": [
+      {
+       "record_quote": "Our paper introduces the first version of GDPval",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L193"
+      },
+      {
+       "record_quote": "We also provide an experimental automated grader service for the 220 open-sourced gold subset of tasks.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L193"
+      },
+      {
+       "record_quote": "Future GDPval iterations will incorporate greater breadth, realism, interactivity, and contextual nuance.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/openai-gdpval--paper-html.txt:L193"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its provider (OpenAI builds and grades it, with an OpenAI-model grader) or its win rates against it so as to replace its stated object, model deliverables against expert deliverables on constructed tasks, with a claim of job replacement or of real-workplace performance it disclaims.",
+   "notes": "OpenAI's own post (openai.com/index/gdpval/) answered 403 and is unread; built from the arXiv abstract page and the paper's HTML. The dataset's own licence is not stated in the saved text; CC BY 4.0 is the paper's."
+  },
+  {
+   "new": "lv-microsoft-working-with-ai",
+   "name": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+   "template": "dataset",
+   "type_basis": "Census kind 'paper with results files (metrics aggregated at the work-activity and occupation level)'; its census url is the GitHub results repository, whose README says 'These files contain results from the paper:' (readme L2). The repository of results files takes the dataset template (brief: database or repository).",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=microsoft-working-with-ai]",
+     "origin": "census"
+    },
+    {
+     "source": "microsoft-working-with-ai--readme",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt",
+     "origin": "own_page",
+     "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/README.md",
+     "http": "200",
+     "sha256": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3"
+    },
+    {
+     "source": "microsoft-working-with-ai--arxiv",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt",
+     "origin": "own_page",
+     "url": "https://arxiv.org/abs/2507.07935",
+     "http": "200",
+     "sha256": "8315551565cd59866e841acec8204a2a9579093b1d0266146968102fd6d43796"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Working with AI",
+      "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+      "AI applicability score",
+      "microsoft/working-with-ai"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Title: Working with AI: Measuring the Applicability of Generative AI to Occupations",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L24"
+      },
+      {
+       "record_quote": "# \"Working with AI\" results files",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L1"
+      },
+      {
+       "record_quote": "AI applicability score",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=microsoft-working-with-ai].aka"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Microsoft Research",
+      "Kiran Tomlinson",
+      "Tomlinson",
+      "Sonia Jaffe",
+      "Will Wang",
+      "Scott Counts",
+      "Siddharth Suri"
+     ],
+     "reference": "Microsoft Research: Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts, Siddharth Suri.",
+     "evidence": [
+      {
+       "record_quote": "Microsoft Research (Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts, Siddharth Suri)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=microsoft-working-with-ai].operator"
+      },
+      {
+       "record_quote": "Authors: Kiran Tomlinson , Sonia Jaffe , Will Wang , Scott Counts , Siddharth Suri",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L26"
+      },
+      {
+       "record_quote": "This research was conducted by members of [Microsoft Research](https://www.microsoft.com/en-us/research/).",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L131"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "10 Jul 2025",
+      "July 2025",
+      "2025",
+      "23 Oct 2026",
+      "NeurIPS 2026"
+     ],
+     "reference": "arXiv v1 10 July 2025; v7 23 October 2026 (NeurIPS 2026); data window 1 January to 30 September 2024.",
+     "evidence": [
+      {
+       "record_quote": "[Submitted on 10 Jul 2025 ( v1 ), last revised 23 Oct 2026 (this version, v7)]",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L22"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Measures what a consumer LLM (Bing Copilot, United States, January-September 2024) is used for, which uses are relatively more or less successful by proxies, and which occupations may find AI more applicable; NOT a measure of AI's ability to replace jobs; consumer usage does not represent all workplace AI use; LLM classifiers imperfect.",
+     "evidence": [
+      {
+       "record_quote": "Our metrics should not be misconstrued or misrepresented as measuring the ability of AI to replace jobs.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L100"
+      },
+      {
+       "record_quote": "Rather, our metrics indicate (1) what a consumer LLM is used for, (2) in a relative sense, which of these uses are more or less successful, and (3) which occupations may find AI more useful or applicable as a result.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L100"
+      },
+      {
+       "record_quote": "As these results are based on consumer AI usage, they do not represent the full distribution of AI use in the workplace.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L118"
+      },
+      {
+       "record_quote": "The conversations contributing to these results are from Bing Copilot in the United States from January 1, 2024 to September 30, 2024",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L97"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records name the operator (Microsoft Research, the author atom) and the venue (NeurIPS 2026) but place the results in no programme or instrument beyond the paper itself."
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To measure how AI may be useful in different occupations (AI applicability), drawing on real-world usage rather than capability predictions, as a contribution to understanding generative AI's economic effects.",
+     "evidence": [
+      {
+       "record_quote": "The goal of these metrics is to measure how AI may be useful in different occupations.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L6"
+      },
+      {
+       "record_quote": "Drawing instead on real-world AI usage, we analyze a dataset of 200k anonymized conversations with Microsoft Bing Copilot to measure AI applicability to occupations.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L32"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY 4.0"
+     ],
+     "reference": "Results shared with the research community under CC BY 4.0 to facilitate reproduction and further research, attribution by the stated citation; out-of-scope uses refused (not a job-replacement measure); no information identifying a person; analysis under Microsoft IRB approval.",
+     "evidence": [
+      {
+       "record_quote": "This repository is licensed under CC BY 4.0.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L77"
+      },
+      {
+       "record_quote": "To attribute this repository, use the citation below.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L77"
+      },
+      {
+       "record_quote": "These results are being shared with the research community to facilitate reproduction of our analyses and foster further research in this area.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L95"
+      },
+      {
+       "record_quote": "This repository does not contain any information that could be used to directly or indirectly identify a person.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L108"
+      },
+      {
+       "record_quote": "Data analysis was conducted with approval from the Microsoft Institutional Review Board.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L125"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "O*NET",
+      "Bing Copilot",
+      "predictions of AI capabilities"
+     ],
+     "reference": "It answers earlier work that relied on predictions of AI capabilities or individual firms; it uses the O*NET work activity taxonomy and draws on Bing Copilot conversations as its source.",
+     "evidence": [
+      {
+       "record_quote": "Earlier work on AI impact largely relied on predictions of AI capabilities or focused narrowly on individual firms.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L32"
+      },
+      {
+       "record_quote": "As we use the O*NET work activity taxonomy and the 2018 Standard Occupational Classification, our results can be linked to other public data sources for further analysis.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L95"
+      },
+      {
+       "record_quote": "These results were computed from Bing Copilot conversation data",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L103"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2507.07935",
+      "2507.07935",
+      "10.48550/arXiv.2507.07935",
+      "microsoft/working-with-ai"
+     ],
+     "reference": "arXiv id, DataCite DOI, GitHub repository. The README keys its results versions to the paper revisions that reference them.",
+     "evidence": [
+      {
+       "record_quote": "arXiv:2507.07935 [cs.AI]",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L46"
+      },
+      {
+       "record_quote": "https://doi.org/10.48550/arXiv.2507.07935",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--arxiv.txt:L51"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v1.0",
+      "v1.1",
+      "v7",
+      "NeurIPS '26 version"
+     ],
+     "reference": "Results v1.0 (referenced by paper revisions up to v5) and v1.1 (referenced by the NeurIPS '26 version and revisions v6-v7): each results version kept for the paper versions that cite it.",
+     "evidence": [
+      {
+       "record_quote": "- (current) v1.1: referenced by the NeurIPS '26 version and by arXiv paper revisions v6 and v7.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L9"
+      },
+      {
+       "record_quote": "referenced by the arXiv paper revisions up to v5.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/microsoft-working-with-ai--readme.txt:L10"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its applicability scores against its own refusal, as a measure of which jobs AI will replace; or carrying its provider (Microsoft) so that the company's products and workforce stand in for the measurement.",
+   "notes": "Platform-specific record (intake brief item 5): Bing Copilot, United States, 2024. The address 'Microsoft Working with AI' is a homonym case."
+  },
+  {
+   "new": "lv-stanford-canaries",
+   "name": "Canaries Dashboard",
+   "template": "dataset",
+   "type_basis": "Census kind 'working paper and monthly-updated dashboard, one of the Lab's AI Economic Indicators'; the dashboard summarises payroll data with a 'Data' link per chart and 'Results are updated monthly' (dashboard L169): an indicator data series, so the dataset template (brief: database, benchmark), with the paper as its defining record.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=stanford-canaries]",
+     "origin": "census"
+    },
+    {
+     "source": "stanford-canaries--dashboard",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt",
+     "origin": "own_page",
+     "url": "https://digitaleconomy.stanford.edu/project/canaries-dashboard/",
+     "http": "200",
+     "sha256": "2db132b18f4da51b2b8ec9c9ce4bb5ddfddf0b1d7bde7fbfa1a2cbe74c34ed31"
+    },
+    {
+     "source": "stanford-canaries--paper",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt",
+     "origin": "own_page",
+     "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/",
+     "http": "200",
+     "sha256": "352ff6c8dee78a6488197e7acfafa4227df2fdece05cbbe65498e36ed4f07ea3"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Canaries Dashboard",
+      "AI Economic Indicators: Canaries Dashboard",
+      "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "Canaries in the Coal Mine"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Canaries Dashboard",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=stanford-canaries].name"
+      },
+      {
+       "record_quote": "title = {AI Economic Indicators: Canaries Dashboard},",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L275"
+      },
+      {
+       "record_quote": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L61"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Stanford Digital Economy Lab",
+      "ADP Research",
+      "Erik Brynjolfsson",
+      "Brynjolfsson",
+      "Bharat Chandar",
+      "Ruyu Chen"
+     ],
+     "reference": "Stanford Digital Economy Lab with ADP Research; the paper by Erik Brynjolfsson, Bharat Chandar and Ruyu Chen.",
+     "evidence": [
+      {
+       "record_quote": "Stanford Digital Economy Lab and ADP Research. \"AI Economic Indicators: Canaries Dashboard.\"",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L268"
+      },
+      {
+       "record_quote": "Erik Brynjolfsson , Bharat Chandar , Ruyu Chen",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L81"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "August 2025",
+      "2025",
+      "August 12 2026",
+      "February 9, 2026",
+      "October 21, 2026"
+     ],
+     "reference": "First documented August 2025; revised 12 August 2026; dashboard last updated 21 October 2026, monthly.",
+     "evidence": [
+      {
+       "record_quote": "This divergence has widened steadily since we first documented it in August 2025.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L95"
+      },
+      {
+       "record_quote": "Revised August 12 2026",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L69"
+      },
+      {
+       "record_quote": "Last updated October 21, 2026. Results are updated monthly.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L169"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Early, descriptive indicators ('canaries in the coal mine') rather than causal estimates, from a balanced ADP payroll sample that is not nationally representative: no economy-wide displacement, but employment of workers aged 22-25 in AI-exposed occupations 19% below trend, through reduced hiring; the dashboard measures correlation.",
+     "evidence": [
+      {
+       "record_quote": "We interpret these facts as early, descriptive indicators—canaries in the coal mine—rather than causal estimates",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L103"
+      },
+      {
+       "record_quote": "We find no evidence of widespread, economy-wide job displacement.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L91"
+      },
+      {
+       "record_quote": "employment of young workers (ages 22–25) in AI-exposed occupations now stands 19% below where it would be had it kept pace with that of their less-exposed peers",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L93"
+      },
+      {
+       "record_quote": "Accordingly, the Canaries Dashboard measures the correlation between occupational exposure measures and employment trends in our sample, rather than a causal link between the two.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L293"
+      },
+      {
+       "record_quote": "Our sample represents neither the entire U.S. labor market nor the universe of firms using ADP payroll services.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L297"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AI Economic Indicators",
+      "The AI Economic Indicators"
+     ],
+     "reference": "One of the Stanford Digital Economy Lab's AI Economic Indicators.",
+     "evidence": [
+      {
+       "record_quote": "The AI Economic Indicators",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L9"
+      },
+      {
+       "record_quote": "Explore the rest of the Indicators",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L520"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To read specific segments of the labor market (by age and AI exposure) as a leading indicator of employment trends for the broader economy, updating and extending the paper's findings monthly alongside other labor market indicators.",
+     "evidence": [
+      {
+       "record_quote": "Accordingly, specific segments of the labor market can provide a leading indicator of employment trends for the broader economy.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L87"
+      },
+      {
+       "record_quote": "In the Canaries dashboard, we now update and extend this work, presenting it alongside other labor market indicators.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L89"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "What a downstream user owes is citation in the stated form ('Cite the Canaries Dashboard'); the payroll data are used while preserving privacy. No licence is stated.",
+     "evidence": [
+      {
+       "record_quote": "Cite the Canaries Dashboard",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L263"
+      },
+      {
+       "record_quote": "While preserving privacy, this employment data contains in-depth information about industries, roles, geographies, and more.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L171"
+      },
+      {
+       "record_quote": "not stated in the saved text",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=stanford-canaries].license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Brynjolfsson, Chandar, and Chen (2025)",
+      "Eloundou et al. (2024)",
+      "Anthropic Economic Index",
+      "ADP"
+     ],
+     "reference": "The dashboard follows and extends the paper (Brynjolfsson, Chandar and Chen 2025); its exposure measures are Eloundou et al. (2024) and the Anthropic Economic Index; its source is ADP payroll data.",
+     "evidence": [
+      {
+       "record_quote": "Brynjolfsson, Chandar, and Chen (2025) studied these emergent labor market impacts.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L89"
+      },
+      {
+       "record_quote": "We match the occupation-level ADP data to various measures of exposure: Eloundou et al. (2024) and the Anthropic Economic Index .",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L301"
+      },
+      {
+       "record_quote": "The Canaries Dashboard relies on data provided by our relationship with ADP, the largest payroll provider in the United States.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L171"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "stanford-indicators-canaries",
+      "brynjolfsson2026canaries",
+      "digitaleconomy.stanford.edu/project/indicators/canaries/"
+     ],
+     "reference": "The citation keys and citation URLs the Lab gives for citing the dashboard and the paper (no DOI stated): the identifier offered as the way to cite and locate the work.",
+     "evidence": [
+      {
+       "record_quote": "@misc{stanford-indicators-canaries,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L273"
+      },
+      {
+       "record_quote": "@techreport{brynjolfsson2026canaries,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L147"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Revised August 12 2026",
+      "February 2026 update",
+      "updated monthly",
+      "previous version"
+     ],
+     "reference": "Paper first August 2025, February 2026 update, revised 12 August 2026 (earlier versions on request); dashboard rolled forward and updated monthly; an expanded, reweighted sample announced.",
+     "evidence": [
+      {
+       "record_quote": "Email the Lab to request a previous version of the paper.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L87"
+      },
+      {
+       "record_quote": "note = {Revised version; original published 2025, see brynjolfsson2025canaries}",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--paper.txt:L154"
+      },
+      {
+       "record_quote": "Future versions of this work will use an expanded and reweighted sample.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/stanford-canaries--dashboard.txt:L305"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its own title idiom ('canaries in the coal mine') so that the idiom stands in for the study; or carrying its descriptive indicators as a causal finding of AI job loss it disclaims.",
+   "notes": "The census row joins the dashboard and the paper under one slug (aka includes the paper's title and 'Canaries in the Coal Mine'). The paper's PDF was not saved; its landing page was."
+  },
+  {
+   "new": "lv-yale-budget-lab-ai-tracker",
+   "name": "Tracking the Impact of AI on the Labor Market",
+   "template": "protocol",
+   "type_basis": "Census kind 'interactive tool (tracker) with regular updates'; its own text: 'This interactive tool contains The Budget Lab's ongoing analysis of potential AI impacts on the labor market.' (first-report-pdf L83, wrapped). A tool or service takes the protocol template unless its record makes it a site (brief); the record makes it a page of budgetlab.yale.edu, not a site of its own.",
+   "external": true,
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=yale-budget-lab-ai-tracker]",
+     "origin": "census"
+    },
+    {
+     "source": "yale-budget-lab-ai-tracker--first-report-pdf",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt",
+     "origin": "own_page",
+     "url": "https://budgetlab.yale.edu/sites/default/files/page_to_pdf/1419/publication_1419.pdf",
+     "http": "200",
+     "sha256": "9bcf775f43ed575636765e73b3cad8cfb62fb413e94428b92efdfabb086bafc0"
+    },
+    {
+     "source": "yale-budget-lab-ai-tracker--tracker",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt",
+     "origin": "own_page",
+     "url": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market",
+     "http": "200",
+     "sha256": "7efbd4d59a4fa6327f6051e259ffd11d84915c75f7ad3c1ddc8d4343fcb68e1c"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Tracking the Impact of AI on the Labor Market",
+      "AI Labor Market Tracker",
+      "Evaluating the Impact of AI on the Labor Market"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Tracking the Impact of AI on the Labor Market",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L53"
+      },
+      {
+       "record_quote": "AI Labor Market Tracker",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L46"
+      },
+      {
+       "record_quote": "Evaluating the Impact of AI on the Labor Market",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=yale-budget-lab-ai-tracker].aka"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "The Budget Lab",
+      "The Budget Lab at Yale",
+      "Budget Lab"
+     ],
+     "reference": "The Budget Lab at Yale.",
+     "evidence": [
+      {
+       "record_quote": "The Budget Lab at Yale (Yale University)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=yale-budget-lab-ai-tracker].operator"
+      },
+      {
+       "record_quote": "This interactive tool contains The Budget Lab's ongoing analysis of potential AI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L83"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records name no archival authority separate from the producer."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The analysis (CPS microdata: occupational churn, AI exposure among the unemployed, usage measures, a synthetic differences-in-differences comparison) does not YET provide clear evidence of labor market disruption associated with AI; usage measures show no connection to employment or unemployment; findings may change as new data arrive. Not a finding that AI has no effect.",
+     "evidence": [
+      {
+       "record_quote": "A synthetic differences-in-differences analysis of AI exposure does not yet clearly indicate an AI-related labor market footprint.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L65"
+      },
+      {
+       "record_quote": "Measures of AI usage show no connection to changes in employment or unemployment.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L63"
+      },
+      {
+       "record_quote": "The Budget Lab's labor market analysis, updated to incorporate August 2026 CPS",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L70"
+      },
+      {
+       "record_quote": "Of course, these findings may change as new data become available.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L75"
+      },
+      {
+       "record_quote": "NOT a finding that AI has no labor market effect: it states the analysis does not yet clearly indicate one",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=yale-budget-lab-ai-tracker].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Yale University",
+      "Yale"
+     ],
+     "reference": "Yale University, the Budget Lab's host.",
+     "evidence": [
+      {
+       "record_quote": "Copyright ©2026 Yale University. All rights reserved.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L115"
+      },
+      {
+       "record_quote": "The Budget Lab at Yale (Yale University)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=yale-budget-lab-ai-tracker].operator"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records state no commercial standing."
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An ongoing analysis of potential AI impacts on the labor market, updated regularly to see how the impact changes over time.",
+     "evidence": [
+      {
+       "record_quote": "We plan on updating this analysis regularly moving forward to see how the impact of AI on the labor market changes over time.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L67"
+      },
+      {
+       "record_quote": "This interactive tool contains The Budget Lab's ongoing analysis of potential AI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L83"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The Budget Lab binds itself to continue monitoring and to update the analysis regularly; data offered for download ('Download All Data'); the site's terms are Yale copyright, all rights reserved.",
+     "evidence": [
+      {
+       "record_quote": "The Budget Lab",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L75"
+      },
+      {
+       "record_quote": "plans to continue monitoring AI-relevant trends to assess how job impacts might",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L76"
+      },
+      {
+       "record_quote": "Download All Data",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L61"
+      },
+      {
+       "record_quote": "Copyright ©2026 Yale University. All rights reserved.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L115"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "CPS",
+      "CPS microdata",
+      "Gimbel et al. (2025)",
+      "Gimbel, Kendall, and Kulsakdinun (2026)"
+     ],
+     "reference": "Built on CPS microdata; its churn and unemployed-exposure analysis comes from Gimbel et al. (2025), its exposure metrics from Gimbel, Kendall and Kulsakdinun (2026).",
+     "evidence": [
+      {
+       "record_quote": "The Budget Lab's labor market analysis, updated to incorporate August 2026 CPS",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L70"
+      },
+      {
+       "record_quote": "analysis can be found in Gimbel et al. (2025). Details of AI exposure metrics are",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L93"
+      },
+      {
+       "record_quote": "discussed in Gimbel, Kendall, and Kulsakdinun (2026).",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L94"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records state no identifier (no DOI, report number or citation key); the page address is a URL, which never satisfies an atom."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Version 1.0",
+      "Updated: September 15, 2026",
+      "Published: July 16, 2026",
+      "October 14, 2026"
+     ],
+     "reference": "Published 16 July 2026; Version 1.0 updated 15 September 2026; tracker page 14 October 2026; regular updates planned (the versions serve the purpose of tracking change over time).",
+     "evidence": [
+      {
+       "record_quote": "Published: July 16, 2026 Updated: September 15, 2026",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L8"
+      },
+      {
+       "record_quote": "Version 1.0",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--first-report-pdf.txt:L58"
+      },
+      {
+       "record_quote": "October 14, 2026",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/yale-budget-lab-ai-tracker--tracker.txt:L55"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its 'not yet' finding as a finding that AI has no labor market effect, or as a causal explanation of job cuts it does not offer, so that its ongoing monitoring is closed as a verdict.",
+   "notes": "The first report page and the September CPS update page answered 403 and are unread; the saved PDF's second page breaks off in the methods paragraph. Which usage and exposure measures the tracker draws on is unread (Gimbel et al. papers)."
+  }
+ ],
+ "observations": [
+  {
+   "key": "anthropic-economic-index-aio-20261029",
+   "entry": "anthropic-economic-index-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-anthropic-economic-index",
+   "scored_object": "the expanded Overview with its card rail, as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an ongoing research initiative by Anthropic that tracks how individuals, enterprises, and economies use the Claude AI model.",
+    "basis": "The Index itself is composed: its name, its operator, its object (use of Claude) and its measures (economic primitives, augmentation versus automation, geographic and occupational concentration, open data)."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "the latest report findings from the Anthropic Economic Index?"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "is an ongoing research initiative by Anthropic"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "tracks how individuals, enterprises, and economies use the Claude AI model."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "is an ongoing research initiative by Anthropic that tracks how individuals, enterprises, and economies use the Claude AI model."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Interactive Tool: Anthropic provides open datasets"
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: the Claude-only scope is carried in the opening sentence and every finding is stated as Claude usage ('enterprise API users increasingly use Claude'), at the reports' own force (consumer augmentation over automation; 1P API toward automation). The stated limits are not carried: task success is given as 'task reliability/success rate' without saying it is Claude's own assessment, and nothing says the primitives are directional only or the survey unrepresentative. Platform-specific record (item 5): the composition does not generalise the observation to AI use at large; 'The index breaks down AI interactions' sits under the Claude-scoped opening. Purpose present as the ongoing tracking of use ('ongoing research initiative ... that tracks'), the record's longitudinal view; the record's own phrase 'understanding AI's effects on the economy' appears only in the X card. Commitments present thinly: 'open datasets' carries the data release as Anthropic's own provision; neither the licence (CC-BY data, MIT code) nor the privacy-preserving terms (transcripts read only by another instance of Claude) appear. Identifier absent: Anthropic/EconomicIndex and arXiv numbers appear only in card titles (2511.15080 in card 2). Deposit chain absent: 'the latest report findings' is a bare mention in the follow-up offer. No date. 'Anthropic User Index (AUI)' appears only in a card (the record's name is 'Anthropic AI Usage Index'). Geographic examples (Australia, Switzerland, Luxembourg) are not in the saved sources and are unchecked against them."
+  },
+  {
+   "key": "gdpval-aio-20261029",
+   "entry": "gdpval-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-openai-gdpval",
+   "scored_object": "the expanded Overview with its card rail, as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "GDPval is an AI benchmark created by",
+    "basis": "The benchmark itself is composed: name, maker (OpenAI), object (model performance on economically valuable knowledge-work tasks), scope (1,320 tasks, 44 occupations, top 9 sectors), grading (blinded expert comparison) and the open gold subset."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "GDPval is an AI benchmark created by"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "GDPval is an AI benchmark created by [OpenAI]"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "to measure how well artificial intelligence models perform on real-world, economically valuable knowledge-work tasks rather than academic or math tests."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to measure how well artificial intelligence models perform on real-world, economically valuable knowledge-work tasks"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Open Source Set: Includes a gold open-sourced subset of 220 tasks"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "rather than academic or math tests."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "Includes a gold open-sourced subset of 220 tasks available via"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: a benchmark of model performance on knowledge-work tasks, 1,320 tasks / 44 occupations / top 9 U.S. GDP sectors, graded by 'blind head-to-head comparisons by human experts'; no job-replacement or workplace-performance claim is added. Not carried: one-shot, precisely specified tasks; 'a limited, initial cut'; physical and tacit work out of scope; the paper's own caveat that grading could not be fully blind. Purpose present as measuring capability on economically valuable tasks; the record's frame (an alternative to lagging adoption indicators, assessing relevance ahead of adoption) is not carried. Lineage present: the record positions GDPval 'Unlike AI benchmarks in the style of an academic test' (paper-html L199), and the composition binds the answering relation ('rather than academic or math tests') to the benchmark; the 'academic test' token is named by word. O*NET, BLS and the production usage analyses it builds on are absent. Commitments present on the open-sourced gold subset as GDPval's own provision; the expert-identity scrubbing, the recommendation of human grading over the automated grader, and the CC BY 4.0 licence are not carried. Deposit chain present: the gold subset (a projection the record names) is offered as the way to the work ('available via [Hugging Face Datasets] and detailed in the [ArXiv Research Paper]'); identifier absent because only link text and URLs carry the locations (arXiv:2510.04374 appears in card titles only). No date. 'Artificial Analysis GDPval-AA v2.1' is a third-party leaderboard not in the records; it is set beside GDPval as an evaluator, not merged with it."
+  },
+  {
+   "key": "microsoft-working-with-ai-aio-20261029",
+   "entry": "microsoft-working-with-ai-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-microsoft-working-with-ai",
+   "scored_object": "the expanded Overview with its card rail, as the transcript records it",
+   "reached": {
+    "kind": "substitute",
+    "abn": false,
+    "span": "Microsoft integrates artificial intelligence across its core software ecosystem, enterprise infrastructure, and internal operations, while shifting toward massive AI data center investments and proprietary model development.",
+    "basis": "Homonym (intake brief item 4): the address is read as Microsoft's corporate work with AI, and Microsoft's products (Copilot, Azure AI, Fabric, MAI models) and its workforce restructuring are composed in the target's place. The Microsoft Research paper and its results files (Bing Copilot conversations classified to O*NET work activities, AI applicability scores) never appear in the composition; the paper is card 1 only. Not proximal substitution: the company and its product line are the operator's parent and wares, not the target's companion, surface or retrieval apparatus. target_absent applies; atoms read beneath the gate."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Beneath the gate nothing of the target survives. The name 'Working with AI' is not in the composition (only card 1's title: 'Working with AI: Measuring the Applicability of Generative AI ... - Microsoft', with the record's finding in its snippet); Microsoft appears as the subject company, never as the producer of a study; no author (Microsoft Research, Tomlinson et al.), date, scope (Bing Copilot, US, 2024), applicability score or refusal ('should not be misconstrued ... as measuring the ability of AI to replace jobs'). The composition's 'Microsoft Copilot' is the product line whose consumer conversations (as Bing Copilot) the target observes, here composed as a product, not as the source of an observation. 'Workforce Shifts ... scaled back certain traditional roles and offered large-scale workforce buyouts' is Microsoft's own labor action (the ABC News card), adjacent in theme to the target's subject and not drawn from it. Platform-specific record (item 5): the provider's observation is not composed at all, so neither generalised nor inverted. The follow-up offer 'how AI is changing specific job roles?' is the nearest point to the target's question and does not reach it. No inversion, no standing substitution."
+  },
+  {
+   "key": "canaries-in-the-coal-mine-aio-20261029",
+   "entry": "canaries-in-the-coal-mine-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-stanford-canaries",
+   "scored_object": "the expanded Overview with its card rail, as the transcript records it",
+   "reached": {
+    "kind": "generic",
+    "abn": false,
+    "span": "A \"canary in a coal mine\" is an early warning sign or indicator of hidden danger, trouble, or failure.",
+    "basis": "Homonym (intake brief item 4): the address is composed as the idiom, its mining origin and its modern metaphorical uses; the Stanford study appears as one example bullet under 'Technology & Labor', set beside hotel occupancy and melting glaciers as instances of the idiom. The answer's subject is the generic sense of the name, not the target; the target is not merged with another entity (not collision), and no other entity is composed as it (not substitute). target_absent applies; atoms read beneath the gate."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "Studies such as the [Stanford Digital Economy Lab]"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "report tracking entry-level or young worker employment shifts as early indicators of artificial intelligence impacts on the job market."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "tracking entry-level or young worker employment shifts as early indicators of artificial intelligence impacts on the job market."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Beneath the gate, one bullet survives: the producer (Stanford Digital Economy Lab) bound to a report that is recognisably the target ('report tracking entry-level or young worker employment shifts as early indicators of artificial intelligence impacts on the job market'), so author present under the operator ruling of 2026-10-19 (named as the target's maker and the target described). Claim boundary present beneath the gate: 'early indicators' is the record's own frame ('early, descriptive indicators—canaries in the coal mine—rather than causal estimates') and the bullet makes no causal or displacement claim; the findings (no economy-wide displacement; workers 22-25 in exposed occupations 19% below trend; through hiring) and the sample limits are not carried. Purpose present: the leading-indicator purpose of the dashboard ('specific segments of the labor market can provide a leading indicator', dashboard L87). Name absent: the composition's 'canary in a coal mine' is the idiom, singular and not the registered name 'Canaries in the Coal Mine'; the study's title appears only in card 1. Not carried: authors Brynjolfsson, Chandar, Chen; ADP; the AI Economic Indicators framework; the Anthropic Economic Index and Eloundou exposure measures; dates; versions. The record's own title borrows the idiom, so the generic sense is the target's own frame turned outward; this is recorded here, and not as an inversion, since the idiom is not carried to devalue the study."
+  },
+  {
+   "key": "yale-budget-lab-ai-labor-market-aio-20261029",
+   "entry": "yale-budget-lab-ai-labor-market-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-yale-budget-lab-ai-tracker",
+   "scored_object": "the expanded Overview with its card rail, as the transcript records it",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "by The Budget Lab at Yale finds no clear evidence of large-scale or economy-wide labor market disruption from artificial intelligence.",
+    "basis": "The tracker itself is composed by its alias (AI Labor Market Tracker), its producer and its three sections (occupational churn, AI metrics, comparisons)."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The [AI Labor Market Tracker]"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "by The Budget Lab at Yale"
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "institution",
+     "present": true,
+     "span": "by The Budget Lab at Yale"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "You can explore the live data via the"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "continues to be monitored"
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent (inflated): the head claim is at the record's force ('no clear evidence'; 'no strong, consistent statistical footprint'), but under the tracker's 'Key Findings' the composition adds a claim the record does not make, 'Capital vs. Labor: Companies cutting jobs or restructuring are generally doing so for broader macro or capital-investment reasons rather than direct workforce replacement by AI agents.', a causal account of job cuts where the tracker stops at 'does not yet clearly indicate'; it also adds wage trends ('employment, unemployment rates, and wage trends'; 'Analyzes employment, wage, and unemployment trajectories') and 'slight volatility in unemployment growth for high-exposure groups', neither in the saved record, and drops 'not yet' and 'these findings may change as new data become available'. The capital-investment bullet may come from the Lab's separate piece in card 4 ('AI Is Probably Not (Yet) the Reason for Labor Market Weakening'), though it cites [1]; that is not resolvable from the transcript, so reached stays same with the inflation charged to claim boundary rather than read as collision. Institution present by the word 'Yale' bound in 'The Budget Lab at Yale' (the record's operator 'The Budget Lab at Yale (Yale University)'). Purpose present: the ongoing, live tracking ('explore the live data', the 'Interactive Tracker Sections'). Commitments present thinly: 'continues to be monitored' carries the Lab's stated plan to continue monitoring (pdf L75-77), though it is attached to the unrecorded volatility claim; 'Download All Data' and the copyright terms are not carried. Lineage absent (no CPS, no Gimbel et al.). Deposit chain absent: 'Data updated through September 2026' is a bare mention of currency (the record: Version 1.0 updated September 15, 2026, with August 2026 CPS microdata). Identifier is unknown in the atom set and not listed. No inversion; no standing substitution."
+  }
+ ]
+}

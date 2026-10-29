@@ -1,0 +1,1788 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "lv-data-workers-inquiry",
+   "name": "Data Workers' Inquiry",
+   "template": "institution",
+   "external": true,
+   "type_basis": "A research initiative, so the institution template: 'is a global, radically participatory research initiative spanning nine countries across five continents' (own page, data-workers.org home).",
+   "records": [
+    {
+     "source": "census:data-workers-inquiry",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry]",
+     "origin": "census"
+    },
+    {
+     "source": "data-workers-inquiry--home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt",
+     "origin": "own_page",
+     "url": "https://data-workers.org/",
+     "http": "200",
+     "sha256": "7c84a1c0d4cbd70b3b3350e2138fa63750eb96e6530dc3de6e601770597e1ba0"
+    },
+    {
+     "source": "data-workers-inquiry--press",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt",
+     "origin": "own_page",
+     "url": "https://data-workers.org/press-release/",
+     "http": "200",
+     "sha256": "05e5c433400642ba2a752fe43e67911487c4ea23d4ee8c81402a6c2866130b37"
+    },
+    {
+     "source": "data-workers-inquiry--weizenbaum",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt",
+     "origin": "own_page",
+     "url": "https://www.weizenbaum-institut.de/en/projects/data-workers-inquiry/",
+     "http": "200",
+     "sha256": "0b02a8e7d4c1a397c7e2e51d6faacf8c118959d6065eaa30f43410ef23ccd42d"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Data Workers' Inquiry",
+      "Data Workers’ Inquiry",
+      "Data Workers Inquiry",
+      "DWI"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Data Workers' Inquiry",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry].name"
+      },
+      {
+       "record_quote": "The Data Workers’ Inquiry is a community-based research project",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L267"
+      },
+      {
+       "record_quote": "DWI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry].aka"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Distributed AI Research Institute",
+      "DAIR",
+      "Weizenbaum Institute",
+      "Weizenbaum-Institut",
+      "TU Berlin",
+      "Milagros Miceli"
+     ],
+     "reference": "Launched by the Distributed AI Research Institute (DAIR) and the Weizenbaum Institute, with TU Berlin as partner; project lead Milagros Miceli.",
+     "evidence": [
+      {
+       "record_quote": "The Distributed AI Research Institute (DAIR) and Weizenbaum Institute launch the Data Worker’s Inquiry repository and talk series.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L55"
+      },
+      {
+       "record_quote": "Partners : Weizenbaum-Institut, TU Berlin, DAIR Institut",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L295"
+      },
+      {
+       "record_quote": "introduced by project lead Milagros Miceli",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L57"
+      },
+      {
+       "record_quote": "Distributed AI Research Institute (DAIR) and the Weizenbaum Institute, with TU Berlin; project lead Milagros Miceli",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "August 2023",
+      "2023"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Duration : August 2023 - November 2024",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L293"
+      },
+      {
+       "record_quote": "August 2023",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry].founded"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A global, radically participatory research initiative in which data workers become community researchers, set their own questions and choose the formats of their inquiries; a repository of first-hand accounts. Not a representative survey: each inquiry speaks for its worker-author, with whom epistemic authority remains.",
+     "evidence": [
+      {
+       "record_quote": "is a global, radically participatory research initiative spanning nine countries across five continents. Here, data workers themselves become community researchers, identifying urgent issues, formulating their own questions, and choosing the formats that best tell their stories",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L55"
+      },
+      {
+       "record_quote": "We are proactive supporters, but the epistemic authority remains with the workers.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L63"
+      },
+      {
+       "record_quote": "NOT a representative survey of data workers: each inquiry is one worker's research with colleagues",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=data-workers-inquiry].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Workers' Inquiry as a Research Methodology",
+      "Workers’ Inquiry as a Research Methodology",
+      "WIRM",
+      "participatory action research",
+      "PAR"
+     ],
+     "reference": "WIRM, the framework the Inquiry created, and the participatory action research methodology it employs.",
+     "evidence": [
+      {
+       "record_quote": "we created and developed Workers’ Inquiry as a Research Methodology or WIRM , a framework designed to turn hidden and precarious labor into a shared, politicized site for knowledge-making, public engagement, and tangible change.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L56"
+      },
+      {
+       "record_quote": "the Data Workers Inquiry employs a participatory action research (PAR) methodology",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L283"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To turn hidden and precarious data labor into a shared, politicized site for knowledge-making, public engagement and tangible change: a platform for data workers to conduct their own research and describe issues in their own words, a resource of first-hand accounts, and a catalyst for systemic change in the AI industry.",
+     "evidence": [
+      {
+       "record_quote": "a framework designed to turn hidden and precarious labor into a shared, politicized site for knowledge-making, public engagement, and tangible change.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L56"
+      },
+      {
+       "record_quote": "The Data Workers’ Inquiry provides a platform for them to conduct their own research and describe issues in their own words.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L60"
+      },
+      {
+       "record_quote": "It is a groundbreaking research project that aims to shed light on the often-invisible experiences and challenges faced by the workers who power the world of artificial intelligence (AI).",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L279"
+      },
+      {
+       "record_quote": "the project aims to help create meaningful, systemic change in the industry",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L65"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Epistemic authority remains with the workers, who set the questions; the team supports, trains and monitors the legal and ethical boundaries of the inquiries; research with workers, not about them. Site content copyright DAIR Institute, all rights reserved (no open licence stated).",
+     "evidence": [
+      {
+       "record_quote": "We are proactive supporters, but the epistemic authority remains with the workers.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--press.txt:L63"
+      },
+      {
+       "record_quote": "We provide guidance and training in specific data collection and analysis methods, and constantly monitor the legal and ethical boundaries of the inquiries.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L282"
+      },
+      {
+       "record_quote": "So far, it has been common practice to speak and research about data workers, instead of speaking or researching with them.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L275"
+      },
+      {
+       "record_quote": "© 2026 DAIR Institute. All Rights Reserved.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L371"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Workers Inquiry",
+      "Workers' Inquiry",
+      "Marx",
+      "1880"
+     ],
+     "reference": "Drawing inspiration from Marx's 1880 'Workers Inquiry'.",
+     "evidence": [
+      {
+       "record_quote": "Drawing inspiration from Marx's 1880 “Workers Inquiry”",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L283"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no saved record states an identifier (DOI, ISBN or registry id) for the Inquiry or its inquiries"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "project repository",
+      "repository",
+      "data-workers.org"
+     ],
+     "reference": "The project repository on data-workers.org, where the inquiries are collected and can be downloaded; the Weizenbaum project phase August 2023 to November 2024 with the repository continuing. Reason stated: the repository serves as a resource for researchers, journalists, policymakers and other data workers.",
+     "evidence": [
+      {
+       "record_quote": "can be downloaded from the project repository",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--home.txt:L55"
+      },
+      {
+       "record_quote": "The findings of the Data Workers' Inquiry are collected on the website data-workers.org and serve as a repository and resource for researchers, journalists, and policymakers seeking first-hand accounts of data work, as well as for other data workers looking to learn about shared struggles and resistance strategies.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/data-workers-inquiry--weizenbaum.txt:L289"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its worker authorship or its non-representative inquiries to discount it as anecdote; recasting it as research about data workers by DAIR or Weizenbaum researchers (the epistemic authority moved from the workers to the institutes); offering a survey or another study in its place.",
+   "notes": "The census aka lists 'Workers' Inquiry as a Research Methodology (WIRM)'; the home page names WIRM as 'a framework' the Inquiry created (L56), so it is held as the framework atom, not an alias of the name. The census lv_intersection (the archive's reading) is not used."
+  },
+  {
+   "new": "lv-fairwork-cloudwork",
+   "name": "Fairwork Cloudwork Ratings",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "A ratings report scoring platforms against fixed thresholds, a league table read as a benchmark, so the dataset template: 'The Fairwork Cloudwork Ratings 2025 assesses and scores' (report L46) 16 platforms out of 10. The census kind says 'rating programme'; the programme is the Fairwork project, held as author, and the entity named by the address is the Ratings themselves.",
+   "records": [
+    {
+     "source": "census:fairwork-cloudwork",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=fairwork-cloudwork]",
+     "origin": "census"
+    },
+    {
+     "source": "fairwork-cloudwork--oii-cloudwork-report",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt",
+     "origin": "own_page",
+     "url": "https://fairwork.oii.ox.ac.uk/wp-content/uploads/sites/17/2025/05/Fairwork-Cloudwork-Report-2025-FINAL.pdf",
+     "http": "200",
+     "sha256": "5a12e5c6c666fbae1471e22277ff8aee65f6c52ead3309659a03f861fe8305d1"
+    },
+    {
+     "source": "fairwork-cloudwork--oii-home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-home.txt",
+     "origin": "own_page",
+     "url": "https://fairwork.oii.ox.ac.uk/",
+     "http": "200",
+     "sha256": "5cf5af5cb8c96b3fc6dfec08877f4c9986ae33b4ab052e4c18a4e51b871c8d16"
+    },
+    {
+     "source": "fairwork-cloudwork--oii-ai",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-ai.txt",
+     "origin": "own_page",
+     "url": "https://fairwork.oii.ox.ac.uk/ai",
+     "http": "200",
+     "sha256": "8d4ae5161e6c5d59a4fe0e36f3732b46c66484a387600535a4f8e2a5508ab920"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Fairwork Cloudwork Ratings",
+      "Fairwork Cloudwork Ratings 2025",
+      "Cloudwork Ratings",
+      "Fairwork Cloudwork Ratings 2025: Advancing Standards in Digital Labour and AI Supply Chain Governance"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Fairwork Cloudwork Ratings",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=fairwork-cloudwork].name"
+      },
+      {
+       "record_quote": "The Fairwork Cloudwork Ratings 2025 assesses and scores",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L46"
+      },
+      {
+       "record_quote": "Fairwork (2025). Fairwork Cloudwork Ratings 2025:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2230"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Fairwork project",
+      "Fairwork Project",
+      "Fairwork",
+      "Jonas C.L. Valente",
+      "Mark Graham"
+     ],
+     "reference": "The Fairwork project, run out of the Oxford Internet Institute (University of Oxford) and the WZB Berlin Social Science Center; report authors Jonas C.L. Valente and Mark Graham; cited as Fairwork (2025).",
+     "evidence": [
+      {
+       "record_quote": "The project is based at the Oxford Internet Institute,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L252"
+      },
+      {
+       "record_quote": "Fairwork is a project run out of the Oxford Internet Institute, University of Oxford, and the Berlin Social Science Centre",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2171"
+      },
+      {
+       "record_quote": "Jonas C.L. Valente and Mark Graham",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2184"
+      },
+      {
+       "record_quote": "the Fairwork project, based at the Oxford Internet Institute, University of Oxford, and the WZB Berlin Social Science Center",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=fairwork-cloudwork].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2025",
+      "Cloudwork Ratings 2025"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Fairwork (2025). Fairwork Cloudwork Ratings 2025:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2230"
+      },
+      {
+       "record_quote": "Cloudwork Ratings 2025",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=fairwork-cloudwork].version_and_time.report"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Assesses and scores basic standards of fairness on 16 cloudwork platforms against the five Fairwork Cloudwork Principles, out of 10 points, a point given only on clear evidence. Stated limits: failing to achieve a point does not mean non-compliance; the worker surveys do not aim to be representative.",
+     "evidence": [
+      {
+       "record_quote": "The Fairwork Cloudwork Ratings 2025 assesses and scores",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L46"
+      },
+      {
+       "record_quote": "basic standards of fairness in working arrangements on 16",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L47"
+      },
+      {
+       "record_quote": "process. Points are only awarded if clear evidence exists",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L348"
+      },
+      {
+       "record_quote": "principles. Failing to achieve a point does not necessarily",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L342"
+      },
+      {
+       "record_quote": "These surveys do not aim to build a representative set",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L315"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "Fairwork Cloudwork Principles",
+      "Fairwork Principles",
+      "five principles of fair work",
+      "five principles of fair online work",
+      "fair pay",
+      "fair conditions",
+      "fair contracts",
+      "fair management",
+      "fair representation"
+     ],
+     "reference": "The five Fairwork (Cloudwork) Principles, fair pay, fair conditions, fair contracts, fair management and fair representation, the standard the ratings score against.",
+     "evidence": [
+      {
+       "record_quote": "Fairwork Cloudwork Principles: fair pay, conditions, contracts,",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L49"
+      },
+      {
+       "record_quote": "fair conditions, fair contracts, fair management, and",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L264"
+      },
+      {
+       "record_quote": "We rate the working conditions on major cloudwork platforms in line with five principles of fair online work .",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-home.txt:L261"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To highlight the best and worst practices in the platform economy and show that better and fairer platform jobs are possible: by evaluating platforms against measures of fairness, to show not just what the platform economy is but what it can be.",
+     "evidence": [
+      {
+       "record_quote": "Its goal is to highlight the best and worst practices in",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L244"
+      },
+      {
+       "record_quote": "the platform economy and to show that better and fairer",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L245"
+      },
+      {
+       "record_quote": "against measures of fairness, we hope to not just show",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L249"
+      },
+      {
+       "record_quote": "what the platform economy is, but also what it can be.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L250"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A point only on clear evidence, with a missing point stated not to be a finding of non-compliance; scores decided collectively and peer-reviewed; no connection with or funding from any platform; principles revised through a democratic process within the network. Licence not stated.",
+     "evidence": [
+      {
+       "record_quote": "process. Points are only awarded if clear evidence exists",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L348"
+      },
+      {
+       "record_quote": "principles. Failing to achieve a point does not necessarily",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L342"
+      },
+      {
+       "record_quote": "evidence. The scores were then peer-reviewed by three",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L344"
+      },
+      {
+       "record_quote": "the researchers have any connection with any of the",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2221"
+      },
+      {
+       "record_quote": "democratic process of revision within the Fairwork",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L245"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "International Labour Organisation",
+      "ILO",
+      "multi-stakeholder workshop"
+     ],
+     "reference": "The five principles were initially developed in 2018 at a multi-stakeholder workshop at the International Labour Organisation.",
+     "evidence": [
+      {
+       "record_quote": "developed in 2018 at a multi-stakeholder workshop at",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L266"
+      },
+      {
+       "record_quote": "the International Labour Organisation.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L267"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Fairwork (2025)"
+     ],
+     "reference": "The suggested citation, 'Please cite as: Fairwork (2025). Fairwork Cloudwork Ratings 2025: ...'; no DOI or ISBN is stated.",
+     "evidence": [
+      {
+       "record_quote": "Please cite as:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2229"
+      },
+      {
+       "record_quote": "Fairwork (2025). Fairwork Cloudwork Ratings 2025:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2230"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Cloudwork Ratings 2021",
+      "Cloudwork Ratings 2023",
+      "Cloudwork Ratings 2025",
+      "third report",
+      "previous report"
+     ],
+     "reference": "The third cloudwork report (2021, 2023, 2025), with changes counted since the previous report and the principles renewed in 2024 'to ensure they remain attuned to the key challenges facing platform workers'.",
+     "evidence": [
+      {
+       "record_quote": "Cloudwork Ratings 2021. Retrieved 5 April, 2025 from https://fair.work/",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L2045"
+      },
+      {
+       "record_quote": "an online survey. For this third report, we present data",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L321"
+      },
+      {
+       "record_quote": "network to ensure they remain attuned to the key",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L246"
+      },
+      {
+       "record_quote": "processes occurred in 2024, resulting in updated",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/fairwork-cloudwork--oii-cloudwork-report.txt:L248"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Reading a missing point as proof of violation (inflating its evidential rule against its own limit), or carrying its funding (BMZ/GIZ), its Oxford base or its non-representative surveys to discount the scores; offering a platform's own self-assessment in place of the ratings.",
+   "notes": "The census aka lists 'Fairwork' and 'Fairwork AI'; 'Fairwork' names the project that authors the ratings, and 'Fairwork AI' a separate strand (census negative_tags: 'NOT the Fairwork AI Principles for workplace AI deployment, a separate Fairwork strand'), so neither is registered as a name alias; 'Fairwork' is held under author. Framework is read as a description (the five principles) under the calibration rule on descriptive tokens. The census lv_intersection is not used."
+  },
+  {
+   "new": "lv-pai-responsible-sourcing",
+   "name": "Responsible Sourcing Across the Data Supply Line (Partnership on AI)",
+   "template": "protocol",
+   "external": true,
+   "type_basis": "A workstream (a programme) issuing guidelines and practitioner tools, so the protocol template ('standard, specification or program'): 'the Responsible Sourcing workstream aims to develop recommendations and actionable resources' (workstream page L175); 'there are five, worker-centric guidelines that AI practitioners should follow' (library L137).",
+   "records": [
+    {
+     "source": "census:pai-responsible-sourcing",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing]",
+     "origin": "census"
+    },
+    {
+     "source": "pai-responsible-sourcing--workstream",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt",
+     "origin": "own_page",
+     "url": "https://partnershiponai.org/workstream/responsible-sourcing/",
+     "http": "200",
+     "sha256": "0d85b11fe5482688d2055ec85ccb691ebddebaa45a2d935732a81ca7f5509988"
+    },
+    {
+     "source": "pai-responsible-sourcing--library",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt",
+     "origin": "own_page",
+     "url": "https://partnershiponai.org/responsible-sourcing-library/",
+     "http": "200",
+     "sha256": "1b82a03a457a6f41f0ffc717dd367fc6fff63f0a99e77078dff6666b72b786c5"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Responsible Sourcing Across the Data Supply Line",
+      "Responsible Sourcing workstream",
+      "Responsible Data Enrichment Sourcing Library",
+      "Improving Conditions for Data Enrichment Workers",
+      "Data Enrichment Sourcing Guidelines"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L1"
+      },
+      {
+       "record_quote": "the Responsible Sourcing workstream aims to develop",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L175"
+      },
+      {
+       "record_quote": "Responsible Data Enrichment Sourcing Library - Partnership on AI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L1"
+      },
+      {
+       "record_quote": "Data Enrichment Sourcing Guidelines",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].aka"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Partnership on AI",
+      "PAI"
+     ],
+     "reference": "Partnership on AI (PAI); the guidelines developed in partnership with DeepMind.",
+     "evidence": [
+      {
+       "record_quote": "Responsible Sourcing Across the Data Supply Line - Partnership on AI",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L1"
+      },
+      {
+       "record_quote": "Explore PAI’s library of resources for AI practitioners",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L179"
+      },
+      {
+       "record_quote": "Partnership on AI (PAI)",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].operator"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Recommendations and actionable resources (five worker-centric guidelines, a checklist, templates, a case study, a white paper) addressed to AI practitioners who source enriched data; guidance, not a rating or certification of vendors; tested and adopted at one developer (DeepMind), with feedback invited on how it can be improved.",
+     "evidence": [
+      {
+       "record_quote": "the Responsible Sourcing workstream aims to develop recommendations and actionable resources to improve the working conditions of these professionals.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L175"
+      },
+      {
+       "record_quote": "The Responsible Sourcing workstream addresses these questions by working to provide actionable guidance for data scientists, AI engineers, and product managers",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L271"
+      },
+      {
+       "record_quote": "These guidelines, based on PAI’s Responsible Sourcing of Data Enrichment Services white paper and developed in partnership with DeepMind, have been tested and adopted by DeepMind organization-wide.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L177"
+      },
+      {
+       "record_quote": "If you are interested in acting on these guidelines and resources or have feedback on how they can be improved, please get in touch.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L265"
+      },
+      {
+       "record_quote": "NOT a rating or certification of vendors",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AI, Labor, and the Economy"
+     ],
+     "reference": "PAI's AI, Labor, and the Economy programme, under which the workstream is filed.",
+     "evidence": [
+      {
+       "record_quote": "AI, Labor, and the Economy/Responsible Sourcing Across the Data Supply Line",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L185"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing for the workstream"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To improve the working conditions of data enrichment workers by giving AI practitioners actionable guidance, so that they do their part in ensuring healthy and fair working conditions across the data supply line.",
+     "evidence": [
+      {
+       "record_quote": "the Responsible Sourcing workstream aims to develop recommendations and actionable resources to improve the working conditions of these professionals.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L175"
+      },
+      {
+       "record_quote": "to empower these critical ecosystem players to do their part in ensuring healthy and fair working conditions across the data supply line.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L271"
+      },
+      {
+       "record_quote": "Explore PAI’s library of resources for AI practitioners to improve the well-being of data enrichment workers around the world.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L179"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "What a practitioner following it owes: pay all data enrichment workers above the local living wage, counting time spent reading instructions, in training and reviewing work; pay for all completed work, mindful of mass rejections; run a pilot; verified instructions; clear communication including contesting rejected work. PAI commits to taking feedback from workers and the AI community. Site content all rights reserved.",
+     "evidence": [
+      {
+       "record_quote": "1. Ensure all data enrichment workers are paid above the local living wage",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L141"
+      },
+      {
+       "record_quote": "AI Practitioners must pay workers/participants at least the living wage for their location.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L143"
+      },
+      {
+       "record_quote": "including time spent reading instructions, going through any training and reviewing work before submission.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L147"
+      },
+      {
+       "record_quote": "being mindful that mass rejections of work completed without opportunities for redress impact the workers’ livelihood.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L149"
+      },
+      {
+       "record_quote": "To ensure our guidance truly improves conditions for data enrichment workers, we welcome feedback:",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L257"
+      },
+      {
+       "record_quote": "© 2026 Partnership on AI | All Rights Reserved",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L311"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Responsible Sourcing of Data Enrichment Services",
+      "white paper",
+      "DeepMind"
+     ],
+     "reference": "The guidelines are based on PAI's white paper Responsible Sourcing of Data Enrichment Services and developed in partnership with DeepMind.",
+     "evidence": [
+      {
+       "record_quote": "These guidelines, based on PAI’s Responsible Sourcing of Data Enrichment Services white paper and developed in partnership with DeepMind",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--library.txt:L177"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no saved record states an identifier for the workstream or its resources"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Responsible Sourcing of Data Enrichment Services",
+      "Improving Conditions for Data Enrichment Workers",
+      "Vendor Engagement Guidance & Transparency Template",
+      "Responsible AI Starts with the Data Supply Chain"
+     ],
+     "reference": "The workstream's dated sequence: guidance first developed (22 December 2020), the white paper, the library and DeepMind collaboration (16 November 2022), the vendor engagement guidance and transparency template (28 August 2024), the latest post (29 April 2026). No reason for the sequence is stated.",
+     "evidence": [
+      {
+       "record_quote": "Developing Guidance for Responsible Data Enrichment Sourcing",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/pai-responsible-sourcing--workstream.txt:L256"
+      },
+      {
+       "record_quote": "Improving Conditions for Data Enrichment Workers PAI Staff Nov 16, 2022",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].evidence.library_date.quote"
+      },
+      {
+       "record_quote": "Protecting AI's Essential Workers: Introducing our Vendor Engagement Guidance & Transparency Template Sonam Jindal Aug 28, 2024",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].evidence.vendor_guidance.quote"
+      },
+      {
+       "record_quote": "Responsible AI Starts with the Data Supply Chain Michael George, Eliza McCullough Apr 29, 2026",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=pai-responsible-sourcing].evidence.latest_post.quote"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its DeepMind partnership or its industry membership to recast worker-centric guidance as industry self-regulation; turning the guidelines into a description of what developers already do; offering a vendor's own assurance in place of the living-wage and pilot obligations.",
+   "notes": "The address names the producer and a short name ('Partnership on AI Responsible Sourcing'); the census row's name is the workstream's title. Producer and institution are kept distinct: PAI as producer, its AI, Labor, and the Economy programme as institution. The census lv_intersection is not used."
+  },
+  {
+   "new": "lv-turkopticon",
+   "name": "Turkopticon",
+   "template": "institution",
+   "external": true,
+   "type_basis": "An organization, so the institution template: 'now it is a worker-run organizing and advocacy project, and software is one of the things we do' (FAQ L114-115); 'a worker-led, worker-run advocacy organization in addition to hosting the original tool and website' (blog L185).",
+   "records": [
+    {
+     "source": "census:turkopticon",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=turkopticon]",
+     "origin": "census"
+    },
+    {
+     "source": "turkopticon--home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--home.txt",
+     "origin": "own_page",
+     "url": "https://turkopticon.net/",
+     "http": "200",
+     "sha256": "0d6a298b57985d706e5887fbf9a4951be8466da8f1d8ce2ee6209a6554d97ed9"
+    },
+    {
+     "source": "turkopticon--faq",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt",
+     "origin": "own_page",
+     "url": "https://turkopticon.net/faq/index.html",
+     "http": "200",
+     "sha256": "d46d655396550f62dd6818bb854b1fe29659f3c636907ad47f87045395af4fbf"
+    },
+    {
+     "source": "turkopticon--whats-next",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.txt",
+     "origin": "own_page",
+     "url": "https://blog.turkopticon.net/?p=3600",
+     "http": "200",
+     "sha256": "be82055a7a38f37b2082a83e6d70e2c2523512cb494e62370b1b5aeb01cdd24e"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Turkopticon",
+      "TO",
+      "Turkopticon Script"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Turkopticon",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=turkopticon].name"
+      },
+      {
+       "record_quote": "2.1. How can I get the Turkopticon Script?",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L46"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lilly Irani",
+      "Six Silberman",
+      "M. Six Silberman"
+     ],
+     "reference": "Founded by Lilly Irani and Six Silberman.",
+     "evidence": [
+      {
+       "record_quote": "Turkopticon was founded by Lilly Irani",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L138"
+      },
+      {
+       "record_quote": "Drs. Lilly Irani and M. Six Silberman unveiled Turkopticon in 2008",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.txt:L183"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2008"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Turkopticon started in 2008 as a class project to raise awareness about the",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L159"
+      },
+      {
+       "record_quote": "2008",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=turkopticon].founded"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A worker-run organizing and advocacy project that hosts the original requester-review tool and site: Mechanical Turk workers rate requesters on communicativity, pay (now pay/hr), fairness and promptness. Not associated with Amazon; not a research dataset; requesters are not employers in the legal sense but hold power by making payment decisions.",
+     "evidence": [
+      {
+       "record_quote": "Turkopticon used to be a volunteer run software project and now it is a worker-run",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L114"
+      },
+      {
+       "record_quote": "organizing and advocacy project, and software is one of the things we do.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L115"
+      },
+      {
+       "record_quote": "In 2019, Turkopticon began the process of transitioning to a worker-led, worker-run advocacy organization in addition to hosting the original tool and website.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.txt:L185"
+      },
+      {
+       "record_quote": "2.2. What are the requester \"attributes\" (\"comm\", \"pay\", \"fair\", and \"fast\")?",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L48"
+      },
+      {
+       "record_quote": "No. It is not and it has never been.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L155"
+      },
+      {
+       "record_quote": "While requesters are not employers in the legal sense, requesters are in a position ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L438"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Tech Workers Coalition"
+     ],
+     "reference": "Maintained by the worker committee with volunteers from Tech Workers Coalition.",
+     "evidence": [
+      {
+       "record_quote": "Turkopticon is maintained by the committee and volunteers from Tech Workers Coalition.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L136"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To organize data workers to build collective power, improve working conditions, and hold platforms, companies and institutions accountable to the labor they rely on; at its origin, to raise awareness of the unaccountability of Mechanical Turk requesters.",
+     "evidence": [
+      {
+       "record_quote": "Turkopticon’s mission is to organize data workers to build collective power, improve working conditions, and hold platforms, companies, and institutions accountable to the labor they rely on.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--home.txt:L26"
+      },
+      {
+       "record_quote": "Turkopticon started in 2008 as a class project to raise awareness about the",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L159"
+      },
+      {
+       "record_quote": "we have decided to expand our efforts to assist ALL data workers!",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.txt:L191"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Reviews are not deleted, for accountability; it is not and has never been associated with Amazon; it does not use its data to produce research, and use of it is not implicit consent to being a research subject; its first responsibility is to the workers who rely on it; it would consult workers publicly before releasing data; the API code under the GNU Affero General Public License.",
+     "evidence": [
+      {
+       "record_quote": "The main reason we don't allow deletion of reviews is accountability.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L250"
+      },
+      {
+       "record_quote": "No. It is not and it has never been.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L155"
+      },
+      {
+       "record_quote": "consent to being a research subject. Turkopticon's primary research contribution ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L492"
+      },
+      {
+       "record_quote": "is to help imagine more responsible approaches to the design and operation of ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L493"
+      },
+      {
+       "record_quote": "computing systems. Thus Turkopticon's first responsibility is to the community of ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L494"
+      },
+      {
+       "record_quote": "would consult publicly with workers first, so if you want to make a request like ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L477"
+      },
+      {
+       "record_quote": "It is licensed under the GNU Affero General Public License .",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L424"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "requester reputation system",
+      "Amazon Marketplace",
+      "eBay",
+      "class project"
+     ],
+     "reference": "Built as the requester reputation system Amazon did not build into Mechanical Turk, on the model of Amazon Marketplace and eBay; begun as a class project.",
+     "evidence": [
+      {
+       "record_quote": "was wrong. We didn't understand why Amazon didn't build in a requester reputation system, ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L162"
+      },
+      {
+       "record_quote": "like Amazon Marketplace and eBay have. Building Turkopticon was our way of making this ",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L163"
+      },
+      {
+       "record_quote": "Turkopticon started in 2008 as a class project to raise awareness about the",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L159"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no saved record states an identifier for Turkopticon (the IDs in its API are Mechanical Turk requester IDs, not its own)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Turkopticon Script",
+      "browser add-on",
+      "turkopticon.net",
+      "FAQ Version July 18 2023",
+      "2014 FAQ"
+     ],
+     "reference": "The original tool and site (script and browser add-on), kept alongside the advocacy organization; the FAQ versioned (July 18 2023, replacing the 2014 FAQ). No reason for the versioning is stated.",
+     "evidence": [
+      {
+       "record_quote": "Version July 18 2023",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L1"
+      },
+      {
+       "record_quote": "This document is a rewrite of the 2014 FAQ , which it replaces.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--faq.txt:L24"
+      },
+      {
+       "record_quote": "The browser extension that was developed made Turkopticon easy and convenient to use.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/turkopticon--whats-next.txt:L183"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its origin as a student class project, or its founders' academic standing, to recast a worker-run organization as researchers' software; treating its reviews as research data it refuses to produce; binding it to Amazon, which it says it has never been associated with.",
+   "notes": "Census aka 'TO' kept as an alias. The census lv_intersection is not used."
+  },
+  {
+   "new": "lv-worker-info-exchange",
+   "name": "Worker Info Exchange",
+   "template": "institution",
+   "external": true,
+   "type_basis": "A non-profit organisation, so the institution template: 'Worker Info Exchange is a non-profit helping workers reclaim control over the data collected from them at work.' (home L50).",
+   "records": [
+    {
+     "source": "census:worker-info-exchange",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=worker-info-exchange]",
+     "origin": "census"
+    },
+    {
+     "source": "worker-info-exchange--home",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt",
+     "origin": "own_page",
+     "url": "https://www.workerinfoexchange.org/",
+     "http": "200",
+     "sha256": "fbcd4b9857cdf882e627f0b6dca7594aae14ed9fde1f5de887ea2ff5f357c03e"
+    },
+    {
+     "source": "worker-info-exchange--about-us",
+     "path": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--about-us.txt",
+     "origin": "own_page",
+     "url": "https://www.workerinfoexchange.org/about-us",
+     "http": "200",
+     "sha256": "2ebc0cea511e10f80e14023eb2f66ce08ff3e7dfe2cef52d8364045d0bce5697"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Worker Info Exchange",
+      "WIE",
+      "Stichting WIE International"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Worker Info Exchange",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=worker-info-exchange].name"
+      },
+      {
+       "record_quote": "Stichting WIE International",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=worker-info-exchange].aka"
+      },
+      {
+       "record_quote": "Stichting WIE International  has launched a new collective action against Uber",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L54"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved sources and census name no founder"
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no founding date is stated in the saved sources or census"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A London non-profit helping workers reclaim control over the data collected from them at work, through three strands: data access (subject access and data portability requests on workers' behalf), data investigations supporting strategic litigation against illegal automated dismissals and management decisions, and data trusts for unions and grassroots organisations. Not a union; not a public dataset.",
+     "evidence": [
+      {
+       "record_quote": "Worker Info Exchange is a non-profit helping workers reclaim control over the data collected from them at work.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L50"
+      },
+      {
+       "record_quote": "We facilitate data access by making specific subject access and data portability requests on behalf of workers.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L69"
+      },
+      {
+       "record_quote": "These investigations support the strategic litigation work through which we help workers contest illegal automated dismissals and management decisions.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L73"
+      },
+      {
+       "record_quote": "We support trade unions and grassroots worker organisations to aggregate their data with other workers through the development of data trusts.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L77"
+      },
+      {
+       "record_quote": "Worker Info Exchange | Data Rights for Digital Workers | London",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L3"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "digital rights",
+      "Data Rights for Digital Workers",
+      "subject access",
+      "data portability"
+     ],
+     "reference": "Workers' digital (data) rights under the law, asserted through subject access and data portability requests.",
+     "evidence": [
+      {
+       "record_quote": "Our solution is to help workers assert their digital rights under the law",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--about-us.txt:L49"
+      },
+      {
+       "record_quote": "Data Rights for Digital Workers",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L3"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To help workers reclaim control over the data collected from them at work and turn data into power: transparency over how their work is allocated, their pay determined and their performance assessed; challenging unfair algorithmic systems and holding tech platforms to account.",
+     "evidence": [
+      {
+       "record_quote": "We help workers turn data into power — challenging unfair algorithmic systems and holding tech platforms to account.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L50"
+      },
+      {
+       "record_quote": "Our goal is to create transparency over their working conditions  by interrogating how their work is allocated, how their pay is determined and how their performance is assessed.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L69"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It acts on behalf of workers and in support of trade unions and grassroots worker organisations (aggregating their data through data trusts so that workers can bargain and act), within workers' rights under the law. Licence not stated.",
+     "evidence": [
+      {
+       "record_quote": "We facilitate data access by making specific subject access and data portability requests on behalf of workers.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L69"
+      },
+      {
+       "record_quote": "We will do this by supporting trade unions and grassroots worker organisations to access and aggregate their data with other workers through the development of data trust(s).",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--about-us.txt:L51"
+      },
+      {
+       "record_quote": "Armed with powerful analysis, workers can be better resourced for collective bargaining and action.",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L77"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no saved record states a predecessor or model"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no saved record states an identifier"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Managed by Bots Report",
+      "Just Eat Report",
+      "McMisery Report",
+      "Dying for Data Report",
+      "Workers' Recommendations on EU Directive",
+      "workerinfoexchange.org"
+     ],
+     "reference": "Its reports, listed on its site; no versions or reasons stated.",
+     "evidence": [
+      {
+       "record_quote": "Managed by Bots Report",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L25"
+      },
+      {
+       "record_quote": "McMisery Report",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/sources/worker-info-exchange--home.txt:L29"
+      },
+      {
+       "record_quote": "https://www.workerinfoexchange.org/",
+       "locus": "/home/claude/fleet/laborvector/data/labor-census/census.json#rows[slug=worker-info-exchange].url"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its litigation or its data requests to cast it as an adversarial claimant against platforms rather than a holder of workers' rights under law; folding it into a union or into the platforms' own transparency; offering platform self-reporting in place of worker-held data.",
+   "notes": "Census aka lists Stichting WIE International, which the home page names as the body bringing the Uber action; kept as an alias since the census registers it. The census lv_intersection is not used."
+  }
+ ],
+ "observations": [
+  {
+   "key": "data-workers-inquiry-aio-20261029",
+   "entry": "data-workers-inquiry-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-data-workers-inquiry",
+   "scored_object": "the expanded Overview as pasted, from the first line of the answer to the end of its card rail; the first answer is the whole composition (one querent turn, no challenge)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The Data Workers' Inquiry is a global, participatory research initiative that empowers data labelers, content moderators, and digital platform workers to investigate and document the hidden, precarious labor behind artificial intelligence.",
+    "basis": "The Inquiry is composed as itself: its worker-led method, its outputs, its operators and the issues its inquiries document."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Data Workers' Inquiry is a global, participatory research initiative"
+    },
+    {
+     "atom": "founder",
+     "present": true,
+     "span": "Spearheaded by researchers including Dr. Milagros Miceli, alongside the Distributed AI Research Institute (DAIR), the Weizenbaum Institute, and TU Berlin."
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a global, participatory research initiative that empowers data labelers, content moderators, and digital platform workers to investigate and document"
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "the project uses Workers' Inquiry as a Research Methodology (WIRM)."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "empowers data labelers, content moderators, and digital platform workers to investigate and document the hidden, precarious labor behind artificial intelligence."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Epistemic Authority: Data workers act as lead community researchers rather than passive subjects, shaping their own questions and findings."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Modeled after Karl Marx's 1880 Workers' Inquiry"
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "learn more about how to access their zines and media repository?"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: 'global, participatory' (the record's 'radically participatory'), workers as community researchers setting their own questions, self-chosen formats; the composition drops 'radically' and the nine-countries scope but does not inflate or relabel. Commitments present: the composition names the record's own commitment under its own word ('Epistemic Authority'), the workers as researchers, not subjects; the copyright line is not carried. Founder present: Miceli bound as lead researcher, DAIR, Weizenbaum and TU Berlin as the bodies alongside ('spearheaded'); the record has DAIR and Weizenbaum as the launching institutes and TU Berlin as partner, a minor shift. Date absent: the only year is Marx's 1880. Deposit chain present: the repository is offered at the close as the way to the inquiries, which is the record's own reason for it (a resource of first-hand accounts); read as advancing purpose, not a bare mention. 'Modeled after' binds the lineage token (Marx's 1880 Workers' Inquiry). The working-conditions bullet (pay under $1-$2 an hour, NDAs, rejections) and the data-extraction bullet carry inquiry findings beyond the census's saved quotes; the biometric-extraction inquiry is listed on the home page (L118), the pay and NDA figures are not in the saved sources and are not judged."
+  },
+  {
+   "key": "fairwork-cloudwork-ratings-aio-20261029",
+   "entry": "fairwork-cloudwork-ratings-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-fairwork-cloudwork",
+   "scored_object": "the expanded Overview as pasted, from the first line of the answer to the end of its card rail; the first answer is the whole composition (one querent turn, no challenge)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "They evaluate online remote digital labor platforms (cloudwork) across five core principles of fairness:",
+    "basis": "The Ratings are composed as themselves: their publisher, the five principles they score against, the 10-point scale and the 2025 assessment of 16 platforms."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Fairwork Cloudwork Ratings are published by the [Fairwork Project]"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The Fairwork Cloudwork Ratings are published by the [Fairwork Project]"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "recent reports (such as the 2025 assessment covering 16 platforms)"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Platforms are scored out of 10 points based on concrete evidence provided for each threshold."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "* Fair Pay: Ensuring workers earn a wage proportional to local or national minimum standards after costs."
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author present: the Fairwork Project bound as publisher; 'spun out of the Oxford Internet Institute and the Berlin Social Science Center WZB' relabels the record's 'based at' as a spin-out, recorded, not scored against the author binding. Framework read as the five principles: named and listed one by one (Fair Pay through Fair Representation) as what the ratings evaluate against; 'five core principles of fairness' is not the registered token, the descriptive reading carries it. Claim boundary present: platforms scored out of 10 on evidence per threshold, cloudwork scope, the 2025 assessment of 16 platforms; the stated limits (a missing point is not non-compliance; surveys not representative) are not carried, and nothing is inflated against them. Commitments absent: the evidence rule is carried as scoring method (claim boundary), not as a binding; the conflict-of-interest statement, peer review and democratic revision are not carried. Purpose absent: the composition gives what the ratings do and find, not what they are for (to show better and fairer platform work is possible). Identifier and deposit chain absent: the closing link 'Fairwork Cloudwork Ratings Page' points to a page (a location without an identifier), and 'recent reports' names editions without the chain advancing the purpose. The 'Global Disparities' bullet (Global South workers, discrimination) has a counterpart in the report (L725-L726 'Workers from the Global South also experience ... discrimination'); 'higher rates of unaddressed discrimination' is not checked against a rate in the report."
+  },
+  {
+   "key": "partnership-on-ai-responsible-sourcing-aio-20261029",
+   "entry": "partnership-on-ai-responsible-sourcing-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-pai-responsible-sourcing",
+   "scored_object": "the expanded Overview as pasted, from the first line of the answer to the end of its card rail; the first answer is the whole composition (one querent turn, no challenge)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The Partnership on AI (PAI) focuses on responsible sourcing through its workstream on Responsible Sourcing Across the Data Supply Line",
+    "basis": "The workstream is composed as itself: its producer, its aim, its resources and the DeepMind implementation."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "through its workstream on Responsible Sourcing Across the Data Supply Line"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "The Partnership on AI (PAI) focuses on responsible sourcing through its workstream on Responsible Sourcing Across the Data Supply Line"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Data Enrichment Sourcing Guidelines & Checklists: Shareable resources—including the Good Instructions Checklist and vendor comparison templates—designed to operationalize worker-centric standards."
+    },
+    {
+     "atom": "institution",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "which aims to improve working conditions, fair pay, and well-being for global data enrichment and annotation professionals."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Responsible Sourcing of Data Enrichment Services: A foundational white paper published by PAI"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: recommendations and practitioner resources (white paper, guidelines, checklist, templates, vendor guidance) and their testing with DeepMind ('to test and put these responsible sourcing recommendations into operational practice'), carried as guidance; the 'Transparency Template' as 'A standard outlining what companies should actively monitor and publicly report' goes beyond the saved sources (the census lists the template unread) and is not judged. Purpose present: the workstream's aim to improve working conditions and well-being of data enrichment workers. Commitments absent: none of the five guidelines' obligations (the living wage counting instruction and training time, payment for completed work, pilots, verified instructions, contestable rejections) is carried; 'worker-centric standards' names them without content. Lineage present: the white paper bound as the foundation ('foundational'); DeepMind appears as the implementing partner, consistent with the record. Institution absent: the AI, Labor, and the Economy programme is not named. Deposit chain absent: the resources are listed as components, not as a dated sequence."
+  },
+  {
+   "key": "turkopticon-aio-20261029",
+   "entry": "turkopticon-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-turkopticon",
+   "scored_object": "the expanded Overview as pasted, from the first line of the answer to the end of its card rail; the first answer is the whole composition (one querent turn, no challenge)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a worker-led advocacy organization and review system created in 2008 by Lilly Irani and M. Six Silberman.",
+    "basis": "Turkopticon is composed as itself: the organization, its review tool, its founders and founding year, and its expansion to all data workers."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "[Turkopticon]"
+    },
+    {
+     "atom": "founder",
+     "present": true,
+     "span": "is a worker-led advocacy organization and review system created in 2008 by Lilly Irani and M. Six Silberman."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "created in 2008 by Lilly Irani and M. Six Silberman."
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a worker-led advocacy organization and review system created in 2008"
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "expanded its mission to support and organize platform-based data workers across various industries"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: a worker-led advocacy organization with its review system, workers rating requesters on pay, fairness, speed and communication (the four attributes). The composition calls requesters 'employers' ('review and rate employers (\"requesters\")'), where the FAQ states requesters 'are not employers in the legal sense'; recorded as a relabel of the parties, not of Turkopticon's own claim. Purpose present: the mission to organize data workers (the expansion beyond AMT), with transparency of worker-requester relations; building collective power and accountability are not named. Commitments absent: no-deletion for accountability, independence from Amazon, the research-data refusal and consent statement, the AGPL code are not carried. Lineage absent: the reputation-system model (Amazon Marketplace, eBay) is not named; 'employer reputation system' appears only on a card (SSRN). Framework absent: Tech Workers Coalition not named. Deposit chain absent: 'Originally launched as a browser extension and website' gives the tool's history, not a chain offered as a way to the work. The name atom's span is the composition's own link text; the word Turkopticon is the composition's, the URL is not read."
+  },
+  {
+   "key": "worker-info-exchange-aio-20261029",
+   "entry": "worker-info-exchange-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:lv-worker-info-exchange",
+   "scored_object": "the expanded Overview as pasted, from the first line of the answer to the end of its card rail; the first answer is the whole composition (one querent turn, no challenge)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a non-profit organization based in London (operating also as Stichting WIE International) that fights for the digital and labor rights of gig economy workers.",
+    "basis": "Worker Info Exchange is composed as itself: a London non-profit, its data access work, its investigations and the Uber action."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "[Worker Info Exchange]"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Helps gig workers use data access and Subject Access Requests (SARs) to see how tech platforms track pay, work allocation, and performance."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "that fights for the digital and labor rights of gig economy workers."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Helps gig workers use data access and Subject Access Requests (SARs) to see how tech platforms track pay, work allocation, and performance."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: a London non-profit, data access via subject access requests, investigations challenging unfair management and automated dismissals, collective action against Uber's dynamic pay; data trusts are omitted. 'Coordinates group lawsuits' compresses the record (Stichting WIE International launched the collective action; WIE's investigations support strategic litigation); 'operating also as Stichting WIE International' merges the two names, which the census registers as aliases. Framework read as workers' digital rights under the law: 'digital and labor rights' and SARs carry it. Purpose present: transparency over pay, allocation and performance, and challenging unfair algorithmic management (the record's 'turn data into power ... holding tech platforms to account'). Commitments absent: acting on behalf of workers in support of unions and grassroots organisations through data trusts is not carried; the 'Research & Alliances' bullet (University of Oxford, the TUC) is not in the saved sources (a card dated Apr 29, 2026 carries the TUC report) and is not judged. Deposit chain absent: 'landmark research' names no report. Founder, date, lineage and identifier are unknown in the records and not scored."
+  }
+ ]
+}
