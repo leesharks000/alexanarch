@@ -1,0 +1,935 @@
+[
+ {
+  "id": "MMRS-01",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "what it is: Charlotin's database of legal decisions where a court finds or implies reliance on hallucinated material; 2,231 decisions, CC BY 4.0, CSV",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "articles.py ARTICLES['ai-hallucination-cases'], kernel",
+  "quote": "AI Hallucination Cases is Damien Charlotin's database of legal decisions in which a court or tribunal finds or implies reliance on hallucinated material: 2,231 decisions worldwide as of 28 October 2026, CC BY 4.0, with a CSV export.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is: legal decisions on AI hallucinations",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-02",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "its unit is the decision",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it is s1",
+  "quote": "Its unit is the decision.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the unit and the admission rule",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-03",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "admission: a court addresses AI use beyond a passing reference and finds or implies reliance",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it is s2",
+  "quote": "A case enters when a court or tribunal addresses AI use in more than a passing reference and explicitly finds, or implies, reliance on hallucinated material.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unit and the admission rule",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-04",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "mere allegations excluded; some judgment calls admitted",
+  "kind": "limit",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it is s3",
+  "quote": "Mere allegations are excluded, with some judgment calls admitted.",
+  "kernel": false,
+  "const": false,
+  "lineage": "exceptions: judgment calls",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-05",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "each record: court, date, party, tool where named, nature of hallucination, outcome and sanction",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it is s4",
+  "quote": "Each record carries the court, date, the party that used AI, the tool where named, the nature of the hallucination (fabricated, false quotes, misrepresented, outdated advice), and the outcome and sanction.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record: fields and categories",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-06",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "1,288 cases involve pro se litigants and 880 lawyers",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it shows s1",
+  "quote": "Of its cases, 1,288 involve pro se litigants and 880 lawyers.",
+  "kernel": false,
+  "const": false,
+  "lineage": "count and composition",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-07",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "the period filter begins Q2 2023",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it shows s2",
+  "quote": "The period filter begins in the second quarter of 2023.",
+  "kernel": false,
+  "const": false,
+  "lineage": "maker and origin",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-08",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "it grows by its editor's reading and readers' cases",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What it shows s3",
+  "quote": "The database grows by its editor's reading and by cases readers send.",
+  "kernel": false,
+  "const": false,
+  "lineage": "intake and pipeline",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-09",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "its own stated boundary, quoted",
+  "kind": "limit",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What its selection leaves out s1",
+  "quote": "It states its own boundary: it does not track \"the (necessarily wider) universe of all fake citations or use of AI in court filings.\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "boundary: what it does not track",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-10",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "what the selection leaves out: a fabricated citation enters only when a court catches and rules on it",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, What its selection leaves out s2",
+  "quote": "A fabricated citation enters when a court catches and rules on it.",
+  "kernel": true,
+  "const": false,
+  "lineage": "boundary: what it does not track",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-11",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "the census's most exact record of citation fidelity",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, Place in the field s1",
+  "quote": "It is the census's most exact record of citation fidelity.",
+  "kernel": true,
+  "const": false,
+  "lineage": "citation fidelity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-12",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "each entry a machine composition that reached a court with invented or misrepresented sources; the court's decision the reception that recorded it",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "article, Place in the field s2",
+  "quote": "Each entry is a machine composition that reached a court with sources it invented or misrepresented, and the court's decision is the reception that recorded it.",
+  "kernel": true,
+  "const": true,
+  "lineage": "citation fidelity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (article; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py (ARTICLES['ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "within the ARTICLES value as loaded from articles.py (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-13",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "operator Damien Charlotin, at damiencharlotin.com/hallucinations (operator statement)",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: operator, url (evidence: damiencharlotin.com/hallucinations, basis operator)",
+  "quote": "Damien Charlotin … https://www.damiencharlotin.com/hallucinations/",
+  "kernel": false,
+  "const": false,
+  "lineage": "maker and origin",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-14",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "a database; roles monitoring and reception; lifecycle active, observed 2026-10-28",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: kind, roles, lifecycle, observed",
+  "quote": "database … monitoring … reception … active … 2026-10-28",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record kept apart from the entity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-15",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "licence CC BY 4.0 (operator); CSV download (observed)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: license (basis operator), data_access (basis observed)",
+  "quote": "CC BY 4.0 … CSV download",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness: licence and data",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-16",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "self-description field: legal decisions where a court addresses AI use beyond a passing reference and finds or implies reliance",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: self_description (basis operator)",
+  "quote": "legal decisions in which a court or tribunal addresses AI use in more than a passing reference, where it finds or implies reliance on hallucinated material",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: legal decisions on AI hallucinations",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  },
+  "defect": "the rendered MMRS page shows this field under 'In its own words', in quotation marks; the words are the record's compression of the page's footnote 1 and opening (F1–F3), not a sentence of the database's page"
+ },
+ {
+  "id": "MMRS-17",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "unit legal decision; intake editor-curated, readers send cases",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: unit, intake (basis operator)",
+  "quote": "legal decision … editor-curated; readers send cases",
+  "kernel": false,
+  "const": false,
+  "lineage": "intake and pipeline",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-18",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "2,231 cases as of 2026-10-28, the site's own update date",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: count (basis operator)",
+  "quote": "2,231 cases … 2026-10-28 (the site's own update date)",
+  "kernel": false,
+  "const": false,
+  "lineage": "count and composition",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-19",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "cadence continuous",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: cadence (basis operator)",
+  "quote": "continuous",
+  "kernel": false,
+  "const": false,
+  "lineage": "growth",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-20",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "founded field: 'the period filter begins Q2 2023'",
+  "kind": "genealogy",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: founded (basis observed)",
+  "quote": "the period filter begins Q2 2023",
+  "kernel": false,
+  "const": false,
+  "lineage": "maker and origin",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  },
+  "contested": "the field 'founded' holds the start of the period filter, which dates decisions; the database's start is April 2025 by its FAQ (F40) and Wikipedia (F54, F56); composed each with its source (P_coh)"
+ },
+ {
+  "id": "MMRS-21",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "admission requires a court finding or implication of reliance",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: properties.admission_requires_harm (basis operator)",
+  "quote": "a court finding or implication of reliance on hallucinated material",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unit and the admission rule",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-22",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "it records attribution: yes, by the nature of the hallucination",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: properties.records_attribution (basis operator)",
+  "quote": "yes: nature of hallucination (fabricated, false quotes, misrepresented, outdated advice)",
+  "kernel": false,
+  "const": false,
+  "lineage": "citation fidelity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-23",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "a relation: the composition layer's account of the entity, seated in the Capture Registry",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: relations[0] (capture)",
+  "quote": "the composition layer's account of the entity, seated in the Capture Registry",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record kept apart from the entity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'])",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-24",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "candidate: the UK tracker at Natural and Artificial Law, 'a UK companion to Charlotin's database'",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: candidates (surfaced by ai-hallucination-cases-database-aio-20261029)",
+  "quote": "AI Hallucination Cases Tracker (UK), Natural and Artificial Law … a UK companion to Charlotin's database",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbour: Natural and Artificial Law's trackers",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'], candidates)",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  },
+  "defect": "the card's page (naturalandartificiallaw.com/ai-hallucination-cases-tracker/) is Matthew Lee's international tracker of selected judicial quotations, which links to a separate UK tracker (/uk-ai-hallucination-cases-tracker/); neither page in the saved text names Charlotin or his database; 'companion' is the Overview's word (T1-7); the candidate's url is null"
+ },
+ {
+  "id": "MMRS-25",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "candidate: HAQQ's tracker, 'a vendor tracker built on Charlotin's count'",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: candidates (surfaced by ai-hallucination-cases-database-aio-20261029)",
+  "quote": "HAQQ — AI Hallucination Cases: The 2,202-Case Sanctions Tracker … a vendor tracker built on Charlotin's count",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbour: HAQQ's sanctions tracker",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'], candidates)",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "MMRS-26",
+  "dep": "MMRS",
+  "record": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/",
+   "label": "MMRS"
+  },
+  "claim": "the record kept apart from the entity; each assertion with source and basis; lifecycle apart from observation",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census: schema_note (v2, 2026-10-28)",
+  "quote": "each page has two nodes, the MMRS record and the entity it describes; relations are typed; each assertion carries a source and a basis (operator statement, third-party report, our observation, our reading); lifecycle is kept apart from the observation that saw it",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record kept apart from the entity",
+  "date": "2026-10-28 (corrected 2026-10-29)",
+  "title": "MMRS meta-aggregator record: AI Hallucination Cases (census row; https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json (rows[slug == 'ai-hallucination-cases'], schema_note)",
+  "quote_ok": true,
+  "quote_check": "each part within a string value of the census row (or its candidates / schema_note) as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/"
+  }
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition's maker and size are right against the record",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, findings[0]",
+  "quote": "THE MAKER AND THE SIZE. Damien Charlotin and 'over 2,200' (the record: 2,231 on 28 October) are right. Checked 2026-10-29 against the MMRS meta-aggregator record of 2026-10-28 and the entity's own pages, re-read the same day.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].findings)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition narrows the admission rule to 'explicitly'; the implied cases dropped",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, findings[1]",
+  "quote": "THE SCOPE NARROWED TO EXPLICIT. 'Where generative AI explicitly produced hallucinated content' sharpens the database's rule, which admits decisions where the court 'explicitly finds, or implies' reliance on hallucinated material. The implied cases are dropped.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].findings)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  },
+  "defect": "the phrase quoted as the database's rule, 'explicitly finds, or implies', is the MMRS article's wording (MMRS-03); the page reads 'has explicitly found (or implied)' (F3); the substance agrees"
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "two neighbours on the cards, both separate aggregators, added as candidates",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, findings[2]",
+  "quote": "TWO NEIGHBOURS. The UK tracker at Natural and Artificial Law is a separate aggregator; HAQQ's '2,202-case' tracker is built on Charlotin's count. Both added as candidates; the census held neither.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].findings)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  },
+  "defect": "the card (B2) is the international page of Natural and Artificial Law's trackers; the UK tracker is a further page it links to, not on the rail"
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition lists lawyers before the larger pro se count",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, findings[3]",
+  "quote": "THE PARTIES' ORDER. The record gives 1,288 pro se and 880 lawyers; the composition lists private lawyers first.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].findings)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the database composed with maker and size as the field's primary record; the admission rule narrowed",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, analysis s1",
+  "quote": "The database is composed with its maker, at its size, as the field's primary record, and its admission rule is narrowed from 'finds or implies' to 'explicitly'.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].analysis)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the cards show the database aggregated in turn",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "ai-hallucination-cases-database-aio-20261029, analysis s2",
+  "quote": "The cards show the database already aggregated in turn: a regional companion and a vendor tracker counting its cases.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition layer",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry ai-hallucination-cases-database-aio-20261029 (OBS-4f95ab35a3ac, AXN:0AA6.CAPTURE.🌋🤙🝊🔙🕐🧬)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json (entries[slug == 'ai-hallucination-cases-database-aio-20261029'].analysis)",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "entity": "ai-hallucination-cases",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
+  }
+ }
+]

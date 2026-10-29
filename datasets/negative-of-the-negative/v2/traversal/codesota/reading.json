@@ -1,0 +1,147 @@
+{
+ "row": "codesota",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on CodeSOTA (what it is, its maker, its succession claim, its offerings, its limits); R, a relation the archive states between CodeSOTA and an archive object (the archive's terms, instruments, the MMRS meta-aggregator); O, an archive category applied to CodeSOTA or to a class the field sources for it (benchmark leaderboards and registries: B2, B3, B4; model routing for AI tasks: B1). A bare mention, a link list, or 'routing layer' or 'leaderboard' said of another object is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "rejected": [
+  {
+   "dep": [
+    364,
+    386,
+    1129
+   ],
+   "strata_candidate": [
+    "O-class"
+   ],
+   "cands": [
+    "O0001",
+    "O0002",
+    "O0004"
+   ],
+   "reason": "the Fractal Navigation Map (v5.0, v5.3, and v5.0 re-deposited) lists among its own properties 'A routing layer that connects queries to processing documents'; the sentence describes the archive's own map as a routing layer and applies 'executable architecture' to the map, not to AI task routing as a class or to CodeSOTA. A use of 'routing layer' about another object; not admitted"
+  },
+  {
+   "dep": [
+    444,
+    1316
+   ],
+   "strata_candidate": [
+    "O-class"
+   ],
+   "cands": [
+    "O0003",
+    "O0005"
+   ],
+   "reason": "the Telemetry Module (v0.8, and its re-deposit as Document 239) speaks of EMIT as 'configurable at routing layer' of the logotic grammar; 'routing layer' names a layer of the archive's own programming grammar, not a router of AI tasks; not admitted"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/codesota-aio-20261029/",
+   "reason": "the Capture Registry's findings, analysis, reading and per_note for the entity's capture (OBS-df84f10ecc75, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/papers-with-code-aio-20261029/",
+   "reason": "the registry's battery finding at 'papers with code' that names the entity (findings[3]: 'CodeSOTA presented as Papers with Code: no.'); a capture of the related entity, not this row's T",
+   "claims": [
+    "CAP-2-01"
+   ]
+  },
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/is-papers-with-code-still-active-aio-20261029/",
+   "reason": "the registry's record (d) of the cards at 'is papers with code still active', among them CodeSOTA's /papers-with-code page; a capture of the related entity, not this row's T",
+   "claims": [
+    "CAP-3-01"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/codesota/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'codesota'] and scripts/meta_aggregator/articles.py ARTICLES['codesota']; rendered aggregators/codesota/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/papers-with-code/ and https://www.machinemediation.org/aggregators/papers-with-code-revival/",
+   "reason": "the MMRS records of the two related entities, where they name CodeSOTA (articles, negative tags, disambiguation, battery, count, note)",
+   "claims": [
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26",
+    "MMRS-27",
+    "MMRS-28",
+    "MMRS-29",
+    "MMRS-30"
+   ]
+  }
+ ],
+ "not_admitted": [],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "no deposit admitted at D, R or O, so no hop was run (§3.4(3) runs from the deposits admitted at (2))"
+ },
+ "class_pass": "O-class: 'benchmark leaderboards and registries' (sourced from B2, B3, B4) matched no sentence; 'model routing for AI tasks' (sourced from B1) matched five sentences in five deposits, all rejected by reading (summary.json, O_class 5). The aggregator class was not run: the MMRS record places CodeSOTA in a census of aggregators, while the field refuses the class (F45, F66).",
+ "observations": "No deposit text names CodeSOTA, codesota.com, Fabryka AI, Kacper Wikiel or kwikiel (D 0, R 0 in 1,711 scanned texts). The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record of CodeSOTA, the MMRS records of Papers with Code and of its revival where they name CodeSOTA, and the Capture Registry's capture at the entity's name with two findings at the related entity's addresses.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 5,
+   "O_deposits": 5,
+   "H_candidates": 0
+  },
+  "deposits_candidate": 5,
+  "deposits_admitted": 0,
+  "hop_candidates": 0,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 11,
+   "mmrs": 30,
+   "deposit": 0
+  }
+ }
+}

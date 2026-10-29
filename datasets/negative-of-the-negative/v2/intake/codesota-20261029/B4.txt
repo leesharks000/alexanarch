@@ -1,0 +1,157 @@
+[meta description] Codesota is an independent registry of machine-learning benchmarks, maintained by Kacper Wikiel in Warsaw. What it is, what it explicitly is not, and why it exists after the Papers with Code shutdown.
+[meta article:published_time] 2025-12-10
+[meta article:modified_time] 2026-04-22
+About Codesota — an independent registry of ML benchmarks | CodeSOTA
+Codesota.By Fabryka AI
+RouterDocumentsSpeechCodingAll tasksBenchmarks
+Data APISign inTry the router →
+Menu
+Codesota · AboutA note from the editorIssue: April 22, 2026
+Editorial · About
+A registry, not a
+leaderboard.
+Codesota is an open, dated record of machine-learning benchmarks. It is maintained by one person, in public, with a clear separation between paid vendor work and public ranking integrity. This page is the short statement of what it is, what it is not, and who keeps it.
+Started 10 December 2025 after Meta retired Papers with Code. The goal is a calmer, stricter record — one that survives its authors.
+At a glance
+Editor
+Kacper Wikiel · Warsaw
+Launched
+10 December 2025
+Structure
+Self-directed · not venture-backed
+Source
+github.com/kwikiel/codesota.com
+Data
+Registry dump at /data/benchmarks.json
+Fig 0 · The masthead. Single editor, public repo, no investor behind the curtain.
+§ 01 · Intent
+Why the record matters.
+In July 2025 Meta retired Papers with Code. A seven-year archive of leaderboards, submissions and citations went offline without notice, and the field was briefly reminded that benchmark infrastructure, however load-bearing it felt, had been sitting on a single corporate hosting decision the whole time. Codesota is the attempt to rebuild that infrastructure in a way that cannot be retired by a press release.
+It is, plainly, a website and a JSON file. Each benchmark is a task-dataset-metric triple with a declared direction, a fixed split, a reproducibility package and a dated submission. Each row carries a verification tier — self-reported, community-reproduced, or Codesota-reproduced — and each score is stamped with the day it was run. The full standard is on the methodology page; this page is the editorial note behind it.
+The philosophical commitment is modest: a registry, not a leaderboard. A leaderboard is a view of “who is on top right now”; a registry is the record that makes that view legible. When a model regresses between checkpoints, the preceding score stays visible so the regression itself is visible. When a score turns out to be wrong, the correction is visible too. Nothing is silently deleted.
+The practical commitment is equally modest: no paid ranking position, no unverified score claims, no silent reshuffling for commercial partners. Vendors can pay for custom benchmarks, commissioned evaluations, profile pages, and publication support, but that work is disclosed inline where it appears. The public ranking method is not for sale.
+Codesota does not need to be large to be useful. It needs to be honest, dated, and available to anyone who wants the JSON.
+The trigger
+Meta shut Papers with Code in July 2025. Codesota launched on 10 December 2025 as an explicit successor attempt. See the shutdown record for the longer account.
+What is new
+Not the idea of a leaderboard. The commitment to date every score, preserve every correction, and ship the whole thing as JSON under the same URL.
+Who writes
+One editor, named below. Contributors who submit reproduction runs are credited on the row.
+§ 02 · Refusals
+What Codesota
+is not.
+Worth stating plainly, since the category of “ML benchmarks” now contains a great many things that look similar and behave differently.
+01
+Not a startup.
+Codesota is not a company raising a round. It has no investors, no board, no growth targets. The registry is the point, not the vehicle.
+02
+Not a press-release aggregator.
+A new model announcement does not automatically become a row. A score becomes a row when it has a reproduction path and a dated submission — until then it is, at most, a claim.
+03
+Not an editorial board.
+There is one editor. Submissions do not go through a review panel; they go through a reproduction run. The methodology page documents the procedure in full.
+04
+Not a leaderboard theatre.
+We do not re-rank scores to flatter a vendor, re-run an evaluation until the number improves, or quietly delete rows that age badly. The record is append-only in spirit.
+05
+Not for sale.
+There is no paid placement, no sponsored ranking, no promoted row. If paid work ever happens — consulting, custom benchmarking — it is labelled on the page it touches and does not reorder the public registry.
+06
+Not a replacement for the paper.
+The registry is a record of results; the primary literature is still the primary literature. Every row links back to its source, and the source is what you cite.
+§ 03 · Masthead
+Who runs this.
+Codesota is written and maintained by Kacper Wikiel, in Warsaw. The repository, the registry and the site are one codebase, public on GitHub.
+Day-to-day work is writing editorial pages, running reproductions on submitted checkpoints, and curating the task taxonomy. Contributors who submit reproduction runs or corrections are credited on the row rather than abstracted into a masthead count.
+The project is self-directed. It is not funded by a venture round or a grant. When paid work exists — consulting on benchmark design, commissioned evaluations, custom profiling of specific models — it is declared on the page it affects, and it does not change the ordering of the public registry. If that arrangement ever changes, the change will be announced on this page before any row is affected.
+Editorial judgement — which benchmarks to include, how to describe them, how to contextualise a score — is, and remains, the responsibility of the editor. Dissent is welcome in GitHub issues; the record is public either way.
+Reach
+Corrections, disputes, partnership questions: GitHub issues.
+Other writing
+The editor's personal site is kacperwikiel.com.
+Consulting
+Benchmark-design and custom evaluation work, when capacity allows, is discussed at /consulting. Listing placement is not part of the engagement.
+§ 04 · Contact
+How to write in.
+Four routes, in order of preference.
+01
+Open a GitHub issue.
+Corrections, new benchmark proposals, methodology disputes. The repo is github.com/kwikiel/codesota.com. Public, so the discussion is preserved.
+02
+Submit a result.
+If you have trained a model and have a reproducibility package ready, the submission form is the right door. We run it, publish the score, and date the row.
+03
+Partnership or consulting.
+Benchmark-design work, custom evaluations, commissioned profiling — see /consulting. Listing placement is not part of the arrangement.
+04
+Press / republication.
+Registry data is published under CC BY 4.0. Cite codesota.com with the snapshot date; the JSON at /data/benchmarks.json is the canonical form.
+Submit a result ↵Read the methodology
+Related · Further reading
+What to read next.
+All routes verified live · April 2026
+/methodology
+The methodology
+The long form of the standard: what counts as a benchmark, a result, a verified row.
+/papers-with-code
+Papers with Code · shutdown record
+Why Codesota exists. The seven-year archive retired by Meta in July 2025.
+/changelog
+Changelog
+Dated entries for every material change since 10 December 2025.
+/browse
+Browse benchmarks
+The live registry — each row with its date, tier and reproduction notes.
+Codesota.
+Choose AI tools with evidence
+Built in public from Warsaw
+open JSON · rankings stay earned
+Codesota.
+CodeSOTA helps developers choose AI tools for documents, speech, and coding, with practical comparisons and inspectable benchmark evidence.
+Built in public from Warsaw · open JSON · rankings stay earned
+Submit a score ↵Try /api/sota →
+Choose a tool
+OCR & documents
+Speech
+Coding & agents
+Decision workspace
+Choose by GPU
+Wider library
+Tasks
+Benchmarks
+Research Graph
+Models
+Recent Papers
+Leaderboards
+Benchmark Lineages
+Methodology
+Submit a score
+Developer / Data
+/api/sota
+API schema
+Open JSON registry
+Data snapshots
+GitHub
+Report issue ↗
+Activity Log
+Changelog
+Learn
+Guides
+Explainers
+Course & lessons
+AI Model News
+Recent paper scan
+Papers with Code Story
+Research Challenges
+Data Flywheel
+CodeSOTA / Fabryka
+Fabryka AI · Research laboratory ↗
+Brandbook & media assets ↗
+About
+Consulting
+Praktyki
+Discord
+Get updates
+Privacy
+© 2026 Codesota·Built by Kacper Wikiel in Warsaw
+PrivacyGitHubReport issue ↗

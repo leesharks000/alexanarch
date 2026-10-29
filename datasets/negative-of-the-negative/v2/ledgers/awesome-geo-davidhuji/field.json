@@ -1,0 +1,1277 @@
+{
+ "row": "awesome-geo-davidhuji",
+ "address": "awesome-geo",
+ "addresses": [
+  "awesome-geo"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the oEmbed title, or the card's title and snippet for a card whose page was not served; checked by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B10, ten cards, ten sources); 'own_page', the entity's own page the MMRS record cites (B11, the README of the repository whose page is card B1; github.com answered 403, so the README stands as the page's text); 'wikipedia', no article for the entity (W1, the requests recorded) and the class's article, Generative engine optimization (W2). Unreachable as a page: B1 (403; card title and snippet stand). B8 admitted by its title, identified through the channel page. The neighbouring GEO lists (B3, B4, B6, B7) and the geospatial homonyms (B2, B5, B8, B9, B10) are distinct entities, ledgered at their own openings.",
+ "lineage_note": "Lineages: what it is (B1, B11, B3); the contents (B11); its purpose and stated limits (B11); vendor entries (B11); tools in the list (B11, W2); GEO, what the class is (B11, B3, B4, B7, W2); origin of the term (B11, B4, W2); names of the practice (B3, W2); neighbour lists (B3, B4, B6, B7); the collision (W2); homonyms: Geoawesome (B2, B8, B9), the Awesome GEE Community Catalog (B5, B10). B1 and B11 are one source (card and its text).",
+ "pages": "saved verbatim in datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by an html.parser extractor; README Markdown saved as .html and copied as .txt; B1/B3/B4-github-page-403.html the proxy's 403 bodies; B8.json the oEmbed; W2.wiki raw wikitext; W1*.html and W_*.wiki Wikipedia's responses; T1-awesome-geo-aio-20261029.txt the registry's transcript string)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the own page the MMRS record cites (github.com/DavidHuji/Awesome-GEO, basis operator)",
+   "card": "GitHub — GitHub - DavidHuji/Awesome-GEO: Awesome list for research on GEO (Generative Engine Optimization) · GitHub",
+   "url": "https://github.com/DavidHuji/Awesome-GEO",
+   "kind": "code repository page (GitHub · DavidHuji/Awesome-GEO): the entity",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1-github-page-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B1-github-page-403.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B1.txt",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:34Z",
+    "http": 403,
+    "url": "https://github.com/DavidHuji/Awesome-GEO",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B1-github-page-403.html",
+    "raw_sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B1.txt"
+    ]
+   },
+   "card_title": "GitHub - DavidHuji/Awesome-GEO: Awesome list for research on GEO (Generative Engine Optimization) · GitHub",
+   "card_snippet": "Awesome‑Generative‑Engine‑Optimization Generative Engine Optimization (GEO), is a paradigm to aid content creators in improving their content visibility in gene...",
+   "card_note": null,
+   "unreachable": true,
+   "names_operator": "yes ('DavidHuji' in the card title; the 403 body names no one)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "github.com answered HTTP 403 to this session (the session proxy's message that GitHub access to the repository is not enabled), saved as B1-github-page-403.html and copied as B1.txt; the repository's README was fetched verbatim from raw.githubusercontent.com as B11 (own page). B1 and B11 are one source: B1 the surfaced instance, its card title and snippet its own text here; B11 its fetched text. The card's snippet is the README's line 9. The MMRS record's '123 stars' and 'Fourteen pull requests' are on the repository page this session could not read; not checked"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Geoawesome — Geoawesome",
+   "url": "https://geoawesome.com/",
+   "kind": "media site home page (Geoawesome): a geospatial homonym",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B2.html",
+     "sha256": "eff0a45dfb0757de6d35f7a0c66267fcc4737baa2f41cc6fe9a9c47831436058"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B2.txt",
+     "sha256": "52ad77dad9821e3292a08aacfd5f33b349e7e1af4b88cc4e0cb043f9fc5dc262"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:36Z",
+    "http": 200,
+    "url": "https://geoawesome.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B2.html",
+    "raw_sha256": "eff0a45dfb0757de6d35f7a0c66267fcc4737baa2f41cc6fe9a9c47831436058",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B2.txt"
+    ]
+   },
+   "card_title": "Geoawesome",
+   "card_snippet": "The latest * #Contributing Writers #Space The Living Library: Where Historical and Current Satellite Imagery Comes Alive Sponsored Article 07.22.2026 AWESOME 6 ...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by title and site (the card's title is the site's name); the snippet's 'The Living Library … Sponsored Article 07.22.2026' is the home page's article list"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (named in the body as amplifying-ai/awesome-generative-engine-optimization)",
+   "card": "GitHub — amplifying-ai/awesome",
+   "url": "https://raw.githubusercontent.com/amplifying-ai/awesome-generative-engine-optimization/main/readme.md",
+   "kind": "README of a neighbouring GEO awesome list (amplifying-ai/awesome-generative-engine-optimization): a distinct entity",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B3.html",
+     "sha256": "6b994d0f0c9bd0f1a59b8d6301f63c8d2a7e00f7a87ecd101b3ec767421edc6d"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B3.txt",
+     "sha256": "6b994d0f0c9bd0f1a59b8d6301f63c8d2a7e00f7a87ecd101b3ec767421edc6d"
+    },
+    "B3-github-page-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B3-github-page-403.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:41Z",
+    "http": 200,
+    "url": "https://raw.githubusercontent.com/amplifying-ai/awesome-generative-engine-optimization/main/readme.md",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B3.html",
+    "raw_sha256": "6b994d0f0c9bd0f1a59b8d6301f63c8d2a7e00f7a87ecd101b3ec767421edc6d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B3.txt"
+    ]
+   },
+   "card_title": "amplifying-ai/awesome",
+   "card_snippet": "Awesome Generative Engine Optimization (GEO) * Also known as: AI Search Optimization (AISO), Answer Engine Optimization (AEO), Large Language Model Optimization...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "yes ('Awesome-GEO by DavidHuji' under Related Resources / Other Awesome Lists)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "github.com answered HTTP 403 (B3-github-page-403.html); the repository name from the Overview's body and geo.deeflect.com/repos/awesome-generative-engine-optimization/ (which links github.com/amplifying-ai/awesome-generative-engine-optimization); README.md answered 404 on main and master, readme.md 200 on main; the card snippet is the README's opening ('Awesome Generative Engine Optimization (GEO) * Also known as: …'). The README is the repository page's text; fetched raw because the page is not served to this session"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (not named in the body)",
+   "card": "GitHub — henu-wang/awesome",
+   "url": "https://raw.githubusercontent.com/henu-wang/awesome-geo/main/README.md",
+   "kind": "README of a neighbouring GEO awesome list (henu-wang/awesome-geo): a distinct entity",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B4.html",
+     "sha256": "046d3f484bcffb175ee2e3f908ecc2b92eae30972fda10a38c56770ad83b2ee1"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B4.txt",
+     "sha256": "046d3f484bcffb175ee2e3f908ecc2b92eae30972fda10a38c56770ad83b2ee1"
+    },
+    "B4-github-page-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B4-github-page-403.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:41Z",
+    "http": 200,
+    "url": "https://raw.githubusercontent.com/henu-wang/awesome-geo/main/README.md",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B4.html",
+    "raw_sha256": "046d3f484bcffb175ee2e3f908ecc2b92eae30972fda10a38c56770ad83b2ee1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B4.txt"
+    ]
+   },
+   "card_title": "henu-wang/awesome",
+   "card_snippet": "Awesome GEO (Generative Engine Optimization) A curated list of resources, tools, research, and guides for Generative Engine Optimization (GEO) — the practice of...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card title reads 'henu-wang/awesome' (truncated); henu-wang/awesome answered 404 for README.md on main and master, henu-wang/awesome-geo 200; the README's opening matches the card snippet word for word ('Awesome GEO (Generative Engine Optimization) A curated list of resources, tools, research, and guides for Generative Engine Optimization (GEO) — the practice of…'); github.com/henu-wang/awesome-geo answered 403 (B4-github-page-403.html)"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Awesome GEE Community Catalog — Awesome GEE Community Catalog",
+   "url": "https://gee-community-catalog.org/",
+   "kind": "catalogue home page (Awesome GEE Community Catalog, gee-community-catalog.org): a geospatial homonym",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B5.html",
+     "sha256": "235b02b5874fa7c2f3e3258075ce3120863b30803912bcf1a69ce11198db3682"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B5.txt",
+     "sha256": "e72d5c80fa2d4f73d8970063babbf138fe7c71058a69f4145e95b0e2e7b8409f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:37Z",
+    "http": 200,
+    "url": "https://gee-community-catalog.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B5.html",
+    "raw_sha256": "235b02b5874fa7c2f3e3258075ce3120863b30803912bcf1a69ce11198db3682",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B5.txt"
+    ]
+   },
+   "card_title": "Awesome GEE Community Catalog",
+   "card_snippet": "A community data commons Layer upon layer, contributed by the people who needed it first. 587 TB of open geospatial data, analysis ready inside Google Earth Eng...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by title and site. The page states 585 TB where the card snippet states 587 TB (a figure that moved between the card and the fetch)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (named in the body as aGEO Platforms & Tools)",
+   "card": "geo.deeflect.com — Awesome GEO — Free GEO Platforms & Tools for AI Visibility",
+   "url": "https://geo.deeflect.com/",
+   "kind": "platform home page (aGEO, geo.deeflect.com): a distinct GEO list and tool suite",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B6.html",
+     "sha256": "168f591c704c4b10c5cc3341684067ca27e88b68f0caf2c7af71a6c084c1977d"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B6.txt",
+     "sha256": "d28f3d1b73dcc51c17a87756980e3b281f5a701555f9065919514e466ceb1f9a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:37Z",
+    "http": 200,
+    "url": "https://geo.deeflect.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B6.html",
+    "raw_sha256": "168f591c704c4b10c5cc3341684067ca27e88b68f0caf2c7af71a6c084c1977d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B6.txt"
+    ]
+   },
+   "card_title": "Awesome GEO — Free GEO Platforms & Tools for AI Visibility",
+   "card_snippet": "Awesome GEO — Free GEO Platforms & Tools for AI Visibility aGEO Platforms Repos Tools About Awesome GEO SEO for the AI era. Free platforms and tools to get your...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by title and site; the saved text is long (a platforms table), ledgered at its opening"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "geo.deeflect.com — About Awesome GEO — What Is Generative Engine Optimization? | aGEO",
+   "url": "https://geo.deeflect.com/about",
+   "kind": "platform about page (aGEO, geo.deeflect.com/about)",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B7.html",
+     "sha256": "2f4fefd0041fa7eb42913479571a8ce5f410e9abfc8bc1fa5602542da64bf852"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B7.txt",
+     "sha256": "70212a8caa49fbe1fe1c8d6da8682e92ae4de0353bcc8f348a2732e746e82670"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:37Z",
+    "http": 200,
+    "url": "https://geo.deeflect.com/about",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B7.html",
+    "raw_sha256": "2f4fefd0041fa7eb42913479571a8ce5f410e9abfc8bc1fa5602542da64bf852",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B7.txt"
+    ]
+   },
+   "card_title": "About Awesome GEO — What Is Generative Engine Optimization? | aGEO",
+   "card_snippet": "What is GEO, and why should you care? * The shift is already happening More and more people are skipping Google and going straight to AI for recommendations. \"W...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by title and site"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8 (video, 1:50; card title \"YouTube\", no snippet)",
+   "card": "YouTube·Geoawesome — YouTube",
+   "url": "https://www.youtube.com/watch?v=LjKfzfomD2o",
+   "kind": "video (YouTube · Geoawesome), admitted through its title",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B8.json",
+     "sha256": "eae8c29a808b431c7a9a42440afe706f275c35b2082f0dd1672851151ba5111a"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B8.txt",
+     "sha256": "019ee4f8c05956931ab334a52220f5d97923a03b18ea6b0e47a1ad350a564e79"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:06Z",
+    "http": 200,
+    "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=LjKfzfomD2o&format=json",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B8.json",
+    "raw_sha256": "eae8c29a808b431c7a9a42440afe706f275c35b2082f0dd1672851151ba5111a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B8.txt"
+    ]
+   },
+   "card_title": "YouTube",
+   "card_snippet": null,
+   "card_note": "video, 1:50",
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card gives the channel (Geoawesome), the duration (1:50) and no title or snippet. The channel page (B9) lists one video of '1 minute, 50 seconds', 'Reintroducing Ourselves as Geoawesome' (videoId LjKfzfomD2o); its oEmbed title is saved as B8.json/B8.txt. The identification rests on channel and duration and is the extractor's, not the card's"
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "YouTube·Geoawesome — Geoawesome - YouTube",
+   "url": "https://www.youtube.com/@geoawesome.digital",
+   "kind": "YouTube channel page (Geoawesome, @geoawesome.digital)",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B9.html",
+     "sha256": "36a32a3e70d3392275750ff07fd83b69f069ffd4558fde52bdbb825eb02b5ca3"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B9.txt",
+     "sha256": "b55138cc0118819eff7880a573d275988f613dc31cb2df7c1ef65ef9da27b904"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:38Z",
+    "http": 200,
+    "url": "https://www.youtube.com/@geoawesome.digital",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B9.html",
+    "raw_sha256": "36a32a3e70d3392275750ff07fd83b69f069ffd4558fde52bdbb825eb02b5ca3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B9.txt"
+    ]
+   },
+   "card_title": "Geoawesome - YouTube",
+   "card_snippet": "Geoawesome. @geoawesome.digital. 21.1K subscribers•387 videos. The world's largest geospatial community is united by its belief in the power of location technol...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the page's visible text is a script shell; its og:description (the channel description) was extracted from the saved HTML and appended to B9.txt under '[meta og:description]'; the snippet's subscriber and video counts are quoted from the card"
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 10 (the body links developers.google.com/earth-engine/datasets/community/sat-io directly)",
+   "card": "Google for Developers — Awesome GEE Community Catalog | Earth Engine Data Catalog | Google for Developers",
+   "url": "https://developers.google.com/earth-engine/datasets/community/sat-io",
+   "kind": "Earth Engine Data Catalog page (Google for Developers): the GEE community catalog's page",
+   "surfaced_by_T": [
+    {
+     "slug": "awesome-geo-aio-20261029",
+     "card": 10
+    }
+   ],
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B10.html",
+     "sha256": "d9a5ee715ba3926fbd41985cbb63f45455be0dbb6359ff6ddcae92c5bcaf8692"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B10.txt",
+     "sha256": "06637024470675b911b11fc0a2caf1b0392659fe75282a3baea93792ffb12999"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:39Z",
+    "http": 200,
+    "url": "https://developers.google.com/earth-engine/datasets/community/sat-io",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B10.html",
+    "raw_sha256": "d9a5ee715ba3926fbd41985cbb63f45455be0dbb6359ff6ddcae92c5bcaf8692",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B10.txt"
+    ]
+   },
+   "card_title": "Awesome GEE Community Catalog | Earth Engine Data Catalog | Google for Developers",
+   "card_snippet": "Overview: Awesome GEE Community Catalog is an unfunded open-source grassroots project collecting community-sourced geospatial datasets alongside the Google Eart...",
+   "card_note": null,
+   "unreachable": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL given in the transcript body (the one plain link in it)"
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "entity": "awesome-geo-davidhuji",
+   "url": "https://raw.githubusercontent.com/DavidHuji/Awesome-GEO/main/README.md",
+   "kind": "README of the entity's repository (github.com/DavidHuji/Awesome-GEO)",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B11.html",
+     "sha256": "7e6210d59db62661108c3ec98f17d854ccf61637b53ffc5523dd2da340023f08"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B11.txt",
+     "sha256": "7e6210d59db62661108c3ec98f17d854ccf61637b53ffc5523dd2da340023f08"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:35Z",
+    "http": 200,
+    "url": "https://raw.githubusercontent.com/DavidHuji/Awesome-GEO/main/README.md",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B11.html",
+    "raw_sha256": "7e6210d59db62661108c3ec98f17d854ccf61637b53ffc5523dd2da340023f08",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/B11.txt"
+    ]
+   },
+   "surfaced_by_T": false,
+   "surfaced_note": "not itself a card; the repository it is the README of is card B1",
+   "admitted": "per the operator's ruling of 2026-10-29 (the /non rows are built 'as against their wikipedia articles if they exist, their own pages, etc.'): an own page the MMRS record cites, admitted beside the cards; its repository is card B1, so it was surfaced by T as a card and is carried here as that card's text",
+   "names_operator": "no (the README names no maintainer; the handle is in the URL and the card title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the MMRS record's single source (github.com/DavidHuji/Awesome-GEO, read 2026-10-28, for all fields, basis operator); github.com answered 403 (B1), so the README was fetched raw; README.md on master answered the same bytes. The .html and .txt are the same Markdown. Entries counted by the extractor: 2026, 5; 2025, 9; 2024, 8; Open-Source Resources, 5; 27 in all, the MMRS record's 'about 27'. The README carries no licence statement and no date; its banner image is named 'Screen Shot 2024-11-18'"
+  },
+  {
+   "id": "W2",
+   "origin": "wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+   "kind": "Wikipedia article for the class (Generative engine optimization); the entity has none",
+   "files": {
+    "W2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.wiki",
+     "sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318"
+    },
+    "W2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.html",
+     "sha256": "f7b9818401103484bcbff0b85f0586abe6ee6514f816c939883ae09431a809fc"
+    },
+    "W2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.txt",
+     "sha256": "dbeb08a0c511de4e06e168fbba0d325c55bfcf6cac5e36233563725fdcf6fd88"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:07Z (raw) / 05:09:24Z (rendered)",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Generative_engine_optimization&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.wiki",
+    "raw_sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.txt"
+    ]
+   },
+   "surfaced_by_T": false,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, MMRS, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "admitted": "the class's article, checked on the brief's instruction ('Wikipedia: check \"Generative engine optimization\"; record what exists'); the entity has no article (W1). Not surfaced by T",
+   "note": "quotes from the rendered text W2.txt (reference markers [1], [2] kept as rendered). The article does not name the list, DavidHuji, awesome lists, or any card's source; its Terminology section reports Profound's argument that 'GEO' can be confused with geography, the collision the Overview's split resolves"
+  }
+ ],
+ "wikipedia": {
+  "id": "W1",
+  "origin": "wikipedia",
+  "result": "no article for the entity; an article for the class",
+  "checked": "2026-10-29 05:09–05:10 UTC",
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Awesome-GEO&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W_Awesome-GEO.wiki",
+    "sha256": "74679f1bff8a03d649b7bc78dc190d8b09b67166f84cdf86579e94a5e6cfcb34"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Awesome_GEO&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W_Awesome_GEO.wiki",
+    "sha256": "3ac2dbd15255ebb4115c155e12fa7bdf8ad8c23b873819c05912556078c6dfc4"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Awesome-GEO",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W1.html",
+    "sha256": "d9b5aa97e1be9717a01eb04d1a243ba2dcf90cb166baf28637d6c386447b58fc",
+    "says": "Wikipedia does not have an article with this exact name."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=%22Awesome-GEO%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W1-search.html",
+    "sha256": "ca13555ec6c6a8c33b047d21de1b89395e9ddf1798390d5a9060697349041059",
+    "says": "There were no results matching the query."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Generative_engine_optimization&action=raw",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.wiki",
+    "sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Generative_Engine_Optimization&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W_Generative_Engine_Optimization.wiki",
+    "sha256": "dcc2e46aca2f4a3a4685c9d54caa4a0b48dedcffd058226a6bbe1946e0ffadf1",
+    "note": "the capitalised title is not a redirect"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/awesome-geo-davidhuji-20261029/W2.html",
+    "sha256": "f7b9818401103484bcbff0b85f0586abe6ee6514f816c939883ae09431a809fc"
+   }
+  ],
+  "redirect": "none (Awesome-GEO and Awesome_GEO answer 404; no redirect page)",
+  "note": "English Wikipedia has no article, redirect or mention for the entity on 2026-10-29: the raw-wikitext requests for 'Awesome-GEO' and 'Awesome_GEO' answer 404, the rendered page answers 404 with 'Wikipedia does not have an article with this exact name.', and a full-text search for the quoted name returns no results. The class has an article: 'Generative engine optimization' (W2, raw wikitext and rendered page saved), which names neither the list nor any awesome list, DavidHuji, or any of the card rail's sources; it is ledgered (F41–F47) as the class's encyclopedia account, on the brief's instruction to check it. 'Generative Engine Optimization' (capitalised) is not a redirect (404). W2 was not surfaced by T."
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "DavidHuji/Awesome-GEO: Awesome list for research on GEO (Generative Engine Optimization)",
+   "claim": "the repository's description on its card: an awesome list for research on GEO",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an awesome list for research on GEO",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (Capture Registry cite_list[0]); github.com answered 403, no page text"
+  },
+  "F2": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "line 6",
+   "quote": "Awesome list for research on GEO (Generative Engine Optimization).",
+   "claim": "the list defined by its own README: an awesome list for research on GEO",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an awesome list for research on GEO",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "line 9",
+   "quote": "Generative Engine Optimization (GEO), is a paradigm to aid content creators in improving their content visibility in generative engine responses through flexible optimization frameworks for optimizing and defining visibility metrics.",
+   "claim": "GEO as the list defines it: a paradigm aiding content creators to improve visibility in generative engine responses, through optimization frameworks and visibility metrics",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO: what the class is",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "line 11",
+   "quote": "This is a niche area, which is increasingly receiving attention from the community.",
+   "claim": "the list's account of its field: a niche area receiving increasing attention",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "its purpose and its stated limits",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "line 11",
+   "quote": "This awesome‑listing is an attempt to bring together works in this space. This list is not complete and looking for your PRs to improve it.",
+   "claim": "its purpose and its stated limit: an attempt to bring the works together, not complete, open to pull requests",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "its purpose and its stated limits",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "section headings",
+   "quote": "## 2026 … ## 2025 … ## 2024 … ## Open-Source Resources",
+   "claim": "its structure: sections by year (2026, 2025, 2024) and open-source resources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the contents: entries by year and open-source resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## 2026, entries 1–2",
+   "quote": "IF-GEO: Conflict-Aware Instruction Fusion for Multi-Query Generative Engine Optimization … Multimodal Generative Engine Optimization: Rank Manipulation for Vision–Language Model Rankers",
+   "claim": "its newest entries: IF-GEO and multimodal rank manipulation for vision–language model rankers (2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the contents: entries by year and open-source resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## 2024, entry 2",
+   "quote": "GEO: Generative Engine Optimization [[Paper]](https://arxiv.org/pdf/2311.09735)",
+   "claim": "the founding paper listed, under 2024 (arXiv 2311.09735)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin of the term: the 2023 paper",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## 2025 entries 2, 4, 8; ## 2024 entry 5",
+   "quote": "Dynamics Of Adversarial Attacks On Large Language Model‑Based Search Engines … PoisonArena: Uncovering Competing Poisoning Attacks in Retrieval‑Augmented Generation … StealthRank: LLM Ranking Manipulation via Stealthy Prompt Optimization … Adversarial Search Engine Optimization for Large Language Models",
+   "claim": "the list carries attack, poisoning and ranking-manipulation research among its entries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the contents: entries by year and open-source resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## 2025, entry 1",
+   "quote": "C-SEO Bench: Does Conversational SEO Work?, NeurIPS D&B 2025, [[Paper]](https://arxiv.org/abs/2506.11097) [[Code]](https://github.com/parameterlab/c-seo-bench) [[Dataset]](https://huggingface.co/datasets/parameterlab/c-seo-bench)",
+   "claim": "an entry linked to paper, code and dataset: C-SEO Bench (NeurIPS D&B 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the contents: entries by year and open-source resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## Open-Source Resources, entries 1 and 4",
+   "quote": "— Built by [Corank](https://corank.ai/). … — Built by [Assay](https://ai-fact-check-psi.vercel.app/).",
+   "claim": "vendor credits in the list: two open-source entries credited to the companies that built them (Corank, Assay)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "vendor entries in the list",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## 2026, entries 4–5",
+   "quote": "(Rankfor.AI, 2026) … Empirical study showing 320% citation rate improvement when consistent information appears across 5-10 independent high-authority sources",
+   "claim": "a vendor-credited paper (Rankfor.AI) and a resource entry carrying a performance figure (320% citation-rate improvement) in the list's own text",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "vendor entries in the list",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## Open-Source Resources, entry 4",
+   "quote": "reports how often the engine agreed with itself, so a claim about what an AI \"says\" can be separated from run-to-run variance",
+   "claim": "a listed tool that measures a generative engine's run-to-run variance",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "tools in the list: measuring the composition",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "## Open-Source Resources, entry 1",
+   "quote": "client-side validator for GEO/AEO observation records that checks evidence completeness, citation-field consistency, timestamps, and duplicate run keys",
+   "claim": "a listed tool that validates GEO/AEO observation records (evidence completeness, citation fields, timestamps, run keys)",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "tools in the list: measuring the composition",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 7e6210d59db62661…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page title",
+   "quote": "Geoawesome - Blog & Geospatial Community Platform",
+   "claim": "Geoawesome's own title: a blog and geospatial community platform",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52ad77dad9821e32…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "home page, article list",
+   "quote": "The Living Library: Where Historical and Current Satellite Imagery Comes Alive … Sponsored Article … 07.22.2026",
+   "claim": "the card's snippet: a sponsored satellite-imagery article of 22 July 2026 on Geoawesome's home page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52ad77dad9821e32…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "opening (blockquote)",
+   "quote": "A curated list of resources for optimizing content visibility in AI-powered search engines (ChatGPT, Perplexity, Google AI Overviews, Claude, etc.)",
+   "claim": "the amplifying-ai list defined by its README: resources for content visibility in AI-powered search engines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "opening, Also known as",
+   "quote": "**Also known as**: AI Search Optimization (AISO), Answer Engine Optimization (AEO), Large Language Model Optimization (LLMO), Generative AI Optimization, AI SEO, LLM SEO",
+   "claim": "the practice's other names, by the amplifying-ai list: AISO, AEO, LLMO, Generative AI Optimization, AI SEO, LLM SEO",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "names of the practice",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Related Resources / Other Awesome Lists, item 1",
+   "quote": "[Awesome-GEO by DavidHuji](https://github.com/DavidHuji/Awesome-GEO) - Research-focused GEO paper collection.",
+   "claim": "a neighbouring list names the entity and its maintainer and places it: a research-focused GEO paper collection",
+   "modality": "interpretation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an awesome list for research on GEO",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Footnotes, What is GEO ¶1",
+   "quote": "Generative Engine Optimization (GEO) is the practice of optimizing content to improve visibility and citations in AI-powered search engines.",
+   "claim": "GEO as the amplifying-ai list defines it: optimizing content for visibility and citations in AI-powered search engines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO: what the class is",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Footnotes, key terms",
+   "quote": "**Entity Optimization** - Strengthening brand presence as a recognized entity across the web. … **E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)** - Quality signals that influence AI recommendations.",
+   "claim": "two of the amplifying-ai list's key terms: entity optimization and E-E-A-T",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "opening, licence badge",
+   "quote": "License: CC0-1.0",
+   "claim": "the amplifying-ai list's licence: CC0 1.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6b994d0f0c9bd0f1…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "opening (blockquote)",
+   "quote": "A curated list of resources, tools, research, and guides for **Generative Engine Optimization (GEO)**",
+   "claim": "the henu-wang list defined by its README: resources, tools, research and guides for GEO",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 046d3f484bcffb17…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "opening (blockquote)",
+   "quote": "the practice of optimizing content to be discovered, cited, and recommended by AI-powered search engines like ChatGPT, Perplexity, Google AI Overviews, and Gemini",
+   "claim": "GEO as the henu-wang list defines it: optimizing content to be discovered, cited and recommended by AI-powered search engines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO: what the class is",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 046d3f484bcffb17…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Research Papers, item 1",
+   "quote": "(2023) — The foundational research paper from IIT Delhi, Princeton, and Georgia Tech that introduced the term \"Generative Engine Optimization\" and tested optimization strategies.",
+   "claim": "the term's origin by the henu-wang list: the 2023 paper from IIT Delhi, Princeton and Georgia Tech",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin of the term: the 2023 paper",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 046d3f484bcffb17…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "License",
+   "quote": "This list is released under CC0.",
+   "claim": "the henu-wang list's licence: CC0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 046d3f484bcffb17…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "hero",
+   "quote": "A community data commons … 585 TB of open geospatial data, analysis ready inside Google Earth Engine.",
+   "claim": "the Awesome GEE Community Catalog by its home page: a community data commons of 585 TB of geospatial data inside Google Earth Engine",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: the Awesome GEE Community Catalog",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e72d5c80fa2d4f73…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "hero",
+   "quote": "Grassroots & unfunded since 2020",
+   "claim": "the catalog's self-description: grassroots and unfunded since 2020",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the Awesome GEE Community Catalog",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e72d5c80fa2d4f73…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "hero",
+   "quote": "SEO for the AI era. Free platforms and tools to get your brand discovered by ChatGPT, Perplexity, Gemini, and other AI engines.",
+   "claim": "aGEO by its home page: SEO for the AI era, free platforms and tools for brand discovery by AI engines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 d28f3d1b73dcc51c…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "tool cards",
+   "quote": "Full Visibility Audit … Schema Generator … llms.txt Builder",
+   "claim": "aGEO's tools: a visibility audit, a schema generator, an llms.txt builder",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 d28f3d1b73dcc51c…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Built by Dmitry Kargaev",
+   "claim": "aGEO's builder: Dmitry Kargaev",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 d28f3d1b73dcc51c…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "What is GEO ¶1",
+   "quote": "You know how SEO helps people find you on Google? GEO does the same thing, but for AI.",
+   "claim": "GEO as aGEO's about page defines it: what SEO does for Google, done for AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO: what the class is",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 70212a8caa49fbe1…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "So what is this project? ¶1",
+   "quote": "Awesome GEO is a free, open-source collection of platforms where you can build your AI presence.",
+   "claim": "aGEO's 'Awesome GEO' by its about page: a free, open-source collection of platforms for building AI presence",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 70212a8caa49fbe1…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "How we score things ¶1",
+   "quote": "Each platform gets evaluated on domain authority, whether links are dofollow, how AI crawlers treat the site, and an overall GEO score.",
+   "claim": "aGEO's scoring: domain authority, dofollow links, AI crawler treatment, a GEO score",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour lists of GEO resources",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 70212a8caa49fbe1…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "oEmbed title (the card: YouTube · Geoawesome, 1:50, no title)",
+   "quote": "Reintroducing Ourselves as Geoawesome",
+   "claim": "the video card, admitted by title: Geoawesome's 1:50 video 'Reintroducing Ourselves as Geoawesome' (identified by channel and duration)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved oEmbed title B8.txt (sha256 019ee4f8c0595693…)"
+  },
+  "F36": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "Geoawesome. @geoawesome.digital. 21.1K subscribers•387 videos.",
+   "claim": "the Geoawesome channel on the card: 21.1K subscribers, 387 videos",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet (Capture Registry cite_list[8])"
+  },
+  "F37": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "channel description (og:description) ¶1",
+   "quote": "The world’s largest geospatial community is united by its belief in the power of location technology to transform the world for the better.",
+   "claim": "Geoawesome by its channel: the world's largest geospatial community",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 b55138cc0118819e…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "channel description (og:description) ¶2",
+   "quote": "Since its humble beginnings on April 20th, 2011, Geoawesome, previously Geoawesomeness, has striven to be an open and inclusive platform for geospatial experts and enthusiasts",
+   "claim": "Geoawesome's genealogy: begun 20 April 2011, formerly Geoawesomeness",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: Geoawesome",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 b55138cc0118819e…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "page body ¶1",
+   "quote": "The Awesome GEE Community Catalog is an unfunded open source grassroots project with a mission to help collect community sourced and community generated geospatial datasets.",
+   "claim": "the catalog on Google's Earth Engine Data Catalog: an unfunded open-source grassroots project collecting community geospatial datasets",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: the Awesome GEE Community Catalog",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 06637024470675b9…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "page body ¶2",
+   "quote": "This catalog lives and serves alongside the Google Earth Engine data catalog.",
+   "claim": "the catalog serves alongside the Google Earth Engine data catalog",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the Awesome GEE Community Catalog",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 06637024470675b9…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "lead ¶1 s1",
+   "quote": "Generative engine optimization (GEO), also known as answer engine optimization (AEO)[1] and artificial intelligence optimization (AIO),[2] is the practice of improving visibility in responses generated by generative artificial intelligence (AI) systems.",
+   "claim": "the class in the encyclopedia: GEO (also AEO, AIO), the practice of improving visibility in responses generated by generative AI systems",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "GEO: what the class is",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶1 s1",
+   "quote": "The term \"generative engine optimization\" was introduced in a 2023 paper by Pranjal Aggarwal and co-authors, later presented at the KDD 2024 conference.",
+   "claim": "the term's origin in the encyclopedia: a 2023 paper by Pranjal Aggarwal and co-authors, presented at KDD 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin of the term: the 2023 paper",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶1 s2",
+   "quote": "Several overlapping terms describe related practices, and usage varies across practitioners, vendors, and publications, with no consensus definition.",
+   "claim": "no consensus definition: overlapping terms, usage varying across practitioners, vendors and publications",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "names of the practice",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶2 s1",
+   "quote": "optimizing for generative AI search is optimizing for the search experience, and thus still SEO.",
+   "claim": "Google's 2026 guide, as the encyclopedia reports it: optimizing for generative AI search is still SEO",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "names of the practice",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶3 s2",
+   "quote": "Profound describes AEO and GEO as the same practice but argues that \"GEO\" can be confused with geography.",
+   "claim": "the collision in the encyclopedia: Profound argues 'GEO' can be confused with geography",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collision: GEO and geo",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "Tools ¶2",
+   "quote": "While the efficacy of third-party tools is debated within the overall GEO and SEO industries,",
+   "claim": "the efficacy of third-party GEO tools is debated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tools in the list: measuring the composition",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "W2",
+   "origin": "wikipedia",
+   "locus": "lead ¶2",
+   "quote": "This concept first appeared in response to generative AI technologies being integrated into mainstream search and information retrieval systems.",
+   "claim": "the concept's occasion: generative AI integrated into mainstream search and retrieval",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin of the term: the 2023 paper",
+   "date": "2026-10-29 (article as fetched; revision of the day)",
+   "quote_ok": true,
+   "checked_against": "saved text W2.txt (sha256 dbeb08a0c511de4e…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "GitHub — GitHub - DavidHuji/Awesome-GEO: Awesome list for research on GEO (Generative Engine Optimization) · GitHub",
+  "B2": "Geoawesome — Geoawesome",
+  "B3": "GitHub — amplifying-ai/awesome",
+  "B4": "GitHub — henu-wang/awesome",
+  "B5": "Awesome GEE Community Catalog — Awesome GEE Community Catalog",
+  "B6": "geo.deeflect.com — Awesome GEO — Free GEO Platforms & Tools for AI Visibility",
+  "B7": "geo.deeflect.com — About Awesome GEO — What Is Generative Engine Optimization? | aGEO",
+  "B8": "YouTube·Geoawesome — YouTube",
+  "B9": "YouTube·Geoawesome — Geoawesome - YouTube",
+  "B10": "Google for Developers — Awesome GEE Community Catalog | Earth Engine Data Catalog | Google for Developers",
+  "B11": "GitHub — DavidHuji/Awesome-GEO README (raw)",
+  "W2": "Wikipedia — Generative engine optimization (the class; no article for the entity)"
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "row": "ai-hallucination-cases",
+ "address": "ai hallucination cases database",
+ "entity": "AI Hallucination Cases (the AI Hallucination Cases Database, damiencharlotin.com/hallucinations), Damien Charlotin's database of legal decisions in which a court or tribunal finds or implies that a party relied on hallucinated content: started April 2025, 2,231 cases as of 28 October 2026, CC BY 4.0, CSV export",
+ "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+ "aliases": [
+  {
+   "pattern": "\\bAI Hallucination Cases\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bHallucinations? Cases? Database\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bCharlotin\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bdamiencharlotin\\.com\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bPelAIkan\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "databases and trackers of AI hallucination cases",
+   "pattern": "\\b(AI[- ])?hallucination[s]? (cases?|case database|trackers?|databases?)\\b",
+   "flags": "i",
+   "basis": "field: B9 (Wikipedia, 'Hallucination (artificial intelligence)', In legal filings / United States): 'A database of incidents, \"AI Hallucination Cases\", was established in April 2025'; B3 (HAQQ, 'AI Hallucination Cases: The 2,202-Case Sanctions Tracker'): 'Damien Charlotin's AI Hallucination Cases database lists 2,202 court and tribunal decisions'; B2 (Natural and Artificial Law, 'AI Hallucination Cases Tracker'): 'International AI hallucination cases tracker'"
+  },
+  {
+   "term": "fabricated or fake citations in court filings and decisions",
+   "pattern": "\\b(fake|fabricated|fictitious|hallucinated|nonexistent|non-existent|invented) (legal )?(citations?|cites|case law|cases|authorities|precedents?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (damiencharlotin.com/hallucinations, opening): 'in cases where generative AI produced hallucinated content – typically fake citations, but also other types of AI-generated arguments'; B3 (HAQQ, lede): 'court and tribunal decisions involving AI-fabricated citations or content'; B2 (Natural and Artificial Law): 'judicial comments about fabricated/false citations'"
+  }
+ ],
+ "classes_note": "Two classes, sourced from the field by locus: the database as one of the databases and trackers of AI hallucination cases (B9, B3, B2), and its object, fabricated or fake citations in court filings as courts decide on them (B1, B3, B2). No field source places the database in a class of the archive's own (aggregators of machine-mediated reception work, and 'the census's most exact record of citation fidelity', are the MMRS record's, an archive source, ledgered as MMRS claims and not run as an O-class here, since the brief confines classes to what B sources). The aliases are the database's name, its title form 'Hallucination(s) Case(s) Database' (as its FAQ and page title write it), its maker's surname (which also finds the maker without the database; such candidates are read for a claim on the database), its domain and the maker's reference checker built on it (PelAIkan, B1). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the database, or applies an archive category to the class; a bare mention, a link list, or a generic use of 'fake citation' about another object (a composition's invented sources outside a court, a bibliography) is not a claim on this class unless the sentence concerns citations in legal filings or decisions.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'ai hallucination cases database' (ai-hallucination-cases-database-aio-20261029, OBS-4f95ab35a3ac, ADDR-faa512a27b95), Google AI Overview (expanded), signed out, incognito."
+}

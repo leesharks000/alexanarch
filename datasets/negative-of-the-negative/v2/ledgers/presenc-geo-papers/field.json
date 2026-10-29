@@ -1,0 +1,1209 @@
+{
+ "row": "presenc-geo-papers",
+ "address": "presenc ai geo academic papers",
+ "addresses": [
+  "presenc ai geo academic papers"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or description, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or, for the unreachable card, its title and snippet; 54/54 verified by script; third-party pages quoted in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), kept apart by origin: 'card', every card on T's rail (B1–B5; B2 is also the entity's own page, the one source the MMRS record cites, carried once as card; B1 and B3 are sibling pages on the vendor's site, distinct entities); 'own_page', none beyond B2 (the record cites one page, and T surfaced it); 'wikipedia', no article on the entity (W1) and the class article on generative engine optimization (B6), not surfaced by T; 'body', the Princeton GEO paper that T's body names (B7, arXiv abstract page), §3.1(a)'s 'every source its body names' (an origin the brief's three do not list, marked so). Unreachable: B5 (ResearchGate, HTTP 403 three times); its snippet stands as its text.",
+ "lineage_note": "Lineages: the sibling list: 10 Must-Read Studies (F1, F2, F3, F4, F5, F6); what it is: a vendor's working bibliography of GEO research (F7, F9, F10); byline, date and count (F8, F33); the class: generative engine optimization (F11, F45, F46, F47, F48, F49, F50); what it holds: sources, themes, items (F12, F13, F14, F19, F31); the foundation: the Princeton GEO paper (F15, F16, F18, F32, F39, F40, F41, F51, F52, F53, F54); the literature read toward the product (F17, F24, F25, F28, F29, F30, F43); what it says the literature converges on (F20, F21, F22, F42); its stated limits (F23, F26, F27); the sibling benchmark: GEO case studies (F34, F35, F36, F37, F38); other surfaced work on SEO and GEO (F44). The vendor's three pages share one byline; the sibling (B1) names the entity as its parent ('Our larger GEO academic papers synthesis'), and its count differs (F2 against F7).",
+ "pages": "saved verbatim in datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B6.wiki raw wikitext; B5-researchgate-403.html the refusal; W1*.html and W1-api-*.txt Wikipedia's responses; T1-presenc-ai-geo-academic-papers-aio-20261029.txt the registry's transcript string)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "T1 card 1 (presenc-ai-geo-academic-papers-aio-20261029); a sibling list on the entity's site, a distinct entity",
+   "card": "Presenc AI — Essential GEO Research Papers, 10 Must-Read Studies | Presenc AI",
+   "kind": "vendor guide page (Presenc AI, How-To Guides; byline Ramanath, CTO & Co-Founder; last updated 23 April 2026)",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Essential GEO Research Papers, 10 Must-Read Studies | Presenc AI",
+   "card_snippet": "Apr 23, 2026 — Editorial curation of the 10 most important academic and industry research papers on Generative Engine Optimization that every AI visibility ...",
+   "card_note": null,
+   "found": "URL found by WebSearch on the title (presenc.ai/guides/essential-geo-research-papers); it is not in presenc.ai/sitemaps/research.xml",
+   "url": "https://presenc.ai/guides/essential-geo-research-papers",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B1.html",
+     "sha256": "43f4648cabcca082d5e2550b6d6b94d6967756914d7cb68e61f541419b933bc9"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B1.txt",
+     "sha256": "f3c7c6b49c6956628eae22740c2ba8d781d617a88f3e3b248979767b3c805ead"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:25Z",
+    "http": 200,
+    "url": "https://presenc.ai/guides/essential-geo-research-papers",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B1.html",
+    "raw_sha256": "43f4648cabcca082d5e2550b6d6b94d6967756914d7cb68e61f541419b933bc9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B1.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "yes ('Presenc AI'; byline 'Ramanath, CTO & Co-Founder at Presenc AI')",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "T1 card 2; the entity's own page, the one source the MMRS record cites (census.json sources 'presenc.ai/research/geo-academic-papers-2026', read 2026-10-28, 'for all fields'), carried once, as card",
+   "card": "Presenc AI — GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI",
+   "kind": "the entity: vendor research page (Presenc AI, Research; byline Ramanath, CTO & Co-Founder; html metadata datePublished and dateModified 2026-04-23)",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI",
+   "card_snippet": "Apr 15, 2026 — Comprehensive summary of 34 academic and industry research papers on Generative Engine Optimization, with Presenc AI analysis of implications for practitioners.",
+   "card_note": null,
+   "found": "the record's URL; also in presenc.ai/sitemaps/research.xml",
+   "url": "https://presenc.ai/research/geo-academic-papers-2026",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.html",
+     "sha256": "a6965ee9a15e042ebc057363447c73366118d6fe044334299056bc0e90ca8982"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.txt",
+     "sha256": "cb003889c91e16e215771f318f99fe2131041908d5cb80cd187fe80fbeba11cd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:00Z",
+    "http": 200,
+    "url": "https://presenc.ai/research/geo-academic-papers-2026",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.html",
+    "raw_sha256": "a6965ee9a15e042ebc057363447c73366118d6fe044334299056bc0e90ca8982",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "yes ('Presenc AI'; byline 'Ramanath, CTO & Co-Founder at Presenc AI')",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)",
+   "admitted_as_own_page": "per the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'): the record's one cited own page is also T's card 2, so it is surfaced by T and carried once, as card"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "T1 card 3; a sibling page on the entity's site",
+   "card": "Presenc AI — GEO Case Studies Benchmark 2026, Documented Results | Presenc AI",
+   "kind": "vendor research page (Presenc AI, Research; byline Ramanath, CTO & Co-Founder; html metadata 2026-04-23)",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "GEO Case Studies Benchmark 2026, Documented Results | Presenc AI",
+   "card_snippet": "Apr 15, 2026 — Structured analysis of documented GEO case studies across industries, what worked, by how much, and what applies to your brand.",
+   "card_note": null,
+   "found": "presenc.ai/sitemaps/research.xml",
+   "url": "https://presenc.ai/research/geo-case-studies-benchmark-2026",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B3.html",
+     "sha256": "c44bbf808313e1c3bfa2fc771b7492ee14eecea4e76a94bcb09d87d6a1b6d7a0"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B3.txt",
+     "sha256": "6a7ac1c17e76fcaef11f250cc394c99ec7d6c39763e2b8a3d4b3d89b89ff53bb"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:25Z",
+    "http": 200,
+    "url": "https://presenc.ai/research/geo-case-studies-benchmark-2026",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B3.html",
+    "raw_sha256": "c44bbf808313e1c3bfa2fc771b7492ee14eecea4e76a94bcb09d87d6a1b6d7a0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B3.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "yes ('Presenc AI'; byline Ramanath)",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "T1 card 4",
+   "card": "FancyAI — The Princeton paper, decoded. The academic foundation of GEO. - FancyAI",
+   "kind": "vendor research article (FancyAI Research, 19 May 2026, '15 min read'); the saved page is a single-page application carrying FancyAI's whole research corpus, the card's article at B4.txt lines 3212–3330",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "The Princeton paper, decoded. The academic foundation of GEO. - FancyAI",
+   "card_snippet": "May 19, 2026 — In November 2023, six researchers from Princeton, Georgia Tech, the Allen Institute for AI, and IIT Delhi posted a paper to arXiv titled simply “GEO: ...",
+   "card_note": null,
+   "found": "WebSearch (extended) on the snippet's words returned https://www.getfancy.ai/article-princeton-geo-decoded; fancyai.com is another company (title 'FancyAI - AI Employees', no such article in its sitemap)",
+   "url": "https://www.getfancy.ai/article-princeton-geo-decoded",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B4.html",
+     "sha256": "5bbcb0f0bfc7958d63388f1db991971704271a25bfff0435d7e1bbd3c86465ab"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B4.txt",
+     "sha256": "a98134f62655955e870cf9e47ba60ecd28988f7ee221e9cc9dc5635513b52330"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:23Z",
+    "http": 200,
+    "url": "https://www.getfancy.ai/article-princeton-geo-decoded",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B4.html",
+    "raw_sha256": "5bbcb0f0bfc7958d63388f1db991971704271a25bfff0435d7e1bbd3c86465ab",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B4.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "no (Presenc AI not named; 'presence' only as a common word)",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "T1 card 5",
+   "card": "ResearchGate — (PDF) From Search Engines to AI Answers: The New Rules of SEO, GEO, and ...",
+   "kind": "ResearchGate publication page (PDF)",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "(PDF) From Search Engines to AI Answers: The New Rules of SEO, GEO, and ...",
+   "card_snippet": "Oct 21, 2026 — This article explores the new rules of visibility in the generative age. Operating on up-to-date signals from BrightEdge, SparkToro, Similarweb, ...",
+   "card_note": null,
+   "found": "WebSearch (extended) on the title returned https://www.researchgate.net/publication/416504322_From_Search_Engines_to_AI_Answers_The_New_Rules_of_SEO_GEO_and_Digital_Marketing",
+   "url": "https://www.researchgate.net/publication/416504322_From_Search_Engines_to_AI_Answers_The_New_Rules_of_SEO_GEO_and_Digital_Marketing",
+   "fetched": {
+    "unreachable": true,
+    "http": 403,
+    "at": "2026-10-29T05:07:40Z",
+    "tries": 3,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "response": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B5-researchgate-403.html",
+    "response_sha256": "d1e9d3f4fda767d2cfd90bfdcfcacb2c329d08b0c77661cc8f5cc20e9f4388d1",
+    "says": "ResearchGate - Temporarily Unavailable"
+   },
+   "text": "the card's title and snippet only (§3.1(a))",
+   "names_operator": "no (snippet and title)",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "role": "the class article: English Wikipedia 'Generative engine optimization' (there is no article on the entity or on Presenc AI, W1); not surfaced by T",
+   "card": "Wikipedia — Generative engine optimization (the class article)",
+   "kind": "encyclopedia article (last edited 1 October 2026, 13:11 UTC)",
+   "surfaced_by_T": false,
+   "found": "https://en.wikipedia.org/w/index.php?title=Generative_engine_optimization&action=raw (first request HTTP 429 at 05:07:53Z; HTTP 200 at 05:08:11Z with a descriptive user-agent) and the rendered page",
+   "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B6.html",
+     "sha256": "53c90a667479777ab2fa95942afad9ea6d4f5cdaeb5bbbffd07418f0d1714107"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B6.txt",
+     "sha256": "a91435b3d78470c8620683122bf32aebaf435bb1be6bf1db0bf98f98dff955e4"
+    },
+    "B6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B6.wiki",
+     "sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318",
+     "fetched": "2026-10-29T05:08:11Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=Generative_engine_optimization&action=raw"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:26Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B6.html",
+    "raw_sha256": "53c90a667479777ab2fa95942afad9ea6d4f5cdaeb5bbbffd07418f0d1714107",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B6.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia: a descriptive user-agent); text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "no (Presenc AI not named in the wikitext or the rendered page)",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)",
+   "admitted": "the task names it: 'check for an article on Presenc and on Generative engine optimization; record what exists'. No article exists on the entity (W1); the class article is carried as the field's encyclopedia instance of the class the entity's own page places itself in (B2 ¶1), not surfaced by T"
+  },
+  {
+   "id": "B7",
+   "origin": "body",
+   "role": "named in T's body ('the Princeton-led multi-institutional study on GEO'), §3.1(a) 'every source its body names'; not a card",
+   "card": "arXiv — [2311.09735] GEO: Generative Engine Optimization",
+   "kind": "arXiv abstract page (Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande; v1 16 Nov 2023, v3 28 Jun 2024)",
+   "surfaced_by_T": [
+    {
+     "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+     "named_in_body": "Core Academic Foundations of GEO ¶1"
+    }
+   ],
+   "found": "the paper's arXiv id as the list (B1, 'arXiv:2311.09735') and FancyAI (B4, 'arXiv 2311.09735') give it",
+   "url": "https://arxiv.org/abs/2311.09735",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B7.html",
+     "sha256": "500b447adb30889f89d34b5c4c70d3dc6faa9fabb95cfa6313efe5451f09d1d3"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B7.txt",
+     "sha256": "ab6ef113765e4870f0c714a65bfeb4bfe31be9a7e94a5b59c81c7c2d35409716"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:15:20Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2311.09735",
+    "raw": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B7.html",
+    "raw_sha256": "500b447adb30889f89d34b5c4c70d3dc6faa9fabb95cfa6313efe5451f09d1d3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B7.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles, noscript and svg and keeping the words"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of Crimson Hexagonal, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES in the saved text, card title and snippet)"
+  }
+ ],
+ "wikipedia": {
+  "id": "W1",
+  "origin": "wikipedia",
+  "result": "no article on Presenc AI or on the entity",
+  "checked": "2026-10-29 05:07:52–05:15:31 UTC",
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Presenc&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-Presenc-raw-404.html",
+    "sha256": "1f26ddb703c3db9c23ba77276afa2e566d655ec1b583a2c320f0ed4bfe2c1019"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Presenc_AI&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-Presenc_AI-raw-404.html",
+    "sha256": "ac8bb8c3b8208530d7ea8a255822e010c4aae131124d9fc86aa897d0e9315eae"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Presenc",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-Presenc-rendered.html",
+    "sha256": "b3c3b3f01a810d8c2214b3df26a7e1eab421f005d867e7127c84fb5a0e83abcc",
+    "says": "Wikipedia does not have an article with this exact name."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Presenc&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-api-search-429.txt",
+    "note": "rate-limited; replaced by Special:Search"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Presenc%20AI%22&format=json",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-api-search-quoted-429.txt",
+    "note": "rate-limited"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=Presenc&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-search.html",
+    "sha256": "92c7b1d6a0afc45f5eac8713cbe1ab72c500b05d5b1772ca1fefbb3e28fd5951",
+    "says": "the search is rewritten: 'Showing results for present' (Present, PRESENT, Before Present, …); no article on the vendor"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=%22Presenc+AI%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-search-quoted.html",
+    "sha256": "44801bfde4ddc6d76aca0b27ff23a332789787e2bdd0eedc68683e18fe6e7765",
+    "says": "There were no results matching the query."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=%22presenc.ai%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/W1-search-domain.html",
+    "sha256": "b97fcc52cb3493d6a1dfa781e1d7982dfbd7e29d5258d2c798cab7e9ef419335",
+    "says": "There were no results matching the query."
+   }
+  ],
+  "redirect": "none",
+  "class_article": "B6: 'Generative engine optimization' exists (HTTP 200, last edited 2026-10-01); it does not name Presenc AI",
+  "note": "No English Wikipedia article on Presenc AI or on its GEO papers page exists on 2026-10-29: the raw wikitext for Presenc and Presenc_AI answers HTTP 404, the rendered page 'Wikipedia does not have an article with this exact name.', a quoted search for 'Presenc AI' and for 'presenc.ai' finds nothing in any article, and the plain search for Presenc is rewritten by Wikipedia's own search to 'present'. The fact is a property of the row; the class article on generative engine optimization is carried as B6."
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header (description under the title)",
+   "quote": "Editorial curation of the 10 most important academic and industry research papers on Generative Engine Optimization that every AI visibility practitioner should have read.",
+   "claim": "the sibling defined by its own page: an editorial curation of the ten most important GEO papers for AI-visibility practitioners",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "If You Only Read Ten Papers, Read These ¶2",
+   "quote": "Our larger GEO academic papers synthesis catalogues 30+ papers; this guide is the curated subset we recommend to every new Presenc AI customer as required reading before their first strategy session.",
+   "claim": "the sibling names the entity as its parent: 'Our larger GEO academic papers synthesis catalogues 30+ papers', the ten a subset recommended to every new customer",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised",
+   "contested": "the count: '30+ papers' (the sibling, B1) against 34 (B2, F7; MMRS-10); composed each with its source (P_coh)"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "If You Only Read Ten Papers, Read These ¶1",
+   "quote": "ranked by how much each paper will change the decisions you make on Monday morning",
+   "claim": "the sibling's ranking rule: by how much each paper changes a practitioner's decisions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ: 'Are preprints reliable enough to act on?'",
+   "quote": "Treat preprints as provisional; weight findings by replication status, not just publication venue.",
+   "claim": "the sibling's stated limit on its preprints",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry 2",
+   "quote": "2. Chen et al., \"What Generative Search Engines Like\" (CMU, 2025)",
+   "claim": "the sibling attributes the CMU 'What Generative Search Engines Like' paper to Chen et al.",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised",
+   "contested": "the CMU paper's authors: 'Chen et al.' (B1) against 'Wu, Zhong, Kim, Xiong' (B2, F31): one vendor's two pages"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "byline",
+   "quote": "By Ramanath, CTO & Co-Founder at Presenc AI · Last updated: April 23, 2026",
+   "claim": "the sibling's byline: Ramanath, CTO and co-founder, last updated 23 April 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling list: 10 Must-Read Studies",
+   "date": "2026-04-23 (byline 'Last updated: April 23, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f3c7c6b49c695662…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "header (description under the title)",
+   "quote": "Comprehensive summary of 34 academic and industry research papers on Generative Engine Optimization, with Presenc AI analysis of implications for practitioners.",
+   "claim": "the entity defined by its own page: a summary of 34 academic and industry GEO papers, with Presenc AI's analysis of implications for practitioners",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a vendor's working bibliography of GEO research",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "contested": "the count: 34 against the sibling's '30+' (F2)",
+   "own_page": true
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "byline",
+   "quote": "By Ramanath, CTO & Co-Founder at Presenc AI · Last updated: April 2026",
+   "claim": "its byline: Ramanath, CTO and co-founder at Presenc AI; last updated April 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "byline, date and count",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "heading and ¶1",
+   "quote": "A Working Bibliography for AI Visibility Practitioners … This page is a running synthesis of 34 research papers and industry reports that shape what we know about making brands visible in AI-mediated search and assistants.",
+   "claim": "a working bibliography for AI-visibility practitioners: a running synthesis of 34 papers and reports on making brands visible in AI-mediated search",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a vendor's working bibliography of GEO research",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "For each, Presenc AI adds a practitioner-facing implication so the theory translates into what to do on Monday morning.",
+   "claim": "for each item the vendor adds a practitioner-facing implication",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a vendor's working bibliography of GEO research",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Generative Engine Optimization (GEO) has accelerated from practitioner blog posts in 2022 to a substantial academic literature by 2026.",
+   "claim": "its genealogy of the field: from practitioner blog posts in 2022 to a substantial academic literature by 2026",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "contested": "the field's start: 'practitioner blog posts in 2022' (B2) against the paper of November 2023 (F54, F46) and the archive's 'late 2023' (O64-01)",
+   "own_page": true
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "The papers collected here come from Princeton, CMU, Harvard, Technion, University of Toronto, USTC, and several independent research organizations including the AIVO Standard and Geometriqs.",
+   "claim": "its sources: universities and independent research organizations, the AIVO Standard and Geometriqs among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources, themes, items",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Methodologies range from controlled experiments on GEO-bench and similar datasets, to large-scale comparative studies across ChatGPT, Perplexity, and Gemini, to sector-specific empirical studies (B2B SaaS, real estate, biotech, e-commerce).",
+   "claim": "its methods range: GEO-bench experiments, cross-engine comparisons, sector studies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources, themes, items",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "The Shape of the Literature",
+   "quote": "Five themes dominate the current GEO research program: … Content-level optimization. … Structural and metadata signals. … Adversarial and defensive security. … Measurement and governance. … Comparative and sector-specific studies.",
+   "claim": "five themes: content-level optimization; structural and metadata signals; adversarial and defensive security; measurement and governance; comparative and sector studies",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it holds: sources, themes, items",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "The Shape of the Literature, theme 1",
+   "quote": "Aggarwal et al.'s original GEO paper established citation/quote/statistic additions as the highest-ROI content rewrites.",
+   "claim": "the list's reading of the founding paper: citation, quote and statistic additions as the highest-ROI rewrites",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Summary Table, row 1 (Key Finding)",
+   "quote": "Introduces GEO as a formal paradigm with GEO-bench (10k queries). Shows citation-adding, quotation-adding, and statistics-adding are the most effective content-level optimizations, lifting AI response visibility up to 40%.",
+   "claim": "the founding paper's key finding as listed: GEO formalized with GEO-bench (10k queries); citation, quotation and statistics additions lift visibility up to 40%",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Paper-by-Paper Analysis, entry 1, 'What it means for practitioners'",
+   "quote": "The foundational GEO paper. Every Presenc audit anchors on the Princeton team's visibility metrics (Position-adjusted Word Count, Subjective Impression).",
+   "claim": "the vendor's note on the founding paper: every Presenc audit anchors on its visibility metrics",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Summary Table, row 1 (authors)",
+   "quote": "Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande · Princeton University + IIT Delhi",
+   "claim": "the founding paper's authors and affiliations as listed: Princeton University and IIT Delhi",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "contested": "the founding paper's affiliations: 'Princeton University + IIT Delhi' (B2) against 'Princeton, Georgia Tech, the Allen Institute for AI, and IIT Delhi' (B4, F39)",
+   "own_page": true
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "The Shape of the Literature, theme 4; Paper-by-Paper Analysis, 'From GEO to AIVO'",
+   "quote": "The AIVO Standard series (PSOS, AIVO 100, Visibility 2.0) develop the vocabulary for enterprise-grade measurement and board reporting. … Argues that GEO is a legacy framing and AIVO (AI Visibility Optimization) is the appropriate successor, centering on assistants rather than generative web engines.",
+   "claim": "the AIVO Standard series as the measurement theme's vocabulary; one AIVO item argues GEO is a legacy framing with AIVO its successor",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources, themes, items",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What the Literature Converges On, 1",
+   "quote": "1. Cite, quote, and stat. The single most replicated finding across the GEO literature is that content with explicit citations, quotations, and statistics earns higher visibility in AI responses than prose-only content, often by 30–60%.",
+   "claim": "convergence 1: citations, quotations and statistics earn higher AI visibility, often by 30–60%",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it says the literature converges on",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What the Literature Converges On, 2",
+   "quote": "2. Structure is not cosmetic. JSON-LD, semantic HTML, explicit entity tagging, and consistent metadata are no longer SEO flourishes. They are the infrastructure AI systems use to ground confidence.",
+   "claim": "convergence 2: structured data and entity tagging as the infrastructure AI systems use to ground confidence",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it says the literature converges on",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What the Literature Converges On, 3",
+   "quote": "3. Single-platform optimization fails. Brand representation diverges meaningfully across ChatGPT, Perplexity, Gemini, Claude, and Copilot.",
+   "claim": "convergence 3: single-platform optimization fails; representation diverges across platforms",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it says the literature converges on",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What the Literature Is Still Silent On",
+   "quote": "Two gaps stand out. First, almost all published GEO research focuses on English-language queries. … Second, the literature remains thin on the commercial outcomes of AI visibility, measurement of how AI citations convert to actual revenue is still mostly anecdotal, not rigorously modeled.",
+   "claim": "its stated gaps: GEO research is almost all English-language; commercial outcomes are mostly anecdotal, not rigorously modelled",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "its stated limits",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "How Presenc AI Uses This Research ¶1",
+   "quote": "The Presenc AI audit framework is directly anchored in this literature. The 6-Factor scoring (Knowledge Presence, Semantic Authority, Entity Linking, Citations, RAG Fetchability, Contextual Integrity) maps to the signals repeatedly validated in the papers above.",
+   "claim": "the vendor's audit framework 'directly anchored in this literature', its 6-Factor scoring mapped to the papers' signals",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "How Presenc AI Uses This Research ¶2",
+   "quote": "Brands working with Presenc AI benefit from a measurement framework that is both practitioner-tested and academically grounded.",
+   "claim": "the vendor's assessment of its framework as practitioner-tested and academically grounded",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "FAQ: 'Is this list complete?'; How Presenc AI Uses This Research ¶2",
+   "quote": "No literature review on a fast-moving field is ever complete. This collection is updated quarterly and is a living working bibliography, not a snapshot. … The research summaries here are maintained continuously; new papers are added as they are published.",
+   "claim": "its stated incompleteness; updated quarterly, and also 'maintained continuously; new papers are added as they are published'",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "its stated limits",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "note": "held together, not marked: 'updated quarterly' (FAQ) and 'maintained continuously; new papers are added as they are published' (How Presenc AI Uses This Research ¶2), two statements of one page's cadence",
+   "own_page": true
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "FAQ: 'Are these papers peer-reviewed?'",
+   "quote": "Roughly half are peer-reviewed (ACM KDD, venue proceedings, journals). The rest are preprints, SSRN working papers, or industry reports.",
+   "claim": "its stated limit: roughly half peer-reviewed, the rest preprints, SSRN working papers or industry reports",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "its stated limits",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "FAQ: 'How does this research change Presenc AI's product roadmap?'",
+   "quote": "Directly. Each quarter we map new findings to product capabilities",
+   "claim": "new findings mapped each quarter to product capabilities",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Paper-by-Paper Analysis, 'AIVO Standard Methodology … v3.0', note",
+   "quote": "Presenc tracks analogous share-of-voice metrics; the AIVO PSOS framework offers a common vocabulary for boardroom reporting.",
+   "claim": "the vendor tracks share-of-voice metrics analogous to AIVO's PSOS",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "closing call and footer",
+   "quote": "See how often your brand appears in ChatGPT, Claude, and Perplexity responses. … Commercial infrastructure for the agentic web",
+   "claim": "the page closes on the vendor's visibility tracking ('Join the waitlist'); the vendor's line, 'Commercial infrastructure for the agentic web'",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Paper-by-Paper Analysis, 'What Generative Search Engines Like …' (authors)",
+   "quote": "What Generative Search Engines Like and How to Optimize Web Content Cooperatively Wu, Zhong, Kim, Xiong · Carnegie Mellon University + Vody",
+   "claim": "the entity attributes the CMU 'What Generative Search Engines Like' paper to Wu, Zhong, Kim and Xiong",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources, themes, items",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "contested": "authors against F5",
+   "own_page": true
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "FAQ: 'What paper should I read first?'",
+   "quote": "Start with the foundational Aggarwal et al. (2024) GEO: Generative Engine Optimization from Princeton, it established the field.",
+   "claim": "read first: Aggarwal et al. (2024), which 'established the field'",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-04-23 (the page's datePublished and dateModified, html metadata; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 cb003889c91e16e2…), whitespace-normalised",
+   "own_page": true
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (T card 2)",
+   "quote": "Apr 15, 2026 — Comprehensive summary of 34 academic and industry research papers on Generative Engine Optimization, with Presenc AI analysis of implications for practitioners.",
+   "claim": "the card dates the page 15 April 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "byline, date and count",
+   "date": "2026-10-29 (the card, as surfaced)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list",
+   "contested": "the date: the card's 15 April against the page's metadata 23 April (MMRS-17) and the byline 'April 2026' (F8)",
+   "own_page": true
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "header (description under the title)",
+   "quote": "Structured analysis of documented GEO case studies across industries, what worked, by how much, and what applies to your brand.",
+   "claim": "the benchmark defined by its own page: a structured analysis of documented GEO case studies",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the sibling benchmark: GEO case studies",
+   "date": "2026-04-23 (html metadata; byline 'Last updated: April 2026'; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6a7ac1c17e76fcae…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Documented GEO Results Across Industries ¶1",
+   "quote": "One of the fair critiques of Generative Engine Optimization in 2024 was that it lacked documented case studies with hard numbers. That has changed.",
+   "claim": "the benchmark's genealogy: GEO lacked documented case studies in 2024; 'That has changed'",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling benchmark: GEO case studies",
+   "date": "2026-04-23 (html metadata; byline 'Last updated: April 2026'; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6a7ac1c17e76fcae…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "What the Case Studies Get Wrong",
+   "quote": "Two honest caveats. First, case studies by definition report successes, there is publication bias. … Second, attribution is hard.",
+   "claim": "its stated limits: publication bias; attribution is hard",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the sibling benchmark: GEO case studies",
+   "date": "2026-04-23 (html metadata; byline 'Last updated: April 2026'; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6a7ac1c17e76fcae…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "FAQ: 'Are these case studies vendor-neutral?'",
+   "quote": "They are drawn from third-party agencies and vendors with varying interests.",
+   "claim": "its cases are drawn from agencies and vendors with varying interests",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling benchmark: GEO case studies",
+   "date": "2026-04-23 (html metadata; byline 'Last updated: April 2026'; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6a7ac1c17e76fcae…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Cross-Case Patterns, 1",
+   "quote": "This is consistent with the Schanbacher academic study on real estate agencies.",
+   "claim": "it ties its schema pattern to the Schanbacher study, an item of the entity's list",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sibling benchmark: GEO case studies",
+   "date": "2026-04-23 (html metadata; byline 'Last updated: April 2026'; the card says Apr 15, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 6a7ac1c17e76fcae…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Chapter 01 ¶1",
+   "quote": "In November 2023, six researchers from Princeton, Georgia Tech, the Allen Institute for AI, and IIT Delhi posted a paper to arXiv titled simply “GEO: Generative Engine Optimization.” A year later it was published at ACM SIGKDD 2024, the top data-mining conference in the world.",
+   "claim": "the founding paper: six researchers from Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi, arXiv November 2023, ACM SIGKDD 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-05-19 (byline)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 a98134f62655955e…), whitespace-normalised",
+   "contested": "affiliations against F18"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Chapter 01, list item 1",
+   "quote": "Coined the term “Generative Engine Optimization” and formalized generative engines as systems combining retrieval with grounded LLM synthesis.",
+   "claim": "the paper coined the term and formalized generative engines as retrieval with grounded LLM synthesis",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-05-19 (byline)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 a98134f62655955e…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Chapter 01 ¶3",
+   "quote": "The paper is the academic spine of the entire GEO discipline. Every credible practitioner study published since either cites it, replicates it, or extends it.",
+   "claim": "FancyAI: the paper is 'the academic spine of the entire GEO discipline'",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2026-05-19 (byline)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 a98134f62655955e…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Chapter 04 ¶2; Chapter 05 ¶2",
+   "quote": "Keyword stuffing — the workhorse of early SEO — showed “little to no improvement” on generative engines. … Top-ranked sites on average LOST 30.3% visibility when applying the same methods.",
+   "claim": "the paper's negative findings as FancyAI gives them: keyword stuffing little to no improvement; top-ranked sites lost 30.3% visibility",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it says the literature converges on",
+   "date": "2026-05-19 (byline)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 a98134f62655955e…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Chapter 06 ¶2",
+   "quote": "This validated, at scale, what FancyAI’s Signal Hierarchy methodology codified separately: third-party citations are the highest-leverage GEO investment.",
+   "claim": "FancyAI reads a follow-up study as validating its own Signal Hierarchy methodology",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literature read toward the product",
+   "date": "2026-05-19 (byline)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 a98134f62655955e…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable, HTTP 403)",
+   "quote": "(PDF) From Search Engines to AI Answers: The New Rules of SEO, GEO, and ... Oct 21, 2026 — This article explores the new rules of visibility in the generative age. Operating on up-to-date signals from BrightEdge, SparkToro, Similarweb, ...",
+   "claim": "a ResearchGate article on the new rules of SEO and GEO, on signals from BrightEdge, SparkToro and Similarweb (snippet only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "other surfaced work on SEO and GEO",
+   "date": "2026-10-21 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "lede",
+   "quote": "Generative engine optimization (GEO), also known as answer engine optimization (AEO) … is the practice of improving visibility in responses generated by generative artificial intelligence (AI) systems.",
+   "claim": "GEO, also known as AEO, is the practice of improving visibility in responses generated by generative AI systems",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶1",
+   "quote": "The term \"generative engine optimization\" was introduced in a 2023 paper by Pranjal Aggarwal and co-authors, later presented at the KDD 2024 conference. … usage varies across practitioners, vendors, and publications, with no consensus definition.",
+   "claim": "the term introduced in a 2023 paper by Aggarwal and co-authors, presented at KDD 2024; no consensus definition",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶2",
+   "quote": "argues that \"optimizing for generative AI search is optimizing for the search experience, and thus still SEO.\"",
+   "claim": "Google's 2026 guide: optimizing for generative AI search is 'still SEO'",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶2",
+   "quote": "A Perplexity representative used \"GEO\" while cautioning against vendors overstating their expertise in it.",
+   "claim": "a Perplexity representative cautions against vendors overstating their GEO expertise",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶4",
+   "quote": "advocates of terms like AEO, GEO, AIO, and LLMO \"tend to exaggerate SEO and AEO's differences to carve a startup-sized hole in marketers' tech stacks.\"",
+   "claim": "Forrester (Lai, 2025): the terms' advocates exaggerate the differences from SEO to carve a startup-sized hole",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Tools",
+   "quote": "While the efficacy of third-party tools is debated within the overall GEO and SEO industries",
+   "claim": "the efficacy of third-party GEO tools is debated",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the class: generative engine optimization",
+   "date": "2026-10-01 (last edited; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a91435b3d78470c8…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B7",
+   "origin": "body",
+   "locus": "Abstract",
+   "quote": "we introduce Generative Engine Optimization (GEO), the first novel paradigm to aid content creators in improving their content visibility in generative engine responses through a flexible black-box optimization framework for optimizing and defining visibility metrics.",
+   "claim": "the paper defines GEO: a paradigm to aid content creators in improving content visibility in generative engine responses, a black-box optimization framework",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2023-11-16 (v1; v3 of 2024-06-28 as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab6ef113765e4870…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B7",
+   "origin": "body",
+   "locus": "Abstract",
+   "quote": "Through rigorous evaluation, we demonstrate that GEO can boost visibility by up to $40\\%$ in generative engine responses. Moreover, we show the efficacy of these strategies varies across domains, underscoring the need for domain-specific optimization methods.",
+   "claim": "up to 40% visibility; efficacy varies across domains",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2023-11-16 (v1; v3 of 2024-06-28 as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab6ef113765e4870…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B7",
+   "origin": "body",
+   "locus": "Abstract",
+   "quote": "it poses a huge challenge for the third stakeholder -- website and content creators.",
+   "claim": "the paper's stake: website and content creators, the third stakeholder",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2023-11-16 (v1; v3 of 2024-06-28 as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab6ef113765e4870…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B7",
+   "origin": "body",
+   "locus": "submission history",
+   "quote": "[Submitted on 16 Nov 2023 (v1), last revised 28 Jun 2024 (this version, v3)]",
+   "claim": "submitted 16 November 2023, revised 28 June 2024 (v3)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: the Princeton GEO paper",
+   "date": "2023-11-16 (v1; v3 of 2024-06-28 as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab6ef113765e4870…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Presenc AI — Essential GEO Research Papers, 10 Must-Read Studies | Presenc AI",
+  "B2": "Presenc AI — GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI",
+  "B3": "Presenc AI — GEO Case Studies Benchmark 2026, Documented Results | Presenc AI",
+  "B4": "FancyAI — The Princeton paper, decoded. The academic foundation of GEO. - FancyAI",
+  "B5": "ResearchGate — (PDF) From Search Engines to AI Answers: The New Rules of SEO, GEO, and ...",
+  "B6": "Wikipedia — Generative engine optimization (the class article)",
+  "B7": "arXiv — [2311.09735] GEO: Generative Engine Optimization"
+ }
+}

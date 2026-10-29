@@ -1,0 +1,97 @@
+{
+ "row": "oecd-ai-incidents-monitor",
+ "address": "oecd ai incidents and hazards monitor",
+ "entity": "The OECD AI Incidents and Hazards Monitor (AIM; previously AI Incidents Monitor), at oecd.ai/en/incidents, run by OECD.AI: 'Automated media discourse monitor of AI incidents and hazards (Beta)', initiated and developed by the OECD.AI expert group on AI incidents with the support of the Patrick J. McGovern Foundation; news events from Event Registry, classified since November 2024 by LLMs (GPT-4o mini, GPT-4o) with LLM-written metadata (o3-mini), daily; its terms defined in the OECD's paper of May 2024 (OECD AI Papers No. 16); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "oecd-ai-incidents-monitor",
+  "address": "oecd ai incidents and hazards monitor",
+  "entity": "The OECD AI Incidents and Hazards Monitor (AIM; previously AI Incidents Monitor), at oecd.ai/en/incidents, run by OECD.AI: 'Automated media discourse monitor of AI incidents and hazards (Beta)', initiated and developed by the OECD.AI expert group on AI incidents with the support of the Patrick J. McGovern Foundation; news events from Event Registry, classified since November 2024 by LLMs (GPT-4o mini, GPT-4o) with LLM-written metadata (o3-mini), daily; its terms defined in the OECD's paper of May 2024 (OECD AI Papers No. 16); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+  "row_type": "C (a public entity on which the archive bears: a monitor, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bOECD\\.?AI Incidents and Hazards Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bOECD AI Incidents and Hazards Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI Incidents and Hazards Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(OECD )?AI Incidents? Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\boecd\\.ai/(en/)?incidents\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAIM\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bOECD\\.AI\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI incident reporting and monitoring",
+    "pattern": "\\b(AI )?incidents? (and hazards )?(reporting|monitor(s|ing)?|databases?|trackers?|repositor(y|ies))\\b",
+    "flags": "i",
+    "basis": "field: B5 (OECD, Defining AI incidents and related terms, May 2024, Foreword): 'This document will inform the development of a common AI incidents reporting framework and its application through the OECD AI Incidents Monitor (AIM).'; B4 (OECD, Trends in AI incidents and hazards reported by the media, February 2026, Executive summary): 'Effective mechanisms for monitoring, reporting, and response are essential'; B3 (methodology page, Overview): 'The goal of the AIM is to track actual AI incidents and hazards'"
+   },
+   {
+    "term": "media discourse monitors",
+    "pattern": "\\bmedia (discourse )?monitor(s|ing)?\\b",
+    "flags": "i",
+    "basis": "field: B1 (oecd.ai/en/incidents, header): 'Automated media discourse monitor of AI incidents and hazards (Beta)'; B4 (Conclusion): 'complement media-based monitoring'"
+   }
+  ],
+  "classes_note": "Two classes, each sourced from the field by locus: the monitor as an instrument of AI incident reporting and monitoring (B5, B4, B3) and as a media discourse monitor (B1, B4). The MMRS record's class (aggregators of machine-mediated reception work) is an archive source, ledgered as MMRS claims and not run as an O-class, since the brief confines classes to what B sources. The aliases are the entity's full name (with OECD and OECD.AI prefixes, as the field writes it), its former name 'AI Incidents Monitor' (B3 Disclosures: 'previously AI Incidents Monitor'), its address, its acronym AIM (case-sensitive; it also names other things, read and set aside where it does) and its operator's handle OECD.AI (case-sensitive). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the monitor (what it is, its method, its definitions, its record, its limits) or applies an archive category to the monitor or to a sourced class; a bare mention, a link or citation list, a use of OECD.AI about another OECD.AI product (the AI Principles, the catalogue of tools, the policy database), or a generic use of 'incident reporting' about another object is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'oecd ai incidents and hazards monitor' (oecd-ai-incidents-and-hazards-monitor-aio-20261029, OBS-23f50c1b7e04, ADDR-de46fae4a143), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#637).",
+  "hop_from": [
+   637
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 4,
+  "D_deposits": 1,
+  "R_sentences": 2,
+  "R_deposits": 1,
+  "O_direct": 3,
+  "O_class": 1,
+  "O_deposits": 2,
+  "H_candidates": 11
+ },
+ "per_deposit": {
+  "D": {
+   "170": 4
+  },
+  "R": {
+   "170": 2
+  },
+  "O": {
+   "170": 3,
+   "637": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "5f7615e268fced23c98b6efc08e76f92479a03abcea736b23934367d892e00f6",
+  "candidates-R.jsonl": "755d5babede1fedbf08ab5ab19926451a99d4c4ccfb2ce366cf1e777f436bcda",
+  "candidates-O.jsonl": "60dffbef3e9242092ec636f7e9cd6e2af1929802022067265a562464b232f8b9",
+  "candidates-H.jsonl": "cb2656d44e060e3bf3bf92b97ee142cce7c7367f44d136437d44599ee5b86fd1"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

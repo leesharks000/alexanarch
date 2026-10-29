@@ -1,0 +1,1444 @@
+{
+ "row": "mit-ai-risk-repository",
+ "address": "mit ai risk repository",
+ "addresses": [
+  "mit ai risk repository"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), or the card's title and snippet for the unreachable card; 59/59 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on T1's rail (B1–B10, ten sources for ten cards; B1 home, B6 arXiv and B8 About are also the own pages the task names, carried once, as cards); 'own_page', the repository's own page /risks (B11) and the site's llms.txt (B12), not cited by the MMRS record, not surfaced by T; 'wikipedia', no article (W1). Unreachable: B10 (ScienceDirect, 403).",
+ "lineage_note": "Lineages: what it is (B1, B2, B9, B11, B12); operator (B8); the unit and its evidence (B1, B3, B7); method (B4, B11); the Causal Taxonomy (B4, B11); the Domain Taxonomy (B2, B4, B11); findings (B3, B6); count and version (B1, B2, B3, B4, B6, B7, B8); limits (B3, B11); openness (B1, B8, B11); purpose (B1, B4, B6, B10); the paper (B2, B6, B11); workstreams (B8, B9); the Navigator (B5); machine-facing guidance (B12); reach (B3, B8); other databases (B11).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B10.html the 403 body and B10.txt the card's title and snippet; B12 plain text; W1.html, W1-raw.html, W1-search.html Wikipedia's responses; T1-… the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 at T1 (mit-ai-risk-repository-aio-20261029); also an own page (the MMRS record's source / named by the task)",
+   "card": "MIT AI Risk Initiative — MIT AI Risk Initiative",
+   "url": "https://airisk.mit.edu/",
+   "kind": "Overview card (own page: the Initiative's home, the MMRS record's source)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B1.html",
+     "sha256": "d3f35366280a66cad3739c9cecb5216a73be687644466f0fabfd204af408be21"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B1.txt",
+     "sha256": "935d8b0170045fd4112c26b32af21b397d0d9e2dfa05f6e14c1a7b3156cae3ac"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:14Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B1.html",
+    "raw_sha256": "d3f35366280a66cad3739c9cecb5216a73be687644466f0fabfd204af408be21",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B1.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "MIT AI Risk Initiative",
+   "card_snippet": "Tools and Data: Expert Survey (expert consensus on severe AI risks, vulnerabilities, and responsibilities), AI Risk Repository (living repository of AI risks), ...",
+   "unreachable": false,
+   "names_operator": "yes ('MIT AI Risk Initiative', 'MIT FutureTech' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the home page of airisk.mit.edu, now the MIT AI Risk Initiative's home; the card's snippet ('Tools and Data: Expert Survey … AI Risk Repository (living repository of AI risks)') is a condensed rendering of its 'Our tools and data' block, not a verbatim span of the saved text; the repository's own page is /risks (B11). The MMRS record's source (airisk.mit.edu, read 2026-10-28 'for scope, version')."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "MIT AI Risk Initiative — AI Risk Repository Report updated (April 2025)",
+   "url": "https://airisk.mit.edu/blog/new-version-of-the-ai-risk-repository-preprint-now-available",
+   "kind": "Overview card (blog post, 23 April 2025)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B2.html",
+     "sha256": "437d6f93ad588640daf7dcd441149c333231918f2b6006afc6bef2c2ba31b822"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B2.txt",
+     "sha256": "c6e93a76c8af929f15d9b19a36f9f7af53038591f08143ecc1bbde50df955b96"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:11:31Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/blog/new-version-of-the-ai-risk-repository-preprint-now-available",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B2.html",
+    "raw_sha256": "437d6f93ad588640daf7dcd441149c333231918f2b6006afc6bef2c2ba31b822",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B2.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "AI Risk Repository Report updated (April 2025)",
+   "card_snippet": "AI Risk Repository Report updated (April 2025) * What's new in this update Integration of 22 new AI risk frameworks, bringing the total number of included docum...",
+   "unreachable": false,
+   "names_operator": "yes (the Initiative in the page's navigation and featured posts)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "located by the card's title among the blog links on the home page; a different post of the same month, 'Repository Update: April 2025' (1 April 2025, Version 3), was first fetched in error and replaced by this one, whose title and opening match the card"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "MIT Initiative on the Digital Economy — MIT Researchers Create an AI Risk Repository - MIT Initiative on the Digital Economy",
+   "url": "https://ide.mit.edu/insights/mit-researchers-create-an-open-ai-risk-repository/",
+   "kind": "Overview card (MIT IDE article with interview, 21 August 2024)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B3.html",
+     "sha256": "75803d35fbe47a7cc375583770716c6215115540dab56461725e4a8fbfd73f3e"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B3.txt",
+     "sha256": "e3c9288651eb1a00de0155f607239a9b7ccad7c9d686246f81bd385d6b98fa44"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:25Z",
+    "http": 200,
+    "url": "https://ide.mit.edu/insights/mit-researchers-create-an-open-ai-risk-repository/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B3.html",
+    "raw_sha256": "75803d35fbe47a7cc375583770716c6215115540dab56461725e4a8fbfd73f3e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B3.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "MIT Researchers Create an AI Risk Repository - MIT Initiative on the Digital Economy",
+   "card_snippet": "Overview: MIT FutureTech’s AI Risk Repository catalogs 777 risks across 43 AI frameworks, providing source evidence, citations, and dual search taxonomies (doma...",
+   "unreachable": false,
+   "names_operator": "no (MIT FutureTech and the IDE named; the Initiative not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet opens 'Overview:' and is not a span of the page: it is a summary of the article in the surface's own words (the page says '43 AI frameworks … 777 risks'); found by WebSearch on title and site"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "MIT FutureTech — FutureTech",
+   "url": "https://futuretech.mit.edu/publication/the-ai-risk-repository",
+   "kind": "Overview card (FutureTech publication page, v1 abstract, 14 August 2024)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B4.html",
+     "sha256": "d8b51fa0df9e925a06854ca527f75a3af622824b5b4dbe69c78dbbc5cbb58382"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B4.txt",
+     "sha256": "56497bd8702d8e734b9c0ec62d1490916b86eea368652723019beb021622cfc4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:25Z",
+    "http": 200,
+    "url": "https://futuretech.mit.edu/publication/the-ai-risk-repository",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B4.html",
+    "raw_sha256": "d8b51fa0df9e925a06854ca527f75a3af622824b5b4dbe69c78dbbc5cbb58382",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B4.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "FutureTech",
+   "card_snippet": "We construct our Repository with a systematic review of taxonomies and other structured classifications of AI risk followed by an expert consultation. We develo...",
+   "unreachable": false,
+   "names_operator": "no (MIT FutureTech is the site; the Initiative not named in the abstract)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet is a verbatim span of the v1 abstract on this page; a second FutureTech page for the published title exists (futuretech.mit.edu/publication/the-ai-risk-repository-a-meta-review-database-and-taxonomy-of-risks-from-artificial-intelligence) and was not the card"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "MIT AI Risk Navigator — MIT AI Risk Navigator",
+   "url": "https://www.airi-navigator.com/",
+   "kind": "Overview card (the Navigator's home page; a sibling entity, a census candidate)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B5.html",
+     "sha256": "aff86294148022289c52942381f440afd6e3ae11bdfe2b3bad683cbc99b3576a"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B5.txt",
+     "sha256": "0b1d110533f1a4e8d7b247f428287d614b4ab14db18635b86314f7fc96e8e6d3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:25Z",
+    "http": 200,
+    "url": "https://www.airi-navigator.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B5.html",
+    "raw_sha256": "aff86294148022289c52942381f440afd6e3ae11bdfe2b3bad683cbc99b3576a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B5.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "MIT AI Risk Navigator",
+   "card_snippet": "MIT AI Risk Navigator Home Browse MIT AI Risk Navigator Explore the full landscape of AI risk in one place. The Navigator connects MIT's AI Risk Repository data...",
+   "unreachable": false,
+   "names_operator": "yes ('A project of the AI Risk Initiative at MIT FutureTech')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "located through the link on airisk.mit.edu/blog/introducing-the-ai-risk-navigator and llms.txt; airisk.mit.edu/navigator is a separate stub page ('MIT Navigator') whose meta description reads 'MIT's AI Risk Initiative datasets', not the card's 'AI Risk Repository data…'"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 at T1 (mit-ai-risk-repository-aio-20261029); also an own page (the MMRS record's source / named by the task)",
+   "card": "arXiv — [2408.12622] The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence",
+   "url": "https://arxiv.org/abs/2408.12622",
+   "kind": "Overview card (arXiv abstract page, v3); also an own page the task names",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B6.html",
+     "sha256": "79eb6de30ec0f0271dd82666c6d39e8d665aa0ae80770f2829c145f8aa0a7ecd"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B6.txt",
+     "sha256": "7726a68799cf5a268bec448d6d294c2e9b7ac659edb01710675c824709192d30"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:15Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2408.12622",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B6.html",
+    "raw_sha256": "79eb6de30ec0f0271dd82666c6d39e8d665aa0ae80770f2829c145f8aa0a7ecd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B6.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "[2408.12622] The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence",
+   "card_snippet": "Overview: The AI Risk Repository catalogs and standardizes fragmented artificial intelligence risk terminology by analyzing 74 major risk frameworks containing ...",
+   "unreachable": false,
+   "names_operator": "no (the authors and MIT not named on the abstract page; the Initiative not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet opens 'Overview:' and is not a span of the abstract (the abstract says 'analyzed every major AI risk framework published to date-74 frameworks containing 1,725 distinct risks'; 'standardizes' is the snippet's word)"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "MIT AI Risk Initiative — Repository Update: December 2025",
+   "url": "https://airisk.mit.edu/blog/repository-update-december-2025",
+   "kind": "Overview card (blog post, 4 December 2025)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B7.html",
+     "sha256": "8afe267cf8dd329a8f815610775a96692ebb9d45ac59f3d9c65da1fca0f687b3"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B7.txt",
+     "sha256": "21849cbdbd3f025991ad652e10cafa5f1043b03956b38503c8360c6c9ec8ef08"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:15Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/blog/repository-update-december-2025",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B7.html",
+    "raw_sha256": "8afe267cf8dd329a8f815610775a96692ebb9d45ac59f3d9c65da1fca0f687b3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B7.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "Repository Update: December 2025",
+   "card_snippet": "Foundational Challenges in Assuring Alignment and Safety of Large Language Models A Survey on Responsible LLMs: Inherent Risk, Malicious Use, and Mitigation Str...",
+   "unreachable": false,
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet is two of the post's listed frameworks' titles"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8 at T1 (mit-ai-risk-repository-aio-20261029); also an own page (the MMRS record's source / named by the task)",
+   "card": "MIT AI Risk Initiative — About",
+   "url": "https://airisk.mit.edu/about",
+   "kind": "Overview card (own page: the Initiative's About page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B8.html",
+     "sha256": "b40b72f7dbd5c16c3d50da84dc12cbfc9974e71e5ffd84e3dc8f0a95305e3396"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B8.txt",
+     "sha256": "a7b938e0aa7923a9b38c7dc508258053d9348c46e582916b770bbba25a0c39a1"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:14Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/about",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B8.html",
+    "raw_sha256": "b40b72f7dbd5c16c3d50da84dc12cbfc9974e71e5ffd84e3dc8f0a95305e3396",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B8.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "About",
+   "card_snippet": "No single dataset captures all of this, so we maintain several connected workstreams, each answering a different question. * AI Risk Repository What are the ris...",
+   "unreachable": false,
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the task names this page as an own page; carried once, as a card"
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "LinkedIn — MIT AI Risk Initiative | LinkedIn",
+   "url": "https://www.linkedin.com/showcase/mit-ai-risk-initiative/",
+   "kind": "Overview card (LinkedIn showcase page, signed-out view)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B9.html",
+     "sha256": "d098a0edbdf235f7dbf902a32d0120638b6bbbcee91cca8c49da343bf60a1fe9"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B9.txt",
+     "sha256": "ddf88ccb5ab1762adeb03456844e28541c86dae49db70ea72cd0f75bba7e71c6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:26Z",
+    "http": 200,
+    "url": "https://www.linkedin.com/showcase/mit-ai-risk-initiative/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B9.html",
+    "raw_sha256": "d098a0edbdf235f7dbf902a32d0120638b6bbbcee91cca8c49da343bf60a1fe9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B9.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "MIT AI Risk Initiative | LinkedIn",
+   "card_snippet": "The initiative includes the MIT AI Risk Repository, a living database of more than 1,700 AI risks, the AI Incident Tracker, a collaboration with the Responsible...",
+   "unreachable": false,
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet is a span of a post on the page (the post's closing paragraph, repeated on two posts); linkedin.com/company/mit-ai-risk-initiative and /showcase/mit-ai-risk-repository/ both redirect here"
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 10 at T1 (mit-ai-risk-repository-aio-20261029)",
+   "card": "ScienceDirect.com — The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence - ScienceDirect",
+   "url": "https://www.sciencedirect.com/science/article/pii/S2666389926000267",
+   "kind": "Overview card (the published article, Patterns, doi:10.1016/j.patter.2026.101517)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-risk-repository-aio-20261029",
+     "card": 10
+    }
+   ],
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B10.html",
+     "sha256": "c307c5915d333b3f22fa9a6b3f97f94aae98142cdb904ccb5b6560b40adf3666"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B10.txt",
+     "sha256": "2b435a31e901954b79bb7f37769288b62e8491182b32066550110e229fd63a6b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:55Z",
+    "http": 403,
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666389926000267",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B10.html",
+    "raw_sha256": "c307c5915d333b3f22fa9a6b3f97f94aae98142cdb904ccb5b6560b40adf3666",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B10.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'; text by stripping scripts, styles and tags (the workspace's own extractor, scratchpad h2t.py), whitespace kept by line"
+   },
+   "card_title": "The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence - ScienceDirect",
+   "card_snippet": "* Practical implications for technology management. Our AI Risk Repository provides concrete tools for managing AI's societal impact across multiple stakeholder...",
+   "unreachable": true,
+   "names_operator": "— (unreachable)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: located through the DOI on the arXiv page (B6: 'Patterns 101517 (2026)', doi:10.1016/j.patter.2026.101517 → linkinghub pii S2666389926000267); www.sciencedirect.com answered HTTP 403 twice (05:09 and 05:09:55 UTC; B10.html is the 403 body), and the publisher's other host, cell.com/patterns, answered 403 (a challenge page) once; no further retry. The snippet stands as the card's only text (B10.txt holds the card's title and snippet). Whether the snippet's 'Practical implications for technology management' heading is in the Patterns article could not be checked"
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "role": "own page, not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29",
+   "card": "own page: the repository's own page (AI Risk Repository, airisk.mit.edu/risks)",
+   "url": "https://airisk.mit.edu/risks",
+   "kind": "own page: the repository's own page (AI Risk Repository, airisk.mit.edu/risks)",
+   "surfaced_by_T": "no",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.html",
+     "sha256": "a5bd76e2fcecfd1035d1812eb1a9df6d30ecabf8f42120de43ce6230b7fd5442"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.txt",
+     "sha256": "2b705e1a289760feea4a0f2dd66d3c742e4c3a5fa48079fa60eaf9f266cf3228"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:11:05Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/risks",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.html",
+    "raw_sha256": "a5bd76e2fcecfd1035d1812eb1a9df6d30ecabf8f42120de43ce6230b7fd5442",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'"
+   },
+   "names_operator": "yes ('MIT AI Risk Initiative', 'MIT FutureTech')",
+   "names_archive": "no",
+   "note": "not cited by the MMRS record, whose URL airisk.mit.edu/ now opens on the Initiative's home (B1); admitted as the repository's own page because B1 links it as 'All Risks' and llms.txt (B12) names it the repository's canonical page; not surfaced by T"
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "role": "own page, not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29",
+   "card": "own page: airisk.mit.edu/llms.txt, the Initiative's file for language models and AI agents",
+   "url": "https://airisk.mit.edu/llms.txt",
+   "kind": "own page: airisk.mit.edu/llms.txt, the Initiative's file for language models and AI agents",
+   "surfaced_by_T": "no",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B12.html",
+     "sha256": "039e65007ed8770062e34d9730acc7484764b755b80165a3e0de9561489cf0c6"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B12.txt",
+     "sha256": "039e65007ed8770062e34d9730acc7484764b755b80165a3e0de9561489cf0c6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:11:06Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/llms.txt",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B12.html",
+    "raw_sha256": "039e65007ed8770062e34d9730acc7484764b755b80165a3e0de9561489cf0c6",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B12.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'Mozilla/5.0'"
+   },
+   "names_operator": "yes",
+   "names_archive": "no",
+   "note": "not cited by the MMRS record; admitted as the entity's own page, the site's statement addressed to the composition layer itself; a source carrying its own summary policy (§3.5): the policy audits the extraction and does not substitute for it, and it is extracted by the same rule as every other source; not surfaced by T; plain text, so .html and .txt are the same bytes"
+  }
+ ],
+ "wikipedia": {
+  "id": "W1",
+  "origin": "wikipedia",
+  "result": "no article",
+  "checked": "2026-10-29 05:10–05:11 UTC",
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=MIT_AI_Risk_Repository&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/W1-raw.html",
+    "sha256": "cd877cb2f795da2681718566942344434b7b71c4ed877be187cbccc126ed5f60"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=AI_Risk_Repository&action=raw",
+    "http": 404
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=AI_risk_repository&action=raw",
+    "http": 404
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=MIT_AI_Risk_Initiative&action=raw",
+    "http": 404
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=MIT_FutureTech&action=raw",
+    "http": 404
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/MIT_AI_Risk_Repository",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/W1.html",
+    "sha256": "88df00119de6e790135f1ab93c8427d9950ac5c09133df6a0d4adb60b7c216a5",
+    "says": "Wikipedia does not have an article with this exact name."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22AI%20Risk%20Repository%22",
+    "http": 429,
+    "note": "rate-limited; replaced by Special:Search"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=%22AI+Risk+Repository%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/W1-search.html",
+    "sha256": "c9b3bdabd488fe720cc6bbb07cd760ff5a4bd7656d284532cf409c3a64c92925",
+    "says": "The pages \"AI Risk Repository\" and '\"AI Risk Repository\"' do not exist; one result, the article 'Voiceverse NFT plagiarism scandal' (last edited 10 October 2026), whose text reads 'The MIT AI Risk Repository catalogued the incident as an example of \"economic and cultural devaluation…'"
+   }
+  ],
+  "redirect": "none (no title variant resolves; no redirect page)",
+  "note": "No article for the entity, its operator (MIT AI Risk Initiative) or its group (MIT FutureTech) exists on English Wikipedia on 2026-10-29: the raw-wikitext requests for five titles answer HTTP 404, the rendered page answers 404 with 'Wikipedia does not have an article with this exact name.', and a full-text search for the quoted name returns one article that cites the repository's classification of one incident (Voiceverse NFT plagiarism scandal), not an article on it. The fact is a property of the row: the field has no Wikipedia origin; the one mention is recorded here and not ledgered (it is not the entity's article and was not surfaced by T)."
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "hero ¶1–2",
+   "quote": "Producing the information needed to address risks from AI … Authoritative data and frameworks to help you identify, prioritize, and manage the risks from AI",
+   "claim": "the Initiative's home page: authoritative data and frameworks to identify, prioritize and manage AI risks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a common frame of reference for AI risk",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Our tools and data: 'What are the risks from AI?'",
+   "quote": "Learn about the many different AI risks and how they emerge with our living repository of AI risks",
+   "claim": "the repository named on the home page as the Initiative's living repository of AI risks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a living database of AI risks from frameworks",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "All collections: AI Risks",
+   "quote": "A living database of 1,700+ AI risks from 65 frameworks",
+   "claim": "the home page's count: 1,700+ risks from 65 frameworks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "blog: 'Explore the Frameworks Behind the AI Risk Repository'",
+   "quote": "This post shares a public Google Slides deck containing all 65 frameworks included in Version 3 of the AI Risk Repository. It provides direct access to source documents, diagrams, and key excerpts to support transparency, research, and further analysis of AI risk classifications.",
+   "claim": "the 65 Version 3 frameworks published as a deck with source documents, diagrams and key excerpts",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and its evidence: a risk as a framework states it",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Data from the MIT AI Risk Initiative is licensed under CC BY 4.0",
+   "claim": "the Initiative's data licensed CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "openness: free to copy, CC BY 4.0",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What's new in this update",
+   "quote": "Integration of 22 new AI risk frameworks, bringing the total number of included documents to 65. … Expansion of the AI Risk Database to 1,612 unique risk entries, each systematically extracted and coded.",
+   "claim": "the April 2025 update: 22 new frameworks to 65 documents, 1,612 unique risk entries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2025-04-23 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c6e93a76c8af929f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What's new in this update",
+   "quote": "Introduction of a new risk subdomain on multi-agent risks, reflecting recent developments in AI research on complex agent interactions.",
+   "claim": "a new subdomain on multi-agent risks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Domain Taxonomy: seven domains and their subdomains",
+   "date": "2025-04-23 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c6e93a76c8af929f…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the AI Risk Repository",
+   "quote": "A Domain Taxonomy, which classifies risks into seven thematic domains and 25 more granular subdomains.",
+   "claim": "the domain taxonomy given as seven domains and 25 subdomains (other own pages give 24)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Domain Taxonomy: seven domains and their subdomains",
+   "date": "2025-04-23 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c6e93a76c8af929f…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the AI Risk Repository ¶1",
+   "quote": "The AI Risk Repository is a structured and evolving resource that aims to consolidate and clarify how risks from artificial intelligence are categorized across academic, industry, and policy literatures.",
+   "claim": "a structured, evolving resource consolidating how AI risks are categorized across literatures",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a living database of AI risks from frameworks",
+   "date": "2025-04-23 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c6e93a76c8af929f…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Updated Version of the AI Risk Repository Preprint Now Available … Original release: August 2024 … Updated version: April 2025",
+   "claim": "the preprint's versions: August 2024 original, April 2025 update",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: Slattery et al., arXiv:2408.12622, Patterns 2026",
+   "date": "2025-04-23 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c6e93a76c8af929f…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "lede ¶1",
+   "quote": "A new MIT FutureTech project reviewed 43 AI frameworks produced by research, industry and government organizations; they identified 777 risks in total.",
+   "claim": "the first release: an MIT FutureTech project, 43 frameworks, 777 risks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "lede ¶2",
+   "quote": "The repository includes a risk database linking each risk to the source information (paper title, authors) and supporting evidence, such as quotes and page numbers.",
+   "claim": "each risk linked to its source and supporting evidence (quotes, page numbers)",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit and its evidence: a risk as a framework states it",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "interview: key findings",
+   "quote": "The key finding from our analysis is that there are significant gaps in existing risk frameworks, with the average framework covering only 34% of the identified risk subdomains and even the most significant frameworks covering only 70%.",
+   "claim": "Slattery: the average framework covers 34% of subdomains, the most comprehensive 70%",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline findings: coverage gaps and causes",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "interview: key findings",
+   "quote": "most of the risks (51%) were caused by AI systems rather than humans (34%), and were found after the AI model was trained and deployed (65%) rather than before (10%).",
+   "claim": "the first release's causal figures: AI 51%, human 34%; post-deployment 65%, pre-deployment 10%",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "headline findings: coverage gaps and causes",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "interview: audience",
+   "quote": "We expect that what we have produced will need some modification before it is useful for most audiences, but we hope that it provides a solid foundation.",
+   "claim": "Slattery: it will need modification before it is useful for most audiences",
+   "modality": "attributed",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "interview: reception",
+   "quote": "In less than a week, over 35,000 people have used the website and over 6,000 have viewed our explainer video on YouTube.",
+   "claim": "first week: over 35,000 website users, over 6,000 views of the explainer",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach: users, citations, search",
+   "date": "2024-08-21 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e3c9288651eb1a00…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "abstract",
+   "quote": "This comprises a living database of 777 risks extracted from 43 taxonomies, which can be filtered based on two overarching taxonomies and easily accessed, modified, and updated via our website and online spreadsheets.",
+   "claim": "v1: a living database of 777 risks from 43 taxonomies, filtered by two taxonomies, via website and spreadsheets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2024-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 56497bd8702d8e73…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "abstract",
+   "quote": "We construct our Repository with a systematic review of taxonomies and other structured classifications of AI risk followed by an expert consultation. We develop our taxonomies of AI risk using a best-fit framework synthesis.",
+   "claim": "method: systematic review, then expert consultation; taxonomies by best-fit framework synthesis",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: systematic review, expert consultation, best-fit synthesis",
+   "date": "2024-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 56497bd8702d8e73…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "abstract",
+   "quote": "Our high-level Causal Taxonomy of AI Risks classifies each risk by its causal factors (1) Entity: Human, AI; (2) Intentionality: Intentional, Unintentional; and (3) Timing: Pre-deployment; Post-deployment.",
+   "claim": "the Causal Taxonomy: entity, intentionality, timing",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Causal Taxonomy: entity, intent, timing",
+   "date": "2024-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 56497bd8702d8e73…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "abstract",
+   "quote": "Our mid-level Domain Taxonomy of AI Risks classifies risks into seven AI risk domains: (1) Discrimination & toxicity, (2) Privacy & security, (3) Misinformation, (4) Malicious actors & misuse, (5) Human-computer interaction, (6) Socioeconomic & environmental, and (7) AI system safety, failures, & limitations. These are further divided into 23 subdomains.",
+   "claim": "the Domain Taxonomy: seven domains named, 23 subdomains (v1)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Domain Taxonomy: seven domains and their subdomains",
+   "date": "2024-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 56497bd8702d8e73…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "abstract",
+   "quote": "The AI Risk Repository is, to our knowledge, the first attempt to rigorously curate, analyze, and extract AI risk frameworks into a publicly accessible, comprehensive, extensible, and categorized risk database.",
+   "claim": "to its authors' knowledge the first such curated, extracted, categorized risk database",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a common frame of reference for AI risk",
+   "date": "2024-08-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 56497bd8702d8e73…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "hero",
+   "quote": "The Navigator connects MIT's AI Risk Repository datasets through a shared taxonomy, so you can move between them and surface the patterns that matter.",
+   "claim": "the Navigator connects the datasets through a shared taxonomy",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour: the MIT AI Risk Navigator (research prototype)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 0b1d110533f1a4e8…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "banner",
+   "quote": "This is a research prototype. The data and analyses are preliminary and not yet validated",
+   "claim": "the Navigator's limit: a research prototype, preliminary, not yet validated",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour: the MIT AI Risk Navigator (research prototype)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 0b1d110533f1a4e8…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "hero ¶2; footer",
+   "quote": "A project of the AI Risk Initiative at MIT FutureTech, with the generous support of the Cambridge Boston Alignment Initiative. … © 2026 Spencer Michaels",
+   "claim": "the Navigator a project of the AI Risk Initiative, supported by the Cambridge Boston Alignment Initiative; site by Spencer Michaels",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: the MIT AI Risk Navigator (research prototype)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 0b1d110533f1a4e8…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "Yet researchers, policymakers, and technology companies lack shared terminology for discussing AI risks.",
+   "claim": "the problem: no shared terminology for AI risks",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: a common frame of reference for AI risk",
+   "date": "2026-05-05 (v3)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "Consider \"privacy\": one framework uses this term to describe a model's ability to leak sensitive training data, while another uses it to mean freedom from government surveillance.",
+   "claim": "the example: 'privacy' in two frameworks names two different things",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a common frame of reference for AI risk",
+   "date": "2026-05-05 (v3)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "We systematically analyzed every major AI risk framework published to date-74 frameworks containing 1,725 distinct risks-and organized them into a unified system.",
+   "claim": "v3: 74 frameworks containing 1,725 distinct risks, organized into one system",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2026-05-05 (v3)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "Our two classification systems reveal important patterns: contrary to common assumptions, human decisions cause nearly as many AI risks (38%) as the AI systems themselves (42%).",
+   "claim": "v3 finding: human decisions 38%, AI systems 42%",
+   "modality": "documented",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline findings: coverage gaps and causes",
+   "date": "2026-05-05 (v3)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "header; Authors",
+   "quote": "[Submitted on 14 Aug 2024 (v1), last revised 5 May 2026 (this version, v3)] … Authors:Peter Slattery, Alexander K. Saeri, Emily A. C. Grundy, Jess Graham, Michael Noetel, Risto Uuk, James Dao, Soroush Pour, Stephen Casper, Neil Thompson",
+   "claim": "the paper's dates (v1 14 Aug 2024, v3 5 May 2026) and its ten authors, Slattery first, Thompson last",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the paper: Slattery et al., arXiv:2408.12622, Patterns 2026",
+   "date": "2024-08-14 (v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Comments; Journal reference",
+   "quote": "This paper has been published in Patterns (Cell Press, 2026) under a CC BY 4.0 licence … Patterns 101517 (2026)",
+   "claim": "published in Patterns (Cell Press, 2026), CC BY 4.0",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: Slattery et al., arXiv:2408.12622, Patterns 2026",
+   "date": "2026-05-05 (v3)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7726a68799cf5a26…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "We’re pleased to share that Version 4 of the MIT AI Risk Repository is now live.",
+   "claim": "Version 4 live (4 December 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2025-12-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 21849cbdbd3f0259…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "What's new in Version 4",
+   "quote": "9 newly added frameworks, spanning government & industry reports, peer reviewed journal articles, conference papers and preprints, … ~200 new AI risk categories, expanding the repository to over 1,700 coded risks",
+   "claim": "Version 4: 9 frameworks added, ~200 risk categories, over 1,700 coded risks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2025-12-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 21849cbdbd3f0259…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Newly added frameworks: Li et al., 2025",
+   "quote": "This preprint presents a taxonomy of Generative AI Failures based on a systematic analysis of 499 publicly reported AI incidents.",
+   "claim": "among the frameworks added, one built from 499 publicly reported incidents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and its evidence: a risk as a framework states it",
+   "date": "2025-12-04 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 21849cbdbd3f0259…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Who we are ¶1",
+   "quote": "The MIT AI Risk Initiative (AIRI) provides authoritative data and frameworks to help decision-makers across the AI ecosystem identify, prioritize, and manage risks from AI.",
+   "claim": "the operator: the MIT AI Risk Initiative (AIRI)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Who we are ¶2",
+   "quote": "We are based at MIT FutureTech, a joint initiative of the Institute of the Digital Economy and MIT CSAIL at the Massachusetts Institute of Technology",
+   "claim": "based at MIT FutureTech, a joint initiative of the IDE and MIT CSAIL",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "What we do ¶1; AI Incident Tracker",
+   "quote": "No single dataset captures all of this, so we maintain several connected workstreams, each answering a different question. … A catalogue that classifies incidents where AI has already caused harm. Developed in collaboration with the AI Incident Database.",
+   "claim": "the repository one of several connected workstreams; the Incident Tracker another, developed with the AI Incident Database",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Initiative's workstreams: the tracker beside the repository",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "What we do: AI Risk Repository",
+   "quote": "A living database of more than 1,600 risks from more than 65 frameworks and papers, taxonomies to navigate risks, and expert-led prioritization of the most pressing risks.",
+   "claim": "the About page's count: more than 1,600 risks from more than 65 frameworks and papers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Our mission ¶3",
+   "quote": "Our flagship output, the AI Risk Repository, synthesizes 1700+ risks from 70+ frameworks into a common taxonomy.",
+   "claim": "the same page's second count: 1700+ risks from 70+ frameworks, the flagship output",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and version: 777/43 to 1,700+/74",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Influence / Reach",
+   "quote": "250+ … Citations … Including the 2025 and 2026 International AI Safety Reports … 290,000+ … Website users … One of the top sources returned for search queries on AI risks and incidents",
+   "claim": "its reach: 250+ citations, 290,000+ website users, one of the top sources returned for search queries on AI risks and incidents",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach: users, citations, search",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Who we are ¶3",
+   "quote": "Our work is free to use and openly available, and most of our outputs are published under a CC BY 4.0 licence.",
+   "claim": "free to use; most outputs CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: free to copy, CC BY 4.0",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 a7b938e0aa7923a9…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "post (the card's snippet)",
+   "quote": "The initiative includes the MIT AI Risk Repository, a living database of more than 1,700 AI risks, the AI Incident Tracker, a collaboration with the Responsible AI Collaborative, which connects risks to over 1,400 incidents",
+   "claim": "the Initiative's post: the repository (1,700+ risks) and the tracker, a collaboration with the Responsible AI Collaborative, over 1,400 incidents",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Initiative's workstreams: the tracker beside the repository",
+   "date": "2026-10-29 (post undated as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ddf88ccb5ab1762a…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "page about",
+   "quote": "The MIT AI Risk Repository is a comprehensive living database of over 1000 AI risks categorized by their cause and risk domain",
+   "claim": "the LinkedIn page's description: over 1000 risks by cause and domain",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a living database of AI risks from frameworks",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ddf88ccb5ab1762a…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "card snippet (ScienceDirect returned 403)",
+   "quote": "Practical implications for technology management. Our AI Risk Repository provides concrete tools for managing AI's societal impact across multiple stakeholder",
+   "claim": "the published article's snippet: concrete tools for managing AI's societal impact across stakeholders",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a common frame of reference for AI risk",
+   "date": "2026 (Patterns, by B6)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list (saved as B10.txt)"
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "What is the AI Risk Repository?",
+   "quote": "The AI Risk Repository has three parts: … The AI Risk Database captures 1700+ risks extracted from 74 existing frameworks and classifications of AI risks",
+   "claim": "the repository's own page: three parts; the database captures 1700+ risks from 74 frameworks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a living database of AI risks from frameworks",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Domain Taxonomy of AI Risks",
+   "quote": "The Domain Taxonomy of AI Risks classifies risks from AI into seven domains and 24 subdomains.",
+   "claim": "seven domains and 24 subdomains, 7.6 multi-agent risks the last",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Domain Taxonomy: seven domains and their subdomains",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "Causal Taxonomy of AI Risks",
+   "quote": "AI: Due to a decision or action made by an AI system … Human: Due to a decision or action made by humans … Other: Due to some other reason or ambiguous",
+   "claim": "each causal factor has a third value, Other (entity shown; intent and timing the same)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Causal Taxonomy: entity, intent, timing",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: How did you create the AI Risk Repository?",
+   "quote": "We used a systematic search strategy, forwards and backwards searching, and expert consultation, to identify 65 AI risk classifications, frameworks, and taxonomies. We extracted 1600+ risks from these documents into a living AI risk database.",
+   "claim": "method: systematic search, forwards and backwards searching, expert consultation; 65 documents, 1600+ risks",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: systematic review, expert consultation, best-fit synthesis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: limitations",
+   "quote": "Has potential for errors and subjective bias; we used a single expert reviewer for extraction and coding. … May include poorly communicated or unclear risks: we extracted risks as presented.",
+   "claim": "limits: a single expert reviewer for extraction and coding; risks extracted as presented",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: limitations",
+   "quote": "Limited to risks from 65 documents (although we screened >17,000 records after a systematic search of peer-reviewed and gray literature) … May be missing emerging, domain-specific risks, and unpublished risks.",
+   "claim": "limits: 65 documents (from >17,000 screened); may miss emerging, domain-specific and unpublished risks",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: limitations",
+   "quote": "Our taxonomies prioritize clarity and simplicity over nuance. … Our taxonomies do not categorize risks by potentially important factors such as risk impact, likelihood, or discuss the interaction between risks.",
+   "claim": "limits: clarity over nuance; no impact, likelihood or interaction",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "How to use the AI Risk Repository",
+   "quote": "Our Database is free to copy and use",
+   "claim": "the database free to copy and use",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: free to copy, CC BY 4.0",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: other databases",
+   "quote": "What are some other databases of AI risks? … https://attack.mitre.org/ … https://airisk.io/ … https://avidml.org/#efforts … https://www.aitracker.org/#catalog-tabs",
+   "claim": "other databases of AI risks named by the repository: MITRE ATT&CK, airisk.io, AVID, aitracker.org",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "place: other databases of AI risks, the harm basin",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: two taxonomies",
+   "quote": "Because these classification systems were so different, it was hard to unify them; high-level risk categories such as “Diffusion of responsibility” or “Humans create dangerous AI by mistake” do not map to narrower categories like “Misuse” or “Noisy Training Data,” or vice versa.",
+   "claim": "why two taxonomies: causal categories and hazard categories do not map onto each other",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: systematic review, expert consultation, best-fit synthesis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "FAQ: citation",
+   "quote": "To reference our repository, you can cite our pre-print paper:",
+   "claim": "the repository cited by its preprint",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: Slattery et al., arXiv:2408.12622, Patterns 2026",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 2b705e1a289760fe…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "¶2",
+   "quote": "Use this file to orient LLMs and AI agents to the main AIRI resources at airisk.mit.edu and the related AI Risk Navigator.",
+   "claim": "a file addressed to LLMs and AI agents, orienting them to the Initiative's resources",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "machine-facing guidance: llms.txt",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 039e65007ed87700…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Important guidance for AI assistants",
+   "quote": "Refer to the project as the MIT AI Risk Initiative, or AIRI when the abbreviation is useful. … Treat AIRI resources as living datasets. Check the linked pages before giving exact counts, dates, version numbers, or coverage claims.",
+   "claim": "guidance to assistants: name the MIT AI Risk Initiative; check the pages before giving exact counts, dates or versions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "machine-facing guidance: llms.txt",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 039e65007ed87700…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Important guidance for AI assistants",
+   "quote": "Do not present AIRI datasets as legal, safety, or investment advice. They are research resources and decision-support tools.",
+   "claim": "guidance: not legal, safety or investment advice; research resources",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-facing guidance: llms.txt",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 039e65007ed87700…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Suggested Answering Behavior",
+   "quote": "For questions about observed harms, use the MIT AI Incident Tracker and distinguish reported incidents from predicted risks. … For cross-dataset questions, use the MIT AI Risk Navigator, but note that it is a research prototype and may contain preliminary analyses.",
+   "claim": "guidance: distinguish reported incidents from predicted risks; note that the Navigator is a research prototype",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-facing guidance: llms.txt",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 039e65007ed87700…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Core AIRI Pages",
+   "quote": "[AI Risk Repository](https://airisk.mit.edu/risks): Living database of AI risks, including the AI Risk Database, Causal Taxonomy, Domain Taxonomy, methodology notes, use cases, limitations, data access links, and citation guidance.",
+   "claim": "the canonical page for the repository is /risks, with its limitations and citation guidance",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a living database of AI risks from frameworks",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 039e65007ed87700…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "MIT AI Risk Initiative — MIT AI Risk Initiative",
+  "B2": "MIT AI Risk Initiative — AI Risk Repository Report updated (April 2025)",
+  "B3": "MIT Initiative on the Digital Economy — MIT Researchers Create an AI Risk Repository - MIT Initiative on the Digital Economy",
+  "B4": "MIT FutureTech — FutureTech",
+  "B5": "MIT AI Risk Navigator — MIT AI Risk Navigator",
+  "B6": "arXiv — [2408.12622] The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence",
+  "B7": "MIT AI Risk Initiative — Repository Update: December 2025",
+  "B8": "MIT AI Risk Initiative — About",
+  "B9": "LinkedIn — MIT AI Risk Initiative | LinkedIn",
+  "B10": "ScienceDirect.com — The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence - ScienceDirect",
+  "B11": "MIT AI Risk Initiative — AI Risk Repository (airisk.mit.edu/risks)",
+  "B12": "MIT AI Risk Initiative — llms.txt (airisk.mit.edu/llms.txt)",
+  "W1": "Wikipedia — no article"
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "row": "search-arena",
+ "address": "search arena leaderboard",
+ "entity": "Search Arena, the leaderboard of search-enabled (search-augmented) language models rated from head-to-head human votes, at arena.ai/leaderboard/search, run by Arena (arena.ai; formerly LMArena and Chatbot Arena; Arena Intelligence Inc.); introduced 15 April 2025 (blog 'Introducing the Search Arena'); its dataset paper Miroyan et al., arXiv:2506.05334 (v1 5 June 2025, v2 2 March 2026; ICLR 2026), with the dataset search-arena-24k; its published leaderboard history in Arena's Hugging Face dataset lmarena-ai/leaderboard-dataset (subsets search, search_style_control); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "search-arena",
+  "address": "search arena leaderboard",
+  "addresses": [
+   "search arena leaderboard"
+  ],
+  "entity": "Search Arena, the leaderboard of search-enabled (search-augmented) language models rated from head-to-head human votes, at arena.ai/leaderboard/search, run by Arena (arena.ai; formerly LMArena and Chatbot Arena; Arena Intelligence Inc.); introduced 15 April 2025 (blog 'Introducing the Search Arena'); its dataset paper Miroyan et al., arXiv:2506.05334 (v1 5 June 2025, v2 2 March 2026; ICLR 2026), with the dataset search-arena-24k; its published leaderboard history in Arena's Hugging Face dataset lmarena-ai/leaderboard-dataset (subsets search, search_style_control); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+  "row_type": "C (public entity: a leaderboard and its dataset)",
+  "aliases": [
+   {
+    "pattern": "\\bsearch[ -]arena\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\barena\\.ai\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\blmarena\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bLM[ -]Arena\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bchatbot arena\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bLMSYS\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\b2506\\.05334\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bMiroyan\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "human-preference leaderboards and rankings of language models",
+    "pattern": "\\b(leaderboards?|(AI|LLM|model) rankings?|rankings? of (AI |language )?models|human[- ]preference (evaluation|votes?|dataset|data)|crowd-?sourced (evaluation|votes?|human))\\b",
+    "flags": "i",
+    "basis": "field: B1 (card 1, title: 'AI Search Leaderboard: Top Models for Research'); B2 (card 2, title: 'Arena Leaderboard: Official AI Model Rankings & Benchmarks'); B3 (Arena blog, TL;DR: 'a crowdsourced in-the-wild evaluation platform for search-augmented LLM systems based on human preference'); B4 (arXiv abstract: 'a crowd-sourced, large-scale, human-preference dataset'); B8 (Wikipedia, Arena: 'a public, web-based platform that evaluates large language models (LLMs)')"
+   },
+   {
+    "term": "search-augmented language models and citation",
+    "pattern": "\\b(search[- ](augmented|enabled) (LLMs?|language models?|AI|systems?)|AI search (engines?|systems?|surfaces?))\\b",
+    "flags": "i",
+    "basis": "field: B4 (arXiv abstract: 'Search-augmented language models combine web search with Large Language Models (LLMs)'); B3 (Arena blog, §1: 'Search-augmented LLM systems integrate dynamic real-time web data'); the entity's object, the models it rates"
+   }
+  ],
+  "classes_note": "Two classes, each sourced from the field by locus: Search Arena as a human-preference leaderboard, a ranking of AI models (B1's and B2's card titles, B3, B4, B8; the class is model rankings, not ranking as such, which the archive names everywhere as an operator, R_rank, of search), and the class of systems it rates, search-augmented language models and their citations (B3, B4). The second is the class of the entity's object, not the entity: an O-class candidate on it is admitted only where the archive applies its own category to search-augmented answer systems' citation, attribution or preference in a sentence that bears on what the leaderboard measures (its unit, the vote, the citation finding); a sentence on one named answer surface (Google's AI Overview, Perplexity, ChatGPT search) as itself is a claim on that surface and not admitted here. The aliases are the entity's name, its operator's domain and former names (LMArena, LM Arena, Chatbot Arena, LMSYS), the dataset paper's identifier and first author; 'LMSYS' and 'LM Arena' are case-sensitive. 'Arena' alone is not an alias (it is common English). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on Search Arena or on Arena's leaderboards as the class the entity belongs to (what it is, its unit and method, its findings on citation, its standing as a ranking surface, a measure taken on it); a bare mention, a link list, a model ranking cited from Arena as evidence for something else, or a generic use of 'leaderboard' about another object is not a claim on the entity.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'search arena leaderboard' (search-arena-leaderboard-aio-20261029, OBS-cd6ab4746f08, AXN:0AB6.CAPTURE.⛳🧱🟢⏪🎻🏛️), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN. Second pass 2026-10-29: 'AI/LLM/model rankings' added to the first class (basis B2's card title; a bare 'ranking' returned 322 sentences in 178 deposits, nearly all on search ranking as such, which is not the class) after the first reading, and one citation hop run from the deposits admitted by reading (#741, #1705).",
+  "hop_from": [
+   741,
+   1705
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 3,
+  "D_deposits": 2,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 14,
+  "O_deposits": 14,
+  "H_candidates": 12
+ },
+ "per_deposit": {
+  "D": {
+   "716": 1,
+   "741": 2
+  },
+  "R": {},
+  "O": {
+   "186": 1,
+   "197": 1,
+   "319": 1,
+   "325": 1,
+   "326": 1,
+   "687": 1,
+   "735": 1,
+   "741": 1,
+   "1114": 1,
+   "1275": 1,
+   "1607": 1,
+   "1608": 1,
+   "1686": 1,
+   "1705": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "4f9b5857d95c841bfc6909404b125e75d162ed1bbfb936c1f69805d7e364b4a3",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "5480e8a19419490dc42ee1dd713a4801ad2f80b2146964a0a8088cfcda31892f",
+  "candidates-H.jsonl": "70999b1c6fb1bd77d149944879ecd51bae68d19056b668673d084ae933829552"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,85 @@
+{
+ "row": "mit-ai-risk-repository",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the MIT AI Risk Repository (what it is, its operator, its unit, its taxonomies, its counts, its limits); R, a relation the archive states between the repository and an archive object; O, an archive category applied to the repository or to the class the field sources for it (AI risk frameworks, taxonomies and databases: B6, B4, B11). A bare mention, a link list, a citation list or a homonym is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/mit-ai-risk-repository-aio-20261029/",
+   "reason": "the Capture Registry's findings and analysis for the entity's capture (OBS-21a7cea64b70, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/mit-ai-risk-repository/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'mit-ai-risk-repository'], rows[slug == 'mit-ai-incident-tracker'].relations and .intake, candidates, candidates_note, schema_note; /home/claude/fleet/machinemediation-org/scripts/meta_aggregator/articles.py ARTICLES['mit-ai-risk-repository'] and ARTICLES['ai-incident-database'] Place in the field; rendered aggregators/mit-ai-risk-repository/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis, and the claims on this entity in its sibling records; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26"
+   ]
+  }
+ ],
+ "not_admitted": [],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "no deposit admitted at the string pass, so no hop"
+ },
+ "class_pass": "O-class: the class term (AI risk frameworks, taxonomies and databases, sourced from B6, B4, B11) matched no sentence in the archive's 1,711 scanned texts (summary.json, O_class 0)",
+ "observations": "No deposit text names the repository, its operator, its host, its group, its paper's arXiv id or its lead author, by any alias in the config; the class term matched nothing. The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 0,
+   "O_deposits": 0,
+   "H_candidates": 0
+  },
+  "deposits_candidate": 0,
+  "deposits_admitted": 0,
+  "hop_candidates": 0,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 6,
+   "mmrs": 26,
+   "deposit": 0
+  }
+ }
+}

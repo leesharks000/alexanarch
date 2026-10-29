@@ -1,0 +1,128 @@
+{
+ "row": "problematic-paper-screener",
+ "address": "problematic paper screener",
+ "entity": "The Problematic Paper Screener (PPS, dbrech.irit.fr/pls/apex/f?p=9999:1; stable URL irit.fr/~Guillaume.Cabanac/problematic-paper-screener), est. 27 February 2021, run by Guillaume Cabanac (IRIT, Toulouse) with Cyril Labbé (Université Grenoble Alpes) and Alexander Magazinov: detectors over the literature (tortured phrases, SCIgen, Mathgen, references annulled, concerning or flagged, Feet of Clay and others), harvesting Crossref with the Retraction Watch Database, Dimensions, PubMed and PubPeer; presented in arXiv:2210.04895 (WCRI 2022); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "problematic-paper-screener",
+  "address": "problematic paper screener",
+  "entity": "The Problematic Paper Screener (PPS, dbrech.irit.fr/pls/apex/f?p=9999:1; stable URL irit.fr/~Guillaume.Cabanac/problematic-paper-screener), est. 27 February 2021, run by Guillaume Cabanac (IRIT, Toulouse) with Cyril Labbé (Université Grenoble Alpes) and Alexander Magazinov: detectors over the literature (tortured phrases, SCIgen, Mathgen, references annulled, concerning or flagged, Feet of Clay and others), harvesting Crossref with the Retraction Watch Database, Dimensions, PubMed and PubPeer; presented in arXiv:2210.04895 (WCRI 2022); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+  "row_type": "C (a public entity on which the archive bears: a monitor of the scholarly literature, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bproblematic paper screener\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPPS\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bdbrech\\.irit\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bCabanac\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bMagazinov\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bCyril Labb[ée]\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "paper-mill detection",
+    "pattern": "\\bpaper[- ]mills?\\b",
+    "flags": "i",
+    "basis": "field: B2 (The Conversation, 29 January 2025, standfirst: 'The Problematic Paper Screener trawls through 130 million scholarly papers every week looking for telltale signs that papers were produced by paper mills.')"
+   },
+   {
+    "term": "research integrity tools",
+    "pattern": "\\bresearch integrity\\b",
+    "flags": "i",
+    "basis": "field: B4 (Research Signals, 20 June 2024, title and ¶1: 'Problematic Paper Screener: a new signal to help protect research integrity'; 'some build tools to enhance these efforts')"
+   },
+   {
+    "term": "post-publication assessment",
+    "pattern": "\\bpost[- ]publication (re-?)?(assessment|review|peer review|scrutiny)\\b",
+    "flags": "i",
+    "basis": "field: B3 (arXiv:2210.04895, abstract: 'Post publication assessment remains necessary to check erroneous or fraudulent scientific publications. We present an online platform, the 'Problematic Paper Screener'')"
+   },
+   {
+    "term": "correction and curation of the scholarly record",
+    "pattern": "\\b(scholarly|scientific) (record|literature)\\b",
+    "flags": "i",
+    "basis": "field: B3 (abstract: 'We provide a new effective tool to curate the scientific literature.'); B4 (¶3–4: 'help correct the scholarly record')"
+   },
+   {
+    "term": "detection of bogus publications",
+    "pattern": "\\b(bogus|fraudulent|fake|fabricated|problematic) (scientific |scholarly )?(papers|publications|articles)\\b",
+    "flags": "i",
+    "basis": "field: B2 (The Conversation, authors' paragraph: 'who specialize in detecting bogus publications'); B3 (abstract: 'erroneous or fraudulent scientific publications'); B4 (¶3: 'over 12,000 problematic publications that have not been retracted')"
+   }
+  ],
+  "classes_note": "Five classes, each sourced from the field by locus: the screener as a detector of paper-mill output (B2), as a research-integrity tool (B4), as post-publication assessment (B3), as a curator and corrector of the scholarly record (B3, B4), and as a detector of bogus or fraudulent publications (B2, B3, B4). No field source places the screener in a class of the archive's own; 'aggregators of machine-mediated reception work' is the MMRS record's class, an archive source, ledgered as MMRS claims and not run as an O-class here, since the brief confines classes to what B sources. The aliases are the entity's name, its abbreviation PPS (case-sensitive; it also names other things, and candidates on it are read and set aside where they do), its host, and its three makers' names. The detector terms (tortured phrase(s), SCIgen, Mathgen, Feet of Clay) were also grepped over data/texts before the pass and match nothing. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the screener, or applies an archive category to a class the field sources for it (paper-mill output, research integrity, post-publication assessment, the scholarly record's correction, bogus publications); a bare mention, a generic use of 'scientific literature' or 'scholarly record' about another object, or a list item is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'problematic paper screener' (problematic-paper-screener-aio-20261029, OBS-9180ce10e2aa, ADDR-296c127e05a9), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#741, O-class).",
+  "hop_from": [
+   741
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 33,
+  "O_deposits": 23,
+  "H_candidates": 5
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "32": 1,
+   "54": 1,
+   "56": 2,
+   "176": 2,
+   "194": 1,
+   "412": 1,
+   "542": 2,
+   "553": 1,
+   "626": 1,
+   "741": 3,
+   "752": 1,
+   "833": 1,
+   "858": 1,
+   "968": 1,
+   "969": 2,
+   "971": 2,
+   "1046": 1,
+   "1101": 2,
+   "1160": 2,
+   "1176": 1,
+   "1209": 1,
+   "1219": 1,
+   "1452": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "9111424bf9fd51e86f418bc3c51e033fe5d79da4ffcc9a025feaef7547eaa148",
+  "candidates-H.jsonl": "b23eae3d367209ed925999319fa80a117e794138c96de3877cb86272f12f0219"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,85 @@
+{
+ "row": "cms-ai-copyright-tracker",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the CMS AI and Copyright Case Tracker (what it is, its cases, its scope, its operator, its limits); R, a relation the archive states between the tracker and an archive object; O, an archive category applied to the tracker or to the class the field sources for it (AI and copyright case trackers: B1, B4). A bare mention, a link list or a cms.law URL cited for another matter is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/cms-ai-and-copyright-case-tracker-aio-20261029/",
+   "reason": "the Capture Registry's findings and analysis for the entity's capture (OBS-fd62b2209523, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/cms-ai-copyright-tracker/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'cms-ai-copyright-tracker'], schema_note, candidates, candidates_note; scripts/meta_aggregator/articles.py ARTICLES['cms-ai-copyright-tracker']; rendered aggregators/cms-ai-copyright-tracker/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24"
+   ]
+  }
+ ],
+ "not_admitted": [],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "no deposit admitted at D, R or O, so no hop was run (§3.4 (3) runs from admitted deposits)"
+ },
+ "class_pass": "O-class: the class term (AI and copyright case trackers, sourced from B1 and B4) matched no sentence in the archive's 1,711 scanned texts (summary.json, O_class 0)",
+ "observations": "The string pass returned no candidate at D, R or O: no deposit text names the tracker by any of its names, the page's phrase 'copyright + AI case tracker', the domain cms.law, 'CMS (law firm)' or the MMRS slug, and none uses the class term. A check outside the pass, for orientation only, found no deposit naming Taylor Wessing, Kneschke or LAION, and one 'Getty' (#1699, not the case). The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 0,
+   "O_deposits": 0,
+   "H_candidates": 0
+  },
+  "deposits_candidate": 0,
+  "deposits_admitted": 0,
+  "hop_candidates": 0,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 8,
+   "mmrs": 24,
+   "deposit": 0
+  }
+ }
+}

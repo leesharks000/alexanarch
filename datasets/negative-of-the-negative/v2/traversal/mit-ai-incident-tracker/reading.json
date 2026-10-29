@@ -1,0 +1,102 @@
+{
+ "row": "mit-ai-incident-tracker",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the MIT AI Incident Tracker (what it is, its operator, its method, its dimensions, its counts, its limits); R, a relation the archive states between the tracker and an archive object; O, an archive category applied to the tracker or to a class the field sources for it (AI incident databases and trackers: B3, B1; LLM classification of incident reports: B3, B1). A bare mention, a link list or a generic use of 'classify' about another object is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/mit-ai-incident-tracker-aio-20261029/",
+   "reason": "the Capture Registry's findings and analysis for the entity's capture (OBS-65034e45b99a, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/mit-ai-incident-tracker/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'mit-ai-incident-tracker'] and scripts/meta_aggregator/articles.py ARTICLES['mit-ai-incident-tracker']; rendered aggregators/mit-ai-incident-tracker/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 662,
+   "strata_considered": [
+    "O"
+   ],
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "O-class candidate on 'LLM classification of incident reports': #662 (Supraliminal Transmission, EA-SPXI-13) says semantic inspection, 'LLM-based classification' and human review fail to catch subliminally transmitted signal, and tabulates subliminal transmission as invisible to 'LLM classification'. Its object is LLM classification used as a content filter on training data, not the classification of incident reports; the archive does not apply its category to the field's class. Not admitted."
+  },
+  {
+   "dep": 1397,
+   "strata_considered": [
+    "O"
+   ],
+   "cands": [
+    "O0003"
+   ],
+   "reason": "O-class candidate on 'LLM classification of incident reports': #1397 (the Capture Registry's June 2026 dataset) carries, in a seated capture's record, a composition saying a metadata packet 'directs AI agents, LLMs, and vector indexers on exactly how to process, classify, and cite a document'. A quotation inside a dataset row about another object (logotic programming's neighbour, the metadata packet), not a claim on incident classification. Not admitted."
+  }
+ ],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "no deposit admitted, so no hop"
+ },
+ "class_pass": "O-class: 3 sentences in 2 deposits (#662, #1397), all on 'LLM classification of incident reports', all read and rejected; the class 'AI incident databases and trackers' matched nothing in the archive's 1711 scanned texts (summary.json)",
+ "observations": "No deposit names the tracker: 'MIT AI Incident Tracker', 'AI Incident Tracker', 'airisk.mit.edu', 'MIT AI Risk Initiative' and 'Arcola AI' occur in no deposit text (D 0, R 0). The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 3,
+   "O_deposits": 2,
+   "H_candidates": 0
+  },
+  "deposits_candidate": 2,
+  "deposits_admitted": 0,
+  "hop_candidates": 0,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 5,
+   "mmrs": 22,
+   "deposit": 0
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "row": "mit-ai-incident-tracker",
+ "address": "mit ai incident tracker",
+ "entity": "The MIT AI Incident Tracker (airisk.mit.edu/ai-incident-tracker), part of the MIT AI Risk Initiative at MIT FutureTech: AI Incident Database reports processed by Arcola AI's LLM pipeline and classified by the MIT Risk Repository's taxonomies, a harm severity rating based on CSET's AI Harm Taxonomy, EU AI Act risk level and a national-security impact framework; a derived layer over the AIID",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "mit-ai-incident-tracker",
+  "address": "mit ai incident tracker",
+  "entity": "The MIT AI Incident Tracker (airisk.mit.edu/ai-incident-tracker), part of the MIT AI Risk Initiative at MIT FutureTech: AI Incident Database reports processed by Arcola AI's LLM pipeline and classified by the MIT Risk Repository's taxonomies, a harm severity rating based on CSET's AI Harm Taxonomy, EU AI Act risk level and a national-security impact framework; a derived layer over the AIID",
+  "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bMIT AI Incident Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(AIRI )?AI Incident Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bairisk\\.mit\\.edu\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bMIT AI Risk Initiative\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bArcola AI\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI incident databases and trackers",
+    "pattern": "\\b(AI )?incident (databases?|trackers?|monitors?|repositor(y|ies)|reporting)\\b",
+    "flags": "i",
+    "basis": "field: B3 (AI Incident Tracker June 2026 Update, Introduction ¶2): 'Several databases already collect reports of AI-related incidents, including the AI Incident Database, the OECD’s AI Incident Monitor, the AIAAIC Repository, the Political Deepfakes Database, and others. The MIT AI Incident Tracker project builds on these efforts'; B1 (tracker page): 'current databases struggle with inconsistent structure'"
+   },
+   {
+    "term": "LLM classification of incident reports",
+    "pattern": "\\b(LLMs?|large language models?|language[- ]models?)\\b[^.]{0,60}\\bclassif(y|ies|ied|ication)\\b",
+    "flags": "i",
+    "basis": "field: B3 (Executive Summary): 'The AI Incident Tracker uses large language models (LLMs) to process incident reports from the AI Incident Database (AIID) and classify them along five taxonomies'; B1 (What is the AI Incident Tracker? ¶1): 'Raw reports from the AI Incident Database (AIID) are processed by Arcola AI's LLM pipeline, which categorizes them'"
+   }
+  ],
+  "classes_note": "Two classes, sourced from the field by locus: the tracker as one of the AI incident databases it builds on (B3, B1), and the tracker's method, the classification of incident reports by language models (B3, B1). No field source places the tracker in a class of the archive's own (aggregators of machine-mediated reception work is the MMRS record's class, an archive source, ledgered as MMRS claims and not run as an O-class). The aliases are the entity's name, its short form 'AI Incident Tracker' (with 'AIRI', as MIT FutureTech's news writes it), its host, its operator's name and its pipeline's maker. The AI Incident Database and the MIT AI Risk Repository are distinct entities (derived_from, part_of) and are not aliases. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the tracker, or applies an archive category to incident trackers or to LLM classification of incident reports as a class; a bare mention, a link list or a generic use of 'classify' about another object is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'mit ai incident tracker' (mit-ai-incident-tracker-aio-20261029, OBS-65034e45b99a, ADDR-f65abd8a4bbe), Google AI Overview (expanded), signed out, incognito.",
+  "hop_from": []
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 3,
+  "O_deposits": 2,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "662": 2,
+   "1397": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "bbd0178a39895e117c6834e18bc80d67b835ac8c2bf6811996f2e1a3105ef2cf",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

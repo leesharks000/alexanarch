@@ -1,0 +1,1588 @@
+TITLE: GEO & AEO, the definitive guide to generative engine optimization | Marketing.Chat | Marketing.Chat - AI for MarketingMarketing.ChatMarketing.Chat
+
+Marketing.Chat
+
+Product
+
+Cases
+
+Resources
+
+GEO Monitor
+
+Pricing
+
+Enterprise
+
+PTEN
+Sign inStart free
+
+ReadingTop of guide
+
+Contents
+
+01Fundamentals and definitions
+
+02SEO vs AEO vs GEO
+
+03Metrics and measurement in LLMs
+
+04GEO techniques (Aggarwal paper)
+
+05AEO techniques
+
+06Case studies and benchmarks
+
+07Technical considerations
+
+08Brazilian market
+
+09Academia and research
+
+10Trends 2025–2027
+
+11Challenges, critiques and ethical limits
+
+12Tools and resources
+
+13Conclusion and recommendations
+
+14Glossary
+
+15Bibliography
+
+★Frequently asked questions
+
+Home
+
+Guides
+
+GEO: definitive guide
+
+Updated on April 21, 2026
+
+PILLAR D · DEFINITIVE GUIDE · GEO & AEO
+
+GEO & AEO: the guide to showing up in ChatGPT, Claude, Gemini and Perplexity.
+
+We consolidated Princeton's seminal paper (KDD 2024), 40+ market benchmarks, the Brazilian context and a 90-day roadmap. Practical goal: don't let your brand disappear when the prospect asks an AI.
+
+Free GEO audit View bibliography
+
+Updated onApril 21, 2026
+
+Reading time~25 min
+
+Words~20,000
+
+Sources cited90+
+
+Research and editingGustavo Stork + Marketing.Chat Research
+
+EXECUTIVE SUMMARY
+
+What you need to know before continuing.
+
+Search is splitting into three layers running in parallel: traditional search (SEO), answer engines (AEO) and generative engines (GEO). The seminal paper "GEO: Generative Engine Optimization" by Aggarwal et al. (Princeton, Georgia Tech, Allen Institute, IIT Delhi), presented at KDD 2024, coined the discipline academically. It showed LLM optimization techniques can raise a source's visibility by up to 40%, with peaks of 115% for sources ranked 5th.
+
+The market signals keep adding up. Gartner projects a 25% drop in traditional search volume by 2026. Google AI Overviews cut the #1 position's CTR by anywhere from 34.5% to 61%. ChatGPT passed 800 million weekly active users in December 2025. The AI visibility tools market went from zero to US$ 848 million in less than two years.
+
+The 2026 advantage goes to those who combine verifiable E-E-A-T, semantic HTML5, rich schema, answer-first content and distributed presence across Reddit, YouTube and Wikipedia. Not to those who try to manipulate LLM outputs on the surface.
+
+One line per insight
+
+01Traditional SEO fundamentals are not dead. 92.36% of AI Overviews citations come from the organic top 10.
+
+02Three winning techniques from the paper: Quotation Addition (+41%), Statistics Addition (+31%), Cite Sources (+27%).
+
+03Keyword stuffing is now counterproductive. It actively hurts visibility in generative engines.
+
+04Democratizing effect: sources ranked 5th can gain up to +115% visibility with GEO.
+
+0571% of publishers unknowingly block at least one of the bots that feed LLMs (GPTBot, ClaudeBot, PerplexityBot). Result: they lose AI search presence without realizing it.
+
+06Being cited inside an AI Overview is worth more than ranking #1 below it: +35% organic clicks, +91% paid clicks.
+
+On this page
+01 / 16
+
+01Fundamentals and definitions
+
+02SEO vs AEO vs GEO
+
+03Metrics and measurement in LLMs
+
+04GEO techniques (Aggarwal paper)
+
+05AEO techniques
+
+06Case studies and benchmarks
+
+07Technical considerations
+
+08Brazilian market
+
+09Academia and research
+
+10Trends 2025–2027
+
+11Challenges, critiques and ethical limits
+
+12Tools and resources
+
+13Conclusion and recommendations
+
+14Glossary
+
+15Bibliography
+
+★Frequently asked questions
+
+01 / FUNDAMENTALS
+
+Fundamentals and definitions.
+
+1.1 The paper that created the field
+
+The Generative Engine Optimization (GEO) discipline is born academically with "GEO: Generative Engine Optimization" by Pranjal Aggarwal, Vishvak Murahari, Tanmay Rajpurohit, Ashwin Kalyan, Karthik R. Narasimhan and Ameet Deshpande (Princeton, Georgia Tech, Allen Institute for AI and IIT Delhi).
+
+First version: arXiv 2311.09735 v1, November 16, 2023. Final v3 on June 28, 2024. Official publication at KDD '24 (ACM SIGKDD Conference on Knowledge Discovery and Data Mining), Barcelona, August 25 to 29, 2024. DOI 10.1145/3637528.3671900. Public resources: code on GitHub (GEO-optim/GEO), dataset on HuggingFace (GEO-optim/geo-bench) and the official site generative-engines.com/GEO/.
+
+In plain terms, the paper defines a generative engine (GE) as a system with three moving parts. First, a set of generative models (query reformulation, summarization, final answer). Second, a search engine returning candidate sources. Third, a response written in sentences, each sentence optionally backed by a subset of the retrieved sources. This abstraction covers Bing Chat, Google SGE and AI Overviews, Perplexity, ChatGPT Search and Gemini under a single framework. The formal version is: f_GE: (q_u, P_U) to r, where r is the response and each sentence carries its own citation set.
+
+1.2 Where the terms come from, and the timeline
+
+Etymology matters here because it reveals different layers of the same problem:
+
+▸SEO (Search Engine Optimization): coined in the mid-1990s, consolidated in the early 2000s with Google's dominance. Optimizes for link rankings.
+
+▸AEO (Answer Engine Optimization): Jason Barnard (Kalicube) is credited with coining the term in 2018, in the context of featured snippets, Google's Answer Box, Alexa, Siri and Google Assistant. Optimizes for direct answers.
+
+▸GEO (Generative Engine Optimization): academically formalized in November 2023 by Aggarwal et al. Optimizes for inclusion in LLM-synthesized responses.
+
+▸LLMO, AIO, AIEO: practical terms, largely functional synonyms of GEO. Neil Patel Brazil puts it bluntly: "you can use GEO, AIO or LLMO, the important thing is to understand it's the same thing." Wikipedia (entry "Generative Engine Optimization") confirms there's no academic consensus yet to rigidly distinguish AEO and GEO in 2026.
+
+Consolidated historical timeline
+
+Year
+
+Milestone
+
+1994–1998
+
+Birth of modern SEO (WebCrawler, AltaVista, Google 1998)
+
+2009–2013
+
+Hummingbird (2013), semantic search, Knowledge Graph
+
+2016–2018
+
+Featured snippets, voice assistants, Jason Barnard coins AEO
+
+Dec/2022
+
+Public launch of ChatGPT (100M MAU in Jan/2023)
+
+May/2023
+
+Google launches Search Generative Experience (SGE)
+
+Nov/2023
+
+Aggarwal et al. publish GEO on arXiv (v1)
+
+May/2024
+
+Google AI Overviews exits beta in the US
+
+Aug/2024
+
+GEO published at KDD 2024
+
+Sep/2024
+
+Jeremy Howard (Answer.AI) proposes llms.txt
+
+2025
+
+Tool explosion (Profound, Peec AI, Otterly, Scrunch, AthenaHQ)
+
+Jul/2025
+
+Cloudflare blocks AI crawlers by default; pay-per-crawl
+
+Aug/2025
+
+OpenAI launches GPT-5
+
+Sep/2025
+
+Google updates QRG with AI Overviews examples
+
+Dec/2025
+
+NYT sues Perplexity; ChatGPT > 800M WAU
+
+2026
+
+AutoGEO accepted at ICLR; Profound named G2 Winter 2026 AEO Leader
+
+1.3 The definitions this guide works with
+
+SEO: the set of technical and editorial practices that maximize visibility and ranking of web pages in SERPs (Search Engine Results Pages) based on classic retrieval plus ranking.
+
+AEO: content optimization to be returned as a direct answer by answer engines: featured snippets, Position Zero, knowledge panels, voice assistants, PAA, and non-generative SERP components.
+
+GEO: optimization to be cited, referenced or paraphrased inside synthesized responses from generative (RAG-powered) engines like ChatGPT, Perplexity, Claude, Gemini, Copilot, Google AI Overviews and AI Mode.
+
+In practice, AEO and GEO converge. Microsoft Advertising even treats them as phases (AEO = discovery and indexing, GEO = citation assessment). This study treats AEO and GEO as complementary and overlapping disciplines, in line with the practice consolidated by HubSpot, Semrush, Frase and Search Engine Land.
+
+GEO Monitor
+
+Want to know which AI queries your brand appears in?
+
+GEO Monitor runs 14 parallel queries across major LLMs and returns a report with 6D score, competitor comparison and action plan. First audit free.
+Audit my brand for free
+
+02 / COMPARISON
+
+SEO vs AEO vs GEO.
+
+2.1 Consolidated comparison table
+
+| Dimension | SEO | AEO | GEO
+
+| Primary goal | Rank links on the SERP | Be the direct answer (Snippet / voice) | Be cited in LLM-synthesized responses
+
+| Result format | List of 10 blue links | Single answer box / spoken answer | Synthetic multi-source paragraph
+
+| User intent | Informational/navigational/transactional | Short question-based, conversational | Long multi-step conversational
+
+| Optimized unit | Page (URL) | Answerable block (paragraph/list) | Semantic chunk (100–300 tokens)
+
+| Dominant signals | Backlinks, DA, keywords, Core Web Vitals | Schema markup, clarity, Q&A, entity | Citations, statistics, quotes, fluency, E-E-A-T
+
+| Keywords | Central (head + long-tail) | Long-tail + exact questions | Less central; entities and semantics
+
+| Link building | Essential | Complementary | Mentions on Reddit/YouTube weigh more
+
+| Schema markup | Recommended | Essential (FAQ, HowTo, QAPage) | Recommended (Organization, Person, sameAs)
+
+| Authority | Domain Authority / Page Authority | Verified entity + E-E-A-T | Multi-source trust, Wikidata
+
+| Key metric | Position, traffic, CTR | Share of snippets, voice queries | Share of Voice in LLM, citation rate
+
+| Ranking effect | Rank 1 takes >30% of traffic | Rank 0 cannibalizes Rank 1 | Can invert hierarchy: Rank 5 gains +115%
+
+| Tools | Ahrefs, Semrush, Moz | SEMrush Position Tracking, AlsoAsked | Profound, Peec AI, Otterly, Scrunch
+
+| Creator | SEO community (90s) | Jason Barnard (2018) | Aggarwal et al. (2023)
+
+2.2 How each discipline handles the five pillars of SEO
+
+Keywords. SEO relies on exact mapping. AEO leans on literal questions as headings. GEO values entities and semantic coverage. The original paper showed that "keyword stuffing" (the only classic SEO method tested) performed worst on GEs and actively hurt visibility (17.7 vs. 19.3 baseline).
+
+Content structure. SEO = H1/H2 with keywords. AEO = H2/H3 as exact questions followed by a 40 to 60 word direct answer. GEO = 100 to 300 token semantic chunks with descriptive headings, and tables and lists as atomic chunks.
+
+Link building. SEO is link-intensive. AEO still values backlinks. GEO depends more on co-citations, Reddit mentions (11% of AI responses cite LinkedIn, Reddit is among the most cited sources in AI Overviews) and a Wikidata entry.
+
+Authority. SEO measures via Domain Authority. AEO via Knowledge Graph entity. GEO via cross-platform signal confluence. Aleyda Solís mapped 29 variables across 4 dimensions for the SEO vs. GEO framework.
+
+Schema markup. SEO treats it as complementary. AEO treats it as essential (FAQPage, HowTo, QAPage, SpeakableSpecification). GEO benefits from rich JSON-LD connected via @graph and cross-platform sameAs.
+
+2.3 Does one replace the other?
+
+No.
+
+Lily Ray (Amsive) has observed that AI citations frequently mirror organic SEO strength: 92.36% of AI Overviews citations come from domains in Google's top 10. Seer Interactive studies show brands cited in AI Overviews gain 35% more organic clicks and 91% more paid clicks on the same queries. Rank well, get cited. Simple.
+
+SEO is the base. AEO is the direct-answer layer. GEO is the synthesis-inclusion layer. Gartner reinforces: content quantity, quality, E-E-A-T and watermarking will be the differentiators in 2026.
+
+03 / METRICS
+
+Metrics and performance measurement in LLMs.
+
+3.1 Formal metrics from the GEO paper
+
+The paper introduces metrics because classic SERP-ranking doesn't apply to synthesized answers (citation position, length and style vary).
+
+▸Word Count (Imp_wc): fraction of response words attributable to citation cᵢ, split equitably when the sentence has multiple citations.
+
+▸Position-Adjusted Word Count (Imp_pwc): adds exponential decay by position, motivated by power-law CTR studies (Goodwin 2011; Dean 2023).
+
+▸Subjective Impression: LLM-as-judge score (G-Eval + GPT-3.5) across 7 sub-metrics, Relevance, Influence, Uniqueness, Subjective Position, Subjective Count, Click-likelihood, Diversity.
+
+▸Relative improvement: (Imp(r′) − Imp(r)) / Imp(r) × 100%.
+
+These concepts form the core of modern thinking about "AI visibility".
+
+3.2 Practical industry metrics (2025–2026)
+
+| Metric | Definition | Main source
+
+| Share of Voice (SoV) in LLM | % of AI responses for a set of prompts where the brand appears | Profound, Peec AI, Otterly
+
+| Citation rate | % of responses citing the domain with a link | Scrunch, LLMrefs
+
+| Citation position | Ordinal of the citation within the response body | Peec AI
+
+| Sentiment | Positive/neutral/negative of brand mentions | Goodie AI, Peec AI
+
+| AI Overviews appearance rate | % of target queries where an AIO appears | Semrush AI Toolkit, Ahrefs
+
+| Citation-adjusted CTR | CTR considering whether there was a citation in the AIO | Seer Interactive
+
+| Crawl-to-refer ratio | Pages crawled / referrals received | Cloudflare Radar
+
+| Time-to-citation | Time between publish and first LLM citation | LLMrefs
+
+| Brand recommendation rate | % of prompts recommending the brand vs. just mentioning it | AthenaHQ, Superlines
+
+| Prompt volume | How many brand-relevant prompts are made (estimate) | Profound Conversation Explorer (400M+ prompts)
+
+3.3 The non-determinism problem
+
+SparkToro research (Rand Fishkin, 2025): LLM responses are highly inconsistent when recommending brands. Fishkin proposes measurement must be statistical at scale, not on individual responses. A Genezio test with six different tools applied to the same brand (Honda) produced radically divergent results, "each tool told a different story".
+
+Practical implication: monitor aggregated trends (averages across hundreds of prompts over time), not snapshots.
+
+3.4 Recommended dashboard architecture
+
+In practice, a mature AEO/GEO dashboard combines four layers:
+
+01GSC + GA4: traditional organic traffic + queries with high impressions and low CTR (classic signal of AIO or featured snippet capturing the click).
+
+02AI visibility platform (Profound, Peec, Otterly): SoV, citation rate, sentiment by LLM.
+
+03AI crawler log analytics (Cloudflare / Profound Agent Analytics): who is crawling and at what volume.
+
+04Manual QA: monthly testing of the top 30–50 prompts across ChatGPT, Perplexity, Gemini, Claude, essential to calibrate automated platforms.
+
+GEO Monitor
+
+Want to know which AI queries your brand appears in?
+
+GEO Monitor runs 14 parallel queries across major LLMs and returns a report with 6D score, competitor comparison and action plan. First audit free.
+Audit my brand for free
+
+04 / GEO TECHNIQUES
+
+GEO optimization techniques, scientific evidence.
+
+4.1 GEO-Bench and the nine tested techniques
+
+Aggarwal et al. built GEO-Bench: 10,000 queries (8K train, 1K validation, 1K test), 9 datasets (MS MARCO, ORCAS-I, Natural Questions, AllSouls, LIMA, Davinci-Debate, Perplexity Discover, ELI5, GPT-4 generated), 25 domains, realistic distribution (~80% informational, 10% transactional, 10% navigational). Two-step GE pipeline mimicking Liu et al. 2023: Google top-5 + GPT-3.5-turbo with citations; 5 samples temperature 0.7; 5 seeds.
+
+The 9 techniques tested (LLM-guided rewrite of a random source)
+
+Authoritative, authoritative tone
+
+Statistics Addition, add statistics
+
+Keyword Stuffing, classic SEO control
+
+Cite Sources, add citations
+
+Quotation Addition, add quotes
+
+Easy-to-Understand, simplify language
+
+Fluency Optimization, improve fluency
+
+Unique Words, unique words
+
+Technical Terms, technical terminology
+
+4.2 Quantitative results (Table 1 of the paper)
+
+Baseline: ~19.3–19.5 on both metrics.
+
+| Technique | Position-Adj. Word Count (Δ) | Subjective Impression (Δ)
+
+| Quotation Addition | 27.2 (+41%) | 24.7 (+28%)
+
+| Statistics Addition | ~+31% | +28%
+
+| Cite Sources | ~+27% | +26%
+
+| Fluency Optimization | +28% | +25%
+
+| Easy-to-Understand | +15–25% | +18–22%
+
+| Authoritative | negligible | negligible
+
+| Technical Terms | +10% | +8%
+
+| Unique Words | marginal/negative | marginal
+
+| Keyword Stuffing | 17.7 (worse than baseline) | 17.8 (worse)
+
+Reading: the three winners all rely on external evidence: Quotation Addition, Statistics Addition, Cite Sources. Fluency Optimization confirms LLMs value presentation, not just content. Keyword stuffing is counterproductive. The most cartoonish classic SEO tactic fails in GE.
+
+4.3 Democratizing effect (Table 2 of the paper)
+
+Perhaps the most important finding for small businesses:
+
+▸Rank 5 sources gain up to +115.1% visibility with Cite Sources; +99.7% with Quotation Addition; +97.9% with Statistics Addition.
+
+▸Rank 1 sources can lose up to −30% when all sources optimize.
+
+What the authors say: GEs don't lean on backlinks or domain authority like classic search engines. That levels the field for smaller creators. This is the philosophical divide between SEO and GEO. SEO rewards established domains. GEO rewards well-structured content, regardless of the source.
+
+4.4 Domain patterns (Table 3)
+
+▸Authoritative works best in Debate, History, Science.
+
+▸Cite Sources shines in Factual, Law & Government.
+
+▸Quotation Addition dominates People & Society, Explanation, History.
+
+▸Statistics Addition wins in Law & Gov., Debate, Opinion.
+
+4.5 Combinations (Figure 4)
+
+Technique pairs beat single applications by >5.5%. The best pair: Fluency Optimization + Statistics Addition. Cite Sources synergizes well even when weak individually.
+
+4.6 Production validation (Perplexity.ai)
+
+Paper's Table 5, "GEO in the wild": Quotation Addition +22% in Pos-Adj Word Count; Statistics Addition +37% in Subjective Impression. Keyword Stuffing again −10%. The techniques transfer to real production systems, with different magnitudes but consistent direction.
+
+4.7 Later works extending the paper
+
+AutoGEO (Wu et al., arXiv 2510.11438, accepted at ICLR 2026): RL trained to learn GE preferences. Reports +50.99% over Fluency Optimization (Aggarwal's strongest baseline). Presents AutoGEO_API (prompt-based) and AutoGEO_Mini (compact model).
+
+Chen et al., "GEO: How to Dominate AI Search" (arXiv 2509.08919, 2025): AI Search has a systematic bias in favor of "Earned Media" over brand-owned/social content.
+
+AgenticGEO: self-evolving system, state-of-the-art on GEO-Bench.
+
+E-GEO (arXiv 2511.20867): extends the testbed to e-commerce (Columbia/MIT).
+
+Kumar & Lakkaraju (2024), "Manipulating LLMs to Increase Product Visibility" (arXiv 2404.07981): adversarial counterpoint to GEO, demonstrates that "strategic text sequences" can inject bias into LLM recommendations, raising ethical alarms.
+
+Liu, Zhang, Liang (Stanford, EMNLP Findings 2023), "Evaluating Verifiability in Generative Search Engines" (arXiv 2304.09848): found that only 51.5% of generated sentences are fully supported by citations and 74.5% of citations actually support their claims.
+
+Your next move
+
+Pull your top 10 Search Console pages by impressions. Rewrite each with the three winning techniques. One: add 2 to 3 direct quotes from named experts. Two: drop a stat with source every 150 to 200 words. Three: link every factual claim to an authoritative primary source. Re-measure in 30 days via Otterly or Peec AI.
+
+05 / AEO TECHNIQUES
+
+AEO optimization techniques and strategies.
+
+5.1 Schema markup (JSON-LD), top priority
+
+AirOps research: pages with clear structure plus schema markup get 2.8× more AI citations. JSON-LD is Google's preferred format. The schemas that matter:
+
+▸FAQPage: essential for PAA and AI citations.
+
+▸HowTo: step-by-step with HowToStep, tool, supply.
+
+▸Article + Person (author): demonstrable E-E-A-T.
+
+▸Organization + sameAs: Knowledge Graph and Wikidata connection.
+
+▸BreadcrumbList: hierarchy.
+
+▸Product + AggregateRating: e-commerce with reviews.
+
+▸QAPage: prioritized by ChatGPT and Perplexity. It has upvoteCount, answerCount and dateCreated, which FAQPage lacks.
+
+▸SpeakableSpecification: voice (beta, US news publishers).
+
+▸ClaimReview: fact-checking.
+
+Minimal FAQPage example
+
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "What is Answer Engine Optimization?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "AEO is the practice of structuring content so that AI systems like ChatGPT, Perplexity, Claude and Google AI Overviews can extract, understand and cite it as an authoritative answer."
+}
+}]
+}
+
+Cross-platform connection via sameAs (critical for Knowledge Graph): LinkedIn, Wikidata QID, Wikipedia, Crunchbase, Twitter/X, GitHub.
+
+5.2 Featured snippets (Position Zero)
+
+Typology and tactics:
+
+▸Paragraph snippet (~82% of FS): H2 with literal question + 40–60-word answer immediately below.
+
+▸List snippet (numbered/unordered): `ol`/`ul` with 5–8 items; for how-to, each step as H3 + short paragraph.
+
+▸Table snippet: actual HTML `table` (not image), minimum 3 columns × 4 rows.
+
+▸Video snippet: VideoObject schema + transcript + timestamps (SeekToAction/Clip).
+
+Canonical formula: [question as H2] + [direct answer 40–60 words] + [elaboration] + [list/table].
+
+5.3 People Also Ask (PAA)
+
+▸Mining with AlsoAsked, AnswerThePublic, Semrush Topic Research.
+
+▸Each PAA question becomes an H2/H3.
+
+▸Answer immediately below in 2–3 sentences.
+
+▸Stack related PAA clusters.
+
+5.4 Voice search
+
+▸Conversational language; 7+ word queries.
+
+▸Average response ~29 words (Backlinko).
+
+▸Reading level 9th grade or below (Flesch 60–70+).
+
+▸LocalBusiness schema, consistent NAP, up-to-date GBP.
+
+▸SpeakableSpecification on key snippets.
+
+▸FAQ starting with "how", "what", "when", "where", "why".
+
+▸HTTPS (~70% of voice results).
+
+5.5 Canonical answer-first structure
+
+Answer pattern
+
+[H2 = user's exact question]
+
+→ 40–60-word paragraph with direct answer
+
+→ elaboration paragraph(s) with data
+
+→ list or table
+
+→ authoritative source citation with link
+
+→ [H3 = related sub-question]
+
+→ repeat pattern
+
+GEO Monitor
+
+Want to know which AI queries your brand appears in?
+
+GEO Monitor runs 14 parallel queries across major LLMs and returns a report with 6D score, competitor comparison and action plan. First audit free.
+Audit my brand for free
+
+06 / CASES & BENCHMARKS
+
+Case studies and benchmarks.
+
+6.1 Cases with quantitative data
+
+HubSpot, the most cited AI Overviews decline case: monthly organic traffic dropped from ~13.5M in Nov/2024 to <7M in Dec/2024, reaching 6M in subsequent months (Ahrefs data). CEO Yamini Rangan admitted on the earnings call that "organic search traffic is declining globally" and that "AI overviews are giving answers, and fewer people are clicking through to websites". A LinkedIn analysis sums it up: "If HubSpot, with one of the best SEO teams in the world, can experience this, none of us are safe".
+
+DMG Media (Daily Mail): CTR dropped from 25.2% on regular desktop to 2.8% when AI Overviews appear, an 89% decline. However, AI Overviews rarely trigger for breaking news, limiting aggregate impact.
+
+Bank of America (Profound, Jun/2025): 32.2% visibility across AI platforms for banking queries. Navy Federal Credit Union gained disproportionate representation vs. traditional advertising investment.
+
+AthenaHQ: publishes the strongest case studies in the category, reports 10× citation growth and 50% more demos for customers.
+
+Peec AI: published a 1M-citation benchmark study and an analysis of 232k listicle citations, original research at significant scale.
+
+Semrush study (89k LinkedIn URLs): 11% of AI responses cite LinkedIn, and individual authors are being cited, not company pages.
+
+6.2 Industry benchmarks, AI Overviews saturation
+
+Semrush Study (10M+ keywords, 2025):
+
+▸AIO prevalence: 6.49% in Jan/2025 → peak ~25% in Jul/2025 → 15.69% in Nov/2025.
+
+▸Jan/2025: 91.3% of AIO queries were informational; Oct/2025: 57.1% (with growth in commercial and transactional).
+
+▸Navigational with AIO: 0.74% → 10.33% (Jan–Oct 2025).
+
+▸Google Ads on SERPs with AIO: 25.56% in Oct/2025 (+394% vs Mar/2025).
+
+Most saturated industries (% of keywords with AIO): Science, Computers & Electronics, People & Society (>17%). Least saturated: Real Estate, Shopping, Arts & Entertainment (<3%). Fastest growth Jan–Mar 2025: Science (+22.27%), Health (+20.33%), People & Society (+18.83%), Law & Gov (+15.18%).
+
+6.3 CTR decline studies (clear convergence)
+
+| Study | Methodology | CTR drop
+
+| Ahrefs (Apr/2025) | 300k keywords, GSC | −34.5% Position 1 with AIO
+
+| Ahrefs (Dec/2025) | 300k keywords, update | −58% Position 1 with AIO
+
+| Seer Interactive (Sep/2025) | 3,119 queries, 42 orgs, 25.1M impressions | Organic CTR −61% (1.76% → 0.61%); Paid −68%
+
+| Amsive | 700k keywords, 10 sites, 5 industries | −19.98% non-branded; +18.68% branded
+
+| Authoritas | - | −47.5%
+
+| Kevin Indig | - | >50%
+
+| Pew Research | - | converges to −50%
+
+| DMG Media (internal) | Daily Mail | −89% when AIO appears
+
+Critical insight (Seer): brands cited in the AIO gain +35% organic clicks and +91% paid clicks on the same query. Being cited in the AIO is worth more than ranking #1 below it.
+
+6.4 AI search usage market data (2025–2026)
+
+ChatGPT
+
+▸800M+ WAU in Dec/2025; ~900M in Feb/2026 (OpenAI / Superlines / Arvow).
+
+▸2.5 billion prompts/day (July 2025); 18 billion messages/week.
+
+▸Annualized revenue: US$ 6B (2024) → US$ 20B (2025) → US$ 25B+ (Feb/2026). 2026 target: US$ 29.4B.
+
+▸Enterprise seats: >7M, +9× YoY, 88% retention after 12 months.
+
+▸34% of US adults have used ChatGPT (Pew, 2025); 58% among those under 30.
+
+▸Chatbot market share (StatCounter Jan/2026): ChatGPT 79.98%; Perplexity 7.89%; Gemini 7.18%; Copilot 3.5%.
+
+▸ChatGPT accounts for ~82% of AI platform referrals to the open web (Statcounter May/2025: 79.8%).
+
+▸AI-referred traffic converts ~4.4× better than organic search (Superlines/Playwire).
+
+Perplexity
+
+▸~30M MAU (Apr/2025); 45M (H2 2025).
+
+▸780M queries in May/2025 (30M/day); +20% MoM.
+
+▸239.97M visits in Nov/2025; 80.5M mobile downloads.
+
+▸Valuation: ~US$ 18–20B. ARR: ~US$ 148M (2025).
+
+General AI-in-search usage
+
+▸AI tools grow from 0.24% → 0.64% of US desktop usage (SparkToro/Datos 2025). Europe: 0.26% → 0.78%.
+
+▸Fishkin: Google still runs ~210× more searches/day than ChatGPT; traditional search is NOT in absolute decline, it's losing relative share.
+
+▸Zero-click: 58% in 2024 → 60% in 2025 (Semrush/Datos).
+
+▸Semrush/Datos: when the same keyword gets an AIO, zero-click rate dropped slightly (33.75% → 31.53%), AIO is not a direct cause of zero-click, it's a symptom of already-hard-to-convert intent.
+
+Crawl-to-refer ratios (Cloudflare)
+
+▸Googlebot: 5:1 (the classic model).
+
+▸OpenAI: 785:1 (Oct/2025) → peak 1,851:1 (Dec/2025) → 692:1 (Apr/2026), 56% improvement with OAI-SearchBot active.
+
+▸Anthropic: 10,347:1 (up to 73,000:1 at some points; peaks of 500,000:1).
+
+▸Perplexity: 118:1.
+
+07 / TECHNICAL
+
+Technical considerations.
+
+7.1 llms.txt, proposal, adoption and skepticism
+
+Origin: Jeremy Howard (Answer.AI) on Sep 3, 2024 (llmstxt.org). Solves the problem of small context windows + HTML noise (ads, JS, navigation).
+
+Two files
+
+▸/llms.txt, Markdown summary of the site structure (curated navigation).
+
+▸/llms-full.txt, full documentation in concatenated Markdown.
+
+Required structure: H1 with project name, blockquote with summary, optional Markdown sections, H2 sections with link lists [Title](URL): description, ## Optional section for less essential resources.
+
+Adoption and skepticism
+
+▸Ahrefs: ~10% of domains have implemented it (sample biased toward tech/dev).
+
+▸SE Ranking (39k domains): only 0.13%.
+
+▸Notable adopters (tech docs): Anthropic, Cursor, Bolt.new, Windsurf, Mintlify.
+
+▸John Mueller (Google Search Advocate): "FWIW no AI system currently uses llms.txt", compared to the old meta keywords tag.
+
+▸Gary Illyes (Google, Search Central Live Jul/2025): "Google doesn't support LLMs.txt and isn't planning to".
+
+▸Carolyn Shelby (Yoast) rebuts the meta keywords analogy: "LLMs tend to drop into specific pieces of content, Mission Impossible-style… This context-first approach is exactly what llms.txt enables".
+
+▸December 2025: Google added llms.txt to its own docs then removed it, Mueller confirmed "not an endorsement".
+
+Practical 2026 consensus: implement as low risk / low effort, but don't prioritize over robots.txt, schema, E-E-A-T.
+
+7.2 Robots.txt and AI bots, 3-category taxonomy
+
+Training crawlers (block = protect IP): GPTBot, ClaudeBot, anthropic-ai, CCBot, Google-Extended, Applebot-Extended, Meta-ExternalAgent, Amazonbot, cohere-ai, Bytespider, Diffbot.
+
+Search/Retrieval crawlers (block = disappear from AI search): OAI-SearchBot, Claude-SearchBot, PerplexityBot, YouBot, DuckAssistBot, Applebot, Bingbot, Googlebot.
+
+User-action fetchers (high referral value): ChatGPT-User, Claude-User, Perplexity-User, MistralAI-User, Google-NotebookLM, Meta-ExternalFetcher.
+
+Balanced strategy: allow retrieval/user-action; block training bulk.
+
+robots.txt example
+
+# Allow retrieval and user-action (AI visibility)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# Block training bulk (IP protection)
+User-agent: GPTBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+
+# Traditional search
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+Blocking statistics (2025–2026)
+
+▸Cloudflare top 10,000 Jan/2025: GPTBot 7.8% disallow; Google-Extended 5.6%.
+
+▸GPTBot blocked on ~5.6M sites (Oct/2025, +70% vs Jul/2025).
+
+▸ClaudeBot: 3.2M → 5.8M sites (+81%) Jul–Dec 2025.
+
+▸Tollbit Q2/2025: +336% YoY in blocking; 13.26% of AI requests ignore robots.txt (vs 3.3% in Q4/2024).
+
+▸arXiv study: blocking on reputable sites: 23% (Sep/2023) → ~60% (May/2025); average of 15.5 forbidden user agents.
+
+▸ALM Corp (publishers): 69% block ClaudeBot; 62% GPTBot; 49% OAI-SearchBot; 40% ChatGPT-User, 71% inadvertently block at least one retrieval bot, destroying their AI search presence unintentionally.
+
+▸Cloudflare (Jul–Dec 2025): 416 billion AI bot requests; 2.5M sites use managed robots.txt; 88% of top news outlets block AI crawlers (Wired).
+
+▸Cloudflare since Jul/2025: blocks AI crawlers by default on new domains (protecting ~20% of the web).
+
+Bot verification beyond User-Agent
+
+▸JSON IP ranges published by OpenAI, Google, Perplexity, Bing.
+
+▸Reverse DNS (dig -x IP → PTR should match the vendor domain).
+
+▸Web Bot Auth (RFC 9421 / HTTP Message Signatures), emerging cryptographic authentication standard.
+
+7.3 Core Web Vitals and AI
+
+Still relevant indirectly: LCP ≤2.5s, INP ≤200ms (replaced FID in Mar/2024), CLS ≤0.1. More critical: SSR/SSG required, AI crawlers are typically lightweight and don't render heavy JS. Aleyda Solis and Lily Ray report cases of sites "invisible" to AI because content depends on client-side JS.
+
+7.4 E-E-A-T, evolution 2022–2025
+
+2014: E-A-T introduced.
+
+Dec/2022: second "E" (Experience) added → E-E-A-T.
+
+Jan/2025 QRG: new section 4.7, AI content without human review qualifies as Lowest quality if "created to benefit owner…with very little or no attempt to benefit website visitors". Targets "scaled content abuse". Inflated filler content is penalized. "As a language model, I don't have…" → automatically Lowest.
+
+Sep/2025 QRG: 181 → 182 pages; first time with rating examples for AI Overviews; YMYL renamed to "YMYL Government, Civics & Society".
+
+Critical quote from QRG 2025: "Trust is the most important member of the E-E-A-T family because untrustworthy pages have low E-E-A-T no matter how Experienced, Expert, or Authoritative they may seem."
+
+AI Overviews recycle organic result eligibility (Google Search Central, 2025), E-E-A-T fundamentals transfer directly to AI citations.
+
+7.5 Semantic HTML5 and content chunking for RAG
+
+Critical elements: `article`, `section`, `main`, `header`, `nav`, `aside`, `figure`, `figcaption`, `time`, `cite`, `blockquote`. Provide "anchors" for embeddings and reduce hallucination risk.
+
+Chunking sweet spot: 100–300 tokens (~75–225 words) per section. One topic per section. Descriptive headings (not generic "Introduction"). Tables/lists as atomic chunks. Avoid context-dependent references ("as mentioned above", "see chart below").
+
+Chunking strategies used by LLMs: heading-based (most common), fixed-size with overlap (200–400 tokens + 50 overlap), recursive (paragraph→sentence→word), semantic chunking via embedding similarity, LLM-guided chunking, late chunking.
+
+Search Engine Land (Oct/2025): entity-driven content increases AI citation probability by +35%.
+
+GEO Monitor
+
+Want to know which AI queries your brand appears in?
+
+GEO Monitor runs 14 parallel queries across major LLMs and returns a report with 6D score, competitor comparison and action plan. First audit free.
+Audit my brand for free
+
+08 / BRAZILIAN MARKET
+
+Brazilian market and PT-BR.
+
+8.1 Adoption and vanguard agencies
+
+Neil Patel Brazil (NP Digital, since 2017) coined "Search Everywhere Optimization" — optimization for search beyond Google, including social networks and LLMs. Translates and popularizes GEO/AIO/LLMO in Portuguese.
+
+Conversion (Diego Ivo, since 2011) launched its first dedicated GEO service in 2025. The entire portfolio already has GEO initiatives in motion. Diego: "SEO is going through its biggest inflection point in three decades."
+
+Wyse (wyse.com.br/geo) positions itself as a pioneer in a proprietary GEO/AEO methodology integrating technical SEO, structured content and digital reputation.
+
+Bloomin (São Paulo) publishes extensively on GEO and offers services, with positioning in E-E-A-T and digital PR. Data: São Paulo companies that adopted GEO allocate 10–20% of the marketing budget to it.
+
+Rock Content maintains one of the earliest robust articles in Portuguese on the topic (written in 2024). Giuseppe Caltabiano (VP of Marketing): "Generative Engines represent a transformative shift in the search engine paradigm, offering direct and comprehensive answers to user queries and thus potentially reducing the need to visit sites directly."
+
+RD Station (Resultados Digitais) covers the topic on its educational blog, more as a trend than an integrated product.
+
+8.2 Brazilian specialists and thought leaders
+
+▸Marcella Merigo (NP Digital), spokesperson for "Search Everywhere Optimization"; SEO and GEO specialist with proven cases at major brands.
+
+▸Diego Ivo (Conversion), institutional voice on GEO in Brazil.
+
+▸Fábio Ricotta (Agência Mestre), traditional SEO with transition to AI.
+
+▸Vitor Peçanha (Rock Content), co-founder, educational content.
+
+▸Giuseppe Caltabiano (Rock Content), leadership perspective on GE.
+
+▸Roberto Dias Duarte (RDD10+), translates international material (e.g., adapted Charlie Guo).
+
+▸Camila Porto, Mauricio Cardoso, Alex Peixoto, Diana Martins, active BR SEO pros with posts on LinkedIn in 2025/2026.
+
+8.3 Blogs and publications in Portuguese
+
+Rock Content, Conversion, RD Station, Neil Patel Brasil, Bloomin, Orgânica Digital, bfind, Prosperidade Conteúdos. RDD10+ (Roberto Dias Duarte). Manus (Practical GEO Guide). Wyse blog.
+
+8.4 Events, communities and courses
+
+▸RD Summit (Brazil's largest digital marketing event, annual).
+
+▸SEO Summit and SEOnStage.
+
+▸Digitalks.
+
+▸MKT4Edu.
+
+▸Courses on Alura, Hotmart, Udemy PT-BR.
+
+▸YouTube channels and Brazilian LinkedIn groups growing fast in 2025.
+
+8.5 PT-BR in LLMs, particulars
+
+▸Sabiá (Maritaca AI): family of models natively trained in Brazilian Portuguese; Sabiá-3 launched in 2024. Reference for applications requiring native PT-BR fluency.
+
+▸Gemini has particularly strong performance in Portuguese (Google trained with an extensive Brazilian corpus).
+
+▸ChatGPT and Claude work well in Portuguese but occasionally show bias toward anglicized constructions; quality varies by domain.
+
+▸PT-BR vs PT-PT variations affect relevance: models tend to prioritize PT-BR (larger data volume), which penalizes Portugal-based content on Brazilian queries.
+
+▸Brazilianisms, regional slang and PT-BR technical terms (e.g., "celular" vs "telemóvel", "ônibus" vs "autocarro") should be made explicit.
+
+8.6 Google AI Overviews in Brazil
+
+Gradually rolled out in Brazil throughout 2024–2025. In 2025, coverage expanded significantly. Semrush and Conversion have published PT-specific AIO analyses showing patterns similar to the US: saturation in health, education, law and science; severe impact on publishers. G1, UOL and Folha saw measurable declines on informational queries.
+
+8.7 Brazilian academic research
+
+▸NILC/ICMC-USP (Interinstitutional Center for Computational Linguistics), leading NLP group in Portuguese.
+
+▸UFMG (DCC, IR and NLP group).
+
+▸UNICAMP (IC).
+
+▸UFRGS (INF).
+
+▸Maritaca AI (USP/UNICAMP spin-off), Sabiá models.
+
+▸Brazilian publications on GEO proper are still scarce in 2025/2026, a clear academic research opportunity.
+
+8.8 BR market data
+
+▸Brazil is consistently top 5 globally in ChatGPT usage (often top 3 on some metrics), high adoption for a middle-income country.
+
+▸AI adoption grows 4× faster in low/middle-income vs high-income countries (NBER), Brazil benefits from this trend.
+
+▸StatCounter Brazil shows ChatGPT as the dominant AI referrer, with Perplexity and Gemini growing fast.
+
+8.9 BR vs global comparison
+
+| Dimension | Global | Brazil
+
+| Tool maturity | High (Profound, Peec, Otterly, Scrunch, AthenaHQ) | Low, reliance on international tools
+
+| Academic output | Broad (ArXiv, KDD, ICLR) | Scarce on GEO; strong on PT-NLP
+
+| Published cases | Abundant | Few public cases with data
+
+| Brand investment | 15–25% of marketing (US enterprise) | 10–20% (SP, early adopters)
+
+| AI Overviews coverage | Mature (US) | Expanding in 2025
+
+| Thought leadership | Rand Fishkin, Aleyda Solis, Lily Ray | Diego Ivo, Giuseppe Caltabiano, Roberto Dias Duarte
+
+Main gap in Brazil: lack of PT-BR-specific quantitative benchmarks and original academic research on LLM citation in Portuguese.
+
+09 / ACADEMIA
+
+Academia and research.
+
+9.1 Foundational papers
+
+| Paper | Authors | Venue | Year | Contribution
+
+| GEO: Generative Engine Optimization | Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande | KDD '24 | 2023/2024 | Formalization; GEO-Bench; 9 techniques; +40%
+
+| Evaluating Verifiability in Generative Search Engines | Liu, Zhang, Liang | EMNLP Findings | 2023 | Only 51.5% of sentences fully supported
+
+| Manipulating LLMs to Increase Product Visibility | Kumar, Lakkaraju | arXiv 2404.07981 | 2024 | Adversarial counterpoint
+
+| AutoGEO | Wu, Zhong, Kim, Xiong | ICLR 2026 | 2025/2026 | +50.99% over Fluency Optimization
+
+| GEO: How to Dominate AI Search | Chen et al. | arXiv 2509.08919 | 2025 | Earned Media bias
+
+| AgenticGEO | - | arXiv | 2026 | Self-evolving agent; SOTA on GEO-Bench
+
+| E-GEO | Columbia/MIT | arXiv 2511.20867 | 2025/2026 | Extension to e-commerce
+
+| Structural Feature Engineering for GEO | - | arXiv | 2026 | Structural features
+
+| RAG (Lewis et al.) | Facebook AI | NeurIPS 2020 | 2020 | Underlying technical foundation
+
+9.2 Reference institutions and researchers
+
+Universities: Princeton (Narasimhan, Deshpande, Murahari), Georgia Tech (Rajpurohit), IIT Delhi (Aggarwal), Stanford (Liu, Liang), Harvard (Kumar, Lakkaraju), Columbia, MIT.
+
+Industrial labs: Allen Institute for AI (Kalyan), Google DeepMind, OpenAI, Anthropic, Meta AI, Microsoft Research.
+
+9.3 Research trends (2026)
+
+Automated GEO: RL and LLM-guided optimization (AutoGEO).
+
+Adversarial robustness: defense against LLM manipulation.
+
+Domain-specific GEO: e-commerce (E-GEO), healthcare, legal.
+
+Multimodal GEO: image, video, audio as sources.
+
+Agentic pipelines: GEO for autonomous agents (not just chatbots).
+
+Fair attribution: how to distribute fair credit across cited sources.
+
+9.4 Research gaps
+
+▸Longitudinal studies (how responses evolve month by month).
+
+▸Research in non-English languages, PT, Spanish, Hindi.
+
+▸Attribution economics, revenue-share models between publishers and LLMs.
+
+▸Causal impact assessment (almost everything is correlational).
+
+▸Domain-specific benchmarks (health, finance).
+
+10 / TRENDS
+
+Trends and future (2025–2027).
+
+10.1 Institutional analyst forecasts
+
+Gartner (press release Feb/2024, consistent in 2025–2026):
+
+"By 2026, traditional search engine volume will drop 25%, with search marketing losing market share to AI chatbots and other virtual agents.", Alan Antin, VP Analyst.
+
+Gartner also projects 70% of consumers with "some confidence" in AI search and that tech/services companies with >US$ 5B in revenue will spend 10% of marketing on content monitoring and brand reputation tied to AI-generated content.
+
+Semrush projects that AI search traffic will surpass traditional search by 2028.
+
+SparkToro (Rand Fishkin, 2025): if AI tool growth doubles annually, AI can rival traditional search in 6–10 years. But currently: Google does ~210× more searches/day than ChatGPT; ChatGPT has less desktop traffic than DuckDuckGo. Traditional isn't in absolute decline, it's losing relative share.
+
+10.2 Zero-click search
+
+▸58% in 2024 → 60% in 2025 (Semrush/Datos).
+
+▸Semrush discoveries: when a keyword gains an AIO, zero-click drops slightly (33.75% → 31.53%), AIO isn't a direct cause of zero-click, it's a consequence of intent type.
+
+▸AI Overviews work similarly to featured snippets, they accelerate a trend that has existed since 2016.
+
+10.3 Agentic browsing, the emerging wave
+
+▸OpenAI Operator (Jan/2025), autonomous agent that navigates and executes actions.
+
+▸Anthropic Computer Use, Claude controlling the desktop.
+
+▸Google Project Mariner / Deep Research, multi-step agents.
+
+▸Perplexity Comet Browser, AI-first browser.
+
+▸ChatGPT Atlas/Agent Browsers, AI-centered browsers.
+
+Implications: agents don't need human UX; they consume content in nodes (JSON, Markdown, semantic HTML). Agent-optimized content delivery becomes a differentiator. Adobe LLM Optimizer already offers "content delivery optimization", AI-readable versions served directly to crawlers.
+
+10.4 Multimodal search
+
+▸Google Lens growing fast.
+
+▸ChatGPT with images (Ghibli mode went viral in 2025, boosting downloads).
+
+▸Voice commerce via Alexa, Google Assistant, Siri, ChatGPT voice mode.
+
+▸Video search optimization (VideoObject, transcripts, timestamps).
+
+▸Speakable schema for TTS and voice.
+
+10.5 Lawsuits and licensing deals
+
+Pending actions
+
+▸NYT vs. OpenAI/Microsoft (2023–2026, NYT won preliminary ruling in 2025).
+
+▸NYT vs. Perplexity (Dec/2025), accuses RAG of reproducing verbatim content.
+
+▸Chicago Tribune, Reddit, Encyclopedia Britannica, Merriam-Webster, Nikkei, Asahi Shimbun, News Corp vs. Perplexity.
+
+▸Authors/publishers vs. Anthropic, US$ 1.5B settlement in 2025 (pirated books).
+
+▸Getty Images vs. Stability AI.
+
+▸Amazon threatens Perplexity (Aug/2025) for shopping agent posing as human.
+
+Positive deals
+
+▸OpenAI + NewsCorp, Axel Springer, Le Monde, Financial Times.
+
+▸Meta + CNN, Fox News, People Inc, USA Today (Dec/2025), crawl in exchange for links, citations and cash.
+
+▸Microsoft Publish Content Marketplace (Sep/2025), FT, Reuters, People Inc, Axel Springer; pays publishers a commission when content feeds Copilot responses.
+
+▸Reddit-Google deal (2024), US$ 60M/year.
+
+▸Perplexity Comet Plus, US$ 42.5M pool for creators (2025).
+
+Cloudflare vs. Perplexity (Aug/2025): Cloudflare accused Perplexity of Chrome user-agent spoofing, ASN rotation, ignoring robots.txt. Cloudflare delisted Perplexity from the Verified Bots program. Matthew Prince (Cloudflare): "It shouldn't be that you can use your monopoly position of yesterday in order to leverage and have a monopoly position in the market of tomorrow." Since Jul/2025, Cloudflare blocks 400B+ crawl attempts and introduced experimental pay-per-crawl.
+
+10.6 Regulation
+
+▸EU AI Act (in effect 2024–2026 gradually), requires transparency in training data.
+
+▸Brazil PL 2338/2023 (AI Civil Framework), under Senate review; establishes copyright and transparency.
+
+▸Copyright rulings: in Anthropic, legally acquired books may be fair use; pirated infringes copyright.
+
+10.7 Behavior changes
+
+▸Gen Z uses AI as first option for research, especially education (Pew 2025: 58% of US adults <30).
+
+▸Trust in AI answers has grown, but remains moderate.
+
+▸Surface multiplication for discovery: Reddit, TikTok, YouTube, LinkedIn, Substack are starting to compete with Google for the research "entry point".
+
+10.8 Expert quotes
+
+Rand Fishkin (SparkToro): "AI chat tools are growing, but their influence is limited compared to traditional search." Recommends focusing on "where your audience actually spends time" via SparkToro or Similarweb; build products "that market themselves".
+
+Aleyda Solís (Orainti): "Answer Engine Optimization is about clarity, context, and corroboration. The more your facts align with trusted sources, the more AI trusts your content to speak for you." In a Humans of Martech interview (Jan/2026): AI crawlers often blocked without the owner knowing; JavaScript hiding content; importance of topics over individual prompts; community (Reddit, YouTube comments) as a strong signal for LLMs.
+
+Lily Ray (Amsive): warns against aggressive GEO tactics that can trigger spam policies; AI citation often mirrors organic SEO strength, fundamentals matter.
+
+Jason Barnard (Kalicube): "Search, Answer, and Assistive Engine Optimization is the 2025 reality."
+
+Gary Illyes (Google): "Google doesn't support LLMs.txt and isn't planning to."
+
+Sam Altman (OpenAI, TED 2026): ~10% of the world population uses ChatGPT systems.
+
+11 / CHALLENGES
+
+Challenges, critiques and ethical limits.
+
+11.1 LLM manipulation and gaming
+
+▸Adversarial prompt injection (Kumar & Lakkaraju 2024): "strategic text sequences" can inject bias into recommendations.
+
+▸Negative SEO via LLM manipulation: planting misleading content in sources LLMs consume.
+
+▸LLM inconsistency (SparkToro): impossible to optimize for a single response; only works at statistical scale.
+
+▸Lily Ray: aggressive GEO tactics can trigger Google spam policies and lead to penalties.
+
+11.2 Cannibalization and attribution
+
+▸HubSpot, Daily Mail, CNN (-27 to -38%), Men's Journal (-415% variable) document severe decline.
+
+▸Attribution problem: GA4 doesn't consistently isolate AI-referred traffic. Google Search Console groups AI Mode clicks in the "Web" type, with no separate filter.
+
+▸AI exposure without a click still influences purchase, but isn't directly measurable.
+
+▸"Great Decoupling": search usage grows, site clicks drop.
+
+11.3 Hallucinations and false citations
+
+▸NYT vs. Perplexity (2025): Perplexity allegedly hallucinated information attributing it to the NYT, damaging the brand.
+
+▸Liu et al. (2023): 25.5% of citations do NOT support the claim they reference.
+
+▸Reputational risk for brands misrepresented by LLMs.
+
+11.4 Systematic bias
+
+▸Wikipedia, Reddit, YouTube, Quora are the most cited sources, creating structural bias against brand-owned content.
+
+▸Chen et al. (2025): AI Search favors "Earned Media" over brand-owned/social.
+
+▸English dominance: models perform worse and cite fewer sources in PT, Spanish, Hindi.
+
+11.5 Ethical questions
+
+— Is it ethical to optimize for LLMs?
+
+— "Algorithmic manipulation" vs "genuinely more useful engineering"?
+
+Consensus: answer-first, E-E-A-T, schema techniques are ethical and value-adding; keyword stuffing / prompt injection are manipulative.
+
+11.6 Publisher crisis
+
+▸Publisher median: -10% YoY traffic in H1/2025.
+
+▸News publishers: -7%; non-news content: -14%.
+
+▸HubSpot: -70 to -80%.
+
+▸CNN: -27 to -38%.
+
+▸Some recipe sites: -50 to -70%.
+
+11.7 Technical limitations
+
+▸Model cutoff dates: Gemini/ChatGPT sometimes cite content from months before the present.
+
+▸RAG limitations: retrieval doesn't always find the ideal source.
+
+▸Context window: even with 1M+ tokens, LLMs "forget" in the middle of long conversations.
+
+▸Tool fragmentation (Genezio): six visibility tools produce six different narratives for the same brand.
+
+12 / TOOLS
+
+Tools and resources.
+
+12.1 Consolidated landscape
+
+The AI visibility market went from zero to ~US$ 848 million in less than two years. Clear segmentation:
+
+Tier 1, Enterprise
+
+▸Profound (tryprofound.com): G2 Winter 2026 AEO Leader. Starter US$ 99/mo (ChatGPT only), Growth US$ 399/mo, Enterprise custom. Covers 10+ engines (ChatGPT with GPT-5.2, Claude, Perplexity, Google AI Overviews, Gemini, Copilot, DeepSeek, Grok, Meta AI, Google AI Mode). Three differentiators: AI Results Data, 400M+ real user prompts via Conversation Explorer, AI Crawler Analytics via Agent Analytics. SOC 2 Type II + HIPAA. US$ 35M Series B Sequoia.
+
+▸Adobe LLM Optimizer: content delivery optimization, automatically serves AI-readable versions to crawlers. Deep integration with Adobe Experience Cloud; Fortune 500.
+
+▸BrightEdge and Conductor: added AI features; enterprise pricing on request.
+
+Tier 2, Mid-market
+
+▸Peec AI (peec.ai, Berlin, Series A US$ 21M): €85/mo base; 4 tiers. Visibility, Position, Sentiment. UI-scraping, 115+ languages, real-time alerts. Published benchmark studies of 1M and 232K citations.
+
+▸Semrush AI Toolkit / AI Visibility Toolkit (launched Sep/2025): add-on, base plan ~US$ 139.95/mo. Integrated with SEO core suite. Keyword-focused.
+
+▸AthenaHQ: 100+ paying customers; aggressive positioning vs. Profound on usability/price. 67% off first month. Cases: 10× citations, 50% more demos.
+
+▸Scrunch: monitoring, auditing, optimization, AI content. Multi-brand for agencies.
+
+▸Superlines: unlimited brands, 10+ platforms, predictable pricing. EUR 74/mo annually.
+
+▸Promptwatch: 10 platforms, US$ 99/mo starter; Business tier for enterprise.
+
+Tier 3, Budget/SMB
+
+▸Otterly.ai: Gartner Cool Vendor 2025. Lite US$ 29/mo (10 prompts), Standard US$ 189/mo (100), Pro US$ 989/mo (1,000). 20,000+ users across 40+ countries.
+
+▸Airefs (getairefs.com): US$ 24/mo, focused on ChatGPT + Reddit thread monitoring.
+
+▸Rankscale: US$ 20/mo.
+
+▸HubSpot AI Search Grader: free.
+
+▸ClayHog: US$ 29/mo, multi-brand for agencies.
+
+▸PromptMonitor: US$ 29/mo.
+
+▸LLMrefs, Goodie AI (US$ 399+), Bear AI, Geoptie (US$ 49/mo agency), Knowatoa, AI Rank Lab.
+
+AI-optimized content creation tools
+
+▸Frase.io, briefs and answer-first content
+
+▸MarketMuse, topical authority modeling
+
+▸Clearscope, keyword + entity coverage
+
+▸Surfer SEO / Surfer AI, SERP analyzer
+
+▸Jasper, Copy.ai, Writesonic, AI writing; Writesonic integrates AEO optimization
+
+▸Rankability, Relixir, optimization platforms
+
+12.2 Condensed comparison table
+
+| Tool | Starting price | LLMs covered | Target audience | Differentiator
+
+| Profound | US$ 99–499/mo | 10+ | Enterprise | Conversation Explorer 400M prompts
+
+| Peec AI | €85/mo | ChatGPT, Perplexity, AIO, Gemini | Mid-market B2B | UI-scraping, 115 languages
+
+| Otterly.ai | US$ 29/mo | 6 (ChatGPT, AIO, AI Mode, Perplexity, Gemini, Copilot) | SMB, agencies | Gartner Cool Vendor; GEO Audit
+
+| Semrush AI Toolkit | ~US$ 139.95/mo | ChatGPT + AIO | SEO teams already on Semrush | Integrated with SEO core
+
+| Ahrefs Brand Radar | Ahrefs plan | ChatGPT, AIO | Ahrefs users | Integration with backlinks/keywords
+
+| AthenaHQ | On request (-67% 1st month) | ChatGPT, Perplexity | Mid-market | Strong published cases
+
+| Scrunch | Tiered | 10+ | Enterprise/agency | Broad coverage
+
+| Superlines | EUR 74/mo | 10+ | Multi-client agencies | Unlimited brands
+
+| Promptwatch | US$ 99/mo | 7+ (incl. DeepSeek, Grok) | Agencies | Most models covered
+
+| Adobe LLM Optimizer | Enterprise | All | Fortune 500 | Content delivery
+
+| Goodie AI | US$ 399–999/mo | 6+ | Enterprise | Brand score + content writer
+
+| Airefs | US$ 24/mo | ChatGPT (default) | New to AEO | Reddit monitoring
+
+| HubSpot AI Search Grader | Free | - | Beginners | Free entry point
+
+12.3 Complementary tools
+
+▸Schema validation: Google Rich Results Test, Schema.org validator, Schema Markup Validator.
+
+▸llms.txt: directory.llmstxt.cloud, llmstxt.directory (Mintlify auto-gen).
+
+▸AI bot detection: Knowatoa AI Search Console (24 UAs), BlogPros Robots.txt AI Checker.
+
+▸Crawl/render audit: Screaming Frog SSR mode, Sitebulb, Ahrefs.
+
+▸Content chunking audit: Presenc AI RAG Fetchability, AirOps.
+
+▸Entity/Knowledge Graph: InLinks, Kalicube Pro, Wikidata.
+
+▸PAA/Question mining: AlsoAsked, AnswerThePublic.
+
+13 / CONCLUSION
+
+Conclusion and actionable recommendations.
+
+The search marketing inflection point happened between 2023 (the GEO paper) and 2025 (Gartner's 25% forecast, Cloudflare default-blocking, publisher lawsuits). The question isn't "will SEO change". It's "how do I optimize for a web where the answer is the first surface and the link is the second". Three principles drive performance:
+
+First: traditional SEO fundamentals didn't die, they got promoted. 92.36% of AI Overviews citations come from the organic top 10. Rank well, get cited. E-E-A-T, link building, technical SEO and Core Web Vitals are still the entry ticket to AI visibility. On top of that, stack specific layers: answer-first structure, rich schema, semantic HTML5, deliberate chunking, cross-platform sameAs.
+
+Second: scientifically tested techniques beat trends. The Aggarwal paper proved what works (Quotation Addition +41%, Statistics +31%, Cite Sources +27%) and what doesn't (Keyword Stuffing hurts visibility). Teams that apply these three with discipline win. Quotes from named experts. Statistics with cited source every 150 to 200 words. Links to authoritative primary sources. Skip the hype. Make content that's actually more useful inside chunk-based contexts.
+
+Third: the democratizing effect is real, but demands serious execution. Rank 5 sources can gain +115% visibility in GEs. That favors smaller players, as long as the content is technically superior. The window is now, while enterprises are still debating budgets. In Brazil, Conversion, Wyse and Bloomin operate inside it. Rock Content and RD Station educate the market. Academia has a vacuum waiting for PT-BR research.
+
+What to do in the next 90 days
+
+01Week 1 to 2: audit robots.txt. Find accidental blocks on retrieval bots like OAI-SearchBot, Claude-SearchBot and PerplexityBot. 71% of publishers block at least one without meaning to.
+
+02Week 3 to 4: ship complete JSON-LD. Organization with sameAs, Article with Person, FAQPage or QAPage, BreadcrumbList. Validate in Rich Results Test.
+
+03Month 2: rewrite 20 top pages answer-first. 40 to 60 words of direct answer per H2 or H3, then elaboration, table or list, external citation. Apply Quotation Addition, Statistics Addition and Cite Sources to the top 3 performers.
+
+04Month 2 to 3: set a baseline in an AI visibility platform. Otterly at US$ 29/mo is the most pragmatic entry. Peec AI at EUR 85/mo for mid-market. Profound at US$ 399/mo for enterprise. Track 30 to 50 core prompts per month.
+
+05Month 3: strengthen cross-platform signals. Wikidata entry with QID. Author bylines with Person schema. Active presence on Reddit and LinkedIn (11% of AI responses cite LinkedIn; Reddit ranks among top sources).
+
+06Ongoing: refresh content every 90 days. LLMs have strong recency bias. Monitor Google QRG updates. Rebalance as AI Mode expands.
+
+Ignore this movement and you'll lose an order of magnitude in digital visibility inside 18 months. Execute and you build compound advantage. When more tools, agencies and competitors enter the game, your technical fundamentals will already be in place. The time is now.
+
+14 / GLOSSARY
+
+Glossary.
+
+AEO (Answer Engine Optimization)
+
+optimization to be returned as a direct answer in answer features (snippets, PAA, voice, knowledge panel).
+
+AI Overviews (AIO)
+
+Google feature that presents an AI summary at the top of the SERP, fully rolled out since May/2024.
+
+AI Mode
+
+Google Search's full generative mode launched in 2025.
+
+Agentic browsing
+
+autonomous navigation by AI agents (OpenAI Operator, Claude Computer Use).
+
+Chunking
+
+text segmentation into semantic chunks for embedding and retrieval.
+
+Crawl-to-refer ratio
+
+relationship between pages crawled and referrals generated by a bot.
+
+E-E-A-T
+
+Experience, Expertise, Authoritativeness, Trustworthiness, Google Quality Rater Guidelines framework.
+
+Entity-based SEO
+
+optimization focused on entities (Knowledge Graph) instead of isolated keywords.
+
+Featured snippet (Position Zero)
+
+answer highlighted above organic results.
+
+GE (Generative Engine)
+
+search engine based on LLM + retrieval (ChatGPT Search, Perplexity, Google AI Overviews).
+
+GEO (Generative Engine Optimization)
+
+term coined by Aggarwal et al. (2023); optimization for inclusion in synthesized responses.
+
+GEO-Bench
+
+10,000-query benchmark introduced by the seminal paper.
+
+JSON-LD
+
+Google's preferred format for structured data.
+
+LLMO (LLM Optimization)
+
+practical synonym of GEO.
+
+llms.txt
+
+Jeremy Howard's proposal (2024) for a curated Markdown file at /llms.txt.
+
+Pay-per-crawl
+
+experimental model (Cloudflare) for charging AI bot crawls.
+
+PAA (People Also Ask)
+
+Google's related questions box.
+
+RAG (Retrieval-Augmented Generation)
+
+Lewis et al. 2020; technical foundation of GEs.
+
+Share of Voice (SoV) in LLM
+
+% of AI responses that mention the brand.
+
+Schema.org
+
+structured data vocabulary.
+
+SGE (Search Generative Experience)
+
+original name of Google's AI feature before AI Overviews.
+
+SpeakableSpecification
+
+schema for "speakable" snippets for voice.
+
+Zero-click search
+
+query that ends without a click to an external site.
+
+15 / BIBLIOGRAPHY
+
+Bibliography.
+
+15.1 Academic papers
+
+01Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K.R., Deshpande, A. (2024). GEO: Generative Engine Optimization. Proceedings of KDD '24, pp. 5–16. DOI 10.1145/3637528.3671900. arXiv:2311.09735.
+
+02Liu, N.F., Zhang, T., Liang, P. (2023). Evaluating Verifiability in Generative Search Engines. EMNLP Findings 2023. arXiv:2304.09848.
+
+03Kumar, A., Lakkaraju, H. (2024). Manipulating Large Language Models to Increase Product Visibility. arXiv:2404.07981.
+
+04Wu, X., Zhong, W., Kim, D., Xiong, C. (2025/2026). AutoGEO: Automatically Learning Generative Engine Preferences. ICLR 2026. arXiv:2510.11438.
+
+05Chen et al. (2025). Generative Engine Optimization: How to Dominate AI Search. arXiv:2509.08919.
+
+06(Columbia/MIT). E-GEO: Extending Generative Engine Optimization to E-Commerce. arXiv:2511.20867.
+
+07Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.
+
+15.2 Official sources and standards
+
+01generative-engines.com/GEO/ (official paper site).
+
+02llmstxt.org (Jeremy Howard, Answer.AI, Sep/2024).
+
+03Google Search Central, structured data documentation.
+
+04Google Quality Rater Guidelines (Sep/2025 version).
+
+05Schema.org.
+
+06GitHub ai-robots-txt/ai.robots.txt.
+
+07robotstxt.com/ai.
+
+15.3 Industry publications (English)
+
+Search Engine Land (Danny Goodwin, Barry Schwartz), Search Engine Journal, Search Engine Roundtable, Ahrefs blog (AI Overviews studies Apr/2025 and Dec/2025), Semrush blog (AI Overviews Study 2025), Seer Interactive (CTR study Sep/2025), Amsive (Lily Ray, CTR study), SparkToro (Rand Fishkin, State of Search 2025–2026), Moz, HubSpot, Neil Patel, Backlinko, iPullRank (Mike King), Profound, Peec AI, Otterly, Scrunch blogs, Genezio, ClayHog, Winek, Geoptie, upGrowth, Airefs, Nick Lafferty, GEO tool reviews 2026, Duane Forrester Decodes (Substack), Cloudflare Radar and blog, Wired, The Register, Press Gazette, TechCrunch, AI Business (NYT vs Perplexity coverage).
+
+15.4 Brazilian publications
+
+01Rock Content blog, O que é Generative Engine Optimization (GEO) e qual o impacto em SEO.
+
+02Conversion, Conversion lança seu primeiro serviço de GEO.
+
+03Neil Patel Brasil, GEO, AIO e LLMO: O Que É e Como Otimizar Seu Site Para IA?
+
+04Wyse, wyse.com.br/geo.
+
+05Bloomin, O que é GEO + Agência de GEO em São Paulo.
+
+06bfind, Como preparar seu site para o SEO das IAs generativas.
+
+07Roberto Dias Duarte (RDD10+), GEO: Otimização para IA e o Futuro das Buscas Generativas.
+
+08Prosperidade Conteúdos, SEO, GEO e AEO: o que eles significam no marketing digital?
+
+09Manus, Guia Prático de GEO.
+
+15.5 Market reports and data
+
+Gartner (Feb/2024), Gartner Predicts Search Engine Volume Will Drop 25% by 2026. Gartner, Predicts 2024: How GenAI Will Reshape Tech Marketing. Pew Research Center (2025), ChatGPT usage survey. OpenAI NBER Working Paper 34255 (Deming et al.), largest study of AI usage. StatCounter Global Stats. Similarweb. Contentsquare, 2024 Digital Experience Benchmark Explorer. Superlines, Arvow, DemandSage, Textero, TechnologyChecker, GetPanto, First Page Sage, The Digital Elevator, ChatGPT/Perplexity 2026 statistics. ALM Corp, State of Search 2025 analysis. DataSlayer, AI Overviews CTR analysis. IDEAVA, 12 studies CTR decline meta-analysis.
+
+15.6 Reference thought leaders
+
+Rand Fishkin (SparkToro), sparktoro.com. Aleyda Solís (Orainti), aleydasolis.com, LearningSEO.io, SEOFOMO. Lily Ray (Amsive). Jason Barnard (Kalicube), kalicube.com. Mike King (iPullRank), ipullrank.com. Jeremy Howard (Answer.AI, fast.ai). Carolyn Shelby (Yoast). John Mueller, Gary Illyes, Martin Splitt (Google Search Relations). Marie Haynes. Gianluca Fiorelli. Cyrus Shepard, Britney Muller. Barry Schwartz (Search Engine Roundtable). In Brazil: Diego Ivo (Conversion), Giuseppe Caltabiano (Rock Content), Fábio Ricotta (Agência Mestre), Roberto Dias Duarte.
+
+FAQ
+
+Frequently asked questions about GEO and AEO.
+
+What is GEO (Generative Engine Optimization)?+–
+GEO is the discipline of optimizing content to be cited, referenced or paraphrased inside synthesized answers from generative engines: ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews. The term was formalized in November 2023 by Aggarwal et al. (Princeton, Georgia Tech, Allen Institute, IIT Delhi) in the paper "GEO: Generative Engine Optimization", presented at KDD 2024.
+What's the difference between SEO, AEO and GEO?+–
+SEO optimizes to rank links on the traditional SERP. AEO optimizes to be the direct answer in featured snippets, voice and Position Zero. GEO optimizes to be cited inside LLM-synthesized answers. The three are complementary. 92.36% of AI Overviews citations come from the organic top 10, so solid SEO is still the prerequisite.
+Does GEO replace SEO?+–
+No. SEO is the base layer (eligibility). AEO is the direct-answer layer. GEO is the synthesis-inclusion layer. SEO fundamentals (E-E-A-T, technical SEO, link building, Core Web Vitals) still hand you the entry ticket to AI visibility.
+Which GEO techniques are scientifically proven?+–
+The Aggarwal et al. paper (KDD 2024) tested 9 techniques across 10,000 queries. The three winners: Quotation Addition (+41%), Statistics Addition (+31%) and Cite Sources (+27%). All based on external evidence. Fluency Optimization also works (+28%). Keyword stuffing is counterproductive. It hurts visibility.
+Can small sites compete with big ones on GEO?+–
+Yes, more than in traditional SEO. The paper showed Rank 5 sources can gain up to +115% visibility in generative engines when applying GEO. Rank 1 sources can lose up to −30% when everyone else optimizes. That's GEO's democratizing effect: it rewards well-structured content, not established domains.
+How do I measure GEO performance?+–
+Combine 4 layers. One: GSC plus GA4 for organic traffic and queries with high impressions and low CTR. Two: an AI visibility platform (Profound, Peec AI, Otterly) for Share of Voice, citation rate and sentiment by LLM. Three: AI crawler log analytics (Cloudflare). Four: monthly manual QA of the top 30 to 50 prompts across ChatGPT, Perplexity, Gemini and Claude.
+What is llms.txt and do I need to implement it?+–
+llms.txt is a proposal by Jeremy Howard (Answer.AI, September 2024) for Markdown files at /llms.txt and /llms-full.txt that help LLMs navigate the site. Adoption is tiny: about 0.13% of domains in 2026. Google (John Mueller, Gary Illyes) has confirmed it doesn't use it. Implement it as low risk, low effort. Don't prioritize it over robots.txt, schema or E-E-A-T.
+Should I block AI crawlers in robots.txt?+–
+Depends on the goal. There are 3 categories. One: training crawlers. Blocking protects IP (GPTBot, ClaudeBot, CCBot, Google-Extended). Two: search and retrieval crawlers. Blocking makes you disappear from AI search (OAI-SearchBot, PerplexityBot). Three: user-action fetchers. High referral value (ChatGPT-User, Claude-User). 71% of publishers inadvertently block at least one retrieval bot, killing their AI presence without knowing.
+Which GEO tools to use in 2026?+–
+Entry-level (SMB): Otterly.ai (US$ 29/mo, Gartner Cool Vendor 2025) or HubSpot AI Search Grader (free). Mid-market: Peec AI (EUR 85/mo, 115 languages), AthenaHQ, Semrush AI Toolkit. Enterprise: Profound (US$ 99 to 499/mo, G2 Winter 2026 Leader, Conversation Explorer with 400M+ prompts) and Adobe LLM Optimizer. Multi-client for agencies: Superlines, Promptwatch, Scrunch.
+How much does it cost to implement GEO in Brazil?+–
+Depends on maturity. São Paulo companies that adopted GEO allocate 10 to 20% of the marketing budget (Bloomin data). Entry-level fits in roughly R$ 150 per month of tooling plus rewriting the 20 top pages and setting up rich schema. Specialized agencies in Brazil: Conversion, Wyse, Bloomin. Marketing.Chat's GEO Monitor runs a free first audit that diagnoses gaps before you invest.
+
+End of guide
+
+Keep studying.
+
+01
+
+GEO Monitor, the tool
+
+The audit that measures everything on this page in 2 minutes.
+
+02
+
+AI Ecosystem 2026 (Pillar A)
+
+The map of the 4 AI-for-marketing categories, and where GEO sits.
+
+03
+
+Implement in 30 days (Pillar C)
+
+Operational framework with GEO wired into each week.
+
+Marketing.Chat · GEO Monitor
+
+Want to know which queries your brand shows up in?
+
+GEO Monitor runs 14 parallel queries across ChatGPT, Claude, Gemini, Perplexity and Grok. You get a 6D-score report, competitor comparison and prioritized action plan. First audit free, no card.
+
+Audit my brand for free See GEO Monitor
+
+Marketing.Chat
+Marketing.Chat is the marketing operating system: multi-agent AI platform with 60+ vertical specialists, native MCP integrations with GA4/Google Ads/Meta Ads, and native generation of PDFs, spreadsheets and 4K images.
+
+Product
+
+Genius Mode
+
+Copilot Mode
+
+Chat Mode
+
+GEO Monitor
+
+Nano Banana 2
+
+Specialists
+
+Skills
+
+Brand DNA
+
+Brand Memory
+
+Projects
+
+MCP (Integrations)
+
+RD Station CRM
+
+RD Station Marketing
+
+Solutions
+
+Agencies
+
+CMOs & Directors
+
+Entrepreneurs
+
+Enterprise
+
+Partners
+
+Pricing & Plans
+
+Resources
+
+AI Ecosystem 2026
+
+GEO & AEO Guide
+
+Implement in 30 days
+
+vs Jasper / Copy.ai
+
+Comparisons
+
+vs. ChatGPT
+
+Changelog
+
+Help center
+
+Company
+
+About · The CMOs
+
+Sitemap
+
+Terms of use
+
+Privacy · LGPD
+
+© 2026 The CMOs · Marketing.ChatFlorianópolis, Brazilv 0.1.0 · LGPD · SOC 2 (in progress)

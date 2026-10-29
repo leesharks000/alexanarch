@@ -1,0 +1,307 @@
+{
+ "row": "newsguard-ai-false-claim-monitor",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,711 archive texts found no D or R candidate: no deposit text names the AI False Claim(s) Monitor, the AI Misinformation Monitor, NewsGuard, newsguardtech or False Claim Fingerprints (also checked by grep over data/texts, data/blog-index.json and data/blog-corpus: no hit for 'newsguard', 'false claim fingerprint' or 'false claim(s) monitor'). O-class ran on two classes sourced from the field (config): 'audits of generative AI systems' (B10's FAQ, B4, B2; 3 sentences in 2 deposits, none admitted) and 'red-teaming of AI models' (B1, B8; 53 sentences in 19 deposits). Admission by reading: a sentence is admitted to O when it applies an archive category to red-teaming (or chatbot audits) as a class; a title in a registry, a negative tag on the archive itself, a bare role label or a summary restating an admitted lineage is not admitted (S4 or no claim). The hop (H) was not run: it runs from admitted D/R/O deposits over the citation graph, and the admitted deposits bear on the class, not the entity (as at papers-with-code). The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (findings, analysis, reading, q_kind, d) and the MMRS meta-aggregator record (census.json row newsguard-ai-false-claim-monitor; articles.py), ledgered as CAP-1-NN and MMRS-NN.",
+ "reader": "Claude (Opus 5.5), in session, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 482,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the primer defines red-teaming by the archive's own distinction, 'authorized adversarial testing' against 'unauthorized collaborative engagement' (logotic hacking); an archive category applied to red-teaming as a class; the earliest instance (2026-02-15)",
+   "claims": [
+    "O482-01"
+   ],
+   "cands": [
+    "O0027"
+   ]
+  },
+  {
+   "dep": 21,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the archive's paper on red teaming as a class: its genealogy (military and intelligence adversarial simulation), its ontological status (the model as adversary-system), telos (failure modes), output class (vulnerability reports, adversarial prompt libraries, safety benchmarks), ethic (use) and the migration of its vocabulary; with the paper's own limit ('red teaming makes models safer'); the field calls the monitor's method red-teaming (B1, B8)",
+   "claims": [
+    "O21-01",
+    "O21-02",
+    "O21-03",
+    "O21-04",
+    "O21-05",
+    "O21-06",
+    "O21-07",
+    "O21-08"
+   ],
+   "cands": [
+    "O0002",
+    "O0004",
+    "O0005",
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0017"
+   ]
+  },
+  {
+   "dep": 643,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the feudal-structure table places 'Red-teaming and content scanners' as the Inquisition of meaning feudalism; an archive category applied to red-teaming as a class",
+   "claims": [
+    "O643-01"
+   ],
+   "cands": [
+    "O0031"
+   ]
+  },
+  {
+   "dep": 737,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: red-teaming among the remedies of the values frame that push against the optimization gradient (the semantic-loss frame's contrast); an archive category applied to red-teaming as a remedy",
+   "claims": [
+    "O737-01"
+   ],
+   "cands": [
+    "O0048"
+   ]
+  },
+  {
+   "dep": 194,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: 'authorized red-teaming engagements' placed in the charter economy (the Meaning Feudalism thesis in commercial form); bears on red-teaming sold to AI companies, which the field records of NewsGuard (B1 'bespoke red-teaming services')",
+   "claims": [
+    "O194-01"
+   ],
+   "cands": [
+    "O0025"
+   ]
+  },
+  {
+   "dep": 822,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the one-way valve: red-teaming as the name the capability takes under an operator's authorization; the classifying variable is authorization status; its own slot (a mechanism) beside #482's definition",
+   "claims": [
+    "O822-01"
+   ],
+   "cands": [
+    "O0049"
+   ]
+  },
+  {
+   "dep": 923,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: what red-teaming is conducted and how its results are used as one setting on a lab's constraint equilibrium (the paper's hypothesis); bears on red-teaming results used by developers (B1: 'This allows developers to strengthen their models')",
+   "claims": [
+    "O923-01"
+   ],
+   "cands": [
+    "O0050"
+   ]
+  }
+ ],
+ "within_admitted_not_ledgered": [
+  {
+   "dep": 21,
+   "reason": "the paper's other candidate sentences (its title line, section heading, the six-axis framing, the triangulation with alignment, the technique table, keywords and references) restate the admitted lineages or name the paper's own alternative; read and not separately ledgered (S4 within the deposit)",
+   "cands": [
+    "O0001",
+    "O0003",
+    "O0006",
+    "O0007",
+    "O0012",
+    "O0013",
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/newsguard-ai-false-claim-monitor-aio-20261029/",
+   "reason": "the registry's findings, analysis, reading, q_kind and d at the entity's capture by name (OBS-18837e18bf11, AXN:0AB0.CAPTURE.♅✋⏏️🪞💙⚖️), read from data/EA-WG-CAPTURES-01.json",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/newsguard-ai-false-claim-monitor/",
+   "reason": "the MMRS meta-aggregator record (compiled 2026-10-28, corrected 2026-10-29; editor Lee Sharks): article sentences (articles.py) and fields with their basis (census.json, row newsguard-ai-false-claim-monitor)",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1209,
+   "reason": "S4: the same text as #194 (Adversarial by Origin, a second deposit of the paper); its sentence is an instance of O194-01's lineage and adds nothing; kept in the provenance graph",
+   "cands": [
+    "O0052"
+   ]
+  },
+  {
+   "dep": 1263,
+   "reason": "S4: a later version of #822's addendum (EA-SEI-ADVERSARY-01); its sentence is an instance of O822-01 and adds nothing",
+   "cands": [
+    "O0055"
+   ]
+  },
+  {
+   "dep": 483,
+   "reason": "S4: the Assembly synthesis of #482's primer ('Red-teaming: authorized adversarial.'); an instance of O482-01",
+   "cands": [
+    "O0029"
+   ]
+  },
+  {
+   "dep": 699,
+   "reason": "S4: the Logotic Technique Catalogue's matrix sets red teaming's posture as adversary ('against, around, past') and keeps it legitimate and necessary, citing #21; every sentence an instance of #21's lineages (O21-03, O21-04); its other sentences concern the classification of autonomous coordination, not red teaming as a practice",
+   "cands": [
+    "O0036",
+    "O0037",
+    "O0038",
+    "O0039",
+    "O0040",
+    "O0041",
+    "O0042",
+    "O0043",
+    "O0044",
+    "O0045",
+    "O0046",
+    "O0047"
+   ]
+  },
+  {
+   "dep": 698,
+   "reason": "the metadata description of #699; S4 with #699",
+   "cands": [
+    "O0034",
+    "O0035"
+   ]
+  },
+  {
+   "dep": 683,
+   "reason": "S4: 'The model is not an adversary to be tricked (red-teaming)' — an instance of O21-04's lineage (the model as adversary)",
+   "cands": [
+    "O0032"
+   ]
+  },
+  {
+   "dep": 1362,
+   "reason": "S4: the critical edition of #683; the same sentence",
+   "cands": [
+    "O0056"
+   ]
+  },
+  {
+   "dep": 554,
+   "reason": "S4: a summary ('goes beyond adversarial \"red teaming\"') restating #21's distinction; an instance of O21-01's lineage",
+   "cands": [
+    "O0030"
+   ]
+  },
+  {
+   "dep": 261,
+   "reason": "a negative tag on the archive itself ('Not for classification as: ... red-teaming'); a claim on the archive, not on red-teaming as a class",
+   "cands": [
+    "O0026"
+   ]
+  },
+  {
+   "dep": 697,
+   "reason": "an entity-relations specification's role string ('red-teaming-as-distinct-practice reference'); a bare label",
+   "cands": [
+    "O0033"
+   ]
+  },
+  {
+   "dep": 31,
+   "reason": "a registry entry carrying #21's title; a bare listing",
+   "cands": [
+    "O0023"
+   ]
+  },
+  {
+   "dep": 1171,
+   "reason": "a registry entry carrying #21's title; a bare listing",
+   "cands": [
+    "O0051"
+   ]
+  },
+  {
+   "dep": 113,
+   "reason": "'pasteable LLM audit protocols (ARC-EP, Encyclotron)': the archive's own audit instruments listed; no category applied to audits of generative AI systems as a class, and no claim on the monitor",
+   "cands": [
+    "O0024"
+   ]
+  },
+  {
+   "dep": 1222,
+   "reason": "the Encyclotron audit of Basecamp (metadata record; 'AI audit' a subject keyword); an audit of a company's retrieval, not a claim on chatbot audits as a class",
+   "cands": [
+    "O0053",
+    "O0054"
+   ]
+  }
+ ],
+ "counts": {
+  "candidate_deposits": 21,
+  "admitted": 7,
+  "not_admitted": 14,
+  "D": 0,
+  "R": 0,
+  "O_class_sentences": 56,
+  "H": "not run"
+ }
+}

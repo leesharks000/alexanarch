@@ -1,0 +1,46 @@
+{
+ "row": "newsguard-ai-tracking-center",
+ "address": "newsguard ai tracking center",
+ "addresses": [
+  "newsguard ai tracking center"
+ ],
+ "entity": "NewsGuard's AI Tracking Center (newsguardtech.com/special-reports/ai-tracking-center/), launched 8 June 2023 as the 'Unreliable AI-Generated News Tracking Center': NewsGuard's catalogue of AI content farm websites (four criteria; 3,749 sites in 16 languages, last updated 23 June 2026) with a selection of its AI reports and debunks; it hosts the AI False Claim Monitor series (a distinct entity, census row newsguard-ai-false-claim-monitor, has_part); NewsGuard's commercial products (False Claim Fingerprints, Brand Misinformation Monitoring) are distinct entities; formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+ "row_type": "C (a public entity on which the archive bears: a monitor, one of the MMRS meta-aggregator's entities)",
+ "aliases": [
+  {
+   "pattern": "\\bNewsGuard\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bnewsguardtech\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAI Tracking Cent(er|re)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bUnreliable AI[- ]Generated News\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bUAINs?\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bAI Content Farms?\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "content farms",
+   "pattern": "\\bcontent[- ]farm(s|ing)?\\b",
+   "flags": "i",
+   "basis": "field: B1 (the center's page, ¶1: 'the rollout of generative artificial intelligence tools has been a boon to content farms and misinformation purveyors alike'; its unit 'AI Content Farm news and information websites'); B4 (the launch release, ¶2: 'cataloging the ways that generative AI has been deployed to turbocharge misinformation operations and low-quality content farms')"
+  }
+ ],
+ "classes_note": "One class, sourced from the field by locus: the center's unit, the AI content farm, as a kind of content farm (B1, B4). The class enters the string pass so that the archive's own categories applied to content farms as a class can be read; a sentence on one named farm, or 'content farm' used as a foil, is not a claim on the class. The aliases are the operator's name and domain (the center is NewsGuard's; a candidate naming NewsGuard is read for whether it bears on the center or only on the company and its other products, which are distinct entities), the center's name, its 2023 name and its 2023 unit ('Unreliable AI-Generated News', UAIN, case-sensitive) and its present unit ('AI Content Farm'). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the center (what it catalogues, its criteria, its count, its series, what its selection leaves out, a measure taken on it) or applies an archive category to content farms as a class; a bare mention of NewsGuard, a link list, or a claim on NewsGuard's ratings or commercial products alone is not a claim on the center.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'newsguard ai tracking center' (newsguard-ai-tracking-center-aio-20261029, OBS-f7965ff6f906, ADDR-e4b3691abba9), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN. The series, the AI False Claim Monitor, is a separate row composed in parallel."
+}

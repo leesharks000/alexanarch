@@ -1,0 +1,216 @@
+{
+ "row": "search-arena",
+ "pass": "first reading and second pass (class widened to model rankings; hop from the admitted deposits), 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Search Arena or on Arena's leaderboards as the class it belongs to (what it is, its unit and vote, its score, its findings on citation, its standing as a ranking surface, a measure taken on it), the operator's former names (LMArena, Chatbot Arena) among the aliases; R, a relation the archive states between Search Arena and an archive object; O, an archive category applied to the entity or to a class the field sources for it: human-preference leaderboards and rankings of AI models (B1, B2 card titles; B3; B4; B8) and the systems it rates, search-augmented language models and their citations (B3, B4). A bare mention, a reference-list entry, a model ranking cited from Arena as evidence for something else, a generic 'leaderboard', and ranking by AI (search ranking) as against ranking of AI models are not claims on the entity. The string pass over 1,711 texts found 3 D sentences (2 deposits), no R, 14 O-class sentences (14 deposits); one citation hop from the admitted deposits (#741, #1705) returned 12 candidates (11 deposits).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 741,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "D (alias 'Chatbot Arena', the operator's former name, B8): ¶38 states what the MT-Bench / Chatbot Arena studies established (GPT-4 about 85% agreement with human preferences, above about 81% human-human) and the archive's limit on it, 'a finding about *relative* preference under specified rubrics — comparing A versus B — not about absolute quality assessment': a claim on what the arena's pairwise judgment measures. O-class (search-augmented systems and their citation): ¶29 applies the archive's category of the composition layer and its proxy regime ('provenance topology in generative search') to AI search systems as a class: they admit or exclude documents on structural signals, citation neighborhoods among them, 'before any reading occurs'; it bears on what the leaderboard's paper measures (citation as a signal of credibility)",
+   "claims": [
+    "D741-01",
+    "D741-02",
+    "O741-01",
+    "O741-02"
+   ],
+   "cands": [
+    "D0002",
+    "O0008"
+   ]
+  },
+  {
+   "dep": 1705,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class (rankings of AI models, sourced from B2's card title 'Official AI Model Rankings' and B1's): ¶43–44 define a ranking's act ('it compares … Then it states the result as a property of the winner') and apply the archive's category, attributization, to rankings as a class: 'A ranking's *best* is attributization in its commercial form'. The candidate matched on 'AI search engine' (the second class); the admission rests on the category applied to rankings, the class B2 sources for the leaderboard",
+   "claims": [
+    "O1705-01",
+    "O1705-02",
+    "O1705-03"
+   ],
+   "cands": [
+    "O0014"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/search-arena-leaderboard-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading and analysis at the entity's capture (OBS-cd6ab4746f08, AXN:0AB6.CAPTURE.⛳🧱🟢⏪🎻🏛️, 2026-10-29), read from data/EA-WG-CAPTURES-01.json",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/search-arena/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'search-arena'], its name and schema_note; scripts/meta_aggregator/articles.py ARTICLES['search-arena']; rendered aggregators/search-arena/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29: the capture relation added): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is one lineage with that page, the page keeping the earliest date",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 716,
+   "reason": "reference-list entry (Zheng et al., 'Judging LLM-as-a-judge with MT-Bench and Chatbot Arena'); no claim",
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": 741,
+   "reason": "reference-list entry (the same paper); #741 admitted on ¶38 and ¶29",
+   "cands": [
+    "D0003"
+   ]
+  },
+  {
+   "dep": 186,
+   "reason": "a claim on the archive's own practice (its instruments monitor how AI search surfaces retrieve, attribute and recompose its terms); no category applied to search-augmented systems as a class bearing on what the leaderboard measures",
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 197,
+   "reason": "a prediction on one query set ('narcissist') on AI search surfaces; a claim on that term's rendering, not on the class as the leaderboard measures it",
+   "cands": [
+    "O0002"
+   ]
+  },
+  {
+   "dep": [
+    319,
+    325,
+    326,
+    1114,
+    1275
+   ],
+   "reason": "the Semantic Gravity Well operator ('AI ranking follows density'): ranking by AI (search ranking), not a ranking of AI models; the class is not the entity's",
+   "cands": [
+    "O0003",
+    "O0004",
+    "O0005",
+    "O0009",
+    "O0010"
+   ]
+  },
+  {
+   "dep": 687,
+   "reason": "a feature list of a planned browser extension (support for other AI search surfaces); no claim",
+   "cands": [
+    "O0006"
+   ]
+  },
+  {
+   "dep": 735,
+   "reason": "'measurable semantic deviation can replace human preference data as the alignment signal': human preference data as a training signal, not human-preference evaluation or leaderboards; the class is not the entity's",
+   "cands": [
+    "O0007"
+   ]
+  },
+  {
+   "dep": [
+    1607,
+    1608
+   ],
+   "reason": "an instruction to the reader ('Go ask any search-enabled AI system'); no claim on the class",
+   "cands": [
+    "O0011",
+    "O0012"
+   ]
+  },
+  {
+   "dep": 1686,
+   "reason": "SPXI's bounds ('any search-enabled system' as the retrieval substrate): a claim on SPXI's scope",
+   "cands": [
+    "O0013"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   741,
+   1705
+  ],
+  "candidates": "candidates-H.jsonl (12 candidates, 11 deposits)",
+  "admitted": [],
+  "not_admitted": [
+   {
+    "dep": [
+     740,
+     1648,
+     1654,
+     1681,
+     1684,
+     1690,
+     1695,
+     1696,
+     1697,
+     1698,
+     1703
+    ],
+    "reason": "read for a claim bearing on Search Arena, Arena's leaderboards, human-preference evaluation or the citation finding; none names them (a string check for leaderboard, arena, human preference, citation count, rankings of: 0 hits in all but #1684 and #1695, whose hits are on proxies in knowledge evaluation and a citation count of a name, not on the entity). #1696 is the defining source of attributization, which #1705 quotes; the lineage is carried by #1705's admitted sentences"
+   }
+  ]
+ },
+ "string_pass_note": "First pass (classes without 'rankings') and second pass (class 1 widened to 'AI/LLM/model rankings', 'rankings of models'; a bare 'ranking' returned 322 sentences in 178 deposits, nearly all on search ranking as such, the archive's R_rank operator, and was narrowed to the class B2 sources). The candidate files in this directory are the second pass's.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 3,
+   "D_deposits": 2,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 14,
+   "O_deposits": 14,
+   "H_candidates": 12
+  },
+  "deposits_candidate": 15,
+  "deposits_admitted": 2,
+  "hop_candidates": 12,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 8,
+   "mmrs": 24,
+   "deposit": 7
+  }
+ }
+}

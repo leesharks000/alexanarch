@@ -1,0 +1,92 @@
+{
+ "row": "newsguard-ai-tracking-center",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,711 archive texts (scripts/non_traverse.py, config panel/configs/newsguard-ai-tracking-center.json) returned no candidate in any stratum: no deposit text names NewsGuard, newsguardtech, the AI Tracking Center, 'Unreliable AI-Generated News', UAIN or 'AI Content Farm' (D 0, R 0), and no sentence that names the sourced class 'content farms' also carries an archive category (O 0). A grep beside the pass (data/texts, data/blog-index.json, data/blog-corpus) confirms no NewsGuard string and finds 'content farm(s)' in two deposit texts, #265 and #641, both read; #641 is admitted to O-class by reading of its paragraph (the class in one sentence, the archive's categories in the paragraph's opening and closing sentences, which the sentence-level pass cannot join), #265 is not. The hop (H) was not run: it runs from admitted deposits over the citation graph, and the one admitted deposit bears on the class, not the entity. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (reading, findings, analysis) and the MMRS meta-aggregator record (census.json row newsguard-ai-tracking-center; articles.py), ledgered as CAP-1-NN and MMRS-NN.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 641,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class, reached beside the pass: the paragraph 'The extraction crisis' applies compression studies' and the semantic economy's categories (compression, extraction, what is burned) to content farms as a class: 'Content farms compress journalism into SEO-optimized paraphrase … In each case, something is burned: authorial context, experiential density, citational provenance, the labor of witness'. The class is sourced from the field (B1 ¶1, B4 ¶1). The claim is said of content farms, not of the center by name, and the row composes it as the archive's reading of the class the center catalogues.",
+   "claims": [
+    "O641-01"
+   ],
+   "cands": [
+    "grep: data/texts/AXN-01F3-text.md l.43"
+   ],
+   "reached": "grep beside the string pass"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/newsguard-ai-tracking-center-aio-20261029/",
+   "reason": "the registry's reading, findings and analysis at the entity's capture by name (OBS-f7965ff6f906, AXN:0AB1.CAPTURE.🤙↘️💫🌾⚪🗼), read from data/EA-WG-CAPTURES-01.json (entries[495])",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/newsguard-ai-tracking-center/",
+   "reason": "the MMRS meta-aggregator record (compiled 2026-10-28, corrected 2026-10-29 by the capture relation; editor Lee Sharks): article sentences (articles.py) and fields with their basis (census.json, row newsguard-ai-tracking-center)",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 265,
+   "reason": "'AI-generated content farms' as one target of platforms' automated suspension sweeps (late 2025, early 2026) in which the archive's work was caught; the sentence is on the sweeps and the misclassification, not a category applied to content farms as a class",
+   "cands": [
+    "grep: data/texts/AXN-0043-text.md l.162"
+   ]
+  }
+ ],
+ "counts": {
+  "texts_scanned": 1711,
+  "D": 0,
+  "R": 0,
+  "O": 0,
+  "H": "not run",
+  "grep_beside_pass": {
+   "newsguard_strings": 0,
+   "content_farm_deposits": 2
+  },
+  "admitted_deposits": 1,
+  "of_candidates": "0 from the pass; 1 of 2 grep hits",
+  "archive_records": {
+   "CAP": 8,
+   "MMRS": 20
+  }
+ }
+}

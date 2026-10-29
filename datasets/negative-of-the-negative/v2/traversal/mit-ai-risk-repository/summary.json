@@ -1,0 +1,81 @@
+{
+ "row": "mit-ai-risk-repository",
+ "address": "mit ai risk repository",
+ "entity": "The MIT AI Risk Repository (airisk.mit.edu/risks), the flagship of the MIT AI Risk Initiative (AIRI) at MIT FutureTech: a living database of risks extracted from published AI risk frameworks (version 4, December 2025: 1,700+ risks), with a Causal Taxonomy (entity, intent, timing) and a Domain Taxonomy (seven domains, 24 subdomains); its paper Slattery et al., arXiv:2408.12622 (v1 14 August 2024; v3 5 May 2026; Patterns 2026)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "mit-ai-risk-repository",
+  "address": "mit ai risk repository",
+  "entity": "The MIT AI Risk Repository (airisk.mit.edu/risks), the flagship of the MIT AI Risk Initiative (AIRI) at MIT FutureTech: a living database of risks extracted from published AI risk frameworks (version 4, December 2025: 1,700+ risks), with a Causal Taxonomy (entity, intent, timing) and a Domain Taxonomy (seven domains, 24 subdomains); its paper Slattery et al., arXiv:2408.12622 (v1 14 August 2024; v3 5 May 2026; Patterns 2026)",
+  "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bAI Risk Repository\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI Risk Initiative\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAIRI\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bairisk\\.mit\\.edu\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bMIT FutureTech\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b2408\\.12622\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bSlattery\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI risk frameworks, taxonomies and databases",
+    "pattern": "\\b(AI|artificial intelligence) risk (frameworks?|taxonom(y|ies)|databases?|repositor(y|ies)|classifications?)\\b",
+    "flags": "i",
+    "basis": "field: B6 (arXiv:2408.12622 v3, Abstract): 'We systematically analyzed every major AI risk framework published to date-74 frameworks containing 1,725 distinct risks'; B4 (FutureTech, v1 abstract): 'a systematic review of taxonomies and other structured classifications of AI risk'; B11 (airisk.mit.edu/risks, FAQ): 'What are some other databases of AI risks?'"
+   }
+  ],
+  "classes_note": "One class, sourced from the field by locus: the repository as a database of AI risks built from AI risk frameworks and taxonomies, among other databases of AI risks (B6, B4, B11). The MMRS record's class (aggregators of machine-mediated reception work, 'roles: harm') is an archive source, ledgered as MMRS claims and not run as an O-class, since the brief confines classes to what B sources. Aliases: the entity's name without the MIT prefix (which matches the full name), its operator's name and abbreviation (AIRI, case-sensitive), its host, its research group, its paper's arXiv id and its lead author's surname. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the repository or on AI risk taxonomies as a class to which the archive applies its own category; a bare mention, a link list, a generic use of 'risk framework' about another object, or a homonym (another Slattery, another AIRI) is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'mit ai risk repository' (mit-ai-risk-repository-aio-20261029, OBS-21a7cea64b70, ADDR-5762c6084031), Google AI Overview (expanded), signed out, incognito. The sibling mit-ai-incident-tracker (its own row) and the MIT AI Risk Navigator (a census candidate) are distinct entities."
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 0,
+  "O_deposits": 0,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {}
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

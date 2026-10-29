@@ -1,0 +1,1371 @@
+{
+ "row": "ai-hallucination-cases",
+ "address": "ai hallucination cases database",
+ "addresses": [
+  "ai hallucination cases database"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the oEmbed title, or the card's title and snippet for an unreachable card; 59/59 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B6: the database's page, Natural and Artificial Law's tracker, HAQQ's tracker, a LinkedIn post, two videos); 'own_page', the database's FAQ, its methodology text (B7), which T did not surface; the database page itself is a card (B1) and is carried once, as a card; 'wikipedia', no article for the database or its maker (W1, HTTP 404), and three articles that name it in their bodies, their sections ledgered (B8 Artificial intelligence, B9 Hallucination (artificial intelligence), B10 Mata v. Avianca). Unreachable: B4 (LinkedIn, not found; snippet stands). B5 and B6 read by oEmbed title only.",
+ "lineage_note": "Lineages: what it is (B1); maker and origin (B1, B3, B7, B8, B9); the unit and admission rule (B1, B3, B7); exceptions (B1, B7); boundary (B1, B3); the record and its limits (B1); count (B1, B3); growth (B3, B7); causes and coverage (B7); intake (B1, B7); openness (B1); purpose (B1, B7); citation fidelity (B7); reception (B1, B4, B5, B6, B8, B9, B10); the neighbours HAQQ (B3) and Natural and Artificial Law (B2). HAQQ's statements of the database (F28, F29, F31) are third-party restatements of B1 and keep B1's lineage slots where they add only a date or a reading (§3.6); HAQQ's floor (F30) adds a consequence and keeps its own.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; for B1 the page's meta description and title/tooltip attribute text appended under a marked heading; B5.json and B6.json YouTube oEmbed responses; B8–B10.wiki raw wikitext; W*.html the Wikipedia 404s and searches); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the entity's own page, the MMRS record's only source (damiencharlotin.com/hallucinations); its marker token is the one on the definition and on the 'Where to Access It' link",
+   "card": "Damien Charlotin — AI Hallucination Cases Database",
+   "url": "https://www.damiencharlotin.com/hallucinations/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B1.html",
+     "sha256": "68d8bdade886d77a1b17338a9022930af780b017fd6a5b1aa8379c0ae37a644d"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B1.txt",
+     "sha256": "c645e242eb50b572ecc962ebdb2651994a3577e6352305ec50aaf1f7ca812284"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:47Z",
+    "http": 200,
+    "url": "https://www.damiencharlotin.com/hallucinations/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B1.html",
+    "raw_sha256": "68d8bdade886d77a1b17338a9022930af780b017fd6a5b1aa8379c0ae37a644d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B1.txt"
+    ]
+   },
+   "card_title": "AI Hallucination Cases Database",
+   "card_snippet": "AI Hallucination Cases This database tracks legal decisions 1 Notably, this does not cover mere allegations of hallucinations, but only cases where the court or...",
+   "card_note": null,
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet is the page's opening and footnote 1; the page lists 50 of 2,231 cases (page 1 of 45) with filters and counts; the saved text appends the page's meta description and its column and graph notes, which the page carries as attribute text (title and tooltip attributes), marked as such; the case rows' detail bullets are not appended"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2; a neighbour (Natural and Artificial Law, Matthew Lee), a distinct entity; its marker token is on the 'AI Hallucination Cases Tracker' link",
+   "card": "Natural and Artificial Law — AI Hallucination Cases Tracker",
+   "url": "https://naturalandartificiallaw.com/ai-hallucination-cases-tracker/",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B2.html",
+     "sha256": "b4c8760c47ec182db2ee95ac3bcd0f5a7050178f01db7c93e2b0a356fc7dd7d5"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B2.txt",
+     "sha256": "bd7198c1f5306d589e094b42a69754589db4135d010eff276a4911fc6bf30126"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:25Z",
+    "http": 200,
+    "url": "https://naturalandartificiallaw.com/ai-hallucination-cases-tracker/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B2.html",
+    "raw_sha256": "b4c8760c47ec182db2ee95ac3bcd0f5a7050178f01db7c93e2b0a356fc7dd7d5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B2.txt"
+    ]
+   },
+   "card_title": "AI Hallucination Cases Tracker",
+   "card_snippet": "The detailed UK AI Hallucination Cases Tracker For UK AI hallucination cases, the dedicated UK tracker brings together case records, recorded outcomes, judicial...",
+   "card_note": null,
+   "names_operator": "no ('Charlotin' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by WebSearch through the author's Substack post 'Building an International AI-Hallucination Case Tracker' (naturalartificiallaw.substack.com), which links this page; the page's <title> is the card's title and its UK box is the card's snippet. It is the international tracker of selected judicial quotations; the 'detailed UK tracker' is a further page it links (/uk-ai-hallucination-cases-tracker/), not fetched (not on the rail). The page does not name Charlotin or his database"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3; a neighbour (HAQQ's tracker built on the database's count), a distinct entity",
+   "card": "HAQQ — AI Hallucination Cases: The 2202-Case Sanctions Tracker - HAQQ",
+   "url": "https://www.haqq.ai/blog/ai-legal-hallucination-audit",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B3.html",
+     "sha256": "99fa409d712f0ae0a6efa2fe7bacf614a8297b4c7aadb3185483a4ae15dcf3e1"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B3.txt",
+     "sha256": "7a350124b3e5de7261ff1cae2d78c4c5227fc1b5d656e90da4a8443361f1f648"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:26Z",
+    "http": 200,
+    "url": "https://www.haqq.ai/blog/ai-legal-hallucination-audit",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B3.html",
+    "raw_sha256": "99fa409d712f0ae0a6efa2fe7bacf614a8297b4c7aadb3185483a4ae15dcf3e1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B3.txt"
+    ]
+   },
+   "card_title": "AI Hallucination Cases: The 2202-Case Sanctions Tracker - HAQQ",
+   "card_snippet": "AI Hallucination Cases: The 2202-Case Sanctions Tracker * Blog * AI Hallucination Cases: The 2,202-Case Sanctions Tracker AI Hallucination Cases: The 2,202-Case...",
+   "card_note": null,
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by WebSearch on the card title; page <title> 'AI Hallucination Cases: The 2,202-Case Sanctions Tracker | HAQQ'; by Stephane Boghossian, dated 22 May 2026 and updated 20 October 2026"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (LinkedIn post)",
+   "card": "LinkedIn — George Hannah's Post",
+   "url": null,
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 4
+    }
+   ],
+   "fetched": null,
+   "unreachable": true,
+   "card_title": "George Hannah's Post",
+   "card_snippet": "George Hannah's Post George Hannah 4mo There is now a database tracking every AI hallucination to surface in court. It has logged 1,600 cases so far. It's calle...",
+   "card_note": null,
+   "names_operator": "no ('Charlotin' absent from the card title and snippet; the snippet breaks off at 'It's calle...')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: not found by WebSearch (three queries, with and without site:linkedin.com, on the poster's name and the snippet's sentences) on 2026-10-29; the Google redirect token is opaque; admitted by its card title and snippet"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (video, 1:15)",
+   "card": "YouTube·KARE 11 — How common are AI hallucinations in court cases?",
+   "url": "https://www.youtube.com/watch?v=rLg9ODdR0YM",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B5.json",
+     "sha256": "ac41df10addc1eb2497ac3ea39b95833e66af55ba539f3fcbd9afc9fae3f4043"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B5.txt",
+     "sha256": "22256d67ebcd30fbd998fd0f8f4af4b8ac1282ccf198ceeef5d72fbb45e27aad"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:26Z",
+    "http": 200,
+    "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=rLg9ODdR0YM&format=json",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B5.json",
+    "raw_sha256": "ac41df10addc1eb2497ac3ea39b95833e66af55ba539f3fcbd9afc9fae3f4043",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B5.txt"
+    ]
+   },
+   "card_title": "How common are AI hallucinations in court cases?",
+   "card_snippet": null,
+   "card_note": "video, 1:15",
+   "names_operator": "no ('Charlotin' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found on YouTube's results page for the card title and channel (first result, KARE 11), confirmed by oEmbed; admitted through its title (§3.1(a)); no transcript fetched"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (video, 0:53)",
+   "card": "YouTube·Miller Law Group — AI Hallucinations Got an Attorney Disbarred",
+   "url": "https://www.youtube.com/watch?v=f8LeoqBZAHM",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-hallucination-cases-database-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B6.json",
+     "sha256": "60504a8520783b95a38ca9292a373f15c5a37ec9552ee74c7a19dbf4fe5d37f8"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B6.txt",
+     "sha256": "2b0789bf3bdb1b25a0c5305c1ac7bd143b1a51d9e8bc3df7613edaeedd6b4bdd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:27Z",
+    "http": 200,
+    "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=f8LeoqBZAHM&format=json",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B6.json",
+    "raw_sha256": "60504a8520783b95a38ca9292a373f15c5a37ec9552ee74c7a19dbf4fe5d37f8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B6.txt"
+    ]
+   },
+   "card_title": "AI Hallucinations Got an Attorney Disbarred",
+   "card_snippet": null,
+   "card_note": "video, 0:53",
+   "names_operator": "no ('Charlotin' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found on YouTube's results page for the card title and channel (first result, Miller Law Group), confirmed by oEmbed; admitted through its title; no transcript fetched"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the database's FAQ, linked from its page ('a FAQ is available here'); the maker's methodology text; not surfaced by T",
+   "card": "Artificial Authority (Damien Charlotin) — Hallucinations Case Database - FAQ",
+   "url": "https://artificialauthority.ai/p/hallucinations-case-database-faq",
+   "kind": "own page (FAQ, the maker's newsletter)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B7.html",
+     "sha256": "93d0d01730155efcec742e727e7114531abef8f34078c58255778fb2de713bd4"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B7.txt",
+     "sha256": "9e2ad64a4347ae041a1462855fa0be65932336e2d281cd90e5e9faba456c9362"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:27Z",
+    "http": 200,
+    "url": "https://artificialauthority.ai/p/hallucinations-case-database-faq",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B7.html",
+    "raw_sha256": "93d0d01730155efcec742e727e7114531abef8f34078c58255778fb2de713bd4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B7.txt"
+    ]
+   },
+   "admitted": "own page: the methodology text the task names ('its about or methodology text if separate'); the MMRS record does not cite it (its only source is the database page, B1)",
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "dated 14 November 2025, with edits marked 'Feb 2026'; Charlotin's newsletter Artificial Authority, to which the database page points for 'weekly takes'"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "a Wikipedia article that names the database in its body (no article exists for the database or its maker; W1)",
+   "card": "Wikipedia — Artificial intelligence",
+   "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+   "kind": "Wikipedia article (section naming the entity)",
+   "section": "Applications / Other industry-specific tasks",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.wiki",
+     "sha256": "8046fc18449a00eb7d8afef6eb8fb95e8b2ae13913cc0c9ebc93212d4c6bc4a6"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.html",
+     "sha256": "0340410779b2e554f13ae5078fd2b1f3938cc235f5a2babcd7bffa389b70e026"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.txt",
+     "sha256": "00d1de94af8ae826064f59505f5ee2749a3755338ba016fb628f14e6c0970548"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:20Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Artificial_intelligence&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.wiki",
+    "raw_sha256": "8046fc18449a00eb7d8afef6eb8fb95e8b2ae13913cc0c9ebc93212d4c6bc4a6",
+    "rendered": {
+     "at": "2026-10-29T05:09:33Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+     "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B8.txt"
+    ]
+   },
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by Wikipedia's full-text search (W1); quotes taken from the rendered page's text (B8.txt), the raw wikitext kept beside it; only the sentences naming or sourced to the database are ledgered"
+  },
+  {
+   "id": "B9",
+   "origin": "wikipedia",
+   "role": "a Wikipedia article that names the database in its body (no article exists for the database or its maker; W1)",
+   "card": "Wikipedia — Hallucination (artificial intelligence)",
+   "url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+   "kind": "Wikipedia article (section naming the entity)",
+   "section": "In legal filings (United States; Canada; Israel)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B9.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.wiki",
+     "sha256": "44c64b72efb8835a0251864bb1f07210a4d385c1318d40afb0542d7793d88aee"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.html",
+     "sha256": "f91695080f921e60ee89f9f42c6a40070ff67390961fb9988b1c506346dd84b3"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.txt",
+     "sha256": "d0bb8da24c35c8ef8a70497d2ce4b3fd9d9e0a1a0974925b1a59d67881ae7baf"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:20Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Hallucination_(artificial_intelligence)&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.wiki",
+    "raw_sha256": "44c64b72efb8835a0251864bb1f07210a4d385c1318d40afb0542d7793d88aee",
+    "rendered": {
+     "at": "2026-10-29T05:09:34Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
+     "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B9.txt"
+    ]
+   },
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by Wikipedia's full-text search (W1); quotes taken from the rendered page's text (B9.txt), the raw wikitext kept beside it; only the sentences naming or sourced to the database are ledgered"
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "a Wikipedia article that names the database in its body (no article exists for the database or its maker; W1)",
+   "card": "Wikipedia — Mata v. Avianca, Inc.",
+   "url": "https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.",
+   "kind": "Wikipedia article (section naming the entity)",
+   "section": "Impact",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.wiki",
+     "sha256": "e3a4791f5537949affde2d177c498514f06cc7910f8a32f9e1da5ad92381d19b"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.html",
+     "sha256": "80f381bace25e65f8d5781d07468de16d52450ebef6c3904fbbf55545f7bd493"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.txt",
+     "sha256": "0639347792d8bc828c85dadf5ab6cd65f3b206a8e705834943630401be1cc4ea"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:21Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Mata_v._Avianca,_Inc.&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.wiki",
+    "raw_sha256": "e3a4791f5537949affde2d177c498514f06cc7910f8a32f9e1da5ad92381d19b",
+    "rendered": {
+     "at": "2026-10-29T05:09:34Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.",
+     "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/B10.txt"
+    ]
+   },
+   "names_operator": "yes ('Charlotin' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by Wikipedia's full-text search (W1); quotes taken from the rendered page's text (B10.txt), the raw wikitext kept beside it; only the sentences naming or sourced to the database are ledgered"
+  }
+ ],
+ "wikipedia": {
+  "id": "W1",
+  "origin": "wikipedia",
+  "result": "no article",
+  "checked": "2026-10-29 05:08–05:09 UTC",
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=AI_Hallucination_Cases&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W3-raw.html",
+    "sha256": "1dca7bc68c3be0499d928e8e4703cd81a1e0afd15119ce14ff88cfb3de127191"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=AI_Hallucination_Cases_Database&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W1-raw.html",
+    "sha256": "c4df187a948beb8d9b01ae60dc8aabea31b841d79b91283f2950398b42faa220"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/AI_Hallucination_Cases_Database",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W1.html",
+    "sha256": "24b8cc5988a20b4c72d37545c2748ec6ee58621fa25db862dd5696e169137ef6",
+    "says": "Wikipedia does not have an article with this exact name (page title 'AI Hallucination Cases Database - Wikipedia')"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Damien_Charlotin&action=raw",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W2-raw.html",
+    "sha256": "f70edc0bafcd7595e30dd4a8ad2c89287397e4f1a75140733ecc2593f7cd741f"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Damien_Charlotin",
+    "http": 404,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W2.html",
+    "sha256": "82e6fc52fe7f144e3c6e2f4f306c0a08050f126104fa2437147667fc8dff68da",
+    "says": "no article for the maker"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Charlotin+hallucination&format=json&srlimit=50",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W-api-search-charlotin-429.html",
+    "note": "rate-limited; replaced by Special:Search"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22AI+Hallucination+Cases%22&format=json&srlimit=50",
+    "http": 429,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W-api-search-name-429.html",
+    "note": "rate-limited; replaced by Special:Search"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=Charlotin+hallucination&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W-search-charlotin.html",
+    "sha256": "38d9e172ce06397ae9aed530a4c10e22aa0d1c5cf51f85c9c26ab54bc8f584be",
+    "says": "'The page \"Charlotin hallucination\" does not exist'; 3 results: Hallucination (artificial intelligence), Mata v. Avianca, Inc., Artificial intelligence"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?search=%22AI+Hallucination+Cases%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+    "http": 200,
+    "file": "datasets/negative-of-the-negative/v2/intake/ai-hallucination-cases-20261029/W-search-name.html",
+    "sha256": "7f4cf7d933251a0ee683d363c00685f268ac2de7b5da17dbb9d25eb3af552dce",
+    "says": "'The pages \"AI Hallucination Cases\" and '\"AI Hallucination Cases\"' do not exist'; the same 3 results"
+   }
+  ],
+  "redirect": "none (no title resolves; no redirect page)",
+  "articles_naming_it": [
+   "B8",
+   "B9",
+   "B10"
+  ],
+  "note": "No article for the database, under either of its names, or for Damien Charlotin, exists on English Wikipedia on 2026-10-29 (raw wikitext and rendered pages answer HTTP 404). Three articles name it in their bodies or cite it: 'Artificial intelligence' (Applications / Other industry-specific tasks: its creation in April 2025 by Charlotin), 'Hallucination (artificial intelligence)' (In legal filings: its establishment in April 2025 and over 1,300 instances a year later; cited for Canadian and Israeli counts) and 'Mata v. Avianca, Inc.' (Impact: cited for the case's description as a landmark). Those sections are ledgered as the encyclopedia's account of the entity (B8–B10, F54–F59), in the manner the brief gives for a redirect's section."
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1",
+   "quote": "This database tracks legal decisions … in cases where generative AI produced hallucinated content – typically fake citations, but also other types of AI-generated arguments.",
+   "claim": "the database defined by its own page: it tracks legal decisions in cases where generative AI produced hallucinated content, typically fake citations, also other AI-generated arguments",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: legal decisions on AI hallucinations",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1, footnote 1 ¶1",
+   "quote": "I.e., all documents where the use of AI, whether established or merely alleged, is addressed in more than a passing reference by the court or tribunal.",
+   "claim": "a 'decision' is any document in which the court or tribunal addresses AI use, established or alleged, in more than a passing reference",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the unit and the admission rule",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1, footnote 1 ¶2",
+   "quote": "Notably, this does not cover mere allegations of hallucinations, but only cases where the court or tribunal has explicitly found (or implied) that a party relied on hallucinated content or material.",
+   "claim": "admission rule: not mere allegations of hallucinations, only cases where the court or tribunal explicitly found (or implied) reliance on hallucinated material",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit and the admission rule",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1, footnote 1 ¶3",
+   "quote": "As an exception, the database also covers some judicial decisions where AI use was alleged but not confirmed. This is a judgment call on my part.",
+   "claim": "an exception: some decisions where AI use was alleged but not confirmed, admitted as the maker's judgment call",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "exceptions: judgment calls",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1",
+   "quote": "It does not track the (necessarily wider) universe of all fake citations or use of AI in court filings.",
+   "claim": "its boundary: it does not track the necessarily wider universe of all fake citations or AI use in court filings",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "boundary: what it does not track",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶2",
+   "quote": "While seeking to be exhaustive (2231 cases identified so far), it is a work in progress and will expand as new examples emerge.",
+   "claim": "2,231 cases identified, seeking exhaustiveness; a work in progress",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and composition",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶2",
+   "quote": "This database has been featured in news media, and indeed in several decisions dealing with hallucinated material.",
+   "claim": "featured in news media and in several decisions dealing with hallucinated material",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶2, footnote 2",
+   "quote": "Examples of media coverage include: … M. Hiltzik, AI 'hallucinations' are a growing problem for the legal profession (LA Times, 22 May 2025)",
+   "claim": "media coverage, the first example the LA Times of 22 May 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶3",
+   "quote": "And if you know of a case that should be included, feel free to … contact me.",
+   "claim": "readers may send cases to the maker",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and pipeline",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "PelAIkan box",
+   "quote": "Based on this database, I have developed an automated reference checker that also detects hallucinations: PelAIkan.",
+   "claim": "a derived tool: PelAIkan, an automated reference checker built on the database",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and uses",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "download and update line",
+   "quote": "Click to Download CSV … Last updated: 28 October 2026",
+   "claim": "CSV download; last updated 28 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: licence and data",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Licence box",
+   "quote": "CC BY 4.0 — free to reuse, including commercially, with attribution. … Cite as: AI Hallucination Cases Database, Damien Charlotin,",
+   "claim": "licensed CC BY 4.0, reuse including commercial with attribution; cited as 'AI Hallucination Cases Database, Damien Charlotin'",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: licence and data",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "filters: Party",
+   "quote": "Expert (17) … Judge (32) … Lawyer (880) … Prosecutor (5) … Pro Se Litigant (1288)",
+   "claim": "by party: pro se litigants 1,288, lawyers 880, judges 32, experts 17, prosecutors 5",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and composition",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "filters: State",
+   "quote": "Australia (112) … Canada (238) … UK (82) … USA (1514)",
+   "claim": "by jurisdiction: USA 1,514, Canada 238, Australia 112, UK 82",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and composition",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "filters: Nature – Category",
+   "quote": "Fabricated (1829) … False Quotes (595) … Misrepresented (947) … Outdated Advice (38)",
+   "claim": "nature of hallucination in four categories: fabricated 1,829, false quotes 595, misrepresented 947, outdated advice 38",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: fields and categories",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "filters: From period",
+   "quote": "From period: Q2 2023",
+   "claim": "the period filter begins in Q2 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker and origin",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "table header",
+   "quote": "Court / Jurisdiction … Party Using AI … AI Tool … Nature of Hallucination … Outcome / Sanction … Monetary Penalty … Details … Report(s)",
+   "claim": "each record: case, court and jurisdiction, date, party using AI, AI tool, nature of hallucination, outcome or sanction, monetary penalty, details, reports",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: fields and categories",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "AI Tool column note (attribute text)",
+   "quote": "This database tracks AI tools only as disclosed or admitted by parties in court filings. If AI use was acknowledged but no specific tool was named, the entry reads 'Unidentified.' Otherwise, the default value is 'Implied' when AI use is evident but not explicitly confirmed.",
+   "claim": "AI tools recorded only as disclosed or admitted in filings; 'Unidentified' and 'Implied' as defaults",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record's stated limits",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "AI Tool column note (attribute text)",
+   "quote": "Note: The mention of a specific tool does not necessarily mean that tool was responsible for the hallucinations in question.",
+   "claim": "a named tool is not necessarily the tool responsible",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record's stated limits",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "graph notes (attribute text)",
+   "quote": "The date of the offending document is parsed automatically from court records and may occasionally be wrong. … These responses are extracted automatically from the decisions and simplified into set categories, so treat them as indicative rather than exact.",
+   "claim": "automatically parsed dates may be wrong; responses when caught are extracted automatically and indicative rather than exact",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record's stated limits",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Monetary sanction note (attribute text)",
+   "quote": "A monetary penalty recorded as 1 is a placeholder, not the real figure: the court imposed a monetary sanction but the amount is unknown to us.",
+   "claim": "a penalty of 1 is a placeholder for an unknown amount",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: fields and categories",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "meta description (attribute text)",
+   "quote": "The most comprehensive database of AI hallucination cases in law: legal decisions from courts worldwide, searchable by country, party, AI tool, and outcome. Updated daily.",
+   "claim": "its self-description: the most comprehensive database of AI hallucination cases in law, worldwide, searchable, updated daily",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: legal decisions on AI hallucinations",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "filters: outcome",
+   "quote": "Monetary sanction … Disciplinary Referral",
+   "claim": "outcome filters: monetary sanction, disciplinary referral",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: fields and categories",
+   "date": "2026-10-28 (the page's 'Last updated'; as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c645e242eb50b572…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "UK box",
+   "quote": "The detailed UK AI Hallucination Cases Tracker … For UK AI hallucination cases, the dedicated UK tracker brings together case records, recorded outcomes, judicial quotations and sources, alongside figures and charts drawn from my fuller research.",
+   "claim": "Natural and Artificial Law's separate UK tracker: case records, outcomes, judicial quotations, sources, figures and charts",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: Natural and Artificial Law's trackers",
+   "date": "2025-05-16 (first published; revised 2026-10-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd7198c1f5306d58…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "UK box",
+   "quote": "It includes confirmed, suspected and disputed issues: inclusion is not proof of an AI hallucination or wrongdoing.",
+   "claim": "the UK tracker includes confirmed, suspected and disputed issues; inclusion is not proof",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: Natural and Artificial Law's trackers",
+   "date": "2025-05-16 (first published; revised 2026-10-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd7198c1f5306d58…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "international page head",
+   "quote": "International AI hallucination cases tracker … Selected judicial quotations on AI hallucination cases and fabricated/false citations from judgments and decisions across jurisdictions. … By Matthew Lee · Barrister, Doughty Street Chambers … First published: 16 May 2025",
+   "claim": "the card's page: Matthew Lee's international tracker of selected judicial quotations on AI hallucination cases, first published 16 May 2025",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour: Natural and Artificial Law's trackers",
+   "date": "2025-05-16 (first published; revised 2026-10-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd7198c1f5306d58…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "The reason for this collection",
+   "quote": "The collection is selective and does not measure how often these issues occur or establish a worldwide consensus.",
+   "claim": "the collection is selective; it measures no frequency and establishes no consensus",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbour: Natural and Artificial Law's trackers",
+   "date": "2025-05-16 (first published; revised 2026-10-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd7198c1f5306d58…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "lede ('In short')",
+   "quote": "In short: Damien Charlotin's AI Hallucination Cases database lists 2,202 court and tribunal decisions involving AI-fabricated citations or content, as of its 19 October 2026 update.",
+   "claim": "HAQQ: the database lists 2,202 decisions as of its 19 October 2026 update",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count and composition",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "How many AI hallucination cases are there?",
+   "quote": "The database is maintained by Damien Charlotin, a research fellow at HEC Paris. Its inclusion bar is strict: a decision is listed only where a court or tribunal found, or clearly implied, that a party relied on hallucinated material. Accusations alone do not count.",
+   "claim": "HAQQ: maintained by Charlotin, a research fellow at HEC Paris; inclusion only where a court found or clearly implied reliance",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and the admission rule",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "How many AI hallucination cases are there? (caveats)",
+   "quote": "First, it counts only what a judge caught and wrote up; a fake citation nobody checks never reaches the database, so 2,202 is a floor.",
+   "claim": "HAQQ: it counts only what a judge caught; the count is a floor",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "boundary: what it does not track",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key facts",
+   "quote": "By country: United States 1,501; Canada 234; Australia 112; United Kingdom 76; … By filer: pro se litigants 1,267; lawyers 872; judges 32; experts 17 (Charlotin database party filter, 19 October 2026).",
+   "claim": "HAQQ's reading of the filters on 19 October 2026: US 1,501; pro se 1,267, lawyers 872",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count and composition",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key facts",
+   "quote": "Growth: about 200 cases in mid-2025, 719 in January 2026 (Scientific American, 2026), 1,227 in early April 2026 (PlatinumIDS, April 2026), 1,458 on 22 May, 1,598 on 9 June, 2,046 on 21 September and 2,202 on 19 October 2026 (HAQQ checks of the live database).",
+   "claim": "HAQQ's growth series, about 200 in mid-2025 to 2,202 on 19 October 2026",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "growth",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "How have AI sanctions escalated?",
+   "quote": "The 2025 and 2026 decisions add revoked admissions, regulator referrals, a contempt finding, a canceled trial, district suspensions and personal costs against the lawyer who signed without checking. … Largest single-matter penalty we can source: about $109,700 in sanctions and fees in Couvrette v. Wisnovsky, D. Oregon (ABA Journal, 2026).",
+   "claim": "HAQQ: sanctions beyond fines (revoked admissions, referrals, suspensions, personal costs); largest sourced penalty about $109,700",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: HAQQ's sanctions tracker",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "How is this tracker kept current?",
+   "quote": "Once a month we re-read the live database and primary reporting and check four things: the total count, the largest sourced penalty, new landmark decisions (appellate, cross-border or a new kind of sanction) and the implied daily rate. A number we cannot re-verify comes off the page.",
+   "claim": "HAQQ's method: a monthly re-read of the live database; unverifiable numbers removed",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: HAQQ's sanctions tracker",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Why do lawyers keep filing fake AI citations?",
+   "quote": "(HAQQ ran that benchmark and sells a legal AI product, so weigh our numbers accordingly)",
+   "claim": "HAQQ discloses that it sells a legal AI product",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbour: HAQQ's sanctions tracker",
+   "date": "2026-05-22 (published; updated 2026-10-20)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7a350124b3e5de72…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (LinkedIn; post not found)",
+   "quote": "George Hannah 4mo There is now a database tracking every AI hallucination to surface in court. It has logged 1,600 cases so far.",
+   "claim": "a LinkedIn post (four months before the capture): a database tracking every AI hallucination to surface in court, 1,600 cases",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "about 2026-06 ('4mo' on the card, 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "oEmbed title (YouTube, KARE 11, 1:15)",
+   "quote": "How common are AI hallucinations in court cases?",
+   "claim": "a KARE 11 video, 'How common are AI hallucinations in court cases?' (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 22256d67ebcd30fb…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "oEmbed title (YouTube, Miller Law Group, 0:53)",
+   "quote": "AI Hallucinations Got an Attorney Disbarred",
+   "claim": "a Miller Law Group video, 'AI Hallucinations Got an Attorney Disbarred' (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2b0789bf3bdb1b25…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "As some of you know, I am maintaining an AI Hallucinations Cases database on my personal website.",
+   "claim": "the maker: Charlotin maintains the database on his personal website",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker and origin",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "When did you start the database, and why ?",
+   "quote": "April 2025. I was teaching this course to sorry Sciences Po Law School students, discussing in particular the “Limits and Potentials” of LLMs in the legal domain, when we started touching on the phenomenon of hallucinations. … I looked out for actual data here. Since there was none, … I figured, “hey, let’s tally the cases myself”.",
+   "claim": "started April 2025 in a Sciences Po course on LLMs in law; no data existed, so he tallied the cases himself",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "maker and origin",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "What do you mean by “surge” ?",
+   "quote": "I mean that pre-2025, we maybe had two or three cases a month; now that’s below the daily average. … daily average is now five per day.",
+   "claim": "growth: two or three a month before 2025; five a day by February 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "growth",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Why the acceleration then ?",
+   "quote": "A combination of factors, including the lag in judicial times … This matches the profile of most cases: either self-represented litigants, or lawyers who are surprised that an existing tool suddenly has an AI component that hallucinates.",
+   "claim": "causes: judicial lag, LLM availability, public knowledge; most cases self-represented litigants or lawyers surprised by an AI component",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "causes and coverage: the maker's reading",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "How do you find the cases ?",
+   "quote": "A mix of referrals from benevolent randos on the internet … use of dedicated scrapers and bots to automatically monitor some data sources … and good old database searches with, wait for it, keywords.",
+   "claim": "intake: referrals, scrapers and bots, keyword searches",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and pipeline",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "But then, how do you know a case actually involves an hallucination ?",
+   "quote": "That’s the point: I am not making that judgment, I let the courts and judges make or imply it, which is why the database is necessarily an undercount.",
+   "claim": "the courts make or imply the judgment, not the maker; hence necessarily an undercount",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit and the admission rule",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "But then, how do you know a case actually involves an hallucination ?",
+   "quote": "It’s also why I refrain from adding rows about cases where hallucinations are only alleged",
+   "claim": "he refrains from adding cases where hallucinations are only alleged",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "exceptions: judgment calls",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "But then, how do you know a case actually involves an hallucination ?",
+   "quote": "by their nature, most hallucinations are very obvious, making up a case name or a false quote is not, cannot be a human mistake",
+   "claim": "most hallucinations are obvious; a made-up case name or false quote cannot be a human mistake",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit and the admission rule",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "But then, how do you know … ? (edit, Feb 2026)",
+   "quote": "[Edit, Feb 2026: I should add an exception here, in cases where the alleged hallucination comes from a judge: absent an appeal court decision or an official retractation, I am bound to make a judgment call.]",
+   "claim": "an exception for hallucinations alleged of a judge: a judgment call absent an appeal decision or retraction",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "exceptions: judgment calls",
+   "date": "2026-02 (edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Why so many entries come from the USA ?",
+   "quote": "‘Murica is blessed - and I mean it - with an excellent legal data ecosystem. … In many countries, especially European countries, legal data - though supposedly public - is hoarded by legal editors",
+   "claim": "coverage: the US legal data ecosystem; European legal data hoarded by editors",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "causes and coverage: the maker's reading",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F49": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Any other trends in the data ?",
+   "quote": "one rather evident divisio stands between pure mistakes … the vast majority of cases, and the (substantial) minority of records that involve, for lack of a better word, “bad” actors.",
+   "claim": "pure mistakes the vast majority; a substantial minority of 'bad' actors",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "causes and coverage: the maker's reading",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "When do you intend to stop ?",
+   "quote": "I currently have a rather efficient pipeline to process new entries - which in fact involve the use of AI, though I am careful to check it does not hallucinate.",
+   "claim": "the pipeline for new entries uses AI, checked for hallucination",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and pipeline",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "What’s the point of the database ultimately ?",
+   "quote": "Intrisic value: practitioners use it to find out what cases are relevant in their own jurisdiction. … And then all these hallucinated cases can serve as benchmarks to fix the issue.",
+   "claim": "uses: practitioners' jurisdiction research, data analyses, benchmarks",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and uses",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F52": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Because you expect this to be fixed ?",
+   "quote": "likely not at the model stage, no … I don’t think we can ever reduce it to zero given the existing paradigm.",
+   "claim": "no fix expected at the model stage; not reducible to zero in the existing paradigm",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and uses",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F53": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Anything else ?",
+   "quote": "For years, we (me included) have cited without reading; but now the costs of that practice have become explicit. In other words, hallucinations expose the epistemic hygiene the legal profession has long lacked, and that is precisely why they deserve to be studied.",
+   "claim": "hallucinations expose the profession's citing without reading",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "citation fidelity",
+   "date": "2025-11-14 (edits of February 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9e2ad64a4347ae04…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Applications / Other industry-specific tasks",
+   "quote": "The use of generative AI by law firms for legal research resulted in the creation of the global \"AI Hallucination Cases\" database, in April 2025, established by HEC Paris and Sciences Po legal data analysis lecturer Damien Charlotin.",
+   "claim": "Wikipedia (Artificial intelligence): created April 2025 by Charlotin, HEC Paris and Sciences Po lecturer, as a result of law firms' use of generative AI",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "maker and origin",
+   "date": "2026-10-28 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 00d1de94af8ae826…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Applications / Other industry-specific tasks",
+   "quote": "By 2026, judges had issued sanctions and bar associations had issued warnings due to attorney submissions to the courts containing fabricated case law citations hallucinated by AI tools.",
+   "claim": "Wikipedia (Artificial intelligence): by 2026 sanctions and bar warnings over AI-hallucinated citations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-10-28 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 00d1de94af8ae826…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "In legal filings / United States ¶1",
+   "quote": "A database of incidents, \"AI Hallucination Cases\", was established in April 2025 by HEC Paris and Sciences Po legal data analysis lecturer Damien Charlotin; one year later, it listed over 1300 instances of hallucinations in legal decisions.",
+   "claim": "Wikipedia (Hallucination): established April 2025 by Charlotin; over 1,300 instances a year later",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "maker and origin",
+   "date": "2026-10-28 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 d0bb8da24c35c8ef…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "In legal filings / Canada",
+   "quote": "As of 14 June 2026, Canadian courts and tribunals have received at least 167 filings containing AI-hallucinated, fictitious citations, across 51 courts and tribunals.",
+   "claim": "Wikipedia (Hallucination), sourced to courtready.ca and the database's Canada filter: at least 167 Canadian filings by 14 June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-10-28 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 d0bb8da24c35c8ef…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "In legal filings / Israel",
+   "quote": "As of August 2026, Israeli courts and tribunals had identified at least 55 cases in which parties submitted documents containing fictitious citations or otherwise AI-hallucinated arguments.",
+   "claim": "Wikipedia (Hallucination), sourced to the database's Israel filter: at least 55 Israeli cases by August 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-10-28 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 d0bb8da24c35c8ef…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Impact ¶3",
+   "quote": "Due to the continued usage of GAI in the practice of law, Mata has been described as a landmark case by legal professionals,",
+   "claim": "Wikipedia (Mata v. Avianca), sourced to the database among others: Mata described as a landmark case",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, courts, encyclopedia, video",
+   "date": "2026-05-19 (revision listed by Special:Search)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 0639347792d8bc82…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Damien Charlotin — AI Hallucination Cases Database",
+  "B2": "Natural and Artificial Law — AI Hallucination Cases Tracker",
+  "B3": "HAQQ — AI Hallucination Cases: The 2202-Case Sanctions Tracker - HAQQ",
+  "B4": "LinkedIn — George Hannah's Post",
+  "B5": "YouTube·KARE 11 — How common are AI hallucinations in court cases?",
+  "B6": "YouTube·Miller Law Group — AI Hallucinations Got an Attorney Disbarred",
+  "B7": "Artificial Authority (Damien Charlotin) — Hallucinations Case Database - FAQ",
+  "B8": "Wikipedia — Artificial intelligence",
+  "B9": "Wikipedia — Hallucination (artificial intelligence)",
+  "B10": "Wikipedia — Mata v. Avianca, Inc."
+ }
+}

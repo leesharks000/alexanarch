@@ -34,3 +34,12 @@ JSON parses; every cited id exists in a ledger; every field claim is in the tran
 
 ## Final message
 The case and ρ with why; Wikipedia's state for the entity; counts (sources by origin, fetched/unreachable, field claims, archive claims by kind, deposits admitted of candidates); KO sentences; P words; the measure; and anything the operator should know (defects in the MMRS record or the captures you found: report them, do not fix them).
+
+## Shapes the page builder needs (scripts/build_non.py; learned on the first two rows, 2026-10-29)
+- objects.T: ONE dict {path, sha256, words, cards, words_note, claims (list of strings, "T1-1 definition: '…'"), register {register, slug, obs_id}, transcripts: [each transcript: slug, address, addr_id, obs_id, axn, sha256, sha256_of, words, cards, card_rail, claims, path]}. With two transcripts, words and cards are summed and words_note says so. Write each registry transcript string to intake/ROW-20261029/T<i>-<slug>.txt and give that file as path (its sha256 is the registry string's).
+- field: a FLAT list [{id, card, fetched, origin}] (card = the card's site — title, or the page's kind; fetched = how and with what result, with sha256). Keep the grouped form (cards / own_pages / wikipedia) under field_by_origin.
+- ontology.composition: exactly "equal", "witness" or "mixed" (put any longer statement in ontology.composition_note).
+- ontology.E_A.defining_papers: deposit numbers (integers) only; the MMRS record and the capture records go in E_A.defining_records (strings).
+- archive ledger claims that are not deposits (CAP-, MMRS-): give "dep" as a string label and add "surface": {"url": the capture page https://www.alexanarch.org/captures/<slug>/ or the MMRS page https://www.machinemediation.org/aggregators/<census slug>/} and "record": {"url": same, "label": …}.
+- objects.P.rail (and P_B.rail): each lineage {lineage, claims, earliest} where earliest is the source id of its earliest instance (a field source id like "B3", or a deposit number).
+- Do not run scripts/build_non.py or scripts/non_axn.py, and do not edit panel.json: the session seats the panel entry, mints the AXN and builds the pages.

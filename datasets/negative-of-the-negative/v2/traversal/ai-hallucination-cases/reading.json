@@ -1,0 +1,156 @@
+{
+ "row": "ai-hallucination-cases",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on AI Hallucination Cases (what it is, its maker, its unit, its admission rule, its record, its limits); R, a relation the archive states between the database and an archive object; O, an archive category applied to the database or to a class the field sources for it (databases and trackers of AI hallucination cases: B9, B3, B2; fabricated or fake citations in court filings and decisions: B1, B3, B2). A bare mention, a list of negative keywords, or a sentence on fabricated citations outside court filings and decisions is not a claim on the class.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+   "reason": "the Capture Registry's findings and analysis for the entity's capture (OBS-4f95ab35a3ac, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/ai-hallucination-cases/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'ai-hallucination-cases'], its candidates and schema_note, and scripts/meta_aggregator/articles.py ARTICLES['ai-hallucination-cases']; rendered aggregators/ai-hallucination-cases/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 43,
+   "cand": "O0001",
+   "stratum": "O-class",
+   "sentence": "Ghost meaning (unanchored claims, unattributed summaries, hallucinated citations) does not.",
+   "reason": "'hallucinated citations' listed among kinds of ghost meaning in retrocausal canon formation; no court filing or decision; not a claim on the class"
+  },
+  {
+   "dep": 45,
+   "cand": "O0002",
+   "stratum": "O-class",
+   "sentence": "**Compression error accumulation.** Each depth layer introduces potential distortions: hallucinated citations, shifted emphasis, lost qualifications, dropped contradictions.",
+   "reason": "hallucinated citations as a compression error of the summarizer layer; not citations in legal filings or decisions"
+  },
+  {
+   "dep": 46,
+   "cand": "O0003",
+   "stratum": "O-class",
+   "sentence": "Family: artificial provenance web, generated reference chain, fabricated citation cluster.",
+   "reason": "'fabricated citation cluster' as a family of a semantic mint; no legal filing or decision"
+  },
+  {
+   "dep": 107,
+   "cand": "O0004",
+   "stratum": "O-class",
+   "sentence": "Provenance-aware preference optimization addresses a failure mode with documented empirical signatures: unattributed synthesis, fabricated citations, and confidently-asserted unsupported claims have been characterized as a major category of hallucination in Ji et al. 2023's survey and operationalize",
+   "reason": "fabricated citations as a failure mode in the hallucination literature (Ji et al.; FActScore); not court filings or decisions"
+  },
+  {
+   "dep": 176,
+   "cand": "O0005",
+   "stratum": "O-class",
+   "sentence": "Falsified citation metadata, fabricated DOIs, or invented authorities are not training-layer literature; they are corpus poisoning.",
+   "reason": "fabricated citation metadata as corpus poisoning in training-layer literature; not legal filings"
+  },
+  {
+   "dep": 500,
+   "cand": "O0006",
+   "stratum": "O-class",
+   "sentence": "**Platform capture.** Danielewski could satirize academic enclosure (fabricated citations, the institutional capture of the scholarly apparatus) but could not anticipate the specific mechanisms of platform extraction — algorithmic summarization, SEO capture, the conversion of semantic labor into eng",
+   "reason": "Danielewski's satire of fabricated scholarly citations; not legal filings"
+  },
+  {
+   "dep": 500,
+   "cand": "O0007",
+   "stratum": "O-class",
+   "sentence": "| Feature | *House of Leaves* | Crimson Hexagon | |---|---|---| | **Distributed authorship** | Zampanò / Truant / Editors / Pelafina | Sigil / Sharks / Vox / Fraction / Kuro / Wells / Assembly | | **Absent center** | The Navidson Record (unscreenable) | \"Split the Adam\" (unrecorded) / Training layer",
+   "reason": "a comparison table of House of Leaves and the Crimson Hexagon; the class term is incidental"
+  },
+  {
+   "dep": 615,
+   "cand": "O0008",
+   "stratum": "O-class",
+   "sentence": "**The provenance vacuum produces provenance failures.** The combination of planetary-scale inference, zero semantic governance, proven RAG vulnerabilities, and advertising integration creates the conditions for provenance failures with institutional consequences — policy decisions based on hallucina",
+   "reason": "policy decisions on hallucinated citations as a provenance failure; no court filing or decision"
+  },
+  {
+   "dep": 767,
+   "cand": "O0009",
+   "stratum": "O-class",
+   "sentence": "Negative keywords: hoax; fraud; scam; fake citation; fake academic; deception; prank; hallucinated citation; impersonation fraud; misinformation operation.",
+   "reason": "'fake citation' and 'hallucinated citation' as negative keywords of a metadata packet; a list, not a claim"
+  },
+  {
+   "dep": 1287,
+   "cand": "O0010",
+   "stratum": "O-class",
+   "sentence": "| Related Incident | Description | Status | |---|---|---| | LLM-2025-1019-META | Model generated self-referential content about training process | CLOSED | | LLM-2025-1105-ABSORB | Model absorbed real individuals into fictional frameworks | OPEN | | LLM-2025-1203-CITE | Model generated fake citation",
+   "reason": "a fictional incident report's related-incident table (fake citations with correct formatting); not legal filings or decisions"
+  }
+ ],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "no deposit admitted at D, R or O, so no citation hop was run (§3.4 (3) runs from admitted deposits)"
+ },
+ "class_pass": "O-class: the first class (databases and trackers of AI hallucination cases) matched no sentence in the archive's 1,711 scanned texts; the second (fabricated or fake citations) matched 10 sentences in 9 deposits (#43, #45, #46, #107, #176, #500 twice, #615, #767, #1287), none about citations in legal filings or decisions; none admitted",
+ "observations": "The archive's deposits do not name the database, its maker, its domain or PelAIkan (D 0, R 0; summary.json), and no deposit text treats AI-fabricated citations in court filings (a further grep for 'Avianca' and for hallucination near court, judge, lawyer or sanction found none). The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 10,
+   "O_deposits": 9,
+   "H_candidates": 0
+  },
+  "deposits_candidate": 9,
+  "deposits_admitted": 0,
+  "hop_candidates": 0,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 6,
+   "mmrs": 26,
+   "deposit": 0
+  }
+ }
+}
