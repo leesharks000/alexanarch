@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-29T02:55:31Z",
+  "regenerated_at": "2026-10-29T04:23:32Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "1d48845e9d69f6ec8a31194d45a51187b7d96e00c2d31fa9a92a1196fe0226aa",
+    "mm-main-capture": "94fda49d87cc29206d842236869a20f59d91ea1e8a9f34c060356922bd387f8e",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2521,
-  "total_observations": 1052,
+  "total_addresses": 2541,
+  "total_observations": 1072,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 764,
+    "observed_address": 784,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1641,
+    "unmatched": 1661,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -7743,6 +7743,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "academ-ai": {
+      "canonical_query": "academ-ai",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "ACADEM-AI ON THE OVERVIEW — COMPOSED AS THE PAPER, THE DATABASE UNSAID, THE MAKER UNNAMED; THREE EDTECH HOMONYMS OFFERED (ACADEMAI, ACADEMI.AI, ACADEMIQ)",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "academ-ai-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#academ-ai-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/academ-ai-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#academ-ai-aio-20261029",
+          "details_excerpt": "ACADEM-AI, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'most notably refers to a research study and framework documenting the undisclosed use of generative artificial intelligence in academic publishing'; t"
+        }
+      ],
+      "originator": {
+        "name": "Alex Glynn (Kornhauser Health Sciences Library, University of Louisville)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Academ-AI, run by Alex Glynn (Kornhauser Health Sciences Library, University of Louisville). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/academ-ai/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "ACADEM-AI ON THE OVERVIEW — COMPOSED AS THE PAPER, THE DATABASE UNSAID, THE MAKER UNNAMED; THREE EDTECH HOMONYMS OFFERED (ACADEMAI, ACADEMI.AI, ACADEMIQ)"
+    },
     "academia:operative semiotics": {
       "canonical_query": "academia:operative semiotics",
       "is_quoted": false,
@@ -8213,6 +8248,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "aeo vision top arxiv papers geo": {
+      "canonical_query": "aeo vision top arxiv papers geo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "AEO VISION'S TOP ARXIV GEO PAPERS ON THE OVERVIEW — THE LIST COMPOSED FROM OTHER LISTS: A PLACEHOLDER IDENTIFIER ('ARXIV:2411.XXXXX'), TWO RAG PAPERS MERGED, TWO PAPERS NOT ON AEO VISION'S LIST",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#aeo-vision-top-arxiv-papers-geo-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/aeo-vision-top-arxiv-papers-geo-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#aeo-vision-top-arxiv-papers-geo-aio-20261029",
+          "details_excerpt": "AEO VISION'S TOP ARXIV PAPERS FOR GEO, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: four papers: the GEO paper (Aggarwal et al.), 'Read the study on arXiv:2411.xxxxx or via industry summaries at GeoReady'; Martinez's"
+        }
+      ],
+      "originator": {
+        "name": "AEO Vision (byline: AEO Vision Content Team)",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AEO Vision — top arXiv papers for GEO, run by AEO Vision (byline: AEO Vision Content Team). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/aeovision-geo-papers/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "AEO VISION'S TOP ARXIV GEO PAPERS ON THE OVERVIEW — THE LIST COMPOSED FROM OTHER LISTS: A PLACEHOLDER IDENTIFIER ('ARXIV:2411.XXXXX'), TWO RAG PAPERS MERGED, TWO PAPERS NOT ON AEO VISION'S LIST"
+    },
     "affect literacy": {
       "canonical_query": "affect literacy",
       "is_quoted": false,
@@ -8550,6 +8620,76 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "ai hallucination cases database": {
+      "canonical_query": "ai hallucination cases database",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "CHARLOTIN'S AI HALLUCINATION CASES ON THE OVERVIEW — 'OVER 2,200' DECISIONS, THE MAKER NAMED, THE PARTIES AND SANCTIONS; A UK TRACKER AND A 2,202-CASE DERIVATIVE AMONG THE CARDS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ai-hallucination-cases-database-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#ai-hallucination-cases-database-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ai-hallucination-cases-database-aio-20261029",
+          "details_excerpt": "THE AI HALLUCINATION CASES DATABASE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'the primary public database tracking generative AI hallucinations in court decisions... created and maintained by Damien Cha"
+        }
+      ],
+      "originator": {
+        "name": "Damien Charlotin",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AI Hallucination Cases, run by Damien Charlotin. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/ai-hallucination-cases/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "CHARLOTIN'S AI HALLUCINATION CASES ON THE OVERVIEW — 'OVER 2,200' DECISIONS, THE MAKER NAMED, THE PARTIES AND SANCTIONS; A UK TRACKER AND A 2,202-CASE DERIVATIVE AMONG THE CARDS"
+    },
+    "ai incident database": {
+      "canonical_query": "ai incident database",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE AI INCIDENT DATABASE BY ITS NAME ON THE OVERVIEW — THE OPERATOR AND THE AVIATION MODEL RIGHT; THE MIT TRACKER NAMED AS ITS EXTENSION; A KAGGLE DATASET OF 32 INCIDENTS AMONG THE CARDS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ai-incident-database-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#ai-incident-database-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/ai-incident-database-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ai-incident-database-aio-20261029",
+          "details_excerpt": "THE AI INCIDENT DATABASE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a free, open-source project managed by the Responsible AI Collaborative that indexes real-world harms, near-harms, and failures caused "
+        }
+      ],
+      "originator": {
+        "name": "Responsible AI Collaborative",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AI Incident Database, run by Responsible AI Collaborative. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/ai-incident-database/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE AI INCIDENT DATABASE BY ITS NAME ON THE OVERVIEW — THE OPERATOR AND THE AVIATION MODEL RIGHT; THE MIT TRACKER NAMED AS ITS EXTENSION; A KAGGLE DATASET OF 32 INCIDENTS AMONG THE CARDS"
     },
     "ai indexing": {
       "canonical_query": "ai indexing",
@@ -9065,6 +9205,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "aiaaic repository": {
+      "canonical_query": "aiaaic repository",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE AIAAIC REPOSITORY ON THE OVERVIEW — JUNE 2019, CC BY-SA 4.0, 'INDEPENDENT, OPEN-ACCESS'; THE OPERATOR UNNAMED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "aiaaic-repository-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#aiaaic-repository-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/aiaaic-repository-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#aiaaic-repository-aio-20261029",
+          "details_excerpt": "THE AIAAIC REPOSITORY, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an independent, open-access public database that tracks real-world incidents, controversies, and harms related to artificial intelligence,"
+        }
+      ],
+      "originator": {
+        "name": "AIAAIC",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AIAAIC Repository, run by AIAAIC. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/aiaaic-repository/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE AIAAIC REPOSITORY ON THE OVERVIEW — JUNE 2019, CC BY-SA 4.0, 'INDEPENDENT, OPEN-ACCESS'; THE OPERATOR UNNAMED"
     },
     "alexanarch": {
       "canonical_query": "alexanarch",
@@ -14089,6 +14264,41 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
     },
+    "awesome-geo": {
+      "canonical_query": "awesome-geo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "AWESOME-GEO ON THE OVERVIEW — THE GEO SENSE FIRST, DAVIDHUJI'S LIST FIRST AMONG THREE REPOSITORIES; THE GEOSPATIAL HOMONYMS SET APART AS 'ALTERNATIVE MEANINGS'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "awesome-geo-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#awesome-geo-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/awesome-geo-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#awesome-geo-aio-20261029",
+          "details_excerpt": "AWESOME-GEO, THE BARE STRING, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'most commonly refers to curated collections and resources dedicated to Generative Engine Optimization'; three repositories and one platform "
+        }
+      ],
+      "originator": {
+        "name": "DavidHuji (GitHub)",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Awesome-GEO (DavidHuji), run by DavidHuji (GitHub). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/awesome-geo-davidhuji/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "AWESOME-GEO ON THE OVERVIEW — THE GEO SENSE FIRST, DAVIDHUJI'S LIST FIRST AMONG THREE REPOSITORIES; THE GEOSPATIAL HOMONYMS SET APART AS 'ALTERNATIVE MEANINGS'"
+    },
     "axn distributed identifiers": {
       "canonical_query": "axn distributed identifiers",
       "is_quoted": false,
@@ -16652,6 +16862,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "cms ai and copyright case tracker": {
+      "canonical_query": "cms ai and copyright case tracker",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE CMS AI AND COPYRIGHT CASE TRACKER ON THE OVERVIEW — THE OFFICE MENU READ AS ITS SCOPE, THE US LITIGATION COUNT READ AS ITS HOLDINGS; THE CASES NAMED RIGHT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "cms-ai-and-copyright-case-tracker-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#cms-ai-and-copyright-case-tracker-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/cms-ai-and-copyright-case-tracker-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#cms-ai-and-copyright-case-tracker-aio-20261029",
+          "details_excerpt": "THE CMS AI AND COPYRIGHT CASE TRACKER, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: it 'monitors generative AI copyright litigation and regulatory developments across Europe, Africa, Asia-Pacific, the Americ"
+        }
+      ],
+      "originator": {
+        "name": "CMS (law firm)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: CMS AI and Copyright Case Tracker, run by CMS (law firm). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/cms-ai-copyright-tracker/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE CMS AI AND COPYRIGHT CASE TRACKER ON THE OVERVIEW — THE OFFICE MENU READ AS ITS SCOPE, THE US LITIGATION COUNT READ AS ITS HOLDINGS; THE CASES NAMED RIGHT"
+    },
     "coachella valley": {
       "canonical_query": "coachella valley",
       "is_quoted": false,
@@ -16675,6 +16920,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "codesota": {
+      "canonical_query": "codesota",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "CODESOTA ON THE OVERVIEW — 'ONE ROUTING LAYER FOR AI TASKS', FROM ITS HOMEPAGE; THE SUCCESSION CLAIM TO PAPERS WITH CODE UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "codesota-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#codesota-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/codesota-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#codesota-aio-20261029",
+          "details_excerpt": "CODESOTA, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a unified routing layer and common API for artificial intelligence tasks spanning code, text, documents, speech, and vision'; model selection by benchm"
+        }
+      ],
+      "originator": {
+        "name": "Kacper Wikiel, 'By Fabryka AI' (Warsaw)",
+        "relation": "external",
+        "entity_type": "service",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: CodeSOTA, run by Kacper Wikiel, 'By Fabryka AI' (Warsaw). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/codesota/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "CODESOTA ON THE OVERVIEW — 'ONE ROUTING LAYER FOR AI TASKS', FROM ITS HOMEPAGE; THE SUCCESSION CLAIM TO PAPERS WITH CODE UNSAID"
     },
     "codicological compression-persistence coefficient": {
       "canonical_query": "codicological compression-persistence coefficient",
@@ -21246,6 +21526,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "data provenance explorer": {
+      "canonical_query": "data provenance explorer",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE DATA PROVENANCE EXPLORER ON THE OVERVIEW — NEARLY 4,000 TEXT, SPEECH AND VIDEO DATASETS; THE WEB-DATA AND CONSENT EXPLORERS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "data-provenance-explorer-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#data-provenance-explorer-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/data-provenance-explorer-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#data-provenance-explorer-aio-20261029",
+          "details_excerpt": "THE DATA PROVENANCE EXPLORER, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an interactive audit tool built by the Data Provenance Initiative to track, inspect, and filter large language model (LLM) training"
+        }
+      ],
+      "originator": {
+        "name": "Data Provenance Initiative (Longpre, Mahari, Chen, Obeng-Marnu and others)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Data Provenance Explorer, run by Data Provenance Initiative (Longpre, Mahari, Chen, Obeng-Marnu and others). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/data-provenance-explorer/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE DATA PROVENANCE EXPLORER ON THE OVERVIEW — NEARLY 4,000 TEXT, SPEECH AND VIDEO DATASETS; THE WEB-DATA AND CONSENT EXPLORERS"
     },
     "data-breach-as-poem": {
       "canonical_query": "data-breach-as-poem",
@@ -34533,6 +34848,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "is papers with code still active": {
+      "canonical_query": "is papers with code still active",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "IS PAPERS WITH CODE STILL ACTIVE, ON THE OVERVIEW — 'YES': THE ORIGINAL SUNSET 24 JULY 2025, THE REVIVAL AT PAPERSWITHCODE.CO BY NIELS ROGGE AT HUGGING FACE, OPEN-SOURCED UNDER APACHE 2.0",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "is-papers-with-code-still-active-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#is-papers-with-code-still-active-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/is-papers-with-code-still-active-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#is-papers-with-code-still-active-aio-20261029",
+          "details_excerpt": "PAPERS WITH CODE'S STATUS, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'Yes, Papers with Code is active, but it has undergone a complete transformation and revival.' The original, acquired by Meta in 2019, was 'abru"
+        }
+      ],
+      "originator": {
+        "name": "Atlas ML (Deeptide Ltd.), majority-owned by Facebook from 13 December 2019 (later Meta)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Papers with Code, run by Atlas ML (Deeptide Ltd.), majority-owned by Facebook from 13 December 2019 (later Meta). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/papers-with-code/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "IS PAPERS WITH CODE STILL ACTIVE, ON THE OVERVIEW — 'YES': THE ORIGINAL SUNSET 24 JULY 2025, THE REVIVAL AT PAPERSWITHCODE.CO BY NIELS ROGGE AT HUGGING FACE, OPEN-SOURCED UNDER APACHE 2.0"
+    },
     "is part of": {
       "canonical_query": "is part of",
       "is_quoted": false,
@@ -42259,6 +42609,76 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "mit ai incident tracker": {
+      "canonical_query": "mit ai incident tracker",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE MIT AI INCIDENT TRACKER ON THE OVERVIEW — AIID REPORTS THROUGH LLM PIPELINES, A 1–5 SEVERITY SCALE; THE CARDS GIVE A THIRD COUNT, 1,752",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "mit-ai-incident-tracker-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#mit-ai-incident-tracker-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/mit-ai-incident-tracker-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mit-ai-incident-tracker-aio-20261029",
+          "details_excerpt": "THE MIT AI INCIDENT TRACKER, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an interactive tool developed by the MIT AI Risk Initiative that classifies and analyzes real-world artificial intelligence mishaps'"
+        }
+      ],
+      "originator": {
+        "name": "MIT AI Risk Initiative, with Arcola AI's LLM pipeline",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: MIT AI Incident Tracker, run by MIT AI Risk Initiative, with Arcola AI's LLM pipeline. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/mit-ai-incident-tracker/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE MIT AI INCIDENT TRACKER ON THE OVERVIEW — AIID REPORTS THROUGH LLM PIPELINES, A 1–5 SEVERITY SCALE; THE CARDS GIVE A THIRD COUNT, 1,752"
+    },
+    "mit ai risk repository": {
+      "canonical_query": "mit ai risk repository",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE MIT AI RISK REPOSITORY ON THE OVERVIEW — 1,700 RISKS FROM 65 FRAMEWORKS, THE SEVEN DOMAINS AND 24 SUBDOMAINS, THE CAUSAL TAXONOMY; THE NAVIGATOR NAMED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "mit-ai-risk-repository-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#mit-ai-risk-repository-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/mit-ai-risk-repository-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mit-ai-risk-repository-aio-20261029",
+          "details_excerpt": "THE MIT AI RISK REPOSITORY, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a living, open-access database developed by MIT FutureTech' cataloguing over 1,700 risks from more than 65 frameworks; the causal tax"
+        }
+      ],
+      "originator": {
+        "name": "MIT AI Risk Initiative (MIT FutureTech)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: MIT AI Risk Repository, run by MIT AI Risk Initiative (MIT FutureTech). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/mit-ai-risk-repository/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE MIT AI RISK REPOSITORY ON THE OVERVIEW — 1,700 RISKS FROM 65 FRAMEWORKS, THE SEVEN DOMAINS AND 24 SUBDOMAINS, THE CAUSAL TAXONOMY; THE NAVIGATOR NAMED"
+    },
     "model collapse": {
       "canonical_query": "model collapse",
       "is_quoted": false,
@@ -43836,6 +44256,76 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "newsguard ai false claim monitor": {
+      "canonical_query": "newsguard ai false claim monitor",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "NEWSGUARD'S AI FALSE CLAIM MONITOR ON THE OVERVIEW — JULY 2024, 30 PROMPTS ON 10 FALSE CLAIMS, FALSE CLAIM FINGERPRINTS; 'MONTHLY', AND THE MALIGN-ACTOR PERSONA MADE 'LEADING'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "newsguard-ai-false-claim-monitor-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#newsguard-ai-false-claim-monitor-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/newsguard-ai-false-claim-monitor-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#newsguard-ai-false-claim-monitor-aio-20261029",
+          "details_excerpt": "THE AI FALSE CLAIM MONITOR, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a tracking and red-teaming tool launched in July 2024'; 'evaluates major AI models monthly'; 30 prompts per model on 10 provably fals"
+        }
+      ],
+      "originator": {
+        "name": "NewsGuard",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: NewsGuard AI False Claim Monitor, run by NewsGuard. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/newsguard-ai-false-claim-monitor/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "NEWSGUARD'S AI FALSE CLAIM MONITOR ON THE OVERVIEW — JULY 2024, 30 PROMPTS ON 10 FALSE CLAIMS, FALSE CLAIM FINGERPRINTS; 'MONTHLY', AND THE MALIGN-ACTOR PERSONA MADE 'LEADING'"
+    },
+    "newsguard ai tracking center": {
+      "canonical_query": "newsguard ai tracking center",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "NEWSGUARD'S AI TRACKING CENTER ON THE OVERVIEW — 3,749 CONTENT FARMS IN 16 LANGUAGES; THE CHATBOT AUDITS AND 67% OF NEWS SITES BLOCKING CRAWLERS; THE CENTER COMPOSED WITH NEWSGUARD'S PRODUCTS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "newsguard-ai-tracking-center-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#newsguard-ai-tracking-center-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/newsguard-ai-tracking-center-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#newsguard-ai-tracking-center-aio-20261029",
+          "details_excerpt": "NEWSGUARD'S AI TRACKING CENTER, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an ongoing investigative project by NewsGuard that monitors and catalogs artificial intelligence-generated misinformation, unreli"
+        }
+      ],
+      "originator": {
+        "name": "NewsGuard",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: NewsGuard AI Tracking Center, run by NewsGuard. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/newsguard-ai-tracking-center/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "NEWSGUARD'S AI TRACKING CENTER ON THE OVERVIEW — 3,749 CONTENT FARMS IN 16 LANGUAGES; THE CHATBOT AUDITS AND 67% OF NEWS SITES BLOCKING CRAWLERS; THE CENTER COMPOSED WITH NEWSGUARD'S PRODUCTS"
+    },
     "nh-os": {
       "canonical_query": "nh-os",
       "is_quoted": false,
@@ -44425,6 +44915,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": "CAPTURE"
+    },
+    "oecd ai incidents and hazards monitor": {
+      "canonical_query": "oecd ai incidents and hazards monitor",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE OECD AI INCIDENTS AND HAZARDS MONITOR ON THE OVERVIEW — EVENT REGISTRY, 150,000 ARTICLES A DAY, THE DEFINITIONS RIGHT; THE LLM CLASSIFIERS UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/oecd-ai-incidents-and-hazards-monitor-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+          "details_excerpt": "THE OECD AIM, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a real-time tracking tool developed by the OECD.AI Policy Observatory in collaboration with the Patrick J. McGovern Foundation'; it aggregates worl"
+        }
+      ],
+      "originator": {
+        "name": "OECD.AI",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: OECD AI Incidents and Hazards Monitor, run by OECD.AI. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/oecd-ai-incidents-monitor/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE OECD AI INCIDENTS AND HAZARDS MONITOR ON THE OVERVIEW — EVENT REGISTRY, 150,000 ARTICLES A DAY, THE DEFINITIONS RIGHT; THE LLM CLASSIFIERS UNSAID"
     },
     "offer a detailed, structurally and aesthetically developed reading of jack feist's belief and technique for telepathic prose, then explore the later archive from the frame.": {
       "canonical_query": "offer a detailed, structurally and aesthetically developed reading of jack feist's belief and technique for telepathic prose, then explore the later archive from the frame.",
@@ -46545,6 +47070,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "papers with code": {
+      "canonical_query": "papers with code",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "PAPERS WITH CODE BY ITS NAME ON THE OVERVIEW — PAST TENSE, THE FOUNDERS AND THE SUNSET RIGHT; THE REDIRECT GIVEN AS HUGGING FACE TRENDING PAPERS; THE REVIVAL AT PAPERSWITHCODE.CO NAMED 'COMMUNITY-DRIVEN'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "papers-with-code-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#papers-with-code-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/papers-with-code-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#papers-with-code-aio-20261029",
+          "details_excerpt": "PAPERS WITH CODE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'was a free, open-access platform' linking machine learning papers to code, datasets and benchmarks. History: launched 2018 by Robert Stojnic an"
+        }
+      ],
+      "originator": {
+        "name": "Atlas ML (Deeptide Ltd.), majority-owned by Facebook from 13 December 2019 (later Meta)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Papers with Code, run by Atlas ML (Deeptide Ltd.), majority-owned by Facebook from 13 December 2019 (later Meta). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/papers-with-code/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "PAPERS WITH CODE BY ITS NAME ON THE OVERVIEW — PAST TENSE, THE FOUNDERS AND THE SUNSET RIGHT; THE REDIRECT GIVEN AS HUGGING FACE TRENDING PAPERS; THE REVIVAL AT PAPERSWITHCODE.CO NAMED 'COMMUNITY-DRIVEN'"
     },
     "papyrocentric transmission coefficient": {
       "canonical_query": "papyrocentric transmission coefficient",
@@ -49044,6 +49604,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "presenc ai geo academic papers": {
+      "canonical_query": "presenc ai geo academic papers",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "PRESENC AI'S GEO PAPERS ON THE OVERVIEW, AFTER A FORCED CORRECTION — THREE PRESENC PAGES, THE 34-PAPER SUMMARY DATED 15 APRIL; THE VENDOR'S READING PASSED ON AS SERVICE TO PRACTITIONERS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "presenc-ai-geo-academic-papers-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#presenc-ai-geo-academic-papers-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/presenc-ai-geo-academic-papers-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#presenc-ai-geo-academic-papers-aio-20261029",
+          "details_excerpt": "PRESENC AI'S GEO ACADEMIC PAPERS, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29. Google first corrected the query to 'presence' and gave an unrelated Overview; the operator chose 'show results for presenc'. The Overvie"
+        }
+      ],
+      "originator": {
+        "name": "Presenc AI (byline: Ramanath, CTO and co-founder)",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Presenc AI — GEO academic papers 2026, run by Presenc AI (byline: Ramanath, CTO and co-founder). Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/presenc-geo-papers/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "PRESENC AI'S GEO PAPERS ON THE OVERVIEW, AFTER A FORCED CORRECTION — THREE PRESENC PAGES, THE 34-PAPER SUMMARY DATED 15 APRIL; THE VENDOR'S READING PASSED ON AS SERVICE TO PRACTITIONERS"
+    },
     "primary author": {
       "canonical_query": "primary author",
       "is_quoted": false,
@@ -49277,6 +49872,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "problematic paper screener": {
+      "canonical_query": "problematic paper screener",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE PROBLEMATIC PAPER SCREENER ON THE OVERVIEW — THE THREE MAKERS, THE DETECTORS, PUBPEER; ADOPTION BY EPISCIENCES AND SIGNALS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "problematic-paper-screener-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#problematic-paper-screener-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/problematic-paper-screener-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#problematic-paper-screener-aio-20261029",
+          "details_excerpt": "THE PROBLEMATIC PAPER SCREENER, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an online platform and automated screening tool developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov'; its data s"
+        }
+      ],
+      "originator": {
+        "name": "Guillaume Cabanac, Cyril Labbé, Alexander Magazinov",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Problematic Paper Screener, run by Guillaume Cabanac, Cyril Labbé, Alexander Magazinov. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/problematic-paper-screener/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE PROBLEMATIC PAPER SCREENER ON THE OVERVIEW — THE THREE MAKERS, THE DETECTORS, PUBPEER; ADOPTION BY EPISCIENCES AND SIGNALS"
     },
     "production-condition audit": {
       "canonical_query": "production-condition audit",
@@ -56108,6 +56738,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "search arena leaderboard": {
+      "canonical_query": "search arena leaderboard",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "SEARCH ARENA'S LEADERBOARD ON THE OVERVIEW — A TABLE OF ELEVEN MODELS AND RATINGS, NO ACCOUNT OF THE ENTITY; THE TABLE UNLIKE THE PAGE AS THIS RECORD READ IT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "search-arena-leaderboard-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#search-arena-leaderboard-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/search-arena-leaderboard-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#search-arena-leaderboard-aio-20261029",
+          "details_excerpt": "THE SEARCH ARENA LEADERBOARD, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: a pointer to 'the AI Search Leaderboard and the main Arena Leaderboard' and a table, 'Top Models on the AI Search Leaderboard', of eleven mod"
+        }
+      ],
+      "originator": {
+        "name": "arena.ai",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Search Arena, run by arena.ai. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/search-arena/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "SEARCH ARENA'S LEADERBOARD ON THE OVERVIEW — A TABLE OF ELEVEN MODELS AND RATINGS, NO ACCOUNT OF THE ENTITY; THE TABLE UNLIKE THE PAGE AS THIS RECORD READ IT"
     },
     "search summarizer": {
       "canonical_query": "search summarizer",
@@ -72840,6 +73505,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-08",
       "latest_status": "CAPTURE"
+    },
+    "what counts as an incident in the ai incident database": {
+      "canonical_query": "what counts as an incident in the ai incident database",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "WHAT COUNTS AS AN INCIDENT IN THE AIID, ON THE OVERVIEW — THE DEFINITION VERBATIM; THE EDITORS' FIVE-QUESTION TEST GIVEN AS THREE THRESHOLDS; INCIDENT, ISSUE AND VARIANT KEPT APART",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+          "details_excerpt": "THE AI INCIDENT DATABASE'S UNIT, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: the definition from the Editor's Guide verbatim ('an alleged harm or near-harm event to people, property, or the environment where an AI s"
+        }
+      ],
+      "originator": {
+        "name": "Responsible AI Collaborative",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AI Incident Database, run by Responsible AI Collaborative. Formalized by the MMRS meta-aggregator record of 2026-10-28 (https://www.machinemediation.org/aggregators/ai-incident-database/), editor Lee Sharks; the record's fields are read from the entity's own pages with source and basis. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "WHAT COUNTS AS AN INCIDENT IN THE AIID, ON THE OVERVIEW — THE DEFINITION VERBATIM; THE EDITORS' FIVE-QUESTION TEST GIVEN AS THREE THRESHOLDS; INCIDENT, ISSUE AND VARIANT KEPT APART"
     },
     "what do you think of my account?": {
       "canonical_query": "what do you think of my account?",

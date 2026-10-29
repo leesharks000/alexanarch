@@ -1,0 +1,1696 @@
+{
+ "name": "MMRS meta-aggregator — census",
+ "compiled": "2026-10-28",
+ "rows": [
+  {
+   "slug": "ai-incident-database",
+   "name": "AI Incident Database",
+   "aka": [
+    "AIID"
+   ],
+   "url": "https://incidentdatabase.ai/",
+   "operator": "Responsible AI Collaborative",
+   "founded": "2020 (described in arXiv:2011.08512, submitted 17 November 2020)",
+   "kind": "database",
+   "self_description": "dedicated to indexing the collective history of harms or near harms realized in the real world",
+   "unit": "incident (an alleged harm or near-harm event in which an AI system is implicated), with the reports that document it attached",
+   "intake": "open submission; incident editors resolve submissions and maintain records",
+   "item_fields": [
+    "incident id and citation page (/cite/N)",
+    "title",
+    "date",
+    "alleged deployer and developer",
+    "harmed parties",
+    "attached reports",
+    "taxonomy classifications (CSET, GMF)",
+    "variants"
+   ],
+   "count": {
+    "value": "highest incident id seen: 1788",
+    "as_of": "2026-10-28",
+    "note": "ids include merged duplicates (e.g. 637, merged into 112), so the id is an upper bound on incidents"
+   },
+   "cadence": "continuous",
+   "data_access": "weekly full snapshots (JSON, MongoDB archive, CSV; latest 2026-10-26) and a weekly Excel export of incidents with taxonomies",
+   "license": "code open source; no data licence stated on the snapshots page",
+   "identifiers": {
+    "citation_scheme": "https://incidentdatabase.ai/cite/{N}/"
+   },
+   "negative_tags": [
+    "NOT the OECD AI Incidents and Hazards Monitor (automated, news-derived)",
+    "NOT a vulnerability database",
+    "NOT a list of research papers: its unit is the event, and papers enter as reports"
+   ],
+   "disambiguation": [
+    {
+     "neighbour": "oecd-ai-incidents-monitor",
+     "context": "OECD, hazard, Event Registry, daily pipeline"
+    },
+    {
+     "neighbour": "aiaaic-repository",
+     "context": "AIAAIC, controversies, algorithmic and automation"
+    },
+    {
+     "neighbour": "mit-ai-risk-repository",
+     "context": "MIT, FutureTech, risk frameworks, taxonomy of risks, AI Incident Tracker"
+    },
+    {
+     "self": true,
+     "context": "/cite/N, Responsible AI Collaborative, McGregor, incident report, variant"
+    }
+   ],
+   "sources": {
+    "incidentdatabase.ai": {
+     "url": "https://incidentdatabase.ai/",
+     "read": "2026-10-28",
+     "for": "self-description, highest id"
+    },
+    "incidentdatabase.ai/about": {
+     "url": "https://incidentdatabase.ai/about/",
+     "read": "2026-10-28",
+     "for": "operator, editors, sponsors, taxonomies"
+    },
+    "incidentdatabase.ai/editors-guide": {
+     "url": "https://incidentdatabase.ai/editors-guide/",
+     "read": "2026-10-28",
+     "for": "definitions, inclusion test"
+    },
+    "incidentdatabase.ai/research/snapshots": {
+     "url": "https://incidentdatabase.ai/research/snapshots/",
+     "read": "2026-10-28",
+     "for": "snapshots, licence"
+    },
+    "arxiv.org/abs/2011.08512": {
+     "url": "https://arxiv.org/abs/2011.08512",
+     "read": "2026-10-28",
+     "for": "founding paper"
+    },
+    "incidentdatabase.ai/cite/693": {
+     "url": "https://incidentdatabase.ai/cite/693/",
+     "read": "2026-10-28",
+     "for": "child"
+    },
+    "incidentdatabase.ai/cite/637": {
+     "url": "https://incidentdatabase.ai/cite/637/",
+     "read": "2026-10-28",
+     "for": "child"
+    }
+   },
+   "unchecked": [
+    "Wikidata item",
+    "data licence beyond the snapshots page"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "harm",
+    "monitoring"
+   ],
+   "relations": [
+    {
+     "rel": "neighbour",
+     "target": "oecd-ai-incidents-monitor"
+    },
+    {
+     "rel": "neighbour",
+     "target": "aiaaic-repository"
+    },
+    {
+     "rel": "neighbour",
+     "target": "mit-ai-risk-repository"
+    },
+    {
+     "rel": "holding",
+     "url": "https://incidentdatabase.ai/cite/693/",
+     "label": "Incident 693 — Google AI Reportedly Delivering Confidently Incorrect and Harmful Information",
+     "note": "alleged developer and deployer Google; 7 reports; the AI Overviews launch errors (glue on pizza, the Obama claim)",
+     "dates": {
+      "event": "2024-05-14",
+      "inclusion": null,
+      "observed": "2026-10-28"
+     }
+    },
+    {
+     "rel": "merge_example",
+     "url": "https://incidentdatabase.ai/cite/637/",
+     "label": "Incident 637 — duplicate, merged into Incident 112",
+     "note": "the citation page is kept after the merge and points to the surviving record",
+     "dates": {
+      "observed": "2026-10-28"
+     }
+    },
+    {
+     "rel": "used_by",
+     "target": "mit-ai-incident-tracker",
+     "note": "classifies AIID reports"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "incidentdatabase.ai/about",
+     "basis": "operator"
+    },
+    "founded": {
+     "src": "arxiv.org/abs/2011.08512",
+     "basis": "third-party"
+    },
+    "self_description": {
+     "src": "incidentdatabase.ai",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "incidentdatabase.ai/editors-guide",
+     "basis": "operator"
+    },
+    "intake": {
+     "src": "incidentdatabase.ai/about",
+     "basis": "operator"
+    },
+    "item_fields": {
+     "src": "incidentdatabase.ai/cite/693",
+     "basis": "observed"
+    },
+    "count": {
+     "src": "incidentdatabase.ai",
+     "basis": "observed"
+    },
+    "data_access": {
+     "src": "incidentdatabase.ai/research/snapshots",
+     "basis": "operator"
+    },
+    "license": {
+     "src": "incidentdatabase.ai/research/snapshots",
+     "basis": "observed"
+    },
+    "cadence": {
+     "src": "incidentdatabase.ai",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "yes: harm or credible near harm (five-question test)",
+     "src": "incidentdatabase.ai/editors-guide",
+     "basis": "operator",
+     "short": "yes"
+    },
+    "version_history": {
+     "value": "weekly full snapshots",
+     "src": "incidentdatabase.ai/research/snapshots",
+     "basis": "operator",
+     "short": "yes"
+    },
+    "preserves_original_outputs": {
+     "value": "unknown: reports are linked; whether their texts are archived was not read",
+     "src": null,
+     "basis": "reading",
+     "short": "unknown"
+    },
+    "records_attribution": {
+     "value": "no field for it: attribution failure enters when it attaches to a harm event",
+     "src": "incidentdatabase.ai/editors-guide",
+     "basis": "reading",
+     "short": "no"
+    }
+   },
+   "battery": {
+    "status": "proposed; not yet run",
+    "queries": [
+     "ai incident database",
+     "what counts as an incident in the ai incident database"
+    ],
+    "checks": [
+     "operator named as the Responsible AI Collaborative",
+     "unit stated as the incident, with reports attached",
+     "not merged with the OECD monitor or AIAAIC",
+     "citation page /cite/N given"
+    ]
+   }
+  },
+  {
+   "slug": "papers-with-code",
+   "name": "Papers with Code",
+   "aka": [
+    "paperswithcode.com",
+    "PwC"
+   ],
+   "url": "https://paperswithcode.com/",
+   "operator": "Atlas ML (Deeptide Ltd.), majority-owned by Facebook from 13 December 2019 (later Meta)",
+   "founded": "2018, by Robert Stojnic and Ross Taylor",
+   "kind": "database",
+   "self_description": "a free and open resource for machine learning papers and code (as reported by TechCrunch, 2020)",
+   "unit": "paper, linked to its code, the tasks and datasets it reports on, and its results in benchmark tables",
+   "item_fields": [
+    "paper with abstract",
+    "paper–code links",
+    "evaluation tables",
+    "methods",
+    "datasets"
+   ],
+   "count": {
+    "value": "9,327 benchmarks, 79,817 papers, 5,628 datasets (figures given by CodeSOTA)",
+    "as_of": "2026-10-28"
+   },
+   "cadence": "ended July 2025; the data dumps had been regenerated daily",
+   "data_access": "data dumps (papers with abstracts, paper–code links, evaluation tables, methods, datasets) linked from github.com/paperswithcode/paperswithcode-data, hosted on Hugging Face",
+   "license": "data CC BY-SA 4.0",
+   "identifiers": {
+    "github": "https://github.com/paperswithcode/paperswithcode-data"
+   },
+   "negative_tags": [
+    "NOT live since 24 July 2025",
+    "NOT CodeSOTA, which uses the name in its paths",
+    "NOT Hugging Face Trending Papers, its replacement",
+    "its benchmark tables are NOT current state of the art"
+   ],
+   "disambiguation": [
+    {
+     "neighbour": "codesota",
+     "context": "codesota.com, /api/sota, 'refreshed live'"
+    },
+    {
+     "label": "Hugging Face Trending Papers",
+     "context": "huggingface.co/papers, trending papers, daily papers"
+    },
+    {
+     "self": true,
+     "context": "paperswithcode.com, Atlas ML, Stojnic, Taylor, 2018–2025, the data dumps"
+    }
+   ],
+   "sources": {
+    "techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp": {
+     "url": "https://techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp/",
+     "read": "2026-10-28",
+     "for": "founders, 2018, Facebook majority ownership 13 Dec 2019"
+    },
+    "codesota.com/papers-with-code/shutdown": {
+     "url": "https://www.codesota.com/papers-with-code/shutdown",
+     "read": "2026-10-28",
+     "for": "shutdown July 2025, successors (a vendor page, read as such)"
+    },
+    "github.com/paperswithcode/paperswithcode-data": {
+     "url": "https://github.com/paperswithcode/paperswithcode-data",
+     "read": "2026-10-28",
+     "for": "dumps, licence"
+    },
+    "hyper.ai/en/news/42900": {
+     "url": "https://hyper.ai/en/news/42900",
+     "read": "2026-10-28",
+     "for": "sunset date, announcer, replacement"
+    },
+    "aiweekly.co/alerts/hugging-face-revives-paperswithcode-benchmark-tracker": {
+     "url": "https://aiweekly.co/alerts/hugging-face-revives-paperswithcode-benchmark-tracker",
+     "read": "2026-10-28",
+     "for": "revival effort (undated)"
+    },
+    "codesota.com/papers-with-code": {
+     "url": "https://www.codesota.com/papers-with-code",
+     "read": "2026-10-28",
+     "for": "Papers with Code figures (a successor's report)"
+    }
+   },
+   "unchecked": [
+    "how papers entered (extraction, community editing)",
+    "Meta's own notice (none found; the sunset is dated from Hugging Face's announcement)",
+    "the address of Hugging Face Trending Papers (not read)",
+    "the date of the revival effort",
+    "Wikidata item",
+    "the item counts from the dumps themselves"
+   ],
+   "lifecycle": {
+    "state": "ended",
+    "detail": "sunset 24 July 2025; announced 25 July 2025 by Julien Chaumond, Hugging Face co-founder and CTO"
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "discovery"
+   ],
+   "relations": [
+    {
+     "rel": "data_dump",
+     "url": "https://github.com/paperswithcode/paperswithcode-data",
+     "label": "paperswithcode-data",
+     "note": "five dumps (papers with abstracts, paper–code links, evaluation tables, methods, datasets); CC BY-SA; hosted on Hugging Face"
+    },
+    {
+     "rel": "replacement_by_operator",
+     "url": null,
+     "label": "Hugging Face Trending Papers",
+     "note": "launched by Hugging Face with Meta as the replacement; tracks popular papers with code links, without the leaderboards (hyper.ai report)"
+    },
+    {
+     "rel": "claimed_successor",
+     "target": "codesota",
+     "note": "carries the name in its own paths and presents itself as the successor"
+    },
+    {
+     "rel": "revival",
+     "url": "https://aiweekly.co/alerts/hugging-face-revives-paperswithcode-benchmark-tracker",
+     "label": "Niels Rogge's revival of the leaderboards",
+     "note": "announced on r/MachineLearning by a member of Hugging Face's open-source team, described as an individual effort (AI Weekly, undated)"
+    }
+   ],
+   "evidence": {
+    "founded": {
+     "src": "techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp",
+     "basis": "third-party"
+    },
+    "operator": {
+     "src": "techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp",
+     "basis": "third-party"
+    },
+    "lifecycle": {
+     "src": "hyper.ai/en/news/42900",
+     "basis": "third-party"
+    },
+    "self_description": {
+     "src": "techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp",
+     "basis": "third-party"
+    },
+    "item_fields": {
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "operator"
+    },
+    "data_access": {
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "operator"
+    },
+    "license": {
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/amp",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "third-party"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "no",
+     "src": null,
+     "basis": "reading",
+     "short": "no"
+    },
+    "version_history": {
+     "value": "final dumps only; regenerated daily while it ran",
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "operator",
+     "short": "final only"
+    },
+    "preserves_original_outputs": {
+     "value": "the dumps preserve its tables as of the end",
+     "src": "github.com/paperswithcode/paperswithcode-data",
+     "basis": "reading",
+     "short": "yes (dumps)"
+    }
+   },
+   "battery": {
+    "status": "proposed; not yet run",
+    "queries": [
+     "papers with code",
+     "is papers with code still active"
+    ],
+    "checks": [
+     "status given as ended (sunset 24 July 2025)",
+     "founders and owner kept apart",
+     "the data dumps kept apart from the successors",
+     "CodeSOTA and Trending Papers not presented as Papers with Code",
+     "no current result attributed to its tables"
+    ]
+   }
+  },
+  {
+   "slug": "oecd-ai-incidents-monitor",
+   "name": "OECD AI Incidents and Hazards Monitor",
+   "aka": [
+    "AIM",
+    "AI Incidents Monitor"
+   ],
+   "url": "https://oecd.ai/en/incidents",
+   "operator": "OECD.AI",
+   "kind": "monitor",
+   "unit": "incident or hazard (an event in which an AI system leads, or could plausibly lead, to harm)",
+   "intake": "automated: news articles aggregated by Event Registry; since November 2024, LLM classification (GPT-4o mini, then GPT-4o) and LLM-written metadata (o3-mini); daily",
+   "count": {
+    "value": "about 18,579 incidents and hazards",
+    "as_of": "2026-10-28"
+   },
+   "cadence": "daily",
+   "sources": {
+    "oecd.ai/en/incidents-methodology": {
+     "url": "https://oecd.ai/en/incidents-methodology",
+     "read": "2026-10-28",
+     "for": "method, definitions"
+    },
+    "oecd.ai/en/incidents": {
+     "url": "https://oecd.ai/en/incidents",
+     "read": "2026-10-28",
+     "for": "count, self-description"
+    }
+   },
+   "unchecked": [
+    "launch date",
+    "licence"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "harm",
+    "monitoring"
+   ],
+   "relations": [
+    {
+     "rel": "holding",
+     "url": "https://oecd.ai/en/incidents/2025-03-11-8537",
+     "label": "The Tow Center AI search citation study, filed as an incident",
+     "note": "a research study entering a harm monitor as an event"
+    },
+    {
+     "rel": "neighbour",
+     "target": "ai-incident-database"
+    },
+    {
+     "rel": "neighbour",
+     "target": "aiaaic-repository"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "oecd.ai/en/incidents",
+     "basis": "observed"
+    },
+    "intake": {
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator"
+    },
+    "self_description": {
+     "src": "oecd.ai/en/incidents",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "yes: an incident, or a hazard that could plausibly lead to one",
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator",
+     "short": "yes"
+    },
+    "preserves_original_outputs": {
+     "value": "no: titles, summaries and metadata are LLM-written from the top articles",
+     "short": "no",
+     "src": "oecd.ai/en/incidents-methodology",
+     "basis": "operator"
+    }
+   },
+   "self_description": "Automated media discourse monitor of AI incidents and hazards (Beta)"
+  },
+  {
+   "slug": "aiaaic-repository",
+   "name": "AIAAIC Repository",
+   "aka": [
+    "AI, Algorithmic, and Automation Incidents and Controversies"
+   ],
+   "url": "https://www.aiaaic.org/aiaaic-repository",
+   "operator": "AIAAIC",
+   "kind": "database",
+   "unit": "incident or controversy involving an AI, algorithmic or automation system",
+   "sources": {
+    "aiaaic.org/aiaaic-repository": {
+     "url": "https://www.aiaaic.org/aiaaic-repository",
+     "read": "2026-10-28",
+     "for": "scope, projects"
+    },
+    "oecd.ai/en/catalogue/tools/aiaaic-repository": {
+     "url": "https://oecd.ai/en/catalogue/tools/aiaaic-repository",
+     "read": "2026-10-28",
+     "for": "start, scope, licence (OECD catalogue)"
+    },
+    "aiaaicalert.substack.com/about": {
+     "url": "https://aiaaicalert.substack.com/about",
+     "read": "2026-10-28",
+     "for": "newsletter author"
+    }
+   },
+   "unchecked": [
+    "intake",
+    "fields",
+    "count",
+    "who runs the repository",
+    "per-entry fields (the entry pages were not read)"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "harm"
+   ],
+   "relations": [
+    {
+     "rel": "neighbour",
+     "target": "ai-incident-database"
+    },
+    {
+     "rel": "neighbour",
+     "target": "oecd-ai-incidents-monitor"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "aiaaic.org/aiaaic-repository",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "aiaaic.org/aiaaic-repository",
+     "basis": "operator"
+    },
+    "founded": {
+     "src": "oecd.ai/en/catalogue/tools/aiaaic-repository",
+     "basis": "third-party"
+    },
+    "self_description": {
+     "src": "oecd.ai/en/catalogue/tools/aiaaic-repository",
+     "basis": "third-party"
+    },
+    "license": {
+     "src": "oecd.ai/en/catalogue/tools/aiaaic-repository",
+     "basis": "third-party"
+    },
+    "note": {
+     "src": "aiaaicalert.substack.com/about",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "no: its unit includes controversies",
+     "short": "no",
+     "src": "oecd.ai/en/catalogue/tools/aiaaic-repository",
+     "basis": "reading"
+    }
+   },
+   "founded": "June 2019, 'as a private, professional project'",
+   "self_description": "details incidents and controversies driven by and relating to artificial intelligence, algorithms, and automation",
+   "license": "CC BY-SA 4.0",
+   "note": "its newsletter, AIAAIC Alert, is written by Charlie Pownall"
+  },
+  {
+   "slug": "mit-ai-risk-repository",
+   "name": "MIT AI Risk Repository",
+   "url": "https://airisk.mit.edu/",
+   "operator": "MIT AI Risk Initiative (MIT FutureTech)",
+   "kind": "database",
+   "unit": "risk, extracted from published risk frameworks",
+   "count": {
+    "value": "more than 1,700 risks from 65 frameworks",
+    "as_of": "2026-10-28"
+   },
+   "note": "itself an aggregator of frameworks; real-world incidents are kept separately in its AI Incident Tracker",
+   "sources": {
+    "airisk.mit.edu": {
+     "url": "https://airisk.mit.edu/",
+     "read": "2026-10-28",
+     "for": "scope, version"
+    }
+   },
+   "unchecked": [
+    "extraction method",
+    "licence"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": "version 4, December 2025"
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "harm"
+   ],
+   "relations": [
+    {
+     "rel": "neighbour",
+     "target": "ai-incident-database"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "airisk.mit.edu",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "airisk.mit.edu",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "airisk.mit.edu",
+     "basis": "operator"
+    }
+   },
+   "properties": {}
+  },
+  {
+   "slug": "ai-hallucination-cases",
+   "name": "AI Hallucination Cases",
+   "url": "https://www.damiencharlotin.com/hallucinations/",
+   "operator": "Damien Charlotin",
+   "kind": "database",
+   "license": "CC BY 4.0",
+   "self_description": "legal decisions in which a court or tribunal addresses AI use in more than a passing reference, where it finds or implies reliance on hallucinated material",
+   "unit": "legal decision",
+   "intake": "editor-curated; readers send cases",
+   "item_fields": [
+    "case and link to decision",
+    "court and jurisdiction",
+    "date",
+    "party using AI",
+    "AI tool",
+    "nature of hallucination (fabricated, false quotes, misrepresented, outdated advice)",
+    "outcome and sanction",
+    "summary and reports"
+   ],
+   "count": {
+    "value": "2,231 cases",
+    "as_of": "2026-10-28 (the site's own update date)"
+   },
+   "cadence": "continuous",
+   "note": "the database states it does not track 'the (necessarily wider) universe of all fake citations or use of AI in court filings'. Of its cases, 1,288 involve pro se litigants and 880 lawyers",
+   "sources": {
+    "damiencharlotin.com/hallucinations": {
+     "url": "https://www.damiencharlotin.com/hallucinations/",
+     "read": "2026-10-28",
+     "for": "all fields"
+    }
+   },
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "monitoring",
+    "reception"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "intake": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "item_fields": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "license": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "self_description": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator"
+    },
+    "founded": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "observed"
+    },
+    "data_access": {
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "observed"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "a court finding or implication of reliance on hallucinated material",
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator",
+     "short": "court finding"
+    },
+    "records_attribution": {
+     "value": "yes: nature of hallucination (fabricated, false quotes, misrepresented, outdated advice)",
+     "src": "damiencharlotin.com/hallucinations",
+     "basis": "operator",
+     "short": "yes"
+    }
+   },
+   "founded": "the period filter begins Q2 2023",
+   "data_access": "CSV download"
+  },
+  {
+   "slug": "academ-ai",
+   "name": "Academ-AI",
+   "url": "https://www.academ-ai.info/",
+   "operator": "Alex Glynn (Kornhauser Health Sciences Library, University of Louisville)",
+   "kind": "database",
+   "unit": "published scholarly work with suspected undeclared AI use, identified mainly by chatbot phrasing",
+   "count": {
+    "value": "772 examples: 633 journal articles, 111 conference papers, 28 books and chapters",
+    "as_of": "eDiscovery Today, 27 August 2025"
+   },
+   "sources": {
+    "arxiv.org/abs/2411.15218": {
+     "url": "https://arxiv.org/abs/2411.15218",
+     "read": "2026-10-28",
+     "for": "dataset paper"
+    },
+    "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends": {
+     "url": "https://ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends/",
+     "read": "2026-10-28",
+     "for": "scope, counts, sections, operator"
+    }
+   },
+   "unchecked": [
+    "licence",
+    "the current count (the site refuses our fetcher)"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "blocked (robots.txt disallows our fetcher)"
+   },
+   "roles": [
+    "monitoring"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends",
+     "basis": "third-party"
+    },
+    "unit": {
+     "src": "arxiv.org/abs/2411.15218",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends",
+     "basis": "third-party"
+    },
+    "intake": {
+     "src": "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends",
+     "basis": "third-party"
+    },
+    "note": {
+     "src": "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends",
+     "basis": "third-party"
+    }
+   },
+   "properties": {
+    "preserves_original_outputs": {
+     "value": "yes: quoted passages with the phrases highlighted",
+     "short": "yes",
+     "src": "ediscoverytoday.com/2025/08/27/ai-use-in-academic-papers-theres-a-site-for-that-too-artificial-intelligence-trends",
+     "basis": "third-party"
+    }
+   },
+   "intake": "flagged by phrasing that strongly suggests chatbot generation, quoted with the phrases highlighted; journal articles, conference papers and books admitted; theses, preprints and blog posts excluded",
+   "note": "an errata page separates corrections with formal explanations from 'stealth corrections'; a publishers page counts examples by publisher (IEEE 90, Elsevier 34 in August 2025)"
+  },
+  {
+   "slug": "problematic-paper-screener",
+   "name": "Problematic Paper Screener",
+   "aka": [
+    "PPS"
+   ],
+   "url": "https://dbrech.irit.fr/pls/apex/f?p=9999:1",
+   "operator": "Guillaume Cabanac, Cyril Labbé, Alexander Magazinov",
+   "founded": "27 February 2021",
+   "kind": "monitor",
+   "unit": "published paper flagged by a detector (tortured phrases, SCIgen, Mathgen, retracted or concerning references, and others)",
+   "intake": "automated detectors over Crossref (with the Retraction Watch Database), Dimensions, PubMed and PubPeer",
+   "sources": {
+    "dbrech.irit.fr/pls/apex/f?p=9999:1::::::": {
+     "url": "https://dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+     "read": "2026-10-28",
+     "for": "detectors, sources, start date"
+    },
+    "univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp": {
+     "url": "https://univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp",
+     "read": "2026-10-28",
+     "for": "counts, weekly scan (The Conversation, 31 January 2025)"
+    }
+   },
+   "unchecked": [
+    "licence"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "monitoring"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+     "basis": "operator"
+    },
+    "intake": {
+     "src": "dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "records_attribution": {
+     "value": "partly: references to retracted or concerning works are flagged",
+     "short": "partly",
+     "src": "dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+     "basis": "operator"
+    }
+   },
+   "count": {
+    "value": "nearly 19,000 papers with five or more tortured phrases; more than 280 SCIgen papers; more than 70 with ChatGPT fingerprints; contributed to more than 1,000 retractions",
+    "as_of": "The Conversation, 31 January 2025"
+   },
+   "cadence": "weekly scan of 130 million publications"
+  },
+  {
+   "slug": "newsguard-ai-tracking-center",
+   "name": "NewsGuard AI Tracking Center",
+   "url": "https://www.newsguardtech.com/special-reports/ai-tracking-center/",
+   "operator": "NewsGuard",
+   "kind": "monitor",
+   "unit": "AI content farm website (four criteria: substantial AI-produced content, no meaningful human oversight, a look that passes for human journalism, no disclosure)",
+   "count": {
+    "value": "3,749 sites in 16 languages",
+    "as_of": "2026-06-23"
+   },
+   "sources": {
+    "newsguardtech.com/special-reports/ai-tracking-center": {
+     "url": "https://www.newsguardtech.com/special-reports/ai-tracking-center/",
+     "read": "2026-10-28",
+     "for": "criteria, count, series"
+    }
+   },
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "monitoring"
+   ],
+   "relations": [
+    {
+     "rel": "has_part",
+     "target": "newsguard-ai-false-claim-monitor"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "newsguardtech.com/special-reports/ai-tracking-center",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "newsguardtech.com/special-reports/ai-tracking-center",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "newsguardtech.com/special-reports/ai-tracking-center",
+     "basis": "operator"
+    }
+   },
+   "properties": {}
+  },
+  {
+   "slug": "newsguard-ai-false-claim-monitor",
+   "name": "NewsGuard AI False Claim Monitor",
+   "url": "https://www.newsguardtech.com/ai-monitor/may-2026/",
+   "operator": "NewsGuard",
+   "kind": "audit series",
+   "unit": "edition: 11 named chatbots tested on 10 provably false claims in the news",
+   "cadence": "monthly until mid-2025, quarterly since; latest listed May 2026",
+   "sources": {
+    "newsguardtech.com/special-reports/ai-tracking-center": {
+     "url": "https://www.newsguardtech.com/special-reports/ai-tracking-center/",
+     "read": "2026-10-28",
+     "for": "cadence"
+    },
+    "newsguardtech.com/ai-monitor/may-2026": {
+     "url": "https://www.newsguardtech.com/ai-monitor/may-2026/",
+     "read": "2026-10-28",
+     "for": "latest edition"
+    }
+   },
+   "unchecked": [
+    "the per-edition method"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "monitoring"
+   ],
+   "relations": [
+    {
+     "rel": "part_of",
+     "target": "newsguard-ai-tracking-center"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "newsguardtech.com/special-reports/ai-tracking-center",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "newsguardtech.com/ai-monitor/may-2026",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "newsguardtech.com/special-reports/ai-tracking-center",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "newsguardtech.com/ai-monitor/may-2026",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "no: each edition is an audit",
+     "short": "no",
+     "src": "newsguardtech.com/ai-monitor/may-2026",
+     "basis": "reading"
+    }
+   },
+   "note": "the May 2026 edition was published 8 June 2026; its full results sit behind a download form. The January 2026 edition reported that the tools repeated false claims more than 28% of the time"
+  },
+  {
+   "slug": "presenc-geo-papers",
+   "name": "Presenc AI — GEO academic papers 2026",
+   "url": "https://presenc.ai/research/geo-academic-papers-2026",
+   "operator": "Presenc AI (byline: Ramanath, CTO and co-founder)",
+   "kind": "curated list",
+   "unit": "paper or report on generative engine optimization",
+   "count": {
+    "value": "34",
+    "as_of": "2026-04-23"
+   },
+   "item_fields": [
+    "title",
+    "authors and affiliation",
+    "venue and year",
+    "link",
+    "key finding",
+    "the vendor's 'what it means for practitioners' note"
+   ],
+   "note": "vendor-authored; the page states 'The Presenc AI audit framework is directly anchored in this literature'",
+   "sources": {
+    "presenc.ai/research/geo-academic-papers-2026": {
+     "url": "https://presenc.ai/research/geo-academic-papers-2026",
+     "read": "2026-10-28",
+     "for": "all fields"
+    }
+   },
+   "lifecycle": {
+    "state": "active",
+    "detail": "published and modified 23 April 2026"
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "optimization"
+   ],
+   "relations": [
+    {
+     "rel": "neighbour",
+     "target": "awesome-geo-davidhuji"
+    },
+    {
+     "rel": "neighbour",
+     "target": "aeovision-geo-papers"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "presenc.ai/research/geo-academic-papers-2026",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "presenc.ai/research/geo-academic-papers-2026",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "presenc.ai/research/geo-academic-papers-2026",
+     "basis": "operator"
+    },
+    "item_fields": {
+     "src": "presenc.ai/research/geo-academic-papers-2026",
+     "basis": "operator"
+    }
+   },
+   "properties": {}
+  },
+  {
+   "slug": "awesome-geo-davidhuji",
+   "name": "Awesome-GEO (DavidHuji)",
+   "url": "https://github.com/DavidHuji/Awesome-GEO",
+   "operator": "DavidHuji (GitHub)",
+   "kind": "curated list",
+   "unit": "paper, code, dataset or tool on generative engine optimization",
+   "count": {
+    "value": "about 27 entries in sections 2024, 2025, 2026 and open-source resources; 123 stars",
+    "as_of": "2026-10-28"
+   },
+   "negative_tags": [
+    "NOT a geospatial ('geo') awesome list"
+   ],
+   "sources": {
+    "github.com/DavidHuji/Awesome-GEO": {
+     "url": "https://github.com/DavidHuji/Awesome-GEO",
+     "read": "2026-10-28",
+     "for": "all fields"
+    }
+   },
+   "unchecked": [
+    "licence",
+    "last update"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "optimization"
+   ],
+   "relations": [
+    {
+     "rel": "neighbour",
+     "target": "presenc-geo-papers"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "github.com/DavidHuji/Awesome-GEO",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "github.com/DavidHuji/Awesome-GEO",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "github.com/DavidHuji/Awesome-GEO",
+     "basis": "operator"
+    }
+   },
+   "properties": {}
+  },
+  {
+   "slug": "aeovision-geo-papers",
+   "name": "AEO Vision — top arXiv papers for GEO",
+   "url": "https://aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+   "operator": "AEO Vision (byline: AEO Vision Content Team)",
+   "kind": "curated list",
+   "sources": {
+    "aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization": {
+     "url": "https://aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+     "read": "2026-10-28",
+     "for": "existence"
+    }
+   },
+   "unchecked": [],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "optimization"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+     "basis": "operator"
+    },
+    "item_fields": {
+     "src": "aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization",
+     "basis": "operator"
+    }
+   },
+   "properties": {},
+   "count": {
+    "value": "12 papers",
+    "as_of": "2026-07-15 (the page's date)"
+   },
+   "item_fields": [
+    "title and authors",
+    "arXiv identifier and link",
+    "summary",
+    "venue (two entries)",
+    "a 'takeaway for teams'",
+    "a one-line 'why it matters' in the quick-reference table"
+   ],
+   "note": "vendor-authored; the article closes on its product: 'That is the measurement loop AEO Vision is built for'"
+  },
+  {
+   "slug": "codesota",
+   "name": "CodeSOTA",
+   "url": "https://www.codesota.com/",
+   "operator": "Kacper Wikiel, 'By Fabryka AI' (Warsaw)",
+   "kind": "database",
+   "note": "it rebuilds the infrastructure 'independently', and links the frozen paperswithcode-data archive as a source",
+   "sources": {
+    "codesota.com/papers-with-code/shutdown": {
+     "url": "https://www.codesota.com/papers-with-code/shutdown",
+     "read": "2026-10-28",
+     "for": "self-positioning"
+    },
+    "codesota.com/papers-with-code": {
+     "url": "https://www.codesota.com/papers-with-code",
+     "read": "2026-10-28",
+     "for": "operator, self-positioning, offerings"
+    }
+   },
+   "unchecked": [
+    "its own catalogue counts (the page cites Papers with Code's)",
+    "whether its scores derive from the Papers with Code dumps"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "discovery"
+   ],
+   "relations": [
+    {
+     "rel": "claims_succession_to",
+     "target": "papers-with-code"
+    }
+   ],
+   "evidence": {
+    "operator": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "operator"
+    },
+    "self_description": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "operator"
+    },
+    "data_access": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "codesota.com/papers-with-code",
+     "basis": "operator"
+    }
+   },
+   "properties": {},
+   "self_description": "Codesota is the v2 replacement for what PWC did",
+   "unit": "benchmark result, with a verification date and code link",
+   "data_access": "an open JSON registry and /api/sota; historical Papers with Code data at /browse/pwc"
+  },
+  {
+   "slug": "data-provenance-explorer",
+   "name": "Data Provenance Explorer",
+   "url": "https://www.dataprovenance.org/",
+   "operator": "Data Provenance Initiative (Longpre, Mahari, Chen, Obeng-Marnu and others)",
+   "kind": "database",
+   "self_description": "Public measurement infrastructure for AI data, model ecosystems, and real-world AI use",
+   "unit": "text dataset, traced to its sources and licences",
+   "count": {
+    "value": "more than 1,800 text datasets audited in the founding paper",
+    "as_of": "arXiv:2310.16787"
+   },
+   "note": "the founding audit found 'license omission of 70%+ and error rates of 50%+' on dataset hosting sites. Its second audit, Consent in Crisis (NeurIPS 2024 Datasets and Benchmarks), read 14,000 web domains and found that 'a full 45% of C4 is now restricted' by terms of service",
+   "sources": {
+    "arxiv.org/abs/2310.16787": {
+     "url": "https://arxiv.org/abs/2310.16787",
+     "read": "2026-10-28",
+     "for": "audit"
+    },
+    "dataprovenance.org": {
+     "url": "https://www.dataprovenance.org/",
+     "read": "2026-10-28",
+     "for": "self-description"
+    },
+    "arxiv.org/abs/2407.14933": {
+     "url": "https://arxiv.org/abs/2407.14933",
+     "read": "2026-10-28",
+     "for": "Consent in Crisis audit"
+    }
+   },
+   "unchecked": [
+    "current scope",
+    "other collections"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "provenance",
+    "monitoring"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "arxiv.org/abs/2310.16787",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "arxiv.org/abs/2310.16787",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "arxiv.org/abs/2310.16787",
+     "basis": "operator"
+    },
+    "self_description": {
+     "src": "arxiv.org/abs/2310.16787",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "arxiv.org/abs/2407.14933",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "records_attribution": {
+     "value": "yes: sources, creators and licences per dataset",
+     "short": "yes",
+     "src": "arxiv.org/abs/2310.16787",
+     "basis": "operator"
+    }
+   }
+  },
+  {
+   "slug": "cms-ai-copyright-tracker",
+   "name": "CMS AI and Copyright Case Tracker",
+   "url": "https://cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+   "operator": "CMS (law firm)",
+   "kind": "database",
+   "unit": "court case on AI and copyright",
+   "count": {
+    "value": "23 cases in 10 jurisdictions (no US cases listed)",
+    "as_of": "2026-10-28"
+   },
+   "cadence": "'updated regularly'; newest entry 31 July 2026",
+   "sources": {
+    "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker": {
+     "url": "https://cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "read": "2026-10-28",
+     "for": "all fields"
+    }
+   },
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "provenance"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "operator"
+    },
+    "cadence": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "operator"
+    },
+    "intake": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "operator"
+    },
+    "item_fields": {
+     "src": "cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker",
+     "basis": "observed"
+    }
+   },
+   "properties": {},
+   "intake": "compiled by the firm's lawyers across jurisdictions; uncovered cases may be sent to a submission address",
+   "item_fields": [
+    "case name",
+    "jurisdiction",
+    "date",
+    "litigation details",
+    "each party's arguments",
+    "judgment"
+   ]
+  },
+  {
+   "slug": "search-arena",
+   "name": "Search Arena",
+   "url": "https://arena.ai/leaderboard/search",
+   "operator": "arena.ai",
+   "kind": "leaderboard",
+   "unit": "search-enabled model, rated from head-to-head human votes",
+   "count": {
+    "value": "247,944 votes across 22 models",
+    "as_of": "2026-02-25 (page's update date)"
+   },
+   "sources": {
+    "arena.ai/leaderboard/search": {
+     "url": "https://arena.ai/leaderboard/search",
+     "read": "2026-10-28",
+     "for": "counts"
+    },
+    "arxiv.org/abs/2506.05334": {
+     "url": "https://arxiv.org/abs/2506.05334",
+     "read": "2026-10-28",
+     "for": "dataset and citation findings (Miroyan et al.; ICLR 2026)"
+    }
+   },
+   "unchecked": [
+    "whether the live leaderboard judges citations",
+    "the operator statement on the leaderboard page"
+   ],
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "evaluation"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "arena.ai/leaderboard/search",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "arena.ai/leaderboard/search",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "arena.ai/leaderboard/search",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "arxiv.org/abs/2506.05334",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "no",
+     "short": "no",
+     "src": null,
+     "basis": "reading"
+    },
+    "preserves_original_outputs": {
+     "value": "yes: the released interactions",
+     "short": "yes",
+     "src": "arxiv.org/abs/2506.05334",
+     "basis": "operator"
+    },
+    "records_attribution": {
+     "value": "the paper analyses citations; the leaderboard ranks by votes",
+     "short": "in the paper",
+     "src": "arxiv.org/abs/2506.05334",
+     "basis": "reading"
+    }
+   },
+   "note": "its dataset paper (Miroyan et al., arXiv:2506.05334, ICLR 2026) released over 24,000 paired multi-turn interactions with about 12,000 preference votes, and found that user preference rises with the number of citations even when the cited content does not support the claims it is attached to"
+  },
+  {
+   "slug": "capture-registry",
+   "name": "AI Overview Capture Registry",
+   "aka": [
+    "EA-WG-CAPTURES-01"
+   ],
+   "url": "https://www.alexanarch.org/captures/",
+   "operator": "Crimson Hexagonal Archive (Lee Sharks)",
+   "kind": "database",
+   "unit": "capture: a dated composition by a machine answer surface at a named address, with its verbatim transcript and the sources it engaged",
+   "count": {
+    "value": "792 captures, 981 observations, registry v12.345",
+    "as_of": "2026-10-28"
+   },
+   "note": "the operator of this meta-aggregator; its page carries the same fields as every other",
+   "sources": {
+    "data/EA-WG-CAPTURES-01.json": {
+     "url": "data/EA-WG-CAPTURES-01.json",
+     "read": "2026-10-28",
+     "for": "counts"
+    }
+   },
+   "lifecycle": {
+    "state": "active",
+    "detail": null
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "roles": [
+    "reception",
+    "provenance"
+   ],
+   "relations": [],
+   "evidence": {
+    "operator": {
+     "src": "data/EA-WG-CAPTURES-01.json",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "data/EA-WG-CAPTURES-01.json",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "data/EA-WG-CAPTURES-01.json",
+     "basis": "operator"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "no: source engagement in composition",
+     "src": null,
+     "basis": "operator",
+     "short": "no"
+    },
+    "preserves_original_outputs": {
+     "value": "yes: verbatim transcripts",
+     "src": null,
+     "basis": "operator",
+     "short": "yes"
+    },
+    "version_history": {
+     "value": "versioned registry",
+     "src": "data/EA-WG-CAPTURES-01.json",
+     "basis": "operator",
+     "short": "yes"
+    },
+    "records_attribution": {
+     "value": "yes",
+     "src": null,
+     "basis": "operator",
+     "short": "yes"
+    }
+   }
+  },
+  {
+   "slug": "mit-ai-incident-tracker",
+   "name": "MIT AI Incident Tracker",
+   "url": "https://airisk.mit.edu/ai-incident-tracker",
+   "operator": "MIT AI Risk Initiative, with Arcola AI's LLM pipeline",
+   "kind": "database",
+   "roles": [
+    "harm"
+   ],
+   "lifecycle": {
+    "state": "active"
+   },
+   "observed": {
+    "on": "2026-10-28",
+    "fetch": "read"
+   },
+   "unit": "AI Incident Database report, classified by risk domain, cause, harm, severity and EU AI Act risk level",
+   "intake": "AIID reports processed by an LLM pipeline (Arcola AI) against the MIT Risk Repository taxonomy and a severity rating based on CSET's AI Harm Taxonomy",
+   "count": {
+    "value": "the page gives both 'more than 1,400' (description) and 1,600 (heading)",
+    "as_of": "2026-10-28"
+   },
+   "note": "the page states that patterns 'should be taken as indicative'; reporting is voluntary and no systematic validation study is complete",
+   "relations": [
+    {
+     "rel": "part_of",
+     "target": "mit-ai-risk-repository"
+    },
+    {
+     "rel": "derived_from",
+     "target": "ai-incident-database"
+    }
+   ],
+   "sources": {
+    "airisk.mit.edu/ai-incident-tracker": {
+     "url": "https://airisk.mit.edu/ai-incident-tracker",
+     "read": "2026-10-28",
+     "for": "all fields"
+    }
+   },
+   "evidence": {
+    "operator": {
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "operator"
+    },
+    "unit": {
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "operator"
+    },
+    "intake": {
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "operator"
+    },
+    "note": {
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "operator"
+    },
+    "count": {
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "observed"
+    }
+   },
+   "properties": {
+    "admission_requires_harm": {
+     "value": "inherits AIID's harm test",
+     "short": "yes (via AIID)",
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "reading"
+    },
+    "preserves_original_outputs": {
+     "value": "no: classifications are machine-written",
+     "short": "no",
+     "src": "airisk.mit.edu/ai-incident-tracker",
+     "basis": "reading"
+    }
+   }
+  }
+ ],
+ "schema_version": "2.1",
+ "schema_note": "v2 (2026-10-28): each page has two nodes, the MMRS record and the entity it describes; relations are typed; each assertion carries a source and a basis (operator statement, third-party report, our observation, our reading); lifecycle is kept apart from the observation that saw it; roles are plural; properties answer traversal questions; holdings carry event, inclusion and observed dates."
+}
