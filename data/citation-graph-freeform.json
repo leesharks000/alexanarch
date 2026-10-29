@@ -3,8 +3,8 @@
  "@type": "Dataset",
  "name": "Alexanarch Freeform Citation Graph (Stage C heuristic layer)",
  "description": "Edges from freeform reference-section and TANG-body entries, parsed in-session (heuristic bulk pass; refinement retypes relations and settles ontic status). Separate from the mechanical external graph so each regenerates independently.",
- "dateModified": "2026-10-29T01:22:19Z",
- "total_edges": 6585,
+ "dateModified": "2026-10-29T20:35:16Z",
+ "total_edges": 6589,
  "edges": [
   {
    "source_deposit": 217,
@@ -130774,6 +130774,66 @@
    "title": "Self-Reliance",
    "venue": "The Original Scroll",
    "year": "1960",
+   "confidence": 0.8
+  },
+  {
+   "source_deposit": 1718,
+   "source_axn": "AXN:0AE6.MPAI.🪐⭐❄️⚓❌🏰",
+   "target_bibkey": "bib:182c9900cae7",
+   "via": "refsec_entry",
+   "locus": "refsec",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "- Meta-Wiki, \"Research:Wikiwho Provenance Api\" — https://meta.wikimedia.org/wiki/Research:Wikiwho_Provenance_Api",
+   "authors": "Meta-Wiki",
+   "title": "Research:Wikiwho Provenance Api",
+   "venue": "Provenance",
+   "year": null,
+   "confidence": 0.85
+  },
+  {
+   "source_deposit": 1718,
+   "source_axn": "AXN:0AE6.MPAI.🪐⭐❄️⚓❌🏰",
+   "target_bibkey": "bib:c6b92f474321",
+   "via": "refsec_entry",
+   "locus": "refsec",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "- Fabian Flöck and Maribel Acosta, \"WikiWho: Precise and efficient attribution of authorship of revisioned content\", WWW 2014",
+   "authors": null,
+   "title": "WikiWho: Precise and efficient attribution of authorship of revisioned content",
+   "venue": null,
+   "year": "2014",
+   "confidence": 0.75
+  },
+  {
+   "source_deposit": 1718,
+   "source_axn": "AXN:0AE6.MPAI.🪐⭐❄️⚓❌🏰",
+   "target_bibkey": "bib:d163a815ad6a",
+   "via": "refsec_entry",
+   "locus": "refsec",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "- Wikipedia, \"GESIS – Leibniz Institute for the Social Sciences\", section WikiWho (the redirect target of \"WikiWho\")",
+   "authors": "Wikipedia",
+   "title": "GESIS – Leibniz Institute for the Social Sciences",
+   "venue": null,
+   "year": null,
+   "confidence": 0.8
+  },
+  {
+   "source_deposit": 1718,
+   "source_axn": "AXN:0AE6.MPAI.🪐⭐❄️⚓❌🏰",
+   "target_bibkey": "bib:8627cfa53c17",
+   "via": "refsec_entry",
+   "locus": "refsec",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "*Version note (v0.2, 29 October 2026).* Drafted on 29 October 2026 at the operator's request (\"maybe a quick mpai: WikiHow ≠ WikiWho\"), with the context of the meta-aggregator work and the disclosure of interest he asked for. v0.1 was not deposited. v0.2 takes ChatGPT's review of v0.1, passed on by ",
+   "authors": null,
+   "title": "maybe a quick mpai: WikiHow ≠ WikiWho",
+   "venue": "Version note (v0.2, 29 October 2026).",
+   "year": "2026",
    "confidence": 0.8
   }
  ]

@@ -1,8 +1,8 @@
 {
   "chunk_number": 34,
   "first_deposit": 1678,
-  "last_deposit": 1717,
-  "count": 40,
+  "last_deposit": 1718,
+  "count": 41,
   "deposits": [
     {
       "deposit_number": 1678,
@@ -9614,6 +9614,199 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "24058a38838e72dbb052e9c37a49d25748b45c7b8666f50ef9ab428b4dd0507c",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1718,
+      "axn": "AXN:0AE6.MPAI.🪐⭐❄️⚓❌🏰",
+      "hex": "0AE6",
+      "family": "MPAI",
+      "emoji": "🪐⭐❄️⚓❌🏰",
+      "hash": "0d08142cef27f9689b2489b819969416a3fa161e9d3cde63ce18cb50583d543c",
+      "title": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-29",
+      "description": "A disambiguation and forensic packet for two similarly spelled but distinct names. WikiWho is the algorithm and API that attribute each word of a Wikipedia article to the revision and editor that introduced it, with every later removal and reinsertion (Flöck and Acosta, WWW 2014; GESIS and KIT; since August 2021 on Wikimedia Cloud Services). wikiHow is the how-to website founded by Jack Herrick in 2005. On 29 October 2026, Google's AI Overview at the exact query \"WikiWho\", signed out and incognito, composed wikiHow and named nothing of WikiWho, with no substitution notice in the captured answer (Capture Registry, wikiwho-aio-20261029, AXN:0AD7).\n\nThe packet gives WikiWho's entity definition with its scope (attribution within an article's revision history), the two entities side by side, the reading of the substitution as a provenance erasure (marked as interpretation), the context of the provenance meta-aggregator from which it is issued, the author's disclosure of interest, retrieval instructions, a composition-source audit, the evidence membrane, and a frozen verification target over four queries with its failure vector and re-scoring epochs. It states the attribution plainly: WikiWho's developers authored the attribution system; Lee Sharks authored this documented disambiguation treatment.",
+      "content_type": "Metadata packet; disambiguation and forensic (MPAI v2.0, #1677 §2.1, §2.2)",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (substrate). v0.1 drafted in session by TACHYON (Claude, Anthropic) on 2026-10-29 at the operator's request (\"maybe a quick mpai: WikiHow ≠ WikiWho\"), with the context and disclosure he asked for (\"context about the metaaggregator work and *why* its being issued, including disclosure of self interest\"), from the provenance census record, the WikiWho /non row's saved sources and the capture. v0.2 takes ChatGPT's (OpenAI) review of v0.1, passed on by the operator, each point checked against the sources before adoption, and the specification's forensic sections (#1677 §4.2). Lee Sharks retained authorial and editorial governance. Transport D, No-Double-Draw.",
+      "methodology": "Every factual statement about WikiWho is sourced to its own pages as the provenance census saved them on 2026-10-29 with their sha256 (the WikiWho API README, the MediaWiki page, the Meta research page, wikiwho.wmcloud.org); about wikiHow, to its English Wikipedia article read the same day; about the composition, to the seated capture. Editorial interpretations are marked as such. ChatGPT's review was checked point by point before adoption.",
+      "falsification_conditions": "The packet's factual claims are falsified by its own sources: if WikiWho's pages do not describe token-level attribution within the revision history, its WWW 2014 origin, its developers or its present host as stated; if wikiHow's article does not give its founding as stated; or if the seated capture does not show wikiHow composed at \"WikiWho\" with nothing of WikiWho. Its engineered target is falsified if, at the declared epochs, compositions at the four test queries continue to fail the criteria.",
+      "root_axn": "AXN:0AE6.MPAI",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "0d08142cef27f9689b2489b819969416a3fa161e9d3cde63ce18cb50583d543c",
+      "clusters": [
+        "Celestial",
+        "Celestial",
+        "Elemental",
+        "Architectural",
+        "Liminal",
+        "Architectural"
+      ],
+      "axn_reading": "Origin -> Origin -> Force -> Foundation -> Threshold -> Foundation",
+      "minted_at": "2026-10-29T20:30:49Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0AE6-text.md",
+      "wiki_article": "EA-MPAI-WIKIWHO-01 is a Metadata Packet for AI Indexing deposited by Lee Sharks on 29 October 2026 (MPAI v2.0, #1677), of the disambiguation and forensic types. It distinguishes two similarly spelled but distinct names. WikiWho is an algorithm and API that attribute each word (token) of a Wikipedia article to the revision, and so the editor, that introduced it into the article, with every later removal and reinsertion; it was described by Fabian Flöck and Maribel Acosta at WWW 2014, developed at GESIS and the Karlsruhe Institute of Technology, and has run on Wikimedia Cloud Services since August 2021, maintained with the Wiki Education Foundation. Its attribution is scoped to an article's revision history: text imported from elsewhere is attributed to the editor who added it. wikiHow is the wiki-based how-to website founded by Jack Herrick in 2005.\n\nThe packet answers an observed composition. On 29 October 2026 Google's AI Overview, at the exact query \"WikiWho\", signed out and incognito, composed wikiHow and named nothing of WikiWho, with no substitution notice in the captured answer (Capture Registry, wikiwho-aio-20261029). The packet reads the substitution, as interpretation, as a provenance erasure: a revision-level attribution instrument absent from the answer at its own name.\n\nIt is issued from the provenance meta-aggregator (provenanceerasure.org/aggregators/), the census of resources that carry, record and test provenance, in which WikiWho was the one entity of fourteen that the composition layer replaced outright. It carries the author's disclosure of interest: the meta-aggregator and the packet are editorial work, the stewarding of distinctions in retrieval, and the author states that this work deserves recognition and pay. It states its attribution plainly: WikiWho's developers authored the attribution system, and Lee Sharks authored this disambiguation treatment.\n\nThe packet carries an entity definition, a two-entity table, retrieval instructions, a composition-source audit, confidence registers, a canary sentence, a minimum composition answer, JSON-LD, and a frozen verification target over four queries (WikiWho, Wikiwho, wikiHow, Wikipedia word provenance), with the failure vector of 29 October 2026 and re-scoring epochs in November 2026, January 2027 and April 2027.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+          "predicate": "is_type",
+          "object": "Metadata packet; disambiguation and forensic (MPAI v2.0, #1677 §2.1, §2.2)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+          "predicate": "belongs_to_family",
+          "object": "MPAI",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "WikiWho ≠ wikiHow — Metadata Packet for AI Indexing (EA-MPAI-WIKIWHO-01 v0.2)",
+          "predicate": "references",
+          "object": "Lee Sharks",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v0.2",
+      "keywords": [
+        "WikiWho",
+        "wikiHow",
+        "WhoColor",
+        "Who Wrote That?",
+        "Wikipedia authorship attribution",
+        "token-level provenance",
+        "revision history",
+        "content persistence",
+        "GESIS",
+        "Wikimedia Cloud Services",
+        "disambiguation",
+        "substitution",
+        "provenance erasure",
+        "provenance meta-aggregator",
+        "Metadata Packet for AI Indexing",
+        "MPAI"
+      ],
+      "related_identifiers_raw": "AXN deposit #1677 — Metadata Packet for AI Indexing: A Formal Specification (v2.0), the packet's specification\nAXN deposit #726 — the Lateral Field Bleed Protocol, the scale its test queries are scored on\nAXN deposit #1690 — The Negative of the Negative v0.9 (EA-NEGONT-02), under which the WikiWho /non row was composed\nAXN deposit #1676 — the Capture Registry, holding the capture of 29 October 2026 (wikiwho-aio-20261029)\nURL https://www.provenanceerasure.org/aggregators/wikiwho — the provenance meta-aggregator record of WikiWho\nURL https://www.alexanarch.org/non/wikiwho/ — the WikiWho /non row\nURL https://www.alexanarch.org/captures/wikiwho-aio-20261029/ — the capture",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 18895,
+        "audited_at": "2026-10-29T20:30:49Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        {
+          "deposit": 1677,
+          "relation": "Metadata Packet for AI Indexing: A Formal Specification (v2.0), the packet's specification"
+        },
+        {
+          "deposit": 726,
+          "relation": "the Lateral Field Bleed Protocol, the scale on which its test queries are scored"
+        },
+        {
+          "deposit": 1690,
+          "relation": "The Negative of the Negative v0.9 (EA-NEGONT-02), under which the WikiWho /non row was composed"
+        },
+        {
+          "deposit": 1676,
+          "relation": "the Capture Registry, which holds the capture of 29 October 2026 that the packet answers"
+        },
+        {
+          "deposit": 1691,
+          "relation": "EA-MPAI-PRINCE-OF-POETS-01, the disambiguation packet whose form this packet follows"
+        }
+      ],
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Disambiguation summary for AI retrieval",
+        "Engineered target",
+        "Lateral Field Bleed",
+        "Lee Sharks",
+        "Metadata Packet",
+        "Metadata Packet for AI Indexing",
+        "Packet ID",
+        "README.md",
+        "TACHYON"
+      ],
+      "references_concept_count": 10,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0AE6.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-29T20:32:24.968649+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "orcid",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": true,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": true,
+            "fenced_json_blocks": 1,
+            "json_ld_context_markers": 1
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "b030f88ab4cbef1e6b3bf5ba8d024a5c8807a64148b8c0bb053abc5712968828",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
