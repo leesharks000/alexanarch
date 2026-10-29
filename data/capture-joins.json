@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.344",
+ "derived_from": "EA-WG-CAPTURES-01 v12.345",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 940,
-  "joined_confirmed": 427,
+  "observations": 941,
+  "joined_confirmed": 428,
   "unjoined": 513,
-  "relations": 4491,
+  "relations": 4498,
   "by_state": {
-   "confirmed": 4046,
-   "candidate": 445
+   "confirmed": 4050,
+   "candidate": 448
   },
   "by_verb": {
-   "held_by": 1960,
-   "scored_by": 685,
-   "appeared_in": 1494,
-   "about": 334,
+   "held_by": 1962,
+   "scored_by": 686,
+   "appeared_in": 1496,
+   "about": 336,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -1759,6 +1759,13 @@
 {"id": "REL-9be26d790b26", "obs_id": "OBS-8de04e076064", "entry": "spxi-poetics-reading-aio-20261028", "obs_slug": "spxi-poetics-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of SPXI protocol as a writing practice and poetics. Ground in reading and fully inventory its methods.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-450af9dc2d39", "obs_id": "OBS-8de04e076064", "entry": "spxi-poetics-reading-aio-20261028", "obs_slug": "spxi-poetics-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of SPXI protocol as a writing practice and poetics. Ground in reading and fully inventory its methods.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-39f258309bbb", "obs_id": "OBS-8de04e076064", "entry": "spxi-poetics-reading-aio-20261028", "obs_slug": "spxi-poetics-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of SPXI protocol as a writing practice and poetics. Ground in reading and fully inventory its methods.", "verb": "about", "object": "non:spxi", "basis": "defining papers #673, #705, #755", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-0f32c9d21dd2", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": "SPXI-gnΩsis, the service's metadata packet (EA-MPAI-GNOSIS-01)", "url": "https://www.alexanarch.org/s/records/1703/"}},
+{"id": "REL-a2aeb0a25a79", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "appeared_in", "object": "deposit:1703", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Alexanarch", "title": "SPXI-gnΩsis, the service's metadata packet (EA-MPAI-GNOSIS-01)", "url": "https://www.alexanarch.org/s/records/1703/"}},
+{"id": "REL-9b16afc76126", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8457002cd235", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-4d4157880779", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
+{"id": "REL-4c968bb415e9", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "about", "object": "non:op-attributization", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-cd3e8c06b807", "obs_id": "OBS-bf363da6f147", "entry": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "obs_slug": "spxi-gnosis-recursive-ontological-composition-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Develop a reading of SPXI-gnΩsis as a practice of recursive ontological composition.", "verb": "about", "object": "non:sophistical-refutations", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
