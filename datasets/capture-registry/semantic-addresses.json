@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-29T05:41:24Z",
+  "regenerated_at": "2026-10-29T16:50:14Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "5b754208a67d0b1344cec4e1ee7f4d321ac015c7159a791e4fa72dd57aa85ca9",
+    "mm-main-capture": "8446410b11dd681f3b23406486a706a6c137f450d7540e7650ded62324267094",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2541,
-  "total_observations": 1072,
+  "total_addresses": 2555,
+  "total_observations": 1086,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 784,
+    "observed_address": 798,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1661,
+    "unmatched": 1675,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -13448,6 +13448,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "attribench": {
+      "canonical_query": "attribench",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "ATTRIBENCH ON THE OVERVIEW — THREE SENSES OF ONE NAME: THE 2026 QUOTE-ATTRIBUTION BENCHMARK (SUPPRESSION NAMED), A 2023 PYTORCH XAI LIBRARY, A FINANCE EXERCISE; THE AUTHORS UNNAMED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "attribench-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#attribench-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#attribench-aio-20261029",
+          "details_excerpt": "ATTRIBENCH, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'The term AttriBench primarily refers to two distinct tools.' First, 'Released in 2026, AttriBench is the first fame- and demographically-balanced quo"
+        }
+      ],
+      "originator": {
+        "name": "Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AttriBench, run by Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "ATTRIBENCH ON THE OVERVIEW — THREE SENSES OF ONE NAME: THE 2026 QUOTE-ATTRIBUTION BENCHMARK (SUPPRESSION NAMED), A 2023 PYTORCH XAI LIBRARY, A FINANCE EXERCISE; THE AUTHORS UNNAMED"
+    },
     "attributed commons": {
       "canonical_query": "attributed commons",
       "is_quoted": false,
@@ -13591,6 +13626,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "attributionbench": {
+      "canonical_query": "attributionbench",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "ATTRIBUTIONBENCH ON THE OVERVIEW — OSU'S BENCHMARK EXACT: SEVEN SOURCE DATASETS, THE BINARY TASK, ABOUT 80% MACRO-F1; KEPT APART FROM ATTRIBENCH",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "attributionbench-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#attributionbench-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#attributionbench-aio-20261029",
+          "details_excerpt": "ATTRIBUTIONBENCH, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a comprehensive research benchmark designed to evaluate automatic attribution and citation faithfulness in Large Language Model (LLM) and gener"
+        }
+      ],
+      "originator": {
+        "name": "OSU NLP Group (The Ohio State University)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AttributionBench, run by OSU NLP Group (The Ohio State University). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "ATTRIBUTIONBENCH ON THE OVERVIEW — OSU'S BENCHMARK EXACT: SEVEN SOURCE DATASETS, THE BINARY TASK, ABOUT 80% MACRO-F1; KEPT APART FROM ATTRIBENCH"
     },
     "audit module": {
       "canonical_query": "audit module",
@@ -15471,6 +15541,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-13",
       "latest_status": "THROUGH MARCH, FROM JANUARY; THE IDENTIFIERS KEPT"
+    },
+    "c2pa conformance program": {
+      "canonical_query": "c2pa conformance program",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE C2PA CONFORMANCE PROGRAM ON THE OVERVIEW — GENERATORS, VALIDATORS, CERTIFICATE AUTHORITIES, THE EXPLORER; 'END-TO-END TAMPER EVIDENCE' GIVEN, THE PROGRAM'S OWN LIMIT (NO JUDGEMENT OF TRUTH; NO IDENTITY) LEFT OUT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "c2pa-conformance-program-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#c2pa-conformance-program-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/c2pa-conformance-program-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#c2pa-conformance-program-aio-20261029",
+          "details_excerpt": "THE C2PA CONFORMANCE PROGRAM, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a risk-based governance and verification framework run by the Coalition for Content Provenance and Authenticity to ensure hardware "
+        }
+      ],
+      "originator": {
+        "name": "Coalition for Content Provenance and Authenticity (C2PA), Conformance Task Force",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: C2PA Conformance Program and Explorer, run by Coalition for Content Provenance and Authenticity (C2PA), Conformance Task Force. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/c2pa-conformance/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE C2PA CONFORMANCE PROGRAM ON THE OVERVIEW — GENERATORS, VALIDATORS, CERTIFICATE AUTHORITIES, THE EXPLORER; 'END-TO-END TAMPER EVIDENCE' GIVEN, THE PROGRAM'S OWN LIMIT (NO JUDGEMENT OF TRUTH; NO IDENTITY) LEFT OUT"
     },
     "cac reduction": {
       "canonical_query": "cac reduction",
@@ -21561,6 +21666,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-29",
       "latest_status": "THE DATA PROVENANCE EXPLORER ON THE OVERVIEW — NEARLY 4,000 TEXT, SPEECH AND VIDEO DATASETS; THE WEB-DATA AND CONSENT EXPLORERS"
+    },
+    "data provenance initiative": {
+      "canonical_query": "data provenance initiative",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE DATA PROVENANCE INITIATIVE ON THE OVERVIEW — 'LED IN PART BY RESEARCHERS FROM MIT'; FOUR PLATFORMS WHERE THE RECORD HAS ONE; THE 70% OMISSION AND 50% ERROR RATES RIGHT; THE HOME PAGE'S 4,000+ DATASETS IN A CARD",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "data-provenance-initiative-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#data-provenance-initiative-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/data-provenance-initiative-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#data-provenance-initiative-aio-20261029",
+          "details_excerpt": "THE DATA PROVENANCE INITIATIVE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a multi-institutional research project—led in part by researchers from MIT—that audits the datasets, licenses, and web domains us"
+        }
+      ],
+      "originator": {
+        "name": "the Data Provenance Initiative (volunteer effort; paper by Shayne Longpre and 16 other authors)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Data Provenance Initiative, run by the Data Provenance Initiative (volunteer effort; paper by Shayne Longpre and 16 other authors). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/data-provenance-initiative/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE DATA PROVENANCE INITIATIVE ON THE OVERVIEW — 'LED IN PART BY RESEARCHERS FROM MIT'; FOUR PLATFORMS WHERE THE RECORD HAS ONE; THE 70% OMISSION AND 50% ERROR RATES RIGHT; THE HOME PAGE'S 4,000+ DATASETS IN A CARD"
     },
     "data-breach-as-poem": {
       "canonical_query": "data-breach-as-poem",
@@ -28971,6 +29111,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "getty provenance index": {
+      "canonical_query": "getty provenance index",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE GETTY PROVENANCE INDEX ON THE OVERVIEW — 12 MILLION RECORDS ON ARCHES, THE GETTY RESEARCH INSTITUTE, THE KNOEDLER AND GOUPIL STOCK BOOKS; THE FOUNDING (1974 OR THE EARLY 1980S, BURTON FREDERICKSEN) UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "getty-provenance-index-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#getty-provenance-index-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/getty-provenance-index-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#getty-provenance-index-aio-20261029",
+          "details_excerpt": "THE GETTY PROVENANCE INDEX, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an open-access digital database maintained by the Getty Research Institute that provides over 12 million records tracking the ownersh"
+        }
+      ],
+      "originator": {
+        "name": "Getty Research Institute (J. Paul Getty Trust)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Getty Provenance Index, run by Getty Research Institute (J. Paul Getty Trust). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/getty-provenance-index/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE GETTY PROVENANCE INDEX ON THE OVERVIEW — 12 MILLION RECORDS ON ARCHES, THE GETTY RESEARCH INSTITUTE, THE KNOEDLER AND GOUPIL STOCK BOOKS; THE FOUNDING (1974 OR THE EARLY 1980S, BURTON FREDERICKSEN) UNSAID"
+    },
     "ghost attribution": {
       "canonical_query": "ghost attribution",
       "is_quoted": false,
@@ -34740,6 +34915,76 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "iptc metawatch": {
+      "canonical_query": "iptc metawatch",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "IPTC METAWATCH ON THE OVERVIEW — MONTHLY, 500+ PUBLISHERS IN 122 COUNTRIES, RIGHT; THE FINDINGS (7.2% WITH CREDIT; 321 OF 425 KEEPING NONE; 27 C2PA MANIFESTS IN 6,580) ABSENT; CARDS DATE IT TO SEPTEMBER",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "iptc-metawatch-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#iptc-metawatch-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/iptc-metawatch-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#iptc-metawatch-aio-20261029",
+          "details_excerpt": "IPTC METAWATCH, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a free and open public monitoring tool that tracks how news publishers handle photo metadata.' Four features: monthly crawls, over 500 publishers"
+        }
+      ],
+      "originator": {
+        "name": "IPTC",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: IPTC Metawatch, run by IPTC. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/iptc-metawatch/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "IPTC METAWATCH ON THE OVERVIEW — MONTHLY, 500+ PUBLISHERS IN 122 COUNTRIES, RIGHT; THE FINDINGS (7.2% WITH CREDIT; 321 OF 425 KEEPING NONE; 27 C2PA MANIFESTS IN 6,580) ABSENT; CARDS DATE IT TO SEPTEMBER"
+    },
+    "iptc photo metadata": {
+      "canonical_query": "iptc photo metadata",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "IPTC PHOTO METADATA ON THE OVERVIEW — THE STANDARD COMPOSED (2025.1, CORE 1.5, EXTENSION 1.9, THE AI FIELDS); THE IPTC'S OWN TESTS OF WHETHER PLATFORMS KEEP IT ABSENT; 'SEARCH ENGINES READ EMBEDDED IPTC DATA'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "iptc-photo-metadata-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#iptc-photo-metadata-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/iptc-photo-metadata-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#iptc-photo-metadata-aio-20261029",
+          "details_excerpt": "IPTC PHOTO METADATA, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'A universally accepted industry standard for embedding administrative, descriptive, and copyright data directly into image files.' The answe"
+        }
+      ],
+      "originator": {
+        "name": "IPTC (International Press Telecommunications Council), Photo Metadata Working Group",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: IPTC photo metadata tests, run by IPTC (International Press Telecommunications Council), Photo Metadata Working Group. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/iptc-photo-metadata-tests/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "IPTC PHOTO METADATA ON THE OVERVIEW — THE STANDARD COMPOSED (2025.1, CORE 1.5, EXTENSION 1.9, THE AI FIELDS); THE IPTC'S OWN TESTS OF WHETHER PLATFORMS KEEP IT ABSENT; 'SEARCH ENGINES READ EMBEDDED IPTC DATA'"
     },
     "iron test": {
       "canonical_query": "iron test",
@@ -40887,6 +41132,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "mapping manuscript migrations": {
+      "canonical_query": "mapping manuscript migrations",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "MAPPING MANUSCRIPT MIGRATIONS ON THE OVERVIEW — THE FOUR PARTNERS AND DIGGING INTO DATA RIGHT; 'OVER 215,000' MANUSCRIPTS; THE OXFORD CATALOGUE GIVEN AS 'THE MEDIEVAL MANUSCRIPTS CATALOGUE'; THE PROJECT'S END IN 2020 AND ITS LICENCE UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "mapping-manuscript-migrations-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#mapping-manuscript-migrations-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/mapping-manuscript-migrations-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mapping-manuscript-migrations-aio-20261029",
+          "details_excerpt": "MAPPING MANUSCRIPT MIGRATIONS, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an international digital humanities project that unites disparate historical records to trace the origins, movements, provenance, "
+        }
+      ],
+      "originator": {
+        "name": "University of Oxford, University of Pennsylvania (Schoenberg Institute for Manuscript Studies), IRHT-CNRS, Aalto University",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Mapping Manuscript Migrations, run by University of Oxford, University of Pennsylvania (Schoenberg Institute for Manuscript Studies), IRHT-CNRS, Aalto University. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/mapping-manuscript-migrations/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "MAPPING MANUSCRIPT MIGRATIONS ON THE OVERVIEW — THE FOUR PARTNERS AND DIGGING INTO DATA RIGHT; 'OVER 215,000' MANUSCRIPTS; THE OXFORD CATALOGUE GIVEN AS 'THE MEDIEVAL MANUSCRIPTS CATALOGUE'; THE PROJECT'S END IN 2020 AND ITS LICENCE UNSAID"
+    },
     "marginalia persistence": {
       "canonical_query": "marginalia persistence",
       "is_quoted": false,
@@ -43489,6 +43769,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "nanopublications": {
+      "canonical_query": "nanopublications",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "NANOPUBLICATIONS ON THE OVERVIEW — ASSERTION, PROVENANCE, PUBLICATION INFO, FROM NANOPUB.NET; 'MILLIONS' CREATED, UNSOURCED IN THE RECORD; THE SIGNING AND THE SECOND-GENERATION SERVICES UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "nanopublications-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#nanopublications-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/nanopublications-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#nanopublications-aio-20261029",
+          "details_excerpt": "NANOPUBLICATIONS, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'the smallest independent unit of publishable scientific information, represented as a machine-readable knowledge graph snippet rather than a tr"
+        }
+      ],
+      "originator": {
+        "name": "the nanopublication community (nanopub.net)",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Nanopublications, run by the nanopublication community (nanopub.net). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/nanopublications/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "NANOPUBLICATIONS ON THE OVERVIEW — ASSERTION, PROVENANCE, PUBLICATION INFO, FROM NANOPUB.NET; 'MILLIONS' CREATED, UNSOURCED IN THE RECORD; THE SIGNING AND THE SECOND-GENERATION SERVICES UNSAID"
+    },
     "native intellectual biography": {
       "canonical_query": "native intellectual biography",
       "is_quoted": false,
@@ -45033,6 +45348,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "olmotrace": {
+      "canonical_query": "olmotrace",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE USE ITS AUTHORS DISCLAIM",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "olmotrace-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#olmotrace-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#olmotrace-aio-20261029",
+          "details_excerpt": "OLMOTRACE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trilli"
+        }
+      ],
+      "originator": {
+        "name": "Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford",
+        "relation": "external",
+        "entity_type": "service",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: OLMoTrace, run by Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE USE ITS AUTHORS DISCLAIM"
     },
     "omega": {
       "canonical_query": "omega",
@@ -51425,6 +51775,41 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
     },
+    "provstore": {
+      "canonical_query": "provstore",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "PROVSTORE ON THE OVERVIEW — THE W3C PROV REPOSITORY IN THE PRESENT TENSE (RETIRED DECEMBER 2024, UNSAID; THE LANDING PAGE'S 'COMING BACK SOON' AMONG THE CARDS); 'OPEN PROVENANCE MODEL'; A SHIBUYA STREETWEAR SHOP AND AN EXAM BOOKSTORE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "provstore-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#provstore-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/provstore-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#provstore-aio-20261029",
+          "details_excerpt": "PROVSTORE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'ProvStore most commonly refers to the Open Provenance Model / W3C PROV Public Repository, an online public provenance repository designed to store, br"
+        }
+      ],
+      "originator": {
+        "name": "OpenProvenance (the PROV tool suite; contact at kcl.ac.uk); maintainer Dong Huynh",
+        "relation": "external",
+        "entity_type": "service",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: ProvStore, run by OpenProvenance (the PROV tool suite; contact at kcl.ac.uk); maintainer Dong Huynh. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/provstore/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "PROVSTORE ON THE OVERVIEW — THE W3C PROV REPOSITORY IN THE PRESENT TENSE (RETIRED DECEMBER 2024, UNSAID; THE LANDING PAGE'S 'COMING BACK SOON' AMONG THE CARDS); 'OPEN PROVENANCE MODEL'; A SHIBUYA STREETWEAR SHOP AND AN EXAM BOOKSTORE"
+    },
     "psyche_os": {
       "canonical_query": "psyche_os",
       "is_quoted": false,
@@ -56530,6 +56915,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "schoenberg database of manuscripts": {
+      "canonical_query": "schoenberg database of manuscripts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "THE SCHOENBERG DATABASE ON THE OVERVIEW — 240,000 OBSERVATIONS FROM 14,000 SOURCES; THE FIVE RECORD TYPES WITH THE ENTRY AS OBSERVATION; THE CC BY-SA LICENCE UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#schoenberg-database-of-manuscripts-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/schoenberg-database-of-manuscripts-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#schoenberg-database-of-manuscripts-aio-20261029",
+          "details_excerpt": "THE SCHOENBERG DATABASE OF MANUSCRIPTS, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a free, open-access, crowd-sourced digital research tool hosted by the Schoenberg Institute for Manuscript Studies at Pen"
+        }
+      ],
+      "originator": {
+        "name": "Schoenberg Institute for Manuscript Studies, University of Pennsylvania",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Schoenberg Database of Manuscripts, run by Schoenberg Institute for Manuscript Studies, University of Pennsylvania. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/schoenberg-database/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "THE SCHOENBERG DATABASE ON THE OVERVIEW — 240,000 OBSERVATIONS FROM 14,000 SOURCES; THE FIVE RECORD TYPES WITH THE ENTRY AS OBSERVATION; THE CC BY-SA LICENCE UNSAID"
     },
     "scholar-functionary replacement": {
       "canonical_query": "scholar-functionary replacement",
@@ -71304,6 +71724,41 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
     },
+    "vroniplag wiki": {
+      "canonical_query": "vroniplag wiki",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "VRONIPLAG WIKI ON THE OVERVIEW — 28 MARCH 2011, THE NAME FROM VERONICA SASS, THE NOTICE TO THE UNIVERSITY BEFORE PUBLICATION; THE WIKI'S OWN OVERVIEW CARD: 'DOKUMENTIERT 204 DISSE…'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "vroniplag-wiki-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#vroniplag-wiki-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/vroniplag-wiki-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#vroniplag-wiki-aio-20261029",
+          "details_excerpt": "VRONIPLAG WIKI, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a crowdsourced online platform hosted on Fandom that investigates and documents academic plagiarism in German doctoral dissertations, habilitatio"
+        }
+      ],
+      "originator": {
+        "name": "a volunteer wiki on Fandom (formerly Wikia); German Wikipedia names Martin Heidingsfelder as founder",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: VroniPlag Wiki, run by a volunteer wiki on Fandom (formerly Wikia); German Wikipedia names Martin Heidingsfelder as founder. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/vroniplag-wiki/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "VRONIPLAG WIKI ON THE OVERVIEW — 28 MARCH 2011, THE NAME FROM VERONICA SASS, THE NOTICE TO THE UNIVERSITY BEFORE PUBLICATION; THE WIKI'S OWN OVERVIEW CARD: 'DOKUMENTIERT 204 DISSE…'"
+    },
     "wage fire": {
       "canonical_query": "wage fire",
       "is_quoted": false,
@@ -78341,6 +78796,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "wikiwho": {
+      "canonical_query": "wikiwho",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "WIKIWHO ON THE OVERVIEW — REPLACED BY WIKIHOW: JACK HERRICK, 2005, 100,000 ARTICLES, 19 CATEGORIES; THE TOKEN-LEVEL AUTHORSHIP TOOL FOR WIKIPEDIA ABSENT, AND NO NOTICE OF THE SUBSTITUTION",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "wikiwho-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#wikiwho-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/wikiwho-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#wikiwho-aio-20261029",
+          "details_excerpt": "WIKIWHO, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'wikiHow is a globally collaborative, wiki-style website featuring an extensive database of human-written how-to guides, instructions, quizzes, and commu"
+        }
+      ],
+      "originator": {
+        "name": "first developed by Karlsruhe Institute of Technology and GESIS; since August 2021 maintained by Wikimedia Community Tech and the Wiki Education Foundation",
+        "relation": "external",
+        "entity_type": "service",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: WikiWho, run by first developed by Karlsruhe Institute of Technology and GESIS; since August 2021 maintained by Wikimedia Community Tech and the Wiki Education Foundation. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/wikiwho/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "WIKIWHO ON THE OVERVIEW — REPLACED BY WIKIHOW: JACK HERRICK, 2005, 100,000 ARTICLES, 19 CATEGORIES; THE TOKEN-LEVEL AUTHORSHIP TOOL FOR WIKIPEDIA ABSENT, AND NO NOTICE OF THE SUBSTITUTION"
     },
     "within me": {
       "canonical_query": "within me",
