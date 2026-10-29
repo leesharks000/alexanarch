@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What are nanopublications? &mdash; nanopub 1.2.11 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="canonical" href="https://nanopub.readthedocs.io/en/latest/getting-started/what-are-nanopubs.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Setup instructions" href="setup.html" />
+    <link rel="prev" title="Welcome to nanopub’s documentation!" href="../index.html" /> 
+
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2022-10-24T12:43:47Z", "builder": "sphinx", "canonical_url": null, "commit": "13949503", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "getting-started/what-are-nanopubs", "programming_language": "py", "project": "nanopub", "proxied_api_host": "/_", "source_suffix": ".md", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="nanopub" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/getting-started/what-are-nanopubs.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> nanopub
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">What are nanopublications?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#different-elements-of-a-nanopublication">Different elements of a nanopublication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test-server.html">The nanopub test server</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Publishing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../publishing/publishing-nanopublications.html">Publishing nanopublications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../publishing/using-publication-namespace.html">Using the nanopublication’s namespace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../publishing/setting-subgraphs.html">Setting publication info and provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../publishing/retraction.html">Retracting a nanopublication</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Searching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../searching.html">Searching the nanopub server</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Fetching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fetching.html">Fetching nanopublications</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/client.html">nanopub.client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/publication.html">nanopub.publication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/namespaces.html">nanopub.namespaces</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanopub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>What are nanopublications?</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/fair-workflows/nanopub/blob/main/docs/getting-started/what-are-nanopubs.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="what-are-nanopublications">
+<h1>What are nanopublications?<a class="headerlink" href="#what-are-nanopublications" title="Permalink to this heading"></a></h1>
+<p>Nanopublications are a formalized and machine-readable way of communicating the smallest possible units
+of publishable information. This could be, for example, the outcome of a scientific study or a claim
+made by a particular scientist.</p>
+<p>Nanopublications are searchable, citable, and contain authorship and attribution
+information. The aim is to encourage individual scientific results to be released in a traceable and
+interoperable format. As such, nanopublications are an effective <a class="reference external" href="https://www.go-fair.org/fair-principles/">FAIR</a>
+means of communicating scientific claims and results. Read more about them at <a class="reference external" href="http://nanopub.org/">http://nanopub.org/</a>.</p>
+<section id="different-elements-of-a-nanopublication">
+<h2>Different elements of a nanopublication<a class="headerlink" href="#different-elements-of-a-nanopublication" title="Permalink to this heading"></a></h2>
+<p><em>From <a class="reference external" href="http://nanopub.org/wordpress/?page_id=65">nanopub.org</a> documentation (2020/12/02)</em></p>
+<p><img alt="Schematic representation of a nanopub" src="../_images/nanopub.png" />Schematic representation of a nanopub</p>
+<p>As can be seen in this image, a nanopublication has three basic elements:</p>
+<ol class="simple">
+<li><p>Assertion: The assertion is the main content of a nanopublication
+in the form of an small atomic unit of information</p></li>
+<li><p>Provenance: This part describes how the assertion above came to be.
+This can include the scientific methods that were used to generate the assertion,
+for example a reference to the kind of study that was performed and its parameters.</p></li>
+<li><p>Publication Info:  This part contains metadata about the nanopublication as a whole,
+such as when and by whom it was created and the license terms for its reuse.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to nanopub’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="setup.html" class="btn btn-neutral float-right" title="Setup instructions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Robin Richardson, Sven van der Burg.
+      <span class="commit">Revision <code>13949503</code>.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

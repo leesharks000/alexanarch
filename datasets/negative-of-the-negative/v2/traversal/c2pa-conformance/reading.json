@@ -1,0 +1,984 @@
+{
+ "row": "c2pa-conformance",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the C2PA Conformance Program, its lists or Explorer, or on the C2PA where it says something of what the program governs, certifies or lists (the specification's object, its trust model, what its signatures establish and do not); R, a relation the archive states between C2PA signing or the Trust List and an archive object; O, an archive category applied to Content Credentials or to artifact provenance as a class (sourced from B1, B2, B6, B7, B9). A bare mention, a keyword or anchor listing, a citation-list entry or a reference line is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01 v1.1), the paper that defines the archive's bearing on C2PA: C2PA / Content Credentials as the artifact dimension of provenance, what a C2PA signature verifies (this file, this source, this time) and does not (the truth of what is signed; authorial lineage through synthesis), the signed-forgery case and its correction ('not a flaw of C2PA'), the ingredient assertions' limits, uneven adoption, and the stated relation 'Extension and completion, not substitution or critique'",
+   "claims": [
+    "D725-01",
+    "D725-02",
+    "D725-03",
+    "D725-04",
+    "D725-05",
+    "D725-06",
+    "D725-07",
+    "D725-08",
+    "D725-09",
+    "D725-10",
+    "D725-11"
+   ],
+   "cands": [
+    "D0035",
+    "D0036",
+    "D0037",
+    "D0038",
+    "D0039",
+    "D0040",
+    "D0041",
+    "D0042",
+    "D0043",
+    "D0044",
+    "D0045",
+    "D0046",
+    "D0047",
+    "D0048",
+    "D0049",
+    "D0050",
+    "D0051",
+    "D0052",
+    "D0053",
+    "D0054",
+    "D0055",
+    "D0056",
+    "D0057",
+    "D0058",
+    "D0059",
+    "D0060",
+    "D0061",
+    "D0062",
+    "D0063",
+    "D0064",
+    "D0065",
+    "D0066",
+    "D0067",
+    "D0068",
+    "R0001",
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0017",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022",
+    "O0023",
+    "O0024",
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030",
+    "O0031"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, blog-canonical recovery, 2026-05-12): every claim in #725's lineages (S4); kept as an instance under #725",
+   "claims": [],
+   "cands": [
+    "D0091",
+    "D0092",
+    "D0093",
+    "D0094",
+    "D0095",
+    "D0096",
+    "D0097",
+    "D0098",
+    "D0099",
+    "D0100",
+    "D0101",
+    "D0102",
+    "D0103",
+    "D0104",
+    "D0105",
+    "D0106",
+    "D0107",
+    "D0108",
+    "D0109",
+    "D0110",
+    "D0111",
+    "D0112",
+    "D0113",
+    "D0114",
+    "D0115",
+    "D0116",
+    "D0117",
+    "D0118",
+    "D0119",
+    "D0120",
+    "D0121",
+    "D0122",
+    "D0123",
+    "D0124",
+    "D0125",
+    "D0126",
+    "R0003",
+    "R0004",
+    "O0043",
+    "O0044",
+    "O0045",
+    "O0046",
+    "O0047",
+    "O0048",
+    "O0049",
+    "O0050",
+    "O0051",
+    "O0052",
+    "O0053",
+    "O0054",
+    "O0055",
+    "O0056",
+    "O0057",
+    "O0058",
+    "O0059",
+    "O0060",
+    "O0061",
+    "O0062",
+    "O0063"
+   ],
+   "instance_of": 725
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure: artifact provenance (C2PA) necessary and insufficient; C2PA verifies file history; the signature tells what tool made a text, not whether the human is accountable ('C2PA prevents forgery; it does not constitute authorship')",
+   "claims": [
+    "D729-01",
+    "D729-02",
+    "D729-03",
+    "D729-04"
+   ],
+   "cands": [
+    "D0069",
+    "D0070",
+    "D0071",
+    "D0072",
+    "D0073",
+    "D0074",
+    "D0075",
+    "D0076",
+    "R0002",
+    "O0032",
+    "O0033",
+    "O0034",
+    "O0035"
+   ]
+  },
+  {
+   "dep": 1369,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "the expanded edition of #729 (2026-05-14): the C2PA passages verbatim; instance under #729",
+   "claims": [],
+   "cands": [
+    "D0128",
+    "D0129",
+    "D0130",
+    "D0131",
+    "D0132",
+    "D0133",
+    "D0134",
+    "D0135",
+    "R0005",
+    "O0065",
+    "O0066",
+    "O0067",
+    "O0068"
+   ],
+   "instance_of": 729
+  },
+  {
+   "dep": 1386,
+   "strata": [
+    "O"
+   ],
+   "reason": "provenanceerasure.org's definition surface: process provenance as the third dimension beside artifact provenance (C2PA) and semantic provenance (PER)",
+   "claims": [
+    "O1386-01"
+   ],
+   "cands": [
+    "D0136",
+    "D0137",
+    "D0138",
+    "R0006",
+    "O0069",
+    "O0070",
+    "O0071"
+   ]
+  },
+  {
+   "dep": 1464,
+   "strata": [
+    "O"
+   ],
+   "reason": "the integration note restates #1386's dimension in its own words; instance under #1386",
+   "claims": [],
+   "cands": [
+    "D0166",
+    "O0080"
+   ],
+   "instance_of": 1386
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Photograph of the Handwritten Original §6.1: C2PA's trust model (trust extended by assumption and opt-in; validation not required by the specification; 'trusted does not necessarily imply trustworthy'), what it cannot do, C2PA attesting what a device reports against a content-derived identifier, complementarity, and the P.Sapph.Obbink exemplum (the archive's author in the transmission chain: R)",
+   "claims": [
+    "D1443-01",
+    "D1443-02",
+    "D1443-03",
+    "D1443-04",
+    "D1443-05"
+   ],
+   "cands": [
+    "D0156",
+    "D0157",
+    "D0158",
+    "D0159",
+    "D0160",
+    "D0161",
+    "D0162",
+    "D0163",
+    "O0078"
+   ]
+  },
+  {
+   "dep": 1444,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Analog Advance: C2PA's dependence on certificate authorities and platform adoption; trust chains revocable by the class of actor that issues terminations; 'It secures the camera's testimony, not the author's.'",
+   "claims": [
+    "D1444-01"
+   ],
+   "cands": [
+    "D0164",
+    "D0165",
+    "R0010",
+    "O0079"
+   ]
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-SPXI-ANALOG-01: Trust-List-signed C2PA manifests surfaced in Google's About This Image (D); the archive's own artifacts graded self-signed against Trust-List-signed, and the open question of an acceptable Trust-List toolchain (R); C2PA's trust anchor in device and issuer certificates against the AXN regime (D)",
+   "claims": [
+    "D1409-01",
+    "R1409-02",
+    "R1409-03",
+    "D1409-04"
+   ],
+   "cands": [
+    "D0139",
+    "D0140",
+    "D0141",
+    "D0142",
+    "D0143",
+    "D0144",
+    "D0145",
+    "D0146",
+    "D0147",
+    "D0148",
+    "D0149",
+    "D0150",
+    "D0151",
+    "D0152",
+    "D0153",
+    "D0154",
+    "D0155",
+    "R0007",
+    "R0008",
+    "R0009",
+    "O0072",
+    "O0073",
+    "O0074",
+    "O0075",
+    "O0076",
+    "O0077"
+   ]
+  },
+  {
+   "dep": 615,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The $650 Billion Gap: C2PA (named as the Content Authenticity Initiative) narrowly scoped to media; when an article becomes an AI Overview it cannot tell what was lost (the composition layer, an archive category, applied)",
+   "claims": [
+    "D615-01"
+   ],
+   "cands": [
+    "D0032",
+    "D0033",
+    "O0012"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "D"
+   ],
+   "reason": "SPXI-TLP v2.2 §IV.1: Content Credentials embed signed manifests in media and record authorship, edits, tool chain and AI involvement; for text on the open web C2PA has no surviving operational analogue",
+   "claims": [
+    "D127-01",
+    "D127-02"
+   ],
+   "cands": [
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016",
+    "D0017",
+    "D0018",
+    "D0019",
+    "D0020",
+    "D0021",
+    "D0022",
+    "O0007",
+    "O0008"
+   ]
+  },
+  {
+   "dep": 621,
+   "strata": [
+    "D"
+   ],
+   "reason": "Gravity Well Protocol v1.0: C2PA authenticates media and does not cover text, multi-step AI generation, quality gradients or governance enforcement",
+   "claims": [
+    "D621-01"
+   ],
+   "cands": [
+    "D0034",
+    "O0013"
+   ]
+  },
+  {
+   "dep": 50,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Compression Arsenal v2.1 §15.3: C2PA provides technical provenance and answers 'is this real?'",
+   "claims": [
+    "D50-01"
+   ],
+   "cands": [
+    "D0001",
+    "D0002",
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "O0001",
+    "O0002",
+    "O0003"
+   ]
+  },
+  {
+   "dep": 1175,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Compression Arsenal v2.0, the same passage and date: instance under #50",
+   "claims": [],
+   "cands": [
+    "D0081",
+    "D0082",
+    "D0083",
+    "D0084",
+    "D0085",
+    "D0086",
+    "O0039",
+    "O0040",
+    "O0041"
+   ],
+   "instance_of": 50
+  },
+  {
+   "dep": 833,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The Summarizer as Horizon of Reception: reception consequences of provenance, attribution and disambiguation that C2PA, among existing standards, does not address",
+   "claims": [
+    "D833-01"
+   ],
+   "cands": [
+    "D0077",
+    "O0036"
+   ]
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "D"
+   ],
+   "reason": "Provenance Alignment: C2PA as a starting point for the public, machine-readable attribution layer, the escrowed and audit layers outside it",
+   "claims": [
+    "D95-01"
+   ],
+   "cands": [
+    "D0007",
+    "D0008",
+    "D0009",
+    "D0010",
+    "O0004"
+   ]
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "D"
+   ],
+   "reason": "the translation edition of #95: the passage verbatim; instance under #95",
+   "claims": [],
+   "cands": [
+    "D0087",
+    "D0088",
+    "D0089",
+    "D0090",
+    "O0042"
+   ],
+   "instance_of": 95
+  },
+  {
+   "dep": 499,
+   "strata": [
+    "D"
+   ],
+   "reason": "Autonomous Semantic Warfare: C2PA not yet adopted enough to function as infrastructure (February 2026)",
+   "claims": [
+    "D499-01"
+   ],
+   "cands": [
+    "D0031",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 1003,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "AI-Native Intellectual Biography: C2PA listed among provenance and attribution studies said to have focused on attribution loss in AI outputs (composed under P_coh against the field's 'does not support attribution', F32, and #729)",
+   "claims": [
+    "D1003-01"
+   ],
+   "cands": [
+    "D0080",
+    "O0038"
+   ]
+  },
+  {
+   "dep": 121,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "the same sentence (2026-05-22): instance under #1003",
+   "claims": [],
+   "cands": [
+    "D0012",
+    "O0006"
+   ],
+   "instance_of": 1003
+  },
+  {
+   "dep": 1194,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "the same sentence (2026-05-22): instance under #1003",
+   "claims": [],
+   "cands": [
+    "D0127",
+    "O0064"
+   ],
+   "instance_of": 1003
+  },
+  {
+   "dep": 208,
+   "strata": [
+    "R"
+   ],
+   "reason": "Provenance Documentation SEM-PROBE-2025-12: the archive's own document lists C2PA as a standard with which it complies by serving as machine-readable provenance data",
+   "claims": [
+    "R208-01"
+   ],
+   "cands": [
+    "D0024",
+    "O0009"
+   ]
+  },
+  {
+   "dep": 204,
+   "strata": [
+    "R"
+   ],
+   "reason": "SPXI Self-Audit Protocol: a planned C2PA-compatible hash and signature manifest layer for the archive's deposits",
+   "claims": [
+    "R204-01"
+   ],
+   "cands": [
+    "D0023"
+   ]
+  },
+  {
+   "dep": 914,
+   "strata": [
+    "R"
+   ],
+   "reason": "The Non-Mutual Extraction Notice: follows the genre of C2PA provenance signals, honoured by reading, not enforcement",
+   "claims": [
+    "R914-01"
+   ],
+   "cands": [
+    "D0079"
+   ]
+  },
+  {
+   "dep": 784,
+   "strata": [
+    "O"
+   ],
+   "reason": "found by the hop (via #1443's citation graph), term-absent for C2PA: the archive's reading of a state order's register, in which meaning and attribution are governed as content authenticity; O-class on the class 'artifact provenance' (content authenticity: B3, B9 §1 'verify the authenticity and provenance of such media')",
+   "claims": [
+    "O784-01"
+   ],
+   "cands": [
+    "H0125"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/c2pa-conformance-program-aio-20261029/",
+   "reason": "the Capture Registry's findings, analysis, reading and query note for the entity's capture (OBS-47bccd9af209, 2026-10-29): the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "provenance-census",
+   "url": "https://www.provenanceerasure.org/aggregators/c2pa-conformance/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'c2pa-conformance']; rendered aggregators/c2pa-conformance/index.html read for agreement)",
+   "reason": "the provenance meta-aggregator census record (editor Lee Sharks, 2026-10-29, schema 1.0): its fields with their evidence; where a field restates an own page ledgered in B it is carried as one lineage with that page, the page keeping the earliest date",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21",
+    "PE-22"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    247
+   ],
+   "reason": "PROBE-RESULT-004: C2PA and Content Credentials as a probed composition's suggestions to the author ('Stripping credentials may violate California SB 942'; fast-tracking into ISO 22144) and a verification note that the standards are real: claims of the standard's status and of a machine's advice, none on what the program governs, certifies or lists (D0025–D0030, O0010)"
+  },
+  {
+   "dep": [
+    98
+   ],
+   "reason": "Distributed Compute: the C2PA match is inside the DECORAIT row ('C2PA + DLT'): a claim about DECORAIT, not C2PA (D0011, O0005)"
+  },
+  {
+   "dep": [
+    880
+   ],
+   "reason": "Compositional Defiguration: 'Provenance Erasure Rate C2PA semantic provenance' is an expected-relation query string: a listing (D0078, O0037)"
+  },
+  {
+   "dep": [
+    1175
+   ],
+   "reason": "the Gravity Well open-protocol and 'like Adobe for C2PA' business analogies (D0085–D0086, and #50's D0005–D0006): analogies of licensing model, no claim on what the program governs; the §15.3 claim is admitted under #50"
+  },
+  {
+   "dep": [
+    127
+   ],
+   "reason": "SPXI-TLP's further C2PA mentions (non-claim 2, the Layer 11 MAY clause, the watermarking list, 'C2PA handles file/metadata'): listings or permissions, not claims on C2PA's reach; two claims admitted (D127-01, D127-02)"
+  },
+  {
+   "dep": [
+    1409
+   ],
+   "reason": "EA-SPXI-ANALOG-01's further C2PA mentions (scaffold inventories, tier lists, triple-redundancy doctrine, AIA-2 checklist, reference lines, 'the same insight arriving as standards'): inventories and reference lines; four claims admitted"
+  },
+  {
+   "dep": [
+    95,
+    1188
+   ],
+   "reason": "the bibliography lines 'Coalition for Content Provenance and Authenticity (C2PA).' and 'C2PA Technical Specification.' and the third-direction sentence restating the starting point (D0008–D0010, D0088–D0090): reference lines and a restatement in D95-01's lineage"
+  },
+  {
+   "dep": [
+    1443
+   ],
+   "reason": "§6.1's member list (D0157), the Do-not-claim list, Q-list enabling condition and source line (D0161–D0163): listings and reference lines; five claims admitted"
+  },
+  {
+   "dep": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    13,
+    15,
+    22,
+    24,
+    29,
+    31,
+    33,
+    37,
+    39,
+    46,
+    48,
+    49,
+    51,
+    52,
+    54,
+    64,
+    72,
+    75,
+    76,
+    89,
+    91,
+    92,
+    100,
+    103,
+    104,
+    105,
+    112,
+    113,
+    115,
+    122,
+    123,
+    124,
+    129,
+    130,
+    133,
+    135,
+    136,
+    140,
+    141,
+    149,
+    151,
+    155,
+    156,
+    160,
+    162,
+    173,
+    176,
+    185,
+    186,
+    198,
+    201,
+    202,
+    203,
+    215,
+    218,
+    229,
+    232,
+    235,
+    250,
+    260,
+    264,
+    266,
+    269,
+    274,
+    297,
+    333,
+    339,
+    345,
+    349,
+    363,
+    400,
+    449,
+    504,
+    514,
+    519,
+    521,
+    522,
+    523,
+    541,
+    548,
+    560,
+    561,
+    564,
+    565,
+    572,
+    573,
+    576,
+    616,
+    628,
+    636,
+    638,
+    666,
+    670,
+    671,
+    673,
+    695,
+    716,
+    726,
+    749,
+    752,
+    753,
+    754,
+    766,
+    768,
+    770,
+    788,
+    792,
+    819,
+    821,
+    823,
+    825,
+    828,
+    830,
+    831,
+    832,
+    834,
+    835,
+    837,
+    838,
+    840,
+    841,
+    845,
+    848,
+    863,
+    869,
+    870,
+    900,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920,
+    921,
+    924,
+    936,
+    937,
+    941,
+    942,
+    943,
+    944,
+    963,
+    964,
+    968,
+    974,
+    993,
+    998,
+    999,
+    1009,
+    1010,
+    1012,
+    1025,
+    1030,
+    1031,
+    1054,
+    1068,
+    1077,
+    1083,
+    1090,
+    1107,
+    1155,
+    1196,
+    1201,
+    1202,
+    1210,
+    1211,
+    1212,
+    1213,
+    1215,
+    1216,
+    1217,
+    1226,
+    1227,
+    1228,
+    1229,
+    1235,
+    1236,
+    1264,
+    1330,
+    1331,
+    1332,
+    1333,
+    1344,
+    1345,
+    1348,
+    1367,
+    1368,
+    1370,
+    1381,
+    1384,
+    1385,
+    1389,
+    1393,
+    1396,
+    1397,
+    1400,
+    1401,
+    1403,
+    1404,
+    1406,
+    1407,
+    1413,
+    1422,
+    1423,
+    1425,
+    1427,
+    1429,
+    1432,
+    1434,
+    1436,
+    1437,
+    1441,
+    1460,
+    1466,
+    1467,
+    1468,
+    1470,
+    1472,
+    1479,
+    1518,
+    1530,
+    1556,
+    1629,
+    1643,
+    1644,
+    1664,
+    1665,
+    1669,
+    1671,
+    1676,
+    1677,
+    1680,
+    1684,
+    1687,
+    1690,
+    1694
+   ],
+   "reason": "hop (forward and reverse) from the admitted deposits: none names the program, its lists, the Explorer, C2PA or Content Credentials; screened by the alias and class patterns and by a term screen (Content Authenticity, artifact provenance or authenticity, tamper-evident, trust list, certificate authority, claim-signing, signed manifest, conformance, conforming product, Adobe), the 31 hits read: 'conformance' in them is the archive's own conformance modules and fixtures (Logotic Programming, deletion-semantics, the measurement stack), unrelated to C2PA; one admitted (#784)"
+  }
+ ],
+ "hop": {
+  "from": [
+   50,
+   95,
+   121,
+   127,
+   204,
+   208,
+   499,
+   615,
+   621,
+   725,
+   729,
+   833,
+   914,
+   1003,
+   1175,
+   1188,
+   1190,
+   1194,
+   1369,
+   1386,
+   1409,
+   1443,
+   1444,
+   1464
+  ],
+  "candidates": 263,
+  "deposits": 246,
+  "admitted": 1
+ },
+ "class_pass": "O-class: the class terms (Content Credentials, sourced from B1, B2, B7, B9; artifact provenance, sourced from B6, B9 and the census record's lineage and provenance_object) matched 12 sentences, all in deposits also returned at D (#725, #729/#1369, #1190, #1386); admitted by reading at #725, #729 and #1386 within their D claims; and, outside the string pass, #784 by the hop",
+ "observations": "No archive text names the C2PA Conformance Program, the Conforming Products List, the Conformance Explorer or the Conformance Task Force; the C2PA Trust List appears only in #1409 (the archive's own artifacts graded by Trust-List signing). The archive's bearing on the entity is through what the program certifies: the artifact dimension of provenance and what a C2PA signature establishes (#725), what it does not constitute (#729, #1444), the trust model the program governs (#1443), and what the artifact layer does not reach (text, synthesis, the composition layer: #615, #127, #621). The records of the entity, the Capture Registry's capture and the provenance census record, are the archive's direct statements on the program itself.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 166,
+   "D_deposits": 27,
+   "R_sentences": 10,
+   "R_deposits": 7,
+   "O_direct": 68,
+   "O_class": 12,
+   "O_deposits": 25,
+   "H_candidates": 263
+  },
+  "deposits_candidate": "27 by the string pass, 246 by the hop",
+  "deposits_admitted": 25,
+  "deposits_admitted_with_claims": 18,
+  "instances_grouped_S4": 7,
+  "hop_candidates": 263,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 10,
+   "census": 22,
+   "deposit": 39
+  }
+ }
+}

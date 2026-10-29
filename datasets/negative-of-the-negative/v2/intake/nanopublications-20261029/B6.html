@@ -1,0 +1,968 @@
+
+		
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+			<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			
+		<meta name="description" content="Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (Kahn and Wilensky 2006). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (Wilkinson et al. 2016), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (FAIR DO group 2020, FAIR Digital Object Forum 2020 , Bonino da Silva Santos (2021)) regarding their potential implementation.Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009). A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014, Lizio et al. 2015). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the object itself (subsequently referred to here as the resource to avoid confusion with other meanings of the term “object”); the metadata describing the resource; and a globally unique and persistent identifier with predictable resolution behaviors. These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.Here, inspired by recent applications of nanopublications in the FIP Wizard tool (Schultes et al. 2020), and their extension to research claims (Kuhn 2022, McNamara 2022) and data using Schultes (2022a), Schultes (2022b), we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem."/>
+	<meta name="keywords" content="FAIR Principles;Nanopublication;Nanopublication Ecosystem;Machine-Actionable Containers;FIP Wizard;FAIR Wizard of Leiden"/>
+	<meta name="author" content="Erik Schultes, Barbara Magagna, Tobias Kuhn, Marek Suchánek, Luiz Bonino da Silva Santos, Barend Mons"/>
+	<meta name="distribution" content="global"/>
+	<meta name="robots" content="index, follow, all"/>
+	<meta property="og:image" content="https://riojournal.com/showimg/d200x_738209.jpg"/>
+	<meta property="og:title" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta property="og:description" content="Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (Kahn and Wilensky 2006). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (Wilkinson et al. 2016), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (FAIR DO group 2020, FAIR Digital Object Forum 2020 , Bonino da Silva Santos (2021)) regarding their potential implementation.Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009). A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014, Lizio et al. 2015). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the object itself (subsequently referred to here as the resource to avoid confusion with other meanings of the term “object”); the metadata describing the resource; and a globally unique and persistent identifier with predictable resolution behaviors. These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.Here, inspired by recent applications of nanopublications in the FIP Wizard tool (Schultes et al. 2020), and their extension to research claims (Kuhn 2022, McNamara 2022) and data using Schultes (2022a), Schultes (2022b), we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem."/>
+	<meta property="fb:app_id" content="1129013080805726"/>
+	<meta property="og:url" content="https://riojournal.com/article/94150/"/>
+	<meta property="og:site_name" content="Research Ideas and Outcomes"/>
+	<meta property="og:type" content="article"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="@RIOJournal"/>
+	<meta name="twitter:title" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="twitter:description" content="Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (Kahn and Wilensky 2006). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (Wilkinson et al. 2016), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (FAIR DO group 2020, FAIR Digital Object Forum 2020 , Bonino da Silva Santos (2021)) regarding their potential implementation.Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009). A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014, Lizio et al. 2015). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the object itself (subsequently referred to here as the resource to avoid confusion with other meanings of the term “object”); the metadata describing the resource; and a globally unique and persistent identifier with predictable resolution behaviors. These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.Here, inspired by recent applications of nanopublications in the FIP Wizard tool (Schultes et al. 2020), and their extension to research claims (Kuhn 2022, McNamara 2022) and data using Schultes (2022a), Schultes (2022b), we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem."/>
+	<meta name="twitter:image" content="https://riojournal.com/showimg/d200x_738209.jpg"/>
+	<meta name="twitter:url" content="https://riojournal.com/article/94150/"/>
+	<meta name="citation_fulltext_world_readable" content=""/>
+	<meta name="citation_access" content="all"/>
+	<meta name="citation_journal_title" content="Research Ideas and Outcomes"/>
+	<meta name="citation_publisher" content="Pensoft Publishers"/>
+	<meta name="citation_title" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="citation_abstract" content="Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (Kahn and Wilensky 2006). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (Wilkinson et al. 2016), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (FAIR DO group 2020, FAIR Digital Object Forum 2020 , Bonino da Silva Santos (2021)) regarding their potential implementation.Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009). A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014, Lizio et al. 2015). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the object itself (subsequently referred to here as the resource to avoid confusion with other meanings of the term “object”); the metadata describing the resource; and a globally unique and persistent identifier with predictable resolution behaviors. These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.Here, inspired by recent applications of nanopublications in the FIP Wizard tool (Schultes et al. 2020), and their extension to research claims (Kuhn 2022, McNamara 2022) and data using Schultes (2022a), Schultes (2022b), we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem."/>
+	<meta name="citation_volume" content="8"/>
+	<meta name="citation_firstpage" content="e94150"/>
+	<meta name="citation_doi" content="10.3897/rio.8.e94150"/>
+	<meta name="citation_id" content="94150"/>
+	<meta name="citation_publication_date" content="2022/10/12"/>
+	<meta name="citation_public_url" content="https://riojournal.com/article/94150/"/>
+	<meta name="citation_abstract_html_url" content="https://riojournal.com/article/94150/"/>
+	<meta name="citation_full_html_url" content="https://riojournal.com/article/94150/"/>
+	<meta name="citation_pdf_url" content="https://riojournal.com/article/94150/download/pdf/"/>
+	<meta name="citation_xml_url" content="https://riojournal.com/article/94150/download/xml/"/>
+	<meta name="citation_article_type" content="abstract"/>
+	<meta name="citation_keywords" content="FAIR Principles;Nanopublication;Nanopublication Ecosystem;Machine-Actionable Containers;FIP Wizard;FAIR Wizard of Leiden"/>
+	<meta name="dc.title" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="dc.type" content="Conference Abstract"/>
+	<meta name="dc.source" content="Research Ideas and Outcomes 8: e94150"/>
+	<meta name="dc.date" content="2022/10/12"/>
+	<meta name="dc.identifier" content="doi:10.3897/rio.8.e94150"/>
+	<meta name="dc.publisher" content="Pensoft Publishers"/>
+	<meta name="dc.rights" content="http://creativecommons.org/licenses/by/4.0/"/>
+	<meta name="dc.format" content="text/html"/>
+	<meta name="dc.language" content="en"/>
+	<meta name="prism.publicationName" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="prism.issn" content="2367-7163"/>
+	<meta name="prism.publicationDate" content="2022/10/12"/>
+	<meta name="prism.volume" content="8"/>
+	<meta name="prism:issueIdentifier " content=""/>
+	<meta name="prism.doi" content="10.3897/rio.8.e94150"/>
+	<meta name="prism.section" content="Conference Abstract"/>
+	<meta name="prism.startingPage" content="e94150"/>
+	<meta name="prism.endingPage" content=""/>
+	<meta name="prism.pageRange" content="e94150"/>
+	<meta name="prism.copyright" content="2022 Erik Schultes, Barbara Magagna, Tobias Kuhn, Marek Suchánek, Luiz Bonino da Silva Santos, Barend Mons"/>
+	<meta name="prism.rightsAgent" content="rio@riojournal.com"/>
+	<meta name="eprints.title" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="eprints.type" content="Conference Abstract"/>
+	<meta name="eprints.datestamp" content="2022/10/12"/>
+	<meta name="eprints.ispublished" content="pub"/>
+	<meta name="eprints.date" content="2022"/>
+	<meta name="eprints.date_type" content="published"/>
+	<meta name="eprints.publication" content="Pensoft Publishers"/>
+	<meta name="eprints.volume" content="8"/>
+	<meta name="eprints.number" content=""/>
+	<meta name="eprints.pagerange" content="e94150"/>
+	<meta itemprop="name" content="The Comparative Anatomy of Nanopublications and FAIR Digital Objects"/>
+	<meta name="dc.creator" content="Erik Schultes"/>
+	<meta name="dc.creator" content="Barbara Magagna"/>
+	<meta name="dc.creator" content="Tobias Kuhn"/>
+	<meta name="dc.creator" content="Marek Suchánek"/>
+	<meta name="dc.creator" content="Luiz Bonino da Silva Santos"/>
+	<meta name="dc.creator" content="Barend Mons"/>
+	<meta name="dc.contributor" content="Erik Schultes"/>
+	<meta name="dc.contributor" content="Barbara Magagna"/>
+	<meta name="dc.contributor" content="Tobias Kuhn"/>
+	<meta name="dc.contributor" content="Marek Suchánek"/>
+	<meta name="dc.contributor" content="Luiz Bonino da Silva Santos"/>
+	<meta name="dc.contributor" content="Barend Mons"/>
+	<meta name="eprints.creators_name" content="Erik Schultes"/>
+	<meta name="eprints.creators_name" content="Barbara Magagna"/>
+	<meta name="eprints.creators_name" content="Tobias Kuhn"/>
+	<meta name="eprints.creators_name" content="Marek Suchánek"/>
+	<meta name="eprints.creators_name" content="Luiz Bonino da Silva Santos"/>
+	<meta name="eprints.creators_name" content="Barend Mons"/>
+	<meta name="citation_author" content="Erik Anthony Schultes"/>
+	<meta name="citation_author_institution" content="Leiden University, Leiden, Netherlands"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0000-0001-8888-635X"/>
+	<meta name="citation_author" content="Barbara Magagna"/>
+	<meta name="citation_author_institution" content="GO FAIR Foundation, Leiden, Netherlands"/>
+	<meta name="citation_author_email" content="barbara@gofair.foundation"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0000-0003-2195-3997"/>
+	<meta name="citation_author" content="Tobias Kuhn"/>
+	<meta name="citation_author_institution" content="Vrije Universiteit Amsterdam, Department of Computer Science, Amsterdam, Netherlands"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0000-0002-1267-0234"/>
+	<meta name="citation_author" content="Marek Suchánek"/>
+	<meta name="citation_author_institution" content="Czech Technical University in Prague, Faculty of Information Technology, Prague, Czech Republic"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0000-0001-7525-9218"/>
+	<meta name="citation_author" content="Luiz Olavo Bonino da Silva Santos"/>
+	<meta name="citation_author_institution" content="University of Twente, Enschede, Netherlands"/>
+	<meta name="citation_author" content="Barend Mons"/>
+	<meta name="citation_author_institution" content="Leiden University Medical Center, Leiden, Netherlands"/>
+	<meta name="citation_issn" content="2367-7163"/>
+	
+	
+			<title>The Comparative Anatomy of Nanopublications and FAIR Digital Objects</title>
+			<base href="https://riojournal.com/" />
+			<link rel="SHORTCUT ICON" href="/i/ico/rio.ico" />
+			<link type="text/css" rel="stylesheet" href="/lib/css/langs/en.css?v=1723472591" media="all" title="default" />
+	
+			<script type="text/javascript" src="/lib/js/build/output/article_en.bundle.js?v=1793272061"></script>
+	
+			<link type="text/css" rel="stylesheet" href="/lib/css/journals/journal_17.css?v=1792046541" media="all" title="default" />
+	
+			
+			<!-- CKEditor BEGIN -->
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/plugins/lite/lite-interface.js?v=1723472590"></script>
+	
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/ckeditor.js?v=1723472590"></script>
+	
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/adapters/jquery.js?v=1723472590"></script>
+	
+	
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=[REDACTED-ACCESS-KEY]&callback=Function.prototype"></script>
+			
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&noContrib"></script>
+			<script type="text/javascript">
+				MathJax.Hub.Config({
+					config: ["MMLorHTML.js"],
+					jax: ["input/TeX","input/MathML","input/AsciiMath","output/SVG", "output/PreviewHTML"],
+					extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "[a11y]/accessibility-menu.js"],
+					TeX: {
+						extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+					}
+				});
+		</script>
+	
+			
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,300,300italic,600italic,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet" >
+	
+
+			<script type="text/javascript">
+				$(window).on("load", function(){
+					init_lang_switcher()
+					
+					gWindowIsLoaded = true;
+				});
+			</script>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			
+		<script type="text/javascript">
+			google.charts.load('current',
+			{
+				packages: ['corechart', 'bar']
+			});
+		</script>
+	
+			<!-- Start of CREDIT Script -->
+				<!-- script src="https://api.profeza.com/alpha/js/credit.js"></script -->
+			<!-- End of Script -->
+		</head>
+		<body class="journal_17 pensoft lang_en">
+		
+	
+			<div id="container" class="AOF">
+				<div id="header" class="no-annotations">
+					
+		 <div id="nav" class="P-Nav-Article">
+			<div class="constrained">
+				
+		<a target="_blank" href="/"><img src="/i/aof_journal_logos/AOF_RIOlogo.svg" alt="logo" class="logo" /></a>
+	
+				
+			<div id="menu" class="journal">
+	<a class="menu_btn" target="_blank" href="">Home</a><a class="menu_btn" target="_blank" href="articles">Articles</a><a class="menu_btn" target="_blank" href="about">About</a>
+			</div>
+	
+				
+			<div id="menu" class="pensoft">
+	<a class="menu_btn" target="_blank" href="https://pensoft.net/about">About Pensoft</a><a class="menu_btn" target="_blank" href="https://pensoft.net/books">Books</a><a class="menu_btn" target="_blank" href="https://pensoft.net/journals">Journals</a><a class="menu_btn" target="_blank" href="https://blog.pensoft.net/">Blog</a>
+			</div>
+	
+				
+				<div class="login_wrapper">
+					
+					
+					<div class="combine_cart_profile">
+						
+						
+						<div class="loginOrRegister">
+							<a href="https://pensoft.net/register.php?register=1&amp;gotourl=riojournal.com%2Farticle%2F94150%2F">Register</a> |
+							<a href="/login.php?redirurl=%2Farticle%2F94150%2F">Login</a>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="P-Clear"></div>
+	
+				</div><!-- END header -->
+				
+			
+			<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@id": "https://riojournal.com/article/94150",
+    "@type": "ScholarlyArticle",
+    "url": "https://riojournal.com/article/94150",
+    "headline": "The Comparative Anatomy of Nanopublications and FAIR Digital Objects",
+    "name": "The Comparative Anatomy of Nanopublications and FAIR Digital Objects",
+    "datePublished": "2022-10-12",
+    "dateCreated": "2022-08-27",
+    "dateModified": "2026-10-29",
+    "genre": "Conference Abstract",
+    "keywords": [
+        "FAIR Principles",
+        "Nanopublication",
+        "Nanopublication Ecosystem",
+        "Machine-Actionable Containers",
+        "FIP Wizard",
+        "FAIR Wizard of Leiden"
+    ],
+    "abstract": "Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (Kahn and Wilensky 2006). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (Wilkinson et al. 2016), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (FAIR DO group 2020, FAIR Digital Object Forum 2020 , Bonino da Silva Santos (2021)) regarding their potential implementation.Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009). A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014, Lizio et al. 2015). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the object itself (subsequently referred to here as the resource to avoid confusion with other meanings of the term \u201cobject\u201d); the metadata describing the resource; and a globally unique and persistent identifier with predictable resolution behaviors. These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.Here, inspired by recent applications of nanopublications in the FIP Wizard tool (Schultes et al. 2020), and their extension to research claims (Kuhn 2022, McNamara 2022) and data using Schultes (2022a), Schultes (2022b), we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem.",
+    "image": "https://riojournal.com//img/sWkUBZo+d9Fftdxjomqmba/FGpest+G96IPgueP1pixmhMMyc/khThDLAuO0ZgONoR4rRJqAuN0fbI89IEQ=.jpg",
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "url": "https://doi.org/10.3897/rio.8.e94150",
+        "value": "10.3897/rio.8.e94150"
+    },
+    "sameAs": "https://doi.org/10.3897/rio.8.e94150",
+    "offers": {
+        "@type": "Offer",
+        "price": "3.90",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Order Printed version"
+    },
+    "associatedMedia": [
+        {
+            "@type": "DataDownload",
+            "contentUrl": "https://riojournal.com/article/94150/download/pdf",
+            "description": "The Comparative Anatomy of Nanopublications and FAIR Digital Objects PDF download"
+        }
+    ],
+    "publisher": {
+        "@identifier": "https://oceanexpert.org/institution/24685",
+        "@type": "Organization",
+        "name": "Pensoft Publishers",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pensoft.net/new_images/pensoft_logo.svg"
+        }
+    },
+    "citation": [
+        {
+            "@type": "CreativeWork",
+            "citation": "Lizio M, , Harshbarger J, Shimoji H, Severin J, Kasukawa T, Sahin S, Abugessaisa I, Fukuda S, Hori F, Ishikawa-Kato S, Mungall CJ, Arner E, Baillie JK, Bertin N, Bono H, de Hoon M, Diehl AD, Dimont E, Freeman TC, Fujieda K, Hide W, Kaliyaperumal R, Katayama T, Lassmann T, Meehan TF, Nishikata K, Ono H, Rehli M, Sandelin A, Schultes EA, &lsquo;t Hoen PA, Tatum Z, Thompson M, Toyoda T, Wright DW, Daub CO, Itoh M, Carninci P, Hayashizaki Y, Forrest AR, Kawaji H (2015) Gateways to the FANTOM5 promoter level mammalian expression atlas. Genome Biology 16 (1).  https://doi.org/10.1186/s13059-014-0560-6",
+            "@id": "https://doi.org/10.1186/s13059-014-0560-6"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Wilkinson M, Dumontier M, Aalbersberg IJ, Appleton G, Axton M, Baak A, Blomberg N, Boiten J, da Silva Santos LB, Bourne P, Bouwman J, Brookes A, Clark T, Crosas M, Dillo I, Dumon O, Edmunds S, Evelo C, Finkers R, Gonzalez-Beltran A, Gray AG, Groth P, Goble C, Grethe J, Heringa J, &rsquo;t Hoen PC, Hooft R, Kuhn T, Kok R, Kok J, Lusher S, Martone M, Mons A, Packer A, Persson B, Rocca-Serra P, Roos M, van Schaik R, Sansone S, Schultes E, Sengstag T, Slater T, Strawn G, Swertz M, Thompson M, van der Lei J, van Mulligen E, Velterop J, Waagmeester A, Wittenburg P, Wolstencroft K, Zhao J, Mons B (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3 (1).  https://doi.org/10.1038/sdata.2016.18",
+            "@id": "https://doi.org/10.1038/sdata.2016.18"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "The FANTOM Consortium and the RIKEN PMI and CLST (DGT) (2014) A promoter-level mammalian expression atlas. Nature 507 (7493): 462&#8209;470.  https://doi.org/10.1038/nature13182",
+            "@id": "https://doi.org/10.1038/nature13182"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Bonino da Silva Santos LO (2021) FAIR Digital Object Framework Documentation.  https://fairdigitalobjectframework.org/. Accessed on: 2022-7-10."
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "FAIR Digital Object Forum (Ed.) (2020) FAIR Digital Objects Forum .  https://fairdo.org. Accessed on: 2022-8-27."
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "FAIR DO group (2020) Joint Statement on FAIR Digital Object Framework.  https://docs.google.com/document/d/11FmDxgncy-LynQqTlvxFProW-i5Il7JBFtp7ELyztlg/edit. Accessed on: 2022-7-10."
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Groth P, Gibson A, Velterop J (2010) The anatomy of a nanopublication. Information Services &amp; Use 30: 51&#8209;56.  https://doi.org/10.3233/isu-2010-0613",
+            "@id": "https://doi.org/10.3233/isu-2010-0613"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Groth P, Schultes E, Thompson M, Tatum Z, Dumontier M, Kuhn T, Chichester C (2021) Nanopublication Guidelines. URL: https://nanopub.org/guidelines/working_draft/"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Kahn R, Wilensky R (2006) A framework for distributed digital object services. International Journal on Digital Libraries 6 (2): 115&#8209;123.  https://doi.org/10.1007/s00799-005-0128-x",
+            "@id": "https://doi.org/10.1007/s00799-005-0128-x"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Kuhn T, Taelman R, Emonet V, Antonatos H, Soiland-Reyes S, Dumontier M (2021) Semantic micro-contributions with decentralized nanopublication services. PeerJ Computer Science 7 https://doi.org/10.7717/peerj-cs.387",
+            "@id": "https://doi.org/10.7717/peerj-cs.387"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Kuhn T (2022) The Future of Science Publishing - Personal Views. IOS Press. IOS Press 35 Anniversary meeting. URL: https://www.iospress.com/ios-press-35"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "McNamara C (2022) The Future of Science Publishing &ndash; Focus on Nanopublications and Formalization Papers. IOS Press. URL: https://labs.iospress.com/news-blog/future-science-publishing-focus-on-nanopublications"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Mons B, Velterop J (2009) Nano-publication in the e-science era. Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009), Washington, DC."
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Schultes E, Magagna B, Hettne KM, Pergl R, Such&aacute;nek M, Kuhn T (2020) Reusable FAIR Implementation Profiles as Accelerators of FAIR Convergence. Lecture Notes in Computer Science138&#8209;147.  https://doi.org/10.1007/978-3-030-65847-2_13",
+            "@id": "https://doi.org/10.1007/978-3-030-65847-2_13"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Schultes E, et al. (2022a) FAIR Wizard of Leiden.  https://bit.ly/FWLnano. Accessed on: 2022-7-10."
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "Schultes E (2022b) The FAIR Wizard of Leiden. IOS Press. IOS Press 35 Anniversary meeting. URL: https://www.youtube.com/watch?v=y79t6f3i4Ow"
+        },
+        {
+            "@type": "CreativeWork",
+            "citation": "World Wide Web Consortium (W3C) (2015) Semantic Web .  https://www.w3.org/standards/semanticweb/. Accessed on: 2022-8-27."
+        }
+    ],
+    "creditText": [
+        "Schultes EA, Magagna B, Kuhn T, Such\u00e1nek M, Bonino da Silva Santos LO, Mons B (2022) The Comparative Anatomy of Nanopublications and FAIR Digital Objects. Research Ideas and Outcomes 8: e94150. https://doi.org/10.3897/rio.8.e94150"
+    ],
+    "articleSection": [],
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Erik Schultes",
+            "@id": "https://orcid.org/0000-0001-8888-635X",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Leiden University, Leiden, Netherlands"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Leiden Center for Data Science, Leiden, Netherlands"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Barbara Magagna",
+            "@id": "https://orcid.org/0000-0003-2195-3997",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "GO FAIR Foundation, Leiden, Netherlands"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Tobias Kuhn",
+            "@id": "https://orcid.org/0000-0002-1267-0234",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Vrije Universiteit Amsterdam, Department of Computer Science, Amsterdam, Netherlands"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Marek Such\u00e1nek",
+            "@id": "https://orcid.org/0000-0001-7525-9218",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Czech Technical University in Prague, Faculty of Information Technology, Prague, Czech Republic"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Luiz Bonino da Silva Santos",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "University of Twente, Enschede, Netherlands"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Barend Mons",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Leiden University Medical Center, Leiden, Netherlands"
+                }
+            ]
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://riojournal.com/article/94150"
+    }
+}</script>
+			<script type="text/javascript">SetArticleId(94150);</script>
+			<script type="text/javascript">SetArticlePreviewLang('en', 'en');</script>
+			<!-- div class="articlePath">
+				<div class="articlePath-links"><a href="">Journal home</a> <a href="about">About</a> <a href="articles">Browse articles</a></div>
+			</div -->
+			
+		<div id="trendmd-suggestions" style="display: none;"></div>
+		<!-- trendMD -->
+		<script type="text/javascript">
+			$.getScript("//trendmd.s3.amazonaws.com/trendmd.min.js", function(data, textStatus, jqxhr) {
+				 TrendMD.register({
+					'journal_id': '57384', 'element': '#trendmd-suggestions', 'track_id': 'null'
+				});
+			});
+		</script>
+		<!-- trendMD end-->
+	
+			<div class="Main-Content">
+				<div class="P-Article-Content-Wrapper">
+					<div style="width: 190px; transform: rotate(-90deg); top: 150px; position: relative; height: 0px; left: -110px;cursor:pointer; align-items: center; display: flex;" onclick="$('#trendmd-suggestions').toggle()">
+		Related articles by &nbsp;
+			<svg viewBox="0 0 234 57" width="70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="logo">
+					<path d="M227.7,56.9 L149.7,56.9 C146.7,56.9 143.7,53.8 143.7,50.9 L143.7,6.9 C143.7,4 146.7,0.9 149.7,0.9 L227.7,0.9 C230.7,0.9 233.7,4 233.7,6.9 L233.7,50.9 C233.7,53.9 230.6,56.9 227.7,56.9 L227.7,56.9 Z" id="shape0" fill="#CA2127"></path>
+					<g id="group1" transform="translate(0.000000, 14.000000)" fill="#16325c">
+						<path d="M15.8,5.9 L15.8,29.6 L9.2,29.6 L9.2,5.9 L0.9,5.9 L0.9,0.2 L24.1,0.2 L24.1,5.9 L15.8,5.9 L15.8,5.9 Z" id="shape1"></path>
+						<path d="M50.2,10 C50.2,14.7 48.3,17.7 44.6,19.1 L52,29.6 L44,29.6 L37.5,20.2 L33,20.2 L33,29.6 L26.4,29.6 L26.4,0.2 L37.5,0.2 C42.1,0.2 45.3,1 47.3,2.5 C49.2,4.1 50.2,6.6 50.2,10 L50.2,10 Z M42.3,13.5 C43.1,12.8 43.5,11.6 43.5,10 C43.5,8.4 43.1,7.3 42.2,6.7 C41.4,6.1 39.9,5.8 37.8,5.8 L32.9,5.8 L32.9,14.5 L37.7,14.5 C40,14.6 41.5,14.2 42.3,13.5 L42.3,13.5 Z" id="shape2"></path>
+						<path d="M75.6,0.3 L75.6,6.1 L61,6.1 L61,12.1 L74.1,12.1 L74.1,17.7 L61,17.7 L61,23.8 L76,23.8 L76,29.6 L54.4,29.6 L54.4,0.2 L75.6,0.2 L75.6,0.3 Z" id="shape3"></path>
+						<path d="M99.9,0.3 L106.5,0.3 L106.5,29.7 L99.9,29.7 L85.9,11.3 L85.9,29.7 L79.3,29.7 L79.3,0.3 L85.4,0.3 L99.8,19.2 L99.8,0.3 L99.9,0.3 Z" id="shape4"></path>
+						<path d="M133.6,4.1 C136.4,6.7 137.8,10.2 137.8,14.8 C137.8,19.4 136.4,23 133.7,25.6 C131,28.3 126.8,29.6 121.2,29.6 L111.2,29.6 L111.2,0.2 L121.6,0.2 C126.7,0.3 130.8,1.5 133.6,4.1 L133.6,4.1 Z M128.8,21.6 C130.4,20.1 131.2,17.9 131.2,15 C131.2,12.1 130.4,9.9 128.8,8.3 C127.2,6.7 124.7,6 121.4,6 L117.7,6 L117.7,23.9 L121.9,23.9 C124.8,23.8 127.1,23.1 128.8,21.6 L128.8,21.6 Z" id="shape5"></path>
+					</g>
+					<g id="group2" transform="translate(156.000000, 14.000000)" fill="#FFFFFF">
+						<path d="M26.9,11.1 L19,27.1 L15,27.1 L7.1,11.1 L7.1,29.6 L0.5,29.6 L0.5,0.2 L9.4,0.2 L17,16.3 L24.6,0.2 L33.4,0.2 L33.4,29.6 L26.8,29.6 L26.8,11.1 L26.9,11.1 Z" id="shape6"></path>
+						<path d="M60.6,4.1 C63.4,6.7 64.8,10.2 64.8,14.8 C64.8,19.4 63.4,23 60.7,25.6 C58,28.3 53.8,29.6 48.2,29.6 L38.2,29.6 L38.2,0.2 L48.6,0.2 C53.7,0.3 57.8,1.5 60.6,4.1 L60.6,4.1 Z M55.8,21.6 C57.4,20.1 58.2,17.9 58.2,15 C58.2,12.1 57.4,9.9 55.8,8.3 C54.2,6.7 51.7,6 48.4,6 L44.7,6 L44.7,23.9 L48.9,23.9 C51.8,23.8 54.1,23.1 55.8,21.6 L55.8,21.6 Z" id="shape7"></path>
+					</g>
+				</g>
+			</svg>
+		</div>
+					<div id="article-head" class="no-annotations">
+						<div class="row middle-xs between-xs m0">
+							<div>
+								<div class="PaperType bra">Conference Abstract</div>
+								<div id="article-id">
+									Research Ideas and Outcomes 8: e94150
+									<br/>
+									<a class="article-id-doi" href="https://doi.org/10.3897/rio.8.e94150">https://doi.org/10.3897/rio.8.e94150</a> (12 Oct 2022)
+								</div>
+							</div>
+							<div class="col-lg-4 col-md end-xs" style="padding: 0px; display: flex;">
+								
+								
+								
+								<div class="P-Article-Type-Holder">
+									<div class="P-Article-Type"><a href="articles.php?id=94150&display_type=list&element_type=17">Reviewable</a></div>
+									<div class="P-Article-Version" title="">v1</div>
+									<div class="P-Article-Previous-Versions">
+										<div class="P-Article-Versions-Title">Other versions:</div>
+										
+									</div>
+								</div>
+								
+			<div class="crossmark_holder">
+				<!-- Start CrossMark Snippet v1.5 -->
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+				<script type="text/javascript" src="https://crossmark.crossref.org/javascripts/v1.5/crossmark.min.js"></script>
+				<a id="open-crossmark" href="#" style="padding: 0px; margin: 0px 0px 0px 6px;">
+					<img style="border: 0; display: none; max-height:32px;" id="crossmark-icon" src="/i/CrossMark_logo.svg" />
+				</a>
+				<div id="crossmark-dialog" style="display: none;" title="">
+				<!-- the external CrossMark data is loaded inside this iframe -->
+				<iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+				</div>
+				<!-- End CrossMark Snippet -->
+			</div>
+		
+								
+							</div>
+							<div style="float:right" id="info_menu-id" onClick="showInfoBar();" class="icon-mobile-menu"></div>
+						</div>
+					</div>
+					<div id="article-preview">
+						<iframe onload="onIframeLoadHandler();" data-showpdf="" src="article_preview.php?id=94150" enable-annotation="" id="articleIframe" name="articleIframe" style="height: 1px;"></iframe>
+						
+						
+		
+			
+			<footer class="footer">
+			<div class="">
+				<div class="row top-xs between-xs f_content" id="footer-accordion">
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="about_foot footer-accordion-toggle">ABOUT PENSOFT</div>
+							<ul>
+								<li><a href="https://pensoft.net/about#Company-profile">Company Profile</a></li>
+								<li><a href="https://pensoft.net/about#Innovations-tools">Innovations &amp; Tools</a></li>
+								<li><a href="https://pensoft.net/about#Open-access-policy">Open Access &amp; APC Policies</a></li>
+								<li><a href="https://pensoft.net/terms">Terms of Use</a></li>
+								<li><a href="https://pensoft.net/editorial-policies">Editorial Policies</a></li>
+								<li><a href="https://pensoft.net/general-policies">General Policies</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder padding_right">
+							<div class="products_foot footer-accordion-toggle">PRODUCTS</a></div>
+							<ul>
+								<li><a href="https://pensoft.net/browse-journals">Journals</a></li>
+								<li><a href="https://ab.pensoft.net/">Advanced Books</a></li>
+								<li><a href="https://books.pensoft.net/">Conventional Books</a></li>
+								<li><a href="https://aca.pensoft.net/">Conference Abstracts</a></li>
+								<li><a href="https://ap.pensoft.net/">Conference Proceedings</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder padding_right">
+							<div class="products_foot footer-accordion-toggle">SERVICES</a></div>
+							<ul>
+								<li><a href="https://pensoft.net/services-authors">For Authors</a></li>
+								<li><a href="https://pensoft.net/services-journals">For Journals</a></li>
+								<li><a href="https://pensoft.net/services-books">For Books</a></li>
+								<li><a href="https://pensoft.net/services-conferences">For Conferences</a></li>
+								<li><a href="https://pensoft.net/for-organisations">For Organisations</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6 footer_menu_projects">
+						<div class="footer_menuholder">
+							<div class="other_foot footer-accordion-toggle">PROJECTS</div>
+							<ul>
+								<li><a href="https://pensoft.net/projects">Research Projects</a></li>
+								<li><a href="https://pensoft.net/services-projects">Services</a></li>
+								<li><a href="https://pensoft.net/partners">Partners</a></li>
+								<li class="hide"><a href="https://pensoft.net/media">Brochure</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="other_foot footer-accordion-toggle">ARPHA</div>
+							<ul>
+								<li><a href="https://arphahub.com/about/platform">ARPHA Publishing Platform</a></li>
+								<li><a href="https://arphahub.com/manual">ARPHA Manual</a></li>
+								<li><a href="https://arphahub.com/about/pricing_plans">ARPHA Pricing</a></li>
+								<li><a href="https://pensoft.net/web-services">Web Services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="contact_foot footer-accordion-toggle">GET IN TOUCH</div>
+							<ul>
+								<li><a href="https://pensoft.net/contacts">Contacts</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('publish', 'https://pensoft.net/'); return false;">Publishing Inquiry</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('migrate', 'https://pensoft.net/'); return false;">Migrate Your Journal</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('new', 'https://pensoft.net/'); return false;">Open a New Journal</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="">
+					<ul class="row foot_content">
+						<li class="col-md first-md col-sm-4 col-xs-12">
+							<div class="row middle-xs-xs nowrap" style="align-items: center">
+								Follow PENSOFT
+								<a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/Pensoft/"></a>
+								<a class="twitter" title="Twitter" target="_blank" href="https://twitter.com/Pensoft"></a>
+								<a class="linkedin" title="LinkedIn" target="_blank" href="https://www.linkedin.com/company/pensoft-publishers/"></a>
+								<a class="youtube" title="Youtube" target="_blank" href="https://www.youtube.com/user/PensoftPublishers/videos"></a>
+								<a class="instagram" title="Instagram" target="_blank" href="https://www.instagram.com/pensoft/"></a>
+								<a class="weibo" title="Weibo" target="_blank" href="https://weibo.com/u/7921316800"></a>
+							</div>
+						</li>
+						<li class="col-md-3 first-md col-sm col-xs-12">
+							<a href="https://blog.pensoft.net/">Blog & News</a>
+							<a href="https://blog.pensoft.net/#email-subscribers-form-2" class="textbox_button">Subscribe</a>
+						</li>
+						<li class="col-md-2 first-md col-sm-2 col-xs-6 center-md start-xs first-xs media_center"><a href="https://pensoft.net/media">Media Center</a></li>
+						<li class="col-md-3 col-sm col-xs-12 end-md center-xs">&copy; Pensoft Publishers 2026</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	
+	
+	
+						<script type="text/javascript">
+							function onIframeLoadHandler() {
+                            	
+							}
+							$(document).ready(function(){
+								showInfoBar(2);
+							});
+							clickOutSideOfInfoBar();
+							SetArticleOnLoadEvents(0);
+						</script>
+						<div class="P-Baloon" id="ArticleBaloon"></div>
+						
+		<!-- Tooltip Component -->
+		<div id="disscoTooltip" class="tooltipDOI">
+			<!-- Digital Extended Specimen -->
+			<div class="tooltipRow grow">
+				<div class="widthLeft">
+					<img src="/i/tagLogo.png" alt="Tag Logo" class="tagLogo" />
+				</div>
+				<div class="widthRight">
+					<div>
+						<p id="tooltipScientificName"> </p>
+	
+						<p class="verbatimName">(Verbatim name)</p>
+					</div>
+					<div class="preservedStatusDiv grow">
+						<p id="tooltipStatus" class="preservedStatus textOverflow"> </p>
+					</div>
+				</div>
+			</div>
+	
+			<!-- ID -->
+			<div class="tooltipRow">
+				<span class="widthLeft">
+					<p class="IDTitle"> ID </p>
+				</span>
+				<span class="widthRight">
+					<p id="tooltipID" class="IDField"> </p>
+					<p id="tooltipGUID" class="catalogNumber"> (Catalog Number) </p>
+				</span>
+			</div>
+	
+			<!-- Organisation-->
+			<div class="tooltipRow">
+				<span class="widthLeft">
+					<img src="/i/building-columns-solid.svg" class="organisationIcon" alt="ORG" />
+				</span>
+				<span class="widthRight">
+					<p id="tooltipOrganisation" class="organisationTitle"> </p>
+				</span>
+			</div>
+	
+			<!-- DOI Logo -->
+			<div class="tooltipRow DOIRow">
+				<a href="https://doi.org/10.1093/biosci/biac060" rel="noreferer" target="_blank">
+                    <span class="digitalExtendedSpecienNote">DES</span>
+                </a>
+    
+                <a href="https://www.doi.org/the-identifier/what-is-a-doi/" rel="noreferer" target="_blank">
+                    <img src="/i/DOI_logo.png" alt="DOI Logo" class="DOILogo" />
+                </a>
+			</div>
+	
+			<!-- Error Message -->
+			<div id="errorMessage" class="warningMessage">
+				<p>Invalid DOI was provided, please try again</p>
+			</div>
+		</div>
+	
+					</div>
+				</div>
+				<div class="P-Article-Info-Bar" id="P-Article-Info-Bar">
+					<div class="P-Article-Info-header">
+						<!-- ul class="PostPubRevButton">
+						</ul -->
+						
+			<div class="P-Article-Share row middle-xs">
+				<div class="P-Article-Downloads-Holder col_no_padding col-xs-5 start-xs zindex1000">
+					
+			<div class="row middle-xs">
+				<div class="col-xs browse_button"><a target="_blank" title="XML" href="/article/94150/download/xml/">XML</a></div>
+				<div class="col-xs browse_button"><a href="/article/94150/download/pdf/" title="PDF">PDF</a></div>
+				<a class="cart col-xs" title="Order reprints: &euro; 3,00" onclick="javascript:addToCart(94150, 3, 1)">
+				<i style="font-size: 1.9em;color: #191931;" class="fa fa-cart-plus" aria-hidden="true"></i>
+			</a>
+			<div id="basket_popup_94150" style="display: none; margin-top: -20px;"></div>
+			<div class="basket_loading_popup" id="basket_loading_popup_94150" style="display: none; margin-top: 0px; margin-left: 130px;"><img src="./i/simple_loading.gif" width="45" /></div>
+			</div>
+	
+				</div>
+				<div class="P-Article-Share-Holder col_no_padding col-xs-7 end-xs">
+					<div class="P-Article-Hypothesis-Annotations">
+						<div title="Annotations" class="hypothesis-opener speech-bubble" data-behaviour="SpeechBubble HypothesisOpener" data-hypothesis-trigger="" data-behaviour-initialised="true"><span data-hypothesis-annotation-count="0">&nbsp;</span></div>&nbsp;
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Bluesky" href="https://bsky.app/intent/compose?text=The+Comparative+Anatomy+of+Nanopublications+and+FAIR+Digital+Objects++https%3A%2F%2Friojournal.com%2Farticles.php%3Fid%3D94150">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-B"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Bluesky
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Twitter" href="https://twitter.com/intent/tweet?text=The+Comparative+Anatomy+of+Nanopublications+and+FAIR+Digital+Objects+https%3A%2F%2Fdoi.org%2F10.3897%2Frio.8.e94150+via+%40RIOJournal">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-T"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Twitter
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://riojournal.com/articles.php?id=94150','facebook-share-dialog', 'width=550,height=450'); return false;">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-F"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Facebook
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Telegram" href="https://t.me/share/url?url=https://riojournal.com/articles.php?id=94150&text=The+Comparative+Anatomy+of+Nanopublications+and+FAIR+Digital+Objects">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-TL"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Telegram
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a target="_blank" title="Share this article on Mendeley" href="#" onclick="javascript:window.open('https://www.mendeley.com/import/?url=https://riojournal.com/articles.php?id=94150', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=450');return false;">
+								<span class="P-Article-Share-Row-Icon-M"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Mendeley
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a title="Share this article on Reddit" href="https://www.reddit.com/submit?url=https://riojournal.com/articles.php?id=94150&title=The Comparative Anatomy of Nanopublications and FAIR Digital Objects&sr=article" target="_blank" >
+								<span class="P-Article-Share-Row-Icon-R"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Reddit
+								</span>
+							</a>
+						</div>
+					</div>
+					<!-- div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a title="Share this article on Cite-U-Like" href="https://www.citeulike.org/posturl?bml=popup&url=doi:10.3897/rio.8.e94150" target="_blank" >
+								<span class="P-Article-Share-Row-Icon-C"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Cite-U-Like
+								</span>
+							</a>
+						</div>
+					</div -->
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a href="/cdn-cgi/l/email-protection#744b2701161e11170049241504110654040116181d071c1110541d1a54001c1154261107111506171c543d1011150754151a10543b0100171b191107521519044f161b100d493c1d5146375144355144353c1106115146441d07514644151a5146441d1a0011061107001d1a135146440415041106514644040116181d071c11105146441d1a514644261107111506171c5146443d10111507514644151a105146443b0100171b19110751473551443551443527171c0118001107514644313551463751464439151315131a15514644365146375146443f011c1a514644205146375146442701171c5137475135451a111f51464439514637514644361b1a1d1a1b5146441015514644271d18021551464427151a001b07514644383b514637514644391b1a075146443651464451464c4644464651464d514644201c11514644371b1904150615001d0211514644351a15001b190d5146441b125146443a151a1b040116181d1715001d1b1a07514644151a1051464432353d26514644301d131d0015185146443b161e111700075a514644261107111506171c5146443d10111507514644151a105146443b0100171b1911075146444c514735514644114d404541445a5146441c00000407514735514632514632101b1d5a1b061351463245445a474c4d43514632061d1b5a4c5a114d40454144">
+								<span class="P-Article-Share-Row-Icon-E"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Notify a colleague
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+						<ul class="P-Info-Menu leftBar">
+							<li data-info-type="1"><span class="hyper unselectable">Contents</span><span class="hidden-bold unselectable">Contents</span></li><li data-info-type="8"><span class="hyper unselectable">Article&nbsp;Info</span><span class="hidden-bold unselectable">Article&nbsp;Info</span></li><li data-info-type="9"><span class="hyper unselectable">Cite</span><span class="hidden-bold unselectable">Cite</span></li><li data-info-type="11"><span class="hyper unselectable">Metrics</span><span class="hidden-bold unselectable">Metrics</span></li><li data-info-type="13"><span class="hyper unselectable">Comment</span><span class="hidden-bold unselectable">Comment</span></li><li data-info-type="10"><span class="hyper unselectable">Related</span><span class="hidden-bold unselectable">Related</span></li>
+						</ul>
+						<ul class="P-Info-Menu bottomBar"><li data-info-type="4"><span class="hyper unselectable">Refs</span><span class="hidden-bold unselectable">Refs</span></li><li data-info-type="18"><span class="hyper unselectable">Cited</span><span class="hidden-bold unselectable">Cited</span></li><li data-info-type="22"><span class="hyper unselectable">Nanopubs</span><span class="hidden-bold unselectable">Nanopubs</span></li><li data-info-type="17"><span class="hyper unselectable">Reviews</span><span class="hidden-bold unselectable">Reviews</span></li>
+			</ul>
+					</div>
+					<div class="P-Info-Content">
+						
+		<div class="AOF-Content-holder">
+			<ul id="AOF-articleMenu">
+	
+
+	
+			<li id="i8025677" >
+				<div class="3" onclick="LoadArticleContentsSection('/article/94150/instance/8025677/', 8025677);return false;">Article metadata</div>
+				<ul class="">
+					
+				</ul>
+			</li>
+	
+			<li id="i8025691" >
+				<div class="2" onclick="LoadArticleContentsSection('/article/94150/instance/8025691/', 8025691);return false;">References</div>
+			</li>
+	
+
+	
+			</ul>
+		</div>
+	
+						<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+							gMenuActiveElementType = 1;
+							MarkActiveMenuElement();
+							RegisterInitialState("\n\t\t<div class=\"AOF-Content-holder\">\n\t\t\t<ul id=\"AOF-articleMenu\">\n\t\n\n\t\n\t\t\t<li id=\"i8025677\" >\n\t\t\t\t<div class=\"3\" onclick=\"LoadArticleContentsSection('\/article\/94150\/instance\/8025677\/', 8025677);return false;\">Article metadata<\/div>\n\t\t\t\t<ul class=\"\">\n\t\t\t\t\t\n\t\t\t\t<\/ul>\n\t\t\t<\/li>\n\t\n\t\t\t<li id=\"i8025691\" >\n\t\t\t\t<div class=\"2\" onclick=\"LoadArticleContentsSection('\/article\/94150\/instance\/8025691\/', 8025691);return false;\">References<\/div>\n\t\t\t<\/li>\n\t\n\n\t\n\t\t\t<\/ul>\n\t\t<\/div>\n\t", 1);
+						</script>
+					</div>
+					<div class="previewPageSubscribe">
+						<div class="subscribeForEmail">
+						<div class="title">Subscribe to email alerts for current Article's categories</div>
+							
+		<div class="formWrapper">
+		<form enctype="multipart/form-data" action="" method="post" name="subscribe_for_email" id="subscribe_for_email">
+			
+			<input type="hidden" name="form_name" value="subscribe_for_email"  />
+	
+			<input type="hidden" name="selfurl" value="subscribe_for_email"  />
+	
+			<input type="hidden" name="backurl" value="subscribe_for_email"  />
+	
+	
+		<div class="loginFormRegErrHolder"><b>
+			<span id="ajax_field_error_holder_email" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_journal_id" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_g-recaptcha-response" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_subscribe" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_form_name" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_backurl" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_selfurl" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_new" style="display:none" class="errstr">
+	
+			</span>
+	</b></div>
+		
+			<input type="hidden" name="journal_id" value="17"  />
+	 
+			<input type="hidden" name="g-recaptcha-response" value=""  id="g-recaptcha-response" />
+	
+		<div class="subscribeInput">
+			
+			<input type="text" name="email" value=""  placeholder="Email" />
+	
+		</div>
+		<div class="subscribeButton">
+			
+			<input type="submit" name="tAction" value="Sign up"  onClick="OpenCommonPopUpAction(&#039;get_recaptcha_popup_html&#039;, &#039;&#039;, 200);return false;" class="notranslate" />
+	
+		</div>
+	
+		</form>
+		</div>
+	
+						</div>
+					</div>
+					<div class="poweredBy" style="position:sticky;">Powered by <a target="_blank" href="http://arphahub.com" aria-label="global.powered_by_arpha"><span class="arphalogo"></span></a> </div>
+					<script type="text/javascript">InitArticleMenuEvents()</script>
+				</div>
+				<script type="text/javascript">
+					resizeContentHolders();
+					$( window ).resize(function() {
+						resizeContentHolders();
+					});
+				</script>
+				<div class="P-Clear"></div>
+			</div>
+			<div class="P-Article-References-For-Baloon">
+			</div>
+	
+			</div>
+			<div id="P-Post-Review-Form-Poll"></div>
+			
+		<div id="warningCookie" class="warningCookie">
+			<div class="row arownd-xs middle-xs">
+				<div class="col-xs center-xs pwt_additional_class">
+					<p>This website uses cookies in order to improve your web experience. <a href="/about#CookiesPolicy" target="_blank">Read our Cookies Policy</a></p>
+				</div>
+				<div class="col-xs-2">
+					<a id="removeWarningCookie">OK</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if(document.cookie.indexOf("WarningCookie") ===-1){
+				$("#warningCookie").show();
+			} else {
+				$("#warningCookie").remove();
+			}
+
+			$("#removeWarningCookie").click(function () {
+				SetCookie('WarningCookie','OK', 365) /* expires in 365 days*/
+				$("#warningCookie").remove();
+			});
+		</script>
+
+		
+		<div id="P-General-Popup-Content" class="P-PopUp"></div>
+		<div class="popup-background" style="display:none"></div>
+		
+		
+		<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.pensoft.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '131']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+		<!-- analytics start -->
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E230FTJL96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E230FTJL96');
+</script>
+		<!-- analytics end -->
+	
+</body>
+</html>
+	

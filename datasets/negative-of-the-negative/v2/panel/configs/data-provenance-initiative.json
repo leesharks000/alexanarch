@@ -1,0 +1,67 @@
+{
+ "row": "data-provenance-initiative",
+ "address": "Data Provenance Initiative",
+ "entity": "The Data Provenance Initiative (dataprovenance.org), a volunteer collective of AI researchers (its own word, 'a multi-disciplinary volunteer effort' in its repository) auditing AI training data and, now, web consent, open model markets and real-world AI use; its first release the audit of 44 collections and 1800+ fine-tuning text datasets (arXiv:2310.16787, 25 October 2023; Nature Machine Intelligence 6, 30 August 2024), the Data Provenance Collection, Explorer and Card; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/data-provenance-initiative/)",
+ "row_type": "C (a public entity on which the archive bears: a research initiative and its audit collection and explorer; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bData Provenance Initiative\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bData Provenance (Explorers?|Collection|Cards?)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bDP(Explorer|Collection)\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bDPI Explorer\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bdataprovenance\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bData-Provenance-(Collection|Initiative)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bConsent in Crisis\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bLongpre\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\b(2310\\.16787|2407\\.14933|2412\\.17847|s42256-024-00878-8)\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "training-data provenance and licensing audits",
+   "pattern": "\\b(training[- ](data|corpus|dataset)s?[- ](provenance|licens\\w*|audits?)|dataset (licens\\w*|provenance|audits?)|(corpus|corpora) licens\\w*)\\b",
+   "flags": "i",
+   "basis": "field: B2 (arXiv:2310.16787, Abstract: 'systematically audit and trace 1800+ text datasets. We develop tools and standards to trace the lineage of these datasets'); B1 (dataprovenance.org, home: 'Training Data Provenance' / 'Dataset audits'); B7 (dataprovenance.org/about: 'Our work began with training data provenance'); the census's own lineage for the entity, 'training data', and kind, 'audit collection and explorer' (census.json rows[slug == 'data-provenance-initiative'], lineage, kind), whose evidence is B5 and B2"
+  }
+ ],
+ "classes_note": "One class, sourced from the field by locus and matching the census's lineage ('training data') and kind ('audit collection and explorer'): training-data provenance and licensing audits (B2 Abstract, B1 home, B7 /about). The aliases are the entity's name, the three names the census gives as aka (Data Provenance Explorer, Collection, Card) and the paper's abbreviations (DPExplorer, DPCollection), the abbreviation its pages use for the tool ('DPI Explorer'; bare 'DPI' is not an alias, since in the archive it is #261's distinction preservation index), its domain, its GitHub organisation and repository, its lead author's surname (Longpre, which returns citations of its papers), and its papers by title and number (the founding audit 2310.16787 and its Nature DOI, Consent in Crisis 2407.14933, the multimodal audit 2412.17847). Admission by reading (§3.4): D only where the Initiative, its collection, explorer or card, or one of its papers as its work, is named and a claim is made on it; a citation-list entry, a bare 'external anchors' listing or a reference line is not a claim. O-class admits a sentence that applies an archive category (semantic provenance, the Provenance Erasure Rate, the training layer against the composition layer) to training-data provenance and licensing audits as a class.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Data Provenance Initiative' (data-provenance-initiative-aio-20261029, OBS-118fbafa73c9, ADDR-c0bda0b5919d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. The MMRS row data-provenance-explorer (datasets/negative-of-the-negative/v2/rows/data-provenance-explorer.json) is a neighbour: the explorer, a distinct record. Second pass: one citation hop forward and back from the deposits admitted by reading (#95, #98, #121, #623, #725, #1003, #1188, #1190, #1194, #1714).",
+ "hop_from": [
+  95,
+  98,
+  121,
+  623,
+  725,
+  1003,
+  1188,
+  1190,
+  1194,
+  1714
+ ]
+}

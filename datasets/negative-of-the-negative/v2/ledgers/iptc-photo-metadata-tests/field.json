@@ -1,0 +1,1530 @@
+{
+ "row": "iptc-photo-metadata-tests",
+ "address": "IPTC photo metadata",
+ "addresses": [
+  "IPTC photo metadata"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia response texts, or the card's title for the video card; 53/53 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B11: eight IPTC pages, Wikipedia's IIM article, NeededApps, the Chrome Web Store page of the IPTC's extension, an IPTC video); 'own_page', the entity's own pages the census record cites, which T did not surface (B12, the 2019 results; B13, the research page), copied from the census's saved copies; 'wikipedia', the entity's title (B14, no article; the address's title IPTC_Photo_Metadata also absent) and the operator's article (B15, section 'Photo metadata'). 'census_third_party': none (both census sources are basis 'operator'). Unreachable: B11 (the video's watch page, HTTP 429; title only). The address names the standard; the census row is the tests: the cards B1–B10 are the standard's pages and readers, and only B1 names the tests (F3).",
+ "lineage_note": "Lineages: the tests (B1, B12, B13; PE); origin, cadence and count (B13; PE); what the tests track (B12; PE); the 2019 results (B12; PE); findings and the software study (B13); the norm (B4); stripping in transit (B4, B8, B9; #1409, #127); the standard (B1, B2, B3; PE-05); release (B3); genealogy (B2, B4, B6, B15); scope and limits (B2, B3, B8); reception and use (B1, B2, B6); the operator (B11, B15; PE-02); the AI properties (B2, B3, B5); marking AI-generated images and C2PA (B4, B5; PE-16); who reads the fields (B4, B7, B9, B10; #1409; CAP-1-04); the archive's layer (#725, #1409); the record (PE); the composition (CAP); the encyclopedia (B14). The census fields that restate a page's evidence quote (PE-06, PE-07, PE-09, PE-10, PE-11, PE-12) are one lineage with that page, the page keeping the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B6.wiki raw wikitext; B11.html the 429 interstitial and B11-oembed.json; B12/B13 the census's copies; B14/B15 Wikipedia .wiki, .html, -search.html raw responses, B14.txt a summary of the four responses); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "IPTC — Photo Metadata IPTC",
+   "url": "https://iptc.org/standards/photo-metadata/",
+   "kind": "Overview card (the operator's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B1.html",
+     "sha256": "67cbd7ce1750d398ce18738ca57075c84953555c30ee420d8148b2b2d7965892"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B1.txt",
+     "sha256": "cf1cbba0ec1ac3578c212cf30beca94930781a5bf08d2f1e94679336545f9932"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:41Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/",
+    "final_url": "https://iptc.org/standards/photo-metadata/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B1.html",
+    "raw_sha256": "67cbd7ce1750d398ce18738ca57075c84953555c30ee420d8148b2b2d7965892",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B1.txt"
+    ]
+   },
+   "card_title": "Photo Metadata IPTC",
+   "card_snippet": "Definition: IPTC Photo Metadata sets industry standards for administrative, descriptive, and copyright information regarding images. Purpose: Protects copyright...",
+   "card_note": null,
+   "snippet_on_page": false,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "yes: the 'Research' paragraph (F3), and the site menu",
+   "note": "URL by the card's title and site (the page's <title> is 'Photo Metadata IPTC'); the snippet ('Definition: … Purpose: Protects copyright…') is not the page's text: the page has 'IPTC Photo Metadata sets the industry standard for administrative, descriptive, and copyright information about images.' The card's snippet is a labelled rewording."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "IPTC — IPTC Photo Metadata Standard",
+   "url": "https://iptc.org/standards/photo-metadata/iptc-standard/",
+   "kind": "Overview card (the operator's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B2.html",
+     "sha256": "a4dd802767a7c6edd6256188c240e4d13956f6b150e9c0cc6469f4e0db0d100b"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B2.txt",
+     "sha256": "3a59b1b1fcc0452d3e2263a702f05c6d84f23c22fc8cc7a53410e57ff05f58ef"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:43Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/iptc-standard/",
+    "final_url": "https://iptc.org/standards/photo-metadata/iptc-standard/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B2.html",
+    "raw_sha256": "a4dd802767a7c6edd6256188c240e4d13956f6b150e9c0cc6469f4e0db0d100b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B2.txt"
+    ]
+   },
+   "card_title": "IPTC Photo Metadata Standard",
+   "card_snippet": "Today, the IPTC Photo Metadata Standard consists of two schemas – IPTC Core and IPTC Extension – which were built on the legacy of the original IPTC-IIM, and de...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "in the IPTC site menu only (links 'Social Media Sites Photo Metadata Test Results 2019' and 'IPTC Photo Metadata Interoperability Tests'); no claim on them",
+   "note": "URL by title and site; the snippet is the page's ¶3 verbatim."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "IPTC — IPTC Photo Metadata Standard 2025.1",
+   "url": "https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata",
+   "kind": "Overview card (the specification)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B3.html",
+     "sha256": "275a1717429f2208c608b92805d6fc7aebdebc3c1ed05d1f97373832d5913320"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B3.txt",
+     "sha256": "39a0ef12f50cd11f233e8e0704593aedf565db602b8d1c2ec1f9066baa101bc8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:44Z",
+    "http": 200,
+    "url": "https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata",
+    "final_url": "http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata-2025.1.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B3.html",
+    "raw_sha256": "275a1717429f2208c608b92805d6fc7aebdebc3c1ed05d1f97373832d5913320",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B3.txt"
+    ]
+   },
+   "card_title": "IPTC Photo Metadata Standard 2025.1",
+   "card_snippet": "Standard: IPTC Photo Metadata Standard 2025.1 incorporating IPTC Core Schema 1.5 and Extension Schema 1.9. Core Properties: Administrative, descriptive, and rig...",
+   "card_note": null,
+   "snippet_on_page": false,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "the canonical URL the specification gives for itself ('A public version of this specification document is available at https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata'); it redirects to http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata-2025.1.html (note the redirect to http). The snippet ('Standard: … Core Properties: …') is a labelled rewording."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "IPTC — IPTC Photo Metadata User Guide",
+   "url": "https://www.iptc.org/std/photometadata/documentation/userguide/",
+   "kind": "Overview card (the user guide)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B4.html",
+     "sha256": "0a8a0c47b9c3c75154b57510ea1dc8c59dcb6a1529022e43e0b3300a9cbb158b"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B4.txt",
+     "sha256": "90835f6bab1be3482442a87f84b0aed45f84377d1794a18f17c72ec1d25f85d3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:46Z",
+    "http": 200,
+    "url": "https://www.iptc.org/std/photometadata/documentation/userguide/",
+    "final_url": "https://www.iptc.org/std/photometadata/documentation/userguide/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B4.html",
+    "raw_sha256": "0a8a0c47b9c3c75154b57510ea1dc8c59dcb6a1529022e43e0b3300a9cbb158b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B4.txt"
+    ]
+   },
+   "card_title": "IPTC Photo Metadata User Guide",
+   "card_snippet": "Standards: IPTC Photo Metadata Standard covers Core (v1.5) and Extension (v1.9) schemas embedded via IIM and XMP formats in image headers. Content: Describes ge...",
+   "card_note": null,
+   "snippet_on_page": false,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "URL by title and site (linked from B7 and the specification's status note); the snippet ('Standards: … Content: …') is a labelled rewording."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "IPTC — IPTC Photo Metadata Standard adds new properties for AI-generated content - IPTC",
+   "url": "https://iptc.org/news/iptc-photo-metadata-standard-2025-1-adds-ai-properties/",
+   "kind": "Overview card (the operator's announcement)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B5.html",
+     "sha256": "59d9db3a4c7a748f0e344086a87443dd5a30c041ce08352bfe36a468170c4b66"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B5.txt",
+     "sha256": "8a7b2bc1c99f73887d353d72edb21c058cc07874567d0a0c215fd1e553e36989"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:47Z",
+    "http": 200,
+    "url": "https://iptc.org/news/iptc-photo-metadata-standard-2025-1-adds-ai-properties/",
+    "final_url": "https://iptc.org/news/iptc-photo-metadata-standard-2025-1-adds-ai-properties/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B5.html",
+    "raw_sha256": "59d9db3a4c7a748f0e344086a87443dd5a30c041ce08352bfe36a468170c4b66",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B5.txt"
+    ]
+   },
+   "card_title": "IPTC Photo Metadata Standard adds new properties for AI-generated content - IPTC",
+   "card_snippet": "Nov 27 2025 IPTC Photo Metadata Standard adds new properties for AI-generated content * AI System Used. Definition: The AI engine and/or the model name used to ...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "in the IPTC site menu only (links 'Social Media Sites Photo Metadata Test Results 2019' and 'IPTC Photo Metadata Interoperability Tests'); no claim on them",
+   "note": "URL by title: found in the IPTC news archive (iptc.org/news/2025/11) and by WebSearch (iptc.org/?p=8745 redirects here); the page's <title> is the card's title verbatim; dated 2025-11-27T11:45:51Z; the snippet matches the page."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Wikipedia — IPTC Information Interchange Model - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model",
+   "kind": "Overview card (Wikipedia)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.html",
+     "sha256": "f1f6848d9eece558f26622e65ecb17cc87d585000be14ce83ddcbc99d91f4d1e"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.txt",
+     "sha256": "90c31aa0169ab6cdda41c5fbefa956c5d60bbc31eeb58f5880aca78980023795"
+    },
+    "B6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.wiki",
+     "sha256": "273169b87b738c838b79170a24fc1e1bd079478171778619b9bb53a077103c3d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:56Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model",
+    "final_url": "https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.html",
+    "raw_sha256": "f1f6848d9eece558f26622e65ecb17cc87d585000be14ce83ddcbc99d91f4d1e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.txt"
+    ],
+    "wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=IPTC_Information_Interchange_Model&action=raw",
+     "at": "2026-10-29T17:08:50Z",
+     "http": 200,
+     "sha256": "273169b87b738c838b79170a24fc1e1bd079478171778619b9bb53a077103c3d",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B6.wiki"
+    }
+   },
+   "card_title": "IPTC Information Interchange Model - Wikipedia",
+   "card_snippet": "Overview: Information Interchange Model (IIM) is a 1990s IPTC metadata standard and file structure for news exchange, widely adopted by photographers as embedde...",
+   "card_note": null,
+   "snippet_on_page": false,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "the rendered page (first fetch answered HTTP 429, refetched with the same command at 17:10:56Z, HTTP 200) and the raw wikitext (B6.wiki, action=raw); quotes are from the rendered text. The snippet ('Overview: Information Interchange Model (IIM) is a 1990s IPTC metadata standard …') is a labelled rewording."
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "IPTC — IPTC Guidelines & Support",
+   "url": "https://iptc.org/standards/photo-metadata/guidelines-support/",
+   "kind": "Overview card (the operator's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B7.html",
+     "sha256": "fa31b80137785c0f92db2efa1b0ef6a34782b852299e51c1a6aa8b3f3527fea8"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B7.txt",
+     "sha256": "0da9ec69b0cb5db9123043601ae24bd9b989da540ea5df2bf360030814a9e904"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:50Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/guidelines-support/",
+    "final_url": "https://iptc.org/standards/photo-metadata/guidelines-support/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B7.html",
+    "raw_sha256": "fa31b80137785c0f92db2efa1b0ef6a34782b852299e51c1a6aa8b3f3527fea8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B7.txt"
+    ]
+   },
+   "card_title": "IPTC Guidelines & Support",
+   "card_snippet": "Quick Guide to IPTC Photo Metadata and Google Images explains how to check and update IPTC Photo Metadata for best results in Google Images search results, as i...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "in the IPTC site menu only (links 'Social Media Sites Photo Metadata Test Results 2019' and 'IPTC Photo Metadata Interoperability Tests'); no claim on them",
+   "note": "URL by WebSearch on title (iptc.org/?p=438 redirects here); the snippet matches the page."
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "NeededApps — What Is Image Metadata? EXIF, IPTC and XMP Explained - NeededApps",
+   "url": "https://neededapps.com/tutorials/what-are-image-metadata-exif-iptc-xmp/",
+   "kind": "Overview card (third party)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B8.html",
+     "sha256": "9863e3890450b586b6d3d6fc808d5af94db3d762709aeaf264c1daeb6ec263ac"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B8.txt",
+     "sha256": "738c082fb43273bae583daf2f5579b0d8d315ae6b7fb1d238ee140d0ddd847c5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:50Z",
+    "http": 200,
+    "url": "https://neededapps.com/tutorials/what-are-image-metadata-exif-iptc-xmp/",
+    "final_url": "https://neededapps.com/tutorials/what-are-image-metadata-exif-iptc-xmp/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B8.html",
+    "raw_sha256": "9863e3890450b586b6d3d6fc808d5af94db3d762709aeaf264c1daeb6ec263ac",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B8.txt"
+    ]
+   },
+   "card_title": "What Is Image Metadata? EXIF, IPTC and XMP Explained - NeededApps",
+   "card_snippet": "IPTC refers to metadata standards developed for the professional exchange and description of media. Unlike EXIF, which is heavily focused on technical capture i...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "URL from the NeededApps home page's link list (two guessed paths answered 404); the page's <title> is the card's title without the site suffix; the snippet matches the page."
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "IPTC — Google Images and IPTC: Frequently Asked Questions",
+   "url": "https://iptc.org/standards/photo-metadata/iptc-and-google-images-frequently-asked-questions/",
+   "kind": "Overview card (the operator's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B9.html",
+     "sha256": "411f99558ec1b28c1531c831e582ea4fb6cd738b625c9fa8bc1ce6e58d069e7d"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B9.txt",
+     "sha256": "9577a29c034957779fec38ea0051a5127cd063e6754a921147e1a5a6def5411c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:51Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/iptc-and-google-images-frequently-asked-questions/",
+    "final_url": "https://iptc.org/standards/photo-metadata/iptc-and-google-images-frequently-asked-questions/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B9.html",
+    "raw_sha256": "411f99558ec1b28c1531c831e582ea4fb6cd738b625c9fa8bc1ce6e58d069e7d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B9.txt"
+    ]
+   },
+   "card_title": "Google Images and IPTC: Frequently Asked Questions",
+   "card_snippet": "I would like to obtain a licence to re-use an image that I found on Google search. Can you help me? I run a web site and my images don't have metadata appearing...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "in the IPTC site menu only (links 'Social Media Sites Photo Metadata Test Results 2019' and 'IPTC Photo Metadata Interoperability Tests'); no claim on them",
+   "note": "URL by WebSearch on the title (a guessed path answered 404); the snippet matches the page's question list."
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 10",
+   "card": "Chrome Web Store — IPTC Photo Metadata inspector - Chrome Web Store - Google",
+   "url": "https://chromewebstore.google.com/detail/iptc-photo-metadata-inspe/ejadeefikdifbfnhokdodfphhkimbelb",
+   "kind": "Overview card (third-party host; the IPTC's extension)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 10
+    }
+   ],
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B10.html",
+     "sha256": "ffcb77c3fae1daaad7e5400ae11aa954eebe2120af8f0aa43251296aef758baf"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B10.txt",
+     "sha256": "b9c8434269772deb6f03d1c690e907a23ba72d3d260e2f9f5118c9d7b6ffda81"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:52Z",
+    "http": 200,
+    "url": "https://chromewebstore.google.com/detail/iptc-photo-metadata-inspe/ejadeefikdifbfnhokdodfphhkimbelb",
+    "final_url": "https://chromewebstore.google.com/detail/iptc-photo-metadata-inspe/ejadeefikdifbfnhokdodfphhkimbelb",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B10.html",
+    "raw_sha256": "ffcb77c3fae1daaad7e5400ae11aa954eebe2120af8f0aa43251296aef758baf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B10.txt"
+    ]
+   },
+   "card_title": "IPTC Photo Metadata inspector - Chrome Web Store - Google",
+   "card_snippet": "Right-click on any image and select \"View IPTC Photo Metadata\". IPTC's GetPMD tool shows all metadata embedded in the image. Many images on the web contain embe...",
+   "card_note": null,
+   "snippet_on_page": true,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "the URL is in the transcript itself (the tools item's third marker); the snippet matches the page."
+  },
+  {
+   "id": "B11",
+   "origin": "card",
+   "role": "Overview card 11",
+   "card": "YouTube·IPTC — Introduction and welcome, 20 years of IPTC Photo Metadata, Recent work ...",
+   "url": "https://www.youtube.com/watch?v=JtfroU7UgjU",
+   "kind": "Overview card (video, 3m)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-photo-metadata-aio-20261029",
+     "card": 11
+    }
+   ],
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11.html",
+     "sha256": "fafd777ce5b671b8db0f9ac86204fb527359953604a2186f6abb537b17b0ff12"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11.txt",
+     "sha256": "b651d77f19958e40fd986424996307f48a1cfa7f8d59592246473eb0bd3e1e30"
+    },
+    "B11-oembed.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11-oembed.json",
+     "sha256": "f16e302a7f9a775cf311c054d46be5bbcb2fa7342bae7943ed5bb0074217aa3d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:53Z",
+    "http": 429,
+    "url": "https://www.youtube.com/watch?v=JtfroU7UgjU",
+    "final_url": "https://www.google.com/sorry/index?continue=https://www.youtube.com/watch%3Fv%3DJtfroU7UgjU&q=EhD9o-ciCsPMAAIRdFD-_sZhGKX7jdcGIjACAXIWdLiSyq2vTRKDGcPG2wqac0Rj3Wb4gyDIPLI7Wrym2zlUItebWxbGa5OgaWsyAnJSWgFDYPOq8Ouo58DX9AE",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11.html",
+    "raw_sha256": "fafd777ce5b671b8db0f9ac86204fb527359953604a2186f6abb537b17b0ff12",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11.txt"
+    ],
+    "oembed": {
+     "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=JtfroU7UgjU&format=json",
+     "at": "2026-10-29T17:09:04Z",
+     "http": 200,
+     "sha256": "f16e302a7f9a775cf311c054d46be5bbcb2fa7342bae7943ed5bb0074217aa3d",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B11-oembed.json"
+    },
+    "status": "unreachable (HTTP 429 at the watch page); title only"
+   },
+   "card_title": "Introduction and welcome, 20 years of IPTC Photo Metadata, Recent work ...",
+   "card_snippet": null,
+   "card_note": "video, 3m",
+   "snippet_on_page": null,
+   "names_operator": "yes (the title names 'IPTC'; the oEmbed channel is 'IPTC')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "found by the card's title on YouTube's results page (videoId JtfroU7UgjU); the watch page answered HTTP 429 (a Google 'sorry' interstitial, saved as B11.html); YouTube's oEmbed endpoint (HTTP 200, saved as B11-oembed.json) confirms the title 'Introduction and welcome, 20 years of IPTC Photo Metadata, Recent work on Photo Metadata at IPTC' and the channel IPTC. Admitted through its title (the card has no snippet); no transcript fetched."
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "role": "own page the census record cites (the 2019 results)",
+   "card": "IPTC — Social Media Sites Photo Metadata Test Results 2019",
+   "url": "https://iptc.org/standards/photo-metadata/social-media-sites-photo-metadata-test-results-2019/",
+   "kind": "own page (census copy)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B12.html",
+     "sha256": "1b4794817413523cb403e2da7fe33943e97b40a7d42752bcc1f071c11ba14f66"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B12.txt",
+     "sha256": "684127f460e2664e2a6c5fcefa74882f0272c2b3c362dbe29a4d9fa7a02f164f"
+    }
+   },
+   "fetched": {
+    "census_read": "2026-10-29",
+    "census_fetched": "2026-10-29T15:55:21Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/social-media-sites-photo-metadata-test-results-2019/",
+    "census_sha256": "1b4794817413523cb403e2da7fe33943e97b40a7d42752bcc1f071c11ba14f66",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B12.html",
+    "raw_sha256": "1b4794817413523cb403e2da7fe33943e97b40a7d42752bcc1f071c11ba14f66",
+    "sha256_matches_census": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B12.txt"
+    ],
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/iptc-photo-metadata-tests--social-2019.html.gz"
+   },
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "yes (the entity's own page)",
+   "note": "the census's saved copy (sources/iptc-photo-metadata-tests--social-2019.html.gz, gunzipped; .txt copied), not refetched; the sha256 of the gunzipped HTML equals the census's. Not surfaced by T; linked from cards B1, B2, B5, B7, B9 (the IPTC's site menu: 'Social Media Sites Photo Metadata Test Results 2019')."
+  },
+  {
+   "id": "B13",
+   "origin": "own_page",
+   "role": "own page the census record cites (the research page)",
+   "card": "IPTC — Research",
+   "url": "https://iptc.org/standards/photo-metadata/research/",
+   "kind": "own page (census copy)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B13.html",
+     "sha256": "4d8b44f1ba520320e92060e092a8931e4a40742c313427791bc7373b463616db"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B13.txt",
+     "sha256": "9e9133e4d57d4114d0087d6513f167d2e2d1180e5ebcdfc805f47741cc21b631"
+    }
+   },
+   "fetched": {
+    "census_read": "2026-10-29",
+    "census_fetched": "2026-10-29T15:55:20Z",
+    "http": 200,
+    "url": "https://iptc.org/standards/photo-metadata/research/",
+    "census_sha256": "4d8b44f1ba520320e92060e092a8931e4a40742c313427791bc7373b463616db",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B13.html",
+    "raw_sha256": "4d8b44f1ba520320e92060e092a8931e4a40742c313427791bc7373b463616db",
+    "sha256_matches_census": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B13.txt"
+    ],
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/iptc-photo-metadata-tests--research.html.gz"
+   },
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council', 'Photo Metadata Working Group' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "yes (the entity's own page)",
+   "note": "the census's saved copy, not refetched; sha256 equals the census's. Not surfaced by T; card B1's 'Research … Read More' paragraph is this page's summary."
+  },
+  {
+   "id": "B14",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title (and the address's)",
+   "card": "Wikipedia — IPTC photo metadata tests (no article)",
+   "url": "https://en.wikipedia.org/wiki/IPTC_photo_metadata_tests",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B14.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.wiki",
+     "sha256": "6212fb85e8042a3294e49a8dc1a5ec0d4a955561d4943be2f650931ed9d6d126"
+    },
+    "B14.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.html",
+     "sha256": "fbfa9ceade35ff316a87b82836e9ac8a8c7799126fb6f3007cdc781002230d75"
+    },
+    "B14-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14-search.html",
+     "sha256": "8f0de7832465c9e84394c5d4b423a2bbeab26385dc8df981d1b50f29a06d8a05"
+    },
+    "B14b.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14b.wiki",
+     "sha256": "957da07b42a0a473c406d6833fc8921555db4a1281be5a5a4d4938941db58120"
+    },
+    "B14.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.txt",
+     "sha256": "92cd9c6a0ca3f3e1fffc2e381c50d07f7b14f7e60e2cd32bf9c43259ca715e3e"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=IPTC_photo_metadata_tests&action=raw&redirect=no",
+     "at": "2026-10-29T17:11:06Z",
+     "http": 404,
+     "sha256": "6212fb85e8042a3294e49a8dc1a5ec0d4a955561d4943be2f650931ed9d6d126",
+     "bytes": 1930,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.wiki"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/IPTC_photo_metadata_tests",
+     "at": "2026-10-29T17:20:16Z",
+     "http": 404,
+     "sha256": "fbfa9ceade35ff316a87b82836e9ac8a8c7799126fb6f3007cdc781002230d75",
+     "bytes": 50969,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.html",
+     "note": "first attempt 17:11:07Z answered HTTP 429; the same command repeated"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22IPTC+photo+metadata+tests%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T17:11:08Z",
+     "http": 200,
+     "sha256": "8f0de7832465c9e84394c5d4b423a2bbeab26385dc8df981d1b50f29a06d8a05",
+     "bytes": 78446,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14-search.html"
+    },
+    "raw_address_title": {
+     "url": "https://en.wikipedia.org/w/index.php?title=IPTC_Photo_Metadata&action=raw&redirect=no",
+     "at": "2026-10-29T17:20:17Z",
+     "http": 404,
+     "sha256": "957da07b42a0a473c406d6833fc8921555db4a1281be5a5a4d4938941db58120",
+     "bytes": 1929,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14b.wiki",
+     "note": "title IPTC_Photo_Metadata; first attempt 17:11:10Z answered HTTP 429"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B14.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "names_tests": "no",
+   "note": "no article for the tests; none at IPTC_Photo_Metadata either (raw HTTP 404, redirect=no); the full-text search for the quoted phrase in article space returns no results. B14.txt summarises the four responses with their notices."
+  },
+  {
+   "id": "B15",
+   "origin": "wikipedia",
+   "role": "the operator's Wikipedia article (section 'Photo metadata')",
+   "card": "Wikipedia — International Press Telecommunications Council",
+   "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council",
+   "kind": "Wikipedia (the operator's article)",
+   "surfaced_by_T": "no (not surfaced by T; the operator's article, read by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B15.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.wiki",
+     "sha256": "c9111b64b71f2a9c3035b8324ec6ae04b93eb421281cb484167e1e51e2cd440e"
+    },
+    "B15.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.html",
+     "sha256": "9b2ab0e71ea453009147b7d84d2453751ff859815bcdfb29f221037bfe8262d7"
+    },
+    "B15.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.txt",
+     "sha256": "c754434d4b6d4617f53c299fa297f9a4aa9c0bfa5ad4a3ba1aaa2a926f3770c3"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=International_Press_Telecommunications_Council&action=raw",
+     "at": "2026-10-29T17:11:11Z",
+     "http": 200,
+     "sha256": "c9111b64b71f2a9c3035b8324ec6ae04b93eb421281cb484167e1e51e2cd440e",
+     "bytes": 11706,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.wiki"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council",
+     "at": "2026-10-29T17:11:12Z",
+     "http": 200,
+     "sha256": "9b2ab0e71ea453009147b7d84d2453751ff859815bcdfb29f221037bfe8262d7",
+     "bytes": 116360,
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.txt"
+    ]
+   },
+   "names_operator": "yes ('IPTC', 'International Press Telecommunications Council' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "names_tests": "no",
+   "note": "the operator has an article; its section 'IPTC Standards › Photo metadata' gives the standard (IIM, IPTC Core, IPTC Extension, XMP) and says nothing of the tests. The card on T's rail is the IIM article (B6), which also says nothing of the tests."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Photo Metadata page: standfirst",
+   "quote": "IPTC Photo Metadata sets the industry standard for administrative, descriptive, and copyright information about images.",
+   "claim": "the standard defined by its operator's landing page: the industry standard for administrative, descriptive and copyright information about images",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the standard: what it is (the carrier the tests test)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cf1cbba0ec1ac357…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Photo Metadata page: 'Critical to Photo and Related Businesses'",
+   "quote": "Photo metadata is key to protecting images' copyright and licensing information online. It is also essential for managing digital assets.",
+   "claim": "what photo metadata is for: protecting copyright and licensing information online; managing digital assets",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's reception and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cf1cbba0ec1ac357…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Photo Metadata page: 'Research'",
+   "quote": "IPTC not only defines the standard for photo metadata, but also conducts research about how it is used in the real world. We examine metadata in commonly used software, social media platforms, and more. The removal of rights information as images are transferred is of particular concern.",
+   "claim": "the tests named on the composition's own first card: research on how photo metadata is used in software and on social media platforms, the removal of rights information in transfer of particular concern",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cf1cbba0ec1ac357…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "IPTC Photo Metadata Standard page ¶1",
+   "quote": "The IPTC Photo Metadata Standard is the most widely used standard to describe photos, because of its universal acceptance among news agencies, photographers, photo agencies, libraries, museums, and other related industries.",
+   "claim": "the standard's self-description: the most widely used standard to describe photos, by its acceptance among news agencies, photographers, agencies, libraries and museums",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's reception and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3a59b1b1fcc0452d…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "IPTC Photo Metadata Standard page ¶3",
+   "quote": "Today, the IPTC Photo Metadata Standard consists of two schemas – IPTC Core and IPTC Extension – which were built on the legacy of the original IPTC-IIM, and developed by the IPTC for professional use with a focus on news and stock photos.",
+   "claim": "two schemas, IPTC Core and IPTC Extension, built on the legacy IIM, for professional news and stock photography",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the standard: what it is (the carrier the tests test)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3a59b1b1fcc0452d…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "IPTC Photo Metadata Standard page ¶3",
+   "quote": "IPTC worked alongside Adobe on the technical implementation of the metadata that employs Adobe’s XMP technology (now an ISO Standard) as an enriched alternative to the IIM format.",
+   "claim": "the implementation with Adobe in XMP (an ISO standard), an enriched alternative to IIM",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3a59b1b1fcc0452d…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'What’s New in the 2025.1 Standard'",
+   "quote": "The 2025.1 version, published in November 2025, adds four new properties to handle metadata for AI-generated content: AI Prompt Information, AI Prompt Writer Name, AI System Used and AI System Version Used.",
+   "claim": "2025.1 (November 2025) adds four properties for AI-generated content",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2025.1 properties for AI-generated content",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3a59b1b1fcc0452d…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "'What’s Defined by This Standard', last paragraph",
+   "quote": "How Photo Metadata formats are stored within image files are defined by non-IPTC file format standards, such as JPEG/JFIF, TIFF, PNG and more.",
+   "claim": "the stated limit of scope: how the formats are stored inside image files is defined by non-IPTC file-format standards (JPEG/JFIF, TIFF, PNG)",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the standard's scope and limits: file formats, no technical metadata",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3a59b1b1fcc0452d…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'About the Standard'",
+   "quote": "This is the IPTC Photo Metadadata Standard 2025.1, including … IPTC Core Metadata Schema 1.5 … IPTC Extension Metadata Schema 1.9",
+   "claim": "the current release: 2025.1, with Core 1.5 and Extension 1.9 (the source's spelling 'Metadadata' kept)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the standard's release: 2025.1, Core 1.5, Extension 1.9",
+   "date": "2025-11-26 (version 2025.1 rev 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39a0ef12f50cd11f…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "§1 Overview ¶1",
+   "quote": "IPTC Photo Metadata provides data about photographs and the values can be processed by software. Each individual metadata entity is called a property and they are grouped into Administrative, Descriptive and Rights-related properties.",
+   "claim": "the specification's definition: data about photographs processable by software, properties grouped as administrative, descriptive and rights-related",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the standard: what it is (the carrier the tests test)",
+   "date": "2025-11-26 (version 2025.1 rev 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39a0ef12f50cd11f…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "§2.2 Technical Metadata",
+   "quote": "Because the IPTC acknowledges these technical metadata standards of other bodies and does not wish to duplicate existing metadata properties, the IPTC Photo Metadata specification does not include any technical metadata.",
+   "claim": "the stated limit: no technical (camera) metadata; that is left to the camera manufacturers' standards",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the standard's scope and limits: file formats, no technical metadata",
+   "date": "2025-11-26 (version 2025.1 rev 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39a0ef12f50cd11f…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "table of contents, Extension heading (and the section heading at the same place in the body)",
+   "quote": "IPTC Extension schema 1.8 specifications",
+   "claim": "the specification heads its Extension section '1.8' while 'About the Standard' and §4 give Extension 1.9 (marked internally_inconsistent: both loci cited)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's release: 2025.1, Core 1.5, Extension 1.9",
+   "date": "2025-11-26 (version 2025.1 rev 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39a0ef12f50cd11f…), whitespace-normalised",
+   "mark": {
+    "internally_inconsistent": {
+     "loci": [
+      "B3 'About the Standard': 'IPTC Extension Metadata Schema 1.9'",
+      "B3 §4: 'revising it to version 1.9'",
+      "B3 table of contents and section heading: 'IPTC Extension schema 1.8 specifications'"
+     ]
+    }
+   }
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "§11.11 Data Mining, Definition",
+   "quote": "Data mining prohibition or permission, optionally with constraints.",
+   "claim": "the Data Mining property: prohibition or permission of data mining, optionally constrained",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2025.1 properties for AI-generated content",
+   "date": "2025-11-26 (version 2025.1 rev 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39a0ef12f50cd11f…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Introduction, 'How IPTC Photo Metadata Evolved Over Time'",
+   "quote": "IPTC Core fields can be embedded in the IIM format and/or in the XMP format. A key challenge for metadata embedded in parallel in IIM and XMP is that the values are synchronised - this should be taken care of by the image management software.",
+   "claim": "Core fields embedded in IIM and/or XMP; values embedded in parallel must be synchronised by the image software",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'IPTC is often asked which fields should be filled out as a minimum'",
+   "quote": "By defining this set of minimal metadata properties IPTC does not support any removal of existing metadata outside this set without the explicit permission of the copyright owner of the image. (In simple words: this is not a permission to strip off metadata and is not legal advice.)",
+   "claim": "the minimum set is no permission to strip other metadata",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the norm the tests measure against: embedded metadata must not be removed",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Fundamental Guidelines for the Preservation of Embedded Metadata', principle 4",
+   "quote": "Copyright management information metadata must never be removed from the files. … Removal of such metadata impacts on the ability to assert ownership rights and is therefore forbidden by law in many countries.",
+   "claim": "the Embedded Metadata Manifesto, endorsed by the IPTC: copyright management information must never be removed; removal is forbidden by law in many countries",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the norm the tests measure against: embedded metadata must not be removed",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'IPTC Photo Metadata and Google Images'",
+   "quote": "Google displays three IPTC photo metadata fields, wherever available, for an image shown as search result. This tells the viewer who is the creator and who is the copyright holder of the image and what credit line should be shown next to the image.",
+   "claim": "Google Images displays three embedded fields: creator, copyright notice, credit line",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "who reads the embedded fields: Google Images and the IPTC's tools",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'For developers and site administrators: how to ensure the fields are preserved in images on your site'",
+   "quote": "Your site’s digital asset management system, content management system, image management system or content delivery network may be stripping out embedded metadata fields. Some systems do this with the best of intentions, thinking that it will save a few bytes of bandwidth, but stripping out metadata actually infringes on the copyright holders' rights and may even be illegal in some countries.",
+   "claim": "site systems (DAM, CMS, image management, CDN) may strip embedded fields; stripping infringes rights and may be illegal",
+   "modality": "hypothesis",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stripping in transit: where the carrier is lost",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Applying Metadata to AI-generated Images' ¶2",
+   "quote": "It may be important to distinguish AI-generated images from \"regular\" images: for example, to avoid re-training AI models on content that was already generated by a model, to understand which images can fall under copyright and which cannot (in some jurisdictions) and to avoid misinterpreting generated images as being real photos.",
+   "claim": "why AI-generated images are marked: against re-training on generated content, for copyright, against mistaking them for photos",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "marking AI-generated images, and the C2PA metadata invalidated",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Applying Metadata to AI-generated Images', field suggestions",
+   "quote": "Creator is bound to the owner of the intellectual property of an image in many countries and there are first legal decisions that AI generated images are not considered as creative work generating an intellectual property. Therefore, our recommendation is to leave the Image Creator field empty.",
+   "claim": "for AI-generated images, leave Image Creator empty",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "marking AI-generated images, and the C2PA metadata invalidated",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Applying Metadata to AI-generated Images', field suggestions",
+   "quote": "The Digital Source Type field should be set to the URI value http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia or http://cv.iptc.org/newscodes/digitalsourcetype/compositeSynthetic.",
+   "claim": "Digital Source Type set to trainedAlgorithmicMedia or compositeSynthetic",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "marking AI-generated images, and the C2PA metadata invalidated",
+   "date": "2025-11-26 (november 2025 r0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90835f6bab1be348…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "announcement ¶2",
+   "quote": "The IPTC Photo Metadata Working Group has released version 2025.1 of the IPTC Photo Metadata Standard, including properties that can be used for AI-generated content.",
+   "claim": "the Working Group releases 2025.1 with properties for AI-generated content",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2025.1 properties for AI-generated content",
+   "date": "2025-11-27 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 8a7b2bc1c99f7388…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "announcement, the new properties",
+   "quote": "AI System Used … Definition: The AI engine and/or the model name used to generate this image.",
+   "claim": "AI System Used defined: the AI engine or model name used to generate the image",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2025.1 properties for AI-generated content",
+   "date": "2025-11-27 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 8a7b2bc1c99f7388…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "announcement, caption of the example image",
+   "quote": "This image contains the new IPTC Photo Metadata fields “AI Prompt Information”, “AI System Used” and “AI Prompt Writer Name”. Note that adding the new IPTC Photo Metadata properties has rendered the C2PA metadata invalid.",
+   "claim": "the stated limit: writing the new properties into the example image rendered its C2PA metadata invalid",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "marking AI-generated images, and the C2PA metadata invalidated",
+   "date": "2025-11-27 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 8a7b2bc1c99f7388…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article lead ¶1",
+   "quote": "The Information Interchange Model (IIM) is a file structure and set of metadata attributes that can be applied to text, images and other media types. It was developed in the early 1990s by the International Press Telecommunications Council (IPTC) to expedite the international exchange of news among newspapers and news agencies.",
+   "claim": "IIM: a file structure and metadata attributes, developed by the IPTC in the early 1990s for news exchange",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90c31aa0169ab6cd…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article lead ¶3",
+   "quote": "IIM metadata embedded in images are often referred to as \"IPTC headers\", and can be easily encoded and decoded by most popular photo editing software.",
+   "claim": "embedded IIM metadata: the 'IPTC headers', read and written by most photo software",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90c31aa0169ab6cd…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article lead ¶4",
+   "quote": "The Extensible Metadata Platform (XMP) has largely superseded IIM's file structure, but the IIM image attributes are defined in the IPTC Core schema for XMP and most image manipulation programs keep the XMP and non-XMP IPTC attributes synchronized.",
+   "claim": "XMP has largely superseded IIM's structure; IIM's attributes live on in IPTC Core for XMP",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90c31aa0169ab6cd…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article lead ¶5",
+   "quote": "Because of its nearly universal acceptance among photographers — even amateurs — this is by far IPTC's most widely used standard.",
+   "claim": "the encyclopedia's reading: by far the IPTC's most widely used standard, by nearly universal acceptance among photographers",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's reception and use",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 90c31aa0169ab6cd…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "'Handbooks and User Guides'",
+   "quote": "Quick Guide to IPTC Photo Metadata and Google Images … explains how to check and update IPTC Photo Metadata for best results in Google Images search results, as introduced by Google in September 2018.",
+   "claim": "the Google Images display, introduced by Google in September 2018, and the IPTC's quick guide to it",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "who reads the embedded fields: Google Images and the IPTC's tools",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0da9ec69b0cb5db9…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'What Is IPTC Metadata?'",
+   "quote": "IPTC refers to metadata standards developed for the professional exchange and description of media. Unlike EXIF, which is heavily focused on technical capture information, IPTC metadata is commonly used to describe, organize and manage images.",
+   "claim": "a third party's account: IPTC metadata describes, organizes and manages images, against Exif's technical capture data",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the standard's scope and limits: file formats, no technical metadata",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 738c082fb43273ba…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Copyright and Attribution'",
+   "quote": "Metadata shouldn't be treated as an infallible form of copyright protection because it can be removed or modified, but it provides useful information that can travel with the image.",
+   "claim": "the stated limit: metadata can be removed or modified, so it is no infallible copyright protection",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stripping in transit: where the carrier is lost",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 738c082fb43273ba…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "answer 1",
+   "quote": "IPTC maintains the technical standard that image creators can use to put their creator and copyright details inside image files. We call this “photo metadata”. Google extracts this information from photos in search results and displays it to help you find who owns the image.",
+   "claim": "the IPTC maintains the standard for creator and copyright details inside files; Google extracts and displays them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "who reads the embedded fields: Google Images and the IPTC's tools",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 9577a29c03495777…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "answer 3 ¶2",
+   "quote": "In that case, the metadata might be stripped from your images by some software on your site. Sometimes this could be your Digital Asset Management system (such as Bynder, WebDAM or Extensis Portfolio). In other cases your Content Management System (such as WordPress or Drupal) might strip off metadata. Or it could be a Content Delivery Network that you use, such as Cloudflare or Cloudinary.",
+   "claim": "metadata that does not show may have been stripped by a site's DAM, CMS or CDN",
+   "modality": "hypothesis",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stripping in transit: where the carrier is lost",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 9577a29c03495777…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "Overview",
+   "quote": "IPTC's Photo Metadata Inspector tool lets you see embedded metadata in many image files. For eligible images, a context menu will appear when you right-click on the image. Select \"View IPTC Photo Metadata\" and you will be taken to IPTC's Get Photo Metadata (GetPMD) tool which will display all metadata embedded in the image file.",
+   "claim": "the IPTC's browser extension passes a web image to GetPMD, which displays its embedded metadata",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "who reads the embedded fields: Google Images and the IPTC's tools",
+   "date": "2025-01-13 (updated, as the store lists it)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 b9c8434269772deb…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "card title (video; the watch page answered HTTP 429; title confirmed by YouTube oEmbed, channel IPTC)",
+   "quote": "Introduction and welcome, 20 years of IPTC Photo Metadata, Recent work",
+   "claim": "the IPTC's video: twenty years of IPTC Photo Metadata (title only)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: the IPTC and its Photo Metadata Working Group",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title in the registry's cite_list (oEmbed title agrees)"
+  },
+  "F36": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "standfirst",
+   "quote": "IPTC promotes the proper use of IPTC Photo Metadata and claims “embedded metadata should not be removed” from images shared on a photo platform or a system for sharing files or messages with images.",
+   "claim": "the claim the tests check: embedded metadata should not be removed from images shared on photo platforms or file and message systems",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2019 (Spring 2019 results; page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "standfirst",
+   "quote": "To check which systems support this claim, IPTC checks about a dozen sites regularly: in 2013, in 2016 and now again in Spring 2019.",
+   "claim": "the tests defined: about a dozen sites checked regularly, 2013, 2016, Spring 2019",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2019 (Spring 2019 results; page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "'Test Procedure' 1",
+   "quote": "Uploading an image with values in many fields of the IPTC Photo Metadata Standard , e.g. the latest Reference Image File . This implies that all embedded metadata values are known and can be checked.",
+   "claim": "the method: upload an image whose embedded values are all known",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2019 (Spring 2019 results; page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "'Test Procedure' 3–4",
+   "quote": "Check if the image can be saved to a local device by a Save As function of the web browser. … Check if the image can be downloaded by a function of the tested system (e.g. a menu item). … are the embedded Exif and IPTC metadata (in the formats IIM and XMP) of the uploaded image still embedded?",
+   "claim": "the transformations: Save As and download; the test: are the embedded Exif and IPTC (IIM and XMP) still embedded",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2019 (Spring 2019 results; page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "'Test Procedure' 2",
+   "quote": "If displayed: are these 4 relevant fields shown, correctly: Caption/description, Creator, Copyright Notice, Credit Line (= the 4Cs )",
+   "claim": "the four fields checked for display: caption, creator, copyright notice, credit line",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the tests track: the 4Cs in the file",
+   "date": "2019 (Spring 2019 results; page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "results, image-sharing sites: Pexels, pixabay, Unsplash",
+   "quote": "Pexels … Metadata is stripped off in SavedAs or downloaded files. … pixabay … Metadata is stripped off in SavedAs or downloaded files. … Unsplash … No embedded metadata displayed, metadata is stripped off in SavedAs or downloaded files.",
+   "claim": "Pexels, pixabay and Unsplash strip embedded metadata from saved and downloaded files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2019 results: stripped, replaced, kept",
+   "date": "2019 (Spring 2019 results)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "results, image-sharing sites: Flickr",
+   "quote": "(Free account tested.) Some embedded metadata displayed. Embedded Creator replaced by account owner. SavedAs files have no XMP metadata.",
+   "claim": "Flickr replaces the embedded creator with the account owner; saved files lose XMP",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2019 results: stripped, replaced, kept",
+   "date": "2019 (Spring 2019 results)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "results, file and message systems: Facebook, Twitter",
+   "quote": "No embedded metadata displayed. SavedAs files have no XMP metadata. A few rights related fields were retained in IIM and Exif. 2 IIM fields contain data generated by Facebook. … Twitter … No embedded metadata displayed. Metadata is stripped off in SavedAs files.",
+   "claim": "Facebook keeps a few rights fields in IIM and Exif and writes two IIM fields of its own; Twitter strips saved files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2019 results: stripped, replaced, kept",
+   "date": "2019 (Spring 2019 results)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "results, file and message systems: Dropbox, Microsoft OneDrive",
+   "quote": "Passed through original file, preview can be SavedAs with stripped off metadata.",
+   "claim": "Dropbox and OneDrive pass the original through; their previews save with metadata stripped",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2019 results: stripped, replaced, kept",
+   "date": "2019 (Spring 2019 results)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "results, image-sharing sites: Behance",
+   "quote": "Download is not a main feature, SaveAs files keep the embedded metadata.",
+   "claim": "Behance's saved files keep the embedded metadata",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2019 results: stripped, replaced, kept",
+   "date": "2019 (Spring 2019 results)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 684127f460e2664e…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B13",
+   "origin": "own_page",
+   "locus": "'Photo Metadata Research' ¶1",
+   "quote": "IPTC not only defines the standard for photo metadata, but also conducts research about how photo metadata is used and implemented. Our most recent tests and studies:",
+   "claim": "the research as the IPTC's activity beside the standard",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tests: what they are and what they check",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 9e9133e4d57d4114…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B13",
+   "origin": "own_page",
+   "locus": "'Rights Information and Social Media Networks' ¶1",
+   "quote": "IPTC was approached by users who discovered that when they shared photos via social media sites or systems, their embedded metadata disappeared.",
+   "claim": "the origin: users found their embedded metadata disappeared when shared",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the tests: origin, cadence and count",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 9e9133e4d57d4114…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B13",
+   "origin": "own_page",
+   "locus": "'Rights Information and Social Media Networks' ¶2",
+   "quote": "The IPTC Photo Metadata Working Group tested 15 social media sites in 2016 and 2013 to understand how image sharing, through upload and download, affects the integrity of embedded metadata as defined by IPTC standards and the Exif standard.",
+   "claim": "the Working Group tested 15 sites in 2013 and 2016 for how upload and download affect embedded metadata's integrity",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the tests: origin, cadence and count",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 9e9133e4d57d4114…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B13",
+   "origin": "own_page",
+   "locus": "'Rights Information and Social Media Networks' ¶3",
+   "quote": "Some social media sites or systems remove embedded information like copyright notes, the name of the creator, the description and more, while others protect photographers’ data better. The results show that it is not impossible to preserve metadata in a workflow.",
+   "claim": "the finding: some sites remove the embedded information, others protect it; preservation in a workflow is not impossible",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the tests' findings and the software study",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 9e9133e4d57d4114…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B13",
+   "origin": "own_page",
+   "locus": "'Rights Information and Software Performance'",
+   "quote": "The results, published in August 2014, look promising: … Half of the programs offered fields for photographers to enter rights information, including the date, the image’s creator, copyright notice, and rights usage term. … Two out of three programs helped users retrieve embedded rights data. … Unfortunately, two of the programs didn’t support rights metadata at all.",
+   "claim": "the software study (August 2014): half the programs offered rights fields, two of three retrieved them, two supported none",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tests' findings and the software study",
+   "date": "2014-08 (as the page dates the study)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 9e9133e4d57d4114…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title IPTC_photo_metadata_tests (and IPTC_Photo_Metadata)",
+   "quote": "Wikipedia does not have an article with this exact name. … There were no results matching the query. The pages \"IPTC photo metadata tests\" and '\"IPTC photo metadata tests\"' do not exist.",
+   "claim": "Wikipedia has no article on the tests, and no article text with the phrase; the title IPTC_Photo_Metadata is also absent (raw HTTP 404)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B14.txt (sha256 92cd9c6a0ca3f3e1…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B15",
+   "origin": "wikipedia",
+   "locus": "article 'International Press Telecommunications Council', §IPTC Standards › Photo metadata ¶1",
+   "quote": "The IPTC defined a set of metadata properties that can be applied to images, part of a broader standard developed in the early 1990s and known as the IPTC Information Interchange Model (IIM). Embedded IIM image information is often referred to as an \"IPTC header\".",
+   "claim": "the operator's article: image metadata properties from the 1990s IIM, embedded as the 'IPTC header'",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard's genealogy: IIM, IPTC headers, XMP",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 c754434d4b6d4617…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B15",
+   "origin": "wikipedia",
+   "locus": "article lead ¶1",
+   "quote": "The International Press Telecommunications Council (IPTC), based in London, United Kingdom, is a consortium of the world's major news agencies, other news providers and news industry vendors and acts as the global standards body of the news media.",
+   "claim": "the operator: a London consortium of news agencies and vendors, the standards body of the news media",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: the IPTC and its Photo Metadata Working Group",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 c754434d4b6d4617…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "IPTC — Photo Metadata IPTC",
+  "B2": "IPTC — IPTC Photo Metadata Standard",
+  "B3": "IPTC — IPTC Photo Metadata Standard 2025.1",
+  "B4": "IPTC — IPTC Photo Metadata User Guide",
+  "B5": "IPTC — IPTC Photo Metadata Standard adds new properties for AI-generated content - IPTC",
+  "B6": "Wikipedia — IPTC Information Interchange Model - Wikipedia",
+  "B7": "IPTC — IPTC Guidelines & Support",
+  "B8": "NeededApps — What Is Image Metadata? EXIF, IPTC and XMP Explained - NeededApps",
+  "B9": "IPTC — Google Images and IPTC: Frequently Asked Questions",
+  "B10": "Chrome Web Store — IPTC Photo Metadata inspector - Chrome Web Store - Google",
+  "B11": "YouTube·IPTC — Introduction and welcome, 20 years of IPTC Photo Metadata, Recent work ...",
+  "B12": "IPTC — Social Media Sites Photo Metadata Test Results 2019",
+  "B13": "IPTC — Research",
+  "B14": "Wikipedia — IPTC photo metadata tests (no article)",
+  "B15": "Wikipedia — International Press Telecommunications Council"
+ }
+}

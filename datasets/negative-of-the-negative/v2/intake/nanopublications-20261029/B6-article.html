@@ -1,0 +1,307 @@
+
+		
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+			<head>
+				<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+				<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+				<title>The Comparative Anatomy of Nanopublications and FAIR Digital Objects</title>
+				
+				<meta name="current_language" content="en"/>
+				<meta name="primary_language" content="en"/>
+				
+				<link rel="SHORTCUT ICON" href="/i/ico/.ico" />
+				
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,300,300italic,600italic,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet" >
+	
+				
+				<!-- asd -->
+				<link type="text/css" rel="stylesheet" href="/lib/css/langs/en.css?v=1723472591" media="all" title="default" />
+	
+				<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=[REDACTED-ACCESS-KEY]&callback=Function.prototype"></script>
+				
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&noContrib"></script>
+			<script type="text/javascript">
+				MathJax.Hub.Config({
+					config: ["MMLorHTML.js"],
+					jax: ["input/TeX","input/MathML","input/AsciiMath","output/SVG", "output/PreviewHTML"],
+					extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "[a11y]/accessibility-menu.js"],
+					TeX: {
+						extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+					}
+				});
+		</script>
+	
+				<script type="text/javascript" src="/lib/js/build/output/article_preview_en.bundle.js?v=1793272061"></script>
+	
+				<script type="text/javascript">
+					$(window).load(function(){
+						hljs.highlightAll();
+						gWindowIsLoaded = true;
+						parent.iframeLoaded();
+						var timeout;
+			document.querySelector(".P-Article-Preview").addEventListener("mouseup", function(e) {
+				var selection = document.getSelection();
+				if (!selection.toString().trim().length)
+					return;
+				clearTimeout(timeout);
+				var rect = selection.getRangeAt(0).getBoundingClientRect();
+				var tooltipLeft = Math.max(rect.left + (rect.width / 2), 0);
+				$(".tooltip_aof").css({
+					"top": parseInt(rect.bottom) + 10,
+					"left": parseInt(tooltipLeft) - 10
+				}).show();
+				var selectable = this;
+				timeout = setTimeout(function() {
+					$(".tooltip_aof").hide();
+				}, 1500);
+			});
+						// Intialize Recogito
+				gAOFComments = Recogito.init({
+					content: "P-Article-Preview-Content", // Element id or DOM node to attach to
+					mode: "pre",
+					allowEmpty: false,
+					readOnly: true
+				});
+			
+					});
+					var topframe = parent.document.getElementById(window.name);
+			if(topframe === null || topframe.id !=="articleIframe"){
+				var a = "https://riojournal.com/" + "articles.php" + location.search;
+				window.location.href = a;
+			}
+					var showArticleInfo = false;
+					function toogleArticleInfo(){
+						showArticleInfo = !showArticleInfo;
+						if (showArticleInfo) {
+							$(".P-Current-Author-Addresses").show();
+							$(".P-Article-Preview-Addresses").show();
+							$(".P-Article-Preview-Base-Info-Block").show();
+							$("#arrow").attr("src", "http://pwt.pensoft.net/i/arrow-up-icon.png");
+							window.parent.resizePreviewIframe("articleIframe");
+						} else {
+							$("#arrow").attr("src", "http://pwt.pensoft.net/i/arrow-down-icon.png");
+							$(".P-Current-Author-Addresses").hide();
+							$(".P-Article-Preview-Addresses").hide();
+							$(".P-Article-Preview-Base-Info-Block").hide();
+							window.parent.resizePreviewIframe("articleIframe");
+						}
+					}
+				</script>
+			</head>
+			<body class="journal_  id-94150  lang_">
+	
+			<div id="P-Article-Preview-Content" class="P-Article-Preview">
+        <table class="unselectable" cellpadding="0" cellspacing="0" width="100%">
+          <colgroup>
+            <col width="90%">
+            <col width="10%">
+          </colgroup>
+          <tr>
+            <td>
+              <div class="P-Article-Preview-Antet">Research Ideas and Outcomes :
+							Conference Abstract</div>
+            </td>
+            <td>
+              <div class="P-Article-Preview-Antet" style="text-align:right;font-size:12px;line-height:18px;">
+                <a target="_blank" style="background:transparent url('/i/printer.svg') no-repeat 0px 0px; padding-left:20px;" href="https://arpha.pensoft.net/preview_src.php?document_id=20563&amp;action=get_print_pdf">
+								PDF
+							</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="PaperType">Conference Abstract</div>
+        <div instance_id="8025677">
+          <div instance_id="8025678">
+            <div field_id="3">
+              <div class="P-Article-Preview-Title" id="article_metadata" field_id="3" commentable="true">
+                <strong>The Comparative Anatomy of Nanopublications and FAIR Digital Objects</strong>
+              </div>
+            </div>
+            <div class="P-Article-Preview-Names unselectable"><a onclick="toogleArticleInfo()"><img style="padding-right:6px" alt="expand article info" id="arrow" src="https://arpha.pensoft.net//i/arrow-down-icon.png"></a><span data-author-id="167921">Erik Anthony Schultes</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">‡,</span><span class="P-Current-Author-Single-Address">§</span></sup>, <span data-author-id="167920">Barbara Magagna</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">|</span></sup>, <span data-author-id="23177">Tobias Kuhn</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">¶</span></sup>, <span data-author-id="64868">Marek Suchánek</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">#</span></sup>, <span data-author-id="167992">Luiz Olavo Bonino da Silva Santos</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">¤</span></sup>, <span data-author-id="167993">Barend Mons</span><sup class="P-Current-Author-Addresses"><span class="P-Current-Author-Single-Address">«</span></sup></div>
+            <div class="P-Article-Preview-Addresses unselectable">
+              <div class="P-Single-Author-Address Deceased-Author-Label">‡ Leiden University, Leiden, Netherlands</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label">§ Leiden Center for Data Science, Leiden, Netherlands</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label">| GO FAIR Foundation, Leiden, Netherlands</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label">¶ Vrije Universiteit Amsterdam, Department of Computer Science, Amsterdam, Netherlands</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label"># Czech Technical University in Prague, Faculty of Information Technology, Prague, Czech Republic</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label">¤ University of Twente, Enschede, Netherlands</div>
+              <div class="P-Single-Author-Address Deceased-Author-Label">« Leiden University Medical Center, Leiden, Netherlands</div>
+            </div>
+            <div class="P-Article-Preview-Base-Info-Block unselectable">
+              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="P-Article-Info-Block-Row">Corresponding author: Barbara  Magagna (<a target="_blank" href="/cdn-cgi/l/email-protection#b4d6d5c6d6d5c6d5f4d3dbd2d5ddc69ad2dbc1dad0d5c0dddbda"><span class="__cf_email__" data-cfemail="95f7f4e7f7f4e7f4d5f2faf3f4fce7bbf3fae0fbf1f4e1fcfafb">[email&#160;protected]</span></a>)</div>
+                      <div class="P-Article-Info-Block-Row"></div>
+                      <div class="P-Article-Info-Block-Row dates">Received: 27 Aug 2022 | Published: 12 Oct 2022</div>
+                      <div class="P-Article-Info-Block-Row copyright">© 2022 Erik Schultes, Barbara Magagna, Tobias Kuhn, Marek Suchánek, Luiz Bonino da Silva Santos, Barend Mons<br><div>This is an open access article distributed under the terms of the <a border="0" target="_blank" href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution License (CC BY 4.0)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</div></div>
+                      <div class="P-Article-Info-Block-Row" id="citation">
+								Citation:
+								<span>Schultes EA, Magagna B, Kuhn T, Suchánek M, Bonino da Silva Santos LO, Mons B (2022) The Comparative Anatomy of Nanopublications and FAIR Digital Objects. Research Ideas and Outcomes 8: e94150. <span style="white-space: nowrap"><a target="_blank" href="https://doi.org/10.3897/rio.8.e94150">https://doi.org/10.3897/rio.8.e94150</a></span></span></div>
+                    </td>
+                    <td id="openaccesstd" width="95px" valign="middle" align="right">
+                      <img src="/i/open_access_icon_colour.svg" alt="Open Access">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Baloon-Contents-Wrapper" style="display:none"></div>
+          </div>
+          <div class="abstract_and_keywords" instance_id="8025679">
+            <h1 id="abstract" class="unselectable">Abstract<span class="toCollapse minus"></span></h1>
+            <div class="P-Article-Preview-Block">
+              <div class="P-Article-Preview-Block-Content" field_id="641" commentable="true">
+                <p>Beginning in 1995, early Internet pioneers proposed Digital Objects as encapsulations of data and metadata made accessible through persistent identifier resolution services (<span><cite data-citation-id="313920" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025873" data-deleted="false">Kahn and Wilensky 2006</xref></cite></span>). In recent years, this Digital Object Architecture has been extended to include the FAIR Guiding Principles (<span><cite data-citation-id="322914" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025951" data-deleted="false">Wilkinson et al. 2016</xref></cite></span>), resulting in the concept of a FAIR Digital Object (FDO), a minimal, uniform container making any digital resource machine-actionable. Intense effort is currently underway by a global community of experts to clarify definitions around an FDO Framework (FDOF) and to provide technical specifications (<span><cite data-citation-id="322924" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026762" data-deleted="false">FAIR DO group 2020</xref></cite></span>, <span><cite class="citations-holder" data-citation-id="322943" data-citation-type="reference"><xref class="bibr" type="bibr" rid="8119947" data-deleted="false">FAIR Digital Object Forum 2020</xref></cite></span> , <span><cite data-citation-id="322921" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026730" data-deleted="false">Bonino da Silva Santos (2021)</xref></cite></span>) regarding their potential implementation.</p>
+                <p>Beginning in 2009, nanopublications were independently conceived (<span><cite data-citation-id="313921" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025864" data-deleted="false">Groth et al. 2010</xref></cite></span>) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (<span><cite data-citation-id="313922" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026652" data-deleted="false">Mons and Velterop 2009</xref></cite></span>). A nanopublication consists of an <i>assertion</i>, the <i>provenance</i> of the assertion, and the provenance of the nanopublication (<i>publication info</i>). Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (<span><cite data-citation-id="322919" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8119922" data-deleted="false">World Wide Web Consortium (W3C) 2015</xref></cite></span>) and can be permanently and uniquely identified using resolvable Trusty URIs (<span><cite data-citation-id="313923" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026702" data-deleted="false">Groth et al. 2021</xref></cite></span>). The existing Nanopublication Server Network provides vital services orchestrating nanopublications (<span><cite data-citation-id="313924" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025882" data-deleted="false">Kuhn et al. 2021</xref></cite></span>) including identifier resolution, storage, search and access. Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether. The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project (<span><cite data-citation-id="313927" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025855" data-deleted="false">The FANTOM Consortium and the RIKEN PMI and CLST (DGT) 2014</xref></cite></span>, <span><cite data-citation-id="313925" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025893" data-deleted="false">Lizio et al. 2015</xref></cite></span>). Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.</p>
+                <p>Like nanopublication, the FDOF also posits an ultra-minimal approach to structured, self-contained, machine-readable data and metadata. An FDO consists of: the <i>object</i> itself (subsequently referred to here as the <i>resource</i> to avoid confusion with other meanings of the term “object”); the <i>metadata </i>describing the resource; and a globally unique and persistent <i>identifier</i> with predictable resolution behaviors. </p>
+                <p>These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations. Here, we compare the structure and computational behaviors of the existing nanopublication infrastructure, to those in the proposed FAIR Digital Object Framework. Although developed independently there are clear parallels between the vision and the approach of nanopublication and FDOF. Each aspires to minimal standards for the encapsulation of digital information into free-standing, publishable (citable, referenceable) entities. The minimal standards involve globally unique and persistent identifiers that resolve to standardized semantically enabled metadata descriptions that include machine actionable paths to the resource itself.</p>
+                <p>At the same time, there are also differences. The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope, accommodating digital resources of arbitrarily large size, type and complexity, so long as their type can be ontologically described. Furthermore, whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development. If it were possible to formally draw points of contact between the two approaches, then it would be possible to leverage the vast practical experience gained in the nanopublishing of assertions for the FDO community.</p>
+                <p>Here, inspired by recent applications of nanopublications in the FIP Wizard tool (<span><cite data-citation-id="313932" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8025940" data-deleted="false">Schultes et al. 2020</xref></cite></span>), and their extension to research claims (<span><cite data-citation-id="313933" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026813" data-deleted="false">Kuhn 2022</xref></cite></span>, <span><cite data-citation-id="313934" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026803" data-deleted="false">McNamara 2022</xref></cite></span>) and data using <span><cite data-citation-id="313935" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026823" data-deleted="false">Schultes (2022a)</xref></cite></span>, <span><cite data-citation-id="313936" data-citation-type="reference" class="citations-holder"><xref class="bibr" type="bibr" rid="8026831" data-deleted="false">Schultes (2022b)</xref></cite></span>, we attempt a point-by-point comparison of the specifications between nanopublication and FDOs. We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem.</p>
+              </div>
+            </div>
+          </div>
+          <div class="abstract_and_keywords" instance_id="8025680">
+            <div class="P-Article-Preview-Block">
+              <h1 id="keywords" class="unselectable">Keywords<span class="toCollapse minus"></span></h1>
+              <div class="P-Article-Preview-Block-Content" field_id="19" commentable="true">
+                <p>FAIR Principles, Nanopublication, Nanopublication Ecosystem, Machine-Actionable Containers, FIP Wizard, FAIR Wizard of Leiden </p>
+              </div>
+            </div>
+          </div>
+          <div class="abstract_and_keywords" instance_id="8025681">
+            <h1 class="unselectable" id="presenting_author">Presenting author<span class="toCollapse minus"></span></h1>
+            <div class="P-Article-Preview-Block">
+              <div class="P-Article-Preview-Block-Content" field_id="643" commentable="true">
+                <p>Erik Anthony Schultes</p>
+              </div>
+            </div>
+          </div>
+          <div class="abstract_and_keywords" instance_id="8025682">
+            <h1 class="unselectable" id="presented_at">Presented at<span class="toCollapse minus"></span></h1>
+            <div class="P-Article-Preview-Block">
+              <div class="P-Article-Preview-Block-Content" field_id="642" commentable="true">
+                <p>First International Conference on FAIR Digital Objects, presentation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new-elements-holder" data-object-id="378"></div>
+        <div class="figures-wrapper" instance_id="8025693">
+          <div class="new-elements-holder" data-object-id="221"></div>
+        </div>
+        <div class="tables-wrapper" instance_id="8025694">
+          <div class="new-elements-holder" data-object-id="238"></div>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025690" style="display:none">
+          <h1 id="acknowledgements" class="unselectable">Acknowledgements
+				<span class="toCollapse minus"></span></h1>
+          <div class="P-Article-Preview-Block-Content" field_id="223" commentable="true"></div>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025684" style="display:none">
+          <h1 class="unselectable" id="funding_program">Funding program<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025685" style="display:none">
+          <h1 class="unselectable" id="grant_title">Grant title<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025686" style="display:none">
+          <h1 class="unselectable" id="hosting_institution">Hosting institution<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025687" style="display:none">
+          <h1 class="unselectable" id="ethics_and_security">Ethics and security<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025689" style="display:none">
+          <h1 id="authorcontribution" class="unselectable">Author contributions
+				<span class="toCollapse minus"></span></h1>
+          <div class="P-Article-Preview-Block-Content" field_id="464" commentable="true"></div>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025688" style="display:none">
+          <h1 class="unselectable" id="conflicts_of_interest">Conflicts of interest<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025691">
+          <h1 id="references" class="unselectable">References<span class="toCollapse minus"></span></h1>
+          <ul class="references">
+            <div class="bibr" rid="8026730">
+              <li class="ref-list-AOF-holder" instance_id="8026732" data-main-instance-id="8026730"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026734">Bonino da Silva Santos LO</span></span> (<span class="ref-year" field_id="254">2021</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">FAIR Digital Object Framework Documentation</div>.  <a field_id="263" href="https://fairdigitalobjectframework.org/" target="_blank">https://fairdigitalobjectframework.org/</a>. Accessed on: <span field_id="280">2022-7-10</span>.</li>
+            </div>
+            <div class="bibr" rid="8119947">
+              <li class="ref-list-AOF-holder" instance_id="8119949" data-main-instance-id="8119947"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8119951">FAIR Digital Object Forum</span> (Ed.)</span> (<span class="ref-year" field_id="254">2020</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">FAIR Digital Objects Forum </div>.  <a field_id="263" href="https://fairdo.org" target="_blank">https://fairdo.org</a>. Accessed on: <span field_id="280">2022-8-27</span>.</li>
+            </div>
+            <div class="bibr" rid="8026762">
+              <li class="ref-list-AOF-holder" instance_id="8026764" data-main-instance-id="8026762"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026766">FAIR DO group</span></span> (<span class="ref-year" field_id="254">2020</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">Joint Statement on FAIR Digital Object Framework</div>.  <a field_id="263" href="https://docs.google.com/document/d/11FmDxgncy-LynQqTlvxFProW-i5Il7JBFtp7ELyztlg/edit" target="_blank">https://docs.google.com/document/d/11FmDxgncy-LynQqTlvxFProW-i5Il7JBFtp7ELyztlg/edit</a>. Accessed on: <span field_id="280">2022-7-10</span>.</li>
+            </div>
+            <div class="bibr" rid="8025864">
+              <li class="ref-list-AOF-holder" instance_id="8025866" data-main-instance-id="8025864"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025869">Groth P</span>, <span instance_id="8025870">Gibson A</span>, <span instance_id="8025871">Velterop J</span></span> (<span class="ref-year" field_id="254">2010</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">The anatomy of a nanopublication</div>. <div class="inlineDiv" commentable="true" field_id="243">Information Services &amp; Use</div> <div class="inlineDiv" commentable="true" field_id="258">30</div>: <div class="inlineDiv" commentable="true" field_id="28">51</div>‑<div class="inlineDiv" commentable="true" field_id="29">56</div>. <span class="ref-doi"><a field_id="30" href="https://doi.org/10.3233/isu-2010-0613" target="_blank"> https://doi.org/10.3233/isu-2010-0613</a></span></li>
+            </div>
+            <div class="bibr" rid="8026702">
+              <li class="ref-list-AOF-holder" instance_id="8026704" data-main-instance-id="8026702"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026706">Groth P</span>, <span instance_id="8026707">Schultes E</span>, <span instance_id="8026708">Thompson M</span>, <span instance_id="8026709">Tatum Z</span>, <span instance_id="8026718">Dumontier M</span>, <span instance_id="8026719">Kuhn T</span>, <span instance_id="8026720">Chichester C</span></span> (<span class="ref-year" field_id="254">2021</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">Nanopublication Guidelines</div>.<span class="ref-url"> URL: <a field_id="263" href="https://nanopub.org/guidelines/working_draft/" target="_blank">https://nanopub.org/guidelines/working_draft/</a></span></li>
+            </div>
+            <div class="bibr" rid="8025873">
+              <li class="ref-list-AOF-holder" instance_id="8025875" data-main-instance-id="8025873"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025878">Kahn R</span>, <span instance_id="8025879">Wilensky R</span></span> (<span class="ref-year" field_id="254">2006</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">A framework for distributed digital object services</div>. <div class="inlineDiv" commentable="true" field_id="243">International Journal on Digital Libraries</div> <div class="inlineDiv" commentable="true" field_id="258">6</div> (<div class="inlineDiv" commentable="true" field_id="27">2</div>): <div class="inlineDiv" commentable="true" field_id="28">115</div>‑<div class="inlineDiv" commentable="true" field_id="29">123</div>. <span class="ref-doi"><a field_id="30" href="https://doi.org/10.1007/s00799-005-0128-x" target="_blank"> https://doi.org/10.1007/s00799-005-0128-x</a></span></li>
+            </div>
+            <div class="bibr" rid="8025882">
+              <li class="ref-list-AOF-holder" instance_id="8025884" data-main-instance-id="8025882"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025887">Kuhn T</span>, <span instance_id="8025888">Taelman R</span>, <span instance_id="8025889">Emonet V</span>, <span instance_id="8025890">Antonatos H</span>, <span instance_id="8025891">Soiland-Reyes S</span>, <span instance_id="8025892">Dumontier M</span></span> (<span class="ref-year" field_id="254">2021</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">Semantic micro-contributions with decentralized nanopublication services</div>. <div class="inlineDiv" commentable="true" field_id="243">PeerJ Computer Science</div> <div class="inlineDiv" commentable="true" field_id="258">7</div><span class="ref-doi"><a field_id="30" href="https://doi.org/10.7717/peerj-cs.387" target="_blank"> https://doi.org/10.7717/peerj-cs.387</a></span></li>
+            </div>
+            <div class="bibr" rid="8026813">
+              <li class="ref-list-AOF-holder" instance_id="8026815" data-main-instance-id="8026813"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026817">Kuhn T</span></span> (<span class="ref-year" field_id="254">2022</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">The Future of Science Publishing - Personal Views</div>. <div class="inlineDiv" commentable="true" field_id="259">IOS Press</div>. <div class="inlineDiv" commentable="true" field_id="655"><a style="text-decoration:none;" href="https://www.iospress.com/ios-press-35">IOS Press 35 Anniversary meeting</a></div>.<span class="ref-url"> URL: <a field_id="263" href="https://www.iospress.com/ios-press-35" target="_blank">https://www.iospress.com/ios-press-35</a></span></li>
+            </div>
+            <div class="bibr" rid="8025893">
+              <li class="ref-list-AOF-holder" instance_id="8025895" data-main-instance-id="8025893"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025898">Lizio M</span>, <span instance_id="8025899"></span>, <span instance_id="8025900">Harshbarger J</span>, <span instance_id="8025901">Shimoji H</span>, <span instance_id="8025902">Severin J</span>, <span instance_id="8025903">Kasukawa T</span>, <span instance_id="8025904">Sahin S</span>, <span instance_id="8025905">Abugessaisa I</span>, <span instance_id="8025906">Fukuda S</span>, <span instance_id="8025907">Hori F</span>, <span instance_id="8025908">Ishikawa-Kato S</span>, <span instance_id="8025909">Mungall CJ</span>, <span instance_id="8025910">Arner E</span>, <span instance_id="8025911">Baillie JK</span>, <span instance_id="8025912">Bertin N</span>, <span instance_id="8025913">Bono H</span>, <span instance_id="8025914">de Hoon M</span>, <span instance_id="8025915">Diehl AD</span>, <span instance_id="8025916">Dimont E</span>, <span instance_id="8025917">Freeman TC</span>, <span instance_id="8025918">Fujieda K</span>, <span instance_id="8025919">Hide W</span>, <span instance_id="8025920">Kaliyaperumal R</span>, <span instance_id="8025921">Katayama T</span>, <span instance_id="8025922">Lassmann T</span>, <span instance_id="8025923">Meehan TF</span>, <span instance_id="8025924">Nishikata K</span>, <span instance_id="8025925">Ono H</span>, <span instance_id="8025926">Rehli M</span>, <span instance_id="8025927">Sandelin A</span>, <span instance_id="8025928">Schultes EA</span>, <span instance_id="8025929">‘t Hoen PA</span>, <span instance_id="8025930">Tatum Z</span>, <span instance_id="8025931">Thompson M</span>, <span instance_id="8025932">Toyoda T</span>, <span instance_id="8025933">Wright DW</span>, <span instance_id="8025934">Daub CO</span>, <span instance_id="8025935">Itoh M</span>, <span instance_id="8025936">Carninci P</span>, <span instance_id="8025937">Hayashizaki Y</span>, <span instance_id="8025938">Forrest AR</span>, <span instance_id="8025939">Kawaji H</span></span> (<span class="ref-year" field_id="254">2015</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">Gateways to the FANTOM5 promoter level mammalian expression atlas</div>. <div class="inlineDiv" commentable="true" field_id="243">Genome Biology</div> <div class="inlineDiv" commentable="true" field_id="258">16</div> (<div class="inlineDiv" commentable="true" field_id="27">1</div>). <span class="ref-doi"><a field_id="30" href="https://doi.org/10.1186/s13059-014-0560-6" target="_blank"> https://doi.org/10.1186/s13059-014-0560-6</a></span></li>
+            </div>
+            <div class="bibr" rid="8026803">
+              <li class="ref-list-AOF-holder" instance_id="8026805" data-main-instance-id="8026803"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026807">McNamara C</span></span> (<span class="ref-year" field_id="254">2022</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">The Future of Science Publishing – Focus on Nanopublications and Formalization Papers</div>. <div class="inlineDiv" commentable="true" field_id="259">IOS Press</div>.<span class="ref-url"> URL: <a field_id="263" href="https://labs.iospress.com/news-blog/future-science-publishing-focus-on-nanopublications" target="_blank">https://labs.iospress.com/news-blog/future-science-publishing-focus-on-nanopublications</a></span></li>
+            </div>
+            <div class="bibr" rid="8026652">
+              <li class="ref-list-AOF-holder" instance_id="8026654" data-main-instance-id="8026652"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026656">Mons B</span>, <span instance_id="8026657">Velterop J</span></span> (<span class="ref-year" field_id="254">2009</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="255">Nano-publication in the e-science era</div>. <div class="inlineDiv" commentable="true" field_id="272"><i>Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009)</i></div>, <div class="inlineDiv" commentable="true" field_id="273">Washington, DC</div>.</li>
+            </div>
+            <div class="bibr" rid="8025940">
+              <li class="ref-list-AOF-holder" instance_id="8025942" data-main-instance-id="8025940"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025945">Schultes E</span>, <span instance_id="8025946">Magagna B</span>, <span instance_id="8025947">Hettne KM</span>, <span instance_id="8025948">Pergl R</span>, <span instance_id="8025949">Suchánek M</span>, <span instance_id="8025950">Kuhn T</span></span> (<span class="ref-year" field_id="254">2020</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">Reusable FAIR Implementation Profiles as Accelerators of FAIR Convergence</div>. <div class="inlineDiv" commentable="true" field_id="243">Lecture Notes in Computer Science</div><div class="inlineDiv" commentable="true" field_id="28">138</div>‑<div class="inlineDiv" commentable="true" field_id="29">147</div>. <span class="ref-doi"><a field_id="30" href="https://doi.org/10.1007/978-3-030-65847-2_13" target="_blank"> https://doi.org/10.1007/978-3-030-65847-2_13</a></span></li>
+            </div>
+            <div class="bibr" rid="8026823">
+              <li class="ref-list-AOF-holder" instance_id="8026825" data-main-instance-id="8026823"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026827">Schultes E</span>, et al.</span> (<span class="ref-year" field_id="254">2022</span>a) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">FAIR Wizard of Leiden</div>.  <a field_id="263" href="https://bit.ly/FWLnano" target="_blank">https://bit.ly/FWLnano</a>. Accessed on: <span field_id="280">2022-7-10</span>.</li>
+            </div>
+            <div class="bibr" rid="8026831">
+              <li class="ref-list-AOF-holder" instance_id="8026833" data-main-instance-id="8026831"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8026835">Schultes E</span></span> (<span class="ref-year" field_id="254">2022</span>b) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">The FAIR Wizard of Leiden</div>. <div class="inlineDiv" commentable="true" field_id="259">IOS Press</div>. <div class="inlineDiv" commentable="true" field_id="655"><a style="text-decoration:none;" href="https://www.iospress.com/ios-press-35">IOS Press 35 Anniversary meeting</a></div>.<span class="ref-url"> URL: <a field_id="263" href="https://www.youtube.com/watch?v=y79t6f3i4Ow" target="_blank">https://www.youtube.com/watch?v=y79t6f3i4Ow</a></span></li>
+            </div>
+            <div class="bibr" rid="8025855">
+              <li class="ref-list-AOF-holder" instance_id="8025857" data-main-instance-id="8025855"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025860">The FANTOM Consortium and the RIKEN PMI and CLST (DGT)</span></span> (<span class="ref-year" field_id="254">2014</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">A promoter-level mammalian expression atlas</div>. <div class="inlineDiv" commentable="true" field_id="243">Nature</div> <div class="inlineDiv" commentable="true" field_id="258">507</div> (<div class="inlineDiv" commentable="true" field_id="27">7493</div>): <div class="inlineDiv" commentable="true" field_id="28">462</div>‑<div class="inlineDiv" commentable="true" field_id="29">470</div>. <span class="ref-doi"><a field_id="30" href="https://doi.org/10.1038/nature13182" target="_blank"> https://doi.org/10.1038/nature13182</a></span></li>
+            </div>
+            <div class="bibr" rid="8025951">
+              <li class="ref-list-AOF-holder" instance_id="8025953" data-main-instance-id="8025951"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8025956">Wilkinson M</span>, <span instance_id="8025957">Dumontier M</span>, <span instance_id="8025958">Aalbersberg IJ</span>, <span instance_id="8025959">Appleton G</span>, <span instance_id="8025960">Axton M</span>, <span instance_id="8025961">Baak A</span>, <span instance_id="8025962">Blomberg N</span>, <span instance_id="8025963">Boiten J</span>, <span instance_id="8025964">da Silva Santos LB</span>, <span instance_id="8025965">Bourne P</span>, <span instance_id="8025966">Bouwman J</span>, <span instance_id="8025967">Brookes A</span>, <span instance_id="8025968">Clark T</span>, <span instance_id="8025969">Crosas M</span>, <span instance_id="8025970">Dillo I</span>, <span instance_id="8025971">Dumon O</span>, <span instance_id="8025972">Edmunds S</span>, <span instance_id="8025973">Evelo C</span>, <span instance_id="8025974">Finkers R</span>, <span instance_id="8025975">Gonzalez-Beltran A</span>, <span instance_id="8025976">Gray AG</span>, <span instance_id="8025977">Groth P</span>, <span instance_id="8025978">Goble C</span>, <span instance_id="8025979">Grethe J</span>, <span instance_id="8025980">Heringa J</span>, <span instance_id="8025981">’t Hoen PC</span>, <span instance_id="8025982">Hooft R</span>, <span instance_id="8025983">Kuhn T</span>, <span instance_id="8025984">Kok R</span>, <span instance_id="8025985">Kok J</span>, <span instance_id="8025986">Lusher S</span>, <span instance_id="8025987">Martone M</span>, <span instance_id="8025988">Mons A</span>, <span instance_id="8025989">Packer A</span>, <span instance_id="8025990">Persson B</span>, <span instance_id="8025991">Rocca-Serra P</span>, <span instance_id="8025992">Roos M</span>, <span instance_id="8025993">van Schaik R</span>, <span instance_id="8025994">Sansone S</span>, <span instance_id="8025995">Schultes E</span>, <span instance_id="8025996">Sengstag T</span>, <span instance_id="8025997">Slater T</span>, <span instance_id="8025998">Strawn G</span>, <span instance_id="8025999">Swertz M</span>, <span instance_id="8026000">Thompson M</span>, <span instance_id="8026001">van der Lei J</span>, <span instance_id="8026002">van Mulligen E</span>, <span instance_id="8026003">Velterop J</span>, <span instance_id="8026004">Waagmeester A</span>, <span instance_id="8026005">Wittenburg P</span>, <span instance_id="8026006">Wolstencroft K</span>, <span instance_id="8026007">Zhao J</span>, <span instance_id="8026008">Mons B</span></span> (<span class="ref-year" field_id="254">2016</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="276">The FAIR Guiding Principles for scientific data management and stewardship</div>. <div class="inlineDiv" commentable="true" field_id="243">Scientific Data</div> <div class="inlineDiv" commentable="true" field_id="258">3</div> (<div class="inlineDiv" commentable="true" field_id="27">1</div>). <span class="ref-doi"><a field_id="30" href="https://doi.org/10.1038/sdata.2016.18" target="_blank"> https://doi.org/10.1038/sdata.2016.18</a></span></li>
+            </div>
+            <div class="bibr" rid="8119922">
+              <li class="ref-list-AOF-holder" instance_id="8119924" data-main-instance-id="8119922"><span class="authors-year unselectable"><span class="authors-holder"><span instance_id="8119926">World Wide Web Consortium (W3C)</span></span> (<span class="ref-year" field_id="254">2015</span>) </span><div class="inlineDiv ref-title" commentable="true" field_id="26">Semantic Web </div>.  <a field_id="263" href="https://www.w3.org/standards/semanticweb/" target="_blank">https://www.w3.org/standards/semanticweb/</a>. Accessed on: <span field_id="280">2022-8-27</span>.</li>
+            </div>
+          </ul>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025692" style="display:none">
+          <h1 id="supplementary_files" class="unselectable">Supplementary material<span class="toCollapse minus"></span></h1>
+        </div>
+        <div class="P-Article-Preview-Block" instance_id="8025695" style="display:none">
+          <div class="P-Article-Preview-Block-Title">Endnotes<span class="toCollapse minus"></span></div>
+          <div class="P-Article-Preview-Block-Content">
+            <div class="endnotes-wrapper" instance_id="8025695"></div>
+          </div>
+        </div>
+      </div>
+		
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>//loadArticleFormulas()</script>
+		
+		
+		
+		<!-- analytics start -->
+		
+		<!-- analytics end -->
+	
+		<div class="tooltip_aof">login to comment</div>
+</body>
+</html>
+	
+	

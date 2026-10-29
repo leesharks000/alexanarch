@@ -1,0 +1,208 @@
+{
+ "row": "attributionbench",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on AttributionBench, named; R, a relation the archive states between it and an archive object; O, an archive category applied to it or to the class the field sources for it (automatic attribution evaluation: B1, B3; the census's kind and relation_types). A bare mention, a list entry or a reference line is not a claim. The string pass returned no D and no R candidate: no archive text names AttributionBench, its arXiv number, its dataset id or its title (and none names AttriBench). Beyond the string pass, every archive text naming the class's measures in the field's or the archive's words (RAG faithfulness, citation precision/recall/quality, ALCE, AIS, attribution evaluation, attribution scores) was read at the passage (grep over data/texts), since the pass cuts sentences at 900 characters and misses phrases broken by Markdown emphasis.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "first_run": "A first run with bare 'attributable' in the class pattern returned 66 O-class candidates in 41 deposits; read, all were generic uses of the word (attributable authorship, value attributable to Mary Lee, attributable sources of an entity) and none applies a category to attribution evaluation; the pattern was narrowed and the run repeated (the files in this folder are the second configuration's).",
+ "verdicts": [
+  {
+   "dep": 716,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Erasure Rate (EA-PER-01): §2.1 'Citation and Attribution Evaluation' and §2.3 set PER against the class: support where citation is attempted against the failure to attempt attribution; complementary, not competitive. O-class: the archive's category (PER) applied to the class by the archive itself",
+   "claims": [
+    "O716-01",
+    "O716-02",
+    "O716-03",
+    "O716-04",
+    "O716-05"
+   ],
+   "cands": [
+    "O0001"
+   ],
+   "found_by": "string pass (O0001) and reading of §2.1–2.3"
+  },
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01): 'PER is not RAG faithfulness', 'PER is not citation precision/recall', and the disambiguation table's rows on the adjacent measures and attribution scores; O-class. The §3 paragraphs and table rows were not returned by the pass (emphasis breaks the pattern; the table is one long 'sentence') and were read",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03",
+    "O725-04",
+    "O725-05",
+    "O725-06"
+   ],
+   "cands": [
+    "O0002",
+    "O0003",
+    "O0004"
+   ],
+   "found_by": "string pass and reading"
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, 2026-05-12): its candidates (O0007–O0009) and the same §3 paragraphs fall in #725's lineages and add nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "O0007",
+    "O0008",
+    "O0009"
+   ]
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Alignment (EA-PA-01): 'the technical infrastructure for attribution evaluation already exists in the research literature … and can be extended' to cross-system PER measurement; O-class. Not returned by the pass (the paragraph exceeds the 900-character cut before the phrase); found by reading",
+   "claims": [
+    "O95-01"
+   ],
+   "cands": [],
+   "found_by": "reading (grep 'attribution evaluation')"
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #95 (its transcription deposit, same date): the same sentence; an instance under #95 (S4)",
+   "claims": [],
+   "instance_of": 95,
+   "cands": [],
+   "found_by": "reading"
+  },
+  {
+   "dep": 1695,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Stellar Orbit Fluid Dynamics Institute charter, §2.5: the generative-search audits of citation support as a starting point ('a convincing sentence and a supporting citation are separate achievements') and the entity question beyond local support (proximal substitution); O-class. Found by reading",
+   "claims": [
+    "O1695-01",
+    "O1695-02"
+   ],
+   "cands": [],
+   "found_by": "reading (grep 'ALCE')"
+  },
+  {
+   "dep": 1705,
+   "strata": [
+    "O"
+   ],
+   "reason": "From Ranking to Individuation, R2 'Citations need their own evaluation': citation recall and precision checked apart from whether the territory and its operations survive; O-class. Found by reading",
+   "claims": [
+    "O1705-01"
+   ],
+   "cands": [],
+   "found_by": "reading (grep 'citation recall')"
+  },
+  {
+   "dep": 141,
+   "strata": [
+    "O"
+   ],
+   "reason": "Erasure Skew Coefficient packet: attribution and faithfulness metrics in NLG beside PER; the further, unmeasured question whether attribution failure is power-conditioned; O-class. Found at the hop (H0013)",
+   "claims": [
+    "O141-01",
+    "O141-02"
+   ],
+   "cands": [
+    "H0013"
+   ],
+   "found_by": "hop"
+  },
+  {
+   "dep": 1611,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGONT-01: attribution survival, 'PER beside the citation-recall and faithfulness metrics of retrieval-augmented evaluation', a candidate convergence with no priority claimed; O-class. Found at the hop (H0068)",
+   "claims": [
+    "O1611-01"
+   ],
+   "cands": [
+    "H0068"
+   ],
+   "found_by": "hop"
+  },
+  {
+   "dep": 1680,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Living Academy, §11 'Attribution discipline': 'A high attribution score with a distorted identity fails this packet's central test'; O-class. Found at the hop (H0083)",
+   "claims": [
+    "O1680-01"
+   ],
+   "cands": [
+    "H0083"
+   ],
+   "found_by": "hop"
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 729,
+   "cands": [
+    "O0005"
+   ],
+   "reason": "a process note ('substrate contributions verified citation accuracy'), no claim on the class"
+  },
+  {
+   "dep": 1369,
+   "cands": [
+    "O0010"
+   ],
+   "reason": "the same process note as #729"
+  },
+  {
+   "dep": 741,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "describes the output of the archive's own evaluator (a claim-provenance audit 'which claims are supported by cited evidence'); it performs the class's check and says nothing of the class"
+  },
+  {
+   "dep": 1703,
+   "cands": [
+    "O0011"
+   ],
+   "reason": "the inverted fan's path from Wikipedia studies and verifiability research (citation needed, citation quality, SIDE): the class there is encyclopedia citation verification, not attribution evaluation of generated responses; the field does not source membership of AttributionBench in it"
+  },
+  {
+   "dep": "hop (97 candidates in 92 deposits)",
+   "cands": [
+    "H0001–H0097 except H0013, H0068, H0083"
+   ],
+   "reason": "each hop deposit's text scanned for the class's measures (support by cited or retrieved evidence, citation verification/precision/recall/quality/accuracy, faithfulness, verifiability, attribution benchmark/evaluation/score, AIS, ALCE, claim–evidence) and the hits read: 'verifiable' in its general sense (#133, #135, #149, #683, #729, #740, #825, #1081, #1183, #1185, #1196, #1201, #1202, #1210, #1362, #1369, #1384, #1386, #1389, #1631, #1677, #1684), Wikipedia verifiability policy (#1696, #1697), or no hit; none applies a category to attribution evaluation except the three admitted. #1680's 'The Tow Center's studies (2024–2025) measure citation accuracy across AI search engines' is a comparison fact, carried by the admitted sentence's deposit and not ledgered"
+  }
+ ],
+ "counts": {
+  "string_pass": {
+   "D": 0,
+   "R": 0,
+   "O": 11,
+   "O_deposits": 7
+  },
+  "hop_candidates": 97,
+  "admitted_deposits": 10,
+  "with_claims": 8,
+  "instances": 2,
+  "by_reading_beyond_pass": [
+   95,
+   1188,
+   1695,
+   1705
+  ]
+ }
+}

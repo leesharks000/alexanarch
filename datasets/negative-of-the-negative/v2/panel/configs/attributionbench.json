@@ -1,0 +1,49 @@
+{
+ "row": "attributionbench",
+ "address": "AttributionBench",
+ "entity": "AttributionBench (osu-nlp-group.github.io/AttributionBench), the benchmark for automatic attribution evaluation of the OSU NLP Group (Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun; The Ohio State University): seven existing attribution datasets in one format, each claim–evidence pair labelled attributable or not attributable (arXiv:2402.15089, 23 February 2024; ACL 2024 Findings; dataset osunlp/AttributionBench, apache-2.0); formalized in the provenance meta-aggregator record of 2026-10-29. Not AttriBench (Berman et al., the quote-attribution benchmark; census slug attribench, row attribench)",
+ "row_type": "C (a public entity on which the archive bears: a benchmark and its dataset; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bAttributionBench\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAttribution Bench\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b2402\\.15089\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bosunlp/AttributionBench\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bHow Hard is Automatic Attribution Evaluation\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "automatic attribution evaluation (is a generated claim supported by its cited evidence)",
+   "pattern": "\\b(attribution evaluation|evaluat\\w* (the )?attribution|citation (faithfulness|precision|recall|quality|accuracy)|RAG faithfulness|supported by (its |the )?(cited|retrieved) (evidence|sources?|references?)|supporting citations|verifiability in generative search|attributed question answering)\\b",
+   "flags": "i",
+   "basis": "field: B1 (arXiv:2402.15089, Abstract: 'evaluating the answer's attribution, i.e., whether every claim within the generated responses is fully supported by its cited evidence, remains an open problem ... the urgent need for automatic attribution evaluation methods'); B3 (project page, Abstract, the same; Figure 1: 'The illustration of the attribution evaluation task'); census.json rows[slug == 'attributionbench'], kind 'benchmark', capability ['tests'], relation_types ['support (is the claim fully supported by its cited evidence)']"
+  }
+ ],
+ "classes_note": "One class, sourced by locus: AttributionBench as a benchmark of automatic attribution evaluation, the task of judging whether a generated claim is fully supported by the evidence it cites (B1, B3; the census record's kind and relation_types). The census lineage 'answer engines' is the record's placement, not a class the field states, and is not used. The class pattern names the task and its adjacent measures as the field and the archive state them (attribution evaluation, citation precision/recall/quality, RAG faithfulness, support by cited or retrieved evidence); bare 'attributable' is not in the pattern (a first run with it returned 66 generic uses in 41 deposits, none on the class, read and set aside). The aliases are the entity's name (also spaced), its arXiv number, its Hugging Face dataset id and its paper title. 'Attribution' alone is not an alias and not the class: in the archive it names, mostly, credit to an author (provenance, PER), which the census record's negative tag keeps apart ('evidence support is not credit to the original author'). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on AttributionBench (D), relates it to an archive object (R), or applies an archive category to it or to automatic attribution evaluation as a class (O); a bare mention, a list entry or a reference line is not a claim. AttriBench (Berman et al.) is a distinct entity (row attribench); a candidate naming only AttriBench is not a candidate for this row.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'AttributionBench' (attributionbench-aio-20261029, OBS-90d2b25bd00a, ADDR-46cc2d945075), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#95, #716, #725, #1188, #1190, #1695, #1703, #1705).",
+ "hop_from": [
+  95,
+  716,
+  725,
+  1188,
+  1190,
+  1695,
+  1703,
+  1705
+ ]
+}

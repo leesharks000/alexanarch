@@ -1,0 +1,1219 @@
+{
+ "row": "getty-provenance-index",
+ "address": "Getty Provenance Index",
+ "addresses": [
+  "Getty Provenance Index"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia responses, or the card's title and snippet for an unreachable card; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B9: three Getty pages, Princeton's and USC's library guides, the GitHub CSV exports, CNI, ARIAH, Smarthistory); 'own_page', the entity's own pages the census cites that T did not surface (B10, the initiative page; B11, the coverage page), copied from the census's saved copies, their sha256 matching the census's; the home page (B1) is both a card and the census's first source and is carried once, as a card; 'wikipedia', the entity's title, a redirect (B12), and the section of the target article that names the entity (B13). No census source is third-party ('census_third_party' is empty: every census evidence item has basis 'operator'). Unreachable: B3 (Legacy Index, TLS failure), B5 (GitHub, session policy), B6 (CNI, Cloudflare 403), B9 (Smarthistory video, Cloudflare 403; YouTube 429); their titles and snippets stand.",
+ "lineage_note": "Lineages: what it is (B1, B2, B6, B9, B10); scale (B1, B2, B7, B10); sources (B4); the dealer stock books (B1, B11); the sales catalogs (B1, B11); the archival inventories (B1, B11); the complementary databases (B1, B11, held two ways); lifecycle (B1, B3, B8, B10); founding (B1, B10, held three ways); digital history (B1); operator (B1, B7, B10); provenance research defined (B10); the stated limit (B11); access (B1, B5); the encyclopedia (B12, B13). The census's fields restate B1, B10 and B11 and are one lineage with them (§3.6); the page keeps the date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B1, B10, B11 the census's saved copies; B2.txt begins with the page's meta description, marked; B12/B13 .wiki, .html raw responses; unreachable cards' responses saved where one was returned); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the entity's own page the census cites (getty-provenance-index--home), carried once, as a card",
+   "card": "Getty Museum — Provenance Index | Getty Tools & Databases",
+   "url": "https://www.getty.edu/databases-tools-and-technologies/provenance/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B1.html",
+     "sha256": "b52cee21703553b27011adff4e8e099f1053ddded486ce0a82c20285c7e21a57"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B1.txt",
+     "sha256": "caa8e26e3f6ee9a6b29f1f00a749a5cbe679a51627baef2645a839c3b51addc3"
+    }
+   },
+   "fetched": {
+    "how": "the census's saved copy (sources/getty-provenance-index--home.html.gz, gunzipped; .txt copied), not refetched",
+    "url": "https://www.getty.edu/databases-tools-and-technologies/provenance/",
+    "read": "2026-10-29",
+    "http": 200,
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B1.html",
+    "raw_sha256": "b52cee21703553b27011adff4e8e099f1053ddded486ce0a82c20285c7e21a57",
+    "census_sha256": "b52cee21703553b27011adff4e8e099f1053ddded486ce0a82c20285c7e21a57",
+    "sha256_match": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B1.txt"
+    ],
+    "page_datePublished": "2026-10-27T00:59:43.898Z"
+   },
+   "card_title": "Provenance Index | Getty Tools & Databases",
+   "card_snippet": "Database that provides open access to art provenance data drawn from millions of archival records.",
+   "card_note": null,
+   "names_operator": "yes ('Getty Research Institute' and the Index's team, its head named, in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Card identified by title: the page's <title> is the card's title, and the card's snippet is the page's og:description ('Database that provides open access to art provenance data drawn from millions of archival records.'). The census's copy matches its recorded sha256."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Getty Museum — Getty Provenance Index",
+   "url": "https://www.getty.edu/research/provenance/",
+   "kind": "Overview card (own page: the Remodeled Index search portal)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B2.html",
+     "sha256": "95a39d2eb8f13c30de946c9961ef4457c8249e2237b04a216e2a283d343fa435"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B2.txt",
+     "sha256": "7a5aaf006a17781f9b188215d24645195d84f4e0c63e0165317e3c1ea52c3032"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:20:45Z",
+    "http": 200,
+    "url": "https://www.getty.edu/research/provenance (302 to /research/provenance/)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B2.html",
+    "raw_sha256": "95a39d2eb8f13c30de946c9961ef4457c8249e2237b04a216e2a283d343fa435",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B2.txt"
+    ],
+    "tried": [
+     "https://provenance.getty.edu/ — the agent proxy refused CONNECT (HTTP 502), 17:07:10Z, 17:07:35Z, 17:10:19Z"
+    ]
+   },
+   "card_title": "Getty Provenance Index",
+   "card_snippet": "The Getty Provenance Index enables searching over 12 million resources across categories including activities, groups, persons, physical objects, places, proven...",
+   "card_note": null,
+   "names_operator": "yes ('J. Paul Getty Trust' in the trademark line)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's text: the snippet's 'searching over 12 million resources across categories including activities, groups, persons, physical objects, places, proven…' is the portal's search box ('Search over 12 million resources') and its type list (Activity, Group, Person, Physical Object, Place, Provenance Activity, …); the portal is the home page's 'Search the Remodeled Index' link. Its .txt begins with the page's meta description, marked, then the page text."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Getty Museum — Getty Provenance Index",
+   "url": "https://piprod.getty.edu/starweb/pi/servlet.starweb?path=pi/pi.web",
+   "kind": "Overview card (own page: the Legacy Index)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3-legacy-url-redirect.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B3-legacy-url-redirect.html",
+     "sha256": "b52cee21703553b27011adff4e8e099f1053ddded486ce0a82c20285c7e21a57"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tried": [
+     "piprod.getty.edu (the home page's 'Search the Legacy Index' link): curl 60, TLS certificate verification failed (unable to get local issuer certificate), 17:07:10Z, 17:07:35Z (with the session's CA bundle), 17:10:19Z",
+     "https://www.getty.edu/research/tools/provenance/search.html (WebSearch's hit for the snippet's database names): HTTP 200 after redirect to the current Getty Provenance Index page, the same bytes as B1 (sha256 b52cee21…), saved as B3-legacy-url-redirect.html; the snippet's text is not in it"
+    ]
+   },
+   "card_title": "Getty Provenance Index",
+   "card_snippet": "Databases: Archival Inventory Contents, Archival Inventory Descriptions, Sales Catalogs Contents, Sales Catalogs Descriptions, Goupil Stock Books, Knoedler Stoc...",
+   "card_note": null,
+   "names_operator": "yes (card site 'Getty Museum')",
+   "names_archive": "no (none of the archive's names in the card title and snippet, the only text)",
+   "note": "Unreachable; the card's title and snippet stand as its only text. The snippet's database names (Archival Inventory Contents/Descriptions, Sales Catalogs Contents/Descriptions, Goupil and Knoedler Stock Books) are the Legacy Index's."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Princeton University — Getty Provenance Index Database",
+   "url": "https://libguides.princeton.edu/az/getty-provenance-index-database",
+   "kind": "Overview card (library database guide)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B4.html",
+     "sha256": "3cfc7e3c0e9cb865174a560b5ea861e7fa4b78f3c5d2518fd37bc90621e02ce4"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B4.txt",
+     "sha256": "b59766099f3ff4505df22a6870c8774ce722d50bc02702c3833380b6a0ccc4af"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:26Z",
+    "http": 200,
+    "url": "https://libguides.princeton.edu/az/getty-provenance-index-database",
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B4.html",
+    "raw_sha256": "3cfc7e3c0e9cb865174a560b5ea861e7fa4b78f3c5d2518fd37bc90621e02ce4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B4.txt"
+    ]
+   },
+   "card_title": "Getty Provenance Index Database",
+   "card_snippet": "Databases: Getty Provenance Index containing archival documents (1550–1840), auction catalogs (1650–1840), and public art collections (1500–1990). Permitted Use...",
+   "card_note": null,
+   "names_operator": "no (the Getty Research Institute is not named; the database is)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Not found by WebSearch (three searches on title, site and snippet); the URL is the Princeton LibGuides A–Z slug of the card's title, whose page title is the card's title exactly. The card's snippet ('archival documents (1550–1840), auction catalogs (1650–1840), and public art collections (1500–1990). Permitted Use…') differs in form from the saved description ('from 1550-1840 …'), and 'Permitted Use' is not on the saved page: the snippet may come from another rendering of the same record. The saved text is ledgered."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "GitHub — CSV exports of the Getty Provenance Index - GitHub",
+   "url": "https://github.com/thegetty/provenance-index-csv",
+   "kind": "Overview card (repository: the Legacy Index's CSV exports)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5-403.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B5-403.json",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tried": [
+     "https://github.com/thegetty/provenance-index-csv (the URL the home page links as 'CSV Exports of the Legacy Getty Provenance Index'): HTTP 403 from the session's GitHub policy ('GitHub access to this repository is not enabled for this session'), 17:08:02Z; the response saved as B5-403.json. Not routed around."
+    ]
+   },
+   "card_title": "CSV exports of the Getty Provenance Index - GitHub",
+   "card_snippet": "The Getty Provenance Index databases are regularly updated by editors to reflect our latest research. The most current data are available via the Getty Provenan...",
+   "card_note": null,
+   "names_operator": "no (in the card text)",
+   "names_archive": "no (none of the archive's names in the card title and snippet, the only text)",
+   "note": "Unreachable; the card's title and snippet stand as its only text."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "CNI: Coalition for Networked Information — Rebuilding the Getty Provenance Index as Linked Data",
+   "url": "https://www.cni.org/topics/digital-humanities/rebuilding-the-getty-provenance-index-as-linked-data",
+   "kind": "Overview card (conference project briefing)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B6-403.html",
+     "sha256": "8718c2cd09467bd734771023f0acdbf5530b6efdf43f3a9f1ca9f74a344e997c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tried": [
+     "HTTP 403, a Cloudflare challenge page ('Just a moment...'), 17:08:04Z and 17:10:18Z; the first response saved as B6-403.html"
+    ]
+   },
+   "card_title": "Rebuilding the Getty Provenance Index as Linked Data",
+   "card_snippet": "The Getty Provenance Index records the ownership and sale of artwork as documented in auction house sales catalogs, archival inventories, dealer stock books, an...",
+   "card_note": null,
+   "names_operator": "no (in the card text)",
+   "names_archive": "no (none of the archive's names in the card title and snippet, the only text)",
+   "note": "URL found by WebSearch on the card's title and site. Unreachable; the card's title and snippet stand as its only text."
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "USC Libraries — Collecting and Provenance Research, Getty Research Institute",
+   "url": "https://libraries.usc.edu/databases/collecting-and-provenance-research-getty-research-institute",
+   "kind": "Overview card (library database guide)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B7.html",
+     "sha256": "7e90bc78e79733d042365284e62472a8334abad34404a7faba2941b201289639"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B7.txt",
+     "sha256": "2c7fd62c4d20e6007090e12bb579a3d24564ecd4ecdbd48c92f65b4cb61316f7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:07Z",
+    "http": 200,
+    "url": "https://libraries.usc.edu/node/75901 (redirected to the URL above)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B7.html",
+    "raw_sha256": "7e90bc78e79733d042365284e62472a8334abad34404a7faba2941b201289639",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B7.txt"
+    ]
+   },
+   "card_title": "Collecting and Provenance Research, Getty Research Institute",
+   "card_snippet": "Collecting and Provenance Research, Getty Research Institute. The Project for the Study of Collecting and Provenance (PSCP) aligns the Getty Research Institute'",
+   "card_note": null,
+   "names_operator": "yes ('Getty Research Institute')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch (libraries.usc.edu/node/75901); the page title is the card's title."
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "Association of Research Institutes in Art History — Launch of the New Getty Provenance Index",
+   "url": "https://www.ariah.info/newsjobs/launch-of-the-new-getty-provenance-index",
+   "kind": "Overview card (news item)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B8.html",
+     "sha256": "2fc8156dcfb72deffc4d0eb0c7bce33f01c980f90ee0bfbcb16d1a09afc97e35"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B8.txt",
+     "sha256": "759cbba4cdc8f2fdd5c2cfff12e30fee880cccb699294a72221c0a60178fa292"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:56Z",
+    "http": 200,
+    "url": "https://www.ariah.info/newsjobs/launch-of-the-new-getty-provenance-index",
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B8.html",
+    "raw_sha256": "2fc8156dcfb72deffc4d0eb0c7bce33f01c980f90ee0bfbcb16d1a09afc97e35",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B8.txt"
+    ]
+   },
+   "card_title": "Launch of the New Getty Provenance Index",
+   "card_snippet": "Announcing the launch of the newly remodeled Getty Provenance Index! Now released as linked open data, powered by Arches, the new GPI presents over 12 million r...",
+   "card_note": null,
+   "names_operator": "no (the Getty, not the Research Institute, named: 'decades of intensive data curation at Getty')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Not found by WebSearch (two searches); the URL is the site's /newsjobs/ pattern (read from its home page) with the card's title as slug; the page's heading and text are the card's. Undated on the page."
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9 (video)",
+   "card": "Smarthistory — What is art provenance? A Getty Research Institute case studyGetty ...",
+   "url": "https://smarthistory.org/art-provenance/",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "getty-provenance-index-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B9-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B9-403.html",
+     "sha256": "3ec61ed26bd2e1eaa7c64ed0d9dc9cdf0c2ee42f418cc5e9d1ab41ce4f917e03"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tried": [
+     "https://smarthistory.org/art-provenance/ (the URL ARIAH's item gives for 'a new Smarthistory about research using the Getty Provenance Index'): HTTP 403, a Cloudflare challenge, 17:08:09Z and 17:10:19Z; saved as B9-403.html",
+     "https://www.youtube.com/watch?v=pZWRxUxghVY (the video the Getty home page links as 'Smarthistory: What is art provenance?'): HTTP 429, 17:20:45Z; no transcript fetched"
+    ]
+   },
+   "card_title": "What is art provenance? A Getty Research Institute case studyGetty ...",
+   "card_snippet": "The Getty Provenance Index. The Getty Provenance Index® provides open access to millions of resources from dealer stock books, sales catalogs, and archival inve...",
+   "card_note": null,
+   "names_operator": "yes ('Getty Research Institute' in the title)",
+   "names_archive": "no (none of the archive's names in the card title and snippet, the only text)",
+   "note": "A video card, admitted through its title and snippet (§3.1(a))."
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the entity's own page the census cites (getty-provenance-index--initiative); not surfaced by T",
+   "card": "Getty — Getty Provenance Index Initiative | Getty Projects",
+   "url": "https://www.getty.edu/projects/getty-provenance-index-initiative",
+   "kind": "own page (the initiative)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B10.html",
+     "sha256": "760348e6cb7a40fc1e0e9e373c989b70b1d98d216364e3e623e97e6bc16ab58e"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B10.txt",
+     "sha256": "65803bb338b01e7ffc9a4b4957b2f9b4f5e67f07296adc9d1c5828915dbb796c"
+    }
+   },
+   "fetched": {
+    "how": "the census's saved copy (sources/getty-provenance-index--initiative.html.gz, gunzipped; .txt copied), not refetched",
+    "url": "https://www.getty.edu/projects/getty-provenance-index-initiative",
+    "read": "2026-10-29",
+    "http": 200,
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B10.html",
+    "raw_sha256": "760348e6cb7a40fc1e0e9e373c989b70b1d98d216364e3e623e97e6bc16ab58e",
+    "census_sha256": "760348e6cb7a40fc1e0e9e373c989b70b1d98d216364e3e623e97e6bc16ab58e",
+    "sha256_match": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B10.txt"
+    ],
+    "page_datePublished": "2026-08-26T20:09:20.147Z"
+   },
+   "names_operator": "yes ('Getty Research Institute', organizer)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Not surfaced by T."
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "role": "the entity's own page the census cites (getty-provenance-index--whats-covered); not surfaced by T",
+   "card": "Getty — What’s Covered in the Provenance Index | Getty Provenance Index",
+   "url": "https://www.getty.edu/databases-tools-and-technologies/provenance/whats-covered/",
+   "kind": "own page (coverage)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B11.html",
+     "sha256": "e5cafa0ab34a095ddb773e05e7754bbf000d79f50b353d0ac322dcaceb3d5613"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B11.txt",
+     "sha256": "7081459e6239c68932f2af308efe31c41d78e2e1f9741ed51cd9b6284a4f772a"
+    }
+   },
+   "fetched": {
+    "how": "the census's saved copy (sources/getty-provenance-index--whats-covered.html.gz, gunzipped; .txt copied), not refetched",
+    "url": "https://www.getty.edu/databases-tools-and-technologies/provenance/whats-covered/",
+    "read": "2026-10-29",
+    "http": 200,
+    "raw": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B11.html",
+    "raw_sha256": "e5cafa0ab34a095ddb773e05e7754bbf000d79f50b353d0ac322dcaceb3d5613",
+    "census_sha256": "e5cafa0ab34a095ddb773e05e7754bbf000d79f50b353d0ac322dcaceb3d5613",
+    "sha256_match": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B11.txt"
+    ],
+    "page_datePublished": "2026-09-22T23:00:12.839Z"
+   },
+   "names_operator": "yes ('Getty Research Institute', and the GPI department's staff in the visualization credits)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Not surfaced by T."
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title (a redirect)",
+   "card": "Wikipedia — Getty Provenance Index (redirect to Getty Research Institute)",
+   "url": "https://en.wikipedia.org/wiki/Getty_Provenance_Index",
+   "kind": "Wikipedia (redirect)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B12.wiki",
+     "sha256": "2f6f5b1a58ee3421526614f53270c3d2d0029f9c59cc6fa47d64a9422c03ff26"
+    },
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B12.html",
+     "sha256": "10a09011291f364195481c5f2b00ec599ef5ae5a1bf403c0a8a9e5186fc12f3a"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B12.txt",
+     "sha256": "a4222c4573626af5f8e4f9abe6ebe6bc2d9e48dfb93ba3ec69f0bb8ff8df2045"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Getty_Provenance_Index&action=raw&redirect=no",
+     "at": "2026-10-29T17:10:29Z",
+     "http": 200,
+     "sha256": "2f6f5b1a58ee3421526614f53270c3d2d0029f9c59cc6fa47d64a9422c03ff26"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Getty_Provenance_Index",
+     "at": "2026-10-29T17:10:29Z",
+     "http": 200,
+     "sha256": "10a09011291f364195481c5f2b00ec599ef5ae5a1bf403c0a8a9e5186fc12f3a",
+     "notice": "(Redirected from Getty Provenance Index)"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B12.txt"
+    ]
+   },
+   "names_operator": "yes (the redirect's target is the operator's article)",
+   "names_archive": "no",
+   "note": "No article for the entity: the title is a redirect to 'Getty Research Institute' (B13)."
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "the redirect's target article, section 'Electronic databases' (the section that names the entity)",
+   "card": "Wikipedia — Getty Research Institute § Electronic databases",
+   "url": "https://en.wikipedia.org/wiki/Getty_Research_Institute#Electronic_databases",
+   "kind": "Wikipedia (the operator's article; section ledgered)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B13.wiki",
+     "sha256": "d15b8b95a9ff03757d36e1d2e2202f4bf786c8a8807729f74b13ec2eefce8000"
+    },
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B13.html",
+     "sha256": "1d2384fd3953d1009e02db4232cc98dd5a827e5e51084115217441ef0aa6dd6f"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B13.txt",
+     "sha256": "749d344038f19ba95a1ea4c468212e9480e0c8cd4e64475eec5ca935f3463797"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Getty_Research_Institute&action=raw",
+     "at": "2026-10-29T17:10:36Z",
+     "http": 200,
+     "sha256": "d15b8b95a9ff03757d36e1d2e2202f4bf786c8a8807729f74b13ec2eefce8000"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Getty_Research_Institute",
+     "at": "2026-10-29T17:11:02Z",
+     "http": 200,
+     "sha256": "1d2384fd3953d1009e02db4232cc98dd5a827e5e51084115217441ef0aa6dd6f",
+     "revision": "1372720056, last edited 1 September 2026, 23:52"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B13.txt"
+    ]
+   },
+   "names_operator": "yes (the article is the operator's)",
+   "names_archive": "no",
+   "note": "Ledgered: the section 'Electronic databases', the one place the article names the entity. The founder has no article (Burton_B._Fredericksen and Burton_Fredericksen: HTTP 404, 2026-10-29), not ledgered."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page heading: tagline",
+   "quote": "Getty Provenance Index … Providing open access to art provenance data drawn from millions of archival records",
+   "claim": "the Index introduced by its own page: open access to art provenance data drawn from millions of archival records (the card's snippet is the page's og:description in the same words)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Search the Index ¶1",
+   "quote": "The Getty Provenance Index is transitioning to a linked open data structure and platform for enhanced access and query.",
+   "claim": "the Index is transitioning to a linked open data structure and platform",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Search the Index ¶2",
+   "quote": "The Remodeled Index in the Arches platform provides access to linked open data resources drawn from dealer stock books and sales catalogs. Archival Inventory data will also transition to this new format soon. While the Index transitions, the original datasets will remain accessible in the Legacy Index platform.",
+   "claim": "two platforms: the Remodeled Index on Arches holds the dealer stock books and sales catalogs as linked open data; the archival inventories are still to move; the original datasets stay on the Legacy Index meanwhile",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Dealer Stock Books",
+   "quote": "Dealer Stock Books … Gallery and dealer records from Goupil & Cie./Boussod, Valadon & Cie. (Paris, 1846–1919) and M. Knoedler & Co. (New York, 1872–1970)",
+   "claim": "the dealer stock books: Goupil & Cie./Boussod, Valadon & Cie. (Paris, 1846–1919) and M. Knoedler & Co. (New York, 1872–1970), two firms with two spans",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dealer stock books: Goupil and Knoedler",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Sales Catalogs",
+   "quote": "Sales Catalogs … Auction house and dealer sales catalogs documenting works of art offered for sale in Europe from 1650 to 1945",
+   "claim": "the sales catalogs: works of art offered for sale in Europe, 1650–1945",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sales catalogs",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Archival Inventories",
+   "quote": "Archival Inventories … Legal records of objects in European private collections from 1520 to 1880",
+   "claim": "the archival inventories: legal records of objects in European private collections, 1520–1880",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the archival inventories",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Provenance Resources",
+   "quote": "These databases complement the Getty Provenance Index, providing further materials for research on art transfer and ownership.",
+   "claim": "the Collectors Files, Payments to Artists and Public Collections databases complement the Index (stated as outside it)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the complementary databases: Collectors Files, Payments to Artists, Public Collections",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ About the Getty Provenance Index ¶1",
+   "quote": "The Getty Provenance Index® (GPI) contains over 12 million digitized, open-access resources that trace the origins, movements, and lineages of art and cultural artifacts. Spanning the 16th–20th centuries, the GPI includes primary source materials such as transcribed inventories, auction catalogs, and dealer stock books, with strengths in European and American art.",
+   "claim": "the Index's self-statement: over 12 million digitized open-access resources tracing the origins, movements and lineages of art and cultural artifacts; 16th–20th centuries; transcribed inventories, auction catalogs and dealer stock books; strengths in European and American art",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "scale: over 12 million resources",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ About ¶2",
+   "quote": "Founded in 1974 by Burton Fredericksen, the GPI was created to improve access to information found in archival documents related to the ownership of art. Originating in the Getty Museum’s Paintings department, the GPI is the product of continued international collaboration and has expanded to include information from the Getty Research Institute's own archives related to dealers and the art trade.",
+   "claim": "founded in 1974 by Burton Fredericksen, to improve access to archival information on the ownership of art; originating in the Getty Museum's Paintings department; expanded to the Research Institute's own dealer and art-trade archives",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "founding: 1974, 1981 or the early 1980s; Burton Fredericksen",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ About ¶3 s2",
+   "quote": "First compiled digitally in 1984, published on CD-ROM in 1994, and launched online in 1998, it has evolved alongside advances in provenance research and digital art history.",
+   "claim": "compiled digitally in 1984, on CD-ROM in 1994, online in 1998",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "digital history: 1984, 1994, 1998",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ About ¶3 s1, s3",
+   "quote": "As one of the earliest digital art history initiatives, the GPI has continually operated at the forefront of technological advancement and open access. … More recently, the GPI has transitioned to a Linked Open Data (LOD) framework, enabling network visualization and cross-database analysis.",
+   "claim": "the Index's self-assessment as one of the earliest digital art history initiatives, and its transition to linked open data for network visualization and cross-database analysis",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "digital history: 1984, 1994, 1998",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ 1",
+   "quote": "The Getty Provenance Index® provides open access to millions of richly curated records that document historic transfers of art ownership. It is used to trace the ownership, movement, and histories of artworks, providing essential data for provenance research and the study of cultural heritage.",
+   "claim": "the Index's records document historic transfers of art ownership and are used to trace the ownership, movement and histories of artworks",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ 3",
+   "quote": "Access to Archival Inventories records are currently available on our legacy database platform , but will soon be remodeled as linked open data and migrated to Arches. The Payments to Artists, Collectors Files, and Public Collections datasets are available through their current platform .",
+   "claim": "access by platform: archival inventories on the legacy platform until migrated; the three complementary datasets on their current platform",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Contact the Provenance Index Team",
+   "quote": "Sandra van Ginhoven … Head, Getty Provenance Index",
+   "claim": "the Index's head is named on its page: Sandra van Ginhoven",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§ Related Resources",
+   "quote": "API Documentation … Documentation for API methods available for Getty Provenance Index data, as well as guidance on licenses and attribution … CSV Exports of the Legacy Getty Provenance Index … Page on Github where you can download raw datasets from the Legacy Index",
+   "claim": "machine access: API documentation with guidance on licences and attribution; the Legacy Index's raw datasets as CSV on GitHub",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: portal, API, CSV exports",
+   "date": "2026-10-27 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B1.txt (sha256 caa8e26e3f6ee9a6…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "search portal: search box and type list",
+   "quote": "Search over 12 million resources … Activity … Group … Person … Physical Object … Place … Provenance Activity … Set … Textual Work … Visual Work",
+   "claim": "the Remodeled Index searches over 12 million resources by type: activity, group, person, physical object, place, provenance activity, set, textual work, visual work",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: over 12 million resources",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B2.txt (sha256 7a5aaf006a17781f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "meta description; footer",
+   "quote": "The Getty Provenance Index® provides open access to millions of richly curated records that document historic transfers of art ownership. … The Getty Provenance Index® is a registered trademark of the J. Paul Getty Trust.",
+   "claim": "the portal's description (the FAQ's first sentence) and the name as the J. Paul Getty Trust's registered trademark",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B2.txt (sha256 7a5aaf006a17781f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (Legacy Index unreachable: TLS failure)",
+   "quote": "Databases: Archival Inventory Contents, Archival Inventory Descriptions, Sales Catalogs Contents, Sales Catalogs Descriptions, Goupil Stock Books, Knoedler Stoc...",
+   "claim": "the Legacy Index's databases by name: archival inventory contents and descriptions, sales catalog contents and descriptions, Goupil and Knoedler stock books",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-29 (the card as composed; source undated)",
+   "checked_against": "the card's title and snippet in data/EA-WG-CAPTURES-01.json (cite_list)",
+   "quote_ok": true
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description",
+   "quote": "Contains 3 separate databases for provenance research: archival documents from 1550-1840, auction catalogs from 1650-1840, and public art collections from 1500-1990.",
+   "claim": "a library guide's description: three databases, archival documents 1550–1840, auction catalogs 1650–1840, public art collections 1500–1990 (spans the Getty's pages give otherwise: F5, F6)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "sources: dealer stock books, sales catalogs, archival inventories",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B4.txt (sha256 b59766099f3ff450…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet (GitHub unreachable: session policy)",
+   "quote": "The Getty Provenance Index databases are regularly updated by editors to reflect our latest research. The most current data are available via the Getty Provenan...",
+   "claim": "the CSV exports' notice: the databases are updated by editors, and the most current data are elsewhere (the snippet breaks off)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: portal, API, CSV exports",
+   "date": "2026-10-29 (the card as composed; source undated)",
+   "checked_against": "the card's title and snippet in data/EA-WG-CAPTURES-01.json (cite_list)",
+   "quote_ok": true
+  },
+  "F21": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card snippet (CNI unreachable: 403)",
+   "quote": "The Getty Provenance Index records the ownership and sale of artwork as documented in auction house sales catalogs, archival inventories, dealer stock books, an...",
+   "claim": "the Index records the ownership and sale of artwork as documented in sales catalogs, archival inventories and dealer stock books (the snippet breaks off)",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-10-29 (the card as composed; source undated)",
+   "checked_against": "the card's title and snippet in data/EA-WG-CAPTURES-01.json (cite_list)",
+   "quote_ok": true
+  },
+  "F22": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "database description s1",
+   "quote": "The Project for the Study of Collecting and Provenance (PSCP) aligns the Getty Research Institute's collections and the expertise of its staff with the work of scholars interested in the history of collecting, provenance, art markets, and display around the world.",
+   "claim": "the USC guide lists the Getty's Project for the Study of Collecting and Provenance (PSCP), the Research Institute's collections and staff aligned with scholars of collecting, provenance, art markets and display",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B7.txt (sha256 2c7fd62c4d20e600…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F23": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "database description s2",
+   "quote": "At the heart of its operations is the Getty Provenance Index®, which currently contains more than 2.3 million records taken from source material such as archival inventories, auction catalogs, and dealer stock books.",
+   "claim": "the Index at the heart of the PSCP, 'more than 2.3 million records' (a count the Getty's pages now give as over 12 million: F8, F16)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: over 12 million resources",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B7.txt (sha256 2c7fd62c4d20e600…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F24": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "news item s1–2",
+   "quote": "Announcing the launch of the newly remodeled Getty Provenance Index! Now released as linked open data, powered by Arches, the new GPI presents over 12 million records regarding the ownership and transfer of art, with strong coverage in European and American paintings.",
+   "claim": "the relaunch: the remodeled Index released as linked open data on Arches, over 12 million records on the ownership and transfer of art, strong in European and American paintings",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B8.txt (sha256 759cbba4cdc8f2fd…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F25": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "news item s3",
+   "quote": "This project is the result of decades of intensive data curation at Getty and promises to open up a whole new host of possibilities for advanced provenance research with relevance to art history, digital humanities, and data science.",
+   "claim": "the remodel as the result of decades of data curation at Getty, with uses in art history, digital humanities and data science",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-10-29 (as fetched; undated)",
+   "checked_against": "saved text B8.txt (sha256 759cbba4cdc8f2fd…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F26": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "card title and snippet (video; Smarthistory unreachable: 403; YouTube 429)",
+   "quote": "What is art provenance? A Getty Research Institute case studyGetty ... The Getty Provenance Index. The Getty Provenance Index® provides open access to millions of resources from dealer stock books, sales catalogs, and archival inve...",
+   "claim": "a video case study of art provenance with the Getty Research Institute, its snippet the Index's open access to millions of resources from stock books, sales catalogs and archival inventories",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-10-29 (the card as composed; source undated)",
+   "checked_against": "the card's title and snippet in data/EA-WG-CAPTURES-01.json (cite_list)",
+   "quote_ok": true
+  },
+  "F27": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "page heading",
+   "quote": "Getty Provenance Index Initiative … Multi-Project Initiative … Using digital technology to trace the ownership, exchange, movement, and histories of artworks",
+   "claim": "the initiative: a multi-project initiative using digital technology to trace the ownership, exchange, movement and histories of artworks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F28": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Project Details",
+   "quote": "Years … 1981 – present … Status … Active … Organizer … Getty Research Institute",
+   "claim": "the initiative's project details: years 1981–present, active, organized by the Getty Research Institute (a third founding date beside 1974 and 'the early 1980s')",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: 1974, 1981 or the early 1980s; Burton Fredericksen",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F29": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Goal ¶1 s1",
+   "quote": "Provenance research—the study of ownership history of artworks and cultural objects—is central to the Getty Research Institute’s (GRI) mission to cultivate advanced knowledge of art and its varied histories.",
+   "claim": "provenance research defined: the study of the ownership history of artworks and cultural objects",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "provenance research defined",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F30": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Goal ¶1 s2",
+   "quote": "Established as one of the GRI’s foundational initiatives in the 1980s, the Getty Provenance Index® (GPI) provides global scholars with access to records that trace the origins, movements, and lineage of cultural artifacts, contributing to a global understanding of art and its shared cultural heritage.",
+   "claim": "established as one of the Research Institute's foundational initiatives in the 1980s; records tracing the origins, movements and lineage of cultural artifacts",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "founding: 1974, 1981 or the early 1980s; Burton Fredericksen",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F31": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Goal ¶2 s1",
+   "quote": "The GPI is an active research initiative carried out by Getty staff that supports an evolving data resource with the same name.",
+   "claim": "one name for two things: an active research initiative of Getty staff, and the evolving data resource it supports",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F32": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Goal ¶2 s2–3",
+   "quote": "Drawing from documents in the GRI’s collections and other international sources, the data provided by the GPI enables research in art collecting, market history, and ownership studies. Presented as linked open data to enable advanced research through computational methods, the GPI empowers scholars to explore patterns in the movement and social lives of artworks on a larger scale.",
+   "claim": "the data, from the Research Institute's collections and other international sources, serve research in collecting, market history and ownership studies, as linked open data for computational methods",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: open access to art provenance records",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F33": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Outcomes: Commitment to Research",
+   "quote": "Unlike projects with a defined endpoint, the GPI is intended to evolve over time to meet the changing needs of scholars and cultural institutions.",
+   "claim": "no defined endpoint: the Index is meant to keep evolving",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F34": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Outcomes: Public Reach",
+   "quote": "With over 12 million resources digitized and publicly accessible, the GPI advances research, education, and public engagement in the field of provenance and cultural heritage.",
+   "claim": "over 12 million resources digitized and publicly accessible",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: over 12 million resources",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F35": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Background: The Origins ¶1 s1–2",
+   "quote": "The GPI began as an initiative within the Getty Museum’s Paintings department in the early 1980s led by curator Burton B. Fredericksen. Fredericksen established the Provenance Index by initially focusing on cataloging Italian paintings in public collections.",
+   "claim": "begun in the early 1980s as an initiative of the Getty Museum's Paintings department led by curator Burton B. Fredericksen, who began by cataloging Italian paintings in public collections",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "founding: 1974, 1981 or the early 1980s; Burton Fredericksen",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F36": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Background: The Origins ¶1 s3–4",
+   "quote": "Over time, the scope expanded to include auction catalogs and archival inventories from a range of regions and historical periods, and more recently material from the GRI’s extensive archives and acquisitions related to art dealers, collectors, and the art trade. By 2004, the project had grown into a dedicated department—now known as the Getty Provenance Index—committed to advancing provenance research globally.",
+   "claim": "the scope widened to auction catalogs, archival inventories and the Research Institute's dealer archives; by 2004 a dedicated department, itself now called the Getty Provenance Index",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Getty Research Institute, its department and initiative",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Transition to Linked Open Data; Projects in This Initiative",
+   "quote": "The GPI's adoption of linked open data and the open-source Arches platform responds to modern research demands. … Remodeling the Getty Provenance Index … A complete overhaul of the Getty Provenance Index® to increase its use as a leading tool for research",
+   "claim": "linked open data and Arches adopted for research demands; the remodel a complete overhaul",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: linked open data on Arches, the Legacy Index during the transition",
+   "date": "2026-08-26 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B10.txt (sha256 65803bb338b01e7f…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F38": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "The quantity and scope of research material available in the Getty Provenance Index® varies by region, period, and type of document. These resources are updated periodically as new material is integrated.",
+   "claim": "the stated limit: quantity and scope vary by region, period and type of document; updated periodically",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limit: coverage varies",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F39": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Content of the Provenance Index",
+   "quote": "The databases that form the foundation of the Getty Provenance Index (GPI) include: … Collectors Files – References to over 20,000 Getty Research Institute files on collectors and collections from the Middle Ages to the 21st century … Payments to Artists – Records of payments to artists in Rome between 1576 and 1711, highlighting patronage and artistic networks … Public Collections – Provenance records from 1500 to 1990 for artworks in public institutions across Great Britain and the United States",
+   "claim": "the coverage page counts the Collectors Files, Payments to Artists and Public Collections among the databases that form the Index's foundation (the home page states they complement it: F7)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the complementary databases: Collectors Files, Payments to Artists, Public Collections",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F40": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Dealer Stock Books ¶1 s2",
+   "quote": "Included in the Provenance Index are more than 190,000 resources from the 15 stock books of Goupil & Cie./Boussod, Valadon & Cie in Paris (1846–1919), as well as over 190,000 resources from the 11 painting stock books and enhanced with purchase information from the 21 paintings and watercolors sales books of M. Knoedler & Co. in New York (1872–1970).",
+   "claim": "the stock books counted: 15 of Goupil/Boussod, Valadon (Paris, 1846–1919), more than 190,000 resources; 11 painting stock books of Knoedler (New York, 1872–1970) with 21 sales books, over 190,000 resources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the dealer stock books: Goupil and Knoedler",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F41": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Sales Catalogs ¶1 s2, ¶2 s1",
+   "quote": "This dataset includes records from Belgium, France, Germany, Great Britain, the Netherlands, and Scandinavia, spanning 1650 to 1945. … The Provenance Index encompasses over 12 million resources extracted from more than 22,000 catalogs, providing detailed insights into the sale of primarily paintings, sculptures, and drawings.",
+   "claim": "the sales catalogs: Belgium, France, Germany, Great Britain, the Netherlands and Scandinavia, 1650–1945; over 12 million resources from more than 22,000 catalogs (stated in the sales-catalog section)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sales catalogs",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F42": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Sales Catalogs ¶3",
+   "quote": "Additionally, the dataset features bibliographic information for over 8,700 German sales from 1900 to 1945. More than 830,000 auction records have been digitally extracted, with links to full PDFs hosted at the Heidelberg University Library .",
+   "claim": "German sales 1900–1945: over 8,700 sales, more than 830,000 auction records, linked to Heidelberg University Library's PDFs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sales catalogs",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F43": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Archival Inventories ¶1 s2–3",
+   "quote": "These records, dating from 1520 to 1880, provide critical insights into the contents of historical collections in France, Italy, Germany, the Netherlands, and Spain. The Provenance Index includes over 276,000 individual records extracted from more than 13,000 archival documents.",
+   "claim": "the archival inventories: 1520–1880, France, Italy, Germany, the Netherlands, Spain; over 276,000 records from more than 13,000 documents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the archival inventories",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "§ Collectors Files; § Payments to Artists; § Public Collections",
+   "quote": "The Collectors Files database indexes approximately 20,000 folders containing information about international collectors, dealers, auctioneers, and art institutions from the late Middle Ages to the present. … This database contains approximately 1,000 payments recorded in Rome between 1576 and 1711. … Covering over 95,000 records spanning from 1500 to 1990, it offers valuable insights into the ownership histories and institutional holdings of artworks.",
+   "claim": "the complementary databases counted: about 20,000 collectors' folders; about 1,000 payments in Rome, 1576–1711; over 95,000 public-collection records, 1500–1990",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the complementary databases: Collectors Files, Payments to Artists, Public Collections",
+   "date": "2026-09-22 (page datePublished; read 2026-10-29)",
+   "checked_against": "saved text B11.txt (sha256 7081459e6239c689…), whitespace-normalised",
+   "quote_ok": true
+  },
+  "F45": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "raw wikitext (redirect=no)",
+   "quote": "#REDIRECT[[Getty Research Institute]]",
+   "claim": "the encyclopedia has no article for the Index: its title redirects to the operator's article",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia: a redirect to the operator",
+   "date": "2026-10-29 (as fetched)",
+   "checked_against": "raw wikitext B12.wiki",
+   "quote_ok": true
+  },
+  "F46": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "§ Electronic databases (lead and item 3)",
+   "quote": "Among the electronic databases from the former Getty Information Institute that GRI continues to produce are: … Getty Provenance Index which holds records of collections, auction sales and other information for researching the art market and the provenance of works.",
+   "claim": "the operator's article lists the Index among the electronic databases 'from the former Getty Information Institute' that the Research Institute continues to produce, holding records of collections and auction sales for research on the art market and provenance",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia: a redirect to the operator",
+   "date": "2026-09-01 (revision 1372720056)",
+   "checked_against": "saved text B13.txt (sha256 749d344038f19ba9…), whitespace-normalised",
+   "quote_ok": true
+  }
+ },
+ "field_sources": {
+  "B1": "Getty Museum — Provenance Index | Getty Tools & Databases",
+  "B2": "Getty Museum — Getty Provenance Index",
+  "B3": "Getty Museum — Getty Provenance Index",
+  "B4": "Princeton University — Getty Provenance Index Database",
+  "B5": "GitHub — CSV exports of the Getty Provenance Index - GitHub",
+  "B6": "CNI: Coalition for Networked Information — Rebuilding the Getty Provenance Index as Linked Data",
+  "B7": "USC Libraries — Collecting and Provenance Research, Getty Research Institute",
+  "B8": "Association of Research Institutes in Art History — Launch of the New Getty Provenance Index",
+  "B9": "Smarthistory — What is art provenance? A Getty Research Institute case studyGetty ...",
+  "B10": "Getty — Getty Provenance Index Initiative | Getty Projects",
+  "B11": "Getty — What’s Covered in the Provenance Index | Getty Provenance Index",
+  "B12": "Wikipedia — Getty Provenance Index (redirect to Getty Research Institute)",
+  "B13": "Wikipedia — Getty Research Institute § Electronic databases"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "row": "schoenberg-database",
+ "address": "Schoenberg Database of Manuscripts",
+ "entity": "The Schoenberg Database of Manuscripts (SDBM, sdbm.library.upenn.edu), the Schoenberg Institute for Manuscript Studies' crowd-sourced relational database of observations of pre-modern manuscripts in auction and sales catalogues, inventories and institutional and private collection catalogues (over 14,000 sources on its home page; 240,000 records in the Mapping Manuscript Migrations white paper), one of the three source datasets that Mapping Manuscript Migrations aggregates; formalized in the provenance census record of 2026-10-29 (provenanceerasure.org/aggregators/schoenberg-database/)",
+ "row_type": "C (a public entity on which the archive bears: a database of manuscript provenance observations; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bSchoenberg Database\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bSDBM\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bsdbm\\.library\\.upenn\\.edu\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bSchoenberg Institute\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "manuscript provenance: the history of manuscripts' sales, locations and ownership (archival and art-historical provenance of objects)",
+   "pattern": "\\b(manuscript provenance|provenance (?:of|for) (?:\\w+ ){0,3}manuscripts|history and provenance of|chains? of ownership|ownership histor(?:y|ies)|custodial histor(?:y|ies)|manuscripts, signatures)\\b",
+   "flags": "i",
+   "basis": "field: B9 (sdbm.library.upenn.edu, home: 'other sources that document the sales and locations of these books from around the world'); B8 (JOHD 2020, 'Data Transformation and Aggregation': 'three specialist databases, which focus on the history and provenance of medieval and Renaissance manuscripts'); B10 (MMM white paper: 'two specialized relational databases which focus on the history and provenance of medieval and Renaissance manuscripts'); census lineage 'manuscripts and books', kind 'database', relation_types sale, location, ownership"
+  }
+ ],
+ "classes_note": "One class, sourced from the field by locus (B9, B8, B10) and stated in the census record's own lineage ('manuscripts and books'), kind ('database') and relation types (sale, location, ownership): the SDBM as an instrument of manuscript provenance, the documented history of a manuscript's sales, locations and owners. The aliases are the entity's name (the short form 'Schoenberg Database' as the field's own sources use it, B10), its abbreviation (case-sensitive), its domain, and its operator's name ('Schoenberg Institute', which also returns the Schoenberg Institute for Manuscript Studies' journal and symposium). Not aliases: 'SIMS' (in the archive 'SIMs' are Semantic Integrity Markers, a homonym; the bare acronym is not used); 'Lawrence J. Schoenberg' and the Lawrence J. Schoenberg Collection (a distinct entity on the rail: the collection, not the database); 'Schoenberg' alone (in the archive it is Arnold Schoenberg, the composer, in #1569's lineage tables, a homonym); 'Mapping Manuscript Migrations' (the neighbour entity that aggregates the SDBM, row mapping-manuscript-migrations; zero occurrences in the archive's texts at a direct grep, 2026-10-29). Admission by reading (§3.4): D, a claim on the SDBM or its operator, the SDBM or the Institute named; R, a relation the archive states between the SDBM and an archive object; O-class, a sentence where the archive applies one of its own categories (the dimensions of provenance, semantic provenance, the Provenance Erasure Rate, retrocausal canon formation's account of traditional provenance) to manuscript or object provenance as a class. A bare mention, a list of disciplinary homes without a claim, a citation-list entry or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Schoenberg Database of Manuscripts' (schoenberg-database-of-manuscripts-aio-20261029, OBS-b5f349e78d48, ADDR-f3c289f6b10f), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#43, #725).",
+ "hop_from": [
+  43,
+  725
+ ]
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getty Provenance Index Database</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script>
+        var is_bootstrap = true;
+    </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noarchive"/>
+<!-- favicon.twig -->
+<link rel="apple-touch-icon" sizes="180x180" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/favicon-16x16.png">
+<link rel="manifest" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/site.webmanifest">
+<link rel="mask-icon" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="//d2jv02qf7xgjwx.cloudfront.net/apps/common/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- !favicon.twig -->
+
+
+<link rel="stylesheet" href="https://static-assets-us.libguides.com/web/jquery/css/jquery-ui.min.css?2691"/>
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="https://static-assets-us.libguides.com/web/css3.30.4/lg-public-bs5.min.css"/>
+
+    <script type="text/javascript" src="https://static-assets-us.libguides.com/web/jquery/js/jquery-3.7.0.min.js"></script>
+
+<!-- js_include_fallback_lg.twig -->
+<script src="//code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script>jQuery.ui || document.write('<script src="https://static-assets-us.libguides.com/web/jquery/js/jquery-ui.min.js?2691">\x3C/script>');</script>
+<!-- !js_include_fallback_lg.twig -->
+
+    <script type="text/javascript" src="https://static-assets-us.libguides.com/web/js3.30.4/lg-public-bs5.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"/>
+
+    <script src="https://static-assets-us.libguides.com/web/select2/current/js/select2.min.js"></script>
+    <script src="https://static-assets-us.libguides.com/web/js3.30.4/springshare.select2.min.js"></script>
+    <link rel="stylesheet" href="https://static-assets-us.libguides.com/web/select2/current/css/select2.min.css"/>
+
+
+    <script>
+    var springStats = springStats || {};
+    springStats.saConfig = springStats.saConfig || {
+        site_id: 77,
+        tracking_parameters: {"_st_content_id":2939372,"_st_site_id":77},
+        tracking_server_host: "libguides.princeton.edu"
+    };
+</script>
+<script  src="https://static-assets-us.libguides.com/web/js/sa.min.js?3116"></script>
+
+<script type="text/javascript">
+    springSpace.publicObj = new springSpace.public.Public({
+        constant: {
+            PROCESSING: {},
+            CONTENT: {}
+        }
+    });
+
+    jQuery(document).ready(function () {
+        localStorage.historyBackToList = true;
+        jQuery('.az-landing-info a, .breadcrumb a').on('click', function(event) {
+            localStorage.historyBackToList = false;
+            event.preventDefault();
+            var href = jQuery(this).attr('href');
+                        window.location = href;
+            return false;
+        });
+
+        jQuery('a.az-landing-back-link').on('click', function(event) {
+            event.preventDefault();
+            var urlQs = '';
+            if (typeof (Storage) !== "undefined" && localStorage.loadAzListConfig) {
+                springSpace.azList = {az_preview: ''};
+                urlQs = encodeURI(springSpace.publicObj.buildAzQs(JSON.parse(localStorage.loadAzListConfig)));
+            }
+
+            window.location = jQuery(this).attr('href') + urlQs;
+            return false;
+        });
+    });
+
+    jQuery(function () {
+        
+        jQuery(document).ready(function () {
+            springSpace.springTrack.trackPage({_st_type_id: '28'});
+        });
+    });
+
+    
+</script>
+
+
+<!-- BEGIN: Analytics code --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TDCM36MH');</script>
+<!-- End Google Tag Manager --><!-- END: Analytics code -->
+            <script>
+if (window.location.href !="https://libguides.princeton.edu/az/databases") {
+jQuery(document).ready(function () {
+          jQuery("<div class='s-lib-main container s-lib-side-borders' tabindex='-1'><section><div class='row'><div class='col-md-12 center'><h3 >Copyright and Access</h3><p><strong>You May:</strong> Access, search and browse the database or publication; Print or download a limited number of articles, records, abstracts, or parts of chapters for personal use; Include summary information and brief quotations in academic publications, provided that the source is acknowledged.</p><p><strong>You May Not:</strong> Sell copies of items printed or downloaded; Distribute copies of any portions of this resource to anyone not affiliated with Princeton University; Employ automated processes (searching, downloading, web crawling, web scraping) to obtain information or data; Perform excessive manual or automated searching or downloading; Use content and information for commercial purposes; Use content in course packs or electronic reserves without permission. If you have any questions regarding Authorized Uses of this resource, contact eSupport@princeton.edu.</p></div></div></section></div>").insertBefore("#s-lib-footer-public"); 
+       jQuery(".col-vendors").remove( );
+});
+}
+</script>
+
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3.5.0/dist/vue.esm-browser.prod.js",
+      "lux-design-system": "https://unpkg.com/lux-design-system@7.14.1/dist/lux-styleguidist.mjs"
+    }
+  }
+</script>
+
+<script type="module">
+import { createApp } from 'vue';
+import lux from 'lux-design-system';
+
+const headerApp = createApp({});
+headerApp.use(lux)
+.mount('#lux-header-container')
+
+const footerApp = createApp({});
+footerApp.use(lux)
+.mount('#lux-footer-container');
+</script>
+
+
+
+
+    
+                <link rel="stylesheet" href="/lookfeel.css">
+                <style>
+  @import url("https://unpkg.com/lux-design-system@7.14.1/dist/style.css");
+  @import url("https://use.typekit.net/xbi8ees.css");
+
+  body { 
+    font-family: "franklin-gothic-urw", 'Helvetica Neue', Arial, sans-serif;
+  }
+
+.lux-library-footer.dark {
+   margin: 3rem 0 0 0;
+}
+
+#s-lib-scroll-top {
+ margin-bottom: 1.5rem;
+}
+
+.lux-library-links.subscribe-layout h2 {
+     color: white;
+}
+
+#az-search-col-1>nav {
+    background-color: #f7f7f7;
+ }
+
+#s-lg-az-trials {
+    background-color: #f7f7f7;
+  }
+
+.az-flags span.badge:last-child {
+    background-color: #e77500
+  }
+
+#s-lg-az-index button {
+     color: #000000
+ }
+
+#s-lg-az-index .active-alpha {
+    background-color: #fff;
+    color: #e77500;
+    border: 1px solid #e77500;
+  }
+
+#s-lg-az-popular .az-description, #s-lg-az-popular .az-description-full, #s-lg-az-trials .az-description, #s-lg-az-trials .az-description-full {
+    font-weight: 450;
+    font-size: .813rem;
+    color: #000000;
+}
+
+.select2-container--bootstrap5 {
+    --bs-dropdown-box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+    --bs-dropdown-bg: var(--bs-body-bg);
+    --bs-component-hover-color: #e77500;
+    --bs-component-hover-bg: #f7f7f7;
+    --bs-hover-color: #fcf1e5;
+    --bs-link-hover-color: #e77500;
+}
+
+.btn-link {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: var(--bs-link-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-disabled-color: #ffffff;
+    --bs-btn-disabled-border-color: transparent;
+    --bs-btn-box-shadow: none;
+    --bs-btn-focus-shadow-rgb: transparent;
+    text-decoration: underline;
+}
+
+</style>
+
+    </head>
+                    
+    
+    
+            <body class="s-lib-public-body az-landing">
+            <a id="s-lg-public-skiplink" class="alert-info" href="#s-lib-public-main">
+    Skip to Main Content
+</a>    
+            
+    <header>
+        <div id="lux-header-container">
+    <lux-library-header app-name="Databases" abbr-name="A-Z" app-url="https://libguides.princeton.edu/az/databases" theme="dark">
+      <lux-menu-bar type="main-menu" :menu-items="[
+          {name: 'Help', component: 'Help', href: 'https://library.princeton.edu/help'},
+          {name: 'Your Accounts', component: 'Account', href: 'https://library.princeton.edu/services/accounts'}
+        ]"
+      ></lux-menu-bar>
+    </lux-library-header>
+  </div>
+    </header>
+
+    
+    <div id="s-lib-public-header" class="s-lib-header container s-lib-side-borders">
+                 <nav id="s-lib-bc" aria-label="breadcrumb"><ol id="s-lib-bc-list" class="breadcrumb"><li id="s-lib-bc-customer" class="breadcrumb-item"><a href="https://library.princeton.edu">Princeton University Library</a></li><li id="s-lib-bc-site" class="breadcrumb-item"><a href="https://libguides.princeton.edu/">Research Guides</a></li><li id="s-lib-bc-index" class="breadcrumb-item"><a href="/az/databases">Databases</a></li><li id="s-lib-bc-page" class="active breadcrumb-item">Getty Provenance Index Database</li></ol></nav>
+    
+                <div class="d-flex mt-4">
+            <div class="flex-fill">
+                <h1 id="s-lib-public-header-title">
+                    <a href="https://libguides.princeton.edu/resource/3812" onclick="return springSpace.springTrack.trackLink({_st_content_id: '2939372',_st_inc_return: this,link: this,_st_type_id: '16'});" class="d-lg-none" target="_blank">
+                        Getty Provenance Index Database
+
+                                                    <i class="fa fa-fw fa-external-link " 
+    aria-hidden="true"
+           title="This link opens in a new window"
+   ></i><span class="sr-only">This link opens in a new window</span>                                            </a>
+
+                    <div class="d-lg-none">
+                        <div class="s-lib-public-header-attributes-and-flags align-text-top">
+                            
+
+                        </div>
+
+                        <div class="az-icons">
+                            
+                        </div>
+                    </div>
+
+                    <span class="d-none d-lg-block">
+                        <!-- This must be all on one line to avoid an ugly blank link line -->
+                        <a href="/az/databases" class="az-landing-back-link" aria-label="Back to Databases"><i class="fa fa-arrow-left fs-5 align-middle me-2 text-body" aria-hidden="true"></i></a>
+                        
+                        
+                        Getty Provenance Index Database
+
+                        <div class=" s-lib-public-header-attributes-and-flags align-text-top ms-3">
+                            
+
+                        </div>
+
+                        <div class="az-icons">
+                            
+                        </div>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    
+                                    <div class="d-none d-lg-block">
+                <a href="https://libguides.princeton.edu/resource/3812" onclick="return springSpace.springTrack.trackLink({_st_content_id: '2939372',_st_inc_return: this,link: this,_st_type_id: '16'});" target="_blank">
+                    <button class="btn btn-primary">
+                        Access Database
+                    </button>
+                </a>
+            </div>
+            
+    </div>
+    <div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders" tabindex="-1">
+        <section>
+            <div id="s-lg-az-cols" class="row">
+                <div id="col1" class="col-md-12 center">
+                                        <div class="w-100 mb-5">
+                <div class="az-landing-info row">
+                    <dl>
+                        
+
+                                                    <dt>Subjects:</dt>
+                            <dd><div><a href="/az/databases?s=222714" class="">Art &  Archaeology</a></div></dd>
+                        
+                                                    <dt>Types:</dt>
+                            <dd><div><a href="/az/databases?t=63730">Open Access</a></div></dd>
+                        
+                        
+                        
+                        
+                                            </dl>
+                </div>
+            </div>
+        
+                    <h2 class="mb-3 description-header">
+                Description
+            </h2>
+            <div class="mt-2 mb-4 pb-2 az-landing-bottom border-bottom-0">
+                <p><p>Contains 3 separate databases for provenance research: archival documents from 1550-1840, auction catalogs from 1650-1840, and public art collections from 1500-1990.</p></p>
+            </div>
+        
+        
+        
+                    <div class="mt-5 mb-5 d-lg-none">
+                <a href="https://libguides.princeton.edu/resource/3812" onclick="return springSpace.springTrack.trackLink({_st_content_id: '2939372',_st_inc_return: this,link: this,_st_type_id: '16'});" target="_blank">
+                    <button class="btn btn-primary">
+                        Access Database
+                    </button>
+                </a>
+            </div>
+            
+                </div>
+            </div>
+        </section>
+    </div>
+            
+<div id="s-lib-footer-public" class="container s-lib-footer footer s-lib-side-borders">
+    <div>
+        <div id="s-lib-footer-brand">
+            Powered by Springshare.
+        </div>
+        <div id="s-lib-footer-rights">
+            All rights reserved.
+        </div>
+        <div id="s-lib-footer-login-link">
+            <a href="https://princeton.libapps.com/libapps/login.php?site_id=77">Login to LibApps</a>
+        </div>
+    </div>
+    <div>
+        <div id="s-lib-footer-support-link">
+            <a href="mailto:l-support@princeton.edu">Report a problem.</a>
+        </div>
+    </div>
+</div><div id="s-lib-alert" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="s-lib-alert-title" aria-label="Alert Title"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div id="s-lib-alert-loading">
+                    <style>.loader-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.loader{height:1rem;line-height:1rem}.loader__dot{-webkit-animation:load 501ms alternate infinite;animation:load 501ms alternate infinite;background-color:#f7941d;border-radius:50%;display:inline-block;font-size:0;height:.5rem;margin:0 .25rem;width:.5rem}.loader__dot:nth-of-type(2){-webkit-animation-delay:.2s;animation-delay:.2s}.loader__dot:nth-of-type(3){-webkit-animation-delay:.4s;animation-delay:.4s}.loader__dot:nth-of-type(4){-webkit-animation-delay:.6s;animation-delay:.6s}.loader__dot:nth-of-type(5){-webkit-animation-delay:.8s;animation-delay:.8s}.loader__dot:nth-of-type(6){-webkit-animation-delay:1s;animation-delay:1s}.loader__dot:nth-of-type(7){-webkit-animation-delay:1.2s;animation-delay:1.2s}.loader__dot:nth-of-type(8){-webkit-animation-delay:1.4s;animation-delay:1.4s}.loader__dot:nth-of-type(9){-webkit-animation-delay:1.6s;animation-delay:1.6s}.loader__dot:nth-of-type(10){-webkit-animation-delay:1.8s;animation-delay:1.8s}@-webkit-keyframes load{0%{-webkit-transform:scale(0,0);transform:scale(0,0)}100%{-webkit-transform:scale(1,1);transform:scale(1,1)}}@keyframes load{0%{-webkit-transform:scale(0,0);transform:scale(0,0)}100%{-webkit-transform:scale(1,1);transform:scale(1,1)}}</style>
+<div class="loader-container">
+  <div aria-live="polite" class="loader" role="status">
+    <span class="loader__text sr-only">Loading ... </span>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+    <div class="loader__dot"></div>
+  </div>
+</div>
+                </div>
+
+                <div id="s-lib-alert-content"></div>
+            </div>
+
+            <div class="modal-footer ui-dialog-buttonset">
+                <div id="s-lib-alert-buttons"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popover.twig -->
+<div id="s-lib-popover-title" class="hide">
+    <span class="text-info">
+        <strong>title</strong>
+    </span>
+
+    <button type="button" id="popclose" class="close" onclick="jQuery('.s-lib-popover').popover('hide')">
+        &times;
+    </button>
+</div>
+
+<div id="s-lib-popover-content" class="hide">
+    <i class="fa fa-refresh fa-spin"></i> Loading...
+    <button class="btn btn-default btn-sm popclose" type="button">Close</button>
+</div>
+<!-- !popover.twig -->
+
+
+
+<div id="lux-footer-container">
+  <lux-library-footer></lux-library-footer>
+</div>
+
+<script src="https://v2.libanswers.com/load_chat.php?hash=b6a26755ec95a6ed065331dfb1298676"></script>
+<div id="libchat_b6a26755ec95a6ed065331dfb1298676"></div>
+<script type="text/javascript" src="//libapps.s3.amazonaws.com/sites/77/include/libguides-ga_events.js"></script>
+<!-- scroll_top.twig -->
+<div id="s-lib-scroll-top">
+    <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top"
+       aria-label="Back to Top">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+        </span>
+    </a>
+</div>
+<!-- !scroll_top.twig -->
+
+    
+</body>    </html>

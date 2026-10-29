@@ -1,0 +1,1129 @@
+{
+ "row": "iptc-metawatch",
+ "address": "IPTC Metawatch",
+ "addresses": [
+  "IPTC Metawatch"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check, curly and straight quotation marks treated alike; multi-part quotes joined by ' … ', each part checked), the Wikipedia response summary (B7.txt) and rendered article text (B8.txt), or the card's title and snippet for the unreachable card; 41/41 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1–B6: five of the IPTC's pages, three on iptc.org and two on metawatch.iptc.org, and Paul Melcher's LinkedIn post); 'own_page', the entity's own pages the provenance census record cites: the record read one source, the announcement (iptc.org/news/announcing-iptc-metawatch/), which is card 1 and is carried once, as a card (B1), with the census's saved copy beside the fresh fetch; its url field, metawatch.iptc.org, is card 2 (B2); so no own page stands apart from the cards; 'census_third_party': none (every evidence basis in the record is 'operator'); 'wikipedia', the entity's titles without an article (B7) and the operator's article (B8). Unreachable: B3 (LinkedIn; the post could not be found by title and site; its title and snippet stand).",
+ "lineage_note": "Lineages: what it is (B1, B2; earliest B1); the method (B1, B4); open data, cadence and the operator (B1, B2); the transformation tested (B1); predecessors (B1); dates (B1, B2, B3, B5, B6; earliest B5, 8 September 2026, after the runs B2 dates from 2026-06-03); findings (B1, B2, B4); where the stripping happens (B1, B4); movement (B1); AI (B1, B4, B6); stated limits (B1, B2); the operator (B5, B6, B8); the encyclopedia (B7). The census record's evidence quotes and the fields that restate them are one lineage with B1 (the announcement keeps the earliest date, 2026-10-05).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/ (Bn.html raw, Bn.txt text: scripts, styles and comments stripped, block elements as line breaks, SVG chart titles kept; B1-census.html/.txt the census's own saved copy of the announcement; B7 .wiki/.html/-search.html raw responses with B7.txt a summary of the codes and notices; B8 .wiki/.html raw with B8.txt the rendered article body); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "IPTC — Announcing Metawatch: a monthly check on which news publishers keep ... - IPTC",
+   "url": "https://iptc.org/news/announcing-iptc-metawatch/",
+   "kind": "Overview card (own page; the one source the provenance census record read)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1.html",
+     "sha256": "23d67ed30137cda56cf594ad64e48fb780a6f08953a8c4348e4ee4bf671ff0e5"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1.txt",
+     "sha256": "18f7fcf5c0e6a366a6eb131047d629a6229a11caabe3bad3788d645e76766626"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1-census.html",
+     "sha256": "0a7fea35f38f83bbc3a4f2807ea580ed054e661b774a5055703b693632f5da3d"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1-census.txt",
+     "sha256": "f16eb60c2c8bb21914b1efe5646594ef867f8d9968c2ac7c00df902b144a7f90"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:58Z",
+    "http": 200,
+    "url": "https://iptc.org/news/announcing-iptc-metawatch/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1.html",
+    "raw_sha256": "23d67ed30137cda56cf594ad64e48fb780a6f08953a8c4348e4ee4bf671ff0e5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1.txt"
+    ],
+    "text_sha256": "18f7fcf5c0e6a366a6eb131047d629a6229a11caabe3bad3788d645e76766626",
+    "tries": [
+     {
+      "at": "2026-10-29T17:09:58Z",
+      "url": "https://iptc.org/news/announcing-iptc-metawatch/",
+      "http": 200,
+      "effective_url": "https://iptc.org/news/announcing-iptc-metawatch/",
+      "error": null
+     }
+    ],
+    "census_copy": {
+     "url": "https://iptc.org/news/announcing-iptc-metawatch/",
+     "read": "2026-10-29",
+     "http": "200",
+     "sha256_recorded": "0a7fea35f38f83bbc3a4f2807ea580ed054e661b774a5055703b693632f5da3d",
+     "sha256_of_copy": "0a7fea35f38f83bbc3a4f2807ea580ed054e661b774a5055703b693632f5da3d",
+     "match": true,
+     "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/iptc-photo-metadata-tests--metawatch.html.gz (and .txt)"
+    }
+   },
+   "card_title": "Announcing Metawatch: a monthly check on which news publishers keep ... - IPTC",
+   "card_snippet": "Oct 5, 2026 — The IPTC has launched Metawatch, a free, open monitor that checks every month whether more than 500 news publishers in 122 countries keep the ...",
+   "card_note": null,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The IPTC's announcement, posted 5 October 2026. URL identified by the card's title (the page's <title> is 'Announcing Metawatch: a monthly check on which news publishers keep photo metadata - IPTC') and confirmed by the snippet's opening sentence in the saved text. It is also the entity's own page that the provenance census record cites (census.json rows[slug == 'iptc-metawatch'].sources['iptc-photo-metadata-tests--metawatch'], read 2026-10-29, http 200, sha256 0a7fea35f38f83bb…): carried once, as a card (the own page is surfaced by T). The census's saved copy is copied beside the fresh fetch as B1-census.html (gunzipped from sources/iptc-photo-metadata-tests--metawatch.html.gz; its sha256 equals the census's recorded sha256) and B1-census.txt (the census's own text extraction). The fresh fetch's HTML differs in hash (WordPress page furniture); the article body from the dateline 'Oct 5 2026' to the closing 'Categories' is identical in the two extracted texts (7,710 characters, whitespace-normalised). Quotes are checked against B1.txt."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "IPTC — Overview — Metawatch - IPTC",
+   "url": "https://metawatch.iptc.org/",
+   "kind": "Overview card (the monitor's own site, home; the census record's url)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B2.html",
+     "sha256": "4a9a9fb3a2a1ae5a097dfc1e0197c2e68e516b4ad66a1bb47d80ecbc06b9b730"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B2.txt",
+     "sha256": "0214693d56a73dc918d9b3ddd5c12f17f351c257eb57c8bcbfff3b580f8db194"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:58Z",
+    "http": 200,
+    "url": "https://metawatch.iptc.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B2.html",
+    "raw_sha256": "4a9a9fb3a2a1ae5a097dfc1e0197c2e68e516b4ad66a1bb47d80ecbc06b9b730",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B2.txt"
+    ],
+    "text_sha256": "0214693d56a73dc918d9b3ddd5c12f17f351c257eb57c8bcbfff3b580f8db194",
+    "tries": [
+     {
+      "at": "2026-10-29T17:09:58Z",
+      "url": "https://metawatch.iptc.org/",
+      "http": 200,
+      "effective_url": "https://metawatch.iptc.org/",
+      "error": null
+     }
+    ]
+   },
+   "card_title": "Overview — Metawatch - IPTC",
+   "card_snippet": "Metawatch tracks how often major news publishers preserve embedded photo metadata (Exif, IPTC Photo Metadata (in both original IIM format and newer XMP format),",
+   "card_note": null,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Metawatch's overview page, the census record's url field (https://metawatch.iptc.org/), which the census lists as unchecked ('the Metawatch site itself and its published run data'). Served as static HTML (Astro); the text keeps the SVG chart titles, which carry the run dates. The card's snippet is the page's opening sentence."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "LinkedIn·Paul Melcher — IPTC Publishes Metawatch, Revealing Image Metadata Issues - LinkedIn",
+   "url": null,
+   "kind": "Overview card (unreachable)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "WebSearch",
+      "query": "Paul Melcher LinkedIn \"IPTC Publishes Metawatch\"",
+      "result": "no LinkedIn post returned (metawatch.iptc.org pages, Melcher profiles and kaptur.co pages)"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "WebSearch (extended)",
+      "query": "linkedin.com Paul Melcher Metawatch IPTC crawls news publishers every month",
+      "result": "profiles (linkedin.com/in/melcher/, linkedin.com/in/brendanquinn/) and the IPTC pages; no post"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "WebSearch",
+      "query": "\"Metawatch\" \"Revealing Image Metadata Issues\"",
+      "result": "no match"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "WebSearch (extended)",
+      "query": "\"now publishes Metawatch\" International Press Telecommunications Council",
+      "result": "no match (Wikipedia IPTC pages; the MetaWatch smartwatch)"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "WebSearch",
+      "query": "site:linkedin.com/posts melcher metawatch",
+      "result": "only the MetaWatch smartwatch (a homonym)"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "curl",
+      "url": "https://www.linkedin.com/pulse/iptc-publishes-metawatch-revealing-image-metadata-issues-paul-melcher",
+      "http": 200,
+      "result": "redirected to https://www.linkedin.com/top-content/?trk=article_not_found (no such article at the guessed slug)"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "curl",
+      "url": "https://www.linkedin.com/in/melcher/",
+      "http": 301,
+      "result": "profile redirect (sign-in wall); activity not readable signed out"
+     },
+     {
+      "at": "2026-10-29, 17:00–17:10 UTC (not logged to the second)",
+      "tool": "curl",
+      "url": "https://www.bing.com/search?q=%22IPTC+Publishes+Metawatch%22",
+      "http": 200,
+      "result": "no result for the phrase"
+     }
+    ],
+    "note": "The card carries no URL (the paste gives Google redirect tokens only) and the post could not be found by its title and site; a LinkedIn post URL carries an activity id that cannot be derived from the title. Its title and snippet stand as its only text (F27). The exact times of the WebSearch tries were not logged to the second; all were made between 17:00 and 17:10 UTC on 2026-10-29."
+   },
+   "card_title": "IPTC Publishes Metawatch, Revealing Image Metadata Issues - LinkedIn",
+   "card_snippet": "Sep 14, 2026 — International Press Telecommunications Council (IPTC) now publishes Metawatch. It crawls news publishers every month and checks what ...",
+   "card_note": "unreachable: title and snippet only",
+   "names_operator": "yes ('International Press Telecommunications Council (IPTC)' in the snippet)",
+   "names_archive": "no (title and snippet)",
+   "note": "Paul Melcher's LinkedIn post, dated by its card 14 September 2026. One of the two cards that date the monitor's public appearance to September 2026."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "IPTC — Per-field breakdown - Metawatch - IPTC",
+   "url": "https://metawatch.iptc.org/fields/",
+   "kind": "Overview card (the monitor's own site, per-field page)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B4.html",
+     "sha256": "320d791c70043eb150607bc6a984c2204cf3f250dcd2bc77f263d09f2fc7ca18"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B4.txt",
+     "sha256": "7776927a7a2be141bc0158f68c39f13106e38825de6489695069175ec4ae61d9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:59Z",
+    "http": 200,
+    "url": "https://metawatch.iptc.org/fields/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B4.html",
+    "raw_sha256": "320d791c70043eb150607bc6a984c2204cf3f250dcd2bc77f263d09f2fc7ca18",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B4.txt"
+    ],
+    "text_sha256": "7776927a7a2be141bc0158f68c39f13106e38825de6489695069175ec4ae61d9",
+    "tries": [
+     {
+      "at": "2026-10-29T17:09:59Z",
+      "url": "https://metawatch.iptc.org/fields/",
+      "http": 200,
+      "effective_url": "https://metawatch.iptc.org/fields/",
+      "error": null
+     }
+    ]
+   },
+   "card_title": "Per-field breakdown - Metawatch - IPTC",
+   "card_snippet": "Metawatch — tracking image metadata across news publishers worldwide.",
+   "card_note": null,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Metawatch's per-field breakdown, linked from the overview's navigation ('Fields'); title 'Per-field breakdown — Metawatch'; the card's snippet is the page's meta description."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "IPTC — Watching AI platforms, news publishers and real-world C2PA - IPTC",
+   "url": "https://iptc.org/news/iptc-photo-metadata-conference-2026-videos-are-now-available/",
+   "kind": "Overview card (operator page: the conference report)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B5.html",
+     "sha256": "a2176a9721211134bf01bd1278dd23acdda0db3513f31d818964060c448d0f96"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B5.txt",
+     "sha256": "c5bb8d7509c13bacde9cdbff72b2167651d6eead8ad6d41c317b79e2e8b0d7fa"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:00Z",
+    "http": 200,
+    "url": "https://iptc.org/news/iptc-photo-metadata-conference-2026-videos-are-now-available/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B5.html",
+    "raw_sha256": "a2176a9721211134bf01bd1278dd23acdda0db3513f31d818964060c448d0f96",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B5.txt"
+    ],
+    "text_sha256": "c5bb8d7509c13bacde9cdbff72b2167651d6eead8ad6d41c317b79e2e8b0d7fa",
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:00Z",
+      "url": "https://iptc.org/news/iptc-photo-metadata-conference-2026-videos-are-now-available/",
+      "http": 200,
+      "effective_url": "https://iptc.org/news/iptc-photo-metadata-conference-2026-videos-are-now-available/",
+      "error": null
+     }
+    ]
+   },
+   "card_title": "Watching AI platforms, news publishers and real-world C2PA - IPTC",
+   "card_snippet": "Sep 8, 2026 — Lastly, Brendan Quinn appeared again to introduce Metawatch, IPTC's new public service that monitors real-world usage of metadata in images ...",
+   "card_note": null,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The IPTC's post 'Watching AI platforms, news publishers and real-world C2PA – IPTC Photo Metadata Conference 2026 videos are now available', published 2026-09-08T12:35:00+00:00 (article:published_time; modified 12:43:06), found in the IPTC news archive for September 2026 (https://iptc.org/news/2026/09/) by its title and confirmed by the snippet's sentence ('Lastly, Brendan Quinn appeared again to introduce Metawatch') in the saved text. The post dates the conference 'Last Thursday'."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "IPTC — Photo Metadata Archives - IPTC",
+   "url": "https://iptc.org/news/tag/photo-metadata/",
+   "kind": "Overview card (operator page: the 'Photo Metadata' tag archive)",
+   "surfaced_by_T": [
+    {
+     "slug": "iptc-metawatch-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B6.html",
+     "sha256": "4afb0a05b1a4f8fe5b37129b9f3a4b8bae44b42524ce884ba93462e481cd7032"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B6.txt",
+     "sha256": "b1633287a8889a7e0e0f5b212df54da9450db7129ebafa8fdd573a886822e35e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:01Z",
+    "http": 200,
+    "url": "https://iptc.org/news/tag/photo-metadata/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B6.html",
+    "raw_sha256": "4afb0a05b1a4f8fe5b37129b9f3a4b8bae44b42524ce884ba93462e481cd7032",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B6.txt"
+    ],
+    "text_sha256": "b1633287a8889a7e0e0f5b212df54da9450db7129ebafa8fdd573a886822e35e",
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:01Z",
+      "url": "https://iptc.org/news/tag/photo-metadata/",
+      "http": 200,
+      "effective_url": "https://iptc.org/news/tag/photo-metadata/",
+      "error": null
+     }
+    ]
+   },
+   "card_title": "Photo Metadata Archives - IPTC",
+   "card_snippet": "Oct 22, 2026 — The IPTC has launched Metawatch, a free, open monitor that checks every month whether more than 500 news publishers in 122 countries keep the credits, captions ...",
+   "card_note": null,
+   "names_operator": "yes ('IPTC' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The IPTC news archive for the tag 'Photo Metadata' (page title 'Photo Metadata Archives - IPTC', the card's title). The card's date, 22 October 2026, is the date of the newest post in the page's 'Latest' menu (the Autumn Meeting report); the archive's newest tagged post is the Metawatch announcement of 5 October 2026, whose opening sentence is the card's snippet."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the entity",
+   "card": "Wikipedia — IPTC Metawatch / Metawatch (no article)",
+   "url": "https://en.wikipedia.org/wiki/IPTC_Metawatch",
+   "kind": "Wikipedia title (no article)",
+   "surfaced_by_T": [],
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7.wiki",
+     "sha256": "ab5b734ed1436ef217e239ae39f1f2a5b18cda9318f6059961eb7d949f6ad31b"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7.html",
+     "sha256": "e8dfe552afbe33e9cf40318c1808b552b04556a60312daf87219e7cc58ce304d"
+    },
+    "B7-Metawatch.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7-Metawatch.wiki",
+     "sha256": "e30d400fbf5f8f495835de1674b6fba0f4ebb4cc4a1c1f579b2c3398e04ff7b1"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7-search.html",
+     "sha256": "5315a0b6d6fd6838103ef92f461762bd83ff19189234ef510e61315e45e92f68"
+    },
+    "B7-search-bare.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7-search-bare.html",
+     "sha256": "cc59513dc46b805403374ec52e2cff749e555187369b34cc99694f58f94cf55a"
+    },
+    "B7-MetaWatch-homonym.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7-MetaWatch-homonym.wiki",
+     "sha256": "8f958b83312b8caed86090c6c154f342af9c60f730ad0e38599e0f2f94080e5d"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7.txt",
+     "sha256": "8d4106a54ed94b0845e0e6846ba3a359e3ba7b1f431a6d8856e142ec4fa03c25"
+    }
+   },
+   "fetched": {
+    "log": [
+     {
+      "at": "2026-10-29T17:10:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=IPTC_Metawatch&action=raw&redirect=no",
+      "http": "404"
+     },
+     {
+      "at": "2026-10-29T17:10:58Z",
+      "url": "https://en.wikipedia.org/wiki/IPTC_Metawatch",
+      "http": "404"
+     },
+     {
+      "at": "2026-10-29T17:11:06Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Metawatch&action=raw&redirect=no",
+      "http": "404"
+     },
+     {
+      "at": "2026-10-29T17:11:13Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Metawatch%22+IPTC&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": "200"
+     },
+     {
+      "at": "2026-10-29T17:11:21Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Metawatch%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": "429"
+     },
+     {
+      "at": "2026-10-29T17:11:31Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=MetaWatch&action=raw&redirect=no",
+      "http": "200"
+     },
+     {
+      "at": "2026-10-29T17:12:13Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Metawatch%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": "200"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B7.txt"
+    ],
+    "text_sha256": "8d4106a54ed94b0845e0e6846ba3a359e3ba7b1f431a6d8856e142ec4fa03c25",
+    "note": "Two requests answered 429 and were retried after a pause (the bare 'Metawatch' search and the operator's raw wikitext); the log keeps every response. B7.txt is a summary of the HTTP codes and notices, written from the saved responses."
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": "not surfaced by T",
+   "names_operator": "no (the responses are 404s and a search page)",
+   "names_archive": "no",
+   "note": "No article for the entity: IPTC_Metawatch and Metawatch return HTTP 404 (raw and rendered), neither is a redirect, and the full-text search for '\"Metawatch\" IPTC' finds nothing. The bare search finds 'MetaWatch', a discontinued smartwatch brand (Meta Watch Ltd.), a homonym (raw wikitext saved as B7-MetaWatch-homonym.wiki); it is recorded under homonyms and not ledgered as a claim on the entity."
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the operator",
+   "card": "Wikipedia — International Press Telecommunications Council",
+   "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council",
+   "kind": "Wikipedia article (the operator's; Metawatch not named)",
+   "surfaced_by_T": [],
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B8.wiki",
+     "sha256": "c9111b64b71f2a9c3035b8324ec6ae04b93eb421281cb484167e1e51e2cd440e"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B8.html",
+     "sha256": "65a1179436e9871107011ec6a2aec35ead1726f33a2815233c5764cc6df253ec"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B8.txt",
+     "sha256": "cb0c0b3b92c372759ec4f71ae267abe0b941a3d06c9cee0dcae9857e42848ff3"
+    }
+   },
+   "fetched": {
+    "log": [
+     {
+      "at": "2026-10-29T17:11:38Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=International_Press_Telecommunications_Council&action=raw",
+      "http": "429"
+     },
+     {
+      "at": "2026-10-29T17:11:47Z",
+      "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council",
+      "http": "200"
+     },
+     {
+      "at": "2026-10-29T17:12:28Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=International_Press_Telecommunications_Council&action=raw",
+      "http": "200"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B8.txt"
+    ],
+    "text_sha256": "cb0c0b3b92c372759ec4f71ae267abe0b941a3d06c9cee0dcae9857e42848ff3",
+    "note": "B8.txt is the rendered article body (mw-parser-output), scripts, styles and reference markers removed."
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": "not surfaced by T",
+   "names_operator": "yes ('International Press Telecommunications Council', 'IPTC')",
+   "names_archive": "no",
+   "note": "The operator's article exists (HTTP 200); neither its wikitext nor its rendered page contains the string 'Metawatch'. Admitted as the encyclopedia's account of the operator, as the data-provenance-explorer row admitted the operator's title."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "announcement, standfirst ¶1",
+   "quote": "The IPTC has launched Metawatch , a free, open monitor that checks every month whether more than 500 news publishers in 122 countries keep the credits, captions and rights information embedded in their photographs.",
+   "claim": "the monitor defined by its operator: free, open, monthly, more than 500 publishers in 122 countries, whether they keep the credits, captions and rights information embedded in their photographs",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a free, open monthly monitor of whether news publishers keep embedded photo metadata",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "announcement, standfirst ¶2",
+   "quote": "The first results show how little has changed since 2018, which publishers have fixed their sites, and why keeping metadata matters more than ever now that AI companies are crawling the web.",
+   "claim": "the operator's summary of its first results: little changed since 2018; some publishers fixed; metadata matters more now that AI companies crawl the web",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Credits are lost between camera and reader' (heading and ¶2)",
+   "quote": "Credits are lost between camera and reader … In practice, most of it is gone by the time a reader sees the picture. Content management systems re-encode images, content delivery networks resize them, and optimisation tools discard anything that looks like unnecessary bytes.",
+   "claim": "the transformation: credits lost between camera and reader as CMSs re-encode, CDNs resize and optimisation tools discard metadata",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the transformation tested: credit lost between camera and reader",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Credits are lost between camera and reader' ¶3",
+   "quote": "When an image is copied, shared or collected by an AI crawler, the embedded metadata is often the only record of where it came from and on what terms it may be used.",
+   "claim": "why it matters: for a copied, shared or AI-crawled image the embedded metadata is often the only record of origin and terms",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the transformation tested: credit lost between camera and reader",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Metawatch does' ¶1 s1–2",
+   "quote": "Metawatch checks every month: does the photo metadata survive publication? On the first of each month our well-behaved crawler visits 508 news publishers in 122 countries, takes up to 20 recent articles from each, and reads the lead photograph of every article.",
+   "claim": "the method: monthly, whether photo metadata survives publication; 508 publishers in 122 countries, up to 20 recent articles each, the lead photograph of each",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the method: the lead photograph of up to 20 articles from each of 508 publishers, scored on the 4 Cs",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Metawatch does' ¶1 s3",
+   "quote": "It checks each image for Exif, IPTC Photo Metadata (in both IIM and XMP form) and C2PA Content Credentials, and scores how each site carry the fields that matter most: creator, caption, copyright and credit line (the “4 Cs”).",
+   "claim": "what is checked and scored: Exif, IPTC Photo Metadata (IIM and XMP) and C2PA Content Credentials; the score on creator, caption, copyright and credit line, the 4 Cs",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the method: the lead photograph of up to 20 articles from each of 508 publishers, scored on the 4 Cs",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Metawatch does' ¶2",
+   "quote": "The crawler is deliberately light: about 40 to 60 requests per publisher per month, honouring robots.txt and keeping no article text or image files. How it works is documented in full, and every run is published as open data under CC BY 4.0, so anyone can check our numbers or ask their own questions.",
+   "claim": "a light crawler (40–60 requests per publisher a month, robots.txt honoured, no text or images kept); method documented; every run open data under CC BY 4.0",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, cadence and the operator",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What Metawatch does' ¶3",
+   "quote": "Metawatch builds on IMATAG’s 2018 State of Image Metadata study and IPTC’s own prototype crawler from 2019 , presented at the 2019 Photo Metadata Conference . This service is different in that we now measure every month, so we can compare trends over time.",
+   "claim": "its predecessors: IMATAG's 2018 study and the IPTC's 2019 prototype crawler; it differs in measuring every month",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "predecessors: IMATAG 2018 and the IPTC prototype crawler of 2019",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What we found' ¶1",
+   "quote": "In 2018 IMATAG found that 8% of editorial images carried a credit or copyright notice. Applying the same test to our October run gives 7.2%. Whatever else has changed in news publishing since then, keeping the photographer’s credit attached to the photograph has not improved.",
+   "claim": "the headline finding: 7.2% of editorial images with a credit or copyright notice in October 2026 against IMATAG's 8% in 2018; no improvement",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What we found' ¶2",
+   "quote": "In the October run, 321 of the 425 publishers we could crawl, three out of four kept none of the IPTC fields we score on any image we sampled. Only 11% of the 6,580 images carried any IPTC metadata at all . The field that survives most often is the photographer’s name, on just 7.9% of images; the credit line is on 5.7% and copyright on 5.6%.",
+   "claim": "321 of 425 crawlable publishers kept none of the scored fields; 11% of 6,580 images carry any IPTC metadata; creator 7.9%, credit line 5.7%, copyright 5.6%",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What we found' ¶3",
+   "quote": "It isn’t the CDN’s fault. Images served through Cloudflare, Akamai, CloudFront and Fastly lost their metadata 87% to 95% of the time, but images served with no CDN at all also lost metadata 87% of the time. Stripping appears to happen in the publishing pipeline, which means that publishers can fix it.",
+   "claim": "the loss through four CDNs (87–95%) matches the loss with no CDN (87%); stripping appears to happen in the publishing pipeline, which publishers can fix",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "where the stripping happens: the publishing pipeline",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What we found' ¶4",
+   "quote": "USA Today carried no credit metadata when IMATAG measured it in 2019; in September 95% of its lead photographs carried credit, creator and copyright. Les Echos went from 6% to 75%. … Across the 294 publishers we have measured every month since June, the number keeping any metadata rose from 60 to 67. It is early, but the needle can move.",
+   "claim": "movement: USA Today from none (2019) to 95% (September 2026); Les Echos 6% to 75%; of 294 publishers measured monthly since June, those keeping any metadata rose from 60 to 67",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "movement: publishers and countries",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Which countries do best' ¶1",
+   "quote": "France tops our October ranking, with an average publisher score of 19.8 out of 100, just ahead of Germany at 19.2. Taiwan enters at third. We rank only countries where we scored more than three publishers, so that one well-run newsroom cannot carry a whole country; 34 countries qualified this month.",
+   "claim": "the October country ranking (France 19.8, Germany 19.2, Taiwan third) and its rule (more than three publishers scored; 34 countries)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "movement: publishers and countries",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Which countries do best' ¶2 (after the chart)",
+   "quote": "The United States led in September and slipped to fourth in October, but only because two of its best-scoring publishers were out of reach: AP and USA Today began blocking automated access this month. It is a reminder that bot-blocking aimed at AI also shuts out research.",
+   "claim": "the stated access limit: AP and USA Today blocked automated access in October, moving the United States from first to fourth; bot-blocking aimed at AI also shuts out research",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: access blocked, the crawler's blind spots",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'AI: a locked front door, an open back door' ¶1–2",
+   "quote": "Of the 505 publishers whose policies we checked, 234 (46%) block at least one AI crawler in their robots.txt. … But robots.txt protects a website, not a photograph. … IPTC Photo Metadata has a field for exactly this: PLUS Data Mining . Only 15 publishers (3.0%) put it on any image we sampled, and it appears on 0.6% of images overall.",
+   "claim": "234 of 505 publishers (46%) block an AI crawler in robots.txt, which protects a site and not a photograph; the PLUS Data Mining field is used by 15 publishers and appears on 0.6% of images",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "AI: crawler blocking, the data-mining field, Content Credentials, the AI fields",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'AI: a locked front door, an open back door' ¶3 s1–2",
+   "quote": "Leaving out IPTC’s own site, 27 of the 6,580 images we analysed carried a C2PA manifest, and all but one were signed by an AI or design tool: OpenAI, Adobe, Canva or Google (the last had a signer we couldn’t read). None came from a camera or a newsroom’s own signing.",
+   "claim": "27 of 6,580 images carry a C2PA manifest, all but one signed by an AI or design tool; none from a camera or a newsroom's own signing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI: crawler blocking, the data-mining field, Content Credentials, the AI fields",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'AI: a locked front door, an open back door' ¶3 s3–4",
+   "quote": "Seven images carried an IPTC Digital Source Type saying they had been edited with generative AI, which is exactly the kind of disclosure the field was designed for. Provenance in news photography is arriving first through the tools that make synthetic images, not through the photojournalism that most needs it.",
+   "claim": "seven images disclose generative-AI editing by Digital Source Type; provenance in news photography arrives first through the tools that make synthetic images",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "AI: crawler blocking, the data-mining field, Content Credentials, the AI fields",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'What publishers can do' ¶1 s1–2",
+   "quote": "The fix is usually a setting, not a project. Most image pipelines strip metadata by default to save a few kilobytes; most can be told to keep it.",
+   "claim": "the fix: a setting; most image pipelines strip metadata by default and can be told to keep it",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "where the stripping happens: the publishing pipeline",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "closing ¶",
+   "quote": "Metawatch automatically publishes new results on the first of every month.",
+   "claim": "new results published automatically on the first of every month",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, cadence and the operator",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "dateline and title",
+   "quote": "Oct 5 2026 … Announcing Metawatch: a monthly check on which news publishers keep photo metadata",
+   "claim": "the announcement, dated 5 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: runs from June, a September showing, the October announcement",
+   "date": "2026-10-05 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 18f7fcf5c0e6a366…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "overview, opening",
+   "quote": "Metawatch tracks how often major news publishers preserve embedded photo metadata (Exif, IPTC Photo Metadata (in both original IIM format and newer XMP format), and C2PA) on the images they publish. We crawl a curated list of publishers monthly and score the photographs they serve.",
+   "claim": "the monitor's own page: how often major news publishers preserve embedded photo metadata (Exif, IPTC IIM and XMP, C2PA); a curated list crawled monthly, the served photographs scored",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a free, open monthly monitor of whether news publishers keep embedded photo metadata",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "overview, run summary",
+   "quote": "Latest run 2026-10-01 Sites crawled 425 Countries 122 Images analysed 6,580 … Mean IPTC score 5.96 … % with any IPTC 11% % with C2PA 0.5%",
+   "claim": "the latest run, 2026-10-01: 425 sites, 122 countries, 6,580 images; mean IPTC score 5.96; 11% with any IPTC, 0.5% with C2PA",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "overview, 'How this run’s top 10 ranked in earlier runs' (chart axis and point titles)",
+   "quote": "How this run’s top 10 ranked in earlier runs … 2026-06-03 2026-07-01 2026-08-01 2026-09-01 2026-10-01 … France: #1 of 26 on 2026-06-03 — score 22.8, 10 publishers",
+   "claim": "five runs on the overview, the first dated 2026-06-03, then monthly to 2026-10-01",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: runs from June, a September showing, the October announcement",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "overview, 'How the scores are distributed'",
+   "quote": "Any average describes almost nobody here: a small group embed metadata thoroughly, and 321 of 425 publishers embed none we can find at all.",
+   "claim": "the distribution: a small group embeds metadata thoroughly; 321 of 425 embed none",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "overview, 'How the scores are distributed', note",
+   "quote": "Publishers we reached but got no photograph from are listed separately as no_images rather than scored zero, since that is usually our blind spot rather than their practice.",
+   "claim": "the stated limit: publishers reached without a photograph are listed as no_images, not scored zero, as the crawler's blind spot",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: access blocked, the crawler's blind spots",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Metawatch · A project of the International Press Telecommunications Council . Data licensed CC BY 4.0 . … Publishers may opt out by emailing office@iptc.org .",
+   "claim": "a project of the IPTC; data CC BY 4.0; publishers may opt out by email",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, cadence and the operator",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0214693d56a73dc9…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title and snippet (LinkedIn unreachable)",
+   "quote": "IPTC Publishes Metawatch, Revealing Image Metadata Issues - LinkedIn … Sep 14, 2026 — International Press Telecommunications Council (IPTC) now publishes Metawatch. It crawls news publishers every month and checks what ...",
+   "claim": "Paul Melcher's LinkedIn post (14 September 2026, by its card): the IPTC now publishes Metawatch, crawling news publishers monthly (title and snippet only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "dates: runs from June, a September showing, the October announcement",
+   "date": "2026-09-14 (card date; snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "per-field page, ¶2",
+   "quote": "The \"scored\" badge marks the four fields that contribute to a site's overall score (the \"Four Cs\" of news photo provenance); the others are tracked for context but don't affect the score",
+   "claim": "the score: four fields scored, the 'Four Cs' of news photo provenance; others tracked for context",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: the lead photograph of up to 20 articles from each of 508 publishers, scored on the 4 Cs",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7776927a7a2be141…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "per-field page, table rows (Field, Type, Present, Total, Population, Score weight)",
+   "quote": "Creator scored 517 6,514 7.9% 25% … CreditLine scored 373 6,514 5.7% 25% … Copyright scored 348 6,514 5.3% 25% … CaptionDescription scored 324 6,514 5% 25%",
+   "claim": "the four scored fields over 6,514 images: Creator 7.9%, CreditLine 5.7%, Copyright 5.3%, CaptionDescription 5%",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: credit and the scored fields (October 2026)",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7776927a7a2be141…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "per-field page, table rows (AI fields)",
+   "quote": "DigitalSourceType tracked 15 6,514 0.2% … AIPromptInformation tracked 0 6,514 0% … AISystemUsed tracked 0 6,514 0%",
+   "claim": "the AI-related fields: DigitalSourceType on 0.2% (15 images); AIPromptInformation and AISystemUsed on none",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "AI: crawler blocking, the data-mining field, Content Credentials, the AI fields",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7776927a7a2be141…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "per-field page, 'What this tells us'",
+   "quote": "Even the best-populated field — Creator at 7.9% — appears on fewer than one in ten images we fetched. The fields most relevant to licensing ( WebStatement , LicensorURL ) are below 3%. The dataset as a whole tells a consistent story: publishers and CDNs are discarding metadata that the photographers and agencies almost certainly embedded upstream.",
+   "claim": "the reading of the dataset: even Creator is on fewer than one in ten images; licensing fields below 3%; publishers and CDNs discard metadata embedded upstream",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "where the stripping happens: the publishing pipeline",
+   "date": "2026-10-29 (page undated; as fetched; latest run 2026-10-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7776927a7a2be141…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "dateline and ¶1 s1",
+   "quote": "Sep 8 2026 … Last Thursday, the photo metadata industry came together for the 2026 IPTC Photo Metadata Conference.",
+   "claim": "the IPTC's post of 8 September 2026 dates the 2026 Photo Metadata Conference 'Last Thursday'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: runs from June, a September showing, the October announcement",
+   "date": "2026-09-08 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c5bb8d7509c13bac…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶1 s3",
+   "quote": "This year we focussed on the industry’s implementation of recent legislation around AI transparency and content provenance, tracking real-world adoption of content transparency technologies by AI engines, news sites, software and services.",
+   "claim": "the conference's focus: AI transparency and content provenance, the real-world adoption of content transparency technologies by AI engines, news sites, software and services",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: the IPTC and its photo metadata standard",
+   "date": "2026-09-08 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c5bb8d7509c13bac…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "last ¶ before the videos",
+   "quote": "Lastly, Brendan Quinn appeared again to introduce Metawatch , IPTC’s new public service that monitors real-world usage of metadata in images across the global news industry, tracking IPTC/XMP, C2PA, AI opt-outs and more.",
+   "claim": "Brendan Quinn introduced Metawatch at the conference: the IPTC's new public service monitoring real-world usage of metadata in images across the news industry (IPTC/XMP, C2PA, AI opt-outs)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "dates: runs from June, a September showing, the October announcement",
+   "date": "2026-09-08 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c5bb8d7509c13bac…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "tag archive, title and newest post",
+   "quote": "Photo Metadata Archives - IPTC … Oct 5 2026 … Announcing Metawatch: a monthly check on which news publishers keep photo metadata",
+   "claim": "the announcement is the newest post under the IPTC's Photo Metadata tag",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: the IPTC and its photo metadata standard",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1633287a8889a7e…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "tag archive, post of 27 November 2025",
+   "quote": "Nov 27 2025 … IPTC Photo Metadata Standard adds new properties for AI-generated content",
+   "claim": "the IPTC Photo Metadata Standard added properties for AI-generated content (2025.1, 27 November 2025)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "AI: crawler blocking, the data-mining field, Content Credentials, the AI fields",
+   "date": "2025-11-27 (as listed)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1633287a8889a7e…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles IPTC_Metawatch and Metawatch; full-text search",
+   "quote": "raw wikitext IPTC_Metawatch (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name. … full-text search for \"Metawatch\" IPTC (namespace 0): There were no results matching the query.",
+   "claim": "Wikipedia has no article on the monitor and no article text naming it beside the IPTC",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 8d4106a54ed94b08…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: the operator's article, searched for the name",
+   "quote": "operator's article International_Press_Telecommunications_Council (raw wikitext action=raw, HTTP 200; rendered page HTTP 200, saved as B8): the string Metawatch does not occur in either.",
+   "claim": "the operator's Wikipedia article does not name Metawatch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 8d4106a54ed94b08…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "lead ¶1",
+   "quote": "The International Press Telecommunications Council ( IPTC ), based in London , United Kingdom , is a consortium of the world's major news agencies , other news providers and news industry vendors and acts as the global standards body of the news media.",
+   "claim": "the operator: a London-based consortium of news agencies, providers and vendors, the global standards body of the news media",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: the IPTC and its photo metadata standard",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 cb0c0b3b92c37275…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "'Photo metadata' ¶1–2",
+   "quote": "The IPTC defined a set of metadata properties that can be applied to images, part of a broader standard developed in the early 1990s and known as the IPTC Information Interchange Model (IIM). … The Extensible Metadata Platform (XMP) has largely superseded IIM's image file header structure",
+   "claim": "the operator's photo metadata: the IIM set of the early 1990s, its file-header structure largely superseded by XMP",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: the IPTC and its photo metadata standard",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 cb0c0b3b92c37275…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "'Photo metadata' ¶3",
+   "quote": "Because of its nearly universal acceptance among photographers — even amateurs — this is by far IPTC's most widely used standard.",
+   "claim": "the encyclopedia's account: photo metadata, nearly universally accepted among photographers, is the IPTC's most widely used standard",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: the IPTC and its photo metadata standard",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 cb0c0b3b92c37275…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "IPTC — Announcing Metawatch: a monthly check on which news publishers keep ... - IPTC",
+  "B2": "IPTC — Overview — Metawatch - IPTC",
+  "B3": "LinkedIn·Paul Melcher — IPTC Publishes Metawatch, Revealing Image Metadata Issues - LinkedIn",
+  "B4": "IPTC — Per-field breakdown - Metawatch - IPTC",
+  "B5": "IPTC — Watching AI platforms, news publishers and real-world C2PA - IPTC",
+  "B6": "IPTC — Photo Metadata Archives - IPTC",
+  "B7": "Wikipedia — IPTC Metawatch / Metawatch (no article)",
+  "B8": "Wikipedia — International Press Telecommunications Council"
+ }
+}

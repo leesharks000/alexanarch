@@ -1,0 +1,1198 @@
+{
+ "row": "olmotrace",
+ "address": "OLMoTrace",
+ "addresses": [
+  "OLMoTrace"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the ACL PDF's extracted text, the Wikipedia response summary, or the card's title and snippet for the two unreachable cards; 51/51 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 Ai2's blog post; B2 the arXiv abstract page; B3 the ACL Anthology page with its PDF; B4 Ai2's post on X, unreachable; B5 Techzine, unreachable; B6 Ken Yeung's newsletter); 'own_page', the census's own pages that T did not surface (B7, the paper's HTML v2, copied from the census's saved copy; the census's other own page, the abstract page, is card B2, byte-identical, carried once as a card); 'wikipedia', no article (B8). No third-party source was read by the census (both its sources carry basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B2); the relation, verbatim match (B1, B2, B7); purpose (B1, B7); the pipeline (B1, B5, B7); performance and relevance (B7); the training data and its count (B1, B7); models and applicability (B1, B4, B6, B7); uses (B1, B2, B6, B7); fact checking, what a matched document can and cannot show (B1, B3, B6, B7); the stated limit (B3, B6, B7); unlike retrieval-augmented generation (B6, B7); the operator and the authors (B2, B7); openness (B1, B2, B6, B7); publication (B2, B3); risks (B7); regulation and auditing (B6); assessment from outside (B6); reception, the encyclopedia (B8). The paper is one work in three instances (B2 abstract page, B3 Anthology page and PDF, B7 HTML v2): one lineage per claim, the earliest instance keeping the date; the limit's earliest fetched instance is B7 (v2, 8 July 2025), the v1 text not having been fetched. The census's self_description, relation_types, limit, count and data_access quotes restate B2 and B7 (one lineage each with the page).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B3-pdf.pdf and B3-pdf.txt the Anthology PDF and its pdftotext text; B4-try1.html, B4-try2.html the X responses; B5-403.html Techzine's 403 response; B7 copied from the census's saved copy; B8 .wiki, .html, -search.html, -variant.* raw Wikipedia responses with B8.txt a summary of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Allen Institute for Artificial Intelligence — Going beyond open data – increasing transparency and trust in language models with OLMoTrace | Ai2",
+   "url": "https://allenai.org/blog/olmotrace",
+   "kind": "Overview card (the operator's own blog post, 9 April 2025, 'Jiacheng Liu et al. - Ai2')",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B1.html",
+     "sha256": "39e59dda3ba78e0bcf803c029242a75ae1e877da9383b35712bb1dc48ca2eeba"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B1.txt",
+     "sha256": "7d7b29ab8ba6c6e171e7b1cbc24f181c0c8d4a553f28af8e3af7ca6c2124864f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:13Z",
+    "http": 200,
+    "url": "https://allenai.org/blog/olmotrace",
+    "raw": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B1.html",
+    "raw_sha256": "39e59dda3ba78e0bcf803c029242a75ae1e877da9383b35712bb1dc48ca2eeba",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B1.txt"
+    ]
+   },
+   "names_operator": "yes ('Ai2', 'Jiacheng Liu et al. - Ai2', '© The Allen Institute for Artificial Intelligence')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site, confirmed by the page's <title> (identical to the card title). The card's snippet ('Feature: OLMoTrace in Ai2 Playground traces language model outputs to multi-trillion-token training data in real time. Supported Models: OLMo 2 32B Instruct, OL...') is not in the served page: neither 'Feature:' nor 'Supported Models' occurs in B1.html, and the page's meta description is Ai2's generic one; the snippet's words are not the page's. Recorded, not resolved.",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Going beyond open data – increasing transparency and trust in language models with OLMoTrace | Ai2",
+   "card_snippet": "Feature: OLMoTrace in Ai2 Playground traces language model outputs to multi-trillion-token training data in real time. Supported Models: OLMo 2 32B Instruct, OL...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "arXiv — OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training ...",
+   "url": "https://arxiv.org/abs/2504.07096",
+   "kind": "Overview card (the paper's abstract page, v2; the census's own page olmotrace--abs)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.html",
+     "sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.txt",
+     "sha256": "836bf63640ea080a6becd9996270262dc568fcbc2a10ec960748ffa1515812f0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:17Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2504.07096",
+    "raw": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.html",
+    "raw_sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.txt"
+    ],
+    "census_copy": {
+     "src": "olmotrace--abs",
+     "sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22",
+     "read": "2026-10-29",
+     "http": "200",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes (the 31 authors; the paper's affiliations are on the HTML version, B7)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's snippet ('[2504.07096] OLMoTrace: …'). The fetch is byte-identical to the census's saved copy (sha256 cd982680…, read the same day), so the card and the census's own page are one page, carried once, as a card. The snippet's 'Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT' is arXiv's site banner, not the paper's text, and was not on the page at this fetch.",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training ...",
+   "card_snippet": "[2504.07096] OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "ACL Anthology — Tracing Language Model Outputs Back to Trillions of Training Tokens",
+   "url": "https://aclanthology.org/2025.acl-demo.18/",
+   "kind": "Overview card (the paper's Anthology page, Proceedings of ACL 2025, System Demonstrations, with its PDF)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3.html",
+     "sha256": "71292b784f0dc598a840336f806fcf71cdd1ce9a332575a420315d36c1a9041d"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3.txt",
+     "sha256": "26daccd5e52cd634925647632ccd4f6b800c561b6bb7056d3eb5cd97c575f3cf"
+    },
+    "B3-pdf.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3-pdf.pdf",
+     "sha256": "fcac45353235b662261103efb51083cd12e67c2b5b992b53eda0ceef5d13dd17"
+    },
+    "B3-pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3-pdf.txt",
+     "sha256": "f2fc53f52892169d4e7f5362d06f3c59fc46e29dda64b49bc707afcfa4cb4cbd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:19Z",
+    "http": 200,
+    "url": "https://aclanthology.org/2025.acl-demo.18/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3.html",
+    "raw_sha256": "71292b784f0dc598a840336f806fcf71cdd1ce9a332575a420315d36c1a9041d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3.txt",
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B3-pdf.txt"
+    ],
+    "pdf": {
+     "url": "https://aclanthology.org/2025.acl-demo.18.pdf",
+     "at": "2026-10-29T17:09:20Z",
+     "http": 200,
+     "sha256": "fcac45353235b662261103efb51083cd12e67c2b5b992b53eda0ceef5d13dd17",
+     "text": "pdftotext (poppler), default reading order"
+    }
+   },
+   "names_operator": "yes (the authors; the PDF carries the affiliations)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (aclanthology.org/2025.acl-demo.18). The page's abstract is the card's snippet. The published paper (the page's PDF link) was fetched beside the page so the card's own paper could be read for its stated limit; its text is B3-pdf.txt.",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Tracing Language Model Outputs Back to Trillions of Training Tokens",
+   "card_snippet": "We present OLMOTRACE, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMOTRACE...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "X — Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just ... - X",
+   "url": null,
+   "kind": "Overview card (a post by Ai2 on X; unreachable)",
+   "files": {
+    "B4-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B4-try1.html",
+     "sha256": "86472af42ddd3df14fb3846b3a437a006749633744b3764f19e25b26d7088778"
+    },
+    "B4-try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B4-try2.html",
+     "sha256": "cf49e87cc38bcf452d79b701c68ef9797fcc5aa27fcac0205a928294aadd00e3"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:07:24Z",
+      "url": "https://x.com/allen_ai",
+      "http": 200,
+      "sha256": "86472af42ddd3df14fb3846b3a437a006749633744b3764f19e25b26d7088778",
+      "result": "the profile's script shell (<title>Ai2 (@allen_ai) / X</title>); no post text; 'OlmoTrace' occurs nowhere in the response"
+     },
+     {
+      "at": "2026-10-29T17:07:25Z",
+      "url": "https://x.com/search?q=%22wired%20into%20OlmoTrace%22",
+      "http": 200,
+      "sha256": "cf49e87cc38bcf452d79b701c68ef9797fcc5aa27fcac0205a928294aadd00e3",
+      "result": "the site's script shell (<title>X - The Everything App / X</title>); no results text"
+     }
+    ],
+    "searches": [
+     "WebSearch 'Ai2 x.com \"Olmo 3 is wired into OlmoTrace in the Ai2 Playground\"' (no x.com result)",
+     "WebSearch '\"OlmoTrace\" \"Olmo 3-Think\" allen_ai status x.com trace' (no x.com result)",
+     "WebSearch '\"wired into OlmoTrace\"' (no x.com result)"
+    ],
+    "note": "The post's status URL could not be found: three searches on the card's title returned no x.com status link, and x.com serves only a script shell without the post to an unauthenticated fetch. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('Ai2 on X', in the snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just ... - X",
+   "card_snippet": "Ai2 on X: \"Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just see its behavior—you can trace it. For example, you can ask Olmo 3-Think (32B...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Techzine Global — Ai2 introduces OLMoTrace: a peek inside LLM's - Techzine Global",
+   "url": "https://www.techzine.eu/news/analytics/130296/ai2-introduces-olmotrace-a-peek-inside-llms/",
+   "kind": "Overview card (unreachable: HTTP 403)",
+   "files": {
+    "B5-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B5-403.html",
+     "sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:07:21Z",
+      "http": 403,
+      "sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd",
+      "result": "'403 Forbidden' (103 bytes, saved as B5-403.html)"
+     },
+     {
+      "at": "2026-10-29T17:07:47Z",
+      "http": 403,
+      "result": "the same 103 bytes (same sha256)"
+     },
+     {
+      "at": "2026-10-29T17:07:48Z",
+      "http": 403,
+      "result": "the same 103 bytes (same sha256)"
+     }
+    ],
+    "note": "URL found by WebSearch on the card's title and site. Three fetches with the brief's command (curl -sSL -m 30 -A \"Mozilla/5.0\") returned HTTP 403; a fetch with other request headers was refused by the workspace as bot-check circumvention and not pursued. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('Ai2' in the title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "Ai2 introduces OLMoTrace: a peek inside LLM's - Techzine Global",
+   "card_snippet": "After generating an answer from OLMo in the Ai2 Playground, users can activate the tool by clicking the “Show OLMoTrace” button below the output. The tool then ...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "The AI Economy | Ken Yeung — Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info",
+   "url": "https://theaieconomy.substack.com/p/meet-olmotrace-the-tool-that-shows",
+   "kind": "Overview card (a newsletter post, Ken Yeung, 9 April 2025, with statements by Ai2's Liu, Farhadi, Lebrecht and Hajishirzi)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B6.html",
+     "sha256": "bf021478cec54cb8674a5919ddffc6ddbaad08640ab125d0c0bc96a1b7dabcaf"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B6.txt",
+     "sha256": "79b8019f592e2b12f4bf7d2aa2e49cb0dd9be3fa788abe45ac976fc918851eec"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:23Z",
+    "http": 200,
+    "url": "https://theaieconomy.substack.com/p/meet-olmotrace-the-tool-that-shows",
+    "raw": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B6.html",
+    "raw_sha256": "bf021478cec54cb8674a5919ddffc6ddbaad08640ab125d0c0bc96a1b7dabcaf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('Ai2'; Jiacheng Liu, Ali Farhadi, Sophie Lebrecht, Hannaneh Hajishirzi named and quoted)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the newsletter's own archive API (theaieconomy.substack.com/api/v1/archive?search=olmotrace: title 'Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info', 2025-04-09), confirmed by the page's text, which opens with the card's snippet.",
+   "surfaced_by_T": [
+    {
+     "slug": "olmotrace-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info",
+   "card_snippet": "Ken Yeung Apr 09, 2025 1 Ai2 has launched a tool to help developers answer a critical question: Where do AI models get their data? Called OLMoTrace, it's an ope...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the census's own page olmotrace--paper (not surfaced by T)",
+   "card": "arXiv — OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens (HTML, v2)",
+   "url": "https://arxiv.org/html/2504.07096v2",
+   "kind": "own page (the paper, v2, 8 July 2025), cited by the provenance census record; copied from the census's saved copy",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.html",
+     "sha256": "b1b16ba583eeb0dbfdb07615ebda0ce56623b190b14c63115ff04a8a374e0bdd"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.txt",
+     "sha256": "0d848290949c755204a93f016a8c0484746d4f940b451e5e2489a1d854c403e7"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "olmotrace--paper",
+    "read": "2026-10-29",
+    "http": "200",
+    "url": "https://arxiv.org/html/2504.07096v2",
+    "raw": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.html",
+    "raw_sha256": "b1b16ba583eeb0dbfdb07615ebda0ce56623b190b14c63115ff04a8a374e0bdd",
+    "census_sha256": "b1b16ba583eeb0dbfdb07615ebda0ce56623b190b14c63115ff04a8a374e0bdd",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/olmotrace--paper.html.gz (gunzipped) and olmotrace--paper.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (the affiliations: Allen Institute for AI, University of Washington, UC Berkeley, Stanford University)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T, though it is the HTML version linked from card 2's page. The census's saved copy is intact (its sha256 matches the census's record), so it was copied and not refetched."
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — OLMoTrace (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=OLMoTrace&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8.wiki",
+     "sha256": "400fcefc4db2f0f44126f924e05490ca0ceb15477d3b20d3dba8c36871072e29"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8.html",
+     "sha256": "92d530a8e9a8411fca35e6e3b8e10f2c8ae026db303fe423d578d5c4b2f22e81"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8-search.html",
+     "sha256": "3649e1b4ebe982d77b8e5dcf804774f72cd3bdfe1c79e06fc164bb5cfc6c3618"
+    },
+    "B8-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8-variant.wiki",
+     "sha256": "d3059a55262eb00fdf419f19f9cdffe19f9a33a91f63c747116357120f788979"
+    },
+    "B8-variant.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8-variant.html",
+     "sha256": "35a2b545fe81f363bec407be04d98f41f91a2fadd58fdd7177dd68f203e25226"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8.txt",
+     "sha256": "e0353e047d8f2fa2f2fbce22950a4cb00a20940a12e0b89dbcc9c25017160d2b"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T17:09:54Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=OLMoTrace&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T17:09:54Z",
+      "url": "https://en.wikipedia.org/wiki/OLMoTrace?redirect=no",
+      "http": 429,
+      "result": "rate-limited; refetched"
+     },
+     {
+      "at": "2026-10-29T17:10:09Z",
+      "url": "https://en.wikipedia.org/wiki/OLMoTrace?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-29T17:09:55Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=OlmoTrace&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T17:09:55Z",
+      "url": "https://en.wikipedia.org/wiki/OlmoTrace?redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-29T17:09:58Z",
+      "url": "Special:Search \"OLMoTrace\" (article space)",
+      "http": 429,
+      "result": "rate-limited; refetched"
+     },
+     {
+      "at": "2026-10-29T17:10:10Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22OLMoTrace%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'There were no results matching the query.'"
+     }
+    ],
+    "raw_sha256": "92d530a8e9a8411fca35e6e3b8e10f2c8ae026db303fe423d578d5c4b2f22e81",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect for either spelling, and no article text containing the name."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time.",
+   "claim": "OLMoTrace defined by its authors: the first system to trace language-model outputs back to their full, multi-trillion-token training data in real time",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: tracing model output to its training data in real time",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Today we introduce OLMoTrace, a one-of-a-kind feature in the Ai2 Playground that lets you trace the outputs of language models back to their full, multi-trillion-token training data in real time.",
+   "claim": "the operator's post introduces it as a feature of the Ai2 Playground that traces model outputs to their full training data in real time",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: tracing model output to its training data in real time",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora.",
+   "claim": "what it finds: verbatim matches between segments of model output and documents in the training corpora",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the relation: verbatim match between output and training text",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interact with OLMoTrace' ¶1",
+   "quote": "The highlights indicate long and unique spans that appear verbatim at least once in the training data of this model.",
+   "claim": "the highlighted spans are long and unique spans that occur verbatim at least once in the model's training data",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the relation: verbatim match between output and training text",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§6 Related Work, 'Tracing LM generation into training data'",
+   "quote": "we directly retrieve similar training examples by lexical overlap, with the heuristic that such training examples are likely to be influential for the given output.",
+   "claim": "its method against influence functions: retrieval by lexical overlap, on the heuristic that such examples are likely to be influential",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the relation: verbatim match between output and training text",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§1 ¶4",
+   "quote": "The purpose of OLMoTrace is to give users a tool to explore where LMs may have learned to generate certain word sequences, focusing on verbatim matching as the most direct connection between LM outputs and the training data.",
+   "claim": "its purpose: to explore where models may have learned to generate word sequences, verbatim matching taken as the most direct connection",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: where a model may have learned a word sequence",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "We developed OLMoTrace to enable researchers, developers, and the general public to inspect where and how language models may have learned to generate certain word sequences.",
+   "claim": "developed so that researchers, developers and the public can inspect where and how models may have learned word sequences",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: where a model may have learned a word sequence",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interpreting results' ¶5",
+   "quote": "We are still in an early stage in exploring the full potential of this tool",
+   "claim": "the operator places the tool at an early stage of exploring its potential",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: where a model may have learned a word sequence",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OLMoTrace behind the scenes' ¶3",
+   "quote": "reducing the time complexity of span finding from the naive O(L^2 * N) to O(L * log N)",
+   "claim": "span finding over an infini-gram index, its time complexity reduced from O(L^2 * N) to O(L * log N)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the pipeline: spans, index, retrieval, ranking",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§3 Steps 3 and 5",
+   "quote": "For each kept span, we retrieve up to 10 document snippets from the training data that enclose this span. … we rank all documents by a BM25 score in descending order.",
+   "claim": "up to 10 enclosing document snippets retrieved per kept span; the documents ranked by BM25",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the pipeline: spans, index, retrieval, ranking",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OLMoTrace behind the scenes' ¶7",
+   "quote": "We find that this BM25 score conveys some notion of “relevance”, and thus we surface documents with higher scores on top.",
+   "claim": "the BM25 ranking conveys 'some notion of relevance'",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the pipeline: spans, index, retrieval, ranking",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet (Techzine unreachable: HTTP 403)",
+   "quote": "After generating an answer from OLMo in the Ai2 Playground, users can activate the tool by clicking the “Show OLMoTrace” button below the output.",
+   "claim": "activated in the Playground by the 'Show OLMoTrace' button below a model's answer",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the pipeline: spans, index, retrieval, ranking",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F13": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§3.2",
+   "quote": "the OLMoTrace inference latency per query is 4.46 seconds",
+   "claim": "measured latency: 4.46 seconds per query on 98 internal conversations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "performance and relevance",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§4 'Validating the relevance rankings'",
+   "quote": "The first document displayed in each conversation received an average relevance score of 1.90 (roughly meaning “being on the same topic as the LM output)",
+   "claim": "the first displayed document scored 1.90 of 3 on human-rated relevance, roughly 'on the same topic'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "performance and relevance",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§2 'The training data.'",
+   "quote": "which totals 3.2 billion documents and 4.6 trillion (Llama-2) tokens",
+   "claim": "OLMo-2-32B-Instruct's training data, matched in full: 3.2 billion documents, 4.6 trillion tokens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the training data and its count",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'OLMoTrace behind the scenes' ¶8",
+   "quote": "In total, these five datasets contain about 3.2 billion documents and 4.6 trillion tokens, and OLMoTrace matches against all of them.",
+   "claim": "the five datasets of pre-, mid- and post-training, about 3.2 billion documents and 4.6 trillion tokens, all matched",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the training data and its count",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "OLMoTrace is available today with our three flagship models: OLMo 2 32B Instruct, OLMo 2 13B Instruct, and OLMoE 1B 7B Instruct, and it can be applied to any language model for which you have access to the training data.",
+   "claim": "at launch three models (OLMo 2 32B and 13B Instruct, OLMoE 1B 7B Instruct); applicable to any model whose training data one has access to",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "models and applicability",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet (X unreachable)",
+   "quote": "Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just see its behavior—you can trace it. For example, you can ask Olmo 3-Think (32B",
+   "claim": "Ai2 on X: OLMo 3 traced in the Playground, OLMo 3-Think (32B) among the models",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "models and applicability",
+   "date": "undated on the card (OLMo 3; after 2025-11)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F19": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§1 ¶5",
+   "quote": "OLMoTrace can be applied to any LM as long as the service provider has access to its full training data.",
+   "claim": "applicable to any language model, on the condition that the service provider has access to its full training data",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "models and applicability",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'OLMoTrace isn't limited to Ai2's model'",
+   "quote": "However, Liu reasons that closed model providers may hesitate to use OLMoTrace because it would expose the training data to sunlight.",
+   "claim": "Liu, reported: closed-model providers may hesitate to use it because it would expose their training data",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "models and applicability",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models.",
+   "claim": "uses shown by the authors: exploring fact checking, hallucination and creativity",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "uses: fact checking, hallucination, creativity, math",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§1 ¶4",
+   "quote": "We present three case studies for ways to use OLMoTrace (§ 5 ): (1) fact checking, (2) tracing the LM-generated “creative” expressions, and (3) tracing math capabilities.",
+   "claim": "three case studies, fact checking first, then 'creative' expressions and math capabilities",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: fact checking, hallucination, creativity, math",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§5 'Fact checking.'",
+   "quote": "If the LM states a fact, users may be able to fact-check the statement against its training data.",
+   "claim": "fact checking stated as a possibility: users may be able to fact-check a model's statement against its training data",
+   "modality": "hypothesis",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "PDF §5 'Fact checking.'",
+   "quote": "If the LM states a fact, users may be able to fact-check the statement against its training data.",
+   "claim": "the published version carries the same conditional",
+   "modality": "hypothesis",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-07 (ACL 2025 proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 26daccd5e52cd634…), B3-pdf.txt (sha256 f2fc53f52892169d…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§5 'Fact checking.' ¶2",
+   "quote": "We note that inspecting the document context and source can help users make a more informed judgment on the factuality of the statement, as words can be misleading out of context, and some web sources may be unreliable.",
+   "claim": "its qualification: the document's context and source help a more informed judgment, since words mislead out of context and some sources are unreliable",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interpreting results' ¶1",
+   "quote": "The interpretation of text matches with training data is quite nuanced. For some highlighted spans in the model response, we can use their corresponding documents to fact check claims made in the spans.",
+   "claim": "the operator's post: interpreting matches is 'quite nuanced'; for some spans the documents can be used to fact-check the span's claims",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interpreting results' ¶2",
+   "quote": "If you personally verify that these documents come from trusted sources, you can gain confidence that this piece of information generated by the model is factually correct.",
+   "claim": "confidence in a generated fact is conditional on the user personally verifying that the matched documents come from trusted sources",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Called OLMoTrace, it's an open-source application offering fact-checking of information provided in prompt replies.",
+   "claim": "the newsletter: an open-source application offering fact-checking of replies",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶2 (Liu, in a statement)",
+   "quote": "anyone using our models can ensure that the data supporting their outputs is trustworthy and verifiable.",
+   "claim": "Liu, in Ai2's launch statement: users can ensure that the data 'supporting their outputs' is trustworthy and verifiable",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "fact checking: what a matched document can and cannot show",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'OLMoTrace connects the output to the input' (Farhadi)",
+   "quote": "And the minute you start linking the generation to an input—assuming that the inputs were factual—then you can start also cooking up scores for hallucination",
+   "claim": "Farhadi, reported: once generation is linked to input, and assuming the inputs factual, hallucination scores become possible",
+   "modality": "attributed",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: fact checking, hallucination, creativity, math",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interpreting results' ¶4",
+   "quote": "OLMoTrace reveals that this entire expression appears multiple times in the training data, so the model could have easily learned it through memorization.",
+   "claim": "a math expression found many times in the training data: the model could have learned it by memorization",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: fact checking, hallucination, creativity, math",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Interpreting results' ¶5",
+   "quote": "now we can see that the model may have learned to say August 2023 from the post-training examples listed on the right. This finding led us to remove contents containing knowledge cutoff dates from the 32B model’s post-training data.",
+   "claim": "a false knowledge-cutoff claim traced to post-training examples; the finding changed the 32B model's post-training data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: fact checking, hallucination, creativity, math",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'As we start to look towards regulation' (Lebrecht)",
+   "quote": "As we start to look towards regulation, governance, and auditability, there are certain key sectors right now that are limited in what they can deploy at scale with black-box models,",
+   "claim": "Lebrecht, reported: regulation, governance and auditability limit what key sectors can deploy with black-box models; traceability as a pathway",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: regulation and auditing",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Limitations",
+   "quote": "OLMoTrace finds lexical, verbatim matches between an LM’s output and its training data. The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.",
+   "claim": "the authors' stated limit: lexical, verbatim matches only; the documents are not causes of the output, and not supporting evidence or citations for it",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the stated limit: not causes, not evidence, not citations",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "PDF, Limitations",
+   "quote": "The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.",
+   "claim": "the published version (ACL 2025) carries the same limit",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limit: not causes, not evidence, not citations",
+   "date": "2025-07 (ACL 2025 proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 26daccd5e52cd634…), B3-pdf.txt (sha256 f2fc53f52892169d…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'Ai2 doesn't intend' (Liu)",
+   "quote": "Ai2 doesn't intend for the documents retrieved to be viewed as the definitive source of the model's learning. \"We're just showing you some associations, connections between them. Some of them may warrant a further inspection,\" Liu clarified.",
+   "claim": "the newsletter and Liu: the documents are not the definitive source of the model's learning, only associations, some warranting inspection",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limit: not causes, not evidence, not citations",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'In an example where OLMo was asked about the Space Needle'",
+   "quote": "Ai2 asserts that OLMOTrace’s results should not be mistaken as indicators of authority.",
+   "claim": "Ai2, reported: the results are not indicators of authority (a matched blog ranks beside an official site)",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limit: not causes, not evidence, not citations",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'While Ai2 touts OLMoTrace'",
+   "quote": "OLMoTrace doesn't provide analytics or insights to help developers determine what to do next to improve the training data. Simply put, it's generating awareness.",
+   "claim": "the newsletter's own assessment: it tags where data came from and gives no analytics for improving the training data; it generates awareness",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "assessment from outside",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§6 'Comparison with RAG.'",
+   "quote": "Examples of them include Bing Chat, Google AI Overview, and Perplexity AI. Despite looking similar, OLMoTrace is fundamentally different from RAG: OLMoTrace retrieves documents post-hoc and does not intervene with the LM generation.",
+   "claim": "set against retrieval-augmented generation, Google AI Overview named among its examples: OLMoTrace retrieves post hoc and does not intervene in generation",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "unlike retrieval-augmented generation",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'Liu interjects' (Liu)",
+   "quote": "We are not intervening with the model response. Our response is purely generated by the neural language model.",
+   "claim": "Liu, reported: unlike Perplexity's retrieval, OLMoTrace does not intervene in the model's response",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "unlike retrieval-augmented generation",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§6 'Other types of tracing.'",
+   "quote": "the Gemini App has a “double-check response” feature that highlights parts of the LM response and shows similar results from Google Search, which is updated in real time and thus not identical to Gemini’s training data, making it less useful for scientific exploration.",
+   "claim": "Gemini's 'double-check response' shows Google Search results that are not Gemini's training data, less useful for scientific exploration",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "unlike retrieval-augmented generation",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "affiliations",
+   "quote": "α Allen Institute for AI ω University of Washington β UC Berkeley σ Stanford University",
+   "claim": "the authors' institutions: the Allen Institute for AI, the University of Washington, UC Berkeley, Stanford",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "title and authors",
+   "quote": "View a PDF of the paper titled OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens, by Jiacheng Liu and 30 other authors",
+   "claim": "the paper: Jiacheng Liu and 30 other authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the authors",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "OLMoTrace is a manifestation of Ai2’s commitment to an open ecosystem – open models, open data, and beyond.",
+   "claim": "Ai2 presents it as a manifestation of its commitment to open models and open data",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7d7b29ab8ba6c6e1…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s6",
+   "quote": "OLMoTrace is publicly available and fully open-source.",
+   "claim": "publicly available and fully open-source",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "§1 ¶5",
+   "quote": "The core part of the system is open-sourced under the Apache 2.0 license.",
+   "claim": "the core part of the system open-sourced under Apache 2.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶ 'OLMoTrace connects the output to the input' (Farhadi)",
+   "quote": "OLMoTrace connects the output to the input, as simple as that. Because our inputs are open, we could actually connect them,",
+   "claim": "Farhadi, reported: it connects output to input, possible because Ai2's inputs are open",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness",
+   "date": "2025-04-09 (post date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 79b8019f592e2b12…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "submission history; Comments",
+   "quote": "[Submitted on 9 Apr 2025 (v1), last revised 8 Jul 2025 (this version, v2)] … Comments: ACL 2025 demo track",
+   "claim": "submitted 9 April 2025, revised 8 July 2025; ACL 2025 demo track",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "2025-04-09 (v1; this page v2, 2025-07-08)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 836bf63640ea080a…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Anthology metadata",
+   "quote": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations) … Award: Best Demo",
+   "claim": "published in the ACL 2025 System Demonstrations volume (2025.acl-demo.18), with the Best Demo award",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "2025-07 (ACL 2025 proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 26daccd5e52cd634…), B3-pdf.txt (sha256 f2fc53f52892169d…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Mitigating social and legal risks",
+   "quote": "OLMoTrace can make potentially problematic contents in the LM training data more easily exposed.",
+   "claim": "a stated risk: problematic content in the training data more easily exposed; red-teamed for copyright, PII and toxicity",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "risks",
+   "date": "2025-07-08 (v2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 0d848290949c7552…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles OLMoTrace and OlmoTrace; article-space search",
+   "quote": "raw wikitext (action=raw, redirect=no), 2026-10-29T17:09:54Z: HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article on OLMoTrace under either spelling, no redirect, and no article text containing the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 e0353e047d8f2fa2…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Allen Institute for Artificial Intelligence — Going beyond open data – increasing transparency and trust in language models with OLMoTrace | Ai2",
+  "B2": "arXiv — OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training ...",
+  "B3": "ACL Anthology — Tracing Language Model Outputs Back to Trillions of Training Tokens",
+  "B4": "X — Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just ... - X",
+  "B5": "Techzine Global — Ai2 introduces OLMoTrace: a peek inside LLM's - Techzine Global",
+  "B6": "The AI Economy | Ken Yeung — Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info",
+  "B7": "arXiv — OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens (HTML, v2)",
+  "B8": "Wikipedia — OLMoTrace (no article)"
+ }
+}

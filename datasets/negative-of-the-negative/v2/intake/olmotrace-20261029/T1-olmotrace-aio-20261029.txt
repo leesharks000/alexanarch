@@ -1,0 +1,43 @@
+[Google AI Overview at the query, signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14), 2026-10-29. The paste is the Overview expanded (the 'AI Mode Conversation' view, with the source cards that follow the answer); the 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted.]
+
+[QUERENT] OLMoTrace
+
+[SYSTEM] [OLMoTrace](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ) is an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trillion-token training datasets in real time. [[1](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ), [2](https://www.google.com/goto?url=CAESWAHrOzAVIeW0Bh-S4A2VvhIfG4x5GI442H2AG7c4YT-P8qSUHih41gNA2d_u0ez62uyi0CLMCuDxp107lq0nGROUCWBCMy5JoGWd2CZ7_vNcWWCs3Lu2iFg)]
+How It Works
+
+* Real-Time Tracing: After a model generates a response in the Ai2 Playground, users can click the Show OLMoTrace button to highlight verbatim spans of text. [[1](https://www.google.com/goto?url=CAESkgEB6zswFSw37mmS0ky2JdwMbluTG9bXw6YrEyY7-RDR3C6gpGJF1AjuVzgdHaMhPrwWEs6-CqOPaBUaJmKtgKhm0K6DY4dgamujc7BlSKs3Q7zgBXwn4p50GiZOmvHB7LP_ros68_TLow3I8e5BC6voQvexCU7B9RANXq30erTczX0PJp4Eoot_gOSfIdL-s64rEQ), [2](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ)]
+* Source Retrieval: The tool matches output segments against training corpora (such as the Dolma datasets) and ranks up to 10 context documents using BM25 and unigram probabilities. [[1](https://www.google.com/goto?url=CAESaQHrOzAVV_6J7u0vQR70ckMfNhiCogECpGpN15fGLDhAZkGzPPDHW94cWHDI3yvNEPPIeJCWECt_JJh8NwwM53Wiwyx94U6j_n8S84uLcd-yOdbxGgO2_8_63OmgYRHsjdzAlH-iXL3LIA), [2](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ)]
+* Underlying Tech: It uses an extended version of infini-gram with a parallel algorithm that reduces lookup complexity to \(O(L \log N)\). [[1](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ)]
+
+Supported Models
+
+* OLMo 2 32B Instruct
+* OLMo 2 13B Instruct
+* OLMoE 1B 7B Instruct
+* OLMo 3 family (including OLMo 3-Think 32B) [[1](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ), [2](https://www.google.com/goto?url=CAESaQHrOzAVV_6J7u0vQR70ckMfNhiCogECpGpN15fGLDhAZkGzPPDHW94cWHDI3yvNEPPIeJCWECt_JJh8NwwM53Wiwyx94U6j_n8S84uLcd-yOdbxGgO2_8_63OmgYRHsjdzAlH-iXL3LIA)]
+
+Key Use Cases
+
+* Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents or generated from general parameters. [[1](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ), [2](https://www.google.com/goto?url=CAESkgEB6zswFSw37mmS0ky2JdwMbluTG9bXw6YrEyY7-RDR3C6gpGJF1AjuVzgdHaMhPrwWEs6-CqOPaBUaJmKtgKhm0K6DY4dgamujc7BlSKs3Q7zgBXwn4p50GiZOmvHB7LP_ros68_TLow3I8e5BC6voQvexCU7B9RANXq30erTczX0PJp4Eoot_gOSfIdL-s64rEQ)]
+* Hallucination Diagnosis: Spot where a model mixes up facts or memorized text from source files. [[1](https://www.google.com/goto?url=CAESZQHrOzAVTuCtZhUvlAC1FgYlT-ioaSAfiV6VG-c9osiVQ_FPlF62I3S48qKZjg6PnH3vYzrPeKi7Rar1Z4mDks0EMNRTl8vcyc5d0cIMWkhvQoo_giR_HHzJhHcmcAGkUssJqLjF), [2](https://www.google.com/goto?url=CAESWgHrOzAVoVYHLgJxMVIjxyaZx7wDArKB6jxCb1tOprJFofLF9_o_Lr6foJNzJ2skLWhN04W7o7uFmFuQkrV4xPmu8JuLWWjcOIm7uniqJ_3AgD9QQJlTrCUJTQ)]
+* Auditing & Transparency: Inspect the data recipes and pretraining paths for regulatory compliance or research. [[1](https://www.google.com/goto?url=CAESfgHrOzAVd9pZK6hXPDhajqcIyrIpeoeKsOtolrBXNH59t2FmwwJ6HuF-YnkP1-EVgZEWX4T7kBh1XIkmkww2H4xJ8oprHeZCLafy4gXrndLDeynguHxNr21pz4Ein_w-Tws5-F6y0jfcbHLurOUXxmovED45PgVVy2GZwu4b7w), [2](https://www.google.com/goto?url=CAESaQHrOzAVV_6J7u0vQR70ckMfNhiCogECpGpN15fGLDhAZkGzPPDHW94cWHDI3yvNEPPIeJCWECt_JJh8NwwM53Wiwyx94U6j_n8S84uLcd-yOdbxGgO2_8_63OmgYRHsjdzAlH-iXL3LIA)]
+
+Would you like to know how to access the open-source code for OLMoTrace on GitHub/Hugging Face, or are you looking for details on a specific OLMo model version?
+Allen Institute for Artificial Intelligence
+Going beyond open data – increasing transparency and trust in language models with OLMoTrace | Ai2
+Feature: OLMoTrace in Ai2 Playground traces language model outputs to multi-trillion-token training data in real time. Supported Models: OLMo 2 32B Instruct, OL...
+arXiv
+OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training ...
+[2504.07096] OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:
+ACL Anthology
+Tracing Language Model Outputs Back to Trillions of Training Tokens
+We present OLMOTRACE, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMOTRACE...
+X
+Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just ... - X
+Ai2 on X: "Olmo 3 is wired into OlmoTrace in the Ai2 Playground, so you don't just see its behavior—you can trace it. For example, you can ask Olmo 3-Think (32B...
+Techzine Global
+Ai2 introduces OLMoTrace: a peek inside LLM's - Techzine Global
+After generating an answer from OLMo in the Ai2 Playground, users can activate the tool by clicking the “Show OLMoTrace” button below the output. The tool then ...
+The AI Economy | Ken Yeung
+Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info
+Ken Yeung Apr 09, 2025 1 Ai2 has launched a tool to help developers answer a critical question: Where do AI models get their data? Called OLMoTrace, it's an ope...

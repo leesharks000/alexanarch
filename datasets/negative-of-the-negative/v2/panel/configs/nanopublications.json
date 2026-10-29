@@ -1,0 +1,69 @@
+{
+ "row": "nanopublications",
+ "address": "Nanopublications",
+ "entity": "Nanopublications (nanopub.net): the publication model in which an assertion, its provenance and its publication info are published together as one small RDF knowledge graph, 'treated as an independent (scientific) publication', with its service ecosystem (the second-generation Nanopub Registry and Nanopub Query, Nanodash, the legacy nanopub-server for old unsigned nanopublications, nanopub-http for signing and publishing, client libraries such as nanopub-py); conceived 2009 (Groth et al. 2010; Mons and Velterop 2009); formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/nanopublications/, editor Lee Sharks)",
+ "row_type": "C (a public entity on which the archive bears: a publication model and service ecosystem; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bnano-?pub(lication)?s?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bnanopub\\.(net|org)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bnanopub-(py|java|http|server)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bNanodash\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bNanopub (Registry|Query|Monitor)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bKnowledge Pixels\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bTrusty URIs?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bMons (and|&) Velterop\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "FAIR data containers",
+   "pattern": "\\bFAIR (data|digital objects?|guiding principles|principles|infrastructure|data containers?)\\b",
+   "flags": "",
+   "basis": "field: B1 (nanopub.net, home: 'FAIR data containers for scientific results, and more'); B6 (Schultes et al., RIO 8: e94150, Abstract: nanopublication and the FAIR Digital Object Framework 'act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations'); B8 (nanopub 1.2.11 docs: 'nanopublications are an effective FAIR means of communicating scientific claims and results')"
+  },
+  {
+   "term": "provenance for individual assertions",
+   "pattern": "\\b(claim[- ]level provenance|assertion[- ]level provenance|provenance of (the |each |an? |individual )?(assertion|claim|statement)s?|provenance[- ]centric)\\b",
+   "flags": "i",
+   "basis": "field: B1 (nanopub.net, home: 'Provenance : This part describes how the assertion above came to be.'); B6 (Abstract: 'a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable'); B4 (IEEE Xplore card title 'A Growing Resource of Provenance'); the census's provenance_object 'an assertion' (PE record)"
+  },
+  {
+   "term": "machine-readable scientific publishing (claim-level decomposition of the scholarly record)",
+   "pattern": "\\b(machine[- ](readable|actionable|interpretable) (science|scientific|claims?|assertions?|publications?|publishing)|micropublications?|scholarly data publishing)\\b",
+   "flags": "i",
+   "basis": "field: B4 (IEEE Xplore card snippet: 'Nanopublications are a Linked Data format for scholarly data publishing'); B8 ('a formalized and machine-readable way of communicating the smallest possible units of publishable information'); B7 (Pensoft: 'elementary, machine-actionable, simple and straightforward scientific statements'); the census's lineage 'scholarly record' and kind 'publication model and service ecosystem' (PE record)"
+  }
+ ],
+ "classes_note": "Three classes, each sourced from the field by locus and matching the census's own lineage ('scholarly record'), kind ('publication model and service ecosystem') and provenance_object ('an assertion'): FAIR data containers (B1 home headline; B6 Abstract; B8); provenance for individual assertions (B1 home, the Provenance part; B6 Abstract; the IEEE card's title); machine-readable scientific publishing, the claim-level decomposition of the scholarly record (B4 snippet; B8; B7). The aliases are the entity's name in its forms (nanopublication(s), nanopub(s)), its domains, its software (nanopub-py, nanopub-java, nanopub-http, nanopub-server, Nanodash, Nanopub Registry, Query and Monitor), Knowledge Pixels (named by B7 as the company behind nanopub.net and Nanodash), Trusty URIs (B6: the identifiers that make nanopublications permanent) and the founding citation 'Mons and Velterop'. 'Knowledge Pixels' and 'Trusty URI' are admitted at D only where the sentence or paragraph bears on nanopublications. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on nanopublications (what they are, what they carry, what they leave out, where they stand among the archive's instruments or the archive's own adoption of their practice); a reference-list entry or a bare listing is not a claim. O-class admits a sentence that applies an archive category (provenance erasure, the Provenance Erasure Rate, the training layer against the composition layer, the Claim Status Packet, training-layer literature) to a sourced class as a class.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addendum BRIEF-NEW-ROW-PROVENANCE.md; address 'Nanopublications' (nanopublications-aio-20261029, OBS-8190a80a3187, ADDR-94b0d9342da0), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#176, #510, #833, #1529).",
+ "hop_from": [
+  176,
+  510,
+  833,
+  1529
+ ]
+}

@@ -1,0 +1,404 @@
+IPTC Information Interchange Model - Wikipedia
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+Main page
+
+Contents
+
+Current events
+
+Random article
+
+About Wikipedia
+
+Contact us
+
+Contribute
+
+Help
+
+Learn to edit
+
+Community portal
+
+Recent changes
+
+Upload file
+
+Special pages
+
+Search
+
+Search
+
+Appearance
+
+Donate
+
+Create account
+
+Log in
+
+Personal tools
+
+Donate
+
+Create account
+
+Log in
+
+Contents
+
+move to sidebar
+hide
+
+(Top)
+
+1
+Overview
+
+2
+History
+
+3
+See also
+
+4
+External links
+
+5
+References
+
+Toggle the table of contents
+
+IPTC Information Interchange Model
+
+6 languages
+
+Čeština
+
+Deutsch
+
+فارسی
+
+Français
+
+Italiano
+
+Nederlands
+
+Edit links
+
+Article
+
+Talk
+
+English
+
+Read
+
+Edit
+
+View history
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+Read
+
+Edit
+
+View history
+
+General
+
+What links here
+
+Related changes
+
+Upload file
+
+Permanent link
+
+Page information
+
+Cite this page
+
+Get shortened URL
+
+Switch to legacy parser
+
+Print/export
+
+Download as PDF
+
+Printable version
+
+In other projects
+
+Wikimedia Commons
+
+Wikidata item
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Metadata format used in digital files
+
+The Information Interchange Model (IIM) is a file structure and set of metadata attributes that can be applied to text, images and other media types. It was developed in the early 1990s by the International Press Telecommunications Council (IPTC) to expedite the international exchange of news among newspapers and news agencies.
+
+GThumb with IPTC metadata fields for JPG
+The full IIM specification includes a complex data structure and a set of metadata definitions. A new version of the user guide was released in May 2024.[1]
+
+Although IIM was intended for use with all types of news items — including simple text articles — a subset found broad worldwide acceptance as the standard embedded metadata used by news and commercial photographers. Information such as the name of the photographer, copyright information and the caption or other description can be embedded either manually or automatically.
+
+IIM metadata embedded in images are often referred to as "IPTC headers", and can be easily encoded and decoded by most popular photo editing software.
+
+The Extensible Metadata Platform (XMP) has largely superseded IIM's file structure, but the IIM image attributes are defined in the IPTC Core schema for XMP and most image manipulation programs keep the XMP and non-XMP IPTC attributes synchronized.
+
+Because of its nearly universal acceptance among photographers — even amateurs — this is by far IPTC's most widely used standard. On the other hand, the use of IIM structure and metadata for text and graphics is mainly limited to European news agencies.
+
+Overview
+[edit]
+
+IIM attributes are widely used and supported by many image creation and manipulation programs. Almost all the IIM attributes are supported by the Exchangeable image file format (Exif), a specification for the image file format used by digital cameras.
+
+IIM metadata can be embedded into JPEG/Exif, TIFF, JPEG2000 or Portable Network Graphics formatted image files. Other file formats such as GIF or PCX do not support IIM.
+
+IIM's file structure technology has largely been overtaken by the Extensible Metadata Platform (XMP), but the IIM attribute definitions are the basis for the IPTC Core schema for XMP.
+
+Example of available fields:
+
+IPTC field
+
+Description
+
+Example
+
+Number of characters
+
+Caption
+
+Description of the image
+
+Photo of a goldfish in a bowl
+
+2000
+
+Keywords
+
+Keywords
+
+Fish, Goldfish, Aquarium, Glass, Animal
+
+unlimited number of characters (each keyword max. 64)
+
+Credit
+
+Credit -Credit, e.g. To whom is being paid
+
+Jan Jansen
+
+32
+
+Copyright
+
+Rights
+
+© Copyright 2005, Jan Jansen, all rights reserved
+
+128
+
+Object Name
+
+Subject
+
+Goldfish1
+
+64
+
+Creation Date
+
+Recording date
+
+20060318
+
+8
+
+City
+
+Place
+
+Amsterdam
+
+32
+
+Province State
+
+Province
+
+North Holland
+
+32
+
+Country
+
+Land
+
+Netherlands
+
+64
+
+Special Instructions
+
+Special instructions
+
+not for the internet
+
+256
+
+Byline
+
+Name of photographer
+
+Jan Jansen
+
+32
+
+Category
+
+Category
+
+INT
+
+3
+
+Headline
+
+Title
+
+The Fish Bowl
+
+256
+
+Source
+
+Source
+
+Wikipedia
+
+32
+
+History
+[edit]
+
+Since the late 1970s the IPTC's activities have primarily focused on developing and publishing industry standards for the interchange of news. The first standard, IPTC 7901, bridged the eras of teleprinters and computers.
+
+In the late 1980s development began on a standard (the Information Interchange Model) that would be designed to best work with computerized news editing systems.
+
+In particular, the IPTC defined a set of IIM metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be part of the IIM, but the concept really advanced in 1994 when Adobe Systems defined a specification for actually embedding the metadata into digital image files — yielding "IPTC headers."
+
+(Adobe adopted the IPTC IIM metadata definitions, but not the overall IIM data structure. Photos that contain IPTC Headers appear in all other respects to be normal JPEG or TIFF images; software that does not recognize IPTC Headers will simply ignore the metadata.)
+
+In 2001, Adobe introduced "Extensible Metadata Platform" (XMP), which is an XML schema for the same types of metadata as IPTC, but is based on XML/RDF, and is therefore inherently extensible. The effort spawned a collaboration with the IPTC, eventually producing the "IPTC Core Schema for XMP", which merges the two approaches to embedded metadata. The XMP specification describes techniques for embedding metadata in JPEG, TIFF, JPEG2000, GIF, PNG, HTML, PostScript, PDF, SVG, Adobe Illustrator, and DNG files. Recent versions of all the main Adobe software products, (Photoshop, Illustrator, Acrobat, Framemaker, etc.) support XMP, as do an increasing number of third-party tools.
+
+In June 2007, IPTC in cooperation with IFRA held the First International Photo Metadata conference, titled "Working towards a seamless photo workflow" to a standing room only crowd (over 130 attendees), prior to the CEPIC Congress, in Florence, Italy. A similar conference was held in Malta in June 2008.
+
+The IPTC Photo Metadata working group released a white paper,[2] which figured prominently at this event. The conference keynote was given by Andreas Trampe, head of the photo desk of Stern. Other speakers included photographers such as David Riecks and Peter Krogh, photo and news agencies such as Reuters; representatives of standards bodies such as PLUS, IPTC, and IFRA; as well as spokespersons from the photo metadata implementers side, such as Adobe Systems, Apple Inc., Canon Inc., FotoWare AS, Hasselblad, and Microsoft.
+
+The electronic presentations given by most of the speakers are available online from the Photo Metadata Conference website Archived 2011-05-11 at the Wayback Machine including a link to a report on each of the speakers' talks
+
+See also
+[edit]
+
+ExifTool, an open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata
+
+gThumb, an image viewer with IPTC reading/writing support
+
+External links
+[edit]
+
+Information Interchange Model (IIM) International Press Telecommunications Council (IPTC)
+
+Metadata++ — Metadata++ free Microsoft Windows software to display and modify all kind of metadata
+
+References
+[edit]
+
+↑
+Anon (22 March 2024). "IPTC Photo Metadata user guide". IPTC Photo Metadata Working Group. London, United Kingdom. Retrieved 2024-06-11.
+
+↑ Löffler, Harald (2007), Baranger, Walt; Steidl, Michael (eds.), Photo Metadata White Paper 2007, IPTC. The white paper discusses upcoming changes to the IPTC Photo Metadata Standards
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=IPTC_Information_Interchange_Model&oldid=1377737077"
+
+Category:
+
+Metadata
+
+Hidden categories:
+
+Articles with short description
+
+Short description is different from Wikidata
+
+Webarchive template wayback links
+
+This page was last edited on 30 September 2026, at 21:57 (UTC).
+
+Page was rendered with Parsoid.
+
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+Privacy policy
+
+About Wikipedia
+
+Disclaimers
+
+Contact Wikipedia
+
+Legal & safety contacts
+
+Code of Conduct
+
+Developers
+
+Statistics
+
+Cookie statement
+
+Mobile view
+
+Search
+
+Search
+
+Toggle the table of contents
+
+IPTC Information Interchange Model
+
+6 languages
+
+Add topic

@@ -1,0 +1,272 @@
+{
+ "row": "schoenberg-database",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the SDBM or its operator, the SDBM or the Institute named; R, a relation the archive states between the SDBM and an archive object; O, an archive category applied to the SDBM or to the class the field sources for it (manuscript provenance, the documented history of manuscripts' sales, locations and ownership: B8, B9, B10; the census's lineage 'manuscripts and books' and relation types). A bare mention, a list of anchors or keywords, a citation-list entry or a reference line is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01 v1.1): the archive's categories (the dimensions of provenance, semantic provenance) applied to provenance of objects as a class: art-historical provenance, the documented chain of ownership, an adjacent tradition with the same structure and a different object; archival provenance the parent concept semantic provenance extends; custody preserving meaning; the provenance traditions older than and outside the AI-era four; the frame's limit",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03",
+    "O725-04",
+    "O725-05",
+    "O725-06",
+    "O725-07",
+    "O725-08"
+   ],
+   "cands": [
+    "O0002",
+    "O0003",
+    "O0004"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, 2026-05-12): every claim falls in #725's lineages and adds nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "O0005",
+    "O0006",
+    "O0007"
+   ]
+  },
+  {
+   "dep": 43,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-RCF-01, Relation to Adjacent Frameworks: provenance studies' archival evidence (manuscripts, signatures, watermarks, chain of custody) and retrocausal canon formation's extension of it into the retrieval layer: the archive's category applied to the class",
+   "claims": [
+    "O43-01"
+   ],
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 610,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "hop (reverse, via #43): Whose Image and Superscription? §2.2: a catalogue records that a manuscript exists, where it is held and what it contains, and does not analyse its transmission: civic philology's category applied to the catalogue of manuscripts' location (an analogy inside an argument about numismatics; carried at interpretation)",
+   "claims": [
+    "O610-01"
+   ],
+   "cands": [
+    "H0028",
+    "H0029"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/schoenberg-database-of-manuscripts-aio-20261029/",
+   "reason": "the Capture Registry's findings, analysis, reading, query note, PER note and originator for the entity's capture (OBS-b5f349e78d48, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/schoenberg-database/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'schoenberg-database'], organizing_question, schema_note; rendered aggregators/schoenberg-database/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29): its fields; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    43,
+    725
+   ],
+   "reason": "string pass D/R: none. The archive names neither the Schoenberg Database of Manuscripts, 'SDBM', its domain nor the Schoenberg Institute in any text (1,711 scanned)"
+  },
+  {
+   "dep": [
+    1569
+   ],
+   "reason": "'Schoenberg' alone (not an alias): Arnold Schoenberg in #1569's lineage tables, a homonym; not a candidate"
+  },
+  {
+   "dep": [
+    102
+   ],
+   "reason": "hop: archival science as a 'Strong bridge field' to canon formation ('Archives and training sets share the politics of what to keep'): archives' selection, not provenance of objects; and bridge-face lists"
+  },
+  {
+   "dep": [
+    103
+   ],
+   "reason": "hop: 'From provenance studies: attribution → lineage → ...' an entry in a list of inward paths to metadata packets: a listing, no claim on the class"
+  },
+  {
+   "dep": [
+    611,
+    612,
+    1631
+   ],
+   "reason": "hop: currency, numismatic collectors and auction prices of inscribed bills: provenance capture on money, not the provenance of manuscripts or objects in catalogues"
+  },
+  {
+   "dep": [
+    729,
+    1369,
+    1386
+   ],
+   "reason": "hop: provenance erasure defined as loss of 'authorial lineage, context, or ownership' through AI synthesis; one quotes a composition naming 'colonial looting': no claim on manuscript or object provenance as a class"
+  },
+  {
+   "dep": [
+    44,
+    55,
+    56,
+    65,
+    73,
+    89,
+    100,
+    102,
+    103,
+    112,
+    133,
+    140,
+    141,
+    149,
+    151,
+    160,
+    162,
+    165,
+    227,
+    229,
+    250,
+    341,
+    349,
+    516,
+    561,
+    572,
+    576,
+    611,
+    612,
+    624,
+    636,
+    641,
+    642,
+    645,
+    649,
+    673,
+    689,
+    726,
+    729,
+    768,
+    823,
+    845,
+    969,
+    970,
+    971,
+    978,
+    998,
+    1039,
+    1101,
+    1178,
+    1196,
+    1201,
+    1202,
+    1210,
+    1229,
+    1368,
+    1369,
+    1384,
+    1386,
+    1389,
+    1393,
+    1601,
+    1631,
+    1660,
+    1661,
+    1677,
+    1684,
+    1687
+   ],
+   "reason": "hop (forward and reverse) from #43 and #725: the texts scanned for manuscript, catalogue, ownership, archival and art-historical provenance; none (beyond #610, and #1190 as #725's instance) makes a claim on the SDBM or on manuscript provenance as a class (mentions of manuscripts are of scriptural, Marxian or literary manuscripts, submission guidelines or editorial practice)"
+  }
+ ],
+ "hop": {
+  "from": [
+   43,
+   725
+  ],
+  "candidates": 73,
+  "admitted": 1,
+  "admitted_deps": [
+   610
+  ],
+  "instances": [
+   1190
+  ]
+ },
+ "class_pass": "O-class: the class term (manuscript provenance, sourced from B8, B9, B10 and the census's lineage and relation types) matched 7 sentences in 3 deposits; admitted by reading at #43 (O0001) and #725 (O0002–O0004, with the paragraphs around them), #1190 as #725's instance; #610 by the hop",
+ "observations": "The archive has no deposit, sentence or record naming the SDBM or its Institute before the provenance census record and the capture of 2026-10-29. Its bearing is a reading of the class: object provenance (the chain of ownership) as a tradition adjacent to semantic provenance with the same structure on a different object (#725), archival evidence extended into the retrieval layer (#43), the catalogue that records location and not transmission (#610), and the census schema's question of every resource: what provenance it carries, by which operation, on whose assertion, with what evidence of survival.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 7,
+   "O_deposits": 3,
+   "H_candidates": 73
+  },
+  "deposits_candidate": 3,
+  "deposits_admitted": 4,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 73,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 11,
+   "census": 18,
+   "deposit": 10
+  }
+ }
+}

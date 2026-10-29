@@ -1,0 +1,106 @@
+{
+ "row": "iptc-photo-metadata-tests",
+ "address": "IPTC photo metadata",
+ "entity": "The IPTC photo metadata tests (IPTC Photo Metadata Research; Social Media Sites Photo Metadata Test Results), run by the IPTC Photo Metadata Working Group: 15 social media sites tested in 2013 and 2016, about a dozen sites and systems in Spring 2019, by upload and by Save As or download, for whether the embedded Exif and IPTC metadata (IIM and XMP) survive; a software rights-metadata study of August 2014; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/iptc-photo-metadata-tests/). Distinct from the object the address names, the IPTC Photo Metadata Standard (2025.1: Core 1.5, Extension 1.9), which the tests test as carrier.",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "iptc-photo-metadata-tests",
+  "address": "IPTC photo metadata",
+  "entity": "The IPTC photo metadata tests (IPTC Photo Metadata Research; Social Media Sites Photo Metadata Test Results), run by the IPTC Photo Metadata Working Group: 15 social media sites tested in 2013 and 2016, about a dozen sites and systems in Spring 2019, by upload and by Save As or download, for whether the embedded Exif and IPTC metadata (IIM and XMP) survive; a software rights-metadata study of August 2014; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/iptc-photo-metadata-tests/). Distinct from the object the address names, the IPTC Photo Metadata Standard (2025.1: Core 1.5, Extension 1.9), which the tests test as carrier.",
+  "row_type": "C (a public entity on which the archive bears: a test series of the provenance meta-aggregator, lineage media)",
+  "aliases": [
+   {
+    "pattern": "\\bIPTC\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bInternational Press Telecommunications Council\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPhoto Metadata (Working Group|Research|Test Results|Interoperability Tests?)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bSocial Media Sites Photo Metadata\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bEmbedded Metadata Manifesto\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(Metawatch|GetPMD)\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\biptc\\.org\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "the removal of embedded metadata from image files in sharing and transit (what the tests measure)",
+    "pattern": "\\b(strip(s|ped|ping)?|remov(e|es|ed|al)|lost|loss|disappear\\w*|surviv\\w*|retain\\w*|retention|preserv\\w*)\\b[^.]{0,60}\\b(embedded|image|photo|file|EXIF|Exif|XMP)[- ]metadata\\b|\\b(embedded|image|photo|EXIF|Exif|XMP)[- ]metadata\\b[^.]{0,60}\\b(strip(s|ped|ping)?|removed|lost|disappear\\w*|surviv\\w*|retained|preserved)\\b",
+    "flags": "i",
+    "basis": "field: B13 (IPTC Photo Metadata Research: 'when they shared photos via social media sites or systems, their embedded metadata disappeared'; 'to understand how image sharing, through upload and download, affects the integrity of embedded metadata'); B12 (2019 results: 'metadata is stripped off in SavedAs or downloaded files'); B4 (User Guide: 'may be stripping out embedded metadata fields'); B9 (FAQ: 'the metadata might be stripped from your images by some software on your site')"
+   },
+   {
+    "term": "embedded image metadata (Exif, IPTC IIM and XMP inside the file) as provenance carrier (what the tests test)",
+    "pattern": "\\b(XMP|EXIF|Exif|embedded (image |photo )?metadata|IPTC/XMP|EXIF/IPTC)\\b",
+    "flags": "",
+    "basis": "field: B12 (2019 results, test procedure: 'are the embedded Exif and IPTC metadata (in the formats IIM and XMP) of the uploaded image still embedded?'); B2 (the Standard: 'IPTC worked alongside Adobe on the technical implementation of the metadata that employs Adobe's XMP technology'); census provenance_carrier 'embedded metadata inside the image file' (PE)"
+   }
+  ],
+  "classes_note": "Two classes, each sourced from the field by locus, and kept apart because the address names one object and the record another: (1) the removal of embedded metadata in sharing and transit, which is what the tests measure (B13, B12, B4, B9); (2) embedded image metadata as a provenance carrier, which is what the tests test (B12, B2; the census's provenance_carrier). The census's own lineage and kind for the entity are 'media' and 'test series' (census.json rows[slug == 'iptc-photo-metadata-tests'], lineage, kind); neither is a string the archive uses of other things, so they are not run as classes. Aliases: the operator's abbreviation and full name (a string candidate on 'IPTC' bears on the operator or the standard and is admitted at D only where the tests are named; a claim the archive makes on the standard is read at O-class 2, the carrier, and composed as a claim on the carrier, never as a claim on the tests), the Working Group and the tests' page names, the Embedded Metadata Manifesto the User Guide endorses, the IPTC's Metawatch (the census's successor in method) and GetPMD, and the domain. Admission by reading (§3.4): a sentence or paragraph that makes a claim on the tests, on embedded metadata's survival in transit, or applies an archive category (provenance erasure, PER, scaffold, Layer 1 metadata, survival) to either class; a bibliography line, a checklist or a field map of the archive's own files is not a claim on the class.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'IPTC photo metadata' (iptc-photo-metadata-aio-20261029, OBS-9b96943ca090, ADDR-ee0523b11509), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#725, #1190, #1409).",
+  "hop_from": [
+   725,
+   1190,
+   1409
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 17,
+  "D_deposits": 3,
+  "R_sentences": 3,
+  "R_deposits": 1,
+  "O_direct": 7,
+  "O_class": 6,
+  "O_deposits": 7,
+  "H_candidates": 54
+ },
+ "per_deposit": {
+  "D": {
+   "725": 1,
+   "1190": 1,
+   "1409": 15
+  },
+  "R": {
+   "1409": 3
+  },
+  "O": {
+   "121": 1,
+   "127": 1,
+   "130": 1,
+   "1003": 1,
+   "1087": 1,
+   "1194": 1,
+   "1409": 7
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "4c8c9ade1994ff58f7dc9d786bb77915f2668fae8eb4c7e9b434f4596fe37876",
+  "candidates-R.jsonl": "040dac055ee64168c2101f60d7e1cadd469403a55845232c75a3acad3b586f18",
+  "candidates-O.jsonl": "5f6d09706fdda6ba101f144f2ffa6ddac80323055417c0f2d07a54a2afc01f8c",
+  "candidates-H.jsonl": "2ad6d4f76ddc8c63d7f9383442872301d66577e5751a4073d0a147510304ca32"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

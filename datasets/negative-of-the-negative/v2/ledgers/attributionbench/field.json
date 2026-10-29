@@ -1,0 +1,1024 @@
+{
+ "row": "attributionbench",
+ "address": "AttributionBench",
+ "addresses": [
+  "AttributionBench"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); 44/44 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 arXiv, B2 GitHub, B3 the project page, B4 Hugging Face, B5 ACL Anthology); 'own_page', the census record's own pages that T did not surface (B6, the dataset card's raw README); the census's other own page, the project page, is card 3 (B3, byte-identical to the census's saved copy) and is carried once, as a card; 'wikipedia', no article (B7). 'census_third_party': none (both census sources have basis 'operator'). B2's repository page is unreachable to the session (proxy 403); its README was read through the GitHub contents API.",
+ "lineage_note": "Lineages: a stated limit: the labels and the evidence; data access, licence and use; difficulty by setting, and what helps; error analysis; headline finding: about 80% macro-F1; makers, venue and dates; the encyclopedia: no article; the setting: generative search engines with cited evidence; the seven source datasets and their credit; the task: is every claim fully supported by its cited evidence; the unit: a claim–evidence pair, attributable or not; what it is: a benchmark compiled from existing attribution datasets. The arXiv abstract (B1, 2024-02-23) is the earliest instance of the definition, task and headline finding; the project page (B3) and the ACL Anthology (B5) carry the same abstract (one lineage each, B1 earliest); the README (B2) and the dataset card (B6) state the construction in the same words (one lineage).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/ (Bn.html raw, Bn.txt text extracted from it with scripts and styles stripped; B2-README.md the README via the contents API; B6 the census's saved copy; B7 .wiki, .html, -search.html raw responses with their text)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "url": "https://arxiv.org/abs/2402.15089",
+   "kind": "Overview card (the paper's abstract page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attributionbench-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B1.html",
+     "sha256": "49a126a35a92ab507781b8d2fb27b13ddf6ece231c1a89a97a15ed3aa8c5333b"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B1.txt",
+     "sha256": "6b08afffb50fb894a08a5c88bf26e16b5ec0e53cc002ecf06aff8c01fbc09863"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:11Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2402.15089",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B1.html",
+    "raw_sha256": "49a126a35a92ab507781b8d2fb27b13ddf6ece231c1a89a97a15ed3aa8c5333b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B1.txt"
+    ]
+   },
+   "card_title": "[2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "card_snippet": "AttributionBench: How Hard is Automatic Attribution Evaluation? Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun View a PDF of the paper titled AttributionBench: How Ha...",
+   "card_note": null,
+   "names_operator": "yes (the four authors; no institution on the page)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's arXiv number (2402.15089), confirmed by the page title. Text extracted from the saved HTML (scripts and styles stripped)."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+   "url": "https://github.com/OSU-NLP-Group/AttributionBench",
+   "kind": "Overview card (the code repository; page unreachable, README read through the GitHub contents API)",
+   "surfaced_by_T": [
+    {
+     "slug": "attributionbench-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2.txt",
+     "sha256": "4d67d0954e7b23d4e4681bd98f30b415c6746d80095b910997e4c5c37b66fc2f"
+    },
+    "B2-README.md": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2-README.md",
+     "sha256": "4d67d0954e7b23d4e4681bd98f30b415c6746d80095b910997e4c5c37b66fc2f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:12Z",
+    "http": 403,
+    "url": "https://github.com/OSU-NLP-Group/AttributionBench",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2.html",
+    "raw_sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2.txt"
+    ],
+    "unreachable_page": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:06:12Z",
+      "url": "https://github.com/OSU-NLP-Group/AttributionBench",
+      "http": 403,
+      "error": "the session's proxy: 'GitHub access to this repository is not enabled for this session' (B2.html, 378 bytes)"
+     },
+     {
+      "at": "2026-10-29T17:06:48Z",
+      "url": "https://github.com/OSU-NLP-Group/AttributionBench",
+      "http": 403,
+      "error": "same response, same sha256"
+     },
+     {
+      "at": "2026-10-29T17:06:55Z",
+      "url": "https://github.com/OSU-NLP-Group/AttributionBench",
+      "http": 403,
+      "error": "same response, same sha256"
+     }
+    ],
+    "readme": {
+     "via": "GitHub contents API (the session's GitHub tool, get_file_contents README.md), 2026-10-29T17:07Z",
+     "blob_sha": "9566ea8dfcb7bce2eb05a9efe441c19b593d17ad",
+     "commit": "c81e9e114a074b49b08900afed8811799a308cfe",
+     "saved": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B2-README.md",
+     "note": "verbatim through the Citation section's first BibTeX entry; the constituent datasets' BibTeX entries that follow are omitted from the saved copy and marked so in it (they are the same entries the project page B3 carries verbatim)"
+    }
+   },
+   "card_title": "GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+   "card_snippet": "Paper: AttributionBench: How Hard is Automatic Attribution Evaluation? (Accepted to ACL 2024 Findings). Dataset: Unified testbed for evaluating attribution eval...",
+   "card_note": null,
+   "names_operator": "yes ('the-ohio-state-university' in the fine-tuned model name; the four authors in the BibTeX)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (OSU-NLP-Group/AttributionBench). The rendered repository page could not be fetched: the session's proxy answers 403 for github.com. The repository's README (the text the repository page renders) was read through the GitHub contents API and saved as B2-README.md; B2.txt is that copy. B2.html is the 403 response, kept as the fetch record."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3; also the census record's own page (attributionbench--project)",
+   "card": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "url": "https://osu-nlp-group.github.io/AttributionBench/",
+   "kind": "Overview card (own page: the project page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attributionbench-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B3.html",
+     "sha256": "0bb85b9388499eb582d61161b89e6426162c02ca2e9ee73d9dc080a0f29c5d1e"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B3.txt",
+     "sha256": "28108d5cfa92ce35ca5f39681e73bc549b98e5e1427628c8fd0b8dbdbb2471a7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:13Z",
+    "http": 200,
+    "url": "https://osu-nlp-group.github.io/AttributionBench/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B3.html",
+    "raw_sha256": "0bb85b9388499eb582d61161b89e6426162c02ca2e9ee73d9dc080a0f29c5d1e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B3.txt"
+    ],
+    "census_copy": {
+     "source": "attributionbench--project",
+     "url": "https://osu-nlp-group.github.io/AttributionBench/",
+     "read": "2026-10-29",
+     "sha256": "0bb85b9388499eb582d61161b89e6426162c02ca2e9ee73d9dc080a0f29c5d1e",
+     "identical": true
+    }
+   },
+   "card_title": "AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "card_snippet": "Overview: AttributionBench is a comprehensive benchmark compiled from existing attribution datasets (ExpertQA, Stanford-GenSearch, AttributedQA, LFQA, BEGIN, HA...",
+   "card_note": null,
+   "names_operator": "yes ('The Ohio State University'; the four authors)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL is the census record's own page; the card's snippet ('Overview: AttributionBench is a comprehensive benchmark compiled from existing attribution datasets (ExpertQA, Stanford-GenSearch, AttributedQA, LFQA, BEGIN, HA...') matches no sentence of the page verbatim (it paraphrases the abstract and Table 1). Fetched fresh; the served HTML is byte-identical to the census's saved copy (same sha256), so the own page and the card are one source, carried once, as a card."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+   "url": "https://huggingface.co/datasets/osunlp/AttributionBench",
+   "kind": "Overview card (the dataset page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attributionbench-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B4.html",
+     "sha256": "5ed3022c2100a31faae381645b32d249fae87512d233d63e9addf0f8768286a6"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B4.txt",
+     "sha256": "75ae249b6378add4ce5e65d09a7482a921691316aa7b3ba35d648b0467fdc355"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:14Z",
+    "http": 200,
+    "url": "https://huggingface.co/datasets/osunlp/AttributionBench",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B4.html",
+    "raw_sha256": "5ed3022c2100a31faae381645b32d249fae87512d233d63e9addf0f8768286a6",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B4.txt"
+    ]
+   },
+   "card_title": "osunlp/AttributionBench · Datasets at Hugging Face",
+   "card_snippet": "Dataset: osunlp/AttributionBench (arXiv: 2402.15089, created by Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun). Task/Modality: Text Classification, Text modality, En...",
+   "card_note": null,
+   "names_operator": "yes ('OSU NLP Group', the account; 'Yifei Li' as point of contact)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (osunlp/AttributionBench). The card's snippet ('Dataset: osunlp/AttributionBench (arXiv: 2402.15089, created by Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun). Task/Modality: …') is not on the page in that form; the page names the arXiv number, the task, the modality and the papers. Download and row counts are as fetched."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "ACL Anthology — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "url": "https://aclanthology.org/2024.findings-acl.886/",
+   "kind": "Overview card (the publication record)",
+   "surfaced_by_T": [
+    {
+     "slug": "attributionbench-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B5.html",
+     "sha256": "c59c736a18a81530bc705482a966c4a4c7652e72fee48f1ca46e6397af1a9b02"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B5.txt",
+     "sha256": "eb33139a01c1b16e1f506ff625f380f10c36e33169ec8ff7c82de62afeccdcd2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:17Z",
+    "http": 200,
+    "url": "https://aclanthology.org/2024.findings-acl.886/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B5.html",
+    "raw_sha256": "c59c736a18a81530bc705482a966c4a4c7652e72fee48f1ca46e6397af1a9b02",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B5.txt"
+    ]
+   },
+   "card_title": "AttributionBench: How Hard is Automatic Attribution Evaluation?",
+   "card_snippet": "Abstract Modern generative search engines enhance the reliability of large language model (LLM) responses by providing cited evidence. However, evaluating the a...",
+   "card_note": null,
+   "names_operator": "yes (the four authors; the venue)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the card's title and site (preview.aclanthology.org/setup/2024.findings-acl.886 returned; the canonical aclanthology.org path fetched), confirmed by the page title and the Anthology ID 2024.findings-acl.886, which the GitHub README also links."
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "the census record's own page (attributionbench--dataset-card), not surfaced by T",
+   "card": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+   "url": "https://huggingface.co/datasets/osunlp/AttributionBench/raw/main/README.md",
+   "kind": "own page (the dataset card's source)",
+   "surfaced_by_T": [],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B6.html",
+     "sha256": "b90e7e73959c0b91966cb75cb330d03f16600e51f9c5a10c525787aa4ab31c6c"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B6.txt",
+     "sha256": "b90e7e73959c0b91966cb75cb330d03f16600e51f9c5a10c525787aa4ab31c6c"
+    }
+   },
+   "fetched": {
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/attributionbench--dataset-card.html.gz and .txt",
+    "census_read": "2026-10-29",
+    "http": "200",
+    "census_sha256": "b90e7e73959c0b91966cb75cb330d03f16600e51f9c5a10c525787aa4ab31c6c",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B6.html",
+    "raw_sha256": "b90e7e73959c0b91966cb75cb330d03f16600e51f9c5a10c525787aa4ab31c6c",
+    "identical": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B6.txt"
+    ],
+    "refetched": false
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "yes ('Yifei Li' as point of contact; the four authors in the BibTeX)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's saved copy, gunzipped (sha256 matches the census's record); the file is Markdown with YAML front matter, so B6.txt is the census's .txt, byte-identical to B6.html. Not surfaced by T: the Overview's card 4 is the rendered dataset page (B4), which carries the same card text rendered."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article: none",
+   "card": "Wikipedia — AttributionBench (no article)",
+   "url": "https://en.wikipedia.org/wiki/AttributionBench",
+   "kind": "encyclopedia (absent)",
+   "surfaced_by_T": [],
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.wiki",
+     "sha256": "591ae6cb52077d97eaa73e1b3f70d6f1246947c390c67fb2e40c2d58312021ba"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.html",
+     "sha256": "73489a6b73b36a826e4b7cdf77e2932539b41ce07948fcb8449d620333a0d830"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.txt",
+     "sha256": "c53977b66c23d05e247b7b01e18f0a1f6033362ee013c39bd535e064d3198624"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7-search.html",
+     "sha256": "b273f0a4155c43edcca255c003980cd27d8cc9e15847bbefb667e2081c16f1e0"
+    },
+    "B7-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7-search.txt",
+     "sha256": "836c42213f41c46b93d7fc95ef02c9167d0940c4d054ebcf552ae29ad8b319e8"
+    }
+   },
+   "fetched": {
+    "raw_wikitext": {
+     "at": "2026-10-29T17:06:18Z",
+     "url": "https://en.wikipedia.org/w/index.php?title=AttributionBench&action=raw",
+     "http": 404,
+     "saved": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.wiki"
+    },
+    "rendered": {
+     "at": "2026-10-29T17:06:19Z",
+     "url": "https://en.wikipedia.org/wiki/AttributionBench",
+     "http": 404,
+     "saved": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.html"
+    },
+    "search": {
+     "at": "2026-10-29T17:07:57Z",
+     "url": "https://en.wikipedia.org/w/index.php?search=%22AttributionBench%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "http": 200,
+     "saved": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7-search.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7.txt",
+     "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B7-search.txt"
+    ]
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "n/a",
+   "names_archive": "no",
+   "note": "No article and no redirect: raw wikitext 404 (a Wikimedia error page), rendered page 404 ('Wikipedia does not have an article with this exact name'), full-text search of article space for the quoted name: no results."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.",
+   "claim": "AttributionBench defined by its makers: a comprehensive benchmark compiled from existing attribution datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "evaluating the answer's attribution, i.e., whether every claim within the generated responses is fully supported by its cited evidence, remains an open problem.",
+   "claim": "attribution defined as full support of every generated claim by its cited evidence; its evaluation an open problem",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the task: is every claim fully supported by its cited evidence",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "Modern generative search engines enhance the reliability of large language model (LLM) responses by providing cited evidence.",
+   "claim": "the setting: generative search engines cite evidence to make LLM responses reliable",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the setting: generative search engines with cited evidence",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "This verification, traditionally dependent on costly human evaluation, underscores the urgent need for automatic attribution evaluation methods.",
+   "claim": "verification has depended on costly human evaluation; automatic attribution evaluation is needed",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the task: is every claim fully supported by its cited evidence",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "To bridge the gap in the absence of standardized benchmarks for these methods",
+   "claim": "the benchmark offered for the absence of standardized benchmarks of such methods",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "Our extensive experiments on AttributionBench reveal the challenges of automatic attribution evaluation, even for state-of-the-art LLMs.",
+   "claim": "the task is hard even for state-of-the-art LLMs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "headline finding: about 80% macro-F1",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s6",
+   "quote": "even a fine-tuned GPT-3.5 only achieves around 80% macro-F1 under a binary classification formulation.",
+   "claim": "headline: a fine-tuned GPT-3.5 reaches about 80% macro-F1 on the binary task",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "headline finding: about 80% macro-F1",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s7",
+   "quote": "A detailed analysis of more than 300 error cases indicates that a majority of failures stem from the model's inability to process nuanced information, and the discrepancy between the information the model has access to and that human annotators do.",
+   "claim": "the error analysis: most failures from nuance and from what the model and annotators can see",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "error analysis",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Authors:Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun … [Submitted on 23 Feb 2024]",
+   "claim": "the authors and the submission date",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-02-23 (arXiv v1)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6b08afffb50fb894…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "metadata",
+   "quote": "Anthology ID: 2024.findings-acl.886 … Findings of the Association for Computational Linguistics: ACL 2024 … Pages: 14919–14935",
+   "claim": "published in Findings of ACL 2024, pages 14919–14935",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-08 (ACL 2024 Findings)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb33139a01c1b16e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.",
+   "claim": "the published abstract's definition (an instance of the arXiv abstract)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2024-08 (ACL 2024 Findings)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb33139a01c1b16e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Yifei Li … Xiang Yue, … Zeyi Liao, … Huan Sun … The Ohio State University",
+   "claim": "the makers, at The Ohio State University",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Updates",
+   "quote": "2024/5/15: Our work is accepted to ACL 2024 Findings. … 2024/2/26: We have released the dataset and codebase for the paper.",
+   "claim": "released 26 February 2024; accepted to ACL 2024 Findings 15 May 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Figure 1 caption",
+   "quote": "The references are usually manually extracted from webpages by human annotators based on what they think is useful.",
+   "claim": "a stated limit: the evidence is what annotators extracted as useful",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "a stated limit: the labels and the evidence",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Data Statistics, Table 1",
+   "quote": "ExpertQA … Stanford-GenSearch … AttributedQA … LFQA … ID-Total … BEGIN … HAGRID … AttrEval-GenSearch … OOD-Total",
+   "claim": "the seven source datasets: four in distribution, three out of distribution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the seven source datasets and their credit",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Data Statistics, Table 1, totals",
+   "quote": "ID-Total … 13322 … 1198 … 1610 … OOD-Total … 1686",
+   "claim": "13,322 train, 1,198 dev, 1,610 test in distribution; 1,686 test out of distribution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the seven source datasets and their credit",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Table 1 caption",
+   "quote": "We make all subsets label-balanced to treat the two classes equally so that the evaluation can fairly show the performance of each class.",
+   "claim": "every subset label-balanced",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the seven source datasets and their credit",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "ID & OOD Evaluation, finding 1",
+   "quote": "Fine-tuning on NLI-related data is beneficial to attribution evaluation",
+   "claim": "NLI-related fine-tuning helps",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "ID & OOD Evaluation, finding 2",
+   "quote": "Automatic attribution evaluation is challenging under zero-shot setting … for tasks with longer evidence (like Stanford-GenSearch and HAGRID), the zero-shot performance for models is around 60%~70%, which is relatively low. … GPT-3.5, GPT-4 and those NLI-tuned models can only achieve under ~60% performance.",
+   "claim": "zero-shot: around 60–70% on longer-evidence sets, under about 60% on ExpertQA",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "ID & OOD Evaluation, finding 3",
+   "quote": "On average among all models, fine-tuning can improve 9.0% and 4.6% on 4 ID tasks and 3 OOD tasks, respectively.",
+   "claim": "fine-tuning on AttributionBench: +9.0% in distribution, +4.6% out",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "ID & OOD Evaluation, finding 4",
+   "quote": "Simply switching stronger models cannot significantly improve the performance",
+   "claim": "stronger models do not significantly help",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Table 1 (ID results) caption",
+   "quote": "there is still a large room for improvement.",
+   "claim": "a stated limit: large room for improvement",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "a stated limit: the labels and the evidence",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "input-field results",
+   "quote": "merely appending the questions and responses to the input, which human annotators might have access to, is not the key to solving this task.",
+   "claim": "adding question and response to the input is not the key",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "prompt results",
+   "quote": "Prompt engineering only brings limited gain over 7 test sets.",
+   "claim": "prompt engineering brings limited gain",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "difficulty by setting, and what helps",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Error Analysis, takeaway 1",
+   "quote": "Over 66% error cases are caused by fine-grained information insensitivity",
+   "claim": "over 66% of errors: fine-grained information insensitivity",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "error analysis",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Error Analysis, takeaway 2",
+   "quote": "About 26.8% errors are caused by the mismatch between information accessible to the model and that accessible to human annotators: This disparity brings into question the reliability of labels within current attribution evaluation datasets.",
+   "claim": "about 26.8% of errors: the mismatch of accessible information, which puts the labels' reliability in question",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "error analysis",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Error Analysis, table",
+   "quote": "Fine-grained information insensitivity (66.0%) … Need additional information/reference ambiguity (15.6%) … Label issue (11.2%)",
+   "claim": "the error types tabled",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "error analysis",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Reference",
+   "quote": "If used, please also cite the original datasets accordingly:",
+   "claim": "the makers ask that the constituent datasets be cited",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the seven source datasets and their credit",
+   "date": "2024-05-15 (latest update on the page; first release 2024-02-26)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 28108d5cfa92ce35…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, opening and Updates",
+   "quote": "This is the official code repo for the paper … 05/15/24: Our work is accepted to ACL 2024 Findings.",
+   "claim": "the official code repository of the paper",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, Dataset",
+   "quote": "We constructed this dataset from multiple existing data sources in a unified format, in order to create a unified and diverse testbed for evaluating advanced attribution evaluation systems.",
+   "claim": "built from existing sources in one format as a testbed for attribution evaluation systems",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, Data Fields: attribution_label",
+   "quote": "\"attributable\" or \"not attributable\".",
+   "claim": "the label: attributable or not attributable",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: a claim–evidence pair, attributable or not",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, Data Fields: claim, references",
+   "quote": "Part of the response to the question. Could be one single sentence or multiple sentences. … A list of documents or paragraphs which could support the claim.",
+   "claim": "the unit: a claim from a response, beside references that could support it",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a claim–evidence pair, attributable or not",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, Data Fields: citation_links",
+   "quote": "Reserved field for citation links.",
+   "claim": "citation links: a reserved field",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a claim–evidence pair, attributable or not",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "README, Fine-tuning GPT-3.5",
+   "quote": "You can use our fine-tuned GPT-3.5 model with this model name: … ft:gpt-3.5-turbo-1106:the-ohio-state-university::8eWuGzGQ",
+   "claim": "the makers' fine-tuned GPT-3.5 offered by name",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2024-05-15 (latest update in the README)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 4d67d0954e7b23d4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "dataset header",
+   "quote": "Tasks: … Text Classification … Modalities: … Text … Languages: … English … Size: … 10K - 100K … License: … apache-2.0",
+   "claim": "text classification, text, English, 10K–100K, apache-2.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access, licence and use",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 75ae249b6378add4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Dataset Viewer",
+   "quote": "full_data (26.4k rows) … train (21.9k rows)dev (1.2k rows)test (1.61k rows)test_ood (1.69k rows)",
+   "claim": "26.4k rows in the full configuration; the four splits",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access, licence and use",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 75ae249b6378add4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "sidebar",
+   "quote": "Downloads last month … 1,481 … Number of rows: … 63,065",
+   "claim": "1,481 downloads last month; 63,065 rows across files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access, licence and use",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 75ae249b6378add4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "sidebar",
+   "quote": "Models trained or fine-tuned on osunlp/AttributionBench … vllm-sr/Decision-1.0-Route-0.6B",
+   "claim": "models trained on it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access, licence and use",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 75ae249b6378add4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "header",
+   "quote": "osunlp … AttributionBench … OSU NLP Group",
+   "claim": "held under the OSU NLP Group's account",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, venue and dates",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 75ae249b6378add4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "front matter, configs",
+   "quote": "The subset balanced version of the dataset. Each sub-dataset contains the same number of attributable labels and not attributable labels.",
+   "claim": "the subset-balanced configuration, among four",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the seven source datasets and their credit",
+   "date": "2026-10-29 (census read; card undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b90e7e73959c0b91…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "front matter",
+   "quote": "license: apache-2.0",
+   "claim": "licence apache-2.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access, licence and use",
+   "date": "2026-10-29 (census read; card undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b90e7e73959c0b91…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Dataset Overview",
+   "quote": "We constructed this dataset from multiple existing data sources in a unified format",
+   "claim": "the card's statement of construction (an instance of the README's)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2026-10-29 (census read; card undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b90e7e73959c0b91…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Dataset Overview s2",
+   "quote": "The dataset contains both in-domain training set and id-domain and out-of-domain test set.",
+   "claim": "in-domain training, in-domain and out-of-domain test",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a benchmark compiled from existing attribution datasets",
+   "date": "2026-10-29 (census read; card undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b90e7e73959c0b91…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "rendered page; Special:Search",
+   "quote": "Wikipedia does not have an article with this exact name … There were no results matching the query.",
+   "claim": "no Wikipedia article and no article mentions the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia: no article",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c53977b66c23d05e…) and B7-search.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+  "B2": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+  "B3": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+  "B4": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+  "B5": "ACL Anthology — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+  "B6": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+  "B7": "Wikipedia — AttributionBench (no article)"
+ }
+}

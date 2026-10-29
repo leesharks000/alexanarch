@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <title>What Is Image Metadata? EXIF, IPTC and XMP Explained</title>
+    
+
+
+
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <link rel="preconnect" href="https://cdn.paddle.com">
+  <link rel="dns-prefetch" href="https://cdn.paddle.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  
+    <link rel="preconnect" href="https://cdn.neededapps.com">
+    <link rel="dns-prefetch" href="https://cdn.neededapps.com">
+  
+  
+    <link rel="preconnect" href="https://cdn.neededapps.com">
+    <link rel="dns-prefetch" href="https://cdn.neededapps.com">
+  
+
+
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "NeededApps",
+    "url" : "https://neededapps.com",
+    "sameAs" : [
+      "https://www.twitter.com/neededappscom/"
+    ]
+  }
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="NeededApps" />
+<meta name="copyright" content="&copy; 2026 NeededApps" />
+<meta name="description" content="What Is Image Metadata? EXIF, IPTC and XMP Explained" />
+<meta name="keywords" content="NeededApps ,Mac ,iPhone ,iPad ,applications ,Mac ,MetaImage ,Metadata ,EXIF ,IPTC ,XMP ,Editor" />
+<meta name="robots" content="index, follow" />
+<meta name="generator" content="NeededApps" />
+
+<link rel="apple-touch-icon" sizes="80x80" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-80.png" />
+<link rel="apple-touch-icon" sizes="96x96" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-96.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-152.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-167.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-180.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-512.png" />
+
+<link rel="icon" sizes="16x16" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-16.png" />
+<link rel="icon" sizes="32x32" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-32.png" />
+<link rel="icon" sizes="64x64" href="https://cdn.neededapps.com/static/assets/img/logos/na-icon-64.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@neededappscom">
+<meta name="twitter:creator" content="@neededappscom">
+<meta name="twitter:url" content="https://https://www.twitter.com/neededappscom/">
+<meta name="twitter:title" content="What Is Image Metadata? EXIF, IPTC and XMP Explained">
+<meta name="twitter:description" content="What Is Image Metadata? EXIF, IPTC and XMP Explained">
+<meta name="twitter:image" content="https://cdn.neededapps.com/static/assets/img/logos/na-icon-512.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NeededApps">
+<meta property="og:url" content="https://neededapps.com/tutorials/what-are-image-metadata-exif-iptc-xmp/">
+<meta property="og:title" content="What Is Image Metadata? EXIF, IPTC and XMP Explained">
+<meta property="og:description" content="What Is Image Metadata? EXIF, IPTC and XMP Explained">
+<meta property="og:image" content="https://cdn.neededapps.com/media/public/e032bef1-0d77-45b6-a1b2-d9fe4a9c8e9b.jpg">
+
+
+  <link rel="stylesheet" href="https://cdn.neededapps.com/static/assets/css/neededapps-DVv0tHqM.css">
+
+
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+    Paddle.Setup({ vendor: 36105 });
+</script>
+
+  </head>
+
+  <body>
+    <input type="hidden" name="csrfmiddlewaretoken" value="Gs4Z0W5aHi1jfMtZfWERmbAH2uhxRJfq3omo37MuOQ6uiYPKYV7NzPzSueWELDkj">
+    
+   
+
+<style>
+  @media (min-width: 992px) {
+    #navbarNavDropdown {
+      position: static !important;
+    }
+
+    #navbarNavDropdown .navbar-absolute-top-scroller {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto !important;
+      overflow: visible;
+      transform: translate(-50%, -50%);
+    }
+
+    #navbarNavDropdown .navbar-nav {
+      flex-wrap: nowrap;
+    }
+
+    #navbarNavDropdown .apps-mega-menu {
+      right: auto !important;
+      left: 50% !important;
+      width: min(70rem, calc(100vw - 2rem)) !important;
+      min-width: 0 !important;
+      transform: translateX(-50%) !important;
+    }
+
+    #navbarNavDropdown .apps-mega-menu-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>
+
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-show-hide navbar-toggle
+  navbar-light"
+        data-hs-header-options='{"fixMoment": 1000, "fixEffect": "slide"}'>
+
+  <div class="container">
+    <nav class="js-mega-menu navbar-nav-wrap">
+      <a class="navbar-brand" href="/" aria-label="NeededApps">
+        
+        <span class="navbar-brand-logo fw-bold fs-3 text-primary">NeededApps</span>
+        
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default"><i class="bi-list"></i></span>
+        <span class="navbar-toggler-toggled"><i class="bi-x"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+        <div class="navbar-absolute-top-scroller w-100">
+          <ul class="navbar-nav justify-content-lg-center align-items-lg-center" style="cursor:pointer">
+
+            <li class="hs-has-mega-menu nav-item d-none d-lg-block">
+              <a id="app-mega-menu" class="nav-link hs-mega-menu-invoker" aria-current="page" href="/" role="button">Apps</a>
+              <div class="apps-mega-menu hs-mega-menu dropdown-menu hs-mega-menu-desktop-lg animated mt-0 pt-4 border-0" aria-labelledby="app-mega-menu" style="animation-duration: 300ms; display: none; background: none;">
+                <div style="position: absolute; top: 0.5rem; left: 0; width: 100%; height: 100%; background: #FFFFFF;"></div>
+                <div style="position: absolute; top: 0.5rem; left: 0; width: 100%; height: 0.1875rem; background: #377DDF;"></div>
+
+                <div class="apps-mega-menu-list navbar-dropdown-menu-promo">
+                  
+                    <div class="navbar-dropdown-menu-promo-item">
+                      <a class="navbar-dropdown-menu-promo-link" href="/metaimage/">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <img class="m-auto" style="max-height: 4rem" src="https://cdn.neededapps.com/media/public/f75b73d0-8522-4f46-af23-e80bdb1038f2.png" srcset="https://cdn.neededapps.com/media/public/f75b73d0-8522-4f46-af23-e80bdb1038f2.png 1x,https://cdn.neededapps.com/media/public/fc6892eb-e26b-44d1-ac19-0c2a0d8560f0.png 2x," alt="MetaImage icon">
+                          </div>
+                          <div class="flex-grow-1 ms-3 me-5">
+                            <span class="navbar-dropdown-menu-media-title">MetaImage</span>
+                            <p class="navbar-dropdown-menu-media-desc">Edit geographical and image metadata</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                    <div class="navbar-dropdown-menu-promo-item">
+                      <a class="navbar-dropdown-menu-promo-link" href="/gluemotion/">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <img class="m-auto" style="max-height: 4rem" src="https://cdn.neededapps.com/media/public/acaa4333-c3f5-468d-ba97-3d2d9e4bd571.png" srcset="https://cdn.neededapps.com/media/public/acaa4333-c3f5-468d-ba97-3d2d9e4bd571.png 1x,https://cdn.neededapps.com/media/public/efd4d13c-6193-4ba3-9b9d-b409fc5d7f61.png 2x," alt="GlueMotion icon">
+                          </div>
+                          <div class="flex-grow-1 ms-3 me-5">
+                            <span class="navbar-dropdown-menu-media-title">GlueMotion</span>
+                            <p class="navbar-dropdown-menu-media-desc">Create beautiful time lapse with ease</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                    <div class="navbar-dropdown-menu-promo-item">
+                      <a class="navbar-dropdown-menu-promo-link" href="/photosrevive/">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <img class="m-auto" style="max-height: 4rem" src="https://cdn.neededapps.com/media/public/77179b6c-454d-43ef-8652-a3580965ccca.png" srcset="https://cdn.neededapps.com/media/public/77179b6c-454d-43ef-8652-a3580965ccca.png 1x,https://cdn.neededapps.com/media/public/30f9e5e3-bb2e-47a7-8a8a-0f56a76dc4c5.png 2x," alt="PhotosRevive icon">
+                          </div>
+                          <div class="flex-grow-1 ms-3 me-5">
+                            <span class="navbar-dropdown-menu-media-title">PhotosRevive</span>
+                            <p class="navbar-dropdown-menu-media-desc">Colorize and restore your black and white photos</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                    <div class="navbar-dropdown-menu-promo-item">
+                      <a class="navbar-dropdown-menu-promo-link" href="/snapmotion/">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <img class="m-auto" style="max-height: 4rem" src="https://cdn.neededapps.com/media/public/326774e0-cbf6-48a3-b4ed-610af39a2645.png" srcset="https://cdn.neededapps.com/media/public/326774e0-cbf6-48a3-b4ed-610af39a2645.png 1x,https://cdn.neededapps.com/media/public/66e522b3-7733-4489-a5c2-c019013a374f.png 2x," alt="SnapMotion icon">
+                          </div>
+                          <div class="flex-grow-1 ms-3 me-5">
+                            <span class="navbar-dropdown-menu-media-title">SnapMotion</span>
+                            <p class="navbar-dropdown-menu-media-desc">Extract images from videos with precision</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="/" role="button">Apps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tutorials/">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/support/">Support</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-primary rounded-pill px-3 py-1 shadow-none d-none d-lg-inline-block position-absolute top-50 end-0 translate-middle-y" href="/downloads/">Downloads</a>
+      </div>
+
+    </nav>
+  </div>
+
+</header>
+
+
+  <main id="content" role="main">
+   
+  <div class="content-space-t-2">
+    <div class="border-top border-bottom">
+      <div class="container py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="/tutorials/">Tutorials</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">What Is Image Metadata? EXIF, IPTC and XMP Explained</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content-space-t-2 content-space-b-2">
+    <div class="w-lg-65 mx-lg-auto">
+      <div class="mb-4">
+        <h1 class="h2">What Is Image Metadata? EXIF, IPTC and XMP Explained</h1>
+      </div>
+      <div class="mb-4">
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=Mac">Mac</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=MetaImage">MetaImage</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=Metadata">Metadata</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=EXIF">EXIF</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=IPTC">IPTC</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=XMP">XMP</a>
+        
+          <a class="btn btn-soft-secondary btn-xs m-1" href="/tutorials/?search=Editor">Editor</a>
+        
+      </div>
+      <div class="tutorial-text">
+        <p><img class="img-fluid my-3 rounded" src="https://cdn.neededapps.com/media/public/e032bef1-0d77-45b6-a1b2-d9fe4a9c8e9b.jpg"></p>
+<p>When you take a photo, the image contains much more than just pixels. Your camera or smartphone can also store information such as <strong>when the photo was taken, which camera and lens were used, camera settings, GPS coordinates, copyright information, keywords, and descriptions</strong>.</p>
+<p>This information is known as <strong>image metadata</strong> or <strong>photo metadata</strong>.</p>
+<p>Three of the most important metadata standards you'll encounter are <strong>EXIF, IPTC, and XMP</strong>. Although they're often grouped together, they serve different purposes.</p>
+<p>In this guide, we'll explain what image metadata is, what EXIF, IPTC and XMP mean, and why you might want to view or edit this information.</p>
+<h2>What Is Image Metadata?</h2>
+<p>Image metadata is information stored alongside the visual content of an image.</p>
+<p>While the pixels determine what the photograph looks like, metadata describes information <strong>about the image</strong>.</p>
+<p>Depending on the file and device, photo metadata can contain information such as:</p>
+<ul>
+<li>Date and time the photo was taken</li>
+<li>Camera manufacturer and model</li>
+<li>Lens information</li>
+<li>ISO</li>
+<li>Aperture</li>
+<li>Shutter speed</li>
+<li>Focal length</li>
+<li>GPS location</li>
+<li>Photographer or creator</li>
+<li>Copyright information</li>
+<li>Title and description</li>
+<li>Keywords and categories</li>
+</ul>
+<p>Because metadata is separate from the image pixels themselves, many metadata fields can be edited without changing the visual appearance of the photograph.</p>
+<h2>What Is EXIF Metadata?</h2>
+<p><strong>EXIF</strong> stands for <strong>Exchangeable Image File Format</strong>.</p>
+<p>EXIF metadata is commonly generated automatically by digital cameras and smartphones when you take a photo.</p>
+<p>It primarily contains <strong>technical information about the image and how it was captured</strong>.</p>
+<p>Typical EXIF metadata includes:</p>
+<ul>
+<li>Camera manufacturer and model</li>
+<li>Lens model</li>
+<li>Date and time</li>
+<li>ISO</li>
+<li>Aperture</li>
+<li>Shutter speed</li>
+<li>Focal length</li>
+<li>Flash information</li>
+<li>Image orientation</li>
+<li>GPS coordinates</li>
+</ul>
+<p>For example, if you want to know which camera was used to take a photograph or which aperture and shutter speed were selected, you'll usually find that information in its EXIF metadata.</p>
+<h3>Can EXIF Contain Your Location?</h3>
+<p>Yes. Smartphones and GPS-enabled cameras can store the <strong>latitude and longitude where a photo was taken</strong> inside its metadata.</p>
+<p>This can be extremely useful for organizing a photo collection, but it can also be a privacy consideration when sharing images publicly.</p>
+<p>Before publishing a photo online, you may therefore want to check whether it contains GPS metadata.</p>
+<h2>What Is IPTC Metadata?</h2>
+<p><strong>IPTC</strong> refers to metadata standards developed for the professional exchange and description of media.</p>
+<p>Unlike EXIF, which is heavily focused on technical capture information, IPTC metadata is commonly used to <strong>describe, organize and manage images</strong>.</p>
+<p>It can include information such as:</p>
+<ul>
+<li>Title</li>
+<li>Description or caption</li>
+<li>Keywords</li>
+<li>Creator or photographer</li>
+<li>Copyright notice</li>
+<li>Credit</li>
+<li>Source</li>
+<li>Location information</li>
+<li>Usage and rights information</li>
+</ul>
+<p>IPTC metadata is particularly useful for <strong>photographers, journalists, publishers, agencies and image libraries</strong> managing large collections of photographs.</p>
+<p>For example, a professional photographer can add their name, copyright notice and descriptive keywords directly to their images.</p>
+<h2>What Is XMP Metadata?</h2>
+<p><strong>XMP</strong>, or <strong>Extensible Metadata Platform</strong>, is a metadata framework originally developed by Adobe.</p>
+<p>XMP provides a flexible way for applications to store and exchange metadata.</p>
+<p>It can contain descriptive and administrative information and can also be used by photo-editing applications to store information related to an editing workflow.</p>
+<p>XMP metadata can be <strong>embedded directly inside compatible files</strong> or stored separately.</p>
+<p>A separate XMP file located alongside an image is commonly called an <strong>XMP sidecar file</strong>.</p>
+<p>For example:</p>
+<p><strong>DSC_0123.RAW</strong>
+<strong>DSC_0123.XMP</strong></p>
+<p>The original image remains unchanged while compatible software can use the XMP sidecar to store metadata or editing information associated with it.</p>
+<h2>EXIF vs. IPTC vs. XMP: What's the Difference?</h2>
+<p>The easiest way to understand the three is to think about their typical roles:</p>
+<table>
+<thead>
+<tr>
+<th>Metadata</th>
+<th>Primarily used for</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EXIF</strong></td>
+<td>Technical capture information</td>
+<td>Camera, lens, ISO, aperture, shutter speed, capture date, GPS</td>
+</tr>
+<tr>
+<td><strong>IPTC</strong></td>
+<td>Description, authorship and rights</td>
+<td>Title, caption, keywords, photographer, copyright</td>
+</tr>
+<tr>
+<td><strong>XMP</strong></td>
+<td>Flexible metadata exchange and editing workflows</td>
+<td>Descriptions, rights, ratings, editing information, application-specific metadata</td>
+</tr>
+</tbody>
+</table>
+<p>These standards can coexist inside the same image.</p>
+<p>A single photograph might therefore contain <strong>EXIF camera information, IPTC copyright information and XMP editing or descriptive information at the same time</strong>.</p>
+<h2>Why Is Photo Metadata Important?</h2>
+<p>Metadata has several practical uses.</p>
+<h3>Organizing and Finding Photos</h3>
+<p>Dates, locations, ratings, descriptions and keywords can help applications organize large photo libraries and make images easier to find.</p>
+<h3>Understanding Camera Settings</h3>
+<p>Photographers can inspect EXIF information to understand how an image was captured.</p>
+<p>For example, comparing ISO, shutter speed, aperture and focal length can be useful when studying your photography technique.</p>
+<h3>Copyright and Attribution</h3>
+<p>Photographers can use metadata fields to include information about the creator, copyright and usage rights.</p>
+<p>Metadata shouldn't be treated as an infallible form of copyright protection because it can be removed or modified, but it provides useful information that can travel with the image.</p>
+<h3>Location and Privacy</h3>
+<p>GPS metadata can tell you exactly where a photograph was taken.</p>
+<p>That's useful for travel photography and photo organization, but you may not always want to share that information publicly.</p>
+<p>Checking and removing sensitive metadata before sharing certain photos can therefore be useful.</p>
+<h2>How to View and Edit Image Metadata on Mac</h2>
+<p>Some basic photo information can be viewed directly in macOS, but dedicated metadata editors provide access to a much larger number of fields.</p>
+<p><strong>MetaImage</strong> is an image metadata editor for Mac designed to let you inspect and edit metadata from a single interface.</p>
+<p>It supports metadata including <strong>EXIF, IPTC and XMP</strong>, allowing you to work with information such as:</p>
+<ul>
+<li>Capture dates</li>
+<li>GPS coordinates</li>
+<li>Keywords</li>
+<li>Titles and descriptions</li>
+<li>Copyright information</li>
+<li>Camera information</li>
+<li>File dates</li>
+</ul>
+<p>You can also use presets when you need to apply metadata changes to multiple images or repeat the same metadata workflow.</p>
+<h2>Edit EXIF, IPTC and XMP Metadata with MetaImage</h2>
+<p>Understanding image metadata becomes particularly useful when you need to correct or organize it.</p>
+<p>You may want to <strong>fix an incorrect photo date, change GPS coordinates, add copyright information, organize photos with keywords, or remove sensitive metadata before sharing an image</strong>.</p>
+<p>MetaImage provides a dedicated Mac interface for viewing and editing this information without having to work with command-line metadata tools.</p>
+<p>You can learn more about MetaImage on the <a href="https://neededapps.com/metaimage">NeededApps website</a> or download it from the <a href="https://neededapps.com/metaimage/appstore">Mac App Store</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-top mx-auto" style="max-width: 45rem;"></div>
+
+  <div class="container content-space-2 content-space-lg-2">
+    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <h2>Stay in touch</h2>
+      <p>We are working on awesome new projects, subscribe to be notified.</p>
+    </div>
+    <div class="text-center mx-auto" style="max-width: 32rem;">
+      <form class="newsletter-form mb-5 mb-md-9">
+        <div class="input-card input-card-sm border mb-5">
+          <div class="input-card-form">
+            <input type="email" name="email" required="required" class="form-control" placeholder="Your email" aria-label="Your email">
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg shadow-none">
+            <span class="spinner-border spinner-border-sm on-process d-none" role="status"></span>
+            <span class="on-process d-none ms-2">Subscribing</span>
+            <span class="on-idle">Subscribe</span>
+          </button>
+        </div>
+        <div class="alert alert-success on-success d-none my-4" role="alert">
+          <i class="bi bi-check-circle me-2"></i><span class="detail"></span>
+        </div>
+        <div class="alert alert-danger on-error d-none my-4" role="alert">
+          <i class="bi bi-exclamation-circle me-2"></i><span class="detail"></span>
+        </div>
+      </form>
+      <a class="link" href="/contact/">Any Question ? <i class="bi-chevron-right small ms-1"></i></a>
+    </div>
+  </div>
+
+  </main>
+
+    
+
+   
+
+<footer class="bg-dark" style="background-image: url(https://cdn.neededapps.com/static/assets/img/components/wave-pattern-light.svg);">
+  <div class="container pb-1 pb-lg-5">
+    <div class="row content-space-t-2 text-center text-lg-start">
+
+      <div class="d-block d-md-none d-lg-block col-12 col-md-4 col-lg mb-5 mb-md-0">
+        <div class="mb-4">
+          <h5 class="text-white">Get the apps</h5>
+        </div>
+        <div class="d-flex flex-column gap-3 mb-3 mb-0 align-items-center align-items-md-start">
+          <a class="d-inline-block" role="button" href="/appstore/" target="_blank">
+            <div class="d-flex flex-row align-items-center btn btn-white px-2 py-0 text-black rounded shadow-hover">
+              <i class="bi bi-apple" style="font-size: 1.75rem"></i>
+              <div class="d-flex flex-column ms-2">
+                <span class="m-0 me-auto" style="font-size: 0.60rem">Download on the</span>
+                <span class="m-0 fw-bold" style="line-height: 1.20rem; font-size: 1.20rem">App Store</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg mb-5 mb-md-0">
+        <h5 class="text-white mb-3">Applications</h5>
+        <ul class="list-unstyled list-py-1 mb-0">
+          
+          <li><a class="link-sm link-light" href="/metaimage/">MetaImage</a></li>
+          
+          <li><a class="link-sm link-light" href="/gluemotion/">GlueMotion</a></li>
+          
+          <li><a class="link-sm link-light" href="/photosrevive/">PhotosRevive</a></li>
+          
+          <li><a class="link-sm link-light" href="/snapmotion/">SnapMotion</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg mb-5 mb-md-0">
+        <h5 class="text-white mb-3">Company</h5>
+        <ul class="list-unstyled list-py-1 mb-0">
+          <li><a class="link-sm link-light" href="/archives/">Apps &amp; Archives</a></li>
+          <li><a class="link-sm link-light" href="/press/">Press Resources</a></li>
+          <li><a class="link-sm link-light" href="/about/">About the Company</a></li>
+          <li><a class="link-sm link-light" href="/appstore/" target="_blank">Apple App Store<i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3 col-lg mb-7 mb-5 mb-md-0">
+        <h5 class="text-white mb-3">Support</h5>
+        <ul class="list-unstyled list-py-1 mb-0">
+          <li><a class="link-sm link-light" href="/support/">Contact Support</a></li>
+          <li><a class="link-sm link-light" href="/faq/">General FAQ</a></li>
+          <li><a class="link-sm link-light" href="/help/">Tutorials & Help</a></li>
+          <li><a class="link-sm link-light" href="/forum/" target="_blank">Support Forum<i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="d-block d-md-none d-lg-block col-12 col-md-3 col-lg mb-7 mb-5 mb-md-0">
+        <h5 class="text-white mb-3">Popular</h5>
+        <ul class="list-unstyled list-py-1 mb-0">
+          
+          <li><a class="link-sm link-light" href="/tutorials/what-are-image-metadata-exif-iptc-xmp/">EXIF, IPTC, XMP metadata</a></li>
+          
+          <li><a class="link-sm link-light" href="/tutorials/how-to-colorize-black-and-white-photos/">Colorize B&amp;W Photos</a></li>
+          
+          <li><a class="link-sm link-light" href="/tutorials/how-to-make-a-time-lapse-video-on-your-mac/">Create Time-lapse Video</a></li>
+          
+          <li><a class="link-sm link-light" href="/tutorials/how-to-extract-images-from-videos/">Extract Images from Videos</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-top border-white-10 my-7"></div>
+
+    <div class="w-md-85 text-lg-center mx-lg-auto">
+      <p class="text-white-50 small">
+        <span class="text-white-50">&copy; NeededApps. 2026. All rights reserved</span>
+        <span> | </span>
+        <a class="text-white-50" href="/terms/">Terms & Privacy Policy</a>
+        <span> | </span>
+        <a class="text-white-50" href="/admin/">Admin</a>
+        
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    
+
+
+
+  <script src="https://cdn.neededapps.com/static/assets/js/neededapps-7fa216a35d.js" defer></script>
+
+
+  </body>
+</html>

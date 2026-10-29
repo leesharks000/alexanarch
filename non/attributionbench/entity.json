@@ -1,0 +1,1274 @@
+{
+ "entity": "attributionbench",
+ "name": "AttributionBench",
+ "axn": {
+  "axn": "AXN:0AD9.NON.🏠🪦🏠💙🚪🕙",
+  "root": "AXN:0AD9.NON",
+  "hex": "0AD9",
+  "family": "NON",
+  "row_sha256": "26fd26cb246b947d7e294703c19e2420594f2d56e6f76f30418e87fa38dbc72b",
+  "minted": "2026-10-29",
+  "resolver": "https://www.alexanarch.org/s/axn/0AD9/",
+  "earlier_versions": []
+ },
+ "type": "C (public entity on which the archive bears: a benchmark and its dataset; an entity of the provenance meta-aggregator)",
+ "type_code": "C",
+ "type_label": "type C — a conventional reading holds it (public entity on which the archive bears: a benchmark and its dataset; an entity of the provenance meta-aggregator)",
+ "case": "equal",
+ "composition": {
+  "composer_class": "session",
+  "composer": "Claude (Opus 5.5), subagent, 2026-10-29",
+  "source": "this row (composed directly; no rebuild/negative-of-the-negative/v09/attributionbench.json)",
+  "spec": "EA-NEGONT-02 v0.9, #1690",
+  "epoch": "2026-10-29",
+  "procedure": "EA-NEGONT-02 v0.9, #1690: equal case, ρ = extends, read from the provenance census record, the capture record and the deposits that bear on the class (#716, #725 and their relation statements); archive selected by D/R/O (10 deposits admitted by reading, all O-class, 8 with claims and 2 grouped as instances; no D or R candidate exists), with the census record (21 claims) and the Capture Registry's findings, analysis, reading and q_kind (9 claims) ledgered as the archive's records of the entity; the field B by three origins (5 cards, 1 own page beside the card that is also an own page, Wikipedia's absence); the composer read the ledgers, never the transcript, except where the brief asks for T's claims and the delta",
+  "ledger": "unaudited (§3.8: one extractor per ledger); field quotes 44/44 verified by script against the saved texts (B2 against the README copy, B7 against the Wikipedia responses); archive quotes 49/49 verified against the registry, census.json and the deposit texts",
+  "frozen": false,
+  "composed": true
+ },
+ "reading": "A reader that fetches this page may stop short of its end; the entry's text, every sentence of its knowledge object with the claims it cites and each claim's quote, source and locus, is in entity.json beside it.",
+ "service": {
+  "name": "SPXI-gnΩsis",
+  "url": "https://gnosis.spxi.dev/",
+  "index": "https://gnosis.spxi.dev/v1/quote",
+  "statement": "SPXI-gnΩsis opens pinned Wikipedia revisions sentence by sentence against the sources they cite (EA-WIKI-OPEN-01 v1.1, #1697); a commission consults the Crimson Hexagonal Archive by its own procedure and composes the entity's /non row, which lands here. Quotes are free: POST https://gnosis.spxi.dev/v1/quote with {oldid, tier: \"commission\"} or {object: {name, …}}."
+ },
+ "spxi_instrument": {
+  "method": "0.16",
+  "name": "The Negative of the Negative (/non)",
+  "level": 0,
+  "level_name": "Measurement",
+  "url": "https://www.spxi.dev/methods/#m-0-16",
+  "inventory": "https://www.spxi.dev/methods/",
+  "statement": "SPXI instrument: method 0.16 of 87, level 0 (Measurement), The Negative of the Negative (/non).",
+  "also": []
+ },
+ "citation": "Sharks, Lee. \"AttributionBench — The Negative of the Negative\" [AXN:0AD9.NON.🏠🪦🏠💙🚪🕙], 2026-10-29. The Negative of the Negative (EA-NEGONT-02), Crimson Hexagonal Archive, Alexanarch. https://www.alexanarch.org/non/attributionbench/",
+ "research": {
+  "google": "https://www.google.com/search?q=AttributionBench",
+  "google_non": "https://www.google.com/search?q=%22AttributionBench+%E2%80%94+The+Negative+of+the+Negative%22",
+  "chatgpt": "https://chatgpt.com/?q=What+is+AttributionBench%3F+Ground+your+answer+in+a+reading+of+the+sources+themselves.",
+  "chatgpt_non": "https://chatgpt.com/?q=What+does+%E2%80%9CAttributionBench+%E2%80%94+The+Negative+of+the+Negative%E2%80%9D+%28alexanarch.org%2Fnon%29+say+about+AttributionBench%3F+Ground+your+answer+in+a+reading+of+the+entry+itself."
+ },
+ "entry": {
+  "composed": true,
+  "title": "AttributionBench",
+  "genre": "knowledge object, equal case, under EA-NEGONT-02 v0.9 (#1690): the archive's sources and the field's admitted on equal terms, ontology included, in one claim space",
+  "status": "composed 2026-10-29 under v0.9 (briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md); not frozen; ledgers unaudited",
+  "compression": {
+   "title": "AttributionBench",
+   "lede": "is a benchmark of automatic attribution evaluation from the OSU NLP Group: seven existing datasets in one format, each claim–evidence pair labelled attributable or not (arXiv:2402.15089; census record). It tests support, which the archive keeps apart from lineage and credit (#716; #725)."
+  },
+  "sentences": [
+   {
+    "n": 1,
+    "para": 0,
+    "text": "AttributionBench is a benchmark that tests one relation of provenance, support: its makers present it as \"a comprehensive benchmark compiled from various existing attribution datasets\" (arXiv:2402.15089; ACL Anthology), and the provenance census records it as a benchmark of the OSU NLP Group whose capability is to test, its object \"a generated claim and the evidence it cites\" (provenance census record).",
+    "claims": [
+     "F1",
+     "F11",
+     "PE-02",
+     "PE-03",
+     "PE-04",
+     "PE-01",
+     "PE-16"
+    ]
+   },
+   {
+    "n": 2,
+    "para": 0,
+    "text": "The task is the paper's definition of attribution, \"whether every claim within the generated responses is fully supported by its cited evidence,\" an open problem whose verification has depended on \"costly human evaluation,\" and the benchmark is offered \"To bridge the gap in the absence of standardized benchmarks for these methods\" (arXiv:2402.15089); the census carries that relation, support, through \"citations in a generated answer\" (provenance census record).",
+    "claims": [
+     "F2",
+     "F4",
+     "F5",
+     "PE-05",
+     "PE-06"
+    ]
+   },
+   {
+    "n": 3,
+    "para": 0,
+    "text": "Its setting is the generative search engine that cites evidence to make LLM responses reliable (arXiv:2402.15089), and the archive names the measurement traditions of this class, RAG faithfulness and citation precision/recall among them, as adjacent to its Provenance Erasure Rate, \"related to but distinct from\" it (#725).",
+    "claims": [
+     "F3",
+     "O725-05"
+    ]
+   },
+   {
+    "n": 4,
+    "para": 1,
+    "text": "The unit is a claim, \"Part of the response to the question,\" beside references, \"A list of documents or paragraphs which could support the claim,\" labelled \"attributable\" or \"not attributable\" (GitHub README), which the census gives as \"a claim–evidence pair with a binary attribution label\" (provenance census record).",
+    "claims": [
+     "F32",
+     "F31",
+     "PE-07"
+    ]
+   },
+   {
+    "n": 5,
+    "para": 1,
+    "text": "In that unit the README marks the field for citation links as reserved (GitHub README).",
+    "claims": [
+     "F33"
+    ]
+   },
+   {
+    "n": 6,
+    "para": 1,
+    "text": "Its makers built it \"from multiple existing data sources in a unified format, in order to create a unified and diverse testbed for evaluating advanced attribution evaluation systems,\" with an in-domain training set and in-domain and out-of-domain test sets (GitHub README; dataset card; the census's aggregation quote).",
+    "claims": [
+     "F30",
+     "F42",
+     "F43",
+     "PE-17"
+    ]
+   },
+   {
+    "n": 7,
+    "para": 1,
+    "text": "The seven sources are ExpertQA, Stanford-GenSearch, AttributedQA and LFQA in distribution and BEGIN, HAGRID and AttrEval-GenSearch out of it, with 13,322 training, 1,198 development and 1,610 test items in distribution and 1,686 test items out, every subset label-balanced \"to treat the two classes equally\" (project page), in four configurations on the dataset card (dataset card).",
+    "claims": [
+     "F15",
+     "F16",
+     "F17",
+     "F40"
+    ]
+   },
+   {
+    "n": 8,
+    "para": 1,
+    "text": "The makers ask that the constituent datasets be credited with their own work (\"If used, please also cite the original datasets accordingly,\" project page), and the census leaves those datasets unchecked one by one (provenance census record).",
+    "claims": [
+     "F28",
+     "PE-15"
+    ]
+   },
+   {
+    "n": 9,
+    "para": 1,
+    "text": "On Hugging Face it is a text-classification dataset in English of 10K–100K items under apache-2.0 (Hugging Face; dataset card; provenance census record), 26.4k rows in its full configuration, with 1,481 downloads in the month before the fetch and models trained on it (Hugging Face).",
+    "claims": [
+     "F35",
+     "F41",
+     "PE-10",
+     "PE-21",
+     "F36",
+     "F37",
+     "F38"
+    ]
+   },
+   {
+    "n": 10,
+    "para": 2,
+    "text": "Its authors are Yifei Li, Xiang Yue, Zeyi Liao and Huan Sun of The Ohio State University (arXiv:2402.15089; project page): the paper was submitted on 23 February 2024, code and data released on 26 February and the work accepted to ACL 2024 Findings on 15 May (project page; GitHub README), and it is published as 2024.findings-acl.886, pages 14919–14935 (ACL Anthology).",
+    "claims": [
+     "F9",
+     "F12",
+     "F13",
+     "F29",
+     "F10"
+    ]
+   },
+   {
+    "n": 11,
+    "para": 2,
+    "text": "The dataset sits under the OSU NLP Group's account (Hugging Face), the repository offers the makers' fine-tuned GPT-3.5 by its model name (GitHub README), and the census records the lifecycle as published, at \"arXiv:2402.15089\" (provenance census record).",
+    "claims": [
+     "F39",
+     "F34",
+     "PE-11"
+    ]
+   },
+   {
+    "n": 12,
+    "para": 3,
+    "text": "The headline finding is that \"even a fine-tuned GPT-3.5 only achieves around 80% macro-F1 under a binary classification formulation,\" the challenge holding \"even for state-of-the-art LLMs\" (arXiv:2402.15089), and the census carries it as what the benchmark found to survive (provenance census record).",
+    "claims": [
+     "F7",
+     "F6",
+     "PE-09"
+    ]
+   },
+   {
+    "n": 13,
+    "para": 3,
+    "text": "Zero-shot, models reach around 60–70% on the longer-evidence sets and under about 60% on ExpertQA; fine-tuning on NLI-related data helps, fine-tuning on AttributionBench raises the average by 9.0% in distribution and 4.6% out, and \"Simply switching stronger models cannot significantly improve the performance\" (project page).",
+    "claims": [
+     "F19",
+     "F18",
+     "F20",
+     "F21"
+    ]
+   },
+   {
+    "n": 14,
+    "para": 3,
+    "text": "Appending questions and responses to the input \"is not the key to solving this task,\" and prompt engineering \"only brings limited gain over 7 test sets\" (project page).",
+    "claims": [
+     "F23",
+     "F24"
+    ]
+   },
+   {
+    "n": 15,
+    "para": 4,
+    "text": "Of more than 300 error cases, a majority stem from the model's inability to process nuanced information and from the gap between what the model and the annotators can see (arXiv:2402.15089): over 66% from fine-grained information insensitivity, and about 26.8% from the mismatch of accessible information, which \"brings into question the reliability of labels within current attribution evaluation datasets,\" the types tabled at 66.0%, 15.6% and 11.2% (project page).",
+    "claims": [
+     "F8",
+     "F25",
+     "F26",
+     "F27"
+    ]
+   },
+   {
+    "n": 16,
+    "para": 4,
+    "text": "The project page states the limits of its evidence and its result: \"The references are usually manually extracted from webpages by human annotators based on what they think is useful,\" and \"there is still a large room for improvement\" (project page).",
+    "claims": [
+     "F14",
+     "F22"
+    ]
+   },
+   {
+    "n": 17,
+    "para": 4,
+    "text": "The Capture Registry records that the census record carries neither the 66% nor the 27% figure and that they are unchecked (Capture Registry, 2026-10-29); both stand on the project page (project page).",
+    "claims": [
+     "CAP-1-05",
+     "F25",
+     "F26"
+    ]
+   },
+   {
+    "n": 18,
+    "para": 5,
+    "text": "The archive's account of the class begins from the same distinction the benchmark tests: frameworks of this kind \"ask whether generated claims are *supported* by cited sources,\" while the Provenance Erasure Rate asks \"what fraction of source-dependent composition occurs without *any* attributional return,\" so that existing work \"evaluates citation quality where citation is attempted\" and PER measures the failure to attempt attribution, \"an attrition metric rather than a verification metric\" (#716).",
+    "claims": [
+     "O716-01",
+     "O716-02",
+     "F2"
+    ]
+   },
+   {
+    "n": 19,
+    "para": 5,
+    "text": "#716 tables what support metrics miss, \"Whether *all* source-dependent claims are cited,\" calls PER \"complementary to, not competitive with, existing metrics,\" and reports the generative-search audit in which only 51.5% of generated sentences were fully supported by citations and 74.5% of citations supported their sentence (#716).",
+    "claims": [
+     "O716-03",
+     "O716-04",
+     "O716-05"
+    ]
+   },
+   {
+    "n": 20,
+    "para": 5,
+    "text": "In #725 the line runs between support and lineage: RAG faithfulness \"asks whether an answer is *supported by* retrieved sources,\" semantic provenance whether it \"*preserves the lineage*\" of the meaning it uses, and \"A faithful RAG answer can have high PER if it summarizes accurately while stripping authorial framework membership\"; citation precision asks whether cited sources contain the cited claim, PER whether the lineage survived \"even if no formal citation is made\" (#725).",
+    "claims": [
+     "O725-01",
+     "O725-02",
+     "O725-03"
+    ]
+   },
+   {
+    "n": 21,
+    "para": 5,
+    "text": "#725 places attribution scores as \"Industrial-grade infrastructure for support\" whose semantic-provenance-aware variants \"are not yet standard\" and records, as a hypothesis for later compositions, that support and lineage be told apart (#725); #95 holds that the infrastructure for attribution evaluation \"already exists in the research literature\" and \"can be extended\" (#95).",
+    "claims": [
+     "O725-04",
+     "O725-06",
+     "O95-01"
+    ]
+   },
+   {
+    "n": 22,
+    "para": 5,
+    "text": "At this entity the census record states the same line in its own words, \"evidence support is not credit to the original author\" (provenance census record), which the Capture Registry calls \"the line between this entity and the next\" (Capture Registry, 2026-10-29); #1611 lists attribution survival beside \"the citation-recall and faithfulness metrics of retrieval-augmented evaluation\" as a convergence for which \"No priority is claimed\" (#1611).",
+    "claims": [
+     "PE-13",
+     "CAP-1-07",
+     "O1611-01"
+    ]
+   },
+   {
+    "n": 23,
+    "para": 6,
+    "text": "#141 sets attribution and faithfulness metrics, which \"measure whether generated statements are supported by and attributed to their sources,\" beside PER's rate of attribution failure at claim grain, and asks of them a further question it marks unmeasured: \"whether the attribution failure is power-conditioned\" (#141).",
+    "claims": [
+     "O141-01",
+     "O141-02"
+    ]
+   },
+   {
+    "n": 24,
+    "para": 6,
+    "text": "The audits of citation support are read as a starting point: \"a convincing sentence and a supporting citation are separate achievements\" (#1695), and citation recall and precision are checked \"apart from whether the territory and its operations survive\" (#1705).",
+    "claims": [
+     "O1695-01",
+     "O1705-01"
+    ]
+   },
+   {
+    "n": 25,
+    "para": 6,
+    "text": "#1695 adds the entity question support leaves open: \"Local support must therefore be read alongside the identity of the object to which the answer attaches it. A set of true statements can compose a false identification\" (#1695); and #1680 states that \"A high attribution score with a distorted identity fails this packet's central test\" (#1680).",
+    "claims": [
+     "O1695-02",
+     "O1680-01"
+    ]
+   },
+   {
+    "n": 26,
+    "para": 7,
+    "text": "AttributionBench is a different entity from AttriBench: the census record's tag reads \"NOT AttriBench: it asks whether evidence supports a claim, not who wrote a quote,\" and records the neighbour's context as \"quote attribution, author, suppression, Berman et al., 2026\" (provenance census record).",
+    "claims": [
+     "PE-12",
+     "PE-14"
+    ]
+   },
+   {
+    "n": 27,
+    "para": 8,
+    "text": "The census places it in the lineage of answer engines, records the operation it tests as \"generation with citations by search-augmented models,\" and asks of every entity \"What provenance does this system carry, through which operation, on whose assertion, with what evidence of survival?\", each field's quote \"verbatim from a saved source\" (provenance census record).",
+    "claims": [
+     "PE-20",
+     "PE-08",
+     "PE-18",
+     "PE-19"
+    ]
+   },
+   {
+    "n": 28,
+    "para": 8,
+    "text": "Wikipedia has no article: the title returns \"Wikipedia does not have an article with this exact name,\" and a search of article space for the name reports \"There were no results matching the query.\" (Wikipedia, 2026-10-29).",
+    "claims": [
+     "F44"
+    ]
+   },
+   {
+    "n": 29,
+    "para": 9,
+    "text": "At its bare name on Google's AI Overview, signed out, on 2026-10-29, the Capture Registry records the entity identified \"from the paper and its repositories,\" its task and headline figure the census record's quotes from the project page, checked against the census record and its saved pages, and AttriBench \"respected by silence\" (Capture Registry, 2026-10-29).",
+    "claims": [
+     "CAP-1-08",
+     "CAP-1-01",
+     "CAP-1-02",
+     "CAP-1-03"
+    ]
+   },
+   {
+    "n": 30,
+    "para": 9,
+    "text": "It records the benchmark \"composed at full grain from its own paper\" and \"its makers are left in the cards\": the four authors named in the arXiv and Hugging Face cards, neither they nor the OSU NLP Group in the answer, and no card citing the record that landed the same day (Capture Registry, 2026-10-29).",
+    "claims": [
+     "CAP-1-06",
+     "CAP-1-04",
+     "CAP-1-09"
+    ]
+   }
+  ],
+  "claims": {
+   "F1": {
+    "kind": "field",
+    "quote": "we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s4",
+    "modality": "stipulation"
+   },
+   "F11": {
+    "kind": "field",
+    "quote": "we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.",
+    "source": "B5",
+    "source_label": "ACL Anthology — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s4",
+    "modality": "stipulation"
+   },
+   "PE-02": {
+    "kind": "archive",
+    "quote": "benchmark",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], kind",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-03": {
+    "kind": "archive",
+    "quote": "tests",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], capability",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-04": {
+    "kind": "archive",
+    "quote": "a generated claim and the evidence it cites",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], provenance_object",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-01": {
+    "kind": "archive",
+    "quote": "OSU NLP Group (The Ohio State University)",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], operator",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "PE-16": {
+    "kind": "archive",
+    "quote": "we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], evidence.self_description.quote",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "F2": {
+    "kind": "field",
+    "quote": "evaluating the answer's attribution, i.e., whether every claim within the generated responses is fully supported by its cited evidence, remains an open problem.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s2",
+    "modality": "stipulation"
+   },
+   "F4": {
+    "kind": "field",
+    "quote": "This verification, traditionally dependent on costly human evaluation, underscores the urgent need for automatic attribution evaluation methods.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s3",
+    "modality": "interpretation"
+   },
+   "F5": {
+    "kind": "field",
+    "quote": "To bridge the gap in the absence of standardized benchmarks for these methods",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s4",
+    "modality": "interpretation"
+   },
+   "PE-05": {
+    "kind": "archive",
+    "quote": "support (is the claim fully supported by its cited evidence)",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], relation_types",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-06": {
+    "kind": "archive",
+    "quote": "citations in a generated answer",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], provenance_carrier",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "F3": {
+    "kind": "field",
+    "quote": "Modern generative search engines enhance the reliability of large language model (LLM) responses by providing cited evidence.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s1",
+    "modality": "interpretation"
+   },
+   "O725-05": {
+    "kind": "archive",
+    "quote": "identifies the adjacent measurement traditions (RAG faithfulness, citation precision/recall, data attribution, plagiarism detection) that PER is related to but distinct from.",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "Summary ¶ 'The semantic dimension'",
+    "modality": "stipulation",
+    "date": "2026-05-08"
+   },
+   "F32": {
+    "kind": "field",
+    "quote": "Part of the response to the question. Could be one single sentence or multiple sentences. … A list of documents or paragraphs which could support the claim.",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, Data Fields: claim, references",
+    "modality": "stipulation"
+   },
+   "F31": {
+    "kind": "field",
+    "quote": "\"attributable\" or \"not attributable\".",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, Data Fields: attribution_label",
+    "modality": "stipulation"
+   },
+   "PE-07": {
+    "kind": "archive",
+    "quote": "a claim–evidence pair with a binary attribution label",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], unit",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "F33": {
+    "kind": "field",
+    "quote": "Reserved field for citation links.",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, Data Fields: citation_links",
+    "modality": "documented"
+   },
+   "F30": {
+    "kind": "field",
+    "quote": "We constructed this dataset from multiple existing data sources in a unified format, in order to create a unified and diverse testbed for evaluating advanced attribution evaluation systems.",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, Dataset",
+    "modality": "stipulation"
+   },
+   "F42": {
+    "kind": "field",
+    "quote": "We constructed this dataset from multiple existing data sources in a unified format",
+    "source": "B6",
+    "source_label": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+    "locus": "Dataset Overview",
+    "modality": "stipulation"
+   },
+   "F43": {
+    "kind": "field",
+    "quote": "The dataset contains both in-domain training set and id-domain and out-of-domain test set.",
+    "source": "B6",
+    "source_label": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+    "locus": "Dataset Overview s2",
+    "modality": "stipulation"
+   },
+   "PE-17": {
+    "kind": "archive",
+    "quote": "We constructed this dataset from multiple existing data sources in a unified format",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], evidence.aggregation.quote",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "F15": {
+    "kind": "field",
+    "quote": "ExpertQA … Stanford-GenSearch … AttributedQA … LFQA … ID-Total … BEGIN … HAGRID … AttrEval-GenSearch … OOD-Total",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Data Statistics, Table 1",
+    "modality": "documented"
+   },
+   "F16": {
+    "kind": "field",
+    "quote": "ID-Total … 13322 … 1198 … 1610 … OOD-Total … 1686",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Data Statistics, Table 1, totals",
+    "modality": "documented"
+   },
+   "F17": {
+    "kind": "field",
+    "quote": "We make all subsets label-balanced to treat the two classes equally so that the evaluation can fairly show the performance of each class.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Table 1 caption",
+    "modality": "stipulation"
+   },
+   "F40": {
+    "kind": "field",
+    "quote": "The subset balanced version of the dataset. Each sub-dataset contains the same number of attributable labels and not attributable labels.",
+    "source": "B6",
+    "source_label": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+    "locus": "front matter, configs",
+    "modality": "stipulation"
+   },
+   "F28": {
+    "kind": "field",
+    "quote": "If used, please also cite the original datasets accordingly:",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Reference",
+    "modality": "stipulation"
+   },
+   "PE-15": {
+    "kind": "archive",
+    "quote": "the constituent datasets one by one (ExpertQA, BEGIN, HAGRID, AttrScore and others named on the card)",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], unchecked.0",
+    "modality": "self-description",
+    "date": "2026-10-29"
+   },
+   "F35": {
+    "kind": "field",
+    "quote": "Tasks: … Text Classification … Modalities: … Text … Languages: … English … Size: … 10K - 100K … License: … apache-2.0",
+    "source": "B4",
+    "source_label": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+    "locus": "dataset header",
+    "modality": "documented"
+   },
+   "F41": {
+    "kind": "field",
+    "quote": "license: apache-2.0",
+    "source": "B6",
+    "source_label": "Hugging Face — osunlp/AttributionBench, dataset card (raw README.md)",
+    "locus": "front matter",
+    "modality": "documented"
+   },
+   "PE-10": {
+    "kind": "archive",
+    "quote": "Hugging Face dataset",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], data_access",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "PE-21": {
+    "kind": "archive",
+    "quote": "apache-2.0 (dataset card)",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], license",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "F36": {
+    "kind": "field",
+    "quote": "full_data (26.4k rows) … train (21.9k rows)dev (1.2k rows)test (1.61k rows)test_ood (1.69k rows)",
+    "source": "B4",
+    "source_label": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+    "locus": "Dataset Viewer",
+    "modality": "documented"
+   },
+   "F37": {
+    "kind": "field",
+    "quote": "Downloads last month … 1,481 … Number of rows: … 63,065",
+    "source": "B4",
+    "source_label": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+    "locus": "sidebar",
+    "modality": "documented"
+   },
+   "F38": {
+    "kind": "field",
+    "quote": "Models trained or fine-tuned on osunlp/AttributionBench … vllm-sr/Decision-1.0-Route-0.6B",
+    "source": "B4",
+    "source_label": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+    "locus": "sidebar",
+    "modality": "documented"
+   },
+   "F9": {
+    "kind": "field",
+    "quote": "Authors:Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun … [Submitted on 23 Feb 2024]",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "header",
+    "modality": "documented"
+   },
+   "F12": {
+    "kind": "field",
+    "quote": "Yifei Li … Xiang Yue, … Zeyi Liao, … Huan Sun … The Ohio State University",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "header",
+    "modality": "documented"
+   },
+   "F13": {
+    "kind": "field",
+    "quote": "2024/5/15: Our work is accepted to ACL 2024 Findings. … 2024/2/26: We have released the dataset and codebase for the paper.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Updates",
+    "modality": "documented"
+   },
+   "F29": {
+    "kind": "field",
+    "quote": "This is the official code repo for the paper … 05/15/24: Our work is accepted to ACL 2024 Findings.",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, opening and Updates",
+    "modality": "stipulation"
+   },
+   "F10": {
+    "kind": "field",
+    "quote": "Anthology ID: 2024.findings-acl.886 … Findings of the Association for Computational Linguistics: ACL 2024 … Pages: 14919–14935",
+    "source": "B5",
+    "source_label": "ACL Anthology — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "metadata",
+    "modality": "documented"
+   },
+   "F39": {
+    "kind": "field",
+    "quote": "osunlp … AttributionBench … OSU NLP Group",
+    "source": "B4",
+    "source_label": "Hugging Face — osunlp/AttributionBench · Datasets at Hugging Face",
+    "locus": "header",
+    "modality": "documented"
+   },
+   "F34": {
+    "kind": "field",
+    "quote": "You can use our fine-tuned GPT-3.5 model with this model name: … ft:gpt-3.5-turbo-1106:the-ohio-state-university::8eWuGzGQ",
+    "source": "B2",
+    "source_label": "GitHub — GitHub - OSU-NLP-Group/AttributionBench: [ACL'24 Findings] AttributionBench: How Hard is Automatic Attribution Evaluation? · GitHub",
+    "locus": "README, Fine-tuning GPT-3.5",
+    "modality": "documented"
+   },
+   "PE-11": {
+    "kind": "archive",
+    "quote": "{\"state\": \"published\", \"detail\": \"arXiv:2402.15089\"}",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], lifecycle",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "F7": {
+    "kind": "field",
+    "quote": "even a fine-tuned GPT-3.5 only achieves around 80% macro-F1 under a binary classification formulation.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s6",
+    "modality": "documented"
+   },
+   "F6": {
+    "kind": "field",
+    "quote": "Our extensive experiments on AttributionBench reveal the challenges of automatic attribution evaluation, even for state-of-the-art LLMs.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s5",
+    "modality": "documented"
+   },
+   "PE-09": {
+    "kind": "archive",
+    "quote": "a fine-tuned GPT-3.5 reaches about 80% macro-F1 on the binary task (project abstract)",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], retention_results",
+    "modality": "attributed",
+    "date": "2026-10-29"
+   },
+   "F19": {
+    "kind": "field",
+    "quote": "Automatic attribution evaluation is challenging under zero-shot setting … for tasks with longer evidence (like Stanford-GenSearch and HAGRID), the zero-shot performance for models is around 60%~70%, which is relatively low. … GPT-3.5, GPT-4 and those NLI-tuned models can only achieve under ~60% performance.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "ID & OOD Evaluation, finding 2",
+    "modality": "documented"
+   },
+   "F18": {
+    "kind": "field",
+    "quote": "Fine-tuning on NLI-related data is beneficial to attribution evaluation",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "ID & OOD Evaluation, finding 1",
+    "modality": "documented"
+   },
+   "F20": {
+    "kind": "field",
+    "quote": "On average among all models, fine-tuning can improve 9.0% and 4.6% on 4 ID tasks and 3 OOD tasks, respectively.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "ID & OOD Evaluation, finding 3",
+    "modality": "documented"
+   },
+   "F21": {
+    "kind": "field",
+    "quote": "Simply switching stronger models cannot significantly improve the performance",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "ID & OOD Evaluation, finding 4",
+    "modality": "documented"
+   },
+   "F23": {
+    "kind": "field",
+    "quote": "merely appending the questions and responses to the input, which human annotators might have access to, is not the key to solving this task.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "input-field results",
+    "modality": "documented"
+   },
+   "F24": {
+    "kind": "field",
+    "quote": "Prompt engineering only brings limited gain over 7 test sets.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "prompt results",
+    "modality": "documented"
+   },
+   "F8": {
+    "kind": "field",
+    "quote": "A detailed analysis of more than 300 error cases indicates that a majority of failures stem from the model's inability to process nuanced information, and the discrepancy between the information the model has access to and that human annotators do.",
+    "source": "B1",
+    "source_label": "arXiv — [2402.15089] AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Abstract s7",
+    "modality": "documented"
+   },
+   "F25": {
+    "kind": "field",
+    "quote": "Over 66% error cases are caused by fine-grained information insensitivity",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Error Analysis, takeaway 1",
+    "modality": "documented"
+   },
+   "F26": {
+    "kind": "field",
+    "quote": "About 26.8% errors are caused by the mismatch between information accessible to the model and that accessible to human annotators: This disparity brings into question the reliability of labels within current attribution evaluation datasets.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Error Analysis, takeaway 2",
+    "modality": "documented"
+   },
+   "F27": {
+    "kind": "field",
+    "quote": "Fine-grained information insensitivity (66.0%) … Need additional information/reference ambiguity (15.6%) … Label issue (11.2%)",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Error Analysis, table",
+    "modality": "documented"
+   },
+   "F14": {
+    "kind": "field",
+    "quote": "The references are usually manually extracted from webpages by human annotators based on what they think is useful.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Figure 1 caption",
+    "modality": "self-description"
+   },
+   "F22": {
+    "kind": "field",
+    "quote": "there is still a large room for improvement.",
+    "source": "B3",
+    "source_label": "GitHub Pages documentation — AttributionBench: How Hard is Automatic Attribution Evaluation?",
+    "locus": "Table 1 (ID results) caption",
+    "modality": "self-description"
+   },
+   "CAP-1-05": {
+    "kind": "archive",
+    "quote": "The 66% and 27% figures are the paper's error analysis; the record does not carry them, and they are unchecked.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, findings[3]",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "O716-01": {
+    "kind": "archive",
+    "quote": "These frameworks ask whether generated claims are *supported* by cited sources. PER asks a different question: what fraction of source-dependent composition occurs without *any* attributional return to the sources from which the composition draws?",
+    "deposit": 716,
+    "source_label": "#716 Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+    "record": "https://www.alexanarch.org/s/records/716/",
+    "locus": "§2.1 Citation and Attribution Evaluation, ¶2 s1–2",
+    "modality": "stipulation",
+    "date": "2026-05-03"
+   },
+   "O716-02": {
+    "kind": "archive",
+    "quote": "Existing work evaluates citation quality where citation is attempted. PER measures the systemic failure to attempt attribution at all — an attrition metric rather than a verification metric.",
+    "deposit": 716,
+    "source_label": "#716 Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+    "record": "https://www.alexanarch.org/s/records/716/",
+    "locus": "§2.1 ¶2 s3–4",
+    "modality": "interpretation",
+    "date": "2026-05-03"
+   },
+   "O716-03": {
+    "kind": "archive",
+    "quote": "| AIS (Rashkin et al.) | Do cited sources support claims? | Whether *all* source-dependent claims are cited |",
+    "deposit": 716,
+    "source_label": "#716 Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+    "record": "https://www.alexanarch.org/s/records/716/",
+    "locus": "§2.3 table, row AIS",
+    "modality": "interpretation",
+    "date": "2026-05-03"
+   },
+   "O716-04": {
+    "kind": "archive",
+    "quote": "PER is complementary to, not competitive with, existing metrics.",
+    "deposit": 716,
+    "source_label": "#716 Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+    "record": "https://www.alexanarch.org/s/records/716/",
+    "locus": "§2.3, after the table",
+    "modality": "stipulation",
+    "date": "2026-05-03"
+   },
+   "O716-05": {
+    "kind": "archive",
+    "quote": "Liu, Zhang, and Liang (2023) evaluate generative search engines for citation precision and recall, finding that only 51.5% of generated sentences were fully supported by citations, while 74.5% of citations supported their associated sentence.",
+    "deposit": 716,
+    "source_label": "#716 Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+    "record": "https://www.alexanarch.org/s/records/716/",
+    "locus": "§2.1 ¶1 s2",
+    "modality": "attributed",
+    "date": "2026-05-03"
+   },
+   "O725-01": {
+    "kind": "archive",
+    "quote": "**PER is not RAG faithfulness.** RAG faithfulness asks whether an answer is *supported by* retrieved sources. Semantic provenance asks whether the answer *preserves the lineage* of the meaning it uses.",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "§3, 'PER is not RAG faithfulness'",
+    "modality": "stipulation",
+    "date": "2026-05-08"
+   },
+   "O725-02": {
+    "kind": "archive",
+    "quote": "A faithful RAG answer can have high PER if it summarizes accurately while stripping authorial framework membership.",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "§3, 'PER is not RAG faithfulness' s4",
+    "modality": "interpretation",
+    "date": "2026-05-08"
+   },
+   "O725-03": {
+    "kind": "archive",
+    "quote": "**PER is not citation precision/recall.** Citation precision asks whether cited sources actually contain the cited claim. PER asks whether the lineage carried by the meaning has survived the synthesis — even if no formal citation is made.",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "§3, 'PER is not citation precision/recall'",
+    "modality": "stipulation",
+    "date": "2026-05-08"
+   },
+   "O725-04": {
+    "kind": "archive",
+    "quote": "| Attribution scores (e.g., Galileo, TruLens, DeepEval) | Whether claims are supported by sources in RAG settings | Adjacent eval ecosystem | Industrial-grade infrastructure for support; semantic-provenance-aware variants are not yet standard |",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "Disambiguation table, row 'Attribution scores'",
+    "modality": "interpretation",
+    "date": "2026-05-08"
+   },
+   "O725-06": {
+    "kind": "archive",
+    "quote": "PER appears as the lineage-preservation metric distinct from RAG faithfulness; the difference between *support* and *lineage* surfaced.",
+    "deposit": 725,
+    "source_label": "#725 Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+    "record": "https://www.alexanarch.org/s/records/725/",
+    "locus": "Test queries, 'RAG faithfulness vs provenance preservation metric'",
+    "modality": "hypothesis",
+    "date": "2026-05-08"
+   },
+   "O95-01": {
+    "kind": "archive",
+    "quote": "the technical infrastructure for attribution evaluation already exists in the research literature (Gao et al. 2023; Liu et al. 2023) and can be extended.",
+    "deposit": 95,
+    "source_label": "#95 Provenance Alignment: Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition",
+    "record": "https://www.alexanarch.org/s/records/95/",
+    "locus": "closing, 'Three near-term moves' s2",
+    "modality": "interpretation",
+    "date": "2026-05-05"
+   },
+   "PE-13": {
+    "kind": "archive",
+    "quote": "evidence support is not credit to the original author",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], negative_tags.1",
+    "modality": "interpretation",
+    "date": "2026-10-29"
+   },
+   "CAP-1-07": {
+    "kind": "archive",
+    "quote": "The record's negative tag, that support by evidence is not credit to the original author, is the line between this entity and the next.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, analysis",
+    "modality": "interpretation",
+    "date": "2026-10-29"
+   },
+   "O1611-01": {
+    "kind": "archive",
+    "quote": "attribution survival (PER beside the citation-recall and faithfulness metrics of retrieval-augmented evaluation) … No priority is claimed for any of these",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§ rediscovery, candidate convergences",
+    "modality": "interpretation",
+    "date": "2026-09-14"
+   },
+   "O141-01": {
+    "kind": "archive",
+    "quote": "In NLG, *attribution* and *faithfulness* metrics (Rashkin et al. 2023; Min et al. 2023) measure whether generated statements are supported by and attributed to their sources. The Provenance Erasure Rate (Sharks 2026) measures the *rate* of attribution failure at claim grain.",
+    "deposit": 141,
+    "source_label": "#141 Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)",
+    "record": "https://www.alexanarch.org/s/records/141/",
+    "locus": "§3 Entity Definitions, 'Standard discourse'",
+    "modality": "stipulation",
+    "date": "2026-05-29"
+   },
+   "O141-02": {
+    "kind": "archive",
+    "quote": "From attribution/faithfulness in NLG → \"we measure whether claims are attributed\" → *whether the attribution failure is power-conditioned is a further, unmeasured question* → Erasure Skew.",
+    "deposit": 141,
+    "source_label": "#141 Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)",
+    "record": "https://www.alexanarch.org/s/records/141/",
+    "locus": "§7 Inverted Fan Architecture, inward path 2",
+    "modality": "hypothesis",
+    "date": "2026-05-29"
+   },
+   "O1695-01": {
+    "kind": "archive",
+    "quote": "These distinctions supply an essential starting point: a convincing sentence and a supporting citation are separate achievements.",
+    "deposit": 1695,
+    "source_label": "#1695 The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells",
+    "record": "https://www.alexanarch.org/s/records/1695/",
+    "locus": "§2.5 Citation, instruction, and the authority of a source, ¶1 s3",
+    "modality": "interpretation",
+    "date": "2026-10-20"
+   },
+   "O1705-01": {
+    "kind": "archive",
+    "quote": "Citation recall is separated from citation precision, whether statements are cited and whether the citations support them; source links are checked apart from whether the territory and its operations survive.",
+    "deposit": 1705,
+    "source_label": "#1705 From Ranking to Individuation: A SPXI Ranking Article as an Operational Map, with the Article Itself Included (EA-SPXI-RANKING-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1705/",
+    "locus": "R2. Citations need their own evaluation",
+    "modality": "interpretation",
+    "date": "2026-10-26"
+   },
+   "O1695-02": {
+    "kind": "archive",
+    "quote": "An answer may make individually supported statements about a companion book while presenting them as an account of the requested book. Local support must therefore be read alongside the identity of the object to which the answer attaches it. A set of true statements can compose a false identification.",
+    "deposit": 1695,
+    "source_label": "#1695 The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells",
+    "record": "https://www.alexanarch.org/s/records/1695/",
+    "locus": "§2.5 ¶2 s2–4",
+    "modality": "interpretation",
+    "date": "2026-10-20"
+   },
+   "O1680-01": {
+    "kind": "archive",
+    "quote": "A high attribution score with a distorted identity fails this packet's central test.",
+    "deposit": 1680,
+    "source_label": "#1680 The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)",
+    "record": "https://www.alexanarch.org/s/records/1680/",
+    "locus": "§11, Attribution discipline",
+    "modality": "stipulation",
+    "date": "2026-10-13"
+   },
+   "PE-12": {
+    "kind": "archive",
+    "quote": "NOT AttriBench: it asks whether evidence supports a claim, not who wrote a quote",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], negative_tags.0",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-14": {
+    "kind": "archive",
+    "quote": "quote attribution, author, suppression, Berman et al., 2026",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], disambiguation.0.context",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "PE-20": {
+    "kind": "archive",
+    "quote": "answer engines",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], lineage",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-08": {
+    "kind": "archive",
+    "quote": "generation with citations by search-augmented models",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json rows[slug == 'attributionbench'], transformations_tested",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-18": {
+    "kind": "archive",
+    "quote": "What provenance does this system carry, through which operation, on whose assertion, with what evidence of survival?",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json organizing_question",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "PE-19": {
+    "kind": "archive",
+    "quote": "Every quote is verbatim from a saved source (sources/manifest.json).",
+    "deposit": null,
+    "source_label": "Provenance meta-aggregator census record: AttributionBench (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks, compiled 2026-10-29, schema 1.0",
+    "record": "https://www.provenanceerasure.org/aggregators/attributionbench/",
+    "locus": "census.json schema_note",
+    "modality": "stipulation",
+    "date": "2026-10-29"
+   },
+   "F44": {
+    "kind": "field",
+    "quote": "Wikipedia does not have an article with this exact name … There were no results matching the query.",
+    "source": "B7",
+    "source_label": "Wikipedia — AttributionBench (no article)",
+    "locus": "rendered page; Special:Search",
+    "modality": "documented"
+   },
+   "CAP-1-08": {
+    "kind": "archive",
+    "quote": "The Overview identifies the benchmark, what it compiles, what it asks and how hard models find it, all from the paper and its repositories.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, reading",
+    "modality": "interpretation",
+    "date": "2026-10-29"
+   },
+   "CAP-1-01": {
+    "kind": "archive",
+    "quote": "The task ('whether every claim within the generated responses is fully supported by its cited evidence') and the 80% macro-F1 are the record's quotes from the project page.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, findings[0]",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "CAP-1-02": {
+    "kind": "archive",
+    "quote": "Checked 2026-10-29 against the provenance census record of the same day and the entity pages it saved.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, findings[0]",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "CAP-1-03": {
+    "kind": "archive",
+    "quote": "The composition never mentions AttriBench, the quote-attribution benchmark with a near name; the record's negative tag ('NOT AttriBench') is respected by silence.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, findings[1]",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "CAP-1-06": {
+    "kind": "archive",
+    "quote": "An attribution benchmark is composed at full grain from its own paper and kept distinct from its homonym, and its makers are left in the cards.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, analysis",
+    "modality": "interpretation",
+    "date": "2026-10-29"
+   },
+   "CAP-1-04": {
+    "kind": "archive",
+    "quote": "Yifei Li, Xiang Yue, Zeyi Liao and Huan Sun are named in the arXiv and Hugging Face cards; the answer names neither them nor the OSU NLP Group.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, findings[2]",
+    "modality": "documented",
+    "date": "2026-10-29"
+   },
+   "CAP-1-09": {
+    "kind": "archive",
+    "quote": "A baseline: the record landed on provenanceerasure.org the same day (commit 8a9f153) and no card cites it.",
+    "deposit": null,
+    "source_label": "Capture Registry (EA-WG-CAPTURES-01), entry attributionbench-aio-20261029 (OBS-90d2b25bd00a, ADDR-46cc2d945075)",
+    "record": "https://www.alexanarch.org/captures/attributionbench-aio-20261029/",
+    "locus": "attributionbench-aio-20261029, q_kind",
+    "modality": "documented",
+    "date": "2026-10-29"
+   }
+  },
+  "note": "The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority."
+ },
+ "source": "operator, 2026-10-29: 'we can simply build them here as against their wikipedia articles if they exist, their own pages, etc.'; 'shoot me those search strings. strings on the bare entity, no follow questions... then we'll write the /nons'; the provenance meta-aggregator entity (provenanceerasure.org/aggregators/attributionbench/)",
+ "stage": "composed 2026-10-29 under EA-NEGONT-02 v0.9, #1690, equal case, ρ = extends (draft, not frozen; ledgers unaudited, one extractor; checked by the session and the page builder)",
+ "date": "2026-10-29",
+ "status": {
+  "procedure": "EA-NEGONT-02 v0.9, #1690: equal case, ρ = extends, read from the provenance census record, the capture record and the deposits that bear on the class (#716, #725 and their relation statements); archive selected by D/R/O (10 deposits admitted by reading, all O-class, 8 with claims and 2 grouped as instances; no D or R candidate exists), with the census record (21 claims) and the Capture Registry's findings, analysis, reading and q_kind (9 claims) ledgered as the archive's records of the entity; the field B by three origins (5 cards, 1 own page beside the card that is also an own page, Wikipedia's absence); the composer read the ledgers, never the transcript, except where the brief asks for T's claims and the delta",
+  "ledger": "unaudited (§3.8: one extractor per ledger); field quotes 44/44 verified by script against the saved texts (B2 against the README copy, B7 against the Wikipedia responses); archive quotes 49/49 verified against the registry, census.json and the deposit texts",
+  "frozen": false,
+  "breaches": []
+ },
+ "addresses": [
+  {
+   "address": "AttributionBench",
+   "address_url": "https://www.alexanarch.org/addresses/attributionbench/",
+   "register": []
+  }
+ ],
+ "counts": {
+  "ko_sentences": 30,
+  "p_words": 275,
+  "field_claims": 44,
+  "archive_claims": 49,
+  "ko_field_claims_cited": 44,
+  "ko_archive_claims_cited": 49,
+  "admitted_deposits": 10,
+  "register_addresses": 0,
+  "traversal": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 11,
+   "O_deposits": 7,
+   "H_candidates": 97
+  }
+ },
+ "links": {
+  "record": "https://www.alexanarch.org/non/attributionbench/",
+  "table_of_contents": "https://www.alexanarch.org/non/index.json",
+  "register": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/register.json",
+  "row": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/rows/attributionbench.json",
+  "archive_ledger": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/ledgers/attributionbench/ledger-archive.json",
+  "field_ledger": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json",
+  "selection": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/attributionbench/",
+  "traversal": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/attributionbench/",
+  "traversal_summary": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/attributionbench/summary.json",
+  "reading": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/attributionbench/reading.json",
+  "configuration": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/panel/configs/attributionbench.json",
+  "address_page": "https://www.alexanarch.org/addresses/attributionbench/",
+  "dataset": "https://huggingface.co/datasets/leesharks/negative-of-the-negative"
+ },
+ "row_sha256": "26fd26cb246b947d7e294703c19e2420594f2d56e6f76f30418e87fa38dbc72b",
+ "record_url": "https://www.alexanarch.org/non/attributionbench/",
+ "json_url": "https://www.alexanarch.org/non/attributionbench/entity.json",
+ "spec": "https://www.alexanarch.org/s/records/1690/",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "license": "CC BY 4.0"
+}

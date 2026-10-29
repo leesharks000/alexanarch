@@ -1,0 +1,59 @@
+{
+ "row": "provstore",
+ "address": "ProvStore",
+ "entity": "ProvStore (openprovenance.org), the public repository for W3C PROV provenance documents, storing, browsing and managing them via a Web interface or a REST API; built and led by Trung Dong Huynh (paper 'ProvStore: A Public Provenance Repository', IPAW 2014, LNCS, doi:10.1007/978-3-319-16462-5_32), run at the University of Southampton from 2013 and at King's College London from 2018, retired in December 2024 (the maintainer's page, updated 12 September 2026), while the OpenProvenance landing page says 'ProvStore is coming back soon'; formalized in the provenance meta-aggregator census record of 2026-10-29 (provenanceerasure.org/aggregators/provstore/)",
+ "row_type": "C (a public entity on which the archive bears: a provenance repository, retired; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bProv ?Store\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bOpen ?Provenance\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bopenprovenance\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b(Trung )?Dong Huynh\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\btrungdong\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b978-3-319-16462-5_32\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "W3C PROV provenance infrastructure (the PROV standards, PROV documents and the repositories and tools that store and process them)",
+   "pattern": "\\b(W3C[ -]PROV|PROV-(DM|O|N|JSON|JSONLD|XML|CONSTRAINTS|Constraints|Overview|OVERVIEW)|PROV (standard|standards|data model|documents?|Data Model)|Open Provenance Model|OPM)\\b",
+   "flags": "",
+   "basis": "field: B1 (openprovenance.org: 'A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API.'; the page's 'PROV Specifications (Recommendations and Notes)' and 'The OPM Provenance Model' under 'Provenance Legacy'); B3 and B4 (ePrints Soton and ACM DL card snippets: 'ProvStore is the first online public provenance repository supporting the new PROV standards by W3C'); B9 (the maintainer's software page: 'ProvStore was the first online public provenance repository supporting W3C's PROV standards'); census: kind 'repository (retired)', provenance_object 'a W3C PROV document', lineage 'computational lineage'"
+  },
+  {
+   "term": "provenance repositories (public stores of provenance documents)",
+   "pattern": "\\bprovenance (repositor(y|ies)|store|stores|documents?)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('A provenance repository'); B3, B4 ('the first online public provenance repository'); B7 ('a free public repository for provenance documents (REST API available)'); census: kind 'repository (retired)', unit 'a provenance document'"
+  }
+ ],
+ "classes_note": "Two classes, sourced from the field by locus and matching the census's own kind and lineage for the entity (kind 'repository (retired)'; lineage 'computational lineage'; provenance_object 'a W3C PROV document'): the W3C PROV standards and the infrastructure that stores and processes PROV documents (B1, B3, B4, B9), and provenance repositories as such (B1, B3, B4, B7). The aliases are the entity's name (with and without the space), its host and operator name OpenProvenance (which also names the community model OPM's site; a candidate on 'Open Provenance Model' is the predecessor model, read and not admitted as the entity), the maintainer (Trung Dong Huynh, 'trungdong' his handle and GitHub pages host) and the paper's DOI suffix. The four letters 'PROV' alone are not an alias: they are also the homonyms of T (PROV Tokyo, PROV Exam) and the W3C standard's name, which is a class here. Admission by reading (§3.4): D where the archive names ProvStore, OpenProvenance or its maintainer and says something of it; O-class where an archive sentence applies an archive category (semantic provenance, provenance erasure, the dimensions of provenance, the Provenance Erasure Rate, the archive's provenance infrastructure) to W3C PROV or to provenance repositories as a class; a bare listing of 'W3C PROV' among anchors or keywords, a reference line or a citation-list entry is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'ProvStore' (provstore-aio-20261029, OBS-ba9f43fce1d1, ADDR-d4515bdb32d4), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#106, #121, #510, #711, #725, #1003, #1190, #1194).",
+ "hop_from": [
+  106,
+  121,
+  510,
+  711,
+  725,
+  1003,
+  1190,
+  1194
+ ]
+}

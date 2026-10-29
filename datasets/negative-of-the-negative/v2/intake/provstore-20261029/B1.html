@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Open Provenance Web Services and Applications">
+    <meta name="keywords" content="provenance,PROV,PROV-JSON,analytics,webservices,REST API">
+    <meta name="author" content="Trung Dong Huynh">
+
+    <title>Provenance Web Services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" integrity="sha384-BvkleCPDDuKeqW3+qr+UD98bFZ7fTX9IKmYRhQb7Yj6JXDrHblWWwbs3p8gsEyxx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/landing-page.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39466031-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-39466031-7');
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Open Provenance</a>
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-tools-tab" data-toggle="pill" href="#pills-tools" role="tab" aria-controls="pills-tools" aria-selected="true">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-prov-tab" data-toggle="pill" href="#pills-prov" role="tab" aria-controls="pills-prov" aria-selected="false">PROV Specs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-applications-tab" data-toggle="pill" href="#pills-applications" role="tab" aria-controls="pills-applications" aria-selected="false">Applications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-legacy-tab" data-toggle="pill" href="#pills-legacy" role="tab" aria-controls="pills-legacy" aria-selected="false">Legacy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Icons Grid  moved on first tab
+    <section class="features-icons bg-light text-center">
+    </section>
+-->
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-tools" role="tabpanel" aria-labelledby="pills-tools-tab">
+
+	    <div class="features-icons bg-light text-center">
+
+
+	      <div class="container">
+		<div class="row">
+		  <div class="col-lg-4">
+		    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+		      <div class="features-icons-icon d-flex">
+			<i class="icon-docs m-auto text-primary"></i>
+		      </div>
+		      <!--<a href="/store/"><h3>ProvStore</h3></a> -->
+		      <h3>ProvStore</h3>
+		      <p class="lead mb-0">A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API. <p/><b>ProvStore is coming back soon.</b></p>
+		    </div>
+		  </div>
+		  <div class="col-lg-4">
+		    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+		      <div class="features-icons-icon d-flex">
+			<i class="icon-check m-auto text-primary"></i>
+		      </div>
+		      <a href="/service/validator.html"><h3>Validator</h3></a>
+		      <p class="lead mb-0">A RESTful web service that validates PROV descriptions against the PROV Constraints specification.
+			Supports uploading PROV by URL, file upload or inline statements.</p>
+		    </div>
+		  </div>
+		  <div class="col-lg-4">
+		    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+		      <div class="features-icons-icon d-flex">
+			<i class="icon-layers m-auto text-primary"></i>
+		      </div>
+		      <a href="/service/translator.html"><h3>Translator</h3></a>
+		      <p class="lead mb-0">Translates between different representations of PROV. Supports PROV-N, PROV-JSONLD, PROV-JSON and PROV-XML.</p>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+
+	    </div>
+
+	    
+            <div class="row no-gutters">
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/prov-primer.jpg');"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Tools &amp; Libraries</h2>
+                <ul class="lead">
+                  <li><a href="https://github.com/lucmoreau/ProvToolbox">ProvToolbox</a> - a Java toolbox for handling PROV</li>
+                  <li><a href="http://pypi.python.org/pypi/prov">Prov Python</a> - a Python implementation of the PROV data model</li>
+                  <li><a href="https://bitbucket.org/provenance/provjs">ProvJS</a> - a JavaScript implementation of the PROV data model</li>
+                  <li><a href="/tools/extract/">ProvExtract</a> - for dealing with PROV embedded in web pages</li>
+                  <li><a href="/vis/">ProvVis</a> - experimental visualizations of PROV</li>
+                  <li><a href="/tools/editor/">PROV-N Editor</a> - a text editor with PROV-N syntax highlighted</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane no-gutters fade" id="pills-prov" role="tabpanel" aria-labelledby="pills-prov-tab">
+            <div class="row no-gutters">
+              <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/prov-concepts.svg'); background-size: contain;"></div>
+              <div class="col-lg-6 my-auto showcase-text">
+                <h2>PROV Specifications (Recommendations and Notes)</h2>
+                <ul class=lead>
+                  <li><a href="http://www.w3.org/TR/prov-overview/">Overview of PROV</a></li>
+                  <li><a href="http://www.w3.org/TR/prov-primer/">PROV Model Primer</a></li>
+                  <li><a href="http://www.w3.org/TR/prov-o/">PROV-O</a></li>
+                  <li><a href="http://www.w3.org/TR/prov-dm/">PROV-DM</a></li>
+                  <li><a href="http://www.w3.org/TR/prov-n/">PROV-N</a></li>
+                  <li><a href="http://www.w3.org/TR/prov-constraints/">PROV Constraints</a></li>
+                  <li><a href="http://www.w3.org/2011/prov/">Provenance Working Group at W3C</a></li>
+                </ul>
+                <h2>PROV Specifications (Member submissions)</h2>
+                <ul class=lead>
+                  <li><a href="https://www.w3.org/submissions/2013/SUBM-prov-json-20130424/">PROV-JSON</a></li>
+                  <li><a href="/prov-jsonld">PROV-JSONLD</a> (<a href="/prov-jsonld/2020-03-23/">previous version</a>)</li>
+                </ul>
+                <h2>Other Specifications related to PROV</h2>
+                <ul class=lead>
+                  <li><a href="/prov-template-2014-06-07/">PROV-TEMPLATE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane no-gutters fade" id="pills-applications" role="tabpanel" aria-labelledby="pills-applications-tab">
+            <div class="row no-gutters">
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/hac_er_shot.png');"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Applications</h2>
+                <ul class=lead>
+                  <li> <a href="http://jair.org/papers/paper5098.html">HAC-ER</a> - Disaster Response Demo (see <a href="https://vimeo.com/119525848">video</a>)</li>
+                  <li> <a href="http://www.orchid.ac.uk/collabmap/">CollabMap</a> - a platform for crowdsourcing the task of identifying building evacuation routes</li>
+                  <li> <a href="http://www.orchid.ac.uk/agentswitch/">AgentSwitch</a> - a personalized energy tariff-recommender system</li>
+                  <li> <a href="http://www.bristol.ac.uk/cmm/software/statjr/">StatJR</a> - a statistical modelling package and eBook system that uses PROV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane no-gutters fade" id="pills-legacy" role="tabpanel" aria-labelledby="pills-legacy-tab">
+            <div class="row no-gutters">
+              <div class="col-lg-6 text-white showcase-img" style="background-image: url('opm/opmlayers.jpg'); background-size: contain;"></div>
+              <div class="col-lg-6 showcase-text">
+                <h2>Provenance Legacy</h2>
+                <ul class=lead>
+                  <li><a href="opm">The OPM Provenance Model</a></li>
+                  <li><a href="provenance-challenge/WebHome.html">The Provenance Challenge Wiki</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact 
+    <section class="call-to-action text-center" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">Contact Us</h2>
+            <p class="display-4"><i class="icon-envelope m-auto"></i> <span class="text-primary">provenance</span> at <span class="text-primary">kcl.ac.uk</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="/ethics/provenance-web-services/">Terms of Use</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; University of Sussex, 2024. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

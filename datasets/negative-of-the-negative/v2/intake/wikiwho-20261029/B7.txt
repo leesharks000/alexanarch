@@ -1,0 +1,237 @@
+Research:Wikiwho Provenance Api - Meta-Wiki 
+
+ Jump to content 
+
+ Main menu 
+
+ Main menu
+
+ move to sidebar 
+ hide 
+
+ Navigation
+
+ Main page 
+ Wikimedia News 
+ Translations 
+ Recent changes 
+ Special pages 
+ Random page 
+ Help 
+ Babel 
+
+ Community
+
+ Wikimedia Forum 
+ Mailing lists 
+ Requests 
+ Babylon 
+ Reports 
+ Research 
+ Planet Wikimedia 
+
+ Beyond the Web
+
+ Meet Wikimedians 
+ Events 
+ Movement affiliates 
+
+ Search 
+
+ Search 
+
+ English 
+
+ Appearance 
+
+ Donate 
+
+ Create account 
+
+ Log in 
+
+ Personal tools 
+
+ Donate 
+
+ Create account 
+
+ Log in 
+
+ Contents
+
+ move to sidebar 
+ hide 
+
+ Beginning
+
+ 1 
+ Goal 
+
+ 2 
+ Current State 
+
+ 3 
+ Methods 
+
+ 4 
+ Use Cases 
+
+ 5 
+ References 
+
+ Toggle the table of contents 
+
+ Research : Wikiwho Provenance Api 
+
+ Add languages 
+
+ Add links 
+
+ Research 
+
+ Discussion 
+
+ English 
+
+ Read 
+
+ Edit 
+
+ View history 
+
+ Tools 
+
+ Tools
+
+ move to sidebar 
+ hide 
+
+ Actions
+
+ Read 
+
+ Edit 
+
+ View history 
+
+ General
+
+ What links here 
+ Related changes 
+ Permanent link 
+ Page information 
+ Get shortened URL 
+
+ Print/export
+
+ Create a book 
+ Download as PDF 
+ Printable version 
+
+ In other projects
+
+ Appearance
+
+ move to sidebar 
+ hide 
+
+ From Meta, a Wikimedia project coordination wiki
+
+ This page in a nutshell: This research aims to provide an API for retrieving provenance and change information of single tokens in any arbitrary Wikipedia article revision.
+
+ Contact 
+
+ Fabian Flöck 
+ GESIS – Leibniz Institute for the Social Sciences 
+
+ Research:Projects 
+
+ This page documents a research project in progress . 
+
+ Information may be incomplete and change as the project progresses.
+Please contact the project lead before formally citing or reusing results from this page. 
+
+ Goal
+ [ edit ] 
+
+ We aim to provide a performant API to request for every single token (words + functional characters) in any specified Wikipedia article the revision of origin for that token, and all changes ever applied to it - with high accuracy. In this way metadata like the original author and the presence (in revision and/or time) of each token in the past can be retrieved - this can also be used for extracting disputes about content.
+
+ We currently offer the service in English, German, Turkish and Basque, with more languages planned. 
+
+ Current State
+ [ edit ] 
+
+ A beta version of the API is live and working for en.wikipedia.org, although we are working on the performance. See API and documentation here: https://api.wikiwho.net/api/ 
+
+ Methods
+ [ edit ] 
+
+ The algorithm used to mine provenance for single tokens is described in our corresponding paper, including runtime and precision evaluations for English. [ 1 ] Further information can also be found at f-squared.org/wikiwho in Internet Archive .
+
+ Regarding the "precision" of the method: Former research [ 1 ] [ 2 ] has shown that the task of identifying the "correct" original author of a piece of text in a WP article is not trivial. Therefore we rely on an extraction method that has to be scientifically proven to perform at 95% percent precision [ 1 ] , higher than any other algorithm proposed for the task, as far as we can tell. We think that this is crucial if used in production.
+
+ Use Cases
+ [ edit ] 
+
+ A wiki page annotated by whoCOLOR. 
+ Apart from direct queries to the WikiWho api, there are some use cases already: 
+
+ Use case 1: whoCOLOR: this is a userscript that highlights selected text pieces in an article annotated with their provenance (author). Other features currently being build include a conflict view that highlights the most deleted and reintroduced text pieces, as well as a word history view that shows for each word/token when it was originally introduced and it's individual deletion/reintroduction history. See examples, description, screenshots and download link at this website: f-squared.org/whovisual . Described in a ICWSM workshop paper. [ 3 ] 
+
+ Use case 2: whoVIS: A prototype of an editor-editor interaction network visualization for individual articles, based on the word/tokens deleted and reintroduced by editors. Also at f-squared.org/whovisual . A WWW Conference demo paper describes the system. [ 4 ] 
+
+ Use case 3: WikiEdu Dashboard (see "Assessment tools" -> Article symbol)
+
+ References
+ [ edit ] 
+
+ ↑ a b c Flöck, Fabian, and Maribel Acosta. "WikiWho: Precise and efficient attribution of authorship of revisioned content." Proceedings of the 23rd international conference on World wide web. ACM, 2014. 
+
+ ↑ Luca de Alfaro , Michael Shavlovsky, Attributing authorship of revisioned content, Proceedings of the 22nd international conference on World Wide Web, May 13-17, 2013, Rio de Janeiro, Brazil 
+
+ ↑ Flöck, Fabian, et al. "Towards Better Visual Tools for Exploring Wikipedia Article Development–The Use Case of “Gamergate Controversy”." Ninth International AAAI Conference on Web and Social Media. 2015. 
+
+ ↑ Flöck, Fabian, and Maribel Acosta. "whovis: Visualizing editor interactions and dynamics in collaborative writing over time." Proceedings of the 24th International Conference on World Wide Web. ACM, 2015. 
+
+ Retrieved from " https://meta.wikimedia.org/w/index.php?title=Research:Wikiwho_Provenance_Api&oldid=26874951 "
+
+ Categories : Active research projects 
+ WSOR provisional Nutshells 
+ Quality 
+
+ This page was last edited on 5 June 2024, at 07:45.
+
+ Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply.
+See Terms of Use for details.
+
+ Privacy policy 
+
+ About Meta-Wiki 
+
+ Disclaimers 
+
+ Legal & safety contacts 
+
+ Code of Conduct 
+
+ Developers 
+
+ Statistics 
+
+ Cookie statement 
+
+ Mobile view 
+
+ Search 
+
+ Search 
+
+ Toggle the table of contents 
+
+ Research : Wikiwho Provenance Api 
+
+ Add languages 
+
+ Add topic

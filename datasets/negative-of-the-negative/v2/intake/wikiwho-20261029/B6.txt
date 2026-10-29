@@ -1,0 +1,446 @@
+WikiWho - MediaWiki 
+
+ Jump to content 
+
+ Main menu 
+
+ Main menu
+
+ move to sidebar 
+ hide 
+
+ Navigation
+
+ Main page 
+ Get MediaWiki 
+ Get extensions 
+ Tech blog 
+ Contribute 
+
+ Support
+
+ User help 
+ FAQ 
+ Technical manual 
+ Support desk 
+ Communication 
+
+ Development
+
+ Developer portal 
+ Code statistics 
+
+ mediawiki.org
+
+ Community portal 
+ Recent changes 
+ Translate content 
+ Special pages 
+ Random page 
+ Village pump 
+ Sandbox 
+
+ In other languages
+
+ Add links 
+
+ Search 
+
+ Search 
+
+ English 
+
+ Appearance 
+
+ Donate 
+
+ Create account 
+
+ Log in 
+
+ Personal tools 
+
+ Donate 
+
+ Create account 
+
+ Log in 
+
+ Contents
+
+ move to sidebar 
+ hide 
+
+ Beginning
+
+ 1 
+ Technical details 
+
+ 2 
+ APIs 
+
+ Toggle APIs subsection 
+
+ 2.1 
+ WhoColor 
+
+ 3 
+ Currently supported wikis 
+
+ 4 
+ Tools powered by WikiWho 
+
+ 5 
+ External links 
+
+ Toggle the table of contents 
+
+ WikiWho 
+
+ Issue tracker : #wikiwho 
+
+ Page 
+
+ Discussion 
+
+ English 
+
+ Read 
+
+ Edit 
+
+ View history 
+
+ Save 
+
+ Tools 
+
+ Tools
+
+ move to sidebar 
+ hide 
+
+ Actions
+
+ Read 
+
+ Edit 
+
+ View history 
+
+ Save 
+
+ General
+
+ What links here 
+ Related changes 
+ Upload file 
+ Permanent link 
+ Page information 
+ Cite this page 
+ Get shortened URL 
+
+ Print/export
+
+ Create a book 
+ Download as PDF 
+ Printable version 
+
+ In other projects
+
+ Wikimedia Commons 
+ Wikidata item 
+
+ Appearance
+
+ move to sidebar 
+ hide 
+
+ From mediawiki.org
+
+ Translate this page 
+ Languages:
+ Bahasa Indonesia 
+
+ English 
+
+ español 
+
+ magyar 
+
+ Tiếng Việt 
+
+ العربية 
+
+ 日本語 
+
+ Wikimedia Foundation projects 
+
+ WikiWho
+
+ A service that provides authorship attribution of Wikipedia articles
+
+ Group:
+
+ Moderator Tools • Wiki Education Foundation 
+
+ Team members:
+
+ DHardy-WMF • JSherman (WMF) • MusikAnimal (WMF) • Sage (Wiki Ed) • TheresNoTime-WMF 
+
+ Backlog:
+
+ Phabricator board 
+
+ WikiWho is a service providing authorship attribution using a content persistence algorithm.
+It was first developed by the Karlsruhe Institute of Technology and GESIS – Leibniz Institute for the Social Sciences .
+In August 2021, it was moved to Wikimedia Cloud Services infrastructure and is now maintained and under further development by Community Tech and the Wiki Education Foundation .
+
+ Technical details 
+ [ edit ] 
+
+ The core functionality of WikiWho involves parsing the complete set of all historical revisions of a wiki page in order to find out who wrote and/or removed and/or reinserted which exact text at token level at what revision .
+This means that for every token (such as a word), its individual addition, removal, and reintroduction history becomes available.
+
+ The original algorithm working behind the scenes is described in a WWW 2014 paper , along with an extensive evaluation resulting in 95% accuracy on fairly revision-rich articles.
+The current code version is available on GitHub .
+
+ In a nutshell, the approach divides each revision into hierarchically nested paragraph, sentence and token elements and tracks their appearance through the complete content graph it builds in this way over all revisions.
+It is implemented currently for wikitext, but can run on any kind of text in principle (although tokenization rules might have to be adapted).
+
+ Example of how the token metadata is generated 
+ In this way, it becomes possible to track – for each single token – all original additions, deletions, re-insertions and re-deletions and in which revision they took place.
+Which in turn allows to infer the editor, timestamp, etc. of those revisions.
+Also, individual tokens retain a unique ID, making it possible to distinguish two tokens with identical strings in different text positions.
+
+ APIs 
+ [ edit ] 
+
+ The WikiWho APIs and OpenAPI documentation may be found at https://wikiwho.wmcloud.org/ .
+
+ WhoColor 
+ [ edit ] 
+
+ This service can be thought of as an additional service on top of the core WikiWho data described above, available for the same languages. The same term descriptions as above apply.
+
+ Instead of annotated, tokenized wikitext, the WhoColor API delivers annotated HTML of a wiki article that can be read by a browser.
+
+ Annotations available per token (realized via ‎< span > ... ‎</ span > tag) include:
+
+ The original revision and author
+
+ The changes applied
+
+ The "present" authors and their percentages of words originally written in the current revision
+
+ The revision list with metadata
+
+ The WhoColor API is what powers the Who Wrote That? tool as well as features within the Wiki Education Dashboard and Programs and Events Dashboard .
+
+ Currently supported wikis 
+ [ edit ] 
+
+ Afrikaans Wikipedia ( af )
+
+ Albanian Wikipedia ( sq )
+
+ Alemannisch Wikipedia ( als )
+
+ Arabic Wikipedia ( ar )
+
+ Azerbaijani Wikipedia ( az )
+
+ Basque Wikipedia ( eu )
+
+ Belarusian Wikipedia ( be )
+
+ Bengali Wikipedia ( bn )
+
+ Bosnian Wikipedia ( bs )
+
+ Bulgarian Wikipedia ( bg )
+
+ Chechen Wikipedia ( ce )
+
+ Chinese Wikipedia ( zh )
+
+ Croatian Wikipedia ( hr )
+
+ Czech Wikipedia ( cs )
+
+ Danish Wikipedia ( da )
+
+ Dutch Wikipedia ( nl )
+
+ English Wikipedia ( en )
+
+ Esperanto Wikipedia ( eo )
+
+ Estonian Wikipedia ( et )
+
+ Finnish Wikipedia ( fi )
+
+ French Wikipedia ( fr )
+
+ Galician Wikipedia ( gl )
+
+ Georgian Wikipedia ( ka )
+
+ German Wikipedia ( de )
+
+ Greek Wikipedia ( el )
+
+ Hebrew Wikipedia ( he )
+
+ Hindi Wikipedia ( hi )
+
+ Hungarian Wikipedia ( hu )
+
+ Indonesian Wikipedia ( id )
+
+ Interlingua Wikipedia ( ia )
+
+ Italian Wikipedia ( it )
+
+ Japanese Wikipedia ( ja )
+
+ Kazakh Wikipedia ( kk )
+
+ Korean Wikipedia ( ko )
+
+ Kurdish Wikipedia ( ku )
+
+ Latvian Wikipedia ( lv )
+
+ Lithuanian Wikipedia ( lt )
+
+ Lower Sorbian Wikipedia ( dsb )
+
+ Macedonian Wikipedia ( mk )
+
+ Malay Wikipedia ( ms )
+
+ Malayalam Wikipedia ( ml )
+
+ Maltese Wikipedia ( mt )
+
+ Marathi Wikipedia ( mr )
+
+ Nepali Wikipedia ( ne )
+
+ Norwegian Bokmål Wikipedia ( no )
+
+ Persian Wikipedia ( fa )
+
+ Polish Wikipedia ( pl )
+
+ Portuguese Wikipedia ( pt )
+
+ Romanian Wikipedia ( ro )
+
+ Russian Wikipedia ( ru )
+
+ Serbian Wikipedia ( sr )
+
+ Serbo-Croatian Wikipedia ( sh )
+
+ Simple English Wikipedia ( simple )
+
+ Slovak Wikipedia ( sk )
+
+ Slovenian Wikipedia ( sl )
+
+ Spanish Wikipedia ( es )
+
+ Swahili Wikipedia ( sw )
+
+ Swedish Wikipedia ( sv )
+
+ Swedish Wikipedia ( sv )
+
+ Tagalog Wikipedia ( tl )
+
+ Tajik Wikipedia ( tg )
+
+ Tamil Wikipedia ( ta )
+
+ Telugu Wikipedia ( te )
+
+ Thai Wikipedia ( th )
+
+ Turkish Wikipedia ( tr )
+
+ Ukrainian Wikipedia ( uk )
+
+ Urdu Wikipedia ( ur )
+
+ Uzbek Wikipedia ( uz )
+
+ Venetian Wikipedia ( vec )
+
+ Vietnamese Wikipedia ( vi )
+
+ Welsh Wikipedia ( cy )
+
+ Tools powered by WikiWho 
+ [ edit ] 
+
+ Who Wrote That? 
+
+ XTools Authorship 
+
+ XTools Blame 
+
+ Programs & Events Dashboard 
+
+ Wiki Education Dashboard 
+
+ pywikibot.Page.authorship() method 
+
+ External links 
+ [ edit ] 
+
+ Source code on GitHub 
+
+ API at Wikimedia 
+
+ Homepage at GESIS 
+
+ Retrieved from " https://www.mediawiki.org/w/index.php?title=WikiWho&oldid=8508276 "
+
+ Categories : WMF Projects missing start date 
+ Community Tech 
+ WMF Projects 
+
+ This page was last edited on 15 July 2026, at 22:25.
+
+ Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply. Text in the Help: namespace is available under the Creative Commons CC0 License .
+By using this site, you agree to the Terms of Use and Privacy Policy .
+
+ Privacy policy 
+
+ About mediawiki.org 
+
+ Disclaimers 
+
+ Legal & safety contacts 
+
+ Code of Conduct 
+
+ Developers 
+
+ Statistics 
+
+ Cookie statement 
+
+ Mobile view 
+
+ Search 
+
+ Search 
+
+ Toggle the table of contents 
+
+ WikiWho 
+
+ Add topic

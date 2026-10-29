@@ -1,0 +1,922 @@
+{
+ "row": "provstore",
+ "address": "ProvStore",
+ "addresses": [
+  "ProvStore"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia responses' summary, or the card's title and snippet for the four unreachable cards; 27/27 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B6: the OpenProvenance landing page; PROV Exam's bookstore; the paper at ePrints Soton and at the ACM Digital Library; PROV's online store; a Google place listing); 'own_page', the entity's own pages (B7, the maintainer's page the census cites; B9, the maintainer's software page, linked from B7 for the entity's history and not cited by the census); the landing page (B1) is both a card and the own page the census cites and is carried once, as a card; 'wikipedia', the title ProvStore, without an article (B8). No census source is third-party (both carry basis 'operator'), so no 'census_third_party' source is admitted. Unreachable: B3 (ePrints Soton, HTTP 403 bot wall), B4 (ACM DL, HTTP 403 challenge), B5 (provtokyo.com, HTTP 403 captcha), B6 (Google place listing, an interstitial with no listing): each card's title and snippet stand as its only text. Homonym cards (B2, B5, B6) are in the field as cards and are ledgered as homonyms, never as senses of the name.",
+ "lineage_note": "Lineages: what it is (B1, B7); priority (B3, B4, B9); function (B3, B4, B9); the paper (B9; the title on B3, B4); the standard (B1, B7, B9); the OPM (B1); operator and maintainer (B1, B7, B9); the operator's suite (B1); lifecycle, retired (B7, B9); the public documents (B7); the landing page's 'coming back soon' (B1), held beside the retirement under P_coh, both composed; homonyms PROV Exam (B2) and PROV Tokyo (B5, B6); the encyclopedia (B8). The census's evidence quotes restate B1 and B7: one lineage with the own page, which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/provstore-20261029/ (Bn.html raw and Bn.txt text; B1.txt and B7.txt are the census's saved texts; B2.txt the stripped HTML then the page-data JSON's strings with their keys; B3–B6 the three failed responses each as Bn.tryk.html; B8 .wiki, .html, -search.html raw responses with B8.txt a summary; fetch-log.json the fetch log); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the own page the census cites (provstore--openprovenance), carried once, as a card",
+   "card": "Open Provenance — Provenance Web Services",
+   "url": "https://openprovenance.org/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B1.html",
+     "sha256": "c86df4e417dc47c87678e8bc1ea4edc598017bd6d2991ba5f050f845c411ae4f"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B1.txt",
+     "sha256": "cba637e2d03f592bc223c9e7f8dab475b67fd49abb54a929b48543937cb0cfa9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:26Z",
+    "http": 200,
+    "url": "https://openprovenance.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B1.html",
+    "raw_sha256": "c86df4e417dc47c87678e8bc1ea4edc598017bd6d2991ba5f050f845c411ae4f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B1.txt"
+    ],
+    "census_copy": {
+     "src": "provstore--openprovenance",
+     "read": "2026-10-29",
+     "sha256": "c86df4e417dc47c87678e8bc1ea4edc598017bd6d2991ba5f050f845c411ae4f",
+     "http": "200",
+     "note": "the refetch is byte-identical to the census's saved copy (sha256 c86df4e4…); B1.txt is the census's saved text, copied (addendum §3)"
+    }
+   },
+   "card_title": "Provenance Web Services",
+   "card_snippet": "A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API. ProvStore is coming back soon. Valid...",
+   "card_note": null,
+   "names_operator": "yes ('Open Provenance'; 'provenance at kcl.ac.uk'; '© University of Sussex, 2024'); the maintainer is not named",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the OpenProvenance landing page (title 'Provenance Web Services'); the card's title and snippet are its title and its ProvStore entry. The registry's cite_list marks the card rel 'third_party'; it is the operator's own page (reported, not fixed)."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 (a homonym: PROV Exam, Sandy, Utah)",
+   "card": "PROV Exam — Study Materials - Prov",
+   "url": "https://provexam.com/bookstore",
+   "kind": "Overview card (homonym's own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B2.html",
+     "sha256": "c15f04d64c25c6a98f09886e9e0a428f36cfa9aa471e7159974dad676710a025"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B2.txt",
+     "sha256": "efcc09edeb0807bebd3be64c4dcea1b1ff5cf36acc146de066ac5ff62b779f18"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:52Z",
+    "http": 200,
+    "url": "https://provexam.com/bookstore",
+    "raw": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B2.html",
+    "raw_sha256": "c15f04d64c25c6a98f09886e9e0a428f36cfa9aa471e7159974dad676710a025",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B2.txt"
+    ]
+   },
+   "card_title": "Study Materials - Prov",
+   "card_snippet": "Official prep books and practice exams built around the same content outlines used on exam day. Pick your exam below and we'll show you exactly what's available...",
+   "card_note": "homonym",
+   "names_operator": "n/a (a homonym; it names its own operator, 'Prov Exam')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from T itself (the PROV Exam Bookstore map panel's website, 'provexam.com/bookstore') and confirmed by the page's own title for this route ('Study Materials — Prov', bookstore.meta.page_title) and the card's snippet (bookstore.hero.lead, rendered with its placeholders filled: ':books' = 'books', ':exams' = 'practice exams'). The page is an Inertia application: the served HTML carries a title and the page data as JSON; B2.txt gives the stripped HTML and then the JSON's string values with their keys, in source order. https://provexam.com/product-category/books/ serves the same component (probe, not saved)."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (the paper)",
+   "card": "ePrints Soton — ProvStore: A Public Provenance Repository - ePrints Soton",
+   "url": "https://eprints.soton.ac.uk/365509",
+   "kind": "Overview card (unreachable)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try1.html",
+     "sha256": "7b9e3135c41cd071b023e3ea8ea0b3ca66531407221222fea612f7c2f49e08e4"
+    },
+    "B3.try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try2.html",
+     "sha256": "522cd84ac64c9fb3ae6392d5893d7fdf7602e2588dd336e22e57129cbbbf1625"
+    },
+    "B3.try3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try3.html",
+     "sha256": "7c749833b4a5854c38412a7e40e538dcf79d09f5c4f978d7dd77d6943e46a2c9"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:09:53Z",
+      "url": "https://eprints.soton.ac.uk/365509",
+      "http": 403,
+      "error": null,
+      "bytes": 2348,
+      "sha256": "7b9e3135c41cd071b023e3ea8ea0b3ca66531407221222fea612f7c2f49e08e4",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:09:56Z",
+      "url": "https://eprints.soton.ac.uk/365509/",
+      "http": 403,
+      "error": null,
+      "bytes": 2348,
+      "sha256": "522cd84ac64c9fb3ae6392d5893d7fdf7602e2588dd336e22e57129cbbbf1625",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try2.html"
+     },
+     {
+      "at": "2026-10-29T17:10:00Z",
+      "url": "https://eprints.soton.ac.uk/365509/1/IPAW2014_20-_20ProvStore_20Poster_20_28smaller_29.pdf",
+      "http": 403,
+      "error": null,
+      "bytes": 2348,
+      "sha256": "7c749833b4a5854c38412a7e40e538dcf79d09f5c4f978d7dd77d6943e46a2c9",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B3.try3.html"
+     }
+    ],
+    "note": "ePrints Soton record 365509 (found by WebSearch on the card's title and site; the record's poster PDF is at /365509/1/…). Three fetches, 2026-10-29: the record, the record with a trailing slash, the PDF; each HTTP 403 from the host's bot wall ('Access Denied … Protected by BotStopper'). The responses are saved as B3.try1–3.html. The card's title and snippet stand as its only text."
+   },
+   "card_title": "ProvStore: A Public Provenance Repository - ePrints Soton",
+   "card_snippet": "ProvStore is the first online public provenance repository supporting the new PROV standards by W3C. It allows users and ap- plications to store and (optionally...",
+   "card_note": "unreachable: title and snippet only",
+   "names_operator": "no (title and snippet name ProvStore and W3C, not its makers)",
+   "names_archive": "no (title and snippet)",
+   "note": "the paper by its title, 'ProvStore: A Public Provenance Repository'"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (the paper)",
+   "card": "ACM Digital Library — ProvStore: A Public Provenance Repository - ACM Digital Library",
+   "url": "https://dl.acm.org/doi/10.1007/978-3-319-16462-5_32",
+   "kind": "Overview card (unreachable)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try1.html",
+     "sha256": "799360effbc00234b8d0701cbb8343fdfcb7028e8c7532c8ee29b7fe5e8620b3"
+    },
+    "B4.try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try2.html",
+     "sha256": "b0672c71de1318783ed85799acce60c967cfe7d4f24cdf028abd02a9b1c7090e"
+    },
+    "B4.try3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try3.html",
+     "sha256": "90cad8ad0997925d0762b20411765568e1564c275ae4e707729f6a5b2212f99c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:03Z",
+      "url": "https://dl.acm.org/doi/10.1007/978-3-319-16462-5_32",
+      "http": 403,
+      "error": null,
+      "bytes": 5486,
+      "sha256": "799360effbc00234b8d0701cbb8343fdfcb7028e8c7532c8ee29b7fe5e8620b3",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:10:08Z",
+      "url": "https://dl.acm.org/doi/10.1007/978-3-319-16462-5_32",
+      "http": 403,
+      "error": null,
+      "bytes": 5486,
+      "sha256": "b0672c71de1318783ed85799acce60c967cfe7d4f24cdf028abd02a9b1c7090e",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try2.html"
+     },
+     {
+      "at": "2026-10-29T17:10:11Z",
+      "url": "https://dl.acm.org/doi/abs/10.1007/978-3-319-16462-5_32",
+      "http": 403,
+      "error": null,
+      "bytes": 5498,
+      "sha256": "90cad8ad0997925d0762b20411765568e1564c275ae4e707729f6a5b2212f99c",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B4.try3.html"
+     }
+    ],
+    "note": "the ACM Digital Library page of the paper, doi:10.1007/978-3-319-16462-5_32 (the DOI found by title through the Crossref API; WebSearch did not return the ACM page). Three fetches, 2026-10-29 (doi path twice, abs path once): HTTP 403, a Cloudflare challenge ('Just a moment...'). Saved as B4.try1–3.html. The card's title and snippet stand as its only text."
+   },
+   "card_title": "ProvStore: A Public Provenance Repository - ACM Digital Library",
+   "card_snippet": "Mar 9, 2026 — ProvStore is the first online public provenance repository supporting the new PROV standards by W3C. It allows users and applications to store and optionally pu...",
+   "card_note": "unreachable: title and snippet only",
+   "names_operator": "no (title and snippet name ProvStore and W3C, not its makers)",
+   "names_archive": "no (title and snippet)",
+   "note": "the paper by its title, 'ProvStore: A Public Provenance Repository'"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (a homonym: PROV Tokyo)",
+   "card": "PROV ONLINE STORE — PROV ONLINE STORE",
+   "url": "https://provtokyo.com/",
+   "kind": "Overview card (unreachable) (homonym)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try1.html",
+     "sha256": "2992f72e34f9297446be677c1a9d7ae229b2a28b370912f6cc94ac717edf5b7e"
+    },
+    "B5.try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try2.html",
+     "sha256": "b70f24162bba7c6a13f7ce840d2cbd201d831a99488ae2d371a152c599b7eac8"
+    },
+    "B5.try3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try3.html",
+     "sha256": "fa72f4082c63daeca28f1b111afe29d86985840bb3916e003f8099d4e4060501"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:13Z",
+      "url": "https://provtokyo.com/",
+      "http": 403,
+      "error": null,
+      "bytes": 4585,
+      "sha256": "2992f72e34f9297446be677c1a9d7ae229b2a28b370912f6cc94ac717edf5b7e",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:10:16Z",
+      "url": "https://provtokyo.com/",
+      "http": 403,
+      "error": null,
+      "bytes": 4564,
+      "sha256": "b70f24162bba7c6a13f7ce840d2cbd201d831a99488ae2d371a152c599b7eac8",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try2.html"
+     },
+     {
+      "at": "2026-10-29T17:10:19Z",
+      "url": "https://www.provtokyo.com/",
+      "http": 403,
+      "error": null,
+      "bytes": 4585,
+      "sha256": "fa72f4082c63daeca28f1b111afe29d86985840bb3916e003f8099d4e4060501",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B5.try3.html"
+     }
+    ],
+    "note": "PROV Tokyo's online store (the domain T gives for the PROV Tokyo map panel, 'provtokyo.com'). Three fetches, 2026-10-29 (provtokyo.com twice, www.provtokyo.com): HTTP 403, the store platform's captcha page ('Captcha Challenge - STORES'). Saved as B5.try1–3.html. The card's title and snippet stand as its only text."
+   },
+   "card_title": "PROV ONLINE STORE",
+   "card_snippet": "Prov Online Store Catalog: Prov x Plako: Fish in the City Tee (9,900 JPY). 51CK: Cap Camo (11,000 JPY), Tees including Sick, @, Luv, Crown, LNCL, and Battle var...",
+   "card_note": "unreachable: title and snippet only",
+   "names_operator": "n/a (a homonym)",
+   "names_archive": "no (title and snippet)",
+   "note": "a homonym of the four letters PROV"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (a homonym: PROV Tokyo)",
+   "card": "Google — PROV",
+   "url": "https://www.google.com/search?kgmid=%2Fg%2F11bx5q19ph",
+   "kind": "Overview card (unreachable) (homonym)",
+   "surfaced_by_T": [
+    {
+     "slug": "provstore-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try1.html",
+     "sha256": "8ceef391ff431dacb63dff149d10dda22d5b8f8d5bec795dfa67ae678618eddb"
+    },
+    "B6.try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try2.html",
+     "sha256": "dafa40c030f4eba4749a84f391b1fccde2c936f3f4233524975419e15f28c3c2"
+    },
+    "B6.try3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try3.html",
+     "sha256": "0a2ce9a495266ba60c91e35b50c12678ee5769c4ef9542b721dac5ecde8a54c6"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:23Z",
+      "url": "https://www.google.com/search?kgmid=%2Fg%2F11bx5q19ph",
+      "http": 200,
+      "error": null,
+      "bytes": 92715,
+      "sha256": "8ceef391ff431dacb63dff149d10dda22d5b8f8d5bec795dfa67ae678618eddb",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:10:25Z",
+      "url": "https://www.google.com/search?kgmid=%2Fg%2F11bx5q19ph&q=PROV+Tokyo",
+      "http": 200,
+      "error": null,
+      "bytes": 92393,
+      "sha256": "dafa40c030f4eba4749a84f391b1fccde2c936f3f4233524975419e15f28c3c2",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try2.html"
+     },
+     {
+      "at": "2026-10-29T17:10:28Z",
+      "url": "https://www.google.com/search?kgmid=%2Fg%2F11bx5q19ph&q=PROV+Tokyo&hl=en",
+      "http": 200,
+      "error": null,
+      "bytes": 92522,
+      "sha256": "0a2ce9a495266ba60c91e35b50c12678ee5769c4ef9542b721dac5ecde8a54c6",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B6.try3.html"
+     }
+    ],
+    "note": "a Google place listing for PROV (Tokyo, Shibuya, Jingumae); its URL is the knowledge-graph id T links for PROV Tokyo (kgmid /g/11bx5q19ph). Three fetches, 2026-10-29: HTTP 200, each an interstitial with no listing ('Please click here if you are not redirected within a few seconds.'); saved as B6.try1–3.html. Recorded as unreachable: no page text. The card's title and snippet stand as its only text."
+   },
+   "card_title": "PROV",
+   "card_snippet": "Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 4 Chome−28−18 カトルバン原宿 2F · Fashionable retail featuring select import brand skate, surf & street style apparel & acce...",
+   "card_note": "unreachable: title and snippet only",
+   "names_operator": "n/a (a homonym)",
+   "names_archive": "no (title and snippet)",
+   "note": "a homonym of the four letters PROV"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "own page the census cites (provstore--maintainer): the maintainer's 'Getting started with provenance'",
+   "card": "Dong Huynh — Getting started with provenance",
+   "url": "https://trungdong.github.io/getting-started-with-provenance.html",
+   "kind": "own page (the maintainer's)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B7.html",
+     "sha256": "4ce13be88b0e487025200d9ce164ea6ded9b57b082c94311184457c11a6b9c9f"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B7.txt",
+     "sha256": "130c430c93f73645f6ab1e557d2b032dacc4a75d7776e492734f4a911b51d241"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "provstore--maintainer",
+    "url": "https://trungdong.github.io/getting-started-with-provenance.html",
+    "read": "2026-10-29",
+    "http": 200,
+    "sha256": "4ce13be88b0e487025200d9ce164ea6ded9b57b082c94311184457c11a6b9c9f",
+    "raw": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B7.html",
+    "raw_sha256": "4ce13be88b0e487025200d9ce164ea6ded9b57b082c94311184457c11a6b9c9f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B7.txt"
+    ],
+    "note": "copied from the census's saved copy (sources/provstore--maintainer.html.gz, gunzipped; .txt as saved), not refetched; the gunzipped copy's sha256 equals the census's record"
+   },
+   "names_operator": "yes ('Dong Huynh'); OpenProvenance is not named",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "published 8 December 2016, 'ONGOING -- STILL BEING UPDATED'; the update of 12 September 2026 retires ProvStore and points to 'the software page for its history' (B9)"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "Wikipedia: title ProvStore (no article)",
+   "card": "Wikipedia — ProvStore (no article)",
+   "url": "https://en.wikipedia.org/wiki/ProvStore",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.wiki",
+     "sha256": "8807c9484dc95ec622d18eb5c9d6bf2b33850139f9ac46324621b19b454d2c32"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.html",
+     "sha256": "8002f520b11da7f276987d510fa07cbb32cd5d9347e05dd85d3a1bd960a1a553"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8-search.html",
+     "sha256": "07b25853b5c3347237209e76366993f3243cfa25ca012012da11c485fb1f44e1"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.txt",
+     "sha256": "9fd8c8faf364c3ced2261cd4cb4498ca26699121478712516a1b58da2f3950eb"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-29T17:10:31Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=ProvStore&action=raw&redirect=no",
+      "http": 404,
+      "error": null,
+      "bytes": 1930,
+      "sha256": "8807c9484dc95ec622d18eb5c9d6bf2b33850139f9ac46324621b19b454d2c32",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8-raw.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:10:33Z",
+      "url": "https://en.wikipedia.org/wiki/ProvStore",
+      "http": 404,
+      "error": null,
+      "bytes": 50123,
+      "sha256": "8002f520b11da7f276987d510fa07cbb32cd5d9347e05dd85d3a1bd960a1a553",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8-page.try1.html"
+     },
+     {
+      "at": "2026-10-29T17:10:36Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22ProvStore%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "error": null,
+      "bytes": 78066,
+      "sha256": "07b25853b5c3347237209e76366993f3243cfa25ca012012da11c485fb1f44e1",
+      "file": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8-search.try1.html"
+     }
+    ],
+    "raw": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.wiki",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.txt"
+    ],
+    "note": "raw wikitext (action=raw, redirect=no) HTTP 404; the rendered page HTTP 404 'Wikipedia does not have an article with this exact name'; no redirect; Special:Search in article space for \"ProvStore\": 'There were no results matching the query.' Files renamed from the fetch log's try names (B8-raw.try1.html → B8.wiki, B8-page.try1.html → B8.html, B8-search.try1.html → B8-search.html). B8.txt is a summary of the three responses with their stripped text (the raw 404's echo of the client IP omitted from the summary)."
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article for the entity; none of its names occurs in article text"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "own page linked from the census-cited B7 ('See the software page for its history'), not cited by the census: the maintainer's software page",
+   "card": "Dong Huynh — Software",
+   "url": "https://trungdong.github.io/software.html",
+   "kind": "own page (the maintainer's; linked, not cited)",
+   "surfaced_by_T": "no (not surfaced by T and not cited by the census; admitted as the entity's own page by the operator's ruling 'their own pages, etc.', because the cited page sends its reader here for the entity's history)",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B9.html",
+     "sha256": "2f01617b8f05f98af91078be74a5d5b187c2149026fffbf0d78b61d8a8191af4"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B9.txt",
+     "sha256": "73ecb003b8a053656c6311a56b805890bdc8a74d6026d2482be3046f2fb0e73c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:11:21Z",
+    "http": 200,
+    "url": "https://trungdong.github.io/software.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B9.html",
+    "raw_sha256": "2f01617b8f05f98af91078be74a5d5b187c2149026fffbf0d78b61d8a8191af4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B9.txt"
+    ]
+   },
+   "names_operator": "yes ('Dong Huynh'; 'University of Southampton', 'King's College London')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the lifecycle's own account: 'ProvStore (2013 to 2024)'; the census does not cite it (report: the census's lifecycle could cite it; not fixed)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, ProvStore entry",
+   "quote": "A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API.",
+   "claim": "ProvStore defined on its operator's page: a provenance repository for storing, browsing and managing provenance documents via a Web interface or a REST API",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a public repository for PROV documents",
+   "date": "2026-10-29 (page undated; as fetched; © 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, ProvStore entry",
+   "quote": "ProvStore is coming back soon.",
+   "claim": "the operator's landing page states that ProvStore is coming back soon",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "lifecycle: the landing page's 'coming back soon'",
+   "date": "2026-10-29 (page undated; as fetched; © 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, Validator and Translator entries",
+   "quote": "Validator … A RESTful web service that validates PROV descriptions against the PROV Constraints specification. … Translator … Translates between different representations of PROV. Supports PROV-N, PROV-JSONLD, PROV-JSON and PROV-XML.",
+   "claim": "beside ProvStore the operator offers a PROV validator (against PROV Constraints) and a translator between PROV representations",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator's PROV suite: validator, translator, libraries",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, Tools & Libraries",
+   "quote": "ProvToolbox - a Java toolbox for handling PROV … Prov Python - a Python implementation of the PROV data model … ProvJS - a JavaScript implementation of the PROV data model",
+   "claim": "the operator's suite includes PROV libraries in Java, Python and JavaScript",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator's PROV suite: validator, translator, libraries",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, PROV Specifications",
+   "quote": "PROV Specifications (Recommendations and Notes) … PROV-DM … PROV-N … PROV Constraints … Provenance Working Group at W3C",
+   "claim": "the page lists the W3C PROV specifications and the W3C Provenance Working Group",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard: W3C PROV and its specifications",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, Provenance Legacy",
+   "quote": "Provenance Legacy … The OPM Provenance Model … The Provenance Challenge Wiki",
+   "claim": "the Open Provenance Model (OPM) and the Provenance Challenge are listed as the legacy of PROV",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the OPM, the legacy model before PROV",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "landing page, Contact and footer",
+   "quote": "Contact Us … provenance at kcl.ac.uk … © University of Sussex, 2024. All Rights Reserved.",
+   "claim": "the page's contact is at kcl.ac.uk and its copyright the University of Sussex, 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and maintainer: OpenProvenance, Dong Huynh, Southampton, King's College London, Sussex",
+   "date": "2024 (the page's copyright year); as fetched 2026-10-29",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cba637e2d03f592b…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "bookstore.meta.page_title; bookstore.hero.lead (page data)",
+   "quote": "Study Materials — Prov … Official prep :books and :exams built around the same content outlines used on exam day.",
+   "claim": "PROV Exam's bookstore sells prep books and practice exams for licensing exams (a homonym)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: PROV Exam (licensing exams, Sandy, Utah)",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 efcc09edeb0807be…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": ".name; footer.contacts.address_value; about.mission.body (page data)",
+   "quote": ".name: Prov Exam … Sandy, UT 84070 … We don't just administer exams — we build the infrastructure that helps professionals earn the licenses that shape their careers and their communities.",
+   "claim": "Prov Exam, of Sandy, Utah, administers licensing exams; no relation to provenance is stated",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: PROV Exam (licensing exams, Sandy, Utah)",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 efcc09edeb0807be…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title and snippet (ePrints Soton unreachable: HTTP 403)",
+   "quote": "ProvStore: A Public Provenance Repository - ePrints Soton … ProvStore is the first online public provenance repository supporting the new PROV standards by W3C.",
+   "claim": "the paper, held by ePrints Soton (Southampton), calls ProvStore the first online public provenance repository supporting the new W3C PROV standards",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "priority: the first public repository for the PROV standards",
+   "date": "undated on the card (the paper; page unreachable)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "It allows users and ap- plications to store and (optionally",
+   "claim": "the paper: ProvStore lets users and applications store (and optionally …) provenance; the snippet breaks off",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "function: store, browse, transform, visualise, share, via the Web and a REST API",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F12": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet (ACM DL unreachable: HTTP 403)",
+   "quote": "ProvStore: A Public Provenance Repository - ACM Digital Library … Mar 9, 2026 — ProvStore is the first online public provenance repository supporting the new PROV standards by W3C.",
+   "claim": "the ACM Digital Library's page of the paper, dated on the card 9 March 2026, gives the same priority claim",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "priority: the first public repository for the PROV standards",
+   "date": "2026-03-09 (the card's date for the ACM page)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "It allows users and applications to store and optionally pu",
+   "claim": "the paper (ACM page): users and applications store and optionally pu[blish] provenance; the snippet breaks off",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "function: store, browse, transform, visualise, share, via the Web and a REST API",
+   "date": "2026-03-09 (card)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F14": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title and snippet (provtokyo.com unreachable: HTTP 403)",
+   "quote": "PROV ONLINE STORE … Prov Online Store Catalog: Prov x Plako: Fish in the City Tee (9,900 JPY). 51CK: Cap Camo (11,000 JPY)",
+   "claim": "PROV's online store sells T-shirts and caps priced in yen (a homonym)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: PROV Tokyo (a Shibuya skate and streetwear shop)",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F15": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title and snippet (Google place listing unreachable: interstitial)",
+   "quote": "PROV … Japan, 〒150-0001 Tokyo, Shibuya, Jingumae, 4 Chome−28−18 カトルバン原宿 2F · Fashionable retail featuring select import brand skate, surf & street style apparel",
+   "claim": "a place listing: PROV, a skate, surf and streetwear retailer in Jingumae, Shibuya, Tokyo (a homonym)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: PROV Tokyo (a Shibuya skate and streetwear shop)",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (registry cite_list, unreachable card)"
+  },
+  "F16": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "post header",
+   "quote": "Getting started with provenance // Dong Huynh … Published … Thu 08 December 2016 … ONGOING -- STILL BEING UPDATED",
+   "claim": "the maintainer's post, published 8 December 2016 and still being updated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and maintainer: OpenProvenance, Dong Huynh, Southampton, King's College London, Sussex",
+   "date": "2016-12-08",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 130c430c93f73645…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "update note",
+   "quote": "Updated 12-Sep-2026 : ProvStore was retired in December 2024. Its entries below are kept as plain text. See the software page for its history.",
+   "claim": "the maintainer's update of 12 September 2026: ProvStore was retired in December 2024; its entries are kept as plain text",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "lifecycle: 2013 to 2024, retired December 2024",
+   "date": "2026-09-12",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 130c430c93f73645…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Software & Web Applications",
+   "quote": "ProvStore: a free public repository for provenance documents (REST API available). Retired in December 2024.",
+   "claim": "the maintainer's entry: a free public repository for provenance documents with a REST API, retired in December 2024",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a public repository for PROV documents",
+   "date": "2016-12-08 (published; the retirement clause of the 2026-09-12 update)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 130c430c93f73645…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Provenance Data",
+   "quote": "Public documents on ProvStore (retired in December 2024)",
+   "claim": "the public documents ProvStore held are listed as provenance data, marked retired",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the public documents",
+   "date": "2026-09-12 (update)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 130c430c93f73645…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Provenance concepts",
+   "quote": "PROV is the current standard for provenance (by the World Wide Web Consortium).",
+   "claim": "PROV, the W3C's, is the current standard for provenance",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard: W3C PROV and its specifications",
+   "date": "2016-12-08",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 130c430c93f73645…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Web Applications, ProvStore entry, heading",
+   "quote": "Below are the ones that I led. … ProvStore (2013 to 2024)",
+   "claim": "Dong Huynh led ProvStore, which ran from 2013 to 2024",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator and maintainer: OpenProvenance, Dong Huynh, Southampton, King's College London, Sussex",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "ProvStore entry s1",
+   "quote": "ProvStore was the first online public provenance repository supporting W3C's PROV standards.",
+   "claim": "the maintainer, in the past tense: the first online public provenance repository supporting W3C's PROV standards",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "priority: the first public repository for the PROV standards",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "ProvStore entry s2–3",
+   "quote": "It allowed users and applications to store and publish the provenance of their data on the Web. Provenance documents could be transformed, visualised and shared in various file formats, with all the functionality also available via a RESTful API.",
+   "claim": "in the past tense: users and applications stored and published provenance; documents could be transformed, visualised and shared, all via a RESTful API too",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "function: store, browse, transform, visualise, share, via the Web and a REST API",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "ProvStore entry s4",
+   "quote": "It ran at the University of Southampton from 2013 and at King's College London from 2018, and was retired in December 2024.",
+   "claim": "ProvStore ran at Southampton from 2013 and at King's College London from 2018, and was retired in December 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "lifecycle: 2013 to 2024, retired December 2024",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "ProvStore entry, paper",
+   "quote": "Paper: ProvStore: A Public Provenance Repository",
+   "claim": "the maintainer cites the paper by its title",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: ProvStore: A Public Provenance Repository",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "PROV Python package",
+   "quote": "I started it in 2012, during my participation in the W3C Provenance Working Group , to record provenance in Python applications",
+   "claim": "the maintainer took part in the W3C Provenance Working Group and began the PROV Python package in 2012",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the standard: W3C PROV and its specifications",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 73ecb003b8a05365…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title ProvStore",
+   "quote": "raw wikitext https://en.wikipedia.org/w/index.php?title=ProvStore&action=raw&redirect=no : HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article 'ProvStore' and no article text containing the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9fd8c8faf364c3ce…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Open Provenance — Provenance Web Services",
+  "B2": "PROV Exam — Study Materials - Prov",
+  "B3": "ePrints Soton — ProvStore: A Public Provenance Repository - ePrints Soton",
+  "B4": "ACM Digital Library — ProvStore: A Public Provenance Repository - ACM Digital Library",
+  "B5": "PROV ONLINE STORE — PROV ONLINE STORE",
+  "B6": "Google — PROV",
+  "B7": "Dong Huynh — Getting started with provenance",
+  "B8": "Wikipedia — ProvStore (no article)",
+  "B9": "Dong Huynh — Software"
+ }
+}

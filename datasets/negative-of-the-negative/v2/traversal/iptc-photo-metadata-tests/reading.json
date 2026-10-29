@@ -1,0 +1,273 @@
+{
+ "row": "iptc-photo-metadata-tests",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the tests named (the IPTC's photo metadata tests, research, test results, interoperability tests, Metawatch); R, a relation the archive states between the tests, or the standard they test, and an archive object; O, an archive category applied to the tests or to a class the field sources for them: (1) the removal of embedded metadata from image files in sharing and transit (B13, B12, B4, B9), (2) embedded image metadata as provenance carrier (B12, B2; the census's provenance_carrier). A claim on the IPTC Photo Metadata Standard is read at O-class 2 and composed as a claim on the carrier, never on the tests. A bare mention, a bibliography line, a checklist, a tier table or a field map of the archive's own artifacts is not a claim on either class.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01): the standard's AI metadata placed at Layer 1 (artifact) as 'Disclosure, not lineage' (§4 matrix); artifact provenance at the moment of creation and the dimensions independent (§1.4); provenance read 'as metadata', separable from its object, corrected (§3.4). O-class 2 (the carrier). The matrix row was not returned by the string pass (the table is one paragraph and the splitter cuts it at 900 characters before the row; the string pass returned only the reference-list line D0001); found by reading the deposit at its IPTC passages.",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03"
+   ],
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, 2026-05-12): its matrix carries the same row ('IPTC AI metadata | Machine-readable AI-generation tags | Layer 1 metadata | Disclosure, not lineage'); every claim falls in #725's lineages and adds nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "D0002"
+   ]
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "O",
+    "R"
+   ],
+   "reason": "EA-SPXI-ANALOG-01: embedded IPTC photo metadata as channel C4, 'ESTABLISHED as extracted; composition role unknown', 'scaffold the pipeline provably reads' (§1); the category scaffold applied to IPTC/XMP/EXIF (§2); in-pixel metadata that survives 'metadata stripping' and 'sidecar loss' (§F.3, class 1; not returned by the string pass, found by reading); triple metadata redundancy (§F.6); Digital Source Type as the nonsynthetic claim inside the file (§E.1); and the relation of the archive's substrate checksum to 'C2PA, FADGI, and IPTC provenance vocabularies' (§I.2, R).",
+   "claims": [
+    "O1409-01",
+    "O1409-02",
+    "O1409-03",
+    "O1409-04",
+    "O1409-05",
+    "O1409-06",
+    "R1409-07"
+   ],
+   "cands": [
+    "D0003",
+    "D0005",
+    "D0012",
+    "D0014",
+    "D0016",
+    "O0007",
+    "O0008",
+    "O0012"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "Inscriptions That Survive the Tokenizer (SPXI-TLP v2.2), Abstract ¶1: publication-layer provenance signals, 'cryptographic manifests (C2PA)', which the deposit describes as embedded 'inside media — primarily images, audio, and video', and structured metadata, 'are stripped or rendered invisible long before they reach the training corpus. The body text is what survives': class 1 (the removal of embedded metadata in transit) at another stage, the training corpus. Found by the hop (H0008, forward from #1409); the string pass returned only O0002 (a Zenodo policy line), not admitted.",
+   "claims": [
+    "O127-01"
+   ],
+   "cands": [
+    "H0008"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/iptc-photo-metadata-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and attribution note for the entity's capture (OBS-9b96943ca090, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "provenance-census",
+   "url": "https://www.provenanceerasure.org/aggregators/iptc-photo-metadata-tests/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'iptc-photo-metadata-tests'] and its organizing_question; rendered aggregators/iptc-photo-metadata-tests/index.html read for agreement)",
+   "reason": "the provenance meta-aggregator record of the entity (editor Lee Sharks, census compiled 2026-10-29, schema 1.0): its fields with their basis; where a field restates an evidence quote it is one lineage with the page the quote is from",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1409
+   ],
+   "cands": [
+    "D0004",
+    "D0009"
+   ],
+   "reason": "'C2PA wraps EXIF/IPTC/XMP as signed assertions hash-bound to pixels' and 'sign manifests wrapping the IPTC/EXIF assertions': a technical description and an instruction for the archive's own artifacts, no archive category applied to either class; the C2PA side is the census's neighbour row (c2pa-conformance)"
+  },
+  {
+   "dep": [
+    1409
+   ],
+   "cands": [
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0010",
+    "D0011",
+    "D0013",
+    "D0015",
+    "R0001",
+    "R0002",
+    "R0003",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0013"
+   ],
+   "reason": "the archive's own artifact specification: a leak-vector checklist, tier tables, field maps ('Creator=\"[author name/heteronym\"]', 'dc:Identifier=AXN'), a declaration surface and a certification checklist; instructions for the archive's files, not claims on the tests or on embedded metadata as a class (the R hits are 'heteronym' in a field map and 'surface' in tables)"
+  },
+  {
+   "dep": [
+    1409
+   ],
+   "cands": [
+    "D0017"
+   ],
+   "reason": "bibliography line 'IPTC. Photo Metadata Standard; Digital Source Type controlled vocabulary.'"
+  },
+  {
+   "dep": [
+    121,
+    1003,
+    1194
+   ],
+   "cands": [
+    "O0001",
+    "O0004",
+    "O0006"
+   ],
+   "reason": "the Holographic Kernel 'as embedded metadata' in a failure-mode table: metadata embedded in documents, not image files; outside both classes as sourced"
+  },
+  {
+   "dep": [
+    127
+   ],
+   "cands": [
+    "O0002"
+   ],
+   "reason": "a deposit policy line ('XMP metadata if PDF'): a listing; #127 is admitted at H0008 for its Abstract"
+  },
+  {
+   "dep": [
+    130
+   ],
+   "cands": [
+    "O0003"
+   ],
+   "reason": "SPXI's strip-protection clause for document provenance chains: documents, not image files"
+  },
+  {
+   "dep": [
+    1087
+   ],
+   "cands": [
+    "O0005"
+   ],
+   "reason": "a carrier table for the archive's PDF deposits ('PDF XMP', 'metadata-stripping pipelines'): documents, not image files"
+  },
+  {
+   "dep": [
+    835,
+    1215
+   ],
+   "cands": [],
+   "reason": "considered outside the string pass (found by a grep for metadata stripping): 'Any governance rule placed exclusively in the metadata header is structurally doomed to be stripped at the ingest gate': document frontmatter at a model's ingest, outside the class as sourced (image files)"
+  },
+  {
+   "dep": [
+    729,
+    1369,
+    1386,
+    1443,
+    1444,
+    204
+   ],
+   "cands": [
+    "H0018",
+    "H0026",
+    "H0027",
+    "H0043",
+    "H0045",
+    "H0051",
+    "H0052"
+   ],
+   "reason": "hop candidates whose passages bear on C2PA (artifact provenance, Content Credentials), the census's neighbour row, not on the IPTC tests or embedded IPTC metadata"
+  },
+  {
+   "dep": "the other hop candidates",
+   "cands": "H0001–H0054 except H0008",
+   "reason": "hop (forward and reverse) from #725, #1190, #1409: none names the tests, the IPTC or embedded image metadata, or applies a category to either class (scanned for XMP, EXIF, embedded/photo/image metadata, metadata stripping, C2PA; the C2PA hits are listed above)"
+  }
+ ],
+ "hop": {
+  "from": [
+   725,
+   1190,
+   1409
+  ],
+  "candidates": 54,
+  "admitted": 1,
+  "admitted_deps": [
+   127
+  ]
+ },
+ "class_pass": "O-class: class 1 (removal of embedded metadata in transit) and class 2 (embedded image metadata as carrier) matched 6 sentences in 6 deposits, all rejected (document metadata, policy lines); the admitted class claims came from reading #725 and #1409 at their passages and from the hop (#127)",
+ "observations": "The archive names the IPTC in three deposits (#725, #1190, #1409) and never names the tests. Its bearing is on the carrier: the standard's AI metadata as Layer 1 disclosure (#725), embedded IPTC as scaffold the pipeline reads with its composition role unknown (#1409), and the loss of embedded and publication-layer provenance at other carriers and stages (#1409, #127). The provenance census record and the Capture Registry are the archive's records of the tests themselves.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 17,
+   "D_deposits": 3,
+   "R_sentences": 3,
+   "R_deposits": 1,
+   "O_direct": 7,
+   "O_class": 6,
+   "O_deposits": 7,
+   "H_candidates": 54
+  },
+  "deposits_candidate": 9,
+  "deposits_admitted": 4,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 54,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 10,
+   "provenance_census": 19,
+   "deposit": 11
+  }
+ }
+}

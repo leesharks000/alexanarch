@@ -1,0 +1,101 @@
+{
+ "row": "vroniplag-wiki",
+ "address": "VroniPlag Wiki",
+ "entity": "VroniPlag Wiki (vroniplag.fandom.com/de), a volunteer wiki started 28 March 2011 on Wikia (now Fandom) that examines and documents plagiarism in German doctoral theses and other academic writings as text-parallel fragments, each checked by a second person; grown from the GuttenPlag Wiki; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/vroniplag-wiki/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "vroniplag-wiki",
+  "address": "VroniPlag Wiki",
+  "entity": "VroniPlag Wiki (vroniplag.fandom.com/de), a volunteer wiki started 28 March 2011 on Wikia (now Fandom) that examines and documents plagiarism in German doctoral theses and other academic writings as text-parallel fragments, each checked by a second person; grown from the GuttenPlag Wiki; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/vroniplag-wiki/)",
+  "row_type": "C (a public entity on which the archive bears: a documentation wiki of the lineage 'authorship and reuse', one of the provenance meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bVroni[- ]?Plag\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bvroniplag\\.(fandom|wikia)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bHeidingsfelder\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bWeber-Wulff\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bGuttenPlag\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "plagiarism documentation (the census's lineage 'authorship and reuse')",
+    "pattern": "\\bplagiari[sz](e|ed|es|ing|m|ms)\\b",
+    "flags": "i",
+    "basis": "field: B1 (English Wikipedia, short description 'Platform for documenting plagiarism in academic publications'; lead: 'examines and documents the extent of plagiarism in German doctoral theses'); W1 (German Wikipedia, infobox: 'VroniPlag – kollaborative Plagiatsdokumentation'); B2 (card snippet: 'eine Plattform zur Dokumentation von Plagiaten in Hochschulschriften')"
+   },
+   {
+    "term": "crowdsourced documentation (the census's kind 'documentation wiki')",
+    "pattern": "\\bcrowd[- ]?sourc(e|ed|ing)\\b",
+    "flags": "i",
+    "basis": "field: B1 (English Wikipedia, 'VroniPlag was the first crowd sourcing phenomenon of its kind in Germany'; category 'Crowdsourcing')"
+   },
+   {
+    "term": "revocation of academic degrees",
+    "pattern": "\\b(revocation|revoked|rescinded|rescission) of (a |the |their |his |her )?(doctora(l|te)|degree|title)s?\\b",
+    "flags": "i",
+    "basis": "field: B1 (English Wikipedia, 'any revocation of title must be done by the university'; 'some have resulted in the revocation of the degree'); W1 (German Wikipedia, section 'Aberkennung akademischer Grade')"
+   }
+  ],
+  "classes_note": "Three classes, each sourced from the field by locus, and named after the provenance census's own lineage and kind for the entity where the field states them (addendum §6): plagiarism documentation (the census lineage 'authorship and reuse'; B1 short description and lead, W1 infobox, B2 snippet), crowdsourced documentation (the census kind 'documentation wiki'; B1 'the first crowd sourcing phenomenon of its kind in Germany'), and the revocation of academic degrees (B1 'any revocation of title must be done by the university', W1 'Aberkennung akademischer Grade'). The census's lineage string 'authorship and reuse' is the census's (an archive source, ledgered as PE claims), and is not itself run as a pattern: no field source states it. The aliases are the entity's name and short name, its host, the founder German Wikipedia names (Martin Heidingsfelder) and the activist it names (Debora Weber-Wulff); GuttenPlag is a distinct entity (the wiki VroniPlag grew from, census negative_tags) and is run only to find candidates, which are read as on GuttenPlag and set aside unless they bear on VroniPlag. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the wiki, or applies an archive category to a class the field sources for it (the documentation of plagiarism, crowdsourced documentation, the revocation of degrees); a bare mention, a figurative or generic use of 'plagiarism' about another object, or a list item is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'VroniPlag Wiki' (vroniplag-wiki-aio-20261029, OBS-3bec82cf1f12, ADDR-941618d94624), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#725 and #729, O-class).",
+  "hop_from": [
+   725,
+   729
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 17,
+  "O_deposits": 11,
+  "H_candidates": 41
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "87": 1,
+   "302": 1,
+   "337": 1,
+   "609": 2,
+   "615": 1,
+   "725": 2,
+   "729": 2,
+   "1127": 1,
+   "1190": 2,
+   "1369": 2,
+   "1440": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "13b0c59eaf39de362b39d4112e36003edad362a0df3144f06e1827016dcbce0e",
+  "candidates-H.jsonl": "851575dad78ef016aadc7a57f717c94528751577674fcd216a971e5442b1156d"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

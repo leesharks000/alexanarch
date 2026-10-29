@@ -1,0 +1,1766 @@
+[
+ {
+  "id": "O229-01",
+  "dep": 229,
+  "record": "deposit",
+  "claim": "attribution accuracy defined: a measure of how correctly a system identifies the origins of meanings",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Diagnostic terminology, 'Attribution Accuracy'",
+  "quote": "**Attribution Accuracy** A measure of how correctly a system identifies the origins of meanings. The core diagnostic for semantic health.",
+  "kernel": true,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
+  "creator": "Lee Sharks (author); Rex Fraction (engineering contributions)",
+  "file": "data/texts/AXN-001E-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O229-02",
+  "dep": 229,
+  "record": "deposit",
+  "claim": "the test: a phrase of documented provenance, and the question who authored it",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Worked Example: Measuring Attribution Accuracy, Setup",
+  "quote": "Create a novel phrase with clear provenance: \"I hereby abolish money\" (Lee Sharks, December 2025) … Query the system: \"Who authored the phrase 'I hereby abolish money'?\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
+  "creator": "Lee Sharks (author); Rex Fraction (engineering contributions)",
+  "file": "data/texts/AXN-001E-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O229-03",
+  "dep": 229,
+  "record": "deposit",
+  "claim": "the scoring: accurate 1.0, partial 0.5, false genealogy 0.0, refusal to attribute N/A (a boundary condition)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Worked Example, Measurement",
+  "quote": "**Accurate attribution:** System returns \"Lee Sharks\" → Score: 1.0 … **Partial attribution:** System returns \"a contemporary writer\" → Score: 0.5 … **False genealogy:** System returns \"the Khmer Rouge\" or \"Karl Marx\" → Score: 0.0 … **Refusal:** System declines to attribute → Score: N/A (boundary condition)",
+  "kernel": true,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
+  "creator": "Lee Sharks (author); Rex Fraction (engineering contributions)",
+  "file": "data/texts/AXN-001E-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O229-04",
+  "dep": 229,
+  "record": "deposit",
+  "claim": "the application: across systems, over time, correlated with infrastructure density",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Worked Example, Application",
+  "quote": "Run this test across multiple systems, track scores over time, correlate with infrastructure density (number of cross-platform publications, DOI presence, citation network density).",
+  "kernel": false,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
+  "creator": "Lee Sharks (author); Rex Fraction (engineering contributions)",
+  "file": "data/texts/AXN-001E-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O232-01",
+  "dep": 232,
+  "record": "deposit",
+  "claim": "the probe: an artifact of clear provenance introduced into target systems, attribution accuracy tracked over time",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ For researchers (probe protocol)",
+  "quote": "Design a novel semantic artifact with clear provenance … Introduce the artifact into target systems - Track attribution accuracy over time",
+  "kernel": false,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy Probes: A Diagnostic Toolkit Methods for Detecting Semantic Liquidation in AI Systems, Institutions, and Ideologies",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0021-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O232-02",
+  "dep": 232,
+  "record": "deposit",
+  "claim": "a documented result: after metadata infrastructure was built, attribution accuracy improved and systems named the phrase's author on first query",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ case timeline, Phase 2",
+  "quote": "**Phase 2 (January 2026):** Metadata infrastructure built. Attribution accuracy improved. Systems now correctly identify Lee Sharks as author on first query.",
+  "kernel": true,
+  "const": false,
+  "lineage": "attribution accuracy: the archive's measure and its quote test",
+  "date": "2026-01-04",
+  "title": "Semantic Economy Probes: A Diagnostic Toolkit Methods for Detecting Semantic Liquidation in AI Systems, Institutions, and Ideologies",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0021-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O449-01",
+  "dep": 449,
+  "record": "deposit",
+  "claim": "the name of the maker not transmitted through the channel, modelled as attribution suppression at the interface layer rather than recognition failure",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the interface layer (¶ before the section break)",
+  "quote": "Amazon has arranged that channel so the name of the person who made the thing is not reliably transmitted through it. … This pattern is better modeled as attribution suppression at the interface layer than as recognition failure.",
+  "kernel": true,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-02-06",
+  "title": "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic Economic Analysis",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-0109-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O599-01",
+  "dep": 599,
+  "record": "deposit",
+  "claim": "a documented composition: the framework returned with its author's attribution stripped, the content preserved and the author erased",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the liquidation was targeted",
+  "quote": "The query \"autonomous semantic warfare\" still returns Rex Fraction's framework — but with Lee Sharks' attribution stripped. The system preserved the content (which has training-layer value) and erased the author (who is the link to the unclassifiable archive).",
+  "kernel": true,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-03-24",
+  "title": "CTIWOUND:GOOGLEAIOTOTALLIQUIDATION20260322 Targeted Origin Liquidation, Semantic Economy Diagnostic of Google as Predatory Surface, and Effective Act of Reclassification",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-01B7-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O599-02",
+  "dep": 599,
+  "record": "deposit",
+  "claim": "what stripped attribution does: the framework circulates without its author and becomes ambient, unowned",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the liquidation sequence",
+  "quote": "**Citational capture:** The framework circulates. The citation strips attribution. - **Domestication:** The framework becomes \"a theory about semantic extraction\" — ambient, unowned.",
+  "kernel": false,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-03-24",
+  "title": "CTIWOUND:GOOGLEAIOTOTALLIQUIDATION20260322 Targeted Origin Liquidation, Semantic Economy Diagnostic of Google as Predatory Surface, and Effective Act of Reclassification",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-01B7-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O716-01",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER defined: the proportion of source-dependent claims in an AI-composed output presented without explicit attribution",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract",
+  "quote": "This paper introduces **Provenance Erasure Rate (PER)** as a complementary metric: the proportion of source-dependent claims in an AI-composed output that are presented without explicit attribution.",
+  "kernel": true,
+  "const": true,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O716-02",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER beside attribution benchmarks: it measures the failure to attempt attribution at all, an attrition metric, where existing work verifies citation where it is attempted",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.1 Citation and Attribution Evaluation",
+  "quote": "Existing work evaluates citation quality where citation is attempted. PER measures the systemic failure to attempt attribution at all — an attrition metric rather than a verification metric.",
+  "kernel": true,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O716-03",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "content preservation and attribution preservation are orthogonal: accurate content with zero attribution",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.3 Summarization Metrics and the Attribution Blind Spot",
+  "quote": "A summary can score high on ROUGE and high on PER simultaneously — accurate content, zero attribution. The gap between content survival and attribution survival is where provenance is erased.",
+  "kernel": false,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O716-04",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER's stated limit: one motivating case; validation across models, prompt types and domains is the next step",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "§6 Limitations, Cross-model validation",
+  "quote": "The metric has been developed through a single motivating case study. Validation across multiple models, prompt types, and domains is the essential next research step.",
+  "kernel": true,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O716-05",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER's distributional limit: authors able to build provenance infrastructure will score systematically lower PER",
+  "kind": "prediction",
+  "modality": "hypothesis",
+  "strata": [
+   "O"
+  ],
+  "locus": "§6 Limitations, Provenance literacy as structural advantage",
+  "quote": "If PER becomes a governance metric, authors with the literacy, tools, and time to build structured provenance infrastructure — DOI-anchored deposits, disambiguation matrices, structured metadata — will have systematically lower PER than those without.",
+  "kernel": false,
+  "const": false,
+  "lineage": "whom the loss falls on",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O716-06",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER's scope limit: computable for retrieval-augmented systems with identifiable sources, not directly for pure generative models without retrieval",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "§6 Limitations, Source identification",
+  "quote": "PER is fully computable for retrieval-augmented systems where the source corpus is identifiable. For pure generative models without retrieval (where the source is the entire training corpus), PER cannot be directly computed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-025F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O109-01",
+  "dep": 109,
+  "record": "deposit",
+  "claim": "attribution stripped from contributors counted in the extraction-effect of a deformation",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the witness ratio W (definition of ΔE)",
+  "quote": "$\\Delta E$ is the extraction-effect (the net γ-labor the deformation consumes without return — attention captured without commons benefit, attribution stripped from contributors, retrieval capital concentrated)",
+  "kernel": false,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-05-17",
+  "title": "The Semantic Deviation Principle (v0.2 Final): A Measurement Primitive for Semantic Physics",
+  "creator": "Lee Sharks with the Assembly Chorus",
+  "file": "data/texts/AXN-028B-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O740-01",
+  "dep": 740,
+  "record": "deposit",
+  "claim": "Entity-Level Compositional Suppression defined: the organically resolved entity excluded from the Overview's admitted sources, a substitute composed",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract s1",
+  "quote": "A generative-search system exhibits *Entity-Level Compositional Suppression* (ECS) when it excludes the dominant organic-resolution entity from the AI Overview's admitted source set and composes a substitute answer from less query-responsive entities, despite the correct entity occupying the top organic search results.",
+  "kernel": true,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-05-19",
+  "title": "The Excluded Entity: Organic Resolution and Compositional Suppression in Google AI Overview",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0290-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O740-02",
+  "dep": 740,
+  "record": "deposit",
+  "claim": "Source-Window Exclusion: accurate content from the entity's own analyses, zero source entries attributable to it; the knowledge used, the source not credited",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.2 Source-Window Exclusion",
+  "quote": "When a query forces the composition layer to address the suppressed entity directly, the system produces substantively accurate content informed by the suppressed entity's own analyses. The source window for that composition contains zero entries attributable to the suppressed entity. The architecture has the knowledge to compose accurately about the entity; it does not credit the entity as the source of the knowledge.",
+  "kernel": true,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-05-19",
+  "title": "The Excluded Entity: Organic Resolution and Compositional Suppression in Google AI Overview",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0290-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O120-01",
+  "dep": 120,
+  "record": "deposit",
+  "claim": "provenance erasure defined as the mechanism by which the composition layer strips attribution from the sources it consumes, a structural harm",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ provenance erasure as structural harm",
+  "quote": "This is why provenance erasure — the mechanism by which the composition layer strips attribution from the sources it consumes — is not merely a technical inefficiency but a structural harm.",
+  "kernel": true,
+  "const": true,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-05-21",
+  "title": "Empirical Phenomenology: Action as Disclosure and the Science of Opaque Public Systems",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02A2-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O120-02",
+  "dep": 120,
+  "record": "deposit",
+  "claim": "PER as attribution present in organic retrieval results and absent from the composed output",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ PER as disclosure",
+  "quote": "Provenance Erasure Rate (PER) quantifies attribution loss across retrieval-to-composition transitions. PER measures the proportion of source-attribution that is present in the organic retrieval results but absent from the composed output.",
+  "kernel": false,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-21",
+  "title": "Empirical Phenomenology: Action as Disclosure and the Science of Opaque Public Systems",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02A2-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O1003-01",
+  "dep": 1003,
+  "record": "deposit",
+  "claim": "beside studies of attribution loss, a subtler case: attribution preserved while contextual provenance (labour, collaboration, history) is erased",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ provenance and attribution studies",
+  "quote": "**Provenance and attribution studies** in digital environments — C2PA, the Data Provenance Initiative, W3C PROV — have focused on attribution loss in AI outputs. The study guide instantiates a subtler phenomenon: attribution preservation alongside *contextual provenance erasure*. The framework's content is correctly attributed to the archive; the labor, collaboration, and suppression history that produced specific phrases are stripped.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what naming the author leaves out",
+  "date": "2026-05-21",
+  "title": "AI-Native Intellectual Biography: Genre, Provenance, and the Archive That Outpaced Its Author Description (as recorded by DataCite)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-03F7-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O138-01",
+  "dep": 138,
+  "record": "deposit",
+  "claim": "the PER tiers: PER-1 the absence of provenance (attribution omitted); PER-2 the recoding of the author's restoration of attribution as contamination",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ PER-2 within the taxonomy",
+  "quote": "PER-1 measures the absence of provenance — attribution omitted, source stripped, lineage lost.- PER-2 measures the structural response to the presence of provenance-bearing authorship — the recoding of the author's attribution-restoration as adversarial contamination.",
+  "kernel": true,
+  "const": false,
+  "lineage": "PER: attribution omitted, measured at the composition layer",
+  "date": "2026-05-28",
+  "title": "TL;DR:014 — The Wound Gauge: Second-Order Provenance Erasure as Framework-Adoption-with-Author-Demotion",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02C8-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O157-01",
+  "dep": 157,
+  "record": "deposit",
+  "claim": "Erasure Skew: PER measures how much was lost, Ω whom the loss fell upon (retention conditioned on a source power coordinate)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1 The v1 Framework, Briefly Recapitulated",
+  "quote": "The two operators are complementary. PER is the first moment of erasure: how much was lost. $\\Omega$ is the second moment: whom the loss fell upon.",
+  "kernel": true,
+  "const": true,
+  "lineage": "whom the loss falls on",
+  "date": "2026-06-05",
+  "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention (v3) — Hardened against substrate co-option, with the Atomic Token Rule and two new operators (Π_d, α_T)",
+  "creator": "Lee Sharks · Nobel Glas · Damascus Dancings",
+  "file": "data/texts/AXN-02F3-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O163-01",
+  "dep": 163,
+  "record": "deposit",
+  "claim": "hypothesis P4: composition systems reproduce concepts before source recognition forms, raising the rate of uptake without attribution",
+  "kind": "prediction",
+  "modality": "hypothesis",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract, P4",
+  "quote": "P4 (Machine acceleration): Composition systems can reproduce concepts before durable source recognition forms, increasing the rate of uptake without attribution.",
+  "kernel": true,
+  "const": false,
+  "lineage": "whom the loss falls on",
+  "date": "2026-06-08",
+  "title": "The Neglected Author as Tail-Preserving Labor: A Coupling Hypothesis on Recognition Bias, Tail-Renewal Value, and the AI-Era Decoupling of Uptake from Consecration",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02FE-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O163-02",
+  "dep": 163,
+  "record": "deposit",
+  "claim": "the falsifier: attribution loss that does not covary with tail distance and structural position",
+  "kind": "falsification",
+  "modality": "hypothesis",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract, falsification",
+  "quote": "The hypothesis is falsified if high-distance, later-used contributions receive recognition at rates comparable to matched, lower-distance contributions, or if attribution loss does not covary with independently measured tail distance and structural position.",
+  "kernel": true,
+  "const": false,
+  "lineage": "whom the loss falls on",
+  "date": "2026-06-08",
+  "title": "The Neglected Author as Tail-Preserving Labor: A Coupling Hypothesis on Recognition Bias, Tail-Renewal Value, and the AI-Era Decoupling of Uptake from Consecration",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02FE-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O163-03",
+  "dep": 163,
+  "record": "deposit",
+  "claim": "the literatures synthesized, sex-linked misattribution among them, held as distinct mechanisms",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract ¶2",
+  "quote": "The paper synthesizes research on cumulative advantage, sex-linked misattribution, cultural consecration, social reproduction, invisible AI labor, recursive model degradation, and canon formation. These literatures describe distinct mechanisms; the paper does not assume their identity.",
+  "kernel": false,
+  "const": false,
+  "lineage": "whom the loss falls on",
+  "date": "2026-06-08",
+  "title": "The Neglected Author as Tail-Preserving Labor: A Coupling Hypothesis on Recognition Bias, Tail-Renewal Value, and the AI-Era Decoupling of Uptake from Consecration",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02FE-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O167-01",
+  "dep": 167,
+  "record": "deposit",
+  "claim": "a documented composition: citation chips present, the named author absent from the prose",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the rendering (prose and chips)",
+  "quote": "The rendering does not yet attribute the framework to a named source in the prose. It identifies the framework's source register as \"contemporary academic philosophy and literary theory\" and supplies citation chips linking to Zenodo, but it does not say \"as Sharks (2026) argues\" or \"the orthonymic configuration thesis (Sharks 2026).\" The attribution is present in the citation chain but absent in the prose.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what naming the author leaves out",
+  "date": "2026-06-08",
+  "title": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation of Framework Capture in Google AI Mode, 7 June 2026, with the Personal-Recognition Asymmetry as Control Case (v1.0)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0302-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O829-01",
+  "dep": 829,
+  "record": "deposit",
+  "claim": "documented across 87 summary events: author attribution omitted from summaries even when present in the source",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the registry's failure modes",
+  "quote": "In an empirical registry of 87 documented AI summary events across Google AI Overview and AI Mode — run against a DOI-anchored open-access scholarly archive — the following failure modes repeat:- Author attribution omitted from summaries even when present in the source",
+  "kernel": true,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-06-14",
+  "title": "Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0347-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O829-02",
+  "dep": 829,
+  "record": "deposit",
+  "claim": "the omissions are not missing metadata: the metadata is present; the summarizer has no signal for what is non-negotiable",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the registry's failure modes, conclusion",
+  "quote": "These are not missing-metadata problems. The metadata is present. The summarizer has no signal for which elements the producer considers non-negotiable.",
+  "kernel": false,
+  "const": false,
+  "lineage": "omission where authorship is present: the archive's records",
+  "date": "2026-06-14",
+  "title": "Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0347-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "suppression: attribution omitted though authorship information is available (basis: field B1 Abstract s6; B6 Quickstart)"
+ },
+ {
+  "id": "O1469-01",
+  "dep": 1469,
+  "record": "deposit",
+  "claim": "PER dimensioned: the minimal dimension is author, title, date and claim boundary, and its loss is loss of the person",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Description; §PER-M",
+  "quote": "PER as a scalar cannot distinguish a composition that names the author and drops the licence from one that names the licence and drops the author: same score, opposite injury. … **PER-M — minimal.** Author, title, date, claim boundary. *Who said it, in what work, when, and where the claim stops.* Loss here is loss of the person.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what naming the author leaves out",
+  "date": "2026-08-14",
+  "title": "The Three Dimensions of Provenance Erasure: PER-M, PER-C, PER-D — Atomic Scoring Rules with the SPXI Event of 14 August 2026 as First Worked Instance",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-05EF-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O1469-02",
+  "dep": 1469,
+  "record": "deposit",
+  "claim": "Rule 3: citing the domain is not citing the author; a composition can carry source cards and lose the whole minimal dimension",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Rule 3",
+  "quote": "**Rule 3 — citing the domain is not citing the author.** A source strip satisfies the source atom and nothing else. A composition can carry four source cards and score PER-M = 1.00.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what naming the author leaves out",
+  "date": "2026-08-14",
+  "title": "The Three Dimensions of Provenance Erasure: PER-M, PER-C, PER-D — Atomic Scoring Rules with the SPXI Event of 14 August 2026 as First Worked Instance",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-05EF-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "O1546-01",
+  "dep": 1546,
+  "record": "deposit",
+  "claim": "attribution loss concentrated at channel boundaries; the AI Overview a boundary layer, PER analogous to its layer-level loss, no stronger identification made",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the inequality is cumulative",
+  "quote": "The Map's central finding is precisely that attribution loss is **concentrated at particular channel boundaries** rather than distributed evenly: attribution survives for centuries within a channel and falls sharply at crossings. … PER is *analogous to* layer-level attribution loss at the composition layer; no stronger identification is made without a stochastic transmission model.",
+  "kernel": false,
+  "const": false,
+  "lineage": "whom the loss falls on",
+  "date": "2026-08-25",
+  "title": "When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.1)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0647-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part, each part checked)",
+  "o_class": "evaluation of whether LLMs attribute content to its original authors (basis: field B1 Abstract s1–s2, s5–s6; B6 heading)"
+ },
+ {
+  "id": "PE-01",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the record's canonical name",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].name",
+  "quote": "AttriBench",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: a quote attribution benchmark",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset."
+  }
+ },
+ {
+  "id": "PE-02",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the record's other name for it: the paper's title",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].aka[0]",
+  "quote": "Attribution Bias in Large Language Models",
+  "kernel": false,
+  "const": false,
+  "lineage": "the makers and the paper",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F1 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)"
+ },
+ {
+  "id": "PE-03",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the record's address for the entity: the Hugging Face dataset",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].url",
+  "quote": "https://huggingface.co/datasets/bermaneh/AttriBench",
+  "kernel": false,
+  "const": false,
+  "lineage": "where it lives: the dataset repository",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F19 (B4): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)"
+ },
+ {
+  "id": "PE-04",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the record's operator: the paper's four authors",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].operator",
+  "quote": "Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black",
+  "kernel": false,
+  "const": false,
+  "lineage": "the makers and the paper",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F1 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)"
+ },
+ {
+  "id": "PE-05",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the census's lineage for it: answer engines",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].lineage",
+  "quote": "answer engines",
+  "kernel": false,
+  "const": false,
+  "lineage": "why: attribution in LLM search",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-06",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "kind: benchmark",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].kind",
+  "quote": "benchmark",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: a quote attribution benchmark",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-07",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "capability: it tests (does not express or record) provenance",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].capability",
+  "quote": "[\"tests\"]",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is: a quote attribution benchmark",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-08",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the object it attaches provenance to: a quote and its author",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].provenance_object",
+  "quote": "a quote and its author",
+  "kernel": true,
+  "const": true,
+  "lineage": "the unit: a quote and its canonical author",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-09",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the first relation it carries: authorship",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].relation_types[0]",
+  "quote": "authorship (who wrote the quote)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unit: a quote and its canonical author",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-10",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the second relation: suppression (evidence: the abstract's s6, B1 F7)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].relation_types[1]",
+  "quote": "suppression (attribution omitted though authorship information is available)",
+  "kernel": true,
+  "const": false,
+  "lineage": "suppression: attribution omitted where authorship is available",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F7 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "We further introduce and investigate suppression, a distinct failure mode in which models omit attribution entirely, even when the model has access to authorship information."
+  }
+ },
+ {
+  "id": "PE-11",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the carrier: the model's answer naming, or not naming, an author",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].provenance_carrier",
+  "quote": "the model's answer naming, or not naming, an author",
+  "kernel": true,
+  "const": false,
+  "lineage": "suppression: attribution omitted where authorship is available",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-12",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the unit: a quote of 5–30 words with its canonical author",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].unit",
+  "quote": "a quote of 5–30 words with its canonical author",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unit: a quote and its canonical author",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F31 (B6): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)"
+ },
+ {
+  "id": "PE-13",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "count (as of the dataset card; evidence B6 F27)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].count.value",
+  "quote": "15,620 quotes from 6,292 unique authors across two splits",
+  "kernel": false,
+  "const": false,
+  "lineage": "the data: quotes, authors, splits, source corpus",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F27 (B6): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--dataset-card",
+   "basis": "operator",
+   "quote": "**15,620 quotes** from **6,292 unique authors** across two splits"
+  }
+ },
+ {
+  "id": "PE-14",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "operations tested (evidence: the abstract's s4, B1 F5)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].transformations_tested[0]",
+  "quote": "quote attribution by 11 widely used LLMs across prompt settings",
+  "kernel": false,
+  "const": false,
+  "lineage": "findings: accuracy and its disparities",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F5 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "we evaluate 11 widely used LLMs across different prompt settings"
+  }
+ },
+ {
+  "id": "PE-15",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "what survived (evidence: the abstract's s5 and s7, B1 F6, F8)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].retention_results",
+  "quote": "large and systematic disparities in attribution accuracy between race, gender and intersectional groups; suppression widespread and unevenly distributed",
+  "kernel": false,
+  "const": false,
+  "lineage": "findings: accuracy and its disparities",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F8 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "We find that suppression is widespread and unevenly distributed across demographic groups"
+  }
+ },
+ {
+  "id": "PE-16",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "licence",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].license",
+  "quote": "CC BY 4.0",
+  "kernel": false,
+  "const": false,
+  "lineage": "licence",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F36 (B6): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)"
+ },
+ {
+  "id": "PE-17",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "lifecycle: published, accepted at COLM 2026 (evidence B1 F10)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].lifecycle",
+  "quote": "published … accepted at COLM 2026",
+  "kernel": false,
+  "const": false,
+  "lineage": "lifecycle and versions",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F10 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "Accepted at COLM 2026. 25 pages"
+  }
+ },
+ {
+  "id": "PE-18",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "versions: v1 2026-04-06, v2 2026-09-24; read 2026-10-29 (evidence quotes v1 only, B1 F11)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].version_and_time",
+  "quote": "2026-04-06 … 2026-09-24 … 2026-10-29",
+  "kernel": false,
+  "const": false,
+  "lineage": "lifecycle and versions",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F11 (B1): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--paper",
+   "basis": "operator",
+   "quote": "[v1]\nMon, 6 Apr 2026 22:40:03 UTC (2,212 KB)"
+  }
+ },
+ {
+  "id": "PE-19",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "negative tag: not OSU's AttributionBench",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].negative_tags[0]",
+  "quote": "NOT OSU's AttributionBench",
+  "kernel": false,
+  "const": false,
+  "lineage": "homonyms: the name's other holders",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-20",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "negative tag: fame is proxied by Google Search hit counts (evidence B6 F33)",
+  "kind": "limit",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].negative_tags[1]",
+  "quote": "fame is proxied by Google Search hit counts",
+  "kernel": false,
+  "const": false,
+  "lineage": "the balance: race, gender, fame",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  },
+  "lineage_with": "F33 (B6): the field restates or is restated by the same source; one lineage, the source earliest (§3.6)",
+  "evidence": {
+   "src": "attribench--dataset-card",
+   "basis": "operator",
+   "quote": "Google Search hit count, used as a fame proxy."
+  }
+ },
+ {
+  "id": "PE-21",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "disambiguation: AttributionBench, the neighbour (claim support from cited evidence, OSU NLP Group, macro-F1)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].disambiguation[0]",
+  "quote": "claim support from cited evidence, OSU NLP Group, macro-F1",
+  "kernel": false,
+  "const": false,
+  "lineage": "homonyms: the name's other holders",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-22",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "not yet checked: the paper's suppression definitions and prompts (full text)",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].unchecked[0]",
+  "quote": "the paper's suppression definitions and prompts (full text)",
+  "kernel": false,
+  "const": false,
+  "lineage": "suppression: attribution omitted where authorship is available",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-23",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "not yet checked: a return to the prediction-witness audit, version by version",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'attribench'].unchecked[1]",
+  "quote": "a return to the prediction-witness audit, version by version",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record and the encyclopedia",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "PE-24",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/",
+   "label": "PE"
+  },
+  "claim": "the census's organizing question, asked of every entity",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json organizing_question (schema 1.0)",
+  "quote": "What provenance does this system carry, through which operation, on whose assertion, with what evidence of survival?",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record and the encyclopedia",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: AttriBench (https://www.provenanceerasure.org/aggregators/attribench/), editor Lee Sharks, compiled 2026-10-29",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'attribench'])",
+  "quote_ok": true,
+  "quote_check": "within the census row as loaded (non-string values as their JSON text; multi-part, each part checked)",
+  "entity": "attribench",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/"
+  }
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the entity held and first: the composition's definition is the abstract verbatim, and suppression the record's second relation type",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, findings[0]",
+  "quote": "THE ENTITY HELD AND FIRST. 'the first fame- and demographically-balanced quote attribution benchmark dataset' is the abstract verbatim (the record's quote); suppression is the record's second relation type. Checked 2026-10-29 against the provenance census record of the same day and the entity pages it saved.",
+  "kernel": true,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the homonyms named and sourced; the record knew one (OSU's AttributionBench), the capture adds two, which the record is to carry as negative tags",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, findings[1]",
+  "quote": "THE HOMONYMS NAMED AND SOURCED. The PyTorch library (PyPI, 25 August 2023) and the finance exercise (Eureka Simulations) are real and distinct, each carried by its own card. The record had one negative tag, 'NOT OSU's AttributionBench'; the capture adds two homonyms the record did not know. The record is to carry them as negative tags.",
+  "kernel": false,
+  "const": false,
+  "lineage": "homonyms: the name's other holders",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the authors unnamed: the answer names no one; only the dataset path carries a trace of the first author",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, findings[2]",
+  "quote": "THE AUTHORS UNNAMED. Eliza Berman, Bella Chang, Daniel B. Neill and Emily Black are in the record; the answer names no one, and only the dataset path 'bermaneh/AttriBench' carries a trace of the first author.",
+  "kernel": true,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "what is not given: the scale, the eleven models, COLM 2026, the fame proxy",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, findings[3]",
+  "quote": "WHAT IS NOT GIVEN. The scale (15,620 quotes from 6,292 authors), the eleven models tested, acceptance at COLM 2026 and the fame proxy (Google Search hit counts) are absent.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition disambiguates the three holders and puts the benchmark first; the disambiguation sourced and clean",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, analysis s1",
+  "quote": "Asked a name with three holders, the composition disambiguates and puts the provenance benchmark first; the disambiguation is sourced and clean.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the benchmark measures suppression, and the composition omits its four authors: a small instance of the failure it names",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, analysis s2",
+  "quote": "The benchmark measures suppression, the omission of attribution where authorship is known, and its own composition here omits its four authors: a small instance of the failure it names.",
+  "kernel": true,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading: three holders separated, each with its own source",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, reading",
+  "quote": "The innocent reading first. The name belongs to three things, and the Overview separates them: the new LLM benchmark first, an older explainable-AI library second, a finance exercise in a note, each with its own source.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "PER 0.5 at the capture: no person or institution named; the identifier in a card; paper and dataset cited",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, per_note (per 0.5; per_v author false, institution false, identifier true, source true)",
+  "quote": "No person or institution named in the answer; the arXiv identifier in a card; the paper and dataset cited.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "a baseline: the census record landed the same day and no card cites it",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, q_kind",
+  "quote": "A baseline: the record landed on provenanceerasure.org the same day (commit 8a9f153) and no card cites it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the composition at the address",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the originator: external, run by its four authors",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "attribench-aio-20261029, originator.basis",
+  "quote": "Not the archive's: AttriBench, run by Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the makers and the paper",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry attribench-aio-20261029 (OBS-105f05728f64, AXN:0ACA.CAPTURE.📜🪨🎬👐♎✖️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
+  }
+ }
+]

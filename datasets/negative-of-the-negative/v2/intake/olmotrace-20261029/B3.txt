@@ -1,0 +1,551 @@
+OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens - ACL Anthology
+
+ACL Anthology
+
+About
+Announcements
+
+Communication channels
+
+Related work
+
+Copyright
+
+Credits
+
+Volunteer
+
+Development
+
+Feedback
+
+Using
+Author directory
+
+Citing papers
+
+Links in the Anthology
+
+Data access
+
+All FAQs
+
+Details
+
+Anthology identifiers
+
+Names
+
+ORCID iDs
+
+DOIs
+
+Verified authors
+
+Contributions
+Submissions
+
+Corrections
+
+Maintain author pages
+
+Attachments
+
+GitHub
+
+OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens
+
+Jiacheng Liu,
+Taylor Blanton,
+Yanai Elazar,
+Sewon Min,
+Yen-Sung Chen,
+Arnavi Chheda-Kothary,
+Huy Tran,
+Byron Bischoff,
+Eric Marsh,
+Michael Schmitz,
+Cassidy Trier,
+Aaron Sarnat,
+Jenna James,
+Jon Borchardt,
+Bailey Kuehl,
+Evie Yu-Yen Cheng,
+Karen Farley,
+Taira Anderson,
+David Albright,
+Carissa Schoenick,
+Luca Soldaini,
+Dirk Groeneveld,
+Rock Yuren Pang,
+Pang Wei Koh,
+Noah A. Smith,
+Sophie Lebrecht,
+Yejin Choi,
+Hannaneh Hajishirzi,
+Ali Farhadi,
+Jesse Dodge
+
+Correct Metadata for 
+
+Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account.
+Once you create that issue, the correction will be reviewed by a staff member.
+
+⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app.
+
+Important: The Anthology treat PDFs as authoritative. Please use this form only to correct data
+that is out of line with the PDF. See our corrections
+guidelines if you need to change the PDF.
+
+Title
+Adjust the title. Retain tags such as
+<fixed-case>.
+
+Authors
+Adjust author names and order to match the
+PDF.
+
+Add Author
+Abstract
+Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for bold, <i>...</i> for italic, <u>...</u> for underline, <sc>...</sc> for small-caps, <tt>...<tt> for typewriter text, <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks.
+
+Verification against PDF
+Ensure that the new title/authors match the snapshot below. (If there
+is no snapshot or it is too small, consult the PDF.)
+
+Authors concatenated from the text boxes above:
+
+ALL author names match the snapshot above—including
+middle initials, hyphens, and accents.
+Create GitHub issue for staff review
+
+Abstract
+We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.
+
+Anthology ID:2025.acl-demo.18Volume:Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)Month:JulyYear:2025Address:Vienna, AustriaEditors:Pushkar Mishra,
+Smaranda Muresan,
+Tao YuVenue:ACLSIG:Publisher:Association for Computational LinguisticsNote:Pages:178–188Language:URL:https://aclanthology.org/2025.acl-demo.18/DOI:10.18653/v1/2025.acl-demo.18Award:
+ Best Demo
+
+Bibkey:liu-etal-2025-olmotraceCite (ACL):Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, Yen-Sung Chen, Arnavi Chheda-Kothary, Huy Tran, Byron Bischoff, Eric Marsh, Michael Schmitz, Cassidy Trier, Aaron Sarnat, Jenna James, Jon Borchardt, Bailey Kuehl, Evie Yu-Yen Cheng, Karen Farley, Taira Anderson, David Albright, Carissa Schoenick, Luca Soldaini, Dirk Groeneveld, Rock Yuren Pang, Pang Wei Koh, Noah A. Smith, Sophie Lebrecht, Yejin Choi, Hannaneh Hajishirzi, Ali Farhadi, and Jesse Dodge. 2025. OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations), pages 178–188, Vienna, Austria. Association for Computational Linguistics.Cite (Informal):OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens (Liu et al., ACL 2025)Copy Citation:BibTeX
+Markdown
+MODS XML
+Endnote
+More
+options…PDF:https://aclanthology.org/2025.acl-demo.18.pdf
+
+PDF
+Cite
+Search
+
+Fix data
+
+Export citation
+
+BibTeX
+
+MODS XML
+
+Endnote
+
+Preformatted
+
+@inproceedings{liu-etal-2025-olmotrace,
+ title = "{OLM}o{T}race: Tracing Language Model Outputs Back to Trillions of Training Tokens",
+ author = "Liu, Jiacheng and
+ Blanton, Taylor and
+ Elazar, Yanai and
+ Min, Sewon and
+ Chen, Yen-Sung and
+ Chheda-Kothary, Arnavi and
+ Tran, Huy and
+ Bischoff, Byron and
+ Marsh, Eric and
+ Schmitz, Michael and
+ Trier, Cassidy and
+ Sarnat, Aaron and
+ James, Jenna and
+ Borchardt, Jon and
+ Kuehl, Bailey and
+ Cheng, Evie Yu-Yen and
+ Farley, Karen and
+ Anderson, Taira and
+ Albright, David and
+ Schoenick, Carissa and
+ Soldaini, Luca and
+ Groeneveld, Dirk and
+ Pang, Rock Yuren and
+ Koh, Pang Wei and
+ Smith, Noah A. and
+ Lebrecht, Sophie and
+ Choi, Yejin and
+ Hajishirzi, Hannaneh and
+ Farhadi, Ali and
+ Dodge, Jesse",
+ editor = "Mishra, Pushkar and
+ Muresan, Smaranda and
+ Yu, Tao",
+ booktitle = "Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 3: System Demonstrations)",
+ month = jul,
+ year = "2025",
+ address = "Vienna, Austria",
+ publisher = "Association for Computational Linguistics",
+ url = "https://aclanthology.org/2025.acl-demo.18/",
+ doi = "10.18653/v1/2025.acl-demo.18",
+ pages = "178--188",
+ ISBN = "979-8-89176-253-4",
+ abstract = "We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source."
+}
+Download as
+File
+Copy to Clipboard
+
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="liu-etal-2025-olmotrace">
+ <titleInfo>
+ <title>OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens</title>
+ </titleInfo>
+ <name type="personal">
+ <namePart type="given">Jiacheng</namePart>
+ <namePart type="family">Liu</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Taylor</namePart>
+ <namePart type="family">Blanton</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Yanai</namePart>
+ <namePart type="family">Elazar</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Sewon</namePart>
+ <namePart type="family">Min</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Yen-Sung</namePart>
+ <namePart type="family">Chen</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Arnavi</namePart>
+ <namePart type="family">Chheda-Kothary</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Huy</namePart>
+ <namePart type="family">Tran</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Byron</namePart>
+ <namePart type="family">Bischoff</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Eric</namePart>
+ <namePart type="family">Marsh</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Michael</namePart>
+ <namePart type="family">Schmitz</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Cassidy</namePart>
+ <namePart type="family">Trier</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Aaron</namePart>
+ <namePart type="family">Sarnat</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Jenna</namePart>
+ <namePart type="family">James</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Jon</namePart>
+ <namePart type="family">Borchardt</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Bailey</namePart>
+ <namePart type="family">Kuehl</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Evie</namePart>
+ <namePart type="given">Yu-Yen</namePart>
+ <namePart type="family">Cheng</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Karen</namePart>
+ <namePart type="family">Farley</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Taira</namePart>
+ <namePart type="family">Anderson</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">David</namePart>
+ <namePart type="family">Albright</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Carissa</namePart>
+ <namePart type="family">Schoenick</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Luca</namePart>
+ <namePart type="family">Soldaini</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Dirk</namePart>
+ <namePart type="family">Groeneveld</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Rock</namePart>
+ <namePart type="given">Yuren</namePart>
+ <namePart type="family">Pang</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Pang</namePart>
+ <namePart type="given">Wei</namePart>
+ <namePart type="family">Koh</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Noah</namePart>
+ <namePart type="given">A</namePart>
+ <namePart type="family">Smith</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Sophie</namePart>
+ <namePart type="family">Lebrecht</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Yejin</namePart>
+ <namePart type="family">Choi</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Hannaneh</namePart>
+ <namePart type="family">Hajishirzi</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Ali</namePart>
+ <namePart type="family">Farhadi</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Jesse</namePart>
+ <namePart type="family">Dodge</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">author</roleTerm>
+ </role>
+ </name>
+ <originInfo>
+ <dateIssued>2025-07</dateIssued>
+ </originInfo>
+ <typeOfResource>text</typeOfResource>
+ <relatedItem type="host">
+ <titleInfo>
+ <title>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)</title>
+ </titleInfo>
+ <name type="personal">
+ <namePart type="given">Pushkar</namePart>
+ <namePart type="family">Mishra</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Smaranda</namePart>
+ <namePart type="family">Muresan</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+ </role>
+ </name>
+ <name type="personal">
+ <namePart type="given">Tao</namePart>
+ <namePart type="family">Yu</namePart>
+ <role>
+ <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+ </role>
+ </name>
+ <originInfo>
+ <publisher>Association for Computational Linguistics</publisher>
+ <place>
+ <placeTerm type="text">Vienna, Austria</placeTerm>
+ </place>
+ </originInfo>
+ <genre authority="marcgt">conference publication</genre>
+ <identifier type="isbn">979-8-89176-253-4</identifier>
+ </relatedItem>
+ <abstract>We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.</abstract>
+ <identifier type="citekey">liu-etal-2025-olmotrace</identifier>
+ <identifier type="doi">10.18653/v1/2025.acl-demo.18</identifier>
+ <location>
+ <url>https://aclanthology.org/2025.acl-demo.18/</url>
+ </location>
+ <part>
+ <date>2025-07</date>
+ <extent unit="page">
+ <start>178</start>
+ <end>188</end>
+ </extent>
+ </part>
+</mods>
+</modsCollection>
+
+Download as
+File
+Copy to Clipboard
+
+%0 Conference Proceedings
+%T OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens
+%A Liu, Jiacheng
+%A Blanton, Taylor
+%A Elazar, Yanai
+%A Min, Sewon
+%A Chen, Yen-Sung
+%A Chheda-Kothary, Arnavi
+%A Tran, Huy
+%A Bischoff, Byron
+%A Marsh, Eric
+%A Schmitz, Michael
+%A Trier, Cassidy
+%A Sarnat, Aaron
+%A James, Jenna
+%A Borchardt, Jon
+%A Kuehl, Bailey
+%A Cheng, Evie Yu-Yen
+%A Farley, Karen
+%A Anderson, Taira
+%A Albright, David
+%A Schoenick, Carissa
+%A Soldaini, Luca
+%A Groeneveld, Dirk
+%A Pang, Rock Yuren
+%A Koh, Pang Wei
+%A Smith, Noah A.
+%A Lebrecht, Sophie
+%A Choi, Yejin
+%A Hajishirzi, Hannaneh
+%A Farhadi, Ali
+%A Dodge, Jesse
+%Y Mishra, Pushkar
+%Y Muresan, Smaranda
+%Y Yu, Tao
+%S Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)
+%D 2025
+%8 July
+%I Association for Computational Linguistics
+%C Vienna, Austria
+%@ 979-8-89176-253-4
+%F liu-etal-2025-olmotrace
+%X We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.
+%R 10.18653/v1/2025.acl-demo.18
+%U https://aclanthology.org/2025.acl-demo.18/
+%U https://doi.org/10.18653/v1/2025.acl-demo.18
+%P 178-188
+Download as
+File
+Copy to Clipboard
+
+Markdown (Informal)
+
+[OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens](https://aclanthology.org/2025.acl-demo.18/) (Liu et al., ACL 2025)
+
+OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens (Liu et al., ACL 2025)
+
+ACL
+
+Jiacheng Liu, Taylor Blanton, Yanai Elazar, Sewon Min, Yen-Sung Chen, Arnavi Chheda-Kothary, Huy Tran, Byron Bischoff, Eric Marsh, Michael Schmitz, Cassidy Trier, Aaron Sarnat, Jenna James, Jon Borchardt, Bailey Kuehl, Evie Yu-Yen Cheng, Karen Farley, Taira Anderson, David Albright, Carissa Schoenick, Luca Soldaini, Dirk Groeneveld, Rock Yuren Pang, Pang Wei Koh, Noah A. Smith, Sophie Lebrecht, Yejin Choi, Hannaneh Hajishirzi, Ali Farhadi, and Jesse Dodge. 2025. OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations), pages 178–188, Vienna, Austria. Association for Computational Linguistics.
+
+Copy Markdown to
+Clipboard
+Copy ACL to
+Clipboard
+
+ACL materials are Copyright © 1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License. Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License.
+
+The ACL Anthology is managed and built by the ACL Anthology team of volunteers.
+
+Site last built on 28 October 2026 at 18:15 UTC with commit 66b4efa.

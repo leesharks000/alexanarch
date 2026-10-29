@@ -1,0 +1,1539 @@
+{
+ "row": "nanopublications",
+ "address": "Nanopublications",
+ "addresses": [
+  "Nanopublications"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by \" … \", each part checked), the Wikipedia responses, or the card's title and snippet for the three unreachable cards; 65/65 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B9: nanopub.net's home page, the nanopub-py repository, the retired Research Object page, the IEEE eScience 2018 paper, the PeerJ paper on PMC, the RIO conference abstract, the Pensoft blog's tag page, the nanopub library documentation, a Medium essay); 'own_page', the entity's own page the census record cites that T did not surface (B10, the Technical Architecture page); the home page (B1) is both a card and the census's own page and is carried once, as a card, from the census's saved copy; 'wikipedia', the title Nanopublication (a redirect into Microattribution; the plural title has no page) and the section of Microattribution headed 'Nanopublications' (B11, B12). The census read no third-party source for this entity (every evidence basis is 'operator'), so there is no 'census_third_party' origin. Unreachable: B2 (GitHub, the session's egress policy), B4 (IEEE Xplore, HTTP 202 empty, twice), B9 (Medium, Cloudflare 403, twice); B5 answered a reCAPTCHA interstitial once and the article on a plain retry.",
+ "lineage_note": "Lineages: what it is (B1, B3, B5, B6, B7); the smallest unit of publishable information (B3 quoting nanopub.org, B7, B8); the structure (B1, B5, B6, B8 copying nanopub.org of 2020-12-02); the carrier, RDF (B1, B5, B7, B12 reproducing B5); provenance (B1 F8, B7); attribution and citation and its limit (B1, B3, B5); identity and integrity (B6 Trusty URIs, B10 signing); the ecosystem (B1, B2, B5, B6, B8, B10); lifecycle (B10); scale and uptake (B4, B5, B6); origin (B5 citing Groth et al. 2010, B6, B12); FAIR (B6, B8); who (B7); machines as readers (B7, B9); stated limits (B5, B6); reception (B3, B11, B12). The census record's self-description, relation types, carrier, lifecycle and data access restate B1 and B10 (one lineage each, the page earliest). B12's section reproduces B5's sentences (B5 earliest, 2021).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/ (Bn.html raw, Bn.txt text: scripts and styles stripped; B1 and B10 are the census's saved copies; B6.txt adds the article frame's text; B11/B12 .wiki raw wikitext; *.response* the failed responses kept as records); sha256 per file in each source's \"files\"",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the own page the census record cites (census source nanopublications--home)",
+   "card": "Nanopublications — Nanopublications",
+   "url": "https://nanopub.net/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B1.html",
+     "sha256": "b2d9af40755a66ed0efd1b37d10933140d8c0860425721d41075dbc2679cbf5d"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B1.txt",
+     "sha256": "8be928dfb8148a200397c972986fc2083de55c1a98bde41849e901f1115554d4"
+    }
+   },
+   "fetched": {
+    "by": "the provenance census (copy of its saved source, not refetched)",
+    "census_source": "nanopublications--home",
+    "url": "https://nanopub.net/",
+    "read": "2026-10-29",
+    "at": "2026-10-29T15:55:22Z (census manifest)",
+    "http": 200,
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B1.html",
+    "raw_sha256": "b2d9af40755a66ed0efd1b37d10933140d8c0860425721d41075dbc2679cbf5d",
+    "census_sha256": "b2d9af40755a66ed0efd1b37d10933140d8c0860425721d41075dbc2679cbf5d",
+    "sha256_match": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B1.txt"
+    ],
+    "text_from": "the census text file nanopublications--home.txt, copied verbatim"
+   },
+   "names_operator": "no (names nanopub.net only as the site; no organisation or person)",
+   "names_archive": "no",
+   "note": "the card is the home page the census record cites; carried once, as a card (origin card), with the census copy (sha256 matches the census record)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "GitHub — GitHub - Nanopublication/nanopub-py: Python client for searching, publishing and modifying nanopublications. · GitHub",
+   "url": "https://github.com/Nanopublication/nanopub-py",
+   "kind": "Overview card (code repository)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.response.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B2.response.json",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "attempts": [
+     {
+      "at": "2026-10-29T17:06:5xZ",
+      "http": 403,
+      "by": "the session's egress proxy, a policy denial ('GitHub access to this repository is not enabled for this session'), body saved as B2.response.json"
+     }
+    ],
+    "retries": "none: the proxy instructs that policy denials are not retried",
+    "url_found_by": "the card title (owner/repository) read as the GitHub path",
+    "text": "card title and snippet only (cite_list n=2)"
+   },
+   "names_operator": "no (the snippet names the repository owner \"Nanopublication\")",
+   "names_archive": "no",
+   "note": "unreachable; its title and snippet stand as its only text"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "researchobject.org — Nanopublications - Research Object",
+   "url": "https://www.researchobject.org/initiative/nanopublications/",
+   "kind": "Overview card (third-party page, retired)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B3.html",
+     "sha256": "256a144820942c0809563173dd798042da59fcf41e3199331132a0f847c3ee50"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B3.txt",
+     "sha256": "e171654d688c2ab07efea844300fe00509fd9d2dd3d59d77244f52323057463b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:29Z",
+    "http": 200,
+    "url": "https://www.researchobject.org/initiative/nanopublications/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B3.html",
+    "raw_sha256": "256a144820942c0809563173dd798042da59fcf41e3199331132a0f847c3ee50",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B3.txt"
+    ],
+    "url_found_by": "WebSearch on the title and site"
+   },
+   "names_operator": "no (quotes \"nanopub.org\" as its source)",
+   "names_archive": "no",
+   "note": "the page carries its own notice that it is superseded and no longer maintained (F13)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "IEEE Xplore — A Growing Resource of Provenance",
+   "url": "https://ieeexplore.ieee.org/document/8588643",
+   "kind": "Overview card (paper: Kuhn et al., \"Nanopublications: A Growing Resource of Provenance-Centric Scientific Linked Data\", IEEE eScience 2018, doi:10.1109/eScience.2018.00024)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.response.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B4.response.html",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "B4.response-2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B4.response-2.html",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "attempts": [
+     {
+      "at": "2026-10-29T17:08:21Z",
+      "http": 202,
+      "bytes": 0
+     },
+     {
+      "at": "2026-10-29T17:17:18Z",
+      "http": 202,
+      "bytes": 0
+     }
+    ],
+    "retries": "one plain retry with the same command; both answered HTTP 202 with an empty body",
+    "url_found_by": "WebSearch on the title (arXiv:1809.06532 preprint and the VU Amsterdam research portal); the portal gives article number 8588643 and doi 10.1109/eScience.2018.00024",
+    "text": "card title and snippet only (cite_list n=4)",
+    "not_used": "the arXiv preprint of the same paper (arxiv.org/abs/1809.06532) is reachable; it is not the card and was not admitted as its text"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "unreachable; its title and snippet stand as its only text"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "National Institutes of Health (NIH) | (.gov) — Search, access, and explore life science nanopublications on the Web",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7959622/",
+   "kind": "Overview card (paper: Giachelle, Dosso and Silvello, PeerJ Computer Science 7: e335, 2021, PMC7959622)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B5.html",
+     "sha256": "8f174f1e4a6e24025943ce70c8ba26b89847a4e8f39526f828c1323604a2127b"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B5.txt",
+     "sha256": "00e13d3c91b77d7deb41537634e8095854076d28aff64b458db3a21981f990db"
+    },
+    "B5.response.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B5.response.html",
+     "sha256": "935f022b8560df6a0956314d08f495d64815509cb577154be6eeecb234e47fe4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:17:19Z",
+    "http": 200,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7959622/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B5.html",
+    "raw_sha256": "8f174f1e4a6e24025943ce70c8ba26b89847a4e8f39526f828c1323604a2127b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B5.txt"
+    ],
+    "attempts": [
+     {
+      "at": "2026-10-29T17:08:22Z",
+      "http": 200,
+      "note": "a 'Checking your browser - reCAPTCHA' interstitial, saved as B5.response.html"
+     },
+     {
+      "at": "2026-10-29T17:17:19Z",
+      "http": 200,
+      "note": "the article (plain retry with the same command); saved as B5.html"
+     }
+    ],
+    "url_found_by": "WebSearch on the title"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "the encyclopedia section B12 reproduces three of its sentences under a CC BY 4.0 notice (one lineage, B5 earliest)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Research Ideas and Outcomes — The Comparative Anatomy of Nanopublications and FAIR Digital ...",
+   "url": "https://riojournal.com/article/94150/",
+   "kind": "Overview card (conference abstract: Schultes, Magagna, Kuhn, Suchánek, Bonino da Silva Santos and Mons, RIO 8: e94150, 12 Oct 2022)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6.html",
+     "sha256": "5e1d57ffd1eaf59091c3415ed6ba901c30167751e92a4b1a5d402653e6b287cc"
+    },
+    "B6-article.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6-article.html",
+     "sha256": "637e1641f206653fb10042d305251314881ffcd84183b163db5aedbbf60d7c0c"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6.txt",
+     "sha256": "536e1554173fc6728ededed1cb5b49766210fad55b50e6b002be1d7cfbde0625"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:25Z",
+    "http": 200,
+    "url": "https://riojournal.com/article/94150/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6.html",
+    "raw_sha256": "5e1d57ffd1eaf59091c3415ed6ba901c30167751e92a4b1a5d402653e6b287cc",
+    "frame": {
+     "at": "2026-10-29T17:09:49Z",
+     "http": 200,
+     "url": "https://riojournal.com/article_preview.php?id=94150",
+     "sha256": "637e1641f206653fb10042d305251314881ffcd84183b163db5aedbbf60d7c0c"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6.txt"
+    ],
+    "text_from": "the page's text, then (under a marked header) the text of the article frame the page loads (article_preview.php?id=94150, saved B6-article.html)",
+    "url_found_by": "WebSearch on the title"
+   },
+   "names_operator": "no (its authors include Tobias Kuhn and Barend Mons; no operator of nanopub.net is named)",
+   "names_archive": "no",
+   "note": ""
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "Pensoft blog — nanopublications",
+   "url": "https://blog.pensoft.net/tag/nanopublications/",
+   "kind": "Overview card (publisher blog, tag page of three posts: 17 June 2024, 12 September 2023, 17 May 2023)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B7.html",
+     "sha256": "90c7b9d5a5bc8c1d0281ad47ac27ca47829754d6d817b23057b74b0a60940e51"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B7.txt",
+     "sha256": "9bffd0db11eef492261c10534852c24df02cf4056c734174f1f4e0016c80992c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:32Z",
+    "http": 200,
+    "url": "https://blog.pensoft.net/tag/nanopublications/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B7.html",
+    "raw_sha256": "90c7b9d5a5bc8c1d0281ad47ac27ca47829754d6d817b23057b74b0a60940e51",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B7.txt"
+    ],
+    "url_found_by": "the card's title ('nanopublications', the tag page's title 'nanopublications | Blog') and its snippet, found verbatim in the tag page"
+   },
+   "names_operator": "yes: Knowledge Pixels, \"as explained by Knowledge Pixel on nanopub.net\", its founders Philipp von Essen and Tobias Kuhn, the developer of Nanodash (F41, F45, F49)",
+   "names_archive": "no",
+   "note": ""
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "Read the Docs — What are nanopublications? — nanopub 1.2.11 documentation",
+   "url": "https://nanopub.readthedocs.io/en/latest/getting-started/what-are-nanopubs.html",
+   "kind": "Overview card (library documentation, nanopub 1.2.11)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B8.html",
+     "sha256": "2b3fc9e3f01b044f55e4929af2b2e7bed32aa4eb7dcca6e66ba19b911a7224f1"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B8.txt",
+     "sha256": "8df48d6cc498c58bfa564ab80cdedad40cd170386b56059b968a27a87a4b014a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:07:31Z",
+    "http": 200,
+    "url": "https://nanopub.readthedocs.io/en/latest/getting-started/what-are-nanopubs.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B8.html",
+    "raw_sha256": "2b3fc9e3f01b044f55e4929af2b2e7bed32aa4eb7dcca6e66ba19b911a7224f1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B8.txt"
+    ],
+    "url_found_by": "WebSearch"
+   },
+   "names_operator": "no (cites nanopub.org documentation, 2020/12/02)",
+   "names_archive": "no",
+   "note": ""
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "Medium — What is a Nanopublication, really? | by Rohitha Ravinder - Medium",
+   "url": "https://medium.com/@rohitha0112/what-is-a-nanopublication-really-413cac6da0dd",
+   "kind": "Overview card (essay)",
+   "surfaced_by_T": [
+    {
+     "slug": "nanopublications-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B9.response.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B9.response.html",
+     "sha256": "5d030b7a8de8b19f15f2ca455f1872913aca9ae7f7523f9d5fba6b4c347eefd1"
+    },
+    "B9.response-2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B9.response-2.html",
+     "sha256": "663af2e705919c558eb95ae942689ff5bc2968cffb3591f37aa1470a40a181e8"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "attempts": [
+     {
+      "at": "2026-10-29T17:09:02Z",
+      "http": 403,
+      "bytes": 5188
+     },
+     {
+      "at": "2026-10-29T17:17:19Z",
+      "http": 403,
+      "bytes": 5188
+     }
+    ],
+    "retries": "one plain retry with the same command; both HTTP 403, Cloudflare 'Attention Required!'",
+    "url_found_by": "WebSearch (extended) on the title",
+    "text": "card title and snippet only (cite_list n=9)"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "unreachable; its title and snippet stand as its only text"
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the own page the census record cites (census source nanopublications--architecture); not surfaced by T",
+   "card": "Nanopublications — Technical Architecture | Nanopublications",
+   "url": "https://nanopub.net/docs/architecture/",
+   "kind": "own page (documentation)",
+   "surfaced_by_T": "no (not surfaced by T; admitted by the operator's ruling of 2026-10-29 as an own page the census record cites)",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B10.html",
+     "sha256": "0e21d7ae559d83011d3897162f9518043240fd9cd5d901086d980577f54e5e3f"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B10.txt",
+     "sha256": "813446192dbaa9d5805a8ec17276982ba3ba75a18959dba11ba1ac68f8f348f2"
+    }
+   },
+   "fetched": {
+    "by": "the provenance census (copy of its saved source, not refetched)",
+    "census_source": "nanopublications--architecture",
+    "url": "https://nanopub.net/docs/architecture/",
+    "read": "2026-10-29",
+    "at": "2026-10-29T15:55:22Z (census manifest)",
+    "http": 200,
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B10.html",
+    "raw_sha256": "0e21d7ae559d83011d3897162f9518043240fd9cd5d901086d980577f54e5e3f",
+    "census_sha256": "0e21d7ae559d83011d3897162f9518043240fd9cd5d901086d980577f54e5e3f",
+    "sha256_match": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B10.txt"
+    ],
+    "text_from": "the census text file nanopublications--architecture.txt, copied verbatim"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "page dated by itself \"Last updated on Oct 28, 2026\" (F60)"
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "card": "Wikipedia — Nanopublication (redirect to Microattribution)",
+   "url": "https://en.wikipedia.org/wiki/Nanopublication",
+   "kind": "Wikipedia (redirect)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11.wiki",
+     "sha256": "d41abb95f2384221b3eaf8b8de07aac7f46f8c0027543820c86709fc7716dd1c"
+    },
+    "B11-plural.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11-plural.wiki",
+     "sha256": "7add8a12ea86f08efd87ce607961a6530e8cdd8fda4be8a74221ac3b5f561523"
+    },
+    "B11.response-1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11.response-1.html",
+     "sha256": "e0c2bb17090d654fb895cd622c55770bce9b634c92316f5f4bb8bbd4128ddd32"
+    },
+    "B11.response-2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11.response-2.wiki",
+     "sha256": "6810f9dd8e60164827c750f5c58ec53550a2fc2667865d99fadd1ffff069b1b0"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11.txt",
+     "sha256": "b7ba406f1fd53a990cfbefaf00f8ba6e650b62b633120fed782de071a0453b76"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "at": "2026-10-29T17:16:30Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Nanopublication&action=raw&redirect=no",
+     "sha256": "d41abb95f2384221b3eaf8b8de07aac7f46f8c0027543820c86709fc7716dd1c"
+    },
+    "plural_raw": {
+     "at": "2026-10-29T17:16:42Z",
+     "http": 404,
+     "url": "https://en.wikipedia.org/w/index.php?title=Nanopublications&action=raw&redirect=no",
+     "sha256": "7add8a12ea86f08efd87ce607961a6530e8cdd8fda4be8a74221ac3b5f561523"
+    },
+    "rate_limited_earlier": [
+     {
+      "file": "B11.response-1.html",
+      "at": "2026-10-29T17:07:35Z",
+      "http": 429
+     },
+     {
+      "file": "B11.response-2.wiki",
+      "at": "2026-10-29T17:09:03Z",
+      "http": 429
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B11.txt"
+    ],
+    "text_from": "a summary of the responses with the whole redirect wikitext quoted"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "the singular title is a redirect to Microattribution (no section named in the redirect); the plural title has no page (HTTP 404)"
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "the article the title redirects into, section \"Nanopublications\" ledgered",
+   "card": "Wikipedia — Microattribution, section \"Nanopublications\"",
+   "url": "https://en.wikipedia.org/wiki/Microattribution#Nanopublications",
+   "kind": "Wikipedia (article section; a legal-term stub)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B12.wiki",
+     "sha256": "ff14b0cdc5715120149b37f2710a54ed2adbf9fe0b80191174d8a03cdfafb73e"
+    },
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B12.html",
+     "sha256": "3080a6d305f790d788b65ac3a008f682625c7192a07dd820ca50c134d511b492"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B12.txt",
+     "sha256": "24e5e8d89fb2dfac959a524eda759756e65fdbe66ed2d2faf8eedf8711bd6325"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "at": "2026-10-29T17:16:39Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Microattribution&action=raw",
+     "sha256": "ff14b0cdc5715120149b37f2710a54ed2adbf9fe0b80191174d8a03cdfafb73e"
+    },
+    "rendered": {
+     "at": "2026-10-29T17:16:41Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Nanopublication",
+     "sha256": "3080a6d305f790d788b65ac3a008f682625c7192a07dd820ca50c134d511b492"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B12.txt"
+    ],
+    "text_from": "the rendered page (fetched at the Nanopublication title, \"(Redirected from Nanopublication)\"), scripts and styles stripped"
+   },
+   "names_operator": "no (names Barend Mons and Jan Velterop as proposers)",
+   "names_archive": "no",
+   "note": "the section reproduces three sentences of B5 under a CC BY 4.0 notice (one lineage with B5, which keeps the earliest date)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, headline",
+   "quote": "FAIR data containers for scientific results, and more",
+   "claim": "the site's headline: nanopublications as FAIR data containers for scientific results",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, \"What is a Nanopublication?\" s1",
+   "quote": "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication.",
+   "claim": "the definition: a small knowledge-graph snippet with metadata, treated as an independent (scientific) publication",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, s2",
+   "quote": "This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion.",
+   "claim": "its scope: anything, a gene–disease relation or an opinion",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, s3",
+   "quote": "Nanopublications are expressed in a knowledge graph format that is formal and machine-interpretable.",
+   "claim": "formal and machine-interpretable",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, s4",
+   "quote": "With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article.",
+   "claim": "individual data published with or without a research article",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, s5",
+   "quote": "because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability.",
+   "claim": "attribution and citation as the incentive to publish data in standard formats",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "attribution and citation: the incentive and its limit",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, the three elements: Assertion",
+   "quote": "a nanopublication has three basic elements: … Assertion : The assertion is the main content of a nanopublication in the form of an small atomic unit of information",
+   "claim": "three basic elements; the assertion, an atomic unit of information, is the main content",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised; multi-part quote joined by \" … \", each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, the three elements: Provenance",
+   "quote": "Provenance : This part describes how the assertion above came to be. This can include the scientific methods that were used to generate the assertion, for example a reference to the kind of study that was performed and its parameters.",
+   "claim": "the provenance part: how the assertion came to be, methods, the kind of study and its parameters",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, the three elements: Publication Info",
+   "quote": "Publication Info : This part contains metadata about the nanopublication as a whole, such as when and by whom it was created and the license terms for its reuse.",
+   "claim": "the publication-info part: when, by whom, licence for reuse",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, after the elements s1–2",
+   "quote": "Nanopublications are implemented in the language RDF and come with an evolving ecosystem of tools and systems. They can be published to a decentralized server network, for example, and then queried, accessed, reused, and linked.",
+   "claim": "RDF; an evolving ecosystem; a decentralized server network",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, last paragraph",
+   "quote": "Nanopublications can also be created, published, and queried conversationally with AI coding agents, through the nanopub Agent Skill",
+   "claim": "created, published and queried with AI coding agents through the nanopub Agent Skill",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8be928dfb8148a20…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable: proxy policy 403)",
+   "quote": "GitHub - Nanopublication/nanopub-py: Python client for searching, publishing and modifying nanopublications. · GitHub Overview: Python client (nanopub-py) licensed under Apache-2.0 for searching, publishing, modifying, and retracting nanopublications (machine-readable minimal u...",
+   "claim": "nanopub-py, an Apache-2.0 Python client for searching, publishing, modifying and retracting nanopublications",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "undated (card)",
+   "quote_ok": true,
+   "checked_against": "the card title and snippet (cite_list n=2)"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "notice",
+   "quote": "2025-10-13: The RO-Crate website and specification superseded this website after 2020. These pages are no longer maintained.",
+   "claim": "the page is retired: superseded by RO-Crate after 2020, no longer maintained",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the retired page and the encyclopedia",
+   "date": "2025-10-13 (notice)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e171654d688c2ab0…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "body s1",
+   "quote": "Nano publications provides a model and vocabulary for describing a scientific statement - along with the context for that statement - in a machine readable manner.",
+   "claim": "a model and vocabulary for a scientific statement with its context, machine-readable",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "undated (page maintained to 2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e171654d688c2ab0…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "body, \"From nanopub.org\"",
+   "quote": "A publication is the smallest unit of publishable information: an assertion about anything that can be uniquely identified and attributed to its author.",
+   "claim": "quoted from nanopub.org: the smallest unit of publishable information, an assertion uniquely identified and attributed to its author",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the smallest unit of publishable information",
+   "date": "undated (quoting nanopub.org)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e171654d688c2ab0…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "body, \"From nanopub.org\" s2",
+   "quote": "Individual nanopublications can be cited by others and tracked for their impact on the community.",
+   "claim": "cited and tracked for impact (nanopub.org, quoted)",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "attribution and citation: the incentive and its limit",
+   "date": "undated (quoting nanopub.org)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e171654d688c2ab0…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "body, \"From nanopub.org\" s3",
+   "quote": "Nanopublications are a natural response to the explosion of high-quality contextual information that overwhelms the capacity of conventional research articles in scholarly communication.",
+   "claim": "a response to contextual information overwhelming the research article (nanopub.org, quoted)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "undated (quoting nanopub.org)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e171654d688c2ab0…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable: HTTP 202, empty, twice)",
+   "quote": "A Growing Resource of Provenance Abstract: Nanopublications are a Linked Data format for scholarly data publishing that has received considerable uptake in the last few years. In contrast to th...",
+   "claim": "a Linked Data format for scholarly data publishing with considerable uptake; a growing resource of provenance",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale and uptake",
+   "date": "2018 (IEEE eScience; card)",
+   "quote_ok": true,
+   "checked_against": "the card title and snippet (cite_list n=4)"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "Nanopublications are Resource Description Framework (RDF) graphs encoding scientific facts extracted from the literature and enriched with provenance and attribution information.",
+   "claim": "RDF graphs of scientific facts from the literature, enriched with provenance and attribution",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2021-02 (PeerJ CS 7: e335; received 2020-06-19)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "There are millions of nanopublications currently available on the Web, especially in the life science domain.",
+   "claim": "millions on the Web, especially in the life sciences",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and uptake",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶2 s5",
+   "quote": "Hence, this model has been embraced by several scientific fields, especially in the Life Science domain, leading to the creation of more than ten million openly available nanopublications (Kuhn et al., 2018).",
+   "claim": "more than ten million openly available, chiefly in the life sciences (Kuhn et al. 2018)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and uptake",
+   "date": "2021-02 (citing 2018)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s4–5",
+   "quote": "Nevertheless, they are still not widely used by scientists outside specific circles; they are hard to find and rarely cited. We believe this is due to the lack of services to seek, find and understand nanopublications’ content.",
+   "claim": "the limit: little used outside specific circles, hard to find, rarely cited; the authors' explanation, a lack of services",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "attribution and citation: the incentive and its limit",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶2 s4 (the card's snippet)",
+   "quote": "A repository of nanopublications is to be thought of as an open and interconnected knowledge graph seamlessly integrated with the supporting scientific literature.",
+   "claim": "a repository of nanopublications as an open, interconnected knowledge graph integrated with the literature",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶3 s1–2",
+   "quote": "From the technical viewpoint, a nanopublication is a Resource Description Framework (RDF) graph built around an assertion represented as a triple (subject-predicate-object) and usually extracted, manually or automatically, from a scientific publication. The nanopublication enriches the assertion with provenance and publication information.",
+   "claim": "an RDF graph around an assertion-triple, usually extracted from a publication, enriched with provenance and publication information",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶3 s3",
+   "quote": "The RDF representation format enables interoperability and thus the re-use of data, whereas provenance and publication information eases authorship recognition, credit distribution, and citation.",
+   "claim": "RDF for interoperability and reuse; provenance and publication information for authorship recognition, credit and citation",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "attribution and citation: the incentive and its limit",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶6 (Fig. 1)",
+   "quote": "The nanopublication is composed of four parts: (i) the head that acts as a connector between the other three sub-graphs; (ii) the assertion graph",
+   "claim": "four parts: a head connecting the assertion, provenance and publication-info graphs; the publication info carries the evidence paper",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶6 (Fig. 1) (iii)–(iv)",
+   "quote": "(iii) the provenance graph (orange) containing metadata about the assertion such as the methods used to generate the assertion and its creators; and (iv) the publication info graph (yellow) containing the metadata about the evidence paper from which the assertion was extracted and about the nanopublication itself.",
+   "claim": "the provenance graph: methods and creators of the assertion; the publication-info graph: the evidence paper and the nanopublication itself",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Conclusions ¶1 s2",
+   "quote": "the “redundancy of statements in multiple fora makes it difficult to identify attribution, quality, and provenance” (Groth, Gibson & Velterop, 2010)",
+   "claim": "the founding motive (Groth, Gibson and Velterop 2010): redundant statements make attribution, quality and provenance hard to identify",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 2009–2010",
+   "date": "2021-02 (citing 2010)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Conclusions ¶3",
+   "quote": "The central limit to the full exploitation of nanopublications is the lack of services enabling their search, access, exploration, and re-use. Search is limited to the use of structured query languages as SPARQL, and a service to search over all the publicly available nanopublications at once is not available. Nanopublications are machine-readable, but no human-readable counterpart is generated and open to the public.",
+   "claim": "the stated limit (2021): no services for search, access, exploration and reuse; SPARQL only; no human-readable counterpart",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s6–7",
+   "quote": "we present the NanoWeb application to seamlessly search, access, explore, and re-use the nanopublications publicly available on the Web. For the time being, NanoWeb focuses on the life science domain where the vastest amount of nanopublications are available.",
+   "claim": "NanoWeb, a search and exploration application for life-science nanopublications",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s1–2",
+   "quote": "Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010) as a minimal, uniform container making individual semantic assertions and their associated provenance metadata, machine-actionable. They represent minimal units of structured data as citable entities (Mons and Velterop 2009).",
+   "claim": "conceived from 2009 as a minimal container making single semantic assertions and their provenance machine-actionable; citable minimal units (Mons and Velterop 2009)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "origin: 2009–2010",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s3",
+   "quote": "A nanopublication consists of an assertion, the provenance of the assertion, and the provenance of the nanopublication (publication info).",
+   "claim": "assertion, provenance of the assertion, provenance of the nanopublication (publication info)",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s4",
+   "quote": "Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL (World Wide Web Consortium (W3C) 2015) and can be permanently and uniquely identified using resolvable Trusty URIs (Groth et al. 2021).",
+   "claim": "RDF, OWL, SPARQL; permanent unique identification by resolvable Trusty URIs",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and integrity: Trusty URIs and signing",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s5",
+   "quote": "The existing Nanopublication Server Network provides vital services orchestrating nanopublications (Kuhn et al. 2021) including identifier resolution, storage, search and access.",
+   "claim": "the Nanopublication Server Network (2022): resolution, storage, search, access",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s6",
+   "quote": "Nanopublications can be used to expose quantitative and qualitative data, as well as hypotheses, claims, negative results, and opinions that are typically unavailable as structured data or go unpublished altogether.",
+   "claim": "data, hypotheses, claims, negative results and opinions otherwise unpublished",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶2 s7–8",
+   "quote": "The first practical application of nanopublications occurred in 2014, with the publication of millions of nanopublications as part of the FANTOM5 Project … Since then, millions of real-world examples spanning diverse knowledge domains are now available on the nanopublication server network.",
+   "claim": "first practical application 2014 (FANTOM5, millions); millions since, across domains",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and uptake",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised; multi-part quote joined by \" … \", each part checked"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶4 s1–2",
+   "quote": "These two technologies share the same vision of a data infrastructure, and act as instances of Machine-Actionable Containers (MACs) that make use of minimal uniform standards to enable FAIR operations.",
+   "claim": "with FAIR Digital Objects, an instance of Machine-Actionable Containers enabling FAIR operations",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "FAIR: containers for FAIR operations",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶5 s2–3",
+   "quote": "The scope of nanopublications is limited to the assertional data type and, as the name suggests, nanopublications should remain small in size (limited to single assertions as individual triples or small RDF graphs). In contrast FDOs are unlimited in their scope",
+   "claim": "the stated limit: assertional data only, small in size, against FDOs unlimited in scope",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶5 s4",
+   "quote": "whereas nanopublications represent a moderately mature technology, the FDOF is a specification still under development.",
+   "claim": "a moderately mature technology",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "FAIR: containers for FAIR operations",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract ¶6 s2",
+   "quote": "We find a remarkable congruence between the currently proposed FDO requirements and the existing nanopublication infrastructure, including several FDO-like qualities already embodied in the nanopublication ecosystem.",
+   "claim": "the headline finding: congruence between FDO requirements and the nanopublication infrastructure",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "FAIR: containers for FAIR operations",
+   "date": "2022-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 536e1554173fc672…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 17 May 2023, \"What are nanopublications?\"",
+   "quote": "“the smallest unit of publishable information”, as explained by Knowledge Pixel on nanopub.net.",
+   "claim": "the smallest unit of publishable information, as Knowledge Pixels explains it on nanopub.net",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the smallest unit of publishable information",
+   "date": "2023-05-17",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 12 September 2023, \"… so, what exactly is a nanopublication?\"",
+   "quote": "Basically, a nanopublication – unlike a research article – is a tiny snippet of a precise and structured scientific finding (e.g. medication X treats disease Y), which exists as a reusable and cite-able pieces of a growing knowledge graph stored on a decentralised server network",
+   "claim": "unlike a research article, a tiny structured finding in a growing knowledge graph on a decentralised server network",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an assertion published on its own",
+   "date": "2023-09-12",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 12 September 2023, \"First off, why nanopublications?\"",
+   "quote": "By making it easier to trace individual findings back to their origin and/or follow-up updates, nanopublications also help to better understand the provenance of scientific data.",
+   "claim": "tracing findings to their origin and updates: the provenance of scientific data",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "provenance: how the assertion came to be",
+   "date": "2023-09-12",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 12 September 2023, ¶4",
+   "quote": "The machine-actionability of nanopublications is a standard due to each assertion comprising a subject, an object and a predicate (type of relation between the subject and the object), complemented by provenance, authorship and publication information.",
+   "claim": "machine-actionability from the subject–predicate–object assertion, with provenance, authorship and publication information",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2023-09-12",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 17 May 2023, ¶3–4",
+   "quote": "Knowledge Pixels: an innovative startup tech company aiming to revolutionise scientific publishing and knowledge sharing by means of nanopublications … said Philipp von Essen and Tobias Kuhn, the two founders of Knowledge Pixels in a press announcement.",
+   "claim": "Knowledge Pixels, a startup working by means of nanopublications, founded by Philipp von Essen and Tobias Kuhn",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who: Knowledge Pixels and the publishers",
+   "date": "2023-05-17",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised; multi-part quote joined by \" … \", each part checked"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 17 May 2023, ¶4 (von Essen and Kuhn, quoted)",
+   "quote": "Even the latest impressive AI tools like ChatGPT can only guess (and sometimes ‘hallucinate’) what the authors meant exactly and how the results compare,",
+   "claim": "narrative results are not machine-interpretable: AI tools can only guess and sometimes hallucinate (von Essen and Kuhn)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "machines as readers",
+   "date": "2023-05-17",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 17 May 2023, \"Add a nanopublication while writing your manuscript\" ¶3",
+   "quote": "authors ensure that AI assistants, for example, will be more likely to correctly ‘read’, ‘interpret’ and deliver the knowledge reported in the publication for the next users and their prompts.",
+   "claim": "nanopublished findings make AI assistants more likely to read, interpret and deliver them correctly",
+   "modality": "interpretation",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "machines as readers",
+   "date": "2023-05-17",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 12 September 2023, \"Now, what's new?\"",
+   "quote": "authors in Biodiversity Data Journal (BDJ) can make use of three types of nanopublications:",
+   "claim": "three nanopublication workflows at Biodiversity Data Journal (in manuscripts, standalone, annotations)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who: Knowledge Pixels and the publishers",
+   "date": "2023-09-12",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "post of 17 May 2023, \"What can you do in RIO?\"",
+   "quote": "The integration between RIO and Nanodash: the environment developed by Knowledge Pixels where users edit and publish their nanopublications is available at any article published in the journal.",
+   "claim": "Nanodash, developed by Knowledge Pixels, integrated with every RIO article",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who: Knowledge Pixels and the publishers",
+   "date": "2023-05-17",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 9bffd0db11eef492…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "What are nanopublications? ¶1",
+   "quote": "Nanopublications are a formalized and machine-readable way of communicating the smallest possible units of publishable information. This could be, for example, the outcome of a scientific study or a claim made by a particular scientist.",
+   "claim": "the smallest possible units of publishable information, formalized and machine-readable: a study's outcome or a scientist's claim",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the smallest unit of publishable information",
+   "date": "undated (nanopub 1.2.11; © 2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8df48d6cc498c58b…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "What are nanopublications? ¶2",
+   "quote": "Nanopublications are searchable, citable, and contain authorship and attribution information. The aim is to encourage individual scientific results to be released in a traceable and interoperable format. As such, nanopublications are an effective FAIR means of communicating scientific claims and results.",
+   "claim": "searchable, citable, with authorship and attribution; traceable and interoperable; an effective FAIR means",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "FAIR: containers for FAIR operations",
+   "date": "undated (nanopub 1.2.11; © 2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8df48d6cc498c58b…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "Different elements of a nanopublication",
+   "quote": "From nanopub.org documentation (2020/12/02)",
+   "claim": "its three elements copied from the nanopub.org documentation of 2 December 2020",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the structure: assertion, provenance, publication info",
+   "date": "2020-12-02",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8df48d6cc498c58b…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "table of contents",
+   "quote": "Publishing nanopublications … Retracting a nanopublication … Searching the nanopub server … Fetching nanopublications",
+   "claim": "the library publishes, retracts, searches and fetches",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "undated (nanopub 1.2.11)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8df48d6cc498c58b…), whitespace-normalised; multi-part quote joined by \" … \", each part checked"
+  },
+  "F54": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable: Cloudflare 403, twice)",
+   "quote": "What is a Nanopublication, really? | by Rohitha Ravinder - Medium In today's AI landscape, this question has become even more important. As systems increasingly generate, summarize and reinterpret scientific knowledge, we find...",
+   "claim": "an essay asking what a nanopublication is when systems generate, summarize and reinterpret scientific knowledge",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "machines as readers",
+   "date": "undated (card)",
+   "quote_ok": true,
+   "checked_against": "the card title and snippet (cite_list n=9)"
+  },
+  "F55": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Overall Architecture",
+   "quote": "Nanopublications are published in a decentralized ecosystem of services and applications .",
+   "claim": "a decentralized ecosystem of services and applications",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "2026-10-28 (page updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Core Components: Nanopub Registry; legacy nanopub-server",
+   "quote": "Nanopub Registry ( instance , code ) is the second-generation kind of service for publishing and retrieving nanopublications in a decentralized fashion. The legacy nanopub-server ( instance , code ) is still used to keep the old (unsigned) nanopublications, but has otherwise no longer a function in the latest generation of the ecosystem.",
+   "claim": "the second-generation Registry publishes and retrieves; the legacy server keeps only the old unsigned nanopublications",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "lifecycle: the second generation and the legacy server",
+   "date": "2026-10-28 (page updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Core Components: Nanopub Query",
+   "quote": "Nanopub Query ( instance , code ) forms the second-generation of services to query nanopublications. They allow for decentrally querying the published nanopublications via a number of SPARQL endpoints covering different subsets and aspects of nanopublications.",
+   "claim": "second-generation query services over SPARQL endpoints",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: the second generation and the legacy server",
+   "date": "2026-10-28 (page updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Core Components: Nanodash",
+   "quote": "Nanodash ( instance , code ) is a general client and user interface for nanopublications, It allows for user-friendly browsing, querying, and publishing nanopublications, but can also be used as an API and intermediary layer for other services to build upon.",
+   "claim": "Nanodash: client, user interface, API and intermediary layer",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ecosystem: services, tools, AI agents",
+   "date": "2026-10-28 (page updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Auxiliary Components: nanopub-http",
+   "quote": "nanopub-http ( code ) is a service that provides features of the nanopublication libraries, most importantly for signing and publishing, over HTTP.",
+   "claim": "signing and publishing over HTTP",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and integrity: Trusty URIs and signing",
+   "date": "2026-10-28 (page updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "footer",
+   "quote": "Last updated on Oct 28, 2026",
+   "claim": "the architecture page updated 28 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle: the second generation and the legacy server",
+   "date": "2026-10-28",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 813446192dbaa9d5…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "raw wikitext of \"Nanopublication\" (HTTP 200); \"Nanopublications\" HTTP 404",
+   "quote": "#REDIRECT [[Microattribution]]",
+   "claim": "the encyclopedia has no article: the singular title redirects to Microattribution; the plural has no page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the retired page and the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 b7ba406f1fd53a99…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "section \"Nanopublications\" s1",
+   "quote": "Barend Mons and Jan Velterop proposed nanopublications for single, attributable and machine-readable assertions in scientific literature.",
+   "claim": "proposed by Barend Mons and Jan Velterop for single, attributable, machine-readable assertions",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: 2009–2010",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 24e5e8d89fb2dfac…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "section \"Nanopublications\" s2–4 (CC BY 4.0 notice: Giachelle, Dosso and Silvello 2021)",
+   "quote": "From the technical viewpoint, a nanopublication is a Resource Description Framework (RDF) graph built around an assertion represented as a triple (subject-predicate-object) and usually extracted, manually or automatically, from a scientific publication. The nanopublication enriches the assertion with provenance and publication information. The RDF representation format enables interoperability and thus the re-use of data, whereas provenance and publication information eases authorship recognition, credit distribution, and citation.",
+   "claim": "the B5 sentences, reproduced",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2026-10-29 (as fetched; text of 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 24e5e8d89fb2dfac…), whitespace-normalised"
+  },
+  "F64": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "rendered article: title, footer and categories",
+   "quote": "Microattribution … (Redirected from Nanopublication) … This legal term article is a stub.",
+   "claim": "the encyclopedia holds nanopublications as a section of Microattribution, a legal-term stub (categories Copyright law, Academic publishing)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the retired page and the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 24e5e8d89fb2dfac…), whitespace-normalised; multi-part quote joined by \" … \", each part checked"
+  },
+  "F65": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Conclusions ¶2 s2–3",
+   "quote": "Leveraging on the semantic-oriented RDF structure, nanopublications efficiently convey information and concepts. Hence, these features make nanopublications particularly suitable for enabling data search, information extraction, and automatic reasoning over scientific facts.",
+   "claim": "the RDF structure suits data search, information extraction and automatic reasoning",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: RDF, formal and machine-interpretable",
+   "date": "2021-02",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 00e13d3c91b77d7d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Nanopublications — Nanopublications",
+  "B2": "GitHub — GitHub - Nanopublication/nanopub-py: Python client for searching, publishing and modifying nanopublications. · GitHub",
+  "B3": "researchobject.org — Nanopublications - Research Object",
+  "B4": "IEEE Xplore — A Growing Resource of Provenance",
+  "B5": "National Institutes of Health (NIH) | (.gov) — Search, access, and explore life science nanopublications on the Web",
+  "B6": "Research Ideas and Outcomes — The Comparative Anatomy of Nanopublications and FAIR Digital ...",
+  "B7": "Pensoft blog — nanopublications",
+  "B8": "Read the Docs — What are nanopublications? — nanopub 1.2.11 documentation",
+  "B9": "Medium — What is a Nanopublication, really? | by Rohitha Ravinder - Medium",
+  "B10": "Nanopublications — Technical Architecture | Nanopublications",
+  "B11": "Wikipedia — Nanopublication (redirect to Microattribution)",
+  "B12": "Wikipedia — Microattribution, section \"Nanopublications\""
+ }
+}

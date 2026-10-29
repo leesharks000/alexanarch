@@ -1,0 +1,353 @@
+{
+ "row": "mapping-manuscript-migrations",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Mapping Manuscript Migrations, named by its string or an alias; R, a relation the archive states between it and an archive object; O, an archive category applied to it (O-direct) or to a class the census record gives as its lineage or kind and a field source states (O-class: aggregators; linked open data; manuscript provenance — config classes_note). A bare mention, a list of fields or anchors, or a sentence about an aggregator of another kind (reception aggregators, citation aggregators, scholarly-metadata aggregators, news aggregators, the composition layer) is not a claim on the class.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 43,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Seed That Remembers the Tree (EA-RCF-01), Holographic Kernel, 'Relation to Adjacent Frameworks': provenance studies stabilizes authorship and priority through the archival evidence of manuscripts and their chain of custody, and RCF extends provenance into the retrieval layer (O-class, manuscript provenance: the archive's category applied to the provenance of manuscripts as a class)",
+   "claims": [
+    "O43-01",
+    "O43-02"
+   ],
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 843,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Missing Second Manuscript, § Non-Erasure Condition: a summary that omits a manuscript's loss and its chain of custody produces a 'provenance-erased summary' (O-class, manuscript provenance; the archive's category of provenance erasure applied to summaries of a manuscript's custody). Admitted through the hop (forward from #1065/#1066); not a string-pass candidate (its terms fall more than 80 characters apart)",
+   "claims": [
+    "O843-01"
+   ],
+   "cands": [
+    "H0093"
+   ],
+   "via": "hop"
+  },
+  {
+   "dep": 1065,
+   "strata": [
+    "O"
+   ],
+   "reason": "Machine-Mediated Resistance Literature, version notes v1.1: the archive's own earlier presentation, which omitted the Second Manuscript's chain of custody, read as a provenance-erased summary under #843's condition; and the finding that adoption and provenance attenuation advance together",
+   "claims": [
+    "O1065-01",
+    "O1065-02"
+   ],
+   "cands": [
+    "O0030"
+   ]
+  },
+  {
+   "dep": 1066,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same version note as #1065 (the same work, 2026-07-11): an instance under #1065 (S4)",
+   "claims": [],
+   "instance_of": 1065,
+   "cands": [
+    "O0031"
+   ]
+  },
+  {
+   "dep": 1465,
+   "strata": [
+    "O"
+   ],
+   "reason": "Position Is Not Class §IV, the position table: owning aggregators, with archives, identifier systems, corpora and indexes, is owning means of semantic circulation, the semantic-bourgeois position (O-class, aggregators)",
+   "claims": [
+    "O1465-01"
+   ],
+   "cands": [
+    "O0048"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Proletariat Is a Class Relation §3: aggregators among the means of semantic circulation (M_c), and infrastructural means of circulation distinguished from procedural means of production; it restates #1465 and adds the distinction (a qualification: its own slot, §3.6). The class-definition sentence (O0050) and the node table row (O0051) restate O0049 and are carried in its lineage",
+   "claims": [
+    "O1545-01",
+    "O1545-02"
+   ],
+   "cands": [
+    "O0049",
+    "O0050",
+    "O0051"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure §8.5 and §3.2: the sustainability of linked data as a shared knowledge resource requires governance accounting for extraction (the archive's claim); and, attributed to the AoIR panel, platform domination of linked data weakening open licences (O-class, linked open data)",
+   "claims": [
+    "O623-01",
+    "O623-02"
+   ],
+   "cands": [
+    "O0019",
+    "O0020",
+    "O0021"
+   ],
+   "note": "O0019 (Wikidata's editor count) is a fact about Wikidata, not a claim on linked data as a class: read, not ledgered"
+  },
+  {
+   "dep": 317,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Programming §3.1.3: against the Semantic Web's global graph of linked data, bounded semantic spaces that keep internal coherence without external compatibility (O-class, linked open data: an archive category set against the class). O0011 is a reference line ('Linked Data: The Story So Far.'), not a claim",
+   "claims": [
+    "O317-01"
+   ],
+   "cands": [
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 959,
+   "strata": [
+    "O"
+   ],
+   "reason": "Hexagonal OS: Interface Build Files v0.4 carries #317's sentence and reference: an instance under #317 (S4)",
+   "claims": [],
+   "instance_of": 317,
+   "cands": [
+    "O0028",
+    "O0029"
+   ]
+  },
+  {
+   "dep": 359,
+   "strata": [
+    "O"
+   ],
+   "reason": "Symbolon Architecture §0.2: what FRBR and Linked Data imply, that a triple alone is semantically thin and some knowledge structures are designed incomplete, completing by traversal (O-class, linked open data: the archive's category, the symbolon, applied to the class)",
+   "claims": [
+    "O359-01"
+   ],
+   "cands": [
+    "O0012"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/mapping-manuscript-migrations-aio-20261029/",
+   "reason": "the Capture Registry's findings, analysis and query note for the entity's capture (OBS-76da075982b8, 2026-10-29): the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/mapping-manuscript-migrations/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'mapping-manuscript-migrations'], organizing_question, schema_note; rendered aggregators/mapping-manuscript-migrations/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their evidence and basis; where a field restates the white paper (B7) it is carried in B7's lineage, B7 keeping the earliest date",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21",
+    "PE-22"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    49
+   ],
+   "reason": "O0002: a journalist's report picked up by an aggregator (a news aggregator in a worked example): another kind of aggregator"
+  },
+  {
+   "dep": [
+    60
+   ],
+   "reason": "O0003: JSON-LD as the format Google's knowledge graph uses: Google's Knowledge Graph and a serialisation, not linked open data aggregation"
+  },
+  {
+   "dep": [
+    87,
+    1127
+   ],
+   "reason": "O0004, O0044: 'a transfer of semantic capital from producer to aggregator' by the retrieval layer: the aggregator is the composition/retrieval platform, another kind"
+  },
+  {
+   "dep": [
+    126,
+    402
+   ],
+   "reason": "O0005–O0008, O0013–O0016: PER and citational return across 'citation aggregators': aggregators of citations as circulation surfaces, another kind; and the Academy as reception apparatus (no aggregator of the class)"
+  },
+  {
+   "dep": [
+    256
+   ],
+   "reason": "O0009: a table of semantic laborers; 'aggregat' inside a cell about platforms: no claim on the class"
+  },
+  {
+   "dep": [
+    597
+   ],
+   "reason": "O0017, O0018: arXiv moderation's effect on search engines, aggregators and citation databases: scholarly-feed aggregators, another kind"
+  },
+  {
+   "dep": [
+    634
+   ],
+   "reason": "O0022, O0023: the 'Wq aggregator' of a drone protocol: a component name, not the class"
+  },
+  {
+   "dep": [
+    746
+   ],
+   "reason": "O0024: news aggregators and engagement: another kind"
+  },
+  {
+   "dep": [
+    767
+   ],
+   "reason": "O0025: 'knowledge organization and linked data' in a list of external fields to bridge: a bare listing"
+  },
+  {
+   "dep": [
+    875,
+    876
+   ],
+   "reason": "O0026, O0027: OpenAIRE as 'the FAIR aggregator' disclaiming identifiers it harvests: a claim on one scholarly-metadata aggregator's commitments, not on the class of provenance aggregators"
+  },
+  {
+   "dep": [
+    1077
+   ],
+   "reason": "O0032, O0033: 'The colophon is the authority move the aggregator cannot copy': the aggregator is the AI Overview surface the paper reverse-engineers, another kind"
+  },
+  {
+   "dep": [
+    1082
+   ],
+   "reason": "O0034: an aggregator that inherits upstream moderation outcomes as a 'moderation mirror' (the OpenAIRE Graph): a claim on aggregators that inherit removals, a subclass the field does not source for this entity; read and set aside (its bearing on an aggregator that keeps its sources uncorrected (B2 F16; B7 F41) is the composer's, not the archive's)"
+  },
+  {
+   "dep": [
+    1100,
+    1116
+   ],
+   "reason": "O0035–O0043: SciLynk's 'aggregator normalization' and the aggregator fan-out to OpenAlex: scholarly-metadata aggregator platforms, another kind"
+  },
+  {
+   "dep": [
+    1409
+   ],
+   "reason": "O0045, O0046: a provenance-only scaffold for the archive's own handwritten artifacts (ImageObject/Manuscript structured data): the archive's manuscripts, not the history and provenance of medieval and Renaissance manuscripts as a class"
+  },
+  {
+   "dep": [
+    1459
+   ],
+   "reason": "O0047: an address line to 'scholarly aggregators' among machine readers: a bare listing"
+  },
+  {
+   "dep": [
+    1575
+   ],
+   "reason": "O0052: 'aggregator records only' in a verification note on Barthes: another kind"
+  },
+  {
+   "dep": [
+    1616
+   ],
+   "reason": "O0053: an affiliation string traced to a downstream aggregator: a scholarly-metadata aggregator, another kind"
+  },
+  {
+   "dep": [
+    1443
+   ],
+   "reason": "not a string-pass candidate; read for the census's provenance_carrier: §3.2 'CIDOC CRM and CRMdig — the missing ontology between page and hash' applies CIDOC CRM to the archive's capture events. CIDOC CRM is MMM's carrier, not its lineage or kind, so it is no class of this row under the addendum (§6); not admitted, recorded"
+  }
+ ],
+ "hop": {
+  "from": [
+   43,
+   317,
+   359,
+   623,
+   959,
+   1065,
+   1066,
+   1465,
+   1545
+  ],
+  "candidates": 149,
+  "deposits": 143,
+  "admitted": 1,
+  "admitted_deps": [
+   843
+  ],
+  "reason_rejected": "Every other hop candidate was read at its passages naming manuscripts, custody, ownership, aggregators or linked data (the string pass had already returned any sentence carrying the classes): they bear on the archive's own objects (navigation maps, DOI registries, the Space Ark, logotic modules, the mint papers, the Phase X line, the semantic-economy papers), not on Mapping Manuscript Migrations or on the three classes. #1064 (the superseded v1.0 of #1065) lacks the version note and is not an instance. #610 reads currency philologically (colophon, scribal succession): an analogy, not a claim on manuscript provenance."
+ },
+ "class_pass": "O-class: the three class terms matched 53 sentences in 30 deposits; admitted by reading at #43, #1065 (+#1066), #1465, #1545, #623, #317 (+#959) and #359, and through the hop #843; the rest rejected above",
+ "observations": "The archive names Mapping Manuscript Migrations nowhere: no deposit text carries the name, its domain, 'Bibale', 'Sampo' or 'ldf.fi', and 'Schoenberg' occurs only as the composer Arnold Schoenberg (#1569's teacher-pupil genealogies). Its bearing is entirely O-class: the provenance of manuscripts extended into the retrieval layer (#43); the summary that drops a manuscript's custody chain as provenance-erased (#843, #1065); aggregators as means of semantic circulation (#1465, #1545); linked data under extraction (#623) and set against bounded spaces and the symbolon (#317, #359). The archive's direct records of the entity are the provenance census record (PE) and the capture (CAP).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 53,
+   "O_deposits": 30,
+   "H_candidates": 149
+  },
+  "deposits_candidate": 30,
+  "deposits_admitted": 10,
+  "deposits_admitted_with_claims": 8,
+  "instances_grouped_S4": 2,
+  "hop_candidates": 149,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 8,
+   "pe": 22,
+   "deposit": 12
+  }
+ }
+}

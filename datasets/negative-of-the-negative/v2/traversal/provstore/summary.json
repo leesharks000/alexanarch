@@ -1,0 +1,223 @@
+{
+ "row": "provstore",
+ "address": "ProvStore",
+ "entity": "ProvStore (openprovenance.org), the public repository for W3C PROV provenance documents, storing, browsing and managing them via a Web interface or a REST API; built and led by Trung Dong Huynh (paper 'ProvStore: A Public Provenance Repository', IPAW 2014, LNCS, doi:10.1007/978-3-319-16462-5_32), run at the University of Southampton from 2013 and at King's College London from 2018, retired in December 2024 (the maintainer's page, updated 12 September 2026), while the OpenProvenance landing page says 'ProvStore is coming back soon'; formalized in the provenance meta-aggregator census record of 2026-10-29 (provenanceerasure.org/aggregators/provstore/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "provstore",
+  "address": "ProvStore",
+  "entity": "ProvStore (openprovenance.org), the public repository for W3C PROV provenance documents, storing, browsing and managing them via a Web interface or a REST API; built and led by Trung Dong Huynh (paper 'ProvStore: A Public Provenance Repository', IPAW 2014, LNCS, doi:10.1007/978-3-319-16462-5_32), run at the University of Southampton from 2013 and at King's College London from 2018, retired in December 2024 (the maintainer's page, updated 12 September 2026), while the OpenProvenance landing page says 'ProvStore is coming back soon'; formalized in the provenance meta-aggregator census record of 2026-10-29 (provenanceerasure.org/aggregators/provstore/)",
+  "row_type": "C (a public entity on which the archive bears: a provenance repository, retired; an entity of the provenance meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bProv ?Store\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bOpen ?Provenance\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bopenprovenance\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(Trung )?Dong Huynh\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\btrungdong\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b978-3-319-16462-5_32\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "W3C PROV provenance infrastructure (the PROV standards, PROV documents and the repositories and tools that store and process them)",
+    "pattern": "\\b(W3C[ -]PROV|PROV-(DM|O|N|JSON|JSONLD|XML|CONSTRAINTS|Constraints|Overview|OVERVIEW)|PROV (standard|standards|data model|documents?|Data Model)|Open Provenance Model|OPM)\\b",
+    "flags": "",
+    "basis": "field: B1 (openprovenance.org: 'A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API.'; the page's 'PROV Specifications (Recommendations and Notes)' and 'The OPM Provenance Model' under 'Provenance Legacy'); B3 and B4 (ePrints Soton and ACM DL card snippets: 'ProvStore is the first online public provenance repository supporting the new PROV standards by W3C'); B9 (the maintainer's software page: 'ProvStore was the first online public provenance repository supporting W3C's PROV standards'); census: kind 'repository (retired)', provenance_object 'a W3C PROV document', lineage 'computational lineage'"
+   },
+   {
+    "term": "provenance repositories (public stores of provenance documents)",
+    "pattern": "\\bprovenance (repositor(y|ies)|store|stores|documents?)\\b",
+    "flags": "i",
+    "basis": "field: B1 ('A provenance repository'); B3, B4 ('the first online public provenance repository'); B7 ('a free public repository for provenance documents (REST API available)'); census: kind 'repository (retired)', unit 'a provenance document'"
+   }
+  ],
+  "classes_note": "Two classes, sourced from the field by locus and matching the census's own kind and lineage for the entity (kind 'repository (retired)'; lineage 'computational lineage'; provenance_object 'a W3C PROV document'): the W3C PROV standards and the infrastructure that stores and processes PROV documents (B1, B3, B4, B9), and provenance repositories as such (B1, B3, B4, B7). The aliases are the entity's name (with and without the space), its host and operator name OpenProvenance (which also names the community model OPM's site; a candidate on 'Open Provenance Model' is the predecessor model, read and not admitted as the entity), the maintainer (Trung Dong Huynh, 'trungdong' his handle and GitHub pages host) and the paper's DOI suffix. The four letters 'PROV' alone are not an alias: they are also the homonyms of T (PROV Tokyo, PROV Exam) and the W3C standard's name, which is a class here. Admission by reading (§3.4): D where the archive names ProvStore, OpenProvenance or its maintainer and says something of it; O-class where an archive sentence applies an archive category (semantic provenance, provenance erasure, the dimensions of provenance, the Provenance Erasure Rate, the archive's provenance infrastructure) to W3C PROV or to provenance repositories as a class; a bare listing of 'W3C PROV' among anchors or keywords, a reference line or a citation-list entry is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'ProvStore' (provstore-aio-20261029, OBS-ba9f43fce1d1, ADDR-d4515bdb32d4), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#106, #121, #510, #711, #725, #1003, #1190, #1194).",
+  "hop_from": [
+   106,
+   121,
+   510,
+   711,
+   725,
+   1003,
+   1190,
+   1194
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 1,
+  "D_deposits": 1,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 1,
+  "O_class": 305,
+  "O_deposits": 115,
+  "H_candidates": 106
+ },
+ "per_deposit": {
+  "D": {
+   "603": 1
+  },
+  "R": {},
+  "O": {
+   "6": 4,
+   "7": 1,
+   "10": 2,
+   "11": 1,
+   "31": 8,
+   "84": 1,
+   "87": 1,
+   "90": 22,
+   "92": 2,
+   "106": 1,
+   "111": 3,
+   "121": 1,
+   "127": 14,
+   "132": 1,
+   "145": 1,
+   "177": 1,
+   "196": 2,
+   "229": 1,
+   "260": 1,
+   "297": 1,
+   "299": 1,
+   "304": 1,
+   "317": 1,
+   "319": 1,
+   "320": 2,
+   "321": 1,
+   "322": 3,
+   "323": 1,
+   "325": 1,
+   "327": 1,
+   "348": 2,
+   "356": 1,
+   "361": 1,
+   "363": 1,
+   "364": 1,
+   "366": 1,
+   "369": 1,
+   "371": 1,
+   "384": 2,
+   "385": 1,
+   "386": 1,
+   "390": 1,
+   "404": 1,
+   "424": 1,
+   "425": 1,
+   "510": 1,
+   "516": 1,
+   "557": 1,
+   "558": 1,
+   "584": 1,
+   "592": 1,
+   "603": 1,
+   "650": 1,
+   "707": 1,
+   "708": 1,
+   "709": 2,
+   "710": 3,
+   "711": 3,
+   "720": 1,
+   "725": 7,
+   "729": 1,
+   "745": 6,
+   "825": 3,
+   "833": 3,
+   "837": 3,
+   "912": 1,
+   "921": 1,
+   "950": 2,
+   "959": 1,
+   "980": 3,
+   "981": 3,
+   "988": 1,
+   "992": 2,
+   "994": 21,
+   "1001": 5,
+   "1003": 1,
+   "1096": 1,
+   "1098": 1,
+   "1105": 2,
+   "1109": 4,
+   "1112": 6,
+   "1113": 1,
+   "1114": 1,
+   "1119": 4,
+   "1125": 4,
+   "1127": 1,
+   "1129": 1,
+   "1143": 4,
+   "1168": 8,
+   "1170": 8,
+   "1171": 8,
+   "1190": 7,
+   "1193": 3,
+   "1194": 1,
+   "1211": 3,
+   "1216": 3,
+   "1217": 3,
+   "1223": 1,
+   "1251": 8,
+   "1252": 1,
+   "1306": 1,
+   "1356": 2,
+   "1357": 2,
+   "1369": 1,
+   "1384": 1,
+   "1386": 1,
+   "1396": 3,
+   "1397": 1,
+   "1401": 3,
+   "1429": 1,
+   "1446": 1,
+   "1460": 2,
+   "1684": 2,
+   "1687": 5,
+   "1695": 14
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 603,
+   "triple": {
+    "subject": "Inference from the mismatch",
+    "predicate": "minted_in",
+    "object": "TL;DR:009 — ENTITY FABRICATION Google AI Mode Fabricates a P",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The interface did not preserve this open provenance structure. Its entity-resolution behavior collap"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "90c9a9759fc9a6ced6d36cc81ede52f3d942dad01f9e20761dfa394dddf3fa86",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "2c064282d7df9a63055aff972dee6d025518b29a9d76614f11071a4893460dc9",
+  "candidates-H.jsonl": "b77f7e81d106ffd7060039d55cbbdd5158f562c0a022961f79cec17549dedf45"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

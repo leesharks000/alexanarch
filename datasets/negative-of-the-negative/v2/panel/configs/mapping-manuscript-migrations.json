@@ -1,0 +1,38 @@
+{
+ "row": "mapping-manuscript-migrations",
+ "address": "Mapping Manuscript Migrations",
+ "entity": "Mapping Manuscript Migrations (MMM; mappingmanuscriptmigrations.org), the Digging into Data project (2017–2020) of the University of Oxford, the University of Pennsylvania (Schoenberg Institute for Manuscript Studies), IRHT-CNRS and Aalto University that turned three databases (the Schoenberg Database of Manuscripts, Bibale, Medieval Manuscripts in Oxford Libraries) into one Linked Open Data knowledge graph of the history and provenance of medieval and Renaissance manuscripts, with a SPARQL endpoint on Linked Data Finland, the MMM Semantic Portal (Sampo-UI) and a copy on Zenodo; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/mapping-manuscript-migrations/)",
+ "row_type": "C (a public entity on which the archive bears: a linked open data aggregator of manuscript provenance; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {"pattern": "\\bMapping Manuscript Migrations\\b", "flags": "i"},
+  {"pattern": "\\bmappingmanuscriptmigrations\\b", "flags": "i"},
+  {"pattern": "\\bmapping-manuscript-migrations\\b", "flags": "i"},
+  {"pattern": "\\bMMM (Semantic Portal|Knowledge Graph|Data Model|project)\\b", "flags": ""},
+  {"pattern": "\\bldf\\.fi/(mmm|dataset/mmm)\\b", "flags": "i"},
+  {"pattern": "\\bjohd\\.14\\b", "flags": "i"}
+ ],
+ "classes": [
+  {
+   "term": "aggregators (of provenance data)",
+   "pattern": "\\baggregators?\\b",
+   "flags": "i",
+   "basis": "field and census: the census's kind 'aggregator (linked open data)' (census.json rows[slug == 'mapping-manuscript-migrations'], kind), stated by B7 (white paper, §9: 'the role of MMM as an aggregator of data rather than as a data management system') and B2 (JOHD, Introduction: 'The aggregated data can be browsed and visualized')"
+  },
+  {
+   "term": "linked open data",
+   "pattern": "\\blinked (open )?data\\b",
+   "flags": "i",
+   "basis": "field and census: the census's kind 'aggregator (linked open data)', stated by B7 (white paper, Abstract: 'The project took the data from three existing databases and turned them into Linked Open Data'), B2 (JOHD, Introduction: 'a Linked Open Data service hosted by the LDF.fi platform') and B4 (USD, Abstract: 'brought together in a Linked Open Data environment')"
+  },
+  {
+   "term": "manuscript provenance",
+   "pattern": "\\bmanuscripts?\\b.{0,80}\\bprovenance\\b|\\bprovenance\\b.{0,80}\\bmanuscripts?\\b",
+   "flags": "i",
+   "basis": "field and census: the census's lineage 'manuscripts and books' (census.json, lineage), stated by B7 (white paper, Abstract: 'a range of research questions about their history and provenance'), B2 (JOHD, title: 'Data for Tracing the History and Provenance of Medieval and Renaissance Manuscripts') and B3 (EADH: 'the history and provenance of medieval and Renaissance manuscripts')"
+  }
+ ],
+ "classes_note": "Three classes, each the census's own lineage or kind for the entity where a field source states it (addendum §6): its kind, an aggregator, of linked open data (B7 §9, B7 Abstract, B2 Introduction, B4 Abstract), and its lineage, manuscripts and books, as the history and provenance of manuscripts (B7 Abstract, B2 title, B3). The census's provenance_carrier ('RDF mapped to a unified model drawing on CIDOC CRM and FRBRoo') is neither lineage nor kind and is not a class here; the archive's one CIDOC CRM passage (#1443 §3.2) was read beside the pass and is recorded in reading.json. The aliases are the entity's name, its domain and the slug of its GitHub organisation and the census, the project's own compounds of 'MMM' (bare 'MMM' is not used: it is not in the archive's texts and would match other strings), the LDF.fi dataset paths and the JOHD article's DOI suffix. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the entity or on the class as the field sources it (an aggregator of provenance data; linked open data as a carrier of provenance; the provenance of manuscripts); a sentence about reception aggregators, the meta-aggregators of machine-mediated reception, Google's Knowledge Graph or any other aggregator of another kind is not a claim on this class.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Mapping Manuscript Migrations' (mapping-manuscript-migrations-aio-20261029, OBS-76da075982b8, ADDR-0f9b8c5a7aa2), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#43, #317, #359, #623, #959, #1065, #1066, #1465, #1545).",
+ "hop_from": [43, 317, 359, 623, 959, 1065, 1066, 1465, 1545]
+}

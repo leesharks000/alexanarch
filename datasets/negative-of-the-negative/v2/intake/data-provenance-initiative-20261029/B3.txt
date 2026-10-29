@@ -1,0 +1,125 @@
+Bringing transparency to the data used to train artificial intelligence | MIT Sloan
+Skip to main content
+MIT Sloan logo
+academics
+Expert Insights
+Values
+Events
+Alumni
+Faculty
+About
+Executive Education
+academics
+contact
+facebook
+instagram
+linkedin
+twitter
+youtube
+MIT
+Same rigor, same degree.
+Learn about the MIT Sloan Evening MBA program.
+contact
+Search
+Main Menu
+close search
+Back to Menu
+Which program is right for you?
+MBA
+A full-time, two-year MBA program.
+Leaders for Global Operations
+A two-year, dual-degree program awarding an MBA from MIT Sloan and an SM from MIT School of Engineering.
+MBA Early (Deferred admissions option)
+Deferred admission program; candidates work two to five years before enrolling in the MBA program.
+MIT Sloan Evening MBA
+An MBA program designed for working professionals.
+Master of Finance
+A 12- or 18-month graduate program in finance.
+Master of Business Analytics
+A 12-month graduate program in business analytics.
+PhD
+A doctoral program that researches management science, economics, finance, marketing, operations, strategy, and other business disciplines.
+Undergraduate
+Undergraduate degrees offered in management, business analytics, and finance.
+Master of Science in Management Studies
+Combine an international MBA with a graduate degree in management science; available to partner and affiliate school students only.
+Executive
+Programs
+MIT Executive MBA
+A 20-month executive MBA program for mid-career professionals.
+MIT Sloan Fellows MBA
+A one-year, full-time MBA program for mid-career professionals.
+System Design & Management
+A master's degree program combining engineering and management for mid-career professionals.
+Executive Education
+Non-degree programs for senior executives and high-potential managers.
+Visiting Fellows
+A non-degree, customizable program for mid-career professionals.
+Explore Our Programs
+Credit: valiantsin suprunovich/Proxima Studio via Shutterstock
+Ideas Made to Matter
+Data
+Bringing transparency to the data used to train artificial intelligence
+Using the wrong datasets to train artificial intelligence models can result in legal risks, bias, or lower-quality models. The Data Provenance Initiative’s tool can help.
+By
+Beth Stackpole
+Mar 3, 2025
+Share
+Popular large language models like GPT-4 are trained using large amounts of data, including publicly available datasets. But these AI training datasets are often inconsistently documented and poorly understood, opening the door to a litany of risks. 
+Without transparency into the lineage of data used for artificial intelligence models, researchers, businesses, and other intended users may find themselves out of compliance with emerging regulations like the European Union’s AI Act or exposed to legal and copyright risks. Lack of data transparency can lead to other problems as well, including the exposure of sensitive information, and unintended biases and behaviors. From a practical standpoint, poor traceability makes it hard to align AI training datasets with intended use cases, which could result in lower-quality models.
+AI at WorkResearch and insights powering the intersection of AI and business, delivered monthly.
+Yes, I’d also like to subscribe to the Thinking Forward newsletter
+Email
+Leave this field blank
+A team of multidisciplinary researchers, including professor Sandy Pentland and others from MIT, created the Data Provenance Initiative to tackle the data transparency challenge head-on. The collective of experts has conducted large-scale audits of the massive datasets used to train public and proprietary LLMs, tracing and documenting them from origin to creation to use case. The group has also written papers about the project and developed a user-friendly tool that generates summaries of a dataset’s creators, sources, licenses, and allowable uses. Their goal: to improve transparency, documentation, and informed use of AI training data.
+“There’s an ethical dimension to our work — we want to give proper attribution to folks who contribute to AI training models,” said co-lead author Robert Mahari, a PhD student at the MIT Media Lab and a JD candidate at Harvard Law School. “But there’s a pragmatic side as well, as we want to make sure training data is useful for the work people are doing.” 
+Vulnerabilities in AI training data 
+A trio of events in December 2023 highlighted the ramifications of using AI training data that is not fully understood. In one instance, The New York Times filed suit against OpenAI and backer Microsoft, arguing that its content was used to build generative AI models without permission or proper financial restitution. During the same period, the LAION-5B training dataset for AI image generation was found to include links to child abuse imagery, raising the possibility that AI models could be influenced by the harmful content. Further, OpenAI suspended the account of TikTok parent ByteDance after allegations that the company had used GPT-generated data to train its own competing model, thus violating the developer license. 
+These incidents exposed vulnerabilities in the current practices companies use to construct AI training datasets, which are a mix of many data types. Among them are pretraining datasets, fine-tuning datasets compiled to boost model performance for a specific task, and synthetic data generated by AI models themselves.  They may also incorporate data from open-source machine learning and data science platforms such as Hugging Face. Practitioners combine and repackage these myriad datasets, but there are insufficient efforts to attribute, document, or understand them, according to the researchers. 
+The Data Provenance team set out to facilitate informed and responsible use of data for training and fine-tuning AI models. As part of its work, the group has taken two key actions:
+Related Articles
+AI uses lots of data center energy — but there are solutions
+New database details AI risks
+What is synthetic data — and how can it help you?
+Conducted a systematic audit of more than 1,800 text datasets. The researchers traced the lineage of fine-tuning datasets from 44 of the most widely used text data collections. They found that licenses were frequently miscategorized, with error rates greater than 50% and license information omission rates of more than 70%. With the help of legal experts on the team, the group designed a pipeline for tracing data provenance, which covers the original source of a dataset, the associated licenses, the creators involved, and its subsequent use. Their efforts reduced datasets with unspecified licenses down to 30% and they added information about license terms, which helps model developers more confidently select the appropriate data for their needs.
+Established the Data Provenance Explorer tool. In tandem with the audit, the group released an open-source data repository and interactive tool for widespread use. This tool lets AI practitioners trace the lineage of popular fine-tuning datasets and to filter and explore data provenance based on specific license conditions. Practitioners can also use the tool to generate a human-readable data provenance card for datasets, easing the manual task of curating and documenting extensive dataset compilations.
+The Data Provenance team envisions three main users for its tool: AI model builders, who might want to discover new datasets and filter them for licensing restrictions; dataset creators who are interested in tracking the origins of data to give credit where credit is due; and researchers and policymakers who want to understand the broader contours of the emerging field of AI data transparency. 
+The Data Provenance Initiative has brought to light other issues that have connotations for those navigating the AI model landscape:
+There are a wide variety of license types with unique terms, making it more difficult for startups and resource-challenged organizations to navigate responsible practices for collecting and annotating training data.
+Language used in the datasets is heavily skewed toward English and Western European languages, with sparse coverage of languages from Asian, African, and South American nations, if at all. This raises the potential for inherent bias or model underperformance, depending on the use case — a factor that model builders need to consider.
+There should be pressure on regulators to help reduce legal ambiguities by clarifying how and when dataset licenses will be enforced. This will help spark innovation and promote more responsible and transparent AI practices.
+While the group’s efforts are currently focused on the data provenance of text, the plan is to expand to other media, such as video, as well as domain-specific data — for example, health- and medical-oriented datasets. 
+“There is a need to do this kind of work,” said Shayne Longpre, project co-lead and an MIT PhD candidate. “We now have contributors from 20 countries around the world. People are passionate about doing something that falls between research and investigative journalism to document where data comes from, how it’s used, and what the risks are.”
+Leading the AI-Driven Organization
+In person at MIT Sloan
+Register Now
+For more info
+Sara Brown
+Senior News Editor and Writer
+sbrown1@mit.edu
+Related Articles
+Ideas Made to Matter
+Data or privacy? Businesses can have both, MIT Sloan research finds
+Ideas Made to Matter
+5 things to know about how companies can create value from AI
+Ideas Made to Matter
+3 principles to bring your data monetization initiatives to life
+The Mission
+The mission of the MIT Sloan School of Management is to develop principled, innovative leaders who improve the world and to generate ideas that advance management practice.
+Find Us
+MIT Sloan School of Management
+100 Main Street
+Cambridge, MA 02142
+617-253-1000
+Links
+Press
+Careers
+Accessibility
+Licensing
+Privacy
+MIT Sloan on facebook
+MIT Sloan on X
+MIT Sloan on YouTube
+MIT Sloan on Instagram
+MIT Sloan on LinkedIn
+©2026 MIT Sloan School of Management

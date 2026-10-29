@@ -1,0 +1,1253 @@
+{
+ "row": "schoenberg-database",
+ "address": "Schoenberg Database of Manuscripts",
+ "addresses": [
+  "Schoenberg Database of Manuscripts"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia response texts, or the card's title and snippet for the unreachable cards and the video; 50/50 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B8: the Medieval Academy's 2015 catalogue entry, four Penn pages (unreachable), the Bibliographical Society of America's video (title only), AWOL's 2020 reprint of the home page, the MMM data paper); 'own_page', the sources the provenance census record cites with basis 'operator' (B9, the home page; B10, the MMM white paper, hosted by Aalto), neither surfaced by T, both the census's saved copies; 'wikipedia', the database's and the Institute's titles, both without an article (B11, B12). No census third-party source for this row.",
+ "lineage_note": "Lineages: what it is (B1, B2, B6, B9); the operator (B2, B5, B7); the collection (B4); the unit (B9, B10); the carrier (B6, B9, B10); count by date (B1, B6, B8, B9, B10); intake and access (B1, B9, B10); scope (B1); licence (B1, B6, B8, B9); status (B1, B9); stated limits (B10); part of MMM (B8, B10); reception (B1, B3, B6, B11, B12). The home page's self-description (B9) is one lineage with its 2015 and 2020 copies (B1, B6), the earliest B1; the census's fields that restate B9 and B10 quotes (self_description, license, unit, count) are one lineage with those pages, which keep the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/ (Bn.html or Bn.pdf raw, Bn.txt text; Bn-response.html for the 403 answers of the unreachable cards; B11/B12 .wiki, .html, -search.html raw responses with .txt summaries of the HTTP codes and notices; T1-…txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "n": 1,
+   "card": "Medieval Digital Resources — Schoenberg Database of Manuscripts – Medieval Digital Resources",
+   "url": "https://mdr-maa.org/resource/schoenberg-database-of-manuscripts/",
+   "kind": "Overview card (a catalogue entry of the Medieval Academy of America's Medieval Digital Resources)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B1.html",
+     "sha256": "b3b096aefc141269e6ab45b2b94b7651d6eb4c94e4bab1f57b010694688924d5"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B1.txt",
+     "sha256": "b7021f10e5e1b423d2eccc2c0b4645b09797c6bb351214ec508c41e6431fd9c3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:34Z",
+    "http": 200,
+    "url": "https://mdr-maa.org/resource/schoenberg-database-of-manuscripts/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B1.html",
+    "raw_sha256": "b3b096aefc141269e6ab45b2b94b7651d6eb4c94e4bab1f57b010694688924d5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B1.txt"
+    ]
+   },
+   "names_operator": "no (the entry names the database and its address, not the Schoenberg Institute)",
+   "names_archive": "no",
+   "note": "URL found by WebSearch on the card's title and site. The entry is dated 26-08-2015 and signed Lisa Fagin Davis. The card's snippet ('Resource: Schoenberg Database of Manuscripts (sdbm.library.upenn.edu); ongoing crowd-sourced, searchable, and downloadable relational database and catalog of pr...') is not in the page's text or meta description ('Created by the Medieval Academy of America'): it is the composition layer's rendering of the entry's fields; the page text is ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 1
+    }
+   ],
+   "card_title": "Schoenberg Database of Manuscripts – Medieval Digital Resources",
+   "card_snippet": "Resource: Schoenberg Database of Manuscripts (sdbm.library.upenn.edu); ongoing crowd-sourced, searchable, and downloadable relational database and catalog of pr...",
+   "card_note": "fetched; the page text is ledgered"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "n": 2,
+   "card": "Penn Libraries — Digital Projects",
+   "url": "https://www.library.upenn.edu/sims/digital-projects",
+   "kind": "Overview card (unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:06:35Z",
+      "url": "https://www.library.upenn.edu/sims/digital-projects",
+      "http": 403,
+      "response_saved": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B2-response.html",
+      "response_sha256": "151e54cd393b6e50aa1fddd8443514602f22eeba19e405a7547897895ce47c9f",
+      "error": "HTTP 403: a Cloudflare challenge page ('Just a moment...')"
+     }
+    ],
+    "note": "URL found by WebSearch on the card's title and site (title 'digital projects', library.upenn.edu/sims/). The fetch with the brief's command returned the Cloudflare challenge (saved). A request for an archived copy was not pursued (a workaround for the challenge was refused in this workspace). The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no in the snippet (the page is the operator's; the title and snippet name the database only)",
+   "names_archive": "no (title and snippet)",
+   "note": "the Schoenberg Institute's digital-projects page on the Penn Libraries site; its claims (F10, F11) are quoted from the card's title and snippet.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 2
+    }
+   ],
+   "card_title": "Digital Projects",
+   "card_snippet": "Accordion List * Schoenberg Database of Manuscripts The Schoenberg Database of Manuscripts (SDBM) is an online, user-maintained, open-access, collaborative rese...",
+   "card_note": "unreachable: snippet only"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (video)",
+   "n": 3,
+   "card": "YouTube·Bibliographical Society of America — Introduction to the Schoenberg Database of Manuscripts (SDBM)",
+   "url": null,
+   "kind": "Overview card (video, 4m; admitted through title)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "note": "A video card, admitted through its title (the card carries no snippet; the rail shows '4m'). WebSearch on the title found BibSite's record (bibsite.org/Detail/objects/86) of a Bibliographical Society of America video of the same title, a webinar by Emma Thomson recorded 19 May 2020, 'MP4, 53:57', https://www.youtube.com/watch?v=XhFbmXqlpIA. Its length does not match the card's 4m, so the card's video is not identified and BibSite's description is not admitted as the card's text. The title stands as the card's only text."
+   },
+   "names_operator": "no (title)",
+   "names_archive": "no (title)",
+   "note": "title only.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 3
+    }
+   ],
+   "card_title": "Introduction to the Schoenberg Database of Manuscripts (SDBM)",
+   "card_snippet": null,
+   "card_note": "video: title only"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "n": 4,
+   "card": "Penn Libraries — Lawrence J. Schoenberg Collection | Penn Libraries",
+   "url": "https://www.library.upenn.edu/collections/notable/lawrence-j-schoenberg",
+   "kind": "Overview card (unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:06:37Z",
+      "url": "https://www.library.upenn.edu/collections/notable/lawrence-j-schoenberg",
+      "http": 403,
+      "response_saved": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B4-response.html",
+      "response_sha256": "3de1559131cd17526a92ae5995ec0edfb7276cb27fe1ab28f8414fcc5ef27a9a",
+      "error": "HTTP 403: a Cloudflare challenge page ('Just a moment...')"
+     }
+    ],
+    "note": "Candidate URL from WebSearch (library.upenn.edu/collections/notable/lawrence-j-schoenberg); not confirmed as the card's page, since the fetch returned the Cloudflare challenge (saved). A request for an archived copy was not pursued (a workaround for the challenge was refused in this workspace). The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no in the snippet",
+   "names_archive": "no (title and snippet)",
+   "note": "the Lawrence J. Schoenberg Collection: the collection, a distinct entity from the database (task note); its claim (F13) is quoted from the card's snippet.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 4
+    }
+   ],
+   "card_title": "Lawrence J. Schoenberg Collection | Penn Libraries",
+   "card_snippet": "Collection: Lawrence J. Schoenberg Collection at Penn Libraries. Contents: Nearly 300 manuscripts and documents dating from ca. 1900 BC to the 20th century, foc...",
+   "card_note": "unreachable: snippet only"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "n": 5,
+   "card": "Penn Libraries — About SIMS",
+   "url": "https://www.library.upenn.edu/sims/about-sims",
+   "kind": "Overview card (unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:06:38Z",
+      "url": "https://www.library.upenn.edu/sims/about-sims",
+      "http": 403,
+      "response_saved": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B5-response.html",
+      "response_sha256": "9c2a87e4da729519efff250955b2f7a79eec06110559696672a6183f8b752569",
+      "error": "HTTP 403: a Cloudflare challenge page ('Just a moment...')"
+     }
+    ],
+    "note": "URL found by WebSearch on the card's title and site (title 'About SIMS'). A request for an archived copy was not pursued (a workaround for the challenge was refused in this workspace). The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes ('SIMS' in title and snippet)",
+   "names_archive": "no (title and snippet)",
+   "note": "the operator's own page; its claim (F14) is quoted from the snippet.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 5
+    }
+   ],
+   "card_title": "About SIMS",
+   "card_snippet": "About SIMS At the core of SIMS is the Lawrence J. Schoenberg collection of manuscripts, which was donated to the Penn Libraries in 2011 as part of a landmark gi...",
+   "card_note": "unreachable: snippet only"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "n": 6,
+   "card": "AWOL - The Ancient World Online — The Ancient World Online: The Schoenberg Database of Manuscripts",
+   "url": "https://ancientworldonline.blogspot.com/2016/10/the-new-schoenberg-database-of.html",
+   "kind": "Overview card (blog post reprinting the database's home page)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B6.html",
+     "sha256": "5f1743407ed436f1c097320b183e11db49c327772f95baef1e24a2b1edcf5491"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B6.txt",
+     "sha256": "c51258291e8b3cd058f8ec188e05bf99e75191bf2ff31e0fb1117c6b43ed8e8f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:21Z",
+    "http": 200,
+    "url": "https://ancientworldonline.blogspot.com/2016/10/the-new-schoenberg-database-of.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B6.html",
+    "raw_sha256": "5f1743407ed436f1c097320b183e11db49c327772f95baef1e24a2b1edcf5491",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "no (the reprint names the SDBM and its features, not the Institute)",
+   "names_archive": "no",
+   "note": "URL found through the blog's own search for the quoted name (one post titled 'The Schoenberg Database of Manuscripts'); the post is dated 'Sunday, May 10, 2020' (its URL carries 2016/10) and posted by Chuck Jones; its body reprints the database's home page of that date, facets included.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 6
+    }
+   ],
+   "card_title": "The Ancient World Online: The Schoenberg Database of Manuscripts",
+   "card_snippet": "The Schoenberg Database of Manuscripts. Schoenberg Database of Manuscripts. The SDBM continuously aggregates and updates observations of pre-modern manuscripts ...",
+   "card_note": "fetched; the page text is ledgered"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "n": 7,
+   "card": "University of Pennsylvania Press — Current and back content of Penn Press journal Manuscript Studies to ...",
+   "url": "https://www.pennpress.org/?p=4048",
+   "kind": "Overview card (unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T17:06:43Z",
+      "url": "https://www.pennpress.org/?p=4048",
+      "http": 403,
+      "response_saved": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B7-response.html",
+      "response_sha256": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd",
+      "error": "HTTP 403 Forbidden"
+     },
+     {
+      "at": "2026-10-29T17:06:44Z",
+      "url": "https://www.library.upenn.edu/news/current-and-back-content-penn",
+      "http": 403,
+      "response_saved": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B7-alt-response.html",
+      "response_sha256": "6b66425867abea497893fe4612023f233c2f2771231c9cb9cc2aa92a87a924a1",
+      "error": "HTTP 403: a Cloudflare challenge page (the Penn Libraries news item of the same title)"
+     }
+    ],
+    "note": "URLs found by WebSearch on the card's title (pennpress.org/?p=4048, the site the card names; library.upenn.edu/news/current-and-back-content-penn, the same announcement). A request for an archived copy was not pursued (a workaround for the challenge was refused in this workspace). The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no in the snippet (the journal is the Schoenberg Institute's; the snippet names the Kislak Center)",
+   "names_archive": "no (title and snippet)",
+   "note": "the announcement that the journal Manuscript Studies becomes fully Open Access; its claim (F15) is quoted from title and snippet. It says nothing of the database.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 7
+    }
+   ],
+   "card_title": "Current and back content of Penn Press journal Manuscript Studies to ...",
+   "card_snippet": "Current and back content of Penn Press journal Manuscript Studies to become fully Open Access Kislak Center for Special Collections, Rare Books and Manuscripts,",
+   "card_note": "unreachable: snippet only"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "n": 8,
+   "card": "Semantic Computing Research Group — Schoenberg Database of Manuscripts: https://sdbm.library ...",
+   "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-johd-2020.pdf",
+   "kind": "Overview card (PDF: the Mapping Manuscript Migrations data paper, Journal of Open Humanities Data, May 2020, forthcoming)",
+   "files": {
+    "B8.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B8.pdf",
+     "sha256": "8a5589af1e7cbcefb06aad7421e7340c4e604193f5db6414f4ee85dca50af973"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B8.txt",
+     "sha256": "3179235282af64cb54ca4cfe2900d5d55efd61698ee12bbc3b26c377b253aef8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:09:52Z",
+    "http": 200,
+    "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-johd-2020.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B8.pdf",
+    "raw_sha256": "8a5589af1e7cbcefb06aad7421e7340c4e604193f5db6414f4ee85dca50af973",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B8.txt"
+    ],
+    "note": "identified by fetching the PDFs the group's MMM project page links (seco.cs.aalto.fi/projects/mmm/) and matching the card's snippet, which occurs verbatim in this one ('● Schoenberg Database of Manuscripts: https://sdbm.library.upenn.edu/ (a relational database containing more than 240,000 records for manuscript observations)'); the first fetch was reset by the network and retried; text by pdftotext"
+   },
+   "names_operator": "yes ('Schoenberg Institute for Manuscript Studies' in the acknowledgments; Ransom, Thomson, Emery and Fraas among the authors)",
+   "names_archive": "no",
+   "note": "the MMM knowledge-graph data paper, hosted by Aalto's Semantic Computing Research Group; it is the aggregator's (MMM's) account of the SDBM as a source dataset.",
+   "surfaced_by_T": [
+    {
+     "slug": "schoenberg-database-of-manuscripts-aio-20261029",
+     "card": 8
+    }
+   ],
+   "card_title": "Schoenberg Database of Manuscripts: https://sdbm.library ...",
+   "card_snippet": "● Schoenberg Database of Manuscripts: https://sdbm.library.upenn.edu/ (a relational database containing more than 240,000 records for manuscript observations) ●...",
+   "card_note": "fetched; the page text is ledgered"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "own page the provenance census record cites (the database's home page)",
+   "n": null,
+   "card": "Schoenberg Database of Manuscripts — home page (sdbm.library.upenn.edu)",
+   "url": "https://sdbm.library.upenn.edu/",
+   "kind": "own page (home page)",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B9.html",
+     "sha256": "9a0fdf8805bd970aba7371e6ca91d6bef572b5f6be01d9ae2bf7c6ab4df31bb8"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B9.txt",
+     "sha256": "0c5b95551a37c6b2222c17733583babad5ec1ed9b77a0c2dc16e03fd8d5e37e2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T15:55:59Z",
+    "http": 200,
+    "url": "https://sdbm.library.upenn.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B9.html",
+    "raw_sha256": "9a0fdf8805bd970aba7371e6ca91d6bef572b5f6be01d9ae2bf7c6ab4df31bb8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B9.txt"
+    ],
+    "note": "copied from the census's saved copy (/home/claude/fleet/provenance-erasure/data/provenance-census/sources/mapping-manuscript-migrations--sdbm.html.gz, gunzipped; .txt copied as saved); census sha256 9a0fdf8805bd970aba7371e6ca91d6bef572b5f6be01d9ae2bf7c6ab4df31bb8, read 2026-10-29, HTTP 200; the gunzipped file's sha256 matches; not refetched"
+   },
+   "census_source": "mapping-manuscript-migrations--sdbm",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "names_operator": "yes ('The Schoenberg Institute for Manuscript Studies' among the related links; 'The SDBM Team')",
+   "names_archive": "no",
+   "note": "the database's own page; the census's evidence for self_description and license."
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the white paper the provenance census record cites (basis 'operator')",
+   "n": null,
+   "card": "Mapping Manuscript Migrations — White Paper (Burrows et al., seco.cs.aalto.fi, 2020)",
+   "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-mmm-white-paper.pdf",
+   "kind": "census-cited operator paper (PDF; host Aalto's Semantic Computing Research Group, not the entity's)",
+   "files": {
+    "B10.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B10.pdf",
+     "sha256": "1e28a0193aa6342b7e4c81cd29d0bcf86c3047ea82ff2b34b77235bb0528f38c"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B10.txt",
+     "sha256": "ac78f5486c9ce7302dada422e342f96b3f66dcaca9f849c48c4c3902e96d706b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T15:55:58Z",
+    "http": 200,
+    "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-mmm-white-paper.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B10.pdf",
+    "raw_sha256": "1e28a0193aa6342b7e4c81cd29d0bcf86c3047ea82ff2b34b77235bb0528f38c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B10.txt"
+    ],
+    "note": "copied from the census's saved copy (sources/mapping-manuscript-migrations--white-paper.html.gz, a gzipped PDF, saved here as B10.pdf; .txt copied as saved); census sha256 1e28a0193aa6342b7e4c81cd29d0bcf86c3047ea82ff2b34b77235bb0528f38c, read 2026-10-29, HTTP 200; the gunzipped file's sha256 matches; not refetched"
+   },
+   "census_source": "mapping-manuscript-migrations--white-paper",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "names_operator": "yes (four authors of the Schoenberg Institute: Doug Emery, Mitch Fraas, Lynn Ransom, Emma Thomson)",
+   "names_archive": "no",
+   "note": "origin 'own_page' because the census records its basis as 'operator' (the MMM project team's white paper, four of its authors the Institute's staff); its host is Aalto's, not the database's (reported). The census's evidence for unit and count."
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "n": null,
+   "card": "Wikipedia — Schoenberg Database of Manuscripts (no article)",
+   "url": "https://en.wikipedia.org/wiki/Schoenberg_Database_of_Manuscripts",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11.wiki",
+     "sha256": "06ee0f7723b34f042e0b4541684e108a3fd00333d1e49dd7ac261e998a3f03b4"
+    },
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11.html",
+     "sha256": "47ac2cbd07b976877fd3d19742edbd980de0ccf02e7d0148d8280f8a1a958fd7"
+    },
+    "B11-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11-search.html",
+     "sha256": "532bea006fbaeef60a8e6bb3af937260db9e4001196264d45c04a6a7e83d89bc"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11.txt",
+     "sha256": "df0b02a87c903ced3aed3b16d1b2ebf062a361fa6aa276be23806a4219a95f85"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Schoenberg_Database_of_Manuscripts&action=raw&redirect=no",
+     "at": "2026-10-29T17:07:38Z",
+     "http": 404,
+     "sha256": "06ee0f7723b34f042e0b4541684e108a3fd00333d1e49dd7ac261e998a3f03b4"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Schoenberg_Database_of_Manuscripts",
+     "at": "2026-10-29T17:10:39Z",
+     "http": 404,
+     "sha256": "47ac2cbd07b976877fd3d19742edbd980de0ccf02e7d0148d8280f8a1a958fd7"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22Schoenberg+Database+of+Manuscripts%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T17:10:50Z",
+     "http": 200,
+     "sha256": "532bea006fbaeef60a8e6bb3af937260db9e4001196264d45c04a6a7e83d89bc"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11.txt"
+    ],
+    "note": "the API (action=query) answered HTTP 429 (rate limit) twice and was not used; the raw and rendered titles and the rendered Special:Search page were used instead. The first raw request without a descriptive user agent also answered 404."
+   },
+   "surfaced_by_T": "no (checked by the operator's ruling of 2026-10-29)",
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article, no redirect; the quoted name occurs in article space only as a cited source in two articles."
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "the operator's Wikipedia title",
+   "n": null,
+   "card": "Wikipedia — Schoenberg Institute for Manuscript Studies (no article)",
+   "url": "https://en.wikipedia.org/wiki/Schoenberg_Institute_for_Manuscript_Studies",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B12.wiki",
+     "sha256": "b8858bcd50a426ccef4339ebee0122d00de75c56dd6a5d3b8e9684ee91aa1c3f"
+    },
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B12.html",
+     "sha256": "1e6e655ac8180476945b163a7b97e613416e0217970c4b95a13768350d59b37f"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B12.txt",
+     "sha256": "cb5094d62a150a4d105717b66c904e42af775595baba72f18c273641b8b39796"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Schoenberg_Institute_for_Manuscript_Studies&action=raw&redirect=no",
+     "at": "2026-10-29T17:07:40Z",
+     "http": 404,
+     "sha256": "b8858bcd50a426ccef4339ebee0122d00de75c56dd6a5d3b8e9684ee91aa1c3f"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Schoenberg_Institute_for_Manuscript_Studies",
+     "at": "2026-10-29T17:10:40Z",
+     "http": 404,
+     "sha256": "1e6e655ac8180476945b163a7b97e613416e0217970c4b95a13768350d59b37f"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B12.txt"
+    ]
+   },
+   "surfaced_by_T": "no (checked by the operator's ruling of 2026-10-29)",
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article for the operator."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry header",
+   "quote": "Schoenberg Database of Manuscripts Link: https://sdbm.library.upenn.edu/ Project Status: Ongoing",
+   "claim": "the address and the project's status: ongoing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "status and lifecycle",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry description s1",
+   "quote": "The SDBM continuously aggregates and updates observations of pre-modern manuscripts drawn from over 13,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document sales and locations of these books from around the world.",
+   "claim": "the database's self-description as the 2015 entry gives it: it aggregates and updates observations of pre-modern manuscripts from catalogues and inventories that document sales and locations",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: aggregated observations of pre-modern manuscripts",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry description s1 (the count)",
+   "quote": "drawn from over 13,000 auction and sales catalogs",
+   "claim": "the count of sources in 2015: over 13,000",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: sources and records, by date",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry description s2",
+   "quote": "It may be searched or browsed by author, title, seller, provenance, date, and others, and the datasets may also be downloaded in .xlsx or .csv format.",
+   "claim": "access: search and browse by author, title, seller, provenance, date; download in .xlsx or .csv",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and access",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry description s3",
+   "quote": "Members of our user community are invited to log in and help us to build, maintain, and improve this resource.",
+   "claim": "intake: the user community is invited to build and maintain it",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and access",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Resource details: Resource Type",
+   "quote": "Resource Type: Catalog , Crowd-sourced database , Downloadable data , Linked Open Data , Relational Database , Searchable Database",
+   "claim": "the entry's classification: catalogue, crowd-sourced database, downloadable data, Linked Open Data, relational database, searchable database",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: aggregated observations of pre-modern manuscripts",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Resource details: License",
+   "quote": "License: Must provide credit , No Fee",
+   "claim": "the condition of reuse: credit required, no fee",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence: the condition of reuse",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Medieval content details",
+   "quote": "Dates: 500 - 1600 … Geopolitical Region: Asia, East and South , Europe , Middle East",
+   "claim": "scope: 500 to 1600; Europe, the Middle East, East and South Asia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope: period and region",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "entry footer",
+   "quote": "26-08-2015 Lisa Fagin Davis MDR is maintained by the Medieval Academy of America",
+   "claim": "the entry dated 26 August 2015, by Lisa Fagin Davis, in the Medieval Academy of America's catalogue",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: catalogues, reprints and introductions",
+   "date": "2015-08-26 (the entry's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b7021f10e5e1b423…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (Penn Libraries unreachable: Cloudflare 403)",
+   "quote": "The Schoenberg Database of Manuscripts (SDBM) is an online, user-maintained, open-access, collaborative rese",
+   "claim": "the operator's definition: an online, user-maintained, open-access, collaborative rese[arch …] (truncated)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: aggregated observations of pre-modern manuscripts",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Digital Projects … Accordion List * Schoenberg Database of Manuscripts",
+   "claim": "the SDBM listed among the digital projects on the Penn Libraries' SIMS pages",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: SIMS at Penn Libraries",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title (video, 4m; title only)",
+   "quote": "Introduction to the Schoenberg Database of Manuscripts (SDBM)",
+   "claim": "an introductory video on the Bibliographical Society of America's YouTube channel (the card's site), four minutes on the rail",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: catalogues, reprints and introductions",
+   "date": "—",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "Collection: Lawrence J. Schoenberg Collection at Penn Libraries. Contents: Nearly 300 manuscripts and documents dating from ca. 1900 BC to the 20th century, foc",
+   "claim": "the Lawrence J. Schoenberg Collection: nearly 300 manuscripts and documents, ca. 1900 BC to the 20th century (the collection, a distinct entity)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collection: a distinct entity on the rail",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F14": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "At the core of SIMS is the Lawrence J. Schoenberg collection of manuscripts, which was donated to the Penn Libraries in 2011 as part of a landmark gi",
+   "claim": "the operator's genealogy: SIMS has at its core the Lawrence J. Schoenberg collection, donated to Penn Libraries in 2011",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: SIMS at Penn Libraries",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F15": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Current and back content of Penn Press journal Manuscript Studies to become fully Open Access Kislak Center for Special Collections, Rare Books and Manuscripts,",
+   "claim": "the journal Manuscript Studies, current and back content, to become fully Open Access (Penn Press; Kislak Center)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: SIMS at Penn Libraries",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F16": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post body ¶1",
+   "quote": "The SDBM continuously aggregates and updates observations of pre-modern manuscripts drawn from over 14,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document the sales and locations of these books from around the world.",
+   "claim": "the database's self-description as AWOL reprinted it in 2020: over 14,000 sources",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: aggregated observations of pre-modern manuscripts",
+   "date": "2020-05-10 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c51258291e8b3cd0…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post body: 'Here's what you can do'",
+   "quote": "Download Search Results for your own use under a Creative Commons Attribution-ShareAlike 4.0 Unported License",
+   "claim": "the licence of downloaded results, as reprinted: CC BY-SA 4.0",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence: the condition of reuse",
+   "date": "2020-05-10 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c51258291e8b3cd0…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post body: facets, Source Type",
+   "quote": "Source Type Collection Catalog 122,751 Auction/Dealer Catalog 99,319 Unpublished Source 19,859",
+   "claim": "the source-type facet in 2020: collection catalogues 122,751, auction/dealer catalogues 99,319, unpublished sources 19,859",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: sources and records, by date",
+   "date": "2020-05-10 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c51258291e8b3cd0…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post header and footer",
+   "quote": "Sunday, May 10, 2020 The Schoenberg Database of Manuscripts … Posted by Chuck Jones at 6:37 PM",
+   "claim": "AWOL's post of 10 May 2020, by Chuck Jones",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: catalogues, reprints and introductions",
+   "date": "2020-05-10 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c51258291e8b3cd0…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post body: 'New Interactive Features'",
+   "quote": "New Interactive Features VIAF-based Name Authority. (Read More) Enhanced Provenance data.",
+   "claim": "the features as reprinted: a VIAF-based name authority, enhanced provenance data",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: observations with a name authority",
+   "date": "2020-05-10 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c51258291e8b3cd0…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Data Transformation and Aggregation', list item 1",
+   "quote": "Schoenberg Database of Manuscripts: https://sdbm.library.upenn.edu/ (a relational database containing more than 240,000 records for manuscript observations)",
+   "claim": "the SDBM in MMM's data paper: a relational database of more than 240,000 records for manuscript observations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: sources and records, by date",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Data Transformation and Aggregation' ¶1",
+   "quote": "MMM combines data from three specialist databases, which focus on the history and provenance of medieval and Renaissance manuscripts",
+   "claim": "the SDBM one of three specialist databases on the history and provenance of medieval and Renaissance manuscripts, combined by MMM",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Data Transformation and Aggregation' ¶3",
+   "quote": "The original data have not been corrected or amended in any way by the MMM project. … Errors and omissions in the data should be reported to the owners of the source datasets.",
+   "claim": "the aggregator's stated limit: the source data are not amended; errors go to the source datasets' owners",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Data Reuse' s1",
+   "quote": "The MMM data are made available for reuse under a CC BY-NC 4.0 license.",
+   "claim": "the aggregate's licence: CC BY-NC 4.0 (MMM's data, not the SDBM's downloads)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence: the condition of reuse",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Journal of Open Humanities Data, May 2020, forthcoming … Lynn Ransom, Emma Cawlfield Thomson",
+   "claim": "the data paper's date and venue, the Institute's staff among its authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "'Data Services Online'",
+   "quote": "A typical example of a URI for an MMM resource can be seen here: http://ldf.fi/mmm/manifestation_singleton/sdbm_784",
+   "claim": "an SDBM manuscript as an MMM Linked Data resource (manifestation singleton sdbm_784)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020-05 (JOHD, May 2020, forthcoming)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3179235282af64cb…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'Welcome to the Schoenberg Database of Manuscripts!'",
+   "quote": "The SDBM continuously aggregates and updates historic observations of pre-modern manuscripts drawn from over 14,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document the sales and locations of these books from around the world.",
+   "claim": "the database's self-definition: it aggregates and updates historic observations of pre-modern manuscripts from over 14,000 sources documenting sales and locations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: aggregated observations of pre-modern manuscripts",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: invitation and 'Here's what you can do'",
+   "quote": "We invite members of our user community to Log In and help us to build and maintain this resource. … Contribute Data , including your own personal observations of a manuscript or group of manuscripts. … Batch upload data via our customized data entry spreadsheet!",
+   "claim": "intake: users log in to contribute observations, singly or by batch upload",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and access",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'Here's what you can do'",
+   "quote": "Download Search Results for your own use under a Creative Commons Attribution-ShareAlike 4.0 Unported License",
+   "claim": "the licence of downloaded results: CC BY-SA 4.0",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence: the condition of reuse",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'New Interactive Features'",
+   "quote": "VIAF-based Name Authority. … Enhanced Provenance data. … Explore our SPARQL endpoint.",
+   "claim": "the carriers: a VIAF-based name authority, enhanced provenance data, a SPARQL endpoint",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: observations with a name authority",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'About' and 'Help' menus",
+   "quote": "SDBM Name Authority SDBM Place Authority … Entity Relationship Diagram SPARQL Data Model",
+   "claim": "the record structure the menus name: a name authority, a place authority, an entity-relationship diagram, a SPARQL data model",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: an observation, linked into a manuscript record",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: facets, Source Type",
+   "quote": "Source Type Collection Catalog 129,525 Auction/Dealer Catalog 106,401 Unpublished Source 23,861",
+   "claim": "the source-type facet as read in 2026: collection catalogues 129,525, auction/dealer catalogues 106,401, unpublished sources 23,861",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: sources and records, by date",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: facets, Provenance",
+   "quote": "Provenance Bibliothèque nationale de France 23,741 Phillipps, Thomas, Sir, 1792-1872 21,582 British Library 7,822",
+   "claim": "the provenance facet's head: the Bibliothèque nationale de France, Sir Thomas Phillipps, the British Library",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: observations with a name authority",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'Recent Changes to the New SDBM'",
+   "quote": "As of April 1, 2017, thanks to input from the user community, we have made a number of changes to the design and functionality of the database.",
+   "claim": "the New SDBM: changes of 1 April 2017 from user input",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "status and lifecycle",
+   "date": "2017-04-01 (as the page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "home: 'Recent Activity'",
+   "quote": "Recent Activity lransomNEW posted in Ketterer Auctions - 30 November 2020 over 2 years",
+   "claim": "the forum's most recent post as rendered, aged 'over 2 years'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "status and lifecycle",
+   "date": "2026-10-29 (page undated; as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 0c5b95551a37c6b2…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ data modelling (p. 5)",
+   "quote": "The former takes a single manuscript as the basic unit, and attaches the evidence of its history to that record. The latter focuses on an “observation” of a manuscript in a sales or auction catalogue or collection catalogue; there may be multiple observations of the",
+   "claim": "the unit: the observation of a manuscript in a sales, auction or collection catalogue, against Bibale's single manuscript",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: an observation, linked into a manuscript record",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ data modelling (p. 5)",
+   "quote": "Schoenberg Database of Manuscripts (Schoenberg Institute for Manuscript Studies, 240,000 records)",
+   "claim": "the count in the white paper: 240,000 records",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: sources and records, by date",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ the unified data model",
+   "quote": "The Schoenberg Database, on the other hand, consists of records which are observations of a manuscript at a point in time. Where two or more observations have been linked, the linking “manuscript record” is mapped to the F4 Manifestation Singleton class",
+   "claim": "records are observations of a manuscript at a point in time; linked observations form a manuscript record",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: an observation, linked into a manuscript record",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ vocabularies",
+   "quote": "the Schoenberg Database, on the other hand, tracks generic titles rather than works in the specific sense employed by FRBR.",
+   "claim": "stated limit: generic titles, not FRBR works",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ last known location",
+   "quote": "This information is not specifically present in the Schoenberg Database, although it can often be inferred from the most recent observation about a specific manuscript.",
+   "claim": "stated limit: a manuscript's current shelf-mark and place are not recorded; they are inferred from the latest observation",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ research questions",
+   "quote": "It was clear, for example, that entries in the Schoenberg Database for sales and gifts did not have place information associated with them.",
+   "claim": "stated limit: entries for sales and gifts had no place information",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ evaluation",
+   "quote": "Some questions could not be answered at all using the source databases alone (8 in Bibale, 8 in Oxford, 6 in Schoenberg). In the MMM Portal, on the other hand, a majority of the questions (17 out of 25) could be answered readily",
+   "claim": "evaluation: 6 of 25 research questions not answerable from the SDBM alone",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ outcomes for the source datasets",
+   "quote": "For instance, in the Schoenberg Database and Bibale, hundreds of personal and institutional names have been corrected for authority control",
+   "claim": "through MMM, hundreds of names in the SDBM corrected for authority control",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the carrier: observations with a name authority",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ vocabularies and identifiers (p. 20)",
+   "quote": "is limited to names associated with book publishing as supplied by the world’s national libraries; the Schoenberg Institute for Manuscript Studies is ineligible to participate in this programme, despite offering to contribute.",
+   "claim": "stated limit: VIAF takes names from national libraries; the Institute is ineligible to participate, despite offering",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "“Mapping Manuscript Migrations” (MMM) is a project funded between 2017 and 2020 by the Digging into Data Challenge. … The project took the data from three existing databases and turned them into Linked Open Data.",
+   "claim": "MMM (2017–2020) took three databases, the SDBM among them, and turned them into Linked Open Data",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "§ outcomes for the source datasets",
+   "quote": "The Schoenberg Database has also been able to mount a … public SPARQL endpoint … , which enables a search of the pre-transformation RDF version of the data.",
+   "claim": "a public SPARQL endpoint over the pre-transformation RDF of the data",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake and access",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "title page",
+   "quote": "White Paper Prepared by members of the “Mapping Manuscript Migrations” Project Team … Doug Emery, Schoenberg Institute for Manuscript Studies, University of Pennsylvania",
+   "claim": "the white paper by the MMM project team, the Institute's staff among its authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "part of: Mapping Manuscript Migrations",
+   "date": "2020 (white paper; the project ran 2017–2020)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ac78f5486c9ce730…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Schoenberg_Database_of_Manuscripts",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article 'Schoenberg Database of Manuscripts'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 df0b02a87c903ced…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: full-text search for the quoted name",
+   "quote": "Results 1 – 2 of 2 … result 1: Black Hours, Morgan MS 493 … result 2: Sister Carrie",
+   "claim": "the quoted name in article space only as a cited source, in two articles",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 df0b02a87c903ced…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Schoenberg_Institute_for_Manuscript_Studies",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article 'Schoenberg Institute for Manuscript Studies'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 cb5094d62a150a4d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Medieval Digital Resources — Schoenberg Database of Manuscripts – Medieval Digital Resources",
+  "B2": "Penn Libraries — Digital Projects",
+  "B3": "YouTube·Bibliographical Society of America — Introduction to the Schoenberg Database of Manuscripts (SDBM)",
+  "B4": "Penn Libraries — Lawrence J. Schoenberg Collection | Penn Libraries",
+  "B5": "Penn Libraries — About SIMS",
+  "B6": "AWOL - The Ancient World Online — The Ancient World Online: The Schoenberg Database of Manuscripts",
+  "B7": "University of Pennsylvania Press — Current and back content of Penn Press journal Manuscript Studies to ...",
+  "B8": "Semantic Computing Research Group — Schoenberg Database of Manuscripts: https://sdbm.library ...",
+  "B9": "Schoenberg Database of Manuscripts — home page (sdbm.library.upenn.edu)",
+  "B10": "Mapping Manuscript Migrations — White Paper (Burrows et al., seco.cs.aalto.fi, 2020)",
+  "B11": "Wikipedia — Schoenberg Database of Manuscripts (no article)",
+  "B12": "Wikipedia — Schoenberg Institute for Manuscript Studies (no article)"
+ }
+}

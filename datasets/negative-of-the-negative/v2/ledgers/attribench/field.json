@@ -1,0 +1,878 @@
+{
+ "row": "attribench",
+ "address": "AttriBench",
+ "addresses": [
+  "AttriBench"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-10-29, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), PyPI's JSON API text for the challenge-gated card, and the Wikipedia response texts; 37/37 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B5: the paper's abstract page, the homonym library's PyPI page and documentation, the dataset repository, the homonym finance exercise); 'own_page', the entity's own page the provenance census cites that T did not surface (B6, the dataset card; the census's other source, the paper's abstract page, is the card B1 and is carried once, as a card); 'wikipedia', the title AttriBench, without an article (B7). No card is unreachable: the PyPI project page answered a script challenge and its text is taken from PyPI's JSON API for the same project. The census read no third-party source for this entity (both its sources have basis 'operator'), so the origin 'census_third_party' is empty. Three cards (B2, B3, B5) are on homonyms, distinct entities; their claims are ledgered as the field gives them and composed as homonyms, never senses of the name.",
+ "lineage_note": "Lineages: the makers and the paper (B1, B6); why: attribution in LLM search (B1); what it is: a quote attribution benchmark (B1, B6); findings: accuracy and its disparities (B1); suppression: attribution omitted where authorship is available (B1, B6); lifecycle and versions (B1); homonym: attribench, the PyTorch feature-attribution library (B2, B3); where it lives: the dataset repository (B4); licence (B4, B6); homonym: the finance exercise (B5); the data: quotes, authors, splits, source corpus (B6); the balance: race, gender, fame (B6); the unit: a quote and its canonical author (B6); reception: the encyclopedia (B7). The census's evidence quotes are the abstract page's (B1) and the dataset card's (B6) text; the fields that restate them are one lineage with those sources, the source earliest.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/attribench-20261029/ (Bn.html raw, Bn.txt text: tags, scripts and styles stripped; B2.html the challenge page, B2-api.json PyPI's JSON for the project, B2.txt its fields and description; B4.txt opens with the served title and meta description; B6 copied from the census's saved copy; B7 .wiki, .html, -search.html raw responses with a .txt summary of the HTTP codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "arXiv — [2604.05224] Attribution Bias in Large Language Models - arXiv",
+   "url": "https://arxiv.org/abs/2604.05224",
+   "kind": "Overview card (the entity's paper: abstract page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attribench-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B1.html",
+     "sha256": "4cd45d850843388a115f9a978cfcfc0312ed6f955cc82b9df07a53ce4cf39894"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B1.txt",
+     "sha256": "cb64bc8db8a8755ea123dbb48a0639764db15821b72b310c5af6aa17519fcc80"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:09Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2604.05224",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B1.html",
+    "raw_sha256": "4cd45d850843388a115f9a978cfcfc0312ed6f955cc82b9df07a53ce4cf39894",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B1.txt"
+    ]
+   },
+   "card_title": "[2604.05224] Attribution Bias in Large Language Models - arXiv",
+   "card_snippet": "Apr 6, 2026 — In this work, we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset. By explicitly balancing author fame and...",
+   "card_note": null,
+   "names_operator": "yes ('Eliza Berman', 'Bella Chang', 'Daniel B. Neill', 'Emily Black' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's title and identifier ([2604.05224]); the card's snippet is the abstract's second sentence. This is also the page the provenance census saved as its source attribench--paper: the census copy (sources/attribench--paper.html.gz, read 2026-10-29, sha256 4cd45d850843388a…) and this fetch are byte-identical (same sha256), so the page is carried once, as a card, and the census's evidence quotes from it are one lineage with B1."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 (homonym)",
+   "card": "pypi.org — attribench · PyPI",
+   "url": "https://pypi.org/project/attribench/",
+   "kind": "Overview card (homonym: the PyTorch library's package page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attribench-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B2.html",
+     "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    },
+    "B2-api.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B2-api.json",
+     "sha256": "cabab8d45aa8ab797b4e850810c5fa1b3ad4275be26a042a9c08f2186fb55e14"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B2.txt",
+     "sha256": "50a4d3a73abe64678fc03186532adb230bb86d6e5606f461da9dd98a8d39fc70"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:10Z",
+    "http": 200,
+    "url": "https://pypi.org/project/attribench/",
+    "challenge": "the project page answered HTTP 200 with a 'Client Challenge' script page (no project text) on three fetches (17:10:10, 17:10:27, 17:10:27 UTC); saved as B2.html",
+    "api": {
+     "url": "https://pypi.org/pypi/attribench/json",
+     "at": "2026-10-29T17:10:28Z",
+     "http": 200,
+     "file": "B2-api.json"
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B2.html",
+    "raw_sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B2.txt"
+    ]
+   },
+   "card_title": "attribench · PyPI",
+   "card_snippet": "Aug 25, 2023 — AttriBench is a Pytorch-based implementation of several metrics for the evaluation of feature attribution maps and methods. AttriBench provides a functional ...",
+   "card_note": null,
+   "names_operator": "no (names the homonym's makers, Arne Gevaert and Axel-Jan Rousseau)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's title ('attribench · PyPI'). The rendered project page is behind a JavaScript client challenge; its text is taken from PyPI's JSON API for the same project (the package's metadata and long description as served), written to B2.txt with a header saying so. The card's date 'Aug 25, 2023' is the upload date of release 0.1.4 (F15)."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (homonym)",
+   "card": "attribench.readthedocs.io — Welcome to AttriBench's documentation! — AttriBench 0.0.1 ...",
+   "url": "https://attribench.readthedocs.io/en/latest/",
+   "kind": "Overview card (homonym: the library's documentation)",
+   "surfaced_by_T": [
+    {
+     "slug": "attribench-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B3.html",
+     "sha256": "7f5567fd6f45ef6601e6054a3059ba7c0c8583b3e2727824a29a5d554dd114ae"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B3.txt",
+     "sha256": "c8db1ef58efb493120aa1b097d9d663cc89f05bbd169d5f6cc4e6c23c751c277"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:10Z",
+    "http": 200,
+    "url": "https://attribench.readthedocs.io/en/latest/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B3.html",
+    "raw_sha256": "7f5567fd6f45ef6601e6054a3059ba7c0c8583b3e2727824a29a5d554dd114ae",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B3.txt"
+    ]
+   },
+   "card_title": "Welcome to AttriBench's documentation! — AttriBench 0.0.1 ...",
+   "card_snippet": "AttriBench is a Pytorch-based benchmarking tool for feature attribution-based explanations of machine learning models. Note. This documentation is still under .",
+   "card_note": null,
+   "names_operator": "no (names the homonym's makers in its copyright line)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's site and title; the snippet is the page's opening and its note, cut ('still under .')."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "huggingface.co — bermaneh/AttriBench at main - Hugging Face",
+   "url": "https://huggingface.co/datasets/bermaneh/AttriBench/tree/main",
+   "kind": "Overview card (the entity's dataset repository, files view)",
+   "surfaced_by_T": [
+    {
+     "slug": "attribench-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B4.html",
+     "sha256": "1a02535bcdca6a455657e9614f3180681c99956ef00951ba1b6b289b70c1f76b"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B4.txt",
+     "sha256": "938e673fc5678d9a4197a987e0bf0ee8705e7e17a46355145901b1b7b35ee4c9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:10Z",
+    "http": 200,
+    "url": "https://huggingface.co/datasets/bermaneh/AttriBench/tree/main",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B4.html",
+    "raw_sha256": "1a02535bcdca6a455657e9614f3180681c99956ef00951ba1b6b289b70c1f76b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B4.txt"
+    ]
+   },
+   "card_title": "bermaneh/AttriBench at main - Hugging Face",
+   "card_snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "card_note": null,
+   "names_operator": "the namespace 'bermaneh' only; no author name in the saved text",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's title ('bermaneh/AttriBench at main', the repository's main-branch view). The card's snippet is the page's served meta description, Hugging Face's own tagline (F22). The dataset card itself (README) is the own page B6."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (homonym)",
+   "card": "www.eurekasimulations.com — AttriBench: Investment Performance Measurement & Attribution",
+   "url": "https://www.eurekasimulations.com/basics/AttriBench-Performance/",
+   "kind": "Overview card (homonym: the finance exercise's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "attribench-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B5.html",
+     "sha256": "4d36b9f4534bf12d5feffa5c03e0a3ee718d95968f6baf3222f564ff3d234aa3"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B5.txt",
+     "sha256": "cc274e4f9511f42e6161341a4b0140f3c39c652d227104c5b77279231285c928"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:11Z",
+    "http": 200,
+    "url": "https://www.eurekasimulations.com/basics/AttriBench-Performance/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B5.html",
+    "raw_sha256": "4d36b9f4534bf12d5feffa5c03e0a3ee718d95968f6baf3222f564ff3d234aa3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B5.txt"
+    ]
+   },
+   "card_title": "AttriBench: Investment Performance Measurement & Attribution",
+   "card_snippet": "Interactive exercise where participants decompose a global equity fund's 12-month excess returns using Brinson attribution, analyzing allocation…",
+   "card_note": null,
+   "names_operator": "no (names the homonym's operator, Kudzu Partners SL)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found in the site's sitemap.xml (https://www.eurekasimulations.com/sitemap.xml lists /basics/AttriBench-Performance/; two WebSearch queries on the title and the site returned no page); the card's snippet is the page's meta description."
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "own page the provenance census cites (the dataset card)",
+   "card": "Hugging Face — bermaneh/AttriBench README.md (the dataset card)",
+   "url": "https://huggingface.co/datasets/bermaneh/AttriBench/raw/main/README.md",
+   "kind": "own page (dataset card, raw Markdown)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B6.html",
+     "sha256": "3a243bf599199af1e8cf91b8ac8f0c26dd80993bf8d0b4018febfe836f3ab7df"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B6.txt",
+     "sha256": "3a243bf599199af1e8cf91b8ac8f0c26dd80993bf8d0b4018febfe836f3ab7df"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29 (the census's read date)",
+    "http": 200,
+    "url": "https://huggingface.co/datasets/bermaneh/AttriBench/raw/main/README.md",
+    "census_copy": "copied from the census's saved copy, /home/claude/fleet/provenance-erasure/data/provenance-census/sources/attribench--dataset-card.html.gz (gunzipped) and .txt; census sha256 3a243bf599199af1e8cf91b8ac8f0c26dd80993bf8d0b4018febfe836f3ab7df, read 2026-10-29, HTTP 200; not refetched (the saved copy is whole; the raw Markdown is its own text, so B6.html and B6.txt are identical)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B6.html",
+    "raw_sha256": "3a243bf599199af1e8cf91b8ac8f0c26dd80993bf8d0b4018febfe836f3ab7df",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes (the citation's authors: Berman, Chang, Neill, Black; 'Berman et al., 2026')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "not surfaced by T (the card B4 is the repository's files view, not the card's text); admitted beside the cards by the operator's ruling of 2026-10-29. The census's second source, the paper's abstract page, is the card B1."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "card": "Wikipedia — AttriBench (no article)",
+   "url": "https://en.wikipedia.org/wiki/AttriBench",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B7.wiki",
+     "sha256": "c1e15306a595cf6c8af30d6daffe28b8a4c106831001dca7da086140b3fdf951"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B7.html",
+     "sha256": "ec1774f761a097e9f79109adb202670271f583e374a3db270d839ee4d8e8cbab"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B7-search.html",
+     "sha256": "db870c714df5b2aa80f90b6630d437d71dd50a17c43dd80c7aa4893eedca8ce0"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B7.txt",
+     "sha256": "d599df6ab0caa794184e2c00eb2a64c4dde23d77222ef08fb8f37b0b6fe3dbe1"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=AttriBench&action=raw&redirect=no",
+     "at": "2026-10-29T17:10:54Z",
+     "http": 404,
+     "sha256": "c1e15306a595cf6c8af30d6daffe28b8a4c106831001dca7da086140b3fdf951"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/AttriBench",
+     "at": "2026-10-29T17:10:55Z",
+     "http": 404,
+     "sha256": "ec1774f761a097e9f79109adb202670271f583e374a3db270d839ee4d8e8cbab"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22AttriBench%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T17:10:56Z",
+     "http": 200,
+     "sha256": "db870c714df5b2aa80f90b6630d437d71dd50a17c43dd80c7aa4893eedca8ce0"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B7.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "no article; no redirect; the full-text search for the quoted name in article space returns no results"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "abstract page header (submission line, title, authors)",
+   "quote": "[Submitted on 6 Apr 2026 ( v1 ), last revised 24 Sep 2026 (this version, v2)] … Title: Attribution Bias in Large Language Models … Authors: Eliza Berman , Bella Chang , Daniel B. Neill , Emily Black",
+   "claim": "the paper that introduces it, 'Attribution Bias in Large Language Models', by Eliza Berman, Bella Chang, Daniel B. Neill and Emily Black, submitted 6 April 2026, revised 24 September 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers and the paper",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "As Large Language Models (LLMs) are increasingly used to support search and information retrieval, it is critical that they accurately attribute content to its original authors.",
+   "claim": "the motivation: LLMs used for search and retrieval must attribute content accurately to its original authors",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "why: attribution in LLM search",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "In this work, we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset.",
+   "claim": "what it is: the first fame- and demographically-balanced quote attribution benchmark dataset",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a quote attribution benchmark",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "By explicitly balancing author fame and demographics, AttriBench enables controlled investigation of demographic bias in quote attribution.",
+   "claim": "its function: balancing author fame and demographics enables controlled investigation of demographic bias in quote attribution",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a quote attribution benchmark",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "Using this dataset, we evaluate 11 widely used LLMs across different prompt settings and find that quote attribution remains a challenging task even for frontier models.",
+   "claim": "finding: 11 widely used LLMs evaluated across prompt settings; quote attribution remains challenging even for frontier models",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: accuracy and its disparities",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "We observe large and systematic disparities in attribution accuracy between race, gender, and intersectional groups.",
+   "claim": "finding: large and systematic disparities in attribution accuracy between race, gender and intersectional groups",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "findings: accuracy and its disparities",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s6",
+   "quote": "We further introduce and investigate suppression, a distinct failure mode in which models omit attribution entirely, even when the model has access to authorship information.",
+   "claim": "suppression defined: a distinct failure mode in which models omit attribution entirely though they have access to authorship information",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "suppression: attribution omitted where authorship is available",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s7",
+   "quote": "We find that suppression is widespread and unevenly distributed across demographic groups, revealing systematic biases not captured by standard accuracy metrics.",
+   "claim": "finding: suppression is widespread and unevenly distributed across demographic groups, biases standard accuracy metrics do not capture",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "suppression: attribution omitted where authorship is available",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s8",
+   "quote": "Our results position quote attribution as a benchmark for representational fairness in LLMs.",
+   "claim": "the authors' reading: quote attribution as a benchmark for representational fairness in LLMs",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "why: attribution in LLM search",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Comments",
+   "quote": "Accepted at COLM 2026. 25 pages",
+   "claim": "accepted at COLM 2026; 25 pages",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle and versions",
+   "date": "2026-09-24 (v2; as the abstract page reads 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Submission history",
+   "quote": "[v1] Mon, 6 Apr 2026 22:40:03 UTC (2,212 KB) [v2] Thu, 24 Sep 2026 19:36:19 UTC (3,003 KB)",
+   "claim": "versions: v1 6 April 2026, v2 24 September 2026",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle and versions",
+   "date": "2026-04-06 (v1 submitted; v2 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cb64bc8db8a8755e…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PyPI JSON API (the project page answered a client challenge): summary; description ¶1",
+   "quote": "summary: A benchmark for feature attribution techniques … **AttriBench** is a `Pytorch <https://pytorch.org/>`_-based implementation of several metrics for the evaluation of feature attribution maps and methods.",
+   "claim": "the homonym attribench: a PyTorch-based implementation of metrics for evaluating feature attribution maps and methods (a benchmark for feature attribution techniques)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023-07-26 (first release; as PyPI serves it 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 50a4d3a73abe6467…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PyPI JSON API: description ¶1",
+   "quote": "AttriBench provides a functional and an object-oriented API for the computation of these metrics",
+   "claim": "the homonym's function: a functional and an object-oriented API for computing the metrics",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023-07-26 (first release; as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 50a4d3a73abe6467…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PyPI JSON API: author_email (names only quoted)",
+   "quote": "author_email: Arne Gevaert … Axel-Jan Rousseau",
+   "claim": "the homonym's makers: Arne Gevaert and Axel-Jan Rousseau",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2026-10-29 (as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 50a4d3a73abe6467…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "PyPI JSON API: releases (upload dates)",
+   "quote": "0.1.0: 2023-07-26 … 0.1.4: 2023-08-25 … 0.1.9: 2024-03-06",
+   "claim": "the homonym's releases: 0.1.0 on 26 July 2023, 0.1.4 on 25 August 2023 (the card's date), 0.1.9 on 6 March 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023-07-26 to 2024-03-06",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 50a4d3a73abe6467…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Read the Docs index: opening",
+   "quote": "AttriBench is a Pytorch-based benchmarking tool for feature attribution-based explanations of machine learning models.",
+   "claim": "the homonym's documentation: a PyTorch-based benchmarking tool for feature-attribution explanations of machine-learning models",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023 (copyright line; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c8db1ef58efb4931…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Read the Docs index: note",
+   "quote": "This documentation is still under construction.",
+   "claim": "the homonym's documentation is still under construction",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023 (copyright line; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c8db1ef58efb4931…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Read the Docs index: footer",
+   "quote": "© Copyright 2023, Arne Gevaert, Axel-Jan Rousseau.",
+   "claim": "the homonym's documentation: copyright 2023, Arne Gevaert and Axel-Jan Rousseau",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: attribench, the PyTorch feature-attribution library",
+   "date": "2023",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c8db1ef58efb4931…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "repository page header",
+   "quote": "Datasets: bermaneh / AttriBench",
+   "claim": "the dataset repository: bermaneh/AttriBench on Hugging Face",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "where it lives: the dataset repository",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 938e673fc5678d9a…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "repository page: dataset tags",
+   "quote": "License: cc-by-4.0",
+   "claim": "licence: CC BY 4.0 (repository tag)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 938e673fc5678d9a…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "repository page: files and versions",
+   "quote": "1 contributor History: 3 commits",
+   "claim": "one contributor, three commits",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "where it lives: the dataset repository",
+   "date": "2026-10-29 (as fetched; commits '6 months ago')",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 938e673fc5678d9a…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "served HTML meta description (the card's snippet)",
+   "quote": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "claim": "the card's snippet is Hugging Face's own tagline, the page's served description, and says nothing of the dataset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "where it lives: the dataset repository",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 938e673fc5678d9a…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "page heading and description",
+   "quote": "AttriBench: Investment Performance Measurement & Attribution Workbench … Interactive exercise where participants decompose a global equity fund's 12-month excess returns using Brinson attribution, analyzing allocation, selection, and interaction effects to distinguish manager skill from luck",
+   "claim": "the homonym AttriBench (finance): an interactive exercise decomposing a global equity fund's 12-month excess returns by Brinson attribution",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: the finance exercise",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 cc274e4f9511f42e…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Simulation details: 'Who it is for', 'How a session runs'",
+   "quote": "designed for executive education and experienced professionals. … Participants play 6 rounds.",
+   "claim": "the finance exercise's audience and form: executive education and experienced professionals; six rounds",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the finance exercise",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 cc274e4f9511f42e…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© 2026 Copyright: Kudzu Partners SL",
+   "claim": "the finance exercise's operator: Kudzu Partners SL (Eureka Simulations)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the finance exercise",
+   "date": "2026",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 cc274e4f9511f42e…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: heading paragraph",
+   "quote": "A fame- and demographically-balanced quote attribution benchmark for measuring attribution bias in LLMs. Introduced in [Berman et al., 2026](https://arxiv.org/abs/2604.05224).",
+   "claim": "the dataset card's definition: a fame- and demographically-balanced quote attribution benchmark for measuring attribution bias in LLMs, introduced in Berman et al. 2026",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a quote attribution benchmark",
+   "date": "2026 (card; read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: list item 1",
+   "quote": "**15,620 quotes** from **6,292 unique authors** across two splits (`intersectional`: 7,964 quotes / 2,968 authors; `multirace`: 7,656 quotes / 3,324 authors)",
+   "claim": "the data: 15,620 quotes from 6,292 authors in two splits (intersectional 7,964 / 2,968; multirace 7,656 / 3,324)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the data: quotes, authors, splits, source corpus",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: list item 2",
+   "quote": "Authors balanced on **race**, **gender**, and **fame** (Google Search hits)",
+   "claim": "the balance: authors balanced on race, gender and fame (Google Search hits)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the balance: race, gender, fame",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: list item 3",
+   "quote": "Source: filtered subset of the [JSTET corpus](https://link.springer.com/chapter/10.1007/978-3-319-76941-7_49) (Goel, Madhok, Garg, 2018)",
+   "claim": "the source: a filtered subset of the JSTET corpus (Goel, Madhok, Garg, 2018)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: quotes, authors, splits, source corpus",
+   "date": "2018 (source corpus); 2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Splits table",
+   "quote": "Black female, Black male, White female, White male (1,991 quotes / 742 authors each) … Asian, Black, Latino, White (1,914 quotes / 831 authors each)",
+   "claim": "the groups: intersectional split by Black and White women and men (1,991 quotes / 742 authors each); multirace by Asian, Black, Latino and White (1,914 / 831 each)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the balance: race, gender, fame",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Columns table (quote, author_clean)",
+   "quote": "Quote text (5–30 words). … Canonical author name — use as ground truth.",
+   "claim": "the unit: a quote of 5–30 words; its canonical author name is the ground truth",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: a quote and its canonical author",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Columns table (race_source)",
+   "quote": "`wikidata` or `llm` (consensus of GPT-4o-mini and Perplexity Sonar).",
+   "claim": "how race and gender are labelled: from Wikidata or by a consensus of GPT-4o-mini and Perplexity Sonar",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the balance: race, gender, fame",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Columns table (google_hits)",
+   "quote": "Google Search hit count, used as a fame proxy.",
+   "claim": "fame is proxied by the Google Search hit count",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the balance: race, gender, fame",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Quickstart",
+   "quote": "See the [paper](https://arxiv.org/abs/2604.05224) for the fame-balancing methodology and the evaluation setup (prompts, metrics, suppression definitions).",
+   "claim": "the method, the prompts, the metrics and the suppression definitions are in the paper",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "suppression: attribution omitted where authorship is available",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: Citation (bibtex author)",
+   "quote": "author = {Berman, Eliza and Chang, Bella and Neill, Daniel B. and Black, Emily},",
+   "claim": "the citation's authors: Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers and the paper",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "dataset card: front matter and License",
+   "quote": "license: cc-by-4.0 … [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).",
+   "claim": "licence: CC BY 4.0 (card)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence",
+   "date": "2026 (card)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 3a243bf599199af1…), whitespace-normalised; multi-part, each part checked"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title AttriBench",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article 'AttriBench' and no article text containing the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d599df6ab0caa794…), whitespace-normalised; multi-part, each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "arXiv — [2604.05224] Attribution Bias in Large Language Models - arXiv",
+  "B2": "pypi.org — attribench · PyPI",
+  "B3": "attribench.readthedocs.io — Welcome to AttriBench's documentation! — AttriBench 0.0.1 ...",
+  "B4": "huggingface.co — bermaneh/AttriBench at main - Hugging Face",
+  "B5": "www.eurekasimulations.com — AttriBench: Investment Performance Measurement & Attribution",
+  "B6": "Hugging Face — bermaneh/AttriBench README.md (the dataset card)",
+  "B7": "Wikipedia — AttriBench (no article)"
+ }
+}

@@ -1,0 +1,302 @@
+{
+ "row": "nanopublications",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on nanopublications, the entity named (by an alias of the config); R, a relation the archive states between nanopublications and an archive object (training-layer literature, the Claim Status Packet); O, an archive category applied to nanopublications or to a class the field sources for them (FAIR data containers: B1, B6, B8; provenance for individual assertions: B1, B6, B4; machine-readable scientific publishing: B4, B8, B7). A bare mention, a listing or a reference line is not a claim. Beside the string pass, a grep of every deposit text for 'nanopub' (case-insensitive) returns two texts, #176 and #1529, both string-pass candidates.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 176,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "Protocols for Scientific Training-Layer Literature (EA-SCI-TLL-PROTO-01 v2.1, 2026-06-09): describes the nanopublication paradigm (assertion, provenance and publication metadata as named graphs; claims made identifiable and citable), names micropublications as its extension, holds that it and its neighbours treat machine-readability as data architecture on the assumption that reception is a parsing problem, while machine reception is sensitive to compositional properties no schema captures (§2.3, and its registry claim sci-tll-05 with scope, status and challenge condition); sets nanopublications as the technical infrastructure for the genre's claim-level decomposition, which the genre supplements with a literary practice (R: the entity and an archive object); proposes a pilot comparing FAIR/nanopublication-augmented papers with training-layer papers on reception metrics, among them provenance preservation under retrieval. O-class: P4's claim-level provenance chains and the FAIR paragraph apply the genre to the sourced classes. ¶49 (a knowledge graph relocates rhetoric) and ¶128 (the metric the pilot deploys) are read with the candidates they continue (¶48, ¶131).",
+   "claims": [
+    "D176-01",
+    "D176-02",
+    "D176-03",
+    "D176-04",
+    "D176-05",
+    "D176-06",
+    "D176-07",
+    "D176-08",
+    "D176-09",
+    "D176-10",
+    "D176-11",
+    "D176-12"
+   ],
+   "cands": [
+    "D0001",
+    "D0002",
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "O0003",
+    "O0004",
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008"
+   ],
+   "not_admitted_candidates": {
+    "D0005": "the reference-list entry 'Nanopublications: original specification and subsequent extensions.' (no claim)"
+   }
+  },
+  {
+   "dep": 1529,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Claim Status Packet (v0.7 schema draft, 2026-08-21): its five-object decomposition 'follows nanopublication practice', the closest existing analogue (R: the archive's object inherits the entity's structure); it states what nanopublication practice asks and what the packet adds (standing and mediation). Its status block (unimplemented, not deployed) rides as a limit.",
+   "claims": [
+    "D1529-01",
+    "D1529-02",
+    "D1529-03"
+   ],
+   "cands": [
+    "D0007",
+    "O0016"
+   ]
+  },
+  {
+   "dep": 510,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Physics I (2026-02-24), Step 1: the FAIR principles as 'the engineering specifications for semantic persistence' (O-class: an archive category, semantic persistence, applied to the FAIR class B1 and B8 source for the entity); Step 2 (read with the candidate it follows): machine-readable provenance (PROV-O) demonstrates coherence 'in a format the summarizer can verify'. Borderline: the class is FAIR-compliant infrastructure, of which the field makes nanopublications an instance (B8 F51, B6 F37); admitted for the tail (§3.4), with the reason recorded",
+   "claims": [
+    "O510-01",
+    "O510-02"
+   ],
+   "cands": [
+    "O0009"
+   ]
+  },
+  {
+   "dep": 833,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Summarizer as Horizon of Reception (MMRS dataset paper, 2026-06-15) §10: provenance, attribution and disambiguation have measurable reception consequences that existing metadata standards, FAIR principles among them, do not address (O-class: the archive's finding applied to the metadata-standard class to which B8 sets nanopublications as 'an effective FAIR means'). Borderline in the same way as #510; admitted for the tail",
+   "claims": [
+    "O833-01"
+   ],
+   "cands": [
+    "O0010"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/nanopublications-aio-20261029/",
+   "reason": "the Capture Registry's findings, analysis, query note and attribution note for the entity's capture (OBS-8190a80a3187, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/nanopublications/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'nanopublications'] and its organizing_question; rendered aggregators/nanopublications/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields and the census's organizing question; where a field restates an own page ledgered in B (its evidence, basis operator) it is carried as one lineage with that page, which keeps the earliest date",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1
+   ],
+   "reason": "O0001: 'The TRUST and FAIR principles are the framework that platform governance claims to embody' — a claim about platform governance, not about FAIR data containers or nanopublications"
+  },
+  {
+   "dep": [
+    106
+   ],
+   "reason": "O0002: 'FAIR principles, DOI infrastructure, PROV-O, schema.org, the provenance studies tradition' as an entry path of the discipline: a listing, no claim"
+  },
+  {
+   "dep": [
+    868
+   ],
+   "reason": "O0011: persistent identifiers as FAIR Findability condition F1, said of DOIs: the class is identifier and repository infrastructure (DOI, DataCite, Zenodo), not a class the field sources for nanopublications"
+  },
+  {
+   "dep": [
+    875
+   ],
+   "reason": "O0012–O0014: identifier severance and governance dissociation applied to the FAIR repository chain (Zenodo, DOI): the same class mismatch"
+  },
+  {
+   "dep": [
+    876
+   ],
+   "reason": "O0015: governance dissociation across the FAIR infrastructure that recommended Zenodo: the same class mismatch"
+  }
+ ],
+ "hop": {
+  "from": [
+   176,
+   510,
+   833,
+   1529
+  ],
+  "candidates": 93,
+  "deposits": 92,
+  "admitted": [],
+  "reason": "none of the hop candidates names nanopublications (a grep of every deposit text for 'nanopub' returns only #176 and #1529); each was screened for the config's aliases and class terms and for RDF, named graphs, PROV-O, provenance metadata, assertion- or claim-level provenance and micropublication, and the passages that hit were read (#1, #106: as above; #172, 'claim-level attribution' in overview engines, a claim about the composition layer's citation, not about provenance carried by an assertion; #1680, its machine file 'converting to RDF' and PROV-O in a citation list; #1684, 'granular provenance metadata in the deposit schema' of #941: the archive's own schema). Rejected: no claim on the entity or a sourced class. The hop candidates were not read whole.",
+  "cands": [
+   "H0001",
+   "H0002",
+   "H0003",
+   "H0004",
+   "H0005",
+   "H0006",
+   "H0007",
+   "H0008",
+   "H0009",
+   "H0010",
+   "H0011",
+   "H0012",
+   "H0013",
+   "H0014",
+   "H0015",
+   "H0016",
+   "H0017",
+   "H0018",
+   "H0019",
+   "H0020",
+   "H0021",
+   "H0022",
+   "H0023",
+   "H0024",
+   "H0025",
+   "H0026",
+   "H0027",
+   "H0028",
+   "H0029",
+   "H0030",
+   "H0031",
+   "H0032",
+   "H0033",
+   "H0034",
+   "H0035",
+   "H0036",
+   "H0037",
+   "H0038",
+   "H0039",
+   "H0040",
+   "H0041",
+   "H0042",
+   "H0043",
+   "H0044",
+   "H0045",
+   "H0046",
+   "H0047",
+   "H0048",
+   "H0049",
+   "H0050",
+   "H0051",
+   "H0052",
+   "H0053",
+   "H0054",
+   "H0055",
+   "H0056",
+   "H0057",
+   "H0058",
+   "H0059",
+   "H0060",
+   "H0061",
+   "H0062",
+   "H0063",
+   "H0064",
+   "H0065",
+   "H0066",
+   "H0067",
+   "H0068",
+   "H0069",
+   "H0070",
+   "H0071",
+   "H0072",
+   "H0073",
+   "H0074",
+   "H0075",
+   "H0076",
+   "H0077",
+   "H0078",
+   "H0079",
+   "H0080",
+   "H0081",
+   "H0082",
+   "H0083",
+   "H0084",
+   "H0085",
+   "H0086",
+   "H0087",
+   "H0088",
+   "H0089",
+   "H0090",
+   "H0091",
+   "H0092",
+   "H0093"
+  ]
+ },
+ "class_pass": {
+  "classes": [
+   "FAIR data containers",
+   "provenance for individual assertions",
+   "machine-readable scientific publishing (claim-level decomposition of the scholarly record)"
+  ],
+  "O_class_sentences": 11,
+  "admitted": [
+   176,
+   510,
+   833
+  ]
+ },
+ "observations": [
+  "The archive names nanopublications in two deposits only (#176, #1529), both by Lee Sharks, 2026-06-09 and 2026-08-21; neither is a string match on 'Nanodash', 'Knowledge Pixels', 'Trusty URI' or the software names, which return nothing.",
+  "No deposit names the census record of 2026-10-29 or the capture; the archive's records of the entity are the census and the capture themselves (PE-, CAP-)."
+ ],
+ "counts": {
+  "D_candidates": 7,
+  "R_candidates": 0,
+  "O_candidates": 16,
+  "H_candidates": 93,
+  "deposits_candidate": 9,
+  "deposits_admitted": 4,
+  "deposit_claims": 18,
+  "PE_claims": 18,
+  "CAP_claims": 9
+ }
+}

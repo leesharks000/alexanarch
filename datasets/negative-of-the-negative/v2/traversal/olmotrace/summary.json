@@ -1,0 +1,85 @@
+{
+ "row": "olmotrace",
+ "address": "OLMoTrace",
+ "entity": "OLMoTrace (playground.allenai.org), the system of the Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford (Liu, Blanton, Elazar, Min and others, arXiv:2504.07096, 9 April 2025, v2 8 July 2025; ACL 2025 System Demonstrations, 2025.acl-demo.18) that finds and shows verbatim matches between spans of a language model's output and documents in the model's full training data, in real time, over an extended infini-gram index; formalized in the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "olmotrace",
+  "address": "OLMoTrace",
+  "entity": "OLMoTrace (playground.allenai.org), the system of the Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford (Liu, Blanton, Elazar, Min and others, arXiv:2504.07096, 9 April 2025, v2 8 July 2025; ACL 2025 System Demonstrations, 2025.acl-demo.18) that finds and shows verbatim matches between spans of a language model's output and documents in the model's full training data, in real time, over an extended infini-gram index; formalized in the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/)",
+  "row_type": "C (a public entity on which the archive bears: a tracing tool; an entity of the provenance meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bOLMo ?Trace\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b2504\\.07096\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bacl-demo\\.18\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "tracing language-model outputs back to training data",
+    "pattern": "\\b(trac(e|es|ed|ing) (\\w+ ){0,4}(back )?(in)?to (\\w+ ){0,3}training data|training[- ]data (attribution|tracing|traceability)|influence functions?)\\b",
+    "flags": "i",
+    "basis": "field: B2 (arXiv:2504.07096, Abstract: 'the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time'); B7 (the paper v2, §1: 'Tracing the outputs of language models (LMs) back to their training data is an important problem'; §6 'Tracing LM generation into training data', influence functions named as the classical approach); B6 (Ken Yeung: 'tracing responses back to their original training data'). The census's own kind ('tracing tool') and lineage ('training data') for the entity (PE record, census.json rows[slug == 'olmotrace'].kind, .lineage)."
+   },
+   {
+    "term": "training-data provenance",
+    "pattern": "\\btraining[- ](data|corpus) provenance\\b",
+    "flags": "i",
+    "basis": "archive: the provenance census places the entity in the lineage 'training data' with capability 'records' and provenance_object 'a span of a language model's output and the training documents that contain it verbatim' (census.json rows[slug == 'olmotrace'].lineage, .capability, .provenance_object); field: B6 ('it primarily tags where a model's data came from'), B7 §1 (tracing outputs to training data)."
+   }
+  ],
+  "classes_note": "Two classes, each the census's own kind or lineage for the entity, stated by field sources at the loci given: (1) tracing tools from model output to training data (census kind 'tracing tool', lineage 'training data'; B2 Abstract, B7 §1 and §6, B6); (2) training-data provenance (census lineage 'training data', capability 'records', provenance_object; B6, B7 §1). The aliases are the entity's name in both spellings the field uses (OLMoTrace, OlmoTrace on the X card; OLMOTRACE in the ACL abstract), its arXiv number and its ACL Anthology identifier. 'infini-gram' is not an alias: it is the index the entity extends, a separate entity the census lists as unchecked ('infini-gram as a separate record'); 'Ai2 Playground' is the surface the entity runs on. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (the Provenance Erasure Rate, parametric claims, citation against matching, the composition layer against the training layer) to tracing outputs to training data or to training-data provenance as a class; a bare list of tools, a citation-list entry or a reference line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addendum BRIEF-NEW-ROW-PROVENANCE.md; address 'OLMoTrace' (olmotrace-aio-20261029, OBS-3fd20ae244c0, ADDR-435813c322c8), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#95, #127, #725, #1075, #1188, #1190, #1714).",
+  "hop_from": [
+   95,
+   127,
+   725,
+   1075,
+   1188,
+   1190,
+   1714
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 4,
+  "O_deposits": 4,
+  "H_candidates": 77
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "73": 1,
+   "580": 1,
+   "623": 1,
+   "1334": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "8ff74a8722ce6ec3b4eaf66593edf256dbd3fbce5a11a716dddcc71df84f5f87",
+  "candidates-H.jsonl": "14abea4586f2aefb03494e3e4f62780b63d75ab2b43e9e947d26844c32eb2c6a"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,175 @@
+Per-field breakdown — Metawatch
+Metawatch by IPTC
+Overview Countries Sites Fields CDN C2PA AI prefs Source type About
+Per-field breakdown
+The headline "% with any IPTC" hides a lot of detail. Below is the population rate of
+each IPTC field across the 6,580 images analysed in
+the latest crawl. Field names link to their definitions in the
+IPTC Photo Metadata Standard .
+The "scored" badge marks the four fields that contribute to a site's overall score
+(the "Four Cs" of news photo provenance); the others are tracked for context but
+don't affect the score — see the methodology for why.
+Field
+Type
+Present
+Total
+Population
+Score weight
+Creator
+scored
+517
+6,514
+7.9%
+25%
+DateCreated
+tracked
+415
+6,514
+6.4%
+—
+CreditLine
+scored
+373
+6,514
+5.7%
+25%
+ObjectName
+tracked
+351
+6,514
+5.4%
+—
+Copyright
+scored
+348
+6,514
+5.3%
+25%
+CaptionDescription
+scored
+324
+6,514
+5%
+25%
+Source
+tracked
+261
+6,514
+4%
+—
+LocationCreated
+tracked
+251
+6,514
+3.9%
+—
+Keywords
+tracked
+192
+6,514
+2.9%
+—
+WebStatement
+tracked
+109
+6,514
+1.7%
+—
+LicensorURL
+tracked
+71
+6,514
+1.1%
+—
+UsageTerms
+tracked
+56
+6,514
+0.9%
+—
+DataMining
+tracked
+38
+6,514
+0.6%
+—
+Genre
+tracked
+33
+6,514
+0.5%
+—
+DigitalSourceType
+tracked
+15
+6,514
+0.2%
+—
+LicensorName
+tracked
+1
+6,514
+0%
+—
+LocationShown
+tracked
+1
+6,514
+0%
+—
+AIPromptInformation
+tracked
+0
+6,514
+0%
+—
+AIPromptWriterName
+tracked
+0
+6,514
+0%
+—
+AISystemUsed
+tracked
+0
+6,514
+0%
+—
+AISystemVersionUsed
+tracked
+0
+6,514
+0%
+—
+AltTextAccessibility
+tracked
+0
+6,514
+0%
+—
+ExtendedDescriptionAccessibility
+tracked
+0
+6,514
+0%
+—
+Total
+100%
+Bars are scaled to the most populated field, not to 100%, so differences within the
+long tail stay visible. The score weight column reflects the per-field weights
+in config/scoring.yaml : the four scored fields are weighted 25% each.
+Tracked fields show "—" because their presence does not contribute to the score.
+What this tells us
+Even the best-populated field — Creator at
+7.9% — appears on fewer than one in ten images we fetched.
+The fields most relevant to licensing ( WebStatement , LicensorURL )
+are below 3%. The dataset as a whole tells a consistent story: publishers and CDNs are
+discarding metadata that the photographers and agencies almost certainly embedded
+upstream.
+Metawatch · A project of the
+International Press Telecommunications Council .
+Data licensed CC BY 4.0 .
+Source on GitHub ·
+Methodology ·
+Send feedback ·
+Publishers may opt out by emailing office@iptc.org .

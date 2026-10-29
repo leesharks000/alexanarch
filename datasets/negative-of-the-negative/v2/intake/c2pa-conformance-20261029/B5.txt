@@ -1,0 +1,546 @@
+How to Submit to the C2PA Conformance Program - SSL.com
+
+Products
+
+Products
+
+Certificates, automation, and PKI infrastructure for every trust need, from public websites to private machine identities.
+
+Browse all products
+
+Find the right certificate
+
+Knowledge Base
+
+Website Security
+TLS/SSL Certificates
+Single Domain
+
+Wildcard
+
+Multi-Domain (UCC/SAN)
+
+ACME
+
+CLM
+
+Software Integrity
+Code Signing Certificates
+IV
+
+OV
+
+EV
+
+Sole Proprietor
+
+eSigner for Code
+
+Content Authenticity
+Content Credentials
+C2PA
+
+CAWG
+
+SSL Provenance API
+
+Time Stamping
+
+Email & Brand Trust
+Mark Certificates
+VMC
+
+CMC
+
+GMC
+
+S/MIME
+Basic
+
+IV
+
+OV
+
+Sponsor (IV+OV)
+
+Document Trust
+Document Signing Certificates
+IV
+
+OV
+
+IV+OV
+
+eSigner for Documents
+
+Industry Certificates
+Energy Sector: NAESB
+NAESB WEQ-12 Certificate
+
+Device & Machine Trust
+Matter Certificates
+Matter DAC
+
+Matter PAI
+
+Network Access
+Client Authentication
+
+Trust Infrastructure
+Dedicated: Private PKI
+Private Compliance PKI
+
+Private Enterprise PKI
+
+Managed PKI Certificates
+
+Custom-Branded CA
+
+Industries
+
+Industries
+
+Industry-specific digital trust solutions, mapped to the compliance regimes and workflows you already run.
+
+Talk to sales
+
+Software & DevOps
+
+Cloud Infrastructure & CDN
+
+IoT & Device Manufacturers
+
+Media & Content Publishing
+
+Banking & Financial Services
+
+Government & Public Sector
+
+Energy & Utilities
+
+Legal & Professional Services
+
+Partners
+
+Partners
+
+Programs for resellers, affiliates, and volume partners building on SSL.com trust services.
+
+Partner Overview
+
+SSL.com Affiliate Program
+
+Reseller and Volume Purchasing Partners
+
+Become an SSL.com Partner
+
+Company
+
+Company
+
+Who we are, how we operate, and the policies that govern SSL.com as a Certificate Authority.
+
+About SSL.com
+
+Blog
+
+Resources
+
+Careers
+
+Privacy Policy
+
+Terms of Service
+
+CA Repository
+
+Support
+
+Support
+
+Documentation, account help, and reporting tools for certificate holders and relying parties.
+
+Knowledge Base
+
+Contact Us
+
+Purchase Orders and Quotes
+
+Certificate Problem Report
+
+What is SSL?
+
+...
+
+ Search for:
+
+Select Language
+
+ Powered by 
+
+ Translate
+
+ English
+ 简体中文
+ हिन्दी
+ Español
+ Deutsch
+ العربية
+ 日本語
+ Italiano
+ 한국어
+ Français
+ Nederlands
+ עִבְרִית
+ Ελληνικά
+ Čeština
+ Bahasa Indonesia
+ Tiếng Việt
+ ไทย
+ Gaelige
+ Magyar
+ Svenska
+ Dansk
+ Suomi
+ Norsk bokmål
+ Eesti
+ Русский
+ Български
+ Polski
+ Português
+ Türkçe
+ اردو
+
+We hope you will find the Google translation service helpful, but we don't promise that Google's translation will be accurate or complete. You should not rely on Google's translation. English is the official language of our site.
+
+0
+
+How to Submit to the C2PA Conformance Program
+
+ The SSL Team 
+
+ July 16, 2026 
+
+ Updated: July 16, 2026 
+
+Related Content
+
+ What is a Digital Certificate? 
+
+ October 26, 2026 
+
+ Read More 
+
+ Check Your Certificates Before October 27: Chrome Is Removing an eMudhra Root 
+
+ October 23, 2026 
+
+ Read More 
+
+ The Trust Briefing October 2026 
+
+ October 22, 2026 
+
+ Read More 
+
+ Comparing ECDSA vs RSA: A Simple Guide 
+
+ October 19, 2026 
+
+ Read More 
+
+ SSL/TLS Handshake: Ensuring Secure Online Interactions 
+
+ September 29, 2026 
+
+ Read More 
+
+Want to keep learning?
+
+Subscribe to SSL.com’s newsletter, stay informed and secure.
+
+ Copy article link 
+
+If your organization engages with photos, videos, audio recordings, or digital documents and you want to protect them with verified Content Credentials or add to their provenance information, becoming a C2PA conformant generator product is a critical step. SSL is an approved Certificate Authority (CA) on the official C2PA Trust List, which means we can issue the production-grade C2PA Claim Signing Certificates your product needs once conformance is established. 
+
+This guide walks through exactly what that process looks like on a technical level, so your team knows what to expect before getting started.
+
+ Explore C2PA Solutions 
+
+Contents
+
+Why Is the Conformance Program Submission Necessary?
+
+Step 1: Express Your Interest
+
+Step 2: Legal Onboarding
+
+Step 3: Technical and Security Evaluations
+
+Step 4: Obtain Your Production Certificate from SSL
+
+Getting Help
+
+Ready to Get Started?
+
+Why Is the Conformance Program Submission Necessary?
+
+The Coalition for Content Provenance and Authenticity (C2PA) maintains a formal conformance program to verify that generator or validator products correctly implement the Content Credentials specification. Once a product passes this requirement, it earns a spot on the publicly accessible C2PA Conforming Products List, which signals to the broader ecosystem that your implementation is trustworthy, interoperable, and secure.
+
+This matters for organizations that sign media content because CAs approved for the official C2PA Trust List, including SSL, can only issue production-grade Claim Signing Certificates to conforming products. Without conformance, C2PA trusted certificates cannot be issued. 
+
+The C2PA Conformance Explorer is a useful reference tool here. It lets you browse and filter the live Conforming Products List, the C2PA Trust List, and the TSA Trust List so you can understand the landscape and see what a conforming implementation looks like in practice.
+
+The process breaks down into four steps: 
+
+Step 1: Express Your Interest
+
+The first concrete action is to complete the C2PA Expression of Interest form, available directly on the C2PA Conformance page. This kicks off the formal process and connects you with the C2PA team overseeing the program.
+
+From there, the evaluation covers three primary areas: legal onboarding, technical implementation, and security architecture.
+
+Step 2: Legal Onboarding
+
+Alongside the technical and security evaluations, participants must execute a formal legal agreement with the C2PA. This agreement governs how Content Credentials may be used and ensures that all parties in the ecosystem are held accountable for responsible use. 
+
+This is not simply a checkbox step. The legal onboarding formalizes your organization’s commitment to the C2PA governance framework and its requirements for Certificate Policy compliance.
+
+Step 3: Technical and Security Evaluations
+
+The technical evaluation confirms that your product correctly implements the C2PA specification. Specifically, your implementation needs to demonstrate that it:
+
+Properly formats C2PA manifests (the structured containers that hold Content Credentials and provenance data)
+
+Handles certificates in accordance with the C2PA Certificate Policy
+
+Correctly creates and/or validates Content Credentials as defined in the specification
+
+Whether you are building a generator product (one that creates and signs Content Credentials), a validator product (one that reads and verifies them), or both, your implementation must align with the relevant portions of the C2PA specification. You can access our C2PA Developer Tool to test SSL.com C2PA API endpoints.
+
+Additionally, the security evaluation is where the C2PA gets the details on your product, handles signing operations, and protects against misuse. You will need to complete a security architecture document based on the C2PA Generator Product Security Requirements template.
+
+This document typically covers:
+
+Key generation: How cryptographic keys used for signing are generated
+
+Key storage: Where and how those keys are stored (hardware security modules are often expected at higher assurance levels)
+
+Abuse prevention: What controls exist to prevent unauthorized or fraudulent signing
+
+The C2PA Conformance Program operates on two assurance levels. Level 1 has more flexible requirements, while Level 2 demands more rigorous security controls, including hardware-backed key storage and dynamic security evidence. Determining which level applies to your use case should be an early conversation, as it affects your implementation approach and timeline. A rule of thumb is that a C2PA implementation on a device (mobile phone, camera, cam-recorder, etc.) requires level 1, whereas a cloud service requires at least level 1.
+
+Applying for conformance can be complex, and SSL is here to help. Customers purchasing our C2PA premium tier have access to security & architecture templates that will help simplify and accelerate your conformance as well as access to our C2PA specialists. 
+
+Step 4: Obtain Your Production Certificate from SSL
+
+Once the C2PA verifies your conformance and issues a Conformance Letter, you are eligible to obtain a production Claim Signing Certificate from SSL (or any approved CA on the official C2PA Trust List). 
+
+Here is what the certificate issuance process involves:
+
+Submit your C2PA Conformance Letter. This official document from the C2PA confirms that your product has passed the conformance program. SSL requires this letter as part of the validation process.
+
+Submit your Certificate Signing Request (CSR). Your CSR contains the public key your implementation will use for signing, along with identifying information about your organization.
+
+Pass Organization Validation (OV). SSL will verify your organization’s identity and legal standing. This is standard practice for OV-level certificates and includes confirming business registration, operational existence, and the presence of authorized contact details.
+
+Pass Generator Product Validation. SSL also validates the specific product that will be performing signing, thereby tying the certificate to your conformant implementation.
+
+After these steps are complete, SSL can issue your Claim Signing Certificate, which your product uses to cryptographically sign Content Credentials that embed provenance data directly into your media files.
+
+Getting Help
+
+The C2PA maintains open community channels for technical questions and step-by-step guidance. If you run into questions during the process, these are the right places to go:
+
+Email: conformance@c2pa.org
+
+GitHub: C2PA Organization on GitHub
+
+Discussion: Content Authenticity Initiative Discord
+
+For questions about SSL’s Claim Signing Certificates, the certificate issuance process, or how Content Credentials work with your specific media workflow, the SSL team is here to help. Our C2PA premium tier customers have access to our C2PA specialists.
+
+SSL also offers a C2PA Free Tier that includes one Level 1 Claim Signing Certificate valid for 1 year, plus 10,000 trusted timestamps per year, issued via the SSL portal.
+
+Note: CAWG Certificates are used to sign claims embedded inside C2PA manifests (e.g., Identity Assertions); therefore, they are also technically dependent on C2PA’s infrastructure. You will need a C2PA Certificate to sign the manifest that contains claims signed with a CAWG Certificate.
+
+Ready to Get Started?
+
+SSL is an approved CA on the official C2PA Trust List and can guide your organization through certificate issuance once you have completed the C2PA Conformance Program. Whether you are protecting news photography, broadcast-quality video, AI-generated media, or enterprise documents, Content Credentials backed by a conformant certificate represent the gold standard for provenance and trust.
+
+Learn more about SSL’s C2PA certificate offerings.
+
+Contact us below to get started:
+
+Products
+
+Website Security
+
+Email & Brand Trust
+
+Software Integrity
+
+Document Trust
+
+Device & Machine Trust
+
+Content Authenticity
+
+Trust Infrastructure
+
+Industry Certificates
+
+Industries
+
+Software & DevOps
+
+Cloud Infrastructure & CDN
+
+Banking & Financial Services
+
+Government & Public Sector
+
+Energy & Utilities
+
+Media & Content Publishing
+
+IoT & Device Manufacturers
+
+Legal & Professional Services
+
+Programs
+
+Partners
+
+REST API
+
+Postman API
+
+Host Providers
+
+Registrars
+
+Merchants
+
+Support
+
+What is SSL?
+
+Knowledgebase
+
+Contact Support
+
+Compatibility
+
+Country Codes
+
+Top Level Domains
+
+Validation Reqs
+
+Purchase Orders
+
+SSL Manager
+
+Downloads
+
+Company
+
+About SSL.com
+
+SSL.com Blog
+
+Contact Us
+
+Careers
+
+CA Repository
+
+Terms of Service
+
+Privacy
+
+ Copyright © SSL.com 2026. All rights reserved.
+
+Follow us on social media
+
+We are using cookies to give you the best experience on our website.
+
+You can find out more about which cookies we are using or switch them off in the settings.
+
+Note that cookies which are necessary for functionality cannot be disabled.
+
+ Accept
+ Reject
+
+Stay Informed and Secure
+
+SSL.com is a global leader in cybersecurity, PKI and digital certificates. Sign up to receive the latest industry news, tips, and product announcements from SSL.com.
+
+ Email 
+
+ subscribe
+
+We’d love your feedback
+
+Take our survey and let us know your thoughts on your recent purchase.
+
+ Take Survey
+
+Still renewing certificates by hand? Free live webinar Thursday 12 November, 1:00 PM PT.Register →
+×
+
+ Close GDPR Cookie Settings
+
+ Privacy Overview
+
+ 3rd Party Cookies
+
+ Privacy Overview
+
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognizing you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+
+For more information read our Cookie and privacy statement.
+
+ 3rd Party Cookies
+
+This website uses Google Analytics & Statcounter to collect anonymous information such as the number of visitors to the site, and the most popular pages.
+
+Keeping these cookies enabled helps us to improve our website.
+
+ Enable or Disable Cookies 
+
+ Enabled
+ Disabled
+
+Please enable Strictly Necessary Cookies first so that we can save your preferences!
+
+ Show details 
+
+Name
+
+Provider
+
+Purpose
+
+Expiration
+
+ Google Analytics 
+
+ Google 
+
+ Collect anonymous information such as the number of visitors to the site, and the most popular pages. 
+
+ 365 days 
+
+ StatCounter Analytics 
+
+ StatCounter 
+
+ Collect anonymous information such as the number of visitors to the site, and the most popular pages. 
+
+ 365 days 
+
+ Enable All
+ Save Changes
+
+ Powered by  GDPR Cookie Compliance

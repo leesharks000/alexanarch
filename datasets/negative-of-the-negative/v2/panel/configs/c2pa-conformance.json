@@ -1,0 +1,75 @@
+{
+ "row": "c2pa-conformance",
+ "address": "C2PA Conformance Program",
+ "entity": "The C2PA Conformance Program and its Conformance Explorer (c2pa.org/conformance; spec.c2pa.org/conformance-explorer), the Coalition for Content Provenance and Authenticity's risk-based governance program, administered by the C2PA Conformance Task Force under the C2PA Steering Committee, that designates generator and validator products as conforming to the Content Credentials specification and certification authorities as adhering to the C2PA Certificate Policy, publishing the C2PA Conforming Products List, the C2PA Trust List and the C2PA TSA Trust List; opened June 2025 (v0.1), v0.2 since 31 July 2026; formalized in the provenance meta-aggregator census record of 2026-10-29 (provenanceerasure.org/aggregators/c2pa-conformance/)",
+ "row_type": "C (a public entity on which the archive bears: a conformance program and its registry of conforming products and trust lists; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bC2PA\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bCoalition for Content Provenance and Authenticity\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bConformance (Program|Explorer|Task Force)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bConforming Products? List\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b(C2PA )?(TSA )?Trust List\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bc2pa\\.org\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "Content Credentials (the C2PA specification the program certifies conformance to)",
+   "pattern": "\\b(Content Credentials?|C2PA [Mm]anifests?)\\b",
+   "flags": "",
+   "basis": "field: B1 (c2pa.org/conformance: 'The C2PA Conformance Program provides assurance that products adhere to the Content Credentials specification'); B2 (CAI open-source docs: 'helps to ensure that products that read and create Content Credentials are compliant with the C2PA Content Credentials specification'); B7 (C2PA Conformance Program v0.2, §2.11 and §6.1: the evaluation of products 'as adhering to the normative requirements of the C2PA Content Credentials specification'); B9 (Explainer 2.4 §2: 'At the heart of the C2PA specification is the Content Credential, a cryptographically bound structure that records an asset's provenance')"
+  },
+  {
+   "term": "artifact provenance (signed, tamper-evident provenance bound to a media asset)",
+   "pattern": "\\b(artifact[- ](level )?(provenance|authenticity)|tamper[- ]evident provenance|(cryptographically )?signed provenance|provenance manifests?)\\b",
+   "flags": "i",
+   "basis": "field: B6 (C2PA FAQ: 'Content Credentials, the technical standard the C2PA produces, providing tamper-evident, cryptographically signed data structures that travel with the asset'); B9 (Explainer 2.4 §2: 'Provenance, as C2PA defines it, refers to the facts about the history of a piece of digital content (also known as an asset)'; §7.1.3: 'the provenance data can be said to be tamper-evident'); the census record's lineage 'media' and provenance_object 'a digital asset with its Content Credential (C2PA manifest)'"
+  }
+ ],
+ "classes_note": "Two classes, each sourced from the field by locus: the specification the program certifies products against, Content Credentials (B1, B2, B7, B9), and the kind of provenance it carries, signed tamper-evident provenance bound to a media asset (B6, B9; the census record's lineage 'media' and its provenance_object). The census's kind 'registry' is the program's unit (B1: 'Conforming products are placed on a publicly-accessible list'; B7 §2.12) and is carried by the aliases (Conforming Products List, Trust List, TSA Trust List, Conformance Explorer), not as a class. The aliases are the program's names (Conformance Program, Conformance Explorer, Conformance Task Force), its lists, its domain, and its operator by name and initialism (C2PA; the Coalition for Content Provenance and Authenticity): following the row brief's ruling for operator aliases, a candidate naming the operator is admitted at D only where it says something of what the program governs, certifies or lists (the C2PA specification's object, its trust model, what its signatures establish and do not). The Content Authenticity Initiative (CAI) is a distinct entity (Adobe's coalition, which publishes two of the cards) and is not an alias. Admission by reading (§3.4): a citation-list entry, a keyword listing or a bare 'external anchors' line is not a claim. O-class admits a sentence that applies an archive category (provenance erasure, the Provenance Erasure Rate, semantic provenance, the dimensions of provenance, the composition layer) to Content Credentials or to artifact provenance as a class.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'C2PA Conformance Program' (c2pa-conformance-program-aio-20261029, OBS-47bccd9af209, ADDR-c597ce64430f), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. A string check before the pass: no archive text names the Conformance Program, the Conforming Products List, the C2PA Trust List or the Conformance Explorer; 27 texts name C2PA and 11 Content Credentials. Second pass: one citation hop forward and back from the deposits admitted by reading (#50, #95, #121, #127, #204, #208, #499, #615, #621, #725, #729, #833, #914, #1003, #1175, #1188, #1190, #1194, #1369, #1386, #1409, #1443, #1444, #1464).",
+ "hop_from": [
+  50,
+  95,
+  121,
+  127,
+  204,
+  208,
+  499,
+  615,
+  621,
+  725,
+  729,
+  833,
+  914,
+  1003,
+  1175,
+  1188,
+  1190,
+  1194,
+  1369,
+  1386,
+  1409,
+  1443,
+  1444,
+  1464
+ ]
+}

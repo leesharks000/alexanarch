@@ -1,0 +1,1136 @@
+[
+ {
+  "id": "O725-01",
+  "dep": 725,
+  "record": "deposit",
+  "claim": "data attribution, the class of methods that ask which training examples shaped an output, is an adjacent method: it operates on the training/output relation, PER on the output/reader relation",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§4 table, 'Adjacent measurement concepts', row 'Data attribution (TRAK, influence functions)'",
+  "quote": "| Data attribution (TRAK, influence functions) | Which training examples shaped a specific output | Adjacent eval method | Operates on training/output relation; PER operates on output/reader relation |",
+  "kernel": true,
+  "const": true,
+  "lineage": "two relations: training/output and output/reader",
+  "date": "2026-05-08",
+  "title": "Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0273-text.md",
+  "offset": 27264,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "tracing language-model outputs back to training data (basis: field B2 Abstract; B7 §1, §6; B6; census kind 'tracing tool', lineage 'training data')",
+  "instances": [
+   {
+    "dep": 1190,
+    "locus": "§4 table, same row",
+    "note": "the same work (v1.1, 2026-05-12): one lineage, #725 the earliest (S4)"
+   }
+  ]
+ },
+ {
+  "id": "O95-01",
+  "dep": 95,
+  "record": "deposit",
+  "claim": "parametric claims, drawn from training-time parameters and not from retrieval, often carry no surface signal of their sources; PER reaches them only indirectly, and the substrate level needs companion infrastructure, training-data provenance records among it",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the typology of source-dependent claims (parametric claims)",
+  "quote": "Parametric claims are drawn from the model's training-time parameters rather than runtime retrieval, often without surface signal indicating which sources materially contributed; PER applies to these only indirectly, and addressing them at the substrate level requires companion infrastructure (training-data provenance records, watermarking, content credentials).",
+  "kernel": true,
+  "const": true,
+  "lineage": "parametric claims and training-data provenance",
+  "date": "2026-05-05",
+  "title": "Provenance Alignment: Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-026A-text.md",
+  "offset": null,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised); offset not exact across a line break",
+  "o_class": "training-data provenance (basis: census lineage 'training data', capability 'records', provenance_object; field B6, B7 §1)",
+  "instances": [
+   {
+    "dep": 1188,
+    "locus": "same paragraph",
+    "note": "the same text (the Transactions version, 2026-05-05): one lineage, #95 kept (S4)"
+   }
+  ]
+ },
+ {
+  "id": "O1075-01",
+  "dep": 1075,
+  "record": "deposit",
+  "claim": "training-data attribution research treats model behaviour as counterfactually dependent on which examples entered training; influence functions approximate the effect of removing one",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ (the counterfactual protocol), ¶ 'Training-data attribution research already treats'",
+  "quote": "Training-data attribution research already treats model behavior as counterfactually dependent on which examples entered training: influence functions approximate how removing a training example changes a prediction (Koh and Liang)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the evidentiary hierarchy for training-data attribution",
+  "date": "2026-07-12",
+  "title": "EA-NEGSHAPE-01 v0.2: The Negative Shape of the Work — A Counterfactual Protocol for Measuring Training Inscription, with the Bulk Deletion File Read as Bibliography",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0444-text.md",
+  "offset": 27675,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "tracing language-model outputs back to training data (basis: field B2 Abstract; B7 §1, §6; B6; census kind 'tracing tool', lineage 'training data')"
+ },
+ {
+  "id": "O1075-02",
+  "dep": 1075,
+  "record": "deposit",
+  "claim": "the archive's evidentiary hierarchy for training-data attribution: exact paired retraining first, validated approximation second, unvalidated similarity or intuition only as exploratory evidence",
+  "kind": "stipulation",
+  "modality": "definition",
+  "strata": [
+   "O"
+  ],
+  "locus": "§9.1 'The evidentiary hierarchy'",
+  "quote": "Exact paired retraining is the clearest counterfactual measurement. … Approximation must not reverse the hierarchy: (1) exact counterfactual retraining where feasible; (2) validated approximation where impractical; (3) unvalidated similarity or intuition only as exploratory evidence.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the evidentiary hierarchy for training-data attribution",
+  "date": "2026-07-12",
+  "title": "EA-NEGSHAPE-01 v0.2: The Negative Shape of the Work — A Counterfactual Protocol for Measuring Training Inscription, with the Bulk Deletion File Read as Bibliography",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0444-text.md",
+  "offset": 38257,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "tracing language-model outputs back to training data (basis: field B2 Abstract; B7 §1, §6; B6; census kind 'tracing tool', lineage 'training data')"
+ },
+ {
+  "id": "O127-01",
+  "dep": 127,
+  "record": "deposit",
+  "claim": "training-data attribution is the post-hoc detection layer of provenance, one survival layer among several, developed in isolation from the others; no system bundles them",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Gap 2 — Multi-Layer Provenance Bundling Specification",
+  "quote": "No existing system bundles provenance across all survival layers simultaneously. … Training data attribution handles post-hoc detection. These are developed in isolation, by different teams, with different standards.",
+  "kernel": true,
+  "const": false,
+  "lineage": "post-hoc detection: one survival layer, developed in isolation",
+  "date": "2026-05-25",
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02B2-text.md",
+  "offset": 83646,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "tracing language-model outputs back to training data (basis: field B2 Abstract; B7 §1, §6; B6; census kind 'tracing tool', lineage 'training data')"
+ },
+ {
+  "id": "O1714-01",
+  "dep": 1714,
+  "record": "deposit",
+  "claim": "partial tracing of outputs to training examples is possible at cost; it does not recover authorship, and what survives depends on what is recorded and computed",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§9.2 s4–5",
+  "quote": "The attribution literature shows that partial tracing is possible at cost: influence-function methods estimate which training examples most affect a given output (Grosse et al. 2023). Neither recovers authorship, and both show that what survives depends on what is recorded and computed.",
+  "kernel": true,
+  "const": false,
+  "lineage": "partial tracing at cost; what survives depends on what is recorded",
+  "date": "2026-10-27",
+  "title": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0A7F-text.md",
+  "offset": 50722,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "tracing language-model outputs back to training data (basis: field B2 Abstract; B7 §1, §6; B6; census kind 'tracing tool', lineage 'training data')"
+ },
+ {
+  "id": "O1714-02",
+  "dep": 1714,
+  "record": "deposit",
+  "claim": "provenance has to survive the training pipeline, a built thing whose losses are a property of how it is built",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§9.2 s1–2",
+  "quote": "Provenance has to survive the training pipeline. The pipeline is a built thing, and the slushing is a property of how it is built.",
+  "kernel": false,
+  "const": false,
+  "lineage": "partial tracing at cost; what survives depends on what is recorded",
+  "date": "2026-10-27",
+  "title": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0A7F-text.md",
+  "offset": 50327,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "o_class": "training-data provenance (basis: census lineage 'training data', capability 'records', provenance_object; field B6, B7 §1)"
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition's tool, maker, real time, scale and verbatim matching are the paper's",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[0] s1–2",
+  "quote": "THE TOOL HELD. Ai2, real time, multi-trillion tokens and verbatim matching are the paper's: 'OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora' (record).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the finding's method: checked against the census record and the pages it saved",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[0] s3",
+  "quote": "Checked 2026-10-29 against the provenance census record of the same day and the entity pages it saved.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the record's negative tags restate the authors' own limit",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[1] s2",
+  "quote": "The record's negative tags are the authors' own: 'The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.'",
+  "kernel": false,
+  "const": false,
+  "lineage": "the stated limit: not causes, not evidence, not citations",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition's first use offers a verbatim match as support for a claim, the reading the paper's limit excludes",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[1] s3–4",
+  "quote": "The composition's first use is 'Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents'. A verbatim match is offered as support for a claim, the reading the paper excludes.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition converts a match into support",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition names Ai2 alone; the record names the University of Washington, UC Berkeley and Stanford with it",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[2]",
+  "quote": "THE PARTNERS UNSAID. The record names the University of Washington, UC Berkeley and Stanford with Ai2; the composition names Ai2 alone.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator and the authors",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition's OLMo 3 family comes from the X card; the record's count is OLMo-2-32B-Instruct's",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[3] s1–2",
+  "quote": "THE MODELS CURRENT. The OLMo 3 family comes from Ai2's post on X; the record's count is OLMo-2-32B-Instruct's training data (3.2 billion documents, 4.6 trillion tokens).",
+  "kernel": false,
+  "const": false,
+  "lineage": "models and applicability",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the record is to carry OLMo 3, sourced to Ai2's own page",
+  "kind": "prediction",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, findings[3] s3",
+  "quote": "The record is to carry OLMo 3 from Ai2's own page.",
+  "kernel": false,
+  "const": false,
+  "lineage": "models and applicability",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition restores to a match the meaning its authors state it does not have",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, analysis s1",
+  "quote": "A provenance tool whose authors state precisely what a match does not mean is composed with that meaning restored.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition converts a match into support",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the composition converts a matching relation into a citation relation, which the paper names and refuses",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, analysis s2",
+  "quote": "The composition turns a trace of verbatim overlap into evidence for a claim, the conversion of a matching relation into a citation relation that the paper names and refuses.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition converts a match into support",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading: tool, maker, method, models, uses",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, reading s2",
+  "quote": "The Overview names the tool and its maker, explains how it finds training text in a model's answer, lists the models it covers and what it is good for.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "CAP-1-11",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "label": "CAP"
+  },
+  "claim": "a baseline: the census record landed the same day and no card cites it",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "olmotrace-aio-20261029, q_kind",
+  "quote": "A baseline: the record landed on provenanceerasure.org the same day (commit 8a9f153) and no card cites it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "reception: the record and the cards",
+  "date": "2026-10-29",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry olmotrace-aio-20261029 (OBS-3fd20ae244c0, AXN:0AD3.CAPTURE.♻️🐚👐◀️🕚🌔)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
+  }
+ },
+ {
+  "id": "PE-01",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the record's kind for the entity: a tracing tool",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].kind",
+  "quote": "tracing tool",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: tracing model output to its training data in real time",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].kind)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  },
+  "basis": {
+   "src": "olmotrace--abs",
+   "basis": "operator",
+   "quote": "We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time.",
+   "url": "https://arxiv.org/abs/2504.07096",
+   "sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22"
+  }
+ },
+ {
+  "id": "PE-02",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the record's lineage for the entity: training data",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].lineage",
+  "quote": "training data",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: tracing model output to its training data in real time",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].lineage)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-03",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "what receives provenance: a span of model output and the training documents that contain it verbatim",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].provenance_object",
+  "quote": "a span of a language model's output and the training documents that contain it verbatim",
+  "kernel": true,
+  "const": true,
+  "lineage": "the relation: verbatim match between output and training text",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].provenance_object)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-04",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the relation carried: verbatim match between output and training text (basis operator)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].relation_types",
+  "quote": "verbatim match between output and training text",
+  "kernel": false,
+  "const": false,
+  "lineage": "the relation: verbatim match between output and training text",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].relation_types)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  },
+  "basis": {
+   "src": "olmotrace--abs",
+   "basis": "operator",
+   "quote": "OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora.",
+   "url": "https://arxiv.org/abs/2504.07096",
+   "sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22"
+  }
+ },
+ {
+  "id": "PE-05",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the carrier: the full training corpus, indexed with an extended infini-gram",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].provenance_carrier",
+  "quote": "the model's full training corpus, indexed with an extended infini-gram",
+  "kernel": false,
+  "const": false,
+  "lineage": "the pipeline: spans, index, retrieval, ranking",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].provenance_carrier)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-06",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the unit: a maximal matching span of model output",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].unit",
+  "quote": "a maximal matching span of model output",
+  "kernel": false,
+  "const": false,
+  "lineage": "the pipeline: spans, index, retrieval, ranking",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].unit)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-07",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "count: 3.2 billion documents and 4.6 trillion tokens, OLMo-2-32B-Instruct's training data, as of the paper v2",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].count",
+  "quote": "3.2 billion documents and 4.6 trillion tokens (OLMo-2-32B-Instruct's training data)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the training data and its count",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].count)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  },
+  "basis": {
+   "src": "olmotrace--paper",
+   "basis": "operator",
+   "quote": "which totals 3.2 billion documents and 4.6 trillion (Llama-2) tokens",
+   "url": "https://arxiv.org/html/2504.07096v2",
+   "sha256": "b1b16ba583eeb0dbfdb07615ebda0ce56623b190b14c63115ff04a8a374e0bdd"
+  }
+ },
+ {
+  "id": "PE-08",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "operator: Ai2 with the University of Washington, UC Berkeley and Stanford",
+  "kind": "attribution",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].operator",
+  "quote": "Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford",
+  "kernel": false,
+  "const": false,
+  "lineage": "the operator and the authors",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].operator)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-09",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "capability: it records provenance (it neither expresses nor tests it, on the schema's three)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].capability",
+  "quote": "records",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].capability)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-10",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the operation it tests across: model generation, traced back to training text",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].transformations_tested",
+  "quote": "model generation, traced back to training text",
+  "kernel": false,
+  "const": false,
+  "lineage": "the relation: verbatim match between output and training text",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].transformations_tested)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-11",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "what survives: matching documents within seconds, the authors stating the matches are not causal and not citations",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].retention_results",
+  "quote": "returns matching documents within a few seconds; the authors state the matches are not causal and not citations",
+  "kernel": true,
+  "const": false,
+  "lineage": "the stated limit: not causes, not evidence, not citations",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].retention_results)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  },
+  "basis": {
+   "src": "olmotrace--paper",
+   "basis": "operator",
+   "quote": "The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.",
+   "url": "https://arxiv.org/html/2504.07096v2",
+   "sha256": "b1b16ba583eeb0dbfdb07615ebda0ce56623b190b14c63115ff04a8a374e0bdd"
+  }
+ },
+ {
+  "id": "PE-12",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "data access: the Ai2 Playground; open source",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].data_access",
+  "quote": "Ai2 Playground; open source",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].data_access)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  },
+  "basis": {
+   "src": "olmotrace--abs",
+   "basis": "operator",
+   "quote": "OLMoTrace is publicly available and fully open-source.",
+   "url": "https://arxiv.org/abs/2504.07096",
+   "sha256": "cd982680a1ca4c02a28ebd0cb3c7f7c1b7ed60cde75787fd3918c12f99154c22"
+  }
+ },
+ {
+  "id": "PE-13",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "lifecycle: active, ACL 2025 demo track",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].lifecycle",
+  "quote": "\"state\": \"active\", \"detail\": \"ACL 2025 demo track\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "publication",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].lifecycle)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-14",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "versions: v1 2025-04-09, v2 2025-07-08, read 2026-10-29",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].version_and_time",
+  "quote": "\"v1\": \"2025-04-09\", \"v2\": \"2025-07-08\", \"read\": \"2026-10-29\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "publication",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].version_and_time)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-15",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "negative tag: the retrieved documents are not causes of the output",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].negative_tags.0",
+  "quote": "the retrieved documents are not causes of the output",
+  "kernel": false,
+  "const": false,
+  "lineage": "the stated limit: not causes, not evidence, not citations",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].negative_tags.0)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-16",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "negative tag: not a citation system",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].negative_tags.1",
+  "quote": "NOT a citation system",
+  "kernel": true,
+  "const": true,
+  "lineage": "the stated limit: not causes, not evidence, not citations",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].negative_tags.1)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-17",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "negative tag: traces only models whose training data is open",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].negative_tags.2",
+  "quote": "traces only models whose training data is open",
+  "kernel": false,
+  "const": false,
+  "lineage": "models and applicability",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].negative_tags.2)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-18",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "relation: a neighbour of the Data Provenance Initiative",
+  "kind": "genealogy",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].relations",
+  "quote": "\"rel\": \"neighbour\", \"target\": \"data-provenance-initiative\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbours in the census",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].relations)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-19",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "unchecked: the Playground itself (and infini-gram as a separate record)",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].unchecked",
+  "quote": "the Playground itself",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-20",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "unchecked: infini-gram as a separate record",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'olmotrace'].unchecked",
+  "quote": "infini-gram as a separate record",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (rows[slug == 'olmotrace'].unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ },
+ {
+  "id": "PE-21",
+  "dep": "PE",
+  "record": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/",
+   "label": "PE"
+  },
+  "claim": "the census's organizing question, which every record's fields answer: what provenance, through which operation, on whose assertion, with what evidence of survival",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "What provenance does this system carry, through which operation, on whose assertion, with what evidence of survival?",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-29",
+  "title": "Provenance meta-aggregator record: OLMoTrace (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks, census compiled 2026-10-29, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json (organizing_question)",
+  "quote_ok": true,
+  "quote_check": "within the value as loaded (whitespace-normalised)",
+  "entity": "olmotrace",
+  "surface": {
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/"
+  }
+ }
+]

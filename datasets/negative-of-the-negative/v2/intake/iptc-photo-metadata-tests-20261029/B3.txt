@@ -1,0 +1,8117 @@
+IPTC Photo Metadata Standard 2025.1
+
+IPTC Photo Metadata Standard 2025.1
+
+IPTC Photo Metadata Working Group
+
+office@iptc.org
+
+version 2025.1 rev 1,
+2025-11-26
+
+Table of Contents
+
+About the Standard
+
+Copyright
+
+Acknowledgments
+
+Standard History
+
+IPTC Core Schema Specification History
+
+IPTC Extension Schema Specification History
+
+About This Document
+
+Status of this Document
+
+IPTC Photo Metadata
+
+1. Overview
+
+2. Generic Notes
+
+2.1. Rights-related Metadata
+
+2.2. Technical Metadata
+
+3. History
+
+4. What’s New in This Version
+
+5. Photo Metadata specification notation
+
+5.1. Specification table template
+
+5.2. Machine Readable TechReference
+
+5.3. Generic Specification Notes
+
+IPTC Core schema 1.5 specifications
+
+6. XMP Namespaces and Identifiers
+
+7. Metadata Properties
+
+7.1. Alt Text (Accessibility)
+
+7.2. City (legacy)
+
+7.3. Copyright Notice
+
+7.4. Country (legacy)
+
+7.5. Country Code (legacy)
+
+7.6. Creator
+
+7.7. Creator’s Contact Info
+
+7.8. Creator’s jobtitle
+
+7.9. Credit Line
+
+7.10. Date Created
+
+7.11. Description
+
+7.12. Description Writer
+
+7.13. Extended Description (Accessibility)
+
+7.14. Headline
+
+7.15. Instructions
+
+7.16. Intellectual Genre (legacy)
+
+7.17. Job Id
+
+7.18. Keywords
+
+7.19. Province or State (legacy)
+
+7.20. Rights Usage Terms
+
+7.21. Scene Code
+
+7.22. Source (Supply Chain)
+
+7.23. Subject Code (legacy)
+
+7.24. Sublocation (legacy)
+
+7.25. Title
+
+8. Metadata Structures
+
+8.1. Contact Information structure
+
+9. Non-normative Information
+
+9.1. “Deprecated” IIM metadata properties
+
+9.2. Guideline for mapping Category Codes to Subject NewsCodes
+
+IPTC Extension schema 1.8 specifications
+
+10. XMP Namespaces and Identifiers
+
+10.1. User Interface Note
+
+11. Metadata Properties
+
+11.1. Additional Model Information
+
+11.2. AI Prompt Information
+
+11.3. AI Prompt Writer Name
+
+11.4. AI System Used
+
+11.5. AI System Version Used
+
+11.6. Artwork or Object in the Image
+
+11.7. Code of Organisation Featured in the Image
+
+11.8. Contributor
+
+11.9. Copyright Owner
+
+11.10. CV-Term About Image
+
+11.11. Data Mining
+
+11.12. Digital Image GUID
+
+11.13. Digital Source Type
+
+11.14. Embedded Encoded Rights Expression
+
+11.15. Event Identifier
+
+11.16. Event Name
+
+11.17. Genre
+
+11.18. Image Creator
+
+11.19. Image Rating
+
+11.20. Image Region
+
+11.21. Image Registry Entry
+
+11.22. Image Supplier
+
+11.23. Image Supplier Image ID
+
+11.24. Licensor
+
+11.25. Linked Encoded Rights Expression
+
+11.26. Location Created
+
+11.27. Location Shown in the Image
+
+11.28. Max Avail Height
+
+11.29. Max Avail Width
+
+11.30. Minor Model Age Disclosure
+
+11.31. Model Age
+
+11.32. Model Release Id
+
+11.33. Model Release Status
+
+11.34. Name of Organisation Featured in the Image
+
+11.35. Other Constraints
+
+11.36. Person Shown in the Image
+
+11.37. Person Shown in the Image with Details
+
+11.38. Product Shown in the Image
+
+11.39. Property Release Id
+
+11.40. Property Release Status
+
+11.41. Web Statement of Rights
+
+12. Metadata Structures
+
+12.1. Artwork or Object in the Image structure
+
+12.2. CV-Term structure
+
+12.3. Embedded Encoded Rights Expression (EERE) structure
+
+12.4. Entity or Concept structure
+
+12.5. Entity or Concept with role structure
+
+12.6. Image Region structure
+
+12.7. Region Boundary structure
+
+12.8. Region Boundary Point structure
+
+12.9. Linked Encoded Rights Expression (LERE) structure
+
+12.10. Location structure
+
+12.11. Person structure
+
+12.12. Product structure
+
+12.13. AltLang structure
+
+13. Non-normative Information
+
+Generic Implementation Notes
+
+14. XMP Properties
+
+14.1. Lang Alt value type
+
+14.2. Date value type
+
+15. IIM Properties
+
+15.1. Max bytes for text
+
+References
+
+16. Other standards
+
+Fixed Errata
+
+17. List of fixed errata
+
+About the Standard
+
+This is the IPTC Photo Metadadata Standard 2025.1, including
+
+IPTC Core Metadata Schema 1.5
+
+IPTC Extension Metadata Schema 1.9
+
+Copyright
+
+Copyright © 2025 IPTC, the International Press Telecommunications Council - https://iptc.org. All Rights Reserved.
+
+The IPTC Photo Metadata Standard document is published under the Creative Commons Attribution 4.0 license - see the full license agreement at http://creativecommons.org/licenses/by/4.0/.
+By obtaining, using and/or copying this document, you (the licensee) agree that you have read, understood,
+and will comply with the terms and conditions of the license.
+
+This project intends to use materials that are either in the public domain or are available by the permission for their respective copyright holders. All materials of this IPTC standard covered by copyright shall be licensable at no charge.
+
+Acknowledgments
+
+This document is the result of a team effort by members of the International Press Telecommunications Council since 2004 with input and assistance from other contributors.
+
+Development and maintenance of the IPTC Photo Metadata schemas is led by David Riecks (PLUS) and Michael Steidl (IPTC) and these members of the Photo Metadata Working Group contributed (ordered by surname):
+
+Thierry Berger+ (WAN-Ifra), Linda Burman (Individual), Dave Compton (LSE Group/Refinitiv/Thomson Reuters), Honor Craig-Bennett (Individual), Karl Csoknyay (Keystone-SDA Switzerland), Caroline Desrosiers\+ (Scribely), Annette Feldman (AP), Serguei Fomine (CEPIC), Alfonso Gutierrez+ (CEPIC), Denise Kremer\+ (Individual), Jan Leidicke+ (BVPA), Harald Löffler\+ (Ifra), Cindy Lewis+ (PLUS), Philippe Mougin (AFP), Andrea de Polo\+ (CEPIC/Alinari), Brendan Quinn (IPTC), Sarah Saunders+ (BAPLA/CEPIC), Jeff Sedlik (PLUS), Klaus Sprick (IPTC), Alison Sullivan (Individual Member), Staffan Teste\+ (CEPIC), Margaret Warren (Metadata Authoring Systems), Andy Williams\+ (Ifra), Guowei Wu (Xinhua)
+
++ Person is no longer IPTC Delegate of the member company in 2025.
+
+The following invited experts also contributed to the development of this specification:
+
+Chi Zhang, Pengzhou Zhang and Min Wang (invited by Xinhua), Greg Reser (VRA)
+
+Standard History
+
+The IPTC Photo Metadata Standard includes two metadata schemas (sets of metadata properties). Each schema has its specific version. The version of the full standard reflects the year of release. Both are indicated below.
+
+IPTC Core Schema Specification History
+
+Version
+
+Approval Date
+
+Approved by
+
+In Standard Version
+
+1.0
+
+2004-10-08
+
+Standards Committee
+
+2004
+
+1.1
+
+2008-07-02
+
+Standards Committee
+
+2008
+
+1.2
+
+2014-06-18
+
+Standards Committee
+
+July 2014
+
+1.3
+
+2021-10-20
+
+Standards Committee
+
+2021.1
+
+1.4
+
+2022-10-19
+
+Standards Committee
+
+2022.1
+
+1.5
+
+2024-10-02
+
+Standards Committee
+
+2024.1
+
+IPTC Extension Schema Specification History
+
+Version
+
+Approval Date
+
+Approved by
+
+In Standard Version
+
+1.0
+
+2008-07-02
+
+Standards Committee
+
+2008
+
+1.1
+
+2009-06-17
+
+Standards Committee
+
+July 2009
+
+1.2
+
+2014-10-22
+
+Standards Committee
+
+October 2014
+
+1.3
+
+2016-10-26
+
+Standards Committee
+
+October 2016
+
+1.4
+
+2017-05-17
+
+Standards Committee
+
+2017.1
+
+1.5
+
+2019-10-16
+
+Standards Committee
+
+2019.1
+
+1.6
+
+2021-10-20
+
+Standards Committee
+
+2021.1
+
+1.7
+
+2022-10-19
+
+Standards Committee
+
+2022.1
+
+1.8
+
+2023-10-04
+
+Standards Committee
+
+2023.1
+
+1.9
+
+2025-10-16
+
+Standards Committee
+
+2025.1
+
+About This Document
+
+This document specifies metadata properties with a focus on usage with photos. Some of these properties are also specified by the IPTC’s standard for video metadata, (IPTC Video Metadata Hub.
+
+This document may be revised to fix errata. Any changes will be indicated by a new document revision number.
+Any changes to the specification will be reflected by a change of the version of the standard.
+
+This specification document is supplemented by guidelines for end users and implementers.
+
+Status of this Document
+
+This document is under the governance of the IPTC Photo Metadata Working Group of the IPTC Standards Committee.
+
+This is a specification document endorsed by IPTC members and may be updated, replaced or made obsolete by other documents at any time.
+
+A public version of this specification document is available at
+https://iptc.org/std/photometadata/specification/IPTC-PhotoMetadata
+
+Previous versions of this specification document can be accessed in the web folder
+https://iptc.org/std/photometadata/specification
+
+All related IPTC documentation, including user guidelines, is available at
+https://iptc.org/std/photometadata/documentation
+
+Public comments should be sent to the IPTC Photo Metadata Working Group’s mailing list:
+https://groups.io/g/iptc-photometadata
+
+IPTC Photo Metadata
+
+1. Overview
+
+IPTC Photo Metadata provides data about photographs and the values can be processed by software. Each individual metadata entity is called a property and they are grouped into Administrative, Descriptive and Rights-related properties.
+
+IPTC Photo Metadata properties have photo specific definitions that are widely supported by imaging software.
+
+IPTC Photo Metadata aligns with other IPTC metadata standards made for media items of any media-type. Thus they integrate with media-type agnostic digital asset management systems.
+
+The IPTC Photo Metadata specification is split into two different schemas:
+
+(A schema is a set of metadata properties.)
+
+The IPTC Core schema was built initially from properties of the IPTC “Information Interchange Model” (IIM) standard [IPTC-IIM], which has been in use since 1995. A few additional properties related to existing IPTC Core properties have been added. This schema is fully backwards-compatible with IIM, with some property definitions going back to the 1990s.
+
+The IPTC Extension schema extends and complements the IPTC Core schema by an additional set of more granular properties and further specialised rights-related properties from the PLUS metadata schema [PLUS]. The IPTC Extension schema was first published in 2008.
+
+This document provides the latest specifications for both schemas.
+
+2. Generic Notes
+
+The notes below apply to the specification as a whole.
+
+2.1. Rights-related Metadata
+
+Be aware that values assigned to rights-related metadata properties - such as properties about licensing – of an image may be affected …
+
+… by laws and other regulations of the region in which the image is used.
+
+… by contracts applying to the image.
+
+2.2. Technical Metadata
+
+Digital cameras capture metadata at the time the image is taken reflecting technical characteristics. Such metadata may include, but is not limited to, generic camera metadata, camera manufacturer-specific metadata, ICC profiles and positioning data. Standards for these metadata are not subject to IPTC Standards, but are under the control of the camera manufacturers, their associations (such as CIPA) and others. Because the IPTC acknowledges these technical metadata standards of other bodies and does not wish to duplicate existing metadata properties, the IPTC Photo Metadata specification does not include any technical metadata.
+
+3. History
+
+In 1990, the IPTC developed its “Information Interchange Model” (IIM) metadata property standard for exchanging news that was, by design, media-type agnostic and thus encouraged users to apply it to photos. A few years later, the software company Adobe Systems, Inc., adopted a subset of IIM properties for its imaging software Photoshop and developed a metadata storage technology named “Image Resource Block” to embed the metadata properties in a header section of the image files. From that moment on, millions of photographs were annotated using IIM metadata.
+
+In September 2001, Adobe introduced its new technical metadata framework “Extensible Metadata Platform (XMP)” [Adobe-XMP] that may make the “Image Resource Blocks” sooner or later obsolete. The XML-based XMP technology is much more flexible and can deal better with globalisation requirements. In 2012 the core definition of the data model and the XML syntax were defined by ISO as standard 16684-1 [ISO-XMP].
+
+In 2004, IPTC and Adobe jointly developed the “IPTC Core Schema for XMP” which is actually a redefinition of the IIM properties in the new XMP environment; only a few properties were added.
+
+In 2007, the IPTC collected requirements from different sectors of the professional photography business – with a focus on news photography and stock photography – and published these requirements in its Photo Metadata White Paper 2007. After receiving wide assent to this paper, the IPTC developed specifications for the “IPTC Extension Schema” and slightly revised the IPTC Core specifications.
+
+Both the IPTC Core and IPTC Extension schema specifications were released in a single document named “IPTC Photo Metadata Standard” in 2008 and have been updated or extended in 2009, 2014, 2016, 2017, 2019, 2021, 2022, 2023, 2024 and now this update in 2025.
+
+4. What’s New in This Version
+
+The 2025.1 version of the IPTC Photo Metadata Specification adds several new properties to the IPTC Extension schema, revising it to version 1.9.
+
+The new properties are:
+* AI Prompt Information
+* AI Prompt Writer Name
+* AI System Used
+* AI System Version Used
+
+5. Photo Metadata specification notation
+
+This document provides a human readable specification of the IPTC Photo Metadata Standard.
+
+5.1. Specification table template
+
+This specification document provides for each photo metadata property a full specification including:
+
+A specification of its name, semantics, requirements and text to be used with the user interface of a software implementing this property.
+
+A specific technical implementation using Adobe’s XMP technology Adobe XMP, ISO XMP
+
+A specific technical implementation using IPTC’s IIM standard. IPTC IIM
+
+The specification of a Photo Metadata property is shown in a generic table form using the following template.
+
+Some rows may be missing if there is no use for this specification, e.g. structures have no help text or label as they are applied to a property with help text and label.
+
+Specification Table Template
+
+Row header
+
+What is specified by this row
+
+Name
+
+The reference name of the property used by this specification.
+This name shall never be translated.
+
+Definition
+
+A photo-specific definition of the semantics of this property, may be translated for localization purposes.
+
+Help Text
+
+A help text for this property which may be displayed by a generic help system of the user interface, and should be translated for localization purposes.
+
+User Note(s)
+
+Any notes that apply to the end user of this property, should be translated for localization purposes.
+
+Implementation Note(s)
+
+Notes targeting parties implementing this property by any specified technology.
+
+Label
+
+Text appearing next to the entry field in the user interface, that should be translated for localization purposes. (As structures are used by fields with labels no label is defined for a structure.)
+
+Basic Specs
+
+The specific data type of a property in XMP or JSON is based on a more generic Data type :
+
+Text = sequence of characters, can be used for free text or other purposes
+
+Integer = integer number
+
+Decimal = decimal number
+
+URL = Uniform Resource Locator, in most cases the web address of a resource
+
+URI = Uniform Resource Identifier for identifying a resource, this includes URLs
+
+…​ Structure = a structure of sub-properties
+
+Cardinality: how often this property must or may occur in a set of Photo Metadata about an image or in a structure of a metadata property:
+
+1 = one and only one occurrence is mandatory,
+
+0..1 = one occurrence is optional,
+
+0..unbounded = one and multiple occurrences are optional,
+
+1..unbounded = one occurrence is mandatory, multiple occurrences are optional
+
+CV Note(s)
+
+A note on the use of Controlled Vocabularies with this property. The term "Required" specifies the use of a specific CV as mandatory.
+
+History Note(s)
+
+A note in which version of the specification or, if there was an error in the specification document, in which revision of this specification document a property was changed and how.
+
+Search for the identifier of a version of the standard - like 2022.1, 2021.1, 2019.1 or 2017.1 - to find all properties added or modified by it.
+
+XMP Specs
+
+The specification of the property for XMP: The namespace alias and the property identifier are separated by a colon, see section “XMP Namespaces and Identifiers” of IPTC Core and IPTC Extension.
+
+Further the value type as as defined by the XMP specification’s XMP Category and how the value of the property is generated - External, Internal - as defined by XMP, both in []-brackets.
+
+XMP Implementation Note(s)
+
+Note(s) regarding an XMP-specific implementation. It may include a reference to a generic note on XMP Properties.
+
+IIM Specs
+
+The specification of the property by IIM: The numeric values of the IIM Dataset property identifier, separated by a colon, plus the IIM name of the datataset. If the basic data type of the property is text "max bytes for text" is appended with the maximum count of permitted bytes. Read more about it in this generic IIM Implementation Note
+
+JSON Specs
+
+The specification of the property for JSON: The name of the JSON property plus the data type in []-brackets.
+
+Data type parts are sepearated by /. Part 1: basic type string, number, object; part 2: subtype like uri, url, date-time or for the basic type object the name of the object (= structure); part 3: no value = single occurrence, array = multiple occurrence. Suffix -MANDATORY = occurrence required.
+
+Help: ExifTool tags
+
+ExifTool (see https://exiftool.org) is a widely used software for reading and embedding IPTC photo metadata. To help users this row shows the ExifTool tag of this property for the XMP format and for the IIM format, if one is defined. This row is NOT NORMATIVE. To support all properties of this version of the IPTC standard using ExifTool version 12.67 or higher is required.
+
+5.2. Machine Readable TechReference
+
+This web document is intended for human eyes reading the specification of the standard. But as reading metadata from image files and embedding metadata into image files is done by software IPTC provides a machine-readable version of the specification that can be consumed directly by software tools. It is called the IPTC Photo Metadata TechReference.
+
+The TechReference is a data object containing all the details of the IPTC Photo Metadata technical specifications in the easy-to-use JSON and YAML formats.
+
+The TechReference can be downloaded:
+
+In JSON format: https://iptc.org/std/photometadata/specification/iptc-pmd-techreference_2025.1.json
+
+In YAML format: https://iptc.org/std/photometadata/specification/iptc-pmd-techreference_2025.1.yml
+
+IPTC has published rich documentation about using the TechReference data object on this page.
+
+5.3. Generic Specification Notes
+
+5.3.1. The terms Metadata Property and Metadata Structure
+
+The term Metadata Property is used for data about the image content. A metadata property can be made to hold only a single kind of value, or a structure of different values, for which the term Metadata Structure is used.
+
+Examples:
+
+The metadata property Description is made for only one kind of value, a text string, but may provide this value in different languages. It is important to understand that language translations are NOT a metadata structure.
+
+The property Artwork or Object in the Image provides a structure of many sub-fields, and is not designed for only a single value.
+
+For a property using a structure, the string “structure” is used in the “Basic data type” cell of its specification table. In this case, check the XMP Value Type cell of the table and refer to the corresponding structure identified in it.
+For all structures specified by the IPTC this document includes the specification tables for all members of a structure.
+For all structures specified by another standardisation body, in particular by PLUS, the specifications of the structure can only be found in the specification documents (website, PDF document …​) of this body.
+
+5.3.2. (legacy) appended to a property name
+
+This suffix is used if the IPTC Extension provides a better solution to annotate the information about an image than the IPTC Core does. In this case, the IPTC recommends to phase out the use of the (legacy)-marked property and to move towards using the IPTC Extension. See the notes on this matter in the particular specification table.
+
+5.3.3. (DEPRECATED) appended to a property name
+
+This suffix is used for properties which should not be used any longer. A reason for this is given in the spec table of the property and may include a recommendation to use a different property.
+
+5.3.4. Saving metadata values to files
+
+The values of properties should be saved to an image file using both the IIM format and the XMP format as defined in the specification tables.
+
+(A guideline on how to synchronise values existing in parallel was available from the Metadata Working Group [MetadataWG] until October 2018 and was widely used.)
+
+IPTC Core schema 1.5 specifications
+
+The IPTC Core schema defines the semantics of a set of metadata properties and their technical expressions by the IPTC IIM and the ISO XMP format.
+
+6. XMP Namespaces and Identifiers
+
+The technical XMP format of IPTC Core schema uses different namespaces for different properties.
+
+The namespace IPTC Core covers only a subset of the properties of the IPTC Core schema.
+
+Name
+
+URI
+
+Recommended/used Prefix
+
+IPTC Core
+
+http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/
+
+Iptc4xmpCore (preferred prefix)
+
+Dublin Core
+
+http://purl.org/dc/elements/1.1/
+
+dc
+
+Photoshop
+
+http://ns.adobe.com/photoshop/1.0/
+
+photoshop
+
+XMP Rights
+
+http://ns.adobe.com/xap/1.0/rights/
+
+xmpRights
+
+User interfaces showing “IPTC Core” properties should refer to this schema as an “IPTC Core” or “IPTC” panel.
+
+7. Metadata Properties
+
+7.1. Alt Text (Accessibility)
+
+Row header
+
+Specification
+
+Name
+
+Alt Text (Accessibility)
+
+Definition
+
+A brief textual description of the purpose and meaning of an image that can be accessed by assistive technology or displayed when the image is disabled in the browser. It should not exceed 250 characters.
+
+Help Text
+
+Enter text describing the appearance of the image from a visual perspective, focusing on details that are relevant to the purpose and meaning of the image
+
+User Note(s)
+
+This property should not be confused with the IPTC property Headline, which is a brief synopsis or summary of the contents of the image. This property is required for conformance with the W3C Web Content Accessibility Guidelines (WCAG).
+
+Implementation Note(s)
+
+It may help to show a warning on the editing interface when 250 characters are exceeded.
+
+Label
+
+Alt Text (Accessibility)
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2021.1
+
+XMP Specs
+
+Iptc4xmpCore:AltTextAccessibility [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+altTextAccessibility [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:AltTextAccessibility
+
+7.2. City (legacy)
+
+Row header
+
+Specification
+
+Name
+
+City (legacy)
+
+Definition
+
+Name of the city of the location shown in the image. This element is at the third level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the city pictured in this image
+
+User Note(s)
+
+This is a detail of a location with blurred semantics as it does not clearly indicate whether it is the location in the image or the location the photo was taken - which can be different. Two more concise properties are available in IPTC Extension with Location Created and Location Shown in the Image.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+City
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), modified by version 1.1 (2008)
+
+XMP Specs
+
+photoshop:City [Text <External>]
+
+IIM Specs
+
+2:90 City, max bytes for text: 32
+
+JSON Specs
+
+cityName [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:City / IIM: IPTC:City
+
+7.3. Copyright Notice
+
+Row header
+
+Specification
+
+Name
+
+Copyright Notice
+
+Definition
+
+Contains any necessary copyright notice for claiming the intellectual property for this photograph and should identify the current owner of the copyright for the photograph. Other entities like the creator of the photograph may be added in the corresponding field. Notes on usage rights should be provided in "Rights usage terms".
+
+Help Text
+
+Enter a Notice on the current owner of the Copyright for this image, such as ©2008 Jane Doe
+
+User Note(s)
+
+Copyright ownership can be expressed in a more controlled way using the PLUS fields "Copyright Owner", "Copyright Owner ID", "Copyright Owner Name" of the IPTC Extension. It is the user’s responsibility to keep the values of the four fields in sync.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Copyright Notice
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+dc:rights [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+IIM Specs
+
+2:116 Copyright Notice, max bytes for text: 128
+
+JSON Specs
+
+copyrightNotice [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-dc:Rights / IIM: IPTC:CopyrightNotice
+
+7.4. Country (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Country (legacy)
+
+Definition
+
+Full name of the country of the location shown in the image. This element is at the top/first level of a top-down geographical hierarchy. The full name should be expressed as a verbal name and not as a code, a code should go to the element "CountryCode"
+
+Help Text
+
+Enter the name of the country pictured in this image
+
+User Note(s)
+
+This is a detail of a location with blurred semantics as it does not clearly indicate whether it is the location in the image or the location the photo was taken - which can be different. Two more concise properties are available in IPTC Extension with Location Created and Location Shown in the Image.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Country
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), modified by version 1.1 (2008)
+
+XMP Specs
+
+photoshop:Country [Text <External>]
+
+IIM Specs
+
+2:101 Country/Primary Location Name, max bytes for text: 64
+
+JSON Specs
+
+countryName [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:Country / IIM: IPTC:Country-PrimaryLocationName
+
+7.5. Country Code (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Country Code (legacy)
+
+Definition
+
+Code of the country of the location shown in the image. This element is at the top/first level of a top-down geographical hierarchy. The code should be taken from ISO 3166 two or three letter code. The full name of a country should go to the "Country" element.
+
+Help Text
+
+Enter the 2 or 3 letter ISO 3166 Country Code of the Country pictured in this image
+
+User Note(s)
+
+This is a detail of a location with blurred semantics as it does not clearly indicate whether it is the location in the image or the location the photo was taken - which can be different. Two more concise properties are available in IPTC Extension with Location Created and Location Shown in the Image.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+ISO Country Code
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+Required: ISO 3166-1 - 2 or 3 characters (see Definition)
+
+History Note(s)
+
+Added by version 1.0 (2004), modified by version 1.1 (2008)
+
+XMP Specs
+
+Iptc4xmpCore:CountryCode [closed choice Text <External>]
+
+XMP Implementation Note
+
+Note 1: an implementer would have to derive from the length of the value string whether this is the country code from the two or three letter scheme as no explicit indication can be provided.
+
+IIM Specs
+
+2:100 Country/Primary Location Code, max bytes for text: 3
+
+JSON Specs
+
+countryCode [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:CountryCode / IIM: IPTC:Country-PrimaryLocationCode
+
+7.6. Creator
+
+Row header
+
+Specification
+
+Name
+
+Creator
+
+Definition
+
+Contains the name of the photographer, but in cases where the photographer should not be identified the name of a company or organisation may be appropriate.
+
+Help Text
+
+Enter the name of the person that created this image
+
+User Note(s)
+
+The creator can be expressed in a more controlled way using the "Image Creator" of PLUS in the IPTC Extension additionally. It is the user’s responsibility to keep the values of the IPTC Core and the PLUS fields in sync.
+
+Implementation Note(s)
+
+Note 1: Synchronising this Creator property with PLUS' Image Creator Name should be supported by software.
+
+Note 2: Read the IIM note about Max bytes for text
+
+Label
+
+Creator
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+dc:creator [Seq ProperName <External>]
+
+IIM Specs
+
+2:80 By-line, max bytes for text: 32
+
+JSON Specs
+
+creatorNames [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-dc:Creator//array / IIM: IPTC:By-line//array
+
+7.7. Creator’s Contact Info
+
+Row header
+
+Specification
+
+Name
+
+Creator’s Contact Info
+
+Definition
+
+The creator’s contact information provides all necessary information to get in contact with the creator of this image and comprises a set of sub-properties for proper addressing.
+
+User Note(s)
+
+The IPTC Extension Licensor fields should be used instead of these Creator’s Contact Info fields if you are using IPTC Extension fields. If the creator is also the licensor his or her contact information should be provided in the Licensor fields.
+
+Implementation Note(s)
+
+The structure of Creator’s Contact Info should not be visible to the user.
+
+Label
+
+Creator’s Contact info
+
+Basic Specs
+
+Data type: Creators Contact Info structure / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CreatorContactInfo [struct ContactInfo structure <External>]
+
+XMP Implementation Note
+
+Note 1 to user interface implementers: All sub-properties of "Creator’s contact information" should be shown as group on the form.
+
+Note 2: the CreatorContactInfo sub-properties' naming aligns with the vCard specification RFC 2426.
+
+Note 3: the structure corresponds to the first entry in a sequence of creators
+
+JSON Specs
+
+creatorContactInfo [object/CreatorContactInfo/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:CreatorContactInfo/ContactInfo
+
+7.8. Creator’s jobtitle
+
+Row header
+
+Specification
+
+Name
+
+Creator’s jobtitle
+
+Definition
+
+Contains the job title of the photographer. As this is sort of a qualifier the Creator element has to be filled in as mandatory prerequisite for using Creator’s Jobtitle.
+
+Help Text
+
+Enter the Job Title of the person listed in the Creator field
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Creator’s Jobtitle
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), XMP Implementation Note added 2010
+
+XMP Specs
+
+photoshop:AuthorsPosition [Text <External>]
+
+XMP Implementation Note
+
+Note: corresponds to the first entry in a sequence of creators
+
+IIM Specs
+
+2:85 By-line Title, max bytes for text: 32
+
+JSON Specs
+
+jobtitle [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:AuthorsPosition / IIM: IPTC:By-lineTitle
+
+7.9. Credit Line
+
+Row header
+
+Specification
+
+Name
+
+Credit Line
+
+Definition
+
+The credit to person(s) and/or organisation(s) required by the supplier of the image to be used when published. This is a free-text field.
+
+Help Text
+
+Enter who should be credited when this image is published
+
+User Note(s)
+
+Note 1: For more formal identifications of the creator or the owner of the copyrights of this image other rights properties may be used.
+Note 2: This property was named "Credit" by the IIM metadata, then it was renamed to "Provider" in IPTC Core 1.0. In IPTC Core 1.1. it has been renamed to "Credit Line" as the field is used for this purpose by many users.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Credit Line
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), renamed by version 1.1 (2008)
+
+XMP Specs
+
+photoshop:Credit [Text <External>]
+
+IIM Specs
+
+2:110 Credit, max bytes for text: 32
+
+JSON Specs
+
+creditLine [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:Credit / IIM: IPTC:Credit
+
+7.10. Date Created
+
+Row header
+
+Specification
+
+Name
+
+Date Created
+
+Definition
+
+Designates the date and optionally the time the content of the image was created rather than the date of the creation of the digital representation.
+
+Help Text
+
+Enter the Date the image was taken
+
+Implementation Note(s)
+
+Note 1: If a software system requires explicit time values and no time is given by the Date Created property the software
+system should default the time to 00:00:00. If the software system does not require an explicit time value the time part should be left empty as it is.
+
+Note 2: Software showing the metadata user interface should adopt a widget for this property that supports editing truncated dates, like year and month only, or year only. Software embedding truncated dates as IIM DataSet 2:55 should use the value "00" for undefined days or months (like "19180000" for an image taken "in the year 1918")
+
+Label
+
+Date Created
+
+Basic Specs
+
+Data type: DateTime (preferred: truncated DateTime) / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), Implementation Notes revised by version 2021.1
+
+XMP Specs
+
+photoshop:DateCreated [Date <External>]
+
+XMP Implementation Note
+
+Note 1: Any content of the IIM datasets 2:55, Date Created, and 2:60, Time Created, should be merged to this element.
+
+Note 2: Implementers are encouraged to show the values of the Exif tags DateTimeOriginal (36867, 0x9003) + OffsetTimeOriginal(36881,0x9011) of a digital camera to the user for entering this date for the first time.
+
+Note 3: Read note about Date value type
+
+IIM Specs
+
+2:55 Date Created+2:60 Time Created
+
+JSON Specs
+
+dateCreated [string/date-time/]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:DateCreated/date-time/ / IIM: IPTC:DateCreated+IPTC:TimeCreated/date-time/
+
+7.11. Description
+
+Row header
+
+Specification
+
+Name
+
+Description
+
+Definition
+
+A textual description, including captions, of the image.
+
+Help Text
+
+Enter a "caption" describing the who, what, and why of what is happening in this image, this might include names of people, and/or their role in the action that is taking place within the image
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Caption/Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+dc:description [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+IIM Specs
+
+2:120 Caption/Abstract, max bytes for text: 2000
+
+JSON Specs
+
+description [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-dc:Description / IIM: IPTC:Caption-Abstract
+
+7.12. Description Writer
+
+Row header
+
+Specification
+
+Name
+
+Description Writer
+
+Definition
+
+Identifier or the name of the person(s) involved in writing, editing or correcting the Description, Alt Text (Accessibility), or Extended Description (Accessibility) of the image.
+
+Help Text
+
+Enter the name of the person(s) involved in writing, editing or correcting the Description, Alt Text (Accessibility), or Extended Description (Accessibility) of the image, separated by commas
+
+User Note(s)
+
+Multiple description writers can be given. May have to be separated by a comma in the user interface.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Caption/Description writer
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), modified by version 2021.1
+
+XMP Specs
+
+photoshop:CaptionWriter [Text <External>]
+
+IIM Specs
+
+2:122 Writer/Editor, max bytes for text: 32
+
+JSON Specs
+
+captionWriter [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:CaptionWriter / IIM: IPTC:Writer-Editor
+
+7.13. Extended Description (Accessibility)
+
+Row header
+
+Specification
+
+Name
+
+Extended Description (Accessibility)
+
+Definition
+
+A more detailed textual description of the purpose and meaning of an image that elaborates on the information provided by the Alt Text (Accessibility) property. This property does not have a character limitation and is not required if the Alt Text (Accessibility) field sufficiently describes the image.
+
+Help Text
+
+Enter the text describing the appearance of an image from a visual perspective, focusing on relevant details that further describe the meaning and purpose of the image
+
+User Note(s)
+
+This property should not be confused with the IPTC property Description/Caption, which is the who, what, when, where, why, how of an image. This property can be combined with Alt Text (Accessibility) if and when a brief description is not sufficient to convey the purpose and meaning of an image. It should not repeat the information in the Alt Text (Accessibility) property. It is required for conformance with the W3C Web Content Accessibility Guidelines (WCAG).
+
+Implementation Note(s)
+
+Extended Description (Accessibility) is designed to be used in conjunction with Alt Text (Accessibility) therefore both properties should be available on the editing interface.
+
+Label
+
+Extended Description (Accessibility)
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2021.1
+
+XMP Specs
+
+Iptc4xmpCore:ExtDescrAccessibility [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+extDescrAccessibility [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:ExtDescrAccessibility
+
+7.14. Headline
+
+Row header
+
+Specification
+
+Name
+
+Headline
+
+Definition
+
+A brief synopsis of the caption. Headline is not the same as Title.
+
+Help Text
+
+Enter a brief publishable synopsis or summary of the contents of the image
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Headline
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+photoshop:Headline [Text <External>]
+
+IIM Specs
+
+2:105 Headline, max bytes for text: 256
+
+JSON Specs
+
+headline [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:Headline / IIM: IPTC:Headline
+
+7.15. Instructions
+
+Row header
+
+Specification
+
+Name
+
+Instructions
+
+Definition
+
+Any number of instructions from the provider or creator to the receiver of the image
+
+Help Text
+
+Enter information about embargoes, or other restrictions not covered by the Rights Usage field
+
+User Note(s)
+
+The Instructions may include any of the following: embargoes (NewsMagazines OUT) and other restrictions not covered by the "Rights Usage Terms" field; information regarding the original means of capture (scanning notes, colourspace info) or other specific text information that the user may need for accurate reproduction; additional permissions required when publishing; credits for publishing if they exceed the IIM length of the credit field
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Instructions
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+photoshop:Instructions [Text <External>]
+
+IIM Specs
+
+2:40 Special Instruction, max bytes for text: 256
+
+JSON Specs
+
+instructions [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:Instructions / IIM: IPTC:SpecialInstructions
+
+7.16. Intellectual Genre (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Intellectual Genre (legacy)
+
+Definition
+
+Describes the nature, intellectual, artistic or journalistic characteristic of an image.
+
+Help Text
+
+Enter a term to describe the nature of the image in terms of its intellectual or journalistic characteristics
+
+User Note(s)
+
+Note on "legacy": the Intellectual Genre can be expressed in a more controlled way using the "Genre" property of the IPTC Extension, IPTC recommends using it.
+
+Implementation Note(s)
+
+Applies to IIM only: the genre code MUST be prefixed with the four characters 000: as value of the dataset 2:04 (Attribute Reference). The 64-byte limit applies to the code only. Example: the typed in IPTC genre code Actuality must be 000:Actuality as IIM value.
+
+Label
+
+Intellectual genre
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004). Help text revised by version 2021.1, notes by 2021.1 and 2022.1
+
+XMP Specs
+
+Iptc4xmpCore:IntellectualGenre [Text <External>]
+
+IIM Specs
+
+2:04 Object Attribute Reference, max bytes for text: 64
+
+JSON Specs
+
+intellectualGenre [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:IntellectualGenre / IIM: IPTC:ObjectAttributeReference
+
+7.17. Job Id
+
+Row header
+
+Specification
+
+Name
+
+Job Id
+
+Definition
+
+Number or identifier for the purpose of improved workflow handling. This is a user created identifier related to the job for which the image is supplied.
+
+Help Text
+
+Enter a number or identifier needed for workflow control or tracking
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Job Identifier
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+photoshop:TransmissionReference [Text <External>]
+
+XMP Implementation Note
+
+Note: As this identifier references a job of the receiver’s workflow it must first be issued by the receiver, then transmitted to the creator or provider of the news object and finally added by the creator to this field.
+
+IIM Specs
+
+2:103 Original Transmission Reference, max bytes for text: 32
+
+JSON Specs
+
+jobid [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:TransmissionReference / IIM: IPTC:OriginalTransmissionReference
+
+7.18. Keywords
+
+Row header
+
+Specification
+
+Name
+
+Keywords
+
+Definition
+
+Keywords to express the subject and other aspects of the content of the image. Keywords may be free text and don’t have to be taken from a controlled vocabulary. Codes from any controlled vocabulary of IPTC must go to the CV-Term About Image property
+
+Help Text
+
+Enter any number of keywords, terms or phrases to express the subject and other aspects of the content of the image.
+
+Implementation Note(s)
+
+Note 1: Single values of this field should not be restricted to single words but must allow for phrases as well.
+
+Note 2: Read the IIM note about Max bytes for text
+
+Label
+
+Keywords
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004), definition changed by version 1.5 (2024.1)
+
+XMP Specs
+
+dc:subject [Bag Text <External>]
+
+IIM Specs
+
+2:25 Keywords, max bytes for text: 64
+
+JSON Specs
+
+keywords [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-dc:Subject//array / IIM: IPTC:Keywords//array
+
+7.19. Province or State (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Province or State (legacy)
+
+Definition
+
+Name of the subregion of a country of the location shown in the image. This element is at the second level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the province or state pictured in this image
+
+User Note(s)
+
+This is a detail of a location with blurred semantics as it does not clearly indicate whether it is the location in the image or the location the photo was taken - which can be different. Two more concise properties are available in IPTC Extension with Location Created and Location Shown in the Image.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Province/State
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Modified by version 1.1 (2008)
+
+XMP Specs
+
+photoshop:State [Text <External>]
+
+IIM Specs
+
+2:95 Province/State, max bytes for text: 32
+
+JSON Specs
+
+provinceState [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:State / IIM: IPTC:Province-State
+
+7.20. Rights Usage Terms
+
+Row header
+
+Specification
+
+Name
+
+Rights Usage Terms
+
+Definition
+
+The licensing parameters of the image expressed in free-text.
+
+Help Text
+
+Enter instructions on how this image can legally be used
+
+User Note(s)
+
+Rights and licensing related properties of the IPTC Extension can be used in parallel to express the licensed usage in more controlled terms.
+
+Label
+
+Rights Usage Terms
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+xmpRights:UsageTerms [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+usageTerms [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-xmpRights:UsageTerms/
+
+7.21. Scene Code
+
+Row header
+
+Specification
+
+Name
+
+Scene Code
+
+Definition
+
+Describes the scene of a photo content. Specifies one ore more terms from the IPTC "Scene-NewsCodes". Each Scene is represented as a string of 6 digits in an unordered list.
+
+Help Text
+
+Enter only the 6-digit codes from the IPTC Scene NewsCodes Controlled Vocabulary (see: http://cv.iptc.org/newscodes/scene)
+
+Label
+
+IPTC Scene Code
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..unbounded
+
+CV Note(s)
+
+Required: IPTC Scene NewsCodes. Use only the 6-digit code.
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:Scene [Bag closed choice Text <External>]
+
+JSON Specs
+
+sceneCodes [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:Scene//array
+
+7.22. Source (Supply Chain)
+
+Row header
+
+Specification
+
+Name
+
+Source (Supply Chain)
+
+Definition
+
+The name of a person or party who has a role in the content supply chain. This could be an agency, a member of an agency, an individual or a combination. Source could be different from Creator and from the entities in the Copyright Notice.
+
+Help Text
+
+Enter or edit the name of a person or party who has a role in the content supply chain, such as a person or entity from whom you received this image from
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Source (Supply Chain)
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), definition changed by version 1.2 (2014), name and label changed by 2022.1
+
+XMP Specs
+
+photoshop:Source [Text <External>]
+
+IIM Specs
+
+2:115 Source, max bytes for text: 32
+
+JSON Specs
+
+source [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-photoshop:Source / IIM: IPTC:Source
+
+7.23. Subject Code (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Subject Code (legacy)
+
+Definition
+
+Specifies one or more Subjects from the IPTC Subject-NewsCodes taxonomy to categorise the image. Each Subject is represented as a string of 8 digits in an unordered list.
+
+Help Text
+
+Enter only the 8-digit codes from the IPTC Subject NewsCode Controlled Vocabulary (see: http://cv.iptc.org/newscodes/subjectcode)
+
+User Note(s)
+
+Note on "legacy": The Subject Codes were retired by IPTC before 2010. For the classification of images use the IPTC Media Topics vocabulary now, see: http://cv.iptc.org/newscodes/mediatopic For the Media Topics the CV Term About Image property must be used.
+
+Implementation Note(s)
+
+Applies to IIM only: the 8-digit code MUST be prefixed with the five characters IPTC: as value of the dataset 2:12 (Subject Reference). Example: the typed in Subject Code 01002003 must be IPTC:01002003 as IIM value.
+
+Label
+
+IPTC Subject Code
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..unbounded
+
+CV Note(s)
+
+Required: IPTC Subject NewsCodes. Use only the 8-digit code.
+
+History Note(s)
+
+Added by version 1.0 (2004). State "legacy" set and Implementation notes changed by 2022.1,
+
+XMP Specs
+
+Iptc4xmpCore:SubjectCode [Bag closed choice Text <External>]
+
+IIM Specs
+
+2:12 Subject Reference, max bytes for text: 236
+
+JSON Specs
+
+subjectCodes [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:SubjectCode//array / IIM: IPTC:SubjectReference//array
+
+7.24. Sublocation (legacy)
+
+Row header
+
+Specification
+
+Name
+
+Sublocation (legacy)
+
+Definition
+
+Exact name of the sublocation shown in the image. This sublocation name could either be the name of a sublocation to a city or the name of a well known location or (natural) monument outside a city. In the sense of a sublocation to a city this element is at the fourth level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the Sublocation pictured in this image
+
+User Note(s)
+
+This is a detail of a location with blurred semantics as it does not clearly indicate whether it is the location in the image or the location the photo was taken - which can be different. Two more concise properties are available in IPTC Extension with Location Created and Location Shown in the Image.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Sublocation
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004), modified by version 1.1 (2008)
+
+XMP Specs
+
+Iptc4xmpCore:Location [Text <External>]
+
+IIM Specs
+
+2:92 Sublocation, max bytes for text: 32
+
+JSON Specs
+
+sublocationName [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcCore:Location / IIM: IPTC:Sub-location
+
+7.25. Title
+
+Row header
+
+Specification
+
+Name
+
+Title
+
+Definition
+
+A shorthand reference for the digital image. Title provides a short human readable name which can be a text and/or numeric reference. It is not the same as Headline.
+
+Help Text
+
+Enter a short verbal and human readable name for the image, this may be the file name
+
+User Note(s)
+
+Many use the Title field to store the filename of the image, though the field may be used in many ways. Formal identifiers are provided by the Digital Image Id, or the Registry Entry property of the IPTC Extension.
+
+Implementation Note(s)
+
+Read the IIM note about Max bytes for text
+
+Label
+
+Title
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+dc:title [Lang Alt <External>]
+
+XMP Implementation Note
+
+Note 1: This element aligns with the use of Dublin Core’s "Title" element.
+
+Note 2: Read note about Lang Alt value type
+
+IIM Specs
+
+2:05 Object Name, max bytes for text: 64
+
+JSON Specs
+
+title [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-dc:Title/ / IIM: IPTC:ObjectName
+
+8. Metadata Structures
+
+8.1. Contact Information structure
+
+Row header
+
+Specification
+
+Name
+
+Contact Information structure
+
+Definition
+
+A generic structure providing a basic set of information to get in contact with a person or organisation. It includes an Address, a City, a Country, Email address, Phone number, a Postal Code, a State or Province and Web URL.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.0 (2004), XMP Implementation Note removed (2021.1)
+
+IIM Specs
+
+2:118 Contact
+
+JSON Specs
+
+CreatorContactInfo [object//]
+
+Help: ExifTool tags
+
+8.1.1. Address
+
+Row header
+
+Specification
+
+Name
+
+Address
+
+Definition
+
+The contact information address part. Comprises an optional company name and all required information to locate the building or postbox to which mail should be sent. To that end, the address is a multiline field.
+
+Help Text
+
+Enter Address for the person that created this image
+
+Label
+
+(Contact Info detail:) Address
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiAdrExtadr [Text <External>]
+
+XMP Implementation Note
+
+Note 1: to user interface implementers: This field should be part of a "Contact information" group on the form.
+
+Note 2: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+address [string//]
+
+Help: ExifTool tags
+
+XMP: CiAdrExtadr
+
+8.1.2. City
+
+Row header
+
+Specification
+
+Name
+
+City
+
+Definition
+
+The contact information city part.
+
+Help Text
+
+Enter the City for the address of the person that created this image
+
+Label
+
+(Contact Info detail:) City
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiAdrCity [Text <External>]
+
+XMP Implementation Note
+
+Note 1: to user interface implementers: This field should be part of a "Contact information" group on the form.
+
+Note 2: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+city [string//]
+
+Help: ExifTool tags
+
+XMP: CiAdrCity
+
+8.1.3. Country
+
+Row header
+
+Specification
+
+Name
+
+Country
+
+Definition
+
+The contact information country part.
+
+Help Text
+
+Enter the Country name for the address of the person that created this image
+
+Label
+
+(Contact Info detail:) Country
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiAdrCtry [Text <External>]
+
+XMP Implementation Note
+
+Note 1: to user interface implementers: This field should be part of a "Contact information" group on the form.
+
+Note 2: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+country [string//]
+
+Help: ExifTool tags
+
+XMP: CiAdrCtry
+
+8.1.4. Email address(es)
+
+Row header
+
+Specification
+
+Name
+
+Email address(es)
+
+Definition
+
+The contact information email address part.
+
+Help Text
+
+Enter the work Email address(es) for the person that created this image, such as name@domain.com
+
+User Note(s)
+
+Multiple email addresses can be given. May have to be separated by a comma in the user interface.
+
+Label
+
+(Contact Info detail:) Email(s)
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiEmailWork [Text <External>]
+
+XMP Implementation Note
+
+Note 1 to user interface implementers: This field should be part of a "Contact information" group on the form.
+Note 2 to user interface implementers: provide sufficient space to fill in multiple e-mail addresses.
+
+Note 3: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+emailwork [string//]
+
+Help: ExifTool tags
+
+XMP: CiEmailWork
+
+8.1.5. Phone number(s)
+
+Row header
+
+Specification
+
+Name
+
+Phone number(s)
+
+Definition
+
+The contact information phone number part.
+
+Help Text
+
+Enter the work Phone number(s) for the person that created this image, using the international format, such as +1 (123) 456789
+
+User Note(s)
+
+Multiple numbers can be given. May have to be separated by a comma in the user interface.
+
+Label
+
+(Contact Info detail:) Phone(s)
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiTelWork [Text <External>]
+
+XMP Implementation Note
+
+Note 1 to user interface implementers: This field should be part of a "Contact information" group on the form.
+Note 2 to user interface implementers: provide sufficient space to fill in multiple international numbers.
+
+Note 3: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+phonework [string//]
+
+Help: ExifTool tags
+
+XMP: CiTelWork
+
+8.1.6. Postal Code
+
+Row header
+
+Specification
+
+Name
+
+Postal Code
+
+Definition
+
+The contact information part denoting the local postal code.
+
+Help Text
+
+Enter the Postal Code for the address of the person that created this image
+
+Label
+
+(Contact Info detail:) Postal Code
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiAdrPcode [Text <External>]
+
+XMP Implementation Note
+
+Note 1: to user interface implementers: This field should be part of a "Contact information" group on the form.
+
+Note 2: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+postalCode [string//]
+
+Help: ExifTool tags
+
+XMP: CiAdrPcode
+
+8.1.7. State/Province
+
+Row header
+
+Specification
+
+Name
+
+State/Province
+
+Definition
+
+The contact information part denoting regional information such as state or province.
+
+Help Text
+
+Enter the State for the address of the person that created this image
+
+Label
+
+(Contact Info detail:) State/Province
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiAdrRegion [Text <External>]
+
+XMP Implementation Note
+
+Note 1: to user interface implementers: This field should be part of a "Contact information" group on the form.
+
+Note 2: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+region [string//]
+
+Help: ExifTool tags
+
+XMP: CiAdrRegion
+
+8.1.8. Web URL(s)
+
+Row header
+
+Specification
+
+Name
+
+Web URL(s)
+
+Definition
+
+The contact information web address part. Multiple addresses can be given.
+
+Help Text
+
+Enter the work Web URL(s) for the person that created this image, such as http://www.domain.com/
+
+User Note(s)
+
+Multiple URL can be given. May have to be separated by a comma in the user interface.
+
+Label
+
+(Contact Info detail:) Web URL(s)
+
+Basic Specs
+
+Data type: URL / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2004)
+
+XMP Specs
+
+Iptc4xmpCore:CiUrlWork [Text <External>]
+
+XMP Implementation Note
+
+Note 1 to user interface implementers: This field should be part of a "Contact information" group on the form.
+Note 2 to user interface implementers: provide sufficient space to fill in multiple URLs.
+
+Note 3: the ContactInfo naming aligns with the vCard specification RFC 2426.
+
+JSON Specs
+
+weburlwork [string/url/]
+
+Help: ExifTool tags
+
+XMP: CiUrlWork
+
+9. Non-normative Information
+
+9.1. “Deprecated” IIM metadata properties
+
+Not all of the IIM datasets adopted by Adobe to be used for the Photoshop File Info have been adopted for the IPTC Core schema. In terms of mapping and transferring metadata from the legacy IIM-based metadata, these datasets must be considered as deprecated:
+
+Urgency: As this metadata element pertains to distribution management, it was not adopted. However, this data is still synchronised with the XMP property “photoshop:Urgency”, and hence, available for future use, but outside the IPTC Core.
+
+Category: As this metadata element was earmarked as deprecated already for IIM 4.1, it was not adopted. However, this data is still synchronised with the XMP property “photoshop:Category”, and hence available for future use – but outside the IPTC Core.
+For migrating from Category codes to Subject Codes please read the Guideline for mapping Category Codes to Subject NewsCodes section below.
+
+Supplemental Categories: As this metadata element was earmarked as deprecated already for IIM 4.1, it was not adopted. However, this data is still synchronised with the XMP property “photoshop:SupplementalCategories”, and hence available for future use – but outside the IPTC Core.
+
+9.2. Guideline for mapping Category Codes to Subject NewsCodes
+
+Early versions of IIM included the Datasets 2:15 “Category” and 2:20 “Supplemental Category”. But these two fields were replaced in IIM version 4 (released in 1999) by the Dataset 2:12 “Subject Reference” which must be populated by values from the Subject NewsCodes controlled vocabulary. In version 4 of the IIM specification document the Datasets Category and Supplemental Category were indicated as “deprecated” which meant that after the time of this release these two Datasets should not be populated with values any longer.
+To support the move from the three letter codes used with the Category Dataset to the Subject NewsCodes this table provides a reference for mapping.
+
+Category
+
+Code Subject NewsCode
+
+Name and definition of the code
+
+ACE
+
+01000000
+
+arts, culture and entertainment
+Matters pertaining to the advancement and refinement of the human mind, of interests, skills, tastes and emotions
+
+CLJ
+
+02000000
+
+crime, law and justice
+Establishment and/or statement of the rules of behaviour in society, the enforcement of these rules, breaches of the rules and the punishment of offenders. Organizations and bodies involved in these activities.
+
+DIS
+
+03000000
+
+disaster and accident
+Man-made and natural events resulting in loss of life or injury to living creatures and/or damage to inanimate objects or property.
+
+FIN
+
+04000000
+
+economy, business and finance
+All matters concerning the planning, production and exchange of wealth.
+
+EDU
+
+05000000
+
+education
+All aspects of furthering knowledge of human individuals from birth to death.
+
+EVN
+
+06000000
+
+environmental issue
+All aspects of protection, damage, and condition of the ecosystem of the planet earth and its surroundings.
+
+HTH
+
+07000000
+
+health
+All aspects pertaining to the physical and mental welfare of human beings.
+
+HUM
+
+08000000
+
+human interest
+Lighter items about individuals, groups, animals or objects.
+
+LAB
+
+09000000
+
+labour
+Social aspects, organizations, rules and conditions affecting the employment of human effort for the generation of wealth or provision of services and the economic support of the unemployed.
+
+LIF
+
+10000000
+
+lifestyle and leisure
+Activities undertaken for pleasure, relaxation or recreation outside paid employment, including eating and travel.
+
+POL
+
+11000000
+
+politics
+Local, regional, national and international exercise of power, or struggle for power, and the relationships between governing bodies and states.
+
+REL
+
+12000000
+
+religion and belief
+All aspects of human existence involving theology, philosophy, ethics and spirituality.
+
+SCI
+
+13000000
+
+science and technology
+All aspects pertaining to human understanding of nature and the physical world and the development and application of this knowledge.
+
+SOI
+
+14000000
+
+social issue
+Aspects of the behaviour of humans affecting the quality of life.
+
+SPO
+
+15000000
+
+sport
+Competitive exercise involving physical effort. Organizations and bodies involved in these activities.
+
+IPTC Extension schema 1.8 specifications
+
+The IPTC Extension schema defines the semantics of a set of metadata properties and their technical expressions by the XMP format.
+
+10. XMP Namespaces and Identifiers
+
+The technical XMP format of the IPTC Extension schema uses different namespaces for different properties:
+
+The namespace IPTC Extension covers only a subset of the properties of the IPTC Extension schema.
+
+Name
+
+URI
+
+Recommended Prefix
+
+IPTC Extension
+
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/
+
+Iptc4xmpExt (preferred prefix)
+
+PLUS
+
+http://ns.useplus.org/ldf/xmp/1.0/
+
+plus
+
+XMP
+
+http://ns.adobe.com/xap/1.0/
+
+xmp
+
+XMP Rights
+
+http://ns.adobe.com/xap/1.0/rights/
+
+xmpRights
+
+Exif 2.3 or earlier
+
+http://ns.adobe.com/exif/1.0/
+
+exif
+
+10.1. User Interface Note
+
+User interfaces (like the custom panels in Adobe Photoshop/Bridge/Lightroom products) showing “IPTC Extension” properties should refer to it as an “IPTC Extension” or “IPTC …” panel.
+
+11. Metadata Properties
+
+11.1. Additional Model Information
+
+Row header
+
+Specification
+
+Name
+
+Additional Model Information
+
+Definition
+
+Information about the ethnicity and other facets of the model(s) in a model-released image.
+
+Help Text
+
+Enter information like ethnicity or other details about the model(s) in this image
+
+User Note(s)
+
+Use the Model Age field for the age of model(s).
+
+Label
+
+Additional model info
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AddlModelInfo [Text <External>]
+
+JSON Specs
+
+additionalModelInfo [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AdditionalModelInformation
+
+11.2. AI Prompt Information
+
+Row header
+
+Specification
+
+Name
+
+AI Prompt Information
+
+Definition
+
+The information that was given to the generative AI service as “prompt(s)” in order to generate this image.
+
+Help Text
+
+Enter the information given to the generative AI service as “prompt(s)” in order to generate this image.
+
+User Note(s)
+
+This may include negative [excludes] and positive [includes] statements in the prompt.
+
+Label
+
+AI Prompt Information
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2025.1
+
+XMP Specs
+
+Iptc4xmpExt:AIPromptInformation [Text <External>]
+
+JSON Specs
+
+aIPromptInformation [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AIPromptInformation
+
+11.3. AI Prompt Writer Name
+
+Row header
+
+Specification
+
+Name
+
+AI Prompt Writer Name
+
+Definition
+
+Name of the person who wrote the prompt used for generating this image.
+
+Help Text
+
+Enter the name of the person who wrote the prompt used for generating this image.
+
+User Note(s)
+
+This person should not be considered as the image creator.
+
+Label
+
+AI Prompt Writer Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2025.1
+
+XMP Specs
+
+Iptc4xmpExt:AIPromptWriterName [Text <External>]
+
+JSON Specs
+
+aIPromptWriterNam [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AIPromptWriterName
+
+11.4. AI System Used
+
+Row header
+
+Specification
+
+Name
+
+AI System Used
+
+Definition
+
+The AI engine and/or the model name used to generate this image.
+
+Help Text
+
+Enter the name of the AI system and/or the model name used to generate this image.
+
+User Note(s)
+
+For example, ChatGPT DALL-E, Google Gemini, ChatGPT.
+
+Label
+
+AI System Used
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2025.1
+
+XMP Specs
+
+Iptc4xmpExt:AISystemUsed [Text <External>]
+
+JSON Specs
+
+aISystemUsed [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AISystemUsed
+
+11.5. AI System Version Used
+
+Row header
+
+Specification
+
+Name
+
+AI System Version Used
+
+Definition
+
+The version of the AI system used to generate this image, if known.
+
+Help Text
+
+Enter the name or number of the version of the AI system used to generate this image.
+
+Label
+
+AI System Version Used
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2025.1
+
+XMP Specs
+
+Iptc4xmpExt:AISystemVersionUsed [Text <External>]
+
+JSON Specs
+
+aISystemVersionUsed [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AISystemVersionUsed
+
+11.6. Artwork or Object in the Image
+
+Row header
+
+Specification
+
+Name
+
+Artwork or Object in the Image
+
+Definition
+
+A set of metadata about artwork or an object in the image
+
+Help Text
+
+Enter details about artwork or objects shown in this image
+
+Label
+
+Artwork or object in the image
+
+Basic Specs
+
+Data type: Artwork or Object in the Image structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:ArtworkOrObject [Bag ArtworkOrObject structure <External>]
+
+JSON Specs
+
+artworkOrObjects [object/ArtworkOrObject/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:ArtworkOrObject/ArtworkOrObjectStruct/array
+
+11.7. Code of Organisation Featured in the Image
+
+Row header
+
+Specification
+
+Name
+
+Code of Organisation Featured in the Image
+
+Definition
+
+Code from a controlled vocabulary for identifying the organisation or company which is featured in the image.
+
+Help Text
+
+Enter an identifier for the controlled vocabulary, then a colon, and finally the code from the vocabulary assigned to the organisation shown in this image (e.g. nasdaq:companyA)
+
+User Note(s)
+
+For example a stock ticker symbol may be used.
+
+Label
+
+Code of featured Organisation
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:OrganisationInImageCode [Bag Text <External>]
+
+JSON Specs
+
+organisationInImageCodes [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:OrganisationInImageCode//array
+
+11.8. Contributor
+
+Row header
+
+Specification
+
+Name
+
+Contributor
+
+Definition
+
+Party or parties (person or organisation) which contributed to the image, refinement by the role attribute.
+
+Help Text
+
+Enter person(s) or party/parties or organisation(s) having contributed to making the image. An added role helps to refine the kind of contribution.
+
+User Note(s)
+
+A distinction between contributor and creator should follow rights laws, contracts or common business rules.
+A vocabulary of roles of persons contributiong to an image should be based on industry wide practices such as https://cv.iptc.org/newscodes/contentprodpartyrole/
+
+Label
+
+Contributor
+
+Basic Specs
+
+Data type: Entity or Concept with role structure / Cardinality: (0..unbounded)
+
+History Note(s)
+
+Added by version 2022.1
+
+XMP Specs
+
+Iptc4xmpExt:Contributor [Bag EntityConceptWRole structure <External>]
+
+JSON Specs
+
+contributors [object/EntityWRole/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:Contributor/EntityWRoleStruct/array
+
+11.9. Copyright Owner
+
+Row header
+
+Specification
+
+Name
+
+Copyright Owner
+
+Definition
+
+Owner or owners of the copyright in the licensed image.
+
+Help Text
+
+Enter the owner or owners of the copyright in the licensed image
+
+User Note(s)
+
+Serves to identify the rights holder/s for the image. The Copyright Owner, Image Creator and Licensor may be the same or different entities.
+
+Implementation Note(s)
+
+This is a structured PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Copyright owner
+
+Basic Specs
+
+Data type: plus-CopyrightOwner / Cardinality: 0..3
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:CopyrightOwner [Seq CopyrightOwner structure <External>]
+
+JSON Specs
+
+copyrightOwners [object/CopyrightOwner/array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:CopyrightOwner/PlusEntityStruct/array
+
+11.10. CV-Term About Image
+
+Row header
+
+Specification
+
+Name
+
+CV-Term About Image
+
+Definition
+
+One or more topics, themes or entities the content is about, each one expressed by a term from a Controlled Vocabulary.
+
+Help Text
+
+Enter one or more topics, themes or entities the image is about, each one expressed by a term from a Controlled Vocabulary
+
+Label
+
+CV-Term About Image
+
+Basic Specs
+
+Data type: CV-Term structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AboutCvTerm [Bag CVTerm structure <External>]
+
+JSON Specs
+
+aboutCvTerms [object/CvTerm/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:AboutCvTerm/CVTermStruct/array
+
+11.11. Data Mining
+
+Row header
+
+Specification
+
+Name
+
+Data Mining
+
+Definition
+
+Data mining prohibition or permission, optionally with constraints.
+
+User Note(s)
+
+Regional laws applying to an asset may prohibit, constrain, or allow data mining for certain purposes (such as search indexing or research), and may overrule the value selected for this property. Similarly, the absence of a prohibition does not indicate that the asset owner grants permission for data mining or any other use of an asset.
+
+The prohibition “Prohibited except for search engine indexing” only permits data mining by search engines available to the public to identify the URL for an asset and its associated data (for the purpose of assisting the public in navigating to the URL for the asset), and prohibits all other uses, such as AI/ML training.
+
+The PLUS Other Constraints property is human readable. The IPTC properties Embedded Encoded Rights Expression and Linked Encoded Rights Expression are machine readable.
+
+Implementation Note(s)
+
+This is a PLUS version 2.0.1 property included in the IPTC Extension schema. The value must be one of the URIs listed in the Controlled Vocabulary section of the PLUS specification.
+
+Label
+
+Data Mining
+
+Basic Specs
+
+Data type: CV-Code / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2023.1
+
+XMP Specs
+
+plus:DataMining [URL <External>]
+
+JSON Specs
+
+dataMining [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:DataMining
+
+11.12. Digital Image GUID
+
+Row header
+
+Specification
+
+Name
+
+Digital Image GUID
+
+Definition
+
+Globally unique identifier for this digital image. It is created and applied by the creator of the digital image at the time of its creation . This value shall not be changed after that time.
+
+Help Text
+
+If an ID already exists, don’t change - otherwise enter a globally unique identifier for this digital image
+
+User Note(s)
+
+The identifier will probably be generated by the technical means of an imaging device or software and should be applied to the digital image file as early as possible in its life cycle. This identifier does not identify any pictured content, particularly in case of a scan of non-digital images, only this digital representation.
+
+Implementation Note(s)
+
+Any algorithm to create this identifier has to comply with the technical requirements to create a globally unique id. Any device creating digital images - e.g. still image cameras, video cameras, scanners - should create such an identifer right at the time of the creation of the digital data and add the id to the set of metadata.
+
+IPTC’s basic requirements for unique ids are:
+
+* It must be globally unique. Algorithms for this purpose exist.
+
+* It should be secured against tampering.
+
+These features may be considered:
+
+* It may identify the camera body.
+
+* It may identify each individual photo from this camera body.
+
+* It may identify the date and time of the creation of the picture.
+
+This field should be implemented in a way to prove it has not been changed since its value has been applied.
+
+If the identifier has been created by the imaging device its type and brand can be found in the Exif/technical metadata.
+
+Label
+
+Digital Image Identifier
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008), Implementation Notes modified by version 2021.1
+
+XMP Specs
+
+Iptc4xmpExt:DigImageGUID [Text <Internal>]
+
+JSON Specs
+
+digitalImageGuid [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:DigitalImageGUID
+
+11.13. Digital Source Type
+
+Row header
+
+Specification
+
+Name
+
+Digital Source Type
+
+Definition
+
+The type of the source of this digital image
+
+Help Text
+
+Select one of the values for identifying the type of the source of the digital image from the controlled vocabulary
+
+User Note(s)
+
+Please check the Digital Source Type NewsCodes vocabulary, it was updated in 2022.
+
+Label
+
+Type of source for this photo
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+Required: Digital Source Type NewsCodes
+
+History Note(s)
+
+Added by v 1.1 (2009), User Note added by v 2022.1
+
+XMP Specs
+
+Iptc4xmpExt:DigitalSourceType [URI <External>]
+
+JSON Specs
+
+digitalSourceType [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:DigitalSourceType
+
+11.14. Embedded Encoded Rights Expression
+
+Row header
+
+Specification
+
+Name
+
+Embedded Encoded Rights Expression
+
+Definition
+
+An embedded rights expression using any rights expression language
+
+Help Text
+
+Shows an encoded rights expression. These values cannot be changed by metadata panels
+
+Label
+
+Embedded Encoded Rights Expression
+
+Basic Specs
+
+Data type: Embedded Encoded Rights Expression (EERE) structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:EmbdEncRightsExpr [Bag EERE structure <Internal>]
+
+JSON Specs
+
+embdEncRightsExprs [object/EmbdEncRightsExpr/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:EmbdEncRightsExpr/EEREDEtails/array
+
+11.15. Event Identifier
+
+Row header
+
+Specification
+
+Name
+
+Event Identifier
+
+Definition
+
+Identifier(s) of the specific event at which the photo was taken
+
+Help Text
+
+Enter one or more identifiers of the event where this image was taken
+
+User Note(s)
+
+The URL/URI of a persistent calendar showing this event can be used.
+
+Label
+
+Event ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 2021.1
+
+XMP Specs
+
+Iptc4xmpExt:EventId [Bag Text <External>]
+
+JSON Specs
+
+eventId [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:EventID
+
+11.16. Event Name
+
+Row header
+
+Specification
+
+Name
+
+Event Name
+
+Definition
+
+Names or describes the specific event at which the photo was taken.
+
+Help Text
+
+Enter the name or description of the event where this image was taken
+
+User Note(s)
+
+Examples are: a press conference, dedication ceremony, etc. If this is a sub-event of a larger event both can be provided by the field: e.g. "XXXIII Olympic Summer Games (Paris): opening ceremony". Unplanned events could be named by this property too.
+
+Label
+
+Event Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008), Name and Label modified by version 2021.1
+
+XMP Specs
+
+Iptc4xmpExt:Event [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+eventName [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:Event
+
+11.17. Genre
+
+Row header
+
+Specification
+
+Name
+
+Genre
+
+Definition
+
+Artistic, style, journalistic, product or other genre(s) of the image (expressed by a term from any Controlled Vocabulary)
+
+Label
+
+Genre
+
+Basic Specs
+
+Data type: CV-Term structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+Iptc4xmpExt:Genre [Bag CVTerm structure <External>]
+
+JSON Specs
+
+genres [object/CvTerm/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:Genre/CVTermStruct/array
+
+11.18. Image Creator
+
+Row header
+
+Specification
+
+Name
+
+Image Creator
+
+Definition
+
+Creator or creators of the image
+
+Help Text
+
+Enter details about the creator or creators of this image
+
+User Note(s)
+
+The creator can be additionally expressed in free-text using the IPTC Core Creator field. In many countries, the Image Creator must be attributed in association with any use of the image. The Image Creator, Copyright Owner, Image Supplier and Licensor may be the same or different entities.
+
+Implementation Note(s)
+
+This is a structured PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Image Creator
+
+Basic Specs
+
+Data type: plus-ImageCreator / Cardinality: 0..3
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:ImageCreator [Seq ImageCreator structure <External>]
+
+JSON Specs
+
+imageCreators [object/ImageCreator/array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:ImageCreator/PlusEntityStruct/array
+
+11.19. Image Rating
+
+Row header
+
+Specification
+
+Name
+
+Image Rating
+
+Definition
+
+Rating of the image by its user or supplier
+
+Implementation Note(s)
+
+The value shall be -1 or in the range 0..5. -1 indicates "rejected" and 0 "unrated". If an explicit value is missing the implicit default value is 0 should be assumed.
+
+Label
+
+Rating
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.4 (2017.1)
+
+XMP Specs
+
+xmp:Rating [Closed Choice Real <External>]
+
+JSON Specs
+
+imageRating [number//]
+
+Help: ExifTool tags
+
+XMP: XMP-xmp:Rating/decimal/
+
+11.20. Image Region
+
+Row header
+
+Specification
+
+Name
+
+Image Region
+
+Definition
+
+Sets a region inside an image by defining its boundaries. All pixels of the boundary are also part of the region. It may include metadata related to this region.
+
+Label
+
+Image Region(s)
+
+Basic Specs
+
+Data type: Image Region structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:ImageRegion [Bag ImageRegion structure <External>]
+
+JSON Specs
+
+imageRegion [object/ImageRegion/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:ImageRegion/ImageRegionStruct/array
+
+11.21. Image Registry Entry
+
+Row header
+
+Specification
+
+Name
+
+Image Registry Entry
+
+Definition
+
+Both a Registry Item Id and a Registry Organisation Id to record any registration of this digital image with a registry.
+
+Help Text
+
+Enter IDs for this image and the registry issuing the image ID
+
+User Note(s)
+
+Typically an id from a registry is negotiated and applied after the creation of the digital image.
+
+Implementation Note(s)
+
+Any user interface implementation must show both sub-properties - Item Id and Organisation Id - as corresponding values. Further an input to both fields should be made mandatory.
+
+Label
+
+Registry Entry
+
+Basic Specs
+
+Data type: Registry Entry structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:RegistryId [Bag RegistryEntry structure <External>]
+
+JSON Specs
+
+registryEntries [object/RegistryEntry/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:RegistryID/RegistryEntryStruct/array
+
+11.22. Image Supplier
+
+Row header
+
+Specification
+
+Name
+
+Image Supplier
+
+Definition
+
+Identifies the most recent supplier of the image, who is not necessarily its owner or creator.
+
+Help Text
+
+Enter the identifier for the most recent supplier of this image - note that this might not be the creator or owner of the image
+
+User Note(s)
+
+For identifying the supplier either a well known and/or registered company name or a URL of the company’s web site may be used.
+This property succeeds the Provider property of IPTC Core 1.0 by its semantics as that Provider was renamed to Credit Line.
+
+Implementation Note(s)
+
+This is a structured PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Image Supplier
+
+Basic Specs
+
+Data type: plus-ImageSupplier / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:ImageSupplier [Seq ImageSupplier structure <External>]
+
+JSON Specs
+
+suppliers [object/ImageSupplier/array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:ImageSupplier/PlusEntityStruct/array
+
+11.23. Image Supplier Image ID
+
+Row header
+
+Specification
+
+Name
+
+Image Supplier Image ID
+
+Definition
+
+Optional identifier assigned by the Image Supplier to the image.
+
+Help Text
+
+Enter the unique identifier created by the image supplier
+
+Implementation Note(s)
+
+This is a structured PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Image Supplier Image Id
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:ImageSupplierImageID [Text <External>]
+
+JSON Specs
+
+imageSupplierImageId [string//]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:ImageSupplierImageID
+
+11.24. Licensor
+
+Row header
+
+Specification
+
+Name
+
+Licensor
+
+Definition
+
+A person or company that should be contacted to obtain a licence for using the item or who has licensed the item.
+
+Help Text
+
+Enter the person or company that should be contacted for obtaining a license for this image
+
+Implementation Note(s)
+
+This is a structured PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Licensor
+
+Basic Specs
+
+Data type: plus-Licensor / Cardinality: 0..3
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:Licensor [Bag Licensor structure <External>]
+
+JSON Specs
+
+licensors [object/Licensor/array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:Licensor/PlusEntityStruct/array
+
+11.25. Linked Encoded Rights Expression
+
+Row header
+
+Specification
+
+Name
+
+Linked Encoded Rights Expression
+
+Definition
+
+A linked rights expression using any rights expression language.
+
+Help Text
+
+Enter the details of a linked rights expression
+
+Label
+
+Linked Encoded Rights Expression
+
+Basic Specs
+
+Data type: Linked Encoded Rights Expression (LERE) structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:LinkedEncRightsExpr [Bag LERE structure <External>]
+
+JSON Specs
+
+linkedEncRightsExprs [object/LinkedEncRightsExpr/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:LinkedEncRightsExpr/LEREStruct/array
+
+11.26. Location Created
+
+Row header
+
+Specification
+
+Name
+
+Location Created
+
+Definition
+
+The location the photo was taken.
+
+Help Text
+
+Enter the details about a location where this image was created
+
+User Note(s)
+
+If the location in the image is different from the location the photo was taken the IPTC Extension property Location Shown in the Image should be used.
+
+Implementation Note(s)
+
+IPTC is aware of limiting the count of locations to one in the Basic Specs and having an open count in the XMP and JSON specs. Therefore we recommend that at the user interface of software entering and editing only a single location should be supported – as an image can be taken only at a single location.
+
+Label
+
+Location Created
+
+Basic Specs
+
+Data type: Location structure / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:LocationCreated [Bag Location structure <External>]
+
+JSON Specs
+
+locationCreated [object/Location/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:LocationCreated/LocationStruct/array
+
+11.27. Location Shown in the Image
+
+Row header
+
+Specification
+
+Name
+
+Location Shown in the Image
+
+Definition
+
+A location shown in the image.
+
+Help Text
+
+Enter the details about a location which is shown in this image
+
+User Note(s)
+
+If the location the image was taken in is different from this location the property Location Created should be used too.
+
+Label
+
+Location shown
+
+Basic Specs
+
+Data type: Location structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:LocationShown [Bag Location structure <External>]
+
+JSON Specs
+
+locationsShown [object/Location/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:LocationShown/LocationStruct/array
+
+11.28. Max Avail Height
+
+Row header
+
+Specification
+
+Name
+
+Max Avail Height
+
+Definition
+
+The maximum available height in pixels of the original photo from which this photo has been derived by downsizing.
+
+Help Text
+
+Enter the maximum available height in pixels of the original photo from which this photo has been derived by downsizing
+
+Label
+
+Maximum available height
+
+Basic Specs
+
+Data type: Integer / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:MaxAvailHeight [Integer <External>]
+
+JSON Specs
+
+maxAvailHeight [number/integer/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:MaxAvailHeight/integer/
+
+11.29. Max Avail Width
+
+Row header
+
+Specification
+
+Name
+
+Max Avail Width
+
+Definition
+
+The maximum available width in pixels of the original photo from which this photo has been derived by downsizing.
+
+Help Text
+
+Enter the maximum available width in pixels of the original photo from which this photo has been derived by downsizing
+
+Label
+
+Maximum available width
+
+Basic Specs
+
+Data type: Integer / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:MaxAvailWidth [Integer <External>]
+
+JSON Specs
+
+maxAvailWidth [number/integer/]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:MaxAvailWidth/integer/
+
+11.30. Minor Model Age Disclosure
+
+Row header
+
+Specification
+
+Name
+
+Minor Model Age Disclosure
+
+Definition
+
+Age of the youngest model pictured in the image, at the time that the image was made.
+
+Help Text
+
+Enter the age of the youngest model pictured in this image, at the time that this image was made
+
+User Note(s)
+
+This age should not be displayed to the public on open web portals and the like. But it may be used by image repositories in a B2B enviroment.
+
+Implementation Note(s)
+
+This is a PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Minor Model Age Disclosure
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+See the PLUS specification of this property
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:MinorModelAgeDisclosure [URL <External>]
+
+JSON Specs
+
+minorModelAgeDisclosure [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:MinorModelAgeDisclosure
+
+11.31. Model Age
+
+Row header
+
+Specification
+
+Name
+
+Model Age
+
+Definition
+
+Age of the human model(s) at the time this image was taken in a model released image.
+
+Help Text
+
+Enter the age of the human model(s) at the time this image was made
+
+User Note(s)
+
+The user should be aware of any legal implications of providing ages for young models. Ages below 18 years should not be included.
+
+Label
+
+Model age
+
+Basic Specs
+
+Data type: Integer / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:ModelAge [Bag Integer <External>]
+
+JSON Specs
+
+modelAges [number/integer/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:ModelAge/integer/array
+
+11.32. Model Release Id
+
+Row header
+
+Specification
+
+Name
+
+Model Release Id
+
+Definition
+
+Identifier(s) of a Model Release document.
+
+Help Text
+
+Enter an identifier for each Model Release
+
+Implementation Note(s)
+
+This is a PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Model Release Id
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:ModelReleaseID [Bag Text <External>]
+
+JSON Specs
+
+modelReleaseDocuments [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:ModelReleaseID//array
+
+11.33. Model Release Status
+
+Row header
+
+Specification
+
+Name
+
+Model Release Status
+
+Definition
+
+Summarises the availability and scope of model releases authorising usage of the likenesses of persons appearing in the photograph.
+
+Help Text
+
+Select one of the values for summarising the availability and scope of model releases authorising usage of the likenesses of persons appearing in the photograph
+
+User Note(s)
+
+It is recommended to apply the PLUS controlled value Unlimited Model Releases (MR-UMR) very carefully and to check the wording of the model release thoroughly before applying it.
+
+Implementation Note(s)
+
+This is a PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Model Release Status
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+See the PLUS specification of this property
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:ModelReleaseStatus [URL <External>]
+
+JSON Specs
+
+modelReleaseStatus [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:ModelReleaseStatus
+
+11.34. Name of Organisation Featured in the Image
+
+Row header
+
+Specification
+
+Name
+
+Name of Organisation Featured in the Image
+
+Definition
+
+Name of the organisation or company which is featured in the image.
+
+Help Text
+
+Enter the name of the organisation which is featured by this image
+
+User Note(s)
+
+May be supplemented by values from a controlled vocabulary in the Organisation Code field.
+
+Label
+
+Name of featured Organisation
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:OrganisationInImageName [Bag Text <External>]
+
+JSON Specs
+
+organisationInImageNames [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:OrganisationInImageName//array
+
+11.35. Other Constraints
+
+Row header
+
+Specification
+
+Name
+
+Other Constraints
+
+Definition
+
+Additional constraints on the use of the asset.
+
+User Note(s)
+
+Constraints may limit the scope of usage allowed
+
+Implementation Note(s)
+
+This is a PLUS version 1.3 property included in the IPTC Extension schema.
+
+Label
+
+Constraint
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2023.1
+
+XMP Specs
+
+plus:OtherConstraints [Lang Alt <External>]
+
+JSON Specs
+
+otherConstraints [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:OtherConstraints
+
+11.36. Person Shown in the Image
+
+Row header
+
+Specification
+
+Name
+
+Person Shown in the Image
+
+Definition
+
+Name of a person shown in the image.
+
+Help Text
+
+Enter the name of the person shown in this image
+
+Label
+
+Person shown
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:PersonInImage [Bag Text <External>]
+
+JSON Specs
+
+personInImageNames [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:PersonInImage//array
+
+11.37. Person Shown in the Image with Details
+
+Row header
+
+Specification
+
+Name
+
+Person Shown in the Image with Details
+
+Definition
+
+Details about a person the content is about.
+
+Help Text
+
+Enter details about person(s) shown in the image. It is not required to list all, just those details which can be recognized
+
+Label
+
+Person Shown (Details)
+
+Basic Specs
+
+Data type: Person structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:PersonInImageWDetails [Bag Person structure <External>]
+
+JSON Specs
+
+personsShown [object/PersonWDetails/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:PersonInImageWDetails/PersonStruct/array
+
+11.38. Product Shown in the Image
+
+Row header
+
+Specification
+
+Name
+
+Product Shown in the Image
+
+Definition
+
+A product the content is about.
+
+Help Text
+
+Enter details about a product shown in the image
+
+Label
+
+Product Shown
+
+Basic Specs
+
+Data type: Product structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:ProductInImage [Bag Product structure <External>]
+
+JSON Specs
+
+productsShown [object/ProductWGtin/array]
+
+Help: ExifTool tags
+
+XMP: XMP-iptcExt:ProductInImage/ProductStruct/array
+
+11.39. Property Release Id
+
+Row header
+
+Specification
+
+Name
+
+Property Release Id
+
+Definition
+
+Identifier(s) of a Property Release document.
+
+Help Text
+
+Enter an identifier for each Property Release
+
+Implementation Note(s)
+
+This is a PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Property Release Id
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:PropertyReleaseID [Bag Text <External>]
+
+JSON Specs
+
+propertyReleaseDocuments [string//array]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:PropertyReleaseID//array
+
+11.40. Property Release Status
+
+Row header
+
+Specification
+
+Name
+
+Property Release Status
+
+Definition
+
+Summarises the availability and scope of property releases authorising usage of the properties appearing in the photograph.
+
+Help Text
+
+Select one of the values for summarising the availability and scope of property releases authorising usage of the properties appearing in the photograph
+
+User Note(s)
+
+It is recommended to apply the value PR-UPR very carefully and to check the wording of the property release thoroughly before applying it.
+
+Implementation Note(s)
+
+This is a PLUS version 1.2 property included in the IPTC Extension schema.
+
+Label
+
+Property Release Status
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+See the PLUS specification of this property
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+plus:PropertyReleaseStatus [URL <External>]
+
+JSON Specs
+
+propertyReleaseStatus [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-plus:PropertyReleaseStatus
+
+11.41. Web Statement of Rights
+
+Row header
+
+Specification
+
+Name
+
+Web Statement of Rights
+
+Definition
+
+URL referencing a web resource providing a statement of the copyright ownership and usage rights of the image.
+
+Label
+
+Copyright Info URL
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.4 (2017.1)
+
+XMP Specs
+
+xmpRights:WebStatement [Text <External>]
+
+JSON Specs
+
+webstatementRights [string/uri/]
+
+Help: ExifTool tags
+
+XMP: XMP-xmpRights:WebStatement
+
+12. Metadata Structures
+
+12.1. Artwork or Object in the Image structure
+
+Row header
+
+Specification
+
+Name
+
+Artwork or Object in the Image structure
+
+Definition
+
+A structured datatype for details about artwork or an object in an image. Includes a Copyright Notice, a Creator, a Date Created, a Source, a Source Inventory Number and a Title.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+JSON Specs
+
+ArtworkOrObject [object//]
+
+Help: ExifTool tags
+
+12.1.1. Circa Date Created
+
+Row header
+
+Specification
+
+Name
+
+Circa Date Created
+
+Definition
+
+Approximate date or range of dates associated with the creation and production of an artwork or object or its components.
+
+Help Text
+
+Enter the approximate date or range of dates associated with the creation and production of an artwork or object or its components
+
+Label
+
+Circa Date Created
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCircaDateCreated [Text <External>]
+
+JSON Specs
+
+circaDateCreated [string//]
+
+Help: ExifTool tags
+
+XMP: AOCircaDateCreated
+
+12.1.2. Content Description
+
+Row header
+
+Specification
+
+Name
+
+Content Description
+
+Definition
+
+A textual description of the content depicted in the artwork or object.
+
+Help Text
+
+Describe the content depicted in the artwork or object in free-text
+
+Label
+
+Content Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOContentDescription [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+contentDescription [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: AOContentDescription
+
+12.1.3. Contribution Description
+
+Row header
+
+Specification
+
+Name
+
+Contribution Description
+
+Definition
+
+A textual description about a contribution made to an artwork or an object.
+
+Help Text
+
+Describe any contributions made to the artwork or object as free-text. Include the type, date and location of contribution, and details about the contributor
+
+User Note(s)
+
+Should include the type, date and location of contribution, and details about the contributor.
+
+Label
+
+Contribution Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOContributionDescription [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+contributionDescription [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: AOContributionDescription
+
+12.1.4. Copyright Notice
+
+Row header
+
+Specification
+
+Name
+
+Copyright Notice
+
+Definition
+
+Contains any necessary copyright notice for claiming the intellectual property for artwork or an object in the image and should identify the current owner of the copyright of this work with associated intellectual property rights.
+
+Help Text
+
+Enter any necessary copyright notice for claiming the intellectual property for artwork or an object in this image
+
+Label
+
+(Artwork or Object detail:) Copyright notice
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AOCopyrightNotice [Text <External>]
+
+JSON Specs
+
+copyrightNotice [string//]
+
+Help: ExifTool tags
+
+XMP: AOCopyrightNotice
+
+12.1.5. Creator
+
+Row header
+
+Specification
+
+Name
+
+Creator
+
+Definition
+
+Contains the name of the artist who has created artwork or an object in the image. In cases where the artist could or should not be identified the name of a company or organisation may be appropriate.
+
+Help Text
+
+Enter the name of the artist who has created artwork or an object in this image
+
+Label
+
+(Artwork or Object detail:) Creator
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AOCreator [Seq ProperName <External>]
+
+JSON Specs
+
+creatorNames [string//array]
+
+Help: ExifTool tags
+
+XMP: AOCreator
+
+12.1.6. Creator ID
+
+Row header
+
+Specification
+
+Name
+
+Creator ID
+
+Definition
+
+Globally unique identifier for the creator of artwork or object.
+
+Help Text
+
+Enter globally unique identifier(s) for the artist who has created artwork or an object e.g.
+issued by an online registry of persons or companies. Enter in the same sequence
+as the creator names.
+
+User Note(s)
+
+Add the IDs in the same sequence as the Creator names
+
+Label
+
+Creator ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCreatorId [Seq URL <External>]
+
+JSON Specs
+
+creatorIdentifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: AOCreatorId
+
+12.1.7. Current Copyright Owner ID
+
+Row header
+
+Specification
+
+Name
+
+Current Copyright Owner ID
+
+Definition
+
+Globally unique identifier for the current owner of the copyright of the artwork or object.
+
+Help Text
+
+Enter a globally unique identifier for the current
+copyright owner e.g. issued by an online registry of persons or companies
+
+Label
+
+Current Copyright Owner ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCurrentCopyrightOwnerId [URI <External>]
+
+JSON Specs
+
+currentCopyrightOwnerIdentifier [string/uri/]
+
+Help: ExifTool tags
+
+XMP: AOCurrentCopyrightOwnerId
+
+12.1.8. Current Copyright Owner Name
+
+Row header
+
+Specification
+
+Name
+
+Current Copyright Owner Name
+
+Definition
+
+Name of the current owner of the copyright of the artwork or object.
+
+Help Text
+
+Enter the name of the current owner of the copyright of the artwork or object
+
+Label
+
+Current Copyright Owner Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCurrentCopyrightOwnerName [Text <External>]
+
+JSON Specs
+
+currentCopyrightOwnerName [string//]
+
+Help: ExifTool tags
+
+XMP: AOCurrentCopyrightOwnerName
+
+12.1.9. Current Licensor ID
+
+Row header
+
+Specification
+
+Name
+
+Current Licensor ID
+
+Definition
+
+Globally unique identifier for the current licensor of the artwork or object.
+
+Help Text
+
+Enter a globally unique identifier for the current licensor e.g. issued by an online registry of persons or companies
+
+Label
+
+Current Licensor ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCurrentLicensorId [URI <External>]
+
+JSON Specs
+
+currentLicensorIdentifier [string/uri/]
+
+Help: ExifTool tags
+
+XMP: AOCurrentLicensorId
+
+12.1.10. Current Licensor Name
+
+Row header
+
+Specification
+
+Name
+
+Current Licensor Name
+
+Definition
+
+Name of the current licensor of the artwork or object.
+
+Help Text
+
+Enter the name of the current licensor of the artwork or object
+
+Label
+
+Current Licensor Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOCurrentLicensorName [Text <External>]
+
+JSON Specs
+
+currentLicensorName [string//]
+
+Help: ExifTool tags
+
+XMP: AOCurrentLicensorName
+
+12.1.11. Date Created
+
+Row header
+
+Specification
+
+Name
+
+Date Created
+
+Definition
+
+Designates the date and optionally the time the artwork or object in the image was created. This relates to artwork or objects with associated intellectual property rights.
+
+Help Text
+
+Enter the date and optionally the time when the artwork or object in this image was created
+
+Label
+
+(Artwork or Object detail:) Date created
+
+Basic Specs
+
+Data type: DateTime (preferred: truncated DateTime) / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AODateCreated [Date <External>]
+
+XMP Implementation Note
+
+Read note about Date value type
+
+JSON Specs
+
+dateCreated [string/date-time/]
+
+Help: ExifTool tags
+
+XMP: AODateCreated
+
+12.1.12. Physical Description
+
+Row header
+
+Specification
+
+Name
+
+Physical Description
+
+Definition
+
+A textual description of the physical characteristics of the artwork or object, without reference to the content depicted.
+
+Help Text
+
+Describe the physical characteristics of the artwork or object as free-text, without referring to the subject depicted. Object type, materials-techniques and measurements may be described
+
+User Note(s)
+
+Object type, materials-techniques and measurements may be described.
+
+Label
+
+Physical Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOPhysicalDescription [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+physicalDescription [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: AOPhysicalDescription
+
+12.1.13. Source
+
+Row header
+
+Specification
+
+Name
+
+Source
+
+Definition
+
+The organisation or body holding and registering the artwork or object in the image for inventory purposes.
+
+Help Text
+
+Enter the name of the organisation or body holding and registering the artwork or object in this image for inventory purposes
+
+Label
+
+(Artwork or Object detail:) Source
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AOSource [Text <External>]
+
+JSON Specs
+
+source [string//]
+
+Help: ExifTool tags
+
+XMP: AOSource
+
+12.1.14. Source Inventory Number
+
+Row header
+
+Specification
+
+Name
+
+Source Inventory Number
+
+Definition
+
+The inventory number issued by the organisation or body holding and registering the artwork or object in the image.
+
+Help Text
+
+Enter the inventory number issued by the organisation or body holding and registering the artwork or object in this image
+
+Label
+
+(Artwork or Object detail:) Source inventory number
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AOSourceInvNo [Text <External>]
+
+JSON Specs
+
+sourceInventoryNr [string//]
+
+Help: ExifTool tags
+
+XMP: AOSourceInvNo
+
+12.1.15. Source Inventory URL
+
+Row header
+
+Specification
+
+Name
+
+Source Inventory URL
+
+Definition
+
+URL reference to the metadata record of the inventory maintained by the Source.
+
+Help Text
+
+Enter a reference URL for the metadata record of the inventory maintained by the Source
+
+Label
+
+Source Inventory URL
+
+Basic Specs
+
+Data type: URL / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOSourceInvURL [URL <External>]
+
+JSON Specs
+
+sourceInventoryUrl [string/url/]
+
+Help: ExifTool tags
+
+XMP: AOSourceInvURL
+
+12.1.16. Style Period
+
+Row header
+
+Specification
+
+Name
+
+Style Period
+
+Definition
+
+The style, historical or artistic period, movement, group, or school whose characteristics are represented in the artwork or object.
+
+Help Text
+
+Enter the style, historical or artistic period, movement, group, or school whose characteristics are represented in the artwork or object
+
+User Note(s)
+
+It is advised to take the terms from a Controlled Vocabulary.
+
+Label
+
+Style Period
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:AOStylePeriod [Bag Text <External>]
+
+JSON Specs
+
+stylePeriod [string//array]
+
+Help: ExifTool tags
+
+XMP: AOStylePeriod
+
+12.1.17. Title
+
+Row header
+
+Specification
+
+Name
+
+Title
+
+Definition
+
+A reference for the artwork or object in the image.
+
+Help Text
+
+Enter the verbal and human readable name of the artwork or object in this image
+
+Label
+
+(Artwork or Object detail:) Title
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:AOTitle [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+title [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: AOTitle
+
+12.2. CV-Term structure
+
+Row header
+
+Specification
+
+Name
+
+CV-Term structure
+
+Definition
+
+A structure providing details of a Controlled Vocabulary term the image is about
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+JSON Specs
+
+CvTerm [object//]
+
+Help: ExifTool tags
+
+12.2.1. CV-Term CV ID
+
+Row header
+
+Specification
+
+Name
+
+CV-Term CV ID
+
+Definition
+
+The globally unique identifier of the Controlled Vocabulary the term is from.
+
+Help Text
+
+Enter the globally unique identifier of the Controlled Vocabulary which the term is from
+
+Label
+
+CV ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:CvId [URI <External>]
+
+JSON Specs
+
+cvId [string/uri/]
+
+Help: ExifTool tags
+
+XMP: CvId
+
+12.2.2. CV-Term ID
+
+Row header
+
+Specification
+
+Name
+
+CV-Term ID
+
+Definition
+
+The globally unique identifier of the term from a Controlled Vocabulary.
+
+Help Text
+
+Enter the globally unique identifier of the term from a Controlled Vocabulary
+
+Label
+
+Term ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:CvTermId [URI <External>]
+
+JSON Specs
+
+cvTermId [string/uri/-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: CvTermId
+
+12.2.3. CV-Term name
+
+Row header
+
+Specification
+
+Name
+
+CV-Term name
+
+Definition
+
+The natural language name of the term from a Controlled Vocabulary.
+
+Help Text
+
+Enter the name of the term from a Controlled Vocabulary as free-text
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:CvTermName [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+cvTermName [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: CvTermName
+
+12.2.4. Refined 'about' Relationship of the CV-Term
+
+Row header
+
+Specification
+
+Name
+
+Refined 'about' Relationship of the CV-Term
+
+Definition
+
+The refined 'about' relationship of the term with the content.
+
+Help Text
+
+Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary
+
+User Note(s)
+
+May be used to refine the generic about relationship.
+
+Label
+
+Refined Aboutness
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:CvTermRefinedAbout [URI <External>]
+
+JSON Specs
+
+cvTermRefinedAbout [string/uri/]
+
+Help: ExifTool tags
+
+XMP: CvTermRefinedAbout
+
+12.3. Embedded Encoded Rights Expression (EERE) structure
+
+Row header
+
+Specification
+
+Name
+
+Embedded Encoded Rights Expression (EERE) structure
+
+Definition
+
+A structure providing details of an embedded encoded rights expression
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+JSON Specs
+
+EmbdEncRightsExpr [object//]
+
+Help: ExifTool tags
+
+12.3.1. Encoded Rights Expression
+
+Row header
+
+Specification
+
+Name
+
+Encoded Rights Expression
+
+Definition
+
+An embedded rights expression using a rights expression language which is encoded as a string.
+
+Help Text
+
+Shows an embedded rights expression using a rights expression language which is encoded as a string
+
+Label
+
+Rights expression
+
+Basic Specs
+
+Data type: Text / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:EncRightsExpr [Text <Internal>]
+
+JSON Specs
+
+encRightsExpr [string//-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: EncRightsExpr
+
+12.3.2. Encoding type
+
+Row header
+
+Specification
+
+Name
+
+Encoding type
+
+Definition
+
+The encoding type of the rights expression, identified by an IANA Media Type.
+
+Help Text
+
+Shows the encoding type of the rights expression by an IANA Media Type
+
+Label
+
+Encoding type
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+CV Note(s)
+
+IANA Media Type may be applied, if used
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:RightsExprEncType [MIMEtype <Internal>]
+
+JSON Specs
+
+rightsExprEncType [string//]
+
+Help: ExifTool tags
+
+XMP: RightsExprEncType
+
+12.3.3. Rights Expression Language ID
+
+Row header
+
+Specification
+
+Name
+
+Rights Expression Language ID
+
+Definition
+
+An identifier of the rights expression language used by the rights expression.
+
+Help Text
+
+Shows the identifier of the used Rights Expression Language
+
+Label
+
+Rights expression language ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:RightsExprLangId [URI <Internal>]
+
+JSON Specs
+
+rightsExprLangId [string/uri/]
+
+Help: ExifTool tags
+
+XMP: RightsExprLangId
+
+12.4. Entity or Concept structure
+
+Row header
+
+Specification
+
+Name
+
+Entity or Concept structure
+
+Definition
+
+A structured datatype for a named entity or concept.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+JSON Specs
+
+Entity [object//]
+
+Help: ExifTool tags
+
+12.4.1. Identifier
+
+Row header
+
+Specification
+
+Name
+
+Identifier
+
+Definition
+
+Globally unique identifier of the entity/concept
+
+Label
+
+Identifier
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+xmp:Identifier [Bag Text <External>]
+
+JSON Specs
+
+identifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: Identifier
+
+12.4.2. Name
+
+Row header
+
+Specification
+
+Name
+
+Name
+
+Definition
+
+Full name of the entity/concept
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+Iptc4xmpExt:Name [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: Name
+
+12.5. Entity or Concept with role structure
+
+Row header
+
+Specification
+
+Name
+
+Entity or Concept with role structure
+
+Definition
+
+A structured datatype for a named entity or concept with a role property.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+JSON Specs
+
+EntityWRole [object//]
+
+Help: ExifTool tags
+
+12.5.1. Identifier
+
+Row header
+
+Specification
+
+Name
+
+Identifier
+
+Definition
+
+Globally unique identifier of the entity/concept
+
+Help Text
+
+Enter globally unique identifier(s) of the entity or concept
+
+User Note(s)
+
+This should be an identifier as it is used with semantic web technology.
+
+Label
+
+Identifier
+
+Basic Specs
+
+Data type: URI / Cardinality: 1..unbounded
+
+History Note(s)
+
+Help Text + User Notes added by version 2022.1
+
+XMP Specs
+
+xmp:Identifier [Bag Text <External>]
+
+JSON Specs
+
+identifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: Identifier
+
+12.5.2. Name
+
+Row header
+
+Specification
+
+Name
+
+Name
+
+Definition
+
+Full name of the entity/concept
+
+Help Text
+
+Enter the name of the entity or concept
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Help Text added by version 2022.1
+
+XMP Specs
+
+Iptc4xmpExt:Name [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: Name
+
+12.5.3. Role
+
+Row header
+
+Specification
+
+Name
+
+Role
+
+Definition
+
+Identifier of the role the entity has in the context of the metadata property
+
+Help Text
+
+Enter an identifier for the role the entity has regarding the {…​software maker: apply name of metadata property here…​} property.
+
+Label
+
+Role
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..unbounded
+
+History Note(s)
+
+Help Text added, data type changed by version 2022.1
+
+XMP Specs
+
+Iptc4xmpExt:Role [Bag Text <External>]
+
+JSON Specs
+
+role [string//array]
+
+Help: ExifTool tags
+
+XMP: Role
+
+12.6. Image Region structure
+
+Row header
+
+Specification
+
+Name
+
+Image Region structure
+
+Definition
+
+A structured data type for defining the boundaries of an image region, some characteristics of the image region and holding metadata properties related to the region.
+
+User Note(s)
+
+Metadata properties related to the region are typically ones used also for an image as a whole.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+JSON Specs
+
+ImageRegion [object//]
+
+Help: ExifTool tags
+
+12.6.1. Region Boundary
+
+Row header
+
+Specification
+
+Name
+
+Region Boundary
+
+Definition
+
+Sets the boundaries of a region inside an image.
+
+User Note(s)
+
+As option only a single point may be defined to express special characteristics of this point, or a line may be defined to express a divide inside the image.
+
+Label
+
+Region Boundary
+
+Basic Specs
+
+Data type: Region Boundary structure / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:RegionBoundary [Image RegionBoundary structure <External>]
+
+JSON Specs
+
+regionBoundary [object/RegionBoundary/-MANDATORY]
+
+Help: ExifTool tags
+
+12.6.2. Region Identifier
+
+Row header
+
+Specification
+
+Name
+
+Region Identifier
+
+Definition
+
+Identifier of the region. Must be unique among all Region Identifiers of an image. Does not have to be unique beyond the metadata of this image.
+
+Label
+
+Identifier
+
+Basic Specs
+
+Data type: String / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rId [Text <External>]
+
+JSON Specs
+
+rId [string//]
+
+Help: ExifTool tags
+
+XMP: RId
+
+12.6.3. Region Name
+
+Row header
+
+Specification
+
+Name
+
+Region Name
+
+Definition
+
+Free-text name of the region. Should be unique among all Region Names of an image.
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:Name [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: Name
+
+12.6.4. Region Content Type
+
+Row header
+
+Specification
+
+Name
+
+Region Content Type
+
+Definition
+
+The semantic type of what is shown inside the region. The value SHOULD be taken from a Controlled Vocabulary.
+
+Label
+
+Content Type
+
+Basic Specs
+
+Data type: Entity or Concept structure / Cardinality: 0..unbounded
+
+CV Note(s)
+
+Recommended but not mandatory: IPTC Region Content Type NewsCodes
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rCtype [Bag EntityConcept structure <External>]
+
+JSON Specs
+
+rCtype [object/Entity/array]
+
+Help: ExifTool tags
+
+12.6.5. Region Role
+
+Row header
+
+Specification
+
+Name
+
+Region Role
+
+Definition
+
+Role of this region among all regions of this image or of other images. The value SHOULD be taken from a Controlled Vocabulary.
+
+Label
+
+Role
+
+Basic Specs
+
+Data type: Entity or Concept structure / Cardinality: 0..unbounded
+
+CV Note(s)
+
+Recommended but not mandatory: IPTC Image Region Role NewsCodes
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rRole [Bag EntityConcept structure <External>]
+
+JSON Specs
+
+rRole [object/Entity/array]
+
+Help: ExifTool tags
+
+12.6.6. Other Metadata Property
+
+Row header
+
+Specification
+
+Name
+
+Other Metadata Property
+
+Definition
+
+The Image Region Structure includes optionally any metadata property which is related to the region.
+
+User Note(s)
+
+Metadata properties related to the region are typically ones used also for an image as a whole.
+
+Label
+
+{as defined for the used metadata property}
+
+Basic Specs
+
+Data type: not defined / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+any:any [ <>]
+
+JSON Specs
+
+any [any//]
+
+Help: ExifTool tags
+
+XMP: {any}
+
+12.7. Region Boundary structure
+
+Row header
+
+Specification
+
+Name
+
+Region Boundary structure
+
+Definition
+
+The properties of the Image Region Boundary structure set the boundary of a region inside an image. As option only a single point may be defined to express special characteristics of this point, or a line may be defined to express a divide inside the image.
+
+User Note(s)
+
+Three options for the shape of the boundary are available: the boundary is a rectangle or a circle or a polygon. For each shape a set of properties is required, properties not listed in this set must not be used.
+
+Rectangle: the x- and y-axis coordinates of the upper left corner of the rectangle and the width and height of the rectangle relative to this upper left corner.
+
+Circle: the x- and y-axis coordinates of the centre of the circle and its radius measured along the x-axis.
+
+Polygon: the x- and y-axis coordinates of the vertex/the vertices of the polygon.
+
+The Shape property defines which of the three shapes is defined and an the Measuring Unit property defines the units used for measuring all distances.
+
+The coordinates of points used as reference of a shape of the region boundary and values defining the size of the shape are expressed by scalar values along the x-axis or the y-axis of a rectangular coordinates system. The rules for this system are:
+
+Point Zero of the coordinates follows the Image Data Arrangement of the pixels of a digital image as defined by Exif (CIPA DC-008-2019):
+
+The top row of the pixels is the first row, the leftmost pixel of a row is the first pixel.
+
+The counting of “top row” and “leftmost” applies to pixel data as set when the pixels were (re-)organized by the camera or by software. The orientation (rotation, flipping) of the image defined by a metadata value MUST NOT be applied.
+
+Point Zero of the coordinates is the first, leftmost pixel in the top row.
+
+The x-axis is from Point Zero along the top row of the image. The range of coordinate values is from 0 to any positive value not exceeding the size of the image.
+
+The y-axis is from Point Zero along the first pixels of the rows in the image. The range of coordinate values is from 0 to any positive value not exceeding the size of the image.
+
+Coordinates of a point in the image MUST have an x-axis and a y-axis value.
+
+Values defining the size of the shape are measured along the x-axis and the y-axis.
+
+The unit of a value is defined by the Region Boundary Measuring Unit property, its value MUST be from the enumeration defined for the Boundary Measuring Unit property.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+JSON Specs
+
+RegionBoundary [object//]
+
+Help: ExifTool tags
+
+12.7.1. Boundary Shape
+
+Row header
+
+Specification
+
+Name
+
+Boundary Shape
+
+Definition
+
+The shape of the boundary of a region inside an image. The value MUST be taken from the enumeration rectangle, circle, polygon.
+
+User Note(s)
+
+The applicable shapes are:
+
+rectangle = a rectangle as shape of the boundary, the shape of a square is included
+
+circle = a circle as the shape of the boundary
+
+polygon = any shape with edges, except a rectangle, including a single point (using 1 vertex) and a line (using 2 vertices). The edges between a vertex and the next one in the sequence set the shape, the last edge is the one from the last vertex in the sequence to the first vertex in the sequence.
+
+Label
+
+Shape
+
+Basic Specs
+
+Data type: String / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbShape [Closed Choice
+Text <>]
+
+JSON Specs
+
+rbShape [string//-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: RbShape
+
+12.7.2. Boundary Measuring Unit
+
+Row header
+
+Specification
+
+Name
+
+Boundary Measuring Unit
+
+Definition
+
+Unit used for measuring dimensions of the boundary of a region. The value MUST be taken from the enumeration pixel, relative
+
+User Note(s)
+
+The applicable units are:
+
+pixel = A pixel of a digital image setting an absolute value
+
+relative = Relative part of the size of an image along the x- or the y-axis. The range of the value is from 0 to 1 representing the proportion of the full size of an image along the x-axis or the y-axis.
+
+Implementation Note(s)
+
+If the unit "pixel" is used: in case of rescaling the image the coordinate values and the radius of a circle must be rescaled too.
+
+Label
+
+Measuring Unit
+
+Basic Specs
+
+Data type: Text / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbUnit [Closed Choice
+Text <>]
+
+JSON Specs
+
+rbUnit [string//-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: RbUnit
+
+12.7.3. X-Axis Coordinate
+
+Row header
+
+Specification
+
+Name
+
+X-Axis Coordinate
+
+Definition
+
+Distance along the x-axis of the coordinate system related to its Point Zero
+
+User Note(s)
+
+Used only by the shapes rectangle and circle. See also the User Notes of the Region Boundary structure
+
+Label
+
+X-Axis Coordinate
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbX [Real <>]
+
+JSON Specs
+
+rbX [number//]
+
+Help: ExifTool tags
+
+XMP: RbX
+
+12.7.4. Y-Axis Coordinate
+
+Row header
+
+Specification
+
+Name
+
+Y-Axis Coordinate
+
+Definition
+
+Distance along the y-axis of the coordinate system related to its Point Zero
+
+User Note(s)
+
+Used only by the shapes rectangle and circle. See also the User Notes of the Region Boundary structure
+
+Label
+
+Y-Axis Coordinate
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbY [Real <>]
+
+JSON Specs
+
+rbY [number//]
+
+Help: ExifTool tags
+
+XMP: RbY
+
+12.7.5. Rectangle Width
+
+Row header
+
+Specification
+
+Name
+
+Rectangle Width
+
+Definition
+
+The size of a rectangular region boundary along the x-axis, its width. The range of a width value is any positive value not exceeding the size of the image along its x-axis.
+
+User Note(s)
+
+Used only by the shape rectangle.See also the User Notes of the Region Boundary structure
+
+Label
+
+Rectangle Width
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbW [Real <>]
+
+JSON Specs
+
+rbW [number//]
+
+Help: ExifTool tags
+
+XMP: RbW
+
+12.7.6. Rectangle Height
+
+Row header
+
+Specification
+
+Name
+
+Rectangle Height
+
+Definition
+
+The size of a rectangular region boundary along the y-axis, its height. The range of a height value is any positive value not exceeding the size of the image along its y-axis.
+
+User Note(s)
+
+Used only by the shape rectangle.See also the User Notes of the Region Boundary structure
+
+Label
+
+Rectangle Height
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbH [Real <>]
+
+JSON Specs
+
+rbH [number//]
+
+Help: ExifTool tags
+
+XMP: RbH
+
+12.7.7. Circle Radius
+
+Row header
+
+Specification
+
+Name
+
+Circle Radius
+
+Definition
+
+The radius of a circular region boundary from the centre of the circle measured along the x-axis. The range of a radius value is any positive value not exceeding the size of the image.
+
+User Note(s)
+
+Used only by the shape circle. See also the User Notes of the Region Boundary structure
+
+Label
+
+Circle Radius
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbRx [Real <>]
+
+JSON Specs
+
+rbRx [number//]
+
+Help: ExifTool tags
+
+XMP: RbRx
+
+12.7.8. Polygon Vertices
+
+Row header
+
+Specification
+
+Name
+
+Polygon Vertices
+
+Definition
+
+Sequence of vertices of the polygon
+
+User Note(s)
+
+Used only by the shape polygon. See also the User Notes of the Region Boundary structure
+
+Label
+
+Polygon Vertices
+
+Basic Specs
+
+Data type: Region Boundary Point structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbVertices [Seq RegionBoundaryPoint structure <>]
+
+JSON Specs
+
+rbVertices [object/RegionBoundaryPoint/array]
+
+Help: ExifTool tags
+
+12.8. Region Boundary Point structure
+
+Row header
+
+Specification
+
+Name
+
+Region Boundary Point structure
+
+Definition
+
+Sets a point in an image by its coordinates.
+
+User Note(s)
+
+This structure must be used in a context defining the measuring unit of dimensions along the x- and y-axes.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+JSON Specs
+
+RegionBoundaryPoint [object//]
+
+Help: ExifTool tags
+
+12.8.1. X-Axis Coordinate
+
+Row header
+
+Specification
+
+Name
+
+X-Axis Coordinate
+
+Definition
+
+Distance along the x-axis of the coordinate system related to its Point Zero
+
+Label
+
+X-Axis Coordinate
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbX [Real <>]
+
+JSON Specs
+
+rbX [number//-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: RbX
+
+12.8.2. Y-Axis Coordinate
+
+Row header
+
+Specification
+
+Name
+
+Y-Axis Coordinate
+
+Definition
+
+Distance along the y-axis of the coordinate system related to its Point Zero
+
+Label
+
+Y-Axis Coordinate
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.5 (2019.1)
+
+XMP Specs
+
+Iptc4xmpExt:rbY [Real <>]
+
+JSON Specs
+
+rbY [number//-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: RbY
+
+12.9. Linked Encoded Rights Expression (LERE) structure
+
+Row header
+
+Specification
+
+Name
+
+Linked Encoded Rights Expression (LERE) structure
+
+Definition
+
+A structure providing details of a linked encoded rights expression
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+JSON Specs
+
+LinkedEncRightsExpr [object//]
+
+Help: ExifTool tags
+
+12.9.1. Link to Encoded Rights Expression
+
+Row header
+
+Specification
+
+Name
+
+Link to Encoded Rights Expression
+
+Definition
+
+The link to a rights expression using a rights expression language.
+
+Help Text
+
+Enter the link to a web resource representing an encoded rights expression
+
+Label
+
+Link to Rights Expression
+
+Basic Specs
+
+Data type: URL / Cardinality: 1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:LinkedRightsExpr [URL <External>]
+
+JSON Specs
+
+linkedRightsExpr [string/url/-MANDATORY]
+
+Help: ExifTool tags
+
+XMP: LinkedRightsExpr
+
+12.9.2. Encoding type
+
+Row header
+
+Specification
+
+Name
+
+Encoding type
+
+Definition
+
+The encoding type of the rights expression, identified by an IANA Media Type.
+
+Help Text
+
+Enter the encoding type of the rights expression by using an IANA Media Type
+
+Label
+
+Encoding type
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+CV Note(s)
+
+IANA Media Type may be applied, if used
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:RightsExprEncType [MIMEtype <External>]
+
+JSON Specs
+
+rightsExprEncType [string/uri/]
+
+Help: ExifTool tags
+
+XMP: RightsExprEncType
+
+12.9.3. Rights Expression Language ID
+
+Row header
+
+Specification
+
+Name
+
+Rights Expression Language ID
+
+Definition
+
+The identifer of the rights expression language used by the rights expression.
+
+Help Text
+
+Enter the identifier of the used Rights Expression Language
+
+Label
+
+Rights Expression Language ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:RightsExprLangId [URI <External>]
+
+JSON Specs
+
+rightsExprLangId [string/uri/]
+
+Help: ExifTool tags
+
+XMP: RightsExprLangId
+
+12.10. Location structure
+
+Row header
+
+Specification
+
+Name
+
+Location structure
+
+Definition
+
+A structured datatype for details of a location. It includes a Sublocation, a City, a Province or State, a Country (Name and ISO-Code) and a World Region.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+JSON Specs
+
+Location [object//]
+
+Help: ExifTool tags
+
+12.10.1. City
+
+Row header
+
+Specification
+
+Name
+
+City
+
+Definition
+
+Name of the city of a location. This element is at the fourth level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the City
+
+Label
+
+(Location detail:) City
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:City [Text <External>]
+
+JSON Specs
+
+city [string//]
+
+Help: ExifTool tags
+
+XMP: City
+
+12.10.2. Country ISO-Code
+
+Row header
+
+Specification
+
+Name
+
+Country ISO-Code
+
+Definition
+
+The ISO code of a country of a location. This element is at the second level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the 2 or 3 letter ISO 3166 Country Code of the Country
+
+Label
+
+(Location detail:) Country ISO-Code
+
+Basic Specs
+
+Data type: CV-code / Cardinality: 0..1
+
+CV Note(s)
+
+ISO 3166-1 - 2 or 3 characters (see Definition)
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:CountryCode [closed choice Text <External>]
+
+XMP Implementation Note
+
+Note 1: an implementer would have to derive from the length of the value string whether this is the country code from the two or three letter scheme as no explicit indication can be provided.
+
+JSON Specs
+
+countryCode [string//]
+
+Help: ExifTool tags
+
+XMP: CountryCode
+
+12.10.3. Country Name
+
+Row header
+
+Specification
+
+Name
+
+Country Name
+
+Definition
+
+The name of a country of a location. This element is at the second level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the Country
+
+Label
+
+(Location detail:) Country Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:CountryName [Text <External>]
+
+JSON Specs
+
+countryName [string//]
+
+Help: ExifTool tags
+
+XMP: CountryName
+
+12.10.4. GPS-Altitude
+
+Row header
+
+Specification
+
+Name
+
+GPS-Altitude
+
+Definition
+
+Altitude in meters above or below the WGS84 reference level of this Location
+
+Implementation Note(s)
+
+Regarding the user interface: a single field for the altitude is sufficient if software sets the field’s numeric value as positive GPS-Altitude Property value and the GPS-Altitude Reference value is set based on a positive (0, above) or negative (1, below) value of the field.
+
+Label
+
+(Location detail:) GPS-Altitude
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+exif:GPSAltitude [Exif Rational <External>]
+
+JSON Specs
+
+gpsAltitude [number//]
+
+Help: ExifTool tags
+
+XMP: GPSAltitude
+
+12.10.5. GPS-Altitude Reference
+
+Row header
+
+Specification
+
+Name
+
+GPS-Altitude Reference
+
+Definition
+
+The relationship of the GPS Altitude value to the reference level of WGS84: value 0 = above, 1 = below
+
+User Note(s)
+
+The WGS84 reference level is the surface of the mathematical representation of the earth’s globe. At a specific location this level may be a few metres above of below the Mean Sea Level of an ocean or a sea.
+
+Implementation Note(s)
+
+Regarding the user interface: a single field for the altitude is sufficient if software sets the field’s numeric value as positive GPS-Altitude Property value and the GPS-Altitude Reference value is set based on a positive (0, above) or negative (1, below) value of the field.
+
+Label
+
+(Location detail:) GPS-Altitude Ref
+
+Basic Specs
+
+Data type: Integer / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 2023.2
+
+XMP Specs
+
+exif:GPSAltitudeRef [Integer <External>]
+
+JSON Specs
+
+gpsAltitudeRef [number//]
+
+Help: ExifTool tags
+
+XMP: GPSAltitudeRef
+
+12.10.6. GPS-Latitude
+
+Row header
+
+Specification
+
+Name
+
+GPS-Latitude
+
+Definition
+
+Latitude of a WGS84 based position of this Location
+
+Implementation Note(s)
+
+Be aware that the value of this property includes the degrees of the latitude and must indicate whether it is in the north or south.
+
+Label
+
+(Location detail:) GPS-Lattitude
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+exif:GPSLatitude [Exif GPSCoordinate <External>]
+
+JSON Specs
+
+gpsLatitude [number//]
+
+Help: ExifTool tags
+
+XMP: GPSLatitude
+
+12.10.7. GPS-Longitude
+
+Row header
+
+Specification
+
+Name
+
+GPS-Longitude
+
+Definition
+
+Longitude of a WGS84 based position of this Location
+
+Implementation Note(s)
+
+Be aware that the value of this property includes the degrees of the latitude and must indicate whether it is in the east or west.
+
+Label
+
+(Location detail:) GPS-Longitude
+
+Basic Specs
+
+Data type: Decimal / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.3 (2016)
+
+XMP Specs
+
+exif:GPSLongitude [Exif GPSCoordinate <External>]
+
+JSON Specs
+
+gpsLongitude [number//]
+
+Help: ExifTool tags
+
+XMP: GPSLongitude
+
+12.10.8. Location Identifier
+
+Row header
+
+Specification
+
+Name
+
+Location Identifier
+
+Definition
+
+Globally unique identifier of the location
+
+Help Text
+
+Enter globally unique identifier(s) of the location
+
+Label
+
+Location ID
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014), XML Value Type corrected by v2021.1, Help Text changed by v2022.1
+
+XMP Specs
+
+Iptc4xmpExt:LocationId [Bag URI <External>]
+
+JSON Specs
+
+identifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: LocationId
+
+12.10.9. Location Name
+
+Row header
+
+Specification
+
+Name
+
+Location Name
+
+Definition
+
+Full name of the location
+
+Help Text
+
+Enter a full name of the location
+
+Label
+
+(Location detail:) Location Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.3 (2016), Help Text changed by v2022.1
+
+XMP Specs
+
+Iptc4xmpExt:LocationName [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: LocationName
+
+12.10.10. Province or State
+
+Row header
+
+Specification
+
+Name
+
+Province or State
+
+Definition
+
+The name of a subregion of a country - a province or state - of a location. This element is at the third level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the Province or State
+
+Label
+
+(Location detail:) Province/State
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:ProvinceState [Text <External>]
+
+JSON Specs
+
+provinceState [string//]
+
+Help: ExifTool tags
+
+XMP: ProvinceState
+
+12.10.11. Sublocation
+
+Row header
+
+Specification
+
+Name
+
+Sublocation
+
+Definition
+
+Name of a sublocation. This sublocation name could either be the name of a sublocation to a city or the name of a well known location or (natural) monument outside a city. In the sense of a sublocation to a city this element is at the fifth level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the Sublocation
+
+Label
+
+(Location detail:) Sublocation
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:Sublocation [Text <External>]
+
+JSON Specs
+
+sublocation [string//]
+
+Help: ExifTool tags
+
+XMP: Sublocation
+
+12.10.12. World Region
+
+Row header
+
+Specification
+
+Name
+
+World Region
+
+Definition
+
+The name of a world region of a location. This element is at the first (topI) level of a top-down geographical hierarchy.
+
+Help Text
+
+Enter the name of the World Region
+
+Label
+
+(Location detail:) World Region
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.0 (2008)
+
+XMP Specs
+
+Iptc4xmpExt:WorldRegion [Text <External>]
+
+JSON Specs
+
+worldRegion [string//]
+
+Help: ExifTool tags
+
+XMP: WorldRegion
+
+12.11. Person structure
+
+Row header
+
+Specification
+
+Name
+
+Person structure
+
+Definition
+
+A structure of details of a single person in the image.
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+JSON Specs
+
+PersonWDetails [object//]
+
+Help: ExifTool tags
+
+12.11.1. Characteristics
+
+Row header
+
+Specification
+
+Name
+
+Characteristics
+
+Definition
+
+A property or trait of the person
+
+Help Text
+
+Enter a property or trait of the person by selecting a term from a Controlled Vocabulary
+
+Label
+
+Characteristics
+
+Basic Specs
+
+Data type: CV-Term structure / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:PersonCharacteristic [Bag CV-Term structure <External>]
+
+JSON Specs
+
+characteristics [object/CvTerm/array]
+
+Help: ExifTool tags
+
+12.11.2. Description
+
+Row header
+
+Specification
+
+Name
+
+Description
+
+Definition
+
+A textual description of the person
+
+Help Text
+
+Describes the person, any actions taken, emotional expressions shown, etc. as free-text
+
+User Note(s)
+
+For example, you may include actions taken, emotional expressions shown and more.
+
+Label
+
+Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:PersonDescription [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+description [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: PersonDescription
+
+12.11.3. Identifier
+
+Row header
+
+Specification
+
+Name
+
+Identifier
+
+Definition
+
+Globally Unique Identifier of the person
+
+Help Text
+
+Enter globally unique identifier(s) for the person, such as those from WikiData or Freebase
+
+User Note(s)
+
+This should be an identifier as it is used with semantic web technology.
+
+Label
+
+Identifier
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:PersonId [Bag URI <External>]
+
+JSON Specs
+
+identifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: PersonId
+
+12.11.4. Name
+
+Row header
+
+Specification
+
+Name
+
+Name
+
+Definition
+
+Name of the person
+
+Help Text
+
+Enter the name of the person
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:PersonName [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: PersonName
+
+12.12. Product structure
+
+Row header
+
+Specification
+
+Name
+
+Product structure
+
+Definition
+
+A structure providing details about a product
+
+Basic Specs
+
+Data type: Structure / Cardinality: N/A
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+JSON Specs
+
+ProductWGtin [object//]
+
+Help: ExifTool tags
+
+12.12.1. Description
+
+Row header
+
+Specification
+
+Name
+
+Description
+
+Definition
+
+A textual description of the product.
+
+Help Text
+
+Enter a description of the product as free-text
+
+Label
+
+Description
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:ProductDescription [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+description [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: ProductDescription
+
+12.12.2. GTIN
+
+Row header
+
+Specification
+
+Name
+
+GTIN
+
+Definition
+
+A 14 digit GTIN (Global Trade Item Number) of the product (GTIN-8 to GTIN-14 codes are used).
+
+Help Text
+
+Enter the 14 digit Global Trade Item Number (GTIN) of the product as defined by GS1
+
+Label
+
+GTIN
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:ProductGTIN [Text <External>]
+
+JSON Specs
+
+gtin [string//]
+
+Help: ExifTool tags
+
+XMP: ProductGTIN
+
+12.12.3. Identifier
+
+Row header
+
+Specification
+
+Name
+
+Identifier
+
+Definition
+
+Globally Unique Identifier of the product
+
+Help Text
+
+Enter globally unique identifier(s) for the product, such as those from WikiData
+
+User Note(s)
+
+This should be an identifier as it is used with semantic web technology.
+
+Label
+
+Identifier
+
+Basic Specs
+
+Data type: URI / Cardinality: 0..unbounded
+
+History Note(s)
+
+Added by version 2022.1
+
+XMP Specs
+
+Iptc4xmpExt:ProductId [Bag URI <External>]
+
+JSON Specs
+
+identifiers [string/uri/array]
+
+Help: ExifTool tags
+
+XMP: ProductId
+
+12.12.4. Name
+
+Row header
+
+Specification
+
+Name
+
+Name
+
+Definition
+
+Name of the product.
+
+Help Text
+
+Enter the name of the product
+
+Label
+
+Name
+
+Basic Specs
+
+Data type: Text / Cardinality: 0..1
+
+History Note(s)
+
+Added by version 1.2 (2014)
+
+XMP Specs
+
+Iptc4xmpExt:ProductName [Lang Alt <External>]
+
+XMP Implementation Note
+
+Read note about Lang Alt value type
+
+JSON Specs
+
+name [object/AltLang/]
+
+Help: ExifTool tags
+
+XMP: ProductName
+
+12.13. AltLang structure
+
+Row header
+
+Specification
+
+Name
+
+AltLang structure
+
+Definition
+
+Holds text variants telling the same in different languages
+
+Basic Specs
+
+Data type: Structure
+
+Implementation Note
+
+This structure follows the W3C JSON-LD specification of expressing a text value of a property in different languages. Example
+
+"occupation": {
+
+"ja": "忍者",
+
+"en": "Ninja",
+
+"cs": "Nindža"
+
+}
+
+Be aware that XMP’s Lang Alt implementations strongly use the language identifier "x-default".
+
+XMP Specs
+
+Read the ISO XMP specification about the value Type Lang Alt
+
+JSON Specs
+
+AltLang [object]
+
+12.13.1. AltLang property
+
+Row header
+
+Specification
+
+Name
+
+AltLang property
+
+Definition
+
+Holds a text variant in a specific language
+
+Basic Specs
+
+Data type: / Cardinality:
+
+JSON Specs
+
+pattern property: "^(([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})))*(-(x(-[A-Za-z0-9]{1,8})))?)|(x(-[A-Za-z0-9]{1,8})+))$" [string//]
+
+13. Non-normative Information
+
+None
+
+Generic Implementation Notes
+
+This chapter covers notes regarding the implementation of the IPTC Photo Metadata Standard properties in software.
+
+The notes apply across properties but they are grouped by XMP and IIM. IPTC Standard property specific notes can be found in the specification table of the property.
+
+14. XMP Properties
+
+14.1. Lang Alt value type
+
+Applies to an XMP property if its value type is Lang Alt: This type enables an XMP property to hold the same text in different languages with an identifier of the used language. Any software dealing with this property must abide to the processing rules for the Lang Alt value type as specified by the XMP specifications.
+
+14.2. Date value type
+
+Applies to an XMP property if its value type is date: The XMP specification defines a quite flexible format for this value type, all these sets of year, month, day and time values are supported:
+
+YYYY
+
+YYYY-MM
+
+YYYY-MM-DD
+
+YYYY-MM-DDThh:mmTZD
+
+YYYY-MM-DDThh:mm:ssTZD
+
+YYYY-MM-DDThh:mm:ss.sTZD
+
+IPTC encourages makers of software to adopt a user interface widget for the Date value type properties which allows a user to enter all these variants of date and time.
+
+Note the format of dates and times shown above is based on the ISO 8601 standard for date and time formats [ISO-8601]
+
+15. IIM Properties
+
+15.1. Max bytes for text
+
+The specification tables of the IPTC Photo Metadata properties may include "max bytes for text". Be aware that this number expresses the limited count of bytes which can be used for this IIM property and not the count of characters. If UTF-8 encoding of text is used and if non-ASCII characters appear in the text the UTF-8 encoding uses more than one byte for a single character. If this is the case, fewer characters than the "max bytes of text" can be embedded. Please read the full IPTC IIM specifications.
+
+References
+
+16. Other standards
+
+Name
+
+Source
+
+Adobe XMP
+
+Adobe Extensible Metadata Platform (XMP), see https://www.adobe.com/products/xmp/ and https://www.adobe.com/devnet/xmp.html
+
+Latest specification as of August 2016 (Part 2) and January 2020 (Part 3). Part 1 is specified by ISO XMP
+
+These documents include the specification of the metadata schemas Dublin Core, XMP Rights management and Photoshop which are referenced in this specification.
+
+DC
+
+Dublin Core metadata schema: https://www.dublincore.org/
+
+IPTC IIM
+
+IPTC Information Interchange Model
+
+Overview: https://www.iptc.org/IIM/
+
+Specification: https://www.iptc.org/std/IIM/4.2/specification/IIMV4.2.pdf
+
+IPTC NewsML-G2
+
+IPTC NewsML-G2 standard, an XML-based news exchange format: https://iptc.org/standards/newsml-g2/
+
+ISO 8601
+
+Widely used standard of formats for expressing dates, times, dates with time, periods and more.
+
+Introduction at: https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en
+
+ISO XMP
+
+XMP Part 1 as ISO standard 16684-1. Latest version: Second Edition of 2019-04 (see https://www.iso.org/standard/75163.html)
+
+JSON
+
+The JavaScript Object Notation (JSON) Data Interchange Format, RFC 7159: https://tools.ietf.org/html/rfc7159
+
+PhMdWP2007
+
+IPTC Photo Metadata White Paper 2007: http://www.iptc.org/goto?phmdwp2007
+
+PLUS
+
+Picture Licensing Universal System – PLUS: http://www.useplus.org
+
+PLUS specifications: http://www.useplus.com/useplus/standards.asp
+
+MetadataWG
+
+Guidelines for Handling Image Metadata v 2.0. This document was available at this URL until October 2018: http://www.metadataworkinggroup.com/specs/ but unfortunately this site is not active anymore.
+
+W3C-JSON-LD 1.1
+
+A JSON-based Serialization for Linked Data
+
+Recommendation v1.1: https://www.w3.org/TR/json-ld11
+
+Non-formal overview: https://json-ld.org/
+
+W3C WCAG
+
+Web Content Accessibility Guidelines (WCAG)
+
+Recommendation v2.1: https://www.w3.org/TR/2018/REC-WCAG21-20180605/
+
+Understanding WCAG 2.1: https://www.w3.org/WAI/WCAG21/Understanding/
+
+W3C-SKOS
+
+SKOS Simple Knowledge Organization System
+
+Overview: https://www.w3.org/2004/02/skos/
+
+Recommendation: https://www.w3.org/TR/skos-reference/
+
+Fixed Errata
+
+17. List of fixed errata
+
+No errors have been identified since the release of version 2024.1.

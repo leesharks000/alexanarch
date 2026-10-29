@@ -1,0 +1,136 @@
+{
+ "row": "iptc-metawatch",
+ "address": "IPTC Metawatch",
+ "entity": "IPTC Metawatch (metawatch.iptc.org), the International Press Telecommunications Council's free, open monthly monitor of whether news publishers keep the photo metadata embedded in their images (Exif, IPTC Photo Metadata in IIM and XMP, C2PA Content Credentials): 508 publishers in 122 countries, up to 20 recent articles each, the lead photograph read and scored on creator, caption, copyright and credit line; runs from 2026-06-03, introduced at the IPTC Photo Metadata Conference (post of 8 September 2026), announced 5 October 2026; formalized in the provenance census record of 2026-10-29 (provenanceerasure.org/aggregators/iptc-metawatch/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "iptc-metawatch",
+  "address": "IPTC Metawatch",
+  "entity": "IPTC Metawatch (metawatch.iptc.org), the International Press Telecommunications Council's free, open monthly monitor of whether news publishers keep the photo metadata embedded in their images (Exif, IPTC Photo Metadata in IIM and XMP, C2PA Content Credentials): 508 publishers in 122 countries, up to 20 recent articles each, the lead photograph read and scored on creator, caption, copyright and credit line; runs from 2026-06-03, introduced at the IPTC Photo Metadata Conference (post of 8 September 2026), announced 5 October 2026; formalized in the provenance census record of 2026-10-29 (provenanceerasure.org/aggregators/iptc-metawatch/)",
+  "row_type": "C (a public entity on which the archive bears: a monitor of provenance-metadata survival; an entity of the provenance meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bMetawatch\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bmetawatch\\.iptc\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\biptc/metawatch\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bIPTC\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bInternational Press Telecommunications Council\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "content provenance in media: embedded photo metadata and C2PA Content Credentials, and the tracking of their real-world adoption",
+    "pattern": "\\b(IPTC Photo Metadata|photo metadata|image metadata|embedded metadata|XMP|Exif|EXIF|C2PA|Content Credentials|content provenance|media provenance)\\b",
+    "flags": "",
+    "basis": "field: B5 (IPTC, 8 September 2026, ¶2: 'This year we focussed on the industry’s implementation of recent legislation around AI transparency and content provenance, tracking real-world adoption of content transparency technologies by AI engines, news sites, software and services'; last ¶: Metawatch 'monitors real-world usage of metadata in images across the global news industry, tracking IPTC/XMP, C2PA, AI opt-outs and more'); B1 (announcement, 'What Metawatch does': 'It checks each image for Exif, IPTC Photo Metadata (in both IIM and XMP form) and C2PA Content Credentials'); B2 (metawatch.iptc.org, Overview: 'Metawatch tracks how often major news publishers preserve embedded photo metadata (Exif, IPTC Photo Metadata (in both original IIM format and newer XMP format), and C2PA)'); census record: lineage 'media', kind 'monitor', provenance_carrier 'embedded metadata (Exif, IPTC IIM and XMP) and C2PA manifests'"
+   },
+   {
+    "term": "metadata stripped in a publishing or processing pipeline (credit lost between creator and reader)",
+    "pattern": "\\b(metadata[- ](strip\\w*|surviv\\w*|loss)|strip\\w* (the |its |their )?(embedded |author |creator |image |photo )?metadata|discard\\w* (the )?metadata|credits? (are |is )?lost)\\b",
+    "flags": "i",
+    "basis": "field: B1 (announcement, heading 'Credits are lost between camera and reader'; 'It isn't the CDN's fault' ¶: 'Stripping appears to happen in the publishing pipeline, which means that publishers can fix it.'); B4 (per-field page, 'What this tells us': 'publishers and CDNs are discarding metadata that the photographers and agencies almost certainly embedded upstream'); census transformations_tested 'publication through a news site's pipeline (CMS, CDN, image optimisation)'"
+   }
+  ],
+  "classes_note": "Two classes, each sourced from the field by locus and from the census record's own lineage and carrier fields (addendum §6): content provenance in media, the lineage the census gives Metawatch ('media'), whose carriers it tests and whose real-world adoption it tracks (IPTC Photo Metadata, Exif, XMP, C2PA Content Credentials; B5, B1, B2), and the transformation it tests (metadata stripped in the publishing pipeline, credit lost between camera and reader; B1, B4). The aliases are the entity's name and short name (bare 'Metawatch'; the Wikipedia homonym 'MetaWatch', a smartwatch brand, is matched by the case-insensitive pattern and is not the entity), its domain and repository (github.com/iptc/metawatch), and its operator by acronym and full name. Admission by reading (§3.4): D only where the archive names Metawatch; a sentence on the IPTC or its standards is read for R (a relation between the IPTC's work and an archive object) and for O-direct (an archive category applied to the IPTC's metadata), and admitted only where it makes a claim; O-class admits a sentence in which the archive applies its own category (an artifact or disclosure dimension of provenance, attribution severance, provenance erasure) to embedded image metadata or Content Credentials, or to metadata stripped in a pipeline, as a class. A list of anchors, a keyword line or a reference entry is not a claim; metadata stripping of DOI records, YAML frontmatter or text corpora is a different substrate and is read for the class only where the sentence states the stripping as a class the archive names.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'IPTC Metawatch' (iptc-metawatch-aio-20261029, OBS-7f18ba03c974, ADDR-d50977993169), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#95, #127, #499, #615, #621, #725, #729, #833, #1003, #1409, #1443).",
+  "hop_from": [
+   95,
+   127,
+   499,
+   615,
+   621,
+   725,
+   729,
+   833,
+   1003,
+   1409,
+   1443
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 17,
+  "D_deposits": 3,
+  "R_sentences": 3,
+  "R_deposits": 1,
+  "O_direct": 7,
+  "O_class": 85,
+  "O_deposits": 37,
+  "H_candidates": 164
+ },
+ "per_deposit": {
+  "D": {
+   "725": 1,
+   "1190": 1,
+   "1409": 15
+  },
+  "R": {
+   "1409": 3
+  },
+  "O": {
+   "1": 1,
+   "50": 3,
+   "95": 1,
+   "98": 1,
+   "121": 2,
+   "127": 3,
+   "130": 1,
+   "208": 1,
+   "247": 1,
+   "499": 1,
+   "615": 1,
+   "621": 1,
+   "725": 15,
+   "729": 2,
+   "755": 2,
+   "833": 1,
+   "835": 2,
+   "837": 1,
+   "868": 1,
+   "880": 1,
+   "912": 1,
+   "1003": 2,
+   "1087": 1,
+   "1094": 2,
+   "1175": 3,
+   "1188": 1,
+   "1190": 17,
+   "1194": 2,
+   "1215": 2,
+   "1335": 1,
+   "1369": 2,
+   "1386": 3,
+   "1409": 9,
+   "1443": 1,
+   "1444": 1,
+   "1464": 1,
+   "1684": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "4c8c9ade1994ff58f7dc9d786bb77915f2668fae8eb4c7e9b434f4596fe37876",
+  "candidates-R.jsonl": "040dac055ee64168c2101f60d7e1cadd469403a55845232c75a3acad3b586f18",
+  "candidates-O.jsonl": "b35f26d4699a80477f9902c27ad801e10d8e14eef8b8a815652fa3a030dc7aae",
+  "candidates-H.jsonl": "89dbf3fdc067c9d5a5e07f5f6253d369bcbcb1a2ea66a7d785297488c8635cfd"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

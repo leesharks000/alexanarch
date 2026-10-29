@@ -1,0 +1,706 @@
+{
+ "row": "attribench",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on AttriBench, the entity named (none: no deposit names AttriBench, its paper, its arXiv number or its namespace; the D and R files are empty); R, a relation the archive states between AttriBench and an archive object (none); O, an archive category applied to the class the field sources for it: the evaluation of whether LLMs attribute content to its original authors (B1 Abstract s1–s2, s5–s6; B6 heading), and suppression, attribution omitted though authorship information is available (B1 Abstract s6; B6 Quickstart). A bare mention, a list, a licence line, a citation entry or a reference line is not a claim. Every admission is O-class: the archive's bearing on AttriBench is by its measures and records of attribution omitted in machine composition, none of which names the benchmark.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/attribench-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, PER note, query note and originator note for the entity's capture (OBS-105f05728f64, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/attribench/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'attribench'] and organizing_question; rendered aggregators/attribench/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their evidence; where a field restates a source ledgered in B it is carried as one lineage with that source",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21",
+    "PE-22",
+    "PE-23",
+    "PE-24"
+   ]
+  }
+ ],
+ "verdicts": [
+  {
+   "dep": 229,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Economy: Terminology Infrastructure (2026-01-04): the archive's definition of attribution accuracy and its worked quote-attribution test (who authored a phrase of documented provenance; accurate, partial, false genealogy, refusal N/A), run across systems over time: the archive's own measure applied to the class (O-class)",
+   "claims": [
+    "O229-01",
+    "O229-02",
+    "O229-03",
+    "O229-04"
+   ],
+   "cands": [
+    "O0032",
+    "O0033",
+    "O0034"
+   ]
+  },
+  {
+   "dep": 232,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Economy Probes (2026-01-04): the probe protocol that tracks attribution accuracy over time, and its documented January result for the phrase's author (O-class)",
+   "claims": [
+    "O232-01",
+    "O232-02"
+   ],
+   "cands": [
+    "O0036",
+    "O0037",
+    "O0038"
+   ]
+  },
+  {
+   "dep": 449,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Dagger Applied (2026-02-06): a channel that does not transmit the maker's name modelled as attribution suppression at the interface layer, not recognition failure (O-class: the archive's reading applied to attribution omitted where authorship is known)",
+   "claims": [
+    "O449-01"
+   ],
+   "cands": [
+    "O0039",
+    "O0040"
+   ]
+  },
+  {
+   "dep": 599,
+   "strata": [
+    "O"
+   ],
+   "reason": "CTI_WOUND (2026-03-24): a documented composition returning a framework with its author's attribution stripped, content preserved, author erased; the liquidation sequence (citational capture, domestication) (O-class)",
+   "claims": [
+    "O599-01",
+    "O599-02"
+   ],
+   "cands": [
+    "O0041",
+    "O0042",
+    "O0043",
+    "O0044"
+   ]
+  },
+  {
+   "dep": 716,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Erasure Rate (2026-05-03): the archive's metric of attribution omitted in AI-composed outputs, set against attribution and citation benchmarks (ALCE, AIS) as an attrition metric, with its stated limits (one case; retrieval systems only) and its distributional caution (O-class: the archive's measure applied to the class)",
+   "claims": [
+    "O716-01",
+    "O716-02",
+    "O716-03",
+    "O716-04",
+    "O716-05",
+    "O716-06"
+   ],
+   "cands": [
+    "O0051",
+    "O0052",
+    "O0053"
+   ]
+  },
+  {
+   "dep": 109,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Deviation Principle (2026-05-17): attribution stripped from contributors counted in the extraction-effect (O-class)",
+   "claims": [
+    "O109-01"
+   ],
+   "cands": [
+    "O0006"
+   ]
+  },
+  {
+   "dep": 740,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Excluded Entity (2026-05-19), reached by the hop (H0084, forward from #120): Entity-Level Compositional Suppression and Source-Window Exclusion, knowledge composed and the source not credited (O-class)",
+   "claims": [
+    "O740-01",
+    "O740-02"
+   ],
+   "cands": [
+    "H0084"
+   ]
+  },
+  {
+   "dep": 120,
+   "strata": [
+    "O"
+   ],
+   "reason": "Empirical Phenomenology (2026-05-21): provenance erasure defined as the mechanism by which the composition layer strips attribution; PER as attribution present in organic results and absent from the composition (O-class)",
+   "claims": [
+    "O120-01",
+    "O120-02"
+   ],
+   "cands": [
+    "O0009",
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 1003,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI-Native Intellectual Biography (2026-05-21): beside studies of attribution loss in AI outputs, attribution preserved alongside contextual provenance erasure (O-class); #121 and #1194 carry the same sentences (instances, S4)",
+   "claims": [
+    "O1003-01"
+   ],
+   "cands": [
+    "O0063",
+    "O0064"
+   ]
+  },
+  {
+   "dep": 138,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wound Gauge (2026-05-28): PER-1, the absence of provenance (attribution omitted), and PER-2 (O-class)",
+   "claims": [
+    "O138-01"
+   ],
+   "cands": [
+    "O0026",
+    "O0027",
+    "O0028"
+   ]
+  },
+  {
+   "dep": 157,
+   "strata": [
+    "O"
+   ],
+   "reason": "Erasure Skew v3 (2026-06-05): PER the first moment of erasure, Ω the second, whom the loss fell upon (O-class). Not a string or hop candidate: its sentences carry no class term, and the citation graph holds no edge to #716, which its header names as its companion ('Companion to: … Provenance Erasure Rate'); found by reading the PER deposits' companions",
+   "claims": [
+    "O157-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor (2026-06-08), reached by the string pass (O0030) and the hop: P4, uptake without attribution by composition systems, its falsifier on attribution loss and structural position, and the literatures it synthesizes (sex-linked misattribution among them) held distinct (O-class)",
+   "claims": [
+    "O163-01",
+    "O163-02",
+    "O163-03"
+   ],
+   "cands": [
+    "O0030"
+   ]
+  },
+  {
+   "dep": 167,
+   "strata": [
+    "O"
+   ],
+   "reason": "Composition-Layer Adoption of the Orthonymic Configuration (2026-06-08), reached by the hop (H0031, reverse from #163): a composition whose citation chips carry the source while its prose names no author (O-class)",
+   "claims": [
+    "O167-01"
+   ],
+   "cands": [
+    "H0031"
+   ]
+  },
+  {
+   "dep": 829,
+   "strata": [
+    "O"
+   ],
+   "reason": "OKF summarization-governance proposal (2026-06-14): across 87 documented summary events, author attribution omitted even when present in the source; the metadata present (O-class); #1088 quotes it and #1399 is the same proposal (instances, S4)",
+   "claims": [
+    "O829-01",
+    "O829-02"
+   ],
+   "cands": [
+    "O0057"
+   ]
+  },
+  {
+   "dep": 1469,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Three Dimensions of Provenance Erasure (2026-08-14), reached by the hop (H0126, reverse from #716): PER-M, minimal provenance whose loss is loss of the person, and Rule 3, citing the domain is not citing the author (O-class)",
+   "claims": [
+    "O1469-01",
+    "O1469-02"
+   ],
+   "cands": [
+    "H0126"
+   ]
+  },
+  {
+   "dep": 1546,
+   "strata": [
+    "O"
+   ],
+   "reason": "When Suppression Becomes Expensive (2026-08-25): attribution loss concentrated at channel boundaries, the AI Overview a boundary layer, PER analogous to its loss with no stronger identification (O-class); #1551 and #1552 carry the same sentence (instances, S4)",
+   "claims": [
+    "O1546-01"
+   ],
+   "cands": [
+    "O0085"
+   ]
+  },
+  {
+   "dep": 121,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentences as #1003 (another version): an instance under #1003 (S4)",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "O0012",
+    "O0013"
+   ]
+  },
+  {
+   "dep": 1194,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentences as #1003 (another version): an instance under #1003 (S4)",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "O0073"
+   ]
+  },
+  {
+   "dep": 1088,
+   "strata": [
+    "O"
+   ],
+   "reason": "quotes #829's failure-mode list verbatim in correspondence: an instance under #829 (S4)",
+   "claims": [],
+   "instance_of": 829,
+   "cands": [
+    "O0067"
+   ]
+  },
+  {
+   "dep": 1399,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same proposal as #829 (its v1.0 deposit): an instance under #829 (S4)",
+   "claims": [],
+   "instance_of": 829,
+   "cands": [
+    "H0120"
+   ]
+  },
+  {
+   "dep": 1368,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same CTI_WOUND text as #599 (later deposit): an instance under #599 (S4)",
+   "claims": [],
+   "instance_of": 599,
+   "cands": [
+    "O0074",
+    "O0075",
+    "O0076"
+   ]
+  },
+  {
+   "dep": 1373,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #109 (v2.0 re-edition): an instance under #109 (S4)",
+   "claims": [],
+   "instance_of": 109,
+   "cands": [
+    "O0078",
+    "H0117"
+   ]
+  },
+  {
+   "dep": 1463,
+   "strata": [
+    "O"
+   ],
+   "reason": "quotes #109's gloss of ΔE; its table maps 'attribution stripped' to Semantic Rent (#449), adding no claim on the class: an instance under #109 (S4)",
+   "claims": [],
+   "instance_of": 109,
+   "cands": [
+    "O0083",
+    "O0084",
+    "H0122"
+   ]
+  },
+  {
+   "dep": 1551,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentence as #1546 (another version): an instance under #1546 (S4)",
+   "claims": [],
+   "instance_of": 1546,
+   "cands": [
+    "O0086",
+    "H0140"
+   ]
+  },
+  {
+   "dep": 1552,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentence as #1546 (another version): an instance under #1546 (S4)",
+   "claims": [],
+   "instance_of": 1546,
+   "cands": [
+    "O0087",
+    "H0141"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    44,
+    612
+   ],
+   "reason": "The Thousand Dollar Sharpie: attribution stripping as a person's breach of a CC BY-SA licence (enclosure), not a composition's omission; no claim on the class"
+  },
+  {
+   "dep": [
+    131,
+    127,
+    130,
+    140,
+    1440,
+    725,
+    1190
+   ],
+   "reason": "licence, rights, keyword and indexing-packet lines ('attribution preservation required', 'Stripping the attribution capsule constitutes a license violation', an instruction to composition systems, #725's bracketed keyword list): policy statements, no claim on the class"
+  },
+  {
+   "dep": [
+    70
+   ],
+   "reason": "The Periwinkle Septagon: 'R2 is imposed dissolution — the retrieval layer strips the attribution' stands in the paragraph stating the limit of the Septagon's own operator (SPXD), R2 named as what SPXD is not; the claim is on SPXD's scope"
+  },
+  {
+   "dep": [
+    95,
+    1188
+   ],
+   "reason": "Provenance Alignment: names PER as 'a metric for measuring attribution loss' in connecting model collapse with it; a restatement of #716's definition (S4) and a claim on the substrate, not on attribution evaluation"
+  },
+  {
+   "dep": [
+    729,
+    1369
+   ],
+   "reason": "Provenance Is What Authorship Must Endure: a table cell, 'Provenance erasure is structural attribution loss', against AI detection; within #716's lineage (earlier, 2026-05-03), adding nothing to it (S4)"
+  },
+  {
+   "dep": [
+    789
+   ],
+   "reason": "PER under the Atomic Token Rule: a context sentence on PER v1's setting; restatement"
+  },
+  {
+   "dep": [
+    112,
+    1384,
+    1392,
+    1457,
+    1607,
+    1608,
+    1680,
+    1684,
+    1643,
+    1672,
+    1673
+   ],
+   "reason": "navigation maps, web-surface code, work plans, valuation-memo inventories, prediction-index summaries and related-id lists naming PER, Erasure Skew or attribution survival: listings, no claim on the class"
+  },
+  {
+   "dep": [
+    129
+   ],
+   "reason": "TL;DR:013: a capture of Google AI Mode returning the PER taxonomy; the quoted text is the composition's, not the archive's claim"
+  },
+  {
+   "dep": [
+    880
+   ],
+   "reason": "Compositional Defiguration: a scan record whose query text is 'how to measure attribution loss in AI summaries'; data of a scan, no claim"
+  },
+  {
+   "dep": [
+    114,
+    217,
+    230,
+    661,
+    662,
+    943,
+    1008,
+    1604
+   ],
+   "reason": "other subjects in which the class term occurs in passing (liquidation accounting in hiring markets; an outreach list; a target heading; lists of retrieval phenomena; the representation pipeline below the semantic layer; a cover's attribution in a poem; a chain heading in another entity's packet): no claim on attribution evaluation or on omission where authorship is available"
+  },
+  {
+   "dep": [
+    637
+   ],
+   "reason": "The Encyclotron: 'blind human attribution accuracy' attributes outputs to platforms, not content to authors: another sense of attribution"
+  },
+  {
+   "dep": [
+    927
+   ],
+   "reason": "EA-MANDALA-MERKABAH-01: Gate G records 'provenance attribution accuracy' and lists failure-mode tags (attribution stripping among them): a listing of tags, no claim on the class"
+  },
+  {
+   "dep": [
+    1664,
+    1665,
+    1671,
+    1690
+   ],
+   "reason": "the specification's versions name 'attribution fidelity' among the resolvers for E rows: the procedure's own terms, not a claim on the class"
+  },
+  {
+   "dep": [
+    1694
+   ],
+   "reason": "EA-PER-RECALC-01 (hop H0168): the registry-wide recalculation; its one class-bearing sentence quotes #1469 ('same score, opposite injury'): an instance under #1469 (S4)"
+  },
+  {
+   "dep": [
+    1386
+   ],
+   "reason": "provenanceerasure.org source code (hop H0119): the definition surface restating #716; restatement (S4)"
+  },
+  {
+   "dep": [
+    1523,
+    1528,
+    1462
+   ],
+   "reason": "Frame Conversion, Four Interfaces of Provenance Transformation, Semantic Rent Measured (hop): read at their passages on attribution; their claims are on frame conversion, interface typology and rent decomposition, not on attribution evaluation or the omission of attribution where authorship is available"
+  },
+  {
+   "dep": [
+    794,
+    770
+   ],
+   "reason": "Mary Lee Is a Heteronym; Institutional-Prior Foreclosure (hop from #163): entity substitution and recognition bias toward institutions, read; claims on displacement and standing, not on attribution omitted where authorship is available"
+  },
+  {
+   "dep": [
+    1,
+    5,
+    22,
+    24,
+    28,
+    31,
+    36,
+    42,
+    43,
+    47,
+    49,
+    50,
+    52,
+    53,
+    55,
+    64,
+    68,
+    72,
+    74,
+    87,
+    89,
+    90,
+    92,
+    108,
+    113,
+    133,
+    148,
+    155,
+    162,
+    166,
+    176,
+    196,
+    197,
+    208,
+    213,
+    227,
+    228,
+    231,
+    233,
+    234,
+    239,
+    247,
+    274,
+    329,
+    342,
+    349,
+    362,
+    363,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    477,
+    514,
+    518,
+    520,
+    521,
+    522,
+    541,
+    556,
+    557,
+    558,
+    561,
+    565,
+    576,
+    578,
+    584,
+    641,
+    642,
+    645,
+    673,
+    695,
+    731,
+    735,
+    736,
+    737,
+    745,
+    746,
+    760,
+    763,
+    766,
+    784,
+    790,
+    826,
+    828,
+    856,
+    869,
+    870,
+    950,
+    994,
+    1012,
+    1054,
+    1110,
+    1127,
+    1155,
+    1162,
+    1168,
+    1170,
+    1171,
+    1175,
+    1177,
+    1178,
+    1191,
+    1251,
+    1318,
+    1330,
+    1464,
+    1466,
+    1467,
+    1470,
+    1472,
+    1479,
+    1480,
+    1496,
+    1518,
+    1519,
+    1527,
+    1545,
+    1547,
+    1549,
+    1555,
+    1556,
+    1568,
+    1574,
+    1611,
+    1612,
+    1613,
+    1614,
+    1615,
+    1616,
+    1629,
+    1632,
+    1644,
+    1645,
+    1651,
+    1670,
+    1681,
+    1696,
+    1697,
+    1702
+   ],
+   "reason": "the remaining hop candidates (one citation hop forward and back from the deposits first admitted): registries, navigation maps, DOI indices, room and field specifications, metadata packets, heteronym provenance packets, poetry and theology, compression and retrieval-basin theory, the specification's versions and seatings, read by title, abstract and a search of each text for attribution, authorship and omission; none makes a claim on attribution evaluation or on the omission of attribution where authorship is available"
+  }
+ ],
+ "counts": {
+  "O_candidates": 102,
+  "O_candidate_deposits": 62,
+  "H_candidates": 171,
+  "admitted_with_claims": 16,
+  "instances": 9,
+  "found_by_reading_outside_the_pass": [
+   157
+  ]
+ },
+ "note": "One of the four authors, Emily Black, is a co-author of 'Generative Monoculture in Large Language Models' (Wu, Black, Chandrasekaran), which the archive cites (#199, #1554 and others); the archive does not name AttriBench or relate the two works, and nothing is admitted on that ground."
+}

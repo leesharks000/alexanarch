@@ -1,0 +1,2066 @@
+{
+ "row": "iptc-metawatch",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Metawatch, Metawatch named; R, a relation the archive states between the IPTC's work (its metadata standard, Metawatch) or the class and an archive object; O, an archive category applied to the IPTC's metadata (O-direct) or to a class the field sources for the entity (O-class): content provenance in media, embedded photo metadata and C2PA Content Credentials (B5, B1, B2; census lineage 'media'), and metadata stripped in a publishing or processing pipeline (B1, B4; census transformations_tested). A bare mention, a list of anchors or keywords, a reference entry or a heading is not a claim; metadata stripping on another substrate (DOI records, YAML frontmatter, text deposits) is not the class.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01 v1.1): applies its dimensions of provenance to the class (content provenance in media): C2PA / Content Credentials as the artifact dimension, verifying the file at creation, its adoption uneven and its ingredient assertions under-adopted; the independence of the dimensions; the signed image whose caption loses the photographer's name; and, O-direct, 'IPTC AI metadata' as Layer 1 metadata, 'Disclosure, not lineage' (l. 260, not returned by the string pass: the table is one sentence past the 900-character cut). The string pass's D candidate (D0001) is the reference list ('IPTC 2025.1 AI metadata fields'), a bare listing, not a claim; Metawatch is not named.",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03",
+    "O725-04",
+    "O725-05",
+    "O725-06",
+    "O725-07"
+   ],
+   "cands": [
+    "D0001",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022",
+    "O0023",
+    "O0024",
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030",
+    "O0031",
+    "O0032"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, blog-canonical recovery, 2026-05-12): every claim falls in #725's lineages and adds nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "D0002",
+    "O0053",
+    "O0054",
+    "O0055",
+    "O0056",
+    "O0057",
+    "O0058",
+    "O0059",
+    "O0060",
+    "O0061",
+    "O0062",
+    "O0063",
+    "O0064",
+    "O0065",
+    "O0066",
+    "O0067",
+    "O0068",
+    "O0069"
+   ]
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "R",
+    "O"
+   ],
+   "reason": "EA-SPXI-ANALOG-01 (machine-eligible handwritten artifacts): R, the archive's own artifacts embed IPTC Creator (author or heteronym), Credit, CopyrightNotice and the rest, with XMP and C2PA, declare nonsynthetic capture by IPTC DigitalSourceType, and keep a triple metadata redundancy; O, embedded IPTC photo metadata as ingestion channel C4 ('scaffold the pipeline provably reads'), the membrane that 'survives … metadata stripping' (O-class, the stripping class), the IPTC and C2PA vocabularies as 'the same insight arriving as standards', and C2PA's trust anchor against content derivation. The leak-vector checklist (D0006), the AIA-2 certification checklist (D0015, R0003), the tier table (D0011, R0002, O0084), the field-map adoption (D0010, O0083) and the reference entry 'IPTC.' (D0017) are listings or restate the file layer (S4 under R1409-01) and are not ledgered apart.",
+   "claims": [
+    "R1409-01",
+    "O1409-02",
+    "R1409-03",
+    "O1409-04",
+    "R1409-05",
+    "O1409-06",
+    "O1409-07"
+   ],
+   "cands": [
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0009",
+    "D0010",
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016",
+    "D0017",
+    "R0001",
+    "R0002",
+    "R0003",
+    "O0080",
+    "O0081",
+    "O0082",
+    "O0083",
+    "O0084",
+    "O0085",
+    "O0086",
+    "O0087",
+    "O0088"
+   ]
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Photograph of the Handwritten Original, §6.1 'C2PA — the incumbent, and the essential comparison': C2PA 'attests what a device reports having done', validation not required by the specification, complementary to content-derived identifiers; the P.Sapph.Obbink exemplum (O0089, 'the human C2PA') is an analogy carried by the same section and is not ledgered apart",
+   "claims": [
+    "O1443-01",
+    "O1443-02"
+   ],
+   "cands": [
+    "O0089"
+   ]
+  },
+  {
+   "dep": 1444,
+   "strata": [
+    "O"
+   ],
+   "reason": "found by the hop (reverse, from #1409 and #1443; H-candidate): The Analog Advance's incumbency ring: C2PA 'secures the camera's testimony, not the author's', dependent on certificate authorities and platform adoption. The string pass's O-class sentence (O0090, the description's list of the ring) is a listing",
+   "claims": [
+    "O1444-01"
+   ],
+   "cands": [
+    "O0090",
+    "H0150"
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure: the three-layer table (artifact provenance: the file; C2PA, Content Credentials, signing; 'Necessary, insufficient') and 'C2PA prevents forgery; it does not constitute authorship.'",
+   "claims": [
+    "O729-01",
+    "O729-02"
+   ],
+   "cands": [
+    "O0033",
+    "O0034"
+   ]
+  },
+  {
+   "dep": 1369,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #729 (2026-05-14): the same table and sentence; instance under #729 (S4)",
+   "claims": [],
+   "instance_of": 729,
+   "cands": [
+    "O0075",
+    "O0076"
+   ]
+  },
+  {
+   "dep": 1386,
+   "strata": [
+    "O"
+   ],
+   "reason": "provenanceerasure.org definition surface: process provenance as 'The third dimension alongside artifact provenance (C2PA) and semantic provenance (PER)'; the artifact dimension restated, adds nothing to #729's lineage on the class (S4); instance under #729",
+   "claims": [],
+   "instance_of": 729,
+   "cands": [
+    "O0077",
+    "O0078",
+    "O0079"
+   ]
+  },
+  {
+   "dep": 499,
+   "strata": [
+    "O"
+   ],
+   "reason": "Autonomous Semantic Warfare: C2PA standards and watermarking have not 'achieved sufficient adoption to function as infrastructure'",
+   "claims": [
+    "O499-01"
+   ],
+   "cands": [
+    "O0015"
+   ]
+  },
+  {
+   "dep": 615,
+   "strata": [
+    "O"
+   ],
+   "reason": "The $650 Billion Gap: C2PA addresses media provenance, 'narrowly scoped'; 'C2PA cannot tell you what was lost' when an article becomes an AI Overview",
+   "claims": [
+    "O615-01"
+   ],
+   "cands": [
+    "O0016"
+   ]
+  },
+  {
+   "dep": 621,
+   "strata": [
+    "O"
+   ],
+   "reason": "Gravity Well Protocol Specification: 'Against C2PA: C2PA authenticates media. Doesn't cover text …'",
+   "claims": [
+    "O621-01"
+   ],
+   "cands": [
+    "O0017"
+   ]
+  },
+  {
+   "dep": 50,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Compression Arsenal v2.1: 'This is \"semantic provenance\" — what C2PA cannot provide' (O0002) falls in #621's and #725's lineage on what C2PA does not provide and adds nothing (S4); the Gravity Well analogies (O0003, O0004: 'open (like C2PA)', 'like Adobe for C2PA') are not claims on the class",
+   "claims": [],
+   "instance_of": 621,
+   "cands": [
+    "O0002",
+    "O0003",
+    "O0004"
+   ]
+  },
+  {
+   "dep": 1175,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Compression Arsenal v2.0, the same text as #50 (instance)",
+   "claims": [],
+   "instance_of": 621,
+   "cands": [
+    "O0049",
+    "O0050",
+    "O0051"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2, non-claim 2: robots.txt and C2PA 'operate primarily at the publication / legal / evidentiary layer rather than at the training-survival layer'. The c2pa-text paragraph (O0010) is on text, not media; the Tier-1 posting rule (O0011, 'XMP metadata if PDF') is the archive's own practice for PDFs and is not on the class",
+   "claims": [
+    "O127-01"
+   ],
+   "cands": [
+    "O0009",
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 833,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Summarizer as Horizon of Reception (the Capture Registry's founding paper): provenance and attribution have reception consequences 'that existing metadata standards (Dublin Core, FAIR principles, C2PA) do not address'",
+   "claims": [
+    "O833-01"
+   ],
+   "cands": [
+    "O0037"
+   ]
+  },
+  {
+   "dep": 1003,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI-Native Intellectual Biography: provenance and attribution studies, C2PA among them, 'have focused on attribution loss in AI outputs'; the failure-mode table (O0045, 'Holographic Kernel as embedded metadata') is on text metadata, not the class",
+   "claims": [
+    "O1003-01"
+   ],
+   "cands": [
+    "O0044",
+    "O0045"
+   ]
+  },
+  {
+   "dep": 121,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentence as #1003 (one work; #1003 earliest dated); instance",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "O0007",
+    "O0008"
+   ]
+  },
+  {
+   "dep": 1194,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same sentence as #1003; instance",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "O0070",
+    "O0071"
+   ]
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Alignment: cross-format content provenance standards (C2PA 2024) as 'starting points for the public and machine-readable layers'",
+   "claims": [
+    "O95-01"
+   ],
+   "cands": [
+    "O0005"
+   ]
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #95; instance",
+   "claims": [],
+   "instance_of": 95,
+   "cands": [
+    "O0052"
+   ]
+  },
+  {
+   "dep": 204,
+   "strata": [
+    "R"
+   ],
+   "reason": "found by the hop (reverse, from #729): the SPXI Self-Audit Protocol plans a 'Hash/signature manifest (C2PA-compatible)' as its Layer 4, a relation of the archive's own protocol to the class",
+   "claims": [
+    "R204-01"
+   ],
+   "cands": [
+    "H0049"
+   ]
+  },
+  {
+   "dep": 1432,
+   "strata": [
+    "R"
+   ],
+   "reason": "found by the hop (forward, from #1443): AXN-SYMBOLON-SPEC places the AXN stamp for a lossless image in 'EXIF ImageDescription/UserComment', a relation of the archive's identifier to embedded image metadata",
+   "claims": [
+    "R1432-01"
+   ],
+   "cands": [
+    "H0146"
+   ]
+  }
+ ],
+ "admitted_surface": [],
+ "not_admitted": [
+  {
+   "dep": 1,
+   "cands": [
+    "O0001"
+   ],
+   "reason": "'The same enforcement action strips author metadata, creating attribution severance' (O0001): the archive's category is applied to author metadata stripped from repository records at a platform's enforcement, not to embedded image metadata in a publishing pipeline; applying it to the class would be the composer's judgment (§3.4 guard)"
+  },
+  {
+   "dep": 912,
+   "cands": [
+    "O0043"
+   ],
+   "reason": "glossary entry 'Attribution Severance — author metadata stripped from persistent identifiers' (O0043): a definition for identifier records, a different substrate; a listing"
+  },
+  {
+   "dep": 755,
+   "cands": [
+    "O0035",
+    "O0036"
+   ],
+   "reason": "inscription-layer survivability lists (O0035, O0036: 'leading-metadata stripping'): text documents, a different substrate"
+  },
+  {
+   "dep": 835,
+   "cands": [
+    "O0038",
+    "O0039"
+   ],
+   "reason": "OKF: 'The metadata stripping vulnerability' (O0038, O0039): YAML frontmatter dropped by RAG systems, a different substrate"
+  },
+  {
+   "dep": 1215,
+   "cands": [
+    "O0072",
+    "O0073"
+   ],
+   "reason": "the same text as #835; not admitted for the same reason"
+  },
+  {
+   "dep": 837,
+   "cands": [
+    "O0040"
+   ],
+   "reason": "'the training pipeline strips metadata but preserves body text' (O0040): a placement rule for the archive's text deposits; a different substrate"
+  },
+  {
+   "dep": 868,
+   "cands": [
+    "O0041"
+   ],
+   "reason": "Zenodo termination: metadata stripping of DOI records (O0041), a different substrate"
+  },
+  {
+   "dep": 1087,
+   "cands": [
+    "O0046"
+   ],
+   "reason": "the LACUNA carrier table (O0046: PDF XMP, 'metadata-stripping pipelines'): the archive's PDFs; a listing of carriers, not a claim on the class"
+  },
+  {
+   "dep": 1094,
+   "cands": [
+    "O0047",
+    "O0048"
+   ],
+   "reason": "'the same metadata-stripping signature' (O0047, O0048): repository removal signatures, a different substrate"
+  },
+  {
+   "dep": 1335,
+   "cands": [
+    "O0074"
+   ],
+   "reason": "an incident table in a fiction ('Export metadata stripping', O0074); not a claim on the class"
+  },
+  {
+   "dep": 98,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "the DePIN table's DECORAIT row ('C2PA + DLT', O0006): a claim on DECORAIT, not on the class"
+  },
+  {
+   "dep": 130,
+   "cands": [
+    "O0012"
+   ],
+   "reason": "SPXI components (O0012: the Holographic Kernel 'as embedded metadata', the strip-protection clause): text documents"
+  },
+  {
+   "dep": 208,
+   "cands": [
+    "O0013"
+   ],
+   "reason": "a compliance table (O0013: 'This document serves as machine-readable provenance data'): the document's self-description, not a claim on the class"
+  },
+  {
+   "dep": 247,
+   "cands": [
+    "O0014"
+   ],
+   "reason": "a description of Content Credentials in a probe result (O0014): no archive category applied to the class (the matched 'categories' are headings)"
+  },
+  {
+   "dep": 880,
+   "cands": [
+    "O0042"
+   ],
+   "reason": "an expected-relation query string (O0042); not a claim"
+  },
+  {
+   "dep": 1464,
+   "cands": [
+    "O0091"
+   ],
+   "reason": "an integration note's listing of process provenance (O0091), restating #1386; a listing"
+  },
+  {
+   "dep": 1684,
+   "cands": [
+    "O0092"
+   ],
+   "reason": "the prediction index (O0092): 'at 90% synthetic content provenance becomes the only differentiator' matched the class pattern across a clause boundary ('synthetic content, provenance'); not on the class"
+  }
+ ],
+ "hop": [
+  {
+   "cand_id": "H0001",
+   "dep": 1,
+   "direction": "forward",
+   "via": [
+    127,
+    833,
+    1409
+   ],
+   "verdict": "not admitted (above)"
+  },
+  {
+   "cand_id": "H0002",
+   "dep": 2,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0003",
+   "dep": 3,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0004",
+   "dep": 4,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0005",
+   "dep": 5,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0006",
+   "dep": 13,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0007",
+   "dep": 15,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0008",
+   "dep": 29,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0009",
+   "dep": 33,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0010",
+   "dep": 39,
+   "direction": "forward",
+   "via": [
+    615
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0011",
+   "dep": 46,
+   "direction": "forward",
+   "via": [
+    615
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0012",
+   "dep": 49,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0013",
+   "dep": 51,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0014",
+   "dep": 52,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0015",
+   "dep": 64,
+   "direction": "forward",
+   "via": [
+    95,
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0016",
+   "dep": 72,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0017",
+   "dep": 72,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0018",
+   "dep": 75,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0019",
+   "dep": 76,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0020",
+   "dep": 89,
+   "direction": "forward",
+   "via": [
+    95,
+    725,
+    1003,
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0021",
+   "dep": 91,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0022",
+   "dep": 92,
+   "direction": "forward",
+   "via": [
+    95,
+    729,
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0023",
+   "dep": 100,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0024",
+   "dep": 100,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0025",
+   "dep": 103,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0026",
+   "dep": 104,
+   "direction": "reverse",
+   "via": [
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0027",
+   "dep": 105,
+   "direction": "reverse",
+   "via": [
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0028",
+   "dep": 112,
+   "direction": "reverse",
+   "via": [
+    127,
+    615,
+    725,
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0029",
+   "dep": 113,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0030",
+   "dep": 115,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0031",
+   "dep": 121,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "instance of #1003 (above)"
+  },
+  {
+   "cand_id": "H0032",
+   "dep": 123,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0033",
+   "dep": 133,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0034",
+   "dep": 135,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0035",
+   "dep": 136,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0036",
+   "dep": 140,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0037",
+   "dep": 141,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0038",
+   "dep": 149,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0039",
+   "dep": 151,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0040",
+   "dep": 160,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0041",
+   "dep": 162,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0042",
+   "dep": 162,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0043",
+   "dep": 173,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0044",
+   "dep": 176,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0045",
+   "dep": 185,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0046",
+   "dep": 186,
+   "direction": "forward",
+   "via": [
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0047",
+   "dep": 198,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0048",
+   "dep": 201,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0049",
+   "dep": 204,
+   "direction": "reverse",
+   "via": [
+    729
+   ],
+   "verdict": "admitted (see verdicts)"
+  },
+  {
+   "cand_id": "H0050",
+   "dep": 215,
+   "direction": "forward",
+   "via": [
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0051",
+   "dep": 250,
+   "direction": "forward",
+   "via": [
+    95,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0052",
+   "dep": 264,
+   "direction": "forward",
+   "via": [
+    95
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0053",
+   "dep": 274,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0054",
+   "dep": 339,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0055",
+   "dep": 349,
+   "direction": "forward",
+   "via": [
+    95,
+    725,
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0056",
+   "dep": 504,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0057",
+   "dep": 519,
+   "direction": "forward",
+   "via": [
+    615
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0058",
+   "dep": 541,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0059",
+   "dep": 548,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0060",
+   "dep": 561,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0061",
+   "dep": 573,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0062",
+   "dep": 576,
+   "direction": "forward",
+   "via": [
+    127,
+    615,
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0063",
+   "dep": 616,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0064",
+   "dep": 628,
+   "direction": "forward",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0065",
+   "dep": 636,
+   "direction": "forward",
+   "via": [
+    127,
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0066",
+   "dep": 638,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0067",
+   "dep": 670,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0068",
+   "dep": 671,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0069",
+   "dep": 673,
+   "direction": "forward",
+   "via": [
+    95,
+    127,
+    725,
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0070",
+   "dep": 695,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0071",
+   "dep": 726,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0072",
+   "dep": 749,
+   "direction": "forward",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0073",
+   "dep": 768,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0074",
+   "dep": 819,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0075",
+   "dep": 821,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0076",
+   "dep": 823,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0077",
+   "dep": 825,
+   "direction": "forward",
+   "via": [
+    833,
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0078",
+   "dep": 825,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0079",
+   "dep": 834,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0080",
+   "dep": 835,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "not admitted (above)"
+  },
+  {
+   "cand_id": "H0081",
+   "dep": 838,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0082",
+   "dep": 840,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0083",
+   "dep": 841,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0084",
+   "dep": 845,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0085",
+   "dep": 848,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0086",
+   "dep": 869,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0087",
+   "dep": 870,
+   "direction": "reverse",
+   "via": [
+    499
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0088",
+   "dep": 900,
+   "direction": "forward",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0089",
+   "dep": 900,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0090",
+   "dep": 936,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0091",
+   "dep": 936,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0092",
+   "dep": 937,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0093",
+   "dep": 941,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0094",
+   "dep": 942,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0095",
+   "dep": 943,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0096",
+   "dep": 944,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0097",
+   "dep": 964,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0098",
+   "dep": 993,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0099",
+   "dep": 998,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0100",
+   "dep": 1009,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0101",
+   "dep": 1010,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0102",
+   "dep": 1012,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0103",
+   "dep": 1030,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0104",
+   "dep": 1031,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0105",
+   "dep": 1054,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0106",
+   "dep": 1068,
+   "direction": "forward",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0107",
+   "dep": 1077,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0108",
+   "dep": 1107,
+   "direction": "reverse",
+   "via": [
+    499
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0109",
+   "dep": 1188,
+   "direction": "reverse",
+   "via": [
+    95
+   ],
+   "verdict": "instance of #95 (above)"
+  },
+  {
+   "cand_id": "H0110",
+   "dep": 1190,
+   "direction": "forward",
+   "via": [
+    725,
+    729
+   ],
+   "verdict": "instance of #725 (above)"
+  },
+  {
+   "cand_id": "H0111",
+   "dep": 1190,
+   "direction": "reverse",
+   "via": [
+    725,
+    729
+   ],
+   "verdict": "instance of #725 (above)"
+  },
+  {
+   "cand_id": "H0112",
+   "dep": 1196,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0113",
+   "dep": 1201,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0114",
+   "dep": 1202,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0115",
+   "dep": 1210,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0116",
+   "dep": 1215,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "not admitted (above)"
+  },
+  {
+   "cand_id": "H0117",
+   "dep": 1227,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0118",
+   "dep": 1228,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0119",
+   "dep": 1229,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0120",
+   "dep": 1330,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0121",
+   "dep": 1331,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0122",
+   "dep": 1332,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0123",
+   "dep": 1333,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0124",
+   "dep": 1348,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0125",
+   "dep": 1367,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0126",
+   "dep": 1368,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0127",
+   "dep": 1369,
+   "direction": "forward",
+   "via": [
+    729
+   ],
+   "verdict": "instance of #729 (above)"
+  },
+  {
+   "cand_id": "H0128",
+   "dep": 1369,
+   "direction": "reverse",
+   "via": [
+    725,
+    729
+   ],
+   "verdict": "instance of #729 (above)"
+  },
+  {
+   "cand_id": "H0129",
+   "dep": 1370,
+   "direction": "reverse",
+   "via": [
+    729
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0130",
+   "dep": 1381,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0131",
+   "dep": 1384,
+   "direction": "reverse",
+   "via": [
+    725,
+    729,
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0132",
+   "dep": 1386,
+   "direction": "reverse",
+   "via": [
+    127,
+    725,
+    729
+   ],
+   "verdict": "instance of #729 (above)"
+  },
+  {
+   "cand_id": "H0133",
+   "dep": 1389,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0134",
+   "dep": 1393,
+   "direction": "reverse",
+   "via": [
+    615,
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0135",
+   "dep": 1396,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0136",
+   "dep": 1397,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0137",
+   "dep": 1401,
+   "direction": "reverse",
+   "via": [
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0138",
+   "dep": 1404,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0139",
+   "dep": 1406,
+   "direction": "forward",
+   "via": [
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0140",
+   "dep": 1407,
+   "direction": "forward",
+   "via": [
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0141",
+   "dep": 1413,
+   "direction": "reverse",
+   "via": [
+    1409
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0142",
+   "dep": 1422,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0143",
+   "dep": 1423,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0144",
+   "dep": 1427,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0145",
+   "dep": 1429,
+   "direction": "reverse",
+   "via": [
+    499
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0146",
+   "dep": 1432,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "admitted (see verdicts)"
+  },
+  {
+   "cand_id": "H0147",
+   "dep": 1436,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0148",
+   "dep": 1437,
+   "direction": "forward",
+   "via": [
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0149",
+   "dep": 1441,
+   "direction": "reverse",
+   "via": [
+    127,
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0150",
+   "dep": 1444,
+   "direction": "reverse",
+   "via": [
+    1409,
+    1443
+   ],
+   "verdict": "admitted (see verdicts)"
+  },
+  {
+   "cand_id": "H0151",
+   "dep": 1460,
+   "direction": "reverse",
+   "via": [
+    1003
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0152",
+   "dep": 1518,
+   "direction": "reverse",
+   "via": [
+    615
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0153",
+   "dep": 1556,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0154",
+   "dep": 1664,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0155",
+   "dep": 1665,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0156",
+   "dep": 1669,
+   "direction": "reverse",
+   "via": [
+    499
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0157",
+   "dep": 1671,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0158",
+   "dep": 1676,
+   "direction": "reverse",
+   "via": [
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0159",
+   "dep": 1677,
+   "direction": "reverse",
+   "via": [
+    725
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0160",
+   "dep": 1680,
+   "direction": "reverse",
+   "via": [
+    729,
+    833
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0161",
+   "dep": 1684,
+   "direction": "reverse",
+   "via": [
+    95,
+    127,
+    499,
+    615,
+    621,
+    725,
+    729,
+    833,
+    1003,
+    1409,
+    1443
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0162",
+   "dep": 1687,
+   "direction": "reverse",
+   "via": [
+    499,
+    621
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0163",
+   "dep": 1690,
+   "direction": "reverse",
+   "via": [
+    127
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  },
+  {
+   "cand_id": "H0164",
+   "dep": 1694,
+   "direction": "reverse",
+   "via": [
+    499
+   ],
+   "verdict": "rejected: the text carries none of the entity's strings (Metawatch, IPTC) or the class terms (photo or image metadata, embedded metadata, Exif, XMP, C2PA, Content Credentials, metadata stripping); screened by string and title, not read whole"
+  }
+ ],
+ "class_pass": {
+  "classes": [
+   "content provenance in media: embedded photo metadata and C2PA Content Credentials, and the tracking of their real-world adoption",
+   "metadata stripped in a publishing or processing pipeline (credit lost between creator and reader)"
+  ],
+  "O_class_sentences": 85,
+  "note": "No deposit names Metawatch (the string pass's 17 D sentences all match the operator's acronym 'IPTC', in #725, #1190 and #1409). Every admitted claim is O or R: the archive's bearing on the entity is on its class and its carriers, and the archive's own records of the entity (the capture, the census record) are ledgered as CAP-1-NN and PE-NN."
+ },
+ "observations": [
+  "The string pass cuts sentences at 900 characters, so #725's disambiguation table (one 'sentence') lost its 'IPTC AI metadata' row; found by reading the deposit's IPTC lines (O725-07).",
+  "The hop returned 164 candidates in 161 deposits; three were admitted (#204, #1432, #1444), five are instances of admitted deposits, and the rest carry none of the entity's or the class's strings."
+ ],
+ "counts": {
+  "string_pass": {
+   "D_sentences": 17,
+   "D_deposits": 3,
+   "R_sentences": 3,
+   "R_deposits": 1,
+   "O_direct": 7,
+   "O_class": 85,
+   "O_deposits": 37,
+   "H_candidates": 164
+  },
+  "deposits_admitted": 22,
+  "deposits_with_claims": 14,
+  "instances": 8,
+  "not_admitted": 17,
+  "hop_candidates": 164,
+  "hop_admitted": 3,
+  "candidate_deposits": 37
+ }
+}

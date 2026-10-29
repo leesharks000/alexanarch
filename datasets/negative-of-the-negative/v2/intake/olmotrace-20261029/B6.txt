@@ -1,0 +1,107 @@
+Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info
+
+SubscribeSign in
+
+Meet OLMoTrace: The Tool That Shows Where AI Gets Its Info
+
+Ai2's latest open-source tool brings model transparency to AI, tracing responses back to their original training data
+
+Ken Yeung
+
+Apr 09, 2025
+
+1
+
+Share
+
+Ai2 has launched a tool to help developers answer a critical question: Where do AI models get their data? Called OLMoTrace, it's an open-source application offering fact-checking of information provided in prompt replies. This data traceability is vital for those interested in governance, regulation, and auditing.
+
+This feature is currently available on Ai2's flagship model, OLMo 2 32B, but it works across the entire OLMo family and supports custom fine-tuned models.
+
+"OLMoTrace marks a pivotal step forward for the future of AI development, laying the foundation for more transparent AI systems that researchers and developers can better understand," Jiacheng Liu, the company's lead researcher for OLMoTrace, said in a statement. "By offering greater insight into how AI models generate their responses, anyone using our models can ensure that the data supporting their outputs is trustworthy and verifiable. This data traceability is essential not only for researchers and developers learning more about how these systems work but for anyone who wants to build solutions with a verifiable AI model they can trust."
+
+The OLMoTrace announcement coincides with a series of updates Ai2 shared at this year’s Google Cloud Next, where it deepened its partnership with Google Cloud by making its portfolio of open AI models available in Vertex AI’s Model Garden. The two organizations also revealed a joint $20 million investment in the Cancer AI Alliance to accelerate the use of AI in the fight against cancer.
+
+Thanks for reading The AI Economy! Subscribe for free to receive new posts and support my work.
+
+Subscribe
+
+Turning Black Boxes into Glass Boxes
+
+"When we release a model, we open up everything about that model as a matter of principle," Ai2's Chief Executive, Ali Farhadi, stated. "This includes training data, how we collect the data, how we clean that data, how we massage that data into the training algorithm, what are all the details of the training algorithm, including the training code, the checkpoints, how the model evolves over time during training, the evaluations, etc."
+
+However, he believes there's a missing link to this puzzle. People in the industry wonder how they can trace AI-generated responses back to their training data—whether from pre-training or fine-tuning. Farhadi described this as being a crucial puzzle piece for researchers. As such, his company set out to understand why a model generates a particular response. By identifying the root cause within the training data, AI builders can implement a solution more quickly. And that's where OLMoTrace comes into play.
+
+Like its Tulu 3 offering, OLMoTrace promises to remove the shroud hanging over AI models, providing greater transparency and ensuring that new-age applications provide responses grounded in reality, not hallucinations. In other words, Ai2 wants to convert a black box into a glass box.
+
+"OLMoTrace connects the output to the input, as simple as that. Because our inputs are open, we could actually connect them," he remarked. "But it's non-trivial because for every generation...you need to search trillions of tokens, and we need to find a way to do it in almost real-time...And the minute you start linking the generation to an input—assuming that the inputs were factual—then you can start also cooking up scores for hallucination, how much this generation is grounded in reality, what are the sources, is the source reliable—all of those can come back with this traceability."
+
+Ai2 predicts this tool will benefit organizations and sectors that deal with increasing public scrutiny, such as those in healthcare, life sciences, financial services, and those who are held accountable to a model's response. "As we start to look towards regulation, governance, and auditability, there are certain key sectors right now that are limited in what they can deploy at scale with black-box models," Ai2's Chief Operating Officer Sophie Lebrecht says. "What this sort of provides the pathway for is like, as we look at sort of leading industries that need traceability in order to meet regulation, this is a tool that can foster that."
+
+How OLMoTrace Might Work
+
+Running OLMoTrace on a playground development environment. The tool can be activated by pressing a button under a prompt response. Image credit: Screenshot
+
+In a demonstration, Ai2 asked OLMo about several topics, including "Who is Celine Dion?" and information about the Space Needle. It's worth noting that not every experience will be like this. OLMoTrace's activation will depend on the use case and how individual developers implement the software in their applications. That being said, at the bottom of each response, there's an OLMoTrace button that, when clicked, will reveal highlight spans, similar to what you might see in a Word document with track changes enabled.
+
+What happens to AI-generated responses when OLMoTrace is enabled, as shown in a demonstration on Ai2’s playground development environment. Image credit: Screenshot
+
+Clicking on a highlighted span will display the document sources (not images or videos) within the model's training data. According to Liu, the different shades dictate the "relevance of the retrieved documents you might find with respect to the model's response." When looking at the first span, OLMoTrace will show multiple sources, sorting them by high, medium, and low relevancies. You can click "view document" to dig deeper to see the specific website or reference and understand where the model gets its information.
+
+Ai2 doesn't intend for the documents retrieved to be viewed as the definitive source of the model's learning. "We're just showing you some associations, connections between them. Some of them may warrant a further inspection," Liu clarified. In fact, when experimenting with this tool and asking it about Microsoft's 50th anniversary, one highlighted span brought up a document involving the Soviet Union—irrelevant to my query but relevant to the span's context.
+
+How OLMoTrace displays source information within Ai2’s playground development environment. Image credit: Screenshot
+
+In an example where OLMo was asked about the Space Needle, one referenced document was someone's blog versus information pulled from Wikipedia or an official website. Ai2 asserts that OLMOTrace’s results should not be mistaken as indicators of authority. "We have a ranking algorithm to rank all the other documents that we think are relevant to these phrases. And this ranking algorithm is...imagining a generic-type person ranking them," Hannaneh Hajishirzi, the organization's senior director of natural language processing, explained. "It's still different from Google's customizable ranking and so on, but this is the way that we have decided to rank this model."
+
+But Lebrecht says that’s not precisely the point of OLMoTrace. When we rely on AI models for answers, we expect them to pull from credible sources—but neither developers nor users have a way to verify that. OLMoTrace aims to change that foundation. “We are now showing for the first time... what is the source of that model's response,” she asserts.
+
+The Tool to Kickstart an Ecosystem
+
+Lebrecht claims developers are very interested in this tool when fine-tuning models. It creates opportunities to understand what skills are gained or lost in post-training and what else needs to be done to productize a model. She asserts that OLMoTrace allows for debugging and evaluation of AI models without needing to reveal proprietary training data.
+
+OLMoTrace isn't limited to Ai2's model. Because it's open-source, the tool can be applied to other models, including those from OpenAI, Anthropic, and Meta. However, Liu reasons that closed model providers may hesitate to use OLMoTrace because it would expose the training data to sunlight. But, for those using AI on private data internally, such as within a healthcare company, OLMoTrace could prove helpful in debugging and evaluating post-training effectiveness.
+
+When asked how OLMoTrace and its data traceability fares against competitors, such as Perplexity, Farhadi declined to comment on work done by closed models and claims he's unaware of "any other work in the open that does this kind of data traceability."
+
+Liu interjects and cites that a significant difference between Ai2's OLMoTrace and Perplexity is that the latter uses retrieval. "They are intervening with the model response by conditioning them to retrieve the sources. We are not intervening with the model response. Our response is purely generated by the neural language model. What we do is...analyze the model's response post hoc and show you the linkage between model output and its original training data."
+
+"Our tool is more for explainability, traceability, and encouraging transparency," Hajishirzi adds. "What Perplexity does for a given query, they first find relevant documents to that query, and then they interject that into generation and say, 'make sure to generate based on this document.'"
+
+Neither she nor Liu says Perplexity's approach is incorrect; it is just different.
+
+Farhadi hopes that should OLMoTrace become popular, it'll lead to better models. "We believe in this approach that by linking to the pre-trained data, we will see a new class of algorithms. We see a new class of customization, fine-tuning, and post-training approaches, and that's what we're after."
+
+While Ai2 touts OLMoTrace as a breakthrough in exposing model information that’s largely been hidden from view, at its core, it primarily tags where a model’s data came from. But that raises a bigger question: What do we do with that knowledge? OLMoTrace doesn't provide analytics or insights to help developers determine what to do next to improve the training data. Simply put, it's generating awareness.
+
+Farhadi does not disagree with this, but he concedes that it'll be up to the community to figure out what tools are needed. "This is an open tool for an open community," he acknowledges while pointing out that large problems have to be solved through communal efforts. Farhadi views Ai2's contribution as "empowering everybody with these...tools so you can start building on top of that." In other words, the organization's role is to "put things out there" and "empower others to do research."
+
+If you’re using OLMo, you must install OLMoTrace separately as an add-on feature. It's available now on Ai2's playground for the OLMo 2 32B Instruct, 13B Instruct, and OLMoE 1B 7B Instruct models.
+
+Thanks for reading The AI Economy! This post is public so feel free to share it.
+
+Share
+
+1
+
+Share
+
+PreviousNext
+
+Discussion about this post
+
+CommentsRestacks
+
+TopLatestDiscussions
+
+No posts
+
+Ready for more?
+
+Subscribe
+
+© 2026 Ken Yeung · Privacy ∙ Terms ∙ Collection notice
+
+ Start your SubstackGet the app
+
+Substack is the home for great culture

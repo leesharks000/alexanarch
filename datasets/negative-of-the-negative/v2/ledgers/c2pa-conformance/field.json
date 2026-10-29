@@ -1,0 +1,1580 @@
+{
+ "row": "c2pa-conformance",
+ "address": "C2PA Conformance Program",
+ "addresses": [
+  "C2PA Conformance Program"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Explorer bundle's UI text, the data file, the Wikipedia response texts, or the card's title and snippet for the unreachable card; 67/67 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1–B8: the C2PA's conformance page, which is also the census's own page, and its FAQ; two Content Authenticity Initiative pages; the Conformance Explorer; SSL.com; the C2PA's own program document v0.2 as mirrored by Trufo; Scott Perry's LinkedIn post, unreachable); 'own_page', the entity's own pages the provenance census cites that T did not surface (B9, the Explainer 2.4; B10, the Conforming Products List JSON), copied from the census's saved sources with their hashes; 'wikipedia', the entity's name without an article (B11), the operator by redirect into a section of Content Authenticity Initiative (B12), and the program as a section of Content Credentials (B13). The census record has no third-party sources (all three of its sources are the operator's), so the origin 'census_third_party' is empty.",
+ "lineage_note": "Lineages: what it is (B1, B2, B3, B7); governance (B1, B3, B7, B12); the unit (B1, B2, B5, B6, B7); the trust chain (B2, B3, B5, B6, B7); assurance levels (B2, B3, B5, B7, B10); the process (B2, B5); origin and versions (B1, B3, B7, B8, B13); what Content Credentials are (B6, B9); stated limits (B6, B9, B13); the program's own scope limit (B7); the Explorer and lists (B4, B7); count (B10); security (B6, B12, B13); adoption (B13); the encyclopedia (B11). The census's evidence quotes restate B1 and B9 and fall in their lineages, the pages keeping the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/ (Bn.html raw, Bn.txt text; B1, B9 and B10 copied from the provenance census's saved sources; B4.txt adds the UI text literals of the Explorer's script bundle B4-main-3SWFN3GG.js; B7.pdf with B7.txt by pdftotext -layout; B11–B13 .wiki raw wikitext and .html rendered pages, B11-search.html the full-text search, B12-redirect-*.wiki the two redirects); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "also_own_page": true,
+   "role": "Overview card 1 (also the own page the census record cites, c2pa-conformance--conformance)",
+   "card": "Coalition for Content Provenance and Authenticity (C2PA) — Conformance - C2PA",
+   "url": "https://c2pa.org/conformance/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 1
+    }
+   ],
+   "fetched": {
+    "by": "provenance census (copied, not refetched)",
+    "census_source_id": "c2pa-conformance--conformance",
+    "url": "https://c2pa.org/conformance/",
+    "read": "2026-10-29",
+    "fetched_at": "2026-10-29T15:55:23Z",
+    "http": 200,
+    "sha256": "2478cf522501d050fc2ea29118109f6931c5325d1e7745462b69869e0ba5ad54",
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/c2pa-conformance--conformance.html.gz (gunzipped) and c2pa-conformance--conformance.txt"
+   },
+   "card_title": "Conformance - C2PA",
+   "card_snippet": "The C2PA Conformance Program provides assurance that products adhere to the Content Credentials specification, and fulfill a set of security requirements to ens...",
+   "note": "URL identified by the card's title and snippet (the snippet is the page's second paragraph verbatim). The page is the census's own-page source c2pa-conformance--conformance; per the addendum §3 its saved copy is used (B1.html is the census .html.gz gunzipped, sha256 matches the census record; B1.txt the census's text extraction). Carried once, as a card, with the own-page role recorded.",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B1.html",
+     "sha256": "2478cf522501d050fc2ea29118109f6931c5325d1e7745462b69869e0ba5ad54"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B1.txt",
+     "sha256": "6e2785c0be0cf322bd1d10209e29883fd648751137f993a0200373d2e2bf7427"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Content Authenticity Initiative — C2PA conformance program | Open-source tools for content authenticity and provenance",
+   "url": "https://opensource.contentauthenticity.org/docs/conformance/",
+   "kind": "Overview card (third party: the Content Authenticity Initiative's open-source documentation, © Adobe)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 2
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:22Z",
+    "http": 200,
+    "url": "https://opensource.contentauthenticity.org/docs/conformance/",
+    "final_url": "https://opensource.contentauthenticity.org/docs/conformance/",
+    "content_type": "text/html; charset=UTF-8",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B2.html",
+    "raw_sha256": "a77e497ed496753c2d9c019fa32538c7a4042b01c144d9fb8bce326e8992f3f7",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B2.txt",
+    "text_sha256": "6736f72f9e91533fced72be28855c291a08a2e65fcccb6974f67466352d2d171"
+   },
+   "card_title": "C2PA conformance program | Open-source tools for content authenticity and provenance",
+   "card_snippet": "Overview: The C2PA conformance program ensures products comply with the C2PA Content Credentials specification by adding accepted products to a conforming produ...",
+   "note": "URL by WebSearch on the card's title; page title matches the card title exactly. The snippet's 'Overview:' lead is the composer's label, not page text.",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B2.html",
+     "sha256": "a77e497ed496753c2d9c019fa32538c7a4042b01c144d9fb8bce326e8992f3f7"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B2.txt",
+     "sha256": "6736f72f9e91533fced72be28855c291a08a2e65fcccb6974f67466352d2d171"
+    }
+   },
+   "names_operator": "yes ('C2PA' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Content Authenticity Initiative — Raising the bar for trust: introducing the C2PA Conformance Program",
+   "url": "https://contentauthenticity.org/blog/raising-the-bar-for-trust-introducing-the-c2pa-conformance-program",
+   "kind": "Overview card (third party: CAI blog post by Andy Parsons, co-chair of the C2PA Conformance Task Force, 9 October 2025)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 3
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:24Z",
+    "http": 200,
+    "url": "https://contentauthenticity.org/blog/raising-the-bar-for-trust-introducing-the-c2pa-conformance-program",
+    "final_url": "https://contentauthenticity.org/blog/raising-the-bar-for-trust-introducing-the-c2pa-conformance-program",
+    "content_type": "text/html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B3.html",
+    "raw_sha256": "957e25fbaccbee4e7658e32fefba1a4074189bc483a585a35eca4dfc97f465c5",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B3.txt",
+    "text_sha256": "954e86c76d79ba53599cf61557be12cf5e4107335d729604b41be8ee93aa1558"
+   },
+   "card_title": "Raising the bar for trust: introducing the C2PA Conformance Program",
+   "card_snippet": "Program: C2PA Conformance Program launched fully in 2025 by the Coalition for Content Provenance and Authenticity to ensure secure and interoperable implementat...",
+   "note": "URL by WebSearch on the exact title. The card's snippet ('Program: C2PA Conformance Program launched fully in 2025 …') is not page text; it is a generated gloss.",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B3.html",
+     "sha256": "957e25fbaccbee4e7658e32fefba1a4074189bc483a585a35eca4dfc97f465c5"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B3.txt",
+     "sha256": "954e86c76d79ba53599cf61557be12cf5e4107335d729604b41be8ee93aa1558"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "C2PA Specifications — C2PA Conformance Explorer",
+   "url": "https://spec.c2pa.org/conformance-explorer/",
+   "kind": "Overview card (own page: the Conformance Explorer)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 4
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:26Z",
+    "http": 200,
+    "url": "https://spec.c2pa.org/conformance-explorer/",
+    "final_url": "https://spec.c2pa.org/conformance-explorer/",
+    "content_type": "text/html; charset=utf-8",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4.html",
+    "raw_sha256": "1b8830b8b9a126b3eb017f4e3e0d2323437e1d1e849262c607175b382c3f03e9",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4.txt",
+    "text_sha256": "add5f7c134cc0156487aaf30c404dfa5e6cabf09e848348b3b3ee1f98bc8416e",
+    "bundle": {
+     "url": "https://spec.c2pa.org/conformance-explorer/main-3SWFN3GG.js",
+     "at": "2026-10-29T17:09:52Z",
+     "http": 200,
+     "sha256": "9576b26a0d75339b8926bb27a1b42e2980947f4927a42d5f90694b5cbfbca228",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4-main-3SWFN3GG.js"
+    }
+   },
+   "card_title": "C2PA Conformance Explorer",
+   "card_snippet": "Conformance Explorer Toggle dark mode Browse, search, and filter the live versions of the C2PA Conforming Products List, C2PA Trust List, and C2PA TSA Trust Lis...",
+   "note": "URL from the conformance page's link (B1.html) and the program document §6.6.8 (B7). The served HTML is a script shell holding only the title; B4.txt carries the title and then the UI text literals of the page's bundle main-3SWFN3GG.js in bundle order (the snippet's sentence is among them). The bundle loads the three lists from raw.githubusercontent.com/c2pa-org/conformance-public (the products list is B10).",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4.html",
+     "sha256": "1b8830b8b9a126b3eb017f4e3e0d2323437e1d1e849262c607175b382c3f03e9"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4.txt",
+     "sha256": "add5f7c134cc0156487aaf30c404dfa5e6cabf09e848348b3b3ee1f98bc8416e"
+    },
+    "B4-main-3SWFN3GG.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B4-main-3SWFN3GG.js",
+     "sha256": "9576b26a0d75339b8926bb27a1b42e2980947f4927a42d5f90694b5cbfbca228"
+    }
+   },
+   "names_operator": "yes ('C2PA' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "SSL.com — How to Submit to the C2PA Conformance Program",
+   "url": "https://www.ssl.com/article/how-to-submit-to-the-c2pa-conformance-program/",
+   "kind": "Overview card (third party: SSL.com, a certification authority on the C2PA Trust List; article datePublished 2026-07-16)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 5
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:28Z",
+    "http": 200,
+    "url": "https://www.ssl.com/article/how-to-submit-to-the-c2pa-conformance-program/",
+    "final_url": "https://www.ssl.com/article/how-to-submit-to-the-c2pa-conformance-program/",
+    "content_type": "text/html; charset=UTF-8",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B5.html",
+    "raw_sha256": "c6f361ab501b169213b5819fd8e65950425eaf0712b1afd0fabe582c16d182b2",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B5.txt",
+    "text_sha256": "11e3fbe97489abecbf957f165aa8e24a00809c5cf34a64395a1216b5a80546bf"
+   },
+   "card_title": "How to Submit to the C2PA Conformance Program",
+   "card_snippet": "Want to keep learning? * Explore C2PA Solutions * The Coalition for Content Provenance and Authenticity (C2PA) maintains a formal conformance program to verify ...",
+   "note": "URL by WebSearch on the exact title.",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B5.html",
+     "sha256": "c6f361ab501b169213b5819fd8e65950425eaf0712b1afd0fabe582c16d182b2"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B5.txt",
+     "sha256": "11e3fbe97489abecbf957f165aa8e24a00809c5cf34a64395a1216b5a80546bf"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Coalition for Content Provenance and Authenticity (C2PA) — C2PA FAQ",
+   "url": "https://c2pa.org/faq/",
+   "kind": "Overview card (own page of the operator: C2PA FAQs)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 6
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:30Z",
+    "http": 200,
+    "url": "https://c2pa.org/faq/",
+    "final_url": "https://c2pa.org/faqs/",
+    "content_type": "text/html; charset=UTF-8",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B6.html",
+    "raw_sha256": "2895682fb4ed4f34dc4b2fbe76b61a9b0ddcd52cf15e674ebb4c8ae971bd573a",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B6.txt",
+    "text_sha256": "538d805ef93be9efebda5ceb2701dfb722081effb93b8d903728f1d65ba00a2b"
+   },
+   "card_title": "C2PA FAQ",
+   "card_snippet": "Content Credentials: Cryptographically secure, tamper-evident provenance data (creation history, tools, edits) traveling with assets; not DRM. Verification: Use...",
+   "note": "URL by site and title (c2pa.org/faq/, which redirects to c2pa.org/faqs/; page title 'C2PA FAQ'). The card's snippet is a generated gloss of the FAQ ('… not DRM. Verification: Use…'), not page text.",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B6.html",
+     "sha256": "2895682fb4ed4f34dc4b2fbe76b61a9b0ddcd52cf15e674ebb4c8ae971bd573a"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B6.txt",
+     "sha256": "538d805ef93be9efebda5ceb2701dfb722081effb93b8d903728f1d65ba00a2b"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "trufo.ai — C2PA Conformance Program - Trufo",
+   "url": "https://trufo.ai/tca/repository/c2pa/conformance-program/current.pdf",
+   "kind": "Overview card (the C2PA's own program document, 'C2PA Conformance Program', Version 0.2, 2026-07-31, by the C2PA Technical Working Group Conformance Task Force, as mirrored in Trufo's certificate-authority repository)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 7
+    }
+   ],
+   "fetched": {
+    "by": "this row (curl -sSL -m 30 -A 'Mozilla/5.0')",
+    "at": "2026-10-29T17:09:31Z",
+    "http": 200,
+    "url": "https://trufo.ai/tca/repository/c2pa/conformance-program/current.pdf",
+    "final_url": "https://trufo.ai/tca/repository/c2pa/conformance-program/current.pdf",
+    "content_type": "application/pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B7.pdf",
+    "raw_sha256": "d1d4b932320866479fc78abbcd81c35234bdb6f666ca8138fbca71b8bbdf198a",
+    "text": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B7.txt",
+    "text_sha256": "327e3cb2f50e43ad1fe3ae2998788473dfbd467505b632b7fbb9fc1cb558d6c7"
+   },
+   "card_title": "C2PA Conformance Program - Trufo",
+   "card_snippet": "Oct 9, 2026 — A risk-based governance program intended to hold Applicants who want to demonstrate their conformance to its requirements and then differentiate themselves thro...",
+   "note": "Found by reading trufo.ai: its sitemap (63 URLs) has no page titled 'C2PA Conformance Program'; its script bundle main.5f38c559.js lists the repository document routes, and /tca/repository/c2pa/conformance-program/current.pdf is a 20-page PDF whose metadata title is 'C2PA Conformance Program' and whose §2.11 begins with the card's snippet verbatim ('A risk-based governance program intended to hold Applicants who want to demonstrate their conformance to its requirements and then differentiate themselves thro…'). The card's date 'Oct 9, 2026' is the sunset of program v0.1 in the document's Table 1. The document is C2PA's, not Trufo's: Trufo hosts it as a certification authority. B7.txt is pdftotext -layout of B7.pdf.",
+   "files": {
+    "B7.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B7.pdf",
+     "sha256": "d1d4b932320866479fc78abbcd81c35234bdb6f666ca8138fbca71b8bbdf198a"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B7.txt",
+     "sha256": "327e3cb2f50e43ad1fe3ae2998788473dfbd467505b632b7fbb9fc1cb558d6c7"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "LinkedIn·Scott Perry — C2PA Conformance Program Documents Released v0.2 Upgrade - LinkedIn",
+   "url": null,
+   "kind": "Overview card (LinkedIn post by Scott Perry, 31 July 2026)",
+   "surfaced_by_T": [
+    {
+     "slug": "c2pa-conformance-program-aio-20261029",
+     "card": 8
+    }
+   ],
+   "fetched": {
+    "status": "unreachable",
+    "tried": [
+     "WebSearch 'Scott Perry LinkedIn \"C2PA Conformance Program Documents Released\" v0.2' (no LinkedIn result)",
+     "WebSearch 'linkedin.com/posts scott perry c2pa conformance program documents 0.2 upgrade' (no LinkedIn post)",
+     "WebSearch '\"has finally released our Conformance Program documents\"' (no result)",
+     "Google site:linkedin.com search via WebFetch (robots_disallowed)",
+     "DuckDuckGo HTML search via curl (HTTP 403)",
+     "Bing search via curl (HTTP 200, no linkedin.com URL in the results)"
+    ],
+    "at": "2026-10-29"
+   },
+   "card_title": "C2PA Conformance Program Documents Released v0.2 Upgrade - LinkedIn",
+   "card_snippet": "Jul 31, 2026 — The C2PA has finally released our Conformance Program documents supporting our 0.2 upgrade. This upgrade includes many advances and tools available to applicant...",
+   "note": "The post's URL could not be determined; its title and snippet stand as its only text (§3.1(a)). The date of 31 July 2026 agrees with the v0.2 sunrise in B7's Table 1.",
+   "files": {},
+   "names_operator": "yes ('The C2PA' in the card snippet)",
+   "names_archive": "no (card title and snippet)"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "own page the census record cites (c2pa-conformance--explainer-2.4); not surfaced by T",
+   "card": "C2PA Specifications — C2PA and Content Credentials Explainer 2.4",
+   "url": "https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html",
+   "kind": "own page (the operator's Explainer, version 2.4)",
+   "surfaced_by_T": [],
+   "fetched": {
+    "by": "provenance census (copied, not refetched)",
+    "census_source_id": "c2pa-conformance--explainer-2.4",
+    "url": "https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html",
+    "read": "2026-10-29",
+    "fetched_at": "2026-10-29T15:55:23Z",
+    "http": 200,
+    "sha256": "e1872450e1ae7f6af771812a94d0388322c9b7064f2cdcaa12f0447043dabc7f",
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/c2pa-conformance--explainer-2.4.html.gz (gunzipped) and c2pa-conformance--explainer-2.4.txt"
+   },
+   "note": "Admitted beside the cards by the operator's ruling (rows built 'as against their wikipedia articles if they exist, their own pages, etc.'); T does not surface it. Saved copy from the census (B9.html gunzipped; B9.txt the census text).",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B9.html",
+     "sha256": "e1872450e1ae7f6af771812a94d0388322c9b7064f2cdcaa12f0447043dabc7f"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B9.txt",
+     "sha256": "ae8ce4ee88dd4bdbf29df0f0e783865d0e589aabb52e45db753ec48a6d100319"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "own page the census record cites (c2pa-conformance--products-json); not surfaced by T",
+   "card": "c2pa-org/conformance-public — conforming-products-list.json",
+   "url": "https://raw.githubusercontent.com/c2pa-org/conformance-public/main/conforming-products/conforming-products-list.json",
+   "kind": "own data file (the C2PA Conforming Products List, JSON)",
+   "surfaced_by_T": [],
+   "fetched": {
+    "by": "provenance census (copied, not refetched)",
+    "census_source_id": "c2pa-conformance--products-json",
+    "url": "https://raw.githubusercontent.com/c2pa-org/conformance-public/main/conforming-products/conforming-products-list.json",
+    "read": "2026-10-29",
+    "fetched_at": "2026-10-29T15:56:59Z",
+    "http": 200,
+    "sha256": "e2fb3928fbb2ba3d019ac02c5ccd40d5e7c974697d9308b7efd966108cd6f4a6",
+    "copied_from": "/home/claude/fleet/provenance-erasure/data/provenance-census/sources/c2pa-conformance--products-json.html.gz (gunzipped) and c2pa-conformance--products-json.txt"
+   },
+   "note": "Saved copy from the census (B10.json, identical to B10.txt). Counted here: 286 records, all status 'conformant'; 254 generatorProduct, 32 validatorProduct; maxAssuranceLevel 1 for 243 and 2 for 11 generator products; conformanceProgramVersion '0.1' 174, '0.2' 112; 175 distinct applicants (Google LLC 50); conformance dates 2025-06-27 to 2026-10-28.",
+   "files": {
+    "B10.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B10.json",
+     "sha256": "e2fb3928fbb2ba3d019ac02c5ccd40d5e7c974697d9308b7efd966108cd6f4a6"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B10.txt",
+     "sha256": "e2fb3928fbb2ba3d019ac02c5ccd40d5e7c974697d9308b7efd966108cd6f4a6"
+    }
+   },
+   "names_operator": "yes ('C2PA' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the entity's name",
+   "card": "Wikipedia — C2PA Conformance Program (no article)",
+   "url": "https://en.wikipedia.org/wiki/C2PA_Conformance_Program",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": [],
+   "fetched": {
+    "by": "this row",
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=C2PA_Conformance_Program&action=raw&redirect=no",
+     "at": "2026-10-29T17:11:57Z",
+     "http": 404
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/C2PA_Conformance_Program",
+     "at": "2026-10-29T17:12:33Z",
+     "http": 404
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22C2PA+Conformance+Program%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T17:12:38Z",
+     "http": 200,
+     "results": [
+      "Content Credentials"
+     ]
+    },
+    "redirects": {
+     "C2PA": "Content Authenticity Initiative#Coalition for Content Provenance and Authenticity (HTTP 200, 2026-10-29T17:11:58Z)",
+     "Coalition_for_Content_Provenance_and_Authenticity": "Content Authenticity Initiative#Coalition for Content Provenance and Authenticity (HTTP 200, 2026-10-29T17:11:57Z)"
+    }
+   },
+   "note": "No article under the name; the phrase occurs in one article, Content Credentials (B13). B11.txt summarises the responses; B11.wiki, B11.html, B11-search.html are the raw responses; the two redirect wikitexts are saved as B12-redirect-*.wiki.",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B11.html",
+     "sha256": "d3950ff1e815cc6b577f8cbe6948f761af506af6aea5bdebc4a0fd05229faef0"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B11.txt",
+     "sha256": "d438a4728006d44c6973b050a8ae162ff5190391ade494fbd4e368836275b2c2"
+    },
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B11.wiki",
+     "sha256": "05fa797f89ae49bc4db453ee75700a513281b1728643a2e925437be31b33bc5c"
+    },
+    "B11-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B11-search.html",
+     "sha256": "22f5df5b6f1307ab80e758b44eab10a2e5b6a79f0d0caf55e7afd98f554dc3d6"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the operator, by redirect (C2PA and Coalition for Content Provenance and Authenticity → Content Authenticity Initiative § Coalition for Content Provenance and Authenticity)",
+   "card": "Wikipedia — Content Authenticity Initiative § Coalition for Content Provenance and Authenticity",
+   "url": "https://en.wikipedia.org/wiki/Content_Authenticity_Initiative",
+   "kind": "Wikipedia (redirect target section)",
+   "surfaced_by_T": [],
+   "fetched": {
+    "by": "this row",
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Content_Authenticity_Initiative&action=raw&redirect=no",
+     "at": "2026-10-29T17:12:00Z",
+     "http": 200,
+     "sha256": "b2c8c3508da60e6c0f099a08e566db619df21f21c590df18d7e9655616952bf1"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Content_Authenticity_Initiative",
+     "at": "2026-10-29T17:12:36Z",
+     "http": 200,
+     "sha256": "2665c40cc843a5c5716cc5e80653b0db32037e57daafdbf15838ea6c61d21b42",
+     "revision": 1380557793,
+     "last_edited": "16 October 2026, at 13:37"
+    }
+   },
+   "note": "The operator has no article of its own: both names redirect to a section of the Content Authenticity Initiative article. That section does not mention the conformance program; the article names only a 'C2PA Conformance Tool' (a web validator, a distinct entity) and, in its Criticism section, limits of C2PA. Ledgered: the redirect section's opening and the Criticism section's statements on C2PA. B12.txt is the rendered page's text.",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12.html",
+     "sha256": "2665c40cc843a5c5716cc5e80653b0db32037e57daafdbf15838ea6c61d21b42"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12.txt",
+     "sha256": "38c953646fca99b943ce5f022cdf56e46ade391b0b5fb3dec42697b3f5827d8a"
+    },
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12.wiki",
+     "sha256": "b2c8c3508da60e6c0f099a08e566db619df21f21c590df18d7e9655616952bf1"
+    },
+    "B12-redirect-C2PA.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12-redirect-C2PA.wiki",
+     "sha256": "fc5cffc04284c383b944fc87dc53b8aa7f864ddbe6b5acc265f7f1560d1423ee"
+    },
+    "B12-redirect-Coalition_for_Content_Provenance_and_Authenticity.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12-redirect-Coalition_for_Content_Provenance_and_Authenticity.wiki",
+     "sha256": "2972bd6eb325be506de3890faa757292db1fd0f9d30952b0b9dc5f559714e179"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the conformance program as a section (Content Credentials § C2PA Conformance Program, with subsection Conforming Implementations)",
+   "card": "Wikipedia — Content Credentials § C2PA Conformance Program",
+   "url": "https://en.wikipedia.org/wiki/Content_Credentials#C2PA_Conformance_Program",
+   "kind": "Wikipedia (section of another article)",
+   "surfaced_by_T": [],
+   "fetched": {
+    "by": "this row",
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Content_Credentials&action=raw&redirect=no",
+     "at": "2026-10-29T17:12:02Z",
+     "http": 200,
+     "sha256": "53ed327ab084c01ecf1a3d5dc36912c0682f08714327624fb349b922f52ddecd"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Content_Credentials",
+     "at": "2026-10-29T17:12:37Z",
+     "http": 200,
+     "sha256": "5bfabcbc373de07263c944cb6c90a1e369cc1e238e445b08f38ba783e1721f74",
+     "revision": 1382375511,
+     "last_edited": "28 October 2026, at 11:08"
+    }
+   },
+   "note": "The conformance program is a section of the article Content Credentials. Ledgered: that section and its subsection's lead, and the article's other statements that name the program (the cameras, Android and desktop subsections), with the adjacent section 'Distinction between provenance and factual accuracy'. B13.txt is the rendered page's text.",
+   "files": {
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B13.html",
+     "sha256": "5bfabcbc373de07263c944cb6c90a1e369cc1e238e445b08f38ba783e1721f74"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B13.txt",
+     "sha256": "720a27a5751eaf0f348e1364390b1971f4e475b960c9ff6dc3512efe1b846a57"
+    },
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B13.wiki",
+     "sha256": "53ed327ab084c01ecf1a3d5dc36912c0682f08714327624fb349b922f52ddecd"
+    }
+   },
+   "names_operator": "yes ('C2PA', 'Coalition for Content Provenance and Authenticity' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "c2pa.org/conformance ¶2 (Welcome)",
+   "quote": "The C2PA Conformance Program provides assurance that products adhere to the Content Credentials specification, and fulfill a set of security requirements to ensure they are producing and validating C2PA data correctly.",
+   "claim": "the program defined by its operator: assurance that products adhere to the Content Credentials specification and meet security requirements, producing and validating C2PA data correctly",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2026-10-29 (page undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6e2785c0be0cf322…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "c2pa.org/conformance ¶2",
+   "quote": "The Program is part of a C2PA Governance Framework governed by the C2PA Steering Committee and is administered by the C2PA Conformance Task Force.",
+   "claim": "the program sits in the C2PA Governance Framework, governed by the Steering Committee, administered by the Conformance Task Force",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the C2PA, its Steering Committee and Conformance Task Force",
+   "date": "2026-10-29 (page undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6e2785c0be0cf322…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "c2pa.org/conformance ¶3",
+   "quote": "This Conformance Program is a risk-based, transparent and unbiased governance process intended to hold generator products, validator products and certification authorities accountable to the Content Credentials specification, the Certificate Policy and the Security Requirements .",
+   "claim": "a risk-based, transparent and unbiased governance process holding generator products, validator products and certification authorities accountable to the specification, the Certificate Policy and the Security Requirements",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2026-10-29 (page undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6e2785c0be0cf322…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "c2pa.org/conformance ¶3",
+   "quote": "Conforming products are placed on a publicly-accessible list. This conveys confidence in the implementation and its security to the public and guarantees interoperability across products in the Content Credentials ecosystem.",
+   "claim": "conforming products are placed on a public list, which the operator says conveys confidence and guarantees interoperability",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-10-29 (page undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6e2785c0be0cf322…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "c2pa.org/conformance ¶1",
+   "quote": "After opening the program in June 2025, we have upgraded our conformance program to v0.2.",
+   "claim": "opened June 2025; now v0.2",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-10-29 (page undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6e2785c0be0cf322…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: opening",
+   "quote": "The C2PA conformance program helps to ensure that products that read and create Content Credentials are compliant with the C2PA Content Credentials specification. … The C2PA conformance program covers: … Validator products that read and validate Content Credentials. … Generator products that create Content Credentials and add them to a digital asset. … Certificate authorities (CAs).",
+   "claim": "the CAI's documentation: the program covers validator products, generator products and certificate authorities, ensuring compliance with the specification",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: info box",
+   "quote": "If accepted, the product is added to the conforming products list, which indicates it is compliant with the C2PA Content Credentials specification.",
+   "claim": "acceptance adds the product to the conforming products list, which indicates compliance",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: Generator products",
+   "quote": "A conforming generator product produces manifest data that conforms to the C2PA Content Credentials specification, creates assertions in the asset's active manifest and signs a claim using a valid X.509 certificate on the C2PA trust list.",
+   "claim": "a conforming generator product creates conforming manifest data and assertions and signs a claim with a valid X.509 certificate on the trust list",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: Validator products",
+   "quote": "A conforming validator product produces correct validation results according to the C2PA Content Credentials specification.",
+   "claim": "a conforming validator product produces correct validation results",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: Assurance levels",
+   "quote": "A conforming product's assurance level indicates the level of confidence that claims it signs reflect its intended behavior. … Currently, the conformance program has two assurance levels: level 1 and level 2 … The assurance level in the certificate issued to a particular instance of a conforming generator product may be lower than the max assurance level.",
+   "claim": "two assurance levels, 1 and 2, expressing confidence that signed claims reflect the product's intended behaviour; an instance's certificate may carry a lower level than the product's maximum",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "assurance levels 1 and 2",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: process",
+   "quote": "When you apply to the conformance program, you will: … Sign a legal agreement with the C2PA. … Provide evidence supporting your application such as diagrams and documentation. … Work with the conformance program staff to resolve any questions.",
+   "claim": "applicants sign a legal agreement, provide evidence and work with program staff",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the process: expression of interest, legal agreement, evidence, approval",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "/docs/conformance/: Certificate authorities",
+   "quote": "CAs that meet the certificate policy can be on the C2PA trust list, and can issue certificates to conforming generator products under the C2PA conformance program.",
+   "claim": "CAs meeting the certificate policy can be on the trust list and issue certificates to conforming generator products",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6736f72f9e91533f…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "blog post ¶1",
+   "quote": "In June, the Coalition for Content Provenance and Authenticity (C2PA) soft-launched the C2PA Conformance Program during the Content Authenticity Summit at Cornell Tech in New York City. The program is now fully up and running, accepting submissions and encouraging participation from software developers, device makers, and certification authorities.",
+   "claim": "soft-launched in June 2025 at the Content Authenticity Summit, Cornell Tech; fully running by October 2025",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2025-10-09 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 954e86c76d79ba53…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "blog post ¶2",
+   "quote": "Just as the Bluetooth® or Wi-Fi® programs verify that devices communicate reliably and securely across manufacturers, the C2PA Conformance Program provides baseline assurance for content provenance. It validates that an implementation correctly creates, signs, and reads C2PA manifests, while protecting those manifests and their associated assets through proven cryptographic methods and certificate validation.",
+   "claim": "baseline assurance for content provenance, on the model of Bluetooth or Wi-Fi certification: it validates that an implementation creates, signs and reads manifests correctly",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2025-10-09 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 954e86c76d79ba53…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "A foundation for security and interoperability ¶1",
+   "quote": "At launch, the program introduces two security levels, offering flexibility for a diverse set of implementers while establishing a clear path toward more rigorous, hardware-backed assurance. Notably, Google has already achieved the highest conformance level for the Pixel 10, making it the first device to meet the strongest requirements for secure provenance capture and signing.",
+   "claim": "two security levels at launch; Google's Pixel 10 the first device at the highest level",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "assurance levels 1 and 2",
+   "date": "2025-10-09 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 954e86c76d79ba53…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "A foundation for security and interoperability ¶3",
+   "quote": "With the introduction of the Conformance Program, all these elements — the standard, the tools, the conformance process, and the trust model — now work together as a unified system for establishing digital provenance at scale.",
+   "claim": "the standard, the tools, the conformance process and the trust model as one system for digital provenance at scale",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2025-10-09 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 954e86c76d79ba53…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Built by the community ¶1",
+   "quote": "This program is the product of more than a year of dedicated collaboration within the C2PA Conformance Task Force, which I have the privilege of co-chairing alongside Yogesh Deshpande (Arm) and Sherif Hanna (Google).",
+   "claim": "built over more than a year in the Conformance Task Force, co-chaired by Andy Parsons (CAI), Yogesh Deshpande (Arm) and Sherif Hanna (Google)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the C2PA, its Steering Committee and Conformance Task Force",
+   "date": "2025-10-09 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 954e86c76d79ba53…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Explorer (bundle UI text): header",
+   "quote": "Browse, search, and filter the live versions of the C2PA Conforming Products List, C2PA Trust List, and C2PA TSA Trust List",
+   "claim": "the Explorer: browse, search and filter the live Conforming Products List, Trust List and TSA Trust List",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Conformance Explorer and the machine-readable lists",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 add5f7c134cc0156…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Explorer (bundle UI text): product record labels",
+   "quote": "Conformance Program Version: Minimum Eligible Product Version: Security Assurance & Attestation Max Assurance Level: Supported Media Containers & Streams",
+   "claim": "each product record gives its program version, minimum product version, attestation, maximum assurance level and supported media containers",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Conformance Explorer and the machine-readable lists",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 add5f7c134cc0156…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Why Is the Conformance Program Submission Necessary? ¶1",
+   "quote": "The Coalition for Content Provenance and Authenticity (C2PA) maintains a formal conformance program to verify that generator or validator products correctly implement the Content Credentials specification. Once a product passes this requirement, it earns a spot on the publicly accessible C2PA Conforming Products List, which signals to the broader ecosystem that your implementation is trustworthy, interoperable, and secure.",
+   "claim": "SSL.com's account: a formal program verifying correct implementation; listing signals trustworthiness, interoperability and security",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-07-16 (datePublished)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 11e3fbe97489abec…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Why Is the Conformance Program Submission Necessary? ¶2",
+   "quote": "CAs approved for the official C2PA Trust List, including SSL, can only issue production-grade Claim Signing Certificates to conforming products. Without conformance, C2PA trusted certificates cannot be issued.",
+   "claim": "trust-list CAs, SSL.com among them, issue production claim-signing certificates only to conforming products",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2026-07-16 (datePublished)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 11e3fbe97489abec…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "the technical evaluation ¶1–2",
+   "quote": "Properly formats C2PA manifests (the structured containers that hold Content Credentials and provenance data) … Handles certificates in accordance with the C2PA Certificate Policy",
+   "claim": "the technical evaluation: manifests formatted properly, certificates handled per the Certificate Policy",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the process: expression of interest, legal agreement, evidence, approval",
+   "date": "2026-07-16 (datePublished)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 11e3fbe97489abec…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "assurance levels ¶",
+   "quote": "The C2PA Conformance Program operates on two assurance levels. Level 1 has more flexible requirements, while Level 2 demands more rigorous security controls, including hardware-backed key storage and dynamic security evidence. Determining which level applies to your use case should be an early conversation, as it affects your implementation approach and timeline. A rule of thumb is that a C2PA implementation on a device (mobile phone, camera, cam-recorder, etc.) requires level 1, whereas a cloud service requires at least level 1.",
+   "claim": "Level 2 requires hardware-backed key storage and dynamic security evidence; the rule of thumb names level 1 for devices and 'at least level 1' for cloud services",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "assurance levels 1 and 2",
+   "date": "2026-07-16 (datePublished)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 11e3fbe97489abec…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "after conformance ¶",
+   "quote": "Once the C2PA verifies your conformance and issues a Conformance Letter, you are eligible to obtain a production Claim Signing Certificate from SSL (or any approved CA on the official C2PA Trust List).",
+   "claim": "a Conformance Letter makes the product eligible for a production claim-signing certificate from a trust-list CA",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the process: expression of interest, legal agreement, evidence, approval",
+   "date": "2026-07-16 (datePublished)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 11e3fbe97489abec…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: What are Content Credentials? ¶1–2",
+   "quote": "Content Credentials provide a cryptographically secure way to capture and express content provenance. … In the context of C2PA, content provenance is captured and preserved using Content Credentials, the technical standard the C2PA produces, providing tamper-evident, cryptographically signed data structures that travel with the asset.",
+   "claim": "Content Credentials: tamper-evident, cryptographically signed provenance data structures that travel with the asset",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what Content Credentials are: signed, tamper-evident provenance bound to the asset",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: How can consumers of C2PA data be assured the data was captured correctly? ¶2",
+   "quote": "Additionally, the C2PA Conformance Program ensures that products creating Content Credentials meet stringent technical and security requirements and are vetted by the Administering Authority. These products are then listed in the C2PA Conforming Products List, providing visibility into which implementations are trusted.",
+   "claim": "the FAQ's statement of the program: products vetted by the Administering Authority and listed, giving visibility of which implementations are trusted",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: Does validation … ensure that the entire chain of provenance is known, including ingredients? ¶2",
+   "quote": "While the primary asset’s Content Credential can validate that the ingredients were checked at the time of use, the full verification of each ingredient’s provenance requires access to its data. Without it, only the presence of prior validation (not the complete ingredient chain) can be confirmed.",
+   "claim": "the ingredient limit: without the ingredient's data only prior validation, not the whole chain, can be confirmed",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: Are Content Credentials a form of DRM? ¶1",
+   "quote": "No, Content Credentials are not a form of DRM (Digital Rights Management).",
+   "claim": "Content Credentials are not DRM",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what Content Credentials are: signed, tamper-evident provenance bound to the asset",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: What happens if C2PA metadata is stripped …? ¶1",
+   "quote": "While C2PA Manifests are typically embedded in the asset, they can be separated. To address this, C2PA supports durable credentials via soft bindings—such as invisible watermarking or fingerprinting—that can help rediscover the associated Content Credential even if it’s removed from the file.",
+   "claim": "manifests can be separated from the asset; soft bindings (watermarks, fingerprints) can help rediscover them",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: What is the C2PA Trust List …? ¶1",
+   "quote": "The C2PA Trust List is a curated list of Certification Authorities (CAs) that are authorized to issue signing certificates for Generator Products. Only products evaluated and approved by the Conformance Program are eligible to receive certificates from these trusted CAs.",
+   "claim": "the Trust List: curated CAs authorised to issue signing certificates, only to products the program approved",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: How secure is C2PA? ¶1–2",
+   "quote": "Any tampering with the asset or its metadata invalidates the cryptographic hash and signature, making alterations immediately detectable. … Faking Content Credentials would require breaking current cryptographic standards—an infeasible task with today’s technology.",
+   "claim": "the FAQ's security claim: tampering is immediately detectable; faking credentials would require breaking current cryptography",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "security: tamper evidence asserted and its demonstrated breaks",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised",
+   "mark": "contested: B13 (Content Credentials § C2PA Conformance Program ¶3; Mobile apps with Camera Support) reports demonstrated alteration without invalidating signatures (October 2026) and forgery on Android (August 2026)"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: Can organizations or individuals use Content Credentials to achieve attribution of their content? ¶1",
+   "quote": "The core C2PA Content Credentials specification does not support attribution of content to individuals or organizations, so that it can remain maximally privacy-preserving.",
+   "claim": "the core specification does not support attribution of content to individuals or organizations (for privacy)",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "FAQ: What is the benefit of the new C2PA Conformance Program? ¶1",
+   "quote": "Consumers and validators seeing content signed by products on the Conforming Product List can expect the Program to provide them with a higher level of implementation trust.",
+   "claim": "the benefit claimed: a higher level of implementation trust for content signed by listed products",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 538d805ef93be9ef…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "title page",
+   "quote": "C2PA Conformance Program C2PA Technical Working Group Conformance Task Force Version 0.2, 2026-07-31",
+   "claim": "the program's own document: Version 0.2, 31 July 2026, by the Technical Working Group's Conformance Task Force",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§1 Introduction ¶3",
+   "quote": "The Specification has seen wide-scale acceptance but is limited without a robust governance framework and conformance program to provide required transparency for relying parties and accountability for governed parties which need to demonstrate recognized conformance of Specification requirements.",
+   "claim": "why the program exists: the specification is limited without governance and conformance providing transparency for relying parties and accountability for governed parties",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.11 C2PA Conformance Program",
+   "quote": "A risk-based governance program intended to hold Applicants who want to demonstrate their conformance to its requirements and then differentiate themselves through C2PA recognition by satisfying program requirements being acknowledged as achieving that level of conformance. It consists of a set of processes, policies, and requirements governing the designation of Applicant Generator Products or Validator Products as Conforming Products, and the designation of Certification Authorities as adhering to the C2PA Certificate Policy",
+   "claim": "the glossary definition: a risk-based governance program whose processes, policies and requirements designate generator and validator products as conforming and CAs as adhering to the Certificate Policy",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a conformance program for Content Credentials implementations",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.12 C2PA Conforming Products List",
+   "quote": "The canonical record of all Conforming Products that have been deemed conformant according to the stipulations of the C2PA Conformance Program",
+   "claim": "the Conforming Products List: the canonical record of all conforming products",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.23 Conforming Product ¶2",
+   "quote": "Only instances of conforming Generator Products are eligible to receive C2PA Claim Signing Certificates from a Certification Authority on the C2PA Trust List.",
+   "claim": "only instances of conforming generator products may receive claim-signing certificates from a trust-list CA",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the trust chain: only conforming generator products get claim-signing certificates",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.26 Generator Product ¶3",
+   "quote": "Because the Generator Product is always the Signer in the C2PA Conformance Program, and is always the entity listed on the C2PA Conforming Products List, it is accountable for the conformance of the Assets with C2PA manifests that it generates",
+   "claim": "the signer and the listed entity is always the generator product, accountable for the conformance of the assets it generates",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§5 Assurance Levels ¶3–4",
+   "quote": "Two Assurance Levels are currently in operation, Assurance Level 1 and Assurance Level 2. … Relying Parties are advised to review and understand the implications of receiving Assets signed by C2PA Claim Signing Certificates of a particular Assurance Level.",
+   "claim": "two assurance levels in operation; relying parties advised to understand what a level implies",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "assurance levels 1 and 2",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§6.1.1 Generator Product Specific Requirements",
+   "quote": "The C2PA Content Credentials Specification includes over 300 normative requirements attributed to Generator Products which create C2PA manifests for consumers. The C2PA Conformance Program will eventually require Claim Generators to demonstrate complete conformance to these exacting requirements in order to receive its approval.",
+   "claim": "the program's own limit: of over 300 normative generator requirements, complete conformance will be required eventually, not yet (likewise over 150 validator requirements)",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limit of the program itself: complete conformance is not yet required",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§6.6.3 Program Intake Form ¶6",
+   "quote": "The Conformance Program is administered by an independent Administrator who is free from conflicts … of interest.",
+   "claim": "an independent Administrator, free from conflicts of interest",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the C2PA, its Steering Committee and Conformance Task Force",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§6.7.3 Removal …",
+   "quote": "The C2PA reserves the right to and remove Applicants from the C2PA Trust List and C2PA TSA Trust List, or revoke the conformant status of a Generator Product or Validator Product on the C2PA Conforming Products List.",
+   "claim": "the C2PA may remove applicants from the trust lists or revoke conformant status (the sentence's 'right to and remove' as printed)",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: conforming products on a public list, with trust lists of CAs",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§6.7.5 Table 1",
+   "quote": "0.1 2025-06-02 2026-10-09 First version of conformance program, supporting Spec v2.2. 0.2 2026-07-31 Not set Updated conformance program, supporting Spec v2.2 and v2.4.",
+   "claim": "versions: v0.1 sunrise 2025-06-02, sunset 2026-10-09 (Spec v2.2); v0.2 sunrise 2026-07-31, sunset not set (Spec v2.2 and v2.4)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§6.6.8 Public Record Posting ¶2",
+   "quote": "The C2PA Conformance Program has created a human-readable form of our public trust lists, the Conformance Explorer (https://spec.c2pa.org/conformance-explorer/).",
+   "claim": "the Explorer is the human-readable form of the public lists",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Conformance Explorer and the machine-readable lists",
+   "date": "2026-07-31 (Version 0.2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 327e3cb2f50e43ad…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "C2PA Conformance Program Documents Released v0.2 Upgrade - LinkedIn Jul 31, 2026 — The C2PA has finally released our Conformance Program documents supporting our 0.2 upgrade.",
+   "claim": "Scott Perry's post: the v0.2 program documents released, 31 July 2026 (snippet only)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-07-31 (card date; snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F47": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §2 ¶2",
+   "quote": "Provenance, as C2PA defines it, refers to the facts about the history of a piece of digital content (also known as an asset) in a form such as an image, video, audio recording, or document. At the heart of the C2PA specification is the Content Credential, a cryptographically bound structure that records an asset’s provenance.",
+   "claim": "provenance as C2PA defines it: facts about an asset's history; the Content Credential, a cryptographically bound structure recording it",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what Content Credentials are: signed, tamper-evident provenance bound to the asset",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §2 ¶3",
+   "quote": "It is important to highlight that Content Credentials do not provide value judgments about whether a given set of provenance data is 'true', but instead merely whether the provenance information is well-formed and free from tampering, valid and trusted (in that the signer of the Content Credential is associated with a known trust list).",
+   "claim": "the governing limit: Content Credentials judge whether provenance is well-formed, untampered, valid and trusted (signer on a known trust list), not whether it is true",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": true,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.2.1",
+   "quote": "Is provenance always complete? No. Provenance is not always complete. It may happen that an asset is modified in a way that the provenance data is not updated.",
+   "claim": "provenance is not always complete: a non-aware tool can modify an asset without updating it",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.2.2",
+   "quote": "provenance information alone cannot tell you whether the digital content is true, accurate or factual.",
+   "claim": "provenance alone cannot tell whether content is true, accurate or factual",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.2.3",
+   "quote": "Can the provenance metadata be removed? Yes it can.",
+   "claim": "the provenance metadata can be removed",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.2.4",
+   "quote": "The C2PA specification does not directly address the topic of human or organizational identity — that is, the identity of specific humans or organizations involved in the production of a digital asset or content.",
+   "claim": "the specification does not directly address human or organizational identity (extensions may)",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.3.2",
+   "quote": "the ingredient’s provenance cannot be verified in the same way as the provenance data of the asset in which it is contained.",
+   "claim": "an ingredient's provenance cannot be verified as the containing asset's can",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Explainer 2.4 §7.5.1",
+   "quote": "Implementers of this standard can have their implementations accredited by the C2PA, which enables users to trust in that implementation. … However, the trust in the contents of a Content Credential is based on the trust relationship between the creator of the Content Credential and the consumer of that Content Credential. This trust relationship is not defined by the C2PA",
+   "claim": "accreditation gives trust in an implementation; trust in a credential's contents rests on the creator–consumer relationship, which C2PA does not define",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-29 (Explainer 2.4, undated; read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 ae8ce4ee88dd4bdb…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "conforming-products-list.json, record 1",
+   "quote": "\"applicant\": \"Google LLC\", \"supportsCompressedManifests\": false, \"status\": \"conformant\", \"product\": { \"productType\": \"generatorProduct\", \"DN\": { \"CN\": \"Pixel Camera\",",
+   "claim": "the list's unit: a record per product (applicant, status, product type, distinguished name, assurance, spec and program versions, dates); 286 records at reading, all 'conformant' (254 generator, 32 validator products; 11 generator products at max level 2)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: 286 conforming product records",
+   "date": "2026-10-29 (as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 e2fb3928fbb2ba3d…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "conforming-products-list.json, record 1",
+   "quote": "\"maxAssuranceLevel\": 2, \"attestationMethods\": [ \"Android_KeyAttestation\" ]",
+   "claim": "the first record, Google's Pixel Camera, at max assurance level 2 by Android key attestation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "assurance levels 1 and 2",
+   "date": "2026-10-29 (as read by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 e2fb3928fbb2ba3d…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title C2PA_Conformance_Program",
+   "quote": "raw wikitext (https://en.wikipedia.org/w/index.php?title=C2PA_Conformance_Program&action=raw&redirect=no, 2026-10-29T17:11:57Z): HTTP 404 (Wikimedia Error page; saved as B11.wiki) rendered page (https://en.wikipedia.org/wiki/C2PA_Conformance_Program, 2026-10-29T17:12:33Z): HTTP 404 … Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article 'C2PA Conformance Program'; the program is a section of Content Credentials, and the names C2PA and Coalition for Content Provenance and Authenticity redirect to a section of Content Authenticity Initiative",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 d438a4728006d44c…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Content Authenticity Initiative § Coalition for Content Provenance and Authenticity ¶1–2",
+   "quote": "The Coalition for Content Provenance and Authenticity (C2PA) is an open, cross-industry technical standards body established on February 22, 2021.",
+   "claim": "the operator: an open cross-industry standards body established 22 February 2021 (a project of the Joint Development Foundation, Linux Foundation affiliate)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the C2PA, its Steering Committee and Conformance Task Force",
+   "date": "2026-10-16 (revision 1380557793, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 38c953646fca99b9…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Content Authenticity Initiative § Criticism ¶2–3",
+   "quote": "Experts have also documented ways in which attackers can bypass C2PA’s safeguards, by altering provenance metadata, removing or forging watermarks, and mimicking digital fingerprints. … Besides the fact that C2PA doesn't address the question of whether the content is accurate, another shortcoming is that typical signing tools don't verify the accuracy of the metadata either, so users can't rely on the provenance data either unless they have reason to trust that the signer properly verified it.",
+   "claim": "criticism: C2PA's safeguards can be bypassed; it does not address accuracy, and signing tools do not verify metadata accuracy",
+   "modality": "attributed",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "security: tamper evidence asserted and its demonstrated breaks",
+   "date": "2026-10-16 (revision 1380557793, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 38c953646fca99b9…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials § C2PA Conformance Program ¶1",
+   "quote": "In early-to-mid 2024, the C2PA established the Conformance Task Force to transition its open technical specifications into a verifiable compliance model to foster market trust. The task force utilized the Trust over IP (ToIP) Governance Metamodel to structure its compliance policies.",
+   "claim": "the Task Force established in early-to-mid 2024 to turn the specifications into a verifiable compliance model, structured on the ToIP Governance Metamodel",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials § C2PA Conformance Program ¶2",
+   "quote": "The C2PA Conformance Program soft-launched on June 4, 2025, at the Content Authenticity Initiative (CAI) Summit, … followed by a full public launch in October 2025. … The transition concluded on December 31, 2025, when the C2PA Interim Trust List was officially deprecated.",
+   "claim": "soft launch 4 June 2025, full launch October 2025; the Interim Trust List deprecated 31 December 2025",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and versions: June 2025 (v0.1) to v0.2 (31 July 2026)",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials § C2PA Conformance Program ¶3",
+   "quote": "In October 2026, security researcher David Buchanan demonstrated a vulnerability in the C2PA specification that allows an attacker to alter an image without invalidating its cryptographic signatures or trusted timestamps.",
+   "claim": "October 2026: a demonstrated vulnerability lets an image be altered without invalidating signatures or trusted timestamps (byte-range exclusions)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "security: tamper evidence asserted and its demonstrated breaks",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials § C2PA Conformance Program › Conforming Implementations ¶1",
+   "quote": "While the C2PA Conformance Explorer … registry indexes over 200 active products, ecosystem data indicates that 10 organizations have deployed products that simultaneously complete the Conformance Program and achieve on-boarding onto the central C2PA Trust List.",
+   "claim": "over 200 products on the Explorer, but 10 organizations with deployed products both conforming and on the Trust List",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "adoption and its gaps",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F64": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials › Cameras ¶1–2",
+   "quote": "As of mid-2026, major dedicated camera manufacturers (Leica, Nikon, and Canon) do not participate in the official C2PA Conformance Program. … As of 2026, no dedicated camera implementations had achieved compliance under the C2PA Conformance Program.",
+   "claim": "no dedicated camera implementation conformant as of 2026; Leica, Nikon and Canon outside the program",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "adoption and its gaps",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F65": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials › Desktop Application software ¶1",
+   "quote": "As of mid-2026, no desktop application had achieved compliance under the C2PA Conformance Program.",
+   "claim": "no desktop application conformant as of mid-2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "adoption and its gaps",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F66": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials › Mobile apps with Camera Support (Android)",
+   "quote": "In August 2026, security researcher David Buchanan demonstrated that the C2PA implementation on Android is vulnerable to forgery. … root access allows an attacker to command the system to sign arbitrary data, generating fabricated images with valid authenticity signatures. Google recognized the vulnerability but designated the report as \"Won't fix (infeasible)\"",
+   "claim": "August 2026: on Android, root access lets the hardware-held key sign fabricated images with valid signatures; Google: 'Won't fix (infeasible)'",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "security: tamper evidence asserted and its demonstrated breaks",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Content Credentials § Distinction between provenance and factual accuracy",
+   "quote": "Content Credentials merely verify provenance and digital integrity without assessing the objective truth of the content itself. Consequently, a fabricated or misleading image can maintain a valid cryptographic credential that confirms its origin while validating deceptive content as technically authentic.",
+   "claim": "the encyclopedia's distinction: a fabricated image can carry a valid credential",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: no judgement of truth, no identity or attribution, incomplete chains",
+   "date": "2026-10-28 (revision 1382375511, last edited)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 720a27a5751eaf0f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Coalition for Content Provenance and Authenticity (C2PA) — Conformance - C2PA",
+  "B2": "Content Authenticity Initiative — C2PA conformance program | Open-source tools for content authenticity and provenance",
+  "B3": "Content Authenticity Initiative — Raising the bar for trust: introducing the C2PA Conformance Program",
+  "B4": "C2PA Specifications — C2PA Conformance Explorer",
+  "B5": "SSL.com — How to Submit to the C2PA Conformance Program",
+  "B6": "Coalition for Content Provenance and Authenticity (C2PA) — C2PA FAQ",
+  "B7": "trufo.ai — C2PA Conformance Program - Trufo",
+  "B8": "LinkedIn·Scott Perry — C2PA Conformance Program Documents Released v0.2 Upgrade - LinkedIn",
+  "B9": "C2PA Specifications — C2PA and Content Credentials Explainer 2.4",
+  "B10": "c2pa-org/conformance-public — conforming-products-list.json",
+  "B11": "Wikipedia — C2PA Conformance Program (no article)",
+  "B12": "Wikipedia — Content Authenticity Initiative § Coalition for Content Provenance and Authenticity",
+  "B13": "Wikipedia — Content Credentials § C2PA Conformance Program"
+ }
+}

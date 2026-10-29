@@ -1,0 +1,2394 @@
+Mapping Manuscript Migrations: Digging into Data for Researching the History and
+Provenance of Medieval and Renaissance Manuscripts: White Paper
+
+Prepared by members of the “Mapping Manuscript Migrations” Project Team
+
+Toby Burrows, Oxford e-Research Centre, University of Oxford
+       toby.burrows@oerc.ox.ac.uk (corresponding author)
+Doug Emery, Schoenberg Institute for Manuscript Studies, University of Pennsylvania
+Mitch Fraas, Schoenberg Institute for Manuscript Studies, University of Pennsylvania
+Eero Hyvönen, Semantic Computing Research Group, Aalto University and University of Helsinki
+(HELDIG)
+Esko Ikkala, Semantic Computing Research Group, Aalto University
+Mikko Koho, Semantic Computing Research Group, Aalto University and University of Helsinki
+(HELDIG)
+David Lewis, Oxford e-Research Centre, University of Oxford
+Andrew Morrison, Bodleian Libraries, University of Oxford
+Kevin Page, Oxford e-Research Centre, University of Oxford
+Lynn Ransom, Schoenberg Institute for Manuscript Studies, University of Pennsylvania
+Emma Thomson, Schoenberg Institute for Manuscript Studies, University of Pennsylvania
+Jouni Tuominen, Semantic Computing Research Group, Aalto University and University of
+Helsinki (HELDIG)
+Athanasios Velios, Ligatus, University of the Arts London
+Hanno Wijsman, Institut de recherche et d’histoire des textes, Paris
+
+
+
+Abstract
+
+“Mapping Manuscript Migrations” (MMM) is a project funded between 2017 and 2020 by the
+Digging into Data Challenge. Its main goal is to combine data from several disparate sources
+about medieval and Renaissance manuscripts, and to use the aggregated data to explore a
+range of research questions about their history and provenance. The project took the data from
+three existing databases and turned them into Linked Open Data. This included mapping them
+to a newly developed unified data model, drawing on CIDOC CRM and FRBR​OO​.
+
+The aggregated data have been made available in several different ways. A copy of the dataset
+was published through the Zenodo repository. The data are hosted on the Linked Data Finland
+platform, from which they can be queried through a SPARQL endpoint or inspected directly. A
+semantic portal has also been implemented using the Sampo-UI user interface, through which
+
+
+
+                                                                                            1
+the 217,700 manuscripts and other entities can be searched, browsed, and analyzed, using a
+combination of filters and map-based visualizations.
+
+A set of 25 research questions about manuscript history and provenance, provided by
+manuscript researchers, were used in designing the data model and the end-user perspectives
+for the semantic portal. They also formed the basis for an evaluation of the portal, in which the
+ability of the original three interfaces to the source datasets to answer the questions was
+compared with the new perspectives of the portal. This evaluation showed that the portal
+performed significantly better than the original interfaces and was capable of fully answering
+most of the questions.
+
+Taken as a whole, the MMM project has demonstrated the value and potential of a Linked
+Open Data approach to representing, aggregating, and using data about medieval and
+Renaissance manuscripts in research, and has identified a number of important issues for the
+future of the approach. This paper examines the results of the project and the lessons learned
+from it.
+
+
+
+Keywords
+
+Linked Open Data; Medieval and Renaissance manuscripts; Data modelling and mapping;
+Provenance; Entity reconciliation
+
+
+
+
+                                                                                               2
+Mapping Manuscript Migrations: Digging into Data for the History and Provenance
+of Medieval and Renaissance Manuscripts: White Paper
+
+   1. Introduction
+
+“Mapping Manuscript Migrations” (MMM) is a project funded between 2017 and 2020 by the
+Digging into Data Challenge of the Trans-Atlantic Platform. The main goal of the MMM project
+is to combine data from several disparate sources about medieval and Renaissance
+manuscripts, and to use the aggregated data to explore a range of research questions about
+manuscript history and provenance. The project took the data from three existing databases
+(the Schoenberg Database of Manuscripts, Medieval Manuscripts in Oxford Libraries, and
+Bibale) and turned them into Linked Open Data (LOD). This involved transforming them into
+RDF triples and mapping them to a newly developed unified data model, drawing on the
+CIDOC-CRM and FRBR​OO ontologies. Vocabularies for the main classes of entity (manuscripts,
+actors, places, and works) were reconciled across the three data sources using a mixture of
+automatic and semi-automatic methods.
+
+The aggregated data (nearly 22.5 million RDF triples) have been made available in several
+different ways. A copy of the dataset was published through the Zenodo repository. The data
+are hosted on the Linked Data Finland platform, from which they can be queried through a
+SPARQL endpoint or inspected directly. A semantic portal has also been implemented using the
+Sampo-UI framework (Ikkala et al., 2020), through which the 217,700 manuscripts and other
+entities can be searched and browsed, using a combination of filters and map-based
+visualizations. Results sets from the portal can also be downloaded as CSV files through a
+SPARQL query service like Yasgui.
+
+Integral to the iterative design of the data model was a set of 25 research questions about
+manuscript history and provenance, provided by manuscript researchers. These questions were
+also used in formulating the filters for the semantic portal, and then formed the basis for an
+evaluation of the portal, in which the ability of the native interfaces to the source datasets to
+answer the questions was compared with that of the portal. This evaluation showed that the
+portal performed significantly better and was capable of fully answering most of the questions.
+
+Taken as a whole, the MMM project has demonstrated the value and potential of a Linked
+Open Data approach to data about medieval and Renaissance manuscripts, and has identified a
+number of important issues for the future of such approaches. This paper examines the results
+of the project and the lessons learned from it.
+
+
+
+
+                                                                                               3
+   2. Goals and scope
+
+The MMM project addresses the proliferation of databases and other digital sources relating to
+medieval and Renaissance manuscripts. While there are numerous catalogues, lists, and digital
+collections available online, most are relatively limited in their coverage, and there are few
+methods of searching across these different sources. As a result, it is difficult and
+time-consuming for researchers to discover relevant information scattered in various places.
+Two notable exceptions have been the CERL Portal (discontinued from May 2020 because its
+technological basis had become obsolete) and ​Digital Scriptorium​, which is currently working to
+re-develop itself for similar reasons. The MMM project was designed to explore
+next-generation solutions for combining data from multiple heterogeneous sources relating to
+medieval and Renaissance manuscripts, and especially to their history and provenance over the
+centuries of their existence. Of particular interest was the ability to transcend national
+boundaries, since many of the existing sources are purely local or national in scope. The
+project’s approach to aggregating and presenting these heterogeneous datasets is based on the
+Linked Open Data framework.
+
+The MMM project set itself the following specific goals:
+   ● Combining and transforming data from at least three major public data sources;
+   ● Exposing the combined data in a Linked Open Data environment;
+   ● Implementing a software interface for browsing and searching the combined data;
+   ● Visualizing the data to display relationships across time and space;
+   ● Using the data to explore research questions relating to the history and provenance of
+     manuscripts; and,
+   ● Making the data and software available for reuse.
+
+After nearly three years’ work by a team of more than twenty people across four countries, the
+project is able to point to the following outputs. These are discussed in detail below.
+    ● A unified Data Model for manuscript history and provenance, derived from the
+       CIDOC-CRM and FRBR​OO ontologies
+                                    ​         with some specific MMM additions, and based on
+       the analysis of the data models used by the three source datasets and use cases
+       gathered from scholars;
+    ● A set of tools and pipelines for the transformation, mapping, and aggregation of the
+       data from three source datasets, with a combined total of 262,000 records;
+    ● The data from source datasets transformed to RDF, uploaded to the MMM triple store,
+       and mapped to the MMM unified Data Model;
+    ● Vocabularies for five main entity categories reconciled across the data sources:
+       Manuscripts, Works, Events, Actors, Places;
+
+
+
+                                                                                               4
+   ● Linked Open Data vocabularies with unique identifiers for 217,700 manuscripts, 432,200
+       works, 4,700 places, 53,200 persons and organisations, and 915,300 events;
+   ● A public SPARQL endpoint to the MMM triple store (containing almost 22.5 million RDF
+       triples);
+   ● A public portal to the MMM triple store offering browsing, searching, and visualizations
+       of the aggregated data;
+   ● Data export and downloads from the public portal, and a public data repository;
+   ● A GitHub site containing tools, data, and documentation;
+   ● More than 35 publications and presentations;
+   ● A demonstration and advice for the CERL Portal Working Group, a significant industry
+       body looking at best practice for libraries;
+   ● Evaluation through a Focus Group of manuscript researchers and by the use of a set of
+       24 representative research questions;
+   ● Enhancements to the three source datasets; and,
+   ● Knowledge transfer between disciplinary groups, especially in the form of SPARQL
+       expertise.
+The MMM project has also identified a set of recommendations for improving the structure and
+reuse of manuscript provenance data in the future.
+
+   3. Use of Linked Open Data
+
+The Linked Open Data (LOD) framework is integral to the design of the MMM project (Heath
+and Bizer 2011; Hyvönen 2012). A central hypothesis of the project is that this approach is able
+to express the kind of complex relationships which are found in humanities data, to enrich the
+data semantically by data aggregation and reasoning, and to allow for sophisticated and
+serendipitous discovery pathways and insights, more effectively than relational databases and
+marked-up documents can. In addition, the LOD framework is well-suited as an overarching
+structure for the interconnection of data sources which use different data models in the same
+knowledge domain. This kind of interconnection was a key goal of the MMM project.
+
+The three datasets aggregated by the MMM project include two specialized relational
+databases which focus on the history and provenance of medieval and Renaissance manuscripts
+but use fundamentally different approaches to data modelling: ​Bibale (IRHT, 12,000 records)
+and the ​Schoenberg Database of Manuscripts (Schoenberg Institute for Manuscript Studies,
+240,000 records). The former takes a single manuscript as the basic unit, and attaches the
+evidence of its history to that record. The latter focuses on an “observation” of a manuscript in
+a sales or auction catalogue or collection catalogue; there may be multiple observations of the
+
+
+
+
+                                                                                               5
+same manuscript, which are cross-linked to show this relationship.1 The third dataset –
+Medieval Manuscripts in Oxford Libraries – consists of 10,000 XML documents which each
+describe a single manuscript using the Text Encoding Initiative (TEI) markup for a manuscript
+description.
+
+The MMM data are expressed in RDF triples, governed by a data model constructed from the
+CIDOC-CRM and FRBR​OO ontologies
+                            ​            with some additional MMM-specific extensions. The
+CIDOC-CRM components relate mainly to the description of the manuscript as a physical object
+and to its event-centred history (sales, gifts, and other ownership events). The FRBR​OO
+components relate mainly to the intellectual content of the manuscript: the works and authors
+of the texts carried by the physical object. The MMM extensions express specific characteristics
+relevant to manuscripts and manuscript-related events. The data model is discussed in more
+detail below.
+
+Each of the data sources maintains and deploys an extensive set of vocabularies for the main
+MMM entity classes, especially Persons, Organizations, and Places. Following the standards and
+best practice in the Linked Open Data world (​https://www.w3.org/standards/semanticweb/​),
+their authority records for these entities often contain references to the main general
+vocabularies used for these types of names, notably the ​Virtual International Authority File
+(VIAF) for persons and organizations, and ​GeoNames and the ​Getty Thesaurus of Geographic
+Names (TGN) for places. For the titles of Works, both Bibale and the Oxford catalogue maintain
+an authority list with some external references; the Schoenberg Database, on the other hand,
+tracks generic titles rather than works in the specific sense employed by FRBR. The existence of
+a significant number of vocabulary-based references in the source datasets was another
+incentive for using the Linked Open Data framework in the MMM project. These references
+were critical to the process of automatically reconciling and linking data from different sources
+relating to the same specific entity. Other entities – especially Works and Manuscripts
+themselves – were reconciled by semi-automatic means; this mainly consisted of identifying
+possible matches programmatically and then asking manuscript researchers and librarians to
+examine them one-by-one to find the definite matches.
+
+    4. Data modelling
+
+A major element in the MMM project was the time and effort devoted to the development of
+the unified data model which is at the heart of the affordances offered by the MMM
+aggregated dataset and the various interfaces to it. A Modelling Group, consisting of the
+
+1
+ For a more detailed explanation of the SDBM data model, see
+https://sdbm.library.upenn.edu/static/docs/SDBM_data_explanation2019.pdf​.
+
+
+
+                                                                                               6
+project’s Semantic Web and LOD experts and a representative of the manuscript researchers
+and curators, met weekly for more than twelve months to inspect and analyse the incoming
+data and to identify the entity classes and properties which were required to express the
+structures of the three different data sources. The scoping of this data model was done in a
+pragmatic way; the aim was to reflect the scholarship embedded in the sources and identify
+their common features, rather than carrying out a theoretical review of the entire domain of
+medieval and Renaissance manuscript research based on the published literature.
+
+The source datasets each reflect an earlier process of in-depth analysis and model construction.
+In two cases (Bibale and the Schoenberg Database of Manuscripts) the provenance and history
+of manuscripts were the focus of this process. In the third case (the Bodleian catalogue) the
+focus was somewhat broader: the detailed description of manuscript characteristics, contents,
+and histories. For MMM, the entity classes and properties identified from the three sources
+were compared with CIDOC-CRM and FRBR​OO​, to see how many of them could be expressed in
+terms of these ontologies. About one-third of them could not, and for these a specific MMM
+entity class or property was created. Table 1 shows the sources of the different elements in the
+MMM data model. The properties column includes multiple occurrences of the same property
+under different entity classes; it excludes four generic properties from the ​OWL​, ​Dublin Core
+Terms​, and ​SKOS ontologies, as well as four geographical properties from the ​Getty Vocabulary
+Program​ and ​WGS84 Geo Positioning​ ontologies. The full schema is included as Appendix 1.
+
+
+
+ Source                          Entity Classes                  Property
+
+ CIDOC-CRM Erlangen              18                              80
+
+ FRBR​OO                         4                               3
+
+ MMM-specific                    11                              65
+
+ Total                           33                              148
+
+
+                             Table 1: MMM Data Model – sources
+
+The main classes in this model are those for manuscripts, manuscript collections, the texts
+carried by a manuscript, persons, organizations, places, and events. Several of these were
+relatively straightforward mappings to CIDOC-CRM: Place (E53), Person (E21), Group (E74), and
+Actor (E39). For Work (F1) and Expression (F2), the FRBR​OO definitions and elements were used.
+A mixture of CIDOC-CRM and FRBR​OO classes was required to cover the range of different types
+
+
+
+                                                                                              7
+of     events:    F27_Work_Conception,     F28_Expression_Conception,    E12_Production,
+E10_Transfer_of_Custody, and the more generic E7_Activity. Two additional types of events
+specific to the history of manuscripts were also defined: mmms:ActorActivity and mmms:
+ManuscriptActivity.
+
+The entity class which required the most detailed modelling was F4 Manifestation Singleton
+(from FRBR​OO​), used for single manuscripts in the sense defined by the FRBR ontology: “physical
+objects that each carry an instance of F2 Expression, and that were produced as unique objects,
+with no siblings intended in the course of their production.” In FRBR terms, a manuscript is a
+unique manifestation of an expression of a work. In both Bibale and the Oxford catalogue, the
+basic record describes one manuscript. The Schoenberg Database, on the other hand, consists
+of records which are observations of a manuscript at a point in time. Where two or more
+observations have been linked, the linking “manuscript record” is mapped to the F4
+Manifestation Singleton class; where an observation has not been linked, it is also mapped to
+the F4 class.
+
+The F4 class in MMM had no less than 29 different properties, 18 of which were specific to the
+MMM data model. They included mmms:last_known_location and mmms:phillipps_number,
+used respectively to consolidate data about the last known location of a manuscript (since
+current location was only known in a minority of cases) and to enable matching of manuscript
+records by their use of the same number from the collection of Sir Thomas Phillipps. Among the
+MMM-specific entity classes were a series of specific physical attributes for manuscripts:
+mmms:Folios | mmms:Columns | mmms:Lines | mmms:DecoratedInitials |
+mmms:HistoriatedInitials | mmms:Miniatures. The data described with these properties could
+be modelled with CIDOC-CRM and FRBR​OO properties and entities or retrieved using relevant
+queries, but often such processes result in long chains in the graph or complex queries.
+CIDOC-CRM properties such as ‘P56 bears feature’ could be used instead of those proposed
+here, but establishing more specialised properties such as ‘DecoratedInitials’ serves central
+aspects of the discourse of this project while maintaining compatibility with the CIDOC-CRM.
+
+One area of considerable discussion in the Modelling Group related to the current location and
+ownership of manuscripts, an area of obvious interest to users of the MMM project’s outputs.
+This kind of information is implicit but clear in a library-based catalogue like that of the
+Bodleian. In Bibale, the current library shelf-mark is usually recorded in the title field of a
+manuscript record and includes the place where that library is located. This information is not
+specifically present in the Schoenberg Database, although it can often be inferred from the
+most recent observation about a specific manuscript. A similar inference also needs to made in
+Bibale, but the reasoning involved is more straightforward; the The uncertainty and risk of error
+inherent in such inferential processes would need to be made clear to the user, and expressed
+
+
+                                                                                               8
+in some complex form in the data model. The Modelling Group, with the advice of the
+manuscript researchers and curators, decided to model instead the concept of a “last-known
+location”. This was expressed in three separate properties of a manifestation singleton,
+reflecting the last-known location in as many of the three data sources as contained a specific
+manuscript. An overall property (mmms:last_known_location) could then be calculated, using a
+fixed order of preference: Bodleian, Bibale, Schoenberg Database. This instantiated, as far as
+possible, the level of certainty or uncertainty about the manuscript’s current location and
+ownership.
+
+A set of 25 research questions assembled by the project’s manuscript researchers with an
+Oxford focus group were used intensively in the development and testing of the data model.
+These are discussed in more detail below. In the second stage of the project, once the first
+version of the user interface had been implemented, some additional properties were included
+as a rest of the process of testing. They included mmms:manuscript_author and
+mmms:manuscript_work, two shortcut properties designed to create a direct relationship
+between manifestation singletons and the works and authors they contained – alongside the
+more complex indirect relationship prescribed by FRBR​OO​.
+
+Working through the research questions led to refinements of the incoming data. It was clear,
+for example, that entries in the Schoenberg Database for sales and gifts did not have place
+information associated with them. This would have made it impossible to answer several of the
+research questions, even though the data model specified the relationships between these
+kinds of events and the locations in which they occurred. As a result, the Schoenberg Database
+entries for sales catalogues from specific organizations (such as Sotheby’s) were enriched with
+place information. Once the enhanced data were uploaded and mapped to the MMM data
+model, answers to these kinds of questions could be populated.
+
+The data model is a major intellectual output of the MMM project. Other attempts to model
+manuscript descriptions using CIDOC-CRM and FRBR​OO have been more focused or more limited
+in scope. The Biflow ontology developed for a catalogue of medieval Tuscan bilingual texts
+covers the linguistic and literary aspects of the manuscripts as well as their “material and
+historical characteristics” (Mancinelli et al. 2019). The ontology deployed for the Biblissima
+observatory’s prototype “Medieval Manuscript Illuminations and their Context” focuses on
+the illustrations described in two databases: Mandragore and Initiale (Gehrke et al.
+2015). In comparison, the MMM data model covers all aspects of manuscript research,
+including provenance, history, physical description, and textual content.
+
+   5. Data transformation
+
+
+
+                                                                                             9
+The data transformation pipeline for the three source datasets follows four basic steps:
+•        Transform the source data into RDF triples, using the native structure of the dataset
+itself, and expose them for harvesting;
+•        Harvest and upload the transformed data to a central store, hosted by the Semantic
+Computing Research Group at Aalto University, and combine them as Turtle input files;
+•        Map the uploaded RDF triples to the MMM unified Data Model, using automated
+SPARQL CONSTRUCT statements;
+•        Validate the resulting output; and,
+•        Reconcile, as far as possible, the vocabularies for the main entity classes in order to link
+instances of the same entity occurring in two or more data sources.
+
+In the case of Bibale and the Schoenberg Database of Manuscripts, the initial transformation is
+from a relational database to RDF triples. In the case of the Bodleian Library, the initial
+transformation is from TEI-encoded XML documents, which involves a more complex form of
+pre-processing (Burrows et al. 2020). The first step in the Bodleian Library’s workflow is to
+identify those parts of the TEI schema which are needed to answer the research questions of
+the MMM project. An xQuery script is used to extract these parts and copy them into a
+simplified XML document. It also creates URIs for each included entity. This simplified XML
+output is then mapped to classes and properties of the CIDOC-CRM and FRBR​OO ontologies
+using the 3M mapping tool (Oldman, Theodoridou and Samaritakis 2010). The Bodleian
+Library’s XML authority files are handled as separate datasets following the same method.
+Manuscript instances are then integrated with the authority records via corresponding URIs.
+The records include references to URIs from external authorities such as VIAF, GeoNames, TGN,
+Gemeinsame Normdatei​ (GND), and ​WikiData​.
+
+The work done to transform the Bodleian Library’s documents for the MMM project has
+demonstrated that it is possible to extract TEI-encoded manuscript data in a form which can be
+expressed as RDF, loaded to a graph database, incorporated into a Linked Data environment,
+and retrieved using SPARQL queries. But the nature of some of the TEI markup – and especially
+the lack of encoding for various components of the narrative <provenance> statements –
+means that the RDF representation cannot include all the relevant semantic content from the
+catalogue records. In the Bodleian Library’s catalogue itself, the keyword search function can
+still find occurrences of (for example) a bookseller’s name, even though these names have not
+been encoded. Replicating this functionality in the RDF environment would mean either
+re-encoding the TEI files in a more thorough and structured way or developing additional scripts
+to parse, extract, and transform provenance information which is currently presented in
+unencoded narrative statements within a <provenance> element. These options were not
+possible within the time frame of the MMM project, but would be suitable tasks for a follow-on
+project.
+
+
+                                                                                                  10
+The MMM data integration pipeline is not reliant on live synchonization across different
+datasets. Each of the three source datasets is continually being updated with new content,
+however, so the pipeline is designed to be repeatable. At the moment, each new upload must
+be initiated manually rather than run automatically. This at least means that any future changes
+to the sources will be noticed immediately when the transformation process is run, instead of
+an automatic failure, though it does also mean that updates must be scheduled and resources
+allocated.
+
+   6. Exploring the data
+
+Two main user interfaces are available for exploring the aggregated data. A ​SPARQL endpoint
+maintained by the Semantic Computing Research Group at Aalto University makes it possible to
+run SPARQL queries against the entire dataset. This approach requires a level of technical
+familiarity which is probably not found amongst most manuscript researchers’ skills. There are
+benefits to working with the ‘raw’ data when conducting detailed investigations, perhaps after
+initial enquiries through visualisations (below); digital humanities practitioners may well have
+learnt how to construct SPARQL queries using a tutorial like that published by the Programming
+Historian (Lincoln 2015). The MMM project implemented a weekly SPARQL training session for
+project staff who did not already have this kind of expertise, through knowledge transfer from
+colleagues at Aalto University. These sessions demonstrated the value of SPARQL for
+constructing complex questions to take advantage of the full extent of the MMM unified data
+model. Queries using the Yasgui interface can be recorded as URLs, which can then be used to
+re-run the original query. Some examples can be seen in the ​MMM SPARQL Tutorial​.
+
+In most cases, however, manuscript researchers are likely to use, at least initially, the public
+MMM Semantic Portal​, which provides an interface to the data through the Sampo-UI
+framework developed by the Semantic Computing Research Group at Aalto University:
+https://seco.cs.aalto.fi/tools/sampo-ui Sampo-UI is used across four other semantic portals in
+Finland and Norway, as well as a further five Finnish portals currently in development. It
+consists of a client built on various JavaScript libraries, especially React and Redux, and a
+backend API which converts a request into a SPARQL query using a set of query templates and
+configurations, runs the query against a preconfigured SPARQL endpoint, processes the SPARQL
+results with a preconfigured result mapper, and returns them in JSON or CSV format:
+https://github.com/SemanticComputing/sampo-ui
+
+An important goal of the MMM portal was to enable users to browse the entire combined
+dataset, rather than relying solely on a keyword search interface. Accordingly, the portal
+provides five “perspectives” on the data, i.e., avenues for browsing using the main classes of
+
+
+                                                                                             11
+entities: Manuscripts, Works, Events, Actors, and Places. Each of these perspectives displays an
+extensive range of data about each entity of this type. The Manuscripts perspective, which is
+the most fully-developed and is expected to be the starting-point for most users, displays a
+table listing 24 different types of information about each of the more than 217,700 manuscripts
+in the MMM dataset, including: production place, production date, last known location,
+authors, works, languages, owners, collections, transfer of custody dates and places, and so on.
+
+Each manuscript also has its own “landing-page” accessible from the table, which lists all the
+information about that manuscript under 25 headings. There is a link from each manuscript to
+its record in the ​Linked Data Finland platform​, with its complete set of classes and properties,
+as well as an option to connect to the Yasgui SPARQL query service and download this
+information in the form of a CSV spreadsheet.
+
+Most users will be aiming to identify groups or sets of manuscripts which meet a particular set
+of criteria, such as a combination of their contents, their language, their place of production,
+their last known location, their physical characteristics, or their former or current owners. An
+extensive set of filters enables several of these criteria to be combined in complex ways, e.g.,
+“illuminated manuscripts of works by St Augustine in Latin produced in fourteenth-century
+France, with the United States as their last-known location.” The result set can also be
+downloaded as a CSV spreadsheet through the ​Yasgui SPARQL query service​.
+
+The results of such queries – and also the entire dataset – can be visualized against three maps.
+The first shows the places where manuscripts were produced, as far as these are known and
+documented. The second shows the last-known locations of the manuscripts, while the third
+shows their migrations from production to last-known location in the form of arcs between
+these two places. Because data for the sequence of ownership are often unclear and lacking in
+usable dates and places, it is not currently possible to visualize each step of a manuscript’s
+travels over the centuries, though this information can be seen and downloaded in a table. So
+the visualizations only cover, at most, three data points: a manuscript, its place of production,
+and its last known location. Even at this level of reduction, the full “migrations” visualization
+appears heavily overloaded in its initial form. It is easy, however, to zoom in until individual arcs
+start to appear and can be clicked on to see the details. Nevertheless, the full visualization has
+its own value and impact, since it conveys the basic message of the MMM project: that many
+thousands of medieval and Renaissance manuscripts have travelled widely across Europe and
+the world in the centuries since their initial production.
+
+Similar but less extensive approaches are available for the other four perspectives. The tabular
+presentations have fewer columns, while the visualizations are more limited: a map showing
+the location of provenance and transfer events, a map showing places associated with persons
+
+
+                                                                                                  12
+and organizations, and a map showing the places mentioned in the dataset. For these other
+classes of entities too there are “landing-pages” with links to the Linked Data Finland record
+and to the Yasgui download option.
+
+The initial version of the MMM portal was presented at a workshop during the Digital
+Humanities conference in Utrecht in July 2019, attended by 18 people from the manuscript
+research, digital humanities, and library communities. They were given a schedule of tasks and
+asked to give detailed feedback as they worked through this process. The results were then
+used to improve both the functionality of the portal and the help information and
+documentation.
+
+   7. Reusability of data and software
+
+An important goal for the MMM project was to ensure the reusability of both the aggregated
+data and the software deployed by the project. A GitHub site was set up to make the software
+available and has been used by three of the project partners to share scripts and software:
+https://github.com/mapping-manuscript-migrations​ Its main components are:
+    ● The Sampo-UI software developed by Aalto University and used for the MMM Semantic
+        Portal (written in JavaScript);
+    ● A Docker container for populating a Fuseki triplestore with the MMM Knowledge Graph;
+    ● Scripts for uploading the RDF files produced from the source datasets and transforming
+        them to the MMM Data Model;
+    ● The Bodleian Library’s xQuery scripts for producing RDF from its TEI-XML documents;
+        and,
+    ● The Ruby script developed by the Schoenberg Institute for Manuscript Studies for
+        modifying the Oxford TEI-XML files with additional provenance and acquisition
+        information.
+
+The GitHub site also contains extensive project documentation, including the Data Model and a
+SPARQL tutorial, as well as some of the data, notably the initial RDF output from the Bodleian
+Library’s transformation process.
+
+The aggregated MMM data have been published in the Zenodo repository. Version 1.1.0 (14
+February 2020) of the data – amounting to about 1.25 GB in total – is available for download:
+https://doi.org/10.5281/zenodo.3667486 The data are made available as RDF Turtle files.
+There is one file for each of the three source datasets, containing the transformed and mapped
+source data in the form of RDF triples, and including the reconciled instances of Manuscripts,
+Works, and Actors. Also deposited are a separate “Places” file, which contains the RDF triples
+for the reconciled places, and a “Schema” file containing the data model.
+
+
+                                                                                           13
+The data are available in other ways too. MMM provides a public SPARQL endpoint from which
+the dataset can be queried: ​http://ldf.fi/mmm/sparql The linked data are served by the Linked
+Data Finland platform hosted by Aalto University: ​http://www.ldf.fi/dataset/mmm/ Result sets
+from searches in the MMM Semantic Portal can be exported in the form of CSV spreadsheets
+through the Yasgui public SPARQL query interface: ​https://yasgui.triply.cc/#
+
+The MMM data are made available for reuse under a CC BY-NC 4.0 license:
+https://creativecommons.org/licenses/by-nc/4.0/ Two main reuse cases are envisaged, both of
+which would be applicable to researchers studying such subjects as the history of medieval and
+Renaissance manuscripts, the history of collecting and collections, and the transmission and
+dissemination of classical, medieval, and Renaissance texts. The first case would cover the
+whole dataset; there were sixteen downloads from the Zenodo repository in the first two
+months of availability. The Oxford e-Research Centre has loaded a copy of the entire dataset
+into a different software environment – ResearchSpace (developed by MetaPhacts and the
+British Museum) – and is currently configuring a new interface, which will include a network
+visualization of the data (Oldman and Tanase 2018). The second case applies to a selection of
+the data, identified through the portal or a SPARQL query. One of the authors (Burrows) is
+downloading a sub-set of the data relating to a specific manuscript collector (Sir Thomas
+Phillipps) for import into a nodegoat database of Phillipps manuscripts, using CSV spreadsheets
+as the transport mechanism (Burrows 2017).
+
+These exports could also be used to extend or add to the existing visualizations. While timelines
+are used for filtering in several of the perspectives, for example, and charts can be constructed
+from the owner data in the Manuscripts perspective, exporting a selection of the data into a
+specialized visualization software environment would be feasible. The same would apply for
+constructing network diagrams or life-path visualizations (Sankey diagrams) for manuscripts,
+neither of which is available in the MMM portal itself.
+
+The MMM dataset also provides a series of reusable Linked Open Data vocabularies for
+manuscripts, actors (persons and organizations), works, and places. Each entity is published
+with a URI which meets LOD standards, and with cross-references to other widely-used LOD
+vocabularies for these types of entities, where relevant. This is particularly valuable for those
+entities which do not have identifiers in a generic vocabulary like VIAF, Wikidata, Library of
+Congress​, ​Bibliothèque nationale de France​, or others. There are more than 23,100 actors (43%)
+and 470 places (10%) without such identifiers. For manuscripts, MMM offers the first dataset
+which creates a LOD identifier for a large number of manuscripts (more than 217,700) and
+matches it to their institutional shelf-mark where applicable. These vocabularies will be of
+significant value to future efforts to build Linked Open Data services for medieval and
+
+
+                                                                                              14
+Renaissance studies. The MMM identifiers can be referenced from other LOD-compatible
+vocabularies and portals, and MMM entities can also be pulled into SPARQL queries in other
+services using the SERVICE keyword. It would also be possible, for example, to build an
+annotation layer on to the MMM dataset using a SPARQL-based API.
+
+   8. Knowledge transfer and outreach
+
+The expertise available to the MMM project covered several very different areas: manuscript
+studies, digital humanities, and Semantic Web research. An important component of the
+project was to ensure an effective level of knowledge transfer between these areas, beginning
+with an initial orientation to manuscript provenance research for the Semantic Web experts on
+the project. The set of 25 research questions developed in the initial stage of the project proved
+vital to this work, since they could be used to explain the specific elements which needed to be
+covered in the MMM data model as well as the kinds of functionality which manuscript
+researchers would expect from the MMM portal.
+
+Knowledge transfer within the project focused on the growth of RDF, SPARQL, and Linked Open
+Data expertise among manuscript researchers and librarians as well as some technical staff who
+had not had previous exposure to this kind of knowledge. They included staff supporting Bibale
+and the Schoenberg Database of Manuscripts, who were able to transform their databases into
+RDF triples and make them available for harvesting. At the University of Oxford, this kind of
+knowledge was transferred internally between the Oxford e-Research Centre and the Bodleian
+Libraries’ Digital Library Service. A particularly successful initiative was a weekly SPARQL
+session, which began in July 2019 and was still running ten months later. It enabled librarians
+and technical staff from the project to learn and practice the use of SPARQL queries against the
+MMM dataset, with the advice and assistance of the Semantic Web experts from Aalto
+University. The set of research questions provided a good basis for designing these SPARQL
+queries.
+
+Knowledge transfer outside the project began with a focus group held in the Bodleian Library in
+November 2017, attended by twelve manuscript researchers ranging from doctoral students to
+senior academics. In response to an introduction to the project’s goals and methodologies from
+project staff, the participants gave some very useful ideas about the kinds of questions and
+functionality that a manuscript provenance service might be expected to provide. A workshop
+was then held at the Digital Humanities Conference at Utrecht in July 2019 for a group of
+eighteen manuscript researchers and digital humanities experts, which provided valuable initial
+feedback on the functionality of the first version of the MMM portal and on the work done by
+the project to that stage more generally.
+
+
+
+                                                                                               15
+In February 2020, the MMM project was presented to an expert group of librarians, curators,
+and digital humanities specialists from national and regional libraries across Europe. They were
+advising the Council of European Research Libraries (CERL) on the future of its increasingly
+obsolete Manuscripts Portal, which will be decommissioned in mid-2020. Useful exchanges of
+information took place with representatives of the Bibliothèque nationale de France about the
+future of the Biblissima platform, and with representatives of German libraries developing a
+new       national     portal      for    medieval       and       Renaissance      manuscripts:
+https://handschriftenportal.de/projekt/ Two similar presentations were made in November
+2017 and March 2019 to meetings of manuscript cataloguing experts from the University of
+Oxford, the University of Cambridge, and the British Library.
+
+Outreach for the MMM project was largely carried out through a dedicated Twitter account
+with more than 330 followers, and a Web site with a blog, as well as through more than forty
+accepted conference presentations. A further nine were scheduled for events which were
+postponed or cancelled due to the coronavirus epidemic. These presentations, like the
+publications emanating from the project, were targeted at conferences and journals
+representing each of the different disciplinary areas involved in the project: manuscript studies,
+medieval and Renaissance studies, digital humanities, and Semantic Web research.
+
+   9. Improvements to source datasets
+
+The MMM project has been careful to define and maintain a clear and persistent relationship
+between the RDF triples created by the project and the original source data. In the MMM
+portal, users can always refer back to the original datasets via links provided in each entity’s
+“landing page”. The MMM data can also be filtered by source, for direct access to a source’s
+dataset if required. In this sense, the RDF data created by the MMM project are, effectively, a
+supplementary layer to the source information.
+
+The transparent relationship between the source datasets and the MMM data underscores the
+role of MMM as an aggregator of data rather than as a data management system, though an
+unanticipated but welcome outcome of the project has been its ability to help managers of the
+original datasets to identify problems. Because data correction is not part of the MMM
+transformation process, weaknesses, inconsistencies, and errors in the datasets become clear
+in search results, alerting dataset managers that something needs to be fixed at their end. In
+this way, MMM enables managers to clean and enrich their data. For instance, in the
+Schoenberg Database and Bibale, hundreds of personal and institutional names have been
+corrected for authority control, resulting in a rich and as yet untapped record of names
+associated with manuscript production and trade. But value has also been added to these
+datasets. In the Schoenberg Database, locations were added to records for sellers – particularly
+
+
+                                                                                               16
+those firms and other organizations which held sales and auctions. When harvested by MMM,
+this information provides locations for sales events, which can enhance the MMM
+visualizations. The Schoenberg Database has also been able to mount a ​public SPARQL
+endpoint​, which enables a search of the pre-transformation RDF version of the data.
+
+Additionally, more than 2,000 of the Oxford TEI files have been updated with structured
+provenance information relating to previous collection owners that can now be pulled into the
+RDF transformation. This was done by forking a copy of the relevant XML files from the
+Bodleian Library’s GitHub site, and running a Ruby script which added a standard statement
+with appropriate TEI markup to record the acquisition of each manuscript in a collection from
+its previous owner. The new versions of the files were then re-loaded to the GitHub site and
+checked by Bodleian manuscript librarians before replacing the previous version. From the
+GitHub site, the new version could then be harvested into the MMM transformation pipeline,
+as well as being pushed to the Bodleian’s own Web catalogue.
+
+   10. Organizational issues
+
+The nature of the funding process, with each of the four partner institutions funded directly by
+their national funding agency, meant that each partner started the project at different times:
+two in July 2017, one in December 2017, and one in April 2018. This made necessary some
+re-thinking of the initial project plan and timetable. The schedule for transforming the datasets,
+in particular, had to be altered in order to start with the available partner’s data, rather than
+arranging the order of the datasets by more technical criteria. The end dates for the partners
+have been less of a problem, though here too one partner will not finish their funding until
+October 2020 while the others are all finishing in mid-2020.
+
+The spread of resources across the four partners also required careful coordination, since the
+number of project staff, the nature of their skills and expertise, and the roles they were
+expected to play in the project all varied considerably. The Aalto University team had the
+primary responsibility for transforming the data, hosting the project’s triple store, and
+implementing the portal’s user interface. Two partners had specialist Linked Open Data and
+Semantic Web expertise – Aalto University and the Oxford e-Research Centre at the University
+of Oxford – but they started work about six months apart. It was especially necessary to ensure
+that sufficient expertise of this kind was available across the course of the project. Three of the
+partners (the Schoenberg Institute for Manuscript Studies, the Institut de recherche et
+d’histoire des textes, and the Bodleian Libraries) were responsible for providing and
+transforming the data, and for applying knowledge of manuscript curation and research to the
+design of the data model and the user interface.
+
+
+
+                                                                                                17
+The project worked mainly through online meetings using the BlueJeans software hosted by the
+University of Pennsylvania. Two specialized groups were formed, focusing on data modelling
+and the user interface respectively. The Modelling Group contained all the project’s Linked
+Open Data experts, together with a librarian, and met weekly for eighteen months from
+February 2018 to June 2019. It developed and refined the unified data model in an iterative
+process, and formed the main channel to the work being done at Aalto University to set up and
+host the transformation pipelines and the aggregated Linked Open Data. The Users Group met
+fortnightly from August 2018 to November 2019. Its membership consisted of the manuscript
+researchers and librarians on the project, together with the user interface design expert from
+Aalto University. It focused mainly on the development and testing of the Sampo-UI interface.
+Meetings of the full project team were also held monthly, beginning in May 2018.
+
+Two face-to-face meetings of the project team were held, beginning with a two-day kick-off
+meeting at the University of Oxford in September 2017, which focused on planning and scoping
+the project. A second three-day meeting was held in Helsinki in April 2019. This reviewed the
+work done to date, discussed and resolved the detailed issues arising, and defined and agreed
+on a work plan for the final stages of the project. The success of the Helsinki meeting was
+crucial to completing the project successfully. In retrospect, a similar face-to-face meeting in
+mid-2018 might have been a valuable opportunity for reviewing the data model and planning
+the implementation of the user interface.
+
+   11. Evaluation through research questions
+
+The project team developed a set of 25 research questions to guide its progress. Some of these
+questions were elicited from the initial focus group of manuscript researchers, while others
+were contributed by members of the MMM project team or taken from a list produced by the
+French             project            Biblissima          (“Requêtes           intéressantes”):
+https://doc.biblissima.fr/ontologie-biblissima - méthodologie Some of these questions were
+specific, e.g.: “Which manuscripts containing texts by Ramon Llull were sold in the 19th
+century?” Others were more generic, e.g.: “How many illuminated manuscripts were in a
+particular collection?” The initial use of these questions was in developing the MMM unified
+data model; they were later used to test and refine the filtering and searching capabilities of
+the user interface.
+
+The research questions were also used to evaluate the MMM Portal and its Linked Open Data
+framework. For this process, each question was tested first against the three source datasets
+individually. While each of these sources provides a relatively sophisticated interface, in almost
+every case it proved difficult to answer the questions fully (Table 2). At best, the user was
+presented with a partial answer to the question, often in the form of a broader list of results
+
+
+                                                                                               18
+which had to be scanned manually to identify relevant items. Some questions could not be
+answered at all using the source databases alone (8 in Bibale, 8 in Oxford, 6 in Schoenberg).
+
+In the MMM Portal, on the other hand, a majority of the questions (17 out of 25) could be
+answered readily with a combination of filters and text searches. Only a few, more complex
+questions required further manual scanning of the result sets (8 out of 25). This group of
+questions was explored further by running queries against the MMM SPARQL endpoint. This
+approach was able to provide full answers to such questions as: “Which collectors bought
+manuscripts from Wilfrid Voynich? Where were the collectors located? What do we know
+about the kind of manuscripts he sold, and their earlier histories?” The full list of research
+questions, with the results of their testing, is given in Appendix 2.
+
+
+                    Bibale              Oxford              Schoenberg         MMM Portal
+
+ Impossible     to 8                    8                   6                  0
+ answer
+
+ Partly answered    16                  12                  12                 8
+
+ Fully answered     1                   5                   7                  17
+
+
+                             Table 2: Answers to MMM research questions
+
+One of the specific but complex research questions used as an example in the original funding
+application was: “What French collectors purchased manuscripts since the end of the Wars of
+Religion (after 1598)? Where are their manuscripts now?” This cannot be answered in Bibale or
+the Oxford catalogue. In Bibale, it is impossible to run a query on transactions of a specific
+period, while in the Oxford catalogue the list of people can be filtered by role (e.g., owner) but
+not by place, whether this is place of birth, place of death, or place of residence – depending on
+the definition of “French.” The Schoenberg Database does make it possible to identify people
+linked to France with life dates after 1598, and then view the individual entries linked to them.
+But this will not cover people linked to specific places within France, since the place names are
+not nested hierarchically.
+
+In the MMM portal, on the other hand, the “Actors” perspective can be filtered for persons
+with an “Activity Location” of France. This covers all places within France. Finding French
+collectors active after 1598 involves adding one of the timeline filters to find persons born after
+(say) 1550. The resulting list of 572 people includes a list of manuscripts and collections
+attached to each of them. These manuscripts and collections can then be inspected to see their
+subsequent history and last known locations. The list of people can be sorted by “Role” to
+
+
+                                                                                                19
+distinguish manuscript owners and collection owners from authors of works. To amalgamate all
+the relevant information about each manuscript and each collection for each owner who falls
+within the specific parameters, a SPARQL query can be constructed.
+
+   12. Future directions and lessons learned
+
+The MMM project has demonstrated the value and effectiveness of a Linked Open Data
+approach to aggregating provenance data for medieval and Renaissance manuscripts. The
+sophisticated data model and the transformed data have been made available for reuse, while
+the MMM portal shows how searching, filtering, and visualizing can be successfully applied to
+answer complex research questions. An obvious desideratum for the future is to transform and
+incorporate data from a wider range of sources, with the aim of both increasing the number of
+manuscripts covered and adding to the information available for the 217,700 manuscripts
+currently represented.
+
+The project has identified several areas where future work would be valuable. The first is the
+development of specialist Linked Open Data vocabularies for medieval studies. The project was
+able to make effective use of such general vocabularies as VIAF for Actors and TGN for Places,
+since these were used in the source datasets. The history of manuscripts focuses on the
+nineteenth and twentieth centuries as much as on the medieval period, which reduces the
+need to identify medieval names. But there are still a significant number of people (as authors
+and manuscript owners), organizations (especially religious houses), works, and places which do
+not appear in the more general vocabularies. There are various existing lists and databases of
+medieval names which could be transformed into Linked Open Data to enrich discovery services
+and knowledge graphs in this field. A typical example is the database “Monasteries in the
+Netherlands until 1800: a census”, which contains records for about 750 religious houses:
+https://www2.fgw.vu.nl/oz/monasteries/index.php It is searchable but not downloadable, and
+does not include LOD identifiers, either for the houses themselves or for references to other
+datasets.
+
+The MMM project also identified gaps in the provision of authoritative vocabularies for the
+people and institutions associated with book production, the book trade, and book collecting.
+While the ​CERL Thesaurus contains “​forms of imprint places, imprint names, personal names
+and corporate names” connected with the book trade, its scope is limited to “material printed
+before the middle of the nineteenth century.” VIAF ​is limited to names associated with book
+publishing as supplied by the world’s national libraries; the Schoenberg Institute for Manuscript
+Studies is ineligible to participate in this programme, despite offering to contribute.
+
+
+
+
+                                                                                              20
+Discovery and linkage of manuscripts specifically would benefit greatly from the existence and
+use of unique LOD identifiers. Manuscripts are generally identified by their owner, the
+collection, and a unique shelf-mark or catalogue number (e.g., British Library, Egerton MS
+8546), but frequent inconsistencies in formatting shelf-marks and collection names, even within
+the institution itself, can make it hard to match data relating to the same manuscript. Frequent
+changes in ownership and in owners’ names, even for institutions, can also cause problems in
+reconciling shelf-marks and catalogue numbers for the same manuscript. The MMM project
+used Phillipps numbers as one way of linking data about the same manuscript, and this
+matched nearly 9,000 manuscripts. The ISMI (International Standard Manuscript Identifier)
+initiative has been established with the aim of defining a unique manuscript identifier, but
+there has been only limited progress so far (Cassin 2018).
+
+Another area of future work lies in improving the way in which provenance histories for
+manuscripts are recorded. The MMM project worked with two specialized and sophisticated
+provenance-oriented databases (Bibale and the Schoenberg Database of Manuscripts). Though
+they provided MMM with a substantial amount of well-structured data, their data models were
+quite different from each other. Library catalogues based on the MARC record, on the other
+hand, usually give provenance information in an unstructured note. The MMM project did not
+attempt to incorporate this kind of data, which would have required the use of text analysis and
+entity recognition techniques. There is some scope to incorporate more structure into this type
+of annotation.
+
+The Bodleian Library’s TEI-XML documents use the <provenance> tag to encode information
+about manuscript ownership. This tag is geared towards the kind of narrative histories and
+notes about provenance evidence found in traditional printed manuscript catalogues, and its
+contents are largely unstructured, with the exception of the names of persons mentioned in the
+narratives. As a result, the MMM project found it difficult to extract anything more than a
+generic event from this kind of data. The project did not have time to design and implement a
+programme of text analysis and entity recognition techniques for this unstructured information,
+though this approach would be worth applying in the future.
+
+A possible way forward for improving the structure of provenance data, especially in
+TEI-encoded catalogues, might be found in the work of the Linked Art project, which is
+developing       a     general     schema      for    art     history,    using    CIDOC-CRM:
+https://linked.art/model/index.html The MMM project is currently working to produce
+guidelines for a more structured approach to the TEI encoding of manuscript history and
+provenance statements. The aim is to find a framework for recording and encoding such data
+which is sufficiently well-structured to map to data models like that of MMM. This will increase
+
+
+
+                                                                                             21
+the specificity and richness of the kind of computer processing, analysis, and visualizations
+implemented by MMM.
+
+The MMM project has learned a great deal about using Linked Open Data in humanities
+research. The process of developing the unified Data Model was complex and iterative,
+involving extensive dialogue between technical experts and manuscript researchers. For more
+than twelve months, weekly meetings of the MMM Modelling Group worked to design a model
+which reflected the knowledge of scholars in this field. This model was tested initially against
+the research questions assembled by the manuscript researchers, and the results were fed into
+further rounds of model development. The model did not try to reflect the entire body of
+knowledge found in the published literature of manuscript research. Instead, its scope was
+determined pragmatically, with only the classes of entities and relationships identified in the
+source datasets being included.
+
+The project also produced insights into different methods of querying and navigating the RDF
+triples, and the resulting benefits. As well as using and refining the portal framework, this also
+involved direct access to the triple store through the SPARQL endpoint. One of the results was a
+better understanding of the trade-offs between pre-built user interfaces and the direct use of
+SPARQL, and an appreciation of the real benefits in using the query language to discover new
+insights into the data. Articulating a research question in SPARQL can appear complex because
+one has to be precise in articulating the query, but that complexity in query articulation is really
+a reflection of complexity in the data. It needs a manuscript scholar’s familiarity and judgement
+to decide how “correct” the combination of query parameters is or should be. The data and the
+query cannot be objective, so it is important for scholars to be able to interrogate and judge the
+subjectivity in the data and the query. This, in the context of the MMM project, is what SPARQL
+“forces” upon us.
+
+More generally, the MMM project offers some insights into the relationship between digital
+products based on Linked Open Data and scholars’ expectations. Instead of an opaque interface
+in the form of a simple Google-style search box, which conceals the complexity of the raw data
+beneath it, the MMM portal and its SPARQL endpoint are designed to open up the data for
+close inspection and exploration. The portal enables a user to browse most of the data points
+for each type of entity directly, and provides a “landing page” for each entity to show all the
+available data relating to it. SPARQL queries enable a user to interrogate the RDF triples
+directly, using the full features of the data model. The Linked Data Finland service and the
+Zenodo copy of the dataset make the underlying RDF triples available for export and reuse.
+
+This approach helps to reveal the complexity and provisional quality of the data and the data
+structures. It also reveals the added value of both the data modelling and the data
+
+
+                                                                                                 22
+transformation pipeline. The dataset itself adds value and novelty and is the result of an
+intellectual process – analysing the source data and the field of knowledge itself. The design of
+the MMM outputs is intended to strike a balance between reflecting existing knowledge and
+encouraging new types of research questions. The data model is sufficiently broad in scope and
+detailed in its coverage to limit the extent to which exploration is prescribed. A user can simply
+browse through the portal and combine filters at random, and then see if the result is a
+meaningful pattern or not. This is the equivalent of deriving research questions from the data,
+rather than always approaching the data with pre-compiled research questions. The aim is to
+deploy the Linked Open Data framework in ways that reflect the iterative nature of humanities
+research and preserve the richness of its evidence base.
+
+
+
+
+Acknowledgements
+
+The Mapping Manuscript Migrations project was funded under Round 4 of the Trans-Atlantic
+Platform’s Digging into Data Challenge (2017-2020). The four project partners -- University of
+Oxford (Oxford e-Research Centre and Bodleian Libraries), the University of Pennsylvania
+(Schoenberg Institute for Manuscript Studies), the Institut de recherche et d’histoire des textes
+(IRHT-CNRS), and Aalto University (Semantic Computing Research Group) -- were funded
+respectively by the following agencies: Economic and Social Research Council (UK), Institute of
+Museum and Library Services (US), Agence nationale de la recherche (France), and the Academy
+of Finland.
+
+The project also benefited from work done as part of the OXLOD Project, funded by the
+University of Oxford’s IT Capital Plan as part of the GLAM Digital Strategy.
+
+The authors wish to acknowledge the contributions of the following former and current project
+staff: Pip Willcox (University of Oxford), Benny Heller (University of Pennsylvania), Nicole
+Bergk-Pinto, Antoine Brix, Mahaut Cazals, Alexandre Gaudin, Synnøve Myking, Pierre-Louis
+Pinault, and Guillaume Porte (Institut de recherche et d’histoire des textes)
+
+
+
+Competing Interests
+
+The authors have no competing interests.
+
+
+
+
+                                                                                               23
+Author contributions
+
+Toby Burrows T.B.
+Doug Emery D.E.
+Mitch Fraas M.F.
+Eero Hyvönen E.H.
+Esko Ikkala E.I.
+Mikko Koho M.K.
+David Lewis D.L.
+Andrew Morrison A.M.
+Kevin Page K.P.
+Lynn Ransom L.R.
+Emma Thomson E.T.
+Jouni Tuominen J.T.
+Athanasios Velios A.V.
+Hanno Wijsman H.W.
+
+Conceptualization T.B., E.H., L.R., and H.W.
+Data curation D.E., M.F., M.K., D.L., A.M., E.T., J.T., A.V., and H.W.
+Formal analysis D.E., M.K., D.L., K.P., E.T., and J.T.
+Funding acquisition T.B., E.H., L.R., and H.W.
+Methodology D.E., M.K., D.L., K.P., E.T., and J.T.
+Project administration T.B., E.H., K.P., L.R., and H.W.
+Software D.E., E.I., M.K., D.L., A.M., J.T., and A.V.
+Supervision T.B., E.H., K.P., L.R., J.T., and H.W.
+Visualisation E.I.
+Writing – original draft T.B.
+Writing – review & editing E.H., E.I., M.K., K.P., L.R., J.T., A.V., and H.W.
+
+
+
+
+Works cited
+
+Burrows, Toby. 2017. “The History and Provenance of Manuscripts in the Collection of Sir
+Thomas Phillipps: New Approaches to Digital Representation,” ​Speculum 92 S1 (Oct. 2017),
+S39-S64
+
+
+
+                                                                                      24
+Burrows, Toby, Athanasios Velios, Matthew Holford, David Lewis, Andrew Morrison, and Kevin
+Page. 2020. “Transforming TEI Manuscript Descriptions into RDF Graphs,” GraphSDE
+proceedings (forthcoming)
+Cassin, Matthieu. 2018. “ISMI: International Standard Manuscript Identifier: Project of unique
+and stable identifiers for Manuscripts,” Manuscript Cataloguing in a Comparative Perspective:
+State of the Art, Common Challenges, Future Directions, Centre for the Study of Manuscript
+Cultures, Hamburg, 7 - 10 May 2018.
+https://www.manuscript-cultures.uni-hamburg.de/files/mss_cataloguing_2018/Cassin_pres.pd
+f
+Gehrke, Stefanie, Eduard Frunzeanu, Pauline Charbonnier, and Marie Muffat. 2015.
+“Biblissima’s Prototype on Medieval Manuscript Illuminations and their Context.” In: SW4SH
+2015: Semantic Web for Scientific Heritage 2015: Proceedings of the First International
+Workshop Semantic Web for Scientific Heritage at the 12th ESWC Conference, Portorož,
+Slovenia, June 1st, 2015, Arnaud Zucker, Isabelle Draelants, Catherine Faron Zucker, and
+Alexandre Monnin (eds). ​http://ceur-ws.org/Vol-1364/paper5.pdf
+Heath, Tom, and Christian Bizer. 2011. Linked Data: Evolving the Web into a Global Data Space
+(Synthesis Lectures on the Semantic Web: Theory and Technology). Palo Alto: Morgan &
+Claypool. ​http://linkeddatabook.com/editions/1.0/
+Hyvönen, Eero. 2012. ​Publishing and using cultural heritage linked data on the Semantic Web​.
+Palo Alto: Morgan & Claypool.
+Ikkala, Esko, Eero Hyvönen, Heikki Rantala and Mikko Koho. 2020. “​Sampo-UI: A Full Stack
+JavaScript Framework for Developing Semantic Portal User Interfaces​.” May, 2020. Submitted.
+https://seco.cs.aalto.fi/publications/2020/ikkala-et-al-sampo-ui-2020.pdf
+Lincoln, Matthew. 2015. “Using SPARQL to access Linked Open Data,” The Programming
+Historian.​ ​https://programminghistorian.org/en/lessons/retired/graph-databases-and-SPARQL
+Mancinelli, Tiziana, Antonio Montefusco, Sara Bischetti, Maria Conte, Agnese Macchiarelli, and
+Marcello Bolognari. 2019. “Modelling a Catalogue: Bilingual texts in Tuscan Middle Ages
+(1260-1430).” Poster, Digital Humanities 2019, Utrecht University, 8-12 July 2019.
+https://dev.clariah.nl/files/dh2019/boa/1219.html
+Oldman, Dominic, and Diana Tanase. 2018. “Reshaping the Knowledge Graph by Connecting
+Researchers, Data and Practices in ResearchSpace,” in: The Semantic Web – ISWC 2018: 17th
+International Semantic Web Conference, Monterey, CA, USA, October 8–12, 2018, Proceedings,
+Part II, ed. Denny Vrandečić, Kalina Bontcheva, Mari Carmen Suárez-Figueroa et al. (Berlin:
+Springer, 2018), pp. 325-340.
+Oldman, Dominic, Maria Theodoridou, and Georgios Samaritakis. 2010. “Using Mapping
+Memory            Manager       (3M)       with       CIDOC       CRM.”       Version       4g.
+http://83.212.168.219/DariahCrete/sites/default/files/mapping_manual_version_4g.pdf
+
+
+
+
+                                                                                            25
+Appendix 1: MMM Schema
+
+
+
+
+                         Class/Property                      Range
+
+ Namespaces:
+
+ PREFIX dct: ​http://purl.org/dc/terms/
+
+ PREFIX ecrm: ​http://erlangen-crm.org/current/
+
+ PREFIX frbroo: ​http://erlangen-crm.org/efrbroo/
+
+ PREFIX mmms: ​http://ldf.fi/mmm/schema/
+
+ frbroo:F1_Work
+
+ dct:source                                         mmms:Database
+
+ mmms:data_provider_url                             URL
+
+ skos:altLabel                                      string
+
+ skos:prefLabel                                     string
+
+ frbroo:F27_Work_Conception
+
+ ecrm:P4_has_time_span                              ecrm:E52_Time-Span
+
+ ecrm:P7_took_place_at                              ecrm:E53_Place
+
+ dct:source                                         mmms:Database
+
+ skos:prefLabel                                     string
+
+ frbroo:R16_initiated                               frbroo:F1_Work
+
+ mmms:carried_out_by_as_author                      ecrm:E21_Person
+
+ mmms:carried_out_by_as_possible_author             ecrm:E21_Person
+
+ mmms:carried_out_by_as_commissioner                ecrm:E21_Person
+
+ mmms:carried_out_by_as_editor                      ecrm:E21_Person
+
+
+
+
+                                                                         26
+frbroo:F2_Expression​, ​ecrm:E33_Linguistic_Object​.
+
+ecrm:P72 has language                                  string
+
+dct:source                                             mmms:Database
+
+mmms:data_provider_url                                 URL
+
+skos:altLabel                                          string
+
+skos:prefLabel                                         string
+
+frbroo:F28_Expression_Creation
+
+ecrm:E12_Production
+
+ecrm:P4_has_time_span                                  ecrm:E52_Time-Span
+
+ecrm:P7_took_place_at                                  ecrm:E53_Place
+
+ecrm:P108_has_produced                                 frbroo:F4_Manifestat
+                                                       ion_Singleton
+
+dct:source                                             mmms:Database
+
+skos:prefLabel                                         string
+
+mmms:carried_out_by_as_commissioner                    ecrm:E21_Person
+
+mmms:carried_out_by_as_illuminator                     ecrm:E21_Person
+
+mmms:carried_out_by_as_printer                         ecrm:E21_Person
+
+mmms:carried_out_by_as_scribe                          ecrm:E21_Person
+
+frbroo:F4_Manifestation_Singleton
+
+ecrm:P128_carries                                      F2 Expression
+
+ecrm:P3_has_note                                       string
+
+ecrm:P43_has_dimension                                 "mmms:Width, ..."
+
+ecrm:P45_consists_of                                   mmms:Material
+
+ecrm:P46_is_composed_of                                frbroo:F4_Manifestat
+                                                       ion_Singleton
+
+ecrm:P46i_forms_part_of                                ecrm:E78_Collection
+
+
+
+
+                                                                             27
+ecrm:P51_has_former_or_current_owner   ecrm:E21_Person
+
+ecrm:P52_has_current_owner             ecrm:E21_Person
+
+ecrm:P70i_is_documented_in             mmms:Source
+
+dct:source                             mmms:Database
+
+mmms:catalog_or_lot_number             string
+
+mmms:data_provider_url                 URL
+
+mmms:entry                             URL
+
+mmms:manuscript_author                 ecrm:E21_Person
+
+mmms:manuscript_record                 URL
+
+mmms:manuscript_work                   frbroo:F1_Work
+
+mmms:phillipps_number                  string
+
+mmms:shelfmark_arsenal                 string
+
+mmms:shelfmark_barocci                 string
+
+mmms:shelfmark_bnf_hebreu              string
+
+mmms:shelfmark_bnf_latin               string
+
+mmms:shelfmark_bnf_nal                 string
+
+mmms:shelfmark_buchanan                string
+
+mmms:shelfmark_christ_church           string
+
+owl:sameAs                             URI
+
+skos:altLabel                          string
+
+skos:prefLabel                         string
+
+ecrm:E52_Time-Span
+
+ecrm:P81a_end_of_the_begin             datetime
+
+ecrm:P81b_begin_of_the_end             datetime
+
+ecrm:P82a_begin_of_the_begin           datetime
+
+ecrm:P82b_end_of_the_end               datetime
+
+
+
+                                                         28
+skos:altLabel                             string
+
+skos:prefLabel                            string
+
+E10 Transfer of Custody / E7 Activity
+
+skos:prefLabel                            string
+
+ecrm:P11_had_participant                  ecrm:E21_Person
+
+ecrm:P28_custody_surrendered_by           ecrm:E21_Person
+
+ecrm:P29_custody_received_by              ecrm:E21_Person
+
+ecrm:P30_transferred_custody_of           ecrm:E21_Person
+
+ecrm:P3_has_note                          string
+
+ecrm:P4_has_time-span                     ecrm:E52_Time-Span
+
+ecrm:P70i_is_documented_in                Source
+
+ecrm:P7_took_place_at                     ecrm:E53_Place
+
+mmms:data_provider_url                    URL
+
+mmms:observed_manuscript                  frbroo:F4_Manifestat
+                                          ion_Singleton
+
+mmms:ownership_attributed_to              ecrm:E21_Person
+
+dct:source                                mmms:Database
+
+skos:prefLabel                            string
+
+ecrm:E78_Collection
+
+ecrm:P51_has_former_or_current_owner
+
+ecrm:P92i_was_brought_into_existence_by
+
+ecrm:P93i_was_taken_out_of_existence_by
+
+mmms:collection_location
+
+mmms:collection_type
+
+mmms:data_provider_url
+
+
+
+
+                                                               29
+mmms:external_url
+
+mmms:institution_literal
+
+mmms:location_literal
+
+mmms:source_agent
+
+mmms:source_date
+
+mmms:source_type
+
+dct:source
+
+skos:altLabel
+
+skos:prefLabel
+
+mmms:Source
+
+
+mmms:source_date
+
+mmms:source_agent
+
+mmms:source_type
+
+mmms:external_url
+
+mmms:location_literal
+
+mmms:institution_literal
+
+mmms:data_provider_url
+
+mmms:external_url
+
+dct:source                 mmms:Database
+
+mmms:Source_Type
+
+skos:prefLabel             string
+
+ecrm:E53_Place
+
+                           currently string,
+                           actually an AAT
+gvp:placeTypePreferred     concept
+
+
+                                               30
+gvp:broaderPreferred                                ecrm:E53_Place
+
+wgs84:lat                                           decimal
+
+wgs84:long                                          decimal
+                                                    mmms:Database / Getty
+dct:source                                          TGN / Geonames
+
+owl:sameAs                                          URI
+
+mmms:data_provider_url                              URL
+
+ecrm:P89_falls_within                               ecrm:E53_Place
+
+ecrm:E21_Person / ecrm:E74_Group / ecrm:E39_Actor
+
+                                                    ecrm:E67_Birth /
+ecrm:P98i_was_born                                  ecrm:E66_Formation
+                                                    ecrm:E69_Death /
+ecrm:P100i_died_in                                  ecrm:E68_Dissolution
+
+ercm:P3_has_note                                    string
+
+mmms:gender
+
+mmms:religion
+
+mmms:biblissima_id
+
+mmms:data_provider_url                              URL
+
+dct:source                                          mmms:Database
+
+skos:prefLabel
+
+ecrm:E67_Birth / ecrm:E69_Death
+
+
+ecrm:P4_has_time-span                               ecrm:E52_Time-Span
+
+ecrm:P7_took_place_at                               ecrm:E53_Place
+
+skos:prefLabel
+
+ecrm:E63_Beginning_of_Existence /
+ecrm:E64_End_of_Existence
+
+ecrm:P4_has_time-span                               ecrm:E52_Time-Span
+
+ecrm:P7_took_place_at                               ecrm:E53_Place
+
+dct:source                                          mmms:Database
+
+
+                                                                         31
+skos:prefLabel
+
+ecrm:E66_Formation / ecrm:E68_Dissolution
+
+
+ecrm:P4_has_time-span                                 ecrm:E52_Time-Span
+
+ecrm:P7_took_place_at                                 ecrm:E53_Place
+
+skos:prefLabel
+
+ecrm:E57_Material
+
+skos:prefLabel                                        string
+
+mmms:Height / mmms:Width
+
+ecrm:P90_has_value
+
+ecrm:P91_has_unit                                     mmms:Millimetre
+
+mmms:Folios / mmms:Columns / mmms:Lines /
+mmms:DecoratedInitials / mmms:HistoriatedInitials /
+mmms:Miniatures
+
+ecrm:P90_has_value                                    integer
+
+mmms:Database
+
+mmms:data_provider_url
+
+
+
+
+                                                                           32
+Appendix 2: Research Questions used by the MMM Project
+
+
+
+MMM            Bibale results – Oxford results –   SDBM results – MMM results -        MMM portal -
+Research       public           public interface   public interface portal             comments
+Question       interface
+[A1] How      Currently         Can’t filter by    In advanced      In "Manuscripts" In step (1), the
+many          impossible.       “Europe” (only by search, limit     perspective: (1)  figure shown
+manuscripts   One cannot        a specific         Manuscript       Filter by         next to
+from pre-1600 search by date    country). Each     Date to          "Production Place "Europe" in
+produced in   span, and one     century has to be terminating at = Europe"            the left-hand
+European      cannot search     filtered           1601. Then limit (produces         panel is
+countries     by place either   separately – can’t these results    71,718); (2) Set  82,971 - this is
+survive?      (not by           aggregate          with Place       "Production Date" the count of
+              country, let      “pre-1601”. Can facet. This         time slider to    all Production
+              alone by          show “how many search returns 1601. Result is         Places, which
+              continent).       MSS have a         90,185 Entries. 67,231.            is greater than
+                                production event Then open                            the count of
+                                in England in the “Manuscript”                        all
+                                14thcentury?”      facet to see all                   Manuscripts
+                                                   MS records
+                                                   associated with
+                                                   place.
+
+
+
+
+                                                                                                    33
+[A2] How        Currently     Not possible. You Can browse          In the                (A) It is not
+many            impossible.   can filter the list language facet "Manuscripts"            possible to
+manuscripts     This is a     of manuscripts      for Spanish,      perspective: (A)      filter
+survive that    complex       by language         which gives       filter by language manuscripts
+contain         question      (Spanish) and       2027 results.     = Spanish. (B)        by script. (B) It
+Spanish texts anyway.         then by place of These results        Then filter by        is not possible
+written in                    origin (Spain - not can be            production place = to filter
+gothic rotunda                region) - which     narrowed down Castile. (C) Then, manuscripts
+were                          results in 14       by items in the as a proxy for          by type of
+produced in                   manuscripts. But Place facet          filtering by script, owner (private
+Castile for an                you can then only linked to           filter by date of     / public /
+abbey or                      examine the         "Castile" (9) and production, e.g.      institutional /
+convent? Then                 results             "Castilla et Leon 1100-1450. This       religious
+show me                       individually to     (13). From there produces 34            house etc.).
+those which                   analyse their       individual        results. (D) Then (C) An
+were owned                    provenance and entries must be look through the alternative
+during the                    history.            analyzed for      list of owners to approach
+nineteenth                                        data related to identify medieval would be to
+century by                                        19th century      Spanish               start from the
+English private                                   owners.           abbeys/convents "Agents" view,
+collectors;                                                         (3), 19th-century and filter for
+Then show me                                                        private English       "type of
+those which                                                         owners (5), and       owner =
+are now                                                             20th-century          group" +
+owned by an                                                         North American        active in
+institution in                                                      institutions (2). (E) Castile. You
+North                                                               Repeat this           can then see
+America.                                                            process for           the
+                                                                    manuscripts           manuscripts
+                                                                    produced in           and works
+                                                                    places in             associated
+                                                                    Castilla-Leon or      with these
+                                                                    Castilla-La Mancha institutions as
+                                                                    (since these are      owners. You
+                                                                    separate from         would then
+                                                                    Castile in the TGN need to look
+                                                                    hierarchy).           at each of
+                                                                                          these
+                                                                                          manuscripts
+                                                                                          individually to
+                                                                                          see their
+                                                                                          subsequent
+
+
+
+                                                                                                        34
+                                                                                         owners.
+[A3] What       Currently        You can filter the This question     In the "Actors"    You need to
+French          impossible.      list of "People"    can't easily be perspective: (A)    sort the
+collectors      One can          by role (e.g.,      answered. You Limit the type of resulting list
+purchased       currently not    "Owner, signer, can search for actor to E21:            by "Role" to
+manuscripts     run a query on   or donor". But      SDBM Names       Person. Then (B) distinguish
+since the end transactions of    you cannot          that are linked filter by Activity  manuscript/co
+of the Wars of a specific        further filter this to France and    Location = France. llection
+Religion (after period (eg.      list by country - have life dates This gives 1,698      owners from
+1598)? Where after a specific    whether this is     after 1598, but results. Then (C) authors of
+are their       year).           place of birth,     then you'd have filter the "Birth"  works. At step
+manuscripts                      place of death, or to run separate timeline to births (C) you could
+now?                             place of            queries to find after 1550. This    also filter the
+                                 residence.          people linked to gives 572 results. "Death"
+                                                     places nested    Then (D) look at   timeline for
+                                                     within France    the individual     deaths after
+                                                     (there's         manuscripts        1600. This
+                                                     currently no     associated with    produces 475
+                                                     way to search each person to        results. If you
+                                                     for France and see their            combine the
+                                                     all of its       subsequent         births and
+                                                     children within history.            deaths
+                                                     the same                            timeline limits,
+                                                     query). Once                        the result is
+                                                     you found all of                    475 people.
+                                                     these names,                        There is no
+                                                     you could then                      obvious way
+                                                     view the entries                    of filtering the
+                                                     linked to them                      list of
+                                                     and determine                       manuscripts
+                                                     last known                          associated
+                                                     locations, but                      with these
+                                                     this would be                       people.
+                                                     very time
+                                                     consuming.
+
+
+
+
+                                                                                                      35
+[B1] How       One can run a You can browse Not easily               In the              The "Transfer
+many           query on          or search to find answered. You "Manuscripts"           of Custody"
+manuscripts    "Lullus" and      all manuscripts   can search for perspective: (A)       results are
+containing     filter the word with Ramon Llull entries that list search for Author understated,
+texts by       only in the field as an author. But Llull as an       "Llul" - this finds given that
+Ramon Llul     "Contenu          their             author with       "Ramon Llull, with many
+were sold in   indicatif         provenance/histo provenance         343 results. (B)    provenance
+the 19th       (auteur, titre)". ry can only be    dates in the      Filter for Transfer events are
+century?       Then one can analysed by            19th century,     of Custody date = only
+               look (by simply looking at each but few entries 1800-1900, with categorized as
+               opening the       manuscript        list specific     four results.       "Activity". But
+               files) if one of individually.      provenance                            you can't
+               these was sold                      dates (7 entries                      tackle this
+               in the 19th                         result from the                       question from
+               century. For                        above search).                        the "Events"
+               the moment                          A better way                          view, since
+               this is not so                      would be to                           that only lists
+               complicated,                        search for                            manuscripts,
+               since there is                      source dates in                       not authors or
+               only one                            the 19th                              works.
+               manuscript                          century, but in
+               with the word                       the current
+               "Lull" in the                       SDBM interface
+               field "Contenu                      it isn't possible
+               indicatif                           to combine an
+               (auteur, titre)".                   author facet
+               Then one can                        with a range of
+               also run the                        source dates
+               query "lullus"                      within the same
+               and open the                        search.
+               three Works in
+               the result list
+               to see if any of
+               them appears
+               in a
+               manuscript.
+               This, however,
+               is not the case
+               for the
+               moment.
+
+
+
+
+                                                                                                      36
+[B3] Who        One can run     You can browse You can quickly        In the              There isn't a
+collects        such a query in or search to find find all entries    "Manuscripts"       way to filter
+manuscripts     several steps all manuscripts     with texts by       perspective: (A)    on current or
+with texts by   (see B1), but   with Ramon Llull Ramon Llull          search for Author past owners,
+Ramon Llul?     for the         as an author. But using a basic       "Llul" - this finds or to sort the
+                moment there their                search. From        "Ramon Llull, with owners by
+                are no results provenance/histo those results,        343 results. (B)    date. But you
+                in the data.    ry can only be    you can browse      Look through the could sort the
+                                analysed by       the Provenance      list of Owners to results lists on
+                                looking at each facet to see a        see which owners either the
+                                manuscript        list of all         have been           "Event" or
+                                individually.     associated          associated with     "Transfer of
+                                                  provenance          these               Custody Date"
+                                                  agents.             manuscripts.        column to get
+                                                  However, this                           some
+                                                  information                             indication of
+                                                  isn't easily                            recent or
+                                                  exported.                               current
+                                                                                          ownership.
+[B4] How      One can run     It is possible to    There are 16     In the                If you select
+many times do such a query in do a keyword         entries that     "Manuscripts"         two or more
+texts by      several steps search of the          contain texts by perspective: (A)      authors in the
+Ramon Llul’s (see B1), but    Manuscript           both Llull and   search for Author "Author" filter,
+appear with   for the         records for a        Albertus         = "Llul" - this finds the results are
+texts by      moment there combination of Magnus in the "Ramon Llull",                    combined as
+Albertus      are no results the two names, SDBM.                   with 343 results. an OR
+Magnus in the in the data.    e.g. "Albertus                        (B) Look through operation (not
+same                          AND Lull" or                          the list of           as AND). It is
+manuscript?                   "Albertus OR                          manuscripts to        not possible to
+                              Lull". Using "Llull"                  see which of them search the
+                              in this search                        also contain          Llull result set
+                              produces no                           Albertus as an        to find those
+                              results, however,                     author.               containing
+                              even though that                                            "Albertus".
+                              is the preferred                                            Sorting the
+                              form in the                                                 Llull result set
+                              Author record -                                             by Author is of
+                              because the                                                 limited help,
+                              search is on the                                            since a
+                              text of the                                                 manuscript
+                              Manuscript entry                                            may contain
+                              and that uses                                               authors other
+
+
+
+                                                                                                       37
+                               "Lull", not on the                                    than Llull or
+                               Authors file                                          Albertus, and
+                               which uses                                            only the first
+                               "Llull".                                              author is
+                                                                                     displayed in
+                                                                                     the summary
+                                                                                     list of results.
+[C1] What was Currently        Not possible. You Difficult to     The closest         (A) This does
+the most      impossible.      can't even sort   answer since     approximation is not cover the
+popular text This is a         the list of       source date is   probably as         full range of
+by a medieval complex          "works" by the    not searchable   follows. (1) In the ownership
+author in     question         number of times in a date range    "Manuscripts"       Events.
+France in the anyway.          they occur in                      perspective, limit (B) The
+17th Century? One cannot       Oxford                             the "Transfer of    "Events" view
+              search by date   manuscripts.                       Custody date" to can be filtered
+              span or by                                          17th century. This by date range
+              place.                                              produces 373        (17th century)
+                                                                  results. (2) Then and by place
+                                                                  limit the "Transfer (France), but
+                                                                  of Custody place" the result is a
+                                                                  to France. This     list of
+                                                                  produces 30         manuscripts,
+                                                                  results. (3) Then not of works
+                                                                  sort by Author or or authors.
+                                                                  Work. Five          (C) The
+                                                                  medieval authors "Works" view
+                                                                  are represented, cannot be
+                                                                  each with one       filtered by
+                                                                  Work.               Place or Event
+                                                                                      (only by
+                                                                                      language or
+                                                                                      production
+                                                                                      date).
+
+
+
+
+                                                                                                    38
+[C2] Did Sir   A query for       (1) You can easily Yes: there are 3   In the               If you search
+Thomas         "Phillipps" and identify all         entries that       "Manuscripts"        in the "Work"
+Phillipps own filter on          manuscripts        describe 13th      perspective: (1)     filter for
+a 13th-century Collections,      formerly owned century bibles         Filter for           "biblia"
+Bible with     shows us the by Phillipps by         that contain       "Phillipps" in       instead, this
+historiated    file of Phillipps selecting his      historiated        Owner - result is produces 1
+initials?      library. At the name from the        initials with      8,752                additional
+               moment there list of Persons.        Phillipps as a     manuscripts. Then manuscript
+               are some 500 But the resulting provenance               (2) search in        with
+               manuscripts       list of            agent.             "Work" filter for historiated
+               described. In     manuscripts                           "bible" - result is initials.
+               the list,         cannot be                             130 manuscripts.
+               however, we       filtered or                           Then (3) search in
+               only see          analysed in any                       "Historiated
+               shelfmarks, so way - except by                          Initials" filter for
+               we will have to inspecting each                         "minimum = 1".
+               open them one entry                                     The combined
+               by one to see if individually. (2)                      result is 10
+               there is a        An Advanced                           manuscripts.
+               13th-century Search for                                 Sorting on the
+               bible among       "Phillipps" can be                    "Historiated
+               them.             filtered for                          Initials" column
+               Alternatively, century of origin                        shows a range
+               we can do a       and presence or                       from 1 to 150
+               general query absence of                                initials.
+               on the word       decoration. But it
+               "bible" and       cannot be refined
+               filter only the by
+               field "Contenu title/contents/wo
+               indicatif         rks.
+               (auteur, titre)"
+               and only on
+               the object
+               "Livre
+               (Exemplaire)".
+               This gives a list
+               of about 140
+               manuscripts. In
+               this list of
+               shelfmarks we
+               will have to
+               open them one
+
+
+
+                                                                                                       39
+                 by one to see if
+                 there is a
+                 13th-century
+                 bible among
+                 them.
+[F1] Combien     There is no      An Advanced        You can easily     In the              You can also
+de manuscrits    simple way to Search for            limit results to   "Manuscripts"       filter on
+enluminés se     search this. But "Phillipps" can be entries owned      perspective: select "Collection"
+trouvent dans    any collection filtered for         by a particular    a specific owner in instead of
+une collection   present in       presence or        person/instituti   the"Owner" filter. "Owner". For
+particulière?    Bibale can be absence of            on, and then       Then combine this the Phillipps
+(volumétrie)     opened and       decoration in the further limit by    with a selection of Catalogus, this
+                 will include a resulting list of    any number of      "minimum = 1" in produces
+                 list of          manuscripts.       physical           one or all of the   results of 413
+                 associated                          characteristics.   filters for         with
+                 books. The files                                       "Miniatures",       decorated
+                 of these books                                         "Decorated          initials, 141
+                 should then be                                         Initials", or       with
+                 opened one by                                          "Historiated        historiated
+                 one to see if                                          initials". For      initials, and 10
+                 they are                                               Thomas Phillipps with both
+                 illuminated or                                         as owner, there     types of
+                 not.                                                   are 555             initials.
+                                                                        manuscripts with
+                                                                        at least one
+                                                                        decorated initial,
+                                                                        198 with at least
+                                                                        one historiated
+                                                                        initial, and none
+                                                                        with miniatures.
+                                                                        There are 14 with
+                                                                        both types of
+                                                                        initials.
+
+
+
+
+                                                                                                          40
+[F3] Qui sont   Any collection     The Oxford        SDBM doesn't In the
+les donateurs   present in         catalogue can be include donor "Manuscripts"
+et les          Bibale can be      filtered to see a relationships     perspective, select
+propriétaires   opened and         list of former    (though a         one (or more) of
+d’une           will include a     owners and/or     general chain of the Collections in
+collection?     list of            donors across the ownership can the "Collections"
+                associated         whole of the      be established filter. Then look at
+                books, as well     modern Oxford within entries, the list of owners
+                as associations    collection. But   showing a direct displayed in the
+                to donators,       there is no way transfer of         "Owners" filter.
+                though one         of filtering for  custody from      This shows the
+                should also        former owner      one provenance number of MSS in
+                look in the file   against specific agent to the       that collection
+                of the person      sub-collections   next). Some       which were also
+                to look for        (e.g., colleges,  entries may       associated with
+                associations       named Bodleian state explicitly specific owners.
+                with donors.       collections).     that someone This information
+                The collection                       donated the       can also be
+                will also show                       manuscript to visualized using
+                links to one or                      another           the "Chart"
+                several                              collection, but functionality.
+                owners.                              this information
+                                                     isn't searchable.
+                                                     In most cases,
+                                                     the best you
+                                                     can do is show a
+                                                     generic
+                                                     association
+                                                     between two
+                                                     provenance
+                                                     agents.
+
+
+
+
+                                                                                             41
+[F4] Faire des Direct searches (1) The               SDBM doesn't In the
+recherches par on these fields Manuscripts list have pigment, "Manuscripts"
+sujet, par      cannot be        can be filtered by technique or     perspective, select
+technique, par operated for      type of material, subject           one (or more) of
+langue, par     the moment, by language, and searching, but the Collections in
+artiste voire   but any          by the presence you can search the "Collections"
+par pigments collection          or absence of       by language and filter. You can
+(plus d’encre present in         decoration. (2)     artist easily.  then inspect the
+d'or, argent et Bibale can be The People list                        other filters to see
+pourpre) dans opened and         can be filtered by                  various
+une collection. will include a role = scribe, or                     characteristics of
+                list of          role = artist, with                 the MSS in that
+                associated       associated lists of                 collection:
+                books. These manuscripts                             material, size,
+                books can then against each                          presence of initials
+                be opened one person.                                and decoration,
+                by one to see if                                     and language. You
+                there are data                                       can browse the
+                on language,                                         list of Works
+                technique, etc.                                      contained in these
+                                                                     MSS, but not by
+                                                                     subject.
+[F5]            Browse to find Browse               Limit search     In the
+Particularités a manuscript; “Manuscripts”,         results to those "Manuscripts"
+d'une           in the record    then filter by     Entries with X   perspective, select
+collection      look at the list “Collection”.      Name as          an owner or a
+(sujet,         of associations Select one          Provenance       collection. Then
+technique, lieu with persons     Collection, and    Agent. From      use the
+de production and with           then filter by     this search      "Production
+etc.) ? Quelles collections.     “Origin” (to see a results page,    Places" map
+en sont les     These two lists list of countries browse the         visualization to
+lacunes ?       can both be      and regions, with Place facet to    see the
+Quelles en      ordered by the numbers of MSS) see a list of all distribution of
+sont les        dates and by     or by “Century” places of           their MSS by place
+dominantes ? the places that (to see a list of      production       of production. For
+                are mentioned centuries with        associated with the distribution of
+                in the           numbers of MSS). those Entries      production dates,
+                respective                          (Numerical       you can sort the
+                columns on the                      Sort=number of list of MSS by
+                right, but these                    entry            "Production date".
+                are the dates                       appearances).
+                and places of                       Browse
+
+
+
+                                                                                            42
+                  the                                 Manuscript
+                  association,                        Date facet
+                  not of the                          similarly.
+                  origin of the
+                  manuscript;
+                  one cannot
+                  filter by those.
+[F6] Vie d'une    Any collection There are no         There's no way In the
+collection, vie   present in        visualizations,   for a user to      "Manuscripts"
+d'un livre        Bibale can be though it might       create             perspective, select
+enluminé ?        opened and        (remotely) be     visualizations     one of the
+                  will include a possible to          within the         collections listed
+                  list of           export the raw    database, but      in the
+                  associations (to TEI files from     you can export "Collections"
+                  books, to         Github and        any search         filter. You can
+                  persons, to       process them      results as a .csv, then visualize the
+                  works, etc.).     into some         and then use       life of this
+                  This will give    visualization     different          collection through
+                  the user          software.         software to        the "Production
+                  information                         create a           Places" map, the
+                  about the live                      visualization      "Last Known
+                  of the                              with that file.    Locations" map,
+                  collection.                         You could          and the
+                  When one has                        search for all of "Migrations" map.
+                  an account                          the entries        You can get the
+                  with                                linked to a        same
+                  administrator                       certain            visualizations for a
+                  rights, one can                     person/instituti specific individual
+                  visualise this in                   on, or all of the MS as well by
+                  a diagram (a                        entries            searching on its
+                  feature that                        describing the "Label" details in
+                  should become                       same               the "Label" filter.
+                  available to all                    manuscript, to The
+                  in the future).                     create the         "landing-page" for
+                                                      visualization.     a specific
+                                                                         individual MS also
+                                                                         provides a full
+                                                                         history of the life
+                                                                         of that MS in
+                                                                         tabular, rather
+                                                                         than graphical,
+                                                                         form.
+
+
+
+                                                                                                43
+[F7] Quels   Any list of      The Oxford           This is         In the
+manuscrits   manuscripts in catalogue only         impossible to   "Manuscripts"
+sont         Bibale can be covers MSS              answer in the   perspective, you
+probablement displayed in     known to be in       SDBM interface. can sort by "Last
+perdus ?     shelfmark        an Oxford library                    Known Location"
+             order. Thus by today.                                 to identify those
+             hand one can                                          MSS which have
+             see which                                             no "Last known
+             names are                                             location."
+             indeed a
+             shelfmark and
+             which are
+             another
+             designation
+             (sale so and so,
+             inventory such
+             and such, etc.).
+             But those that
+             do not have a
+             current
+             shelfmark are
+             of course not
+             necessarily
+             lost. One can
+[F8] Quel       See F7. In the The Oxford          This is difficult The best you can
+manuscrit a     result list all catalogue only     to answer in the do is to browse
+été vendu et    names starting covers MSS          SDBM interface. through those
+n’est pas       with “Vente” known to be in        The best we can MSS with no "Last
+identifié au    (sale) have no an Oxford library   do is search for known location"
+sein d’une      current         today.             Entries that      (see F7), and
+collection à    shelfmark and                      represent         identify those with
+l’heure         are only known                     recent sales,     at least one
+actuelle ?      by their last                      and then isolate "Provenance
+(catalogue de   sale.                              individually      Event".
+vente)                                             those that have
+                                                   no known buyer
+                                                   or more recent
+                                                   observation.
+
+
+
+
+                                                                                           44
+[G1] Quelles       Not easy to do The list of          SDBM entries     In the                  This cannot be
+copies d'un        at the moment Manuscripts can record the             "Manuscripts"           done through
+texte sont         in Bibale.       be filtered by the count of         perspective,            the "Works"
+enluminées ?       Technically, a presence or          miniatures       search for a            perspective,
+                   query for a text absence of         and/or initials, specific Work           however.
+                   could show       decoration; each but not simply using the "Work"
+                   you the list of manuscript          whether a        filter. The
+                   manuscripts      record would       manuscript is    resulting list of
+                   after which you then have to be illuminated or MSS can then be
+                   can open these inspected            not. SDBM also filtered or
+                   files one by     individually. The doesn't have a browsed for the
+                   one to see if    list of Works      work concept. presence of
+                   there are data cannot be            The best you     miniatures,
+                   on the           filtered in this   can do is search decorated initials,
+                   illumination,    way.               for a specific   or historiated
+                   but there are                       title, and then initials.
+                   few text files                      limit to those
+                   and few data                        entries whose
+                   on                                  miniatures or
+                   illumination.                       initial fields
+                                                       aren't blank.
+[G2] Quelle        This is not       Can only be done When browsing You can browse              The most
+position           possible in       by selecting each the Title facet, the list of "Works" effective way
+occupe une         Bibale (or can of the 10,987        sort Titles by     to see which          of doing this is
+copie dans         only be done Works separately Numerical Sort, works only have a through a
+l'histoire de la   by selecting      to see how many then navigate to single MS                 SPARQL query.
+transmission       each work         MSS are linked to page 310 of the attached. This
+d'un texte ? Y     separately to each specific         results, where does mean going
+a-t-il des         see how many Work.                  Titles appearing through more
+exemplaires        MSS are linked                      in only one        than 400,000
+uniques des        to it, but even                     Entry begin to entries for Works,
+oeuvres ?          that is tricky                      appear in the      however. You can
+                   because simply                      results. This will also sort the list of
+                   calling up a list                   return results     Works by
+                   of all the works                    related to         manuscript, but
+                   is currently not                    Entries, not MS this still involves
+                   possible)                           Records.           inspecting all the
+                                                                          entries for Works.
+
+
+
+
+                                                                                                             45
+[G4] Quelles A query of a       The list of Works SDBM doesn't In the "Works"
+sont les       name of an       can be browsed have works. You perspective,
+versions       author or a      to see versions of can search by     search for a
+existantes     title of a work the same Work in various title        specific work
+d'une oeuvre ? with a           different          names to gather using the "Title"
+Qui a fait une subsequent       languages - but different            filter (together
+traduction     filter on the    only inasmuch as versions of the with the "Author"
+française d’un object "Work" they are              same text,        filter if necessary).
+texte ancien ? can easily lead contained in        including         The resulting list
+Quand ?        you to any       Oxford             versions in       can be filtered by
+               work, after      manuscripts. The different           language to see
+               which the file names of the         languages.        different
+               of the work will translators and Depending on translations of
+               show if there the dates of the the entry data, that Work, and
+               are              translations are this would allow the MSS in which
+               associations to not normally        you to            they appear. The
+               other works      specified.         determine the translator's name,
+               signifying the                      date of the first if recorded, will
+               one being a                         appearance of a appear in the
+               translation or a                    text in a certain "Possible author"
+               reworked                            language.         column of the
+               version of the                                        results list.
+               other.
+[5] Quelles    Browse to find     Browse by         Browse via the Browse the
+sont les       the specific       “Works”, select a Title facet, or   "Works"
+différentes    work you are       specific Work,    search on the     perspective (or
+publications   looking for;       and see a list of Title field. Then search for a
+existantes     then in the        all Oxford MSS    limit results to specific work).
+[manuscript    record of this     containing that entries             Select a Work to
+copies] d'un   work one will      Work.             produced in a     view its "landing
+texte ? (date, find in the list                     certain location page". This lists all
+lieu de        of                                   (using the Place MSS of that Work,
+production,    “associations”                       facet or field). together with
+personne(s)    the list of all                      This will return their dates and
+responsable(s) the                                  results related places of
+etc.)          manuscripts it                       to Entries, not production.
+               is linked to.                        MS Records.
+
+
+
+
+                                                                                             46
+[H1] How         One can do a Can filter places    Search on the In "Manuscripts" (A) You cannot
+many             general browse of production by   Place field, or  perspective: (1)    combine two
+manuscripts      on the word     some regions      browse via       Filter on           different
+were             “Lombardie”     (Flanders,        Place facets.    "Production         places in the
+produced in      (for example) Dalmatia, etc.)     Searching on     Place" by           "Production
+Northern Italy   and then filter but not by        only “Northern traversing the        Place" filter.
+and/or           by the field    regions within    Italy” or        hierarchy to reach (B) In Step (1),
+Lombardy?        “lieu” and by most countries.     “Lombardy”       "Lombardy" - then the figure
+                 the object                        returns 6,467    tick box. Result is shown against
+                 “livre”.                          Entries. If you  702. (2) Clear the "Lombardy" in
+                                                   search on all of result from Step 1, the left-hand
+                                                   the regions of then filter on        panel is 728
+                                                   Northern Italy, "Production          rather than
+                                                   6,538 (due to    Place" by           702. The
+                                                   SDBM nesting traversing the          figure for
+                                                   errors). One can hierarchy to reach "Northern
+                                                   open             "Northern Italy.    Italy" is 944.
+                                                   “Manuscript”     Result is 944. (The (C) The
+                                                   facet to see all alternative is to   Bounding Box
+                                                   ms records       use the "Bounding can only be
+                                                   associated with Box" option under rectangular,
+                                                   place.           Filter Options, and and cannot
+                                                                    draw a rectangle follow the
+                                                                    around the          contours of
+                                                                    geographical        geographical
+                                                                    areas. This gives a regions. (D)
+                                                                    result in the order "Northern
+                                                                    of 6,186            Italy" is not a
+                                                                    manuscripts.)       hierarchical
+                                                                                        region in the
+                                                                                        TGN
+                                                                                        vocabulary, so
+                                                                                        Step (2) will
+                                                                                        not pick up
+                                                                                        regions like
+                                                                                        the Veneto
+                                                                                        which are in
+                                                                                        Northern Italy
+                                                                                        but not in
+                                                                                        Lombardy.
+
+
+
+
+                                                                                                     47
+[H2] How      One can obtain Can filter places    Search on the In "Manuscripts" (1) "Low
+many          results by       of production by   Place field, or  perspective: (A)    Countries" is
+manuscripts   general          “Flanders”         browse via       Filter on           not a
+were          browses on the                      Place facets.    "Production         hierarchical
+produced in   modern                              Searching on     Place" by           region in the
+the Low       countries                           Low Countries traversing the         TGN
+Countries?    “Netherlands”,                      returns 9,171    hierarchy to reach vocabulary.
+              “Belgium” and                       Entries. One can "Low Countries" - You have to
+              “Luxemburg”                         open             the result is 151. pick at least 8
+              and then filter                     “Manuscript”     Then filter         different
+              by the field                        facet to see all separately for      terms from
+              “lieu” and by                       ms records       Belgium (1,784), the same level
+              the object                          associated with Flanders (2,413), of the
+              “livre”. Then                       place.           Luxembourg (15), hierarchy
+              one could add                                        Netherlands         under
+              similar browse                                       (2,577), Southern "Europe". (2)
+              on the region                                        Netherlands (307), The Bounding
+              “Nord-Pas-de-C                                       Spanish             Box can only
+              alais” to obtain                                     Netherlands (1), be
+              more                                                 Westhoek (19).      rectangular,
+              accurately the                                       Alternatively: (B) and cannot
+              historic region                                      Use "Production follow the
+              of the “Low                                          Place" filter       contours of
+              Countries”.                                          options and select geographical
+                                                                   "Bounding Box". regions.
+                                                                   Then draw a
+                                                                   rectangle around
+                                                                   the approximate
+                                                                   area of the "Low
+                                                                   Countries" - result
+                                                                   will be something
+                                                                   like 7,395.
+
+
+
+
+                                                                                                   48
+[H3] How        One can obtain Can filter places Use Advanced           In "Manuscripts" (1) The
+many            a list of results of production by Search to limit      perspective: (A)      "Production
+manuscripts     by general        country and a       Manuscript        use the               Place"
+were            browses on        few regions, but Date to              "Production           timeslider is
+produced in     modern places not by a specific 1400-1501 and           Place" filter to find awkward to
+London in the   (e.g. London) city or town. Can Production              "Greater London" use with
+15th century?   and then filter add a century         Place to          in the hierarchy      precision. The
+                by the field      filter to countries London. 348       under "England". closest date
+                “lieu” and by of production.          Entries. It is    This gives 483        range I could
+                the object                            possible to get   manuscripts. Then get was 1382
+                “livre”. But                          to only MS        (B) use the           to 1495. (2)
+                currently one                         records           "Production Date" You might
+                cannot search                         associated with   time slider to limit need to search
+                by date range.                        date, but it is   the results to the the Production
+                                                      not easy to       15th century. This Places to find
+                                                      count the         gives 266             that "Greater
+                                                      faceted list of   manuscripts.          London" is the
+                                                      results.                                correct term.
+[H4] How         A general         Browse by           This one is not In "Manuscripts" This is pretty
+many             browse leads “People” and             really possible. perspective: filter clunky! It
+manuscripts      easily to Sir     select Thomas       The best you       on "Owner" for      might be
+formerly         Thomas            Phillipps. His role can do is limit Thomas Phillipps. easier once
+owned by Sir Phillipps and         can then be         search results This produces           "Last Known
+Thomas           thus to his       filtered for        to Entries with 8,752                  Location" has
+Phillipps are in collection. In    “owner”. The        Phillipps as       manuscripts. Then been
+British          the record of result is a list of Provenance             filter on "Transfer implemented.
+Libraries?       his collection Oxford university Agent. After            of Custody Date" (An alternative
+                 we find a list of and college MSS that, you would for dates after            approach
+                 manuscripts       formerly owned have to go              1872 (death of      might involve
+                 owned by him by Phillipps.            through every Phillipps). This         starting with
+                 (currently just                       Entry/MS           produces 916        "Events",
+                 over 400,                             Record             manuscripts. You selecting "E7
+                 thanks to                             individually to can then browse Activity", and
+                 Synnøve’s                             determine          the list of owners limiting to
+                 work). This list                      which were last (in the Owner          "date > 1872"
+                 is ordered by                         observed in        filter panel on the + collection =
+                 shelfmark and                         British libraries. left) for those     "Phillipps".
+                 one can count                                            which are British This produces
+                 by hand all                                              libraries.          1,579 events
+                 British                                                  (Alternatively, you which can be
+                 libraries.                                               can filter          sorted and
+                                                                          additionally on     browsed by
+
+
+
+                                                                                                         49
+                                                                     "Transfer of        manuscript
+                                                                     Custody Place" for label and/or
+                                                                     places in Britain.) date.)
+[H5] What is   One can do a Can find MSS            This is not       In "Manuscripts" You would
+the average    general browse which contain         feasible in the perspective:          also need to
+number of      on “heures” or “book of hours”,      interface, but if search under        screen out of
+folios in a    “d’heures”,      but each            you exported      "Works" filter for the
+book of        and select the language has a        your search       "hours". This       spreadsheet
+hours?         manuscripts in separate Work         results to .csv   produces 4,319      those
+               the result list. entry. Cannot       you could arrive manuscripts. The manuscripts
+               But there is     then count or       at an estimate. number of folios is which are only
+               currently no     average the folio   Limit results to displayed for each fragments, not
+               way of           numbers but can     those with Book manuscript, where entire codices.
+               selecting or     browse folio        of Hours (etc.) available. There is You should
+               displaying their counts of search    as Title, export no way to find the also add
+               sizes without results.               results, then     average number "heures" and
+               opening these                        find the average of folios across the "horae" to the
+               records one by                       folio count in    full list of        search.
+               one.                                 .csv file.        manuscripts
+                                                                      within the MMM
+                                                                      interface itself.
+                                                                      But if you export
+                                                                      the results of the
+                                                                      search and
+                                                                      manipulate the
+                                                                      resulting CSV file,
+                                                                      you can find the
+                                                                      average number
+                                                                      of folios in that
+                                                                      way. The answer
+                                                                      is 159.86 folios
+                                                                      (across a total of
+                                                                      3,899
+                                                                      manuscripts).
+
+
+
+
+                                                                                                       50
+[H6] Which      You can search Voynich does not Browsing the       In the             The list of MSS
+collectors      for Voynich as appear in the     list of "Sellers" "Manuscripts"      includes
+bought          a person,       Oxford           for Voynich       perspective,       Voynich acting
+manuscripts     which links you catalogue,       produces 47       search for         in the roles of
+from Wilfrid    to his          presumably       records. From "Voynich" as an        "collection
+Voynich?        collection and because he        there you can     Owner. This        owner" and
+Where were      two of the MSS neither sold nor see the list of    produces a list of "manuscript
+they located?   which were      owned any of the "Buyers" for 33 213 MSS which        owner" as well
+What do we      part of that    Oxford MSS.      of these items. can be browsed to as "selling
+know about      collection. But                  You can also see see the other       agent".
+the kind of     you can't                        a list of the 52 owners of each
+manuscripts     follow                           works             MS. To find more
+he sold, and    Voynich's                        contained in      details of the
+their earlier   activities as a                  these MSS.        other owners, you
+histories?      seller of MSS.                   Browsing the      have to select
+                                                 "Provenance"      each one
+                                                 facet for these separately.
+                                                 items displays
+                                                 17 previous or
+                                                 subsequent
+                                                 owners.
+
+
+
+
+                                                                                                   51
+Appendix 3: Publications by staff of the MMM Project
+
+
+
+Antoine Brix (2019) "Reconstructing the Sorbonne Library in the Bibale Database: New Paths
+through Old Matter" ​https://libraria.hypotheses.org/1129
+Eero Hyvönen, Esko Ikkala, Miho Koho, Jouni Touminen, Toby Burrows, Lynn Ransom and
+Hanno Wijsman, "A Linked Open Data Service and Portal for Pre-modern Manuscript
+Research", ​Digital Humanities in the Nordic Countries 2019 Conference,​ Copenhagen, March
+2019 ​http://ceur-ws.org/Vol-2364/20_paper.pdf
+Toby Burrows, Eero Hyvönen, Lynn Ransom, Hanno Wijsman, "Mapping Manuscript
+Migrations: Digging into Data for the History and Provenance of Medieval and Renaissance
+Manuscripts" ​Manuscript Studies​ 3 (1) (2018), 249-251
+Toby Burrows "Connecting Medieval and Renaissance Manuscript Collections", ​Open Library of
+Humanities​, 4 (2) (2018) 32 pp. DOI: ​http://doi.org/10.16995/olh.269
+Toby Burrows “Tracing the History of Medieval and Renaissance Manuscripts: Two Recent
+Digital Humanities Projects”, in: Lana Pitcher and Michael Pidd (eds), ​Proceedings of the Digital
+Humanities Congress 2018​. Studies in the Digital Humanities. Sheffield: The Digital Humanities
+Institute, 2019. ​https://www.dhi.ac.uk/openbook/chapter/dhc2018-burrows
+Burns, Halle; Burrows, Toby; Downie, J. Stephen; Lewis, David; Page, Kevin; Velios, Athanasios.
+2019. "Assessing the practicality of ARK identifier usage in a catalogue of medieval
+manuscripts." ​iConference 2019 Proceedings.​ ​https://doi.org/10.21900/iconf.2019.103380
+Toby Burrows, Antoine Brix, Douglas Emery, Arthur Mitchell Fraas, Eero Hyvönen, Esko Ikkala,
+Mikko Koho, David Lewis, Synnøve Myking, Kevin Page, Lynn Ransom, Emma Cawlfield
+Thomson, Jouni Tuominen, Hanno Wijsman and Pip Wilcox. “Linked Open Data Vocabularies
+and Identifiers for Medieval Studies,” ​DHN 2020​: Digital Humanities in the Nordic Countries:
+Proceedings of the Digital Humanities in the Nordic Countries 5th Conference​, Riga, Latvia,
+October 21-23, 2020. Edited by Sanita Reinsone, Inguna Skadiņa, Anda Baklāne, Jānis
+Daugavietis. CEUR Workshop Proceedings, vol. 2612. pp. 211-218
+http://ceur-ws.org/Vol-2612/short5.pdf
+Burrows, T, Emery, D, Fraas, M, Hyvönen, E, Ikkala, E, Koho, M, Lewis, D, Morrison, A, Page, K,
+Ransom, L, Thomson, E, Tuominen, J, Velios, A and Wijsman, H 2020 “Mapping Manuscript
+Migrations Knowledge Graph: Data for Tracing the History and Provenance of Medieval and
+Renaissance Manuscripts.” Journal of Open Humanities Data​, 6: 3. DOI:
+https://doi.org/10.5334/johd.14
+
+
+
+
+                                                                                               52
+Toby Burrows, Athanasios Velios, Matthew Holford, David Lewis, Andrew Morrison and Kevin
+Page, "Transforming TEI Manuscript Descriptions into RDF Graphs", forthcoming 2020 -
+GraphSDE proceedings
+Toby Burrows, Doug Emery, Arthur Mitchell Fraas, Eero Hyvönen, Esko Ikkala, Mikko Koho,
+David Lewis, Andrew Morrison, Kevin Page, Lynn Ransom, Emma Cawlfield Thomson, Jouni
+Tuominen, Athanasios Velios, Hanno Wijsman. "A New Model for Manuscript Provenance
+Research: the Mapping Manuscript Migrations Project". Submitted to ​Manuscript Studies April
+2020
+
+
+
+
+                                                                                         53
+Appendix 4: Conference Presentations by staff of the MMM Project
+
+
+
+Name of Event                             Location        Date     Status            Disciplinary area
+International Medieval Congress (Leeds)                                             Medieval and
+2018                                      Leeds, UK       July 2018 Paper presented Renaissance studies
+International Medieval Congress (Leeds)                    1-4 July Session          Medieval and
+2019                                      Leeds, UK          2019 presented          Renaissance studies
+                                                                    Paper and
+                                                                    workshop
+                                                                    originally
+                                                                    accepted for
+                                                                    conference;
+                                                                    paper accepted
+International Medieval Congress (Leeds)                             for virtual      Medieval and
+2020                                      Leeds, UK       July 2020 conference       Renaissance studies
+International Congress on Medieval Studies Kalamazoo,         May                 Medieval and
+(Kalamazoo, MI) 2018                       US                2018 Paper presented Renaissance studies
+International Congress on Medieval Studies Kalamazoo,         May Workshop and    Medieval and
+(Kalamazoo, MI) 2019                       US                2019 paper presented Renaissance studies
+                                                              7-9
+                                          Philadelphia,     March                 Medieval and
+Medieval Academy 2019                     US                 2019 Paper presented Renaissance studies
+                                                                   Proposal
+                                          Philadelphia,      April accepted -        Medieval and
+Renaissance Society of America 2020       US                 2020 postponed          Renaissance studies
+                                                          Septemb                  Medieval and
+CARMEN: Ghent                             Ghent            er 2017 Paper presented Renaissance studies
+                                                          February                Medieval and
+ACMRS Conference 2018                     Phoenix, AZ        2018 Paper presented Renaissance studies
+                                                                   Session
+Schoenberg symposium 2019 on linked data Philadelphia,    Novemb presented (four
+(digital and analog)                     US               er, 2019 presenters)       Manuscript studies
+                                                                    Poster and
+                                                                    workshop
+                                                                    presented +
+                                                                    paper on
+                                                          9-12 July Oxford/Bodleian Digital Humanities
+DH 2019 - Utrecht, June 2019              Utrecht            2019 work              Conferences
+
+
+
+
+                                                                                                           54
+                                                                7-9
+DHN 2018 (Digital Humanities in the Nordic                    March                 Digital Humanities
+Countries)                                   Helsinki          2018 Paper presented Conferences
+                                                                6-8
+DHN 2019 (Digital Humanities in the Nordic                    March                 Digital Humanities
+Countries)                                   Copenhagen        2019 Paper presented Conferences
+                                                                     Proposal
+                                                               20-23 accepted -
+DHN 2020 (Digital Humanities in the Nordic                   October conference       Digital Humanities
+Countries)                                   Riga               2020 postponed        Conferences
+                                                                June Accepted but    Digital Humanities
+DH Benelux 2018                              Amsterdam          2018 had to withdraw Conferences
+                                                             Novemb                  Digital Humanities
+DCH - Digital Cultural Heritage              London          er 2017 Paper presented Conferences
+“New Sources for Book History”,                              Novemb
+CERL/British Library, November 2017          London          er 2017 Paper presented Library Conferences
+ISMI: International Manuscript Identifier                    October
+group - CERL/Liber/IRHT                      Paris              2017 Attended         Manuscript studies
+ISMI: International Manuscript Identifier                       April
+group - CERL/Liber/IRHT                      Paris              2018 Attended         Manuscript studies
+Manuscript cataloguing meeting -
+November 2017 - Bodleian, Cambridge,                         Novemb
+British Library                              Oxford          er 2017 Paper presented Manuscript studies
+                                                              March                 Medieval and
+Parker on the Web 2.0                        Cambridge         2018 Paper presented Renaissance studies
+                                                                2-3
+                                                              March
+Object Biographies                           Helsinki          2018 Paper presented Conferences
+                                                               11-13
+                                                            Decembe                  Digital Humanities
+Linked Pasts 2018                            Mainz            r 2018 Poster accepted Conferences
+                                                            Septemb                  Digital Humanities
+Digital Humanities Congress 2018             Sheffield       er 2018 Paper presented Conferences
+                                                               27-29
+                                                            Septemb
+Past, Present, and Future of Libraries       Philadelphia    er 2018 Paper presented Library Conferences
+Association for College and Research                           18-21
+Libraries' Rare Books and Manuscripts                           June
+Section                                      Baltimore          2019 Poster presented Library Conferences
+Workshop on Scholarly Digital Editions,                      3-4 June                Digital Humanities
+Graph Data-Models and Semantic Web           Lausanne           2019 Paper presented Conferences
+
+
+
+                                                                                                            55
+Technologies (GraphSDE)
+                                                           31 March
+                                            Washington,     - 3 April
+iConference 2019                            DC                 2019 Poster presented Library Conferences
+Dark Archives (Medium Aevum journal /                          Sept                 Medieval and
+Society for Medieval Literature)            Oxford             2019 Paper presented Renaissance studies
+Oxford/Cambridge Symposium on                                March
+Manuscript Descriptions                     Oxford            2019 Paper presented Manuscript studies
+                                                              10-14
+                                                               June
+DReAM Lab workshop on Linked Data           Philadelphia       2019 Paper presented Semantic Web
+                                                            October
+HELDIG Summit 2017                          Helsinki           2017 Paper presented Digital Humanities
+                                                              22-23 Paper submitted;
+WHiSe: Workshop on Humanities in the                            May workshop
+Semantic Web III                            Leipzig            2019 cancelled        Semantic Web
+Digital Humanities (DIGIHUM) Academy of
+Finland Programme Annual seminar,                           Novemb
+November 2018                               Helsinki        er 2018 Presented         Digital Humanities
+Digital Humanities (DIGIHUM) Academy of
+Finland Programme Annual seminar, May                           May
+2017                                        Helsinki           2017 Presented         Digital Humanities
+                                                              8 July                  Digital Humanities
+Ontologies workshop - DH 2019               Utrecht           2019 Presented          Conferences
+                                                              8 July                  Digital Humanities
+Materia on the Move workshop - DH 2019      Utrecht           2019 Presented          Conferences
+                                                            26 Sept                   Digital Humanities
+DIGIHUM Conference 2019                     Tallinn           2019 Invited            Conferences
+                                                                     Proposal
+                                                              22-24 accepted -
+                                                               April conference
+Care and Conservation of Manuscripts 18     Copenhagen         2020 postponed         Manuscript studies
+                                                              29-31
+Digging into Data Challenge: end-of-grant   Alexandria,     January
+conference                                  VA                 2020 Paper presented Digital Humanities
+                                                                     Concurrent
+                                                                     session accepted
+                                                            28 April - conference
+Digital Initiatives Symposium 2020          San Diego         2020 postponed          Digital Humanities
+
+Linked Pasts 5 Conference :                                   11-13
+https://linkedpasts5.sciencesconf.org/      Bordeaux       Decembe Poster presented Digital Humanities
+
+
+
+                                                                                                           56
+                                                             r 2019
+
+"History of the Book" Seminar - Bodleian                   28/2/202 Invited and
+Library                                    Oxford                 0 presented         Manuscript studies
+                                                                    Proposal
+                                                                    submitted -
+                                                           3-5 June conference
+DH Benelux 2020                            Leiden             2020 postponed          Digital Humanities
+                                                                    Proposal
+                                                              28-29 submitted -
+                                                                May conference
+Data for History                           Berlin              2020 postponed         Digital Humanities
+                                                             13-14
+                                                             March Invited - event
+Research Group on Manuscript Evidence      Princeton, NJ      2020 cancelled          Manuscript studies
+                                                                     Invited -
+CILIP Cataloguing and Indexing Group                        17 April symposium
+Scotland                                   Glasgow            2020 postponed          Library Conferences
+                                                            18 June Invited - event
+London Rare Book School                    London             2020 postponed          Manuscript studies
+                                                              22-25 Paper submitted
+                                           Krasnoyarsk,    Septemb - conference
+EADH 2nd International Conference          Russia           er 2020 postponed       Digital Humanities
+
+
+
+
+                                                                                                            57
+

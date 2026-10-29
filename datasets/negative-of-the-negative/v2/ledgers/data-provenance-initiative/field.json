@@ -1,0 +1,1054 @@
+{
+ "row": "data-provenance-initiative",
+ "address": "Data Provenance Initiative",
+ "addresses": [
+  "Data Provenance Initiative"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked in order), or the Wikipedia response texts; 47/47 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 the Initiative's home page, B2 the arXiv abstract page, B3 MIT Sloan, B4 Nature Machine Intelligence), all fetched; 'own_page', the census's own-page sources (B5, the repository README, copied from the census's saved copy; the paper, the census's other source, is card B2, the same bytes, carried once as a card) and the Initiative's About page (B7), read under the task's instruction to fetch dataprovenance.org and not cited by the census; 'census_third_party', none (the census read no third-party source for the entity); 'wikipedia', the title, without an article (B6). None unreachable. B1 and B7 are script-rendered: their text is from the site's script bundle, saved.",
+ "lineage_note": "Lineages: what it is (B1, B3, B5, B7); its extent now (B1, B7); the term (B1, B2, B4); the founding audit (B2, B3, B4, B5); the Explorer, Collection and Card (B2, B3, B4, B5); the four systems (B1); the later audits (B1, B3); licence findings (B2, B3, B4); attribution requested (B4); the commercial divide and the non-commercial spike (B1, B2, B4); the language skew (B3, B4); the risks (B3); stated limits (B4, B5, B7); reception (B1, B6). Where a census field restates a field source's quote it is one lineage with that source (PE-02, PE-07, PE-08, PE-10, PE-12, PE-15, PE-16, PE-21: same_lineage_as in the archive ledger).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/ (Bn.html raw, Bn.txt text: for the Initiative's script-rendered pages the served HTML's title and meta description, then the string literals of the route's component in site-main.af19d7fc.js; B5 the census's copy; B6 .wiki, .html, -search.html raw responses with a .txt summary of the HTTP codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the census record's url (https://www.dataprovenance.org/)",
+   "card": "Data Provenance Initiative — Data Provenance Initiative",
+   "url": "https://www.dataprovenance.org/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-initiative-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B1.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B1.txt",
+     "sha256": "86ba9a3ecee7633459623ad0b59674ab5ccb5a0035dc912a8bfa1d8d934c8b92"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:17Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B1.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B1.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "at": "2026-10-29T17:06:31Z",
+     "http": 200,
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": "Data Provenance Initiative",
+   "card_snippet": "Platforms: Data Provenance Initiative (maps AI datasets, web policies, model markets, real-world use). Metrics: 4,000+ audited datasets; 14,000 tracked web doma...",
+   "card_note": null,
+   "names_operator": "yes ('Data Provenance Initiative', 'DPI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The served HTML is the site's script shell (title, meta description, empty root; 1,601 bytes, sha256 bf609f38…, the same shell the data-provenance-explorer row saved at every path). The page text is the string literals of Cr, the / route's component, with the constants it maps, in /static/js/main.af19d7fc.js (fetched verbatim, saved as site-main.af19d7fc.js, sha256 91de539c…, identical to the bundle the data-provenance-explorer row saved), offsets 1862261–1876490, extracted in source order (CSS-like literals and bare years dropped). What dataprovenance.org says (the task's question): four public measurement systems (Data Provenance Explorer, Web Consent Explorer, Open Model Evolution, The AI Observatory) and a metrics strip '4,000+ / datasets audited', '14,000 / web domains tracked', '851k / open models measured', '23,158 / AI conversations annotated' (constant br). The card's 'Metrics: 4,000+ audited datasets; 14,000 tracked web domains' is that strip reworded; its 'Platforms: … (maps AI datasets, web policies, model markets, real-world use)' is the hero line F2."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2; also the census's own-page source data-provenance-initiative--paper (same URL, same sha256)",
+   "card": "arXiv — [2310.16787] The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI",
+   "url": "https://arxiv.org/abs/2310.16787",
+   "kind": "Overview card (the operator's paper)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-initiative-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B2.html",
+     "sha256": "d01552052066b391aeed8b50adde61897cb194ea14727553cbf65971af51bb53"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B2.txt",
+     "sha256": "0063d0167cbd2144f01306ebc2139a2447a859c49a653dbc65c58f2f13c6a6a8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:06:19Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2310.16787",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B2.html",
+    "raw_sha256": "d01552052066b391aeed8b50adde61897cb194ea14727553cbf65971af51bb53",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B2.txt"
+    ],
+    "census_copy": {
+     "src": "data-provenance-initiative--paper",
+     "read": "2026-10-29",
+     "sha256": "d01552052066b391aeed8b50adde61897cb194ea14727553cbf65971af51bb53",
+     "same_bytes": true
+    }
+   },
+   "card_title": "[2310.16787] The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI",
+   "card_snippet": "Audit: 1800+ text datasets traced and audited by legal and machine learning experts to evaluate licensing, lineage, and attribution in AI training. Findings: Co...",
+   "card_note": null,
+   "names_operator": "yes (title; 'Shayne Longpre and 16 other authors')",
+   "names_archive": "no",
+   "note": "Fetched as the card; the bytes are identical to the census's saved copy (sha256 d0155205…), so the card and the census's own page are one source, carried once, as a card."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "MIT Sloan — Bringing transparency to the data used to train artificial intelligence | MIT Sloan",
+   "url": "https://mitsloan.mit.edu/ideas-made-to-matter/bringing-transparency-to-data-used-to-train-artificial-intelligence",
+   "kind": "Overview card (third-party article; Sara Brown, 2025-03-03)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-initiative-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B3.html",
+     "sha256": "563661c73ddce481dd825a948f5c3afa657f017607a21a2e603427ab6ed1996f"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B3.txt",
+     "sha256": "da84c05f68986b58e3fc26343b53743db0b5bcea2ad1b2b517aeda710a4fb6ea"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:07Z",
+    "http": 200,
+    "url": "https://mitsloan.mit.edu/node/49214",
+    "effective_url": "https://mitsloan.mit.edu/ideas-made-to-matter/bringing-transparency-to-data-used-to-train-artificial-intelligence",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B3.html",
+    "raw_sha256": "563661c73ddce481dd825a948f5c3afa657f017607a21a2e603427ab6ed1996f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B3.txt"
+    ],
+    "found_by": "WebSearch on the card's title and site (mitsloan.mit.edu/node/49214, which redirects to the article; the page's <title> is the card's title)"
+   },
+   "card_title": "Bringing transparency to the data used to train artificial intelligence | MIT Sloan",
+   "card_snippet": "Problem: Untraced AI training datasets cause legal, copyright, regulatory, bias, and quality risks due to poor documentation and high license error rates (>50%)",
+   "card_note": null,
+   "names_operator": "yes ('the Data Provenance Initiative'; Pentland, Mahari, Longpre)",
+   "names_archive": "no",
+   "note": "MIT Sloan, Ideas Made to Matter, by Sara Brown, datePublished 2025-03-03 (the page's JSON-LD). The card's snippet ('Problem: Untraced AI training datasets cause legal, copyright, regulatory, bias, and quality risks due to poor documentation and high license error rates (>50%)') is a summary of ¶2 and the first 'key action', not a sentence of the page."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Nature — A large-scale audit of dataset licensing and attribution in AI | Nature Machine Intelligence",
+   "url": "https://www.nature.com/articles/s42256-024-00878-8",
+   "kind": "Overview card (the operator's journal paper, open access)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-initiative-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B4.html",
+     "sha256": "766eb441fb2e78dbad63ca8676edc561bf24da0d7157ce18fda4df0234dc1220"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B4.txt",
+     "sha256": "e9b2e293b13212b16dfadf85aff1892f0d264c909576c62cd064d40df1d9e4d1"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:08:12Z",
+    "http": 200,
+    "url": "https://www.nature.com/articles/s42256-024-00878-8",
+    "effective_url": "https://www.nature.com/articles/s42256-024-00878-8?error=cookies_not_supported&code=fbf2fb11-d6b3-4433-8b88-c13b3c109760",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B4.html",
+    "raw_sha256": "766eb441fb2e78dbad63ca8676edc561bf24da0d7157ce18fda4df0234dc1220",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B4.txt"
+    ],
+    "found_by": "WebSearch on the card's title (DOI 10.1038/s42256-024-00878-8 via OpenAlex); the page's <title> is the card's title"
+   },
+   "card_title": "A large-scale audit of dataset licensing and attribution in AI | Nature Machine Intelligence",
+   "card_snippet": "Audit: 1,858 text/finetuning datasets across 44 collections evaluated for licensing, attribution, and lineage via the Data Provenance Initiative and DPExplorer.",
+   "card_note": null,
+   "names_operator": "yes (the paper's 'data provenance initiative'; authors Longpre … Hooker)",
+   "names_archive": "no",
+   "note": "Nature Machine Intelligence 6, 975–987, published 30 August 2024 (received 15 February 2024); full text served."
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "role": "the census's own-page source data-provenance-initiative--repo-readme (basis operator); not surfaced by T",
+   "card": "Data Provenance Initiative (GitHub) — Data-Provenance-Collection README.md",
+   "url": "https://raw.githubusercontent.com/Data-Provenance-Initiative/Data-Provenance-Collection/main/README.md",
+   "kind": "own page (repository README, markdown)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B5.html",
+     "sha256": "db4c35a5f4f2b17a14680fc1c6854a6f36f82a930c6dfffa4f0297b5ea7dd4f1"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B5.txt",
+     "sha256": "db4c35a5f4f2b17a14680fc1c6854a6f36f82a930c6dfffa4f0297b5ea7dd4f1"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "data-provenance-initiative--repo-readme",
+    "read": "2026-10-29",
+    "http": "200",
+    "sha256": "db4c35a5f4f2b17a14680fc1c6854a6f36f82a930c6dfffa4f0297b5ea7dd4f1",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B5.html",
+    "raw_sha256": "db4c35a5f4f2b17a14680fc1c6854a6f36f82a930c6dfffa4f0297b5ea7dd4f1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B5.txt"
+    ],
+    "note": "copied from /home/claude/fleet/provenance-erasure/data/provenance-census/sources/data-provenance-initiative--repo-readme.html.gz (gunzipped; sha256 matches the census's) and .txt; not refetched (addendum §3)"
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "yes",
+   "names_archive": "no",
+   "note": "The README is markdown; B5.txt is the census's text copy (identical bytes to the raw)."
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "card": "Wikipedia — Data Provenance Initiative (no article)",
+   "url": "https://en.wikipedia.org/wiki/Data_Provenance_Initiative",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B6.wiki",
+     "sha256": "f92e16be9fa948f544a2bc138b25dacc6eef5cb5b320497e1e4103057b07b9b2"
+    },
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B6.html",
+     "sha256": "64f4d986f0e9aa6273b7bd72742a84affdbd64b51b8df152690684f86ba8050c"
+    },
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B6-search.html",
+     "sha256": "43e59e395580b5d884df4155e6c24b540141e6f1019207775d5e54974dc07853"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B6.txt",
+     "sha256": "ff30d99dd38cff9d7e80d164ebf0768cfd6d796728641ae5d959318ac842bbd4"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Data_Provenance_Initiative&action=raw&redirect=no",
+     "at": "2026-10-29T17:06:20Z",
+     "http": 404,
+     "sha256": "f92e16be9fa948f544a2bc138b25dacc6eef5cb5b320497e1e4103057b07b9b2"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Data_Provenance_Initiative",
+     "at": "2026-10-29T17:06:38Z",
+     "http": 404,
+     "sha256": "64f4d986f0e9aa6273b7bd72742a84affdbd64b51b8df152690684f86ba8050c",
+     "retries": [
+      {
+       "at": "2026-10-29T17:06:21Z",
+       "http": 429
+      }
+     ]
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22Data+Provenance+Initiative%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T17:06:22Z",
+     "http": 200,
+     "sha256": "43e59e395580b5d884df4155e6c24b540141e6f1019207775d5e54974dc07853"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B6.txt"
+    ]
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article, no redirect; the full-text search for the quoted phrase in article space returns no results (the same state the data-provenance-explorer row recorded for this title earlier the same day)"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the entity's About page on the census record's url host (dataprovenance.org/about); not cited by the census's sources; read under the task's instruction to fetch dataprovenance.org; not surfaced by T",
+   "card": "Data Provenance Initiative — About",
+   "url": "https://www.dataprovenance.org/about",
+   "kind": "own page (script-rendered route)",
+   "surfaced_by_T": "no (not surfaced by T)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B7.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B7.txt",
+     "sha256": "ede0671f9030be4d6492f19fed09093fc4928dd78f734a95efeef57e70ff8e57"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T17:10:15Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/about",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B7.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B7.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "yes",
+   "names_archive": "no",
+   "note": "The served HTML is the same shell as B1; the text is the string literals of xh, the /about route's component, and what follows it to offset 2100100, before the contributors list (offsets 2090236–2100100). The contributors list that follows (not ledgered) names some fifty people, most of them at MIT, the others at universities and companies in some twenty countries."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "served HTML: meta description",
+   "quote": "Public measurement infrastructure for AI data, model ecosystems, and real-world AI use.",
+   "claim": "the Initiative's self-description: public measurement infrastructure for AI data, model ecosystems and real-world AI use",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "its extent now: public measurement infrastructure for AI data, models and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): hero",
+   "quote": "Public evidence for accountable AI … DPI maps the datasets, web policies, model markets, and real-world AI uses that shape how AI systems are built and governed.",
+   "claim": "what it does: maps the datasets, web policies, model markets and real-world uses that shape how AI is built and governed",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "its extent now: public measurement infrastructure for AI data, models and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): 'Flagship systems'",
+   "quote": "Four public measurement systems … Together they trace AI from source data and web consent to model markets and real-world use.",
+   "claim": "four public measurement systems, tracing AI from source data and web consent to model markets and real-world use",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its extent now: public measurement infrastructure for AI data, models and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): system card 'Data Provenance Explorer' (constant xr)",
+   "quote": "Data Provenance Explorer … Training data … 4,000+ datasets … 608 languages across text, speech, and video … Inspect dataset sources, licenses, creators, geographies, modalities, and derivation chains.",
+   "claim": "the Data Provenance Explorer: training data, 4,000+ datasets in 608 languages across text, speech and video; sources, licences, creators, geographies, modalities, derivation chains",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the four systems and their counts",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): system card 'Web Consent Explorer'",
+   "quote": "Web Consent Explorer … Web data … 14,000 domains … Terms, robots.txt, and crawl restrictions … Track how web consent signals are changing as AI developers compete for training data.",
+   "claim": "the Web Consent Explorer: 14,000 domains, their terms, robots.txt and crawl restrictions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four systems and their counts",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): system card 'Open Model Evolution'",
+   "quote": "Open Model Evolution … Model ecosystem … 851k open models … 2.2B downloads and 200+ model attributes … Monitor concentration, participation, transparency, and technical shifts in open-weight AI.",
+   "claim": "Open Model Evolution: 851k open models, 2.2B downloads; concentration, participation and transparency in open-weight AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four systems and their counts",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): system card 'The AI Observatory'",
+   "quote": "The AI Observatory … Real-world use … 23,158 conversations … 85,633 turns from 7 public sources … Compare how people use and misuse AI systems across sources, models, and contexts.",
+   "claim": "The AI Observatory: 23,158 conversations, 85,633 turns from 7 public sources; how people use and misuse AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four systems and their counts",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): metrics strip (constant br)",
+   "quote": "4,000+ … datasets audited … 14,000 … web domains tracked … 851k … open models measured … 23,158 … AI conversations annotated",
+   "claim": "the metrics: 4,000+ datasets audited, 14,000 web domains tracked, 851k open models measured, 23,158 conversations annotated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the four systems and their counts",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): 'Public-interest infrastructure'",
+   "quote": "DPI releases papers, datasets, and dashboards that help researchers, journalists, policymakers, and builders reason from shared evidence.",
+   "claim": "the Initiative releases papers, datasets and dashboards for reasoning from shared evidence",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a volunteer collective auditing AI data",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): 'Policy and governance relevance'; 'Featured coverage'",
+   "quote": "Our work has been cited in public AI safety and governance reporting and used to ground debates about data transparency, consent, and market concentration. … DPI findings have been covered by the Financial Times, The New York Times, The Washington Post, MIT Technology Review, IEEE Spectrum, and VentureBeat.",
+   "claim": "its account of its uptake: governance reporting and press coverage",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, the encyclopedia, the composition layer",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): publications, 'Consent in Crisis'",
+   "quote": "Consent in Crisis: The Rapid Decline of the AI Data Commons … An audit of terms, restrictions, and consent signals across the web. … NeurIPS 2024",
+   "claim": "Consent in Crisis (NeurIPS 2024): an audit of terms, restrictions and consent signals across the web",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the later audits: consent, multimodal, models, use",
+   "date": "2024 (NeurIPS 2024, as the home page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): publications, the multimodal audit",
+   "quote": "Bridging the Data Provenance Gap Across Text, Speech, and Video … An audit of four thousand public text, speech, and video datasets. … ICLR 2025",
+   "claim": "the multimodal audit (ICLR 2025): four thousand public text, speech and video datasets",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the later audits: consent, multimodal, models, use",
+   "date": "2025 (ICLR 2025, as the home page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): publications, the model economy and real-world use",
+   "quote": "The AI Observatory: A Public Measure of Real-World AI Use … NeurIPS 2026 … Economies of Open Intelligence: Tracing Power and Participation in the Model Ecosystem … Preprint",
+   "claim": "its newest papers: the AI Observatory (NeurIPS 2026) and Economies of Open Intelligence (preprint)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the later audits: consent, multimodal, models, use",
+   "date": "2026 (NeurIPS 2026, as the home page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): findings strip",
+   "quote": "Data transparency … Open weights now outpace truly open-source models … Dataset restrictions … Source content often carries stricter terms than dataset releases … Real-use heterogeneity … No single public conversation source generalizes across AI use",
+   "claim": "the home page's three findings: open weights outpace open source; source content stricter than dataset releases; no single conversation source generalizes",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide, the non-commercial spike, synthetic data",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home (Cr): 'Training Data Provenance'",
+   "quote": "Training Data Provenance … Dataset audits … Trace the sources, licenses, creators, languages, geographies, and derivation chains behind public AI training datasets.",
+   "claim": "training data provenance as dataset audits: the sources, licences, creators, languages, geographies and derivation chains behind public training datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the term: data provenance, its relations and its unit",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 86ba9a3ecee76334…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 25 Oct 2023 (v1), last revised 4 Nov 2023 (this version, v3)] … The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI … by Shayne Longpre and 16 other authors",
+   "claim": "the founding paper, submitted 25 October 2023 (v3 4 November), by Shayne Longpre and 16 other authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the founding audit: 44 collections, 1,800+ text datasets (2023)",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "we convene a multi-disciplinary effort between legal and machine learning experts to systematically audit and trace 1800+ text datasets.",
+   "claim": "the founding audit: legal and ML experts auditing and tracing 1800+ text datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the founding audit: 44 collections, 1,800+ text datasets (2023)",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "We develop tools and standards to trace the lineage of these datasets, from their source, creators, series of license conditions, properties, and subsequent use.",
+   "claim": "the lineage traced: source, creators, licence conditions, properties, subsequent use",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the term: data provenance, its relations and its unit",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "Our landscape analysis highlights the sharp divides in composition and focus of commercially open vs closed datasets, with closed datasets monopolizing important categories: lower resource languages, more creative tasks, richer topic variety, newer and more synthetic training data.",
+   "claim": "closed datasets monopolize lower-resource languages, creative tasks, topic variety and newer synthetic data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: the commercial divide, the non-commercial spike, synthetic data",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "We also observe frequent miscategorization of licenses on widely used dataset hosting sites, with license omission of 70%+ and error rates of 50%+.",
+   "claim": "on hosting sites, licence omission of 70%+ and error rates of 50%+",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: licence omission and error on hosting sites",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "This points to a crisis in misattribution and informed use of the most popular datasets driving many recent breakthroughs.",
+   "claim": "read as a crisis in misattribution and informed use",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: licence omission and error on hosting sites",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "we release our entire audit, with an interactive UI, the Data Provenance Explorer, which allows practitioners to trace and filter on data provenance for the most popular open source finetuning data collections",
+   "claim": "the whole audit released with an interactive UI, the Data Provenance Explorer",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Explorer, the Collection and the Card",
+   "date": "2023-10-25 (v1 submitted; v3 2023-11-04)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0063d0167cbd2144…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "article body ¶4",
+   "quote": "A team of multidisciplinary researchers, including professor Sandy Pentland and others from MIT, created the Data Provenance Initiative to tackle the data transparency challenge head-on.",
+   "claim": "MIT Sloan: multidisciplinary researchers, Sandy Pentland and others from MIT among them, created the Initiative",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a volunteer collective auditing AI data",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'two key actions', first",
+   "quote": "Conducted a systematic audit of more than 1,800 text datasets. The researchers traced the lineage of fine-tuning datasets from 44 of the most widely used text data collections. They found that licenses were frequently miscategorized, with error rates greater than 50% and license information omission rates of more than 70%.",
+   "claim": "MIT Sloan's account of the audit: 1,800+ text datasets from 44 collections; error rates above 50%, omission above 70%",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: licence omission and error on hosting sites",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'two key actions', second",
+   "quote": "Practitioners can also use the tool to generate a human-readable data provenance card for datasets",
+   "claim": "MIT Sloan: the tool generates a human-readable data provenance card",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Explorer, the Collection and the Card",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "article body ¶2",
+   "quote": "Without transparency into the lineage of data used for artificial intelligence models, researchers, businesses, and other intended users may find themselves out of compliance with emerging regulations like the European Union’s AI Act or exposed to legal and copyright risks.",
+   "claim": "the risk without lineage: non-compliance with regulation, legal and copyright exposure",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the risks it addresses",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'other issues', second",
+   "quote": "Language used in the datasets is heavily skewed toward English and Western European languages, with sparse coverage of languages from Asian, African, and South American nations, if at all.",
+   "claim": "MIT Sloan: language skewed to English and Western European languages",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the language and Western skew",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "article body, closing ¶ before the quote",
+   "quote": "While the group’s efforts are currently focused on the data provenance of text, the plan is to expand to other media, such as video, as well as domain-specific data",
+   "claim": "MIT Sloan (March 2025): the work focused on text, with a plan to expand to video and domain-specific data",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the later audits: consent, multimodal, models, use",
+   "date": "2025-03-03 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 da84c05f68986b58…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "article header",
+   "quote": "Published: 30 August 2024 … Nature Machine Intelligence … volume 6, pages 975–987 (2024)",
+   "claim": "the journal version, Nature Machine Intelligence 6, 975–987, published 30 August 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the founding audit: 44 collections, 1,800+ text datasets (2023)",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Introduction ¶3",
+   "quote": "In this work, we term the combination of these indicators, including a dataset’s sourcing, creation and licensing heritage, as well as its characteristics, the ‘data provenance’.",
+   "claim": "data provenance defined: a dataset's sourcing, creation and licensing heritage and its characteristics",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the term: data provenance, its relations and its unit",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Introduction ¶6",
+   "quote": "As a first contribution of the initiative, we audit 44 instruction or ‘alignment’ finetuning data collections composed of 1,858 individual datasets",
+   "claim": "the first contribution: 44 alignment fine-tuning collections, 1,858 datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the founding audit: 44 collections, 1,800+ text datasets (2023)",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Introduction ¶5",
+   "quote": "Notably, we find that more than 70% of licences for popular datasets on GitHub and Hugging Face are ‘unspecified’ … our rigorous re-annotation of licences finds that 66% of analysed Hugging Face licences were in a different use category, often labelled as more permissive than the author’s original licence.",
+   "claim": "over 70% of licences on GitHub and Hugging Face unspecified; 66% of Hugging Face licences in a different use category, often more permissive",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: licence omission and error on hosting sites",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Introduction ¶5",
+   "quote": "Our work highlights a crisis in licence laundering and informed usage of popular datasets",
+   "claim": "a crisis in licence laundering",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: licence omission and error on hosting sites",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "contributions, second",
+   "quote": "The Data Provenance Explorer (DPExplorer) (www.dataprovenance.org), an open-source repository for downloading, filtering and exploring data provenance and characteristics. Our tools auto-generate data provenance cards for scalable symbolic attribution and future documentation best practices.",
+   "claim": "the DPExplorer: an open-source repository for downloading, filtering and exploring provenance; auto-generated provenance cards",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Explorer, the Collection and the Card",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "licence findings",
+   "quote": "In total, 85% of dataset licences request attribution, and 30% include a share-alike clause",
+   "claim": "85% of licences request attribution, 30% share-alike",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: attribution and share-alike requested",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'In 2023 there was a spike in NC/A-O dataset licences'",
+   "quote": "In 2023 there was a spike in NC/A-O dataset licences … in 2023, when many of the most popular and diverse datasets were published, the NC/A-O rate is 61%.",
+   "claim": "a 2023 spike in non-commercial/academic-only licences: 61% of that year's datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide, the non-commercial spike, synthetic data",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "licence-category comparison",
+   "quote": "Table 3 also shows a full 45% of NC/A-O datasets are synthetic, compared to <14% in more permissive licence categories.",
+   "claim": "45% of non-commercial/academic-only datasets synthetic, against under 14% in permissive categories",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide, the non-commercial spike, synthetic data",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "'Language representation is heavily skewed …'",
+   "quote": "we find a stark Western-centric skew in representation.",
+   "claim": "a stark Western-centric skew",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the language and Western skew",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Licence annotation process'",
+   "quote": "Note that this protocol reflects best efforts to verify self-reported licences and does not constitute legal advice.",
+   "claim": "stated limit: best efforts on self-reported licences; not legal advice",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: not legal advice; self-reported licences",
+   "date": "2024-08-30 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 e9b2e293b13212b1…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README ¶1",
+   "quote": "The Data Provenance Initiative is a multi-disciplinary volunteer effort to improve transparency, documentation, and responsible use of training datasets for AI.",
+   "claim": "the Initiative's self-definition: a multi-disciplinary volunteer effort for transparency, documentation and responsible use of training datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a volunteer collective auditing AI data",
+   "date": "undated (the repository README, read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 db4c35a5f4f2b17a…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README ¶1",
+   "quote": "Through a large scale audit of 44 data collections, spanning 1800+ finetuning text-to-text datasets, referred to as the Data Provenance Collection, this initiative's first release thoroughly documents their web and machine sources, licenses, creators, and other metadata.",
+   "claim": "the first release: the Data Provenance Collection, 44 collections, 1800+ fine-tuning datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the founding audit: 44 collections, 1,800+ text datasets (2023)",
+   "date": "undated (the repository README, read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 db4c35a5f4f2b17a…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README ¶1",
+   "quote": "Generating a subset of data from this repository will create a `Data Provenance Card`---symbolic attribution for all constituent datasets, that can be used as structured documentation.",
+   "claim": "the Data Provenance Card: symbolic attribution for a chosen subset",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Explorer, the Collection and the Card",
+   "date": "undated (the repository README, read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 db4c35a5f4f2b17a…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "'Legal Notice and Limitations'",
+   "quote": "The information provided on this page and any output of the Data Provenance Initiative does not, and is not intended to, constitute legal advice; instead, all information, content, and materials are for general informational purposes only.",
+   "claim": "stated limit: no output constitutes legal advice",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: not legal advice; self-reported licences",
+   "date": "undated (the repository README, read by the census 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 db4c35a5f4f2b17a…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Data_Provenance_Initiative",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article 'Data Provenance Initiative' and no article text containing the phrase",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press, the encyclopedia, the composition layer",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 ff30d99dd38cff9d…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "/about (xh): ¶1",
+   "quote": "We are a volunteer collective of AI researchers conducting large-scale audits of the systems and resources that shape modern AI.",
+   "claim": "the About page's self-definition: a volunteer collective auditing the systems and resources of modern AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a volunteer collective auditing AI data",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ede0671f9030be4d…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "/about (xh): ¶1",
+   "quote": "Our work began with training data provenance: tracing datasets from origin to creation, cataloging sources, licenses, creators, and documentation practices. It now also covers web consent, open model markets, concentration of power, and how people use AI systems in practice.",
+   "claim": "its genealogy: begun with training data provenance, now also web consent, open model markets, concentration of power and real use",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "its extent now: public measurement infrastructure for AI data, models and use",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ede0671f9030be4d…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "/about: note",
+   "quote": "We collect self-reported licenses from the papers and repositories that released these datasets and categorize them according to our best efforts as a volunteer research and transparency initiative. Information provided by our work and outputs of the Data Provenance Initiative does not constitute legal advice",
+   "claim": "stated limit: self-reported licences categorized by best efforts; not legal advice",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: not legal advice; self-reported licences",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ede0671f9030be4d…), whitespace-normalised; parts joined by ' … ' each checked, in order"
+  }
+ },
+ "field_sources": {
+  "B1": "Data Provenance Initiative — Data Provenance Initiative (home)",
+  "B2": "arXiv — [2310.16787] The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI",
+  "B3": "MIT Sloan — Bringing transparency to the data used to train artificial intelligence",
+  "B4": "Nature Machine Intelligence — A large-scale audit of dataset licensing and attribution in AI",
+  "B5": "Data Provenance Initiative — Data-Provenance-Collection README",
+  "B6": "Wikipedia — Data Provenance Initiative (no article)",
+  "B7": "Data Provenance Initiative — About"
+ }
+}

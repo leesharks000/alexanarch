@@ -1,0 +1,301 @@
+{
+ "row": "getty-provenance-index",
+ "pass": "first reading, 2026-10-29; a second class stated before the hop was read; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Getty Provenance Index, the Index or its operator named in a sentence that says something of the Index; R, a relation the archive states between the Index and an archive object; O, an archive category applied to the Index or to a class the field sources for it (art provenance records, the ownership history of artworks: B1, B10, B6; art and cultural artifacts, their origins and lineages: B1, B10). A bare mention, a bibliographic copy note, a quoted machine composition, a list of anchors or a reference line is not a claim. The archive names the Index nowhere: the string 'Getty Provenance Index' occurs in no deposit text, and 'Provenance Index' only as the title of the archive's own blog post (#127).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01 v1.1): art history's provenance, 'chain of ownership, attribution', named among the disciplinary homes of provenance; provenance a centuries-old concept in art history; the disambiguation matrix's row 'Provenance (art history) | Documented chain of ownership and attribution for art objects | Adjacent tradition | Same conceptual structure; different object'; and 'All provenance has always had a semantic dimension in principle'. O-class: the archive's category (semantic provenance, its dimensions) applied to the class the field sources for the Index (art provenance records: B1, B10). O725-04 is read at the paragraph of the candidates (§2.3), not itself a string-pass sentence",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03",
+    "O725-04"
+   ],
+   "cands": [
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, the blog-canonical recovery, 2026-05-12): its candidates are #725's sentences; every claim falls in #725's lineage and adds nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "O0021",
+    "O0022"
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure (2026-05-12): the domain table's 'Domain 2: Historical/Cultural Erasure | Bureaucratic stripping of origin from artifacts (Toshakhana, colonial looting)', the archive's category provenance erasure applied to cultural artifacts' origins, the second class the field sources (B1, B10). Reached first by the hop from #725/#1190 (H, forward and reverse); the class was then stated by its field loci and the string pass returned the sentence (O0012). O0013, 'Erasure of provenance in art and cultural artifacts occurs through bureaucratic action …', is inside the deposit's 'Full Overview Text (verbatim)': a machine composition quoted, not the archive's claim; rejected",
+   "claims": [
+    "O729-01"
+   ],
+   "cands": [
+    "O0012"
+   ],
+   "rejected_cands": [
+    "O0013"
+   ]
+  },
+  {
+   "dep": 1369,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #729 (2026-05-14): the same table row and the same quoted Overview; an instance under #729 (S4)",
+   "claims": [],
+   "instance_of": 729,
+   "cands": [
+    "O0023"
+   ],
+   "rejected_cands": [
+    "O0024"
+   ]
+  },
+  {
+   "dep": 1386,
+   "strata": [
+    "O"
+   ],
+   "reason": "provenanceerasure.org canonical definition surface (2026-05-25): 'Domain 2: Historical/Cultural Erasure. Institutional stripping of origin from artifacts — the British Toshakhana, colonial looting, bureaucratic removal of lineage.' The same claim as #729's row, adding no mechanism, qualification, basis, substrate, falsifier or revision; an instance under #729 (S4). Reached by the hop; its string-pass candidate O0025 is the PER taxonomy and makes no claim on the class",
+   "claims": [],
+   "instance_of": 729,
+   "cands": [
+    "O0025"
+   ]
+  },
+  {
+   "dep": 466,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Sealed Room (2026-02-10): the provenance strip defined, the extraction of relational metadata (creator, title, date, source, lineage) from a cultural object; and stated to operate on 'songs, articles, and artworks', 'The system that strips provenance from art'. O-class: an archive category applied to art and cultural artifacts' lineage, the second class (B1, B10). The archive's earliest claim in the subset",
+   "claims": [
+    "O466-01",
+    "O466-02"
+   ],
+   "cands": [
+    "O0005",
+    "O0006"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/getty-provenance-index-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and attribution note for the entity's capture (OBS-700ba3d88603, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/getty-provenance-index/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'getty-provenance-index'], organizing_question, schema_note; rendered aggregators/getty-provenance-index/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their evidence and basis, and the schema's organizing question; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    127
+   ],
+   "reason": "Inscriptions That Survive the Tokenizer (SPXI-TLP v2.2): 'Provenance Index' is the archive's own blog post, 'The Provenance Index for Mind Control Poems', the retrofit anchor for the blog's attribution: a homonym of the entity, not a claim on it (D0001–D0007, R0001–R0004, O0002–O0003; H0014)"
+  },
+  {
+   "dep": [
+    1699
+   ],
+   "reason": "a bibliographic line, '… Getty Research Institute copy', locating a facsimile of the Papyrus of Ani: the operator named as a holding library; no claim on the Index (D0008)"
+  },
+  {
+   "dep": [
+    29
+   ],
+   "reason": "O0001: transcoding of 'a cultural object into a different format' (Manovich): a cultural object as medium, not its origins or lineage"
+  },
+  {
+   "dep": [
+    416,
+    833,
+    1423
+   ],
+   "reason": "O0004, O0014–O0020, O0026–O0027: machine-mediated reception of 'cultural objects' (texts, concepts, authors, traditions) and the summarizer as horizon of reception: the category bears on the representation of a cultural object, not its provenance or ownership; the class sense is not the field's"
+  },
+  {
+   "dep": [
+    516
+   ],
+   "reason": "O0007: 'Forensic analysis of cultural objects, documents, and media artifacts' in a list of fields: a listing"
+  },
+  {
+   "dep": [
+    582
+   ],
+   "reason": "O0008: a practitioner's diagnosis 'on the same cultural object': method, no claim on the class's origins or lineage"
+  },
+  {
+   "dep": [
+    641
+   ],
+   "reason": "O0009: 'in every encounter with a cultural artifact, what survives, what burns, and who decides': pedagogy of compression; no claim on artifacts' provenance"
+  },
+  {
+   "dep": [
+    3
+   ],
+   "reason": "H0002: the deposit 'AI Overview Capture Registry v8.3' resolves to the live registry file (data/EA-WG-CAPTURES-01.json), whose statements on the entity are ledgered here as CAP-1-01–CAP-1-10; its other hits are machine transcripts and the CMS capture's 'Getty Images v. Stability AI' (a homonym)"
+  },
+  {
+   "dep": [
+    162,
+    1202,
+    726,
+    845,
+    1229
+   ],
+   "reason": "hop candidates with string hits only: 'museum' (Field Museum, Museum of Science, Boston, of the Mary Lee namespace), and #726's 'art history' and 'cultural heritage' in lists of adjacent fields: listings, no claim on the Index or the classes"
+  },
+  {
+   "dep": [
+    1,
+    8,
+    31,
+    72,
+    89,
+    92,
+    100,
+    103,
+    104,
+    105,
+    112,
+    133,
+    140,
+    141,
+    149,
+    151,
+    155,
+    156,
+    160,
+    173,
+    198,
+    204,
+    250,
+    333,
+    349,
+    578,
+    666,
+    673,
+    716,
+    766,
+    768,
+    792,
+    823,
+    998,
+    999,
+    1077,
+    1110,
+    1168,
+    1170,
+    1171,
+    1177,
+    1196,
+    1201,
+    1210,
+    1251,
+    1368,
+    1370,
+    1384,
+    1389,
+    1393,
+    1677,
+    1680,
+    1684
+   ],
+   "reason": "hop candidates read for the entity's strings and the classes' terms (art history, artwork, auction, museum, chain of ownership, ownership history, Getty, Provenance Index, art market, cultural heritage, cultural artifact or object, looted, restitution): none present; no claim on the Index or the classes"
+  }
+ ],
+ "hop": {
+  "from": [
+   466,
+   725,
+   729,
+   1190,
+   1369,
+   1386
+  ],
+  "candidates": 63,
+  "deposits": 60,
+  "admitted": 0,
+  "note": "the first hop, from #725 and #1190 only (35 candidates), reached #729, #1369 and #1386; with the second class stated they were read and admitted at O (#729) or grouped as its instances (#1369, #1386); the hop was then rerun from every admitted deposit (63 candidates in 60 deposits) and admitted none further"
+ },
+ "class_pass": "O-class: the first class (art provenance records) matched 4 sentences, all in #725/#1190 (admitted); the second (art and cultural artifacts, their origins and lineages) matched 21 sentences in 12 deposits, admitted at #466 and #729 (with #1369 and #1386 as instances), the rest rejected above",
+ "observations": "The archive's bearing on the Index is by class only. No deposit names the Getty Provenance Index; the operator appears once, as a library holding a facsimile. The archive's account of art provenance is #725's: an adjacent tradition of provenance, 'Same conceptual structure; different object', with a semantic dimension in principle; and its category provenance erasure applies to cultural artifacts (#729, 'Bureaucratic stripping of origin from artifacts') and the provenance strip to artworks (#466). The provenance census record and the capture record carry the entity itself.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 8,
+   "D_deposits": 2,
+   "R_sentences": 4,
+   "R_deposits": 1,
+   "O_direct": 2,
+   "O_class": 25,
+   "O_deposits": 14,
+   "H_candidates": 63
+  },
+  "deposits_candidate": 74,
+  "deposits_admitted": 6,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 3,
+  "hop_candidates": 63,
+  "hop_deposits": 60,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 10,
+   "pe": 19,
+   "deposit": 7
+  }
+ }
+}

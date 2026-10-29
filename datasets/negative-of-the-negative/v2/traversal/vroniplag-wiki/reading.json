@@ -1,0 +1,256 @@
+{
+ "row": "vroniplag-wiki",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over the archive texts found no D or R candidate: no deposit text names VroniPlag, its host, GuttenPlag, Martin Heidingsfelder or Debora Weber-Wulff. O-class ran on three classes sourced from the field (config): plagiarism documentation (the census lineage 'authorship and reuse'; B1, W1, B2), crowdsourced documentation (the census kind 'documentation wiki'; B1), the revocation of academic degrees (B1, W1); 17 sentences in 11 deposits, all on the first class but two. Admission by reading: a sentence is admitted to O when it applies an archive category to the documentation, detection or checking of plagiarism, a class the field sources for the wiki; a sentence that uses 'plagiarism' as a foil or a practice (what an attack is more than, what a translation is not, what a samizdat is not, a source of institutional failure), or a licence exclusion, is not. The hop (H) ran from the two deposits admitted (#725, #729): 41 candidates; #1190 and #1369 are later versions of #725 and #729 and carry the admitted sentences again (one lineage each, S4: kept as instances, the earlier deposit keeping the date); the other 39 were read for any sentence on the wiki or the three classes and have none. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (findings, analysis, reading and q_kind) and the provenance census record (census.json row vroniplag-wiki, organizing_question and schema_note; rendered aggregators/vroniplag-wiki/index.html), ledgered as CAP-1-NN and PE-NN.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class (plagiarism documentation): #725 places plagiarism detection among the 'adjacent measurement traditions' its Provenance Erasure Rate is 'related to but distinct from' (§0, Central Invariant ¶3), defines it in its Disambiguation Matrix as 'Whether text overlaps with existing corpora', an 'Adjacent integrity tool', with the rule 'Detects copy; PER detects lineage erasure regardless of paraphrase' (§4), and asks that a composition acknowledge the distinction (§9 Test 6). The class membership is the field's (B1: 'examines and documents the extent of plagiarism'; W1: 'kollaborative Plagiatsdokumentation'; B2: 'Plattform zur Dokumentation von Plagiaten'). The deposit does not name the wiki.",
+   "claims": [
+    "O725-01",
+    "O725-02",
+    "O725-03"
+   ],
+   "cands": [
+    "O0007",
+    "O0008"
+   ],
+   "instances": [
+    {
+     "dep": 1190,
+     "cands": [
+      "O0012",
+      "O0013",
+      "H0024",
+      "H0025"
+     ],
+     "note": "v1.1 of #725 (2026-05-12): the same sentences (¶29, ¶102 row, ¶148); one lineage, S4, #725 keeps the earliest date"
+    }
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class (plagiarism documentation): #729's Disambiguation Matrix (§9) sets 'Plagiarism checking' against its account of provenance: 'Compares text to corpus. Provenance specifies lineage before comparison.' Class membership as for #725. The deposit does not name the wiki.",
+   "claims": [
+    "O729-01"
+   ],
+   "cands": [
+    "O0010"
+   ],
+   "instances": [
+    {
+     "dep": 1369,
+     "cands": [
+      "O0015",
+      "H0032",
+      "H0033"
+     ],
+     "note": "the expanded version of #729 (2026-05-14), the same row (¶126); one lineage, S4"
+    }
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/vroniplag-wiki-aio-20261029/",
+   "reason": "the registry's findings, analysis, reading and q_kind at the entity's capture by name (OBS-3bec82cf1f12, AXN:0AD6.CAPTURE.🧲⛩️🧱🌊📐🌗), read from data/EA-WG-CAPTURES-01.json",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/vroniplag-wiki/",
+   "reason": "the provenance census record (compiled 2026-10-29, schema 1.0; editor Lee Sharks): its fields and their evidence (census.json, row vroniplag-wiki), its organizing question and schema note",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21",
+    "PE-22",
+    "PE-23",
+    "PE-24",
+    "PE-25",
+    "PE-26",
+    "PE-27"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    87,
+    1127
+   ],
+   "cands": [
+    "O0001",
+    "O0011"
+   ],
+   "reason": "'Someone does not merely plagiarize your work': plagiarism as the lesser foil of an ontological claimant attack; no category applied to its documentation"
+  },
+  {
+   "dep": 302,
+   "cands": [
+    "O0002"
+   ],
+   "reason": "a licence exclusion ('For-profit plagiarism detection platforms' among excluded uses of ASDF metrics): a term of use, no claim on the class"
+  },
+  {
+   "dep": 337,
+   "cands": [
+    "O0003"
+   ],
+   "reason": "'not plagiarism from any human translator, but emergent synthesis': plagiarism as what a machine translation is not; no claim on its documentation"
+  },
+  {
+   "dep": 609,
+   "cands": [
+    "O0004",
+    "O0005"
+   ],
+   "reason": "a 'Crowdsourced Canon' and 'crowdsourced castings' of the Mandala: crowdsourcing of another object, no claim on crowdsourced documentation of plagiarism"
+  },
+  {
+   "dep": 615,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "'medical recommendations sourced from plagiarized papers' as one provenance failure among others: plagiarism as a practice, no claim on its documentation"
+  },
+  {
+   "dep": [
+    729,
+    1369
+   ],
+   "cands": [
+    "O0009",
+    "O0014"
+   ],
+   "reason": "'defending against plagiarism charges' as labour process provenance replaces: plagiarism charges as a cost, no claim on their documentation (#729 is admitted on its §9 row)"
+  },
+  {
+   "dep": 1440,
+   "cands": [
+    "O0016",
+    "O0017"
+   ],
+   "reason": "'Semantic samizdat is not: plagiarism · …': a boundary of the archive's own concept against plagiarism as a practice; no claim on its documentation"
+  },
+  {
+   "dep": [
+    89,
+    92,
+    100,
+    103,
+    104,
+    105,
+    112,
+    133,
+    140,
+    141,
+    149,
+    151,
+    160,
+    162,
+    204,
+    250,
+    349,
+    673,
+    726,
+    768,
+    823,
+    845,
+    998,
+    1196,
+    1201,
+    1202,
+    1210,
+    1229,
+    1368,
+    1370,
+    1384,
+    1386,
+    1389,
+    1393,
+    1677,
+    1680,
+    1684
+   ],
+   "cands": [
+    "H0001",
+    "H0002",
+    "H0003",
+    "H0004",
+    "H0005",
+    "H0006",
+    "H0007",
+    "H0008",
+    "H0009",
+    "H0010",
+    "H0011",
+    "H0012",
+    "H0013",
+    "H0014",
+    "H0015",
+    "H0016",
+    "H0017",
+    "H0018",
+    "H0019",
+    "H0020",
+    "H0021",
+    "H0022",
+    "H0023",
+    "H0026",
+    "H0027",
+    "H0028",
+    "H0029",
+    "H0030",
+    "H0031",
+    "H0034",
+    "H0035",
+    "H0036",
+    "H0037",
+    "H0038",
+    "H0039",
+    "H0040",
+    "H0041"
+   ],
+   "reason": "hop from #725 and #729 (forward and back): read for any sentence on the wiki, on plagiarism's documentation, detection or checking, on crowdsourced documentation or on the revocation of degrees; none (a string check found no such term in any of them but #1684's 'the revocation gap', a concept of #1 on another object)"
+  }
+ ],
+ "S5": "no admitted deposit's text path missing (non_traverse.py)",
+ "arms": "A_naive and A′ not run (v2.0 working procedure, as on the other aggregator rows)"
+}

@@ -1,0 +1,58 @@
+{
+ "row": "attribench",
+ "address": "AttriBench",
+ "entity": "AttriBench (huggingface.co/datasets/bermaneh/AttriBench), the fame- and demographically-balanced quote attribution benchmark dataset of Eliza Berman, Bella Chang, Daniel B. Neill and Emily Black, introduced in 'Attribution Bias in Large Language Models' (arXiv:2604.05224, v1 6 April 2026, v2 24 September 2026; accepted at COLM 2026): 15,620 quotes from 6,292 authors on which 11 LLMs were evaluated for attribution accuracy and for suppression, the omission of attribution where authorship information is available; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/attribench/)",
+ "row_type": "C (a public entity on which the archive bears: a benchmark dataset and its paper; an entity of the provenance meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bAttriBench\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAttribution Bias in Large Language Models\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b2604\\.05224\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bbermaneh\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bBerman et al\\.?",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "evaluation of whether LLMs attribute content to its original authors (attribution benchmarks and metrics)",
+   "pattern": "\\b(quote[- ]attribution|attribution[- ](benchmarks?|bias|accuracy|metrics?|evaluation|loss|survival|fidelity|preservation|erosion)|attribut\\w* (content|claims?|quotes?) to (its|their) (original )?(authors?|sources?))\\b",
+   "flags": "i",
+   "basis": "field: B1 (arXiv:2604.05224, Abstract: 'As Large Language Models (LLMs) are increasingly used to support search and information retrieval, it is critical that they accurately attribute content to its original authors. In this work, we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset' … 'We observe large and systematic disparities in attribution accuracy' … 'systematic biases not captured by standard accuracy metrics'); B6 (dataset card, heading: 'A fame- and demographically-balanced quote attribution benchmark for measuring attribution bias in LLMs'); the census kind 'benchmark' and capability 'tests' (PE record)"
+  },
+  {
+   "term": "suppression: attribution omitted though authorship information is available",
+   "pattern": "\\b(omit\\w* (the |all )?(author(ship)? )?attributions?|(author )?attributions? (is |was |are |were )?(omitted|suppressed)|omission of (author(ship)? )?attributions?|attribution (omission|suppression)|suppress\\w* (the )?attributions?|attribution[- ]stripp\\w*|strip\\w* (the |of )?attributions?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (arXiv:2604.05224, Abstract: 'We further introduce and investigate suppression, a distinct failure mode in which models omit attribution entirely, even when the model has access to authorship information'); B6 (dataset card, Quickstart: the paper's 'suppression definitions'); the census relation type 'suppression (attribution omitted though authorship information is available)' (PE record)"
+  }
+ ],
+ "classes_note": "Two classes, sourced from the field by locus (B1, B6) and named by the census record: the entity as a quote attribution benchmark, one of the instruments that evaluate whether LLMs attribute content to its original authors (the census kind 'benchmark' and capability 'tests'; B1 Abstract s1–s2 and s5–s6; B6 heading); its pattern takes the field's terms (quote attribution, attribution accuracy, attribution bias, accuracy metrics) and the outcome they measure (attribution loss, survival, preservation, fidelity, erosion), since a measure of attribution names what it measures, and the failure mode it introduces, suppression, the omission of attribution where authorship information is available (B1 Abstract; the census relation types). The second pattern takes the field's phrasing ('omit attribution') and its near forms (attribution omitted, suppressed or stripped); a bare 'attribution' is not a class term. The census lineage 'answer engines' names the systems the benchmark tests (B1 Abstract s1: LLMs 'increasingly used to support search and information retrieval'), not a class the benchmark belongs to, and is not run as a class: an archive sentence about answer engines is not, by that alone, a sentence about attribution benchmarks. The aliases are the entity's name (case-insensitive; it also matches the PyTorch library's name, a homonym, and any hit is read for which), its paper's title, its arXiv number, the dataset's Hugging Face namespace and the paper's short citation form. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on AttriBench, or applies an archive category (provenance erasure, PER, attribution survival, the composition layer) to quote attribution benchmarks or to the omission of attribution where authorship is available, as a class; a bare mention, a list, a citation entry or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'AttriBench' (attribench-aio-20261029, OBS-105f05728f64, ADDR-4f2aecf54788), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#109, #120, #138, #163, #229, #232, #449, #599, #716, #829, #1546).",
+ "hop_from": [
+  109,
+  120,
+  138,
+  163,
+  229,
+  232,
+  449,
+  599,
+  716,
+  829,
+  1546
+ ]
+}

@@ -1,0 +1,1958 @@
+Content Credentials - Wikipedia
+
+Jump to content
+
+Main menu
+
+Main menu
+
+ move to sidebar
+ hide
+
+ Navigation
+
+Main page
+
+Contents
+
+Current events
+
+Random article
+
+About Wikipedia
+
+Contact us
+
+ Contribute
+
+Help
+
+Learn to edit
+
+Community portal
+
+Recent changes
+
+Upload file
+
+Special pages
+
+Search
+
+ Search
+
+Appearance
+
+Donate
+
+Create account
+
+Log in
+
+Personal tools
+
+Donate
+
+Create account
+
+Log in
+
+Contents
+
+ move to sidebar
+ hide
+
+(Top)
+
+ 1
+ Distinction between provenance and factual accuracy
+
+ 2
+ C2PA Conformance Program
+
+ Toggle C2PA Conformance Program subsection
+
+ 2.1
+ Conforming Implementations
+
+ 3
+ Ecosystem and adoption
+
+ Toggle Ecosystem and adoption subsection
+
+ 3.1
+ Media Providers
+
+ 3.1.1
+ Generative AI Platforms
+
+ 3.1.2
+ Cameras
+
+ 3.1.3
+ Mobile apps with Camera Support
+
+ 3.1.4
+ Mobile apps
+
+ 3.1.5
+ Desktop Application software
+
+ 3.1.6
+ Media organizations
+
+ 3.2
+ Media Infrastructure
+
+ 3.3
+ Publishing Platforms
+
+ 3.4
+ Client-Side Verifiers
+
+ 4
+ Open-source software development kits and libraries
+
+ Toggle Open-source software development kits and libraries subsection
+
+ 4.1
+ Adobe and Content Authenticity Initiative
+
+ 4.2
+ TrustNXT
+
+ 4.3
+ Google
+
+ 5
+ Licensing
+
+ 6
+ References
+
+Toggle the table of contents
+
+Content Credentials
+
+2 languages
+
+Беларуская
+
+Русский
+
+Edit links
+
+Article
+
+Talk
+
+ English
+
+Read
+
+Edit
+
+View history
+
+Tools
+
+Tools
+
+ move to sidebar
+ hide
+
+ Actions
+
+Read
+
+Edit
+
+View history
+
+ General
+
+What links here
+
+Related changes
+
+Upload file
+
+Permanent link
+
+Page information
+
+Cite this page
+
+Get shortened URL
+
+Switch to legacy parser
+
+ Print/export
+
+Download as PDF
+
+Printable version
+
+ In other projects
+
+Wikidata item
+
+Appearance
+
+ move to sidebar
+ hide
+
+From Wikipedia, the free encyclopedia
+
+Digital media metadata specification for provenance and authenticity
+
+C2PA Manifest Store
+
+Filename extension
+
+.c2pa
+
+Internet media type
+
+application/c2pa
+
+Developed by
+
+Coalition for Content Provenance and Authenticity (C2PA)
+
+Initial release
+
+December 21, 2021; 4 years ago (2021-12-21)
+
+Latest release
+
+2.4
+April 21, 2026; 6 months ago (2026-04-21) 
+
+Type of format
+
+Digital media provenance and asset history
+
+Container for
+
+JSON
+
+JSON-LD
+
+XMP
+
+JPEG universal metadata box format
+
+CBOR
+
+COSE digital signatures
+
+X.509 certificates
+
+Contained by
+
+JPEG (APP11)
+
+PNG (eXIf/iTXt)
+
+MP4 (uuid)
+
+PDF
+
+Open format?
+
+Yes
+
+Website
+
+contentcredentials.org
+
+Content Credentials are cryptographically signed metadata structures, known as C2PA manifests, that provide a verifiable record of a digital asset's provenance and modification history. Defined by the C2PA specifications,[1] this architecture establishes a core set of technical assertions, while supporting custom schemas to extend metadata regarding authorship, content intent, and machine-readable usage preferences.
+
+The core C2PA specification is authored and maintained by the Coalition for Content Provenance and Authenticity (C2PA), an industry group composed of major technology firms and media companies. It operates as a project of the Joint Development Foundation (JDF),[2] an affiliate of the Linux Foundation.
+
+A supplementary specification addressing identity, publishing, licensing, and schema-based assertions is defined in the Creators Assertions Working Group (CAWG) specification.[3]
+This specification is overseen by the Decentralized Identity Foundation (DIF) and maintained by Adobe.[4]
+
+Parallel promotional initiatives, including sponsored brand campaigns in media outlets,[5] educational outreach,[6] and legislative adoption efforts,[7] are led by the Content Authenticity Initiative (CAI), a cross-sector coalition established by Adobe.
+
+Distinction between provenance and factual accuracy
+[edit]
+
+Adobe's marketing of Content Credentials as a digital "nutrition label"[8] is a false equivalence as such labels catalog objective chemical composition while Content Credentials merely verify provenance and digital integrity without assessing the objective truth of the content itself. Consequently, a fabricated or misleading image can maintain a valid cryptographic credential that confirms its origin while validating deceptive content as technically authentic.[9]
+
+C2PA Conformance Program
+[edit]
+
+In early-to-mid 2024, the C2PA established the Conformance Task Force to transition its open technical specifications into a verifiable compliance model to foster market trust. The task force utilized the Trust over IP (ToIP) Governance Metamodel to structure its compliance policies.[10]
+
+The C2PA Conformance Program soft-launched on June 4, 2025, at the Content Authenticity Initiative (CAI) Summit,[11] followed by a full public launch in October 2025.[12] The transition concluded on December 31, 2025, when the C2PA Interim Trust List was officially deprecated.[13]
+
+In October 2026, security researcher David Buchanan demonstrated a vulnerability in the C2PA specification that allows an attacker to alter an image without invalidating its cryptographic signatures or trusted timestamps. By exploiting a feature that permits arbitrary byte range "exclusions," a signer can exclude an entire file from signature calculations. This generates a valid timestamp over an empty string, allowing the image to be tampered with after the fact without triggering current C2PA verification tools. Buchanan noted that a complete fix is complex due to format-specific requirements, suggesting that verifiers must strictly enforce constraints on allowed exclusion ranges.[14]
+
+Conforming Implementations
+[edit]
+
+While the C2PA Conformance Explorer[15] registry indexes over 200 active products, ecosystem data indicates that 10 organizations have deployed products that simultaneously complete the Conformance Program and achieve on-boarding onto the central C2PA Trust List.
+
+Organization / Company
+
+Deployed Conforming Product(s)
+
+C2PA Version
+
+OpenAI
+
+ChatGPT / GPT images
+
+2.4
+
+Google LLC
+
+Gemini, Pixel Camera, Google Photos
+
+2.2
+
+Guardian Project
+
+Proofmode Capture App
+
+2.2
+
+Vivo Mobile Communication
+
+Vivo / JOVI Camera/Albums App
+
+2.2
+
+VBrick Systems, Inc.
+
+VBrick Video Platform
+
+2.2
+
+Encypher Corporation
+
+Encypher Mark
+
+2.2
+
+National Public Broadcasting Company of Ukraine
+
+Suspilne Media
+
+2.2
+
+Austrian Parliament
+
+Austrian Parliament Mediathek
+
+2.2
+
+Stability AI
+
+Brand Studio, Stable Audio and Developer Platform API
+
+2.2
+
+Cloudinary Ltd.
+
+Cloudinary
+
+2.2
+
+Ecosystem and adoption
+[edit]
+
+Content Credentials architecture spans four distinct components of the digital media lifecycle that handle the creation, transit, presentation, and verification of digital assets.
+
+Media Providers
+[edit]
+
+Hardware devices (e.g., cameras with hardware security module), editing software, and generative artificial intelligence (AI) platforms acting as C2PA claim generators. Providers ingest metadata such as timestamps or editing history.
+
+Generative AI Platforms
+[edit]
+
+Service
+
+Developer
+
+Implementation
+
+AI Disclosure [16]
+
+ C2PA Conformance Program
+
+Trust Lists
+
+Adobe Firefly
+
+Adobe Inc.
+
+2023-03 [17]
+
+no
+
+no
+
+C2PA Interim Trust List
+
+Respeecher
+
+Respeecher
+
+2023-07 [18]
+
+No
+
+No
+
+No
+
+Microsoft Designer
+
+Microsoft Corporation
+
+2023-09 [19]
+
+No
+
+No
+
+C2PA Interim Trust List
+
+Stability AI Brand Studio, Stable Audio, Platform API
+
+Stability AI Ltd.
+
+2023-11 [20]
+
+No
+
+2.2
+
+C2PA Trust List
+
+DALL-E / ChatGPT
+
+OpenAI
+
+2024-02 [21]
+
+No
+
+2.4
+
+C2PA Trust List
+
+Microsoft Azure
+
+Microsoft Corporation
+
+2024-02 [22]
+
+no
+
+no
+
+C2PA Interim Trust List
+
+Runway
+
+Runway AI, Inc.
+
+2024-06 [23]
+
+no
+
+2.2
+
+No
+
+ElevenLabs
+
+ElevenLabs Inc.
+
+2024-07 [24]
+
+no
+
+no
+
+C2PA Interim Trust List (Expire 2026-10-06)
+
+Flux API
+
+Black Forest Labs
+
+2024-09 [25]
+
+Model Name
+
+No
+
+No
+
+Amazon Titan Image Generator
+
+Amazon.com, Inc.
+
+2024-09 [26]
+
+No
+
+2.2
+
+C2PA Interim Trust List (Expire 2026-12-06)
+
+Bria AI
+
+Bria Artificial Intelligence Ltd.
+
+2025-01 [27]
+
+No
+
+No
+
+C2PA Interim Trust List
+
+Dreamina
+
+ByteDance Ltd.
+
+2025-04 [28]
+
+No
+
+No
+
+No
+
+Google Gemini
+
+Google LLC
+
+2025-08 [29]
+
+No
+
+2.2
+
+C2PA Trust List
+
+Grok Imagine
+
+SpaceXAI LLC
+
+2026-04 [30]
+
+No
+
+No
+
+No
+
+Seedance / Seedream
+
+ByteDance Ltd.
+
+2026-04 [31]
+
+No
+
+No
+
+No
+
+Higgsfield AI
+
+Higgsfield, Inc.
+
+2026-07 [32]
+
+No
+
+No
+
+No
+
+Pixelcut
+
+Pixelcut Inc.
+
+2026-08 [33]
+
+No
+
+No
+
+No
+
+Suno
+
+Suno, Inc.
+
+2026-08 [34]
+
+No
+
+No
+
+No
+
+Topaz Labs
+
+Adobe Inc.
+
+2026-08 [35]
+
+No
+
+No
+
+No
+
+fal
+
+Features & Labels Inc.
+
+2026-08 [36]
+
+No
+
+No
+
+No
+
+Claude
+
+Anthropic
+
+2026-09 [37]
+
+No
+
+No
+
+No
+
+Recraft
+
+Recraft
+
+2026-09 [38]
+
+No
+
+No
+
+No
+
+Creatify
+
+Creatify Lab Inc.
+
+2026-09 [39]
+
+No
+
+No
+
+No
+
+Ideogram
+
+Ideogram, Inc.
+
+2026-09 [40]
+
+No
+
+No
+
+No
+
+Cameras
+[edit]
+
+Despite high-profile camera announcements, a significant structural rift exists within the current C2PA landscape. As of mid-2026, major dedicated camera manufacturers (Leica, Nikon, and Canon) do not participate in the official C2PA Conformance Program. And while their signatures can be valid within their own ecosystem or legacy C2PA versions (Adobe software, Sony Ci Media Cloud,[41] Canon Authenticity Imaging System[42]
+), they may not be trusted by any conformant platform.
+
+As of 2026, no dedicated camera implementations had achieved compliance under the C2PA Conformance Program.
+
+Manufacturer
+
+Model
+
+C2PA Implementation Date
+
+C2PA Conformance Program
+
+Certificates
+
+Sony
+
+Sony α1
+
+2024-03-28 [43]
+
+no
+
+Sony Trust List
+
+The free C2PA certificates provided by Sony can be used to sign any asset and cannot be used on their own to prove an image was taken by a Sony camera. To establish origin and proof of capture, an image must contain both a valid Sony C2PA certificate and Sony's proprietary authenticity signature, a combination that can only be validated on Sony Ci Media Cloud.[44]
+
+Sony α7S III
+
+2024-03-28 [45]
+
+Sony α1 II
+
+2025-01-15 [46]
+
+Sony α9 III
+
+2025-01-15 [47]
+
+Sony α7 IV
+
+2025-03-04 [48]
+
+PXW-Z300
+
+2025-07-22 [49]
+
+Sony FX3
+
+2025-10-30 [50]
+
+Sony FX30
+
+2025-10-30 [51]
+
+Sony α7R V
+
+2025-11-26 [52]
+
+Sony α7 V
+
+2026-05-14 [53]
+
+Sony α7R VI
+
+2026-06-04 [54]
+
+Leica Camera
+
+Leica M11-P
+
+2023-10-26 [55]
+
+no
+
+C2PA Interim Trust List
+
+Leica M11-D
+
+2024-09-12 [56]
+
+Leica SL3-S
+
+2025-01-16 [57]
+
+Leica M EV1
+
+2025-10-23 [58]
+
+Leica Q3 Monochrom
+
+2025-11-20 [59]
+
+Leica SL3-P
+
+2026-06-25 [60]
+
+Canon Inc.
+
+Canon EOS R1
+
+2025-07-17 [61]
+
+no
+
+Canon Trust List
+
+Canon EOS R5 Mark II
+
+2025-07-17 [62]
+
+Nikon announced in August 2025 a firmware update for the Z6III that enabled embedding Content Credentials directly into its photos.[63] But only a few days later, a vulnerability was discovered in the software of the camera that allowed a user to combine unauthentic images with authentic photos and still have the resulting image with a valid digital signature. Nikon suspended its authenticity service and revoked the certificates.[64]
+
+Mobile apps with Camera Support
+[edit]
+
+Application
+
+Developer
+
+C2PA Implementation
+
+License
+
+Requirements
+
+C2PA Conformance Program
+
+Certificates
+
+Proofmode Capture
+
+Guardian Project
+
+2023-08 [65]
+
+GNU General Public License
+
+Android 10 or higher with Play Integrity API
+
+iOS
+
+2.2
+
+C2PA Trust List
+
+Pixel Camera
+
+Google LLC
+
+2025-09 [66]
+
+Proprietary
+
+Google Pixel 10 or higher
+
+2.2
+
+C2PA Trust List
+
+Vivo / JOVI Camera
+
+Vivo Mobile Communication Co., Ltd.,
+
+2025-10 [67]
+
+Proprietary
+
+Vivo X300 Pro
+
+ vivo X500 Pro Max
+
+2.2
+
+C2PA Trust List
+
+VWFNDR™ + MBL
+
+Nuevo.Studio LLC
+
+2026-05 [68]
+
+Proprietary
+
+Android 10 or higher with Play Integrity API
+
+iOS
+
+2.4
+
+VWFNDR MBL Trust List
+
+In August 2026, security researcher David Buchanan demonstrated that the C2PA implementation on Android is vulnerable to forgery. Using software exploit, an attacker can gain root access. While the raw cryptographic keys remain secure inside the hardware module, root access allows an attacker to command the system to sign arbitrary data, generating fabricated images with valid authenticity signatures. Google recognized the vulnerability but designated the report as "Won't fix (infeasible)", stating that a true mitigation would require an impractical re-architecture of the operating system software stack.[69]
+
+Mobile apps
+[edit]
+
+Application
+
+Developer
+
+C2PA Implementation
+
+License
+
+Requirements
+
+C2PA Conformance Program
+
+Certificates
+
+Photo Assist
+
+Samsung corporation
+
+2025-01 [70]
+
+Proprietary
+
+Galaxy S23 or higher
+
+No
+
+C2PA Interim Trust List
+
+Google Photos
+
+Google LLC
+
+2025-09 [71]
+
+Proprietary
+
+Google Pixel 10 or higher: generate and validate 
+
+iOS: validate
+
+2.2
+
+C2PA Trust List
+
+Pixel Recorder
+
+Google LLC
+
+2025-11 [72]
+
+Proprietary
+
+Google Pixel 10 or higher
+
+2.2
+
+C2PA Trust List
+
+Desktop Application software
+[edit]
+
+As of mid-2026, no desktop application had achieved compliance under the C2PA Conformance Program.
+
+Application
+
+Developer
+
+C2PA Implementation
+
+License
+
+C2PA Conformance Program
+
+Certificates
+
+Adobe Photoshop
+
+Adobe Inc.
+
+2020-10 [73]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Stock
+
+Adobe Inc.
+
+2022-10 [74]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Express
+
+Adobe Inc.
+
+2023-07 [75]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Illustrator
+
+Adobe Inc.
+
+2023-11 [76]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Substance 3D Modeler
+
+Adobe Inc.
+
+2024-03 [77]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe InDesign
+
+Adobe Inc.
+
+2024-04 [78]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Lightroom
+
+Adobe Inc.
+
+2024-05 [79]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Camera Raw
+
+Adobe Inc.
+
+2024-05 [80]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Microsoft Paint
+
+Microsoft Corporation
+
+2024-06 [81]
+
+Proprietary
+
+No
+
+No
+
+Wacom Yuify
+
+Wacom Co., Ltd.
+
+2024-06 [82]
+
+Proprietary
+
+No
+
+Wacom Trust List
+
+Adobe Bridge
+
+Adobe Inc.
+
+2024-10 [83]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Content Authenticity
+
+Adobe Inc.
+
+2024-10 [84]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Capture One
+
+Capture One A/S
+
+2024-10 [85]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List (Expire 2027-05-23)
+
+Adobe Premiere
+
+Adobe Inc.
+
+2025-04 [86]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Media Encoder
+
+Adobe Inc.
+
+2025-04 [87]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+Adobe Fresco
+
+Adobe Inc.
+
+2025-05 [88]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List
+
+SpyderPro
+
+Datacolor, Inc.
+
+2025-11 [89]
+
+Proprietary
+
+No
+
+C2PA Interim Trust List (Expire 2026-08-31)
+
+Canva
+
+Canva, Inc.
+
+2025-11 [90]
+
+Proprietary
+
+No
+
+Canva Trust List
+
+Media organizations
+[edit]
+
+The integration of C2PA Content Credentials within journalistic workflows has faced adoption delays, which industry analysts attribute to limited coordination between technology developers and newsrooms, while unvetted implementations risk creating opaque verification processes for the public.[91] Furthermore, the inclusion of persistent operational data has been cited as a potential security risk for confidential sources,.[92][93]
+
+On March 4, 2024, BBC Verify launched a transparency tool based on Content Credentials to verify the provenance of its news media. Open-source intelligence (OSINT) analysts subsequently demonstrated that a featured news video concerning gang violence in Haiti[94] was a composite containing a recycled, fabricated audio track of gunfire dubbed over the footage.[95]
+Over a 48-hour period, the BBC silently modified and republished three separate iterations of the video while removing prior C2PA manifest data. On March 28, 2024, the broadcaster issued a formal correction acknowledging the misleading audio and muted the affected passage.[96] Following the incident, the feature's broad deployment was halted and reframed as a pilot initiative.
+
+Service
+
+Developer
+
+Implementation
+
+C2PA Conformance Program
+
+Certificates
+
+Defense Visual Information Distribution Service
+
+U.S. Department of Defense
+
+2024-08 [97]
+
+No
+
+DVIDS Trust List
+
+JT certifiés
+
+France Televisions SA
+
+2025-09 [98]
+
+No
+
+C2PA Interim Trust List (Expire 2027-12-25)
+
+Suspilne Media
+
+Public Broadcasting Company of Ukraine
+
+2026-07 [99]
+
+2.2
+
+C2PA Trust List
+
+Austrian Parliament Mediathek
+
+Austrian Parliament
+
+2026-09 [100]
+
+2.2
+
+C2PA Trust List
+
+Media Infrastructure
+[edit]
+
+Content Delivery Networks, cloud storage repositories, digital asset management alongside Advertising networks and IP cameras networks systems that preserve the cryptographic manifest during transit. Because standard web routing and optimization tools frequently strip metadata or re-compress files to save bandwidth, these infrastructure layers are configured to pass the C2PA container through transit.
+
+Service
+
+Developer
+
+Implementation
+
+C2PA Conformance Program
+
+Certificates
+
+Pixelstream
+
+Pixelstream, Inc.
+
+2022-09 [101]
+
+2.2
+
+C2PA Interim Trust List (Expire 2026-05-06)
+
+Adobe Experience Manager
+
+Adobe Inc.
+
+2024-04 [102]
+
+No
+
+C2PA Interim Trust List
+
+Cloudinary
+
+Cloudinary Ltd.
+
+2024-07 [103]
+
+2.2
+
+C2PA Trust List
+
+Google Ads
+
+Google LLC
+
+2024-09 [104]
+
+No
+
+Google Trust List
+
+Cloudflare
+
+Cloudflare, Inc.
+
+2025-02 [105]
+
+No
+
+Cloudflare Trust List
+
+Fastly
+
+Fastly, Inc.
+
+2025-08 [106]
+
+No
+
+C2PA Interim Trust List (Expire 2035-05-07)
+
+Ring
+
+Ring Cameras
+
+2025-12 [107]
+
+2.2
+
+Amazon Trust List
+
+VBrick Video Platform
+
+VBrick Systems, Inc.
+
+2026-02 [108]
+
+2.2
+
+C2PA Trust List
+
+Encypher Mark
+
+Encypher Corporation
+
+2026-05 [109]
+
+2.2
+
+C2PA Trust List
+
+Adobe CX Enterprise
+
+Adobe Experience Manager
+
+Adobe Commerce
+
+Adobe Advertising Cloud
+
+GenStudio for Performance Marketing
+
+Adobe Journey Optimizer B2B Ultimate
+
+Adobe Journey Optimizer B2B Prime
+
+Adobe Marketo Engage
+
+Adobe Campaign
+
+Adobe Journey Optimizer B2C
+
+Adobe Workfront
+
+CX Enterprise Coworker Campaigns
+
+Adobe Inc.
+
+2026-09 [110]
+
+No
+
+C2PA Interim Trust List
+
+Fotoware
+
+Fotoware AS
+
+2026-09 [111]
+
+2.2
+
+C2PA Interim Trust List (Expire 2027-12-21)
+
+Zoom (Cloud Recordings)
+
+Zoom Communications, Inc.
+
+2026-10
+
+No
+
+Zoom Communications Trust List
+
+Publishing Platforms
+[edit]
+
+Consumer-facing websites, publishers, and social media networks that host and distribute media. These platforms parse the C2PA manifest to generate an ingredient history tree and render standardized visual indicators, such as the Content Credentials icon, to display provenance history to end-users.
+
+Service
+
+Developer
+
+C2PA Implementation Date
+
+User experience C2PA Metadata Surfaced
+
+Trusted Certificates Lists
+
+Behance
+
+Adobe Inc.
+
+2020-10 [112]
+
+Content Credential logo Mouse Hover
+
+labels list
+
+AI Info • Recorded by
+
+Recorded by
+
+This image has additional info around its history, edits, or attribution. View more (non Adobe software)
+
+Adobe Attribution
+
+None
+
+LinkedIn
+
+Microsoft Corporation
+
+2024-05 [113]
+
+Content Credential icon Mouse click
+
+labels list
+
+AI was used to generate all of this image
+
+AI was used to edit this image
+
+App or device used
+
+Content Credentials issued by
+
+Content Credentials issue date
+
+Not disclosed
+
+TikTok
+
+ByteDance
+
+2024-05 [114]
+
+AI-generated
+
+Contains AI-generated media
+
+Not disclosed
+
+Meta
+
+Meta Platforms, Inc.
+
+2024-02 [115]
+
+AI info
+
+Captured with a camera[116]
+
+Not disclosed
+
+YouTube
+
+Google LLC
+
+2024-10 [117]
+
+AI Mouse click
+
+labels list
+
+Made with AI
+
+Captured with a camera
+
+Source Attribution (C2PA conformance program)
+
+Not disclosed
+
+Google search
+
+Google LLC
+
+2024-11 [118]
+
+About this image Mouse click
+
+labels list
+
+AI-generated
+
+AI-edited
+
+Captured by camera
+
+C2PA Interim Trust List
+
+C2PA Trust List
+
+Pinterest
+
+Pinterest, Inc.
+
+2025-04 [119]
+
+AI modified
+
+Not disclosed
+
+X (social network)
+
+SpaceXAI LLC
+
+2026-01 [120]
+
+Made with AI
+
+None
+
+DiVine
+
+Verse Communications PBC
+
+2026-04 [121]
+
+Human Made
+
+C2PA Trust List
+
+Client-Side Verifiers
+[edit]
+
+Local applications, browser extensions, mobile apps, or operating system utilities that run directly on an end-user's device. Operating independently of the distributing platform, these utilities perform structural and signature checks by extracting the manifest container directly from the file binary. The utility recalculates the asset's cryptographic hash and compares it to the signed hash within the manifest against a certificate trust list, verifying file integrity.
+
+Application
+
+Developer
+
+Implementation
+
+License
+
+C2PA Conformance Program
+
+Adobe Content Authenticity Inspect (Web application)
+
+Adobe Inc.
+
+2020-10 [122]
+
+Proprietary
+
+2.2
+
+C2PA Tool (Command-line interface)
+
+Adobe Inc.
+
+2022-06 [123]
+
+Single-vendor Open Source Apache 2.0 / MIT License[124]
+
+no
+
+Content Authenticity Verify (Web application)
+
+Adobe Inc.
+
+2025-08 [125]
+
+Single-vendor Open Source Apache 2.0[126]
+
+no
+
+C2PA Verify (Web application)
+
+Adobe Inc.
+
+2026-01 [127]
+
+Apache 2.0
+
+no
+
+Open-source software development kits and libraries
+[edit]
+
+Adobe and Content Authenticity Initiative
+[edit]
+
+CAI Rust library: It implements the C2PA and CAWG specifications under the name c2pa-rs, to meet the development needs of Adobe software applications. Security vulnerabilities are reported and resolved privately through Adobe's HackerOne program.[128]
+
+c2pa-rs wrappers: Language-specific software development kits that wrap around the core Rust implementation to provide functionality across various programming environments. These implementations include:
+
+CAI JavaScript library: Integrates C2PA functionality into web applications and Node.js environments using compiled WebAssembly (Wasm) binaries derived from the core c2pa-rs codebase.
+
+CAI SDK C++ library: Exposes the core Rust functionality to C++ runtimes.
+
+C2PA Python library: Enables Python applications to read and write provenance manifest data.
+
+C2PA Swift: Provides native iOS and macOS bindings for Apple ecosystems.
+
+C2PA Android library: Enables mobile integration for the Android operating system.
+
+The core library and its wrappers, also known as the Content Credentials SDK,[129] are distributed under the Apache 2.0 License and the MIT License.
+
+TrustNXT
+[edit]
+
+c2pa-ts: A standalone TypeScript library designed for reading, creating, and partially validating C2PA 2.1 manifests within web and JavaScript ecosystems. The implementation operates natively without relying on WebAssembly or underlying compiled C binaries.[130]
+
+It is licensed under the Apache 2.0 License.
+
+Google
+[edit]
+
+Credentio: A C++ Library developed by Google to support the extraction, validation, generation, and embedding of Content Credentials into Google products. The project is excluded from the Google Open Source Software vulnerability disclosure program.[131]
+
+It is licensed under the Apache 2.0 License.
+
+Licensing
+[edit]
+
+The C2PA specifications[132] are released as an open technical specification under a royalty-free license.
+
+Content Credentials and its logo are Adobe Inc. trademarks, registered with the US Patent and Trademark Office, European Union Intellectual Property Office, and other international trademark authorities.
+
+References
+[edit]
+
+↑ "C2PA Specifications". c2pa.org. 2022-01-06. Retrieved 2026-07-06.
+
+↑ "Open Standards & Specifications Made Simple". Joint Development Foundation Projects. 2025-01-01. Retrieved 2026-09-29.
+
+↑ "Creator Assertions Working Group". cawg.io. 2024-06-12. Retrieved 2026-09-03.
+
+↑ "DIF - Creator Assertions Working Group". identity.foundation. 2025-03-16. Retrieved 2026-09-03.
+
+↑ "Content Authenticity's Chain of Trust Reaches Cameras". Wired (Sponsored content via WIRED Brand Lab). 2022-10-27. Retrieved 2026-07-12.
+
+↑ "Teach media literacy with the Content Authenticity Initiative". Adobe Education Exchange. 2023-05-18. Retrieved 2026-07-12.
+
+↑ "Statement of Andy Parsons, Senior Director, Content Authenticity Initiative, Adobe" (PDF). 2023-11-08. Retrieved 2026-07-12.
+
+↑ Rao, Dana (2023-05-15). "Seeing is believing: It's time to restore trust in online media". Adobe Blog. Retrieved 2026-09-07.{{cite web}}: CS1 maint: url-status (link)
+
+↑ Kaye, Kate; Dixon, Pam (2025-09-03). Privacy, Identity and Trust in C2PA: A Technical Review and Analysis of the C2PA Digital Media Provenance Framework (Report). World Privacy Forum. Retrieved 2026-09-07.{{cite report}}: CS1 maint: url-status (link)
+
+↑ Milstein, Steven (2025-05-20). "EGWG 2025-05-15: The C2PA Conformance Program, Scott Perry". Trust over IP Foundation. Retrieved 2026-10-03.
+
+↑ Parsons, Andy (2025-06-11). "Reflecting on the 2025 Content Authenticity Summit at Cornell Tech". Content Authenticity Initiative. Retrieved 2026-10-03.
+
+↑ Parsons, Andy (2025-10-09). "Raising the bar for trust: introducing the C2PA Conformance Program". Content Authenticity Initiative. Retrieved 2026-10-03.
+
+↑ "C2PA - Conformance". Coalition for Content Provenance and Authenticity (C2PA). Retrieved 2026-10-03.
+
+↑ Buchanan, David (2026-10-02). "How to Hack Time, With C2PA". David Buchanan's Blog. Retrieved 2026-10-03.
+
+↑ "C2PA Conformance Explorer". Coalition for Content Provenance and Authenticity (C2PA). Retrieved 2026-10-03.
+
+↑ Coalition for Content Provenance and Authenticity (C2PA) (2026-04-15). "Content Credentials: C2PA Technical Specification (Version 2.4) – § 18.28 AI Disclosure". spec.c2pa.org. Retrieved 2026-10-16.{{cite web}}: CS1 maint: numeric names: authors list (link)
+
+↑ "Adobe Unveils Firefly, a Family of new Creative Generative AI". Adobe. 2023-03-21. Retrieved 2026-09-07.
+
+↑ Bulakh, Anna (2023-07-19). "Addressing Misinformation: Respeecher and Content Authenticity Initiative's Partnership for Authentic Digital Content". Respeecher. Retrieved 2026-09-07.
+
+↑ "Bing Preview Release Notes: New experiences powered by Bing Image Creator". Microsoft. 2023-09-29. Retrieved 2026-09-07.
+
+↑ "Stability AI Previews Enhanced Image Offerings: APIs for Business & New Product Features". Stability AI. 2023-11-01. Retrieved 2026-09-07.
+
+↑ Bellow, Paul (2024-02-06). "C2PA Meta Data in DALL·E 3 Images". OpenAI Developer Community. Retrieved 2026-09-07.
+
+↑ Chauhan, Sumit (2024-02-13). "Making our generative AI products safer for consumers". Microsoft 365 Blog. Retrieved 2026-09-07.
+
+↑ Germanidis, Anastasis (2024-06-17). "Runway Gen-3 Alpha: AI Video Generation with Temporal Control". Runway Research. Retrieved 2026-09-07.
+
+↑ "We are committed to ensuring the safe use of our leading audio AI technology". ElevenLabs. 2024-07-22. Archived from the original on 2024-07-22. Retrieved 2026-09-07.
+
+↑ "Capable, Open, and Safe: Combating AI Misuse". Black Forest Labs. 2026-02-24. Retrieved 2026-09-07.
+
+↑ "Amazon Titan Image Generator G1 model - Amazon Bedrock". Amazon Bedrock User Guide. Retrieved 2026-09-07.
+
+↑ Melcher, Paul (2025-01-16). "Starting today, all AI-generated and AI-edited images created with BRIA AI will carry Content Credentials". LinkedIn. Retrieved 2026-09-07.
+
+↑ Images & Textes COMINTERNET (2025-11-13). "DREAMINA AI affiches ateliers, signed by certificate@bytedance.com (Bytedance Pte. Ltd.)". Behance. Retrieved 2026-10-04.
+
+↑ "Gemini 2.5 Flash Image". Google Cloud Documentation. 2025-08-26. Retrieved 2026-09-07.
+
+↑ Perez, Sarah (2026-01-28). "Elon Musk teases a new image-labeling system for X… we think?". TechCrunch. Retrieved 2026-09-11.
+
+↑ "Dreamina Seedance 2.0 Launches, Bringing Enterprise-Ready Multimodal Video Generation to Creative Workflows". BytePlus Blog. 2026-04-14. Retrieved 2026-09-07.
+
+↑ "Terms of Use Agreement". Higgsfield. 2026-07-26. Retrieved 2026-09-29.
+
+↑ "Coucou Coffe, Pixelcut Uncrop". Behance. Retrieved 2026-10-04.
+
+↑ Shulman, Mikey (2026-08-06). "How We're Building the Future of Music Responsibly". Suno. Retrieved 2026-09-11.
+
+↑ Kong, Lingyu (2026-08-27). "Topaz Photo v1.7.0 - Wonder 3.5". Topaz Community. Retrieved 2026-09-09.
+
+↑ "Verify fal-Generated Content". fal.ai. Retrieved 2026-09-07.
+
+↑ "How Claude marks AI-generated content". Claude Help Center. Anthropic. 2026-09-01. Retrieved 2026-09-07.
+
+↑ Singh, Yuvraj (2026-09-13). "I Checked 21 AI Models for C2PA Labels. Here's Who Signs". Leaxor. Retrieved 2026-09-29.
+
+↑ "Creatify Boreal compatibility API · Picsart API Platform". Picsart API Platform Docs. 2026-10-01. Retrieved 2026-10-01.
+
+↑ Fretti, Elio (2026-09-24). "Apple iSoap — The Cleanest Innovation, Ideogram Provenance Signer". Behance. Retrieved 2026-10-04.
+
+↑ "Ci Media Cloud: Leading Media Asset Management Software". Sony Electronics Inc. 2026-09-09. Retrieved 2026-09-09.
+
+↑ "Authenticity Imaging System". Canon Inc. 2026-05-11. Retrieved 2026-09-09.
+
+↑ "Sony Delivers Highly Anticipated Firmware Updates including C2PA Compliancy and Ensuring Authenticity of Images". Sony UK Press Centre. 2024-03-28. Retrieved 2026-09-09.
+
+↑ "Sony Authenticity Solutions for Pro Image & Video". Sony Professional. 2024-03-26. Retrieved 2026-10-18.
+
+↑ "Sony Delivers Highly Anticipated Firmware Updates including C2PA Compliancy and Ensuring Authenticity of Images". Sony UK Press Centre. 2024-03-28. Retrieved 2026-09-09.
+
+↑ "Sony announces firmware updates for Alpha 1 II, Alpha 1, and Alpha 9 III". Sony Europe Press Centre. 2025-01-15. Retrieved 2026-09-09.
+
+↑ "Sony announces firmware updates for Alpha 1 II, Alpha 1, and Alpha 9 III". Sony Europe Press Centre. 2025-01-15. Retrieved 2026-09-09.
+
+↑ Aldredge, Jourdan (2025-03-04). "Sony Fixes a7 IV Recording Frame Rate Issues With Latest Firmware Update". No Film School. Retrieved 2026-09-09.
+
+↑ "Sony launches 4K 3-CMOS sensor flagship handheld XDCAM camcorder with enhanced operational efficiency for newsgathering and production". Sony Europe Press Centre. 2025-07-22. Retrieved 2026-09-09.
+
+↑ Butler, Richard (2025-10-30). "Sony's video content credentials are finally here on cameras you will recognize". DPReview. Retrieved 2026-09-09.
+
+↑ Butler, Richard (2025-10-30). "Sony's video content credentials are finally here on cameras you will recognize". DPReview. Retrieved 2026-09-09.
+
+↑ Grigonis, Hillary K. (2025-11-26). "The Sony A7 IV and A7R V just got a major modern overhaul. New firmware touches everything from A1 II-like custom autofocus to anti-AI authenticity tools for video". Digital Camera World. Retrieved 2026-09-09.
+
+↑ "ILCE-7M5 System Software (Firmware) Update Ver. 2.00". Sony USA Support. 2026-05-14. Retrieved 2026-09-09.
+
+↑ Alpha Universe (2026-05-13). "Sony Electronics Accelerates High-Resolution Photography With The Alpha 7R VI". Sony Electronics Inc. Retrieved 2026-09-09.
+
+↑ "New: Leica M11-P". Leica Camera AG. 2023-10-26. Retrieved 2026-09-09.
+
+↑ "NEW: Leica M11-D". Leica Camera AG. 2024-09-12. Retrieved 2026-09-09.
+
+↑ "NEW: Leica SL3-S". Leica Camera AG. 2025-01-16. Retrieved 2026-09-09.
+
+↑ "Next Milestone for the Leica M-System". Leica Camera AG. 2025-10-23. Retrieved 2026-09-09.
+
+↑ "Leica Q3 Monochrom". Leica Camera AG. 2025-11-20. Retrieved 2026-09-09.
+
+↑ "New: The Leica SL3-P". Leica Camera AG. 2026-06-25. Retrieved 2026-09-09.
+
+↑ "EOS R1 and EOS R5 Mark II: powerful new firmware and system updates". Canon Europe. 2025-07-17. Retrieved 2026-09-09.
+
+↑ "EOS R1 and EOS R5 Mark II: powerful new firmware and system updates". Canon Europe. 2025-07-17. Retrieved 2026-09-09.
+
+↑ "Nikon releases firmware version 2.00 for the Nikon Z6III full-frame mirrorless camera". Nikon. 2025-08-27. Retrieved 2026-06-22.
+
+↑ Gray, Jeremy (2025-09-05). "Nikon Suspends C2PA Functionality on the Z6 III Due to Authentication Issue". PetaPixel. Retrieved 2025-11-17.
+
+↑ "add support for proofsign c2pa notarization". GitHub. 2023-08-15. Retrieved 2026-09-07.
+
+↑ Lynch, Eric; Sherif Hanna (2025-09-10). "How Pixel and Android are bringing a new level of trust to your images with C2PA Content Credentials". Google Security Blog. Retrieved 2026-09-07.
+
+↑ Guo, Qian (2025-10-15). "vivo helps imaging technology "break the wall" and refreshes the smartphone industry". Securities Times (Economic Information Daily) (in Chinese). Retrieved 2026-09-09. As the first Chinese smartphone maker to join C2PA, the vivo X300 series ensures image security and AI-era content authenticity through traceability and verifiability.
+
+↑ "VWFNDR™ launches its first product: MBL, a compact camera for everyone". VWFNDR™. 2026-05-19. Retrieved 2026-09-07.
+
+↑ Buchanan, David (2026-08-25). "C2PA Cameras Do Not Survive Contact With Reality". da.vidbuchanan.co.uk. Retrieved 2026-09-03.
+
+↑ Wiggers, Kyle (2025-01-22). "Samsung's Galaxy S25 will support Content Credentials to identify AI-generated images". TechCrunch. Retrieved 2026-09-11.
+
+↑ Lynch, Eric; Sherif Hanna (2025-09-10). "How Pixel and Android are bringing a new level of trust to your images with C2PA Content Credentials". Google Security Blog. Retrieved 2026-09-07.
+
+↑ "C2PA Conformance Explorer". Coalition for Content Provenance and Authenticity (C2PA). 2025-11-24. Retrieved 2026-09-07.
+
+↑ "The Content Authenticity Initiative unveils content attribution tool within Photoshop and Behance". Adobe Blog. Adobe Inc. 2020-10-20. Retrieved 2026-09-08.
+
+↑ Tom May (2022-10-18). "7 things you can now do in Photoshop that you couldn't before". Digital Camera World. Future US Inc. Retrieved 2026-09-08.
+
+↑ "Adobe MAX 2023: Milestone wave of Content Credentials adoption with industry partners Microsoft, Leica Camera, Nikon, Publicis Groupe, and more". Adobe Blog. Adobe Inc. 2023-10-10. Retrieved 2026-09-08.
+
+↑ "Adobe MAX 2023: Milestone wave of Content Credentials adoption with industry partners Microsoft, Leica Camera, Nikon, Publicis Groupe, and more". Adobe Blog. Adobe Inc. 2023-10-10. Retrieved 2026-09-08.
+
+↑ Amber Rutherford (2024-03-25). "Adobe's Substance 3D Sampler 4.4 Sources Texture Imagery From Prompts". 80 Level. 80lv. Retrieved 2026-09-08.
+
+↑ "The future of pro design: Generative AI is taking off in InDesign". Adobe Blog. Adobe Inc. 2024-04-23. Retrieved 2026-09-23.
+
+↑ "Lightroom introduces the power of Adobe Firefly with all-new Generative Remove". Adobe Blog. Adobe Inc. 2024-05-21. Retrieved 2026-09-08.
+
+↑ Richard Butler (2024-07-09). "Adobe adds CAI 'Content Credentials' to Camera Raw, Lightroom and Photoshop". DPReview. Digital Photography Review. Retrieved 2026-09-08.
+
+↑ "Use Copilot+ PC features in Paint". Microsoft Support. Microsoft Corporation. 2026-01-15. Retrieved 2026-09-08.
+
+↑ "What does Yuifying mean?". Wacom Support. Wacom Co., Ltd. 2024-06-25. Retrieved 2026-09-08.
+
+↑ "Content Credentials in Adobe Bridge". Adobe Help Center. Adobe Inc. 2024-10-14. Retrieved 2026-09-08.
+
+↑ Jeremy Gray (2024-10-08). "Adobe Pushes Content Authenticity Forward With a Free Web App Designed for Creators". PetaPixel. Retrieved 2026-09-08.
+
+↑ "Capture One 16.5.0 Release Notes". Capture One Support. Capture One A/S. 2024-10-22. Retrieved 2026-09-08.
+
+↑ Jourdan Aldredge (2025-04-02). "Premiere Pro Gets New AI-Powered Search Tools and Other Improvements with 25.2 Update". No Film School. Retrieved 2026-09-08.
+
+↑ "What's new in Media Encoder". Adobe Help Center. Adobe Inc. 2025-04-15. Retrieved 2026-09-08.
+
+↑ Anshul Saini (2025-04-24). "Fresco v6.4 Add Content Credentials to Protect and Showcase Your Work!". Adobe Community. Adobe Inc. Retrieved 2026-09-08.
+
+↑ Butler, Richard (2025-11-06). "An unexpected player has entered the Raw processing and Content Credentials game". Digital Photography Review. Retrieved 2026-10-09.
+
+↑ Craig Durr (2025-11-10). "Canva Bets Big on a 'Creative Operating System,' Makes Affinity Free Forever". The Collab Collective. Retrieved 2026-09-08.
+
+↑ "AI authentication tools are built without proper journalist input, new report finds". Nieman Journalism Lab. 2026-07-16. Retrieved 2026-09-18.
+
+↑ "C2PA Content Credentials and the Surveillance Risk: Adversarial Scenarios and Governance Gaps in the Content Provenance Ecosystem". WITNESS. 2026-07-06. Retrieved 2026-09-18.
+
+↑ Apple Security Engineering and Architecture (SEAR); Camera & Photos (2026-09-15). "Apple Reference Image: A New Approach for Verified Photography". Apple Security Research. Retrieved 2026-09-18.{{cite web}}: CS1 maint: multiple names: authors list (link)
+
+↑ Astier, Henri; Avagnina, Gianluca (2024-03-04). "Haiti violence: Haiti gangs demand PM resign after mass jailbreak". BBC News. Retrieved 2026-09-18.
+
+↑ Krawetz, Neal (2024-03-08). "IEEE, BBC, and C2PA". The Hacker Factor Blog. Retrieved 2026-09-18.
+
+↑ "Transparency tool launched by BBC Verify". BBC News. 2024-03-04. Retrieved 2026-09-18.
+
+↑ Parsons, Andy (2024-09-18). "Authenticity in the Age of AI: Growing Content Credentials Momentum Across Social Media Platforms, AI Companies and Rising Consumer Awareness". Adobe Blog. Retrieved 2026-09-05.
+
+↑ "FranceTV sign news broadcasts using C2PA". IPTC. 2025-12-09. Retrieved 2026-09-11.
+
+↑ "Suspilne Ukraine launches beta version of C2PA content authenticity verification technology". Suspilne Ukraine. 2026-07-06. Retrieved 2026-09-11.
+
+↑ Parlamentskorrespondenz (2026-09-23). "Videos des österreichischen Parlaments bekommen C2PA-Sicherheitsstandard" (Press Release No. 836) (in German). Parliament of Austria. Retrieved 2026-09-24.
+
+↑ Jose, Coleen (2022-11-30). "Community story: Pixelstream". Content Authenticity Initiative. Retrieved 2026-09-07.
+
+↑ "Experience Manager Assets to support digital rights management". Adobe Business Blog. Adobe Inc. 2024-04-01. Retrieved 2026-09-06.
+
+↑ Portis, Eric (2024-07-02). "Combating Fake Visuals: Cloudinary's New C2PA Standard Implementation". Cloudinary Blog. Retrieved 2026-09-07.
+
+↑ Richardson, Laurie (2024-09-17). "How we're increasing transparency for gen AI content with the C2PA". The Keyword (Google Blog). Retrieved 2026-09-07.
+
+↑ Allen, Will (2025-02-03). "Preserving content provenance by integrating Content Credentials into Cloudflare Images". Cloudflare Blog. Retrieved 2026-09-07.
+
+↑ Sherry, James (2025-08-12). "Trust at Scale with Fastly Image Optimizer and C2PA". Fastly Blog. Retrieved 2026-09-07.
+
+↑ Ring (2026-01-22). "Your Ring Videos, Verified". The Ring Blog. Retrieved 2026-09-09.
+
+↑ "Vbrick Achieves C2PA Conformance". vbrick.com. Vbrick. 2026-02-23. Retrieved 2026-10-28.
+
+↑ "C2PA Conformance Explorer". spec.c2pa.org. Coalition for Content Provenance and Authenticity. 2026-05-26. Retrieved 2026-09-07.
+
+↑ "Generative AI content transparency". Adobe Experience League. 2026-09-01. Retrieved 2026-09-18.
+
+↑ Widerberg, Amalie (2026-09-10). "Fotoware launches Content Authenticity: complete C2PA support in the DAM". Fotoware. Retrieved 2026-09-10.
+
+↑ "The Content Authenticity Initiative unveils content attribution tool within Photoshop and Behance". Adobe Blog. Adobe. 2020-10-20. Retrieved 2026-09-11.
+
+↑ Corrigan, Patrick (2024-05-15). "LinkedIn Adopts C2PA Standard". LinkedIn. Retrieved 2026-09-11.
+
+↑ "AI-generated content". TikTok Transparency Center. TikTok. 2024-05-09. Retrieved 2026-09-11.
+
+↑ Cullinane, Susannah (2024-02-06). "Meta to start labeling AI-generated images from companies like OpenAI, Google". Reuters. Retrieved 2026-09-11.
+
+↑ "About the Captured with a camera label on Instagram". help.instagram.com. Meta. Retrieved 2026-09-25.
+
+↑ Shakir, Umar (2024-10-15). "YouTube takes a baby step toward labeling authentic video". The Verge. Retrieved 2025-11-17.
+
+↑ "Google Images SEO: Image Metadata". Google for Developers. Google Search Central. 2025-12-10. Retrieved 2026-09-11.
+
+↑ "Introducing Gen AI Labels: Pinterest is Taking a New Step in Transparency". Pinterest Newsroom. 2025-04-30. Retrieved 2026-09-11.
+
+↑ Perez, Sarah (2026-01-28). "Elon Musk teases a new image-labeling system for X… we think?". TechCrunch. Retrieved 2026-09-11.
+
+↑ Nathan, Freitas (2025-12-01). "DiVine Supports Proofmode". Proofmode. Retrieved 2026-09-11.
+
+↑ Schneider, Jaron (2020-10-20). "Adobe shows off prototype version of its Content Authenticity tool and ecosystem". Digital Photography Review. Retrieved 2026-09-06.
+
+↑ "c2paTool, Initial commit". github.com. 2022-06-02. Retrieved 2026-09-06.
+
+↑ "Adobe contributor license agreement". Retrieved 2026-09-06.
+
+↑ "Code base for contentcredentials.org/Verify, open-sourcing under the Apache 2.0 license commit". github.com. 2025-08-08. Retrieved 2026-09-06.
+
+↑ "Adobe contributor license agreement". Retrieved 2026-09-06.
+
+↑ "contentauth/c2pa-conformance-tool". GitHub. Content Authenticity Initiative. 2026-02-24. Retrieved 2026-09-08.
+
+↑ "contentauth/c2pa-rs: Rust SDK for the core C2PA (Coalition for Content Provenance and Authenticity) specification". GitHub. Content Authenticity Initiative. Retrieved 2026-10-09.
+
+↑ "Adobe Security Bulletins and Advisories: Content Credentials SDK". Adobe Trust Center. Adobe. Retrieved 2026-10-09.
+
+↑ "TrustNXT/c2pa-ts: Pure TypeScript implementation of C2PA manifest reading, validation, and creation". GitHub. TrustNXT. Retrieved 2026-10-09.
+
+↑ "credentio - Git at Google". Google Git. Google. Retrieved 2026-10-09.
+
+↑ "C2PA Specifications". c2pa.org. 2022-01-06. Retrieved 2026-07-06.
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Content_Credentials&oldid=1382375511"
+
+Categories: 
+Digital media
+
+Digital watermarking
+
+Cryptographic protocols
+
+Hidden categories: 
+Articles with short description
+
+Short description is different from Wikidata
+
+CS1 maint: url-status
+
+CS1 maint: numeric names: authors list
+
+CS1 Chinese-language sources (zh)
+
+CS1 maint: multiple names: authors list
+
+CS1 German-language sources (de)
+
+ This page was last edited on 28 October 2026, at 11:08 (UTC).
+
+Page was rendered with Parsoid.
+
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+Privacy policy
+
+About Wikipedia
+
+Disclaimers
+
+Contact Wikipedia
+
+Legal & safety contacts
+
+Code of Conduct
+
+Developers
+
+Statistics
+
+Cookie statement
+
+Mobile view
+
+Search
+
+ Search
+
+Toggle the table of contents
+
+Content Credentials
+
+2 languages
+
+Add topic

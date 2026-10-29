@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-ng-app="sdbmApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Internet Explorer use the highest version available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <!--[if IEMobile]>
+      <meta http-equiv="cleartype" content="on">
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
+    <title>Schoenberg Database of Manuscripts</title>
+    <link href="https://sdbm.library.upenn.edu/catalog/opensearch.xml" title="Schoenberg Database of Manuscripts" type="application/opensearchdescription+xml" rel="search" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-c95a874680057e09d8762897099a277480d54379c3ece0b1237d4040be5d7ccb.ico" />
+    <link rel="stylesheet" media="all" href="/assets/application-7701f8b7249f38a90a5e5228ce854e3c9d3c60c68623a5ba60b3d47e31b9e318.css" />
+    <script src="/assets/application-d8a1a0a49532ec48630abcbece4b996d39f795105bb2f08f6873f430319c3c36.js"></script>
+    <!-- disable animations when running tests -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PWG256C');</script>
+    <!-- End Google Tag Manager -->
+
+    <style type="text/css">
+        .qtip-titlebar {
+          display: none;
+        }
+    </style>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IcWtxXSgPgIgkb1LgJmBFqrNdhThqRPSeNzTBKy+wQjFsiifq9lECMj/Bwhei0Y0ReW6LGlpDkrWoHD+CljXzg==" />
+    <meta name="twitter:card" content="summary" />
+<meta property="og:url" content="http://sdbm.library.upenn.edu" />
+<meta property="og:title" content="Schoenberg Database of Manuscripts" />
+<meta property="og:description" content="The SDBM aggregates observations of pre-modern manuscripts drawn from over 12,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document sales and locations of these books from around the world." />
+<meta property="og:image" content="https://secure.www.upenn.edu/webservices/logos/2016/shield-simple.png" />
+<style>
+    header {
+        position: relative;
+    }
+    .thredded--post--content {
+        max-height: 97px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Survey').on('hidden.bs.modal', function () {
+            localStorage.setItem('sdbm_hide_survey', "1");
+        });
+    });
+</script>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body data-offset="50" class="blacklight-catalog blacklight-catalog-index">
+  <!-- control panel - or 'login' panel, when logged out -->  
+  <div id="header-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <span class="pull-left" style="max-height: 50px;">
+        <a id='collapse-control' class="btn btn-default" data-toggle="collapse" data-target="#control-panel">
+          <span class="glyphicon glyphicon-menu-hamburger hide-collapsed"></span>
+        </a>
+        <a class="navbar-brand" href="/">
+  <span class="word">
+    <span class="first-letter">S</span>choenberg
+  </span>
+  <span class="word">
+    <span class="first-letter">D</span>ata<span class="first-letter">b</span>ase
+  </span>
+  <span class="word">of</span>
+  <span class="word"><span class="first-letter">M</span>anuscripts</span>
+</a>
+
+        </span>
+        <img class="img img-responsive hide-mobile-lg" usemap="#Map" src="/assets/sims-06500a1352198080e0fbacf6109e6790747e452c02da4a25733203764d255681.png" />
+        <map name="Map" id="Map">
+          <area href="https://schoenberginstitute.org/" alt="Facebook" target="_blank" shape=poly coords="0,0, 400,0, 400,25, 0,25"> 
+          <area href="http://www.library.upenn.edu/" alt="Facebook" target="_blank" shape=poly coords="0,25, 400,25, 400,50, 0,50"> 
+        </map>
+        <span class="pull-right hide-mobile" style="line-height: 50px;">
+          <div class="navbar-right mobile-left">
+  <ul class="nav navbar-nav">
+    <!-- INTERACTIVE TUTORIAL -->
+    <!--<li><a href="" class="glyphicon glyphicon-question-sign" onclick="t.restart();"></a></li>-->
+    <!--<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">The New SDBM <span class="caret"></span></a>-->
+    <!--</li>-->
+
+    <li class="dropdown">
+        <a href="" class='dropdown-toggle' data-toggle="dropdown">
+          <span class="glyphicon glyphicon-info-sign"></span> <span class="">About</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="/">Home</a></li>
+              <li><a href="/pages/About">About</a></li>
+              <li><a href="/pages/Project%20History">Project History</a></li>
+              <li><a href="/pages/User%20Agreement">User Agreement</a></li>
+              <li><a href="/pages/Technical%20Overview">Technical Overview</a></li>
+              <li><a href="/pages/SDBM%20Name%20Authority">SDBM Name Authority</a></li>
+              <li><a href="/pages/SDBM%20Place%20Authority">SDBM Place Authority</a></li>
+            <li><a href="/community">Community Statistics</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <span class="">Help</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="/pages/FAQ">FAQ</a></li>
+            <li><a href="/pages/New%20Data%20Model">New Data Model</a></li>
+            <li><a href="/pages/SDBM%20Naming%20Standards">SDBM Naming Standards</a></li>
+            <li><a href="/pages/Diacritics">Diacritics</a></li>
+            <li><a href="/pages/User%20Manual">User Manual</a></li>
+            <li><a href="/pages/User%20Levels%20and%20Advancement">User Levels and Advancement</a></li>
+            <li><a href="/pages/Entity%20Relationship%20Diagram">Entity Relationship Diagram</a></li>
+            <li><a href="/pages/SPARQL%20Data%20Model">SPARQL Data Model</a></li>
+          <li><a href="https://www.youtube.com/channel/UCsVZp-1724xPIW8MwIdKoyg/videos">Video Tutorials</a></li>
+          <li>
+            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%64%62%6d@%70%6f%62%6f%78.%75%70%65%6e%6e.%65%64%75">Email Us</a>
+          </li>
+        </ul>
+    </li>
+  </ul>
+
+  <!-- this is no longer used as the login space -->
+  <!-- and can probably be removed entirely -->
+</div>
+
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="control-panel" class="collapse width in">
+  <div class="scroll-box">
+
+    <div class="panel panel-default" style="overflow: hidden;">
+      <div class="panel-heading">
+        <span class="h4">
+          <span class="glyphicon glyphicon-log-in"></span> Login
+        </span>
+      </div>
+      <div class="panel-body">
+        <div style="padding: 0px 10px;">
+          <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="QE6kfEw0af5wR+ed7hwe8QzX6CXPdlB7TJ9baQDg43pIRmw7AP5zYwPR64ASOV6yoSqp6i3LlWGgzMzDYWmKIA==" />
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label class="control-label" for="user_login">Login</label>
+        <input class="form-control" type="text" value="" name="user[login]" id="user_login" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label class="control-label" for="user_password">Password</label>
+        <input autocomplete="off" class="form-control" type="password" name="user[password]" id="user_password" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+        <label class="control-label" for="user_remember_me">Remember me</label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <input type="submit" name="commit" value="Log in" class="btn btn-default" data-disable-with="Log in" />
+    </div>
+</div>
+</form>      
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="/users/sign_up">
+              <span class="glyphicon glyphicon-log-in"></span> Sign up
+</a>          </li>
+          <li>
+            <a href="/users/password/new">
+              <span class="glyphicon glyphicon-question-sign"></span> Forgot your password?
+</a>          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <span class="h4">
+          <span class="glyphicon glyphicon-link"></span>
+          Related Links
+        </span>
+      </div>
+      <div class="panel-body">
+        <ul class="nav">
+          <li class='dropdown'>
+            <a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-inbox"></span> Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="/dericci_games"><span class="glyphicon glyphicon-tower"></span> De Ricci Name Game</a>
+              </li>
+              <li>
+                <a href="/dericci_records"><span class="glyphicon glyphicon-list"></span> De Ricci Archive</a>
+              </li>
+              <li>
+                <a href="/names/problems"><span class="glyphicon glyphicon-warning-sign"></span> Problem Names</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://schoenberginstitute.org/" title="The Schoenberg Institute for Manuscript Studies">
+              <span class="glyphicon glyphicon-book"></span>
+              The Schoenberg Institute for Manuscript Studies
+            </a>
+          </li>
+          <li>
+            <a href="http://dla.library.upenn.edu/dla/medren/search.html?fq=collection_facet%3A%22Lawrence%20J.%20Schoenberg%20Collection%22" title="Online digital facsimiles">
+              <span class="glyphicon glyphicon-picture"></span>
+              Penn in Hand
+            </a>
+          </li>
+          <li>
+            <a href="http://openn.library.upenn.edu/html/0001.html" title="Downloadable digital images and metadata">
+              <span class="glyphicon glyphicon-picture"></span>
+              OPenn
+            </a>
+          </li>
+          <li>
+            <a href="http://sceti.library.upenn.edu/ljscatalog/index.html" title="A printed catalog of early manuscripts">
+              <span class="glyphicon glyphicon-folder-close"></span>
+              Transformation of Knowledge
+            </a>
+          </li>
+          <li>
+            <a href="http://sceti.library.upenn.edu/legacy/" title="Online Exhibit">
+              <span class="glyphicon glyphicon-education"></span>
+              A Legacy Inscribed
+            </a>
+          </li>
+          <li>
+            <a href="https://mappingmanuscriptmigrations.org/en/" class="href">
+              <span class="glyphicon glyphicon-map-marker"></span>
+              Mapping Manuscript Migrations
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="img-brands">
+      <a href="https://diggingintodata.org/" target="_blank"><img class="img img-neh img-did" src="/assets/logo_did-595b6187284aea44609691ba8dc10267acffdf882fde3d1f22e3625e762d4b48.png" /></a>
+      <a href="https://www.neh.gov/" target="_blank"><img class="img img-neh" src="/assets/logo_neh-34d9163d10a58ad4a9797434bb83fe86d99bfccc61c66633d896dc2cfe03b0c5.png" /></a>
+      <a href="https://www.transatlanticplatform.com/" target="_blank"><img class="img img-neh" src="/assets/logo_tap-feb54e2db74a42722c33461481bcd8de509d7bb0ff95528eabe662377ae692e8.png" /></a>
+      <a href="https://www.imls.gov/" target="_blank"><img class="img img-neh" src="/assets/logo_imls-c0630d02b2efca21d1441d0b531b1c4fb0ab1f5820730079fdf358b3243d524b.png" /></a>
+    </div>
+  </div>
+</div>
+  <!-- -->
+  <div class="main-content-wrapper">
+    <div class="main-content">
+
+        <div style="padding-top: 20px;"></div>
+
+      <div id="ajax-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+
+
+      <div id="main-container" class="container">
+
+        <div class="row">
+  <div class="col-md-12">
+    <div id="main-flashes">
+      <div class="flash_messages">
+</div>
+
+    </div>
+  </div>
+</div>
+
+        <!--  breadcrumbs -->
+        
+        <!-- not sure why, but setting overflow: hidden seems to solve some of the scroll-bar issues I was having... -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="content" class="col-md-9 col-sm-8">
+    
+<div class="row">
+    <div class="col-sm-12">
+          <div class="page-partial">
+    <div class="row">
+    <div class="col-sm-12">
+        <p class="text-center"> <br>
+            <span class="lead">Welcome to the Schoenberg Database of Manuscripts!</span> 
+</p>
+            The SDBM continuously aggregates and updates historic observations of pre-modern manuscripts drawn from over 14,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document the sales and locations of these books from around the world.
+        
+        <p>We invite members of our user community to <b>Log In</b> and help us to build and maintain this resource.</p>
+    </div>
+    <div class="col-sm-6">
+        <h2 class="text-center">Here's what you can do</h2>
+        <ul>
+            <li>
+<strong>Contribute Data</strong>, including your own personal observations of a manuscript or group of manuscripts.</li>
+            <li>
+<strong>Engage With Other Users</strong> to facilitate research and conversations about both the history of manuscript transmission and the data gathered in the process of recording this history.</li>
+            <li>
+<strong>Manage Your Contributions</strong>, track your search history, bookmark, tag and download your results.</li>
+            <li>
+<strong>Download Search Results</strong> for your own use under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 Unported License</a>
+</li>
+<li>
+<strong>Play the <a href="https://sdbm.library.upenn.edu/dericci_games">De Ricci Name Game</a>.</strong> 
+</li>
+<li>
+<strong>Help us <a href="https://sdbm.library.upenn.edu/names/problems">clean up</a> the SDBM Name Authority.</strong> 
+</li>
+<li>
+<strong>Batch upload data </strong> via our customized data entry spreadsheet! <a href="mailto:sdbm@pobox.upenn.edu">Contact us</a> for more information. 
+</li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <h2 class="text-center">
+            New Interactive Features
+        </h2>
+        
+        <ul>
+            <li>VIAF-based Name Authority.
+                <a href="/pages/SDBM%20Name%20Authority">(Read More)</a>
+            </li>
+            <li>Enhanced Provenance data.</li>
+            <li>Create Groups to collaborate with other users.</li>
+            <li>Communicate with other users via private messages or public forum.</li>
+            <li>Browse the<a href="/dericci_records"> Seymour de Ricci Bibliotheca Britannica Manuscripta Digitized Archive.</a>
+</li>
+<li>Explore our <a href="https://sdbm.library.upenn.edu/sparql-space">SPARQL endpoint.</a>
+</li>
+        </ul>
+    </div>
+</div>
+  </div>
+
+
+    </div>
+    <div class="col-sm-12">
+        <h3 class="text-center home-emphasis">
+            Search the Database
+            <br><small>Everyone is invited to search the database.  Use the search bar below, or click the <b>facets</b> to the right.</small>
+        </h3>
+        <div class="panel panel-search">
+            <div class="panel-body">
+                <div class="navbar-header catalog-search-form">
+  <form class="form-inline clearfix navbar-form" style="width: 100%;" action="/?search_field=all_fields&amp;utf8=%E2%9C%93" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    
+
+      <!--<label for="q" style="margin-right: 10px;">Search Database </label>-->
+      <input type="hidden" name="search_field" value="all_fields"/>
+    <div class="row">
+      <div class="col-xs-11 col-sm-12">
+        <div class="input-group" style="width: 100%;">
+            <!--<label for="q" class="sr-only"><span class="translation_missing" title="translation missing: en.blacklight.search.form.q">Q</span></label>-->
+             <input type="text" name="q" id="q" placeholder="Search database..." class="search_q q form-control" style="width: 100%;" autofocus="autofocus" />
+
+          <span class="input-group-btn" style="width: 1px;">
+            <button type="submit" class="btn btn-primary search-btn" id="search">
+              <span class="submit-search-text">Search</span>
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <a type="button navbar-toggle" href="/advanced" class="btn btn-default advanced_search">Advanced</a>
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-1 text-center show-mobile" style="padding: 0px">
+        <a class='btn btn-blank navbar-toggle' data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-option-horizontal"></span>                       
+        </a>
+      </div>
+    </div>
+</form></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <br>
+        <p>
+        Do you have any suggestions for how we can improve the SDBM? 
+        <a class="btn btn-info" onclick="$('#Survey').modal('show');">Complete our survey</a>
+        </p>
+    </div>
+    <div class="col-sm-12">
+        <h3 class='h3 text-center'>Recent Activity</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/9ceb82b10ce91a042e098cd0985691e9?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/lransomNEW">lransomNEW</a> posted in <a href="/forum/posts/434">Ketterer Auctions - 30 November 2020</a>
+                      </h4>
+                      <p class="thredded--post--created-at">over 2 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>Leon,<br>
+Let me know if  you had or have any questions.</p>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/9ceb82b10ce91a042e098cd0985691e9?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/lransomNEW">lransomNEW</a> posted in <a href="/forum/posts/433">Ketterer Auctions - 30 November 2020</a>
+                      </h4>
+                      <p class="thredded--post--created-at">over 2 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>Thanks, Leon and Mitch! I need to update my notifications so I see these posts.</p>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/519089f93f70fad3a44cd543d50a7302?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/Leon%20R%C3%BCterbories">Leon Rüterbories</a> posted in <a href="/forum/posts/432">Ketterer Auctions - 30 November 2020</a>
+                      </h4>
+                      <p class="thredded--post--created-at">almost 3 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>I will take care of it during the next weekend. Best regards from Germany!</p>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/22254792b829abe730e03eb1bb65e893?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/lcleaver">lcleaver</a> posted in <a href="/forum/posts/431">Philadelphia related progress</a>
+                      </h4>
+                      <p class="thredded--post--created-at">almost 3 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>Provenance for <a href="https://sdbm.library.upenn.edu/manuscripts/2147/" target="_blank" rel="nofollow noopener">https://sdbm.library.upenn.edu/manuscripts/2147/</a> (UPenn) now back into the 19th century!</p>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/22254792b829abe730e03eb1bb65e893?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/lcleaver">lcleaver</a> posted in <a href="/forum/posts/430">Philadelphia related progress</a>
+                      </h4>
+                      <p class="thredded--post--created-at">almost 3 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>Thanks to Bill Stoneman and the Dawson catalogues at The Grolier Club we have more information about the early hisotry of SDBM_MS_2684 now at UPenn.</p>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class=''>
+                      <img class="thredded--post--avatar" src="https://www.gravatar.com/avatar/22254792b829abe730e03eb1bb65e893?s=128&amp;d=mm" />
+                      <h4 class="thredded--post--user-and-topic">
+                        <a href="/profiles/lcleaver">lcleaver</a> posted in <a href="/forum/posts/429">Philadelphia related progress</a>
+                      </h4>
+                      <p class="thredded--post--created-at">almost 3 years</p>
+                    </div>
+                    <div class="text-muted"><div class="thredded--post--content">
+  <p>An 1895 sale for <a href="https://sdbm.library.upenn.edu/manuscripts/24746" target="_blank" rel="nofollow noopener">https://sdbm.library.upenn.edu/manuscripts/24746</a> UPenn Codex 650.</p>
+</div>
+</div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Welcome">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <span class="h3">Recent Changes to the New SDBM</span>
+                <a href="#Welcome" id="dismiss-welcome" data-dismiss="modal" data-target="#Welcome" class='pull-right' style="color: #333;"><span class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            <div class="modal-body">
+                <p>
+                    As of April 1, 2017, thanks to input from the user community, we have made a number of changes to the design and functionality of the database.  We hope this improves your experience.  If you have questions or comments on the new changes, please post in the <a href="/forum" target="_blank">community forum</a>.  We appreciate your feedback and support!
+                </p>
+                <p>Thanks,</p>
+                <p class="text-muted"> - The SDBM Team</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Survey">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVlU5AUc8O1b9uNnKRZLgb5sIIIClH8vwb_dg3HgVeJaVRhw/viewform?embedded=true" width="760" height="2200" style="width: 100%;" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="sidebar" class="col-md-3 col-sm-4">
+  <div id="facets" class="facets sidenav">
+    <!-- New Facet Display (above/in sidebar) -->
+
+  <div class="top-panel-heading panel-heading">
+    <button type="button" class="facets-toggle" data-toggle="collapse" data-target="#facet-panel-collapse">
+      <span class="sr-only">Toggle facets</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <h4 class='facets-heading'>
+
+    	Limit your search
+    </h4>
+  </div>
+
+  <div id="facet-panel-collapse" class="collapse panel-group">
+        <div class="panel panel-default facet_limit blacklight-author ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-author">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Author</a>
+    </h3>
+  </div>
+  <div id="facet-author" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bauthor%5D%5B%5D=Augustine+of+Hippo%2C+Saint%2C+354-430">Augustine of Hippo, Saint, 354-430</a></span><span class="facet-count">5,629</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bauthor%5D%5B%5D=Jerome%2C+Saint%2C+c.+342-347+-+420">Jerome, Saint, c. 342-347 - 420</a></span><span class="facet-count">4,070</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bauthor%5D%5B%5D=Cicero%2C+Marcus+Tullius%2C+106+BC-43+BC">Cicero, Marcus Tullius, 106 BC-43 BC</a></span><span class="facet-count">3,704</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/author">more <span class="sr-only">Author</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-title ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-title">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Title</a>
+    </h3>
+  </div>
+  <div id="facet-title" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Btitle%5D%5B%5D=Book+of+Hours">Book of Hours</a></span><span class="facet-count">18,166</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Btitle%5D%5B%5D=Bible">Bible</a></span><span class="facet-count">3,704</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Btitle%5D%5B%5D=Psalter">Psalter</a></span><span class="facet-count">2,867</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/title">more <span class="sr-only">Title</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-sale_seller ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-sale_seller">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Seller</a>
+    </h3>
+  </div>
+  <div id="facet-sale_seller" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_seller%5D%5B%5D=Phillipps%2C+Thomas%2C+Sir%2C+1792-1872">Phillipps, Thomas, Sir, 1792-1872</a></span><span class="facet-count">3,652</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_seller%5D%5B%5D=Libri%2C+Guglielmo%2C+1803-1869">Libri, Guglielmo, 1803-1869</a></span><span class="facet-count">925</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_seller%5D%5B%5D=North%2C+Frederick%2C+Earl+of+Guilford%2C+1766-1827">North, Frederick, Earl of Guilford, 1766-1827</a></span><span class="facet-count">877</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/sale_seller">more <span class="sr-only">Seller</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-sale_selling_agent ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-sale_selling_agent">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Selling Agent</a>
+    </h3>
+  </div>
+  <div id="facet-sale_selling_agent" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_selling_agent%5D%5B%5D=Sotheby%27s+%28Firm%29">Sotheby&#39;s (Firm)</a></span><span class="facet-count">13,300</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_selling_agent%5D%5B%5D=Sotheby%2C+Wilkinson+%26+Hodge">Sotheby, Wilkinson &amp; Hodge</a></span><span class="facet-count">12,471</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_selling_agent%5D%5B%5D=Bernard+Quaritch+%28Firm%29">Bernard Quaritch (Firm)</a></span><span class="facet-count">4,250</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/sale_selling_agent">more <span class="sr-only">Selling Agent</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+      <div style="margin-top: 5px;" class="more-facets collapse">
+        <div class="panel panel-default facet_limit blacklight-sale_buyer ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-sale_buyer">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Buyer</a>
+    </h3>
+  </div>
+  <div id="facet-sale_buyer" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_buyer%5D%5B%5D=Bernard+Quaritch+%28Firm%29">Bernard Quaritch (Firm)</a></span><span class="facet-count">2,540</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_buyer%5D%5B%5D=J.+%26+J.+Leighton">J. &amp; J. Leighton</a></span><span class="facet-count">1,807</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsale_buyer%5D%5B%5D=Maggs+Bros.">Maggs Bros.</a></span><span class="facet-count">942</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/sale_buyer">more <span class="sr-only">Buyer</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-source_institution ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-source_institution">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Source Institution</a>
+    </h3>
+  </div>
+  <div id="facet-source_institution" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_institution%5D%5B%5D=Biblioth%C3%A8que+nationale+de+France">Bibliothèque nationale de France</a></span><span class="facet-count">22,909</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_institution%5D%5B%5D=R%C4%81mam%C4%81l%C4%81+Trust">Rāmamālā Trust</a></span><span class="facet-count">8,570</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_institution%5D%5B%5D=Phillipps%2C+Thomas%2C+Sir%2C+1792-1872">Phillipps, Thomas, Sir, 1792-1872</a></span><span class="facet-count">6,283</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/source_institution">more <span class="sr-only">Source Institution</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-source_display ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-source_display">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Source</a>
+    </h3>
+  </div>
+  <div id="facet-source_display" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_display%5D%5B%5D=Biblioth%C3%A8que+nationale+de+France+-+Bibliotheque+nationale+de+France%2C+Archives+et+Manuscrits+%28Online+Catalogue%29+-+">Bibliothèque nationale de France - Bibliotheque nationale de France, Archives et Manuscrits (Online Catalogue) - </a></span><span class="facet-count">21,339</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_display%5D%5B%5D=Jordanus">Jordanus</a></span><span class="facet-count">9,580</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_display%5D%5B%5D=R%C4%81mam%C4%81l%C4%81+Trust+-+R%C4%81mam%C4%81l%C4%81+Library+Manuscript+Project+-+Benjamin+Fleming">Rāmamālā Trust - Rāmamālā Library Manuscript Project - Benjamin Fleming</a></span><span class="facet-count">8,570</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/source_display">more <span class="sr-only">Source</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-source_type ">
+  <div class=" collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-source_type">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Source Type</a>
+    </h3>
+  </div>
+  <div id="facet-source_type" class="panel-collapse facet-content in">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_type%5D%5B%5D=Collection+Catalog">Collection Catalog</a></span><span class="facet-count">129,525</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_type%5D%5B%5D=Auction%2FDealer+Catalog">Auction/Dealer Catalog</a></span><span class="facet-count">106,401</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bsource_type%5D%5B%5D=Unpublished+Source">Unpublished Source</a></span><span class="facet-count">23,861</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/source_type">more <span class="sr-only">Source Type</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-provenance ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-provenance">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Provenance</a>
+    </h3>
+  </div>
+  <div id="facet-provenance" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bprovenance%5D%5B%5D=Biblioth%C3%A8que+nationale+de+France">Bibliothèque nationale de France</a></span><span class="facet-count">23,741</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bprovenance%5D%5B%5D=Phillipps%2C+Thomas%2C+Sir%2C+1792-1872">Phillipps, Thomas, Sir, 1792-1872</a></span><span class="facet-count">21,582</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bprovenance%5D%5B%5D=British+Library">British Library</a></span><span class="facet-count">7,822</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/provenance">more <span class="sr-only">Provenance</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-manuscript_date_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-manuscript_date_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Manuscript Date</a>
+    </h3>
+  </div>
+  <div id="facet-manuscript_date_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_date_range%5D%5B%5D=1400+-+1501">1400 - 1501</a></span><span class="facet-count">42,570</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_date_range%5D%5B%5D=1300+-+1401">1300 - 1401</a></span><span class="facet-count">19,849</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_date_range%5D%5B%5D=1500+-+1601">1500 - 1601</a></span><span class="facet-count">14,814</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/manuscript_date_range">more <span class="sr-only">Manuscript Date</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-manuscript_public_id ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-manuscript_public_id">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Manuscript</a>
+    </h3>
+  </div>
+  <div id="facet-manuscript_public_id" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_public_id%5D%5B%5D=SDBM_MS_6295">SDBM_MS_6295</a></span><span class="facet-count">38</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_public_id%5D%5B%5D=SDBM_MS_20331">SDBM_MS_20331</a></span><span class="facet-count">25</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmanuscript_public_id%5D%5B%5D=SDBM_MS_3094">SDBM_MS_3094</a></span><span class="facet-count">25</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/manuscript_public_id">more <span class="sr-only">Manuscript</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-place ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-place">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Place</a>
+    </h3>
+  </div>
+  <div id="facet-place" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bplace%5D%5B%5D=Europe">Europe</a></span><span class="facet-count">106,241</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bplace%5D%5B%5D=Italy">Italy</a></span><span class="facet-count">33,603</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bplace%5D%5B%5D=France">France</a></span><span class="facet-count">27,503</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/place">more <span class="sr-only">Place</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-language ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-language">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Language</a>
+    </h3>
+  </div>
+  <div id="facet-language" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Blanguage%5D%5B%5D=Latin">Latin</a></span><span class="facet-count">146,577</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Blanguage%5D%5B%5D=French">French</a></span><span class="facet-count">18,589</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Blanguage%5D%5B%5D=Italian">Italian</a></span><span class="facet-count">12,999</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/language">more <span class="sr-only">Language</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-use ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-use">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Liturgical Use</a>
+    </h3>
+  </div>
+  <div id="facet-use" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Buse%5D%5B%5D=Rome">Rome</a></span><span class="facet-count">6,062</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Buse%5D%5B%5D=Paris">Paris</a></span><span class="facet-count">2,046</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Buse%5D%5B%5D=Sarum">Sarum</a></span><span class="facet-count">1,547</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/use">more <span class="sr-only">Liturgical Use</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-artist ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-artist">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Artist</a>
+    </h3>
+  </div>
+  <div id="facet-artist" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bartist%5D%5B%5D=Ma%C3%AEtre+Fran%C3%A7ois%2C+active+1468-1482">Maître François, active 1468-1482</a></span><span class="facet-count">153</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bartist%5D%5B%5D=Master+of+the+Rouen+%C3%89chevinage+%28Geneva+Latini%29%2C+active+1460-1480">Master of the Rouen Échevinage (Geneva Latini), active 1460-1480</a></span><span class="facet-count">152</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bartist%5D%5B%5D=Bourdichon%2C+Jean%2C+1457%3F-1521%3F">Bourdichon, Jean, 1457?-1521?</a></span><span class="facet-count">128</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/artist">more <span class="sr-only">Artist</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-scribe ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-scribe">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Scribe</a>
+    </h3>
+  </div>
+  <div id="facet-scribe" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bscribe%5D%5B%5D=Vergece%2C+Ange%2C+1505-1569">Vergece, Ange, 1505-1569</a></span><span class="facet-count">97</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bscribe%5D%5B%5D=Sanudo%2C+Marino%2C+1466-1536">Sanudo, Marino, 1466-1536</a></span><span class="facet-count">68</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bscribe%5D%5B%5D=Darmarios%2C+Andreas%2C+active+1550-1580">Darmarios, Andreas, active 1550-1580</a></span><span class="facet-count">59</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/scribe">more <span class="sr-only">Scribe</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-material ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-material">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Material</a>
+    </h3>
+  </div>
+  <div id="facet-material" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bmaterial%5D%5B%5D=Parchment">Parchment</a></span><span class="facet-count">139,499</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmaterial%5D%5B%5D=Paper">Paper</a></span><span class="facet-count">64,200</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bmaterial%5D%5B%5D=Palm+leaf">Palm leaf</a></span><span class="facet-count">671</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/material">more <span class="sr-only">Material</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-folios ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-folios">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Folios</a>
+    </h3>
+  </div>
+  <div id="facet-folios" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bfolios%5D%5B%5D=10">10</a></span><span class="facet-count">1,451</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bfolios%5D%5B%5D=1">1</a></span><span class="facet-count">1,266</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bfolios%5D%5B%5D=8">8</a></span><span class="facet-count">1,206</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/folios">more <span class="sr-only">Folios</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-num_lines_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-num_lines_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Lines</a>
+    </h3>
+  </div>
+  <div id="facet-num_lines_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_lines_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">16,647</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_lines_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">14,974</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_lines_range%5D%5B%5D=31+-+40">31 - 40</a></span><span class="facet-count">12,235</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/num_lines_range">more <span class="sr-only">Lines</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-num_columns ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-num_columns">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Columns</a>
+    </h3>
+  </div>
+  <div id="facet-num_columns" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_columns%5D%5B%5D=1">1</a></span><span class="facet-count">30,799</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_columns%5D%5B%5D=2">2</a></span><span class="facet-count">30,418</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bnum_columns%5D%5B%5D=3">3</a></span><span class="facet-count">692</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/num_columns">more <span class="sr-only">Columns</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-height_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-height_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Height</a>
+    </h3>
+  </div>
+  <div id="facet-height_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bheight_range%5D%5B%5D=211+-+220">211 - 220</a></span><span class="facet-count">7,787</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bheight_range%5D%5B%5D=201+-+210">201 - 210</a></span><span class="facet-count">6,918</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bheight_range%5D%5B%5D=291+-+300">291 - 300</a></span><span class="facet-count">5,694</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/height_range">more <span class="sr-only">Height</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-width_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-width_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Width</a>
+    </h3>
+  </div>
+  <div id="facet-width_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bwidth_range%5D%5B%5D=141+-+150">141 - 150</a></span><span class="facet-count">9,940</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bwidth_range%5D%5B%5D=151+-+160">151 - 160</a></span><span class="facet-count">8,357</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bwidth_range%5D%5B%5D=211+-+220">211 - 220</a></span><span class="facet-count">7,939</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/width_range">more <span class="sr-only">Width</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-miniatures_fullpage_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-miniatures_fullpage_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Miniatures Full Page</a>
+    </h3>
+  </div>
+  <div id="facet-miniatures_fullpage_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_fullpage_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">6,355</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_fullpage_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">2,124</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_fullpage_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">578</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/miniatures_fullpage_range">more <span class="sr-only">Miniatures Full Page</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-miniatures_large_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-miniatures_large_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Miniatures Large</a>
+    </h3>
+  </div>
+  <div id="facet-miniatures_large_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_large_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">7,125</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_large_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">5,784</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_large_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">1,232</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/miniatures_large_range">more <span class="sr-only">Miniatures Large</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-miniatures_small_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-miniatures_small_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Miniatures Small</a>
+    </h3>
+  </div>
+  <div id="facet-miniatures_small_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_small_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">2,732</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_small_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">1,934</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_small_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">1,679</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/miniatures_small_range">more <span class="sr-only">Miniatures Small</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-miniatures_unspec_size_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-miniatures_unspec_size_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Miniatures Unspec Size</a>
+    </h3>
+  </div>
+  <div id="facet-miniatures_unspec_size_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_unspec_size_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">2,982</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_unspec_size_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">1,423</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Bminiatures_unspec_size_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">644</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/miniatures_unspec_size_range">more <span class="sr-only">Miniatures Unspec Size</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-initials_historiated_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-initials_historiated_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Historiated Initials</a>
+    </h3>
+  </div>
+  <div id="facet-initials_historiated_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_historiated_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">7,330</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_historiated_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">1,710</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_historiated_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">604</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/initials_historiated_range">more <span class="sr-only">Historiated Initials</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default facet_limit blacklight-initials_decorated_range ">
+  <div class="collapsed collapse-toggle panel-heading" aria-expanded="false" data-toggle="collapse" data-target="#facet-initials_decorated_range">
+    <h3 class="panel-title facet-field-heading">
+      <a data-turbolinks="false" data-no-turbolink="true" href="#">Decorated Initials</a>
+    </h3>
+  </div>
+  <div id="facet-initials_decorated_range" class="panel-collapse facet-content collapse">
+    <div class="panel-body">
+      <ul class="facet-values list-unstyled">
+  <li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_decorated_range%5D%5B%5D=1+-+10">1 - 10</a></span><span class="facet-count">10,543</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_decorated_range%5D%5B%5D=11+-+20">11 - 20</a></span><span class="facet-count">3,466</span></li><li><span class="facet-label"><a class="facet_select" href="/?f%5Binitials_decorated_range%5D%5B%5D=21+-+30">21 - 30</a></span><span class="facet-count">1,148</span></li>
+
+    <li class="more_facets_link">
+      <a href="/catalog/facet/initials_decorated_range">more <span class="sr-only">Decorated Initials</span> »</a>
+    </li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <a style="margin-top: 5px;" data-toggle='collapse' data-target='.more-facets' class='btn btn-default collapse in more-facets'>Show More...</a>
+      <a style="margin-top: 5px;" data-toggle='collapse' data-target='.more-facets' class='btn btn-default collapse more-facets'>Hide...</a>
+  </div>
+
+</div>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">&nbsp;</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+      
+      
+    </div>
+  </div>
+  <div class="alerts-absolute"></div>
+  </body>
+</html>

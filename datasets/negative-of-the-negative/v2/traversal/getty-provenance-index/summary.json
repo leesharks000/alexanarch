@@ -1,0 +1,111 @@
+{
+ "row": "getty-provenance-index",
+ "address": "Getty Provenance Index",
+ "entity": "The Getty Provenance Index (GPI; getty.edu/databases-tools-and-technologies/provenance/), the Getty Research Institute's database of art provenance (J. Paul Getty Trust): over 12 million resources transcribed from dealer stock books, sales catalogs and archival inventories, remodeled as linked open data on the Arches platform with a Legacy Index during the transition; its founding given on the Getty's own pages as 1974 by Burton Fredericksen (home page) and as an initiative of the Getty Museum's Paintings department in the early 1980s led by curator Burton B. Fredericksen (initiative page); formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/getty-provenance-index/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "getty-provenance-index",
+  "address": "Getty Provenance Index",
+  "entity": "The Getty Provenance Index (GPI; getty.edu/databases-tools-and-technologies/provenance/), the Getty Research Institute's database of art provenance (J. Paul Getty Trust): over 12 million resources transcribed from dealer stock books, sales catalogs and archival inventories, remodeled as linked open data on the Arches platform with a Legacy Index during the transition; its founding given on the Getty's own pages as 1974 by Burton Fredericksen (home page) and as an initiative of the Getty Museum's Paintings department in the early 1980s led by curator Burton B. Fredericksen (initiative page); formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/getty-provenance-index/)",
+  "row_type": "C (a public entity on which the archive bears: a database of art provenance records; an entity of the provenance meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bGetty Provenance Index\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bProvenance Index\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bGPI\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bprovenance\\.getty\\.edu\\b|getty\\.edu/[A-Za-z/_-]*provenance",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bGetty Research Institute\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bprovenance-index-csv\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "art provenance records (the ownership history of artworks)",
+    "pattern": "\\b(art(work)?s? provenance|provenance \\(art history\\)|art history \\(chain of ownership|chain of ownership and attribution for art|ownership histor(y|ies) of (art|artworks|works of art)|provenance (research|records?|data) (of|on|for) (art|artworks|works of art))\\b",
+    "flags": "i",
+    "basis": "field: B1 (getty.edu, Getty Provenance Index, tagline: 'Providing open access to art provenance data drawn from millions of archival records'; About: 'resources that trace the origins, movements, and lineages of art and cultural artifacts'); B10 (getty.edu, Getty Provenance Index Initiative, Goal: 'Provenance research—the study of ownership history of artworks and cultural objects'); B6 (CNI card snippet: 'records the ownership and sale of artwork'); the census's own lineage for the entity, 'objects and art' (census.json rows[slug == 'getty-provenance-index'].lineage)"
+   },
+   {
+    "term": "art and cultural artifacts, their origins and lineages",
+    "pattern": "\\b(cultural artifacts?|cultural objects?|origin from artifacts|origins? of artifacts|art and cultural)\\b",
+    "flags": "i",
+    "basis": "field: B1 (getty.edu, Getty Provenance Index, About: 'over 12 million digitized, open-access resources that trace the origins, movements, and lineages of art and cultural artifacts'); B10 (getty.edu, Getty Provenance Index Initiative, Goal: 'records that trace the origins, movements, and lineage of cultural artifacts, contributing to a global understanding of art and its shared cultural heritage')"
+   }
+  ],
+  "classes_note": "Two classes, sourced from the field by locus: the Index as a resource of art provenance records, the ownership history of artworks (B1 tagline and About; B10 Goal; B6 snippet), which is the census's own lineage for the entity ('objects and art'); and the objects whose records it holds, art and cultural artifacts, their origins and lineages (B1 About; B10 Goal). The second class was added after the first reading, before the hop was read: the hop returned #729, whose table applies provenance erasure to 'artifacts', and the class had to be stated, by its field loci, before any such sentence could be read at O-class (§3.4 guard). The census's kind, 'database (linked open data)', is not taken as a class: no field source states the class 'linked open data databases' as one the archive could apply a category to, and the archive's categories bear on provenance, not on data formats. The aliases are the entity's name, its short name as the Getty's pages use it ('Provenance Index', capitalised; 'GPI', which the archive's texts do not otherwise use), its hosts, its operator (the Getty Research Institute) and the legacy CSV repository. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim on the Index, or applies an archive category (semantic provenance, provenance erasure, the Provenance Erasure Rate) to art provenance as a class; a bibliographic copy note, a quoted machine composition or a bare list of fields is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Getty Provenance Index' (getty-provenance-index-aio-20261029, OBS-700ba3d88603, ADDR-5ed4ab0409d7), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#466, #725, #729, #1190, #1369, #1386).",
+  "hop_from": [
+   466,
+   725,
+   729,
+   1190,
+   1369,
+   1386
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 8,
+  "D_deposits": 2,
+  "R_sentences": 4,
+  "R_deposits": 1,
+  "O_direct": 2,
+  "O_class": 25,
+  "O_deposits": 14,
+  "H_candidates": 63
+ },
+ "per_deposit": {
+  "D": {
+   "127": 7,
+   "1699": 1
+  },
+  "R": {
+   "127": 4
+  },
+  "O": {
+   "29": 1,
+   "127": 2,
+   "416": 1,
+   "466": 2,
+   "516": 1,
+   "582": 1,
+   "641": 1,
+   "725": 2,
+   "729": 2,
+   "833": 7,
+   "1190": 2,
+   "1369": 2,
+   "1386": 1,
+   "1423": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "3f3fa7533961b56c890e6606793c2c98dcdff58f9695512f6c4cf9930ce2e705",
+  "candidates-R.jsonl": "7b4b0bb8d0717c48d3fff3ab99dae3baa2bf57f8b56d5887632118ad3ffc3d7f",
+  "candidates-O.jsonl": "2c75c9b488e4c86f6193f1f653bf31bc4602d05b9e48eee769d85f40e4ece247",
+  "candidates-H.jsonl": "c95923f17a0ea076b59556ab5d8a298765412600509d05705f023760e3b2cbe0"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

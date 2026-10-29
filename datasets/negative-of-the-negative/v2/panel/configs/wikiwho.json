@@ -1,0 +1,48 @@
+{
+  "row": "wikiwho",
+  "address": "WikiWho",
+  "addresses": [
+    "WikiWho"
+  ],
+  "entity": "WikiWho, the algorithm and API that attribute each token (word) of a Wikipedia article to the revision, and so the editor, that introduced it, with every later removal and reintroduction (Flöck and Acosta, WWW 2014; first developed at the Karlsruhe Institute of Technology and GESIS; since August 2021 on Wikimedia Cloud Services, maintained by Community Tech and the Wiki Education Foundation); its HTML service WhoColor and the tool it powers, Who Wrote That?; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/wikiwho/, editor Lee Sharks); wikiHow, the how-to site the Overview composed at the name, kept as a distinct entity (a homonym of the near-name kind)",
+  "row_type": "C (public entity: an authorship-attribution algorithm and API for Wikipedia; provenance, lineage 'authorship and reuse')",
+  "aliases": [
+    {
+      "pattern": "\\bwikiwho\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bwikiwho\\.(wmcloud\\.org|net)\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bWhoColor\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bWho Wrote That\\?",
+      "flags": ""
+    },
+    {
+      "pattern": "\\bFabian\\s+Fl(ö|o)ck\\b",
+      "flags": ""
+    }
+  ],
+  "classes": [
+    {
+      "term": "authorship attribution of revisioned (wiki) content",
+      "pattern": "\\b(authorship attribution|attribution of authorship|attributing authorship)\\b[^\\n]{0,200}\\b(wiki\\w*|revision\\w*)\\b|\\b(wiki\\w*|revision\\w*)\\b[^\\n]{0,200}\\b(authorship attribution|attribution of authorship|attributing authorship)\\b|\\bcontent persistence\\b",
+      "flags": "i",
+      "basis": "field: B2 (mediawiki.org/wiki/WikiWho, infobox: 'A service that provides authorship attribution of Wikipedia articles'; lede: 'WikiWho is a service providing authorship attribution using a content persistence algorithm.'); B3 (Meta, References [1]: 'WikiWho: Precise and efficient attribution of authorship of revisioned content'); B1 (README, References 1, the same title). The census's lineage for the entity, 'authorship and reuse', is this class as the field states it."
+    },
+    {
+      "term": "token-level provenance of text",
+      "pattern": "\\b(token|word)[- ]level\\s+(provenance|attribution|authorship|tracking)\\b|\\bprovenance\\s+(and\\s+change\\s+information\\s+)?of\\s+(single\\s+|individual\\s+)?(words|tokens)\\b|\\bprovenance/changes of words\\b",
+      "flags": "i",
+      "basis": "field: B1 (README, Introduction: 'The WikiWho API gives access to the provenance/changes of words (tokens) in Wikipedia articles.'); B3 (Meta, nutshell: 'an API for retrieving provenance and change information of single tokens in any arbitrary Wikipedia article revision'); B2 (Technical details: 'which exact text at token level at what revision'). The census's provenance_object for the entity, 'a single token (word) of a Wikipedia article'."
+    }
+  ],
+  "classes_note": "Two classes, sourced from the field by locus: WikiWho as an authorship-attribution service for revisioned (wiki) content (B2 infobox and lede; B1 and B3, the WWW 2014 title), which is the census's lineage 'authorship and reuse' as the field states it; and WikiWho as token-level provenance of text (B1 Introduction; B3 nutshell; B2 Technical details), which is the census's provenance object. The census's kind, 'algorithm and API', is stated by the field (B1 'WikiWho Algorithm', 'The WikiWho API') but names no class the archive could apply a category to, and is not run. No field source places WikiWho in a class of the archive's own: 'provenance meta-aggregator' is the census's class, an archive source, ledgered as PE claims and not run as an O-class, since the brief confines classes to what B sources. The aliases are the entity's name, its two hosts (wikiwho.wmcloud.org, the census's url; wikiwho.net, the GESIS host the README names), its service WhoColor, the tool it powers (Who Wrote That?) and its first author, Fabian Flöck (B1 Contributors). 'wikiHow' is a homonym of the near-name kind and is not an alias: the pattern \\bwikiwho\\b does not match 'wikihow'. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on WikiWho, or applies an archive category to authorship attribution of revisioned content, or to token-level provenance of text, as a class; a bare mention, a sentence on authorship attribution of a literary corpus (the archive's heteronym and Plato-Aristotle work, whose object is not revisioned wiki content), or a sentence on provenance in general is not a claim on the entity or its classes.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'WikiWho' (wikiwho-aio-20261029, OBS-aae62275a976, ADDR-f0b9ec8a6253), Google AI Overview (unexpanded, as pasted), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN."
+}

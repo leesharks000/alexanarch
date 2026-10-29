@@ -1,0 +1,105 @@
+{
+ "row": "wikiwho",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,711 archive texts found no D or R candidate: no deposit text names WikiWho, wikiwho.wmcloud.org or wikiwho.net, WhoColor, Who Wrote That? or Fabian Flöck (also checked by grep over data/texts and data/blog-corpus for wikiwho, whocolor, 'who wrote that?', toktrack and Flöck: no hit on the entity; 'flock' hits are birds, Caeiro's flocks and Flock.io). O-class ran on two classes sourced from the field (config: 'authorship attribution of revisioned (wiki) content', basis B6 infobox and lede, B5/B7 the WWW 2014 title; 'token-level provenance of text', basis B5 Introduction, B7 nutshell, B6 Technical details) and returned three sentences in one deposit (#166), all on 'tail-content persistence' (the class pattern's 'content persistence' alternative). Admission by reading: a sentence is admitted to O when it applies an archive category to authorship attribution of revisioned content, or to token-level provenance, as a class. The hop (H) was not run: it runs from admitted D/R/O deposits, and none was admitted. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (findings, reading, analysis, per_note, q_kind, d) and the provenance census record (census.json row wikiwho, its organizing question and schema note), ledgered as CAP-1-NN and PE-NN.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/wikiwho-aio-20261029/",
+   "reason": "the registry's findings, reading, analysis, PER note, query note and description at the entity's capture by name (OBS-aae62275a976, AXN:0AD7.CAPTURE.📏💛🪧💛🔎🔥), read from data/EA-WG-CAPTURES-01.json (entries[510])",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "provenance-census",
+   "url": "https://www.provenanceerasure.org/aggregators/wikiwho/",
+   "reason": "the provenance meta-aggregator census record of the entity (editor Lee Sharks; compiled 2026-10-29; schema 1.0): census.json row wikiwho (fields and evidence), the census's organizing question and schema note; rendered at /home/claude/fleet/provenance-erasure/aggregators/wikiwho/index.html",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21",
+    "PE-22",
+    "PE-23",
+    "PE-24",
+    "PE-25",
+    "PE-26",
+    "PE-27",
+    "PE-28",
+    "PE-29",
+    "PE-30",
+    "PE-31"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 166,
+   "reason": "O-class candidates O0001–O0003: each sentence is on 'tail-content persistence', a drift metric for observed renderings (the class pattern matched 'content persistence'); none says anything of authorship attribution of revisioned content, of token-level provenance, or of WikiWho",
+   "cands": [
+    "O0001",
+    "O0002",
+    "O0003"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "not run: no deposit admitted"
+ },
+ "observations": "No archive deposit names WikiWho, its hosts, its services, its tool or its first developer. The archive's provenance work (provenance erasure, PER, the Self-Audit Module, the attribution work) bears on composition-layer attribution and on the provenance of archive objects; no deposit applies a category to token-level authorship attribution of revisioned wiki content as a class (addendum item 6). The archive's bearing on the entity is carried by its two records of it: the provenance census record and the capture of 2026-10-29.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 3,
+   "O_deposits": 1,
+   "H_candidates": 0
+  },
+  "candidate_deposits": 1,
+  "admitted": 0,
+  "not_admitted": 1,
+  "archive_claims": {
+   "capture": 13,
+   "census": 31,
+   "deposit": 0
+  }
+ }
+}

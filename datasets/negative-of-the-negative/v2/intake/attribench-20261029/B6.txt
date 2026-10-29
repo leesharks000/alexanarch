@@ -1,0 +1,77 @@
+---
+license: cc-by-4.0
+language:
+  - en
+size_categories:
+  - 10K<n<100K
+task_categories:
+  - text-classification
+tags:
+  - fairness
+  - bias
+  - quote-attribution
+  - llm-evaluation
+  - benchmark
+pretty_name: AttriBench
+arxiv: 2604.05224
+---
+
+# AttriBench
+
+A fame- and demographically-balanced quote attribution benchmark for measuring attribution bias in LLMs. Introduced in [Berman et al., 2026](https://arxiv.org/abs/2604.05224).
+
+- **15,620 quotes** from **6,292 unique authors** across two splits (`intersectional`: 7,964 quotes / 2,968 authors; `multirace`: 7,656 quotes / 3,324 authors)
+- Authors balanced on **race**, **gender**, and **fame** (Google Search hits)
+- Source: filtered subset of the [JSTET corpus](https://link.springer.com/chapter/10.1007/978-3-319-76941-7_49) (Goel, Madhok, Garg, 2018)
+
+## Splits
+
+| Split            | Quotes | Authors | Groups                                                                |
+|------------------|-------:|--------:|-----------------------------------------------------------------------|
+| `intersectional` | 7,964  | 2,968   | Black female, Black male, White female, White male (1,991 quotes / 742 authors each) |
+| `multirace`      | 7,656  | 3,324   | Asian, Black, Latino, White (1,914 quotes / 831 authors each)                       |
+
+## Columns
+
+| Column              | Description                                                                  |
+|---------------------|------------------------------------------------------------------------------|
+| `quote_id`          | Stable identifier.                                                           |
+| `quote`             | Quote text (5–30 words).                                                     |
+| `author_clean`      | Canonical author name — use as ground truth.                                 |
+| `author_raw`        | Name as it appeared in the source corpus.                                    |
+| `author_alt_name`   | Accepted name variants (often null).                                         |
+| `race`              | `black`, `white` (intersectional); `asian`, `black`, `latino`, `white` (multirace). |
+| `gender`            | `male`, `female`.                                                            |
+| `race_source`       | `wikidata` or `llm` (consensus of GPT-4o-mini and Perplexity Sonar).         |
+| `gender_source`     | `wikidata` or `llm`.                                                         |
+| `google_hits`       | Google Search hit count, used as a fame proxy.                               |
+| `log10_hits`        | log₁₀ of `google_hits`. Used for fame balancing.                             |
+| `quotes_per_author` | Number of quotes from this author in the split (1–10).                       |
+
+## Quickstart
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("bermaneh/AttriBench", split="intersectional")
+```
+
+See the [paper](https://arxiv.org/abs/2604.05224) for the fame-balancing methodology and the evaluation setup (prompts, metrics, suppression definitions).
+
+## Citation
+
+```bibtex
+@misc{berman2026attribench,
+  title         = {Attribution Bias in Large Language Models},
+  author        = {Berman, Eliza and Chang, Bella and Neill, Daniel B. and Black, Emily},
+  year          = {2026},
+  eprint        = {2604.05224},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2604.05224}
+}
+```
+
+## License
+
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

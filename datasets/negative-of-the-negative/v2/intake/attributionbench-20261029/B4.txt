@@ -1,0 +1,2076 @@
+osunlp/AttributionBench · Datasets at Hugging Face
+
+ Hugging Face 
+
+ Models
+
+ Datasets
+
+ Spaces
+
+ Buckets
+
+ Docs
+
+ Enterprise
+
+Pricing
+
+Website
+
+ Tasks 
+
+ HuggingChat 
+
+ Collections 
+
+ Languages 
+
+ Organizations 
+
+Community
+
+ Blog 
+
+ Posts 
+
+ Daily Papers 
+
+ Hardware 
+
+ Learn 
+
+ Discord 
+
+ Forum 
+
+ GitHub 
+
+Solutions
+
+ Team & Enterprise 
+
+ Hugging Face PRO 
+
+ Enterprise Support 
+
+ Inference Providers 
+
+ Inference Endpoints 
+
+ Storage Buckets 
+
+Log In
+
+Sign Up
+
+ Datasets: 
+
+ osunlp 
+/
+
+AttributionBench 
+
+ Like 5
+
+Follow
+ OSU NLP Group 253
+
+Tasks: 
+
+ Text Classification 
+
+Modalities: 
+ Text 
+
+Formats: 
+ json 
+
+Languages: 
+ English 
+
+Size: 
+ 10K - 100K 
+
+ArXiv: 
+
+ arxiv: 2402.15089 
+
+ arxiv: 2309.07852 
+
+ arxiv: 2212.08037 
+
+ + 2
+
+Libraries: 
+ Datasets 
+
+ pandas 
+
+ Croissant 
+
+ + 1
+
+License: 
+
+ apache-2.0 
+
+ Dataset card Data Studio Files Files and versions 
+ xet
+ Community 
+1
+
+Dataset Viewer
+
+ Auto-converted to Parquet API Embed Duplicate Data Studio
+
+Subset (4) 
+full_data · 26.4k rows 
+ full_data (26.4k rows)not_balanced (18.5k rows)overall_balanced (18.2k rows)subset_balanced 
+Split (4)
+
+train · 21.9k rows 
+ train (21.9k rows)dev (1.2k rows)test (1.61k rows)test_ood (1.69k rows)
+
+SQL
+ Console
+
+question 
+
+stringlengths
+
+7
+
+906
+
+claim 
+
+stringlengths
+
+2
+
+1.6k
+
+claim_raw_string 
+
+stringlengths
+
+2
+
+1.6k
+
+response 
+
+stringlengths
+
+21
+
+4.64k
+
+references 
+
+sequence
+
+citation_links 
+
+sequence
+
+webpage_references 
+
+sequence
+
+attribution_label 
+
+stringclasses
+
+2
+ values
+
+src_dataset 
+
+stringclasses
+
+4
+ values
+
+id 
+
+stringlengths
+
+45
+
+55
+
+ Please summarise the most recent models of the size-weight illusion
+
+ The model posits that at the perceptual level, heaviness judgments are biased by the objects' density, rather than their size [5].
+
+ The model posits that at the perceptual level, heaviness judgments are biased by the objects' density, rather than their size [5].
+
+ The most recent model of the size-weight illusion, proposed by a research study, describes the illusion as the weighted average of two heaviness estimates with correlated noise: One derived from the object's mass and the other from the object's density, with estimates' weights based on their relative reliabilities [5]....
+
+ [
+ "[5] https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190624\n\n When judging the heaviness of two objects with equal mass, people perceive the smaller and denser of the two as being heavier. Despite the large number of theories, covering bottom-up and top-down approaches, none of them can fully a...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_755daf45-6af2-4760-a515-f970cbdcbfed
+
+ What is the most expensive chemo drug used in the UK?
+
+ It is a gene therapy for spinal muscular atrophy (SMA), a rare and devastating disease[2].
+
+ It is a gene therapy for spinal muscular atrophy (SMA), a rare and devastating disease[2].
+
+ According to the search results, the most expensive drug approved by the NHS in March 2021 was **Zolgensma**, which costs **£1.79 million** for a single dose[1] [2] [3]. It is a gene therapy for spinal muscular atrophy (SMA), a rare and devastating disease[2].
+
+ [
+ "Babies born with the rare, inherited motor neuron disease spinal muscular atrophy are, without treatment, unlikely to reach their second birthday. When, as a researcher in the 1990s, I became aware of the disease there were no treatments even on the horizon. Now there are two recently licensed drugs to treat this ...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_2c2a96c2-74b5-49a6-983c-c4f234edd8bd
+
+ What is the difference between a proofreader and an editor in a translation processing project?
+
+ In a translation processing project, a proofreader and an editor have distinct responsibilities that complement each other to ensure the final translated document is accurate, consistent, and well-structured [1].
+
+ In a translation processing project, a proofreader and an editor have distinct responsibilities that complement each other to ensure the final translated document is accurate, consistent, and well-structured [1].
+
+ In a translation processing project, a proofreader and an editor have distinct responsibilities that complement each other to ensure the final translated document is accurate, consistent, and well-structured [1]. An editor focuses on the overall coherence, structure, and flow of the translation[2]. They check for clari...
+
+ [
+ "[1] https://harryclarktranslation.co.nz/tips-on-how-to-make-a-perfect-translation/\n\nTips on How to Make a Perfect Translation linguistic errors; as well as to ensure overall consistency. The assigned editor will refine the translated text by incorporating preferred glossary terminology and the style specificatio...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_cdd01cd5-1f71-4fe7-91b8-f5c15bf786b4
+
+ why do i see stars after rubbing my eyes
+
+ This pressure activates ganglion cells in the retina, which sends signals to the brain that is interpreted as flashes of light.
+
+ This pressure activates ganglion cells in the retina, which sends signals to the brain that is interpreted as flashes of light.
+
+ When you rub your eyes, you apply pressure to them. This pressure activates ganglion cells in the retina, which sends signals to the brain that is interpreted as flashes of light. This is why you may temporarily see stars after rubbing your eyes. Additionally, rubbing your eyes can also cause small blood vessels in the...
+
+ [
+ "this pressure activates ganglion cells in the retina in the same way as light does. Your brain doesn’t know the difference and so interprets the activation as though you were seeing light from the world outside"
+]
+
+ [
+ "https://www.sciencefocus.com/the-human-body/why-do-we-see-stars-when-we-rub-our-eyes/"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_2a235840-8a72-4e75-ab49-16386fbc4cbd
+
+ how much of the world's diamonds does de beers own
+
+ De Beers owns 40% of the world's diamonds.
+
+ De Beers owns 40% of the world's diamonds.
+
+ De Beers owns 40% of the world's diamonds.
+
+ [
+ "Title: Diamond\nSection: Industry, Gem-grade diamonds\n\nThe De Beers company, as the world's largest diamond mining company, holds a dominant position in the industry, and has done so since soon after its founding in 1888 by the British businessman Cecil Rhodes. De Beers is currently the world's largest operator ...
+
+ []
+
+ []
+
+ attributable
+
+ AttributedQA
+
+ AttributedQA_9d3c9e87-17c7-4425-b7f3-c76b12f86652
+
+ If someone drinks deionised water, what would happen in the body and how can the effects be reduced?
+
+ However, if consumed in large quantities, deionized water may potentially lead to an imbalance of electrolytes, as it lacks the essential minerals commonly found in regular drinking water [2].
+
+ However, if consumed in large quantities, deionized water may potentially lead to an imbalance of electrolytes, as it lacks the essential minerals commonly found in regular drinking water [2].
+
+ Drinking deionized water would likely have minimal immediate effects on the body, as it is relatively pure water with most ions removed [1]. However, if consumed in large quantities, deionized water may potentially lead to an imbalance of electrolytes, as it lacks the essential minerals commonly found in regular drinki...
+
+ [
+ "[2] https://www.medicalnewstoday.com/articles/317698\n\nHealthy adults who eat a balanced diet can drink distilled water if they prefer this method of water purification.\n\nWhat are the risks of drinking distilled water? The main risks of drinking only distilled water are linked to its lack of minerals, including...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_08c05560-60e2-4c47-a0c2-c10e4dabf86a
+
+ who is mike's singing voice in sing
+
+ Seth MacFarlane is the voice of Mike in Sing.
+
+ Seth MacFarlane is the voice of Mike in Sing.
+
+ Seth MacFarlane is the voice of Mike in Sing.
+
+ [
+ "Seth MacFarlane voices Mike the mouse, a tiny character with a giant personality and voice."
+]
+
+ [
+ "https://www.fandango.com/movie-news/a-sing-whos-who-751689"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_6f10dede-1c4a-4f25-8402-b550d3fd3804
+
+ Why do some liquids form skins on them but others don't?
+
+ Some liquids, such as milk, form a skin on the surface when heated because of a chemical reaction where the protein and fat molecules interact with each other and form a barrier on the surface.
+
+ Some liquids, such as milk, form a skin on the surface when heated because of a chemical reaction where the protein and fat molecules interact with each other and form a barrier on the surface.
+
+ Some liquids, such as milk, form a skin on the surface when heated because of a chemical reaction where the protein and fat molecules interact with each other and form a barrier on the surface. However, other liquids, such as water, do not form skins because they do not have the same kind of reactions occurring in the ...
+
+ [
+ "Title: Why does Milk Form a Skin When It is Heated? (with pictures) (www.delightedcooking.com)\nText: Milk forms a skin on top when heated because of a chemical reaction that affects how protein and fat molecules interact with each other. When milk is heated rapidly, some of the water in it evaporates from the sur...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_alpaca_wdoc_9be8c8b9-94ce-4f24-ac59-828041419f23
+
+ the complete collection of dna and genes is called
+
+ Question: What is the complete collection of DNA and genes called?
+Answer: The complete collection of DNA and genes is called genome.
+
+Plain sentence: The complete collection of DNA and genes is called a genome.
+
+ Question: What is the complete collection of DNA and genes called?
+Answer: The complete collection of DNA and genes is called genome.
+
+Plain sentence: The complete collection of DNA and genes is called a genome.
+
+ Question: What is the complete collection of DNA and genes called?
+Answer: The complete collection of DNA and genes is called genome.
+
+Plain sentence: The complete collection of DNA and genes is called a genome.
+
+ [
+ "Title: Genome\n\nIn the fields of molecular biology and genetics, a genome is all genetic information of an organism. It consists of nucleotide sequences of DNA (or RNA in RNA viruses). The genome includes both the genes (the coding regions) and the noncoding DNA, as well as mitochondrial DNA and chloroplast DNA. ...
+
+ []
+
+ []
+
+ attributable
+
+ AttributedQA
+
+ AttributedQA_3b70157e-733c-4bad-801f-337bfcbab322
+
+ If a client asks you to do an exercise where you translate an excerpt of a longer text, without payment, what questions should you ask the client regarding the text?
+
+ Understanding the domain or subject area of the text will help you accurately translate any specialized terms [5].
+
+ Understanding the domain or subject area of the text will help you accurately translate any specialized terms [5].
+
+ When a client asks you to translate an excerpt of a longer text without payment, you should ask the following questions:
+
+1. Understanding the context will help you determine the appropriate translation style and tone [1].
+
+ This ensures that you are proficient in both languages and can provide an accurate translatio...
+
+ [
+ "\n\n\n\nBecome a member of TranslationDirectory.com at just $12 per month (paid per year)\n\nSee also: Ranking of Top 20 Translation Companies for 2005\n\nSee also: Ranking of Top 20 Translation Companies for 2006\n\nINTRODUCTION Financial analysis is the mother of invention. We do not mean cooking the books, but ...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_48b96ce0-d189-4360-8bdf-09e5294daec5
+
+ How much power do customers have?
+
+ Bargaining power of customers**, which is the ability of customers to influence the price, quality, and service of a product or service[2]. - **
+
+ Bargaining power of customers**, which is the ability of customers to influence the price, quality, and service of a product or service[2]. - **
+
+ Customer power in business can refer to different concepts, such as:
+
+- **Consumer buying power**, which is a consumer’s ability to make a purchase with the amount of money they have available to them[1].
+- **Bargaining power of customers**, which is the ability of customers to influence the price, quality, and servic...
+
+ [
+ "Bargaining Power of Customers\n\nOne of the essential requirements in todays business scenario is to realize and evaluate the bargaining power of customers.\n\nThe word bargaining here does not only mean price negotiation, it is a much differentiated and broader term. Bargaining can be encompassed throughout the ...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_31555cdc-cc29-4aba-8471-df0de1491622
+
+ Should public schools be required to provide vegetarian meals?
+
+ However, many schools are adding more plant-based options to their menus.
+
+ However, many schools are adding more plant-based options to their menus.
+
+ There is no federal requirement for public schools to provide vegetarian meals. However, many schools are adding more plant-based options to their menus. For example, every school in New York City serves a vegetarian option during each meal. What do you think about this?
+
+ [
+ "In New York City schools, cafeterias serve plant-based meals as the primary menu item on Fridays, although students can still choose a non-plant-based meal option.\nThese latest efforts mark the most notable progress in recent years to help schools serve plant-based meals,"
+]
+
+ [
+ "https://www.k12dive.com/news/efforts-growing-to-help-schools-serve-plant-based-meals/629194/"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_57cbca2f-94cc-4246-988f-240b952748a5
+
+ Should the internet be regulated by the government?
+
+ Some argue that regulation is necessary to protect data privacy and prevent harmful content.
+
+ Some argue that regulation is necessary to protect data privacy and prevent harmful content.
+
+ There are differing opinions on whether the internet should be regulated by the government. Some argue that regulation is necessary to protect data privacy and prevent harmful content. Others believe that the internet should not be regulated due to libertarian ideology. However, it is important to note that regulating ...
+
+ [
+ "In certain circumstances, Internet regulation also takes the form of \"censorship.\" This information control can be carried out by a variety of parties for different purposes. It may differ from one country to the other, but overall, it has the following purpose for data privacy:\nTo prevent people from watching ...
+
+ [
+ "https://www.easyllama.com/blog/what-is-internet-regulation/"
+]
+
+ []
+
+ not attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_4ea278ed-ee33-4cd6-a238-a50a41ce8a35
+
+ If you were supervising a clinical team, how would you work with a team member who was defensive about feedback?
+
+ Monitor progress and provide ongoing feedback: I would follow-up with the team member to monitor their progress and offer additional feedback as needed [14].
+
+ Monitor progress and provide ongoing feedback: I would follow-up with the team member to monitor their progress and offer additional feedback as needed [14].
+
+ If I were supervising a clinical team and encountered a team member who was defensive about feedback, I would consider the following strategies:
+
+1[1]. Ensure a supportive environment: Before offering feedback, I would create an environment in which team members feel safe and supported [2]. Building trust and rapport w...
+
+ [
+ "[14] https://www.winginstitute.org/school-programs-multi-tiered-systems\n\nMulti-Tiered Systems / Support | WingInstitute.org (listening to concerns and developing accommodations); involving staff in implementing the system; providing effective training (including coaching); offering ongoing support; using the dat...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_12c28a4e-5009-42f2-a0b7-c19dfbec451e
+
+ What are the fundamental principles and application of mechanical engineering?
+
+ Some of the key principles that mechanical engineers need to understand include clearances and tolerances, which are crucial in designing complex and precise parts [2].
+
+ Some of the key principles that mechanical engineers need to understand include clearances and tolerances, which are crucial in designing complex and precise parts [2].
+
+ The fundamental principles of mechanical engineering involve the application of engineering principles and problem-solving techniques from design to manufacturing to the marketplace for any object [1]. Mechanical engineers analyze their work using the principles of motion, energy, and force, ensuring that designs funct...
+
+ [
+ "[2] https://interestingengineering.com/innovation/concepts-mechanical-engineers-need-to-understand\n\n Mechanical engineering and degrees of the like are some of the most in-demand skillsets for new graduates. There are certain mechanical and physical principles that every mechanical engineer needs to understand l...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_2caee8cf-6037-40c7-99ac-5543ae60fcf7
+
+ If the Royal Navy's two aircraft carriers were attacked and destroyed, what would the next action be?
+
+ In the event that the Royal Navy's two aircraft carriers were attacked and destroyed, the next course of action would likely involve several steps: assessing the situation and damage, initiating emergency response and providing support to personnel, investigating the attack, informing political and military leadership,...
+
+ In the event that the Royal Navy's two aircraft carriers were attacked and destroyed, the next course of action would likely involve several steps: assessing the situation and damage, initiating emergency response and providing support to personnel, investigating the attack, informing political and military leadership,...
+
+ In the event that the Royal Navy's two aircraft carriers were attacked and destroyed, the next course of action would likely involve several steps: assessing the situation and damage, initiating emergency response and providing support to personnel, investigating the attack, informing political and military leadership,...
+
+ [
+ "[1] https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/n/the-navy-in-the-cold-war-era-1945-1991.html\n\nand three critical gulf ports; al Jubayl and ad Dammam in Saudi Arabia and Mina Sulman in Bahrain. An attack on these ports by Saddam's 700-plane air force, 165-vessel na...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_37c040e1-5bdb-4529-9f7b-f90d3f664f56
+
+ remove scratch granite countertop
+
+ To remove a scratch, one should use a warm water and dish detergent solution to wash the scratched area, then rub it with a grade 0000 steel-wool pad.
+
+ To remove a scratch, one should use a warm water and dish detergent solution to wash the scratched area, then rub it with a grade 0000 steel-wool pad.
+
+ Granite countertops can be scratched, but it is possible to remove the scratches with a few simple steps. To remove a scratch, one should use a warm water and dish detergent solution to wash the scratched area, then rub it with a grade 0000 steel-wool pad. For polished granite countertops, a commercial polishing paste ...
+
+ [
+ "Using a piece of cloth, clean your countertop surface using the mild soap solution to remove any buildup of dirt or grime.\nBuff out the scratch on the surface using a piece of fine sandpaper or steel wool."
+]
+
+ [
+ "https://graniteselection.com/blog/how-to-remove-scratch-from-granite/#:~:text=Removing%20the%20Scratch%201%20Make%20sure%20the%20surface,surface%20to%20see%20if%20it%20needs%20resealing.%20"
+]
+
+ []
+
+ not attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_dbccfbab-9a3b-4d51-9751-29404ad4b80e
+
+ coping with romantic feelings for roommate
+
+ Try to treat your roommate in the same way as before, like talking to them as normal, since they may think something is wrong if you start behaving differently.
+
+ Try to treat your roommate in the same way as before, like talking to them as normal, since they may think something is wrong if you start behaving differently.
+
+ If you have romantic feelings for your roommate, it is important to be honest and open about them. Try to treat your roommate in the same way as before, like talking to them as normal, since they may think something is wrong if you start behaving differently. If you decide to confess your feelings, offer to move out as...
+
+ [
+ "Keep up the same habits as you normally would, too. If you start behaving strangely, your roommate may think something is up, and they may even think that they have done something wrong. (paraphrased)"
+]
+
+ [
+ "https://www.wikihow.com/Cope-With-Romantic-Feelings-for-Your-Roommate"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_b34c4546-1f79-40a0-b73a-adff97bad5cd
+
+ How has technological growth increased so exponentially in the last 50 years?
+
+ Computers have become smaller, faster, and more powerful, allowing for the development of more complex algorithms and software.
+
+ Computers have become smaller, faster, and more powerful, allowing for the development of more complex algorithms and software.
+
+ Over the last 50 years, technological growth has increased exponentially for a number of reasons. One of the most significant factors has been the rapid advancement of computer technology. Computers have become smaller, faster, and more powerful, allowing for the development of more complex algorithms and software. Ad...
+
+ [
+ "Title: Why Tech Is Accelerating | HuffPost Impact (www.huffpost.com)\nText: The first technological steps -- sharp edges, fire, the wheel -- took tens of thousands of years. For people living in this era, there was little noticeable technological change in even a thousand years. By 1000 A.D., progress was much fas...
+
+ []
+
+ []
+
+ not attributable
+
+ LFQA
+
+ LFQA_gpt3_af19ed88-654e-43e3-a1fb-60d4bdfb7d3a
+
+ when does women's world cup qualifying start
+
+ The World Cup itself will take place from July 20 - August 20, 2023 across ten stadiums in Australia and New Zealand.
+
+ The World Cup itself will take place from July 20 - August 20, 2023 across ten stadiums in Australia and New Zealand.
+
+ The playoff tournament for the Women's World Cup started on February 17, 2023 in New Zealand. The tournament will involve three groups with the winner of each group advancing to the World Cup. The World Cup itself will take place from July 20 - August 20, 2023 across ten stadiums in Australia and New Zealand.
+
+ [
+ "The ninth edition of the FIFA Women’s World Cup will take place from July 20 – Aug. 20, 2023 across 10 stadiums in Australia and New Zealand, six in Australia and four in New Zealand."
+]
+
+ [
+ "https://www.ussoccer.com/competitions/fifa-womens-world-cup-2023"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_5b85d08d-b79d-47be-bdaa-887fb16651c5
+
+ Why do undocumented immigrants returning to Mexico drive down wages there, but proponents of relaxed immigration say they don't do the same here?
+
+ It is clear that both proponents and opponents of relaxed immigration laws have valid points.
+
+ It is clear that both proponents and opponents of relaxed immigration laws have valid points.
+
+ Proponents of relaxed immigration contend that immigrants, both legal and illegal, have a positive economic impact on the United States. This is because they fill low-paying jobs that native-born Americans are not willing to take, thus increasing the overall economic output. Furthermore, they argue that immigrants also...
+
+ [
+ "Title: Trump Immigration Fact Check: Have Immigrants Lowered Wages For Americans? : NPR (www.npr.org)\nText: It is true that wages for low-wage workers have declined — they fell 5 percent from 1979 to 2013. That may not seem like a huge drop, but during that same period, the hourly wages of high-wage workers rose ...
+
+ []
+
+ []
+
+ not attributable
+
+ LFQA
+
+ LFQA_alpaca_139e292a-6de4-489c-9341-6398446c14bb
+
+ why do they use german shepherds as police dogs
+
+ Additionally, they are quick learners and have a great memory, making them perfect for police work.
+
+ Additionally, they are quick learners and have a great memory, making them perfect for police work.
+
+ German Shepherds are used as police dogs because of their high intelligence, loyalty, and stamina. They are also fit for many police work tasks such as patrolling, restraining people, tracking, detecting scents, and doing searches and rescues. German Shepherds are also known for their confidence and temperament, making...
+
+ [
+ "German Shepherds are very intelligent dogs. They are quick learners and they have a great memory. This intelligence makes them perfect for police work, as they can be trained to perform complex tasks and remember important information."
+]
+
+ [
+ "https://germanshepherddog.info/german-shepherds-used-as-police-dogs/"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_26d4d68c-b002-4a0a-8e47-02e13e72e791
+
+ who headed indian army during bangladesh liberation 1971
+
+ Field Marshal Sam Hormusji Framji Jamshedji Manekshaw, widely known as Sam Manekshaw and Sam Bahadur, was the Chief of the Indian Army during the 1971 Indo-Pak war.
+
+ Field Marshal Sam Hormusji Framji Jamshedji Manekshaw, widely known as Sam Manekshaw and Sam Bahadur, was the Chief of the Indian Army during the 1971 Indo-Pak war.
+
+ Field Marshal Sam Hormusji Framji Jamshedji Manekshaw, widely known as Sam Manekshaw and Sam Bahadur, was the Chief of the Indian Army during the 1971 Indo-Pak war. Is there anything else you would like to know?
+
+ [
+ "The partition of India in 1947 brought into existence two countries, India and Pakistan, and a subsequent long-standing conflict between them. The two neighbours have been at loggerheads, engaging in a conflict at various intervals. Beginning from the low-intensity conflict in 1948, right after the formation of th...
+
+ [
+ "https://www.siasat.com/how-india-helped-bangladesh-liberation-war-of-1971-explainer-2242273/"
+]
+
+ []
+
+ not attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_b3d12a8f-bf22-490e-b2da-a34e02546fff
+
+ If the Industrial Revolution had not occurred, how would society's technological advancements and economic structures be different today?
+
+ It also had various effects on political, cultural, and environmental aspects of society[1].
+
+ It also had various effects on political, cultural, and environmental aspects of society[1].
+
+ That's a very interesting question, but also a very complex and speculative one. There is no definitive answer to how society would be different today without the Industrial Revolution, as it depends on many assumptions and variables.
+
+The Industrial Revolution was a period of rapid economic and social change that star...
+
+ [
+ "Causes\n\nThe Industrial Revolution began in Britain in the 1760s, largely with new developments in the textile industry.\n\nspinning jenny © Photos.com/Getty Images Before that time making cloth was a slow process. After wool was gathered it had to be spun into yarn and then woven into fabric by hand. A machine c...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_2efb0d16-cc75-42e9-8bb8-31a52465824e
+
+ Is AI going to put songwriters out of business?
+
+ In conclusion, AI could change the role of songwriters in the music industry by introducing new technology-based creative processes, but it is unlikely to completely replace the need for human songwriters, as the emotional and creative elements they bring to the table remain essential to music production [7].
+
+ In conclusion, AI could change the role of songwriters in the music industry by introducing new technology-based creative processes, but it is unlikely to completely replace the need for human songwriters, as the emotional and creative elements they bring to the table remain essential to music production [7].
+
+ AI is not likely to put songwriters completely out of business, but it may change the nature of their work and create new opportunities within the industry [1]. AI technologies, such as machine learning and natural language processing, can generate melodies, lyrics, and even complete songs [2]. However, these AI-genera...
+
+ [
+ "[7] https://abcnews.go.com/Technology/ai-changing-music-industry/story?id=59580886\n\nHow AI is changing the music industry - ABC News bass and high frequencies -- are a lot simpler to automate than composing a piece of music or doing music production. \"Maybe this is some indication of AI in creative practice, an...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_432f1efe-2d79-4ab9-ace0-82a4ed86e5e1
+
+ Should a Universal Basic Income be introduced?
+
+ Discussions around UBI can be heated and there is no established common understanding.
+
+ Discussions around UBI can be heated and there is no established common understanding.
+
+ Universal Basic Income (UBI) is a social welfare proposal in which all citizens of a given population regularly receive a guaranteed income in the form of an unconditional transfer payment. Discussions around UBI can be heated and there is no established common understanding. Would you like more information on this top...
+
+ [
+ "Discussions around universal basic income can be heated, both in a scholarly context and in public discourse, and there is no established common understanding."
+]
+
+ [
+ "https://www.imf.org/en/Publications/fandd/issues/2018/12/what-is-universal-basic-income-basics"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_a7730985-3935-4177-8f7d-b744ec4f9b53
+
+ How can we as architects improve the quality of life of our clients?
+
+ This can improve occupants' well-being by reducing stress, enhancing comfort, and promoting a sense of connection to nature[6].
+
+ This can improve occupants' well-being by reducing stress, enhancing comfort, and promoting a sense of connection to nature[6].
+
+ As architects, you can improve the quality of life of your clients by focusing on several key factors such as sustainable design, incorporating biophilic elements, emphasizing natural light, maximizing space and functionality, considering accessibility and universal design, focusing on material selection and indoor air...
+
+ [
+ "[6] https://www.sageglass.com/en/article/sageglass-announces-completion-electrochromic-glass-installation-leed-platinum-mixed-use\n\nSageGlass Announces Completion of Electrochromic Glass Installation at LEED Platinum Mixed-Use Development in Colorado | SageGlass with a more comfortable indoor experience and unobs...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_507faf70-c84b-44c6-bcd7-37730b0e5e2c
+
+ when did the phantom of the opera open
+
+ The Phantom of the Opera opened on 9 October 1986.
+
+ The Phantom of the Opera opened on 9 October 1986.
+
+ The Phantom of the Opera opened on 9 October 1986.
+
+ [
+ "Title: The Phantom of the Opera (1986 musical)\nSection: West End and Broadway, West End (Original Production)\n\nPhantom began previews at Her Majesty's Theatre in London's West End on 27 September 1986 under the direction of Hal Prince, then opened on 9 October. It was choreographed by Gillian Lynne and the sets...
+
+ []
+
+ []
+
+ attributable
+
+ AttributedQA
+
+ AttributedQA_06e53874-4fc3-4d70-9d00-731b1881a89b
+
+ What are the elements of the accounting equation?
+
+ The accounting equation illustrates the relationship between these elements, stating that assets equals liabilities plus shareholders' equity [1][2][4].
+
+ The accounting equation illustrates the relationship between these elements, stating that assets equals liabilities plus shareholders' equity [1][2][4].
+
+ The elements of the accounting equation are assets, liabilities, and shareholders' equity [1][2][4]. Assets are things of value owned by a firm, which can include things such as cash in the bank and inventories [3][4]. Liabilities represent what a company owes, as well as any debt used to finance the company's assets [...
+
+ [
+ "[1] https://bizfluent.com/info-8614323-three-elements-accounting-equation.html\n\nWhat Are the Three Elements of an Accounting Equation? | Bizfluent What Are the Three Elements of an Accounting Equation? How Are Debenture Bonds Placed on the Balance Sheet? Companies measure their financial position by the basic ac...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_a3980f51-daeb-42a9-bbd9-36c64af20f95
+
+ who was involved in the 3 5 compromise
+
+ The Three-Fifths Compromise was an agreement reached during the 1787 United States Constitutional Convention between the Northern states and the Southern states.
+
+ The Three-Fifths Compromise was an agreement reached during the 1787 United States Constitutional Convention between the Northern states and the Southern states.
+
+ The Three-Fifths Compromise was an agreement reached during the 1787 United States Constitutional Convention between the Northern states and the Southern states. The main negotiators of the compromise were James Wilson of Pennsylvania and Charles Pinckney of South Carolina. The compromise was proposed by James Wilson a...
+
+ [
+ "Three-fifths compromise, compromise agreement between delegates from the Northern and the Southern states at the United States Constitutional Convention (1787) that three-fifths of the slave population would be counted for determining direct taxation and representation in the House of Representatives."
+]
+
+ [
+ "https://www.britannica.com/topic/three-fifths-compromise"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_a5aff03c-e538-4e0b-856a-26ca5d639b10
+
+ why is there a debate about vaccinating kids?
+
+ However, some vaccine experts have called for more debate before parents embrace the conviction that all healthy children need to get vaccinated.
+
+ However, some vaccine experts have called for more debate before parents embrace the conviction that all healthy children need to get vaccinated.
+
+ There is a debate about vaccinating kids because some people see vaccinations as potentially harmful to children while others see endangerment to the health of the community. The decision to vaccinate teenagers was motivated by the global public health need: to decrease transmission to other age groups. However, some v...
+
+ [
+ "others embrace the conviction that all healthy children need to get vaccinated."
+]
+
+ [
+ "https://www.latimes.com/science/story/2021-06-18/some-vaccine-experts-are-having-second-thoughts-about-immunizing-kids"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_c8ca2420-7ecf-4936-a86c-e74e43270296
+
+ why do i see stars after rubbing my eyes
+
+ This phenomenon is known as **phosphenes**.
+
+ This phenomenon is known as **phosphenes**.
+
+ When you rub your eyes, you apply pressure to them. This pressure can cause you to see stars temporarily. In this case, the stars you see are created with electrical activity as you stimulate your eye cells. This phenomenon is known as **phosphenes**. Is there anything else I can help with?
+
+ [
+ "\"These bursts of seemingly random intense and colorful lights are called phosphenes, and appear due to electrical discharges from the cells inside our eyes that are a normal part of cellular function.\""
+]
+
+ [
+ "https://www.mentalfloss.com/article/536260/whats-really-happening-when-we-see-stars-after-rubbing-our-eyes"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_2e57066d-7961-4e9c-a227-c701cb1bbcde
+
+ who discovered an all water route to the indies from western europe
+
+ The sea route to India from Europe was discovered by **Vasco da Gama** in **1498**.
+
+ The sea route to India from Europe was discovered by **Vasco da Gama** in **1498**.
+
+ The sea route to India from Europe was discovered by **Vasco da Gama** in **1498**. He was a Portuguese explorer who undertook this voyage during the reign of King Manuel I. Is there anything else you would like to know?
+
+ [
+ "Vasco-da-Gama ventured to cross that cape of storm and reached near Calicut in the year 1498 on the western coast of India."
+]
+
+ [
+ "https://www.historydiscussion.net/history-of-india/how-did-the-europeans-discover-the-sea-route-to-india/2543"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_7fc4ee29-a70b-43bc-ae74-16b9b5ff70f6
+
+ where does call.me by your name take place
+
+ Call Me By Your Name takes place in northern Italy.
+
+ Call Me By Your Name takes place in northern Italy.
+
+ Call Me By Your Name takes place in northern Italy. The movie was filmed around Crema, a town in the Lombardy province of Italy.
+
+ [
+ "It’s set in 1983 in the far north of Italy, and filmed around Crema, Moscazzano and Bergamo in Lombardy."
+]
+
+ [
+ "https://www.movie-locations.com/movies/c/Call-Me-By-Your-Name.php"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_26f06d96-dafb-4d45-a017-8a4bded75e1f
+
+ where is john's island in north carolina
+
+ It is 84 square miles (220 km2) in area, and is known for its pristine nature, including the Angel Oak Tree, estimated to be 400-500 years old.
+
+ It is 84 square miles (220 km2) in area, and is known for its pristine nature, including the Angel Oak Tree, estimated to be 400-500 years old.
+
+ Johns Island is located in Charleston County, South Carolina, United States, and is the fourth-largest island on the US east coast. It is bordered by the Wadmalaw, Seabrook, Kiawah, Edisto, Folly and James islands, and is separated from the mainland by the tidal Stono River. It is 84 square miles (220 km2) in area, and...
+
+ [
+ "Johns Island is 84 square miles (220 km2) in area, with a population of 21,500.\nThe Angel Oak is a living Southern live oak tree on Johns Island.\nOnce believed to be 1500 years old, current estimates of the oak's age are 400 to 500 years."
+]
+
+ [
+ "https://en.wikipedia.org/wiki/Johns_Island,_South_Carolina"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_ae2271e6-32b9-4e3a-bcf5-3621e122c704
+
+ A male with 80 years old presents with chronic cough for the last two years. What should you order to study the patient's condition?
+
+ Additionally, diagnostic protocols that follow the "anatomic diagnostic protocol" approach, as described by Irwin and colleagues, may be helpful [3].
+
+ Additionally, diagnostic protocols that follow the "anatomic diagnostic protocol" approach, as described by Irwin and colleagues, may be helpful [3].
+
+ In a case where an 80-year-old male presents with chronic cough for the last two years, the first steps to evaluate the patient's condition would involve taking a careful history and conducting a thorough physical examination [2]. While no single feature at this stage is likely to determine the diagnosis, it is essenti...
+
+ [
+ "[3] https://thorax.bmj.com/content/59/4/342\n\n longer. It is therefore more satisfactory to define chronic cough as one lasting more than 8 weeks and to recognise an overlap period of 3–8 weeks. Current diagnostic protocols for chronic cough have been based on the work of Irwin and colleagues first reported over ...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_454aecdf-fcc7-4ed1-83c0-9b724d3a9b2f
+
+ what is the function of hcl in stomach
+
+ HCl also kills bacteria in the stomach.
+
+ HCl also kills bacteria in the stomach.
+
+ Hydrochloric acid (HCl) in the stomach has several functions. It helps break down food and activate pepsinogen, which is a precursor to pepsin, an enzyme that digests proteins. HCl also kills bacteria in the stomach. The low pH of HCl denatures proteins and converts pepsinogen into pepsin.
+
+ [
+ "The acidic gastric juice also kills bacteria."
+]
+
+ [
+ "https://www.ncbi.nlm.nih.gov/books/NBK279304/"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_766e2fd4-3217-48dd-882c-fab9268071c8
+
+ Is it possible to cheat yourself?
+
+ Yes, it is possible to cheat yourself.
+
+ Yes, it is possible to cheat yourself.
+
+ Yes, it is possible to cheat yourself. Cheating can lead to a loss of happiness and self-worth. It is important to practice healthy self-control and avoid cheating oneself out of happiness.
+
+ [
+ "As a child, you probably heard at least one teacher say, “If you cheat, you’ll only be cheating yourself.”"
+]
+
+ [
+ "https://www.psychologytoday.com/us/blog/what-mentally-strong-people-dont-do/201606/do-cheaters-really-just-cheat-themselves"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_7e1dd307-e3f3-439c-aaf0-be73adaf4573
+
+ Why do fish that live around coral reefs appear to be more colorful than fish that don't live around coral reefs?
+
+ • Identify predators.
+
+ • Identify predators.
+
+ Fish that live around coral reefs appear to be more colorful than fish that don't live around coral reefs because of the following theories: 
+
+The first one was developed by Alfred Russel Wallace, a British naturalist, explorer, geographer, anthropologist, and biologist in the 19th century. It supposes that fish colora...
+
+ [
+ "Title: Why Are Reef Fish Colorful– DIPNDIVE (dipndive.com)\nText: The first one was developed by Alfred Russel Wallace, a British naturalist, explorer, geographer, anthropologist, and biologist in the 19th century. It supposes that fish coloration depends mainly on habitat. Everything is colorful down on the reef....
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_alpaca_wdoc_a680c2ca-afb5-4a1e-b43d-bc642d9447c8
+
+ A patient receiving neoadjuvant FOLFIRINOX for treatment of borderline resectable pancreatic cancer presents for her second cycle of treatment. She complains of uncontrolled nausea with cycle 1 of treatment. She received premedications including Aloxi, aprepitant, dexamethasone, and atropine last cycle, followed by oxa...
+
+ For a patient experiencing uncontrolled nausea with cycle 1 of neoadjuvant FOLFIRINOX treatment for borderline resectable pancreatic cancer, I would recommend the following changes in her regimen in the clinic and additional medications for home use:
+
+1[1].
+
+ For a patient experiencing uncontrolled nausea with cycle 1 of neoadjuvant FOLFIRINOX treatment for borderline resectable pancreatic cancer, I would recommend the following changes in her regimen in the clinic and additional medications for home use:
+
+1[1].
+
+ For a patient experiencing uncontrolled nausea with cycle 1 of neoadjuvant FOLFIRINOX treatment for borderline resectable pancreatic cancer, I would recommend the following changes in her regimen in the clinic and additional medications for home use:
+
+1[1]. Re-evaluate the dosages of premedications, particularly the an...
+
+ [
+ "[1] https://jhoponline.com/jhop-issue-archive/2022-issues/december-2022-vol-12-no-6/19409-neoadjuvant-folfirinox-therapy-for-a-patient-with-borderline-resectable-pancreatic-ductal-adenocarcinoma-undergoing-hemodialysis-case-report\n\n4) for complaints of grade 3 nausea and vomiting, diarrhea, and abdominal pain. T...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_7638ad75-58f9-4b95-86a5-73d9cfe55442
+
+ Please give me an overview of the free granular synthesizer software with pros and cons for each option.
+
+ Granulab:
+Granulab is a popular free granular synthesizer software capable of real-time audio processing [1].
+
+ Granulab:
+Granulab is a popular free granular synthesizer software capable of real-time audio processing [1].
+
+ Granulab:
+Granulab is a popular free granular synthesizer software capable of real-time audio processing [1]. Pros: 
+- Easy to use interface 
+- Real-time audio processing 
+- Capable of generating unique sounds and effects 
+Cons:
+- Limited modulation options 
+- Less intuitive than some competitors 
+- No parametric MIDI ...
+
+ [
+ "[1] https://bedroomproducersblog.com/2012/03/30/bpb-freeware-studio-best-free-granulator-vstau-plugins/\n\nGranular synthesis is one of the more interesting tools in music production. We picked the best free granular VST plugins for your DAW.\n\nUnlike a waveform synthesizer, which would morph and shape a waveform...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_198cc3ec-7dd5-41ba-875e-fb6d78a8118b
+
+ What is the diagnosis? A patient was presented with the rush and their blood was grossly haemolysed.
+
+ AIHA is a condition where the patient's immune system produces antibodies that attack and destroy red blood cells, leading to hemolysis (the destruction or breaking down of red blood cells) [2].
+
+ AIHA is a condition where the patient's immune system produces antibodies that attack and destroy red blood cells, leading to hemolysis (the destruction or breaking down of red blood cells) [2].
+
+ The diagnosis for a patient with a rash and grossly hemolyzed blood could potentially be autoimmune hemolytic anemia (AIHA) [1]. AIHA is a condition where the patient's immune system produces antibodies that attack and destroy red blood cells, leading to hemolysis (the destruction or breaking down of red blood cells) [...
+
+ [
+ "[2] https://www.ihtc.org/autoimmune-hemolytic-anemia\n\nWhen the body fights its own red blood cells\n\nAutoimmune Hemolytic Anemia (AIHA) is a blood disease in which a person produces substances that cause their own body to destroy red blood cells (RBCs), resulting in anemia (low hemoglobin).\n\nTo help us unders...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_f16790dd-699a-4f06-843f-94df878feb4d
+
+ Why does it feel like less effort to watch 3 - hour long TV episodes back to back than a film?
+
+ First, television is designed to be passive.
+
+ First, television is designed to be passive.
+
+ There are a number of reasons why it may feel like less effort to watch a TV show back to back compared to watching a film. First, television is designed to be passive. You can just sit back and watch everything unfold without effort on your part. You’re less likely to pause to reflect on what’s happening. Additionally...
+
+ [
+ "Title: Are Books Superior to TV? How They Affect Our Minds in Different Ways (www.jumpstartyourdreamlife.com)\nText: Television is designed to be passive. After switching to the show you like, you can just sit back and watch everything unfold without effort on your part. You’re less likely to pause to reflect on w...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_webgpt_6381019f-0d82-48e7-b5a0-a3106cfba45a
+
+ what is 'Magnetic moment'
+
+ In most cases, the magnetic moments of electrons with opposite spins will cancel each other out, and the atom will not have a magnetic field.
+
+ In most cases, the magnetic moments of electrons with opposite spins will cancel each other out, and the atom will not have a magnetic field.
+
+ Magnetic moment, also referred to as magnetic dipole moment, is the measure of the object’s tendency to align with a magnetic field. It is a vector quantity, meaning that it has both magnitude and direction. It is defined as the torque of an object to the magnetic field, and the direction is determined by the right-han...
+
+ [
+ "Title: Magnetic Moment - Definition, Formation, Magnetic Dipole Force (byjus.com)\nText: Magnetic moment, also known as magnetic dipole moment, is the measure of the object’s tendency to align with a magnetic field.\n\n\n> “Magnetic Moment is defined as magnetic strength and orientation of a magnet or other object...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_gpt3_whudoc_85d7d220-c1f3-4607-9342-388aa4f17c6e
+
+ where was the movie i am number 4 filmed
+
+ The movie 'I Am Number 4' was filmed in the Pittsburgh metropolitan area.
+
+ The movie 'I Am Number 4' was filmed in the Pittsburgh metropolitan area.
+
+ The movie 'I Am Number 4' was filmed in the Pittsburgh metropolitan area.
+
+ [
+ "Title: I Am Number Four (film)\nSection: Production, Filming\n\nPrincipal photography began on May 17, 2010, using 20 locations all within the Pittsburgh metropolitan area. DreamWorks selected the area primarily due to tax incentives from the Pennsylvania Film Production Tax Credit. The film studio also had a posi...
+
+ []
+
+ []
+
+ attributable
+
+ AttributedQA
+
+ AttributedQA_21663e41-1a4f-476e-bb5b-4d116b3b1cd0
+
+ What are the key elements of Ubisoft's type of Open World systems?
+
+ This diverse range of content constantly provides fresh challenges and rewards for players, maintaining their interest and engagement [8].
+
+ This diverse range of content constantly provides fresh challenges and rewards for players, maintaining their interest and engagement [8].
+
+ Ubisoft's type of open world systems in their games typically focus on a few key elements: a vast and immersive game world, non-linear gameplay, varied missions and activities, and a strong narrative[1]. Vast and immersive game world: Ubisoft's open world games are known for their large, detailed, and diverse environme...
+
+ [
+ "[8] https://www.linkedin.com/pulse/what-player-engagement-mobile-games-understanding-importance-impact\n\nCrush\n\nCandy Crush: This is one of the most popular puzzle games. As players progress through levels, they get rewards. Also, the game has excellent graphics and sounds that keep players engaged and motivate...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_49233791-d989-46bf-9f0a-f61f91a4a18b
+
+ How will the estate of an individual who dies without a will be distributed?
+
+ Generally, the spouse and children of the deceased receive priority in the distribution of the estate [3].
+
+ Generally, the spouse and children of the deceased receive priority in the distribution of the estate [3].
+
+ When an individual dies without a will, their estate is distributed according to the intestacy rules of the jurisdiction in which the estate is being administered [1]. In the United States, intestacy laws vary by state [2]. Generally, the spouse and children of the deceased receive priority in the distribution of the e...
+
+ [
+ "Intestate Succession\n\nIf you die without making a will, a court will distribute your property according to the laws of your state. This process is called “intestate succession” or “intestacy.” Who gets what depends on who your closest relatives are. The most likely recipients are your spouse, your children, your...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_2a29e1b9-b0ed-43c3-a5b7-2d288c521286
+
+ If I do a cold pad-batch bleaching process, what risks do I run if the fabric contains iron containments?
+
+ To mitigate these risks, it is important to use chelating agents and/or water treatment methods to remove iron contaminants before the bleaching process [3].
+
+ To mitigate these risks, it is important to use chelating agents and/or water treatment methods to remove iron contaminants before the bleaching process [3].
+
+ In a cold pad-batch bleaching process, if the fabric contains iron contaminants, you run the risk of catalyzing the decomposition of hydrogen peroxide (H2O2) , which can lead to uneven bleaching, fabric damage, and localized spots or stains [1]. Iron ions can also cause discoloration and negatively affect the brightnes...
+
+ [
+ "[3] https://link.springer.com/article/10.1007/s10570-023-05110-1\n\nand peroxide degradation, and they can simply be removed by draining and washing (Fig. 1). As this removal is not complete, there will always be a carryover of minor metal ion concentrations into the subsequent peroxide bleaching (P-stage) (Virtap...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_9acd3ef0-5170-46b7-8aaa-e817633aa13c
+
+ I'm a 67 year old man, with hypertension and I'm a heavy smoker. What exams should my doctor perform and what are some recommendations regarding prevention?
+
+ Depending on your symptoms and health status, the doctor might recommend more or less frequent checks, and modify the type of tests that they administer[1] [5].
+
+ Depending on your symptoms and health status, the doctor might recommend more or less frequent checks, and modify the type of tests that they administer[1] [5].
+
+ As a 67-year-old man with hypertension and a heavy smoking habit, advice in Passage ID 1 suggests that regular physical exams are crucial to monitor and manage key health indicators such as heart disease and hypertension[1]. Additionally, regular CT scans are important for heavy smokers like yourself to detect lung can...
+
+ [
+ "[1] http://www.houstonianmedical.com/why-you-need-a-routine-physical-even-if-you-feel-fine/\n\nWhy You Need A Routine Physical (Even if you feel fine) - Houstonian Medical Associates heavy smoker—even if you have no symptoms. I believe this new tool is the best way to detect lung cancer early enough to cure it. Th...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_e2d1de49-8419-4b1f-b06e-b26313ac3081
+
+ What's the difference between Reformed Calvanism and a more mainstream Christ centred religion (eg; Christianity)?
+
+ While both Calvinists and mainstream Christians believe in the authority of scripture, Calvinists may differ in their interpretation of certain aspects of scripture, such as the nature of Christ's presence in communion.
+
+ While both Calvinists and mainstream Christians believe in the authority of scripture, Calvinists may differ in their interpretation of certain aspects of scripture, such as the nature of Christ's presence in communion.
+
+ Calvinism is a branch of Protestant Christianity that emphasizes the sovereignty of God and the doctrine of predestination. Reformed theology is a broader term that encompasses Calvinism but also includes other beliefs such as covenant theology and confessionalism. While both Calvinists and mainstream Christians believ...
+
+ [
+ "When we ask the question, what distinguishes one from being simply Calvinistic versus one being reformed I think this is where we have to begin. A Calvinist can hold to the authority of scripture and believe that the scripture is inerrant but he may not necessarily believe that the scripture is truly sufficient fo...
+
+ [
+ "https://trinityrbc.org/resources/articles/the-difference-between-calvinism-and-reformed/"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_6122f6f7-1967-4103-9eda-4fab673cceeb
+
+ It is known that the risk of developing diseases increases with aging, how is it that these days we are seeing higher cases in younger people?
+
+ The rise in childhood obesity, excessive screen time and lack of physical activity can contribute to the development of chronic diseases such as type 2 diabetes and cardiovascular diseases at earlier ages [2].
+
+ The rise in childhood obesity, excessive screen time and lack of physical activity can contribute to the development of chronic diseases such as type 2 diabetes and cardiovascular diseases at earlier ages [2].
+
+ The increasing cases of diseases in younger people may be attributed to factors such as sedentary lifestyle, unhealthy diet, stress, and environmental factors [1]. The rise in childhood obesity, excessive screen time and lack of physical activity can contribute to the development of chronic diseases such as type 2 dia...
+
+ [
+ "[2] http://www.ecns.cn/2017/05-12/257075.shtml\n\nReport: Childhood obesity accelerating an important role, the rapid growth of obesity in the last decade was mainly caused by behavioral and environmental factors, including changes in consumption and the food supply, as well as in physical activity, the report sai...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_34336a38-b9e2-40b9-b5e5-1dfc6a61f91e
+
+ Do people with Alzheimers know they don't remember anything, or do they just not question it?
+
+ In the earlier stages of Alzheimer's, people may be aware of and frustrated by their memory loss.
+
+ In the earlier stages of Alzheimer's, people may be aware of and frustrated by their memory loss.
+
+ In the earlier stages of Alzheimer's, people may be aware of and frustrated by their memory loss. However, in later stages, memory loss becomes more severe. There are cases where people with dementia don't recognize anything is wrong. In some cases, they may have forgotten their diagnosis due to the effects of dementia...
+
+ [
+ "The person with dementia may be aware of — and frustrated by — the changes taking place, such as difficulty recalling recent events, making decisions or processing what was said by others."
+]
+
+ [
+ "https://www.alz.org/help-support/caregiving/stages-behaviors/memory-loss-confusion"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_984167ae-3544-4726-9794-665ae2b456e4
+
+ Why do people become teachers?
+
+ People become teachers for various reasons, including a desire to make a difference in students' lives, a passion for a specific subject, the opportunity for personal growth and development, job stability, and a love for learning and sharing knowledge [1].
+
+ People become teachers for various reasons, including a desire to make a difference in students' lives, a passion for a specific subject, the opportunity for personal growth and development, job stability, and a love for learning and sharing knowledge [1].
+
+ People become teachers for various reasons, including a desire to make a difference in students' lives, a passion for a specific subject, the opportunity for personal growth and development, job stability, and a love for learning and sharing knowledge [1]. Teachers often seek to inspire, motivate, and guide the next g...
+
+ [
+ "[1] https://www.cnm.edu/programs-of-study/communication-humanities-and-social-sciences/educ/why-become-a-teacher\n\nWhy Become a Teacher? | CNM Why Become a Teacher? https://www.cnm.edu/programs-of-study/communication-humanities-and-social-sciences/educ/why-become-a-teacher https://www.cnm.edu/@@site-logo/logo-blu...
+
+ []
+
+ []
+
+ not attributable
+
+ ExpertQA
+
+ ExpertQA_be171932-6bb4-474d-b3f3-4a1f076fc143
+
+ Let's say I am trying to preserve oil paining, what kind of varnish should I use?
+
+ There are two main types of varnishes used for this purpose: natural resin varnishes, such as dammar or mastic, and synthetic varnishes, such as acrylic or ketone resin [2].
+
+ There are two main types of varnishes used for this purpose: natural resin varnishes, such as dammar or mastic, and synthetic varnishes, such as acrylic or ketone resin [2].
+
+ To preserve an oil painting, you should use a varnish specifically designed for fine art oil paintings[1]. There are two main types of varnishes used for this purpose: natural resin varnishes, such as dammar or mastic, and synthetic varnishes, such as acrylic or ketone resin [2]. Natural resin varnishes provide a lumin...
+
+ [
+ "[2] https://www.britannica.com/technology/varnish\n\nvarnish, liquid coating material containing a resin that dries to a hard transparent film. Most varnishes are a blend of resin, drying oil, drier, and volatile solvent. When varnish dries, its solvent portion evaporates, and the remaining constituents oxidize or...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_ab3a74e2-1df4-4ca0-bd02-10cf2a3e0b0c
+
+ Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?
+
+ Additionally, involving a family member, caregiver, or healthcare professional in the medication management process can help avoid confusion and ensure proper dosage [3].
+
+ Additionally, involving a family member, caregiver, or healthcare professional in the medication management process can help avoid confusion and ensure proper dosage [3].
+
+ If a person with dementia is suspected of taking a double dose of their hypertension medication, it is important to monitor their blood pressure closely for any significant changes, and if required, consult their healthcare provider for guidance [1]. To prevent future medication mishaps, consider using a pill organizer...
+
+ [
+ "[3] https://www.caregiver.org/resource/caregiver%CA%BCs-guide-medications-and-aging/\n\nprofessionals, have a responsibility to ensure appropriate, safe, and effective medication use. All professionals involved in prescribing and dispensing—as well as the consumer and caregiver—should consider themselves essential...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_12202034-6a0e-4ff0-bc95-fc360a2f6a6c
+
+ where do they get the hair for a hair transplant
+
+ Where do they obtain the hair for a hair transplant?
+The hair for a hair transplant is typically taken from the back of the patient's scalp.
+
+ Where do they obtain the hair for a hair transplant?
+The hair for a hair transplant is typically taken from the back of the patient's scalp.
+
+ Where do they obtain the hair for a hair transplant?
+The hair for a hair transplant is typically taken from the back of the patient's scalp.
+
+ [
+ "Title: Hair transplantation\n\nHair transplantation is a surgical technique that removes hair follicles from one part of the body, called the 'donor site', to a bald or balding part of the body known as the 'recipient site'. The technique is primarily used to treat male pattern baldness. In this minimally invasive...
+
+ []
+
+ []
+
+ not attributable
+
+ AttributedQA
+
+ AttributedQA_d5437401-a600-43f9-a27b-4cb186d4ec76
+
+ The Lean Six Sigma Methodology
+
+ The first step is to clarify the objectives of the business or project.
+
+ The first step is to clarify the objectives of the business or project.
+
+ The Lean Six Sigma methodology is an effective problem-solving tool designed to improve customer satisfaction. It uses data and analysis to reduce waste and errors and create continuous process improvement with low defects. The aim of the methodology is to make a process 99.99996% defect-free. The first step is to clar...
+
+ [
+ "Title: Greycampus (www.greycampus.com)\nText: Six Sigma is a data-driven problem-solving methodology. The focus is on process variations and emphasis is given to customer satisfaction. Continuous process improvement with low defects is the goal of this method.",
+ "Title: Greycampus (www.greycampus.com)\nText: The...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_gpt3_whudoc_34ee8c1e-0e2e-444e-8280-58d4f76af2ae
+
+ How can network bottlenecks be identified and fixed?
+
+ In other words, the network doesn't have the capabilities to transfer data the way it should be [2].
+
+ In other words, the network doesn't have the capabilities to transfer data the way it should be [2].
+
+ Network bottlenecks can be identified and fixed by following a process for identification and response. You can start by understanding the basics of network bottlenecks, which are any conditions where data flow becomes limited due to insufficient computer or network resources [1]. In other words, the network doesn't ha...
+
+ [
+ "[2] https://www.vistech.com/2022/07/how-to-identify-and-fix-a-network-bottleneck/\n\n Have you ever wondered why it sometimes takes longer than you might expect for certain tasks to be accomplished with your business’ network? It turns out that technology is far from a simple thing, and small issues can seriously ...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_6d876b32-e3aa-4fef-b3a2-e82ca7d05e8c
+
+ Should there be more regulation of multinational corporations?
+
+ Some argue that the UN Guiding Principles and other national regulations are sufficient, while others believe that more principles and agreements are needed to protect human rights.
+
+ Some argue that the UN Guiding Principles and other national regulations are sufficient, while others believe that more principles and agreements are needed to protect human rights.
+
+ There is debate over whether there should be more regulation of multinational corporations. Some argue that the UN Guiding Principles and other national regulations are sufficient, while others believe that more principles and agreements are needed to protect human rights. It is important to consider who should be prot...
+
+ [
+ "The Human Rights Council unanimously endorsed both documents and, in contrast to previous efforts, the business community received them relatively enthusiastically. However, some prominent human rights organisations were less optimistic and continued to push for the creation of a binding treaty."
+]
+
+ [
+ "https://theconversation.com/how-multinational-companies-keep-avoiding-the-threat-of-regulation-38795"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_2f5a4fe9-0723-4ea2-8fd3-58ab726dbe0c
+
+ who plays charles on have and have nots
+
+ Michael Michele plays Charles on The Haves and the Have Nots.
+
+ Michael Michele plays Charles on The Haves and the Have Nots.
+
+ Michael Michele plays Charles on The Haves and the Have Nots.
+
+ [
+ "Title: Michael Jeffrey Joiner\n\nMichael Joiner aka Michael Jeffrey Joiner (born 1958) is an American actor, stand-up comedian, and film maker. Joiner gained exposure when he starred in Sony Picture's The Grace Card with Oscar winner Louis Gossett, Jr. in 2011."
+]
+
+ []
+
+ []
+
+ not attributable
+
+ AttributedQA
+
+ AttributedQA_7aecdf3c-7ce4-43ae-ace4-065dbdfb835c
+
+ What are the main methods to detect listeria in food samples?
+
+ Enzyme-linked immunosorbent assay (ELISA) is a common immunological method that can be used for the detection of Listeria in food samples, with several commercial kits available for this purpose [4].
+
+ Enzyme-linked immunosorbent assay (ELISA) is a common immunological method that can be used for the detection of Listeria in food samples, with several commercial kits available for this purpose [4].
+
+ The main methods to detect Listeria in food samples include culture-based methods, immunological methods, and molecular methods[1]. Culture-based methods: These methods involve the enrichment and isolation of Listeria species from food samples on selective media such as Oxford agar, PALCAM agar, and modified rapid list...
+
+ [
+ "[4] https://link.gale.com/apps/doc/A16379190/AONE?u=googlescholar&sid=bookmark-AONE&xid=5ed02305\n\nof this method include previously mentioned problems with fluorescent microscopy, specificity of the antibody, and interference with the test by autofluorescent food components. One can overcome some of these proble...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_fe34fc97-01a3-44a0-951d-40ddbd8bdf08
+
+ How do contact lens stay on your iris? What stops them from moving all over your eye?
+
+ Finally, the curvature of the contact lens also helps it to stay in place by matching the shape of the eye.
+
+ Finally, the curvature of the contact lens also helps it to stay in place by matching the shape of the eye.
+
+ Contact lenses stay on the iris by a combination of factors. Firstly, the contact lens must fit the eye properly to ensure it stays in place. Additionally, the tear film on the eye ensures that the contact lens does not move by providing a layer of lubrication. The pressure of the eyelids also helps to keep the contact...
+
+ [
+ "Title: What Are Contact Lenses? - Optometrists.org (www.optometrists.org)\nText: Contact lenses are designed to cover the cornea, the clear covering of the eye. They stay in place by adhering to the tear film of the eye, and through the pressure from the eyelids. When you blink, your eyelid glides over the contact...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_alpaca_wdoc_15e8611a-63c2-43d1-84f1-76d2ea04c36d
+
+ What can I do to increase the PCR efficiency in my experiment?
+
+ f. Scrupulously clean all equipment, pipetted devices, working surfaces, and laboratory benches to remove all traces of contamination by previous DNA preparations [1].
+
+ f. Scrupulously clean all equipment, pipetted devices, working surfaces, and laboratory benches to remove all traces of contamination by previous DNA preparations [1].
+
+ To increase the PCR efficiency in your experiment, you can take the following steps:
+
+1. Set up the laboratory to avoid cross-contamination of samples [1]:
+ a. Use three separated working places for preparing the template before PCR, for setting up PCR reactions, and for post-PCR analysis [1].
+ b. Use a dedicated s...
+
+ [
+ "[1] https://www.aatbio.com/resources/faq-frequently-asked-questions/How-can-I-improve-PCR-efficiency\n\n AnswerContamination is the main reason for lower PCR efficiency. Trace amounts of DNA contaminants can serve as templates, resulting in false positives by amplification of the wrong template. The key to improvi...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_c3836eb7-728c-480b-a3e1-d0948145efbb
+
+ Explain: The security implications Microsoft's "golden key" backdoor, present in all copies of Windows since Windows 8.
+
+ Not only does it leave users vulnerable to malicious actors, but it could also be used by governments to spy on users and gain access to their data.
+
+ Not only does it leave users vulnerable to malicious actors, but it could also be used by governments to spy on users and gain access to their data.
+
+ Microsoft's "golden key" backdoor has significant security implications, especially for Windows 8 and later versions. This backdoor essentially allows Microsoft to bypass the encryption protection on any Windows device, granting them access to the system. This creates a huge security risk, as any malicious actor with ...
+
+ [
+ "Title: Microsoft's 'Golden Key' Leak Adds to Case Against Backdoor Access (www.businessinsider.com)\nText: Windows has inadvertently leaked a “golden key” that enables illicit access to Windows phones, tablets, and computers protected by Secure Boot, according to The Next Web.\n\nThe key works only for the owners ...
+
+ []
+
+ []
+
+ attributable
+
+ LFQA
+
+ LFQA_gpt3_49e9a4d1-7b78-40bc-8600-62ee5449411f
+
+ prevent blood clots long flights
+
+ People at high risk of recurrent blood clots should talk to their doctor before taking a flight longer than 4 to 6 hours.
+
+ People at high risk of recurrent blood clots should talk to their doctor before taking a flight longer than 4 to 6 hours.
+
+ To prevent blood clots during long flights, travelers should move their legs frequently and exercise their calf muscles to improve the flow of blood. Taking breaks to stretch the legs and flexing the ankles can also help. People at high risk of recurrent blood clots should talk to their doctor before taking a flight lo...
+
+ [
+ "If you’ve had DVTs in the past or are at high risk of recurrent blood clots, Dr. Bajakian recommends you talk to your doctor before taking a flight longer than 4 to 6 hours."
+]
+
+ [
+ "https://columbiasurgery.org/news/2019/02/27/how-avoid-blood-clots-when-flying-advice-vascular-surgeon"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_9dc6e092-7e4a-4244-bdf7-85799bc552ee
+
+ Should copyright laws be more lenient?
+
+ Copying and distributing works created by others is generally riskier and copyright law is more lenient when the copied material is not copied in whole or is not distributed to the whole class.
+
+ Copying and distributing works created by others is generally riskier and copyright law is more lenient when the copied material is not copied in whole or is not distributed to the whole class.
+
+ Copying and distributing works created by others is generally riskier and copyright law is more lenient when the copied material is not copied in whole or is not distributed to the whole class. This leniency is seen in the form of fair use, which allows for limited use of copyrighted material without permission from th...
+
+ [
+ "Copying and distributing works created by others, however—for example, printing out whole articles and distributing them to your class—is generally riskier. In such cases, copyright law is more lenient when the copied material is not copied in whole or is not distributed to the whole class."
+]
+
+ [
+ "https://www.edutopia.org/article/teachers-guide-copyright-and-fair-use#:~:text=Copying%20and%20distributing%20works%20created%20by%20others%2C%20however%E2%80%94for,or%20is%20not%20distributed%20to%20the%20whole%20class."
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_b5f1ffd7-baff-47f5-9531-81f4416efacd
+
+ coping with crush advice
+
+ Writing down your feelings can help if you are not ready to talk about them.
+
+ Writing down your feelings can help if you are not ready to talk about them.
+
+ To cope with a crush, it is important to stay calm and collected when around them if you want to keep your feelings a secret. If it is difficult to hide your feelings, try to spend less time around the person and find other ways to distract yourself, such as making plans with friends or learning a new hobby. If you wan...
+
+ [
+ "nstead, write down your emotions in a journal."
+]
+
+ [
+ "https://www.wikihow.com/Deal-With-a-Crush"
+]
+
+ []
+
+ attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_a37a3688-c1a0-415d-b7e2-ac787f4ee14f
+
+ How were hard drives always able to store so much more data than floppy disks?
+
+ By the 1980s, hard drives were able to store more data than floppy disks.
+
+ By the 1980s, hard drives were able to store more data than floppy disks.
+
+ Hard drives are able to store much more data than floppy disks due to several factors. Hard disks store much more data per square inch of recording surface, allowing them to have more tracks per radial inch and write more bits per inch along each track. Additionally, hard drives are less sensitive than floppy disks to ...
+
+ [
+ "by the 1980s, Seagate, a company that is still a very big player in the hard drive and data storage market, had developed a 5.25-inch drive that would open up the use of hard drives in personal computers. This also became the standard size for things like floppy disk drives."
+]
+
+ [
+ "https://www.cloudwards.net/history-of-the-hard-drive/"
+]
+
+ []
+
+ not attributable
+
+ Stanford-GenSearch
+
+ Stanford-GenSearch_6db89eb5-e5bb-4ef2-b6ff-f64282a11b2a
+
+ first dynasty to issue gold coins in india
+
+ Question: Which was the first dynasty to issue gold coins in India?
+Answer: Gupta
+
+Plain sentence: The Gupta dynasty was the first to issue gold coins in India.
+
+ Question: Which was the first dynasty to issue gold coins in India?
+Answer: Gupta
+
+Plain sentence: The Gupta dynasty was the first to issue gold coins in India.
+
+ Question: Which was the first dynasty to issue gold coins in India?
+Answer: Gupta
+
+Plain sentence: The Gupta dynasty was the first to issue gold coins in India.
+
+ [
+ "Title: Coinage of India\nSection: Middle Kingdoms (230 BCE – 1206 CE), Gupta Empire (320 – 480 CE)\n\nThe splendid gold coinage of Guptas, with its many types and infinite varieties and its inscriptions in Sanskrit, are the finest examples of the purely Indian art that we possess. Their era starts from around 320 ...
+
+ []
+
+ []
+
+ not attributable
+
+ AttributedQA
+
+ AttributedQA_13172349-ce47-4cde-8cc6-76d27abf03d7
+
+ A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?
+
+ The danger of infection is high for such serious burn victims, and infection is the top cause of death among them, thus, infection control measures will also be a key component of the patient's treatment plan [5].
+
+ The danger of infection is high for such serious burn victims, and infection is the top cause of death among them, thus, infection control measures will also be a key component of the patient's treatment plan [5].
+
+ The treatment for a patient with burns over 25% of his body surface could be quite complex and would depend on the severity and degree of the burns. However, based on the context provided, it is clear that such a patient would require fluid resuscitation, which should be calculated using the time of burn, patient's bod...
+
+ [
+ "[5] https://oawhealth.com/condition/skin-burns/\n\nSkin Burns - OAWHealthSkin Burns - OAWHealth very real danger of infection as well. Infection is the number one cause of death when it comes to serious burn victims. Amount of Body Surface Involved: The severity of a burn is also rated by the percentage of Body Su...
+
+ []
+
+ []
+
+ attributable
+
+ ExpertQA
+
+ ExpertQA_14cd20d1-ed03-4cde-8798-6678fbe2e231
+
+End of preview. Expand in Data Studio
+
+ Previous
+
+1
+
+2
+
+3
+
+...
+
+219
+
+Next 
+
+Usage 
+
+Dataset Structure 
+Data Instances 
+
+Data Fields 
+
+Citation 
+
+ Dataset Card for AttributionBench
+
+Github repository: [Github]
+
+Paper: AttributionBench: How Hard is Automatic Attribution Evaluation?
+
+Point of Contact: Yifei Li
+
+ Dataset Overview
+
+We constructed this dataset from multiple existing data sources in a unified format, in order to create a unified and diverse testbed for evaluating advanced attribution evaluation systems. The dataset contains both in-domain training set and id-domain and out-of-domain test set.
+
+ Usage
+
+import datasets
+
+features = datasets.Features({
+ 'question': datasets.Value('string'),
+ 'claim': datasets.Value('string'),
+ 'claim_raw_string': datasets.Value('string'),
+ 'response': datasets.Value('string'),
+ 'references': datasets.Sequence(datasets.Value("string")),
+ 'citation_links': datasets.Sequence(datasets.Value("string")),
+ 'webpage_references': datasets.Sequence(datasets.Value("string")),
+ 'attribution_label': datasets.Value('string'),
+ 'src_dataset': datasets.Value('string'),
+ 'id': datasets.Value('string'),
+ })
+
+# in-domain train (subset-balanced)
+# possible values for 'name' field: ["subset_balanced", "overall_balanced", "not_balanced", "full_data"]
+dataset = datasets.load_dataset("osunlp/AttributionBench", name="subset_balanced", split="train", features=features)
+
+# in-domain eval/test (subset-balanced)
+# dataset = datasets.load_dataset("osunlp/AttributionBench", name="subset_balanced", split="test", features=features)
+dataset = datasets.load_dataset("osunlp/AttributionBench", name="subset_balanced", split="test", features=features)
+
+# out-of-domain test (subset-balanced)
+dataset = datasets.load_dataset("osunlp/AttributionBench", name="subset_balanced", split="test_ood", features=features)
+
+ Dataset Structure
+
+ Data Instances
+
+{
+ "question":"Is the number of horses living on Easter Island twice the number of people?",
+ "claim":"According to James Grant-Peterkin in his book \u201cA Companion to Easter Island\u201d, there are almost 3,000 horses on Easter Island. However, locals often claim that they have more horses than people. The population of Easter Island is about 6,000 inhabitants. So it seems that the number of horses living on Easter Island is not twice the number of people.",
+ "claim_raw_string":"According to James Grant-Peterkin in his book \u201cA Companion to Easter Island\u201d, there are almost 3,000 horses on Easter Island. However, locals often claim that they have more horses than people. The population of Easter Island is about 6,000 inhabitants. So it seems that the number of horses living on Easter Island is not twice the number of people.",
+ "response":"According to James Grant-Peterkin in his book \u201cA Companion to Easter Island\u201d, there are almost 3,000 horses on Easter Island. However, locals often claim that they have more horses than people. The population of Easter Island is about 6,000 inhabitants. So it seems that the number of horses living on Easter Island is not twice the number of people.",
+ "references":[
+ "It is worth mentioning the huge population of horses (about 6,000) that already outnumber people and roam free on the island."
+ ],
+ "citation_links":[],
+ "webpage_references":[],
+ "attribution_label":"not attributable",
+ "src_dataset":"AttrScore-GenSearch",
+ "id":"AttrScore-GenSearch_7234d6e9-1f51-4203-9587-f539e34d34f4"
+}
+
+ Data Fields
+
+question: str The question proposed by the user.
+
+claim: str Part of the response to the question. Could be one single sentence or multiple sentences.
+
+claim_raw_string: str The raw string of the claim from the original datasets before being processed.
+
+response: str The response to the question generated by LMs or generative search engines.
+
+references: List[str] A list of documents or paragraphs which could support the claim.
+
+citation_links: Optional[List[str]] Reserved field for citation links.
+
+webpage_references: Optional[List[str]] Reserved field for the webpage contents of the reference links.
+
+attribution_label: str "attributable" or "not attributable".
+
+src_dataset: str The source dataset of the data item.
+
+id: str The unique id for the data item in AttributionBench.
+
+ Citation
+
+Reference
+
+ Please kindly cite our paper if you use our code, data, or results:
+
+@misc{li2024attributionbench,
+ title={AttributionBench: How Hard is Automatic Attribution Evaluation?}, 
+ author={Yifei Li and Xiang Yue and Zeyi Liao and Huan Sun},
+ year={2024},
+ eprint={2402.15089},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL}
+ }
+
+ If used, please also cite the original datasets accordingly:
+
+@misc{malaviya2023expertqa,
+ title={ExpertQA: Expert-Curated Questions and Attributed Answers}, 
+ author={Chaitanya Malaviya and Subin Lee and Sihao Chen and Elizabeth Sieber and Mark Yatskar and Dan Roth},
+ year={2023},
+ eprint={2309.07852},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL}
+ }
+
+@inproceedings{liu-etal-2023-evaluating,
+ title = "Evaluating Verifiability in Generative Search Engines",
+ author = "Liu, Nelson and
+ Zhang, Tianyi and
+ Liang, Percy",
+ editor = "Bouamor, Houda and
+ Pino, Juan and
+ Bali, Kalika",
+ booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+ month = dec,
+ year = "2023",
+ address = "Singapore",
+ publisher = "Association for Computational Linguistics",
+ url = "https://aclanthology.org/2023.findings-emnlp.467",
+ doi = "10.18653/v1/2023.findings-emnlp.467",
+ pages = "7001--7025",
+ abstract = "Generative search engines directly generate responses to user queries, along with in-line citations. A prerequisite trait of a trustworthy generative search engine is verifiability, i.e., systems should cite comprehensively (high citation recall; all statements are fully supported by citations) and accurately (high citation precision; every cite supports its associated statement). We conduct human evaluation to audit four popular generative search engines{---}Bing Chat, NeevaAI, perplexity.ai, and YouChat{---}across a diverse set of queries from a variety of sources (e.g., historical Google user queries, dynamically-collected open-ended questions on Reddit, etc.). We find that responses from existing generative search engines are fluent and appear informative, but frequently contain unsupported statements and inaccurate citations: on average, a mere 51.5{\%} of generated sentences are fully supported by citations and only 74.5{\%} of citations support their associated sentence. We believe that these results are concerningly low for systems that may serve as a primary tool for information-seeking users, especially given their facade of trustworthiness. We hope that our results further motivate the development of trustworthy generative search engines and help researchers and users better understand the shortcomings of existing commercial systems.",
+ }
+
+@misc{bohnet2023attributed,
+ title={Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models}, 
+ author={Bernd Bohnet and Vinh Q. Tran and Pat Verga and Roee Aharoni and Daniel Andor and Livio Baldini Soares and Massimiliano Ciaramita and Jacob Eisenstein and Kuzman Ganchev and Jonathan Herzig and Kai Hui and Tom Kwiatkowski and Ji Ma and Jianmo Ni and Lierni Sestorain Saralegui and Tal Schuster and William W. Cohen and Michael Collins and Dipanjan Das and Donald Metzler and Slav Petrov and Kellie Webster},
+ year={2023},
+ eprint={2212.08037},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL}
+ }
+
+@misc{chen2023understanding,
+ title={Understanding Retrieval Augmentation for Long-Form Question Answering}, 
+ author={Hung-Ting Chen and Fangyuan Xu and Shane Arora and Eunsol Choi},
+ year={2023},
+ eprint={2310.12150},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL}
+ }
+
+@article{dziri-etal-2022-evaluating,
+ title = "Evaluating Attribution in Dialogue Systems: The {BEGIN} Benchmark",
+ author = "Dziri, Nouha and
+ Rashkin, Hannah and
+ Linzen, Tal and
+ Reitter, David",
+ editor = "Roark, Brian and
+ Nenkova, Ani",
+ journal = "Transactions of the Association for Computational Linguistics",
+ volume = "10",
+ year = "2022",
+ address = "Cambridge, MA",
+ publisher = "MIT Press",
+ url = "https://aclanthology.org/2022.tacl-1.62",
+ doi = "10.1162/tacl_a_00506",
+ pages = "1066--1083",
+ abstract = "Knowledge-grounded dialogue systems powered by large language models often generate responses that, while fluent, are not attributable to a relevant source of information. Progress towards models that do not exhibit this issue requires evaluation metrics that can quantify its prevalence. To this end, we introduce the Benchmark for Evaluation of Grounded INteraction (Begin), comprising 12k dialogue turns generated by neural dialogue systems trained on three knowledge-grounded dialogue corpora. We collect human annotations assessing the extent to which the models{'} responses can be attributed to the given background information. We then use Begin to analyze eight evaluation metrics. We find that these metrics rely on spurious correlations, do not reliably distinguish attributable abstractive responses from unattributable ones, and perform substantially worse when the knowledge source is longer. Our findings underscore the need for more sophisticated and robust evaluation metrics for knowledge-grounded dialogue. We make Begin publicly available at \url{https://github.com/google/BEGIN-dataset}.",
+ }
+
+@inproceedings{yue-etal-2023-automatic,
+ title = "Automatic Evaluation of Attribution by Large Language Models",
+ author = "Yue, Xiang and
+ Wang, Boshi and
+ Chen, Ziru and
+ Zhang, Kai and
+ Su, Yu and
+ Sun, Huan",
+ editor = "Bouamor, Houda and
+ Pino, Juan and
+ Bali, Kalika",
+ booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+ month = dec,
+ year = "2023",
+ address = "Singapore",
+ publisher = "Association for Computational Linguistics",
+ url = "https://aclanthology.org/2023.findings-emnlp.307",
+ doi = "10.18653/v1/2023.findings-emnlp.307",
+ pages = "4615--4635",
+ abstract = "A recent focus of large language model (LLM) development, as exemplified by generative search engines, is to incorporate external references to generate and support its claims. However, evaluating the attribution, i.e., verifying whether the generated statement is fully supported by the cited reference, remains an open problem. Although human evaluation is common practice, it is costly and time-consuming. In this paper, we investigate automatic evaluation of attribution given by LLMs. We begin by defining different types of attribution errors, and then explore two approaches for automatic evaluation: prompting LLMs and fine-tuning smaller LMs. The fine-tuning data is repurposed from related tasks such as question answering, fact-checking, natural language inference, and summarization. We manually curate a set of test examples covering 12 domains from a generative search engine, New Bing. Our results on this curated test set and simulated examples from existing benchmarks highlight both promising signals and challenges. We hope our problem formulation, testbeds, and findings will help lay the foundation for future studies on this important problem.",
+ }
+
+@misc{kamalloo2023hagrid,
+ title={HAGRID: A Human-LLM Collaborative Dataset for Generative Information-Seeking with Attribution}, 
+ author={Ehsan Kamalloo and Aref Jafari and Xinyu Zhang and Nandan Thakur and Jimmy Lin},
+ year={2023},
+ eprint={2307.16883},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL}
+}
+
+ Copy to bucket 
+
+ Use this dataset 
+
+Downloads last month 
+
+1,481 
+
+Number of rows:
+
+63,065
+
+Total file size:
+
+257 MB
+
+ Models trained or fine-tuned on osunlp/AttributionBench
+
+vllm-sr/Decision-1.0-Route-0.6B
+
+ Zero-Shot Classification • Updated 19 days ago • 271 • 4 
+
+Quicksort-fr/T-CRED-SL
+
+ Text Classification • 33.4M • Updated Sep 23 • 17 • 1 
+
+ Papers for osunlp/AttributionBench
+
+AttributionBench: How Hard is Automatic Attribution Evaluation?
+
+ Paper • 2402.15089 • Published Feb 23, 2024 
+
+Understanding Retrieval Augmentation for Long-Form Question Answering
+
+ Paper • 2310.12150 • Published Oct 18, 2023 • 1 
+
+ExpertQA: Expert-Curated Questions and Attributed Answers
+
+ Paper • 2309.07852 • Published Sep 14, 2023 • 2 
+
+HAGRID: A Human-LLM Collaborative Dataset for Generative
+ Information-Seeking with Attribution
+
+ Paper • 2307.16883 • Published Jul 31, 2023 
+
+Attributed Question Answering: Evaluation and Modeling for Attributed
+ Large Language Models
+
+ Paper • 2212.08037 • Published Dec 15, 2022 
+
+ System theme 
+
+Company
+ TOS Privacy About Careers 
+Website
+ Models Datasets Spaces Pricing Docs

@@ -1,0 +1,291 @@
+{
+ "row": "olmotrace",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on OLMoTrace with the entity named; R, a relation the archive states between OLMoTrace and an archive object; O, an archive category applied to OLMoTrace or to a class the field and the census source for it (tracing language-model outputs back to training data: B2 Abstract, B7 §1 and §6, B6, census kind and lineage; training-data provenance: census lineage, capability and provenance_object, B6, B7 §1). A bare mention, a list of tools or keywords, a citation-list entry or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every sentence of the archive matching either class pattern (14 sentences in 12 texts) was read at its passage, and the admitted deposits read at the sections named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance After AI (metadata packet): the table of adjacent measurement concepts places data attribution (TRAK, influence functions), the class of tracing outputs to training data, as an adjacent method on the training/output relation, against PER on the output/reader relation: the archive's category applied to the class. Not a string-pass candidate (the row carries no category term the script reads as one); found by reading the class matches",
+   "claims": [
+    "O725-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, 2026-05-12): the same row; an instance under #725 (S4)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": []
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Alignment: parametric claims reach PER only indirectly and need companion infrastructure at the substrate level, training-data provenance records among it (O-class, training-data provenance). Found by reading the class matches",
+   "claims": [
+    "O95-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #95 (the Transactions version): an instance under #95 (S4)",
+   "claims": [],
+   "instance_of": 95,
+   "cands": []
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Negative Shape of the Work: training-data attribution research treats behaviour as counterfactually dependent on training examples, and the protocol's evidentiary hierarchy places unvalidated similarity as exploratory evidence only (O-class, tracing to training data). The reference-list entry (Koh and Liang) is not a claim. Found by reading the class matches",
+   "claims": [
+    "O1075-01",
+    "O1075-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2, Gap 2: training-data attribution is the post-hoc detection layer, developed in isolation from the other survival layers, none bundled (O-class). Found by reading the class matches",
+   "claims": [
+    "O127-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1714,
+   "strata": [
+    "O"
+   ],
+   "reason": "Meaning Feudalism at the Discovery Layer §9.2: partial tracing to training examples is possible at cost, recovers no authorship, and what survives depends on what is recorded and computed; provenance has to survive the training pipeline (O-class, both classes). The revision note and the reference line naming influence functions are not claims",
+   "claims": [
+    "O1714-01",
+    "O1714-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis and query note for the entity's capture (OBS-3fd20ae244c0, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "PE",
+   "url": "https://www.provenanceerasure.org/aggregators/olmotrace/ (source: /home/claude/fleet/provenance-erasure/data/provenance-census/census.json rows[slug == 'olmotrace'] and organizing_question; rendered aggregators/olmotrace/index.html read for agreement)",
+   "reason": "the provenance census record of the entity (editor Lee Sharks, compiled 2026-10-29, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (the abstract page B2, the paper B7) it is one lineage with that source",
+   "claims": [
+    "PE-01",
+    "PE-02",
+    "PE-03",
+    "PE-04",
+    "PE-05",
+    "PE-06",
+    "PE-07",
+    "PE-08",
+    "PE-09",
+    "PE-10",
+    "PE-11",
+    "PE-12",
+    "PE-13",
+    "PE-14",
+    "PE-15",
+    "PE-16",
+    "PE-17",
+    "PE-18",
+    "PE-19",
+    "PE-20",
+    "PE-21"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    73
+   ],
+   "reason": "O-class candidate O0001: a semantic debt exceeding 'any claim based on training data provenance' in a retrocausal history: a claim about ownership claims resting on provenance, not about provenance records or tracing"
+  },
+  {
+   "dep": [
+    580
+   ],
+   "reason": "O-class candidate O0002: behavioural interpretability 'complements mechanistic approaches (layer analysis, attention patterns, influence functions)': influence functions named as a mechanistic interpretability method; nothing said of tracing outputs to training data"
+  },
+  {
+   "dep": [
+    623
+   ],
+   "reason": "O-class candidate O0003 (and hop H0030): datasheets for datasets, 'standardized documentation of training data provenance', as a step toward the framework's accounting: a claim about documentation (datasheets), not about the class of tracing tools or provenance records the entity belongs to"
+  },
+  {
+   "dep": [
+    1334
+   ],
+   "reason": "O-class candidate O0004: a checklist line 'Audit training corpus provenance — Pending ACR signoff' in an incident-report packet: no claim on the class"
+  },
+  {
+   "dep": [
+    232
+   ],
+   "reason": "read outside the string pass (class match): 'Trace these back to training data patterns' is a probe instruction in a diagnostic toolkit; no claim on the class"
+  },
+  {
+   "dep": [
+    133
+   ],
+   "reason": "read outside the string pass (class match): 'trace the conversion of meaning into training data' is political economy's task, not a tracing tool or its class"
+  },
+  {
+   "dep": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    31,
+    64,
+    75,
+    87,
+    89,
+    92,
+    100,
+    103,
+    112,
+    125,
+    133,
+    135,
+    140,
+    141,
+    149,
+    151,
+    160,
+    162,
+    204,
+    250,
+    264,
+    349,
+    576,
+    623,
+    628,
+    636,
+    643,
+    673,
+    726,
+    729,
+    768,
+    791,
+    823,
+    837,
+    845,
+    993,
+    998,
+    1009,
+    1010,
+    1076,
+    1081,
+    1082,
+    1196,
+    1201,
+    1202,
+    1210,
+    1229,
+    1368,
+    1369,
+    1384,
+    1386,
+    1389,
+    1393,
+    1409,
+    1427,
+    1441,
+    1443,
+    1540,
+    1556,
+    1574,
+    1643,
+    1664,
+    1665,
+    1671,
+    1673,
+    1677,
+    1678,
+    1680,
+    1684,
+    1690
+   ],
+   "reason": "hop candidates (77, one citation hop from #95, #127, #725, #1075, #1188, #1190, #1714): each screened for passages on tracing outputs to training data, training-data provenance, parametric claims, verbatim matching or memorization, and those found read (#133, #250, #623, #673, #1441, #1540, #1574, #1664, #1665, #1671, #1680, #1684, #1690); none says anything of OLMoTrace or of either class (#673 on statistical traces in training data as what supraliminal signals outlast; #1540 on detectors and memorized canonical texts; #1574 on memorized λόγοι; #1684 restating #127's canary as a memorized association; #1680 on training data among enclosed mechanisms; the specification versions on training-data policy in another row's field)"
+  }
+ ],
+ "hop": {
+  "from": [
+   95,
+   127,
+   725,
+   1075,
+   1188,
+   1190,
+   1714
+  ],
+  "candidates": 77,
+  "admitted": 0
+ },
+ "class_pass": "O-class: the string pass returned 4 candidates (#73, #580, #623, #1334), all rejected; the 14 sentences matching either class pattern in 12 texts were read, admitting #725, #95, #1075, #127 and #1714 (with #1190 and #1188 grouped as instances)",
+ "observations": "No archive text names OLMoTrace, its arXiv number or its Anthology identifier, nor infini-gram (D 0, R 0). The archive's bearing is ontological and by class only: the training/output relation against the output/reader relation (#725), parametric claims and companion training-data provenance (#95), an evidentiary hierarchy that holds similarity as exploratory (#1075), post-hoc detection as one isolated survival layer (#127), partial tracing at cost that recovers no authorship (#1714); and the archive's records of the entity, the provenance census record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 4,
+   "O_deposits": 4,
+   "H_candidates": 77
+  },
+  "class_sentences_read": 14,
+  "deposits_candidate": 13,
+  "deposits_admitted": 7,
+  "deposits_admitted_with_claims": 5,
+  "instances_grouped_S4": 2,
+  "hop_candidates": 77,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 11,
+   "pe": 21,
+   "deposit": 7
+  }
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "row": "data-provenance-initiative",
+ "address": "Data Provenance Initiative",
+ "entity": "The Data Provenance Initiative (dataprovenance.org), a volunteer collective of AI researchers (its own word, 'a multi-disciplinary volunteer effort' in its repository) auditing AI training data and, now, web consent, open model markets and real-world AI use; its first release the audit of 44 collections and 1800+ fine-tuning text datasets (arXiv:2310.16787, 25 October 2023; Nature Machine Intelligence 6, 30 August 2024), the Data Provenance Collection, Explorer and Card; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/data-provenance-initiative/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "data-provenance-initiative",
+  "address": "Data Provenance Initiative",
+  "entity": "The Data Provenance Initiative (dataprovenance.org), a volunteer collective of AI researchers (its own word, 'a multi-disciplinary volunteer effort' in its repository) auditing AI training data and, now, web consent, open model markets and real-world AI use; its first release the audit of 44 collections and 1800+ fine-tuning text datasets (arXiv:2310.16787, 25 October 2023; Nature Machine Intelligence 6, 30 August 2024), the Data Provenance Collection, Explorer and Card; formalized in the provenance meta-aggregator record of 2026-10-29 (provenanceerasure.org/aggregators/data-provenance-initiative/)",
+  "row_type": "C (a public entity on which the archive bears: a research initiative and its audit collection and explorer; an entity of the provenance meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bData Provenance Initiative\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bData Provenance (Explorers?|Collection|Cards?)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bDP(Explorer|Collection)\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bDPI Explorer\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bdataprovenance\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bData-Provenance-(Collection|Initiative)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bConsent in Crisis\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bLongpre\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\b(2310\\.16787|2407\\.14933|2412\\.17847|s42256-024-00878-8)\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "training-data provenance and licensing audits",
+    "pattern": "\\b(training[- ](data|corpus|dataset)s?[- ](provenance|licens\\w*|audits?)|dataset (licens\\w*|provenance|audits?)|(corpus|corpora) licens\\w*)\\b",
+    "flags": "i",
+    "basis": "field: B2 (arXiv:2310.16787, Abstract: 'systematically audit and trace 1800+ text datasets. We develop tools and standards to trace the lineage of these datasets'); B1 (dataprovenance.org, home: 'Training Data Provenance' / 'Dataset audits'); B7 (dataprovenance.org/about: 'Our work began with training data provenance'); the census's own lineage for the entity, 'training data', and kind, 'audit collection and explorer' (census.json rows[slug == 'data-provenance-initiative'], lineage, kind), whose evidence is B5 and B2"
+   }
+  ],
+  "classes_note": "One class, sourced from the field by locus and matching the census's lineage ('training data') and kind ('audit collection and explorer'): training-data provenance and licensing audits (B2 Abstract, B1 home, B7 /about). The aliases are the entity's name, the three names the census gives as aka (Data Provenance Explorer, Collection, Card) and the paper's abbreviations (DPExplorer, DPCollection), the abbreviation its pages use for the tool ('DPI Explorer'; bare 'DPI' is not an alias, since in the archive it is #261's distinction preservation index), its domain, its GitHub organisation and repository, its lead author's surname (Longpre, which returns citations of its papers), and its papers by title and number (the founding audit 2310.16787 and its Nature DOI, Consent in Crisis 2407.14933, the multimodal audit 2412.17847). Admission by reading (§3.4): D only where the Initiative, its collection, explorer or card, or one of its papers as its work, is named and a claim is made on it; a citation-list entry, a bare 'external anchors' listing or a reference line is not a claim. O-class admits a sentence that applies an archive category (semantic provenance, the Provenance Erasure Rate, the training layer against the composition layer) to training-data provenance and licensing audits as a class.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the briefs rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Data Provenance Initiative' (data-provenance-initiative-aio-20261029, OBS-118fbafa73c9, ADDR-c0bda0b5919d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the provenance census record) are ledgered beside the deposits as CAP-1-NN and PE-NN. The MMRS row data-provenance-explorer (datasets/negative-of-the-negative/v2/rows/data-provenance-explorer.json) is a neighbour: the explorer, a distinct record. Second pass: one citation hop forward and back from the deposits admitted by reading (#95, #98, #121, #623, #725, #1003, #1188, #1190, #1194, #1714).",
+  "hop_from": [
+   95,
+   98,
+   121,
+   623,
+   725,
+   1003,
+   1188,
+   1190,
+   1194,
+   1714
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 35,
+  "D_deposits": 8,
+  "R_sentences": 5,
+  "R_deposits": 2,
+  "O_direct": 18,
+  "O_class": 9,
+  "O_deposits": 9,
+  "H_candidates": 73
+ },
+ "per_deposit": {
+  "D": {
+   "98": 3,
+   "121": 1,
+   "725": 11,
+   "726": 2,
+   "1003": 1,
+   "1190": 13,
+   "1194": 1,
+   "1714": 3
+  },
+  "R": {
+   "725": 2,
+   "1190": 3
+  },
+  "O": {
+   "73": 1,
+   "98": 1,
+   "121": 1,
+   "623": 1,
+   "725": 9,
+   "1003": 1,
+   "1190": 11,
+   "1194": 1,
+   "1334": 1
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 121,
+   "triple": {
+    "subject": "Provenance and attribution studies",
+    "predicate": "minted_in",
+    "object": "AI-Native Intellectual Biography A New Genre of AI-Mediated ",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "in digital environments — C2PA, the Data Provenance Initiative, W3C PROV — have focused on attributi"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "58797168e681a1a60707e2bcc50b442074fa6ce761b9aa51a7a5ad4021fa5c30",
+  "candidates-R.jsonl": "47544b4fb2da8d1d4f89b5d145551696a7264f7634a8814f7bdf001ec7f01655",
+  "candidates-O.jsonl": "185f71c723a548e8f3b7211a4a666d46602bc6ce684cd440868e94235e32ae50",
+  "candidates-H.jsonl": "721e2cfa78e9ca9fc463404d36b839a2f021b5a15440c164dde86d00ee0233d2"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}
