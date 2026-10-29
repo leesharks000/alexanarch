@@ -116,7 +116,102 @@
  },
  "per_note": "C2PA named; no person in the answer (Scott Perry in a card); no identifier; C2PA's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-c2pa-conformance",
+   "name": "C2PA Conformance Program and Explorer"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The C2PA Conformance Program is a risk-based governance and verification framework"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "run by the [Coalition for Content Provenance and Authenticity]"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The C2PA Conformance Program is a risk-based governance and verification framework run by the [Coalition for Content Provenance and Authenticity](https://www.google.com/url?sa=i&source=web&rct=j&url=CAESSQHrOzAVuwzn3UN86yffzE80u24yceOTqeimVuqQaPCaboHdCapCOp4DGinA2OBC8jtKiFJNGuXNN5SJLfIecTIpd4-8IMS83L8&uoh=2&ved=2ahUKEwi7nMGW0t-XAxU9NoYAHRpcI6gQy_kOegoIAggACAAIBxAE&opi=89978449&cd&psig=AOvVaw18y9wkf9oMBz0bQikE6MX7&ust=1793377564077000) to ensure hardware and software products properly implement the Content Credentials specification."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "run by the [Coalition for Content Provenance and Authenticity]"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "to ensure hardware and software products properly implement the Content Credentials specification."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Evaluation Process: Applicants submit an expression of interest, sign legal agreements, provide technical evidence, and run self-test tools against program requirements."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.375,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The C2PA Conformance Program is a risk-based governance and verification framework run by the [Coalition for Content Provenance and Authenticity]; The program is composed as itself: run by the C2PA, holding generator products, validator products and certificate authorities to the Content Credentials specification, with the Conforming Products List, the Explorer and the application process.",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary present on the first sentence, at the program's own terms ('risk-based governance' is F3's wording); the stated limits are not carried, and 'creating end-to-end tamper evidence for digital media' leans past the program's own limits (provenance not always complete, ingredients not verified the same way, F49 and F53), which a stricter reader may count as inflation. Purpose read present: ensuring correct implementation is the record's assurance and accountability purpose in short; transparency for relying parties and interoperability are not named. Commitments present on the legal agreement and evidence that bind applicants; the independent Administrator and revocation are not carried. Deposit chain absent: no version (v0.1, v0.2) is named. Producer and institution share one span (the coalition), the records giving the C2PA for both. 'Conforming Products List' and 'C2PA Conformance Explorer' are aliases of the name and fill no other atom."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -196,6 +291,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0ACC.CAPTURE",
- "axn": "AXN:0ACC.CAPTURE.🌸∮🌠🕗🔅∮",
+ "axn": "AXN:0ACC.CAPTURE.🚪🔻💫🌹🔽👈",
  "record_url": "https://www.alexanarch.org/captures/c2pa-conformance-program-aio-20261029/"
 }

@@ -89,7 +89,110 @@
  },
  "per_note": "Presenc AI named; its CTO, the byline, not named; Presenc's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-presenc-geo-papers",
+   "name": "Presenc AI — GEO academic papers 2026"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "* [GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "featuring Presenc AI's breakdown of practical implications"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "A comprehensive summary covering 34 academic and industry research papers on Generative Engine Optimization"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "featuring Presenc AI's breakdown of practical implications for digital marketers and SEO/GEO practitioners"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": "notably pioneering papers such as the Princeton-led multi-institutional study on GEO"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.625,
+   "PER": 0.526
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: A comprehensive summary covering 34 academic and industry research papers on Generative Engine Optimization, featuring Presenc AI's breakdown of practical implications for digital marketers and SEO/GEO practitioners.; The 34-paper summary is reached by title and described as itself, first among the operator's three resources; the siblings are named and described apart, not merged with it.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "The composition is after Google's correction to 'presence' was overridden by the operator ('show results for presenc'), as the transcript's header records; the earlier unrelated Overview is not the capture. The lead sentence composes the operator ('Presenc AI provides curated summaries'); the target is reached in the first bullet, by its title as link text. Date absent: '2026' occurs only inside the title (the target's own name never fills a second atom). Claim boundary absent: the holdings and the vendor's implications are carried, the stated limits (half preprints, English-only, commercial outcomes anecdotal, the vendor's audit framework anchored in the list) are not. Lineage absent: the Princeton study is bound to 'the modern framework for Generative Engine Optimization', the field, not to the list as its foundation. Framework (the Presenc AI audit framework) absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -170,6 +273,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB4.CAPTURE",
- "axn": "AXN:0AB4.CAPTURE.♦️🕘🌿🔙🏠🏰",
+ "axn": "AXN:0AB4.CAPTURE.↗️♉💥📚⚪⏬",
  "record_url": "https://www.alexanarch.org/captures/presenc-ai-geo-academic-papers-aio-20261029/"
 }

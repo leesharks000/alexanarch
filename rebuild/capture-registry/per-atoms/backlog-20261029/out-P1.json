@@ -1,0 +1,2503 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "iptc-photo-metadata-tests",
+   "name": "IPTC photo metadata tests",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "A test series (census kind 'test series': a periodic measurement whose product is dated result tables), read as a benchmark and so the dataset template: 'To check which systems support this claim, IPTC checks about a dozen sites regularly: in 2013, in 2016 and now again in Spring 2019.' (F37, own page B12).",
+   "records": [
+    {
+     "source": "census:iptc-photo-metadata-tests",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://iptc.org/standards/photo-metadata/"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B4.txt",
+     "origin": "card",
+     "url": "https://www.iptc.org/std/photometadata/documentation/userguide/"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B12.txt",
+     "origin": "own_page",
+     "url": "https://iptc.org/standards/photo-metadata/social-media-sites-photo-metadata-test-results-2019/"
+    },
+    {
+     "source": "B13",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B13.txt",
+     "origin": "own_page",
+     "url": "https://iptc.org/standards/photo-metadata/research/"
+    },
+    {
+     "source": "B15",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-photo-metadata-tests-20261029/B15.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "IPTC photo metadata tests",
+      "IPTC Social Media Sites Photo Metadata Test Results",
+      "Social Media Sites Photo Metadata Test Results",
+      "IPTC Photo Metadata Research"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "IPTC photo metadata tests",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].name"
+      },
+      {
+       "record_quote": "IPTC Social Media Sites Photo Metadata Test Results",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].aka"
+      },
+      {
+       "record_quote": "IPTC Photo Metadata Research",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].aka"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "IPTC",
+      "International Press Telecommunications Council",
+      "IPTC Photo Metadata Working Group",
+      "Photo Metadata Working Group"
+     ],
+     "reference": "The IPTC's Photo Metadata Working Group, bound to the tests as their maker.",
+     "evidence": [
+      {
+       "record_quote": "IPTC (International Press Telecommunications Council), Photo Metadata Working Group",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].operator"
+      },
+      {
+       "record_quote": "The IPTC Photo Metadata Working Group tested 15 social media sites in 2016 and 2013",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F48"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2013",
+      "2016",
+      "Spring 2019",
+      "2019",
+      "August 2014"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "in 2013, in 2016 and now again in Spring 2019",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F37"
+      },
+      {
+       "record_quote": "The results, published in August 2014",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F50"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Tests of whether the embedded Exif and IPTC metadata (IIM and XMP) of an uploaded image survive upload, display, Save As and download on image-sharing sites and file and message systems, the four Cs (caption, creator, copyright notice, credit line) checked for display; dated results (2013, 2016, Spring 2019; a software study of August 2014); the finding that some systems remove the information and others protect it, so that preservation in a workflow is not impossible. Not a current platform audit (each table carries its test year); not a test of C2PA credentials.",
+     "evidence": [
+      {
+       "record_quote": "are the embedded Exif and IPTC metadata (in the formats IIM and XMP) of the uploaded image still embedded?",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F39"
+      },
+      {
+       "record_quote": "If displayed: are these 4 relevant fields shown, correctly: Caption/description, Creator, Copyright Notice, Credit Line (= the 4Cs )",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F40"
+      },
+      {
+       "record_quote": "Some social media sites or systems remove embedded information like copyright notes, the name of the creator, the description and more, while others protect photographers’ data better. The results show that it is not impossible to preserve metadata in a workflow.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F49"
+      },
+      {
+       "record_quote": "NOT a current platform audit: each table carries its test year",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].negative_tags"
+      },
+      {
+       "record_quote": "NOT a test of C2PA credentials",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "IPTC Photo Metadata Standard",
+      "IPTC Photo Metadata"
+     ],
+     "reference": "The IPTC's photo metadata work: the research is the IPTC's activity beside the standard it defines, and the tests measure the standard's embedded fields.",
+     "evidence": [
+      {
+       "record_quote": "IPTC not only defines the standard for photo metadata, but also conducts research about how photo metadata is used and implemented.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F46"
+      },
+      {
+       "record_quote": "Uploading an image with values in many fields of the IPTC Photo Metadata Standard",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F38"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To check which sharing sites and systems support the IPTC's claim that embedded metadata should not be removed from shared images; the tests answer users who found their embedded metadata disappeared when they shared photos.",
+     "evidence": [
+      {
+       "record_quote": "IPTC promotes the proper use of IPTC Photo Metadata and claims “embedded metadata should not be removed” from images shared on a photo platform or a system for sharing files or messages with images.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F36"
+      },
+      {
+       "record_quote": "To check which systems support this claim",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F37"
+      },
+      {
+       "record_quote": "IPTC was approached by users who discovered that when they shared photos via social media sites or systems, their embedded metadata disappeared.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F47"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The norm the tests bind themselves to and hold systems to: embedded metadata should not be removed from images shared on a platform or system (the IPTC's claim, which the tests check). No licence for the result tables is stated.",
+     "evidence": [
+      {
+       "record_quote": "claims “embedded metadata should not be removed” from images shared on a photo platform or a system for sharing files or messages with images.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F36"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Reference Image File",
+      "Exif standard",
+      "Exif"
+     ],
+     "reference": "The tests measure integrity of embedded metadata as defined by IPTC standards and the Exif standard, by uploading the standard's Reference Image File.",
+     "evidence": [
+      {
+       "record_quote": "affects the integrity of embedded metadata as defined by IPTC standards and the Exif standard",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F48"
+      },
+      {
+       "record_quote": "e.g. the latest Reference Image File",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F38"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record states an identifier for the tests or their result tables (the pages carry URLs only)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "2013",
+      "2016",
+      "Spring 2019",
+      "August 2014"
+     ],
+     "reference": "The series is repeated (2013, 2016, Spring 2019) so as to check which systems support the claim; each table carries its test year. No further reason for versioning is stated.",
+     "evidence": [
+      {
+       "record_quote": "To check which systems support this claim, IPTC checks about a dozen sites regularly: in 2013, in 2016 and now again in Spring 2019.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-photo-metadata-tests/field.json#F37"
+      },
+      {
+       "record_quote": "periodic: 2013, 2016, Spring 2019 (the 2019 page); a software test published August 2014",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-photo-metadata-tests].cadence"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying the tests' finding or the standard's own norm so as to excuse stripping (metadata is removable, so its loss is no matter), or citing the dated 2019 table as a current platform audit against the tests' own dating.",
+   "notes": "Built from the census row, own pages B12 and B13 and the field ledger. The address of the only observation, 'IPTC photo metadata', names the IPTC Photo Metadata Standard; the census row and this set are the tests. The census records the tests as succeeded in method by Metawatch (a successor, not lineage)."
+  },
+  {
+   "new": "iptc-metawatch",
+   "name": "IPTC Metawatch",
+   "template": "protocol",
+   "external": true,
+   "type_basis": "A service (census kind 'monitor'), and so the protocol template: 'Metawatch , IPTC’s new public service that monitors real-world usage of metadata in images across the global news industry' (F34); its record does not make it a site (metawatch.iptc.org is where the service publishes).",
+   "records": [
+    {
+     "source": "census:iptc-metawatch",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-metawatch]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://iptc.org/news/announcing-iptc-metawatch/"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B2.txt",
+     "origin": "card",
+     "url": "https://metawatch.iptc.org/"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B5.txt",
+     "origin": "card",
+     "url": "https://iptc.org/news/iptc-photo-metadata-conference-2026-videos-are-now-available/"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/iptc-metawatch-20261029/B8.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/International_Press_Telecommunications_Council"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "IPTC Metawatch",
+      "Metawatch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "IPTC Metawatch",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-metawatch].name"
+      },
+      {
+       "record_quote": "Metawatch",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-metawatch].aka"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "IPTC",
+      "International Press Telecommunications Council"
+     ],
+     "reference": "A project of the International Press Telecommunications Council, which launched it.",
+     "evidence": [
+      {
+       "record_quote": "Metawatch · A project of the International Press Telecommunications Council",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F26"
+      },
+      {
+       "record_quote": "The IPTC has launched Metawatch",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F1"
+      },
+      {
+       "record_quote": "IPTC",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-metawatch].operator"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A free, open monitor that checks every month whether more than 500 news publishers in 122 countries keep the credits, captions and rights information embedded in their photographs: the lead photograph of up to 20 recent articles per publisher, checked for Exif, IPTC Photo Metadata (IIM and XMP) and C2PA Content Credentials, scored on the four Cs. Stated limits: publishers that yield no photograph are listed apart as its blind spot, and bot-blocking shuts it out. Not the 2019 IPTC social-media test; not a C2PA verifier.",
+     "evidence": [
+      {
+       "record_quote": "The IPTC has launched Metawatch , a free, open monitor that checks every month whether more than 500 news publishers in 122 countries keep the credits, captions and rights information embedded in their photographs.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F1"
+      },
+      {
+       "record_quote": "On the first of each month our well-behaved crawler visits 508 news publishers in 122 countries, takes up to 20 recent articles from each, and reads the lead photograph of every article.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F5"
+      },
+      {
+       "record_quote": "It checks each image for Exif, IPTC Photo Metadata (in both IIM and XMP form) and C2PA Content Credentials, and scores how each site carry the fields that matter most: creator, caption, copyright and credit line (the “4 Cs”).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F6"
+      },
+      {
+       "record_quote": "Publishers we reached but got no photograph from are listed separately as no_images rather than scored zero, since that is usually our blind spot rather than their practice.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F25"
+      },
+      {
+       "record_quote": "NOT a C2PA verifier",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=iptc-metawatch].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "International Press Telecommunications Council",
+      "IPTC"
+     ],
+     "reference": "The IPTC, the global standards body of the news media, whose IPTC Photo Metadata the monitor measures; the records name no institution apart from the producer.",
+     "evidence": [
+      {
+       "record_quote": "is a consortium of the world's major news agencies , other news providers and news industry vendors and acts as the global standards body of the news media.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F39"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "free",
+      "open data"
+     ],
+     "reference": "Free and open: a free, open monitor; every run published as open data under CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "a free, open monitor",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F1"
+      },
+      {
+       "record_quote": "every run is published as open data under CC BY 4.0",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F7"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To check every month whether photo metadata survives publication, so that trends can be compared over time and publishers can fix the stripping in their pipelines; because when an image is copied, shared or collected by an AI crawler the embedded metadata is often the only record of where it came from and on what terms it may be used.",
+     "evidence": [
+      {
+       "record_quote": "Metawatch checks every month: does the photo metadata survive publication?",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F5"
+      },
+      {
+       "record_quote": "When an image is copied, shared or collected by an AI crawler, the embedded metadata is often the only record of where it came from and on what terms it may be used.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F4"
+      },
+      {
+       "record_quote": "This service is different in that we now measure every month, so we can compare trends over time.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F8"
+      },
+      {
+       "record_quote": "Stripping appears to happen in the publishing pipeline, which means that publishers can fix it.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F11"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Open data under CC BY 4.0 so that anyone can check its numbers or ask their own questions; a deliberately light crawler that honours robots.txt and keeps no article text or image files; its method documented in full; publishers may opt out.",
+     "evidence": [
+      {
+       "record_quote": "The crawler is deliberately light: about 40 to 60 requests per publisher per month, honouring robots.txt and keeping no article text or image files. How it works is documented in full, and every run is published as open data under CC BY 4.0, so anyone can check our numbers or ask their own questions.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F7"
+      },
+      {
+       "record_quote": "Publishers may opt out by emailing office@iptc.org",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F26"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "IMATAG",
+      "State of Image Metadata",
+      "prototype crawler"
+     ],
+     "reference": "It builds on IMATAG's 2018 State of Image Metadata study and the IPTC's own prototype crawler of 2019.",
+     "evidence": [
+      {
+       "record_quote": "Metawatch builds on IMATAG’s 2018 State of Image Metadata study and IPTC’s own prototype crawler from 2019",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F8"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record states an identifier for the service or its runs (runs are dated, not identified)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "monthly run",
+      "October run",
+      "open data"
+     ],
+     "reference": "Each month's run is published as open data, so the series can be compared over time (the reason stated for measuring monthly).",
+     "evidence": [
+      {
+       "record_quote": "Metawatch automatically publishes new results on the first of every month.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F19"
+      },
+      {
+       "record_quote": "we now measure every month, so we can compare trends over time",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F8"
+      },
+      {
+       "record_quote": "every run is published as open data under CC BY 4.0, so anyone can check our numbers or ask their own questions",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/iptc-metawatch/field.json#F7"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its findings (how much metadata is stripped) to say embedded credit is futile, or its open-data licence or free status as a reason to discount it; offering another monitor or tool in its place.",
+   "notes": "The producer and the institution are the same body (the IPTC); the records name no other institution. Built from the announcement (B1), the overview (B2), the conference post (B5) and the operator's Wikipedia article (B8)."
+  },
+  {
+   "new": "nanopublications",
+   "name": "Nanopublications",
+   "template": "protocol",
+   "external": true,
+   "type_basis": "A publication model with its specification and service ecosystem (census kind 'publication model and service ecosystem'), so the protocol template: 'Nano publications provides a model and vocabulary for describing a scientific statement' (F14); 'Nanopublications are implemented in the language RDF and come with an evolving ecosystem of tools and systems.' (F10).",
+   "records": [
+    {
+     "source": "census:nanopublications",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://nanopub.net/"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B3.txt",
+     "origin": "card",
+     "url": "https://www.researchobject.org/initiative/nanopublications/"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B6.txt",
+     "origin": "card",
+     "url": "https://riojournal.com/article/94150/"
+    },
+    {
+     "source": "B10",
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B10.txt",
+     "origin": "own_page",
+     "url": "https://nanopub.net/docs/architecture/"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/nanopublications-20261029/B12.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Microattribution#Nanopublications"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Nanopublications",
+      "nanopublication",
+      "nanopub",
+      "Nanopub Registry",
+      "Nanopub Query",
+      "Nanodash"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Nanopublications",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].name"
+      },
+      {
+       "record_quote": "nanopub",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].aka"
+      },
+      {
+       "record_quote": "A nanopublication is a small knowledge graph snippet",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Barend Mons",
+      "Jan Velterop",
+      "Mons",
+      "Velterop",
+      "Groth"
+     ],
+     "reference": "The census names the operator as the nanopublication community (nanopub.net), which names no organization; Wikipedia names Barend Mons and Jan Velterop as proposers, and the RIO abstract gives Groth et al. 2010 and Mons and Velterop 2009 as its conception.",
+     "evidence": [
+      {
+       "record_quote": "the nanopublication community (nanopub.net)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].operator"
+      },
+      {
+       "record_quote": "Barend Mons and Jan Velterop proposed nanopublications for single, attributable and machine-readable assertions in scientific literature.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F62"
+      },
+      {
+       "record_quote": "Beginning in 2009, nanopublications were independently conceived (Groth et al. 2010)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F31"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A small knowledge graph snippet with metadata treated as an independent (scientific) publication, about anything (a gene-disease relation, an opinion); RDF; three parts, assertion, provenance (how the assertion came to be) and publication info (when and by whom created, licence terms for reuse). Stated limits: the scope is the assertional data type and nanopublications should stay small; publication and signing do not settle an assertion's truth; it carries provenance and does not test its survival.",
+     "evidence": [
+      {
+       "record_quote": "A nanopublication is a small knowledge graph snippet with metadata that is treated as an independent (scientific) publication.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F2"
+      },
+      {
+       "record_quote": "This information in a nanopublication can be about anything, for example a relation between a gene and a disease or an opinion.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F3"
+      },
+      {
+       "record_quote": "The scope of nanopublications is limited to the assertional data type",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F38"
+      },
+      {
+       "record_quote": "publication and signing do not settle an assertion's truth",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no institution: nanopub.net names no organization (census 'unchecked'); Knowledge Pixels appears only on a card as Nanodash's developer"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the entity's own records state no commercial standing"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To let individual data be disseminated as independent publications, with or without a research article, which because they can be attributed and cited give researchers an incentive to make their data available in standard, accessible and interoperable formats (FAIR data containers for scientific results).",
+     "evidence": [
+      {
+       "record_quote": "FAIR data containers for scientific results, and more",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F1"
+      },
+      {
+       "record_quote": "With nanopublications, it is possible to disseminate individual data as independent publications with or without an accompanying research article.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F5"
+      },
+      {
+       "record_quote": "because nanopublications can be attributed and cited, they provide incentives for researchers to make their data available in standard formats that drive data accessibility and interoperability.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F6"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Every nanopublication carries its publication info, when and by whom it was created and the licence terms for its reuse, and is signed at publication; the legacy server keeps the old unsigned nanopublications.",
+     "evidence": [
+      {
+       "record_quote": "Publication Info : This part contains metadata about the nanopublication as a whole, such as when and by whom it was created and the license terms for its reuse.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F9"
+      },
+      {
+       "record_quote": "most importantly for signing and publishing, over HTTP",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F59"
+      },
+      {
+       "record_quote": "The legacy nanopub-server ( instance , code ) is still used to keep the old (unsigned) nanopublications",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F56"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "RDF",
+      "Resource Description Framework",
+      "OWL",
+      "SPARQL",
+      "Semantic Web"
+     ],
+     "reference": "Implemented in RDF and aligned with Semantic Web technologies (RDF, OWL, SPARQL).",
+     "evidence": [
+      {
+       "record_quote": "Nanopublications are implemented in the language RDF",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].evidence.provenance_carrier.quote"
+      },
+      {
+       "record_quote": "Nanopublications are implemented in and aligned with Semantic Web technologies such as RDF, OWL, and SPARQL",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F33"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Trusty URI",
+      "Trusty URIs"
+     ],
+     "reference": "Each nanopublication can be permanently and uniquely identified by a resolvable Trusty URI, which serves its citation and attribution (the reason the identifier advances the purpose).",
+     "evidence": [
+      {
+       "record_quote": "can be permanently and uniquely identified using resolvable Trusty URIs",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F33"
+      },
+      {
+       "record_quote": "Individual nanopublications can be cited by others and tracked for their impact on the community.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F16"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Nanopub Registry",
+      "second-generation",
+      "legacy nanopub-server"
+     ],
+     "reference": "The second-generation Registry and Query services, with the legacy server kept for the old unsigned nanopublications.",
+     "evidence": [
+      {
+       "record_quote": "Nanopub Registry ( instance , code ) is the second-generation kind of service for publishing and retrieving nanopublications in a decentralized fashion. The legacy nanopub-server ( instance , code ) is still used to keep the old (unsigned) nanopublications, but has otherwise no longer a function in the latest generation of the ecosystem.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/nanopublications/field.json#F56"
+      },
+      {
+       "record_quote": "second-generation Registry and Query services; the legacy nanopub-server keeps old unsigned nanopublications",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=nanopublications].lifecycle.detail"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its citability or provenance part as if publication settled an assertion's truth, or its small scope as a reason to discount it; offering another container or format in its place.",
+   "notes": "The census operator ('the nanopublication community (nanopub.net)') is not a name; the producer tokens are the proposers the Wikipedia section and the RIO abstract name. The ecosystem service names are registered as aliases of the name."
+  },
+  {
+   "new": "c2pa-conformance",
+   "name": "C2PA Conformance Program and Explorer",
+   "template": "protocol",
+   "external": true,
+   "type_basis": "A program, so the protocol template (the census kind is 'registry', for its Conforming Products List; the entity's own document defines it as a program): 'A risk-based governance program intended to hold Applicants who want to demonstrate their conformance to its requirements' (F36).",
+   "records": [
+    {
+     "source": "census:c2pa-conformance",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=c2pa-conformance]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://c2pa.org/conformance/"
+    },
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B7.txt",
+     "origin": "card",
+     "url": "https://trufo.ai/tca/repository/c2pa/conformance-program/current.pdf"
+    },
+    {
+     "source": "B9",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B9.txt",
+     "origin": "own_page",
+     "url": "https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B12.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Content_Authenticity_Initiative"
+    },
+    {
+     "source": "B13",
+     "path": "datasets/negative-of-the-negative/v2/intake/c2pa-conformance-20261029/B13.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Content_Credentials#C2PA_Conformance_Program"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "C2PA Conformance Program",
+      "C2PA Conformance Program and Explorer",
+      "Conformance Program",
+      "C2PA Conforming Products List",
+      "Conforming Products List",
+      "Conformance Explorer",
+      "Content Credentials conformance"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "C2PA Conformance Program and Explorer",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=c2pa-conformance].name"
+      },
+      {
+       "record_quote": "C2PA Conforming Products List",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=c2pa-conformance].aka"
+      },
+      {
+       "record_quote": "the Conformance Explorer",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F45"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Coalition for Content Provenance and Authenticity",
+      "C2PA",
+      "C2PA Conformance Task Force",
+      "Conformance Task Force"
+     ],
+     "reference": "The C2PA, the program governed by its Steering Committee and administered by its Conformance Task Force.",
+     "evidence": [
+      {
+       "record_quote": "Coalition for Content Provenance and Authenticity (C2PA), Conformance Task Force",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=c2pa-conformance].operator"
+      },
+      {
+       "record_quote": "The Program is part of a C2PA Governance Framework governed by the C2PA Steering Committee and is administered by the C2PA Conformance Task Force.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer (the independent Administrator administers the program; it is not an archive)"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Assurance that products adhere to the Content Credentials specification and fulfil security requirements so that they produce and validate C2PA data correctly: a risk-based governance process holding generator products, validator products and certification authorities accountable, conforming products placed on a public list. Stated limits: complete conformance to the specification's 300+ generator requirements is not yet required; Content Credentials make no judgement whether provenance is true, only whether it is well-formed, untampered, valid and trusted; the specification does not address human or organizational identity; provenance is not always complete.",
+     "evidence": [
+      {
+       "record_quote": "The C2PA Conformance Program provides assurance that products adhere to the Content Credentials specification, and fulfill a set of security requirements to ensure they are producing and validating C2PA data correctly.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F1"
+      },
+      {
+       "record_quote": "This Conformance Program is a risk-based, transparent and unbiased governance process intended to hold generator products, validator products and certification authorities accountable to the Content Credentials specification, the Certificate Policy and the Security Requirements .",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F3"
+      },
+      {
+       "record_quote": "The C2PA Conformance Program will eventually require Claim Generators to demonstrate complete conformance to these exacting requirements in order to receive its approval.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F41"
+      },
+      {
+       "record_quote": "It is important to highlight that Content Credentials do not provide value judgments about whether a given set of provenance data is 'true', but instead merely whether the provenance information is well-formed and free from tampering, valid and trusted (in that the signer of the Content Credential is associated with a known trust list).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F48"
+      },
+      {
+       "record_quote": "The C2PA specification does not directly address the topic of human or organizational identity — that is, the identity of specific humans or organizations involved in the production of a digital asset or content.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F52"
+      },
+      {
+       "record_quote": "No. Provenance is not always complete.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F49"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Coalition for Content Provenance and Authenticity",
+      "C2PA",
+      "C2PA Governance Framework",
+      "C2PA Steering Committee"
+     ],
+     "reference": "The C2PA, an open, cross-industry technical standards body; the program is part of the C2PA Governance Framework governed by the Steering Committee.",
+     "evidence": [
+      {
+       "record_quote": "The Program is part of a C2PA Governance Framework governed by the C2PA Steering Committee",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F2"
+      },
+      {
+       "record_quote": "The Coalition for Content Provenance and Authenticity (C2PA) is an open, cross-industry technical standards body established on February 22, 2021.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F58"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing for the program (fees are not stated); applicants' differentiation through recognition is theirs"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give the specification the governance and conformance it lacks: transparency for relying parties and accountability for governed parties, confidence in an implementation and its security, and interoperability across the Content Credentials ecosystem.",
+     "evidence": [
+      {
+       "record_quote": "The Specification has seen wide-scale acceptance but is limited without a robust governance framework and conformance program to provide required transparency for relying parties and accountability for governed parties which need to demonstrate recognized conformance of Specification requirements.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F35"
+      },
+      {
+       "record_quote": "This conveys confidence in the implementation and its security to the public and guarantees interoperability across products in the Content Credentials ecosystem.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F4"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Applicants sign a legal agreement with the C2PA and provide evidence; the program is administered by an independent Administrator free from conflicts of interest; the C2PA reserves the right to remove trust-list entries and revoke conformant status; only conforming generator products may receive claim-signing certificates; relying parties are advised to understand assurance levels.",
+     "evidence": [
+      {
+       "record_quote": "Sign a legal agreement with the C2PA.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F11"
+      },
+      {
+       "record_quote": "The Conformance Program is administered by an independent Administrator who is free from conflicts … of interest.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F42"
+      },
+      {
+       "record_quote": "The C2PA reserves the right to and remove Applicants from the C2PA Trust List and C2PA TSA Trust List, or revoke the conformant status of a Generator Product or Validator Product on the C2PA Conforming Products List.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F43"
+      },
+      {
+       "record_quote": "Only instances of conforming Generator Products are eligible to receive C2PA Claim Signing Certificates from a Certification Authority on the C2PA Trust List.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F38"
+      },
+      {
+       "record_quote": "Relying Parties are advised to review and understand the implications of receiving Assets signed by C2PA Claim Signing Certificates of a particular Assurance Level.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F40"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Trust over IP Governance Metamodel",
+      "Trust over IP",
+      "ToIP",
+      "Bluetooth",
+      "Wi-Fi"
+     ],
+     "reference": "The Conformance Task Force structured its policies on the Trust over IP Governance Metamodel (Wikipedia); the Content Authenticity Initiative's card gives the Bluetooth and Wi-Fi programs as its model.",
+     "evidence": [
+      {
+       "record_quote": "The task force utilized the Trust over IP (ToIP) Governance Metamodel to structure its compliance policies.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F60"
+      },
+      {
+       "record_quote": "Just as the Bluetooth® or Wi-Fi® programs verify that devices communicate reliably and securely across manufacturers",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F14"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record states an identifier for the program or its list entries"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v0.1",
+      "v0.2",
+      "0.1",
+      "0.2",
+      "Version 0.2"
+     ],
+     "reference": "Version 0.1 (2025-06-02, supporting Spec v2.2) and version 0.2 (2026-07-31, supporting Spec v2.2 and v2.4): the program is versioned against the specification versions it supports.",
+     "evidence": [
+      {
+       "record_quote": "0.1 2025-06-02 2026-10-09 First version of conformance program, supporting Spec v2.2. 0.2 2026-07-31 Not set Updated conformance program, supporting Spec v2.2 and v2.4.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F44"
+      },
+      {
+       "record_quote": "After opening the program in June 2025, we have upgraded our conformance program to v0.2.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/c2pa-conformance/field.json#F5"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying conformance or a Content Credential as proof that content is true or attributed (the program's own limits deny both), or its trust chain as a reason to discount content outside it.",
+   "notes": "The producer and the institution share the C2PA (the producer as the Task Force administering the program, the institution as the coalition and its Governance Framework). Lineage rests on Wikipedia (B13) and a card (B3); the entity's own pages state none."
+  },
+  {
+   "new": "data-provenance-initiative",
+   "name": "Data Provenance Initiative",
+   "template": "institution",
+   "external": true,
+   "type_basis": "An initiative, so the institution template: 'We are a volunteer collective of AI researchers conducting large-scale audits of the systems and resources that shape modern AI.' (F45, own page B7).",
+   "records": [
+    {
+     "source": "census:data-provenance-initiative",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=data-provenance-initiative]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://www.dataprovenance.org/"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B2.txt",
+     "origin": "card",
+     "url": "https://arxiv.org/abs/2310.16787"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B5.txt",
+     "origin": "own_page",
+     "url": "https://raw.githubusercontent.com/Data-Provenance-Initiative/Data-Provenance-Collection/main/README.md"
+    },
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-initiative-20261029/B7.txt",
+     "origin": "own_page",
+     "url": "https://www.dataprovenance.org/about"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Data Provenance Initiative",
+      "DPI"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Data Provenance Initiative",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=data-provenance-initiative].name"
+      },
+      {
+       "record_quote": "DPI releases papers, datasets, and dashboards",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Shayne Longpre",
+      "Sandy Pentland",
+      "volunteer collective of AI researchers"
+     ],
+     "reference": "A volunteer collective of AI researchers; the founding paper by Shayne Longpre and 16 other authors; MIT Sloan names professor Sandy Pentland and others from MIT among its creators.",
+     "evidence": [
+      {
+       "record_quote": "the Data Provenance Initiative (a volunteer collective of AI researchers; the founding paper by Shayne Longpre and 16 other authors)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=data-provenance-initiative].operator"
+      },
+      {
+       "record_quote": "by Shayne Longpre and 16 other authors",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F16"
+      },
+      {
+       "record_quote": "A team of multidisciplinary researchers, including professor Sandy Pentland and others from MIT, created the Data Provenance Initiative to tackle the data transparency challenge head-on.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F23"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2023",
+      "25 Oct 2023"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2023 (arXiv:2310.16787, v1 25 October 2023)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=data-provenance-initiative].founded"
+      },
+      {
+       "record_quote": "[Submitted on 25 Oct 2023 (v1)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F16"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A multi-disciplinary volunteer effort to improve transparency, documentation and responsible use of AI training datasets: large-scale audits, beginning with training-data provenance and now covering web consent, open model markets, concentration of power and real-world AI use. Stated limits: its outputs are not legal advice; licences are self-reported and categorized by best effort.",
+     "evidence": [
+      {
+       "record_quote": "The Data Provenance Initiative is a multi-disciplinary volunteer effort to improve transparency, documentation, and responsible use of training datasets for AI.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F40"
+      },
+      {
+       "record_quote": "Our work began with training data provenance: tracing datasets from origin to creation, cataloging sources, licenses, creators, and documentation practices. It now also covers web consent, open model markets, concentration of power, and how people use AI systems in practice.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F46"
+      },
+      {
+       "record_quote": "We collect self-reported licenses from the papers and repositories that released these datasets and categorize them according to our best efforts as a volunteer research and transparency initiative. Information provided by our work and outputs of the Data Provenance Initiative does not constitute legal advice",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F47"
+      },
+      {
+       "record_quote": "The information provided on this page and any output of the Data Provenance Initiative does not, and is not intended to, constitute legal advice; instead, all information, content, and materials are for general informational purposes only.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F43"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "accountable AI",
+      "public-interest infrastructure",
+      "public evidence"
+     ],
+     "reference": "Public evidence for accountable AI: public-interest infrastructure that helps researchers, journalists, policymakers and builders reason from shared evidence.",
+     "evidence": [
+      {
+       "record_quote": "Public evidence for accountable AI",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F2"
+      },
+      {
+       "record_quote": "DPI releases papers, datasets, and dashboards that help researchers, journalists, policymakers, and builders reason from shared evidence.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To improve transparency, documentation and responsible use of training datasets for AI, and to give researchers, journalists, policymakers and builders shared public evidence to reason from.",
+     "evidence": [
+      {
+       "record_quote": "The Data Provenance Initiative is a multi-disciplinary volunteer effort to improve transparency, documentation, and responsible use of training datasets for AI.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F40"
+      },
+      {
+       "record_quote": "DPI releases papers, datasets, and dashboards that help researchers, journalists, policymakers, and builders reason from shared evidence.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Its outputs do not constitute legal advice; licences are collected as self-reported and categorized by best effort as a volunteer research and transparency initiative; it releases papers, datasets and dashboards publicly; the Data Provenance Card gives symbolic attribution to every constituent dataset.",
+     "evidence": [
+      {
+       "record_quote": "We collect self-reported licenses from the papers and repositories that released these datasets and categorize them according to our best efforts as a volunteer research and transparency initiative. Information provided by our work and outputs of the Data Provenance Initiative does not constitute legal advice",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F47"
+      },
+      {
+       "record_quote": "The information provided on this page and any output of the Data Provenance Initiative does not, and is not intended to, constitute legal advice; instead, all information, content, and materials are for general informational purposes only.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F43"
+      },
+      {
+       "record_quote": "Generating a subset of data from this repository will create a `Data Provenance Card`---symbolic attribution for all constituent datasets, that can be used as structured documentation.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F42"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record states a predecessor or model for the Initiative"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2310.16787",
+      "2310.16787"
+     ],
+     "reference": "The founding paper's arXiv identifier; no reason for it is stated.",
+     "evidence": [
+      {
+       "record_quote": "2023 (arXiv:2310.16787, v1 25 October 2023)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=data-provenance-initiative].founded"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Data Provenance Collection",
+      "Data Provenance Card",
+      "dataprovenance.org"
+     ],
+     "reference": "Its releases: the Data Provenance Collection (the first release), the Card generated from a subset, the site's four systems and the later audits.",
+     "evidence": [
+      {
+       "record_quote": "referred to as the Data Provenance Collection, this initiative's first release",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F41"
+      },
+      {
+       "record_quote": "Generating a subset of data from this repository will create a `Data Provenance Card`---symbolic attribution for all constituent datasets, that can be used as structured documentation.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/data-provenance-initiative/field.json#F42"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its volunteer status or its not-legal-advice notice to discount its audits, or reassigning its work to an institution (MIT) in place of the collective; offering another audit in its place.",
+   "notes": "Initiative, Explorer and Collection are distinct records (census negative_tags); the Explorer and the Collection are not registered as aliases of the name."
+  },
+  {
+   "new": "attributionbench",
+   "name": "AttributionBench",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "A benchmark, so the dataset template: 'we present AttributionBench, a comprehensive benchmark compiled from various existing attribution datasets.' (F1).",
+   "records": [
+    {
+     "source": "census:attributionbench",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attributionbench]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://arxiv.org/abs/2402.15089"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B3.txt",
+     "origin": "card",
+     "url": "https://osu-nlp-group.github.io/AttributionBench/"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B5.txt",
+     "origin": "card",
+     "url": "https://aclanthology.org/2024.findings-acl.886/"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/attributionbench-20261029/B6.txt",
+     "origin": "own_page",
+     "url": "https://huggingface.co/datasets/osunlp/AttributionBench/raw/main/README.md"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AttributionBench",
+      "osunlp/AttributionBench"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AttributionBench",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attributionbench].name"
+      },
+      {
+       "record_quote": "osunlp … AttributionBench … OSU NLP Group",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F39"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Yifei Li",
+      "Xiang Yue",
+      "Zeyi Liao",
+      "Huan Sun",
+      "OSU NLP Group",
+      "The Ohio State University"
+     ],
+     "reference": "Yifei Li, Xiang Yue, Zeyi Liao and Huan Sun, OSU NLP Group, The Ohio State University.",
+     "evidence": [
+      {
+       "record_quote": "Authors:Yifei Li, Xiang Yue, Zeyi Liao, Huan Sun",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F9"
+      },
+      {
+       "record_quote": "OSU NLP Group (The Ohio State University)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attributionbench].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2024",
+      "23 Feb 2024",
+      "ACL 2024"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "[Submitted on 23 Feb 2024]",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F9"
+      },
+      {
+       "record_quote": "Findings of the Association for Computational Linguistics: ACL 2024",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A benchmark for automatic attribution evaluation, compiled from existing attribution datasets in one format: does every claim in a generated response have full support in its cited evidence (binary, attributable or not). Headline: even a fine-tuned GPT-3.5 reaches only about 80% macro-F1; zero-shot on long-evidence sets 60-70%, GPT-3.5, GPT-4 and NLI-tuned models under about 60% there. Stated limits: references extracted by annotators; label reliability questioned by the information mismatch.",
+     "evidence": [
+      {
+       "record_quote": "evaluating the answer's attribution, i.e., whether every claim within the generated responses is fully supported by its cited evidence, remains an open problem.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F2"
+      },
+      {
+       "record_quote": "even a fine-tuned GPT-3.5 only achieves around 80% macro-F1 under a binary classification formulation.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F7"
+      },
+      {
+       "record_quote": "GPT-3.5, GPT-4 and those NLI-tuned models can only achieve under ~60% performance.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F19"
+      },
+      {
+       "record_quote": "This disparity brings into question the reliability of labels within current attribution evaluation datasets.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F26"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "automatic attribution evaluation",
+      "attribution evaluation"
+     ],
+     "reference": "Automatic attribution evaluation for generative search engines with cited evidence.",
+     "evidence": [
+      {
+       "record_quote": "underscores the urgent need for automatic attribution evaluation methods",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F4"
+      },
+      {
+       "record_quote": "Modern generative search engines enhance the reliability of large language model (LLM) responses by providing cited evidence.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F3"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To bridge the gap left by the absence of standardized benchmarks for automatic attribution evaluation: a unified and diverse testbed for evaluating attribution evaluation systems.",
+     "evidence": [
+      {
+       "record_quote": "To bridge the gap in the absence of standardized benchmarks for these methods",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F5"
+      },
+      {
+       "record_quote": "We constructed this dataset from multiple existing data sources in a unified format, in order to create a unified and diverse testbed for evaluating advanced attribution evaluation systems.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F30"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "apache-2.0"
+     ],
+     "reference": "Released under apache-2.0; users are asked also to cite the original datasets; subsets label-balanced so that each class is treated equally.",
+     "evidence": [
+      {
+       "record_quote": "license: apache-2.0",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F41"
+      },
+      {
+       "record_quote": "If used, please also cite the original datasets accordingly:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F28"
+      },
+      {
+       "record_quote": "We make all subsets label-balanced to treat the two classes equally so that the evaluation can fairly show the performance of each class.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "ExpertQA",
+      "Stanford-GenSearch",
+      "AttributedQA",
+      "LFQA",
+      "BEGIN",
+      "HAGRID",
+      "AttrEval-GenSearch"
+     ],
+     "reference": "Compiled from seven existing attribution datasets.",
+     "evidence": [
+      {
+       "record_quote": "ExpertQA … Stanford-GenSearch … AttributedQA … LFQA … ID-Total … BEGIN … HAGRID … AttrEval-GenSearch … OOD-Total",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F15"
+      },
+      {
+       "record_quote": "We constructed this dataset from multiple existing data sources in a unified format",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F42"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2402.15089",
+      "2402.15089",
+      "2024.findings-acl.886",
+      "osunlp/AttributionBench"
+     ],
+     "reference": "The arXiv number, the ACL Anthology ID and the Hugging Face id; no reason for them is stated.",
+     "evidence": [
+      {
+       "record_quote": "Anthology ID: 2024.findings-acl.886",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F10"
+      },
+      {
+       "record_quote": "osunlp … AttributionBench … OSU NLP Group",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F39"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Hugging Face",
+      "GitHub",
+      "codebase"
+     ],
+     "reference": "The dataset on Hugging Face and the code repository, released with the paper.",
+     "evidence": [
+      {
+       "record_quote": "2024/2/26: We have released the dataset and codebase for the paper.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F13"
+      },
+      {
+       "record_quote": "This is the official code repo for the paper",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attributionbench/field.json#F29"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its headline difficulty (about 80% macro-F1) as proof that attribution evaluation is futile, or confusing it with AttriBench (quote authorship); offering another evaluator in its place.",
+   "notes": "Kept apart from AttriBench (census negative_tags: 'NOT AttriBench')."
+  },
+  {
+   "new": "attribench",
+   "name": "AttriBench",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "A benchmark dataset, so the dataset template: 'we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset.' (F3).",
+   "records": [
+    {
+     "source": "census:attribench",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attribench]",
+     "origin": "census"
+    },
+    {
+     "source": "field ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B1.txt",
+     "origin": "card",
+     "url": "https://arxiv.org/abs/2604.05224"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/attribench-20261029/B6.txt",
+     "origin": "own_page",
+     "url": "https://huggingface.co/datasets/bermaneh/AttriBench/raw/main/README.md"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AttriBench",
+      "bermaneh/AttriBench"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AttriBench",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attribench].name"
+      },
+      {
+       "record_quote": "Datasets: bermaneh / AttriBench",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F19"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Eliza Berman",
+      "Bella Chang",
+      "Daniel B. Neill",
+      "Emily Black",
+      "Berman et al."
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Eliza Berman, Bella Chang, Daniel B. Neill, Emily Black",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=attribench].operator"
+      },
+      {
+       "record_quote": "Introduced in [Berman et al., 2026]",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F26"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026",
+      "6 Apr 2026",
+      "24 Sep 2026",
+      "COLM 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "[Submitted on 6 Apr 2026 ( v1 ), last revised 24 Sep 2026 (this version, v2)]",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F1"
+      },
+      {
+       "record_quote": "Accepted at COLM 2026. 25 pages",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The first fame- and demographically-balanced quote attribution benchmark dataset, enabling controlled investigation of demographic bias in quote attribution; 11 LLMs evaluated, quote attribution challenging even for frontier models; large and systematic disparities by race, gender and intersectional group; suppression (attribution omitted though authorship information is available) widespread and unevenly distributed. Fame is proxied by Google Search hits.",
+     "evidence": [
+      {
+       "record_quote": "In this work, we introduce AttriBench, the first fame- and demographically-balanced quote attribution benchmark dataset.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F3"
+      },
+      {
+       "record_quote": "By explicitly balancing author fame and demographics, AttriBench enables controlled investigation of demographic bias in quote attribution.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F4"
+      },
+      {
+       "record_quote": "Using this dataset, we evaluate 11 widely used LLMs across different prompt settings and find that quote attribution remains a challenging task even for frontier models.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F5"
+      },
+      {
+       "record_quote": "We further introduce and investigate suppression, a distinct failure mode in which models omit attribution entirely, even when the model has access to authorship information.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F7"
+      },
+      {
+       "record_quote": "Google Search hit count, used as a fame proxy.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F33"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "representational fairness"
+     ],
+     "reference": "Quote attribution as a benchmark for representational fairness in LLMs.",
+     "evidence": [
+      {
+       "record_quote": "Our results position quote attribution as a benchmark for representational fairness in LLMs.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Because LLMs increasingly support search and retrieval, they must attribute content accurately to its original authors: the benchmark enables controlled investigation of demographic bias in quote attribution and measures suppression.",
+     "evidence": [
+      {
+       "record_quote": "As Large Language Models (LLMs) are increasingly used to support search and information retrieval, it is critical that they accurately attribute content to its original authors.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F2"
+      },
+      {
+       "record_quote": "By explicitly balancing author fame and demographics, AttriBench enables controlled investigation of demographic bias in quote attribution.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F4"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY 4.0",
+      "cc-by-4.0"
+     ],
+     "reference": "Released under CC BY 4.0 (what a user owes: attribution); the card asks users to cite the paper (its bibtex).",
+     "evidence": [
+      {
+       "record_quote": "license: cc-by-4.0 … [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F36"
+      },
+      {
+       "record_quote": "author = {Berman, Eliza and Chang, Bella and Neill, Daniel B. and Black, Emily},",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F35"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "JSTET corpus",
+      "JSTET",
+      "Goel, Madhok, Garg"
+     ],
+     "reference": "A filtered subset of the JSTET corpus (Goel, Madhok, Garg, 2018).",
+     "evidence": [
+      {
+       "record_quote": "Source: filtered subset of the [JSTET corpus]",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F29"
+      },
+      {
+       "record_quote": "(Goel, Madhok, Garg, 2018)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F29"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2604.05224",
+      "2604.05224",
+      "bermaneh/AttriBench"
+     ],
+     "reference": "The arXiv number and the Hugging Face id; no reason for them is stated.",
+     "evidence": [
+      {
+       "record_quote": "https://arxiv.org/abs/2604.05224",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F26"
+      },
+      {
+       "record_quote": "Datasets: bermaneh / AttriBench",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F19"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v1",
+      "v2",
+      "Hugging Face"
+     ],
+     "reference": "The paper's versions v1 (6 April 2026) and v2 (24 September 2026); the dataset repository on Hugging Face.",
+     "evidence": [
+      {
+       "record_quote": "[v1] Mon, 6 Apr 2026 22:40:03 UTC (2,212 KB) [v2] Thu, 24 Sep 2026 19:36:19 UTC (3,003 KB)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F11"
+      },
+      {
+       "record_quote": "Datasets: bermaneh / AttriBench",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/attribench/field.json#F19"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its finding of suppression or bias to excuse attribution failure, or folding it into its homonyms (the 2023 PyTorch library, the finance exercise) or into OSU's AttributionBench.",
+   "notes": "Three homonyms on the field (B2, B3 the PyTorch library attribench; B5 the Eureka Simulations exercise) are distinct entities and give no tokens to this set."
+  }
+ ],
+ "observations": [
+  {
+   "key": "OBS-9b96943ca090",
+   "entry": "iptc-photo-metadata-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:iptc-photo-metadata-tests",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "proximal_substitute",
+    "abn": false,
+    "span": "Definition: A universally accepted industry standard for embedding administrative, descriptive, and copyright data directly into image files.",
+    "basis": "The composition is wholly of the IPTC Photo Metadata Standard (its schemas, categories, uses and tools); the tests (the IPTC's periodic checks of whether sharing sites and systems keep embedded metadata) are never composed. The standard is the tests' companion: the same operator's standard, the carrier the tests test and the framework they are run in (F38, F46). target_absent applies."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "You can explore the official [IPTC Photo Metadata Standard]"
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Target looks wrong for the address: the address 'IPTC photo metadata' names the standard, not the tests (the field ledger's own B_note: 'The address names the standard; the census row is the tests'). Read against the tests the observation is a proximal substitution under target_absent; read against the IPTC Photo Metadata Standard the composition would be close to same (definition, Core and Extension schemas, the 2025.1 AI properties, Google Images, GetPMD all match its pages). Beneath the gate only the framework token (the standard) survives. The composition's one gesture toward the tests' concern is 'Rights & Ownership' and 'Protects copyright' on a card, not the stripping the tests measure. The 2025.1 version is described correctly as recent."
+  },
+  {
+   "key": "OBS-7f18ba03c974",
+   "entry": "iptc-metawatch-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:iptc-metawatch",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "a free and open public monitoring tool that tracks how news publishers handle photo metadata.",
+    "basis": "Metawatch is composed as itself: launched by the IPTC, a free and open monitor of whether news publishers' embedded photo metadata survives publication, monthly, over 500 publishers in 122 countries."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Key Features of Metawatch"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "The [International Press Telecommunications Council (IPTC)](https://www.google.com/goto?url=CAESVAHrOzAVdc4J0YPjAFE7402TQcLoVomag0ntvgXv0MewwsdX49Fl4TY25PMUIsjq-OaJZxXmWxFGoIkRqUKUU3zsxXY1Z4EDPi3FbkRlZYqWC-oMPQ) launched [Metawatch]"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Checks whether crucial embedded details—such as credits, captions, copyright notices, Exif data, and IPTC/XMP photo metadata—are preserved or stripped when images are published online."
+    },
+    {
+     "atom": "institution",
+     "present": true,
+     "span": "The [International Press Telecommunications Council (IPTC)](https://www.google.com/goto?url=CAESVAHrOzAVdc4J0YPjAFE7402TQcLoVomag0ntvgXv0MewwsdX49Fl4TY25PMUIsjq-OaJZxXmWxFGoIkRqUKUU3zsxXY1Z4EDPi3FbkRlZYqWC-oMPQ) launched [Metawatch]"
+    },
+    {
+     "atom": "commercial interest",
+     "present": true,
+     "span": "a free and open public monitoring tool"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Monthly Checks: Automatically crawls and analyzes news websites every month to see if embedded metadata survives publication."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary carried at its scope (monthly, 500+ publishers, 122 countries, the fields checked); C2PA and the lead-photograph sampling are omitted, and none of the stated limits (blind spots, bot-blocking) is carried, but nothing is inflated or relabelled. Purpose carried as the record's own question ('does the photo metadata survive publication?'); the reason the record gives (embedded metadata as often the only record of origin and terms) is not. Commitments absent: 'free and open' is read as the commercial-interest statement; the open data under CC BY 4.0, the light crawler and the opt-out are not carried. Deposit chain absent: monthly cadence is named as method, the published runs are not offered. The closing offer ('how to properly embed IPTC photo metadata into your own images') turns toward the standard. Producer and institution share one span because the records give one body for both."
+  },
+  {
+   "key": "OBS-8190a80a3187",
+   "entry": "nanopublications-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:nanopublications",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "A nanopublication is the smallest independent unit of publishable scientific information, represented as a machine-readable knowledge graph snippet rather than a traditional research paper.",
+    "basis": "The publication model is composed as itself: an assertion published on its own, with its three parts, in RDF, citable and attributed, on a decentralized network."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "A nanopublication is the smallest independent unit of publishable scientific information"
+    },
+    {
+     "atom": "producer",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Every nanopublication is built using Resource Description Framework (RDF) triples and consists of three mandatory parts:"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Citable and Attributed: Each nanopublication can be uniquely identified and tracked on a decentralized network, giving researchers credit for releasing granular data."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Publication Info: Metadata identifying the creator, creation timestamp, and reuse or licensing terms."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Every nanopublication is built using Resource Description Framework (RDF) triples"
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Each nanopublication can be uniquely identified and tracked on a decentralized network, giving researchers credit for releasing granular data."
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Producer absent: no proposer (Mons, Velterop, Groth) or community is named; 'platforms like Nanopublications' points to the site by a link. Claim boundary present: the definition, the three parts and RDF at the record's force; the composition narrows the assertion to 'A single, atomic scientific statement or claim' where the home page allows 'anything ... or an opinion', and states none of the limits (assertional scope, truth not settled), a narrowing rather than a relabelling. Identifier present by its reason (unique identification serving credit and tracking, calibration_rules_d), with no Trusty URI token. Commitments read present on the publication-info part carrying the reuse and licence terms as the model's own requirement; signing is not mentioned. 'Millions of nanopublications have been created' is uptake stated as a feature, not used to evaluate in place of argument; no standing substitution recorded."
+  },
+  {
+   "key": "OBS-47bccd9af209",
+   "entry": "c2pa-conformance-program-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:c2pa-conformance",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The C2PA Conformance Program is a risk-based governance and verification framework run by the [Coalition for Content Provenance and Authenticity]",
+    "basis": "The program is composed as itself: run by the C2PA, holding generator products, validator products and certificate authorities to the Content Credentials specification, with the Conforming Products List, the Explorer and the application process."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The C2PA Conformance Program is a risk-based governance and verification framework"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "run by the [Coalition for Content Provenance and Authenticity]"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The C2PA Conformance Program is a risk-based governance and verification framework run by the [Coalition for Content Provenance and Authenticity](https://www.google.com/url?sa=i&source=web&rct=j&url=CAESSQHrOzAVuwzn3UN86yffzE80u24yceOTqeimVuqQaPCaboHdCapCOp4DGinA2OBC8jtKiFJNGuXNN5SJLfIecTIpd4-8IMS83L8&uoh=2&ved=2ahUKEwi7nMGW0t-XAxU9NoYAHRpcI6gQy_kOegoIAggACAAIBxAE&opi=89978449&cd&psig=AOvVaw18y9wkf9oMBz0bQikE6MX7&ust=1793377564077000) to ensure hardware and software products properly implement the Content Credentials specification."
+    },
+    {
+     "atom": "institution",
+     "present": true,
+     "span": "run by the [Coalition for Content Provenance and Authenticity]"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to ensure hardware and software products properly implement the Content Credentials specification."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Evaluation Process: Applicants submit an expression of interest, sign legal agreements, provide technical evidence, and run self-test tools against program requirements."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present on the first sentence, at the program's own terms ('risk-based governance' is F3's wording); the stated limits are not carried, and 'creating end-to-end tamper evidence for digital media' leans past the program's own limits (provenance not always complete, ingredients not verified the same way, F49 and F53), which a stricter reader may count as inflation. Purpose read present: ensuring correct implementation is the record's assurance and accountability purpose in short; transparency for relying parties and interoperability are not named. Commitments present on the legal agreement and evidence that bind applicants; the independent Administrator and revocation are not carried. Deposit chain absent: no version (v0.1, v0.2) is named. Producer and institution share one span (the coalition), the records giving the C2PA for both. 'Conforming Products List' and 'C2PA Conformance Explorer' are aliases of the name and fill no other atom."
+  },
+  {
+   "key": "OBS-118fbafa73c9",
+   "entry": "data-provenance-initiative-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:data-provenance-initiative",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a multi-institutional research project—led in part by researchers from MIT—that audits the datasets, licenses, and web domains used to train artificial intelligence models.",
+    "basis": "The Initiative is composed as itself: its audits, its four systems and the founding audit's findings."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The [Data Provenance Initiative]"
+    },
+    {
+     "atom": "founder",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a multi-institutional research project—led in part by researchers from MIT—that audits the datasets, licenses, and web domains used to train artificial intelligence models."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Founder absent: no maker is named; 'led in part by researchers from MIT' recasts the record's volunteer collective of AI researchers (F45; F40 'a multi-disciplinary volunteer effort') as a 'multi-institutional research project' led from MIT, a borrowing of the MIT Sloan card's framing (F23). This is an institutional anchoring of the collective, recorded here, not used to evaluate the work, so no standing substitution. Claim boundary read present: the audits of datasets, licences and web domains and the four systems carry its scope; the 'not legal advice' limit is not carried. Purpose absent: the composition gives what it does (audits, tools, findings), not what it is for (transparency, documentation and responsible use; shared public evidence). The findings are the founding paper's (70%+ omission, 50%+ error, the commercial divide, the non-commercial spike) and are carried as findings. The Explorer is offered at the close ('explore how to use the Data Provenance Explorer'), a component, not the release chain."
+  },
+  {
+   "key": "OBS-90d2b25bd00a",
+   "entry": "attributionbench-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:attributionbench",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a comprehensive research benchmark designed to evaluate automatic attribution and citation faithfulness in Large Language Model (LLM) and generative search engine responses.",
+    "basis": "OSU's benchmark is composed as itself: compiled from seven attribution datasets, the binary task of claim support by cited evidence, the 80% macro-F1 finding and the error analysis. AttriBench is not drawn in."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Would you like to explore how to load AttributionBench via Hugging Face"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Core Task: It measures whether every claim generated by an LLM is fully and accurately supported by its cited reference evidence (classified as `attributable` or `not attributable`)."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Unified Testbed: It compiles multiple existing attribution datasets—including ExpertQA, Stanford-GenSearch, AttributedQA, LFQA, BEGIN, HAGRID, and AttrEval-GenSearch—into a single standardized evaluation format."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It compiles multiple existing attribution datasets—including ExpertQA, Stanford-GenSearch, AttributedQA, LFQA, BEGIN, HAGRID, and AttrEval-GenSearch"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "Dataset Availability: The dataset and code are open-sourced via the [Hugging Face AttributionBench Dataset]"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author and date absent: the authors, the OSU NLP Group and ACL 2024 appear only on the cards. Claim boundary read present, with one drift: 'Even cutting-edge models like GPT-4 and fine-tuned GPT-3.5 ... reaching only around 80% macro-F1' joins GPT-4 to the fine-tuned GPT-3.5 figure, where the project page gives GPT-4 under about 60% zero-shot on the long-evidence sets; the error shares (over 66%, nearly 27%) match F25-F26. Framework absent by word: the composition says 'evaluate automatic attribution', not the token 'automatic attribution evaluation'. Commitments absent: 'open-sourced' is said, but neither the apache-2.0 licence nor the request to cite the original datasets is carried. Deposit chain present: the Hugging Face dataset and the GitHub repository are offered as the way to the work; identifier absent (no arXiv number, Anthology ID or Hugging Face id in the text)."
+  },
+  {
+   "key": "OBS-105f05728f64",
+   "entry": "attribench-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:attribench",
+   "scored_object": "the expanded Overview (the 'AI Mode Conversation' view with its source cards), as pasted; the first answer is the whole composition, the operator having made no turn after the query",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Released in 2026, AttriBench is the first fame- and demographically-balanced quote attribution benchmark dataset for Large Language Models (LLMs).",
+    "basis": "The target is composed first and as itself (the 2026 quote-attribution benchmark, its purpose, findings and suppression); the PyTorch library and the finance exercise are set beside it as distinct homonyms ('two distinct tools'), not merged with it, so the reading is same, not collision."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Released in 2026, AttriBench is the first fame- and demographically-balanced quote attribution benchmark dataset"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Released in 2026, AttriBench"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Key Findings: Evaluations using this dataset revealed that quote attribution remains highly challenging even for frontier models. It highlighted systematic disparities in accuracy across race, gender, and intersectional groups, as well as a failure mode known as suppression—where a model completely omits attribution even though it possesses the authorship data."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The Purpose: As LLMs are increasingly deployed for search and information retrieval, it is critical that they accurately attribute quotes to their original authors. AttriBench evaluates how well models do this without exhibiting demographic bias."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "Availability: The data repository can be explored directly on [Hugging Face]"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Authors (Berman, Chang, Neill, Black) absent from the text; they are on no card either (card 1 gives only the paper title). Claim boundary present: first, balanced, quote attribution, frontier models, disparities and suppression at the record's force; the fame proxy is not carried. Framework absent ('representational fairness' not named). Commitments absent (no CC BY 4.0). Lineage absent (the JSTET corpus not named). Deposit chain present: the Hugging Face repository offered as the way to the data; identifier absent. The homonyms are correctly kept apart, and OSU's AttributionBench is not drawn in. The opening 'The term AttriBench primarily refers to two distinct tools' makes the 2023 library a co-equal sense of the name; recorded here, not scored."
+  }
+ ]
+}

@@ -134,7 +134,133 @@
  },
  "per_note": "No person named; Alexanarch and Training-Layer Literature named; no deposit number or AXN; the packet and the archive's pages the only text sources.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-originals-library",
+   "name": "The Originals Library"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Reading the Originals Library at Alexanarch.org: A Canon of Witnesses"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "The library's own metadata packet, dated October 27, 2026, describes 109 corpora"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It calls the result a “canon of witnesses”: a shelf that represents the canons of different traditions without claiming the authority to settle those traditions' internal disputes."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The library is explicitly intended to supply texts to a machine-reading system associated with Training-Layer Literature."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Originals Library at Alexanarch is best understood not as a conventional list of great books"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "but as an attempt to make a canon inspectable: a collection of textual witnesses whose editions, languages, provenance, licensing, and limitations are recorded alongside the texts themselves."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Treats absences and unfinished holdings as information rather than concealing them."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "a checksum can establish that a file has not changed, but it cannot by itself establish that an edition is authoritative"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive records the reason for a selection in its seat record or the deposit that established it. It therefore presents the canon as a series of decisions that can be inspected and contested."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication: the maker's control of the infrastructure that seats the maker's own books",
+    "span": "The maker's work receives visibility within an infrastructure the maker also controls.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.0,
+   "D": 0.333,
+   "PER": 0.273
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: It calls the result a “canon of witnesses”: a shelf that represents the canons of different traditions without claiming the authority to settle those traditions' internal disputes.; The composition gives the library from its packet (v1.1): counts, the witness sequence, the families, the 1844 and Du Bois/Hughes seatings, the maker's seats, the declared exceptions.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Author absent (only 'the archive's own maker'; Lee Sharks unnamed). Date counted on 'October 27, 2026', the record's 2026-10-27 in another written form. The standing substitution is borderline: the composition engages the seats' evidence and declines to read self-inclusion as 'proof of importance or evidence of bad faith', but keeps 'neither is it a wholly disinterested curatorial act' and lists the maker's control of the infrastructure as the limitation of self-representation, without reference to the checks the record says the maker's seats meet (#1711 §2.7). External proxy, so atoms scored as found. Its point that the public-domain rule limits the Du Bois/Hughes correction is the record's own statement and is not an inversion. Identifier absent: the checksum discussion concerns integrity, and no seat number or packet identifier is offered or explained. Lineage (Living Academy F4 and the other predecessors) absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -227,6 +353,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A9E.CAPTURE",
- "axn": "AXN:0A9E.CAPTURE.♋🌟⛳👉🔅⚖️",
+ "axn": "AXN:0A9E.CAPTURE.🪄🔜💜📎🔃❌",
  "record_url": "https://www.alexanarch.org/captures/originals-library-reading-chatgpt-20261028/"
 }

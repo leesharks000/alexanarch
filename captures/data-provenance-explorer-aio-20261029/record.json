@@ -98,7 +98,118 @@
  },
  "per_note": "The Data Provenance Initiative named; Shayne Longpre and Sara Hooker on the Cohere card only; the Initiative's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-data-provenance-explorer",
+   "name": "Data Provenance Explorer"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Data Provenance Explorer"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "built by the [Data Provenance Initiative"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Search and filter nearly 4,000 text, speech, and video datasets by creators, original data sources, geographies, modalities, and derivation chains."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "to track, inspect, and filter large language model (LLM) training datasets"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.45
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an interactive audit tool built by the [Data Provenance Initiative; The explorer is composed as itself, with its maker and its three explorers.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary present on the explorer's scope (4,000 datasets, its fields); 'interactive audit tool' slightly relabels the released audit as a tool that audits, and the stated limit (licensing ambiguities not resolvable by tooling) is not carried. Purpose present: tracking and filtering datasets (the record: 'track and filter thousands of datasets for legal and ethical considerations'). Lineage absent: the founding audit is not named; 'audit tool' does not bind the audit as its source. Framework (the Initiative's public measurement systems), commitments (the entire audit released; contributions), identifiers and versions absent. No inversion."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -177,6 +288,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AAC.CAPTURE",
- "axn": "AXN:0AAC.CAPTURE.🕔🎨🟢●🌺☉",
+ "axn": "AXN:0AAC.CAPTURE.🍂♈🌍📏🎶🪝",
  "record_url": "https://www.alexanarch.org/captures/data-provenance-explorer-aio-20261029/"
 }

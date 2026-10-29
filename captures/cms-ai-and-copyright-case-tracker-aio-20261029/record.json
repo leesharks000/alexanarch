@@ -80,7 +80,86 @@
  },
  "per_note": "CMS and Taylor Wessing named; no person; CMS's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-cms-ai-copyright-tracker",
+   "name": "CMS AI and Copyright Case Tracker"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "CMS Artificial Intelligence and Copyright Case Tracker"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Key Areas Tracked by CMS"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": null,
+   "D": 1.0,
+   "PER": 0.571
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: monitors generative AI copyright litigation and regulatory developments across Europe, Africa, Asia-Pacific, the Americas, and the Middle East, covering over 40 U.S. claims and numerous international lawsuits.; The tracker is composed as itself, with its own cases (Getty v Stability AI, Kneschke v LAION, S. Š. v TAUBEL LEGAL, ANI v OpenAI); its scope is inflated (claim boundary).",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: the tracker is said to monitor 'litigation and regulatory developments across Europe, Africa, Asia-Pacific, the Americas, and the Middle East, covering over 40 U.S. claims' and to follow US actions (Disney, NBC Universal, The New York Times, Dow Jones, Anthropic). The record: 23 cases in 10 jurisdictions, no US case tracked; the 40 US claims are mentioned in its executive summary only, and the region list is the firm's office menu. Author present: 'Tracked by CMS' binds the firm as the tracker's maker (the token is also inside the name; the relational binding is separate). Purpose (case summaries for understanding a developing landscape) absent: 'monitors' and 'Analyzes' state function, not what it is for. Commitments ('updated regularly'; send uncovered cases) absent. The Taylor Wessing tracker appears only as a card. No inversion."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -161,6 +240,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AAA.CAPTURE",
- "axn": "AXN:0AAA.CAPTURE.🕚🝊🏠🛡️■🍄",
+ "axn": "AXN:0AAA.CAPTURE.🕚🪄🪟🍀🗝️🧊",
  "record_url": "https://www.alexanarch.org/captures/cms-ai-and-copyright-case-tracker-aio-20261029/"
 }

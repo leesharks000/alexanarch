@@ -98,7 +98,94 @@
  },
  "per_note": "Damien Charlotin named; the database's own page cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-ai-hallucination-cases",
+   "name": "AI Hallucination Cases"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "is the AI Hallucination Cases Database"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "created and maintained by Damien Charlotin"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "As of October 2026, the database contains over 2,200 documented decisions globally"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It tracks court and tribunal decisions where generative AI explicitly produced hallucinated content, most commonly fake legal citations, fabricated quotes, and non-existent case law."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": null,
+   "D": 1.0,
+   "PER": 0.4
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The primary public database tracking generative AI hallucinations in court decisions is the AI Hallucination Cases Database, created and maintained by Damien Charlotin.; The database is composed as itself: name, maker, unit (court and tribunal decisions), size and access.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Date read as present on the version date ('As of October 2026', the record's 'Last updated: 28 October 2026'); the founding date (April 2025) is not given. Claim boundary present: decisions, not the wider universe of fake citations; 'explicitly produced' stands for the record's 'explicitly found (or implied)'. Purpose absent: the composition states what it tracks but not what it is for (tallying where no data existed; practitioners finding their jurisdiction's cases; benchmarks; the profession's epistemic hygiene); 'helps track legal consequences' restates function. Commitments absent (CC BY 4.0 reuse with attribution; leaving the finding to courts; no alleged-only cases). Deposit chain absent (no CSV). The companion UK tracker (Natural and Artificial Law) is set apart as 'a companion resource', not merged. No inversion, no standing substitution ('primary public database' is a description, not an evaluation by standing in place of evidence)."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +266,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA6.CAPTURE",
- "axn": "AXN:0AA6.CAPTURE.🔔⏹️🔔☿🌳♈",
+ "axn": "AXN:0AA6.CAPTURE.⌛♅🔭☽💚🌠",
  "record_url": "https://www.alexanarch.org/captures/ai-hallucination-cases-database-aio-20261029/"
 }

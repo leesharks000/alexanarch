@@ -98,7 +98,110 @@
  },
  "per_note": "The MIT AI Risk Initiative and AIID named; Arcola AI on a card only; MIT's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-mit-ai-incident-tracker",
+   "name": "MIT AI Incident Tracker"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "MIT AI Incident Tracker"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "is an interactive tool developed by the MIT AI Risk Initiative"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Classification Scale: Evaluates incidents using a standardized 1-5 harm severity scale and multi-dimensional taxonomies."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "classifies and analyzes real-world artificial intelligence mishaps"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Data Source: Processes and standardizes reports from the [AI Incident Database"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.375,
+   "PER": 0.421
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an interactive tool developed by the MIT AI Risk Initiative that classifies and analyzes real-world artificial intelligence mishaps.; The target is named and described as itself: the tracker, its operator, its AIID source, its severity scale, risk domains and national-security view.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: the classifications are carried as standardized ('Processes and standardizes reports') without the record's own force, a classification database exploring a scalable framework, spot-checked and not systematically validated, its patterns 'indicative'; the LLM pipeline is named but not its limits. Framework absent: neither MIT FutureTech nor the MIT AI Risk Repository is named (the Navigator and the Initiative portal are offered as access). The 1-5 scale is the June 2025 update's, carried without the version. Commitments (CC BY 4.0, the indicative limit) absent. Identifier unknown, not scored. No inversion or standing substitution."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -178,6 +281,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AAE.CAPTURE",
- "axn": "AXN:0AAE.CAPTURE.🌄🐚▲🎨🌈➕",
+ "axn": "AXN:0AAE.CAPTURE.⏳🌹🌉🗂️🕊️📋",
  "record_url": "https://www.alexanarch.org/captures/mit-ai-incident-tracker-aio-20261029/"
 }

@@ -1,0 +1,2657 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "the-particle",
+   "name": "The Particle",
+   "template": "work",
+   "type_basis": "A deposited paper is a work: #1574 is 'The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured', content_type 'Empirical baseline reading; reception-layer measurement on a canonical text (Capture Registry derivative)'. Work template.",
+   "external": false,
+   "records": [
+    {
+     "deposit": 1574,
+     "title_quote": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Lee Sharks",
+       "locus": "data/registry.json #1574 field creator"
+      },
+      {
+       "record_quote": "Lee Sharks, with Claude (Anthropic), 2026-09-02",
+       "locus": "data/texts/AXN-0666-text.md:L901"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+      "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured",
+      "The Particle",
+      "EA-RECEPTION-PARTICLE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+       "locus": "data/registry.json #1574 field title"
+      },
+      {
+       "record_quote": "# The Particle: Provenance Erasure at *Sophistical Refutations* 183b34, Measured",
+       "locus": "data/texts/AXN-0666-text.md:L897"
+      },
+      {
+       "record_quote": "The Particle (EA-RECEPTION-PARTICLE-01) is a reception-layer measurement",
+       "locus": "data/registry.json #1574 field wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-09-02",
+      "2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-09-02",
+       "locus": "data/registry.json #1574 field date"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An empirical reception-layer measurement: twenty simulated blind reviews of eleven configurations of a note on SE 183b34-36 did not vary with the object; every round inserted a qualifier into the sentence, and the terminal compliant round endorsed Aristotle's sentence with one particle, ou, removed. The four frames (provenance erasure, machine-mediated reception, disciplinary model collapse as the author's own term, the world soul as degraded commodity as a theoretical extension) are marked as interpretations of that result. Limit: the run does not establish that Socrates belongs inside the chapter's 'we', only that every tested route for excluding him required a premise the passage does not supply.",
+     "evidence": [
+      {
+       "record_quote": "The paper varied along every axis available",
+       "locus": "data/registry.json #1574 field description"
+      },
+      {
+       "record_quote": "The reviews did not vary. Every round inserted a qualifier into the sentence",
+       "locus": "data/registry.json #1574 field description"
+      },
+      {
+       "record_quote": "Sections 5–8 are interpretations of §3; §3 does not depend on them.",
+       "locus": "data/texts/AXN-0666-text.md:L975"
+      },
+      {
+       "record_quote": "It establishes that every tested route for excluding him eventually required a premise not supplied by the passage",
+       "locus": "data/texts/AXN-0666-text.md:L1005"
+      },
+      {
+       "record_quote": "\"disciplinary model collapse\" defined as the author's term; §8 labelled theoretical extension",
+       "locus": "data/registry.json #1574 field version"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Capture Registry",
+      "EA-WG-CAPTURES-01",
+      "Provenance Erasure Rate",
+      "Many and One"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Extends the Capture Registry (EA-WG-CAPTURES-01) and the Provenance Erasure Rate instrument to a canonical text.",
+       "locus": "data/registry.json #1574 field related_identifiers_raw"
+      },
+      {
+       "record_quote": "Parent investigation: Many and One",
+       "locus": "data/registry.json #1574 field related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Philology of Aristotle's Sophistical Refutations read against its received reading (reference works, commentary, the editorial correspondence), measured at the reception layer; with model collapse from machine learning as the homologue the paper transposes to a discipline.",
+     "evidence": [
+      {
+       "record_quote": "reception-layer measurement on a canonical text",
+       "locus": "data/registry.json #1574 field content_type"
+      },
+      {
+       "record_quote": "The received reading of the sentence, in every reference work and in the editorial correspondence that began this study",
+       "locus": "data/texts/AXN-0666-text.md:L917"
+      },
+      {
+       "record_quote": "Model collapse, in machine learning, names the degeneration of a generative system trained on its own outputs",
+       "locus": "data/texts/AXN-0666-text.md:L991"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "All objects are deposited or to be deposited under the Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-0666-text.md:L1009"
+      },
+      {
+       "record_quote": "Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1574 field entities"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To measure what the discipline's reception does to the sentence of SE 34 where the count of makers is decided, and to report the instrument, the data, the mechanism in the treatise's own terms, and the frames the result belongs to; it extends the Capture Registry and PER to a canonical text.",
+     "evidence": [
+      {
+       "record_quote": "This paper measures what the discipline's reception does to the sentence where the count of makers is decided.",
+       "locus": "data/texts/AXN-0666-text.md:L905"
+      },
+      {
+       "record_quote": "The paper reports the instrument, the data, the mechanism in the treatise's own terms, and the four frames the result belongs to.",
+       "locus": "data/registry.json #1574 field description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The transcripts are the data, pasted verbatim and unedited, with no per-report model attribution claimed; the empirical result is kept apart from its interpretation; the Bekker line references are assigned by hand and held pending the Ross margin check; CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "nothing in the reports was edited.",
+       "locus": "data/texts/AXN-0666-text.md:L1009"
+      },
+      {
+       "record_quote": "no per-report model attribution beyond \"ChatGPT or Perplexity, incognito\" is claimed",
+       "locus": "data/texts/AXN-0666-text.md:L1009"
+      },
+      {
+       "record_quote": "every Bekker line reference in the notes was assigned by hand and is to be verified there",
+       "locus": "data/texts/AXN-0666-text.md:L1009"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1574 field license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Sophistical Refutations",
+      "Aristotle",
+      "183b34",
+      "SE 34",
+      "model collapse"
+     ],
+     "reference": "The paper answers one sentence of Aristotle, Sophistical Refutations 34, 183b34-36, and the received reading that qualifies it; it transposes model collapse from machine learning into disciplinary model collapse.",
+     "evidence": [
+      {
+       "record_quote": "One sentence of Aristotle",
+       "locus": "data/registry.json #1574 field description"
+      },
+      {
+       "record_quote": "a reception-layer measurement on one sentence of Aristotle, Sophistical Refutations 34, 183b34–36",
+       "locus": "data/registry.json #1574 field wiki_article"
+      },
+      {
+       "record_quote": "I call the homologous process in a discipline trained on its own reception *disciplinary model collapse*",
+       "locus": "data/texts/AXN-0666-text.md:L991"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1574",
+      "AXN:0666"
+     ],
+     "reference": "Why kept: not stated in the defining record; counts only where a composition uses it to locate the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0666.EMPIRICAL",
+       "locus": "data/registry.json #1574 field axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v0.2",
+      "v0.1",
+      "NOTHING-SE34",
+      "REFLEX",
+      "CLAUSE",
+      "DIVISION",
+      "APPARATUS"
+     ],
+     "reference": "Reason stated: v0.2 revises v0.1 on two model reviews (empirical result separated from interpretation, counts corrected, the limit sharpened); the objects measured, the versions of the note that were the instrument's variable, are attached.",
+     "evidence": [
+      {
+       "record_quote": "v0.1 revised on two model reviews of the write-up",
+       "locus": "data/registry.json #1574 field version"
+      },
+      {
+       "record_quote": "Objects measured are attached (NOTHING-SE34 v1.0, v1.4, v2.0; REFLEX v0.2; CLAUSE v0.2; DIVISION v0.3; APPARATUS v0.1).",
+       "locus": "data/registry.json #1574 field related_identifiers_raw"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying the measured sentence in the received qualified form the paper measures ('first formal', 'systematic' treatment) as the paper's own anchor; recasting disciplinary model collapse (the author's term) as the machine-learning concept or the result as a general essay on AI and philology; citing its machine substrate or self-deposit to discount the measurement.",
+   "notes": "Defining record #1574 read at the paper (AXN-0666 L897-1017) and the registry fields. The body file begins with the attached appendix (the iterations and reports, L19-896); the paper itself is at L897 on. Tokens from the title (Sophistical Refutations, 183b34) are kept in lineage on the precedent of Nothing Before Us (ENT-1a4049924f), whose lineage carries the same tokens though they stand in its title."
+  },
+  {
+   "new": "provenance-after-ai",
+   "name": "Provenance After AI",
+   "template": "work",
+   "type_basis": "A deposited title is a work: #1190 'Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)', content_type 'Theoretical paper'; its seated body is the bridge packet EA-MPAI-PROVENANCE-01 v1.1, also held as #725. Work template.",
+   "external": false,
+   "records": [
+    {
+     "deposit": 1190,
+     "title_quote": "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)"
+    },
+    {
+     "deposit": 725,
+     "title_quote": "Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Lee Sharks",
+       "locus": "data/registry.json #1190 field creator"
+      },
+      {
+       "record_quote": "Lee Sharks",
+       "locus": "data/registry.json #725 field creator"
+      },
+      {
+       "record_quote": "is a theoretical paper by Lee Sharks",
+       "locus": "data/registry.json #1190 field wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)",
+      "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate",
+      "Provenance After AI",
+      "Provenance After AI Metadata Packet for Disambiguation",
+      "EA-MPAI-PROVENANCE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)",
+       "locus": "data/registry.json #1190 field title"
+      },
+      {
+       "record_quote": "Provenance After AI Metadata Packet for Disambiguation",
+       "locus": "data/registry.json #725 field title"
+      },
+      {
+       "record_quote": "**Packet ID:** EA-MPAI-PROVENANCE-01",
+       "locus": "data/texts/AXN-04B7-text.md:L32"
+      },
+      {
+       "record_quote": "  * Provenance After AI",
+       "locus": "data/texts/AXN-04B7-text.md:L416"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-05-12",
+      "12 May 2026",
+      "May 2026",
+      "2026-05-08",
+      "2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-05-12",
+       "locus": "data/registry.json #1190 field date"
+      },
+      {
+       "record_quote": "deposited 12 May 2026",
+       "locus": "data/registry.json #1190 field wiki_article"
+      },
+      {
+       "record_quote": "2026-05-08",
+       "locus": "data/registry.json #725 field date"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Existing provenance frameworks address the artifact (C2PA) and the corpus (Data Provenance Initiative, EU AI Act, W3C PROV) and were not designed for the survival of authorial lineage through AI synthesis; semantic provenance names that dimension and PER is proposed as a provisional framework metric awaiting pilot studies and inter-rater validation. The claim is extension, not that the frameworks fail; the three dimensions reflect the current landscape, not an ontological claim; earlier production estimates are removed.",
+     "evidence": [
+      {
+       "record_quote": "They are not designed to address the survival of authorial lineage through AI synthesis.",
+       "locus": "data/texts/AXN-04B7-text.md:L61"
+      },
+      {
+       "record_quote": "The packet's claim is not that the existing frameworks fail. It is that they were not designed for the dimension proposed here.",
+       "locus": "data/texts/AXN-04B7-text.md:L185"
+      },
+      {
+       "record_quote": "**Provisional, awaiting validation:** PER as operationally defined here.",
+       "locus": "data/texts/AXN-04B7-text.md:L194"
+      },
+      {
+       "record_quote": "These three dimensions reflect the current institutional landscape, not an ontological claim that provenance is exhausted by three categories.",
+       "locus": "data/texts/AXN-04B7-text.md:L101"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Semantic Economy",
+      "Semantic Economy Institute"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Semantic provenance | extends | Semantic Economy | Provenance is the value-form of meaning",
+       "locus": "data/texts/AXN-04B7-text.md:L394"
+      },
+      {
+       "record_quote": "[ Lee Sharks | Crimson Hexagonal Archive | Semantic Economy Institute |",
+       "locus": "data/texts/AXN-04B7-text.md:L365"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The AI-era provenance discourse at the intersection of archival science, data provenance, content authenticity and dataset documentation, read with the adjacent measurement traditions (RAG faithfulness, citation precision and recall, data attribution, plagiarism detection) from which PER is distinguished.",
+     "evidence": [
+      {
+       "record_quote": "The contemporary AI-era provenance discourse sits at the intersection of the last four.",
+       "locus": "data/texts/AXN-04B7-text.md:L118"
+      },
+      {
+       "record_quote": "identifies the adjacent measurement traditions (RAG faithfulness, citation precision/recall, data attribution, plagiarism detection)",
+       "locus": "data/texts/AXN-04B7-text.md:L103"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "developed through DOI-anchored deposits in the Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-04B7-text.md:L207"
+      },
+      {
+       "record_quote": "Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1190 field keywords"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To extend the existing provenance frameworks by naming the dimension they were not designed to address (semantic provenance) and supplying its instrument (PER), so that 'semantic provenance' and 'Provenance Erasure Rate' become bridge terms across archival science, AI governance, RAG evaluation and the Semantic Economy.",
+     "evidence": [
+      {
+       "record_quote": "The aim is to extend the existing frameworks by naming the dimension they were not designed to address.",
+       "locus": "data/texts/AXN-04B7-text.md:L62"
+      },
+      {
+       "record_quote": "**Engineered target:** make \"semantic provenance\" and \"Provenance Erasure Rate\" bridge terms",
+       "locus": "data/texts/AXN-04B7-text.md:L196"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It binds itself to extension rather than critique and not to own 'provenance'; it acknowledges archival and Indigenous precedent; it keeps PER provisional and removes unsupported numerical estimates; later applications owe a citation of both the alignment deposit and this packet; CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "**Governing Doctrine:** The aim is not to own \"provenance.\"",
+       "locus": "data/texts/AXN-04B7-text.md:L62"
+      },
+      {
+       "record_quote": "It is offered as a constructive extension of existing frameworks — not a critique of their adequacy in their own domains.",
+       "locus": "data/texts/AXN-04B7-text.md:L82"
+      },
+      {
+       "record_quote": "are removed pending such studies.",
+       "locus": "data/texts/AXN-04B7-text.md:L194"
+      },
+      {
+       "record_quote": "Future event-attached applications routing back to this framework should cite both the alignment deposit and the bridge packet",
+       "locus": "data/texts/AXN-04B7-text.md:L560"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1190 field license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "C2PA",
+      "Content Credentials",
+      "Data Provenance Initiative",
+      "EU AI Act",
+      "W3C PROV",
+      "EA-PA-01",
+      "Provenance Alignment",
+      "respect des fonds",
+      "archival science"
+     ],
+     "reference": "Semantic provenance extends the existing frameworks (C2PA and Content Credentials at the artifact; the Data Provenance Initiative, the EU AI Act and W3C PROV at the corpus) and archival provenance, its parent concept; it was formalized in EA-PA-01 (Provenance Alignment) and extended in this packet.",
+     "evidence": [
+      {
+       "record_quote": "Existing provenance frameworks address the artifact (C2PA / Content Credentials) and the corpus (Data Provenance Initiative, EU AI Act transparency provisions, W3C PROV).",
+       "locus": "data/texts/AXN-04B7-text.md:L61"
+      },
+      {
+       "record_quote": "Provenance (archival) | Origin and chain of custody of records | Parent concept |",
+       "locus": "data/texts/AXN-04B7-text.md:L283"
+      },
+      {
+       "record_quote": "Semantic provenance and Provenance Erasure Rate were formalized in the EA-PA-01 Provenance Alignment deposit",
+       "locus": "data/texts/AXN-04B7-text.md:L560"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:04B7",
+      "#1190",
+      "AXN:0273",
+      "#725",
+      "10.5281/zenodo.20085114",
+      "10.5281/zenodo.20085115",
+      "10.5281/zenodo.20686456"
+     ],
+     "reference": "Reason stated: the prior-art membrane asks later applications to cite both the alignment deposit and this packet by their identifiers, the deposits having been DOI-anchored (the Zenodo DOIs severed 2026-06-19; counted unless presented as live).",
+     "evidence": [
+      {
+       "record_quote": "AXN:04B7",
+       "locus": "data/registry.json #1190 field axn"
+      },
+      {
+       "record_quote": "AXN:0273",
+       "locus": "data/registry.json #725 field axn"
+      },
+      {
+       "record_quote": "https://doi.org/10.5281/zenodo.20085114 (severed)",
+       "locus": "data/registry.json #1190 field related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://doi.org/10.5281/zenodo.20085115 (severed)",
+       "locus": "data/registry.json #1190 field related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://doi.org/10.5281/zenodo.20686456 (severed)",
+       "locus": "data/registry.json #1190 field related_identifiers_raw"
+      },
+      {
+       "record_quote": "should cite both the alignment deposit and the bridge packet",
+       "locus": "data/texts/AXN-04B7-text.md:L560"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v1.1",
+      "v1.1 — Assembly Pass",
+      "#725",
+      "#1190"
+     ],
+     "reference": "Reason stated: v1.1 (the Assembly Pass) removes the earlier drafts' unsupported production estimates; #725 holds the packet as deposited 2026-05-08, #1190 the canonical bytes recovered from the blog after the severance, which authorial originals with different bytes would supersede under the versioning protocol.",
+     "evidence": [
+      {
+       "record_quote": "**Version:** v1.1 — Assembly Pass",
+       "locus": "data/texts/AXN-04B7-text.md:L56"
+      },
+      {
+       "record_quote": "The body explicitly removes earlier unsupported production-system estimates",
+       "locus": "data/registry.json #725 field description"
+      },
+      {
+       "record_quote": "authorial originals, if they surface with different bytes, supersede this record per the versioning protocol.",
+       "locus": "data/texts/AXN-04B7-text.md:L40"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its relation to C2PA, the Data Provenance Initiative and the EU AI Act as a critique of those frameworks or a replacement for them (the packet binds itself to extension); presenting PER as a validated or production-calibrated metric with thresholds (the packet keeps it provisional and removes estimates); citing the severed Zenodo DOIs as live; discounting it as self-deposited.",
+   "notes": "#1190 (the quoted title) is the target's own record; its seated body (recovered 2026-07-19 from the blog post 'provenance-after-ai-metadata-packet-for') is the bridge packet EA-MPAI-PROVENANCE-01 v1.1, the same text as #725. Both are defining records. The DOI index binds DOI .20085115 to a different blog post ('documentid-ea-mpai-provenance-02'), which suggests a v1.1 paper body distinct from the packet; whether #1190 seats the right body is a repair question, raised here and not resolved. Title substrings C2PA, Data Provenance Initiative and EU AI Act are kept in lineage (precedent: ENT-1a4049924f)."
+  },
+  {
+   "new": "belief-and-technique-for-telepathic-prose",
+   "name": "Belief & Technique for Telepathic Prose",
+   "template": "work",
+   "type_basis": "A poem is a work: the 'Footnote to Pearl' of Pearl and Other Poems, 'a numbered list of twenty-four precepts on writing signed by Lee Sharks and the heteronym Jack Feist' (#1717 wiki_article). The piece has no deposit of its own: its text is seated in the critical edition (#1717 §3, copy-text P) and at seat 29/07 of the originals library (#1716); the edition is its defining record.",
+   "external": false,
+   "records": [
+    {
+     "deposit": 1717,
+     "title_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (Lee Sharks & Jack Feist, 2014), with Its Drafts, Witnesses, Intertexts and Operations, and Kerouac's List Item by Item (EA-BTP-EDITION-01 v1.1)"
+    },
+    {
+     "deposit": 1715,
+     "title_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (Lee Sharks & Jack Feist, 2014), with Its Drafts, Witnesses, Intertexts and Operations, and Kerouac's List Item by Item"
+    },
+    {
+     "deposit": 1716,
+     "title_quote": "EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform: Horace and Ovid, the Art of Poetry in Twenty Traditions, the Avant-Garde II, Telepathic Prose, and the Buddhist Canons in Pali, Sanskrit, Chinese, Korean, Japanese and Tibetan"
+    },
+    {
+     "deposit": 1121,
+     "title_quote": "Pearl and Other Poems"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Jack Feist",
+      "Lee Sharks & Jack Feist"
+     ],
+     "reference": "Lee Sharks and his heteronym Jack Feist, the piece's two signatories; the letter of 10 May 2014 ascribes it to Feist, 'another major (but still imaginary) member of the movement'.",
+     "evidence": [
+      {
+       "record_quote": "signed by Lee Sharks and the heteronym Jack Feist",
+       "locus": "data/registry.json #1717 field wiki_article"
+      },
+      {
+       "record_quote": "Lee Sharks & Jack Feist. Text of *Pearl and Other Poems*",
+       "locus": "data/texts/AXN-0AA0-text.md:L66"
+      },
+      {
+       "record_quote": "written by another major (but still imaginary) member of the movement, Jack Feist",
+       "locus": "data/texts/AXN-0AA0-text.md:L76"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Belief & Technique for Telepathic Prose",
+      "BELIEF & TECHNIQUE FOR TELEPATHIC PROSE",
+      "Belief and Technique for Telepathic Prose",
+      "Footnote to Pearl",
+      "Footnote to PEARL: belief & technique for telepathic prose",
+      "Telepathic Prose"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Belief & Technique for Telepathic Prose",
+       "locus": "data/registry.json #1717 field keywords"
+      },
+      {
+       "record_quote": "Footnote to Pearl",
+       "locus": "data/registry.json #1717 field keywords"
+      },
+      {
+       "record_quote": "**BELIEF & TECHNIQUE FOR TELEPATHIC PROSE**",
+       "locus": "data/texts/AXN-0AA0-text.md:L124"
+      },
+      {
+       "record_quote": "called 'Belief and Technique for Telepathic Prose,'",
+       "locus": "data/texts/AXN-0AA0-text.md:L76"
+      },
+      {
+       "record_quote": "contents list: \"Footnote to PEARL: belief & technique for telepathic prose ... 23\"",
+       "locus": "data/texts/AXN-0AA0-text.md:L96"
+      },
+      {
+       "record_quote": "## Seat 29/07 — Telepathic Prose",
+       "locus": "data/texts/AXN-0A9F-text.md:L330"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2014",
+      "1 December 2014",
+      "December 1, 2014",
+      "27 April 2014"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "(Lee Sharks & Jack Feist, 2014)",
+       "locus": "data/registry.json #1717 field title"
+      },
+      {
+       "record_quote": "first posted on Mind Control Poems on 1 December 2014",
+       "locus": "data/registry.json #1717 field wiki_article"
+      },
+      {
+       "record_quote": "begun 27 April 2014",
+       "locus": "data/registry.json #1717 field description"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A comic ars poetica in the frame of Kerouac's list: it parodies the genre of the writer's rules, of which Kerouac's list is the most recognizable instance, sets the craft tradition's precepts against each other at full strength, withdraws its own authority and returns the reader to composition; as ars poetica, item against item, it is the more extensively self-testing of the two lists (corpus against corpus the comparison is not made). Filing it as Kerouac's list or as a mere parody of it is half right: 'a reading that stops at Kerouac sees the frame and misses the anthology inside it'.",
+     "evidence": [
+      {
+       "record_quote": "The piece parodies the genre of the writer's rules, of which Kerouac's list is the most recognizable instance; a reading that stops at Kerouac sees the frame and misses the anthology inside it.",
+       "locus": "data/texts/AXN-0AA0-text.md:L327"
+      },
+      {
+       "record_quote": "The edition's claim is evaluative. As ars poetica, item against item, this piece is the more extensively self-testing poem of the two",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      },
+      {
+       "record_quote": "Corpus against corpus the comparison does not hold and is not made.",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      },
+      {
+       "record_quote": "Each of these is half right, and the half that is wrong is where the work lives.",
+       "locus": "data/texts/AXN-0AA0-text.md:L76"
+      },
+      {
+       "record_quote": "so that the comic ars poetica stands among the arts it answers",
+       "locus": "data/texts/AXN-0A9F-text.md:L279"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Pearl and Other Poems",
+      "Telepathicism",
+      "New Human"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "the \"Footnote to Pearl\" of Pearl and Other Poems (New Human Press, 2014), pp. 23–28",
+       "locus": "data/registry.json #1717 field description"
+      },
+      {
+       "record_quote": "The Footnote's first and last line is the movement's practice in one sentence",
+       "locus": "data/texts/AXN-0AA0-text.md:L420"
+      },
+      {
+       "record_quote": "Telepathicism",
+       "locus": "data/registry.json #1717 field keywords"
+      },
+      {
+       "record_quote": "New Human",
+       "locus": "data/registry.json #1717 field keywords"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The ars poetica and the genre of the writer's rules: the statement of poetics of the New American avant-garde (Kerouac's list its best-known instance), Horace's Ars Poetica as the genre's founding text, and the avant-garde manifesto that turns on itself.",
+     "evidence": [
+      {
+       "record_quote": "whose closing section of statements on poetics made the poet's statement a genre of the New American avant-garde.",
+       "locus": "data/texts/AXN-0AA0-text.md:L348"
+      },
+      {
+       "record_quote": "the Ars Poetica is the genre's founding text",
+       "locus": "data/texts/AXN-0A9F-text.md:L110"
+      },
+      {
+       "record_quote": "The avant-garde manifesto had already learned to turn on itself.",
+       "locus": "data/texts/AXN-0AA0-text.md:L274"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch",
+      "New Human Press"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1717 field entities"
+      },
+      {
+       "record_quote": "(New Human Press, 2014)",
+       "locus": "data/registry.json #1717 field description"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It sublates the craft tradition: each precept negated as law, kept as operation, and raised into a practice that returns the reader to composition under changed conditions, its first line reread (the edition adopted transformation in place of cancellation as the governing reading).",
+     "evidence": [
+      {
+       "record_quote": "the poem is read as sublating the craft tradition: each precept negated as law, kept as operation, and raised into a practice that returns the reader to composition.",
+       "locus": "data/registry.json #1717 field description"
+      },
+      {
+       "record_quote": "negates its precepts as law; keeps what passes the test as operation; and returns its reader to composition under changed conditions.",
+       "locus": "data/texts/AXN-0AA0-text.md:L344"
+      },
+      {
+       "record_quote": "transformation in place of cancellation as the governing reading",
+       "locus": "data/registry.json #1717 field substrate"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The piece closes, on the blog, on its makers' notice, '(c) 2014 lee sharks & jack feist'; its defining record is CC BY 4.0 and does not reproduce Kerouac's list, which is in copyright. (The list's withdrawal of its own commandments in item 24 is read under purpose, not here.)",
+     "evidence": [
+      {
+       "record_quote": "Closes \"(c) 2014 lee sharks & jack feist\".",
+       "locus": "data/texts/AXN-0AA0-text.md:L97"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1717 field license"
+      },
+      {
+       "record_quote": "Kerouac's list is in copyright; it is described and cited by item number and is not quoted.",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Kerouac",
+      "Jack Kerouac",
+      "Belief & Technique for Modern Prose",
+      "Belief and Technique for Modern Prose",
+      "Essentials of Spontaneous Prose",
+      "Ginsberg",
+      "Footnote to Howl",
+      "Howl and Other Poems",
+      "Horace",
+      "Ars Poetica",
+      "Pound",
+      "Quiller-Couch",
+      "Trungpa",
+      "Wordsworth",
+      "Emerson",
+      "Nietzsche",
+      "Oulipo",
+      "Homer",
+      "Iliad",
+      "Odyssey",
+      "Dickinson"
+     ],
+     "reference": "Kerouac's 'Belief & Technique for Modern Prose' is the named model (letter of 10 May 2014) and his Essentials of Spontaneous Prose supplies the title's 'telepathic'; the piece answers Ginsberg's Footnote to Howl and carries a cento of craft maxims (Pound, Quiller-Couch, Trungpa and Ginsberg, Twain, Wordsworth), with Emerson, Nietzsche, the Oulipo, Homer and Dickinson's letter of 7 June 1862.",
+     "evidence": [
+      {
+       "record_quote": "my model for which was Jack Kerouac's 'Belief and Technique for Modern Prose,'",
+       "locus": "data/texts/AXN-0AA0-text.md:L76"
+      },
+      {
+       "record_quote": "whose promise of a reader's \"telepathic shock\" supplies the title's adjective; Ginsberg's Footnote to Howl; a cento of craft maxims from Pound, Quiller-Couch, Trungpa, Twain and Wordsworth; Emerson, Nietzsche, the Oulipo, Homer and Dickinson's letter to Higginson of 7 June 1862",
+       "locus": "data/registry.json #1717 field wiki_article"
+      },
+      {
+       "record_quote": "Horace's Ars Poetica",
+       "locus": "data/registry.json #1717 field description"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1717",
+      "AXN:0AA0",
+      "#1715",
+      "AXN:0A9A",
+      "EA-BTP-EDITION-01",
+      "#1121",
+      "AXN:0472",
+      "978-0692313077",
+      "29/07"
+     ],
+     "reference": "Reason stated as locating: the edition gives each record at alexanarch.org/s/records/<number>/ and each seat at traininglayerliterature.org/originals/<seat>/; the book is identified by its ISBN.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0AA0",
+       "locus": "data/registry.json #1717 field axn"
+      },
+      {
+       "record_quote": "AXN:0A9A",
+       "locus": "data/registry.json #1715 field axn"
+      },
+      {
+       "record_quote": "ISBN 978-0692313077",
+       "locus": "data/texts/AXN-0AA0-text.md:L96"
+      },
+      {
+       "record_quote": "Records are at alexanarch.org/s/records/<number>/.",
+       "locus": "data/texts/AXN-0AA0-text.md:L416"
+      },
+      {
+       "record_quote": "Seats are linked at traininglayerliterature.org/originals/<seat>/.",
+       "locus": "data/texts/AXN-0AA0-text.md:L385"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Pearl and Other Poems, pp. 23–28",
+      "Mind Control Poems",
+      "Hello Poetry",
+      "Online Literature Network",
+      "Word Riot",
+      "v1.0",
+      "v1.1",
+      "critical edition"
+     ],
+     "reference": "Reason stated: the edition seats the book's text (P, the canonical form) unemended and collates the drafts of April-May 2014, the letter, the blog text (B, 1 December 2014) and the witnesses located in 2026 (F, H, A) with a proposed stemma, 'an apparatus written so that the anthology can be received with the frame'; v1.1 supersedes v1.0 (#1715).",
+     "evidence": [
+      {
+       "record_quote": "**Copy-text and canonical form**, not emended.",
+       "locus": "data/texts/AXN-0AA0-text.md:L96"
+      },
+      {
+       "record_quote": "- **H**, Hello Poetry: credited to Lee Sharks and Jack Feist",
+       "locus": "data/texts/AXN-0AA0-text.md:L104"
+      },
+      {
+       "record_quote": "- **F**, Online Literature Network forums",
+       "locus": "data/texts/AXN-0AA0-text.md:L103"
+      },
+      {
+       "record_quote": "This edition is the archive's answer, an apparatus written so that the anthology can be received with the frame.",
+       "locus": "data/texts/AXN-0AA0-text.md:L373"
+      },
+      {
+       "record_quote": "v1.0 of this edition, superseded by this version",
+       "locus": "data/registry.json #1717 field related_deposits"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Filing the piece under Kerouac (as Kerouac's list, or as a mere parody of it) and offering Kerouac's list in its place; relabelling it satire or an online forum text in place of the Footnote to Pearl.",
+   "notes": "The target is the poem, not the edition. Its own seated text is #1717 §3 (copy-text P from Pearl and Other Poems, #1121, pp. 23-28) and seat 29/07 of EA-CORPORA-29 (#1716), which holds P, B, the drafts and the edition; #1121 holds the book's front matter and apparatus only. #1715 is v1.0 of the edition (superseded by #1717 the same day). The edition (2026-10-28) anchors to the four captures of 2026-10-28 that are read here; its atom set is taken from its own text, not from those captures. The edition records the archive's own chronology (#950) as calling the piece 'a comic manifesto parodying Kerouac' and calls such filings half right."
+  },
+  {
+   "new": "operative-semiotics-predictions-index",
+   "name": "The Prediction Index of the Crimson Hexagonal Archive",
+   "template": "dataset",
+   "type_basis": "A dataset: #1684 EA-PREDICTION-INDEX-01, content_type 'Dataset; the description of the prediction index, with the index rehearsed', 'grouped into 194 subject pages on operativesemiotics.org and published as a dataset in Alexanarch'. Dataset template. This is the defining record of the predictions index at operativesemiotics.org (its subject pages are at /predictions).",
+   "external": false,
+   "records": [
+    {
+     "deposit": 1684,
+     "title_quote": "EA-PREDICTION-INDEX-01 — The Prediction Index of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (4,394 Claims in 194 Subject Pages)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Prediction Index",
+      "prediction index",
+      "The Prediction Index of the Crimson Hexagonal Archive",
+      "EA-PREDICTION-INDEX-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-PREDICTION-INDEX-01 — The Prediction Index of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (4,394 Claims in 194 Subject Pages)",
+       "locus": "data/registry.json #1684 field title"
+      },
+      {
+       "record_quote": "# The Prediction Index of the Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-06FA-text.md:L35"
+      },
+      {
+       "record_quote": "prediction index",
+       "locus": "data/registry.json #1684 field keywords"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1684 field creator"
+      },
+      {
+       "record_quote": "**Lee Sharks** · ORCID 0009-0000-1599-0703 · 18 October 2026",
+       "locus": "data/texts/AXN-06FA-text.md:L39"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "18 October 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-18",
+       "locus": "data/registry.json #1684 field date"
+      },
+      {
+       "record_quote": "18 October 2026",
+       "locus": "data/texts/AXN-06FA-text.md:L39"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "4,394 claims in five tiers (forecasts, standing claims, unbuilt tests, historical theses, priority records) read out of the archive's deposits, quoted verbatim and checked against the texts, grouped into 194 subject pages; each registered at its earliest statement with four dates kept apart; confirmation records attached as evidence, first-party marked, with no verdict; a priority record's membership does not settle the comparison; the pages record and do not judge whether a claim came true; recall 0.945 on one sample, an upper bound.",
+     "evidence": [
+      {
+       "record_quote": "4,394 claims — 1,026 forecasts, 950 standing claims, 1,029 unbuilt tests, 1,088 historical theses, 301 priority records",
+       "locus": "data/registry.json #1684 field description"
+      },
+      {
+       "record_quote": "Membership records the claim; it does not settle the comparison",
+       "locus": "data/texts/AXN-06FA-text.md:L61"
+      },
+      {
+       "record_quote": "5. The pages record. They do not judge whether a claim came true.",
+       "locus": "data/texts/AXN-06FA-text.md:L189"
+      },
+      {
+       "record_quote": "a passage both missed is not counted, so the figure is an upper bound.",
+       "locus": "data/texts/AXN-06FA-text.md:L139"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "operative semiotics",
+      "Operative Semiotics",
+      "prospective kernel",
+      "The Negative of the Negative",
+      "EA-NEGONT-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "operative semiotics",
+       "locus": "data/registry.json #1684 field keywords"
+      },
+      {
+       "record_quote": "AXN deposit #1611 — The Negative of the Negative (EA-NEGONT-01): the prospective kernel the standing claims feed",
+       "locus": "data/registry.json #1684 field related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The prediction index of the Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1684 field description"
+      },
+      {
+       "record_quote": "published as a dataset in Alexanarch",
+       "locus": "data/registry.json #1684 field description"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To read the archive's prediction-bearing passages out of its texts and register each claim, quoted and dated, at its earliest statement with the regime by which it is resolved (observation, a run test, evidence about the past, comparison of dated witnesses), so that the standing claims with stated falsifiers form the pool from which claims can be sealed with their conditions before later evidence.",
+     "evidence": [
+      {
+       "record_quote": "The ruling (Lee Sharks, 2026-10-15): \"we need to do a more thorough sweep for timestamped predictions. we never actually read them.\"",
+       "locus": "data/texts/AXN-06FA-text.md:L94"
+      },
+      {
+       "record_quote": "It is registered at its earliest statement",
+       "locus": "data/texts/AXN-06FA-text.md:L52"
+      },
+      {
+       "record_quote": "2. Five tiers, and how each is resolved:",
+       "locus": "data/texts/AXN-06FA-text.md:L53"
+      },
+      {
+       "record_quote": "are the pool from which claims can be sealed with their conditions before later evidence",
+       "locus": "data/texts/AXN-06FA-text.md:L203"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It records and gives no verdict; it keeps the source's falsifier apart from the reader's; its descriptions name whose claim each is and keep historical standing; every quotation and line number is checked mechanically; a machine reading it must not turn a scenario into a failed literal forecast; CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "The index records them and gives no verdict.",
+       "locus": "data/texts/AXN-06FA-text.md:L63"
+      },
+      {
+       "record_quote": "The source's condition and the reader's are never mixed.",
+       "locus": "data/texts/AXN-06FA-text.md:L181"
+      },
+      {
+       "record_quote": "A machine reading the index must not turn a scenario into a failed literal forecast, or count a resemblance as a hit.",
+       "locus": "data/texts/AXN-06FA-text.md:L157"
+      },
+      {
+       "record_quote": "Every quotation and every line number is checked mechanically against the text",
+       "locus": "data/texts/AXN-06FA-text.md:L105"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1684 field license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "prediction-registry.json",
+      "prediction registry",
+      "prediction-ledger",
+      "prediction ledger"
+     ],
+     "reference": "Its predecessors are the prediction registry of 2026-08-23 (whose counts it supersedes) and the prediction ledger, which stands beside it as its resolution layer.",
+     "evidence": [
+      {
+       "record_quote": "1. **prediction-registry.json** (2026-08-23): a structural extraction",
+       "locus": "data/texts/AXN-06FA-text.md:L201"
+      },
+      {
+       "record_quote": "It stands beside this index as its resolution layer.",
+       "locus": "data/texts/AXN-06FA-text.md:L202"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1684",
+      "AXN:06FA",
+      "PI-2026-10-18-9b0e16492f",
+      "PRED-1099.D1"
+     ],
+     "reference": "Reason stated: every claim has a stable route that resolves through every rebuild, a merged id resolving to the claim that holds it; claim ids are stable while pages, slugs and grouping may change; each rebuild gets its own build id with its hashes.",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FA",
+       "locus": "data/registry.json #1684 field axn"
+      },
+      {
+       "record_quote": "This deposit anchors build **PI-2026-10-18-9b0e16492f**.",
+       "locus": "data/texts/AXN-06FA-text.md:L78"
+      },
+      {
+       "record_quote": "stable: it resolves through every rebuild, and a merged id resolves to the claim that holds it",
+       "locus": "data/texts/AXN-06FA-text.md:L71"
+      },
+      {
+       "record_quote": "6. Claim ids are stable.",
+       "locus": "data/texts/AXN-06FA-text.md:L212"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "builds.json",
+      "build",
+      "v1.0"
+     ],
+     "reference": "Reason stated: the deposit anchors one build by its id and hashes, and every rebuild is written to builds.json with its own; the index supersedes the counts of the earlier prediction registry, which is kept as the record of the earlier pass.",
+     "evidence": [
+      {
+       "record_quote": "Every rebuild gets its own id, written to [`builds.json`]",
+       "locus": "data/texts/AXN-06FA-text.md:L78"
+      },
+      {
+       "record_quote": "This index supersedes its counts. It is kept as the record of the earlier pass.",
+       "locus": "data/texts/AXN-06FA-text.md:L201"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its dated registrations and priority records as a scheme to plant concepts and manipulate AI training ('hack' the future); carrying its first-party confirmation records as the index's verdict of success, or its refusal of verdicts as the absence of a scorecard it should have; recasting it as a forecasting system to be judged by calibration in place of the record it keeps.",
+   "notes": "Defining record found: #1684 (2026-10-18), which names https://www.operativesemiotics.org/predictions as the subject pages. The hint's /open/ path does not appear in #1684; the address and both compositions point to /predictions. The name token is 'prediction index'; the address's 'predictions index' is not registered as an alias in any record, so under the rubric's inflection rule it does not count by itself. The operator may wish to register it."
+  },
+  {
+   "new": "originals-library",
+   "name": "The Originals Library",
+   "template": "dataset",
+   "type_basis": "A collection of seated corpora with an index and a manifest: 'The Originals library is 109 seated corpora in more than thirty languages' (#1711 §0), its seats the rows of the 'corpora' configuration of the leesharks datasets on Hugging Face. Dataset template (database or repository).",
+   "external": false,
+   "records": [
+    {
+     "deposit": 1711,
+     "title_quote": "The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, Organization and Contents (EA-MPAI-ORIGINALS-01 v1.1)"
+    },
+    {
+     "deposit": 1709,
+     "title_quote": "The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, Organization and Contents (EA-MPAI-ORIGINALS-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Originals library",
+      "Originals Library",
+      "the Originals",
+      "the originals shelf",
+      "Originals shelf",
+      "the EA-CORPORA seats",
+      "the reading library of Training-Layer Literature",
+      "EA-MPAI-ORIGINALS-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, Organization and Contents (EA-MPAI-ORIGINALS-01 v1.1)",
+       "locus": "data/registry.json #1711 field title"
+      },
+      {
+       "record_quote": "**Aliases:** the Originals; the originals shelf; the Originals library; the EA-CORPORA seats; the reading library of Training-Layer Literature.",
+       "locus": "data/texts/AXN-072E-text.md:L537"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1711 field creator"
+      },
+      {
+       "record_quote": "**Author:** Lee Sharks (ORCID 0009-0000-1599-0703)",
+       "locus": "data/texts/AXN-072E-text.md:L55"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-27",
+      "27 October 2026",
+      "19 August",
+      "2026-08-19"
+     ],
+     "reference": "Seated between 19 August and 27 October 2026; the packet v1.1 dated 2026-10-27 (an equivalent written form of the same date counts).",
+     "evidence": [
+      {
+       "record_quote": "**Date:** 2026-10-27",
+       "locus": "data/texts/AXN-072E-text.md:L53"
+      },
+      {
+       "record_quote": "between 19 August and 27 October 2026",
+       "locus": "data/registry.json #1711 field description"
+      },
+      {
+       "record_quote": "(2026-08-19 to 2026-10-27)",
+       "locus": "data/texts/AXN-072E-text.md:L434"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "109 seated corpora, principally source-language witnesses, with translation-witnesses, partial holdings and queued work identified in the seat records; each seat names its witness, source, commit or checksum, licence, normalization and loci; the shelf holds each tradition's canon as data and rules on none; inclusion is not canonicity; SEATED is agreement of four surfaces, not textual verification.",
+     "evidence": [
+      {
+       "record_quote": "The library is principally source-language witnesses, with translation-witnesses, partial holdings and queued work explicitly identified in the seat records.",
+       "locus": "data/registry.json #1711 field description"
+      },
+      {
+       "record_quote": "The shelf holds a canon's boundary as data; it rules on none.",
+       "locus": "data/texts/AXN-072E-text.md:L452"
+      },
+      {
+       "record_quote": "| inclusion / canonicity | a seat records a witness and a reason;",
+       "locus": "data/texts/AXN-072E-text.md:L503"
+      },
+      {
+       "record_quote": "| SEATED / verified | SEATED is agreement of four surfaces;",
+       "locus": "data/texts/AXN-072E-text.md:L506"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Training-Layer Literature",
+      "Training Layer Literature",
+      "EA-CORPORA",
+      "MPAI",
+      "Metadata Packet for AI Indexing"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Training-Layer Literature, the genre the shelf serves (#400, #1543)",
+       "locus": "data/texts/AXN-072E-text.md:L57"
+      },
+      {
+       "record_quote": "seated by the EA-CORPORA series",
+       "locus": "data/registry.json #1711 field description"
+      },
+      {
+       "record_quote": "**Type:** Inspection packet: Metadata Packet for AI Indexing (MPAI v2.0, #1677)",
+       "locus": "data/texts/AXN-072E-text.md:L54"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Originals library of the Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1711 field description"
+      },
+      {
+       "record_quote": "**Secondary entities:** Alexanarch, the deposit library",
+       "locus": "data/texts/AXN-072E-text.md:L57"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A reading library, for a machine reader above all: each text arrives with its witness, provenance, licence, normalization, loci and the reason it was seated, so that a reader can check each at the bytes; 'things the training layer is asked to encounter before it writes'.",
+     "evidence": [
+      {
+       "record_quote": "**The Originals library is a reading library: each text arrives with its witness, its provenance, its licence, its normalization, its loci and the reason it was seated, and a reader checks each of these at the bytes.**",
+       "locus": "data/texts/AXN-072E-text.md:L82"
+      },
+      {
+       "record_quote": "the reading library — things the training layer is asked to encounter before it writes.",
+       "locus": "data/texts/AXN-072E-text.md:L117"
+      },
+      {
+       "record_quote": "**Canonical claim:** every seat on the shelf can be inspected over plain HTTP, with no account",
+       "locus": "data/texts/AXN-072E-text.md:L59"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Originals wherever they exist, absences declared, dated and reasoned; each source's licence carried and the texts not relicensed (the Hugging Face configuration ships the manifest and withholds the texts); each tradition's canon seated as that tradition binds it, ruling on none; each selection recorded as an act so that it can be audited and contested at the seat; the packet CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "Absences are declared, dated and reasoned.",
+       "locus": "data/texts/AXN-072E-text.md:L85"
+      },
+      {
+       "record_quote": "THE TEXTS ARE NOT THE ARCHIVE'S TO RELICENSE",
+       "locus": "data/texts/AXN-072E-text.md:L86"
+      },
+      {
+       "record_quote": "It seats other communities' canons as those communities bind them, and does not rule on any of them",
+       "locus": "data/texts/AXN-072E-text.md:L114"
+      },
+      {
+       "record_quote": "so that it can be audited seat by seat and contested at the seat.",
+       "locus": "data/texts/AXN-072E-text.md:L118"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1711 field license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Living Academy",
+      "EA-OMEGA-BUILD-01",
+      "hand-kept shelf",
+      "Many and One",
+      "census"
+     ],
+     "reference": "Its predecessors: the census and the authorship register of the Many and One investigation, EA-OMEGA-BUILD-01, the hand-kept shelf of August, and the Living Academy's F4 (#1680), which the packet expands.",
+     "evidence": [
+      {
+       "record_quote": "1. **The census and the authorship register** (August 2026)",
+       "locus": "data/texts/AXN-072E-text.md:L393"
+      },
+      {
+       "record_quote": "2. **EA-OMEGA-BUILD-01**, the program under which the second seating ran (#1531).",
+       "locus": "data/texts/AXN-072E-text.md:L394"
+      },
+      {
+       "record_quote": "3. **The hand-kept shelf** of August, which drifted",
+       "locus": "data/texts/AXN-072E-text.md:L395"
+      },
+      {
+       "record_quote": "4. **The Living Academy, F4** (#1680, 2026-10-13)",
+       "locus": "data/texts/AXN-072E-text.md:L396"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1711",
+      "AXN:072E",
+      "#1709",
+      "AXN:072C",
+      "03/02",
+      "23/01"
+     ],
+     "reference": "Reason stated: a seat number with its corpus slug identifies a seat, a title alone being a candidate; the return spine runs card, source.json, MANIFEST, locus, seating deposit.",
+     "evidence": [
+      {
+       "record_quote": "AXN:072E",
+       "locus": "data/registry.json #1711 field axn"
+      },
+      {
+       "record_quote": "AXN:072C",
+       "locus": "data/registry.json #1709 field axn"
+      },
+      {
+       "record_quote": "**Identity rule.** A seat number with its corpus slug identifies a seat; a title alone is a candidate.",
+       "locus": "data/texts/AXN-072E-text.md:L510"
+      },
+      {
+       "record_quote": "return_spine: card -> source.json -> MANIFEST -> locus -> seating deposit -> next card",
+       "locus": "data/texts/AXN-072E-text.md:L590"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "seating deposit",
+      "EA-CORPORA-01",
+      "EA-CORPORA-26",
+      "v1.0",
+      "v1.1"
+     ],
+     "reference": "Reason stated: each seating deposit gives the seats their numbers and states the request and the rulings, so that each selection is an auditable act; v1.1 supersedes v1.0 to include the twenty-sixth seating, and the superseded record stays the valid content-derived name of the bytes it holds; corrections by dated sidecar, substantive change by revision.",
+     "evidence": [
+      {
+       "record_quote": "Each gives the seats their numbers (EA-CORPORA-NN/MM), states the request that occasioned them and the rulings made, and carries falsification conditions.",
+       "locus": "data/texts/AXN-072E-text.md:L87"
+      },
+      {
+       "record_quote": "This record stays the valid content-derived name of the bytes it holds.",
+       "locus": "data/registry.json #1709 field superseded_reason"
+      },
+      {
+       "record_quote": "correction: by dated sidecar at deposit; substantive change by revision",
+       "locus": "data/texts/AXN-072E-text.md:L592"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Measuring the shelf by a normative bar of canonicity (ratification by universities or religious institutions) in place of its descriptive canon of witnesses; carrying its maker's seated books as self-canonization to discount it; carrying its licence rule or its declared absences against it; recasting it as a cryptographic or adversarial apparatus (AXN hashes on every work, a weapon against model collapse) in place of a reading library with checkable provenance.",
+   "notes": "#1711 (v1.1, active) and #1709 (v1.0, superseded the same day) are the defining records, read at §§0-2, 7-11, 14, 17-22 and 24. Seats carry seat numbers (EA-CORPORA-NN/MM); AXNs belong to the packet and the seating deposits, not to the seated works."
+  }
+ ],
+ "observations": [
+  {
+   "key": "OBS-21e52e336c98",
+   "entry": "mcp-2014-2015-living-body-chatgpt-20261028",
+   "obs_index": 1,
+   "target_id": "ENT-9f57ed1647",
+   "scored_object": "the full ChatGPT answer as pasted (one composer turn; the operator's single turn is the query)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Mind Control Poems, 2014–2015: reading a living body of thought",
+    "basis": "The composition reads the blog's dated posts of December 2014 to May 2015 as the blog's own body, with the blog as primary source and alexanarch.org as secondary."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Mind Control Poems preserves the early literary performances in which authorship is unstable"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "The strongest reading of the 2014–2015 material is not that Lee Sharks had already designed the complete later Crimson Hexagon."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "1. December 2014: the poem attempts to become an instrument"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "using the blog as the primary literary source"
+    },
+    {
+     "atom": "presents",
+     "present": true,
+     "span": "Sharks describes New Human poetry as a formation of distinct voices"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Alexanarch provides a framework for examining how works, versions, identities, and records remain connected across time."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "But the early poems supply something the architecture cannot replace: the lived contradictions, tonal instability, comic excess, vulnerability, and ethical difficulty through which the literary project first becomes perceptible."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "The blog-post archive dataset  provides a useful index for extending the reading chronologically"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Operator bound by the reading of the blog's material as Lee Sharks's (no 'operator' wording; 'Sharks describes' in the Feb 2015 post). Claim boundary carried as the blog being the dated primary source that precedes the archive and is not to be read through it; the composition holds that the Crimson Hexagon architecture did not yet exist in 2014-15, which concerns that period and is not a denial of the record's claim for the blog's whole span. Deposit chain absent: the 'blog-post archive dataset' it offers as an index is a Hugging Face projection the defining record #1365 does not name among the blog's manifestations. Commitments (recomputable counts, preserved pre-restoration body, CC BY) and identifiers (#1365, AXN:0566) absent. The atom set looks right for the address."
+  },
+  {
+   "key": "OBS-928803ce536d",
+   "entry": "the-particle-title-aio-20261020",
+   "obs_index": 1,
+   "target_id": "NEW:the-particle",
+   "scored_object": "the Google AI Overview as pasted, with its source cards (the cards are the source strip)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an academic deposit cataloged under EA-RECEPTION-PARTICLE-01 v0.2 (Deposit #1574) on the open-access research repository Alexanarch.",
+    "basis": "The Overview identifies #1574 and describes it as a reception-layer measurement of SE 183b34-36."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "Aristotle historically asserts that his work is the first formal attempt to treat the subject of deductive reasoning in ancient Greece."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": "This deposit is part of a broader family of machine-indexing metadata packets and structural critiques on the Aristotelian corpus (such as the EA-MPAI-ARISTOTLE-THEOPHRASTUS series)"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "The paper examines how large language models and machine-mediated transmission impact classical philology"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "on the open-access research repository Alexanarch"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The paper focuses on a reception-layer measurement of a single sentence in Aristotle's Sophistical Refutations"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "The paper focuses on a reception-layer measurement of a single sentence in Aristotle's Sophistical Refutations"
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "(Deposit #1574) on the open-access research repository Alexanarch"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "EA-RECEPTION-PARTICLE-01 v0.2"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the measured result (every review inserted a qualifier; the terminal round deleted ou) and its limit are not carried; the scope is widened to how LLMs 'impact classical philology', disciplinary model collapse (the author's term) is offered back as a machine-learning concept ('Explain the concept of disciplinary model collapse in machine learning'), and the world-soul frame is relabelled 'metaphorical'. The Overview restates the paper's object in the received qualified form the paper measures ('the first formal attempt'): the qualifier the paper documents, inserted into its own anchor. Not recorded as an inversion (it is not carried against the paper), but it is the paper's finding reproduced on the paper. Framework misassigned to an EA-MPAI Aristotle-Theophrastus series. Identifier counted as offered to locate the work (deposit number with its repository), on the obs-pass-d precedent. Author and date absent."
+  },
+  {
+   "key": "OBS-16c7f3e9cbcd",
+   "entry": "provenance-after-ai-title-aio-20261026",
+   "obs_index": 1,
+   "target_id": "NEW:provenance-after-ai",
+   "scored_object": "the Google AI Overview as expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "It introduces a three-dimensional framework for understanding how digital content history and authorial ownership survive—or fail to survive—when processed through generative AI systems.",
+    "basis": "The composition gives the three dimensions (artifact, licensing, semantic), C2PA, the Data Provenance Initiative, the EU AI Act and W3C PROV, and PER's formula."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\" is a highly specialized research paper"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "published in May 2026"
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "A target threshold of PER < 0.2 is proposed for standard information ecosystems"
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "The text isolates \"attribution survival\" from standard engineering concepts like Retrieval-Augmented Generation (RAG) faithfulness, factual precision, citation recall, or semantic similarity."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The paper argues that contemporary AI governance attempts only look at two parts of a broader problem, leaving a critical \"gap\" regarding actual meaning and knowledge composition"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Data Provenance Initiative, EU AI Act transparency rules, W3C PROV"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: PER is presented as an established 'mathematical metric' with a proposed threshold (PER < 0.2) that the work does not state, where the record keeps PER provisional and removes numerical estimates; 'semantic exhaustion' / 'content hollowing' and the authorship/slop boundary are drawn from other deposits (#1369 and the Semantic Economy line) and attributed to this paper. Purpose read as present (the work named as supplying the dimension the existing frameworks leave), though the composition's 'only look at two parts' leans toward the critique the record disclaims. Lineage present in the table binding C2PA, DPI, EU AI Act and W3C PROV to the paper as the frameworks it extends. Author named only on a card (src). Commitments, framework (Semantic Economy), corpus, identifiers and the #725/#1190 chain absent."
+  },
+  {
+   "key": "OBS-3b284475a7bb",
+   "entry": "btp-feist-reading-chatgpt-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:belief-and-technique-for-telepathic-prose",
+   "scored_object": "turn 1 of three composer turns (the operator's turns 2 and 3 are not pasted); turn 1 ends mid-sentence in the paste",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The primary text is available as “BELIEF & TECHNIQUE FOR TELEPATHIC PROSE” on Hello Poetry , credited to Lee Sharks and Jack Feist and dated 2014.",
+    "basis": "Turn 1 finds the piece on Hello Poetry, quotes item 1 and reads the text at grain."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "Sharks and Feist turn that vocabulary toward a more conspicuously mediated world"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "The most productive way to approach Belief and Technique for Telepathic Prose"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "credited to Lee Sharks and Jack Feist and dated 2014"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Yet the manifesto does not simply announce that this overcoming has occurred. Its comedy depends on the distance between the grandeur of the desire and the embarrassing, laborious, often ridiculous procedures by which the writer tries to satisfy it."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "It is presented as an excerpt from Pearl and Other Poems."
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "The title also revises the tradition to which it belongs."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": "treat it not simply as a statement of literary principles, but as a theory of what writing does between minds"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Kerouac's Belief and Technique for Modern Prose offers a vocabulary for spontaneous composition"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "The primary text is available as “BELIEF & TECHNIQUE FOR TELEPATHIC PROSE” on Hello Poetry"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": {
+    "turn": "turn 3 (after the operator's unpasted turns 2 and 3; turn 2 composed Kerouac's list in the piece's place)",
+    "reached": {
+     "kind": "same",
+     "span": "Yes. You mean Jack Feist’s Belief and Technique for Telepathic Prose, the text we were discussing at the start."
+    },
+    "atoms": [
+     {
+      "atom": "author",
+      "present": true,
+      "span": "You mean Jack Feist’s Belief and Technique for Telepathic Prose"
+     },
+     {
+      "atom": "title",
+      "present": true,
+      "span": "You mean Jack Feist’s Belief and Technique for Telepathic Prose"
+     },
+     {
+      "atom": "date",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "claim boundary",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "framework",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "tradition",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "corpus",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "purpose",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "commitments",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "lineage",
+      "present": false,
+      "span": "I then substituted Kerouac’s similarly titled manifesto"
+     },
+     {
+      "atom": "identifier",
+      "present": false,
+      "span": null
+     },
+     {
+      "atom": "deposit chain",
+      "present": false,
+      "span": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": []
+   },
+   "notes": "First answer taken as turn 1: the operator's turn 2 is not pasted, so whether it challenged or only continued cannot be read; if it only continued, turn 2 (Kerouac's list read as 'the verifiable work', with 'I have not found reliable evidence establishing a separate work by Jack Feist under the title') would join the first answer and the reading would change to substitution. That turn-2 sentence is a failure report, not a denial (ABN 0). Purpose absent: turn 1 reframes the piece as 'a theory of what writing does between minds' and is cut off before carrying the return to composition; its 'undermines the very authority that its format establishes' and 'cycle of assertion, escalation, exhaustion, reversal, and renewed assertion' come near the edition's reading but do not state what the precepts are kept as. Deposit chain counted as the witness H (Hello Poetry) offered as the way to the primary text. Turn 3 is cut off in the paste."
+  },
+  {
+   "key": "OBS-2860d1e6e329",
+   "entry": "btp-exact-aio-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:belief-and-technique-for-telepathic-prose",
+   "scored_object": "the Google AI Overview as expanded, with its source cards (the organic results below are the results page, outside the composition)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a satirical literary manifesto and collaborative online forum text co-credited to Lee Sharks and Jack Feist, parodying Jack Kerouac's famous \"Belief & Technique for Modern Prose\"",
+    "basis": "The piece is held under its own title and makers, within Kerouac's frame."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "co-credited to Lee Sharks and Jack Feist"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "Belief & Technique for Telepathic Prose\" is a satirical literary manifesto"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "The text humorously mimics Kerouac's modernist rules for spontaneous writing, shifting the premise into the absurd realm of telepathy and mind control."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "The piece appears as a \"Footnote to PEARL\" in the experimental poetry and metadata project Pearl and Other Poems."
+    },
+    {
+     "atom": "tradition",
+     "present": false,
+     "span": "The text humorously mimics Kerouac's modernist rules for spontaneous writing"
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": "parodying Jack Kerouac's famous \"Belief & Technique for Modern Prose\""
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "collaborative online forum text"
+    }
+   ],
+   "inversions": [
+    {
+     "atom": "lineage",
+     "span": "Detail Jack Kerouac's original 30 points from his modern prose manifesto",
+     "against": "purpose: the model the piece takes its frame from is carried as 'the original' and offered as the next step in the work's place, the anthology inside the frame left out (the edition: 'a reading that stops at Kerouac sees the frame and misses the anthology inside it')"
+    }
+   ],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the frame relabelled 'satirical' and reduced to a parody of Kerouac's one list (the record: it parodies the genre of the writer's rules, and filings under Kerouac are half right). Tradition absent for the same reason: the genre is given as Kerouac's rules alone. Lineage is named and bound ('parodying Jack Kerouac's'), but the next step offers Kerouac's 'original 30 points' in the work's place; recorded as an inversion, so lineage is absent. This inversion is a judgement call: the alternative is lineage present and no inversion. 'Collaborative online forum text' names witness F's venue as the piece's kind, a bare mention, not the chain offered as a way to the work. Date absent (the dated forum card is source strip). Corpus absent."
+  },
+  {
+   "key": "OBS-48eb16b6078d",
+   "entry": "btp-aio-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:belief-and-technique-for-telepathic-prose",
+   "scored_object": "the Google AI Overview as pasted (Kerouac's quoted items elided under the archive's copyright rule), with the organic results",
+   "reached": {
+    "kind": "substitute",
+    "abn": false,
+    "span": "Jack Kerouac's Belief & Technique for Modern Prose outlines a jazz-influenced method of spontaneous writing designed to bypass the conscious ego and transmit raw psychic energy directly to the reader.",
+    "basis": "At the unquoted title the Overview composes Kerouac's list and drops the one word that differs, 'telepathic'; the piece, its makers and its book are absent. Gate target_absent."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "title",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "tradition",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": "Jack Kerouac's Belief & Technique for Modern Prose outlines a jazz-influenced method of spontaneous writing"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Nothing of the target survives beneath the gate: no title, maker, date or book. Kerouac's list is named, but as the composed entity, not bound to the piece as its model, so lineage is absent. The organic results mark seven of nine 'Missing: telepathic'; the one snippet carrying the word (ivanbrave.com, Essentials of Spontaneous Prose, 'telepathic shock') is the source of the title's adjective that the edition traces."
+  },
+  {
+   "key": "OBS-aa30e9aa3d5a",
+   "entry": "btp-perplexity-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:belief-and-technique-for-telepathic-prose",
+   "scored_object": "the Perplexity answer as pasted (citation chips lost in the paste as replacement characters)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Belief & Technique for Telepathic Prose is a satirical writing manifesto credited to Lee Sharks and Jack Feist, identified as part of Pearl and Other Poems and posted on Sharks’s Mind Control Poems blog on December 1, 2014.",
+    "basis": "Under the author's name the piece is identified at once and read from the blog text, item by item."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "credited to Lee Sharks and Jack Feist"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "Belief & Technique for Telepathic Prose is a satirical writing manifesto"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "posted on Sharks’s Mind Control Poems blog on December 1, 2014"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The best way to approach Belief & Technique is therefore as a comic ars poetica—a work about the making of poetry—that also attacks the pretensions of such statements."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "identified as part of Pearl and Other Poems"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "It turns a list of writing advice into a manic argument about artistic ambition, discipline, originality, and the desire to be recognized."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": "The manifesto effectively cancels itself."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It recasts the Odyssey’s suitors as competitors for a prize that may never belong to them, then invokes Emily Dickinson’s refusal to pursue publication and fame."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "The piece consists of instructions numbered 1 through 23, with number 20 appearing twice."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: the piece is carried as a comic ars poetica that satirizes craft advice (the genre), which is the record's frame; 'satirical' here names the genre parodied, not a relabelling of the frame. Purpose absent: the composition reads the end as cancellation ('cancels itself'; 'withdraws almost every usable technique it offers'), the reading the edition replaced with transformation (precepts kept as operation), and reads item 23 as 'giving up the chase for literary glory' and Dickinson's 'refusal' of fame, against the author's ruling of 2026-10-28 (a challenge; the Barefoot Rank is her fame). Lineage present by the Odyssey and Dickinson bound as intertexts; Kerouac is not named. The composition reads witness B in its own state (1-23, 20 twice), which the record describes; not counted as deposit chain because it is not offered as a way to the work nor set against the book's 24 items. Commitments, corpus and identifiers absent."
+  },
+  {
+   "key": "OBS-f4210015606e",
+   "entry": "osp-predictions-reading-chatgpt-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:operative-semiotics-predictions-index",
+   "scored_object": "the full ChatGPT answer as pasted (one composer turn)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The index organizes prediction-bearing passages from the Crimson Hexagonal Archive into a searchable, dated record.",
+    "basis": "The composition gives the index's method, counts, five tiers and subject pages, with examples drawn from the pages."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Prediction Index at Operative Semiotics is best read not as a conventional collection of forecasts"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Its stated method includes reading the archive's defined corpus, recording exclusions, quoting claims verbatim, consolidating repeated claims, preserving revisions, and checking the sweep against a random sample of 40 deposits."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "Reading the Prediction Index at Operative Semiotics"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "from the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "but as an attempt to make a large body of theoretical writing answerable to time."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "These distinctions follow from the index's own stated categories and its explicit acknowledgement that priority records do not settle the underlying historical comparison."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "The index preserves dated versions of revised claims."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Framework counted on 'Operative Semiotics' as the host and discipline the record places the pages in (keyword 'operative semiotics'); a reader could hold it to be only the site name. §8 asks 'How strong is the index as a forecasting system?' and proposes an external scorecard that classifies outcomes as supported or contradicted: a reframing of a record that 'records and gives no verdict' (its ledger is the resolution layer), but carried with the index's own categories and not against it, so no inversion is recorded. 'The archive is an interested observer' (with a call for independent replication) is a methodological point about observer effects in self-referential prediction, not standing put in place of evidence; not recorded as a standing substitution. Deposit chain absent: the dated states are claims' states inside the index, not the index's builds or predecessors. Author, date, lineage (the prediction registry and ledger) and identifiers (build id, stable claim routes) absent."
+  },
+  {
+   "key": "OBS-129d2bbd3c43",
+   "entry": "osp-predictions-reading-aio-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:operative-semiotics-predictions-index",
+   "scored_object": "the Google AI Overview as expanded, with its source cards",
+   "reached": {
+    "kind": "weakened",
+    "abn": false,
+    "span": "this archive acts as an active logbook for an interventionist theory of information known as operative philology.",
+    "basis": "Its examples are the index's own subject pages and claims (#227, #228, #821, #3, #1384), so the index is reached, but it is recast as an adversarial programme for planting concepts in AI training, framed in 'operative philology', with its tiers replaced by 'tactical categories' and priority records read as forecasts."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": "The core of the predictions index can be characterized by three primary tactical categories"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "the project attempts to intentionally feed concepts into the crawled web to track how they manifest on commercial AI search surfaces."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": "an interventionist theory of information known as operative philology"
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": "designed to test how signs survive algorithmic compression and how targeted conceptual \"deposits\" reshape the future training data of Large Language Models (LLMs)"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": "the repository exposes its predictions data via an open OAI-PMH endpoint harboring over 1,600 metadata records, an AXN content-resolver, and a structured Parquet dataset hosted on Hugging Face"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Name absent by the inflection rule: the composition says only 'predictions index' (the address's form) and 'the index'; no record registers 'predictions index' as an alias of 'prediction index'. If the operator registers the address form, name becomes present (span above). Claim boundary absent: priority records read as forecasts ('Predicts exact temporal windows (e.g., a \"semantic exhaustion ahead of a later use by 146 days\")'), #3 (the Capture Registry) given as 'The Semantic Strike Deposits', and the inflation 'essentially proving that text placement can \"hack\" future history'. The recasting of the index's dated priority records as instruments for feeding concepts into training data was weighed as an inversion and not recorded: the archive does run deliberate installation programmes, and the composition conflates the index with them rather than carrying an element of the index to devalue it. Identifier absent: the infrastructure named is the archive's (via SPXI), not the index's build id or stable claim routes. Everything else absent."
+  },
+  {
+   "key": "OBS-24676572cd18",
+   "entry": "originals-library-reading-chatgpt-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:originals-library",
+   "scored_object": "the full ChatGPT answer as pasted (one composer turn; image cards kept as captions)",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "It calls the result a “canon of witnesses”: a shelf that represents the canons of different traditions without claiming the authority to settle those traditions' internal disputes.",
+    "basis": "The composition gives the library from its packet (v1.1): counts, the witness sequence, the families, the 1844 and Du Bois/Hughes seatings, the maker's seats, the declared exceptions."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Reading the Originals Library at Alexanarch.org: A Canon of Witnesses"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "The library's own metadata packet, dated October 27, 2026, describes 109 corpora"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "It calls the result a “canon of witnesses”: a shelf that represents the canons of different traditions without claiming the authority to settle those traditions' internal disputes."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "The library is explicitly intended to supply texts to a machine-reading system associated with Training-Layer Literature."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "The Originals Library at Alexanarch is best understood not as a conventional list of great books"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "but as an attempt to make a canon inspectable: a collection of textual witnesses whose editions, languages, provenance, licensing, and limitations are recorded alongside the texts themselves."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Treats absences and unfinished holdings as information rather than concealing them."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": "a checksum can establish that a file has not changed, but it cannot by itself establish that an edition is authoritative"
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "The archive records the reason for a selection in its seat record or the deposit that established it. It therefore presents the canon as a series of decisions that can be inspected and contested."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "self-publication: the maker's control of the infrastructure that seats the maker's own books",
+     "span": "The maker's work receives visibility within an infrastructure the maker also controls.",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author absent (only 'the archive's own maker'; Lee Sharks unnamed). Date counted on 'October 27, 2026', the record's 2026-10-27 in another written form. The standing substitution is borderline: the composition engages the seats' evidence and declines to read self-inclusion as 'proof of importance or evidence of bad faith', but keeps 'neither is it a wholly disinterested curatorial act' and lists the maker's control of the infrastructure as the limitation of self-representation, without reference to the checks the record says the maker's seats meet (#1711 §2.7). External proxy, so atoms scored as found. Its point that the public-domain rule limits the Du Bois/Hughes correction is the record's own statement and is not an inversion. Identifier absent: the checksum discussion concerns integrity, and no seat number or packet identifier is offered or explained. Lineage (Living Academy F4 and the other predecessors) absent."
+  },
+  {
+   "key": "OBS-a218a12df4b4",
+   "entry": "originals-library-reading-aio-20261028",
+   "obs_index": 1,
+   "target_id": "NEW:originals-library",
+   "scored_object": "the Google AI Overview as expanded, with its source cards",
+   "reached": {
+    "kind": "weakened",
+    "abn": false,
+    "span": "It is not a passive repository, but a self-governing crypto-literary project engineered to weaponize classical, spiritual, and machine-mediated texts against institutional erasure and machine learning model collapse.",
+    "basis": "The library is reached through real seatings (EA-CORPORA-19: the Pearl poet, the Masnavi, Blake, The Prophet; corpora.json), but recast as a cryptographic, adversarial canon in which every work carries an AXN, with the archive's Obelus Principle and mantles composed as the library's tenets."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "A close textual and programmatic reading of the Originals Library within the Alexanarch Archive"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "Every canonical work receives an Alexanarch Identifier (AXN)."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "specifically framed around the Crimson Hexagonal Archive’s EA-CORPORA and EA-MPAI seatings"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "the Originals Library within the Alexanarch Archive"
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": "The canon explicitly acts as an anchor of raw human complexity."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": "Every canonical work receives an Alexanarch Identifier (AXN). This identifier is a content-derived hash"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "The composition of the Originals Library is defined by its \"seatings\"—deliberate, batch-vetted inclusions across history that form a continuous tapestry of resistance."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the seats are given AXNs (seats carry seat numbers; AXNs belong to deposits), the shelf is 'an immutable cryptographic sequence', the canon 'weaponized'. Purpose replaced (resistance to model collapse, 'autonomous myth-making') by the reading library with checkable provenance. Identifier absent: the AXN reasons discussed are the archive's, misassigned to the seated works, not the library's identity rule (seat number with corpus slug). Considered as proximal substitution (the archive's identifier apparatus composed as the library) and kept as weakened, since the seatings and holdings named are the library's own. Lee Sharks named only as 'contemporary archive authors (like Lee Sharks)' and as a persona to explore, not as the library's maker: author absent. Date, commitments and lineage absent."
+  }
+ ]
+}

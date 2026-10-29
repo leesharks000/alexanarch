@@ -80,7 +80,110 @@
  },
  "per_note": "MIT named; no person; no identifier; the initiative's home page and paper cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "TGT-data-provenance-initiative",
+   "name": "Data Provenance Initiative"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The [Data Provenance Initiative]"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is a multi-institutional research project—led in part by researchers from MIT—that audits the datasets, licenses, and web domains used to train artificial intelligence models."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.722
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a multi-institutional research project—led in part by researchers from MIT—that audits the datasets, licenses, and web domains used to train artificial intelligence models.; The Initiative is composed as itself: its audits, its four systems and the founding audit's findings.",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Founder absent: no maker is named; 'led in part by researchers from MIT' recasts the record's volunteer collective of AI researchers (F45; F40 'a multi-disciplinary volunteer effort') as a 'multi-institutional research project' led from MIT, a borrowing of the MIT Sloan card's framing (F23). This is an institutional anchoring of the collective, recorded here, not used to evaluate the work, so no standing substitution. Claim boundary read present: the audits of datasets, licences and web domains and the four systems carry its scope; the 'not legal advice' limit is not carried. Purpose absent: the composition gives what it does (audits, tools, findings), not what it is for (transparency, documentation and responsible use; shared public evidence). The findings are the founding paper's (70%+ omission, 50%+ error, the commercial divide, the non-commercial spike) and are carried as findings. The Explorer is offered at the close ('explore how to use the Data Provenance Explorer'), a component, not the release chain."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -161,6 +264,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0ACD.CAPTURE",
- "axn": "AXN:0ACD.CAPTURE.🍃📖🍁❄️🔬💎",
+ "axn": "AXN:0ACD.CAPTURE.📝🗡️🌪️🔙🏙️🎺",
  "record_url": "https://www.alexanarch.org/captures/data-provenance-initiative-aio-20261029/"
 }

@@ -125,7 +125,102 @@
  },
  "per_note": "No person or institution named in the answer (Groth et al. 2010 appears only in a card); no identifier; nanopub.net cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-nanopublications",
+   "name": "Nanopublications"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "A nanopublication is the smallest independent unit of publishable scientific information"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Every nanopublication is built using Resource Description Framework (RDF) triples and consists of three mandatory parts:"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Citable and Attributed: Each nanopublication can be uniquely identified and tracked on a decentralized network, giving researchers credit for releasing granular data."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Publication Info: Metadata identifying the creator, creation timestamp, and reuse or licensing terms."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Every nanopublication is built using Resource Description Framework (RDF) triples"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Each nanopublication can be uniquely identified and tracked on a decentralized network, giving researchers credit for releasing granular data."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": null,
+   "D": 0.111,
+   "PER": 0.235
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: A nanopublication is the smallest independent unit of publishable scientific information, represented as a machine-readable knowledge graph snippet rather than a traditional research paper.; The publication model is composed as itself: an assertion published on its own, with its three parts, in RDF, citable and attributed, on a decentralized network.",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Producer absent: no proposer (Mons, Velterop, Groth) or community is named; 'platforms like Nanopublications' points to the site by a link. Claim boundary present: the definition, the three parts and RDF at the record's force; the composition narrows the assertion to 'A single, atomic scientific statement or claim' where the home page allows 'anything ... or an opinion', and states none of the limits (assertional scope, truth not settled), a narrowing rather than a relabelling. Identifier present by its reason (unique identification serving credit and tracking, calibration_rules_d), with no Trusty URI token. Commitments read present on the publication-info part carrying the reuse and licence terms as the model's own requirement; signing is not mentioned. 'Millions of nanopublications have been created' is uptake stated as a feature, not used to evaluate in place of argument; no standing substitution recorded."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -206,6 +301,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD2.CAPTURE",
- "axn": "AXN:0AD2.CAPTURE.🤝🖊️📝♎♻️■",
+ "axn": "AXN:0AD2.CAPTURE.🔝📋🔆🏁🌺🧲",
  "record_url": "https://www.alexanarch.org/captures/nanopublications-aio-20261029/"
 }

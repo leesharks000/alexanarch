@@ -152,7 +152,124 @@
  },
  "per_note": "Niels Rogge, Hugging Face and Meta named; no identifier; the revival's own repository and blog cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-papers-with-code",
+   "name": "Papers with Code"
+  },
+  "qualifier": null,
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Papers with Code is active"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "was abruptly shut down and sunsetted on July 24, 2025"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The original platform—which was acquired by Meta in 2019"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "If you are looking for the historical, unedited data dump from the original pre-2025 Meta platform, it is still preserved and frozen on the Papers with Code Archive on GitHub."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "For active daily tracking of machine learning research paired with implementations, you should use the new paperswithcode.co site.",
+    "against": "The target's purpose (exploring and discovering research with its code and results) is carried in the target's name to the revival, a separate entity, and that operation is offered in the target's place; the opening 'Yes, Papers with Code is active' sets the name against the record's lifecycle (ended 24 July 2025)."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.556,
+   "C": 0.0,
+   "D": 0.889,
+   "PER": 0.65
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Yes, Papers with Code is active, but it has undergone a complete transformation and revival.; The target is present (the original platform, acquired by Meta in 2019, sunset on 24 July 2025, its frozen data dump) and is merged as one with the revival at paperswithcode.co, a separate entity by the census ('the revival at paperswithcode.co is a separate entity'): the revival's domain, team, Apache 2.0 licence and agent curation are carried as the status of 'Papers with Code'.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: 'active' against 'ended'; the 'iconic state-of-the-art (SOTA) leaderboards' carried as live at the revival. Commitments absent: the licence given is the revival's Apache 2.0 ('Hugging Face recently open-sourced the entire platform codebase'); the original's CC BY-SA data and its 'neutral, open and free' commitment are not carried. Deposit chain present: the frozen data dump is offered as the way to the original's data. Identifier absent: no repository identifier, only 'the Papers with Code Archive on GitHub' (named, not identified). Founders absent; the revival's 'Niels Rogge' is the only person named. The archive is live, not a tombstone. The inversion is recorded on purpose; the name is not scored as inverted, since it is also carried for the original ('The original platform')."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -233,6 +350,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AAD.CAPTURE",
- "axn": "AXN:0AAD.CAPTURE.👁️🔄🎲💥🌒🔙",
+ "axn": "AXN:0AAD.CAPTURE.🐝🧬🦅🤲📏📖",
  "record_url": "https://www.alexanarch.org/captures/is-papers-with-code-still-active-aio-20261029/"
 }

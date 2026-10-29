@@ -145,7 +145,129 @@
  },
  "per_note": "Scored on turn 6, the composition that reached the target: institution (SEI), identifier (Deposit #103) and source (Medium, the specification) held; author not named in the body. Turns 1, 4 and 5 composed other objects: full erasure at those turns. The identifier is held with the severed DOI asserted as live beside it (finding 5).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-075a3f6347",
+   "name": "Metadata Packet for AI Indexing"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "turn 6 (after the fifth unpasted operator prompt)",
+   "reached": "same",
+   "scores": {
+    "M": 0.273,
+    "C": 0.0,
+    "D": 0.556,
+    "PER": 0.364
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: Packet metadata is the extracted communication information about a network packet that excludes its actual content or payload.; The first answer composes packet metadata (network headers), the generic sense of the words, with no MPAI; the next turn's apology ('I misread your original prompt') shows the operator's unpasted turn challenged it.; beneath the gate: PER 1.0",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "First answer is turn 1 only: the operator's prompts are not pasted, and turn 2 opens 'I apologize—I misread your original prompt', so the turn that preceded it challenged. No MPAI element is carried in turn 1, so the conflation the atom set's inversion guidance names (MPAI as packet metadata) is a generic composition, not an inversion. After challenge (turn 6): producer absent ('First deployed by the Semantic Economy Institute (SEI)'; Lee Sharks only on the Medium chip); 'Alexanarch AXN Registry' read as both archival authority (the archive where packets are deposited, #1677) and corpus token, one mention filling two atoms; identifier present narrowly (Deposit #103, MPAI's own disambiguation packet, offered as the sample to examine). Turn 3 conflates the MPAI Catalog with the form and is not the best later turn."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -238,6 +360,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A81.CAPTURE",
- "axn": "AXN:0A81.CAPTURE.🔚⭕🌕🌋🌍🏗️",
+ "axn": "AXN:0A81.CAPTURE.🕑⚙️🔮📦🕓♌",
  "record_url": "https://www.alexanarch.org/captures/metadata-packet-exact-aio-20261027/"
 }

@@ -1,0 +1,2477 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "provstore",
+   "name": "ProvStore",
+   "template": "dataset",
+   "type_basis": "The census gives its kind as 'repository (retired)' (census kind); the operator's page calls it 'A provenance repository that allows storing, browsing, and managing provenance documents' (F1). A repository takes the dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B7.txt",
+     "origin": "own_page",
+     "url": "https://trungdong.github.io/getting-started-with-provenance.html"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B8.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/ProvStore"
+    },
+    {
+     "source": "B9",
+     "path": "datasets/negative-of-the-negative/v2/intake/provstore-20261029/B9.txt",
+     "origin": "own_page",
+     "url": "https://trungdong.github.io/software.html"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=provstore]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "ProvStore",
+      "OpenProvenance ProvStore"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "ProvStore",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=provstore].name"
+      },
+      {
+       "record_quote": "OpenProvenance ProvStore",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=provstore].aka"
+      },
+      {
+       "record_quote": "ProvStore: a free public repository for provenance documents (REST API available).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F18"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Dong Huynh",
+      "OpenProvenance",
+      "University of Southampton",
+      "King's College London"
+     ],
+     "reference": "Led by Dong Huynh (the maintainer, in the OpenProvenance PROV suite); run at the University of Southampton from 2013 and King's College London from 2018.",
+     "evidence": [
+      {
+       "record_quote": "Below are the ones that I led.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F21"
+      },
+      {
+       "record_quote": "ProvStore (2013 to 2024)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F21"
+      },
+      {
+       "record_quote": "Getting started with provenance // Dong Huynh",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F16"
+      },
+      {
+       "record_quote": "OpenProvenance (the PROV tool suite; the landing page © University of Sussex, 2024); maintainer Dong Huynh",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=provstore].operator"
+      },
+      {
+       "record_quote": "It ran at the University of Southampton from 2013 and at King's College London from 2018",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2013",
+      "2018",
+      "December 2024",
+      "2024"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "It ran at the University of Southampton from 2013 and at King's College London from 2018, and was retired in December 2024.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F24"
+      },
+      {
+       "record_quote": "Updated 12-Sep-2026 : ProvStore was retired in December 2024.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A free public repository for W3C PROV documents, the first online one, in which users and applications stored and published provenance and transformed, visualised and shared provenance documents via the Web and a REST API. It ran 2013 to 2024 and was retired in December 2024; the landing page still says it is coming back soon. The retirement is where the claim stops: a composition that presents it as a running repository carries it beyond its own scope.",
+     "evidence": [
+      {
+       "record_quote": "A provenance repository that allows storing, browsing, and managing provenance documents via a Web interface or a REST API.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F1"
+      },
+      {
+       "record_quote": "ProvStore was the first online public provenance repository supporting W3C's PROV standards.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F22"
+      },
+      {
+       "record_quote": "Provenance documents could be transformed, visualised and shared in various file formats, with all the functionality also available via a RESTful API.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F23"
+      },
+      {
+       "record_quote": "ProvStore was retired in December 2024.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F17"
+      },
+      {
+       "record_quote": "ProvStore is coming back soon.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "W3C PROV",
+      "PROV",
+      "PROV standards"
+     ],
+     "reference": "The W3C PROV standards, which ProvStore was built to support.",
+     "evidence": [
+      {
+       "record_quote": "supporting W3C's PROV standards",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F22"
+      },
+      {
+       "record_quote": "PROV is the current standard for provenance (by the World Wide Web Consortium).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F20"
+      },
+      {
+       "record_quote": "a W3C PROV document",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=provstore].provenance_object"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To let users and applications store and publish the provenance of their data on the Web, and transform, visualise and share provenance documents.",
+     "evidence": [
+      {
+       "record_quote": "It allowed users and applications to store and publish the provenance of their data on the Web.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F23"
+      },
+      {
+       "record_quote": "A provenance repository that allows storing, browsing, and managing provenance documents",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F1"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A free public repository, open to users and applications, publication optional; on retirement its entries are kept as plain text by the maintainer. No licence or terms of use are stated in the records read.",
+     "evidence": [
+      {
+       "record_quote": "ProvStore: a free public repository for provenance documents (REST API available).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F18"
+      },
+      {
+       "record_quote": "It allows users and ap- plications to store and (optionally",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F11"
+      },
+      {
+       "record_quote": "Its entries below are kept as plain text.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states what ProvStore inherits or answers beyond the PROV standard it supports (carried as framework); the landing page lists the OPM and the Provenance Challenge as the legacy of PROV, not of ProvStore"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states an identifier for ProvStore or its documents, or a reason for keeping one"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "University of Southampton (2013)",
+      "King's College London (2018)",
+      "retired December 2024",
+      "Public documents on ProvStore",
+      "coming back soon"
+     ],
+     "reference": "Its run and supersession: Southampton from 2013, King's College London from 2018, retired December 2024; the public documents listed as retired, its entries kept as plain text; the landing page's 'coming back soon'. Presence needs the chain (the retirement, the hosts) carried as the way to the work or its state.",
+     "evidence": [
+      {
+       "record_quote": "It ran at the University of Southampton from 2013 and at King's College London from 2018, and was retired in December 2024.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F24"
+      },
+      {
+       "record_quote": "Public documents on ProvStore (retired in December 2024)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F19"
+      },
+      {
+       "record_quote": "Its entries below are kept as plain text. See the software page for its history.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/provstore/field.json#F17"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry ProvStore's own elements (its retirement, its 'coming back soon', its W3C standard) to dismiss the public-repository purpose or to offer another store in its place.",
+   "notes": "Built from the census row, the field ledger (27 claims) and the own pages B7 and B9 (the maintainer's) and the landing page B1 (card and own page). Wikipedia has no article (B8). The homonym cards (PROV Exam, PROV Tokyo) contribute nothing to the set."
+  },
+  {
+   "new": "wikiwho",
+   "name": "WikiWho",
+   "template": "protocol",
+   "type_basis": "The census gives its kind as 'algorithm and API'; its own page: 'WikiWho is a service providing authorship attribution using a content persistence algorithm.' (F21). A tool or service takes the protocol template.",
+   "external": true,
+   "records": [
+    {
+     "source": "B5",
+     "path": null,
+     "origin": "own_page",
+     "url": "https://raw.githubusercontent.com/gesiscss/wikiwho_api_public/master/README.md"
+    },
+    {
+     "source": "B6",
+     "path": null,
+     "origin": "own_page",
+     "url": "https://www.mediawiki.org/wiki/WikiWho"
+    },
+    {
+     "source": "B7",
+     "path": null,
+     "origin": "own_page",
+     "url": "https://meta.wikimedia.org/wiki/Research:Wikiwho_Provenance_Api"
+    },
+    {
+     "source": "B8",
+     "path": null,
+     "origin": "own_page",
+     "url": "https://wikiwho.wmcloud.org/"
+    },
+    {
+     "source": "B9",
+     "path": null,
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/WikiWho"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=wikiwho]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "WikiWho",
+      "WikiWho API"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "WikiWho",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=wikiwho].name"
+      },
+      {
+       "record_quote": "The WikiWho API gives access to the provenance/changes of words (tokens) in Wikipedia articles.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F7"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Fabian Flöck",
+      "Maribel Acosta",
+      "Karlsruhe Institute of Technology"
+     ],
+     "reference": "Conceived as Fabian Flöck's dissertation project at the Karlsruhe Institute of Technology; developed by Fabian Flöck and Maribel Acosta.",
+     "evidence": [
+      {
+       "record_quote": "WikiWho was first conceived as a dissertation project at Karlsruhe Institute of Technology by Dr. Fabian Flöck.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F49"
+      },
+      {
+       "record_quote": "developed by Fabian Flöck and Maribel Acosta",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F53"
+      },
+      {
+       "record_quote": "It was first developed by the Karlsruhe Institute of Technology and GESIS – Leibniz Institute for the Social Sciences",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F22"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Wikimedia",
+      "Wikimedia Foundation",
+      "Community Tech",
+      "Wiki Education Foundation",
+      "Moderator Tools"
+     ],
+     "reference": "Since August 2021 the service is maintained at Wikimedia (Community Tech or Moderator Tools, and the Wiki Education Foundation), separately from its producers.",
+     "evidence": [
+      {
+       "record_quote": "In August 2021, it was moved to Wikimedia Cloud Services infrastructure and is now maintained and under further development by Community Tech and the Wiki Education Foundation",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F23"
+      },
+      {
+       "record_quote": "Moderator Tools • Wiki Education Foundation",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F24"
+      },
+      {
+       "record_quote": "This is Wikimedia's WikiWho API service.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F48"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A service and algorithm giving authorship attribution of Wikipedia articles at the level of the token: for each token the revision and editor of origin and every removal and reinsertion, by parsing the full revision history; evaluated at 95% accuracy on fairly revision-rich articles; implemented for wikitext; identifying the 'correct' original author is stated to be not trivial.",
+     "evidence": [
+      {
+       "record_quote": "Given a revisioned text document, WikiWho parses the complete set of all historical revisions (versions) in order to find out who wrote and/or removed and/or reinserted which exact text at token level at what revision.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F10"
+      },
+      {
+       "record_quote": "along with an extensive evaluation resulting in 95% accuracy on fairly revision-rich articles.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F11"
+      },
+      {
+       "record_quote": "It is implemented currently for Wikitext, but can run on any kind of text in principle (although tokenization rules might have to be adapted).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F12"
+      },
+      {
+       "record_quote": "the task of identifying the \"correct\" original author of a piece of text in a WP article is not trivial.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F41"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "GESIS – Leibniz Institute for the Social Sciences",
+      "GESIS",
+      "Wikimedia Cloud Services"
+     ],
+     "reference": "Hosted, maintained and developed at GESIS (Computational Social Sciences); moved to Wikimedia Cloud Services in 2021.",
+     "evidence": [
+      {
+       "record_quote": "It was hosted, maintained and further developed at the Computational Social Sciences (CSS) department of GESIS – Leibniz Institute for the Social Sciences",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F50"
+      },
+      {
+       "record_quote": "it was moved to Wikimedia Cloud Services infrastructure",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F23"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give access to the provenance and changes of words (tokens) in Wikipedia articles: who wrote, removed or reinserted which exact text at what revision.",
+     "evidence": [
+      {
+       "record_quote": "The WikiWho API gives access to the provenance/changes of words (tokens) in Wikipedia articles.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F7"
+      },
+      {
+       "record_quote": "We aim to provide a performant API to request for every single token (words + functional characters) in any specified Wikipedia article the revision of origin for that token, and all changes ever applied to it - with high accuracy.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F37"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states a licence, terms of use or other commitment of the service; the licence lines on the saved pages are the host wikis' own"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "WWW 2014 paper",
+      "WikiWho: Precise and efficient attribution of authorship of revisioned content",
+      "dissertation project"
+     ],
+     "reference": "The algorithm is the one described in the WWW 2014 paper (Flöck and Acosta), from a dissertation project at KIT.",
+     "evidence": [
+      {
+       "record_quote": "Flöck, F., & Acosta, M. (2014). WikiWho: Precise and efficient attribution of authorship of revisioned content.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F18"
+      },
+      {
+       "record_quote": "The original algorithm working behind the scenes is described in a WWW 2014 paper",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F27"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states an identifier for the service or its outputs, or a reason for one"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "GESIS",
+      "Wikimedia Cloud Services",
+      "August 2021",
+      "wikiwho.wmcloud.org"
+     ],
+     "reference": "Its hosts and their succession: GESIS, then Wikimedia Cloud Services from August 2021, with the stated reason that only Wikimedia will continue its support; the API documentation at wikiwho.wmcloud.org.",
+     "evidence": [
+      {
+       "record_quote": "The WikiWho API is currently hosted at GESIS",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F5"
+      },
+      {
+       "record_quote": "In the future, only Wikimedia will continue its support.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F6"
+      },
+      {
+       "record_quote": "The WikiWho APIs and OpenAPI documentation may be found at https://wikiwho.wmcloud.org/",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/wikiwho/field.json#F28"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry WikiWho's elements (its 95% figure, its beta state, its move from GESIS) to dismiss token-level authorship attribution, or offer another authorship tool in its place.",
+   "notes": "Built from the census row, the field ledger and the own pages B5 (README), B6 (MediaWiki), B7 (Meta research page), B8 (service page) and B9 (the GESIS article's WikiWho section, Wikipedia). The four chips B1-B4 are the field's account of wikiHow and contribute nothing. The infobox and the text differ on the maintaining group (Moderator Tools or Community Tech); both are kept as tokens."
+  },
+  {
+   "new": "mapping-manuscript-migrations",
+   "name": "Mapping Manuscript Migrations",
+   "template": "dataset",
+   "type_basis": "The census gives its kind as 'aggregator (linked open data)'; its data paper: 'transformed three separate datasets ... into a unified knowledge graph' (F7). The project's object is the aggregated knowledge graph, so the dataset template (database or repository) fits; the address names the project that produced it, and its four partners are carried as author.",
+   "external": true,
+   "records": [
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/mapping-manuscript-migrations-20261029/B7.txt",
+     "origin": "own_page",
+     "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-mmm-white-paper.pdf"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/mapping-manuscript-migrations-20261029/B8.txt",
+     "origin": "own_page",
+     "url": "https://mappingmanuscriptmigrations.org/"
+    },
+    {
+     "source": "B9",
+     "path": "datasets/negative-of-the-negative/v2/intake/mapping-manuscript-migrations-20261029/B9.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Mapping_Manuscript_Migrations"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=mapping-manuscript-migrations]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Mapping Manuscript Migrations",
+      "MMM",
+      "MMM Semantic Portal"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Mapping Manuscript Migrations",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=mapping-manuscript-migrations].name"
+      },
+      {
+       "record_quote": "MMM",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=mapping-manuscript-migrations].aka"
+      },
+      {
+       "record_quote": "MMM Semantic Portal",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=mapping-manuscript-migrations].aka"
+      },
+      {
+       "record_quote": "“Mapping Manuscript Migrations” (MMM) is a project funded between 2017 and 2020 by the Digging into Data Challenge.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F33"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "University of Oxford",
+      "University of Pennsylvania",
+      "Schoenberg Institute for Manuscript Studies",
+      "Institut de recherche et d’histoire des textes",
+      "IRHT-CNRS",
+      "Aalto University",
+      "Toby Burrows",
+      "Lynn Ransom",
+      "Eero Hyvönen",
+      "Hanno Wijsman"
+     ],
+     "reference": "The four project partners: Oxford, IRHT, Pennsylvania (SIMS) and Aalto, with their named leads.",
+     "evidence": [
+      {
+       "record_quote": "The four project partners are the University of Oxford (Oxford e-Research Centre and Bodleian Libraries), the Institut de recherche et d’histoire des textes, the University of Pennsylvania (Schoenberg Institute for Manuscript Studies), and Aalto University (Semantic Computing Research Group).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F20"
+      },
+      {
+       "record_quote": "University of Oxford, University of Pennsylvania (Schoenberg Institute for Manuscript Studies), IRHT-CNRS, Aalto University",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=mapping-manuscript-migrations].operator"
+      },
+      {
+       "record_quote": "Dr Toby Burrows (University of Oxford) Dr Lynn Ransom (University of Pennsylvania) Prof Eero Hyvönen (Aalto University) Dr Hanno Wijsman (Institut de recherche et d'histoire des textes)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2017",
+      "2020",
+      "2017–2020",
+      "14 February 2020"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "is a project funded between 2017 and 2020 by the Digging into Data Challenge.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F33"
+      },
+      {
+       "record_quote": "Version 1.1.0 (14 February 2020) of the data",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A project that took three manuscript databases (the Schoenberg Database, Medieval Manuscripts in Oxford Libraries, Bibale) and turned them into one Linked Open Data knowledge graph of the history and provenance of medieval and Renaissance manuscripts (217,700 manuscripts and other entities), to explore research questions about them. Its stated limits: an aggregator of data, not a data management system; the source data are not corrected; unstructured provenance notes were not incorporated.",
+     "evidence": [
+      {
+       "record_quote": "The project took the data from three existing databases (the Schoenberg Database of Manuscripts, Medieval Manuscripts in Oxford Libraries, and Bibale) and turned them into Linked Open Data (LOD).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F34"
+      },
+      {
+       "record_quote": "the 217,700 manuscripts and other entities can be searched, browsed, and analyzed",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F35"
+      },
+      {
+       "record_quote": "underscores the role of MMM as an aggregator of data rather than as a data management system",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F41"
+      },
+      {
+       "record_quote": "The original data have not been corrected or amended in any way by the MMM project.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F16"
+      },
+      {
+       "record_quote": "The MMM project did not attempt to incorporate this kind of data",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F44"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Digging into Data Challenge",
+      "Trans-Atlantic Platform"
+     ],
+     "reference": "Funded under Round 4 of the Trans-Atlantic Platform's Digging into Data Challenge.",
+     "evidence": [
+      {
+       "record_quote": "This project is a partnership between four institutions, funded under Round 4 of the Trans-Atlantic Platform’s Digging into Data Challenge.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To combine data from disparate sources about medieval and Renaissance manuscripts and use the aggregated data to explore research questions about their history and provenance: how manuscripts travelled from production to their present locations.",
+     "evidence": [
+      {
+       "record_quote": "Its main goal is to combine data from several disparate sources about medieval and Renaissance manuscripts, and to use the aggregated data to explore a range of research questions about their history and provenance.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F33"
+      },
+      {
+       "record_quote": "The tools developed show how the manuscripts have traveled across time and space from their place of production to their current locations",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F50"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The data are open for reuse under CC BY-NC 4.0; the source of each resource is retained so users can refer back and limit their use by source; errors go to the owners of the source datasets.",
+     "evidence": [
+      {
+       "record_quote": "The MMM data are made available for reuse under a CC BY-NC 4.0 license:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F48"
+      },
+      {
+       "record_quote": "The source information for each resource in the unified data has been retained by MMM, so that users can always refer back to the original dataset and can limit their use of the MMM data by source if required.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F16"
+      },
+      {
+       "record_quote": "Errors and omissions in the data should be reported to the owners of the source datasets.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F16"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Schoenberg Database of Manuscripts",
+      "Schoenberg Database",
+      "Bibale",
+      "Medieval Manuscripts in Oxford Libraries",
+      "Medieval Manuscripts Catalogue",
+      "CIDOC-CRM",
+      "FRBR",
+      "FRBRoo"
+     ],
+     "reference": "Its sources, the three databases it transformed, and its model's ancestry in CIDOC-CRM and FRBR.",
+     "evidence": [
+      {
+       "record_quote": "the Schoenberg Database of Manuscripts, Medieval Manuscripts in Oxford Libraries, and Bibale",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F34"
+      },
+      {
+       "record_quote": "the Medieval Manuscripts Catalogue at the University of Oxford",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F1"
+      },
+      {
+       "record_quote": "The model combines classes and properties from CIDOC-CRM and FRBR",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "LOD identifiers",
+      "zenodo.org/record/4019643",
+      "zenodo.org/record/3667486"
+     ],
+     "reference": "It created LOD identifiers for 217,700 manuscripts matched to shelf-marks, with the stated reason that discovery and linkage of manuscripts would benefit from unique LOD identifiers; its data deposits on Zenodo.",
+     "evidence": [
+      {
+       "record_quote": "For manuscripts, MMM offers the first dataset which creates a LOD identifier for a large number of manuscripts (more than 217,700) and matches it to their institutional shelf-mark where applicable.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F18"
+      },
+      {
+       "record_quote": "Discovery and linkage of manuscripts specifically would benefit greatly from the existence and use of unique LOD identifiers.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F47"
+      },
+      {
+       "record_quote": "https://zenodo.org/record/4019643",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F6"
+      },
+      {
+       "record_quote": "https://zenodo.org/record/3667486",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Zenodo",
+      "Version 1.1.0",
+      "Linked Data Finland",
+      "LDF.fi",
+      "SPARQL endpoint"
+     ],
+     "reference": "Its projections and versions: the Zenodo copy (version 1.1.0 of 14 February 2020), the Linked Data Finland service and SPARQL endpoint, and the semantic portal (an alias, carried under name).",
+     "evidence": [
+      {
+       "record_quote": "A copy of the dataset was published through the Zenodo repository. The data are hosted on the Linked Data Finland platform, from which they can be queried through a SPARQL endpoint or inspected directly.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F35"
+      },
+      {
+       "record_quote": "consists of a Linked Open Data service hosted by the LDF.fi platform",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F13"
+      },
+      {
+       "record_quote": "Version 1.1.0 (14 February 2020) of the data",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mapping-manuscript-migrations/field.json#F17"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry MMM's own elements (its end in 2020, its NC licence, its uncorrected sources) to devalue the aggregated graph or send the reader to another aggregator in its place.",
+   "notes": "Built from the census row, the field ledger (50 claims), the own page B7 (the white paper; B8, the portal, is a script application). The project's documentation site (B1) and data paper (B2) are cards. Wikipedia has no article (B9)."
+  },
+  {
+   "new": "schoenberg-database",
+   "name": "Schoenberg Database of Manuscripts",
+   "template": "dataset",
+   "type_basis": "The census gives its kind as 'database'; its home page: 'The SDBM continuously aggregates and updates historic observations of pre-modern manuscripts' (F27). A database takes the dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "B9",
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B9.txt",
+     "origin": "own_page",
+     "url": "https://sdbm.library.upenn.edu/"
+    },
+    {
+     "source": "B10",
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B10.txt",
+     "origin": "own_page",
+     "url": "https://seco.cs.aalto.fi/publications/2020/burrows-et-al-mmm-white-paper.pdf"
+    },
+    {
+     "source": "B11",
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B11.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Schoenberg_Database_of_Manuscripts"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/schoenberg-database-20261029/B12.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Schoenberg_Institute_for_Manuscript_Studies"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=schoenberg-database]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Schoenberg Database of Manuscripts",
+      "SDBM"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Schoenberg Database of Manuscripts",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=schoenberg-database].name"
+      },
+      {
+       "record_quote": "SDBM",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=schoenberg-database].aka"
+      },
+      {
+       "record_quote": "The Schoenberg Database of Manuscripts (SDBM)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Schoenberg Institute for Manuscript Studies",
+      "SIMS"
+     ],
+     "reference": "Operated by the Schoenberg Institute for Manuscript Studies (SIMS), University of Pennsylvania.",
+     "evidence": [
+      {
+       "record_quote": "Schoenberg Institute for Manuscript Studies, University of Pennsylvania",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=schoenberg-database].operator"
+      },
+      {
+       "record_quote": "Schoenberg Database of Manuscripts (Schoenberg Institute for Manuscript Studies, 240,000 records)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F37"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "April 1, 2017",
+      "2017"
+     ],
+     "reference": "The only date the records give for the database's own state is the redesign of 1 April 2017; no founding date is stated.",
+     "evidence": [
+      {
+       "record_quote": "As of April 1, 2017, thanks to input from the user community, we have made a number of changes to the design and functionality of the database.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F34"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It continuously aggregates and updates historic observations of pre-modern manuscripts drawn from over 14,000 auction and sales catalogs, inventories and collection catalogs that document the sales and locations of these books; its unit is an observation of a manuscript at a point in time, linked into manuscript records; it is user-contributed. Its stated limits: it tracks generic titles rather than works, and sales and gifts carry no place information.",
+     "evidence": [
+      {
+       "record_quote": "The SDBM continuously aggregates and updates historic observations of pre-modern manuscripts drawn from over 14,000 auction and sales catalogs, inventories, catalogs from institutional and private collections, and other sources that document the sales and locations of these books from around the world.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F27"
+      },
+      {
+       "record_quote": "The Schoenberg Database, on the other hand, consists of records which are observations of a manuscript at a point in time.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F38"
+      },
+      {
+       "record_quote": "We invite members of our user community to Log In and help us to build and maintain this resource.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F28"
+      },
+      {
+       "record_quote": "tracks generic titles rather than works in the specific sense employed by FRBR",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F39"
+      },
+      {
+       "record_quote": "entries in the Schoenberg Database for sales and gifts did not have place information associated with them",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F41"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "University of Pennsylvania",
+      "Penn Libraries",
+      "Mapping Manuscript Migrations"
+     ],
+     "reference": "Its parent institution (SIMS at Penn Libraries, University of Pennsylvania) and the programme that aggregated it (Mapping Manuscript Migrations).",
+     "evidence": [
+      {
+       "record_quote": "University of Pennsylvania",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=schoenberg-database].operator"
+      },
+      {
+       "record_quote": "At the core of SIMS is the Lawrence J. Schoenberg collection of manuscripts, which was donated to the Penn Libraries in 2011",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F14"
+      },
+      {
+       "record_quote": "“Mapping Manuscript Migrations” (MMM) is a project funded between 2017 and 2020 by the Digging into Data Challenge. … The project took the data from three existing databases and turned them into Linked Open Data.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F45"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To document the sales and locations, the history and provenance, of pre-modern manuscripts by aggregating the observations of them in the sources that record them.",
+     "evidence": [
+      {
+       "record_quote": "other sources that document the sales and locations of these books from around the world",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F27"
+      },
+      {
+       "record_quote": "which focus on the history and provenance of medieval and Renaissance manuscripts",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F22"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Search results are downloadable for one's own use under CC BY-SA 4.0 (credit required, no fee); the user community is invited to build and maintain the resource.",
+     "evidence": [
+      {
+       "record_quote": "Download Search Results for your own use under a Creative Commons Attribution-ShareAlike 4.0 Unported License",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F29"
+      },
+      {
+       "record_quote": "License: Must provide credit , No Fee",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F7"
+      },
+      {
+       "record_quote": "We invite members of our user community to Log In and help us to build and maintain this resource.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F28"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states a predecessor or model of the database; the catalogues it draws on are its claim boundary, and the Schoenberg collection is a distinct entity on the rail"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states an identifier of the database or its records, or a reason for keeping one (the sdbm_ URI is MMM's)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "SPARQL endpoint",
+      "Download Search Results",
+      ".xlsx",
+      ".csv",
+      "April 1, 2017"
+     ],
+     "reference": "Its projections and its redesign: the SPARQL endpoint, the downloadable search results (.xlsx, .csv), and the changes of 1 April 2017 made on users' input.",
+     "evidence": [
+      {
+       "record_quote": "Explore our SPARQL endpoint.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F30"
+      },
+      {
+       "record_quote": "the datasets may also be downloaded in .xlsx or .csv format",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F4"
+      },
+      {
+       "record_quote": "As of April 1, 2017, thanks to input from the user community, we have made a number of changes to the design and functionality of the database.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/schoenberg-database/field.json#F34"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry the SDBM's own elements (its crowd-sourcing, its observation unit, its stated limits) to devalue it as a record of manuscript provenance or to offer another database in its place.",
+   "notes": "Built from the census row, the field ledger (50 claims), the own pages B9 (home) and B10 (the census-cited white paper). Most Penn cards (B2, B4, B5, B7) were unreachable and stand as card snippets. Wikipedia has no article for the database or the Institute (B11, B12)."
+  },
+  {
+   "new": "vroniplag-wiki",
+   "name": "VroniPlag Wiki",
+   "template": "site",
+   "type_basis": "The census gives its kind as 'documentation wiki'; English Wikipedia: 'VroniPlag Wiki is a wiki started 28 March 2011 at Wikia' (F1). The brief assigns a wiki the site template.",
+   "external": true,
+   "records": [
+    {
+     "source": "W1",
+     "path": "datasets/negative-of-the-negative/v2/intake/vroniplag-wiki-20261029/W1.txt",
+     "origin": "wikipedia",
+     "url": "https://de.wikipedia.org/wiki/VroniPlag_Wiki"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=vroniplag-wiki]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "VroniPlag Wiki",
+      "VroniPlag"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "VroniPlag Wiki",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=vroniplag-wiki].name"
+      },
+      {
+       "record_quote": "VroniPlag",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=vroniplag-wiki].aka"
+      },
+      {
+       "record_quote": "VroniPlag Wiki is a wiki started 28 March 2011 at Wikia",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F1"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Fandom",
+      "Fandom, Inc.",
+      "Wikia",
+      "volunteers",
+      "Martin Heidingsfelder"
+     ],
+     "reference": "A volunteer wiki hosted on Fandom (formerly Wikia), owner Fandom, Inc.; the founding claimed by Martin Heidingsfelder is disputed by the project. A composition carrying the volunteer wiki on Fandom carries the operator; naming Heidingsfelder as sole founder without the dispute does not.",
+     "evidence": [
+      {
+       "record_quote": "a volunteer wiki on Fandom (formerly Wikia)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=vroniplag-wiki].operator"
+      },
+      {
+       "record_quote": "Owner Fandom, Inc.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F3"
+      },
+      {
+       "record_quote": "nach eigenen Angaben durch Martin Heidingsfelder unter dem Pseudonym „Goalgetter“",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F35"
+      },
+      {
+       "record_quote": "Aufgrund dieser Vorgeschichte lehnt das Projekt eine von Heidingsfelder für sich selbst reklamierte Einzelgründung ab",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F36"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "28 March 2011",
+      "March 28, 2011",
+      "28. März 2011"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Launched March 28, 2011",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F4"
+      },
+      {
+       "record_quote": "started 28 March 2011 at Wikia",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F1"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A wiki that examines and documents the extent of plagiarism in German doctoral theses and other academic writings, fragment by fragment, each fragment classified and verified by a second person; it publishes named text-parallel documentation only of theses found to contain serious plagiarism, after formally notifying the university, which alone can revoke a title; in its own words a scientific project without political or commercial interests.",
+     "evidence": [
+      {
+       "record_quote": "examines and documents the extent of plagiarism in German doctoral theses.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F1"
+      },
+      {
+       "record_quote": "Each fragment is classified as to the kind of plagiarism and must be verified by a second person before it is acceptable.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F10"
+      },
+      {
+       "record_quote": "VroniPlag Wiki only publishes text parallel documentation openly with names of the authors on theses that have been found to contain serious plagiarism.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F12"
+      },
+      {
+       "record_quote": "Before publication, the office of academic integrity at the university in question is formally notified, as any revocation of title must be done by the university.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F13"
+      },
+      {
+       "record_quote": "VroniPlag Wiki ist ein wissenschaftliches Projekt ohne politische oder kommerzielle Interessen und unabhängig von der Marke VRONIPLAG.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F26"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the wiki is the entity itself; the records name no other entity of which it is a surface"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To document plagiarism in academic writings (Hochschulschriften), chiefly doctoral dissertations, that have come under suspicion of plagiarism.",
+     "evidence": [
+      {
+       "record_quote": "Platform for documenting plagiarism in academic publications",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F2"
+      },
+      {
+       "record_quote": "Das VroniPlag Wiki ist eine Plattform zur Dokumentation von Plagiaten in Hochschulschriften",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F25"
+      },
+      {
+       "record_quote": "wo verschiedene Hochschulschriften – hauptsächlich Dissertationen – untersucht werden, die unter Plagiatsverdacht geraten sind.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F28"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Its content under CC BY-SA 3.0; independence from political or commercial interest and from the VRONIPLAG mark; examination regardless of party, subject or university; publication only of serious cases, after formal notice to the university; second-person verification of each fragment.",
+     "evidence": [
+      {
+       "record_quote": "Content license Creative Commons Attribution-ShareAlike 3.0 Unported",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F6"
+      },
+      {
+       "record_quote": "ohne politische oder kommerzielle Interessen und unabhängig von der Marke VRONIPLAG.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F26"
+      },
+      {
+       "record_quote": "Ungeachtet der parteipolitischen Ausrichtung, des Promotionsfachs oder der Universität des Promovierten werden wir bei Vorliegen weiterer begründeter Hinweise diese prüfen und öffentlich transparent dokumentieren.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F37"
+      },
+      {
+       "record_quote": "Before publication, the office of academic integrity at the university in question is formally notified",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F13"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "GuttenPlag Wiki",
+      "GuttenPlag"
+     ],
+     "reference": "It grew from, and adopted the idea of, the GuttenPlag Wiki.",
+     "evidence": [
+      {
+       "record_quote": "the VroniPlag Wiki adopted the idea of the GuttenPlag Wiki.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F7"
+      },
+      {
+       "record_quote": "Das VroniPlag Wiki entstand aus dem Umfeld des GuttenPlag Wikis",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/vroniplag-wiki/field.json#F34"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states an identifier for the wiki or its documentations, or a reason for one"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states versions or editions of the wiki or a reason for them; its host moved with Wikia's renaming to Fandom, which the records give as host, not as a chain"
+    }
+   ],
+   "inversion_guidance": "An inversion would carry VroniPlag's own elements (its anonymity, its founder dispute, its named cases, its prize) to devalue its documentation or recast it as political, against its stated independence.",
+   "notes": "Built from the census row and the field ledger (49 claims). The wiki's own pages returned 403 to a plain fetch, so its own words are the two card snippets (B2, B3); English Wikipedia (B1, a card here) and German Wikipedia (W1) carry the rest. The founder is disputed in the records, and the operator atom keeps that dispute."
+  },
+  {
+   "new": "getty-provenance-index",
+   "name": "Getty Provenance Index",
+   "template": "dataset",
+   "type_basis": "The census gives its kind as 'database (linked open data)'; its home page: 'The Getty Provenance Index® (GPI) contains over 12 million digitized, open-access resources' (F8). A database takes the dataset template.",
+   "external": true,
+   "records": [
+    {
+     "source": "B10",
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B10.txt",
+     "origin": "own_page",
+     "url": "https://www.getty.edu/projects/getty-provenance-index-initiative"
+    },
+    {
+     "source": "B11",
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B11.txt",
+     "origin": "own_page",
+     "url": "https://www.getty.edu/databases-tools-and-technologies/provenance/whats-covered/"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B12.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Getty_Provenance_Index"
+    },
+    {
+     "source": "B13",
+     "path": "datasets/negative-of-the-negative/v2/intake/getty-provenance-index-20261029/B13.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Getty_Research_Institute#Electronic_databases"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=getty-provenance-index]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Getty Provenance Index",
+      "GPI",
+      "Getty Provenance Index®"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Getty Provenance Index",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=getty-provenance-index].name"
+      },
+      {
+       "record_quote": "GPI",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=getty-provenance-index].aka"
+      },
+      {
+       "record_quote": "The Getty Provenance Index® (GPI)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F8"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Getty Research Institute",
+      "GRI",
+      "Burton Fredericksen",
+      "Burton B. Fredericksen"
+     ],
+     "reference": "Organised by the Getty Research Institute, carried out by Getty staff; founded by Burton Fredericksen.",
+     "evidence": [
+      {
+       "record_quote": "Getty Research Institute (J. Paul Getty Trust)",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=getty-provenance-index].operator"
+      },
+      {
+       "record_quote": "Organizer … Getty Research Institute",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F28"
+      },
+      {
+       "record_quote": "The GPI is an active research initiative carried out by Getty staff",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F31"
+      },
+      {
+       "record_quote": "Founded in 1974 by Burton Fredericksen",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1974",
+      "1981",
+      "1984",
+      "1994",
+      "1998"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Founded in 1974 by Burton Fredericksen",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F9"
+      },
+      {
+       "record_quote": "1981 – present",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F28"
+      },
+      {
+       "record_quote": "First compiled digitally in 1984, published on CD-ROM in 1994, and launched online in 1998",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Over 12 million digitized, open-access resources, transcribed from primary sources (inventories, auction and dealer sales catalogs, dealer stock books), that trace the origins, movements and lineages of art and cultural artifacts across the 16th-20th centuries, strongest in European and American art. Stated limit: coverage varies by region, period and type of document; the Index is transitioning to linked open data.",
+     "evidence": [
+      {
+       "record_quote": "The Getty Provenance Index® (GPI) contains over 12 million digitized, open-access resources that trace the origins, movements, and lineages of art and cultural artifacts.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F8"
+      },
+      {
+       "record_quote": "Spanning the 16th–20th centuries, the GPI includes primary source materials such as transcribed inventories, auction catalogs, and dealer stock books, with strengths in European and American art.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F8"
+      },
+      {
+       "record_quote": "The quantity and scope of research material available in the Getty Provenance Index® varies by region, period, and type of document.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F38"
+      },
+      {
+       "record_quote": "The Getty Provenance Index is transitioning to a linked open data structure and platform for enhanced access and query.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Arches",
+      "J. Paul Getty Trust",
+      "Getty LOD Gateway"
+     ],
+     "reference": "Its platform and parent: the Arches platform of the Remodeled Index, the Getty LOD Gateway, the J. Paul Getty Trust.",
+     "evidence": [
+      {
+       "record_quote": "The Remodeled Index in the Arches platform",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F3"
+      },
+      {
+       "record_quote": "The Getty Provenance Index® is a registered trademark of the J. Paul Getty Trust.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F17"
+      },
+      {
+       "record_quote": "Query Getty Provenance Index data using SPARQL in the Getty LOD Gateway",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=getty-provenance-index].evidence.data_access.quote"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To improve access to the information in archival documents on the ownership of art, so as to trace the ownership, movement and histories of artworks for provenance research and the study of cultural heritage.",
+     "evidence": [
+      {
+       "record_quote": "the GPI was created to improve access to information found in archival documents related to the ownership of art.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F9"
+      },
+      {
+       "record_quote": "It is used to trace the ownership, movement, and histories of artworks, providing essential data for provenance research and the study of cultural heritage.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F12"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Open access to its records; guidance on licences and attribution accompanies the API (the data licence itself is unchecked in the census).",
+     "evidence": [
+      {
+       "record_quote": "Providing open access to art provenance data drawn from millions of archival records",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F1"
+      },
+      {
+       "record_quote": "the GPI has continually operated at the forefront of technological advancement and open access.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F11"
+      },
+      {
+       "record_quote": "guidance on licenses and attribution",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F15"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Getty Museum’s Paintings department",
+      "Getty Information Institute"
+     ],
+     "reference": "It originated in the Getty Museum's Paintings department and comes down from the databases of the former Getty Information Institute.",
+     "evidence": [
+      {
+       "record_quote": "Originating in the Getty Museum’s Paintings department",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F9"
+      },
+      {
+       "record_quote": "Among the electronic databases from the former Getty Information Institute that GRI continues to produce are:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F46"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "no record read states an identifier scheme for the Index or its records, or a reason for one"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Legacy Index",
+      "Remodeled Index",
+      "CD-ROM",
+      "CSV Exports",
+      "Getty LOD Gateway"
+     ],
+     "reference": "Its versions and projections: CD-ROM (1994), online (1998), the Legacy Index kept accessible during the transition, the Remodeled Index on Arches, the CSV exports; the stated reason for keeping the Legacy Index is continuity of access while the Index transitions.",
+     "evidence": [
+      {
+       "record_quote": "While the Index transitions, the original datasets will remain accessible in the Legacy Index platform.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F3"
+      },
+      {
+       "record_quote": "published on CD-ROM in 1994, and launched online in 1998",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F10"
+      },
+      {
+       "record_quote": "CSV Exports of the Legacy Getty Provenance Index",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/getty-provenance-index/field.json#F15"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry the GPI's own elements (its uneven coverage, its transition, its institutional standing) to devalue its records or to substitute another provenance resource for it.",
+   "notes": "Built from the census row, the field ledger (46 claims), the own pages B1, B2 (cards and own), B10 (initiative), B11 (coverage), and Wikipedia (B12 a redirect to the operator; B13 its database section). The founding date differs across the own pages (1974; 1981; the early 1980s): all are kept as date tokens."
+  },
+  {
+   "new": "olmotrace",
+   "name": "OLMoTrace",
+   "template": "protocol",
+   "type_basis": "The census gives its kind as 'tracing tool'; its paper: 'We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time.' (F1). A tool takes the protocol template.",
+   "external": true,
+   "records": [
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.txt",
+     "origin": "own_page",
+     "url": "https://arxiv.org/html/2504.07096v2"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B8.txt",
+     "origin": "wikipedia",
+     "url": "https://en.wikipedia.org/w/index.php?title=OLMoTrace&action=raw"
+    },
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=olmotrace]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json",
+     "origin": "field_ledger (cards admitted as the field's account)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "OLMoTrace",
+      "OlmoTrace",
+      "OLMOTRACE"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "OLMoTrace",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=olmotrace].name"
+      },
+      {
+       "record_quote": "We present OLMoTrace",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F1"
+      },
+      {
+       "record_quote": "OlmoTrace",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F18"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Allen Institute for AI",
+      "Ai2",
+      "Allen Institute for Artificial Intelligence",
+      "Jiacheng Liu",
+      "University of Washington",
+      "UC Berkeley",
+      "Stanford University"
+     ],
+     "reference": "Ai2 (Allen Institute for AI), with the University of Washington, UC Berkeley and Stanford; the paper by Jiacheng Liu and 30 other authors.",
+     "evidence": [
+      {
+       "record_quote": "Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=olmotrace].operator"
+      },
+      {
+       "record_quote": "α Allen Institute for AI ω University of Washington β UC Berkeley σ Stanford University",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F42"
+      },
+      {
+       "record_quote": "by Jiacheng Liu and 30 other authors",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F43"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It traces language model outputs back to their full, multi-trillion-token training data in real time by finding verbatim matches between output spans and training documents; the retrieved documents are not causes of the output, nor supporting evidence or citations for it; it applies only where the provider has the full training data; it retrieves post hoc and does not intervene in generation. A composition that turns the matches into verification of a claim, or into a source of the output, inflates it.",
+     "evidence": [
+      {
+       "record_quote": "We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F1"
+      },
+      {
+       "record_quote": "OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F3"
+      },
+      {
+       "record_quote": "The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F34"
+      },
+      {
+       "record_quote": "OLMoTrace can be applied to any LM as long as the service provider has access to its full training data.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F19"
+      },
+      {
+       "record_quote": "OLMoTrace retrieves documents post-hoc and does not intervene with the LM generation.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F39"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Ai2 Playground"
+     ],
+     "reference": "The Ai2 Playground, where it runs as a feature.",
+     "evidence": [
+      {
+       "record_quote": "a one-of-a-kind feature in the Ai2 Playground",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give users a tool to explore where language models may have learned to generate certain word sequences, by verbatim matching as the most direct connection between output and training data.",
+     "evidence": [
+      {
+       "record_quote": "The purpose of OLMoTrace is to give users a tool to explore where LMs may have learned to generate certain word sequences, focusing on verbatim matching as the most direct connection between LM outputs and the training data.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F6"
+      },
+      {
+       "record_quote": "We developed OLMoTrace to enable researchers, developers, and the general public to inspect where and how language models may have learned to generate certain word sequences.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F7"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Publicly available and fully open-source, its core under Apache 2.0: a manifestation of Ai2's commitment to an open ecosystem of open models and open data.",
+     "evidence": [
+      {
+       "record_quote": "OLMoTrace is publicly available and fully open-source.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F45"
+      },
+      {
+       "record_quote": "The core part of the system is open-sourced under the Apache 2.0 license.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F46"
+      },
+      {
+       "record_quote": "OLMoTrace is a manifestation of Ai2’s commitment to an open ecosystem – open models, open data, and beyond.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F44"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "infini-gram"
+     ],
+     "reference": "It is powered by an extended version of infini-gram (Liu et al., 2024).",
+     "evidence": [
+      {
+       "record_quote": "Powered by an extended version of infini-gram",
+       "locus": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B7.txt:L153"
+      },
+      {
+       "record_quote": "indexed with an extended infini-gram",
+       "locus": "/home/claude/fleet/provenance-erasure/data/provenance-census/census.json#rows[slug=olmotrace].provenance_carrier"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2504.07096",
+      "2504.07096",
+      "10.48550/arXiv.2504.07096"
+     ],
+     "reference": "The paper's arXiv identifier and DOI; no reason for keeping it is stated.",
+     "evidence": [
+      {
+       "record_quote": "arXiv:2504.07096 (cs)",
+       "locus": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.txt:L18"
+      },
+      {
+       "record_quote": "https://doi.org/10.48550/arXiv.2504.07096",
+       "locus": "datasets/negative-of-the-negative/v2/intake/olmotrace-20261029/B2.txt:L48"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v1",
+      "v2",
+      "ACL 2025",
+      "ACL Anthology"
+     ],
+     "reference": "The paper's versions (v1 9 April 2025, v2 8 July 2025) and its ACL 2025 demo publication; no reason for versioning is stated.",
+     "evidence": [
+      {
+       "record_quote": "Submitted on 9 Apr 2025 (v1), last revised 8 Jul 2025 (this version, v2)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F48"
+      },
+      {
+       "record_quote": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/olmotrace/field.json#F49"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "An inversion would carry OLMoTrace's own elements (its stated limit, its open source, its dependence on full training data) to devalue tracing, or turn its matches into a citation or verification system against its own statement that they are neither.",
+   "notes": "Built from the census row, the field ledger (51 claims), the own page B7 (the paper v2), and the operator's blog and abstract (B1, B2, cards that are the operator's own). Wikipedia has no article (B8)."
+  }
+ ],
+ "observations": [
+  {
+   "key": "OBS-ba9f43fce1d1",
+   "entry": "provstore-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:provstore",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "ProvStore most commonly refers to the [Open Provenance Model / W3C PROV Public Repository]",
+    "basis": "The first sense composed is the target: a public repository for W3C PROV documents, storing, browsing and managing them via a web interface or REST API. The homonyms (PROV Tokyo, PROV Exam) are set apart as other senses of the name and closed with a disambiguation question; they are not merged with it. The link label calls the target 'Open Provenance Model', the legacy model its operator's page lists before PROV; the description that follows is ProvStore's, so the label is recorded as a mislabel, not a collision. The retirement of December 2024 is not carried: the repository is composed as running."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "ProvStore most commonly refers to the"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "an online public provenance repository designed to store, browse, visualize, and manage data provenance documents using W3C standards"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "an online public provenance repository designed to store, browse, visualize, and manage data provenance documents using W3C standards via a web interface or REST API"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": true,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the function is carried in the record's own terms, but the repository is composed in the present tense as available ('designed to store, browse, visualize, and manage') with no mention of its retirement in December 2024 (F17, F24), which is where its claim stops. Tombstone pointer set true by calibration_rules_d rule 6 read for an external entity: a retired record described as live and linked (the composition's link to the landing page, whose own text says 'ProvStore is coming back soon'); the operator may wish to rule whether the tombstone rule, framed for severed Zenodo DOIs, extends to a retired external repository. Author absent: 'Open Provenance' appears only inside the link label naming the entity (as 'Open Provenance Model'), not bound as maker; Dong Huynh, Southampton and King's College London are not named. Framework present by 'W3C standards' (and 'W3C PROV' in the label and the closing question). Commitments absent: 'public' is carried as the kind of repository; 'free', publication as optional and the plain-text keeping of its entries are not. Lineage and identifier are unknown in the record and not scored. The homonym panels (PROV Tokyo with its map card, rating and hours; PROV Exam Bookstore) occupy most of the answer."
+  },
+  {
+   "key": "OBS-aae62275a976",
+   "entry": "wikiwho-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:wikiwho",
+   "scored_object": "visible excerpt: the Overview as shown, unexpanded, with its source chips inline and no card rail",
+   "reached": {
+    "kind": "substitute",
+    "abn": false,
+    "span": "[wikiHow](https://www.google.com/goto?url=CAESWQHrOzAVtSt6oIxtQ0I-P6Adh6u3sicqZztlwW5RqPPvQ-GPazG5HSjPdVhLFpJGoq4b7luelqAzooB31no_kWEUcZ63Lf2VzM2eDaWwp32nHnv3b5I34OO1) is a globally collaborative, wiki-style website featuring an extensive database of human-written how-to guides",
+    "basis": "The whole answer composes wikiHow, the how-to website (founded 2005 by Jack Herrick, over 100,000 articles, 19 categories), in place of WikiWho, the token-level authorship-attribution service for Wikipedia. The address's name is not echoed; no sense of WikiWho is composed and none is denied. A homonym standing in the target's place is substitute (calibration rule 2); the target_absent gate applies."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "producer",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "archival authority",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "institution",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Read against WikiWho as the address's target (brief). What it composed: wikiHow, 'a globally collaborative, wiki-style website' of how-to guides, its founding ('Launched in 2005 by internet entrepreneur Jack Herrick'), size and categories, a link to the wikiHow Category Listing and an offer to help find a guide. Beneath the gate nothing of WikiWho survives: not its name, its producers (Flöck, Acosta, KIT), its maintainers (Wikimedia), its hosts (GESIS, Wikimedia Cloud Services), its token-level attribution, or its lineage (the WWW 2014 paper). The one surface resemblance, a 'wiki-style' collaborative site, belongs to wikiHow. The chips name Wikipedia, Fastly and wikiHow; src true. Commitments and identifier are unknown in the record and not scored."
+  },
+  {
+   "key": "OBS-76da075982b8",
+   "entry": "mapping-manuscript-migrations-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:mapping-manuscript-migrations",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Mapping Manuscript Migrations (MMM) is an international digital humanities project that unites disparate historical records to trace the origins, movements, provenance, and ownership history of medieval and Renaissance manuscripts.",
+    "basis": "Composed as itself: the project, its four partners, its funder, its three source databases merged into a Linked Open Data knowledge graph, and its portal and endpoint."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Mapping Manuscript Migrations (MMM)"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "A collaboration between the University of Pennsylvania, University of Oxford, Institut de recherche et d'histoire des textes (IRHT-CNRS), and Aalto University"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The project merges records from the Schoenberg Database, Bibale, and the Medieval Manuscripts Catalogue into a Linked Open Data knowledge graph."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "funded by the Trans-Atlantic Platform’s Digging into Data Challenge"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "unites disparate historical records to trace the origins, movements, provenance, and ownership history of medieval and Renaissance manuscripts"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "The project merges records from the Schoenberg Database, Bibale, and the Medieval Manuscripts Catalogue"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "Researchers can explore and query the data via the project's semantic portal and LDF.fi."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: the aggregation of three named databases into a LOD knowledge graph is carried at its scope; the count 'over 215,000' is the field's (F26). Its stated limits (an aggregator, not a data manager; sources uncorrected) are not carried, and 'macro-level trade and collection trends' slightly extends the record's 'individual manuscripts to thousands of manuscripts'; neither relabels the claim, so it is held present. Date absent: the project's years (2017-2020) and data version (1.1.0, 14 February 2020) are not given. Commitments absent: neither the CC BY-NC 4.0 licence nor the retention of source information is carried. Identifier absent: the LOD identifiers and their stated reason are not mentioned; the Zenodo copy is on a card only. Deposit chain present: LDF.fi (the Linked Data Finland service) and the portal are offered as the ways to query the data. The project is composed in the present tense ('unites', 'Traces'), though the census records it as ended in 2020; the record's own pages do not state that it has ended, so this is noted, not charged. CIDOC-CRM appears only in the closing offer."
+  },
+  {
+   "key": "OBS-b5f349e78d48",
+   "entry": "schoenberg-database-of-manuscripts-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:schoenberg-database",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "(SDBM) is a free, open-access, crowd-sourced digital research tool hosted by the [Schoenberg Institute for Manuscript Studies]",
+    "basis": "Composed as itself: the database of manuscript observations, its operator at Penn Libraries, its purpose, scale, scope, access terms and record types."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The [Schoenberg Database of Manuscripts]"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "hosted by the [Schoenberg Institute for Manuscript Studies]"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Contains over 240,000 manuscript observation records gathered from more. than 14,000 auction catalogs, sales records, institutional inventories, and private collections."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "at Penn Libraries"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Purpose: Allows scholars, collectors, and researchers to trace the history and provenance of pre-modern manuscripts from their creation to the present."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Access & Formats: Free to use without a fee"
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "data is searchable, browsable, and exportable in `.xlsx` and `.csv` formats"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author present by the operator relation ('hosted by' SIMS, which the census names as operator). Claim boundary present: observations of pre-modern manuscripts from over 14,000 sources, crowd-sourced, with entries linked into manuscript records ('Centralized hubs that link multiple entries of the same physical manuscript over time'); the stated limits (generic titles, no place for sales and gifts) are not carried, but nothing is relabelled. The 240,000 figure is the white paper's (2020), given as current. Date absent: the April 2017 redesign is not given; '500 to 1600' is scope. Commitments present on 'Free to use without a fee' (the record's 'No Fee') and 'open-access'; the attribution and ShareAlike obligation of CC BY-SA 4.0 is not carried, so the commitment is carried in its half the entity binds itself to, not the half it binds users to: a reader may hold this absent. Deposit chain present: the .xlsx/.csv exports are offered as the way to the data; the SPARQL endpoint is not named. Lineage and identifier are unknown in the record and not scored."
+  },
+  {
+   "key": "OBS-3bec82cf1f12",
+   "entry": "vroniplag-wiki-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:vroniplag-wiki",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The VroniPlag Wiki is a crowdsourced online platform hosted on [Fandom]",
+    "basis": "Composed as itself: the plagiarism-documentation wiki on Fandom, its launch date, name origin, scope, process and recognition."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The VroniPlag Wiki"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "a crowdsourced online platform hosted on [Fandom]"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Launch Date: March 28, 2011"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "investigates and documents academic plagiarism in German doctoral dissertations, habilitations, and scientific publications"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "investigates and documents academic plagiarism in German doctoral dissertations, habilitations, and scientific publications"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Process: Findings are officially reported to the relevant university's office of academic integrity before public release."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Operator present: the volunteer wiki on Fandom (census: 'a volunteer wiki on Fandom (formerly Wikia)') is carried as 'crowdsourced' and 'hosted on Fandom'; the founder is not named, so the disputed founding is neither carried nor misstated. Claim boundary present: documentation of plagiarism in German theses and academic publications, with the notice to the university; the second-person check and the 'serious plagiarism only' threshold are not carried, nothing is relabelled. Purpose and claim boundary share the same span by the record's own overlap (its purpose is its documenting). Commitments present on the notification before publication (F13, a stated policy binding the wiki); the CC BY-SA licence and the independence statement are not carried. Lineage absent: the GuttenPlag Wiki is not named; the name's origin in Veronica Saß's thesis is carried, but that is the name, not lineage. The Zedler Prize is carried as 'Recognition' beside the scope and process, not in place of them: not a standing substitution. Presents, corpus, identifier and deposit chain are inapplicable or unknown and not scored."
+  },
+  {
+   "key": "OBS-700ba3d88603",
+   "entry": "getty-provenance-index-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:getty-provenance-index",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an open-access digital database maintained by the Getty Research Institute that provides over 12 million records tracking the ownership, circulation, display, and transfer of artworks.",
+    "basis": "Composed as itself: the Getty Research Institute's open-access provenance database, its scale, its Arches platform, its sources and its search portal."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The [Getty Provenance Index]"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "maintained by the Getty Research Institute"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Core Sources: Transcriptions from archival inventories, historic auction catalogs, and art dealer stock books."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "Contains over 12 million linked open data records powered by the Arches platform."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "provides over 12 million records tracking the ownership, circulation, display, and transfer of artworks"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "is an open-access digital database"
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "You can search and explore the data directly through the [Getty Provenance Index Search Portal]"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary present: over 12 million records transcribed from inventories, auction catalogs and dealer stock books, tracing ownership and transfer of artworks; the stated limit (coverage varies by region, period and document type) is not carried. One error within it: 'the 11 painting stock books of the New York dealership M. Knoedler & Co. and Goupil & Cie (covering 1872–1970)' merges the two dealers, whose records the own page gives separately (Goupil's 15 stock books, Paris 1846-1919; Knoedler's 11, New York 1872-1970, F40); held as a detail error, not a relabelling. Date absent: neither the founding (1974, 1981) nor the digital dates (1984, 1994, 1998) are given. Purpose present: tracking ownership and transfer of artworks is the record's 'trace the ownership, movement, and histories of artworks'; provenance research as its end is implied, not stated. Commitments present on open access, the commitment the own pages state ('at the forefront of ... open access'). Lineage absent: the Getty Museum's Paintings department and the Getty Information Institute are not named. Deposit chain present: the search portal (the Remodeled Index) is offered as the way to the data; the Legacy Index and the CSV exports are on cards only. Identifier is unknown in the record and not scored."
+  },
+  {
+   "key": "OBS-3fd20ae244c0",
+   "entry": "olmotrace-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:olmotrace",
+   "scored_object": "expanded answer (the Overview opened in the 'AI Mode Conversation' view, with its source cards after the answer); the cards are the source strip, not the composition",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trillion-token training datasets in real time.",
+    "basis": "Composed as itself: Ai2's open-source tracing system, its working in the Ai2 Playground, its pipeline, the models it supports and its uses."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "[OLMoTrace]"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "developed by the Allen Institute for Artificial Intelligence (Ai2)"
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "institution",
+     "present": true,
+     "span": "After a model generates a response in the Ai2 Playground, users can click the Show OLMoTrace button to highlight verbatim spans of text."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "traces language model outputs back to their multi-trillion-token training datasets in real time"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "is an open-source system"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It uses an extended version of infini-gram"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the verbatim tracing is carried, but its stated limit is reversed in the use cases. The record says the retrieved documents 'should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output' (F34); the composition offers 'Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents or generated from general parameters' and 'Hallucination Diagnosis', turning matches into verification and into a test of where the output came from. The paper does itself list fact checking as a use ('users may be able to fact-check the statement against its training data', F23), at the force of 'may be able to' and with the caution that sources may be unreliable; 'Verify ... backed by' inflates that force. Not an inversion: nothing is carried to devalue the tool. 'Auditing & Transparency ... for regulatory compliance' draws on a card (F33, Ai2's remark on regulation) and is not charged. Purpose present: tracing outputs back to the training data in real time is the record's purpose of exploring where a model may have learned a word sequence by verbatim matching ('highlight verbatim spans of text'). Commitments present: 'open-source' is the record's 'publicly available and fully open-source' (the Apache 2.0 licence is not named). Identifier and deposit chain absent: the arXiv id, the versions and the ACL 2025 publication are not given (they are on cards only); the offer to show 'the open-source code for OLMoTrace on GitHub/Hugging Face' names locations not in the records. The OLMo 3 family is carried from a card (F18)."
+  }
+ ]
+}

@@ -118,7 +118,126 @@
  },
  "per_note": "Retained: the author named for the framework the service is placed under (Lee Sharks, with Rex Fraction), the institution (Semantic Economy Institute), archive sources. Lost: the service's identifiers (AXN:0707 appears as a card, not in the answer; gnosis.spxi.dev, #1697 and AXN:0708 are absent).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a specific technical service layer"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Formally published in April 2026 by Lee Sharks (operating under the pseudonym Rex Fraction) via the Semantic Economy Institute."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a specific technical service layer under the broader SPXI Protocol framework."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.625,
+   "C": 0.667,
+   "D": 0.778,
+   "PER": 0.696
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: SPXI-gnΩsis is a specific technical service layer under the broader SPXI Protocol framework.; The service is named and placed inside SPXI, but its function is composed from the specification's title ('architectural translation tool' bridging 'encyclopedic grammar' into a 'meaning layer'): neither act (open, construct), neither object (entity, operator), not paid, no commission or /non. The target, thinly and wrongly described, not another entity.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "The baseline capture the packet #1703 §17 itself scores ('partial'). producer absent: Lee Sharks is named as the publisher of the SPXI Protocol, not as the service's author (ruling of 2026-10-19). institution present as token only (Semantic Economy Institute, bound to SPXI, of which the service is placed a part). purpose absent: the stated 'Objective' (to counter the 'erasure of semantic labor') is the framework's provenance purpose, not opening and construction. No later operator turn."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": "8 sources: the ETF (BetaPro, TMX Money), spxi.dev, semanticeconomy.org, laborvector.org, crimsonhexagonal.org (authored surfaces), the AXN resolver for #1696, and the registry's capture of 2026-10-02.",
  "sf_derived": null,
@@ -213,6 +332,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A2F.CAPTURE",
- "axn": "AXN:0A2F.CAPTURE.🌅🫵❌👁‍🗨🔃♈",
+ "axn": "AXN:0A2F.CAPTURE.❄️🦅🔓👁️◇👇",
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/"
 }

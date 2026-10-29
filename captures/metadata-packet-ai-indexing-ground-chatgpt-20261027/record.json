@@ -84,7 +84,125 @@
  },
  "per_note": "Author named at the deposit; institution not named; no identifier given in the body (no deposit number or AXN); source: Alexanarch chips on the specification. Inside the illustration, Semantic Economy's author is replaced by 'Example Author' (finding 2).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-075a3f6347",
+   "name": "Metadata Packet for AI Indexing"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "There is also a named specification called Metadata Packet for AI Indexing (MPAI)."
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its version 2.0 specification was deposited by Lee Sharks on October 13, 2026."
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Unlike ordinary document metadata, this framework focuses on helping AI systems preserve an entity's identity and attribution when synthesizing information from multiple sources."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "this framework focuses on helping AI systems preserve an entity's identity and attribution when synthesizing information from multiple sources."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (an 'established universal standard' that platforms 'automatically recognize')",
+    "span": "In particular, do not confuse a custom MPAI document with an established universal standard that every AI platform automatically recognizes. The MPAI specification is one proposed approach; practical indexing platforms have their own schemas and ingestion rules.",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.273,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.5
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The term has two related uses: a general technical concept in AI search, and a more specific framework called Metadata Packet for AI Indexing (MPAI).; MPAI is reached and described (v2.0, Lee Sharks, the seven components), but demoted to the second of 'two related uses' beneath a general concept the answer builds from MPAI's own components (identity, definition, disambiguation, provenance, identifiers) and leads with.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "The address names the target exactly; the generic concept the answer leads with is MPAI's own definition genericised and unattributed, so the target is reached, weakened, not substituted. The standing substitution is recorded with hesitation: MPAI claims no universality, and the caveat weighs it by recognition ('custom' against 'established universal standard') rather than by what its components do; the proxy lies outside the entity, so atoms are scored as found. The spec link and catalogue link are links only (no identifier token offered; identifier absent). No licence, no lineage tokens (Dublin Core, schema.org, METS/MODS), no archive named."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -172,6 +290,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A83.CAPTURE",
- "axn": "AXN:0A83.CAPTURE.👆🧊🟣🖊️🎺✏️",
+ "axn": "AXN:0A83.CAPTURE.⛳♻️✋🃏🔗▶️",
  "record_url": "https://www.alexanarch.org/captures/metadata-packet-ai-indexing-ground-chatgpt-20261027/"
 }

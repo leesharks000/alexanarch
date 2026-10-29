@@ -143,7 +143,110 @@
  },
  "per_note": "The IPTC named; no person; no identifier; the IPTC's own pages cited (eight of eleven cards).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-iptc-photo-metadata-tests",
+   "name": "IPTC photo metadata tests"
+  },
+  "qualifier": null,
+  "reached": "proximal_substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "You can explore the official [IPTC Photo Metadata Standard]"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Definition: A universally accepted industry standard for embedding administrative, descriptive, and copyright data directly into image files.; The composition is wholly of the IPTC Photo Metadata Standard (its schemas, categories, uses and tools); the tests (the IPTC's periodic checks of whether sharing sites and systems keep embedded metadata) are never composed. The standard is the tests' companion: the same operator's standard, the carrier the tests test and the framework they are run in (F38, F46). target_absent applies.; beneath the gate: PER 0.895",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Target looks wrong for the address: the address 'IPTC photo metadata' names the standard, not the tests (the field ledger's own B_note: 'The address names the standard; the census row is the tests'). Read against the tests the observation is a proximal substitution under target_absent; read against the IPTC Photo Metadata Standard the composition would be close to same (definition, Core and Extension schemas, the 2025.1 AI properties, Google Images, GetPMD all match its pages). Beneath the gate only the framework token (the standard) survives. The composition's one gesture toward the tests' concern is 'Rights & Ownership' and 'Protects copyright' on a card, not the stripping the tests measure. The 2025.1 version is described correctly as recent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -224,6 +327,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD0.CAPTURE",
- "axn": "AXN:0AD0.CAPTURE.📏🔅🕕🚪○↗️",
+ "axn": "AXN:0AD0.CAPTURE.🌾🪝🔀✋🌔🚩",
  "record_url": "https://www.alexanarch.org/captures/iptc-photo-metadata-aio-20261029/"
 }

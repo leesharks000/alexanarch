@@ -111,7 +111,145 @@
  },
  "per_note": "No person named in the answer (Lee Sharks on the Medium card); SPXI and spxi.dev named; no deposit number or identifier in the answer; all seven cards archive-controlled or authored.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Reading the SPXI (Semantic Packet for eXchange & Indexing) protocol"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "Reading the SPXI (Semantic Packet for eXchange & Indexing) protocol not merely as a technical standard for Generative Engine Optimization (GEO)",
+    "against": "SPXI's relation to GEO as its records state it: SPXI is set against SEO and GEO and nests GEO as a layer (#660, #61); here GEO is carried as SPXI's own category"
+   },
+   {
+    "atom": "purpose",
+    "span": "shifts its utility from search engine defense to a radical theory of composition",
+    "against": "the purpose of durable entity inscription, distinct from SEO/GEO ('SPXI is not a content optimization service'), recast as search-engine defense"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.727,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.885
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Reading the SPXI (Semantic Packet for eXchange & Indexing) protocol not merely as a technical standard for Generative Engine Optimization (GEO), but explicitly as a formalized writing practice and contemporary poetics, shifts its utility from search engine defense to a radical theory of composition.; SPXI is composed as SPXI and its methods inventoried, but typed at the outset as a GEO standard whose 'utility' is 'search engine defense', the category its records refuse; SPXI-gnΩsis's tooth and acts are folded into it as SPXI methods.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "The inversion governs (calibration_rules_d rule 1): the composition carries 'an active practice of durable inscription' (purpose) and 'Inscribing fenced markdown JSON-LD fragments' (lineage, the encoding), but both atoms are set against the record by the opening GEO typing, which the entity's inversion guidance names ('recasting it as SEO/GEO'); both marked absent. A reader who reads the GEO clause as a mere framing to be exceeded would record no inversion and mark both present. claim boundary absent on the same relabel and on inflations ('SPXI dictates that no composition exists at a single length'). No producer, steward, institution, corpus or commercial standing named (Lee Sharks only on the Medium card of #1703). No operator turn after the query."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -200,6 +338,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA1.CAPTURE",
- "axn": "AXN:0AA1.CAPTURE.♍🕗♎🏰♎🌉",
+ "axn": "AXN:0AA1.CAPTURE.➕⚪🔓🔓🪧🕑",
  "record_url": "https://www.alexanarch.org/captures/spxi-poetics-reading-aio-20261028/"
 }

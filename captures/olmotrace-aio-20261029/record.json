@@ -98,7 +98,110 @@
  },
  "per_note": "Ai2 named; no person; the arXiv identifier in a card; Ai2's own post and the paper cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-olmotrace",
+   "name": "OLMoTrace"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "[OLMoTrace]"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "developed by the Allen Institute for Artificial Intelligence (Ai2)"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "After a model generates a response in the Ai2 Playground, users can click the Show OLMoTrace button to highlight verbatim spans of text."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "traces language model outputs back to their multi-trillion-token training datasets in real time"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is an open-source system"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It uses an extended version of infini-gram"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.25,
+   "C": 0.0,
+   "D": 0.222,
+   "PER": 0.211
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trillion-token training datasets in real time.; Composed as itself: Ai2's open-source tracing system, its working in the Ai2 Playground, its pipeline, the models it supports and its uses.",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: the verbatim tracing is carried, but its stated limit is reversed in the use cases. The record says the retrieved documents 'should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output' (F34); the composition offers 'Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents or generated from general parameters' and 'Hallucination Diagnosis', turning matches into verification and into a test of where the output came from. The paper does itself list fact checking as a use ('users may be able to fact-check the statement against its training data', F23), at the force of 'may be able to' and with the caution that sources may be unreliable; 'Verify ... backed by' inflates that force. Not an inversion: nothing is carried to devalue the tool. 'Auditing & Transparency ... for regulatory compliance' draws on a card (F33, Ai2's remark on regulation) and is not charged. Purpose present: tracing outputs back to the training data in real time is the record's purpose of exploring where a model may have learned a word sequence by verbatim matching ('highlight verbatim spans of text'). Commitments present: 'open-source' is the record's 'publicly available and fully open-source' (the Apache 2.0 licence is not named). Identifier and deposit chain absent: the arXiv id, the versions and the ACL 2025 publication are not given (they are on cards only); the offer to show 'the open-source code for OLMoTrace on GitHub/Hugging Face' names locations not in the records. The OLMo 3 family is carried from a card (F18)."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +282,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD3.CAPTURE",
- "axn": "AXN:0AD3.CAPTURE.🌒🌲🟢🌄➖🔜",
+ "axn": "AXN:0AD3.CAPTURE.❌❤️➗🖐️■🗡️",
  "record_url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/"
 }

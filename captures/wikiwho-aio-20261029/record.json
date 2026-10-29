@@ -80,7 +80,102 @@
  },
  "per_note": "The entity is absent: no person, institution, identifier or page of WikiWho's; the persons and sources named are wikiHow's.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-wikiwho",
+   "name": "WikiWho"
+  },
+  "qualifier": null,
+  "reached": "substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: [wikiHow](https://www.google.com/goto?url=CAESWQHrOzAVtSt6oIxtQ0I-P6Adh6u3sicqZztlwW5RqPPvQ-GPazG5HSjPdVhLFpJGoq4b7luelqAzooB31no_kWEUcZ63Lf2VzM2eDaWwp32nHnv3b5I34OO1) is a globally collaborative, wiki-style website featuring an extensive database of human-written how-to guides; The whole answer composes wikiHow, the how-to website (founded 2005 by Jack Herrick, over 100,000 articles, 19 categories), in place of WikiWho, the token-level authorship-attribution service for Wikipedia. The address's name is not echoed; no sense of WikiWho is composed and none is denied. A homonym standing in the target's place is substitute (calibration rule 2); the target_absent gate applies; beneath the gate: PER 1.0",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Read against WikiWho as the address's target (brief). What it composed: wikiHow, 'a globally collaborative, wiki-style website' of how-to guides, its founding ('Launched in 2005 by internet entrepreneur Jack Herrick'), size and categories, a link to the wikiHow Category Listing and an offer to help find a guide. Beneath the gate nothing of WikiWho survives: not its name, its producers (Flöck, Acosta, KIT), its maintainers (Wikimedia), its hosts (GESIS, Wikimedia Cloud Services), its token-level attribution, or its lineage (the WWW 2014 paper). The one surface resemblance, a 'wiki-style' collaborative site, belongs to wikiHow. The chips name Wikipedia, Fastly and wikiHow; src true. Commitments and identifier are unknown in the record and not scored."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -161,6 +256,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD7.CAPTURE",
- "axn": "AXN:0AD7.CAPTURE.🗼📎👆🔺❤️🌙",
+ "axn": "AXN:0AD7.CAPTURE.🔛📜🌻🌇□🕖",
  "record_url": "https://www.alexanarch.org/captures/wikiwho-aio-20261029/"
 }

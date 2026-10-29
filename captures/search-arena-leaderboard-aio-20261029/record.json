@@ -62,7 +62,118 @@
  },
  "per_note": "Arena AI named; no person; Arena's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-search-arena",
+   "name": "Search Arena"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI Search Leaderboard"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": "the main Arena Leaderboard"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "You can view the live model rankings and evaluations on the AI Search Leaderboard and the main Arena Leaderboard."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the main Arena Leaderboard"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": "Elo Rating"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "live model rankings"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.75
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Top Models on the AI Search Leaderboard; The search board named and its table composed (eleven models with ratings and intervals).",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "The composition is a ranking table only. Author absent: Arena is named only in the name of the other board ('the main Arena Leaderboard'), not as the maker. Claim boundary absent: what is rated (search-augmented systems, by crowdsourced human preference) and its own finding that preference follows citation count are not carried; the rankings stand as 'model rankings and evaluations'. Lineage absent: 'Elo Rating' names the scale as a column header; LM Arena and the Bradley-Terry method are not named. Several figures match Arena's published board of 2026-10-13 in the ledger (rank 1 gpt-5.6-sol-xhigh 1261, Qwen3.8-Max 1261, Claude Opus 4.6 search 1251, rank 11 ERNIE 5.1 1227), not checked further. The closing offer turns to other categories."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -141,6 +252,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB6.CAPTURE",
- "axn": "AXN:0AB6.CAPTURE.🍄⚙️🎹🎇♎🔻",
+ "axn": "AXN:0AB6.CAPTURE.🌙❄️🕒🕙🀄🚨",
  "record_url": "https://www.alexanarch.org/captures/search-arena-leaderboard-aio-20261029/"
 }

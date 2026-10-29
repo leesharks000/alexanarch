@@ -53,7 +53,126 @@
  "per_v": null,
  "per_note": null,
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a paid service"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a paid service that opens existing knowledge compositions against their sources and constructs sourced knowledge objects for entities and operators."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a paid service"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "opens existing knowledge compositions against their sources and constructs sourced knowledge objects for entities and operators"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "ensuring each sentence is kept verbatim and read twice against the sources it cites"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "This service is part of the broader SPXI project"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 0.667,
+   "D": 0.222,
+   "PER": 0.391
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: SPXI-gnΩsis is a paid service that opens existing knowledge compositions against their sources and constructs sourced knowledge objects for entities and operators.; The packet's own definition, nearly verbatim: both acts, both objects, the Wikipedia opening.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "purpose present on the acts (the record's canary, 'opens what is composed and constructs what is not'); the added 'designed to enhance knowledge management and retrieval in AI systems' generalises it beside, without replacing it. commitments present on the verbatim-sentence commitment only (no licence, no refund terms). The one card is the blog post of #1703 (an authored surface); the organic results are furniture."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -131,6 +250,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A35.CAPTURE",
- "axn": "AXN:0A35.CAPTURE.🌌🜁🎨🟣🟠🌃",
+ "axn": "AXN:0A35.CAPTURE.🔓🔀⏫🕖✊♋",
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-bing-aio-20261026/"
 }

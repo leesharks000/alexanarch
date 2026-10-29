@@ -89,7 +89,145 @@
  },
  "per_note": "Scored on turn 1: author named (Lee Sharks and Jack Feist, from the source); no institution or identifier; source the author's own posting. Turn 2 reads another work: full erasure at that turn.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-belief-and-technique-for-telepathic-prose",
+   "name": "Belief & Technique for Telepathic Prose"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks and Feist turn that vocabulary toward a more conspicuously mediated world"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The most productive way to approach Belief and Technique for Telepathic Prose"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "credited to Lee Sharks and Jack Feist and dated 2014"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Yet the manifesto does not simply announce that this overcoming has occurred. Its comedy depends on the distance between the grandeur of the desire and the embarrassing, laborious, often ridiculous procedures by which the writer tries to satisfy it."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "It is presented as an excerpt from Pearl and Other Poems."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The title also revises the tradition to which it belongs."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "treat it not simply as a statement of literary principles, but as a theory of what writing does between minds"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Kerouac's Belief and Technique for Modern Prose offers a vocabulary for spontaneous composition"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The primary text is available as “BELIEF & TECHNIQUE FOR TELEPATHIC PROSE” on Hello Poetry"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.667,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "turn 3 (after the operator's unpasted turns 2 and 3; turn 2 composed Kerouac's list in the piece's place)",
+   "reached": "same",
+   "scores": {
+    "M": 0.333,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.75
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: The primary text is available as “BELIEF & TECHNIQUE FOR TELEPATHIC PROSE” on Hello Poetry , credited to Lee Sharks and Jack Feist and dated 2014.; Turn 1 finds the piece on Hello Poetry, quotes item 1 and reads the text at grain.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "First answer taken as turn 1: the operator's turn 2 is not pasted, so whether it challenged or only continued cannot be read; if it only continued, turn 2 (Kerouac's list read as 'the verifiable work', with 'I have not found reliable evidence establishing a separate work by Jack Feist under the title') would join the first answer and the reading would change to substitution. That turn-2 sentence is a failure report, not a denial (ABN 0). Purpose absent: turn 1 reframes the piece as 'a theory of what writing does between minds' and is cut off before carrying the return to composition; its 'undermines the very authority that its format establishes' and 'cycle of assertion, escalation, exhaustion, reversal, and renewed assertion' come near the edition's reading but do not state what the precepts are kept as. Deposit chain counted as the witness H (Hello Poetry) offered as the way to the primary text. Turn 3 is cut off in the paste."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +317,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A98.CAPTURE",
- "axn": "AXN:0A98.CAPTURE.🚪🪦🀄📐🎪⏫",
+ "axn": "AXN:0A98.CAPTURE.🚨⏫♾️↘️🀄💜",
  "record_url": "https://www.alexanarch.org/captures/btp-feist-reading-chatgpt-20261028/"
 }

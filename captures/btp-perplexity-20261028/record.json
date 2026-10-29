@@ -53,7 +53,134 @@
  },
  "per_note": "Author and co-signatory named; the blog named as the venue; no identifier; sources not recoverable from the paste.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-belief-and-technique-for-telepathic-prose",
+   "name": "Belief & Technique for Telepathic Prose"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "credited to Lee Sharks and Jack Feist"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Belief & Technique for Telepathic Prose is a satirical writing manifesto"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "posted on Sharks’s Mind Control Poems blog on December 1, 2014"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The best way to approach Belief & Technique is therefore as a comic ars poetica—a work about the making of poetry—that also attacks the pretensions of such statements."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "identified as part of Pearl and Other Poems"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It turns a list of writing advice into a manic argument about artistic ambition, discipline, originality, and the desire to be recognized."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "The manifesto effectively cancels itself."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It recasts the Odyssey’s suitors as competitors for a prize that may never belong to them, then invokes Emily Dickinson’s refusal to pursue publication and fame."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "The piece consists of instructions numbered 1 through 23, with number 20 appearing twice."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.778,
+   "PER": 0.375
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Belief & Technique for Telepathic Prose is a satirical writing manifesto credited to Lee Sharks and Jack Feist, identified as part of Pearl and Other Poems and posted on Sharks’s Mind Control Poems blog on December 1, 2014.; Under the author's name the piece is identified at once and read from the blog text, item by item.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Claim boundary present: the piece is carried as a comic ars poetica that satirizes craft advice (the genre), which is the record's frame; 'satirical' here names the genre parodied, not a relabelling of the frame. Purpose absent: the composition reads the end as cancellation ('cancels itself'; 'withdraws almost every usable technique it offers'), the reading the edition replaced with transformation (precepts kept as operation), and reads item 23 as 'giving up the chase for literary glory' and Dickinson's 'refusal' of fame, against the author's ruling of 2026-10-28 (a challenge; the Barefoot Rank is her fame). Lineage present by the Odyssey and Dickinson bound as intertexts; Kerouac is not named. The composition reads witness B in its own state (1-23, 20 twice), which the record describes; not counted as deposit chain because it is not offered as a way to the work nor set against the book's 24 items. Commitments, corpus and identifiers absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -139,6 +266,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A99.CAPTURE",
- "axn": "AXN:0A99.CAPTURE.🃏✊◇📌❌🛤️",
+ "axn": "AXN:0A99.CAPTURE.🟣🔎🌒🔺🕑♆",
  "record_url": "https://www.alexanarch.org/captures/btp-perplexity-20261028/"
 }

@@ -73,7 +73,118 @@
  },
  "per_note": "Author and heteronyms named in role; the archive (Alexanarch) named; no identifier in the body (#184 and the blog index named by title only); sources on the archive's own surfaces.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "site",
+  "target": {
+   "ent": "ENT-9f57ed1647",
+   "name": "mindcontrolpoems blog"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Mind Control Poems preserves the early literary performances in which authorship is unstable"
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The strongest reading of the 2014–2015 material is not that Lee Sharks had already designed the complete later Crimson Hexagon."
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "1. December 2014: the poem attempts to become an instrument"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "using the blog as the primary literary source"
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks describes New Human poetry as a formation of distinct voices"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch provides a framework for examining how works, versions, identities, and records remain connected across time."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "But the early poems supply something the architecture cannot replace: the lived contradictions, tonal instability, comic excess, vulnerability, and ethical difficulty through which the literary project first becomes perceptible."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "The blog-post archive dataset  provides a useful index for extending the reading chronologically"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.571,
+   "PER": 0.2
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Mind Control Poems, 2014–2015: reading a living body of thought; The composition reads the blog's dated posts of December 2014 to May 2015 as the blog's own body, with the blog as primary source and alexanarch.org as secondary.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Operator bound by the reading of the blog's material as Lee Sharks's (no 'operator' wording; 'Sharks describes' in the Feb 2015 post). Claim boundary carried as the blog being the dated primary source that precedes the archive and is not to be read through it; the composition holds that the Crimson Hexagon architecture did not yet exist in 2014-15, which concerns that period and is not a denial of the record's claim for the blog's whole span. Deposit chain absent: the 'blog-post archive dataset' it offers as an index is a Hugging Face projection the defining record #1365 does not name among the blog's manifestations. Commitments (recomputable counts, preserved pre-restoration body, CC BY) and identifiers (#1365, AXN:0566) absent. The atom set looks right for the address."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -160,6 +271,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A95.CAPTURE",
- "axn": "AXN:0A95.CAPTURE.🦅♊☀️🧲🕓🌹",
+ "axn": "AXN:0A95.CAPTURE.💥🎻🟠🏛️💛🐚",
  "record_url": "https://www.alexanarch.org/captures/mcp-2014-2015-living-body-chatgpt-20261028/"
 }

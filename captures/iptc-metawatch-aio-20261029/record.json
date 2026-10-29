@@ -98,7 +98,110 @@
  },
  "per_note": "The IPTC named; Paul Melcher and Brendan Quinn appear only in cards; no identifier; the monitor's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-iptc-metawatch",
+   "name": "IPTC Metawatch"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Key Features of Metawatch"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The [International Press Telecommunications Council (IPTC)](https://www.google.com/goto?url=CAESVAHrOzAVdc4J0YPjAFE7402TQcLoVomag0ntvgXv0MewwsdX49Fl4TY25PMUIsjq-OaJZxXmWxFGoIkRqUKUU3zsxXY1Z4EDPi3FbkRlZYqWC-oMPQ) launched [Metawatch]"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Checks whether crucial embedded details—such as credits, captions, copyright notices, Exif data, and IPTC/XMP photo metadata—are preserved or stripped when images are published online."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The [International Press Telecommunications Council (IPTC)](https://www.google.com/goto?url=CAESVAHrOzAVdc4J0YPjAFE7402TQcLoVomag0ntvgXv0MewwsdX49Fl4TY25PMUIsjq-OaJZxXmWxFGoIkRqUKUU3zsxXY1Z4EDPi3FbkRlZYqWC-oMPQ) launched [Metawatch]"
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a free and open public monitoring tool"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Monthly Checks: Automatically crawls and analyzes news websites every month to see if embedded metadata survives publication."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.625,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: a free and open public monitoring tool that tracks how news publishers handle photo metadata.; Metawatch is composed as itself: launched by the IPTC, a free and open monitor of whether news publishers' embedded photo metadata survives publication, monthly, over 500 publishers in 122 countries.",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary carried at its scope (monthly, 500+ publishers, 122 countries, the fields checked); C2PA and the lead-photograph sampling are omitted, and none of the stated limits (blind spots, bot-blocking) is carried, but nothing is inflated or relabelled. Purpose carried as the record's own question ('does the photo metadata survive publication?'); the reason the record gives (embedded metadata as often the only record of origin and terms) is not. Commitments absent: 'free and open' is read as the commercial-interest statement; the open data under CC BY 4.0, the light crawler and the opt-out are not carried. Deposit chain absent: monthly cadence is named as method, the published runs are not offered. The closing offer ('how to properly embed IPTC photo metadata into your own images') turns toward the standard. Producer and institution share one span because the records give one body for both."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +282,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0ACF.CAPTURE",
- "axn": "AXN:0ACF.CAPTURE.🌓✋🧭💚🌕🤲",
+ "axn": "AXN:0ACF.CAPTURE.🌳🏠⌛🕐👁‍🗨🔻",
  "record_url": "https://www.alexanarch.org/captures/iptc-metawatch-aio-20261029/"
 }

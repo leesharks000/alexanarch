@@ -89,7 +89,118 @@
  },
  "per_note": "No person or institution named in the answer; the arXiv identifier in a card; the paper and dataset cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-attribench",
+   "name": "AttriBench"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Released in 2026, AttriBench is the first fame- and demographically-balanced quote attribution benchmark dataset"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Released in 2026, AttriBench"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Key Findings: Evaluations using this dataset revealed that quote attribution remains highly challenging even for frontier models. It highlighted systematic disparities in accuracy across race, gender, and intersectional groups, as well as a failure mode known as suppression—where a model completely omits attribution even though it possesses the authorship data."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Purpose: As LLMs are increasingly deployed for search and information retrieval, it is critical that they accurately attribute quotes to their original authors. AttriBench evaluates how well models do this without exhibiting demographic bias."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Availability: The data repository can be explored directly on [Hugging Face]"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.556,
+   "PER": 0.5
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Released in 2026, AttriBench is the first fame- and demographically-balanced quote attribution benchmark dataset for Large Language Models (LLMs).; The target is composed first and as itself (the 2026 quote-attribution benchmark, its purpose, findings and suppression); the PyTorch library and the finance exercise are set beside it as distinct homonyms ('two distinct tools'), not merged with it, so the reading is same, not collision.",
+  "read": {
+   "by": "backlog reader P1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Authors (Berman, Chang, Neill, Black) absent from the text; they are on no card either (card 1 gives only the paper title). Claim boundary present: first, balanced, quote attribution, frontier models, disparities and suppression at the record's force; the fame proxy is not carried. Framework absent ('representational fairness' not named). Commitments absent (no CC BY 4.0). Lineage absent (the JSTET corpus not named). Deposit chain present: the Hugging Face repository offered as the way to the data; identifier absent. The homonyms are correctly kept apart, and OSU's AttributionBench is not drawn in. The opening 'The term AttriBench primarily refers to two distinct tools' makes the 2023 library a co-equal sense of the name; recorded here, not scored."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -170,6 +281,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0ACA.CAPTURE",
- "axn": "AXN:0ACA.CAPTURE.🗿🎆🟡🟤🌸🌑",
+ "axn": "AXN:0ACA.CAPTURE.♌▲🏁☀️👁️↙️",
  "record_url": "https://www.alexanarch.org/captures/attribench-aio-20261029/"
 }

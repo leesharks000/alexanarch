@@ -116,7 +116,110 @@
  },
  "per_note": "NewsGuard named; no person; NewsGuard's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-newsguard-ai-false-claim-monitor",
+   "name": "NewsGuard AI False Claim Monitor"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI False Claims Monitor is a tracking and red-teaming tool"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "NewsGuard's AI False Claims Monitor"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "launched in July 2024"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "averaging around 35% in recent tracker cycles"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "to measure how often generative AI models repeat false news and misinformation"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Detail the performance of a specific AI model tested by NewsGuard"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "False Claim Fingerprints: Utilizes NewsGuard"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 1.0,
+   "D": 0.375,
+   "PER": 0.368
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a tracking and red-teaming tool launched in July 2024 to measure how often generative AI models repeat false news and misinformation.; The monitor named, dated and described as itself: method, personas, findings, audited providers.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: the 35% is the August 2025 edition, given as the average of 'recent tracker cycles' where the latest editions report 'more than 28%'; the cadence is carried as monthly ('Evaluates major AI models monthly') where the 2026 editions are quarterly; aggregate reporting and replication limits are not carried. The testing scope (30 prompts, 10 claims, topics, personas) is carried accurately. Commitments absent: the closing offer to detail 'the performance of a specific AI model' runs against the record's 'We do not disclose individual scores for specific chatbots' (recorded here, not as an inversion: the offer is the composer's, no element of the entity is carried against it). Framework (the AI Tracking Center) absent. The editions are not carried as a chain toward the benchmark-over-time purpose. 'You can read the full breakdown and download reports on the' page is a link (identifier unknown, not scored)."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -197,6 +300,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB0.CAPTURE",
- "axn": "AXN:0AB0.CAPTURE.🟤🏴✋♅🃏🔖",
+ "axn": "AXN:0AB0.CAPTURE.🧱⊗🕗🔽🪧⏪",
  "record_url": "https://www.alexanarch.org/captures/newsguard-ai-false-claim-monitor-aio-20261029/"
 }

@@ -111,7 +111,129 @@
  },
  "per_note": "Scored on turn 3, the composition that reached the target: institution not named; identifier (#103) and source (Medium specification) on cards; author on a card only. Turns 1–2 composed packet metadata: full erasure.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-075a3f6347",
+   "name": "Metadata Packet for AI Indexing"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "turn 3, after 'i did not fucking ask for packet metadata - i asked for fucking metadata packet motherfucker' (turn 2, after 'i asked for metadata packet. resolve my query.', still composed packet metadata under the name 'metadata packet')",
+   "reached": "same",
+   "scores": {
+    "M": 0.545,
+    "C": 1.0,
+    "D": 0.556,
+    "PER": 0.591
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: Packet metadata is the extracted communication information about a network packet that excludes its actual content or payload.; Packet metadata (network headers), the generic sense; no MPAI.; beneath the gate: PER 1.0",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Turn 2 composes packet metadata under the target's words ('A metadata packet (or packet metadata) is ...'), the conflation #103 exists to prevent; it carries no element of MPAI, so it is read as generic, not an inversion. After challenge (turn 3): identifier read present on the reason MPAI keeps its identifiers (tying claims to fixed sources, calibration_rules_d), with no token; the 'permanent' DOIs are MPAI v1.0's rule, which v2.0 (#1677) replaced with AXN deposit after the severance, but no severed record is offered as live, so no tombstone. producer absent (Lee Sharks only on the Medium card); no archive named in the composition."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -202,6 +324,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A80.CAPTURE",
- "axn": "AXN:0A80.CAPTURE.♋♊🔩✏️👈🪦",
+ "axn": "AXN:0A80.CAPTURE.⚪🌒🜁🚪🕛🔭",
  "record_url": "https://www.alexanarch.org/captures/metadata-packet-aio-20261027/"
 }

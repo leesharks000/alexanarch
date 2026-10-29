@@ -134,7 +134,118 @@
  },
  "per_note": "MIT FutureTech named; no person; arXiv:2408.12622 on a card; MIT's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-mit-ai-risk-repository",
+   "name": "MIT AI Risk Repository"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "MIT AI Risk Repository"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "a living, open-access database developed by MIT FutureTech"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Scale: The database compiles over 1,700 distinct AI risks extracted from more than 65 published frameworks, industry guidelines, and policy documents."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "catalogs and standardizes artificial intelligence risks from dozens of global frameworks"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a living, open-access database"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "extracted from more than 65 published frameworks"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.222,
+   "PER": 0.35
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a living, open-access database developed by MIT FutureTech that catalogs and standardizes artificial intelligence risks from dozens of global frameworks.; The repository named and described as itself: scale, Causal and Domain Taxonomies, connected tools.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: none of the stated limits (single expert reviewer, subjective bias, document-bound scope, taxonomies without impact or likelihood, not advice) is carried, and the count joins version 4's 1,700 risks to version 3's 65 frameworks (version 4: 74). Commitments read present on 'open-access' (the record: 'free to use and openly available', 'free to copy and use'); CC BY 4.0 and the not-advice commitment are not carried, and the closing offer of a 'regulatory compliance check' runs near the record's 'Do not present AIRI datasets as legal, safety, or investment advice' (recorded, not an inversion: no element of the entity is carried against it). Framework (FutureTech's parents) absent. 'living' is a bare mention, not the chain advancing the purpose. No identifier given."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -214,6 +325,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AAF.CAPTURE",
- "axn": "AXN:0AAF.CAPTURE.♍❌🎹▶️🌻💜",
+ "axn": "AXN:0AAF.CAPTURE.🕌🌳🎇🔒🎭🌠",
  "record_url": "https://www.alexanarch.org/captures/mit-ai-risk-repository-aio-20261029/"
 }

@@ -93,7 +93,140 @@
  },
  "per_note": "Author named in the byline (Lee Sharks, with Jack Feist); no institution or identifier in the body; three archive-controlled source cards.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-belief-and-technique-for-telepathic-prose",
+   "name": "Belief & Technique for Telepathic Prose"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "co-credited to Lee Sharks and Jack Feist"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Belief & Technique for Telepathic Prose\" is a satirical literary manifesto"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "The text humorously mimics Kerouac's modernist rules for spontaneous writing, shifting the premise into the absurd realm of telepathy and mind control."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The piece appears as a \"Footnote to PEARL\" in the experimental poetry and metadata project Pearl and Other Poems."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "The text humorously mimics Kerouac's modernist rules for spontaneous writing"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": "parodying Jack Kerouac's famous \"Belief & Technique for Modern Prose\""
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "collaborative online forum text"
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "Detail Jack Kerouac's original 30 points from his modern prose manifesto",
+    "against": "purpose: the model the piece takes its frame from is carried as 'the original' and offered as the next step in the work's place, the anthology inside the frame left out (the edition: 'a reading that stops at Kerouac sees the frame and misses the anthology inside it')"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.667,
+   "D": 1.0,
+   "PER": 0.667
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a satirical literary manifesto and collaborative online forum text co-credited to Lee Sharks and Jack Feist, parodying Jack Kerouac's famous \"Belief & Technique for Modern Prose\"; The piece is held under its own title and makers, within Kerouac's frame.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Claim boundary absent: the frame relabelled 'satirical' and reduced to a parody of Kerouac's one list (the record: it parodies the genre of the writer's rules, and filings under Kerouac are half right). Tradition absent for the same reason: the genre is given as Kerouac's rules alone. Lineage is named and bound ('parodying Jack Kerouac's'), but the next step offers Kerouac's 'original 30 points' in the work's place; recorded as an inversion, so lineage is absent. This inversion is a judgement call: the alternative is lineage present and no inversion. 'Collaborative online forum text' names witness F's venue as the piece's kind, a bare mention, not the chain offered as a way to the work. Date absent (the dated forum card is source strip). Corpus absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -183,6 +316,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A97.CAPTURE",
- "axn": "AXN:0A97.CAPTURE.🔜🦋🔼🧪🌊🌲",
+ "axn": "AXN:0A97.CAPTURE.∞🖤🥁🔻🧊♠️",
  "record_url": "https://www.alexanarch.org/captures/btp-exact-aio-20261028/"
 }

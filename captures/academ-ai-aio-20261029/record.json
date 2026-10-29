@@ -80,7 +80,110 @@
  },
  "per_note": "No person; arXiv:2411.15218 on its card; the database's own site not cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-academ-ai",
+   "name": "Academ-AI"
+  },
+  "qualifier": null,
+  "reached": "proximal_substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Academ-AI most notably refers to"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It highlights how characteristic AI text patterns (such as leftover conversational prompts or disclaimers) slip past peer review"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": null,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Academ-AI most notably refers to a research study and framework documenting the undisclosed use of generative artificial intelligence in academic publishing.; The name is reached and the entity's own dataset paper is composed in its place: 'a research study and framework', 'The paper titled ... analyzes hundreds of examples'. The database itself (the repository of examples, its site, its ongoing listing, errata and stealth-revision labels) never appears; the census tags the entity 'NOT only the dataset paper (arXiv:2411.15218)'. The paper is the target'; beneath the gate: PER 0.667",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Beneath the gate: the name survives, and the purpose (to highlight publishing oversights) survives as the paper's finding bound to the name ('It highlights how ... slip past peer review'). Claim boundary absent: the database is relabelled 'a research study and framework', and 'suspected' is dropped (the record documents SUSPECTED undeclared use; the composition states 'undeclared LLM ... phrasing' as fact); the stated limits (manual search, Google Scholar, English only, a small fraction) are not carried. No author (Alex Glynn), no date. The arXiv number appears only in card 1's title (cards never satisfy an atom). The three homonyms are set apart correctly as 'Similar-Sounding Platforms', not merged. No inversion, no standing substitution."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -160,6 +263,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA4.CAPTURE",
- "axn": "AXN:0AA4.CAPTURE.🙏🔄🌲🪞❌🧱",
+ "axn": "AXN:0AA4.CAPTURE.♈🎭🔜🔆🌿🔍",
  "record_url": "https://www.alexanarch.org/captures/academ-ai-aio-20261029/"
 }

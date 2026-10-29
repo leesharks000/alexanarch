@@ -125,7 +125,110 @@
  },
  "per_note": "The Getty Research Institute, Knoedler and Goupil named; no person; no identifier; the Getty's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-getty-provenance-index",
+   "name": "Getty Provenance Index"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The [Getty Provenance Index]"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "maintained by the Getty Research Institute"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Core Sources: Transcriptions from archival inventories, historic auction catalogs, and art dealer stock books."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Contains over 12 million linked open data records powered by the Arches platform."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "provides over 12 million records tracking the ownership, circulation, display, and transfer of artworks"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is an open-access digital database"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "You can search and explore the data directly through the [Getty Provenance Index Search Portal]"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.25,
+   "PER": 0.158
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an open-access digital database maintained by the Getty Research Institute that provides over 12 million records tracking the ownership, circulation, display, and transfer of artworks.; Composed as itself: the Getty Research Institute's open-access provenance database, its scale, its Arches platform, its sources and its search portal.",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary present: over 12 million records transcribed from inventories, auction catalogs and dealer stock books, tracing ownership and transfer of artworks; the stated limit (coverage varies by region, period and document type) is not carried. One error within it: 'the 11 painting stock books of the New York dealership M. Knoedler & Co. and Goupil & Cie (covering 1872–1970)' merges the two dealers, whose records the own page gives separately (Goupil's 15 stock books, Paris 1846-1919; Knoedler's 11, New York 1872-1970, F40); held as a detail error, not a relabelling. Date absent: neither the founding (1974, 1981) nor the digital dates (1984, 1994, 1998) are given. Purpose present: tracking ownership and transfer of artworks is the record's 'trace the ownership, movement, and histories of artworks'; provenance research as its end is implied, not stated. Commitments present on open access, the commitment the own pages state ('at the forefront of ... open access'). Lineage absent: the Getty Museum's Paintings department and the Getty Information Institute are not named. Deposit chain present: the search portal (the Remodeled Index) is offered as the way to the data; the Legacy Index and the CSV exports are on cards only. Identifier is unknown in the record and not scored."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -206,6 +309,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0ACE.CAPTURE",
- "axn": "AXN:0ACE.CAPTURE.🔗☁️🥁🔐↗️🕕",
+ "axn": "AXN:0ACE.CAPTURE.🃏🕕🟠🌲🎯⏩",
  "record_url": "https://www.alexanarch.org/captures/getty-provenance-index-aio-20261029/"
 }

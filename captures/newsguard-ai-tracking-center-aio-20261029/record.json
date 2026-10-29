@@ -89,7 +89,102 @@
  },
  "per_note": "NewsGuard named; no person; NewsGuard's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-newsguard-ai-tracking-center",
+   "name": "NewsGuard AI Tracking Center"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The NewsGuard AI Tracking Center is an ongoing investigative project by [NewsGuard"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The NewsGuard AI Tracking Center is an ongoing investigative project by [NewsGuard"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "AI Content Farms: Identified 3,749+ unedited AI content farm sites operating across 16 languages that mimic human news layouts and monetize via programmatic advertising."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "monitors and catalogs artificial intelligence-generated misinformation, unreliable AI news sites, and AI tool vulnerabilities"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": "False Claim Fingerprints: A continuously updated database tracking false narratives across text, images, audio, and video to help safeguard AI models and brands."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": null,
+   "D": 0.625,
+   "PER": 0.353
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an ongoing investigative project by [NewsGuard; The Center named and described as itself: AI content farms with count and criteria, chatbot audits, publisher blocking, its monitor.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary read present: the count, the languages and three of the four criteria (unedited, i.e. without human oversight; presented as human news; AI-produced) are carried at the record's force; the disclosure criterion and the exclusion of AI-assisted sites with oversight are not. Under 'Core Tools & Resources' the composition also folds NewsGuard's separate Brand Misinformation Monitoring service (card 5, its own product page) into the Center; recorded, not scored. Lineage absent: False Claim Fingerprints is named as a product of the Center, not as the catalog its debunks are drawn from. Framework unknown and identifier unknown, not scored. The AI False Claims Monitor is carried as part of the Center, matching the census has_part."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -169,6 +264,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB1.CAPTURE",
- "axn": "AXN:0AB1.CAPTURE.🔻🌋🗼🏔️✏️☀️",
+ "axn": "AXN:0AB1.CAPTURE.🧭➕🗿🌄🕒⚫",
  "record_url": "https://www.alexanarch.org/captures/newsguard-ai-tracking-center-aio-20261029/"
 }

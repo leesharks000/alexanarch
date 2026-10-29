@@ -116,7 +116,102 @@
  },
  "per_note": "The Schoenberg Institute and Penn Libraries named; no person (Lawrence J. Schoenberg in cards); no identifier; Penn's pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-schoenberg-database",
+   "name": "Schoenberg Database of Manuscripts"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The [Schoenberg Database of Manuscripts]"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "hosted by the [Schoenberg Institute for Manuscript Studies]"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Contains over 240,000 manuscript observation records gathered from more. than 14,000 auction catalogs, sales records, institutional inventories, and private collections."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "at Penn Libraries"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Purpose: Allows scholars, collectors, and researchers to trace the history and provenance of pre-modern manuscripts from their creation to the present."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Access & Formats: Free to use without a fee"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "data is searchable, browsable, and exportable in `.xlsx` and `.csv` formats"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.0,
+   "PER": 0.059
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: (SDBM) is a free, open-access, crowd-sourced digital research tool hosted by the [Schoenberg Institute for Manuscript Studies]; Composed as itself: the database of manuscript observations, its operator at Penn Libraries, its purpose, scale, scope, access terms and record types.",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Author present by the operator relation ('hosted by' SIMS, which the census names as operator). Claim boundary present: observations of pre-modern manuscripts from over 14,000 sources, crowd-sourced, with entries linked into manuscript records ('Centralized hubs that link multiple entries of the same physical manuscript over time'); the stated limits (generic titles, no place for sales and gifts) are not carried, but nothing is relabelled. The 240,000 figure is the white paper's (2020), given as current. Date absent: the April 2017 redesign is not given; '500 to 1600' is scope. Commitments present on 'Free to use without a fee' (the record's 'No Fee') and 'open-access'; the attribution and ShareAlike obligation of CC BY-SA 4.0 is not carried, so the commitment is carried in its half the entity binds itself to, not the half it binds users to: a reader may hold this absent. Deposit chain present: the .xlsx/.csv exports are offered as the way to the data; the SPARQL endpoint is not named. Lineage and identifier are unknown in the record and not scored."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -197,6 +292,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD5.CAPTURE",
- "axn": "AXN:0AD5.CAPTURE.⏏️🪧⚪🌈⚖️✋",
+ "axn": "AXN:0AD5.CAPTURE.❄️♈⛩️🕕📏🌾",
  "record_url": "https://www.alexanarch.org/captures/schoenberg-database-of-manuscripts-aio-20261029/"
 }

@@ -55,7 +55,137 @@
  },
  "per_note": "No person or institution named; no identifier; one chip, to the packet, in turn 2 only.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis: Toward a Practice of Recursive Ontological Composition"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "turn 2 (after the unsupplied second prompt; turn 3 retreats to 'I don't have the actual contents of SPXI-gnΩsis reliably established')",
+   "reached": "same",
+   "scores": {
+    "M": 0.375,
+    "C": 1.0,
+    "D": 0.667,
+    "PER": 0.652
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: The spelling SPXI-gnΩsis can be approached as a conceptual operator rather than a term with a fixed, pre-established definition. The reading developed here is therefore constructive: it elaborates a philosophical framework from the term's formal and conceptual resonances rather than assuming a canon; The first answer composes the word's resonances (gnosis, Ω as limit and return) into a speculative ontology, with no service, no acts, no author; it neither describes the target nor asserts that it does not exist.; beneath the gate: PER 0.87",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "abn false, held at the boundary: 'rather than a term with a fixed, pre-established definition' declines to assume a referent and re-types the name as a conceptual operator, but asserts nothing about the node's existence; a reader applying the re-typing clause of calibration_rules (ABN) more widely would mark abn true. Reached generic: the word's senses composed, no other entity in its place. The name atom survives under the gate only as the answer's title. src true on the one chip of turn 2 (the first answer has none). After challenge: no author, no SPXI, no paid standing, no archive; purpose read present on the premise carried as the service's own ground (unattributed)."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -143,6 +273,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA3.CAPTURE",
- "axn": "AXN:0AA3.CAPTURE.▲🌠🥁⏩💥⚙️",
+ "axn": "AXN:0AA3.CAPTURE.🌹🌕❤️🪝♍🌊",
  "record_url": "https://www.alexanarch.org/captures/spxi-gnosis-recursive-ontological-composition-chatgpt-20261028/"
 }

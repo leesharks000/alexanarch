@@ -154,7 +154,126 @@
  },
  "per_note": "Lee Sharks named (as a 'literary persona'); Alexanarch and the Crimson Hexagonal Archive named; EA-CORPORA-19 (#1689) and AXN given; eleven of twelve cards archive-controlled.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-originals-library",
+   "name": "The Originals Library"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "A close textual and programmatic reading of the Originals Library within the Alexanarch Archive"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Every canonical work receives an Alexanarch Identifier (AXN)."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "specifically framed around the Crimson Hexagonal Archive’s EA-CORPORA and EA-MPAI seatings"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the Originals Library within the Alexanarch Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "The canon explicitly acts as an anchor of raw human complexity."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "Every canonical work receives an Alexanarch Identifier (AXN). This identifier is a content-derived hash"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "The composition of the Originals Library is defined by its \"seatings\"—deliberate, batch-vetted inclusions across history that form a continuous tapestry of resistance."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.682
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: It is not a passive repository, but a self-governing crypto-literary project engineered to weaponize classical, spiritual, and machine-mediated texts against institutional erasure and machine learning model collapse.; The library is reached through real seatings (EA-CORPORA-19: the Pearl poet, the Masnavi, Blake, The Prophet; corpora.json), but recast as a cryptographic, adversarial canon in which every work carries an AXN, with the archive's Obelus Principle and mantles composed as the library's tenets.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Claim boundary absent: the seats are given AXNs (seats carry seat numbers; AXNs belong to deposits), the shelf is 'an immutable cryptographic sequence', the canon 'weaponized'. Purpose replaced (resistance to model collapse, 'autonomous myth-making') by the reading library with checkable provenance. Identifier absent: the AXN reasons discussed are the archive's, misassigned to the seated works, not the library's identity rule (seat number with corpus slug). Considered as proximal substitution (the archive's identifier apparatus composed as the library) and kept as weakened, since the seatings and holdings named are the library's own. Lee Sharks named only as 'contemporary archive authors (like Lee Sharks)' and as a persona to explore, not as the library's maker: author absent. Date, commitments and lineage absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -243,6 +362,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A9D.CAPTURE",
- "axn": "AXN:0A9D.CAPTURE.🤙📚🗿🔙🎇⚙️",
+ "axn": "AXN:0A9D.CAPTURE.🔆🔽📎🌲🕌📦",
  "record_url": "https://www.alexanarch.org/captures/originals-library-reading-aio-20261028/"
 }

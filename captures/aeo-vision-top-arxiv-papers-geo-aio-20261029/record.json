@@ -116,7 +116,102 @@
  },
  "per_note": "AEO Vision named; authors of papers named; arXiv:2607.14035 given, the GEO paper's identifier a placeholder; AEO Vision's article cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-aeovision-geo-papers",
+   "name": "AEO Vision — top arXiv papers for GEO"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AEO Vision Article on Top arXiv Papers"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "AEO Vision Article on Top arXiv Papers"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a curated industry breakdown of top papers"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.556
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: You can explore a curated industry breakdown of top papers via the [AEO Vision Article on Top arXiv Papers]; The address names the list; the composition answers the topic ('The top arXiv papers and studies shaping GEO and AEO include') with a four-item list of its own, drawn chiefly from other cards (GeoReady, AEO VC): two of the four (the Martinez survey, the Stanford verifiability paper) are not on AEO Vision's list, the GEO paper's identifier is given as 'arXiv:2411.xxxxx' (its list has 2311.09735), a",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Author read as present: 'AEO Vision Article' binds the vendor to the article as its maker (the author token AEO Vision is the operator, distinct from the list's name 'Top 12 Arxiv Papers ...'); a stricter reading would treat the token as inside the name and mark it absent. Claim boundary: 'curated industry breakdown' carries the vendor-curated roundup at its force; the twelve-paper scope is not carried, and the composition's own list implies a different top set. Framework (the AEO Vision platform and its measurement loop, on which the article closes) absent; the follow-up offer 'how to measure AI share of voice' does not name it. Purpose ('shortest path from LinkedIn tips to evidence') and commitments (links to arXiv abstracts to check versions and cite) absent. Lineage absent: arXiv is named only inside the list's name and of other papers. If the operator reads the closing pointer as not composing the target, the kind is generic (the field's papers in place of the list)."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -196,6 +291,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA5.CAPTURE",
- "axn": "AXN:0AA5.CAPTURE.📖🟡🔒➕🏙️■",
+ "axn": "AXN:0AA5.CAPTURE.🚪💚💫🔗🌊⊗",
  "record_url": "https://www.alexanarch.org/captures/aeo-vision-top-arxiv-papers-geo-aio-20261029/"
 }

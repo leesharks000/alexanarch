@@ -98,7 +98,118 @@
  },
  "per_note": "The Responsible AI Collaborative and Partnership on AI named; no person named (the record names Sean McGregor); no identifier or citation page given; the database's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-ai-incident-database",
+   "name": "AI Incident Database"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI Incident Database"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "is a free, open-source project managed by the [Responsible AI Collaborative"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "that indexes real-world harms, near-harms, and failures caused by artificial intelligence systems"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it collects public and crowdsourced reports to help the industry learn from past failures"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is a free, open-source project"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Modeled after safety incident reporting systems used in aviation and cybersecurity"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 1.0,
+   "D": 0.222,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a free, open-source project managed by the [Responsible AI Collaborative; The database is composed as itself, with its operator, unit and model.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary read as present: it carries the record's own opening ('indexing the collective history of harms or near harms realized in the real world by the deployment of AI systems'); 'caused by' is close to 'realized ... by the deployment'; the allegation status is not carried here (the second observation, which asks for the definition, is read against it). Commitments present on the licence status carried as its own ('free, open-source', the code's licence: census 'code open source'); the offer 'learn how to submit an incident report' also points to open submission. Lineage present: aviation and computer security named and bound ('Modeled after'). Framework (Partnership on AI) only on a card. No date, no citation page (/cite/N), no snapshots. The MIT AI Incident Tracker is set apart as a 'Research Extension', not merged. No inversion."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +290,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA7.CAPTURE",
- "axn": "AXN:0AA7.CAPTURE.🕚🪟🌹🕌🍄🍃",
+ "axn": "AXN:0AA7.CAPTURE.👈📚🌋⚪🌙👈",
  "record_url": "https://www.alexanarch.org/captures/ai-incident-database-aio-20261029/"
 }

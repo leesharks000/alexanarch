@@ -38,7 +38,126 @@
  "per_v": null,
  "per_note": null,
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "**SPXI-gnΩsis** is a specialized service and component"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The SPXI protocol and its associated services were developed by researchers and systems architects operating under pseudonyms/heteronyms, most notably **Rex Fraction** and **Lee Sharks** [[48]]."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "These efforts are organized under the **Semantic Economy Institute**"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the **Crimson Hexagonal Archive** [[51]]"
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "is a specialized service and component within the **SPXI (Semantic Packet for eXchange & Indexing)** protocol framework [[2]]"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.25,
+   "C": 0.333,
+   "D": 0.778,
+   "PER": 0.478
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Within this architecture, SPXI-gnΩsis operates as a specific service layer (sometimes referenced alongside the \"Meaning Layer\" in technical documentation) that helps resolve, verify, or anchor semantic knowledge and provenance within the SPXI network [[56]].; The service is named, placed in SPXI and at gnosis.spxi.dev, and given a vague resolving/verifying function; the answer spends itself on SPXI, described as SPXI and not as the service. Neither act, neither object, not paid.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "producer read present, narrowly: Lee Sharks is bound to 'the SPXI protocol and its associated services', of which the answer has made SPXI-gnΩsis one; a stricter reading (author named only of the framework) would mark it absent. claim boundary absent ('helps resolve, verify, or anchor semantic knowledge and provenance'). purpose absent: 'Why It Exists' gives the framework's purpose (provenance erasure, semantic liquidation), not the service's. src false: the surface's markers are unexpanded and the paste carries no source list."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -118,6 +237,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A38.CAPTURE",
- "axn": "AXN:0A38.CAPTURE.🔙🔧➖🏙️🔺△",
+ "axn": "AXN:0A38.CAPTURE.♾️🌌✊∮📖🖐️",
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-qwen-20261026/"
 }

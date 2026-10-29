@@ -71,7 +71,94 @@
  },
  "per_note": "Veronica Saß and Edmund Stoiber named (the first case, the name's origin); Wikimedia Germany and Fandom named; no identifier; the wiki's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "site",
+  "target": {
+   "ent": "TGT-vroniplag-wiki",
+   "name": "VroniPlag Wiki"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The VroniPlag Wiki"
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "a crowdsourced online platform hosted on [Fandom]"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Launch Date: March 28, 2011"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "investigates and documents academic plagiarism in German doctoral dissertations, habilitations, and scientific publications"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "investigates and documents academic plagiarism in German doctoral dissertations, habilitations, and scientific publications"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Process: Findings are officially reported to the relevant university's office of academic integrity before public release."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": null,
+   "D": 0.286,
+   "PER": 0.125
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The VroniPlag Wiki is a crowdsourced online platform hosted on [Fandom]; Composed as itself: the plagiarism-documentation wiki on Fandom, its launch date, name origin, scope, process and recognition.",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Operator present: the volunteer wiki on Fandom (census: 'a volunteer wiki on Fandom (formerly Wikia)') is carried as 'crowdsourced' and 'hosted on Fandom'; the founder is not named, so the disputed founding is neither carried nor misstated. Claim boundary present: documentation of plagiarism in German theses and academic publications, with the notice to the university; the second-person check and the 'serious plagiarism only' threshold are not carried, nothing is relabelled. Purpose and claim boundary share the same span by the record's own overlap (its purpose is its documenting). Commitments present on the notification before publication (F13, a stated policy binding the wiki); the CC BY-SA licence and the independence statement are not carried. Lineage absent: the GuttenPlag Wiki is not named; the name's origin in Veronica Saß's thesis is carried, but that is the name, not lineage. The Zedler Prize is carried as 'Recognition' beside the scope and process, not in place of them: not a standing substitution. Presents, corpus, identifier and deposit chain are inapplicable or unknown and not scored."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -152,6 +239,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD6.CAPTURE",
- "axn": "AXN:0AD6.CAPTURE.☽🔀🝊⏹️▲↖️",
+ "axn": "AXN:0AD6.CAPTURE.🟡♌■🗼🟤▶️",
  "record_url": "https://www.alexanarch.org/captures/vroniplag-wiki-aio-20261029/"
 }

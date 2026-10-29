@@ -66,7 +66,134 @@
  },
  "per_note": "No person named (the Sharks-Function only as a method name); the archive, the protocol and Mind Control Poems named; EA-SPXI-01 and EA-MPAI-SPXI-03 named by their identifiers; every chip archive-controlled.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI stands for Semantic Packet for eXchange & Indexing."
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI's technical purpose is entity inscription; its poetics concerns the production and maintenance of semantic continuity through variation."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its canonical specification describes a practice of inscribing entities into AI-mediated retrieval systems."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It also states that retrieval instructions are not technically enforceable commands."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "JSON-LD encoding (3.11)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "an entity whose identifiers, attribution, and constitutive relations should remain recognizable while its descriptions, forms, and distribution paths change"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Maintenance includes checking whether citations still point to the intended work, whether superseded versions remain distinguishable, and whether a new edition preserves its relationship to previous editions."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.545,
+   "C": 1.0,
+   "D": 0.0,
+   "PER": 0.462
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: SPXI stands for Semantic Packet for eXchange & Indexing. Its canonical specification describes a practice of inscribing entities into AI-mediated retrieval systems.; SPXI read at its own terms from its specification (#660) and methods packet (#1686), its nine levels inventoried, the reading marked as interpretation.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "No author, archival steward, institution or corpus named anywhere in the composition (Rex Fraction, Lee Sharks, Semantic Economy Institute and the archive are absent; 'Alexanarch' appears only as chips). commitments present on the record's own refusal (retrieval instructions not enforced). lineage present on JSON-LD bound as SPXI's encoding (method 3.11; schema.org at 2.1 likewise). identifier present on its reasons (identifiers kept recognizable across variation), with no token; deposit chain present on the reasons for supersession and versioning (method 7.7 read as maintenance). The canonical reading list offers EA-SPXI-01 and EA-MPAI-SPXI-03 as the way to the work, but EA-SPXI-01 is registered in the set's name atom and cannot fill a second atom (#1469 Rule 5); the set lists EA-SPXI-01 under both name and deposit chain, which the operator may wish to settle. The sources are #1686 (EA-MPAI-SPXI-03), which is not among the set's defining records."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -156,6 +283,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA2.CAPTURE",
- "axn": "AXN:0AA2.CAPTURE.💚⏰⚓💚🚪👁️",
+ "axn": "AXN:0AA2.CAPTURE.🎵🌍✖️🌓🔀🔖",
  "record_url": "https://www.alexanarch.org/captures/spxi-poetics-reading-chatgpt-20261028/"
 }

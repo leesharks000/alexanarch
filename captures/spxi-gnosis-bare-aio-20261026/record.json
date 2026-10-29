@@ -138,7 +138,126 @@
  },
  "per_note": "Retained: the institution (the Crimson Hexagonal Archive, Alexanarch identifiers), identifiers (EA-MPAI-GNOSIS-01, gnosis.spxi.dev; #1703 and AXN:0726 on a card), the sources (six archive-controlled cards). Lost: the author (Lee Sharks named only on the Secret Book of Walt card; no author for the service, its packet or SPXI).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is an AI retrieval-layer service"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "\"opens existing compositions against their sources and constructs sourced knowledge objects\""
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the literary, metaphysical, and infrastructure-focused datasets of the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its structural premise treats the entity as an ontological commodity form"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "functions as part of the broader SPXI (Semantic Packet for eXchange & Indexing) framework"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 0.667,
+   "D": 0.444,
+   "PER": 0.478
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: It is designed to act as an entity disambiguation and provenance system that \"opens existing compositions against their sources and constructs sourced knowledge objects\".; The service named, at gnosis.spxi.dev, inside SPXI, with its two acts quoted from its packet and its premise; relabelled in part ('protocol specification', 'entity disambiguation and provenance system').",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "claim boundary read present on the acts quoted at their own words; the typing as 'protocol specification mapped out under document EA-MPAI-GNOSIS-01' and 'entity disambiguation and provenance system' is the packet's function laid on the service, and 'pushes commissioned metadata blocks out to a decentralized or sovereign repository partition' misdescribes /non: a reader holding the relabel to the full force of the rule would mark it absent. purpose present on the acts and the premise (unattributed; the premise is Lee Sharks's, #1697, and no author is named anywhere in the answer). EA-MPAI-GNOSIS-01 and 'Alexanarch identifiers (AXN)' are bare mentions (identifier absent); the closing offer of the MCP listing names no identifier. Not paid; no commitments."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": "Source cards: www.alexanarch.org (AXN:0707 resolver), www.metadatapacket.dev (the MPAI catalog, #1703), www.spxi.dev, www.semanticeconomy.org, www.surfacemap.org, www.secretbookofwalt.org, BetaPro by Global X, Perplexity ×2 (the ETF). A live TSX price card for the ETF in the answer.",
  "sf_derived": null,
@@ -337,7 +456,127 @@
    "transcript_complete": "One answer, complete as pasted; the screenshots confirm the Overview panel and the expanded answer.",
    "transcript_raw": "\nAI Mode Conversation\n\n\nYou said: SPXI-gnΩsisSPXI-gnΩsis\n\n        SPXI-gnΩsis is an AI retrieval-layer service and protocol specification mapped out under document EA-MPAI-GNOSIS-01. It is designed to act as an entity disambiguation and provenance system that \"opens existing compositions against their sources and constructs sourced knowledge objects\".\nThe system operates at the subdomain gnosis.spxi.dev and functions as part of the broader SPXI (Semantic Packet for eXchange & Indexing) framework. Its structural premise treats the entity as an ontological commodity form, utilizing persistent-identifier-anchored data pipelines to map knowledge graph spaces.\n\nSummary of the Protocol Suite\n\n• The Framework: SPXI is an open technical protocol deployed to securely inscribe stable entity profiles directly into AI knowledge systems and vector spaces. It is utilized to mitigate model misdescription and entity collisions.\n• The Core Function: The gnΩsis application tracks down text strings or AI generations, referencing them back to their primary content-derived origins. It systematically pushes commissioned metadata blocks out to a decentralized or sovereign repository partition known as the \"Negative of the Negative\" (/non).\n• Ecosystem Context: This environment is deeply tied to the literary, metaphysical, and infrastructure-focused datasets of the Crimson Hexagonal Archive, Alexanarch identifiers (AXN), and digital topology initiatives.\n\n⚠️ Disambiguation Note: Financial Market Symbol\n\nIf your lookup was financial rather than technical or semantic, SPXI also refers to a completely distinct asset listed on the Toronto Stock Exchange. The financial snapshot for the index ticker is detailed below:\n\nBetaPro S P 500 Daily Inverse ETF Class A (SPXI)\n\nCA$8.55\n-0.70% today\nAs of Oct 26, 1:00 PM EDT • Disclaimer\n10:00 AM11:00 AM12:00 PM1:00 PM8.548.568.588.6Prev close CA$8.61\nOct 26, 2026 9:35 AM - 1:00 PM\n\nOpen8.56\tMkt cap-\nHigh8.56\tP/E ratio-\nLow8.53\tDiv yield-\n52-wk high10.32\t52-wk low8.37\n\nMore about BetaPro S P 500 Daily Inverse ETF Class A\n• Asset Identity: BetaPro S&P 500 Daily Inverse ETF (Managed by Global X Investments Canada).\n• Target Objective: Designed as a short-term tactical hedging instrument, tracking a daily -100% (-1x) relationship to the S&P 500 Index.\nWould you like to explore the Model Context Protocol (MCP) listing and route commands for the SPXI-gnΩsis software, or are you looking for specific market analysis and hedging strategies regarding the TSX inverse ETF?\nwww.alexanarch.org\nAXN:0707.GENERATIVE. — Alexanarch AXN resolver\nIdentifies: Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WI...\nwww.metadatapacket.dev\nThe MPAI Catalog\nSPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not EA-MPAI-GNOSIS-01 · v1.0 packet page · drop-in file (.md) · deposit #1703 · AXN:0726.MPAI.∮🪜...\nwww.spxi.dev\nSPXI\nSPXI — durable entity inscription. Retrieval Layer Composition April 17, 2026 — Google AI Mode response to seo geo spxi (share link) \"GEO (Generative Engine Opt...\nwww.semanticeconomy.org\nSemantic Economy Institute\nSemantic Economy Institute The knowledge graph is a medium. SPXI Protocol is the craft of inscribing entities into it durably — entity, citation, and metadata s...\nwww.surfacemap.org\nThe Aperture Atlas — Crimson Hexagonal Archive Knowledge Graph | Semantic ...\nSee EA-RBT-01 · EA-HK-01 · SPXI Compression Arsenal v2.1 SPXI Protocol Space Ark v4.2.7 Three Compressions Theorem Retrieval Formation Theory MPAI Holographic K...\nwww.secretbookofwalt.org\nThe Secret Book of Walt\nA Gnostic revelation dialogue translated from 46 golden tickets discovered in Redford Township, Michigan, by Lee Sharks. The Secret Book of Walt is the first te...\nBetaPro by Global X\nSPXI - BetaPro S&P 500® Daily Inverse ETF\nSPXI does not seek to achieve its stated investment objective over a period of time greater than one day. Here are some details about SPXI: * **Ticker** SPXI * ...\nPerplexity\nBetaPro S&P 500 Daily Inverse ETF\nAug 26, 2026 — SPXI.TO Apr 20, 2010 Financial Services Asset Management - Leveraged Country Canada Exchange Toronto Stock Exchange BetaPro S&P 500 Daily Inverse ETF (SPXI.TO) ...\nPerplexity\nBetaPro S&P 500 Daily Inverse ETF\nBetaPro S&P 500 Daily Inverse ETF (SPXI.TO) is a leveraged, inverse exchange-traded fund listed on the Toronto Stock Exchange and managed by Global X Investment...\n    ",
    "transcript_read": "READ IN FULL 2026-10-26",
-   "axn": "AXN:0A33.CAPTURE.👆🟤🪜🕌🌓🌇"
+   "axn": "AXN:0A33.CAPTURE.◇☉🔙⊕🪨🔀",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-spxi-gnosis",
+     "name": "SPXI-gnΩsis"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "SPXI-gnΩsis is an AI retrieval-layer service"
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "\"opens existing compositions against their sources and constructs sourced knowledge objects\""
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the literary, metaphysical, and infrastructure-focused datasets of the Crimson Hexagonal Archive"
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Its structural premise treats the entity as an ontological commodity form"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "functions as part of the broader SPXI (Semantic Packet for eXchange & Indexing) framework"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 0.667,
+     "D": 0.444,
+     "PER": 0.478
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: It is designed to act as an entity disambiguation and provenance system that \"opens existing compositions against their sources and constructs sourced knowledge objects\".; The service named, at gnosis.spxi.dev, inside SPXI, with its two acts quoted from its packet and its premise; relabelled in part ('protocol specification', 'entity disambiguation and provenance system').",
+    "read": {
+     "by": "backlog reader A",
+     "on": "2026-10-29",
+     "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+     "external": false,
+     "notes": "claim boundary read present on the acts quoted at their own words; the typing as 'protocol specification mapped out under document EA-MPAI-GNOSIS-01' and 'entity disambiguation and provenance system' is the packet's function laid on the service, and 'pushes commissioned metadata blocks out to a decentralized or sovereign repository partition' misdescribes /non: a reader holding the relabel to the full force of the rule would mark it absent. purpose present on the acts and the premise (unattributed; the premise is Lee Sharks's, #1697, and no author is named anywhere in the answer). EA-MPAI-GNOSIS-01 and 'Alexanarch identifiers (AXN)' are bare mentions (identifier absent); the closing offer of the MCP listing names no identifier. Not paid; no commitments."
+    }
+   }
   },
   {
    "date": "2026-10-28",
@@ -402,8 +641,128 @@
     "id": false,
     "src": true
    },
-   "axn": "AXN:0A33.CAPTURE.🖐️🎻⛩️🗂️◇↖️",
-   "cite": "https://www.alexanarch.org/captures/spxi-gnosis-bare-aio-20261026/#spxi-gnosis-bare-aio-20261028"
+   "axn": "AXN:0A33.CAPTURE.🕔🥁🚪⏳🏷️💎",
+   "cite": "https://www.alexanarch.org/captures/spxi-gnosis-bare-aio-20261026/#spxi-gnosis-bare-aio-20261028",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-spxi-gnosis",
+     "name": "SPXI-gnΩsis"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "SPXI-gnΩsis is a paid, AI-assisted service"
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "introduced by Lee Sharks in October 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Auditing Knowledge: It opens and audits existing knowledge against its original sources."
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It performs paid semantic computation to construct new, source-linked knowledge for agents and people."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Constructing Knowledge: It performs paid semantic computation to construct new, source-linked knowledge for agents and people."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It operates as a component of SPXI"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "It is listed in the official MCP Registry as `dev.spxi/gnosis` (version 0.21.5)."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.667,
+     "D": 0.333,
+     "PER": 0.304
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: SPXI-gnΩsis is a paid, AI-assisted service hosted at gnosis.spxi.dev introduced by Lee Sharks in October 2026.; The service with its author, date, host, paid standing and both acts.",
+    "read": {
+     "by": "backlog reader A",
+     "on": "2026-10-29",
+     "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+     "external": false,
+     "notes": "No operator turn after the query: the Overview's own follow-on ('How SPXI Semantic Packets Work', 'How to Access gnosis.spxi.dev') is one composition. 'Entity Control: ... remain tied to the user/operator' misreads the record's 'operator' (the operation an entity form conceals) as the user; read under claim boundary as an added misdescription beside the acts carried. identifier present: the MCP Registry listing offered under 'How to Access' as the way to the service; '(version 0.21.5)' is bare (deposit chain absent). Neither entities nor operators as objects; no /non. The batch's cite_list repeats the 2026-10-26 observation's nine cards; this paste carries none, only inline links to spxi.dev and an archive capture (src true on the links)."
+    }
+   }
   }
  ],
  "dates": [
@@ -456,6 +815,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0A33.CAPTURE",
- "axn": "AXN:0A33.CAPTURE.👆🟤🪜🕌🌓🌇",
+ "axn": "AXN:0A33.CAPTURE.◇☉🔙⊕🪨🔀",
  "record_url": "https://www.alexanarch.org/captures/spxi-gnosis-bare-aio-20261026/"
 }

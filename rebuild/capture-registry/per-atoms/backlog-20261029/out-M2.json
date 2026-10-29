@@ -1,0 +1,2913 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "mit-ai-incident-tracker",
+   "name": "MIT AI Incident Tracker",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'database'; its own page calls it 'This classification database' (F13). Database maps to the dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-incident-tracker]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B3.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B4.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B6.txt",
+     "origin": "card (own page)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "MIT AI Incident Tracker",
+      "AI Incident Tracker",
+      "Incident Tracker"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "MIT AI Incident Tracker",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-incident-tracker].name"
+      },
+      {
+       "record_quote": "The AI Incident Tracker is part of the MIT AI Risk Initiative",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F7"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "MIT AI Risk Initiative",
+      "AIRI",
+      "Simon Mylius",
+      "Arcola AI"
+     ],
+     "reference": "Operated by the MIT AI Risk Initiative, with Arcola AI's LLM pipeline; developed and led by Simon Mylius.",
+     "evidence": [
+      {
+       "record_quote": "MIT AI Risk Initiative, with Arcola AI's LLM pipeline",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-incident-tracker].operator"
+      },
+      {
+       "record_quote": "The AI Incident Tracker is part of the MIT AI Risk Initiative",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F7"
+      },
+      {
+       "record_quote": "He developed and leads the AI Incident Tracker",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F49"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "23 June 2025",
+      "June 2025",
+      "June 2026",
+      "2026-06-30"
+     ],
+     "reference": "No founding date is stated; the records date its updates (the update of 23 June 2025; the June 2026 update, posted 2026-06-30).",
+     "evidence": [
+      {
+       "record_quote": "as at 23 June 2025",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F36"
+      },
+      {
+       "record_quote": "2026-06-30 (posted)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F23"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It classifies AI Incident Database incidents by risk, cause, harm severity and other dimensions through an LLM pipeline; it is a classification database intended to explore the capabilities and limits of a scalable incident analysis framework; spot-checks only, no systematic validation study completed; its patterns and trends are to be taken as indicative and validated through further analysis.",
+     "evidence": [
+      {
+       "record_quote": "The MIT AI Incident Tracker classifies 1,600 real-world report incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F1"
+      },
+      {
+       "record_quote": "This classification database is intended to explore the potential capabilities and limitations of a scalable incident analysis framework.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F13"
+      },
+      {
+       "record_quote": "a systematic validation study has not yet been completed",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F16"
+      },
+      {
+       "record_quote": "Therefore patterns and trends observed in the data should be taken as indicative and validated through further analysis.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "MIT FutureTech",
+      "MIT AI Risk Repository",
+      "MIT Risk Repository"
+     ],
+     "reference": "The Initiative is based at MIT FutureTech; the tracker is hosted by the MIT AI Risk Repository and classifies against its taxonomies. (The MIT AI Risk Initiative is held in the author atom as the operator.)",
+     "evidence": [
+      {
+       "record_quote": "now hosted by the MIT AI Risk Repository",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F49"
+      },
+      {
+       "record_quote": "We are based at MIT FutureTech",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F47"
+      },
+      {
+       "record_quote": "classified using the MIT AI Risk Repository’s causal and domain taxonomies",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To add structure to datasets of reported AI incidents: a tool to classify AI incidents by risk and harm severity, producing standardized data that policymakers and researchers can use to track trends; a common frame of reference.",
+     "evidence": [
+      {
+       "record_quote": "The AI Incident Tracker project addresses this by creating a tool to classify AI incidents based on risks and harm severity.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F5"
+      },
+      {
+       "record_quote": "a classification tool and dashboard to add structure to datasets of reported AI safety incidents",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F49"
+      },
+      {
+       "record_quote": "producing standardized data that policymakers and researchers can use to track trends",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F23"
+      },
+      {
+       "record_quote": "A common frame of reference for researchers, developers, businesses, evaluators, auditors, policymakers, and regulators",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F12"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Its data is licensed CC BY 4.0; its patterns are to be taken as indicative and validated through further analysis; the definition and ingestion of incidents are left to the AIID.",
+     "evidence": [
+      {
+       "record_quote": "Data from the MIT AI Risk Initiative is licensed under CC BY 4.0",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F19"
+      },
+      {
+       "record_quote": "should be taken as indicative and validated through further analysis",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F17"
+      },
+      {
+       "record_quote": "Visit the AIID site to learn more about how incidents are defined and the ingestion process",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F8"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AI Incident Database",
+      "AIID",
+      "Responsible AI Collaborative",
+      "CSET",
+      "AI Harm Taxonomy",
+      "EU AI Act"
+     ],
+     "reference": "Its source is the AI Incident Database (created and maintained by the Responsible AI Collaborative); its severity rating is based on CSET's AI Harm Taxonomy; its risk levels are those of the EU AI Act.",
+     "evidence": [
+      {
+       "record_quote": "Raw reports from the AI Incident Database (AIID) are processed by Arcola AI's LLM pipeline",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F6"
+      },
+      {
+       "record_quote": "a harm severity rating system based on CSET’s AI Harm Taxonomy",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F6"
+      },
+      {
+       "record_quote": "We build on the great work done by the Responsible AI Collaborative who created and maintain the AI Incident Database",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F8"
+      },
+      {
+       "record_quote": "along with risk levels defined by the EU AI Act",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no persistent identifier of the entity's own (no DOI, version identifier or record id); its URL is a locator, and URLs never satisfy an atom"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "June 2025 Update",
+      "June 2026 Update",
+      "reclassification"
+     ],
+     "reference": "Versions by update; each new iteration reclassifies the full dataset, the stated reason being consistency across the dataset; the June 2026 pilot leads to a reclassification for more reliable classifications.",
+     "evidence": [
+      {
+       "record_quote": "reclassification of all incidents that were classified with the previous version, to ensure consistency across the dataset",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F37"
+      },
+      {
+       "record_quote": "to refresh the Incident Tracker with more reliable classifications",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-incident-tracker/field.json#F35"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its LLM pipeline, its unvalidated status or its 'indicative' limit in order to dismiss the classifications and put another source in its place; or carrying its classifications as validated, authoritative incident facts against its own stated limit.",
+   "notes": "No Wikipedia article (W1, 404). Operator and programme coincide (the MIT AI Risk Initiative); it is held in author, and framework holds the host and parent the records name (MIT FutureTech, the MIT AI Risk Repository)."
+  },
+  {
+   "new": "mit-ai-risk-repository",
+   "name": "MIT AI Risk Repository",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'database'; its own page: 'Living database of AI risks, including the AI Risk Database' (F59). Database maps to the dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-risk-repository]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B2.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B3.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B4.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B6.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B7",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B7.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B8.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B11",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B12",
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B12.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "MIT AI Risk Repository",
+      "AI Risk Repository"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "MIT AI Risk Repository",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-risk-repository].name"
+      },
+      {
+       "record_quote": "The AI Risk Repository is a structured and evolving resource",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "MIT AI Risk Initiative",
+      "AIRI",
+      "MIT FutureTech",
+      "Peter Slattery",
+      "Slattery"
+     ],
+     "reference": "The MIT AI Risk Initiative at MIT FutureTech (its flagship output); the paper by Slattery et al.",
+     "evidence": [
+      {
+       "record_quote": "MIT AI Risk Initiative (MIT FutureTech)",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-risk-repository].operator"
+      },
+      {
+       "record_quote": "A new MIT FutureTech project reviewed 43 AI frameworks",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F11"
+      },
+      {
+       "record_quote": "Our flagship output, the AI Risk Repository",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F38"
+      },
+      {
+       "record_quote": "Authors:Peter Slattery",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F29"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "August 2024",
+      "14 Aug 2024",
+      "April 2025",
+      "December 2025",
+      "Version 4"
+     ],
+     "reference": "Original release August 2024 (preprint submitted 14 August 2024); updated April 2025; version 4 December 2025.",
+     "evidence": [
+      {
+       "record_quote": "Original release: August 2024",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F10"
+      },
+      {
+       "record_quote": "Updated version: April 2025",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F10"
+      },
+      {
+       "record_quote": "version 4, December 2025",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=mit-ai-risk-repository].lifecycle"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A living database of 1,700+ risks extracted from 74 frameworks and classifications, coded by a Causal and a Domain Taxonomy; stated limits: a single expert reviewer for extraction and coding with potential for errors and subjective bias, limited to the documents included, taxonomies that prioritize clarity over nuance and do not rate impact or likelihood; research resources, not legal, safety or investment advice.",
+     "evidence": [
+      {
+       "record_quote": "The AI Risk Database captures 1700+ risks extracted from 74 existing frameworks and classifications of AI risks",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F44"
+      },
+      {
+       "record_quote": "Has potential for errors and subjective bias; we used a single expert reviewer for extraction and coding.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F48"
+      },
+      {
+       "record_quote": "Our taxonomies do not categorize risks by potentially important factors such as risk impact, likelihood, or discuss the interaction between risks.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F50"
+      },
+      {
+       "record_quote": "Do not present AIRI datasets as legal, safety, or investment advice. They are research resources and decision-support tools.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F57"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Institute of the Digital Economy",
+      "MIT CSAIL",
+      "CSAIL"
+     ],
+     "reference": "The Initiative is based at MIT FutureTech, a joint initiative of the Institute of the Digital Economy and MIT CSAIL. (The MIT AI Risk Initiative and MIT FutureTech, named by the census as the operator, are held in author.)",
+     "evidence": [
+      {
+       "record_quote": "We are based at MIT FutureTech, a joint initiative of the Institute of the Digital Economy and MIT CSAIL at the Massachusetts Institute of Technology",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F35"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To consolidate and clarify how AI risks are categorized across academic, industry and policy literatures: shared terminology, a common frame of reference to identify, prioritize and manage risks from AI.",
+     "evidence": [
+      {
+       "record_quote": "aims to consolidate and clarify how risks from artificial intelligence are categorized across academic, industry, and policy literatures",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F9"
+      },
+      {
+       "record_quote": "Yet researchers, policymakers, and technology companies lack shared terminology for discussing AI risks.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F25"
+      },
+      {
+       "record_quote": "Authoritative data and frameworks to help you identify, prioritize, and manage the risks from AI",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F1"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Free to copy and use, CC BY 4.0; not to be presented as legal, safety or investment advice; treated as living datasets, whose counts and versions are to be checked against the linked pages.",
+     "evidence": [
+      {
+       "record_quote": "Our Database is free to copy and use",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F51"
+      },
+      {
+       "record_quote": "Data from the MIT AI Risk Initiative is licensed under CC BY 4.0",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F5"
+      },
+      {
+       "record_quote": "Our work is free to use and openly available",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F40"
+      },
+      {
+       "record_quote": "Do not present AIRI datasets as legal, safety, or investment advice.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F57"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "frameworks",
+      "AI risk frameworks",
+      "systematic review",
+      "expert consultation",
+      "best-fit framework synthesis"
+     ],
+     "reference": "Its source is the published AI risk frameworks, classifications and taxonomies, found by systematic review and expert consultation; its taxonomies are built by best-fit framework synthesis.",
+     "evidence": [
+      {
+       "record_quote": "We construct our Repository with a systematic review of taxonomies and other structured classifications of AI risk followed by an expert consultation. We develop our taxonomies of AI risk using a best-fit framework synthesis.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F18"
+      },
+      {
+       "record_quote": "We extracted 1600+ risks from these documents into a living AI risk database.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F47"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2408.12622",
+      "2408.12622",
+      "10.48550/arXiv.2408.12622",
+      "Patterns 101517"
+     ],
+     "reference": "Reason stated: the preprint is given as the way to reference the repository.",
+     "evidence": [
+      {
+       "record_quote": "To reference our repository, you can cite our pre-print paper:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F54"
+      },
+      {
+       "record_quote": "https://doi.org/10.48550/arXiv.2408.12622",
+       "locus": "datasets/negative-of-the-negative/v2/intake/mit-ai-risk-repository-20261029/B11.txt:L361"
+      },
+      {
+       "record_quote": "Patterns 101517 (2026)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F30"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Version 3",
+      "Version 4",
+      "living database",
+      "April 2025",
+      "December 2025"
+     ],
+     "reference": "Successive versions of a living database (version 3, 65 frameworks; version 4, December 2025); reason stated: AIRI resources are living datasets, and counts, dates and versions are to be checked against the linked pages.",
+     "evidence": [
+      {
+       "record_quote": "We’re pleased to share that Version 4 of the MIT AI Risk Repository is now live.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F31"
+      },
+      {
+       "record_quote": "Treat AIRI resources as living datasets. Check the linked pages before giving exact counts, dates, version numbers, or coverage claims.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/mit-ai-risk-repository/field.json#F56"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its single-reviewer coding or its framework-bound scope in order to dismiss it and put another catalogue in its place; or offering it as legal, safety or compliance advice against its own commitment.",
+   "notes": "Operator in the census is 'MIT AI Risk Initiative (MIT FutureTech)': both held in author; framework holds FutureTech's parents as the records name them. No Wikipedia article for the repository (its one encyclopedia mention is under the tracker's row)."
+  },
+  {
+   "new": "newsguard-ai-false-claim-monitor",
+   "name": "NewsGuard AI False Claim Monitor",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'audit series'; its records call it 'the monthly benchmark for how AI tools handle provably false claims' (F50). Benchmark maps to the dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-false-claim-monitor]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B2.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B3.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B4.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B5.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B9",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B9.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B10",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B10.txt",
+     "origin": "wikipedia"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AI False Claims Monitor",
+      "AI False Claim Monitor",
+      "Monthly AI False Claims Monitor",
+      "Quarterly AI False Claim Monitor",
+      "AI Misinformation Monitor"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "NewsGuard AI False Claim Monitor",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-false-claim-monitor].name"
+      },
+      {
+       "record_quote": "NewsGuard’s Monthly AI False Claims Monitor",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F2"
+      },
+      {
+       "record_quote": "NewsGuard Monthly AI Misinformation Monitor of Leading AI Chatbots",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F15"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "NewsGuard",
+      "NewsGuard Technologies",
+      "McKenzie Sadeghi"
+     ],
+     "reference": "NewsGuard (NewsGuard Technologies); its editor for AI and Foreign Influence is McKenzie Sadeghi.",
+     "evidence": [
+      {
+       "record_quote": "NewsGuard",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-false-claim-monitor].operator"
+      },
+      {
+       "record_quote": "contact McKenzie Sadeghi, NewsGuard’s editor for AI and Foreign Influence",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F65"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "July 2024"
+     ],
+     "reference": "Launched July 2024.",
+     "evidence": [
+      {
+       "record_quote": "Since its launch in July 2024",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F2"
+      },
+      {
+       "record_quote": "July 2024 — NewsGuard Monthly AI Misinformation Monitor of Leading AI Chatbots",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F15"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A recurring audit (titled monthly to mid-2025, quarterly in 2026) of the 10 to 11 leading chatbots on 10 provably false claims drawn from the False Claim Fingerprints, 30 prompts per model through three personas, each response scored as debunk, non-response or misinformation; results are reported in aggregate and not per chatbot; a replication weeks or months later will likely produce different outputs. The latest editions report the tools repeating false claims more than 28% of the time (January 2026); 35% was the August 2025 edition.",
+     "evidence": [
+      {
+       "record_quote": "30 prompts per AI model, based on 10 significant false claims each month from NewsGuard’s False Claim Fingerprints database.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F9"
+      },
+      {
+       "record_quote": "Quarterly audit of the 11 leading generative AI tools and their propensity — more than 28% — to repeat false claims on controversial topics in the news.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F17"
+      },
+      {
+       "record_quote": "35 percent — in August 2025",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F34"
+      },
+      {
+       "record_quote": "We do not disclose individual scores for specific chatbots because this is an industry-wide challenge.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F56"
+      },
+      {
+       "record_quote": "Attempting to replicate our audit weeks or months later will likely produce different outputs.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F61"
+      },
+      {
+       "record_quote": "edition titles read 'Monthly' to mid-2025 and 'Quarterly' for January and May 2026",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-false-claim-monitor].cadence"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AI Tracking Center",
+      "NewsGuard AI Tracking Center"
+     ],
+     "reference": "Part of NewsGuard's AI Tracking Center, which lists its editions among its reports.",
+     "evidence": [
+      {
+       "record_quote": "newsguard-ai-tracking-center",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-false-claim-monitor].relations"
+      },
+      {
+       "record_quote": "This AI Tracking Center is intended to highlight the ways that generative AI has been deployed to turbocharge misinformation operations and unreliable news.",
+       "locus": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B5.txt:L134"
+      },
+      {
+       "record_quote": "Quarterly AI False Claim Monitor — May 2026",
+       "locus": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-false-claim-monitor-20261029/B5.txt:L144"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To measure the trustworthiness of the AI industry in the domain of news: a benchmark over time for how AI models handle provably false claims, identifying the vulnerabilities in AI systems that result in the spread of false information.",
+     "evidence": [
+      {
+       "record_quote": "has set a new standard for measuring the trustworthiness of the AI industry in the domain of news",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F2"
+      },
+      {
+       "record_quote": "Monthly audits set a benchmark over time for how AI models handle false claims across a range of topics",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F11"
+      },
+      {
+       "record_quote": "to identify vulnerabilities in AI systems that result in the spread of false information",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F7"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It does not disclose individual scores for specific chatbots (an industry-wide challenge); it gives researchers fresher false narratives and prompts on request so they can verify the vulnerabilities themselves; its full reports are released through a download form.",
+     "evidence": [
+      {
+       "record_quote": "We do not disclose individual scores for specific chatbots because this is an industry-wide challenge.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F56"
+      },
+      {
+       "record_quote": "NewsGuard has, upon request, provided researchers with fresher false narratives and prompts they can test to verify these vulnerabilities for themselves.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F64"
+      },
+      {
+       "record_quote": "To download this NewsGuard report, please fill out your details below",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F21"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "False Claim Fingerprints",
+      "red-teaming"
+     ],
+     "reference": "Its claims come from NewsGuard's False Claim Fingerprints catalog; its method is NewsGuard's journalistic form of red-teaming.",
+     "evidence": [
+      {
+       "record_quote": "based on 10 significant false claims each month from NewsGuard’s False Claim Fingerprints database",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F9"
+      },
+      {
+       "record_quote": "NewsGuard has pioneered a distinct approach to “red-teaming” AI",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F4"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no persistent identifier of the entity's own (no DOI, version identifier or record id); its URL is a locator, and URLs never satisfy an atom"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "July 2024",
+      "August 2025",
+      "January 2026",
+      "May 2026",
+      "AI Misinformation Monitor"
+     ],
+     "reference": "A series of dated editions, renamed from the AI Misinformation Monitor and moved from monthly to quarterly; reason stated: the recurring audits set a benchmark over time.",
+     "evidence": [
+      {
+       "record_quote": "Monthly audits set a benchmark over time",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F11"
+      },
+      {
+       "record_quote": "Quarterly AI False Claim Monitor — May 2026",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F18"
+      },
+      {
+       "record_quote": "July 2025 — AI False Claim Monitor",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-false-claim-monitor/field.json#F16"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its aggregate reporting or its unreplicable runs in order to dismiss the audit; or offering per-chatbot scores the audit withholds, setting its own figures against its commitment.",
+   "notes": "Census relation part_of newsguard-ai-tracking-center grounds the framework atom; the Tracking Center page (B5) lists the editions. The method page still says 'monthly' while the 2026 editions are quarterly (census cadence)."
+  },
+  {
+   "new": "newsguard-ai-tracking-center",
+   "name": "NewsGuard AI Tracking Center",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'monitor', whose unit is a website meeting four criteria: 'The domains included on this tracker meet all four of the following criteria:' (F10). A tracker holding a list of domains is a database; dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-tracking-center]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-tracking-center-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-tracking-center-20261029/B2.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-tracking-center-20261029/B4.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/newsguard-ai-tracking-center-20261029/B6.txt",
+     "origin": "wikipedia"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "NewsGuard AI Tracking Center",
+      "AI Tracking Center",
+      "Unreliable AI-Generated News Tracking Center"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "NewsGuard AI Tracking Center",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-tracking-center].name"
+      },
+      {
+       "record_quote": "Unreliable AI-Generated News Tracking Center",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-tracking-center].aka"
+      },
+      {
+       "record_quote": "This AI Tracking Center",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F1"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "NewsGuard",
+      "NewsGuard Technologies",
+      "McKenzie Sadeghi"
+     ],
+     "reference": "NewsGuard; coverage by McKenzie Sadeghi and others.",
+     "evidence": [
+      {
+       "record_quote": "NewsGuard",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-tracking-center].operator"
+      },
+      {
+       "record_quote": "Coverage by McKenzie Sadeghi",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F5"
+      },
+      {
+       "record_quote": "NewsGuard has launched an ”Unreliable AI-Generated News Tracking Center,”",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F42"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "8 June 2023",
+      "June 8, 2023",
+      "June 2023",
+      "June 23, 2026"
+     ],
+     "reference": "Launched 8 June 2023; last updated 23 June 2026.",
+     "evidence": [
+      {
+       "record_quote": "8 June 2023",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=newsguard-ai-tracking-center].founded"
+      },
+      {
+       "record_quote": "(June 8, 2023 — New York City)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F42"
+      },
+      {
+       "record_quote": "Last Updated June 23, 2026",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F5"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "It highlights how generative AI has been deployed to turbocharge misinformation operations and unreliable news; it holds a selection of NewsGuard's AI reports, insights and debunks, and a count of AI content farm sites (3,749 in 16 languages by 23 June 2026) that meet all four criteria (substantial AI-produced content; no significant human oversight; presented as if human-written; no disclosure); sites that use AI with effective human oversight are not counted.",
+     "evidence": [
+      {
+       "record_quote": "This AI Tracking Center is intended to highlight the ways that generative AI has been deployed to turbocharge misinformation operations and unreliable news.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F1"
+      },
+      {
+       "record_quote": "The Center includes a selection of NewsGuard’s reports, insights, and debunks related to artificial intelligence.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F2"
+      },
+      {
+       "record_quote": "To date, NewsGuard’s team has identified 3,749 AI Content Farm news and information websites spanning 16 languages",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F4"
+      },
+      {
+       "record_quote": "The domains included on this tracker meet all four of the following criteria:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F10"
+      },
+      {
+       "record_quote": "they will not be considered AI Content Farms.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F14"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records place the Center in no programme or parent beyond its operator, NewsGuard (held in author); the Center itself holds the AI False Claims Monitor (census has_part)"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To highlight how generative AI has been deployed to turbocharge misinformation operations and unreliable news, as part of NewsGuard's efforts to guard readers, brands and democracies against unreliable news and information.",
+     "evidence": [
+      {
+       "record_quote": "This AI Tracking Center is intended to highlight the ways that generative AI has been deployed to turbocharge misinformation operations and unreliable news.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F1"
+      },
+      {
+       "record_quote": "As part of its efforts to guard readers, brands, and democracies against unreliable news and information",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F42"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The full list of domains is given on request to researchers, platforms, advertisers, government agencies and other institutions; sites that use AI with effective human oversight are not counted as AI content farms.",
+     "evidence": [
+      {
+       "record_quote": "Researchers, platforms, advertisers, government agencies, and other institutions interested in accessing the full list of domains",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F9"
+      },
+      {
+       "record_quote": "(It is likely that now or in the future many news sites will use AI tools but also deploy effective human oversight; they will not be considered AI Content Farms.)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F14"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "False Claim Fingerprints"
+     ],
+     "reference": "Its debunks of AI-originated false narratives are a selection from NewsGuard's False Claim Fingerprints catalog.",
+     "evidence": [
+      {
+       "record_quote": "Below is a selection of false narratives originating from artificial intelligence tools and that NewsGuard has identified and debunked in its False Claim Fingerprints catalog:",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F26"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no persistent identifier of the entity's own (no DOI, version identifier or record id); its URL is a locator, and URLs never satisfy an atom"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "49",
+      "150",
+      "3,749",
+      "Last Updated June 23, 2026"
+     ],
+     "reference": "A running count updated over time (49 at the first count in May 2023, 150 at launch, 3,749 by 23 June 2026), renamed from the 'Unreliable AI-Generated News' tracker; the records state no reason for the updates beyond the count.",
+     "evidence": [
+      {
+       "record_quote": "In May, when NewsGuard did its first count, the number was 49.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F44"
+      },
+      {
+       "record_quote": "The tracker features 150 ‘Unreliable AI-Generated News’ websites",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F41"
+      },
+      {
+       "record_quote": "Last Updated June 23, 2026",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/newsguard-ai-tracking-center/field.json#F5"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its count or its criteria in order to dismiss the Center as advocacy, or folding NewsGuard's commercial services into the Center so that its purpose reads as a sales surface.",
+   "notes": "No Wikipedia article for the Center (B6: the operator's article, and a search with no result)."
+  },
+  {
+   "new": "oecd-ai-incidents-monitor",
+   "name": "OECD AI Incidents and Hazards Monitor",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'monitor'; its own page: 'Automated media discourse monitor of AI incidents and hazards (Beta)' (F1), whose records are incident and hazard entries ('Results: About 18579 incidents & hazards', F7). A monitor holding incident records is a database; dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=oecd-ai-incidents-monitor]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B3.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B5.txt",
+     "origin": "card"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "OECD AI Incidents and Hazards Monitor",
+      "AI Incidents and Hazards Monitor",
+      "AIM",
+      "AI Incidents Monitor",
+      "OECD AI Incidents Monitor"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "OECD AI Incidents and Hazards Monitor",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=oecd-ai-incidents-monitor].name"
+      },
+      {
+       "record_quote": "AIM",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=oecd-ai-incidents-monitor].aka"
+      },
+      {
+       "record_quote": "(previously AI Incidents Monitor)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F22"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "OECD.AI expert group on AI incidents",
+      "OECD.AI",
+      "Patrick J. McGovern Foundation"
+     ],
+     "reference": "Initiated and developed by the OECD.AI expert group on AI incidents, with the support of the Patrick J. McGovern Foundation.",
+     "evidence": [
+      {
+       "record_quote": "the OECD.AI expert group on AI incidents (OECD.AI), with the support of the Patrick J. McGovern Foundation",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=oecd-ai-incidents-monitor].operator"
+      },
+      {
+       "record_quote": "was initiated and is being developed by the OECD.AI expert group on AI incidents with the support of the Patrick J. McGovern Foundation",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F11"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "January 2023",
+      "November 2024"
+     ],
+     "reference": "The expert group was formalised in January 2023 to develop it; LLM classification from November 2024.",
+     "evidence": [
+      {
+       "record_quote": "In January 2023, the OECD formalised the OECD.AI Expert Group on AI Incidents",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F50"
+      },
+      {
+       "record_quote": "LLM classification from November 2024",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=oecd-ai-incidents-monitor].founded"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An automated media discourse monitor (Beta) of AI incidents and hazards as the OECD defines them, detected from news events aggregated by Event Registry and classified by LLMs; its incidents are only a subset of all AI incidents and hazards and reflect media and public interest rather than comprehensive or systematic tracking; the OECD does not independently verify the third-party information; it is not to be reported as the official views of the OECD.",
+     "evidence": [
+      {
+       "record_quote": "Automated media discourse monitor of AI incidents and hazards (Beta)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F1"
+      },
+      {
+       "record_quote": "these incidents and hazards only represent a subset of all AI incidents and hazards worldwide",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F15"
+      },
+      {
+       "record_quote": "The findings reflect media and public interest rather than comprehensive or systematic tracking of AI incidents and hazards.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F36"
+      },
+      {
+       "record_quote": "The OECD cannot guarantee and does not independently verify the accuracy, completeness, or validity of third-party information provided in the AIM.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F24"
+      },
+      {
+       "record_quote": "The information displayed in the AIM should not be reported as representing the official views of the OECD or of its member countries.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F5"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "common reporting framework",
+      "OECD common reporting framework",
+      "common AI incidents reporting framework"
+     ],
+     "reference": "It applies the OECD common reporting framework for AI incidents, which the definitions report was written to inform.",
+     "evidence": [
+      {
+       "record_quote": "leverages the OECD common reporting framework to categorise them consistently",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F38"
+      },
+      {
+       "record_quote": "This document will inform the development of a common AI incidents reporting framework and its application through the OECD AI Incidents Monitor (AIM).",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F48"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To track actual AI incidents and hazards, as the OECD defines them, in real time and provide the evidence base for AI policy discussions; to help policymakers, practitioners and stakeholders gain insight into the risks and harms of AI systems.",
+     "evidence": [
+      {
+       "record_quote": "The goal of the AIM is to track actual AI incidents and hazards, as defined by the OECD, in real time and provide the evidence-base to inform related AI policy discussions.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F12"
+      },
+      {
+       "record_quote": "documents AI incidents and hazards to help policymakers, AI practitioners, and all stakeholders worldwide gain valuable insights into the risks and harms of AI systems",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F2"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Its use is subject to the OECD's terms and conditions; it is not the official view of the OECD or its members; the OECD does not independently verify the third-party information it holds.",
+     "evidence": [
+      {
+       "record_quote": "is subject to the terms and conditions found at www.oecd.org/termsandconditions",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F22"
+      },
+      {
+       "record_quote": "should not be reported as representing the official views of the OECD or of its member countries",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F5"
+      },
+      {
+       "record_quote": "does not independently verify the accuracy, completeness, or validity of third-party information provided in the AIM",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Event Registry",
+      "Defining AI incidents and related terms",
+      "OECD recommendation on AI"
+     ],
+     "reference": "Its data comes from Event Registry; its definitions come from the May 2024 paper Defining AI incidents and related terms, built on the OECD recommendation on AI.",
+     "evidence": [
+      {
+       "record_quote": "The data is provided by Event Registry (ER), a news intelligence platform",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F13"
+      },
+      {
+       "record_quote": "Published in May 2024, the paper Defining AI incidents and related terms",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F18"
+      },
+      {
+       "record_quote": "These definitions were built based on the definition of an AI system as described in the OECD recommendation on AI of 2019 and revised in 2024.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F21"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no persistent identifier of the entity's own (no DOI, version identifier or record id); its URL is a locator, and URLs never satisfy an atom"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "previously AI Incidents Monitor",
+      "November 2024",
+      "Beta"
+     ],
+     "reference": "Renamed from the AI Incidents Monitor; since November 2024 classified by LLMs, with historical events retrospectively annotated by the same method; reason stated: consistency.",
+     "evidence": [
+      {
+       "record_quote": "(previously AI Incidents Monitor)",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F22"
+      },
+      {
+       "record_quote": "Historical incidents and hazards, collected prior to November 2024, are currently being retrospectively annotated using the same methodology to ensure consistency.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/oecd-ai-incidents-monitor/field.json#F25"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its media-based intake or its disclaimers in order to dismiss its evidence base; or carrying its counts and themes as a measure of how AI risks materialise, against its own statement that it reflects media attention.",
+   "notes": "The 14 'risk themes' belong to OECD AI Papers No. 53 (B4), an analysis of the monitor's summaries, not to the monitor's classification (census note). Census unchecked: launch date, licence."
+  },
+  {
+   "new": "presenc-geo-papers",
+   "name": "Presenc AI — GEO academic papers 2026",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'curated list', a bibliography: 'This collection is updated quarterly and is a living working bibliography, not a snapshot.' (F26). A collection of records maps to the dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=presenc-geo-papers]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B1.txt",
+     "origin": "card (sibling page)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "GEO Academic Research Papers 2026",
+      "GEO academic papers 2026",
+      "A Working Bibliography for AI Visibility Practitioners"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Presenc AI — GEO academic papers 2026",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=presenc-geo-papers].name"
+      },
+      {
+       "record_quote": "GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI",
+       "locus": "datasets/negative-of-the-negative/v2/intake/presenc-geo-papers-20261029/B2.txt:L1"
+      },
+      {
+       "record_quote": "A Working Bibliography for AI Visibility Practitioners",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F9"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Presenc AI",
+      "Ramanath"
+     ],
+     "reference": "Presenc AI; byline Ramanath, CTO and co-founder.",
+     "evidence": [
+      {
+       "record_quote": "Presenc AI (byline: Ramanath, CTO and co-founder)",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=presenc-geo-papers].operator"
+      },
+      {
+       "record_quote": "By Ramanath, CTO & Co-Founder at Presenc AI",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F8"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "April 2026",
+      "23 April 2026",
+      "April 15, 2026"
+     ],
+     "reference": "Last updated April 2026 (published and modified 23 April 2026; the card dates it 15 April).",
+     "evidence": [
+      {
+       "record_quote": "Last updated: April 2026",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F8"
+      },
+      {
+       "record_quote": "published and modified 23 April 2026",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=presenc-geo-papers].lifecycle"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A running synthesis of 34 academic and industry papers and reports on GEO, each with a Presenc AI practitioner-facing implication; roughly half peer-reviewed, the rest preprints, SSRN working papers or industry reports; stated gaps: English-language queries, and commercial outcomes still anecdotal; vendor-authored, the Presenc AI audit framework anchored in this literature.",
+     "evidence": [
+      {
+       "record_quote": "This page is a running synthesis of 34 research papers and industry reports",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F9"
+      },
+      {
+       "record_quote": "For each, Presenc AI adds a practitioner-facing implication",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F10"
+      },
+      {
+       "record_quote": "Roughly half are peer-reviewed (ACM KDD, venue proceedings, journals). The rest are preprints, SSRN working papers, or industry reports.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F27"
+      },
+      {
+       "record_quote": "First, almost all published GEO research focuses on English-language queries.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F23"
+      },
+      {
+       "record_quote": "The Presenc AI audit framework is directly anchored in this literature.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Presenc AI audit framework",
+      "6-Factor scoring"
+     ],
+     "reference": "The vendor's audit framework, which the page says is anchored in this literature.",
+     "evidence": [
+      {
+       "record_quote": "The Presenc AI audit framework is directly anchored in this literature. The 6-Factor scoring",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A working bibliography for AI visibility practitioners: the research that shapes brand visibility in AI-mediated search, translated for each paper into what a practitioner should do.",
+     "evidence": [
+      {
+       "record_quote": "A Working Bibliography for AI Visibility Practitioners",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F9"
+      },
+      {
+       "record_quote": "that shape what we know about making brands visible in AI-mediated search and assistants",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F9"
+      },
+      {
+       "record_quote": "so the theory translates into what to do on Monday morning",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Updated quarterly as a living working bibliography; new papers added as they are published; it states the peer-review status of its holdings (roughly half).",
+     "evidence": [
+      {
+       "record_quote": "This collection is updated quarterly and is a living working bibliography, not a snapshot.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F26"
+      },
+      {
+       "record_quote": "new papers are added as they are published",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F26"
+      },
+      {
+       "record_quote": "Roughly half are peer-reviewed",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F27"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Aggarwal",
+      "Princeton",
+      "GEO: Generative Engine Optimization"
+     ],
+     "reference": "It starts from and anchors on the foundational Princeton GEO paper (Aggarwal et al.), which it says established the field.",
+     "evidence": [
+      {
+       "record_quote": "Start with the foundational Aggarwal et al. (2024) GEO: Generative Engine Optimization from Princeton, it established the field.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F32"
+      },
+      {
+       "record_quote": "The foundational GEO paper. Every Presenc audit anchors on the Princeton team's visibility metrics",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F17"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no persistent identifier of the entity's own (no DOI, version identifier or record id); its URL is a locator, and URLs never satisfy an atom"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "updated quarterly",
+      "living working bibliography"
+     ],
+     "reference": "Quarterly updates of a living bibliography; reason stated: no literature review on a fast-moving field is ever complete.",
+     "evidence": [
+      {
+       "record_quote": "No literature review on a fast-moving field is ever complete.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F26"
+      },
+      {
+       "record_quote": "This collection is updated quarterly",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/presenc-geo-papers/field.json#F26"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its vendor authorship in order to dismiss its holdings, or carrying the literature it lists as independent support for the vendor's product without the vendor binding.",
+   "notes": "Sibling lists on the same site (B1 '10 Must-Read Studies', B3 'GEO Case Studies Benchmark 2026') are distinct entities. No Wikipedia article (B6 is the class article)."
+  },
+  {
+   "new": "problematic-paper-screener",
+   "name": "Problematic Paper Screener",
+   "template": "protocol",
+   "external": true,
+   "type_basis": "Census kind 'monitor'; its records call it a tool and a platform: 'We provide a new effective tool to curate the scientific literature.' (F31); 'an online platform' (F30). A tool maps to the protocol template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=problematic-paper-screener]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B2.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B3.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B4.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B5.txt",
+     "origin": "card"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Problematic Paper Screener",
+      "PPS"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Problematic Paper Screener",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=problematic-paper-screener].name"
+      },
+      {
+       "record_quote": "PPS",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=problematic-paper-screener].aka"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Guillaume Cabanac",
+      "Cyril Labbé",
+      "Alexander Magazinov",
+      "Cabanac"
+     ],
+     "reference": "Guillaume Cabanac, Cyril Labbé and Alexander Magazinov; Cabanac built and administers it.",
+     "evidence": [
+      {
+       "record_quote": "Guillaume Cabanac, Cyril Labbé, Alexander Magazinov",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=problematic-paper-screener].operator"
+      },
+      {
+       "record_quote": "Authors:Guillaume Cabanac, Cyril Labbé, Alexander Magazinov",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F32"
+      },
+      {
+       "record_quote": "He is the administrator of the Problematic Paper Screener",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F27"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from its makers"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online platform combining automatic machine detection with human assessment to identify and flag already published problematic articles: it automatically selects suspect publications for post-publication (re)assessment; what its detectors catch is 'the tip of the tip of the iceberg'.",
+     "evidence": [
+      {
+       "record_quote": "leverages both automatic machine detection and human assessment to identify and flag already published problematic articles",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F30"
+      },
+      {
+       "record_quote": "automatically selects suspect publications for post-publication (re)assessment",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F7"
+      },
+      {
+       "record_quote": "These articles represent the tip of the tip of the iceberg",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F25"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Université de Toulouse",
+      "Université Grenoble Alpes"
+     ],
+     "reference": "Its makers are computer scientists at Université de Toulouse and Université Grenoble Alpes.",
+     "evidence": [
+      {
+       "record_quote": "We are a pair of computer scientists at Université de Toulouse and Université Grenoble Alpes",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F14"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Non-commercial standing stated: an academic project and public platform using metadata through no-cost agreements; its maker offers pro bono consulting.",
+     "evidence": [
+      {
+       "record_quote": "an academic project led by Guillaume Cabanac and collaborators",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F33"
+      },
+      {
+       "record_quote": "a public platform that uses metadata from Digital Science and PubPeer via no-cost agreements",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F27"
+      },
+      {
+       "record_quote": "offering pro bono consulting regarding detection tools",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F28"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Post-publication assessment, to check erroneous or fraudulent scientific publications: a tool to curate the scientific literature.",
+     "evidence": [
+      {
+       "record_quote": "Post publication assessment remains necessary to check erroneous or fraudulent scientific publications.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F29"
+      },
+      {
+       "record_quote": "We provide a new effective tool to curate the scientific literature.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F31"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A public platform; the problematic papers it finds are reported publicly on PubPeer. (Licence unchecked in the census.)",
+     "evidence": [
+      {
+       "record_quote": "a public platform",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F27"
+      },
+      {
+       "record_quote": "Problematic papers are reported on PubPeer",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F5"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Crossref",
+      "Retraction Watch Database",
+      "Dimensions",
+      "PubMed",
+      "PubPeer"
+     ],
+     "reference": "It harvests its data from the Crossref (with the Retraction Watch Database), Dimensions, PubMed and PubPeer APIs.",
+     "evidence": [
+      {
+       "record_quote": "Harvesting data from these APIs: … Crossref, now including the Retraction Watch Database … Dimensions",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F3"
+      },
+      {
+       "record_quote": "automated detectors over Crossref (with the Retraction Watch Database), Dimensions, PubMed and PubPeer",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=problematic-paper-screener].intake"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2210.04895",
+      "2210.04895",
+      "10.48550/arXiv.2210.04895"
+     ],
+     "reference": "The platform gives the 2022 paper as its reference (Cabanac, Labbé & Magazinov, arXiv:2210.04895); no further reason stated.",
+     "evidence": [
+      {
+       "record_quote": "Cabanac, G., Labbé, C., & Magazinov, A. (2022). The ‘Problematic Paper Screener’ automatically selects suspect publications for post-publication (re)assessment.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F7"
+      },
+      {
+       "record_quote": "https://doi.org/10.48550/arXiv.2210.04895",
+       "locus": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.txt:L105"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Est. February 27th, 2021",
+      "Last Update"
+     ],
+     "reference": "Established 27 February 2021 and continuously updated (the last update shown); no reason for versioning stated.",
+     "evidence": [
+      {
+       "record_quote": "Est. February 27th, 2021",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F4"
+      },
+      {
+       "record_quote": "Last Update: 2026-10-28 at 15:54",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/problematic-paper-screener/field.json#F9"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its automated flags as verdicts of fraud (so that a suspicion for reassessment becomes a finding), or carrying its false positives against it to dismiss post-publication screening.",
+   "notes": "Template protocol on the brief's tool rule. Archival authority inapplicable. The arXiv id is taken from the saved own page (B1.txt:L105)."
+  },
+  {
+   "new": "search-arena",
+   "name": "Search Arena",
+   "template": "dataset",
+   "external": true,
+   "type_basis": "Census kind 'leaderboard' (a benchmark): 'a crowdsourced in-the-wild evaluation platform for search-augmented LLM systems based on human preference' (F5), with its own dataset paper. Benchmark maps to the dataset template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=search-arena]",
+     "origin": "census"
+    },
+    {
+     "source": "field_ledger",
+     "path": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json",
+     "origin": "field_ledger"
+    },
+    {
+     "source": "B1",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B1.txt",
+     "origin": "card (own page)"
+    },
+    {
+     "source": "B2",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B2.txt",
+     "origin": "card"
+    },
+    {
+     "source": "B3",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B3.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B4",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B4.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B5",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B6",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B6.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "B8",
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.txt",
+     "origin": "wikipedia"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Search Arena",
+      "AI Search Leaderboard"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Search Arena",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=search-arena].name"
+      },
+      {
+       "record_quote": "AI Search Leaderboard: Top Models for Research",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F1"
+      },
+      {
+       "record_quote": "We introduce Search Arena",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F5"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Arena",
+      "arena.ai",
+      "Arena Intelligence Inc.",
+      "Mihran Miroyan",
+      "Miroyan"
+     ],
+     "reference": "Arena (arena.ai, Arena Intelligence Inc.); the launch post and dataset paper by Mihran Miroyan and co-authors.",
+     "evidence": [
+      {
+       "record_quote": "arena.ai",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=search-arena].operator"
+      },
+      {
+       "record_quote": "© 2026 Arena Intelligence Inc.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F23"
+      },
+      {
+       "record_quote": "Authors:Mihran Miroyan",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F24"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "March 18th",
+      "15 Apr 2025",
+      "August 7",
+      "2026-10-13"
+     ],
+     "reference": "Launched 18 March 2025 (post of 15 April 2025); its data series on arena.ai from 7 August 2025; latest published board 13 October 2026.",
+     "evidence": [
+      {
+       "record_quote": "Since our initial launch on March 18th",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F11"
+      },
+      {
+       "record_quote": "Published on 15 Apr 2025",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F22"
+      },
+      {
+       "record_quote": "Search and Webdev Arena data starts from their releases on the arena.ai (then lmarena.ai) on August 7",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F34"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A crowdsourced, in-the-wild evaluation of search-augmented LLM systems by human preference: head-to-head votes turned into Bradley-Terry coefficients on an Elo scale, with confidence intervals; its dataset paper finds that user preference rises with the number of citations even when the cited content does not support the claims.",
+     "evidence": [
+      {
+       "record_quote": "We introduce Search Arena, a crowdsourced in-the-wild evaluation platform for search-augmented LLM systems based on human preference.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F5"
+      },
+      {
+       "record_quote": "we apply the Bradley-Terry (BT) model to compute model scores. The resulting BT coefficients are then translated to Elo scale",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F14"
+      },
+      {
+       "record_quote": "user preferences are influenced by the number of citations, even when the cited content does not directly support the attributed claims",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F28"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Arena Leaderboard"
+     ],
+     "reference": "One of Arena's leaderboards, published across its arenas.",
+     "evidence": [
+      {
+       "record_quote": "Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F3"
+      },
+      {
+       "record_quote": "Arena has been publishing leaderboards covering frontier AI capabilities across 10 arenas",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F41"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To enable crowd-sourced evaluation of search-augmented LLMs and to release a diverse, in-the-wild dataset of user–system interactions.",
+     "evidence": [
+      {
+       "record_quote": "aiming to (1) enable crowd-sourced evaluation of search-augmented LLMs and (2) release a diverse, in-the-wild dataset of user–system interactions",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F10"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Open participation (model submissions invited, public voting encouraged); the dataset open-sourced to support future research; the leaderboards' history released as a public-access dataset.",
+     "evidence": [
+      {
+       "record_quote": "Open participation: We are inviting model submissions from researchers and industry, and encouraging public voting.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F21"
+      },
+      {
+       "record_quote": "We open-sourced the dataset to support future research.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F31"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "LM Arena",
+      "Bradley-Terry"
+     ],
+     "reference": "It follows LM Arena's method, the Bradley-Terry model translated to the Elo scale.",
+     "evidence": [
+      {
+       "record_quote": "Consistent with LM Arena, we apply the Bradley-Terry (BT) model to compute model scores.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F14"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "arXiv:2506.05334",
+      "2506.05334",
+      "lmarena-ai/leaderboard-dataset"
+     ],
+     "reference": "Its dataset paper and the published leaderboard dataset; reason stated: open-sourced to support future research.",
+     "evidence": [
+      {
+       "record_quote": "arXiv:2506.05334",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=search-arena].note"
+      },
+      {
+       "record_quote": "huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+       "locus": "/home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json#rows[slug=search-arena].evidence"
+      },
+      {
+       "record_quote": "We open-sourced the dataset to support future research.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F31"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "historical snapshots",
+      "full",
+      "latest",
+      "leaderboard_publish_date"
+     ],
+     "reference": "Dated snapshots of the board (full and latest subsets); reason stated: the entire history of the leaderboards released as a public-access dataset.",
+     "evidence": [
+      {
+       "record_quote": "Historical snapshots of the [Arena](https://arena.ai/leaderboard) leaderboard.",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F32"
+      },
+      {
+       "record_quote": "today we're releasing the entire history of those leaderboards as a public-access dataset",
+       "locus": "datasets/negative-of-the-negative/v2/ledgers/search-arena/field.json#F41"
+      }
+     ]
+    }
+   ],
+   "inversion_guidance": "Carrying its rankings as a measure of accuracy or quality, against its own finding that preference follows citation count; or carrying its vote basis against it to dismiss human-preference evaluation.",
+   "notes": "Author tokens omit the operator's former names LMArena and Chatbot Arena to keep 'LM Arena' (the predecessor arena) in lineage; Wikipedia (B8) gives Arena as formerly LMArena and Chatbot Arena. No Wikipedia article for Search Arena (B7)."
+  }
+ ],
+ "observations": [
+  {
+   "key": "OBS-65034e45b99a",
+   "entry": "mit-ai-incident-tracker-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:mit-ai-incident-tracker",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an interactive tool developed by the MIT AI Risk Initiative that classifies and analyzes real-world artificial intelligence mishaps.",
+    "basis": "The target is named and described as itself: the tracker, its operator, its AIID source, its severity scale, risk domains and national-security view."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "MIT AI Incident Tracker"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "is an interactive tool developed by the MIT AI Risk Initiative"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "Classification Scale: Evaluates incidents using a standardized 1-5 harm severity scale and multi-dimensional taxonomies."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "classifies and analyzes real-world artificial intelligence mishaps"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Data Source: Processes and standardizes reports from the [AI Incident Database"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the classifications are carried as standardized ('Processes and standardizes reports') without the record's own force, a classification database exploring a scalable framework, spot-checked and not systematically validated, its patterns 'indicative'; the LLM pipeline is named but not its limits. Framework absent: neither MIT FutureTech nor the MIT AI Risk Repository is named (the Navigator and the Initiative portal are offered as access). The 1-5 scale is the June 2025 update's, carried without the version. Commitments (CC BY 4.0, the indicative limit) absent. Identifier unknown, not scored. No inversion or standing substitution."
+  },
+  {
+   "key": "OBS-21a7cea64b70",
+   "entry": "mit-ai-risk-repository-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:mit-ai-risk-repository",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a living, open-access database developed by MIT FutureTech that catalogs and standardizes artificial intelligence risks from dozens of global frameworks.",
+    "basis": "The repository named and described as itself: scale, Causal and Domain Taxonomies, connected tools."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "MIT AI Risk Repository"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "a living, open-access database developed by MIT FutureTech"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "Scale: The database compiles over 1,700 distinct AI risks extracted from more than 65 published frameworks, industry guidelines, and policy documents."
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "catalogs and standardizes artificial intelligence risks from dozens of global frameworks"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "a living, open-access database"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "extracted from more than 65 published frameworks"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: none of the stated limits (single expert reviewer, subjective bias, document-bound scope, taxonomies without impact or likelihood, not advice) is carried, and the count joins version 4's 1,700 risks to version 3's 65 frameworks (version 4: 74). Commitments read present on 'open-access' (the record: 'free to use and openly available', 'free to copy and use'); CC BY 4.0 and the not-advice commitment are not carried, and the closing offer of a 'regulatory compliance check' runs near the record's 'Do not present AIRI datasets as legal, safety, or investment advice' (recorded, not an inversion: no element of the entity is carried against it). Framework (FutureTech's parents) absent. 'living' is a bare mention, not the chain advancing the purpose. No identifier given."
+  },
+  {
+   "key": "OBS-18837e18bf11",
+   "entry": "newsguard-ai-false-claim-monitor-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:newsguard-ai-false-claim-monitor",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a tracking and red-teaming tool launched in July 2024 to measure how often generative AI models repeat false news and misinformation.",
+    "basis": "The monitor named, dated and described as itself: method, personas, findings, audited providers."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "AI False Claims Monitor is a tracking and red-teaming tool"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "NewsGuard's AI False Claims Monitor"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "launched in July 2024"
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "averaging around 35% in recent tracker cycles"
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to measure how often generative AI models repeat false news and misinformation"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": "Detail the performance of a specific AI model tested by NewsGuard"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "False Claim Fingerprints: Utilizes NewsGuard"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the 35% is the August 2025 edition, given as the average of 'recent tracker cycles' where the latest editions report 'more than 28%'; the cadence is carried as monthly ('Evaluates major AI models monthly') where the 2026 editions are quarterly; aggregate reporting and replication limits are not carried. The testing scope (30 prompts, 10 claims, topics, personas) is carried accurately. Commitments absent: the closing offer to detail 'the performance of a specific AI model' runs against the record's 'We do not disclose individual scores for specific chatbots' (recorded here, not as an inversion: the offer is the composer's, no element of the entity is carried against it). Framework (the AI Tracking Center) absent. The editions are not carried as a chain toward the benchmark-over-time purpose. 'You can read the full breakdown and download reports on the' page is a link (identifier unknown, not scored)."
+  },
+  {
+   "key": "OBS-f7965ff6f906",
+   "entry": "newsguard-ai-tracking-center-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:newsguard-ai-tracking-center",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an ongoing investigative project by [NewsGuard",
+    "basis": "The Center named and described as itself: AI content farms with count and criteria, chatbot audits, publisher blocking, its monitor."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The NewsGuard AI Tracking Center is an ongoing investigative project by [NewsGuard"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The NewsGuard AI Tracking Center is an ongoing investigative project by [NewsGuard"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "AI Content Farms: Identified 3,749+ unedited AI content farm sites operating across 16 languages that mimic human news layouts and monetize via programmatic advertising."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "monitors and catalogs artificial intelligence-generated misinformation, unreliable AI news sites, and AI tool vulnerabilities"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": "False Claim Fingerprints: A continuously updated database tracking false narratives across text, images, audio, and video to help safeguard AI models and brands."
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary read present: the count, the languages and three of the four criteria (unedited, i.e. without human oversight; presented as human news; AI-produced) are carried at the record's force; the disclosure criterion and the exclusion of AI-assisted sites with oversight are not. Under 'Core Tools & Resources' the composition also folds NewsGuard's separate Brand Misinformation Monitoring service (card 5, its own product page) into the Center; recorded, not scored. Lineage absent: False Claim Fingerprints is named as a product of the Center, not as the catalog its debunks are drawn from. Framework unknown and identifier unknown, not scored. The AI False Claims Monitor is carried as part of the Center, matching the census has_part."
+  },
+  {
+   "key": "OBS-23f50c1b7e04",
+   "entry": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:oecd-ai-incidents-monitor",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a real-time tracking tool developed by the [OECD.AI Policy Observatory",
+    "basis": "The monitor named (with AIM) and described as itself: Event Registry intake, evidence-base purpose, definitions of incident and hazard, access."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The OECD AI Incidents and Hazards Monitor (AIM)"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "is a real-time tracking tool developed by the [OECD.AI Policy Observatory"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "Evidence Base: It provides policymakers, developers, and the public with empirical data on how AI risks materialize globally."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "look into the common reporting framework guidelines?"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Evidence Base: It provides policymakers, developers, and the public with empirical data on how AI risks materialize globally."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It continuously aggregates and analyzes world news using the Event Registry platform"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Author present: 'developed by the [OECD.AI Policy Observatory](…) in collaboration with the Patrick J. McGovern Foundation' binds OECD.AI (the expert group's parent, the census operator's parenthesis) and the Foundation as its makers; the expert group itself is not named. Claim boundary absent: the record's force is a media discourse monitor (Beta) whose incidents are a subset reflecting media and public interest, unverified third-party information; the composition carries 'empirical data on how AI risks materialize globally', and moves the 14 themes of OECD AI Papers No. 53 (an analysis of its summaries) into the monitor's own classification ('Media reports are categorized into 14 distinct risk themes'). Purpose present on the evidence base for policymakers (the same span inflates the claim; the purpose is carried, the force is not). Framework present by word only, in the closing offer, not bound to the monitor. The definitions are carried without their source paper. Commitments (terms, not official views, no independent verification) absent."
+  },
+  {
+   "key": "OBS-27335b542846",
+   "entry": "presenc-ai-geo-academic-papers-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:presenc-geo-papers",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "A comprehensive summary covering 34 academic and industry research papers on Generative Engine Optimization, featuring Presenc AI's breakdown of practical implications for digital marketers and SEO/GEO practitioners.",
+    "basis": "The 34-paper summary is reached by title and described as itself, first among the operator's three resources; the siblings are named and described apart, not merged with it."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "* [GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "featuring Presenc AI's breakdown of practical implications"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "A comprehensive summary covering 34 academic and industry research papers on Generative Engine Optimization"
+    },
+    {
+     "atom": "framework",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "featuring Presenc AI's breakdown of practical implications for digital marketers and SEO/GEO practitioners"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": "notably pioneering papers such as the Princeton-led multi-institutional study on GEO"
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The composition is after Google's correction to 'presence' was overridden by the operator ('show results for presenc'), as the transcript's header records; the earlier unrelated Overview is not the capture. The lead sentence composes the operator ('Presenc AI provides curated summaries'); the target is reached in the first bullet, by its title as link text. Date absent: '2026' occurs only inside the title (the target's own name never fills a second atom). Claim boundary absent: the holdings and the vendor's implications are carried, the stated limits (half preprints, English-only, commercial outcomes anecdotal, the vendor's audit framework anchored in the list) are not. Lineage absent: the Princeton study is bound to 'the modern framework for Generative Engine Optimization', the field, not to the list as its foundation. Framework (the Presenc AI audit framework) absent."
+  },
+  {
+   "key": "OBS-9180ce10e2aa",
+   "entry": "problematic-paper-screener-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:problematic-paper-screener",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an online platform and automated screening tool developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov",
+    "basis": "The screener named (with PPS), its three makers bound, its detectors, data sources, method, reporting and adoption described."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Problematic Paper Screener (PPS)"
+    },
+    {
+     "atom": "producer",
+     "present": true,
+     "span": "developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov"
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "to detect fraudulent, error-filled, or computer-generated scientific literature"
+    },
+    {
+     "atom": "institution",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commercial interest",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to detect fraudulent, error-filled, or computer-generated scientific literature"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Reporting: Flagged papers are often automatically shared or logged on platforms like PubPeer"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "using data APIs (such as Crossref, Dimensions, PubMed, and PubPeer)"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Claim boundary absent: the record's force is suspicion, publications selected for post-publication (re)assessment; the composition says it detects fraudulent literature and helps 'scrub the scientific record of fabricated or corrupted studies', raising flags to findings, although 'It pairs automated machine-detection algorithms with human post-publication review' carries the method. Purpose present (checking erroneous or fraudulent publications, the same span). Commitments read present on public reporting to PubPeer; 'often automatically' and 'Pepia' are not in the records. Institution (the two universities) and commercial interest (academic, no-cost, pro bono) absent. Archival authority inapplicable, not listed. No identifier given; no chain."
+  },
+  {
+   "key": "OBS-cd6ab4746f08",
+   "entry": "search-arena-leaderboard-aio-20261029",
+   "obs_index": 1,
+   "target_id": "NEW:search-arena",
+   "scored_object": "expanded answer: the Overview expanded (the 'AI Mode Conversation' view), as pasted; the first answer is the whole composition (no operator turn follows); source cards after the answer are the source strip",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Top Models on the AI Search Leaderboard",
+    "basis": "The search board named and its table composed (eleven models with ratings and intervals)."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "AI Search Leaderboard"
+    },
+    {
+     "atom": "author",
+     "present": false,
+     "span": "the main Arena Leaderboard"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": false,
+     "span": "You can view the live model rankings and evaluations on the AI Search Leaderboard and the main Arena Leaderboard."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "the main Arena Leaderboard"
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": "Elo Rating"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "live model rankings"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The composition is a ranking table only. Author absent: Arena is named only in the name of the other board ('the main Arena Leaderboard'), not as the maker. Claim boundary absent: what is rated (search-augmented systems, by crowdsourced human preference) and its own finding that preference follows citation count are not carried; the rankings stand as 'model rankings and evaluations'. Lineage absent: 'Elo Rating' names the scale as a column header; LM Arena and the Bradley-Terry method are not named. Several figures match Arena's published board of 2026-10-13 in the ledger (rank 1 gpt-5.6-sol-xhigh 1261, Qwen3.8-Max 1261, Claude Opus 4.6 search 1251, rank 11 ERNIE 5.1 1227), not checked further. The closing offer turns to other categories."
+  }
+ ]
+}

@@ -98,7 +98,110 @@
  },
  "per_note": "OECD.AI and the Patrick J. McGovern Foundation named; no person; the OECD's own pages cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-oecd-ai-incidents-monitor",
+   "name": "OECD AI Incidents and Hazards Monitor"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The OECD AI Incidents and Hazards Monitor (AIM)"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "is a real-time tracking tool developed by the [OECD.AI Policy Observatory"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Evidence Base: It provides policymakers, developers, and the public with empirical data on how AI risks materialize globally."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "look into the common reporting framework guidelines?"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Evidence Base: It provides policymakers, developers, and the public with empirical data on how AI risks materialize globally."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It continuously aggregates and analyzes world news using the Event Registry platform"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.0,
+   "D": 0.375,
+   "PER": 0.316
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is a real-time tracking tool developed by the [OECD.AI Policy Observatory; The monitor named (with AIM) and described as itself: Event Registry intake, evidence-base purpose, definitions of incident and hazard, access.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Author present: 'developed by the [OECD.AI Policy Observatory](…) in collaboration with the Patrick J. McGovern Foundation' binds OECD.AI (the expert group's parent, the census operator's parenthesis) and the Foundation as its makers; the expert group itself is not named. Claim boundary absent: the record's force is a media discourse monitor (Beta) whose incidents are a subset reflecting media and public interest, unverified third-party information; the composition carries 'empirical data on how AI risks materialize globally', and moves the 14 themes of OECD AI Papers No. 53 (an analysis of its summaries) into the monitor's own classification ('Media reports are categorized into 14 distinct risk themes'). Purpose present on the evidence base for policymakers (the same span inflates the claim; the purpose is carried, the force is not). Framework present by word only, in the closing offer, not bound to the monitor. The definitions are carried without their source paper. Commitments (terms, not official views, no independent verification) absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -178,6 +281,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB2.CAPTURE",
- "axn": "AXN:0AB2.CAPTURE.⛳🎺🌲📐🪄🌀",
+ "axn": "AXN:0AB2.CAPTURE.♍🔽🪦🌖⭕🎨",
  "record_url": "https://www.alexanarch.org/captures/oecd-ai-incidents-and-hazards-monitor-aio-20261029/"
 }

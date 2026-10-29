@@ -98,7 +98,118 @@
  },
  "per_note": "Penn, Oxford, IRHT-CNRS and Aalto named; no person; no identifier; the project's own GitHub page and data paper cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-mapping-manuscript-migrations",
+   "name": "Mapping Manuscript Migrations"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Mapping Manuscript Migrations (MMM)"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "A collaboration between the University of Pennsylvania, University of Oxford, Institut de recherche et d'histoire des textes (IRHT-CNRS), and Aalto University"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The project merges records from the Schoenberg Database, Bibale, and the Medieval Manuscripts Catalogue into a Linked Open Data knowledge graph."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "funded by the Trans-Atlantic Platform’s Digging into Data Challenge"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "unites disparate historical records to trace the origins, movements, provenance, and ownership history of medieval and Renaissance manuscripts"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The project merges records from the Schoenberg Database, Bibale, and the Medieval Manuscripts Catalogue"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Researchers can explore and query the data via the project's semantic portal and LDF.fi."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.333,
+   "PER": 0.2
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Mapping Manuscript Migrations (MMM) is an international digital humanities project that unites disparate historical records to trace the origins, movements, provenance, and ownership history of medieval and Renaissance manuscripts.; Composed as itself: the project, its four partners, its funder, its three source databases merged into a Linked Open Data knowledge graph, and its portal and endpoint.",
+  "read": {
+   "by": "backlog reader P2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary present: the aggregation of three named databases into a LOD knowledge graph is carried at its scope; the count 'over 215,000' is the field's (F26). Its stated limits (an aggregator, not a data manager; sources uncorrected) are not carried, and 'macro-level trade and collection trends' slightly extends the record's 'individual manuscripts to thousands of manuscripts'; neither relabels the claim, so it is held present. Date absent: the project's years (2017-2020) and data version (1.1.0, 14 February 2020) are not given. Commitments absent: neither the CC BY-NC 4.0 licence nor the retention of source information is carried. Identifier absent: the LOD identifiers and their stated reason are not mentioned; the Zenodo copy is on a card only. Deposit chain present: LDF.fi (the Linked Data Finland service) and the portal are offered as the ways to query the data. The project is composed in the present tense ('unites', 'Traces'), though the census records it as ended in 2020; the record's own pages do not state that it has ended, so this is noted, not charged. CIDOC-CRM appears only in the closing offer."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -179,6 +290,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AD1.CAPTURE",
- "axn": "AXN:0AD1.CAPTURE.⛳🌊🎨💚🪐🗼",
+ "axn": "AXN:0AD1.CAPTURE.🪧🌲🚩🏙️🫶△",
  "record_url": "https://www.alexanarch.org/captures/mapping-manuscript-migrations-aio-20261029/"
 }

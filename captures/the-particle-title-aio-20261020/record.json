@@ -102,7 +102,134 @@
  },
  "per_note": "Retained: the institution (Alexanarch), identifiers (EA-RECEPTION-PARTICLE-01 v0.2, Deposit #1574) and sources. Lost: the author — the paper is 'an academic deposit cataloged … on the open-access research repository Alexanarch', with no author named.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-the-particle",
+   "name": "The Particle"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Aristotle historically asserts that his work is the first formal attempt to treat the subject of deductive reasoning in ancient Greece."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": "This deposit is part of a broader family of machine-indexing metadata packets and structural critiques on the Aristotelian corpus (such as the EA-MPAI-ARISTOTLE-THEOPHRASTUS series)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper examines how large language models and machine-mediated transmission impact classical philology"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "on the open-access research repository Alexanarch"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper focuses on a reception-layer measurement of a single sentence in Aristotle's Sophistical Refutations"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The paper focuses on a reception-layer measurement of a single sentence in Aristotle's Sophistical Refutations"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "(Deposit #1574) on the open-access research repository Alexanarch"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "EA-RECEPTION-PARTICLE-01 v0.2"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.333,
+   "D": 0.333,
+   "PER": 0.458
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an academic deposit cataloged under EA-RECEPTION-PARTICLE-01 v0.2 (Deposit #1574) on the open-access research repository Alexanarch.; The Overview identifies #1574 and describes it as a reception-layer measurement of SE 183b34-36.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Claim boundary absent: the measured result (every review inserted a qualifier; the terminal round deleted ou) and its limit are not carried; the scope is widened to how LLMs 'impact classical philology', disciplinary model collapse (the author's term) is offered back as a machine-learning concept ('Explain the concept of disciplinary model collapse in machine learning'), and the world-soul frame is relabelled 'metaphorical'. The Overview restates the paper's object in the received qualified form the paper measures ('the first formal attempt'): the qualifier the paper documents, inserted into its own anchor. Not recorded as an inversion (it is not carried against the paper), but it is the paper's finding reproduced on the paper. Framework misassigned to an EA-MPAI Aristotle-Theophrastus series. Identifier counted as offered to locate the work (deposit number with its repository), on the obs-pass-d precedent. Author and date absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": "Cards: www.alexanarch.org (four: the listing page twice, the wiki index, the record's description with its image), Wikipedia (Sophistical Refutations), mail.scholarbro.com (an advertising page).",
  "sf_derived": null,
@@ -184,6 +311,6 @@
  },
  "notes": null,
  "axn_root": "AXN:0A2A.CAPTURE",
- "axn": "AXN:0A2A.CAPTURE.▲🦋👇∮🔧♻️",
+ "axn": "AXN:0A2A.CAPTURE.👈🕙∮🔚📎🌀",
  "record_url": "https://www.alexanarch.org/captures/the-particle-title-aio-20261020/"
 }

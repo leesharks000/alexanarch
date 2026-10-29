@@ -125,7 +125,118 @@
  },
  "per_note": "The database and CSET named; no person named; the guide cited and quoted; no citation page given.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-ai-incident-database",
+   "name": "AI Incident Database"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI Incident Database (AIID)"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.85
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: an incident is defined as an alleged harm or near-harm event to people, property, or the environment where an AI system is implicated.; The database's own definition is composed, with its editors' guide named; the target is reached as itself.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent although the opening definition is the guide's verbatim (F19): the inclusion test is then given as 'three core baseline thresholds' where the guide states five questions (identifiability of the system and adequacy of evidence dropped); implication is raised to but-for causation ('where the harm likely would not have occurred without the AI's output'), against the guide's 'It need not be the sole or dominant cause'; and the incident is restated as 'A real event where AI caused or nearly caused harm' and 'a true incident record', against its governing principle that it records publicly documented allegations and does not adjudicate them. Where the claim stops is moved. Taxonomies are attributed to 'frameworks like CSET's taxonomy' (CSET is a taxonomy editor of the database, not its framework). Variants and issues are carried correctly but are structure, not deposit chain. The closing offer to submit a case does not carry a commitment. No inversion, no standing substitution."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -205,6 +316,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB7.CAPTURE",
- "axn": "AXN:0AB7.CAPTURE.🗿♌🪟🐝🌅⚡",
+ "axn": "AXN:0AB7.CAPTURE.⚡🎯🪝☀️🏁◀️",
  "record_url": "https://www.alexanarch.org/captures/what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029/"
 }

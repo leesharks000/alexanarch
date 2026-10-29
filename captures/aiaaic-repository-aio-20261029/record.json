@@ -71,7 +71,94 @@
  },
  "per_note": "AIAAIC named; no person; the repository's page and the OECD catalogue cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-aiaaic-repository",
+   "name": "AIAAIC Repository"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AIAAIC Repository"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Started in June 2019"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is an independent, open-access public database that tracks real-world incidents, controversies, and harms related to artificial intelligence, algorithms, and automation."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "as a private initiative to monitor transparency and accountability"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "License: Free and open-source under a Creative Commons (CC BY-SA 4.0) license."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": null,
+   "D": 0.167,
+   "PER": 0.267
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an independent, open-access public database that tracks real-world incidents, controversies, and harms related to artificial intelligence, algorithms, and automation.; The repository is composed as itself: independence, unit (incidents and controversies), start, licence and audience.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Purpose read as present: 'to monitor transparency and accountability' is recognisably the mission (to make the systems transparent, open and accountable), though it is assigned to the 2019 start, whose stated purpose was to better understand AI's reputational risks; 'Used globally by researchers, journalists, civil society groups, and policymakers' also carries the use the record states. Commitments present: the CC BY-SA 4.0 licence carried as its own, not against it; independence from government and industry and the refusal of commercial funding are not carried. Author absent: AIAAIC appears only inside the name. No entry identifier (AIAAIC<n>). No inversion, no standing substitution."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -150,6 +237,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA8.CAPTURE",
- "axn": "AXN:0AA8.CAPTURE.◀️⏩🔍🫵🌟🔃",
+ "axn": "AXN:0AA8.CAPTURE.🦅♠️🔒🔝🌕🕊️",
  "record_url": "https://www.alexanarch.org/captures/aiaaic-repository-aio-20261029/"
 }

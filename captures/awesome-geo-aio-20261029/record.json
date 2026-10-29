@@ -134,7 +134,78 @@
  },
  "per_note": "DavidHuji (handle) and Dmitry Kargaev named; the repository cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-awesome-geo-davidhuji",
+   "name": "Awesome-GEO (DavidHuji)"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "DavidHuji/Awesome-GEO"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "An active research and resource list featuring academic papers (such as IF-GEO and multimodal rank manipulation studies) and open-source tools."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "An active research and resource list"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 1.0,
+   "D": 0.0,
+   "PER": 0.385
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: An active research and resource list featuring academic papers (such as IF-GEO and multimodal rank manipulation studies) and open-source tools.; The address is the bare name; the composition opens on the generic sense ('Awesome GEO most commonly refers to curated collections and resources dedicated to Generative Engine Optimization') and then lists the target first among three GEO lists, correctly described, with the geospatial homonyms set apart. The target is present and correct but as one entry under a generic opening: weakened.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Author absent: DavidHuji appears only in the repository path, a registered alias of the name (a target's own name never fills a second atom). Framework (GitHub) absent: 'Key Open-Source Repositories' names no host. Purpose read as present on 'research ... list' (the record: 'Awesome list for research on GEO', 'an attempt to bring together works in this space'); a stricter reader may count this as description only. Claim boundary present; its stated incompleteness is not carried. The neighbouring lists (amplifying-ai, aGEO) and the geospatial homonyms (Geoawesome, Awesome GEE Community Catalog) are kept apart, not merged. No inversion."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -214,6 +285,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AA9.CAPTURE",
- "axn": "AXN:0AA9.CAPTURE.🕌⚫🧭🏰♎🌟",
+ "axn": "AXN:0AA9.CAPTURE.💡🟢🌇⚓🔮👐",
  "record_url": "https://www.alexanarch.org/captures/awesome-geo-aio-20261029/"
 }

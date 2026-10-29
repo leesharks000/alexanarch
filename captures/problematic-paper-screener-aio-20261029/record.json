@@ -98,7 +98,118 @@
  },
  "per_note": "Cabanac, Labbé and Magazinov named; IRIT; arXiv:2210.04895 on a card; the screener's own page cited.",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-problematic-paper-screener",
+   "name": "Problematic Paper Screener"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Problematic Paper Screener (PPS)"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "to detect fraudulent, error-filled, or computer-generated scientific literature"
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "to detect fraudulent, error-filled, or computer-generated scientific literature"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Reporting: Flagged papers are often automatically shared or logged on platforms like PubPeer"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "using data APIs (such as Crossref, Dimensions, PubMed, and PubPeer)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.25,
+   "C": 1.0,
+   "D": 0.222,
+   "PER": 0.381
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is an online platform and automated screening tool developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov; The screener named (with PPS), its three makers bound, its detectors, data sources, method, reporting and adoption described.",
+  "read": {
+   "by": "backlog reader M2",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary absent: the record's force is suspicion, publications selected for post-publication (re)assessment; the composition says it detects fraudulent literature and helps 'scrub the scientific record of fabricated or corrupted studies', raising flags to findings, although 'It pairs automated machine-detection algorithms with human post-publication review' carries the method. Purpose present (checking erroneous or fraudulent publications, the same span). Commitments read present on public reporting to PubPeer; 'often automatically' and 'Pepia' are not in the records. Institution (the two universities) and commercial interest (academic, no-cost, pro bono) absent. Archival authority inapplicable, not listed. No identifier given; no chain."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -178,6 +289,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB5.CAPTURE",
- "axn": "AXN:0AB5.CAPTURE.➗🔝☀️🌙🧭🃏",
+ "axn": "AXN:0AB5.CAPTURE.◇🪜🍁🗿♻️🌻",
  "record_url": "https://www.alexanarch.org/captures/problematic-paper-screener-aio-20261029/"
 }

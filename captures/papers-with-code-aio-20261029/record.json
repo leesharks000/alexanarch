@@ -80,7 +80,118 @@
  },
  "per_note": "Robert Stojnic, Ross Taylor, Facebook and Meta named; no identifier; no card is the entity's own page (the original no longer serves).",
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-papers-with-code",
+   "name": "Papers with Code"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Papers with Code was a free"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Launched in 2018 by Robert Stojnic and Ross Taylor."
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Launched in 2018"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Papers with Code was a free, open-access platform that linked machine learning research papers directly to their source code, datasets, and benchmark results."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Acquired by Facebook (Meta AI Research) in December 2019."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "was a free, open-access platform"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The historical dataset remains accessible on the [Papers with Code GitHub Repository"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.667,
+   "PER": 0.3
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Papers with Code was a free, open-access platform that linked machine learning research papers directly to their source code, datasets, and benchmark results.; The original platform is composed as itself, in the past tense, with founders, owner, sunset and archive; the revival and Trending Papers are set apart as alternatives.",
+  "read": {
+   "by": "backlog reader M1",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": true,
+   "notes": "Claim boundary present: past tense, sunset given ('Shut down by Meta on July 24, 2025'), the revival kept apart ('community-driven alternatives like [Papers with Code co]'). Commitments present on 'free, open-access' (the 'neutral, open and free resource' commitment, in part); the CC BY-SA data licence is not given. Purpose absent: the composition states what it linked, not what it was for (exploring and discovering state-of-the-art research). Deposit chain present: the historical dataset offered at its repository as the way to the data. Identifier absent: the repository is named by link text, not identified (paperswithcode/paperswithcode-data). Lineage (sota-extractor) absent. No inversion."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -161,6 +272,6 @@
  },
  "notice": null,
  "axn_root": "AXN:0AB3.CAPTURE",
- "axn": "AXN:0AB3.CAPTURE.🎻⏳♎🌌🔩❌",
+ "axn": "AXN:0AB3.CAPTURE.♾️✖️🔍🌹♠️■",
  "record_url": "https://www.alexanarch.org/captures/papers-with-code-aio-20261029/"
 }

@@ -154,7 +154,134 @@
  "per_v": null,
  "per_note": null,
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-provenance-after-ai",
+   "name": "Provenance After AI"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\" is a highly specialized research paper"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published in May 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": "A target threshold of PER < 0.2 is proposed for standard information ecosystems"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The text isolates \"attribution survival\" from standard engineering concepts like Retrieval-Augmented Generation (RAG) faithfulness, factual precision, citation recall, or semantic similarity."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper argues that contemporary AI governance attempts only look at two parts of a broader problem, leaving a critical \"gap\" regarding actual meaning and knowledge composition"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Data Provenance Initiative, EU AI Act transparency rules, W3C PROV"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.556,
+   "C": 0.667,
+   "D": 0.444,
+   "PER": 0.542
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: It introduces a three-dimensional framework for understanding how digital content history and authorial ownership survive—or fail to survive—when processed through generative AI systems.; The composition gives the three dimensions (artifact, licensing, semantic), C2PA, the Data Provenance Initiative, the EU AI Act and W3C PROV, and PER's formula.",
+  "read": {
+   "by": "backlog reader B",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "Claim boundary absent: PER is presented as an established 'mathematical metric' with a proposed threshold (PER < 0.2) that the work does not state, where the record keeps PER provisional and removes numerical estimates; 'semantic exhaustion' / 'content hollowing' and the authorship/slop boundary are drawn from other deposits (#1369 and the Semantic Economy line) and attributed to this paper. Purpose read as present (the work named as supplying the dimension the existing frameworks leave), though the composition's 'only look at two parts' leans toward the critique the record disclaims. Lineage present in the table binding C2PA, DPI, EU AI Act and W3C PROV to the paper as the frameworks it extends. Author named only on a card (src). Commitments, framework (Semantic Economy), corpus, identifiers and the #725/#1190 chain absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -235,6 +362,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A31.CAPTURE",
- "axn": "AXN:0A31.CAPTURE.🏺💧➖♃☁️♆",
+ "axn": "AXN:0A31.CAPTURE.🔓🚪🌓🎭🐚🔚",
  "record_url": "https://www.alexanarch.org/captures/provenance-after-ai-title-aio-20261026/"
 }

@@ -53,7 +53,126 @@
  "per_v": null,
  "per_note": null,
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis (or SPXI-gnosis) is a paid service at gnosis.spxi.dev"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It performs two main acts on two kinds of objects:"
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "ecosystem from the Semantic Economy Institute / Lee Sharks (Rex Fraction)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "and, on commission, the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Pricing: Based on measured model costs; stages charged as delivered (never below cost + fees or above quote; unused portions refunded)."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The service emphasizes reconstruction and evidence over mere recognition."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Readings are retained as evidence (CC BY 4.0)."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "as an instrument of SPXI methods for “opening” existing knowledge compositions and “constructing” sourced knowledge objects"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "MCP tools (listed in the official MCP Registry as dev.spxi/gnosis)"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 0.0,
+   "D": 0.111,
+   "PER": 0.174
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: SPXI-gnΩsis (or SPXI-gnosis) is a paid service at gnosis.spxi.dev, part of the SPXI (Semantic Packet for eXchange and Indexing) ecosystem; The service composed at its own terms: paid, both acts and both objects, the commission and /non, the premise, the disambiguations.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "producer read absent, narrowly: 'Lee Sharks (Rex Fraction)' is attached to the SPXI ecosystem ('part of the SPXI ... ecosystem from the Semantic Economy Institute / Lee Sharks'), and the composition never names him as the service's author or operator (ruling 2026-10-19); a reader who takes 'from' as governing the service would mark it present. identifier present: the MCP Registry listing offered under 'Access' as the way to the service. deposit chain absent: 'observed builds around 0.21.x' and the packet's deposit date are bare. The closing summary's '(verifying/source-checking)' is a gloss beside construction kept, not the prohibited compression."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -132,6 +251,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A36.CAPTURE",
- "axn": "AXN:0A36.CAPTURE.📏🏛️🝊🔔🏴🪄",
+ "axn": "AXN:0A36.CAPTURE.🌺🔧✋🔖🕒🐚",
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-grok-20261026/"
 }

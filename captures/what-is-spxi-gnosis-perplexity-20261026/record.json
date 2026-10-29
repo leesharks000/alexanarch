@@ -38,7 +38,126 @@
  "per_v": null,
  "per_note": null,
  "availability": null,
- "per_dim": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-spxi-gnosis",
+   "name": "SPXI-gnΩsis"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI-gnΩsis is a paid, AI-assisted service"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its documentation identifies Lee Sharks as the author of its specification"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its “opening” is an analysis, not a guarantee of truth: the readings are model-generated, can disagree, and depend on the sources admitted."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its published typical prices, dated October 25, 2026, are about 2¢ per sentence for a basic check and 22¢ for a fuller opening, with a free quote before payment."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it asks not just whether a statement has a citation, but how the statement transforms what its source actually says."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "commissions publish a public knowledge-object record in /non, short for “the Negative of the Negative,” under CC BY 4.0."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "places it within SPXI—“Semantic Packet for eXchange & Indexing.”"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.667,
+   "D": 0.222,
+   "PER": 0.261
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: SPXI-gnΩsis is a paid, AI-assisted service for auditing existing knowledge against its sources and constructing new, source-linked knowledge objects.; The service at its own terms: both acts, operators named, the worked case of Sophistical Refutations, /non under CC BY 4.0, prices, and its own limits.",
+  "read": {
+   "by": "backlog reader A",
+   "on": "2026-10-29",
+   "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+   "external": false,
+   "notes": "src false: the paste carries no source panel and the seven citation markers survive only as replacement characters (cut). The closing caveat ('These descriptions establish what the service offers, not independent validation of its accuracy') carries the record's own limit (concordance, never independent validation) and is read under claim boundary, not as a standing substitution. corpus absent ('its associated archive', unnamed); institution absent."
+  }
+ },
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -117,6 +236,6 @@
  "notes": null,
  "notice": null,
  "axn_root": "AXN:0A37.CAPTURE",
- "axn": "AXN:0A37.CAPTURE.🔐🔽🔩♅⊗⛳",
+ "axn": "AXN:0A37.CAPTURE.🧡⏫🌿👆☁️🌕",
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-perplexity-20261026/"
 }
