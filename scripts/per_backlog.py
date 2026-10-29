@@ -220,9 +220,11 @@ def pd_of(r):
                 "inversions": [], "standing_substitutions": [], "scores": {"PER": None, "M": None, "C": None, "D": None}, "src": None,
                 "tombstone_pointer": False, "after_challenge": None, "basis": "the address has no archive referent with a defining record: no atom set. " + str(r.get("notes") or "")[:400],
                 "read": {"by": f"backlog reader {r['group']}", "on": TODAY, "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md"}}
-    basis = "; ".join(x for x in [("reached: " + str(r.get("reached_basis"))[:300]) if r.get("reached_basis") else "",
-                                  str(r.get("basis_note") or "")[:400],
-                                  ("beneath the gate: PER " + str((r.get("beneath") or {}).get("PER"))) if r.get("beneath") else "",
+    # Whole, never cut (repair 2026-10-29: a character cut left the basis mid-word on every observation written by this script).
+    basis = "; ".join(x for x in [("reached: " + str(r.get("reached_basis"))) if r.get("reached_basis") else "",
+                                  str(r.get("basis_note") or ""),
+                                  ("beneath the gate: PER " + str((r.get("beneath") or {}).get("PER"))
+                                   + " (the score of the target's atoms the composition still carries; the gate sets every dimension to 1.0)") if r.get("beneath") else "",
                                   "tombstone pointer: a severed record presented as live" if r.get("tombstone_pointer") else ""] if x)
     return {"spec": SPEC, "entity_type": r["target"].get("template"), "target": {"ent": r["target"]["id"], "name": r["target"]["name"]},
             "qualifier": None, "reached": r["reached"], "gate": r["gate"],
