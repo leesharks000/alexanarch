@@ -5,6 +5,10 @@
  "date": "2026-10-27",
  "statement": "Every field claim of every /non row with its quote as the row holds it, unquoted: a sentence-level reader matches a sentence against these to name the row that already holds it. The row and its ledgers are the authority; this is their index.",
  "rows": {
+  "ai-incident-database": {
+   "axn": "AXN:0AB8.NON.📐⏩🌖🪸🎪△",
+   "row_sha256": "19200a40cf2836b2da3a1cc7c06ef4a6aae02fb68696d300b528729d9243a46d"
+  },
   "ai-overview-capture-registry": {
    "axn": "AXN:0721.NON.🛸🏴🌍♎🔝📌",
    "row_sha256": "5e520eaff546917935d5f8df2724db0734e23cbf438528d516383fb9fdc69f60"
@@ -60,6 +64,10 @@
   "op-attributization": {
    "axn": "AXN:0725.NON.💫🔙🔭📐👇🔐",
    "row_sha256": "0af3384eb7fbdde97ace4154ee3610515179d668727383be78d67c5bd994a54a"
+  },
+  "papers-with-code": {
+   "axn": "AXN:0AB9.NON.🛤️🔼🃏♆💧🕕",
+   "row_sha256": "41985efde7f48780c4ad6d8479e72d6cf39854afceef2f13c521afe1b0dc2b9d"
   },
   "political-economy": {
    "axn": "AXN:0716.NON.🤲👇🌃🪟📦🌍",
@@ -118,8 +126,683 @@
   "statement": "SPXI instrument: method 0.16 of 87, level 0 (Measurement), The Negative of the Negative (/non).",
   "also": []
  },
- "count": 1093,
+ "count": 1226,
  "claims": [
+  {
+   "row": "ai-incident-database",
+   "id": "F1",
+   "quote": "The AI Incident Database is dedicated to indexing the collective history of harms or near harms realized in the real world by the deployment of artificial intelligence systems.",
+   "source": "B1",
+   "source_label": "AI Incident Database — AI Incident Database",
+   "locus": "About the Database ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F2",
+   "quote": "Like similar databases in aviation and computer security, the AI Incident Database aims to learn from experience so we can prevent or mitigate bad outcomes.",
+   "source": "B1",
+   "source_label": "AI Incident Database — AI Incident Database",
+   "locus": "About the Database ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F3",
+   "quote": "You are invited to submit incident reports, whereupon submissions will be indexed and made discoverable to the world.",
+   "source": "B1",
+   "source_label": "AI Incident Database — AI Incident Database",
+   "locus": "About the Database ¶2",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F4",
+   "quote": "The AI Incident Database is a project of the Responsible AI Collaborative, an organization chartered to advance the AI Incident Database.",
+   "source": "B1",
+   "source_label": "AI Incident Database — AI Incident Database",
+   "locus": "The Responsible AI Collaborative ¶1 (also B11, the same paragraph)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F5",
+   "quote": "Incident 1788:",
+   "source": "B1",
+   "source_label": "AI Incident Database — AI Incident Database",
+   "locus": "incident list (the highest id on the page, 2026-10-29)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F6",
+   "quote": "The MIT AI Incident Tracker classifies 1,600 real-world report incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "source": "B2",
+   "source_label": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "locus": "opening ('How is AI harming us?')",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F7",
+   "quote": "Raw reports from the AI Incident Database (AIID) are processed by Arcola AI's LLM pipeline, which categorizes them using established frameworks, such as the MIT Risk Repository and a harm severity rating system based on CSET’s AI Harm Taxonomy.",
+   "source": "B2",
+   "source_label": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "locus": "What is the AI Incident Tracker? ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F8",
+   "quote": "We build on the great work done by the Responsible AI Collaborative who created and maintain the AI Incident Database, reviewing all submitted reports and ensuring the quality of the dataset.",
+   "source": "B2",
+   "source_label": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "locus": "What is the AI Incident Tracker? ¶3",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F9",
+   "quote": "As the reporting is voluntary, the dataset is inevitably subject to some degree of sampling bias. … a systematic validation study has not yet been completed.",
+   "source": "B2",
+   "source_label": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "locus": "Limitations of the analysis and dataset",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F10",
+   "quote": "The AI Incident Database (AIID) is a tool designed to help us better imagine and anticipate these risks, collecting more than 1,200 reports of intelligent systems causing safety, fairness, or other real-world problems. … As a central, systematized repository of problems experienced in the real world as a result of AI, this crowdsourced database can help AI practitioners mitigate or avoid repeated bad outcomes in the future.",
+   "source": "B3",
+   "source_label": "Partnership on AI — AI Incident Database - Partnership on AI",
+   "locus": "Workstreams / Safety Critical AI / AI Incident Database, Overview ¶1–2",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F11",
+   "quote": "As AI technology is integrated into an increasing number of safety-critical systems — entering domains such as transportation, healthcare, and energy — the potential impact of this technology’s failures similarly grows.",
+   "source": "B3",
+   "source_label": "Partnership on AI — AI Incident Database - Partnership on AI",
+   "locus": "Overview ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F12",
+   "quote": "The AI Incident Database is free and open-source project dedicated to indexing the collective history of harms or near harms realized in the real world by the deployment of artificial intelligence systems.",
+   "source": "B4",
+   "source_label": "OECD AI Policy Observatory — AI Incident Database",
+   "locus": "catalogue entry, description ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F13",
+   "quote": "Usage rights: … Open source/Permissive … License: … Apache 2.0",
+   "source": "B4",
+   "source_label": "OECD AI Policy Observatory — AI Incident Database",
+   "locus": "About the tool: usage rights, licence",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F14",
+   "quote": "Uploaded on Apr 25, 2024 … Developing organisation(s): … responsible ai collaborative",
+   "source": "B4",
+   "source_label": "OECD AI Policy Observatory — AI Incident Database",
+   "locus": "entry header; About the tool: developing organisation",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F15",
+   "quote": "32 verified incidents · 29 companies · 13 countries · 24 columns — Every major AI failure, documented … License: CC BY-SA 4.0",
+   "source": "B5",
+   "source_label": "Kaggle — AI Incidents, Failures & Controversies Database - Kaggle",
+   "locus": "title, subtitle and description (Kaggle API dataset view)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F16",
+   "quote": "AI incidents surged **56.4% in 2024 alone** (Stanford HAI AI Index 2025).",
+   "source": "B5",
+   "source_label": "Kaggle — AI Incidents, Failures & Controversies Database - Kaggle",
+   "locus": "Why This Dataset?",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F17",
+   "quote": "| **AI Incident Database (incidentdatabase.ai)** | Primary incident records and AIID identifiers |",
+   "source": "B5",
+   "source_label": "Kaggle — AI Incidents, Failures & Controversies Database - Kaggle",
+   "locus": "Data Sources table",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F18",
+   "quote": "AI Incident Database | TIME posted on the topic",
+   "source": "B6",
+   "source_label": "LinkedIn·TIME — AI Incident Database | TIME posted on the topic",
+   "locus": "card title (video, 1:35; not found, title only)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F19",
+   "quote": "An alleged harm or near harm event to people, property, or the environment where an AI system is implicated.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: AI incident (also §2.1)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F20",
+   "quote": "An alleged harm or near harm by an AI system that has yet to occur or be detected.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: AI issue",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F21",
+   "quote": "The AIID editorial record that bounds and summarizes a specific harmful or near-harm event or traceable episode.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: Incident ID",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F22",
+   "quote": "A source document attached to an incident ID. Multiple reports may document the same underlying event.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: Incident report",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F23",
+   "quote": "A report is evidence; an incident ID is the database’s normalized account of an event. A later source about the same underlying event is usually an additional report, not a new incident.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: fast boundary rule",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F24",
+   "quote": "A distinct incident involving the same intelligent system, substantially similar causative factors, and substantially similar harms as a known incident.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "Quick Definitions: AI incident variant",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F25",
+   "quote": "The database records publicly documented allegations of harm or near harm. It does not independently adjudicate every factual claim.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "header: governing principle",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F26",
+   "quote": "1. IS THERE A SPECIFIC EVENT? … 2. IS AN AI SYSTEM IDENTIFIABLE? … 3. IS THE AI SYSTEM CAUSALLY IMPLICATED? … 4. IS THERE HARM OR CREDIBLE NEAR HARM? … 5. IS THE EVIDENCE ADEQUATE?",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§3.1 The Five-Question Test",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F27",
+   "quote": "At least one source must support the essential event, and uncertainty must be expressible without turning the record into speculation.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§3.1, question 5",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F28",
+   "quote": "An AI system is implicated when it played an important role in the chain of events that produced the alleged harm. It need not be the sole or dominant cause.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§2.3 Implication and Causality ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F29",
+   "quote": "A near-harm event exists when the system helped create a chain of events that could readily have produced harm but an external factor prevented the outcome. The external factor must be independent of the system and should not simply be a built-in safeguard functioning as designed.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§2.4 Harm and Near Harm ¶2",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F30",
+   "quote": "General criticism of a product or technology class without identified harm. … Benchmark failures, model errors, or hallucinations that remain inside testing or private drafting and have no consequential use. … These are presumptions rather than absolute prohibitions.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§3.3 Presumptive Exclusions",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F31",
+   "quote": "A retired entity or incident identifier redirected to the canonical record that replaced it.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§1.1 Core Record Types: Duplicate mapping",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F32",
+   "quote": "The AIID is a curated archive of publicly documented incidents, issues, reports, and responses. … It is not a neutral mirror of all AI harms, a comprehensive denominator for risk rates, or an independent adjudication of every event.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§11.1 What the Database Represents",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F33",
+   "quote": "Wealthy countries, prominent companies, spectacular events, and English-language reporting are likely to be overrepresented. Harms affecting marginalized groups, occurring inside private organizations, or unfolding as ordinary administration may be underrepresented.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§11.2 Coverage and Selection Effects",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F34",
+   "quote": "A lack of records is not evidence that a sector or country has no incidents.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§11.3 Epistemic Status",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F35",
+   "quote": "The live site can change after an export is created.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "§1.6 Live Data and Point-in-Time Snapshots",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F36",
+   "quote": "Version 2 · October 1, 2026 · Daniel Atherton and Sean McGregor · Operational working guide … Generative AI tools were used during the development of Version 2 to assist with research, document organization, drafting, revision, and consistency review.",
+   "source": "B7",
+   "source_label": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "locus": "header; Version 2 note on AI assistance",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F37",
+   "quote": "In aviation, an accident is a case where substantial damage or loss of life occurs. Incidents are cases where the risk of an accident substantially increases.",
+   "source": "B8",
+   "source_label": "AI Incident Database — Defining an “AI Incident”",
+   "locus": "¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F38",
+   "quote": "this database adopts an adaptive criteria for ingesting \"incidents\" where reports are accepted or rejected on the basis of a growing rule set defined in the Editor's Guide.",
+   "source": "B8",
+   "source_label": "AI Incident Database — Defining an “AI Incident”",
+   "locus": "¶2",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F39",
+   "quote": "AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+   "source": "B9",
+   "source_label": "LinkedIn·TIME — AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+   "locus": "card title (video, 1:35; not found, title only)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F40",
+   "quote": "Examples of AI real attacks",
+   "source": "B10",
+   "source_label": "YouTube·HarrietHacks — Examples of AI real attacks",
+   "locus": "oEmbed title (YouTube, HarrietHacks, 6:59)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F41",
+   "quote": "Intelligent systems are currently prone to unforeseen and often dangerous failures when they are deployed to the real world. Much like the transportation sector before it (e.g., FAA and FARS) and more recently computer systems, intelligent systems require a repository of problems experienced in the real world so that future researchers and developers may mitigate or avoid repeated bad outcomes.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "Why \"AI Incidents\"?",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F42",
+   "quote": "The initial set of more than 1,000 incident reports have been intentionally broad in nature. Current examples include, … An autonomous car kills a pedestrian",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "What is an Incident?",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F43",
+   "quote": "When in doubt of whether an event qualifies as an incident, please submit it! This project is intended to converge on a shared criteria for ingesting incidents through exploration of the candidate incidents submitted by the broader community.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "When Should You Report an Incident?",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F44",
+   "quote": "The incident database is managed in a participatory manner by persons and organizations contributing code, research, and broader impacts.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "Board of Directors ¶1",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F45",
+   "quote": "Incident Editors: People that resolve incident submissions to the database and maintain them. … Daniel Atherton is the lead AI incidents editor.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "Collaborators: Incident Editors; lead editor",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F46",
+   "quote": "launching the AI Incident Database … Sean McGregor is the Executive Director.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "Emeritus Board: Sean McGregor; Collaborators",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F47",
+   "quote": "Database Founding Sponsor … Jingying Yang and Dr. Christine Custis contributed significantly to the early stages of the AIID via their roles with the Partnership on AI.",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "sponsor block; Open Source Contributors",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F48",
+   "quote": "Taxonomy Editors: Organizations or people that have contributed taxonomies to the database. … Center for Security and Emerging Technology (CSET) … Nikiforos Pittaras (GMF)",
+   "source": "B11",
+   "source_label": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "locus": "Collaborators: Taxonomy Editors",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F49",
+   "quote": "The AI Incident Database (AIID) is a project that catalogs AI incidents and supports further research by providing a platform to classify incidents for different operational and research-oriented goals.",
+   "source": "B12",
+   "source_label": "The Association for the Advancement of Artificial Intelligence — Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+   "locus": "Abstract (article page)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F50",
+   "quote": "We find that certain patterns of AI incidents present structural ambiguities that challenge incident databasing and explore how epistemic uncertainty in AI incident reporting is unavoidable.",
+   "source": "B12",
+   "source_label": "The Association for the Advancement of Artificial Intelligence — Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+   "locus": "Abstract (article page)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F51",
+   "quote": "Inspired by the CVE program and other incident reporting practices, the AI Incident Database (AIID) catalogs AI incidents with the goal of reducing the likelihood that similar incidents recur … Currently there are over 750 distinct AI incidents detailed by more than 3000 indexed third-party reports.",
+   "source": "B12",
+   "source_label": "The Association for the Advancement of Artificial Intelligence — Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+   "locus": "PDF, 'The AI Incident Database and Related Work'",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F52",
+   "quote": "Users can submit examples of incidents and controversies; these submissions are included based on adherence to criteria such as relevance, fairness, and accurac...",
+   "source": "B13",
+   "source_label": "ACM Digital Library — Why We Need to Know More: Exploring the State of AI Incident Documentation ...",
+   "locus": "card snippet (ACM DL returned 403)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F53",
+   "quote": "Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell | IASEAI 2025",
+   "source": "B14",
+   "source_label": "YouTube·International Association for Safe & Ethical AI — Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+   "locus": "oEmbed title (YouTube, International Association for Safe & Ethical AI, 19m)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F54",
+   "quote": "Weekly point-in-time dumps of the full database, available in JSON, MongoDB archive, and CSV formats. … 2026-10-26 10:15 AM · 121.49 MB · backup-20261026101519.tar.bz2 … 2021-03-29 07:49 AM · 2.49 MB · backup-20210329074910.tar.bz2",
+   "source": "B15",
+   "source_label": "AI Incident Database — Database Backups and Snapshots",
+   "locus": "Snapshot Downloads",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F55",
+   "quote": "Every incident has its own suggested citation that credits both the submitter(s) of the incident and the editor(s) of the incident. … You can find incident citations at https://incidentdatabase.ai/cite/INSERT_NUMBER_HERE.",
+   "source": "B15",
+   "source_label": "AI Incident Database — Database Backups and Snapshots",
+   "locus": "Citing a Specific Incident",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F56",
+   "quote": "McGregor, S. (2021) Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database. In Proceedings of the Thirty-Third Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-21).",
+   "source": "B15",
+   "source_label": "AI Incident Database — Database Backups and Snapshots",
+   "locus": "Citing the Database as a Whole",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F57",
+   "quote": "An Excel file, updated weekly, that combines all numbered incidents with many of their taxonomy classifications.",
+   "source": "B15",
+   "source_label": "AI Incident Database — Database Backups and Snapshots",
+   "locus": "Excel Export",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F58",
+   "quote": "Incident 693: Google AI Reportedly Delivering Confidently Incorrect and Harmful Information … Google's AI search engine has reportedly been providing users with confidently incorrect and often harmful information. … Alleged: Google developed and deployed an AI system, which harmed Google users and General public.",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "title; Description; Entities",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F59",
+   "quote": "Report Count … Incident Date … 2024-05-14 … Editors … Daniel Atherton",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "Incident Stats",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F60",
+   "quote": "Google's new search feature, AI Overviews, seems to be going awry.",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "Incident Reports (Business Insider report excerpt)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F61",
+   "quote": "MIT Taxonomy Classifications … Machine-Classified … 3.1. False or misleading information",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "Applied Taxonomies: MIT",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F62",
+   "quote": "A \"variant\" is an AI incident similar to a known case—it has the same causes, harms, and AI system. Instead of listing it separately, we group it under the first reported incident. Unlike other incidents, variants do not need to have been reported outside the AIID.",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "Variants",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F63",
+   "quote": "The OECD AI Incidents and Hazards Monitor (AIM) automatically collects and classifies AI-related incidents and hazards in real time from reputable news sources worldwide.",
+   "source": "B16",
+   "source_label": "AI Incident Database — Incident 693",
+   "locus": "notice above Entities",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F64",
+   "quote": "This incident is a duplicate of Incident 112. All new reports and citations should be directed to incident 112. The reports previously found on this page have been migrated to the previously existing incident.",
+   "source": "B17",
+   "source_label": "AI Incident Database — Citation record for Incident 637",
+   "locus": "Citation record for Incident 637",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F65",
+   "quote": "[Submitted on 17 Nov 2020] … Authors:Sean McGregor",
+   "source": "B18",
+   "source_label": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+   "locus": "abstract page header",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F66",
+   "quote": "Mature industrial sectors (e.g., aviation) collect their real world failures in incident databases to inform safety improvements. Intelligent systems currently cause real world harms without a collective memory of their failings.",
+   "source": "B18",
+   "source_label": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+   "locus": "Abstract",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F67",
+   "quote": "The AI Incident Database is an incident collection initiated by an industrial/non-profit cooperative to enable AI incident avoidance and mitigation.",
+   "source": "B18",
+   "source_label": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+   "locus": "Abstract",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F68",
+   "quote": "The database supports a variety of research and development use cases with faceted and full text search on more than 1,000 incident reports archived to date.",
+   "source": "B18",
+   "source_label": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+   "locus": "Abstract",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F69",
+   "quote": "#REDIRECT [[Partnership on AI]] … {{R from subtopic}} … {{R with possibilities}}",
+   "source": "B19",
+   "source_label": "Wikipedia — AI Incident Database (redirect)",
+   "locus": "raw wikitext of the redirect page (action=raw&redirect=no)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F70",
+   "quote": "In November 2020 the Partnership on AI announced the AI Incident Database (AIID),[10] which is a tool to identify, assess, manage, and communicate AI risk and harm.",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "History ¶5",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F71",
+   "quote": "The response also highlighted how the AI Incident Database involves some of the minimum attributes in NIST's AI RMF, such as being consensus-driven, risk-based, adaptable, and consistent with other approaches to managing AI risk.",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "History ¶6",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F72",
+   "quote": "Notable initiatives include the establishment of the AI incident Database, formulation of norms for responsible publication, and the creation of the innovative AI learning environment SafeLife.",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "Mission and Principles ¶5",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F73",
+   "quote": "In November 2020, the Partnership on AI announced the AI Incident Database (AIID) which shifted to a new special-purpose independent non-profit in 2022.",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "Programs and initiatives ¶6",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F74",
+   "quote": "Avoiding repeated AI failures requires making past failures known. Therefore, today we introduce a systematized collection of incidents where intelligent systems have caused safety, fairness, or other real-world problems: The AI Incident Database (AIID).",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "reference [10] (McGregor, partnershiponai.org, 2020-11-18), quote",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
+  {
+   "row": "ai-incident-database",
+   "id": "F75",
+   "quote": "{{Primary sources|date=April 2025}} … {{AI-generated|date=October 2025}}",
+   "source": "B20",
+   "source_label": "Wikipedia — Partnership on AI",
+   "locus": "article header templates (raw wikitext)",
+   "url": "https://www.alexanarch.org/non/ai-incident-database/"
+  },
   {
    "row": "ai-overview-capture-registry",
    "id": "F1",
@@ -5501,6 +6184,528 @@
    "source_label": "Graphite (Gregory Druck & Ethan Smith), \"AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations\", 11 June 2026; arXiv 2608.22118; https://graphite.io/five-percent/research/ai-search-collapse",
    "locus": "Conclusion and Future Work",
    "url": "https://www.alexanarch.org/non/model-collapse/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F1",
+   "quote": "Launched in 2018, Papers with Code was a community-driven platform for exploring and discovering state-of-the-art research in artificial intelligence and machine learning.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F2",
+   "quote": "Within one year, it became a crucial infrastructure for the computer science community, growing into a resource with more than 18,000 papers and over 1,500 leaderboards (1).",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F3",
+   "quote": "The platform aggregated studies from multiple sources and served as a central hub for benchmarked research in the form of leaderboards",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F4",
+   "quote": "In response to this rapid growth, Papers with Code announced it was joining Facebook AI in 2019. Users were reassured that “Papers with Code [would] remain a neutral, open and free resource” and there would be no changes to their services.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶2",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F5",
+   "quote": "Yet, earlier this year, the Papers with Code website suddenly went offline. Without prior notice, users were simply redirected to the Papers with Code Github repository",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶2",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F6",
+   "quote": "About one month after the platform disappeared, Hugging Face, a private company providing collaborative platforms for machine learning models, released a LinkedIn announcement that it was building a successor platform in partnership with Papers with Code and Meta (formerly Facebook).",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶3",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F7",
+   "quote": "One reason Papers with Code scaled so well is that it allowed researchers to submit performance results from any model (as reported in their papers), regardless of where the model was hosted.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶3",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F8",
+   "quote": "In contrast, Hugging Face’s current leaderboard setup requires the model to be publicly hosted on the Hugging Face Hub, loadable via supported APIs. This excludes many works that report results but do not deploy models in that way, limiting visibility into progress across all research.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "¶3",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F9",
+   "quote": "In 2021, the ORKG imported data from Papers with Code, capturing benchmarks that would have been lost if the Papers with Code website had gone offline (see Fig. 2).",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "The role of public institutions ¶2",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F10",
+   "quote": "If benchmarks are available only on commercial platforms, they remain vulnerable to corporate decisions, shifting business models, or sudden shutdowns. Public infrastructures, such as the ORKG, ensure that this knowledge remains accessible over the long term.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "The role of public institutions ¶2",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F11",
+   "quote": "if you were disappointed to see Papers with Code discontinued, consider contributing your papers to the ORKG.",
+   "source": "B1",
+   "source_label": "TIB-Blog — “Papers with Code” went offline, the knowledge doesn't have to - TIB",
+   "locus": "A call to the community",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F12",
+   "quote": "Papers With Code (PWC) was a free, open-access platform that connected machine learning research papers to their code, data sets, and benchmark results. Robert Stojnic and Ross Taylor debuted it in 2018",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "What was Papers With Code?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F13",
+   "quote": "Facebook acquired the platform in December 2019 and operated it under Meta AI Research until it sunsetted on July 24, 2025 [ 1 ]. The following day, Hugging Face's Chief Technology Officer (CTO) and co-founder, Julien Chaumond, announced a new partnership with Meta to replace PWC .",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "What was Papers With Code?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F14",
+   "quote": "Papers With Code ran on an open contribution model. Researchers submitted their own papers and linked them directly to code repositories, keeping the platform current without a central editorial team.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "Why was Papers With Code important?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F15",
+   "quote": "At the time of its merger with Meta, PWC hosted more than 18,000 papers, 1,500 leaderboards, and over 1,000 tasks [ 2 ].",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "Why was Papers With Code important?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F16",
+   "quote": "Papers With Code sunsetted on July 24, 2025 [ 1 ]. The platform now redirects to Hugging Face's Trending Papers section.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "What happened to Papers With Code?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F17",
+   "quote": "The Papers With Code data repository on GitHub remains publicly accessible, and was last updated on September 8, 2025.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "Can you still access Papers With Code data?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F18",
+   "quote": "Both archives are static, and new papers, benchmarks, and leaderboard results added to the field since July 2025 do not appear in either.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "Can you still access Papers With Code data?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F19",
+   "quote": "Hugging Face is the official successor to Papers With Code, and it replicates some of what the platform offered.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "How does Hugging Face compare to Papers With Code?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F20",
+   "quote": "Papers With Code organized research around a paper-centric model in which any researcher could submit benchmark results from any model.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "How does Hugging Face compare to Papers With Code?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F21",
+   "quote": "No single platform replicates everything Papers With Code offered.",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "What are the best Papers With Code alternatives?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F22",
+   "quote": "The full data set is publicly available under a CC-BY-SA license",
+   "source": "B2",
+   "source_label": "Coursera — What Happened to Papers With Code + What to Use Instead - Coursera",
+   "locus": "Is the Papers With Code data still free to use?",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F23",
+   "quote": "Papers with Code is now open-source with an Apache 2.0-license.",
+   "source": "B3",
+   "source_label": "Reddit — Papers with Code is now open",
+   "locus": "card snippet (T1 card 3; T2 card 9)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F24",
+   "quote": "PapersWithCode.co Review: Trending AI Papers with Working Code",
+   "source": "B4",
+   "source_label": "YouTube·QUASA — PapersWithCode.co Review: Trending AI Papers with Working Code",
+   "locus": "card title (oEmbed)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F25",
+   "quote": "Hugging Face is actively reviving PapersWithCode, which ceased maintenance after its acquisition by Meta.",
+   "source": "B5",
+   "source_label": "Reddit·r/MachineLearning — Reviving PapersWithCode (by Hugging Face) [P] : r/MachineLearning - Reddit",
+   "locus": "card snippet",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F26",
+   "quote": "Introducing a revival of PapersWithCode! One thing that always frustrated me ...",
+   "source": "B6",
+   "source_label": "LinkedIn·Niels Rogge — Introducing a revival of PapersWithCode! One thing that always frustrated me ...",
+   "locus": "card title",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F27",
+   "quote": "The Papers with Code (PwC) website has been shut down, with its domain now redirecting to GitHub, prompting users to seek alte",
+   "source": "B7",
+   "source_label": "Reddit·r/computervision — What happened to paperswithcode? Redirects to github : r/computervision",
+   "locus": "card snippet (dated August 6, 2025)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F28",
+   "quote": "Papers With Code was retired by Meta in July 2025. The old leaderboards are not maintained; use CodeSOTA for live SOTA benchmark pages, and use the frozen paperswithcode-data archive when you need historical JSON.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "Dispatch, direct answer",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F29",
+   "quote": "Papers with Code was, in effect, the Wikipedia of machine-learning research: a wiki of papers linked to implementations, benchmarks organised as <Task, Dataset, Metric> tuples, and leaderboards that showed, for each tuple, who currently held the top score and with what code.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "Dispatch, direct answer",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F30",
+   "quote": "On July 24–25, 2025, Meta sunsetted Papers with Code without prior notice. Users reported “Bad Gateway 502” errors and garbled text; GitHub issues went unanswered.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "the record",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F31",
+   "quote": "Within days, the domain began redirecting to Hugging Face's Trending Papers feature, and the 9,327 benchmark leaderboards, 79,817 paper-to-code linkages and 5,628 datasets that had been tracked were no longer served from the canonical URL.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "the record",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F32",
+   "quote": "Historical data was rescued by the community — as JSON dumps on GitHub, as the pwc-archive on Hugging Face, and as 2021-era imports into the Open Research Knowledge Graph. The data survives; the integrated experience does not.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "the record",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F33",
+   "quote": "None of the successors Meta pointed at — Hugging Face Trending Papers, Semantic Scholar, Connected Papers — replicate the unified paper-code-benchmark-dataset-method linkage.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "§ 02",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F34",
+   "quote": "Codesota is the v2 replacement for what PWC did — reproduced scores with verification dates, code links, and lineage.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "§ 04",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F35",
+   "quote": "That single rule eliminates most of the drift that made late-stage PWC tables unreliable.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "Three ordinary ways",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F36",
+   "quote": "A terse record, without speculation. Dates are as reported by the site's archived banner and community tracking.",
+   "source": "B8",
+   "source_label": "Codesota — Papers With Code Alternative: SOTA Leaderboards and Archived Data",
+   "locus": "§ 01",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F37",
+   "quote": "Niels here from the open-source team at Hugging Face. It's been one week since I launched paperswithcode.co , a revival of the website we all loved.",
+   "source": "B9",
+   "source_label": "Hugging Face — Relaunching PapersWithCode with new features",
+   "locus": "¶1 (Community Article, published May 24, 2026)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F38",
+   "quote": "It allows us to keep track of the state-of-the-art (SOTA) across various domains of AI, from agents to computer vision and time-series forecasting.",
+   "source": "B9",
+   "source_label": "Hugging Face — Relaunching PapersWithCode with new features",
+   "locus": "¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F39",
+   "quote": "You can submit a paper at paperswithcode.co/submit . AI will automatically enrich it with task and method tags, the GitHub repo, evals, and more.",
+   "source": "B9",
+   "source_label": "Hugging Face — Relaunching PapersWithCode with new features",
+   "locus": "features",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F40",
+   "quote": "we are adding evals gradually, starting with all models supported in the Transformers library. So far, we have about 3k evals!",
+   "source": "B9",
+   "source_label": "Hugging Face — Relaunching PapersWithCode with new features",
+   "locus": "features",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F41",
+   "quote": "Papers with Code was a free, open-access platform that connected machine learning research papers to",
+   "source": "B10",
+   "source_label": "Miraheze — Papers with Code - Learn AI",
+   "locus": "card snippet",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F42",
+   "quote": "Papers with Code (featured on Quasa.io/projects/papers-with-code) is a community-driven revival of the legendary platform that tracks the latest AI and machine learning research papers alongside their code implementations, leaderboards, datasets, and methods.",
+   "source": "B11",
+   "source_label": "Quasa.io·QUASA — PapersWithCode Review: Trending AI Papers with Working Code.",
+   "locus": "description ¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F43",
+   "quote": "After the original paperswithcode.com went offline, this new version continues the mission",
+   "source": "B11",
+   "source_label": "Quasa.io·QUASA — PapersWithCode Review: Trending AI Papers with Working Code.",
+   "locus": "description ¶2",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F44",
+   "quote": "Downsides: Still rebuilding momentum after the original shutdown (smaller dataset than the historic version); leaderboards are not as comprehensive yet; relies heavily on community and curation quality.",
+   "source": "B11",
+   "source_label": "Quasa.io·QUASA — PapersWithCode Review: Trending AI Papers with Working Code.",
+   "locus": "Downsides",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F45",
+   "quote": "Papers with Code is back online and can be accessed at https://paperswithcode.co.",
+   "source": "B12",
+   "source_label": "Reddit·r/computervision — What actually replaced Papers with Code in your computer vision workflow?",
+   "locus": "card snippet (dated September 2, 2026)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F46",
+   "quote": "Hugging Face has relaunched paperswithcode.co, which allows users to browse papers from major AI conferences like NeurIPS, CVPR, and ICM",
+   "source": "B13",
+   "source_label": "Reddit·r/MachineLearning — Browse CVPR 2026 papers on PapersWithCode [P] : r/MachineLearning",
+   "locus": "card snippet (dated June 2, 2026)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F47",
+   "quote": "Papers with Code makes open AI research and its artifacts accessible: papers, code, models, datasets, tasks, methods, and benchmark leaderboar",
+   "source": "B14",
+   "source_label": "GitHub — GitHub - huggingface/paperswithcode: This repository hosts the code of Papers ...",
+   "locus": "card snippet (dated Oct 26, 2026)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F48",
+   "quote": "You can download the full dataset behind [paperswithcode.com](https://paperswithcode.com) here:",
+   "source": "B15",
+   "source_label": "README of the original's data repository (github.com/paperswithcode/paperswithcode-data) — https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md",
+   "locus": "README ¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F49",
+   "quote": "At the moment, data is regenerated daily.",
+   "source": "B15",
+   "source_label": "README of the original's data repository (github.com/paperswithcode/paperswithcode-data) — https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md",
+   "locus": "README",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F50",
+   "quote": "Part of the data is coming from the sources listed in the [sota-extractor README](https://github.com/paperswithcode/sota-extractor).",
+   "source": "B15",
+   "source_label": "README of the original's data repository (github.com/paperswithcode/paperswithcode-data) — https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md",
+   "locus": "README",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F51",
+   "quote": "All data is licenced under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).",
+   "source": "B15",
+   "source_label": "README of the original's data repository (github.com/paperswithcode/paperswithcode-data) — https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md",
+   "locus": "README, Licence",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F52",
+   "quote": "Trending Papers - Hugging Face",
+   "source": "B16",
+   "source_label": "the original's own address — https://paperswithcode.com/",
+   "locus": "the page served at paperswithcode.com (after HTTP 302)",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F53",
+   "quote": "Discover trending machine-learning papers, methods, benchmarks, datasets, and open-source implementations.",
+   "source": "B17",
+   "source_label": "the revival's site (home page) — https://paperswithcode.co/",
+   "locus": "home page",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F54",
+   "quote": "Papers with Code makes open AI research and its artifacts accessible: papers, code, models, datasets, tasks, methods, and benchmark leaderboards. It recreates the original paperswithcode.com, which Meta retired in 2025, and keeps it up to date with automated imports from Hugging Face, arXiv, GitHub, and public leaderboards.",
+   "source": "B18",
+   "source_label": "README of the revival's code repository (github.com/huggingface/paperswithcode) — https://raw.githubusercontent.com/huggingface/paperswithcode/main/README.md",
+   "locus": "README ¶1",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F55",
+   "quote": "**Curation automation.** Scheduled jobs and agent workflows import daily papers, link tasks and methods, refresh stars and citations, and propose evaluations.",
+   "source": "B18",
+   "source_label": "README of the revival's code repository (github.com/huggingface/paperswithcode) — https://raw.githubusercontent.com/huggingface/paperswithcode/main/README.md",
+   "locus": "README, Features",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F56",
+   "quote": "**Public API.** A REST API under `/api/v1/` that stays compatible with the original [Papers with Code API client](https://github.com/paperswithcode/paperswithcode-client).",
+   "source": "B18",
+   "source_label": "README of the revival's code repository (github.com/huggingface/paperswithcode) — https://raw.githubusercontent.com/huggingface/paperswithcode/main/README.md",
+   "locus": "README, Features",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F57",
+   "quote": "Durable artifacts live in private Hugging Face buckets in the `huggingface` organization",
+   "source": "B18",
+   "source_label": "README of the revival's code repository (github.com/huggingface/paperswithcode) — https://raw.githubusercontent.com/huggingface/paperswithcode/main/README.md",
+   "locus": "README, Hosted deployment",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
+  },
+  {
+   "row": "papers-with-code",
+   "id": "F58",
+   "quote": "Papers with Code is licensed under the [Apache License 2.0](LICENSE).",
+   "source": "B18",
+   "source_label": "README of the revival's code repository (github.com/huggingface/paperswithcode) — https://raw.githubusercontent.com/huggingface/paperswithcode/main/README.md",
+   "locus": "README, License",
+   "url": "https://www.alexanarch.org/non/papers-with-code/"
   },
   {
    "row": "political-economy",

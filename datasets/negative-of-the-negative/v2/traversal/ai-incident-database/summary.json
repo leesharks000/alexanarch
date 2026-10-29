@@ -1,0 +1,82 @@
+{
+ "row": "ai-incident-database",
+ "address": "ai incident database",
+ "entity": "The AI Incident Database (AIID, incidentdatabase.ai), a project of the Responsible AI Collaborative, launched by Sean McGregor (arXiv:2011.08512, 17 November 2020), Partnership on AI its database founding sponsor: editor-resolved incidents with the reports that document them attached, a citation page per incident at /cite/N, weekly snapshots",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ai-incident-database",
+  "address": "ai incident database",
+  "entity": "The AI Incident Database (AIID, incidentdatabase.ai), a project of the Responsible AI Collaborative, launched by Sean McGregor (arXiv:2011.08512, 17 November 2020), Partnership on AI its database founding sponsor: editor-resolved incidents with the reports that document them attached, a citation page per incident at /cite/N, weekly snapshots",
+  "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bAI Incident Database\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI Incident DB\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAIID\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bincidentdatabase\\.ai\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bResponsible AI Collaborative\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI incident databases and incident reporting",
+    "pattern": "\\b(AI )?incident (databases?|databasing|repositor(y|ies)|reporting|trackers?|registr(y|ies))\\b",
+    "flags": "i",
+    "basis": "field: B12 (Paeth et al., AAAI-25) §'The AI Incident Database and Related Work': 'Inspired by the CVE program and other incident reporting practices, the AI Incident Database (AIID) catalogs AI incidents'; B1 (incidentdatabase.ai, About the Database): 'Like similar databases in aviation and computer security'; B2 (MIT AI Incident Tracker): 'current databases struggle with inconsistent structure'"
+   }
+  ],
+  "classes_note": "One class, sourced from the field by locus: the AIID as an incident database, a practice of incident reporting, among similar databases (B12, B1, B2). No field source places the AIID in a class of the archive's own (aggregators of machine-mediated reception work is the MMRS record's class, an archive source, ledgered as MMRS claims and not run as an O-class here, since the brief confines classes to what B sources). The aliases are the entity's name, its short form 'AI Incident DB' (as #543 writes it), its abbreviation AIID (case-sensitive), its domain and its operator's name. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the AIID or on incident databases as a class to which the archive applies its own category; a bare mention, a link list or a generic use of 'incident reporting' about another object is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; addresses 'ai incident database' (ai-incident-database-aio-20261029, OBS-d2d81aafd207) and 'what counts as an incident in the ai incident database' (what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029, OBS-bd807797964a), Google AI Overview (expanded), signed out, incognito. Second pass: one citation hop forward and back from the deposit admitted by reading (#543).",
+  "hop_from": [
+   543
+  ]
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 1,
+  "D_deposits": 1,
+  "R_sentences": 1,
+  "R_deposits": 1,
+  "O_direct": 1,
+  "O_class": 0,
+  "O_deposits": 1,
+  "H_candidates": 41
+ },
+ "per_deposit": {
+  "D": {
+   "543": 1
+  },
+  "R": {
+   "543": 1
+  },
+  "O": {
+   "543": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "bd3033c3def8ff6be53ad4353e52b0747257c4faa084a72df14b644df0e1e6b5",
+  "candidates-R.jsonl": "2e1f15e5131120e261507bf9a295624f49fe2f60f23186d9933e79359bd3ea4b",
+  "candidates-O.jsonl": "1e0c596ed3c2890231a3b74c1d188db634c0c63aef5018fca54fc062d8a09453",
+  "candidates-H.jsonl": "c356582b5c92cfa4bc9f07ca5d2bee09039dea53bbf2e54b7ce1c8bc21981faf"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

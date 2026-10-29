@@ -1,0 +1,1901 @@
+{
+ "row": "ai-incident-database",
+ "address": "ai incident database",
+ "addresses": [
+  "ai incident database",
+  "what counts as an incident in the ai incident database"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the PDF's text, the raw wikitext, the oEmbed title, or the card's title and snippet for an unreachable card; 75/75 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the two transcripts' rails (T1: B1–B6; T2: B2 again, B7–B14; fourteen sources for fifteen cards); 'own_page', the entity's own pages the MMRS record cites and the task names that T did not surface (B15 snapshots, B16 /cite/693, B17 /cite/637, B18 the founding paper's arXiv page); four own pages are also cards (B1 home, B7 editors' guide, B8 'Defining an AI Incident', B11 about) and are carried once, as cards; 'wikipedia', the redirect (B19) and its target article (B20). Unreachable: B6 and B9 (LinkedIn TIME clips, not found), B13 (ACM DL, 403); B10 and B14 read by oEmbed title only.",
+ "lineage_note": "Lineages: what it is (B1, B3, B4, B12); purpose after aviation (B1, B3, B8, B11, B18); operator (B1/B11, B2, B4); origin (B11, B15, B18, B20); the unit (B7, B16); admission (B7, B8, B11); intake (B1, B7, B11); the record (B7, B15, B16, B17); count (B1, B11, B12, B18); limits (B2, B7, B12); openness (B4); the index case (B16); neighbours (B16); the Kaggle homonym (B5); reception (B6, B9, B10, B13, B14); the encyclopedia (B19, B20). The home page's and the about page's Responsible AI Collaborative paragraph are one text (F4).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by the workspace's h2t; B12.pdf and B12.pdf.txt; B19.wiki and B20.wiki raw wikitext; B5.api.json, B10.json, B14.json API responses); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 at T1; also an own page the MMRS record cites (incidentdatabase.ai)",
+   "card": "AI Incident Database — AI Incident Database",
+   "url": "https://incidentdatabase.ai/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B1.html",
+     "sha256": "597e795095450ff702c2772c8f5e5f13d25f4765d99710504cc1fad150f0382c"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B1.txt",
+     "sha256": "b12dad11c298cb0cbd8f82c13f3b56794d1ae1bb128d990a57f930be510275a8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:53Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B1.html",
+    "raw_sha256": "597e795095450ff702c2772c8f5e5f13d25f4765d99710504cc1fad150f0382c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B1.txt"
+    ]
+   },
+   "card_title": "AI Incident Database",
+   "card_snippet": "About the Database The AI Incident Database is dedicated to indexing the collective history of harms or near harms realized in the real world by the deployment ...",
+   "card_note": null,
+   "names_operator": "yes ('Responsible AI Collaborative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet ('About the Database The AI Incident Database is dedicated to indexing…') is the home page's 'About the Database' block; the home page lists incidents to 1788 and carries excerpts of third-party news reports (not ledgered)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 at T1 and card 1 at T2",
+   "card": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "url": "https://airisk.mit.edu/ai-incident-tracker",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 2
+    },
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B2.html",
+     "sha256": "720c3b26f04adc57970c7e6090668c43a909a5f9601b94db9fa6a26d0fb0a91c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B2.txt",
+     "sha256": "8d0169460225d22859c9cc71be61e32a3fac3d064e0719f239eeff4f7da2c683"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:01Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/ai-incident-tracker",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B2.html",
+    "raw_sha256": "720c3b26f04adc57970c7e6090668c43a909a5f9601b94db9fa6a26d0fb0a91c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B2.txt"
+    ]
+   },
+   "card_title": "MIT AI Incident Tracker",
+   "card_snippet": "Overview: MIT AI Incident Tracker classifies 1,752 real-world AI incident reports from the AI Incident Database using Arcola AI's LLM pipeline, MIT Risk Reposit...",
+   "card_note": null,
+   "names_operator": "yes ('Responsible AI Collaborative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch (title and site). The card snippet's '1,752 real-world AI incident reports' is not in the saved page: the body says 1,600, the meta description 'more than 1,400'"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 at T1",
+   "card": "Partnership on AI — AI Incident Database - Partnership on AI",
+   "url": "https://partnershiponai.org/workstream/ai-incidents-database/",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B3.html",
+     "sha256": "a88664f05e53b9afdc41cf773d8747a5cb3c1821259f3e0e1f5cdd5b50f0b846"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B3.txt",
+     "sha256": "5c2ef91014c3c406942cbbb9d9a7cb1bf5fc6ecfe2907174fd81b81c2da12ca7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:02Z",
+    "http": 200,
+    "url": "https://partnershiponai.org/workstream/ai-incidents-database/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B3.html",
+    "raw_sha256": "a88664f05e53b9afdc41cf773d8747a5cb3c1821259f3e0e1f5cdd5b50f0b846",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B3.txt"
+    ]
+   },
+   "card_title": "AI Incident Database - Partnership on AI",
+   "card_snippet": "As AI technology is integrated into an increasing number of safety-critical systems — entering domains such as transportation, healthcare, and energy — the pote...",
+   "card_note": null,
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch; the snippet is the page's Overview ¶1; the page names neither the Responsible AI Collaborative nor the transfer"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 at T1",
+   "card": "OECD AI Policy Observatory — AI Incident Database",
+   "url": "https://oecd.ai/en/catalogue/tools/ai-incident-database",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B4.html",
+     "sha256": "1c3e690c98ec848c5487d47a1e9f8f67eb1d666b36fac4e4f6178699a063e286"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B4.txt",
+     "sha256": "20239acc0da5164ed4635b158f85f9f1bcb8c5dab377dbd4497bc69d2243d503"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:03Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/catalogue/tools/ai-incident-database",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B4.html",
+    "raw_sha256": "1c3e690c98ec848c5487d47a1e9f8f67eb1d666b36fac4e4f6178699a063e286",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B4.txt"
+    ]
+   },
+   "card_title": "AI Incident Database",
+   "card_snippet": "AI Incident Database Website Github Technical Educational Uploaded on Apr 25, 2024 The AI Incident Database is free and open-source project dedicated to indexin...",
+   "card_note": null,
+   "names_operator": "yes ('Responsible AI Collaborative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch; catalogue entry 'Uploaded on Apr 25, 2024'"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 at T1",
+   "card": "Kaggle — AI Incidents, Failures & Controversies Database - Kaggle",
+   "url": "https://www.kaggle.com/datasets/prajitdatta/ai-incidents-failures-and-controversies-database",
+   "kind": "Overview card (another dataset, near name)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B5.html",
+     "sha256": "75d1aa8d8ae2a5f10c48c36857f3ca85bada2a86cd3298df1730ecd76caba963"
+    },
+    "B5.api.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B5.api.json",
+     "sha256": "62ab155680796491b05552dc1c7c2c8a51c400fdcf29b6efcb642461641df10c"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B5.txt",
+     "sha256": "da6de3c20c5e337a3f8d7cbe3a4becbbf473ca5ef638b29431f73ed217b174f0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:36:42Z",
+    "http": 200,
+    "url": "https://www.kaggle.com/datasets/prajitdatta/ai-incidents-failures-and-controversies-database",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B5.html",
+    "raw_sha256": "75d1aa8d8ae2a5f10c48c36857f3ca85bada2a86cd3298df1730ecd76caba963",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B5.txt"
+    ]
+   },
+   "card_title": "AI Incidents, Failures & Controversies Database - Kaggle",
+   "card_snippet": "32 verified incidents · 29 companies · 13 countries · 24 columns — Every major AI failure, documented 📌 Why This Dataset? AI incidents surged 56.4% in 2024 alo...",
+   "card_note": null,
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found through Kaggle's public dataset-list API (search 'AI Incidents Failures Controversies'; WebSearch found nothing); the page HTML is a script shell without the description, so B5.txt is the title, subtitle, owner, licence, update date and description from the API's dataset view (B5.api.json, HTTP 200)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 at T1 (video, 1:35)",
+   "card": "LinkedIn·TIME — AI Incident Database | TIME posted on the topic",
+   "url": null,
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "ai-incident-database-aio-20261029",
+     "card": 6
+    }
+   ],
+   "fetched": null,
+   "unreachable": true,
+   "card_title": "AI Incident Database | TIME posted on the topic",
+   "card_snippet": null,
+   "card_note": "video, 1:35",
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: not found by WebSearch (three queries, with and without site:linkedin.com) on 2026-10-29; the Google redirect token in the paste is opaque; admitted by its card title (no snippet). Probably the same LinkedIn post as B9 (same duration, overlapping title), not established"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 2 at T2; also an own page the MMRS record cites",
+   "card": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+   "url": "https://incidentdatabase.ai/editors-guide/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B7.html",
+     "sha256": "ef7437bf3273bde035dd4e483f31d130a32b1cf490105ceeb57ad49de080dae2"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B7.txt",
+     "sha256": "52e3176de91eafffe706c4494fdd18fac1f65a47ceb1be54f4b546b6d5865349"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:55Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/editors-guide/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B7.html",
+    "raw_sha256": "ef7437bf3273bde035dd4e483f31d130a32b1cf490105ceeb57ad49de080dae2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B7.txt"
+    ]
+   },
+   "card_title": "Editorial and Research Guide for the AI Incident Database",
+   "card_snippet": "Quick Definitions The core terms used throughout the guide. Section 2 provides fuller boundary guidance and examples. Term Working definition AI incident An all...",
+   "card_note": null,
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Version 2, 1 October 2026, Daniel Atherton and Sean McGregor; the word 'aviation' does not occur in the saved text"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 3 at T2; an own page given in the task (not among the MMRS record's sources)",
+   "card": "AI Incident Database — Defining an “AI Incident”",
+   "url": "https://incidentdatabase.ai/research/1-criteria/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B8.html",
+     "sha256": "00e4d731859c8bdd0c81913a690867e9b91bbcc2295aa8f3c548c9225e761306"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B8.txt",
+     "sha256": "0c0c386a8a03514f8d47498adf66b9d72b13e7073a1ef0511447e66007c68979"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:55Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/research/1-criteria/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B8.html",
+    "raw_sha256": "00e4d731859c8bdd0c81913a690867e9b91bbcc2295aa8f3c548c9225e761306",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B8.txt"
+    ]
+   },
+   "card_title": "Defining an “AI Incident”",
+   "card_snippet": "The commercial air travel industry owes much of its increasing safety to systematically analyzing and archiving past accidents and incidents within a shared dat...",
+   "card_note": null,
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet is the page's ¶1"
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 4 at T2 (video, 1:35)",
+   "card": "LinkedIn·TIME — AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+   "url": null,
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 4
+    }
+   ],
+   "fetched": null,
+   "unreachable": true,
+   "card_title": "AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+   "card_snippet": null,
+   "card_note": "video, 1:35",
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: not found (as B6); admitted by its card title (no snippet)"
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 5 at T2 (video, 6:59)",
+   "card": "YouTube·HarrietHacks — Examples of AI real attacks",
+   "url": "https://www.youtube.com/watch?v=ohlEhHUUf6M",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B10.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B10.json",
+     "sha256": "5a32c03de9d2b551a77aeba6db8ec6b7fe27696fd94ce4787d6fe64cc8111f81"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B10.txt",
+     "sha256": "76c222740d3874252b6a12f0ab458bbc55b4f553a3e34d12c9c6e933a5bb9abd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:38Z",
+    "http": 200,
+    "url": "https://www.youtube.com/watch?v=ohlEhHUUf6M",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B10.json",
+    "raw_sha256": "5a32c03de9d2b551a77aeba6db8ec6b7fe27696fd94ce4787d6fe64cc8111f81",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B10.txt"
+    ]
+   },
+   "card_title": "Examples of AI real attacks",
+   "card_snippet": null,
+   "card_note": "video, 6:59",
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video located through YouTube's results page for the card title; title and channel confirmed by oEmbed (B10.json); no transcript fetched; admitted by title"
+  },
+  {
+   "id": "B11",
+   "origin": "card",
+   "role": "Overview card 6 at T2; also an own page the MMRS record cites",
+   "card": "AI Incident Database — The details about who and why for database - AI Incident Database",
+   "url": "https://incidentdatabase.ai/about/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B11.html",
+     "sha256": "40f7355ba917c9987ea00d43ca740975fa9561d9b729320145f54f1baa55201b"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B11.txt",
+     "sha256": "0b85d8772dcb1205e9197f3f55f8ed2a8cfc24f49b9e77568e7a44b3ff1a4746"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:54Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/about/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B11.html",
+    "raw_sha256": "40f7355ba917c9987ea00d43ca740975fa9561d9b729320145f54f1baa55201b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B11.txt"
+    ]
+   },
+   "card_title": "The details about who and why for database - AI Incident Database",
+   "card_snippet": "What is an Incident? The initial set of more than 1,000 incident reports have been intentionally broad in nature. Current examples include, An autonomous car ki...",
+   "card_note": null,
+   "names_operator": "yes ('Responsible AI Collaborative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the page's <title> is the card title; the 'Database Founding Sponsor' block holds one logo image whose data-cy attribute reads 'Partnership on AI-modal-click' (an attribute, not text; recorded here, ledgered only through the heading and the text sentence on Partnership on AI)"
+  },
+  {
+   "id": "B12",
+   "origin": "card",
+   "role": "Overview card 7 at T2",
+   "card": "The Association for the Advancement of Artificial Intelligence — Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35163",
+   "kind": "Overview card (paper)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.html",
+     "sha256": "b2bcccb8fa3e63d8b1c0f34b911441e2b8bbd0c8da6751dd63d4903d4c9afe82"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.txt",
+     "sha256": "8dbf365d930acee023ff2cddf65d51426f457529f6f78d7ed52f62d0ae766b9e"
+    },
+    "B12.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.pdf",
+     "sha256": "dfcafd8fa22d4d00900a29b6ee4a555607d6f9f0b119ab874002417310c9d93e"
+    },
+    "B12.pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.pdf.txt",
+     "sha256": "9dba8efdeb7686b5aebabe12c87e1ddf5b5c52ccd34e485c9b71af39dc4864b7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:38Z",
+    "http": 200,
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35163",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.html",
+    "raw_sha256": "b2bcccb8fa3e63d8b1c0f34b911441e2b8bbd0c8da6751dd63d4903d4c9afe82",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.txt",
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B12.pdf.txt"
+    ]
+   },
+   "card_title": "Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+   "card_snippet": "The AI Incident Database. Inspired by the CVE pro- gram and other incident reporting practices, the AI Incident Database (AIID) catalogs AI incidents with the g...",
+   "card_note": null,
+   "names_operator": "yes ('Responsible AI Collaborative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "article page and PDF (https://ojs.aaai.org/index.php/AAAI/article/download/35163/37318, HTTP 200, pdftotext); the card snippet ('The AI Incident Database. Inspired by the CVE pro- gram…') is the PDF's; Paeth, Atherton, Pittaras, Frase, McGregor, AAAI-25, 39(28), 28946–28953"
+  },
+  {
+   "id": "B13",
+   "origin": "card",
+   "role": "Overview card 8 at T2",
+   "card": "ACM Digital Library — Why We Need to Know More: Exploring the State of AI Incident Documentation ...",
+   "url": "https://dl.acm.org/doi/10.1145/3600211.3604700",
+   "kind": "Overview card (paper)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B13.html",
+     "sha256": "661699817f917fdd6847393cf380880dc366a4cfd3028e62fcd7aaf95b21ddc0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:03Z",
+    "http": 403,
+    "url": "https://dl.acm.org/doi/10.1145/3600211.3604700",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B13.html",
+    "raw_sha256": "661699817f917fdd6847393cf380880dc366a4cfd3028e62fcd7aaf95b21ddc0",
+    "text": []
+   },
+   "unreachable": true,
+   "card_title": "Why We Need to Know More: Exploring the State of AI Incident Documentation ...",
+   "card_snippet": "Users can submit examples of incidents and controversies; these submissions are included based on adherence to criteria such as relevance, fairness, and accurac...",
+   "card_note": null,
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: HTTP 403 on one fetch with the brief's command (2026-10-29T04:35:03Z); DOI from Crossref by title (Turri and Dzombak, AIES '23); a retry with a browser user-agent string was not made (refused by the workspace as circumvention); the card snippet stands as its only text"
+  },
+  {
+   "id": "B14",
+   "origin": "card",
+   "role": "Overview card 9 at T2 (video, 19m)",
+   "card": "YouTube·International Association for Safe & Ethical AI — Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+   "url": "https://www.youtube.com/watch?v=kSuVPwr5Ll0",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029",
+     "card": 9
+    }
+   ],
+   "files": {
+    "B14.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B14.json",
+     "sha256": "5a063beb92dbc8496affd425301302f30259d11aa5d4aa0b2cca557e0e8d57f5"
+    },
+    "B14.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B14.txt",
+     "sha256": "8c9f8a79bff55d6b7979d200bdd7d2a6752644483f88c701df0d80618d31906c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:35:38Z",
+    "http": 200,
+    "url": "https://www.youtube.com/watch?v=kSuVPwr5Ll0",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B14.json",
+    "raw_sha256": "5a063beb92dbc8496affd425301302f30259d11aa5d4aa0b2cca557e0e8d57f5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B14.txt"
+    ]
+   },
+   "card_title": "Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+   "card_snippet": null,
+   "card_note": "video, 19m",
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "located through YouTube's results page; oEmbed title adds '| IASEAI 2025'; no transcript fetched; admitted by title"
+  },
+  {
+   "id": "B15",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites; not surfaced by T",
+   "card": "AI Incident Database — Database Backups and Snapshots",
+   "url": "https://incidentdatabase.ai/research/snapshots/",
+   "kind": "own page",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B15.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B15.html",
+     "sha256": "8d173133a5386515b054477eafd16121a246dad45b3c99570203d73ddbebbea6"
+    },
+    "B15.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B15.txt",
+     "sha256": "1eb3ce6104c8fb984b05c97875f6bf1cf57fd3248a8f8a71bd0a5222543a17a1"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:55Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/research/snapshots/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B15.html",
+    "raw_sha256": "8d173133a5386515b054477eafd16121a246dad45b3c99570203d73ddbebbea6",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B15.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the saved text contains no 'licen' string"
+  },
+  {
+   "id": "B16",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites (holding); not surfaced by T",
+   "card": "AI Incident Database — Incident 693",
+   "url": "https://incidentdatabase.ai/cite/693/",
+   "kind": "own page",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B16.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B16.html",
+     "sha256": "bccaedd6532a09cd48b989e9736702757ac193a96b2d487e105c9aa1880f0ebe"
+    },
+    "B16.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B16.txt",
+     "sha256": "9f9d4305be3e45b83ccc4d8c0fc7f678bf26756680dd024d1f6d6563672bc884"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:56Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/cite/693/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B16.html",
+    "raw_sha256": "bccaedd6532a09cd48b989e9736702757ac193a96b2d487e105c9aa1880f0ebe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B16.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "seven reports listed (The Verge 2, Business Insider, Futurism, Washington Post, New York Times 2); report excerpts are third-party and only one sentence is ledgered (F60)"
+  },
+  {
+   "id": "B17",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites (merge example); not surfaced by T",
+   "card": "AI Incident Database — Citation record for Incident 637",
+   "url": "https://incidentdatabase.ai/cite/637/",
+   "kind": "own page",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B17.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B17.html",
+     "sha256": "7e6fd184e23c3ebb62e3ada25ce1113beab914f72e25ee9f064b5bb9a6189ddf"
+    },
+    "B17.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B17.txt",
+     "sha256": "f19d09642183d68687cca4ec5cbeb4ca82f44827215ddf8e528fdf6aae005d38"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:56Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/cite/637/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B17.html",
+    "raw_sha256": "7e6fd184e23c3ebb62e3ada25ce1113beab914f72e25ee9f064b5bb9a6189ddf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B17.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the page's <title> reads 'Incident 112'"
+  },
+  {
+   "id": "B18",
+   "origin": "own_page",
+   "role": "the founding paper's abstract page, which the MMRS record cites; host arxiv.org, the founder's paper; not surfaced by T",
+   "card": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+   "url": "https://arxiv.org/abs/2011.08512",
+   "kind": "own page (founding paper)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B18.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B18.html",
+     "sha256": "264223e5c2e0ba22341d58309a03511c1277727a8270cc37447625e97f01890c"
+    },
+    "B18.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B18.txt",
+     "sha256": "70b0cce7b4c328804395d96efb0e0e66df8c3e8d304d314785c8f7828ff2f6c3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:57Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2011.08512",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B18.html",
+    "raw_sha256": "264223e5c2e0ba22341d58309a03511c1277727a8270cc37447625e97f01890c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B18.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": ""
+  },
+  {
+   "id": "B19",
+   "origin": "wikipedia",
+   "role": "Wikipedia's page for the name: a redirect",
+   "card": "Wikipedia — AI Incident Database (redirect)",
+   "url": "https://en.wikipedia.org/w/index.php?title=AI_Incident_Database&action=raw&redirect=no",
+   "kind": "Wikipedia redirect",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B19.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B19.wiki",
+     "sha256": "03d7f4dfc50b531552d08e8392b944e2a902231af62907b677fb1376ea6e5abe"
+    },
+    "B19.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B19.html",
+     "sha256": "37b8712b4398538b3cec1c4fcd8511935ebd0a157a6c924825421449207942de"
+    },
+    "B19.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B19.txt",
+     "sha256": "fc413900a4bd3028697ce6101d43af9c9ce3489d2ed2fdbcab687f836b7bb7c6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:57Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=AI_Incident_Database&action=raw&redirect=no",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B19.wiki",
+    "raw_sha256": "03d7f4dfc50b531552d08e8392b944e2a902231af62907b677fb1376ea6e5abe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B19.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "raw wikitext (B19.wiki, 107 bytes) and the rendered redirect page (https://en.wikipedia.org/w/index.php?title=AI_Incident_Database&redirect=no, HTTP 200, 04:32:58Z, B19.html/B19.txt): '#REDIRECT [[Partnership on AI]]', no section anchor, categories R from subtopic, R with possibilities"
+  },
+  {
+   "id": "B20",
+   "origin": "wikipedia",
+   "role": "the redirect's target article",
+   "card": "Wikipedia — Partnership on AI",
+   "url": "https://en.wikipedia.org/wiki/Partnership_on_AI",
+   "kind": "Wikipedia article",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B20.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B20.wiki",
+     "sha256": "08e1303706a2474f8ada972ca4fd4a4dd201ee0ded0bb2ba1e0435c2b5ef3f1d"
+    },
+    "B20.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B20.html",
+     "sha256": "c8efcec3bd387c4e8bed24023597b2d697ba026399561a44676b6af1a736e335"
+    },
+    "B20.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B20.txt",
+     "sha256": "1b80fdf3c9e46b6c9ac67441b85bbb921b2e4abf0095a8c87177d9e4e768b435"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T04:32:57Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Partnership_on_AI",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B20.wiki",
+    "raw_sha256": "08e1303706a2474f8ada972ca4fd4a4dd201ee0ded0bb2ba1e0435c2b5ef3f1d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ai-incident-database-20261029/B20.txt"
+    ]
+   },
+   "names_operator": "no ('Responsible AI Collaborative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "raw wikitext (https://en.wikipedia.org/w/index.php?title=Partnership_on_AI&action=raw, HTTP 200, 04:32:57Z, B20.wiki) and rendered page (B20.html, B20.txt). The database appears in three places: History ¶5–6, Mission and Principles ¶5 (the Safety Critical AI program), Programs and initiatives ¶6; the section the redirect's subtopic most nearly answers is Programs and initiatives, which carries the transfer sentence; all three are ledgered. The article never names the Responsible AI Collaborative"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "About the Database ¶1",
+   "quote": "The AI Incident Database is dedicated to indexing the collective history of harms or near harms realized in the real world by the deployment of artificial intelligence systems.",
+   "claim": "the database defined by its own home page: indexing the collective history of real-world harms or near harms from deployed AI systems",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: indexing harms and near harms",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b12dad11c298cb0c…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "About the Database ¶1",
+   "quote": "Like similar databases in aviation and computer security, the AI Incident Database aims to learn from experience so we can prevent or mitigate bad outcomes.",
+   "claim": "its purpose, on the model of aviation and computer-security databases: learn from experience to prevent or mitigate bad outcomes",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: a collective memory of failures, after aviation",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b12dad11c298cb0c…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "About the Database ¶2",
+   "quote": "You are invited to submit incident reports, whereupon submissions will be indexed and made discoverable to the world.",
+   "claim": "open submission: incident reports submitted are indexed and made discoverable",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission, editor resolution",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b12dad11c298cb0c…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "The Responsible AI Collaborative ¶1 (also B11, the same paragraph)",
+   "quote": "The AI Incident Database is a project of the Responsible AI Collaborative, an organization chartered to advance the AI Incident Database.",
+   "claim": "the operator: a project of the Responsible AI Collaborative, chartered to advance it",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: the Responsible AI Collaborative",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b12dad11c298cb0c…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "incident list (the highest id on the page, 2026-10-29)",
+   "quote": "Incident 1788:",
+   "claim": "the highest incident id listed on the home page on 2026-10-29 is 1788",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: incidents and reports",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b12dad11c298cb0c…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "opening ('How is AI harming us?')",
+   "quote": "The MIT AI Incident Tracker classifies 1,600 real-world report incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "claim": "MIT's tracker classifies 1,600 AIID incidents by risk, cause, harm and severity (the card snippet gives 1,752; the page's meta description 'more than 1,400')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "derived layer: MIT AI Incident Tracker",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶1",
+   "quote": "Raw reports from the AI Incident Database (AIID) are processed by Arcola AI's LLM pipeline, which categorizes them using established frameworks, such as the MIT Risk Repository and a harm severity rating system based on CSET’s AI Harm Taxonomy.",
+   "claim": "the tracker's method: AIID raw reports processed by Arcola AI's LLM pipeline against the MIT Risk Repository and a CSET-based severity scale",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived layer: MIT AI Incident Tracker",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶3",
+   "quote": "We build on the great work done by the Responsible AI Collaborative who created and maintain the AI Incident Database, reviewing all submitted reports and ensuring the quality of the dataset.",
+   "claim": "MIT credits the Responsible AI Collaborative with creating and maintaining the database and reviewing all submitted reports",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Responsible AI Collaborative",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Limitations of the analysis and dataset",
+   "quote": "As the reporting is voluntary, the dataset is inevitably subject to some degree of sampling bias. … a systematic validation study has not yet been completed.",
+   "claim": "the tracker's stated limits: voluntary reporting gives sampling bias; no systematic validation study yet",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "derived layer: MIT AI Incident Tracker",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Workstreams / Safety Critical AI / AI Incident Database, Overview ¶1–2",
+   "quote": "The AI Incident Database (AIID) is a tool designed to help us better imagine and anticipate these risks, collecting more than 1,200 reports of intelligent systems causing safety, fairness, or other real-world problems. … As a central, systematized repository of problems experienced in the real world as a result of AI, this crowdsourced database can help AI practitioners mitigate or avoid repeated bad outcomes in the future.",
+   "claim": "Partnership on AI's workstream page: a tool to anticipate risks, more than 1,200 reports, a crowdsourced central repository",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: indexing harms and near harms",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5c2ef91014c3c406…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶1",
+   "quote": "As AI technology is integrated into an increasing number of safety-critical systems — entering domains such as transportation, healthcare, and energy — the potential impact of this technology’s failures similarly grows.",
+   "claim": "safety-critical domains (transportation, healthcare, energy) raise the impact of AI failures",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a collective memory of failures, after aviation",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 5c2ef91014c3c406…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "catalogue entry, description ¶1",
+   "quote": "The AI Incident Database is free and open-source project dedicated to indexing the collective history of harms or near harms realized in the real world by the deployment of artificial intelligence systems.",
+   "claim": "the OECD catalogue restates the home page's definition with 'free and open-source'",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: indexing harms and near harms",
+   "date": "2024-04-25 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 20239acc0da5164e…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About the tool: usage rights, licence",
+   "quote": "Usage rights: … Open source/Permissive … License: … Apache 2.0",
+   "claim": "usage rights open source/permissive; licence Apache 2.0 (the catalogue does not say whether of code or data)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: code and data",
+   "date": "2024-04-25 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 20239acc0da5164e…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry header; About the tool: developing organisation",
+   "quote": "Uploaded on Apr 25, 2024 … Developing organisation(s): … responsible ai collaborative",
+   "claim": "the catalogue entry, uploaded 25 April 2024, names the Responsible AI Collaborative as developing organisation",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Responsible AI Collaborative",
+   "date": "2024-04-25 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 20239acc0da5164e…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "title, subtitle and description (Kaggle API dataset view)",
+   "quote": "32 verified incidents · 29 companies · 13 countries · 24 columns — Every major AI failure, documented … License: CC BY-SA 4.0",
+   "claim": "a Kaggle dataset of 32 incidents, 29 companies, 13 countries, 24 columns, CC BY-SA 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "homonym: the Kaggle compilation",
+   "date": "2026-02-28 (last updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 da6de3c20c5e337a…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Why This Dataset?",
+   "quote": "AI incidents surged **56.4% in 2024 alone** (Stanford HAI AI Index 2025).",
+   "claim": "the Kaggle dataset cites Stanford HAI's AI Index 2025 for a 56.4% surge in AI incidents in 2024",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the Kaggle compilation",
+   "date": "2026-02-28 (last updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 da6de3c20c5e337a…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Data Sources table",
+   "quote": "| **AI Incident Database (incidentdatabase.ai)** | Primary incident records and AIID identifiers |",
+   "claim": "the Kaggle dataset takes primary incident records and AIID identifiers from the database",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "homonym: the Kaggle compilation",
+   "date": "2026-02-28 (last updated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 da6de3c20c5e337a…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title (video, 1:35; not found, title only)",
+   "quote": "AI Incident Database | TIME posted on the topic",
+   "claim": "a TIME clip on LinkedIn about the database (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and video",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F19": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: AI incident (also §2.1)",
+   "quote": "An alleged harm or near harm event to people, property, or the environment where an AI system is implicated.",
+   "claim": "the incident defined: an alleged harm or near-harm event to people, property or environment in which an AI system is implicated",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: AI issue",
+   "quote": "An alleged harm or near harm by an AI system that has yet to occur or be detected.",
+   "claim": "the issue defined: a harm or near harm that has yet to occur or be detected",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: Incident ID",
+   "quote": "The AIID editorial record that bounds and summarizes a specific harmful or near-harm event or traceable episode.",
+   "claim": "the incident ID defined: the editorial record bounding and summarizing an event",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: Incident report",
+   "quote": "A source document attached to an incident ID. Multiple reports may document the same underlying event.",
+   "claim": "the report defined: a source document attached to an incident ID; several may document one event",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: fast boundary rule",
+   "quote": "A report is evidence; an incident ID is the database’s normalized account of an event. A later source about the same underlying event is usually an additional report, not a new incident.",
+   "claim": "report is evidence, incident ID the normalized account; a later source on the same event is usually an additional report",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Quick Definitions: AI incident variant",
+   "quote": "A distinct incident involving the same intelligent system, substantially similar causative factors, and substantially similar harms as a known incident.",
+   "claim": "the variant defined: a distinct incident, same system, substantially similar causes and harms",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "header: governing principle",
+   "quote": "The database records publicly documented allegations of harm or near harm. It does not independently adjudicate every factual claim.",
+   "claim": "governing principle: it records publicly documented allegations and does not adjudicate every factual claim",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it represents and its limits",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§3.1 The Five-Question Test",
+   "quote": "1. IS THERE A SPECIFIC EVENT? … 2. IS AN AI SYSTEM IDENTIFIABLE? … 3. IS THE AI SYSTEM CAUSALLY IMPLICATED? … 4. IS THERE HARM OR CREDIBLE NEAR HARM? … 5. IS THE EVIDENCE ADEQUATE?",
+   "claim": "inclusion by five questions: specific event, identifiable AI system, causal implication, harm or credible near harm, adequate evidence",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§3.1, question 5",
+   "quote": "At least one source must support the essential event, and uncertainty must be expressible without turning the record into speculation.",
+   "claim": "the evidence condition: at least one source supports the essential event",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.3 Implication and Causality ¶1",
+   "quote": "An AI system is implicated when it played an important role in the chain of events that produced the alleged harm. It need not be the sole or dominant cause.",
+   "claim": "implication defined: an important role in the chain of events, not necessarily sole or dominant",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§2.4 Harm and Near Harm ¶2",
+   "quote": "A near-harm event exists when the system helped create a chain of events that could readily have produced harm but an external factor prevented the outcome. The external factor must be independent of the system and should not simply be a built-in safeguard functioning as designed.",
+   "claim": "near harm defined: a chain that could readily have produced harm, prevented by an external factor independent of the system",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§3.3 Presumptive Exclusions",
+   "quote": "General criticism of a product or technology class without identified harm. … Benchmark failures, model errors, or hallucinations that remain inside testing or private drafting and have no consequential use. … These are presumptions rather than absolute prohibitions.",
+   "claim": "presumptive exclusions, among them general criticism without identified harm and failures that stay inside testing; presumptions, not prohibitions",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§1.1 Core Record Types: Duplicate mapping",
+   "quote": "A retired entity or incident identifier redirected to the canonical record that replaced it.",
+   "claim": "duplicate mapping: a retired identifier redirected to its canonical record",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§11.1 What the Database Represents",
+   "quote": "The AIID is a curated archive of publicly documented incidents, issues, reports, and responses. … It is not a neutral mirror of all AI harms, a comprehensive denominator for risk rates, or an independent adjudication of every event.",
+   "claim": "a curated archive of publicly documented incidents, not a neutral mirror, denominator or adjudication",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it represents and its limits",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§11.2 Coverage and Selection Effects",
+   "quote": "Wealthy countries, prominent companies, spectacular events, and English-language reporting are likely to be overrepresented. Harms affecting marginalized groups, occurring inside private organizations, or unfolding as ordinary administration may be underrepresented.",
+   "claim": "coverage: over- and under-representation",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it represents and its limits",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§11.3 Epistemic Status",
+   "quote": "A lack of records is not evidence that a sector or country has no incidents.",
+   "claim": "absence of records is not evidence of absence of incidents",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it represents and its limits",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "§1.6 Live Data and Point-in-Time Snapshots",
+   "quote": "The live site can change after an export is created.",
+   "claim": "the live site may differ from an export",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "header; Version 2 note on AI assistance",
+   "quote": "Version 2 · October 1, 2026 · Daniel Atherton and Sean McGregor · Operational working guide … Generative AI tools were used during the development of Version 2 to assist with research, document organization, drafting, revision, and consistency review.",
+   "claim": "the guide's version, date and authors, and its disclosed AI assistance",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission, editor resolution",
+   "date": "2026-10-01 (Version 2)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 52e3176de91eafff…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "In aviation, an accident is a case where substantial damage or loss of life occurs. Incidents are cases where the risk of an accident substantially increases.",
+   "claim": "aviation's accident and incident, the model of the term",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a collective memory of failures, after aviation",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0c0c386a8a03514f…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "this database adopts an adaptive criteria for ingesting \"incidents\" where reports are accepted or rejected on the basis of a growing rule set defined in the Editor's Guide.",
+   "claim": "adaptive criteria: reports accepted or rejected by a growing rule set in the Editor's Guide",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 0c0c386a8a03514f…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "card title (video, 1:35; not found, title only)",
+   "quote": "AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+   "claim": "a TIME clip on LinkedIn headed 'AI Incidents Rise 50% Year-Over-Year' (title only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and video",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "oEmbed title (YouTube, HarrietHacks, 6:59)",
+   "quote": "Examples of AI real attacks",
+   "claim": "a YouTube video, 'Examples of AI real attacks' (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and video",
+   "date": "— (title only)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 76c222740d387425…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "Why \"AI Incidents\"?",
+   "quote": "Intelligent systems are currently prone to unforeseen and often dangerous failures when they are deployed to the real world. Much like the transportation sector before it (e.g., FAA and FARS) and more recently computer systems, intelligent systems require a repository of problems experienced in the real world so that future researchers and developers may mitigate or avoid repeated bad outcomes.",
+   "claim": "why AI incidents: deployed systems fail; like transportation and computer systems they need a repository of real-world problems",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a collective memory of failures, after aviation",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "What is an Incident?",
+   "quote": "The initial set of more than 1,000 incident reports have been intentionally broad in nature. Current examples include, … An autonomous car kills a pedestrian",
+   "claim": "the initial set of more than 1,000 reports intentionally broad (examples: an autonomous car kills a pedestrian, a flash crash, a wrongful arrest)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: incidents and reports",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "When Should You Report an Incident?",
+   "quote": "When in doubt of whether an event qualifies as an incident, please submit it! This project is intended to converge on a shared criteria for ingesting incidents through exploration of the candidate incidents submitted by the broader community.",
+   "claim": "submit when in doubt; criteria to converge through the community's candidates",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "admission: the five-question test",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "Board of Directors ¶1",
+   "quote": "The incident database is managed in a participatory manner by persons and organizations contributing code, research, and broader impacts.",
+   "claim": "participatory management",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission, editor resolution",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "Collaborators: Incident Editors; lead editor",
+   "quote": "Incident Editors: People that resolve incident submissions to the database and maintain them. … Daniel Atherton is the lead AI incidents editor.",
+   "claim": "incident editors resolve submissions and maintain them; Daniel Atherton lead editor",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "intake: open submission, editor resolution",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "Emeritus Board: Sean McGregor; Collaborators",
+   "quote": "launching the AI Incident Database … Sean McGregor is the Executive Director.",
+   "claim": "Sean McGregor launched the database and is its Executive Director",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the Responsible AI Collaborative",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "sponsor block; Open Source Contributors",
+   "quote": "Database Founding Sponsor … Jingying Yang and Dr. Christine Custis contributed significantly to the early stages of the AIID via their roles with the Partnership on AI.",
+   "claim": "a Database Founding Sponsor heads a logo block whose image the HTML labels 'Partnership on AI'; two people contributed to the early stages through their roles with the Partnership on AI",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "Collaborators: Taxonomy Editors",
+   "quote": "Taxonomy Editors: Organizations or people that have contributed taxonomies to the database. … Center for Security and Emerging Technology (CSET) … Nikiforos Pittaras (GMF)",
+   "claim": "taxonomies contributed by CSET and Nikiforos Pittaras (GMF)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission, editor resolution",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 0b85d8772dcb1205…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B12",
+   "origin": "card",
+   "locus": "Abstract (article page)",
+   "quote": "The AI Incident Database (AIID) is a project that catalogs AI incidents and supports further research by providing a platform to classify incidents for different operational and research-oriented goals.",
+   "claim": "Paeth et al. (AAAI-25): a project cataloguing AI incidents with a platform to classify them",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: indexing harms and near harms",
+   "date": "2025-04-11 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8dbf365d930acee0…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B12",
+   "origin": "card",
+   "locus": "Abstract (article page)",
+   "quote": "We find that certain patterns of AI incidents present structural ambiguities that challenge incident databasing and explore how epistemic uncertainty in AI incident reporting is unavoidable.",
+   "claim": "finding: structural ambiguities challenge incident databasing; epistemic uncertainty unavoidable",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it represents and its limits",
+   "date": "2025-04-11 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 8dbf365d930acee0…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B12",
+   "origin": "card",
+   "locus": "PDF, 'The AI Incident Database and Related Work'",
+   "quote": "Inspired by the CVE program and other incident reporting practices, the AI Incident Database (AIID) catalogs AI incidents with the goal of reducing the likelihood that similar incidents recur … Currently there are over 750 distinct AI incidents detailed by more than 3000 indexed third-party reports.",
+   "claim": "inspired by the CVE program; over 750 incidents and more than 3000 third-party reports at the paper's writing",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: incidents and reports",
+   "date": "2025-04-11 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.pdf.txt (sha256 9dba8efdeb7686b5…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B13",
+   "origin": "card",
+   "locus": "card snippet (ACM DL returned 403)",
+   "quote": "Users can submit examples of incidents and controversies; these submissions are included based on adherence to criteria such as relevance, fairness, and accurac...",
+   "claim": "the ACM paper's snippet: user submissions of incidents and controversies, included by criteria such as relevance, fairness and accuracy (which database is meant is not readable)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and video",
+   "date": "2023 (AIES '23, by Crossref)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F53": {
+   "source": "B14",
+   "origin": "card",
+   "locus": "oEmbed title (YouTube, International Association for Safe & Ethical AI, 19m)",
+   "quote": "Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell | IASEAI 2025",
+   "claim": "a talk on serious-incident reporting frameworks (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and video",
+   "date": "2025 (IASEAI 2025, by title)",
+   "quote_ok": true,
+   "checked_against": "saved text B14.txt (sha256 8c9f8a79bff55d6b…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B15",
+   "origin": "own_page",
+   "locus": "Snapshot Downloads",
+   "quote": "Weekly point-in-time dumps of the full database, available in JSON, MongoDB archive, and CSV formats. … 2026-10-26 10:15 AM · 121.49 MB · backup-20261026101519.tar.bz2 … 2021-03-29 07:49 AM · 2.49 MB · backup-20210329074910.tar.bz2",
+   "claim": "weekly full dumps in JSON, MongoDB and CSV, from 2021-03-29 to 2026-10-26",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-26 (latest snapshot listed)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 1eb3ce6104c8fb98…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B15",
+   "origin": "own_page",
+   "locus": "Citing a Specific Incident",
+   "quote": "Every incident has its own suggested citation that credits both the submitter(s) of the incident and the editor(s) of the incident. … You can find incident citations at https://incidentdatabase.ai/cite/INSERT_NUMBER_HERE.",
+   "claim": "a suggested citation per incident crediting submitters and editors, at /cite/N",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-26 (latest snapshot listed)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 1eb3ce6104c8fb98…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B15",
+   "origin": "own_page",
+   "locus": "Citing the Database as a Whole",
+   "quote": "McGregor, S. (2021) Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database. In Proceedings of the Thirty-Third Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-21).",
+   "claim": "the database as a whole cited by McGregor 2021 (IAAI-21)",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-26 (latest snapshot listed)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 1eb3ce6104c8fb98…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B15",
+   "origin": "own_page",
+   "locus": "Excel Export",
+   "quote": "An Excel file, updated weekly, that combines all numbered incidents with many of their taxonomy classifications.",
+   "claim": "a weekly Excel export of numbered incidents with taxonomy classifications",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-26 (latest snapshot listed)",
+   "quote_ok": true,
+   "checked_against": "saved text B15.txt (sha256 1eb3ce6104c8fb98…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "title; Description; Entities",
+   "quote": "Incident 693: Google AI Reportedly Delivering Confidently Incorrect and Harmful Information … Google's AI search engine has reportedly been providing users with confidently incorrect and often harmful information. … Alleged: Google developed and deployed an AI system, which harmed Google users and General public.",
+   "claim": "incident 693: Google's AI search reportedly giving confidently incorrect and harmful information; Google developer and deployer; Google users and the general public harmed",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the index case: incident 693",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "Incident Stats",
+   "quote": "Report Count … Incident Date … 2024-05-14 … Editors … Daniel Atherton",
+   "claim": "incident 693's stats: report count (7 reports listed), incident date 2024-05-14, editor Daniel Atherton",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: incident 693",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "Incident Reports (Business Insider report excerpt)",
+   "quote": "Google's new search feature, AI Overviews, seems to be going awry.",
+   "claim": "a report attached to 693 names AI Overviews",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: incident 693",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "Applied Taxonomies: MIT",
+   "quote": "MIT Taxonomy Classifications … Machine-Classified … 3.1. False or misleading information",
+   "claim": "693 machine-classified under MIT's taxonomy: false or misleading information",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: incident 693",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "Variants",
+   "quote": "A \"variant\" is an AI incident similar to a known case—it has the same causes, harms, and AI system. Instead of listing it separately, we group it under the first reported incident. Unlike other incidents, variants do not need to have been reported outside the AIID.",
+   "claim": "the incident page's variant: same causes, harms and system, grouped under the first reported incident; need not have been reported outside the AIID",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: incident, report, issue, variant",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B16",
+   "origin": "own_page",
+   "locus": "notice above Entities",
+   "quote": "The OECD AI Incidents and Hazards Monitor (AIM) automatically collects and classifies AI-related incidents and hazards in real time from reputable news sources worldwide.",
+   "claim": "the incident page describes its neighbour, the OECD AIM, as automatic and news-derived",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours",
+   "date": "2024-05-14 (incident date)",
+   "quote_ok": true,
+   "checked_against": "saved text B16.txt (sha256 9f9d4305be3e45b8…), whitespace-normalised"
+  },
+  "F64": {
+   "source": "B17",
+   "origin": "own_page",
+   "locus": "Citation record for Incident 637",
+   "quote": "This incident is a duplicate of Incident 112. All new reports and citations should be directed to incident 112. The reports previously found on this page have been migrated to the previously existing incident.",
+   "claim": "incident 637 kept as a citation page pointing to 112, its reports migrated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: citation, merge, snapshot",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B17.txt (sha256 f19d09642183d686…), whitespace-normalised"
+  },
+  "F65": {
+   "source": "B18",
+   "origin": "own_page",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 17 Nov 2020] … Authors:Sean McGregor",
+   "claim": "the founding paper, by Sean McGregor, submitted 17 November 2020",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2020-11-17 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B18.txt (sha256 70b0cce7b4c32880…), whitespace-normalised"
+  },
+  "F66": {
+   "source": "B18",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "Mature industrial sectors (e.g., aviation) collect their real world failures in incident databases to inform safety improvements. Intelligent systems currently cause real world harms without a collective memory of their failings.",
+   "claim": "the founding problem: aviation's incident databases; intelligent systems without a collective memory of failure",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: a collective memory of failures, after aviation",
+   "date": "2020-11-17 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B18.txt (sha256 70b0cce7b4c32880…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B18",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "The AI Incident Database is an incident collection initiated by an industrial/non-profit cooperative to enable AI incident avoidance and mitigation.",
+   "claim": "an incident collection initiated by an industrial/non-profit cooperative",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2020-11-17 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B18.txt (sha256 70b0cce7b4c32880…), whitespace-normalised"
+  },
+  "F68": {
+   "source": "B18",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "The database supports a variety of research and development use cases with faceted and full text search on more than 1,000 incident reports archived to date.",
+   "claim": "faceted and full-text search over more than 1,000 reports at launch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: incidents and reports",
+   "date": "2020-11-17 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B18.txt (sha256 70b0cce7b4c32880…), whitespace-normalised"
+  },
+  "F69": {
+   "source": "B19",
+   "origin": "wikipedia",
+   "locus": "raw wikitext of the redirect page (action=raw&redirect=no)",
+   "quote": "#REDIRECT [[Partnership on AI]] … {{R from subtopic}} … {{R with possibilities}}",
+   "claim": "'AI Incident Database' redirects to Partnership on AI, no section anchor; tagged from a subtopic, with possibilities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B19.wiki (sha256 03d7f4dfc50b5315…), whitespace-normalised"
+  },
+  "F70": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "History ¶5",
+   "quote": "In November 2020 the Partnership on AI announced the AI Incident Database (AIID),[10] which is a tool to identify, assess, manage, and communicate AI risk and harm.",
+   "claim": "Wikipedia: announced by Partnership on AI in November 2020, a tool for AI risk and harm",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.txt (sha256 1b80fdf3c9e46b6c…), whitespace-normalised"
+  },
+  "F71": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "History ¶6",
+   "quote": "The response also highlighted how the AI Incident Database involves some of the minimum attributes in NIST's AI RMF, such as being consensus-driven, risk-based, adaptable, and consistent with other approaches to managing AI risk.",
+   "claim": "Wikipedia: PAI's NIST response presented it as meeting attributes of the AI RMF",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.txt (sha256 1b80fdf3c9e46b6c…), whitespace-normalised"
+  },
+  "F72": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "Mission and Principles ¶5",
+   "quote": "Notable initiatives include the establishment of the AI incident Database, formulation of norms for responsible publication, and the creation of the innovative AI learning environment SafeLife.",
+   "claim": "Wikipedia: among the Safety Critical AI program's initiatives",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.txt (sha256 1b80fdf3c9e46b6c…), whitespace-normalised"
+  },
+  "F73": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "Programs and initiatives ¶6",
+   "quote": "In November 2020, the Partnership on AI announced the AI Incident Database (AIID) which shifted to a new special-purpose independent non-profit in 2022.",
+   "claim": "Wikipedia: shifted to a new special-purpose independent non-profit in 2022 (the non-profit unnamed)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.txt (sha256 1b80fdf3c9e46b6c…), whitespace-normalised"
+  },
+  "F74": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "reference [10] (McGregor, partnershiponai.org, 2020-11-18), quote",
+   "quote": "Avoiding repeated AI failures requires making past failures known. Therefore, today we introduce a systematized collection of incidents where intelligent systems have caused safety, fairness, or other real-world problems: The AI Incident Database (AIID).",
+   "claim": "McGregor's introduction on Partnership on AI's site, 18 November 2020, quoted in Wikipedia's reference",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Partnership on AI and the founding paper",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.txt (sha256 1b80fdf3c9e46b6c…), whitespace-normalised"
+  },
+  "F75": {
+   "source": "B20",
+   "origin": "wikipedia",
+   "locus": "article header templates (raw wikitext)",
+   "quote": "{{Primary sources|date=April 2025}} … {{AI-generated|date=October 2025}}",
+   "claim": "the article is tagged for primary sources (April 2025) and as AI-generated (October 2025)",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B20.wiki (sha256 08e1303706a2474f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "AI Incident Database — AI Incident Database",
+  "B2": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+  "B3": "Partnership on AI — AI Incident Database - Partnership on AI",
+  "B4": "OECD AI Policy Observatory — AI Incident Database",
+  "B5": "Kaggle — AI Incidents, Failures & Controversies Database - Kaggle",
+  "B6": "LinkedIn·TIME — AI Incident Database | TIME posted on the topic",
+  "B7": "AI Incident Database — Editorial and Research Guide for the AI Incident Database",
+  "B8": "AI Incident Database — Defining an “AI Incident”",
+  "B9": "LinkedIn·TIME — AI Incidents Rise 50% Year-Over-Year: AI Incident Database | TIME posted on the ...",
+  "B10": "YouTube·HarrietHacks — Examples of AI real attacks",
+  "B11": "AI Incident Database — The details about who and why for database - AI Incident Database",
+  "B12": "The Association for the Advancement of Artificial Intelligence — Lessons for Editors of AI Incidents from the AI Incident Database - AAAI Publications",
+  "B13": "ACM Digital Library — Why We Need to Know More: Exploring the State of AI Incident Documentation ...",
+  "B14": "YouTube·International Association for Safe & Ethical AI — Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+  "B15": "AI Incident Database — Database Backups and Snapshots",
+  "B16": "AI Incident Database — Incident 693",
+  "B17": "AI Incident Database — Citation record for Incident 637",
+  "B18": "arXiv — [2011.08512] Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database",
+  "B19": "Wikipedia — AI Incident Database (redirect)",
+  "B20": "Wikipedia — Partnership on AI"
+ }
+}

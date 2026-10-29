@@ -1,0 +1,85 @@
+Relaunching PapersWithCode with new features
+Hugging Face
+Models
+Datasets
+Spaces
+Buckets
+Docs
+Enterprise
+Pricing
+Website
+Tasks
+HuggingChat
+Collections
+Languages
+Organizations
+Community
+Blog
+Posts
+Daily Papers
+Hardware
+Learn
+Discord
+Forum
+GitHub
+Solutions
+Team & Enterprise
+Hugging Face PRO
+Enterprise Support
+Inference Providers
+Inference Endpoints
+Storage Buckets
+Log In
+Sign Up
+Back to Articles
+a]:hidden">
+Relaunching PapersWithCode with new features
+Community Article Published
+May 24, 2026
+Upvote 14
++8
+Niels Rogge nielsr Follow
+:last-child]:mb-0">
+Hi,
+Niels here from the open-source team at Hugging Face. It's been one week since I launched paperswithcode.co , a revival of the website we all loved. It allows us to keep track of the state-of-the-art (SOTA) across various domains of AI, from agents to computer vision and time-series forecasting.
+The reception has been great on X , LinkedIn and r/machinelearning - they include a launch video, and I'm excited to extend this over the next few months.
+This week, I've added the following features:
+Support for multiple metrics for a given benchmark: leaderboards now support multiple metrics, see e.g., the Open ASR Leaderboard for automatic speech recognition, which supports both Word Error Rate (WER) and the Inverse Real-Time Factor (RTFx) metrics, or the Object Detection leaderboard , which now also reports frames-per-second (FPS) besides mean average precision (mAP) on COCO.
+Support for external papers: We do support submitting papers beyond Arxiv, such as a Github repo, a blog post, BiorXiv, and more. You can submit a paper at paperswithcode.co/submit . AI will automatically enrich it with task and method tags, the GitHub repo, evals, and more. See e.g. DeepSeek-v4 below, which is not on Arxiv:
+Support for paper lineage: whenever a paper has a follow-up or predecessor, this will be displayed with a small banner above the abstract. See e.g. Mamba-3 , DINOv2 and GLM-4.5 .
+New methods: support for new methods based on popularity, including Gated DeltaNet , Kimi Delta Attention , Mamba-2 , and more. Each method also lists all papers that cite it. Find all supported methods here .
+Support for screenshotting a leaderboard for easy sharing on social media: each benchmark now includes a "copy image" button both on the scatter plot and table, which can be shared on social media. Try it on ClawEval , for example.
+Added many more evals: we are adding evals gradually, starting with all models supported in the Transformers library. So far, we have about 3k evals! Find them at the bottom of each paper page, e.g. Qwen 3.6 .
+Happy to hear more feature requests and feedback!
+I will also launch a channel on the Hugging Face Discord server for easier communication. You can also chime in on the GitHub thread here .
+Cheers,
+Niels
+More from this author
+New updates to Papers with Code
+1
+June 22, 2026
+Running AI agents to automate outreach at scale
+15
+April 27, 2026
+Community
+Epic launch Niels! I've been loving it! Really missed paperswithcode when it was gone. Thank you for all the efforts bringing it back even better.</p>\n","updatedAt":"2026-05-25T22:27:06.514Z","author":{"_id":"610a70f35a40a8bfebfbf09b","avatarUrl":"https://cdn-avatars.huggingface.co/v1/production/uploads/1659922312540-610a70f35a40a8bfebfbf09b.jpeg","fullname":"Daniel Bourke","name":"mrdbourke","type":"user","isPro":true,"isHf":false,"isHfAdmin":false,"isMod":false,"followerCount":322,"isUserFollowing":false}},"numEdits":0,"identifiedLanguage":{"language":"en","probability":0.9669891595840454},"editors":["mrdbourke"],"editorAvatarUrls":["https://cdn-avatars.huggingface.co/v1/production/uploads/1659922312540-610a70f35a40a8bfebfbf09b.jpeg"],"reactions":[],"isReport":false},"replies":[{"id":"6a39476d7d48a4d7da39cbb1","author":{"_id":"5f1158120c833276f61f1a84","avatarUrl":"https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg","fullname":"Niels Rogge","name":"nielsr","type":"user","isPro":false,"isHf":true,"isHfAdmin":false,"isMod":false,"followerCount":1348,"isUserFollowing":false,"primaryOrg":{"avatarUrl":"https://cdn-avatars.huggingface.co/v1/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png","fullname":"Hugging Face","name":"huggingface","type":"org","isHf":true,"details":"The AI community building the future.","plan":"team"}},"createdAt":"2026-06-22T14:32:13.000Z","type":"comment","data":{"edited":false,"hidden":false,"latest":{"raw":"Thanks a lot for your kind words :)","html":"<p>Thanks a lot for your kind words :)</p>\n","updatedAt":"2026-06-22T14:32:13.082Z","author":{"_id":"5f1158120c833276f61f1a84","avatarUrl":"https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg","fullname":"Niels Rogge","name":"nielsr","type":"user","isPro":false,"isHf":true,"isHfAdmin":false,"isMod":false,"followerCount":1348,"isUserFollowing":false,"primaryOrg":{"avatarUrl":"https://cdn-avatars.huggingface.co/v1/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png","fullname":"Hugging Face","name":"huggingface","type":"org","isHf":true,"details":"The AI community building the future.","plan":"team"}}},"numEdits":0,"identifiedLanguage":{"language":"en","probability":0.9284840226173401},"editors":["nielsr"],"editorAvatarUrls":["https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg"],"reactions":[],"isReport":false,"parentCommentId":"6a14ccbacd4b2325f9858610"}}]}],"status":"open","isReport":false,"pinned":false,"locked":false,"collection":"community_blogs"},"contextAuthors":["nielsr"],"primaryEmailConfirmed":false,"discussionRole":0,"acceptLanguages":["*"],"withThread":true,"cardDisplay":false,"repoDiscussionsLocked":false,"hideComments":true}">
+mrdbourke
+May 25
+Epic launch Niels! I've been loving it! Really missed paperswithcode when it was gone. Thank you for all the efforts bringing it back even better.
+See translation
+1 reply
+·
+nielsr
+Article author Jun 22
+Thanks a lot for your kind words :)
+See translation
+Edit Preview
+Upload images, audio, and videos by dragging in the text input, pasting, or clicking here .
+Tap or paste here to upload images
+Comment · Sign up or log in to comment
+Upvote 14
++2
+System theme
+Company
+TOS Privacy About Careers Website
+Models Datasets Spaces Pricing Docs
