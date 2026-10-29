@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.379",
+ "derived_from": "EA-WG-CAPTURES-01 v12.380",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 975,
-  "joined_confirmed": 428,
+  "observations": 976,
+  "joined_confirmed": 429,
   "unjoined": 547,
-  "relations": 4648,
+  "relations": 4656,
   "by_state": {
-   "confirmed": 4152,
-   "candidate": 496
+   "confirmed": 4158,
+   "candidate": 498
   },
   "by_verb": {
-   "held_by": 2030,
-   "scored_by": 720,
-   "appeared_in": 1496,
-   "about": 384,
+   "held_by": 2032,
+   "scored_by": 721,
+   "appeared_in": 1499,
+   "about": 386,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -3063,6 +3063,14 @@
 {"id": "REL-2941892de397", "obs_id": "OBS-3fd20ae244c0", "entry": "olmotrace-aio-20261029", "obs_slug": "olmotrace-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "OLMoTrace", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-67b6ae83d733", "obs_id": "OBS-3fd20ae244c0", "entry": "olmotrace-aio-20261029", "obs_slug": "olmotrace-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "OLMoTrace", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-1f1cce9b4dc9", "obs_id": "OBS-3fd20ae244c0", "entry": "olmotrace-aio-20261029", "obs_slug": "olmotrace-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "OLMoTrace", "verb": "about", "object": "non:olmotrace", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-c2863600c5dd", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.alexanarch.org", "title": "What is the Sappho future reader framework? — Google AI Overview ...", "url": null}},
+{"id": "REL-c2863600c5dd", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "www.alexanarch.org", "title": "AXN:08E5.CAPTURE — sappho future reader - Alexanarch", "url": null}},
+{"id": "REL-c2863600c5dd", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "www.alexanarch.org", "title": "AXN:09FE.CAPTURE - Alexanarch", "url": null}},
+{"id": "REL-2f5b4ec85157", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6d92acf70235", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-cedd9a037469", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a2524890f7b1", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "about", "object": "non:anne-carson", "basis": "defining papers #1270, #1645", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-d1a2241867b3", "obs_id": "OBS-2b8b9d6c5594", "entry": "future-reader-framework-quoted-aio-20261029", "obs_slug": "future-reader-framework-quoted-aio-20261029", "date": "2026-10-29", "surface": "Google AI Overview", "q": "\"future reader framework\"", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #134, #1270, #1645", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f84d6bfc1642", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-46da5a94a1ea", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-76da034f8ad2", "obs_id": "OBS-a77c263ae8c0", "entry": "alexanarch-operative-semiotics-aio-20260823", "obs_slug": "alexanarch-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "alexanarch:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

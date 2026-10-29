@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-29T20:39:27Z",
+  "regenerated_at": "2026-10-29T21:03:43Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "103c7fab286959b0030304690d21ca1e6410e0b2161374c4805dcdf55a34d54e",
+    "mm-main-capture": "c6b7514a90a505ad086a51ccbc2d86cc1ec1bec2ef9bdc98ac52d9f8cee74f37",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2555,
-  "total_observations": 1086,
+  "total_addresses": 2556,
+  "total_observations": 1087,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 798,
+    "observed_address": 799,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1675,
+    "unmatched": 1676,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -1806,6 +1806,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "\"future reader framework\"": {
+      "canonical_query": "\"future reader framework\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "\"FUTURE READER FRAMEWORK\" IN QUOTATION MARKS ON THE OVERVIEW — THE SAPPHO FUTURE READER FRAMEWORK REACHED WITHOUT SAPPHO, THE AUTHOR OR THE ARCHIVE IN THE QUERY; LEE SHARKS NAMED FOR 'SPECIFIC CONCEPTUALIZATIONS AND TREATMENTS'; EVERY CARD A CAPTURE OF THE ARCHIVE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "future-reader-framework-quoted-aio-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#future-reader-framework-quoted-aio-20261029",
+          "record_url": "https://www.alexanarch.org/captures/future-reader-framework-quoted-aio-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#future-reader-framework-quoted-aio-20261029",
+          "details_excerpt": "\"FUTURE READER FRAMEWORK\", QUOTED, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'The Sappho Future Reader Framework is a conceptual and literary approach that examines how ancient Greek poet Sappho's surviving fragme"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The framework is the archive's: EA-MPAI-SAPPHO-FUTURE-READER-01 (#1645), with ΦΑΙΝΕΤΑΙ ΜΟΙ (#1270) and The Future Beloved (#134). Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "\"FUTURE READER FRAMEWORK\" IN QUOTATION MARKS ON THE OVERVIEW — THE SAPPHO FUTURE READER FRAMEWORK REACHED WITHOUT SAPPHO, THE AUTHOR OR THE ARCHIVE IN THE QUERY; LEE SHARKS NAMED FOR 'SPECIFIC CONCEPTUALIZATIONS AND TREATMENTS'; EVERY CARD A CAPTURE OF THE ARCHIVE"
     },
     "\"gematric residue\"": {
       "canonical_query": "\"gematric residue\"",
