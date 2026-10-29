@@ -360,8 +360,8 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
         '<div class="footer">'
         'Semantic addresses framework: '
         '<a href="/s/browse/">EA-SEMANTIC-ADDRESSES-01</a>. '
-        f'This address is one of {N_ADDRESSES:,} canonical queries catalogued from 6 tributaries. '
-        '<a href="/addresses/">Full index →</a>'
+        'This address is one of the canonical queries catalogued from 6 tributaries; '
+        '<a href="/addresses/">the full index</a> gives the count. '
         '</div>'
     )
     parts.append('</div></body></html>')
@@ -464,7 +464,8 @@ def update_sitemap(slug_map: dict) -> None:
     print(f"  ✓ sitemap.xml: per-address URLs not submitted ({len(slug_map)} pages served noindex,follow)")
 
 
-N_ADDRESSES = 0  # set in main(); the footer and index state the live count (was a hard-coded 1,995)
+N_ADDRESSES = 0  # set in main(); the index states the live count (was a hard-coded 1,995). The per-address footer carries no count
+# (2026-10-29, operator: every new address had rewritten all ~2,500 pages for that one number).
 
 
 def main() -> int:
