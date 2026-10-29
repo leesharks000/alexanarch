@@ -40,7 +40,7 @@ for s in S:
          "d": au["d"], "reading": au["reading"], "findings": au["findings"], "analysis": au["analysis"],
          "per_v": au["per_v"], "per_note": au["per_note"],
          "originator": {"name": row["operator"], "relation": "external", "entity_type": TYPE.get(row["kind"], "dataset"), "spxi_treatment": "partial",
-                        "basis": f"Not the archive's: {row['name']}, run by {row['operator']}. Formalized by the provenance meta-aggregator record of 2026-10-29 ({rec}), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."},
+                        "basis": f"Not the archive's: {row['name']}; its operator, as the record gives it: {row['operator']}. Formalized by the provenance meta-aggregator record of 2026-10-29 ({rec}), editor Lee Sharks; the record's fields carry verbatim quotes from the sources it saved with sha256, each with its basis (the operator's own page or a third-party account). Recorded 2026-10-29; repaired the same day."},
          "related_deposits": [],
          "notes": {"prompts": "One query. Sent by the operator on 2026-10-29 with thirteen others, one per entity of the provenance meta-aggregator, from the strings supplied at his request ('shoot me those search strings. strings on the bare entity, no follow questions'); pasted in one message separated by '$'. The paste was lost to a context compaction of this session and re-pasted by the operator the same day; the second paste is the one seated."
                    + (" Seated with the operator's note on the substitution." if s["operator_note"] else "")}}

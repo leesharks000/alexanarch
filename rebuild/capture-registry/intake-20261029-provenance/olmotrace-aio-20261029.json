@@ -11,7 +11,7 @@
  "ev": "paste",
  "match": "BROAD MATCH",
  "match_note": null,
- "mt": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE USE ITS AUTHORS DISCLAIM",
+ "mt": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE AUTHORS' USE GIVEN WITHOUT THEIR LIMIT",
  "s": "Machine Reception",
  "q": "OLMoTrace",
  "q_kind": "the name of an entity of the provenance meta-aggregator (OLMoTrace; record https://www.provenanceerasure.org/aggregators/olmotrace/, compiled 2026-10-29), the bare entity string supplied at the operator's request ('strings on the bare entity, no follow questions') and run by him the same day, to supply the composition layer's account of the entity for its record and its /non row. A baseline: the record landed on provenanceerasure.org the same day (commit 8a9f153) and no card cites it. NEW address.",
@@ -82,12 +82,12 @@
  "d": "OLMOTRACE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trillion-token training datasets in real time.' How it works (the Show OLMoTrace button highlights verbatim spans; matches against corpora such as Dolma, ranking up to 10 documents by BM25; an extended infini-gram at O(L log N)), supported models (OLMo 2 32B and 13B Instruct, OLMoE 1B 7B, the OLMo 3 family), uses (fact-checking, hallucination diagnosis, auditing). Six cards: Ai2's blog, arXiv 2504.07096, the ACL Anthology, Ai2 on X (OLMo 3), Techzine, Ken Yeung's newsletter.",
  "reading": "The innocent reading first. The Overview names the tool and its maker, explains how it finds training text in a model's answer, lists the models it covers and what it is good for.",
  "findings": [
-  "THE TOOL HELD. Ai2, real time, multi-trillion tokens and verbatim matching are the paper's: 'OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora' (record). Checked 2026-10-29 against the provenance census record of the same day and the entity pages it saved.",
-  "THE DISCLAIMED USE GIVEN AS A USE. The record's negative tags are the authors' own: 'The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output.' The composition's first use is 'Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents'. A verbatim match is offered as support for a claim, the reading the paper excludes.",
+  "THE TOOL HELD. Ai2, real time, multi-trillion tokens and verbatim matching are the paper's: 'OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora' (record). Checked 2026-10-29 against the provenance census record of the same day and the sources it saved.",
+  "THE USE WITHOUT ITS LIMIT. The authors name fact checking as a use: 'We showcase how it can be used to explore fact checking' (abstract), and in their first case study 'we can use their corresponding documents to fact check claims made in the spans'. Their Limitations bound it: 'The retrieved documents should not be interpreted as having a causal effect on the LM output, or as supporting evidence or citations for the LM output' (the record's negative tags). The composition's first use is 'Fact-Checking: Verify whether specific claims in a model's answer are backed by real training documents': the use at a raised force, the limit dropped; Ai2's blog post, card 1, also omits the limit. (Repaired 2026-10-29: the finding had called fact checking a use the authors disclaim.)",
   "THE PARTNERS UNSAID. The record names the University of Washington, UC Berkeley and Stanford with Ai2; the composition names Ai2 alone.",
   "THE MODELS CURRENT. The OLMo 3 family comes from Ai2's post on X; the record's count is OLMo-2-32B-Instruct's training data (3.2 billion documents, 4.6 trillion tokens). The record is to carry OLMo 3 from Ai2's own page."
  ],
- "analysis": "A provenance tool whose authors state precisely what a match does not mean is composed with that meaning restored. The composition turns a trace of verbatim overlap into evidence for a claim, the conversion of a matching relation into a citation relation that the paper names and refuses.",
+ "analysis": "A provenance tool whose authors state precisely what a match does not mean is composed with the use they name and without the bound they set on it. The composition turns a trace of verbatim overlap into evidence for a claim, the conversion of a matching relation into a citation relation that the paper's Limitations refuse; the use is the authors', the conversion the composition's.",
  "per_v": {
   "author": false,
   "inst": true,
@@ -100,7 +100,7 @@
   "relation": "external",
   "entity_type": "service",
   "spxi_treatment": "partial",
-  "basis": "Not the archive's: OLMoTrace, run by Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+  "basis": "Not the archive's: OLMoTrace; its operator, as the record gives it: Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks; the record's fields carry verbatim quotes from the sources it saved with sha256, each with its basis (the operator's own page or a third-party account). Recorded 2026-10-29; repaired the same day."
  },
  "related_deposits": [],
  "notes": {

@@ -73,10 +73,10 @@
  "d": "ATTRIBUTIONBENCH, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'a comprehensive research benchmark designed to evaluate automatic attribution and citation faithfulness in Large Language Model (LLM) and generative search engine responses.' A unified testbed of seven datasets (ExpertQA, Stanford-GenSearch, AttributedQA, LFQA, BEGIN, HAGRID, AttrEval-GenSearch), the task (is every claim fully supported by its cited evidence: attributable or not), the data on Hugging Face and GitHub; findings (about 80% macro-F1 for GPT-4 and fine-tuned GPT-3.5, 60–70% on harder sets; over 66% of errors from fine-grained information insensitivity, nearly 27% from a mismatch of access and context). Five cards: arXiv 2402.15089, the OSU-NLP-Group repository, the project page, the Hugging Face dataset, the ACL Anthology.",
  "reading": "The innocent reading first. The Overview identifies the benchmark, what it compiles, what it asks and how hard models find it, all from the paper and its repositories.",
  "findings": [
-  "THE ENTITY EXACT. The task ('whether every claim within the generated responses is fully supported by its cited evidence') and the 80% macro-F1 are the record's quotes from the project page. Checked 2026-10-29 against the provenance census record of the same day and the entity pages it saved.",
+  "THE ENTITY EXACT. The task ('whether every claim within the generated responses is fully supported by its cited evidence') and the 80% macro-F1 are the record's quotes from the project page. Checked 2026-10-29 against the provenance census record of the same day and the sources it saved.",
   "KEPT APART. The composition never mentions AttriBench, the quote-attribution benchmark with a near name; the record's negative tag ('NOT AttriBench') is respected by silence.",
   "THE AUTHORS IN THE CARDS ONLY. Yifei Li, Xiang Yue, Zeyi Liao and Huan Sun are named in the arXiv and Hugging Face cards; the answer names neither them nor the OSU NLP Group.",
-  "THE ERROR SHARES. The 66% and 27% figures are the paper's error analysis; the record does not carry them, and they are unchecked."
+  "THE ERROR SHARES. The 66% and 27% figures are the paper's error analysis; on the project page the record saved ('Over 66%', 'About 26.8%'); the record does not carry them. (Repaired 2026-10-29: the finding had called them unchecked.)"
  ],
  "analysis": "An attribution benchmark is composed at full grain from its own paper and kept distinct from its homonym, and its makers are left in the cards. The record's negative tag, that support by evidence is not credit to the original author, is the line between this entity and the next.",
  "per_v": {
@@ -91,7 +91,7 @@
   "relation": "external",
   "entity_type": "dataset",
   "spxi_treatment": "partial",
-  "basis": "Not the archive's: AttributionBench, run by OSU NLP Group (The Ohio State University). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256. Recorded 2026-10-29."
+  "basis": "Not the archive's: AttributionBench; its operator, as the record gives it: OSU NLP Group (The Ohio State University). Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/attributionbench/), editor Lee Sharks; the record's fields carry verbatim quotes from the sources it saved with sha256, each with its basis (the operator's own page or a third-party account). Recorded 2026-10-29; repaired the same day."
  },
  "related_deposits": [],
  "notes": {
