@@ -264,13 +264,33 @@ def author_of(d):
     if m:
         a = 'Lee Sharks' if a == 'Sharks, L.' else f'{m.group(2)} {m.group(1)}'
     return a.split(', ')[0].strip()
+# THE DEPOSIT, NAMED (operator, 2026-10-29, after the link on #1717 sent ChatGPT to the poem in place of its critical edition: "the ask
+# chatgpt link on the deposit ... does not actually reflect its title enough to distinguish it from other instantiations - and that is
+# supposed to be a link to search directly for that specific deposit. the link generation needs to change"). The search-title rule above
+# cut a long title at its first colon or dash, so #1717 asked about "Belief & Technique for Telepathic Prose" (the poem's name) and #1716
+# about "EA-CORPORA-29". The prompt now cuts a long title only at its first em dash, carrying a bare code into its next segment, and names
+# the record by its deposit number and AXN, both printed on the record page. The Google search links keep the 2026-10-11 ruling.
+def chatgpt_title_of(d):
+    t = re.sub(r'\s+', ' ', str(d.get('title') or '')).strip().replace('"', '')
+    if len(t.split()) <= 32:
+        return t
+    parts = re.split(r'\s[\u2014\u2013]\s', t)
+    head = parts[0].strip()
+    if len(head.split()) < 3 and len(parts) > 1:
+        head = head + ' \u2014 ' + re.split(r':\s', parts[1], maxsplit=1)[0].strip()
+    return head
+def chatgpt_ids_of(d):
+    n, axn = d.get('deposit_number'), str(d.get('axn') or '')
+    hexpart = '.'.join(axn.split('.')[:1]) if axn else ''
+    return f'Alexanarch deposit #{n}' + (f', {hexpart}' if hexpart else '')
 def chatgpt_prompt_of(d):
-    t, a, ct = search_title_of(d), author_of(d), str(d.get('content_type') or '')
+    t, a, ct = chatgpt_title_of(d), author_of(d), str(d.get('content_type') or '')
+    ids = chatgpt_ids_of(d)
     if _CREATIVE.search(ct) and not _INSTRUMENT.search(ct) and not _ARGUED.search(ct):
-        return f'Tell me about \u201c{t}\u201d by {a}. Read it closely, and ground what you say in the text itself.'
+        return f'Tell me about \u201c{t}\u201d by {a} ({ids}). Read it closely, and ground what you say in the text itself.'
     if _INSTRUMENT.search(ct) and not _ARGUED.search(ct):
-        return f'What is \u201c{t}\u201d by {a}, and how does it work? Ground your answer in the document itself.'
-    return f'What are the arguments in \u201c{t}\u201d by {a}? Ground your answer in a reading of the text itself.'
+        return f'What is \u201c{t}\u201d by {a} ({ids}), and how does it work? Ground your answer in the document itself.'
+    return f'What are the arguments in \u201c{t}\u201d by {a} ({ids})? Ground your answer in a reading of the text itself.'
 def chatgpt_url_of(d):
     from urllib.parse import quote_plus
     # PLAIN ?q= (2026-10-12 01:26; operator: "it gives a verification error when opened in incognito, and opens in the app,
