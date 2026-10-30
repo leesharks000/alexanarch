@@ -1,6 +1,6 @@
 {
  "description": "Stage B/C queue: freeform reference-section entries awaiting in-session interpretive parsing (No-Double-Draw: TACHYON parses in-session; never via API). Parsed entries carry structured records and bib: keys.",
- "dateModified": "2026-10-30T02:15:28Z",
+ "dateModified": "2026-10-30T11:42:47Z",
  "pending": 156,
  "parsed": 5715,
  "triaged": 3424,
@@ -234537,5 +234537,21 @@
    "locus": "refsec",
    "status": "pending"
   }
- ]
+ ],
+ "read": 6956,
+ "bibkey_convention": "bib:<sha256(normalized raw)[:12]>; deterministic from 2026-07-30",
+ "triage_statuses": {
+  "parsed": "bibliographic reference, fields extracted",
+  "relation_line": "identifier+relation row; edge carried by the citation graph, not bibliography",
+  "legal_citation": "statute, code, or case reference",
+  "apparatus": "table header, column label, or structural fragment",
+  "prose": "sentence or bio text swept in by section segmentation",
+  "bare_url": "URL-only entry; the edge is already carried in citation-graph-external via `url`",
+  "nav_relation": "navigation-map relation row; internal graph edge, not bibliography",
+  "provenance_row": "capture/provenance table row (platform, account, state, date); apparatus of the capture registry, not bibliography",
+  "footnote": "a numbered note; may mention works, is not a bibliography entry",
+  "tang_prose": "a TANG body paragraph without a reference shape: the genre's citation set in prose (deposit #542); raw kept",
+  "not_reference": "read in session (data/citation-readings.json): not a bibliographic reference",
+  "pending": "resisted deterministic parse; awaits in-session judgment"
+ }
 }
