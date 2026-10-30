@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-28T23:35:36.397059Z",
- "seats": 133,
- "lines_total": 5212197,
+ "_generated": "2026-10-30T10:38:23.342134Z",
+ "seats": 144,
+ "lines_total": 6573861,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -7192,36 +7192,6 @@
    "axn": "AXN:0730.ORIGINAL.🏙️🥁🌹🔛🚪🕙"
   },
   {
-   "seat": "EA-CORPORA-28/06",
-   "corpus": "paul-klee",
-   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
-   "license": {
-    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
-    "record": "CC-BY-4.0 applies to this seat record only."
-   },
-   "origin": {
-    "items": [
-     {
-      "source": "Alexanarch deposit",
-      "file": "declared/absence.json"
-     },
-     {
-      "source": "Alexanarch deposit",
-      "file": "declared/absence.md"
-     }
-    ],
-    "fetched": "2026-10-27",
-    "transport": "written in session (Transport D); No-Double-Draw"
-   },
-   "language": "deu",
-   "lines": 0,
-   "verified_loci": [],
-   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Paul Klee (1879–1940) is entered as wanted for a reason of his own: \"too many files and too many image copyright landmines.\" His work runs to some ten thousand pictures, scattered across collections whose reproductions carry their own claims, and the shelf takes no file whose licence cannot be verified at the file.",
-   "scope": "Declared, not seated: Paul Klee, Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII (Erich Reiss, 1920), opens: open (published before 1931); Paul Klee, Pädagogisches Skizzenbuch (Bauhausbücher 2) (Albert Langen, 1925), opens: open (published before 1931); Paul Klee, Über die moderne Kunst (the Jena lecture of 1924) (Benteli, 1945), opens: 1 January 2041 in the United States, if its term was restored; Paul Klee, ed. Jürg Spiller, Das bildnerische Denken (Benno Schwabe, 1956), opens: the editor's apparatus under its own terms; Paul Klee, ed. Felix Klee, Tagebücher 1898–1918 (DuMont Schauberg, 1957), opens: the editor's apparatus under its own terms; Paul Klee, the pictures (about ten thousand works, 1883–1940), opens: the works open; the photographs under their holders' terms. Wanted, and open: the Pädagogisches Skizzenbuch (1925) and the Schöpferische Konfession (1920) in their first printings, with their drawings, from a scan whose licence is verified at the file. The pictures wait on a source whose images carry an open licence of their own.",
-   "data": "https://www.alexanarch.org/data/corpora/paul-klee/",
-   "axn": "AXN:0730.ORIGINAL.🌌⏳🝊🕊️📖📖"
-  },
-  {
    "seat": "EA-CORPORA-29/01",
    "corpus": "jack-kerouac",
    "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
@@ -10253,7 +10223,2294 @@
    "scope": "Eight volumes, chosen so that the Mahāyāna sūtras seated in Sanskrit (29/09) and in Chinese (29/10) stand also in Tibetan, with the Vinaya's opening and the catalogue by which the rest is found. The other 95 volumes are queued.",
    "data": "https://www.alexanarch.org/data/corpora/derge-kangyur/",
    "axn": "AXN:0A9F.ORIGINAL.🌠🌉🌙👋🌅🔄"
+  },
+  {
+   "seat": "EA-CORPORA-30/01",
+   "corpus": "einstein",
+   "edition": "„Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt“, Annalen der Physik, 4. Folge, 17 (1905), 132–148 (received 18 March 1905) — the Archive's microfilm issue sim_annalen-der-physik_1905_17_1 (pp. 3–195 of vol. 17), OCR layer; the paper is at pp. 132–148; „Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen“, Annalen der Physik 17 (1905), 549–560 — microfilm issue sim_annalen-der-physik_1905_17_3 (pp. 383–587 of vol. 17), OCR layer; the paper is at pp. 549–560; „Zur Elektrodynamik bewegter Körper“, Annalen der Physik 17 (1905), 891–921 (received 30 June 1905) — microfilm issue sim_annalen-der-physik_1905_17_5 (pp. 783–1020 of vol. 17), OCR layer; the paper is at pp. 891–921; „Zur Elektrodynamik bewegter Körper“ (Annalen der Physik 17, 1905, 891–921) — German Wikisource transcription, a second text layer beside the OCR; „Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?“, Annalen der Physik 18 (1905), 639–641 (received 27 September 1905) — microfilm issue sim_annalen-der-physik_1905_18_3 (pp. 415–644 of vol. 18), OCR layer; the paper is at pp. 639–641; „Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?“ (Annalen der Physik 18, 1905, 639–641) — German Wikisource transcription, a second text layer beside the OCR; „Eine neue Bestimmung der Moleküldimensionen“, Annalen der Physik 19 (1906), 289–306, the Zurich dissertation of 1905 as printed — microfilm issue sim_annalen-der-physik_1906_19_2 (pp. 219–438 of vol. 19), OCR layer; the paper is at pp. 289–306. The issue also carries „Zur Theorie der Brownschen Bewegung“, pp. 371–381; „Die Feldgleichungen der Gravitation“, Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin 1915, 2. Halbband, 844–847 (session of 25 November 1915) — the half-year volume, Google scan (ARLIMA upload), OCR layer. The volume also carries the three November papers before it: „Zur allgemeinen Relativitätstheorie“ (778–786), its Nachtrag (799–801), and „Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie“ (831–839); their pages as the volume's own register gives them; „Die Feldgleichungen der Gravitation“ (Sitzungsberichte 1915, 844–847) — German Wikisource transcription, a second text layer beside the OCR; „Die Grundlage der allgemeinen Relativitätstheorie“, Annalen der Physik, 4. Folge, 49 (1916), 769–822 — microfilm issue sim_annalen-der-physik_1916_49_7 (Heft 7 of vol. 49, opening with the paper), OCR layer; „Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie“, Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin 1917, 1. Halbband, 142–152 (session of 8 February 1917) — the half-year volume (Digital Library of India, dli.ministry.22790, file 26840), scan and OCR layer; Über die spezielle und die allgemeine Relativitätstheorie (Gemeinverständlich), fünfte Auflage (10.–14. Tausend) (Braunschweig: Vieweg, 1920; Sammlung Vieweg; first published 1917) — Google scan of the University of Wisconsin copy, scan and OCR layer",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Every work was first published 1905–1920 and is in the public domain in the United States (published before 1931, the term of 95 years run). Einstein died in 1955: the term of life plus seventy years ran out at the end of 2025, so the works are also free in the European Union and in other countries of that term from 2026-01-01; a country with a longer term may still hold them, for example Spain, where authors who died before 1987 have life plus eighty years, to the end of 2035. The Annalen der Physik scans are the Internet Archive's microfilm series (collection sim_microfilm); the items carry no rights or licence field, and the Archive names the journal's present publisher, Wiley. The Sitzungsberichte 1915 volume (Google scan uploaded by ARLIMA) and the Vieweg book of 1920 (Google scan) carry the Public Domain Mark 1.0. The Sitzungsberichte 1917 volume is a Digital Library of India scan with no rights field. The three Wikisource pages are CC BY-SA 4.0 for the site's contributions.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1905_17_1",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1905_17_1",
+      "files": [
+       "sim_annalen-der-physik_1905_17_1_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1905_17_1.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1905_17_1/sim_annalen-der-physik_1905_17_1.pdf",
+       "size": 33519087,
+       "md5": "bae85d831d403c7fcbf6045e8a6136ec",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1905_17_3",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1905_17_3",
+      "files": [
+       "sim_annalen-der-physik_1905_17_3_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1905_17_3.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1905_17_3/sim_annalen-der-physik_1905_17_3.pdf",
+       "size": 32924812,
+       "md5": "a300152199c905ead60af20a1345a605",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1905_17_5",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1905_17_5",
+      "files": [
+       "sim_annalen-der-physik_1905_17_5_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1905_17_5.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1905_17_5/sim_annalen-der-physik_1905_17_5.pdf",
+       "size": 44161345,
+       "md5": "08cc926fc6203057e59dc23480c8147e",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Wikisource (de)",
+      "title": "Zur Elektrodynamik bewegter Körper",
+      "url": "https://de.wikisource.org/wiki/Zur_Elektrodynamik_bewegter_K%C3%B6rper",
+      "revision": "5052298",
+      "permalink": "https://de.wikisource.org/w/index.php?oldid=5052298",
+      "sha256": "b5808038e8ead5cb1bc905ef4cf1c3b4d3d7d600822be8b48a5c4b5f33cf4281"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1905_18_3",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1905_18_3",
+      "files": [
+       "sim_annalen-der-physik_1905_18_3_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1905_18_3.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1905_18_3/sim_annalen-der-physik_1905_18_3.pdf",
+       "size": 35840914,
+       "md5": "4e852ac4bc75933ba7372ad62df26420",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Wikisource (de)",
+      "title": "Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?",
+      "url": "https://de.wikisource.org/wiki/Ist_die_Tr%C3%A4gheit_eines_K%C3%B6rpers_von_seinem_Energieinhalt_abh%C3%A4ngig%3F",
+      "revision": "5052266",
+      "permalink": "https://de.wikisource.org/w/index.php?oldid=5052266",
+      "sha256": "34dd39f780cf140c6743d3285f98c7f596807df368349d8222b540459b400428"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1906_19_2",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1906_19_2",
+      "files": [
+       "sim_annalen-der-physik_1906_19_2_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1906_19_2.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1906_19_2/sim_annalen-der-physik_1906_19_2.pdf",
+       "size": 36094156,
+       "md5": "3144bd8ab4697f0cf11eb5ee8ed72e30",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "SitzungsberichtePreussAkad19152",
+      "url": "https://archive.org/details/SitzungsberichtePreussAkad19152",
+      "files": [
+       "Sitzungsberichte_Preuss_Akad_19152_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "Sitzungsberichte_Preuss_Akad_19152.pdf",
+       "url": "https://archive.org/download/SitzungsberichtePreussAkad19152/Sitzungsberichte_Preuss_Akad_19152.pdf",
+       "size": 132271521,
+       "md5": "ddd1b8f14df4530eabfb3a94c2c8ebce",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Wikisource (de)",
+      "title": "Die Feldgleichungen der Gravitation",
+      "url": "https://de.wikisource.org/wiki/Die_Feldgleichungen_der_Gravitation",
+      "revision": "5052321",
+      "permalink": "https://de.wikisource.org/w/index.php?oldid=5052321",
+      "sha256": "defefab7fab7a3102f43493d74a96ab761238b91c6f396bfc2a373d05bcc2185"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1916_49_7",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1916_49_7",
+      "files": [
+       "sim_annalen-der-physik_1916_49_7_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1916_49_7.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1916_49_7/sim_annalen-der-physik_1916_49_7.pdf",
+       "size": 18214078,
+       "md5": "9ef16f32801a1dfddf49234e4c1d0323",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dli.ministry.22790",
+      "url": "https://archive.org/details/dli.ministry.22790",
+      "files": [
+       "26840.pdf",
+       "26840_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_kTdWAAAAMAAJ",
+      "url": "https://archive.org/details/bub_gb_kTdWAAAAMAAJ",
+      "files": [
+       "bub_gb_kTdWAAAAMAAJ.pdf",
+       "bub_gb_kTdWAAAAMAAJ_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 160048,
+   "verified_loci": [
+    "Lichtquanten 1905, the title as printed — 'die Erzeugung und Verwandlung des Lichtes'",
+    "Lichtquanten 1905, the first sentence — 'ein tiefgreifender formaler Unterschied'",
+    "Lichtquanten 1905, the hypothesis of light quanta — 'lokalisierten Energiequanten, welche sich bewegen, ohne sich'",
+    "Brownsche Bewegung 1905, the title — 'geforderte Bewegung von in ruhenden'",
+    "Brownsche Bewegung 1905, the first paragraph — '„Brownschen Molekularbewegung“ identisch sind'",
+    "Elektrodynamik 1905, the first sentence — 'Daß die Elektrodynamik Maxwells'",
+    "Elektrodynamik 1905, the light medium — 'eine Bewegung der Erde relativ zum ,,Lichtmedium“ zu kon-' (the OCR's quotation marks and line-end hyphen kept as read)",
+    "Elektrodynamik 1905, §4, velocities above that of light — 'Für Überlichtgeschwindigkeiten werden'",
+    "Elektrodynamik 1905, Wikisource, the first sentence — 'Daß die Elektrodynamik Maxwells'",
+    "Trägheit 1905, the title — 'Energieinhalt abhängig?'",
+    "Trägheit 1905, mass as the measure of energy — 'Die Masse eines Körpers ist ein Maß für dessen Energie-'",
+    "Trägheit 1905, the radium salts — '(z. B. bei den Radiumsalzen), eine Prüfung der Theorie gelingen wird.'",
+    "Trägheit 1905, Wikisource, the radium salts — 'Radiumsalzen'",
+    "Moleküldimensionen 1906, the title — 'Eine neue Bestimmung der Molekül-'",
+    "Moleküldimensionen 1906, the first sentence — 'Die ältesten Bestimmungen der wahren Größe der Moleküle'",
+    "Feldgleichungen 1915, the title — 'Die Feldgleichungen der Gravitation.'",
+    "Feldgleichungen 1915, the close — 'Damit ist endlich die allgemeine Relativitätstheorie als logisches'",
+    "Perihelbewegung 1915, the companion paper's title — 'Erklärung der Perihelbewegung des Merkur aus'",
+    "Feldgleichungen 1915, Wikisource, the close — 'als logisches Gebäude abgeschlossen'",
+    "Grundlage 1916, the title — 'der allgemeinen Relativitätstheorie;'",
+    "Grundlage 1916, the absolute differential calculus — 'absoluten Differentialkalkül'",
+    "Grundlage 1916, the thanks to Grossmann — 'meines Freundes, des Mathematikers'",
+    "Kosmologische Betrachtungen 1917, the title — 'Kosmologische Betrachtungen zur allgemeinen'",
+    "Kosmologische Betrachtungen 1917, the first sentence — 'Es ist wohlbekannt, daß die'",
+    "Kosmologische Betrachtungen 1917, the spherical space — 'einen sphärischen Raum vom'",
+    "Gemeinverständlich 1920, the edition — 'Fünfte Auflage'",
+    "Gemeinverständlich 1920, the preface — 'Das vorliegende Büchlein soll solchen eine möglichst exakte'",
+    "Gemeinverständlich 1920, §9 — 'Die Relativität der Gleichzeitigkeit.'",
+    "Sitzungsberichte 1915, the volume's register: the November papers and their pages — 'Demselben. 777. 778 — 786. Nachtrag. 789. 799 — 801.'"
+   ],
+   "why_seated": "The year 1905 is the hinge of the exact sciences in the twentieth century, and its five papers are short enough to be read whole in the issues that first carried them. The seat holds each in the scan of its first printing, with the pages named, so that a reader can pass from a formula cited anywhere to the page it came from. The general theory follows in the same way, from the Academy's half-year volumes to the Annalen of 1916, and the popular book closes the seat in Einstein's own plain words.",
+   "scope": "Held: the five papers of 1905 and 1906 named in the ruling (the light-quantum paper, Brownian motion, the electrodynamics of moving bodies, the inertia of energy, and the dissertation as printed in the Annalen), the field equations of 25 November 1915 with the three November papers that share its volume, the Grundlage of 1916, the cosmological paper of 1917, and the popular book in its fifth printing of 1920. The Annalen issues are the Internet Archive's microfilm series: each issue scan carries many papers, so the issue is seated whole and each work names its pages. German Wikisource has proofread transcriptions of three of the papers (Elektrodynamik, Trägheit, Feldgleichungen), seated as second text layers; it has none of the others. Not held: the first printing of 1917 of the Gemeinverständlich, which the Archive does not hold (the 1920 fifth printing is held twice, as bub_gb_kTdWAAAAMAAJ and berdiespezielle00unkngoog, the same Wisconsin copy scanned by Google; the first is seated). The 1905 dissertation as separately printed in Bern (Wyss, 1905) was not found on the Archive.",
+   "data": "https://www.alexanarch.org/data/corpora/einstein/"
+  },
+  {
+   "seat": "EA-CORPORA-30/02",
+   "corpus": "goedel",
+   "edition": "K. Gödel, „Über die Vollständigkeit des Logikkalküls“, abstract of the lecture of 6 September 1930 at the Tagung für exakte Erkenntnislehre, Königsberg, in the report of the 91st Versammlung Deutscher Naturforscher und Ärzte, Die Naturwissenschaften 18, Heft 47–49 (28 November 1930), p. 1068 — the Archive's microfilm issue sim_naturwissenschaften_1930-11-28_18_47-49, OCR layer. The same issue carries David Hilbert's Königsberg address „Naturerkennen und Logik“ (pp. 959–963), which closes „Wir müssen wissen, Wir werden wissen.“, and the abstracts of Carnap, Heyting and the other speakers of the Tagung",
+   "license": {
+    "payload": "Recorded in origin.items. The abstract was published in Die Naturwissenschaften 18 (1930) and is in the public domain in the United States (published before 1931, the term of 95 years run on 2026-01-01). Gödel died in 1978: in the European Union and in other countries of life plus seventy years the term runs to the end of 2048, so the seat holds the text under United States public domain, the archive's jurisdiction. The scan is the Internet Archive's microfilm series (collection sim_microfilm); the item carries no rights or licence field.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_naturwissenschaften_1930-11-28_18_47-49",
+      "url": "https://archive.org/details/sim_naturwissenschaften_1930-11-28_18_47-49",
+      "files": [
+       "sim_naturwissenschaften_1930-11-28_18_47-49_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_naturwissenschaften_1930-11-28_18_47-49.pdf",
+       "url": "https://archive.org/download/sim_naturwissenschaften_1930-11-28_18_47-49/sim_naturwissenschaften_1930-11-28_18_47-49.pdf",
+       "size": 42127862,
+       "md5": "5fe8b486e44c6df3b75f44a3c9975cf5",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 22971,
+   "verified_loci": [
+    "Gödel 1930, the heading of the abstract — 'K. GÖDEL, Wien: Über die Vollständigkeit des'",
+    "Gödel 1930, the question of completeness — 'ob die an die Spitze gestellten Axiome'",
+    "Gödel 1930, every true sentence derived formally — 'ausreichen, jeden richtigen Satz der Logik auf formalem'",
+    "Gödel 1930, the extension to the functional calculus — 'Funktionenkalküls (Formeln'",
+    "the running head of the Königsberg report — 'Tagung für exakte Erkenntnislehre'",
+    "Hilbert, Naturerkennen und Logik, the close (same issue) — 'Wir müssen wissen, Wir werden wissen.'"
+   ],
+   "why_seated": "The completeness theorem was first told to the public in a paragraph of a congress report, beside the address in which Hilbert answered the ignorabimus with „Wir müssen wissen, Wir werden wissen.“ The seat holds that page in the issue that carried both. The paper of 1931 that unsettled Hilbert's answer waits for its term to end.",
+   "scope": "Held: Gödel's own abstract of the completeness theorem, as printed in the Naturwissenschaften report of the Königsberg meeting, in the issue that first carried it. The OCR reads the title's last word as „Logikkalkiils“; the loci avoid it. Not held: the completeness paper itself, „Die Vollständigkeit der Axiome des logischen Funktionenkalküls“, Monatshefte für Mathematik und Physik 37 (1930), 349–360. It is in the public domain in the United States, but no copy could be reached: the Internet Archive holds the Monatshefte for vol. 36 (1929, bwb_C0-AYK-298) and none for vol. 37; HathiTrust holds Cornell's vol. 36–37 in full view (coo.31924000966790) and refused the seating's requests on 2026-10-30 with a Cloudflare challenge and a block page. The announcement of the incompleteness results, „Einige metamathematische Resultate über Entscheidungsdefinitheit und Widerspruchsfreiheit“, Anzeiger der Akademie der Wissenschaften in Wien 67 (1930), 214–215, is also public domain in the United States and was not found on the Archive. The incompleteness paper of 1931 is not seated: it opens in the United States on 2027-01-01. The Königsberg discussion (Erkenntnis 2, 1931) opens on the same date.",
+   "data": "https://www.alexanarch.org/data/corpora/goedel/"
+  },
+  {
+   "seat": "EA-CORPORA-30/03",
+   "corpus": "tesla",
+   "edition": "Nikola Tesla, My Inventions, chapters I–VI, as first printed in the Electrical Experimenter (New York), February–June and October 1919 — English Wikisource transcription; The Electrical Experimenter 6 no. 10 (February 1919), the whole issue, carrying My Inventions I. My Early Life — University of Toronto (Gerstein) copy, OCR layer, scan by reference; The Electrical Experimenter 6 no. 11 (March 1919), the whole issue, carrying My Inventions II. My First Efforts at Invention — University of Toronto (Gerstein) copy, OCR layer, scan by reference; The Electrical Experimenter 6 no. 12 (April 1919), the whole issue, carrying My Inventions III. My Later Endeavors — University of Toronto (Gerstein) copy, OCR layer, scan by reference; The Electrical Experimenter 7 no. 1 (May 1919), the whole issue, carrying My Inventions IV. The Discovery of the Tesla Coil and Transformer — University of Toronto (Gerstein) copy, OCR layer, scan by reference; The Electrical Experimenter 7 no. 2 (June 1919), the whole issue, carrying My Inventions V. The Magnifying Transmitter — University of Toronto (Gerstein) copy, OCR layer, scan by reference; The Electrical Experimenter 7 no. 6 (October 1919), the whole issue, carrying My Inventions VI. The Art of Telautomatics — scan by Curtis Philips (2006), OmniPage OCR layer, scan by reference; Transactions of the American Institute of Electrical Engineers 8 (1891), the whole volume, carrying the first printing of “Experiments with Alternate Currents of Very High Frequency and Their Application to Methods of Artificial Illumination”, read at Columbia College, 20 May 1891 — microfilm scan (UC Davis), OCR layer, scan by reference; Nikola Tesla, Experiments with Alternate Currents of High Potential and High Frequency: a lecture delivered before the Institution of Electrical Engineers, London, 3 February 1892 (New York: W. J. Johnston, 1892) — Harvard copy digitized by Google, scan and OCR layer; Nikola Tesla, Experiments with Alternate Currents of High Potential and High Frequency (the London lecture of 1892) — Project Gutenberg eBook #13476, plain text as served; Thomas Commerford Martin, The Inventions, Researches and Writings of Nikola Tesla (New York: The Electrical Engineer, 1894), carrying the 1888 AIEE paper on the polyphase system, the 1891, 1892 and 1893 lectures — digitized by Google, scan and OCR layer; Thomas Commerford Martin, The Inventions, Researches and Writings of Nikola Tesla (1894) — Project Gutenberg eBook #39272, plain text as served; Nikola Tesla, “The Problem of Increasing Human Energy, with Special References to the Harnessing of the Sun's Energy”, The Century Illustrated Monthly Magazine 60 (June 1900) — English Wikisource transcription; The Century Illustrated Monthly Magazine 60 no. 2 (June 1900), the whole issue, carrying “The Problem of Increasing Human Energy” — microfilm scan (Serials in Microfilm), OCR layer, scan by reference; Nikola Tesla, US 381,968, Electro-Magnetic Motor (1 May 1888): the rotating magnetic field and the induction motor — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 382,280, Electrical Transmission of Power (1 May 1888): the polyphase transmission system — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 382,282, Method of Converting and Distributing Electric Currents (1 May 1888): polyphase transformers — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 454,622, System of Electric Lighting (23 June 1891): the resonant transformer known as the Tesla coil — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 462,418, Method of and Apparatus for Electrical Conversion and Distribution (3 November 1891): the disruptive-discharge high-frequency circuit — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 613,809, Method of and Apparatus for Controlling Mechanism of Moving Vessels or Vehicles (8 November 1898): the radio-controlled boat, telautomatics — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 645,576, System of Transmission of Electrical Energy (20 March 1900): wireless transmission, the radio patent — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 649,621, Apparatus for Transmission of Electrical Energy (15 May 1900): the apparatus of 645,576, the tuned four-circuit system — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 685,958, Method of Utilizing Radiant Energy (5 November 1901) — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 787,412, Art of Transmitting Electrical Energy through the Natural Mediums (18 April 1905): the earth as conductor, the Colorado Springs results — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 1,061,206, Turbine (6 May 1913): the bladeless boundary-layer turbine — the printed specification and drawings, scan and OCR layer; Nikola Tesla, US 1,119,732, Apparatus for Transmitting Electrical Energy (1 December 1914): the magnifying transmitter of Wardenclyffe — the printed specification and drawings, scan and OCR layer",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Nikola Tesla died in 1943; every work here was published between 1888 and 1919 and is in the public domain in the United States (published before 1931), and the author's term of life plus seventy years has run everywhere it applies. The United States patents are federal government publications, with no copyright. The Electrical Experimenter issues of February–June 1919 are University of Toronto copies with no licence stated at the item; the October 1919 issue is marked Public Domain Mark 1.0 at the item. The Century issue is a microfilm copy with no licence stated at the item. The AIEE Transactions volume is a microfilm copy with no licence stated at the item. The two Google scans are marked NOT_IN_COPYRIGHT at the item. Wikisource pages are CC BY-SA 4.0 for the site's contributions; Project Gutenberg texts are under the Project Gutenberg licence, carried in each file.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Wikisource (en)",
+      "title": "My Inventions",
+      "url": "https://en.wikisource.org/wiki/My_Inventions",
+      "revision": "15728285",
+      "permalink": "https://en.wikisource.org/w/index.php?oldid=15728285",
+      "sha256": "6e92746cb2b714aae5235ed690dd60e7caa098eedc56c3336bd854448f7007bb"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "n10electricalexperi06gern",
+      "url": "https://archive.org/details/n10electricalexperi06gern",
+      "files": [
+       "n10electricalexperi06gern_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "n10electricalexperi06gern.pdf",
+       "url": "https://archive.org/download/n10electricalexperi06gern/n10electricalexperi06gern.pdf",
+       "size": 16039670,
+       "md5": "afa5fef6802b5053fe8461e5d901e2f3",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "n11electricalexperi06gern",
+      "url": "https://archive.org/details/n11electricalexperi06gern",
+      "files": [
+       "n11electricalexperi06gern_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "n11electricalexperi06gern.pdf",
+       "url": "https://archive.org/download/n11electricalexperi06gern/n11electricalexperi06gern.pdf",
+       "size": 16635100,
+       "md5": "cb4ee03c5c4a883bbd752b474220a622",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "n12electricalexperi06gern",
+      "url": "https://archive.org/details/n12electricalexperi06gern",
+      "files": [
+       "n12electricalexperi06gern_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "n12electricalexperi06gern.pdf",
+       "url": "https://archive.org/download/n12electricalexperi06gern/n12electricalexperi06gern.pdf",
+       "size": 17262468,
+       "md5": "de796275028c1d645428760790279c4d",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "n1electricalexperi07gern",
+      "url": "https://archive.org/details/n1electricalexperi07gern",
+      "files": [
+       "n1electricalexperi07gern_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "n1electricalexperi07gern.pdf",
+       "url": "https://archive.org/download/n1electricalexperi07gern/n1electricalexperi07gern.pdf",
+       "size": 16829944,
+       "md5": "d6b73b16d50b747888362b4d81009aa8",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "n2electricalexperi07gern",
+      "url": "https://archive.org/details/n2electricalexperi07gern",
+      "files": [
+       "n2electricalexperi07gern_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "n2electricalexperi07gern.pdf",
+       "url": "https://archive.org/download/n2electricalexperi07gern/n2electricalexperi07gern.pdf",
+       "size": 16993792,
+       "md5": "e1da67b42cd8eb3edc3c7b6acbddd573",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "electrical-experimenter-1919-10",
+      "url": "https://archive.org/details/electrical-experimenter-1919-10",
+      "files": [
+       "Electrical_Experimenter_1919-10_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "Electrical_Experimenter_1919-10.pdf",
+       "url": "https://archive.org/download/electrical-experimenter-1919-10/Electrical_Experimenter_1919-10.pdf",
+       "size": 296589354,
+       "md5": "a09e7a3aeacb901dc5fbd4a9fcc1540c",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "per_transactions-american-institute-of-electrical_1891_8_contents",
+      "url": "https://archive.org/details/per_transactions-american-institute-of-electrical_1891_8_contents",
+      "files": [
+       "per_transactions-american-institute-of-electrical_1891_8_contents_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "per_transactions-american-institute-of-electrical_1891_8_contents.pdf",
+       "url": "https://archive.org/download/per_transactions-american-institute-of-electrical_1891_8_contents/per_transactions-american-institute-of-electrical_1891_8_contents.pdf",
+       "size": 288839857,
+       "md5": "abfd632f48be0cfb8b26a56fc07e5cc2",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "experimentswith00teslgoog",
+      "url": "https://archive.org/details/experimentswith00teslgoog",
+      "files": [
+       "experimentswith00teslgoog.pdf",
+       "experimentswith00teslgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg, eBook #13476",
+      "url": "https://www.gutenberg.org/cache/epub/13476/pg13476.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "inventionsresea00teslgoog",
+      "url": "https://archive.org/details/inventionsresea00teslgoog",
+      "files": [
+       "inventionsresea00teslgoog.pdf",
+       "inventionsresea00teslgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg, eBook #39272",
+      "url": "https://www.gutenberg.org/cache/epub/39272/pg39272.txt"
+     },
+     {
+      "source": "Wikisource (en)",
+      "title": "The Problem of Increasing Human Energy",
+      "url": "https://en.wikisource.org/wiki/The_Problem_of_Increasing_Human_Energy",
+      "revision": "12633780",
+      "permalink": "https://en.wikisource.org/w/index.php?oldid=12633780",
+      "sha256": "ffca2d3588106ae9510529dc791fff56124806de19226e9189a3b91e12f6cdd7"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_century-illustrated-monthly-magazine_1900-06_60_2",
+      "url": "https://archive.org/details/sim_century-illustrated-monthly-magazine_1900-06_60_2",
+      "files": [
+       "sim_century-illustrated-monthly-magazine_1900-06_60_2_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_century-illustrated-monthly-magazine_1900-06_60_2.pdf",
+       "url": "https://archive.org/download/sim_century-illustrated-monthly-magazine_1900-06_60_2/sim_century-illustrated-monthly-magazine_1900-06_60_2.pdf",
+       "size": 40904384,
+       "md5": "571508dd62eba7872695fc1f3fe61a14",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00381968-electro-magnetic-motor-1888-05-01",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00381968-electro-magnetic-motor-1888-05-01",
+      "files": [
+       "Nikola_Tesla_Patent_US-00381968_Electro-Magnetic_Motor_1888-05-01.pdf",
+       "Nikola_Tesla_Patent_US-00381968_Electro-Magnetic_Motor_1888-05-01_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00382280-electrical-transmission-of-power-1888-05-01-1",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00382280-electrical-transmission-of-power-1888-05-01-1",
+      "files": [
+       "Nikola_Tesla_Patent_US-00382280_Electrical_Transmission_of_Power_1888-05-01_1.pdf",
+       "Nikola_Tesla_Patent_US-00382280_Electrical_Transmission_of_Power_1888-05-01_1_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00382282-method-of-converting-and-distributing-electric-currents-1888-05-01",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00382282-method-of-converting-and-distributing-electric-currents-1888-05-01",
+      "files": [
+       "Nikola_Tesla_Patent_US-00382282_Method_of_Converting_and_Distributing_Electric_Currents_1888-05-01.pdf",
+       "Nikola_Tesla_Patent_US-00382282_Method_of_Converting_and_Distributing_Electric_Currents_1888-05-01_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00454622-system-of-electric-lighting-1891-06-23",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00454622-system-of-electric-lighting-1891-06-23",
+      "files": [
+       "Nikola_Tesla_Patent_US-00454622_System_of_Electric_Lighting_1891-06-23.pdf",
+       "Nikola_Tesla_Patent_US-00454622_System_of_Electric_Lighting_1891-06-23_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00462418-method-of-and-apparatus-for-electrical-conversio",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00462418-method-of-and-apparatus-for-electrical-conversio",
+      "files": [
+       "Nikola_Tesla_Patent_US-00462418_Method_of_and_Apparatus_for_Electrical_Conversion_and_Distribution_1891-11-03.pdf",
+       "Nikola_Tesla_Patent_US-00462418_Method_of_and_Apparatus_for_Electrical_Conversion_and_Distribution_1891-11-03_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00613809-method-of-and-apparatus-for-controlling-mechanis",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00613809-method-of-and-apparatus-for-controlling-mechanis",
+      "files": [
+       "Nikola_Tesla_Patent_US-00613809_Method_of_and_Apparatus_for_Controlling_Mechanism_of_Moving_Vessels_or_Vehicles_1898-11-08.pdf",
+       "Nikola_Tesla_Patent_US-00613809_Method_of_and_Apparatus_for_Controlling_Mechanism_of_Moving_Vessels_or_Vehicles_1898-11-08_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00645576-system-of-transmission-of-electrical-energy-1900-03-20",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00645576-system-of-transmission-of-electrical-energy-1900-03-20",
+      "files": [
+       "Nikola_Tesla_Patent_US-00645576_System_of_Transmission_of_Electrical_Energy_1900-03-20.pdf",
+       "Nikola_Tesla_Patent_US-00645576_System_of_Transmission_of_Electrical_Energy_1900-03-20_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00649621-apparatus-for-transmission-of-electrical-energy-1900-05-15",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00649621-apparatus-for-transmission-of-electrical-energy-1900-05-15",
+      "files": [
+       "Nikola_Tesla_Patent_US-00649621_Apparatus_for_Transmission_of_Electrical_Energy_1900-05-15.pdf",
+       "Nikola_Tesla_Patent_US-00649621_Apparatus_for_Transmission_of_Electrical_Energy_1900-05-15_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00685958-method-of-utilizing-radiant-energy-1901-11-05",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00685958-method-of-utilizing-radiant-energy-1901-11-05",
+      "files": [
+       "Nikola_Tesla_Patent_US-00685958_Method_of_Utilizing_Radiant_Energy_1901-11-05.pdf",
+       "Nikola_Tesla_Patent_US-00685958_Method_of_Utilizing_Radiant_Energy_1901-11-05_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-00787412-art-of-transmitting-electrical-energy-through-th",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-00787412-art-of-transmitting-electrical-energy-through-th",
+      "files": [
+       "Nikola_Tesla_Patent_US-00787412_Art_of_Transmitting_Electrical_Energy_Through_the_Natural_Mediums_1905-04-18.pdf",
+       "Nikola_Tesla_Patent_US-00787412_Art_of_Transmitting_Electrical_Energy_Through_the_Natural_Mediums_1905-04-18_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-01061206-turbine-1913-05-06",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-01061206-turbine-1913-05-06",
+      "files": [
+       "Nikola_Tesla_Patent_US-01061206_Turbine_1913-05-06.pdf",
+       "Nikola_Tesla_Patent_US-01061206_Turbine_1913-05-06_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nikola-tesla-patent-us-01119732-apparatus-for-transmitting-electrical-energy-1914-12-01",
+      "url": "https://archive.org/details/nikola-tesla-patent-us-01119732-apparatus-for-transmitting-electrical-energy-1914-12-01",
+      "files": [
+       "Nikola_Tesla_Patent_US-01119732_Apparatus_for_Transmitting_Electrical_Energy_1914-12-01.pdf",
+       "Nikola_Tesla_Patent_US-01119732_Apparatus_for_Transmitting_Electrical_Energy_1914-12-01_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 269995,
+   "verified_loci": [
+    "My Inventions I, the opening (Wikisource) — 'The progressive development of man is vitally dependent on invention'",
+    "My Inventions I, the automaton (Wikisource) — 'I was merely an automaton endowed with power of movement'",
+    "My Inventions III, the Faust lines at the rotating field (Wikisource) — 'The glow retreats, done is the day of toil'",
+    "My Inventions VI, the opening (Wikisource) — 'No subject to which I have ever devoted myself has called for such concentration of mind'",
+    "My Inventions I, Electrical Experimenter, February 1919 — 'THE progressive development of man is vitally dependent on invention' (the issue prints the first word in capitals)",
+    "My Inventions II, Electrical Experimenter, March 1919 — 'dwell briefly on these extraordinary experiences'",
+    "My Inventions III, Electrical Experimenter, April 1919: the Faust lines — 'The glow retreats, done is the day of toil'",
+    "My Inventions III, Electrical Experimenter, April 1919: the rotating field — 'the idea came like a flash of lightning'",
+    "My Inventions IV, Electrical Experimenter, May 1919 — 'I gave myself up entirely to the intense'",
+    "My Inventions V, Electrical Experimenter, June 1919 — 'I review the events of my past life'",
+    "My Inventions VI, Electrical Experimenter, October 1919: the chapter title — 'ART OF TELAUTOMATICS'",
+    "My Inventions VI, Electrical Experimenter, October 1919: the opening — 'subject to which I have ever devoted myself'",
+    "The 1891 lecture, Transactions AIEE 8: the title — 'VERY HIGH FREQUENCY AND THEIR'",
+    "The 1891 lecture, Transactions AIEE 8: the opening — 'no subject more captivating' (the opening sentence reads 'There is no subject more captivating, more worthy of study, than nature'; the OCR carries the shorter phrase intact)",
+    "The 1892 London lecture, Johnston 1892: the opening — 'I cannot find words to express how deeply I feel the honor'",
+    "The 1892 London lecture, Project Gutenberg #13476: the opening — 'I cannot find words to express how deeply I feel the honor of addressing some of the foremost thinkers of the present time'",
+    "Martin 1894: the 1891 lecture's opening (OCR) — 'There is no subject more captivating, more worthy of study, than nature'",
+    "Martin 1894: the 1892 lecture (OCR) — 'how deeply I feel the honor'",
+    "Martin 1894: the 1891 lecture's opening (Gutenberg) — 'There is no subject more captivating, more worthy of study, than nature'",
+    "Martin 1894: the 1893 lecture's opening (Gutenberg) — 'Of all the forms of nature's immeasurable, all-pervading energy'",
+    "The Problem of Increasing Human Energy: the opening (Wikisource) — 'Of all the endless variety of phenomena which nature presents to our senses, there is none that fills our minds with greater wonder'",
+    "The Problem of Increasing Human Energy: human life as movement (Wikisource) — 'inconceivably complex movement which, in its entirety, we designate as human life'",
+    "The Problem of Increasing Human Energy, Century June 1900: the title — 'THE PROBLEM OF INCREASING HUMAN ENERGY'",
+    "The Problem of Increasing Human Energy, Century June 1900: the opening — 'variety of phenomena which nature presents to our senses'",
+    "US 381,968: the title or grant line — 'ELECTRO-MAGNETIC MOTOR'",
+    "US 381,968: the specification — 'shifting of the poles'",
+    "US 382,280: the title or grant line — 'ELECTRICAL TRANSMISSION OF POWER'",
+    "US 382,280: the specification — 'Patented May 1, 1888'",
+    "US 382,282: the title or grant line — 'METHOD OF CONVERTING AND DISTRIBUTING ELECTRIC CURRENTS'",
+    "US 454,622: the title or grant line — 'SYSTEM OF ELECTRIC LIGHTING'",
+    "US 454,622: the specification — 'Patented June 23, 1891'",
+    "US 462,418: the title or grant line — 'ELECTRICAL CONVERSION AND'",
+    "US 462,418: the specification — 'disruptive discharge'",
+    "US 613,809: the title or grant line — 'CONTROLLING MECHANISM OF MOVING VESSELS OR VEHICLES'",
+    "US 613,809: the specification — 'Patented Nov. 8, 1898'",
+    "US 645,576: the title or grant line — 'SYSTEM OF TRANSMISSION OF ELECTRICAL ENERGY'",
+    "US 645,576: the specification — 'natural media'",
+    "US 649,621: the title or grant line — 'APPARATUS FOR TRANSMISSION OF ELECTRICAL ENERGY'",
+    "US 685,958: the title or grant line — 'METHOD OF UTILIZING RADIANT ENERGY'",
+    "US 685,958: the specification — 'Patented Nov. 5, 1901'",
+    "US 787,412: the title or grant line — 'TRANSMITTING ELECTRICAL ENERGY THROUGH THE NATURAL'",
+    "US 787,412: the specification — 'stationary waves'",
+    "US 1,061,206: the title or grant line — 'Patented May 6, 1913'",
+    "US 1,061,206: the specification — 'viscosity'",
+    "US 1,119,732: the title or grant line — 'APPARATUS FOR TRANSMITTING ELECTRICAL ENERGY'",
+    "US 1,119,732: the specification — 'elevated terminal'"
+   ],
+   "why_seated": "Tesla is the inventor who wrote down the method of invention: the device built and run in the mind before it is built in the shop, and the account in My Inventions of a mind that took itself for an automaton responding to impressions. The seat holds that account beside the patents and lectures it narrates, so the claim and the specification can be read against each other. It answers the operator's call for the exact sciences at EA-CORPORA-30.",
+   "scope": "Tesla's own account of his work and the texts on which his reputation was made. My Inventions is held twice: in the six issues of the Electrical Experimenter where it first appeared (February, March, April, May, June and October 1919), and in the Wikisource transcription. The 1891 lecture at Columbia College is held in its first printing, Transactions of the AIEE 8 (1891), and in Martin's collection of 1894. The 1892 London lecture is held in the Johnston book of 1892 and in Gutenberg's text of it. Martin's Inventions, Researches and Writings (1894) also carries the 1888 AIEE paper on the polyphase system and the 1893 lecture On Light and Other High Frequency Phenomena; it is held as a scan with OCR and as Gutenberg's text. “The Problem of Increasing Human Energy” is held in the Century issue of June 1900 and in the Wikisource transcription. Twelve United States patents are held as the printed specifications. They were chosen to follow the line of the work: the polyphase system of 1888 (381,968 the induction motor, 382,280 the transmission system, 382,282 the transformers); the high-frequency work of 1891 (454,622 the resonant transformer, 462,418 the disruptive-discharge circuit); telautomatics (613,809, 1898); wireless transmission and radio (645,576 and 649,621, 1900; 685,958, 1901; 787,412, 1905); the turbine (1,061,206, 1913); and the Wardenclyffe transmitter (1,119,732, 1914). US 382,845, named in the brief beside the coil, is a commutator for dynamo-electric machines (15 May 1888); the coil is 454,622. The other ninety-odd patents on the Archive are left on the shelf there, and the Colorado Springs notes (1899–1900, first printed 1978) are not seated: their first publication is too late for the public domain in the United States.",
+   "data": "https://www.alexanarch.org/data/corpora/tesla/"
+  },
+  {
+   "seat": "EA-CORPORA-30/04",
+   "corpus": "copernicus",
+   "edition": "Nicolaus Copernicus, De revolutionibus orbium coelestium libri VI (Norimbergae: apud Ioh. Petreium, 1543), the first printing, Boston Public Library copy, scan and OCR layer; Nicolaus Copernicus, De revolutionibus orbium coelestium libri VI, the Latin Wikisource transcription of the 1543 printing (from the djvu 'Nicolai Copernici torinensis De revolutionibus orbium coelestium'): title page, Osiander's Ad lectorem, the preface to Paul III, the index, the errata and books I–VI; Nicolaus Copernicus, De hypothesibus motuum caelestium a se constitutis commentariolus (written before 1514), in Leopold Prowe, Nicolaus Coppernicus, Bd. II: Urkunden (Berlin: Weidmann, 1884), pp. 184–202, the whole volume, New York Public Library copy via Google, scan and OCR layer",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Nicolaus Copernicus died in 1543. The 1543 Petreius printing is in the public domain everywhere; the Internet Archive copy (Boston Public Library) carries no rights statement. The Commentariolus, unprinted in the author's lifetime, is seated from Leopold Prowe, Nicolaus Coppernicus, Bd. II (Berlin: Weidmann, 1884), public domain in the United States (published before 1931) and Prowe's own term long run (died 1887); the Google scan carries Google's usage request for non-commercial use, a request and no licence, recorded here. The Latin Wikisource transcription is CC BY-SA 4.0 for the site's contributions, redistributed under the same licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "nicolaicopernici00cope_1",
+      "url": "https://archive.org/details/nicolaicopernici00cope_1",
+      "files": [
+       "nicolaicopernici00cope_1.pdf",
+       "nicolaicopernici00cope_1_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium",
+      "revision": "182797",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182797",
+      "sha256": "cf7dded1936a2d3dfae34e191dc3a0dc9c67e3c294b7400e97fe31aa4614e291"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/01",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/01",
+      "revision": "182807",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182807",
+      "sha256": "d277ba11cdad18029c3b099bb64f332e6b323f8f1f04264b5084e8bcabefd6d3"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/02",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/02",
+      "revision": "182808",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182808",
+      "sha256": "28d2eca74ce6855ca292c566b3d77190ecb4b482a65cde59b1767e7fc7d6ba2f"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/03",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/03",
+      "revision": "182809",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182809",
+      "sha256": "cb11c00d64bc325bb1b21d8bb776cbc6ab2f7e384e79f33949250075f00ea1b0"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/04",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/04",
+      "revision": "182810",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182810",
+      "sha256": "ea56bccffabda1cdb6824461d4c18bd74dc864d9a342b9b6f1849cae2902b469"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/05",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/05",
+      "revision": "182802",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182802",
+      "sha256": "41fe7a20683558782acd84bae9a97f9c9733a4d5b2702b8f9607d3d64a1c2395"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/06",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/06",
+      "revision": "182803",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182803",
+      "sha256": "dd020a8ffcc90700ab65cfc33d900e00aea6a79cd16920075dc30bd848f5370a"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/07",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/07",
+      "revision": "182804",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182804",
+      "sha256": "98ee06c0670722299019fa4d88fefb0f7197a0d56fb6e845d05cee1e2c058fce"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/08",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/08",
+      "revision": "182805",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182805",
+      "sha256": "fb95c1de3258f782b7e73fa6b79d60f4570d90f41500b741ef492093f7c68371"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/09",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/09",
+      "revision": "182806",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182806",
+      "sha256": "04699483b3f27667cf8530bb09ff0b03b2b4401a567d2d21e0474e5ab8cd783b"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "De revolutionibus orbium coelestium/10",
+      "url": "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/10",
+      "revision": "182801",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=182801",
+      "sha256": "0b05611bc56c30e21aea0d9249faca9ed00b733917da62d05fb71422b4ae7b1f"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "nicolauscoppern04prowgoog",
+      "url": "https://archive.org/details/nicolauscoppern04prowgoog",
+      "files": [
+       "nicolauscoppern04prowgoog.pdf",
+       "nicolauscoppern04prowgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 117753,
+   "verified_loci": [
+    "De revolutionibus 1543, title page (OCR) — 'Habes in hoc opere iam recens nato'",
+    "De revolutionibus 1543, the dedication to Paul III (OCR) — 'PONTIFICEM MAXIMVM'",
+    "De revolutionibus 1543, the head of book I (OCR) — 'REVOLVTIONVM LIBER PRIMVS'",
+    "De revolutionibus 1543, I.10, the Sun at the centre (OCR) — 'In medio uero omnium' (the OCR reads the next word, residet, as 'relidet'; the phrase is taken up to it)",
+    "De revolutionibus, Osiander's Ad lectorem (Wikisource) — 'Neque enim necesse est, eas hypotheses esse veras'",
+    "De revolutionibus, preface to Paul III (Wikisource) — 'Mathemata mathematicis scribuntur'",
+    "De revolutionibus I.1 (Wikisource) — 'Quòd mundus ſit ſphæricus'",
+    "De revolutionibus I.10 (Wikisource) — 'In medio vero omnium residet Sol'",
+    "De revolutionibus, colophon of book VI (Wikisource) — 'NORIMBERGÆ APVD IOH• PETREIVM, ANNO M. D. XLIII.'",
+    "Commentariolus, the title (Prowe, OCR) — 'de hypothesibus motuum caelestium a se constitutis commentariolus'",
+    "Commentariolus, the opening (Prowe, OCR) — 'Multitudinem orbium caelestium maiores nostros eam maxime ob causam posuisse video'",
+    "Commentariolus, the first postulate (Prowe, OCR) — 'Prima petitio. Omnium orbium caelestium sive sphaerarum unum centrum non'"
+   ],
+   "why_seated": "De revolutionibus is the book in which the Earth was set moving around the Sun, printed under a preface by another hand that called its hypotheses no more than devices for calculation. The seat holds the printing and its transcription side by side, so that the voice of Osiander and the voice of Copernicus can each be found at its own address. The Commentariolus is the first statement of the system, decades before the book.",
+   "scope": "Held: De revolutionibus in its first printing (Nuremberg, 1543), the scan with its OCR layer, beside the Latin Wikisource transcription of the same printing (books I–VI with the front matter; the later books on Wikisource are themselves partly uncorrected OCR, kept as served). The Commentariolus, which circulated in manuscript and was first printed by Maximilian Curtze in the Mittheilungen des Coppernicus-Vereins 1 (Thorn, 1878), is held in Prowe's printing of 1884, the whole volume of Urkunden, pp. 184–202. Not held: the Curtze printing of 1878 (the Archive item mittheilungende00curtgoog, dated 1878, has an OCR layer of 35 KB in which the Commentariolus does not appear); the Narratio prima of Rheticus (1540), the Basel (1566) and Amsterdam (1617) editions, and the Letter against Werner. No modern edition is held.",
+   "data": "https://www.alexanarch.org/data/corpora/copernicus/"
+  },
+  {
+   "seat": "EA-CORPORA-30/05",
+   "corpus": "galileo",
+   "edition": "Galileo Galilei, Sidereus nuncius (Venetiis: apud Thomam Baglionum, 1610), the first printing, Smithsonian Libraries (Dibner) copy, scan and OCR layer; Galileo Galilei, Sidereus nuncius, in Favaro, Le opere di Galileo Galilei, vol. III.1 (1892), Latin Wikisource, with Favaro's variants from the manuscript draft; Galileo Galilei, Il Saggiatore, nel quale con bilancia esquisita e giusta si ponderano le cose contenute nella Libra astronomica e filosofica di Lotario Sarsi Sigensano (Roma: Giacomo Mascardi, 1623), the first printing, University of Toronto copy, scan and OCR layer; Galileo Galilei, Il Saggiatore, in Favaro, Le opere di Galileo Galilei, vol. VI (1896), Italian Wikisource: the dedication to Urban VIII, the preface and the fifty-three sections; Galileo Galilei, Dialogo … sopra i due massimi sistemi del mondo tolemaico, e copernicano (Fiorenza: per Gio. Batista Landini, 1632), the first printing, Smithsonian Libraries copy, scan and OCR layer; Galileo Galilei, Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano, in Favaro, Le opere di Galileo Galilei, vol. VII (1897), Italian Wikisource: the dedication, Al discreto lettore and the four days; Galileo Galilei, Discorsi e dimostrazioni matematiche, intorno à due nuove scienze attenenti alla mecanica & i movimenti locali (Leida: appresso gli Elsevirii, 1638), the first printing, University of Toronto (Stillman Drake) copy, scan and OCR layer; Galileo Galilei, Discorsi e dimostrazioni matematiche intorno a due nuove scienze, in Favaro, Le opere di Galileo Galilei, vol. VIII (1898), Italian Wikisource: the dedication to the Conte di Noailles, the printer's note and the four days (the Appendix on centres of gravity is not transcribed there); Galileo Galilei, Nov-antiqua sanctissimorum patrum, & probatorum theologorum doctrina de Sacrae Scripturae testimoniis, in conclusionibus mere naturalibus … temere non usurpandis (Augustae Treboc.: impensis Elzeviriorum, typis Davidis Hautti, 1636), the Lettera a Madama Cristina di Lorena (1615) in its first printing, Italian with Elia Diodati's Latin version, University of Toronto copy, scan and OCR layer; Galileo Galilei, Lettera a Madama Cristina di Lorena, Granduchessa di Toscana (1615), in Favaro, Le opere di Galileo Galilei, vol. V (1895), Italian Wikisource",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Galileo Galilei died in 1642; the printings of 1610, 1623, 1632, 1636 and 1638 are in the public domain everywhere. The Internet Archive copies carry these statements: Sidereus nuncius (Smithsonian Libraries) 'Not in copyright'; Il Saggiatore, the Discorsi and the Nov-antiqua (University of Toronto, Fisher Library), and the Dialogo (Smithsonian Libraries), no rights statement. The transcriptions are from Antonio Favaro's Edizione Nazionale, Le opere di Galileo Galilei (Firenze: Barbèra, 1890–1909), volumes III, V, VI, VII and VIII (1892–1898), public domain in the United States (published before 1931) and Favaro's own term run (died 1922); the Wikisource pages are CC BY-SA 4.0 for the site's contributions, redistributed under the same licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "Sidereusnuncius00Gali",
+      "url": "https://archive.org/details/Sidereusnuncius00Gali",
+      "files": [
+       "Sidereusnuncius00Gali.pdf",
+       "Sidereusnuncius00Gali_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "Sidereus Nuncius",
+      "url": "https://la.wikisource.org/wiki/Sidereus_Nuncius",
+      "revision": "190041",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=190041",
+      "sha256": "021112d66336e91360dc67d57a9edd512412c980fe47a63c38df239f9deded21"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "ilsaggiatorenelq00gali",
+      "url": "https://archive.org/details/ilsaggiatorenelq00gali",
+      "files": [
+       "ilsaggiatorenelq00gali.pdf",
+       "ilsaggiatorenelq00gali_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29",
+      "revision": "3806104",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3806104",
+      "sha256": "b1dc25a1d64f5273263bb5df4beb5eff2f84ad5022b78cf1149a698b6cb17678"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/Dedica",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/Dedica",
+      "revision": "3702875",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702875",
+      "sha256": "e37b83b6cb9b0f1158c333f39baddf547c66bc9faed53350dbd2bb6c1822574a"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/Prefazione",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/Prefazione",
+      "revision": "3702876",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702876",
+      "sha256": "676199817621173852929a7689caf62673f3b533976cc60a4c380bf74f4c2027"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/1",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/1",
+      "revision": "3702822",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702822",
+      "sha256": "6797fe390e1775449449e397a30f50422cebc7a895fe6c3ad93e2afb40b966df"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/2",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/2",
+      "revision": "3702833",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702833",
+      "sha256": "a9a4842bb63c143cf242baf3587d7f69f8e2dd40ebf347aae5890f33bbfc60af"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/3",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/3",
+      "revision": "3702844",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702844",
+      "sha256": "a4e32282021aa91c0b832a5b982628586f8d58b4952da488020cf37122093eaf"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/4",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/4",
+      "revision": "3702855",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702855",
+      "sha256": "df815f9f78d0dcf38ec75a8ae93a295f9426d1c4c9e54e73a74c50b1f845c568"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/5",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/5",
+      "revision": "3702866",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702866",
+      "sha256": "f905eb7f402e2defbd2131e426ca2f415981ced56e4c2742f12d52bc777f5d3d"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/6",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/6",
+      "revision": "3702871",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702871",
+      "sha256": "76e779530d95663d5ec2e899f28a149e2d2728afebc943e351b03aaec29003a1"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/7",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/7",
+      "revision": "3702872",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702872",
+      "sha256": "732e83b2b49d3039ce36dc1c50bc702ea05a87c89345403dee19abdff08775ce"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/8",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/8",
+      "revision": "3702873",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702873",
+      "sha256": "7c8fcace8cdab3271f21f07f1b6340230739abb3babaa1fb97cb265b4b240d38"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/9",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/9",
+      "revision": "3702874",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702874",
+      "sha256": "b57a5efbc6cba550bf097708300d22b3d9e2345be2ff52d7def303b9f4f51c4a"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/10",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/10",
+      "revision": "3702823",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702823",
+      "sha256": "a3fc5a527afff5ad55fc77a2fca27dcce725bed8f347bac647307d784822f064"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/11",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/11",
+      "revision": "3702824",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702824",
+      "sha256": "a11fc201c794dfe12c8a144f7dd600d691bb8957015f82f87224a67959e84fa4"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/12",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/12",
+      "revision": "3702825",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702825",
+      "sha256": "d29debd0839081e5fe031ab7439d7e2bdc2d89941e2e2baf1d3d0e138e790bce"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/13",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/13",
+      "revision": "3702826",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702826",
+      "sha256": "fcb9b364d2109fad370aff6600dcfe0ac1b8a62f0c514e4f2a866f890e4ac2fc"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/14",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/14",
+      "revision": "3702827",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702827",
+      "sha256": "cbd9b4c8635eec07ad79c9a89da0d667a3b311225eafb2f592727ff4df3a87b9"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/15",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/15",
+      "revision": "3702828",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702828",
+      "sha256": "5dd69704f7967ddc41c9e3856a32bd0e3a3e205b85be66e9a1b63ac581e405a2"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/16",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/16",
+      "revision": "3702829",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702829",
+      "sha256": "1cd0918f1784ce279210a3aea93f2e5f316d48c45094f20a8de07d653b41e907"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/17",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/17",
+      "revision": "3702830",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702830",
+      "sha256": "6cb3dda953c10a9eb5de6f6010163f63ed5f90c1cbca44b25569e5d6a4377690"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/18",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/18",
+      "revision": "3702831",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702831",
+      "sha256": "d9b6800aa6f5164a382bb78eaa09910ae57c33feed53da1c4de669b91f111eb7"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/19",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/19",
+      "revision": "3702832",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702832",
+      "sha256": "5bc112582092972a6c114020c1b5a8a3b3a701f98595653663c2d2a738034bb0"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/20",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/20",
+      "revision": "3702834",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702834",
+      "sha256": "179a17ee1464e2b04149e217c026d2f5640386dedb1e60e4bb5bf39cf8fced5a"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/21",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/21",
+      "revision": "3702835",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702835",
+      "sha256": "33101130264f50c90a8258bf1bd06e74554989e364b1a9f951356d100c8e5e00"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/22",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/22",
+      "revision": "3702836",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702836",
+      "sha256": "a3bdf3f3a72eaff873bafd8d70abebf80f9fbf3afe13d7804a95822e1f5317b8"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/23",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/23",
+      "revision": "3702837",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702837",
+      "sha256": "5cc76b4cf17b8529af12486b764fba69ab13a49f108bdef9ecff3140b106d22f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/24",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/24",
+      "revision": "3702838",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702838",
+      "sha256": "1c798f6ebc1f20394a3fd8b4c5ecdeb03e04aa97c7147a877db0c7ca4f279b78"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/25",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/25",
+      "revision": "3702839",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702839",
+      "sha256": "e55973a2d0a2c5294b258964aa172a6ee0f221ab1a1a02db3d756c034ebf4c46"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/26",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/26",
+      "revision": "3702840",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702840",
+      "sha256": "c1c546cc8157c739ca77dfe002564cddc8ea88272addd9d53f9c683fe81a6187"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/27",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/27",
+      "revision": "3702841",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702841",
+      "sha256": "d719c289e402966c54ccbcf2d38566e74ccb33bbafaf10ae88e7ba28c9ba4d5c"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/28",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/28",
+      "revision": "3702842",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702842",
+      "sha256": "07093ae7dfec0de4475d0f8fa06facb862f65b4996ce30cfe1eb7871b19f5c92"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/29",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/29",
+      "revision": "3702843",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702843",
+      "sha256": "e8ffb5a465f7fb2ae25c6f806feee9704c5d2413babbedc4e344d9f0180c985b"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/30",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/30",
+      "revision": "3702845",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702845",
+      "sha256": "535a4dee6d5b9aadf223517ac7febb60450758713e641cfa90fff3122497bfbb"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/31",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/31",
+      "revision": "3702846",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702846",
+      "sha256": "66beac02578548838b840c049bb07edeaf181384451efc7a8403bc4e519342d6"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/32",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/32",
+      "revision": "3702847",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702847",
+      "sha256": "ea5de28b0dccceef5ae047e9828b300c5dab44d11e6161756c3d2ea4fd0815fd"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/33",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/33",
+      "revision": "3702848",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702848",
+      "sha256": "0f5db237ae37af8b701acb4d2b8c773f7765df17de8dca6efd77c23b08d2eea2"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/34",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/34",
+      "revision": "3702849",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702849",
+      "sha256": "372b07a756013acf89753cbceaefc5e161a0cc3675c4de2664da2638b5dc2d59"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/35",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/35",
+      "revision": "3702850",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702850",
+      "sha256": "7a25d45c8b5f4849007b2bc483046894003772aad8ec719252a3aa77ee83f2bf"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/36",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/36",
+      "revision": "3702851",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702851",
+      "sha256": "1f0f316e2eecceb78355de4062590c57bab5115545b1b0be91c49698fd352762"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/37",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/37",
+      "revision": "3702852",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702852",
+      "sha256": "ee8a48bad64fc10d654946d245ff4190a29759c31247ddda6b353fd27d46653f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/38",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/38",
+      "revision": "3702853",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702853",
+      "sha256": "5f82429195d3529e0b361fe2053b65770464817f841e2316230114245e305419"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/39",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/39",
+      "revision": "3702854",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702854",
+      "sha256": "172987baa7996d0b2108faadcd964dc1b82b185521fc357c15cc3493aaf10137"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/40",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/40",
+      "revision": "3702856",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702856",
+      "sha256": "d59093e40a65048d64f216a876c8f9e06856f9b39c5f5a83ed76f55d0d6b0916"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/41",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/41",
+      "revision": "3702857",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702857",
+      "sha256": "06346be4413211f155d8be55030eb101b6ebe3c8285cda3aee253aaf3b0fa5e8"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/42",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/42",
+      "revision": "3702858",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702858",
+      "sha256": "0c410c2698d1c0e5c24aed5efe81b19abc953ef9e7040c43e9be92a3cf7e6c04"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/43",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/43",
+      "revision": "3702859",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702859",
+      "sha256": "7f637a549496767eb05bacb06f7daf769a25be972c6011dd65c77bb72a9f07f9"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/44",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/44",
+      "revision": "3702860",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702860",
+      "sha256": "91b7ce94865cdbba47c79ce882d0ae616da9f9cfc92fec406b3021211f02f793"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/45",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/45",
+      "revision": "3702861",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702861",
+      "sha256": "3546b9a242765f7be36352a1943c5cb2fab4edeb342b3d3fd64f2b8cca1de31f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/46",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/46",
+      "revision": "3702862",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702862",
+      "sha256": "aa27da1b1de7cffe7057d9448698b7034d3d1fc31f4b2a5a96f200dd98433be1"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/47",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/47",
+      "revision": "3702863",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702863",
+      "sha256": "83a29619e9927ecd6a2c6cfa33bbea3d6afe1ad9f4198443ca54f525574fb56f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/48",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/48",
+      "revision": "3702864",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702864",
+      "sha256": "e529804259544489aad3a2645ef50b4bb4e886c380f7da3073995b56eb0f577a"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/49",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/49",
+      "revision": "3702865",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702865",
+      "sha256": "5f16effd5ea88f96b99791bf8482cadfd8652c75116505a5f0175941933ebe5f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/50",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/50",
+      "revision": "3702867",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702867",
+      "sha256": "0a176afe1fafa03c9b78177547dba16062551a1e9e63694fce18b52ef908aec1"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/51",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/51",
+      "revision": "3702868",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702868",
+      "sha256": "8e2c7427d74f565ec080de3484d2f084564c96ea4ade87330934f1a05eef1e92"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/52",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/52",
+      "revision": "3702869",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702869",
+      "sha256": "4e0e39d3a06d21f4fa6274bfb4de77977a6b9c9baf2d1f81bcecc2fd5899ce9d"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Il Saggiatore (Favaro)/53",
+      "url": "https://it.wikisource.org/wiki/Il_Saggiatore_%28Favaro%29/53",
+      "revision": "3702870",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3702870",
+      "sha256": "3851a9bf9983f335861a5db5c7b5dc7705264a7ea1e6ea378beda4cc6fd333aa"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dialogodigalileo00gali",
+      "url": "https://archive.org/details/dialogodigalileo00gali",
+      "files": [
+       "dialogodigalileo00gali.pdf",
+       "dialogodigalileo00gali_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano",
+      "revision": "3799889",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799889",
+      "sha256": "e54ec282d2079e2dc2f24aad22e5ff8677838767ce0daade6f0b63a52f2d2878"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Dedica",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Dedica",
+      "revision": "3799891",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799891",
+      "sha256": "4f3163081cb1b25d47cc8f4506432e9697e4371f3c03d0f88064978f6d142a0b"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Al discreto lettore",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Al_discreto_lettore",
+      "revision": "3799890",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799890",
+      "sha256": "aeaf9948db7a5bfa591d04289d764deff05e93605dcdcde88fb7af8c5e90578d"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Giornata prima",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_prima",
+      "revision": "3799892",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799892",
+      "sha256": "731ef645eb15837ff4e4b6627c4d4f26cabe5add90539bfbf0c4bfb605dfd1eb"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Giornata seconda",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_seconda",
+      "revision": "3799894",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799894",
+      "sha256": "634792d608d4611b6b94e0987ac2362e679c45d91e65ab86d3d11d9f505dcb55"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Giornata terza",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_terza",
+      "revision": "3799895",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799895",
+      "sha256": "0046c68c1b5d49c257df50391ee15feeda875f8cde3ae665bb768895c022d2d0"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Dialogo sopra i due massimi sistemi del mondo tolemaico e copernicano/Giornata quarta",
+      "url": "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_quarta",
+      "revision": "3799893",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3799893",
+      "sha256": "d1be8d424fe7f44ee4c02bba1b69dafbb5a4d724d3b7d6eb8d69189ff2264b6f"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "discorsiedimostr00gali",
+      "url": "https://archive.org/details/discorsiedimostr00gali",
+      "files": [
+       "discorsiedimostr00gali.pdf",
+       "discorsiedimostr00gali_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29",
+      "revision": "3800016",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3800016",
+      "sha256": "6e50aff38fbd5143eb624d636a971d9c0b700cc99294e8560bc1d1fe0688210f"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Lettera dedicatoria",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Lettera_dedicatoria",
+      "revision": "3685678",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3685678",
+      "sha256": "20c6878d7a1b4d960a10236003af366d6e2f9007f14b935df641391ff7841e92"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Lo stampatore a i lettori",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Lo_stampatore_a_i_lettori",
+      "revision": "3685679",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3685679",
+      "sha256": "0e72c850f2db614871fbb7e3bdaa1739a2dfe8f31c0eb8b5f15b16801901a531"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Scienzia nuova prima, intorno alla resistenza de i corpi solidi all'essere spezzati. Giornata prima",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Scienzia_nuova_prima%2C_intorno_alla_resistenza_de_i_corpi_solidi_all%27essere_spezzati._Giornata_prima",
+      "revision": "3685682",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3685682",
+      "sha256": "7aae8c524425092cb708d4fe75349c0555c2030108aaf46007e71b1344f9672e"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Qual potesse esser la causa di tal coerenza. Giornata seconda",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Qual_potesse_esser_la_causa_di_tal_coerenza._Giornata_seconda",
+      "revision": "3685680",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3685680",
+      "sha256": "deecc4649b477b6d69d28f2aed86cf14225cda9518549311bd6e65d9b51d9985"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Scienzia nuova altra, de i movimenti locali, cioè dell'equabile, del naturalmente accelerato. Giornata terza",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Scienzia_nuova_altra%2C_de_i_movimenti_locali%2C_cio%C3%A8_dell%27equabile%2C_del_naturalmente_accelerato._Giornata_terza",
+      "revision": "3800020",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3800020",
+      "sha256": "ef313fbdd32dd3af5397cdcb77843ac6e316d8ae17f9113c55316599b336e4a7"
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Discorsi e dimostrazioni matematiche intorno a due nuove scienze (Favaro)/Del violento, o vero de i proietti. Giornata quarta",
+      "url": "https://it.wikisource.org/wiki/Discorsi_e_dimostrazioni_matematiche_intorno_a_due_nuove_scienze_%28Favaro%29/Del_violento%2C_o_vero_de_i_proietti._Giornata_quarta",
+      "revision": "3800017",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3800017",
+      "sha256": "6c8581d9590b8d0c8d3f7bbb4f30a4affd9cca5f83efda4868e6437d49c71cea"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "novantiquasancti00gali",
+      "url": "https://archive.org/details/novantiquasancti00gali",
+      "files": [
+       "novantiquasancti00gali.pdf",
+       "novantiquasancti00gali_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (it)",
+      "title": "Le opere di Galileo Galilei - Vol. V/Scritture in difesa del sistema Copernicano/Lettera a madama Cristina di Lorena",
+      "url": "https://it.wikisource.org/wiki/Le_opere_di_Galileo_Galilei_-_Vol._V/Scritture_in_difesa_del_sistema_Copernicano/Lettera_a_madama_Cristina_di_Lorena",
+      "revision": "3815114",
+      "permalink": "https://it.wikisource.org/w/index.php?oldid=3815114",
+      "sha256": "35ed1a5163eb5c67bca8eb32c7f8fa9ce3bdc3ec67cdd9a741f7399fc252cd69"
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 73409,
+   "verified_loci": [
+    "Sidereus nuncius 1610, title (OCR) — 'MAGNA, LONGEQVE ADMIRABILIA'",
+    "Sidereus nuncius 1610, title, the Medicean stars (OCR) — 'MEDICEA SIDERA NVNCVPANDOS DECREVIT'",
+    "Sidereus nuncius 1610, the observations of Jupiter (OCR) — 'OBSERVAT. SIDEREAE'",
+    "Sidereus nuncius, the Moon's surface (Favaro) — 'Lunae superficiem, non perpolitam, aequabilem, exactissimaeque sphaericitatis existere'",
+    "Sidereus nuncius, the four wandering stars (Favaro) — 'quatuor Erraticas Stellas, nemini eorum qui ante nos cognitas aut observatas'",
+    "Il Saggiatore 1623, the dedication (OCR) — 'PAPA VRBANO'",
+    "Il Saggiatore 1623, §6, the book of nature (OCR) — 'in lingua matematica' (the OCR reads the words before it with long s as f ('Egli è fcritto'))",
+    "Il Saggiatore, §6 (Favaro) — 'La filosofia è scritta in questo grandissimo libro che continuamente ci sta aperto innanzi a gli occhi'",
+    "Il Saggiatore, §6 (Favaro) — 'Egli è scritto in lingua matematica, e i caratteri son triangoli, cerchi, ed altre figure geometriche'",
+    "Dialogo 1632, Al discreto lettore (OCR) — 'AL DISCRETO LETTORE'",
+    "Dialogo 1632, the imprint (OCR) — 'Landini MDCXXXII'",
+    "Dialogo 1632, the first day (OCR) — 'GIORNATA PRIMA'",
+    "Dialogo, Al discreto lettore (Favaro) — 'Si promulgò a gli anni passati in Roma un salutifero editto'",
+    "Dialogo, the first day (Favaro) — 'INTERLOCUTORI SALVIATI, SAGREDO e SIMPLICIO'",
+    "Dialogo, the fourth day, the tides (Favaro) — 'flusso e reflusso del mare'",
+    "Discorsi 1638, the dedication (OCR) — 'CONTE DI NOAILLES'",
+    "Discorsi 1638, the third day, De motu locali (OCR) — 'de Motu naturaliter accelerato'",
+    "Discorsi, the first day (Favaro) — 'Largo campo di filosofare a gl’intelletti specolativi parmi che porga la frequente pratica del famoso arsenale di voi, Signori Veneziani'",
+    "Discorsi, the third day (Favaro) — 'DE MOTU NATURALITER ACCELERATO'",
+    "Lettera a Cristina 1636, title (OCR) — 'TESTIMONIIS, IN CONCLUSIO'",
+    "Lettera a Cristina 1636, imprint (OCR) — 'DAVIDIS HAVTTI'",
+    "Lettera a Cristina 1636, the two books (OCR) — 'dello Spirito Santo'",
+    "Lettera a Cristina, the opening (Favaro) — 'Io scopersi pochi anni'",
+    "Lettera a Cristina, how one goes to heaven (Favaro) — 'l’intenzione dello Spirito Santo essere d’insegnarci come si vadia al cielo, e non come vadia il cielo'"
+   ],
+   "why_seated": "Galileo's books carry the turn from the telescope's first sight of the Moon's mountains and Jupiter's moons, through the claim that the book of nature is written in mathematics, to the dialogue that was condemned and the two new sciences written after the condemnation. The letter to the Grand Duchess sets out how Scripture and nature are to be read beside each other. Each work is held at its first printing beside a clean text, so that every famous sentence has an address in both.",
+   "scope": "Held: the five works the ruling names, each in its first printing (scan and OCR layer) and in Favaro's Edizione Nazionale as transcribed on Wikisource. The Lettera a Cristina di Lorena, written in 1615, circulated in manuscript and was first printed at Strasbourg in 1636 as the Nov-antiqua, with a Latin version: that printing is the witness. Not held: the other works on the Archive (Istoria e dimostrazioni intorno alle macchie solari, 1613; Discorso intorno alle cose che stanno in su l'acqua, 1612; Le operazioni del compasso, 1606; the Latin Systema cosmicum, 1635); the McGill copy of the Dialogo (391 MB) and the Opere of 1744, both found; the Appendix of the Discorsi in Favaro's text. Liber Liber holds Galileo's texts only as zipped RTF, which the seat builder does not read; Wikisource was used.",
+   "data": "https://www.alexanarch.org/data/corpora/galileo/"
+  },
+  {
+   "seat": "EA-CORPORA-30/06",
+   "corpus": "kepler",
+   "edition": "Johannes Kepler, Prodromus dissertationum cosmographicarum, continens Mysterium cosmographicum (Tubingae: Georgius Gruppenbachius, 1596), the first printing, with Rheticus's Narratio prima, ETH-Bibliothek Zürich copy (e-rara-445) via the Internet Archive, OCR layer; Johannes Kepler, Astronomia nova ΑΙΤΙΟΛΟΓΗΤΟΣ seu physica coelestis, tradita commentariis de motibus stellae Martis ([Heidelberg: G. Voegelinus], 1609), the first printing, Smithsonian Libraries copy, scan and OCR layer; Johannes Kepler, Harmonices mundi libri V (Lincii Austriae: sumptibus Godofredi Tampachii, excudebat Ioannes Plancus, 1619), the first printing, Smithsonian Libraries copy, scan and OCR layer; Johannes Kepler, Harmonices mundi libri V, the Latin Wikisource transcription from the 1619 printing: the title, the dedication to James I and book I (books II–V are not transcribed there)",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Johannes Kepler died in 1630; the three printings (1596, 1609, 1619) are in the public domain everywhere. Internet Archive: the Astronomia nova copy (Smithsonian Libraries) is marked 'Not in copyright'; the Harmonices mundi copy (Smithsonian Libraries) carries no rights statement; the Mysterium copy (ETH-Bibliothek Zürich, from e-rara) carries the Public Domain Mark 1.0. The Latin Wikisource transcription of the Harmonices mundi is CC BY-SA 4.0 for the site's contributions, redistributed under the same licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "1596-kepler-prodromus-dissertationum-cosmographicarum-continens-mysterium-cosmographicum",
+      "url": "https://archive.org/details/1596-kepler-prodromus-dissertationum-cosmographicarum-continens-mysterium-cosmographicum",
+      "files": [
+       "1596-kepler-Prodromus dissertationum cosmographicarum continens mysterium cosmographicum_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "1596-kepler-Prodromus dissertationum cosmographicarum continens mysterium cosmographicum.pdf",
+       "url": "https://archive.org/download/1596-kepler-prodromus-dissertationum-cosmographicarum-continens-mysterium-cosmographicum/1596-kepler-Prodromus%20dissertationum%20cosmographicarum%20continens%20mysterium%20cosmographicum.pdf",
+       "size": 68306996,
+       "md5": "4881c2aa9d7d0786d07ecbd6027799ae",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "Astronomianovaa00Kepl",
+      "url": "https://archive.org/details/Astronomianovaa00Kepl",
+      "files": [
+       "Astronomianovaa00Kepl.pdf",
+       "Astronomianovaa00Kepl_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "ioanniskepplerih00kepl",
+      "url": "https://archive.org/details/ioanniskepplerih00kepl",
+      "files": [
+       "ioanniskepplerih00kepl.pdf",
+       "ioanniskepplerih00kepl_djvu.txt"
+      ]
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "Harmonices mundi libri V",
+      "url": "https://la.wikisource.org/wiki/Harmonices_mundi_libri_V",
+      "revision": "130035",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=130035",
+      "sha256": "89e1d330e44cb7f5908f4d0b2605180c55edea6ac1eabacfbb9460e2bb9fbb42"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "Harmonices mundi libri V/Dedicatio",
+      "url": "https://la.wikisource.org/wiki/Harmonices_mundi_libri_V/Dedicatio",
+      "revision": "130036",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=130036",
+      "sha256": "d019edb8d015485220e76c5c2b3b35b4d60237424aed45e7c8e2ad76fd3aa0ad"
+     },
+     {
+      "source": "Wikisource (la)",
+      "title": "Harmonices mundi libri V/Liber I",
+      "url": "https://la.wikisource.org/wiki/Harmonices_mundi_libri_V/Liber_I",
+      "revision": "130038",
+      "permalink": "https://la.wikisource.org/w/index.php?oldid=130038",
+      "sha256": "a9338073f48ce84dbc0fe481cfc6e7d1efba64e610c0fe163d8098557db46450"
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 72650,
+   "verified_loci": [
+    "Mysterium cosmographicum 1596, the epigram on the title leaf (OCR) — 'Hic te Pythagoras docet omnia quinque figuris'",
+    "Mysterium cosmographicum 1596, title (OCR) — 'DE ADMIRABILI PROPORTIONE ORBIVM'",
+    "Mysterium cosmographicum 1596, imprint (OCR) — 'Excudebat Georgius Gruppenbachius'",
+    "Mysterium cosmographicum 1596, the nesting of the solids, from the preface (OCR) — 'culus hoc comprehendens erit Mars' (the sentence before it, 'Terra est Circulus mensor omnium', is read by the OCR as 'Terra esi Circuitu menfot omnium'; the phrase after it is taken)",
+    "Astronomia nova 1609, title (OCR) — 'PHYSICA COELESTIS, tradita commentariis'",
+    "Astronomia nova 1609, running head (OCR) — 'DE MOTIBVS MARTIS'",
+    "Astronomia nova 1609, title, the observations of Tycho (OCR) — 'RVDOLPHI II ROMANORVM IMPERATORIS'",
+    "Harmonices mundi 1619, title page (OCR) — 'Ioannis Keppleri HARMONICES'",
+    "Harmonices mundi 1619, the head of book V (OCR) — 'IO. KEPLERI Harmonices Mundi LIBER V.'",
+    "Harmonices mundi 1619, book V cap. 3, the third law, the part the OCR read (OCR) — 'binorum quorumcunque Planetarum' (the OCR reads this phrase of the third law correctly and garbles the rest of the sentence)",
+    "Harmonices mundi, title (Wikisource) — 'Lincii Austriæ, Sumptibus Godofredi Tampachii'",
+    "Harmonices mundi I, Kepler on Ramus and the Mysterium (Wikisource) — 'donec libellum meum, quem Mysterium Cosmographicum inscripsi, perlegerit'"
+   ],
+   "why_seated": "Kepler's three books are one argument carried through a life: the solids that should fix the spheres, the war on Mars that broke the circle into the ellipse, and the harmonies in which the periods and the distances were finally joined. The seat holds each book as it was first printed, so that the third law can be looked for where Kepler set it, in book V of a work on the music of the world.",
+   "scope": "Held: the three Latin works named in the ruling, each in its first printing: the Mysterium cosmographicum of 1596 (held by reference, OCR copied), the Astronomia nova of 1609 and the Harmonices mundi of 1619 (scans copied), with the partial Latin Wikisource transcription of the Harmonices mundi beside the scan. Not held: the second edition of the Mysterium (Frankfurt, 1621, with Kepler's notes; Archive prodromusdissert00kepl, found and not seated); the Bayerische Staatsbibliothek copy of the 1596 printing (11218183bsb, 131 MB); the Copenhagen copies of the Astronomia nova and the Harmonices (den-kbd-pil-20008609-001, 656 MB; den-kbd-pil-210090002470-001, 391 MB), too large and duplicating the Smithsonian copies; the other works (Ad Vitellionem paralipomena, Dioptrice, Epitome, Tabulae Rudolphinae, Somnium), which are on the Archive and outside the ruling. No modern edition (Gesammelte Werke, 1937–) is held: it is in copyright.",
+   "data": "https://www.alexanarch.org/data/corpora/kepler/"
+  },
+  {
+   "seat": "EA-CORPORA-30/07",
+   "corpus": "newton",
+   "edition": "Isaac Newton, Philosophiae naturalis principia mathematica (Londini: jussu Societatis Regiae ac typis Josephi Streater, 1687), the first edition, Smithsonian Libraries copy, scan and OCR layer; Isaac Newton, Philosophiae naturalis principia mathematica (1687), the Project Gutenberg transcription of the first edition (Distributed Proofreaders, 2009); Isaac Newton, Opticks: or, a treatise of the reflexions, refractions, inflexions and colours of light. Also two treatises of the species and magnitude of curvilinear figures (London: Sam. Smith and Benj. Walford, 1704), the first edition, with the Enumeratio linearum tertii ordinis and the Tractatus de quadratura curvarum in Latin, University of California Libraries copy, scan and OCR layer; Isaac Newton, Opticks, the fourth edition, corrected (London: William Innys, 1730), the Project Gutenberg transcription (Distributed Proofreaders, 2010)",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Isaac Newton died in 1727; the printings of 1687 and 1704 are in the public domain everywhere. Internet Archive: the Principia copy (Smithsonian Libraries) carries no rights statement; the Opticks copy (University of California Libraries) is marked NOT_IN_COPYRIGHT. The Project Gutenberg texts (eBooks #28233 and #33504) are public-domain works distributed under the Project Gutenberg License, its header and footer kept as served.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "philosophiaenat00newt",
+      "url": "https://archive.org/details/philosophiaenat00newt",
+      "files": [
+       "philosophiaenat00newt.pdf",
+       "philosophiaenat00newt_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg, eBook #28233",
+      "url": "https://www.gutenberg.org/cache/epub/28233/pg28233.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "opticksortreatis00newt",
+      "url": "https://archive.org/details/opticksortreatis00newt",
+      "files": [
+       "opticksortreatis00newt.pdf",
+       "opticksortreatis00newt_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg, eBook #33504",
+      "url": "https://www.gutenberg.org/cache/epub/33504/pg33504.txt"
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 64068,
+   "verified_loci": [
+    "Principia 1687, the imprimatur (OCR) — 'Julii 5. 1686'",
+    "Principia 1687, Halley's ode (OCR) — 'Pangeret, omniparens Leges violare Creator'",
+    "Principia 1687, the first law (OCR) — 'LEGES MOTUS Lex. I. Corpus omne'",
+    "Principia 1687, the head of book III (OCR) — 'LIBER TERTIUS. N Libris praecedentibus principia' (the OCR drops the initial I of 'In', set as a drop capital)",
+    "Principia 1687, title (Gutenberg) — 'Jussu _Societatis Regiæ_ ac Typis _Josephi Streater_. Prostat apud plures Bibliopolas. _Anno_ MDCLXXXVII.'",
+    "Principia, definition I (Gutenberg) — 'Quantitas Materiæ est mensura ejusdem orta ex illius Densitate & Magnitudine conjunctim.'",
+    "Principia, the first law (Gutenberg) — 'Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum'",
+    "Principia, the third law (Gutenberg) — 'Actioni contrariam semper & æqualem esse reactionem'",
+    "Principia III, the Hypotheses of the first edition (Gutenberg) — 'HYPOTHESES. Hypoth. I. _Causas rerum naturalium non plures admitti debere' (the 1713 edition renames them Regulae philosophandi)",
+    "Opticks 1704, imprint (OCR) — 'MDCCIV'",
+    "Opticks 1704, the opening of book I (OCR) — 'in this Book is not to explain the' (the OCR reads the word before, Design, as 'D^fign')",
+    "Opticks 1704, Query 1 (OCR) — 'and by their action bend its rays, and is not this' (the second half of Query 1; the OCR misreads its first half ('ad' for act))",
+    "Opticks 1704, the Latin treatises (OCR) — 'ENUMERATIO'",
+    "Opticks, the opening of book I (Gutenberg, 1730) — 'My Design in this Book is not to explain the Properties of Light by Hypotheses, but to propose and prove them by Reason and Experiments'",
+    "Opticks, Query 1 (Gutenberg, 1730) — 'Do not Bodies act upon Light at a distance, and by their action bend its Rays'"
+   ],
+   "why_seated": "The Principia joined the falling of bodies and the motions of the planets under one law of force, and the Opticks opened light into its colours by experiment. The seat holds both in their first printings, with the clean texts beside them, so that the first edition's Hypotheses and its sixteen Queries can be read before the later editions renamed and enlarged them.",
+   "scope": "Held: the Principia in its first edition of 1687, the scan with its OCR layer beside the Gutenberg transcription of the same edition; the Opticks in its first edition of 1704 (in English, with the two Latin mathematical treatises), the scan with its OCR layer, beside the Gutenberg transcription of the fourth edition of 1730. Noted and not seated: the second edition of the Principia (Cambridge, 1713, ed. Roger Cotes, with the General Scholium and 'Hypotheses non fingo'; Internet Archive bub_gb_SyNF4RBbkIgC, principiamathem00newtgoog) and the third (London, 1726, ed. Henry Pemberton; philosophinatur00cotegoog, A297190); the Latin Optice (1706). The Opticks of 1704 is English, so the seat is mul (Latin and English).",
+   "data": "https://www.alexanarch.org/data/corpora/newton/"
+  },
+  {
+   "seat": "EA-CORPORA-30/08",
+   "corpus": "arabic-mathematics",
+   "edition": "al-Khwārizmī, al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa-l-muqābala — the Arabic part of Rosen's edition, its own title page dated London 1830 (طبع في مدينة لندن سنة ١٨٣٠ المسيحية), scanned separately in reverse page order (Internet Archive item labelled “1342”, Public Domain Mark), scan and Tesseract Arabic OCR layer; al-Khwārizmī, al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa-l-muqābala, Arabic text with English translation, ed. and tr. Frederic Rosen, The Algebra of Mohammed ben Musa (London: Oriental Translation Fund, 1831) — University of California copy, scan and OCR layer; ʿUmar al-Khayyām, Risāla fī l-barāhīn ʿalā masāʾil al-jabr wa-l-muqābala, Arabic text with French translation, ed. and tr. F. Woepcke, L'algèbre d'Omar Alkhayyâmî (Paris: B. Duprat, 1851) — Oxford copy digitized by Google, scan and OCR layer; ʿUmar al-Khayyām, Risāla fī l-barāhīn ʿalā masāʾil al-jabr wa-l-muqābala, ed. and tr. F. Woepcke (Paris: B. Duprat, 1851) — Harvard copy digitized by Google, scan and OCR layer; al-Kindī, Risāla fī l-luḥūn wa-l-nagham (on melodies and notes, the mathematical science of music) — OpenITI, Kraken OCR of Zakariyyā Yūsuf's edition; al-Kindī, Kitāb fī maʿrifat quwā l-adwiya al-murakkaba (De gradibus: the mathematics of compound drugs) — OpenITI, Arabic and Latin Corpus transcription; al-Kindī, Risāla fī ṣanʿat al-suyūf wa-saqyihā (on the making and tempering of swords) — OpenITI, Kraken OCR of Fayṣal Dabdūb's edition (Baghdad); Apollonius of Perga, Conics, book V, in the Arabic translation of Thābit ibn Qurra (Kitāb Ablūniyūs fī l-makhrūṭāt) — OpenITI, Glossarium Graeco-Arabicum transcription of the extract; Nicomachus of Gerasa, Introduction to Arithmetic, in the Arabic translation of Thābit ibn Qurra (Kitāb al-madkhal ilā ʿilm al-ʿadad) — OpenITI, Glossarium Graeco-Arabicum transcription; Ptolemy, al-Majisṭī (the Almagest), books I–XIII, in the Arabic version of Isḥāq ibn Ḥunayn revised by Thābit ibn Qurra — OpenITI, Pouyan Rezvani's transcription of MS Tunis, Dār al-kutub al-waṭaniyya 7116 (Ptolemaeus Arabus et Latinus); Thābit ibn Qurra, Kitāb fī sanat al-shams bi-l-arṣād (De anno solis: the solar year by observation) — OpenITI, Arabic and Latin Corpus transcription; Thābit ibn Qurra, Tashīl al-Majisṭī (what must be explained before the Almagest is read) — OpenITI, Arabic and Latin Corpus transcription; Ibn al-Haytham, Kitāb al-Manāẓir (the Optics), books I–III, on direct vision — OpenITI, Arabic and Latin Corpus transcription of Sabra's edition; Ibn al-Haytham, Kitāb al-Manāẓir (the Optics) — OpenITI, the al-Warrāq text by way of the Shamela library; Ibn al-Haytham, Maqāla fī hayʾat al-ʿālam (On the Configuration of the World) — OpenITI, Arabic and Latin Corpus transcription; al-Bīrūnī, al-Qānūn al-Masʿūdī (the Masudic canon of astronomy) — OpenITI, Kraken OCR; al-Bīrūnī, Maqālīd ʿilm al-hayʾa (the keys of astronomy: spherical trigonometry) — OpenITI, Kraken OCR; al-Bīrūnī, Istikhrāj al-awtār fī l-dāʾira (the determination of chords in the circle) — OpenITI, Kraken OCR; al-Bīrūnī, Taḥdīd nihāyāt al-amākin (the determination of the coordinates of places: geodesy) — OpenITI, Kraken OCR; al-Bīrūnī, Ifrād al-maqāl fī amr al-ẓilāl (the exhaustive treatise on shadows) — OpenITI, Kraken OCR; al-Bīrūnī, Tamhīd al-mustaqarr li-taḥqīq maʿnā l-mamarr (on transits) — OpenITI, Kraken OCR; al-Bīrūnī, Istīʿāb al-wujūh al-mumkina fī ṣanʿat al-asṭurlāb (the astrolabe in all its possible constructions) — OpenITI, Kraken OCR; al-Bīrūnī, Tasṭīḥ al-ṣuwar wa-tabṭīḥ al-kuwar (on the projection of the sphere onto the plane) — OpenITI, Kraken OCR; al-Bīrūnī, Taṭrīq al-istifāda min al-asṭurlābāt (on the uses of astrolabes) — OpenITI, Kraken OCR; al-Bīrūnī, Mā fī quwwat al-asṭurlāb (on what lies in the power of the astrolabe) — OpenITI, Kraken OCR; al-Bīrūnī, Rāshīkāt al-Hind (the Indian rules of proportion) — OpenITI, Kraken OCR; al-Bīrūnī, on the solar equation (a fragment, extant inside another risāla) — OpenITI, Kraken OCR; al-Bīrūnī, on the asymptote, the endless division of magnitudes (a fragment, extant inside another risāla) — OpenITI, Kraken OCR; al-Bīrūnī, al-Āthār al-bāqiya ʿan al-qurūn al-khāliya (the chronology of ancient nations: calendars and eras) — OpenITI, Kraken OCR",
+   "license": {
+    "payload": "Per item, recorded in origin.items. The works are medieval (al-Khwārizmī d. c. 850; al-Kindī d. c. 873; Thābit ibn Qurra d. 901; Ibn al-Haytham d. c. 1040; al-Bīrūnī d. c. 1050; ʿUmar al-Khayyām d. 1131) and in the public domain. Rosen's edition (London, 1831; the Arabic title page dated 1830) and Woepcke's (Paris, 1851) are public domain in the United States (published before 1931); the Archive marks the Google and California copies NOT_IN_COPYRIGHT and the Arabic-part item Public Domain Mark 1.0. The OpenITI files are CC BY-NC-SA 4.0 at the corpus: handled under the NC payload/record split ruled at EA-CORPORA-02, as GRETIL was at 29/09 — the NonCommercial payload licence is carried forward unmodified and does not attach to this seat record. Most OpenITI files transcribe or OCR printed editions of 1889 to the 2000s, named per item in origin.items (edition_at_file); OpenITI's Clean operation of 2023 removed editorial paratext from the OCR files, though some introductions remain in the text. Edition-level status for the editions printed after 1930 is recorded as UNVERIFIED AT SEAT TIME: the medieval text is the author's, and the seat claims no more for the edition than the OpenITI licence gives. The Majisṭī file is a transcription of a manuscript (Tunis 7116), with no printed edition behind it.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "1342TheAlgebraOfMohammedBenMusaAlKwarizmiInArabic",
+      "url": "https://archive.org/details/1342TheAlgebraOfMohammedBenMusaAlKwarizmiInArabic",
+      "files": [
+       "1342-The algebra_of_Mohammed_ben_Musa_al_Kwarizmi_in_Arabic.pdf",
+       "1342-The algebra_of_Mohammed_ben_Musa_al_Kwarizmi_in_Arabic_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "algebraofmohamme00khuwrich",
+      "url": "https://archive.org/details/algebraofmohamme00khuwrich",
+      "files": [
+       "algebraofmohamme00khuwrich.pdf",
+       "algebraofmohamme00khuwrich_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "lalgbredomaralk00khaygoog",
+      "url": "https://archive.org/details/lalgbredomaralk00khaygoog",
+      "files": [
+       "lalgbredomaralk00khaygoog.pdf",
+       "lalgbredomaralk00khaygoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "lalgbredomaralk00wpgoog",
+      "url": "https://archive.org/details/lalgbredomaralk00wpgoog",
+      "files": [
+       "lalgbredomaralk00wpgoog.pdf",
+       "lalgbredomaralk00wpgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256IbnIshaqKindi/0256IbnIshaqKindi.FiLuhun/0256IbnIshaqKindi.FiLuhun.Kraken22060217014101-ara1",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "file": "data/0256IbnIshaqKindi/0256IbnIshaqKindi.FiLuhun/0256IbnIshaqKindi.FiLuhun.Kraken22060217014101-ara1",
+      "sha256": "b632fe7f15c47004304a48c6aa61a4e09db321e4d91d345b5c3d3e2109cb82a3",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "the OCR of the title page reads it as a second supplement to Muʾallafāt al-Kindī al-mūsīqiyya, with the editor's name Zakariyyā Yūsuf (OCR زكريا يوسف in the text, garbled on the title page); place and year not legible in the OCR",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256IbnIshaqKindi/0256IbnIshaqKindi.QuwaAdwiyaMurakkaba/0256IbnIshaqKindi.QuwaAdwiyaMurakkaba.ALCorpus00030-ara1",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "file": "data/0256IbnIshaqKindi/0256IbnIshaqKindi.QuwaAdwiyaMurakkaba/0256IbnIshaqKindi.QuwaAdwiyaMurakkaba.ALCorpus00030-ara1",
+      "sha256": "7150511362f5290504bfddef0079a1e432c2cf612391334a0d4e9ba4a6589c2c",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Léon Gauthier, Antécédents gréco-arabes de la psychophysique (Beirut, 1939), pp. 1–51 (stated at the file)",
+      "openiti_status": "transcribed by Azzam Hasan for the Arabic and Latin Corpus"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256IbnIshaqKindi/0256IbnIshaqKindi.FiCamalSuyuf/0256IbnIshaqKindi.FiCamalSuyuf.Kraken220603212433-ara1",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "file": "data/0256IbnIshaqKindi/0256IbnIshaqKindi.FiCamalSuyuf/0256IbnIshaqKindi.FiCamalSuyuf.Kraken220603212433-ara1",
+      "sha256": "bcd455c845f1df1d3ba672cb20c97a2535f94e594097be444dd0a761638e4855",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "the OCR of the title page names the editor as Dr Fayṣal Dabdūb, printed at Maṭbaʿat al-ʿĀnī, Baghdad, for the Ministry of Guidance on the occasion of the Baghdad and al-Kindī celebrations; it carries an essay by Bashīr al-Ṣaqqāl; the year is not legible in the OCR",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0288ThabitIbnQurra/0288ThabitIbnQurra.AbluniyusFiMakhrutat/0288ThabitIbnQurra.AbluniyusFiMakhrutat.GRAR000011-ara1",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "file": "data/0288ThabitIbnQurra/0288ThabitIbnQurra.AbluniyusFiMakhrutat/0288ThabitIbnQurra.AbluniyusFiMakhrutat.GRAR000011-ara1",
+      "sha256": "d9389172fdb09c334d01617c1296bd4e76bebc50eda09b202a2e04a3e1847a63",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "L. M. L. Nix, Das fünfte Buch der Conica des Apollonius von Perga in der arabischen Uebersetzung des Thabit ibn Corrah (Leipzig: W. Drugulin, 1889), pp. 4–16 of the Arabic (stated at the file)",
+      "openiti_status": "Glossarium Graeco-Arabicum transcription"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0288ThabitIbnQurra/0288ThabitIbnQurra.MadkhalLiNiqumakhus/0288ThabitIbnQurra.MadkhalLiNiqumakhus.GRAR000060-ara1",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "file": "data/0288ThabitIbnQurra/0288ThabitIbnQurra.MadkhalLiNiqumakhus/0288ThabitIbnQurra.MadkhalLiNiqumakhus.GRAR000060-ara1",
+      "sha256": "f61d323de937ec725857d28617d30fb73278de658ede5b1af9c00e6430c3cc82",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "W. Kutsch, Ṯābit b. Qurra's arabische Übersetzung der Ἀριθμητικὴ Εἰσαγωγή des Nikomachos von Gerasa (Beirut: Imprimerie Catholique, 1959), pp. 11–114 (stated at the file)",
+      "openiti_status": "Glossarium Graeco-Arabicum transcription"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0288ThabitIbnQurra/0288ThabitIbnQurra.Majisti/0288ThabitIbnQurra.Majisti.PAL066900971-ara1.completed",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "file": "data/0288ThabitIbnQurra/0288ThabitIbnQurra.Majisti/0288ThabitIbnQurra.Majisti.PAL066900971-ara1.completed",
+      "sha256": "d2919e4b739b43199ea99b4b0b1ca9adf8cad3106ef6f14d918f692aace424d5",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a manuscript transcription: MS Tunis, Dār al-kutub al-waṭaniyya 7116 (stated at the file); no printed edition",
+      "openiti_status": "transcription by Pouyan Rezvani, Ptolemaeus Arabus et Latinus (OpenITI status: completed)"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0288ThabitIbnQurra/0288ThabitIbnQurra.SanatShamsBiArsad/0288ThabitIbnQurra.SanatShamsBiArsad.ALCorpus00005-ara1",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "file": "data/0288ThabitIbnQurra/0288ThabitIbnQurra.SanatShamsBiArsad/0288ThabitIbnQurra.SanatShamsBiArsad.ALCorpus00005-ara1",
+      "sha256": "912596819ef9121a1bd1ebd5e3c027bc976b4bcef068d48fc8c5e64d0561c6fd",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Thābit ibn Qurra, Œuvres d'astronomie, ed. and tr. Régis Morelon (Paris, 1987), pp. 27–67 (stated at the file)",
+      "openiti_status": "transcribed by Azzam Hasan for the Arabic and Latin Corpus"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0288ThabitIbnQurra/0288ThabitIbnQurra.TashilMajisti/0288ThabitIbnQurra.TashilMajisti.ALCorpus00035-ara1",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "file": "data/0288ThabitIbnQurra/0288ThabitIbnQurra.TashilMajisti/0288ThabitIbnQurra.TashilMajisti.ALCorpus00035-ara1",
+      "sha256": "8f8049bcf905a9e1341eef1ff028d070da73358deab49a792b6f3e5478c10867",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Thābit ibn Qurra, Œuvres d'astronomie, ed. Régis Morelon (Paris, 1987), pp. 2–17 (stated at the file)",
+      "openiti_status": "transcribed by Kaddour Alkassem for the Arabic and Latin Corpus"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0430IbnHaytham/0430IbnHaytham.Manazir/0430IbnHaytham.Manazir.ALCorpus00006-ara2",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0430IbnHaytham/0430IbnHaytham.Manazir/0430IbnHaytham.Manazir.ALCorpus00006-ara2",
+      "sha256": "b236c7970d2d6025e99aace04ba53c15f7cdfd999c5986ffddf3772666bfad34",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Kitāb al-Manāẓir, books I–III, ed. A. I. Sabra (Kuwait, 1983) (stated at the file)",
+      "openiti_status": "transcribed by Azzam Hasan for the Arabic and Latin Corpus"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0430IbnHaytham/0430IbnHaytham.Manazir/0430IbnHaytham.Manazir.ShamAY0035933-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0430IbnHaytham/0430IbnHaytham.Manazir/0430IbnHaytham.Manazir.ShamAY0035933-ara1",
+      "sha256": "c7bcc261f7125dac5eb1b661578d53fc25f9d3d50d7077a77502323587fecf0f",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "not named at the file: the source is the al-Warrāq site (alwarraq.com) by way of al-Maktaba al-Shāmila, page numbers machine-assigned and not those of a print (stated at the file)",
+      "openiti_status": "Shamela, converted 2020-10-01"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0430IbnHaytham/0430IbnHaytham.HayatCalam/0430IbnHaytham.HayatCalam.ALCorpus00020-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0430IbnHaytham/0430IbnHaytham.HayatCalam/0430IbnHaytham.HayatCalam.ALCorpus00020-ara1",
+      "sha256": "bcc5e60fbeffea4cf17e18a77769524ffeccfbfff839e795940d074eeb2bf86f",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Y. T. Langermann, Ibn al-Haytham's On the Configuration of the World (New York and London, 1990) (stated at the file)",
+      "openiti_status": "transcribed by Azzam Hasan for the Arabic and Latin Corpus"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.QanunMascudi/0440AbuRayhanBiruni.QanunMascudi.Kraken22101805425502-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.QanunMascudi/0440AbuRayhanBiruni.QanunMascudi.Kraken22101805425502-ara1",
+      "sha256": "fbb65fd55793867df5ad0a5b8ecc3788ec7b8e8c4f4443092b3f57bac429eadc",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "not named at the file",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Maqalid/0440AbuRayhanBiruni.Maqalid.Kraken22101805430401-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Maqalid/0440AbuRayhanBiruni.Maqalid.Kraken22101805430401-ara1",
+      "sha256": "8fcb497c5775037f4bf825ac426c3ae01affcadf61c2358e6624a7f38a61e5bf",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a printed edition scanned at archive.org/download/ilmetauqeet_gmail_640/640.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.IstikhrajAwtar/0440AbuRayhanBiruni.IstikhrajAwtar.Kraken22101805430302-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.IstikhrajAwtar/0440AbuRayhanBiruni.IstikhrajAwtar.Kraken22101805430302-ara1",
+      "sha256": "458a38833ed8c740245e7df21d2a98701293955179e9281ab3ecf86b4dfb78c8",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "the first risāla of the Hyderabad edition, as cleaned by J. P. Hogendijk (jphogendijk.nl/biruni/Chords-purified.pdf, the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TahdidNihayatAmakin/0440AbuRayhanBiruni.TahdidNihayatAmakin.Kraken22101805430303-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TahdidNihayatAmakin/0440AbuRayhanBiruni.TahdidNihayatAmakin.Kraken22101805430303-ara1",
+      "sha256": "a195d76e9063965ff16457d93f31bde6c578e3015acdd732608a2f680bfb01a8",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a printed edition with a modern Arabic introduction that cites an article of 1942; the scan is jphogendijk.nl/biruni/TahdidNihayat.pdf (the file's link); editor not named at the file",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Zilal/0440AbuRayhanBiruni.Zilal.Kraken22101805430305-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Zilal/0440AbuRayhanBiruni.Zilal.Kraken22101805430305-ara1",
+      "sha256": "e4d94b7f86deb20bd16648236294533f20e53fe40fc65f0b484dc91cc828382a",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "risāla no. 2 of the Hyderabad edition, with a gap of six manuscript leaves noted by OpenITI (stated at the file)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TamhidMustaqarr/0440AbuRayhanBiruni.TamhidMustaqarr.Kraken22101805430104-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TamhidMustaqarr/0440AbuRayhanBiruni.TamhidMustaqarr.Kraken22101805430104-ara1",
+      "sha256": "5d9bebadd3419082a510401765d468bcccccf55f70a5e721d22bd0ee8f6613f3",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "risāla no. 3 of the Hyderabad edition (stated at the file)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.IsticabAsturlab/0440AbuRayhanBiruni.IsticabAsturlab.Kraken22101805425501-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.IsticabAsturlab/0440AbuRayhanBiruni.IsticabAsturlab.Kraken22101805425501-ara1",
+      "sha256": "0a9b6c869ae4120ab4460d2f797da2882c576465002c5b17ca4630a545e06db9",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "Istīʿāb al-wujūh al-mumkina fī ṣanʿat al-asṭurlāb, ed. Muḥammad Akbar Jawādī al-Ḥusaynī (Mashhad), as its catalogue record in the OCR reads; the scan is jphogendijk.nl/biruni/Istiab-Meshed.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TashilTastihAsturlabi/0440AbuRayhanBiruni.TashilTastihAsturlabi.Kraken22101805430402-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TashilTastihAsturlabi/0440AbuRayhanBiruni.TashilTastihAsturlabi.Kraken22101805430402-ara1",
+      "sha256": "741dad4790414b8b8ec8694784b6d35483c9c4eb1c558bd119b1251cfb381e6d",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "an edition with facing translation, jphogendijk.nl/biruni/Dallal.pdf (the file's link); only the Arabic was OCRed",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TatriqAsturlabat/0440AbuRayhanBiruni.TatriqAsturlabat.Kraken22101805430304-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TatriqAsturlabat/0440AbuRayhanBiruni.TatriqAsturlabat.Kraken22101805430304-ara1",
+      "sha256": "d280fdd52a3f22ee1c23f298ec3a8fde7737ccf8d0ba45aff536f6f662880374",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "an edition of the unique manuscript in Pouyan Rezvani's doctoral thesis, Arabic part pp. 1–85 (stated at the file)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.MaFiQuwwatAsturlab/0440AbuRayhanBiruni.MaFiQuwwatAsturlab.Kraken22101805430101-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.MaFiQuwwatAsturlab/0440AbuRayhanBiruni.MaFiQuwwatAsturlab.Kraken22101805430101-ara1",
+      "sha256": "d709ceaa927ad3355ad4c2185a7f7038f89b4009f770e14b27c144a128178c5c",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "an edition of two manuscripts in Pouyan Rezvani's doctoral thesis, Arabic part pp. 94–144 (stated at the file)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.RashikatHind/0440AbuRayhanBiruni.RashikatHind.Kraken22101805425503-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.RashikatHind/0440AbuRayhanBiruni.RashikatHind.Kraken22101805425503-ara1",
+      "sha256": "f0513b3f9f239ee9c91b54ed0b0ebfb159247acf01f9d1a62a7ef1dca047f899",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a printed edition scanned at jphogendijk.nl/biruni/Rashikat.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Tacdil/0440AbuRayhanBiruni.Tacdil.Kraken22101805430002-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.Tacdil/0440AbuRayhanBiruni.Tacdil.Kraken22101805430002-ara1",
+      "sha256": "391c632a6c3d3dcf1746181b645640f032ffdb2ccae642bdcc78add4f177b9b7",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a fragment edited inside another risāla, J. P. Hogendijk's extract jphogendijk.nl/biruni/Solareq.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TajazzuMaqadir/0440AbuRayhanBiruni.TajazzuMaqadir.Kraken22101805430103-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.TajazzuMaqadir/0440AbuRayhanBiruni.TajazzuMaqadir.Kraken22101805430103-ara1",
+      "sha256": "1f5ffc46f536fd67384b08904327d92928e5f624f7de008ad410092654a9dadb",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a fragment edited inside another risāla, J. P. Hogendijk's extract jphogendijk.nl/biruni/Asymptotes.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     },
+     {
+      "source": "OpenITI",
+      "url": "https://raw.githubusercontent.com/OpenITI/0450AH/8b80029191e1b7a8809d812ec6186df862e18217/data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.AtharBaqiya/0440AbuRayhanBiruni.AtharBaqiya.Kraken22101805430001-ara1",
+      "repository": "https://github.com/OpenITI/0450AH",
+      "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+      "file": "data/0440AbuRayhanBiruni/0440AbuRayhanBiruni.AtharBaqiya/0440AbuRayhanBiruni.AtharBaqiya.Kraken22101805430001-ara1",
+      "sha256": "aa45501843edbf9ec0d6f764af977196f9e0668d6e55fc71aeef19b8ac03d534",
+      "licence_at_file": "CC BY-NC-SA 4.0 (OpenITI corpus licence, stated at the repository)",
+      "edition_at_file": "a printed edition scanned at archive.org/download/al-asar_al-waqiah/AAB_01.pdf (the file's link)",
+      "openiti_status": "Kraken OCR, uncorrected (OpenITI: UNCORRECTED_OCR); paratext removed by OpenITI's Clean operation, 2023"
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "ara",
+   "lines": 78205,
+   "verified_loci": [
+    "al-Khwārizmī, the three kinds of number (Rosen's Arabic, OCR) — 'حساب الجبر والمقابلة علي ثلثة ضروب وهي جذور و اموال وعدد'",
+    "al-Khwārizmī, the three kinds of number (Rosen's English, OCR) — 'three kinds, namely, roots, squares, and simple numbers' (Rosen's English; the Archive's OCR of this copy does not read the Arabic pages, which stand in the scan)",
+    "al-Khwārizmī, the opening of the translation (Rosen, OCR) — 'calculating, I found that it always is a number'",
+    "ʿUmar al-Khayyām, Woepcke 1851, Oxford copy: the title — 'D'OMAR ALKHAYYAMi' (the OCR's reading of the title, accents lost; the Arabic text pages stand in the scan and are not read by the OCR)",
+    "ʿUmar al-Khayyām, Woepcke 1851, Harvard copy: the title — 'D'OMAR ALKHAYYÂMÎ'",
+    "ʿUmar al-Khayyām, Woepcke 1851, Harvard copy: the preface — 'scrit arabe du traité d'Alkhayyâmî , légué par Warner'",
+    "al-Kindī, Fī l-luḥūn: the three parts of the art — 'انتخاب النغم التى تليق بذلك وتاليفها ونظمها'",
+    "al-Kindī, Fī maʿrifat quwā l-adwiya al-murakkaba: the title — 'فى معرفة قوى الادوية المركبة'",
+    "al-Kindī, Fī maʿrifat quwā l-adwiya al-murakkaba: the opening — 'قال الكندى رحمه الله تعالى لما رأيت الاوائل'",
+    "al-Kindī, Fī l-suyūf: the Sulaymānī swords — 'قال الكندي : نصنع السيوف السليمانية'",
+    "Thābit, Conics V: the heading — 'المقالة الخامسة من كتاب أبلونيوس فى المخروطات نقل ثابت بن قرة'",
+    "Thābit, Conics V: Apollonius to Attalus — 'من ابلونيوس الى اطالوس سلام عليك'",
+    "Thābit, Nicomachus: the colophon — 'المدخل الى علم العدد الذى وضعه نيقوماخس الجاراسينى من شيعة فوثاغورس مما ترجمه ثابت ابن قرة'",
+    "al-Majisṭī, Tunis 7116: the title of book I — 'الكتاب الكبير المعروف بالمجسطي'",
+    "al-Majisṭī, Tunis 7116: Thābit's revision — 'وصححه ثابت بن قرة الحراني'",
+    "Thābit, Fī sanat al-shams: the opening — 'إن الأوائل قد اختلفوا في سنة الشمس'",
+    "Thābit, Tashīl al-Majisṭī: the title — 'تسهيل المجسطي لثابت بن قرة'",
+    "Thābit, Tashīl al-Majisṭī: the equator defined — 'معدل النهار هو الدائرة العظمى التي تحيط على قطبي السماء'",
+    "Ibn al-Haytham, al-Manāẓir I (Sabra): the opening — 'إن المتقدمين من أهل النظر قد أمعنوا البحث عن كيفية إحساس البصر'",
+    "Ibn al-Haytham, al-Manāẓir I (Sabra): the chapters of book I — 'الفصل السادس: في كيفية الإبصار'",
+    "Ibn al-Haytham, al-Manāẓir (al-Warrāq): the opening — 'إن المتقدمين من أهل النظر قد أمعنوا البحث عن كيفية إحساس البصر'",
+    "Ibn al-Haytham, Fī hayʾat al-ʿālam: the opening — 'قول للحسن بن الحسن بن الهيثم في هيئة العالم'",
+    "al-Bīrūnī, al-Qānūn al-Masʿūdī: the running title — 'القانون المسعودي'",
+    "al-Bīrūnī, al-Qānūn al-Masʿūdī: book III, chapter 10 — 'الباب العاشر فى النسب الواقعة فى القطاع بين الجيوب'",
+    "al-Bīrūnī, Maqālīd ʿilm al-hayʾa: the title — 'مقاليد علم الهيئة ، ما يحدث في سطح بسيط الكرة'",
+    "al-Bīrūnī, Istikhrāj al-awtār: the title — 'استخراج الاوتار'",
+    "al-Bīrūnī, Istikhrāj al-awtār: the colophon — 'وفرغ ابوالريحان رحمه الله من تصنيفه'",
+    "al-Bīrūnī, Taḥdīd nihāyāt al-amākin: the opening — 'لما كانت العقول محتاجة إلى الاستمداد'",
+    "al-Bīrūnī, Ifrād al-maqāl: the title — 'افراد المقال فى امر الظلال'",
+    "al-Bīrūnī, Tamhīd al-mustaqarr: the two simple motions — 'من اجل ان الحركات البسيطة الاولى فى السماء اثنتان'",
+    "al-Bīrūnī, Istīʿāb: the copyist's colophon — 'نقلت هذه التسخة من نسخة مصنفها وقابلتها عليها حسب الطاقة' (the OCR reads التسخة for النسخة; the locus keeps the OCR's reading)",
+    "al-Bīrūnī, Tasṭīḥ al-ṣuwar: the opening — 'تسطيح الأكر وتصويرها بما أمكن من أنواع الصور'",
+    "al-Bīrūnī, Taṭrīq al-istifāda: the conic sections in the astrolabe — 'أو أحد قطوع المخروط الثلثة'",
+    "al-Bīrūnī, Mā fī quwwat al-asṭurlāb: the opening — 'الأسطرلاب أشرف الآلات المستعملة في صناعة النجوم'",
+    "al-Bīrūnī, Rāshīkāt al-Hind: the title — 'راشيكات الهند للعلامة ابى الريحان محمد بن احمد البيرونى'",
+    "al-Bīrūnī, on the solar equation: Ḥabash's zīj — 'لتعاديل الشمس فى زيج حبش'",
+    "al-Bīrūnī, the asymptote fragment: the endlessly diminishing magnitudes — 'المقادير المتصاغرة'",
+    "al-Bīrūnī, al-Āthār al-bāqiya: the title — 'آثار الباقية عن القرون الخالية' (the OCR drops the article of الآثار)",
+    "al-Khwārizmī, Rosen's Arabic title page — 'الكتاب المختصر في حساب الجبر و المقابلة تصنيف الشيخ الاجل ابي عبد الله محمد بن موسي الخوارزمي طبع في مدينة لندن سنة ١٨٣٠ المسيحية' (read from the scan, algebraofmohamme00khuwrich.pdf, PDF page 354; the same title page in 1342TheAlgebraOfMohammedBenMusaAlKwarizmiInArabic, PDF page 125, which identifies that item as the Arabic part of Rosen's edition)",
+    "ʿUmar al-Khayyām, Woepcke's Arabic title page — 'رسالة فى براهين الجبر والمقابلة لعمر الخيامى' (read from the scan, lalgbredomaralk00wpgoog.pdf, PDF page 217 (the Arabic text, paginated from the back, stands on the pages before it); Arabic text pages also seen in lalgbredomaralk00khaygoog.pdf at PDF pages 170, 190 and 205)"
+   ],
+   "why_seated": "The exact sciences in the language that carried them from the Greeks to the Latins. al-jabr names the operation of restoring what was taken from one side of an equation, and Rosen's book of 1831 brought it back to Europe in its first Arabic print. The seat sets the founding Algebra beside Thābit's Arabic Euclideans, Ibn al-Haytham's Optics and al-Bīrūnī's instruments, so the line from the translation movement to the solution of the cubic by Khayyām can be read in one place.",
+   "scope": "Arabic only, in six authors. al-Khwārizmī's Algebra in Rosen's Arabic (London, 1831), held twice: the whole book, Arabic and English, and the Arabic part scanned on its own, which the Archive labels “1342” and whose title page, dated London 1830, shows it to be Rosen's. The Archive's OCR of the whole book does not read its Arabic pages; the separate scan carries a Tesseract Arabic OCR. al-Kindī: three scientific treatises (music, the mathematics of compound drugs, swords). Thābit ibn Qurra: his Arabic Apollonius (Conics V) and Nicomachus, the Arabic Almagest he revised (in a manuscript transcription), and two works of his own astronomy. Ibn al-Haytham: the Optics in two OpenITI versions, Sabra's books I–III and the al-Warrāq text, and On the Configuration of the World. al-Bīrūnī: fourteen works of astronomy, mathematics and calendar, from the Masudic Canon to two fragments extant inside other treatises. ʿUmar al-Khayyām's Algebra in Woepcke's edition of 1851, two copies; its Arabic text pages stand in the scans, and the OCR reads only Woepcke's French. Held out: al-Kindī's Rasāʾil falsafiyya and Fī l-ʿaql and Fī l-nawm wa-l-ruʾyā (philosophy, outside the scientific works asked for); Thābit's Kitāb al-Rawābīʿ li-Aflāṭūn (a Hermetic work attributed to him); al-Bīrūnī's al-Jamāhir (mineralogy), al-Ṣaydana (pharmacology), Fihrist and Taḥqīq mā li-l-Hind (on India, with its astronomy inside a larger ethnography). Ibn al-Haytham's other mathematical works (on the quadrature, on Euclid's postulates) are not in OpenITI at the commits read.",
+   "data": "https://www.alexanarch.org/data/corpora/arabic-mathematics/"
+  },
+  {
+   "seat": "EA-CORPORA-30/09",
+   "corpus": "paul-klee",
+   "edition": "Paul Klee, Pädagogisches Skizzenbuch, Bauhausbücher 2 (Munich: Albert Langen, 1925), cover and typography by László Moholy-Nagy — scan (Public Domain Mark at the file) and OCR layer; Tribüne der Kunst und Zeit, ed. Kasimir Edschmid, Bände 12–17 (Berlin: Erich Reiss, 1920), with Band 13, Schöpferische Konfession, Klee's contribution among eighteen — the University of Michigan copy (Google, via HathiTrust and the Internet Archive), OCR layer; the scan held by reference",
+   "license": {
+    "payload": "Public domain. Paul Klee died in 1940; his writings and drawings are free in every country that counts the author's life and seventy years, and both works were first published before 1931, so their United States term has run. László Moholy-Nagy, who designed the Skizzenbuch's cover and typography, died in 1946; that term has run too. The Skizzenbuch scan carries the Public Domain Mark 1.0 at the file (Internet Archive, licenseurl). The Tribüne volume is the University of Michigan copy digitized by Google: HathiTrust records the Michigan run of volumes 12–17 (1920) as pdus, public domain in the United States, full view; the Archive item carries no licence of its own. The volume's other contributors (Benn, Becher, Unruh, Felixmüller and others) are held under the same United States term, the archive's jurisdiction; some of their terms still run in Europe.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "klee-1925-padagogisches-skizzenbuch",
+      "url": "https://archive.org/details/klee-1925-padagogisches-skizzenbuch",
+      "files": [
+       "Klee - 1925 - Pädagogisches Skizzenbuch.pdf",
+       "Klee - 1925 - Pädagogisches Skizzenbuch_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "TribueneDerKunstUndZeit12-17",
+      "url": "https://archive.org/details/TribueneDerKunstUndZeit12-17",
+      "files": [
+       "TribueneDerKunstUndZeit12-17_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "TribueneDerKunstUndZeit12-17.pdf",
+       "url": "https://archive.org/download/TribueneDerKunstUndZeit12-17/TribueneDerKunstUndZeit12-17.pdf",
+       "size": 99750023,
+       "md5": "14924abd19915e9a6e773fa0a132af5d",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 18636,
+   "verified_loci": [
+    "Pädagogisches Skizzenbuch, I.1, the first sentence — 'Eine aktive Linie, die sich frei ergeht, ein Spaziergang um seiner selbst willen, ohne Ziel.'",
+    "Pädagogisches Skizzenbuch, the agent of the line — 'Das agens ist ein Punkt, der sich verschiebt'",
+    "Pädagogisches Skizzenbuch, the eye's paths through the work — 'Das Auge begeht die ihm im Werk eingerichteten Wege.'",
+    "Pädagogisches Skizzenbuch, the water wheel and hammer — 'Das Räderwerk (medial)'",
+    "Schöpferische Konfession, I, the first sentence — 'Kunst gibt nicht das Sichtbare wieder, sondern macht sichtbar' (the OCR reads 'sichtbar*', the asterisk the scan's)"
+   ],
+   "why_seated": "Klee was declared wanted in the twenty-eighth seating for a reason of his own: too many files and too many image copyright landmines. The Skizzenbuch carries its drawings in the book Klee made of them, under a licence stated at the file, and the Konfession stands in the volume where it was first set beside seventeen other confessions of its moment. Seated with the exact sciences, the line that walks for its own sake stands beside the line Euclid defines as breadthless length.",
+   "scope": "Held: the Pädagogisches Skizzenbuch whole, in the Bauhausbücher first printing of 1925 (Albert Langen, Munich; cover and typography by Moholy-Nagy), its figures in the scan; and the Schöpferische Konfession of 1920 in the volume that first printed it, the eighteen confessions of Tribüne der Kunst und Zeit XIII (Schickele, Pechstein, Unruh, Großmann, Klee, Toller, Benn, Hoetger, Beckmann, Scharff, Becher, Schönberg, Kaiser, Felixmüller, Sternheim, Hölzel, Marc, Däubler) bound with Bände 12 and 14–17. Not held, as the twenty-eighth seating declared them: the Jena lecture Über die moderne Kunst (1924, first printed 1945); the notebooks as Spiller edited them (Das bildnerische Denken, 1956) and the diaries as Felix Klee edited them (1957), whose editors' apparatus runs under its own terms; and the pictures, whose photographs carry their holders' claims. The Bauhaus lecture manuscripts (Bildnerische Form- und Gestaltungslehre) are digitized by the Zentrum Paul Klee; queued until a file-level licence is verified.",
+   "data": "https://www.alexanarch.org/data/corpora/paul-klee/"
+  },
+  {
+   "seat": "EA-CORPORA-30/10",
+   "corpus": "quantum-founders",
+   "edition": "W. Pauli jr., „Über den Zusammenhang des Abschlusses der Elektronengruppen im Atom mit der Komplexstruktur der Spektren“, Zeitschrift für Physik 31 (1925), 765–783 (received 16 January 1925), the exclusion principle — the whole of vol. 31, OCR layer; the paper is at pp. 765–783; W. Heisenberg, „Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen“, Zeitschrift für Physik 33 (1925), 879–893 (received 29 July 1925) — the whole of vol. 33, OCR layer; the paper is at pp. 879–893; M. Born and P. Jordan, „Zur Quantenmechanik“, Zeitschrift für Physik 34 (1925), 858–888 (received 27 September 1925) — the whole of vol. 34, OCR layer; the paper is at pp. 858–888; M. Born, W. Heisenberg and P. Jordan, „Zur Quantenmechanik. II.“, Zeitschrift für Physik 35 (1926), 557–615 (received 16 November 1925), the Dreimännerarbeit — the whole of vol. 35, OCR layer; the paper is at pp. 557–615; E. Schrödinger, „Quantisierung als Eigenwertproblem (Erste Mitteilung)“, Annalen der Physik, 4. Folge, 79 (1926), 361–376 — microfilm issue sim_annalen-der-physik_1926_79_3 (pp. 179–376 of vol. 79), OCR layer; the paper is at pp. 361–376; E. Schrödinger, „Quantisierung als Eigenwertproblem (Zweite Mitteilung)“, Annalen der Physik 79 (1926), 489–527 — microfilm issue sim_annalen-der-physik_1926_79_6 (Heft 6 of vol. 79, opening with the paper), OCR layer; E. Schrödinger, „Quantisierung als Eigenwertproblem (Dritte Mitteilung: Störungstheorie, mit Anwendung auf den Starkeffekt der Balmerlinien)“, Annalen der Physik 80 (1926), 437–490 — microfilm issue sim_annalen-der-physik_1926_80_13 (Heft 13 of vol. 80, opening with the paper), OCR layer; E. Schrödinger, „Quantisierung als Eigenwertproblem (Vierte Mitteilung)“, Annalen der Physik 81 (1926), 109–139 — microfilm issue sim_annalen-der-physik_1926_81_18 (Heft 18 of vol. 81, opening with the paper), OCR layer; P. A. M. Dirac, “The Quantum Theory of the Electron”, Proceedings of the Royal Society of London, Series A, 117 (1928), 610–624 (received 2 January 1928) — the whole of vol. 117 (1927–28), Digital Library of India scan of the IARI Library copy, OCR layer; the paper is at pp. 610–624; N. Bohr, „Das Quantenpostulat und die neuere Entwicklung der Atomistik“, Die Naturwissenschaften 16, Heft 15 (13 April 1928), 245–257, the Como lecture of 16 September 1927 as printed — microfilm issue sim_naturwissenschaften_1928-04-13_16_15, OCR layer",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Every paper was first published 1925–1928 and is in the public domain in the United States (published before 1931, the term of 95 years run). The terms of life plus seventy years still run in the European Union and the United Kingdom: Pauli (d. 1958) to 2028, so free from 2029-01-01; Schrödinger (d. 1961) from 2032-01-01; Bohr (d. 1962) from 2033-01-01; Born (d. 1970) from 2041-01-01; Heisenberg (d. 1976) from 2047-01-01; Jordan (d. 1980) from 2051-01-01, which governs the two papers written with Born and with Born and Heisenberg; Dirac (d. 1984) from 2055-01-01. The seat holds the texts under United States public domain, the archive's jurisdiction. The Zeitschrift für Physik volumes are Internet Archive scans in the collection of the University of Illinois Chicago (uic); the Annalen and Naturwissenschaften issues are the Archive's microfilm series (sim_microfilm); the Proceedings volume is a Digital Library of India scan (dc.rights: Not Available). None of these items carries a rights or licence field.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31",
+      "url": "https://archive.org/details/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31",
+      "files": [
+       "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31.pdf",
+       "url": "https://archive.org/download/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_31.pdf",
+       "size": 44096799,
+       "md5": "e88d5838f82a648f9a7c0fd8e047ed38",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33",
+      "url": "https://archive.org/details/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33",
+      "files": [
+       "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33.pdf",
+       "url": "https://archive.org/download/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_33.pdf",
+       "size": 43156739,
+       "md5": "e201ad093745bf705dbcd1218dab53d6",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34",
+      "url": "https://archive.org/details/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34",
+      "files": [
+       "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34.pdf",
+       "url": "https://archive.org/download/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34/zeitschrift-fuer-physik-a-atoms-and-nuclei_1925_34.pdf",
+       "size": 44728383,
+       "md5": "487a08298c6c8e30cb158a98fc39d3a5",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35",
+      "url": "https://archive.org/details/zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35",
+      "files": [
+       "zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35.pdf",
+       "url": "https://archive.org/download/zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35/zeitschrift-fuer-physik-a-atoms-and-nuclei_1926_35.pdf",
+       "size": 44633641,
+       "md5": "1a22765d3d7129619f75101c249d5971",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1926_79_3",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1926_79_3",
+      "files": [
+       "sim_annalen-der-physik_1926_79_3_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1926_79_3.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1926_79_3/sim_annalen-der-physik_1926_79_3.pdf",
+       "size": 29491888,
+       "md5": "abc71f083d486aa002c03b9eff5f8063",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1926_79_6",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1926_79_6",
+      "files": [
+       "sim_annalen-der-physik_1926_79_6_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1926_79_6.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1926_79_6/sim_annalen-der-physik_1926_79_6.pdf",
+       "size": 16336328,
+       "md5": "e784280513fc4ff04dd944093baa44b4",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1926_80_13",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1926_80_13",
+      "files": [
+       "sim_annalen-der-physik_1926_80_13_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1926_80_13.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1926_80_13/sim_annalen-der-physik_1926_80_13.pdf",
+       "size": 14417813,
+       "md5": "793d7f60385d8928dde6529c595d83cf",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_annalen-der-physik_1926_81_18",
+      "url": "https://archive.org/details/sim_annalen-der-physik_1926_81_18",
+      "files": [
+       "sim_annalen-der-physik_1926_81_18_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_annalen-der-physik_1926_81_18.pdf",
+       "url": "https://archive.org/download/sim_annalen-der-physik_1926_81_18/sim_annalen-der-physik_1926_81_18.pdf",
+       "size": 16802957,
+       "md5": "d4f1bfc8103a324f882f06f1078913f7",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "in.ernet.dli.2015.27087",
+      "url": "https://archive.org/details/in.ernet.dli.2015.27087",
+      "files": [
+       "2015.27087.Proceedings-Of-The-Royal-Society-Series-A-Vol-cxvii1927-28_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "2015.27087.Proceedings-Of-The-Royal-Society-Series-A-Vol-cxvii1927-28.pdf",
+       "url": "https://archive.org/download/in.ernet.dli.2015.27087/2015.27087.Proceedings-Of-The-Royal-Society-Series-A-Vol-cxvii1927-28.pdf",
+       "size": 30168589,
+       "md5": "a35a0f7ee8ac881c07f8c3c297e5a91a",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_naturwissenschaften_1928-04-13_16_15",
+      "url": "https://archive.org/details/sim_naturwissenschaften_1928-04-13_16_15",
+      "files": [
+       "sim_naturwissenschaften_1928-04-13_16_15_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sim_naturwissenschaften_1928-04-13_16_15.pdf",
+       "url": "https://archive.org/download/sim_naturwissenschaften_1928-04-13_16_15/sim_naturwissenschaften_1928-04-13_16_15.pdf",
+       "size": 6504277,
+       "md5": "99d78fa6a8a438454dad7cb0f7394742",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 324046,
+   "verified_loci": [
+    "Pauli 1925, the title — 'Abschlusses der Elektronen- gruppen im Atom mit der Komplexstruktur der Spektren.' (the line-end hyphen of the title kept as printed)",
+    "Pauli 1925, the byline — 'Von W. Pauli jr. in Hamburg.'",
+    "Pauli 1925, the exclusion rule — 'kann niemals zwei oder mehrere' (the OCR reads the rule's first word „Es“ as „Ks“ and „äquivalente“ as „4quivalente“; the locus begins after the first and stops before the second)",
+    "Pauli 1925, the two-valuedness of the electron — 'Zweideutigkeit der quantentheoretischen Eigenschaften'",
+    "Heisenberg 1925, the title — 'Uber quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen.' (the OCR drops the umlaut of „Über“)",
+    "Heisenberg 1925, the abstract — 'In der Arbeit soll versucht werden, Grundlagen zu gewinnen'",
+    "Heisenberg 1925, a mechanics of observable quantities — 'eine der klassischen Mechanik analoge quantentheoretische Mechanik auszubilden'",
+    "Born and Jordan 1925, the heading — 'Zur Quantenmechanik. Von M. Born und P. Jordan'",
+    "Born and Jordan 1925, matrix calculus — 'Das mathematische Hilfsmittel ist die Matrizenrechnung.'",
+    "Born and Jordan 1925, in statu nascendi — 'in statu nascendi'",
+    "Born, Heisenberg and Jordan 1926, the heading — 'Zur Quantenmechanik. II. Von M. Born, W. Heisenberg und P. Jordan'",
+    "Born, Heisenberg and Jordan 1926, quadratic forms of infinitely many variables — 'Theorie der quadratischen Formen unendlich vieler Variablen'",
+    "Schrödinger I 1926, the title — 'Quantisierung als Eigenwertproblem;'",
+    "Schrödinger I 1926, no word of whole numbers — 'von „ganzen Zahlen“ mehr vorkommt'",
+    "Schrödinger I 1926, the true nature of the quantum rules — 'sehr tief an das wahre Wesen der Quantenvorschriften'",
+    "Schrödinger II 1926, the second communication — '(Zweite Mitteilung.)'",
+    "Schrödinger II 1926, §1 — 'Die Hamiltonsche Analogie zwischen Mechanik und Optik.'",
+    "Schrödinger III 1926, the subtitle — 'Mitteilung: Störungstheorie, mit Anwendung auf den'",
+    "Schrödinger III 1926, perturbation theory named — 'die Störungstheorie für das Eigenwertproblem nennen'",
+    "Schrödinger IV 1926, the true wave equation — 'Die eigentliche Wellengleichung.'",
+    "Dirac 1928, the title — 'The Quantum Theory of the Electron.'",
+    "Dirac 1928, received — 'Received January 2, 1928'",
+    "Dirac 1928, duplexity — '“ duplexity ” phenomena' (the spaces inside the quotation marks are the OCR's)",
+    "Dirac 1928, why Nature should have chosen — 'why Nature should have chosen this particular'",
+    "Bohr 1928, the title — 'Das Quantenpostulat und die neuere Entwicklung der Atomistik'",
+    "Bohr 1928, §1 — 'Quantenpostulat und Kausalität.'",
+    "Bohr 1928, the quantum postulate stated — 'wonach jeder atomare Prozeß einen Zug von Dis-'",
+    "Bohr 1928, the renunciation of causal space-time description — 'Verzicht, betreffend die kausale raum-zeitliche Beschreibung'"
+   ],
+   "why_seated": "Between January 1925 and January 1928 a handful of papers rebuilt the description of the atom twice, once as matrices and once as waves, and then joined both to relativity. The seat holds each in the pages where it first appeared, so that the claims later made for them can be checked against the words that made them. The European terms still run for all of them; in the United States they are already open.",
+   "scope": "Held: every paper the ruling names, each in the volume or issue that first printed it: Pauli's exclusion principle (Z. Physik 31), Heisenberg's Umdeutung (Z. Physik 33), Born and Jordan (Z. Physik 34), Born, Heisenberg and Jordan (Z. Physik 35), Schrödinger's four communications (Annalen 79, 80, 81), Dirac's electron (Proc. R. Soc. A 117), and Bohr's Como lecture in its German printing (Naturwissenschaften 16). The Zeitschrift volumes are seated whole, so the same witnesses also carry the other papers of 1925–26 printed beside these. Not held: Dirac's second part, “The Quantum Theory of the Electron. Part II” (Proc. R. Soc. A 118, 1928, 351–361), not sought this session; the English printing of the Como lecture (Nature 121, 1928, supplement, 580–590), not sought; Heisenberg's uncertainty paper (Z. Physik 43, 1927, 172–198), outside the ruling's list, on the Archive under the item zeitschrift-fur-physik-vol-43 (not opened this session) and left for a later seating.",
+   "data": "https://www.alexanarch.org/data/corpora/quantum-founders/"
+  },
+  {
+   "seat": "EA-CORPORA-30/11",
+   "corpus": "archimedes-ptolemy",
+   "edition": "Ptolemy, Μαθηματικὴ σύνταξις (Syntaxis mathematica, the Almagest), books I–XIII, Greek text of J. L. Heiberg, Claudii Ptolemaei opera quae exstant omnia I.1–2 (Leipzig: Teubner, 1898–1903) — First1KGreek TEI tlg0363.tlg001.1st1K-grc1; Claudii Ptolemaei opera quae exstant omnia I: Syntaxis mathematica, ed. J. L. Heiberg, pars I, books I–VI (Leipzig: Teubner, 1898) — Stanford copy digitized by Google, scan and OCR layer; Claudii Ptolemaei opera quae exstant omnia I: Syntaxis mathematica, ed. J. L. Heiberg, pars II, books VII–XIII (Leipzig: Teubner, 1903) — Stanford copy digitized by Google, scan and OCR layer; Archimedis opera omnia cum commentariis Eutocii, ed. J. L. Heiberg, volume I (Leipzig: Teubner, 1880): On the Sphere and Cylinder, Measurement of a Circle, On Conoids and Spheroids, with Heiberg's Latin — Michigan copy digitized by Google, scan and OCR layer; Archimedis opera omnia cum commentariis Eutocii, ed. J. L. Heiberg, volume II (Leipzig: Teubner, 1881): On Spirals, On the Equilibrium of Planes, The Sand-Reckoner, Quadrature of the Parabola, On Floating Bodies (in Latin), the Book of Lemmas, the Cattle Problem and the fragments — digitized by Google, scan and OCR layer; Archimedis opera omnia cum commentariis Eutocii, ed. J. L. Heiberg, volume III (Leipzig: Teubner, 1881): the commentaries of Eutocius, with Heiberg's prolegomena — digitized by Google, scan and OCR layer",
+   "license": {
+    "payload": "Per item, recorded in origin.items. Archimedes (d. 212 BCE) and Ptolemy (fl. 150 CE) are public domain. Heiberg's Archimedis opera omnia (Leipzig: Teubner, 1880–81) and his Syntaxis mathematica (Leipzig: Teubner, 1898–1903) are public domain in the United States (published before 1931), and Heiberg died in 1928, so the editor's term has run everywhere it applies. The Archive marks the Google copies NOT_IN_COPYRIGHT. The First1KGreek TEI is published under CC BY-SA 4.0 (OpenGreekAndLatin/First1KGreek); redistributed under the same licence, attributed to Open Greek and Latin.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0363/tlg001/tlg0363.tlg001.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg0363/tlg001/tlg0363.tlg001.1st1K-grc1.xml"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "claudiiptolemae00ptolgoog",
+      "url": "https://archive.org/details/claudiiptolemae00ptolgoog",
+      "files": [
+       "claudiiptolemae00ptolgoog.pdf",
+       "claudiiptolemae00ptolgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "claudiiptolemae07ptolgoog",
+      "url": "https://archive.org/details/claudiiptolemae07ptolgoog",
+      "files": [
+       "claudiiptolemae07ptolgoog.pdf",
+       "claudiiptolemae07ptolgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archimedisopera07eutogoog",
+      "url": "https://archive.org/details/archimedisopera07eutogoog",
+      "files": [
+       "archimedisopera07eutogoog.pdf",
+       "archimedisopera07eutogoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archimedisopera04eutogoog",
+      "url": "https://archive.org/details/archimedisopera04eutogoog",
+      "files": [
+       "archimedisopera04eutogoog.pdf",
+       "archimedisopera04eutogoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archimedisopera02eutogoog",
+      "url": "https://archive.org/details/archimedisopera02eutogoog",
+      "files": [
+       "archimedisopera02eutogoog.pdf",
+       "archimedisopera02eutogoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 159883,
+   "verified_loci": [
+    "Syntaxis I.1, the opening to Syrus (First1KGreek) — 'Πάνυ καλῶς οἱ γνησίως φιλοσοφήσαντες, ὦ Σύρε'",
+    "Syntaxis I.3, that the heaven moves as a sphere (First1KGreek) — 'ὅτι σφαιροειδῶς ὁ οὐρανὸς φέρεται'",
+    "Syntaxis I.5, that the earth is in the middle of the heaven (First1KGreek) — 'ὅτι μέση τοῦ οὐρανοῦ ἐστιν ἡ γῆ'",
+    "Syntaxis I.11, the table of chords (First1KGreek) — 'κανόνιον τῶν ἐν τῷ κύκλῳ εὐθειῶν'",
+    "Syntaxis VII.1, the fixed stars keep their positions (First1KGreek) — 'Ὅτι οἱ ἀπλανεῖς ἀστέρες τὴν αὐτὴν ἀεὶ θέσιν'",
+    "Heiberg 1898, the title page — 'SYNTAXIS MATHEMATICA'",
+    "Heiberg 1898, Syntaxis I.1, the opening — 'γνησίως φιλοσοφήσαντες' (the OCR breaks the opening line before this phrase)",
+    "Heiberg 1898, Syntaxis I.3 in the table of contents — 'ὅτι σφαιροειδῶς 6 οὐρανὸς φέρεται' (the OCR reads the article ὁ as the digit 6; the locus keeps the OCR's reading)",
+    "Heiberg 1903, the title page — 'LIBROS VII—XIII CONTINENS'",
+    "Heiberg 1903, Syntaxis VII.1 — 'οἱ ἀπλανεῖς ἀστέρες τὴν αὐτὴν ἀεὶ'",
+    "Archimedes, Heiberg 1880 vol. I, the title page — 'UOLUMEN I'",
+    "On the Sphere and Cylinder, the running head — 'ΠΕΡῚ ΣΦΑΙΡΑΣ ΚΑΙ ΚΥΛΙΝΔΡΟΥ'",
+    "On the Sphere and Cylinder I, the circle equal to the surface of the cylinder — 'κύκλος ἴσος ἐστὶ τῇ ἐπιφανείᾳ τοῦ κυλίνδρου'",
+    "Measurement of a Circle, the running head — 'ΜΕΤΡΗΣΙΣ' (the OCR reads the head's first word ΚΥΚΛΟΥ as KTKAOT; the second word holds)",
+    "On Spirals, the running head — 'ΠΕΡῚ ΕΛΙΚΩΝ'",
+    "The Sand-Reckoner, the title — 'ΨΑΜΜΙΤΗΣ'",
+    "The Sand-Reckoner, the address to King Gelon — 'βασιλεῦ Γέλων'",
+    "Heiberg 1881 vol. III, the title page — 'EUTOCII'",
+    "Eutocius, the dedicatory epigram — 'Εὐτοκίου πινυτοῦ γλυκερὸς πόνος'",
+    "Eutocius, the commentary on On the Sphere and Cylinder I — 'Εὐτοκίου ᾿Ασκαλωνίτου ὑπόμνημα εἰς τὸ πρῶτον' (the OCR sets the breathing as a separate mark (᾿Α); the locus keeps it)"
+   ],
+   "why_seated": "Archimedes and Ptolemy are the two Greek authors whose demonstrations the Arabic and Latin traditions carried longest: the Sphere and Cylinder and the Sand-Reckoner on one side, the Syntaxis on the other, which the Arabs called al-Majisṭī. Heiberg edited both, and his Greek stands here beside his Euclid, already on the shelf. Thābit's Arabic Almagest stands in the Arabic seat of this seating.",
+   "scope": "Ptolemy's Syntaxis (the Almagest) in Heiberg's Greek, held three ways: the First1KGreek TEI of the whole thirteen books, and the two Teubner volumes of 1898 (books I–VI) and 1903 (books VII–XIII) as scans with OCR. Archimedes in Heiberg's first edition, all three volumes (1880–81): the treatises in volumes I and II, Eutocius' commentaries in volume III, each with Heiberg's Latin. The Archive's OCR reads the Greek with errors; the loci are chosen where it reads true. Euclid is already seated (data/corpora/euclid, EA-CORPORA-20/04) and is not reseated. The First1KGreek Archimedes (tlg0552) is Mugler's Budé text of 1970–72, in copyright, and is not seated; PerseusDL/canonical-greekLit holds no Archimedes at the commit read (a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00). Heiberg's second edition (1910–15) holds the Method, found in the palimpsest in 1906; its volume III (1915) is on the Archive (archimedisoperao0000jlhe) with no Greek in its OCR, and volumes I (1910) and II (1913) were not found there, so the Method is not held.",
+   "data": "https://www.alexanarch.org/data/corpora/archimedes-ptolemy/"
+  },
+  {
+   "seat": "EA-CORPORA-30/12",
+   "corpus": "exact-wanted",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-30",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "The works of the exact sciences the thirtieth seating could not hold, declared beside the ones it holds (30/01–30/11), at the author's direction to seat 'what is in the public domain, and what else' (2026-10-30). Six are still in their United States term and open on the dates given, the first of them Gödel's incompleteness paper on 2027-01-01; eight are open now and wanted because no copy could be fetched this session. Each entry names what would be seated, and the shelf grows as the works open or the copies are found.",
+   "scope": "Declared without text: Kurt Gödel, Die Vollständigkeit der Axiome des logischen Funktionenkalküls, Monatshefte für Mathematik und Physik 37, 349–360 (Akademische Verlagsgesellschaft, Leipzig, 1930), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (HathiTrust's Cornell volume, coo.31924000966790, full view, refused the seating's requests on 2026-10-30; the Internet Archive holds volume 36 only); in copyright in Europe until 2049-01-01; Kurt Gödel, Einige metamathematische Resultate über Entscheidungsdefinitheit und Widerspruchsfreiheit, Anzeiger der Akademie der Wissenschaften in Wien, math.-naturw. Klasse 67, 214–215 (Akademie der Wissenschaften, Wien, 1930), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Albert Einstein, Eine neue Bestimmung der Moleküldimensionen, the Bern dissertation print (Buchdruckerei K. J. Wyss, Bern, 1905), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; the Annalen printing of 1906 is seated in 30/01; Albert Einstein, Über die spezielle und die allgemeine Relativitätstheorie (Gemeinverständlich), the first printing (Vieweg, Braunschweig, 1917), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; the fifth printing of 1920 is seated in 30/01; Nicolaus Copernicus, Commentariolus, Curtze's first printing, Mittheilungen des Coppernicus-Vereins für Wissenschaft und Kunst zu Thorn 1, 1–17 (Thorn, 1878), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (the Archive item mittheilungende00curtgoog carries an OCR layer in which the text does not appear); Archimedes, ed. J. L. Heiberg, Ἔφοδος (the Method), first edited in Hermes 42 (Weidmann, Berlin, 1907), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Archimedes, ed. J. L. Heiberg, Ἔφοδος (the Method), in Archimedis opera omnia II, editio altera (Teubner, Leipzig, 1913), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Werner Heisenberg, Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik, Zeitschrift für Physik 43, 172–198 (Springer, Berlin, 1927), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (the Archive item zeitschrift-fur-physik-vol-43 is to be opened); in copyright in Europe until 2047-01-01; Kurt Gödel, Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I, Monatshefte für Mathematik und Physik 38, 173–198 (Akademische Verlagsgesellschaft, Leipzig, 1931), opens: 2027-01-01 in the United States (ninety-five years from first publication abroad); in Europe 2049-01-01, seventy years after the author's death; Kurt Gödel, Rudolf Carnap, Arend Heyting, John von Neumann and others, Diskussion zur Grundlegung der Mathematik (the Königsberg discussion of 7 September 1930), Erkenntnis 2, 135–151 (Felix Meiner, Leipzig, 1931), opens: 2027-01-01 in the United States (ninety-five years from first publication abroad); Alan M. Turing, On Computable Numbers, with an Application to the Entscheidungsproblem, Proceedings of the London Mathematical Society (2) 42, 230–265 (London Mathematical Society, 1936), opens: 2032-01-01 in the United States (ninety-five years from first publication abroad); open in the United Kingdom since 2025-01-01, seventy years after the author's death; Albert Einstein, Boris Podolsky, Nathan Rosen, Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?, Physical Review 47, 777–780 (American Physical Society, New York, 1935), opens: 2031-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Ptolemy, ed. and tr. F. E. Robbins, Tetrabiblos (Ἀποτελεσματικά), Greek text with English translation, Loeb Classical Library 435 (Harvard University Press; Heinemann, 1940), opens: 2036-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Ptolemy, ed. F. Boll and Ae. Boer, Ἀποτελεσματικά, Claudii Ptolemaei opera quae exstant omnia III.1 (the First1KGreek file gives 1954; the date of the first Teubner printing is to be checked) (Teubner, Leipzig, 1954), opens: 2050-01-01 in the United States (ninety-five years from first publication abroad) for the printing named; an earlier printing opens earlier. Wanted: the public-domain entries first, as scans of their first printings; then Gödel 1931 and the Königsberg discussion on 2027-01-01, which would join 30/02 goedel; Turing in 2032; EPR in 2031 or now, as its renewal is found; the Tetrabiblos as its editions open.",
+   "data": "https://www.alexanarch.org/data/corpora/exact-wanted/"
   }
  ],
- "count": 133
+ "count": 144
 }
