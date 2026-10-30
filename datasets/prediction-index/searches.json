@@ -1,0 +1,90 @@
+{
+ "what": "The search log of the external-witness work: every search, with what it found and what it did not. Append only.",
+ "searches": [
+  {
+   "id": "S-0001",
+   "date": "2026-10-30",
+   "by": "ChatGPT, run by the operator; its report pasted into the session at 15:20 EDT",
+   "aimed_at": "predictions in the index with registered dates, for later research that corroborates or disconfirms them",
+   "method": "A targeted first pass: the index's registered dates against later research, earlier versions of each study checked where available (the report's own account).",
+   "queries": null,
+   "queries_note": "The report does not give its queries.",
+   "outcome": {
+    "witnesses": [
+     "W-0001",
+     "W-0002",
+     "W-0003",
+     "W-0004"
+    ],
+    "excluded": [
+     {
+      "source": "The Attribution Crisis in LLM Search Results (SSRC)",
+      "reason": "a June 2025 working paper precedes the January 2026 claims; carried to S-0002 as candidate C-0001"
+     },
+     {
+      "source": "What and Whose Knowledge?",
+      "reason": "a 5 October 2025 preprint precedes its 2026 publication; carried to S-0002 as candidate C-0002"
+     },
+     {
+      "source": "The Alignment Veto",
+      "reason": "a 15 October 2025 predecessor already reports refusal alongside hidden preferences; carried to S-0002 as candidate C-0003"
+     }
+    ],
+    "disconfirmations": "none found that survived the chronology check and the comparison with the exact claim (the report's words: 'I have not yet found a clean post-timestamp disconfirmation that survives both the chronology check and the exact-claim comparison')"
+   }
+  },
+  {
+   "id": "S-0002",
+   "date": "2026-10-30",
+   "by": "Claude (Opus 5.5), in session",
+   "aimed_at": "verification of S-0001's four witnesses and three exclusions, and the claims they bear on",
+   "method": "Each source read at its landing page; the claims read in data/reading/triage/claims.json and #476's text.",
+   "queries": [
+    "fetch https://aclanthology.org/2026.emnlp-main.1069/",
+    "search: \"Authority Bias in Conversational Search Engines for Academic Paper Recommendation\" arXiv",
+    "fetch https://arxiv.org/abs/2609.00248",
+    "fetch https://arxiv.org/abs/2603.16138v1",
+    "fetch https://doi.org/10.1080/0144929X.2026.2726451 (refused)",
+    "fetch https://research.tilburguniversity.edu/en/publications/does-generative-ai-make-us-think-alike-a-systematic-review-and-me-2/",
+    "fetch https://www.nature.com/articles/s41746-026-02928-4 (refused)",
+    "fetch https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1",
+    "fetch https://www.ssrc.org/publications/the-attribution-crisis-in-llm-search-results/ (refused)",
+    "search: \"What and Whose Knowledge\" LLM preprint 2025",
+    "search: \"The Alignment Veto\" language models refusal hidden preferences"
+   ],
+   "outcome": {
+    "witnesses": [
+     "W-0001",
+     "W-0002",
+     "W-0003",
+     "W-0004"
+    ],
+    "corrections": [
+     "W-0001: the preprint is arXiv 2609.00248, 31 August 2026; the 17,898 figure is not in the abstract; the study carries out the probe's method on another system",
+     "W-0002: 'forums' and 'atomic factual statements' are not in the abstract",
+     "W-0004: the journal version and its date not reached"
+    ],
+    "candidates": [
+     {
+      "id": "C-0001",
+      "source": "The Attribution Crisis in LLM Search Results (Social Science Research Council)",
+      "url": "https://www.ssrc.org/publications/the-attribution-crisis-in-llm-search-results/",
+      "state": "page refused the fetch; dates and findings unverified; no claim matched"
+     },
+     {
+      "id": "C-0002",
+      "source": "What and Whose Knowledge? (preprint, 5 October 2025, per S-0001)",
+      "url": null,
+      "state": "not found by search; unverified"
+     },
+     {
+      "id": "C-0003",
+      "source": "The Alignment Veto: How Safety Training Suppresses Cultural Knowledge in LLMs",
+      "url": "https://arxiv.org/pdf/2510.13154",
+      "state": "found (arXiv 2510.13154, October 2025); its predecessor and findings unread; no claim matched"
+     }
+    ]
+   }
+  }
+ ]
+}

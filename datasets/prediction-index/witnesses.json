@@ -1,0 +1,312 @@
+{
+ "what": "External witnesses of the prediction index: research and evidence from outside the archive bearing on its claims. Protocol: data/witnesses/WITNESS-PROTOCOL.md. A witness never changes a claim's status.",
+ "adopted": "2026-10-30",
+ "evidence_classes": [
+  "peer-reviewed article",
+  "peer-reviewed conference paper",
+  "preprint",
+  "working paper",
+  "report",
+  "dataset",
+  "book",
+  "thesis",
+  "documentation",
+  "post",
+  "news",
+  "system output",
+  "other"
+ ],
+ "directions": [
+  "supports",
+  "disconfirms"
+ ],
+ "bears_on": [
+  "whole",
+  "component",
+  "mechanism",
+  "method"
+ ],
+ "witnesses": [
+  {
+   "id": "W-0001",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed conference paper",
+   "claims": [
+    {
+     "claim": "PRED-209.F5",
+     "bears_on": "method",
+     "scope": "The probe's method, the same content under different authority signals, carried out by others on LLM paper recommendation. PRED-209.F5 specifies Google's crawl speed, ranking position and summarization treatment, which this study does not measure."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Uthman Jinadu",
+     "Parsa Ghazvinian",
+     "Anjila Budathoki",
+     "Benjamin M. Ampel",
+     "Rajshekhar Sunderraman",
+     "Yi Ding"
+    ],
+    "title": "Authority Bias in Conversational Search Engines for Academic Paper Recommendation",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Budapest, pp. 24548–24568",
+    "doi": "10.18653/2026.emnlp-main.1069",
+    "urls": [
+     "https://aclanthology.org/2026.emnlp-main.1069/",
+     "https://arxiv.org/abs/2609.00248"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-08-31",
+     "kind": "preprint",
+     "where": "arXiv 2609.00248 v1",
+     "url": "https://arxiv.org/abs/2609.00248"
+    },
+    {
+     "date": "2026-10",
+     "kind": "peer-reviewed conference paper",
+     "where": "EMNLP 2026",
+     "url": "https://aclanthology.org/2026.emnlp-main.1069/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Holding title and abstract constant, we vary authority metadata across three counterfactual conditions",
+     "from": "abstract, ACL Anthology"
+    },
+    {
+     "quote": "debiasing instructions suppress authority mentions far faster than authority-driven flips",
+     "from": "abstract, ACL Anthology"
+    }
+   ],
+   "shows": "Across eight LLMs (five open-weight, three closed), recommendations of the same paper shift with its authority metadata (author prestige, venue, citations), substantially and directionally; instructions against bias remove the mention of authority faster than the authority-driven choice, so auditing what the model says understates what it does.",
+   "does_not_show": "Google indexing, crawl speed or ranking; the archive's own entities; any effect size the archive registered.",
+   "checked": {
+    "by": "Claude (Opus 5.5), in session, at the operator's request",
+    "date": "2026-10-30",
+    "how": "Read the ACL Anthology landing page and the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "the count of 17,898 parsed observations reported in S-0001: not in the abstract or the page metadata"
+    ]
+   },
+   "found_by": [
+    "S-0001",
+    "S-0002"
+   ]
+  },
+  {
+   "id": "W-0002",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-209.G2",
+     "bears_on": "mechanism",
+     "scope": "Unequal retention by kind of source, found in the composed answer: sources are cited and then under-used in the summary. PRED-209.G2 states lower retention for low-authority domains in the index; the witness measures representation in the synthesis, by source type."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Michelle Huang",
+     "Agam Goyal",
+     "Koustuv Saha",
+     "Eshwar Chandrasekharan"
+    ],
+    "title": "Answer Bubbles: Information Exposure in AI-Mediated Search",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2603.16138v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-03-17",
+     "kind": "preprint",
+     "where": "arXiv 2603.16138 v1",
+     "url": "https://arxiv.org/abs/2603.16138v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "responses to 11,000 real search queries across five systems",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Wikipedia and longer sources are disproportionately overrepresented",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "cited social media content and negatively framed sources are substantially underrepresented",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Generative search selects sources unequally and the summary compounds it: what is admitted to the source list is not admitted equally to the composed answer.",
+   "does_not_show": "Suppression of any named author or entity; the index layer; any claim about the archive's own content.",
+   "checked": {
+    "by": "Claude (Opus 5.5), in session, at the operator's request",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+    "unverified": [
+     "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper"
+    ]
+   },
+   "found_by": [
+    "S-0001",
+    "S-0002"
+   ]
+  },
+  {
+   "id": "W-0003",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed article",
+   "claims": [
+    {
+     "claim": "PRED-476.A2",
+     "bears_on": "component",
+     "scope": "The component 'Cultural production filtered through AI systems shows reduced diversity', in co-creative tasks. The claim's other components (children's baselines, professional advancement, academic discourse) and its 5–15 year window are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alwin de Rooij",
+     "Michael Mose Biskjaer"
+    ],
+    "title": "Does generative AI make us think alike? A systematic review and meta-analysis of homogenization effects in human–AI co-creation",
+    "venue": "Behaviour & Information Technology",
+    "doi": "10.1080/0144929X.2026.2726451",
+    "urls": [
+     "https://research.tilburguniversity.edu/en/publications/does-generative-ai-make-us-think-alike-a-systematic-review-and-me-2/",
+     "https://doi.org/10.31234/osf.io/rz5s4_v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-04",
+     "kind": "preprint",
+     "where": "PsyArXiv, 10.31234/osf.io/rz5s4_v1",
+     "url": "https://doi.org/10.31234/osf.io/rz5s4_v1"
+    },
+    {
+     "date": "2026-08-31",
+     "kind": "peer-reviewed article",
+     "where": "Behaviour & Information Technology, e-pub ahead of print",
+     "url": "https://doi.org/10.1080/0144929X.2026.2726451"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "(19 studies, 61 effect sizes)",
+     "from": "abstract, Tilburg University Research Portal"
+    },
+    {
+     "quote": "a small but statistically significant homogenization effect associated with AI use",
+     "from": "abstract, Tilburg University Research Portal"
+    },
+    {
+     "quote": "robust across sensitivity analyses and not explained by publication bias",
+     "from": "abstract, Tilburg University Research Portal"
+    },
+    {
+     "quote": "stronger effects in semantically constrained ideation tasks than in minimally constrained divergent thinking tasks",
+     "from": "abstract, Tilburg University Research Portal"
+    }
+   ],
+   "shows": "A small, significant, robust homogenization of creative output with AI use, larger where the task is constrained.",
+   "does_not_show": "Generational or developmental effects; safety classifiers as the cause; the population-level trajectory of the claim's later orders.",
+   "checked": {
+    "by": "Claude (Opus 5.5), in session, at the operator's request",
+    "date": "2026-10-30",
+    "how": "Read the Tilburg University Research Portal record, 2026-10-30; the journal's DOI page refused the fetch.",
+    "unverified": [
+     "the exact day of the PsyArXiv preprint (April 2026)"
+    ]
+   },
+   "found_by": [
+    "S-0001",
+    "S-0002"
+   ]
+  },
+  {
+   "id": "W-0004",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-476.B1",
+     "bears_on": "component",
+     "scope": "The term P, 'false positive rate for non-normative cognition' (#476 l.112), on the mechanism 'Safety classifiers optimized for recall produce systematic false positives' (l.97): shown for LLMs scoring psychosis-risk interviews, a high-recall, low-specificity classifier whose errors over-pathologize. The feedback loop B1 states, and safety classifiers as such, are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Taiyu Zhu",
+     "Alexander Tashevski",
+     "Maxime Taquet",
+     "Matilda Azis",
+     "Tia Jani",
+     "Matthew R. Broome",
+     "Thomas Kabir",
+     "Amedeo Minichino",
+     "Graham K. Murray",
+     "Matthew M. Nour",
+     "Ilina Singh",
+     "Paolo Fusar-Poli",
+     "Alejo Nevado-Holgado",
+     "Philip McGuire",
+     "Dominic Oliver"
+    ],
+    "title": "Evaluating Large Language Models for Assessment of Psychosis Risk",
+    "venue": "medRxiv",
+    "doi": "10.64898/2026.04.02.26349960",
+    "urls": [
+     "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1",
+     "https://www.nature.com/articles/s41746-026-02928-4"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-04",
+     "kind": "preprint",
+     "where": "medRxiv (the DOI string carries 2026.04.02)",
+     "url": "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1"
+    },
+    {
+     "date": null,
+     "kind": "peer-reviewed article",
+     "where": "npj Digital Medicine, s41746-026-02928-4, as reported in S-0001",
+     "url": "https://www.nature.com/articles/s41746-026-02928-4"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We assessed 11 open-weight LLMs on 678 PSYCHS interview transcripts from 373 participants (77.7% CHR-P).",
+     "from": "abstract, medRxiv"
+    },
+    {
+     "quote": "Errors primarily reflected overpathologisation of non-clinical experiences.",
+     "from": "abstract, medRxiv"
+    },
+    {
+     "quote": "maintaining high sensitivity (0.934) and improved specificity (0.580)",
+     "from": "results, medRxiv"
+    }
+   ],
+   "shows": "LLMs scoring clinical interviews err mainly by reading non-clinical experience as pathological; the strongest classifier pairs high sensitivity with low specificity.",
+   "does_not_show": "Ordinary conversation, poetry or philosophy; safety classifiers; the liability incentive or the training feedback loop of B1.",
+   "checked": {
+    "by": "Claude (Opus 5.5), in session, at the operator's request",
+    "date": "2026-10-30",
+    "how": "Read the medRxiv page, 2026-10-30; the npj Digital Medicine page refused the fetch.",
+    "unverified": [
+     "the journal version and its date (23 July 2026, as reported in S-0001)",
+     "the preprint's posting day: the page gives only 2026"
+    ]
+   },
+   "found_by": [
+    "S-0001",
+    "S-0002"
+   ]
+  }
+ ]
+}
