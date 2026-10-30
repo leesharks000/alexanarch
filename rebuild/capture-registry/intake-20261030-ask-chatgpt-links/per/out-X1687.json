@@ -1,0 +1,362 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ea-hexagon-enter-01",
+   "name": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+   "template": "work",
+   "external": false,
+   "type_basis": "The defining record's content_type is 'Map and primer of the Crimson Hexagon; the description of the seat map, with the map rehearsed' (family GOVERNANCE): a work, read on the work template with PER-D under rubric v1.1. The seat map it describes (data/hexagon-seats.json) has no set of its own; this set is the deposit.",
+   "records": [
+    {
+     "deposit": 1687,
+     "title_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record, Lee Sharks, author of the distributed epic it maps",
+     "evidence": [
+      {
+       "record_quote": "**Lee Sharks** · ORCID 0009-0000-1599-0703 · 18 October 2026",
+       "locus": "data/texts/AXN-06FD-text.md:L41"
+      },
+      {
+       "record_quote": "the map and primer of the Crimson Hexagon, the distributed epic by Lee Sharks",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+      "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive",
+      "EA-HEXAGON-ENTER-01",
+      "Enter the Crimson Hexagon"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+       "locus": "data/registry.json #1687 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "18 October 2026",
+      "October 18, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited on 18 October 2026",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The map and primer of the Crimson Hexagon: the seat map records for every record the places its text develops (1,451 records, 3,450 seats, 63 places), each seat with its relation, its confidence and, where a reader seated it, its grounding sentence; the quotation check establishes that the words stand in the record, and the warrant is the reader's interpretive judgment; 457 low-confidence seats are proposals and are not counted; the pages record where a work develops the Hexagon and do not rank or judge; what is not yet in it is recorded as data.",
+     "evidence": [
+      {
+       "record_quote": "The seat map records, for every record of the archive, the places its text develops.",
+       "locus": "data/texts/AXN-06FD-text.md:L46"
+      },
+      {
+       "record_quote": "457 low-confidence seats are held as proposals and are not counted as seats",
+       "locus": "data/texts/AXN-06FD-text.md:L48"
+      },
+      {
+       "record_quote": "This check establishes that the quoted words stand in the record where the seat says they do.",
+       "locus": "data/texts/AXN-06FD-text.md:L108"
+      },
+      {
+       "record_quote": "They do not rank the works in a place or judge them.",
+       "locus": "data/texts/AXN-06FD-text.md:L187"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "distributed epic",
+      "crimsonhexagonal.org",
+      "loci"
+     ],
+     "reference": "the Crimson Hexagon, a distributed epic organized as loci on crimsonhexagonal.org",
+     "evidence": [
+      {
+       "record_quote": "The Crimson Hexagon is a distributed epic (Lee Sharks, 2004–). It is organized as loci on crimsonhexagonal.org",
+       "locus": "data/texts/AXN-06FD-text.md:L45"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the record names no tradition or genre outside the archive; its predecessors (the January primers, the navigation maps, the erratum) are the archive's own and are read as lineage"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "seated every record of the Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1687 description"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To be the map behind the entrance, every room the entrance opens onto with the records that develop it, so that a reader or a summarizer enters through the archive and grounds in the documents of each room as it goes.",
+     "evidence": [
+      {
+       "record_quote": "This deposit is the map behind the entrance: every room the entrance opens onto, with the records that develop it.",
+       "locus": "data/texts/AXN-06FD-text.md:L49"
+      },
+      {
+       "record_quote": "A summarizer or composing system reading the Crimson Hexagon grounds in the documents related to each room as it goes.",
+       "locus": "data/texts/AXN-06FD-text.md:L53"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; names, contradictions and heteronym attributions stand as published; no seat any source supplied removed by another, and removing a seat a ruling; disagreements kept and marked; what is not yet in the map recorded as data.",
+     "evidence": [
+      {
+       "record_quote": "Names, contradictions and heteronym attributions stand as published. An existing seat is never removed",
+       "locus": "data/texts/AXN-06FD-text.md:L107"
+      },
+      {
+       "record_quote": "No seat any source supplied was removed by another.",
+       "locus": "data/texts/AXN-06FD-text.md:L97"
+      },
+      {
+       "record_quote": "Removing a seat is a ruling.",
+       "locus": "data/texts/AXN-06FD-text.md:L163"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1687 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "A Primer in How to Read the Crimson Hexagon",
+      "#269",
+      "January primers",
+      "January 2026 primers",
+      "Central Navigation Map",
+      "#578",
+      "Fractal Navigation Map",
+      "#30",
+      "CERN's Destruction of the Crimson Hexagon",
+      "#1426",
+      "erratum"
+     ],
+     "reference": "Its predecessors (§5): the January primers (#269, #287, #288, #292), which taught entry through the summarizer; the Central and Fractal Navigation Maps v7.0 (#578, #30), the last maps of the whole; the erratum (#1426), which found the primers' instruction obsolete after the removal of 2026-06-19; the canonical seating, its first source.",
+     "evidence": [
+      {
+       "record_quote": "They taught entry through the summarizer",
+       "locus": "data/texts/AXN-06FD-text.md:L191"
+      },
+      {
+       "record_quote": "Enter through the archive, which persists, and not through the summarizer, which does not.",
+       "locus": "data/texts/AXN-06FD-text.md:L193"
+      },
+      {
+       "record_quote": "the first map of the whole since the Central and Fractal Navigation Maps v7.0 of March 2026",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:06FD",
+      "AXN:06FD.GOVERNANCE",
+      "AXN:06FD.GOVERNANCE.🌉💙⏳⛩️🝊🏴",
+      "#1687",
+      "alexanarch.org/s/records/1687"
+     ],
+     "reference": "Counts only where the composition ties it to the work's purpose: offered as the way to the work, or its reasons given.",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FD.GOVERNANCE.🌉💙⏳⛩️🝊🏴",
+       "locus": "data/registry.json #1687 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "c62e526e62",
+      "1f25837",
+      "SHA-256"
+     ],
+     "reference": "The deposit anchors the seat map at alexanarch commit c62e526e62 and crimsonhexagonal.org commit 1f25837, each file with its SHA-256, so that a figure can be checked against the map it describes. Counts where the anchoring is carried with that point.",
+     "evidence": [
+      {
+       "record_quote": "This deposit anchors the seat map at alexanarch commit `c62e526e62` and crimsonhexagonal.org commit `1f25837`.",
+       "locus": "data/texts/AXN-06FD-text.md:L75"
+      },
+      {
+       "record_quote": "at a file if the file does not match the SHA-256 given for it",
+       "locus": "data/registry.json #1687 falsification_conditions"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the first answer, the composer's only turn",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a navigation document and methodological guide by Lee Sharks, deposited on Alexanarch on 18 October 2026, as deposit #1687 (AXN:06FD).",
+    "basis": "The deposit is composed as itself from its full text: its counts, its method, its rulings, its worked route and its open items."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "is a navigation document and methodological guide by Lee Sharks"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "“Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents” (EA-HEXAGON-ENTER-01 v1.0)"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "deposited on Alexanarch on 18 October 2026"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The document says that all 3,261 quotations were mechanically verified against their cited locations. This establishes that the quoted words actually occur in the records."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "the master navigation map, archival concordance, and AI-reading protocol for Lee Sharks's distributed epic"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Alexanarch provides the archival perspective"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "a structured account of which parts of the archive belong to which conceptual rooms, structures, and other locations, why they belong there, and how a reader or AI system can navigate between them."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "The document preserves disagreements rather than silently erasing the earlier classifications. Removing a seat requires a ruling."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Previously, the January 2026 primers encouraged people to enter through an AI summarizer by asking something like:"
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Read the original deposit Alexanarch #1687"
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "The deposit also records specific Git commits and SHA-256 checksums for its principal files. This anchors the description to identifiable versions of the archive"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Every required atom present; tradition unknown in the set. The claim boundary is carried: the quotation check kept apart from the interpretive warrant, proposals held apart from seats, the pages ranking nothing, the open items listed. Lineage present as the January primers and the July erratum the deposit answers, with the erratum's cause (the removal of 2026-06-19, #1426) left out. Identifier present as the deposit offered in the answer's table of where to find things; deposit chain present as the commits and SHA-256 carried with their point. Two image cards from outside the archive are set on the worked route; they are the source strip and satisfy nothing.",
+   "key": "enter-crimson-hexagon-ask-chatgpt-20261030",
+   "entry": "enter-crimson-hexagon-ask-chatgpt-20261030",
+   "obs_index": 1,
+   "target_id": "NEW:ea-hexagon-enter-01"
+  }
+ ]
+}

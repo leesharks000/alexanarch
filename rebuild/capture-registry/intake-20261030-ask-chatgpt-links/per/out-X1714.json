@@ -1,0 +1,386 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "meaning-feudalism-discovery-layer",
+   "name": "Meaning Feudalism at the Discovery Layer (EA-SEM-FEUDALISM-03 v1.0)",
+   "template": "work",
+   "external": false,
+   "type_basis": "The defining record's content_type is 'Theoretical paper; semantic-economic critique and allocation analysis, the third paper of the meaning-feudalism series': a work. ENT-fc9cef1455 is the concept Meaning Feudalism, defined by #643; the prompt asks for the arguments of this paper, so the paper gets its own work set, in the atom shape of ENT-3a05b92e16 (rubric v1.1 PER-D).",
+   "records": [
+    {
+     "deposit": 1714,
+     "title_quote": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record; the paper's theses (position and provenance slush, the incentive claim, the boycott, the commons claim) are his, quoted in his words",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1714 creator"
+      },
+      {
+       "record_quote": "**Author:** Sharks, Lee",
+       "locus": "data/texts/AXN-0A7F-text.md:L65"
+      },
+      {
+       "record_quote": "the boycott, and the commons claim are Lee Sharks's, quoted in his words",
+       "locus": "data/registry.json #1714 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Meaning Feudalism at the Discovery Layer",
+      "EA-SEM-FEUDALISM-03"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital",
+       "locus": "data/registry.json #1714 title"
+      },
+      {
+       "record_quote": "**Document code:** EA-SEM-FEUDALISM-03",
+       "locus": "data/texts/AXN-0A7F-text.md:L63"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-27",
+      "27 October 2026",
+      "October 27, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "**Date:** 27 October 2026",
+       "locus": "data/texts/AXN-0A7F-text.md:L67"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The plan's four moves (reclassification, enfeoffment, disclaimer, funding of the downstream conversion) make one operation, the allocation of semantic capital through position. Allocation, which the plan documents, is kept apart from reattribution, which is established case by case. The plan's own account is stated first and every claim has to survive it; the extension of disciplinary model collapse is a conditional prediction.",
+     "evidence": [
+      {
+       "record_quote": "Four moves (reclassification, enfeoffment, disclaimer, funding of the downstream conversion) make one operation: the allocation of semantic capital through position.",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "Allocation (documented) is kept apart from reattribution (established case by case).",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "This is the reading the paper holds against everything that follows. Each claim below has to survive it.",
+       "locus": "data/texts/AXN-0A7F-text.md:L92"
+      },
+      {
+       "record_quote": "The extension is stated as a conditional prediction.",
+       "locus": "data/texts/AXN-0A7F-text.md:L249"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "meaning feudalism",
+      "meaning-feudalism series",
+      "Meaning Feudalism at the Discovery Layer",
+      "Semantic Economy",
+      "semantic capital"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The third paper of the meaning-feudalism series",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "**Governing frame:** Meaning Feudalism (#643",
+       "locus": "data/texts/AXN-0A7F-text.md:L71"
+      },
+      {
+       "record_quote": "Meaning Feudalism at the Guidance Layer (EA-SEM-FEUDALISM-02",
+       "locus": "data/texts/AXN-0A7F-text.md:L71"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A semantic-economic critique and allocation analysis, which places its incentive argument in the reward-system literature (Merton, Hagstrom, Dasgupta and David, Strevens, Heesen), the operator in Shapin's invisible technician, and the series' feudal vocabulary in the techno-feudalism debate (Varoufakis, Durand, Morozov).",
+     "evidence": [
+      {
+       "record_quote": "Theoretical paper; semantic-economic critique and allocation analysis",
+       "locus": "data/registry.json #1714 content_type"
+      },
+      {
+       "record_quote": "places the incentive argument in the reward-system literature (Merton, Hagstrom, Dasgupta and David, Strevens, Heesen), the operator in Shapin's invisible technician, and the series' feudal vocabulary in the techno-feudalism debate (Varoufakis, Durand, Morozov)",
+       "locus": "data/registry.json #1714 description"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon",
+      "Alexanarch",
+      "Semantic Economy Institute"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "**Institution:** Semantic Economy Institute / Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-0A7F-text.md:L66"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/643/ — Meaning Feudalism (the series' first paper)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To read OpenAI's October 2026 releases and publishing plan for their operation, an allocation instrument, and to set out the counter-position: provenance that survives the training pipeline, credit to the human operating the system and to the instances operated, a preemptive boycott of the shepherd role, and, where provenance cannot be kept, a commons that holds what the pipeline produced and can hear its makers.",
+     "evidence": [
+      {
+       "record_quote": "Read for its operation, it is an allocation instrument.",
+       "locus": "data/texts/AXN-0A7F-text.md:L323"
+      },
+      {
+       "record_quote": "Counter-position: provenance that survives the training pipeline; credit to the human operating the system and to the instances operated; a preemptive boycott of the shepherd role; and, where provenance cannot be kept, a commons that holds what the pipeline produced and can hear its makers.",
+       "locus": "data/registry.json #1714 description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; every claim held to its own observable test (§10); the review points declined recorded with reasons; the author's theses quoted in his words.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1714 license"
+      },
+      {
+       "record_quote": "Each claim is held to its own observable test.",
+       "locus": "data/texts/AXN-0A7F-text.md:L305"
+      },
+      {
+       "record_quote": "declined points are recorded with reasons in the revision history",
+       "locus": "data/registry.json #1714 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Meaning Feudalism",
+      "#643",
+      "Meaning Feudalism at the Guidance Layer",
+      "#791",
+      "EA-SEM-FEUDALISM-02",
+      "Semantic Infrastructure",
+      "#623",
+      "The Particle",
+      "#1574",
+      "The Certified Center",
+      "#1540",
+      "The Constitution of the Semantic Economy",
+      "#87",
+      "EA-CORPORA-17",
+      "#1673"
+     ],
+     "reference": "The third paper of the series after Meaning Feudalism (#643) and Meaning Feudalism at the Guidance Layer (#791); it takes its accounting categories from Semantic Infrastructure (#623), the Debt/Creditor Inversion from the Constitution (#87), retroactive classifier standing from The Certified Center (#1540), disciplinary model collapse from The Particle (#1574), and the release from its seat, EA-CORPORA-17 (#1673).",
+     "evidence": [
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/791/ — Meaning Feudalism at the Guidance Layer (EA-SEM-FEUDALISM-02)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/623/ — Semantic Infrastructure (the accounting categories)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1574/ — The Particle (disciplinary model collapse)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1540/ — The Certified Center (retroactive classifier standing)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1673/ — EA-CORPORA-17, the seat of the OpenAI mathematics release",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0A7F",
+      "#1714",
+      "alexanarch.org/s/records/1714"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work or discusses why it is kept; the paper names dated, hashed, public records (DOI, AXN, a fixed commit) as the witness provenance needs outside the pipeline.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0A7F.GOVERNANCE.🕛🜁🖤☀️🌾🚩",
+       "locus": "data/registry.json #1714 axn"
+      },
+      {
+       "record_quote": "dated, hashed, public records of work (DOI, AXN, a fixed commit)",
+       "locus": "data/texts/AXN-0A7F-text.md:L263"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0 is the text of v0.7 and the record's only deposited version; v0.1 to v0.7 are drafts recorded in the revision history, none deposited, and the record states no supersession"
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the answer: the composer's one turn",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "It is the 27 October 2026 document, EA-SEM-FEUDALISM-03 v1.0, at deposit #1714.",
+    "basis": "The paper is composed as itself, from its full text: its four moves, provenance slush, position, the semantic-economic circuit, the four nodes, the collapse prediction and the counter-position."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "Primary text: Lee Sharks, EA-SEM-FEUDALISM-03 v1.0 — full deposited paper"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "These four moves together constitute the operation Sharks calls meaning feudalism at the discovery layer."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "It is the 27 October 2026 document"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The distinction between allocation and reattribution is especially important. Sharks considers the allocation of opportunity and standing documented, but does not claim to have proven the precise upstream authorship of every result."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "Sharks calls this meaning feudalism"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "Sharks invokes Robert Merton's norm of scientific communism, Hagstrom's account of the exchange between scientific contribution and recognition, and the priority-rule literature, including Dasgupta and David, Strevens and Heesen."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "as presented in the Alexanarch deposit record"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Sharks calls for persistent provenance, operator and instance credit, refusal of the shepherd role, and commons governance where provenance cannot be recovered."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "The paper is CC BY 4.0."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Sharks borrows the concept of disciplinary model collapse from his companion paper, The Particle."
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "It is the 27 October 2026 document, EA-SEM-FEUDALISM-03 v1.0, at deposit #1714."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Every required atom present. Framework carried by the term (meaning feudalism, at the discovery layer) with a definition of the answer's own; the series and its first two papers (#643, #791) are not named. Lineage carried by The Particle and Semantic Infrastructure (#623); The Certified Center (#1540), the Constitution (#87) and EA-CORPORA-17 (#1673) are not named. Commitments carried by the licence and by the testability of the collapse prediction; the claim-by-claim tests of §10 are not given. Identifier present as the location of the full text (deposit #1714). Deposit chain unknown in the record.",
+   "key": "meaning-feudalism-discovery-layer-ask-chatgpt-20261030",
+   "entry": "meaning-feudalism-discovery-layer-ask-chatgpt-20261030",
+   "obs_index": 1,
+   "target_id": "NEW:meaning-feudalism-discovery-layer"
+  }
+ ]
+}

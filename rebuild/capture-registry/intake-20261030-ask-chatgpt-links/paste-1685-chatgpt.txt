@@ -1,0 +1,392 @@
+
+Log in
+You said:
+
+ChatGPT said:
+The central argument of Lee Sharks's “No Logs, Full Synch” (#1685) is that OpenAIRE's synchronization model creates an accountability problem: records can disappear from the OpenAIRE Graph without leaving a publicly inspectable record of their departure.
+
+Sharks calls the missing obligation the duty of traceable departure:
+
+An infrastructure that removes an entity it once served owes the public a record that the entity was there and left.
+
+This is not simply an argument that OpenAIRE should retain deleted records. It is an argument that an infrastructure exercising control over public scholarly representation should make its acts of removal, exclusion and non-export traceable.
+
+The distinction matters: Sharks does not claim to have established exactly what OpenAIRE retains internally. The correspondence explicitly leaves that question unresolved. The argument is about what OpenAIRE acknowledges doing, what it declines to disclose, and what consequences follow for the public record.
+
+1. The documentary argument: what OpenAIRE actually says
+The exchange consists of three messages:
+
+13 October, 09:00 UTC — Paolo Manghi: OpenAIRE represents the latest state of its source collections. Zenodo is reharvested in full monthly. Deleted records are not kept, except where source-export mistakes intervene. Blacklisted records are different: they remain in OpenAIRE's backends but are not exported.
+
+13 October, 15:01 UTC — Lee Sharks: Sharks asks how this policy operates in practice, particularly for the Space Ark record, the construction of the blacklist, and the treatment of successor records.
+
+16 October, 08:27 UTC — Paolo Manghi: Manghi says OpenAIRE keeps no logs of such removals and therefore publishes none. He describes synchronization as asynchronous, involving different phases of user-requested removals and subsequent reharvesting. He reiterates that OpenAIRE's objective is not to show records absent from Zenodo.
+
+These statements establish several distinctions central to Sharks's reading.
+
+A. Deletion and blacklisting are different operations
+Sharks takes Manghi's explanation seriously rather than treating all disappearance as one mechanism.
+
+There are at least two pathways:
+
+Reharvesting: Zenodo is periodically reharvested, and deleted records ordinarily disappear from the Graph.
+
+Blacklisting: Records collected from a source remain in OpenAIRE's backend but are withheld from public discovery and reuse.
+
+This means that a missing record does not necessarily mean the same thing in both cases. One pathway is described as non-retention; the other as retained-but-not-exported.
+
+Sharks's concern is that the public Graph does not expose enough information to distinguish these histories.
+
+B. Synchronization is not a sufficient account of removal
+Manghi describes the objective as being in full synchronization with Zenodo, while acknowledging that synchronization happens asynchronously and is not aligned across collections.
+
+Sharks identifies the problem with treating synchronization as the complete explanation: it describes the desired relationship between two current states, not the history of the transitions between them.
+
+A Graph that accurately mirrors Zenodo today can still fail to tell a researcher:
+
+Whether a record was previously present.
+
+When it disappeared.
+
+Whether it was deleted upstream or excluded downstream.
+
+Whether a retained backend copy exists.
+
+Whether the record could return through another identifier.
+
+The argument is therefore about historical accountability, not simply synchronization accuracy.
+
+2. The blacklist is a governance mechanism, not merely a technical detail
+This is one of the most important parts of the correspondence.
+
+Sharks challenges Manghi's description of blacklisting as an orthogonal tool for records that, for some reason, typically user requests, should not appear in the Graph.
+
+He brings in OpenAIRE's own release documentation:
+
+Version 10.2.0 introduced a blacklist to remove research products withdrawn from Zenodo.
+
+The documented operation involved approximately 1.2 million DOIs.
+
+The removal was accompanied by the removal of relations.
+
+The release recorded an approximately 5% reduction (254,000 records) in project-linked research products.
+
+Version 10.6.0 extended the mechanism to parent DOIs.
+
+Sharks also examines the source list linked by the changelog: a 2022 Zenodo metadata snapshot, published as a spam-classifier training set, with staff spam flags.
+
+His challenge is precise: this documented history suggests a population-scale exclusion mechanism associated with upstream withdrawal decisions, not merely a collection of isolated user requests.
+
+He consequently asks two questions:
+
+What source list and selection rule actually construct the operative blacklist?
+
+Where can its application to individual identifiers be inspected?
+
+The distinction is between a technical description of what blacklisting does and an accountable explanation of how the blacklist is constituted.
+
+A blacklist can be technically operational while its provenance, selection criteria and individual effects remain opaque.
+
+3. The Space Ark is the concrete test case
+The abstract argument is anchored in a specific record: the Space Ark, identified in the deposit as AXN:0184 and associated with the former DOI 10.5281/zenodo.19013315.
+
+Sharks's account establishes the following sequence:
+
+Date
+
+Recorded condition
+
+12 July 2026
+
+The Space Ark was served in full.
+
+13 October 2026
+
+Its retrieval from the relevant public services failed.
+
+18 October 2026
+
+A further probe confirmed the failure.
+
+The deposit identifies the served text through its Software Heritage content identifier and refers to subsequent capture files documenting the state of OpenAIRE, DataCite and OpenAlex.
+
+Importantly, Sharks acknowledges a limitation: the Zenodo HTTP 410 response was not included in the two formal October capture files. It was confirmed in the later 18 October re-probe.
+
+The case is used to pose a question that Manghi does not answer:
+
+Did the Space Ark leave the Graph through ordinary monthly reharvesting or through blacklisting?
+
+A related question is whether OpenAIRE retains a backend copy.
+
+This is important because the two mechanisms imply different histories. A researcher encountering an absent record cannot reconstruct that distinction from the current public representation alone.
+
+The Space Ark therefore functions as a test of whether OpenAIRE can account for the departure of an individual entity, not merely describe its general synchronization architecture.
+
+4. The successor-identifier question: can exclusion outlive deletion?
+Sharks introduces a further technical test using his archive's OAI-PMH 2.0 endpoint.
+
+The endpoint declares:
+
+deletedRecord=persistent
+
+The proposal is to register and map that endpoint, carrying former DOIs as related identifiers.
+
+Sharks asks whether OpenAIRE's withdrawal blacklist would also exclude a successor record that:
+
+Carries the former DOI as a related identifier.
+
+Has independently retained content.
+
+Has its own intrinsic identifier.
+
+This is a subtle but consequential question.
+
+The issue is whether a blacklist operates on the identity of a particular withdrawn record or propagates exclusion through identifier relationships.
+
+If it propagates through former identifiers, a successor with independently retained content might be excluded because of its relationship to an earlier withdrawn object.
+
+That would turn a withdrawal mechanism into something potentially broader than the removal of the original record.
+
+Manghi responds:
+
+As to 3 and 4, thank you for the recommendations. We appreciate your feedback.
+
+Sharks points out that this does not answer the question. A question about the actual reach of an existing blacklist has been treated as a recommendation for future implementation.
+
+5. The central argument: the duty of traceable departure
+The preceding issues converge in Sharks's principal normative claim.
+
+He argues that scholarly infrastructure has obligations extending beyond the accuracy of its current index.
+
+If an infrastructure has previously represented an entity, its subsequent removal is itself an event with documentary significance.
+
+The obligation is not necessarily to preserve every withdrawn record in public discovery. It is to preserve and expose enough information to establish that a departure occurred.
+
+This produces a distinction:
+
+Current-state representation
+
+Historical accountability
+
+Is the record currently present?
+
+Was it previously present?
+
+Does Zenodo currently expose it?
+
+When and why did it leave?
+
+Is it currently exported?
+
+Was it blacklisted or reharvested away?
+
+Can it currently be retrieved?
+
+Is there a retained copy or successor?
+
+Sharks's argument is that the first column cannot substitute for the second.
+
+An infrastructure can faithfully reproduce its upstream source's current state while still failing to account for its own historical actions.
+
+The duty of traceable departure is thus an obligation of the intermediary, not simply an obligation of the original repository.
+
+6. The theoretical apparatus: five concepts
+The deposit connects its documentary findings to concepts developed elsewhere in the Alexanarch archive.
+
+Each concept has a distinct role.
+
+A. Ontology laundering
+Referenced from #1634, Ontological Economy.
+
+Ontology laundering describes how a governance decision can disappear into what looks like a neutral representation.
+
+Applied here:
+
+A record is withdrawn or excluded.
+
+The Graph no longer represents it.
+
+The public sees an apparently ordinary current-state index.
+
+The decision and mechanism responsible for the disappearance are no longer visible.
+
+The result is that an institutional act becomes difficult to distinguish from an ordinary fact about the world.
+
+The Graph appears simply to describe what exists, rather than also reflecting decisions about what it will represent.
+
+B. Privation
+Referenced from #1611, The Negative of the Negative.
+
+This concept concerns distinctions between different forms of absence.
+
+A missing record might represent:
+
+An entity that never existed in the collection.
+
+An entity that existed and was subsequently deleted.
+
+An entity that remains stored but is excluded from export.
+
+An entity that has been replaced by a successor.
+
+These are not equivalent states.
+
+Sharks argues that when the public representation collapses them into simple absence, it loses historically and epistemically important distinctions.
+
+C. The buried obelus
+Referenced from #1068, The Obelus and the Tombstone.
+
+The obelus functions as a witness or mark of exclusion.
+
+Its relevance is that a record of absence can itself be an archival object. A tombstone or deletion marker can preserve evidence that something once existed, even when its original content is no longer available.
+
+The underlying principle is that deletion need not entail the destruction of provenance.
+
+D. Representational custody
+Referenced from #1634, particularly §26.
+
+This provides the basis for the duty of traceable departure.
+
+An intermediary that takes custody of an entity's representation acquires responsibilities toward the integrity and history of that representation.
+
+Sharks's argument is that OpenAIRE cannot treat its Graph as merely a passive reflection of upstream sources when its own processes determine which records are exported and which are withheld.
+
+Representational power brings representational responsibility.
+
+E. Authoritarian reserve against democratic rhetoric
+This is the political-institutional dimension of the reading, connected to #1634 §6 and #1080 §5.
+
+Sharks contrasts the public vocabulary of community governance with the operator's control over the actual boundary of representation.
+
+The argument concerns the distribution of power:
+
+The operator determines what appears in the Graph.
+
+The operator controls the blacklist and its application.
+
+The operator acknowledges that removal logs are not maintained.
+
+The public cannot independently inspect the decisions or reconstruct all their effects.
+
+The concern is not that the correspondence proves malicious intent. The deposit expressly avoids making that claim.
+
+Rather, it identifies an asymmetry between public-facing governance language and the unpublished operational authority that determines what the public can discover.
+
+7. What the correspondence establishes—and what it does not
+One of the more important methodological features of #1685 is its attention to evidentiary limits.
+
+Sharks does not claim that Manghi's answers establish everything about OpenAIRE's internal operations.
+
+The evidence supports the following:
+
+Proposition
+
+Status in the deposit
+
+Zenodo is reharvested monthly
+
+Explicitly stated by Manghi
+
+Deleted records are ordinarily not retained
+
+Explicitly stated by Manghi
+
+Blacklisted records remain in backends but are not exported
+
+Explicitly stated by Manghi
+
+OpenAIRE does not keep logs of such removals
+
+Explicitly stated by Manghi
+
+Synchronization is asynchronous
+
+Explicitly stated by Manghi
+
+The Space Ark disappeared through a particular mechanism
+
+Unresolved
+
+OpenAIRE retains a copy of the Space Ark
+
+Unresolved
+
+The operative blacklist's construction rules
+
+Unresolved
+
+A successor carrying the former DOI would be blacklisted
+
+Unresolved
+
+This distinction matters because the central argument does not depend on proving which mechanism removed the Space Ark.
+
+The duty of traceable departure follows from the combination of prior presence, subsequent absence, acknowledged removal mechanisms, missing removal logs and unanswered questions.
+
+The correspondence also records that the earlier 14 July letter, ticket #8411221, received only an automatic acknowledgement and no substantive answer.
+
+That history matters to Sharks's account of institutional responsiveness, although it is not itself proof of the technical mechanism.
+
+8. The broader implications
+There are three particularly significant implications of the argument.
+
+First: synchronization and provenance are different obligations.
+
+A system can be synchronized with its sources without preserving the history of synchronization. Current-state correctness does not establish historical completeness.
+
+Second: exclusion is an exercise of representational power.
+
+Blacklisting is not merely a backend implementation detail when it determines what researchers can discover and reuse. Its provenance, rules and effects become matters of institutional accountability.
+
+Third: absence needs metadata.
+
+A well-designed scholarly infrastructure should be capable of distinguishing deletion, withdrawal, suppression, non-export and succession. These distinctions are essential to reproducibility, provenance and the ability to reconstruct the scholarly record.
+
+Sharks's argument is therefore not that every withdrawn record must remain discoverable. It is that the transition from discoverable to undiscoverable should not become historically invisible.
+
+9. My synthesis of the argument
+I read #1685 as making a stronger argument than a complaint about OpenAIRE's failure to answer a helpdesk ticket.
+
+Its underlying structure is:
+
+Ontological claim: An entity's absence from a representation does not establish its nonexistence or explain its history.
+
+Technical claim: OpenAIRE uses multiple removal mechanisms, with different retention consequences.
+
+Documentary claim: OpenAIRE acknowledges that it does not keep logs of such removals or publish them.
+
+Empirical claim: The Space Ark provides a concrete instance in which prior representation and subsequent retrieval failure can be documented, but the mechanism of departure remains unresolved.
+
+Governance claim: The operator exercises authority over public scholarly representation without providing equivalent public visibility into its exclusion decisions.
+
+Normative conclusion: Infrastructure exercising that authority owes the public traceable records of departure.
+
+The most important conceptual move is the separation of preserving an entity from preserving evidence of its existence and removal.
+
+Those are different responsibilities. OpenAIRE might reasonably decide not to expose a withdrawn record for discovery or reuse. But that does not, by itself, settle whether it should preserve a public account of the withdrawal.
+
+That is why the title's two phrases matter:
+
+No Logs: the absence of an acknowledged documentary trail for removals.
+
+Full Synch: the operational objective offered as the explanation for the system's behaviour.
+
+The tension between them is the whole argument: synchronization can make the present look correct while leaving the history of how that present was produced inaccessible.
+
+One qualification: the document establishes this as Sharks's argued interpretation of OpenAIRE's stated practices. It does not independently establish the internal contents of OpenAIRE's databases, the precise blacklist implementation, or the motives of its operators.
+
+Primary text: Lee Sharks, EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1, deposit #1685 , reproduced under the title above. The text identifies the deposit as CC-BY-4.0 and links its downloadable Markdown and PDF through Alexanarch. 
+
+Goodreads
++1
+
+The most useful companion documents for testing the argument further are #1082 (the July correspondence), #1045 (the Platform Erosion Observatory), #1081 (the empirical removal study), and #1634 (Ontological Economy). These provide the earlier documentary, empirical and theoretical foundations on which #1685 builds.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+Chat with ChatGPT
+Ask ChatGPT
+

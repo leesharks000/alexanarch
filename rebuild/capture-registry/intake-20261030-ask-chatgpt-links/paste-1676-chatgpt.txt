@@ -1,0 +1,389 @@
+
+Log in
+You said:
+
+ChatGPT said:
+The AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 is a longitudinal research dataset created by Lee Sharks to document how AI-powered search and summarization systems represent, retrieve, attribute, and describe concepts associated with particular search queries.
+
+Its central concern is not simply whether an AI system mentions a person, organization, or concept. It is what the system says about that subject, at which exact query, on which platform, and on what date.
+
+The distinction matters: the registry is designed to make machine-generated representations observable and comparable over time, rather than relying on impressions or isolated screenshots.
+
+The document is Alexanarch deposit #1676, dated October 12, 2026. Its stated scope is:
+
+633 semantic addresses.
+
+811 captures, according to the deposit title.
+
+84 observation dates.
+
+Observation period: June 7–October 12, 2026.
+
+One important qualification: the document and its surrounding archive distinguish the deposited snapshot from the evolving live registry. They should not be treated as interchangeable.
+
+Source: The document and its archival discussion .
+
+1. What exactly does it observe?
+The registry observes what it calls machine-mediated reception: how a computational system reconstructs or represents a subject when someone asks about it.
+
+The document distinguishes three things:
+
+Concept: The underlying defined subject, such as a person, work, theory, or organization.
+
+Semantic address: The actual search query used to retrieve information about that subject.
+
+Capture: The dated, documented result returned by a particular computational surface at that address.
+
+This distinction was important to the registry's development. An early version conflated concepts with semantic addresses. The June 22, 2026 workplan identified the problem and separated them.
+
+The fundamental unit of evidence is:
+
+ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE.
+
+Consequently, asking two different questions about the same person creates two different semantic addresses. Asking the same question on two different dates produces separate observations. And observing the same query on Google AI Overview and ChatGPT produces separate captures.
+
+This gives the dataset a structure that allows comparisons across queries, systems, and time.
+
+2. How does the capture process work?
+The document describes a deliberately reproducible protocol, using ordinary consumer equipment rather than proprietary access to the AI systems.
+
+Select a semantic address
+
+A specific query is chosen, with a defined target entity or concept.
+
+Open a fresh, incognito browser session
+
+This is intended to minimize personalization effects.
+
+Record the collapsed result
+
+The initial, unexpanded AI-generated response is captured in a screenshot.
+
+Expand the response
+
+The expanded AI Overview is also captured.
+
+Transcribe the machine-generated text verbatim
+
+The actual text is preserved, rather than relying on a screenshot alone.
+
+Record provenance and measurements
+
+The observation receives its associated conditions, sources, attribution annotations, and measurements.
+
+The document makes a particularly important methodological statement:
+
+The transcript is the capture.
+
+In other words, a screenshot is supporting evidence, but the preserved textual output is essential to the research record.
+
+The protocol also distinguishes a genuine capture from informal testimony. An observation must be reproducible under declared conditions. The document says a capture is falsified if a rerun at the same address, surface, authentication state, and date returns materially different composition.
+
+The dataset includes Google AI Overview, AI Mode, knowledge panels, and, in later versions, additional computational surfaces.
+
+3. What does it measure?
+The registry is not simply a collection of AI responses. It includes a measurement framework intended to characterize how faithfully a machine-generated response represents its target.
+
+One central measurement is PER — Provenance Erasure Rate.
+
+PER measures how much of the source's provenance is lost when information is incorporated into an AI-generated response.
+
+For example, suppose a system reproduces an author's distinctive theoretical argument but does not identify the author, the original work, or its intellectual lineage.
+
+The content may survive while its provenance disappears.
+
+That is precisely the type of phenomenon PER is designed to measure.
+
+The document defines the metric as:
+
+PER
+⁡
+(
+S
+,
+O
+)
+=
+1
+−
+∑
+j
+A
+j
+g
+j
+∑
+j
+g
+j
+PER(S,O)=1− 
+∑ 
+j
+​
+ g 
+j
+​
+ 
+∑ 
+j
+​
+ A 
+j
+​
+ g 
+j
+​
+ 
+​
+ 
+Where:
+
+S
+S is the source.
+
+O
+O is the observed output.
+
+A
+j
+A 
+j
+​
+  represents whether the relevant attribution element is preserved.
+
+g
+j
+g 
+j
+​
+  represents the weight assigned to that element.
+
+A higher PER indicates greater provenance loss.
+
+Three levels of provenance
+The October 12 document describes three dimensions:
+
+Dimension
+
+What it measures
+
+PER-M
+
+Minimal attribution: author, title, date, claim boundary
+
+PER-C
+
+Conceptual attribution: framework, tradition, corpus
+
+PER-D
+
+Deep attribution: purpose, commitments, lineage, identifier, deposit chain
+
+This is important because attribution is not binary.
+
+A system might correctly name an author while losing the intellectual framework that makes the author's work distinctive. Alternatively, it might preserve the framework but attribute it to someone else.
+
+The registry attempts to distinguish these cases.
+
+Attribution states
+The capture annotations also classify how attribution is handled:
+
+Named: The source or creator is explicitly identified.
+
+Deflected: Attribution is shifted to a vague group, such as "some researchers."
+
+Displaced: The work or idea is attributed to another entity.
+
+Erased: The attribution disappears.
+
+These distinctions make it possible to study different forms of provenance loss rather than merely counting mentions.
+
+4. What kinds of failures is it designed to detect?
+The registry is particularly interested in cases where an AI system produces a plausible-sounding answer that nevertheless misrepresents the subject.
+
+Several phenomena are important.
+
+A. Provenance erasure
+
+The machine reproduces ideas, claims, or descriptions without preserving their source attribution.
+
+B. Substitution
+
+The system responds to a query about one entity by presenting another entity, work, or body of material in its place.
+
+The document treats substitution as especially significant. Under its PER framework, when the target is absent and a substitute occupies its place, the score is 1.00.
+
+C. Compositional bystanding
+
+A source appears in ordinary search results but is absent from the AI-generated summary.
+
+This is an important distinction: appearing in Google's search index does not guarantee admission into Google's generated answer.
+
+The registry treats organic search ranking and AI-generated composition as separate reception systems.
+
+D. Compositional entity liquidation
+
+This is a more unusual concept developed in the associated research.
+
+It describes a situation where an entity's proper name stops being recognized as a particular named entity and instead becomes a generic category.
+
+For example, a query about a specifically named research instrument might produce a generic description of research registries, losing the identity of the instrument itself.
+
+The registry documents this phenomenon through observations of its own name. The August 2026 research describes the proper name becoming a common noun.
+
+That is an interesting recursive feature: the instrument intended to measure machine-mediated misrepresentation becomes an object of the same measurement.
+
+5. How is the dataset maintained?
+The document describes a versioned dataset rather than a static report.
+
+Its version history is:
+
+Version
+
+Deposit
+
+v6.0
+
+#825
+
+v6.1
+
+#1397
+
+v7.0
+
+#1398
+
+v7.2
+
+#1396 / #1401
+
+v8.3
+
+#3
+
+v8.9
+
+#936
+
+v10.9
+
+#1461
+
+v12.167
+
+#1676
+
+A significant architectural change occurred on August 17, 2026.
+
+From that date, the document identifies:
+
+data/EA-WG-CAPTURES-01.json
+
+as the single writable authoritative data store.
+
+The distinction between two operations is explicit:
+
+INTAKE: Adds a new observation. The document describes this as safe.
+
+REPAIR: Modifies an existing record. This is a separate, more consequential operation.
+
+The public-facing websites are renderings of this underlying registry, not independent copies of its data.
+
+This is intended to preserve a single source of truth while allowing multiple interfaces to display the same research corpus.
+
+The document also distinguishes the dataset from publications about it. For example, deposit #833 is a paper discussing the registry, not another edition of the dataset.
+
+6. What does the October 12 snapshot tell us?
+One revealing change concerns the growth of ChatGPT observations.
+
+The document reports:
+
+At v10.9, ChatGPT accounted for just 3 captures.
+
+At v12.167, ChatGPT accounted for 167 captures.
+
+This illustrates the expansion of the registry beyond its earlier emphasis on Google's AI surfaces.
+
+The dataset is therefore not simply an archive of Google AI Overview screenshots. It is developing into a broader observational corpus of how different AI systems retrieve and compose information.
+
+There is also an important numerical distinction: the deposit title reports 811 captures, while the later archival discussion records 813 observations in the deposited registry. The two figures should not be silently conflated.
+
+7. What are the document's limitations?
+The document is unusually explicit about what the registry cannot establish.
+
+1. It is not a representative statistical sample. The collection is largely assembled from discovered anomalies and observations of particular subjects.
+
+2. It studies its own reception. Much of the corpus concerns the Crimson Hexagonal Archive and its associated intellectual material. This is simultaneously an advantage for longitudinal research and a limitation on generalization.
+
+3. It cannot establish internal AI mechanisms. It observes outputs. It does not have direct access to the internal processes that produced them.
+
+4. Presence is not quality. An AI system can mention an entity while representing it inaccurately.
+
+5. PER has a limited scope. It measures provenance carried into an answer, not the overall factual accuracy of everything the answer says.
+
+6. Reproducibility is not guaranteed indefinitely. AI-generated results change, and later replication of a historical observation may not be possible.
+
+7. There are known defects. The v12.167 document explicitly states that these defects have not been repaired in that snapshot.
+
+The author also notes that every reader used in the PER assessment passes was a Claude instance. That is relevant when interpreting the measurement process.
+
+These qualifications matter: the registry is an observational instrument, not proof of deliberate suppression, manipulation, or a particular company's intentions.
+
+8. What makes this project distinctive?
+I would identify three particularly interesting features.
+
+First: it turns AI answers into research evidence.
+
+Instead of treating generated answers as ephemeral search results, it preserves them as dated, attributable, and independently inspectable observations.
+
+Second: it separates retrieval from representation.
+
+An AI system might retrieve the right source but omit it from the generated answer. It might also preserve an idea while losing its originator.
+
+The registry makes those different outcomes measurable.
+
+Third: it studies the relationship between an entity and its machine-generated representation over time.
+
+This is more ambitious than checking whether a website appears in an AI Overview. It asks whether the machine continues to recognize the entity as itself.
+
+The document's underlying research proposition is that AI summarization systems increasingly function as a kind of horizon of reception: they influence how information, authorship, and intellectual work are encountered and understood.
+
+Overall interpretation
+The best way to understand the AI Overview Capture Registry is as a combination of:
+
+A longitudinal observational database.
+
+A reproducible evidence-collection protocol.
+
+A provenance and attribution measurement framework.
+
+An archive of machine-generated representations.
+
+A research instrument for studying how computational systems mediate intellectual visibility.
+
+Its fundamental question is:
+
+When someone asks an AI system about a particular subject, what does the system actually make of that subject, what sources and authorship does it preserve, what does it substitute or omit, and how does that representation change over time?
+
+That is a considerably more specific research objective than ordinary AI search monitoring.
+
+Primary documents and verification
+These are the most useful places to inspect the work and its methodology:
+
+The document's archival and methodological discussion  — includes the v12.167 deposit's identifying information, capture definition, measurement framework, version history, and limitations.
+
+Canonical Capture Registry and gallery  — the actual evolving dataset and its capture index. Note that its current edition is later than v12.167.
+
+An example of a later ChatGPT reading of the registry  — useful for seeing how the archive itself is subsequently represented by an AI system.
+
+My assessment: The most important contribution is its insistence that AI-mediated visibility is not equivalent to accurate representation. A person or work can be retrieved, mentioned, partially reproduced, misattributed, or effectively replaced by something adjacent. The registry attempts to distinguish those outcomes with preserved evidence and explicit measurement rules. That is the intellectual core of the project.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+Chat with ChatGPT
+Ask ChatGPT
+

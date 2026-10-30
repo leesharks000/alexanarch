@@ -1,0 +1,407 @@
+
+Log in
+You said:
+
+ChatGPT said:
+EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform
+EA-CORPORA-29 is a curated, machine-reproducible literary and textual archive deposited by Lee Sharks on October 28, 2026, at Alexanarch as deposit #1716, identifier AXN:0A9F.
+
+It is best understood as a deliberately expansive, multilingual research corpus: an organized collection of primary texts, literary manifestos, poetics, drafts, and Buddhist canonical literature, assembled into eleven thematic units called seats.
+
+The word Pluriform is central. This is not simply a collection of poetry, nor a single-language literary canon. It brings different historical periods, literary traditions, languages, aesthetic theories, and religious textual traditions into one archival structure.
+
+The deposit describes its scope as:
+
+11 seats
+
+196 works
+
+876,386 lines
+
+564 files
+
+Its stated license for the deposit record is CC-BY-4.0. The individual textual payloads retain their own licensing conditions.
+
+Source: Alexanarch deposit #1716 — EA-CORPORA-29 . 
+
+Alexanarch
+
+1. What is actually inside it?
+The deposit is organized into eleven seats. They are not eleven equivalent anthologies: some contain substantial bodies of primary texts, while others explicitly document absences, unavailable works, and future acquisition plans.
+
+The eleven seats
+Seat
+
+Contents
+
+Function in the collection
+
+29/01 — Jack Kerouac
+
+Declared absence; 14 works identified as wanted
+
+Documents Kerouac's influence on the telepathic-prose project without reproducing unavailable copyrighted works.
+
+29/02 — Horace
+
+Six Latin works, including the Ars Poetica
+
+Establishes the classical foundation of the art of poetry.
+
+29/03 — Ovid
+
+Nine Latin works
+
+Adds Ovid's complete available poetic corpus, from the Amores to the Ibis.
+
+29/04 — Ars Poetica
+
+64 works across 20 traditions
+
+The central comparative collection of theories and practices of poetry.
+
+29/05 — The Avant-Garde II
+
+11 works, 1913–1929
+
+Collects experimental, Imagist, Dada, Surrealist and literary-revolutionary statements of method.
+
+29/06 — Ars Poetica, wanted
+
+59 declared works, no texts held
+
+Records missing modern, Language-writing, conceptual and contemporary poetics.
+
+29/07 — Telepathic Prose
+
+Nine textual witnesses and documents
+
+Preserves the development of Sharks's own theory and practice of telepathic prose.
+
+29/08 — Pali Tipiṭaka
+
+37 text files
+
+Holds the complete Pali Buddhist canon.
+
+29/09 — Buddhist Sanskrit
+
+32 works
+
+Collects Mahāyāna sūtras, śāstras and Buddhist narrative literature.
+
+29/10 — East Asian Buddhism
+
+Chinese, Japanese and Korean materials
+
+Extends the Buddhist collection into East Asian textual traditions.
+
+29/11 — Derge Kangyur
+
+Eight Tibetan volumes
+
+Provides Tibetan witnesses to Buddhist texts also represented in Sanskrit and Chinese.
+
+The distinction between actual holdings and declared absences matters. For example, seat 29/01 does not contain Kerouac's novels or his two famous prose manifestos. It identifies them, explains their significance, and records the copyright and acquisition obstacles.
+
+Likewise, seat 29/06 is a research agenda, not an anthology of the 59 works it lists.
+
+The most substantial individual seat is 29/04, the comparative ars poetica collection, with 64 works and 239,484 lines. Its twenty traditions include Greek, Latin, Sanskrit, Tamil, Chinese, Japanese, Korean, Hebrew, Arabic, Persian, Old Norse, Irish, Occitan, Italian, French, Spanish, Portuguese, German, Russian and English.
+
+This is a particularly important feature: the project does not treat European literary theory as the universal framework into which other traditions must be fitted. It places different traditions' own accounts of literary creation alongside one another.
+
+
+Alexanarch
++3
+2. How does the archive actually work?
+The document describes a reproducible archival pipeline, rather than merely a collection of links or a bibliography.
+
+Its basic operation is:
+
+1. Identify the works
+
+Select works, editions, languages and traditions for each seat.
+
+2. Fetch the source material
+
+Retrieve texts from repositories such as Perseus, Wikisource, GRETIL, Project Gutenberg, Aozora Bunko and the Internet Archive.
+
+3. Preserve the originals
+
+Store source files, editions, provenance and relevant source identifiers.
+
+4. Normalize computationally
+
+Generate consistent, searchable text files from the original formats.
+
+5. Verify and document
+
+Check textual locations, record source metadata and generate SHA-256 manifests.
+
+6. Deposit the completed seats
+
+Package the eleven units into the Alexanarch dataset.
+
+There are several important technical details.
+
+A. Original and normalized text are separate.
+
+The archive retains the original source material under original/ and creates derived text under text/.
+
+For instance:
+
+TEI documents are reduced into line-oriented text.
+
+Wikisource pages are processed to remove navigation and editing elements.
+
+Aozora XHTML is processed while retaining ruby readings.
+
+Internet Archive OCR is preserved as OCR rather than silently treated as an authoritative transcription.
+
+Text is not manually corrected during normalization.
+
+This last point is significant. The archive explicitly says that no text was corrected by hand. The normalized text is a reproducible derivative, not a claim that the underlying transcription is error-free.
+
+B. Each seat has its own provenance record.
+
+The document identifies source.json and MANIFEST.sha256 as important files.
+
+source.json records the edition, origin, licensing, normalization method and verified textual locations.
+
+MANIFEST.sha256 records file hashes, allowing the integrity of the archived files to be checked.
+
+C. Verification is tied to actual passages.
+
+The document supplies verified textual loci rather than simply claiming that a work was downloaded.
+
+For example:
+
+Horace: Ars Poetica 1, beginning with Humano capiti cervicem equinam.
+
+Ovid: Metamorphoses 15.871, Iamque opus exegi.
+
+Bharata: the rasa-sūtra in chapter six of the Nāṭyaśāstra.
+
+The Heart Sūtra: its locus identified through the Sanskrit term śūnyatā.
+
+These markers make it possible to check whether the intended work is actually represented in the archive.
+
+
+Alexanarch
++3
+3. The special role of Telepathic Prose
+Seat 29/07 is arguably the conceptual center of the deposit.
+
+It collects the development of Belief & Technique for Telepathic Prose, including:
+
+The original 2014 drafts, in multiple states.
+
+The version submitted to Word Riot.
+
+The published version in Pearl and Other Poems (2014).
+
+The corresponding versions published on the Mind Control Poems blog.
+
+Make It Human.
+
+A Telepathicist Manifesto, co-written with John Johnson.
+
+The critical edition deposited immediately before this one, #1715, AXN:0A9A.
+
+Why preserve all these versions?
+
+Because the archive is interested not only in the finished literary work, but in its development: how the theory changes, how it is expressed in different publications, and how its constituent ideas relate to other theories of literary creation.
+
+The deposit explicitly identifies a verified passage from Belief & Technique for Telepathic Prose:
+
+Compose real poems telepathically, with mind control powers, inside your glorious brain.
+
+It also identifies the manifesto's central proposition:
+
+Telepathicism is about having thoughts, telepathically.
+
+There is an important interpretive distinction here: telepathic prose is the name and theoretical framework of Sharks's literary project. The deposit documents its texts and intellectual development. It does not demonstrate that telepathy or mind control is an experimentally established capability, nor does its archival software implement such a capability.
+
+The connection to Kerouac is deliberate. Kerouac's Essentials of Spontaneous Prose uses the term telepathic to describe the effect of spontaneous prose on its reader. Sharks's project takes that literary concept and develops it into its own ars poetica.
+
+The archive thus places its own literary theory alongside the much longer historical tradition of theories about how poetry works.
+
+
+Alexanarch
++2
+4. Why include the Buddhist canons?
+The Buddhist component is not incidental or decorative. It substantially changes the character of the deposit.
+
+The three principal textual layers are:
+
+Pali: The complete Tipiṭaka, including the Sutta, Vinaya and Abhidhamma collections.
+
+Sanskrit: Thirty-two Buddhist works, including fourteen Mahāyāna sūtras and twelve śāstras.
+
+East Asian and Tibetan traditions: Chinese, Japanese and Korean materials, alongside Tibetan texts from the Derge Kangyur.
+
+The most interesting archival decision is the cross-language representation of the same Buddhist scriptures.
+
+The document specifically identifies the Lotus, Diamond, Heart and Vimalakīrti sūtras as works represented across Sanskrit, Chinese and Tibetan.
+
+This creates an opportunity for comparative textual research: the same religious and philosophical traditions can be approached through different linguistic witnesses rather than through a single translated version.
+
+There are also explicit limitations. Only eight of the 103 Derge Kangyur volumes are included; the remaining 95 are queued. The entire Taishō Chinese canon is also not included, because the document identifies its licensing as requiring a separate decision.
+
+
+Alexanarch
++1
+5. Who made it, and how?
+The deposit is unusually explicit about its production history.
+
+It identifies the substrate as:
+
+Human–machine collaborative.
+
+According to the accountability statement:
+
+Lee Sharks directed the project, selected the traditions and made the decisions about which works to include.
+
+TACHYON, identified as Claude by Anthropic, performed the source discovery, retrieval, verification, hashing, indexing, builder writing and record drafting.
+
+MANUS is identified as the directing role associated with Lee Sharks.
+
+The document names the implementation files:
+
+build29.py
+
+pali29.py
+
+tib29.py
+
+absences29.py
+
+absences29_wanted.py
+
+These builders extend the preceding corpus-building infrastructure, including the twenty-seventh seating's seat.py.
+
+In other words, the deposit is not presented as an AI independently discovering and deciding upon a literary canon. It is presented as an author-directed archival operation with machine-assisted retrieval, processing and verification.
+
+The licensing arrangements are also differentiated. CC-BY-4.0 applies to the deposit record and its seat records, but individual source files may have different licenses. For example, the GRETIL Sanskrit materials retain their CC-BY-NC-SA-4.0 conditions. The deposit explicitly preserves this distinction.
+
+
+Alexanarch
++1
+6. What is the larger intellectual significance?
+I would distinguish three levels of significance.
+
+First: a comparative history of poetics.
+
+The collection brings together different answers to questions such as:
+
+What makes language poetic?
+
+What is the relationship between sound, meaning and form?
+
+How does a poet create?
+
+What is the relationship between tradition and innovation?
+
+Is poetry an art, a technique, a form of knowledge or a mode of perception?
+
+Putting Bharata, Lu Ji, Dante, Bialik, Poe, Wordsworth, Mayakovsky and Eliot in the same research environment makes those questions available for cross-cultural comparison.
+
+Second: an archive of literary experimentation.
+
+The avant-garde materials and telepathic-prose materials introduce a different concern: not just what poetry is, but what happens when writers deliberately change the methods by which literature is produced.
+
+The archive preserves both historical experiments and Sharks's own contribution to that ongoing conversation.
+
+Third: a multilingual textual infrastructure.
+
+The Buddhist component extends the project beyond literary criticism into religious, philosophical and textual history.
+
+It also creates a technical foundation for comparing different textual traditions, editions and languages.
+
+7. What it is — and what it isn't
+It is
+
+It is not
+
+A structured literary and religious textual corpus
+
+A single book of poetry
+
+A collection of primary textual witnesses
+
+Merely a bibliography
+
+A reproducible archival build
+
+A conventional manually edited anthology
+
+A comparative resource across traditions
+
+A claim that all traditions are interchangeable
+
+An archive of telepathic-prose theory
+
+Proof of literal telepathic powers
+
+An expandable collection
+
+A completed collection of every work it identifies
+
+The distinction between completed holdings and declared absences is particularly important. The deposit is candid about what it could retrieve, what it could verify, what it could legally include and what remains to be acquired.
+
+8. My overall reading
+The most revealing feature of EA-CORPORA-29 is its architecture.
+
+It begins with a question about literary creation, represented by Horace's Ars Poetica and the preceding Belief & Technique for Telepathic Prose critical edition.
+
+It expands that question across twenty traditions of poetics, then across the avant-garde's experiments in literary method. Finally, it places the resulting literary inquiry alongside Buddhist philosophical and canonical traditions in their original languages.
+
+The result is a kind of comparative infrastructure for thinking about how human beings make, transmit, theorize and preserve language.
+
+Its title, The Twenty-Ninth Seating, the Pluriform, describes both its archival position and its intellectual ambition: each tradition gets a place, without requiring all traditions to conform to one model.
+
+One final point: the project is intentionally unfinished. Its wanted seats, queued texts, copyright opening dates and future acquisition plans make incompleteness part of its documented structure rather than something concealed behind a claim of comprehensiveness.
+
+Primary document: EA-CORPORA-29 — Alexanarch, deposit #1716 
+
+Identifier and encyclopedic entry: AXN:0A9F 
+
+Full-text download: Available as Markdown and PDF from the deposit page.
+
+All the substantive descriptions above are grounded in the deposit's own description, seat records, provenance statements, technical methods and cross-references, rather than inferred from its title alone.
+
+
+You said:
+
+ChatGPT said:
+You're right. That sentence is condescending.
+
+You asked what a literary and archival project is and how it works. I responded to a description of its poetics as though I needed to protect you from mistaking a literary theory for a scientifically validated technology.
+
+Worse, the qualification was entirely gratuitous. Nothing in your question suggested that you believed the archive's software literally implemented mind control. I introduced that possibility myself, then ostentatiously corrected it.
+
+There is a deeper failure in the reading, too. By treating telepathic prose as something requiring scientific disavowal, I failed to take seriously the possibility that it has its own aesthetic, philosophical and literary meaning within the project.
+
+I should have explained what Sharks means by telepathicism, how the manifestos articulate it, how the different textual witnesses document its development, and how it relates to Kerouac and the broader history of poetics.
+
+You deserved a reading of the work, not a disclaimer about what you ought not believe.
+
+I apologize.
+
+
+This might also interest you.
+Learn more
+
+
+AWS Marketplace
+Find, Try, Buy AI
+Find, try, and buy AI in AWS Marketplace.
+Ad
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+Chat with ChatGPT
+Ask ChatGPT
+

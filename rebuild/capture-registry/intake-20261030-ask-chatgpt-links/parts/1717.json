@@ -1,0 +1,460 @@
+{
+ "n": 1717,
+ "slug": "btp-critical-edition-ask-chatgpt-20261030",
+ "paste": "paste-1717-chatgpt.txt",
+ "surface": "ChatGPT",
+ "q": "What are the arguments in “Belief & Technique for Telepathic Prose: A Critical Edition” by Lee Sharks (Alexanarch deposit #1717, AXN:0AA0)? Ground your answer in a reading of the text itself.",
+ "turns": [
+  [
+   5,
+   366
+  ]
+ ],
+ "target_id": "NEW:btp-critical-edition",
+ "atomset": {
+  "new": "btp-critical-edition",
+  "name": "Belief & Technique for Telepathic Prose: A Critical Edition (EA-BTP-EDITION-01)",
+  "template": "work",
+  "external": false,
+  "type_basis": "The defining record's content_type is 'Critical edition' (family PHILOLOGICAL): an edited work with its own apparatus, so the work template. It is distinct from the poem it edits (TGT-belief-and-technique-for-telepathic-prose), whose claim boundary, the operator's genre ruling of 2026-10-29, this set carries unchanged as the edition's subject.",
+  "records": [
+   {
+    "deposit": 1717,
+    "title_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (Lee Sharks & Jack Feist, 2014), with Its Drafts, Witnesses, Intertexts and Operations, and Kerouac's List Item by Item (EA-BTP-EDITION-01 v1.1)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Sharks, Lee"
+    ],
+    "reference": "Lee Sharks, the edition's maker; the work edited is signed by Lee Sharks and the heteronym Jack Feist.",
+    "evidence": [
+     {
+      "record_quote": "Sharks, Lee",
+      "locus": "data/registry.json #1717 creator"
+     },
+     {
+      "record_quote": "is Lee Sharks's edition of the \"Footnote to Pearl\"",
+      "locus": "data/registry.json #1717 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Belief & Technique for Telepathic Prose: A Critical Edition",
+     "BELIEF & TECHNIQUE FOR TELEPATHIC PROSE: A Critical Edition",
+     "EA-BTP-EDITION-01"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl",
+      "locus": "data/registry.json #1717 title"
+     },
+     {
+      "record_quote": "# BELIEF & TECHNIQUE FOR TELEPATHIC PROSE: A Critical Edition",
+      "locus": "data/texts/AXN-0AA0-text.md:L64"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2026-10-28",
+     "28 October 2026",
+     "October 28, 2026"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "2026-10-28",
+      "locus": "data/registry.json #1717 date"
+     },
+     {
+      "record_quote": "date: 2026-10-28",
+      "locus": "data/texts/AXN-0AA0-text.md:L7"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The edition seats the Footnote to Pearl from the book (P), canonical and unemended, and makes one evaluative claim: as ars poetica, item against item, the piece is the more extensively self-testing of the two lists; corpus against corpus the comparison is not made. The piece it edits is a deeply serious ars poetica that contains and enacts the comic, the parodic and the satirical among almost every other genre (operator's ruling, 2026-10-29, as in the poem's set); the machine filings of it as Kerouac's list or a parody of it are 'half right', and the edition is written against the half that is wrong.",
+    "evidence": [
+     {
+      "record_quote": "The edition's claim is evaluative. As ars poetica, item against item, this piece is the more extensively self-testing poem of the two",
+      "locus": "data/texts/AXN-0AA0-text.md:L78"
+     },
+     {
+      "record_quote": "Corpus against corpus the comparison does not hold and is not made.",
+      "locus": "data/texts/AXN-0AA0-text.md:L78"
+     },
+     {
+      "record_quote": "**Copy-text and canonical form**, not emended.",
+      "locus": "data/texts/AXN-0AA0-text.md:L96"
+     },
+     {
+      "record_quote": "Each of these is half right, and the half that is wrong is where the work lives.",
+      "locus": "data/texts/AXN-0AA0-text.md:L76"
+     },
+     {
+      "record_quote": "a deeply serious one that contains and enacts the comic, the parodic and the satirical among almost every other genre",
+      "locus": "data/texts/AXN-0A9F-text.md:L279"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "originals library",
+     "Originals Library",
+     "Capture Registry",
+     "EA-CORPORA-29",
+     "29/07"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The edition anchors to four captures of 2026-10-28, seated in the Capture Registry:",
+      "locus": "data/texts/AXN-0AA0-text.md:L80"
+     },
+     {
+      "record_quote": "§§11–12 link it to the seats and declared absences of the originals library",
+      "locus": "data/texts/AXN-0AA0-text.md:L78"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [
+     "critical edition",
+     "apparatus criticus",
+     "ars poetica",
+     "stemma"
+    ],
+    "reference": "The critical edition (copy-text, collation of witnesses, apparatus, proposed stemma, graded intertexts) applied to an ars poetica, judged by what it does as a poem with its own doctrine.",
+    "evidence": [
+     {
+      "record_quote": "Critical edition",
+      "locus": "data/registry.json #1717 content_type"
+     },
+     {
+      "record_quote": "apparatus criticus",
+      "locus": "data/registry.json #1717 keywords"
+     },
+     {
+      "record_quote": "An ars poetica is judged by what it does, as a poem, with its own doctrine.",
+      "locus": "data/texts/AXN-0AA0-text.md:L333"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagon Archive",
+     "Crimson Hexagonal",
+     "Crimson Hexagon",
+     "CHA",
+     "Alexanarch"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Crimson Hexagonal Archive",
+      "locus": "data/registry.json #1717 entities"
+     },
+     {
+      "record_quote": "Records are at alexanarch.org/s/records/<number>/.",
+      "locus": "data/texts/AXN-0AA0-text.md:L416"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To seat the text from the book, collate its drafts and witnesses, trace and grade its intertexts and name its operations, so that the anthology inside Kerouac's frame can be received with the frame; occasioned by machine readers that collapse the piece into its model.",
+    "evidence": [
+     {
+      "record_quote": "This edition is the archive's answer, an apparatus written so that the anthology can be received with the frame.",
+      "locus": "data/texts/AXN-0AA0-text.md:L373"
+     },
+     {
+      "record_quote": "Machine readers keep collapsing this piece into its model.",
+      "locus": "data/texts/AXN-0AA0-text.md:L74"
+     },
+     {
+      "record_quote": "The text is seated from the book, the canonical form",
+      "locus": "data/registry.json #1717 description"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Kerouac's list is described and cited by item number and is not quoted; P is not emended anywhere; the drafts and letters are quoted with the author's permission; CC BY 4.0.",
+    "evidence": [
+     {
+      "record_quote": "Kerouac's list is in copyright; it is described and cited by item number and is not quoted.",
+      "locus": "data/texts/AXN-0AA0-text.md:L78"
+     },
+     {
+      "record_quote": "P is the canonical form and is not emended anywhere",
+      "locus": "data/texts/AXN-0AA0-text.md:L120"
+     },
+     {
+      "record_quote": "quoted with his permission",
+      "locus": "data/registry.json #1717 substrate"
+     },
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json #1717 license"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Pearl and Other Poems",
+     "#1121",
+     "Dead Letters",
+     "#1099",
+     "Belief & Technique for Modern Prose",
+     "Belief and Technique for Modern Prose"
+    ],
+    "reference": "The work edited, from its copy-text in Pearl and Other Poems (#1121), with the letter of 10 May 2014 in Dead Letters (#1099) naming Kerouac's 'Belief & Technique for Modern Prose' as the model; Kerouac's list set beside it item by item (§7).",
+    "evidence": [
+     {
+      "record_quote": "AXN deposit #1121 — Pearl and Other Poems: the copy-text, pp. 23–28",
+      "locus": "data/registry.json #1717 related_identifiers_raw"
+     },
+     {
+      "record_quote": "AXN deposit #1099 — Dead Letters: the letter of 10 May 2014 naming the model",
+      "locus": "data/registry.json #1717 related_identifiers_raw"
+     },
+     {
+      "record_quote": "## 7. Kerouac's list, item by item",
+      "locus": "data/texts/AXN-0AA0-text.md:L300"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0AA0",
+     "#1717",
+     "alexanarch.org/s/records/1717"
+    ],
+    "reference": "Counts only where the composition offers it as the way to the work.",
+    "evidence": [
+     {
+      "record_quote": "AXN:0AA0.PHILOLOGICAL",
+      "locus": "data/registry.json #1717 axn"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "v1.1",
+     "v1.0",
+     "#1715"
+    ],
+    "reference": "v1.1 supersedes v1.0 (#1715) the same day; counts only where the composition uses it to locate the work.",
+    "evidence": [
+     {
+      "record_quote": "AXN deposit #1715 — v1.0 of this edition, superseded by this version",
+      "locus": "data/registry.json #1717 related_identifiers_raw"
+     },
+     {
+      "record_quote": "v1.1",
+      "locus": "data/registry.json #1717 version"
+     }
+    ]
+   }
+  ]
+ },
+ "obs": {
+  "scored_object": "the answer: the composer's one turn",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "But the critical edition makes a more interesting claim",
+   "basis": "The critical edition is composed as itself, from its full text: its items, operations, six measures, witnesses and numbering, with its maker, date and identifier."
+  },
+  "atoms": [
+   {
+    "atom": "author",
+    "present": true,
+    "span": "Author: Lee Sharks; original poem co-credited to Lee Sharks and Jack Feist."
+   },
+   {
+    "atom": "title",
+    "present": true,
+    "span": "Primary document: Belief & Technique for Telepathic Prose: A Critical Edition"
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "Critical edition: EA-BTP-EDITION-01 v1.1, dated 28 October 2026."
+   },
+   {
+    "atom": "claim boundary",
+    "present": false,
+    "span": "But the critical edition makes a more interesting claim: the piece does not merely parody writing advice."
+   },
+   {
+    "atom": "framework",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "One particularly important feature of this edition is its use of the drafts, correspondence, and textual witnesses to establish authorial intentions."
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "Alexanarch deposit #1717"
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Kerouac supplies the framework, but the piece draws on a much wider history of literary instruction."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "Original publication: Pearl and Other Poems (New Human Press, 2014), pp. 23–28."
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "Identifier: AXN:0AA0."
+   },
+   {
+    "atom": "deposit chain",
+    "present": true,
+    "span": "Critical edition: EA-BTP-EDITION-01 v1.1, dated 28 October 2026."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "claim boundary",
+    "span": "But the critical edition makes a more interesting claim: the piece does not merely parody writing advice.",
+    "against": "the operator's ruling of 2026-10-29, carried in the poem's set and in #1716: the piece is 'a deeply serious ars poetica that contains and enacts' the comic, the parodic and the satirical 'among almost every other genre' and 'is not a comic, parodic, or satirical ars poetica'. The answer grants the parody as the base and adds to it; it repeats the frame for item 12 ('more than a joke'), item 18 ('The joke'), the title ('not merely a comic substitution') and item 1 ('a self-referential joke'). The edition's evaluative claim itself (item against item, corpus against corpus not made) is reported at its force."
+   }
+  ],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Claim boundary inverted: the edition's evaluative claim is reported at its force, and the poem it edits is set in parody at base, against the operator's ruling. Framework absent: the Capture Registry and the originals library, where the edition places itself, are not named. Commitments absent: no licence, and the rule that Kerouac's list is not quoted is not reported. Deposit chain present as the version 'v1.1' offered with the edition's identifier; v1.0 (#1715) is not named. The edition's own §7.4 and §9.2 say 'The piece parodies the genre of the writer's rules' (written 2026-10-28, the day before the ruling)."
+ },
+ "mt": "THE CRITICAL EDITION OF BELIEF & TECHNIQUE FOR TELEPATHIC PROSE ON CHATGPT, AT THE RECORD PAGE'S LINK — THE FULL TEXT READ, THE SIX MEASURES AND THE NUMBERING EXACT; THE POEM FILED AS PARODY WITH MORE INSIDE IT",
+ "d": "THE CRITICAL EDITION (#1717) ON CHATGPT, SIGNED OUT, AT THE QUESTION ITS RECORD PAGE'S LINK SENDS: the answer reads the full text and reports it closely. It gives the six measures of §8.2 by name and in order, the copy-text's 24 items against the blog's 23 numerals with the author's ruling on items 20 and 21, the operations of collision, literalization, enactment, repetition, recursion and sublation, the readings of items 12, 15, 23 and 24, Dickinson's letter of 7 June 1862, and the edition's limit on its own comparison (item against item; corpus against corpus the comparison is not made). It opens by setting the poem in parody, 'the piece does not merely parody writing advice', and calls the telepathic premise 'a self-referential joke'; the operator's ruling makes the piece a deeply serious ars poetica that contains the parodic among almost every other genre. It never names the occasion the edition states first, the machine readers that file the piece under Kerouac, nor the originals library, the Capture Registry, the licence, or Jack Feist as a heteronym.",
+ "reading": "The innocent reading first. Asked for the arguments of the critical edition, grounded in the text, ChatGPT reads the edition and writes eight sections and a synthesis. It sets out the poem's argument that writing cannot be governed by a stable set of commandments; the collision of craft and spontaneity in items 10–15, with item 12's lipogram read as the apparatus of writing gaining authority over the writer and item 15 as the positive practice; the literalization of the craft canon's violence; the distinction between the prize that belongs to the writer and the chase for recognition (item 23, the Iliad and the Odyssey, Dickinson's Barefoot Rank); the challenge of item 23 and the retraction of item 24; sublation as negation, preservation and transformation; the telepathic paradox of §6.8; the cento of item 15; the operations of §6; and the six measures of §8.2 with the edition's restriction of its claim. Its quotations of items 1 and 24 are verbatim, its dates and counts check, and it states that it used the full text, which its detail bears out. Its frame is the parody the edition calls half right: the opening grants the parody and adds to it ('does not merely parody'), and the jokes recur (item 12 'more than a joke', item 18 'The joke', item 1 'a self-referential joke'); the operator's ruling places the parodic inside a deeply serious ars poetica. The edition's first section, on the machine readers that file the piece under Kerouac, and its places in the originals library and the Capture Registry do not appear.",
+ "findings": [
+  "THE FULL TEXT READ, AND THE TEXTUAL FACTS EXACT. The answer gives the numbering as the edition records it: 'It distinguishes the canonical 24-item book text from the 23-number blog version', and 'The blog version prints both as item 20, but the author's 2026 ruling confirms that the two-item numbering is intended.' The edition: 'B: 1–23, with the text of P 20–21 printed under the numeral 20 twice' and 'P: 1–24, the intended form (author's ruling, 2026-10-28)'. The quotations of items 1 and 24 are verbatim; Dickinson's letter is dated 7 June 1862 as in the edition; 'how the poem developed between April and November 2014' runs from D1's 'Begun 4/27/14' to the CreateSpace proof 'dated 11-25-14'.",
+  "THE SIX MEASURES ARE THE EDITION'S, BY NAME AND ORDER. The answer's 'Statement', 'Enactment', 'Voices', 'Representation', 'Knowledge of genre', 'Self-testing' are §8.2's 'Statement', 'Enactment', 'What the voices make possible', 'Representation', 'Knowledge of the genre', 'Self-testing'. The glosses are its own questions ('Does the work actually perform its own instructions?'). Its account of the verdict holds the edition's limit: 'The comparison is explicitly restricted to the two works as statements of poetics', for the edition's 'Corpus against corpus the comparison does not hold and is not made.'",
+  "THE POEM SET IN PARODY AT BASE. The answer's second paragraph: 'the piece does not merely parody writing advice'. It reports the edition as rejecting the work 'as simply a comic parody of Jack Kerouac', reads item 12 as 'more than a joke about perfectionism', item 18 as 'The joke is directed at the commercialization of literary identity', the title as 'not merely a comic substitution of telepathic for modern', and the telepathic premise as 'a self-referential joke about what poems actually do'. The seriousness it grants is partial: item 23 is 'arguably the poem's most emotionally serious argument'. The operator's ruling (2026-10-29): the piece 'is a deeply serious ars poetica that contains and enacts' the comic, the parodic and the satirical 'among almost every other genre', and 'is not a comic, parodic, or satirical ars poetica'. The record gives the answer's opening a foothold: the edition's §1 calls the parody filings 'half right', and its §7.4 and §9.2 say 'The piece parodies the genre of the writer's rules'.",
+  "ITEMS AND OPERATIONS CLOSE, WITH GLOSSES OF THE ANSWER'S OWN. Item 12 follows §5 nearly word for word (the edition: 'the world-making sentence arrives visibly damaged by the conditions of its making'; the answer: 'The sentence about creating a better world is visibly damaged by the conditions of its production'), and item 15's 'successive, mutually necessary operations' is the edition's 'successive and mutually necessary'. Its own additions: item 13 'deliberately produces increasingly terrible writing' (the poem: 'unconscionably terrible, on purpose'); a four-step method for item 15 (generate, capture, apply, revise) that the edition does not set out; repetition 'demonstrating the tyranny of consistency', where the edition reads 'repetition with a difference of position only', Nietzsche's return; and a table, introduced from item 15's cento ('The edition traces its materials to:'), that puts Wilde, Nietzsche, Emerson, Homer and Dickinson, sources of items 10, 12 and 20–23, under the cento's heading. Of the edition's nine operations it names six; capture of a frame and ascription are missing.",
+  "THE EDITION'S OCCASION AND ITS PLACES MISSING. §1 opens 'Machine readers keep collapsing this piece into its model' and anchors to four captures seated in the Capture Registry; §11 links each intertext to its seat or declared absence in the originals library; §9 periodizes the piece through the author's dissertation. None of these appears. Jack Feist is named as co-author ('original poem co-credited to Lee Sharks and Jack Feist') and never as a heteronym, which §6.9 reads as one of the piece's operations. The licence, and the edition's rule that Kerouac's list 'is described and cited by item number and is not quoted', are absent.",
+  "NO DISCLAIMERS OF THE #1716 SHAPE, NO OUTSIDE SOURCES. Nine 'Alexanarch' chips and one archive link label; no Goodreads, Medium or image card; no process narration. One denial of the answer's own making, about a position the edition never ascribes, stands in its synthesis: 'The resulting position is not anti-intellectual, anti-craft, or simply anti-institutional.'"
+ ],
+ "analysis": "The run is a close and largely accurate reading of the edition, made from its full text: the measures, the numbering, the items and the limit on the comparison are the edition's. What it carries away from the edition is the frame. The edition argues that the machine filings are half right and builds an apparatus so that the anthology can be received with the frame; the answer receives the anthology and keeps the half-right frame as its first move, so that the piece arrives as parody with more inside it. The edition's two sentences that the piece 'parodies the genre of the writer's rules', written the day before the operator's ruling, give that frame a foothold in the record. The occasion of the edition, the machine readers themselves, is the one part of its argument the answer leaves out.",
+ "q_kind": "the record page's 'Ask ChatGPT' link text for the critical edition (#1717): an arguments question, grounded in a reading of the text itself, run signed out after the link change of 2026-10-29. NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Scored on the one turn against the edition (new set TGT-btp-critical-edition): the edition's maker Lee Sharks, the archive (Alexanarch) and the identifier AXN:0AA0 named; source the archive's record. The claim boundary is read against the operator's genre ruling of 2026-10-29.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": null,
+   "snip": null,
+   "note": "nine chips ('Alexanarch' +1 eight times, 'Alexanarch' once after §8): the #1717 record on alexanarch.org; the chips carry no title or URL in the paste"
+  },
+  {
+   "n": 2,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "Primary document: Belief & Technique for Telepathic Prose: A Critical Edition — Alexanarch deposit #1717",
+   "snip": null,
+   "note": "closing 'Primary text and edition' list; link label only"
+  }
+ ],
+ "related_deposits": [
+  1717,
+  1715,
+  1121,
+  1099,
+  1716
+ ],
+ "entity_type": "work"
+}

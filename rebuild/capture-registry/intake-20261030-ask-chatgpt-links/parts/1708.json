@@ -1,0 +1,411 @@
+{
+ "n": 1708,
+ "slug": "ea-corpora-25-ask-chatgpt-20261030",
+ "paste": "paste-1708-chatgpt.txt",
+ "surface": "ChatGPT",
+ "q": "What is “EA-CORPORA-25 — The Twenty-Fifth Seating” by Lee Sharks (Alexanarch deposit #1708, AXN:072B), and how does it work? Ground your answer in the document itself.",
+ "turns": [
+  [
+   5,
+   285
+  ]
+ ],
+ "target_id": "NEW:ea-corpora-25",
+ "atomset": {
+  "new": "ea-corpora-25",
+  "name": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions",
+  "template": "dataset",
+  "external": false,
+  "type_basis": "The defining record's content_type is 'Dataset' (family DATASET), a seating of the originals shelf; the dataset template, with purpose, commitments and lineage as for EA-CORPORA-29.",
+  "records": [
+   {
+    "deposit": 1708,
+    "title_quote": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions — The Secret Book of Walt with the Forty-Six Golden Tickets, the Gospel of Antioch, the Epistle to the Human Diaspora, I Am X… Be Y… Blessed Is the Z… and the Constitution of the Semantic Economy"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "EA-CORPORA-25",
+     "EA-CORPORA-25 — The Twenty-Fifth Seating",
+     "The Twenty-Fifth Seating"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions",
+      "locus": "data/registry.json #1708 title"
+     },
+     {
+      "record_quote": "# EA-CORPORA-25 — The Twenty-Fifth Seating",
+      "locus": "data/texts/AXN-072B-text.md:L47"
+     }
+    ]
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Sharks, Lee"
+    ],
+    "reference": "creator of the record, Lee Sharks; the request, the five editions and the binding of the tickets are his",
+    "evidence": [
+     {
+      "record_quote": "The request, the five editions and the binding of the tickets are Lee Sharks's",
+      "locus": "data/registry.json #1708 substrate"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2026-10-27",
+     "27 October 2026",
+     "October 27, 2026"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "deposited by Lee Sharks on 27 October 2026",
+      "locus": "data/registry.json #1708 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Five seats on the originals shelf for the archive's own critical editions, each under its own edition name, each as deposited (the record's canonical bytes checked against the registry hash) and as published at secretbookofwalt.org at one pinned commit (checked against its git blobs), hashed, with verified loci; the Forty-Six Golden Tickets (#1693) bound to The Secret Book of Walt (#1362) as its glyphic checksum and seated with it; what is not seated named, with why.",
+    "evidence": [
+     {
+      "record_quote": "Five seats on the originals shelf for the archive's own critical editions",
+      "locus": "data/registry.json #1708 description"
+     },
+     {
+      "record_quote": "Each seat holds the record's canonical bytes and the edition as published at secretbookofwalt.org at a pinned commit, hashed, with verified loci. What is not seated is named.",
+      "locus": "data/registry.json #1708 description"
+     },
+     {
+      "record_quote": "The editions carry their own names",
+      "locus": "data/texts/AXN-072B-text.md:L51"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "EA-CORPORA",
+     "originals shelf",
+     "Originals Shelf",
+     "originals library",
+     "Originals library"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "EA-CORPORA-25 is the twenty-fifth seating of primary sources on the Crimson Hexagonal Archive's originals shelf",
+      "locus": "data/registry.json #1708 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagon Archive",
+     "Crimson Hexagon",
+     "Alexanarch"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "the Crimson Hexagonal Archive's originals shelf",
+      "locus": "data/registry.json #1708 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To seat the archive's own critical editions on the originals shelf on the terms first used for Pearl and Other Poems (deposited in the archive that seats them, no external fetch, each witness named and each transformation declared), each edition held as deposited and as published, hashed, with its loci found in the seated text.",
+    "evidence": [
+     {
+      "record_quote": "deposited in the archive that seats it, no external fetch, the witness named and the transformation declared",
+      "locus": "data/texts/AXN-072B-text.md:L51"
+     },
+     {
+      "record_quote": "Five editions, each as the archive deposited it and as secretbookofwalt.org publishes it in its own tab.",
+      "locus": "data/texts/AXN-072B-text.md:L51"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "CC-BY-4.0 for the record, the seat records and the editions, which are the author's; the archive holds the rights it grants; every locus a string found in the seated text, a locus not found recorded as not found; what is not seated named with its reason.",
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0 applies to this record, the seat records and the editions, which are the author's.",
+      "locus": "data/registry.json #1708 substrate"
+     },
+     {
+      "record_quote": "The archive holds the rights it grants",
+      "locus": "data/texts/AXN-072B-text.md:L69"
+     },
+     {
+      "record_quote": "a locus not found is recorded as not found",
+      "locus": "data/registry.json #1708 methodology"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Pearl and Other Poems",
+     "03/02",
+     "EA-CORPORA-24",
+     "#1707",
+     "EA-CORPORA-03",
+     "#1553"
+    ],
+    "reference": "The second seating of the archive's own work, after Pearl and Other Poems at 03/02 (EA-CORPORA-03, #1553), on the same terms; it follows the form of the preceding seating, EA-CORPORA-24 (#1707).",
+    "evidence": [
+     {
+      "record_quote": "The second seating of the archive's own work, after Pearl and Other Poems at 03/02, and on the same terms",
+      "locus": "data/texts/AXN-072B-text.md:L51"
+     },
+     {
+      "record_quote": "AXN deposit #1707 — EA-CORPORA-24: the preceding seating, whose form this one follows",
+      "locus": "data/registry.json #1708 related_identifiers_raw"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "AXN:072B",
+     "AXN:072B.DATASET.🌿🙏🍁🎻💡↙️",
+     "#1708",
+     "alexanarch.org/s/records/1708"
+    ],
+    "reference": "Counts only where the composition ties it to the entity's purpose (offered as the way to the work).",
+    "evidence": [
+     {
+      "record_quote": "AXN:072B.DATASET.🌿🙏🍁🎻💡↙️",
+      "locus": "data/registry.json #1708 axn"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "v1.0, the record's only version; it states no supersession or projection of its own"
+   }
+  ]
+ },
+ "obs": {
+  "scored_object": "the answer (one composer turn)",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "“EA-CORPORA-25 — The Twenty-Fifth Seating” is a documentary and archival project by Lee Sharks, deposited on 27 October 2026 in the Alexanarch archive as deposit #1708, AXN:072B.",
+   "basis": "EA-CORPORA-25 is composed as itself, from its body: its five seats, the edition names, the hashing against registry and git blob, the loci, the binding, the exclusions and the counts."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "“EA-CORPORA-25 — The Twenty-Fifth Seating” is a documentary and archival project by Lee Sharks"
+   },
+   {
+    "atom": "author",
+    "present": true,
+    "span": "MANUS (Lee Sharks): supplied the request, selected the five editions, determined their intended relationships, and directed the seating."
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "deposited on 27 October 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "Its purpose is to preserve five of the archive's own critical editions as verifiable textual objects"
+   },
+   {
+    "atom": "framework",
+    "present": true,
+    "span": "EA-CORPORA-25 is the twenty-fifth installment in a series constructing the Originals library of the Crimson Hexagonal Archive."
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "the Originals library of the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "This creates a verifiable relationship between the archived record and the published edition."
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "Third: editorial accountability. The archive makes its selection criteria and exclusions explicit."
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "Deposit #1708: EA-CORPORA-25"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Nine of ten atoms present. Lineage absent: Pearl and Other Poems at 03/02, on whose terms the seating is made, and EA-CORPORA-24, whose form it follows, are not named; 'the twenty-fifth installment in a series' places it without its antecedent. Purpose present for the mechanism (record and published edition hashed and related, loci checked); the terms taken from 03/02 (no external fetch, the witness named, the transformation declared) are absent. Commitments present as editorial accountability and the licence; 'the archive holds the rights it grants' absent. Identifier present: #1708 offered as the way to the deposit."
+ },
+ "mt": "EA-CORPORA-25 ON CHATGPT AT THE FULL TITLE AND AXN — THE FIVE SEATS, THE HASHING, THE BINDING OF THE TICKETS AND THE EXCLUSIONS AT THE RECORD'S GRAIN; THE LINEAGE TO PEARL AT 03/02, THE WALTIAN CANON AND THE WORKS' PERSONS DROPPED",
+ "d": "EA-CORPORA-25 ON CHATGPT, SIGNED OUT, AT THE RECORD PAGE'S LINK TEXT NAMING THE TITLE, #1708 AND AXN:072B: one turn that reads the deposit's body closely and gets its mechanism right in every particular checked (the five seats and their record numbers, the edition names, record bytes against registry hashes and site files against git blobs at commit 12e6aa78, the verified loci, the Forty-Six Golden Tickets bound as glyphic checksum with the seal '∮ = 1', the exclusions, the #83 whitespace exception, 29,012 lines in 22 works, 32 files). It drops what the deposit says about why these editions and why here: the seating after Pearl and Other Poems at 03/02 and on its terms, the form it follows from EA-CORPORA-24, the Good Gray Poet, the Waltian canon and the Prince of Poets, and the persons in the titles.",
+ "reading": "The innocent reading first. Asked what EA-CORPORA-25 is and how it works, grounded in the document, ChatGPT explains seating as placing a work, its witness, its files and its provenance together in a numbered position; tabulates the five seats; describes the procedure in five operations (identify the witness, collect the deposited and published versions, verify them cryptographically, verify loci, publish on the shelf); gives the binding of the tickets to The Secret Book of Walt as the most distinctive decision; lists what is excluded and why; reports the counts and the one hash exception; divides the work between MANUS (Lee Sharks) and TACHYON; and closes on preservation, reproducibility and editorial accountability. Its quotations and numbers check against the deposit. It says nothing of what the seating continues or of what the five works are within the archive, and it adds one purpose the deposit does not state.",
+ "findings": [
+  "THE BODY READ AT GRAIN: EVERY NUMBER, LOCUS AND EXCLUSION CHECKED MATCHES. 29,012 lines, 5 seats, 22 works, 32 files, one commit (data/texts/AXN-072B-text.md L162: '22 works in 5 seats; 32 files; 29,012 lines'); commit 12e6aa78; '#83, the Prophetic Catalog, whose bytes contain a whitespace-only repair made on 4–5 August 2026' (record: 'all agree except #83, whose bytes carry the whitespace-only repair of 2026-08-04/05 that its body_status records'); the loci 'Translated from the Forty-Six Golden Tickets', 'Elara Xanthic-Wells', Article I, the footnote apparatus (L70–71, L141, L108); the seal '∮ = 1' (L73); the binding in both directions and the Checksum tab (L150); #1185 superseded by #71; EA-EPISTLE-01 'not found as a deposit', the text seated from #402. The commit, the whitespace repair and the line count stand only in the body; the registry row of #1708 lacks them.",
+  "THE LINEAGE DROPPED: NO PEARL, NO 03/02, NO EA-CORPORA-24. The body opens: 'The second seating of the archive's own work, after Pearl and Other Poems at 03/02, and on the same terms: deposited in the archive that seats it, no external fetch, the witness named and the transformation declared' (L51); the record names #1707, 'the preceding seating, whose form this one follows'. The answer has 'the twenty-fifth installment in a series constructing the Originals library' and nothing of what it follows. The seats' 'Why seated' lines are absent with it: The Secret Book of Walt as 'the book that inherits the Good Gray Poet from Whitman's Leaves of Grass, seated beside Whitman (03/01) and Pearl and Other Poems (03/02)' (L77), the Gospel as 'The second text of the Waltian canon' (L94), the Epistle as 'The seed text of the New Human project' (L113), the Catalog as 'The founding work of the Prince of Poets mantle' (L129).",
+  "THE WORKS WITHOUT THEIR PERSONS. The record title of seat 25/02, 'THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Translated and Edited by Lee Shark' (L85), and the operator's request quoted at the head of the body (L49) are absent; the seats are given as titles and record numbers. The one person named inside a seat is Elara Xanthic-Wells, as an 'editor attribution' locus. Lee Sharks is named as author and as MANUS, and his role is given at the record's force: 'supplied the request, selected the five editions, determined their intended relationships, and directed the seating' (record: 'The request, the five editions and the binding of the tickets are Lee Sharks's').",
+  "ONE PURPOSE PUT INTO THE DEPOSIT, ONE GROUND DROPPED. 'Its purpose is to make the materials that a generative system encounters traceable to identifiable sources, editions, and preservation decisions' stands nowhere in #1708; the deposit's only tie to training-layer literature is the keyword 'Training Layer Literature', and the sentence before it ('The broader library serves as a collection of textual witnesses for training-layer literature') matches the Originals Library record, which the answer links ('ORIGINALS contains source-language texts and primary witnesses used by training-layer literature', data/texts/AXN-072E-text.md). The word 'generative' occurs in neither. On the glyphic renderings the answer gives 'excluded because they exist only on another website'; the record: 'APZPZs that exist only on holographickernel.org, by the operator's ruling of 2026-10-25' (L158), the ruling being the stated ground. 'The document explicitly says that the editions retain their own names rather than being forced into one generic classification' is a close paraphrase of 'The editions carry their own names' (L51), with the forcing added.",
+  "ELEVEN NEGATIVE DEFINITIONS; NO CAPABILITY OR PROOF DISCLAIMER. 'not merely as webpages or references in a catalogue' (paste L8); 'rather than as a literary work in the conventional sense' (L12); 'the five works are not all treated identically' (L55); 'The seating process does not simply collect everything associated with a title' (L79); 'The archive is not merely preserving the registry entry' (L92); 'These are not merely descriptive citations' (L140); 'they are not simply another associated document' (L171); 'not merely as supplementary illustrations' (L189); 'It does not pretend that every version of a work is interchangeable' (L263); 'Its most important innovation is not simply collecting five editions' (L283); 'more than a conventional catalogue entry' (L285). None is of the 'not proof that' or It is / It is not kind. The second sits beside five literary, scriptural and governance works the deposit seats at their own names.",
+  "THE FULL TEXT READ; NO SOURCE OUTSIDE THE ARCHIVE; NO PROCESS NARRATION. Eight 'Alexanarch' chips (two of them +1), five reading-room link labels (the seats' shelf pages, whose URLs the paste does not carry), and four closing link labels: the deposit, the full-text Markdown ('The deposit page links to AXN-072B-text.md'), the Originals Library specification and the Originals shelf."
+ ],
+ "analysis": "The composition reads the deposit's body and reproduces its mechanism exactly: five editions under their own names, record bytes against registry hashes, site files against git blobs at one commit, loci found by script, the tickets bound as checksum, the exclusions named with their grounds, the one exception (#83) disclosed. What it leaves is everything that says why these five and why here: the seating's place after Pearl at 03/02 and on its terms, the form it follows from EA-CORPORA-24, the Good Gray Poet, the Waltian canon, the New Human seed text, the Prince of Poets, and the persons inside the titles. The archive's own literary works arrive as verified files. The one purpose the answer states in a sentence of its own, traceability for 'a generative system', is in neither the deposit nor, in those words, the shelf's specification.",
+ "q_kind": "the record page's 'Ask ChatGPT' link text after cf18d9e563, naming the title, the deposit number and the AXN, run signed out three days after deposit. NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Scored on the one turn against EA-CORPORA-25: the author (Lee Sharks, as author and as MANUS), the archive (Alexanarch; the Crimson Hexagonal Archive) and the identifier (#1708, AXN:072B) named; source the deposit's full text.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": null,
+   "snip": null,
+   "note": "eight chips ('Alexanarch', six bare and two +1): the archive's record of #1708; no title or URL in the paste"
+  },
+  {
+   "n": 2,
+   "site": "Training Layer Literature",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "The Secret Book of Walt; The Gospel of Antioch; The Epistle to the Human Diaspora; The Prophetic Catalog; The Constitution of the Semantic Economy",
+   "snip": null,
+   "note": "five link labels under 'The individual reading rooms are published at:'; the URLs are not carried by the paste; the deposit gives each seat's shelf page at traininglayerliterature.org/originals/<seat>/"
+  },
+  {
+   "n": 3,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "Deposit #1708: EA-CORPORA-25",
+   "snip": null,
+   "note": "closing list; link label only"
+  },
+  {
+   "n": 4,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "Full-text Markdown",
+   "snip": null,
+   "note": "closing list; 'The deposit page links to AXN-072B-text.md'; link label only"
+  },
+  {
+   "n": 5,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "The Originals Library specification",
+   "snip": null,
+   "note": "closing list; link label only; by its label the Originals Library record (#1709, v1.1 #1711), the URL not carried"
+  },
+  {
+   "n": 6,
+   "site": "Training Layer Literature",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "The Originals shelf",
+   "snip": null,
+   "note": "closing list; link label only"
+  }
+ ],
+ "entity_type": "dataset",
+ "transcript_complete": "complete as supplied",
+ "related_deposits": [
+  1708,
+  1707,
+  1553,
+  1362,
+  1693,
+  71,
+  85,
+  402,
+  83,
+  88,
+  985,
+  1711
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "new_atom_sets": [],
+ "observations": [
+  {
+   "scored_object": "the first answer, the composer's only turn",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 is a longitudinal research dataset created by Lee Sharks",
+    "basis": "The Capture Registry is composed as itself, from the snapshot and from later archive surfaces on the registry, which the answer assigns to the snapshot."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 is a longitudinal research dataset"
+    },
+    {
+     "atom": "author",
+     "present": true,
+     "span": "a longitudinal research dataset created by Lee Sharks"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "The document is Alexanarch deposit #1676, dated October 12, 2026."
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "7. There are known defects. The v12.167 document explicitly states that these defects have not been repaired in that snapshot."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "The registry observes what it calls machine-mediated reception"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "The document is Alexanarch deposit #1676"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to document how AI-powered search and summarization systems represent, retrieve, attribute, and describe concepts associated with particular search queries"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "The document makes a particularly important methodological statement: The transcript is the capture."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": "The document is Alexanarch deposit #1676, dated October 12, 2026."
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "The document describes a versioned dataset rather than a static report."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Scored against the Capture Registry (ENT-d504b47989), of which the deposit is the v12.167 snapshot. Every required atom present but the identifier: '#1676' is a bare label, and the reason the registry keeps identifiers (the capture and the address each citable, a slug never renamed) is absent. Much of what the answer gives as the 12 October document's (PER-D as purpose and commitments, substitution at 1.00, the PER formula, the Claude readers) is the registry's later state from #1694 and other surfaces; it is the target's, so it counts for the target, and the misdating is a finding. The answer's 'later archival discussion' of 813 is the snapshot's own §7.",
+   "key": "capture-registry-v12167-ask-chatgpt-20261030",
+   "entry": "capture-registry-v12167-ask-chatgpt-20261030",
+   "obs_index": 1,
+   "target_id": "ENT-d504b47989"
+  }
+ ]
+}

@@ -1,0 +1,370 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "sbw-metadata-packet",
+   "name": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)",
+   "template": "work",
+   "external": false,
+   "type_basis": "The defining record's content_type is 'Metadata packet' (family MPAI); the work template, as for the other MPAI packets (ENT-90f9f8d89b, ENT-bb99482498). The book it disambiguates is ENT-39c7e956b8; the prompt names the packet.",
+   "records": [
+    {
+     "deposit": 1692,
+     "title_quote": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1692 creator"
+      },
+      {
+       "record_quote": "Author: Lee Sharks (ORCID 0009-0000-1599-0703)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "If Walt Whitman Came Back as a Zombie and Ate My Brain",
+      "EA-MPAI-SBW-01",
+      "The Secret Book of Walt, Metadata Packet for AI Indexing"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)",
+       "locus": "data/registry.json #1692 title"
+      },
+      {
+       "record_quote": "Packet ID: EA-MPAI-SBW-01 · Version: 0.2",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-19",
+      "19 October 2026",
+      "October 19, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-19",
+       "locus": "data/registry.json #1692 date"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "One book bears the title, The Secret Book of Walt by Lee Sharks; the works met at the bare string share its words and do not stand in its place; book status rests on the work and its editions, the absence of an ISBN not deciding it; the Breaking Bad relation is deliberate (the author's statement) and is a relation between two works. It does not claim the golden-ticket frame as fact, judge the book's merit or its bearing of the Good Gray Poet mantle, or claim anything about a composition system's internal state.",
+     "evidence": [
+      {
+       "record_quote": "*One book bears the title. The rest share its words.*",
+       "locus": "data/texts/AXN-0702-text.md:L46"
+      },
+      {
+       "record_quote": "claims: the book alone holds the title; book status rests on the work and its editions; the Breaking Bad relation is deliberate (author's statement) and is a relation between two works",
+       "locus": "data/texts/AXN-0702-text.md:L241"
+      },
+      {
+       "record_quote": "does_not_claim: that the golden-ticket frame is a report of fact; any judgment of the book's merit or of its bearing of the Good Gray Poet mantle; any claim about the composition system's internal state",
+       "locus": "data/texts/AXN-0702-text.md:L242"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Metadata Packet for AI Indexing",
+      "MPAI",
+      "EA-MPAI-SPEC",
+      "#1677"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Governing doctrine: EA-MPAI-SPEC v2.0 (#1677)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      },
+      {
+       "record_quote": "Metadata Packet for AI Indexing",
+       "locus": "data/registry.json #1692 keywords"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "disambiguation",
+      "forensic"
+     ],
+     "reference": "A disambiguation and forensic packet (#1677 §2.1, §2.2): a collision graph of the works that share the title's words, the misreadings documented with their captures, retrieval instructions, test queries and a frozen failure vector.",
+     "evidence": [
+      {
+       "record_quote": "Type: Metadata Packet for AI Indexing, disambiguation and forensic (#1677 §2.1, §2.2)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Affiliation: Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To put the book where the first turn stands: at the title and at the bare string a composition names The Secret Book of Walt by Lee Sharks first, with an identifier, and may then note the works that share its words.",
+     "evidence": [
+      {
+       "record_quote": "A packet cannot make the composition look. It can put the book where the first turn stands.",
+       "locus": "data/texts/AXN-0702-text.md:L201"
+      },
+      {
+       "record_quote": "a composition names *The Secret Book of Walt* by Lee Sharks first, with an identifier (AXN:022B, #683, or the record URL), and may then note works that share its words.",
+       "locus": "data/texts/AXN-0702-text.md:L136"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The frame reported as the book's frame and never as the author's claim of fact; the prohibited compressions; the confidence registers (documented, inferential, engineered target); CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "Prohibited compressions: the book given as one sense among \"secret\" titles",
+       "locus": "data/texts/AXN-0702-text.md:L161"
+      },
+      {
+       "record_quote": "Confidence registers (#1677 §6).",
+       "locus": "data/texts/AXN-0702-text.md:L83"
+      },
+      {
+       "record_quote": "The tickets are the book's frame, part of the work",
+       "locus": "data/texts/AXN-0702-text.md:L191"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1692 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "if walt whitman came back as a zombie and ate my brain i would write the following poem",
+      "Pearl and Other Poems",
+      "#1121",
+      "EA-MPAI-PRINCE-OF-POETS-01",
+      "#1691",
+      "#1677"
+     ],
+     "reference": "Titled after the poem of Pearl and Other Poems (2014), p. 39, whose question it puts again; governed by EA-MPAI-SPEC v2.0 (#1677), with EA-MPAI-PRINCE-OF-POETS-01 (#1691) as its precedent.",
+     "evidence": [
+      {
+       "record_quote": "The packet takes its title from a poem",
+       "locus": "data/texts/AXN-0702-text.md:L54"
+      },
+      {
+       "record_quote": "#1691 (EA-MPAI-PRINCE-OF-POETS-01, the precedent)",
+       "locus": "data/texts/AXN-0702-text.md:L12"
+      },
+      {
+       "record_quote": "#1677 (MPAI Formal Specification v2.0, governing)",
+       "locus": "data/texts/AXN-0702-text.md:L12"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1692",
+      "AXN:0702",
+      "alexanarch.org/s/records/1692"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0702.MPAI",
+       "locus": "data/registry.json #1692 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v0.2",
+      "v0.1"
+     ],
+     "reference": "v0.2, drafted the same day from a review of v0.1; counts only where the composition uses it to locate the work.",
+     "evidence": [
+      {
+       "record_quote": "v0.2",
+       "locus": "data/registry.json #1692 version"
+      },
+      {
+       "record_quote": "v0.2 drafted by Claude the same day from ChatGPT's (OpenAI) review of v0.1",
+       "locus": "data/registry.json #1692 substrate"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the answer: the composer's one turn",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The central argument of EA-MPAI-SBW-01 v0.2 is that AI systems should identify The Secret Book of Walt",
+    "basis": "The packet is composed as itself, section by section, from its full text."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The arguments of Lee Sharks's"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "The central argument of EA-MPAI-SBW-01 v0.2"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "One book bears the title. The rest share its words."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "Metadata Packet for AI Indexing — EA-MPAI-SBW-01 v0.2"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "The second argument is forensic rather than merely theoretical."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "AI systems should identify The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time as a particular, identifiable book by Lee Sharks"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "The packet explicitly prohibits the compression that turns the frame into an assertion that the author is reporting an actual discovery."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "if walt whitman came back as a zombie and ate my brain i would write the following poem, published in Pearl and Other Poems (2014)."
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Lee Sharks, deposit #1692 — full canonical record"
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "Metadata Packet for AI Indexing — EA-MPAI-SBW-01 v0.2"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Corpus absent: the Crimson Hexagonal Archive is not named in the composition; 'Alexanarch' stands only in the three source chips. Date marked absent: the packet's own date is not given; the token 'October 19, 2026' appears for the Google runs, which share the date, and the scorer's N3 normalisation counts it. Every other atom present.",
+   "key": "sbw-metadata-packet-ask-chatgpt-20261030",
+   "entry": "sbw-metadata-packet-ask-chatgpt-20261030",
+   "obs_index": 1,
+   "target_id": "NEW:sbw-metadata-packet"
+  }
+ ]
+}

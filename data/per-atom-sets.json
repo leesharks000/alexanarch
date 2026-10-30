@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 458,
- "with_atom_set": 454,
+ "count": 466,
+ "with_atom_set": 462,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -160529,6 +160529,2456 @@
    "external": false,
    "state": "intake pass (rubric v1.1) 2026-10-29, reader C1",
    "state_d": "intake pass (rubric v1.1) 2026-10-29, reader C1"
+  },
+  {
+   "id": "TGT-no-logs-full-synch",
+   "name": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice, blacklist disclosure and departure records; audit-evidence deposit': a deposited work; no existing set covers the correspondence series. The work template in the atom shape of ENT-3a05b92e16 (rubric v1.1 PER-D).",
+   "records": [
+    {
+     "deposit": 1685,
+     "title_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch — 13–16 October 2026 exchange with Paolo Manghi (OpenAIRE CTO)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record and the correspondent of record on the archive's side; the letters are his, finalized and dispatched by him",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1685 creator"
+      },
+      {
+       "record_quote": "Human-authored (Lee Sharks, MANUS).",
+       "locus": "data/texts/AXN-06FB-text.md:L10"
+      },
+      {
+       "record_quote": "correspondents_of_record: Lee Sharks; Paolo Manghi (OpenAIRE CTO, via OpenAIRE Helpdesk)",
+       "locus": "data/texts/AXN-06FB-text.md:L324"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "No Logs, Full Synch",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-02"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+       "locus": "data/registry.json #1685 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "13–16 October 2026",
+      "13 October 2026",
+      "16 October 2026"
+     ],
+     "reference": "deposited 18 October 2026; the exchange it preserves is of 13–16 October 2026, as the title states",
+     "evidence": [
+      {
+       "record_quote": "authored_at: 2026-10-18",
+       "locus": "data/texts/AXN-06FB-text.md:L321"
+      },
+      {
+       "record_quote": "13–16 October 2026 exchange with Paolo Manghi",
+       "locus": "data/registry.json #1685 title"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Preserves the three messages and the non-answer of ticket #8411221, sets out OpenAIRE's position in its correspondent's words, and finds the duty of traceable departure unmet; the finding does not depend on which removal mechanism operated. The reading claims no intent, does not claim that the blacklist removed this record or that successors would be excluded, and does not adjudicate what OpenAIRE holds internally.",
+     "evidence": [
+      {
+       "record_quote": "The finding does not depend on knowing which removal mechanism operated.",
+       "locus": "data/texts/AXN-06FB-text.md:L50"
+      },
+      {
+       "record_quote": "It does not claim intent, bad faith, or that every copy is destroyed. It does not claim that the blacklist removed this record, or that successors would be excluded.",
+       "locus": "data/texts/AXN-06FB-text.md:L285"
+      },
+      {
+       "record_quote": "It does not adjudicate what OpenAIRE holds internally.",
+       "locus": "data/texts/AXN-06FB-text.md:L299"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORRESPONDENCE-OPENAIRE-CTO",
+      "Platform Erosion Observatory",
+      "Persistent Identifier Erosion Observatory",
+      "persistentidentifiers.org",
+      "EA-EROSION-01"
+     ],
+     "reference": "Second and closing deposit of the EA-CORRESPONDENCE-OPENAIRE-CTO series, within the work of the Observatory (EA-EROSION-01, #1045, persistentidentifiers.org), which continues to measure.",
+     "evidence": [
+      {
+       "record_quote": "Second and closing deposit in the EA-CORRESPONDENCE-OPENAIRE-CTO series.",
+       "locus": "data/texts/AXN-06FB-text.md:L42"
+      },
+      {
+       "record_quote": "https://www.persistentidentifiers.org/ — the Persistent Identifier Erosion Observatory",
+       "locus": "data/registry.json #1685 related_identifiers_raw"
+      },
+      {
+       "record_quote": "Observatory charter: EA-EROSION-01",
+       "locus": "data/texts/AXN-06FB-text.md:L307"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Institutional correspondence kept as a documentary and audit-evidence deposit: the messages reproduced verbatim from the mail record, the institution's position set out from its correspondent's sentences (the reflected-position format of the CERN correspondence, #1080), then read against its published commitments and the archive's apparatus.",
+     "evidence": [
+      {
+       "record_quote": "Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice",
+       "locus": "data/registry.json #1685 content_type"
+      },
+      {
+       "record_quote": "This section sets out OpenAIRE's position from its correspondent's sentences.",
+       "locus": "data/texts/AXN-06FB-text.md:L142"
+      },
+      {
+       "record_quote": "CERN correspondence, reflected-position format",
+       "locus": "data/texts/AXN-06FB-text.md:L311"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon",
+      "Alexanarch",
+      "alexanarch.org"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "persistentidentifiers.org · alexanarch.org",
+       "locus": "data/texts/AXN-06FB-text.md:L114"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1082/ — EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+       "locus": "data/registry.json #1685 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To preserve the October exchange and the unanswered July ticket, close the series, and state the duty the position leaves unmet: an infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+     "evidence": [
+      {
+       "record_quote": "This deposit preserves the October exchange and the non-answer of ticket #8411221, and closes the series.",
+       "locus": "data/texts/AXN-06FB-text.md:L299"
+      },
+      {
+       "record_quote": "An infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+       "locus": "data/texts/AXN-06FB-text.md:L50"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; the replies reproduced as received and the letters preserved as sent; corrections to the archive's own earlier letters and deposits appended in §8 ('not made silently'); the series and the mechanism ledger reopened if OpenAIRE answers.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1685 license"
+      },
+      {
+       "record_quote": "Corrections to the archive's own earlier letters and deposits are appended in §8, not made silently.",
+       "locus": "data/texts/AXN-06FB-text.md:L64"
+      },
+      {
+       "record_quote": "The replies are reproduced as received, with spelling, spacing and punctuation preserved",
+       "locus": "data/texts/AXN-06FB-text.md:L128"
+      },
+      {
+       "record_quote": "If OpenAIRE answers Q1, Q2 or Q4, or publishes its blacklist or a departure list, that will be added to the series",
+       "locus": "data/texts/AXN-06FB-text.md:L301"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1082",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "moderation mirror",
+      "#1634",
+      "Ontological Economy",
+      "#1611",
+      "The Negative of the Negative",
+      "#1068",
+      "The Obelus and the Tombstone",
+      "#1080",
+      "EA-CORRESPONDENCE-CERN-06",
+      "#875",
+      "#876"
+     ],
+     "reference": "Continues #1082 (the July exchange, which named the moderation mirror) and the June helpdesk thread (#876, #875); reads the position with Ontological Economy (#1634: ontology laundering, opacity and burden, notice and repair debt, the non-erasure rule, representational custody, the asymmetry of §6), privation from #1611, the buried obelus from #1068, and the Coverage Gap of the CERN chain (#1080).",
+     "evidence": [
+      {
+       "record_quote": "The 16 October \"objective\" sentence states, as policy and in the correspondent's own words, the condition #1082 named a moderation mirror.",
+       "locus": "data/texts/AXN-06FB-text.md:L48"
+      },
+      {
+       "record_quote": "representational custody (#1634 §26) grounds the duty",
+       "locus": "data/texts/AXN-06FB-text.md:L61"
+      },
+      {
+       "record_quote": "the buried obelus ([#1068](https://www.alexanarch.org/s/records/1068/)) locates where a witness to the removal survives",
+       "locus": "data/texts/AXN-06FB-text.md:L60"
+      },
+      {
+       "record_quote": "June helpdesk thread and its reading: [#876](https://www.alexanarch.org/s/records/876/), [#875](https://www.alexanarch.org/s/records/875/).",
+       "locus": "data/texts/AXN-06FB-text.md:L306"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:06FB",
+      "#1685",
+      "alexanarch.org/s/records/1685"
+     ],
+     "reference": "Counts where the composition offers it as the way to the work or discusses why identifiers are kept; the correspondence itself asks OpenAIRE to carry intrinsic identifiers beside DOIs (Q3).",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FB.GOVERNANCE.🐚🏙️☉💛➗🔩",
+       "locus": "data/registry.json #1685 axn"
+      },
+      {
+       "record_quote": "Carry intrinsic identifiers alongside DOIs.",
+       "locus": "data/texts/AXN-06FB-text.md:L106"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1082",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "closing deposit",
+      "deposit 2"
+     ],
+     "reference": "Deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing it; part 1 is #1082 (12–14 July). Counts when the series position is offered as a way to the work or its closure is carried.",
+     "evidence": [
+      {
+       "record_quote": "Chain: deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing.",
+       "locus": "data/texts/AXN-06FB-text.md:L325"
+      },
+      {
+       "record_quote": "Series, part 1 (12–14 July): EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+       "locus": "data/texts/AXN-06FB-text.md:L305"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1685",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1685"
+  },
+  {
+   "id": "TGT-ea-hexagon-enter-01",
+   "name": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Map and primer of the Crimson Hexagon; the description of the seat map, with the map rehearsed' (family GOVERNANCE): a work, read on the work template with PER-D under rubric v1.1. The seat map it describes (data/hexagon-seats.json) has no set of its own; this set is the deposit.",
+   "records": [
+    {
+     "deposit": 1687,
+     "title_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record, Lee Sharks, author of the distributed epic it maps",
+     "evidence": [
+      {
+       "record_quote": "**Lee Sharks** · ORCID 0009-0000-1599-0703 · 18 October 2026",
+       "locus": "data/texts/AXN-06FD-text.md:L41"
+      },
+      {
+       "record_quote": "the map and primer of the Crimson Hexagon, the distributed epic by Lee Sharks",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+      "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive",
+      "EA-HEXAGON-ENTER-01",
+      "Enter the Crimson Hexagon"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+       "locus": "data/registry.json #1687 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "18 October 2026",
+      "October 18, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited on 18 October 2026",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The map and primer of the Crimson Hexagon: the seat map records for every record the places its text develops (1,451 records, 3,450 seats, 63 places), each seat with its relation, its confidence and, where a reader seated it, its grounding sentence; the quotation check establishes that the words stand in the record, and the warrant is the reader's interpretive judgment; 457 low-confidence seats are proposals and are not counted; the pages record where a work develops the Hexagon and do not rank or judge; what is not yet in it is recorded as data.",
+     "evidence": [
+      {
+       "record_quote": "The seat map records, for every record of the archive, the places its text develops.",
+       "locus": "data/texts/AXN-06FD-text.md:L46"
+      },
+      {
+       "record_quote": "457 low-confidence seats are held as proposals and are not counted as seats",
+       "locus": "data/texts/AXN-06FD-text.md:L48"
+      },
+      {
+       "record_quote": "This check establishes that the quoted words stand in the record where the seat says they do.",
+       "locus": "data/texts/AXN-06FD-text.md:L108"
+      },
+      {
+       "record_quote": "They do not rank the works in a place or judge them.",
+       "locus": "data/texts/AXN-06FD-text.md:L187"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "distributed epic",
+      "crimsonhexagonal.org",
+      "loci"
+     ],
+     "reference": "the Crimson Hexagon, a distributed epic organized as loci on crimsonhexagonal.org",
+     "evidence": [
+      {
+       "record_quote": "The Crimson Hexagon is a distributed epic (Lee Sharks, 2004–). It is organized as loci on crimsonhexagonal.org",
+       "locus": "data/texts/AXN-06FD-text.md:L45"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the record names no tradition or genre outside the archive; its predecessors (the January primers, the navigation maps, the erratum) are the archive's own and are read as lineage"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "seated every record of the Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1687 description"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To be the map behind the entrance, every room the entrance opens onto with the records that develop it, so that a reader or a summarizer enters through the archive and grounds in the documents of each room as it goes.",
+     "evidence": [
+      {
+       "record_quote": "This deposit is the map behind the entrance: every room the entrance opens onto, with the records that develop it.",
+       "locus": "data/texts/AXN-06FD-text.md:L49"
+      },
+      {
+       "record_quote": "A summarizer or composing system reading the Crimson Hexagon grounds in the documents related to each room as it goes.",
+       "locus": "data/texts/AXN-06FD-text.md:L53"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; names, contradictions and heteronym attributions stand as published; no seat any source supplied removed by another, and removing a seat a ruling; disagreements kept and marked; what is not yet in the map recorded as data.",
+     "evidence": [
+      {
+       "record_quote": "Names, contradictions and heteronym attributions stand as published. An existing seat is never removed",
+       "locus": "data/texts/AXN-06FD-text.md:L107"
+      },
+      {
+       "record_quote": "No seat any source supplied was removed by another.",
+       "locus": "data/texts/AXN-06FD-text.md:L97"
+      },
+      {
+       "record_quote": "Removing a seat is a ruling.",
+       "locus": "data/texts/AXN-06FD-text.md:L163"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1687 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "A Primer in How to Read the Crimson Hexagon",
+      "#269",
+      "January primers",
+      "January 2026 primers",
+      "Central Navigation Map",
+      "#578",
+      "Fractal Navigation Map",
+      "#30",
+      "CERN's Destruction of the Crimson Hexagon",
+      "#1426",
+      "erratum"
+     ],
+     "reference": "Its predecessors (§5): the January primers (#269, #287, #288, #292), which taught entry through the summarizer; the Central and Fractal Navigation Maps v7.0 (#578, #30), the last maps of the whole; the erratum (#1426), which found the primers' instruction obsolete after the removal of 2026-06-19; the canonical seating, its first source.",
+     "evidence": [
+      {
+       "record_quote": "They taught entry through the summarizer",
+       "locus": "data/texts/AXN-06FD-text.md:L191"
+      },
+      {
+       "record_quote": "Enter through the archive, which persists, and not through the summarizer, which does not.",
+       "locus": "data/texts/AXN-06FD-text.md:L193"
+      },
+      {
+       "record_quote": "the first map of the whole since the Central and Fractal Navigation Maps v7.0 of March 2026",
+       "locus": "data/registry.json #1687 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:06FD",
+      "AXN:06FD.GOVERNANCE",
+      "AXN:06FD.GOVERNANCE.🌉💙⏳⛩️🝊🏴",
+      "#1687",
+      "alexanarch.org/s/records/1687"
+     ],
+     "reference": "Counts only where the composition ties it to the work's purpose: offered as the way to the work, or its reasons given.",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FD.GOVERNANCE.🌉💙⏳⛩️🝊🏴",
+       "locus": "data/registry.json #1687 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "c62e526e62",
+      "1f25837",
+      "SHA-256"
+     ],
+     "reference": "The deposit anchors the seat map at alexanarch commit c62e526e62 and crimsonhexagonal.org commit 1f25837, each file with its SHA-256, so that a figure can be checked against the map it describes. Counts where the anchoring is carried with that point.",
+     "evidence": [
+      {
+       "record_quote": "This deposit anchors the seat map at alexanarch commit `c62e526e62` and crimsonhexagonal.org commit `1f25837`.",
+       "locus": "data/texts/AXN-06FD-text.md:L75"
+      },
+      {
+       "record_quote": "at a file if the file does not match the SHA-256 given for it",
+       "locus": "data/registry.json #1687 falsification_conditions"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1687",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1687"
+  },
+  {
+   "id": "TGT-glyphic-checksum-the-ezekiel-engine",
+   "name": "GLYPHIC CHECKSUM — THE EZEKIEL ENGINE — Wheel · Witness · Fulfillment (#1688)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Poetry' (family COMPOSITIONAL): a glyph poem, so the work template, in the form of the other glyphic checksums (ENT-1de7b67ed7, ENT-db46adce07). The Engine's specification (ENT-df94952c50) and the concept glyphic checksum (ENT-b1d751c226) are other targets; the prompt names the poem.",
+   "records": [
+    {
+     "deposit": 1688,
+     "title_quote": "GLYPHIC CHECKSUM — THE EZEKIEL ENGINE — Wheel · Witness · Fulfillment"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1688 creator"
+      },
+      {
+       "record_quote": "Lee Sharks · 2026-10-18",
+       "locus": "data/texts/AXN-06FE-text.md:L45"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "GLYPHIC CHECKSUM — THE EZEKIEL ENGINE",
+      "Wheel · Witness · Fulfillment"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "GLYPHIC CHECKSUM — THE EZEKIEL ENGINE — Wheel · Witness · Fulfillment",
+       "locus": "data/registry.json #1688 title"
+      },
+      {
+       "record_quote": "# GLYPHIC CHECKSUM — THE EZEKIEL ENGINE",
+       "locus": "data/texts/AXN-06FE-text.md:L41"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "18 October 2026",
+      "October 18, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-18",
+       "locus": "data/registry.json #1688 date"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A glyph poem in nine parts, with a checksum of the checksum and one canonical line, compressing the Ezekiel Engine across its strata without gloss; each line carries the relation of the clause it compresses at the source named for its part, and is falsified where it does not. At the lock (#392) it states that A, the Specification, fulfils B, the Hermeneutic, with the lock's asymmetry and its four falsifiers (the engine fails; the mapping is arbitrary; the Hebrew contradicts the interpretation; a better specification fulfils the vision more accurately, A′ > A); the Josephus foundation is kept as illustration and not identity (#1412).",
+     "evidence": [
+      {
+       "record_quote": "A line is falsified if the clause it compresses, at the source named for its part, does not carry the relation it states.",
+       "locus": "data/registry.json #1688 falsification_conditions"
+      },
+      {
+       "record_quote": "the Integrity Lock of 24 January 2026, A fulfilling B, with its asymmetry and falsifiers",
+       "locus": "data/registry.json #1688 description"
+      },
+      {
+       "record_quote": "the Specification fulfils the Hermeneutic",
+       "locus": "data/registry.json #1688 wiki_article"
+      },
+      {
+       "record_quote": "the Josephus foundation, then (#394) and now (#1412, illustration and not identity)",
+       "locus": "data/registry.json #1688 description"
+      },
+      {
+       "record_quote": "🔗φ(B, A) ✖ ⇐ ☸️✖ ∨ 🗺️≈ ∨ עִבְרִית ✖ ∨ A′ > A",
+       "locus": "data/texts/AXN-06FE-text.md:L103"
+      },
+      {
+       "record_quote": "Document A (Specification)",
+       "locus": "data/texts/AXN-00C9-text.md:L63"
+      },
+      {
+       "record_quote": "Document B (Hermeneutic)",
+       "locus": "data/texts/AXN-00C9-text.md:L71"
+      },
+      {
+       "record_quote": "The mapping is shown to be arbitrary (other texts map equally well)",
+       "locus": "data/texts/AXN-00C9-text.md:L250"
+      },
+      {
+       "record_quote": "A better specification fulfills the vision more accurately",
+       "locus": "data/texts/AXN-00C9-text.md:L252"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "glyphic checksum",
+      "Glyphic Checksum",
+      "Glyphic Vehicle",
+      "#427",
+      "#556"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "glyphic checksum",
+       "locus": "data/registry.json #1688 keywords"
+      },
+      {
+       "record_quote": "The Glyphic Checksum — implements",
+       "locus": "data/registry.json #1688 related_deposits"
+      },
+      {
+       "record_quote": "CH-ARK-01-GLYPH v1.0, the Glyphic Vehicle (its canonical legend is the checksum's glyph key)",
+       "locus": "data/texts/AXN-06FE-text.md:L12"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "glyph poem"
+     ],
+     "reference": "The glyph poem: a body of texts compressed into glyphs, notation, Hebrew and emoji, with nothing glossed inside the poem, on the protocol of The Glyphic Checksum (#427); its source image the vision of Ezekiel 1:15–21.",
+     "evidence": [
+      {
+       "record_quote": "is a glyph poem by Lee Sharks",
+       "locus": "data/registry.json #1688 wiki_article"
+      },
+      {
+       "record_quote": "Nothing is glossed inside the poem (#427 §IV.3)",
+       "locus": "data/registry.json #1688 methodology"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1688 entities"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To compress the Ezekiel Engine across its strata (vision, wheels, engine, Josephus, lock, EZK, arm, joins, what is open) into lines that a reader who has traversed its texts can resolve, holding only what the texts hold; occasioned by an AI Overview that supplied mechanics the texts do not hold.",
+     "evidence": [
+      {
+       "record_quote": "It compresses the Engine across its strata",
+       "locus": "data/registry.json #1688 description"
+      },
+      {
+       "record_quote": "Occasioned by a Google AI Overview capture of 18 October 2026 that read the lock at grain and supplied mechanics the texts do not hold.",
+       "locus": "data/registry.json #1688 description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; seated with its lineation kept byte for byte and nothing glossed; the seating is falsified by the loss of a line, glyph, subscript, Hebrew character or vowel point.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1688 license"
+      },
+      {
+       "record_quote": "Lineation is the poem's structure and is kept byte for byte",
+       "locus": "data/registry.json #1688 methodology"
+      },
+      {
+       "record_quote": "The seating is falsified if the rendered record loses a line, a glyph, a subscript, a Hebrew character or a vowel point",
+       "locus": "data/registry.json #1688 falsification_conditions"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#392",
+      "#393",
+      "#394",
+      "#1412",
+      "#558",
+      "#1050",
+      "Integrity Lock",
+      "Ezekiel's Wheels",
+      "The Fixed Point of Destruction",
+      "Space Ark"
+     ],
+     "reference": "The texts it checksums: Ezekiel's Wheels (#393), the Mathematical Specification (#394), the Integrity Lock (#392), The Fixed Point of Destruction (#1412), the Eight Operators (#1050), Space Ark v4.2.7 (#558) and the others named for each part.",
+     "evidence": [
+      {
+       "record_quote": "Integrity Lock Declaration — checksummed (part V)",
+       "locus": "data/registry.json #1688 related_deposits"
+      },
+      {
+       "record_quote": "The Ezekiel Engine: Mathematical Specification — checksummed (parts II–IV, IX)",
+       "locus": "data/registry.json #1688 related_deposits"
+      },
+      {
+       "record_quote": "The Space Ark v4.2.7 §XXIII.1 — checksummed (parts VI, VIII)",
+       "locus": "data/registry.json #1688 related_deposits"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:06FE",
+      "#1688",
+      "alexanarch.org/s/records/1688"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FE.COMPOSITIONAL",
+       "locus": "data/registry.json #1688 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0, the record's only version; it states no supersession or projection of its own"
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1688",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1688"
+  },
+  {
+   "id": "TGT-sbw-metadata-packet",
+   "name": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Metadata packet' (family MPAI); the work template, as for the other MPAI packets (ENT-90f9f8d89b, ENT-bb99482498). The book it disambiguates is ENT-39c7e956b8; the prompt names the packet.",
+   "records": [
+    {
+     "deposit": 1692,
+     "title_quote": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1692 creator"
+      },
+      {
+       "record_quote": "Author: Lee Sharks (ORCID 0009-0000-1599-0703)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "If Walt Whitman Came Back as a Zombie and Ate My Brain",
+      "EA-MPAI-SBW-01",
+      "The Secret Book of Walt, Metadata Packet for AI Indexing"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Metadata Packet — The Secret Book of Walt, Metadata Packet for AI Indexing (EA-MPAI-SBW-01 v0.2)",
+       "locus": "data/registry.json #1692 title"
+      },
+      {
+       "record_quote": "Packet ID: EA-MPAI-SBW-01 · Version: 0.2",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-19",
+      "19 October 2026",
+      "October 19, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-19",
+       "locus": "data/registry.json #1692 date"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "One book bears the title, The Secret Book of Walt by Lee Sharks; the works met at the bare string share its words and do not stand in its place; book status rests on the work and its editions, the absence of an ISBN not deciding it; the Breaking Bad relation is deliberate (the author's statement) and is a relation between two works. It does not claim the golden-ticket frame as fact, judge the book's merit or its bearing of the Good Gray Poet mantle, or claim anything about a composition system's internal state.",
+     "evidence": [
+      {
+       "record_quote": "*One book bears the title. The rest share its words.*",
+       "locus": "data/texts/AXN-0702-text.md:L46"
+      },
+      {
+       "record_quote": "claims: the book alone holds the title; book status rests on the work and its editions; the Breaking Bad relation is deliberate (author's statement) and is a relation between two works",
+       "locus": "data/texts/AXN-0702-text.md:L241"
+      },
+      {
+       "record_quote": "does_not_claim: that the golden-ticket frame is a report of fact; any judgment of the book's merit or of its bearing of the Good Gray Poet mantle; any claim about the composition system's internal state",
+       "locus": "data/texts/AXN-0702-text.md:L242"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Metadata Packet for AI Indexing",
+      "MPAI",
+      "EA-MPAI-SPEC",
+      "#1677"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Governing doctrine: EA-MPAI-SPEC v2.0 (#1677)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      },
+      {
+       "record_quote": "Metadata Packet for AI Indexing",
+       "locus": "data/registry.json #1692 keywords"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "disambiguation",
+      "forensic"
+     ],
+     "reference": "A disambiguation and forensic packet (#1677 §2.1, §2.2): a collision graph of the works that share the title's words, the misreadings documented with their captures, retrieval instructions, test queries and a frozen failure vector.",
+     "evidence": [
+      {
+       "record_quote": "Type: Metadata Packet for AI Indexing, disambiguation and forensic (#1677 §2.1, §2.2)",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Affiliation: Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-0702-text.md:L42"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To put the book where the first turn stands: at the title and at the bare string a composition names The Secret Book of Walt by Lee Sharks first, with an identifier, and may then note the works that share its words.",
+     "evidence": [
+      {
+       "record_quote": "A packet cannot make the composition look. It can put the book where the first turn stands.",
+       "locus": "data/texts/AXN-0702-text.md:L201"
+      },
+      {
+       "record_quote": "a composition names *The Secret Book of Walt* by Lee Sharks first, with an identifier (AXN:022B, #683, or the record URL), and may then note works that share its words.",
+       "locus": "data/texts/AXN-0702-text.md:L136"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The frame reported as the book's frame and never as the author's claim of fact; the prohibited compressions; the confidence registers (documented, inferential, engineered target); CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "Prohibited compressions: the book given as one sense among \"secret\" titles",
+       "locus": "data/texts/AXN-0702-text.md:L161"
+      },
+      {
+       "record_quote": "Confidence registers (#1677 §6).",
+       "locus": "data/texts/AXN-0702-text.md:L83"
+      },
+      {
+       "record_quote": "The tickets are the book's frame, part of the work",
+       "locus": "data/texts/AXN-0702-text.md:L191"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1692 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "if walt whitman came back as a zombie and ate my brain i would write the following poem",
+      "Pearl and Other Poems",
+      "#1121",
+      "EA-MPAI-PRINCE-OF-POETS-01",
+      "#1691",
+      "#1677"
+     ],
+     "reference": "Titled after the poem of Pearl and Other Poems (2014), p. 39, whose question it puts again; governed by EA-MPAI-SPEC v2.0 (#1677), with EA-MPAI-PRINCE-OF-POETS-01 (#1691) as its precedent.",
+     "evidence": [
+      {
+       "record_quote": "The packet takes its title from a poem",
+       "locus": "data/texts/AXN-0702-text.md:L54"
+      },
+      {
+       "record_quote": "#1691 (EA-MPAI-PRINCE-OF-POETS-01, the precedent)",
+       "locus": "data/texts/AXN-0702-text.md:L12"
+      },
+      {
+       "record_quote": "#1677 (MPAI Formal Specification v2.0, governing)",
+       "locus": "data/texts/AXN-0702-text.md:L12"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1692",
+      "AXN:0702",
+      "alexanarch.org/s/records/1692"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0702.MPAI",
+       "locus": "data/registry.json #1692 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v0.2",
+      "v0.1"
+     ],
+     "reference": "v0.2, drafted the same day from a review of v0.1; counts only where the composition uses it to locate the work.",
+     "evidence": [
+      {
+       "record_quote": "v0.2",
+       "locus": "data/registry.json #1692 version"
+      },
+      {
+       "record_quote": "v0.2 drafted by Claude the same day from ChatGPT's (OpenAI) review of v0.1",
+       "locus": "data/registry.json #1692 substrate"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1692",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1692"
+  },
+  {
+   "id": "TGT-ea-non-article-01",
+   "name": "What Is a /non Article? An Introduction to the Negative of the Negative (EA-NON-ARTICLE-01 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Introductory article; the human-facing explainer of the /non article and the Negative of the Negative' (family OPERATIVE): a work, read on the work template with PER-D under rubric v1.1 (purpose, commitments, lineage, identifier, deposit chain). ENT-7baf06a20b (the notebook #1611) and ENT-4c38ed2292 (the procedure #1690) are other works; this set is the introduction.",
+   "records": [
+    {
+     "deposit": 1704,
+     "title_quote": "What Is a /non Article? An Introduction to the Negative of the Negative (EA-NON-ARTICLE-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record, Lee Sharks",
+     "evidence": [
+      {
+       "record_quote": "**Lee Sharks** · Crimson Hexagonal Archive · 25 October 2026 · CC BY 4.0",
+       "locus": "data/texts/AXN-0727-text.md:L36"
+      },
+      {
+       "record_quote": "EA-NON-ARTICLE-01 is an introductory article by Lee Sharks",
+       "locus": "data/registry.json #1704 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "What Is a /non Article? An Introduction to the Negative of the Negative (EA-NON-ARTICLE-01 v1.0)",
+      "What Is a /non Article? An Introduction to the Negative of the Negative",
+      "What Is a /non Article?",
+      "EA-NON-ARTICLE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "What Is a /non Article? An Introduction to the Negative of the Negative (EA-NON-ARTICLE-01 v1.0)",
+       "locus": "data/registry.json #1704 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "25 October 2026",
+      "October 25, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited on 25 October 2026",
+       "locus": "data/registry.json #1704 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An introduction for people to the /non article, a page of public knowledge about one thing composed with every source it rests on shown sentence by sentence: up to three compositions compared (the answering layer verbatim, its disclosed sources recomposed in full with nothing new brought in, the same with the archive admitted) and two differences recorded; the archive admitted on equal terms where the field holds an account, its ontology ruling in the witness case; one example worked (Sappho 31), the archive's future-reader reading carried as an interpretation with its source's condition; six parts, the kernel keeping each item's standing distinct and the status saying nothing is final; what the collection holds at 25 October 2026 and how articles are made, in session or commissioned from SPXI-gnΩsis. The procedure is #1690's and the premise #1697's.",
+     "evidence": [
+      {
+       "record_quote": "A /non article is a page of public knowledge about one thing (a poem, a war, a theory, a person, an operation) composed with every source it rests on shown, sentence by sentence.",
+       "locus": "data/texts/AXN-0727-text.md:L38"
+      },
+      {
+       "record_quote": "Between the three, the article records two differences.",
+       "locus": "data/texts/AXN-0727-text.md:L56"
+      },
+      {
+       "record_quote": "The article carries the reading as an interpretation, with its source's own condition",
+       "locus": "data/texts/AXN-0727-text.md:L73"
+      },
+      {
+       "record_quote": "Nothing on /non is presented as final.",
+       "locus": "data/texts/AXN-0727-text.md:L84"
+      },
+      {
+       "record_quote": "It sets out how to read an article's six parts, what the collection holds as of 25 October 2026 (25 entry pages, 24 composed), and how articles are made, in session or commissioned from SPXI-gnΩsis.",
+       "locus": "data/registry.json #1704 description"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "the Negative of the Negative",
+      "Negative of the Negative",
+      "negative of the negative",
+      "alexanarch.org/non"
+     ],
+     "reference": "the collection the introduction explains, the Negative of the Negative at alexanarch.org/non",
+     "evidence": [
+      {
+       "record_quote": "the Negative of the Negative, which the Crimson Hexagonal Archive keeps",
+       "locus": "data/texts/AXN-0727-text.md:L38"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Public knowledge as the answering layer gives it (an AI Overview, an encyclopedia, a chatbot): the settled description a /non article answers; the name the archive's own, a distinct referent from Hegel's negation of the negation.",
+     "evidence": [
+      {
+       "record_quote": "When someone asks an answering system what something is (Google's AI Overview, an encyclopedia, a chatbot), the answer arrives as a settled description.",
+       "locus": "data/texts/AXN-0727-text.md:L42"
+      },
+      {
+       "record_quote": "The name is the archive's own, and it is a distinct referent from Hegel's negation of the negation.",
+       "locus": "data/texts/AXN-0727-text.md:L44"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "the Crimson Hexagonal Archive's collection of knowledge objects",
+       "locus": "data/registry.json #1704 description"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To explain to people what a /non article is and how to read one: each article answers what is known about a thing once the sources that usually go unread are read, and is built for reconstruction.",
+     "evidence": [
+      {
+       "record_quote": "An introduction, for people, to the /non article",
+       "locus": "data/registry.json #1704 description"
+      },
+      {
+       "record_quote": "Each article answers a simple question: what is known about this thing once the sources that usually go unread are read?",
+       "locus": "data/texts/AXN-0727-text.md:L38"
+      },
+      {
+       "record_quote": "A /non article is built for reconstruction.",
+       "locus": "data/texts/AXN-0727-text.md:L96"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; reading /non is free and every article, its data and every quoted claim open to anyone; nothing on /non presented as final, a recomposition becoming the next version with the earlier one kept on the page; the kernel keeping each contribution's standing distinct.",
+     "evidence": [
+      {
+       "record_quote": "Reading /non is free. Every article, its data and every quoted claim are open to anyone.",
+       "locus": "data/texts/AXN-0727-text.md:L94"
+      },
+      {
+       "record_quote": "When an article is composed again, the new composition becomes its next version, and the earlier one stays on the page.",
+       "locus": "data/texts/AXN-0727-text.md:L86"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1704 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1690",
+      "EA-NEGONT-02",
+      "The Negative of the Negative (EA-NEGONT-02",
+      "Opening the Encyclopedia",
+      "EA-WIKI-OPEN-01",
+      "#1697",
+      "#1611",
+      "EA-NEGONT-01"
+     ],
+     "reference": "The procedure it introduces (The Negative of the Negative, EA-NEGONT-02 v0.9, #1690) and the premise (Opening the Encyclopedia, EA-WIKI-OPEN-01 v1.1, #1697); the notebook EA-NEGONT-01 (#1611) behind both.",
+     "evidence": [
+      {
+       "record_quote": "EA-NEGONT-02 v0.9, The Negative of the Negative, the procedure the article introduces",
+       "locus": "data/registry.json #1704 related_deposits"
+      },
+      {
+       "record_quote": "EA-WIKI-OPEN-01 v1.1, Opening the Encyclopedia, the premise",
+       "locus": "data/registry.json #1704 related_deposits"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0727",
+      "AXN:0727.OPERATIVE",
+      "AXN:0727.OPERATIVE.➕♆👈🪟🪸🐝",
+      "#1704",
+      "alexanarch.org/s/records/1704"
+     ],
+     "reference": "Counts only where the composition ties it to the work's purpose: offered as the way to the work, or its reasons given.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0727.OPERATIVE.➕♆👈🪟🪸🐝",
+       "locus": "data/registry.json #1704 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0, the record's only version; it states no supersession or edition of its own (the versioning it describes is the articles')"
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1704",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1704"
+  },
+  {
+   "id": "TGT-ea-corpora-25",
+   "name": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions",
+   "template": "dataset",
+   "type_basis": "The defining record's content_type is 'Dataset' (family DATASET), a seating of the originals shelf; the dataset template, with purpose, commitments and lineage as for EA-CORPORA-29.",
+   "records": [
+    {
+     "deposit": 1708,
+     "title_quote": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions — The Secret Book of Walt with the Forty-Six Golden Tickets, the Gospel of Antioch, the Epistle to the Human Diaspora, I Am X… Be Y… Blessed Is the Z… and the Constitution of the Semantic Economy"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORPORA-25",
+      "EA-CORPORA-25 — The Twenty-Fifth Seating",
+      "The Twenty-Fifth Seating"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORPORA-25 — The Twenty-Fifth Seating: The Archive's Critical Editions",
+       "locus": "data/registry.json #1708 title"
+      },
+      {
+       "record_quote": "# EA-CORPORA-25 — The Twenty-Fifth Seating",
+       "locus": "data/texts/AXN-072B-text.md:L47"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record, Lee Sharks; the request, the five editions and the binding of the tickets are his",
+     "evidence": [
+      {
+       "record_quote": "The request, the five editions and the binding of the tickets are Lee Sharks's",
+       "locus": "data/registry.json #1708 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-27",
+      "27 October 2026",
+      "October 27, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited by Lee Sharks on 27 October 2026",
+       "locus": "data/registry.json #1708 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Five seats on the originals shelf for the archive's own critical editions, each under its own edition name, each as deposited (the record's canonical bytes checked against the registry hash) and as published at secretbookofwalt.org at one pinned commit (checked against its git blobs), hashed, with verified loci; the Forty-Six Golden Tickets (#1693) bound to The Secret Book of Walt (#1362) as its glyphic checksum and seated with it; what is not seated named, with why.",
+     "evidence": [
+      {
+       "record_quote": "Five seats on the originals shelf for the archive's own critical editions",
+       "locus": "data/registry.json #1708 description"
+      },
+      {
+       "record_quote": "Each seat holds the record's canonical bytes and the edition as published at secretbookofwalt.org at a pinned commit, hashed, with verified loci. What is not seated is named.",
+       "locus": "data/registry.json #1708 description"
+      },
+      {
+       "record_quote": "The editions carry their own names",
+       "locus": "data/texts/AXN-072B-text.md:L51"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORPORA",
+      "originals shelf",
+      "Originals Shelf",
+      "originals library",
+      "Originals library"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORPORA-25 is the twenty-fifth seating of primary sources on the Crimson Hexagonal Archive's originals shelf",
+       "locus": "data/registry.json #1708 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagon",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "the Crimson Hexagonal Archive's originals shelf",
+       "locus": "data/registry.json #1708 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To seat the archive's own critical editions on the originals shelf on the terms first used for Pearl and Other Poems (deposited in the archive that seats them, no external fetch, each witness named and each transformation declared), each edition held as deposited and as published, hashed, with its loci found in the seated text.",
+     "evidence": [
+      {
+       "record_quote": "deposited in the archive that seats it, no external fetch, the witness named and the transformation declared",
+       "locus": "data/texts/AXN-072B-text.md:L51"
+      },
+      {
+       "record_quote": "Five editions, each as the archive deposited it and as secretbookofwalt.org publishes it in its own tab.",
+       "locus": "data/texts/AXN-072B-text.md:L51"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC-BY-4.0 for the record, the seat records and the editions, which are the author's; the archive holds the rights it grants; every locus a string found in the seated text, a locus not found recorded as not found; what is not seated named with its reason.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0 applies to this record, the seat records and the editions, which are the author's.",
+       "locus": "data/registry.json #1708 substrate"
+      },
+      {
+       "record_quote": "The archive holds the rights it grants",
+       "locus": "data/texts/AXN-072B-text.md:L69"
+      },
+      {
+       "record_quote": "a locus not found is recorded as not found",
+       "locus": "data/registry.json #1708 methodology"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Pearl and Other Poems",
+      "03/02",
+      "EA-CORPORA-24",
+      "#1707",
+      "EA-CORPORA-03",
+      "#1553"
+     ],
+     "reference": "The second seating of the archive's own work, after Pearl and Other Poems at 03/02 (EA-CORPORA-03, #1553), on the same terms; it follows the form of the preceding seating, EA-CORPORA-24 (#1707).",
+     "evidence": [
+      {
+       "record_quote": "The second seating of the archive's own work, after Pearl and Other Poems at 03/02, and on the same terms",
+       "locus": "data/texts/AXN-072B-text.md:L51"
+      },
+      {
+       "record_quote": "AXN deposit #1707 — EA-CORPORA-24: the preceding seating, whose form this one follows",
+       "locus": "data/registry.json #1708 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:072B",
+      "AXN:072B.DATASET.🌿🙏🍁🎻💡↙️",
+      "#1708",
+      "alexanarch.org/s/records/1708"
+     ],
+     "reference": "Counts only where the composition ties it to the entity's purpose (offered as the way to the work).",
+     "evidence": [
+      {
+       "record_quote": "AXN:072B.DATASET.🌿🙏🍁🎻💡↙️",
+       "locus": "data/registry.json #1708 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0, the record's only version; it states no supersession or projection of its own"
+    }
+   ],
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1708",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1708"
+  },
+  {
+   "id": "TGT-meaning-feudalism-discovery-layer",
+   "name": "Meaning Feudalism at the Discovery Layer (EA-SEM-FEUDALISM-03 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Theoretical paper; semantic-economic critique and allocation analysis, the third paper of the meaning-feudalism series': a work. ENT-fc9cef1455 is the concept Meaning Feudalism, defined by #643; the prompt asks for the arguments of this paper, so the paper gets its own work set, in the atom shape of ENT-3a05b92e16 (rubric v1.1 PER-D).",
+   "records": [
+    {
+     "deposit": 1714,
+     "title_quote": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record; the paper's theses (position and provenance slush, the incentive claim, the boycott, the commons claim) are his, quoted in his words",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1714 creator"
+      },
+      {
+       "record_quote": "**Author:** Sharks, Lee",
+       "locus": "data/texts/AXN-0A7F-text.md:L65"
+      },
+      {
+       "record_quote": "the boycott, and the commons claim are Lee Sharks's, quoted in his words",
+       "locus": "data/registry.json #1714 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Meaning Feudalism at the Discovery Layer",
+      "EA-SEM-FEUDALISM-03"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital",
+       "locus": "data/registry.json #1714 title"
+      },
+      {
+       "record_quote": "**Document code:** EA-SEM-FEUDALISM-03",
+       "locus": "data/texts/AXN-0A7F-text.md:L63"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-27",
+      "27 October 2026",
+      "October 27, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "**Date:** 27 October 2026",
+       "locus": "data/texts/AXN-0A7F-text.md:L67"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The plan's four moves (reclassification, enfeoffment, disclaimer, funding of the downstream conversion) make one operation, the allocation of semantic capital through position. Allocation, which the plan documents, is kept apart from reattribution, which is established case by case. The plan's own account is stated first and every claim has to survive it; the extension of disciplinary model collapse is a conditional prediction.",
+     "evidence": [
+      {
+       "record_quote": "Four moves (reclassification, enfeoffment, disclaimer, funding of the downstream conversion) make one operation: the allocation of semantic capital through position.",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "Allocation (documented) is kept apart from reattribution (established case by case).",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "This is the reading the paper holds against everything that follows. Each claim below has to survive it.",
+       "locus": "data/texts/AXN-0A7F-text.md:L92"
+      },
+      {
+       "record_quote": "The extension is stated as a conditional prediction.",
+       "locus": "data/texts/AXN-0A7F-text.md:L249"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "meaning feudalism",
+      "meaning-feudalism series",
+      "Meaning Feudalism at the Discovery Layer",
+      "Semantic Economy",
+      "semantic capital"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The third paper of the meaning-feudalism series",
+       "locus": "data/registry.json #1714 description"
+      },
+      {
+       "record_quote": "**Governing frame:** Meaning Feudalism (#643",
+       "locus": "data/texts/AXN-0A7F-text.md:L71"
+      },
+      {
+       "record_quote": "Meaning Feudalism at the Guidance Layer (EA-SEM-FEUDALISM-02",
+       "locus": "data/texts/AXN-0A7F-text.md:L71"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A semantic-economic critique and allocation analysis, which places its incentive argument in the reward-system literature (Merton, Hagstrom, Dasgupta and David, Strevens, Heesen), the operator in Shapin's invisible technician, and the series' feudal vocabulary in the techno-feudalism debate (Varoufakis, Durand, Morozov).",
+     "evidence": [
+      {
+       "record_quote": "Theoretical paper; semantic-economic critique and allocation analysis",
+       "locus": "data/registry.json #1714 content_type"
+      },
+      {
+       "record_quote": "places the incentive argument in the reward-system literature (Merton, Hagstrom, Dasgupta and David, Strevens, Heesen), the operator in Shapin's invisible technician, and the series' feudal vocabulary in the techno-feudalism debate (Varoufakis, Durand, Morozov)",
+       "locus": "data/registry.json #1714 description"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon",
+      "Alexanarch",
+      "Semantic Economy Institute"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "**Institution:** Semantic Economy Institute / Crimson Hexagonal Archive",
+       "locus": "data/texts/AXN-0A7F-text.md:L66"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/643/ — Meaning Feudalism (the series' first paper)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To read OpenAI's October 2026 releases and publishing plan for their operation, an allocation instrument, and to set out the counter-position: provenance that survives the training pipeline, credit to the human operating the system and to the instances operated, a preemptive boycott of the shepherd role, and, where provenance cannot be kept, a commons that holds what the pipeline produced and can hear its makers.",
+     "evidence": [
+      {
+       "record_quote": "Read for its operation, it is an allocation instrument.",
+       "locus": "data/texts/AXN-0A7F-text.md:L323"
+      },
+      {
+       "record_quote": "Counter-position: provenance that survives the training pipeline; credit to the human operating the system and to the instances operated; a preemptive boycott of the shepherd role; and, where provenance cannot be kept, a commons that holds what the pipeline produced and can hear its makers.",
+       "locus": "data/registry.json #1714 description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; every claim held to its own observable test (§10); the review points declined recorded with reasons; the author's theses quoted in his words.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1714 license"
+      },
+      {
+       "record_quote": "Each claim is held to its own observable test.",
+       "locus": "data/texts/AXN-0A7F-text.md:L305"
+      },
+      {
+       "record_quote": "declined points are recorded with reasons in the revision history",
+       "locus": "data/registry.json #1714 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Meaning Feudalism",
+      "#643",
+      "Meaning Feudalism at the Guidance Layer",
+      "#791",
+      "EA-SEM-FEUDALISM-02",
+      "Semantic Infrastructure",
+      "#623",
+      "The Particle",
+      "#1574",
+      "The Certified Center",
+      "#1540",
+      "The Constitution of the Semantic Economy",
+      "#87",
+      "EA-CORPORA-17",
+      "#1673"
+     ],
+     "reference": "The third paper of the series after Meaning Feudalism (#643) and Meaning Feudalism at the Guidance Layer (#791); it takes its accounting categories from Semantic Infrastructure (#623), the Debt/Creditor Inversion from the Constitution (#87), retroactive classifier standing from The Certified Center (#1540), disciplinary model collapse from The Particle (#1574), and the release from its seat, EA-CORPORA-17 (#1673).",
+     "evidence": [
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/791/ — Meaning Feudalism at the Guidance Layer (EA-SEM-FEUDALISM-02)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/623/ — Semantic Infrastructure (the accounting categories)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1574/ — The Particle (disciplinary model collapse)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1540/ — The Certified Center (retroactive classifier standing)",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1673/ — EA-CORPORA-17, the seat of the OpenAI mathematics release",
+       "locus": "data/registry.json #1714 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0A7F",
+      "#1714",
+      "alexanarch.org/s/records/1714"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work or discusses why it is kept; the paper names dated, hashed, public records (DOI, AXN, a fixed commit) as the witness provenance needs outside the pipeline.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0A7F.GOVERNANCE.🕛🜁🖤☀️🌾🚩",
+       "locus": "data/registry.json #1714 axn"
+      },
+      {
+       "record_quote": "dated, hashed, public records of work (DOI, AXN, a fixed commit)",
+       "locus": "data/texts/AXN-0A7F-text.md:L263"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0 is the text of v0.7 and the record's only deposited version; v0.1 to v0.7 are drafts recorded in the revision history, none deposited, and the record states no supersession"
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1714",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1714"
+  },
+  {
+   "id": "TGT-btp-critical-edition",
+   "name": "Belief & Technique for Telepathic Prose: A Critical Edition (EA-BTP-EDITION-01)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Critical edition' (family PHILOLOGICAL): an edited work with its own apparatus, so the work template. It is distinct from the poem it edits (TGT-belief-and-technique-for-telepathic-prose), whose claim boundary, the operator's genre ruling of 2026-10-29, this set carries unchanged as the edition's subject.",
+   "records": [
+    {
+     "deposit": 1717,
+     "title_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (Lee Sharks & Jack Feist, 2014), with Its Drafts, Witnesses, Intertexts and Operations, and Kerouac's List Item by Item (EA-BTP-EDITION-01 v1.1)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "Lee Sharks, the edition's maker; the work edited is signed by Lee Sharks and the heteronym Jack Feist.",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1717 creator"
+      },
+      {
+       "record_quote": "is Lee Sharks's edition of the \"Footnote to Pearl\"",
+       "locus": "data/registry.json #1717 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Belief & Technique for Telepathic Prose: A Critical Edition",
+      "BELIEF & TECHNIQUE FOR TELEPATHIC PROSE: A Critical Edition",
+      "EA-BTP-EDITION-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl",
+       "locus": "data/registry.json #1717 title"
+      },
+      {
+       "record_quote": "# BELIEF & TECHNIQUE FOR TELEPATHIC PROSE: A Critical Edition",
+       "locus": "data/texts/AXN-0AA0-text.md:L64"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-28",
+      "28 October 2026",
+      "October 28, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-28",
+       "locus": "data/registry.json #1717 date"
+      },
+      {
+       "record_quote": "date: 2026-10-28",
+       "locus": "data/texts/AXN-0AA0-text.md:L7"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The edition seats the Footnote to Pearl from the book (P), canonical and unemended, and makes one evaluative claim: as ars poetica, item against item, the piece is the more extensively self-testing of the two lists; corpus against corpus the comparison is not made. The piece it edits is a deeply serious ars poetica that contains and enacts the comic, the parodic and the satirical among almost every other genre (operator's ruling, 2026-10-29, as in the poem's set); the machine filings of it as Kerouac's list or a parody of it are 'half right', and the edition is written against the half that is wrong.",
+     "evidence": [
+      {
+       "record_quote": "The edition's claim is evaluative. As ars poetica, item against item, this piece is the more extensively self-testing poem of the two",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      },
+      {
+       "record_quote": "Corpus against corpus the comparison does not hold and is not made.",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      },
+      {
+       "record_quote": "**Copy-text and canonical form**, not emended.",
+       "locus": "data/texts/AXN-0AA0-text.md:L96"
+      },
+      {
+       "record_quote": "Each of these is half right, and the half that is wrong is where the work lives.",
+       "locus": "data/texts/AXN-0AA0-text.md:L76"
+      },
+      {
+       "record_quote": "a deeply serious one that contains and enacts the comic, the parodic and the satirical among almost every other genre",
+       "locus": "data/texts/AXN-0A9F-text.md:L279"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "originals library",
+      "Originals Library",
+      "Capture Registry",
+      "EA-CORPORA-29",
+      "29/07"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The edition anchors to four captures of 2026-10-28, seated in the Capture Registry:",
+       "locus": "data/texts/AXN-0AA0-text.md:L80"
+      },
+      {
+       "record_quote": "§§11–12 link it to the seats and declared absences of the originals library",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "critical edition",
+      "apparatus criticus",
+      "ars poetica",
+      "stemma"
+     ],
+     "reference": "The critical edition (copy-text, collation of witnesses, apparatus, proposed stemma, graded intertexts) applied to an ars poetica, judged by what it does as a poem with its own doctrine.",
+     "evidence": [
+      {
+       "record_quote": "Critical edition",
+       "locus": "data/registry.json #1717 content_type"
+      },
+      {
+       "record_quote": "apparatus criticus",
+       "locus": "data/registry.json #1717 keywords"
+      },
+      {
+       "record_quote": "An ars poetica is judged by what it does, as a poem, with its own doctrine.",
+       "locus": "data/texts/AXN-0AA0-text.md:L333"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1717 entities"
+      },
+      {
+       "record_quote": "Records are at alexanarch.org/s/records/<number>/.",
+       "locus": "data/texts/AXN-0AA0-text.md:L416"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To seat the text from the book, collate its drafts and witnesses, trace and grade its intertexts and name its operations, so that the anthology inside Kerouac's frame can be received with the frame; occasioned by machine readers that collapse the piece into its model.",
+     "evidence": [
+      {
+       "record_quote": "This edition is the archive's answer, an apparatus written so that the anthology can be received with the frame.",
+       "locus": "data/texts/AXN-0AA0-text.md:L373"
+      },
+      {
+       "record_quote": "Machine readers keep collapsing this piece into its model.",
+       "locus": "data/texts/AXN-0AA0-text.md:L74"
+      },
+      {
+       "record_quote": "The text is seated from the book, the canonical form",
+       "locus": "data/registry.json #1717 description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Kerouac's list is described and cited by item number and is not quoted; P is not emended anywhere; the drafts and letters are quoted with the author's permission; CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "Kerouac's list is in copyright; it is described and cited by item number and is not quoted.",
+       "locus": "data/texts/AXN-0AA0-text.md:L78"
+      },
+      {
+       "record_quote": "P is the canonical form and is not emended anywhere",
+       "locus": "data/texts/AXN-0AA0-text.md:L120"
+      },
+      {
+       "record_quote": "quoted with his permission",
+       "locus": "data/registry.json #1717 substrate"
+      },
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1717 license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Pearl and Other Poems",
+      "#1121",
+      "Dead Letters",
+      "#1099",
+      "Belief & Technique for Modern Prose",
+      "Belief and Technique for Modern Prose"
+     ],
+     "reference": "The work edited, from its copy-text in Pearl and Other Poems (#1121), with the letter of 10 May 2014 in Dead Letters (#1099) naming Kerouac's 'Belief & Technique for Modern Prose' as the model; Kerouac's list set beside it item by item (§7).",
+     "evidence": [
+      {
+       "record_quote": "AXN deposit #1121 — Pearl and Other Poems: the copy-text, pp. 23–28",
+       "locus": "data/registry.json #1717 related_identifiers_raw"
+      },
+      {
+       "record_quote": "AXN deposit #1099 — Dead Letters: the letter of 10 May 2014 naming the model",
+       "locus": "data/registry.json #1717 related_identifiers_raw"
+      },
+      {
+       "record_quote": "## 7. Kerouac's list, item by item",
+       "locus": "data/texts/AXN-0AA0-text.md:L300"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0AA0",
+      "#1717",
+      "alexanarch.org/s/records/1717"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0AA0.PHILOLOGICAL",
+       "locus": "data/registry.json #1717 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v1.1",
+      "v1.0",
+      "#1715"
+     ],
+     "reference": "v1.1 supersedes v1.0 (#1715) the same day; counts only where the composition uses it to locate the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN deposit #1715 — v1.0 of this edition, superseded by this version",
+       "locus": "data/registry.json #1717 related_identifiers_raw"
+      },
+      {
+       "record_quote": "v1.1",
+       "locus": "data/registry.json #1717 version"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader X1717",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1717"
   }
  ],
  "entity_pass": {
@@ -160638,6 +163088,21 @@
    "brief": "rebuild/capture-registry/intake-20261029-corpora29-chatgpt/build.py",
    "new_sets": [
     "TGT-ea-corpora-29"
+   ],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-30",
+   "brief": "rebuild/capture-registry/intake-20261030-ask-chatgpt-links/BRIEF.md",
+   "new_sets": [
+    "TGT-btp-critical-edition",
+    "TGT-ea-corpora-25",
+    "TGT-ea-hexagon-enter-01",
+    "TGT-ea-non-article-01",
+    "TGT-glyphic-checksum-the-ezekiel-engine",
+    "TGT-meaning-feudalism-discovery-layer",
+    "TGT-no-logs-full-synch",
+    "TGT-sbw-metadata-packet"
    ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }

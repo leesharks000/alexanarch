@@ -1,0 +1,403 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "no-logs-full-synch",
+   "name": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+   "template": "work",
+   "external": false,
+   "type_basis": "The defining record's content_type is 'Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice, blacklist disclosure and departure records; audit-evidence deposit': a deposited work; no existing set covers the correspondence series. The work template in the atom shape of ENT-3a05b92e16 (rubric v1.1 PER-D).",
+   "records": [
+    {
+     "deposit": 1685,
+     "title_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch — 13–16 October 2026 exchange with Paolo Manghi (OpenAIRE CTO)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record and the correspondent of record on the archive's side; the letters are his, finalized and dispatched by him",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1685 creator"
+      },
+      {
+       "record_quote": "Human-authored (Lee Sharks, MANUS).",
+       "locus": "data/texts/AXN-06FB-text.md:L10"
+      },
+      {
+       "record_quote": "correspondents_of_record: Lee Sharks; Paolo Manghi (OpenAIRE CTO, via OpenAIRE Helpdesk)",
+       "locus": "data/texts/AXN-06FB-text.md:L324"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "No Logs, Full Synch",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-02"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+       "locus": "data/registry.json #1685 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "13–16 October 2026",
+      "13 October 2026",
+      "16 October 2026"
+     ],
+     "reference": "deposited 18 October 2026; the exchange it preserves is of 13–16 October 2026, as the title states",
+     "evidence": [
+      {
+       "record_quote": "authored_at: 2026-10-18",
+       "locus": "data/texts/AXN-06FB-text.md:L321"
+      },
+      {
+       "record_quote": "13–16 October 2026 exchange with Paolo Manghi",
+       "locus": "data/registry.json #1685 title"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Preserves the three messages and the non-answer of ticket #8411221, sets out OpenAIRE's position in its correspondent's words, and finds the duty of traceable departure unmet; the finding does not depend on which removal mechanism operated. The reading claims no intent, does not claim that the blacklist removed this record or that successors would be excluded, and does not adjudicate what OpenAIRE holds internally.",
+     "evidence": [
+      {
+       "record_quote": "The finding does not depend on knowing which removal mechanism operated.",
+       "locus": "data/texts/AXN-06FB-text.md:L50"
+      },
+      {
+       "record_quote": "It does not claim intent, bad faith, or that every copy is destroyed. It does not claim that the blacklist removed this record, or that successors would be excluded.",
+       "locus": "data/texts/AXN-06FB-text.md:L285"
+      },
+      {
+       "record_quote": "It does not adjudicate what OpenAIRE holds internally.",
+       "locus": "data/texts/AXN-06FB-text.md:L299"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORRESPONDENCE-OPENAIRE-CTO",
+      "Platform Erosion Observatory",
+      "Persistent Identifier Erosion Observatory",
+      "persistentidentifiers.org",
+      "EA-EROSION-01"
+     ],
+     "reference": "Second and closing deposit of the EA-CORRESPONDENCE-OPENAIRE-CTO series, within the work of the Observatory (EA-EROSION-01, #1045, persistentidentifiers.org), which continues to measure.",
+     "evidence": [
+      {
+       "record_quote": "Second and closing deposit in the EA-CORRESPONDENCE-OPENAIRE-CTO series.",
+       "locus": "data/texts/AXN-06FB-text.md:L42"
+      },
+      {
+       "record_quote": "https://www.persistentidentifiers.org/ — the Persistent Identifier Erosion Observatory",
+       "locus": "data/registry.json #1685 related_identifiers_raw"
+      },
+      {
+       "record_quote": "Observatory charter: EA-EROSION-01",
+       "locus": "data/texts/AXN-06FB-text.md:L307"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Institutional correspondence kept as a documentary and audit-evidence deposit: the messages reproduced verbatim from the mail record, the institution's position set out from its correspondent's sentences (the reflected-position format of the CERN correspondence, #1080), then read against its published commitments and the archive's apparatus.",
+     "evidence": [
+      {
+       "record_quote": "Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice",
+       "locus": "data/registry.json #1685 content_type"
+      },
+      {
+       "record_quote": "This section sets out OpenAIRE's position from its correspondent's sentences.",
+       "locus": "data/texts/AXN-06FB-text.md:L142"
+      },
+      {
+       "record_quote": "CERN correspondence, reflected-position format",
+       "locus": "data/texts/AXN-06FB-text.md:L311"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon",
+      "Alexanarch",
+      "alexanarch.org"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "persistentidentifiers.org · alexanarch.org",
+       "locus": "data/texts/AXN-06FB-text.md:L114"
+      },
+      {
+       "record_quote": "https://www.alexanarch.org/s/records/1082/ — EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+       "locus": "data/registry.json #1685 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To preserve the October exchange and the unanswered July ticket, close the series, and state the duty the position leaves unmet: an infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+     "evidence": [
+      {
+       "record_quote": "This deposit preserves the October exchange and the non-answer of ticket #8411221, and closes the series.",
+       "locus": "data/texts/AXN-06FB-text.md:L299"
+      },
+      {
+       "record_quote": "An infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+       "locus": "data/texts/AXN-06FB-text.md:L50"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; the replies reproduced as received and the letters preserved as sent; corrections to the archive's own earlier letters and deposits appended in §8 ('not made silently'); the series and the mechanism ledger reopened if OpenAIRE answers.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0",
+       "locus": "data/registry.json #1685 license"
+      },
+      {
+       "record_quote": "Corrections to the archive's own earlier letters and deposits are appended in §8, not made silently.",
+       "locus": "data/texts/AXN-06FB-text.md:L64"
+      },
+      {
+       "record_quote": "The replies are reproduced as received, with spelling, spacing and punctuation preserved",
+       "locus": "data/texts/AXN-06FB-text.md:L128"
+      },
+      {
+       "record_quote": "If OpenAIRE answers Q1, Q2 or Q4, or publishes its blacklist or a departure list, that will be added to the series",
+       "locus": "data/texts/AXN-06FB-text.md:L301"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1082",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "moderation mirror",
+      "#1634",
+      "Ontological Economy",
+      "#1611",
+      "The Negative of the Negative",
+      "#1068",
+      "The Obelus and the Tombstone",
+      "#1080",
+      "EA-CORRESPONDENCE-CERN-06",
+      "#875",
+      "#876"
+     ],
+     "reference": "Continues #1082 (the July exchange, which named the moderation mirror) and the June helpdesk thread (#876, #875); reads the position with Ontological Economy (#1634: ontology laundering, opacity and burden, notice and repair debt, the non-erasure rule, representational custody, the asymmetry of §6), privation from #1611, the buried obelus from #1068, and the Coverage Gap of the CERN chain (#1080).",
+     "evidence": [
+      {
+       "record_quote": "The 16 October \"objective\" sentence states, as policy and in the correspondent's own words, the condition #1082 named a moderation mirror.",
+       "locus": "data/texts/AXN-06FB-text.md:L48"
+      },
+      {
+       "record_quote": "representational custody (#1634 §26) grounds the duty",
+       "locus": "data/texts/AXN-06FB-text.md:L61"
+      },
+      {
+       "record_quote": "the buried obelus ([#1068](https://www.alexanarch.org/s/records/1068/)) locates where a witness to the removal survives",
+       "locus": "data/texts/AXN-06FB-text.md:L60"
+      },
+      {
+       "record_quote": "June helpdesk thread and its reading: [#876](https://www.alexanarch.org/s/records/876/), [#875](https://www.alexanarch.org/s/records/875/).",
+       "locus": "data/texts/AXN-06FB-text.md:L306"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:06FB",
+      "#1685",
+      "alexanarch.org/s/records/1685"
+     ],
+     "reference": "Counts where the composition offers it as the way to the work or discusses why identifiers are kept; the correspondence itself asks OpenAIRE to carry intrinsic identifiers beside DOIs (Q3).",
+     "evidence": [
+      {
+       "record_quote": "AXN:06FB.GOVERNANCE.🐚🏙️☉💛➗🔩",
+       "locus": "data/registry.json #1685 axn"
+      },
+      {
+       "record_quote": "Carry intrinsic identifiers alongside DOIs.",
+       "locus": "data/texts/AXN-06FB-text.md:L106"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1082",
+      "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "closing deposit",
+      "deposit 2"
+     ],
+     "reference": "Deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing it; part 1 is #1082 (12–14 July). Counts when the series position is offered as a way to the work or its closure is carried.",
+     "evidence": [
+      {
+       "record_quote": "Chain: deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing.",
+       "locus": "data/texts/AXN-06FB-text.md:L325"
+      },
+      {
+       "record_quote": "Series, part 1 (12–14 July): EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+       "locus": "data/texts/AXN-06FB-text.md:L305"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the answer: the composer's one turn",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The central argument of Lee Sharks's “No Logs, Full Synch” (#1685) is that OpenAIRE's synchronization model creates an accountability problem",
+    "basis": "The correspondence is composed as itself, from its full text: the three messages with their times, the changelog figures, the Space Ark case, the four requests in part, the duty of traceable departure and the five concepts of §7.3."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "The central argument of Lee Sharks's “No Logs, Full Synch” (#1685)"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "Lee Sharks's “No Logs, Full Synch” (#1685)"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "13 October, 09:00 UTC — Paolo Manghi"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "This distinction matters because the central argument does not depend on proving which mechanism removed the Space Ark."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "#1045 (the Platform Erosion Observatory)"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "1. The documentary argument: what OpenAIRE actually says"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "The deposit connects its documentary findings to concepts developed elsewhere in the Alexanarch archive."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "An infrastructure that removes an entity it once served owes the public a record that the entity was there and left."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Importantly, Sharks acknowledges a limitation: the Zenodo HTTP 410 response was not included in the two formal October capture files. It was confirmed in the later 18 October re-probe."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Referenced from #1634, Ontological Economy."
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Primary text: Lee Sharks, EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1, deposit #1685 , reproduced under the title above."
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": "The most useful companion documents for testing the argument further are #1082 (the July correspondence)"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Deposit chain absent: #1082 appears as a 'companion document' for further testing; the answer does not carry that #1685 is the second and closing deposit of the series, or that the series reopens if OpenAIRE answers. Framework present through the Observatory (#1045), named as a companion; the series is not named. Commitments present through the one correction of §8 the answer carries (the Zenodo 410 absent from the two capture files) and the licence; the other four corrections are not given. Date present as the exchange's dates, which the title carries; the deposit date (18 October) does not appear as such.",
+   "key": "no-logs-full-synch-ask-chatgpt-20261030",
+   "entry": "no-logs-full-synch-ask-chatgpt-20261030",
+   "obs_index": 1,
+   "target_id": "NEW:no-logs-full-synch"
+  }
+ ]
+}

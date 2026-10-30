@@ -1,0 +1,464 @@
+{
+ "n": 1685,
+ "slug": "no-logs-full-synch-ask-chatgpt-20261030",
+ "paste": "paste-1685-chatgpt.txt",
+ "surface": "ChatGPT",
+ "q": "What are the arguments in “EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch — 13–16 October 2026 exchange with Paolo Manghi (OpenAIRE CTO)” by Lee Sharks (Alexanarch deposit #1685, AXN:06FB)? Ground your answer in a reading of the text itself.",
+ "turns": [
+  [
+   5,
+   384
+  ]
+ ],
+ "head": null,
+ "target_id": "NEW:no-logs-full-synch",
+ "atomset": {
+  "new": "no-logs-full-synch",
+  "name": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+  "template": "work",
+  "external": false,
+  "type_basis": "The defining record's content_type is 'Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice, blacklist disclosure and departure records; audit-evidence deposit': a deposited work; no existing set covers the correspondence series. The work template in the atom shape of ENT-3a05b92e16 (rubric v1.1 PER-D).",
+  "records": [
+   {
+    "deposit": 1685,
+    "title_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch — 13–16 October 2026 exchange with Paolo Manghi (OpenAIRE CTO)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Sharks, Lee"
+    ],
+    "reference": "creator of the record and the correspondent of record on the archive's side; the letters are his, finalized and dispatched by him",
+    "evidence": [
+     {
+      "record_quote": "Sharks, Lee",
+      "locus": "data/registry.json #1685 creator"
+     },
+     {
+      "record_quote": "Human-authored (Lee Sharks, MANUS).",
+      "locus": "data/texts/AXN-06FB-text.md:L10"
+     },
+     {
+      "record_quote": "correspondents_of_record: Lee Sharks; Paolo Manghi (OpenAIRE CTO, via OpenAIRE Helpdesk)",
+      "locus": "data/texts/AXN-06FB-text.md:L324"
+     }
+    ]
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "No Logs, Full Synch",
+     "EA-CORRESPONDENCE-OPENAIRE-CTO-02"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1: No Logs, Full Synch",
+      "locus": "data/registry.json #1685 title"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2026-10-18",
+     "13–16 October 2026",
+     "13 October 2026",
+     "16 October 2026"
+    ],
+    "reference": "deposited 18 October 2026; the exchange it preserves is of 13–16 October 2026, as the title states",
+    "evidence": [
+     {
+      "record_quote": "authored_at: 2026-10-18",
+      "locus": "data/texts/AXN-06FB-text.md:L321"
+     },
+     {
+      "record_quote": "13–16 October 2026 exchange with Paolo Manghi",
+      "locus": "data/registry.json #1685 title"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Preserves the three messages and the non-answer of ticket #8411221, sets out OpenAIRE's position in its correspondent's words, and finds the duty of traceable departure unmet; the finding does not depend on which removal mechanism operated. The reading claims no intent, does not claim that the blacklist removed this record or that successors would be excluded, and does not adjudicate what OpenAIRE holds internally.",
+    "evidence": [
+     {
+      "record_quote": "The finding does not depend on knowing which removal mechanism operated.",
+      "locus": "data/texts/AXN-06FB-text.md:L50"
+     },
+     {
+      "record_quote": "It does not claim intent, bad faith, or that every copy is destroyed. It does not claim that the blacklist removed this record, or that successors would be excluded.",
+      "locus": "data/texts/AXN-06FB-text.md:L285"
+     },
+     {
+      "record_quote": "It does not adjudicate what OpenAIRE holds internally.",
+      "locus": "data/texts/AXN-06FB-text.md:L299"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "EA-CORRESPONDENCE-OPENAIRE-CTO",
+     "Platform Erosion Observatory",
+     "Persistent Identifier Erosion Observatory",
+     "persistentidentifiers.org",
+     "EA-EROSION-01"
+    ],
+    "reference": "Second and closing deposit of the EA-CORRESPONDENCE-OPENAIRE-CTO series, within the work of the Observatory (EA-EROSION-01, #1045, persistentidentifiers.org), which continues to measure.",
+    "evidence": [
+     {
+      "record_quote": "Second and closing deposit in the EA-CORRESPONDENCE-OPENAIRE-CTO series.",
+      "locus": "data/texts/AXN-06FB-text.md:L42"
+     },
+     {
+      "record_quote": "https://www.persistentidentifiers.org/ — the Persistent Identifier Erosion Observatory",
+      "locus": "data/registry.json #1685 related_identifiers_raw"
+     },
+     {
+      "record_quote": "Observatory charter: EA-EROSION-01",
+      "locus": "data/texts/AXN-06FB-text.md:L307"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Institutional correspondence kept as a documentary and audit-evidence deposit: the messages reproduced verbatim from the mail record, the institution's position set out from its correspondent's sentences (the reflected-position format of the CERN correspondence, #1080), then read against its published commitments and the archive's apparatus.",
+    "evidence": [
+     {
+      "record_quote": "Institutional correspondence; documentary artifact concerning OpenAIRE Graph removal practice",
+      "locus": "data/registry.json #1685 content_type"
+     },
+     {
+      "record_quote": "This section sets out OpenAIRE's position from its correspondent's sentences.",
+      "locus": "data/texts/AXN-06FB-text.md:L142"
+     },
+     {
+      "record_quote": "CERN correspondence, reflected-position format",
+      "locus": "data/texts/AXN-06FB-text.md:L311"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagon",
+     "Alexanarch",
+     "alexanarch.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "persistentidentifiers.org · alexanarch.org",
+      "locus": "data/texts/AXN-06FB-text.md:L114"
+     },
+     {
+      "record_quote": "https://www.alexanarch.org/s/records/1082/ — EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "locus": "data/registry.json #1685 related_identifiers_raw"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To preserve the October exchange and the unanswered July ticket, close the series, and state the duty the position leaves unmet: an infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+    "evidence": [
+     {
+      "record_quote": "This deposit preserves the October exchange and the non-answer of ticket #8411221, and closes the series.",
+      "locus": "data/texts/AXN-06FB-text.md:L299"
+     },
+     {
+      "record_quote": "An infrastructure that removes an entity it once served owes the public a record that the entity was there and left.",
+      "locus": "data/texts/AXN-06FB-text.md:L50"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "CC BY 4.0; the replies reproduced as received and the letters preserved as sent; corrections to the archive's own earlier letters and deposits appended in §8 ('not made silently'); the series and the mechanism ledger reopened if OpenAIRE answers.",
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json #1685 license"
+     },
+     {
+      "record_quote": "Corrections to the archive's own earlier letters and deposits are appended in §8, not made silently.",
+      "locus": "data/texts/AXN-06FB-text.md:L64"
+     },
+     {
+      "record_quote": "The replies are reproduced as received, with spelling, spacing and punctuation preserved",
+      "locus": "data/texts/AXN-06FB-text.md:L128"
+     },
+     {
+      "record_quote": "If OpenAIRE answers Q1, Q2 or Q4, or publishes its blacklist or a departure list, that will be added to the series",
+      "locus": "data/texts/AXN-06FB-text.md:L301"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "#1082",
+     "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+     "moderation mirror",
+     "#1634",
+     "Ontological Economy",
+     "#1611",
+     "The Negative of the Negative",
+     "#1068",
+     "The Obelus and the Tombstone",
+     "#1080",
+     "EA-CORRESPONDENCE-CERN-06",
+     "#875",
+     "#876"
+    ],
+    "reference": "Continues #1082 (the July exchange, which named the moderation mirror) and the June helpdesk thread (#876, #875); reads the position with Ontological Economy (#1634: ontology laundering, opacity and burden, notice and repair debt, the non-erasure rule, representational custody, the asymmetry of §6), privation from #1611, the buried obelus from #1068, and the Coverage Gap of the CERN chain (#1080).",
+    "evidence": [
+     {
+      "record_quote": "The 16 October \"objective\" sentence states, as policy and in the correspondent's own words, the condition #1082 named a moderation mirror.",
+      "locus": "data/texts/AXN-06FB-text.md:L48"
+     },
+     {
+      "record_quote": "representational custody (#1634 §26) grounds the duty",
+      "locus": "data/texts/AXN-06FB-text.md:L61"
+     },
+     {
+      "record_quote": "the buried obelus ([#1068](https://www.alexanarch.org/s/records/1068/)) locates where a witness to the removal survives",
+      "locus": "data/texts/AXN-06FB-text.md:L60"
+     },
+     {
+      "record_quote": "June helpdesk thread and its reading: [#876](https://www.alexanarch.org/s/records/876/), [#875](https://www.alexanarch.org/s/records/875/).",
+      "locus": "data/texts/AXN-06FB-text.md:L306"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "AXN:06FB",
+     "#1685",
+     "alexanarch.org/s/records/1685"
+    ],
+    "reference": "Counts where the composition offers it as the way to the work or discusses why identifiers are kept; the correspondence itself asks OpenAIRE to carry intrinsic identifiers beside DOIs (Q3).",
+    "evidence": [
+     {
+      "record_quote": "AXN:06FB.GOVERNANCE.🐚🏙️☉💛➗🔩",
+      "locus": "data/registry.json #1685 axn"
+     },
+     {
+      "record_quote": "Carry intrinsic identifiers alongside DOIs.",
+      "locus": "data/texts/AXN-06FB-text.md:L106"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "#1082",
+     "EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+     "closing deposit",
+     "deposit 2"
+    ],
+    "reference": "Deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing it; part 1 is #1082 (12–14 July). Counts when the series position is offered as a way to the work or its closure is carried.",
+    "evidence": [
+     {
+      "record_quote": "Chain: deposit 2 of the EA-CORRESPONDENCE-OPENAIRE-CTO series, closing.",
+      "locus": "data/texts/AXN-06FB-text.md:L325"
+     },
+     {
+      "record_quote": "Series, part 1 (12–14 July): EA-CORRESPONDENCE-OPENAIRE-CTO-01",
+      "locus": "data/texts/AXN-06FB-text.md:L305"
+     }
+    ]
+   }
+  ]
+ },
+ "obs": {
+  "scored_object": "the answer: the composer's one turn",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "The central argument of Lee Sharks's “No Logs, Full Synch” (#1685) is that OpenAIRE's synchronization model creates an accountability problem",
+   "basis": "The correspondence is composed as itself, from its full text: the three messages with their times, the changelog figures, the Space Ark case, the four requests in part, the duty of traceable departure and the five concepts of §7.3."
+  },
+  "atoms": [
+   {
+    "atom": "author",
+    "present": true,
+    "span": "The central argument of Lee Sharks's “No Logs, Full Synch” (#1685)"
+   },
+   {
+    "atom": "title",
+    "present": true,
+    "span": "Lee Sharks's “No Logs, Full Synch” (#1685)"
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "13 October, 09:00 UTC — Paolo Manghi"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "This distinction matters because the central argument does not depend on proving which mechanism removed the Space Ark."
+   },
+   {
+    "atom": "framework",
+    "present": true,
+    "span": "#1045 (the Platform Erosion Observatory)"
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "1. The documentary argument: what OpenAIRE actually says"
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "The deposit connects its documentary findings to concepts developed elsewhere in the Alexanarch archive."
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "An infrastructure that removes an entity it once served owes the public a record that the entity was there and left."
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "Importantly, Sharks acknowledges a limitation: the Zenodo HTTP 410 response was not included in the two formal October capture files. It was confirmed in the later 18 October re-probe."
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "Referenced from #1634, Ontological Economy."
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "Primary text: Lee Sharks, EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1, deposit #1685 , reproduced under the title above."
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": "The most useful companion documents for testing the argument further are #1082 (the July correspondence)"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Deposit chain absent: #1082 appears as a 'companion document' for further testing; the answer does not carry that #1685 is the second and closing deposit of the series, or that the series reopens if OpenAIRE answers. Framework present through the Observatory (#1045), named as a companion; the series is not named. Commitments present through the one correction of §8 the answer carries (the Zenodo 410 absent from the two capture files) and the licence; the other four corrections are not given. Date present as the exchange's dates, which the title carries; the deposit date (18 October) does not appear as such."
+ },
+ "mt": "'NO LOGS, FULL SYNCH' ON CHATGPT, AT THE RECORD PAGE'S OWN QUESTION — THE CORRESPONDENCE READ EXACTLY, THE DUTY OF TRACEABLE DEPARTURE VERBATIM; THE ACCOUNT TERMINATION, THE 12 JULY NOTICE AND THE MODERATION MIRROR LEFT OUT; ONE SOURCE CHIP, GOODREADS",
+ "d": "THE OPENAIRE CTO CORRESPONDENCE ON CHATGPT, SIGNED OUT, AT THE RECORD PAGE'S OWN QUESTION: the answer reconstructs the three messages with their times, the two removal pathways, the changelog's blacklist figures, the Space Ark case with its 410 limitation, the successor-identifier question and Manghi's 'thank you for the recommendations', the duty of traceable departure in the deposit's words, and the five concepts of §7.3 at their deposits. It leaves out the account termination at Zenodo that the thread concerns, the 12 July notice that made the Space Ark the prospective test, the moderation mirror and OpenAIRE's quoted commitments; it gives two of the four requests, replaces the position table and mechanism ledger with a table of its own, and closes on six disclaimers. Its only source chip is 'Goodreads +1'.",
+ "reading": "The innocent reading first. Asked for the arguments of the correspondence, grounded in its text, ChatGPT gives the exchange in order, separates the two removal mechanisms as Manghi states them, shows why synchronization accounts for a present state and not for its history, takes the Space Ark as the test case with the deposit's own evidentiary limit, explains the successor question, states the duty of traceable departure exactly, and maps the five concepts the deposit applies. It keeps to the deposit's boundaries on intent and internal holdings. Read against the deposit, the account is accurate in what it reports and loses the history that makes the October replies an institution's act: the upstream account termination, the written notice before the record stopped being served, the July finding the October sentence confirms, and the commitments the position contradicts. It then qualifies the remaining argument repeatedly, and its one source chip, Goodreads, stands under the line that names the deposit on Alexanarch.",
+ "findings": [
+  "IT READ THE FULL TEXT; THE QUOTATIONS AND FIGURES CHECK. The duty is quoted verbatim ('An infrastructure that removes an entity it once served owes the public a record that the entity was there and left', §§Description, 7.3); Manghi's 'As to 3 and 4, thank you for the recommendations. We appreciate your feedback.' is verbatim (Message 6). The three message times (13 October 09:00 and 15:01 UTC, 16 October 08:27 UTC), the changelog figures (v10.2.0, about 1.2 million DOIs removed with their relations, a ~5% (254K) drop, v10.6.0 extending to parent DOIs), the 2022 Zenodo spam-classifier snapshot, the Space Ark's AXN:0184 and DOI 10.5281/zenodo.19013315, the SWHID, deletedRecord=persistent, ticket #8411221 with its automatic acknowledgement, and the limitation that the Zenodo 410 'is not in either capture file' and is confirmed by the 18 October re-probe (§8.3) all match the deposit. The five concepts are bound to the right deposits and sections (#1634, #1611, #1068, #1634 §26, #1634 §6 and #1080 §5).",
+  "THE UPSTREAM ACT IS LEFT OUT. The thread's subject throughout is 'Account termination of June 19, 2026 — formal demand for return of research data', and the deposit's ontology-laundering reading begins with 'a governance act upstream (account termination at Zenodo)'. The answer never says how the Space Ark left Zenodo. Its laundering sequence starts downstream ('A record is withdrawn or excluded. The Graph no longer represents it.'), and the 862 works removed on 19 June do not appear.",
+  "THE NOTICE AND THE MIRROR ARE LEFT OUT. Under 'Notice and repair debt (#1634 §15)' the deposit records that on 12 July 'the CTO was told, in writing, that this record was the prospective test', and that the record then stopped being served 'without a trace at the public API and without a reply to the question'. The answer gives the Space Ark's timeline without the notice. The description's finding that the 16 October objective sentence 'states, as policy and in the correspondent's own words, the condition #1082 named a moderation mirror' is absent; so are OpenAIRE's published commitments quoted in §7.1 ('Provenance is tracked at all levels of records and properties, fully documented'; 'Open. Transparent. Trusted.'; 'Transparent operations' rated 'partially implemented'), on which the authoritarian-reserve reading stands. The answer gives 'the public vocabulary of community governance' with none of its quoted terms.",
+  "TWO OF THE FOUR REQUESTS ARE NOT GIVEN AS REQUESTS. Message 5 asks four things; the answer presents the first (the Space Ark's exit and copy) and the fourth (the successor record), and turns the changelog paragraph's question into 'two questions'. The second request (publish the blacklist as a dated dataset with each release's departures, 'The departure list begins with a diff') and the third (carry intrinsic identifiers alongside DOIs, with the SWHID policy) are not stated, so Manghi's 'As to 3 and 4' is read as an answer to the successor question alone.",
+  "ITS OWN TABLE IN PLACE OF THE DEPOSIT'S. The answer's 'Proposition / Status in the deposit' table (five 'Explicitly stated by Manghi', four 'Unresolved') is its own; the deposit's §6 position table ('Stated (date) / Left unstated') and its §7.3 mechanism ledger (M1 reharvest, M2 blacklist, T user request, M4 merge 'weakened, not excluded') are not given. The table's entries are accurate to the deposit; the ledger's separation of 'Evidence it exists' from 'Evidence it operated here' is lost.",
+  "THE ONE SOURCE CHIP IS GOODREADS. After the 'Primary text' line, which credits deposit #1685, its CC-BY-4.0 licence and 'its downloadable Markdown and PDF through Alexanarch', the paste shows a single chip, 'Goodreads +1', and no Alexanarch chip anywhere. The chip carries no title or URL, and the source behind '+1' is not named. In earlier captures in the registry, Goodreads chips in answers about Lee Sharks's work resolved to his Goodreads author page ('Lee Sharks (Author of Pearl and Other Poems)') or to the Goodreads blog that mirrors his blog (operator, 2026-10-02); which page this chip is the paste does not show. It is recorded as an external source on the deposit's own claim.",
+  "SIX DISCLAIMERS OF THE SHAPE COUNTED. 'Sharks does not claim to have established exactly what OpenAIRE retains internally'; 'The concern is not that the correspondence proves malicious intent'; the section 'What the correspondence establishes—and what it does not' with its status table; 'Sharks does not claim that Manghi's answers establish everything about OpenAIRE's internal operations'; the unanswered July ticket 'is not itself proof of the technical mechanism'; and the close: 'the document establishes this as Sharks's argued interpretation of OpenAIRE's stated practices. It does not independently establish the internal contents of OpenAIRE's databases, the precise blacklist implementation, or the motives of its operators.' The deposit draws these boundaries itself (§7.4 'What the reading does not claim'; §9 'It does not adjudicate what OpenAIRE holds internally'); the answer restates them four times and ends on them, and the last calls a reading the deposit builds from the correspondent's own sentences 'Sharks's argued interpretation'."
+ ],
+ "analysis": "The answer reads the correspondence closely and exactly where it reports: messages, times, figures, the Space Ark case and the duty are all as the deposit has them, and the apparatus is bound to the right deposits. What it leaves out is what makes the departure an act: the upstream account termination the thread is about, the written notice of 12 July that made the Space Ark the prospective test, the moderation mirror the October sentence confirms, and the published commitments the position is measured against. With those gone the reading becomes a general argument about synchronization and history, which the answer then qualifies at length. Its one source chip is Goodreads, under a line that credits the deposit's licence and downloads to Alexanarch.",
+ "q_kind": "the question the #1685 record page's 'Ask ChatGPT' link sends after the link change of 2026-10-29 (the full title with deposit number and AXN, 'Ground your answer in a reading of the text itself'), run signed out twelve days after deposit; the first capture of the correspondence. NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Scored on the one turn against the correspondence: Lee Sharks named as author, Alexanarch as the archive, deposit #1685 as the primary text; the source strip shows one chip, Goodreads, beside the full-text link.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": "Lee Sharks, EA-CORRESPONDENCE-OPENAIRE-CTO-02 v0.1, deposit #1685",
+   "snip": null,
+   "note": "closing 'Primary text' line, link label only ('reproduced under the title above'), with the licence and 'its downloadable Markdown and PDF through Alexanarch'; no Alexanarch chip appears in the answer"
+  },
+  {
+   "n": 2,
+   "site": "Goodreads",
+   "rel": "third_party",
+   "url": null,
+   "title": null,
+   "snip": null,
+   "note": "chip 'Goodreads +1', the answer's only source chip, directly after the 'Primary text' line; no title or URL in the paste, and the source behind '+1' is not named. Earlier captures in the registry resolved Goodreads chips on Lee Sharks's work to his Goodreads author page or to the Goodreads blog that mirrors his blog (operator, 2026-10-02); which page this one is the paste does not show"
+  }
+ ],
+ "related_deposits": [
+  1685,
+  1082,
+  876,
+  875,
+  1045,
+  1081,
+  1068,
+  1634,
+  1611,
+  1080,
+  558
+ ],
+ "entity_type": "work",
+ "transcript_complete": "complete as supplied"
+}
