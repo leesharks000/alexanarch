@@ -1,92 +1,158 @@
 {
  "corpus": "paul-klee",
- "seat": "EA-CORPORA-28/06",
- "title": "Paul Klee — a declared absence: the pictures, the Pädagogisches Skizzenbuch and the writings, held back by their number and by the rights in their photographs",
- "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+ "seat": "EA-CORPORA-30/09",
+ "title": "Paul Klee — the Pädagogisches Skizzenbuch (Bauhausbücher 2, 1925) in its first printing, with its drawings, and the Schöpferische Konfession (Tribüne der Kunst und Zeit XIII, 1920)",
+ "edition": "Paul Klee, Pädagogisches Skizzenbuch, Bauhausbücher 2 (Munich: Albert Langen, 1925), cover and typography by László Moholy-Nagy — scan (Public Domain Mark at the file) and OCR layer; Tribüne der Kunst und Zeit, ed. Kasimir Edschmid, Bände 12–17 (Berlin: Erich Reiss, 1920), with Band 13, Schöpferische Konfession, Klee's contribution among eighteen — the University of Michigan copy (Google, via HathiTrust and the Internet Archive), OCR layer; the scan held by reference",
  "language": "deu",
  "license": {
-  "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+  "payload": "Public domain. Paul Klee died in 1940; his writings and drawings are free in every country that counts the author's life and seventy years, and both works were first published before 1931, so their United States term has run. László Moholy-Nagy, who designed the Skizzenbuch's cover and typography, died in 1946; that term has run too. The Skizzenbuch scan carries the Public Domain Mark 1.0 at the file (Internet Archive, licenseurl). The Tribüne volume is the University of Michigan copy digitized by Google: HathiTrust records the Michigan run of volumes 12–17 (1920) as pdus, public domain in the United States, full view; the Archive item carries no licence of its own. The volume's other contributors (Benn, Becher, Unruh, Felixmüller and others) are held under the same United States term, the archive's jurisdiction; some of their terms still run in Europe.",
   "record": "CC-BY-4.0 applies to this seat record only."
  },
- "fetched": "2026-10-27",
+ "fetched": "2026-10-30",
  "origin": {
   "items": [
    {
-    "source": "Alexanarch deposit",
-    "file": "declared/absence.json"
+    "source": "Internet Archive",
+    "identifier": "klee-1925-padagogisches-skizzenbuch",
+    "url": "https://archive.org/details/klee-1925-padagogisches-skizzenbuch",
+    "files": [
+     "Klee - 1925 - Pädagogisches Skizzenbuch.pdf",
+     "Klee - 1925 - Pädagogisches Skizzenbuch_djvu.txt"
+    ]
    },
    {
-    "source": "Alexanarch deposit",
-    "file": "declared/absence.md"
+    "source": "Internet Archive",
+    "identifier": "TribueneDerKunstUndZeit12-17",
+    "url": "https://archive.org/details/TribueneDerKunstUndZeit12-17",
+    "files": [
+     "TribueneDerKunstUndZeit12-17_djvu.txt"
+    ],
+    "scan_by_reference": {
+     "file": "TribueneDerKunstUndZeit12-17.pdf",
+     "url": "https://archive.org/download/TribueneDerKunstUndZeit12-17/TribueneDerKunstUndZeit12-17.pdf",
+     "size": 99750023,
+     "md5": "14924abd19915e9a6e773fa0a132af5d",
+     "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+    }
    }
   ],
-  "fetched": "2026-10-27",
-  "transport": "written in session (Transport D); No-Double-Draw"
+  "fetched": "2026-10-30",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
  },
  "works": {
-  "count": 0,
-  "units": "no works held; 6 declared",
-  "list": []
+  "count": 2,
+  "units": "one text file per work; the Tribüne volume is the witness of the whole series bound together (Bände 12–17), Klee's contribution in Band 13",
+  "list": [
+   {
+    "slug": "klee-paedagogisches-skizzenbuch-1925",
+    "work": "Paul Klee, Pädagogisches Skizzenbuch, Bauhausbücher 2 (Munich: Albert Langen, 1925), cover and typography by László Moholy-Nagy — scan (Public Domain Mark at the file) and OCR layer",
+    "text": "text/klee-paedagogisches-skizzenbuch-1925.ocr.txt",
+    "originals": [
+     "original/klee-1925-padagogisches-skizzenbuch/Klee - 1925 - Pädagogisches Skizzenbuch.pdf",
+     "original/klee-1925-padagogisches-skizzenbuch/Klee - 1925 - Pädagogisches Skizzenbuch_djvu.txt"
+    ],
+    "class": "Bauhaus",
+    "lines": 1721
+   },
+   {
+    "slug": "tribuene-der-kunst-und-zeit-12-17",
+    "work": "Tribüne der Kunst und Zeit, ed. Kasimir Edschmid, Bände 12–17 (Berlin: Erich Reiss, 1920), with Band 13, Schöpferische Konfession, Klee's contribution among eighteen — the University of Michigan copy (Google, via HathiTrust and the Internet Archive), OCR layer; the scan held by reference",
+    "text": "text/tribuene-der-kunst-und-zeit-12-17.ocr.txt",
+    "originals": [
+     "original/TribueneDerKunstUndZeit12-17/TribueneDerKunstUndZeit12-17_djvu.txt"
+    ],
+    "lines": 16915,
+    "class": "Expressionism"
+   }
+  ]
  },
- "normalization": "None: the declaration is held as written.",
- "scope": "Declared, not seated: Paul Klee, Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII (Erich Reiss, 1920), opens: open (published before 1931); Paul Klee, Pädagogisches Skizzenbuch (Bauhausbücher 2) (Albert Langen, 1925), opens: open (published before 1931); Paul Klee, Über die moderne Kunst (the Jena lecture of 1924) (Benteli, 1945), opens: 1 January 2041 in the United States, if its term was restored; Paul Klee, ed. Jürg Spiller, Das bildnerische Denken (Benno Schwabe, 1956), opens: the editor's apparatus under its own terms; Paul Klee, ed. Felix Klee, Tagebücher 1898–1918 (DuMont Schauberg, 1957), opens: the editor's apparatus under its own terms; Paul Klee, the pictures (about ten thousand works, 1883–1940), opens: the works open; the photographs under their holders' terms. Wanted, and open: the Pädagogisches Skizzenbuch (1925) and the Schöpferische Konfession (1920) in their first printings, with their drawings, from a scan whose licence is verified at the file. The pictures wait on a source whose images carry an open licence of their own.",
- "declared_absences": [
-  {
-   "author": "Paul Klee",
-   "title": "Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII",
-   "first_publisher": "Erich Reiss",
-   "first_published": 1920,
-   "opens": "open (published before 1931)"
-  },
-  {
-   "author": "Paul Klee",
-   "title": "Pädagogisches Skizzenbuch (Bauhausbücher 2)",
-   "first_publisher": "Albert Langen",
-   "first_published": 1925,
-   "opens": "open (published before 1931)"
-  },
-  {
-   "author": "Paul Klee",
-   "title": "Über die moderne Kunst (the Jena lecture of 1924)",
-   "first_publisher": "Benteli",
-   "first_published": 1945,
-   "opens": "1 January 2041 in the United States, if its term was restored"
-  },
-  {
-   "author": "Paul Klee, ed. Jürg Spiller",
-   "title": "Das bildnerische Denken",
-   "first_publisher": "Benno Schwabe",
-   "first_published": 1956,
-   "opens": "the editor's apparatus under its own terms"
-  },
-  {
-   "author": "Paul Klee, ed. Felix Klee",
-   "title": "Tagebücher 1898–1918",
-   "first_publisher": "DuMont Schauberg",
-   "first_published": 1957,
-   "opens": "the editor's apparatus under its own terms"
-  },
-  {
-   "author": "Paul Klee",
-   "title": "the pictures (about ten thousand works, 1883–1940)",
-   "first_publisher": "their collections",
-   "first_published": null,
-   "opens": "the works open; the photographs under their holders' terms"
-  }
+ "normalization": "Originals as fetched under original/: the Skizzenbuch's PDF and the Archive's OCR layer; the Tribüne volume's OCR layer, its 100 MB scan held by reference (identifier, file, size and md5). text/<slug>.ocr.txt is the Archive's OCR with line endings normalized. The drawings live in the Skizzenbuch PDF and are carried with it. No text corrected by hand.",
+ "scope": "Held: the Pädagogisches Skizzenbuch whole, in the Bauhausbücher first printing of 1925 (Albert Langen, Munich; cover and typography by Moholy-Nagy), its figures in the scan; and the Schöpferische Konfession of 1920 in the volume that first printed it, the eighteen confessions of Tribüne der Kunst und Zeit XIII (Schickele, Pechstein, Unruh, Großmann, Klee, Toller, Benn, Hoetger, Beckmann, Scharff, Becher, Schönberg, Kaiser, Felixmüller, Sternheim, Hölzel, Marc, Däubler) bound with Bände 12 and 14–17. Not held, as the twenty-eighth seating declared them: the Jena lecture Über die moderne Kunst (1924, first printed 1945); the notebooks as Spiller edited them (Das bildnerische Denken, 1956) and the diaries as Felix Klee edited them (1957), whose editors' apparatus runs under its own terms; and the pictures, whose photographs carry their holders' claims. The Bauhaus lecture manuscripts (Bildnerische Form- und Gestaltungslehre) are digitized by the Zentrum Paul Klee; queued until a file-level licence is verified.",
+ "verified_loci": [
+  "Pädagogisches Skizzenbuch, I.1, the first sentence — 'Eine aktive Linie, die sich frei ergeht, ein Spaziergang um seiner selbst willen, ohne Ziel.'",
+  "Pädagogisches Skizzenbuch, the agent of the line — 'Das agens ist ein Punkt, der sich verschiebt'",
+  "Pädagogisches Skizzenbuch, the eye's paths through the work — 'Das Auge begeht die ihm im Werk eingerichteten Wege.'",
+  "Pädagogisches Skizzenbuch, the water wheel and hammer — 'Das Räderwerk (medial)'",
+  "Schöpferische Konfession, I, the first sentence — 'Kunst gibt nicht das Sichtbare wieder, sondern macht sichtbar' (the OCR reads 'sichtbar*', the asterisk the scan's)"
  ],
- "verified_loci": [],
  "loci_not_found": [],
- "lines_total": 0,
- "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Paul Klee (1879–1940) is entered as wanted for a reason of his own: \"too many files and too many image copyright landmines.\" His work runs to some ten thousand pictures, scattered across collections whose reproductions carry their own claims, and the shelf takes no file whose licence cannot be verified at the file.",
- "spine": "EA-CORPORA-28 (#1713)",
- "ruling": "A declared absence, the wanted seating: the works named, with their rights and opening dates, and no text (MANUS, 2026-10-27).",
- "axn": "AXN:0730.ORIGINAL.🌌⏳🝊🕊️📖📖",
- "axn_basis": {
-  "sha256_of": "MANIFEST.sha256",
-  "sha256": "e66ea17e4141e328f20125f59f0aa04e6bf0d680a733f0a1882164a21fdb6c0b",
-  "hex_of": "#1713 (AXN:0730.DATASET.☉📖🐝🌕🌾🌍)",
-  "family": "ORIGINAL",
-  "glyph_table": "v2.1",
-  "assigned": "2026-10-27"
+ "lines_total": 18636,
+ "why_seated": "Klee was declared wanted in the twenty-eighth seating for a reason of his own: too many files and too many image copyright landmines. The Skizzenbuch carries its drawings in the book Klee made of them, under a licence stated at the file, and the Konfession stands in the volume where it was first set beside seventeen other confessions of its moment. Seated with the exact sciences, the line that walks for its own sake stands beside the line Euclid defines as breadthless length.",
+ "spine": "EA-CORPORA-30",
+ "ruling": "Lee Sharks, 2026-10-30: \"and then an ea-corpora seating... Einstein, Gödel, Tesla, Copernicus, Galileo, classical Arabic mathematicians... what is in the public domain, and what else? and just to be perverse lets seat the promised Klee notebooks with them\"; to the proposed set, \"yes, thats a good set\".",
+ "seating": "EA-CORPORA-30, the thirtieth seating: the exact sciences and Klee's Bauhaus notebook, 2026-10-30",
+ "queued": [
+  "Paul Klee, Bildnerische Form- und Gestaltungslehre (the Bauhaus lecture manuscripts, 1921–1931), digitized by the Zentrum Paul Klee, Bern: queued until a licence is verified at the file.",
+  "Paul Klee, Über die moderne Kunst (the Jena lecture of 1924, first printed Bern: Benteli, 1945): in the United States its term may have been restored; held as the twenty-eighth seating declared it."
+ ],
+ "declared_2026_10_27": {
+  "seat": "EA-CORPORA-28/06",
+  "title": "Paul Klee — a declared absence: the pictures, the Pädagogisches Skizzenbuch and the writings, held back by their number and by the rights in their photographs",
+  "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+  "scope": "Declared, not seated: Paul Klee, Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII (Erich Reiss, 1920), opens: open (published before 1931); Paul Klee, Pädagogisches Skizzenbuch (Bauhausbücher 2) (Albert Langen, 1925), opens: open (published before 1931); Paul Klee, Über die moderne Kunst (the Jena lecture of 1924) (Benteli, 1945), opens: 1 January 2041 in the United States, if its term was restored; Paul Klee, ed. Jürg Spiller, Das bildnerische Denken (Benno Schwabe, 1956), opens: the editor's apparatus under its own terms; Paul Klee, ed. Felix Klee, Tagebücher 1898–1918 (DuMont Schauberg, 1957), opens: the editor's apparatus under its own terms; Paul Klee, the pictures (about ten thousand works, 1883–1940), opens: the works open; the photographs under their holders' terms. Wanted, and open: the Pädagogisches Skizzenbuch (1925) and the Schöpferische Konfession (1920) in their first printings, with their drawings, from a scan whose licence is verified at the file. The pictures wait on a source whose images carry an open licence of their own.",
+  "declared_absences": [
+   {
+    "author": "Paul Klee",
+    "title": "Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII",
+    "first_publisher": "Erich Reiss",
+    "first_published": 1920,
+    "opens": "open (published before 1931)"
+   },
+   {
+    "author": "Paul Klee",
+    "title": "Pädagogisches Skizzenbuch (Bauhausbücher 2)",
+    "first_publisher": "Albert Langen",
+    "first_published": 1925,
+    "opens": "open (published before 1931)"
+   },
+   {
+    "author": "Paul Klee",
+    "title": "Über die moderne Kunst (the Jena lecture of 1924)",
+    "first_publisher": "Benteli",
+    "first_published": 1945,
+    "opens": "1 January 2041 in the United States, if its term was restored"
+   },
+   {
+    "author": "Paul Klee, ed. Jürg Spiller",
+    "title": "Das bildnerische Denken",
+    "first_publisher": "Benno Schwabe",
+    "first_published": 1956,
+    "opens": "the editor's apparatus under its own terms"
+   },
+   {
+    "author": "Paul Klee, ed. Felix Klee",
+    "title": "Tagebücher 1898–1918",
+    "first_publisher": "DuMont Schauberg",
+    "first_published": 1957,
+    "opens": "the editor's apparatus under its own terms"
+   },
+   {
+    "author": "Paul Klee",
+    "title": "the pictures (about ten thousand works, 1883–1940)",
+    "first_publisher": "their collections",
+    "first_published": null,
+    "opens": "the works open; the photographs under their holders' terms"
+   }
+  ],
+  "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Paul Klee (1879–1940) is entered as wanted for a reason of his own: \"too many files and too many image copyright landmines.\" His work runs to some ten thousand pictures, scattered across collections whose reproductions carry their own claims, and the shelf takes no file whose licence cannot be verified at the file.",
+  "ruling": "A declared absence, the wanted seating: the works named, with their rights and opening dates, and no text (MANUS, 2026-10-27).",
+  "fetched": "2026-10-27",
+  "now_held": {
+   "Pädagogisches Skizzenbuch": "held at 30/09 (the 1925 first printing)",
+   "Schöpferische Konfession": "held at 30/09 (Tribüne der Kunst und Zeit XIII, 1920)"
+  }
+ },
+ "fulfils": "EA-CORPORA-28/06, the declared absence of 2026-10-27, whose two open works this seat holds; its declaration is kept at declared/ and above",
+ "axn_prior": {
+  "axn": "AXN:0730.ORIGINAL.🌌⏳🝊🕊️📖📖",
+  "basis": {
+   "sha256_of": "MANIFEST.sha256",
+   "sha256": "e66ea17e4141e328f20125f59f0aa04e6bf0d680a733f0a1882164a21fdb6c0b",
+   "hex_of": "#1713 (AXN:0730.DATASET.☉📖🐝🌕🌾🌍)",
+   "family": "ORIGINAL",
+   "glyph_table": "v2.1",
+   "assigned": "2026-10-27"
+  },
+  "why": "the absence's AXN under #1713; the seat now holds texts and takes its AXN from EA-CORPORA-30"
  }
 }
