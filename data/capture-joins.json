@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.426",
+ "derived_from": "EA-WG-CAPTURES-01 v12.428",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1020,
-  "joined_confirmed": 446,
-  "unjoined": 574,
-  "relations": 4940,
+  "observations": 1022,
+  "joined_confirmed": 447,
+  "unjoined": 575,
+  "relations": 4954,
   "by_state": {
-   "confirmed": 4345,
-   "candidate": 595
+   "confirmed": 4357,
+   "candidate": 597
   },
   "by_verb": {
-   "held_by": 2120,
-   "scored_by": 765,
-   "appeared_in": 1601,
-   "about": 436,
+   "held_by": 2124,
+   "scored_by": 767,
+   "appeared_in": 1608,
+   "about": 437,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4893,6 +4893,20 @@
 {"id": "REL-d81b4af8bacc", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-db30cf32a34e", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a6f82f17536a", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-1b572a0222ce", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.leesharks.com", "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey", "url": null}},
+{"id": "REL-c785ca964220", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "deposit:186", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.leesharks.com", "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey", "url": null}},
+{"id": "REL-692146ca8a10", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "deposit:1643", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "AI Fucking Lies. Capital", "url": null}},
+{"id": "REL-1b572a0222ce", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "www.leesharks.com", "title": "Work", "url": null}},
+{"id": "REL-1b572a0222ce", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.leesharks.com", "title": "Lee Sharks — Good Gray Poet · King of May · Prince of Poets", "url": null}},
+{"id": "REL-1b572a0222ce", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 7, "site": "www.leesharks.com", "title": "Myth", "url": null}},
+{"id": "REL-36d0e3d57069", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8712cc22f3cd", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-073acd3f2926", "obs_id": "OBS-b3a1b3fa774d", "entry": "reverse-engineer-lee-sharks-method-aio-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7b33ec151eb4", "obs_id": "OBS-227806584390", "entry": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "date": "2026-10-30", "surface": "ChatGPT", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-e384508d66b0", "obs_id": "OBS-227806584390", "entry": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "date": "2026-10-30", "surface": "ChatGPT", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-71e705e31991", "obs_id": "OBS-227806584390", "entry": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "date": "2026-10-30", "surface": "ChatGPT", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-73f013107f4e", "obs_id": "OBS-227806584390", "entry": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "date": "2026-10-30", "surface": "ChatGPT", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-19d1ed72e95e", "obs_id": "OBS-227806584390", "entry": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "obs_slug": "reverse-engineer-lee-sharks-method-chatgpt-20261030", "date": "2026-10-30", "surface": "ChatGPT", "q": "Reverse engineer Lee Sharks' working method and compositional practice.", "verb": "about", "object": "non:ai-overview-capture-registry", "basis": "defining papers #740, #880, #1040, #1690", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
