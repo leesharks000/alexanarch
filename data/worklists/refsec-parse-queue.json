@@ -1,9 +1,9 @@
 {
  "description": "Stage B/C queue: freeform reference-section entries awaiting in-session interpretive parsing (No-Double-Draw: TACHYON parses in-session; never via API). Parsed entries carry structured records and bib: keys.",
- "dateModified": "2026-10-30T00:00:38Z",
- "pending": 162,
- "parsed": 5714,
- "triaged": 3419,
+ "dateModified": "2026-10-30T00:14:14Z",
+ "pending": 156,
+ "parsed": 5715,
+ "triaged": 3424,
  "retired_from_older_segmentation": 0,
  "entries": [
   {
@@ -234444,7 +234444,8 @@
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "Primary, the censuses and their files:",
    "locus": "refsec",
-   "status": "pending"
+   "status": "apparatus",
+   "triage": "deterministic; not a bibliographic reference"
   },
   {
    "source_deposit": 1719,
@@ -234458,28 +234459,40 @@
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "- https://www.provenanceerasure.org/aggregators/ and `provenance-erasure/data/provenance-census/` (census.json, census_src.py, sources/manifest.json).",
    "locus": "refsec",
-   "status": "pending"
+   "status": "prose",
+   "triage": "deterministic; not a bibliographic reference"
   },
   {
    "source_deposit": 1719,
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "- https://www.laborvector.org/aggregators/ and `laborvector/data/labor-census/` (census.json, census_src.py, questions.json, sources/manifest.json).",
    "locus": "refsec",
-   "status": "pending"
+   "status": "prose",
+   "triage": "deterministic; not a bibliographic reference"
   },
   {
    "source_deposit": 1719,
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "- https://www.provenanceerasure.org/aggregators/wikiwho/; https://www.alexanarch.org/captures/wikiwho-aio-20261029/ (AXN:0AD7); https://www.alexanarch.org/non/wikiwho/; https://www.alexanarch.org/s/records/1718/ (EA-MPAI-WIKIWHO-01 v0.2).",
    "locus": "refsec",
-   "status": "pending"
+   "status": "provenance_row",
+   "triage": "deterministic; not a bibliographic reference"
   },
   {
    "source_deposit": 1719,
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "- https://www.laborvector.org/aggregators/turkopticon/; https://www.alexanarch.org/captures/turkopticon-aio-20261029/ (AXN:0AF4); https://www.alexanarch.org/non/turkopticon/; Turkopticon, \"Turkopticon is Still Here!\" (LinkedIn, 4 September 2026), https://www.linkedin.com/pulse/turkopticon-still-here-turkopticon-koouc, saved in the labor census as `turkopticon--still-here`.",
    "locus": "refsec",
-   "status": "pending"
+   "status": "parsed",
+   "parsed": {
+    "authors": null,
+    "title": "Turkopticon is Still Here!",
+    "venue": null,
+    "year": "2026",
+    "bibkey": "bib:8c62d7865fc7",
+    "ontic_status": "unverified",
+    "confidence": 0.75
+   }
   },
   {
    "source_deposit": 1719,
@@ -234514,7 +234527,8 @@
    "source_axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
    "raw": "- The Lateral Field Bleed Protocol, https://www.alexanarch.org/s/records/726/.",
    "locus": "refsec",
-   "status": "pending"
+   "status": "prose",
+   "triage": "deterministic; not a bibliographic reference"
   },
   {
    "source_deposit": 1719,
@@ -234523,5 +234537,21 @@
    "locus": "refsec",
    "status": "pending"
   }
- ]
+ ],
+ "read": 6956,
+ "bibkey_convention": "bib:<sha256(normalized raw)[:12]>; deterministic from 2026-07-30",
+ "triage_statuses": {
+  "parsed": "bibliographic reference, fields extracted",
+  "relation_line": "identifier+relation row; edge carried by the citation graph, not bibliography",
+  "legal_citation": "statute, code, or case reference",
+  "apparatus": "table header, column label, or structural fragment",
+  "prose": "sentence or bio text swept in by section segmentation",
+  "bare_url": "URL-only entry; the edge is already carried in citation-graph-external via `url`",
+  "nav_relation": "navigation-map relation row; internal graph edge, not bibliography",
+  "provenance_row": "capture/provenance table row (platform, account, state, date); apparatus of the capture registry, not bibliography",
+  "footnote": "a numbered note; may mention works, is not a bibliography entry",
+  "tang_prose": "a TANG body paragraph without a reference shape: the genre's citation set in prose (deposit #542); raw kept",
+  "not_reference": "read in session (data/citation-readings.json): not a bibliographic reference",
+  "pending": "resisted deterministic parse; awaits in-session judgment"
+ }
 }
