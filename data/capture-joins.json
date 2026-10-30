@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.420",
+ "derived_from": "EA-WG-CAPTURES-01 v12.422",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1014,
-  "joined_confirmed": 441,
-  "unjoined": 573,
-  "relations": 4898,
+  "observations": 1016,
+  "joined_confirmed": 442,
+  "unjoined": 574,
+  "relations": 4907,
   "by_state": {
-   "confirmed": 4305,
-   "candidate": 593
+   "confirmed": 4313,
+   "candidate": 594
   },
   "by_verb": {
-   "held_by": 2108,
-   "scored_by": 759,
-   "appeared_in": 1579,
-   "about": 434,
+   "held_by": 2112,
+   "scored_by": 761,
+   "appeared_in": 1581,
+   "about": 435,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4851,6 +4851,15 @@
 {"id": "REL-e9ff9c31f642", "obs_id": "OBS-faf218c995c6", "entry": "seed-cone-leap-title-aio-20261030", "obs_slug": "seed-cone-leap-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "GLYPHIC CHECKSUM — Seed · Cone · Leap", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-6786ec064cd2", "obs_id": "OBS-faf218c995c6", "entry": "seed-cone-leap-title-aio-20261030", "obs_slug": "seed-cone-leap-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "GLYPHIC CHECKSUM — Seed · Cone · Leap", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f1e4be28cf94", "obs_id": "OBS-faf218c995c6", "entry": "seed-cone-leap-title-aio-20261030", "obs_slug": "seed-cone-leap-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "GLYPHIC CHECKSUM — Seed · Cone · Leap", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7da917ce543b", "obs_id": "OBS-cd5ad32af9f4", "entry": "pearl-and-other-poems-bare-title-aio-20261030", "obs_slug": "pearl-and-other-poems-bare-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Pearl and Other Poems", "verb": "appeared_in", "object": "deposit:1121", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Amazon.com", "title": "Pearl and Other Poems (The Crimson Hexagon): Sharks, Lee, Sigil, Johannes", "url": null}},
+{"id": "REL-7da917ce543b", "obs_id": "OBS-cd5ad32af9f4", "entry": "pearl-and-other-poems-bare-title-aio-20261030", "obs_slug": "pearl-and-other-poems-bare-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Pearl and Other Poems", "verb": "appeared_in", "object": "deposit:1121", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "Training-Layer Literature", "title": "Pearl and Other Poems — the machine edition - Training-Layer Literature", "url": "https://www.traininglayerliterature.org"}},
+{"id": "REL-d5ade773d670", "obs_id": "OBS-cd5ad32af9f4", "entry": "pearl-and-other-poems-bare-title-aio-20261030", "obs_slug": "pearl-and-other-poems-bare-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Pearl and Other Poems", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-49c6f738c351", "obs_id": "OBS-cd5ad32af9f4", "entry": "pearl-and-other-poems-bare-title-aio-20261030", "obs_slug": "pearl-and-other-poems-bare-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Pearl and Other Poems", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7a22b00e0db1", "obs_id": "OBS-cd5ad32af9f4", "entry": "pearl-and-other-poems-bare-title-aio-20261030", "obs_slug": "pearl-and-other-poems-bare-title-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Pearl and Other Poems", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-cde95c4e0e01", "obs_id": "OBS-3c2de5c3ea30", "entry": "traverse-crimson-hexagon-sappho-room-aio-20261030", "obs_slug": "traverse-crimson-hexagon-sappho-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Traverse the Crimson Hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-375cd02cd5c0", "obs_id": "OBS-3c2de5c3ea30", "entry": "traverse-crimson-hexagon-sappho-room-aio-20261030", "obs_slug": "traverse-crimson-hexagon-sappho-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Traverse the Crimson Hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bfa03d8f8eef", "obs_id": "OBS-3c2de5c3ea30", "entry": "traverse-crimson-hexagon-sappho-room-aio-20261030", "obs_slug": "traverse-crimson-hexagon-sappho-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Traverse the Crimson Hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0602d5f8a269", "obs_id": "OBS-3c2de5c3ea30", "entry": "traverse-crimson-hexagon-sappho-room-aio-20261030", "obs_slug": "traverse-crimson-hexagon-sappho-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "Traverse the Crimson Hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #299, #306", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

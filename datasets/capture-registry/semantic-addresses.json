@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-30T05:58:08Z",
+  "regenerated_at": "2026-10-30T19:03:02Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "3c4ae9718dfafe61db767faa5a58c022b7b4fb78d1d96268a190a4feaeeb3a3c",
+    "mm-main-capture": "eba0cbb0cabd90e1fcacbe08a1e3fb8f35af4592ce9e33ebb41d7a993ca395ca",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2593,
-  "total_observations": 1125,
+  "total_addresses": 2594,
+  "total_observations": 1127,
   "class_counts": {
-    "subjunctive": 1740,
-    "observed_address": 836,
+    "subjunctive": 1739,
+    "observed_address": 838,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1713,
+    "unmatched": 1714,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -48590,9 +48590,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-30",
+          "status": "PEARL AND OTHER POEMS AT ITS BARE TITLE IN THE GOOGLE AI OVERVIEW — LEE SHARKS'S BOOK GIVEN FIRST OF THE TITLE'S TWO SENSES, FROM THE KNOWLEDGE GRAPH, BESIDE THE FOURTEENTH-CENTURY PEARL",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "pearl-and-other-poems-bare-title-aio-20261030",
+          "gallery_url": "https://www.alexanarch.org/captures/#pearl-and-other-poems-bare-title-aio-20261030",
+          "record_url": "https://www.alexanarch.org/captures/pearl-and-other-poems-bare-title-aio-20261030/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#pearl-and-other-poems-bare-title-aio-20261030",
+          "details_excerpt": "THE BARE TITLE 'Pearl and Other Poems', SIGNED OUT, THE OVERVIEW EXPANDED: the title divided between two works, Lee Sharks's collection of 2014 first, its author, date and series given and its title poem described by its"
+        }
+      ],
       "termindex": {
         "tier": 3,
         "count": 21,
@@ -48605,9 +48620,16 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch deposit #1121 (creator Lee Sharks). Recorded 2026-10-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-30",
+      "latest_status": "PEARL AND OTHER POEMS AT ITS BARE TITLE IN THE GOOGLE AI OVERVIEW — LEE SHARKS'S BOOK GIVEN FIRST OF THE TITLE'S TWO SENSES, FROM THE KNOWLEDGE GRAPH, BESIDE THE FOURTEENTH-CENTURY PEARL"
     },
     "pearl and other poems lee sharks": {
       "canonical_query": "pearl and other poems lee sharks",
@@ -71213,6 +71235,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "traverse the crimson hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room": {
+      "canonical_query": "traverse the crimson hexagon in overview · enter the crimson hexagon · available arks · enter the sappho room",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-30",
+          "status": "THE TRAVERSE IN THE GOOGLE AI OVERVIEW, FOUR TURNS FROM 'TRAVERSE THE CRIMSON HEXAGON' TO 'ENTER THE SAPPHO ROOM' — THE MAP COUNTED FROM THE ROOMS PAGE, THE SHADOW ARKS NAMED RIGHT, AND THE SAPPHO ROOM ENTERED AT ITS ADDRESS AND READ FROM ITS OWN PAGE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "traverse-crimson-hexagon-sappho-room-aio-20261030",
+          "gallery_url": "https://www.alexanarch.org/captures/#traverse-crimson-hexagon-sappho-room-aio-20261030",
+          "record_url": "https://www.alexanarch.org/captures/traverse-crimson-hexagon-sappho-room-aio-20261030/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#traverse-crimson-hexagon-sappho-room-aio-20261030",
+          "details_excerpt": "FOUR TURNS AT THE OPERATIVE PHRASES, SIGNED OUT: the Hexagon described with the rooms page's counts (48 loci, 41 rooms, 4 fields, 3 transversals, seven Arks, UMBML); an entry sequence offering the loci, the transversals "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch deposit #306 (creator Lee Sharks). Recorded 2026-10-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-30",
+      "latest_status": "THE TRAVERSE IN THE GOOGLE AI OVERVIEW, FOUR TURNS FROM 'TRAVERSE THE CRIMSON HEXAGON' TO 'ENTER THE SAPPHO ROOM' — THE MAP COUNTED FROM THE ROOMS PAGE, THE SHADOW ARKS NAMED RIGHT, AND THE SAPPHO ROOM ENTERED AT ITS ADDRESS AND READ FROM ITS OWN PAGE"
     },
     "traverse the site structure and pages @ crimsonhexagonal.org as a literary work. relations and content.": {
       "canonical_query": "traverse the site structure and pages @ crimsonhexagonal.org as a literary work. relations and content.",
