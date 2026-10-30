@@ -125,7 +125,7 @@ def main():
                 continue
             if cur:
                 cur.setdefault("history", []).append({"axn": cur["axn"], "sha256": cur["sha256"], "until": date, "reason": reason})
-                cur.update({"axn": axn, "sha256": h, "date_derived": date}); rederived += 1
+                cur.update({"axn": axn, "sha256": h, "date_derived": date, "surface": o.get("surface")}); rederived += 1   # the surface follows the record (repair of 0B15, 2026-10-30)
             else:
                 a["observations"][slug] = {"axn": axn, "sha256": h, "obs_id": o.get("obs_id"), "date": o.get("date"),
                                            "surface": o.get("surface"), "file": f"/data/captures/sealed/{slug}.json", "date_derived": date}
