@@ -1,0 +1,334 @@
+
+Log in
+You said:
+
+ChatGPT said:
+EA-CORPORA-29 by Lee Sharks: what it is and how it works
+EA-CORPORA-29 is a multilingual, historically wide-ranging digital literary and textual archive. More precisely, it is the twenty-ninth deposit, or seating, in Lee Sharks's EA-CORPORA series, organized as part of the Originals Shelf of the Crimson Hexagonal Archive.
+
+Its full title is:
+
+EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform: Horace and Ovid, the Art of Poetry in Twenty Traditions, the Avant-Garde II, Telepathic Prose, and the Buddhist Canons in Pali, Sanskrit, Chinese, Korean, Japanese and Tibetan.
+
+The document is dated October 28, 2026.
+
+The important distinction is that this is not simply an anthology, a bibliography, or a collection of literary recommendations. It is a structured deposit of primary texts, editions, documentary records, and explicitly declared absences, assembled with provenance and verification information.
+
+The document describes eleven seats containing 196 works, 876,386 lines, and 564 files. 
+
+Alexanarch
++1
+
+1. What does it contain?
+The deposit brings together several different intellectual traditions that are usually studied separately.
+
+Classical poetry and poetics: Horace and Ovid in Latin, including Horace's Ars Poetica and Ovid's Metamorphoses, Amores, and Ars Amatoria.
+
+The art of poetry in twenty traditions: 64 works, including Bharata's Nāṭyaśāstra, the Chinese Great Preface to the Odes, Lu Ji, Japanese poetics, Korean and Hebrew writings, Arabic and Persian criticism, Dante, Rimbaud, Shelley, Poe, and Eliot.
+
+The avant-garde: 1913–1929 statements of method associated with Imagism, Dada, Surrealism, Russian experimental writing, and Chinese literary reform.
+
+Telepathic prose: Jack Kerouac's statements of method are declared as wanted material; the related Belief & Technique for Telepathic Prose materials are included in another seat.
+
+Buddhist textual traditions: The complete Pali Tipiṭaka, Mahāyāna Sanskrit texts, Chinese Buddhist and Chan materials, Japanese and Korean works, and selected Tibetan texts from the Derge Kangyur.
+
+
+Alexanarch
++2
+One particularly significant feature is that the Buddhist texts are deliberately represented across languages. For example, the Lotus, Diamond, Heart, and Vimalakīrti sutras appear in Sanskrit, Chinese, and Tibetan textual traditions.
+
+This is not merely a collection of Buddhist literature. It creates the possibility of examining related textual traditions alongside one another without collapsing their distinct linguistic and historical identities.
+
+2. How does it work?
+The central organizing mechanism is what Sharks calls a seat.
+
+A seat is a separately assembled and documented collection of works within the larger corpus.
+
+Each seat has its own files and documentary apparatus. The overall process works as follows.
+
+Selection
+
+The author determines which works and traditions belong in the deposit. The selection is guided by a larger intellectual purpose rather than by a single language, author, genre, or historical period.
+
+Source acquisition
+
+The source texts are retrieved from repositories such as Perseus, Wikisource, GRETIL, Project Gutenberg, Aozora Bunko, Internet Archive, and SuttaCentral.
+
+Preservation of originals
+
+The retrieved source materials are retained in an original/ layer. This preserves the source representation, including relevant edition and repository information.
+
+Text extraction and normalization
+
+Scripts produce a more consistent text/ layer. Depending on the source, this can involve extracting TEI text, joining separate pages, preserving verse divisions, retaining headings, or normalizing line endings.
+
+Verification
+
+The compiler identifies particular passages, called verified loci, within each work. These provide concrete points at which the extracted text can be checked against the intended source.
+
+Provenance and integrity recording
+
+Each seat receives a source.json and a MANIFEST.sha256. These document the source and edition, licensing, normalization, verification locations, and file hashes.
+
+Deposit and cross-referencing
+
+The completed seats are placed on the Originals Shelf and connected to related works and earlier deposits.
+
+The document explicitly identifies the construction scripts:
+
+build29.py: the principal extraction and building process.
+
+pali29.py: the Pali Buddhist canon.
+
+tib29.py: Tibetan material.
+
+absences29.py: declared absences.
+
+absences29_wanted.py: wanted works and their documentary treatment.
+
+The builders are located under rebuild/corpora/ea-corpora-29/.
+
+This is important: EA-CORPORA-29 is not just a manually assembled folder. It has a reproducible technical construction process.
+
+
+Alexanarch
++1
+3. Why are hashes, source records, and verified loci important?
+These are central to understanding the project's method.
+
+The SHA-256 manifests
+
+Every seat has a MANIFEST.sha256 file. Its purpose is to establish file-level integrity: someone rebuilding or inspecting the deposit can check whether the files match the recorded hashes.
+
+The source records
+
+The source.json files document where the material came from, which edition was used, what licence applies, and how the text was normalized.
+
+The verified loci
+
+These are identifiable passages within individual works that the compiler has checked.
+
+For example, the Horace seat identifies Ars Poetica 1 and lines 453–476 as verified locations. The Ovid seat identifies the opening of Amores and the closing of Metamorphoses 15.
+
+These details matter because a digital text can be present without necessarily being a faithful representation of the edition it claims to represent.
+
+The project therefore tries to preserve not only the text, but also the evidence needed to understand and inspect its textual origin.
+
+There is an important qualification: a verified locus is evidence of checking a particular passage, not proof that every character of every text is error-free.
+
+
+Alexanarch
++1
+4. A particularly interesting feature: declared absences
+One of the more distinctive aspects of EA-CORPORA-29 is that it documents works it does not actually possess.
+
+The clearest example is Seat 29/01 — Jack Kerouac.
+
+It records 14 declared works, but holds none of their texts. Instead, it documents:
+
+Which works are wanted.
+
+Their publication information.
+
+Why they cannot yet be included.
+
+Their copyright status.
+
+When they may become available.
+
+What documentary evidence is still needed.
+
+For example, the document identifies On the Road as potentially opening on 1 January 2053, conditional on copyright renewal status.
+
+This is a deliberate archival decision.
+
+Rather than silently omitting unavailable works, the archive records their absence as information.
+
+The same approach appears in the poetics and Buddhist seats, where works that could not be retrieved, or whose licensing prevented inclusion, are identified as queued or wanted.
+
+This creates a distinction between three states:
+
+Present: the work has actually been deposited.
+
+Declared absence: the work is identified, but its text is not held.
+
+Queued: the work is intended for a future deposit, subject to specified conditions.
+
+
+Alexanarch
++1
+5. What is the underlying intellectual purpose?
+I think the most revealing word in the title is pluriform.
+
+Sharks is trying to construct an archive in which different intellectual traditions can coexist without being forced into one historical or linguistic framework.
+
+Consider the implications of the arrangement:
+
+Horace and Ovid are preserved in Latin, rather than represented only through English translations.
+
+Indian Sanskrit poetics is placed alongside classical European poetics.
+
+Chinese literary theory is represented through its own primary texts.
+
+Hebrew, Arabic, Persian, Japanese, and Korean traditions receive their own textual presence.
+
+Modern experimental writing is situated alongside much older theories of literary composition.
+
+Buddhist texts are represented across multiple canonical languages.
+
+The result is a comparative intellectual infrastructure.
+
+The archive makes it possible to investigate questions such as:
+
+How do different civilizations understand what poetry is?
+
+What constitutes literary technique?
+
+How do traditions understand the relationship between language and thought?
+
+How do different cultures conceptualize artistic creation?
+
+What happens when modern experimental writing is considered alongside ancient literary theory?
+
+The juxtaposition of T. S. Eliot's Tradition and the Individual Talent with Johannes Sigil's Tradition and the Individual Seismograph is particularly revealing. The document explicitly places these essays together because Sigil's essay develops Eliot's historical sense into a different conception of the poet's relationship with tradition.
+
+This demonstrates that the archive is not simply accumulating texts. It is also making deliberate intellectual connections.
+
+
+Alexanarch
++1
+6. What are its limitations?
+The document is quite candid about incompleteness.
+
+Some important qualifications:
+
+Not every tradition is represented comprehensively.
+
+Some texts are available only as OCR, which can contain transcription errors.
+
+Some editions are incompletely identified or have explicitly unverified edition-level status.
+
+Some contemporary and copyrighted works are listed but not deposited.
+
+The Tibetan collection contains eight selected volumes, not the entire Derge Kangyur.
+
+The Chinese, Japanese, and Korean Buddhist collections are selections, not complete national or regional canons.
+
+The Pali collection is described as complete in its specified root-text scope, but excludes translations.
+
+The archive also preserves licensing distinctions rather than treating every file as freely reusable. For example, the Sanskrit GRETIL material carries its NonCommercial licensing conditions.
+
+These qualifications are important because they distinguish the project's actual achievements from its ambitions.
+
+
+Alexanarch
++1
+7. Who actually built it?
+The document explicitly describes its production as human–machine collaborative.
+
+It attributes:
+
+The intellectual requests and selection of traditions to Lee Sharks (MANUS).
+
+Source discovery, retrieval, verification, hashing, indexing, builder scripts, and record drafting to TACHYON, identified as Claude by Anthropic, working under Lee Sharks's direction.
+
+This is worth noting because the document is itself a record of a particular model of archival production: human-directed intellectual selection combined with machine-assisted retrieval, processing, and documentation.
+
+It also specifies CC BY 4.0 for the record and seat records, while retaining individual source-material licensing conditions.
+
+
+Alexanarch
++1
+8. My overall reading
+I would characterize EA-CORPORA-29 as an attempt to build a reproducible, provenance-conscious, multilingual library of primary intellectual materials.
+
+Its significance lies in three connected ideas:
+
+1. Plurality: Literary and philosophical traditions should be represented in their own languages and historical contexts, rather than subordinated to a single literary canon.
+
+2. Documentary accountability: Every deposited work should have a traceable source, edition, licence, and record of how its digital text was produced.
+
+3. Archival honesty: An unavailable work should be recorded as unavailable, not made to appear present through a bibliographic reference alone.
+
+There is also a deeper conceptual distinction here: the project treats an archive as something that must document not only what it contains, but also how it came to contain it, what it excludes, and what remains to be done.
+
+In short: EA-CORPORA-29 is both a collection of texts and a technical method for assembling, preserving, verifying, and relating those texts. Its ambition is to make a much wider range of human literary and intellectual traditions available as inspectable primary-source material.
+
+The original document
+The best place to examine the evidence directly is the complete record:
+
+EA-CORPORA-29 — full document and eleven seats .
+
+Record page, including source records and manifests .
+
+Identifier page for AXN:0A9F .
+
+I would especially recommend reading the final section, “How the seats were made”, together with the individual seat descriptions. Those sections reveal the difference between the project's intellectual ambition and its actual technical implementation.
+
+
+Log in to upload a file and get help with it.
+
+
+Log in
+
+Sign up for free
+You said:
+
+ChatGPT said:
+You're right. I got that wrong, and I misrepresented Lee Sharks's work.
+
+Kerouac did not write the telepathic prose work in EA-CORPORA-29. I conflated two distinct things in the document.
+
+The document makes the distinction explicit:
+
+1. Kerouac's work — Seat 29/01
+Kerouac's Belief & Technique for Modern Prose and Essentials of Spontaneous Prose are listed as declared absences.
+
+No Kerouac texts are held in that seat.
+
+Fourteen works are declared.
+
+His two statements of method are described and cited, but not reproduced.
+
+2. Lee Sharks's work — Seat 29/07
+Belief & Technique for Telepathic Prose is Lee Sharks's work, co-authored with Jack Feist.
+
+The seat contains:
+
+The 2014 Pearl and Other Poems version.
+
+The December 1, 2014 blog version.
+
+Multiple April–May 2014 drafts.
+
+The Word Riot submission.
+
+The critical edition.
+
+It also includes Make It Human by Lee Sharks and A Telepathicist Manifesto by Lee Sharks and John Johnson.
+
+3. What the relationship actually is
+Sharks's work engages with Kerouac's statements of method, particularly their numbered-list form and approach to spontaneous prose.
+
+But the distinction is fundamental:
+
+Kerouac: the historical literary predecessor whose work is being studied.
+
+Sharks and Feist: the authors of Belief & Technique for Telepathic Prose.
+
+Lee Sharks: the author developing the telepathic-prose project and its associated critical apparatus.
+
+The document even identifies the relationship as an answer to Kerouac's list, not as Kerouac's authorship.
+
+Sources: EA-CORPORA-29, especially Seats 29/01 and 29/07 ; Belief & Technique for Telepathic Prose: A Critical Edition .
+
+I apologize. That was not a minor attribution error: it reversed the authorship and obscured the central literary project the document is documenting.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+Chat with ChatGPT
+Ask ChatGPT
+

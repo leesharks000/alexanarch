@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.396",
+ "derived_from": "EA-WG-CAPTURES-01 v12.397",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 991,
-  "joined_confirmed": 429,
+  "observations": 992,
+  "joined_confirmed": 430,
   "unjoined": 562,
-  "relations": 4731,
+  "relations": 4743,
   "by_state": {
-   "confirmed": 4203,
-   "candidate": 528
+   "confirmed": 4209,
+   "candidate": 534
   },
   "by_verb": {
-   "held_by": 2062,
-   "scored_by": 736,
-   "appeared_in": 1499,
+   "held_by": 2064,
+   "scored_by": 737,
+   "appeared_in": 1508,
    "about": 416,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -4684,6 +4684,18 @@
 {"id": "REL-9824201e98ba", "obs_id": "OBS-a218a12df4b4", "entry": "originals-library-reading-aio-20261028", "obs_slug": "originals-library-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of the Originals Library at alexanarch.org, characterizing the represented canon with examples.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-c256b2b7de84", "obs_id": "OBS-a218a12df4b4", "entry": "originals-library-reading-aio-20261028", "obs_slug": "originals-library-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of the Originals Library at alexanarch.org, characterizing the represented canon with examples.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-3b8e6bbe5b1d", "obs_id": "OBS-a218a12df4b4", "entry": "originals-library-reading-aio-20261028", "obs_slug": "originals-library-reading-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "Develop a reading of the Originals Library at alexanarch.org, characterizing the represented canon with examples.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "EA-CORPORA-29 — full document and eleven seats", "url": null}},
+{"id": "REL-a161686df452", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "deposit:1716", "basis": "card resolved at intake (document id)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Alexanarch", "title": "EA-CORPORA-29 — full document and eleven seats", "url": null}},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 3, "site": "Alexanarch", "title": "Record page, including source records and manifests", "url": null}},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 4, "site": "Alexanarch", "title": "Identifier page for AXN:0A9F", "url": null}},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 5, "site": "Alexanarch", "title": "EA-CORPORA-29, especially Seats 29/01 and 29/07", "url": null}},
+{"id": "REL-a161686df452", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "deposit:1716", "basis": "card resolved at intake (document id)", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "Alexanarch", "title": "EA-CORPORA-29, especially Seats 29/01 and 29/07", "url": null}},
+{"id": "REL-6b01456f817d", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 6, "site": "Alexanarch", "title": "Belief & Technique for Telepathic Prose: A Critical Edition", "url": null}},
+{"id": "REL-9024be24c413", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "appeared_in", "object": "deposit:1717", "basis": "card resolved at intake (title; one version series, linked to the record of standing its supersession names)", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "Alexanarch", "title": "Belief & Technique for Telepathic Prose: A Critical Edition", "url": null}},
+{"id": "REL-110fc06241d9", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0891c36bc604", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-17c26a2c3542", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

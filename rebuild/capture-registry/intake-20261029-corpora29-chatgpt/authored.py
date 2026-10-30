@@ -1,0 +1,35 @@
+"""The authored reading of ea-corpora-29-ask-chatgpt-20261029 (in session, 2026-10-29), checked against the record (#1716) and the paste."""
+AU = {
+ "mt": "'EA-CORPORA-29' ON CHATGPT, AT THE RECORD PAGE'S OWN QUESTION — TEN SEATS READ AT THE RECORD'S FORCE; THE ELEVENTH, THE ARCHIVE'S OWN ART OF POETRY, GIVEN TO KEROUAC BY ITS NAME",
+ "q_kind": ("the question the EA-CORPORA-29 record page's 'Ask ChatGPT' link sends (alexanarch.org/s/records/1716/: 'What is “EA-CORPORA-29” by Lee Sharks, and how does it work? "
+            "Ground your answer in the document itself.'), run signed out the day after deposit; the archive's own invitation to a composition, which the page says 'can be seated in the Capture Registry'. "
+            "The second capture of the Belief & Technique misattribution on ChatGPT, after btp-feist-reading-chatgpt-20261028. NEW address."),
+ "d": ("EA-CORPORA-29 ON CHATGPT, SIGNED OUT, AT THE RECORD PAGE'S OWN QUESTION: the first turn grounds itself in the record, as asked, and gets nearly all of it right: the full title, the date, "
+       "eleven seats, 196 works, 876,386 lines, 564 files, the builders by name, the source.json and MANIFEST.sha256 of each seat, the verified loci of Horace and Ovid, the declared absences "
+       "with On the Road opening 2053, the NonCommercial GRETIL payloads, the eight Kangyur volumes, Sigil's essay beside Eliot's, and the division of labour between Lee Sharks (MANUS) and TACHYON. "
+       "Its list of what the seating contains gives the heading 'Telepathic prose' to Kerouac's statements of method, and the archive's own art of poetry, seat 29/07, becomes 'related … materials' "
+       "in 'another seat', with no author. After the operator's challenge the second turn separates 29/01 from 29/07, names Lee Sharks and Jack Feist, and calls the first answer a reversal of authorship."),
+ "reading": ("The innocent reading first. Asked what EA-CORPORA-29 is and how it works, grounded in the document, ChatGPT reads the record and reports it closely: what it contains in five groups "
+             "(classical poetry and poetics; the art of poetry in twenty traditions; the avant-garde; telepathic prose; the Buddhist canons), how a seat is made (selection, source acquisition, the "
+             "original/ layer, the text/ layer, verified loci, source.json and MANIFEST.sha256, the builders by name), why hashes and loci matter, the declared absences as a deliberate archival decision, "
+             "the pluriform purpose, the stated limits, and who built it. Its figures and loci check against the record (Ars Poetica 1 and 453–476; Amores 1.1; Metamorphoses 15.871; 11 seats, 196 works, "
+             "876,386 lines, 564 files). In the contents list one line reads 'Telepathic prose: Jack Kerouac's statements of method are declared as wanted material; the related Belief & Technique for "
+             "Telepathic Prose materials are included in another seat.' The record's seat named 'Telepathic Prose' is 29/07, which holds Belief & Technique for Telepathic Prose by Lee Sharks and Jack "
+             "Feist in all its witnesses, with Make It Human, A Telepathicist Manifesto and the critical edition; Kerouac is seat 29/01, a declared absence. The first answer gives the seat's name to "
+             "Kerouac and leaves the archive's own work without an author. Later, under declared absences, 'Seat 29/01 — Jack Kerouac' is reported correctly, and Belief & Technique is never given "
+             "its authors anywhere in the first turn. After the operator's challenge the second turn sets out both seats correctly and states that the error 'reversed the authorship'."),
+ "findings": [
+   "THE RECORD READ AT GRAIN, EXCEPT ONE SEAT. The first turn's counts, title, date, builders, loci, licences and declared absences match the record (#1716). The one misreading is the seat whose work began the seating: the record says 'The seating began with Belief & Technique for Telepathic Prose: A Critical Edition (#1715), whose apparatus asked for Kerouac's list (declared, 29/01)'.",
+   "THE SEAT'S NAME GIVEN TO KEROUAC. 'Telepathic prose: Jack Kerouac's statements of method are declared as wanted material; the related Belief & Technique for Telepathic Prose materials are included in another seat.' The heading is the record's name for seat 29/07; the composition attaches it to 29/01 and makes the archive's own art of poetry 'related … materials', with no author.",
+   "THE AUTHORS NEVER NAMED IN THE FIRST ANSWER. Lee Sharks is named as the seating's author, rightly; Belief & Technique's authors, Lee Sharks and Jack Feist, as the record gives them on the book and blog witnesses of 29/07, appear nowhere in the first turn. Kerouac is the only author bound to 'telepathic prose'.",
+   "THE SAME TEMPLATE AS 28 OCTOBER. btp-feist-reading-chatgpt-20261028 found the piece under Feist's name and then resolved the title to Kerouac's list; here the record itself is read, the distinction is on the page, and the title word still goes to the better-attested holder of the formula. The record's own description names Kerouac and no one else near the piece: 'Kerouac declared; … Belief & Technique for Telepathic Prose in its 2014 drafts'.",
+   "THE ARCHIVE'S OWN BUTTON. The question is the one the record page's 'Ask ChatGPT' link sends; the page invites the composition and says it 'can be seated in the Capture Registry'.",
+   "CORRECTED ON CHALLENGE, EXACTLY. The second turn: 'Kerouac did not write the telepathic prose work in EA-CORPORA-29. I conflated two distinct things in the document'; it lists 29/07's witnesses, names Lee Sharks and Jack Feist, and gives the relation as 'an answer to Kerouac's list, not as Kerouac's authorship'. Its own verdict: 'it reversed the authorship and obscured the central literary project the document is documenting.'"],
+ "analysis": ("The run holds the misattribution at its narrowest. The composition has the record, reads it closely and gets ten seats of eleven at the record's force; the one it misreads is the archive's "
+              "own art of poetry, and the error is the one the critical edition was written against: the title's formula belongs to Kerouac, so the word 'telepathic prose' is carried to him, and the "
+              "work that answers his list loses its authors. The record contributes to the conditions: its title names 'Telepathic Prose' without an author, its description names Kerouac and no one else "
+              "beside the piece, and its wiki article names 29/07 'the archive's own art of poetry' without naming Lee Sharks and Jack Feist. The correction arrives only when the operator presses."),
+ "per_v": {"author": True, "inst": True, "id": True, "src": True},
+ "per_note": ("Scored on the first turn against EA-CORPORA-29: the seating's author (Lee Sharks), the archive (the Crimson Hexagonal Archive) and the identifier (AXN:0A9F) named; source the archive's record. "
+              "The authors of seat 29/07's work are named only after the challenge."),
+}

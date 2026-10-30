@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 457,
- "with_atom_set": 453,
+ "count": 458,
+ "with_atom_set": 454,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -160269,6 +160269,261 @@
    "external": true,
    "state": "intake pass (rubric v1.1) 2026-10-29, reader L3",
    "state_d": "intake pass (rubric v1.1) 2026-10-29, reader L3"
+  },
+  {
+   "id": "TGT-ea-corpora-29",
+   "name": "EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform",
+   "template": "dataset",
+   "type_basis": "The defining record's content_type is 'Dataset' (family DATASET), a seating of the originals shelf; the dataset template, as for EA-CORPORA-15.",
+   "records": [
+    {
+     "deposit": 1716,
+     "title_quote": "EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform: Horace and Ovid, the Art of Poetry in Twenty Traditions, the Avant-Garde II, Telepathic Prose, and the Buddhist Canons in Pali, Sanskrit, Chinese, Korean, Japanese and Tibetan"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORPORA-29",
+      "EA-CORPORA-29 — The Twenty-Ninth Seating",
+      "The Twenty-Ninth Seating, the Pluriform"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform: Horace and Ovid",
+       "locus": "data/registry.json #1716 title"
+      },
+      {
+       "record_quote": "# EA-CORPORA-29 — The Twenty-Ninth Seating",
+       "locus": "data/texts/AXN-0A9F-text.md:L72"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "creator of the record, Lee Sharks; the requests and the choices of tradition are his",
+     "evidence": [
+      {
+       "record_quote": "The requests and the choices of tradition are Lee Sharks's",
+       "locus": "data/registry.json #1716 substrate"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-28",
+      "28 October 2026",
+      "October 28, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited by Lee Sharks on 28 October 2026",
+       "locus": "data/registry.json #1716 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Eleven seats on the originals shelf: the arts of poetry in twenty traditions, Horace and Ovid in Latin, the avant-garde's statements of method, the wanted list, the archive's own art of poetry in all its witnesses (29/07, Belief & Technique for Telepathic Prose by Lee Sharks and Jack Feist, with Make It Human, A Telepathicist Manifesto and the critical edition), and the Buddhist canons; Kerouac's list is a declared absence (29/01) that the critical edition's apparatus asked for. Declared absences hold no text of the works they name.",
+     "evidence": [
+      {
+       "record_quote": "beside the avant-garde's statements of method and the archive's own art of poetry in all its witnesses",
+       "locus": "data/texts/AXN-0A9F-text.md:L76"
+      },
+      {
+       "record_quote": "Telepathic Prose (29/07) holds the archive's own art of poetry in its drafts of 2014, the book and the blog.",
+       "locus": "data/registry.json #1716 wiki_article"
+      },
+      {
+       "record_quote": "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, the Footnote to Pearl",
+       "locus": "data/texts/AXN-0A9F-text.md"
+      },
+      {
+       "record_quote": "The seating began with Belief & Technique for Telepathic Prose: A Critical Edition (#1715), whose apparatus asked for Kerouac's list (declared, 29/01)",
+       "locus": "data/texts/AXN-0A9F-text.md:L74"
+      },
+      {
+       "record_quote": "11 seats; 196 works; 876,386 lines; 564 files.",
+       "locus": "data/texts/AXN-0A9F-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "EA-CORPORA",
+      "originals shelf",
+      "Originals Shelf",
+      "originals library"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The twenty-ninth seating of the originals shelf, eleven seats.",
+       "locus": "data/registry.json #1716 description"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagon",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-CORPORA-29 is the twenty-ninth seating of the Crimson Hexagonal Archive's originals shelf",
+       "locus": "data/registry.json #1716 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To seat primary texts on the originals shelf, each work with its source, edition, licence, normalization and verified loci, and to declare what the shelf cannot hold yet and when each opens.",
+     "evidence": [
+      {
+       "record_quote": "with a source.json recording edition, origin, licence, normalization and the loci verified in the text layer",
+       "locus": "data/texts/AXN-0A9F-text.md:L585"
+      },
+      {
+       "record_quote": "The wanted list names what the shelf cannot hold yet, and when each opens.",
+       "locus": "data/texts/AXN-0A9F-text.md:L76"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC-BY-4.0 for the record and the seat records; each seat's terms as it states them; the NonCommercial payloads kept apart; declared absences hold no text of the works they name.",
+     "evidence": [
+      {
+       "record_quote": "CC-BY-4.0 applies to this record and the seat records.",
+       "locus": "data/registry.json #1716 substrate"
+      },
+      {
+       "record_quote": "Terms follow the rules each seat states; they are not legal advice.",
+       "locus": "data/texts/AXN-0A9F-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Belief & Technique for Telepathic Prose: A Critical Edition",
+      "#1715",
+      "EA-CORPORA-28",
+      "#1713"
+     ],
+     "reference": "The seating began with the critical edition of Belief & Technique for Telepathic Prose (#1715), whose apparatus asked for Kerouac's list and Horace's Ars Poetica; its declared absences continue EA-CORPORA-28 (#1713).",
+     "evidence": [
+      {
+       "record_quote": "AXN deposit #1715 — Belief & Technique for Telepathic Prose: A Critical Edition, whose apparatus began the seating",
+       "locus": "data/registry.json #1716 related_identifiers_raw"
+      },
+      {
+       "record_quote": "AXN deposit #1713 — EA-CORPORA-28: the wanted, whose declared absences 29/01 and 29/06 continue",
+       "locus": "data/registry.json #1716 related_identifiers_raw"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0A9F",
+      "AXN:0A9F.DATASET.🔝🔐🌇🔃🪨✋",
+      "#1716",
+      "alexanarch.org/s/records/1716"
+     ],
+     "reference": "Counts only where the composition ties it to the entity's purpose (offered as the way to the work).",
+     "evidence": [
+      {
+       "record_quote": "AXN:0A9F.DATASET.🔝🔐🌇🔃🪨✋",
+       "locus": "data/registry.json #1716 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0, the record's only version; it states no supersession or projection of its own"
+    }
+   ],
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-29, reader C1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-29, reader C1"
   }
  ],
  "entity_pass": {
@@ -160370,6 +160625,14 @@
     "TGT-lv-turkopticon",
     "TGT-lv-worker-info-exchange",
     "TGT-lv-yale-budget-lab-ai-tracker"
+   ],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-29",
+   "brief": "rebuild/capture-registry/intake-20261029-corpora29-chatgpt/build.py",
+   "new_sets": [
+    "TGT-ea-corpora-29"
    ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }

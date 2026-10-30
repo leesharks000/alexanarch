@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-29T23:31:47Z",
+  "regenerated_at": "2026-10-30T01:17:21Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "efaa0cada48d4472257eb3750a62574e8239a1cd47d0616713d5544222ff804a",
+    "mm-main-capture": "bffeccd79c6f681b7ab626d5f91aeff5d7b9b2e329fcfe34527199615e436529",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2571,
-  "total_observations": 1102,
+  "total_addresses": 2572,
+  "total_observations": 1103,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 814,
+    "observed_address": 815,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1691,
+    "unmatched": 1692,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -75026,6 +75026,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-12",
       "latest_status": "ASKED FOR v1.1, READ v1.0 FROM THE AUTHOR'S BLOG, ITS COUNTS EXACT"
+    },
+    "what is \"ea-corpora-29\" by lee sharks, and how does it work? ground your answer in the document itself.": {
+      "canonical_query": "what is \"ea-corpora-29\" by lee sharks, and how does it work? ground your answer in the document itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-29",
+          "status": "'EA-CORPORA-29' ON CHATGPT, AT THE RECORD PAGE'S OWN QUESTION — TEN SEATS READ AT THE RECORD'S FORCE; THE ELEVENTH, THE ARCHIVE'S OWN ART OF POETRY, GIVEN TO KEROUAC BY ITS NAME",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "ea-corpora-29-ask-chatgpt-20261029",
+          "gallery_url": "https://www.alexanarch.org/captures/#ea-corpora-29-ask-chatgpt-20261029",
+          "record_url": "https://www.alexanarch.org/captures/ea-corpora-29-ask-chatgpt-20261029/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ea-corpora-29-ask-chatgpt-20261029",
+          "details_excerpt": "EA-CORPORA-29 ON CHATGPT, SIGNED OUT, AT THE RECORD PAGE'S OWN QUESTION: the first turn grounds itself in the record, as asked, and gets nearly all of it right: the full title, the date, eleven seats, 196 works, 876,386 "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "dataset",
+        "spxi_treatment": "full",
+        "basis": "EA-CORPORA-29 (#1716, AXN:0A9F), deposited by Lee Sharks on 28 October 2026; seat 29/07 holds Belief & Technique for Telepathic Prose (Lee Sharks & Jack Feist, 2014). Recorded 2026-10-29."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-29",
+      "latest_status": "'EA-CORPORA-29' ON CHATGPT, AT THE RECORD PAGE'S OWN QUESTION — TEN SEATS READ AT THE RECORD'S FORCE; THE ELEVENTH, THE ARCHIVE'S OWN ART OF POETRY, GIVEN TO KEROUAC BY ITS NAME"
     },
     "what is \"ea-reception-01 v1.0: the reception edge as first-class object — schema and the nine founding edges\" by lee sharks, and how does it work? ground your answer in the document itself.": {
       "canonical_query": "what is \"ea-reception-01 v1.0: the reception edge as first-class object — schema and the nine founding edges\" by lee sharks, and how does it work? ground your answer in the document itself.",
