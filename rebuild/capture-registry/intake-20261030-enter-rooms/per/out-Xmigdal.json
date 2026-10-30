@@ -1,0 +1,294 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "migdal-room",
+   "name": "The Migdal Room (R:r.24, 24.ROOM.MIGDAL)",
+   "template": "concept",
+   "external": false,
+   "type_basis": "A room of the Crimson Hexagon, a locus of the seat map (#1687, R:r.24); the concept template, as the Sappho Room's set (ENT-cc2bc4c373). The room has no deposit of its own: its constituting text is an undeposited blog post seated on its room page.",
+   "records": [
+    {
+     "deposit": 1687,
+     "title_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive"
+    },
+    {
+     "deposit": 1241,
+     "title_quote": "H_core Formal Specification v1.8.0"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "Lee Sharks, the author of the seat map that places the room",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1687 creator"
+      }
+     ]
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Migdal Room",
+      "Migdal Room",
+      "Migdal"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "R:r.24 — The Migdal Room.",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      },
+      {
+       "record_quote": "24.ROOM.MIGDAL",
+       "locus": "data/texts/AXN-04EA-text.md:L307"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The room has no deposit; its constituting text, a blog post of 2025-10-28, is held on its room page and not in this repository."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The counter-gospel locus: the Mandaean Canon and the Haran Gawaita, the architecture of the gospel written against; its question, 'What gospel was written against?'",
+     "evidence": [
+      {
+       "record_quote": "Counter-gospel; Mandaean Canon; Haran Gawaita.",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      },
+      {
+       "record_quote": "Its question: “What gospel was written against?”",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Lunar Arm"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Lunar Arm theological node.",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "Mandaean",
+      "Haran Gawaita"
+     ],
+     "reference": "Mandaean scripture, the Haran Gawaita read as counter-gospel.",
+     "evidence": [
+      {
+       "record_quote": "Mandaean Canon and counter-gospel architecture.",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive",
+       "locus": "data/registry.json #1687 title"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To hold who the gospel was written against: the room's question.",
+     "evidence": [
+      {
+       "record_quote": "Its question: “What gospel was written against?”",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The seat map and H_core state no commitments of the room's own."
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Revelation",
+      "Revelation Room",
+      "Sacred Heart"
+     ],
+     "reference": "Depends on the Revelation Room and the Sacred Heart system.",
+     "evidence": [
+      {
+       "record_quote": "Depends on Revelation Room and Sacred Heart system.",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "R:r.24",
+      "24.ROOM.MIGDAL",
+      "alexanarch.org/s/rooms/r24-the-migdal-room"
+     ],
+     "reference": "The room's address on the map and its index page.",
+     "evidence": [
+      {
+       "record_quote": "Index: https://www.alexanarch.org/s/rooms/r24-the-migdal-room/",
+       "locus": "data/texts/AXN-06FD-text.md:L266"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No deposit of its own; the constituting text has no AXN."
+    }
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "You step into the Migdal Room (R:r.24, room).",
+    "basis": "The room is entered as itself, at its address, its contents, node and dependencies composed from its page and the rooms index."
+   },
+   "atoms": [
+    {
+     "atom": "originator",
+     "present": true,
+     "span": "The Migdal Room — R:r.24, room. Lee Sharks."
+    },
+    {
+     "atom": "term",
+     "present": true,
+     "span": "You step into the Migdal Room"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The Mandaean Canon and counter-gospel architecture settle around you."
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "forming a critical theological node in the Lunar Arm"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "The Mandaean Canon and counter-gospel architecture"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "The Migdal Room · 24.ROOM.MIGDAL | Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "its stability depends heavily on the Revelation Room and the Sacred Room"
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "(R:r.24, room)"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Purpose absent: the room's question, 'What gospel was written against?', is not given. Originator present by a card ('Lee Sharks'). Lineage present: the Revelation Room named, the Sacred Heart system given as 'the Sacred Room'. Date, commitments and deposit chain are not required in this set (the room has no deposit of its own).",
+   "key": "enter-the-migdal-room-aio-20261030",
+   "entry": "enter-the-migdal-room-aio-20261030",
+   "obs_index": 1,
+   "target_id": "NEW:migdal-room"
+  }
+ ]
+}

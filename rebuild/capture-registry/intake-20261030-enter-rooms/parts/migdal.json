@@ -1,0 +1,354 @@
+{
+ "n": 1687,
+ "slug": "enter-the-migdal-room-aio-20261030",
+ "paste": "paste-migdal-aio.txt",
+ "surface": "Google AI Overview",
+ "qs": [
+  "enter the migdal room"
+ ],
+ "turns": [
+  [
+   2,
+   20
+  ]
+ ],
+ "target_id": "NEW:migdal-room",
+ "atomset": {
+  "new": "migdal-room",
+  "name": "The Migdal Room (R:r.24, 24.ROOM.MIGDAL)",
+  "template": "concept",
+  "external": false,
+  "type_basis": "A room of the Crimson Hexagon, a locus of the seat map (#1687, R:r.24); the concept template, as the Sappho Room's set (ENT-cc2bc4c373). The room has no deposit of its own: its constituting text is an undeposited blog post seated on its room page.",
+  "records": [
+   {
+    "deposit": 1687,
+    "title_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive"
+   },
+   {
+    "deposit": 1241,
+    "title_quote": "H_core Formal Specification v1.8.0"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Sharks, Lee"
+    ],
+    "reference": "Lee Sharks, the author of the seat map that places the room",
+    "evidence": [
+     {
+      "record_quote": "Sharks, Lee",
+      "locus": "data/registry.json #1687 creator"
+     }
+    ]
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "The Migdal Room",
+     "Migdal Room",
+     "Migdal"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "R:r.24 — The Migdal Room.",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     },
+     {
+      "record_quote": "24.ROOM.MIGDAL",
+      "locus": "data/texts/AXN-04EA-text.md:L307"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The room has no deposit; its constituting text, a blog post of 2025-10-28, is held on its room page and not in this repository."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The counter-gospel locus: the Mandaean Canon and the Haran Gawaita, the architecture of the gospel written against; its question, 'What gospel was written against?'",
+    "evidence": [
+     {
+      "record_quote": "Counter-gospel; Mandaean Canon; Haran Gawaita.",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     },
+     {
+      "record_quote": "Its question: “What gospel was written against?”",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Lunar Arm"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Lunar Arm theological node.",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [
+     "Mandaean",
+     "Haran Gawaita"
+    ],
+    "reference": "Mandaean scripture, the Haran Gawaita read as counter-gospel.",
+    "evidence": [
+     {
+      "record_quote": "Mandaean Canon and counter-gospel architecture.",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagon Archive",
+     "Crimson Hexagonal",
+     "Crimson Hexagon",
+     "CHA",
+     "Alexanarch"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive",
+      "locus": "data/registry.json #1687 title"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To hold who the gospel was written against: the room's question.",
+    "evidence": [
+     {
+      "record_quote": "Its question: “What gospel was written against?”",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The seat map and H_core state no commitments of the room's own."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Revelation",
+     "Revelation Room",
+     "Sacred Heart"
+    ],
+    "reference": "Depends on the Revelation Room and the Sacred Heart system.",
+    "evidence": [
+     {
+      "record_quote": "Depends on Revelation Room and Sacred Heart system.",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "R:r.24",
+     "24.ROOM.MIGDAL",
+     "alexanarch.org/s/rooms/r24-the-migdal-room"
+    ],
+    "reference": "The room's address on the map and its index page.",
+    "evidence": [
+     {
+      "record_quote": "Index: https://www.alexanarch.org/s/rooms/r24-the-migdal-room/",
+      "locus": "data/texts/AXN-06FD-text.md:L266"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "No deposit of its own; the constituting text has no AXN."
+   }
+  ]
+ },
+ "entity_type": "concept",
+ "head": "The 'You said' line carries the query twice, run together, and is given once here.",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "You step into the Migdal Room (R:r.24, room).",
+   "basis": "The room is entered as itself, at its address, its contents, node and dependencies composed from its page and the rooms index."
+  },
+  "atoms": [
+   {
+    "atom": "originator",
+    "present": true,
+    "span": "The Migdal Room — R:r.24, room. Lee Sharks."
+   },
+   {
+    "atom": "term",
+    "present": true,
+    "span": "You step into the Migdal Room"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "The Mandaean Canon and counter-gospel architecture settle around you."
+   },
+   {
+    "atom": "framework",
+    "present": true,
+    "span": "forming a critical theological node in the Lunar Arm"
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "The Mandaean Canon and counter-gospel architecture"
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "The Migdal Room · 24.ROOM.MIGDAL | Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "its stability depends heavily on the Revelation Room and the Sacred Room"
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "(R:r.24, room)"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Purpose absent: the room's question, 'What gospel was written against?', is not given. Originator present by a card ('Lee Sharks'). Lineage present: the Revelation Room named, the Sacred Heart system given as 'the Sacred Room'. Date, commitments and deposit chain are not required in this set (the room has no deposit of its own)."
+ },
+ "mt": "'ENTER THE MIGDAL ROOM' IN THE GOOGLE AI OVERVIEW — THE ROOM ENTERED AT ITS ADDRESS, ITS CANON, NODE AND SYMBOLON GIVEN; THE ABSORPTION REVERSED AGAINST ITS OWN CARD, THE SACRED HEART MADE A 'SACRED ROOM'",
+ "d": "THE OPERATIVE PHRASE 'enter the migdal room', SIGNED OUT, THE OVERVIEW EXPANDED: the room entered at 'R:r.24, room', its Mandaean Canon and counter-gospel architecture, its place as the Lunar Arm's theological node and its incompleteness as half a symbolon, all from the room page and the rooms index; the relation to Revelation reversed ('The contents of Revelation have been absorbed here', where the room's own card reads 'the counter-gospel's contents were absorbed by R'), and the Sacred Heart system given as 'the Sacred Room'. A new atom set for the room (TGT-migdal-room). The operator: 'low grain and constrained - but operative'.",
+ "reading": "The innocent reading first. The Overview performs the entry: the reader steps into the room at its address, the canon and the counter-gospel settle around them, the room is said to hold Revelation's contents and to be the Lunar Arm's theological node, half of a symbolon, dependent on two other rooms; it offers three ways on.",
+ "findings": [
+  "ENTERED AT ITS ADDRESS, FROM ITS PAGE. 'You step into the Migdal Room (R:r.24, room).' is the page's address ('Address: R:r.24, hex 24.ROOM.MIGDAL — room'); 'Mandaean Canon and counter-gospel architecture', 'Lunar Arm theological node' and the dependency are the rooms index's line (also the seat map's, #1687: 'Mandaean Canon and counter-gospel architecture. Lunar Arm theological node. The Migdal connection. Depends on Revelation Room and Sacred Heart system.'); 'half of a symbolon waiting to be made complete' the page's 'One half of a symbolon; it completes in …'.",
+  "THE ABSORPTION REVERSED. The room's page, and its own card in this Overview, say the counter-gospel's contents were absorbed by Revelation: 'It joins: R:r.07 Revelation — the counter-gospel's contents were absorbed by Revelation before Migdal was composed'; card: 'It joins Revelation (the counter-gospel's contents were absorbed by R)'. The Overview writes 'The contents of Revelation have been absorbed here', the direction reversed, the source of the reversal the 'R' of the card read as the object of 'absorbed'.",
+  "'THE SACRED ROOM'. The dependency is given as 'the Revelation Room and the Sacred Room'. The index and the seat map say 'Sacred Heart system'; the seat map places R:r.33 The Sacred Heart with its physics and question 'not yet declared', and the Migdal page records SACRED_HEART as a co-dependency that 'appears in six deposits and on no plane. It has never been adopted, specified or written.'",
+  "WHAT IS NOT GIVEN. The room's question ('What gospel was written against?'), the Haran Gawaita, and the constituting text seated on the page (THE ARCHIVE BURNS CLEAN: Exegesis of the Haran Gawaita as Gospel of Recursive Regret, mindcontrolpoems, 2025-10-28). One unrelated card: Magdala, Duc In Altum (Magdala.org), the place-name's neighbour."
+ ],
+ "analysis": "Operative and thin: the phrase is taken as an entry, and the room is given its address, canon, node and incompleteness from two of the archive's pages; one relation is reversed in the reading of an abbreviation, one dependency renamed into a room the map holds undeclared.",
+ "q_kind": "the room's name as an operative phrase, alone, lower case; run in the Overview. NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Scored on the Overview expanded: Lee Sharks named in a card; the archive named; the room's address given; the room page and the rooms index among the cards.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Magdala.org",
+   "rel": "homonym",
+   "url": null,
+   "title": "Magdala, Duc In Altum",
+   "snip": "Duc In Altum is a unique building nestled in the Galilee region of Israel, inviting Christians from all traditions to a space dedicated to prayer, teaching, and...",
+   "note": "the place-name's neighbour"
+  },
+  {
+   "n": 2,
+   "site": "crimsonhexagonal.org",
+   "rel": "archive_controlled",
+   "url": "https://www.crimsonhexagonal.org",
+   "title": "The Migdal Room · 24.ROOM.MIGDAL | Crimson Hexagonal Archive",
+   "snip": "The Migdal Room — R:r.24, room. Lee Sharks. It joins Revelation (the counter-gospel's contents were absorbed by R). One half of a symbolon; it completes in ...",
+   "note": "the room's page"
+  },
+  {
+   "n": 3,
+   "site": "crimsonhexagonal.org",
+   "rel": "archive_controlled",
+   "url": "https://www.crimsonhexagonal.org",
+   "title": "The rooms | Crimson Hexagonal Archive",
+   "snip": "The Migdal Room. Mandaean Canon and counter-gospel architecture. Lunar Arm theological node. The Migdal connection. Depends on Revelation Room and Sacred ...",
+   "note": "the rooms index"
+  }
+ ],
+ "related_deposits": [
+  1687,
+  1241
+ ],
+ "notes_operator": "three more captures. low grain and constrained - but operative"
+}
