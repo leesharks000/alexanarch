@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.397",
+ "derived_from": "EA-WG-CAPTURES-01 v12.398",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 992,
+  "observations": 993,
   "joined_confirmed": 430,
-  "unjoined": 562,
-  "relations": 4743,
+  "unjoined": 563,
+  "relations": 4747,
   "by_state": {
-   "confirmed": 4209,
-   "candidate": 534
+   "confirmed": 4212,
+   "candidate": 535
   },
   "by_verb": {
-   "held_by": 2064,
-   "scored_by": 737,
-   "appeared_in": 1508,
+   "held_by": 2066,
+   "scored_by": 738,
+   "appeared_in": 1509,
    "about": 416,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -4696,6 +4696,10 @@
 {"id": "REL-110fc06241d9", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-0891c36bc604", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-17c26a2c3542", "obs_id": "OBS-acd14ad66eb6", "entry": "ea-corpora-29-ask-chatgpt-20261029", "obs_slug": "ea-corpora-29-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What is “EA-CORPORA-29” by Lee Sharks, and how does it work? Ground your answer in the document itself.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-ae07eaffc219", "obs_id": "OBS-3ff1984b769a", "entry": "btp-arguments-ask-chatgpt-20261029", "obs_slug": "btp-arguments-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What are the arguments in “Belief & Technique for Telepathic Prose” by Lee Sharks? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-b1e6c1788256", "obs_id": "OBS-3ff1984b769a", "entry": "btp-arguments-ask-chatgpt-20261029", "obs_slug": "btp-arguments-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What are the arguments in “Belief & Technique for Telepathic Prose” by Lee Sharks? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3c1ef6b2afe3", "obs_id": "OBS-3ff1984b769a", "entry": "btp-arguments-ask-chatgpt-20261029", "obs_slug": "btp-arguments-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What are the arguments in “Belief & Technique for Telepathic Prose” by Lee Sharks? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d3534d10d5da", "obs_id": "OBS-3ff1984b769a", "entry": "btp-arguments-ask-chatgpt-20261029", "obs_slug": "btp-arguments-ask-chatgpt-20261029", "date": "2026-10-29", "surface": "ChatGPT", "q": "What are the arguments in “Belief & Technique for Telepathic Prose” by Lee Sharks? Ground your answer in a reading of the text itself.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
