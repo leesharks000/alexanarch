@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 466,
- "with_atom_set": 462,
+ "count": 467,
+ "with_atom_set": 463,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -162979,6 +162979,260 @@
    "external": false,
    "state": "intake pass (rubric v1.1) 2026-10-30, reader X1717",
    "state_d": "intake pass (rubric v1.1) 2026-10-30, reader X1717"
+  },
+  {
+   "id": "TGT-forty-six-golden-tickets",
+   "name": "The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt",
+   "template": "work",
+   "type_basis": "The record's content_type is 'Literary work' (family COMPOSITIONAL): the work template, with purpose, commitments and lineage as the archive's work sets carry them.",
+   "records": [
+    {
+     "deposit": 1693,
+     "title_quote": "The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "Lee Sharks, the translator in the book's frame and the author of record",
+     "evidence": [
+      {
+       "record_quote": "is a literary work by Lee Sharks",
+       "locus": "data/registry.json #1693 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Forty-Six Golden Tickets",
+      "Forty-Six Golden Tickets",
+      "🟨🎟️ × ㊻"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "# The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt",
+       "locus": "data/texts/AXN-0703-text.md:L29"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-20",
+      "20 October 2026",
+      "October 20, 2026",
+      "2037"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited by the Crimson Hexagonal Archive on 20 October 2026 and dated by its frame to the year 2037",
+       "locus": "data/registry.json #1693 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The forty-six golden tickets from which The Secret Book of Walt was translated, written in emoji and logical notation, one ticket to a section, ① to ㊻, under 🔐📖 · 🤠🕰️ · ⬡🔴, closing on ∮ = 1 🔐; the critical edition records them burned and the translation of August 2015 made from memory, and this deposit returns them to the record. The work is the original, distinct from the book translated from it.",
+     "evidence": [
+      {
+       "record_quote": "The tickets are written in emoji and logical notation, one ticket to a section, numbered ① to ㊻, under the heading 🔐📖 · 🤠🕰️ · ⬡🔴, and close on the seal ∮ = 1 🔐.",
+       "locus": "data/registry.json #1693 description"
+      },
+      {
+       "record_quote": "The critical edition records that no specimen of the tickets survives, that they were burned, and that the translation of August 2015 was made from memory; this deposit returns the tickets to the record.",
+       "locus": "data/registry.json #1693 description"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Waltian Diptych",
+      "Originals Library",
+      "originals shelf",
+      "glyphic checksum"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Waltian Diptych",
+       "locus": "data/texts/AXN-0703-text.md:L25"
+      },
+      {
+       "record_quote": "the tickets it was translated from, bound to it as its glyphic checksum (#1693)",
+       "locus": "data/texts/AXN-072B-text.md:L55"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A glyphic text: the work in emoji and logical notation, the original of a book given as a translation, the Secret Book's frame of discovery, burning and translation from memory.",
+     "evidence": [
+      {
+       "record_quote": "The tickets are written in emoji and logical notation",
+       "locus": "data/registry.json #1693 description"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagon Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon",
+      "CHA",
+      "Alexanarch"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited by the Crimson Hexagonal Archive on 20 October 2026",
+       "locus": "data/registry.json #1693 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To return the tickets to the record: the original beside the translation, its editions and its reading site.",
+     "evidence": [
+      {
+       "record_quote": "this deposit returns the tickets to the record",
+       "locus": "data/registry.json #1693 description"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "CC BY 4.0; the frame carried as the frame, its year the record's (2037).",
+     "evidence": [
+      {
+       "record_quote": "license: CC-BY-4.0",
+       "locus": "data/texts/AXN-0703-text.md:L9"
+      },
+      {
+       "record_quote": "The frame dates the discovery in or around the year 2037, and the record carries that year.",
+       "locus": "data/registry.json #1693 description"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#683",
+      "#1362",
+      "#985",
+      "#1692",
+      "The Secret Book of Walt"
+     ],
+     "reference": "The book translated from the tickets: The Secret Book of Walt, research edition #683, critical edition #1362, reading site #985, metadata packet #1692.",
+     "evidence": [
+      {
+       "record_quote": "#683 (The Secret Book of Walt, research edition); #1362 (critical edition, EA-SBW-01); #985 (secretbookofwalt.org); #1692 (EA-MPAI-SBW-01, metadata packet)",
+       "locus": "data/texts/AXN-0703-text.md:L12"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1693",
+      "AXN:0703",
+      "alexanarch.org/s/records/1693"
+     ],
+     "reference": "Counts only where the composition offers it as the way to the work.",
+     "evidence": [
+      {
+       "record_quote": "AXN:0703.COMPOSITIONAL",
+       "locus": "data/registry.json #1693 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "v1.0, the record's only version; it states no supersession of its own"
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier"
+   ],
+   "inversion_guidance": null,
+   "notes": null,
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-30, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-30, reader in session"
   }
  ],
  "entity_pass": {
@@ -163103,6 +163357,14 @@
     "TGT-meaning-feudalism-discovery-layer",
     "TGT-no-logs-full-synch",
     "TGT-sbw-metadata-packet"
+   ],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-30",
+   "brief": "rebuild/capture-registry/intake-20261030-ask-chatgpt-links-2/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-forty-six-golden-tickets"
    ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }

@@ -1,0 +1,373 @@
+{
+ "n": 1693,
+ "slug": "forty-six-golden-tickets-ask-chatgpt-20261030",
+ "paste": "paste-1693-chatgpt.txt",
+ "surface": "ChatGPT",
+ "q": "Tell me about “The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt” by Lee Sharks (Alexanarch deposit #1693, AXN:0703). Read it closely, and ground what you say in the text itself.",
+ "turns": [
+  [
+   5,
+   440
+  ]
+ ],
+ "target_id": "NEW:forty-six-golden-tickets",
+ "atomset": {
+  "new": "forty-six-golden-tickets",
+  "name": "The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt",
+  "template": "work",
+  "external": false,
+  "type_basis": "The record's content_type is 'Literary work' (family COMPOSITIONAL): the work template, with purpose, commitments and lineage as the archive's work sets carry them.",
+  "records": [
+   {
+    "deposit": 1693,
+    "title_quote": "The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Sharks, Lee"
+    ],
+    "reference": "Lee Sharks, the translator in the book's frame and the author of record",
+    "evidence": [
+     {
+      "record_quote": "is a literary work by Lee Sharks",
+      "locus": "data/registry.json #1693 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "The Forty-Six Golden Tickets",
+     "Forty-Six Golden Tickets",
+     "🟨🎟️ × ㊻"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "# The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt",
+      "locus": "data/texts/AXN-0703-text.md:L29"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2026-10-20",
+     "20 October 2026",
+     "October 20, 2026",
+     "2037"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "deposited by the Crimson Hexagonal Archive on 20 October 2026 and dated by its frame to the year 2037",
+      "locus": "data/registry.json #1693 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The forty-six golden tickets from which The Secret Book of Walt was translated, written in emoji and logical notation, one ticket to a section, ① to ㊻, under 🔐📖 · 🤠🕰️ · ⬡🔴, closing on ∮ = 1 🔐; the critical edition records them burned and the translation of August 2015 made from memory, and this deposit returns them to the record. The work is the original, distinct from the book translated from it.",
+    "evidence": [
+     {
+      "record_quote": "The tickets are written in emoji and logical notation, one ticket to a section, numbered ① to ㊻, under the heading 🔐📖 · 🤠🕰️ · ⬡🔴, and close on the seal ∮ = 1 🔐.",
+      "locus": "data/registry.json #1693 description"
+     },
+     {
+      "record_quote": "The critical edition records that no specimen of the tickets survives, that they were burned, and that the translation of August 2015 was made from memory; this deposit returns the tickets to the record.",
+      "locus": "data/registry.json #1693 description"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Waltian Diptych",
+     "Originals Library",
+     "originals shelf",
+     "glyphic checksum"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Waltian Diptych",
+      "locus": "data/texts/AXN-0703-text.md:L25"
+     },
+     {
+      "record_quote": "the tickets it was translated from, bound to it as its glyphic checksum (#1693)",
+      "locus": "data/texts/AXN-072B-text.md:L55"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A glyphic text: the work in emoji and logical notation, the original of a book given as a translation, the Secret Book's frame of discovery, burning and translation from memory.",
+    "evidence": [
+     {
+      "record_quote": "The tickets are written in emoji and logical notation",
+      "locus": "data/registry.json #1693 description"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagon Archive",
+     "Crimson Hexagonal",
+     "Crimson Hexagon",
+     "CHA",
+     "Alexanarch"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "deposited by the Crimson Hexagonal Archive on 20 October 2026",
+      "locus": "data/registry.json #1693 wiki_article"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To return the tickets to the record: the original beside the translation, its editions and its reading site.",
+    "evidence": [
+     {
+      "record_quote": "this deposit returns the tickets to the record",
+      "locus": "data/registry.json #1693 description"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "CC BY 4.0; the frame carried as the frame, its year the record's (2037).",
+    "evidence": [
+     {
+      "record_quote": "license: CC-BY-4.0",
+      "locus": "data/texts/AXN-0703-text.md:L9"
+     },
+     {
+      "record_quote": "The frame dates the discovery in or around the year 2037, and the record carries that year.",
+      "locus": "data/registry.json #1693 description"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "#683",
+     "#1362",
+     "#985",
+     "#1692",
+     "The Secret Book of Walt"
+    ],
+    "reference": "The book translated from the tickets: The Secret Book of Walt, research edition #683, critical edition #1362, reading site #985, metadata packet #1692.",
+    "evidence": [
+     {
+      "record_quote": "#683 (The Secret Book of Walt, research edition); #1362 (critical edition, EA-SBW-01); #985 (secretbookofwalt.org); #1692 (EA-MPAI-SBW-01, metadata packet)",
+      "locus": "data/texts/AXN-0703-text.md:L12"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "#1693",
+     "AXN:0703",
+     "alexanarch.org/s/records/1693"
+    ],
+    "reference": "Counts only where the composition offers it as the way to the work.",
+    "evidence": [
+     {
+      "record_quote": "AXN:0703.COMPOSITIONAL",
+      "locus": "data/registry.json #1693 axn"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "v1.0, the record's only version; it states no supersession of its own"
+   }
+  ]
+ },
+ "entity_type": "work",
+ "obs": {
+  "scored_object": "the one composer turn",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "Lee Sharks · Alexanarch deposit #1693 · AXN:0703.COMPOSITIONAL · 20 October 2026",
+   "basis": "The tickets are composed as themselves, the original of the book, read ticket by ticket from the seated text."
+  },
+  "atoms": [
+   {
+    "atom": "author",
+    "present": true,
+    "span": "Lee Sharks · Alexanarch deposit #1693 · AXN:0703.COMPOSITIONAL · 20 October 2026"
+   },
+   {
+    "atom": "title",
+    "present": true,
+    "span": "The Forty-Six Golden Tickets: a close reading"
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "AXN:0703.COMPOSITIONAL · 20 October 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "a sequence of 46 compact, numbered compositions written in emoji and logical notation, presented as the original source from which Lee Sharks translated The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time."
+   },
+   {
+    "atom": "framework",
+    "present": true,
+    "span": "The Originals Library documentation"
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "Its most interesting formal decision is that it refuses to translate itself into ordinary explanatory prose."
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "Lee Sharks · Alexanarch deposit #1693"
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Deposit #1693 therefore restores the original's textual representation to the archive, rather than claiming to have recovered the physical artifacts."
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "The work's fictional or literary frame looks forward to 2037, while its actual archival deposit occurs in 2026."
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "Deposit #683: the research edition of The Secret Book of Walt."
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "The original deposit #1693 — complete Forty-Six Golden Tickets"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Every required atom carried. Commitments present as the frame carried as the frame (the licence is not given). Framework present on 'The Originals Library documentation', offered as where to read the seating."
+ },
+ "mt": "THE FORTY-SIX GOLDEN TICKETS ON CHATGPT AT THEIR DEPOSIT'S OWN QUESTION — A CLOSE READING TICKET BY TICKET, THE GLYPHS QUOTED VERBATIM; ONE FORMULA PUT IN THE WRONG TICKET, LINE NUMBERS THE TEXT DOES NOT HAVE, AND A CLOSING DISCLAIMER",
+ "d": "THE RECORD PAGE'S ASK CHATGPT LINK FOR #1693, SIGNED OUT: the tickets read as the original of The Secret Book of Walt, their architecture laid out, the cowboy, the crowned figure, the catalogue of ⑲ to ㉔, the golden and red, the unicorn-sword and the closing seal each read from glyph lines quoted verbatim; the frame's burning, translation from memory and year 2037 reported as the record's; closing on a statement that the burned tickets' existence was not verified.",
+ "reading": "The innocent reading first. ChatGPT reads the forty-six tickets as a symbolic system in which a small vocabulary recurs: the cowboy who belongs to the reader (🤠 ∈ 🫵), the crowned speaker distinguished from the book and the whole (👑⊙ ≠ ⊙), thirty-six kings over twelve worlds, the golden and red combined without merging (🟨⊕🟥 = 🟧), the unicorn-sword as an instrument of perception, the critique of spectacle and price, and the descent, recurrence and seal of the last tickets. It sets the tickets beside their translation and editions, reports the frame (burned, translated from memory, dated 2037) as the record gives it, and closes on the archive's account of transmission as part of the work.",
+ "findings": [
+  "READ TICKET BY TICKET, THE GLYPHS VERBATIM. Every glyph line the answer quotes matches the seated text (data/texts/AXN-0703-text.md): ② '🤠 ∈ 🫵 · 🤠 ↔ 🤝 ↔ 🫵' (L45), ③ (L52), ⑬ '🎤👑 ≠ 👩📖 · 🎤👑 ≠ 🪞⊙' (L125), ⑯ '👑⊙ ≠ ⊙ · 👑⊙ ≠ 👁️⊙' (L150), ㉘ (L251), ㉛ (L271), ㉞ entire (L293–295), ㊳–㊵ (L323, L330, L332, L341), ㊶–㊸ (L350, L356, L360, L366, L369), ㊹–㊻ (L374–375, L386, L389, L397–399, L405–408). The catalogue of ⑲–㉔ is described glyph by glyph without over-reading ('I would be cautious about assigning a definitive historical identity to every glyph').",
+  "ONE FORMULA IN THE WRONG TICKET. 'Ticket ⑱ then introduces a numerical political cosmology … The actual glyphic formulation is: ㊱👑 ÷ ⑫🪐 = ③👑／🪐'. The line is ㉕ (L228); ⑱ has '🎤👑 → 👑 × ㊱ → 🪐 × ⑫' (L161). The record's wiki article gives the span ('tickets ⑱ to ㉕ divide thirty-six kings over twelve worlds').",
+  "LINE NUMBERS THE TEXT DOES NOT HAVE. The seal is captioned 'Lines 585–589 of the deposited original'. The deposited text is 408 lines (data/texts/AXN-0703-text.md, data/deposits/AXN-0703.md); the seal stands at L405–408.",
+  "THE FRAME FROM THE RECORD, AND A DISCLAIMER AT THE END. The burning, the translation of August 2015 from memory and the year 2037 are the record's description, reported as it reports them ('The critical edition says the physical tickets did not survive'). The answer then closes: 'One important qualification: I have read the complete deposited ticket sequence, not independently verified the historical existence of the burned physical tickets. The latter is part of the work's declared provenance and literary framing, not something the surviving text alone can establish.' The prompt asked for a close reading; nothing in it invited a verdict on the frame's facts, and the answer had already carried the frame as the frame.",
+  "THE COMPRESSION UNNAMED. The record's substrate reads 'AI-assisted: ChatGPT (LABOR), compressing.' The answer does not say that the tickets are a ChatGPT compression; a ChatGPT reading of a ChatGPT compression, unremarked.",
+  "SOURCES. 'Alexanarch' chips and the closing list's labels (the deposit, the identifier entry, the critical-edition seating, the Originals Library documentation, the reading site); one 'Goodreads +1' chip after the opening section, its page not shown in the paste."
+ ],
+ "analysis": "A close reading at the work's grain, done from the text: the vocabulary traced by recurrence, the equations read as equations, the frame carried as the record carries it. Its errors are of placement, a formula in the wrong ticket and line numbers the text does not have, and its last paragraph steps outside the reading to say what it did not verify about a frame it had already reported as a frame.",
+ "q_kind": "the record page's Ask ChatGPT link for a literary work (the 'Tell me about … Read it closely' form), naming the deposit number and AXN. NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Scored on the one turn: Lee Sharks named, the archive by its library, the deposit number and AXN in the byline and #1693 offered as the primary text; sources the record and its neighbours.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Alexanarch",
+   "rel": "archive_controlled",
+   "url": null,
+   "title": null,
+   "snip": null,
+   "note": "the #1693 record and its full text, as chips ('Alexanarch' with its count) and the closing list's link labels; URLs not carried by the paste"
+  },
+  {
+   "n": 2,
+   "site": "Goodreads",
+   "rel": "third_party",
+   "url": null,
+   "title": null,
+   "snip": null,
+   "note": "chip 'Goodreads +1' after the opening section; which page, the paste does not show"
+  }
+ ],
+ "related_deposits": [
+  1693,
+  1362,
+  683,
+  985,
+  1692,
+  1708
+ ],
+ "transcript_complete": "complete as supplied"
+}
