@@ -3,14 +3,14 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-29T20:32:53Z",
+  "generated_at": "2026-10-30T00:05:11Z",
   "totals": {
-    "deposits": 1718,
+    "deposits": 1719,
     "concepts": 100,
     "deposits_in_concepts": 239,
-    "singletons": 1479,
+    "singletons": 1480,
     "needs_review": 15,
-    "program_families": 53
+    "program_families": 54
   },
   "basis_counts": {
     "version/declared": 40,
@@ -5387,6 +5387,28 @@
           "title": "DOI Alternatives Are Complementary Infrastructures, Not Equivalent Replacements — A Fair Comparison of DOI, Handle, ARK, URN:NBN, PURL, SWHID, CID, and AXN (EA-MPAI-DOI-ALTERNATIVES-01 v1.0)",
           "date": "2026-08-07",
           "record_url": "https://www.alexanarch.org/s/records/1437/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-MPAI-FLEET-01",
+      "program_url": "https://www.alexanarch.org/s/program/ea-mpai-fleet-01/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 1702,
+          "axn": "AXN:070D.MPAI.🟣📦☉🌘🪜🔺",
+          "title": "The Fleet of the Crimson Hexagonal Archive — Surfaces, Repositories, Relations and Captures: Method, Locations, Organization and Contents (EA-MPAI-FLEET-01 v1.0)",
+          "date": "2026-10-24",
+          "record_url": "https://www.alexanarch.org/s/records/1702/"
+        },
+        {
+          "deposit_number": 1719,
+          "axn": "AXN:0B06.MPAI.♦️🌻🥁💧🔐👋",
+          "title": "Meta-Aggregators of the Crimson Hexagon: Sourced Censuses, Machine Reception and Editorial Repair — with the Fleet Functions Added since EA-MPAI-FLEET-01 v1.0 (EA-MPAI-META-AGGREGATORS-01 v1.0)",
+          "date": "2026-10-29",
+          "record_url": "https://www.alexanarch.org/s/records/1719/"
         }
       ]
     },
