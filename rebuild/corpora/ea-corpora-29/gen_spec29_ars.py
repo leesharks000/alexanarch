@@ -147,7 +147,7 @@ spec = {
   "Geoffrey of Vinsauf, Poetria nova, and the twelfth- and thirteenth-century Latin arts are seated inside Faral (1924) only as OCR"
  ],
  "scope": "Arts of poetry: treatises, prefaces, letters, manifestos and poems about the making of poems, chosen for range — one or more per tradition, from the Nāṭyaśāstra and the Great Preface to the Odes through Mayakovsky, Hagiwara and MacLeish. Copyrighted moderns and contemporary arts of poetry are declared in 29/06 (ars-poetica-wanted).",
- "why_seated": "Gathered for the next EA-CORPORA deposit at the author's direction ('an extremely pluriform ars poetica bundle … include telepathic prose'; 'take that extremely pluriform further globally, hebrew, sanskrit, korean'), around Belief & Technique for Telepathic Prose (#1715), Jack Feist's art of poetry, so that the comic ars poetica stands among the arts it answers.",
+ "why_seated": "Gathered for the next EA-CORPORA deposit at the author's direction ('an extremely pluriform ars poetica bundle … include telepathic prose'; 'take that extremely pluriform further globally, hebrew, sanskrit, korean'), around Belief & Technique for Telepathic Prose (#1715), Jack Feist's art of poetry, so that the archive's own ars poetica, a deeply serious one that contains and enacts the comic, the parodic and the satirical among almost every other genre, stands among the arts it answers.",
  "spine": "29/04",
  "ruling": "The author's directions of 2026-10-28; 'Tradition and the Individual Seismograph' beside Eliot's by his ruling.",
  "seating": "EA-CORPORA-29 (gathered; the deposit that assigns its AXN is pending)"
