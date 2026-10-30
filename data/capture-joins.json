@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.425",
+ "derived_from": "EA-WG-CAPTURES-01 v12.426",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1019,
-  "joined_confirmed": 445,
+  "observations": 1020,
+  "joined_confirmed": 446,
   "unjoined": 574,
-  "relations": 4930,
+  "relations": 4940,
   "by_state": {
-   "confirmed": 4335,
+   "confirmed": 4345,
    "candidate": 595
   },
   "by_verb": {
-   "held_by": 2118,
-   "scored_by": 764,
-   "appeared_in": 1594,
+   "held_by": 2120,
+   "scored_by": 765,
+   "appeared_in": 1601,
    "about": 436,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -4883,6 +4883,16 @@
 {"id": "REL-57eb4a99f9ed", "obs_id": "OBS-2f9a7316a5af", "entry": "enter-the-migdal-room-aio-20261030", "obs_slug": "enter-the-migdal-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "enter the migdal room", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5946460a97d6", "obs_id": "OBS-2f9a7316a5af", "entry": "enter-the-migdal-room-aio-20261030", "obs_slug": "enter-the-migdal-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "enter the migdal room", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-733a275e01e2", "obs_id": "OBS-2f9a7316a5af", "entry": "enter-the-migdal-room-aio-20261030", "obs_slug": "enter-the-migdal-room-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "enter the migdal room", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-12ba2036f478", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "deposit:524", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "THE SHARKS-FUNCTION AND THE CONTINUITY TETHER | by Lee Sharks", "url": null}},
+{"id": "REL-a9d621d3c753", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "www.alexanarch.org", "title": "lee sharks academic — Google AI Overview, 2026-06-13 - Alexanarch", "url": null}},
+{"id": "REL-a9d621d3c753", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "www.alexanarch.org", "title": "is Lee Sharks a myth? search — ChatGPT, 2026-10-05 - Alexanarch", "url": null}},
+{"id": "REL-d65463e83854", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "www.leesharks.com", "title": "Myth - Lee Sharks", "url": null}},
+{"id": "REL-a9d621d3c753", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.alexanarch.org", "title": "LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing", "url": null}},
+{"id": "REL-fbc762772c06", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "deposit:645", "basis": "card resolved at intake (title; one version series, linked to the record of standing its supersession names)", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.alexanarch.org", "title": "LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing", "url": null}},
+{"id": "REL-a9d621d3c753", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 10, "site": "www.alexanarch.org", "title": "lee sharks zenodo — Google AI Overview, 2026-10-08", "url": null}},
+{"id": "REL-d81b4af8bacc", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-db30cf32a34e", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a6f82f17536a", "obs_id": "OBS-5183ab7a502b", "entry": "lee-sharks-digital-footprint-aio-20261030", "obs_slug": "lee-sharks-digital-footprint-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "lee sharks digital footprint", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
