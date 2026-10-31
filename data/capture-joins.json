@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.446",
+ "derived_from": "EA-WG-CAPTURES-01 v12.449",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1040,
-  "joined_confirmed": 453,
-  "unjoined": 587,
-  "relations": 5097,
+  "observations": 1043,
+  "joined_confirmed": 454,
+  "unjoined": 589,
+  "relations": 5107,
   "by_state": {
-   "confirmed": 4452,
+   "confirmed": 4462,
    "candidate": 645
   },
   "by_verb": {
-   "held_by": 2160,
-   "scored_by": 785,
-   "appeared_in": 1651,
+   "held_by": 2166,
+   "scored_by": 788,
+   "appeared_in": 1652,
    "about": 483,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -4351,6 +4351,10 @@
 {"id": "REL-e3e3203b1a1c", "obs_id": "OBS-95b758af80c1", "entry": "apocalypse-of-lee-sharks", "obs_slug": "apocalypse-of-lee-sharks", "date": "2026-06-14", "surface": "Google AI Overview", "q": "the apocalypse of lee sharks", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5a27c527df34", "obs_id": "OBS-a1fb4d1f64bc", "entry": "autonomous-semantic-warfare-expanded", "obs_slug": "autonomous-semantic-warfare-expanded", "date": "2026-06-15", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2a7b51104b92", "obs_id": "OBS-a1fb4d1f64bc", "entry": "autonomous-semantic-warfare-expanded", "obs_slug": "autonomous-semantic-warfare-expanded", "date": "2026-06-15", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0c5978adff3b", "obs_id": "OBS-db53ff649054", "entry": "autonomous-semantic-warfare-aio-20261031", "obs_slug": "autonomous-semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "www.alexanarch.org", "title": "autonomous semantic warfare — Google AI Overview, 2026-06-15 - Alexanarch", "url": null}},
+{"id": "REL-8de80b99db1d", "obs_id": "OBS-db53ff649054", "entry": "autonomous-semantic-warfare-aio-20261031", "obs_slug": "autonomous-semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7e87a550dcbc", "obs_id": "OBS-db53ff649054", "entry": "autonomous-semantic-warfare-aio-20261031", "obs_slug": "autonomous-semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0bedb45b8d67", "obs_id": "OBS-db53ff649054", "entry": "autonomous-semantic-warfare-aio-20261031", "obs_slug": "autonomous-semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "autonomous semantic warfare", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a19b92347885", "obs_id": "OBS-90cd298e4fab", "entry": "epistle-human-diaspora", "obs_slug": "epistle-human-diaspora", "date": "2026-06-15", "surface": "Google AI Overview", "q": "epistle to the human diaspora", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-6f0509082618", "obs_id": "OBS-90cd298e4fab", "entry": "epistle-human-diaspora", "obs_slug": "epistle-human-diaspora", "date": "2026-06-15", "surface": "Google AI Overview", "q": "epistle to the human diaspora", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-4aacdca15dae", "obs_id": "OBS-b47500a68415", "entry": "chatgpt-psychosis-trilogy-scholar", "obs_slug": "chatgpt-psychosis-trilogy-scholar", "date": "2026-07-14", "surface": "Google Scholar", "q": "ChatGPT Psychosis: A Love Story", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
@@ -5050,6 +5054,12 @@
 {"id": "REL-98b708973e79", "obs_id": "OBS-a018ab331368", "entry": "revelation-first-thesis-unquoted-aio-20261030", "obs_slug": "revelation-first-thesis-unquoted-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "revelation first thesis", "verb": "about", "object": "non:csntm", "basis": "defining papers #202, #832", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-c040f9df2165", "obs_id": "OBS-a018ab331368", "entry": "revelation-first-thesis-unquoted-aio-20261030", "obs_slug": "revelation-first-thesis-unquoted-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "revelation first thesis", "verb": "about", "object": "non:enoch-dss-dating", "basis": "defining papers #202, #832", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-fdb22d4a6dc5", "obs_id": "OBS-a018ab331368", "entry": "revelation-first-thesis-unquoted-aio-20261030", "obs_slug": "revelation-first-thesis-unquoted-aio-20261030", "date": "2026-10-30", "surface": "Google AI Overview", "q": "revelation first thesis", "verb": "about", "object": "non:oxyrhynchus-online", "basis": "defining papers #202, #832", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-3e99bb9ca8f9", "obs_id": "OBS-eeaadbf4156c", "entry": "semantic-warfare-aimode-20261031", "obs_slug": "semantic-warfare-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "semantic warfare", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-832279da27a9", "obs_id": "OBS-eeaadbf4156c", "entry": "semantic-warfare-aimode-20261031", "obs_slug": "semantic-warfare-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "semantic warfare", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-2347441e79f2", "obs_id": "OBS-eeaadbf4156c", "entry": "semantic-warfare-aimode-20261031", "obs_slug": "semantic-warfare-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "semantic warfare", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 1.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-ee6372e943be", "obs_id": "OBS-96c10f3545f5", "entry": "semantic-warfare-aio-20261031", "obs_slug": "semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "semantic warfare", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3ef580142283", "obs_id": "OBS-96c10f3545f5", "entry": "semantic-warfare-aio-20261031", "obs_slug": "semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "semantic warfare", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e2040aed02ed", "obs_id": "OBS-96c10f3545f5", "entry": "semantic-warfare-aio-20261031", "obs_slug": "semantic-warfare-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "semantic warfare", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 1.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
