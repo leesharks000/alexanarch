@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-31T02:24:40Z",
+  "regenerated_at": "2026-10-31T02:38:04Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "3fe9ab5ed98a7bf7ee90d866d98735b507dc3505d53721ade011f05cbb226d4a",
+    "mm-main-capture": "79e9a6f3aca8cb751cf366b20f888b488e2c3356beba0191497c110636a55fc7",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2603,
-  "total_observations": 1140,
+  "total_addresses": 2604,
+  "total_observations": 1141,
   "class_counts": {
     "subjunctive": 1739,
-    "observed_address": 847,
+    "observed_address": 848,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1723,
+    "unmatched": 1724,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -56333,6 +56333,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-22",
       "latest_status": "THE THESIS REDUCED TO A DATE"
+    },
+    "revelation first thesis": {
+      "canonical_query": "revelation first thesis",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-30",
+          "status": "'REVELATION FIRST THESIS', UNQUOTED — 'SOMETIMES CALLED THE \"REVELATION EARLY\" THESIS': THE FORBIDDEN COLLAPSE IN THE FIRST SENTENCE, THE PRE-70 DATE AS THE THESIS, NO AUTHOR; THE SURFACES' OWN FIRST SENTENCES ('THE FIRST BOOK COMPOSED') CARRIED, THEIR CORRECTIONS NOT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "revelation-first-thesis-unquoted-aio-20261030",
+          "gallery_url": "https://www.alexanarch.org/captures/#revelation-first-thesis-unquoted-aio-20261030",
+          "record_url": "https://www.alexanarch.org/captures/revelation-first-thesis-unquoted-aio-20261030/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#revelation-first-thesis-unquoted-aio-20261030",
+          "details_excerpt": "THE THESIS'S NAME WITHOUT QUOTATION MARKS, SIGNED OUT, 2026-10-30: two senses, the first 'The \"Revelation First\" NTS Chronology Thesis': 'the \"Revelation First\" thesis (sometimes called the \"Revelation Early\" thesis) is "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch deposit #202 (creator Lee Sharks). Recorded 2026-10-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-30",
+      "latest_status": "'REVELATION FIRST THESIS', UNQUOTED — 'SOMETIMES CALLED THE \"REVELATION EARLY\" THESIS': THE FORBIDDEN COLLAPSE IN THE FIRST SENTENCE, THE PRE-70 DATE AS THE THESIS, NO AUTHOR; THE SURFACES' OWN FIRST SENTENCES ('THE FIRST BOOK COMPOSED') CARRIED, THEIR CORRECTIONS NOT"
     },
     "revelation generates pauline epistles": {
       "canonical_query": "revelation generates pauline epistles",
