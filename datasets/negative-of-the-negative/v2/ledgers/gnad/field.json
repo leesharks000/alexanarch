@@ -1,0 +1,1147 @@
+{
+ "row": "gnad",
+ "address": "Global Nonviolent Action Database",
+ "addresses": [
+  "Global Nonviolent Action Database"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised and typographic quotes folded for the check; multi-part quotes joined by ' … ', each part checked), or the card's snippet as the transcript's rail renders it for the unreachable card and for CNCR's card text; 48/48 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 the database's home page, byte-identical to the census's own page gnad--home and carried once, as a card; B2 its case map; B3 CNCR's resource-library entry; B4 the Discuss Data review of 8 May 2025; B5 Policy Commons, unreachable; B6 the Swarthmore Peace & Conflict Studies blog's tag page); 'own_page', none beyond B1: the census saved one own page that answered (gnad--home); its About page (content/about) is recorded by the census as a connection reset with nothing saved, and /about as HTTP 404 (the site's not-found page, not quoted): unread, and not refetched (substitution 3); 'wikipedia', the title redirects to George Lakey (B7), whose Works section is ledgered. The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is: a database of cases of nonviolent action campaigns (B1, B3, B4, B6); operator: Swarthmore College (B1); the unit: campaigns, not movements (B1, B3); the case: a database file and a narrative (B3, B4, B7); waves of campaigns and the case map (B2, B3); scale and coverage (B1, B3, B4, B7); completed campaigns (B3); issue clusters (B3); nonviolent action defined (B4); purposes: free access and comparative knowledge (B3, B5); origin and makers: 2011, George Lakey and students (B3, B6, B7); labor cases (B1, B2); terms and access (B1, B4); limits, coding and method (B1, B4); lifecycle and use (B4, B6); reception: the encyclopedia and the review (B4, B7). The census's operator, unit, record_object (its featured labor case), holder and license, coverage, count, holdings, stated_limits, data_access and lifecycle quote B1 (the census's only saved own page, carried here as card 1): one lineage each with the page, which keeps the earliest date. CNCR's page (B3) reproduces the database's own description in its first person; it is ledgered as CNCR's, attributed, since the database's About page, where the description presumably stands, is unread.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/gnad-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1.txt the census's text of the same bytes; B4-try1.html the Discuss Data search path's not-found page; B5-403.html the Policy Commons bot check; B7.wiki the redirect's raw wikitext, B7.html the rendered target, B7-target.wiki its wikitext, B7-revid.json the revision ids, B7-search.html the article-space search; T1-global-nonviolent-action-database-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "n": 1,
+   "site": "Global Nonviolent Action Database",
+   "title": "Global Nonviolent Action Database: Home",
+   "url": "https://nvdatabase.swarthmore.edu/",
+   "kind": "Overview card (the database's home page); the census's own page gnad--home, byte-identical",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B1.html",
+     "sha256": "c4ecffa2e4ca662a6b1cd3a7674507e09f99e24c0ab5a0636b2cf131736325a9"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B1.txt",
+     "sha256": "edd471bc1f9eb48f81927ff98d85f948e54b71a0d66e6c05902f8ae0d271f6e2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:58Z",
+    "http": 200,
+    "url": "https://nvdatabase.swarthmore.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B1.html",
+    "census_copy": {
+     "src": "gnad--home",
+     "sha256": "c4ecffa2e4ca662a6b1cd3a7674507e09f99e24c0ab5a0636b2cf131736325a9",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:28:02Z",
+     "agrees": true,
+     "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/gnad--home.txt (the census's text of the same bytes, as B1.txt)"
+    },
+    "raw_sha256": "c4ecffa2e4ca662a6b1cd3a7674507e09f99e24c0ab5a0636b2cf131736325a9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B1.txt"
+    ]
+   },
+   "names_operator": "yes ('a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility')",
+   "note": "URL from the card's site and title. The fetch is byte-identical to the census's saved copy gnad--home (sha256 c4ecffa2…, read the same day), so the card and the census's own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes. The page carries no date. Its license logo's alt text reads 'Creative Commons BY-NC-ND 3.0 License logo' beside the text's 4.0 (B1.html; not ledgered).",
+   "card": "Global Nonviolent Action Database — Global Nonviolent Action Database: Home",
+   "card_snippet": "Geographical Mapping of Campaigns. 1,200+ cases. 100+ countries. 400+ years covered. View Campaigns on the Map. Screenshot of the GNAD map. Home. The Global Non...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 1
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 1 (and the census own page gnad--home, byte-identical)",
+   "card_title": "Global Nonviolent Action Database: Home",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "n": 2,
+   "site": "Global Nonviolent Action Database",
+   "title": "Nonviolent Action Case Map | Global Nonviolent Action Database",
+   "url": "https://nvdatabase.swarthmore.edu/map",
+   "kind": "Overview card (the database's case map, with its filter by wave of campaign)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B2.html",
+     "sha256": "8a405e49065a24eddd810a70a029287d21c9e34fb013125ac0d8b465860b3bb2"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B2.txt",
+     "sha256": "52d997890ea312d649fbd71f1822c44f2628c3035953beeaed5e73231fd010d0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:30Z",
+    "http": 200,
+    "url": "https://nvdatabase.swarthmore.edu/map",
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B2.html",
+    "raw_sha256": "8a405e49065a24eddd810a70a029287d21c9e34fb013125ac0d8b465860b3bb2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "no (the page names the database; the operator is in the site's footer only on other pages)",
+   "note": "URL from the site's own menu ('/map', linked from the home page as 'View Cases on Map'); the page's title is the card's title. The card's snippet ('Campaign Waves: …') is Google's rendering of the page's 'Filter by Wave of Campaign' list. The page lists the map's cases (about 1,668 list rows in the HTML); the cases themselves are not read.",
+   "card": "Global Nonviolent Action Database — Nonviolent Action Case Map | Global Nonviolent Action Database",
+   "card_snippet": "Campaign Waves: Latin American Democracy (1944), Anti-Nuclear Power (1960s-1980s), Fossil Fuel Divestment (2010-), South Africa Apartheid Divestment (1970s-1980...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 2
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 2",
+   "card_title": "Nonviolent Action Case Map | Global Nonviolent Action Database",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "n": 3,
+   "site": "www.nonviolent-conflict.org",
+   "title": "Swarthmore College's Global Nonviolent Action Database | CNCR",
+   "url": "https://www.nonviolent-conflict.org/resource/swarthmore-colleges-global-nonviolent-action-database/",
+   "kind": "Overview card (the resource-library entry of the Center for Nonviolent Conflict Research, CNCR/ICNC; third party, reproducing the database's own description in its first person)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B3.html",
+     "sha256": "7c775be039cc58e7eaa9f38ef6ce4ff52bcb7402cc4be82a56d073146918a24d"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B3.txt",
+     "sha256": "37d872aed695f98dd30037c49b057b5e0bfb4f0be2188469ea8aeeaf744e0d5a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:31Z",
+    "http": 200,
+    "url": "https://www.nonviolent-conflict.org/resource/swarthmore-colleges-global-nonviolent-action-database/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B3.html",
+    "searches": [
+     "WebSearch '\"Swarthmore College's Global Nonviolent Action Database\" CNCR nonviolent-conflict.org' (the URL among the results)"
+    ],
+    "raw_sha256": "7c775be039cc58e7eaa9f38ef6ce4ff52bcb7402cc4be82a56d073146918a24d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('A project of Swarthmore College, 2011-present')",
+   "note": "The card's snippet ('Overview: … contains over 1,000 completed nonviolent campaign case studies globally, excluding broad moveme...') is not in the page's text; it is Google's description of the page and stands as the card's own text (ledgered from the snippet). The page's body speaks in the database's first person ('We research campaigns …'): CNCR reproduces the database's own description, which this row cannot check against the database's About page (unread: connection reset in the census's fetch).",
+   "card": "www.nonviolent-conflict.org — Swarthmore College's Global Nonviolent Action Database | CNCR",
+   "card_snippet": "Overview: Swarthmore College's Global Nonviolent Action Database contains over 1,000 completed nonviolent campaign case studies globally, excluding broad moveme...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 3
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 3",
+   "card_title": "Swarthmore College's Global Nonviolent Action Database | CNCR",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "n": 4,
+   "site": "Discuss Data",
+   "title": "Global Nonviolent Action Database - Discuss Data",
+   "url": "https://discuss-data.net/dataset/65010eac-7372-4bdc-918a-c447333e2018/",
+   "kind": "Overview card (a data review on Discuss Data, the Research Centre for East European Studies at the University of Bremen and Göttingen State and University Library: 'Review of Swarthmore College (2011): Global Nonviolent Action Database', Nathalie Rathkamp, version 1.0, 8 May 2025; third party)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4.html",
+     "sha256": "f73d35327eecc8a3648e4443dd542d8f1cd9ba3c97a56c9f97bc014e5df46c2f"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4.txt",
+     "sha256": "95544727e0ef18edf3ddb61449565312538b59f6ad11a8ee006c6898dfb9d9f3"
+    },
+    "B4-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4-try1.html",
+     "sha256": "6dc0d3d553c4292c04e26a7d785981226b946f8697f685a36ab6c35945221705"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:41Z",
+    "http": 200,
+    "url": "https://discuss-data.net/dataset/65010eac-7372-4bdc-918a-c447333e2018/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4.html",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:33Z",
+      "url": "https://discuss-data.net/search/?q=Global+Nonviolent+Action+Database",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4-try1.html",
+      "result": "the site's 'Page not found' (no search at that path)"
+     }
+    ],
+    "searches": [
+     "WebSearch 'discuss-data.net \"Global Nonviolent Action Database\" \"project of the Swarthmore College\"' (no result)",
+     "WebSearch (extended) '\"Discuss Data\" \"Global Nonviolent Action Database\" reports on cases of nonviolent protest actions taken across the globe' (the URL among the results)"
+    ],
+    "raw_sha256": "f73d35327eecc8a3648e4443dd542d8f1cd9ba3c97a56c9f97bc014e5df46c2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes ('a project of the Swarthmore College')",
+   "note": "The card's snippet is the review's Description, verbatim on the page. The page's title is the review's ('Review of Swarthmore College (2011): …'); the card gives the dataset's name.",
+   "card": "Discuss Data — Global Nonviolent Action Database - Discuss Data",
+   "card_snippet": "The Global Nonviolent Action Database is a project of the Swarthmore College. It reports on cases of nonviolent protest actions taken across the globe (100+ cou...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 4
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 4",
+   "card_title": "Global Nonviolent Action Database - Discuss Data",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "n": 5,
+   "site": "Policy Commons",
+   "title": "GNAD: Global Nonviolent Action Database - Policy Commons",
+   "url": "https://policycommons.net/orgs/global-nonviolent-action-database/",
+   "kind": "Overview card (the Policy Commons organisation page for the database; unreachable)",
+   "files": {
+    "B5-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B5-403.html",
+     "sha256": "d8019c86ff8b199e4d3303f059dfde2bd6c0ead8468e800d5ab9c560dbfa00d3"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:32Z",
+      "url": "https://policycommons.net/orgs/global-nonviolent-action-database/",
+      "http": 403,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B5-403.html",
+      "result": "a bot check ('<title>Just a moment...</title>', a Cloudflare challenge page) refusing the census agent; not retried with another agent string or by another route"
+     },
+     {
+      "at": "2026-10-31T22:59:33Z",
+      "url": "https://policycommons.net/search/?q=Global%20Nonviolent%20Action%20Database",
+      "http": 403,
+      "result": "the same bot check (response not kept)"
+     }
+    ],
+    "searches": [
+     "WebSearch 'policycommons.net GNAD Global Nonviolent Action Database \"hundreds of cases of nonviolent action\"' (no result)",
+     "WebSearch (extended) 'policycommons.net \"Global Nonviolent Action Database\"' (the URL confirmed: 'GNAD: Global Nonviolent Action Database')"
+    ],
+    "note": "The organisation page refused the honest agent with a bot check (HTTP 403). Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (the snippet names the database only)",
+   "note": "Unreachable (bot check); the snippet stands.",
+   "card": "Policy Commons — GNAD: Global Nonviolent Action Database - Policy Commons",
+   "card_snippet": "GNAD. Global Nonviolent Action Database. Follow. Share Add to list. This database provides access to information about hundreds of cases of nonviolent action fo...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 5
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 5",
+   "card_title": "GNAD: Global Nonviolent Action Database - Policy Commons",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "n": 6,
+   "site": "Swarthmore College",
+   "title": "Global Nonviolent Action Database - Peace & Conflict Studies Blog",
+   "url": "https://pcs.domains.swarthmore.edu/tag/global-nonviolent-action-database/",
+   "kind": "Overview card (the tag page 'Global Nonviolent Action Database' of the Swarthmore Department of Peace & Conflict Studies blog, its excerpts of tagged posts; the snippet is the excerpt of the post 'New cases added to the Global Nonviolent Action Database')",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B6.html",
+     "sha256": "9df388c64c68258af156150070400159c55972558ba26ec839fa3c8a72427c74"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B6.txt",
+     "sha256": "fc2ea94ceeca01363ee2b5d2eee29c28dbd337a6ff43fc2202cce5d266933e94"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:16Z",
+    "http": 200,
+    "url": "https://pcs.domains.swarthmore.edu/tag/global-nonviolent-action-database/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B6.html",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:32Z",
+      "url": "https://blogs.swarthmore.edu/academics/pcs/?p=9172",
+      "http": "000",
+      "result": "TLS failure ('self-signed certificate in certificate chain'), with and without the proxy's CA bundle; nothing saved"
+     },
+     {
+      "at": "2026-10-31T23:00:18Z",
+      "url": "https://pcs.domains.swarthmore.edu/pcs/2015/06/04/new-gnad-cases-s2015/",
+      "http": "000",
+      "result": "connection reset; the post itself not saved"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Seventy-six new cases have been added to the Global Nonviolent Action Database\" Swarthmore Peace Conflict Studies blog' (blogs.swarthmore.edu ?p=9172 and archive.swarthmore.edu …/2015/06/04/new-gnad-cases-s2015/; the archive path answers 301 to pcs.domains.swarthmore.edu)"
+    ],
+    "raw_sha256": "9df388c64c68258af156150070400159c55972558ba26ec839fa3c8a72427c74",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('housed at Swarthmore College'; 'by students in the spring semester Strategy and Nonviolent Struggle course at Swarthmore College')",
+   "note": "The tag page's title is the card's title, verbatim ('Global Nonviolent Action Database – Peace & Conflict Studies Blog'); its last excerpt is the card's snippet. The tag page carries no dates; the snippet's post is dated 2015-06-04 by the archived URL's path, and the course post 's2017-strategy-nv-struggle' is of 2017 by its slug and title.",
+   "card": "Swarthmore College — Global Nonviolent Action Database - Peace & Conflict Studies Blog",
+   "card_snippet": "Seventy-six new cases have been added to the Global Nonviolent Action Database by students in the spring semester Strategy and Nonviolent Struggle course at Swa...",
+   "surfaced_by_T": [
+    {
+     "slug": "global-nonviolent-action-database-aio-20261031",
+     "card": 6
+    }
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "Overview card 6",
+   "card_title": "Global Nonviolent Action Database - Peace & Conflict Studies Blog",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "n": null,
+   "site": "Wikipedia",
+   "title": "Global Nonviolent Action Database (redirect to George Lakey)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Global_Nonviolent_Action_Database&action=raw",
+   "kind": "Wikipedia: the title is a redirect to the article George Lakey; the section ledgered is Works, 'Internet Development and Writing'",
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.wiki",
+     "sha256": "5977fb8aa16f1c6a6175ae2d1656b2ee1b580d698560af3d195889ae621ed222"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.html",
+     "sha256": "8ee2451c5c79f9076e0fa5b9e47eed0c04f0ce4ee66b5cfe7394f84a4d08017d"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.txt",
+     "sha256": "536e3b9b42b049cedf4b6c2e45ba3e01485f5fca119bf6aded0f8617c02f0632"
+    },
+    "B7-target.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-target.wiki",
+     "sha256": "2eaf60decdfe99cd532ac6871d7ba2c3d6a918093f978479c32c24355e9b5304"
+    },
+    "B7-revid.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-revid.json",
+     "sha256": "907f2d02d405f112eb68aec627604a619f884d7439fa64f3ad53199fad627767"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-search.html",
+     "sha256": "c17aa101f6c55cc410af5fb20af958b5376e7ac23b1d9f5fec2b7707a46283f0"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T23:00:56Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Global_Nonviolent_Action_Database&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.wiki",
+      "result": "'#REDIRECT [[George Lakey]]' (revision 841987564, 2018-05-19)"
+     },
+     {
+      "at": "2026-10-31T23:00:56Z",
+      "url": "https://en.wikipedia.org/wiki/Global_Nonviolent_Action_Database",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.html",
+      "result": "the article George Lakey, '(Redirected from Global Nonviolent Action Database)'"
+     },
+     {
+      "at": "2026-10-31T23:00:57Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Global+Nonviolent+Action+Database%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-search.html",
+      "result": "349 articles in article space contain the phrase (most citing case pages of the database as references); none is an article on it"
+     },
+     {
+      "at": "2026-10-31T23:01:04Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=George_Lakey&action=raw",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-target.wiki",
+      "result": "the target's wikitext (revision 1372450450, 2026-08-31T20:14:52Z)"
+     },
+     {
+      "at": "2026-10-31T23:01:05Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=George_Lakey|Global_Nonviolent_Action_Database&rvprop=ids|timestamp&format=json",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7-revid.json",
+      "result": "revision ids and timestamps of the redirect and its target"
+     }
+    ],
+    "raw": "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/gnad-20261031/B7.txt"
+    ],
+    "raw_sha256": "8ee2451c5c79f9076e0fa5b9e47eed0c04f0ce4ee66b5cfe7394f84a4d08017d"
+   },
+   "names_operator": "yes (the target section: 'with Swarthmore's Peace and Conflict Studies, the Peace Collection, and the Lang Center for Civic and Social Responsibility'; and its developer, George Lakey)",
+   "note": "No article under the name: the title redirects to George Lakey, an article on a person, distinct from the entity. Ledgered: the redirect, the lead's definition of the target's subject (one claim, for what the redirect makes the name's article), the Works item on the database, and the references in which the target cites the database's cases. B7.txt is the rendered page's text (scripts and styles stripped; reference markers kept as rendered).",
+   "card": "Wikipedia — Global Nonviolent Action Database (redirect to George Lakey)",
+   "card_snippet": null,
+   "surfaced_by_T": [],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "role": "the entity's Wikipedia title (a redirect)",
+   "card_title": null,
+   "card_note": null
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "tagline",
+   "quote": "Powering Learning about Nonviolent Action",
+   "claim": "the database's line for itself: powering learning about nonviolent action",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a database of cases of nonviolent action campaigns",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "The Global Nonviolent Action Database is a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
+   "claim": "the database is a project of Swarthmore College, including its Peace and Conflict Studies Program, the Peace Collection and the Lang Center",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator: Swarthmore College",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Geographical Mapping of Campaigns",
+   "quote": "1,200+ cases … 100+ countries … 400+ years covered",
+   "claim": "its counts: 1,200+ cases, 100+ countries, 400+ years covered",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale and coverage",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer, license",
+   "quote": "The Global Nonviolent Action Database is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license unless otherwise noted.",
+   "claim": "its license: CC BY-NC-ND 4.0 unless otherwise noted",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms and access",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer, login",
+   "quote": "Registered users can login to the website.",
+   "claim": "registered users can log in",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms and access",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu, About",
+   "quote": "Campaigns, Not Movements",
+   "claim": "a page of its About menu is titled 'Campaigns, Not Movements' (its unit; the page's text not read)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: campaigns, not movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu, About",
+   "quote": "Limitations of the Database",
+   "claim": "a page of its About menu is titled 'Limitations of the Database' (its stated limits; the page's text not read)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits, coding and method",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu, Cases and Methods",
+   "quote": "Browse Cases … Browse Cases by Tags … View Cases on Map … Browse Methods",
+   "claim": "its pages browse cases, tags, a map and methods",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms and access",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Featured Case Studies",
+   "quote": "Macalester students stage sit-in to oppose sweatshop apparel, 2000 … Guatemalan workers at Lunafil strike … Transgender activists end policy of gender markers on Philadelphia public transit",
+   "claim": "its featured cases: a student sit-in against sweatshop apparel (2000), a workers' strike at Lunafil (Guatemala), transgender activists on Philadelphia public transit",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "labor cases",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu, Contact",
+   "quote": "Suggest a Case",
+   "claim": "the public can suggest a case",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms and access",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu, About",
+   "quote": "Coding Definitions … How to Cite Cases … Who Made the Database?",
+   "claim": "its About menu lists pages of coding definitions, citation and its makers (their text not read)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits, coding and method",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 edd471bc1f9eb48f…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "title and filter",
+   "quote": "Nonviolent Action Case Map … Filter by Wave of Campaign",
+   "claim": "the case map filters cases by wave of campaign",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "waves of campaigns and the case map",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52d997890ea312d6…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Filter by Wave of Campaign",
+   "quote": "Latin American Democracy Campaigns (1944) … Anti-Nuclear Power Movement (1960s-1980s) … Fossil Fuel Divestment Movement (2010 - ) … South Africa Apartheid Divestment Movement (1970s-1980s) … U.S. Civil Rights Movement (1950s-1960s) … Asian Democracy Campaigns (1980s) … Soviet Bloc Independence Campaigns (1989-1991) … African Democracy Campaigns (early 1990s) … Colour Revolutions (2000s) … Arab Awakening (2011)",
+   "claim": "the waves: ten of the twelve, from Latin American democracy campaigns (1944) to the Arab Awakening (2011), named for movements and campaigns",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "waves of campaigns and the case map",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52d997890ea312d6…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Filter by Wave of Campaign",
+   "quote": "Student Anti-Sweatshop Labor Movement (1990s - 2010s) … Student Living Wage Movement (late 1990s - mid 2000s)",
+   "claim": "two of the twelve waves are labor waves: the student anti-sweatshop labor movement and the student living wage movement",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "labor cases",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52d997890ea312d6…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "case list",
+   "quote": "University of Arizona students campaign against sweatshop-produced apparel, 1997-1999 … Campaign Wave … Student Anti-Sweatshop Labor Movement (1990s - 2010s)",
+   "claim": "each case on the map carries its campaign wave (e.g. a 1997–1999 student campaign under the anti-sweatshop wave)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "waves of campaigns and the case map",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52d997890ea312d6…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "A database of over 1000 summaries of  nonviolent campaigns worldwide.",
+   "claim": "CNCR: a database of over 1,000 summaries of nonviolent campaigns worldwide",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a database of cases of nonviolent action campaigns",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "It is important to note that the case studies included are indeed, campaigns, and not movements. For example, “the civil rights movement” is not included, but the Montgomery Bus Boycott is a case, as is the Nashville Sit-in of 1960.",
+   "claim": "the cases are campaigns and exclude movements: the civil rights movement is not a case; the Montgomery Bus Boycott and the Nashville sit-in of 1960 are",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: campaigns, not movements",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 1",
+   "quote": "provide free access to information about hundreds of cases of nonviolent action for learning and for citizen action.",
+   "claim": "its first purpose: free access to information about cases, for learning and citizen action",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purposes: free access and comparative knowledge",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 1",
+   "quote": "We research campaigns that have reached a point of completion.",
+   "claim": "it researches campaigns that have reached a point of completion",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "completed campaigns",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 1",
+   "quote": "The cases are drawn from all continents and most countries.",
+   "claim": "its cases are drawn from all continents and most countries",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and coverage",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 1",
+   "quote": "People are shown struggling for human rights, economic justice, democracy, national and ethnic identity, environmental sustainability, and peace.",
+   "claim": "its cases show people struggling for human rights, economic justice, democracy, national and ethnic identity, environmental sustainability and peace",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "issue clusters",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 2",
+   "quote": "make available comparative information that will support researchers and writers to develop strategic knowledge and theory.",
+   "claim": "its second purpose: comparative information for researchers and writers developing strategic knowledge and theory",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purposes: free access and comparative knowledge",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 2",
+   "quote": "Each case is presented in two formats: the database file (with searchable fields) and the narrative describing the struggle as an unfolding story.",
+   "claim": "each case is presented twice: a database file with searchable fields and a narrative of the struggle",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the case: a database file and a narrative",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 2",
+   "quote": "The database supports searches by country, by issue, by action method used, and even by year — there is a case from ancient Egypt, 12th century BCE!",
+   "claim": "searches by country, issue, method and year; one case is from ancient Egypt, 12th century BCE",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and coverage",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "purpose 2",
+   "quote": "Some cases are part of a “wave” of campaigns, such as the “Arab Awakening” of 2011; by pressing each “wave” button one can find cases.",
+   "claim": "some cases belong to a wave of campaigns, found by its button",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "waves of campaigns and the case map",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "clusters",
+   "quote": "Each campaign is sorted in one (or several) issue “clusters”. Those clusters are: … Democracy … Economic justice … Environment … Human rights (including free practice of religion, women’s rights) … National / ethnic identity (including anti-colonial struggles) … Peace",
+   "claim": "each campaign is sorted into one or several of six issue clusters",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "issue clusters",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "byline",
+   "quote": "A project of Swarthmore College, 2011-present",
+   "claim": "a project of Swarthmore College since 2011",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and makers: 2011, George Lakey and students",
+   "date": "undated (the page as fetched 2026-10-31; 'A project of Swarthmore College, 2011-present')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 37d872aed695f98d…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, s1–2",
+   "quote": "The Global Nonviolent Action Database is a project of the Swarthmore College. It reports on cases of nonviolent protest actions taken across the globe (100+ countries) (1), including cases dating back as far as the 12th century BCE all the way up to 2019 (Lakey 2011a).",
+   "claim": "the review: a Swarthmore project reporting cases of nonviolent protest actions in 100+ countries, from the 12th century BCE to 2019 (citing Lakey 2011a)",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a database of cases of nonviolent action campaigns",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, s3",
+   "quote": "The dataset takes the form of both case studies as well as a more visual representation in the form of an interactive map (1).",
+   "claim": "the dataset is case studies and an interactive map",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the case: a database file and a narrative",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, s4 (quoting Lakey 2011c)",
+   "quote": "“[A] technique of struggle that goes beyond institutionalized conflict procedures like law courts and voting, procedures common in many countries. We study the methods of protest, noncooperation, and intervention that typically heighten a conflict – and the use of these methods without the threat or use of injurious force to others.",
+   "claim": "the database's definition of nonviolent action, as the review quotes it: a technique of struggle beyond institutional procedures; protest, noncooperation and intervention without injurious force",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "nonviolent action defined",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, s4 (quoting Lakey 2011c)",
+   "quote": "Our definition is not located in the discourse of morality and ethics, although some people may choose to use nonviolent action for ethical reasons. Instead, we focus descriptively on what people do when they use this specific ‘technique of struggle.’” (Lakey 2011c).",
+   "claim": "the definition is descriptive and set outside the discourse of morality and ethics",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "nonviolent action defined",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, ¶2 s1",
+   "quote": "Of the 1.300+ total entries in this dataset, there are 40 events listed for the countries of Eastern Europe, South Caucasus and Central Asia covered by Discuss Data.",
+   "claim": "the review counts 1,300+ entries, 40 of them for Eastern Europe, the South Caucasus and Central Asia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and coverage",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, ¶2 s2",
+   "quote": "As of summer 2024, it is not clear whether work on the data collection is continuing.",
+   "claim": "as of summer 2024, the review finds it unclear whether data collection continues",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "lifecycle and use",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description, ¶3 s2",
+   "quote": "However, while the data is freely viewable on the website, it seems that the data is not available for download.",
+   "claim": "the data is freely viewable and, it seems, not downloadable",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms and access",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods of data collection",
+   "quote": "Methods of data collection … Desk Research … Event Data … Text Coding",
+   "claim": "the review's methods of data collection: desk research, event data, text coding",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits, coding and method",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Review of Swarthmore College (2011): Global Nonviolent Action Database … Version 1.0, published: May 8, 2025. … Nathalie Rathkamp",
+   "claim": "the card is a data review by Nathalie Rathkamp, version 1.0 of 8 May 2025",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the review",
+   "date": "2025-05-08 (the review, version 1.0)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95544727e0ef18ed…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "This database provides access to information about hundreds of cases of nonviolent action fo...",
+   "claim": "Policy Commons: the database provides access to information about hundreds of cases of nonviolent action",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "purposes: free access and comparative knowledge",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card snippet (card 5, the transcript's rail as rendered)"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "excerpt of 'New cases added to the Global Nonviolent Action Database'",
+   "quote": "Seventy-six new cases have been added to the Global Nonviolent Action Database by students in the spring semester Strategy and Nonviolent Struggle course at Swarthmore College.",
+   "claim": "seventy-six cases added by students of the spring Strategy and Nonviolent Struggle course",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and makers: 2011, George Lakey and students",
+   "date": "2015-06-04 (the post, by the archived URL's path; the tag page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc2ea94ceeca0136…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "excerpt of 'New cases added to the Global Nonviolent Action Database'",
+   "quote": "The Global Nonviolent Action Database presents cases of nonviolent civil resistance from around the world, spanning decades and even hundreds of years. Data is provided in a narrative format",
+   "claim": "the blog: cases of nonviolent civil resistance from around the world, over decades and centuries, in narrative form",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a database of cases of nonviolent action campaigns",
+   "date": "2015-06-04 (the post, by the archived URL's path; the tag page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc2ea94ceeca0136…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "excerpt of 'Spring 2017 course: Strategy and Nonviolent Struggle'",
+   "quote": "Strategy and Nonviolent Struggle is a research seminar and writing course that contributes to the widely recognized Global Nonviolent Action Database, which is housed at Swarthmore College.",
+   "claim": "the course is a research seminar and writing course that contributes to the database, housed at Swarthmore",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers: 2011, George Lakey and students",
+   "date": "2017 (the course post, by its slug 's2017-strategy-nv-struggle'; the tag page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc2ea94ceeca0136…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "excerpt of 'Animating Resistance'",
+   "quote": "Animating Resistance: Live Cinema Explorations of the Global Nonviolent Action Database Prof. Ali Momeni, Carnegie Mellon University",
+   "claim": "the database used as material for live-cinema work (Ali Momeni)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle and use",
+   "date": "undated (the tag page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc2ea94ceeca0136…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "redirect",
+   "quote": "(Redirected from Global Nonviolent Action Database)",
+   "claim": "Wikipedia has no article on the database; its title redirects to George Lakey",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the review",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Works, Internet Development and Writing",
+   "quote": "over 1,000 researched cases from nearly 200 countries with focus on campaigns back to ancient Egypt that used nonviolent direct action.",
+   "claim": "Wikipedia: over 1,000 researched cases from nearly 200 countries, campaigns back to ancient Egypt that used nonviolent direct action",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale and coverage",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Works, Internet Development and Writing",
+   "quote": "Searchable, and includes a narrative for each case.",
+   "claim": "searchable, with a narrative for each case",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the case: a database file and a narrative",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Works, Internet Development and Writing",
+   "quote": "Developed by Lakey with Swarthmore College and other university students, with Swarthmore's Peace and Conflict Studies, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
+   "claim": "developed by George Lakey with Swarthmore and other university students, with the Peace and Conflict Studies Program, the Peace Collection and the Lang Center",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and makers: 2011, George Lakey and students",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "lead",
+   "quote": "George Russell Lakey (born November 2, 1937) is an activist, sociologist, and writer who added academic underpinning to the concept of nonviolent revolution.",
+   "claim": "the redirect's target is a person: George Lakey, activist, sociologist and writer of nonviolent revolution",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the review",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "References",
+   "quote": "\"Puerto Ricans expel United States Navy from Culebra Island, 1970–1974 – Global Nonviolent Action Database\" … \"Earth Quaker Action Team Campaigns Against PNC Bank for Financing Mountaintop Removal Coal Mining 2010–2015 – Global Nonviolent Action Database\"",
+   "claim": "the target cites the database's cases for campaigns its developer took part in (Culebra, 1970–1974; EQAT against PNC Bank, 2010–2015)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the review",
+   "date": "2026-08-31 (George Lakey, revision 1372450450); the redirect of 2018-05-19 (revision 841987564)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 536e3b9b42b049ce…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "contains over 1,000 completed nonviolent campaign case studies globally, excluding broad moveme...",
+   "claim": "the CNCR card: over 1,000 completed campaign case studies, excluding broad movements",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: campaigns, not movements",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card snippet (card 3, the transcript's rail as rendered)"
+  }
+ },
+ "field_sources": {
+  "B1": "Global Nonviolent Action Database — Global Nonviolent Action Database: Home",
+  "B2": "Global Nonviolent Action Database — Nonviolent Action Case Map | Global Nonviolent Action Database",
+  "B3": "www.nonviolent-conflict.org — Swarthmore College's Global Nonviolent Action Database | CNCR",
+  "B4": "Discuss Data — Global Nonviolent Action Database - Discuss Data",
+  "B5": "Policy Commons — GNAD: Global Nonviolent Action Database - Policy Commons",
+  "B6": "Swarthmore College — Global Nonviolent Action Database - Peace & Conflict Studies Blog",
+  "B7": "Wikipedia — Global Nonviolent Action Database (redirect to George Lakey)"
+ }
+}

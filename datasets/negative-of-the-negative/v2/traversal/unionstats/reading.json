@@ -1,0 +1,212 @@
+{
+ "row": "unionstats",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Union Membership and Coverage Database with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (union membership, coverage and density: B4, B2, B3, census area 'worker-power'; the CPS: B4, B5; the union wage gap: B5). The census's anchor #1725 read at the passages that name the entity's kind (unions; the holder; the losing side), by BRIEF-NEW-ROW-LEFT §8.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1439,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Labor Movement Is Not Only Labor Against AI, §2.3 'The distinction stated': the archive's table of the movement's two senses gives the deployment-conflict sense's measure as 'Union density, contract terms' and the cross-substrate sense's as the Provenance Erasure Rate: an archive category (the two senses, PER) applied to class (1), the measured extent of unionization",
+   "claims": [
+    "O1439-01"
+   ],
+   "cands": [
+    "O0003"
+   ]
+  },
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes, the census's anchor: the counter-cases (TDU, CORE) are union reform caucuses, 'these are unions and a movement, which are different things from ideological parties', and the conclusion states the decisive variable, the losing position's organ, holder and route, which the census's organizing question and record.losing_side ask of the entity; read by the addendum's rule at the passages naming the entity's kind (no string candidate: the string pass's classes do not occur in it)",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 256,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Assembly: An Executive Summary, 'Not a union.': 'Unions are legal entities with membership, dues, and collective bargaining rights.' The archive's definition of the union, whose membership and collective-bargaining coverage are the quantities class (1) measures; found by the hop from #1725 (H0011) and admitted by reading",
+   "claims": [
+    "O256-01"
+   ],
+   "cands": [
+    "H0011"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, query note, PER note, description and originator basis for the entity's capture (OBS-e456f01bcece, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'unionstats'], organizing_question, anchor, areas, schema_note; rows/unionstats.py; rendered aggregators/unionstats/index.html read for agreement)",
+   "reason": "the maryleelabor census record of the entity (editor Lee Sharks, compiled 2026-10-31, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (B4, B5) it is one lineage with that source; its ml_reading is the archive's reading and is ledgered as such (ML-23)",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26",
+    "ML-27",
+    "ML-28",
+    "ML-29",
+    "ML-30",
+    "ML-31",
+    "ML-32",
+    "ML-33",
+    "ML-34",
+    "ML-35"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    302
+   ],
+   "reason": "O0001, O0002: 'CPS' in the Authorial Signature Diagnostic Framework is the archive's own metric (a signature persistence score), a homonym of the acronym; no claim on the Current Population Survey"
+  },
+  {
+   "dep": [
+    499
+   ],
+   "reason": "Autonomous Semantic Warfare (hop H0019, read for the class): unions that organized through company-controlled channels; a claim on organizing infrastructure, none on membership, coverage or density"
+  },
+  {
+   "dep": [
+    771
+   ],
+   "reason": "the Directionality of Semantic Labor (DSL), with the directionality stack and user labor drag, read as the labor addendum directs (BRIEF-NEW-ROW-LABOR §7) and not admitted: it measures the direction of semantic labor between a system and its user, a class no field source gives this entity; no string candidate"
+  },
+  {
+   "dep": [
+    18,
+    20,
+    58,
+    82,
+    87,
+    208,
+    209,
+    210,
+    233,
+    239,
+    465,
+    466,
+    469,
+    470,
+    476,
+    481,
+    482,
+    501,
+    502,
+    506,
+    508,
+    509,
+    517,
+    550,
+    595,
+    620,
+    738,
+    772,
+    950,
+    1066,
+    1206,
+    1438,
+    1440,
+    1540,
+    1550,
+    1616,
+    1630,
+    1632,
+    1634,
+    1636,
+    1637,
+    1660,
+    1678,
+    1679,
+    1680,
+    1724
+   ],
+   "reason": "hop candidates from #1725 and #1439 (the deposits they cite and are cited by): read for the entity and its three classes; none names the database, union membership, coverage or density, the CPS or the union wage gap (a class-pattern scan of each text returned no match outside #256 and #499, and #1616's 'unions' is a set operation)"
+  }
+ ],
+ "hop": {
+  "from": [
+   1439,
+   1725
+  ],
+  "candidates": 51,
+  "deposits": 48,
+  "admitted": 1
+ },
+ "class_pass": "O-class: the string pass returned 3 candidates in 2 deposits (#302 twice, the homonym 'CPS'; #1439 once); reading admitted #1439; the hop admitted #256; #1725 read as the anchor",
+ "observations": "No archive text names the Union Membership and Coverage Database, Unionstats.com or its citation form 'Hirsch and Macpherson' (D 0, R 0). The phrase 'union density' occurs once in the archive, in #1439's table, where it is the measure of the deployment-conflict sense of the labor movement. The archive's bearing is ontological and by class: union density as the measure of one sense of the labor movement (#1439); the union defined by membership, dues and bargaining rights (#256); and, through the census's anchor, the losing position's organ, holder and route, with union reform caucuses as cases (#1725). The census record carries the archive's reading of the database itself (ML-23).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 3,
+   "O_deposits": 2,
+   "H_candidates": 51
+  },
+  "deposits_candidate": 2,
+  "deposits_admitted": 3,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 51,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 9,
+   "ml": 35,
+   "deposit": 5
+  }
+ }
+}

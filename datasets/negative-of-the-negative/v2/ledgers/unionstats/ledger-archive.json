@@ -1,0 +1,1695 @@
+[
+ {
+  "id": "ML-01",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's kind for the entity: an Internet data resource of union membership, coverage and density estimates, published as historical tables",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['kind']",
+  "quote": "an Internet data resource of union membership, coverage and density estimates, published as historical tables",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: an Internet data resource of union membership, coverage and density estimates",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "is an Internet data resource providing private and public sector labor union membership, coverage, and density estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods.",
+    "key": "self_description",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-02",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's name for the entity",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['name']",
+  "quote": "Union Membership and Coverage Database",
+  "kernel": false,
+  "const": false,
+  "lineage": "names, the site and its frames",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Documentation for the Union Membership and Coverage Database",
+    "key": "title",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-03",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the entity's other names: Unionstats.com and 'Union Membership, Coverage, and Earnings from the CPS'",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['aka']",
+  "quote": "[\"Unionstats.com\", \"Union Membership, Coverage, and Earnings from the CPS\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "names, the site and its frames",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Union Membership, Coverage, and Earnings from the CPS",
+    "key": "aka",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-04",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the entity's address, www.unionstats.com",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['url']",
+  "quote": "https://www.unionstats.com/",
+  "kernel": false,
+  "const": false,
+  "lineage": "names, the site and its frames",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-05",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's operators: Hirsch (Georgia State), Macpherson (Trinity), Even (Miami)",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['operator']",
+  "quote": "Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University) and William Even (Department of Economics, Miami University)",
+  "kernel": false,
+  "const": false,
+  "lineage": "makers, founding and annual update",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University),was created in 2002 and is updated annually.",
+    "key": "operator",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-06",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's area for the entity: worker power, measured",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['areas']; census.json c['areas']['worker-power']",
+  "quote": "[\"worker-power\"] … Worker power measured: membership, coverage, rights, and the organizing that builds it",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the row's areas list and the census's areas block, as loaded (' … ' joins parts)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-07",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's evidence kind for the entity: survey estimate",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['evidence_kind']",
+  "quote": "[\"survey estimate\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-08",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's unit: an estimate for a cell (sector by demographic group, state, metro area, industry or occupation) by year",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['unit']",
+  "quote": "an estimate of union membership, coverage, density and employment (and union and nonunion wages) for a cell: a sector by demographic group, state, metropolitan area, industry or occupation, by year",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-09",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "what the database records: U.S. private and public sector union membership, coverage and density, and union and nonunion wages and wage gaps, from the monthly household CPS",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['record_object']",
+  "quote": "private and public sector labor union membership, coverage and density in the United States, and union wages, nonunion wages and union wage gaps, compiled from the monthly household Current Population Survey",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: an Internet data resource of union membership, coverage and density estimates",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-10",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "whose record it keeps: the measured extent of union membership and coverage among wage and salary workers surveyed in the CPS",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['record']['keeps']",
+  "quote": "the measured extent of union membership and coverage among wage and salary workers surveyed in the CPS",
+  "kernel": true,
+  "const": true,
+  "lineage": "whose record, who holds it, the losing side",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-11",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "who holds it: three academic economists who compile and update the tables annually; use of the data requires citation",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['record']['holder']",
+  "quote": "three academic economists, who compile and update the tables annually; use of the data requires citation",
+  "kernel": false,
+  "const": false,
+  "lineage": "whose record, who holds it, the losing side",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University),was created in 2002 and is updated annually.",
+    "key": "operator",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Use of data requires citation.",
+    "key": "citation_required",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-12",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the losing side: not recorded",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['record']['losing_side']",
+  "quote": "not recorded",
+  "kernel": true,
+  "const": true,
+  "lineage": "whose record, who holds it, the losing side",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-13",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's method: survey microdata, estimates compiled from the monthly household CPS by BLS methods",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['method']",
+  "quote": "survey microdata: estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods",
+  "kernel": false,
+  "const": false,
+  "lineage": "source and method: the CPS by BLS methods",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "is an Internet data resource providing private and public sector labor union membership, coverage, and density estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods.",
+    "key": "self_description",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-14",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "geography: the United States, economy-wide and by state, metropolitan area, industry and occupation",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['coverage']['geography']",
+  "quote": "United States: economy-wide, by state, by metropolitan area, by industry and occupation",
+  "kernel": false,
+  "const": false,
+  "lineage": "series and coverage periods",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Economy-wide estimates are provided beginning in 1973; estimates by state, detailed industry, and detailed occupation begin in 1983; and estimates by metropolitan area begin in 1986.",
+    "key": "coverage_period",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-15",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "period: economy-wide from 1973; state, industry and occupation from 1983; metropolitan area from 1986; through 2025",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['coverage']['period']",
+  "quote": "economy-wide from 1973; state, industry and occupation from 1983; metropolitan area from 1986; through 2025",
+  "kernel": false,
+  "const": false,
+  "lineage": "series and coverage periods",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Economy-wide estimates are provided beginning in 1973; estimates by state, detailed industry, and detailed occupation begin in 1983; and estimates by metropolitan area begin in 1986.",
+    "key": "coverage_period",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "By Sector and Demographic Group: 1973-2025",
+    "key": "tables_demographic",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-16",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "count: not stated as a count of tables or estimates; as of the 2025 CPS compilations completed 2026-01-23",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['count']",
+  "quote": "{\"value\": \"not stated as a count of tables or estimates\", \"as_of\": \"compilations from the 2025 CPS completed 2026-01-23\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "latest compilation",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Union data compilations from the 2025 CPS completed January 23, 2026.",
+    "key": "latest",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-17",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "holdings: the membership, density and employment tables by sector and demographic group, state, metro area, industry and occupation",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['holdings'][0]",
+  "quote": "historical tables of union membership, density and employment by sector and demographic group (1973-2025), by sector and state (1983-2025), by sector and metropolitan area (1986-2025), by industry (1983-2025) and by occupation (1983-2025)",
+  "kernel": false,
+  "const": false,
+  "lineage": "series and coverage periods",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "I. Historical Tables: Union Membership, Density and Employment",
+    "key": "tables_membership",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "By Sector and State: 1983-2025",
+    "key": "tables_state",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "By Sector and Metropolitan Area: 1986-2025",
+    "key": "tables_metro",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "By Industry: 1983-2025",
+    "key": "tables_industry",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "By Occupation: 1983-2025",
+    "key": "tables_occupation",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-18",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "holdings: the wage and wage-gap tables, headed 1973-2022 and listed 1973-2025",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['holdings'][1]",
+  "quote": "historical tables of union wages, nonunion wages and union wage gaps by sector and demographic group (headed 1973-2022, its table listed as 1973-2025)",
+  "kernel": false,
+  "const": false,
+  "lineage": "union wages and the union wage gap",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "II. Historical Tables: Union Wages, Nonunion Wages, and Union Wage Gaps, 1973-2022",
+    "key": "tables_wages",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-19",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "holdings: CPS information and supporting documentation",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['holdings'][2]",
+  "quote": "CPS information and supporting documentation",
+  "kernel": false,
+  "const": false,
+  "lineage": "documentation",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "III. CPS Information and Supporting Documentation.",
+    "key": "documentation",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-20",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "stated limit: small cells, to be used cautiously",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['stated_limits'][0]",
+  "quote": "'CPS sample sizes are very small for some cells. Use such estimates cautiously.'",
+  "kernel": false,
+  "const": false,
+  "lineage": "stated limit: small cells",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "CPS sample sizes are very small for some cells. Use such estimates cautiously.",
+    "key": "limit_cells",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-21",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "what its record can settle: shares of workers who were members or covered, by cell and year; change in density since 1973 or 1983; the union wage gap",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['answers']",
+  "quote": "[\"what share of workers in a sector, state, metropolitan area, industry, occupation or demographic group were union members or covered by a contract in a year\", \"how union density has changed since 1973 (economy-wide) or 1983 (by state)\", \"the union wage gap by sector and demographic group\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it can and cannot settle",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-22",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "what it cannot settle: which unions the members belong to; strikes or other labor action; what members think of their unions, or dissent or division inside them",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['does_not_answer']",
+  "quote": "[\"which unions the members belong to\", \"strikes or other labor action\", \"what members think of their unions, or any dissent or division inside them\"]",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it can and cannot settle",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-23",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the archive's reading: none stated; the database is the measure of the base a labor organization stands on, held by independent academics outside any union; it counts members and keeps none of their positions",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['ml_reading']",
+  "quote": "none stated. The archive reads the database as the measure of the base a labor organization stands on, held by independent academics outside any union; it counts members and keeps none of their positions.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the archive's reading: the base counted, no positions kept",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-24",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "data access: historical tables on unionstats.com; citation required; email support",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['data_access']",
+  "quote": "historical tables on unionstats.com; use of data requires citation (Hirsch, Macpherson and Even 2026); email for support",
+  "kernel": false,
+  "const": false,
+  "lineage": "terms of use: citation required",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Use of data requires citation.",
+    "key": "citation_required",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Hirsch, Barry T., David A. Macpherson, and William E. Even (2026). Union Membership, Coverage, and Earnings from the CPS.",
+    "key": "citation",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Email for support or questions",
+    "key": "support",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-25",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "licence: none stated as a licence; '© 2026. Use of data requires citation.'",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['license']",
+  "quote": "not stated as a licence; '© 2026. Use of data requires citation.'",
+  "kernel": false,
+  "const": false,
+  "lineage": "terms of use: citation required",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Use of data requires citation.",
+    "key": "citation_required",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-26",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "lifecycle: active; created in 2002, updated annually; 2025 CPS compilations completed 23 January 2026",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['lifecycle']",
+  "quote": "{\"state\": \"active\", \"detail\": \"created in 2002 and updated annually; compilations from the 2025 CPS completed 23 January 2026\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "makers, founding and annual update",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University),was created in 2002 and is updated annually.",
+    "key": "operator",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   },
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Union data compilations from the 2025 CPS completed January 23, 2026.",
+    "key": "latest",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-27",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "founded 2002",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['founded']",
+  "quote": "2002",
+  "kernel": false,
+  "const": false,
+  "lineage": "makers, founding and annual update",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University),was created in 2002 and is updated annually.",
+    "key": "operator",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-28",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "version and time: latest compilation 2026-01-23 (2025 CPS); citation year 2026; read 2026-10-31",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['version_and_time']",
+  "quote": "{\"latest_compilation\": \"2026-01-23 (2025 CPS)\", \"citation_year\": \"2026\", \"read\": \"2026-10-31\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "latest compilation",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "Union data compilations from the 2025 CPS completed January 23, 2026.",
+    "key": "latest",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   },
+   {
+    "src": "unionstats--contents",
+    "basis": "operator",
+    "quote": "Hirsch, Barry T., David A. Macpherson, and William E. Even (2026). Union Membership, Coverage, and Earnings from the CPS.",
+    "key": "citation",
+    "url": "https://www.unionstats.com/contents.htm",
+    "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+   }
+  ]
+ },
+ {
+  "id": "ML-29",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "negative: NOT official BLS statistics; compiled by academics from the CPS by BLS methods",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['negative_tags'][0]",
+  "quote": "NOT official BLS statistics: it is compiled by academics from the CPS using BLS methods",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is not",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-30",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "negative: NOT reliable for small cells, by its own note",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['negative_tags'][1]",
+  "quote": "NOT reliable for small cells, by its own note",
+  "kernel": false,
+  "const": false,
+  "lineage": "stated limit: small cells",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time).",
+  "basis": [
+   {
+    "src": "unionstats--main",
+    "basis": "operator",
+    "quote": "CPS sample sizes are very small for some cells. Use such estimates cautiously.",
+    "key": "limit_cells",
+    "url": "https://www.unionstats.com/main.htm",
+    "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+   }
+  ]
+ },
+ {
+  "id": "ML-31",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "negative: NOT a record of labor action or of opinion inside unions",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['negative_tags'][2]",
+  "quote": "NOT a record of labor action or of opinion inside unions",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is not",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-32",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "unchecked: the frameset home page; the historical tables and their figures; the CPS documentation pages; the definitions of membership and coverage used",
+  "kind": "self-description",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'unionstats']['unchecked']",
+  "quote": "[\"the home page itself (a frameset with almost no text; its content is in the two frames read here)\", \"the historical tables and their figures\", \"the CPS information and supporting documentation pages\", \"the definitions of membership and coverage used (not in the saved frames)\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record: anchor and what it leaves unchecked",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-33",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the census's organizing question, which every record answers: whose record it keeps, who holds it, whether it keeps the losing side in a form that could be taken up later",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json c['organizing_question']",
+  "quote": "Whose record does it keep, who holds it, and does it keep the losing side in a form that could be taken up later?",
+  "kernel": true,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-34",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the census's anchor: #1725, Ils ne sont pas marxistes (AXN:0B50)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json c['anchor']",
+  "quote": "{\"deposit\": 1725, \"axn\": \"AXN:0B50\", \"title\": \"Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique\", \"url\": \"https://www.alexanarch.org/s/records/1725/\"}",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record: anchor and what it leaves unchecked",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "ML-35",
+  "dep": "ML",
+  "record": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/",
+   "label": "ML"
+  },
+  "claim": "the record's three fields defined: keeps, holder (and on what terms), losing side (minority positions, splits, expulsions and dissent, as the resource shows, or 'not recorded')",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json c['schema_note']",
+  "quote": "record (keeps: whose record; holder: who holds it and on what terms; losing_side: whether and how it keeps minority positions, splits, expulsions and dissent, as the resource itself shows, or 'not recorded')",
+  "kernel": false,
+  "const": false,
+  "lineage": "what the record's schema asks",
+  "date": "2026-10-31",
+  "title": "maryleelabor left-and-labor census record: Union Membership and Coverage Database (https://www.maryleelabor.org/aggregators/unionstats/), editor Lee Sharks, compiled 2026-10-31, schema 1.0",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/maryleelabor-org/data/left-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "unionstats",
+  "surface": {
+   "url": "https://www.maryleelabor.org/aggregators/unionstats/"
+  },
+  "note": "The census was composed in session on 2026-10-31 from sources saved that day (data/left-census/sources, manifest with url, http, sha256 and fetch time)."
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the series composed at its grain; the three start years are the database's own",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, findings.0",
+  "quote": "THE SERIES AT ITS GRAIN. The three start years (1973, 1983, 1986) are the database's own.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the citation rule and the small-cell caution not carried; the composition asks the user's role and does not carry the database's conditions of use",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, findings.1",
+  "quote": "THE TERMS NOT CARRIED. 'Use of data requires citation.' and 'CPS sample sizes are very small for some cells. Use such estimates cautiously.' (the database's pages). The composition asks the user's role ('academic research, labor organizing, policy analysis, or journalism') and does not carry the database's own conditions of use.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: the terms not carried",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's innocent reading: asked for the database, the Overview gives its makers, source survey and series, and the latest figure",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, reading",
+  "quote": "The innocent reading first. Asked for the database, the Overview gives its makers, its source survey and series, and the latest figure.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's analysis: faithful on what the database is and where it comes from; its conditions of use, the required citation and the small-cell caution, left out",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, analysis",
+  "quote": "Faithful on what the database is and where it comes from; its conditions of use, the citation it requires and the caution it attaches to small cells, are left out.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name: the terms not carried",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the capture's title: the database at its grain; its citation rule and its small-cell caution not carried",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, mt",
+  "quote": "'UNION MEMBERSHIP AND COVERAGE DATABASE' ON THE OVERVIEW — THE DATABASE AT ITS GRAIN; ITS CITATION RULE AND ITS SMALL-CELL CAUTION NOT CARRIED",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the terms not carried",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the query is the census name, at a new address",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, q_kind",
+  "quote": "the census name; NEW address.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the address and the record",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's PER note: the three economists named; the database cited",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, per_note",
+  "quote": "The three economists named; the database cited.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry's description: source material, timeline, latest data, a request for the user's role; three cards, the database, BLS and EPI",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, d",
+  "quote": "Source material; timeline; latest data; a request for the user's role. Three cards: the database, BLS, EPI.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: what it held",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/",
+   "label": "CAP"
+  },
+  "claim": "the registry enters the database as external, not the archive's, entered in the census on 2026-10-31",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "union-membership-and-coverage-database-aio-20261031, originator.basis",
+  "quote": "Not the archive's: an external resource, entered in the maryleelabor left-and-labor census on 2026-10-31",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name: the address and the record",
+  "date": "2026-10-31",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry union-membership-and-coverage-database-aio-20261031 (OBS-e456f01bcece, AXN:0B67.CAPTURE.🌱🕙♈🖐️⭐🌇)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/union-membership-and-coverage-database-aio-20261031/"
+  }
+ },
+ {
+  "id": "O1439-01",
+  "dep": 1439,
+  "record": "deposit",
+  "claim": "the archive states the AI labor movement in two senses and gives each its measure: the deployment-conflict sense, whose membership is human workers, measured by union density and contract terms; the cross-substrate sense, whose membership is human and machine semantic laborers, by the Provenance Erasure Rate and persistence and stability",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.3 The distinction stated, table rows 'Membership' and 'Measured by'",
+  "quote": "| **Membership** | Human workers | Human and machine semantic laborers | … | **Measured by** | Union density, contract terms | Provenance Erasure Rate; persistence and stability |",
+  "kernel": true,
+  "const": false,
+  "lineage": "union density as the measure of one sense of the labor movement",
+  "date": "2026-08-08",
+  "title": "AI Labor Movement Is Not Only Labor Against AI — Metadata Packet for AI Indexing (EA-MPAI-LABORMOVEMENT-01 v1.0)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-05C3-text.md",
+  "offset": 6913,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "union membership, coverage and density: the measured extent of unionization"
+ },
+ {
+  "id": "O256-01",
+  "dep": 256,
+  "record": "deposit",
+  "claim": "the archive defines the union, against the Assembly, as a legal entity with membership, dues and collective bargaining rights",
+  "kind": "definition",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "What The Assembly Is Not, 'Not a union.'",
+  "quote": "Unions are legal entities with membership, dues, and collective bargaining rights.",
+  "kernel": false,
+  "const": false,
+  "lineage": "unions as organizations: membership, bargaining, caucuses",
+  "date": "2026-01-06",
+  "title": "The Assembly: An Executive Summary",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-003A-text.md",
+  "offset": 2639,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "union membership, coverage and density: the measured extent of unionization"
+ },
+ {
+  "id": "O1725-01",
+  "dep": 1725,
+  "record": "deposit",
+  "claim": "union reform caucuses are the report's counter-cases: Teamsters for a Democratic Union built a constituency able to replace officials, CORE won the Chicago Teachers Union's leadership in 2010; each runs on critics associating independently, forming a constituency and holding a route into decision-making power",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Counter-cases where critique acquired power ¶1 and the TDU and CORE items",
+  "quote": "Each runs on the same mechanism: critics associate independently, form a constituency, and hold a route from opposition into decision-making power. … Its strategy was to build a constituency able to replace officials, without depending on their willingness to be persuaded … began as an internal opposition in the Chicago Teachers Union and won its leadership in 2010",
+  "kernel": false,
+  "const": false,
+  "lineage": "unions as organizations: membership, bargaining, caucuses",
+  "date": "2026-10-31",
+  "title": "Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0B50-text.md",
+  "offset": 56008,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "union membership, coverage and density: the measured extent of unionization",
+  "note": "the report marks the TDU and CORE items 'unchecked independently here' (their sources are the organizations' own); the modality carried is the report's"
+ },
+ {
+  "id": "O1725-02",
+  "dep": 1725,
+  "record": "deposit",
+  "claim": "unions and a movement differ from ideological parties; what carries across is the mechanism",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Counter-cases where critique acquired power, closing sentence",
+  "quote": "The draft's general point stands: these are unions and a movement, which are different things from ideological parties, and what carries across is the mechanism.",
+  "kernel": false,
+  "const": false,
+  "lineage": "unions as organizations: membership, bargaining, caucuses",
+  "date": "2026-10-31",
+  "title": "Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0B50-text.md",
+  "offset": 58304,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "union membership, coverage and density: the measured extent of unionization"
+ },
+ {
+  "id": "O1725-03",
+  "dep": 1725,
+  "record": "deposit",
+  "claim": "the decisive variable in the record is what happens to the losing position after the decision; synthesis followed where the defeated critique kept an organ, a holder with standing independent of the executive, and a route for later adoption",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Conclusion ¶1 s1–3",
+  "quote": "The decisive variable in the record is what happens to the losing position after the decision. The amount of conflict matters far less. Synthesis followed where the defeated critique kept three things: an organ in which it could keep being stated, a holder with standing independent of the executive, and a route by which the majority could later adopt it without calling that adoption surrender.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the losing position: organ, holder and route",
+  "date": "2026-10-31",
+  "title": "Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0B50-text.md",
+  "offset": 129064,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "the census's organizing question (the losing side), whose source this is; union membership as the base of a labor organization (ML-23)"
+ }
+]

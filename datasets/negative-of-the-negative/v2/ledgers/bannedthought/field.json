@@ -1,0 +1,761 @@
+{
+ "row": "bannedthought",
+ "address": "bannedthought.net",
+ "addresses": [
+  "bannedthought.net"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the Wikipedia response summary; 35/35 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 bannedthought.net, the site's home page, byte-identical to the census's one own page and carried once as a card; B2 J.R. Valila's 2021 article on Philippine E-Journals, abstract and references; B3 a YUMPU account page named bannedthought.net); 'own_page': none beyond B1 (the census saved only the home page); 'wikipedia', no article (B4). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1); the holder (B1); the ban (B1); holdings (B1); the parties of a split (B1); its own terms (B1); state action (B1); method and limits (B1); access and contact (B1); the citing paper's own object (B2); a source for scholarship and the encyclopedia (B2, B4); copies elsewhere (B3); reception, the encyclopedia (B4). The census's kind, operator, record.holder, record.losing_side, method, coverage.period, stated_limits, data_access, lifecycle, version_and_time and negative_tags[0], [2] restate B1 (one lineage each with the page, which keeps the earliest date; its evidence quotes are verbatim from the same bytes).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 refetched as the card, byte-identical to the census copy, B1.txt the census's text; B4 .wiki, .html, -variant.wiki, -variant2.wiki, -search.html raw Wikipedia responses with B4.txt a summary of codes and notices; T1-bannedthought-net-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page bannedthought--home, byte-identical)",
+   "card": "BANNEDTHOUGHT.NET — BANNEDTHOUGHT.NET - Struggling against the suppression of progressive ideas.",
+   "url": "https://www.bannedthought.net/",
+   "kind": "Overview card (the site's home page: its purpose, its ban, its country and party sections, its notice); the census's own page bannedthought--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B1.html",
+     "sha256": "afcdb2bf751d80c8241fd8ff0dace45686958bc2154e8f204af68d796d681e11"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B1.txt",
+     "sha256": "7ed4f37e6783fe3e5afd4014f1e0c7fcda2cb9523cb9e7b3786c3d336c228b57"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:43Z",
+    "http": 200,
+    "url": "https://www.bannedthought.net/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B1.html",
+    "raw_sha256": "afcdb2bf751d80c8241fd8ff0dace45686958bc2154e8f204af68d796d681e11",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B1.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "census_copy": {
+     "src": "bannedthought--home",
+     "sha256": "afcdb2bf751d80c8241fd8ff0dace45686958bc2154e8f204af68d796d681e11",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:50Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "no (the page names no operator; it gives a contact address, freespeech@bannedthought.net, and links an About page, which the census did not save and this row did not fetch)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the page's own <title>, verbatim). The fetch is byte-identical to the census's saved copy bannedthought--home (sha256 afcdb2bf…, read the same day), so the card and the census's one own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes. The rail's snippet for this card ('BannedThought.net: Website opposing the suppression of progressive ideas by publishing censored documents and publications globally. Censorship Status: The webs...') is not in the page's text or markup (the page has no meta description) and repeats the composition's own label 'Censorship Status'; it is recorded as the rail's and yields no field claim. The page carries one date, the addendum of 5 May 2022.",
+   "surfaced_by_T": [
+    {
+     "slug": "bannedthought-net-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "BANNEDTHOUGHT.NET - Struggling against the suppression of progressive ideas.",
+   "card_snippet": "BannedThought.net: Website opposing the suppression of progressive ideas by publishing censored documents and publications globally. Censorship Status: The webs...",
+   "card_note": "snippet not present in the page (see note)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Philippine E-Journals — Interrogating Mao and Locating the Philippine Left’s Position within ...",
+   "url": "https://www.ejournals.ph/article.php?id=22431",
+   "kind": "Overview card (the abstract page of J.R. Valila's 2021 article in the Social Sciences and Development Review, with its reference list)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B2.html",
+     "sha256": "7441205a0a1d825292681f56bd5e648a715cbd2bbba4b7d187544bebc8e3f663"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B2.txt",
+     "sha256": "8889ecc437c57be17bdc9af01cac912d00f0dc834c512b0f5679047d5d563eca"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:06Z",
+    "http": 200,
+    "url": "https://www.ejournals.ph/article.php?id=22431",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B2.html",
+    "raw_sha256": "7441205a0a1d825292681f56bd5e648a715cbd2bbba4b7d187544bebc8e3f663",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "searches": [
+     "WebSearch '\"Interrogating Mao and Locating the Philippine Left's Position\" ejournals.ph' (first result www.ejournals.ph/article.php?id=22431; the journal's own host publishing.pup.edu.ph also returned, fetched once for identification and not kept)"
+    ]
+   },
+   "names_operator": "no (the page names the site only as the host of three documents in its references: 'BannedThought. Net', 'BannedThought.Net')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Identified by the card's site and title and confirmed by its snippet, which is the page's first reference verbatim ('Communist Party of the Philippines. (1993). Reaffirm our Basic Principles and Rectify Errors. Rebolusyon, 1-80. http://www.bannedthought.net/Philippines/CPP/Reb...'). The article is about the Philippine Left and Mao's protracted-war theory; the entity enters it as the host of party documents in the reference list. The full text (a download) was not fetched: the abstract, title and references are the page the card shows.",
+   "surfaced_by_T": [
+    {
+     "slug": "bannedthought-net-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Interrogating Mao and Locating the Philippine Left’s Position within ...",
+   "card_snippet": "Communist Party of the Philippines. (1993). Reaffirm our Basic Principles and Rectify Errors. Rebolusyon, 1-80. http://www.bannedthought.net/Philippines/CPP/Reb...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "YUMPU — 8 free Magazines from BANNEDTHOUGHT.NET",
+   "url": "https://www.yumpu.com/user/bannedthought.net",
+   "kind": "Overview card (a YUMPU account page named bannedthought.net listing eight documents)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B3.html",
+     "sha256": "3d9204c75700d50dc181faec9a6bffd1634ff71db2f952b1933781b2554883bb"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B3.txt",
+     "sha256": "e00e42850a5e329464742b31b79e98161ccd673ad90ece35960459cd38c2a39a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:39Z",
+    "http": 200,
+    "url": "https://www.yumpu.com/user/bannedthought.net",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B3.html",
+    "raw_sha256": "3d9204c75700d50dc181faec9a6bffd1634ff71db2f952b1933781b2554883bb",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B3.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "searches": [
+     "WebSearch 'yumpu \"8 free Magazines from BANNEDTHOUGHT.NET\"' (no result)",
+     "WebSearch 'yumpu.com bannedthought.net magazines' (no result)",
+     "the account path from YUMPU's user-page form, https://www.yumpu.com/user/bannedthought.net: HTTP 200, <title> '8 free Magazines from BANNEDTHOUGHT.NET', the card's title verbatim; a second form, /user/bannedthought, HTTP 404 (not kept)"
+    ]
+   },
+   "names_operator": "no (the account is named 'bannedthought.net' and links www.bannedthought.net; the page does not say who made it)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Confirmed by its <title>, the card's title verbatim, and by the snippet's words ('contradictions in the world capitalist system and the necessity of ...', 'PDF format - BANNEDTHOUGHT.NET'). A third-party platform's page of copies of the site's documents.",
+   "surfaced_by_T": [
+    {
+     "slug": "bannedthought-net-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "8 free Magazines from BANNEDTHOUGHT.NET",
+   "card_snippet": "bannedthought.net * contradictions in the world capitalist system and the necessity of ... bannedthought.net * PDF format - BANNEDTHOUGHT.NET bannedthought.net ...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — BannedThought.net (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=BannedThought.net&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4.wiki",
+     "sha256": "a2dc03e09ef085c1ad967cfc69e8b6181fcc53fd1adec676606cd89e98dd48d7"
+    },
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4.html",
+     "sha256": "bdf623926d7ee83407c59a3f921fbc398c9f1db331e490b520965722e19d82c4"
+    },
+    "B4-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4-variant.wiki",
+     "sha256": "1dfb23386a5eccb4e4e4565ae00017494aa213ed78ccdaa2428a09cfb45c0e5c"
+    },
+    "B4-variant2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4-variant2.wiki",
+     "sha256": "06fba920bcf34bc17f456a01b8bc597f8f5701800d6e2aba7e7adb5c1d8dca90"
+    },
+    "B4-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4-search.html",
+     "sha256": "e2e1121ec0b32665635317119e4e2f17f3187afa04eaef5a8950ae2e6f61a697"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4.txt",
+     "sha256": "1449a0b8a0d84b18a3e21087339ef5b445aa407a8069ef97754f658581c5b949"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:54Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=BannedThought.net&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:59:55Z",
+      "url": "https://en.wikipedia.org/wiki/BannedThought.net?redirect=no",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T22:59:55Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Bannedthought.net&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:59:55Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Banned_Thought&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:59:56Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22bannedthought%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'Results 1 – 16 of 16': sixteen articles that cite a document at bannedthought.net as a reference; none is an article on the site"
+     }
+    ],
+    "raw_sha256": "bdf623926d7ee83407c59a3f921fbc398c9f1db331e490b520965722e19d82c4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bannedthought-20261031/B4.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect at BannedThought.net, Bannedthought.net or Banned Thought. Sixteen articles carry the name, each as the host of a cited document (among them Marxism–Leninism–Maoism, Maoist Communist Centre of India, Communist Party of Kampuchea, Jangal Santhal); they are articles on other entities, recorded in B4.txt and not ledgered one by one. Jangal Santhal's reference gives the section title as 'CPI(M-L) [original party formed in 1967]' (retrieved 25 November 2021), where the home page now reads 'formed in 1969'.",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "<title>; the page's heading",
+   "quote": "BANNEDTHOUGHT.NET - Struggling against the suppression of progressive ideas. … Struggling Against the Suppression of Ideas",
+   "claim": "the site's name and tagline: struggling against the suppression of progressive ideas",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a site against the suppression of progressive ideas",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1 s1",
+   "quote": "This site exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere in the world.",
+   "claim": "the site exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a site against the suppression of progressive ideas",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1 s2",
+   "quote": "We will attempt to publicize such suppression and—when possible—to post documents and publications that have been suppressed elsewhere.",
+   "claim": "its method: to publicize such suppression and, when possible, post documents and publications suppressed elsewhere",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "what it is: a site against the suppression of progressive ideas",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "— NOTICE — s1",
+   "quote": "BANNEDTHOUGHT.NET is independent and unaffiliated with any political party.",
+   "claim": "the site is independent and unaffiliated with any political party",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "the holder: independent of every party, its sympathies stated",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "— NOTICE — s2",
+   "quote": "While our sympathies are of course with the struggles of the oppressed and exploited peoples of the world, our goal here is simply to expose attempts to censor or suppress progressive ideas and to make available publications and documents which have been suppressed in one or more countries.",
+   "claim": "its sympathies are with the struggles of the oppressed and exploited; its goal 'simply' to expose censorship and make suppressed documents available",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: independent of every party, its sympathies stated",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the ban notice, heading",
+   "quote": "Ironically, BannedThought.net is Itself Now Banned in India and Some Other Countries!",
+   "claim": "the site is itself banned in India and some other countries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ban on the site itself",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the ban notice ¶1",
+   "quote": "The fact which censors are most concerned of all to censor is that they are doing any censorship! Since BannedThought.net is exposing censorship as best we can, naturally this website itself is now being censored in some countries, most notably in India.",
+   "claim": "its account of the ban: because it exposes censorship, it is censored in some countries, most notably India",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ban on the site itself",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the ban notice ¶2",
+   "quote": "To read the letter from the Indian government Internet censorship agency announcing its fascist-like intention to ban BannedThought.net, along with further details, click here … And a recent addendum (May 5, 2022).",
+   "claim": "it posts the Indian government censorship agency's letter announcing the ban, with an addendum of 5 May 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the ban on the site itself",
+   "date": "2022-05-05 (the addendum's date; the letter undated on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the country list",
+   "quote": "Afghanistan … Albania … Peru Philippines Spain (and Spanish Civil War) … Yugoslavia and Balkans Region … International Associations and Organizations",
+   "claim": "its holdings are filed by country, Afghanistan to Yugoslavia and the Balkans, the Philippines among them, and by international association",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: documents filed by country, party and association",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "India: Communist Party of India (Maoist)",
+   "quote": "Communist Party of India (Maoist): … CPI(Maoist) Documents and Statements … CPI(Maoist) Information Bulletin … People’s War [Theoretical Journal] … Kranti [Telugu language magazine]",
+   "claim": "for the CPI (Maoist) it holds documents and statements, an information bulletin, a theoretical journal and party magazines",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: documents filed by country, party and association",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Nepal",
+   "quote": "The Communist Party of Nepal (Revolutionary Maoist) [Formerly: CPN Maoist]: … CPN (RM) Party Documents & Statements … The Communist Party of Nepal (Maoist Centre) [Formerly: Unified Communist Party of Nepal (Maoist)]: … UCPN(M) Party Documents & Statements … The Views of Various UCPN(M) Leaders",
+   "claim": "for Nepal it files two parties, each with its former name and its own documents and statements, and 'The Views of Various UCPN(M) Leaders'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the parties of a split, filed side by side",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "India: the CPI(M-L) parties",
+   "quote": "CPI(M-L) Naxalbari Documents and Statements … CPI(M-L) [Original Party formed in 1969] … Communist Party of India (Marxist-Leninist) [People’s War] … CPI(M-L) [Satyanaran Singh] / PCC-CPI(M-L) … Other Parties and Groups Espousing Mao Tsetung Thought",
+   "claim": "for India it files several CPI (M-L) parties, each under its own name, and 'Other Parties and Groups Espousing Mao Tsetung Thought'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the parties of a split, filed side by side",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "China",
+   "quote": "Writings of Mao and Other Individuals … The Chinese Revolution up to 1949 … The Great Proletarian Cultural Revolution … The Great Debate between Revolutionary China and the Revisionist and Social-Imperialist Soviet Union",
+   "claim": "for China it holds Mao's writings, the revolution to 1949, the Cultural Revolution and 'The Great Debate between Revolutionary China and the Revisionist and Social-Imperialist Soviet Union'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its own terms: 'Revisionist', 'Social-Imperialist'",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "U.S.S.R.",
+   "quote": "U.S.S.R. (Socialist & Revisionist Periods)",
+   "claim": "it divides the U.S.S.R. into 'Socialist & Revisionist Periods'",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "its own terms: 'Revisionist', 'Social-Imperialist'",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "International Associations and Organizations",
+   "quote": "CCOMPOSA … Multi-Party Statements … Two Lines Struggle Journal … Revolutionary Internationalist Movement [RIM] … International Communist League [ICL] … Comintern",
+   "claim": "it holds the documents of international associations: CCOMPOSA, multi-party statements, the Two Lines Struggle Journal, RIM, the ICL, the Comintern",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: documents filed by country, party and association",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "theory",
+   "quote": "MLM Theory: Politics, Political Economy and Philosophy",
+   "claim": "it holds a section of MLM theory: politics, political economy and philosophy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: documents filed by country, party and association",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "India: the period",
+   "quote": "Early History of the Communist Movement in India … Contemporary Capitalist-Imperialist China",
+   "claim": "its sections run from the early history of the movement to the contemporary",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: documents filed by country, party and association",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "India: state action",
+   "quote": "Trends and Developments toward Fascism … Government/Media Disinformation … Military Assaults on Revolutionaries and People’s Movements … Imperialist Support for Counter-Revolution in India",
+   "claim": "for India it documents state action: trends toward fascism, government and media disinformation, military assaults on revolutionaries and people's movements",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it documents of state action against movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the closing ¶2 s2",
+   "quote": "At present, and because of our own language deficiencies, we are usually only posting items in English.",
+   "claim": "its limit: because of its own language deficiencies it usually posts only items in English",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "method and stated limits",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the closing ¶1",
+   "quote": "Additional pages for other specific countries will be added as becomes necessary.",
+   "claim": "further country pages will be added as necessary",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method and stated limits",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the closing ¶2 s1",
+   "quote": "If you know of progressive publications or documents which are banned or suppressed anywhere in the world, please let us know about them so that we may inform others of this and possibly post them on this site.",
+   "claim": "it asks readers to report banned or suppressed progressive documents so that it may inform others and possibly post them",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method and stated limits",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "India: other languages",
+   "quote": "Jhankar [Magazine — editions in Hindi & Telugu] … Miscellaneous Documents in the Gondi Language … Miscellaneous Documents in the Telugu Language",
+   "claim": "it holds documents in Gondi and Telugu and magazines in Hindi and Telugu",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method and stated limits",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F23": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "search; New Postings",
+   "quote": "You may search the BannedThought.net web site using the Google search box at the bottom of this page. … List of recent postings on BannedThought.net.",
+   "claim": "access: a Google search box for the site and a list of recent postings",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and contact",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F24": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ¶1 s3; the closing ¶2 s3",
+   "quote": "For more information about this web site see: … About BannedThought.net … Contact us at: … freespeech@bannedthought.net",
+   "claim": "for more about itself it points to an About page; its contact is freespeech@bannedthought.net; the page names no operator",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and contact",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F25": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Security",
+   "quote": "A document of online security recommendations, submitted by an activist in the US.",
+   "claim": "it posts online security recommendations submitted by an activist in the US",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and contact",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 7ed4f37e6783fe3e…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "title; journal; author",
+   "quote": "Interrogating Mao and Locating the Philippine Left’s Position within Mao’s Protracted War Theory: A Politico-Military Critique … Social Sciences and Development Review Journal ⇛ vol. 13 no. 1 (2021) … J.R. Valila",
+   "claim": "the card's page is J.R. Valila's 2021 article in the Social Sciences and Development Review, a politico-military critique of the Philippine Left's position within Mao's protracted-war theory",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the citing paper's own object: the Philippine Left and protracted war",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "As the Mainstream Left continues to wage a ferocious civil war against the Philippine state for more than half a century since 1969, it is ironic that it now finds itself in a position of relative political stasis.",
+   "claim": "the paper's claim: the Mainstream Left, at civil war with the Philippine state since 1969, finds itself in relative political stasis",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the citing paper's own object: the Philippine Left and protracted war",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Abstract s5–6",
+   "quote": "The paper seeks to dissect PPW’s applicability to the Philippine concrete situation and navigate the readers on how the Left has applied this to its revolutionary struggle. Although the review is culled on a primarily military perspective contraposed with the Left’s fundamental founding documents, the results may offer some explanations on why the Left today is in a political impasse.",
+   "claim": "its method and limit: a primarily military review set against the Left's founding documents, whose results 'may offer some explanations' of its impasse",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the citing paper's own object: the Philippine Left and protracted war",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "References 1 (the card's snippet)",
+   "quote": "Communist Party of the Philippines. (1993). Reaffirm our Basic Principles and Rectify Errors. Rebolusyon, 1-80. http://www.bannedthought.net/Philippines/CPP/Rebolusyon/1993/R1993-01en.pdf",
+   "claim": "the paper cites the Communist Party of the Philippines' 1993 'Reaffirm our Basic Principles and Rectify Errors' at bannedthought.net",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "a source for scholarship and the encyclopedia: its documents cited",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "References 2, 3, 9",
+   "quote": "Communist Party of the Philippines. (2016). Constitution and Program. BannedThought. Net. … Guerrero, A. (1975). Our Urgent Tasks. BannedThought.Net. … Riple, S. (1974, December 1December 1). Specific Characteristics of Our People’s War. BannedThought.Net.",
+   "claim": "it cites the CPP's 2016 Constitution and Program and two 1970s party texts at BannedThought.Net",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "a source for scholarship and the encyclopedia: its documents cited",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "References 4–7, 10",
+   "quote": "Mao Tse-Tung. (1938, May). On Protracted War. Marxists Internet Archive. … Stalin, J. (1953). The Foundations of Leninism. Marxists Internet Archive.",
+   "claim": "it takes Mao's and Stalin's texts from the Marxists Internet Archive, a second holder beside BannedThought.Net",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "a source for scholarship and the encyclopedia: its documents cited",
+   "date": "2021 (vol. 13 no. 1)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 8889ecc437c57be1…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "<title>; the account header",
+   "quote": "8 free Magazines from BANNEDTHOUGHT.NET … bannedthought.net … 8 Documents … www.bannedthought.net",
+   "claim": "a YUMPU account named bannedthought.net, linking www.bannedthought.net, holds eight documents; the page does not say who made it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "copies elsewhere: a YUMPU account of its documents",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e00e42850a5e3294…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "the document list",
+   "quote": "contradictions in the world capitalist system and the necessity of ... … 20-odd chiefs of sister wings join Baidya's party … Maoist Information Bulletin - 17 - BANNEDTHOUGHT.NET … Comrade Azad is immortal! - BANNEDTHOUGHT.NET … COMMUNIST PARTY OF INDIA (MAOIST) - BANNEDTHOUGHT.NET",
+   "claim": "its documents include a Maoist Information Bulletin, a CPI (Maoist) document, a tribute to Comrade Azad and a report that '20-odd chiefs of sister wings join Baidya's party'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "copies elsewhere: a YUMPU account of its documents",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e00e42850a5e3294…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles BannedThought.net, Bannedthought.net, Banned Thought",
+   "quote": "raw wikitext (action=raw, redirect=no), 2026-10-31T22:59:54Z: HTTP 404 … Wikipedia does not have an article with this exact name. … None is an article on BannedThought.net and none is a redirect to one.",
+   "claim": "Wikipedia has no article on BannedThought.net and no redirect",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1449a0b8a0d84b18…), whitespace-normalised, each part of a ' … ' quote checked"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: article-space search",
+   "quote": "Results 1 – 16 of 16. The sixteen articles that carry the name, each citing a document hosted at bannedthought.net as a reference",
+   "claim": "sixteen Wikipedia articles cite documents hosted at bannedthought.net as references",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "a source for scholarship and the encyclopedia: its documents cited",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1449a0b8a0d84b18…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "BANNEDTHOUGHT.NET — BANNEDTHOUGHT.NET - Struggling against the suppression of progressive ideas.",
+  "B2": "Philippine E-Journals — Interrogating Mao and Locating the Philippine Left’s Position within ...",
+  "B3": "YUMPU — 8 free Magazines from BANNEDTHOUGHT.NET",
+  "B4": "Wikipedia — BannedThought.net (no article)"
+ }
+}

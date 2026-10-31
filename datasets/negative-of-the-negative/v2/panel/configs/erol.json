@@ -1,0 +1,46 @@
+{
+ "row": "erol",
+ "address": "Encyclopedia of Anti-Revisionism On-Line",
+ "entity": "The Encyclopedia of anti-Revisionism On-Line (EROL), served at www.marxists.org/history/erol/ in the History section of the Marxists Internet Archive: information on, and primary documents and periodicals from, anti-revisionist movements, organizations and parties by country, with an EROL Administrator as its contact; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/erol/)",
+ "row_type": "C (a public entity on which the archive bears: an online encyclopedia and document archive of the anti-revisionist movements; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bEncyclopedia of [Aa]nti-?[Rr]evisionism\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bEROL\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "marxists\\.org/history/erol",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "anti-revisionist movements, organizations and parties (Marxist-Leninist and Maoist; the New Communist Movement)",
+   "pattern": "\\b(anti-?revisionis\\w*|New Communist Movement|Marxist[- –]Leninists?|Maoism|Maoists?|Sino-Soviet split|Hoxha\\w*|de-?Stalini[sz]ation)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the EROL contents page: 'INFORMATION ON AND PRIMARY DOCUMENTS FROM ANTI-REVISIONIST MOVEMENTS, ORGANIZATIONS AND PARTIES BY COUNTRY'; 'The New Communist Movement: Origins and Early Groups, 1969-1974'); B2 (What is Anti-Revisionism, Paul C., 2009: 'The goal of the Encyclopedia of Anti-Revisionism is to document this trend.'; 'numerous “Marxist-Leninist” and “Maoist” parties'); B4 (Harvard Digital Handbook: Subject 'anti-Revisionism', 'Sino-Soviet split'). The census's own kind ('online encyclopedia of information on, and primary documents from, anti-revisionist movements, organizations and parties, by country') and record.keeps for the entity (ML record, census.json rows[slug == 'erol'].kind, .record.keeps)."
+  },
+  {
+   "term": "archives of movement and party documents (the record of splits; periodical runs)",
+   "pattern": "\\b(movement documents?|party documents?|primary documents?|internal bulletins?|archives? of the left|left archives?|record of (the |its |their )?splits?|periodical runs?|organs? in which|independent organs?)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('PRIMARY DOCUMENTS FROM ANTI-REVISIONIST MOVEMENTS'; 'The New Communist Movement: Crises, Splits and More New Parties, 1977-1980'; 'Anti-Revisionist Periodicals, Magazines and Newspapers by Country'); B4 (Format: 'Digital archive'; Source Types 'periodical', 'archival document'); B5 (the periodicals list). The census's own areas ('movement-documents': 'Movement and party documents: programmes, polemics, internal bulletins, periodicals, the record of splits') and evidence_kind ('movement document', 'periodical run', 'primary text') for the entity (ML record, census.json areas, rows[slug == 'erol'].areas, .evidence_kind)."
+  },
+  {
+   "term": "sections of the Marxists Internet Archive",
+   "pattern": "\\b(Marxists Internet Archive|marxists\\.org|MIA)\\b",
+   "flags": "",
+   "basis": "field: B4 (Harvard Digital Handbook: 'Creator: Marxists Internet Archive', 'Parent Source: Marxists Internet Archive'); B8 (Wikipedia: 'Encyclopedia of Anti-Revisionism On-Line' redirects to 'Marxists Internet Archive'); B3 (the EROL entry page: 'MIA: History: Encyclopedia of anti-Revisionism On-Line'). The census's relation part_of marxists-internet-archive for the entity (ML record, census.json rows[slug == 'erol'].relations)."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own kind, area, evidence kind or relation for the entity, stated by field sources at the loci given: (1) anti-revisionist movements, organizations and parties, EROL's subject (census kind, record.keeps; B1, B2, B4); (2) archives of movement and party documents, the census area 'movement-documents' with its 'record of splits', and EROL's evidence kinds (census areas, evidence_kind; B1, B4, B5); (3) sections of the Marxists Internet Archive, by the census's part_of relation (B3, B4, B8). The aliases are the entity's name (both capitalizations, 'Anti-Revisionism' and 'anti-Revisionism'), its abbreviation EROL (case-sensitive) and its path on marxists.org. The Marxists Internet Archive is EROL's host and a distinct entity with its own census record and /non row (marxists-internet-archive); a sentence of the archive that names it enters only where it says something of the archive's sections, its holding or its terms, and a marxists.org URL given as the source of a quoted text is a reference line, not a claim. #1725, the census's anchor, is read at the passages that name the entity or its kind (archives of the left, organs, holders, splits). Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (the organ, the holder and the route of a losing position; the ending of a dispute; embrittlement; Marx as identity) to one of the three classes; a bare mention, a URL given as a source, a reference line or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Encyclopedia of Anti-Revisionism On-Line' (encyclopedia-of-anti-revisionism-on-line-aio-20261031, OBS-34ab72c3b78b, ADDR-8b351ecbebd3), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+ "hop_from": [
+  1725
+ ]
+}

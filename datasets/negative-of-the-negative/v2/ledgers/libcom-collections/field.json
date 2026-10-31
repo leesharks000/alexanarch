@@ -1,0 +1,1102 @@
+{
+ "row": "libcom-collections",
+ "address": "libcom.org Collections",
+ "addresses": [
+  "libcom.org Collections"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the card's snippet where the card's text is absent from the saved page; 45/45 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 /collections, the tag index, byte-identical to the census's home copy; B2 /collections/archives; B3 /collections?page=1; B4 /collections/blogs; B5 /collections/galleries?page=1; B6 /collections/galleries), all fetched; 'own_page', the census's own pages that T did not surface (B7 /about and B8 /about-us, both the site's not-found page, HTTP 404) and one own page outside the census record (B9, libcom.org: an introduction, the target of the site's 'About' link); 'wikipedia', the article 'Libcom.org' (B10). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1); what the site says it is (B9); history (B10); the tags (B1, B3); the Archives (B2); the Galleries (B5, B6); the Blogs (B4); traditions (B9); holder, independence and funding (B1, B9, B10); the About pages the census read (B7, B8); size and contributors (B9, B10); reception, the encyclopedia (B10). The census's kind, tags_*, load_more, footer, account, site_note, limit, comment, solidarity and news_and_letters evidence quotes restate B1, B7 and B8 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B7, B8 the census's saved copies; B10.wiki the raw wikitext; T1-libcom-org-collections-aio-20261031.txt the registry's transcript string)",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page libcom-library--home, byte-identical)",
+   "card": "Libcom.org — Collections | libcom.org",
+   "url": "https://libcom.org/collections",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B1.html",
+     "sha256": "c0657ee58d4cee2dc81140e9afb8a92a8e6d648ca9fd7433702ba77707bc9bac"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B1.txt",
+     "sha256": "94b4c27f884c9569e38ffad481062a0e99965fa4ac89eca67bb92ca20a68abc2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:45Z",
+    "http": 200,
+    "url": "https://libcom.org/collections",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B1.html",
+    "raw_sha256": "c0657ee58d4cee2dc81140e9afb8a92a8e6d648ca9fd7433702ba77707bc9bac",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "libcom-library--home",
+     "sha256": "c0657ee58d4cee2dc81140e9afb8a92a8e6d648ca9fd7433702ba77707bc9bac",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:52Z",
+     "url": "https://libcom.org/library (final https://libcom.org/collections)",
+     "agrees": true
+    }
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title and snippet: the snippet's tag run ('1926 general strike, 1934 Minneapolis Teamsters strike, 8-hour day, Abahlali baseMjondolo, accounts, Afghanistan war, Amadeo Bordiga, Ambalavaner S...') is the opening of the saved tag list verbatim. Byte-identical to the census's saved copy libcom-library--home (fetched by the census at https://libcom.org/library, which redirects to /collections), so carried once, as a card.",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "Collections | libcom.org",
+   "card_snippet": "Collections: 1926 general strike, 1934 Minneapolis Teamsters strike, 8-hour day, Abahlali baseMjondolo, accounts, Afghanistan war, Amadeo Bordiga, Ambalavaner S...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Libcom.org — Archives | libcom.org",
+   "url": "https://libcom.org/collections/archives",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B2.html",
+     "sha256": "7b21e1fdef1bfad17758ebc198c5fabb7d5a698d0c13a53581e88b5b17739b4c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B2.txt",
+     "sha256": "0b8ccd4c88cf3ff8a37875c8ccaf3ee3f309187e3aa172d05a9f40102492e423"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:46Z",
+    "http": 200,
+    "url": "https://libcom.org/collections/archives",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B2.html",
+    "raw_sha256": "7b21e1fdef1bfad17758ebc198c5fabb7d5a698d0c13a53581e88b5b17739b4c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the collections page's Archives tab (/collections/archives). The card's snippet sentence ('Libcom.org Archives: Anarchist, communist, libertarian socialist, and ultra-left publications …') is absent from the saved page, which carries the tab's list and no description; the snippet stands as the card's text for that claim (F8).",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "Archives | libcom.org",
+   "card_snippet": "Libcom.org Archives: Anarchist, communist, libertarian socialist, and ultra-left publications, journals, magazines, newspapers, bulletins, and pamphlets includi...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Libcom.org — Collections | libcom.org",
+   "url": "https://libcom.org/collections?page=1",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B3.html",
+     "sha256": "2aa13d9c0a699ba8feeef768c506f0abc2198f267fcdecf4dd632f90b8f33dc0"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B3.txt",
+     "sha256": "77ea6e381d7cd69c5f8a79424372f3d2e8b76e8cb612be28fa245cbc7f6e12ab"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:46Z",
+    "http": 200,
+    "url": "https://libcom.org/collections?page=1",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B3.html",
+    "raw_sha256": "2aa13d9c0a699ba8feeef768c506f0abc2198f267fcdecf4dd632f90b8f33dc0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Two cards carry the title 'Collections | libcom.org'. This one's snippet ends on 'Featured · All · Man spitting on decapitated head o...', the alt text of the image on the tag index's second page ('Man spitting on decapitated head of Stalin statue, Hungary 1956.', the Hungary 56 tag), found by fetching /collections?page=1; /collections/featured, /collections/tags and /collections/all answered 404. The alt text is in the saved HTML and absent from the extracted text, so F12 is checked against the snippet.",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "Collections | libcom.org",
+   "card_snippet": "Collections · Primary tabs. Tags · Archives · Authors · Reading guides · Blogs · Galleries · Secondary tabs. Featured · All · Man spitting on decapitated head o...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Libcom.org — Blogs",
+   "url": "https://libcom.org/collections/blogs",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B4.html",
+     "sha256": "765e751bb1d5227dcf4ba96563658b54ce386dbac4aa3cdb348a1c8faaa08f1e"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B4.txt",
+     "sha256": "621db32948e563045d7690f854aa820dba01ce01e3721a74e84eeef5186e2d44"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:47Z",
+    "http": 200,
+    "url": "https://libcom.org/collections/blogs",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B4.html",
+    "raw_sha256": "765e751bb1d5227dcf4ba96563658b54ce386dbac4aa3cdb348a1c8faaa08f1e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the collections page's Blogs tab (/collections/blogs; /blogs redirects to the home page). The card's snippet shows the series' part IV ('The Dislocation of Vendémiaire (IV): The Misrecognized Socialism …'); the saved page's first entry is another post of the series ('The Dislocation of Vendémiaire—A Commentary on the European Movement …'): the card shows an earlier state of the page (F16 from the snippet).",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "Blogs",
+   "card_snippet": "Primary tabs * 张皓翔 The Dislocation of Vendémiaire (IV): The Misrecognized Socialism and the Resisters Who Refuse Connection 【葡月的错位（四）被误认的社会主义与拒绝联结的抗争者】 【A comme...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Libcom.org — Galleries - Libcom.org",
+   "url": "https://libcom.org/collections/galleries?page=1",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B5.html",
+     "sha256": "10340500cf72b252c3195e2ba551c583f4f6e2b3d8d8d8c0bb3e2236a515c42f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B5.txt",
+     "sha256": "527b88fdfbf91d9a4d896014dbb4e68fb9c52f95bc92e14b2da4bece42b9b576"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:47Z",
+    "http": 200,
+    "url": "https://libcom.org/collections/galleries?page=1",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B5.html",
+    "raw_sha256": "10340500cf72b252c3195e2ba551c583f4f6e2b3d8d8d8c0bb3e2236a515c42f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B5.txt"
+    ]
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Title 'Galleries - Libcom.org'. The snippet ('An online archive of covers … Class War from the 1983-2017. Taken from various online sources… Publicity ima...') is the Class War entry followed by the next entry's opening ('Publicity images for the August 21, 2018, prison strike') on the galleries index's second page, found by fetching /collections/galleries?page=1; the item's own page (/article/class-war-covers-gallery, found by WebSearch) carries no 'Publicity' text and was not kept.",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 5
+    }
+   ],
+   "id": "B5",
+   "card_title": "Galleries - Libcom.org",
+   "card_snippet": "An online archive of covers (and some posters) of the British Anarchist newspaper Class War from the 1983-2017. Taken from various online sources… Publicity ima...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Libcom.org — Galleries",
+   "url": "https://libcom.org/collections/galleries",
+   "kind": "Overview card (a page of libcom.org's collections index)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B6.html",
+     "sha256": "6012408612e16a7adfd55bc4cd216e2c093c40053754fcebc64a64b00de4aebf"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B6.txt",
+     "sha256": "a4dc2e7648a876e563a3702887c85f52f12244cd0c5ced618db718829a4aff74"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:47Z",
+    "http": 200,
+    "url": "https://libcom.org/collections/galleries",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B6.html",
+    "raw_sha256": "6012408612e16a7adfd55bc4cd216e2c093c40053754fcebc64a64b00de4aebf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "no (the page names the site, libcom.org, and no operator)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Title 'Galleries'. URL from the collections page's Galleries tab (/collections/galleries). The snippet opens the list on 'Up Against The Wall Motherfucker gallery'; the saved page lists it seventeenth, after newer items: the card shows an earlier state of the page.",
+   "surfaced_by_T": [
+    {
+     "slug": "libcom-org-collections-aio-20261031",
+     "card": 6
+    }
+   ],
+   "id": "B6",
+   "card_title": "Galleries",
+   "card_snippet": "Primary tabs * Up Against The Wall Motherfucker gallery Posters, flyers etc from Up Against The Wall Motherfucker and related initiatives. Taken from various on...",
+   "card_note": null
+  },
+  {
+   "origin": "own_page",
+   "role": "census own page (HTTP 404)",
+   "card": "libcom.org — Whoops, something broke (https://libcom.org/about)",
+   "url": "https://libcom.org/about",
+   "kind": "the site's not-found page, served at an About address the census tried",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B7.html",
+     "sha256": "07ab80424004e61d1a6af3bb83675bd5c14510850394efc2ae2f7e5516cd626b"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B7.txt",
+     "sha256": "ac75c25e24eb8110e63b3db57d030c76868e09aa87b8172fd1aefdde742809b9"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "libcom-library--about",
+     "sha256": "07ab80424004e61d1a6af3bb83675bd5c14510850394efc2ae2f7e5516cd626b",
+     "read": "2026-10-31",
+     "http": "404",
+     "fetched": "2026-10-31T21:27:52Z"
+    },
+    "note": "copied from /home/claude/fleet/maryleelabor-org/data/left-census/sources/libcom-library--about.html.gz and .txt; sha256 matches the manifest; not refetched"
+   },
+   "names_operator": "partly ('Submitted by libcom on October 14, 2006': the account 'libcom')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's saved copy (gunzipped) of libcom.org/about, which answered HTTP 404: the site's not-found page ('Whoops, something broke'), with the page's own note, a comment and related content. The census lists it among its unread sources; its text is the not-found page's and is ledgered as such (F23–F25). Not surfaced by T.",
+   "surfaced_by_T": [],
+   "id": "B7"
+  },
+  {
+   "origin": "own_page",
+   "role": "census own page (HTTP 404)",
+   "card": "libcom.org — Whoops, something broke (https://libcom.org/about-us)",
+   "url": "https://libcom.org/about-us",
+   "kind": "the site's not-found page, served at an About address the census tried",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B8.html",
+     "sha256": "5763a6366eb70344e0de3aff23efc9dd0ec39573ee41fa0cf05b80e28033a47a"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B8.txt",
+     "sha256": "45fa032ae5df480231753f844d7578b278aee089f316c9b86f86066a854ac67d"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "libcom-library--about2",
+     "sha256": "5763a6366eb70344e0de3aff23efc9dd0ec39573ee41fa0cf05b80e28033a47a",
+     "read": "2026-10-31",
+     "http": "404",
+     "fetched": "2026-10-31T21:30:38Z"
+    },
+    "note": "copied from /home/claude/fleet/maryleelabor-org/data/left-census/sources/libcom-library--about2.html.gz and .txt; sha256 matches the manifest; not refetched"
+   },
+   "names_operator": "partly ('Submitted by libcom on October 14, 2006': the account 'libcom')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's saved copy (gunzipped) of libcom.org/about-us, HTTP 404: the same not-found page with other related content (F26). Not surfaced by T.",
+   "surfaced_by_T": [],
+   "id": "B8"
+  },
+  {
+   "origin": "own_page",
+   "role": "own page outside the census record: the site's About page",
+   "card": "libcom.org — libcom.org: an introduction",
+   "url": "https://libcom.org/article/libcomorg-introduction",
+   "kind": "the site's introduction, the target of the 'About' link in its main navigation",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B9.html",
+     "sha256": "3a43fb0b837d51f536b10c21e49456af3b59afc08e28984247d1be97e8b21f9a"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B9.txt",
+     "sha256": "bec0fa45bc4451c4e868a9870ee0503d40700ad1d7b68cf1749674f3e32f00d5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:47Z",
+    "http": 200,
+    "url": "https://libcom.org/article/libcomorg-introduction",
+    "raw": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B9.html",
+    "raw_sha256": "3a43fb0b837d51f536b10c21e49456af3b59afc08e28984247d1be97e8b21f9a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B9.txt"
+    ]
+   },
+   "names_operator": "yes ('Author libcom.org'; 'our volunteer administrators')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Not cited by the census record. The 'About' item of the site's main navigation on every saved page links to /article/libcomorg-introduction (in B1.html: href=\"/article/libcomorg-introduction\" … 'About'); the census tried /about and /about-us, both 404. Admitted as an own page under the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'), kept apart in field_by_origin as own_page_uncited. Not surfaced by T.",
+   "surfaced_by_T": [],
+   "id": "B9",
+   "cited_by_census": false
+  },
+  {
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (on the site; no article on its Collections)",
+   "card": "Wikipedia — Libcom.org",
+   "url": "https://en.wikipedia.org/wiki/Libcom.org",
+   "kind": "Wikipedia article",
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B10.wiki",
+     "sha256": "c3fb018d4f5f9486864ff8ecf01cc351f7f8dba9f368b536abd82c3b73f4adef"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B10.html",
+     "sha256": "6cf82220243abf0eff9a50cf800c0f84c0243a4fc24f3e740e1f0ff34de303cf"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B10.txt",
+     "sha256": "a914bac470f478ccd899d0e26f9e7d6d72aa6a057294516b37e3b8e6785975c6"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:48Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Libcom.org&action=raw&redirect=no",
+      "http": 200,
+      "result": "wikitext; no redirect"
+     },
+     {
+      "at": "2026-10-31T22:59:48Z",
+      "url": "https://en.wikipedia.org/wiki/Libcom.org",
+      "http": 200,
+      "result": "rendered page"
+     }
+    ],
+    "raw_sha256": "6cf82220243abf0eff9a50cf800c0f84c0243a4fc24f3e740e1f0ff34de303cf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/libcom-collections-20261031/B10.txt"
+    ]
+   },
+   "names_operator": "partly ('founded in 2005 by editors in the United States and the United Kingdom'; 'The enrager.net web collective')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "An article on the site, a stub (digital-library-stub, Anarchism-stub), with no section on the Collections. Title 'Libcom.org', no redirect. Categories: Anarchist websites; Discipline-oriented digital libraries; Internet properties established in 2003; Online archives; Political Internet forums.",
+   "surfaced_by_T": [],
+   "id": "B10"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Primary tabs",
+   "quote": "Collections Primary tabs Tags Archives Authors Reading guides Blogs Galleries",
+   "claim": "the collections index is organised under six tabs: Tags, Archives, Authors, Reading guides, Blogs and Galleries",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the collections index of libcom.org",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Tags: Featured (strikes)",
+   "quote": "1926 general strike 1934 Minneapolis Teamsters strike 8-hour day",
+   "claim": "strikes stand among the featured tags: the 1926 general strike, the 1934 Minneapolis Teamsters strike, the 8-hour day",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Tags: Featured (movements and organisations)",
+   "quote": "Abahlali baseMjondolo … Anti Fascist Action (AFA) … civil rights movement … Confederación Nacional del Trabajo (CNT) … Flint sit-down strike France 1968",
+   "claim": "movements and organisations among the featured tags: Abahlali baseMjondolo, Anti Fascist Action, the civil rights movement, the CNT, the Flint sit-down strike, France 1968",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Tags: Featured (writers)",
+   "quote": "Amadeo Bordiga … Anton Pannekoek Antonio Negri … CLR James Colin Ward … David Graeber … Emma Goldman … Gilles Dauvé … Guy Debord",
+   "claim": "writers among the featured tags: Amadeo Bordiga, Anton Pannekoek, Antonio Negri, CLR James, Colin Ward, David Graeber, Emma Goldman, Gilles Dauvé, Guy Debord",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Tags: Featured (recent)",
+   "quote": "Black Lives Matter movement … Grenfell fire",
+   "claim": "recent events among the tags: the Black Lives Matter movement, the Grenfell fire",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Secondary tabs; end of list",
+   "quote": "Secondary tabs Featured All … housework Load More",
+   "claim": "the tag list has Featured and All views and is paged ('Load More')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "User account menu; Footer menu",
+   "quote": "Log in / Register … Donate Help out Other languages Site notes",
+   "claim": "a user account (log in or register), with Donate, Help out, Other languages and Site notes in the footer",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holder, independence and funding",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 94b4c27f884c9569…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (the sentence is not in the saved page)",
+   "quote": "Libcom.org Archives: Anarchist, communist, libertarian socialist, and ultra-left publications, journals, magazines, newspapers, bulletins, and pamphlets includi...",
+   "claim": "the Archives tab holds anarchist, communist, libertarian socialist and ultra-left publications, journals, magazines, newspapers, bulletins and pamphlets",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Archives: journals, papers and pamphlets of the left",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card snippet (as rendered on the transcript's rail)"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archives list",
+   "quote": "Aufheben … Black Flag magazine … Endnotes journal … Internationale Situationniste journal … La revista Mujeres Libres … Marx and Engels collected works … Midnight Notes Journal",
+   "claim": "the archives listed include Aufheben, Black Flag, Endnotes, Internationale Situationniste, Mujeres Libres, Midnight Notes and the Marx and Engels collected works",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Archives: journals, papers and pamphlets of the left",
+   "date": "undated (the list as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0b8ccd4c88cf3ff8…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archives list",
+   "quote": "Intercom: The Ultra-Left Review International Council Correspondence - United Workers Party of America … Kronstadt Izvestia",
+   "claim": "the archives include council-communist and ultra-left journals (International Council Correspondence, Intercom: The Ultra-Left Review) and Kronstadt Izvestia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Archives: journals, papers and pamphlets of the left",
+   "date": "undated (the list as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0b8ccd4c88cf3ff8…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archives list",
+   "quote": "Direct Action: Magazine of the Solidarity Federation (1990s-2000s) … Fighting Talk magazine - Anti Fascist Action … Kala Tara: paper of the Asian Youth Movement Bradford … Libertarian Communist, paper of the Libertarian Communist Group",
+   "claim": "the archives include the papers of organisations: the Solidarity Federation, Anti Fascist Action, the Asian Youth Movement Bradford, the Libertarian Communist Group",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Archives: journals, papers and pamphlets of the left",
+   "date": "undated (the list as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 0b8ccd4c88cf3ff8…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (image description)",
+   "quote": "Featured · All · Man spitting on decapitated head o...",
+   "claim": "the second page of the tag index opens on an image of a man spitting on a decapitated head (the page's Hungary 56 tag)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card snippet (as rendered on the transcript's rail)"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Tags, page 2",
+   "quote": "Hungary 56 … Kommunistische Arbeiter-Partei Deutschlands (KAPD) … League of Revolutionary Black Workers … Maurice Brinton … Paul Mattick … Situationist International … Solidarity … wildcat strikes",
+   "claim": "the tag index continues with Hungary 56, the KAPD, the League of Revolutionary Black Workers, Maurice Brinton, Paul Mattick, the Situationist International, Solidarity and wildcat strikes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tags: strikes, movements, organisations and writers",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 77ea6e381d7cd69c…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Blogs list",
+   "quote": "张皓翔 The Dislocation of Vendémiaire—A Commentary on the European Movement Centered on France from September to October 2026",
+   "claim": "the Blogs tab lists contributors' blogs with their latest posts, the first a commentary on a movement in France of September to October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Blogs: contributors' writing",
+   "date": "2026-10 (the post's subject)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 621db32948e56304…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Blogs list",
+   "quote": "Fozzie Radical history and culture, by a middle-aged London-based nerd. Fozzie's niche wantlist of things to add to Libcom … Reddebrek Providing analysis and criticism (mostly criticism).",
+   "claim": "blogs are written by named contributors under their own descriptions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Blogs: contributors' writing",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 621db32948e56304…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "张皓翔 The Dislocation of Vendémiaire (IV): The Misrecognized Socialism and the Resisters Who Refuse Connection",
+   "claim": "the card shows an earlier post in the same blog series, part IV",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Blogs: contributors' writing",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card snippet (as rendered on the transcript's rail)"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Galleries, page 2",
+   "quote": "Class War covers gallery An online archive of covers (and some posters) of the British Anarchist newspaper Class War from the 1983-2017. Taken from various online sources…",
+   "claim": "a gallery of covers of the British anarchist newspaper Class War, 1983–2017, taken from various online sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 527b88fdfbf91d9a…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Galleries, page 2",
+   "quote": "Archive of Tatty the Rat, a short-lived comic strip that ran in the Anarchist Communist Federation's paper Liberation … Western Clarion (1903-1925) was a newspaper of the Socialist Party of Canada. … Socialist Labor Party pamphlets cover images",
+   "claim": "galleries keep images from organisations' papers and pamphlets: the Anarchist Communist Federation's Liberation, the Socialist Party of Canada's Western Clarion, the Socialist Labor Party",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 527b88fdfbf91d9a…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Galleries, page 2",
+   "quote": "Photo gallery: warehouse workers' strike spreads across Italy … Port Adelaide struggles, 1928-1931",
+   "claim": "galleries document strikes: Italian warehouse workers, Port Adelaide 1928–1931",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 527b88fdfbf91d9a…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Galleries",
+   "quote": "Up Against The Wall Motherfucker gallery Posters, flyers etc from Up Against The Wall Motherfucker and related initiatives. Taken from various online sources.",
+   "claim": "a gallery of posters and flyers from Up Against The Wall Motherfucker, taken from various online sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a4dc2e7648a876e5…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Galleries",
+   "quote": "Black Mask gallery A selection of covers, artwork and photographs from the New York City \"street gang with an analysis\" Black Mask.",
+   "claim": "a gallery of covers, artwork and photographs from Black Mask, the New York 'street gang with an analysis'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a4dc2e7648a876e5…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Galleries",
+   "quote": "Miscellaneous historical photographs Various photographs of class struggle and social movements around the world. UNPUBLISHED by admin",
+   "claim": "an item 'UNPUBLISHED by admin' in the galleries list",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Galleries: posters, covers and photographs",
+   "date": "undated (the index as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 a4dc2e7648a876e5…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "page body (HTTP 404)",
+   "quote": "Whoops, something broke Sorry! Looks like this page doesn't live here any more.",
+   "claim": "the address libcom.org/about serves the site's not-found page (HTTP 404)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the About pages the census read: not found",
+   "date": "2026-10-31 (as fetched by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ac75c25e24eb8110…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "page body (HTTP 404)",
+   "quote": "Submitted by libcom on October 14, 2006 libcom.org has been running for several years on a lot of different software, so it's likely the page you want exists, but doesn't live here any more.",
+   "claim": "the site's own limit: it has run on several kinds of software, so pages exist that no longer live at their old address",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the About pages the census read: not found",
+   "date": "2006-10-14 (the not-found page's own date)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ac75c25e24eb8110…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Related content",
+   "quote": "The crisis of modern society - Cornelius Castoriadis A talk given by 'Paul Cardan' (Cornelius Castoriadis). Issued as a pamphlet by Solidarity (London) a month later in June 1965.",
+   "claim": "the related content carries a Solidarity (London) pamphlet of 1965 by Cornelius Castoriadis as 'Paul Cardan'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the About pages the census read: not found",
+   "date": "2026-10-31 (as fetched by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ac75c25e24eb8110…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Related content (HTTP 404 page)",
+   "quote": "The gulag uprising at Vorkuta, 1953 An article, edited from News and Letters, outlining the uprising at the Gulag in Vorkuta in 1953.",
+   "claim": "the not-found page at libcom.org/about-us carries an article edited from News and Letters on the Vorkuta uprising of 1953",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the About pages the census read: not found",
+   "date": "2026-10-31 (as fetched by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 45fa032ae5df4802…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "lede",
+   "quote": "libcom.org is a resource for all people who wish to fight to improve their lives, their communities and their working conditions. We want to discuss, learn from successes and failures of the past and develop strategies to increase the power we, as ordinary people, have over our own lives.",
+   "claim": "libcom.org defines itself as a resource for people who fight to improve their lives, communities and working conditions, to learn from the successes and failures of the past",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "libcom.org: what the site says it is",
+   "date": "2006-09-11 (submitted by libcom)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "byline",
+   "quote": "Author libcom.org Submitted by libcom on September 11, 2006",
+   "claim": "the introduction is authored by libcom.org and dated 11 September 2006",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "holder, independence and funding",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The problem, last paragraph",
+   "quote": "Every day, ordinary people are fighting back. Workers organise , strike , occupy and revolt , standing up for human needs in an inhuman world. This site is for them. You. Us.",
+   "claim": "the site is for workers who organise, strike, occupy and revolt",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "libcom.org: what the site says it is",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The ideas ¶1",
+   "quote": "The name libcom is an abbreviation of \"libertarian communism\", the political idea we identify with.",
+   "claim": "the name abbreviates 'libertarian communism', the political idea it identifies with",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the traditions it identifies with",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The ideas ¶2",
+   "quote": "We are also influenced by certain specific theoretical and practical traditions, such as anarchist-communism , anarcho-syndicalism , Autonomist Marxism , black liberation , council communism , feminism , ultra-left Marxism , and others.",
+   "claim": "the traditions it names as influences: anarchist-communism, anarcho-syndicalism, Autonomist Marxism, black liberation, council communism, feminism, ultra-left Marxism",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the traditions it identifies with",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The ideas ¶3",
+   "quote": "We have sympathies with writers and organisations including Karl Marx , CLR James , Rosa Luxemburg , Maurice Brinton , Mariarosa dalla Costa , Ambalavaner Sivanandan , Martin Glaberman , Anton Pannekoek",
+   "claim": "the writers it names as sympathies, Marx, CLR James, Luxemburg, Brinton, Pannekoek among them",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the traditions it identifies with",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The ideas ¶4",
+   "quote": "However, we recognise the limitations of applying these ideas and organisational forms to contemporary society.",
+   "claim": "its stated limit: the ideas and organisational forms it draws on have limits when applied to contemporary society",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the traditions it identifies with",
+   "date": "2006-09-11",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The site",
+   "quote": "The site contains news and analysis of workers' struggles, discussions and a constantly growing archive of over 20,000 articles contributed by our 10,000+ users ranging from history and biographies to theoretical texts, complete books and pamphlets.",
+   "claim": "an archive of over 20,000 articles contributed by over 10,000 users, from history and biographies to theory, books and pamphlets",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "size and contributors",
+   "date": "undated (the page as fetched 2026-10-31; submitted 2006-09-11)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The site",
+   "quote": "We have incorporated several other online archives over the years, and in addition have hundreds of exclusive texts written or scanned by or for us.",
+   "claim": "it has incorporated other online archives and holds hundreds of texts written or scanned for it",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and contributors",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "The site",
+   "quote": "We are completely independent of all trade unions and political parties; the site is funded entirely by subs from our volunteer administrators and donations from users .",
+   "claim": "independent of all trade unions and parties; funded by its volunteer administrators' subs and users' donations",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "holder, independence and funding",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 bec0fa45bc4451c4…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s1",
+   "quote": "Libcom.org is an online platform featuring a variety of libertarian communist essays, blog posts, and archives, primarily in English.",
+   "claim": "Wikipedia: an online platform of libertarian communist essays, blog posts and archives, primarily in English",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s2",
+   "quote": "It was founded in 2005 by editors in the United States and the United Kingdom .",
+   "claim": "Wikipedia: founded in 2005 by editors in the United States and the United Kingdom",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "history: enrager.net to libcom.org",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised",
+   "marks": {
+    "internally_inconsistent": "Wikipedia states the founding two ways: lead s2 'founded in 2005' (F38) and History ¶1 'launched in 2003 originally as enrager.net … changed its name in 2005' (F41); both carried"
+   }
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s3",
+   "quote": "Libcom.org also has a forum and social media features including the ability to comment on post and upload original articles.",
+   "claim": "Wikipedia: a forum, comments and uploading of original articles (Croeser 2018)",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s4",
+   "quote": "In contrast with traditional archives, anarchistic archival practices embrace \"use as preservation\", making use of digital technology to host niche political material in online repositories like Libcom.org.",
+   "claim": "Wikipedia, after Cornell 2019: anarchist archival practice is 'use as preservation', with online repositories such as Libcom.org hosting niche political material",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched; Cornell 2019)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History ¶1 s1",
+   "quote": "The site was launched in 2003 originally as enrager.net , named for the enragés of the French Revolution , but changed its name in 2005 to the present name libcom.org, short for libertarian communism.",
+   "claim": "launched in 2003 as enrager.net, after the enragés, renamed libcom.org in 2005",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "history: enrager.net to libcom.org",
+   "date": "2026-10-31 (as fetched; the 2013 anniversary post)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised",
+   "marks": {
+    "internally_inconsistent": "see F38: the same article gives 2005 as the founding and 2003 as the launch under the earlier name; both carried"
+   }
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History ¶1 s2",
+   "quote": "The enrager.net web collective was a splinter of the London group inside the Anarchist Youth Network, an organization founded in 2002 by two members of the Anarchist Federation .",
+   "claim": "the enrager.net collective split from the London group of the Anarchist Youth Network",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "history: enrager.net to libcom.org",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "infobox: Content license",
+   "quote": "Creative Commons BY-NC-SA 2.5",
+   "claim": "Wikipedia's infobox gives the content licence as Creative Commons BY-NC-SA 2.5, citing the site's legal notes (accessed 2021-04-11)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holder, independence and funding",
+   "date": "2026-10-31 (as fetched; reference accessed 2021-04-11)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "reference 1 (quote from the 2013 anniversary post)",
+   "quote": "Since then, we believe it has grown to be the world's most popular English-language anarchist/libertarian socialist website, with over 15,000 texts, over 6000 contributing users",
+   "claim": "Wikipedia's reference quotes the site's 2013 post: over 15,000 texts and over 6,000 contributing users",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and contributors",
+   "date": "2013-09-26 (the post quoted)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "the article as fetched",
+   "quote": "Online platform for libertarian communism writing",
+   "claim": "Wikipedia has an article on libcom.org (short description 'Online platform for libertarian communism writing'), with no section on its Collections",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 a914bac470f478cc…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Libcom.org — Collections | libcom.org",
+  "B2": "Libcom.org — Archives | libcom.org",
+  "B3": "Libcom.org — Collections | libcom.org",
+  "B4": "Libcom.org — Blogs",
+  "B5": "Libcom.org — Galleries - Libcom.org",
+  "B6": "Libcom.org — Galleries",
+  "B7": "libcom.org — Whoops, something broke (https://libcom.org/about)",
+  "B8": "libcom.org — Whoops, something broke (https://libcom.org/about-us)",
+  "B9": "libcom.org — libcom.org: an introduction",
+  "B10": "Wikipedia — Libcom.org"
+ }
+}

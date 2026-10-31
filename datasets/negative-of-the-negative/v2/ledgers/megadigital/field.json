@@ -1,0 +1,1000 @@
+{
+ "row": "megadigital",
+ "address": "MEGAdigital",
+ "addresses": [
+  "MEGAdigital"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); 45/45 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart, with the homonym's cards recorded apart (BRIEF-NEW-ROW-LEFT §6): 'card (homonym: the agency)', all seven cards on T's rail (B1 TikTok, B2 Trustpilot, B3 Instagram, B4 Crunchbase, B5 and B6 YouTube, B7 Clutch), the agency Mega Digital JSC's, recorded with their sense and not ledgered: no card concerns the edition; 'own_page', the census's two own pages, the MEGA project page (B8) and MEGAdigital's home page (B9), not surfaced by T; 'wikipedia', the article 'Marx-Engels-Gesamtausgabe' (B10), with the record that the name MEGAdigital has no article or redirect and that 'MEGA' redirects to the disambiguation 'Mega'. The census read no third-party source for the entity: no 'census_third_party' origin.",
+ "lineage_note": "Lineages: what it is (B8, B9, B10); the holder (B8, B9, B10); the history (B8, B10); custody and the originals (B9, B10); the method (B10); divisions and what is online (B8, B9, B10); volumes and pace (B8, B10); what the edition found (B10); access, licence and further materials (B9); reception, the encyclopedia and the name (B10). The census's kind, operator, record_object, holder, method, count, holdings and stated_limits restate B8 (one lineage each with the page, the page keeping the earliest date; recorded in the archive ledger as 'restates').",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/megadigital-20261031/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B8 the census copy; B9-raw.gz the census copy of the home page, B9.html its decoded body; B2-403.html and B3-login.html the refused card fetches; W1–W6 and W-*.wiki the raw Wikipedia responses; T1-megadigital-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 1 (the homonym's)",
+   "card": "TikTok — MEGA DIGITAL: TikTok Marketing Partners",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its TikTok partner-directory profile (agency, Vietnam)",
+   "snippet": "profile. MEGA DIGITAL. Contact. Websitehttps://megadigital.ai. Partner Category. Agency. Countries. Vietnam. Languages. English, Vietnamese. MEGA DIGITAL. Mega ...",
+   "files": {},
+   "fetched": "unreachable: no URL found for the TikTok partner-directory profile (WebSearch on the card's title and site returned the agency's own pages, megadigital.ai/en/blog/tiktok-marketing-partner-mega-digital/ among them, and no partners.tiktok.com page); not fetched; snippet only",
+   "surfaced_by_T": [
+    "card 1"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B2",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 2 (the homonym's)",
+   "card": "Trustpilot — Mega Digital Reviews | Read Customer Service Reviews of megadigital.ai",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its Trustpilot reviews page for megadigital.ai",
+   "snippet": "Advertising Agency also in Marketing Agency Media and Marketing Agency Online Marketing Agency Social Media Agency Written by the company Mega Digital is a Digi...",
+   "files": {
+    "B2-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B2-403.html",
+     "sha256": "92d97ed45d6cc267c657b864c4deee1c2d896cda361adc660bc16538a75700f2"
+    }
+   },
+   "fetched": "unreachable: URL by WebSearch (ie.trustpilot.com/review/megadigital.ai); https://www.trustpilot.com/review/megadigital.ai fetched with the census agent string at 2026-10-31T23:00:08Z, HTTP 403, a bot check ('Verifying Connection', B2-403.html); not retried with another agent string; snippet only",
+   "surfaced_by_T": [
+    "card 2"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B3",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 3 (the homonym's)",
+   "card": "Instagram·megadigitaljsc — Megadigital (@megadigitaljsc) · Hanoi",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its Instagram account, Hanoi, with event listings",
+   "snippet": "Events: Affiliate World Europe 2026 (Budapest), Affiliate World Bangkok (Booth B67), Gaming Coffee Talk (Hanoi, IAA to IAP transition), TikTok Apps Summit 2025,",
+   "files": {
+    "B3-login.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B3-login.html",
+     "sha256": "a62c0771f034c06aaedb8680ff57bf714c520ef6fd6f42c2e8e36d1ee02c50b6"
+    }
+   },
+   "fetched": "unreachable: URL from the card's handle (https://www.instagram.com/megadigitaljsc/), fetched with the census agent string at 2026-10-31T23:00:08Z, HTTP 200 after a redirect to the login page (B3-login.html); a login wall, not retried; snippet only",
+   "surfaced_by_T": [
+    "card 3"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B4",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 4 (the homonym's)",
+   "card": "Crunchbase — Mega Digital - Crunchbase Company Profile & Funding",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its Crunchbase company profile (legal name Mega Digital JSC; founder Lâm Nguyễn Hoàng)",
+   "snippet": "Details. Legal Name Mega Digital JSC. Also Known As Mega Digital, Mega Digital JSC. Operating Status Active. Company Type For Profit. Founders Lâm Nguyễn Hoàng.",
+   "files": {},
+   "fetched": "unreachable: no Crunchbase URL found by WebSearch on the card's title and site (results were third-party company directories); not fetched; snippet only",
+   "surfaced_by_T": [
+    "card 4"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B5",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 5 (the homonym's)",
+   "card": "YouTube — Mega Digital",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its YouTube channel (marketing tips)",
+   "snippet": "Description Welcome to the official Mega Digital YouTube channel. Your new home for expert marketing tips and templates to upgrade your digital marketing strate...",
+   "files": {},
+   "fetched": "video card (the agency's YouTube channel): title and snippet only; not fetched",
+   "surfaced_by_T": [
+    "card 5"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B6",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 6 (the homonym's)",
+   "card": "YouTube·Mega Digital — INTRODUCING MEGA DIGITAL AGENCY - WE ARE THE CHANGEMAKER",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its agency introduction video",
+   "snippet": null,
+   "files": {},
+   "fetched": "video card (3:25, channel 'Mega Digital'): title only (no snippet on the rail); not fetched",
+   "surfaced_by_T": [
+    "card 6"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B7",
+   "origin": "card (homonym: the agency)",
+   "role": "Overview card 7 (the homonym's)",
+   "card": "Clutch - The Leading Marketplace for Finding Business Services — Mega Digital JSC Reviews (2), Pricing, Services & Verified Ratings - Clutch",
+   "url": null,
+   "kind": "Overview card of the homonym, Mega Digital JSC (megadigital.ai), a digital marketing agency in Vietnam",
+   "sense": "the agency: its Clutch reviews and pricing profile (TikTok and Google partner in APAC)",
+   "snippet": "Mega Digital - The leading partner of TikTok & Google in APAC based in Vietnam, provides cutting-edge Digital Marketing solutions from Pay-per-clicks strategies...",
+   "files": {},
+   "fetched": "unreachable: no Clutch profile URL found by WebSearch on the card's title and site; not fetched; snippet only",
+   "surfaced_by_T": [
+    "card 7"
+   ],
+   "names_operator": "no (the entity's operator, the IMES or the BBAW, is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Recorded as the homonym's card with its sense (BRIEF-NEW-ROW-LEFT §6); not ledgered: no card concerns the edition."
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the entity's own page (the MEGA project page at the BBAW, which carries the MEGAdigital block)",
+   "card": "Berlin-Brandenburgische Akademie der Wissenschaften — de - Marx-Engels-Gesamtausgabe (MEGA)",
+   "url": "https://mega.bbaw.de/",
+   "kind": "own page (the MEGA project page; final URL https://mega.bbaw.de/de)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B8.html",
+     "sha256": "968047cb9ba5d5b0540c84bce779b329509aa88835770b5fdea97eb708e821bf"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B8.txt",
+     "sha256": "8b129a90e386b8d086c0425ac667cb47b5913fcadb58086d049f38085b1ca800"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "mega-digital--mega",
+    "read": "2026-10-31T21:27:50Z",
+    "http": "200",
+    "url": "https://mega.bbaw.de/",
+    "final_url": "https://mega.bbaw.de/de",
+    "raw": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B8.html",
+    "raw_sha256": "968047cb9ba5d5b0540c84bce779b329509aa88835770b5fdea97eb708e821bf",
+    "census_sha256": "968047cb9ba5d5b0540c84bce779b329509aa88835770b5fdea97eb708e821bf",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/mega-digital--mega.html.gz (gunzipped) and mega-digital--mega.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B8.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Berlin-Brandenburgische Akademie der Wissenschaften'; 'Akademienvorhaben'; 'IMES' in the menu)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (sha256 matches the manifest), so it was copied and not refetched."
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the entity's own page (the MEGAdigital home page)",
+   "card": "MEGAdigital — MEGAdigital. Online-Angebot der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels",
+   "url": "https://megadigital.bbaw.de/",
+   "kind": "own page (MEGAdigital's home page)",
+   "files": {
+    "B9-raw.gz": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9-raw.gz",
+     "sha256": "bf0a2f02e68a7e9b1c34fd53c0f2ad37414d0a36c0f5a093a7ee2ad9cd3292aa"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9.html",
+     "sha256": "6b7f9c2456e86aedf3100574433f8cc3aae01ef80548674effc13779f364e5e6"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9.txt",
+     "sha256": "75ddb4e13392930c83f07df691c4bf6c85ed99a635f3a437bd5e4e554bdae810"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "mega-digital--home",
+    "read": "2026-10-31T21:27:48Z",
+    "http": "200",
+    "url": "https://megadigital.bbaw.de/",
+    "final_url": "https://megadigital.bbaw.de/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9-raw.gz",
+    "raw_sha256": "bf0a2f02e68a7e9b1c34fd53c0f2ad37414d0a36c0f5a093a7ee2ad9cd3292aa",
+    "census_sha256": "bf0a2f02e68a7e9b1c34fd53c0f2ad37414d0a36c0f5a093a7ee2ad9cd3292aa",
+    "agrees": true,
+    "decoded": {
+     "file": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9.html",
+     "sha256": "6b7f9c2456e86aedf3100574433f8cc3aae01ef80548674effc13779f364e5e6",
+     "how": "the census's saved bytes (gunzipped once from the .html.gz, sha256 matching the manifest) are themselves a gzip stream, the HTTP body saved without decoding its Content-Encoding; decoded once more with gzip, offline, and the text extracted with scripts and styles stripped (B9.txt). No refetch."
+    },
+    "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/mega-digital--home.html.gz (gunzipped once: B9-raw.gz; twice: B9.html)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B9.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Herausgegeben von der Internationalen Marx-Engels-Stiftung (IMES)'; 'Das Akademienvorhaben „Marx-Engels-Gesamtausgabe“'; TELOTA)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling; not surfaced by T. The census lists this page as unread ('the saved .txt is undecoded compressed bytes'); its saved .html.gz holds the page whole under a second gzip layer, and the page is read here from that saved copy."
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article: 'Marx-Engels-Gesamtausgabe' (the name MEGAdigital has no article and no redirect)",
+   "card": "Wikipedia — Marx-Engels-Gesamtausgabe (no article or redirect for MEGAdigital)",
+   "url": "https://en.wikipedia.org/wiki/Marx-Engels-Gesamtausgabe",
+   "kind": "Wikipedia article (wikitext and rendered page), with the 'Mega' disambiguation",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B10.html",
+     "sha256": "abc32bae18af842f5dbe5a6654b5943d32607aa38b3034435a821f891e42f4fb"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B10.txt",
+     "sha256": "2b670ec827d4a92f9c89ecbbcf33af97e38418691c7d9281617ab37411e393f5"
+    },
+    "W5.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W5.wiki",
+     "sha256": "9183a8f3dadb26833eb2cfa078a1808fa40af977d0cdddb103aa97e5718a714b"
+    },
+    "W1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W1.wiki",
+     "sha256": "6c3f3318459dd05aba2503103a2bfdb58d89f2057f590d1d495d189ea9c26c21"
+    },
+    "W2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W2.wiki",
+     "sha256": "55508b9c7a9d17da894ac683138f9130e8ce5a52c590427723f0a38cb4416ed3"
+    },
+    "W3.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W3.wiki",
+     "sha256": "43cdf51e798435f190195a5665f63dc2b35f121c44a5bfb89c5f56861111821c"
+    },
+    "W4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W4.wiki",
+     "sha256": "1c9363c8072d3396d4f8c453e859e981bca10804459a0045fa0e400bd1864379"
+    },
+    "W6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W6.wiki",
+     "sha256": "f52711fd9fc5dd2b09bec9559092e4435eefdbea36fc1ac99db6bb4bfb72708b"
+    },
+    "W-MEGA.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W-MEGA.wiki",
+     "sha256": "a3e008a0610f7daf58a1fe959c489c64f50f4c4cb01b4341f8b70923875361a7"
+    },
+    "W-Mega_(disambiguation).wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W-Mega_(disambiguation).wiki",
+     "sha256": "fd1420874359c4f3fcf477e300f992a1f42b37d18ec5813e3fb70ad78a3e88e1"
+    },
+    "W-Mega.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W-Mega.wiki",
+     "sha256": "fca135a4091285d25716a707363a3054ca13126ec9eb7c0be99846ccea90fc11"
+    },
+    "W-MEGA2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W-MEGA2.wiki",
+     "sha256": "c7023649ae648a7630a465bff92470a894d0c769e60cbfff6c4de618ccd29231"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw_http": {
+     "MEGAdigital": "404 at 2026-10-31T22:59:09Z (W1.wiki)",
+     "MEGA_digital": "404 at 2026-10-31T22:59:10Z (W2.wiki)",
+     "Mega_Digital": "404 at 2026-10-31T22:59:11Z (W3.wiki)",
+     "MEGA_Digital": "404 at 2026-10-31T22:59:13Z (W4.wiki)",
+     "Marx-Engels-Gesamtausgabe": "200 at 2026-10-31T22:59:14Z (W5.wiki, 19,302 bytes)",
+     "Marx–Engels-Gesamtausgabe (en dash)": "404 at 2026-10-31T22:59:16Z (W6.wiki)",
+     "Mega_(disambiguation)": "200 at 2026-10-31T22:59:27Z, '#REDIRECT [[Mega]]'",
+     "MEGA": "200 at 2026-10-31T22:59:29Z, '#REDIRECT [[Mega]]' (R from ambiguous term)",
+     "MEGA2": "404 at 2026-10-31T22:59:31Z",
+     "Mega": "200 at 2026-10-31T22:59:39Z (the disambiguation page, W-Mega.wiki)"
+    },
+    "rendered": "https://en.wikipedia.org/wiki/Marx-Engels-Gesamtausgabe, HTTP 200 at 2026-10-31T22:59:32Z (B10.html); text extracted with scripts and styles stripped (B10.txt)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/B10.txt",
+     "datasets/negative-of-the-negative/v2/intake/megadigital-20261031/W-Mega.wiki"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('International Marx-Engels Foundation (IMES)'; 'Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) responsible for its coordination'); MEGAdigital is not named in the article",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, provenanceerasure, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted by the operator's ruling; not surfaced by T. The name MEGAdigital has no article and redirects nowhere (raw 404 under four spellings); MEGA and Mega (disambiguation) redirect to the disambiguation page 'Mega', which lists the edition under 'Other uses'. The article is ledgered whole at §3.5's loci."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "opening (the project's definition)",
+   "quote": "Die Marx-Engels-Gesamtausgabe (MEGA) ist die historisch-kritische Ausgabe sämtlicher Veröffentlichungen, Manuskripte und Entwürfe sowie des Briefwechsels von Karl Marx und Friedrich Engels.",
+   "claim": "the MEGA defined by its project: the historical-critical edition of all publications, manuscripts, drafts and correspondence of Marx and Engels",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the historical-critical edition and its online division",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "header and address block",
+   "quote": "Akademienvorhaben … Berlin-Brandenburgische Akademie der Wissenschaften … Jägerstr. 22/23",
+   "claim": "the MEGA is an academy project (Akademienvorhaben) of the Berlin-Brandenburg Academy, Jägerstr. 22/23, Berlin",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F3": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "the MEGAdigital block",
+   "quote": "MEGAdigital … Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels",
+   "claim": "MEGAdigital defined: the online division of the historical-critical complete edition of Marx and Engels",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the historical-critical edition and its online division",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F4": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "the MEGAdigital block, s1",
+   "quote": "In der digitalen Ausgabe der MEGA sind die edierten Texte von zehn MEGA-Bänden der II. Abteilung (\"Das Kapital\" und Vorarbeiten) online abrufbar.",
+   "claim": "online: the edited texts of ten volumes of the second division (Das Kapital and its preparatory works)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "the MEGAdigital block, s2–s3",
+   "quote": "Ab dem Jahrgang 1866 werden dort ebenfalls die Briefe von und an Marx und Engels digital dargeboten (III. Abteilung). Dies gilt auch für einen Großteil der Exzerpte und Notizen (IV. Abteilung).",
+   "claim": "online: the letters to and from Marx and Engels from 1866 (third division) and a large part of the excerpts and notes (fourth division)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "menu",
+   "quote": "MEGA-Bände I. Abteilung II. Abteilung III. Abteilung IV. Abteilung",
+   "claim": "the MEGA's volumes fall in four divisions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Zuletzt erschienen, item 1",
+   "quote": "IV/24: M: Exzerpte und Notizen. 1876 | Aug. 2026 | Online-Veröffentlichung auf MEGAdigital",
+   "claim": "the latest volume: IV/24, Marx's excerpts and notes of 1876, published online on MEGAdigital in August 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "volumes and pace",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Zuletzt erschienen, item 2",
+   "quote": "I/9 M/E : Werke, Artikel, Entwürfe. März bis Juni 1849 | Print Dez. 2025 | XIII + 1414 S.",
+   "claim": "the latest print volume: I/9, works, articles and drafts of March to June 1849, December 2025, XIII + 1414 pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "volumes and pace",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "history ¶, s1–s2",
+   "quote": "Die Marx-Engels-Gesamtausgabe wurde in den 1970er Jahren in Berlin und Moskau begonnen. Sie erwarb in Fachkreisen hohes Ansehen und ist in allen großen Bibliotheken der Welt präsent.",
+   "claim": "the edition begun in the 1970s in Berlin and Moscow; by its own account highly regarded among specialists and present in all the world's major libraries",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "history ¶, s3",
+   "quote": "Nach 1989 haben sich Wissenschaftler, Politiker und Verleger aus vielen europäischen Ländern, Japan und den USA nachdrücklich für die Fortführung der Ausgabe eingesetzt.",
+   "claim": "after 1989 scholars, politicians and publishers from many European countries, Japan and the USA pressed for the edition's continuation",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "history ¶, s4 (the stated limit)",
+   "quote": "Ein wachsender Teil der Edition (III. und IV. Abteilung) wird inzwischen digital weitergeführt.",
+   "claim": "the stated limit: a growing part of the edition, the third and fourth divisions, now continues digitally",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Die Zeit quotation, s1",
+   "quote": "„Die MEGA ist im wahrsten Wortsinne ein Säkularunternehmen, und ihr Anfang, ihr Scheitern und ihr Wiederauferstehen spiegeln geradezu paradigmatisch die geschichtlichen Tragödien des 20. Jahrhunderts wider.",
+   "claim": "Die Zeit (1999), as the page quotes it: the MEGA a century's undertaking whose beginning, failure and resurrection mirror the tragedies of the twentieth century",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "1999-02-25 (Die Zeit, as the page quotes it)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Die Zeit quotation, s2",
+   "quote": "Wenn sie, wie der Editionsfahrplan vorsieht, um das Jahr 2025 abgeschlossen sein wird, werden es ziemlich exakt hundert Jahre gewesen sein, die nötig waren, um das Werk von Marx und Engels der lesenden Öffentlichkeit originalgetreu, das heißt unzensiert, zu erschließen.“ (Die Zeit, 25. Februar 1999)",
+   "claim": "Die Zeit (1999): completion forecast for around 2025, a hundred years to open the work to readers faithful to the originals, that is, uncensored",
+   "modality": "attributed",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "volumes and pace",
+   "date": "1999-02-25 (Die Zeit, as the page quotes it)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "caption",
+   "quote": "MEGA-Bände (© BBAW)",
+   "claim": "the MEGA volumes © BBAW",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; page © 2018-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 8b129a90e386b8d0…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "title",
+   "quote": "MEGAdigital. Online-Angebot der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels - MEGAdigital",
+   "claim": "MEGAdigital by its own title: the online offering of the historical-critical complete edition of Marx and Engels",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the historical-critical edition and its online division",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "header",
+   "quote": "Herausgegeben von der Internationalen Marx-Engels-Stiftung (IMES)",
+   "claim": "published (herausgegeben) by the Internationale Marx-Engels-Stiftung (IMES)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Über diese Edition, s1–s2 (the stated limit)",
+   "quote": "Die Marx-Engels-Gesamtausgabe (MEGA) präsentiert die Veröffentlichungen, Manuskripte und den Briefwechsel von Marx und Engels in vier Abteilungen. Die I. Abteilung (Werke) erscheint ausschließlich im Druck.",
+   "claim": "the edition in four divisions; the stated limit: the first division (works) appears in print only",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Über diese Edition, s3",
+   "quote": "Aus der II. Abteilung („‚Das Kapital‘ und Vorarbeiten“) sind die edierten Texte von zehn Bänden mit den wichtigsten Textfassungen und Manuskripten zum „Kapital“ auf MEGAdigital abrufbar.",
+   "claim": "online on MEGAdigital: the edited texts of ten volumes of the second division with the most important versions and manuscripts of Das Kapital",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Über diese Edition, s4",
+   "quote": "Die III. Abteilung (Briefe) liegt bis zum Jahrgang 1865 in Form von Druckbänden vor.",
+   "claim": "the letters up to 1865 exist as printed volumes",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Weitere Materialien und Texte",
+   "quote": "Feuerbach-Thesen: … Karl Marx 1845: \"1) ad Feuerbach\" … \"Karl Marx über Feuerbach\": Version von F. Engels von 1888 … Vollständige Leseausgabe „Neue Rheinische Zeitung“",
+   "claim": "further materials: Marx's 1845 theses on Feuerbach with Engels's 1888 version, and a complete reading edition of the Neue Rheinische Zeitung",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, licence and further materials",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F21": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "footer, realization",
+   "quote": "Digitale Konzeption und Realisierung: … TELOTA - The Electronic Life of the Academy (TELOTA - IT/DH)",
+   "claim": "digital design and realization by TELOTA, the Academy's IT and digital humanities group",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, licence and further materials",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F22": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "footer, the academy programme",
+   "quote": "Das Akademienvorhaben „Marx-Engels-Gesamtausgabe“ ist Teil des von Bund und Ländern geförderten Akademienprogramms, das der Erhaltung, Sicherung und Vergegenwärtigung des kulturellen Erbes dient.",
+   "claim": "the academy project is part of the federally and state-funded Akademienprogramm, which serves the preservation, securing and presentation of the cultural heritage",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "footer, licence",
+   "quote": "Dieses Werk ist lizenziert unter der Lizenz CC BY-SA 4.0.",
+   "claim": "licensed CC BY-SA 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, licence and further materials",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "teaser captions",
+   "quote": "Karl Speyer an Karl Marx in London. London, Sonntag, 17. Mai 1868, RGASPI, Sign. f. 21 op. 1 d. 24/2 … IISG, Marx-Engels-Nachlass, Sign. B84/B83. S. [37]. Das Heft hat Marx betitelt als \"Book of the Crisis of 1857\". Es ist in MEGA IV/14 veröffentlicht.",
+   "claim": "the originals shown come from the RGASPI (Moscow) and the IISG's Marx-Engels-Nachlass; Marx's notebook 'Book of the Crisis of 1857' is published in MEGA IV/14",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "custody: the originals, their custodians and the correctives",
+   "date": "2026-10-31 (read; page © 2018-2026 not stated, the latest listing IV/24)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 75ddb4e13392930c…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F25": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede, s1–s2",
+   "quote": "The Marx-Engels-Gesamtausgabe (MEGA; German for \"Marx-Engels Complete Edition\") is the largest collection of the writings of Karl Marx and Friedrich Engels. It is a historical-critical edition that aims to publish all of their written works in their original languages, including manuscripts, letters, and notebooks.",
+   "claim": "the MEGA: the largest collection of Marx's and Engels's writings, a historical-critical edition aiming to publish all their written works in their original languages",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the historical-critical edition and its online division",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede, s3",
+   "quote": "The project is intended to produce a complete, scholarly, and politically independent edition that documents the intellectual development of Marx and Engels.",
+   "claim": "its intent: a complete, scholarly and politically independent edition documenting their intellectual development",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: every writing, its corrections and deletions, the apparatus",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶2",
+   "quote": "The first edition, known as MEGA¹, began in the Soviet Union in the 1920s under the direction of David Riazanov at the Marx–Engels Institute in Moscow. It was an ambitious international and academic project, but it fell victim to Stalinism; Riazanov was removed in 1931, and the project was ultimately discontinued in 1941 after publishing only 12 volumes.",
+   "claim": "MEGA¹: begun in the 1920s under Riazanov at the Marx–Engels Institute, a victim of Stalinism, Riazanov removed in 1931, discontinued in 1941 after 12 volumes",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶3, s1–s3",
+   "quote": "Work resumed in the 1960s on a second edition, MEGA², as a joint venture between the Institutes for Marxism-Leninism in East Berlin and Moscow. The first volume was published in 1975. However, the editing during this period was influenced by the official ideology of the ruling communist parties.",
+   "claim": "MEGA²: resumed in the 1960s by the party institutes of East Berlin and Moscow, first volume 1975, its editing influenced by the ruling parties' official ideology",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶3, s4–s5",
+   "quote": "Following the fall of the Berlin Wall in 1989, the project was fundamentally restructured. In 1990, the International Marx-Engels Foundation (IMES) was established to oversee the edition, which is now carried out by an international network of scholars, with coordination led by the Berlin-Brandenburg Academy of Sciences and Humanities.",
+   "claim": "after 1989 restructured: the IMES established in 1990 to oversee the edition, carried out by an international network of scholars, coordinated by the BBAW",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶3, s6",
+   "quote": "The post-1990 project is guided by the principles of depoliticization, internationalization, and the highest scholarly standards.",
+   "claim": "the post-1990 principles: depoliticization, internationalization, the highest scholarly standards",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶4, s1",
+   "quote": "The MEGA is organized into four sections: I. Works, Articles, and Drafts; II. Das Kapital and its preliminary studies; III. Correspondence; and IV. Excerpts, Notebooks, and Marginalia.",
+   "claim": "four sections: works, articles and drafts; Das Kapital and preliminary studies; correspondence; excerpts, notebooks and marginalia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "divisions and what is online",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lede ¶4, s2 (the headline finding)",
+   "quote": "The edition has revealed new insights into Marx and Engels's thought, showing their theories as more of an open-ended work in progress and highlighting significant differences between Marx's original manuscripts and the versions published by later editors.",
+   "claim": "the headline finding: the theories shown as open-ended work in progress, with significant differences between Marx's manuscripts and later editors' versions",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History, Prehistory: The Viennese Plan ¶2, s1–s2",
+   "quote": "The proposal was sent to the executive committee of the Social Democratic Party of Germany (SPD), which controlled most of Marx's literary estate. However, the plan failed to gain support.",
+   "claim": "the 1911 Viennese plan sent to the SPD executive, which controlled most of Marx's literary estate, and unsupported",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read); the plan dated 1 January 1911",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History, Second edition, Soviet-GDR project ¶1, s3",
+   "quote": "The International Institute of Social History (IISH) in Amsterdam, which had acquired most of Marx's original manuscripts from the SPD in 1938, allowed access to its archives.",
+   "claim": "the IISH in Amsterdam acquired most of Marx's original manuscripts from the SPD in 1938 and opened its archives to MEGA²",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "custody: the originals, their custodians and the correctives",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History, Second edition, Soviet-GDR project ¶2, s3",
+   "quote": "This political patronage led later scholars to characterize the project during this period as an \"unhappy institutionalization\" under a canonized orthodoxy.",
+   "claim": "later scholars' characterization of the GDR-Soviet period: an 'unhappy institutionalization' under a canonized orthodoxy",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the history: the Viennese plan, MEGA¹, MEGA², the refounding after 1989",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History, Post-1990 international project ¶1, s2",
+   "quote": "On the initiative of the IISH, the International Marx-Engels Foundation (IMES) was founded in 1990 to continue the MEGA \"on a purely scientific and politically independent basis\".",
+   "claim": "the IMES founded in 1990 on the IISH's initiative to continue the MEGA on a purely scientific and politically independent basis",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "History, Post-1990 international project ¶2, s2",
+   "quote": "The IMES, based in Amsterdam, oversees the edition, with the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW) responsible for its coordination.",
+   "claim": "the IMES, in Amsterdam, oversees the edition; the BBAW coordinates it",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the IMES publishes, the BBAW carries the academy project",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Structure and principles ¶1, s2–s3",
+   "quote": "Its goal is to reproduce all the writings of Marx and Engels in their entirety and in their original languages, meticulously documenting all corrections, deletions, and variations in the manuscripts. It presents the texts without interpretation, allowing readers to trace the intellectual development and creative process of the authors.",
+   "claim": "the method: every writing whole and in its original language, all corrections, deletions and variations documented, the texts presented without interpretation",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: every writing, its corrections and deletions, the apparatus",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Structure and principles ¶3, s2–s3 (the stated limit)",
+   "quote": "As of 2026, 114 volumes are planned, of which 62 have been published.[22] The project's completion is expected to take several more decades.",
+   "claim": "62 of 114 planned volumes published as of 2026; completion expected to take several more decades",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "volumes and pace",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Scholarly significance ¶2, s1–s2",
+   "quote": "One of the most significant findings has been the extent of Friedrich Engels's editorial interventions in the second and third volumes of Das Kapital, which he compiled from Marx's manuscripts after his death. The publication of these manuscripts in Section II of MEGA has revealed key differences between Marx's original drafts and Engels's published versions.",
+   "claim": "a finding: the extent of Engels's editorial interventions in Das Kapital II and III, shown by the manuscripts in Section II",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Scholarly significance ¶3",
+   "quote": "The publication of the original manuscripts in volume I/5 (2017) established \"once and for all the fragmentary character of the text\". Previous editions had presented the material as a finished book … The MEGA edition demonstrated this to be a 20th-century editorial construction.",
+   "claim": "The German Ideology: I/5 (2017) established the text's fragmentary character; the finished book of earlier editions a twentieth-century editorial construction",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Scholarly significance ¶1, s3",
+   "quote": "According to Marcello Musto, the edition provides the textual basis for rethinking a Marx who is \"radically different from the author who was dogmatically converted into the fons et origo of 'actually existing socialism'\".",
+   "claim": "Musto: the edition the textual basis for a Marx radically different from the dogmatic origin of 'actually existing socialism'",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Scholarly significance ¶4, s2",
+   "quote": "For example, MEGA IV/14, published in 2017, contains Marx's previously unpublished notebooks on the Panic of 1857, known as the Books of Crisis.",
+   "claim": "MEGA IV/14 (2017): Marx's notebooks on the Panic of 1857, the Books of Crisis",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Scholarly significance ¶4, s7",
+   "quote": "Marx's excerpts from the work of agricultural chemist Justus von Liebig and scientist Karl Fraas show his concern with soil depletion, deforestation, and the ecological unsustainability of capitalist agriculture.",
+   "claim": "Section IV: Marx's excerpts from Liebig and Fraas show concern with soil depletion and deforestation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the edition found: drafts against later editors",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 2b670ec827d4a92f…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Mega (disambiguation), Technology and Other uses",
+   "quote": "*[[Mega (service)]], a file hosting service offered by Mega Cloud Services … * ''[[Marx-Engels-Gesamtausgabe]]'', the complete works of Marx and Engels in German",
+   "claim": "Wikipedia's 'Mega' disambiguation (the target of 'MEGA') lists the edition among the senses of the name, beside a file hosting service",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the name",
+   "date": "2026-10-31 (read; article as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text W-Mega.wiki (sha256 fca135a4091285d2…), whitespace-normalised; multi-part quote, each part checked"
+  }
+ },
+ "field_sources": {
+  "B8": "Berlin-Brandenburgische Akademie der Wissenschaften — Marx-Engels-Gesamtausgabe (MEGA), the project page (mega.bbaw.de)",
+  "B9": "MEGAdigital — the home page (megadigital.bbaw.de)",
+  "B10": "Wikipedia — Marx-Engels-Gesamtausgabe (no article or redirect for MEGAdigital); the 'Mega' disambiguation"
+ }
+}

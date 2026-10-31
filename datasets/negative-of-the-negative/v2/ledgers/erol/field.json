@@ -1,0 +1,1103 @@
+{
+ "row": "erol",
+ "address": "Encyclopedia of Anti-Revisionism On-Line",
+ "addresses": [
+  "Encyclopedia of Anti-Revisionism On-Line"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia redirect's raw wikitext and rendered text; 45/45 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the contents page; B2 the definition page, 'What is Anti-Revisionism', signed Paul C., 2009; B3 the entry page; B4 Harvard's Digital Handbook catalogue record; B5 the periodicals page), all fetched; 'own_page', the census's own pages that T did not surface (B6 the host's introduction, which the census cites for the licence; B7 erol-intro.htm, HTTP 404, unread); 'wikipedia' (B8: the name redirects to 'Marxists Internet Archive', ledgered at its lead and its section 'Archival structure'). The census's other own pages, erol--intro2 and erol--home, are byte-identical to cards 1 and 3 and are carried once, as cards. No source names the archive.",
+ "lineage_note": "Lineages: what it is (B1, B4); its purpose (B2); the trend it records (B2); contents (B1); its periodization by splits and collapse (B1); its periodicals (B5); the holder (B1, B3, B4); the catalogue record and its limit (B4); the host's terms (B6, B8); Wikipedia (B8). The census record's fields that restate a contents-page or introduction quote (its evidence) are one lineage with B1 or B6, which keeps the earliest date (§3.6).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/erol-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1, B3 byte-identical to the census copies, whose texts are used; B6 and B7 the census's saved copies; B8 the redirect's raw wikitext (B8-redirect.wiki), the target's wikitext (B8.wiki), the rendered page (B8.html, B8.txt), the 404 responses for the lower-case variant and 'EROL', and the article-space search (B8-search.json); T1-encyclopedia-of-anti-revisionism-on-line-aio-20261031.txt the registry's transcript string)",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page erol--intro2, byte-identical)",
+   "card": "Marxists Internet Archive — Encyclopedia of anti-Revisionism On-Line",
+   "url": "https://www.marxists.org/history/erol/erol.htm",
+   "kind": "Overview card (the encyclopedia's contents page); the census's own page erol--intro2",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B1.html",
+     "sha256": "64595c569e84b11adadf28c983509dd00d95a7c4193a99c7b43f750e3329cb9e"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B1.txt",
+     "sha256": "88d0839f41caaec76f8e1fc38eb000678c67759173586b50a0e623628d8c3083"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:43Z",
+    "http": 200,
+    "url": "https://www.marxists.org/history/erol/erol.htm",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B1.html",
+    "raw_sha256": "64595c569e84b11adadf28c983509dd00d95a7c4193a99c7b43f750e3329cb9e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "erol--intro2",
+     "sha256": "64595c569e84b11adadf28c983509dd00d95a7c4193a99c7b43f750e3329cb9e",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:30:37Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('Contact EROL Administrator')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title and snippet (the snippet's 'Background' and 'Movements and Documents by Country' are the page's two headings, reworded; the snippet's words 'Definitions and representative materials from China and Albania' are not on the page, which has 'A Brief definition of Anti-Revisionism' and 'Representative Anti-Revisionist Materials from China'). The fetch is byte-identical to the census's saved copy erol--intro2, so the card and the census's own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes. The page carries no date.",
+   "surfaced_by_T": [
+    {
+     "slug": "encyclopedia-of-anti-revisionism-on-line-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Encyclopedia of anti-Revisionism On-Line",
+   "card_snippet": "Encyclopedia of Anti-Revisionism On-Line Background: Definitions and representative materials from China and Albania. Movements and Documents by Country: United...",
+   "card_note": "the snippet is a summary of the page's headings; no span of its text",
+   "id": "B1"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Marxists Internet Archive — What is Anti-Revisionism: Encyclopedia of anti-Revisionism On-Line",
+   "url": "https://www.marxists.org/history/erol/what.htm",
+   "kind": "Overview card (the encyclopedia's definition page, 'Anti-Revisionism and the Anti-Revisionist Movement', signed Paul C., 2009)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B2.html",
+     "sha256": "99b010a6d16dccadef4a93033cb8bdd1a547e0d42b4ed568b005d1e5d252452a"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B2.txt",
+     "sha256": "80fc6cb72020ab84871c204bf073a17ce02bf21331d619f35ca9caacef9402ae"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:44Z",
+    "http": 200,
+    "url": "https://www.marxists.org/history/erol/what.htm",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B2.html",
+    "raw_sha256": "99b010a6d16dccadef4a93033cb8bdd1a547e0d42b4ed568b005d1e5d252452a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "yes (signed 'Paul C., 2009'; 'Back to the EROL homepage')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the contents page's link 'A Brief definition of Anti-Revisionism' (what.htm), confirmed by the page title, which is the card's title verbatim. The census lists this page as unchecked. The card's snippet ('Definition: Opposition to abandoning orthodox revolutionary theory, originating as a post-WWII pro-Soviet communist critique. Evolution: Criticized official com...') is a summary: its words are not on the page.",
+   "surfaced_by_T": [
+    {
+     "slug": "encyclopedia-of-anti-revisionism-on-line-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "What is Anti-Revisionism: Encyclopedia of anti-Revisionism On-Line",
+   "card_snippet": "Definition: Opposition to abandoning orthodox revolutionary theory, originating as a post-WWII pro-Soviet communist critique. Evolution: Criticized official com...",
+   "card_note": "the snippet is a summary; no span of the page's text",
+   "id": "B2"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3 (and the census own page erol--home, byte-identical)",
+   "card": "Marxists Internet Archive — MIA: History: Encyclopedia of anti-Revisionism On-Line",
+   "url": "https://www.marxists.org/history/erol/index.htm",
+   "kind": "Overview card (the encyclopedia's entry page: its title and an 'Enter EROL' link); the census's own page erol--home",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B3.html",
+     "sha256": "4144c153a2618cc85a3bc3b2a681e1745039239bb0fec46cabc42f0add956268"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B3.txt",
+     "sha256": "ffd9f7594dc880d028e9e9c10d5d0b5f34221e5a7dadc613fbd7a72e2ebb6a70"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:44Z",
+    "http": 200,
+    "url": "https://www.marxists.org/history/erol/index.htm",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B3.html",
+    "raw_sha256": "4144c153a2618cc85a3bc3b2a681e1745039239bb0fec46cabc42f0add956268",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B3.txt"
+    ],
+    "census_copy": {
+     "src": "erol--home",
+     "sha256": "4144c153a2618cc85a3bc3b2a681e1745039239bb0fec46cabc42f0add956268",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:47Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "no (the page's meta author is 'EROL'; its text names the MIA's History section)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title and snippet, which are the page's two lines. Byte-identical to the census's saved copy erol--home (the census records its 112 characters as unquoted); carried once, as a card.",
+   "surfaced_by_T": [
+    {
+     "slug": "encyclopedia-of-anti-revisionism-on-line-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "MIA: History: Encyclopedia of anti-Revisionism On-Line",
+   "card_snippet": "MIA: History: Encyclopedia of anti-Revisionism On-Line. Enter EROL.",
+   "card_note": null,
+   "id": "B3"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Harvard University — The Encyclopedia of anti-Revisionism On",
+   "url": "https://dccollection.share.library.harvard.edu/items/show/1327",
+   "kind": "Overview card (the catalogue record of the Digital Handbook for Research on Soviet History, Davis Center for Russian and Eurasian Studies, Harvard University: Open Access Primary Sources, item OARRSH_00098)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B4.html",
+     "sha256": "906de76ec6e1d2260e3a82c7dc5b66a1c5edc45e4e2f463c562d8ede8591086c"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B4.txt",
+     "sha256": "1b19c6e38b0302412d279e67e504e7115fba49ec01bdc100ad90c2de86e0a235"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:42Z",
+    "http": 200,
+    "url": "https://dccollection.share.library.harvard.edu/items/show/1327",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:25Z",
+      "http": "000",
+      "result": "connection reset by peer (curl 35)"
+     },
+     {
+      "at": "2026-10-31T22:59:42Z",
+      "http": "000",
+      "result": "connection reset by peer (curl 35)"
+     },
+     {
+      "at": "2026-10-31T22:59:42Z",
+      "http": 200,
+      "result": "saved"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B4.html",
+    "raw_sha256": "906de76ec6e1d2260e3a82c7dc5b66a1c5edc45e4e2f463c562d8ede8591086c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes ('Creator: Marxists Internet Archive'; 'Parent Source: Marxists Internet Archive')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site (the search returned dccollection.share.library.harvard.edu/items/show/1327 with the card's title). Two fetches were reset by the peer (curl 35, no HTTP response) and the third, with the same agent string, returned HTTP 200; these were connection failures, and no refusal was returned. The snippet is the record's heading and first fields, verbatim.",
+   "surfaced_by_T": [
+    {
+     "slug": "encyclopedia-of-anti-revisionism-on-line-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "The Encyclopedia of anti-Revisionism On",
+   "card_snippet": "The Encyclopedia of anti-Revisionism On-Line (Open Access Primary Source) * Title: The Encyclopedia of anti-Revisionism On-Line * Creator: Marxists Internet Arc...",
+   "card_note": null,
+   "id": "B4"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Marxists Internet Archive — Encyclopedia of anti-Revisionism On-Line (periodicals)",
+   "url": "https://www.marxists.org/history/erol/periodicals/index.htm",
+   "kind": "Overview card (the encyclopedia's periodicals page, 'Periodicals, Journals, and Newspapers', by country)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B5.html",
+     "sha256": "634af8a51588cd6ca40ab62dc3ae4fdfe4f70297707d68e0df4c317965b519d8"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B5.txt",
+     "sha256": "eb13a237508d58cb97504307d4992526e711b608b017567ce1d746bf9e20003d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:45Z",
+    "http": 200,
+    "url": "https://www.marxists.org/history/erol/periodicals/index.htm",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B5.html",
+    "raw_sha256": "634af8a51588cd6ca40ab62dc3ae4fdfe4f70297707d68e0df4c317965b519d8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B5.txt"
+    ]
+   },
+   "names_operator": "no ('Back to EROL Home Page')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the contents page's link 'Anti-Revisionist Periodicals, Magazines and Newspapers by Country' (periodicals/index.htm); its title is the card's title verbatim, and the snippet's titles (The African World, Challenge/Desafio, Revolutionary Worker, Workers' Advocate) are entries of its United States list. The snippet's frame ('United States: Publications include ... and various theoretical journals, newspapers,') is a summary; it is no span of the page.",
+   "surfaced_by_T": [
+    {
+     "slug": "encyclopedia-of-anti-revisionism-on-line-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Encyclopedia of anti-Revisionism On-Line",
+   "card_snippet": "United States: Publications include The African World, Challenge/Desafio, Revolutionary Worker, Workers' Advocate, and various theoretical journals, newspapers,",
+   "card_note": "the snippet summarizes the list's opening entries",
+   "id": "B5"
+  },
+  {
+   "origin": "own_page",
+   "role": "the census own page marxists-internet-archive--intro (the host's introduction; not surfaced by T)",
+   "card": "Marxists Internet Archive — MIA Introduction",
+   "url": "https://www.marxists.org/admin/intro/index.htm",
+   "kind": "own page of the host (the Marxists Internet Archive's introduction), cited by the census record's license evidence (mia_license); copied from the census's saved copy",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B6.html",
+     "sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B6.txt",
+     "sha256": "fc79a1374bfe713416752d72d65764ce7411a8a27a1f87089ab08b232bebfed6"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "marxists-internet-archive--intro",
+    "read": "2026-10-31",
+    "http": "200",
+    "fetched": "2026-10-31T21:27:47Z",
+    "url": "https://www.marxists.org/admin/intro/index.htm",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B6.html",
+    "raw_sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e",
+    "census_sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/marxists-internet-archive--intro.html.gz (gunzipped) and marxists-internet-archive--intro.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes (the MIA, EROL's host by the census's part_of relation)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The host's page, not EROL's: admitted as an own page because the census record cites it for the entity's licence and because the census's relation part_of places EROL inside the host. Not surfaced by T. Last updated 21 April 2026.",
+   "surfaced_by_T": [],
+   "id": "B6"
+  },
+  {
+   "origin": "own_page",
+   "role": "the census own page erol--intro (unread)",
+   "card": "Marxists Internet Archive — erol-intro.htm (HTTP 404)",
+   "url": "https://www.marxists.org/history/erol/erol-intro.htm",
+   "kind": "own page, unread: the census's fetch returned HTTP 404 'Object not found!'",
+   "files": {
+    "B7-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B7-404.html",
+     "sha256": "f1b993e61a397d6d36c429fb458443e002e1e798b03a4ab023d10eb7a588df91"
+    },
+    "B7-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B7-404.txt",
+     "sha256": "0689657b9ffa54b414d04e280de35c30d8f992650343c723b6dc88be4de59313"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "erol--intro",
+    "read": "2026-10-31",
+    "http": "404",
+    "fetched": "2026-10-31T21:27:48Z",
+    "url": "https://www.marxists.org/history/erol/erol-intro.htm",
+    "raw": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B7-404.html",
+    "raw_sha256": "f1b993e61a397d6d36c429fb458443e002e1e798b03a4ab023d10eb7a588df91",
+    "census_sha256": "f1b993e61a397d6d36c429fb458443e002e1e798b03a4ab023d10eb7a588df91",
+    "agrees": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B7-404.txt"
+    ],
+    "result": "unread (HTTP 404); not refetched"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "Recorded by the census as unread (unread_sources, unchecked). Its 404 body is kept; it yields no claim.",
+   "surfaced_by_T": [],
+   "id": "B7"
+  },
+  {
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title (a redirect to the host's article)",
+   "card": "Wikipedia — Encyclopedia of Anti-Revisionism On-Line (redirect to Marxists Internet Archive)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Encyclopedia_of_Anti-Revisionism_On-Line&action=raw",
+   "kind": "Wikipedia (a redirect; the target article Marxists Internet Archive, ledgered at its lead and its section 'Archival structure')",
+   "files": {
+    "B8-redirect.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8-redirect.wiki",
+     "sha256": "4c6a72dbded2c6573809d2ab59f08dbd5c51f52846db8fe2d6b1cb3580499621"
+    },
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8.wiki",
+     "sha256": "24f8ca2ebba139d1d50daa9fd7b2a189164658e2c9a5892a2f7c651c8eb3700a"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8.html",
+     "sha256": "b8c195e0137f811bbdaf49c10890a3af6f81737841246ab8dc87302b1d89b014"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8.txt",
+     "sha256": "dce3a5b481f2614a0cc5de6ca2b74d7956e51ec9bc34d9d8fb52ddb64628b707"
+    },
+    "B8-variant-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8-variant-404.html",
+     "sha256": "23ad718c2ef6fa66e3e6c71eae00a684825e9f210993304586ca8aed042b80b0"
+    },
+    "B8-EROL-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8-EROL-404.html",
+     "sha256": "28e329faa62e1fa93796d6ea22e1177563c62b89cafc36c72f046be9eeb51b15"
+    },
+    "B8-search.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8-search.json",
+     "sha256": "d75617d16a6adebae17903f6539537ab3a06f8ca51b6c535101fdd782944de77"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:58Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Encyclopedia_of_Anti-Revisionism_On-Line&action=raw",
+      "http": 200,
+      "result": "'#REDIRECT [[Marxists Internet Archive]]' (B8-redirect.wiki)"
+     },
+     {
+      "at": "2026-10-31T22:59:58Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Encyclopedia_of_anti-Revisionism_On-Line&action=raw",
+      "http": 404,
+      "result": "no page at the lower-case variant (B8-variant-404.html)"
+     },
+     {
+      "at": "2026-10-31T22:59:59Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=EROL&action=raw",
+      "http": 404,
+      "result": "no page 'EROL' (B8-EROL-404.html)"
+     },
+     {
+      "at": "2026-10-31T22:59:59Z",
+      "url": "https://en.wikipedia.org/wiki/Encyclopedia_of_Anti-Revisionism_On-Line",
+      "http": 200,
+      "result": "the article 'Marxists Internet Archive', '(Redirected from Encyclopedia of Anti-Revisionism On-Line)' (B8.html, B8.txt)"
+     },
+     {
+      "at": "2026-10-31T23:00:00Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Encyclopedia+of+Anti-Revisionism+On-Line%22&srnamespace=0&srlimit=50&format=json",
+      "http": 200,
+      "result": "32 articles of article space contain the phrase (B8-search.json); none is an article on the entity"
+     },
+     {
+      "at": "2026-10-31T23:00:06Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Marxists_Internet_Archive&action=raw",
+      "http": 200,
+      "result": "the target's wikitext (B8.wiki); 'anti-revision' and 'EROL' do not occur in it"
+     }
+    ],
+    "raw_sha256": "b8c195e0137f811bbdaf49c10890a3af6f81737841246ab8dc87302b1d89b014",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/erol-20261031/B8.txt"
+    ]
+   },
+   "names_operator": "yes (the target article is the MIA's)",
+   "names_archive": "no",
+   "note": "The name redirects to the host's article, at its top (no section anchor). The article does not name the encyclopedia: it names the host's historical sections (the Soviet Union, the Paris Commune) and a reference section, the 'Encyclopedia of Marxism'. The 32 articles that contain the phrase (party and person articles, 'Anti-revisionism', 'Bibliography of Maoism' among them) are articles on other entities and are recorded and left out of the ledger.",
+   "surfaced_by_T": [],
+   "id": "B8"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, the heading of the country sections",
+   "quote": "INFORMATION ON AND PRIMARY DOCUMENTS FROM ANTI-REVISIONIST MOVEMENTS, ORGANIZATIONS AND PARTIES BY COUNTRY",
+   "claim": "the encyclopedia's statement of what it holds: information on, and primary documents from, anti-revisionist movements, organizations and parties, by country",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an encyclopedia of the anti-revisionist movements' documents, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, BACKGROUND",
+   "quote": "BACKGROUND … A Brief definition of Anti-Revisionism … Representative Anti-Revisionist Materials from China … Representative Anti-Revisionist Materials from Albania",
+   "claim": "its background section: a brief definition of anti-revisionism and representative materials from China and from Albania",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: the background and the country sections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, United States (first three subsections)",
+   "quote": "The First Wave of Anti-Revisionism, 1946-1950 … The Second Wave of Anti-Revisionism, 1956-1962 … The Third Wave of Anti-Revisionism and the First U.S. Maoists, 1960-1970",
+   "claim": "the United States section opens with three waves of anti-revisionism, 1946-1950, 1956-1962 and 1960-1970 (the first U.S. Maoists)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: the background and the country sections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, United States (the New Communist Movement, first four subsections)",
+   "quote": "The New Communist Movement: Origins and Early Groups, 1969-1974 … The New Communist Movement: The Movement Proliferates … The New Communist Movement: Initial Party-Building Campaigns, 1973-1974 … The New Communist Movement: Party-Building Efforts Continue, 1975-1977",
+   "claim": "the New Communist Movement sections run from its origins and early groups (1969-1974) through its proliferation and its party-building campaigns (1973-1977)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: the background and the country sections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, United States (the New Communist Movement, last five subsections)",
+   "quote": "The New Communist Movement: Birth of the Anti-Dogmatist Trend, 1976-1977 … The New Communist Movement: Crises, Splits and More New Parties, 1977-1980 … The New Communist Movement: Anti-Dogmatists Unable to Unite, 1978-1980 … The New Communist Movement: Collapse and Aftermath … The New Communist Movement: Major Issues and Debates",
+   "claim": "the later New Communist Movement sections are titled by its trends, crises and splits, the anti-dogmatists' failure to unite, its collapse and aftermath, and its major issues and debates",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "its periodization by splits, unity attempts and collapse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, United States (the index)",
+   "quote": "Alphabetical Index to All Subsections in the U.S. New Communist Movement Pages",
+   "claim": "an alphabetical index to all subsections of the New Communist Movement pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: the background and the country sections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, Canada",
+   "quote": "Canada … Post-World War II Antecedent – Fergus McKean … The First Wave of Anti-Revisionism, 1964-1970 … The Second Wave of Anti-Revisionism, 1971-1981 … Crisis and Collapse, 1982-1983",
+   "claim": "Canada: a post-war antecedent (Fergus McKean), two waves (1964-1970, 1971-1981), and crisis and collapse (1982-1983)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodization by splits, unity attempts and collapse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, United Kingdom",
+   "quote": "United Kingdom … Post World War II Antecedents … The First Wave of Anti-Revisionism: The Early 1960’s … The Second Wave: the Radical Youth Want a Party: The Late 1960’s … High Tide: The Consolidation of Maoism by the Late 1970’s … Ebbing Tide: Decline and Dissolution",
+   "claim": "the United Kingdom: post-war antecedents, two waves in the 1960s, the high tide of Maoism by the late 1970s, and the ebbing tide of decline and dissolution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodization by splits, unity attempts and collapse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, the 23 further country sections",
+   "quote": "Anti-Revisionism in Australia … Anti-Revisionism in Bangladesh … Anti-Revisionism in Sri Lanka (Ceylon) … Anti-Revisionism in Switzerland",
+   "claim": "23 further countries have a section each, from Australia and Bangladesh to Sri Lanka (Ceylon) and Switzerland (26 country sections with the United States, Canada and the United Kingdom)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: the background and the country sections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "contents page, foot",
+   "quote": "Anti-Revisionist Periodicals, Magazines and Newspapers by Country … Contact EROL Administrator",
+   "claim": "a list of anti-revisionist periodicals by country; its contact is an EROL Administrator",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the host and an EROL Administrator",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 88d0839f41caaec7…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶1",
+   "quote": "Historically, in the Communist lexicon, the term “anti-revisionism” has been used to describe opposition to attempts to revise, modify or abandon the fundamentals of revolutionary theory and practice in a manner that was perceived to represent concessions to Communism’s adversaries.",
+   "claim": "the term's older use: opposition to attempts to revise, modify or abandon revolutionary fundamentals in a manner perceived as concessions to Communism's adversaries",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶2 s1–2",
+   "quote": "In recent times, however, the term has taken on a more specific meaning. It describes a trend that developed in the pro-Soviet (as opposed to the Trotskyist) Communist movement after World War II.",
+   "claim": "the term's specific meaning: a trend that developed in the pro-Soviet (as opposed to the Trotskyist) Communist movement after World War II",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶2 s3",
+   "quote": "The growth of this anti-revisionist trend was particularly noticeable at several critical moments in the history of the Communist movement – the shift from WW II-era collaboration between the Soviet Union and the Western Powers to the Cold War, and the crisis inaugurated by the 20th Congress of the Communist Party of the Soviet Union in 1956.",
+   "claim": "the trend grew at two critical moments: the shift from wartime collaboration to the Cold War, and the crisis of the CPSU's 20th Congress in 1956",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶3 s1",
+   "quote": "Initially, the anti-revisionists presented a critique of the official Communist Parties “from the left” for having abandoned orthodox Marxism-Leninism (becoming “revisionist,”), and for being insufficiently revolutionary.",
+   "claim": "the anti-revisionists first criticized the official Communist Parties 'from the left', for abandoning orthodox Marxism-Leninism and for being insufficiently revolutionary",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶3 s2",
+   "quote": "Once the official Communist Parties joined in Khrushchev’s denunciation of Stalin, the defense of Stalin and his legacy became a hallmark of “anti-revisionism.”",
+   "claim": "after the official parties joined Khrushchev's denunciation of Stalin, the defence of Stalin and his legacy became a hallmark of anti-revisionism",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶3 s3",
+   "quote": "Later on, the anti-revisionist movement expanded and diversified to encompass those communists who rejected a pro-Soviet orientation for one aligned either with Chinese or Albanian positions.",
+   "claim": "the movement later expanded and diversified to encompass communists who rejected a pro-Soviet orientation for one aligned with Chinese or Albanian positions",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶4 s1",
+   "quote": "Anti-revisionism enjoyed its moment of greatest size and influence with numerous “Marxist-Leninist” and “Maoist” parties, groups and publications springing up around the world in the period which began with the Sino-Soviet split of the early 1960s.",
+   "claim": "its greatest size and influence came with Marxist-Leninist and Maoist parties, groups and publications founded worldwide after the Sino-Soviet split of the early 1960s",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶4 s2",
+   "quote": "Its growth was greatly accelerated by international enthusiasm for the Great Proletarian Cultural Revolution in China, but it began to decline in response to controversial Chinese foreign policy decisions in the last years of Mao’s life, his death and the subsequent defeat of the Gang of Four.",
+   "claim": "its growth was accelerated by enthusiasm for the Cultural Revolution; it declined with Chinese foreign policy in Mao's last years, his death and the defeat of the Gang of Four",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, ¶4 s3",
+   "quote": "While some anti-revisionists soldiered on, adapting to these changes, these later events spurred other elements to argue for a non-Trotskyist “left-wing” communism, independent of allegiance to foreign authorities or models.",
+   "claim": "after the decline some anti-revisionists adapted and others argued for a non-Trotskyist 'left-wing' communism independent of foreign authorities or models",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the trend it records: anti-revisionism",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is Anti-Revisionism, close",
+   "quote": "The goal of the Encyclopedia of Anti-Revisionism is to document this trend. —Paul C., 2009",
+   "claim": "the encyclopedia's goal is to document this trend (signed Paul C., 2009)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "its purpose: to document the trend",
+   "date": "2009 (signed Paul C., 2009)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 80fc6cb72020ab84…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "entry page",
+   "quote": "MIA: History: Encyclopedia of anti-Revisionism On-Line … Enter EROL",
+   "claim": "the entry page places the encyclopedia in the Marxists Internet Archive's History section, with one link, 'Enter EROL'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the holder: the host and an EROL Administrator",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 ffd9f7594dc880d0…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Description",
+   "quote": "Digital encyclopedia of anti-Revisionism developed by the Marxists Internet Archive, containing English translations of representative anti-Revisionist materials from China, Albania, and many western countries.",
+   "claim": "Harvard's handbook describes it as a digital encyclopedia of anti-revisionism developed by the Marxists Internet Archive, with English translations of representative materials from China, Albania and many western countries",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an encyclopedia of the anti-revisionist movements' documents, by country",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Creator; Parent Source",
+   "quote": "Creator: Marxists Internet Archive … Parent Source: Marxists Internet Archive",
+   "claim": "the catalogue record gives the Marxists Internet Archive as its creator and its parent source",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the host and an EROL Administrator",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Date",
+   "quote": "Date: 1946-1983",
+   "claim": "the catalogue record dates its materials 1946-1983",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue record and its limit",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Coverage",
+   "quote": "Coverage: USSR China Albania USA Canada UK Australia Bangladesh Belgium Chile Denmark Eritrea Ethiopia Greece Iceland Indonesia Ireland Italy New Zealand Nicaragua Norway Poland Portugal Spain Sri Lanka Switzerland",
+   "claim": "the catalogue record's coverage: 26 places, the USSR, China and Albania among them (India, Iran and the Philippines, which have sections on the contents page, absent)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue record and its limit",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Subject; Language; Format; Source Types",
+   "quote": "Subject: anti-Revisionism Sino-Soviet split foreign relations Cold War ideology Language: English Source Types: essay book periodical archival document",
+   "claim": "the catalogue record's subjects (anti-revisionism, the Sino-Soviet split, foreign relations, the Cold War, ideology), its language (English) and source types (essay, book, periodical, archival document)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue record and its limit",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Format",
+   "quote": "Format: Digital archive Digital project",
+   "claim": "the catalogue record's format: digital archive, digital project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an encyclopedia of the anti-revisionist movements' documents, by country",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Notes",
+   "quote": "This online resource has not been found to meet all criteria for legitimacy. It may reproduce copyright-protected content without license or permissions, contain re-typed content that cannot be verified for accuracy or completeness, and/or omit facts of publication or archival attribution. Use of this site is at one’s own risk.",
+   "claim": "the catalogue record's limit: the resource has not been found to meet all criteria for legitimacy; it may reproduce copyright-protected content without licence, contain re-typed content that cannot be verified, or omit facts of publication or archival attribution",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the catalogue record and its limit",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collection; Identifier; foot",
+   "quote": "Identifier: OARRSH_00098 … Collection: Open Access Primary Sources … Davis Center for Russian and Eurasian Studies | Harvard University",
+   "claim": "the record is item OARRSH_00098 in the Open Access Primary Sources collection of the Digital Handbook for Research on Soviet History, Davis Center for Russian and Eurasian Studies, Harvard University",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue record and its limit",
+   "date": "undated (the catalogue record as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1b19c6e38b030241…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, head",
+   "quote": "Encyclopedia of anti-Revisionism On-Line … Periodicals, Journals, and Newspapers … United States",
+   "claim": "the periodicals page lists the movements' periodicals, journals and newspapers by country, the United States first",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, United States",
+   "quote": "African World, The newspaper of the Youth Organization for Black Unity/February 1st Movement … Challenge/Desafio newspaper of the Progressive Labor Party … Revolutionary Worker newspaper of the Revolutionary Communist Party … Workers’ Advocate newspaper of the A.C.W.M., then C.O.U.S.M.L. then the Marxist-Leninist Party, 1969-93",
+   "claim": "United States entries include The African World, Challenge/Desafio (the Progressive Labor Party's newspaper), Revolutionary Worker (the RCP's) and Workers' Advocate (1969-93)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, Canada/Quebec",
+   "quote": "The Forge weekly newspaper of the Canadian Communist League (Marxist-Leninist)/Workers Communist Party. (Bilingual) … In Struggle weekly newspaper of the Marxist-Leninist Organization of Canada, In Struggle. (In French only from 1973 to 1975. Bilingual from 1976 to 1982)",
+   "claim": "Canada/Quebec entries include The Forge and In Struggle",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, United Kingdom",
+   "quote": "Proletarian bimonthly publication of the Communist Party of Great Britain (M-L)",
+   "claim": "United Kingdom entries include Proletarian, of the Communist Party of Great Britain (M-L)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, entries dated after 1983",
+   "quote": "Demarcations irregular theoretical journal issued by the Revolutionary Communist Party, starting in 2009 … Line of March, The irregular monthly publication of the Revolutionary Communist Party of Britain (Marxist-Leninist), begun 2011 … Eureka irregular publication of the National Preparatory Committee of the Marxist-Leninist Communist Party of Australia, 2000-2005",
+   "claim": "the list includes periodicals dated after 1983: Demarcations (from 2009), The Line of March (from 2011), Eureka (2000-2005)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "periodicals page, entries named by a split",
+   "quote": "Chicago Workers’ Voice local newspaper of former members of the Marxist-Leninist Party … Young Communist, The newspaper of the Revolutionary Student Brigade after it went with the Revolutionary Workers Headquarters in the RCP split",
+   "claim": "entries name periodicals by the splits that made them: the Chicago Workers' Voice of former members of the Marxist-Leninist Party; the Young Communist after the RCP split",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its periodicals: the movements' organs, by country",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 eb13a237508d58cb…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, ¶1",
+   "quote": "The Marxists Internet Archive (MIA, http://www.marxists.org/) is an all-volunteer, non-profit public library, established in its present form in 1998",
+   "claim": "the host describes itself as an all-volunteer, non-profit public library, established in its present form in 1998",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21 (the page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, ¶2",
+   "quote": "As of July 2025, MIA has 76 active volunteers from several dozen countries . MIA contains the writings of close to 1000 authors",
+   "claim": "the host reports 76 active volunteers (July 2025) and the writings of close to 1000 authors",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21 (the page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, the Charter's tenets",
+   "quote": "(5) We will always remain politically independent; (6) We do not ‘judge’ writers; (7) Our priority is to provide archival information.",
+   "claim": "three of the host's seven tenets: political independence, no judging of writers, priority to archival information",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21 (the page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, ¶4",
+   "quote": "The MIA does not endorse any of the views expressed by any of the writers included here, which are provided solely for the information of the reader.",
+   "claim": "the host endorses none of the views of the writers it archives",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21 (the page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, licence",
+   "quote": "All material within these Archives, unless noted otherwise, is public domain . MIA-created material is protected by the Creative Commons License .",
+   "claim": "the host's licence: all material public domain unless noted otherwise; MIA-created material under a Creative Commons licence",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21 (the page's 'Last updated')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "MIA introduction, foot",
+   "quote": "Last updated on 21 April 2026",
+   "claim": "the introduction was last updated on 21 April 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-04-21",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "the redirect (raw wikitext of 'Encyclopedia of Anti-Revisionism On-Line'; the rendered page's notice)",
+   "quote": "#REDIRECT [[Marxists Internet Archive]]",
+   "claim": "the English Wikipedia has no article on the entity: its name redirects to the article on the Marxists Internet Archive",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Wikipedia: a redirect to the host",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8-redirect.wiki (sha256 4c6a72dbded2c657…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Marxists Internet Archive, lead s1",
+   "quote": "Marxists Internet Archive (MIA), also known as Marxists.org, is a non-profit online encyclopedia, created in 1990, that hosts a multilingual library of the works of communist, anarchist, and socialist writers",
+   "claim": "the redirect's target defines the host as a non-profit online encyclopedia, created in 1990, hosting a multilingual library of communist, anarchist and socialist writers",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Wikipedia: a redirect to the host",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 dce3a5b481f2614a…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Marxists Internet Archive, lead s2, s4",
+   "quote": "The collection is maintained by volunteers … All material in the archive is provided free of charge to users, although not necessarily free of copyright.",
+   "claim": "the collection is maintained by volunteers; its material is free of charge, though not necessarily free of copyright",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the host's terms",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 dce3a5b481f2614a…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Marxists Internet Archive, Archival structure ¶2",
+   "quote": "The archive includes section dedicated to specific historical topics, such as the history of the Soviet Union and the Paris Commune, as well as broader subject topics, such as philosophy. It also includes a reference section called the \"Encyclopedia of Marxism\"",
+   "claim": "the article names the host's historical sections (the Soviet Union, the Paris Commune) and a reference section, the 'Encyclopedia of Marxism'; it does not name the Encyclopedia of anti-Revisionism On-Line",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Wikipedia: a redirect to the host",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 dce3a5b481f2614a…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Marxists Internet Archive — Encyclopedia of anti-Revisionism On-Line",
+  "B2": "Marxists Internet Archive — What is Anti-Revisionism: Encyclopedia of anti-Revisionism On-Line",
+  "B3": "Marxists Internet Archive — MIA: History: Encyclopedia of anti-Revisionism On-Line",
+  "B4": "Harvard University — The Encyclopedia of anti-Revisionism On",
+  "B5": "Marxists Internet Archive — Encyclopedia of anti-Revisionism On-Line (periodicals)",
+  "B6": "Marxists Internet Archive — MIA Introduction",
+  "B7": "Marxists Internet Archive — erol-intro.htm (HTTP 404)",
+  "B8": "Wikipedia — Encyclopedia of Anti-Revisionism On-Line (redirect to Marxists Internet Archive)"
+ }
+}

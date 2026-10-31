@@ -1,0 +1,474 @@
+{
+ "row": "erol",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim with the entity named (by its name, EROL or its path on marxists.org); R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (anti-revisionist movements, organizations and parties: B1, B2, B4, census kind; archives of movement and party documents, the record of splits, periodical runs: B1, B4, B5, census areas and evidence kind; sections of the Marxists Internet Archive: B3, B4, B8, census relation). Brief substitution 8: #1725 is read at the passages that name the entity or its kind; other deposits enter only where they say something of the entity, by locus. A bare mention, a URL given as a source, a reference line or a list of keywords is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching a class pattern, URLs stripped, was read at its passage (47 sentences in 24 texts).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1725,
+   "strata": [
+    "D"
+   ],
+   "reason": "Ils ne sont pas marxistes (the census's anchor): its SDS record is a document held in EROL's New Communist Movement section (the source link marxists.org/history/erol/ncm-1/rep-sds.pdf), read as written by the winning side, the split taking the place of the discussion (D, by the entity's path)",
+   "claims": [
+    "D1725-01",
+    "D1725-02"
+   ],
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "the anchor at the passages that name the entity's kind: the New Communist Movement's succession of parties in the conventional reading (line 61); the endings of disputes (63, 81); critique carried by its own journals and papers (169); the organ, holder and route a defeated critique loses or keeps (365, 369); the split recorded and argued or enacted (371); omission as the expulsion form (373) (O-class: anti-revisionist movements; archives of movement and party documents, the record of splits). Not string-pass O candidates (O0014–O0017 are its reference lines, rejected); found by reading the class matches and the anchor",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04",
+    "O1725-05",
+    "O1725-06",
+    "O1725-07",
+    "O1725-08"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/encyclopedia-of-anti-revisionism-on-line-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, PER notes, query note, title finding and originator basis for the entity's capture (OBS-34ab72c3b78b, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/erol/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'erol'], organizing_question, anchor, areas)",
+   "reason": "the maryleelabor census record of the entity, field by field with its evidence, and its ml_reading, the archive's reading",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26",
+    "ML-27",
+    "ML-28",
+    "ML-29",
+    "ML-30",
+    "ML-31",
+    "ML-32",
+    "ML-33",
+    "ML-34",
+    "ML-35",
+    "ML-36"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1725,
+   "cands": [
+    "R0001"
+   ],
+   "reason": "the SDS sentence; its 'archive object' is the word 'Labor' (Progressive Labor), not an archive object; no relation stated"
+  },
+  {
+   "dep": 1725,
+   "cands": [
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0017"
+   ],
+   "reason": "reference lines and quotations sourced to marxists.org's Marx, Engels, Luxemburg and Mao texts; URLs given as sources"
+  },
+  {
+   "dep": 127,
+   "cands": [
+    "O0001"
+   ],
+   "reason": "'MIA' is a membership inference attack (O0001 and three class-pattern sentences); not the host"
+  },
+  {
+   "dep": 130,
+   "cands": [],
+   "reason": "'primary documents' of retrieval sets; another sense"
+  },
+  {
+   "dep": 166,
+   "cands": [
+    "O0002",
+    "O0003",
+    "O0004"
+   ],
+   "reason": "'primary documents' in the Reference Commitment Model (O0002–O0004); another sense"
+  },
+  {
+   "dep": 217,
+   "cands": [],
+   "reason": "'Keep primary documents clear and accessible' (a response in a protocol); another sense"
+  },
+  {
+   "dep": 299,
+   "cands": [
+    "O0005"
+   ],
+   "reason": "'the primary document is liquidated' (O0005, the Maria pattern); another sense"
+  },
+  {
+   "dep": 368,
+   "cands": [],
+   "reason": "'these are the primary documents' (interfaces as texts); another sense"
+  },
+  {
+   "dep": 557,
+   "cands": [],
+   "reason": "APZPZ, a genre of primary document on Zenodo; another sense"
+  },
+  {
+   "dep": 558,
+   "cands": [],
+   "reason": "the same lexicon block as #557; another sense"
+  },
+  {
+   "dep": 843,
+   "cands": [],
+   "reason": "marxists.org's editorial note on the 1844 Manuscripts and the Marx-Engels-Lenin Institute's 'Marxist-Leninist texts'; the MIA's Marx section and the Soviet editors, nothing of the encyclopedia or the anti-revisionist movements"
+  },
+  {
+   "dep": 875,
+   "cands": [],
+   "reason": "OpenAIRE's 'four primary documents'; another sense"
+  },
+  {
+   "dep": 891,
+   "cands": [],
+   "reason": "the same sentence as #368; another sense"
+  },
+  {
+   "dep": 1065,
+   "cands": [],
+   "reason": "'the primary documents' of Phase X; another sense"
+  },
+  {
+   "dep": 1066,
+   "cands": [],
+   "reason": "the same sentence as #1065; another sense"
+  },
+  {
+   "dep": 1269,
+   "cands": [],
+   "reason": "a heading 'Primary Document'; another sense"
+  },
+  {
+   "dep": 1384,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "'the user's encounter with primary documents' (O0006); another sense"
+  },
+  {
+   "dep": 1443,
+   "cands": [],
+   "reason": "a heading 'Primary documents and blog corpus'; another sense"
+  },
+  {
+   "dep": 1531,
+   "cands": [],
+   "reason": "marxists.org excluded 'as edited-text hazards' from the seating of the Manifesto's witnesses: a claim on the MIA's Marx texts as witnesses, nothing of the encyclopedia (brief substitution 8)"
+  },
+  {
+   "dep": 1647,
+   "cands": [
+    "O0007"
+   ],
+   "reason": "the 1844 manuscript tradition and its editors, marxists.org apparatus among them (O0007); the MIA's Marx section"
+  },
+  {
+   "dep": 1649,
+   "cands": [
+    "O0008"
+   ],
+   "reason": "'the contest's primary documents' (O0008); another sense"
+  },
+  {
+   "dep": 1655,
+   "cands": [
+    "O0009"
+   ],
+   "reason": "the same sentence as #1649 (O0009); another sense"
+  },
+  {
+   "dep": 1668,
+   "cands": [
+    "O0010",
+    "O0011",
+    "O0012",
+    "O0013"
+   ],
+   "reason": "footnotes and a note on marxists.org texts of Marx (O0010–O0013): reference lines"
+  },
+  {
+   "dep": 1696,
+   "cands": [],
+   "reason": "WP:PRIMARY and primary documents; another sense"
+  },
+  {
+   "dep": 1697,
+   "cands": [],
+   "reason": "the same sentence as #1696; another sense"
+  }
+ ],
+ "hop": {
+  "from": [
+   1725
+  ],
+  "candidates": 42,
+  "admitted": 0,
+  "reading": "each hop candidate (all forward: the deposits #1725 cites) read by title and by the class-pattern reading of the whole archive above, which found a class-pattern sentence in none of them but #1066 ('primary documents' in another sense); none names the entity, EROL's path, its host's sections or its classes; their claims on critique and its ending (#465, #469, #470, #501, #517, #1637, #1660 among them) enter this row through #1725, which states them at its own loci",
+  "rejected": [
+   {
+    "cand": "H0001",
+    "dep": 18
+   },
+   {
+    "cand": "H0002",
+    "dep": 208
+   },
+   {
+    "cand": "H0003",
+    "dep": 209
+   },
+   {
+    "cand": "H0004",
+    "dep": 210
+   },
+   {
+    "cand": "H0005",
+    "dep": 233
+   },
+   {
+    "cand": "H0006",
+    "dep": 256
+   },
+   {
+    "cand": "H0007",
+    "dep": 465
+   },
+   {
+    "cand": "H0008",
+    "dep": 466
+   },
+   {
+    "cand": "H0009",
+    "dep": 469
+   },
+   {
+    "cand": "H0010",
+    "dep": 470
+   },
+   {
+    "cand": "H0011",
+    "dep": 476
+   },
+   {
+    "cand": "H0012",
+    "dep": 481
+   },
+   {
+    "cand": "H0013",
+    "dep": 482
+   },
+   {
+    "cand": "H0014",
+    "dep": 499
+   },
+   {
+    "cand": "H0015",
+    "dep": 501
+   },
+   {
+    "cand": "H0016",
+    "dep": 502
+   },
+   {
+    "cand": "H0017",
+    "dep": 506
+   },
+   {
+    "cand": "H0018",
+    "dep": 508
+   },
+   {
+    "cand": "H0019",
+    "dep": 509
+   },
+   {
+    "cand": "H0020",
+    "dep": 517
+   },
+   {
+    "cand": "H0021",
+    "dep": 550
+   },
+   {
+    "cand": "H0022",
+    "dep": 595
+   },
+   {
+    "cand": "H0023",
+    "dep": 620
+   },
+   {
+    "cand": "H0024",
+    "dep": 738
+   },
+   {
+    "cand": "H0025",
+    "dep": 772
+   },
+   {
+    "cand": "H0026",
+    "dep": 950
+   },
+   {
+    "cand": "H0027",
+    "dep": 1066
+   },
+   {
+    "cand": "H0028",
+    "dep": 1206
+   },
+   {
+    "cand": "H0029",
+    "dep": 1439
+   },
+   {
+    "cand": "H0030",
+    "dep": 1540
+   },
+   {
+    "cand": "H0031",
+    "dep": 1550
+   },
+   {
+    "cand": "H0032",
+    "dep": 1616
+   },
+   {
+    "cand": "H0033",
+    "dep": 1630
+   },
+   {
+    "cand": "H0034",
+    "dep": 1632
+   },
+   {
+    "cand": "H0035",
+    "dep": 1634
+   },
+   {
+    "cand": "H0036",
+    "dep": 1636
+   },
+   {
+    "cand": "H0037",
+    "dep": 1637
+   },
+   {
+    "cand": "H0038",
+    "dep": 1660
+   },
+   {
+    "cand": "H0039",
+    "dep": 1678
+   },
+   {
+    "cand": "H0040",
+    "dep": 1679
+   },
+   {
+    "cand": "H0041",
+    "dep": 1680
+   },
+   {
+    "cand": "H0042",
+    "dep": 1724
+   }
+  ]
+ },
+ "observations": [
+  "#1725 names the entity once, by the path of the document it cites for the SDS case (marxists.org/history/erol/ncm-1/rep-sds.pdf, line 81); it does not name the Encyclopedia of anti-Revisionism On-Line or EROL in prose. The reading of EROL as an organ of the losing side is the census record's ml_reading (ML-24, ML-25), which the Capture Registry's findings[1] attributes to #1725 (CAP-1-04).",
+  "The string pass's O-class rule returned no sentence of #1725's kind passages (their terms, organ, holder, route, split, are outside the script's category vocabulary); they were found by reading the class matches and the anchor at the loci the brief names.",
+  "No deposit other than #1725 names the anti-revisionist movements, the New Communist Movement or the encyclopedia; the archive's sentences naming marxists.org concern its Marx texts (#843, #1531, #1647, #1668)."
+ ],
+ "counts": {
+  "string_pass": {
+   "D_sentences": 1,
+   "D_deposits": 1,
+   "R_sentences": 1,
+   "R_deposits": 1,
+   "O_direct": 0,
+   "O_class": 17,
+   "O_deposits": 9,
+   "H_candidates": 42
+  },
+  "class_sentences_read": 47,
+  "class_texts_read": 24,
+  "deposits_candidate": 24,
+  "deposits_admitted": 1,
+  "deposits_admitted_with_claims": 1,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 42,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "ml": 36,
+   "deposit": 10
+  }
+ },
+ "files": {
+  "summary": "datasets/negative-of-the-negative/v2/traversal/erol/summary.json",
+  "D": "datasets/negative-of-the-negative/v2/traversal/erol/candidates-D.jsonl",
+  "R": "datasets/negative-of-the-negative/v2/traversal/erol/candidates-R.jsonl",
+  "O": "datasets/negative-of-the-negative/v2/traversal/erol/candidates-O.jsonl",
+  "H": "datasets/negative-of-the-negative/v2/traversal/erol/candidates-H.jsonl"
+ }
+}

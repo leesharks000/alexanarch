@@ -1,0 +1,1417 @@
+{
+ "row": "labor-notes",
+ "address": "Labor Notes",
+ "addresses": [
+  "Labor Notes"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), or the card's title for the unreachable card; 56/56 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', the five cards of the registry's cite_list (B1 labornotes.org, the home page, the census's own page labor-notes--home, the same text; B2 the Wikipedia article, which is also the row's 'wikipedia' origin; B3 'Labor Notes | Brooklyn NY', unreachable, title only; B4 the 2024 conference page; B5 the Labor Network for Sustainability's recap) and six further titles from the source list the paste shows under the answer's first paragraph, which the cite_list does not carry and §3.1(a) admits as sources the body names (B6 the subscription page; B7 a Washington Socialist reflection; B8 the 2026 conference report; B9 the X profile; B10 the Bronfenbrenner article, title truncated in the paste; B11 the 2022 conference videos); 'own_page', the census's own page that T did not surface (B12 the About page; the census's other own page, the home page, is card B1); 'wikipedia', the article 'Labor Notes' (B2, carried once). The census's evidence all carries basis 'operator', so there is no 'census_third_party' origin. The census records no unread source for this entity.",
+ "lineage_note": "Lineages: what it is (B1, B7, B9, census); the magazine and its publisher (B1, B2, B4, B6, B12, census); what it promotes (B2, B12); origin and history (B2, census); location (B1, B2, B3, B9); critique of union leaderships and independence (B12, census); reform caucuses and union democracy (B1, B2, B9); reporting: strikes and labor action (B1, B10, census); conferences (B2, B4, B5, B7, B8, B11, B12); books, schools and support (B2, B7, B12, census); the encyclopedia's own notices and the homonym (B2, B7). B1's self-description recurs verbatim on B12's opening and in substance on B9's bio: one lineage, B1 carrying it. The census's kind, operator, aka, ml_reading's second sentence, data_access, license, lifecycle, founded and count restate B1 and B12 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1-census.* and B12.* the census's saved copies; B2.wiki the raw wikitext; B11-alt.* the variant node; T1-labor-notes-aimode-20261031.txt the registry's transcript string; fetchlog.txt the fetch log); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "role": "AI Mode card 1 (and the census own page labor-notes--home, the same text)",
+   "card": "Labor Notes — Labor Notes |",
+   "url": "https://labornotes.org/",
+   "kind": "AI Mode card (the operator's home page: current stories, the self-description, the footer); the census's own page labor-notes--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1.html",
+     "sha256": "5d5ab5ac3ca58086dd1dfdb21536b199c00f91fc0f94de876b01aaa6e049dca2"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1.txt",
+     "sha256": "c6212b52b8cbafc447a151ba5745d6e193d05976558cebaf007e5aa17fb11502"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1-census.html",
+     "sha256": "ccc7ce712d6e262a44cbf009ae43320ef78a274952b0855ab9afce86e5597949"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1-census.txt",
+     "sha256": "4c3902e27e5d9d23f7270d8383c1e12ce952f4a96f6286385aa08e8544770033"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:05Z",
+    "http": 200,
+    "url": "https://labornotes.org/",
+    "final_url": "https://labornotes.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1.html",
+    "raw_sha256": "5d5ab5ac3ca58086dd1dfdb21536b199c00f91fc0f94de876b01aaa6e049dca2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1.txt",
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B1-census.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "census_copy": {
+     "src": "labor-notes--home",
+     "sha256": "ccc7ce712d6e262a44cbf009ae43320ef78a274952b0855ab9afce86e5597949",
+     "fetched": "2026-10-31T21:28:01Z",
+     "http": "200",
+     "read": "2026-10-31",
+     "agrees": "text identical; bytes differ in per-request tokens"
+    }
+   },
+   "names_operator": "yes ('Labor Notes'; footer 'Labor Education and Research Project © 2005-2023.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL from the card's site and title ('Labor Notes |', the page's own <title>). Refetched 2026-10-31T22:59:05Z (sha256 5d5ab5ac…); the census's saved copy labor-notes--home (sha256 ccc7ce71…, fetched 21:28:01Z the same day) differs only in Drupal's per-request theme tokens: the extracted text of the two is identical (B1.txt against B1-census.html run through the same extractor), so the card and the census's own page are one page, carried once, as a card. B1-census.txt is the census's own text of its copy. The page carries stories dated 26–29 October 2026.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "Labor Notes |",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 2 and the entity's Wikipedia article (origin 'wikipedia' carried by the same source)",
+   "card": "Wikipedia — Labor Notes - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Labor_Notes",
+   "kind": "Wikipedia article 'Labor Notes' (oldid 1377746659, last edited 30 September 2026): the magazine and its publisher",
+   "files": {
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.wiki",
+     "sha256": "17b1c5d574876131eebdebcedee1eeb0f5d435deb0aea52d0051dd6074c9226f"
+    },
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.html",
+     "sha256": "7547c586df051e4e74d6446d4022f9b5635cc05e16c11665b1d43925409cdf4e"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.txt",
+     "sha256": "9e4527628b9927d3f75a890ddfe19e4e2b8f94741c3738672c199b8cda8e4af0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:06Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Labor_Notes",
+    "final_url": "https://en.wikipedia.org/wiki/Labor_Notes",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.html",
+    "raw_sha256": "7547c586df051e4e74d6446d4022f9b5635cc05e16c11665b1d43925409cdf4e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "wikitext": {
+     "at": "2026-10-31T22:59:05Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Labor_Notes&action=raw",
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B2.wiki",
+     "sha256": "17b1c5d574876131eebdebcedee1eeb0f5d435deb0aea52d0051dd6074c9226f"
+    }
+   },
+   "names_operator": "yes ('It is published by the Labor Education and Research Project')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "The card is the article; the article is also the row's 'wikipedia' origin, carried once. Raw wikitext (action=raw) HTTP 200 and the rendered page HTTP 200, no redirect; the article opens with the hatnote 'This article is about the magazine. For the alternative currency, see Labour voucher.' and two maintenance notices of April 2025 (promotional content; more citations needed). B2.txt is the rendered page's text.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "Labor Notes - Wikipedia",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 3",
+   "card": "Labor Notes — Labor Notes | Brooklyn NY",
+   "url": null,
+   "kind": "AI Mode card (site 'Labor Notes'; title only, no snippet in the registry)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tried": "Unreachable: the card's URL cannot be determined from its title. Tried 2026-10-31: WebSearch '\"Labor Notes | Brooklyn NY\" labornotes.org' and 'Labor Notes Brooklyn NY 55 Washington St labor education research project' (no page so titled; results are labornotes.org listing pages); https://labornotes.org/brooklyn HTTP 404; https://labornotes.org/contact HTTP 200 titled 'Contact Us | Labor Notes'. Every labornotes.org page fetched carries the footer 'Mailing Address: 55 Washington St, Suite 522, Brooklyn, NY 11201' (B1 F5), so the title may be a listing's rendering of the home page with its address; this is not established. The card's title stands as its only text."
+   },
+   "names_operator": "yes (the title 'Labor Notes')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "Unreachable: the card's URL cannot be determined from its title. Tried 2026-10-31: WebSearch '\"Labor Notes | Brooklyn NY\" labornotes.org' and 'Labor Notes Brooklyn NY 55 Washington St labor education research project' (no page so titled; results are labornotes.org listing pages); https://labornotes.org/brooklyn HTTP 404; https://labornotes.org/contact HTTP 200 titled 'Contact Us | Labor Notes'. Every labornotes.org page fetched carries the footer 'Mailing Address: 55 Washington St, Suite 522, Brooklyn, NY 11201' (B1 F5), so the title may be a listing's rendering of the home page with its address; this is not established. The card's title stands as its only text.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "Labor Notes | Brooklyn NY",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "undated"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 4",
+   "card": "Labor Notes — 2024 Labor Notes Conference: April 19-21 | Labor Notes",
+   "url": "https://labornotes.org/2024",
+   "kind": "AI Mode card (the operator's page for the 2024 conference)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B4.html",
+     "sha256": "1b8b1a8eaa93c367cc7fc6e7ab192e3722a2d8362e21d6be72044cfd2749fe41"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B4.txt",
+     "sha256": "c5785fbbb28ce39ce643db723277e2da3f086d19635b13fd1a0f632052da42ef"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:07Z",
+    "http": 200,
+    "url": "https://labornotes.org/2024",
+    "final_url": "https://labornotes.org/2024",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B4.html",
+    "raw_sha256": "1b8b1a8eaa93c367cc7fc6e7ab192e3722a2d8362e21d6be72044cfd2749fe41",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B4.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Labor Notes'; footer)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL by WebSearch on the title; the page's <title> matches the card's title verbatim. The registry's cite_list gives the site 'Labor Notes'; the paste shows 'LABOR NOTES CONFERENCE' above the title.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "2024 Labor Notes Conference: April 19-21 | Labor Notes",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2024 (the conference April 19-21, 2024)"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 5",
+   "card": "Labor Network for Sustainability — Labor Notes 2024 Recap - Labor Network for Sustainability",
+   "url": "https://www.labor4sustainability.org/articles/labor-notes-2024-recap/",
+   "kind": "AI Mode card (a third party's report on the 2024 conference)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B5.html",
+     "sha256": "1f6a81bfaf67810aefa3fa63fdfde29ca143f7ab970e5905e8b57360b1e480ef"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B5.txt",
+     "sha256": "36cea45e784a2d6e3d12c0e61437a6363e859d00b0764fdfeb3cb46d6c46d758"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:11Z",
+    "http": 200,
+    "url": "https://www.labor4sustainability.org/articles/labor-notes-2024-recap/",
+    "final_url": "https://www.labor4sustainability.org/articles/labor-notes-2024-recap/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B5.html",
+    "raw_sha256": "1f6a81bfaf67810aefa3fa63fdfde29ca143f7ab970e5905e8b57360b1e480ef",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B5.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "no (names Labor Notes as the conference's host; not its publisher)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL by WebSearch on the title and site; the page's <title> matches the card's title verbatim. Byline Chris Litchfield, LNS Actions and Logistics Coordinator; written the month after the conference ('last month').",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": 5
+    }
+   ],
+   "id": "B5",
+   "card_title": "Labor Notes 2024 Recap - Labor Network for Sustainability",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2024-05 (the month after the April 2024 conference, by its own 'last month')"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "Labor Notes — Labor Notes Subscription | Labor Notes",
+   "url": "https://labornotes.org/store/labor-notes-subscription",
+   "kind": "a title in the source list the paste shows under the answer's first paragraph (the operator's subscription page)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B6.html",
+     "sha256": "3469e6f73e800866f5eccac900cd2f7a7b6e0ea07312c79b11176a1a1a5863f2"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B6.txt",
+     "sha256": "28d50a1f50435f6c7abcbfbd1b49ee60238642cce1f360751463af75b02d8015"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:11Z",
+    "http": 200,
+    "url": "https://labornotes.org/store/labor-notes-subscription",
+    "final_url": "https://labornotes.org/store/labor-notes-subscription",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B6.html",
+    "raw_sha256": "3469e6f73e800866f5eccac900cd2f7a7b6e0ea07312c79b11176a1a1a5863f2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B6.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Labor Notes')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "Named in T's source list ('Labor Notes Subscription | Labor Notes') and absent from the registry's cite_list of five; admitted under §3.1(a) ('every source its body names') and kept marked. https://labornotes.org/subscribe redirects here; the page's <title> matches.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B6",
+   "card_title": "Labor Notes Subscription | Labor Notes",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "undated"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "Washington Socialist — Reflections from Labor Notes 2024",
+   "url": "https://washingtonsocialist.mdcdsa.org/ws-articles/24-06-labor-notes-2024",
+   "kind": "a title in T's source list (site not shown in the paste): a participant's reflection in the Metro DC DSA's Washington Socialist",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B7.html",
+     "sha256": "a110d5656ce1a30b42aef06f02192a6ffde1c0b2721d6e0549d01002967f1eac"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B7.txt",
+     "sha256": "c693b469c4baba518ab6da06466f340181ab56dd8868394ed8c0d7eecc7e0db1"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:12Z",
+    "http": 200,
+    "url": "https://washingtonsocialist.mdcdsa.org/ws-articles/24-06-labor-notes-2024",
+    "final_url": "https://washingtonsocialist.mdcdsa.org/ws-articles/24-06-labor-notes-2024",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B7.html",
+    "raw_sha256": "a110d5656ce1a30b42aef06f02192a6ffde1c0b2721d6e0549d01002967f1eac",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B7.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "The paste gives the title only; the URL by WebSearch on the title (one page so titled: 'Reflections from Labor Notes 2024 - Washington Socialist'). Dated 'Summer 2024'. A DSA chapter's publication, which states its own limit (F34).",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B7",
+   "card_title": "Reflections from Labor Notes 2024",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2024 (Summer 2024)"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "Labor Notes — Learning, Recharging, Uniting at Labor Notes 2026 | Labor Notes",
+   "url": "https://labornotes.org/2026/07/learning-recharging-uniting-labor-notes-2026",
+   "kind": "a title in T's source list: the operator's report on the 2026 conference",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B8.html",
+     "sha256": "7f82e2e43e67f74bfb5f4a34851604464c3f360b3f958dd56f31499990ac3b0b"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B8.txt",
+     "sha256": "31f37b9278d847930006a2541cee3ae5e993164e7119b32b02b2e8caf3b2589f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:13Z",
+    "http": 200,
+    "url": "https://labornotes.org/2026/07/learning-recharging-uniting-labor-notes-2026",
+    "final_url": "https://labornotes.org/2026/07/learning-recharging-uniting-labor-notes-2026",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B8.html",
+    "raw_sha256": "7f82e2e43e67f74bfb5f4a34851604464c3f360b3f958dd56f31499990ac3b0b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B8.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Labor Notes')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL by WebSearch on the title; <title> matches. Dated July 02, 2026, by Alexandra Bradbury and Luis Feliz Leon.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B8",
+   "card_title": "Learning, Recharging, Uniting at Labor Notes 2026 | Labor Notes",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2026-07-02"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "X — Labor Notes (@labornotes) / X",
+   "url": "https://x.com/labornotes",
+   "kind": "a title in T's source list: the operator's X profile",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B9.html",
+     "sha256": "819bff7d0eefa5daafb854dba8ee8b231b87267f12788b4b1e7d0391fd8aab92"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B9.txt",
+     "sha256": "5e0e88ef19475fbccecf54729446937f1e1bd1a2536f06343f895d9d0c4c4213"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:14Z",
+    "http": 200,
+    "url": "https://x.com/labornotes",
+    "final_url": "https://x.com/labornotes",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B9.html",
+    "raw_sha256": "819bff7d0eefa5daafb854dba8ee8b231b87267f12788b4b1e7d0391fd8aab92",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B9.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Labor Notes', '@labornotes')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL from the handle in the title. HTTP 200 with the census agent: the profile header (bio, location, join date) and recent posts rendered server-side; the posts are undated in the saved text except the pinned post (Aug 7, 2024).",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B9",
+   "card_title": "Labor Notes (@labornotes) / X",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2026-10-31 (the profile as fetched)"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "Labor Notes — We Can’t Rebuild the Labor Movement Without Taking on Big Targets | Labor Notes",
+   "url": "https://labornotes.org/2025/10/we-cant-rebuild-labor-movement-without-taking-big-targets",
+   "kind": "a title in T's source list, truncated in the paste ('We Can't Rebuild the Labor Movement Without Taking on Big ...', site not shown): an article in the operator's roundtable series",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B10.html",
+     "sha256": "bc9b7576e7360df4c9ad33d1973303be7f5c9fe8b62e42267eed2c78568ac82d"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B10.txt",
+     "sha256": "447b86d4c24325499faae4bd4bae1431f44116abf07ea54d30e4f7697775e157"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:14Z",
+    "http": 200,
+    "url": "https://labornotes.org/2025/10/we-cant-rebuild-labor-movement-without-taking-big-targets",
+    "final_url": "https://labornotes.org/2025/10/we-cant-rebuild-labor-movement-without-taking-big-targets",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B10.html",
+    "raw_sha256": "bc9b7576e7360df4c9ad33d1973303be7f5c9fe8b62e42267eed2c78568ac82d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B10.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Labor Notes roundtable series')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "The truncated title completed by WebSearch ('We Can’t Rebuild the Labor Movement Without Taking on Big Targets'); the article runs on labornotes.org (October 22, 2025, Kate Bronfenbrenner) and is reprinted by The American Prospect, Portside, ZNetwork and PopularResistance, so the site of T's entry is not determined; the original on labornotes.org is the one saved.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B10",
+   "card_title": "We Can't Rebuild the Labor Movement Without Taking on Big ...",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2025-10-22"
+  },
+  {
+   "origin": "card",
+   "role": "T's source list (not on the registry's cite_list)",
+   "card": "Labor Notes — Videos from the 2022 Labor Notes Conference | Labor Notes",
+   "url": "https://labornotes.org/node/6968",
+   "kind": "a title in T's source list: the operator's page of conference videos, 2022",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11.html",
+     "sha256": "be9d633e6b6158311f1b3bc21599bc340117db6048ad077b3fac85bf29f04d58"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11.txt",
+     "sha256": "a52368c001ea5bc4c26b41c29b6ad4f06b4c84f996d3b29df063b4092dab8e3c"
+    },
+    "B11-alt.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11-alt.html",
+     "sha256": "71923e72774ac62daff6883f00f969979c85ba33bf1c28009b0b991d88340394"
+    },
+    "B11-alt.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11-alt.txt",
+     "sha256": "9f6fe528bd4457417a488ca252795fec25cdb2aa2fb56098910cde39b781a2e6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:15Z",
+    "http": 200,
+    "url": "https://labornotes.org/node/6968",
+    "final_url": "https://labornotes.org/node/6968",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11.html",
+    "raw_sha256": "be9d633e6b6158311f1b3bc21599bc340117db6048ad077b3fac85bf29f04d58",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11.txt",
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11-alt.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "variant": {
+     "url": "https://labornotes.org/node/6967",
+     "at": "2026-10-31T22:59:16Z",
+     "http": 200,
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B11-alt.html",
+     "sha256": "71923e72774ac62daff6883f00f969979c85ba33bf1c28009b0b991d88340394"
+    }
+   },
+   "names_operator": "yes ('Labor Notes')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "Two nodes carry the title (node/6968, June 22, 2022, saved as B11; node/6967, June 21, 2022, a bilingual variant, saved as B11-alt); B11 is ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-notes-aimode-20261031",
+     "card": "source list"
+    }
+   ],
+   "id": "B11",
+   "card_title": "Videos from the 2022 Labor Notes Conference | Labor Notes",
+   "card_snippet": null,
+   "card_note": null,
+   "date": "2022-06-22"
+  },
+  {
+   "origin": "own_page",
+   "role": "census own page labor-notes--about (not surfaced by T)",
+   "card": "Labor Notes — About | Labor Notes",
+   "url": "https://labornotes.org/about",
+   "kind": "the operator's About page (self-description, the magazine, books, conferences, schools, donations, reprints)",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B12.html",
+     "sha256": "321d1dc3289118f7aafee8a34d0b7e72ef4627a4f894f4105af0c54a9f0ad620"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B12.txt",
+     "sha256": "3e336ce2a05718afe6ac089ee7ecdab0c48df716a2c9115c0f2e0bf2611441e7"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "labor-notes--about",
+     "url": "https://labornotes.org/about",
+     "http": "200",
+     "fetched": "2026-10-31T21:28:01Z",
+     "sha256": "321d1dc3289118f7aafee8a34d0b7e72ef4627a4f894f4105af0c54a9f0ad620",
+     "read": "2026-10-31"
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B12.html",
+    "raw_sha256": "321d1dc3289118f7aafee8a34d0b7e72ef4627a4f894f4105af0c54a9f0ad620",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-notes-20261031/B12.txt"
+    ],
+    "refetched": false
+   },
+   "names_operator": "yes ('Labor Notes'; footer)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "The census's saved copy (sources/labor-notes--about.html.gz, gunzipped, and its .txt), url https://labornotes.org/about, HTTP 200, fetched 2026-10-31T21:28:01Z, sha256 321d1dc3… (sources/manifest.json); admitted beside the cards per the operator's ruling and not surfaced by T. Its conference paragraph still announces June 12-14, 2026 as 'Our next conference' (F53).",
+   "surfaced_by_T": [],
+   "id": "B12",
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "not_surfaced": "admitted per the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); T did not surface it"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Get Email Updates",
+   "quote": "Labor Notes is a media and organizing project that has been the voice of union activists who want to put the movement back in the labor movement since 1979.",
+   "claim": "a media and organizing project, the voice since 1979 of union activists who want to put the movement back in the labor movement",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a media and organizing project, the voice of union activists",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home, featured story 1",
+   "quote": "Members Alarmed by End-Run around Democracy at Buffalo Health Care Local … October 29, 2026 / Sarah Hughes",
+   "claim": "its lead story on 31 October 2026: members alarmed by an end-run around democracy at a Buffalo health care local",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reform caucuses and union democracy",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home, featured story 3",
+   "quote": "UFCW Members Protect Local Election After Sham Merger Attempt … October 26, 2026 / Lisa Xu",
+   "claim": "a current story: UFCW members protect a local election after a sham merger attempt",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reform caucuses and union democracy",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home, featured story 2",
+   "quote": "State Workers Strike Across California … October 28, 2026 / Kari Thompson",
+   "claim": "a current story: state workers strike across California",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reporting: strikes and labor action",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Mailing Address: 55 Washington St, Suite 522, Brooklyn, NY 11201",
+   "claim": "its mailing address is in Brooklyn, NY",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "location",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Labor Education and Research Project © 2005-2023.",
+   "claim": "the footer's copyright holder is the Labor Education and Research Project, © 2005-2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "2026-10-31 (the page as fetched; latest story 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c6212b52b8cbafc4…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1",
+   "quote": "Labor Notes is a monthly magazine that supports union organizing and collective bargaining in the United States.",
+   "claim": "a monthly magazine that supports union organizing and collective bargaining in the United States",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the magazine and its publisher",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1",
+   "quote": "It is published by the Labor Education and Research Project, an American non-profit organization and network for rank-and-file union members and grassroots labor activists.",
+   "claim": "published by the Labor Education and Research Project, a non-profit organization and network for rank-and-file members and grassroots activists",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": true,
+   "lineage": "the magazine and its publisher",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶2",
+   "quote": "The magazine reports news and analysis about labor activity and issues facing the labor movement. It promotes a revitalization of the labor movement through social movement unionism and union democracy.",
+   "claim": "it reports labor news and analysis and promotes revitalization through social movement unionism and union democracy",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it promotes: organizing and member-run unions",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶2",
+   "quote": "Labor Notes is based in Detroit, Michigan, with an East Coast office in Brooklyn, New York.",
+   "claim": "based in Detroit, with an East Coast office in Brooklyn",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "location",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶2",
+   "quote": "It grew from a strategy by labor activists who sought to build grassroots connections across unions and industries. It works to bridge the gap between isolated rank-and-file caucuses and reform groups. The most notable example is Teamsters for a Democratic Union.",
+   "claim": "it bridges isolated rank-and-file caucuses and reform groups, Teamsters for a Democratic Union the most notable example",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "reform caucuses and union democracy",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶1",
+   "quote": "Labor Notes was launched to help strengthen those linkages following the Bituminous Coal Strike of 1977–1978 and the cross-union solidarity it generated.",
+   "claim": "launched after the Bituminous Coal Strike of 1977–1978 to strengthen cross-union linkages",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and history",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "infobox",
+   "quote": "First issue March 1979 … Company Labor Education and Research Project",
+   "claim": "first issue March 1979; company the Labor Education and Research Project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶2",
+   "quote": "In 1982, the first Labor Notes conference, Organizing Against Concessions, brought together hundreds of activists. In 1983, Labor Notes published one of its first books, Concessions and How to Beat Them by Jane Slaughter.",
+   "claim": "the first conference in 1982 (Organizing Against Concessions); an early book in 1983 (Slaughter), a sentence the article marks 'citation needed'",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and history",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised",
+   "mark": "the article marks the 1983 sentence '[citation needed]' (December 2025)"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶3",
+   "quote": "It opposed the North American Free Trade Agreement (NAFTA) and published Unions and Free Trade by Kim Moody and Mary McGinn in 1992",
+   "claim": "it opposed NAFTA and published Unions and Free Trade by Kim Moody and Mary McGinn in 1992",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and history",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Books",
+   "quote": "Its best-known titles include A Troublemaker’s Handbook: How to Fight Back Where You Work and Win by Dan La Botz, published in 1991, … Another widely used book is Democracy is Power: Rebuilding Unions from the Bottom Up, by Mike Parker and Martha Gruelle.",
+   "claim": "its best-known books: A Troublemaker’s Handbook (La Botz, 1991) and its sequel; Democracy is Power (Parker and Gruelle)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Conferences",
+   "quote": "Every two years, Labor Notes holds a national conference that brings together more than a thousand union members and leaders from the United States, Canada, Mexico, and other countries. The purpose of these conferences is to help activists build networks based on shared issues. The most recent such conference was in June, 2026.",
+   "claim": "a national conference every two years, more than a thousand members and leaders from several countries, to build networks on shared issues; the most recent in June 2026",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "hatnote",
+   "quote": "This article is about the magazine. For the alternative currency, see Labour voucher.",
+   "claim": "the article is about the magazine; 'Labour voucher' (the alternative currency) is another entity",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia's own notices and the homonym",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "maintenance notices (April 2025)",
+   "quote": "This article contains promotional content. … This article needs more citations.",
+   "claim": "the article carries its own notices: promotional content; more citations needed (April 2025)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia's own notices and the homonym",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised",
+   "note": "the encyclopedia's own maintenance notices, April 2025"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶5",
+   "quote": "As immigrant workers centers grew as new forms of worker self-organization, Labor Notes covered these developments and brought their leaders together at its bi-annual conference.",
+   "claim": "it covered immigrant worker centers and brought their leaders together at its conference",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and history",
+   "date": "2026-09-30 (last edited); the article as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 9e4527628b9927d3…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title (unreachable; title only)",
+   "quote": "Labor Notes | Brooklyn NY",
+   "claim": "a card titled with the name and Brooklyn NY",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "location",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "the card's title (registry cite_list n=3)"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶ 'Labor Notes Conferences are…'",
+   "quote": "Labor Notes Conferences are the biggest gatherings of grassroots union activists, union reformers, and all-around troublemakers out there!",
+   "claim": "its conferences: the biggest gatherings of grassroots union activists, union reformers and troublemakers",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024 (the conference April 19-21, 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c5785fbbb28ce39c…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶ 'More than 200 meetings…'",
+   "quote": "More than 200 meetings and workshops include creative organizing tactics, beating apathy, running for local union office, winning contract campaigns, bargaining over technology, assertive grievance handling, and reviving the strike.",
+   "claim": "more than 200 meetings and workshops in 2024, from running for local union office to reviving the strike",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024 (the conference April 19-21, 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c5785fbbb28ce39c…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶ 'Organize with others…'",
+   "quote": "Face-to-face meetings to share tactics and swap notes are the heart of the Labor Notes Conference. Join an existing industry, union, or caucus meeting—or contact us to set one up.",
+   "claim": "face-to-face meetings, among them caucus meetings, are the heart of the conference",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024 (the conference April 19-21, 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c5785fbbb28ce39c…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "heading; registration notice; WHERE",
+   "quote": "2024 Labor Notes Conference: April 19-21 … This will be the largest conference we've ever had … WHERE: Hyatt Regency O'Hare, Rosemont (Chicago), Illinois",
+   "claim": "the 2024 conference, April 19-21 at the Hyatt Regency O'Hare in Rosemont, registration closed, 'the largest conference we've ever had'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024 (the conference April 19-21, 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c5785fbbb28ce39c…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "footer box 'Subscribe!'",
+   "quote": "Labor news from labor's point of view. $30 for 11 issues.",
+   "claim": "the magazine by subscription, $30 for 11 issues",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "2024 (the conference April 19-21, 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c5785fbbb28ce39c…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Labor Network for Sustainability joined thousands of rank-and-file workers, organizers, and union leaders at the 2024 Labor Notes conference last month",
+   "claim": "the Labor Network for Sustainability joined thousands of rank-and-file workers, organizers and leaders at the 2024 conference",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024-05 (the month after the April 2024 conference, by its own 'last month')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 36cea45e784a2d6e…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "LNS also helped facilitate a Climate Change and Labor meetup building on conversations from the last Labor Notes conference",
+   "claim": "LNS facilitated a Climate Change and Labor meetup at the conference",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024-05 (the month after the April 2024 conference, by its own 'last month')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 36cea45e784a2d6e…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "product description ¶1",
+   "quote": "For four decades Labor Notes has offered activists a ringside view of labor's ups and downs.",
+   "claim": "for four decades a ringside view of labor's ups and downs",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 28d50a1f50435f6c…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "product description ¶2",
+   "quote": "Whether we're reporting on a struggle across the street or around the world, Labor Notes delivers the best labor news and analysis available.",
+   "claim": "it reports struggles near and abroad and calls its news and analysis the best available",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 28d50a1f50435f6c…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Labor Notes is a nonprofit organization founded in 1979 as a publication and movement hub that offers training and resources for rank-and-file union members to build the labor movement through workplace organizing and democratizing unions.",
+   "claim": "a participant's definition: a nonprofit founded in 1979 as a publication and movement hub for rank-and-file members, organizing workplaces and democratizing unions",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a media and organizing project, the voice of union activists",
+   "date": "2024 (Summer 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c693b469c4baba51…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "This year’s conference was the biggest ever, with over 4,700 attendees",
+   "claim": "the 2024 conference the biggest ever, over 4,700 attendees, by a participant's count",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2024 (Summer 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c693b469c4baba51…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "I’ve heard many people credit Labor Notes and its popular book Secrets of a Successful Organizer with helping them succeed in organizing their workplace or taking on other organizing challenges.",
+   "claim": "a participant reports many crediting Labor Notes and Secrets of a Successful Organizer with their organizing",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "2024 (Summer 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c693b469c4baba51…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Content published does not necessarily reflect the views of Metro DC DSA or the national DSA.",
+   "claim": "the publication's own limit: its content does not necessarily reflect Metro DC DSA's or national DSA's views",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia's own notices and the homonym",
+   "date": "2024 (Summer 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c693b469c4baba51…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶2; ¶ 'This year’s 300 workshops'",
+   "quote": "the Labor Notes Conference June 12-14 in Chicago was an oasis of inspiration and solidarity. … This year’s 300 workshops and panels",
+   "claim": "the 2026 conference, June 12-14 in Chicago, with 300 workshops and panels",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2026-07-02",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 31f37b9278d84793…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶ 'At the heart of the conference…'",
+   "quote": "At the heart of the conference each year are sectoral meetings, where workers meet up with others in the same industry from different locations and unions.",
+   "claim": "sectoral meetings across unions are at the heart of each conference",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2026-07-02",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 31f37b9278d84793…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "Labor Notes gives workers a rare chance to come together across unions, sectors, and identities.",
+   "claim": "it gives workers a chance to meet across unions, sectors and identities",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2026-07-02",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 31f37b9278d84793…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "profile header",
+   "quote": "Putting the movement back in the labor movement since 1979. … Detroit, MI … Joined February 2009",
+   "claim": "its X profile: 'Putting the movement back in the labor movement since 1979', location Detroit, MI, joined February 2009",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "location",
+   "date": "2026-10-31 (the profile as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 5e0e88ef19475fbc…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "post",
+   "quote": "An insurgent slate is challenging longtime incumbents in Local 8-Golden State, one of the largest locals in the United Food and Commercial Workers, in what may be the local’s first competitive election in decades",
+   "claim": "a post on an insurgent slate challenging longtime incumbents in UFCW Local 8-Golden State",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reform caucuses and union democracy",
+   "date": "2026-10-31 (the profile as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 5e0e88ef19475fbc…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "pinned post (Aug 7, 2024)",
+   "quote": "\"Every single time that you get frustrated or you run into a wall, someone from Labor Notes is going to be there to pick you up,\" Nora Meek, a founding member of the IATSE CREW reform caucus, says in our new video.",
+   "claim": "a founding member of the IATSE CREW reform caucus on the support Labor Notes gives",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reform caucuses and union democracy",
+   "date": "2026-10-31 (the profile as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 5e0e88ef19475fbc…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "byline; editors' note",
+   "quote": "October 22, 2025 / Kate Bronfenbrenner … [This article is part of a Labor Notes roundtable series: How Can Unions Defend Worker Power Against Trump 2.0?",
+   "claim": "an article of 22 October 2025 by Kate Bronfenbrenner in its roundtable series on defending worker power against Trump 2.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reporting: strikes and labor action",
+   "date": "2025-10-22",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 447b86d4c2432549…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "¶ 'Difficult as it may be…'",
+   "quote": "Difficult as it may be, unions must organize workers in the nation’s largest and most powerful corporations, and they cannot afford to wait for labor law reform or a more favorable administration to do so.",
+   "claim": "Bronfenbrenner's argument: unions must organize the largest corporations without waiting for law reform",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reporting: strikes and labor action",
+   "date": "2025-10-22",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 447b86d4c2432549…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "byline; ¶1",
+   "quote": "June 22, 2022 / Alexandra Bradbury … Thank you to all 4,000 troublemakers who converged in Chicago June 17-19 and made this year's Labor Notes Conference incredible.",
+   "claim": "the 2022 conference, 4,000 in Chicago, June 17-19",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2022-06-22",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 a52368c001ea5bc4…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "The main sessions, a few of the biggest panels, and the concert were livestreamed and are now available in video form.",
+   "claim": "its main 2022 sessions livestreamed and kept as video",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "2022-06-22",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 a52368c001ea5bc4…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶2",
+   "quote": "Through our magazine, website, books, conferences, and workshops, we promote organizing, aggressive strategies to take on employers, labor-community solidarity, and unions that are run by their members.",
+   "claim": "what it promotes: organizing, aggressive strategies against employers, labor-community solidarity, unions run by their members",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it promotes: organizing and member-run unions",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶3",
+   "quote": "Labor Notes is also a network of rank-and-file members, local union leaders, and labor activists who know the labor movement is worth fighting for. We encourage connections between workers in different unions, worker centers, communities, industries, and countries to strengthen the movement—from the bottom up.",
+   "claim": "also a network of rank-and-file members, local leaders and activists, encouraging connections across unions and countries 'from the bottom up'",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "what it promotes: organizing and member-run unions",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶5",
+   "quote": "For the most part, our leaders are doing a poor job of navigating us through the crisis. Some can’t get beyond business-as-usual; others see the need to organize by the millions, but don't believe that workers themselves need to have a say in their unions.",
+   "claim": "its critique of union leaders: a poor job through the crisis; business-as-usual; workers given no say",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": true,
+   "lineage": "critique of union leaderships and independence",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "About ¶6",
+   "quote": "With 45 years of movement building behind us, Labor Notes exists as a resource for leaders and union members who want to combat these trends and chart a new course for the labor movement.",
+   "claim": "it exists as a resource for those who want to combat these trends and chart a new course",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "critique of union leaderships and independence",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "What We Do: The magazine ¶1",
+   "quote": "Labor Notes is best known for our monthly magazine of the same name. We report news about workers that the mainstream media doesn't find worth printing—from workers’ point of view.",
+   "claim": "best known for its monthly magazine, which reports news about workers from workers' point of view",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magazine and its publisher",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "What We Do: The magazine ¶1",
+   "quote": "And as an independent publication, we’re free to include the voices who say we could be doing better—and tell how.",
+   "claim": "as an independent publication it is free to include the voices who say the movement could be doing better",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "critique of union leaderships and independence",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Books and Pamphlets",
+   "quote": "They include best-sellers like A Troublemaker's Handbook 2 and Democracy Is Power … Over the years we’ve sold tens of thousands of these strategy manuals",
+   "claim": "its books include A Troublemaker's Handbook 2 and Democracy Is Power; tens of thousands of manuals sold",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Conferences ¶1",
+   "quote": "Every two years Labor Notes holds a national conference that attracts thousands of activists, about a tenth of them from other countries.",
+   "claim": "a national conference every two years, thousands of activists, about a tenth from other countries",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Conferences ¶2",
+   "quote": "Our next conference is scheduled to take place from June 12-14, 2026, in Chicago, Illinois.",
+   "claim": "the about page announces June 12-14, 2026 in Chicago as its next conference",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conferences",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised",
+   "mark": "superseded_in_field: the conference it announces as next took place June 12-14, 2026 (F35, F17)"
+  },
+  "F54": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Troublemakers Schools and Workshops",
+   "quote": "Labor Notes works with local unions and community groups to organize Troublemakers Schools, bringing labor activists in your city or region together for a day of workshops on grassroots unionism and skills that officers and rank and filers need.",
+   "claim": "Troublemakers Schools with local unions and community groups",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Donating to Labor Notes",
+   "quote": "We rely on your support. Please help us out with a tax-deductible donation !… Hundreds of Labor Notes supporters have signed up as monthly donors.",
+   "claim": "supported by tax-deductible donations; hundreds of monthly donors",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Reprint Requests",
+   "quote": "We are always happy to see Labor Notes stories reprinted. We just ask that you credit both the author and Labor Notes, and if the reprint will be online, include a link to the original story on our site.",
+   "claim": "reprints welcome with credit to the author and Labor Notes and a link online",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "books, schools and support",
+   "date": "undated (the page as fetched 2026-10-31; its conference notice predates June 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 3e336ce2a05718af…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Labor Notes — Labor Notes |",
+  "B2": "Wikipedia — Labor Notes - Wikipedia",
+  "B3": "Labor Notes — Labor Notes | Brooklyn NY",
+  "B4": "Labor Notes — 2024 Labor Notes Conference: April 19-21 | Labor Notes",
+  "B5": "Labor Network for Sustainability — Labor Notes 2024 Recap - Labor Network for Sustainability",
+  "B6": "Labor Notes — Labor Notes Subscription | Labor Notes",
+  "B7": "Washington Socialist — Reflections from Labor Notes 2024",
+  "B8": "Labor Notes — Learning, Recharging, Uniting at Labor Notes 2026 | Labor Notes",
+  "B9": "X — Labor Notes (@labornotes) / X",
+  "B10": "Labor Notes — We Can’t Rebuild the Labor Movement Without Taking on Big Targets | Labor Notes",
+  "B11": "Labor Notes — Videos from the 2022 Labor Notes Conference | Labor Notes",
+  "B12": "Labor Notes — About | Labor Notes"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "row": "unionstats",
+ "address": "Union Membership and Coverage Database",
+ "entity": "The Union Membership and Coverage Database (Unionstats.com; 'Union Membership, Coverage, and Earnings from the CPS'), the Internet data resource of private and public sector labor union membership, coverage and density estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods, constructed by Barry Hirsch (Georgia State University), David Macpherson (Trinity University) and William Even (Miami University), created in 2002 and updated annually; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/unionstats/)",
+ "row_type": "C (a public entity on which the archive bears: an academic data resource of union membership and coverage estimates; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bUnion Membership and Coverage Database\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bunionstats(\\.com|\\.gsu\\.edu)?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bUnion Membership, Coverage, and Earnings from the CPS\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bHirsch,? (and|&) Macpherson\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "union membership, coverage and density: the measured extent of unionization",
+   "pattern": "\\b(union (membership|density|coverage)|unioni[sz]ation rates?|union members(hip)? rates?)\\b",
+   "flags": "i",
+   "basis": "field: B4 (main.htm, the database's own page: 'is an Internet data resource providing private and public sector labor union membership, coverage, and density estimates'); B2 (BLS card snippet: 'the highest union membership rate in 2025'); B3 (EPI card title: 'Union membership data'). The census's own area for the entity, 'worker-power' ('Worker power measured: membership, coverage, rights, and the organizing that builds it'; census.json areas, rows[slug == 'unionstats'].areas) and its record.keeps ('the measured extent of union membership and coverage')."
+  },
+  {
+   "term": "the Current Population Survey (household survey estimates)",
+   "pattern": "(\\bCurrent Population Survey\\b|\\bCPS\\b)",
+   "flags": "",
+   "basis": "field: B4 (main.htm: 'compiled from the monthly household Current Population Survey (CPS) using BLS methods'; 'CPS sample sizes are very small for some cells'); B5 (contents.htm: 'Union Membership and Coverage Database from the CPS'). The census's evidence_kind for the entity, 'survey estimate', and its method ('survey microdata')."
+  },
+  {
+   "term": "the union wage gap: union and nonunion wages",
+   "pattern": "\\b(union wage (gap|premium|differential)s?|nonunion wages?)\\b",
+   "flags": "i",
+   "basis": "field: B5 (contents.htm: 'II. Historical Tables: Union Wages, Nonunion Wages, and Union Wage Gaps, 1973-2022'). The census's holdings and answers for the entity ('the union wage gap by sector and demographic group')."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and each the census's own area, evidence kind or holding for the entity: (1) union membership, coverage and density, the database's object (B4, B2, B3; census area 'worker-power', record.keeps); (2) the Current Population Survey, its source (B4, B5; census evidence_kind 'survey estimate', method); (3) the union wage gap, its second table series (B5; census holdings, answers). The census's anchor, #1725 (Ils ne sont pas marxistes, AXN:0B50), is read at the passages that name the entity's kind (unions as organizations; the holder; the losing side), by the addendum's rule (BRIEF-NEW-ROW-LEFT §8); its census organizing question ('Whose record does it keep, who holds it, and does it keep the losing side in a form that could be taken up later?') is the census's own and is ledgered with the record. The archive's labor-direction instruments (DSL, #771; user labor drag) measure the direction of semantic labor, a class no field source gives the entity; they are named here and not given patterns. The operators' names are not aliases of the entity and are not searched alone; 'Hirsch and Macpherson' is the database's citation form (Wikipedia, Union affiliation by U.S. state, External links, B6).",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address \"Union Membership and Coverage Database\" (union-membership-and-coverage-database-aio-20261031, OBS-e456f01bcece, ADDR-54f491065ff1), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#1439, #1725).",
+ "hop_from": [
+  1439,
+  1725
+ ]
+}

@@ -1,0 +1,57 @@
+{{Short description|Estimation of crowd sizes}}
+[[File:The_million_march_man.jpg|right|thumb|300x300px|''The Million Man March'', [[Washington, D.C.]], October 1995 was the focus of a large crowd counting dispute.]]
+'''Crowd counting''' is the act of counting the total crowd present in a certain area. The people in a certain area are called a [[crowd]]. The most direct method is to actually count each person in the crowd. For example, turnstiles are often used to precisely count the number of people entering an event.<ref>{{Cite web |title=What are Turnstiles? (with pictures) |url=http://www.easytechjunkie.com/what-are-turnstiles.htm |access-date=2022-10-11 |website=EasyTechJunkie |language=en-US}}</ref>
+
+== Modern understanding ==
+
+Since the early 2000s, there has been a shift in the understanding of the phrase "crowd counting". Having moved from a simpler crowd counting method to that of clusters and density maps, there are several improvements for crowd counting methods. Crowd counting can also be defined as estimating the number of people present in a single picture.<ref name=lc>{{Cite journal |first1=Chen Change |last1=Loy |first2=Ke |last2=Chen |first3=Shaogang |last3=Gong |first4=Tao |last4=Xiang|title=Fine-Grained Crowd Counting |journal=IEEE Transactions on Image Processing |year=2021 |volume=30 |pages=2114–2126 |doi=10.1109/TIP.2021.3049938 |pmid=33439838 |arxiv=2007.06146 |bibcode=2021ITIP...30.2114W |s2cid=220496399 }}</ref>
+
+== Methods of counting crowds ==
+Due to the rapid progress in technology and growth of [[Convolutional neural network|CNN (Convolutional Neural Network)]] over the last decade, the usage of CNN in crowd counting has skyrocketed. The CNN based methods can largely be grouped under the following different models:<ref>{{Cite journal |date=2021-10-01 |title=Attention guided feature pyramid network for crowd counting |url=https://www.sciencedirect.com/science/article/abs/pii/S1047320321002108 |journal=Journal of Visual Communication and Image Representation |language=en |volume=80 |article-number=103319 |doi=10.1016/j.jvcir.2021.103319 |issn=1047-3203|last1=Chu |first1=Huanpeng |last2=Tang |first2=Jilin |last3=Hu |first3=Haoji |s2cid=241591128 |url-access=subscription }}</ref>
+
+=== Jacobs' method ===
+
+The most common technique for counting crowds at protests and rallies is Jacobs' method, named for its inventor, [[Herbert Jacobs]]. Jacobs' method involves dividing the area occupied by a crowd into sections, determining an average number of people in each section, and multiplying by the number of sections occupied. According to a report by ''Life's Little Mysteries'', technologies sometimes used to assist such estimations include "lasers, satellites, aerial photography, 3-D grid systems, recorded video footage and surveillance balloons, usually tethered several blocks around an event's location and flying 400 to 800 feet (120 to 240 meters) overhead."<ref name=lc/>
+
+=== Direct regression-based counting ===
+
+This crowd counting method involves using [[Regression analysis|regression]] on global image features to the whole image. Global image features refer to the different properties of certain areas of the photo. For example, global image features include " contour representations, shape descriptions, texture features."<ref>{{Cite web |first1=Dimitri A. |last1=Lisin |first2=Marwan A. |last2=Mattar |first3=Matthew B. |last3=Blaschko |first4=Mark C. |last4=Benfield |first5=Erik G. |last5=Learned-Mille |title=Combining Local and Global Image Features for Object Class Recognition |url=http://vis-www.cs.umass.edu/papers/local_global_workshop.pdf }}</ref>
+
+As distribution information of objects are not accounted for, object localisation cannot be processed via regressions.<ref name=dk>{{cite journal|first1=D. |last1=Kang |first2=Z. |last2=Ma |first3=A. B. |last3=Chan |title=Beyond Counting: Comparisons of Density Maps for Crowd Analysis Tasks—Counting, Detection, and Tracking |journal=IEEE Transactions on Circuits and Systems for Video Technology |volume=29 |issue=5 |pages=1408–1422 |date=May 2019 |doi=10.1109/TCSVT.2018.2837153|arxiv=1705.10118 |s2cid=19706288 }}</ref> Additionally, as this model estimates the crowd density on descriptions of crowd patterns, it ignores individual trackers.<ref name=lc/> This allows regression based models to be very efficient in crowded pictures; if the density per pixel is very high regression models are best suited.
+
+Earlier crowd counting methods employed classical regression models.<ref>{{Cite journal|doi=10.1016/j.patcog.2021.108484 |title=Scene-specific crowd counting using synthetic training images |year=2022 |last1=Delussu |first1=Rita |last2=Putzu |first2=Lorenzo |last3=Fumera |first3=Giorgio |journal=Pattern Recognition |volume=124 |article-number=108484 |bibcode=2022PatRe.12408484D |hdl=11584/341493 |s2cid=245109866 |hdl-access=free }}</ref>
+
+=== Density-based counting ===
+
+Object density maps rely on finding the total number of objects located in a particular area. This is determined by the integral summation of the number of objects in that area.<ref name=dk/> Due to the density values being estimated through low values, density-based counting allows the user to experience advantages of regression-based models alongside localisation of information.<ref name=dk/> Localisation of information refers to the act of maintaining location information.
+
+== Strengthening crowd counting ==
+In order to use the above-mentioned models efficiently, it is important to have a large amount of data. However, as users, we are stuck with limited data i.e. the original image. In order to compensate for these issues, we employ tricks such as random cropping. Random cropping refers to the act of randomly choosing certain sub images from the existing original image.
+
+After performing several iterations of random cropping, the sub images are then fed into the [[machine learning]] algorithm to help the algorithm generalize better.
+
+To tackle the problems associated with crowd counting in heavy density areas  density based counting methods can be employed. These image pyramids are generally employed for crowd counting in places where people gather to perform rituals or practice their religious beliefs. This is because there are different scales of people in different locations within the image.
+
+However, as employing the required algorithms for image pyramids is very expensive, it is financially unstable to depend on these methods. As a result, deep fusion models can be involved.<ref>{{Cite journal |last1=Khan |first1=Sultan Daud |last2=Salih |first2=Yasir |last3=Zafar |first3=Basim |last4=Noorwali |first4=Abdulfattah |date=2021-09-28 |title=A Deep-Fusion Network for Crowd Counting in High-Density Crowded Scenes |journal=International Journal of Computational Intelligence Systems |language=en |volume=14 |issue=1 |page=168 |doi=10.1007/s44196-021-00016-x |issn=1875-6883|doi-access=free }}</ref>
+
+These deep fusion models will employ "neural network(s) to promote the density map regression accuracy."<ref name="go.gale.com">{{Cite journal |last1=Tang |first1=Siqi |last2=Pan |first2=Zhisong |last3=Zhou |first3=Xingyu |date=2017-01-01 |title=Low-Rank and Sparse Based Deep-Fusion Convolutional Neural Network for Crowd Counting |url=https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=1024123X&v=2.1&it=r&id=GALE%7CA546503256&sid=googleScholar&linkaccess=abs |journal=Mathematical Problems in Engineering |language=English |volume=2017 |pages=1–11 |doi=10.1155/2017/5046727|doi-access=free }}</ref> These models will first mark the location of each civilian within the picture. Then, the models shall decide the density maps of the area by using the "pedestrian's location, shape, and perspective distortion."<ref name="go.gale.com"/>  As there are many iterations of the algorithm and scanning processes taking place, the number of people is counted via the head of the person. This is also because there will be many instances when the bodies of the civilians will be overlapping with one another.
+
+== Importance ==
+Crowd counting plays an important role in "public safety, assembly language, and video surveillance"<ref>{{Cite journal |last1=Chu |first1=Huanpeng |last2=Tang |first2=Jilin |last3=Hu |first3=Haoji |date=2021-10-01 |title=Attention guided feature pyramid network for crowd counting |url=https://www.sciencedirect.com/science/article/pii/S1047320321002108 |journal=Journal of Visual Communication and Image Representation |language=en |volume=80 |article-number=103319 |doi=10.1016/j.jvcir.2021.103319 |s2cid=241591128 |issn=1047-3203|url-access=subscription }}</ref>  amongst many things. Without crowd control, through poor planning, several terrible accidents can occur. Some of the most notable ones are the [[Hillsborough disaster|Hillborough disaster]] which took place on April 15 in England. Another memorable incident occurred when [[Louis Farrakhan]] threatened to [[Lawsuit|sue]] the [[Washington, D.C.]] Park Police for announcing that only 400,000 people attended the 1995 [[Million Man March]] he organized.
+
+At events in streets or a park rather than an enclosed venue, crowd counting is more difficult and less precise. For many events, especially [[Demonstration (people)|political rallies]] or [[protest]]s, the number of people in a crowd carries political significance and count results are [[controversial]]. For example, the global [[Protests against the 2003 Iraq war|protests against the Iraq war]] had many protests with widely differing counts offered by organizers on one side and the [[police]] on the other side.
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.salon.com/2003/01/24/crowds Salon: "The protest-crowd numbers game"]
+* [https://pruned.blogspot.com/2005/10/counting-crowds.html Pruned: Counting Crowds]
+* [http://crowdcount.org Crowd Count: "A modern solution to crowd sizing"]
+* [http://www.dfrc.com.sg/theme-parks-iot-crowd-analytics/ Data Fusion Research Center: "How Theme Parks Benefit From IoT and Crowd Analytics"]
+* [https://www.mapchecking.com/ "MapChecking: Crowd size estimation using a delimited area from a map"]
+* [https://ash.harvard.edu/programs/crowd-counting-consortium Crowd Counting Consortium] of the [[Harvard Kennedy School]]
+
+[[Category:Crowds]]
+[[Category:Protests]]
+[[Category:Estimation methods]]

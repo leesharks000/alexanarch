@@ -1,0 +1,1124 @@
+{
+ "row": "crowd-counting-consortium",
+ "address": "Crowd Counting Consortium",
+ "addresses": [
+  "Crowd Counting Consortium"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia response summary, or the card's title and snippet for the unreachable card; 51/51 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 the consortium's page at the Ash Center, which is also the census's one own page, the same page, carried once as a card; B2 the About page of Counting Crowds, the consortium's blog; B3 a third party's page on the 2025 data, by boB Rudis; B4 the blog's author archive for 'crowdcounters'; B5 Policy Commons, unreachable; B6 the consortium's X profile); 'own_page', none beyond B1 (the census read one source, crowd-counting-consortium--home, which is card 1); 'wikipedia', no article (B7). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B3, B4, B5); operator and institutional home (B1, B4, B6); origin and founders (B1, B6); the unit (B1, B3); method (B1, B6); verification and privacy (B1); data access (B1, B2); counts (B1, B4, B6); uses (B1); scholarship and commentary (B1, B2); funding (B1); versions and dates (B1, B3); a third-party page carrying a model's interface string (B3); reception, the encyclopedia (B7). B5's snippet restates B1's opening sentence (F2): one lineage, B1's text carrying it. B3's description restates the consortium's scope from outside and states the scope differently at one point (F34 'nonviolent' beside F20 'riots'): two claims, held together under P_coh. The census's self_description, operator, part_of, founded, expanded, data_access, phases, dataverse, unit, limit_excluded, limit_verified, limit_identity, goal, countlove, irb, counter_protest, citations, count_subset, no_resistance, peaceful_2020, no_kings, latest_commentary, funding and aka quotes restate B1 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1.html and B1.txt the census's saved copy, with B1-refetch.html the card's refetch; B5-403.html the bot-check response; B7 .wiki, .html, -search.html, -crowd-counting.wiki raw Wikipedia responses with B7.txt a summary of codes and notices; T1-crowd-counting-consortium-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page crowd-counting-consortium--home, the same page)",
+   "card": "Harvard University — Crowd Counting Consortium – Ash Center",
+   "url": "https://ash.harvard.edu/programs/crowd-counting-consortium/",
+   "kind": "Overview card (the consortium's page at the Ash Center, Harvard Kennedy School: definition, origin, uses, team, data, submission rules, FAQ, funding, commentary list); the census's own page crowd-counting-consortium--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B1.html",
+     "sha256": "bd7b38580b7baa3e24d065e1644e44dd4668d76a31eed6edf7784c3345242b72"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B1.txt",
+     "sha256": "bd9b30706a4f5a9dfa156e2d0eeefa36cc1f9e1878f8002ebebfdfea2b736560"
+    },
+    "B1-refetch.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B1-refetch.html",
+     "sha256": "2837906be77ea4ef03d965c1e69de7cb6b30836d857757a19e34b6e58e6163c2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:49Z",
+    "http": 200,
+    "url": "https://ash.harvard.edu/programs/crowd-counting-consortium/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B1-refetch.html",
+    "raw_sha256": "2837906be77ea4ef03d965c1e69de7cb6b30836d857757a19e34b6e58e6163c2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "crowd-counting-consortium--home",
+     "sha256": "bd7b38580b7baa3e24d065e1644e44dd4668d76a31eed6edf7784c3345242b72",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:28:00Z",
+     "agrees": true,
+     "note": "B1.html is the census's saved copy, gunzipped (sha256 matches the manifest and the census record); B1.txt is the census's text of it. The card's refetch (B1-refetch.html) differs from the saved copy in markup bytes (from char 6154; the page's per-request markup) and its text, extracted with scripts and styles stripped and whitespace normalised, is identical to the census's text (15,202 characters), so the card and the census's own page are one page, carried once, as a card."
+    }
+   },
+   "names_operator": "yes ('The Crowd Counting Consortium (CCC) is a joint project of Harvard Kennedy School and the University of Connecticut'; 'Part of Nonviolent Action Lab')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the Ash Center's program page, the census's url for the entity). The card's snippet ('Project: … Scope: Collect...') is a structured restatement composed for the rail and is not page text. The page carries no date of its own; its commentary list is dated (latest 'Aug 15, 2025'); its footer '© Copyright 2026'.",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Crowd Counting Consortium – Ash Center",
+   "card_snippet": "Project: Crowd Counting Consortium (CCC) joint initiative of Harvard Kennedy School and University of Connecticut, part of Nonviolent Action Lab. Scope: Collect...",
+   "card_note": "the snippet is the rail's own composition from the page ('Project:', 'Scope:'); no span of it is verbatim on the page"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Counting Crowds — About - Counting Crowds",
+   "url": "https://countingcrowds.org/about/",
+   "kind": "Overview card (the About page of Counting Crowds, 'Blog of the Crowd Counting Consortium', on WordPress.com: where the data are shared)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B2.html",
+     "sha256": "be076d67b1488910ea8abaf5ffe321bb51f04156121d76e7193f63fbdf5002c5"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B2.txt",
+     "sha256": "3faf73a2972e7d9482c7d6f889f446d42ab9148f4b87c406c3fe235bdd252174"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:49Z",
+    "http": 200,
+    "url": "https://countingcrowds.org/about/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B2.html",
+    "raw_sha256": "be076d67b1488910ea8abaf5ffe321bb51f04156121d76e7193f63fbdf5002c5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('Blog of the Crowd Counting Consortium'; 'maintained by the Harvard Kennedy School’s Nonviolent Action Lab')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the title and site (countingcrowds.org/about/); the snippet is verbatim on the page. The page is undated.",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "About - Counting Crowds",
+   "card_snippet": "To learn more about the Crowd Counting Consortium, please visit our website. CCC records and shares its data in monthly Google Sheets, which you can find on the...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "boB Rudis — Crowd Counting Consortium 2025 U.S. Protest Event Data",
+   "url": "https://rud.is/obs/framework2/ccc/",
+   "kind": "Overview card (a third party's Observable Framework page visualising the consortium's 2025 data, January to May 2025, on rud.is; its descriptive paragraphs are followed in the text by the interface string of the Claude assistant)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B3.html",
+     "sha256": "c8f7088d06b5055f2c6bb6f7697a7fb124e1851d7253984a6e04c6361dece2f3"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B3.txt",
+     "sha256": "58002492857a74eb95c1ebfccf5e5cec0b39dde111effb2d5be2dfe8950d5dea"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:50Z",
+    "http": 200,
+    "url": "https://rud.is/obs/framework2/ccc/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B3.html",
+    "raw_sha256": "c8f7088d06b5055f2c6bb6f7697a7fb124e1851d7253984a6e04c6361dece2f3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('a collaborative project between Harvard University and University of Connecticut')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found by WebSearch on the title and the author's name. The snippet is verbatim on the page (title, then the opening sentence). The page is undated; it states its data cover January to May 2025. Its text carries, directly after its description of the dataset, 'RetryClaude can make mistakes. Please double-check responses.' (F36): the description was carried into the page from a session with the Claude assistant, its interface string with it. Third-party page; quoted in short spans.",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Crowd Counting Consortium 2025 U.S. Protest Event Data",
+   "card_snippet": "Crowd Counting Consortium 2025 U.S. Protest Event Data. The Crowd Counting Consortium (CCC) is a collaborative project between Harvard University and University...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Counting Crowds — crowdcounters – Counting Crowds",
+   "url": "https://countingcrowds.org/author/crowdcounters/",
+   "kind": "Overview card (the author archive of 'crowdcounters' on Counting Crowds, the consortium's blog: eight posts, 9 February 2021 to 10 May 2024, by excerpt)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B4.html",
+     "sha256": "d9a2fe6edc796efdaa66f9d576845a453ad91fafa5b6420731c9ec2f5ada23b2"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B4.txt",
+     "sha256": "79b799fd98bb1d6efcd4f3977f913dbbe9e4225f58752c565e21682a55e2df74"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:51Z",
+    "http": 200,
+    "url": "https://countingcrowds.org/author/crowdcounters/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B4.html",
+    "raw_sha256": "d9a2fe6edc796efdaa66f9d576845a453ad91fafa5b6420731c9ec2f5ada23b2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes ('Welcome to the blog of the Crowd Counting Consortium, a.k.a. CCC')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (the WordPress author archive for 'crowdcounters' on countingcrowds.org). The card's snippet ('Overview: … co-founded by Erica Chenoweth (Harvard) and Jeremy Pressman ...') is not on the page: the nearest page text is the 'Hello, World!' excerpt of 9 February 2021 (F38); the snippet is a composition of the rail.",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "crowdcounters – Counting Crowds",
+   "card_snippet": "Overview: Crowd Counting Consortium (CCC) is a scholarly project documenting U.S. political crowds, co-founded by Erica Chenoweth (Harvard) and Jeremy Pressman ...",
+   "card_note": "the snippet is the rail's own composition ('Overview:'); it is absent from the page"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Policy Commons — Crowd Counting Consortium - Policy Commons",
+   "url": null,
+   "kind": "Overview card (a Policy Commons page on the consortium; unreachable)",
+   "files": {
+    "B5-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B5-403.html",
+     "sha256": "c6c2ec15f9ea2c6817d1ce4766212c5ea818c03473369ca17ee0fa4a7b9fa7b7"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T22:58:51Z",
+      "url": "https://policycommons.net/orgs/crowd-counting-consortium/",
+      "http": 403,
+      "sha256": "c6c2ec15f9ea2c6817d1ce4766212c5ea818c03473369ca17ee0fa4a7b9fa7b7",
+      "result": "a bot check ('<title>Just a moment...</title>', Cloudflare challenge page) refusing the census agent at the site's organisation path; not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Crowd Counting Consortium\" Policy Commons'",
+     "WebSearch 'policycommons.net \"Crowd Counting Consortium\" joint project Harvard Kennedy School University of Connecticut'",
+     "WebSearch '\"Crowd Counting Consortium - Policy Commons\"'"
+    ],
+    "result": "no Policy Commons URL in three searches; the path tried is the site's organisation path for the name, and the site refused it with a bot check. The card's URL is undetermined; its title and snippet stand as its only text."
+   },
+   "names_operator": "yes, in the snippet ('a joint project of Harvard Kennedy School and the University of Connecticut')",
+   "names_archive": "no (snippet and title)",
+   "note": "Unreachable; the snippet restates the opening sentence of B1 (F2), one lineage with it.",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Crowd Counting Consortium - Policy Commons",
+   "card_snippet": "The Crowd Counting Consortium (CCC), a joint project of Harvard Kennedy School and the University of Connecticut, collects publicly available data on political ...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "X·crowdcounting — Crowd Counting (@crowdcounting) / X",
+   "url": "https://x.com/crowdcounting",
+   "kind": "Overview card (the consortium's X profile, @crowdcounting, as served to a signed-out agent: profile and five posts, 18 January 2020 to 29 August 2024)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B6.html",
+     "sha256": "5e56ffb881defc7a6d7808919fe1d6b72c21fe181aff001088599b82a6fc705f"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B6.txt",
+     "sha256": "1d8f339175325627fea73820e8a3667d5380a4f0ff15e95f99d41435d3343e57"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:52Z",
+    "http": 200,
+    "url": "https://x.com/crowdcounting",
+    "raw": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B6.html",
+    "raw_sha256": "5e56ffb881defc7a6d7808919fe1d6b72c21fe181aff001088599b82a6fc705f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('The Crowd Counting Consortium is co-directed by @ ericachenoweth and @ djpressman')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the handle @crowdcounting). The snippet is verbatim in the served page (the post of 29 August 2024). Two posts are withheld from signed-out view ('You’re unable to view this Post because this account owner limits who can view their Posts.').",
+   "surfaced_by_T": [
+    {
+     "slug": "crowd-counting-consortium-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "Crowd Counting (@crowdcounting) / X",
+   "card_snippet": "Crowd Counting @crowdcounting Aug 29, 2024 Since 2017, we've tallied 200,000 protests and rallies in the US...and counting. Read more about the CCC here ash.har...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "Wikipedia (no article)",
+   "card": "Wikipedia — Crowd Counting Consortium (no article)",
+   "url": "https://en.wikipedia.org/wiki/Crowd_Counting_Consortium",
+   "kind": "Wikipedia, English: no article; a full-text search; the article Crowd counting, which names the consortium in its external links",
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7.wiki",
+     "sha256": "0f864ad05eae5a663cb453118d7a3838064898c42b7c8522ca5962e49845754d"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7.html",
+     "sha256": "110260b1f5d0e6a0231fa677311288420478ef26596cb6679d7f470b14b767e2"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7-search.html",
+     "sha256": "49b2d86b84ad825c506fe793deebe5cef9dcb749e6b75c109d367e8f48da803f"
+    },
+    "B7-crowd-counting.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7-crowd-counting.wiki",
+     "sha256": "cdf9257875c8b9037435162b224d8fcfa521ba1953f91104e9aaac9a91fb6c21"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7.txt",
+     "sha256": "bbb95dff3981b209042e72347a08cd096546cdba4d9d81030b874316869f13d9"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T22:58:52Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Crowd_Counting_Consortium&action=raw",
+      "http": 404,
+      "sha256": "0f864ad05eae5a663cb453118d7a3838064898c42b7c8522ca5962e49845754d"
+     },
+     {
+      "at": "2026-10-31T22:59:36Z",
+      "url": "https://en.wikipedia.org/wiki/Crowd_Counting_Consortium",
+      "http": 404,
+      "sha256": "110260b1f5d0e6a0231fa677311288420478ef26596cb6679d7f470b14b767e2",
+      "notice": "Wikipedia does not have an article with this exact name"
+     },
+     {
+      "at": "2026-10-31T22:59:37Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Crowd%20Counting%20Consortium%22",
+      "http": 429,
+      "note": "rate limit; response not saved; one retry at 2026-10-31T23:00:23Z, also 429; not retried further"
+     },
+     {
+      "at": "2026-10-31T23:00:37Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Crowd+Counting+Consortium%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "sha256": "49b2d86b84ad825c506fe793deebe5cef9dcb749e6b75c109d367e8f48da803f",
+      "notice": "Results 1 – 5 of 5"
+     },
+     {
+      "at": "2026-10-31T22:59:37Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Crowd_counting&action=raw",
+      "http": 200,
+      "sha256": "cdf9257875c8b9037435162b224d8fcfa521ba1953f91104e9aaac9a91fb6c21"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/crowd-counting-consortium-20261031/B7.txt"
+    ]
+   },
+   "names_operator": "no article",
+   "names_archive": "no",
+   "note": "No article and no redirect. B7.txt summarises the responses, saved verbatim beside it. The article 'Crowd counting' (the estimation of crowd sizes) is a homonym of the name's common noun; it names the consortium once, in its external links.",
+   "surfaced_by_T": [],
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header",
+   "quote": "A public interest and scholarly project to document protests and demonstrations in the United States.",
+   "claim": "the consortium's own definition: a public interest and scholarly project documenting protests and demonstrations in the United States",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The Crowd Counting Consortium (CCC) is a joint project of Harvard Kennedy School and the University of Connecticut that collects publicly available data on political protest events reported in the United States, including rallies, marches, demonstrations, and acts of civil disobedience.",
+   "claim": "a joint project of HKS and UConn collecting publicly available data on political protest events reported in the US: rallies, marches, demonstrations, acts of civil disobedience",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "sidebar, Part of",
+   "quote": "Part of Nonviolent Action Lab",
+   "claim": "part of the Nonviolent Action Lab",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator and institutional home: Harvard Kennedy School, UConn, the Nonviolent Action Lab",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶2 s1",
+   "quote": "The CCC first emerged from a collaborative effort by Jeremy Pressman (UConn) and Erica Chenoweth (HKS) to estimate the number of participants in the Women’s March on Washington (and its affiliated sister marches nationwide) on January 21, 2017.",
+   "claim": "it emerged from Pressman and Chenoweth’s effort to estimate the participants in the Women’s March of 21 January 2017",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and founders: the Women’s March of 21 January 2017",
+   "date": "2017-01-21 (the event; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶2 s2",
+   "quote": "Since then, the project has expanded to provide near-real-time information on trends in the occurrence, themes, and scale of American protest activity.",
+   "claim": "it has expanded to near-real-time information on the occurrence, themes and scale of American protest",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s1",
+   "quote": "CCC data are published monthly on a publicly accessible Dataverse, for use by scholars, journalists, movement leaders, and others.",
+   "claim": "the data are published monthly on a public Dataverse for scholars, journalists, movement leaders and others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s2",
+   "quote": "The NVA Lab regularly publishes commentary and analysis pieces based on the CCC data, advancing both scholarly and public understandings of protest in the US.",
+   "claim": "the Nonviolent Action Lab publishes commentary and analysis on the data",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "scholarship and commentary",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 1",
+   "quote": "CCC data were used to demonstrate that, at that time, the 2017 Women’s March was the largest single-day demonstration in US history.",
+   "claim": "its data showed the 2017 Women’s March the largest single-day demonstration in US history at that time",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 2",
+   "quote": "CCC data were used to demonstrate that, at that time, the 2018 March for Our Lives and #Enough Walkouts were the broadest single day demonstration if U.S. history (occurring in over 4400 distinct locations).",
+   "claim": "its data showed the 2018 March for Our Lives and #Enough Walkouts the broadest single-day demonstration at that time, in over 4,400 locations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 3",
+   "quote": "CCC data underlie an influential New York Times analysis demonstrating that, at that time, protests in 2020 following George Floyd’s murder constituted the largest and broadest mobilization in U.S. history.",
+   "claim": "its data underlie a New York Times analysis of the 2020 protests after George Floyd’s murder as the largest and broadest mobilization at that time",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 4",
+   "quote": "Relatedly, CCC data support the claim that the 2020 Black Lives Matter uprising was overwhelmingly peaceful , especially relative to the heavy-handed police response.",
+   "claim": "its data support the claim that the 2020 Black Lives Matter uprising was overwhelmingly peaceful",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 5",
+   "quote": "CCC data underpin an analysis of the 2023-2024 pro-Palestine protests, which were also generally peaceful , despite common narratives that the protests were violent.",
+   "claim": "its data underpin an analysis of the 2023–2024 pro-Palestine protests as generally peaceful, against narratives of violence",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 6",
+   "quote": "Most recently, the CCC data have been used to rebut the narrative that there is “no resistance” to the second Trump administration. Instead, the CCC data demonstrate higher degrees of protest throughout 2025 than in 2017, a high degree of nonviolent discipline among anti-Trump protesters, and an increasing number of protests (and protest participants) in counties where Trump won majorities in 2024.",
+   "claim": "its data rebut the narrative of “no resistance” to the second Trump administration: more protest in 2025 than in 2017, nonviolent discipline, growth in counties Trump won",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Informing the Public, item 6",
+   "quote": "The CCC data also demonstrated that the No Kings protests in June and October of 2025 were among the largest single-day demonstrations in US history.",
+   "claim": "its data showed the No Kings protests of June and October 2025 among the largest single-day demonstrations in US history",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: the record against prevailing narratives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Advancing Scholarship",
+   "quote": "Academics routinely turn to the CCC data to study protest, counter-protest, and state response. Articles and essays published by the CCC team since 2017 have collectively garnered more than 600 scholarly citations so far.",
+   "claim": "academics use the data to study protest, counter-protest and state response; the team’s articles have more than 600 scholarly citations",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scholarship and commentary",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Meet the Team; commentary of May 10, 2024",
+   "quote": "Erica Chenoweth … Frank Stanton Professor of the First Amendment … Jeremy Pressman … Senior Research Fellow, AY2025-2027 … Christopher Shay … Research Associate, Crowd Counting Consortium … Nonviolent Action Lab Program Director Jay Ulfelder",
+   "claim": "the team: Erica Chenoweth, Jeremy Pressman, a research associate of the consortium among others; Jay Ulfelder the Lab’s program director",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator and institutional home: Harvard Kennedy School, UConn, the Nonviolent Action Lab",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Download the Data",
+   "quote": "Protest event data from CCC’s three phases — 2017-2020, 2021-2024, and 2025 to the present — can be downloaded from the project’s Dataverse.",
+   "claim": "the data in three phases, 2017–2020, 2021–2024, 2025 to the present, downloadable from the Dataverse",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Submit a Record",
+   "quote": "We only post records that we can confirm and verify through fact-checking. When you submit a record, be sure to provide a source that is publicly verifiable",
+   "claim": "only records confirmed and verified by fact-checking are posted; a submission must carry a publicly verifiable source",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "verification and privacy: the rules that bound the record",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Submit a Record",
+   "quote": "We will never post, release, or share identifying information that has not already been reported in the public domain.",
+   "claim": "it will never share identifying information not already reported in the public domain",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "verification and privacy: the rules that bound the record",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, What kind of actions are you collecting?",
+   "quote": "We collect publicly available data on political crowds reported in the United States, including marches, protests, demonstrations, riots, and other actions. We do not count crowds at meetings, teach-ins or academic workshops, panel discussions, fundraisers, or town halls.",
+   "claim": "its unit: political crowds reported in the US, riots among them; crowds at meetings, teach-ins, workshops, panels, fundraisers and town halls excluded",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: what counts as a political crowd",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, What do you intend to do with these data?",
+   "quote": "Our goal is to make the aggregate data on crowd numbers publicly available for each event. We are collecting this data in the public interest and to further scholarly research.",
+   "claim": "its goal: aggregate crowd numbers public for each event, in the public interest and for research",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, Human Research Subject boards",
+   "quote": "This is a public-interest project. The University of Denver’s Office of Research Integrity and Education determined that the project does not qualify as human subjects research and therefore does not require further review or oversight by its Institutional Review Board. The University of Connecticut made a similar determination.",
+   "claim": "the University of Denver and UConn determined that it is not human subjects research",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "verification and privacy: the rules that bound the record",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, Where can I get the data?; How should I cite these data?",
+   "quote": "The data and associated documentation are shared via the Harvard Dataverse … Please include a citation to the Crowd Counting Consortium such as: Crowd Counting Consortium, crowdcounting.org, accessed September 17, 2021.",
+   "claim": "data and documentation on the Harvard Dataverse; the citation form names crowdcounting.org",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, Where does your funding come from?",
+   "quote": "Funding is made possible in part by the Freedom Together Foundation, New Venture Fund, Humanity United, the John T. and Catherine D. MacArthur Foundation … Previously, we received support from the Carnegie Corporation of New York",
+   "claim": "funded in part by foundations and university centres, previously by the Carnegie Corporation of New York",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "FAQ, last paragraph",
+   "quote": "We have collaborated with countlove.org , a volunteer group that developed a webcrawler to identify protests and demonstrations on a daily basis.",
+   "claim": "it has collaborated with countlove.org, a volunteer group whose webcrawler identifies protests daily",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public reports, verified submissions, a webcrawler",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "commentary list, Oct 23, 2024",
+   "quote": "From 7 October 2023 to 7 June 2024, the Crowd Counting Consortium recorded nearly 12,400 pro-Palestine protests and over 2,000 pro-Israel protests in the United States. … Oct 23, 2024",
+   "claim": "nearly 12,400 pro-Palestine and over 2,000 pro-Israel protests recorded, 7 October 2023 to 7 June 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2024-10-23",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "commentary list, May 30, 2024",
+   "quote": "Crowd Counting Consortium data show more than 3,700 days with pro-Palestinian protest activity at over 500 U.S. schools since October 7, 2023, including encampments at more than 130 of them.",
+   "claim": "pro-Palestinian protest at over 500 US schools since 7 October 2023, encampments at more than 130",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2024-05-30",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "commentary list, Aug 15, 2025 (the latest listed)",
+   "quote": "New data shows No Kings was one of the largest days of protest in US history … Aug 15, 2025",
+   "claim": "the latest commentary listed on the page, 15 August 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates",
+   "date": "2025-08-15",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "site header",
+   "quote": "Blog of the Crowd Counting Consortium",
+   "claim": "Counting Crowds is the consortium’s blog",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scholarship and commentary",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3faf73a2972e7d94…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About ¶2",
+   "quote": "CCC records and shares its data in monthly Google Sheets, which you can find on the project’s View/Download the Data page .",
+   "claim": "the data shared in monthly Google Sheets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3faf73a2972e7d94…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About ¶3",
+   "quote": "A compiled and augmented version of the complete dataset can be found in this GitHub repository , which is maintained by the Harvard Kennedy School’s Nonviolent Action Lab . We update that compiled version weekly, usually on Wednesdays.",
+   "claim": "a compiled and augmented version kept on GitHub by the Nonviolent Action Lab, updated weekly, usually on Wednesdays",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3faf73a2972e7d94…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About ¶4",
+   "quote": "You can also explore the compiled data online using this interactive dashboard .",
+   "claim": "an interactive dashboard of the compiled data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access: the Dataverse, monthly; Google Sheets; a weekly compilation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3faf73a2972e7d94…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The Crowd Counting Consortium (CCC) is a collaborative project between Harvard University and University of Connecticut that has systematically collected data on political protest events across the United States since January 2017. The dataset encompasses rallies, marches, demonstrations, and acts of civil disobedience that articulate grievances against or express support for political targets.",
+   "claim": "a third party restates the consortium: a Harvard–UConn project collecting data on US political protest events since January 2017, events that articulate grievances against or support for political targets",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (data January–May 2025; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 58002492857a74eb…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s1–2",
+   "quote": "The dataset includes events that are open to the public, free of charge, and nonviolent (not primarily organized to cause direct harm to persons). Coverage extends to all U.S. states and territories, with no minimum crowd size requirement.",
+   "claim": "the third party gives the dataset’s events as public, free and nonviolent (not primarily organized to cause direct harm), in all US states and territories, with no minimum crowd size",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: what counts as a political crowd",
+   "date": "undated (data January–May 2025; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 58002492857a74eb…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2 s3–4",
+   "quote": "Virtual gatherings are included alongside physical events, reflecting the evolution of collective action especially during the COVID-19 pandemic. Excluded are activities like paid fundraisers, workshops, campaign events closed to the public, and routine government meetings unless deliberately disrupted by protesters.",
+   "claim": "virtual gatherings included; paid fundraisers, workshops, closed campaign events and routine government meetings excluded unless disrupted",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: what counts as a political crowd",
+   "date": "undated (data January–May 2025; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 58002492857a74eb…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2, end",
+   "quote": "RetryClaude can make mistakes. Please double-check responses.",
+   "claim": "the page's text carries the Claude assistant's interface string and its stated limit directly after its description of the dataset",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "a third-party page carrying a model’s interface string",
+   "date": "undated (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 58002492857a74eb…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3–4",
+   "quote": "Current dataset includes data from January 2025 to May 2025 . … View the project source on Codeberg .",
+   "claim": "the page covers January to May 2025; its source on Codeberg",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates",
+   "date": "undated (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 58002492857a74eb…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "post 'Hello, World!' (Posted by crowdcounters February 9, 2021), excerpt",
+   "quote": "Welcome to the blog of the Crowd Counting Consortium, a.k.a. CCC. CCC is a public-interest and scholarly project that documents political crowds in public spaces in the United States. CCC emerged in early 2017 from an improptu collaboration between Professors Erica Chenoweth (Harvard University) and Jeremy Pressman (University of Connecticut)",
+   "claim": "the blog’s first post: a public-interest and scholarly project documenting political crowds in public spaces in the US, from a 2017 collaboration of Chenoweth and Pressman",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "2021-02-09",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 79b799fd98bb1d6e…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "post 'Nonviolent Action Lab Podcast Launches' (May 6, 2024), excerpt",
+   "quote": "The Nonviolent Action Lab at Harvard Kennedy School‘s Ash Center for Democratic Governance and Innovation—one of the two institutional pillars of this project, along with the University of Connecticut",
+   "claim": "the Nonviolent Action Lab at the Ash Center is one of the project’s two institutional pillars, with UConn",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator and institutional home: Harvard Kennedy School, UConn, the Nonviolent Action Lab",
+   "date": "2024-05-06",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 79b799fd98bb1d6e…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "post 'Three Things the Pro-Palestine Movement Is Not' (May 10, 2024), excerpt",
+   "quote": "Protest encampments have sprung up over the past few weeks on more than 100 college and university campuses across the country",
+   "claim": "encampments on more than 100 campuses in spring 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2024-05-10",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 79b799fd98bb1d6e…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "post 'A15 Day of Action for Palestinian Liberation Delivers Intended Disruptions' (April 16, 2024), excerpt",
+   "quote": "In the largest single day of deliberately disruptive protest activity in the United States since at least 2020, activists responded to the call for a global “coordinated economic blockade to free Palestine” with at least 26 acts of civil disobedience or direct actions in 23 different cities from coast to coast",
+   "claim": "at least 26 acts of civil disobedience or direct action in 23 cities on 15 April 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2024-04-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 79b799fd98bb1d6e…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "The Crowd Counting Consortium (CCC), a joint project of Harvard Kennedy School and the University of Connecticut, collects publicly available data on political ...",
+   "claim": "the card restates the consortium’s definition (truncated)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a public interest and scholarly project documenting protest in the United States",
+   "date": "undated (card only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet on the rail (the source unreachable)"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "profile bio",
+   "quote": "The Crowd Counting Consortium is co-directed by @ ericachenoweth and @ djpressman",
+   "claim": "co-directed by Erica Chenoweth and Jeremy Pressman",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator and institutional home: Harvard Kennedy School, UConn, the Nonviolent Action Lab",
+   "date": "undated (profile as served 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 1d8f339175325627…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post of Aug 29, 2024",
+   "quote": "Since 2017, we've tallied 200,000 protests and rallies in the US...and counting.",
+   "claim": "200,000 protests and rallies tallied since 2017, as of 29 August 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2024-08-29",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 1d8f339175325627…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post of Jul 3, 2020",
+   "quote": "Continuing to count as we close in on 5000 listings of antiracism protests.",
+   "claim": "nearly 5,000 listings of antiracism protests by 3 July 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2020-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 1d8f339175325627…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "post of Apr 9, 2022",
+   "quote": "Our latest, in cooperation with @CountLoveOrg",
+   "claim": "work in cooperation with Count Love, April 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public reports, verified submissions, a webcrawler",
+   "date": "2022-04-09",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 1d8f339175325627…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "profile",
+   "quote": "crowdcounting.org … Joined February 2017",
+   "claim": "the account links crowdcounting.org and joined in February 2017",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders: the Women’s March of 21 January 2017",
+   "date": "2017-02 (account joined)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 1d8f339175325627…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "rendered page notice",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article on the consortium",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (response)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bbb95dff3981b209…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Crowd counting, External links",
+   "quote": "[https://ash.harvard.edu/programs/crowd-counting-consortium Crowd Counting Consortium] of the [[Harvard Kennedy School]]",
+   "claim": "the article Crowd counting lists the consortium among its external links",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (response)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bbb95dff3981b209…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "Special:Search, results",
+   "quote": "The five articles that mention the name: Erica Chenoweth; Crowd counting; Protests against Donald Trump; George Floyd protests; Gaza war protests in the United States.",
+   "claim": "five articles mention the name, none an article on it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (response)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bbb95dff3981b209…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "commentary list, Nov 28, 2023",
+   "quote": "Since October 7, the Crowd Counting Consortium (CCC) has recorded nearly 2,300 U.S. protests, rallies, marches, caravans, demonstrations, vigils, banner drops, and direct actions in support of Palestine or Israel, with hundreds of thousands of total participants on different sides of this mass mobilization. … Nov 28, 2023",
+   "claim": "nearly 2,300 protests on Palestine or Israel since 7 October 2023, with hundreds of thousands of participants",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "counts: the record’s tallies",
+   "date": "2023-11-28",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd9b30706a4f5a9d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Harvard University — Crowd Counting Consortium – Ash Center",
+  "B2": "Counting Crowds — About - Counting Crowds",
+  "B3": "boB Rudis — Crowd Counting Consortium 2025 U.S. Protest Event Data",
+  "B4": "Counting Crowds — crowdcounters – Counting Crowds",
+  "B5": "Policy Commons — Crowd Counting Consortium - Policy Commons",
+  "B6": "X·crowdcounting — Crowd Counting (@crowdcounting) / X",
+  "B7": "Wikipedia — Crowd Counting Consortium (no article)"
+ }
+}

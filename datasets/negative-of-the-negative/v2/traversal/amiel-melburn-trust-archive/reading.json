@@ -1,0 +1,143 @@
+{
+ "row": "amiel-melburn-trust-archive",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the archive with the entity named (by its names, its host or the Trust's name); R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (the periodicals it holds: B1, B3, B7, census record_object and holdings; the 1956 dissidents' journal and the New Left: B7, B3, census record.keeps and losing_side; archives of socialist and radical writing: B1, B2, B3, B8, census kind and areas). A bare mention, a reference-list line, a bibliography entry or a list of keywords is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary, and returned none; every archive sentence matching a class pattern was therefore read at its passage (6 sentences in 3 texts). By the LEFT brief (§8), #1725, the census's anchor, is read at the passages that name the entity or its kind (independent organs, the Reasoner case, the conclusion's organ, holder and route).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1725,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes (#1725, AXN:0B50, the census anchor): the Reasoner bullet among the counter-cases names the entity by its host, citing 'https://banmarchive.org.uk/new-reasoner/' as the '*New Reasoner* archive', 'unfetched here' (D; R: the archive's report relates the entity to its own argument as a source), and states the case and its reading, the critique 'kept an organ and found a wider field' (O-class: the 1956 dissidents' journal); the section's New Left paragraph and the conclusion state the categories the census's ml_reading applies to the entity (organ, holder with standing independent of the executive, route), O-class on the held titles and on archives of the left as the census's question puts them; the opening summary's 'very few mechanisms that carry a defeated critique forward' is the hypothesis the census question tests",
+   "claims": [
+    "D1725-01",
+    "D1725-02",
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04",
+    "O1725-05"
+   ],
+   "cands": [
+    "D0001",
+    "R0001"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/amiel-melburn-trust-archive-aio-20261031/",
+   "reason": "the Capture Registry's title, findings, reading, analysis, PER notes, PER-dim basis and scores, query note and description for the entity's capture (OBS-6158a9a70bb8, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/banmarchive/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'banmarchive'], organizing_question, anchor; rows/banmarchive.py; rendered aggregators/banmarchive/index.html read for agreement)",
+   "reason": "the maryleelabor census record of the entity (editor Lee Sharks, compiled 2026-10-31, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (the home page B1, the New Reasoner page B7) it is one lineage with that source; ml_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26",
+    "ML-27",
+    "ML-28",
+    "ML-29",
+    "ML-30",
+    "ML-31",
+    "ML-32",
+    "ML-33",
+    "ML-34"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 846,
+   "cands": [],
+   "reason": "class match only (New Left Review in a list of contemporary Marxist journals): a bare mention, no claim on the class"
+  },
+  {
+   "dep": 1714,
+   "cands": [],
+   "reason": "class matches only (New Left Review as the venue of Morozov's article; a reference list): bare mentions"
+  },
+  {
+   "dep": 1725,
+   "cands": [],
+   "reason": "sentence 952 ('A rupture opens a basin: … the New Left, the feminist critique of the New Left'): the New Left as one rupture in a list, nothing said of the journal or the archive; not admitted beside the claims above"
+  }
+ ],
+ "hop": {
+  "from": [
+   1725
+  ],
+  "candidates": 42,
+  "admitted": 0,
+  "reading": "each hop candidate (42, all forward citations from #1725) read by title and by a scan of its text for the three class patterns and for New Left, Thompson, Saville, Marxism Today, Stuart Hall, periodical, left or socialist press, journal and archive of the left; the matches are #499 ('periodically'), #950 ('periodically'), #1550 ('Periodically'), #1066 (E. P. Thompson on the clock and the laboring body: the historian, nothing of the journal) and #1724 (Stuart Hall's 1982 essay in a lineage list; a Thompson of the Semantic Hacking Project): none says anything of the entity or its classes; #1680 (the Living Academy's common holding) and #1540 (the obelus) are the archive's designs for its own holding, which #1725 sets beside the organ and holder, and say nothing of this archive; none admitted"
+ },
+ "observations": "One archive text names the entity: #1725, by the host of its New Reasoner page, in the Reasoner bullet, which marks the page 'unfetched here'; the census fetched it the same day (banmarchive--new-reasoner, 21:27:51Z). No archive text names the Trust, Barry Amiel or Norman Melburn, or the archive by name. The archive's bearing is the census anchor's: the Reasoner case as a critique that kept an organ (#1725 line 178), the mechanism of a base and form of the critics' own (line 169), and the organ, holder and route of the conclusion (line 369), which the census's ml_reading applies to the entity (ML-23, ML-24). The third class (archives of socialist and radical writing) has no archive sentence by its pattern; its bearing comes through the census question built on #1725's three terms.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 1,
+   "D_deposits": 1,
+   "R_sentences": 1,
+   "R_deposits": 1,
+   "O_direct": 0,
+   "O_class": 0,
+   "O_deposits": 0,
+   "H_candidates": 42
+  },
+  "class_sentences_read": 6,
+  "deposits_candidate": 3,
+  "deposits_admitted": 1,
+  "deposits_admitted_with_claims": 1,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 42,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 13,
+   "ml": 34,
+   "deposit": 7
+  }
+ }
+}

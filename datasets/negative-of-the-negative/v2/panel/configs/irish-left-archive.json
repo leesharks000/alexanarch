@@ -1,0 +1,40 @@
+{
+ "row": "irish-left-archive",
+ "address": "Irish Left Archive",
+ "entity": "The Irish Left Archive (leftarchive.ie; formerly clririshleftarchive.org), an online archive of materials relating to Irish left politics, initiated in 2007 by the Cedar Lounge Revolution blog as the Irish Left Online Document Archive, given its database website in 2013, started by Ciarán Swan with the website created by Aonghus Storey, who maintain it as co-curators (its About page); with a timeline of Irish left organisations from 1900 and the Irish Left Archive Podcast; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/irish-left-archive/)",
+ "row_type": "C (a public entity on which the archive bears: an independent online archive of the documents of Irish left organisations; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bIrish Left (Online Document )?Archive\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b(clr)?irishleftarchive\\b|\\bleftarchive\\.ie\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bILA Podcast\\b|\\bLeftArchive@mastodon\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "archives of the left's documents (movement and party documents held for later readers: programmes, periodicals, pamphlets, internal bulletins, the record of splits)",
+   "pattern": "\\b(archives? of (the )?(left|labou?r|socialis\\w+|communis\\w+|movement)\\w*|left(-wing)? archives?|movement (and party )?documents?|party documents?|internal bulletins?|(party|movement|left) periodicals?|pamphlets?|the record of (the )?splits?|document archives?|(digital|online|community) (document )?archives?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (leftarchive.ie, home page: 'The Irish Left Archive is an online archive of materials relating to Irish left politics'); B5 (About: 'an online archive of materials relating to the Irish left with documents, leaflets, pamphlets, posters and newspapers from the latter half of the 20th century placed online in PDF format'); B6 (Copyright: 'Copyright Issues in Community Digital Archives'); B4 (mastodon.online card: 'Digital collection of political material from the Irish Left'). The census's own areas for the entity, 'movement-documents' ('Movement and party documents: programmes, polemics, internal bulletins, periodicals, the record of splits') and 'archives-and-custody' ('collections of papers and records of labor and the left, held for later readers'), and its evidence_kind ('movement document', 'periodical run') (ML record, census.json rows[slug == 'irish-left-archive'].areas, .evidence_kind; census.json areas)."
+  },
+  {
+   "term": "keeping rival and defeated organisations' positions (the losing side: splits, minorities, organs, holders)",
+   "pattern": "\\b(splits?|splinter\\w*|schisms?|expuls\\w+|expelled|factions?|minorit(y|ies)|losing (side|position)|defeated (critique|position|side)|organs?|holders?)\\b",
+   "flags": "i",
+   "basis": "field: B5 (About: 'open to all irrespective of political position. The Archive is not linked to any political party'; 'materials from all on the left'); B1 (home page: rival organisations' documents side by side, e.g. 'Joint Statement by the Irish Republican Socialist Party and The…', 'The Leninist group (CPGB)', 'Communist Party of Great Britain (Provisional Central Committee)'; the collection that 'shows some of the positions taken by the British left'). The census's own record.losing_side ('it keeps rival organisations' documents side by side under their own names') and its organizing question ('does it keep the losing side in a form that could be taken up later?') for the entity (ML record, census.json rows[slug == 'irish-left-archive'].record.losing_side; census.json organizing_question)."
+  }
+ ],
+ "classes_note": "Two classes, each sourced from the field and from the census's own areas, evidence kinds, record and question for the entity: (1) archives of the left's documents (census areas 'movement-documents' and 'archives-and-custody', evidence_kind 'movement document' and 'periodical run'; B1, B4, B5, B6); (2) keeping rival and defeated organisations' positions, the census's 'losing side' (record.losing_side and the organizing question; B1, B5). The census's third area for the entity, 'labor-action' ('strikes, stoppages and protest events, counted and described'), is carried by its Snapshots of Political Action (documents from 20 demonstrations) and by the census's own negative tag 'NOT a counted dataset of protests'; it enters no class pass of its own. The aliases are the entity's names (Irish Left Archive; the Irish Left Online Document Archive, its 2007 name on the About page), its hosts (leftarchive.ie; clririshleftarchive.org, the former address) and the handles its cards carry (the ILA Podcast; @LeftArchive@mastodon.online). 'ILA' alone is not used: it is too short to match only the entity. The Cedar Lounge Revolution (cedarlounge.wordpress.com), the blog that initiated and hosts it, Irish Election Literature, its partner on Snapshots of Political Action, and the organisations whose documents it holds are distinct entities and not aliases. The anchor of the census, #1725 (Ils ne sont pas marxistes, AXN:0B50), is read at the passages that apply its categories (organ, holder, route, the losing position, the record of splits) to the classes; other deposits enter only where they say something of the entity or apply an archive category to a class above, by locus. The class-2 pattern is broad ('organ', 'holder', 'minority'): its matches are read and most are rejected; a bare mention, a figural use, a reference line or a keyword list is not a claim. Admission by reading (§3.4).",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Irish Left Archive' (irish-left-archive-aio-20261031, OBS-deae4764b09e, ADDR-adc75e9fabac, AXN:0B60), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+ "hop_from": [
+  1725
+ ]
+}

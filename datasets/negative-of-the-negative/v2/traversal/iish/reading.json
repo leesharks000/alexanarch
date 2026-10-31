@@ -1,0 +1,284 @@
+{
+ "row": "iish",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the institute with the entity named; R, a relation the archive states between the institute and an archive object; O, an archive category applied to the institute or to a class the field and the census source for it (archives of labour and social movements: B1, B2, B3, B4, B5, census areas, evidence kind and record.keeps; the papers and manuscripts of Marx, Engels and the socialist and anarchist movements: B2, B4, B6; endangered archives rescued from seizure: B2, B4; socio-economic history data: B1, census kind and record_object). #1725, the census's anchor, read at the passages naming holders, organs and splits (BRIEF-NEW-ROW-LEFT §8). A bare mention, a reference line, a figural use or a list of keywords is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 950,
+   "strata": [
+    "D"
+   ],
+   "reason": "Operative Semiotics: A Grundrisse: names the institute as the holder of the manuscript of the eleventh thesis on Feuerbach and states that it shows Marx's deletion; reads the deletion as the sentence's labor",
+   "claims": [
+    "D950-01",
+    "D950-02"
+   ],
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": 843,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Missing Second Manuscript: the chain of custody of Marx's 1844 manuscripts (Engels, the SPD's Berlin archives, Riazanov's Marx-Engels Institute) and their present custody at RGASPI (O-class, the papers and manuscripts of Marx: B2, B4, B6). Found by the hop (H0052)",
+   "claims": [
+    "O843-01",
+    "O843-02"
+   ],
+   "cands": [
+    "H0052"
+   ]
+  },
+  {
+   "dep": 1066,
+   "strata": [
+    "O"
+   ],
+   "reason": "Machine-Mediated Resistance Literature v1.2: the chain of custody restated with the suppression hypothesis held at Grade D (O-class, the papers of Marx); one lineage with #843, earning a slot by its qualification (§3.6)",
+   "claims": [
+    "O1066-01"
+   ],
+   "cands": [
+    "O0008"
+   ]
+  },
+  {
+   "dep": 1065,
+   "strata": [
+    "O"
+   ],
+   "reason": "Machine-Mediated Resistance Literature v1.1: the same sentence as #1066; an instance under O1066-01 (S4)",
+   "claims": [],
+   "instance_of": 1066,
+   "cands": [
+    "O0007"
+   ]
+  },
+  {
+   "dep": 1067,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Phase X Program: the limit the archive sets on its custody chain (opportunity and opacity; the evidence that could raise its grade, beginning with transfer inventories from the Engels/SPD custody); its RGASPI sentence an instance of O843-02. Found by the hop (H0057)",
+   "claims": [
+    "O1067-01"
+   ],
+   "cands": [
+    "H0057"
+   ]
+  },
+  {
+   "dep": 1422,
+   "strata": [
+    "O"
+   ],
+   "reason": "After the Obelus: an archive as an ongoing act of composition; marked supply in the 1932 editions of Marx's manuscripts (O-class, archives of the movements; the papers of Marx)",
+   "claims": [
+    "O1422-01",
+    "O1422-02"
+   ],
+   "cands": [
+    "O0012",
+    "O0013"
+   ]
+  },
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes, the census's anchor: the organ, holder and route a defeated critique needs; a critique no one holds; the Hague expulsion of 1872 (Bakunin and Guillaume). It does not name the institute; read at the passages the LEFT brief names",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04",
+    "O1725-05",
+    "O1725-06"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1647,
+   "strata": [
+    "O"
+   ],
+   "reason": "Metadata packet: restates #843's suppression hypothesis and custody; an instance under O843-01 (S4)",
+   "claims": [],
+   "instance_of": 843,
+   "cands": [
+    "H0083"
+   ]
+  },
+  {
+   "dep": 1684,
+   "strata": [
+    "O"
+   ],
+   "reason": "Prediction Index: restates the custody passing from Riazanov to Adoratsky; an instance under O843-01 (S4)",
+   "claims": [],
+   "instance_of": 843,
+   "cands": [
+    "H0091"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/international-institute-of-social-history-aimode-20261031/",
+   "reason": "the Capture Registry's findings, analysis, reading, PER note, query note and surface basis for the entity's capture (OBS-3753524eb108, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/iish/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'iish'], organizing_question)",
+   "reason": "the maryleelabor census record of the entity, editor Lee Sharks, composed in session on 2026-10-31 from the institute's two pages saved that day",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 319,
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "the archive's own ingestion protocol ('Third-Party Archive Ethics'); the class pattern matched 'Party Archive'; no claim on the class"
+  },
+  {
+   "dep": 325,
+   "cands": [
+    "O0003",
+    "O0004"
+   ],
+   "reason": "the same protocol text (a later navigation map)"
+  },
+  {
+   "dep": 326,
+   "cands": [
+    "O0005"
+   ],
+   "reason": "the same protocol text"
+  },
+  {
+   "dep": 1114,
+   "cands": [
+    "O0009",
+    "O0010"
+   ],
+   "reason": "the same protocol text"
+  },
+  {
+   "dep": 1275,
+   "cands": [
+    "O0011"
+   ],
+   "reason": "the same protocol text"
+  },
+  {
+   "dep": 475,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "figural: a corpus 'the equivalent of Marx's notebooks'"
+  },
+  {
+   "dep": 1593,
+   "cands": [
+    "O0014"
+   ],
+   "reason": "Engels's editing of Capital II–III as a stylometric test; no claim on the holding of the manuscripts"
+  },
+  {
+   "dep": 1594,
+   "cands": [
+    "O0015"
+   ],
+   "reason": "the same test"
+  },
+  {
+   "dep": 1605,
+   "cands": [
+    "O0016"
+   ],
+   "reason": "the same test"
+  }
+ ],
+ "hop": {
+  "from": [
+   950,
+   1065,
+   1066,
+   1422,
+   1725
+  ],
+  "candidates": 95,
+  "admitted": 2,
+  "reading": "each hop candidate screened by string for the entity's names, Amsterdam, custody, Riazanov, Moscow, the Marx-Engels Institute, the SPD archives, Nachlass, Bakunin, the Hague and 'Social History', and read at its matches; #843 and #1067 admitted; #1647 and #1684 grouped as instances; the other matches are the archive's own custody of its records (#1540, #1678, #1680, #1443, #1634, #1087, #499, #506 among them), reference lines (#18, #550, #1669: 'A Social History of Artificial Intelligence', 'International Review of Social History') or Moscow as a place of publication (#38); the rest carry none of the terms; none of them says anything of the institute or the four classes"
+ },
+ "observations": "One archive text names the institute (#950: the manuscript of the eleventh thesis 'in the International Institute of Social History in Amsterdam'). The archive's other bearing is by class and by its anchor: the custody of the Marx-Engels estate, traced to Moscow and RGASPI at the archive's own grade (#843, #1066, #1067), which never names the institute and stands beside the field's Amsterdam custody; marked supply and the archive as an act of composition (#1422); and #1725's holder, organ and route and the Hague expulsion, the terms in which the census asks of the institute.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 1,
+   "D_deposits": 1,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 16,
+   "O_deposits": 12,
+   "H_candidates": 95
+  },
+  "deposits_candidate": 13,
+  "deposits_admitted": 9,
+  "deposits_admitted_with_claims": 6,
+  "instances_grouped_S4": 3,
+  "hop_candidates": 95,
+  "hop_admitted": 2,
+  "archive_claims": {
+   "capture": 9,
+   "ml": 26,
+   "deposit": 14
+  }
+ }
+}

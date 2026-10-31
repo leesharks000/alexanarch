@@ -1,0 +1,739 @@
+{
+ "row": "unionstats",
+ "address": "Union Membership and Coverage Database",
+ "addresses": [
+  "Union Membership and Coverage Database"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the saved Wikipedia wikitext and B6.txt, or the card's title and snippet on the transcript's rail for the two unreachable cards; 27/27 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the database's home page, a frameset; B2 the BLS Union Members Summary, refused with HTTP 403; B3 EPI's union membership data page, refused with HTTP 403); 'own_page', the census's own pages, which are the two frames card 1 loads and which T did not surface as documents (B4 main.htm, B5 contents.htm, copied from the census's saved copies, sha256 matching the manifest); 'wikipedia', no article (B6: the HTTP responses, and the two articles that name the database). No census_third_party source: the census read only the database's own pages.",
+ "lineage_note": "Lineages: what it is (B4); names, the site and its frames (B1, B4); makers, founding and annual update (B1, B4, B5, B6); genealogy, the 2003 note and the state series (B6); series and coverage periods (B4, B5); union wages and the wage gap (B5); latest compilation (B4); documentation (B5); terms of use (B5); stated limit (B4); the official series, BLS (B2, B6); other publishers (B3); reception, the encyclopedia (B6). The census's fields that restate an own page are one lineage with that page (§3.6), which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/unionstats-20261031/ (Bn.html raw, Bn.txt text; B1-census.html the census's saved copy of the home page beside this session's byte-identical fetch; B2-403.html and B3-403.html the refusals; B4 and B5 the census's saved copies; B6 .wiki, .html, -variant1.wiki, -search.html, -affil.wiki, -hirsch.wiki raw Wikipedia responses with B6.txt a record of codes and extracted notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the census's own page unionstats--home",
+   "card": "Union Membership and Coverage Database — Union Membership and Coverage Database",
+   "url": "https://www.unionstats.com/",
+   "kind": "Overview card (the database's home page, a frameset loading contents.htm and main.htm); the same page as the census's own page unionstats--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1.html",
+     "sha256": "9c1b606205174cb68ab45a13345f8852efafab68b7f02054f1f59f8738427ab0"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1.txt",
+     "sha256": "e0854f4824b44ce58b1ed4425b38885b7d76c103664c1f7bf38bcb7bddef5c11"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1-census.html",
+     "sha256": "9c1b606205174cb68ab45a13345f8852efafab68b7f02054f1f59f8738427ab0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:16Z",
+    "http": 200,
+    "url": "https://www.unionstats.com/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1.html",
+    "raw_sha256": "9c1b606205174cb68ab45a13345f8852efafab68b7f02054f1f59f8738427ab0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "unionstats--home",
+     "sha256": "9c1b606205174cb68ab45a13345f8852efafab68b7f02054f1f59f8738427ab0",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T21:27:59Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B1.txt"
+     ],
+     "agrees": "byte-identical: this session's fetch and the census copy have the same sha256; B1.txt is the census's extracted text"
+    }
+   },
+   "names_operator": "no in the frameset's own text (its embedded document metadata names 'Barry Hirsch'); its snippet names the three makers, from the contents frame (F2)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "URL from the card's site and title (the page's <title> is the card title). The frameset loads two frames, contents.htm (B5) and main.htm (B4) (frame src attributes in B1.html); the card's snippet is the contents frame's text (B5.txt, the makers block).",
+   "surfaced_by_T": [
+    {
+     "slug": "union-membership-and-coverage-database-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Union Membership and Coverage Database",
+   "card_snippet": "Union Membership and Coverage Database from the CPS (Unionstats.com) Barry Hirsch, Georgia State University David Macpherson, Trinity University William Even, M...",
+   "card_note": "the registry's cite_list records snip null; the snippet is on the transcript's card rail"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Bureau of Labor Statistics (.gov) — Union Members Summary - 2025 A01 Results - Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/news.release/union2.nr0.htm",
+   "kind": "Overview card (the BLS news release summary, union members in 2025; unreachable)",
+   "files": {
+    "B2-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B2-403.html",
+     "sha256": "8f8a4f99cba42c3eb7e36b000c18bc2bb798b387a4685c5cdd69c21ac02c8542"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:17Z",
+      "url": "https://www.bls.gov/news.release/union2.nr0.htm",
+      "http": 403,
+      "sha256": "8f8a4f99cba42c3eb7e36b000c18bc2bb798b387a4685c5cdd69c21ac02c8542",
+      "result": "BLS 'Access Denied' page: 'bot activity that doesn't conform to BLS usage policy is prohibited' (saved as B2-403.html)"
+     }
+    ],
+    "note": "URL by WebSearch on the card's title and site. BLS refused the census's agent with HTTP 403: a refusal, recorded and not retried with another agent or by any other route. The census's own note records the same refusal for bls.gov (unread_sources, bls-work-stoppages--home, 403). The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (the snippet names BLS's own release)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "Wikipedia's Union affiliation by U.S. state cites this page by the card's title (F25).",
+   "surfaced_by_T": [
+    {
+     "slug": "union-membership-and-coverage-database-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Union Members Summary - 2025 A01 Results - Bureau of Labor Statistics",
+   "card_snippet": "Feb 18, 2026 — By age, workers ages 45 to 54 had the highest union membership rate in 2025, at 12.6 percent. Younger workers--those ages 16 to 24--had the lowest union members...",
+   "card_note": "the registry's cite_list records snip null; the snippet is on the transcript's card rail"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Economic Policy Institute — Union membership data | Economic Policy Institute",
+   "url": "https://www.epi.org/union-membership-data/",
+   "kind": "Overview card (EPI's union membership data page; unreachable)",
+   "files": {
+    "B3-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B3-403.html",
+     "sha256": "246f2884735595d3cc6ade239a7524708005947180c42a2ea55879363d5ec442"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:17Z",
+      "url": "https://www.epi.org/union-membership-data/",
+      "http": 403,
+      "sha256": "246f2884735595d3cc6ade239a7524708005947180c42a2ea55879363d5ec442",
+      "result": "Cloudflare 'Sorry, you have been blocked' page (saved as B3-403.html)"
+     }
+    ],
+    "note": "URL by WebSearch on the card's title and site (result title 'union membership data', https://www.epi.org/union-membership-data/). EPI's Cloudflare blocked the census's agent with HTTP 403: a refusal, recorded and not retried with another agent or by any other route. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "The snippet is the page's navigation and a table heading.",
+   "surfaced_by_T": [
+    {
+     "slug": "union-membership-and-coverage-database-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Union membership data | Economic Policy Institute",
+   "card_snippet": "Union membership data * About Support our work Donate * Wage suppression in 10 charts The Cost of Deportations Calculator * Table 1: Union membership and union ...",
+   "card_note": "the registry's cite_list records snip null; the snippet is on the transcript's card rail"
+  },
+  {
+   "id": "B4",
+   "origin": "own_page",
+   "role": "the census's own page unionstats--main; the main frame card 1's frameset loads",
+   "card": "Union Membership and Coverage Database — main.htm (documentation)",
+   "url": "https://www.unionstats.com/main.htm",
+   "kind": "own page (the database's documentation frame)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B4.html",
+     "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B4.txt",
+     "sha256": "ed6c57d586ea34ae1d6a246ee581cbfc07da30302772fa19a3c782df59ec7f9e"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "unionstats--main",
+     "sha256": "964e3fe9de60a600ea367894f9574270fe058abd7ff346e79e2767a5c454bb69",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T21:35:27Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B4.html",
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B4.txt"
+     ],
+     "agrees": "B4.html is the census's .html.gz gunzipped; its sha256 matches the manifest"
+    },
+    "refetched": false
+   },
+   "names_operator": "yes (Hirsch, Macpherson, Even, with their schools)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "Not surfaced by T as a separate document: T surfaced the frameset (card 1), which loads this page as its main frame. Admitted by the operator's ruling of 2026-10-29 ('their own pages').",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "role": "the census's own page unionstats--contents; the contents frame card 1's frameset loads",
+   "card": "Union Membership and Coverage Database — contents.htm (table of contents)",
+   "url": "https://www.unionstats.com/contents.htm",
+   "kind": "own page (the database's contents frame)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B5.html",
+     "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B5.txt",
+     "sha256": "d181f2bc3c06a6b28c1cf6cc135c65aa66cc90b1c70548cb54a417d11747444f"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "unionstats--contents",
+     "sha256": "955afb6134469f6d759ddb89197357a6390e2b2f1e1c053f049e2b550faa193c",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T21:35:30Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B5.html",
+      "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B5.txt"
+     ],
+     "agrees": "B5.html is the census's .html.gz gunzipped; its sha256 matches the manifest"
+    },
+    "refetched": false
+   },
+   "names_operator": "yes (Hirsch, Macpherson, Even, with their universities)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "Not surfaced by T as a separate document; card 1's snippet is this frame's text. The page's '©' is rendered '�' in the saved text (an encoding of the served bytes).",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Union Membership and Coverage Database (no article; named in Union affiliation by U.S. state and Barry Hirsch)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Union_Membership_and_Coverage_Database&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B6.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6.wiki",
+     "sha256": "e55603dbdec247400a05a42a50ca6993773b3d3218209425307eb560ad2869c9"
+    },
+    "B6-429.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6-429.wiki",
+     "sha256": "2185adee59ad87b3e15e6e0be6f2b5431222c52b08f7c2c392be1a0a55a7dedb"
+    },
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6.html",
+     "sha256": "245b53111346d59f907d4fbb6635291585dfb18710618c5e75c03288d843c34e"
+    },
+    "B6-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6-variant1.wiki",
+     "sha256": "3c990cfbd53631e51a9f8f73f0e459f2ede07530f9ca14143cb684c873ef687d"
+    },
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6-search.html",
+     "sha256": "3f3fde5952fdaa00a53f6cb65a8c626c4e5e6d4421419dc8f07c225a1dd124e7"
+    },
+    "B6-affil.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6-affil.wiki",
+     "sha256": "fefffd5958cb9e69cbd4a51c99fc2b9f9aaf9bece4992a040b79ebfa241c6164"
+    },
+    "B6-hirsch.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6-hirsch.wiki",
+     "sha256": "d8436cf1a37d35bf24410768a4c63b7fdd53d8a2987b7a1b7c222c4df683471b"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6.txt",
+     "sha256": "f031a6ff09841f572356f5b59fb48668801dd896b2cca509b584f712b199117b"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:17Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Union_Membership_and_Coverage_Database&action=raw",
+      "http": 429,
+      "result": "Wikimedia Error page, rate limit (B6-429.wiki)"
+     },
+     {
+      "at": "2026-10-31T22:59:43Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Union_Membership_and_Coverage_Database&action=raw",
+      "http": 404,
+      "result": "retried once with the same agent: Wikimedia Error page, Not Found (B6.wiki)"
+     },
+     {
+      "at": "2026-10-31T22:59:18Z",
+      "url": "https://en.wikipedia.org/wiki/Union_Membership_and_Coverage_Database",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.' (B6.html)"
+     },
+     {
+      "at": "2026-10-31T22:59:18Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Unionstats&action=raw",
+      "http": 404,
+      "result": "Not Found (B6-variant1.wiki)"
+     },
+     {
+      "at": "2026-10-31T22:59:19Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Union+Membership+and+Coverage+Database%22&ns0=1&fulltext=1",
+      "http": 200,
+      "result": "two results: Union affiliation by U.S. state; Barry Hirsch (B6-search.html)"
+     },
+     {
+      "at": "2026-10-31T22:59:44Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Union_affiliation_by_U.S._state&action=raw",
+      "http": 200,
+      "result": "B6-affil.wiki"
+     },
+     {
+      "at": "2026-10-31T22:59:44Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Barry_Hirsch&action=raw",
+      "http": 200,
+      "result": "B6-hirsch.wiki"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/unionstats-20261031/B6.txt"
+    ],
+    "note": "B6.txt records the codes and carries the extracted text of B6.html and B6-search.html; the two articles are quoted from their saved wikitext."
+   },
+   "names_operator": "yes (Barry Hirsch has an article; the citations name Hirsch, Macpherson and Vroman)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B6.txt carries the fetch agent string only, in its header)",
+   "note": "No redirect from either title. The 429 on the first raw request was a rate limit (Wikimedia Error page); the retry with the same agent answered 404, which agrees with the rendered page.",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home page <title> and text (the frameset)",
+   "quote": "Union Membership and Coverage Database",
+   "claim": "the home page at www.unionstats.com is titled with the entity's name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names, the site and its frames",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0854f4824b44ce5…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card 1 snippet",
+   "quote": "Union Membership and Coverage Database from the CPS (Unionstats.com) Barry Hirsch, Georgia State University David Macpherson, Trinity University William Even, M...",
+   "claim": "card 1: the database 'from the CPS' at Unionstats.com, with its three makers and their universities",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, founding and annual update",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 07448d6adc800a06…), whitespace-normalised: the card's title and snippet"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home page, noframes text",
+   "quote": "This page uses frames, but your browser doesn't support them.",
+   "claim": "the home page is a frameset; its words are in the frames it loads (B4, B5)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names, the site and its frames",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e0854f4824b44ce5…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm, heading",
+   "quote": "Union Membership, Coverage, and Earnings from the CPS",
+   "claim": "the database's documentation page heads it 'Union Membership, Coverage, and Earnings from the CPS'",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "names, the site and its frames",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm ¶1",
+   "quote": "Union data compilations from the 2025 CPS completed January 23, 2026.",
+   "claim": "the compilations from the 2025 CPS were completed on 23 January 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "latest compilation",
+   "date": "2026-01-23 (stated); read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm ¶2",
+   "quote": "is an Internet data resource providing private and public sector labor union membership, coverage, and density estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods.",
+   "claim": "the database's definition of itself: an Internet data resource of private and public sector union membership, coverage and density estimates, compiled from the monthly household CPS by BLS methods",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an Internet data resource of union membership, coverage and density estimates",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm ¶2 s2",
+   "quote": "Economy-wide estimates are provided beginning in 1973; estimates by state, detailed industry, and detailed occupation begin in 1983; and estimates by metropolitan area begin in 1986.",
+   "claim": "economy-wide estimates begin in 1973; by state, detailed industry and detailed occupation in 1983; by metropolitan area in 1986",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "series and coverage periods",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm ¶2 s3",
+   "quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University)",
+   "claim": "the database was constructed by Barry Hirsch (Georgia State), David Macpherson (Trinity) and William Even (Miami)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "makers, founding and annual update",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm ¶2 s3 (end)",
+   "quote": "was created in 2002 and is updated annually.",
+   "claim": "the database was created in 2002 and is updated annually",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, founding and annual update",
+   "date": "2002 (stated); read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm, Note",
+   "quote": "CPS sample sizes are very small for some cells. Use such estimates cautiously.",
+   "claim": "the database's stated limit: CPS sample sizes are very small for some cells, whose estimates are to be used cautiously",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limit: small cells",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "main.htm <title>",
+   "quote": "Documentation for the Union Membership and Coverage Database",
+   "claim": "the documentation page names itself documentation for the database",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names, the site and its frames",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ed6c57d586ea34ae…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, makers block",
+   "quote": "Barry Hirsch , Georgia State University David Macpherson , Trinity University William Even , Miami University",
+   "claim": "the contents page names the three makers with their universities",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, founding and annual update",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, section I",
+   "quote": "I. Historical Tables: Union Membership, Density and Employment … By Sector and Demographic Group: 1973-2025 … By Sector and State: 1983-2025 … By Sector and Metropolitan Area: 1986-2025 … By Industry: 1983-2025 … By Occupation: 1983-2025",
+   "claim": "historical tables of union membership, density and employment by sector and demographic group (1973-2025), by sector and state (1983-2025), by sector and metropolitan area (1986-2025), by industry (1983-2025) and by occupation (1983-2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "series and coverage periods",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, section II",
+   "quote": "II. Historical Tables: Union Wages, Nonunion Wages, and Union Wage Gaps, 1973-2022 … By Sector and Demographic Group: 1973-2025",
+   "claim": "historical tables of union wages, nonunion wages and union wage gaps, the section headed 1973-2022 and its one table listed 1973-2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "union wages and the union wage gap",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised",
+   "mark": "internally_inconsistent (§4.3): the section heading gives 1973-2022 and its table 1973-2025, both on contents.htm section II"
+  },
+  "F15": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, section III",
+   "quote": "III. CPS Information and Supporting Documentation.",
+   "claim": "a section of CPS information and supporting documentation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "documentation",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, foot",
+   "quote": "Use of data requires citation.",
+   "claim": "the database's condition of use: use of the data requires citation",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms of use: citation required",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, foot (the citation)",
+   "quote": "Hirsch, Barry T., David A. Macpherson, and William E. Even (2026). Union Membership, Coverage, and Earnings from the CPS. https://unionstats.com",
+   "claim": "the citation the database requires: Hirsch, Macpherson and Even (2026), Union Membership, Coverage, and Earnings from the CPS",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms of use: citation required",
+   "date": "2026 (the citation year); read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "contents.htm, makers block",
+   "quote": "Email for support or questions",
+   "claim": "the contents page offers email for support or questions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms of use: citation required",
+   "date": "2026-10-31 (read; the census's saved copy, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d181f2bc3c06a6b2…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card 2 title and snippet (page unreachable: HTTP 403)",
+   "quote": "Union Members Summary - 2025 A01 Results - Bureau of Labor Statistics … Feb 18, 2026",
+   "claim": "card 2: the Bureau of Labor Statistics' Union Members Summary of the 2025 results, dated 18 February 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the official series: BLS union members",
+   "date": "2026-02-18 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 07448d6adc800a06…), whitespace-normalised: the card's title and snippet"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card 2 snippet (page unreachable: HTTP 403)",
+   "quote": "By age, workers ages 45 to 54 had the highest union membership rate in 2025, at 12.6 percent. Younger workers--those ages 16 to 24--had the lowest union members...",
+   "claim": "BLS: workers ages 45 to 54 had the highest union membership rate in 2025, 12.6 percent, and workers ages 16 to 24 the lowest",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the official series: BLS union members",
+   "date": "2026-02-18 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 07448d6adc800a06…), whitespace-normalised: the card's title and snippet"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card 3 title and snippet (page unreachable: HTTP 403, Cloudflare block)",
+   "quote": "Union membership data | Economic Policy Institute … Union membership data * About Support our work Donate * Wage suppression in 10 charts The Cost of Deportations Calculator * Table 1: Union membership and union ...",
+   "claim": "card 3: the Economic Policy Institute publishes union membership data in tables of its own ('Table 1: Union membership and union …')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "other publishers of union membership data",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 07448d6adc800a06…), whitespace-normalised: the card's title and snippet"
+  },
+  "F22": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles Union Membership and Coverage Database and Unionstats; article-space search",
+   "quote": "HTTP 404 (Wikimedia Error page; saved as B6.wiki) … Wikipedia does not have an article with this exact name. … do not exist. … Union affiliation by U.S. state … Barry Hirsch",
+   "claim": "Wikipedia has no article on the entity under its name or as Unionstats and no redirect; article space names it in two articles, Union affiliation by U.S. state and Barry Hirsch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 f031a6ff09841f57…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Union affiliation by U.S. state, External links (wikitext line 236)",
+   "quote": "{{cite web |author1=Hirsch, Barry T. |author2=Macpherson, David |year=2016 |title=Union Membership and Coverage Database |publisher=Unionstats.com |url=http://www.unionstats.com}}",
+   "claim": "Wikipedia's Union affiliation by U.S. state lists the database as an external link, cited to Hirsch and Macpherson (2016), Unionstats.com",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched; revision of 19 February 2026 per the search result)",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-affil.wiki (sha256 fefffd5958cb9e69…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Union affiliation by U.S. state, External links (wikitext line 237)",
+   "quote": "{{cite web |author1=Hirsch, Barry T. |author2=Macpherson, David A. |author3=Vroman, Wayne G. |year=2016 |title=Union Density Estimates by State, 1964–2015 |location=Atlanta |publisher=[[Georgia State University]] |url=http://unionstats.gsu.edu/MonthlyLaborReviewArticle.htm}}",
+   "claim": "beneath the database's link, Wikipedia lists a separate work, Union Density Estimates by State, 1964–2015 (Hirsch, Macpherson and Vroman, 2016), published by Georgia State University at unionstats.gsu.edu",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the 2003 note and the state series",
+   "date": "2016 (the citation); fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-affil.wiki (sha256 fefffd5958cb9e69…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Union affiliation by U.S. state, table caption and references (wikitext lines 5–7)",
+   "quote": "'''Union affiliation by U.S. state (2025)'''<ref>{{cite web |author=Bureau of Labor Statistics … {{Cite web |title=Union Members Summary - 2025 A01 Results |url=https://www.bls.gov/news.release/union2.nr0.htm",
+   "claim": "Wikipedia's table of union affiliation by state for 2025 cites the Bureau of Labor Statistics and its Union Members Summary, the page of card 2",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the official series: BLS union members",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-affil.wiki (sha256 fefffd5958cb9e69…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Barry Hirsch, Bibliography (selected)",
+   "quote": "Hirsch, B.T., MacPherson, D.A. (2003). Union membership and coverage database from the current population survey: Note. ''ILR Review'', 56(2), pp.&nbsp;349–354.",
+   "claim": "Wikipedia lists Hirsch and Macpherson's 2003 note on the database in the ILR Review, 56(2), 349–354",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "genealogy: the 2003 note and the state series",
+   "date": "2003 (the note); fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-hirsch.wiki (sha256 d8436cf1a37d35bf…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "Barry Hirsch, lead sentence",
+   "quote": "'''Barry T. Hirsch''' (born 1949) is an [[Americans|American]] [[economist]] and the W.J. Usery Chair of the American Workplace at the [[Andrew Young School of Policy Studies]] of [[Georgia State University]].",
+   "claim": "Wikipedia: Barry T. Hirsch (born 1949) is an American economist holding the W.J. Usery Chair of the American Workplace at Georgia State's Andrew Young School of Policy Studies",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers, founding and annual update",
+   "date": "2026-10-31 (as fetched; revision of 29 December 2025 per the search result)",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B6-hirsch.wiki (sha256 d8436cf1a37d35bf…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Union Membership and Coverage Database — Union Membership and Coverage Database",
+  "B2": "Bureau of Labor Statistics (.gov) — Union Members Summary - 2025 A01 Results - Bureau of Labor Statistics",
+  "B3": "Economic Policy Institute — Union membership data | Economic Policy Institute",
+  "B4": "Union Membership and Coverage Database — main.htm (documentation)",
+  "B5": "Union Membership and Coverage Database — contents.htm (table of contents)",
+  "B6": "Wikipedia — Union Membership and Coverage Database (no article; named in Union affiliation by U.S. state and Barry Hirsch)"
+ }
+}

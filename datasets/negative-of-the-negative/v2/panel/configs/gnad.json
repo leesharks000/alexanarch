@@ -1,0 +1,48 @@
+{
+ "row": "gnad",
+ "address": "Global Nonviolent Action Database",
+ "entity": "The Global Nonviolent Action Database (GNAD, nvdatabase.swarthmore.edu), a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility: a free online database of researched case studies of nonviolent action campaigns (1,200+ cases, 100+ countries, 400+ years covered, by its home page), each presented as a database file with searchable fields and a narrative, browsable by case, tag, method and map, licensed CC BY-NC-ND 4.0; launched in 2011 and developed by George Lakey with Swarthmore and other students (the Wikipedia title redirects to the article George Lakey); formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/gnad/)",
+ "row_type": "C (a public entity on which the archive bears: a database of case studies of nonviolent action campaigns; an entity of the maryleelabor left-and-labor census, area labor action)",
+ "aliases": [
+  {
+   "pattern": "\\bGlobal Nonviolent Action Database\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bGNAD\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bnvdatabase(\\.swarthmore\\.edu)?\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "nonviolent action campaigns (nonviolent action, civil resistance, nonviolent struggle)",
+   "pattern": "\\b(nonviolent (action|campaigns?|struggle|resistance|protest|direct action|movements?|revolution)|non-violent (action|campaigns?|struggle|resistance)|civil resistance|nonviolence)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the home page: 'Powering Learning about Nonviolent Action'); B3 (CNCR: 'A database of over 1000 summaries of nonviolent campaigns worldwide'); B4 (Discuss Data: 'It reports on cases of nonviolent protest actions taken across the globe', with the database's definition of nonviolent action as a 'technique of struggle'); B6 (the Peace & Conflict Studies blog: 'cases of nonviolent civil resistance from around the world'); B7 (Wikipedia, George Lakey, Works: 'campaigns back to ancient Egypt that used nonviolent direct action'). The census's own kind ('database of case studies of nonviolent action campaigns') and record_object ('nonviolent action campaigns across 100+ countries and 400+ years') for the entity (ML record, census.json rows[slug == 'gnad'].kind, .record_object)."
+  },
+  {
+   "term": "case records (written case studies, one campaign per case)",
+   "pattern": "\\b(case (studies|study|records?)|case record|written up as cases|cases are written|each case)\\b",
+   "flags": "i",
+   "basis": "field: B3 (CNCR: 'It is important to note that the case studies included are indeed, campaigns, and not movements'; 'Each case is presented in two formats: the database file (with searchable fields) and the narrative describing the struggle as an unfolding story'); B4 (Discuss Data: 'The dataset takes the form of both case studies as well as a more visual representation in the form of an interactive map'); B7 (Wikipedia: 'over 1,000 researched cases', 'includes a narrative for each case'). The census's own evidence_kind ('case record'), unit ('a case: a nonviolent action campaign') and negative tag ('NOT an event count') for the entity (ML record, census.json rows[slug == 'gnad'].evidence_kind, .unit, .negative_tags)."
+  },
+  {
+   "term": "labor action (strikes and workers' campaigns)",
+   "pattern": "\\b((general|labou?r|rent|hunger|wildcat|sit-down|mass) strikes?|strike (action|wave)|work stoppages?|strikers|workers'? (strike|campaigns?|struggles?)|living wage (campaigns?|movement)|anti-sweatshop)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the home page's featured case 'Guatemalan workers at Lunafil strike' and 'Macalester students stage sit-in to oppose sweatshop apparel, 2000'); B2 (the case map's waves 'Student Anti-Sweatshop Labor Movement (1990s - 2010s)' and 'Student Living Wage Movement (late 1990s - mid 2000s)'); B3 (CNCR: cases of people 'struggling for … economic justice'). The census's own area ('labor-action', 'Labor action: strikes, stoppages and protest events, counted and described') and negative tag ('NOT a labor dataset: labor cases are one part of a database of nonviolent action of every kind') for the entity (ML record, census.json rows[slug == 'gnad'].areas, .negative_tags; census.json areas['labor-action'])."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own kind, evidence kind, unit, area or negative tag for the entity, stated by field sources at the loci given: (1) nonviolent action campaigns, the database's object (census kind and record_object; B1, B3, B4, B6, B7); (2) case records, its unit and evidence kind (census evidence_kind 'case record', unit, negative tag 'NOT an event count'; B3, B4, B7); (3) labor action, the census area it is entered under (census areas 'labor-action', negative tag 'NOT a labor dataset'; B1, B2, B3). The census's ml_reading ('The archive reads the case as the unit that carries a campaign's course in prose, which an event count does not') is the archive's reading, ledgered as ML-NN, not a class. The aliases are the entity's name, its abbreviation GNAD (case-sensitive) and its host nvdatabase.swarthmore.edu. George Lakey, who developed it (B7), Swarthmore College and its Peace and Conflict Studies Program, Peace Collection and Lang Center (B1), and the Strategy and Nonviolent Struggle course (B6) are persons and bodies distinct from the entity; none is an alias. #1725, the census's anchor, is read at the passages that name the entity's kind (the case record and what it shows of how conflict ends; the losing position and its holder), per the left-row brief (substitution 8); other deposits enter only where a sentence applies an archive category to a class above or names the entity. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a figural use, a list of keywords or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Global Nonviolent Action Database' (global-nonviolent-action-database-aio-20261031, OBS-40ab38014d36, ADDR-19350d754391), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#1438, #1668, #1725).",
+ "hop_from": [
+  1438,
+  1668,
+  1725
+ ]
+}

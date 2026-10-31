@@ -1,0 +1,1876 @@
+{
+ "row": "gnad",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the database with the entity named; R, a relation the archive states between it and an archive object; O, an archive category applied to it or to a class the field and the census source for it (nonviolent action campaigns: B1, B3, B4, B6, B7, census kind and record_object; case records: B3, B4, B7, census evidence_kind, unit and negative tag; labor action: B1, B2, B3, census area and negative tag). A bare mention, a figural use, a list of keywords or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching the nonviolent-action and labor-action patterns, and the case-record pattern narrowed to 'case record(s)', 'event count(s)', 'event dataset(s)', 'written up as cases' and 'counted and described', was read at its passage (46 sentences in 20 texts), and #1725, the census's anchor, was read at its summary, the section on the case record, the evidence against its hypothesis and its Conclusion (substitution 8).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes, the census's anchor: the case record shows how conflict ends, where a count of conflict measures how much there is; its limit, frequency unmeasured; the decisive variable, the losing position with its organ, holder and route (O-class, case records; the census's question). The string pass returned two sentences of it (O0261, O0262: a table of endings and a sentence joining two layers); the ledgered sentences were found by the class scan and by reading the passages substitution 8 names",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04"
+   ],
+   "cands": [
+    "O0261",
+    "O0262"
+   ]
+  },
+  {
+   "dep": 1438,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Strike Is Not a Withholding of Labor: the archive defines its semantic strike against the conventional work stoppage, stating what stops, who acts, the success condition and the end of a work stoppage (O-class, labor action); its 'Not synonymous with' list grouped as an instance (S4)",
+   "claims": [
+    "O1438-01"
+   ],
+   "cands": [
+    "O0245",
+    "O0246"
+   ]
+  },
+  {
+   "dep": 1668,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Noun Becomes a Verb: the general strike of the enslaved read through Du Bois in the archive's terms of noun and verb (O-class, labor action). Not a string-pass candidate (no category term the script reads); found by the class scan at p61 and p76",
+   "claims": [
+    "O1668-01",
+    "O1668-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/global-nonviolent-action-database-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, headline, PER note, PER basis and query note for the entity's capture (OBS-40ab38014d36, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/gnad/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'gnad'], organizing_question, anchor, areas; rendered /home/claude/fleet/maryleelabor-org/aggregators/gnad/index.html read for agreement)",
+   "reason": "the maryleelabor left-and-labor census record of the entity (editor Lee Sharks, compiled 2026-10-31, schema 1.0): its fields with their basis; where a field restates the home page (B1) it is one lineage with that page; ml_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26",
+    "ML-27",
+    "ML-28"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 11,
+   "cands": [
+    "O0001"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 29,
+   "cands": [
+    "O0002",
+    "O0003"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 31,
+   "cands": [
+    "O0004",
+    "O0005"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 32,
+   "cands": [
+    "O0006"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 33,
+   "cands": [
+    "O0007",
+    "O0008"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 34,
+   "cands": [
+    "O0009"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 36,
+   "cands": [
+    "O0010"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 38,
+   "cands": [
+    "O0011",
+    "O0012",
+    "O0013"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 39,
+   "cands": [
+    "O0014"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 43,
+   "cands": [
+    "O0015"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 49,
+   "cands": [
+    "O0016",
+    "O0017"
+   ],
+   "reason": "'Semantic Rent Strike', the name of an archive operator: a figural use; no claim on labor action"
+  },
+  {
+   "dep": 50,
+   "cands": [
+    "O0018",
+    "O0019",
+    "O0020"
+   ],
+   "reason": "'Semantic Rent Strike' and catalogue lists: a figural use; no claim on labor action"
+  },
+  {
+   "dep": 55,
+   "cands": [
+    "O0021",
+    "O0022",
+    "O0023",
+    "O0024",
+    "O0025",
+    "O0026"
+   ],
+   "reason": "catalogue lists ('semantic rent strike'; 'case studies' of the archive's own); no claim on the classes"
+  },
+  {
+   "dep": 57,
+   "cands": [
+    "O0027"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 71,
+   "cands": [
+    "O0028"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 79,
+   "cands": [
+    "O0029"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 82,
+   "cands": [
+    "O0030",
+    "O0031"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 85,
+   "cands": [
+    "O0032"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 97,
+   "cands": [
+    "O0033",
+    "O0034"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 100,
+   "cands": [
+    "O0035"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 101,
+   "cands": [
+    "O0036",
+    "O0037"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 106,
+   "cands": [
+    "O0038"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 114,
+   "cands": [
+    "O0039"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 115,
+   "cands": [
+    "O0040",
+    "O0041"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 121,
+   "cands": [
+    "O0042"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 123,
+   "cands": [
+    "O0043"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 155,
+   "cands": [
+    "O0044"
+   ],
+   "reason": "'event counts' of an audit metric: another sense"
+  },
+  {
+   "dep": 158,
+   "cands": [
+    "O0045",
+    "O0046",
+    "O0047",
+    "O0048",
+    "O0049",
+    "O0050",
+    "O0051",
+    "O0052"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 161,
+   "cands": [
+    "O0053",
+    "O0054"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 163,
+   "cands": [
+    "O0055"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 166,
+   "cands": [
+    "O0056",
+    "O0057"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 167,
+   "cands": [
+    "O0058",
+    "O0059",
+    "O0060",
+    "O0061"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 173,
+   "cands": [
+    "O0062",
+    "O0063"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 176,
+   "cands": [
+    "O0064"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 187,
+   "cands": [
+    "O0065",
+    "O0066"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 197,
+   "cands": [
+    "O0067"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 199,
+   "cands": [
+    "O0068"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 217,
+   "cands": [
+    "O0069",
+    "O0070",
+    "O0071"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 224,
+   "cands": [
+    "O0072"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 232,
+   "cands": [
+    "O0073"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 251,
+   "cands": [
+    "O0074"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 252,
+   "cands": [
+    "O0075",
+    "O0076"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 261,
+   "cands": [
+    "O0077"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 273,
+   "cands": [
+    "O0078",
+    "O0079"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 274,
+   "cands": [
+    "O0080",
+    "O0081"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 289,
+   "cands": [
+    "O0082"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 302,
+   "cands": [
+    "O0083"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 317,
+   "cands": [
+    "O0084"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 339,
+   "cands": [
+    "O0085"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 382,
+   "cands": [
+    "O0086"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 385,
+   "cands": [
+    "O0087"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 386,
+   "cands": [
+    "O0088",
+    "O0089",
+    "O0090"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 388,
+   "cands": [
+    "O0091"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 398,
+   "cands": [
+    "O0092"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 400,
+   "cands": [
+    "O0093"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 437,
+   "cands": [
+    "O0094"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 462,
+   "cands": [
+    "O0095"
+   ],
+   "reason": "'Rent Strike' as the name of a standard program: a figural use"
+  },
+  {
+   "dep": 467,
+   "cands": [
+    "O0096"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 469,
+   "cands": [
+    "O0097"
+   ],
+   "reason": "nonviolent resistance training named as a precedent of somatic practice: a practice of movement organizations, no claim on nonviolent campaigns or their record (read at p127, found by the class scan)"
+  },
+  {
+   "dep": 475,
+   "cands": [
+    "O0098"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 478,
+   "cands": [
+    "O0099"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 485,
+   "cands": [
+    "O0100"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 497,
+   "cands": [
+    "O0101"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 499,
+   "cands": [
+    "O0102",
+    "O0103",
+    "O0104"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 500,
+   "cands": [
+    "O0105",
+    "O0106"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 501,
+   "cands": [
+    "O0107",
+    "O0108",
+    "O0109",
+    "O0110"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 506,
+   "cands": [
+    "O0111"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 516,
+   "cands": [
+    "O0112",
+    "O0113"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 520,
+   "cands": [
+    "O0114"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 522,
+   "cands": [
+    "O0115"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 556,
+   "cands": [
+    "O0116"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 557,
+   "cands": [
+    "O0117",
+    "O0118"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 558,
+   "cands": [
+    "O0119",
+    "O0120",
+    "O0121"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 565,
+   "cands": [
+    "O0122"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 573,
+   "cands": [
+    "O0123"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 574,
+   "cands": [
+    "O0124",
+    "O0125"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 580,
+   "cands": [
+    "O0126",
+    "O0127",
+    "O0128"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 582,
+   "cands": [
+    "O0129"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 600,
+   "cands": [
+    "O0130",
+    "O0131"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 602,
+   "cands": [
+    "O0132"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 616,
+   "cands": [
+    "O0133"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 620,
+   "cands": [
+    "O0134"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 625,
+   "cands": [
+    "O0135",
+    "O0136"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 641,
+   "cands": [
+    "O0137",
+    "O0138",
+    "O0139"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 642,
+   "cands": [
+    "O0140",
+    "O0141",
+    "O0142",
+    "O0143"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 645,
+   "cands": [
+    "O0144"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 660,
+   "cands": [
+    "O0145"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 661,
+   "cands": [
+    "O0146",
+    "O0147"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 670,
+   "cands": [
+    "O0148"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 680,
+   "cands": [
+    "O0149",
+    "O0150",
+    "O0151"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 682,
+   "cands": [
+    "O0152"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 683,
+   "cands": [
+    "O0153"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 687,
+   "cands": [
+    "O0154"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 700,
+   "cands": [
+    "O0155"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 711,
+   "cands": [
+    "O0156"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 716,
+   "cands": [
+    "O0157",
+    "O0158",
+    "O0159",
+    "O0160",
+    "O0161"
+   ],
+   "reason": "the archive's own motivating case study, 'not offered as a representative sample': a claim on its own case, no claim on case records of nonviolent campaigns"
+  },
+  {
+   "dep": 718,
+   "cands": [
+    "O0162"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 726,
+   "cands": [
+    "O0163"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 741,
+   "cands": [
+    "O0164"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 753,
+   "cands": [
+    "O0165"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 763,
+   "cands": [
+    "O0166",
+    "O0167",
+    "O0168"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 781,
+   "cands": [
+    "O0169"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 783,
+   "cands": [
+    "O0170"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 786,
+   "cands": [
+    "O0171",
+    "O0172"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 791,
+   "cands": [
+    "O0173",
+    "O0174",
+    "O0175",
+    "O0176",
+    "O0177"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 828,
+   "cands": [
+    "O0178",
+    "O0179"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 833,
+   "cands": [
+    "O0180"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 834,
+   "cands": [
+    "O0181"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 846,
+   "cands": [
+    "O0182"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 892,
+   "cands": [
+    "O0183"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 902,
+   "cands": [
+    "O0184",
+    "O0185"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 921,
+   "cands": [
+    "O0186"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 930,
+   "cands": [
+    "O0187"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 950,
+   "cands": [
+    "O0188",
+    "O0189",
+    "O0190",
+    "O0191",
+    "O0192",
+    "O0193",
+    "O0194",
+    "O0195"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 972,
+   "cands": [
+    "O0196"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 995,
+   "cands": [
+    "O0197",
+    "O0198"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1003,
+   "cands": [
+    "O0199"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1011,
+   "cands": [
+    "O0200"
+   ],
+   "reason": "'event counts' of an audit metric: another sense"
+  },
+  {
+   "dep": 1023,
+   "cands": [
+    "O0201"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1039,
+   "cands": [
+    "O0202"
+   ],
+   "reason": "'case record' names a public record of a moderation dispute (GitHub issues): another sense; no claim on case records of campaigns"
+  },
+  {
+   "dep": 1040,
+   "cands": [
+    "O0203"
+   ],
+   "reason": "'case records' at zenodo/zenodo#2606 and #2596: another sense"
+  },
+  {
+   "dep": 1041,
+   "cands": [
+    "O0204"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1046,
+   "cands": [
+    "O0205"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1061,
+   "cands": [
+    "O0206",
+    "O0207",
+    "O0208",
+    "O0209",
+    "O0210"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1079,
+   "cands": [
+    "O0211",
+    "O0212"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1094,
+   "cands": [
+    "O0213",
+    "O0214"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1095,
+   "cands": [
+    "O0215"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1150,
+   "cands": [
+    "O0216"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1153,
+   "cands": [
+    "O0217"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1164,
+   "cands": [
+    "O0218"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1168,
+   "cands": [
+    "O0219",
+    "O0220"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1170,
+   "cands": [
+    "O0221",
+    "O0222"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1171,
+   "cands": [
+    "O0223"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1175,
+   "cands": [
+    "O0224",
+    "O0225",
+    "O0226"
+   ],
+   "reason": "'Semantic Rent Strike' and catalogue lists: a figural use"
+  },
+  {
+   "dep": 1178,
+   "cands": [
+    "O0227"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1184,
+   "cands": [
+    "O0228"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1185,
+   "cands": [
+    "O0229"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1187,
+   "cands": [
+    "O0230"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1189,
+   "cands": [
+    "O0231"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1194,
+   "cands": [
+    "O0232"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1200,
+   "cands": [
+    "O0233"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1211,
+   "cands": [
+    "O0234"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1216,
+   "cands": [
+    "O0235"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1217,
+   "cands": [
+    "O0236"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1228,
+   "cands": [
+    "O0237"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1251,
+   "cands": [
+    "O0238",
+    "O0239"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1342,
+   "cands": [
+    "O0240"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1362,
+   "cands": [
+    "O0241"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1379,
+   "cands": [
+    "O0242"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1406,
+   "cands": [
+    "O0243"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1421,
+   "cands": [
+    "O0244"
+   ],
+   "reason": "the archive's own case study in machine reception: no claim on the class"
+  },
+  {
+   "dep": 1462,
+   "cands": [
+    "O0247"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1485,
+   "cands": [
+    "O0248",
+    "O0249"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1489,
+   "cands": [
+    "O0250"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1535,
+   "cands": [
+    "O0251"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1606,
+   "cands": [
+    "O0252"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1638,
+   "cands": [
+    "O0253",
+    "O0254",
+    "O0255",
+    "O0256"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1643,
+   "cands": [
+    "O0257",
+    "O0258"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1650,
+   "cands": [
+    "O0259"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1681,
+   "cands": [
+    "O0260"
+   ],
+   "reason": "'case study', 'each case' or 'case record' in the archive's own sense (its case studies, its worked cases, its genre labels): no claim on case records of nonviolent campaigns as a class"
+  },
+  {
+   "dep": 1081,
+   "cands": [],
+   "reason": "a restoration-event registry: another sense (a class-scan match, not a string-pass candidate)"
+  },
+  {
+   "dep": 1666,
+   "cands": [],
+   "reason": "a routing event 'counts as flattening': another sense (a class-scan match, not a string-pass candidate)"
+  },
+  {
+   "dep": 948,
+   "cands": [],
+   "reason": "'case record' names a GitHub issue: another sense (a class-scan match, not a string-pass candidate)"
+  },
+  {
+   "dep": 51,
+   "cands": [],
+   "reason": "'hunger strikes' in a list of direct-action means: a bare mention (a class-scan match, not a string-pass candidate)"
+  },
+  {
+   "dep": 1221,
+   "cands": [],
+   "reason": "'hunger strikes' in a list of direct-action means: a bare mention (a class-scan match, not a string-pass candidate)"
+  },
+  {
+   "dep": 1545,
+   "cands": [],
+   "reason": "'general strike', 'work stoppage' in a disambiguation list: a list of keywords (a class-scan match, not a string-pass candidate)"
+  }
+ ],
+ "hop": {
+  "from": [
+   1438,
+   1668,
+   1725
+  ],
+  "candidates": 60,
+  "admitted": 0,
+  "reading": "each hop candidate read by title and by a scan of its text for the three class patterns and for strike, campaign, nonviolen, protest and union; the labor and semantic-economy papers among them (#18, #20, #82, #87, #256, #499, #1066, #1439, #1545, #1669) say nothing of nonviolent campaigns, case records or strikes as classes (#1066: 'union' twice, no strike or campaign; #1669: the Nazi labor economy, no strike); the sentences that do match are the string pass's or the class scan's own rejected candidates (#469, #1545); the papers #1725 cites (#469, #470, #501, #517, #1637, #1660 among them) are read through #1725's own quotations of them and add no claim on the classes; none admitted",
+  "candidates_list": [
+   {
+    "cand": "H0001",
+    "dep": 18,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0002",
+    "dep": 20,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0003",
+    "dep": 58,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0004",
+    "dep": 82,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0005",
+    "dep": 87,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0006",
+    "dep": 166,
+    "direction": "forward",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0007",
+    "dep": 208,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0008",
+    "dep": 209,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0009",
+    "dep": 210,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0010",
+    "dep": 233,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0011",
+    "dep": 239,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0012",
+    "dep": 256,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0013",
+    "dep": 465,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0014",
+    "dep": 466,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0015",
+    "dep": 469,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0016",
+    "dep": 470,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0017",
+    "dep": 476,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0018",
+    "dep": 481,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0019",
+    "dep": 482,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0020",
+    "dep": 499,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0021",
+    "dep": 501,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0022",
+    "dep": 502,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0023",
+    "dep": 506,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0024",
+    "dep": 508,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0025",
+    "dep": 509,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0026",
+    "dep": 517,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0027",
+    "dep": 550,
+    "direction": "forward",
+    "via": [
+     1668,
+     1725
+    ]
+   },
+   {
+    "cand": "H0028",
+    "dep": 595,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0029",
+    "dep": 620,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0030",
+    "dep": 738,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0031",
+    "dep": 772,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0032",
+    "dep": 816,
+    "direction": "forward",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0033",
+    "dep": 825,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0034",
+    "dep": 950,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0035",
+    "dep": 965,
+    "direction": "forward",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0036",
+    "dep": 1066,
+    "direction": "forward",
+    "via": [
+     1438,
+     1725
+    ]
+   },
+   {
+    "cand": "H0037",
+    "dep": 1206,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0038",
+    "dep": 1439,
+    "direction": "forward",
+    "via": [
+     1438,
+     1725
+    ]
+   },
+   {
+    "cand": "H0039",
+    "dep": 1439,
+    "direction": "reverse",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0040",
+    "dep": 1440,
+    "direction": "forward",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0041",
+    "dep": 1440,
+    "direction": "reverse",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0042",
+    "dep": 1445,
+    "direction": "reverse",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0043",
+    "dep": 1540,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0044",
+    "dep": 1545,
+    "direction": "forward",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0045",
+    "dep": 1550,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0046",
+    "dep": 1616,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0047",
+    "dep": 1630,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0048",
+    "dep": 1632,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0049",
+    "dep": 1634,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0050",
+    "dep": 1636,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0051",
+    "dep": 1637,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0052",
+    "dep": 1644,
+    "direction": "reverse",
+    "via": [
+     1438
+    ]
+   },
+   {
+    "cand": "H0053",
+    "dep": 1660,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0054",
+    "dep": 1669,
+    "direction": "reverse",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0055",
+    "dep": 1678,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0056",
+    "dep": 1679,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0057",
+    "dep": 1680,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   },
+   {
+    "cand": "H0058",
+    "dep": 1680,
+    "direction": "reverse",
+    "via": [
+     1668
+    ]
+   },
+   {
+    "cand": "H0059",
+    "dep": 1684,
+    "direction": "reverse",
+    "via": [
+     1438,
+     1668
+    ]
+   },
+   {
+    "cand": "H0060",
+    "dep": 1724,
+    "direction": "forward",
+    "via": [
+     1725
+    ]
+   }
+  ]
+ },
+ "observations": "No archive text names the Global Nonviolent Action Database, GNAD or nvdatabase.swarthmore.edu (D 0, R 0), nor George Lakey. The archive's bearing is ontological and by class only: the case record and what it shows of how conflict ends, with its limit (#1725), and the losing position as the decisive variable of a record of disputes (#1725, the census's anchor and the source of its question); labor action, as the work stoppage the archive defines its semantic strike against (#1438) and as the general strike read in the archive's terms of noun and verb (#1668). The first class, nonviolent action campaigns, has one archive sentence (#469), read and rejected. The census's ml_reading ('the case as the unit that carries a campaign's course in prose, which an event count does not') is the archive's reading of the entity, ledgered as ML-18.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 262,
+   "O_deposits": 162,
+   "H_candidates": 60
+  },
+  "class_sentences_read": 46,
+  "deposits_candidate": 163,
+  "deposits_admitted": 3,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 60,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 10,
+   "ml": 28,
+   "deposit": 7
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "row": "bannedthought",
+ "address": "bannedthought.net",
+ "entity": "BannedThought.net (www.bannedthought.net), a web site that by its own notice 'exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere in the world', posting documents and publications of revolutionary and chiefly Maoist parties and movements by country, independent and unaffiliated with any political party, itself banned in India; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/bannedthought/)",
+ "row_type": "C (a public entity on which the archive bears: a web archive of suppressed documents of revolutionary and Maoist parties and movements; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bbanned ?thought(\\.net)?\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "holders and organs of the left's record (archives and sites that keep movement and party documents, and the holder's standing)",
+   "pattern": "\\b(independent organs?|organs? in which|holders? with standing|a holder|its holder|the holder|movement documents?|party documents?|internal bulletins?|archives? of the left|left archives?|record of splits)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the site's notice: 'BANNEDTHOUGHT.NET is independent and unaffiliated with any political party'; its purpose 'to make available publications and documents which have been suppressed in one or more countries'; its sections 'CPI(Maoist) Documents and Statements', 'CPN (RM) Party Documents & Statements'); B2 (J.R. Valila, 2021, citing the Communist Party of the Philippines' 'Constitution and Program' at 'BannedThought. Net'); B3 (YUMPU: eight documents from bannedthought.net, among them 'Maoist Information Bulletin - 17'). The census's own areas ('movement-documents': 'programmes, polemics, internal bulletins, periodicals, the record of splits'), evidence_kind ('movement document', 'periodical run', 'primary text') and record.holder for the entity (ML record, census.json rows[slug == 'bannedthought'].areas, .evidence_kind, .record.holder; census.json areas)."
+  },
+  {
+   "term": "the record of splits (rival parties of one tradition kept side by side)",
+   "pattern": "\\b(splits?|schisms?|split parties|rival parties|both sides of a split)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the site lists the parties of the Nepal split side by side, 'The Communist Party of Nepal (Revolutionary Maoist) [Formerly: CPN Maoist]' and 'The Communist Party of Nepal (Maoist Centre) [Formerly: Unified Communist Party of Nepal (Maoist)]', and several CPI(M-L) parties, 'CPI(M-L) [Original Party formed in 1969]', 'Communist Party of India (Marxist-Leninist) [People’s War]', 'CPI(M-L) [Satyanaran Singh] / PCC-CPI(M-L)'); B3 (a YUMPU document title from the site: '20-odd chiefs of sister wings join Baidya's party'). The census's own record.losing_side and areas ('the record of splits') for the entity (ML record, census.json rows[slug == 'bannedthought'].record.losing_side; census.json areas['movement-documents'])."
+  },
+  {
+   "term": "suppression and censorship of progressive and left documents by states",
+   "pattern": "\\b(suppress(ed|es|ing|ion)?|censor(ed|s|ing|ship)?|banned|ban on)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('This site exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere in the world'; 'BannedThought.net is Itself Now Banned in India and Some Other Countries!'). The census's own kind and ml_reading ('Its organizing question is suppression by states') for the entity (ML record, census.json rows[slug == 'bannedthought'].kind, .ml_reading)."
+  },
+  {
+   "term": "Maoism (Mao Tsetung Thought, Marxism-Leninism-Maoism, Maoist parties and movements)",
+   "pattern": "\\b(Mao|Mao Tse-?tung|Mao Zedong|Maois[mt]s?|Marxis[mt][-–]Leninis[mt][-–]Maois[mt]|MLM|Naxal\\w*|protracted war)\\b",
+   "flags": "",
+   "basis": "field: B1 ('Writings of Mao and Other Individuals'; 'Other Parties and Groups Espousing Mao Tsetung Thought'; 'MLM Theory: Politics, Political Economy and Philosophy'; 'Communist Party of India (Maoist)'); B2 (Valila, 'Interrogating Mao and Locating the Philippine Left’s Position within Mao’s Protracted War Theory'); B3 ('Maoist Information Bulletin - 17'). The census's own record_object ('documents and publications of revolutionary and Maoist parties and movements') and record.keeps ('chiefly Maoist parties') for the entity (ML record, census.json rows[slug == 'bannedthought'].record_object, .record.keeps)."
+  }
+ ],
+ "classes_note": "Four classes, each the census's own area, evidence kind, record object or record field for the entity, stated by field sources at the loci given: (1) holders and organs of the left's record (census areas 'movement-documents' and 'texts-of-the-tradition', evidence_kind, record.holder; B1, B2, B3); (2) the record of splits (census record.losing_side and the area's 'the record of splits'; B1, B3); (3) suppression and censorship by states (census kind and ml_reading; B1); (4) Maoism, what the site chiefly holds (census record_object and record.keeps; B1, B2, B3). The alias is the site's name, with or without its domain and with the spaced form; 'BANNEDTHOUGHT.NET' is the census's other name (aka) and is matched by it. The Communist Party of India (Maoist), the two Nepali parties, the Communist Party of the Philippines and the international associations are parties and bodies whose documents the site holds, entities distinct from it, and none is an alias. The census's anchor, #1725 (Ils ne sont pas marxistes, AXN:0B50), is read at the passages that name an archive of the left's kind, its organs, holders and splits (its conclusion, 'What held critique', and its amendments); the census's ml_reading applies #1725's category to the entity and is the archive's reading, ledgered as ML-NN, not a class. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category (the organ, the holder with standing independent of the executive, the route, the outside accelerant, the recorded split, omission as the expulsion form, the liquidation of method) to one of the four classes; a bare mention, a figural use of 'banned' or 'censored', a reference line or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-LEFT.md; address 'bannedthought.net' (bannedthought-net-aio-20261031, OBS-d951ed0926bd, ADDR-413a27c3bff2), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+ "hop_from": [
+  1725
+ ]
+}

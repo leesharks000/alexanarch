@@ -1,0 +1,52 @@
+{
+ "row": "marxists-internet-archive",
+ "address": "Marxists Internet Archive",
+ "entity": "The Marxists Internet Archive (MIA, marxists.org), an all-volunteer, non-profit public library of the writings of close to 1000 authors in 83 languages, established in its present form in 1998 from a collection begun in 1990 (its introduction, last updated 21 April 2026; Wikipedia); governed by a Charter of seven tenets and a Steering Committee of its active volunteers; formalized in the maryleelabor left-and-labor census of 2026-10-31 (https://www.maryleelabor.org/aggregators/marxists-internet-archive/)",
+ "row_type": "C (a public entity on which the archive bears: a volunteer-run public library of the texts of the left; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bMarxists?'? Internet Archive\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bmarxists\\.(org|info|architexturez\\.net|catbull\\.com)\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bMIA\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bMarxists Internet Archive Publications\\b|\\bMIAP\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bmarx\\.org\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "public libraries and digital archives of the texts of the left (primary texts of the tradition, transcribed and held free)",
+   "pattern": "\\b(digital librar(y|ies)|online librar(y|ies)|public librar(y|ies)|volunteer[- ]run (librar|archive)\\w*|archives? of (the )?(left|socialist|communist|Marxist|labou?r)\\w*|(left|socialist|communist|Marxist|radical) (archives?|librar(y|ies)))\\b",
+   "flags": "i",
+   "basis": "field: B8 (the MIA introduction: 'an all-volunteer, non-profit public library, established in its present form in 1998'); B2 (Wikipedia, lead: 'a non-profit online encyclopedia, created in 1990, that hosts a multilingual library of the works of communist, anarchist, and socialist writers'; 'a recognized repository for both Marxist and non-Marxist writers'). The census's own kind ('all-volunteer, non-profit public library'), areas ('texts-of-the-tradition', 'archives-and-custody') and evidence_kind ('primary text') for the entity (ML record, census.json rows[slug == 'marxists-internet-archive'].kind, .areas, .evidence_kind)."
+  },
+  {
+   "term": "holders of the left's record: whether a defeated or minority position is kept, by whom, in a form that could be taken up later",
+   "pattern": "\\b(holders?|organ|seated minorit\\w+|losing (side|position)|defeated critique|keeps? the losing)\\b",
+   "flags": "i",
+   "basis": "field: B8 (the MIA introduction, Charter tenets (5) 'We will always remain politically independent' and (6) 'We do not ‘judge’ writers'; 'In 2007, we terminated our former practice of dividing all writers into Marxists and non-Marxists'; 'The MIA generally does not “filter out” such views'); B2 (Wikipedia, Origins: Zodiac's 1998 decision that 'all writers other than Marx and Engels would be removed', and the volunteers' creation of marxists.org). The census's own record fields for the entity, record.holder and record.losing_side, and its organizing question ('Whose record does it keep, who holds it, and does it keep the losing side in a form that could be taken up later?'), anchored on #1725 (ML record, census.json rows[slug == 'marxists-internet-archive'].record, organizing_question, anchor)."
+  }
+ ],
+ "classes_note": "Two classes, each the census's own kind, area or record field for the entity, stated by field sources at the loci given: (1) public libraries and digital archives of the texts of the left (census kind 'all-volunteer, non-profit public library', areas 'texts-of-the-tradition' and 'archives-and-custody', evidence_kind 'primary text'; B8, B2); (2) holders of the left's record, the census's record.holder and record.losing_side and its organizing question, which are #1725's terms (organ, holder, route; the losing position), and which B8's Charter and 2007 notice and B2's account of the 1998 split state for the entity. The archive's categories read against them: the holder condition of #1725 (organ, holder, route), terminal closure (#1637), the obelus (#1540) and the case record of #1725. The archive's instruments of semantic labor and provenance are not applied: no field source states the entity as an instance of either class.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Marxists Internet Archive' (marxists-internet-archive-aimode-20261031, OBS-6a54e29b8192, ADDR-66f7a6e7362d), Google AI Mode, signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. 'MIA' is matched case-sensitively; 'Internet Archive' alone (archive.org, a distinct entity) is not an alias. Second pass: one citation hop forward and back from the deposits admitted by reading (#843, #1531, #1647, #1668, #1725).",
+ "hop_from": [
+  843,
+  1531,
+  1647,
+  1668,
+  1725
+ ]
+}

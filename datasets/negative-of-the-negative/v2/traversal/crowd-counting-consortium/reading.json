@@ -1,0 +1,300 @@
+{
+ "row": "crowd-counting-consortium",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop from #1725",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Crowd Counting Consortium with the entity named (by its name, its handle and site, crowdcounting, crowdcounting.org, @crowdcounting, the Dataverse slug, or its blog's name Counting Crowds); R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (protest event data: B1, B3, B6, census unit, evidence kind and area; nonviolent action and civil resistance: B1, B3, B4, census operator), or, for the census's anchor, to the class into which the census enters it (records of the left and its movements, read for the losing side: ML-25, ML-28). A bare mention, a figural use, a list of keywords or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive paragraph matching an alias or class pattern was read (5 matches in 3 texts: #469, #579, #950), and a grep of data/texts and data/deposits for the entity's names and its founders' names (Crowd Counting, crowdcounting, Counting Crowds, Chenoweth, countlove, Count Love) returned no file.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes (AXN:0B50), the census's anchor, read at its passages on datasets of the left, holders and the losing side (brief BRIEF-NEW-ROW-LEFT.md §8): its stated limit that no cross-organization dataset of left splits, or of minority positions later adopted, was found (line 91), and its Conclusion's organ, holder and route (line 369). Admitted at O-class: the archive applies its category (the losing position and the three conditions under which it survives) to the records of the left and its movements, the class into which the census enters the consortium by its organizing question (ML-25, ML-28). Not a string-pass candidate (it names neither the entity nor a class pattern); read as the census's anchor. Its other passages (the case table, r/LeftistsForAI, the captures, the Gaps) concern disputes inside left organizations and composing systems and say nothing of the entity or its kind.",
+   "claims": [
+    "O1725-01",
+    "O1725-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/crowd-counting-consortium-aio-20261031/",
+   "reason": "the Capture Registry's reading, analysis, findings, title, PER note, query note, description and originator for the entity's capture (OBS-1d7507d26f51, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/crowd-counting-consortium/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'crowd-counting-consortium'], organizing_question, anchor, areas, schema_note; rendered aggregators/crowd-counting-consortium/index.html read for agreement)",
+   "reason": "the maryleelabor census record of the entity (editor Lee Sharks, compiled 2026-10-31 in session from sources saved that day, schema 1.0): its fields with their basis; where a field restates the consortium's page (B1) it is one lineage with that page; ml_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26",
+    "ML-27",
+    "ML-28",
+    "ML-29"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 469,
+   "cands": [
+    "O0001",
+    "H0009"
+   ],
+   "reason": "rejected: O0001 (p127) names 'the breathing exercises of nonviolent resistance training' as a precedent of somatic practice for the Living Symbolon's protocol; it applies no archive category to nonviolent action as a class the consortium belongs to, and says nothing of protest event data"
+  },
+  {
+   "dep": 579,
+   "cands": [],
+   "reason": "rejected: the class pattern matches 'civil disobedience' twice (p47, p53) in an example of an AI summary of Antigone, a figural use; nothing of the entity or its classes"
+  },
+  {
+   "dep": 950,
+   "cands": [
+    "H0026"
+   ],
+   "reason": "rejected: the class pattern matches 'civil disobedience' at p1280 (a teacher's question on Antigone) and p2991 (Rosa Parks's refusal read as a labor vector); the second applies the archive's labor vector to one act of civil disobedience, an act of the kind the consortium counts, and to no class the consortium belongs to (a research project and dataset); nothing of protest event data"
+  }
+ ],
+ "hop": {
+  "from": [
+   1725
+  ],
+  "candidates": 42,
+  "admitted": 0,
+  "reading": "the 42 deposits #1725 cites (forward; no back-citation) were checked for every alias and class pattern of the config: 40 carry none; #469 and #950 carry class matches, read above and rejected. None names the entity or says anything of protest event data, nonviolent action as a class, or the consortium's kind; their bearing in #1725 is on left organizations' disputes, composing systems and the archive's own instruments. Rejected (the hop is read at the string level for the entity's and its classes' terms, then at the matching passages).",
+  "rejected": [
+   {
+    "cand": "H0001",
+    "dep": 18
+   },
+   {
+    "cand": "H0002",
+    "dep": 208
+   },
+   {
+    "cand": "H0003",
+    "dep": 209
+   },
+   {
+    "cand": "H0004",
+    "dep": 210
+   },
+   {
+    "cand": "H0005",
+    "dep": 233
+   },
+   {
+    "cand": "H0006",
+    "dep": 256
+   },
+   {
+    "cand": "H0007",
+    "dep": 465
+   },
+   {
+    "cand": "H0008",
+    "dep": 466
+   },
+   {
+    "cand": "H0009",
+    "dep": 469
+   },
+   {
+    "cand": "H0010",
+    "dep": 470
+   },
+   {
+    "cand": "H0011",
+    "dep": 476
+   },
+   {
+    "cand": "H0012",
+    "dep": 481
+   },
+   {
+    "cand": "H0013",
+    "dep": 482
+   },
+   {
+    "cand": "H0014",
+    "dep": 499
+   },
+   {
+    "cand": "H0015",
+    "dep": 501
+   },
+   {
+    "cand": "H0016",
+    "dep": 502
+   },
+   {
+    "cand": "H0017",
+    "dep": 506
+   },
+   {
+    "cand": "H0018",
+    "dep": 508
+   },
+   {
+    "cand": "H0019",
+    "dep": 509
+   },
+   {
+    "cand": "H0020",
+    "dep": 517
+   },
+   {
+    "cand": "H0021",
+    "dep": 550
+   },
+   {
+    "cand": "H0022",
+    "dep": 595
+   },
+   {
+    "cand": "H0023",
+    "dep": 620
+   },
+   {
+    "cand": "H0024",
+    "dep": 738
+   },
+   {
+    "cand": "H0025",
+    "dep": 772
+   },
+   {
+    "cand": "H0026",
+    "dep": 950
+   },
+   {
+    "cand": "H0027",
+    "dep": 1066
+   },
+   {
+    "cand": "H0028",
+    "dep": 1206
+   },
+   {
+    "cand": "H0029",
+    "dep": 1439
+   },
+   {
+    "cand": "H0030",
+    "dep": 1540
+   },
+   {
+    "cand": "H0031",
+    "dep": 1550
+   },
+   {
+    "cand": "H0032",
+    "dep": 1616
+   },
+   {
+    "cand": "H0033",
+    "dep": 1630
+   },
+   {
+    "cand": "H0034",
+    "dep": 1632
+   },
+   {
+    "cand": "H0035",
+    "dep": 1634
+   },
+   {
+    "cand": "H0036",
+    "dep": 1636
+   },
+   {
+    "cand": "H0037",
+    "dep": 1637
+   },
+   {
+    "cand": "H0038",
+    "dep": 1660
+   },
+   {
+    "cand": "H0039",
+    "dep": 1678
+   },
+   {
+    "cand": "H0040",
+    "dep": 1679
+   },
+   {
+    "cand": "H0041",
+    "dep": 1680
+   },
+   {
+    "cand": "H0042",
+    "dep": 1724
+   }
+  ]
+ },
+ "observations": "No archive text names the Crowd Counting Consortium, crowdcounting, Counting Crowds, Erica Chenoweth or Count Love (D 0, R 0). The archive's bearing is by the census's anchor only: #1725's conditions for a losing position's survival (organ, holder, route) and its stated limit that no cross-organization dataset of left splits was found, applied by the census to the records of the left and its movements into which it enters the consortium. Protest event data and nonviolent action as classes have no archive sentence that applies an archive category to them. The archive's labor instruments (DSL, #771; the directionality stack; user labor drag) bear on labor performed with AI and enter no stratum.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 1,
+   "O_deposits": 1,
+   "H_candidates": 42
+  },
+  "class_matches_read": 5,
+  "deposits_candidate": 4,
+  "deposits_admitted": 1,
+  "deposits_admitted_with_claims": 1,
+  "hop_candidates": 42,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 11,
+   "ml": 29,
+   "deposit": 2
+  }
+ }
+}

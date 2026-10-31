@@ -1,0 +1,1154 @@
+{
+ "row": "reuther-library",
+ "address": "Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+ "addresses": [
+  "Walter P. Reuther Library, Archives of Labor and Urban Affairs"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext or rendered text, or the card's title and snippet for the unreachable cards; 49/49 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), kept apart by origin: 'card', every card on the transcript's rail (B1 reuther.wayne.edu, the library's home page; B2 its Research Guide on Wayne State's LibGuides; B3 a Wayne State page dated 11 August 2026, unreachable; B4 the Wikipedia article, which is also the entity's Wikipedia source; B5 a Project MUSE article on the library's evolution, unreachable; B6 DETROITography's entry; B7 Wayne State's museums listing, unreachable); 'own_page', the census's own page T did not surface (B8 the About page; the census's other own page, the home page, is card B1, byte-identical, carried once as a card); 'wikipedia', the article on the entity under its name (B4, a card), no redirect. The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B8 earliest; B2, B3, B6, B7 restate the superlative); holdings and extent (B4); the name (B4); origin, the Labor History Archives of 1960 (B8, B4); the building and the union's gift (B8, B4); operator and place (B1, B4); whose record it keeps (B4, B1); beyond the unions' records (B4); Detroit, civil rights and women's workplace struggles (B8, B4, B6); the Wayne State University Archives (B8, B4); access (B8, B1); discovery (B1, B2); collecting policy and donation (B8, B1); programs (B4, B1); rights (B1); reception (B4, B5). The census's history, building, wing, kind, strengths, university_archives, access, hours, policy, policy_pdf, categories, finding_aids, access_tools, operator, quicksearch, uaw_addition, closure, latest_post, podcast_strike, rights, menu and oral_history quotes restate B8 and B1 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 and B8 the census's saved copies (B1 also refetched as the card, byte-identical; B1.txt the census's text); B4.wiki the raw wikitext, B4.html the rendered article, B4.txt its text; B5-try1.html the Project MUSE verification wall, B5-try2.html the publisher's Cloudflare check; B3 and B7 no bytes (certificate failure); T1-walter-p-reuther-library-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page reuther-library--home, byte-identical)",
+   "card": "Walter P. Reuther Library — Walter P. Reuther Library",
+   "url": "https://reuther.wayne.edu/",
+   "kind": "Overview card (the library's home page: news posts, browse categories, search tools); the census's own page reuther-library--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B1.html",
+     "sha256": "db9d0069e69ea80076b832b15e6ca15e313adbf392acf8716207d5224b90a921"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B1.txt",
+     "sha256": "b975b1a016c970fe94312d9572a9467f59876d07f53abb46837e7f8a5408698a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:05Z",
+    "http": 200,
+    "url": "https://reuther.wayne.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B1.html",
+    "raw_sha256": "db9d0069e69ea80076b832b15e6ca15e313adbf392acf8716207d5224b90a921",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "reuther-library--home",
+     "sha256": "db9d0069e69ea80076b832b15e6ca15e313adbf392acf8716207d5224b90a921",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:56Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('Walter P. Reuther Library, Archives of Labor and Urban Affairs, Wayne State University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and snippet (the address line and the 'Reuther Library closed Tuesday, No...' post title, verbatim on the page; the snippet's date, 10 September 2026, is the podcast post's). The fetch is byte-identical to the census's saved copy reuther-library--home (sha256 db9d0069…, read the same day), so the card and the census's own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes.",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Walter P. Reuther Library",
+   "card_snippet": "Sep 10, 2026 — Walter P. Reuther Library, Archives of Labor and Urban Affairs, Wayne State University — 5401 Cass Ave, Detroit, MI 48202 ... Reuther Library closed Tuesday, No...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Wayne State University — Home - Walter P. Reuther Library, Archives of Labor and Urban Affairs - Research Guides at Wayne State University",
+   "url": "https://guides.lib.wayne.edu/reuther",
+   "kind": "Overview card (the Reuther Library's Research Guide on Wayne State's LibGuides: hours, address, About, search tools)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B2.html",
+     "sha256": "2a18ca57f8c91ae8cf82f8a587486130c426f62046e22eeeb13497e640c313e9"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B2.txt",
+     "sha256": "adfa75b499ae8633d1917085041e695c49155dcd91a4479fbdd8f9f76c8ed6dd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:05Z",
+    "http": 200,
+    "url": "https://guides.lib.wayne.edu/reuther",
+    "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B2.html",
+    "raw_sha256": "2a18ca57f8c91ae8cf82f8a587486130c426f62046e22eeeb13497e640c313e9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('Walter P. Reuther Library'; 'Wayne State University Libraries')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by the card's site and title: the guide's address under guides.lib.wayne.edu, linked from the library's pages as 'reuther'. The page fetched carries the title 'Home - Research Guides at Wayne State University' and the heading 'Walter P. Reuther Library'; the card's longer title (with 'Archives of Labor and Urban Affairs') is absent from the bytes, so the guide's title has changed or the card renders a different title form; admitted as the card's page on host and heading, the difference recorded. Two searches on the exact card title returned no other guide URL.",
+   "searches": [
+    "WebSearch '\"Walter P. Reuther Library\" research guides Wayne State University guides.lib.wayne.edu'",
+    "WebSearch '\"Home - Walter P. Reuther Library, Archives of Labor and Urban Affairs - Research Guides at Wayne State University\"'"
+   ],
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Home - Walter P. Reuther Library, Archives of Labor and Urban Affairs - Research Guides at Wayne State University",
+   "card_snippet": "Home - Walter P. Reuther Library, Archives of Labor and Urban Affairs - Research Guides at Wayne State University Walter P. Reuther Library, Archives of Labor a...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Wayne State University — Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+   "url": null,
+   "kind": "Overview card (a Wayne State page dated 11 August 2026; unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:00:08Z",
+      "url": "https://library.wayne.edu/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     },
+     {
+      "at": "2026-10-31T23:09:23Z",
+      "url": "https://library.wayne.edu/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     },
+     {
+      "at": "2026-10-31T23:09:23Z",
+      "url": "https://research.wayne.edu/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Walter P. Reuther Library, Archives of Labor and Urban Affairs\" \"holdings that document the labor movement throughout the United States with a focus on\" wayne.edu' (no wayne.edu page with the sentence)",
+     "WebSearch '\"Reuther Library has holdings that document the labor movement throughout the United States\"' (no wayne.edu page with the sentence)"
+    ],
+    "note": "The card's URL could not be found from its title and snippet; the Wayne State hosts tried as candidates (library.wayne.edu, research.wayne.edu) fail certificate verification from this fetcher, so even a found URL on wayne.edu could not be fetched verbatim. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes (the card's title)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+   "card_snippet": "Aug 11, 2026 — The largest labor archives in North America, the Reuther Library has holdings that document the labor movement throughout the United States with a focus on the ...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4, and the entity's Wikipedia article",
+   "card": "Wikipedia — Walter P. Reuther Library - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Walter_P._Reuther_Library",
+   "kind": "Overview card and Wikipedia (the article on the entity)",
+   "files": {
+    "B4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.wiki",
+     "sha256": "f035c0cde426eb28e3ae5cb48ad95e7c895b035b29fd265f7bc0b8ce7f00163b"
+    },
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.html",
+     "sha256": "a96f7fd6f1ce8e0c8aaf6c62939ef378ac22dbd41610d868e7fbd306b3525d53"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.txt",
+     "sha256": "c701190373b8e6c29748686dbb93352477474f388279883a705abec95d5cfc19"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:06Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Walter_P._Reuther_Library&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.wiki",
+    "raw_sha256": "f035c0cde426eb28e3ae5cb48ad95e7c895b035b29fd265f7bc0b8ce7f00163b",
+    "rendered": {
+     "at": "2026-10-31T23:00:06Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Walter_P._Reuther_Library",
+     "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.html",
+     "raw_sha256": "a96f7fd6f1ce8e0c8aaf6c62939ef378ac22dbd41610d868e7fbd306b3525d53"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.txt",
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B4.wiki"
+    ]
+   },
+   "names_operator": "yes ('owner = Wayne State University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The article exists under the name; no redirect. B4.txt is the rendered page's text (scripts and styles stripped); quotes are checked against B4.txt or the wikitext B4.wiki. The article was last edited on 14 September 2026 (its footer). The card's snippet ('Location: … architect O'Dell Hewlett Luckenbach, Woodcock Wing 1991). History: Established 19...') is a rendering of the infobox and the History section, which the article carries.",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "Walter P. Reuther Library - Wikipedia",
+   "card_snippet": "Location: Wayne State University, Detroit, Michigan (completed 1975, 4 floors, architect O'Dell Hewlett Luckenbach, Woodcock Wing 1991). History: Established 19...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Project MUSE — The Evolution of the Walter P. Reuther Library - Project MUSE",
+   "url": null,
+   "kind": "Overview card (a journal article on the library's evolution, dated 7 October 2025; unreachable)",
+   "files": {
+    "B5-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B5-try1.html",
+     "sha256": "90f14b6c5c371255e76bcff002c1b9b2b9f31fc1a0d3f7f06ae5c9d2a63a1f5c"
+    },
+    "B5-try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B5-try2.html",
+     "sha256": "99afb38aefda5e6807c54f835f44c507d2dd613115dd3a7d12da0640b50e6bb9"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:00:07Z",
+      "url": "https://muse.jhu.edu/issue/55692 (a search result; redirected to https://muse.jhu.edu/verify?url=%2Fissue%2F55692)",
+      "http": 200,
+      "sha256": "90f14b6c5c371255e76bcff002c1b9b2b9f31fc1a0d3f7f06ae5c9d2a63a1f5c",
+      "result": "a verification wall ('Project MUSE -- Verification required!') refusing the census agent; not retried with another agent string or by another route"
+     },
+     {
+      "at": "2026-10-31T23:00:08Z",
+      "url": "https://preprint.press.jhu.edu/portal/article/fifty-years-labor-history-preservation-and-progress-evolution-walter-p-reuther-library",
+      "http": 403,
+      "sha256": "99afb38aefda5e6807c54f835f44c507d2dd613115dd3a7d12da0640b50e6bb9",
+      "result": "a bot check ('Attention Required! | Cloudflare') refusing the census agent; not retried"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"The Evolution of the Walter P. Reuther Library\" Project MUSE' (no muse.jhu.edu article URL)",
+     "WebSearch 'Caloia \"Evolution of the Walter P. Reuther Library\" portal Libraries and the Academy muse.jhu.edu article' (the journal's preprint page, 'fifty years labor history preservation and progress evolution walter p reuther library', and a preprint PDF)",
+     "WebSearch 'muse.jhu.edu/article \"Fifty Years of Labor History\" \"Walter P. Reuther Library\" Caloia' (no article URL)"
+    ],
+    "note": "The article's Project MUSE URL could not be found; the MUSE issue page the search returned and the publisher's preprint page both refused the census agent (a verification wall; HTTP 403). The searches found a preprint PDF on the publisher's preprint host; it was not fetched: fetching it would be a route around the card's refusal. The search results name the article as Stefanie Caloia's in portal: Libraries and the Academy 25.4; that attribution is the search's and is not ledgered. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes (the snippet: 'part of Wayne State University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "The Evolution of the Walter P. Reuther Library - Project MUSE",
+   "card_snippet": "Oct 7, 2025 — The Walter P. Reuther Library, Archives of Labor and Urban Affairs is part of Wayne State University in Detroit, Michigan. An innovative and ground-breaking ins...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "DETROITography — Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+   "url": "https://detroitography.com/portfolio/walter-p-reuther-library-archives-of-labor-and-urban-affairs/",
+   "kind": "Overview card (a Detroit maps blog's resource entry)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B6.html",
+     "sha256": "c97ee9224fbd901af9fe49c9fd4c45ccc701b80e5537d4100805886c8c8d2f61"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B6.txt",
+     "sha256": "fbbdefbe3bb0616c6b98f02489345211c986fe4cd8e953e425a7f4a75e666674"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:07Z",
+    "http": 200,
+    "url": "https://detroitography.com/portfolio/walter-p-reuther-library-archives-of-labor-and-urban-affairs/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B6.html",
+    "raw_sha256": "c97ee9224fbd901af9fe49c9fd4c45ccc701b80e5537d4100805886c8c8d2f61",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "no (it names the library, not its operator, beyond 'the Wayne State University Archives')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site. Its first paragraph restates the About page's account verbatim (one lineage with B8, which keeps the earliest date); its own sentence is the maps.",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+   "card_snippet": "The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations. Its collec...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "Wayne State University — Walter P. Reuther Library - Museums - Wayne State University",
+   "url": null,
+   "kind": "Overview card (Wayne State's museums listing for the library; unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:00:08Z",
+      "url": "https://wayne.edu/museums/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     },
+     {
+      "at": "2026-10-31T23:09:22Z",
+      "url": "https://wayne.edu/museums/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     },
+     {
+      "at": "2026-10-31T23:09:22Z",
+      "url": "https://museums.wayne.edu/",
+      "http": "000",
+      "result": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain (the host's own chain runs to emSign Root CA - G1, absent from the fetcher's trust store and from certifi's; verified with openssl s_client through the proxy); not fetched with verification disabled"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Walter P. Reuther Library\" Museums Wayne State University \"largest labor archives in North America\"'",
+     "WebSearch 'museums.wayne.edu Walter P. Reuther Library \"Discover the stories that shaped Detroit\"'",
+     "WebSearch 'wayne.edu museums \"Walter P. Reuther Library\" home to the largest labor archives in North America established 1960' (none returned a museums page)"
+    ],
+    "note": "The card's URL could not be found (three searches); the candidate hosts (wayne.edu/museums/, museums.wayne.edu) fail certificate verification from this fetcher. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes (the card's title: 'Wayne State University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "walter-p-reuther-library-aio-20261031",
+     "card": 7
+    }
+   ],
+   "card_title": "Walter P. Reuther Library - Museums - Wayne State University",
+   "card_snippet": "Discover the stories that shaped Detroit, Michigan and the nation at the Walter P. Reuther Library, home to the largest labor archives in North America! Establi...",
+   "card_note": "the snippet as the paste's card rail renders it (the registry's cite_list carries title and site with snip null)"
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the census's own page reuther-library--about (not surfaced by T; admitted by the operator's ruling of 2026-10-29)",
+   "card": "Walter P. Reuther Library — About Us",
+   "url": "https://reuther.wayne.edu/about",
+   "kind": "own page (About Us: hours, history, collection strengths, visiting, collection policy)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B8.html",
+     "sha256": "3bf1b8f31218a971ca007e9317dc7d3231674cbe8bf75c9ab99a02e96485c6fe"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B8.txt",
+     "sha256": "9648eac5e857fb056a70fee4f78c07e166dd5d9c3175758be474fb51dc260d7c"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "reuther-library--about",
+     "sha256": "3bf1b8f31218a971ca007e9317dc7d3231674cbe8bf75c9ab99a02e96485c6fe",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:57Z",
+     "agrees": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B8.html",
+    "raw_sha256": "3bf1b8f31218a971ca007e9317dc7d3231674cbe8bf75c9ab99a02e96485c6fe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/reuther-library-20261031/B8.txt"
+    ],
+    "note": "copied from the census's saved copy (gunzipped), sha256 matching the manifest; not refetched"
+   },
+   "names_operator": "yes ('established as the Labor History Archives at Wayne State University')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's second own page; T did not surface it (no card is the About page). The census's evidence for history, building, wing, kind, strengths, university_archives, access, hours, policy and policy_pdf restates this page (one lineage each with the page, which keeps the earliest date). The About page also carries 'To schedule a research appointment, contact Kristen Chinery' (F45), the sentence nearest the composition's appointment line.",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer and address line",
+   "quote": "Walter P. Reuther Library, Archives of Labor and Urban Affairs, Wayne State University — 5401 Cass Ave, Detroit, MI 48202",
+   "claim": "the library's full name, its university and its address",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator and place",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "search block",
+   "quote": "Finding aids are descriptions of archival collections that help researchers locate relevant materials.",
+   "claim": "the unit of description: finding aids describe archival collections",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "discovery: finding aids and search tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Browse by all: categories",
+   "quote": "AFSCME AFT ALPA Damon J. Keith IWW JCA MDA NALC SEIU SWE UAW UFW WSU",
+   "claim": "the browse categories: the unions and bodies whose collections the site groups (AFSCME, AFT, ALPA, IWW, NALC, SEIU, UAW, UFW among them)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose record it keeps: the unions' official repository",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "search block",
+   "quote": "ArchivesSpace … Digital Collections … Library Catalog",
+   "claim": "the three search tools: ArchivesSpace, Digital Collections, Library Catalog",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "discovery: finding aids and search tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Changes to Reuther search starting Monday, August 17, 2026 (posted August 17th, 2026)",
+   "quote": "On Monday, August 17, the Reuther Library QuickSearch is being retired. … While we work on integrating discovery systems into Summon, the primary discovery search we plan to use in the future, our collections can be searched separately using the tabbed search box near the top of our website.",
+   "claim": "QuickSearch retired on 17 August 2026; until discovery is integrated into Summon, collections are searched separately by a tabbed search box",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "discovery: finding aids and search tools",
+   "date": "2026-08-17",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Collection Spotlight: UAW Education Department Records (posted August 13th, 2026)",
+   "quote": "The Walter P. Reuther Library is excited to announce the opening of an addition to the UAW Education Department Records , one of the most essential collections from the union’s archival holdings.",
+   "claim": "an addition to the UAW Education Department Records opened, 'one of the most essential collections from the union's archival holdings'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose record it keeps: the unions' official repository",
+   "date": "2026-08-13",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Reuther Library closed Tuesday, November 3rd (posted October 27th, 2026)",
+   "quote": "The Reuther Library will be closed on Tuesday, November 3, 2026, for Election Day.",
+   "claim": "closed on 3 November 2026 for Election Day",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: open to the public",
+   "date": "2026-10-27",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "[Podcast] Organizing Associational Power (posted September 10th, 2026)",
+   "quote": "Sociologists Thomas Gepts and Sarah Mason, PhD, discuss the six-week strike in 2022 of 48,000 UAW-represented academic workers across all 10 University of California campuses",
+   "claim": "its podcast: the 2022 strike of 48,000 UAW-represented academic workers at the University of California",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "programs: education, podcasts and labor studies",
+   "date": "2026-09-10",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "the podcast post's subject headings",
+   "quote": "Labor unions--Records and correspondence … Labor unions--United States--Archives.",
+   "claim": "the subject headings it assigns: 'Labor unions--Records and correspondence', 'Labor unions--United States--Archives.'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose record it keeps: the unions' official repository",
+   "date": "2026-09-10",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© MMXXVI Walter P. Reuther Library, Archives of Labor and Urban Affairs, Wayne State University . All rights reserved.",
+   "claim": "the site's rights notice: all rights reserved",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rights",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Main Menu",
+   "quote": "Donating Materials … Oral History",
+   "claim": "the site's menu offers Donating Materials and Oral History",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collecting policy and donation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b975b1a016c970fe…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About",
+   "quote": "The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations, political and community groups in urban and metropolitan Detroit, and Wayne State University's official files, records, and documents.",
+   "claim": "the Research Guide's About: the largest labor archives in North America, home to unions' collections, Detroit groups and the university's records",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the largest labor archives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adfa75b499ae8633…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Begin your research today",
+   "quote": "Begin your research today … ArchivesSpace … Digital Collections … Library Catalog",
+   "claim": "the guide's entry to research: the same three search tools",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "discovery: finding aids and search tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adfa75b499ae8633…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "The largest labor archives in North America, the Reuther Library has holdings that document the labor movement throughout the United States with a focus on the ...",
+   "claim": "a Wayne State page (11 August 2026): the largest labor archives in North America, its holdings documenting the labor movement throughout the United States",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the largest labor archives",
+   "date": "2026-08-11 (the snippet's date)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "lead",
+   "quote": "contains millions of primary source documents related to the labor history of the United States, urban affairs, and the Wayne State University Archives",
+   "claim": "Wikipedia's lead: millions of primary source documents on United States labor history, urban affairs and the university archives",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "holdings and extent",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "lead",
+   "quote": "The building is named for UAW President and Congress of Industrial Organizations President Walter Reuther.",
+   "claim": "the building's name: Walter Reuther, UAW and CIO president",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "History",
+   "quote": "The Walter P. Reuther Library of Labor and Urban Affairs was established at Wayne State University in 1960 to collect and preserve original documents related to the American labor movement.",
+   "claim": "established at Wayne State in 1960 to collect and preserve original documents of the American labor movement (Wikipedia, citing Pflug 1974)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the Labor History Archives, 1960",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "History",
+   "quote": "For over thirty years, the library's collections grew under the leadership of director Philip P. Mason.",
+   "claim": "its collections grew for over thirty years under director Philip P. Mason",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the Labor History Archives, 1960",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "History",
+   "quote": "In 1975, a dedicated building was constructed for the library, using funds donated by the UAW and a grant from the United States Department of Health, Education, and Welfare.",
+   "claim": "the 1975 building, funded by the UAW and a federal grant (Wikipedia, citing East 1975)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": true,
+   "lineage": "the building and the union's gift",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "History",
+   "quote": "In 1991, the library's Leonard Woodcock Wing was completed, which added over 26,000 square feet",
+   "claim": "the Leonard Woodcock Wing, 1991, over 26,000 square feet",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the building and the union's gift",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "The Reuther Library is the home of the largest labor archives in the United States, and contains over 75,000 linear feet of archival holdings, including paper and digital manuscript material, photographic prints and negatives, oral histories, audio recordings, and motion picture recordings.",
+   "claim": "the largest labor archives in the United States, over 75,000 linear feet of holdings in several media (Wikipedia, citing East 1975)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings and extent",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "The library serves as the official archival repository for the following unions: … Industrial Workers of the World (IWW) … United Auto Workers (UAW) … United Farm Workers (UFW)",
+   "claim": "the official archival repository for eleven unions, the IWW, the UAW and the UFW among them (Wikipedia, citing Mason 1982 and the About page)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": true,
+   "lineage": "whose record it keeps: the unions' official repository",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "The archives also collects material related to the Coalition of Labor Union Women, the Coalition of Black Trade Unionists, the Workers Defense League and numerous labor-related organizations, especially those active in the Detroit area.",
+   "claim": "it also collects for the Coalition of Labor Union Women, the Coalition of Black Trade Unionists, the Workers Defense League and labor-related organizations, especially in Detroit",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "whose record it keeps: the unions' official repository",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "Researchers can access personal papers from labor activists and union leaders at the Reuther Library, including collections from Cesar Chavez, Jerry Wurf, Walter P. Reuther, Leonard Woodcock, James and Grace Lee Boggs, Utah Phillips, Dolores Huerta, Jessie and Martin Glaberman, Raya Dunayevskaya and many others.",
+   "claim": "personal papers of labor activists and union leaders, among them Chavez, Wurf, Reuther, Woodcock, James and Grace Lee Boggs, Utah Phillips, Huerta, Jessie and Martin Glaberman and Raya Dunayevskaya",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "beyond the unions' records: activists, oral histories, working lives",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "Oral histories document the work of union leaders and rank-and-file members.",
+   "claim": "oral histories of union leaders and rank-and-file members",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "beyond the unions' records: activists, oral histories, working lives",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "Many of the library's collections document the lives of working people and were not created by labor unions.",
+   "claim": "many collections document working people's lives and were not created by unions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "beyond the unions' records: activists, oral histories, working lives",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Labor records",
+   "quote": "the Reuther Library also serves as the official repository for the archival collections of the Society of Women Engineers.",
+   "claim": "the official repository of the Society of Women Engineers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Detroit, civil rights and women's workplace struggles",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Urban affairs",
+   "quote": "The Reuther Library collects material illustrating community life in metropolitan Detroit.",
+   "claim": "it collects material on community life in metropolitan Detroit",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Detroit, civil rights and women's workplace struggles",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Urban affairs",
+   "quote": "The library also houses papers of former Detroit politicians, including city councilman Mel Ravitz and mayors Jerome Cavanagh and Coleman Young.",
+   "claim": "papers of Detroit politicians, Mel Ravitz, Jerome Cavanagh and Coleman Young among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Detroit, civil rights and women's workplace struggles",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Collections: Wayne State University Archives",
+   "quote": "The Reuther Library houses the Wayne State University Archives, which date from the institution's founding as the Detroit Medical College in 1868.",
+   "claim": "the Wayne State University Archives, dating from the Detroit Medical College of 1868",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Wayne State University Archives",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Programs",
+   "quote": "The Archives and Primary Resource Education Lab (APREL) at the Reuther Library promotes K-12 and Undergraduate use of archival materials in classrooms.",
+   "claim": "APREL: K-12 and undergraduate use of archival materials",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "programs: education, podcasts and labor studies",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Programs",
+   "quote": "The Reuther Library is also home to Labor@Wayne, the Centers for Labor Studies, Wayne State University's Employment and Labor Relations Program, the Fraser Center for Workplace Issues, and the Michigan Labor History Society.",
+   "claim": "it houses Labor@Wayne, the Centers for Labor Studies, the Employment and Labor Relations Program, the Fraser Center and the Michigan Labor History Society",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "programs: education, podcasts and labor studies",
+   "date": "2026-09-14 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "infobox and footer",
+   "quote": "owner = Wayne State University … This page was last edited on 14 September 2026",
+   "claim": "Wikipedia's article exists under the name, its infobox owner Wayne State University, last edited 14 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the journal",
+   "date": "2026-09-14",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c701190373b8e6c2…) or wikitext B4.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "The Evolution of the Walter P. Reuther Library - Project MUSE … The Walter P. Reuther Library, Archives of Labor and Urban Affairs is part of Wayne State University in Detroit, Michigan. An innovative and ground-breaking ins...",
+   "claim": "a journal article on the library's evolution (7 October 2025): part of Wayne State University; 'An innovative and ground-breaking ins...' (the snippet breaks off)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the journal",
+   "date": "2025-10-07 (the snippet's date)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "the portfolio entry",
+   "quote": "The Reuther Library has a treasure trove of Detroit maps among the various papers and archives.",
+   "claim": "DETROITography: a treasure trove of Detroit maps among its papers",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Detroit, civil rights and women's workplace struggles",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fbbdefbe3bb0616c…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "the portfolio entry",
+   "quote": "The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations.",
+   "claim": "DETROITography restates the About page's sentence verbatim",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the largest labor archives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 fbbdefbe3bb0616c…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Discover the stories that shaped Detroit, Michigan and the nation at the Walter P. Reuther Library, home to the largest labor archives in North America! Establi...",
+   "claim": "Wayne State's Museums page: the stories of Detroit and the nation, the largest labor archives in North America",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the largest labor archives",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs was established as the Labor History Archives at Wayne State University in 1960, with the goal of collecting and preserving original source materials relating to the development of the American labor movement.",
+   "claim": "established in 1960 as the Labor History Archives, to collect and preserve original source materials of the American labor movement",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": true,
+   "lineage": "origin: the Labor History Archives, 1960",
+   "date": "undated (the page as fetched 2026-10-31); the event 1960",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "In 1975, the Walter P. Reuther Library was constructed with funds given to Wayne State University by the United Automobile, Aerospace, and Agricultural Implement Workers of America, and through a supplementary grant from the Department of Health, Education, and Welfare.",
+   "claim": "the 1975 building, constructed with funds the UAW gave the university and a supplementary federal grant",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": true,
+   "lineage": "the building and the union's gift",
+   "date": "undated (the page as fetched 2026-10-31); the event 1975",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "A later gift from the UAW funded the construction of the library's Leonard Woodcock Wing, completed in 1991.",
+   "claim": "a later UAW gift funded the Leonard Woodcock Wing, 1991",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the building and the union's gift",
+   "date": "undated (the page as fetched 2026-10-31); the event 1991",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations.",
+   "claim": "the largest labor archives in North America, home to the collections of numerous unions and labor-related organizations",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the largest labor archives",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "Its collection strengths extend to the political and community life of urban and metropolitan Detroit, the civil rights movement in Michigan and nationally, and women's struggles in the workplace.",
+   "claim": "its strengths extend to Detroit's political and community life, the civil rights movement and women's struggles in the workplace",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Detroit, civil rights and women's workplace struggles",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "A brief history of the Reuther Library",
+   "quote": "The Reuther Library is also the home of the Wayne State University Archives, established by the Board of Governors in 1958 in recognition of the importance and permanent value of the University's official files, records, and documents.",
+   "claim": "home of the Wayne State University Archives, established in 1958 for the university's official files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Wayne State University Archives",
+   "date": "undated (the page as fetched 2026-10-31); the event 1958",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Planning your research visit",
+   "quote": "The collections housed in the Reuther Library are freely open to the public. Appointments are not required; however, it is recommended that patrons traveling from out-of-town contact the Reference Archivist in advance at reutherreference@wayne.edu .",
+   "claim": "collections freely open to the public; appointments not required; out-of-town patrons advised to contact the Reference Archivist in advance",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: open to the public",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Reading Room — Hours of Operation",
+   "quote": "Monday – Friday 9:30am–noon, 1pm-3:30pm … CLOSED Saturday, Sunday, & all University Holidays … To schedule a research appointment, contact Kristen Chinery",
+   "claim": "reading room hours, weekdays only; a research appointment, when sought, through Kristen Chinery",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: open to the public",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Reuther Library Collection Policy",
+   "quote": "The Reuther Library collects and facilitates access to historical documentary evidence in order to inspire academic research, serve the information needs of the community, and build knowledge at Wayne State University. Information about donating collection material is available in the Reuther Library Collection Policy .",
+   "claim": "its collecting purpose: historical documentary evidence for research, the community and the university; donation governed by a Collection Policy",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "collecting policy and donation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Planning your research visit",
+   "quote": "Before visiting the Reuther Library's Reading Room, patrons are encouraged to search for collection material related to their topic.",
+   "claim": "patrons are encouraged to search before visiting",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: open to the public",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Attachment (click to download)",
+   "quote": "CollectionPolicy_20141216.pdf … Good faith Efforts_public.pdf",
+   "claim": "two attached documents, the Collection Policy of 16 December 2014 and 'Good faith Efforts_public.pdf', linked and unsaved",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collecting policy and donation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Mission, Vision, and Values Statements",
+   "quote": "The Reuther Library's mission, vision, and values statements are available at Mission, Vision, and Values Statements - Full .",
+   "claim": "its mission, vision and values statements are on a separate page, linked and unsaved",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collecting policy and donation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 9648eac5e857fb05…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Walter P. Reuther Library — Walter P. Reuther Library",
+  "B2": "Wayne State University — Home - Walter P. Reuther Library, Archives of Labor and Urban Affairs - Research Guides at Wayne State University",
+  "B3": "Wayne State University — Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+  "B4": "Wikipedia — Walter P. Reuther Library - Wikipedia",
+  "B5": "Project MUSE — The Evolution of the Walter P. Reuther Library - Project MUSE",
+  "B6": "DETROITography — Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+  "B7": "Wayne State University — Walter P. Reuther Library - Museums - Wayne State University",
+  "B8": "Walter P. Reuther Library — About Us"
+ }
+}

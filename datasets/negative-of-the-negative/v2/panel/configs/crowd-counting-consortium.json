@@ -1,0 +1,40 @@
+{
+ "row": "crowd-counting-consortium",
+ "address": "Crowd Counting Consortium",
+ "entity": "The Crowd Counting Consortium (CCC), a joint project of Harvard Kennedy School and the University of Connecticut, part of the Nonviolent Action Lab at the Ash Center, begun in 2017 by Jeremy Pressman (UConn) and Erica Chenoweth (HKS) to estimate the participants in the Women's March of 21 January 2017, which collects publicly available data on political protest events reported in the United States and publishes them monthly on the Harvard Dataverse (ash.harvard.edu/programs/crowd-counting-consortium/); formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/crowd-counting-consortium/)",
+ "row_type": "C (a public entity on which the archive bears: a university project publishing a protest-event dataset; an entity of the maryleelabor left-and-labor census, area labor-action)",
+ "aliases": [
+  {
+   "pattern": "\\bCrowd[- ]Counting Consortium\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bcrowdcounting(\\.org)?\\b|@crowdcounting\\b|\\bcrowdcountingconsortium\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bCounting Crowds\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "protest event data: counts of political protest events and crowd sizes",
+   "pattern": "\\b(protest[- ]event(s| data(sets?)?)?|protest (data(sets?)?|counts?|tall(y|ies)|tracking|trackers?)|event data(sets?)? (of|on) (protests?|demonstrations?)|crowd (counts?|counting|sizes?|estimates?|numbers)|count(s|ing|ed)? (of )?(the )?(protests?|crowds?|protesters|demonstrations?))\\b",
+   "flags": "i",
+   "basis": "field: B1 (ash.harvard.edu, the consortium's page: 'collects publicly available data on political protest events reported in the United States'; FAQ: 'Our goal is to make the aggregate data on crowd numbers publicly available for each event.'); B3 (boB Rudis, 'Crowd Counting Consortium 2025 U.S. Protest Event Data': 'systematically collected data on political protest events across the United States since January 2017'); B6 (@crowdcounting, 2024-08-29: 'we've tallied 200,000 protests and rallies in the US'). The census's own unit ('a political protest event reported in the United States, with crowd numbers'), evidence_kind ('event dataset') and area ('labor-action': 'strikes, stoppages and protest events, counted and described') for the entity (ML record, census.json rows[slug == 'crowd-counting-consortium'].unit, .evidence_kind, .areas; areas['labor-action'])."
+  },
+  {
+   "term": "nonviolent action and civil resistance (the consortium's institutional home and object)",
+   "pattern": "\\b(non-?violent action|civil resistance|non-?violent resistance|non-?violent discipline|civil disobedience)\\b",
+   "flags": "i",
+   "basis": "field: B1 ('Part of Nonviolent Action Lab'; 'acts of civil disobedience'; 'a high degree of nonviolent discipline among anti-Trump protesters'); B4 (Counting Crowds, 2024-05-06: 'The Nonviolent Action Lab at Harvard Kennedy School's Ash Center ... one of the two institutional pillars of this project'); B3 ('acts of civil disobedience'). The census's own operator ('part of the Nonviolent Action Lab at the Ash Center') for the entity (ML record, census.json rows[slug == 'crowd-counting-consortium'].operator)."
+  }
+ ],
+ "classes_note": "Two classes, each stated by field sources at the loci given and by the census's own unit, evidence kind, area and operator for the entity: (1) protest event data, the consortium's unit and evidence kind (B1, B3, B6; census unit, evidence_kind 'event dataset', area 'labor-action'); (2) nonviolent action and civil resistance, the consortium's institutional home (the Nonviolent Action Lab) and a category its page applies to the events it counts (B1, B3, B4; census operator). The census area 'labor-action' is the census's placement; its negative tag reads 'NOT a labor dataset: it records political protest of every kind, and labor action only as part of it', so labor action as such (strikes, stoppages) is no class of the entity and enters no class pass; the archive's labor instruments (DSL, #771; the directionality stack; user labor drag) bear on labor performed with AI and on none of the two classes. #1725 (Ils ne sont pas marxistes, AXN:0B50), the census's anchor, is read at its passages on datasets of the left, holders and the losing side (its 'One caution applies to the whole sample' passage, its Conclusion and its Gaps); its organ/holder/route conditions concern the record of disputes inside left organizations, and the census's reading that applies the holder to the consortium is the archive's reading, ledgered as ML-NN, and enters no class pass. The aliases are the entity's name, its handle and site name (crowdcounting, crowdcounting.org, @crowdcounting, the Dataverse slug crowdcountingconsortium) and its blog's name (Counting Crowds, case-sensitive); 'CCC' is not used, being too short to match only the entity. Erica Chenoweth, Jeremy Pressman and Jay Ulfelder are persons distinct from the entity; the Nonviolent Action Lab and the Ash Center are its institutional home, entities distinct from it; Count Love (countlove.org) is a collaborator, an entity distinct from it; crowd counting as the estimation of crowd sizes (the Wikipedia article 'Crowd counting') is a homonym of the name's common noun. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to protest event data or to nonviolent action as a class; a bare mention, a figural use of 'counting', a list of keywords or a reference line is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Crowd Counting Consortium' (crowd-counting-consortium-aio-20261031, OBS-1d7507d26f51, ADDR-cdd1faf8a14e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725, the census's anchor).",
+ "hop_from": [
+  1725
+ ]
+}

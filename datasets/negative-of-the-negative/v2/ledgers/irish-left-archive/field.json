@@ -1,0 +1,1167 @@
+{
+ "row": "irish-left-archive",
+ "address": "Irish Left Archive",
+ "addresses": [
+  "Irish Left Archive"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Mastodon account lookup's text, or the Wikipedia response summary; 49/49 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 leftarchive.ie, the archive's home page, byte-identical to the census's own page irish-left-archive--home and carried once, as a card; B2 the podcast's show page on Spotify; B3 the podcast's page on Pocket Casts; B4 the archive's Mastodon profile on mastodon.online, with the instance's public account lookup), all four fetched; 'own_page', the archive's pages the census names and did not read, fetched at the addresses its home page links (B5 About the Irish Left Archive, where the census's /about/ and /about answered 404; B6 Copyright; B7 Content Submissions), none surfaced by T; 'wikipedia', no article (B8), 32 articles carrying the name. The census read no third-party source (all its evidence carries basis 'operator', from the home page), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B4, B5); origin, the Cedar Lounge Revolution in 2007 (B1, B5); the database website of 2013 (B5); posting, discussion and correction on the CLR (B5); its curators (B5); purpose and terms of holding (B5, B6); copyright, attribution and fair use (B6, B7); scope and its gaps (B5); holdings and counts (B1); the timeline (B1); access (B1); rival organisations' documents side by side (B1); collections (B1); demonstrations (B1); participants' accounts and comments (B1); submission, donation, weekly addition (B7, B2); the podcast (B1, B2, B3); channels and their dates (B4); versions and dates (B1, B3); reception (B2, B8). The podcast's description on Spotify and Pocket Casts is one text (one lineage, B2 carrying it). The census's kind, operator, count, timeline, demonstrations, personal_accounts, latest_update and search quotes restate B1 (one lineage each with the page, which keeps the earliest date); its record, ml_reading and negative tags are the archive's readings, ledgered as ML-NN in their own lineages.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 the census's saved copy, byte-identical to the card fetch; B2-lookup.html the podcast's About page from which the Spotify URL was taken; B4-api.json the account lookup with B4-api.txt its fields as text; B5-census-*.html the census's two 404 responses for its About source; B8 .wiki, -noredirect.wiki, .html, -search.html the raw Wikipedia responses with B8.txt a summary of codes, notices and search snippets; T1-irish-left-archive-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page irish-left-archive--home, byte-identical)",
+   "card": "Irish Left Archive — Irish Left Archive — Digital archive of Irish left politics",
+   "url": "https://www.leftarchive.ie/",
+   "kind": "Overview card (the archive's home page); the census's own page irish-left-archive--home (requested at https://www.clririshleftarchive.org/, redirected to https://www.leftarchive.ie/)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B1.html",
+     "sha256": "908865463c70f088886f58bfcbcb931a51b99198590ec465c54c6baf369cf017"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B1.txt",
+     "sha256": "e00adfbf675a34dbc1d6dbb19d2acb07149438337a12525da3d703e7bc31d22f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:57:30Z",
+    "http": 200,
+    "url": "https://www.leftarchive.ie/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B1.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "irish-left-archive--home",
+     "sha256": "908865463c70f088886f58bfcbcb931a51b99198590ec465c54c6baf369cf017",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:54Z",
+     "url": "https://www.clririshleftarchive.org/",
+     "final_url": "https://www.leftarchive.ie/",
+     "agrees": true
+    },
+    "raw_sha256": "908865463c70f088886f58bfcbcb931a51b99198590ec465c54c6baf369cf017"
+   },
+   "names_operator": "yes ('It was initiated by the Cedar Lounge Revolution'; posts 'By: Aonrud ⚘'; it names no curator by legal or personal name)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the page's <title> is the card's title verbatim). The fetch (census agent) is byte-identical to the census's saved copy irish-left-archive--home (sha256 908865463c70f088…), so the card and the census's own page are one page, carried once, as a card; B1.html is the census's gunzipped copy and B1.txt the census's text of the same bytes (its spacing before punctuation kept as saved). The page carries no date of its own; its latest updates are dated 26 October 2026 and its CLR feed 31 October 2026.",
+   "surfaced_by_T": [
+    {
+     "slug": "irish-left-archive-aio-20261031",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "Irish Left Archive — Digital archive of Irish left politics",
+   "card_snippet": "The Irish Left Archive is an online archive of materials relating to Irish left politics, freely accessible and easy to download and reproduce. The Irish Left A...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Spotify — Irish Left Archive Podcast | Podcast on Spotify",
+   "url": "https://open.spotify.com/show/1JSK1YUbFcO6Lgde0S0Vay",
+   "kind": "Overview card (the podcast's show page on Spotify)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2.html",
+     "sha256": "a638f5dad676bd862d44beb4cbe903b1e79e795e9b1be68debeb220e2190af63"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2.txt",
+     "sha256": "02edf5fd94ee644fd180728251e6116dbbbe5c7192ef973cf1e30a43b186fa8e"
+    },
+    "B2-lookup.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2-lookup.html",
+     "sha256": "ac06135e629fed93ea149ea6c12bc252d9f92f82d64dcfa4ad262a1bc2ed39d9"
+    },
+    "B2-lookup.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2-lookup.txt",
+     "sha256": "9fbacf1d0cd7d05bda731aa8ff2338740053e5cb8eee9c6603079604092b0294"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:19Z",
+    "http": 200,
+    "url": "https://open.spotify.com/show/1JSK1YUbFcO6Lgde0S0Vay",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2.txt"
+    ],
+    "lookup": {
+     "at": "2026-10-31T22:58:12Z",
+     "http": 200,
+     "url": "https://podcast.leftarchive.ie/@ILAPodcast/about",
+     "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B2-lookup.html",
+     "result": "the podcast's own About page, whose only open.spotify.com link is https://open.spotify.com/show/1JSK1YUbFcO6Lgde0S0Vay; not ledgered"
+    },
+    "raw_sha256": "a638f5dad676bd862d44beb4cbe903b1e79e795e9b1be68debeb220e2190af63"
+   },
+   "names_operator": "yes (the show is 'Irish Left Archive'; 'The podcast is hosted by Ciarán Swan and Aonghus Storey')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Two WebSearches ('\"Irish Left Archive Podcast\" Spotify'; 'open.spotify.com show Irish Left Archive Podcast') returned no open.spotify.com result; the URL was taken from the podcast's own About page (B2-lookup.html) and confirmed by the fetched page, whose <title> is 'Irish Left Archive Podcast | Listen to the Podcast on Spotify' (the card's title reads 'Podcast on Spotify'). The card's snippet lists episodes; the page's episode list carries them (Newshound, with John Fay; Eugene McCartan: Communist Party of Ireland; INLA: Deadly Divisions, with Charles Tuba).",
+   "surfaced_by_T": [
+    {
+     "slug": "irish-left-archive-aio-20261031",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "Irish Left Archive Podcast | Podcast on Spotify",
+   "card_snippet": "Episodes: Newshound with John Fay (curated news 1996–2018); Eugene McCartan (Communist Party of Ireland history); INLA Deadly Divisions with Charles Tuba; 2005 ...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Pocket Casts — Irish Left Archive Podcast - Pocket Casts",
+   "url": "https://pocketcasts.com/podcast/irish-left-archive-podcast/8d0d4b00-bd1b-0138-e6fe-0acc26574db2",
+   "kind": "Overview card (the podcast's page on Pocket Casts)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B3.html",
+     "sha256": "50a6c2e2d81d442227d77b51ffe0965794a67c08ac246e4fce32187c3c109286"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B3.txt",
+     "sha256": "15a76e43dbd62fd7e2880e06acd86e3162ff04a20f008409ea61bddf0f2c08a3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:12Z",
+    "http": 200,
+    "url": "https://pocketcasts.com/podcast/irish-left-archive-podcast/8d0d4b00-bd1b-0138-e6fe-0acc26574db2",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B3.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B3.txt"
+    ],
+    "raw_sha256": "50a6c2e2d81d442227d77b51ffe0965794a67c08ac246e4fce32187c3c109286"
+   },
+   "names_operator": "yes ('Irish Left Archive'; 'The podcast is hosted by Ciarán Swan and Aonghus Storey')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on title and site ('\"Irish Left Archive Podcast\" Pocket Casts', first result); the page's <title> is the card's title verbatim. Its description is the podcast's own text, the same as B2's (one lineage).",
+   "surfaced_by_T": [
+    {
+     "slug": "irish-left-archive-aio-20261031",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "Irish Left Archive Podcast - Pocket Casts",
+   "card_snippet": "Irish Left Archive. podcast.leftarchive.ie/@ILAPodcast. Monthly podcast. Read More. A podcast looking at Left politics in Ireland from the Irish Left Archive. W...",
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "mastodon.online — Irish Left Archive (@LeftArchive@mastodon.online)",
+   "url": "https://mastodon.online/@LeftArchive",
+   "kind": "Overview card (the archive's Mastodon profile; the page is a script shell with its profile in meta tags, so the instance's public account lookup was saved beside it)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4.html",
+     "sha256": "1bfb7207aec7d22be87503ef58ac0fb756041478928857127c2d2a08d9a131f1"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4.txt",
+     "sha256": "97b6838409979ccef0fb3223e77494aaf926f35c0c3dc560427789f5e21fcf62"
+    },
+    "B4-api.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4-api.json",
+     "sha256": "3ecc5dbee7e96d70bd1a7bb6ffe46437a7938293881c5904e1724cc89dd19463"
+    },
+    "B4-api.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4-api.txt",
+     "sha256": "725b3d9fd9af004eccd72f1189711007c9cbfbd9c6f9ead7955e9dd60490e2a2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:57:34Z",
+    "http": 200,
+    "url": "https://mastodon.online/@LeftArchive",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4.txt",
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4-api.txt"
+    ],
+    "lookup": {
+     "at": "2026-10-31T22:58:39Z",
+     "http": 200,
+     "url": "https://mastodon.online/api/v1/accounts/lookup?acct=LeftArchive",
+     "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B4-api.json",
+     "result": "the account's public record on the same host (B4-api.txt is its fields as text)"
+    },
+    "raw_sha256": "1bfb7207aec7d22be87503ef58ac0fb756041478928857127c2d2a08d9a131f1"
+   },
+   "names_operator": "yes ('Irish Left Archive'; its verified profile link 'https://www.leftarchive.ie')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (the handle). The profile page's meta description reads '423 Posts, 484 Following, 11 Followers' where the card's snippet reads '485 Following'; the account's last post is dated 2023-01-02, the card's 'Jan 2, 2023'.",
+   "surfaced_by_T": [
+    {
+     "slug": "irish-left-archive-aio-20261031",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "Irish Left Archive (@LeftArchive@mastodon.online)",
+   "card_snippet": "Jan 2, 2023 — 423 Posts, 485 Following, 11 Followers · Digital collection of political material from the Irish Left. #fedi22 #Ireland #Politics #History #Communism #Socialism...",
+   "card_note": null
+  },
+  {
+   "origin": "own_page",
+   "role": "the census's About source, at the address the home page links (not surfaced by T)",
+   "card": "leftarchive.ie — About the Irish Left Archive",
+   "url": "https://www.leftarchive.ie/information/about-the-irish-left-archive/",
+   "kind": "own page (About the Irish Left Archive)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5.html",
+     "sha256": "2c7561ec604bb422c5f8a8ffb7bcaf8f628b5586bcbe1c8d5062d99c3380bb4e"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5.txt",
+     "sha256": "c3d1af4c29e338fa693f2207100f696f66fcb557f838462747f09a5e833eeab5"
+    },
+    "B5-census-about-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5-census-about-404.html",
+     "sha256": "e85d41f9c4881ffefea12cc0fc0ffa47a81835b4c854c82871c20e391d043937"
+    },
+    "B5-census-about2-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5-census-about2-404.html",
+     "sha256": "e85d41f9c4881ffefea12cc0fc0ffa47a81835b4c854c82871c20e391d043937"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:06Z",
+    "http": 200,
+    "url": "https://www.leftarchive.ie/information/about-the-irish-left-archive/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5.txt"
+    ],
+    "census_tries": [
+     {
+      "src": "irish-left-archive--about",
+      "url": "https://www.clririshleftarchive.org/about/",
+      "final_url": "https://www.leftarchive.ie/about/",
+      "http": "404",
+      "fetched": "2026-10-31T21:27:56Z",
+      "sha256": "e85d41f9c4881ffefea12cc0fc0ffa47a81835b4c854c82871c20e391d043937",
+      "copy": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5-census-about-404.html"
+     },
+     {
+      "src": "irish-left-archive--about2",
+      "url": "https://www.clririshleftarchive.org/about",
+      "final_url": "https://www.leftarchive.ie/about/",
+      "http": "404",
+      "fetched": "2026-10-31T21:30:40Z",
+      "sha256": "e85d41f9c4881ffefea12cc0fc0ffa47a81835b4c854c82871c20e391d043937",
+      "copy": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B5-census-about2-404.html"
+     }
+    ],
+    "raw_sha256": "2c7561ec604bb422c5f8a8ffb7bcaf8f628b5586bcbe1c8d5062d99c3380bb4e"
+   },
+   "names_operator": "yes ('The ILA was started by Ciarán Swan and the website was created by Aonghus Storey, who both maintain the project as co-curators')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census records its About source as unread: both of its addresses (/about/, /about) answered 404 (its saved copies, B5-census-*.html, the site's 404 page). The home page (B1) links 'About the Archive' at /information/about-the-irish-left-archive/; fetched there with the census agent, HTTP 200. Admitted as an own page beside the cards by the operator's ruling; T did not surface it. The page carries no date; it narrates 2007 and 2013.",
+   "surfaced_by_T": [],
+   "id": "B5"
+  },
+  {
+   "origin": "own_page",
+   "role": "the Copyright page the census lists as unchecked (not surfaced by T)",
+   "card": "leftarchive.ie — Copyright: Archive materials and their ownership",
+   "url": "https://www.leftarchive.ie/information/copyright/",
+   "kind": "own page (Copyright)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B6.html",
+     "sha256": "9769d946031479a8fc2fab1654a512007bde274793337e2e3e3a6487ac981dd4"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B6.txt",
+     "sha256": "e7925f7a3e16b8cec0ef2630f2de34f0c8597bca1159935b894bd123ba8bc7e6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:07Z",
+    "http": 200,
+    "url": "https://www.leftarchive.ie/information/copyright/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B6.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B6.txt"
+    ],
+    "raw_sha256": "9769d946031479a8fc2fab1654a512007bde274793337e2e3e3a6487ac981dd4"
+   },
+   "names_operator": "yes ('The Irish Left Archive is provided as a general historical resource')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Linked from the home page as 'Copyright'; the census record names it ('a Copyright page that was not saved'; unchecked). Fetched with the census agent. Undated.",
+   "surfaced_by_T": [],
+   "id": "B6"
+  },
+  {
+   "origin": "own_page",
+   "role": "the Content Submissions page the census lists as unchecked (not surfaced by T)",
+   "card": "leftarchive.ie — Content Submissions",
+   "url": "https://www.leftarchive.ie/information/content-submissions/",
+   "kind": "own page (Content Submissions, with the donors' acknowledgements)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B7.html",
+     "sha256": "16be248b08e800bc2af9244cf44ce879beac37c4dcb0d0e8a1edb208d68a8293"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B7.txt",
+     "sha256": "cb73be76f919ffbd313c272e697f2157a65aaef5d5b3e9ae1d2caa65c5cc4998"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:08Z",
+    "http": 200,
+    "url": "https://www.leftarchive.ie/information/content-submissions/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B7.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B7.txt"
+    ],
+    "raw_sha256": "16be248b08e800bc2af9244cf44ce879beac37c4dcb0d0e8a1edb208d68a8293"
+   },
+   "names_operator": "yes ('We add new material to the archive on a weekly basis')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, provenanceerasure, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Linked from the home page as 'Content Submissions'; the census record names it (holder: 'content is submitted through a Content Submissions route'; unchecked). Fetched with the census agent. Undated.",
+   "surfaced_by_T": [],
+   "id": "B7"
+  },
+  {
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Irish Left Archive (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Irish_Left_Archive&action=raw",
+   "kind": "Wikipedia (no article; 32 articles carry the name)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8.wiki",
+     "sha256": "197fadb36ae36f9e0ff3b78e10963165cb52a95fb9bc3eb144f3f7985526af00"
+    },
+    "B8-noredirect.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8-noredirect.wiki",
+     "sha256": "f04ddb1f550f51bbd003233325908c222c16e466eec62aa4147d3245cc6c3d45"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8.html",
+     "sha256": "6730afd7ca429644c7d84727c2e999cb2d4e4484d5523747d4d053ffefc34034"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8-search.html",
+     "sha256": "4462d02aa57acd2d2b7bd325d2150adf3ed496ce5740cd023e355c7550a32c9c"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8.txt",
+     "sha256": "d1a5da3d04f2afd8222f8c4060654915d1a32be6c8be97c2b84a0169a7c25d51"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T22:57:36Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Irish_Left_Archive&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:57:37Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Irish_Left_Archive&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:57:38Z",
+      "url": "https://en.wikipedia.org/wiki/Irish_Left_Archive",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T22:57:38Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Irish+Left+Archive%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "32 results: articles that carry the name, most as a cited source or external link"
+     },
+     {
+      "at": "2026-10-31T22:58",
+      "url": "https://en.wikipedia.org/w/index.php?title=Irish_left_archive&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:58",
+      "url": "https://en.wikipedia.org/w/index.php?title=Left_Archive&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:58",
+      "url": "https://en.wikipedia.org/w/index.php?title=Cedar_Lounge_Revolution&action=raw&redirect=no",
+      "http": 429,
+      "result": "rate-limited; not retried (the blog is a distinct entity; its article, if any, is not the entity's)"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/irish-left-archive-20261031/B8.txt"
+    ],
+    "raw_sha256": "6730afd7ca429644c7d84727c2e999cb2d4e4484d5523747d4d053ffefc34034"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "No article and no redirect. The full-text search returns 32 articles that carry the name (the first twenty in B8.txt with their snippets), most as a cited source or an external link: Look Left (Ireland), Communist Party of Ireland, Irish Republican Socialist Party, Workers' Party (Ireland), Sinn Féin, Anarchism in Ireland among them. They are articles on other entities and are recorded; the one snippet that states something of the archive (Look Left) is ledgered.",
+   "surfaced_by_T": [],
+   "id": "B8"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening",
+   "quote": "The Irish Left Archive is an online archive of materials relating to Irish left politics , freely accessible and easy to download and reproduce .",
+   "claim": "an online archive of materials of Irish left politics, freely accessible and easy to download and reproduce",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online archive of Irish left politics",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening",
+   "quote": "It was initiated by the Cedar Lounge Revolution .",
+   "claim": "initiated by the Cedar Lounge Revolution",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: the Cedar Lounge Revolution, 2007",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "In the Archive",
+   "quote": "1231 Documents 436 Organisations 47 Internationals 217 Publications 875 People 20 Demonstrations 10 Collections 12 Articles",
+   "claim": "its holdings by count: 1231 documents, 436 organisations, 47 internationals, 217 publications, 875 people, 20 demonstrations, 10 collections, 12 articles",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and counts",
+   "date": "2026-10-31 (as displayed)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Timeline",
+   "quote": "Timeline of the Irish Left An interactive timeline of Irish Left organisations and parties from 1900 to the present.",
+   "claim": "an interactive timeline of Irish left organisations and parties from 1900 to the present",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the timeline of organisations",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Featured Document",
+   "quote": "Irish Socialist, No. 123 January 1973, from the Communist Party of Ireland. … Socialist Worker, Vol. 2, No. 146 Socialist Workers’ Party, 2001",
+   "claim": "rival organisations' periodicals featured side by side under their issuers' names (the Communist Party of Ireland, 1973; the Socialist Workers' Party, 2001)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rival organisations' documents side by side",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Recent Material; Latest Updates",
+   "quote": "Joint Statement by the Irish Republican Socialist Party and The… … Irish Republican Socialist Party, The Leninist group (CPGB) … Updated: Communist Party of Great Britain (Provisional Central Committee) Organisation | 26th October 2026",
+   "claim": "small and splinter organisations' records kept and updated under their own names (the Irish Republican Socialist Party with The Leninist group (CPGB); the Communist Party of Great Britain (Provisional Central Committee), updated 26 October 2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rival organisations' documents side by side",
+   "date": "2026-10-26",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Collections: The British Left on Ireland",
+   "quote": "Since the Irish Left Archive began it has included documents from the British left on Ireland, and these have accumulated over the years to cover a wide range of groups. This collection shows some of the positions taken by the British left over the course of the last several decades.",
+   "claim": "a collection of the British left's documents on Ireland, showing some of the positions British groups took over several decades",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Collections",
+   "quote": "Wood Quay Protests Documents related to the Wood Quay protests of 1978 and 1979, which sought to preserve the Viking site found on the planned site of Dublin Corporation's new offices. The Hunger Strikes Materials relating to the Hunger Strikes of 1980/1 in the archive.",
+   "claim": "collections on the Wood Quay protests of 1978–79 and the Hunger Strikes of 1980/1",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collections",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Snapshots of Political Action",
+   "quote": "Snapshots of Political Action A project from Irish Election Literature and the Irish Left Archive Documents from demonstrations",
+   "claim": "Snapshots of Political Action: documents from demonstrations, a project with Irish Election Literature",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "demonstrations",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Personal Accounts",
+   "quote": "The Irish Left Archive hopes to collate first-hand political reminiscences or observations from people involved in Irish Left political activity over the years. We'd be grateful to anyone who has been involved in political parties, campaigns or activism who would like to provide us an account of their personal experience.",
+   "claim": "it hopes to collate first-hand reminiscences from people involved in Irish left activity, and asks for them",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "participants' accounts and comments",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Latest Comments",
+   "quote": "I was one of the 5 who produced Focalín. I know the name of the cartoonist and the other 3 of course.",
+   "claim": "a participant's comment on a record: one of the five who produced Focalín",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "participants' accounts and comments",
+   "date": "2026-08-09 (the comment, as dated on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Latest Updates",
+   "quote": "Updated: The Leninist group (CPGB) Organisation | 26th October 2026 … Updated: Independents 4 Change Organisation | 23rd October 2026",
+   "claim": "organisation records updated on 26 and 23 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates",
+   "date": "2026-10-26",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Irish Left Archive Podcast; Latest on the CLR",
+   "quote": "Irish Left Archive Podcast Exploring Left politics in Ireland past and present … ILA Podcast #72: Kevin Rooney: IrishBorderPoll.com By: Aonrud ⚘ | Fri, 30 Oct 2026 10:54:35",
+   "claim": "the podcast, 'exploring Left politics in Ireland past and present', episode 72 posted by Aonrud on 30 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the podcast",
+   "date": "2026-10-30",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Latest on the CLR",
+   "quote": "Latest on the CLR What you see now and what people saw fifty years ago By: WorldbyStorm | Sat, 31 Oct 2026 10:14:00",
+   "claim": "the home page carries the Cedar Lounge Revolution's latest posts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the Cedar Lounge Revolution, 2007",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Advanced Search",
+   "quote": "Search Sections Collections Demonstrations Documents International People Publications Organisations Subjects Select All Deselect All Years: From to",
+   "claim": "search by section (collections, demonstrations, documents, internationals, people, publications, organisations, subjects) and by years",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 e00adfbf675a34db…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "In 2007 the Cedar Lounge Revolution decided to initiate and host the Irish Left Online Document Archive.",
+   "claim": "in 2007 the Cedar Lounge Revolution initiated and hosted the Irish Left Online Document Archive",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: the Cedar Lounge Revolution, 2007",
+   "date": "2007 (stated on the undated page, fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "This was intended to be an online archive of materials relating to the Irish left with documents, leaflets, pamphlets, posters and newspapers from the latter half of the 20th century placed online in PDF format, freely accessible and easily downloadable and reproducible for those who are interested.",
+   "claim": "intended as an online archive of the Irish left's documents, leaflets, pamphlets, posters and newspapers of the later twentieth century, in PDF, freely accessible and reproducible",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online archive of Irish left politics",
+   "date": "2007 (stated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶2",
+   "quote": "Over the years the scope of the Irish Left Archive has grown considerably and now includes at least some sample materials from the major political formations on the island. However, large gaps still remain both chronologically and in terms of individual groups or formations.",
+   "claim": "its scope now includes at least some sample materials from the major formations; large gaps remain, in time and in individual groups",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scope and its gaps",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "In 2013 the Irish Left Archive had grown to encompass about 300 documents and it was decided to create a new database website to make the work that went into the archive more accessible.",
+   "claim": "in 2013, at about 300 documents, a database website was created",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the database website, 2013",
+   "date": "2013 (stated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "documents continue to be posted to the CLR where the regular discussions have been invaluable in contextualising the materials and providing corrections.",
+   "claim": "documents continue to be posted to the CLR, whose discussions contextualise and correct them",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: posting, discussion and correction",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "It is further hoped that this site will make it easier to identify gaps in the archive’s coverage and encourage readers to donate documents and provide missing information or corrections to the existing material.",
+   "claim": "the site is hoped to make gaps identifiable and to draw donations and corrections",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope and its gaps",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶4",
+   "quote": "The rationale for the Archive is quite straightforward. Firstly it’s a good way for developing an informal but reasonably comprehensive history of the Irish left.",
+   "claim": "its rationale: an informal but reasonably comprehensive history of the Irish left",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and terms of holding",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶5",
+   "quote": "But perhaps most importantly this is intended as a general historical resource, open to all irrespective of political position. The Archive is not linked to any political party, and no judgement is made, beyond points regarding quality of production, on these documents in the accompanying texts.",
+   "claim": "a general historical resource open to all irrespective of position, linked to no party, making no judgement on the documents beyond quality of production",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "purpose and terms of holding",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶6",
+   "quote": "The Archive hopes to encompass materials from all on the left including those from Socialist, Social Democrat, Green, Marxist, Republican, Anarchist, Feminists, Trade Unions, campaigning groups, left and progressive Unionist voices and other groups on the island of Ireland, or with connections to Irish politics",
+   "claim": "it hopes to encompass materials from all on the left, from socialist to anarchist, feminist, trade union and progressive unionist voices, on the island or connected to Irish politics",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope and its gaps",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶6",
+   "quote": "But interesting or progressive noises from Fine Gael or Fianna Fáil are also of interest. Further areas include reflections upon the Irish left from organisations of the left and other ideological positions both in Ireland and outside of Ireland",
+   "claim": "its scope reaches beyond the left: progressive material from Fine Gael or Fianna Fáil, and reflections on the Irish left from other positions in and outside Ireland",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope and its gaps",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "¶7",
+   "quote": "The ILA was started by Ciarán Swan and the website was created by Aonghus Storey, who both maintain the project as co-curators.",
+   "claim": "started by Ciarán Swan, its website created by Aonghus Storey; both maintain it as co-curators",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "its curators",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 c3d1af4c29e338fa…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "The Irish Left Archive is provided as a general historical resource, open to all. We aim to do so without compromising the ownership or original intent of the materials contained in it.",
+   "claim": "provided as a general historical resource open to all, without compromising the materials' ownership or original intent",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose and terms of holding",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶2",
+   "quote": "In the majority of cases, the documents and posters we reproduce were intended for widespread dissemination, as a means to expose people to the ideas expressed in them, or to further awareness of the organisation which produced them. As a result, we believe our reproduction of them is in the spirit of their original production, rather than prejudicing the interests of the copyright holders. Further, other than to scan and digitize them, we do not modify the original materials.",
+   "claim": "the documents were made for dissemination, so reproducing them keeps to the spirit of their production; beyond scanning, the originals are not modified",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "As such, we are confident that our reproduction of these materials constitutes fair use.",
+   "claim": "it holds its reproduction to be fair use",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶4",
+   "quote": "In the case of the type of political materials contained in the archive, actual ownership can be difficult to identify. Particularly with the more informally produced documents, ownership may reside with any number of contributors (often un-attributed or pseudonymous) unless rights were specifically ceded to the organisation responsible for producing the final materials. In light of this difficulty, we feel it is reasonable to identify the organisation and the named contributors for each document.",
+   "claim": "ownership of political material is hard to identify, its contributors often unattributed or pseudonymous, so each document is identified by its organisation and named contributors",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶5",
+   "quote": "For all materials, copyright remains with the original authors. However, in most cases non-commercial re-use of the materials constitutes fair use.",
+   "claim": "copyright stays with the original authors; non-commercial re-use is in most cases fair use",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶6",
+   "quote": "we would appreciate if any re-use of materials downloaded from the ILA would acknowledge this by providing attribution (or, in the case of a website, a link back) to the ILA, as well as the original authors.",
+   "claim": "it asks that re-use attribute the ILA (or link back) as well as the original authors",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e7925f7a3e16b8ce…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "We appreciate submissions of any materials that seem relevant to the scope of the archive, either in physical or digital form.",
+   "claim": "it takes submissions of relevant material, physical or digital",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: submission, donation, weekly addition",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cb73be76f919ffbd…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "¶3",
+   "quote": "We add new material to the archive on a weekly basis, so donated documents won’t appear immediately on the site. This allows us time for scanning, reading and writing the accompanying commentaries for documents before they are added, and also gives time for the discussions that often provide valuable context to the materials we post.",
+   "claim": "new material is added weekly, after scanning, reading and a written commentary, with time for the discussions that give context",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: submission, donation, weekly addition",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cb73be76f919ffbd…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "¶4",
+   "quote": "If files have been posted for or to other online archives previously we would appreciate if you would inform us when getting in contact. We are keen to credit others’ work or provide links where applicable.",
+   "claim": "it asks to be told where a file was posted before, to credit others' work",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, attribution and fair use",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cb73be76f919ffbd…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Acknowledgements",
+   "quote": "Many people have kindly donated documents to the archive over the years since its creation. These are greatly appreciated and have been crucial to keeping the project active and helping us to expand our coverage of the Irish Left.",
+   "claim": "donations have been crucial to keeping it active and to its coverage",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: submission, donation, weekly addition",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cb73be76f919ffbd…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Acknowledgements",
+   "quote": "Some have preferred to be acknowledged psuedonymously, and thank you also to those who have donated materials anonymously. … Irish Communist Party; Irish Socialist Network … The Socialist Party ; The Workers’ Party",
+   "claim": "donors include pseudonymous and anonymous donors and organisations themselves (the Irish Communist Party, the Irish Socialist Network, the Socialist Party, the Workers' Party among them)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: submission, donation, weekly addition",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cb73be76f919ffbd…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "show description",
+   "quote": "A podcast looking at Left politics in Ireland from the Irish Left Archive. We talk to activists, writers, historians, politicians and others involved in Left organisations and movements about their experiences of participating in Left parties and campaigns; Left publications and political documents they’ve been involved in; and the history and development of progressive politics in Ireland.",
+   "claim": "a podcast from the archive: interviews with activists, writers, historians, politicians and others on their experience in Left parties, campaigns and publications",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the podcast",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 02edf5fd94ee644f…), B2-lookup.txt (sha256 9fbacf1d0cd7d05b…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "show description",
+   "quote": "We also look at the role of the Irish Left Archive and similar informal projects. The podcast is hosted by Ciarán Swan and Aonghus Storey.",
+   "claim": "it looks at the role of the archive and similar informal projects; hosted by Ciarán Swan and Aonghus Storey",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the podcast",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 02edf5fd94ee644f…), B2-lookup.txt (sha256 9fbacf1d0cd7d05b…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "episode: 2025 Round Up",
+   "quote": "This episode is a round up of the Irish Left Archive project in 2025 and answers to some listener questions. Thanks as always to everyone who has supported and engaged with the archive by sending documents, speaking on the podcast, emailing, commenting, and using the site.",
+   "claim": "a round-up of the project in 2025, thanking those who send documents, speak, email, comment and use the site",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: submission, donation, weekly addition",
+   "date": "2026-01-02 (the episode, 'Jan 2' on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 02edf5fd94ee644f…), B2-lookup.txt (sha256 9fbacf1d0cd7d05b…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "episode: 2025 Round Up",
+   "quote": "Thanks also to the editorial team of Saothar, the journal of the Irish Labour History Society, for including an article on the Irish Left Archive in their 50th anniversary edition, Saothar 50.",
+   "claim": "an article on the archive in Saothar 50, the Irish Labour History Society's journal",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception",
+   "date": "2026-01-02 (the episode)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 02edf5fd94ee644f…), B2-lookup.txt (sha256 9fbacf1d0cd7d05b…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "podcast header",
+   "quote": "podcast.leftarchive.ie/@ILAPodcast Monthly podcast. Next episode on Tuesday, December 8.",
+   "claim": "a monthly podcast hosted at podcast.leftarchive.ie, its next episode given for Tuesday, December 8",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the podcast",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 15a76e43dbd62fd7…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "episode list",
+   "quote": "71 episodes • 0 archived • Bookmarks S7 E72",
+   "claim": "the page counts 71 episodes and lists S7 E72",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 15a76e43dbd62fd7…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "profile (meta description)",
+   "quote": "Digital collection of political material from the Irish Left.",
+   "claim": "its profile: a digital collection of political material from the Irish Left",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an online archive of Irish left politics",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 97b6838409979cce…), B4-api.txt (sha256 725b3d9fd9af004e…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "account lookup (B4-api.txt)",
+   "quote": "created_at: 2021-05-10T00:00:00.000Z last_status_at: 2023-01-02 statuses_count: 423",
+   "claim": "the account opened in May 2021 and last posted on 2 January 2023, 423 posts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "channels and their dates",
+   "date": "2023-01-02",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 97b6838409979cce…), B4-api.txt (sha256 725b3d9fd9af004e…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "account lookup (B4-api.txt), profile fields",
+   "quote": "field: 🔗 Website: https://www.leftarchive.ie (verified_at 2022-05-16T11:00:13.326+00:00)",
+   "claim": "its profile's website link to leftarchive.ie is verified",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "channels and their dates",
+   "date": "2022-05-16",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 97b6838409979cce…), B4-api.txt (sha256 725b3d9fd9af004e…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "the article title (B8.txt)",
+   "quote": "https://en.wikipedia.org/wiki/Irish_Left_Archive : HTTP 404: 'Wikipedia does not have an article with this exact name.'",
+   "claim": "no Wikipedia article on the entity",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d1a5da3d04f2afd8…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "full-text search (B8.txt)",
+   "quote": "Full-text search for \"Irish Left Archive\" in articles: HTTP 200, 32 results",
+   "claim": "32 Wikipedia articles carry the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d1a5da3d04f2afd8…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "search snippet: Look Left (Ireland) (B8.txt)",
+   "quote": "LookLeft began publication in 2006 as a Workers' Party publication. The Irish Left Archive holds a March 2009 issue, listed as volume 4, number 1.",
+   "claim": "Wikipedia's Look Left article cites the archive's holding of a 2009 issue",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d1a5da3d04f2afd8…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Irish Left Archive — Irish Left Archive — Digital archive of Irish left politics",
+  "B2": "Spotify — Irish Left Archive Podcast | Podcast on Spotify",
+  "B3": "Pocket Casts — Irish Left Archive Podcast - Pocket Casts",
+  "B4": "mastodon.online — Irish Left Archive (@LeftArchive@mastodon.online)",
+  "B5": "leftarchive.ie — About the Irish Left Archive",
+  "B6": "leftarchive.ie — Copyright: Archive materials and their ownership",
+  "B7": "leftarchive.ie — Content Submissions",
+  "B8": "Wikipedia — Irish Left Archive (no article)"
+ }
+}

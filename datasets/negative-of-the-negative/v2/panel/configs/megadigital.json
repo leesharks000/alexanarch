@@ -1,0 +1,58 @@
+{
+ "row": "megadigital",
+ "address": "MEGAdigital",
+ "entity": "MEGAdigital, the online division (Online-Abteilung) of the Marx-Engels-Gesamtausgabe (MEGA), the historical-critical edition of all publications, manuscripts, drafts and correspondence of Karl Marx and Friedrich Engels, published (herausgegeben) by the Internationale Marx-Engels-Stiftung (IMES) and carried out as an academy project (Akademienvorhaben) of the Berlin-Brandenburgische Akademie der Wissenschaften (BBAW), megadigital.bbaw.de; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/mega-digital/). Distinct from Mega Digital JSC, a digital marketing agency in Hanoi, Ho Chi Minh City and Singapore (megadigital.ai), which the composition at the bare name gives",
+ "row_type": "C (a public entity on which the archive bears: the online division of a historical-critical edition of Marx and Engels; an entity of the maryleelabor left-and-labor census; at the bare name, a homonym, a marketing agency)",
+ "aliases": [
+  {
+   "pattern": "\\bMEGA ?digital\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bMarx[-–‑ ]Engels[-–‑ ]Gesamtausgabe\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bMEGA(?:[²¹]|[12]\\b|\\b)",
+   "flags": ""
+  },
+  {
+   "pattern": "\\b(Internationale Marx-Engels-Stiftung|International Marx-Engels Foundation)\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "historical-critical edition (critical edition) of an author's complete writings",
+   "pattern": "\\b(historical[- ]critical edition|historisch-kritische[nr]? (Ausgabe|Gesamtausgabe|Edition)|critical edition)s?\\b",
+   "flags": "i",
+   "basis": "field: B8 ('Die Marx-Engels-Gesamtausgabe (MEGA) ist die historisch-kritische Ausgabe sämtlicher Veröffentlichungen, Manuskripte und Entwürfe sowie des Briefwechsels'); B9 ('Online-Abteilung der historisch-kritischen Gesamtausgabe'); B10 (infobox genre 'Collected works, critical edition'; 'It is a historical-critical edition'). The census's kind and method ('historisch-kritische Ausgabe'; 'scholarly edition: historical-critical edition') and its evidence_kind 'scholarly edition' (census.json rows[slug == 'mega-digital'].kind, .method, .evidence_kind)."
+  },
+  {
+   "term": "Marx's and Engels's manuscripts and their custodians and editors (the literary estate, editorial intervention)",
+   "pattern": "\\b(Marx'?s (unpublished |original |own )?manuscripts|manuscripts of Marx|Marx[- ]Engels[- ]Nachlass|literary estate|custodians? of (Marx|the manuscripts)|Engels'?s? edit(ing|ions|orial)|Kautsky'?s (rearrangements|deletions|liberties|edition))\\b",
+   "flags": "i",
+   "basis": "field: B10 ('most of Marx's and Engels's original manuscripts were held by the SPD in its Berlin archives'; 'the extent of Friedrich Engels's editorial interventions in the second and third volumes of Das Kapital'; 'highlighting significant differences between Marx's original manuscripts and the versions published by later editors'); B9 ('IISG, Marx-Engels-Nachlass'; 'Aus den Manuskripten zum Kapital. (Mit redaktionellen Vermerken von Friedrich Engels.)'). The census's record_object ('all publications, manuscripts and drafts, and the correspondence') and record.keeps (census.json rows[slug == 'mega-digital'].record_object, .record.keeps)."
+  },
+  {
+   "term": "collected-works editions of Marx and Engels (MECW, MEW, Sochineniya)",
+   "pattern": "\\b(Marx[/ -]Engels Collected Works|MECW|Marx-Engels-Werke|\\bMEW\\b|Sochineniya|collected works of Marx)\\b",
+   "flags": "i",
+   "basis": "field: B10 ('See also: Marx/Engels Collected Works (MECW); Marx-Engels-Werke (MEW)'; infobox genre 'Collected works'). The census's area 'texts-of-the-tradition' ('primary writings of Marx, Engels and the socialist movements, in editions and translations') and its negative tag 'NOT a reading edition or translation: a historical-critical edition' (census.json areas, rows[slug == 'mega-digital'].negative_tags[2])."
+  }
+ ],
+ "classes_note": "Three classes, each sourced by field sources and by the census's own kind, record object and area for the entity at the loci given: (1) historical-critical edition (B8, B9, B10; census kind, method, evidence_kind); (2) Marx's and Engels's manuscripts with their custodians and editors (B10, B9; census record_object, record.keeps); (3) collected-works editions of Marx and Engels (B10 'See also'; census area 'texts-of-the-tradition', negative_tags[2]). The census's anchor #1725 (Ils ne sont pas marxistes) is read at the passages that name the entity's kind: Marx's own texts treated as revisable and turned on by their author, the suppressed Gotha critique published by Engels, the organ, holder and route of a defeated critique, and the archives and libraries where accumulated critical capacity sits (BRIEF-NEW-ROW-LEFT §8). Aliases: the edition's online name with and without the space, its German name in its hyphen forms, the acronym MEGA with its superscript or digit marks (case-sensitive, so that 'mega' and 'Mega' as words are not matched), and the foundation that publishes it. 'Mega Digital' as the agency's name is the homonym; archive uses of the agency are read as the homonym's and recorded, never admitted. Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'MEGAdigital' (megadigital-aio-20261031, OBS-500f644ab2a9, ADDR-de9d647df47e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#843, #858, #859, #1422, #1531, #1593, #1631, #1647, #1725).",
+ "hop_from": [
+  843,
+  858,
+  859,
+  1422,
+  1531,
+  1593,
+  1631,
+  1647,
+  1725
+ ]
+}

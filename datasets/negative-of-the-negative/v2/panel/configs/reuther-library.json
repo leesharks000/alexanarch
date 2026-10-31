@@ -1,0 +1,56 @@
+{
+  "row": "reuther-library",
+  "address": "Walter P. Reuther Library, Archives of Labor and Urban Affairs",
+  "entity": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs (reuther.wayne.edu), Wayne State University, 5401 Cass Ave, Detroit: established in 1960 as the Labor History Archives at Wayne State University to collect and preserve original source materials of the American labor movement; its building constructed in 1975 with funds given to the university by the UAW and a Department of Health, Education, and Welfare grant, the Leonard Woodcock Wing (1991) funded by a later UAW gift; in its own words the largest labor archives in North America, home to the collections of numerous unions and labor-related organizations and to the Wayne State University Archives (its About page); formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/reuther-library/)",
+  "row_type": "C (a public entity on which the archive bears: a university's labor archives, holding the records of unions and labor-related organizations; an entity of the maryleelabor left-and-labor census)",
+  "aliases": [
+    {
+      "pattern": "\\b(Walter P\\.? )?Reuther (Library|Archives?)\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bArchives of Labou?r (History )?and Urban Affairs\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bLabou?r History Archives\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\breuther\\.wayne\\.edu\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "labor archives (archives of labor and the left: the records of unions and labor-related organizations, held for later readers)",
+      "pattern": "\\b(labou?r archives?|archives? of (the )?(labou?r|left|unions?|working[- ]class|socialis\\w+)( movement)?|labou?r[- ]history archives?|union (records|archives?|papers)|records of (the |numerous )?(labou?r )?unions?|labou?r librar(y|ies))\\b",
+      "flags": "i",
+      "basis": "field: B8 (reuther.wayne.edu/about, 'A brief history of the Reuther Library': 'The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations.'); B2 (the Research Guide, About: 'The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations'); B4 (Wikipedia, Labor records: 'The Reuther Library is the home of the largest labor archives in the United States'; category 'Labor libraries'); B6 (DETROITography, the same sentence); the card snippets of B3 and B7 ('The largest labor archives in North America'). The census's own kind ('labor archives; the largest labor archives in North America, in its own words'), areas ('archives-and-custody': 'Archives and custody: collections of papers and records of labor and the left, held for later readers'; 'movement-documents') and evidence_kind ('archival collection') for the entity (ML record, census.json rows[slug == 'reuther-library'].kind, .areas, .evidence_kind; census.json areas)."
+    },
+    {
+      "term": "archives held by a university (the university as holder of the record)",
+      "pattern": "\\b(university archives?|university librar(y|ies)|academic librar(y|ies)|research librar(y|ies)|university (as|is the) (holder|custodian)|held by (a|the) university)\\b",
+      "flags": "i",
+      "basis": "field: B8 (About: 'established as the Labor History Archives at Wayne State University in 1960'; 'constructed with funds given to Wayne State University by the United Automobile, Aerospace, and Agricultural Implement Workers of America'; 'The Reuther Library is also the home of the Wayne State University Archives'); B1 (home page: 'Walter P. Reuther Library, Archives of Labor and Urban Affairs, Wayne State University'); B4 (Wikipedia: infobox owner 'Wayne State University'; categories 'University and college academic libraries in the United States', 'Research libraries in the United States'). The census's own operator ('Wayne State University') and record.holder ('Wayne State University; the 1975 building was funded by the UAW ...') for the entity (ML record, census.json rows[slug == 'reuther-library'].operator, .record.holder)."
+    },
+    {
+      "term": "custody of the record (custodians and archivists who collect, preserve and give access to documentary evidence for later readers)",
+      "pattern": "\\b(custod(y|ians?|ial)|archivists?|archival custody|preserv(e|es|ing) (the )?(original )?(source|documentary|historical) (materials?|evidence|records?))\\b",
+      "flags": "i",
+      "basis": "field: B8 (About: 'with the goal of collecting and preserving original source materials relating to the development of the American labor movement'; Collection Policy: 'The Reuther Library collects and facilitates access to historical documentary evidence'); B4 (Wikipedia: 'to collect and preserve original documents related to the American labor movement'); B1 (home page: 'Ask An Archivist'). The census's own area 'archives-and-custody' ('Archives and custody: collections of papers and records of labor and the left, held for later readers') for the entity (census.json areas; rows[slug == 'reuther-library'].areas); and the archive's own record: the Capture Registry's finding at the capture, 'THE CUSTODIAN OF THE UNIONS' OWN RECORDS' (walter-p-reuther-library-aio-20261031, findings[1])."
+    },
+    {
+      "term": "holding the losing side (the holder, the organ, the defeated position, the record of a split)",
+      "pattern": "\\b(losing (side|position)|defeated (critique|position|side|minority)|holder with standing|seated minorit(y|ies)|record of (the |a )?splits?|(independent|public|own) organ)\\b",
+      "flags": "i",
+      "basis": "archive: the census's organizing question ('Whose record does it keep, who holds it, and does it keep the losing side in a form that could be taken up later?', census.json organizing_question), its record.losing_side for the entity ('not recorded') and its ml_reading ('whether a defeated caucus's papers are held beside an executive's is a question for its finding aids, unread here', rows[slug == 'reuther-library'].ml_reading); the Capture Registry's finding ('#1725 asks of such an archive whether it keeps the records of the oppositions inside the unions it holds', walter-p-reuther-library-aio-20261031, findings[1]). The field names no losing side; B4 (Wikipedia, Labor records) names the personal papers the library holds ('Raya Dunayevskaya', 'Martin Glaberman', 'James and Grace Lee Boggs' among them) without characterizing them."
+    }
+  ],
+  "classes_note": "Four classes: (1) labor archives, the archives of labor and the left held for later readers (census kind, areas 'archives-and-custody' and 'movement-documents', evidence_kind 'archival collection'; B2, B4, B6, B8, and the snippets of B3 and B7); (2) archives held by a university, the university as holder (census operator and record.holder; B1, B4, B8); (3) custody of the record (census area 'archives-and-custody'; B1, B4, B8; the Capture Registry's finding 'THE CUSTODIAN OF THE UNIONS' OWN RECORDS'); (4) holding the losing side, membership sourced from the archive only (the census's organizing question, record.losing_side and ml_reading; the Capture Registry's finding that names #1725's question): the field states no losing side for the entity, so (4) is the archive's class for it and is marked so wherever it is used. Classes (3) and (4) were added after the first string pass and before the reading, on the reading of the hop candidates from #1725 (custody passages in #1066, #1634, #1679); the pass was rerun with all four. The census's urban-affairs, civil-rights and women's-workplace collecting (its record_object) is carried by the field and the record and enters no class pass of its own: the census gives it no area of its own. The aliases are the entity's names (the Walter P. Reuther Library; the Reuther Library; the Archives of Labor and Urban Affairs, and the Archives of Labor History and Urban Affairs, the form of the name in Pflug's 1974 guide as Wikipedia cites it; the Labor History Archives, its 1960 name) and its host (reuther.wayne.edu). 'Reuther' alone is not used: Walter Reuther, the UAW president for whom the library is named, is a person distinct from the entity, and Victor Reuther another. Wayne State University (the holder and operator) and the UAW (the funder of its building and the union whose records it keeps) are entities distinct from the library and are not aliases. The census's ml_reading applies #1725's question (whose record, who holds it, whether the losing side is kept) to the entity: that reading is the archive's, ledgered as ML-NN. #1725 (Ils ne sont pas marxistes, AXN:0B50), the census's anchor, is read at the passages that name the entity's kind: the holder, the organ, the losing position and the record of a split. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category (the holder, the organ, the losing position, custody of the record, the archive's own account of archives and their holders) to one of the two classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-LEFT.md; address 'Walter P. Reuther Library, Archives of Labor and Urban Affairs' (walter-p-reuther-library-aio-20261031, OBS-4b75a761850f, ADDR-4de5445d04b1), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725, the census's anchor, admitted at the passages naming the holder, the organ, the losing position and the record of a split; the string pass returned no D, R or labor-archive candidate).",
+  "hop_from": [
+    1725
+  ]
+}

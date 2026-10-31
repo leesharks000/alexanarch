@@ -1,0 +1,1060 @@
+{
+ "row": "iish",
+ "address": "International Institute of Social History",
+ "addresses": [
+  "International Institute of Social History"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw wikitext for F20, or the panel title for the two unreachable sources; 44/44 verified by script; the third-party page (B4) quoted in full sentences as its whole text is three paragraphs",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the registry's rail (B1 iisg.amsterdam, the institute's home page; B2 the Wikipedia article; B3 the KNAW's page; B4 the ICCT directory entry; B5 'About IISH' on the ESSHC site) and the three further titles of the answer's source panel (B6 the IISG collections FAQ; B7 an IIAS page, unreachable; B8 a YouTube page, title only); 'own_page', the census's About page (B9), not surfaced by T, admitted by the operator's ruling of 2026-10-29; 'wikipedia', the article, which is card 2 (B2), carried once as a card. No census third-party source.",
+ "lineage_note": "Lineages: what it is (B2, B3); the collections (B1, B2, B4, B6); the papers it holds (B2, B6); founding (B2, B4, B9); rescue (B2, B4); who holds it (B1, B3, B5, B9); mission (B5); research, conference and data (B1, B3); access and its terms (B1, B6); the place (B1, B2, B6); the encyclopedia's own record (B2 wikitext); the panel's other sources (B7, B8).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/iish-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped by the census's own rule; B1 byte-identical to the census copy iish--home; B9 the census copy iish--about, gunzipped; B2.wiki the raw wikitext; B7-403.html the refusal; T1-international-institute-of-social-history-aimode-20261031.txt the registry's transcript string)",
+ "field": [
+  {
+   "origin": "card",
+   "role": "AI Mode card 1",
+   "card": "Internationaal Instituut voor Sociale Geschiedenis — International Institute of Social History - IISG",
+   "url": "https://iisg.amsterdam/en",
+   "kind": "AI Mode card 1 (the institute's home page); byte-identical to the census's own page iish--home, carried once, as a card",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B1.html",
+     "sha256": "0a0832bcc211eecfaf0368a77f8834fc6a7e811a717b2cca1d0117b1bef474be"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B1.txt",
+     "sha256": "15d557c2bfd8484cbe822643227f4f2646b23acae03ecabc86a66e8f8a54b819"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:57Z",
+    "http": 200,
+    "url": "https://iisg.amsterdam/en",
+    "final_url": "https://iisg.amsterdam/en",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B1.html",
+    "raw_sha256": "0a0832bcc211eecfaf0368a77f8834fc6a7e811a717b2cca1d0117b1bef474be",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B1.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "census_copy": {
+     "src": "iish--home",
+     "sha256": "0a0832bcc211eecfaf0368a77f8834fc6a7e811a717b2cca1d0117b1bef474be",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:45Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('An Institute of the Royal Netherlands Academy of Arts and Sciences')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "International Institute of Social History - IISG",
+   "card_snippet": null,
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 2",
+   "card": "Wikipedia — International Institute of Social History - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/International_Institute_of_Social_History",
+   "kind": "AI Mode card 2: the entity's Wikipedia article (rendered page B2.html/B2.txt; raw wikitext B2.wiki); the card is the article, carried once, as a card",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.html",
+     "sha256": "db7cb003922cedcb2accbc7e0e55952cb49da73cdecb0904e265c5fee44b2c26"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.txt",
+     "sha256": "bd37a571646060db789eb46b6ac9993e89265b75f5957b0146db23b286483076"
+    },
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.wiki",
+     "sha256": "65233beaf0427a54490ca96c7bef40df64aac276569e5c7ed3ec1d0b80b10f7e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:58Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/International_Institute_of_Social_History",
+    "final_url": "https://en.wikipedia.org/wiki/International_Institute_of_Social_History",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.html",
+    "raw_sha256": "db7cb003922cedcb2accbc7e0e55952cb49da73cdecb0904e265c5fee44b2c26",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=International_Institute_of_Social_History&action=raw",
+     "at": "2026-10-31T23:00:11Z",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B2.wiki",
+     "sha256": "65233beaf0427a54490ca96c7bef40df64aac276569e5c7ed3ec1d0b80b10f7e",
+     "redirect": "none (the title is the article)"
+    }
+   },
+   "names_operator": "yes ('It is part of the Royal Netherlands Academy of Arts and Sciences')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "International Institute of Social History - Wikipedia",
+   "card_snippet": null,
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 3",
+   "card": "KNAW — International Institute of Social History (IISH) - KNAW",
+   "url": "https://www.knaw.nl/en/institutes/international-institute-social-history-iish",
+   "kind": "AI Mode card 3: the Royal Netherlands Academy's page for its institute (the operator's parent body)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B3.html",
+     "sha256": "1542d53e7ac611236e8de3ea5ba3c200e4bf7fe37c1b2256ef52c352aa149eb7"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B3.txt",
+     "sha256": "e13acae513cbd5000b6411d6e31637ce6cff1e267a32c2c4eb7bd50a8cf71163"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:59:59Z",
+    "http": 200,
+    "url": "https://www.knaw.nl/en/institutes/international-institute-social-history-iish",
+    "final_url": "https://www.knaw.nl/en/institutes/international-institute-social-history-iish",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B3.html",
+    "raw_sha256": "1542d53e7ac611236e8de3ea5ba3c200e4bf7fe37c1b2256ef52c352aa149eb7",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B3.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes (the page is the academy's; 'the Academy's Humanities Cluster (HuC)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "International Institute of Social History (IISH) - KNAW",
+   "card_snippet": null,
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 4",
+   "card": "International Consortium of Critical Theory — International Consortium of Critical Theory",
+   "url": "https://directory.criticaltheoryconsortium.org/archives/international-institute-of-social-history/",
+   "kind": "AI Mode card 4: the institute's entry in the International Consortium of Critical Theory Programs' directory (University of California, Berkeley); a third-party page",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B4.html",
+     "sha256": "4d9886b9b67dd690bb3e7256bfd62f5191b53ccda404dfa97afb6654076e05d3"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B4.txt",
+     "sha256": "87f85f99db6495dba078148f7324cc48f6aa3a08966bfef9b4e52edb5aacc4c8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:01Z",
+    "http": 200,
+    "url": "https://directory.criticaltheoryconsortium.org/archives/international-institute-of-social-history/",
+    "final_url": "https://directory.criticaltheoryconsortium.org/archives/international-institute-of-social-history/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B4.html",
+    "raw_sha256": "4d9886b9b67dd690bb3e7256bfd62f5191b53ccda404dfa97afb6654076e05d3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B4.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "no (names the institute; not the academy)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "International Consortium of Critical Theory",
+   "card_snippet": null,
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode card 5",
+   "card": "ESSHC — About IISH | ESSHC",
+   "url": "https://esshc.iisg.amsterdam/en/about-iish",
+   "kind": "AI Mode card 5: 'About IISH' on the European Social Science History Conference site, a site of the institute (esshc.iisg.amsterdam; redirected to /en/about/iisg)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B5.html",
+     "sha256": "79ab40f15b64b9b67023f2669b7f94c3d6fb27f29ef8fa7b7b6950bb00f91183"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B5.txt",
+     "sha256": "106f69cd8ad729c8b7f305e4a5249a50cb01c70c6e89a36cdb372b97d26a972b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:02Z",
+    "http": 200,
+    "url": "https://esshc.iisg.amsterdam/en/about-iish",
+    "final_url": "https://esshc.iisg.amsterdam/en/about/iisg",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B5.html",
+    "raw_sha256": "79ab40f15b64b9b67023f2669b7f94c3d6fb27f29ef8fa7b7b6950bb00f91183",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B5.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "yes ('Since 1979 the IISH has been an institute of the Royal Netherlands Academy of Arts and Sciences (KNAW)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "card": 5
+    }
+   ],
+   "id": "B5",
+   "card_title": "About IISH | ESSHC",
+   "card_snippet": null,
+   "card_note": null
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode source panel",
+   "card": "IISG — Frequently Asked Questions | IISG",
+   "url": "https://iisg.amsterdam/en/collections/faq",
+   "kind": "a source in the AI Mode answer's source panel (transcript, the list after the lede), absent from the registry's cite_list: the institute's collections FAQ",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B6.html",
+     "sha256": "d2790c1dfa76df3f633db6996b9d7e5ae466c611d1bd805952865fd7a275c46c"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B6.txt",
+     "sha256": "bd77cc6966de854812cf2b585251f47a03bc846cb56628d9189b964e1b403c8b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:00:03Z",
+    "http": 200,
+    "url": "https://iisg.amsterdam/en/collections/faq",
+    "final_url": "https://iisg.amsterdam/en/collections/faq",
+    "raw": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B6.html",
+    "raw_sha256": "d2790c1dfa76df3f633db6996b9d7e5ae466c611d1bd805952865fd7a275c46c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/iish-20261031/B6.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "names_operator": "no (the KNAW footer line only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "source_panel": true
+    }
+   ],
+   "id": "B6",
+   "card_title": "Frequently Asked Questions | IISG",
+   "card_snippet": null,
+   "card_note": "in the answer's source panel (transcript), absent from the registry's cite_list"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode source panel",
+   "card": "IIAS — IIAS Fellows Visit the International Institute of Social ...",
+   "url": null,
+   "kind": "a source in the AI Mode answer's source panel, absent from the registry's cite_list: a page of the International Institute for Asian Studies (IIAS), title truncated; unreachable",
+   "files": {
+    "B7-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B7-403.html",
+     "sha256": "e6f491ca18e38e12a5165a370cd615aa21a3c7ea0e35ae23eb937c5d0765297c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "what": "WebSearch for the title ('\"IIAS Fellows Visit the International Institute of Social History\"'; '\"IIAS Fellows\" \"International Institute of Social History\" visit Amsterdam'; 'IIAS fellows visit International Institute of Social History iias.asia news'): no page with the title found"
+     },
+     {
+      "at": "2026-10-31T23:00:11Z",
+      "url": "https://www.iias.asia/news/iias-fellows-visit-international-institute-social-history",
+      "http": 403,
+      "sha256": "e6f491ca18e38e12a5165a370cd615aa21a3c7ea0e35ae23eb937c5d0765297c",
+      "note": "a guessed path; the host answered the census agent with 403 (two further guessed paths, 403); not retried with another agent string"
+     }
+    ],
+    "note": "the source panel's title is its only text"
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "source_panel": true
+    }
+   ],
+   "id": "B7",
+   "card_title": "IIAS Fellows Visit the International Institute of Social ...",
+   "card_snippet": null,
+   "card_note": "in the answer's source panel (transcript), absent from the registry's cite_list"
+  },
+  {
+   "origin": "card",
+   "role": "AI Mode source panel",
+   "card": "YouTube — International Institute of Social History - YouTube",
+   "url": null,
+   "kind": "a source in the AI Mode answer's source panel, absent from the registry's cite_list: a YouTube page (video or channel) under the entity's name; title only",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "what": "WebSearch '\"International Institute of Social History\" YouTube channel video': no YouTube URL returned"
+     }
+    ],
+    "note": "a video card, admitted through its title (no snippet in the capture)"
+   },
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [
+    {
+     "slug": "international-institute-of-social-history-aimode-20261031",
+     "source_panel": true
+    }
+   ],
+   "id": "B8",
+   "card_title": "International Institute of Social History - YouTube",
+   "card_snippet": null,
+   "card_note": "in the answer's source panel (transcript), absent from the registry's cite_list"
+  },
+  {
+   "origin": "own_page",
+   "role": "own page (census)",
+   "card": "iisg.amsterdam — About IISH | IISG",
+   "url": "https://iisg.amsterdam/en/about",
+   "kind": "the institute's About page, the census's own page iish--about (not surfaced by T)",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B9.html",
+     "sha256": "771d5f1882c1747da8f6ad9f00f3558f34f660aacd7572246b676cac8b3c7bb1"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/iish-20261031/B9.txt",
+     "sha256": "293988532822187fb99c3c057dc9f8e42bfe8d468bce83b8711ca446af53f3b6"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "iish--about",
+     "url": "https://iisg.amsterdam/en/about",
+     "sha256": "771d5f1882c1747da8f6ad9f00f3558f34f660aacd7572246b676cac8b3c7bb1",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:46Z",
+     "agrees": true
+    },
+    "note": "the census's saved copy, gunzipped (B9.html) with its saved text (B9.txt); not refetched"
+   },
+   "names_operator": "yes ('An Institute of the Royal Netherlands Academy of Arts and Sciences', footer)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text or title)",
+   "surfaced_by_T": [],
+   "id": "B9",
+   "card_title": "About IISH | IISG",
+   "card_snippet": null,
+   "card_note": "not surfaced by T: the census's own page, admitted by the operator's ruling of 2026-10-29"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Collections",
+   "quote": "The IISH manages a rich collection in the field of socio-economic history that is made available online and in the reading room as much as possible.",
+   "claim": "the institute manages a collection in socio-economic history, made available online and in the reading room 'as much as possible'",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collections: their measure and their kinds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Collections",
+   "quote": "The archives, publications and audiovisual collections cover more than 50 kilometres and offer (historical) information on organisations and persons in the field of labour and social and emancipatory movements.",
+   "claim": "its archives, publications and audiovisual collections cover more than 50 kilometres and inform on organisations and persons of labour and social and emancipatory movements",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the collections: their measure and their kinds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Research",
+   "quote": "Read about our research programme here; our four research clusters Global Labour Relations, Commodities, Environment and Labour, Social and Economic Inequality and Individual and Collective Action.",
+   "claim": "a research programme in four clusters (the page's names)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research, conference and data",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Data",
+   "quote": "View our thousands of datasets on demography, wages, life courses, inequality, prices, and labour relations here. The IISH is one of the world's leading data centres on socio-economic history.",
+   "claim": "thousands of datasets on demography, wages, life courses, inequality, prices and labour relations; one of the world's leading data centres on socio-economic history",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "research, conference and data",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "News & Activities",
+   "quote": "View the latest IISH news items and events here, as well as information about our workshops, the European Social Science History Conference (ESSHC) and the Thesis Prize.",
+   "claim": "it organizes workshops, the European Social Science History Conference (ESSHC) and a Thesis Prize",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research, conference and data",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "An Institute of the Royal Netherlands Academy of Arts and Sciences",
+   "claim": "an institute of the Royal Netherlands Academy of Arts and Sciences",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "who holds it: the academy, its cluster and the foundation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Opening hours",
+   "quote": "The Reading Room is open Monday - Thursday: 09:00 to 17:00",
+   "claim": "the reading room is open Monday to Thursday, 09:00 to 17:00",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Address",
+   "quote": "Cruquiusweg 31 1019 AT Amsterdam The Netherlands",
+   "claim": "its address: Cruquiusweg 31, Amsterdam",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the place: Cruquiusweg, Amsterdam",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 15d557c2bfd8484c…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s1",
+   "quote": "The International Institute of Social History ( IISH ; Dutch : Internationaal Instituut voor Sociale Geschiedenis , IISG ) is one of the largest archives of labor and social history in the world.",
+   "claim": "one of the largest archives of labor and social history in the world",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an archive and research institute of labour and social history",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s2",
+   "quote": "Located in Amsterdam , its one million volumes and 5,445 archival collections include the papers of major figures and institutions in radical leftist thought.",
+   "claim": "in Amsterdam; one million volumes and 5,445 archival collections, including papers of major figures and institutions of radical leftist thought",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the papers it holds: organizations and persons of the movements",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s3–4",
+   "quote": "The IISH was founded in 1935 by Nicolaas Posthumus as an independent scientific institute. It is part of the Royal Netherlands Academy of Arts and Sciences .",
+   "claim": "founded in 1935 by Nicolaas Posthumus as an independent scientific institute; part of the Royal Netherlands Academy of Arts and Sciences",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: 1935, Posthumus, a history from the 1920s",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Collections s1–2",
+   "quote": "The International Institute of Social History specializes in international labor and social history, including that of the Netherlands. As of 2000, it holds one million volumes, 80,000 audiovisual items, 2,400 serials, three million digital files, and 30,000 linear feet of manuscripts across 5,445 collections.",
+   "claim": "it specializes in international labor and social history; as of 2000, one million volumes, 80,000 audiovisual items, 2,400 serials, three million digital files and 30,000 linear feet of manuscripts in 5,445 collections",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collections: their measure and their kinds",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Collections s3",
+   "quote": "Among the latter are institutional collections from Amnesty International , Confederación Nacional del Trabajo and Federación Anarquista Ibérica , the European Trade Union Confederation , Freedom Press , Greenpeace International , the International Confederation of Free Trade Unions , Russian Socialist Revolutionary Party , Socialist International , and the personal papers of Emma Goldman , Karl Marx , Max Nettlau , Lev Trotsky , Karl Kautsky , Ernest Mandel , and Sylvia Pankhurst .",
+   "claim": "institutional collections (Amnesty International, the CNT and FAI, the ETUC, Freedom Press, Greenpeace International, the ICFTU, the Russian Socialist Revolutionary Party, the Socialist International) and the personal papers of Goldman, Marx, Nettlau, Trotsky, Kautsky, Mandel and Pankhurst",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the papers it holds: organizations and persons of the movements",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Collections s4",
+   "quote": "The institute is the foremost repository of anarchist documents in the world.",
+   "claim": "the foremost repository of anarchist documents in the world (two references)",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers it holds: organizations and persons of the movements",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶1",
+   "quote": "Nicolaas Posthumus , a socialist and first chair appointment in economic history in the Netherlands, … founded the International Institute of Social History in 1935. … To examine how labour relations develop over time, IISG collected archives from all over the world. During the first years Posthumus succeeded in obtaining many papers from anarchists ( Bakunin manuscripts), other socialist and social democratic and Marxist movements from Germany and Russia.",
+   "claim": "Posthumus, a socialist and the Netherlands' first chair in economic history, founded it; to examine how labour relations develop it collected archives worldwide, in its first years papers of anarchists (the Bakunin manuscripts) and of socialist, social democratic and Marxist movements of Germany and Russia",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: 1935, Posthumus, a history from the 1920s",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶2 s1–2",
+   "quote": "Before the Germans invaded the Netherlands in May 1940, Posthumus was able to move the most valuable archives to London. During the war, most remaining IISG archives were transported to Nazi Germany between June 1942 and September 1944 by agents of the Reichsleiter Rosenberg Taskforce led by Eberhard Kautter .",
+   "claim": "before May 1940 the most valuable archives went to London; most of the rest were taken to Nazi Germany, 1942–1944, by the Reichsleiter Rosenberg Taskforce",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "rescue: archives brought to safety, seized and returned",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶2 s3–4",
+   "quote": "They were not destroyed, but stored for eventual inclusion in the Advanced School of the NSDAP . … Most of the papers were rediscovered in Hannover in 1946, and some other parts were later found in archives in Moscow in 1991, and returned to Amsterdam.",
+   "claim": "the seized archives were stored for the Advanced School of the NSDAP, mostly rediscovered in Hannover in 1946, other parts found in Moscow archives in 1991 and returned to Amsterdam",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "rescue: archives brought to safety, seized and returned",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶3",
+   "quote": "In 1989 the International Institute of Social History moved to new premises: an old warehouse at the Cruquiusweg in the eastern part of Amsterdam.",
+   "claim": "since 1989 in an old warehouse on the Cruquiusweg, eastern Amsterdam",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the place: Cruquiusweg, Amsterdam",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History ¶4",
+   "quote": "IISG hosts part of the IHLIA LGBT Heritage collection (LGBT Archives).",
+   "claim": "it hosts part of the IHLIA LGBT Heritage collection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers it holds: organizations and persons of the movements",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 bd37a571646060db…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "raw wikitext (action=raw), Infobox organization: formation, founder",
+   "quote": "| formation = <!-- {{Start date and age|1935|11|25}} --> | founder = <!-- or | founders = -->",
+   "claim": "the article's infobox carries a founding date (25 November 1935) only inside a wikitext comment, and its founder field is empty: neither renders",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia's own record",
+   "date": "undated revision (the article as fetched 2026-10-31; its counts 'As of 2000')",
+   "quote_ok": true,
+   "checked_against": "raw wikitext B2.wiki (sha256 65233beaf0427a54…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The IISG is a leading international archive and research institute in the field of social history, the history of labour and social movements.",
+   "claim": "the academy: a leading international archive and research institute of social history, the history of labour and social movements",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an archive and research institute of labour and social history",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e13acae513cbd500…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Since its foundation in 1935, the institute has built up one of the world's largest socio-economic history collections and conducted research on social inequality, globalisation, the environment and migration.",
+   "claim": "since 1935 one of the world's largest socio-economic history collections; research on social inequality, globalisation, the environment and migration",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research, conference and data",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e13acae513cbd500…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "The IISG cooperates with the Huygens Institute and the Meertens Institute in the Academy's Humanities Cluster (HuC) .",
+   "claim": "it cooperates with the Huygens and Meertens Institutes in the Academy's Humanities Cluster",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: the academy, its cluster and the foundation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e13acae513cbd500…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s1",
+   "quote": "The International Institute of Social History was founded in the turbulent 1930s at a time when, following Hitler’s seizure of power, many documents and archives of opposition movements were threatened with becoming irredeemably lost.",
+   "claim": "founded in the 1930s, when after Hitler's seizure of power the archives of opposition movements were threatened with loss",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: 1935, Posthumus, a history from the 1920s",
+   "date": "undated (the page as fetched 2026-10-31; site copyright 2016-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 87f85f99db6495db…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s2",
+   "quote": "Vital archives that were brought to safety in Amsterdam in the early years include: the archive of the German socialist movement (including the manuscripts of Marx and Engels), the archives of revolutionaries at risk from Stalin, and the archives of the Spanish trade unions, threatened with falling into Franco’s hands.",
+   "claim": "archives brought to safety in Amsterdam: the German socialist movement's (with the manuscripts of Marx and Engels), those of revolutionaries at risk from Stalin, and the Spanish trade unions' threatened by Franco",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "rescue: archives brought to safety, seized and returned",
+   "date": "undated (the page as fetched 2026-10-31; site copyright 2016-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 87f85f99db6495db…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "After the end of World War Two, the IISH successfully continued collecting documents. With the exception of Dutch emancipation movements such as Provo, and internationally active movements such as Greenpeace and Amnesty International, endangered archives of organizations and individuals from countries like Turkey, Iran, Burma and Indonesia were safely housed at the Institute.",
+   "claim": "after 1945 it kept collecting: Dutch emancipation movements such as Provo, Greenpeace and Amnesty International, and endangered archives from Turkey, Iran, Burma and Indonesia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rescue: archives brought to safety, seized and returned",
+   "date": "undated (the page as fetched 2026-10-31; site copyright 2016-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 87f85f99db6495db…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "The total archival collection includes over 5,000 collections. Archives and archival finding aids can be searched on this website (or in the catalogue ). Descriptions of Dutch archives are in Dutch; others are in English.",
+   "claim": "over 5,000 archival collections, searchable with their finding aids; Dutch archives described in Dutch, others in English",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collections: their measure and their kinds",
+   "date": "undated (the page as fetched 2026-10-31; site copyright 2016-2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 87f85f99db6495db…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶1",
+   "quote": "The IISH is a unique institute, serving science and society on a global scale. At an international level, we generate and offer reliable information and insights about the (long-term) origins, effects and consequences of social inequality.",
+   "claim": "its mission: information and insight on the long-term origins, effects and consequences of social inequality",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "mission: social inequality and the heritage of oppressed movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 106f69cd8ad729c8…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶2",
+   "quote": "To promote this, we form an international hub for social historians worldwide. We offer and produce historical sources and data, facilitate social-history research and collaborate internationally in ground breaking research projects.",
+   "claim": "an international hub for social historians; sources and data; collaboration in research",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission: social inequality and the heritage of oppressed movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 106f69cd8ad729c8…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶3",
+   "quote": "Moreover, by preserving the heritage of often oppressed social movements, the Institute serves the quality of the world's memory. With our work we hope to contribute to a vibrant civil society.",
+   "claim": "by preserving the heritage of often oppressed social movements it serves the quality of the world's memory",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "mission: social inequality and the heritage of oppressed movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 106f69cd8ad729c8…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "History s1–2",
+   "quote": "Established in 1935, the IISH is one of the world's leading research institutes on social history. Since 1979 the IISH has been an institute of the Royal Netherlands Academy of Arts and Sciences (KNAW).",
+   "claim": "established 1935; an institute of the KNAW since 1979",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "who holds it: the academy, its cluster and the foundation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 106f69cd8ad729c8…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "History s3",
+   "quote": "The collections, some of which concern politically sensitive materials, are the property of or have been issued on standing loan to the independent IISH Foundation.",
+   "claim": "the collections, some politically sensitive, are owned by, or on standing loan to, the independent IISH Foundation",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "who holds it: the academy, its cluster and the foundation",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 106f69cd8ad729c8…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "General: Can I conduct research at the IISH / NEHA?",
+   "quote": "The International Institute of Social History (including the Press Collection of The Netherlands Institute for Sound & Vision) and the Netherlands Economic History Archive welcome everyone to the reading room to do their own research. In addition, we provide online access to large parts of the collection via our online catalogue. We want to create as few barriers as possible for people to use our collections.",
+   "claim": "the IISH (with the Press Collection of the Netherlands Institute for Sound & Vision) and the Netherlands Economic History Archive welcome everyone to the reading room; online access to large parts; 'as few barriers as possible'",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "General: Are there any costs",
+   "quote": "Access to the reading room and consulting the collections are free of charge.",
+   "claim": "access and consultation are free",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Consulting: Can archival documents be viewed online?",
+   "quote": "The IISH manages more than 5,000 different archival collections. Of these, about ten percent (nearly 500 archives) can be consulted online.",
+   "claim": "more than 5,000 archival collections, about ten percent (nearly 500) online",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collections: their measure and their kinds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Consulting: Are all archival documents accessible without restrictions?",
+   "quote": "In principle, most archives are available for research without restrictions. Some archives are not freely available for consultation. These are usually archives where there is a contractual stipulation that the donor or lender of the archive must give permission for consultation, scans and/or publication.",
+   "claim": "most archives are open; some are restricted by a contractual stipulation that the donor or lender must permit consultation, scans or publication",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Consulting: restricted records",
+   "quote": "The IISG mediates in obtaining permission to view archives that are restricted.",
+   "claim": "the institute mediates permission to view restricted archives",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Delivery: Can I borrow books?",
+   "quote": "The material at the IISH must be available to everyone. For this reason, we do not lend our items.",
+   "claim": "nothing is lent, so that the material stays available to everyone",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and its terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Other: Karl Marx's original Communist Manifesto",
+   "quote": "No, unfortunately we do not have the opportunity to show visitors Marx's original writings. We do offer his archive, designated a UNESCO World Heritage Site, fully digitized in our catalogue.",
+   "claim": "Marx's original writings are not shown to visitors; his archive, a UNESCO World Heritage designation, is fully digitized in the catalogue",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the papers it holds: organizations and persons of the movements",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Searching: Where can I find",
+   "quote": "All material is stored in stacks that are closed to the public at our Cruquiusweg location in Amsterdam.",
+   "claim": "all material is kept in closed stacks at Cruquiusweg, Amsterdam",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the place: Cruquiusweg, Amsterdam",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 bd77cc6966de8548…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "source-panel title (unreachable: URL not found; the host refused the census agent, HTTP 403)",
+   "quote": "IIAS Fellows Visit the International Institute of Social ...",
+   "claim": "a page of the International Institute for Asian Studies reports a visit of its fellows to the institute (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the panel's other sources",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; no snippet in the capture)"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "source-panel title (unreachable: URL not found)",
+   "quote": "International Institute of Social History - YouTube",
+   "claim": "a YouTube page under the institute's name (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the panel's other sources",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; no snippet in the capture)"
+  },
+  "F43": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "History IISH (teaser)",
+   "quote": "The IISH was officially established in 1935, but its history goes back to the 1920s.",
+   "claim": "officially established in 1935, its history going back to the 1920s",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: 1935, Posthumus, a history from the 1920s",
+   "date": "undated (the census copy, read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 293988532822187f…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "Foundation (teaser)",
+   "quote": "Read here about the IISH foundation and the ANBI status.",
+   "claim": "the institute has a foundation with ANBI status (a teaser; the page itself unsaved)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: the academy, its cluster and the foundation",
+   "date": "undated (the census copy, read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 293988532822187f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Internationaal Instituut voor Sociale Geschiedenis — International Institute of Social History - IISG",
+  "B2": "Wikipedia — International Institute of Social History - Wikipedia",
+  "B3": "KNAW — International Institute of Social History (IISH) - KNAW",
+  "B4": "International Consortium of Critical Theory — International Consortium of Critical Theory",
+  "B5": "ESSHC — About IISH | ESSHC",
+  "B6": "IISG — Frequently Asked Questions | IISG",
+  "B7": "IIAS — IIAS Fellows Visit the International Institute of Social ...",
+  "B8": "YouTube — International Institute of Social History - YouTube",
+  "B9": "iisg.amsterdam — About IISH | IISG"
+ }
+}

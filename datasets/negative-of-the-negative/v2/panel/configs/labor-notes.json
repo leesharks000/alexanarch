@@ -1,0 +1,50 @@
+{
+ "row": "labor-notes",
+ "address": "Labor Notes",
+ "entity": "Labor Notes (labornotes.org), a media and organizing project published since 1979 (its monthly magazine of the same name, website, books, biennial conferences, Troublemakers Schools) and a network of rank-and-file members, local union leaders and labor activists; the footer names the Labor Education and Research Project as copyright holder; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/labor-notes/)",
+ "row_type": "C (a public entity on which the archive bears: a labor periodical and organizing project and network; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bLabor Notes\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\blabornotes(\\.org)?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bLabor Education and Research Project\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bTroublemakers? (Schools?|Handbook)\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "independent organs of the labor movement (a publication that prints criticism of union leaderships)",
+   "pattern": "\\b(independent (organs?|publications?|press|journals?|periodicals?)|labou?r (press|periodicals?|journalism|publications?|magazines?)|organs? in which|its organ|own (journal|organ|press)|kept (its|an) organ)\\b",
+   "flags": "i",
+   "basis": "field: B12 (labornotes.org/about, The magazine: 'And as an independent publication, we’re free to include the voices who say we could be doing better—and tell how.'; 'For the most part, our leaders are doing a poor job of navigating us through the crisis.'); B2 (Wikipedia: 'a monthly magazine that supports union organizing'). The census's own kind ('a media and organizing project: monthly magazine, website, books, conferences and workshops'), area 'movement-documents' and evidence_kind 'periodical run' for the entity (ML record, census.json rows[slug == 'labor-notes'].kind, .areas, .evidence_kind)."
+  },
+  {
+   "term": "rank-and-file reform caucuses and union democracy",
+   "pattern": "\\b(rank[- ]and[- ]file|reform caucus(es)?|union democracy|Teamsters for a Democratic Union|TDU|Caucus of Rank-and-File Educators|member-run unions?|unions? (that are )?run by (their|its) members)\\b",
+   "flags": "i",
+   "basis": "field: B2 (Wikipedia: 'It promotes a revitalization of the labor movement through social movement unionism and union democracy.'; 'It works to bridge the gap between isolated rank-and-file caucuses and reform groups. The most notable example is Teamsters for a Democratic Union.'); B12 (About: 'unions that are run by their members'; 'a network of rank-and-file members, local union leaders, and labor activists'); B1 (home: 'Members Alarmed by End-Run around Democracy at Buffalo Health Care Local'). The census's own area 'worker-power' and record.keeps ('the voice of union activists and rank-and-file members, including their critique of union leaderships') for the entity (ML record, census.json rows[slug == 'labor-notes'].areas, .record.keeps)."
+  },
+  {
+   "term": "strikes and labor action",
+   "pattern": "\\b(wildcat strikes?|strike waves?|general strikes?|work stoppages?|picket lines?|strikers|on strike|reviving the strike|strike (votes?|threat|victories))\\b",
+   "flags": "i",
+   "basis": "field: B1 (home: 'State Workers Strike Across California'); B2 (Wikipedia, History: 'Teamster Steelhaulers Show Muscle in Three-Week Wildcat Strike'); B4 (2024 conference: 'reviving the strike'). The census's own area 'labor-action' for the entity, with its negative tag 'NOT a strike dataset' (ML record, census.json rows[slug == 'labor-notes'].areas, .negative_tags)."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own kind, area, evidence kind or record field for the entity, stated by field sources at the loci given: (1) independent organs of the labor movement, the periodical that prints criticism of union leaderships (census kind, area 'movement-documents', evidence_kind 'periodical run'; B12, B2); (2) rank-and-file reform caucuses and union democracy (census area 'worker-power', record.keeps; B2, B12, B1); (3) strikes and labor action (census area 'labor-action', with the census's own negative tag 'NOT a strike dataset'; B1, B2, B4). The census's anchor #1725 (Ils ne sont pas marxistes, AXN:0B50) is the archive's text on the kind: its section 'What held critique: independent organs, seated minorities, accountable structure, autonomous bases' and its conclusion (the organ, the holder and the route of a defeated critique) apply its category to class (1), and its counter-cases (TDU, CORE) to class (2); the census's ml_reading applies it to the entity ('of the kind #1725 finds holding critique'). The aliases are the entity's name, its host, the copyright holder its footer names (the Labor Education and Research Project, the census's aka) and its schools and handbook series (Troublemakers Schools, A Troublemaker's Handbook). Kim Moody (named by T as founder), Teamsters for a Democratic Union and the Labor Network for Sustainability are distinct entities and are not aliases; 'Labour voucher' (Owen's labour notes, the alternative currency Wikipedia's hatnote names) is a homonym and is not an alias. The archive's instruments of labor direction (DSL, #771; user labor drag) measure labor performed with AI relative to a commissioned task, which is none of the census's areas for this entity; they enter no class pass.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Labor Notes' (labor-notes-aimode-20261031, OBS-8c3314e4bf1e, ADDR-85ebbd0f20d5), Google AI Mode by the operator's report, signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+ "hop_from": [
+  1725
+ ]
+}

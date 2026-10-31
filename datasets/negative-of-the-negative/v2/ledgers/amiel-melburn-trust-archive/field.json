@@ -1,0 +1,1232 @@
+{
+ "row": "amiel-melburn-trust-archive",
+ "address": "Amiel Melburn Trust Archive",
+ "addresses": [
+  "Amiel Melburn Trust Archive"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the Wikipedia response summary; 49/49 verified by script; third-party pages quoted in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 banmarchive.org.uk, the archive's home page; B2 amielandmelburn.org.uk, the Trust's home page; B3 commonknowledge.coop, the builder's project page; B4 the Trust's awards list; B5 the Trust's news, page 2 of 4; B6 Bath and North East Somerset Council's funding-finder entry), all six fetched; 'own_page', the archive's own pages T did not surface (B7 the New Reasoner page, the census's saved copy; B8 the About page, named in the census's unchecked list and fetched in session; the census's other own page, the home page, is card B1, carried once, as a card); 'wikipedia', no article (B9). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B2, B8); names (B1); the holder (B1, B2, B8); the Trust's founding and objectives (B2); what the Trust funds (B2, B4, B5, B6); the holdings (B1, B3, B8); the Reasoner case (B7); the New Reasoner's route (B7); purpose (B3, B8); access, search and reuse (B1, B8); the build (B1, B3); reception, the encyclopedia (B9). The Trust's objectives are one lineage in B2 and B6 (the council's page restates the Trust's own, F29 attributed). The census's self_description, holder, charity, site_by, search, filters, h_*, lectures, reasoner_case, humanist_socialism, merger, introduction, nr_first and nr_last quotes restate B1 and B7 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped by the census's own rule; B1-census.html/.txt the census's saved copy of the home page beside the card's fetch; B7 the census's saved copy; B9 .wiki, -trust.wiki, -variant.wiki, .html, -trust.html, -search.json raw Wikipedia responses with B9.txt a summary of codes and notices; T1-amiel-melburn-trust-archive-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page banmarchive--home, refetched as the card)",
+   "card": "Amiel Melburn Archive — Amiel Melburn Trust Archive - Amiel Melburne Trust Archive",
+   "url": "https://banmarchive.org.uk/",
+   "kind": "Overview card (the archive's home page); the census's own page banmarchive--home",
+   "files": {
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1-census.html",
+     "sha256": "d3c117ad8594c6dfac3aee8b0671539742a28afca72368267a6d9c7428ebe8e2"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1-census.txt",
+     "sha256": "a79e6b681258c9ffd7d59e53e8a2c9925680a0973a07e0b9152c447ea5d67e61"
+    },
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1.html",
+     "sha256": "466e9a0484584509278ca0cd667a4fafcddd792fa20ba001bc188e3e88d850fd"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1.txt",
+     "sha256": "3747b9a68d1b0cd3019a9d3f6a2835f9c4f1e37ada81f48d71fcb5d9018bad17"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:12Z",
+    "http": 200,
+    "url": "https://banmarchive.org.uk/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1.html",
+    "raw_sha256": "466e9a0484584509278ca0cd667a4fafcddd792fa20ba001bc188e3e88d850fd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "banmarchive--home",
+     "sha256": "d3c117ad8594c6dfac3aee8b0671539742a28afca72368267a6d9c7428ebe8e2",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T21:27:50Z",
+     "agrees": false,
+     "kept": [
+      "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B1-census.txt"
+     ],
+     "difference": "the rotating featured-issues block and signed image URLs only; every quoted line identical"
+    }
+   },
+   "names_operator": "yes ('© Barry Amiel and Norman Melburn Trust', 'Registered Charity No. 281239')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the page title is the card's title verbatim). The census's saved copy of the same URL (fetched 2026-10-31T21:27:50Z, sha256 d3c117ad…) differs from this fetch only in the rotating block of featured issues above 'Publications in the archive' (the census copy features The Reasoner, Black Dwarf, New Reasoner and Red Rag; this fetch New Formations, New Reasoner, Black Dwarf and The Reasoner) and in signed image URLs; the holdings list, the search text, the copyright, address and charity lines are identical. Kept beside it as B1-census.html/.txt; carried once, as the card.",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 1
+    }
+   ],
+   "id": "B1",
+   "card_title": "Amiel Melburn Trust Archive - Amiel Melburne Trust Archive",
+   "card_snippet": "Database: Amiel Melburn Trust Archive provides online socialist and radical writings with exact-phrase and advanced search capabilities. Publications: Archive c...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Barry Amiel & Norman Melburn Trust — Barry Amiel & Norman Melburn Trust: Home",
+   "url": "https://amielandmelburn.org.uk/",
+   "kind": "Overview card (the Trust's home page)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B2.html",
+     "sha256": "8d40d223802bb9c5bc84d661565f907474a204cccfdc0243901fd598cdf5a7fd"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B2.txt",
+     "sha256": "7ca4aa87fb72a1eefcab042b95cf7bfedea8465e1de03a7e1b4af9574ab27b29"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:45Z",
+    "http": 200,
+    "url": "https://amielandmelburn.org.uk/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B2.html",
+    "raw_sha256": "8d40d223802bb9c5bc84d661565f907474a204cccfdc0243901fd598cdf5a7fd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B2.txt"
+    ],
+    "tries": [
+     {
+      "at": "2026-10-31T22:58:22Z",
+      "http": "000",
+      "result": "curl (35) Recv failure: Connection reset by peer (transport, no response); retried with the same agent"
+     },
+     {
+      "at": "2026-10-31T22:58:45Z",
+      "http": 200,
+      "result": "fetched"
+     }
+    ]
+   },
+   "names_operator": "yes (the Trust; its founding by Norman Melburn)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site (amielandmelburn.org.uk, 'What is the Barry Amiel & Norman Melburn trust?'); the page's title is 'Home - Barry Amiel & Norman Melburn Trust' and its header reads 'Barry Amiel & Normal Melburn Trust' (sic). The first try was reset by the server and the second, with the same agent, returned HTTP 200.",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 2
+    }
+   ],
+   "id": "B2",
+   "card_title": "Barry Amiel & Norman Melburn Trust: Home",
+   "card_snippet": "Welcome to the Barry Amiel & Norman Melburn trust ; Online library. Amiel & Melburn Trust Internet Archive. Searchable database of socialist and radical writing...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "commonknowledge.coop — Barry Amiel and Norman Melburn Trust Archive",
+   "url": "https://commonknowledge.coop/projects/barry-amiel-and-norman-melburn-trust-archive/",
+   "kind": "Overview card (Common Knowledge's project page for the archive it built)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B3.html",
+     "sha256": "ca071ac6643835802b1a1a8a95e9a11ef041508cd3f47c8b514cb82b3f5deff0"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B3.txt",
+     "sha256": "49f1d07b83a7abdf0b19be01812325ea7a91e68673d5f6ff4a9b3494c7bd4dfc"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:23Z",
+    "http": 200,
+    "url": "https://commonknowledge.coop/projects/barry-amiel-and-norman-melburn-trust-archive/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B3.html",
+    "raw_sha256": "ca071ac6643835802b1a1a8a95e9a11ef041508cd3f47c8b514cb82b3f5deff0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "yes (the Trust as client; Common Knowledge as builder)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the page's title is the card's with ' — Common Knowledge', and its opening sentence is the card's snippet verbatim.",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 3
+    }
+   ],
+   "id": "B3",
+   "card_title": "Barry Amiel and Norman Melburn Trust Archive",
+   "card_snippet": "Barry Amiel and Norman Melburn Trust Archive An online archive of radical writings from the last 70 years of social change. Visit the archive An online archive ...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Barry Amiel & Norman Melburn Trust — Awards Archive - Barry Amiel & Norman Melburn Trust",
+   "url": "https://amielandmelburn.org.uk/awards/",
+   "kind": "Overview card (the Trust's awards list, first page)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B4.html",
+     "sha256": "0544a8175e6f04e4e5b228ec0356668c145dda0aaa31869b69bcce30bbf0afcc"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B4.txt",
+     "sha256": "04c53720e8a43e27e63c7a3753b09e14a57d01e3cadabd2c153a0b663220b181"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:56Z",
+    "http": 200,
+    "url": "https://amielandmelburn.org.uk/awards/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B4.html",
+    "raw_sha256": "0544a8175e6f04e4e5b228ec0356668c145dda0aaa31869b69bcce30bbf0afcc",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B4.txt"
+    ],
+    "tries": [
+     {
+      "at": "2026-10-31T22:58:33Z",
+      "http": "000",
+      "result": "connection reset by peer"
+     },
+     {
+      "at": "2026-10-31T22:58:55Z",
+      "http": "000",
+      "result": "connection reset by peer"
+     },
+     {
+      "at": "2026-10-31T22:58:56Z",
+      "http": 200,
+      "result": "fetched"
+     }
+    ]
+   },
+   "names_operator": "yes (the Trust)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title ('Awards Archive - Barry Amiel & Norman Melburn Trust', the page's title verbatim) on the Trust's host; two tries reset by the server, the third (same agent) HTTP 200. The page's first ten entries are the 2025 awards the snippet begins to list. The snippet's '(£67,548 total across 10 projects)' is not on the page: the page states no total, and its ten 2025 amounts sum to £72,748 (computed here).",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 4
+    }
+   ],
+   "id": "B4",
+   "card_title": "Awards Archive - Barry Amiel & Norman Melburn Trust",
+   "card_snippet": "2025 Barry Amiel & Norman Melburn Trust Awards (£67,548 total across 10 projects): A Political Platform for Gig Workers (£6,800); Act Up Fight Back (£7,350); Cl...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Barry Amiel & Norman Melburn Trust — General Archives - Page 2 of 4",
+   "url": "https://amielandmelburn.org.uk/category/general/page/2/",
+   "kind": "Overview card (the Trust's news, category General, page 2 of 4)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B5.html",
+     "sha256": "4ab4e497c77686f9a42cdd01f3c54f4e64f8796466fbc809e23614b6c27d3024"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B5.txt",
+     "sha256": "4f01dc38a186938d82c2678dabdd2be12fe332afc61d425b83f82d470385594f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:34Z",
+    "http": 200,
+    "url": "https://amielandmelburn.org.uk/category/general/page/2/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B5.html",
+    "raw_sha256": "4ab4e497c77686f9a42cdd01f3c54f4e64f8796466fbc809e23614b6c27d3024",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B5.txt"
+    ]
+   },
+   "names_operator": "yes (the Trust)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title ('General Archives - Page 2 of 4', the page's title begins so) on the Trust's host; the snippet's first item, the Occupy! comic book, is on the page.",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 5
+    }
+   ],
+   "id": "B5",
+   "card_title": "General Archives - Page 2 of 4",
+   "card_snippet": "Search news: * New book: Occupy! Occupy! Occupy! Comic Book A new comic book, funded by the Trust, has been released by Govanhill Baths. It is a people's histor...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Bath and North East Somerset — The Barry Amiel and Norman Melburn Trust | Bath and North East Somerset ...",
+   "url": "https://www.bathnes.gov.uk/funding-finder/barry-amiel-and-norman-melburn-trust",
+   "kind": "Overview card (a council funding directory's entry for the Trust; third party)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B6.html",
+     "sha256": "7ec9e0f1e49acee12d968d9f853563eb488f339505f9c5da3ea4627a76e1c967"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B6.txt",
+     "sha256": "2cb4c1b03e33c098b2275eeb230725bb0b67ad34ad69f5471654e04c54924484"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:36Z",
+    "http": 200,
+    "url": "https://www.bathnes.gov.uk/funding-finder/barry-amiel-and-norman-melburn-trust",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B6.html",
+    "raw_sha256": "7ec9e0f1e49acee12d968d9f853563eb488f339505f9c5da3ea4627a76e1c967",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes (the Trust, as a funder)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's site and snippet; the page's first sentence is the snippet verbatim. A third-party restatement of the Trust's terms.",
+   "surfaced_by_T": [
+    {
+     "slug": "amiel-melburn-trust-archive-aio-20261031",
+     "card": 6
+    }
+   ],
+   "id": "B6",
+   "card_title": "The Barry Amiel and Norman Melburn Trust | Bath and North East Somerset ...",
+   "card_snippet": "The Barry Amiel and Norman Melburn Trust. Project grants of up to £15,750 are available to UK charitable organisations and individuals for initiatives that adva...",
+   "card_note": "the registry's cite_list carries no snippet (snip null); the snippet is the card's text on the transcript's rail, as pasted"
+  },
+  {
+   "origin": "own_page",
+   "role": "the census own page banmarchive--new-reasoner (not surfaced by T)",
+   "card": "Amiel Melburn Trust Archive — New Reasoner",
+   "url": "https://banmarchive.org.uk/new-reasoner/",
+   "kind": "own page (the archive's New Reasoner page: introduction and issue list), cited by the maryleelabor census record; copied from the census's saved copy",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B7.html",
+     "sha256": "33438e937349fc15d856cd2ef2e886c8bed7389604a69614f0885b3a760be5d4"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B7.txt",
+     "sha256": "d4ee9c9b4d68171f5d95dfb5109c70cfff4c42d677a85a30d5662d87c07d70da"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "banmarchive--new-reasoner",
+    "read": "2026-10-31",
+    "http": "200",
+    "fetched": "2026-10-31T21:27:51Z",
+    "url": "https://banmarchive.org.uk/new-reasoner/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B7.html",
+    "raw_sha256": "33438e937349fc15d856cd2ef2e886c8bed7389604a69614f0885b3a760be5d4",
+    "census_sha256": "33438e937349fc15d856cd2ef2e886c8bed7389604a69614f0885b3a760be5d4",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/banmarchive--new-reasoner.html.gz (gunzipped) and banmarchive--new-reasoner.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B7.txt"
+    ]
+   },
+   "names_operator": "yes ('© Barry Amiel and Norman Melburn Trust')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. #1725 cites this page as '*New Reasoner* archive' and marks it 'unfetched here'.",
+   "surfaced_by_T": [],
+   "id": "B7"
+  },
+  {
+   "origin": "own_page",
+   "role": "the archive's About page (not surfaced by T; not among the census's saved sources)",
+   "card": "Amiel Melburn Trust Archive — About",
+   "url": "https://banmarchive.org.uk/about/",
+   "kind": "own page (the archive's About page: definition, aims, holdings count, copyright notice), named in the census record's unchecked list; fetched in session",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B8.html",
+     "sha256": "a1ef1499eb1a54d5b7345691615d6598d07dd9faa03bea3ac15b13899accf586"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B8.txt",
+     "sha256": "5f2b10bc7421155f3f09e7a798c0c2333f0a57d445fa20a0ad98cb46554ec7aa"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T22:58:37Z",
+    "http": 200,
+    "url": "https://banmarchive.org.uk/about/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B8.html",
+    "raw_sha256": "a1ef1499eb1a54d5b7345691615d6598d07dd9faa03bea3ac15b13899accf586",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B8.txt"
+    ],
+    "census_copy": null
+   },
+   "names_operator": "yes ('The Barry Amiel and Norman Melburn Trust is a non-profit charitable organisation.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "note": "Not among the census's saved sources: the record lists it first among what it left unchecked ('the About page (founding, terms of use, how the runs were digitized)'). Fetched in session with the census agent from the 'About' link on the archive's home page and admitted as an own page under the operator's ruling ('their own pages, etc.'); not surfaced by T. It answers two of the census's open fields (terms of use and license), so the census record's 'not stated' is a statement about its saved sources only.",
+   "surfaced_by_T": [],
+   "id": "B8"
+  },
+  {
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Amiel Melburn Trust Archive (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Amiel_Melburn_Trust_Archive&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B9-search.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9-search.json",
+     "sha256": "2b391a28a35dbb9bdfa6326ab172741d83a6d708b86b6e18af4e4ab9fced8813"
+    },
+    "B9-trust.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9-trust.html",
+     "sha256": "833db8e8aaa648c62fb6998f88df868fede909bbeb3602edce4bb10da3518995"
+    },
+    "B9-trust.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9-trust.wiki",
+     "sha256": "4863a879d13043a8bda3c84b2ec64b362028f233c1e2fa9c5c3b32d26c6ad35a"
+    },
+    "B9-variant.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9-variant.wiki",
+     "sha256": "e37a09169ed409d163c7eca97a9aab3d76d748dbdc77021cb2a51f93d45118f2"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9.html",
+     "sha256": "071fb404104e14072835306b6b9a35f7c4a18beb6da09e95a5a64a3fd3dd8e68"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9.txt",
+     "sha256": "9530be3d675e7ac3944be86e59a4be06df5f34d8843ae2b2e3e24b65440fb3ad"
+    },
+    "B9.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9.wiki",
+     "sha256": "e8d0a58823ff4f2d920c84da9a4c2bade63a201523f684f3939e3e8e889edcce"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Amiel_Melburn_Trust_Archive&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T23:00:10Z",
+      "url": "https://en.wikipedia.org/wiki/Amiel_Melburn_Trust_Archive",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T22:59:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Barry_Amiel_and_Norman_Melburn_Trust&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T23:00:10Z",
+      "url": "https://en.wikipedia.org/wiki/Barry_Amiel_and_Norman_Melburn_Trust",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T22:59:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Amiel_and_Melburn_Trust&action=raw&redirect=no",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T22:59:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Barry_Amiel&action=raw&redirect=no",
+      "http": 404,
+      "result": "not kept"
+     },
+     {
+      "at": "2026-10-31T22:59:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Norman_Melburn&action=raw&redirect=no",
+      "http": 404,
+      "result": "not kept"
+     },
+     {
+      "at": "2026-10-31T22:59:51Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Amiel%22+%22Melburn%22&srlimit=50&format=json",
+      "http": 429,
+      "result": "rate limit; retried with the same agent"
+     },
+     {
+      "at": "2026-10-31T23:00:00Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Amiel%22+%22Melburn%22&srlimit=50&format=json",
+      "http": 200,
+      "result": "totalhits 19 (B9-search.json)"
+     }
+    ],
+    "raw_sha256": "071fb404104e14072835306b6b9a35f7c4a18beb6da09e95a5a64a3fd3dd8e68",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/amiel-melburn-trust-archive-20261031/B9.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "yes: ['maryleelabor']",
+   "note": "No article and no redirect at the archive's name, the Trust's name or the short form 'Amiel and Melburn Trust'. Nineteen articles mention the Trust or the archive, most citing it as the online home of a journal's issues; they are articles on other entities and are recorded together in one claim (F49).",
+   "surfaced_by_T": [],
+   "id": "B9"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "site description (under the menu)",
+   "quote": "Amiel Melburn Archive: an online database of socialist and radical writings.",
+   "claim": "the archive's own definition: an online database of socialist and radical writings",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online database of socialist and radical writings",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Search",
+   "quote": "Putting two or more words in quotation marks will prompt a search for that exact phrase. … Filter by … Advanced search",
+   "claim": "search by word and by exact phrase, filtered by publication, with an advanced search",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, search and terms of reuse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Publications in the archive",
+   "quote": "Publications in the archive 7 Days 22 issues 1971–1972 Black Dwarf 26 issues 1968–1969 New Reasoner 10 issues 1957–1959 Marxism Today 145 issues 1978–1998 New University 13 issues 1960–2024 Red Rag 14 issues 1972–1979 New Formations 10 issues 1987–1990 Soundings 30 issues 1995–2000 Universities & Left Review 7 issues 1957–1959 Socialist History Society Pamphlets 38 issues 1956–1976 Race & Class Articles 6 issues 1998–2005 The Reasoner 3 issues 1956–1956 VIEWS 11 issues 1963–1966",
+   "claim": "thirteen publications with issue counts and years, from The Reasoner (3 issues, 1956) to New University (13 issues, 1960–2024); Marxism Today the largest (145 issues, 1978–1998)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the holdings: thirteen periodicals and series from 1956",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© Barry Amiel and Norman Melburn Trust … Registered Charity No. 281239",
+   "claim": "the archive's pages are the Trust's, a registered charity (no. 281239)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the holder: the Trust, a registered charity",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Site by Common Knowledge",
+   "claim": "the site was built by Common Knowledge",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the build: Common Knowledge, 2021",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "PO Box 80552 London SE4 9FH",
+   "claim": "the archive's pages give the Trust's address as PO Box 80552, London SE4 9FH",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the Trust, a registered charity",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "menu",
+   "quote": "Archive Search About Lectures Visit Amiel & Melburn Website →",
+   "claim": "the archive's menu: archive, search, about, lectures, and a link to the Trust's website",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the Trust, a registered charity",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page title",
+   "quote": "Amiel Melburn Trust Archive - Amiel Melburne Trust Archive",
+   "claim": "the archive's page titles carry 'Amiel Melburne Trust Archive', the misspelt form",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3747b9a68d1b0cd3…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is the Barry Amiel & Norman Melburn trust? ¶1",
+   "quote": "The Trust was founded in 1980 by Norman Melburn and named for his friend and fellow Marxist, the lawyer Barry Amiel. Since Norman Melburn’s death in 1991, both men have been commemorated in the name of the Trust.",
+   "claim": "the Trust was founded in 1980 by Norman Melburn, named for his friend and fellow Marxist the lawyer Barry Amiel; since Melburn's death in 1991 the name commemorates both",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Trust: founding and objectives",
+   "date": "undated (the page as fetched 2026-10-31; footer '© … 2015'); the events 1980, 1991",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7ca4aa87fb72a1ee…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is the Barry Amiel & Norman Melburn trust? ¶2",
+   "quote": "The general objectives of the Trust are to advance public education, learning and knowledge in all aspects of the philosophy of Marxism, the history of socialism, and the working class movement. The Trust, as well as initiating activity or research in pursuit of these objects, is open to applications for funding.",
+   "claim": "the Trust's objectives: public education in the philosophy of Marxism, the history of socialism and the working class movement; it initiates activity and research and is open to applications for funding",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Trust: founding and objectives",
+   "date": "undated (the page as fetched 2026-10-31; footer '© … 2015')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7ca4aa87fb72a1ee…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "What is the Barry Amiel & Norman Melburn trust? ¶3",
+   "quote": "The Trust will give financial assistance to bodies or individuals for projects which it considers fall within the scope of the Trust’s remit.",
+   "claim": "it gives financial assistance to bodies or individuals for projects within its remit",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31; footer '© … 2015')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7ca4aa87fb72a1ee…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Online library",
+   "quote": "Online library Amiel & Melburn Trust Internet Archive Searchable database of socialist and radical writings",
+   "claim": "the Trust lists the archive as its online library, the 'Amiel & Melburn Trust Internet Archive', a searchable database of socialist and radical writings",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an online database of socialist and radical writings",
+   "date": "undated (the page as fetched 2026-10-31; footer '© … 2015')",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7ca4aa87fb72a1ee…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© The Barry Amiel & Norman Melburn Trust 2015 … PO Box 79650 LONDON SE8 9BT Registered Charity No. 281239",
+   "claim": "the Trust's own site: © 2015, PO Box 79650, London SE8 9BT, charity no. 281239",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the Trust, a registered charity",
+   "date": "2015 (the site's copyright line)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7ca4aa87fb72a1ee…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "project header and lede",
+   "quote": "Barry Amiel and Norman Melburn Trust 2021 … An online archive of radical writings from the last 70 years of social change.",
+   "claim": "a 2021 project for the Trust: an online archive of radical writings from the last 70 years of social change",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the build: Common Knowledge, 2021",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "We were thrilled to help the Barry Amiel and Norman Melburn Trust build a new version of their online archive. The archive contains almost 70 years of radical writing, including writings by Stuart Hall and E.P. and Dorothy Thompson.",
+   "claim": "Common Knowledge built a new version of the Trust's online archive; almost 70 years of radical writing, Stuart Hall and E.P. and Dorothy Thompson among the writers",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the holdings: thirteen periodicals and series from 1956",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "Titles like Red Rag illustrate the richness of feminist history. Race & Class considers the complex interaction of these forms of oppression. Black Dwarf writes from the heady days of the late 1960s. The whole archive of the influential Marxism Today considers how theories of political and social change adapt to how society itself has changed – the often controversial 'New Times' hypothesis.",
+   "claim": "the builder reads the titles: Red Rag for feminist history, Race & Class on interacting oppressions, Black Dwarf from the late 1960s, the whole of Marxism Today and its 'New Times' hypothesis",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holdings: thirteen periodicals and series from 1956",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "To make change, social movements must understand their past. Only by learning from the past can we be inspired by previous struggles, avoid mistakes and rejoin long abandoned pathways to liberation and justice.",
+   "claim": "the builder's purpose for the archive: movements learning from the past to rejoin long abandoned pathways to liberation and justice",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: an educational resource",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "We used",
+   "quote": "Django Wagtail with React PDF Viewer A PostgreSQL native search interface that injested and indexed achive PDFs as they were uploaded",
+   "claim": "built on Django and Wagtail with a PDF viewer; a PostgreSQL search that indexed the PDFs on upload",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the build: Common Knowledge, 2021",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "We used, last line",
+   "quote": "The source code of the archive is open source to allow other archives to build upon the work.",
+   "claim": "the archive's source code is open source, for other archives to build on",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the build: Common Knowledge, 2021",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "this new technology provides search tools that now allow organisers and researchers to explore the work in detail.",
+   "claim": "the new search tools let organisers and researchers explore the work in detail",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the build: Common Knowledge, 2021",
+   "date": "2021 (the project year on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 49f1d07b83a7abdf…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Browse Awards, first entry",
+   "quote": "A Political Platform for Gig Workers This project will run political education workshops to empower on-demand food delivery riders, overwhelmingly from migrant and ethnic minority backgrounds, to engage in and influence the 2026 Scottish Parliament elections.",
+   "claim": "a 2025 award: political education for on-demand food delivery riders, mostly migrant and ethnic-minority, ahead of the 2026 Scottish Parliament elections",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2025 (year awarded)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 04c53720e8a43e27…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Browse Awards, fifth entry",
+   "quote": "For Peace! Archive and Exhibition ‘For Peace!’ is an open-access archive of materials from peace movements.",
+   "claim": "a 2025 award: an open-access archive of peace-movement materials (For Peace!, MayDay Rooms)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2025 (year awarded)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 04c53720e8a43e27…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Browse Awards, entries 1–10",
+   "quote": "Year awarded: 2025 Amount awarded: £6,800.00 … Year awarded: 2025 Amount awarded: £3,500.00 … Year awarded: 2025 Amount awarded: £15,248.00",
+   "claim": "ten 2025 awards on the page's first page, from £3,500 to £15,248 each; the page states no total (their sum, computed here, £72,748)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2025 (year awarded)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 04c53720e8a43e27…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "news item, 28th September 2022",
+   "quote": "New book: Occupy! Occupy! Occupy! Comic Book A new comic book, funded by the Trust, has been released by Govanhill Baths. It is a people’s history of occupations, featuring industrial, community, student and environmental occupations in Scotland from the 1940s till now",
+   "claim": "a Trust-funded comic book: a people's history of occupations in Scotland from the 1940s",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2022-09-28",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 4f01dc38a186938d…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "news item, 16th August 2022",
+   "quote": "The fellowship is intended to facilitate research with a socialist orientation, consistent with the broad aims of the Trust. The research fellowship is an initiative which is carried out in conjunction with a partner organisation.",
+   "claim": "an annual political research fellowship for research with a socialist orientation, held with a partner organisation",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2022-08-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 4f01dc38a186938d…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "news item, 22nd November 2022",
+   "quote": "The Barry Amiel & Norman Melburn Trust, in partnership with the Independent Workers’ union of Great Britain (IWGB), is pleased to announce the appointment of Joe Durbidge as this year’s Research Fellow.",
+   "claim": "the 2022–23 Research Fellow, Joe Durbidge, appointed in partnership with the IWGB",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2022-11-22",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 4f01dc38a186938d…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "news item, 27th May 2022",
+   "quote": "Jodi Dean ‘Becoming Neofeudal: The Inner Logic Of Communicative Capitalism’ – Barry Amiel & Norman Melburn Trust Annual Lecture",
+   "claim": "the Trust's annual lecture of 2022, by Jodi Dean",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2022-05-27",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 4f01dc38a186938d…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "news item, 16th November 2022",
+   "quote": "With The World Transformed, we are proud to announce the launch of an extensive, 140 page report into political education projects from across Britain and Ireland.",
+   "claim": "a 140-page report on political education projects in Britain and Ireland, with The World Transformed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "2022-11-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 4f01dc38a186938d…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Project grants of up to £15,750 are available to UK charitable organisations and individuals for initiatives that advance public education, learning and knowledge in all aspects of the philosophy of Marxism, the history of socialism, and the working-class movement.",
+   "claim": "a council's funding directory: project grants up to £15,750 to UK charitable organisations and individuals for the Trust's objectives",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "The following funding is available",
+   "quote": "Regular Awards up to £7,350. … Major Awards for over £7,350 and up to £15,750 are only considered once a year – at the January meeting. … These are awards worth up to £500 for emergencies and are considered on a rolling basis.",
+   "claim": "three tiers: Regular Awards to £7,350; Major Awards above £7,350 to £15,750, once a year; Urgent Small Awards to £500",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "strategic priority",
+   "quote": "The Trust will aim to ringfence 50% of funds for applications for projects with a strong focus on popular political education and on engagement with non-academic and non-activist audiences",
+   "claim": "a strategic aim: half of funds ringfenced for popular political education reaching non-academic and non-activist audiences",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Previously funded projects have included",
+   "quote": "Previously funded projects have included: The organisation of lectures, discussions, seminars and workshops The carrying out of research, written work and publications, and The maintenance of libraries and archive material",
+   "claim": "funded before: lectures and seminars; research and publications; the maintenance of libraries and archive material",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "the Trust does not provide grants for core costs",
+   "claim": "no grants for core costs",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "applications",
+   "quote": "The Trust normally opens for applications in May and November.",
+   "claim": "applications normally open in May and November",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the Trust funds",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2cb4c1b03e33c098…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "introduction s1",
+   "quote": "When E.P. Thompson and John Saville were instructed by the leadership of the Communist Party of Great Britain to close down their journal The Reasoner , which had been critical of what the editors saw as the Party’s dogmatism, they refused.",
+   "claim": "E.P. Thompson and John Saville refused the CPGB leadership's instruction to close The Reasoner, their journal critical of what they saw as the Party's dogmatism",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Reasoner case: the 1956 dissidents' journal",
+   "date": "undated (the page as fetched 2026-10-31); the event 1956",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "introduction s2",
+   "quote": "Suspended form the party, from which they soon resigned in protest at the Soviet invasion of Hungary, they relaunched with the New Reasoner .",
+   "claim": "suspended from the party, they resigned in protest at the Soviet invasion of Hungary and relaunched with the New Reasoner",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Reasoner case: the 1956 dissidents' journal",
+   "date": "undated (the page as fetched 2026-10-31); the events 1956–57",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "introduction s3",
+   "quote": "The magazine urged a reconsideration of the longer traditions of radical politics and began to lay out the basis of the sort of humanist socialism for which Thompson remains so well known.",
+   "claim": "the New Reasoner urged a reconsideration of radical traditions and laid out the basis of Thompson's humanist socialism",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Reasoner case: the 1956 dissidents' journal",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "introduction s4",
+   "quote": "Running to ten issues, the New Reasoner would later merge with the Universities and Left Review and become New Left Review .",
+   "claim": "the New Reasoner ran ten issues and later merged with Universities and Left Review into New Left Review",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the New Reasoner's route into New Left Review",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "introduction s5; Read introduction",
+   "quote": "Read more about the New Reasoner in this introduction written by Peter Worsley with Dorothy Thompson and Stuart Hall. … by Peter Worsley, assisted by Dorothy Thompson and Stuart Hall",
+   "claim": "the title's introduction is by Peter Worsley, with Dorothy Thompson and Stuart Hall",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the New Reasoner's route into New Left Review",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "issue list",
+   "quote": "New Reasoner Summer 1957 issue 1 … New Reasoner Autumn 1959 issue 10",
+   "claim": "the ten issues held, Summer 1957 to Autumn 1959",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the New Reasoner's route into New Left Review",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 d4ee9c9b4d68171f…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "About ¶1",
+   "quote": "The archive is an indexed and searchable online database of socialist and radical writings.",
+   "claim": "the About page's definition: an indexed and searchable online database of socialist and radical writings",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online database of socialist and radical writings",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "About ¶2",
+   "quote": "The archive material is meant to be relatively ecumenical in political terms and it aims to be a means by which students and people with left-wing sympathies and interests could find reading which would help their work and their intellectual development.",
+   "claim": "its material is meant to be relatively ecumenical in political terms, for students and people with left-wing sympathies and interests",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "purpose: an educational resource",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "About ¶3",
+   "quote": "We would define the archive primarily as an educational resource, in the broad sense of the term.",
+   "claim": "defined primarily as an educational resource, in the broad sense",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: an educational resource",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "About ¶4",
+   "quote": "The project draws on the contribution and co-operation of authors and editors who are making available material from key journals and books (mostly hard copies already out of print).",
+   "claim": "it draws on authors and editors who make available material from key journals and books, mostly out of print",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: an educational resource",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "About ¶5",
+   "quote": "There are currently more than 2,500 articles available, and they can be fully searched, though most of the material is in PDF format, which has allowed for the preservation of the original look and typesetting.",
+   "claim": "more than 2,500 articles, fully searchable, most in PDF that preserves the original look and typesetting",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the holdings: thirteen periodicals and series from 1956",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Trust Archive Copyright Notice (revised) ¶1",
+   "quote": "use of the information on this website which is provided exclusively for educational purposes, non-commercial research and private study. It is available for use under Creative Commons License 4.0 (CC BY-NC-ND 4.0)",
+   "claim": "its terms of use: educational purposes, non-commercial research and private study, under CC BY-NC-ND 4.0",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "access, search and terms of reuse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Trust Archive Copyright Notice, takedown",
+   "quote": "If you believe that the online publication of part of our holdings infringes your rights, you may request that the content is taken down from our website. … If your request is denied, we will reinstate the content on our website. In both instances, we will record our decision and advise you of the outcome.",
+   "claim": "a takedown procedure: content is taken down while a request is investigated, reinstated if the request is denied, and each decision recorded",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, search and terms of reuse",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Trust Archive Copyright Notice ¶1",
+   "quote": "The Barry Amiel and Norman Melburn Trust is a non-profit charitable organisation.",
+   "claim": "the Trust is a non-profit charitable organisation",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the holder: the Trust, a registered charity",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 5f2b10bc7421155f…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: the archive's name, the Trust's name, the short form; article-space search",
+   "quote": "raw wikitext (action=raw, redirect=no), 2026-10-31T22:59:50Z: HTTP 404 … Wikipedia does not have an article with this exact name. … totalhits 19",
+   "claim": "Wikipedia has no article on the archive or the Trust and no redirect; nineteen articles mention them, chiefly as the online home of journals' issues",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 9530be3d675e7ac3…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Amiel Melburn Archive — Amiel Melburn Trust Archive - Amiel Melburne Trust Archive",
+  "B2": "Barry Amiel & Norman Melburn Trust — Barry Amiel & Norman Melburn Trust: Home",
+  "B3": "commonknowledge.coop — Barry Amiel and Norman Melburn Trust Archive",
+  "B4": "Barry Amiel & Norman Melburn Trust — Awards Archive - Barry Amiel & Norman Melburn Trust",
+  "B5": "Barry Amiel & Norman Melburn Trust — General Archives - Page 2 of 4",
+  "B6": "Bath and North East Somerset — The Barry Amiel and Norman Melburn Trust | Bath and North East Somerset ...",
+  "B7": "Amiel Melburn Trust Archive — New Reasoner",
+  "B8": "Amiel Melburn Trust Archive — About",
+  "B9": "Wikipedia — Amiel Melburn Trust Archive (no article)"
+ }
+}

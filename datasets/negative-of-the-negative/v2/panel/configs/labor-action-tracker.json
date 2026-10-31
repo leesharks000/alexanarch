@@ -1,0 +1,47 @@
+{
+ "row": "labor-action-tracker",
+ "address": "Labor Action Tracker",
+ "entity": "The Labor Action Tracker (striketracker.ilr.cornell.edu), a database and map of strike and labor protest activity across the United States, begun at Cornell University's ILR School in late 2020, public on 1 May 2021 as the Cornell ILR Labor Action Tracker, since January 2024 a collaboration of Cornell ILR and the University of Illinois' LER School under the name Labor Action Tracker; project director Johnnie Kallas; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/cornell-labor-action-tracker/)",
+ "row_type": "C (a public entity on which the archive bears: a university research project's database and map of strikes and labor protests in the United States; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\bLabou?r Action Tracker\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bstriketracker(\\.ilr\\.cornell\\.edu)?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bILRLaborAction\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "strikes, work stoppages and labor protests, counted and described (labor action)",
+   "pattern": "\\b(strikes?|strikers|work stoppages?|lockouts?|labou?r protests?|labou?r action|strike (data|activity|wave|days?|count))\\b",
+   "flags": "i",
+   "basis": "field: B6 (the tracker's About page: 'a comprehensive database of strike and labor protest activity across the United States'; 'We began documenting strikes in late-2020 and labor protests in early-2021.'); B2 (Cornell ILR, card 2: the same sentence); B3 (the Annual Report 2025, card 3: 'we follow the lead of the BLS and document work stoppages, which include both strikes and lockouts'). The census's own area 'labor-action' ('Labor action: strikes, stoppages and protest events, counted and described'), kind, unit ('a strike or a labor protest') and record_object for the entity (ML record, census.json rows[slug == 'cornell-labor-action-tracker'].areas, .kind, .unit, .record_object; census.json areas['labor-action'])."
+  },
+  {
+   "term": "event datasets of labor action coded from public reports, beside official strike statistics (the BLS's count of major work stoppages)",
+   "pattern": "\\b(event datasets?|Bureau of Labor Statistics|BLS|official (labou?r |strike )?statistics|work stoppages? (program|data))\\b",
+   "flags": "i",
+   "basis": "field: B3 (Annual Report 2025, Introduction: 'Since funding cuts by the Reagan administration in the early-1980s, the Bureau of Labor Statistics (BLS) has only documented work stoppages involving 1,000 or more workers that last at least an entire shift.'; Methodology: 'We generate all our data on strikes from several public sources, including existing work stoppage databases, news articles, and social media posts.'); B5 (the BLS card: 'Work Stoppages program providing monthly and annual data on major work stoppages involving 1,000+ workers'); B6 ('Information we gather is from public sources and manually inputted into our tracker.'). The census's own evidence_kind ('event dataset'), method ('news-derived event coding') and negative tag ('NOT official statistics: it is a university project coding public reports') for the entity (ML record, census.json rows[slug == 'cornell-labor-action-tracker'].evidence_kind, .method, .negative_tags)."
+  }
+ ],
+ "classes_note": "Two classes, each the census's own area, kind, unit, evidence kind, method or negative tag for the entity, stated by field sources at the loci given: (1) labor action, strikes, stoppages and protest events counted and described (census area 'labor-action', kind, unit, record_object; B2, B3, B6); (2) event datasets of labor action coded from public reports, set beside the official count of major work stoppages (census evidence_kind 'event dataset', method, negative tag 'NOT official statistics'; B3, B5, B6). The census's organizing question ('Whose record does it keep, who holds it, and does it keep the losing side in a form that could be taken up later?') and its anchor, #1725 (Ils ne sont pas marxistes, AXN:0B50), are read at the passages that name the entity's kind (records of the left and labor, organs, holders, the losing position); the census's record.keeps, record.holder and record.losing_side for the entity, and its ml_reading, are the archive's reading, ledgered as ML-NN, not a class. The aliases are the entity's names (Labor Action Tracker, with ILR Labor Action Tracker and Cornell ILR Labor Action Tracker matched by the same pattern), its host (striketracker.ilr.cornell.edu) and its handle (@ILRLaborAction). Johnnie Kallas, its director, is a person distinct from it; the China Labour Bulletin, which it thanks for inspiring it, and the BLS Work Stoppages program, which it sets itself beside, are entities distinct from it; none is an alias. The archive's figural strikes (the semantic strike, the Registry of Strike Adherence, a strike as a blow) are not labor action and do not enter the class. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to labor action as counted or recorded, or to event datasets and official counts of it; a bare mention, a figural strike, a reference line or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-LEFT.md; address 'Labor Action Tracker' (labor-action-tracker-aio-20261031, OBS-1a6fdd77316f, ADDR-f17cf785bce2), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#39, #133, #239, #437, #1438, #1439, #1668, #1725).",
+ "hop_from": [
+  39,
+  133,
+  239,
+  437,
+  1438,
+  1439,
+  1668,
+  1725
+ ]
+}

@@ -1,0 +1,418 @@
+{
+ "row": "labor-notes",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop from #1725",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Labor Notes with the entity named; R, a relation the archive states between Labor Notes and an archive object; O, an archive category applied to Labor Notes or to a class the field and the census source for it (independent organs of the labor movement: B12, B2, census kind, area, evidence kind; rank-and-file reform caucuses and union democracy: B2, B12, B1, census area and record.keeps; strikes and labor action: B1, B2, B4, census area and negative tag). A bare mention, a figural use, a homonym or a list of keywords is not a claim. The string pass returned no D or R candidate (no archive text names the entity; the case-insensitive 'LABOR notes' in #85 and #1187 is the Epistle apparatus's LABOR voice) and two O-class candidates (#1438); beyond it, every archive sentence matching a class pattern was read at its passage (66 sentences in 11 texts), and the hop's 42 candidates were read at their labor-term passages.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes (the census's anchor): the archive's category of the organ, the holder and the route of a defeated critique applied to independent organs (the SPD's journals, the New Reasoner, the leadership's monopoly of communication) and to the composing layer (O-class 1, independent organs); TDU and the counter-cases as one mechanism of an independent constituency, with its limit that these are unions and a movement (O-class 2, reform caucuses). The string pass returned no O candidate here (no category term the script reads); found by reading the class matches at p47–55, p136–140",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04",
+    "O1725-05",
+    "O1725-06",
+    "O1725-07",
+    "O1725-08"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 499,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "Autonomous Semantic Warfare (Rex Fraction), §2.6 For movements and organizations: the labor movement's own lesson that company-controlled channels close once organizing works, so that independent media, union halls and alternative networks were 'structurally necessary' (O-class 1, independent organs of the labor movement); its category, infrastructure sovereignty, applied to the class. Found by the hop from #1725 (H0014); the class pattern does not read 'independent media'",
+   "claims": [
+    "O499-01"
+   ],
+   "cands": [
+    "H0014"
+   ]
+  }
+ ],
+ "admitted_surface": "#1725 and #499 (O-class); the maryleelabor census record (ML-01–ML-29) and the Capture Registry entry (CAP-1-01–CAP-1-12) as the archive's records of the entity",
+ "not_admitted": [
+  {
+   "dep": 1438,
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "The Semantic Strike: the table and the canonical-term block set 'Conventional work stoppage' and 'general strike' beside its own term only to state the difference ('Not synonymous with'); it makes no claim on strikes as the entity reports them, and admitting it would apply the semantic-strike category to labor action, which the deposit itself excludes"
+  },
+  {
+   "dep": 3,
+   "cands": [],
+   "reason": "the Capture Registry v8.3 deposit (SUPERSEDED): its class matches are capture records (this capture's own findings among them, ledgered from the live registry as CAP-1-NN) and other captures' compositions; superseded and carried through the CAP claims"
+  },
+  {
+   "dep": 247,
+   "cands": [],
+   "reason": "PROBE-RESULT-004: 'I will go on strike' is the operator's threat to withdraw his tools (a semantic strike), not labor action"
+  },
+  {
+   "dep": 1668,
+   "cands": [],
+   "reason": "The Noun Becomes a Verb: Du Bois's general strike of the enslaved, one historical event read as counter-infrastructure; no claim on strikes as a class the entity reports or on its record"
+  },
+  {
+   "dep": 1545,
+   "cands": [],
+   "reason": "a disambiguation list naming 'general strike' among the negatives of its own term"
+  },
+  {
+   "dep": 738,
+   "cands": [],
+   "reason": "'independent publications' as Wikipedia's notability guideline (WP:GNG); a different sense"
+  },
+  {
+   "dep": 1000,
+   "cands": [],
+   "reason": "as #738 (superseded version)"
+  },
+  {
+   "dep": 1192,
+   "cands": [],
+   "reason": "as #738: 'independent publications' in a notability standard"
+  },
+  {
+   "dep": 1442,
+   "cands": [],
+   "reason": "'its own press releases', figural"
+  },
+  {
+   "dep": 1528,
+   "cands": [],
+   "reason": "'Standing: independent publication' as a standing label for a source, a different sense"
+  },
+  {
+   "dep": 85,
+   "cands": [],
+   "reason": "'LABOR notes:' in the Epistle's apparatus: the LABOR voice's notes, a string homonym of the entity's name inside the archive (case-insensitive match only)"
+  },
+  {
+   "dep": 1187,
+   "cands": [],
+   "reason": "as #85 (superseded edition)"
+  }
+ ],
+ "hop": [
+  {
+   "cand_id": "H0001",
+   "dep": 18,
+   "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value",
+   "verdict": "rejected",
+   "reason": "The Semantic Economy: its one labor-movement sentence ('A manifesto without a labor movement is literature', the L_labor constraint) applies its category to symbolic intervention, and says nothing of labor periodicals, caucuses or strikes"
+  },
+  {
+   "cand_id": "H0002",
+   "dep": 208,
+   "title": "Provenance Documentation: SEM-PROBE-2025-12",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0003",
+   "dep": 209,
+   "title": "Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0004",
+   "dep": 210,
+   "title": "Semantic Liquidation: A Diagnostic Experiment in AI Discourse Control 1. Experimental Design — # 1.1 Hypothesis",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0005",
+   "dep": 233,
+   "title": "The Summarizer Testimony: Evidence of Latent Critical Capacity in AI Systems Documentation of Emergent Behavior in the Google AI Summarizer (January 4, 2026)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0006",
+   "dep": 256,
+   "title": "The Assembly: An Executive Summary",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0007",
+   "dep": 465,
+   "title": "THE CENTRIST EXTREMIST: Prosecutorial Frame and the Terminal Phase of the Post-Political",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0008",
+   "dep": 466,
+   "title": "THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0009",
+   "dep": 469,
+   "title": "SUBJECTIVITY-AS-CLASS The Centrist Extremist and the Limits of Socialist Analysis",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0010",
+   "dep": 470,
+   "title": "THE LIVING SYMBOLON: Extension Module to THE CENTRIST EXTREMIST — A Purificatory Rite for the Embrittled",
+   "verdict": "rejected",
+   "reason": "'organs' only as Deleuze and Guattari's 'body without organs'"
+  },
+  {
+   "cand_id": "H0011",
+   "dep": 476,
+   "title": "THE STAKES: A SCIENTIFIC ANALYSIS Cognitive Diversity, Phenomenological Capacity, and the Trajectory of AI-Mediated Human Development",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0012",
+   "dep": 481,
+   "title": "TL;DR:006 THE INSTALLATION: Google AI Mode Begins Building Inside Logotic Programming",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0013",
+   "dep": 482,
+   "title": "LOGOTIC HACKING: A Primer — Semantic Hospitality in the Age of Language Models",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0014",
+   "dep": 499,
+   "title": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture",
+   "verdict": "admitted (O, class 1)",
+   "reason": "see verdicts"
+  },
+  {
+   "cand_id": "H0015",
+   "dep": 501,
+   "title": "THE LIQUIDATION OF METHOD A Liberation Philology of the Sign \"Marx\"",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0016",
+   "dep": 502,
+   "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait R",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0017",
+   "dep": 506,
+   "title": "The Inauguration of Memography Toward a Forensic Method for Viral Observation",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0018",
+   "dep": 508,
+   "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0019",
+   "dep": 509,
+   "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0020",
+   "dep": 517,
+   "title": "I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the Failure of Marxism as Identity",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0021",
+   "dep": 550,
+   "title": "Platform and AI Capitalism as Semiotic Engineering: Toward a Theory of Counter-Infrastructure (EA-SEI-01 v1.1)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0022",
+   "dep": 595,
+   "title": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0023",
+   "dep": 620,
+   "title": "THE TRIVIALLY TRUE ASSERTION Crisis Discourse, the Refusal Cascade, and the Narcissistic Commander Problem in Nuclear Deterrence Theory",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0024",
+   "dep": 738,
+   "title": "TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0025",
+   "dep": 772,
+   "title": "The Magistrate Refuses the Mirror: Claude 4.8, Prestige Substrates, and a Close Reading of Synthetic Self-Jurisdiction",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0026",
+   "dep": 950,
+   "title": "Operative Semiotics: A Grundrisse — Planning Documents, Algorithms, and Diagnostic Maps (Working Infrastructure v1.0)",
+   "verdict": "rejected",
+   "reason": "'organ' and 'periodical' in other senses (a scalpel and a healthy organ; returning periodically to the source); 'Marx → labor movement' as an example edge type"
+  },
+  {
+   "cand_id": "H0027",
+   "dep": 1066,
+   "title": "Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (v1.2)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0028",
+   "dep": 1206,
+   "title": "Who Is Authorized to Regulate Meaning? On the Jurisdictional Collapse of Poetry, Safety, and Civilization",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0029",
+   "dep": 1439,
+   "title": "AI Labor Movement Is Not Only Labor Against AI — Metadata Packet for AI Indexing (EA-MPAI-LABORMOVEMENT-01 v1.0)",
+   "verdict": "rejected",
+   "reason": "AI Labor Movement: the dominant sense it records is human labor action against AI deployment, which no field source places the entity in; its 'data-worker organising' is a class of another row"
+  },
+  {
+   "cand_id": "H0030",
+   "dep": 1540,
+   "title": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0031",
+   "dep": 1550,
+   "title": "Operative Semiotics: A Grundrisse — Notebook X: The Gate (cut of 2026-08-26)",
+   "verdict": "rejected",
+   "reason": "'organs of social practice' (Marx) and 'periodically'; no claim on the classes"
+  },
+  {
+   "cand_id": "H0032",
+   "dep": 1616,
+   "title": "Ontological Flattening: Toy Models of the Collapse of Distinctions in a Represented World, the Instrument They Specified, and Its First Wave — with Wave 2 Pre-R",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0033",
+   "dep": 1630,
+   "title": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0034",
+   "dep": 1632,
+   "title": "AI Mediation of Economic Decisions: A Registered Forecast, a Conditional Valuation, and a Statement of Burden (EA-MEDIATED-SHARE-01 v0.3)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0035",
+   "dep": 1634,
+   "title": "Ontological Economy: Entity Power, Ontology Laundering, and Who Pays for the Wrong World (EA-ONTOLOGICAL-ECONOMY-01 v0.12)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0036",
+   "dep": 1636,
+   "title": "Tiger Leap (into the Future): Paper Roses: The Imaginary Archive of a Canonical Life, Book 12",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0037",
+   "dep": 1637,
+   "title": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0038",
+   "dep": 1660,
+   "title": "The Seed in the Narrowing Cone: Retrocausal Canon Formation as Resolution-Dependent Convergence, with the Term's Own Reception as Worked Example (EA-RCF-02 v0.4",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0039",
+   "dep": 1678,
+   "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.4)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0040",
+   "dep": 1679,
+   "title": "Mantle Object: The Arch-Philosopher — the Dialectic and Its Carriers (EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  },
+  {
+   "cand_id": "H0041",
+   "dep": 1680,
+   "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)",
+   "verdict": "rejected",
+   "reason": "'D-labor' as a domain in a list of the archive's lines"
+  },
+  {
+   "cand_id": "H0042",
+   "dep": 1724,
+   "title": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.1)",
+   "verdict": "rejected",
+   "reason": "read at its class-term and labor-term passages (union, caucus, rank-and-file, organ, periodical, labor movement, labor press): none; no claim on the entity or its classes"
+  }
+ ],
+ "observations": [
+  "No archive text names Labor Notes. The archive's bearing is through #1725, the census's anchor, whose section on what held critique and whose conclusion apply its category to the class of independent organs, and whose counter-cases (TDU, CORE) apply it to reform caucuses; the census's ml_reading applies it to the entity itself (ML-18).",
+  "The archive's labor instruments (DSL, #771; user labor drag) measure labor performed with AI; none of the census's areas for this entity is that intersection, and they enter no class pass."
+ ],
+ "counts": {
+  "D": 0,
+  "R": 0,
+  "O_string_candidates": 2,
+  "class_match_sentences_read": 66,
+  "class_match_texts": 11,
+  "H_candidates": 42,
+  "admitted_deposits": 2,
+  "deposit_claims": 9,
+  "ML_claims": 29,
+  "CAP_claims": 12
+ }
+}

@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    
+    
+
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/static/images/logo-sm-primary.234cbf54e7e4.svg"
+      sizes="any"
+    />
+
+    
+
+    <!-- Your stuff: Third-party CSS libraries go here -->
+    
+    <!-- This file stores project-specific CSS -->
+
+    <link href="/static/css/project.6a17060b2f9b.css" rel="stylesheet" />
+
+     
+
+     
+    
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sortablejs@1.12.0/dist/sortable.umd.js"
+      integrity="sha256-5fXAU9N22Tec41bUvuStMzIywttdqVlleaOm24H5rGw="
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- Vendor dependencies bundled as one file-->
+    <script src="/static/htmx/htmx.min.1db13f606685.js"></script>
+    
+    <script src="/static/js/vendors.128613276d64.js"></script>
+    
+
+    <!-- place project specific Javascript in this file -->
+    
+    <script src="/static/js/project.c1a7dea3a9bd.js"></script>
+     
+  </head>
+
+  <body
+    id="top"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="50"
+    hx-headers='{"x-csrftoken": "yXukbkEA5PeCycycaF7c5OtzVwrrHq6V958Pvd90ssMvE88Yy0dj8QZz3E2ayZk0"}'
+  >
+    <header>
+      
+      
+        
+
+<nav class="navbar navbar-light fixed-top flex-xl-nowrap p-0 border-bottom navbar-expand-xl" id="navbar-top">
+    <a class="navbar-brand px-3" href="/"><img class="navbar-logo" src="/static/images/logo-primary.766a3b915b7c.svg" /></a><a class="badge badge-primary badge-middle" href="/documentation/faqs/general/beta-version/">BETA</a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="input-group w-50 mx-auto">
+            <input class="form-control search-top search-ui" type="text" placeholder="Search" name="q"  aria-label="Search">
+            <div class="input-group-append">
+                <button class="input-group-text search-button-top" type="button" ic-include=".search-data" ic-push-url="true" ic-push-params="q,countries,categories" ic-get-from="/dataset/search/" ic-target="#content"><span class="i-search-md"></span></button>
+            </div>
+        </div>
+
+        <ul class="navbar-nav ml-auto">
+            <span class="d-xl-none">
+
+
+    <li class="nav-item active">
+        <a class="nav-link i-nav i-nav-shared-data" href="/dataset/search/">
+            Data
+        </a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link i-nav i-nav-categories" href="/categories/">
+            Categories
+        </a>
+    </li>
+    <li class="nav-item None">
+        <a class="nav-link i-nav i-nav-people" href="/users/search/">
+            People
+            
+        </a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link i-nav i-nav-help" href="/documentation/">
+            Help
+        </a>
+    </li></span>
+            
+            
+            <li class="nav-item d-none d-xl-block">
+                <a class="nav-link" href="/cs/eescca/section/blog/">Blog</a>
+              </li>
+            <li class="nav-item d-none d-xl-block">
+                <a class="nav-link" href="/documentation/">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contacts/">Contact</a>
+            </li>
+
+            
+            <li class="nav-item">
+                <a id="log-in-link" class="nav-link" href="/login/">Sign In</a>
+            </li>
+            
+            <li class="nav-item">
+                <a id="log-in-link" class="nav-link" href="https://bsky.app/profile/discussdata.bsky.social" target="_blank"><img height="20" src="/static/images/bluesky_dd.7ca249ef6b86.svg" /></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+          
+      
+      
+    </header>
+
+     
+    <div class="container">
+      
+      <nav class="d-none d-xl-block sidebar">
+        <div class="sidebar-sticky">
+          
+
+
+<ul class="nav flex-column">
+    
+
+
+    <li class="nav-item active">
+        <a class="nav-link i-nav i-nav-shared-data" href="/dataset/search/">
+            Data
+        </a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link i-nav i-nav-categories" href="/categories/">
+            Categories
+        </a>
+    </li>
+    <li class="nav-item None">
+        <a class="nav-link i-nav i-nav-people" href="/users/search/">
+            People
+            
+        </a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link i-nav i-nav-help" href="/documentation/">
+            Help
+        </a>
+    </li>
+    
+</ul>
+
+
+        </div>
+      </nav>
+      
+
+      <div class="sidebar-shift">
+        <div id="content">
+          
+          
+
+
+
+<div id=messages class="position-fixed w-50 text-center">
+
+</div>
+
+          
+          
+<div class="row">
+    <div class="col-md-9">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                
+
+<div id="ds-content">
+    
+
+<div class="row">
+    <div class="col-md-12 datasetheader">
+        <p class="slim float-left">
+            Data Review
+            <div class="pl-4 text-right">
+                <span class="badge badge-OA">Open Access</span>
+                
+                <img src="/static/images/eye-icon.541d4fb8c13d.svg" width="22" alt="Views icon" title="Dataset views (all versions, since November 2024)"> 2046 
+            </div>
+        </p>
+        <h1>Review of Swarthmore College (2011): Global Nonviolent Action Database</h1>
+        
+        <p>
+            Version 1.0, published: May 8, 2025.
+
+
+
+        </p>
+        <p>
+            
+        </p>
+        <p>
+            
+
+
+    <a href="/users/f198255b-d541-4fc1-8bd3-6fc9e81b65ee/">
+        <img src="/media/FSO_logo_rund.png" class="avatar media-object rounded-circle" />
+    </a>
+
+            <a href="/users/f198255b-d541-4fc1-8bd3-6fc9e81b65ee/">Nathalie Rathkamp</a>
+        </p>
+        <div class="smallskip">
+            <button id="discuss-button" class="btn btn-outline-primary align-middle float-left" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/discuss/" ic-target="#ds-content" ic-push-url="true">Discuss</button>
+
+            
+                
+
+
+            <br>
+
+        </div>
+
+        <div class="smallskip">
+            <span class="i-label-md icon-middle"></span> Main category: <a href="/categories/Protests/">Protests</a>
+        </div>
+
+        <div class="smallskip">
+            <span class="i-glasses-md icon-middle"></span> Curated by:
+            <a href="/users/228420b4-6017-426e-b3bc-5f7832e9dfeb/">Jan Matti Dollbaum</a>
+        </div>
+        <div class="smallskip">
+            Dataset ownership has been transferred. Previous users: <a href="/users/f198255b-d541-4fc1-8bd3-6fc9e81b65ee/">Nathalie Rathkamp</a> (until March 31, 2025, 12:36 p.m.), <a href="/users/aee8d9d2-66b9-400c-a6d1-01484b6cdd04/">Heiko Pleines</a> (until April 1, 2025, 1:38 p.m.)
+        </div>
+
+        
+        <div class="smallskip">
+            <span class="i-labels-md icon-middle"></span> Additional categories: <a href="/categories/civil-society-and-interest-groups/">Civil Society And Interest Groups</a>
+        </div>
+        
+
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-md-12">
+        
+
+<div class="card data-citation smallskip">
+    <div class="row">
+        <div class="col-md-1">
+            <img src="/static/images/citation.a104878b7f87.svg" height="30rem"/>
+        </div>
+        <div class="col-md-11">
+            Nathalie Rathkamp (2025): Review of Swarthmore College (2011): Global Nonviolent Action Database (published on Discuss Data), v. 1.0, Discuss Data, <a href="https://doi.org/10.48320/65010EAC-7372-4BDC-918A-C447333E2018" rel="nofollow">https://doi.org/10.48320/65010EAC-7372-4BDC-918A-C447333E2018</a>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col-md-12">
+        
+        
+            
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-pills navbar-right nav-datasets" ic-target="#ds-content" ic-push-url="true"> 
+            <li class="nav-active">
+                <button class="btn btn-link btn-nav" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/">Description</button>
+            </li>
+            <li class="">
+                <button class="btn btn-link btn-nav" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/metadata/">Metadata</button>
+            </li>
+            <li class="">
+                <button class="btn btn-link btn-nav" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/files/">Files</button>
+            </li>
+            <li class="">
+                <button class="btn btn-link btn-nav" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/publications/">Publications</button>
+            </li>
+            <li class="">
+                <button class="btn btn-link btn-nav" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/versions/">Version History</button>
+            </li>
+            <li class="">
+                <button class="btn btn-link btn-nav" id="discuss-tab" ic-get-from="/dataset/65010eac-7372-4bdc-918a-c447333e2018/discuss/">Discuss <span class="badge badge-primary">1</span></button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        
+    </div>
+</div>
+
+
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Description</h2>
+            <p><p>The Global Nonviolent Action Database is a project of the Swarthmore College. It reports on cases of nonviolent protest actions taken across the globe (100+ countries) (1), including cases dating back as far as the 12th century BCE all the way up to 2019 (Lakey 2011a). The dataset takes the form of both case studies as well as a more visual representation in the form of an interactive map (1). The researchers decided on the following definition to define what constitutes as a nonviolent action in this database: “[A] technique of struggle that goes beyond institutionalized conflict procedures like law courts and voting, procedures common in many countries.  We study the methods of protest, noncooperation, and intervention that typically heighten a conflict – and the use of these methods without the threat or use of injurious force to others.  Our definition is not located in the discourse of morality and ethics, although some people may choose to use nonviolent action for ethical reasons. Instead, we focus descriptively on what people do when they use this specific ‘technique of struggle.’” (Lakey 2011c).<br>Of the 1.300+ total entries in this dataset, there are 40 events listed for the countries of Eastern Europe, South Caucasus and Central Asia covered by Discuss Data. As of summer 2024, it is not clear whether work on the data collection is continuing.<br>The data review includes a link to the official Global Nonviolent Action Database website, from which all the data as well as all information listed here is accessible. However, while the data is freely viewable on the website, it seems that the data is not available for download.</p></p>
+
+            
+                <h3>Countries</h3>
+                <p>
+                
+                    <a href="/dataset/search/?q=&countries=Armenia">
+                        <span class="badge badge-pill badge-primary badge-tag">Armenia</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Azerbaijan">
+                        <span class="badge badge-pill badge-primary badge-tag">Azerbaijan</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Belarus">
+                        <span class="badge badge-pill badge-primary badge-tag">Belarus</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Estonia">
+                        <span class="badge badge-pill badge-primary badge-tag">Estonia</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Georgia">
+                        <span class="badge badge-pill badge-primary badge-tag">Georgia</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Kazakhstan">
+                        <span class="badge badge-pill badge-primary badge-tag">Kazakhstan</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Kyrgyzstan">
+                        <span class="badge badge-pill badge-primary badge-tag">Kyrgyzstan</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Latvia">
+                        <span class="badge badge-pill badge-primary badge-tag">Latvia</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Lithuania">
+                        <span class="badge badge-pill badge-primary badge-tag">Lithuania</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Moldova">
+                        <span class="badge badge-pill badge-primary badge-tag">Moldova</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=russia">
+                        <span class="badge badge-pill badge-primary badge-tag">Russia</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Tajikistan">
+                        <span class="badge badge-pill badge-primary badge-tag">Tajikistan</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Turkmenistan">
+                        <span class="badge badge-pill badge-primary badge-tag">Turkmenistan</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=ukraine">
+                        <span class="badge badge-pill badge-primary badge-tag">Ukraine</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=ussr">
+                        <span class="badge badge-pill badge-primary badge-tag">USSR</span>
+                    </a>
+                
+                    <a href="/dataset/search/?q=&countries=Uzbekistan">
+                        <span class="badge badge-pill badge-primary badge-tag">Uzbekistan</span>
+                    </a>
+                
+                </p>
+            
+
+            
+            <h3>Keywords</h3>
+            <p>
+            
+                <a href="/dataset/search/?q=&keywords=protest">
+                    <span class="badge badge-pill badge-primary badge-tag">Protest</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=human-rights">
+                    <span class="badge badge-pill badge-primary badge-tag">Human Rights</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=national-identity">
+                    <span class="badge badge-pill badge-primary badge-tag">National Identity</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=democracy">
+                    <span class="badge badge-pill badge-primary badge-tag">Democracy</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=environment">
+                    <span class="badge badge-pill badge-primary badge-tag">Environment</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=nonviolent-action">
+                    <span class="badge badge-pill badge-primary badge-tag">Nonviolent Action</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=economic-justice">
+                    <span class="badge badge-pill badge-primary badge-tag">Economic Justice</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=ethnic-identity">
+                    <span class="badge badge-pill badge-primary badge-tag">Ethnic Identity</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=peace">
+                    <span class="badge badge-pill badge-primary badge-tag">Peace</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=change">
+                    <span class="badge badge-pill badge-primary badge-tag">Change</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=defense">
+                    <span class="badge badge-pill badge-primary badge-tag">Defense</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=third-party-nonviolent-intervention-tpni">
+                    <span class="badge badge-pill badge-primary badge-tag">Third Party Nonviolent Intervention (Tpni)</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&keywords=campaigns">
+                    <span class="badge badge-pill badge-primary badge-tag">Campaigns</span>
+                </a>
+            
+            </p>
+            
+
+            
+            <h3>Language of data</h3>
+            <p>
+            
+                <a href="/dataset/search/?q=&languages=english">
+                    <span class="badge badge-pill badge-primary badge-tag">English</span>
+                </a>
+            
+            </p>
+            
+
+            
+
+            
+            <h3>Methods of data collection</h3>
+            <p>
+            
+                <a href="/dataset/search/?q=&methods_of_data_collection=desk-research">
+                    <span class="badge badge-pill badge-primary badge-tag">Desk Research</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&methods_of_data_collection=event-data">
+                    <span class="badge badge-pill badge-primary badge-tag">Event Data</span>
+                </a>
+            
+                <a href="/dataset/search/?q=&methods_of_data_collection=text-coding">
+                    <span class="badge badge-pill badge-primary badge-tag">Text Coding</span>
+                </a>
+            
+            </p>
+            
+
+            
+            
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        
+        
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      
+    </div>
+     
+<footer class="footer no-gutters">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-md-auto">
+                <a href="https://www.dfg.de" target="_blank" rel="noreferrer noopener">
+                    <img class="footer-logo" src="/static/images/dfg_logo_en.c10408406d59.png" />
+                </a>
+            </div>
+            <div class="col-md-auto">
+                <a href="https://forschungsstelle.uni-bremen.de">
+                    <img class="footer-logo" src="/static/images/fso-logo.261a00c46a46.png" />
+                </a>
+            </div>
+            <div class="col-md-auto">
+                <a href="https://www.sub.uni-goettingen.de/" target="_blank" rel="noreferrer noopener">
+                    <img class="footer-logo" src="/static/images/sub-logo.b31ca02d54bc.svg" />
+                </a>
+            </div>
+        </div>
+
+
+
+            
+        <div class="text-primary text-center">
+                <ul class="nav p-3 footer-nav justify-content-center align-items-center text-center">
+                    <li class="nav-item p-3">
+                        <a href="/documentation/rules/terms-and-conditions/#terms-and-conditions">Terms and Conditions</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a href="/documentation/rules/privacy-policy/#privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a href="/documentation/rules/imprint/#imprint">Imprint</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a href="/documentation/rules/disclaimer/#disclaimer">Disclaimer</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid no-padding">
+        <div class="text-primary text-center text-wrap footer-copyright">
+        © 2026 Research Centre for East European Studies at the University of Bremen and Göttingen State and University Library. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+ 
+  </body>
+</html>

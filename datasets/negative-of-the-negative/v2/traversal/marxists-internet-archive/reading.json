@@ -1,0 +1,248 @@
+{
+ "row": "marxists-internet-archive",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen), with the LEFT brief's rule 8: #1725, the census's anchor, is read at the passages that name the entity or its kind (archives of the left, organs, holders, splits); other deposits enter only where they say something of the entity, by locus. Admission by reading: D, a claim on the MIA with the entity named; R, a relation the archive states between the MIA and an archive object; O, an archive category applied to the MIA or to a class the field and the census source for it (config classes_note). A bare mention, a reference line or a URL in a citation is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 843,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Missing Second Manuscript: quotes the MIA's editorial note on the lost Second Manuscript and counts the MIA among the later editors who note the gap",
+   "claims": [
+    "O843-01",
+    "O843-02"
+   ],
+   "cands": [
+    "p27",
+    "p46"
+   ]
+  },
+  {
+   "dep": 1531,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-02: the archive's seating of Marx's printed witnesses excludes marxists.org as an edited-text hazard, with reasons recorded (a relation of the archive's corpora to the entity)",
+   "claims": [
+    "O1531-01"
+   ],
+   "cands": [
+    "p15"
+   ]
+  },
+  {
+   "dep": 1647,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Phases of Communism Are Not Phase X: places 'marxists.org apparatus' among the editors of the 1844 manuscript tradition",
+   "claims": [
+    "O1647-01"
+   ],
+   "cands": [
+    "p46"
+   ]
+  },
+  {
+   "dep": 1668,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Noun Becomes a Verb: records defects met at the MIA's pages (no translator attribution on Capital; the MECW mirror dead; two dates on the IWMA Address page)",
+   "claims": [
+    "O1668-01"
+   ],
+   "cands": [
+    "p100"
+   ]
+  },
+  {
+   "dep": 1725,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes (the census's anchor): D, the alternate translation of the letter to Ruge taken from the MIA and a second translation it holds (p28); O-class (holders of the left's record), the holder condition at the conclusion, the reading instruction, the disablement, The Final Time and the archive's designs, read at those passages and found by reading (the string pass's O-class candidate at p140 and the conclusion)",
+   "claims": [
+    "O1725-01",
+    "O1725-02",
+    "O1725-03",
+    "O1725-04",
+    "O1725-05",
+    "O1725-06",
+    "O1725-07",
+    "O1725-08"
+   ],
+   "cands": [
+    "p28",
+    "p140"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/marxists-internet-archive-aimode-20261031/",
+   "reason": "the Capture Registry's title, findings, reading, analysis, PER note, query note and surface basis for the entity's capture (OBS-6a54e29b8192, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/marxists-internet-archive/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'marxists-internet-archive'], organizing_question)",
+   "reason": "the maryleelabor left-and-labor census record of the entity, composed in session on 2026-10-31 from sources saved that day; its ml_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 127,
+   "cands": [
+    "p94",
+    "p119",
+    "p237",
+    "p314"
+   ],
+   "reason": "MIA as a Membership Inference Attack: a homonym of the abbreviation, a distinct object"
+  },
+  {
+   "dep": 1669,
+   "cands": [
+    "p163"
+   ],
+   "reason": "a reference line (a marxists.org URL for Capital ch. 10)"
+  },
+  {
+   "dep": 1668,
+   "cands": [
+    "p106",
+    "p107",
+    "p164",
+    "p179",
+    "p182",
+    "p184"
+   ],
+   "reason": "reference lines (footnotes giving marxists.org URLs); the deposit's claim on the entity is admitted at p100 (O1668-01)"
+  },
+  {
+   "dep": 843,
+   "cands": [
+    "p98"
+   ],
+   "reason": "reference lines (marxists.org in the bibliography)"
+  },
+  {
+   "dep": 1647,
+   "cands": [
+    "p96"
+   ],
+   "reason": "a reference line (the primary sources list); the deposit's claim on the entity is admitted at p46 (O1647-01)"
+  },
+  {
+   "dep": 1725,
+   "cands": [
+    "p4",
+    "p9",
+    "p10",
+    "p27",
+    "p28 (s2: the 43_09 link)",
+    "p29",
+    "p30",
+    "p31",
+    "p32",
+    "p42",
+    "p43",
+    "p44",
+    "p45",
+    "p48",
+    "p54"
+   ],
+   "reason": "citations of the report's case record to marxists.org URLs (Engels to Schmidt, the Hague resolutions, the REP collective at EROL, Proudhon, the German Ideology, Kriege, Bracke, the 1872 Preface, Bernstein, the Gotha foreword, Erfurt, Hegel, Anti-Dühring, Lukács, Gramsci, Lenin 1906 and 1921, the 21 Conditions, Luxemburg 1904 and 1918, Mao, Cannon, Reform or Revolution, Saville): bare as claims on the entity; recorded as an observation (the report's case record of splits is read largely at the MIA) and not ledgered"
+  },
+  {
+   "dep": "O-class string pass (121 deposits, 181 sentences)",
+   "cands": [
+    "candidates-O.jsonl"
+   ],
+   "reason": "outside #1725, not admitted under the LEFT brief's rule 8 (other deposits enter only where they say something of the entity); the class-2 pattern ('holder', 'organ') matches chiefly the mantles' holders and figural uses; the class-1 pattern ('digital library', 'public library') matches lists and the archive's own library; no sentence applies an archive category to the MIA or to a library of the left's texts by name"
+  }
+ ],
+ "hop": {
+  "from": [
+   843,
+   1531,
+   1647,
+   1668,
+   1725
+  ],
+  "candidates": 90,
+  "admitted": 0,
+  "admitted_deps": [],
+  "reading": "each hop candidate read by title and checked against the D pass (every archive text was scanned for the aliases; none of the hop candidates outside the D set names the entity); under the LEFT brief's rule 8 a deposit that does not name the entity is not admitted; #1068 (The Obelus and the Tombstone: the two marks of custody) and #1540 (the obelus) bear on custody and enter through #1725's quotation of #1540 (O1725-08) only"
+ },
+ "observations": "Five deposits say something of the Marxists Internet Archive by name: #843, #1531, #1647, #1668 and #1725. Their bearing is twofold: the state of the MIA's text (transcription, edited text, apparatus, page defects) and, through #1725, the holder condition the census asks of every holder. #1725's case record of splits is sourced largely from the MIA (some thirty marxists.org citations, the REP collective's SDS record among them, at EROL under the History path), which the reading records as an observation: the report reads the losing side's documents at the MIA. The archive's own records of the entity are the capture (CAP-1-NN) and the maryleelabor record (ML-NN).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 47,
+   "D_deposits": 7,
+   "R_sentences": 33,
+   "R_deposits": 4,
+   "O_direct": 10,
+   "O_class": 181,
+   "O_deposits": 121,
+   "H_candidates": 90
+  },
+  "deposits_candidate": 123,
+  "deposits_admitted": 5,
+  "instances_grouped_S4": 0,
+  "hop_candidates": 90,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "ml": 26,
+   "deposit": 13
+  }
+ }
+}

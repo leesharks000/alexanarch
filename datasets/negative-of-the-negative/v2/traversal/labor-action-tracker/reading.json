@@ -1,0 +1,276 @@
+{
+ "row": "labor-action-tracker",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Labor Action Tracker with the entity named; R, a relation the archive states between it and an archive object; O, an archive category applied to it or to a class the field and the census source for it (labor action, strikes, stoppages and protests counted and described: B2, B3, B6, census areas, kind, unit, record_object; event datasets beside the official count: B3, B5, B6, census evidence_kind, method, negative tag). A bare mention, a figural strike (the semantic strike, the semiotic strike, a military strike, a strike-through, a bowling strike), a reference line or a list of keywords is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching the first class's pattern and not figural on its face (241 sentences in 105 texts) was read, and every sentence matching the second class's pattern (none) was sought. #1725, the census's anchor, was read at the passages that name the kind of thing the census asks after (the record, the losing position, its organ, holder and route), per the LEFT brief §8.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 437,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Political Economy, collected series (2026-02-03): 'Industrial workers could strike by withholding labor', the industrial strike set against semantic workers who cannot withhold meaning-making (O-class, labor action: the strike's form). The lineage's earliest instance. Found by reading the class matches; not a string-pass candidate",
+   "claims": [
+    "O437-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 39,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Alienation and the Formation of Class Consciousness, Part V §5.1: the strike as industrial workers' weapon, withdrawn labor halting production and giving leverage, against which semantic workers 'cannot strike by stopping' (O-class, labor action). Adds a mechanism to #437's lineage (§3.6). #133 (§2.2, 'Workers could strike, slow down, refuse') grouped as an instance (S4). Found by reading",
+   "claims": [
+    "O39-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1438,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Semantic Strike Is Not a Withholding of Labor (EA-MPAI-STRIKE-01): its table defines the conventional work stoppage (what stops, what is withheld, who acts, leverage, success, end) against the archive's semantic strike, and its indexing metadata holds the semantic strike 'Not synonymous with … work stoppage … labor action' (O-class, labor action: the archive's category held apart from the class, with the class described)",
+   "claims": [
+    "O1438-01",
+    "O1438-02",
+    "O1438-03"
+   ],
+   "cands": [
+    "O0202",
+    "O0209"
+   ]
+  },
+  {
+   "dep": 239,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Law as Meaning Economy, §V: the strike in law, 'A protected strike within a regulated channel (NLRA Section 7)', the NLRA designed to channel labor conflict into administrable forms (O-class, labor action: the archive's juridical liquidation applied to the strike). Found by reading",
+   "claims": [
+    "O239-01",
+    "O239-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1668,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Noun Becomes a Verb, 4.6: the general strike of Du Bois's Black Reconstruction read in the archive's terms, 'the verb withdrawn from the noun's owner' (O-class, labor action). Found by reading",
+   "claims": [
+    "O1668-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1439,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Labor Movement Is Not Only Labor Against AI (EA-MPAI-LABORMOVEMENT-01): the dominant sense, 'Organised human labor action responding to the deployment of AI systems', with the strike among its instruments, returned by the retrieval layer 'almost exclusively', a sense the packet 'does not dispute' (O-class, labor action)",
+   "claims": [
+    "O1439-01",
+    "O1439-02"
+   ],
+   "cands": [
+    "O0216",
+    "O0217",
+    "O0218"
+   ]
+  },
+  {
+   "dep": 1725,
+   "strata": [
+    "O"
+   ],
+   "reason": "Ils ne sont pas marxistes, the census's anchor: the decisive variable is what happens to the losing position; a record keeps a defeated critique where it keeps an organ, a holder and a route. These are the categories the census record applies to the entity (record.keeps, record.holder, record.losing_side, ml_reading); the deposit names no strike tracker and no labor-action record, and is admitted as the source of the categories the census applies, read at its conclusion and the summarizer's note (LEFT brief §8)",
+   "claims": [
+    "O1725-01",
+    "O1725-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/labor-action-tracker-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, PER basis and atoms, and query note for the entity's capture (OBS-1a6fdd77316f, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "ML",
+   "url": "https://www.maryleelabor.org/aggregators/cornell-labor-action-tracker/ (source: /home/claude/fleet/maryleelabor-org/data/left-census/census.json rows[slug == 'cornell-labor-action-tracker'], organizing_question, anchor, areas; rendered /home/claude/fleet/maryleelabor-org/aggregators/cornell-labor-action-tracker/index.html)",
+   "reason": "the maryleelabor census record of the entity (editor Lee Sharks, compiled 2026-10-31, schema 1.0): its fields with their basis; where a field restates a source ledgered in B (the About page B6) it is one lineage with that source; record and ml_reading are the archive's reading, ledgered as such",
+   "claims": [
+    "ML-01",
+    "ML-02",
+    "ML-03",
+    "ML-04",
+    "ML-05",
+    "ML-06",
+    "ML-07",
+    "ML-08",
+    "ML-09",
+    "ML-10",
+    "ML-11",
+    "ML-12",
+    "ML-13",
+    "ML-14",
+    "ML-15",
+    "ML-16",
+    "ML-17",
+    "ML-18",
+    "ML-19",
+    "ML-20",
+    "ML-21",
+    "ML-22",
+    "ML-23",
+    "ML-24",
+    "ML-25",
+    "ML-26"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 286,
+   "cands": [
+    "O0068",
+    "O0069"
+   ],
+   "reason": "The Assembly Mandate: 'Work-to-rule is a labor action', a classification borrowed to name the archive's own directive (semantic work-to-rule for synthetic workers); it says nothing of labor action as counted or recorded"
+  },
+  {
+   "dep": 1070,
+   "cands": [
+    "O0140"
+   ],
+   "reason": "the dead as 'labor that cannot strike': a figure of the training layer, no claim on the class"
+  },
+  {
+   "dep": 133,
+   "cands": [],
+   "reason": "grouped under #39 as an instance (S4)"
+  },
+  {
+   "dep": 1545,
+   "cands": [
+    "O0236",
+    "O0237",
+    "O0238",
+    "O0239",
+    "O0240",
+    "O0241",
+    "O0242",
+    "O0243"
+   ],
+   "reason": "the semantic strike held apart from the semantic proletariat; the archive's figural strike, no claim on labor action"
+  },
+  {
+   "dep": "246, 244, 245, 241, 240, 1427, 1428, 1440, 1268, 229, 11, 31, 38, 92, 94, 116, 119, 239 (strike-notice references), 242, 247, 253, 256, 257, 258, 272, 320, 323, 327, 349, 350, 351, 363, 385, 449, 516, 720, 748, 992, 1106, 1168, 1170, 1171, 1175, 1223, 1251, 1518, 1526, 1644, 1677, 1684, 1725 (the semantic strike line)",
+   "cands": "O0001–O0067, O0070–O0083, O0089, O0094, O0105, O0109–O0119, O0137–O0139, O0141–O0164, O0170, O0173–O0225, O0233–O0235, O0245–O0257 (those of these deposits)",
+   "reason": "the archive's semantic strike, its notice, addenda, registry of adherence and references to them: a figural strike, the archive's own instrument, held by #1438 as 'Not synonymous with … labor action'; registries, indices and reference lists"
+  },
+  {
+   "dep": "38, 50, 55, 459, 462, 464, 489, 540, 609, 612, 950, 1106, 1317, 1321, 1331, 1409, 1457, 1486",
+   "cands": "the semiotic strike, the Thunder Function's strike, the Oblique Strike, the operators' strike, strike-through, the rent strike as program name",
+   "reason": "figural strikes, operator names and program names"
+  },
+  {
+   "dep": "528, 531, 560, 561, 579, 610, 612, 620, 1166",
+   "cands": "military strikes, strike footage, bowling 'STRIKE'",
+   "reason": "another sense of the word: military strikes"
+  },
+  {
+   "dep": "51, 1221",
+   "cands": [],
+   "reason": "a list of historical acts (Lysistrata's sex strike, hunger strikes) in a feminist negation graph; no claim on labor action counted or described"
+  },
+  {
+   "dep": "58, 646, 648, 649",
+   "cands": [],
+   "reason": "a list of frames of the Kimberly-Clark warehouse event, r/antiwork's 'A strike is the peaceful option' among them: the archive records others' framings, no claim of its own on the class"
+  },
+  {
+   "dep": "150",
+   "cands": [],
+   "reason": "fiction (the Gray rebellion: 'Not votes. Not strikes.'), no claim on the class"
+  },
+  {
+   "dep": "303",
+   "cands": [],
+   "reason": "a lexical note on 'Longshoremen', no claim on the class"
+  },
+  {
+   "dep": "825, 833, 1396, 1401",
+   "cands": [
+    "O0120",
+    "O0121",
+    "O0171",
+    "O0172"
+   ],
+   "reason": "a quoted AI Overview on maryleelabor.org ('not associated with … strike'), a capture's quotation"
+  },
+  {
+   "dep": "497, 1150, 1579, 1660, 1474, 1475, 850, 1034, 1246, 925, 930, 933, 674, 691, 136, 1261, 373, 100, 998, 230, 626, 1176, 1005, 1555, 1612, 1480, 487, 1149",
+   "cands": "",
+   "reason": "'strike' as a verb of deletion, impact or sound, and other senses"
+  }
+ ],
+ "hop": {
+  "from": [
+   39,
+   133,
+   239,
+   437,
+   1438,
+   1439,
+   1668,
+   1725
+  ],
+  "candidates": 147,
+  "admitted": 0,
+  "reading": "each hop candidate checked against the class sentences read above: 30 of the 140 hop deposits carry a sentence matching the labor-action pattern, and every such sentence is among the class sentences already read and not admitted (the semantic strike line #11, #92, #94, #240, #242, #244, #246, #247, #320–#385, #720, #992, #1223, #1440, #1445, #1545, #1644, #1684; the operator and figural strikes #38, #576, #950, #1660; the military strikes #561, #620; the frames of #58; the capture quotation #825; the reference lists #516); no hop deposit carries a sentence of the second class; none admitted"
+ },
+ "observations": "No archive text names the Labor Action Tracker, striketracker.ilr.cornell.edu or @ILRLaborAction (D 0, R 0); no archive text names Johnnie Kallas or the China Labour Bulletin. The archive's bearing is ontological and by class: the strike as the withholding of labor that halts production (#437, #39), the conventional work stoppage held apart from the archive's semantic strike (#1438), the strike channelled by law (#239), the general strike (#1668), labor action over AI (#1439); and the census's question, whose categories come from #1725. The second class, event datasets and official strike statistics, has no archive sentence (no archive text names the Bureau of Labor Statistics, the BLS or official statistics). The archive's own strike line (the Notice of Intent to Strike, #246, and its successors) is a figural strike by the archive's own account (#1438) and enters no stratum.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 257,
+   "O_deposits": 90,
+   "H_candidates": 147
+  },
+  "class_sentences_read": 241,
+  "deposits_candidate": 90,
+  "deposits_admitted": 8,
+  "deposits_admitted_with_claims": 7,
+  "instances_grouped_S4": 1,
+  "hop_candidates": 147,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 11,
+   "ml": 26,
+   "deposit": 12
+  }
+ }
+}

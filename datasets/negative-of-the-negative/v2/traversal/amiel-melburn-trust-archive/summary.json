@@ -1,0 +1,84 @@
+{
+ "row": "amiel-melburn-trust-archive",
+ "address": "Amiel Melburn Trust Archive",
+ "entity": "the Amiel Melburn Trust Archive (banmarchive.org.uk), 'an online database of socialist and radical writings' held by the Barry Amiel and Norman Melburn Trust (Registered Charity No. 281239, London; site by Common Knowledge): thirteen British socialist and radical periodicals and series from 1956, among them The Reasoner, New Reasoner, Universities & Left Review, Marxism Today, Black Dwarf and Red Rag; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/banmarchive/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "amiel-melburn-trust-archive",
+  "address": "Amiel Melburn Trust Archive",
+  "entity": "the Amiel Melburn Trust Archive (banmarchive.org.uk), 'an online database of socialist and radical writings' held by the Barry Amiel and Norman Melburn Trust (Registered Charity No. 281239, London; site by Common Knowledge): thirteen British socialist and radical periodicals and series from 1956, among them The Reasoner, New Reasoner, Universities & Left Review, Marxism Today, Black Dwarf and Red Rag; formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/banmarchive/)",
+  "row_type": "C (a public entity on which the archive bears: an online archive of British socialist and radical periodicals held by a charitable trust; an entity of the maryleelabor left-and-labor census)",
+  "aliases": [
+   {
+    "pattern": "\\bAmiel(?:\\s*(?:&|and)\\s*|[- ])(?:Norman\\s+)?Melburne?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bbanmarchive(?:\\.org\\.uk)?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bamielandmelburn(?:\\.org\\.uk)?\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "the periodicals and series the archive holds (The Reasoner, New Reasoner, Universities & Left Review, Marxism Today, Black Dwarf, Red Rag, 7 Days, Soundings, New Formations, Race & Class, Socialist History Society)",
+    "pattern": "\\b(The Reasoner|New Reasoner|Universities (?:&|and) Left Review|Marxism Today|Black Dwarf|Red Rag|New Formations|Race (?:&|and) Class|Socialist History Society)\\b",
+    "flags": "",
+    "basis": "field: B1 (banmarchive.org.uk, 'Publications in the archive': the thirteen titles with their issue counts and years); B3 (Common Knowledge: 'Titles like Red Rag ... Race & Class ... Black Dwarf ... The whole archive of the influential Marxism Today'); B7 (the New Reasoner page). The census's own record_object and holdings for the entity (census.json rows[slug == 'banmarchive'].record_object, .holdings). 'Soundings', '7 Days', 'VIEWS' and 'New University' are held too and left out of the pattern, each being a common word or phrase that matches far more than the title."
+   },
+   {
+    "term": "the 1956 Communist dissidents' journal and the New Left that grew from it (The Reasoner's editors E. P. Thompson and John Saville; the merger into New Left Review)",
+    "pattern": "\\b(E\\. ?P\\. Thompson|Edward Thompson|John Saville|New Left Review|first New Left|the New Left)\\b",
+    "flags": "",
+    "basis": "field: B7 (the New Reasoner page: 'When E.P. Thompson and John Saville were instructed by the leadership of the Communist Party of Great Britain to close down their journal The Reasoner ... they refused.'; 'the New Reasoner would later merge with the Universities and Left Review and become New Left Review'); B3 ('writings by Stuart Hall and E.P. and Dorothy Thompson'). The census's own record.keeps ('the journals of the 1956 Communist dissidents (The Reasoner and New Reasoner) and the New Left (Universities & Left Review)') and record.losing_side for the entity."
+   },
+   {
+    "term": "archives of socialist and radical writing (the record of the left held for later readers)",
+    "pattern": "\\b(archives? of (?:the )?(?:left|labou?r|socialis\\w+|radical\\w*)|(?:left|labou?r|socialist|radical|movement)(?:-wing)? archives?|socialist and radical writings?|radical writings?)\\b",
+    "flags": "i",
+    "basis": "field: B1 ('Amiel Melburn Archive: an online database of socialist and radical writings.'); B3 ('An online archive of radical writings from the last 70 years of social change.'); B8 (About: 'an indexed and searchable online database of socialist and radical writings'); B2 ('Searchable database of socialist and radical writings'). The census's own areas ('archives-and-custody', 'movement-documents') and kind ('an online database of socialist and radical writings') for the entity."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own kind, area, record_object, holdings or record for the entity, stated by field sources at the loci given: (1) the periodicals the archive holds (B1, B3, B7; census record_object, holdings); (2) the 1956 dissidents' journal and the New Left that grew from it (B7, B3; census record.keeps, record.losing_side); (3) archives of socialist and radical writing (B1, B2, B3, B8; census kind, areas 'archives-and-custody', 'movement-documents'). The aliases are the archive's names (Amiel Melburn Trust Archive, Amiel Melburn Archive, the misspelling 'Amiel Melburne' its own page titles carry, banmarchive) and the Trust's name and host, matched by one pattern on 'Amiel ... Melburn': the Trust is the archive's holder and operator, an entity distinct from the archive and kept so in the disambiguation; its name is in the pass because any sentence naming it may name its archive, and admission is by reading. Barry Amiel and Norman Melburn are persons distinct from the entity and are not aliases apart from the Trust's name. The census's ml_reading applies #1725's categories (the organ a defeated critique keeps; the holder with standing independent of the party criticized; the route) to the entity, and is ledgered as ML-NN, the archive's reading; #1725 (AXN:0B50, the census anchor) is read at the passages that name the entity or its kind (independent organs, the Reasoner case, the conclusion's organ, holder and route), per the brief. Admission by reading (§3.4): D where a deposit names the entity (or cites its pages) and says something of it; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a reference-list line, a bibliography entry, a link list or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-LEFT.md; address 'Amiel Melburn Trust Archive' (amiel-melburn-trust-archive-aio-20261031, OBS-6158a9a70bb8, ADDR-bc11b1fd27e6, AXN:0B5A), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+  "hop_from": [
+   1725
+  ]
+ },
+ "texts_scanned": 1719,
+ "counts": {
+  "D_sentences": 1,
+  "D_deposits": 1,
+  "R_sentences": 1,
+  "R_deposits": 1,
+  "O_direct": 0,
+  "O_class": 0,
+  "O_deposits": 0,
+  "H_candidates": 42
+ },
+ "per_deposit": {
+  "D": {
+   "1725": 1
+  },
+  "R": {
+   "1725": 1
+  },
+  "O": {}
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "ebd36f004ac0a406f449c91ac00fb600fa2797eb8f481f19fc7f80a1fd65d359",
+  "candidates-R.jsonl": "c9be526115ab6b208b93872d73785bbeaa3d650d3042ea74da51ec29d640f183",
+  "candidates-O.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-H.jsonl": "6af4793cc39ff381accb49cf1a327fbbd1b82cecebf2cc8b9acdffc52b7c09c2"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11068
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

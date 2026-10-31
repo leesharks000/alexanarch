@@ -1,0 +1,36 @@
+{
+ "row": "libcom-collections",
+ "address": "libcom.org Collections",
+ "entity": "libcom.org Collections (https://libcom.org/collections), the collections index of libcom.org, an online platform and archive of libertarian communist, anarchist and labor-movement texts, organised under the tabs Tags, Archives, Authors, Reading guides, Blogs and Galleries; launched in 2003 as enrager.net and renamed libcom.org in 2005 (Wikipedia); formalized in the maryleelabor left-and-labor census record of 2026-10-31 (https://www.maryleelabor.org/aggregators/libcom-library/)",
+ "row_type": "C (a public entity on which the archive bears: a website's collections index and online archive of left and labor texts; an entity of the maryleelabor left-and-labor census)",
+ "aliases": [
+  {
+   "pattern": "\\blibcom(\\.org)?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\benrager\\.net\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "online archives and libraries of left, anarchist and labor-movement texts",
+   "pattern": "\\b(online (archives?|librar(y|ies)|repositor(y|ies))|digital (archives?|librar(y|ies))|(archives?|librar(y|ies)) of the left|left(-wing)? (archives?|librar(y|ies))|movement (archives?|documents?)|(anarchist|communist|socialist|marxist|labou?r|radical|left) (archives?|librar(y|ies)|press|periodicals?|pamphlets?|publications?|newspapers?|journals?)|internal bulletins?)\\b",
+   "flags": "i",
+   "basis": "field: B2 (the Archives card's snippet: 'Libcom.org Archives: Anarchist, communist, libertarian socialist, and ultra-left publications, journals, magazines, newspapers, bulletins, and pamphlets'); B10 (Wikipedia, lead: 'an online platform featuring a variety of libertarian communist essays, blog posts, and archives' and 'online repositories like Libcom.org'; categories 'Online archives', 'Discipline-oriented digital libraries'); B9 (libcom.org: an introduction, The site: 'a constantly growing archive of over 20,000 articles'). The census's own areas ('movement-documents', 'texts-of-the-tradition') and evidence_kind ('primary text', 'movement document') for the entity (ML record, census.json rows[slug == 'libcom-library'].areas, .evidence_kind)."
+  },
+  {
+   "term": "the record of the losing side: splits, expulsions, minority positions and dissent kept for later readers",
+   "pattern": "\\b(losing (side|position)|defeated (critique|position|minority)|minority positions?|seated minorit(y|ies)|splits?|expuls(ion|ions|ed)|dissent|the record of splits|organs?|holders?)\\b",
+   "flags": "i",
+   "basis": "the census's own record field for the entity, record.losing_side ('the tag list names writers of tendencies apart from the party traditions (Amadeo Bordiga, Anton Pannekoek, Gilles Dauvé) and the related content carries a pamphlet by Solidarity (London)'), under its organizing question ('does it keep the losing side in a form that could be taken up later?') (ML record, census.json rows[slug == 'libcom-library'].record.losing_side; organizing_question); field: B1 (tags 'Amadeo Bordiga', 'Anton Pannekoek', 'Gilles Dauvé'), B9 (introduction: 'learn from successes and failures of the past'; sympathies with 'council communism', 'ultra-left Marxism'). A string pass on these words returns very many sentences; admission is by reading only where a sentence states a claim on archives, organs or holders that keep a defeated position."
+  }
+ ],
+ "classes_note": "Two classes, each the census's own area, evidence kind or record field for the entity, stated by field sources at the loci given: (1) online archives and libraries of left, anarchist and labor-movement texts (census areas 'movement-documents', 'texts-of-the-tradition'; evidence_kind 'primary text', 'movement document'; B2, B9, B10); (2) the record of the losing side (census record.losing_side and organizing_question; B1, B9). The census's third area, 'labor-action', is carried by the tag list (strikes as tags on texts: census negative_tags 'NOT a dataset of strikes') and enters no class pass of its own. The aliases are the site's name (libcom, libcom.org) and its former name enrager.net (B10, Wikipedia). The archive's anchor for the census, #1725 (Ils ne sont pas marxistes, AXN:0B50), is read at the passages that name the entity or its kind (archives of the left, organs, holders, splits): its terms organ, holder and route for what a defeated critique keeps are the archive's categories, applied by #1725 to journals, papers, archives and libraries; #1725 also cites three libcom.org pages as its record of the Lotta Continua ending and of the UK SWP's splits. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where a deposit states a relation between the entity and an archive work (its use as a source of record); O-class where a sentence applies an archive category to one of the two classes; a bare mention, a URL in a reference line or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-LEFT.md; address 'libcom.org Collections' (libcom-org-collections-aio-20261031, OBS-08cadcbba40a, ADDR-3840ecf044e9), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the maryleelabor census record) are ledgered beside the deposits as CAP-1-NN and ML-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1725).",
+ "hop_from": [
+  1725
+ ]
+}

@@ -1,0 +1,1255 @@
+{
+ "row": "marxists-internet-archive",
+ "address": "Marxists Internet Archive",
+ "addresses": [
+  "Marxists Internet Archive"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext for its templates, or the card's title for the unreachable cards (the registry's cards carry no snippets); 57/57 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's cite_list (B1 marxists.org, the home page; B2 Wikipedia; B3 the Library of Congress item, unreachable; B4 Erythros Press and Media's page for the MIA's publications; B5 the Falvey Library Blog, unreachable; B6 a paper on ResearchGate, unreachable; B7 an r/communism page, URL not determined, unreachable); 'own_page', the census's own page T did not surface (B8 the MIA introduction, last updated 21 April 2026; the census's other own page, the home page, is card B1, byte-identical, carried once as a card); 'wikipedia', the article, which is card B2, carried once. The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row. The answer's source panel names eleven further titles outside the cite_list; they are recorded on T and are outside the field under the brief.",
+ "lineage_note": "Lineages: what it is: a library of the left's texts (B1, B2, B8); collections and structure (B2); origin: Zodiac, Marx.org and the 1998 split (B2); what it keeps: writers of every verdict (B2, B8); the holder condition: organ, holder, route (archive only); governance: the volunteers' committees (B2, B8); terms of holding: Charter, licence, copyright (B2, B8); scale: documents, authors, languages (B1, B2, B8); reach and use (B8); limits: volunteers and intellectual property (B8); edition and apparatus: transcription, notes, witnesses (archive only); the press: Marxists Internet Archive Publications (B2, B4); continuity: mirrors, attacks, dispersal (B2); access and distribution (B1, B8); the 2014 Collected Works removal (B2, B6, B7); reception: catalogues and web archives (B2, B3, B5); reception: the encyclopedia (B2); versions and dates of the record (B8); the composition at the name (archive only); the composing layer's endings: omission, balance, verdict (archive only). The census's self_description, visitors, volunteers, record_object, count, charter, losing_side_2007, aim, no_filter, limit_volunteer, no_endorsement, governance, steering, admin, license, missing_writer, student_section, access and updated quotes restate B8 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 also with its two meta descriptions appended; B2.wiki the raw wikitext; B8 the census's saved copy; B3-403.html, B6-403.html, B7-search-403.html the refusals; T1-marxists-internet-archive-aimode-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "AI Mode card 1 (and the census own page marxists-internet-archive--home, byte-identical)",
+   "card": "Marxists Internet Archive — Marxists Internet Archive",
+   "url": "https://www.marxists.org/",
+   "kind": "AI Mode card (the entity's home page: navigation and its meta descriptions); the census's own page marxists-internet-archive--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B1.html",
+     "sha256": "4db7c617ca4ab225005fdb564b0563314dc67f23ccd5e0823ed9eee578291285"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B1.txt",
+     "sha256": "97e3c6ba2cbf79f0a397d3264845078fb824ce1f784d1e980424b994946e44ce"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:01:51Z",
+    "http": 200,
+    "url": "https://www.marxists.org/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B1.html",
+    "raw_sha256": "4db7c617ca4ab225005fdb564b0563314dc67f23ccd5e0823ed9eee578291285",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "id": "marxists-internet-archive--home",
+     "sha256": "4db7c617ca4ab225005fdb564b0563314dc67f23ccd5e0823ed9eee578291285",
+     "fetched": "2026-10-31T21:27:46Z",
+     "http": "200",
+     "text_chars": 126
+    }
+   },
+   "names_operator": "yes (meta author 'Marxists Internet Archive'; the navigation's 'About MIA')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL from the card's site and title (the entity's home page). The fetch is byte-identical to the census's saved copy (sha256 4db7c617…); carried once, as a card. The page's body text is navigation only; B1.txt keeps the navigation words and appends the page's two meta descriptions, which are words of the saved page (the census's .txt has the navigation only). The web results above the AI Mode answer (in the raw paste, outside the composition) show this page with a snippet giving '62 languages' and 'over 720 authors'; the saved page's meta description gives '80 languages' and 'over 720 authors', its dc.description 'over 80 languages' and 'over 1000 authors'.",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Marxists Internet Archive",
+   "card_snippet": null,
+   "card_site": "Marxists Internet Archive"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "AI Mode card 2; the entity's Wikipedia article (origin 'wikipedia' too)",
+   "card": "Wikipedia — Marxists Internet Archive - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Marxists_Internet_Archive",
+   "kind": "AI Mode card and the Wikipedia article (revision 1383040731, last edited 31 October 2026 at 17:47 UTC)",
+   "files": {
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.wiki",
+     "sha256": "24f8ca2ebba139d1d50daa9fd7b2a189164658e2c9a5892a2f7c651c8eb3700a"
+    },
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.html",
+     "sha256": "97c9060881d93c052ba51b081da1dcf3575417897050682239906cc5fe5d78d3"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.txt",
+     "sha256": "07bbc6e55c053c602acfdb8ad643973e30b5656b091f431c54a6b6e88aa4e770"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T23:01:53Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Marxists_Internet_Archive&action=raw",
+      "http": 200,
+      "sha256": "24f8ca2ebba139d1d50daa9fd7b2a189164658e2c9a5892a2f7c651c8eb3700a",
+      "result": "wikitext"
+     },
+     {
+      "at": "2026-10-31T23:01:53Z",
+      "url": "https://en.wikipedia.org/wiki/Marxists_Internet_Archive",
+      "http": 200,
+      "sha256": "97c9060881d93c052ba51b081da1dcf3575417897050682239906cc5fe5d78d3",
+      "result": "the rendered article, no redirect"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.html",
+    "raw_sha256": "97c9060881d93c052ba51b081da1dcf3575417897050682239906cc5fe5d78d3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.txt",
+     "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B2.wiki"
+    ]
+   },
+   "names_operator": "yes (the steering committee of active volunteers; Andy Blunden as 'a representative of MIA'; Zodiac)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, EA-WG-CAPTURES-01 in the wikitext or the rendered text)",
+   "note": "The article exists under the entity's exact name, no redirect. It carries {{More citations needed}} and {{Self-published}} (both October 2025). Its lead count ('over 180,000 documents from over 850 authors in 80 languages') cites the MIA introduction with access-date 2014-05-11. The page was last edited on the day of the capture (31 October 2026, 17:47 UTC), before the capture's receipt (18:44 EDT, 22:44 UTC); which revision the composition met is not known.",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Marxists Internet Archive - Wikipedia",
+   "card_snippet": null,
+   "card_site": "Wikipedia"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "AI Mode card 3",
+   "card": "Library of Congress — Marxists Internet Archive | Library of Congress",
+   "url": "https://www.loc.gov/item/lcwaN0033129/",
+   "kind": "AI Mode card (the Library of Congress web-archive item; unreachable)",
+   "files": {
+    "B3-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B3-403.html",
+     "sha256": "87fee59dd2b416726a14444e6c6ae025785439bda2e18d88c101debaa1106625"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:01:54Z",
+      "url": "https://www.loc.gov/item/lcwaN0033129/",
+      "http": 403,
+      "sha256": "87fee59dd2b416726a14444e6c6ae025785439bda2e18d88c101debaa1106625",
+      "result": "a bot check ('Just a moment...', Cloudflare); not retried with another agent string or by another route"
+     },
+     {
+      "at": "2026-10-31T22:58Z",
+      "url": "https://www.loc.gov/search/?q=%22marxists+internet+archive%22&fo=json",
+      "http": null,
+      "result": "timed out after 30 s with no bytes (the catalogue search, tried to find the item's URL)"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Marxists Internet Archive\" Library of Congress web archive'",
+     "WebSearch 'site:loc.gov \"Marxists Internet Archive\"'",
+     "WebSearch '\"Marxists Internet Archive\" loc.gov item web archive collection' (found https://www.loc.gov/item/lcwaN0033129/, titled 'Marxists Internet Archive')"
+    ],
+    "note": "The page refused the honest agent with a bot check. Recorded as unreachable; the card's title stands as its only text (the card has no snippet)."
+   },
+   "names_operator": "yes (the title names the entity)",
+   "names_archive": "no (the card title only)",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Marxists Internet Archive | Library of Congress",
+   "card_snippet": null,
+   "card_site": "Library of Congress"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "AI Mode card 4",
+   "card": "Erythros Press and Media — Marxists Internet Archive Publications - Erythros Press and Media",
+   "url": "https://www.erythrospress.com/bookstore/about/marxists-internet-archive-publications/",
+   "kind": "AI Mode card (the distributor's page for Marxists Internet Archive Publications)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B4.html",
+     "sha256": "4b937f7f051b77754fc24f073a7b41402b74483c3447208ddccdaf3917048b1b"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B4.txt",
+     "sha256": "c6d2e2517e6e151b0028c17294e7490a0a8eacd5c7fc9725f69780da4e4d1fa2"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T23:01:55Z",
+    "http": 200,
+    "url": "https://www.erythrospress.com/bookstore/about/marxists-internet-archive-publications/",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B4.html",
+    "raw_sha256": "4b937f7f051b77754fc24f073a7b41402b74483c3447208ddccdaf3917048b1b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes ('the MIA collective'; 'Marxists Internet Archive Publications')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "URL from the link 'Marxists Internet Archive Publications' on the distributor's bookstore page (https://www.erythrospress.com/bookstore/, fetched 22:58 UTC with the same agent, not saved as a source), matching the card's title.",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "Marxists Internet Archive Publications - Erythros Press and Media",
+   "card_snippet": null,
+   "card_site": "Erythros Press and Media"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "AI Mode card 5",
+   "card": "Falvey Library Blog — Falvey Library Blog",
+   "url": "https://blog.library.villanova.edu/2022/01/18/a-free-library-of-marxist-thought-the-marxists-internet-archive/",
+   "kind": "AI Mode card (a post on Villanova University's Falvey Library Blog; unreachable)",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:01:56Z",
+      "url": "https://blog.library.villanova.edu/2022/01/18/a-free-library-of-marxist-thought-the-marxists-internet-archive/",
+      "http": null,
+      "result": "TLS failure: 'SSL certificate problem: self-signed certificate in certificate chain' (curl 60)"
+     },
+     {
+      "at": "2026-10-31T23:02:08Z",
+      "url": "https://blog.library.villanova.edu/2022/01/18/a-free-library-of-marxist-thought-the-marxists-internet-archive/",
+      "http": null,
+      "result": "the same TLS failure, on one retry with the same agent"
+     },
+     {
+      "at": "2026-10-31T22:58Z",
+      "url": "https://blog.library.villanova.edu/?s=marxists+internet+archive",
+      "http": null,
+      "result": "the same TLS failure (the blog's search)"
+     }
+    ],
+    "searches": [
+     "WebSearch 'Falvey Library Blog Marxists Internet Archive'",
+     "WebSearch 'Falvey Memorial Library \"Marxists Internet Archive\" resource Villanova blog' (found the post, titled in the search 'Falvey Library :: A Free Library of Marxist Thought: The Marxists Internet Archive', and the tag page /tag/marxists-internet-archive/)"
+    ],
+    "note": "The URL is the search's, matched on the card's site; the card's title is the site's name only, so the match is not certain. The host failed TLS verification twice; not routed around. Recorded as unreachable; the card's title stands as its only text (the card has no snippet)."
+   },
+   "names_operator": "unknown (unread)",
+   "names_archive": "no (the card title only)",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Falvey Library Blog",
+   "card_snippet": null,
+   "card_site": "Falvey Library Blog"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "AI Mode card 6",
+   "card": "ResearchGate — PDF) Marxists Internet Archive Takedown",
+   "url": "https://www.researchgate.net/publication/336080325_Marxists_Internet_Archive_Takedown",
+   "kind": "AI Mode card (a paper's page on ResearchGate; unreachable)",
+   "files": {
+    "B6-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B6-403.html",
+     "sha256": "fcb2e105bc2b6f1b8884c303a692c57a90fa453d1e190c12b1c0b1873081c4b5"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:01:57Z",
+      "url": "https://www.researchgate.net/publication/336080325_Marxists_Internet_Archive_Takedown",
+      "http": 403,
+      "sha256": "fcb2e105bc2b6f1b8884c303a692c57a90fa453d1e190c12b1c0b1873081c4b5",
+      "result": "'ResearchGate - Temporarily Unavailable' with a CAPTCHA; not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Marxists Internet Archive Takedown\" ResearchGate'",
+     "WebSearch '\"Marxists Internet Archive Takedown\" PDF' (found the ResearchGate page, and copies of the same paper at the journal Fast Capitalism, Semantic Scholar and Macquarie University, which were not fetched: fetching another copy would route around the refusal)"
+    ],
+    "note": "Recorded as unreachable; the card's title stands as its only text (the card has no snippet)."
+   },
+   "names_operator": "yes (the title names the entity)",
+   "names_archive": "no (the card title only)",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "PDF) Marxists Internet Archive Takedown",
+   "card_snippet": null,
+   "card_site": "ResearchGate"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "AI Mode card 7",
+   "card": "Reddit — r/communism",
+   "url": null,
+   "kind": "AI Mode card (a page of the subreddit r/communism; URL not determined; unreachable)",
+   "files": {
+    "B7-search-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B7-search-403.html",
+     "sha256": "13bcba13bd1bad5aace04e8a76880b710337a8d595224967e874401832cc203c"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T23:02:08Z",
+      "url": "https://www.reddit.com/r/communism/search.json?q=marxists+internet+archive+takedown&restrict_sr=1",
+      "http": 403,
+      "sha256": "13bcba13bd1bad5aace04e8a76880b710337a8d595224967e874401832cc203c",
+      "result": "Reddit's block page; not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch 'reddit r/communism Marxists Internet Archive Lawrence Wishart MECW takedown'",
+     "WebSearch 'reddit.com/r/communism Marxists Internet Archive Lawrence & Wishart removal'",
+     "WebSearch 'r/communism \"Lawrence and Wishart\" marxists.org Collected Works removed 2014 reddit' (no Reddit page in the results)"
+    ],
+    "note": "The card's title is the subreddit's name only, and the registry notes it as 'the takedown line'. Its URL could not be determined and Reddit refused the search. Recorded as unreachable; the title stands as its only text."
+   },
+   "names_operator": "unknown (unread)",
+   "names_archive": "no (the card title only)",
+   "surfaced_by_T": [
+    {
+     "slug": "marxists-internet-archive-aimode-20261031",
+     "card": 7
+    }
+   ],
+   "card_title": "r/communism",
+   "card_snippet": null,
+   "card_site": "Reddit",
+   "card_note": "the takedown line"
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the census's own page marxists-internet-archive--intro (not surfaced by T)",
+   "card": "Marxists Internet Archive — MIA Introduction (admin/intro/index.htm), last updated 21 April 2026",
+   "url": "https://www.marxists.org/admin/intro/index.htm",
+   "kind": "the entity's own introduction: definition, scale, Charter, aims and limits, licence",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B8.html",
+     "sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B8.txt",
+     "sha256": "fc79a1374bfe713416752d72d65764ce7411a8a27a1f87089ab08b232bebfed6"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "id": "marxists-internet-archive--intro",
+    "at": "2026-10-31T21:27:47Z",
+    "read": "2026-10-31",
+    "http": 200,
+    "url": "https://www.marxists.org/admin/intro/index.htm",
+    "sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e",
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B8.html",
+    "raw_sha256": "dbee9868c094836b76d68d8d95371ec0af816eee30a56d1fe124b5247430f60e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/marxists-internet-archive-20261031/B8.txt"
+    ],
+    "note": "copied from the census's saved copy (gunzipped .html.gz and its .txt); sha256 matches the manifest; not refetched"
+   },
+   "names_operator": "yes (the Steering Committee and the Admin Committee are linked and named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, machinemediation, EA-WG-CAPTURES-01 in the saved text or the card title)",
+   "note": "Admitted beside the cards by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); T did not surface it.",
+   "surfaced_by_T": [],
+   "card_title": null,
+   "card_snippet": null
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "meta name=\"description\"",
+   "quote": "The most complete library of Marxism with content in 80 languages and the works of over 720 authors readily accessible by archive, subject, or history as well as hundreds of periodicals.",
+   "claim": "the home page's description: the most complete library of Marxism, 80 languages, over 720 authors, by archive, subject or history, with hundreds of periodicals",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a library of the left's texts",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 97e3c6ba2cbf79f0…), whitespace-normalised",
+   "mark": "internally_inconsistent (the saved page states its author count two ways: 'over 720 authors', meta description, and 'over 1000 authors', dc.description; both loci cited)"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "meta name=\"dc.description\"",
+   "quote": "The most complete library of Marxism with content in over 80 languages and the works of over 1000 authors readily accessible by archive, sujbect, or history as well as hundreds of periodicals.",
+   "claim": "the page's second description gives over 80 languages and over 1000 authors (internally_inconsistent with F1's 'over 720 authors')",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: documents, authors, languages",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 97e3c6ba2cbf79f0…), whitespace-normalised",
+   "mark": "internally_inconsistent (the saved page states its author count two ways: 'over 720 authors', meta description, and 'over 1000 authors', dc.description; both loci cited)"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "navigation",
+   "quote": "Search | What's New? | Periodicals | eBooks | About MIA | Donate | Buy books | Contact",
+   "claim": "the home page's navigation: search, new additions, periodicals, eBooks, about, donations, books for sale, contact",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and distribution",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 97e3c6ba2cbf79f0…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s1",
+   "quote": "Marxists Internet Archive (MIA), also known as Marxists.org, is a non-profit online encyclopedia, created in 1990, that hosts a multilingual library of the works of communist, anarchist, and socialist writers",
+   "claim": "Wikipedia defines it as a non-profit online encyclopedia, created in 1990, hosting a multilingual library of communist, anarchist and socialist writers",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a library of the left's texts",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s1 (end)",
+   "quote": "as well as that of writers of related ideologies, and even unrelated ones (for instance, Sun Tzu)",
+   "claim": "it also holds writers of related and unrelated ideologies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s2",
+   "quote": "The collection is maintained by volunteers and is based on a collection of documents that were distributed by email and newsgroups, later collected into a single gopher site in 1993.",
+   "claim": "maintained by volunteers; built from documents distributed by email and newsgroups, gathered on a gopher site in 1993",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Zodiac, Marx.org and the 1998 split",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events 1990, 1993",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s3",
+   "quote": "It contains over 180,000 documents from over 850 authors in 80 languages.",
+   "claim": "Wikipedia's count: over 180,000 documents, over 850 authors, 80 languages (its citation's access-date 2014-05-11, wikitext)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: documents, authors, languages",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead s4",
+   "quote": "All material in the archive is provided free of charge to users, although not necessarily free of copyright.",
+   "claim": "free of charge, not necessarily free of copyright",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms of holding: Charter, licence, copyright",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶1",
+   "quote": "The archive was created in 1990 by a person known only by their Internet tag, Zodiac, who started archiving Marxist texts by transcribing the works of Marx and Engels into E-text, starting with the Communist Manifesto.",
+   "claim": "created in 1990 by 'Zodiac', who began transcribing Marx and Engels, starting with the Manifesto",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: Zodiac, Marx.org and the 1998 split",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events 1990, 1993",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶1",
+   "quote": "However, the main site and its mirrors were hosted on academic servers and by the end of 1995 almost all had been shut down.",
+   "claim": "hosted on academic servers, the site and mirrors were almost all shut down by the end of 1995",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuity: mirrors, attacks, dispersal",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶2",
+   "quote": "As the scope of the archive expanded, Zodiac feared that the opening toward diverse currents of Marxism was a \"slippery slope\" toward sectarianism. The volunteers who had been undertaking the work of transcribing texts resented having little influence over the way in which the archive was organized and run. In early 1998 Zodiac decided that Marx.org would return to its roots and that all writers other than Marx and Engels would be removed.",
+   "claim": "a conflict: Zodiac feared the opening to diverse currents as a slope to sectarianism, the transcribing volunteers had little say, and in early 1998 Zodiac decided to remove all writers but Marx and Engels",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "origin: Zodiac, Marx.org and the 1998 split",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events 1996–2002",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶3",
+   "quote": "In July 1998 the present form of the Marxists Internet Archive (marxists.org) was created by volunteers transferring files and archives from Marx.org.",
+   "claim": "in July 1998 the volunteers created marxists.org, its present form, by transferring the files from Marx.org",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "origin: Zodiac, Marx.org and the 1998 split",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events 1996–2002",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶3",
+   "quote": "As for Marx.org, Zodiac closed it down in 1999, and in 2002 he gave up the domain name, which was purchased by the MIA.",
+   "claim": "Zodiac closed Marx.org in 1999; the MIA bought the domain in 2002",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Zodiac, Marx.org and the 1998 split",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events 1996–2002",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶4",
+   "quote": "By 2014 it had grown to encompass 62 volunteers in 33 different countries, and held over 50,000 items in 54 languages covering the works of over 600 authors.",
+   "claim": "by 2014: 62 volunteers in 33 countries, over 50,000 items, 54 languages, over 600 authors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: documents, authors, languages",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶4",
+   "quote": "Today the Marxists Internet Archive is a recognized repository for both Marxist and non-Marxist writers.",
+   "claim": "a recognized repository for Marxist and non-Marxist writers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Origins ¶4",
+   "quote": "has been selected for archiving by institutions such as the British Library,[12] Ireland's University College Cork,[13] and the US Library of Congress.",
+   "claim": "selected for archiving by the British Library, University College Cork and the Library of Congress",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: catalogues and web archives",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: 2007 attacks",
+   "quote": "Beginning in November 2006, the Marxists Internet Archive faced a number of serious denial-of-service attacks … The severity of the attack, coupled with other hosting issues, led to the closure of the Marxists Internet Archive's main server and several of its mirrors for a number of weeks in February and March 2007.",
+   "claim": "denial-of-service attacks from November 2006 closed the main server and several mirrors for weeks in February–March 2007",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuity: mirrors, attacks, dispersal",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: 2007 attacks",
+   "quote": "led to speculation that the attacks may have been politically motivated and directed by the People's Republic of China since the website was shortly blocked in China in 2005.",
+   "claim": "speculation that the attacks were directed by the People's Republic of China, where the site had been blocked in 2005",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuity: mirrors, attacks, dispersal",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Copyright issue ¶1",
+   "quote": "In late April 2014, the small British publishers Lawrence & Wishart (L&W) chose to revoke their permission for their English language version of the Marx/Engels Collected Works to be reprinted in part on MIA.",
+   "claim": "in late April 2014 Lawrence & Wishart revoked their permission for the English Marx/Engels Collected Works to be reprinted in part on the MIA",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the 2014 Collected Works removal",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events April 2014",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Copyright issue ¶1",
+   "quote": "In an email in late April 2014, L&W asked MIA to delete the contested material from their website by the end of April or face litigation. … MIA chose to follow the request. An online petition was started against the L&W decision, and had the support of more than 4,500 people by the end of the month.",
+   "claim": "L&W asked for deletion under threat of litigation; the MIA complied; a petition against the decision had over 4,500 supporters by the month's end",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2014 Collected Works removal",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events April 2014",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "History: Copyright issue ¶2",
+   "quote": "Andy Blunden, a representative of MIA, did not dispute that L&W has copyright over the material. … \"The professors and the historians will be able to write learned articles about what Marx said, but the general population are going to be left back in 1975 [the year when the publication of the Collected Works began]\"",
+   "claim": "Andy Blunden, for the MIA, did not dispute L&W's copyright, and said the general population would be 'left back in 1975'",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2014 Collected Works removal",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the events April 2014",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: Management",
+   "quote": "The MIA is administered by a steering committee, composed of all active volunteers. The committee decides issues such as the categorization of writers, modifications to the bylaws (by 3/4 majority), financial issues of all kinds, and similar matters.",
+   "claim": "administered by a steering committee of all active volunteers, which decides the categorization of writers, the bylaws (by 3/4) and finances",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "governance: the volunteers' committees",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: Management",
+   "quote": "The MIA is incorporated in the U.S. state of California and registered with the U.S. tax service as a non-profit, 501(c)(3) organization.",
+   "claim": "incorporated in California, a 501(c)(3) non-profit",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the volunteers' committees",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: Management",
+   "quote": "According to the MIA charter, its content will always be offered 100% free, in compliance with all copyright laws. All the material stored in the archives is either public domain, under the GNU Free Documentation License, or used with the copyright holders' permission. Any work created by MIA volunteers is under the Creative Commons Attribution-ShareAlike 2.0 license.",
+   "claim": "by its charter, always free and within copyright law: public domain, GFDL or used with permission; volunteers' work under CC BY-SA 2.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms of holding: Charter, licence, copyright",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: Physical location and mirrors",
+   "quote": "The website is primarily served via an ISP in Germany, and three mirrors exist",
+   "claim": "served from Germany, with three mirrors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuity: mirrors, attacks, dispersal",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: Distribution",
+   "quote": "\"If the Archive is shut down by a publishing conglomerate or the government, having this information widely dispersed around the world, essentially untraceable, with the content entirely intact, is a great thing.\"",
+   "claim": "the MIA's own stated reason for dispersing copies: survival if shut down by a publisher or a government",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "continuity: mirrors, attacks, dispersal",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Structure: MIA as a book publisher",
+   "quote": "in 2008 the MIA launched Marxists Internet Archive Publications, which has, as of October 2022[update], published eight titles including volumes on philosophy, social history, Soviet psychology and pedagogy, and an anthology of writings by José Carlos Mariátegui, … which it distributes through Erythrós Press and Media, LLC.",
+   "claim": "in 2008 it launched Marxists Internet Archive Publications: eight titles as of October 2022, distributed through Erythros Press and Media",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "2026-10-31 (revision 1383040731, as fetched); the event 2008, the count as of October 2022",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archival structure ¶2",
+   "quote": "The archive includes section dedicated to specific historical topics, such as the history of the Soviet Union and the Paris Commune, as well as broader subject topics, such as philosophy. It also includes a reference section called the \"Encyclopedia of Marxism\", containing definitions of Marxist terms, short biographies, and historical material.",
+   "claim": "history sections (the Soviet Union, the Paris Commune), subject sections (philosophy) and an 'Encyclopedia of Marxism'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collections and structure",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archival structure ¶1",
+   "quote": "Many PDFs have been added for the purposes of putting up revolutionary and socialist publications, presented as they were printed.",
+   "claim": "many PDFs put up revolutionary and socialist publications as printed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "collections and structure",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Archival structure ¶3",
+   "quote": "As of 6 April 2020[update], the MIA website included content in 80 languages. … in practice these vary widely in size and scope.",
+   "claim": "80 languages as of April 2020; the language sections vary widely in size and scope",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: documents, authors, languages",
+   "date": "2026-10-31 (revision 1383040731, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 07bbc6e55c053c60…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "maintenance templates (wikitext, top)",
+   "quote": "{{More citations needed|date=October 2025}} {{Self-published|date=October 2025}}",
+   "claim": "the article is tagged as needing more citations and as relying on self-published sources (October 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2025-10 (the templates' date); the revision of 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B2.wiki (sha256 24f8ca2ebba139d1…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card title (Library of Congress unreachable: HTTP 403, bot check)",
+   "quote": "Marxists Internet Archive | Library of Congress",
+   "claim": "the Library of Congress holds an item titled 'Marxists Internet Archive'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: catalogues and web archives",
+   "date": "undated (card title)",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; the card has no snippet)"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Marxists Internet Archive Publications ¶1",
+   "quote": "Since 2009, Erythros Press and Media, LLC has distributed works published by Marxists Internet Archive Publications worldwide.",
+   "claim": "since 2009 Erythros Press and Media has distributed the MIA's publications worldwide",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "undated (the page as fetched 2026-10-31; © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c6d2e2517e6e151b…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Marxists Internet Archive Publications ¶1",
+   "quote": "Proceeds from the sale of MIAP books go to Marxists Internet Archive to ensure that site’s continued operation and improvement.",
+   "claim": "proceeds of the books go to the MIA's operation",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "undated (the page as fetched 2026-10-31; © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c6d2e2517e6e151b…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Marxists Internet Archive Publications ¶2",
+   "quote": "The association of MIAP by and through the business relationship of Erythros Press and Media, LLC does not imply that the MIA collective approves of or agrees with the positions or conclusions of authors published by Erythros Press and Media, LLC.",
+   "claim": "the business relationship implies no approval by 'the MIA collective' of the distributor's other authors",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "undated (the page as fetched 2026-10-31; © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c6d2e2517e6e151b…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "MIAP Publications List",
+   "quote": "MIAP Publications List … Awakening To Life by Alexander Meshcheryakov … One is Not Born a Personality by Karl Levitin",
+   "claim": "the distributor lists nine MIAP titles, from Meshcheryakov's Awakening to Life to Levitin's One is Not Born a Personality",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "undated (the page as fetched 2026-10-31; © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c6d2e2517e6e151b…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "About Erythros Press",
+   "quote": "Erythros Press and Media, LLC is an independent, family-owned project launched in 2009.",
+   "claim": "the distributor is an independent, family-owned project launched in 2009 (a distinct entity)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the press: Marxists Internet Archive Publications",
+   "date": "undated (the page as fetched 2026-10-31; © 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 c6d2e2517e6e151b…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title (Falvey Library Blog unreachable: TLS failure)",
+   "quote": "Falvey Library Blog",
+   "claim": "a card whose only text is its site, the Falvey Library Blog (Villanova University); unread",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: catalogues and web archives",
+   "date": "undated (card title)",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; the card has no snippet)"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title (ResearchGate unreachable: HTTP 403, CAPTCHA)",
+   "quote": "PDF) Marxists Internet Archive Takedown",
+   "claim": "a paper titled 'Marxists Internet Archive Takedown' (a PDF on ResearchGate); unread",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2014 Collected Works removal",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; the card has no snippet)"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (Reddit unreachable; URL not determined)",
+   "quote": "r/communism",
+   "claim": "a page of the subreddit r/communism, which the registry notes as the takedown line; unread",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2014 Collected Works removal",
+   "date": "undated (card title)",
+   "quote_ok": true,
+   "checked_against": "card title (unreachable card; the card has no snippet)"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶1 s1",
+   "quote": "The Marxists Internet Archive (MIA, http://www.marxists.org/) is an all-volunteer, non-profit public library, established in its present form in 1998 (see also the MIA history page for the archive's earlier history).",
+   "claim": "its own definition: an all-volunteer, non-profit public library, in its present form since 1998, with an earlier history",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a library of the left's texts",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶1 s2–3",
+   "quote": "In 2022, MIA averaged 3.3 million visitors per month, downloading 27.5 million files per month. This represents a 79% increase in visitors since 2013.",
+   "claim": "3.3 million visitors and 27.5 million file downloads a month in 2022, up 79% in visitors since 2013",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and use",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶2 s1",
+   "quote": "As of July 2025, MIA has 76 active volunteers from several dozen countries .",
+   "claim": "76 active volunteers from several dozen countries, July 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the volunteers' committees",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶2 s2",
+   "quote": "MIA contains the writings of close to 1000 authors representing a complete spectrum of political, philosophical, and scientific thought, generally spanning the past 200 years.",
+   "claim": "the writings of close to 1000 authors, a complete spectrum of thought over some 200 years",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶2 s3",
+   "quote": "MIA contains these writings in 83 different languages , comprising a total size of over 400,000 documents and 1.1 TB of data (April 2026), all created through the work of volunteers around the world.",
+   "claim": "83 languages, over 400,000 documents, 1.1 TB (April 2026), all made by volunteers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: documents, authors, languages",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶3 (the Charter)",
+   "quote": "MIA abides by seven fundamental tenets found in our Charter : (1) We will always be 100% Free; (2) We will always be a non-profit organization; (3) We will always be based on democratic decision making; (4) We will always have full disclosure; (5) We will always remain politically independent; (6) We do not ‘judge’ writers; (7) Our priority is to provide archival information.",
+   "claim": "the Charter's seven tenets: free, non-profit, democratic, full disclosure, politically independent, writers not judged, archival information first",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "terms of holding: Charter, licence, copyright",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶4 s1",
+   "quote": "In 2007, we terminated our former practice of dividing all writers into Marxists and non-Marxists , and instead offer an index of Selected Marxist Writers in most language sections.",
+   "claim": "in 2007 it ended dividing writers into Marxists and non-Marxists and offers an index of Selected Marxist Writers",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-04-21 (Last updated on 21 April 2026); the event 2007",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶4 s2",
+   "quote": "The MIA aims to maintain an archive of any and all writings which are Marxist or relevant to the understanding of Marxism and can be lawfully published.",
+   "claim": "its aim: any and all writings Marxist or relevant to understanding Marxism that can lawfully be published",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶4 s3–4",
+   "quote": "In the past, some writers who have contributed to Marxism have expressed racist, sexist or other distasteful views. The MIA generally does not “filter out” such views; if we are archiving the work of a writer, any and all of that writer’s work may be included",
+   "claim": "it does not filter out writers' distasteful views; any of an archived writer's work may be included",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶4 s4 (end)",
+   "quote": "within the limits imposed by the availability of a willing volunteer to transcribe the works and the impact of intellectual property laws.",
+   "claim": "its stated limit: a willing volunteer to transcribe, and intellectual property law",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "limits: volunteers and intellectual property",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶4 s5",
+   "quote": "The MIA does not endorse any of the views expressed by any of the writers included here, which are provided solely for the information of the reader.",
+   "claim": "it endorses none of the views it holds",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it keeps: writers of every verdict",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction ¶6",
+   "quote": "We do this believing in the importance of organisational transparency to ensure our internal democracy remains strong, to help potential volunteers understand how we work, and to give readers insight into the scope and purpose of our organisation.",
+   "claim": "organisational transparency, to keep its internal democracy strong",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the volunteers' committees",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction, links: Steering Committee; footer",
+   "quote": "Steering Committee … Contact the Marxists Internet Archive Admin Committee for further information",
+   "claim": "a Steering Committee and an Admin Committee",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "governance: the volunteers' committees",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction, licence line",
+   "quote": "All material within these Archives, unless noted otherwise, is public domain . MIA-created material is protected by the Creative Commons License .",
+   "claim": "public domain unless noted; MIA-created material under a Creative Commons licence",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms of holding: Charter, licence, copyright",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction, 'See more about' links",
+   "quote": "Why some writer is missing",
+   "claim": "a page of its own on why some writer is missing (unread)",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: volunteers and intellectual property",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Introduction, links",
+   "quote": "eBooks … Audio Books … Mirrors … MIA Publications",
+   "claim": "eBooks, audio books, mirrors and its own publications",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and distribution",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "footer",
+   "quote": "Last updated on 21 April 2026",
+   "claim": "the introduction was last updated on 21 April 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and dates of the record",
+   "date": "2026-04-21 (Last updated on 21 April 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 fc79a1374bfe7134…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Marxists Internet Archive — Marxists Internet Archive",
+  "B2": "Wikipedia — Marxists Internet Archive - Wikipedia",
+  "B3": "Library of Congress — Marxists Internet Archive | Library of Congress",
+  "B4": "Erythros Press and Media — Marxists Internet Archive Publications - Erythros Press and Media",
+  "B5": "Falvey Library Blog — Falvey Library Blog",
+  "B6": "ResearchGate — PDF) Marxists Internet Archive Takedown",
+  "B7": "Reddit — r/communism",
+  "B8": "Marxists Internet Archive — MIA Introduction (admin/intro/index.htm), last updated 21 April 2026"
+ }
+}

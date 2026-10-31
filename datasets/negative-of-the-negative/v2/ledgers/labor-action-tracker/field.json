@@ -1,0 +1,1000 @@
+{
+ "row": "labor-action-tracker",
+ "address": "Labor Action Tracker",
+ "addresses": [
+  "Labor Action Tracker"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check), the card's snippet for the rendered map, or the card's title and snippet for the unreachable cards; 45/45 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the tracker's home page, byte-identical to the census's own page cornell-labor-action-tracker--home; B2 the ILR School's Labor Action Tracker page; B3 the Annual Report 2025 on the ILR School's site; B4 a Daily Illini post on Facebook, unreachable, no URL found; B5 the BLS Work Stoppages home page, unreachable, HTTP 403); 'own_page', the census's own page that T did not surface (B6 the About page; the census's second own page, the home page, is card B1, carried once as a card); 'wikipedia', no article (B7). The census read no third-party source (all its evidence carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B2, B6); operator (B2, B3, B6); origin, launch and rename (B4, B6); lineage, the China Labour Bulletin (B6); against the official count (B3, B5); what it counts (B3); method (B2, B3, B6); coverage and its stated limits (B3, B6); the site and its tools (B1, B2); data access (B6); the annual report 2025 (B3); reception, the encyclopedia (B7). Card 2 (B2, the ILR School's page) restates the About page (B6) nearly word for word: its sentences on the origin and public launch, the rename of January 2024, the thanks to the China Labour Bulletin, the documenting of strikes from late 2020 and protests from early 2021, the accuracy as of 2021, the confidence and the aim of 'a general understanding of labor protest activity rather than achieve a complete count' are instances of B6's claims F32–F38 (one lineage each, no slot of their own, §3.6), so that these claims stood on a card the composition surfaced; its definition (F3), its operator sentence (F4), its list of reports (F5) and its own method sentence (F6) are ledgered. The census's evidence quotes (self_description, operator, director, founded, rebrand, coverage_period, limit_accuracy, confidence, limit_protest, limit_map, method, methodology, data_access, outcomes, recent_member, inspiration) are all from B6; the ML fields that restate them (ML-01, ML-02, ML-03, ML-06, ML-07, ML-11, ML-12, ML-15, ML-19, ML-21, ML-22) are one lineage with B6, which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B1 and B6 the census's saved copies (B1 also fetched as the card, byte-identical; B1.txt and B6.txt the census's texts); B5-403.html the BLS refusal; B7 .wiki, .html, -variant1.wiki, -variant2.wiki and -search-429.json the raw Wikipedia responses with B7.txt a summary of codes and notices; T1-labor-action-tracker-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "ILR Labor Action Tracker — ILR Labor Action Tracker",
+   "url": "https://striketracker.ilr.cornell.edu/",
+   "kind": "Overview card 1 (the tracker's home page; byte-identical to the census's own page cornell-labor-action-tracker--home)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B1.html",
+     "sha256": "ee2dfe611d79635d709eb883bfaf1b275ba404cdd5d330cf2373c68586491031"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B1.txt",
+     "sha256": "4e6563597e2ba06e87b8ceedab3ede25be2f31f0cf3e05143fbbe7f578c6b5a1"
+    }
+   },
+   "card_title": "ILR Labor Action Tracker",
+   "card_snippet": "Labor Action Tracker About Us Methodology Reports Report a Strike How to cite 8 6 17 20 70 11 +− Leaflet | © OpenStreetMap Action type Strike Protest Search Sta...",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-action-tracker-aio-20261031",
+     "card": 1
+    }
+   ],
+   "fetched": {
+    "at": "2026-10-31T22:59:12Z",
+    "http": 200,
+    "url": "https://striketracker.ilr.cornell.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B1.html",
+    "raw_sha256": "ee2dfe611d79635d709eb883bfaf1b275ba404cdd5d330cf2373c68586491031",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B1.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "census_copy": {
+     "src": "cornell-labor-action-tracker--home",
+     "url": "https://striketracker.ilr.cornell.edu/",
+     "sha256": "ee2dfe611d79635d709eb883bfaf1b275ba404cdd5d330cf2373c68586491031",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T21:27:57Z",
+     "http": "200",
+     "agrees": true
+    },
+    "copied_text_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/cornell-labor-action-tracker--home.txt (the census's text of the same bytes)"
+   },
+   "note": "URL from the card's site and title (the tracker's host, named in the census record's url). The fetch is byte-identical to the census's saved copy cornell-labor-action-tracker--home (sha256 ee2dfe61…, read 2026-10-31T21:27:57Z), so the card and the census's own page are one page, carried once, as a card; B1.txt is the census's text of the same bytes. The saved page is navigation only: the map, its counts and its filters are drawn by script and are not in the saved text; the card's snippet ('8 6 17 20 70 11 +− Leaflet | © OpenStreetMap Action type Strike Protest Search Sta...') carries the rendered map's text and stands beside the saved text.",
+   "names_operator": "yes (the page title 'ILR Labor Action Tracker'; the card's site 'ILR Labor Action Tracker')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "undated (the page as fetched 2026-10-31)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Cornell's ILR School — Labor Action Tracker",
+   "url": "https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker",
+   "kind": "Overview card 2 (the Labor Action Tracker page of the ILR School's site, under Faculty & Research)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B2.html",
+     "sha256": "9c5e1769451feb6b55ee0f27b4349209368b1554d423a481aa0dadc59e8d17e5"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B2.txt",
+     "sha256": "a91c3a3cfccf035f19bdb65bc4423b5905529f398c415e0a741e605bb53666db"
+    }
+   },
+   "card_title": "Labor Action Tracker",
+   "card_snippet": "Labor Action Tracker A comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activist...",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-action-tracker-aio-20261031",
+     "card": 2
+    }
+   ],
+   "fetched": {
+    "at": "2026-10-31T22:59:13Z",
+    "http": 200,
+    "url": "https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B2.html",
+    "raw_sha256": "9c5e1769451feb6b55ee0f27b4349209368b1554d423a481aa0dadc59e8d17e5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B2.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "note": "URL found by trying the ILR School's paths for the card's title: https://www.ilr.cornell.edu/labor-action-tracker answered HTTP 404 (2026-10-31T22:59:12Z); https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker answered 200, and its heading and first sentence are the card's snippet verbatim ('Labor Action Tracker A comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activist...'); confirmed by WebSearch (the page listed as 'labor action tracker'). Its paragraphs restate the tracker's About page (B6) nearly word for word, with the method sentence in its own words ('Our research team manually inputs information gathered from public sources into the tracker.').",
+   "names_operator": "yes ('a collaboration between Cornell University’s ILR School and the University of Illinois’ LER School')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "undated (the page as fetched 2026-10-31)"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Cornell ILR School — Labor Action Tracker 2025",
+   "url": "https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker-2025",
+   "kind": "Overview card 3 (the Labor Action Tracker Annual Report 2025, on the ILR School's site; O’Brien, Iyer and Kallas, 2026)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B3.html",
+     "sha256": "91adae06a597b6433bcddb885acd41ef902a36cb56555b6ea73c83c35d7e1944"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B3.txt",
+     "sha256": "10630d60e38206f68894e8ccf83dce22dda8dc23057024a275aac82708ebd301"
+    }
+   },
+   "card_title": "Labor Action Tracker 2025",
+   "card_snippet": "The ILR-LER Labor Action Tracker Annual Report 2025 Download the 2025 Annual Report Luke O'Brien, BSILR '27, Cornell University ILR School Deepa Kylasam Iyer, P...",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-action-tracker-aio-20261031",
+     "card": 3
+    }
+   ],
+   "fetched": {
+    "at": "2026-10-31T22:59:13Z",
+    "http": 200,
+    "url": "https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker-2025",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B3.html",
+    "raw_sha256": "91adae06a597b6433bcddb885acd41ef902a36cb56555b6ea73c83c35d7e1944",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B3.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)"
+   },
+   "note": "URL found by trying the card's title on the ILR School's host: https://www.ilr.cornell.edu/labor-action-tracker-2025 redirected to https://www.ilr.cornell.edu/faculty-and-research/labor-action-tracker-2025 (HTTP 200), whose heading, report title, download line and author lines are the card's snippet verbatim (the page with typographic apostrophes, 'O’Brien, BSILR ’27', where the snippet has straight ones). The report's charts are drawn by script; its tables are in the saved text.",
+   "names_operator": "yes ('the Cornell University ILR School and the University of Illinois LER School for funding our project')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Facebook·The Daily Illini — UI and Cornell launch labor action tracker in Illinois",
+   "url": null,
+   "kind": "Overview card 4 (a Daily Illini post on Facebook; unreachable: no URL found)",
+   "files": {},
+   "card_title": "UI and Cornell launch labor action tracker in Illinois",
+   "card_snippet": "Oct 30, 2026 — Johnnie Kallas, professor in Labor and Employment Relations, said the project grew out of an increase in protests during the pandemic. Kallas said the Labor Act...",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-action-tracker-aio-20261031",
+     "card": 4
+    }
+   ],
+   "fetched": {
+    "unreachable": true,
+    "tries": [],
+    "searches": [
+     "WebSearch '\"UI and Cornell launch labor action tracker in Illinois\" Daily Illini' (2026-10-31): no Facebook or Daily Illini result",
+     "WebSearch 'Daily Illini facebook Kallas labor action tracker \"increase in protests during the pandemic\"' (2026-10-31): none",
+     "WebSearch 'site:facebook.com \"Daily Illini\" \"labor action tracker\"' (2026-10-31): none"
+    ],
+    "note": "No URL found. Tried, 2026-10-31: WebSearch '\"UI and Cornell launch labor action tracker in Illinois\" Daily Illini'; WebSearch 'Daily Illini facebook Kallas labor action tracker \"increase in protests during the pandemic\"'; WebSearch 'site:facebook.com \"Daily Illini\" \"labor action tracker\"'. None returned the post or the article it carries. Recorded as unreachable; the card's title and snippet stand as its only text. The date the card prints, 'Oct 30, 2026', is the card's; the collaboration it reports began in January 2024 (B6 F33)."
+   },
+   "names_operator": "yes, in the snippet ('Johnnie Kallas, professor in Labor and Employment Relations')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "Oct 30, 2026 (the card's date, as the card gives it)"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Bureau of Labor Statistics (.gov) — Work Stoppages Home Page : U.S. Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/wsp/",
+   "kind": "Overview card 5 (the BLS Work Stoppages program's home page; unreachable: HTTP 403)",
+   "files": {
+    "B5-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B5-403.html",
+     "sha256": "cefc7f10975065d8e6741600227181de4c434831239d2afb71a3d423c09342e3"
+    }
+   },
+   "card_title": "Work Stoppages Home Page : U.S. Bureau of Labor Statistics",
+   "card_snippet": "Program: U.S. Bureau of Labor Statistics Work Stoppages program providing monthly and annual data on major work stoppages involving 1,000+ workers lasting one f...",
+   "surfaced_by_T": [
+    {
+     "slug": "labor-action-tracker-aio-20261031",
+     "card": 5
+    }
+   ],
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T22:59:14Z",
+      "url": "https://www.bls.gov/wsp/",
+      "http": 403,
+      "sha256": "cefc7f10975065d8e6741600227181de4c434831239d2afb71a3d423c09342e3",
+      "result": "'Access Denied' (BLS bot policy) to the census agent; not retried with another agent string or by another route"
+     }
+    ],
+    "note": "The URL is the program's home page, named in the card's title (and in the census's unread sources, bls-work-stoppages--home, 403 to the census agent at 2026-10-31T21:27:58Z). Fetched once with the census agent: HTTP 403, 'Access Denied … bot activity that doesn't conform to BLS usage policy is prohibited' (B5-403.html). Not retried with another agent string or by another route. The card's title and snippet stand as its only text."
+   },
+   "names_operator": "no (the page is the BLS's; the snippet does not name the tracker)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "undated"
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "own page (census source; not surfaced by T)",
+   "card": "ILR Labor Action Tracker — About Us | ILR Labor Action Tracker",
+   "url": "https://striketracker.ilr.cornell.edu/about.html",
+   "kind": "own page: the tracker's About Us page (the census's source cornell-labor-action-tracker--about)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B6.html",
+     "sha256": "adc5e7da8e924765075ce392b50ebd637434d243b7f252baa60b51965b0ea043"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B6.txt",
+     "sha256": "565e8d40ddeb653606e4f048c6fa18f9f3439d6194120c9c84876e3dbf7ab190"
+    }
+   },
+   "surfaced_by_T": [],
+   "fetched": {
+    "at": "2026-10-31T21:27:58Z",
+    "http": 200,
+    "url": "https://striketracker.ilr.cornell.edu/about.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B6.html",
+    "raw_sha256": "adc5e7da8e924765075ce392b50ebd637434d243b7f252baa60b51965b0ea043",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B6.txt"
+    ],
+    "agent": "Mozilla/5.0 (compatible; maryleelabor-left-census)",
+    "census_copy": {
+     "src": "cornell-labor-action-tracker--about",
+     "url": "https://striketracker.ilr.cornell.edu/about.html",
+     "sha256": "adc5e7da8e924765075ce392b50ebd637434d243b7f252baa60b51965b0ea043",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T21:27:58Z",
+     "http": "200",
+     "agrees": true
+    },
+    "copied_from": "/home/claude/fleet/maryleelabor-org/data/left-census/sources/cornell-labor-action-tracker--about.html.gz (gunzipped) and .txt"
+   },
+   "note": "The census's saved copy (sources/cornell-labor-action-tracker--about.html.gz, gunzipped; .txt), with the manifest's url, http 200, sha256 adc5e7da… and fetch time 2026-10-31T21:27:58Z. Not surfaced by T: no card is the About page (card 1 is the home page, card 2 the ILR School's page that restates it). Admitted beside the cards by the operator's ruling of 2026-10-29. Every evidence quote of the census record is from this page.",
+   "names_operator": "yes ('a collaboration between Cornell University's ILR School and the University of Illinois' LER School'; 'Johnnie Kallas … Project Director')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "undated (the page as read by the census 2026-10-31)"
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "Wikipedia",
+   "card": "Wikipedia — Labor Action Tracker (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Labor_Action_Tracker&action=raw",
+   "kind": "Wikipedia: no article",
+   "files": {
+    "B7-search-429.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7-search-429.json",
+     "sha256": "947c12a3013e5674bdc5c7321de762cab842570b365bc899d544b5e66b50a63b"
+    },
+    "B7-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7-variant1.wiki",
+     "sha256": "e85f28d9c0db7d072b5aab8a48b2d0f4210115c2775fc38a8cc0bdc401aba85e"
+    },
+    "B7-variant2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7-variant2.wiki",
+     "sha256": "11796ef47c01ae8143ac1c5a4db38b78cf6adc29be77cb3962fb851862d4bcbe"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7.html",
+     "sha256": "6be1e2705f826fcae7b67047b37e923f506eb54a203d63004cb47a0a02d84af9"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7.txt",
+     "sha256": "63d41892c823f42cc5d3eb621d6a091bef4f187efc30588399d0fd533809d597"
+    },
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7.wiki",
+     "sha256": "e95281c9bcaa24b9baf3591888f91ee4e84f69dc6c04bb5d01ff40032f9471d2"
+    }
+   },
+   "surfaced_by_T": [],
+   "fetched": {
+    "at": "2026-10-31T22:59:14Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/w/index.php?title=Labor_Action_Tracker&action=raw",
+    "responses": {
+     "B7.wiki": "raw wikitext, title=Labor_Action_Tracker, HTTP 404 (22:59:14Z)",
+     "B7.html": "rendered /wiki/Labor_Action_Tracker, HTTP 404 (22:59:48Z)",
+     "B7-variant1.wiki": "title=Cornell_ILR_Labor_Action_Tracker, HTTP 404",
+     "B7-variant2.wiki": "title=Labor_action_tracker, HTTP 404",
+     "B7-search-429.json": "api.php list=search srsearch=\"Labor Action Tracker\" srnamespace=0, HTTP 429, not retried"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/labor-action-tracker-20261031/B7.txt"
+    ],
+    "note": "Raw wikitext for 'Labor_Action_Tracker' HTTP 404 (B7.wiki, 22:59:14Z); the rendered page HTTP 404, 'Wikipedia does not have an article with this exact name.' (B7.html, 22:59:48Z); the earlier name 'Cornell_ILR_Labor_Action_Tracker' and the lower-case 'Labor_action_tracker' HTTP 404 (B7-variant1.wiki, B7-variant2.wiki); no redirect. A full-text search of article space for \"Labor Action Tracker\" was refused by the API with HTTP 429 (too many requests, B7-search-429.json) and not retried, so whether articles mention the tracker is not recorded here."
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, maryleelabor, laborvector, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+   "date": "2026-10-31"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page navigation (saved text)",
+   "quote": "Labor Action Tracker About Us Methodology Reports Report a Strike How to cite",
+   "claim": "the site's sections: About Us, Methodology, Reports, Report a Strike, How to cite",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the site and its tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 4e6563597e2ba06e…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card snippet (the rendered map)",
+   "quote": "8 6 17 20 70 11 +− Leaflet | © OpenStreetMap Action type Strike Protest Search Sta...",
+   "claim": "the home page carries a map with counts, an action-type choice of Strike or Protest, and a search (the rendered page, by the card's snippet)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the site and its tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet as rendered in the transcript's card rail (the rendered map; the saved page carries no map text)"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "heading and lede",
+   "quote": "A comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+   "claim": "the ILR School's page defines it as a comprehensive database of strike and labor protest activity across the United States, for activists, policymakers and scholars",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a database of strike and labor protest activity",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a91c3a3cfccf035f…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The Labor Action Tracker is a collaboration between Cornell University’s ILR School and the University of Illinois’ LER School.",
+   "claim": "a collaboration between Cornell's ILR School and Illinois's LER School",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator: Cornell ILR and Illinois LER",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a91c3a3cfccf035f…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Explore the data; Annual reports; Other reports",
+   "quote": "Explore the data Visit the database and interactive map Annual reports 2025 2024 2023 2022 2021 Other reports International Strike Report (2022) International Strike Report (2023)",
+   "claim": "the database and an interactive map; annual reports for 2021–2025; International Strike Reports for 2022 and 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the site and its tools",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a91c3a3cfccf035f…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "Our research team manually inputs information gathered from public sources into the tracker.",
+   "claim": "the research team enters information from public sources by hand",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a91c3a3cfccf035f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "title and authors",
+   "quote": "The ILR-LER Labor Action Tracker Annual Report 2025",
+   "claim": "the ILR-LER Labor Action Tracker Annual Report 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Suggested citation",
+   "quote": "O’Brien, L., Iyer, D. K., and Kallas, J. (2026). Labor Action Tracker: Annual Report 2025. ILR School, Cornell University & LER School, University of Illinois.",
+   "claim": "the report's authors (Luke O’Brien, Deepa Kylasam Iyer, Johnnie Kallas) and date (2026)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Acknowledgments",
+   "quote": "A special thanks goes to the Cornell University ILR School and the University of Illinois LER School for funding our project",
+   "claim": "both schools fund the project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Cornell ILR and Illinois LER",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶2 s1",
+   "quote": "Since funding cuts by the Reagan administration in the early-1980s, the Bureau of Labor Statistics (BLS) has only documented work stoppages involving 1,000 or more workers that last at least an entire shift.",
+   "claim": "since Reagan-era funding cuts in the early 1980s the BLS documents only stoppages of 1,000 or more workers lasting at least a full shift",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "against the official count: the BLS threshold",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶2 s2",
+   "quote": "By only recording large work stoppages, official data sources exclude the vast majority of strike activity, posing issues for policymakers, practitioners, and scholars in determining the extent of workplace conflict across the country.",
+   "claim": "official data exclude most strike activity, which leaves the extent of workplace conflict undetermined",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "against the official count: the BLS threshold",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶2 s3",
+   "quote": "In this report, we follow the lead of the BLS and document work stoppages, which include both strikes and lockouts.",
+   "claim": "the report documents work stoppages, strikes and lockouts, following the BLS",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it counts: strikes, lockouts and labor protests",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology s4",
+   "quote": "We generate all our data on strikes from several public sources, including existing work stoppage databases, news articles, and social media posts.",
+   "claim": "strike data from public sources: existing stoppage databases, news articles, social media posts",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology s5",
+   "quote": "We follow rigorous verification protocols to ensure that a strike did in fact occur and to collect data on several related variables, including, but not limited to, the size, duration, industry, and demands of a strike.",
+   "claim": "verification protocols that a strike occurred; variables of size, duration, industry, demands",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology s6",
+   "quote": "We link to the sources used to generate data on each strike on our site’s interactive map.",
+   "claim": "each strike's sources linked on the interactive map",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology s7",
+   "quote": "We also collect data on labor protests but only provide summaries of work stoppages in this report because our count of protests is less comprehensive.",
+   "claim": "protests collected, but only stoppages summarized, the protest count being less comprehensive",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology s8",
+   "quote": "In light of our rigorous protocols, we may underestimate total work stoppages as we cannot include events that do not have adequate verifiable information.",
+   "claim": "may underestimate stoppages, excluding events without adequate verifiable information",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Updated 2024 Findings",
+   "quote": "We added nine additional strikes to our 2024 data, which now includes 368 work stoppages.",
+   "claim": "2024 revised upward by nine strikes, to 368 stoppages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶1",
+   "quote": "We documented 303 work stoppages (298 strikes and five lockouts) involving approximately 290,000 workers. These work stoppages resulted in approximately 4,150,000 strike days.",
+   "claim": "2025: 303 stoppages (298 strikes, five lockouts), about 290,000 workers, about 4,150,000 strike days",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶3 s1",
+   "quote": "Despite a decline in the number of work stoppages in the Accommodation and Food Service sector, which tend to be relatively short and small in nature, more strikes occurred in this industry than any other.",
+   "claim": "Accommodation and Food Service had more strikes than any other industry",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶3 s3–4",
+   "quote": "Another notable change came from the Healthcare and Social Assistance industry, which overtook Manufacturing and Educational Services to become the second largest industry by number of work stoppages. Healthcare and Social Assistance was also the largest industry by number of workers and strike days.",
+   "claim": "Healthcare and Social Assistance second by stoppages, first by workers and strike days",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶4 s3",
+   "quote": "The demand for a first contract increased considerably between 2024 and 2025, going from 45 to 70, indicating ongoing activism by workers fighting for a first contract.",
+   "claim": "first-contract demands rose from 45 to 70",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶4 s4",
+   "quote": "the West region accounted for 77.1% of all workers on strike in 2025, primarily due to labor activism in California.",
+   "claim": "the West held 77.1% of workers on strike in 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Key Findings from 2025 ¶4 s6–7",
+   "quote": "Finally, the share of strikes organized by nonunion workers reached the lowest levels since we began tracking work stoppages in 2021. Nonunion workers organized approximately 27.6% of all strikes between 2021-2024, including over 30% in 2021 and 2022, but just 18.5% in 2025.",
+   "claim": "the nonunion share of strikes fell to 18.5% in 2025, from about 27.6% over 2021–2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Labor Action by Size",
+   "quote": "Despite 36% of work stoppages involving fewer than 50 people, strikes that involved 1,000 or more workers represented 87% of all workers on strike in 2025.",
+   "claim": "36% of stoppages under 50 people; strikes of 1,000 or more workers 87% of all strikers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Labor Action by Authorization Status 2025",
+   "quote": "A vast majority of all unionized strikes (95.5%) were authorized by a union, compared to 2.9% that were unauthorized and 1.7% that were unknown.",
+   "claim": "95.5% of unionized strikes authorized by a union, 2.9% unauthorized, 1.7% unknown",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the annual report 2025",
+   "date": "2026 (the report's suggested citation: 'O’Brien, L., Iyer, D. K., and Kallas, J. (2026).')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 10630d60e38206f6…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "UI and Cornell launch labor action tracker in Illinois",
+   "claim": "The Daily Illini reports the University of Illinois and Cornell launching the tracker in Illinois",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin, launch and rename",
+   "date": "Oct 30, 2026 (the card's date, as the card gives it)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as rendered in the transcript's card rail (the source unreachable)"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "Johnnie Kallas, professor in Labor and Employment Relations, said the project grew out of an increase in protests during the pandemic.",
+   "claim": "Kallas, as reported, says the project grew out of an increase in protests during the pandemic",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin, launch and rename",
+   "date": "Oct 30, 2026 (the card's date, as the card gives it)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as rendered in the transcript's card rail (the source unreachable)"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card title and snippet",
+   "quote": "U.S. Bureau of Labor Statistics Work Stoppages program providing monthly and annual data on major work stoppages involving 1,000+ workers",
+   "claim": "the BLS program gives monthly and annual data on major stoppages of 1,000+ workers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "against the official count: the BLS threshold",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as rendered in the transcript's card rail (the source unreachable)"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶1 s1",
+   "quote": "Welcome to the Labor Action Tracker, a collaboration between Cornell University's ILR School and the University of Illinois' LER School.",
+   "claim": "a collaboration between Cornell's ILR School and Illinois's LER School",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator: Cornell ILR and Illinois LER",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶1 s2",
+   "quote": "The Tracker provides a comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+   "claim": "a comprehensive database of strike and labor protest activity across the United States, for activists, policymakers and scholars",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a database of strike and labor protest activity",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶1 s3",
+   "quote": "Our project originated at the ILR School in late 2020 and went public on May 1, 2021, as the Cornell ILR Labor Action Tracker thanks to generous funding from the ILR School.",
+   "claim": "begun at the ILR School in late 2020; public on 1 May 2021 as the Cornell ILR Labor Action Tracker, funded by the ILR School",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin, launch and rename",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶1 s4",
+   "quote": "In January 2024, the Tracker became a collaborative effort between Cornell ILR and Illinois LER and was rebranded the Labor Action Tracker.",
+   "claim": "since January 2024 a Cornell ILR and Illinois LER collaboration, renamed the Labor Action Tracker",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin, launch and rename",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶1 s5",
+   "quote": "We also thank the staff of the China Labour Bulletin for inspiring and encouraging us to develop this project.",
+   "claim": "the staff of the China Labour Bulletin thanked for inspiring and encouraging the project",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage: the China Labour Bulletin",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s1",
+   "quote": "We began documenting strikes in late-2020 and labor protests in early-2021.",
+   "claim": "strikes documented from late 2020, labor protests from early 2021",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s2",
+   "quote": "Our database of strikes is most accurate as of 2021.",
+   "claim": "the strike database most accurate as of 2021",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s3",
+   "quote": "We have a relatively high degree of confidence in our ability to comprehensively capture strike activity.",
+   "claim": "relatively high confidence in capturing strike activity comprehensively",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s4",
+   "quote": "Due to the high number of labor protests across the United States, we aim to provide a general understanding of labor protest activity rather than achieve a complete count.",
+   "claim": "for labor protests, a general understanding without a complete count",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": true,
+   "lineage": "coverage and its stated limits",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s5",
+   "quote": "Please note that our map generates the total number of strike and/or labor protest locations, which is more than the total number of individual strikes and/or protests (e.g. a single strike at five locations will appear five times on our map).",
+   "claim": "the map counts locations, more than the number of strikes or protests",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "coverage and its stated limits",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s6",
+   "quote": "Information we gather is from public sources and manually inputted into our tracker.",
+   "claim": "information from public sources, entered by hand",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶2 s7",
+   "quote": "Please see our methodology document for a more detailed description of our definitions, protocols, and variables.",
+   "claim": "a methodology document of definitions, protocols and variables",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Our Project ¶3",
+   "quote": "For any questions, or to access a spreadsheet version of our project's data, please email Johnnie Kallas",
+   "claim": "a spreadsheet version of the data by email to the director",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "data access",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Current Project Members: Johnnie Kallas, Project Director",
+   "quote": "Johnnie Kallas is an Assistant Professor at the School of Labor and Employment Relations at the University of Illinois.",
+   "claim": "the project director, Johnnie Kallas, an Assistant Professor at Illinois LER",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Cornell ILR and Illinois LER",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "Current Project Members: Dylan Bogash",
+   "quote": "She joined the Labor Action Tracker in August 2025, collecting data on strike outcomes.",
+   "claim": "a member collects data on strike outcomes since August 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: public sources, verified and entered by hand",
+   "date": "undated (the page as read by the census 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 565e8d40ddeb6536…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "en.wikipedia.org, Labor_Action_Tracker (rendered page)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "no Wikipedia article under the name (HTTP 404), nor under its earlier name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 63d41892c823f42c…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "ILR Labor Action Tracker — ILR Labor Action Tracker",
+  "B2": "Cornell's ILR School — Labor Action Tracker",
+  "B3": "Cornell ILR School — Labor Action Tracker 2025",
+  "B4": "Facebook·The Daily Illini — UI and Cornell launch labor action tracker in Illinois",
+  "B5": "Bureau of Labor Statistics (.gov) — Work Stoppages Home Page : U.S. Bureau of Labor Statistics",
+  "B6": "ILR Labor Action Tracker — About Us | ILR Labor Action Tracker",
+  "B7": "Wikipedia — Labor Action Tracker (no article)"
+ }
+}
