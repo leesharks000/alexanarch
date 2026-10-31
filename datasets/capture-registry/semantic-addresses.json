@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-31T07:53:58Z",
+  "regenerated_at": "2026-10-31T08:16:11Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "e7567f37b6e1314a6651ec91aa8808bf2c504b2921a7ffb6f5dcc930189d69db",
+    "mm-main-capture": "c2b6f8326423d7d89a597c4fec0b52b099085bd659c79786c64445824f01c6b0",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2615,
-  "total_observations": 1154,
+  "total_addresses": 2616,
+  "total_observations": 1155,
   "class_counts": {
     "subjunctive": 1739,
-    "observed_address": 859,
+    "observed_address": 860,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1735,
+    "unmatched": 1736,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -5715,6 +5715,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-13",
       "latest_status": "CAPTURE"
+    },
+    "\"semantic warfare\"": {
+      "canonical_query": "\"semantic warfare\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "'\"SEMANTIC WARFARE\"' IN AI MODE, EXACT MATCH — REX FRACTION NAMED IN ONE ARENA OF FOUR; THE DEFINITION ON THE ARCHIVE'S TECHNICAL DISCLOSURE COMMONS CHIP, ITS CREDIT TO ASTRA MIRROR AND A MISNAMED STRATEGIC ADVOCACY; 'ONTOLOGICAL' ONLY AS A POPULATION'S SECURITY",
+          "surface": "Google AI Mode",
+          "source_format": null,
+          "section": "Works",
+          "slug": "semantic-warfare-exact-aimode-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#semantic-warfare-exact-aimode-20261031",
+          "record_url": "https://www.alexanarch.org/captures/semantic-warfare-exact-aimode-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#semantic-warfare-exact-aimode-20261031",
+          "details_excerpt": "THE PHRASE IN QUOTATION MARKS, AI MODE, SIGNED OUT, 2026-10-31 04:08: 'Semantic warfare is a framework for understanding how conflict is conducted by manipulating meaning, interpretation, labels, and frames, rather than "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch deposit #230 (creator Lee Sharks). Recorded 2026-10-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "'\"SEMANTIC WARFARE\"' IN AI MODE, EXACT MATCH — REX FRACTION NAMED IN ONE ARENA OF FOUR; THE DEFINITION ON THE ARCHIVE'S TECHNICAL DISCLOSURE COMMONS CHIP, ITS CREDIT TO ASTRA MIRROR AND A MISNAMED STRATEGIC ADVOCACY; 'ONTOLOGICAL' ONLY AS A POPULATION'S SECURITY"
     },
     "\"semiotic death drive\"": {
       "canonical_query": "\"semiotic death drive\"",
