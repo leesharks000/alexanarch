@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 478,
- "with_atom_set": 474,
+ "count": 479,
+ "with_atom_set": 475,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -166297,6 +166297,241 @@
    "external": true,
    "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
    "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
+  },
+  {
+   "id": "TGT-ea-mpai-semantic-warfare-01",
+   "name": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Metadata packet; disambiguation, forensic and provenance, bridge (MPAI v2.0, #1677 §2): semantic warfare and Autonomous Semantic Warfare' (family MPAI): a work, read on the work template with PER-D under rubric v1.1.",
+   "records": [
+    {
+     "deposit": 1723,
+     "title_quote": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Rex Fraction",
+      "Sharks, Lee",
+      "Fraction, Rex"
+     ],
+     "reference": "Lee Sharks and Rex Fraction",
+     "evidence": [
+      {
+       "record_quote": "Lee Sharks (ORCID 0009-0000-1599-0703) and Rex Fraction",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Layer Is a Party",
+      "EA-MPAI-SEMANTIC-WARFARE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.0)",
+       "locus": "data/registry.json #1723 title"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-31",
+      "31 October 2026",
+      "October 31, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited in the Crimson Hexagonal Archive on 31 October 2026",
+       "locus": "data/registry.json #1723 wiki_article"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The phrase has many users and the packet claims none of their uses; it gives the earliest located attestation of each configuration the archive contributes, the composition layer as an actor.",
+     "evidence": [
+      {
+       "record_quote": "The archive claims neither the phrase, nor the concept of meaning as contested ground, nor the mechanisms the field names.",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Ontological Economy",
+      "Autonomous Semantic Warfare",
+      "Semantic Economy"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Ontological Economy (#1634) supplies the mechanics of the added actor's conduct and their costs.",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "captures",
+      "AXN:0B45",
+      "AXN:0B44",
+      "AXN:0B46",
+      "composition-source audit"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The four captures of 2026-10-31 and the capture of 2026-06-15, with transcripts.",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To attribute each use of the phrase to its source by four relations of priority, describe the contemporary frameworks at their own grain, and state the proposition that the composing layer is a party and a terrain, with its findings bounded and its hypothesis registered.",
+     "evidence": [
+      {
+       "record_quote": "It attributes each use to its source, records the documented antecedents, describes the contemporary frameworks at their own grain",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A declared adversary with published rules of engagement; claims made contestable by stated evidence, neighbouring objects, prior-art conditions and registered observations; the warfare classification left open under #100's threshold.",
+     "evidence": [
+      {
+       "record_quote": "It is a declared adversary with published rules of engagement",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Volosinov",
+      "Eco",
+      "Libicki",
+      "#100",
+      "Field Manual",
+      "#230"
+     ],
+     "reference": "the critical tradition (Volosinov, Eco), the security tradition (Libicki), and the archive's line (#230, #295, the Field Manual, #100, #1634)",
+     "evidence": [
+      {
+       "record_quote": "Sign becomes an arena of the class struggle.",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0B47",
+      "#1723",
+      "1723"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AXN:0B47.MPAI.👆●⏪🔔📦🕛",
+       "locus": "data/registry.json #1723 axn"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#100",
+      "#1677",
+      "#1644",
+      "EA-MPAI-AUTONOMOUS-WARFARE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-MPAI-AUTONOMOUS-WARFARE-01",
+       "locus": "data/texts/AXN-0B47-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 for the first reading of #1723 (ChatGPT, signed out, given the record's link).",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
   }
  ],
  "entity_pass": {
@@ -166497,6 +166732,14 @@
    "date": "2026-10-31",
    "brief": "rebuild/capture-registry/intake-20261031-semantic-warfare/build.py (the parts are authored in parts.py)",
    "new_sets": [],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-31",
+   "brief": "rebuild/capture-registry/intake-20261031-semantic-warfare/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-ea-mpai-semantic-warfare-01"
+   ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }
  ]

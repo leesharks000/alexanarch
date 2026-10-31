@@ -1,10 +1,10 @@
 {
  "description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
- "generated": "2026-10-31T15:15:36Z",
- "positions_count": 2855,
+ "generated": "2026-10-31T15:45:57Z",
+ "positions_count": 2857,
  "symbolon_entries": 79,
  "non_entries": 83,
- "capture_positions": 893,
+ "capture_positions": 895,
  "release_positions": 60,
  "panel_positions": 27,
  "contested_count": 5,
@@ -27342,7 +27342,8 @@
     "AXN:0A39.RELEASE.📖🎻⏪🜁⚙️●",
     "AXN:0A39.RELEASE.☿🔩🏴🔐🤙🔛",
     "AXN:0A39.RELEASE.♈🔴🧪🎬♉🪐",
-    "AXN:0A39.RELEASE.🎻🪞🦋⏫💫🌹"
+    "AXN:0A39.RELEASE.🎻🪞🦋⏫💫🌹",
+    "AXN:0A39.RELEASE.🪄🌔🏗️🙏🌺♈"
    ]
   },
   "0A3A": {
@@ -27942,7 +27943,8 @@
     "AXN:0A62.INSTRUMENT.🌑📚⛳📐🥁👇",
     "AXN:0A62.INSTRUMENT.♆🎻⏳⚡☉🟢",
     "AXN:0A62.INSTRUMENT.🕚🌑🍀♊🔮🌕",
-    "AXN:0A62.INSTRUMENT.🚀🗂️🗺️🔜🔃🌀"
+    "AXN:0A62.INSTRUMENT.🚀🗂️🗺️🔜🔃🌀",
+    "AXN:0A62.INSTRUMENT.○📎🔛🗼🏷️🧊"
    ]
   },
   "0A63": {
@@ -30834,6 +30836,30 @@
    "status": "composed, not frozen",
    "minted": "2026-10-31",
    "versions": 1
+  },
+  "0B4A": {
+   "axn": "AXN:0B4A.CAPTURE",
+   "root": "AXN:0B4A.CAPTURE",
+   "source": "capture",
+   "family": "CAPTURE",
+   "record": "https://www.alexanarch.org/captures/enter-crimson-hexagon-colon-aio-20261031/",
+   "q": "/enter:crimson hexagon",
+   "allocated": "2026-10-31",
+   "observations": {
+    "enter-crimson-hexagon-colon-aio-20261031": "AXN:0B4A.CAPTURE.🧭⚓💡🔽♻️♍"
+   }
+  },
+  "0B4B": {
+   "axn": "AXN:0B4B.CAPTURE",
+   "root": "AXN:0B4B.CAPTURE",
+   "source": "capture",
+   "family": "CAPTURE",
+   "record": "https://www.alexanarch.org/captures/the-layer-is-a-party-chatgpt-20261031/",
+   "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/",
+   "allocated": "2026-10-31",
+   "observations": {
+    "the-layer-is-a-party-chatgpt-20261031": "AXN:0B4B.CAPTURE.■↗️⏰🤲📜💎"
+   }
   }
  },
  "kernels": {
@@ -55879,6 +55905,16 @@
    "observation": "enter-crimson-hexagon-ask-chatgpt-20261030",
    "until": "2026-10-31"
   },
+  "502c3cd5feae0ffbf3f8bc61d8da831697eb19be8ec359a98de98d1569b99926": {
+   "role": "capture-observation",
+   "axn": "AXN:0B4A.CAPTURE.🧭⚓💡🔽♻️♍",
+   "root": "AXN:0B4A.CAPTURE",
+   "source": "capture",
+   "observation": "enter-crimson-hexagon-colon-aio-20261031",
+   "sealed": "/data/captures/sealed/enter-crimson-hexagon-colon-aio-20261031.json",
+   "date": "2026-10-31",
+   "surface": "Google AI Overview"
+  },
   "2f0ff96f548507517bdf8700ede548df2a66f337d6ffa73291a9e7b4afba8176": {
    "role": "capture-observation",
    "axn": "AXN:0B21.CAPTURE.🏺🌊🔒🔄⛳🎪",
@@ -63143,6 +63179,16 @@
    "date": "2026-10-19",
    "surface": "Google AI Overview"
   },
+  "9eda61b1401c3a7d0de01def3cdb1c7ce77977b8425c545a16f87903aa8ecc9d": {
+   "role": "capture-observation",
+   "axn": "AXN:0B4B.CAPTURE.■↗️⏰🤲📜💎",
+   "root": "AXN:0B4B.CAPTURE",
+   "source": "capture",
+   "observation": "the-layer-is-a-party-chatgpt-20261031",
+   "sealed": "/data/captures/sealed/the-layer-is-a-party-chatgpt-20261031.json",
+   "date": "2026-10-31",
+   "surface": "ChatGPT"
+  },
   "b376e5d132ddbab622dbada03ce019f0f18d8788269cabd1e1fd56962c65958f": {
    "role": "capture-observation",
    "axn": "AXN:0856.CAPTURE.🙏🌳🏙️🔻⚙️↖️",
@@ -65633,6 +65679,16 @@
    "basis": "manifest",
    "manifest": "/data/releases/manifests/capture-registry/12.450+2026-10-31.52.sha256"
   },
+  "3e0321b371a9afd1a611a94ff06883d82c7e7def31f5d30198002dd2dd4bd261": {
+   "role": "release",
+   "axn": "AXN:0A39.RELEASE.🪄🌔🏗️🙏🌺♈",
+   "root": "AXN:0A39.RELEASE",
+   "source": "release",
+   "object": "capture-registry",
+   "label": "12.452",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/capture-registry/12.452.sha256"
+  },
   "d522f0a689f1353ba899def27376c198827452d879b45fe0bc5f1f71275e67a9": {
    "role": "release",
    "axn": "AXN:0A4F.RELEASE.🔽🧱🏁♆🎹🎬",
@@ -66264,6 +66320,16 @@
    "label": "PER-dim rubric v1.1+2026-10-31.15",
    "basis": "manifest",
    "manifest": "/data/releases/manifests/per-dim-rubric/PER-dim_rubric_v1.1+2026-10-31.15.sha256"
+  },
+  "9b47f42a4c1d8452329b16894bec153953923c3d968b3b944eaf23afe83ff732": {
+   "role": "release",
+   "axn": "AXN:0A62.INSTRUMENT.○📎🔛🗼🏷️🧊",
+   "root": "AXN:0A62.INSTRUMENT",
+   "source": "release",
+   "object": "per-dim-rubric",
+   "label": "PER-dim rubric v1.1+2026-10-31.16",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/per-dim-rubric/PER-dim_rubric_v1.1+2026-10-31.16.sha256"
   },
   "2ec6c1143d531b1deffcecadbd3391d33d0c7bda3da4207c4d1d6606f0053b0f": {
    "role": "release",
