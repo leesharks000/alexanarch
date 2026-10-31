@@ -429,11 +429,11 @@ COPY_JS = ("<script>document.addEventListener('click',function(ev){var b=ev.targ
            "b.textContent='copied';setTimeout(function(){b.textContent=o},1200)})}});</script>")
 
 def non_title(name):
-    return f"{name} — The Negative of the Negative"
+    return f"{name} — NonWiki"
 
 def citation_of(name, url, axn, date):
     return (f'Sharks, Lee. "{non_title(name)}"' + (f" [{axn}]" if axn else "") + f", {date or 'n.d.'}. "
-            f"The Negative of the Negative (EA-NEGONT-02), Crimson Hexagonal Archive, Alexanarch. {url}")
+            f"NonWiki: The Negative of the Negative (EA-NEGONT-02), Crimson Hexagonal Archive, Alexanarch. {url}")
 
 def research_links(name):
     from urllib.parse import quote_plus as qp
@@ -757,7 +757,7 @@ def gnosis_line(by_gnosis=None):
 CEIL, WARN = 4_000_000, 600_000
 CREATOR = {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
-NON_DESC = ("Public knowledge composed three ways at one address, with the archive admitted on equal terms: per-entity "
+NON_DESC = ("NonWiki, a sourced encyclopedia: public knowledge composed three ways at one address, with the archive admitted on equal terms: per-entity "
             "knowledge objects in the archive's ontology, the public field carried whole, and the translation between them; "
             "working, not frozen (EA-NEGONT-02).")
 
@@ -837,11 +837,11 @@ def by_index(toc, rows, groups, panel, reg):
     def bpage(path, title, desc, body, n):
         url = f"{BASE}/{path[:-10]}"
         jl = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": url, "description": desc,
-              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative", "url": f"{BASE}/non/"}, "numberOfItems": n}
+              "isPartOf": {"@type": "Dataset", "name": "NonWiki", "alternateName": "The Negative of the Negative", "url": f"{BASE}/non/"}, "numberOfItems": n}
         return npage(title + " — Alexanarch", desc, body, url, jl, f'<link rel="canonical" href="{url}">\n' + BYCSS)
     out, idx = {}, []
     head = lambda title, n: (f'<p class="crumbs"><a href="/non/">/non</a> · <a href="/non/by/">by type, case and month</a></p><h1>{esc(title)}</h1>'
-                             f'<p class="sub">{n} entr{"y" if n == 1 else "ies"} of The Negative of the Negative (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>). '
+                             f'<p class="sub">{n} entr{"y" if n == 1 else "ies"} of NonWiki, the Negative of the Negative (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>). '
                              'Each row: the entity (its page is its citation), its type, its case and ρ, the date composed; then each address at which it was observed, '
                              'with date, surface and sign-in; then the entry in one line. Working, not frozen.</p>')
     for dim in ("type", "case", "month"):
@@ -850,7 +850,7 @@ def by_index(toc, rows, groups, panel, reg):
             xs = sorted(groups_by[dim][g], key=lambda x: (x.get("date") or "", x["name"]), reverse=(dim == "month"))
             path = f"non/by/{dim}/{slugify(g)}/index.html"
             title = f"/non by {dim}: {label[dim](g)}"
-            out[path] = bpage(path, title, f"{len(xs)} entries of The Negative of the Negative, {label[dim](g)}.",
+            out[path] = bpage(path, title, f"{len(xs)} entries of NonWiki, {label[dim](g)}.",
                               head(title, len(xs)) + "".join(rec(x) for x in xs), len(xs))
             links.append(f'<a href="/{path[:-10]}">{esc(label[dim](g))}</a> ({len(xs)})')
         idx.append(f'<h2>By {dim}</h2><p class="idx">' + " · ".join(links) + "</p>")
@@ -864,8 +864,8 @@ def by_index(toc, rows, groups, panel, reg):
                        f'{esc(e["auth"])} · archive {"present" if e["archive_present"] else "absent"}</span>'
                        f'<div class="d">entity: <a href="/non/{esc(k)}/">{esc(next((x["name"] for x in toc if x["entity"] == k), k))}</a></div></div>')
     out["non/by/index.html"] = bpage("non/by/index.html", "/non by type, case and month",
-                                     f"{len(toc)} entries and {len(reg.get('entries', []))} addresses of The Negative of the Negative, indexed by type, case and month.",
-                                     '<p class="crumbs"><a href="/non/">/non</a></p><h1>The Negative of the Negative, by type, case and month</h1>'
+                                     f"{len(toc)} entries and {len(reg.get('entries', []))} addresses of NonWiki, indexed by type, case and month.",
+                                     '<p class="crumbs"><a href="/non/">/non</a></p><h1>NonWiki, by type, case and month</h1>'
                                      f'<p class="sub">{len(toc)} entries, {n_addr} of the register\'s {len(reg.get("entries", []))} addresses under them. Smaller pages, each row with its entity, '
                                      'its addresses, its case and its entry in one line; the entity\'s own page is its citation. The register\'s addresses, newest first, are below.</p>'
                                      + "".join(idx) + '<h2>Every entry</h2>' + allrows
@@ -895,8 +895,11 @@ def main():
     PE = json.loads(_pe.read_text(encoding="utf-8"))["records"] if _pe.exists() else {}
     _lv = V2 / "panel/lv-records.json"  # the Labor Vector meta-aggregator record of an entity, where one exists (declared 2026-10-29)
     LV = json.loads(_lv.read_text(encoding="utf-8"))["records"] if _lv.exists() else {}
+    _rf = V2 / "panel/rf-records.json"  # the Revelation First meta-aggregator ('the field') record of an entity, where one exists (declared 2026-10-31)
+    RF = json.loads(_rf.read_text(encoding="utf-8"))["records"] if _rf.exists() else {}
     REG = _sources()
 
+    NONWIKI = ('<p>NonWiki is an encyclopedia of public knowledge with its sources open. Each article states what is known of one entity, a poem, a person, a text, a tool, a field of study, and every sentence of it cites the passages it rests on, each quoted from a saved copy of its source, with the source\'s address and hash. The articles are composed by the archive from disclosed sources, under a published procedure; there is no edit function, and an article is checked by reading its sources, which are all on the page.</p>')
     LEDE = ('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     STATUS = ('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18), each page showing its v0.7 composition below the current one, labelled; SPXI and Theophrastus stand at v0.8, the cases v0.9\'s law of the suppressed witness calls for (ruled 2026-10-19); the panel (<a href="/non/panel/">/non/panel/</a>) is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on /non is a frozen measurement.</div>')
     how = ('<div class="objs">'
@@ -1197,6 +1200,8 @@ def main():
             links["provenance_record"] = PE[k]["url"]
         if k in LV:
             links["labor_record"] = LV[k]["url"]
+        if k in RF:
+            links["field_record"] = RF[k]["url"]
         links["dataset"] = HF_NON
         links = {kk: vv for kk, vv in links.items() if vv}
         ax = AX.get(k)
@@ -1246,9 +1251,11 @@ def main():
             sub.append(f'<a href="{esc(PE[k]["url"])}">the provenance meta-aggregator record</a>')
         if k in LV:
             sub.append(f'<a href="{esc(LV[k]["url"])}">the Labor Vector meta-aggregator record</a>')
+        if k in RF:
+            sub.append(f'<a href="{esc(RF[k]["url"])}">the Revelation First meta-aggregator record (the field)</a>')
         kind_ = "operator" if (r or {}).get("object_kind") == "operator" else "entity"
-        sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › {kind_} <code>{esc(k)}</code></p>',
-               f'<p class="sub" style="font-size:.85em">One {kind_} of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
+        sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">NonWiki</a> › {kind_} <code>{esc(k)}</code></p>',
+               f'<p class="sub" style="font-size:.85em">One {kind_} of NonWiki, the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
                f'cited at <code>{url}</code>. ' + " · ".join(sub) + '.</p>'
                f'<p class="meta" data-for="machines">{esc(READING_NOTE)}</p>',
                f'<section id="e-{esc(k)}"><h1>{esc(en["name"])}</h1>'
@@ -1289,10 +1296,10 @@ def main():
         if P:
             lede = f'{P["title"]} {P["lede"]["text"]}'
         desc = lede or f'{en["name"]}: {type_label(en["type"])}. {en.get("stage") or ""}'
-        ld = {"@context": "https://schema.org", "@type": "CreativeWork", "name": f'{en["name"]} — The Negative of the Negative',
+        ld = {"@context": "https://schema.org", "@type": "CreativeWork", "name": f'{en["name"]} — NonWiki',
               "url": url, "identifier": ([f"non:{k}", {"@type": "PropertyValue", "propertyID": "AXN", "value": ax["axn"], "url": f"{BASE}/s/axn/{ax['hex']}/"}] if ax else f"non:{k}"), "dateModified": last, "description": desc[:600], "creator": CREATOR, "license": LICENSE,
               "creativeWorkStatus": "working; not frozen", "isBasedOn": f"{BASE}/s/records/{spec_no(en, r)}/",
-              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version"),
+              "isPartOf": {"@type": "Dataset", "name": "NonWiki", "alternateName": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version"),
                            "description": NON_DESC, "creator": CREATOR, "license": LICENSE},
               "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "entity.json",
                            "description": "the entry itself: its knowledge object, every sentence with its claims, each claim's quote, source and locus"},
@@ -1308,11 +1315,14 @@ def main():
         if k in LV:
             ld.setdefault("citation", []).append({"@type": "WebPage", "name": f'{LV[k]["name"]} — Labor Vector meta-aggregator record', "url": LV[k]["url"],
                                "isPartOf": {"@type": "Dataset", "name": "Labor Vector meta-aggregator", "url": "https://www.laborvector.org/aggregators/"}})
+        if k in RF:
+            ld.setdefault("citation", []).append({"@type": "WebPage", "name": f'{RF[k]["name"]} — Revelation First meta-aggregator record', "url": RF[k]["url"],
+                               "isPartOf": {"@type": "Dataset", "name": "Meta-Aggregators of the Crimson Hexagon: the field (Revelation First)", "url": "https://www.revelationfirst.com/aggregators/"}})
         head = (f'<link rel="canonical" href="{url}">\n<link rel="cite-as" href="{url}">\n'
                 f'<link rel="describedby" href="{url}entity.json" type="application/json">\n<link rel="collection" href="{BASE}/non/">\n'
-                f'<meta name="citation_title" content="{esc(en["name"])} — The Negative of the Negative"><meta name="citation_date" content="{esc(str(last))}">'
+                f'<meta name="citation_title" content="{esc(en["name"])} — NonWiki"><meta name="citation_date" content="{esc(str(last))}">'
                 f'<meta name="citation_public_url" content="{url}">\n')
-        files[f"non/{k}/index.html"] = npage(f'{en["name"]} — The Negative of the Negative — Alexanarch', desc[:300], body, url, ld, head + ACT_CSS, OPEN_JS + COPY_JS)
+        files[f"non/{k}/index.html"] = npage(f'{en["name"]} — NonWiki — Alexanarch', desc[:300], body, url, ld, head + ACT_CSS, OPEN_JS + COPY_JS)
 
         toc.append({"entity": k, "name": en["name"], "axn": ax["axn"] if ax else None, "type": en["type"], "type_code": type_code(en["type"]),
                     "case": _case_of(r), "composer_class": (comp or {}).get("composer_class"), "stage": en.get("stage"),
@@ -1382,7 +1392,7 @@ def main():
             '.er-x{font-family:var(--mono);font-size:.74em;color:var(--teal);border:0;overflow-wrap:anywhere}'
             '.er-m{display:flex;flex-wrap:wrap;gap:2px 10px;font-family:var(--mono);font-size:.72em;color:var(--dim);margin-top:2px}'
             '.er-d{font-size:.86em;color:#444;margin:4px 0 0}.er-a{font-size:.78em;color:var(--dim);margin:2px 0 0}</style>\n')
-    b = ['<h1>The Negative of the Negative</h1>', LEDE,
+    b = ['<h1>NonWiki<span style="display:block;font-size:.5em;font-weight:400;color:var(--dim);margin-top:4px"><em>A sourced encyclopedia</em> · <em>The Negative of the Negative</em></span></h1>', NONWIKI, LEDE,
          '<p class="statusline"><strong>Working, not frozen.</strong> Composed under EA-NEGONT-02 v0.9 (<a href="/s/records/1690/">#1690</a>), '
          'which is being tested, iterated and revised. <a href="/non/about/">Status, method and procedure</a>.</p>',
          gnosis_line(),
@@ -1429,11 +1439,11 @@ def main():
     def subpage(path, title, desc, body, ld_type="WebPage"):
         url = f"{BASE}/{path[:-10]}"
         jl = {"@context": "https://schema.org", "@type": ld_type, "name": title, "url": url, "description": desc,
-              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative", "url": f"{BASE}/non/"}}
+              "isPartOf": {"@type": "Dataset", "name": "NonWiki", "alternateName": "The Negative of the Negative", "url": f"{BASE}/non/"}}
         files[path] = npage(title + " — Alexanarch", desc, body, url, jl, f'<link rel="canonical" href="{url}">\n<style>.regt td{{overflow-wrap:normal;word-break:normal}}</style>\n')
         sm.append(f"  <url><loc>{url}</loc></url>")
-    subpage("non/about/index.html", "The Negative of the Negative — status, method and procedure",
-            "The status of the Negative of the Negative, how an entity reads, its entity types, and its procedure and data.",
+    subpage("non/about/index.html", "NonWiki — status, method and procedure",
+            "The status of NonWiki, the Negative of the Negative, how an entity reads, its entity types, and its procedure and data.",
             crumbs("status, method and procedure") + '<h1>Status, method and procedure</h1>' + LEDE + STATUS
             + '<h2>How an entity reads</h2>' + how + '<h2>Entity types</h2>' + LEGEND + PROC
             + f'<p class="foot">Lee Sharks · Crimson Hexagonal Archive · {built_on}.</p>')
@@ -1447,8 +1457,8 @@ def main():
                            f'<td><a href="{dest}">{esc(e["q"])}</a><br><span class="meta" style="white-space:nowrap">{esc(", ".join(e["dates"]))}</span></td>'
                            f'<td>{esc(e["surface"])}<br><span class="meta">{esc(e["auth"])}</span></td>'
                            f'<td>{"present" if e["archive_present"] else "absent"}<span class="meta">{esc(cards_)}</span></td></tr>')
-        subpage("non/register/index.html", "The Negative of the Negative — the register",
-                f"Every address of the Negative of the Negative: {reg.get('address_count')} addresses, {reg.get('observation_count')} observations.",
+        subpage("non/register/index.html", "NonWiki — the register",
+                f"Every address of NonWiki: {reg.get('address_count')} addresses, {reg.get('observation_count')} observations.",
                 crumbs("the register") + '<h1>The register</h1>' + REGHEAD
                 + '<div class="tw"><table class="regt"><thead><tr><th>entity</th><th>address · date</th><th>surface · signed</th><th>archive · cards</th></tr></thead>'
                 + f'<tbody>{"".join(trs)}</tbody></table></div>'
@@ -1470,8 +1480,8 @@ def main():
                   + ('<span class="pill ok">composed</span>' if done else '<span class="pill warn">listed, not composed</span>') + f'<span class="stage">addresses: {" · ".join(al)}</span>'
                   + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
     n_done = sum(1 for pr in panel["entities"] if pr["entity"] in rows)
-    subpage("non/panel/index.html", "The Negative of the Negative — the panel",
-            f"The working panel of the Negative of the Negative: {len(panel['entities'])} entities, {n_done} composed.",
+    subpage("non/panel/index.html", "NonWiki — the panel",
+            f"The working panel of NonWiki: {len(panel['entities'])} entities, {n_done} composed.",
             crumbs("the panel") + f'<h1>The panel — {esc(panel["status"])}</h1>'
             + f'<p class="sub">{len(panel["entities"])} entities, {n_done} composed, {len(panel["entities"]) - n_done} listed and not yet composed; alphabetical. '
             f'{esc(panel["keying"])} {esc(panel["rule"])}</p><ul class="plist">{"".join(pl)}</ul>'
@@ -1487,7 +1497,7 @@ def main():
                 'if(h.indexOf("reg-")===0)k=R[h.slice(4)]||null;'
                 'if(!k){var r=h.replace(/^(e|row|ent|trav|lv)-/,"");for(var i=0;i<K.length;i++){if(r===K[i]||r.indexOf(K[i]+"-")===0){k=K[i];break}}}'
                 'if(k)location.replace("/non/"+k+"/#"+encodeURIComponent(h))})();</script>\n')
-    jsonld = {"@context": "https://schema.org", "@type": "Dataset", "name": "The Negative of the Negative (v2, compositional)",
+    jsonld = {"@context": "https://schema.org", "@type": "Dataset", "name": "NonWiki", "alternateName": ["The Negative of the Negative (v2, compositional)", "EA-NEGONT-02"],
               "url": f"{BASE}/non/", "description": NON_DESC, "creator": CREATOR, "license": LICENSE, "creativeWorkStatus": "working; procedure not frozen",
               "isBasedOn": f"{BASE}/s/records/1690/", "version": reg.get("version"), "dateModified": reg.get("date"),
               "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/non/index.json"},
@@ -1496,10 +1506,10 @@ def main():
                            **({"identifier": {"@type": "PropertyValue", "propertyID": "AXN", "value": x["axn"]}} if x.get("axn") else {})} for x in toc]}
     ihead = (f'<link rel="canonical" href="{BASE}/non/">\n<link rel="cite-as" href="{BASE}/non/">\n'
              f'<link rel="describedby" href="{BASE}/non/index.json" type="application/json">\n'
-             f'<meta name="citation_title" content="The Negative of the Negative"><meta name="citation_date" content="{esc(str(reg.get("date")))}">'
+             f'<meta name="citation_title" content="NonWiki: The Negative of the Negative"><meta name="citation_date" content="{esc(str(reg.get("date")))}">'
              f'<meta name="citation_public_url" content="{BASE}/non/">\n' + ICSS + redirect)
-    files["non/index.html"] = npage("The Negative of the Negative — /non — Alexanarch",
-                                    "Public knowledge composed three ways at one address, with the archive admitted on equal terms; working, not frozen.",
+    files["non/index.html"] = npage("NonWiki — a sourced encyclopedia — Alexanarch",
+                                    "NonWiki, a sourced encyclopedia: public knowledge composed three ways at one address, every sentence citing its quoted source, with the archive admitted on equal terms; working, not frozen.",
                                     "\n".join(b), f"{BASE}/non/", jsonld, ihead, SEARCH_JS)
 
     # every field claim quoted, by row: what a sentence-level reader (SPXI-gnΩsis) matches a sentence against
@@ -1516,7 +1526,7 @@ def main():
             cl.append({"row": k_, "id": cid, "quote": q, "source": f.get("source"), "source_label": fs.get(f.get("source")),
                        "locus": f.get("locus"), "url": f"{BASE}/non/{k_}/"})
     files["non/claims.json"] = jdump({
-        "id": "EA-NEGONT-02-NON-CLAIMS", "title": "The Negative of the Negative — every field claim quoted, by row",
+        "id": "EA-NEGONT-02-NON-CLAIMS", "title": "NonWiki (The Negative of the Negative) — every field claim quoted, by row",
         "canonical": f"{BASE}/non/claims.json", "date": reg.get("date"),
         "statement": ("Every field claim of every /non row with its quote as the row holds it, unquoted: a sentence-level reader matches a "
                       "sentence against these to name the row that already holds it. The row and its ledgers are the authority; this is their index."),
@@ -1524,12 +1534,12 @@ def main():
         "service": SERVICE_BLOCK, "spxi_instrument": _spxi_record(f"{BASE}/non/"),
         "count": len(cl), "claims": cl})
     files["non/index.json"] = jdump({
-        "id": "EA-NEGONT-02-NON", "title": "The Negative of the Negative — table of contents",
+        "id": "EA-NEGONT-02-NON", "title": "NonWiki (The Negative of the Negative) — table of contents",
         "canonical": f"{BASE}/non/", "version": reg.get("version"), "date": reg.get("date"),
         "counts": {"panel_entities": len(panel["entities"]), "entity_pages": len(toc), "composed": sum(1 for x in toc if x["has_ko"]),
                    "register_addresses": reg.get("address_count"), "observations": reg.get("observation_count"),
                    "traversals": len(trav)},
-        "statement": ("The Negative of the Negative (EA-NEGONT-02, #1690, v0.9): per-entity knowledge objects composed with the archive's sources on equal terms, ontology included, or in the archive's ontology where it is the suppressed witness, "
+        "statement": ("NonWiki, the Negative of the Negative (EA-NEGONT-02, #1690, v0.9), a sourced encyclopedia: per-entity knowledge objects composed with the archive's sources on equal terms, ontology included, or in the archive's ontology where it is the suppressed witness, "
                       "the field carried whole and translated; entries composed under v0.7 (#1665) are recomposed one at a time. One row per entity with a page. Each record_url is the entity's own page and "
                       "its citation; json_url is the entry as data: its AXN, its composition, and the entry itself (entry: the knowledge object, every sentence with its claims, each claim's quote, source and locus), with links to its row, ledgers and traversal. "
                       "Working, not frozen (§7.0)."),
