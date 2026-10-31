@@ -3,18 +3,18 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-30T21:40:20Z",
+  "generated_at": "2026-10-31T00:30:45Z",
   "totals": {
-    "deposits": 1721,
-    "concepts": 100,
-    "deposits_in_concepts": 239,
-    "singletons": 1482,
+    "deposits": 1722,
+    "concepts": 101,
+    "deposits_in_concepts": 241,
+    "singletons": 1481,
     "needs_review": 15,
     "program_families": 54
   },
   "basis_counts": {
     "version/declared": 40,
-    "version/implicit": 39,
+    "version/implicit": 40,
     "version/explicit": 7,
     "version/superseded": 2,
     "version/fuzzy": 12
@@ -2167,6 +2167,46 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1262/"
+        }
+      ]
+    },
+    {
+      "concept_id": "ai-calls-you-fake-the-existence-tax-on-real-people-and-real",
+      "concept_url": "https://www.alexanarch.org/s/concept/ai-calls-you-fake-the-existence-tax-on-real-people-and-real/",
+      "title_base": "ai calls you fake the existence tax on real people and real work",
+      "basis": "version/implicit",
+      "root_axn_hex": "0B29",
+      "ea_identifiers": [],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1722,
+        "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+        "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+        "date": "2026-10-30",
+        "version": null,
+        "record_url": "https://www.alexanarch.org/s/records/1722/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1721,
+          "axn": "AXN:0B29.GOVERNANCE.⏪🔝🔄🏷️🔜☉",
+          "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+          "date": "2026-10-30",
+          "version": null,
+          "superseded_marker": false,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1721/"
+        },
+        {
+          "deposit_number": 1722,
+          "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+          "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+          "date": "2026-10-30",
+          "version": null,
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1722/"
         }
       ]
     },
