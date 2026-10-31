@@ -72,7 +72,7 @@ for s in S:
     body = s["text"]
     t = head + "\n\n[QUERENT] " + q + "\n\n[SYSTEM] " + body
     r = rows[slug]
-    pd = PB.pd_of(r)
+    pd = PB.pd_of(r, on=DATE)
     pd["read"]["brief"] = "rebuild/capture-registry/intake-20261031-rf-census/per/BRIEF.md"
     pd["read"]["by"] = f"intake reader {r['group']}, spans and record quotes checked verbatim by scripts/per_backlog.py"
     e = {"slug": slug, "date": DATE, "surface": "Google AI Overview",

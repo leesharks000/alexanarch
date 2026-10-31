@@ -214,12 +214,13 @@ def score(by, new, groups):
     return rows
 
 
-def pd_of(r):
+def pd_of(r, on=None):
+    """on: the date of the reading; an intake passes its own (repair 2026-10-31: every intake since 2026-10-29 was stamped with TODAY)."""
     if r["gate"] == "no_atom_set":
         return {"spec": SPEC, "entity_type": None, "target": None, "qualifier": None, "reached": "unread", "gate": "no_atom_set", "atoms": [],
                 "inversions": [], "standing_substitutions": [], "scores": {"PER": None, "M": None, "C": None, "D": None}, "src": None,
                 "tombstone_pointer": False, "after_challenge": None, "basis": "the address has no archive referent with a defining record: no atom set. " + str(r.get("notes") or "")[:400],
-                "read": {"by": f"backlog reader {r['group']}", "on": TODAY, "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md"}}
+                "read": {"by": f"backlog reader {r['group']}", "on": on or TODAY, "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md"}}
     # Whole, never cut (repair 2026-10-29: a character cut left the basis mid-word on every observation written by this script).
     basis = "; ".join(x for x in [("reached: " + str(r.get("reached_basis"))) if r.get("reached_basis") else "",
                                   str(r.get("basis_note") or ""),
@@ -231,7 +232,7 @@ def pd_of(r):
             "atoms": [{k: a.get(k) for k in ("atom", "dim", "weight", "kind", "present", "evidence")} for a in r["atoms"]],
             "inversions": r["inversions"], "standing_substitutions": r["standing_substitutions"], "scores": r["scores"], "src": r.get("src"),
             "tombstone_pointer": r["tombstone_pointer"], "after_challenge": r.get("after_challenge"), "basis": basis,
-            "read": {"by": f"backlog reader {r['group']}", "on": TODAY, "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
+            "read": {"by": f"backlog reader {r['group']}", "on": on or TODAY, "brief": "rebuild/capture-registry/per-atoms/backlog-20261029/BRIEF.md",
                      "external": r["target"]["external"], "notes": r.get("notes")}}
 
 
