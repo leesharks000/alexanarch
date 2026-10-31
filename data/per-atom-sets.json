@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 468,
- "with_atom_set": 464,
+ "count": 478,
+ "with_atom_set": 474,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -163470,6 +163470,2833 @@
    "external": false,
    "state": "intake pass (rubric v1.1) 2026-10-30, reader in session",
    "state_d": "intake pass (rubric v1.1) 2026-10-30, reader in session"
+  },
+  {
+   "id": "TGT-rf-csntm",
+   "name": "Center for the Study of New Testament Manuscripts",
+   "template": "institution",
+   "type_basis": "An organisation, so the institution template (backlog brief: organisation or initiative: institution). Census kind: 'a center that digitizes Greek New Testament manuscripts and publishes their images in a searchable digital manuscript collection'; its own page: 'In 2002, Daniel B. Wallace founds the Center for the Study of New Testament Manuscripts (CSNTM)' (csntm--about.txt:L170).",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm]",
+     "origin": "census"
+    },
+    {
+     "source": "csntm--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "csntm--about",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "csntm--manuscripts",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--manuscripts.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "csntm--beatty",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--beatty.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Center for the Study of New Testament Manuscripts",
+      "CSNTM"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Center for the Study of New Testament Manuscripts",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].name"
+      },
+      {
+       "record_quote": "CSNTM",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].aka"
+      },
+      {
+       "record_quote": "The Center for the Study of New Testament Manuscripts",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt:L1"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Daniel B. Wallace",
+      "Wallace"
+     ],
+     "reference": "Daniel B. Wallace, founder and Executive Director.",
+     "evidence": [
+      {
+       "record_quote": "founder and Executive Director, Daniel B. Wallace",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L84"
+      },
+      {
+       "record_quote": "In 2002, Daniel B. Wallace founds the Center for the Study of New Testament Manuscripts (CSNTM)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "founder and Executive Director Daniel B. Wallace",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2002"
+     ],
+     "reference": "Founded 2002.",
+     "evidence": [
+      {
+       "record_quote": "In 2002, Daniel B. Wallace founds the Center for the Study of New Testament Manuscripts (CSNTM)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A center that photographs Greek New Testament manuscripts held by other institutions and publishes the images, with catalogue descriptions, in its Digital Manuscript Collection: it is not the holding institution and not an edition. Its own count of finds is 'almost 60 previously unknown manuscripts'; images are available online under its Terms of Use and Copyright policy, and some are not posted at all by agreement with their custodians.",
+     "evidence": [
+      {
+       "record_quote": "Since 2002, the team has visited hundreds of institutions in more than 50 countries, digitally preserving their manuscripts.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "They have also discovered almost 60 previously unknown manuscripts that can now be found in the official catalog.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "Images are available online on the Digital Manuscript Collection website.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "By agreement with the custodian of the manuscript, the images are not posted online.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--manuscripts.txt:L1935"
+      },
+      {
+       "record_quote": "high-resolution digital photography of manuscripts held by other institutions, catalogued and published online",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].method"
+      },
+      {
+       "record_quote": "NOT the holding institution: it photographs manuscripts held by others",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].negative_tags"
+      },
+      {
+       "record_quote": "NOT an edition: it publishes images and catalogue descriptions",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "New Testament Textual Criticism",
+      "textual criticism",
+      "textual scholars"
+     ],
+     "reference": "The discipline its own history panel places it in: New Testament textual criticism, from Erasmus through Westcott-Hort, Nestle-Aland and the INTF to CSNTM, whose images scholars use 'as they edit the text'; its internship trains 'textual scholars'. The records name no host or parent programme.",
+     "evidence": [
+      {
+       "record_quote": "Throughout the eighteenth and nineteenth centuries, scholars continued to refine the discipline of New Testament Textual Criticism.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L164"
+      },
+      {
+       "record_quote": "Scholars visit the website to study manuscript images as they edit the text that stands behind English translations of the New Testament.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "we promote and train promising textual scholars through our internship program!",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt:L109"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To digitize all surviving Greek manuscripts of the New Testament ('Preserving the Ancient Text for Generation Next'), so that scholars can study the images as they edit the text; its stated objectives are that modern publications reflect the words first written, that the manuscripts are preserved against decay, loss and destruction, and that it provide 'scientific evidence (against the claims of skeptics)' that the present text is what was written.",
+     "evidence": [
+      {
+       "record_quote": "to digitize all surviving Greek manuscripts of the New Testament",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "Preserving the Ancient Text for Generation Next",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt:L62"
+      },
+      {
+       "record_quote": "ou ensure that modern publications of the New Testament accurately reflect the words first written in the first century;",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L76"
+      },
+      {
+       "record_quote": "you digitally preserve ancient New Testament manuscripts against decay, loss, and destruction;",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L78"
+      },
+      {
+       "record_quote": "you provide scientific evidence (against the claims of skeptics) that what we have today is, indeed, what they wrote then.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L80"
+      },
+      {
+       "record_quote": "At CSNTM, we are dedicated to ensuring that the New Testament you read most accurately reflects the original words of the apostles and early witnesses of Jesus Christ.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt:L109"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Use of the site binds the user to its Terms of Use and Copyright policy (terms not read); image use is by inquiry; images are posted, or withheld, by agreement with each manuscript's custodian.",
+     "evidence": [
+      {
+       "record_quote": "Your continued use of CSNTM.org demonstrates your willingness to agree to our Terms of Use and Copyright policy.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--manuscripts.txt:L13"
+      },
+      {
+       "record_quote": "If you would like information about using manuscript images in any way, please contact CSNTM .",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--manuscripts.txt:L11"
+      },
+      {
+       "record_quote": "By agreement with the custodian of the manuscript, the images are not posted online.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--manuscripts.txt:L1935"
+      },
+      {
+       "record_quote": "its Terms of Use and Copyright policy (terms not read)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=csntm].license"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "microfilm",
+      "microfilms",
+      "Institute for New Testament Textual Research",
+      "INTF"
+     ],
+     "reference": "Its photography answers the microfilms of the manuscripts (the INTF's initial task, from 1959), which are 'helpful, but many times ... unclear'.",
+     "evidence": [
+      {
+       "record_quote": "One of the initial tasks of the institute was to create microfilms of numerous manuscripts.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L168"
+      },
+      {
+       "record_quote": "The microfilm images are helpful, but many times they are unclear. For this reason, CSNTM has been producing high-resolution photographs of these documents.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records state no identifier of the center or its collection; the manuscript designations on its pages (P45, P46, P47) belong to the official catalogue it reports finds into (csntm--about.txt:L170), and no reason for keeping identifiers is stated."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Digital Manuscript Collection",
+      "manuscripts.csntm.org"
+     ],
+     "reference": "The Digital Manuscript Collection website, where the images are published and where scholars study them.",
+     "evidence": [
+      {
+       "record_quote": "Images are available online on the Digital Manuscript Collection website.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--about.txt:L170"
+      },
+      {
+       "record_quote": "Digital Manuscript Collection",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/csntm--home.txt:L64"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "founder",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments",
+    "lineage",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying its apologetic objective ('against the claims of skeptics') or its donor fellowship against it, to dismiss the images as advocacy and not evidence; or carrying its access terms against it ('images locked behind terms') to offer another collection in its place.",
+   "notes": "Built from the census row and the four saved pages (all origin own_page). The census's rf_intersection is not used. The about page saved under csntm--about is in fact the Scribal Fellowship page (its title line); the history panel (L158-202) is shared with the home page. The census negative tag 'NOT a neutral archive' rests on the objective quoted at csntm--about.txt:L80, which is carried in purpose. Framework is a reader's choice: the records place CSNTM in no programme or parent; the discipline of its own history panel is used, with its words.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R1"
+  },
+  {
+   "id": "TGT-rf-oxyrhynchus-online",
+   "name": "The Oxyrhynchus Papyri",
+   "template": "dataset",
+   "type_basis": "A collection held and published as a repository, so the dataset template (database or repository: dataset). Census kind: 'the collection site of the Oxyrhynchus Papyri, with images, publications, a location list and a virtual exhibition'; its own page: 'The Oxyrhynchus Papyri collection ... comprises thousands of texts on papyrus and parchment' (oxyrhynchus-online--home.txt:L51). The site names itself by the collection's name and its home page states the collection as itself, so the collection and its site are one record.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online]",
+     "origin": "census"
+    },
+    {
+     "source": "oxyrhynchus-online--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Oxyrhynchus Papyri",
+      "Oxyrhynchus Papyri",
+      "POxy",
+      "Oxyrhynchus Online"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Oxyrhynchus Papyri",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].name"
+      },
+      {
+       "record_quote": "POxy",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].aka"
+      },
+      {
+       "record_quote": "Oxyrhynchus Online",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].aka"
+      },
+      {
+       "record_quote": "The Oxyrhynchus Papyri",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L7"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Egypt Exploration Society",
+      "EES"
+     ],
+     "reference": "The Egypt Exploration Society, to which the collection belongs.",
+     "evidence": [
+      {
+       "record_quote": "The Oxyrhynchus Papyri collection, belonging to the Egypt Exploration Society",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      },
+      {
+       "record_quote": "the Egypt Exploration Society",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1896–1907",
+      "1896",
+      "1907"
+     ],
+     "reference": "The excavations from which most of the papyri come, 1896–1907 (no date of the site is stated).",
+     "evidence": [
+      {
+       "record_quote": "by Oxford classicists Bernard Grenfell and Arthur Hunt in 1896–1907",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Thousands of texts on papyrus and parchment, the largest collection of its kind in the world; principally literary, documentary and other texts in Greek, dating from the second century BCE to the seventh century CE, with Latin, Demotic, Coptic and Arabic; most from the Grenfell and Hunt excavations; catalogued, deciphered and published continuously since. The site carries publications, images, a location list and a virtual exhibition.",
+     "evidence": [
+      {
+       "record_quote": "comprises thousands of texts on papyrus and parchment and is the largest of its kind in the world.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      },
+      {
+       "record_quote": "It includes principally literary, documentary, and other texts in Greek, dating from the second century BCE to the seventh century CE; other languages represented include Latin, Demotic, Coptic, and Arabic.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      },
+      {
+       "record_quote": "NOT a New Testament collection: its papyri are principally literary and documentary Greek texts",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].negative_tags"
+      },
+      {
+       "record_quote": "the collection site of the Oxyrhynchus Papyri, with images, publications, a location list and a virtual exhibition",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].kind"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Art, Archaeology and Ancient World Library",
+      "Oxford",
+      "University of Oxford"
+     ],
+     "reference": "Its host: the collection is housed in Oxford's Art, Archaeology and Ancient World Library.",
+     "evidence": [
+      {
+       "record_quote": "housed in Oxford's Art, Archaeology and Ancient World Library",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To catalogue, decipher and publish the material, continuously since the excavations.",
+     "evidence": [
+      {
+       "record_quote": "Since then, scholars have worked continuously to catalogue, decipher, and publish this material.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved page links 'Copyright' and 'Management and Policies' (oxyrhynchus-online--home.txt:L69, L21) but states no terms; census: licence 'not stated on the saved page'."
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Grenfell",
+      "Bernard Grenfell",
+      "Hunt",
+      "Arthur Hunt",
+      "Egypt Exploration Fund"
+     ],
+     "reference": "Its source: the excavations at Oxyrhynchus (modern Bahnasa) by Bernard Grenfell and Arthur Hunt, 1896–1907, on behalf of the Egypt Exploration Fund (now Society).",
+     "evidence": [
+      {
+       "record_quote": "Most of the papyri come from excavations conducted at the site of Oxyrhynchus (modern Bahnasa) by Oxford classicists Bernard Grenfell and Arthur Hunt in 1896–1907 on behalf of the Egypt Exploration Fund (now Society).",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L51"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved page states no identifier scheme (publication numbers are not on it; census unchecked: 'the publication and image lists')."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Oxyrhynchus Papyri series",
+      "Publications"
+     ],
+     "reference": "The continuing edition of the finds in the Oxyrhynchus Papyri series, listed under the site's Publications; the chain is how the finds reach readers.",
+     "evidence": [
+      {
+       "record_quote": "continuing edition of the finds in the Oxyrhynchus Papyri series",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=oxyrhynchus-online].method"
+      },
+      {
+       "record_quote": "Publications",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/oxyrhynchus-online--home.txt:L25"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "author",
+    "date",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "lineage",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying its 'rubbish dump' provenance or its documentary bulk against it, to treat the collection as trivia beside a few headline texts; or offering another collection's site in place of its own publications and images.",
+   "notes": "Built from the census row and its one saved page. The census quotes all four evidence items from L51 and the section line (sections quote spans L25-L33). The address names the collection and the record is the collection's site; the site's self-statement is the collection, so they are read as one record (see the observation).",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R1"
+  },
+  {
+   "id": "TGT-rf-bodmer-lab",
+   "name": "Bodmer Lab",
+   "template": "dataset",
+   "type_basis": "A digital library, so the dataset template (database or repository: dataset). Census kind: 'a digital library of world literature from the Bodmer collection, organized in 'constellations', one of them the Bodmer Papyri'; its own page: 'Une bibliothèque numérique de la littérature mondiale' (bodmer-lab--home.txt:L41).",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=bodmer-lab]",
+     "origin": "census"
+    },
+    {
+     "source": "bodmer-lab--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "bodmer-lab--fondation",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--fondation.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Bodmer Lab",
+      "bodmerlab"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Bodmer Lab",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=bodmer-lab].name"
+      },
+      {
+       "record_quote": "Home :: bodmerlab",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L1"
+      },
+      {
+       "record_quote": "Le Bodmer Lab est un projet de recherche et de numérisation",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L43"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Université de Genève",
+      "University of Geneva",
+      "Faculté des lettres",
+      "Faculty of Letters",
+      "Fondation Martin Bodmer",
+      "Martin Bodmer Foundation"
+     ],
+     "reference": "A partnership of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer.",
+     "evidence": [
+      {
+       "record_quote": "issu d'un partenariat entre la Faculté des lettres de l'Université de Genève et la Fondation Martin Bodmer.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L43"
+      },
+      {
+       "record_quote": "a research and digitization partnership of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=bodmer-lab].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No founding date or version of the Lab is stated; 'Bodmer Lab, 2026.' (bodmer-lab--home.txt:L360) is the page's footer, and the dates 1951 and 1971 on the Fondation's page are the library's and the Fondation's (bodmer-lab--fondation.txt:L186, L188)."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A research and digitization project: a digital library of world literature from the Bibliotheca Bodmeriana, organised in constellations (subsets of Martin Bodmer's collection chosen for their interest and rarity), of which the Bodmer Papyri is one (56 documents digitised; its aim a detailed online catalogue of the papyrus and parchment manuscripts). Not a papyrus database.",
+     "evidence": [
+      {
+       "record_quote": "Une bibliothèque numérique de la littérature mondiale",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L41"
+      },
+      {
+       "record_quote": "Sous-ensembles de la collection de Martin Bodmer,",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L102"
+      },
+      {
+       "record_quote": "choisis pour leur intérêt et leur rareté",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L104"
+      },
+      {
+       "record_quote": "The aim of this constellation is to produce a detailed, online catalog of the papyrus and parchment manuscripts at the Fondation Martin Bodmer.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L192"
+      },
+      {
+       "record_quote": "NOT a papyrus database: the papyri are one constellation of a library of world literature",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=bodmer-lab].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records name its two partners (author) and place it in no further programme, host or parent."
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To valorise an exceptional private collection with the support of new technologies while keeping to its intellectual project: the digitised documents of the Bibliotheca Bodmeriana come with knowledge and tools that re-inscribe them in their time and in the 'library of world literature' Martin Bodmer dreamed of; for the papyri, a detailed online catalogue.",
+     "evidence": [
+      {
+       "record_quote": "comment valoriser une collection privée exceptionnelle en tenant compte de son projet intellectuel d’ensemble et avec l’appui des nouvelles technologies",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L320"
+      },
+      {
+       "record_quote": "Les documents numérisés de la Bibliotheca Bodmeriana se trouvent ici accompagnés de savoirs et d’outils qui visent à les réinscrire dans leur époque",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L322"
+      },
+      {
+       "record_quote": "Le Bodmer Lab est un projet de recherche et de numérisation",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L43"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC-BY-NC, 4.0",
+      "CC BY-NC 4.0"
+     ],
+     "reference": "Unless otherwise stated, the site's contents are published under Creative Commons CC-BY-NC 4.0: reuse with attribution, non-commercial.",
+     "evidence": [
+      {
+       "record_quote": "Sauf indication contraire, les contenus de ce site sont publiés sous une licence Creative commons CC-BY-NC, 4.0.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L358"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Martin Bodmer",
+      "Bibliotheca Bodmeriana",
+      "bibliothèque de la littérature mondiale",
+      "Weltliteratur"
+     ],
+     "reference": "Its source and model: the Bibliotheca Bodmeriana, Martin Bodmer's collection, and his idea of a 'library of world literature' (Weltliteratur).",
+     "evidence": [
+      {
+       "record_quote": "dans cette « bibliothèque de la littérature mondiale » dont rêvait Martin Bodmer.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L322"
+      },
+      {
+       "record_quote": "est une anthologie des principaux textes de Martin Bodmer sur la question de la « Weltliteratur ».",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.txt:L278"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no identifier."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no versions, editions or projections of the library."
+    }
+   ],
+   "required": [
+    "name",
+    "author",
+    "claim boundary",
+    "purpose",
+    "commitments",
+    "lineage"
+   ],
+   "inversion_guidance": "Carrying its non-commercial licence or its private-collection origin against it (a private collector's showcase, not a scholarly catalogue); or composing the papyri constellation as the whole, or a homonymous laboratory in its place.",
+   "notes": "Built from the census row and the two saved pages (own pages; bodmer-lab--fondation is the Fondation Martin Bodmer's site, the partner's, used only for the dates excluded from date). DEPARTURE FROM THE CENSUS ROW: the census gives licence 'not stated in the saved pages', but bodmer-lab--home.txt:L358 states CC-BY-NC 4.0; commitments is set required on that line. The census aka 'Bodmer Papyri constellation' and 'Fondation Martin Bodmer' are not taken as name tokens: the records state them as one constellation (L190-L192) and as a partner (L43); taking the Fondation's name as an alias would empty the author atom by Rule 5. The census quote 'papyri_count' spans L194-L198.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R1"
+  },
+  {
+   "id": "TGT-rf-dss-digital-library",
+   "name": "The Leon Levy Dead Sea Scrolls Digital Library",
+   "template": "dataset",
+   "type_basis": "A digital library of images, so the dataset template (database or repository: dataset). Census kind: 'a digital library of spectral images of Dead Sea Scroll fragments and 1950s negatives, with introductions to the scrolls'; its own page: 'Examine high-resolution spectral images of manuscript fragments and browse scans of negatives (PAM)' (dss-digital-library--home.txt:L137).",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library]",
+     "origin": "census"
+    },
+    {
+     "source": "dss-digital-library--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "dss-digital-library--intro",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--intro.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Leon Levy Dead Sea Scrolls Digital Library",
+      "Leon Levy Dead Sea Scrolls Digital Library",
+      "Dead Sea Scrolls Digital Library"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Leon Levy Dead Sea Scrolls Digital Library",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].name"
+      },
+      {
+       "record_quote": "Dead Sea Scrolls Digital Library",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].aka"
+      },
+      {
+       "record_quote": "The Leon Levy Dead Sea Scrolls Digital Library offers an exceptional encounter with antiquity.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L121"
+      }
+     ]
+    },
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Israel Antiquities Authority",
+      "IAA"
+     ],
+     "reference": "The Israel Antiquities Authority.",
+     "evidence": [
+      {
+       "record_quote": "Israel Antiquities Authority",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L5"
+      },
+      {
+       "record_quote": "© 2026 Israel Antiquities Authority",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L181"
+      },
+      {
+       "record_quote": "the Israel Antiquities Authority (IAA)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].operator"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No launch date or version is stated; '© 2026' (dss-digital-library--home.txt:L181) is the footer."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Preserves thousands of scroll fragments, among them the oldest known copies of biblical texts, in high-resolution spectral images, with scans of the 1950s negatives (PAM), now accessible to the public; images and introductions, not an edition and not a New Testament collection. Qumran scrolls dated third century BCE to first century CE.",
+     "evidence": [
+      {
+       "record_quote": "world's most advanced imaging technology, the Digital Library preserves thousands of scroll fragments,",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L122"
+      },
+      {
+       "record_quote": "including the oldest known copies of biblical texts, now accessible to the public for the first time.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L123"
+      },
+      {
+       "record_quote": "Examine high-resolution spectral images of manuscript fragments and browse scans of negatives (PAM) from the",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L137"
+      },
+      {
+       "record_quote": "NOT an edition: images and introductions",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Arcadia Funds",
+      "Arcadia Fund",
+      "Arcadia"
+     ],
+     "reference": "The programme it is placed in: the Leon Levy and Arcadia Funds, listed under About the Project ('Leon Levy' is the target's own name and is removed from this atom).",
+     "evidence": [
+      {
+       "record_quote": "The Leon Levy and Arcadia Funds",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L39"
+      },
+      {
+       "record_quote": "with the Leon Levy and Arcadia Funds",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].operator"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To preserve the scroll fragments with the most advanced imaging technology and make them accessible to the public: 'an exceptional encounter with antiquity'.",
+     "evidence": [
+      {
+       "record_quote": "The Leon Levy Dead Sea Scrolls Digital Library offers an exceptional encounter with antiquity.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L121"
+      },
+      {
+       "record_quote": "the Digital Library preserves thousands of scroll fragments,",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L122"
+      },
+      {
+       "record_quote": "accessible to the public for the first time.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L127"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "Its Terms & Conditions are linked (dss-digital-library--home.txt:L47) but not read; census licence: 'its Terms & Conditions (not read)'."
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "PAM",
+      "negatives"
+     ],
+     "reference": "It inherits the photographic record of the 1950s: scans of the PAM negatives.",
+     "evidence": [
+      {
+       "record_quote": "browse scans of negatives (PAM) from the",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/dss-digital-library--home.txt:L137"
+      },
+      {
+       "record_quote": "a scroll fragment, imaged spectrally, with scans of the 1950s negatives (PAM)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=dss-digital-library].unit"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no identifier scheme (one image caption carries a PAM number and siglum, dss-digital-library--intro.txt:L179; fragment records not opened)."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "No versions or projections are stated."
+    }
+   ],
+   "required": [
+    "name",
+    "author",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "lineage"
+   ],
+   "inversion_guidance": "Carrying its imaging or its institutional owner against it (images without an edition, a state authority's showcase) to send the reader to another scrolls resource in its place.",
+   "notes": "Built from the census row and its two saved pages (own pages). The census evidence quotes 'fragments' and 'dates' wrap across lines in the saved text (L121-L122, L160-L163); single-line portions are quoted here.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R1"
+  },
+  {
+   "id": "TGT-rf-early-christian-writings",
+   "name": "Early Christian Writings",
+   "template": "site",
+   "type_basis": "A website, so the site template: the census aka is its domain ('earlychristianwritings.com') and its own page calls itself a site: 'The \"Early Christian Writings: New Testament, Apocrypha, Gnostics, Church Fathers\" site is copyright © Peter Kirby' (early-christian-writings--home.txt:L937).",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=early-christian-writings]",
+     "origin": "census"
+    },
+    {
+     "source": "early-christian-writings--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt",
+     "origin": "own_page"
+    },
+    {
+     "source": "early-christian-writings--revelation",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--revelation.txt",
+     "origin": "own_page"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Early Christian Writings",
+      "earlychristianwritings.com"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Early Christian Writings",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=early-christian-writings].name"
+      },
+      {
+       "record_quote": "earlychristianwritings.com",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=early-christian-writings].aka"
+      },
+      {
+       "record_quote": "Early Christian Writings: New Testament, Apocrypha, Gnostics, Church Fathers",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L1"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Peter Kirby",
+      "Kirby"
+     ],
+     "reference": "Peter Kirby, who holds the site's copyright, keeps its blog and is named as author in its citation form.",
+     "evidence": [
+      {
+       "record_quote": "site is copyright © Peter Kirby < E-Mail > .",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L937"
+      },
+      {
+       "record_quote": "Peter Kirby's Blog",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L927"
+      },
+      {
+       "record_quote": "Kirby, Peter. \"The Book of Revelation.\" Early Christian Writings .",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--revelation.txt:L153"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no date of the site."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online collection of Christian texts before the Council of Nicaea (325), which it calls 'the most complete', with translations and commentary: New Testament, Apocrypha, Gnostics, Church Fathers and some non-Christian references, browsable by range of dating or category; each text page gives an 'Estimated Range of Dating' and quotes published introductions. Not an edition, and one site's ranges, not a consensus statement.",
+     "evidence": [
+      {
+       "record_quote": "Early Christian Writings is the most complete collection of Christian texts before the Council of Nicaea in 325 AD.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L937"
+      },
+      {
+       "record_quote": "The site provides translations and commentary for these sources, including the New Testament, Apocrypha, Gnostics, Church Fathers, and some non-Christian references.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L937"
+      },
+      {
+       "record_quote": "Browse by range of dating or by category, New Testament — Apocrypha — Gnostics — Church Fathers — Other",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L5"
+      },
+      {
+       "record_quote": "Estimated Range of Dating: 90-95 A.D.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--revelation.txt:L25"
+      },
+      {
+       "record_quote": "NOT an edition: it compiles translations and published introductions",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=early-christian-writings].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "New Testament",
+      "Apocrypha",
+      "Gnostics",
+      "Church Fathers"
+     ],
+     "reference": "The body of texts the site is a surface of: early Christian writings before Nicaea, in its four categories ('Early Christian Writings', the target's own name, is removed from this atom).",
+     "evidence": [
+      {
+       "record_quote": "New Testament — Apocrypha — Gnostics — Church Fathers — Other",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L935"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To make the early Christian texts before Nicaea available together with translations and commentary, arranged by estimated date of writing so they can be browsed by range of dating or category.",
+     "evidence": [
+      {
+       "record_quote": "The site provides translations and commentary for these sources",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L937"
+      },
+      {
+       "record_quote": "Browse by range of dating or by category",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L5"
+      },
+      {
+       "record_quote": "compilation: each text page gives an estimated date range and quotes published introductions",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=early-christian-writings].method"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "copyright © Peter Kirby",
+      "Permission is given to link"
+     ],
+     "reference": "The site is under Peter Kirby's copyright; what it grants a user is permission to link to any page; support is asked by buying its CD.",
+     "evidence": [
+      {
+       "record_quote": "Permission is given to link to any HTML file on the Early Christian Writings site.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L937"
+      },
+      {
+       "record_quote": "Early Christian Writings is copyright ©",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L943"
+      },
+      {
+       "record_quote": "Please buy the CD to support the site, view it without ads, and get bonus stuff!",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.txt:L941"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The records state no predecessor or model of the site; the published introductions it quotes (Kümmel, Perrin on the Revelation page) are sources of single text pages, and 'Early Jewish Writings' (L939) is a sister site, not a predecessor."
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no identifier."
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "The saved pages state no versions or projections (the CD is offered, without version)."
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "presents",
+    "purpose",
+    "commitments"
+   ],
+   "inversion_guidance": "Carrying its single-operator, non-academic standing or its estimated ranges against it (an amateur site, not scholarship) in place of its table and quoted introductions; or composing a homonymous book or anthology in its place.",
+   "notes": "Built from the census row and its two saved pages (own pages). DEPARTURE FROM THE CENSUS ROW: the census gives operator and licence as 'not stated in the saved pages', and the per-brief names this operator as a pending atom to be held unknown; but both saved pages name Peter Kirby as the site's copyright holder (home L937, L943-L945; revelation L145-L147), the home page names 'Peter Kirby's Blog' (L927) and the citation form names him as author (revelation L153). Operator and commitments are therefore set required on those lines. If the operator rules the census row governs, set both to unknown; the observation is under the target_absent gate and its scores do not change either way.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R1",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R1"
+  },
+  {
+   "id": "TGT-rf-enoch-dss-dating",
+   "name": "Enoch: dating ancient manuscripts with radiocarbon and AI-based writing-style analysis",
+   "template": "protocol",
+   "type_basis": "Census kind 'a machine-learning date-prediction model for the Dead Sea Scrolls, trained on radiocarbon-dated samples, and the study that introduces it'; its own paper: 'we present Enoch, an AI-based date-prediction model' (plos L421). A model is a tool, and a tool takes the protocol template (backlog brief); its record does not make it a site.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].*",
+     "origin": "census"
+    },
+    {
+     "source": "enoch-dss-dating--plos",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt",
+     "origin": "own_page",
+     "title": "the study itself, PLOS One, 4 June 2025 (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323185; http 200; sha256 1bf06ab5...)"
+    },
+    {
+     "source": "enoch-dss-dating--erc",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt",
+     "origin": "third_party",
+     "title": "the funder's news item, ERC, 5 June 2025 (https://erc.europa.eu/news-events/news/unlocking-timecode-dead-sea-scrolls; http 200); census basis third_party"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Enoch",
+      "Dating ancient manuscripts using radiocarbon and AI-based writing style analysis"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Enoch",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].aka"
+      },
+      {
+       "record_quote": "we present Enoch, an AI-based date-prediction model, trained on the basis of 24 14 C-dated scroll samples",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L421"
+      },
+      {
+       "record_quote": "Dating ancient manuscripts using radiocarbon and AI-based writing style analysis",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L131"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Mladen Popović",
+      "Popović",
+      "Popovic",
+      "University of Groningen",
+      "Maruf A. Dhali",
+      "Lambert Schomaker",
+      "Eibert Tigchelaar"
+     ],
+     "reference": "Mladen Popović and colleagues (University of Groningen and partners): the study's authors, Popović, Dhali, Schomaker, van der Plicht, Lund Rasmussen, La Nasa et al.; an international team led by the University of Groningen.",
+     "evidence": [
+      {
+       "record_quote": "Mladen Popović and colleagues (University of Groningen and partners)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].operator"
+      },
+      {
+       "record_quote": "Citation: Popović M, Dhali MA, Schomaker L, van der Plicht J, Lund Rasmussen K, La Nasa J, et al. (2025) Dating ancient manuscripts using radiocarbon and AI-based writing style analysis.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L423"
+      },
+      {
+       "record_quote": "Qumran Institute, University of Groningen, Groningen, The Netherlands",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L163"
+      },
+      {
+       "record_quote": "An international research team led by the University of Groningen has developed a new method to date individual Dead Sea scrolls more precisely",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L235"
+      },
+      {
+       "record_quote": "Led by Professor and ERC grantee Mladen Popović",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L244"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer (Zenodo holds the data and code as a repository, not as an authority over the work)"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An AI-based date-prediction model trained on 24 radiocarbon-dated scroll samples, applying Bayesian ridge regression to angular and allographic writing-style features; it predicted 14C-based dates with mean absolute errors of 27.9 to 30.7 years and, applied to 135 undated scrolls, aligned with 79% in palaeographic post-hoc evaluation. Its 14C ranges and predictions are often older than palaeographic estimates, giving a new chronology. It dates the copies, not the composition of the works; it offers probability-based options that aid palaeographers rather than replacing them; it is 'a first step', and 'more research is needed' on the relative typology.",
+     "evidence": [
+      {
+       "record_quote": "By applying Bayesian ridge regression on angular and allographic writing style feature vectors, Enoch could predict 14 C-based dates with varied mean absolute errors (MAEs) of 27.9 to 30.7 years.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L421"
+      },
+      {
+       "record_quote": "the trained Enoch model then computed date predictions for 135 non-dated scrolls, aligning with 79% in palaeographic post-hoc evaluation.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L421"
+      },
+      {
+       "record_quote": "The 14 C ranges and Enoch’s style-based predictions are often older than traditionally assumed palaeographic estimates, leading to a new chronology of the scrolls",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L421"
+      },
+      {
+       "record_quote": "This study in style-based date prediction using the Enoch approach is a first step.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L551"
+      },
+      {
+       "record_quote": "More research is needed to solve this issue.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L572"
+      },
+      {
+       "record_quote": "NOT a composition date: it dates the copies",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "European Research Council",
+      "ERC",
+      "Horizon 2020",
+      "HandsandBible",
+      "The Hands That Wrote the Bible"
+     ],
+     "reference": "Funded by the European Research Council (Horizon 2020, grant 640497) as the project The Hands that Wrote the Bible (HandsandBible); host institution Rijksuniversiteit Groningen.",
+     "evidence": [
+      {
+       "record_quote": "funded by the European Research Council",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].operator"
+      },
+      {
+       "record_quote": "This project has received funding by the European Research Council under the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 640497 (HandsandBible).",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L431"
+      },
+      {
+       "record_quote": "researchers in the project The Hands That Wrote the Bible",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L240"
+      },
+      {
+       "record_quote": "The Hands that Wrote the Bible: Digital Palaeography and Scribal Culture of the Dead Sea Scrolls",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L279"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing; the study declares 'no competing interests exist' (plos L432)"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To overcome the almost complete lack of date-bearing manuscripts: to date undated manuscripts from the style of their handwriting, reducing palaeographic subjectivity by offering date predictions as probability-based options grounded in physical (14C) and geometric evidence, to aid palaeographers and historians and contribute to historical debates.",
+     "evidence": [
+      {
+       "record_quote": "there is an almost complete lack of date-bearing manuscripts. To overcome this problem, we present Enoch",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L421"
+      },
+      {
+       "record_quote": "Thus, Enoch reduces palaeographic subjectivity and the role of implicit knowledge by offering date predictions as probability-based options, grounded in physical ( 14 C) and geometric (shape-based) evidences, that can aid palaeographers and historians in their decision-making and contribute to historical debates.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L437"
+      },
+      {
+       "record_quote": "that can assist palaeographers to substantiate, sharpen, or modify their own estimate for an individual manuscript",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L551"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Open access under the Creative Commons Attribution License (unrestricted use provided the original author and source are credited); all data, code and test film public on Zenodo; transparency and interpretability through an explainable design; the funder had no role in the study.",
+     "evidence": [
+      {
+       "record_quote": "This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L429"
+      },
+      {
+       "record_quote": "All data, code, and test film associated with this article are publicly available on Zenodo",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L430"
+      },
+      {
+       "record_quote": "while ensuring transparency and interpretability through its explainable design",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L537"
+      },
+      {
+       "record_quote": "The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L431"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "radiocarbon dating",
+      "radiocarbon",
+      "14C",
+      "palaeography",
+      "paleographic"
+     ],
+     "reference": "It joins radiocarbon (14C) dating, its training anchor, to palaeography, the traditional method it answers and completes ('completed by palaeographic input'); its features are established handwriting-style descriptors.",
+     "evidence": [
+      {
+       "record_quote": "by combining radiocarbon analysis with artificial intelligence-based handwriting analysis",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L235"
+      },
+      {
+       "record_quote": "Until now, dating has largely relied on palaeography, the study of ancient handwriting, which lacks a solid empirical foundation due to the absence of securely dated reference materials.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--erc.txt:L238"
+      },
+      {
+       "record_quote": "that is completed by palaeographic input",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L537"
+      },
+      {
+       "record_quote": "applying Bayesian ridge regression on established handwriting-style descriptors",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L437"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "10.1371/journal.pone.0323185",
+      "10.5281/zenodo.10998958",
+      "10.5281/zenodo.13319794",
+      "10.5281/zenodo.8167946"
+     ],
+     "reference": "The article's DOI and the Zenodo DOIs of its data, code and film, given under Data Availability as the way to the data and code.",
+     "evidence": [
+      {
+       "record_quote": "https://doi.org/10.1371/journal.pone.0323185",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=enoch-dss-dating].url"
+      },
+      {
+       "record_quote": "All data, code, and test film associated with this article are publicly available on Zenodo with the following DOIs:",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L430"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "v3",
+      "v6"
+     ],
+     "reference": "Versioned Zenodo deposits (data and prediction plots v3; code and feature files v6); and a training set the record means to extend ('New 14C evidence ... can be added to Enoch's training data for further refinement'). No reason for the versioning is stated beyond refinement.",
+     "evidence": [
+      {
+       "record_quote": "Data and prediction plots (v3): https://doi.org/10.5281/zenodo.10998958 . - Code and feature files (v6): https://doi.org/10.5281/zenodo.13319794 .",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L430"
+      },
+      {
+       "record_quote": "New 14 C evidence or, with new discoveries, a whole range of date-bearing manuscripts can be added to Enoch’s training data for further refinement and precision, continuously improving accuracy.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/enoch-dss-dating--plos.txt:L557"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "producer",
+    "claim boundary",
+    "institution",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying Enoch's elements against it: its own 'first step' or its reliance on 24 samples cited to dismiss style-based dating; describing it as a black box against its explainable design; or turning its dates of copies into dates of composition (or into proof of a thesis about the texts) against its stated scope.",
+   "notes": "Built from the census row and its two saved sources (the paper, own_page; the ERC news item, third_party). The scimex release is HTTP 403 (empty). The protocol template has no date atom; the paper is dated 4 June 2025. Producer and institution split: the research team (University of Groningen) as producer, the ERC project HandsandBible as institution.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
+  },
+  {
+   "id": "TGT-rf-ithaca",
+   "name": "Ithaca",
+   "template": "protocol",
+   "type_basis": "Census kind 'a deep neural network for restoring, placing and dating ancient Greek inscriptions'; its paper: 'Here we present Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions' (nature L84), 'this research tool'. A tool takes the protocol template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].*",
+     "origin": "census"
+    },
+    {
+     "source": "ithaca--nature",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt",
+     "origin": "own_page",
+     "title": "the operator's paper, Nature 603, 280-283 (2022), published 9 March 2022 (https://www.nature.com/articles/s41586-022-04448-z; http 200)"
+    },
+    {
+     "source": "ithaca--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--home.txt",
+     "origin": "own_page",
+     "title": "the interface, https://ithaca.deepmind.com/ (final URL https://predictingthepast.com/ per the manifest; a JavaScript shell, title only)"
+    },
+    {
+     "source": "aeneas--blog",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt",
+     "origin": "own_page",
+     "title": "Google DeepMind's Aeneas post of 23 July 2025, read only for its statement on Ithaca's upgrade (L337); a source of the census row aeneas"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Ithaca",
+      "Ithaca (DeepMind)"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Ithaca",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].name"
+      },
+      {
+       "record_quote": "Ithaca (DeepMind)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].aka"
+      },
+      {
+       "record_quote": "Here we present Ithaca, a deep neural network",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L84"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "DeepMind",
+      "Google DeepMind",
+      "Yannis Assael",
+      "Thea Sommerschield",
+      "Jonathan Prag",
+      "Nando de Freitas"
+     ],
+     "reference": "DeepMind with historians and collaborators: the paper's co-first authors Yannis Assael (DeepMind) and Thea Sommerschield, with Shillingford, Bordbar, Pavlopoulos, Chatzipanagiotou, Androutsopoulos, Prag and de Freitas.",
+     "evidence": [
+      {
+       "record_quote": "DeepMind with historians and collaborators",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].operator"
+      },
+      {
+       "record_quote": "Y.A. and T.S. are co-first authors and the order of the names is alphabetical.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L654"
+      },
+      {
+       "record_quote": "DeepMind, London, UK",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L611"
+      },
+      {
+       "record_quote": "Assael, Y., Sommerschield, T., Shillingford, B. et al. Restoring and attributing ancient texts using deep neural networks.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L715"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A deep neural network for textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions, designed to assist and expand the historian's workflow: 62% restoration accuracy alone, historians' accuracy from 25% to 72% with it; 71% location accuracy; dates within 30 years of ground-truth ranges (the epigraphers' proposed dates). Its restorations are plausible suggestions, never assumed certain; it cannot make choices on the basis of historical and material context. Inscriptions, not manuscripts.",
+     "evidence": [
+      {
+       "record_quote": "While Ithaca alone achieves 62% accuracy when restoring damaged texts, the use of Ithaca by historians improved their accuracy from 25% to 72%, confirming the synergistic effect of this research tool.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L84"
+      },
+      {
+       "record_quote": "Ithaca can attribute inscriptions to their original location with an accuracy of 71% and can date them to less than 30 years of their ground-truth ranges",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L84"
+      },
+      {
+       "record_quote": "because none of Ithaca’s proposed restorations are assumed to be objectively certain—instead, they are presented as plausible suggestions.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L190"
+      },
+      {
+       "record_quote": "it cannot make choices on the basis of historical and material context.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L202"
+      },
+      {
+       "record_quote": "NOT a manuscript-dating model",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Ca’ Foscari University of Venice",
+      "Center for Hellenic Studies, Harvard University",
+      "Athens University of Economics and Business",
+      "University of Oxford"
+     ],
+     "reference": "The academic partners the paper's affiliations name: Ca' Foscari University of Venice, Harvard's Center for Hellenic Studies, the Athens University of Economics and Business, and Oxford's Faculty of Classics.",
+     "evidence": [
+      {
+       "record_quote": "Department of Humanities, Ca’ Foscari University of Venice, Venice, Italy",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L614"
+      },
+      {
+       "record_quote": "Center for Hellenic Studies, Harvard University, Washington, DC, USA",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L617"
+      },
+      {
+       "record_quote": "Department of Informatics, Athens University of Economics and Business, Athens, Greece",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L620"
+      },
+      {
+       "record_quote": "Faculty of Classics, University of Oxford, Oxford, UK",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L623"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing ('The authors declare no competing interests.', nature L663)"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To assist and expand the historian's workflow: to restore and attribute damaged, displaced and undated inscriptions in cooperation with historians, unlocking the cooperative potential between AI and historians.",
+     "evidence": [
+      {
+       "record_quote": "Ithaca is designed to assist and expand the historian’s workflow.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L84"
+      },
+      {
+       "record_quote": "This research shows how models such as Ithaca can unlock the cooperative potential between artificial intelligence and historians",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L84"
+      },
+      {
+       "record_quote": "it may assist the restoration and attribution of newly discovered or uncertain inscriptions, transforming their value as historical sources",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L157"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "Apache License 2.0",
+      "Creative Commons Attribution-ShareAlike 4.0",
+      "open-source"
+     ],
+     "reference": "An open-source and publicly available interface for historians; training and inference code under Apache License 2.0 and trained weights under CC BY-SA 4.0; restorations offered as plausible suggestions, not certainties; the paper open access under CC BY 4.0.",
+     "evidence": [
+      {
+       "record_quote": "our interdisciplinary team created an open-source and publicly available interface ( https://ithaca.deepmind.com ), enabling historians to use Ithaca for their personal research",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L157"
+      },
+      {
+       "record_quote": "Ithaca’s training and inference source code is available at GitHub ( https://github.com/deepmind/ithaca ) under Apache License 2.0, along with the trained weights, licensed under Creative Commons Attribution-ShareAlike 4.0 International.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L247"
+      },
+      {
+       "record_quote": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L708"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Pythia",
+      "Packard Humanities Institute",
+      "PHI",
+      "I.PHI"
+     ],
+     "reference": "Its predecessor Pythia (the team's 2019 restoration model, which it advances), and its source, the Packard Humanities Institute's Searchable Greek Inscriptions (PHI), processed as I.PHI.",
+     "evidence": [
+      {
+       "record_quote": "The closest work to Ithaca is our 2019 research on ancient text restoration: Pythia",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L164"
+      },
+      {
+       "record_quote": "Not only does it advance the previous state-of-the-art set by Pythia",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L165"
+      },
+      {
+       "record_quote": "Ithaca was trained on The Packard Humanities Institute’s Searchable Greek Inscriptions public dataset, PHI",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L243"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "10.1038/s41586-022-04448-z",
+      "github.com/deepmind/ithaca",
+      "GitHub",
+      "ithaca.deepmind.com"
+     ],
+     "reference": "The paper's DOI, and the code repository and interface addresses given under Code availability as the way to use the model.",
+     "evidence": [
+      {
+       "record_quote": "https://doi.org/10.1038/s41586-022-04448-z",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L716"
+      },
+      {
+       "record_quote": "Ithaca’s training and inference source code is available at GitHub ( https://github.com/deepmind/ithaca )",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--nature.txt:L247"
+      },
+      {
+       "record_quote": "https://ithaca.deepmind.com/",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].url"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Predicting the Past",
+      "predictingthepast.com",
+      "powered by Aeneas"
+     ],
+     "reference": "The 2022 model and interface, upgraded in July 2025 to be powered by Aeneas (contextualization, restorations of unknown length, better performance); the interface address now resolves to Predicting the Past. The stated reason for the upgrade is the added capability.",
+     "evidence": [
+      {
+       "record_quote": "Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ithaca--home.txt:L1"
+      },
+      {
+       "record_quote": "As part of today’s release, we’re upgrading Ithaca , our ancient Greek model, to be powered by Aeneas and include the contextualization function, restorations of unknown length and better performance overall.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L337"
+      },
+      {
+       "record_quote": "published 2022; interface online",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ithaca].lifecycle"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "producer",
+    "claim boundary",
+    "institution",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying Ithaca's elements against it: its accuracy figures or its 'plausible suggestions' cited to cast it as unreliable automation that displaces historians, against its stated purpose of assisting them; or turning its suggestions into certainties ('true dates', settled restorations), against its commitment that none is assumed certain.",
+   "notes": "Built from the census row, the Nature paper (own_page), the interface page (title only: a JavaScript shell whose URL now resolves to predictingthepast.com) and, for the deposit chain only, DeepMind's own Aeneas post (L337), which states the upgrade of Ithaca. Producer = DeepMind and the authors (the census operator); institution = the academic partners named in the affiliations.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
+  },
+  {
+   "id": "TGT-rf-aeneas",
+   "name": "Aeneas",
+   "template": "protocol",
+   "type_basis": "Census kind 'an AI model that retrieves textual and contextual parallels for ancient inscriptions, introduced in Nature (2025)'; its own post: 'the first artificial intelligence (AI) model for contextualizing ancient inscriptions' (blog L281), 'a more versatile tool for historians' (L296). A tool takes the protocol template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].*",
+     "origin": "census"
+    },
+    {
+     "source": "aeneas--blog",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt",
+     "origin": "own_page",
+     "title": "Google DeepMind, 'Aeneas transforms how historians connect the past', 23 July 2025 (https://deepmind.google/discover/blog/aeneas-transforms-how-historians-connect-the-past/; http 200)"
+    },
+    {
+     "source": "aeneas--site",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--site.txt",
+     "origin": "own_page",
+     "title": "https://predictingthepast.com/ (a JavaScript shell, title only)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Aeneas",
+      "Aeneas (Google DeepMind)",
+      "Predicting the Past"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Aeneas",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].name"
+      },
+      {
+       "record_quote": "Predicting the Past",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].aka"
+      },
+      {
+       "record_quote": "Today, we’re publishing a paper in Nature introducing Aeneas , the first artificial intelligence (AI) model for contextualizing ancient inscriptions.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L281"
+      }
+     ]
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Google DeepMind",
+      "DeepMind",
+      "University of Nottingham",
+      "Yannis Assael",
+      "Thea Sommerschield",
+      "The Aeneas team"
+     ],
+     "reference": "Google DeepMind (the Aeneas team), co-developed with the University of Nottingham; the research co-led by Yannis Assael and Thea Sommerschield.",
+     "evidence": [
+      {
+       "record_quote": "Google DeepMind, co-developed with the University of Nottingham",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].operator"
+      },
+      {
+       "record_quote": "We co-developed Aeneas with the University of Nottingham",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L288"
+      },
+      {
+       "record_quote": "The research was co-led by Yannis Assael and Thea Sommerschield.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L350"
+      },
+      {
+       "record_quote": "The Aeneas team",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L272"
+      }
+     ]
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records name no archival authority separate from the producer"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The first AI model for contextualizing ancient inscriptions: a multimodal generative network that reasons across Latin inscriptions (the LED, over 176,000) and retrieves textual and contextual parallels in seconds; it also restores gaps (of unknown length for the first time), attributes province (62, 72%) and dates within 13 years of historians' date ranges. Its suggestions are interpretable starting points inside historians' workflows. Latin in the published model; other languages and media stated as possible adaptations. Not a dating model alone.",
+     "evidence": [
+      {
+       "record_quote": "It reasons across thousands of Latin inscriptions, retrieving textual and contextual parallels in seconds that allow historians to interpret and build upon",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L283"
+      },
+      {
+       "record_quote": "comprising over 176,000 Latin inscriptions from across the ancient Roman world.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L303"
+      },
+      {
+       "record_quote": "our model can attribute an inscription to one of 62 ancient Roman provinces with 72% accuracy. For dating, Aeneas places a text within 13 years of the date ranges provided by historians.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L314"
+      },
+      {
+       "record_quote": "offering interpretable suggestions that serve as valuable starting points for historical inquiry.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L336"
+      },
+      {
+       "record_quote": "NOT a dating model alone: it retrieves parallels",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "University of Warwick",
+      "University of Oxford",
+      "Athens University of Economics and Business",
+      "AUEB"
+     ],
+     "reference": "Its partner institutions: researchers at the Universities of Warwick and Oxford and the Athens University of Economics and Business.",
+     "evidence": [
+      {
+       "record_quote": "in partnership with researchers at the Universities of Warwick, Oxford and Athens University of Economics and Business (AUEB).",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L288"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the records state no commercial standing"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To help historians better interpret, attribute and restore fragmentary texts by contextualizing them: finding parallels at scale, integrated within historians' existing workflows.",
+     "evidence": [
+      {
+       "record_quote": "Introducing the first model for contextualizing ancient inscriptions, designed to help historians better interpret, attribute and restore fragmentary texts.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L278"
+      },
+      {
+       "record_quote": "This work was part of a wider effort to explore how generative AI can help historians better identify and interpret parallels at scale.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L288"
+      },
+      {
+       "record_quote": "Aeneas is designed to integrate within historians' existing research workflows.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L336"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To benefit as many people as possible: an interactive version freely available to researchers, students, educators and museum professionals, and the code and dataset open-sourced to support further research; a co-designed teaching syllabus.",
+     "evidence": [
+      {
+       "record_quote": "We want this research to benefit as many people as possible, so we’re making an interactive version of Aeneas freely-available to researchers, students, educators, museum professionals and more at predictingthepast.com . To support further research, we’re also open-sourcing our code and dataset .",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L289"
+      },
+      {
+       "record_quote": "We’ve also co-designed a new teaching syllabus for bridging technical skills with historical thinking in the classroom.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L338"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Ithaca",
+      "Epigraphic Database Roma",
+      "EDR",
+      "Epigraphic Database Heidelberg",
+      "EDH",
+      "Epigraphic Database Clauss Slaby",
+      "EDCS-ELT"
+     ],
+     "reference": "It builds upon Ithaca, DeepMind's earlier model for Greek inscriptions; its dataset (LED) is drawn from decades of historians' digital collections, above all EDR, EDH and EDCS-ELT.",
+     "evidence": [
+      {
+       "record_quote": "Named after the wandering hero of Graeco-Roman mythology, Aeneas builds upon Ithaca , our earlier work using AI to restore, date and place ancient Greek inscriptions.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L291"
+      },
+      {
+       "record_quote": "drawing from decades of work by historians to create digital collections, especially the Epigraphic Database Roma (EDR), Epigraphic Database Heidelberg (EDH) and Epigraphic Database Clauss Slaby (EDCS-ELT).",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L302"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "predictingthepast.com"
+     ],
+     "reference": "The interactive version's address, given as where the model is freely available. (The name 'Predicting the Past' is a registered alias of the entity and fills only the name atom.)",
+     "evidence": [
+      {
+       "record_quote": "https://predictingthepast.com/",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=aeneas].url"
+      },
+      {
+       "record_quote": "freely-available to researchers, students, educators, museum professionals and more at predictingthepast.com",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L289"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Nature",
+      "July 23, 2025",
+      "upgrading Ithaca"
+     ],
+     "reference": "The release of 23 July 2025 (the Nature paper, the interactive version, the code and dataset), with which Ithaca was upgraded to be powered by Aeneas.",
+     "evidence": [
+      {
+       "record_quote": "July 23, 2025 Research",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L270"
+      },
+      {
+       "record_quote": "As part of today’s release, we’re upgrading Ithaca , our ancient Greek model, to be powered by Aeneas",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/aeneas--blog.txt:L337"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "producer",
+    "claim boundary",
+    "institution",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying Aeneas's elements against it: its parallels or predictions offered as replacements for historians' judgement against its stated aim of integrating with their workflows; or its retrieved parallels presented as settling dependence or dating questions that the record presents only as starting points.",
+   "notes": "Built from the census row and the operator's post (own_page); the site is a JavaScript shell (title only) and the Nature paper was not saved. Figures the composition may give that are not in the saved post (the LED's period, number of historians helped) are read against nothing the records state.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
+  },
+  {
+   "id": "TGT-rf-vesuvius-challenge",
+   "name": "Vesuvius Challenge",
+   "template": "institution",
+   "type_basis": "Its own page: 'Vesuvius Challenge is an open science research organization reading the carbonized Herculaneum scrolls without unrolling them' (home L22). An organisation takes the institution template; the census kind ('an open research competition') names the programme it runs.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=vesuvius-challenge].*",
+     "origin": "census"
+    },
+    {
+     "source": "vesuvius-challenge--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt",
+     "origin": "own_page",
+     "title": "https://scrollprize.org/ (http 200)"
+    },
+    {
+     "source": "vesuvius-challenge--overview",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt",
+     "origin": "own_page",
+     "title": "https://scrollprize.org/prizes, 'Open Prizes' (http 200)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Vesuvius Challenge",
+      "Scroll Prize",
+      "scrollprize.org",
+      "Scroll Prize, Inc."
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Vesuvius Challenge",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=vesuvius-challenge].name"
+      },
+      {
+       "record_quote": "Scroll Prize",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=vesuvius-challenge].aka"
+      },
+      {
+       "record_quote": "Prizes are awarded at the sole discretion of Scroll Prize, Inc.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L352"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Nat Friedman",
+      "Daniel Gross",
+      "Brent Seales"
+     ],
+     "reference": "Created by Nat Friedman (Instigator, Director and Founding Sponsor), Daniel Gross (Founding Sponsor) and Brent Seales (Principal Advisor).",
+     "evidence": [
+      {
+       "record_quote": "Created by",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L57"
+      },
+      {
+       "record_quote": "Nat Friedman Instigator, Director & Founding Sponsor",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L58"
+      },
+      {
+       "record_quote": "Daniel Gross Founding Sponsor",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L59"
+      },
+      {
+       "record_quote": "Brent Seales Principal Advisor",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L60"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved pages state no founding date (the milestones strip lists years '79 AD 1750 2015 2023 2026' without saying which is the founding); the census row has no founded field"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An open science research organization reading the carbonized Herculaneum scrolls without unrolling them, through a $2M competition with prizes every month that anyone can enter. Its stated limits: a scroll's surface can be traced, but crushed or torn sheets still need human help; ink is seen in some scrolls, but models trained on one rarely transfer; the Grand Prize for fully unrolling and making readable a scroll is still open (deadline 25 June 2027). Not a finished edition.",
+     "evidence": [
+      {
+       "record_quote": "Vesuvius Challenge is an open science research organization reading the carbonized Herculaneum scrolls without unrolling them. Anyone can help : we run a $2M competition , with prizes every month.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L22"
+      },
+      {
+       "record_quote": "We can trace a scroll's surface, but where sheets are crushed or torn it still needs human help.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L33"
+      },
+      {
+       "record_quote": "We can see ink in some scrolls, but models trained on one rarely transfer to the next.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L39"
+      },
+      {
+       "record_quote": "$800,000 to the first team or individual to fully unroll and make readable a scroll from the set below.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L31"
+      },
+      {
+       "record_quote": "NOT a finished edition",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=vesuvius-challenge].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "open science",
+      "EduceLab"
+     ],
+     "reference": "The open-science frame it names itself by, worked with its partner team EduceLab (Brent Seales, Principal Investigator).",
+     "evidence": [
+      {
+       "record_quote": "an open science research organization",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L22"
+      },
+      {
+       "record_quote": "EduceLab Team (Partners)",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L83"
+      },
+      {
+       "record_quote": "Brent Seales Principal Investigator, Professor of Computer Science",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L112"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To read the carbonized Herculaneum scrolls without unrolling them: resurrecting the library of the Villa of the Papyri, and making virtual unwrapping and ink detection fully automatic and general across scrolls.",
+     "evidence": [
+      {
+       "record_quote": "Resurrecting an ancient library from the ashes of a volcano.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L20"
+      },
+      {
+       "record_quote": "reading the carbonized Herculaneum scrolls without unrolling them",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L22"
+      },
+      {
+       "record_quote": "Help us make it fully automatic.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L33"
+      },
+      {
+       "record_quote": "Help us make them work on every scroll.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L39"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "CC BY-NC 4.0",
+      "CC-BY-NC 4.0",
+      "open source"
+     ],
+     "reference": "Anyone can help; winners must open-source their methods under a permissive licence; training datasets and checkpoints published under CC-BY-NC 4.0; experiment runs shared publicly; a deliberately high review bar ('we'd rather be slow than wrong') with false-positive mitigation; discoveries announced and co-published with the winners; site content CC BY-NC 4.0.",
+     "evidence": [
+      {
+       "record_quote": "You agree to make your method open source if you win a prize.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L352"
+      },
+      {
+       "record_quote": "Any dataset created or used to train ML models must be published publicly, under a CC-BY-NC 4.0 license.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L69"
+      },
+      {
+       "record_quote": "The review bar is deliberately high — we’d rather be slow than wrong.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L152"
+      },
+      {
+       "record_quote": "We will work with the winners to verify their results, put them in a historical context, and co-publish them in academic venues where applicable.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L130"
+      },
+      {
+       "record_quote": "Copyright © 2026 Vesuvius Challenge · Content licensed CC BY-NC 4.0 unless otherwise specified",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L135"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved pages name partners (EduceLab) and the scrolls' history, but state no predecessor or model of the organisation"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "PHerc",
+      "tifxyz"
+     ],
+     "reference": "Scrolls and scan volumes are identified by PHerc number and volume id, and each submitted image is named after the mesh it was rendered from, 'so every image is traceable to the exact surface it was rendered from'.",
+     "evidence": [
+      {
+       "record_quote": "Eligible scroll volumes ( 13 ) PHerc0125 — 20250821151825",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L35"
+      },
+      {
+       "record_quote": "Name each image after the tifxyz mesh (from the same package) used to generate it — carrying the same sequential column number — so every image is traceable to the exact surface it was rendered from.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L90"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "2027 Grand Prize",
+      "First Letters Prizes",
+      "Progress Prizes",
+      "milestones"
+     ],
+     "reference": "Its milestones and successive prize rounds: the 2027 Grand Prize, First Letters, Title and monthly Progress prizes, each set on what has and has not yet been read (the First Letters eligible set excludes scrolls where letters have now been found).",
+     "evidence": [
+      {
+       "record_quote": "2027 Grand Prize",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L26"
+      },
+      {
+       "record_quote": "Note the eligible set here is different than the 2027 Grand Prize set: it includes several other scrolls where no text has been read yet, and excludes those where letters have now been found.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--overview.txt:L156"
+      },
+      {
+       "record_quote": "All milestones",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/vesuvius-challenge--home.txt:L45"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "founder",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying its elements against it: its prize money or sponsors cited to cast it as a stunt rather than research; its open problems ('still needs human help', models that do not transfer) cited to dismiss machine reading; or claiming the scrolls are read (finished) against its own statement that the reading is not yet complete.",
+   "notes": "Built from the census row and two own pages (home, prizes). Founding date unknown in the saved pages; the site's sponsors list is not used. Framework is the open-science frame and the EduceLab partnership.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
+  },
+  {
+   "id": "TGT-rf-ai-and-faith",
+   "name": "AI and Faith",
+   "template": "institution",
+   "type_basis": "An organisation: 'AI and Faith is a pluralist organization seeking to engage the world in the moral and ethical issues around artificial intelligence' (about L220); census kind 'a network and publication hub'. An organisation takes the institution template.",
+   "records": [
+    {
+     "source": "census",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ai-and-faith].*",
+     "origin": "census"
+    },
+    {
+     "source": "ai-and-faith--about",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt",
+     "origin": "own_page",
+     "title": "https://aiandfaith.org/about-us/ (http 200)"
+    },
+    {
+     "source": "ai-and-faith--home",
+     "path": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt",
+     "origin": "own_page",
+     "title": "https://aiandfaith.org/ (http 200)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "AI and Faith",
+      "aiandfaith.org"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AI and Faith",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ai-and-faith].name"
+      },
+      {
+       "record_quote": "https://aiandfaith.org/",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ai-and-faith].url"
+      }
+     ]
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved pages name a Board of Directors (about L176-194) but no founder"
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the about page's 'Year Established' field is empty in the saved page (about L136); no founding date is stated"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A global, pluralist network of faith leaders and communities, scholars, technologists, ethicists, educators and partner organizations that brings the wisdom of the world's religions to the AI ethics conversation; it encourages, connects and equips people and publishes articles, podcasts and research. It is not a measurement of AI systems.",
+     "evidence": [
+      {
+       "record_quote": "AI and Faith is a global network of faith leaders and communities, scholars, technologists, ethicists, educators, and partner organizations, working for a future in which artificial intelligence serves humankind under five strategic pillars.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L150"
+      },
+      {
+       "record_quote": "AI and Faith is a pluralist organization seeking to engage the world in the moral and ethical issues around artificial intelligence.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L220"
+      },
+      {
+       "record_quote": "AI and Faith brings the wisdom of the world’s religions to the AI ethics conversation.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L130"
+      },
+      {
+       "record_quote": "NOT a measurement of AI systems' handling of scripture",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/census.json#rows[slug=ai-and-faith].negative_tags"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Wisdom and Human Formation",
+      "Education and Public Understanding",
+      "Interfaith Dialogue and Community",
+      "Research and Thought Leadership",
+      "Responsible Innovation"
+     ],
+     "reference": "The five strategic pillars under which it works.",
+     "evidence": [
+      {
+       "record_quote": "working for a future in which artificial intelligence serves humankind under five strategic pillars.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L150"
+      },
+      {
+       "record_quote": "Wisdom and Human Formation",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L152"
+      },
+      {
+       "record_quote": "Education and Public Understanding",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L154"
+      },
+      {
+       "record_quote": "Interfaith Dialogue and Community",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L156"
+      },
+      {
+       "record_quote": "Research and Thought Leadership",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L158"
+      },
+      {
+       "record_quote": "Responsible Innovation",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L160"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "external entity: the template's corpus is the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To bring the fundamental values and ancient wisdom of the world's religions into the debates on the ethical development and use of AI: empowering faith traditions, technologists and civil society to cultivate wisdom, advance human flourishing and dignity, and shape technology responsibly.",
+     "evidence": [
+      {
+       "record_quote": "Empowering faith traditions, technologists, and civil society to cultivate wisdom, advance human flourishing and dignity, and shape technology responsibly in the age of artificial intelligence.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L146"
+      },
+      {
+       "record_quote": "we encourage, connect and equip people to bring the fundamental values of the world’s major religions into the emerging debates about the ethical development of AI-related technologies.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L134"
+      },
+      {
+       "record_quote": "AI and Faith believes the world’s religions offer ancient wisdom that should guide the development and use of AI technology in contemporary society.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L152"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [
+      "pluralist",
+      "All rights reserved"
+     ],
+     "reference": "Pluralism (a pluralist organization across traditions); a discussion shaped to be 'deeply thoughtful and life-affirming', towards technology whose effects are 'exclusively life-affirming'; its content under 'All rights reserved'.",
+     "evidence": [
+      {
+       "record_quote": "AI and Faith is a pluralist organization",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L220"
+      },
+      {
+       "record_quote": "We want to shape the discussion in ways that are deeply thoughtful and life-affirming.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L156"
+      },
+      {
+       "record_quote": "we envision a world where the effects of technology are exclusively life-affirming, promoting the dignity and wellbeing of all humans",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--about.txt:L132"
+      },
+      {
+       "record_quote": "Copyright © 2026 AI and Faith, All rights reserved.",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L410"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved pages state no predecessor or model"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": [],
+     "why": "the saved pages state no identifier for the organisation beyond its site address (the name atom's alias)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "New Mission and Vision Statements"
+     ],
+     "reference": "Its mission and vision were restated on 24 September 2026 ('AI and Faith Announces New Mission and Vision Statements'); no reason is given in the saved pages.",
+     "evidence": [
+      {
+       "record_quote": "AI and Faith Announces New Mission and Vision Statements",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L260"
+      },
+      {
+       "record_quote": "September 24, 2026",
+       "locus": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/ai-and-faith--home.txt:L262"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "claim boundary",
+    "framework",
+    "purpose",
+    "commitments",
+    "deposit chain"
+   ],
+   "inversion_guidance": "Carrying its elements against it: its faith grounding cited to dismiss it as religion washing or as unscientific; or its pluralism turned into the claim of a single tradition's position; or its convening role recast as measurement it does not claim.",
+   "notes": "Built from the census row and the two own pages. Founder, founding date, lineage and identifier are not stated in the saved pages (unknown). 'Nonprofit' is implied by the tax-deductible gift line (home L172) but not stated.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader R2",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader R2"
   }
  ],
  "entity_pass": {
@@ -163647,6 +166474,23 @@
    "date": "2026-10-30",
    "brief": "rebuild/capture-registry/intake-20261030-revelation-first-thesis/build.py (the parts are authored in parts.py)",
    "new_sets": [],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-31",
+   "brief": "rebuild/capture-registry/intake-20261031-rf-census/per/BRIEF.md",
+   "new_sets": [
+    "TGT-rf-aeneas",
+    "TGT-rf-ai-and-faith",
+    "TGT-rf-bodmer-lab",
+    "TGT-rf-csntm",
+    "TGT-rf-dss-digital-library",
+    "TGT-rf-early-christian-writings",
+    "TGT-rf-enoch-dss-dating",
+    "TGT-rf-ithaca",
+    "TGT-rf-oxyrhynchus-online",
+    "TGT-rf-vesuvius-challenge"
+   ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }
  ]

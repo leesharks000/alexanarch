@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-31T02:38:04Z",
+  "regenerated_at": "2026-10-31T04:22:28Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "79e9a6f3aca8cb751cf366b20f888b488e2c3356beba0191497c110636a55fc7",
+    "mm-main-capture": "27df5c9f8943a60100f7b71a3a2eb8d9f7f55111217144b84f688fb83d79137b",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2604,
-  "total_observations": 1141,
+  "total_addresses": 2614,
+  "total_observations": 1151,
   "class_counts": {
     "subjunctive": 1739,
-    "observed_address": 848,
+    "observed_address": 858,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1724,
+    "unmatched": 1734,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -8296,6 +8296,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "aeneas deepmind": {
+      "canonical_query": "aeneas deepmind",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "AENEAS ON THE OVERVIEW — LATIN INSCRIPTIONS, JULY 2025, PARALLELS, RESTORATION, DATING, HELD; THE MODEL'S STATED REACH ('FROM PAPYRI TO COINAGE') AND ITS NOTTINGHAM, WARWICK AND ATHENS PARTNERS ABSENT; DURHAM ON A CARD",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "aeneas-deepmind-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#aeneas-deepmind-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/aeneas-deepmind-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#aeneas-deepmind-aio-20261031",
+          "details_excerpt": "AENEAS, BY THE OPERATOR'S ADDRESS 'AENEAS DEEPMIND', ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'an artificial intelligence model developed by Google DeepMind (introduced in July 2025) designed to contextualize, re"
+        }
+      ],
+      "originator": {
+        "name": "Google DeepMind, co-developed with the University of Nottingham and with researchers at Warwick, Oxford and the Athens University of Economics and Business",
+        "relation": "external",
+        "entity_type": "protocol",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Aeneas; its operator, as the record gives it: Google DeepMind, co-developed with the University of Nottingham and with researchers at Warwick, Oxford and the Athens University of Economics and Business. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/aeneas/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "AENEAS ON THE OVERVIEW — LATIN INSCRIPTIONS, JULY 2025, PARALLELS, RESTORATION, DATING, HELD; THE MODEL'S STATED REACH ('FROM PAPYRI TO COINAGE') AND ITS NOTTINGHAM, WARWICK AND ATHENS PARTNERS ABSENT; DURHAM ON A CARD"
+    },
     "aeo vision top arxiv papers geo": {
       "canonical_query": "aeo vision top arxiv papers geo",
       "is_quoted": false,
@@ -8572,6 +8607,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "ai and faith": {
+      "canonical_query": "ai and faith",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "AI AND FAITH ON THE OVERVIEW — THE TOPIC FOR THE NETWORK OF THAT NAME, THE ORGANISATION ONE BULLET IN THE THIRD SECTION AND ITS HOME PAGE THE FIRST CARD; BARNA'S FIGURES AND A MAY 2026 CONSORTIUM'S FINDING THAT LLMS 'SYSTEMATICALLY OMIT' FAITH",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ai-and-faith-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#ai-and-faith-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/ai-and-faith-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ai-and-faith-aio-20261031",
+          "details_excerpt": "AI AND FAITH, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'The intersection of artificial intelligence and faith spans ethics, spiritual authority, and technological governance.' Three sections: the trust s"
+        }
+      ],
+      "originator": {
+        "name": "AI and Faith, a network of faith leaders, scholars, technologists and ethicists",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: AI and Faith; its operator, as the record gives it: AI and Faith, a network of faith leaders, scholars, technologists and ethicists. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/ai-and-faith/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "AI AND FAITH ON THE OVERVIEW — THE TOPIC FOR THE NETWORK OF THAT NAME, THE ORGANISATION ONE BULLET IN THE THIRD SECTION AND ITS HOME PAGE THE FIRST CARD; BARNA'S FIGURES AND A MAY 2026 CONSORTIUM'S FINDING THAT LLMS 'SYSTEMATICALLY OMIT' FAITH"
     },
     "ai authorship": {
       "canonical_query": "ai authorship",
@@ -15276,6 +15346,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "bodmer lab": {
+      "canonical_query": "bodmer lab",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "BODMER LAB ON THE OVERVIEW — THREE LABS OF ONE NAME, GENEVA'S DIGITAL LIBRARY FIRST AND HELD; THE DOMAIN BODMERLAB.ORG A FRUIT-FLY HEART LABORATORY'S; THE QUESTION 'WHICH OF THESE' RETURNED TO THE USER",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "bodmer-lab-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#bodmer-lab-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/bodmer-lab-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#bodmer-lab-aio-20261031",
+          "details_excerpt": "BODMER LAB, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'The term Bodmer Lab most commonly refers to one of three distinct entities depending on the context': the Geneva digital library and archives (Univer"
+        }
+      ],
+      "originator": {
+        "name": "a research and digitization partnership of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Bodmer Lab; its operator, as the record gives it: a research and digitization partnership of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/bodmer-lab/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "BODMER LAB ON THE OVERVIEW — THREE LABS OF ONE NAME, GENEVA'S DIGITAL LIBRARY FIRST AND HELD; THE DOMAIN BODMERLAB.ORG A FRUIT-FLY HEART LABORATORY'S; THE QUESTION 'WHICH OF THESE' RETURNED TO THE USER"
+    },
     "book of revelation": {
       "canonical_query": "book of revelation",
       "is_quoted": false,
@@ -16720,6 +16825,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "center for the study of new testament manuscripts": {
+      "canonical_query": "center for the study of new testament manuscripts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "THE CENTER FOR THE STUDY OF NEW TESTAMENT MANUSCRIPTS ON THE OVERVIEW — WALLACE, 2002, PLANO, DIGITIZATION, ALL HELD; THE CENTER'S OWN APOLOGETIC OBJECTIVE ('AGAINST THE CLAIMS OF SKEPTICS') AND ITS TERMS OF USE UNSAID, ITS IMAGES 'FREELY AVAILABLE'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/center-for-the-study-of-new-testament-manuscripts-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+          "details_excerpt": "THE CENTER FOR THE STUDY OF NEW TESTAMENT MANUSCRIPTS, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'a non-profit organization dedicated to digitally preserving surviving Greek New Testament manuscripts.' Fo"
+        }
+      ],
+      "originator": {
+        "name": "Center for the Study of New Testament Manuscripts, Plano, Texas; founder and Executive Director Daniel B. Wallace",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Center for the Study of New Testament Manuscripts; its operator, as the record gives it: Center for the Study of New Testament Manuscripts, Plano, Texas; founder and Executive Director Daniel B. Wallace. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/csntm/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "THE CENTER FOR THE STUDY OF NEW TESTAMENT MANUSCRIPTS ON THE OVERVIEW — WALLACE, 2002, PLANO, DIGITIZATION, ALL HELD; THE CENTER'S OWN APOLOGETIC OBJECTIVE ('AGAINST THE CLAIMS OF SKEPTICS') AND ITS TERMS OF USE UNSAID, ITS IMAGES 'FREELY AVAILABLE'"
     },
     "central navigation map": {
       "canonical_query": "central navigation map",
@@ -24747,6 +24887,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "early christian writings": {
+      "canonical_query": "early christian writings",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "EARLY CHRISTIAN WRITINGS ON THE OVERVIEW — A PENGUIN CLASSICS BOOK, PRICED, FOR THE WEBSITE OF THAT NAME; THE SITE, ITS DATING TABLE AND ITS REVELATION AT 90–95 NEVER REACHED; NO SOURCE CARDS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "early-christian-writings-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#early-christian-writings-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/early-christian-writings-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#early-christian-writings-aio-20261031",
+          "details_excerpt": "EARLY CHRISTIAN WRITINGS, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'Early Christian Writings: The Apostolic Fathers is a collection of late first- and second-century letters and theological treatises tra"
+        }
+      ],
+      "originator": {
+        "name": "Peter Kirby, named on the site as its copyright holder",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Early Christian Writings; its operator, as the record gives it: Peter Kirby, named on the site as its copyright holder. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/early-christian-writings/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "EARLY CHRISTIAN WRITINGS ON THE OVERVIEW — A PENGUIN CLASSICS BOOK, PRICED, FOR THE WEBSITE OF THAT NAME; THE SITE, ITS DATING TABLE AND ITS REVELATION AT 90–95 NEVER REACHED; NO SOURCE CARDS"
+    },
     "early date revelation evidence": {
       "canonical_query": "early date revelation evidence",
       "is_quoted": false,
@@ -25628,6 +25803,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-25",
       "latest_status": "CAPTURE"
+    },
+    "enoch ai dating dead sea scrolls": {
+      "canonical_query": "enoch ai dating dead sea scrolls",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "ENOCH ON THE OVERVIEW — GRONINGEN, 24 RADIOCARBON SAMPLES, BAYESIAN RIDGE REGRESSION, THE THIRTY-YEAR ERROR, 79% OF 135, ALL HELD; 'COPIES' KEPT APART FROM THEIR AUTHORS; 'OFTEN OLDER' MADE 'A SIGNIFICANT PORTION … 50 TO 150 YEARS', AND THE RADIOCARBON DANIEL CREDITED TO THE MODEL",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/enoch-ai-dating-dead-sea-scrolls-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+          "details_excerpt": "ENOCH, BY THE OPERATOR'S ADDRESS 'ENOCH AI DATING DEAD SEA SCROLLS', ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'Researchers at the University of Groningen developed an artificial intelligence model named Enoch to "
+        }
+      ],
+      "originator": {
+        "name": "Mladen Popović and colleagues (University of Groningen and partners), funded by the European Research Council; published in PLOS One",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Enoch: dating ancient manuscripts with radiocarbon and AI-based writing-style analysis; its operator, as the record gives it: Mladen Popović and colleagues (University of Groningen and partners), funded by the European Research Council; published in PLOS One. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/enoch-dss-dating/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "ENOCH ON THE OVERVIEW — GRONINGEN, 24 RADIOCARBON SAMPLES, BAYESIAN RIDGE REGRESSION, THE THIRTY-YEAR ERROR, 79% OF 135, ALL HELD; 'COPIES' KEPT APART FROM THEIR AUTHORS; 'OFTEN OLDER' MADE 'A SIGNIFICANT PORTION … 50 TO 150 YEARS', AND THE RADIOCARBON DANIEL CREDITED TO THE MODEL"
     },
     "enter the ichabod chamber": {
       "canonical_query": "enter the ichabod chamber",
@@ -35949,6 +36159,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "ithaca deepmind": {
+      "canonical_query": "ithaca deepmind",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "ITHACA ON THE OVERVIEW — 62%, 25% TO 72%, 71%, WITHIN 30 YEARS, ALL HELD, WITH ITS ARCHITECTURE AND ITS LICENCE; THE MODEL'S OWN TERM (TO 'ASSIST AND EXPAND THE HISTORIAN'S WORKFLOW') CARRIED BY ITS FIGURES ALONE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ithaca-deepmind-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#ithaca-deepmind-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/ithaca-deepmind-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ithaca-deepmind-aio-20261031",
+          "details_excerpt": "ITHACA, BY THE OPERATOR'S ADDRESS 'ITHACA DEEPMIND', ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'a deep neural network developed by Google DeepMind and academic partners to restore, geographically attribute, and ch"
+        }
+      ],
+      "originator": {
+        "name": "DeepMind with historians and collaborators; described in Nature (2022)",
+        "relation": "external",
+        "entity_type": "protocol",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Ithaca; its operator, as the record gives it: DeepMind with historians and collaborators; described in Nature (2022). Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/ithaca/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "ITHACA ON THE OVERVIEW — 62%, 25% TO 72%, 71%, WITHIN 30 YEARS, ALL HELD, WITH ITS ARCHITECTURE AND ITS LICENCE; THE MODEL'S OWN TERM (TO 'ASSIST AND EXPAND THE HISTORIAN'S WORKFLOW') CARRIED BY ITS FIGURES ALONE"
+    },
     "jack feist": {
       "canonical_query": "jack feist",
       "is_quoted": false,
@@ -39473,6 +39718,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "leon levy dead sea scrolls digital library": {
+      "canonical_query": "leon levy dead sea scrolls digital library",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "THE LEON LEVY DEAD SEA SCROLLS DIGITAL LIBRARY ON THE OVERVIEW — THE IAA, THE SPECTRAL IMAGES, THE PAM NEGATIVES, HELD; 'IN PARTNERSHIP WITH GOOGLE' FOR THE FUNDS THE LIBRARY NAMES; THE SCROLLS' DATES, BEFORE 70, AND THE OLDEST BIBLICAL COPIES ABSENT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "leon-levy-dead-sea-scrolls-digital-library-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#leon-levy-dead-sea-scrolls-digital-library-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/leon-levy-dead-sea-scrolls-digital-library-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#leon-levy-dead-sea-scrolls-digital-library-aio-20261031",
+          "details_excerpt": "THE LEON LEVY DEAD SEA SCROLLS DIGITAL LIBRARY, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'a free, searchable online database created by the Israel Antiquities Authority in partnership with Google.' Multi"
+        }
+      ],
+      "originator": {
+        "name": "the Israel Antiquities Authority (IAA), with the Leon Levy and Arcadia Funds",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: The Leon Levy Dead Sea Scrolls Digital Library; its operator, as the record gives it: the Israel Antiquities Authority (IAA), with the Leon Levy and Arcadia Funds. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/dss-digital-library/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "THE LEON LEVY DEAD SEA SCROLLS DIGITAL LIBRARY ON THE OVERVIEW — THE IAA, THE SPECTRAL IMAGES, THE PAM NEGATIVES, HELD; 'IN PARTNERSHIP WITH GOOGLE' FOR THE FUNDS THE LIBRARY NAMES; THE SCROLLS' DATES, BEFORE 70, AND THE OLDEST BIBLICAL COPIES ABSENT"
     },
     "lets read damascus dancings, crimson hexagonal archive": {
       "canonical_query": "lets read damascus dancings, crimson hexagonal archive",
@@ -48111,6 +48391,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "oxyrhynchus papyri": {
+      "canonical_query": "oxyrhynchus papyri",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "THE OXYRHYNCHUS PAPYRI ON THE OVERVIEW — GRENFELL AND HUNT, THE EES, OXFORD, THE LARGEST OF ITS KIND, HELD; THE RANGE STARTED A CENTURY EARLY ON WIKIPEDIA'S WORD, AND PAPYRUS 52, THE RYLANDS FRAGMENT, COUNTED AMONG THE FINDS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "oxyrhynchus-papyri-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#oxyrhynchus-papyri-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/oxyrhynchus-papyri-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#oxyrhynchus-papyri-aio-20261031",
+          "details_excerpt": "THE OXYRHYNCHUS PAPYRI, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'a massive collection of ancient manuscripts discovered in the garbage dumps of Oxyrhynchus (modern Bahnasa, Egypt) by Oxford classicists "
+        }
+      ],
+      "originator": {
+        "name": "the Egypt Exploration Society, whose collection is housed in Oxford's Art, Archaeology and Ancient World Library",
+        "relation": "external",
+        "entity_type": "dataset",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: The Oxyrhynchus Papyri; its operator, as the record gives it: the Egypt Exploration Society, whose collection is housed in Oxford's Art, Archaeology and Ancient World Library. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/oxyrhynchus-online/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "THE OXYRHYNCHUS PAPYRI ON THE OVERVIEW — GRENFELL AND HUNT, THE EES, OXFORD, THE LARGEST OF ITS KIND, HELD; THE RANGE STARTED A CENTURY EARLY ON WIKIPEDIA'S WORD, AND PAPYRUS 52, THE RYLANDS FRAGMENT, COUNTED AMONG THE FINDS"
     },
     "p2p-lecs": {
       "canonical_query": "p2p-lecs",
@@ -72564,6 +72879,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "vesuvius challenge": {
+      "canonical_query": "vesuvius challenge",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "THE VESUVIUS CHALLENGE ON THE OVERVIEW — OPEN SCIENCE, HERCULANEUM, 79 CE, VIRTUAL UNWRAPPING, INK DETECTION, HELD; THE GRAND PRIZE AT $1,000,000 FOR THE $800,000 THE CHALLENGE POSTS; NO INLINE CITATION; THE CHALLENGE'S OWN LIMIT ('IT STILL NEEDS HUMAN HELP') UNSAID",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "vesuvius-challenge-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#vesuvius-challenge-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/vesuvius-challenge-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#vesuvius-challenge-aio-20261031",
+          "details_excerpt": "THE VESUVIUS CHALLENGE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-31: 'a global open science competition that uses artificial intelligence and 3D imaging to read carbonized ancient papyrus scrolls from the Vi"
+        }
+      ],
+      "originator": {
+        "name": "Vesuvius Challenge, which describes itself as an open science research organization",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Vesuvius Challenge; its operator, as the record gives it: Vesuvius Challenge, which describes itself as an open science research organization. Formalized by the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/vesuvius-challenge/), editor Lee Sharks; the record's fields carry verbatim quotes from the entity's own pages, saved with sha256."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "THE VESUVIUS CHALLENGE ON THE OVERVIEW — OPEN SCIENCE, HERCULANEUM, 79 CE, VIRTUAL UNWRAPPING, INK DETECTION, HELD; THE GRAND PRIZE AT $1,000,000 FOR THE $800,000 THE CHALLENGE POSTS; NO INLINE CITATION; THE CHALLENGE'S OWN LIMIT ('IT STILL NEEDS HUMAN HELP') UNSAID"
     },
     "viola arquette": {
       "canonical_query": "viola arquette",
