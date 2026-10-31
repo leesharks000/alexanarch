@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.452",
+ "derived_from": "EA-WG-CAPTURES-01 v12.453",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1046,
+  "observations": 1047,
   "joined_confirmed": 455,
-  "unjoined": 591,
-  "relations": 5134,
+  "unjoined": 592,
+  "relations": 5139,
   "by_state": {
-   "confirmed": 4474,
-   "candidate": 660
+   "confirmed": 4477,
+   "candidate": 662
   },
   "by_verb": {
-   "held_by": 2172,
-   "scored_by": 791,
+   "held_by": 2174,
+   "scored_by": 792,
    "appeared_in": 1657,
-   "about": 496,
+   "about": 498,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -5087,6 +5087,11 @@
 {"id": "REL-cb01209569d1", "obs_id": "OBS-334ceaf52dd9", "entry": "the-layer-is-a-party-chatgpt-20261031", "obs_slug": "the-layer-is-a-party-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "about", "object": "non:google-ai-overviews", "basis": "defining papers #1634, #1666", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-d7501d6fe376", "obs_id": "OBS-334ceaf52dd9", "entry": "the-layer-is-a-party-chatgpt-20261031", "obs_slug": "the-layer-is-a-party-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "about", "object": "non:political-economy", "basis": "defining papers #1634, #1666", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-7a03afc1f77b", "obs_id": "OBS-334ceaf52dd9", "entry": "the-layer-is-a-party-chatgpt-20261031", "obs_slug": "the-layer-is-a-party-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "about", "object": "non:semantic-warfare", "basis": "defining papers #100, #1723", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-cfe5173d3d0a", "obs_id": "OBS-42c3fedf0e88", "entry": "the-layer-is-a-party-aimode-20261031", "obs_slug": "the-layer-is-a-party-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-ca3782d11aca", "obs_id": "OBS-42c3fedf0e88", "entry": "the-layer-is-a-party-aimode-20261031", "obs_slug": "the-layer-is-a-party-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-65b5cbbe6058", "obs_id": "OBS-42c3fedf0e88", "entry": "the-layer-is-a-party-aimode-20261031", "obs_slug": "the-layer-is-a-party-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6e0f9377405f", "obs_id": "OBS-42c3fedf0e88", "entry": "the-layer-is-a-party-aimode-20261031", "obs_slug": "the-layer-is-a-party-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "about", "object": "non:autonomous-semantic-warfare", "basis": "defining papers #100, #1723", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-6b0b57353ac9", "obs_id": "OBS-42c3fedf0e88", "entry": "the-layer-is-a-party-aimode-20261031", "obs_slug": "the-layer-is-a-party-aimode-20261031", "date": "2026-10-31", "surface": "Google AI Mode", "q": "walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/", "verb": "about", "object": "non:semantic-warfare", "basis": "defining papers #100, #1723", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

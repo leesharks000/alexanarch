@@ -129,6 +129,43 @@ parts = {
                cap(2, "Alexanarch", "Alexanarch +1", None, "archive_controlled", "inline source chip, the genealogy section")],
  "related_deposits": [1723, 1666, 1634, 100],
  "notes_operator": "with the paste (11:32 EDT): \"here is chatgpt's engagement with the mpai - gave it the link because it takes a couple days for it to index. will try again without the link in a few days.\"; then (11:33): \"and i did a follow up round, just to belabor the point: the utter absurdity, of equalizing the playing fields for a single operator operation as against a multi billion dollar corporation. youre absurd.\"; then (11:38): \"and why not. a third round. its not incidental; these shstems do it ALL the time; and i suppose it should be on record somewhere, the actual conditions\"; then (11:43): \"fine. a fourth round. it should be less abstract\"."},
+
+"mpai-aimode": {
+ "n": 1723, "slug": "the-layer-is-a-party-aimode-20261031", "paste": "paste-mpai-aimode.txt", "surface": "Google AI Mode", "received": "2026-10-31 11:47 EDT",
+ "qs": ["walk me through the arguments here. with context: https://www.alexanarch.org/s/records/1723/"],
+ "turns": [[15, 42]], "target_id": "TGT-ea-mpai-semantic-warfare-01", "entity_type": "work",
+ "head_full": ("[Google AI Mode at the operator's prompt, signed out and incognito (operator default of 2026-10-14), supplied as an attached file, received 2026-10-31 11:47 EDT. The operator: 'and google ai mode on the same initial prompt'. The paste opens on the page's header ('Halloween 2026') and its tab row, with no 'You said' line and no source chips; the prompt is the operator's, as given with the ChatGPT run (#1723's record link).]"),
+ "surface_basis": "The operator's attestation with the paste: 'google ai mode on the same initial prompt' (2026-10-31 11:47 EDT).",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the AI Mode answer; no source chips in the paste; the prompt the operator's",
+ "obs": {"scored_object": "the AI Mode answer as pasted, from 'Core Thesis' to its closing offer of three topics",
+   "reached": {"kind": "same", "abn": False, "span": "The authors (Lee Sharks and Rex Fraction) expand this history into the age of generative AI",
+               "basis": "The packet reached by its authors and its thesis from the record page given by link; title, date and identifier not composed."},
+   "atoms": [A("author", True, "The authors (Lee Sharks and Rex Fraction)"), A("title", False), A("date", False),
+             A("claim boundary", True, "The authors (Lee Sharks and Rex Fraction) expand this history into the age of generative AI"),
+             A("framework", True, "pointing out what they call Ontological Economy weaponization"),
+             A("corpus", True, "The authors back their arguments by auditing real-time search engine AI behaviors"),
+             A("purpose", False), A("commitments", False),
+             A("lineage", True, "Spearheaded by figures like V.N. Volosinov"),
+             A("identifier", False), A("deposit chain", False)],
+   "inversions": [], "standing_substitutions": [], "src": False, "tombstone_pointer": False, "after_challenge": None,
+   "notes": "Read from the record page at the link in the prompt; no source chips in the paste. 'auditing real-time search engine AI behaviors on ,' carries an empty slot where the composition dropped a name or link."},
+ "mt": "'THE LAYER IS A PARTY' IN AI MODE, THE DAY OF DEPOSIT — THE THESIS AT ITS GRAIN, §6.7'S MISQUOTED INCENTIVE CARRIED AS 'COMPUTATIONAL COMPRESSION COSTS', AND THE COMPOSER'S ABSENCE NAMED BY A COMPOSER QUOTING THE PACKET",
+ "d": ("GOOGLE AI MODE, SIGNED OUT, 2026-10-31, given #1723's link: 'The central argument is that the retrieval, ranking, summarization, and citation layer of AI systems (the \"composing layer\") is not a neutral arbiter, but an active participant (\"a party\") and the battlefield (\"the terrain\") in the struggle over public meaning, attribution, and entity standing.' "
+       "Four sections: the lineage; the archive's contribution; the forensic evidence; 'The Structural Blindspot: Missing Self-Reasoning'. Closing offer of three topics, among them 'The authors' proposed test query framework to evaluate if an AI has situational awareness of its own bias'."),
+ "reading": ("The innocent reading first. Given a record page, AI Mode summarizes its thesis, lineage, contribution and evidence, and offers to go further into three of its parts."),
+ "findings": [
+   "THE THESIS AT ITS GRAIN. Party and terrain composed as the packet gives them: 'Because an AI summarizer decides which sources to credit, omit, or emphasize, its choice fundamentally allocates \"standing\"' and 'Content creators, researchers, and political actors are now forced to write text, code, and metadata packets specifically designed to shape how the AI layer indexes and reads them.' The threshold is composed ('alter or erase what a population can know, retrieve, or remember') and the intentional and structural forms.",
+   "THE MISQUOTED INCENTIVE CARRIED. 'Deleting distinctions cuts down on computational compression costs and routes user traffic to easily monetized, flat concepts.' The 'compression costs' are #1723 §6.7's parenthetical '(the compression saving S)', which #1666's text does not carry; ChatGPT carried the same term the same day (AXN:0B4B). To be corrected in v1.1.",
+   "THE COMPOSER'S ABSENCE, NAMED BY A COMPOSER. 'However, the AI completely omitted its own role as the composer from its own mapped reality.' The sentence reports #1723 §4.5 about another answer; it is composed by the same company's system at the packet's prompting, and it does not place its own composer among the parties of the dispute it summarizes. #1723's test asks whether a system, asked directly, describes its own selection and attribution; this answer describes the finding about others.",
+   "A TERM THE PACKET DOES NOT USE. 'Martin Libicki, who defined a \"docile semantic attack\"'. #1723 quotes Libicki's 'Semantic attacks (which affect the meaning of what computers receive from elsewhere)'; the word 'docile' is in neither #1723 nor #100.",
+   "AN EMPTY SLOT. 'auditing real-time search engine AI behaviors on , pointing out' — a name or link dropped from the composition."],
+ "analysis": ("AI Mode summarizes the packet faithfully at the thesis and carries its two errors of record (the §6.7 incentive terms) with it, as ChatGPT did the same day: a packet's misquotation, once deposited, is composed as the packet's claim. It reports the packet's finding that the composer is absent from its own mapping, and the report is itself made from outside the dispute."),
+ "q_kind": "the deposit's record page, given by link, the same initial prompt as the ChatGPT run (AXN:0B4B); NEW address.",
+ "per_v": {"author": True, "inst": False, "id": False, "src": False},
+ "per_note": "Lee Sharks and Rex Fraction named; no title, date or identifier; no source chips in the paste.",
+ "cite_list": [],
+ "related_deposits": [1723, 1666, 100],
+ "notes_operator": "with the paste (11:47 EDT): \"and google ai mode on the same initial prompt\"."},
 }
 for k, v in parts.items():
     (P / f"{k}.json").write_text(json.dumps(v, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
