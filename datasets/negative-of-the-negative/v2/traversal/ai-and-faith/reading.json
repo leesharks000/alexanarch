@@ -1,0 +1,240 @@
+{
+ "row": "ai-and-faith",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on AI and Faith with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity (O-direct) or to a class the field B sources for it (O-class: AI and religion, faith traditions’ perspectives on AI and its ethics; basis in the config). A bare mention, a list entry or a keyword is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First ≠ Revelation Early, § Machine-Mediated Theological Reception: the archive’s category applied to the class, how AI retrieval systems process contested religious scholarship, as a measured instance, as its own first study, and with the pre-seeding baseline of 14 June 2026 (the composition layer correcting the user on Revelation’s place). Read whole.",
+   "claims": [
+    "O202-01",
+    "O202-02",
+    "O202-03"
+   ],
+   "cands": [
+    "O: 202 ¶23 s73"
+   ],
+   "instances": [
+    {
+     "dep": 1025,
+     "note": "the same section verbatim (keyword surface with transcripts): one work, S4"
+    }
+   ]
+  },
+  {
+   "dep": 832,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (v7.1): defines the category, machine-mediated theological reception, as measuring how AI retrieval systems process, frame, attribute and present a theological thesis, and states the measurement as the first longitudinal study of how AI retrieval systems process contested religious scholarship.",
+   "claims": [
+    "O832-01",
+    "O832-02"
+   ],
+   "cands": [
+    "O: 832 ¶166 s544–545",
+    "O: 832 ¶341 s1228"
+   ],
+   "instances": [
+    {
+     "dep": 1211,
+     "note": "a version of the same work plan (S4: instances of one work, grouped and kept)"
+    },
+    {
+     "dep": 1216,
+     "note": "a version of the same work plan (S4: instances of one work, grouped and kept)"
+    },
+    {
+     "dep": 1217,
+     "note": "a version of the same work plan (S4: instances of one work, grouped and kept)"
+    },
+    {
+     "dep": 1400,
+     "note": "a version of the same work plan (S4: instances of one work, grouped and kept)"
+    },
+    {
+     "dep": 1403,
+     "note": "a version of the same work plan (S4: instances of one work, grouped and kept)"
+    }
+   ]
+  },
+  {
+   "dep": 499,
+   "strata": [
+    "O"
+   ],
+   "reason": "Autonomous Semantic Warfare: the archive’s formal operators (Negation, Capture, Retrocausal Validation) applied to cases including ‘a religious community navigating AI-mediated content’, an instance of the class (a faith community’s engagement with AI); thin, admitted with its modality (self-description).",
+   "claims": [
+    "O499-01"
+   ],
+   "cands": [
+    "O: 499 ¶75 s174"
+   ],
+   "instances": [
+    {
+     "dep": 1107,
+     "note": "another deposit of the same field manual (hop candidate; the same work)"
+    }
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/ai-and-faith-aio-20261031/",
+   "reason": "the Capture Registry’s findings, reading, analysis, query note, PER note and PER-dim basis and reading notes for the entity’s capture (OBS-4ba09939f09e, 2026-10-31), the archive’s statements on the entity’s composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15",
+    "CAP-1-16"
+   ]
+  },
+  {
+   "dep": "RF",
+   "url": "https://www.revelationfirst.com/aggregators/ai-and-faith/ (source: /home/claude/fleet/revelationfirst-com/data/rf-census/census.json rows[slug == 'ai-and-faith'], organizing_question, correction, intersections; questions.json; rendered aggregators/ai-and-faith/index.html)",
+   "reason": "the Revelation First census record of the entity (editor Lee Sharks, compiled 2026-10-30, schema ‘field census 1.0’): its fields with their basis, its evidence, relations and unchecked list, the census’s frame, and the one worked question that names it; where a field restates a source ledgered in B (evidence.self, .pillars, .traditions, .misinformation; findings) it is one lineage with that source",
+   "claims": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-04",
+    "RF-05",
+    "RF-06",
+    "RF-07",
+    "RF-08",
+    "RF-09",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-14",
+    "RF-15",
+    "RF-16",
+    "RF-17",
+    "RF-18",
+    "RF-19",
+    "RF-20",
+    "RF-21",
+    "RF-22",
+    "RF-23",
+    "RF-24",
+    "RF-25",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-29",
+    "RF-30",
+    "RF-31",
+    "RF-32",
+    "RF-33",
+    "RF-34"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    119
+   ],
+   "reason": "‘a literary or spiritual practitioner’ in a list of practitioners who cannot enter the corpus unaided: no claim on the class"
+  },
+  {
+   "dep": [
+    497,
+    1150
+   ],
+   "reason": "‘theological coda’ in a list of a Grok composition’s themes: no claim on AI and religion"
+  },
+  {
+   "dep": [
+    524
+   ],
+   "reason": "biblical theology and AI systems theory among the Hexagon’s source traditions: a claim about the archive’s method, not about the class"
+  },
+  {
+   "dep": [
+    641
+   ],
+   "reason": "political theology and AI among the domains of compression studies: a list, no claim on the class"
+  },
+  {
+   "dep": [
+    834,
+    1228
+   ],
+   "reason": "AI Overview’s use of the archive’s vocabulary (‘retrieval-layer theological reception’ among it): a claim about the composition layer’s uptake of the archive’s terms, not about the class"
+  },
+  {
+   "dep": [
+    847,
+    1032
+   ],
+   "reason": "capture notes of the archive’s own thesis (‘AI-assisted theology discussions’ is the composition’s phrase): about Revelation First’s reception, not the class"
+  },
+  {
+   "dep": [
+    928
+   ],
+   "reason": "hop: ‘it has the shape of a religion because it is doing the work religion historically did’ is said of the archive’s own architecture"
+  },
+  {
+   "dep": [
+    830
+   ],
+   "reason": "hop: the pre-seeding baseline document of Revelation First; its class-bearing statement (the composition layer correcting the user) is carried in #202’s baseline claim (O202-03), the same lineage; its other content concerns the archive’s thesis"
+  }
+ ],
+ "hop": {
+  "from": [
+   202,
+   499,
+   832
+  ],
+  "candidates": 37,
+  "admitted": 0,
+  "note": "every hop candidate screened for sentences pairing religion, theology, faith or scripture with AI, retrieval, the composition layer or a model; the matches (#828 a title, #928, #1025, #1211, #1216, #1217, #1400) read: #1025 and the work-plan versions are instances of admitted works (S4); #828 and #928 rejected; the rest had no class sentence"
+ },
+ "class_pass": "O-class: the string pass returned 35 sentences in 17 texts matching the class pattern with a term of the script’s category vocabulary; all read: 3 deposits admitted (#202, #832, #499), their instances grouped (#1025; #1211, #1216, #1217, #1400), the rest rejected as above. D and R: no archive text names ‘AI and Faith’ (case-sensitive), ‘AI & Faith’ or ‘aiandfaith’.",
+ "observations": "No archive text names the network (D 0, R 0); the archive bears on it only through its class, AI and religion, where the Revelation First work defines and claims the measurement the network does not make (machine-mediated theological reception), and through the census record and the capture, which are the archive’s records of the entity. The census’s intersection ai-scripture is not a class of the pass (no field source states it for the entity; see the config’s classes_note).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 35,
+   "O_deposits": 17,
+   "H_candidates": 37
+  },
+  "class_sentences_read": 35,
+  "deposits_candidate": 17,
+  "deposits_admitted": 3,
+  "deposits_admitted_with_claims": 3,
+  "instances_grouped_S4": 6,
+  "hop_candidates": 37,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 16,
+   "rf": 34,
+   "deposit": 6
+  }
+ }
+}

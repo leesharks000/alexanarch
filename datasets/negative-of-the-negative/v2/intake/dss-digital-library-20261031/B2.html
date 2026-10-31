@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The Leon Levy Dead Sea Scrolls Digital Library | Septuaginta &amp;c.</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://williamaross.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+		<script src="https://s0.wp.com/wp-content/themes/pub/suits/js/html5.js?m=1389124717i" type="text/javascript"></script>
+	<![endif]-->
+	<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Vollkorn:r,i,b,bi:latin,latin-ext","Vollkorn:r:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active button, .wf-active html, .wf-active input, .wf-active select, .wf-active textarea{font-family:"Vollkorn",serif}.wf-active body{font-size:16.9px;font-family:"Vollkorn",serif}.wf-active .site-description{font-family:"Vollkorn",serif;font-size:18.2px}.wf-active .widget .widget-title{font-family:"Vollkorn",serif;font-size:26px}.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}.wf-active .site-title{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}.wf-active .entry-title{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}.wf-active .widget .widget-title{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}.wf-active .nav-menu li a{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}@media only screen and (min-width: 768px) and (max-width: 959px){.wf-active .menu-toggle{font-family:"Vollkorn",serif;font-weight:400;font-style:normal}}@media only screen and (max-width: 868px){.wf-active .site-title{font-style:normal;font-weight:400}}</style>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=331'
+					+ '&is_singular=1';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly93aWxsaWFtYXJvc3MuY29t"
+		+ "&wpcomid=36808550"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts-api.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Septuaginta &amp;c. &raquo; Feed" href="https://williamaross.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Septuaginta &amp;c. &raquo; Comments Feed" href="https://williamaross.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Septuaginta &amp;c. &raquo; The Leon Levy Dead Sea Scrolls Digital&nbsp;Library Comments Feed" href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Person","@id":"https:\/\/williamaross.com\/author\/williamaross\/#person","name":"William A. Ross","image":"https:\/\/secure.gravatar.com\/avatar\/80f9fc0ade37f569b813577b4483cd38ddf0e4c00014c1f297a0adf782724cbb?s=512&d=identicon&r=g","description":"Assistant Professor of Old Testament, Reformed Theological Seminary (Charlotte, NC)","url":"http:\/\/williamaross.com","givenName":"William","familyName":"Ross","worksFor":{"@id":"https:\/\/williamaross.com\/#organization"}},{"@type":"Article","headline":"The Leon Levy Dead Sea Scrolls Digital&nbsp;Library","datePublished":"2014-03-27T14:30:46+00:00","dateModified":"2014-04-11T13:58:24+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/williamaross.com\/2014\/03\/27\/the-leon-levy-dead-sea-scrolls-digital-library\/"},"description":"As promised, the first of my Resource Reviews, collected here. The Digital Scrolls Library A few months ago, the Tyndale House posted a link on Facebook to an amazing resource that I thought was worth highlighting here as a first review. The Leon Levy Dead Sea Scrolls Digital Library is the result of the work of the","publisher":{"@id":"https:\/\/williamaross.com\/#organization"},"author":{"@id":"https:\/\/williamaross.com\/author\/williamaross\/#person"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/williamaross.com\/"},{"@type":"ListItem","position":2,"name":"The Leon Levy Dead Sea Scrolls Digital Library"}]}]}</script><style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='/_static/??-eJxtzEsKgDAMANELWaMiVBfiWUobpP9iUry+KIIgLh8MA0cROifGxBCrKKFuNhE45KK0fwxUE8RsakCCHYNiNKJk4o9aTdTA/zFYj+/31pWvcenlPMhRdpN0JymjNIE=&cssminify=yes' type='text/css' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#3858e9;--wp-admin-theme-color--rgb:56,88,233;--wp-admin-theme-color-darker-10:#2145e6;--wp-admin-theme-color-darker-10--rgb:33.0384615385,68.7307692308,230.4615384615;--wp-admin-theme-color-darker-20:#183ad6;--wp-admin-theme-color-darker-20--rgb:23.6923076923,58.1538461538,214.3076923077;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}body.admin-color-fresh{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){body.admin-color-fresh{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}:root .has-inline-color,:root .has-link-color a,:root .has-text-color{-webkit-text-fill-color:currentColor}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;overflow-wrap:normal!important;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}@supports (not (-webkit-backdrop-filter:blur(1px))) and (not (-moz-appearance:none)){mtd[columnalign=right]{text-align:-webkit-right}mtd[columnalign=left]{text-align:-webkit-left}menclose[notation~=top]{border-top:.065em solid;padding-top:.1em}menclose[notation~=bottom]{border-bottom:.065em solid;padding-bottom:.1em}}
+
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v24.3.0/build/styles/block-library/common.min.css */
+</style>
+<style id="wp-block-library-inline-css-extra">
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}.wp-block-tab:not(.has-text-color){color:inherit!important}.wp-block-tab:not(.has-background){background-color:inherit!important}.wp-block-tab:focus,.wp-block-tab:hover{text-decoration:none}.wp-block-tab:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v24.3.0/build/styles/block-library/classic.min.css */
+</style>
+
+<style id="coblocks-inline-format-inline-css">
+.uppercase{text-transform:uppercase}
+/*# sourceURL=coblocks-inline-format-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='/_static/??-eJx9jcEKg0AMRH+oaVhorR7Eb9E16IpZg8min2889FZ6GYbhPQYPgbhlo2zIBWQtU8qKcdvJd5be0AmmMfW0Ejv2jKoP/K0daZzIXNdvB6PzvyJ+A8MgO6mCJ6fCYLN/6e113IZXU9WfUL/DcgHSTkDo&cssminify=yes' type='text/css' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--text-shadow--light: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.3);--wp--preset--text-shadow--strong: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.5);--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}.has-light-text-shadow{text-shadow: var(--wp--preset--text-shadow--light) !important;}.has-strong-text-shadow{text-shadow: var(--wp--preset--text-shadow--strong) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-14-1' href='/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-comments/build/comments.css?m=1792508237i&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='suits-font-css' href='https://fonts-api.wp.com/css?family=Lato%3A100%2C300%2C400%26subset%3Dlatin%2Clatin-ext' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='/_static/??-eJx9i0EKgzAQAD/UdJEEiwfpW0xY05RNNrgbir83venF2wzMwK+awEWxKOgHMwrU5kFaUgHRnfAZRB5wynIzlVpMRWBDTxw7RujVSe+miGyIw6KJy0XMSkva/us7z8PLDeNkrbPfAw6OPHc=&cssminify=yes' type='text/css' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='print-css-17-1' href='/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&cssminify=yes' type='text/css' media='print' />
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-20-1' href='/_static/??-eJyNjcsKAjEMRX/ImhmUURfip0inLW3GNCmmQfx7H7gRN+7ugcs5cGsuCPfEHaq5RpaRFZbUmw+XD4MaQ5VolBS0+GuKPsb7eyLndVBdwd+iM3KA2ZAiqAT05Eiy6Bf8KHtJ9RkvW8gks6fX4VSP426/mQ7TMA7LA38FSqA=&cssminify=yes' type='text/css' media='all' />
+<script id="jetpack_related-posts-js-extra">
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+</script>
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"36808550","postID":"331","siteURL":"https://williamaross.com","xhrURL":"https://williamaross.com/wp-admin/admin-ajax.php","nonce":"1bb6e60d76","isLoggedIn":"","statusMessage":"","statusSubscribed":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","shortlink":"https://wp.me/p2urAi-5l","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+</script>
+<script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s0.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJx1jdsKwjAQRH/IdBEKTR/ET5GaLCUxN7O71P69ESLUB5+GYQ5nYCvK5MSYGKKoEmR1icAjl8U8egeSBDeXDNzFBQsVw8JoVcnE9NuG6NLg6QQHr29MYFVqfu3frcmCWKTP6J+Cde9xFPyFVHRrbacdvsbLedJ6msdZj/4NDIdOFg=='></script>
+<script id="rlt-proxy-js-after">
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://williamaross.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/" />
+<link rel='shortlink' href='https://wp.me/p2urAi-5l' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fwilliamaross.com%2F2014%2F03%2F27%2Fthe-leon-levy-dead-sea-scrolls-digital-library%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fwilliamaross.com%2F2014%2F03%2F27%2Fthe-leon-levy-dead-sea-scrolls-digital-library%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Leon Levy Dead Sea Scrolls Digital Library" />
+<meta property="og:url" content="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/" />
+<meta property="og:description" content="As promised, the first of my Resource Reviews, collected here. The Digital Scrolls Library A few months ago, the Tyndale House posted a link on Facebook to an amazing resource that I thought was wo…" />
+<meta property="article:published_time" content="2014-03-27T14:30:46+00:00" />
+<meta property="article:modified_time" content="2014-04-11T13:58:24+00:00" />
+<meta property="og:site_name" content="Septuaginta &amp;c." />
+<meta property="og:image" content="http://www.deadseascrolls.org.il/img/content/scholars_working.jpg" />
+<meta property="og:image:width" content="530" />
+<meta property="og:image:height" content="337" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:creator" content="@William_A_Ross" />
+<meta name="twitter:site" content="@William_A_Ross" />
+<meta name="twitter:text:title" content="The Leon Levy Dead Sea Scrolls Digital&nbsp;Library" />
+<meta name="twitter:image" content="http://www.deadseascrolls.org.il/img/content/scholars_working.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=114" />
+<link rel='openid.server' href='https://williamaross.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://williamaross.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://williamaross.com/osd.xml" title="Septuaginta &#38;c." />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#ffffff" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<style>
+.milestone-widget {
+	--milestone-text-color: #333333;
+	--milestone-bg-color: #ffffff;
+	--milestone-border-color:#e5e5e5;
+}
+</style>
+		<meta name="description" content="As promised, the first of my Resource Reviews, collected here. The Digital Scrolls Library A few months ago, the Tyndale House posted a link on Facebook to an amazing resource that I thought was worth highlighting here as a first review. The Leon Levy Dead Sea Scrolls Digital Library is the result of the work of the&hellip;" />
+	<style type="text/css" id="suits-header-css">
+			.site-header {
+			background: #000 url(https://williamaross.com/wp-content/uploads/2014/04/cropped-macedonian_empire_336_323-e1393787919570.jpg) no-repeat scroll top;
+		}
+		</style>
+	<noscript><style>.jetpack-comments{visibility:visible!important}</style></noscript><style type="text/css" id="custom-colors-css">.site-header h1.site-title { color: #FFFFFF;}
+.site-header h2.site-description { color: #FFFFFF;}
+.site-info { color: #FFFFFF;}
+.site-info { color: #494949;}
+a:hover { color: #333333;}
+.entry-content a, .comment-content a, .page-content a { color: #333333;}
+.entry-meta a:hover { color: #333333;}
+.nav-menu li a { color: #565656;}
+.nav-menu li:hover > a, .nav-menu li a:hover { color: #383838;}
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a { color: #383838;}
+.nav-menu li:hover { background-color: #404040;}
+body { background-color: #ffffff;}
+.site-header { background-color: #111111;}
+#navbar { background-color: #ccdbcb;}
+.site-info-container { background-color: #ccdbcb;}
+.nav-menu li:hover > a, .nav-menu li a:hover { background-color: #ccdbcb;}
+.nav-menu li:hover > a, .nav-menu li a:hover { background-color: rgba( 204, 219, 203, 0.8 );}
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover { background-color: #ccdbcb;}
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a { background-color: #ccdbcb;}
+.nav-menu .sub-menu, .nav-menu .children { background-color: #AFC6AD;}
+a { color: #0E759E;}
+.entry-content a, .comment-content a, .page-content a { color: #0E759E;}
+.entry-meta a { color: #189DD1;}
+body, h1, h2, h3, h4, h5, h6 { color: #000000;}
+h1, h2, h3, h4, h5, h6 { color: #000000;}
+.entry-meta { color: #000000;}
+input { color: #000000;}
+textarea { color: #000000;}
+</style>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2urAi&#038;cscache=6&#038;csrev=49" />
+			<style id="jetpack-subscriptions-inline-css">
+#subscribe-email input {
+	width: 95%;
+}
+
+.comment-subscription-form {
+	margin-bottom: 1em;
+}
+
+.comment-subscription-form .subscribe-label {
+	display: inline !important;
+}
+
+/*
+Text meant only for screen readers.
+Provides support for themes that do not bundle this CSS yet.
+@see https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/
+***********************************/
+.screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	overflow-wrap: normal !important;
+}
+
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/_inc/build/subscriptions/subscriptions.min.css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-3' href='/_static/??-eJydjMsKhDAMAH9ou8E3Hha/RWqQapsEkiL+vcoK3r3NMDCwifNMhmSQspOY50AKC5qMfr0dNBMknnJEhS1MM5pCCqcZEz7k/u3rVT/wemwsTlhPUtsjXrch/Yquqcqub+tmOQCHSkOy&cssminify=yes' type='text/css' media='all' />
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-331 single-format-standard wp-theme-pubsuits customizer-styles-applied single-author two-footer-sidebars jetpack-reblog-enabled custom-colors">
+	<div id="page" class="hfeed site">
+
+		<header id="masthead" class="site-header" role="banner">
+			
+			<a class="home-link" href="https://williamaross.com/" title="Septuaginta &amp;c." rel="home">
+				<h1 class="site-title">Septuaginta &amp;c.</h1>
+				<h2 class="site-description">Greek Old Testament and Hebrew Bible</h2>
+			</a><!-- #navbar .header-navigation -->
+
+			<div id="navbar" class="header-navigation">
+
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-229"><a href="https://williamaross.com/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="https://williamaross.com/research-interests/">Research Interests</a></li>
+	<li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="https://williamaross.com/curriculum-vitae/">Curriculum Vitae</a></li>
+	<li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-224"><a href="https://williamaross.com/writing/">Research &amp; Writing</a>
+	<ul class="sub-menu">
+		<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a href="https://williamaross.com/bookreviews/">Book Reviews</a></li>
+	</ul>
+</li>
+	<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223"><a href="https://williamaross.com/teaching/">Teaching</a></li>
+	<li id="menu-item-640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-640"><a href="https://williamaross.com/more/what-im-reading/">What I’m Reading</a></li>
+</ul>
+</li>
+<li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-222"><a href="https://williamaross.com/intro-to-lxx/">Septuagint Studies</a>
+<ul class="sub-menu">
+	<li id="menu-item-3389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3389"><a href="https://williamaross.com/intro-to-lxx/">Intro to LXX Studies</a></li>
+	<li id="menu-item-4203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4203"><a href="https://williamaross.com/septuagint-bibliography-2012-onward/">LXX Bibliography (2012-2022)</a></li>
+	<li id="menu-item-2516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2516"><a href="https://williamaross.com/lxx-scholars-taking-phd-students/">LXX Scholars Taking PhD Students</a></li>
+	<li id="menu-item-1368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1368"><a href="https://williamaross.com/scholar-interviews/">LXX Scholar Interviews</a></li>
+	<li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a href="https://williamaross.com/lxx-resources/">LXX Resources</a></li>
+	<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://williamaross.com/resource-reviews/">Resource Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-4158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4158"><a href="https://williamaross.com/contact/">Contact</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="https://williamaross.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation .navigation .main-navigation -->
+
+			</div><!-- #navbar .header-navigation -->
+
+		</header><!-- #masthead .site-header -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+
+		<div id="content" class="site-content" role="main">
+
+			
+<article id="post-331" class="post-331 post type-post status-publish format-standard hentry category-lxx category-old-testament-studies category-qumrandead-sea-scrolls category-resource-reviews">
+
+	
+			<header class="entry-header">
+
+				
+				<h1 class="entry-title">The Leon Levy Dead Sea Scrolls Digital&nbsp;Library</h1>
+			</header><!-- .entry-header -->
+
+											<div class="entry-content">
+					<p>As promised, the first of my Resource Reviews, collected <a href="https://williamaross.wordpress.com/resource-reviews/">here</a>.</p>
+<h5>The Digital Scrolls Library</h5>
+<p>A few months ago, the <a href="http://www.tyndale.cam.ac.uk/">Tyndale House</a> posted a link on Facebook to an amazing resource that I thought was worth highlighting here as a first review. <a href="http://www.deadseascrolls.org.il/home">The Leon Levy Dead Sea Scrolls Digital Library</a> is the result of the work of the Israel Antiquities Authority (IAA), who have used the latest digital technology to provide high resolution images freely to the public. The site offers hundreds of manuscripts and thousands of fragments found in the Judean Desert between 1947 and the early 1960s.</p>
+<p><img class="alignleft" src="https://i0.wp.com/www.deadseascrolls.org.il/img/content/scholars_working.jpg" alt="" width="530" height="337" /></p>
+<p>Not only that, but the site is actually quite beautiful and user-friendly &#8211; not often the case for online biblical studies resources! My favorite feature of the site (beside this interesting <a href="http://www.deadseascrolls.org.il/learn-about-the-scrolls/historical-timeline">historical timeline</a>) is the multi-criteria <a href="http://www.deadseascrolls.org.il/explore-the-archive">archive search page</a>, where users can sort by archaeological site, language, scroll content, and even more technical filters like material, historic period, and manuscript type. The <a href="http://www.deadseascrolls.org.il/explore-the-archive/search#q=script_language_parent_en:'Greek'">Greek manuscripts and fragments</a> add up to just over 130 items, a remarkable resource for LXX and OT scholar alike.</p>
+<p>This nice video does some of the work for me:</p>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" title="YouTube video player" width="620" height="349" src="https://www.youtube.com/embed/Yp6nLMPt-og?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></span></p>
+<h5><span style="font-size:16.52px;line-height:1.5em;">The Significance of Qumran for LXX Studies</span></h5>
+<p>Much could be said here, so I will limit myself as much as possible. The discovery of the Qumran documents was a paradigm-shifting event in the world of biblical studies. Prior to the Dead Sea Scrolls (DSS), the amount of primary manuscript evidence for the Hebrew Old Testament had been largely limited to material from the 11-13th century C.E. and later. Important exceptions to this were of course some evidence in the Cairo Geniza (see the collection <a href="http://cudl.lib.cam.ac.uk/collections/genizah">here</a>), the Masoretic Leningrad Codex, and the Greek OT content of the Vaticanus and Sinaiticus uncials (both 4th century C.E.). Due to this lack of evidence, OT textual criticism was (far more) difficult. When the DSS were found, however, suddenly scholars had access to primary materials up to a millennium older than what they had on hand, precipitating a new era in OT scholarship.</p>
+<p><img class="alignright" src="https://i0.wp.com/www.deadseascrolls.org.il/img/content/Khirbet-Qumran.jpg" alt="" width="570" height="371" /></p>
+<p>Most of the DSS date between the 3rd century B.C.E. and the 1st century C.E. The collection includes religious literature far afield from what is today considered the canonical Old Testament, although that too was found. As a sectarian community, the Qumran covenanters had texts detailing their unique religious practices, commentaries, wisdom texts, calendars, and so on. Most are written in Hebrew, but Aramaic, Greek, and even <a href="http://www.deadseascrolls.org.il/explore-the-archive/search#q=script_language_parent_en:'Unidentified'">unidentified</a> languages were also used. Amazingly, every book of the bible was discovered (except, curiously, the book of Esther).</p>
+<p>The payoff for LXX studies, of course, is the Greek texts among the collection. As little OT evidence as existed in Hebrew, there was even less for the Greek OT, particularly from the pre-Christian era. One of the most significant aspects of the DSS for LXX studies is that the evidence is pre-Hexaplaric, i.e. represents texts not influenced by the 3rd century C.E. text critical work of Origen. Origen&#8217;s efforts were massive and admirable, but disastrous for later textual critics.</p>
+<p>While no significant divergences in the Greek DSS appeared in comparison to the major uncials, some scholars believe the latter may reflect updating or revision of some kind, usually attributed to Christian scribes. In short, the DSS shed unprecedented light upon the history of the Greek translation of the OT, and provided a sea of primary evidence on which scholars of Hebrew OT studies would set sail as well. May the voyage continue!</p>
+<p>An excellent overview of further points of interest for LXX studies can be found in Jobes &amp; Silva, <em>Invitation to the Septuagint</em> (Baker, 2000), chapter 8. (Buy <a href="http://www.amazon.com/Invitation-Septuagint-Karen-H-Jobes/dp/080103115X">here</a>). Also see E. Tov, &#8220;The Contribution of the Qumran Scrolls to the Understanding of the Septuagint,&#8221; 285-300 in <em>The Greek and Hebrew Bible</em> (Brill, 1999).</p>
+<p style="text-align:center;"><img loading="lazy" class="aligncenter" src="https://i0.wp.com/www.deadseascrolls.org.il/img/content/copper_scroll.jpg" alt="" width="530" height="291" /></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-twitter-331"
+				class="share-twitter sd-button share-icon"
+				href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-331"
+				>
+				<span id="sharing-twitter-331" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-331"
+				class="share-facebook sd-button share-icon"
+				href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-331"
+				>
+				<span id="sharing-facebook-331" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-print"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-print-331"
+				class="share-print sd-button share-icon"
+				href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/#print?share=print"
+				target="_blank"
+				aria-labelledby="sharing-print-331"
+				>
+				<span id="sharing-print-331" hidden>Print (Opens in new window)</span>
+				<span>Print</span>
+			</a></li><li class="share-email"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-email-331"
+				class="share-email sd-button share-icon"
+				href="mailto:?subject=%5BShared%20Post%5D%20The%20Leon%20Levy%20Dead%20Sea%20Scrolls%20Digital%20Library&#038;body=https%3A%2F%2Fwilliamaross.com%2F2014%2F03%2F27%2Fthe-leon-levy-dead-sea-scrolls-digital-library%2F&#038;share=email"
+				target="_blank"
+				aria-labelledby="sharing-email-331"
+				data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="e874d9825d" data-email-share-track-url="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/?share=email">
+				<span id="sharing-email-331" hidden>Email a link to a friend (Opens in new window)</span>
+				<span>Email</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-36808550-331-6ae570faf1247' data-src='//widgets.wp.com/likes/index.html?ver=20261031#blog_id=36808550&amp;post_id=331&amp;origin=williamaross.wordpress.com&amp;obj_id=36808550-331-6ae570faf1247&amp;domain=williamaross.com' data-name='like-post-frame-36808550-331-6ae570faf1247' data-title='Like or Reblog'><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class='loading'>Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>									</div><!-- .entry-content -->
+			
+			<footer class="entry-meta">
+				Posted in <a href="https://williamaross.com/category/lxx/" rel="category tag">LXX</a>, <a href="https://williamaross.com/category/old-testament-studies/" rel="category tag">Old Testament Studies</a>, <a href="https://williamaross.com/category/qumrandead-sea-scrolls/" rel="category tag">Qumran/Dead Sea Scrolls</a>, <a href="https://williamaross.com/category/resource-reviews/" rel="category tag">Resource Reviews</a> <span class="on-date"> on <a href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/" title="10:30 AM" rel="bookmark"><time class="entry-date" datetime="2014-03-27T10:30:46-04:00">March 27, 2014</time></a></span><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="https://williamaross.com/author/williamaross/" title="View all posts by William A. Ross" rel="author">William A. Ross</a></span></span>.
+									<a href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/#respond"><span class="leave-reply">Leave a comment</span></a>				
+							</footer><!-- .entry-meta -->
+
+
+</article><!-- #post-# .#post-class-# -->
+
+	<nav role="navigation" id="nav-below" class="post-navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="nav-previous"><a href="https://williamaross.com/2014/03/08/lxx-resource-reviews/" rel="prev"><span class="meta-nav">&larr;</span> LXX Resource Reviews</a></div>		<div class="nav-next"><a href="https://williamaross.com/2014/04/14/a-users-guide-to-papyri-info-part-i/" rel="next">A User&#8217;s Guide to Papyri.info (Part I) &#8211;&nbsp;Language <span class="meta-nav">&rarr;</span></a></div>
+	
+	</nav><!-- #nav-below -->
+
+	
+<div id="comments" class="comments-area">
+
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://williamaross.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><div class="jetpack-comments" data-jetpack-comments="{&quot;postId&quot;:331,&quot;loginUrl&quot;:&quot;https://williamaross.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwilliamaross.com%2F2014%2F03%2F27%2Fthe-leon-levy-dead-sea-scrolls-digital-library%2F&quot;,&quot;logoutUrl&quot;:&quot;&quot;,&quot;submit&quot;:{&quot;id&quot;:&quot;submit&quot;,&quot;name&quot;:&quot;submit&quot;,&quot;class&quot;:&quot;submit&quot;,&quot;wrapClass&quot;:&quot;&quot;,&quot;label&quot;:&quot;Comment&quot;},&quot;subscriptions&quot;:[{&quot;name&quot;:&quot;subscribe&quot;,&quot;label&quot;:&quot;Notify me of new comments by email.&quot;,&quot;checked&quot;:false},{&quot;name&quot;:&quot;subscribe_blog&quot;,&quot;label&quot;:&quot;Subscribe to keep up with Septuaginta \u0026amp;c..&quot;,&quot;checked&quot;:false}]}"><p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" rows="4" required></textarea></p><p class="comment-form-author"><label for="author">Name</label><input id="author" name="author" type="text" value="" required /></p><p class="comment-form-email"><label for="email">Email</label><input id="email" name="email" type="email" value="" required /></p><p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" maxlength="200" /></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Comment" /> </p></div><noscript><style>.jetpack-comments{display:none!important}</style><p>Turn on JavaScript to leave a comment.</p></noscript><input type='hidden' name='comment_post_ID' value='331' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9183fad071" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="100"/><script>
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+</script>
+</p></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed.</a></p>
+</div><!-- #comments .comments-area -->
+		</div><!-- #content .site-content -->
+
+	</div><!-- #primary .content-area -->
+
+
+	<div id="secondary" class="sidebar-container" role="complementary">
+				<div class="widget-area">
+			<aside id="text-4" class="widget widget_text"><h3 class="widget-title">William A. Ross</h3>			<div class="textwidget"><p>Ph.D., University of Cambridge</p>
+<p>Associate Professor of OT<br />
+Reformed Theological Seminary (Charlotte)</p>
+<p>Septuagint<br />
+Postclassical Greek<br />
+Hellenistic Judaism<br />
+Linguistics &amp; Lexicography<br />
+Textual History of the Bible<br />
+History of Biblical Philology</p>
+</div>
+		</aside><aside id="rss_links-2" class="widget widget_rss_links"><ul><li><a href="https://williamaross.com/feed/" title="Subscribe to Posts">RSS - Posts</a></li></ul>
+</aside><aside id="follow_button_widget-2" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://williamaross.com" data-blog="36808550" data-lang="en" >Follow Septuaginta &amp;c. on WordPress.com</a>
+		<script type="text/javascript">(function(d){ window.wpcomPlatform = {"titles":{"timelines":"Embeddable Timelines","followButton":"Follow Button","wpEmbeds":"WordPress Embeds"}}; var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</aside><aside id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h3 class="widget-title"><label for="subscribe-field">Follow via Email</label></h3>
+
+			<div class="wp-block-jetpack-subscriptions__container">
+			<form
+				action="https://subscribe.wordpress.com"
+				method="post"
+				accept-charset="utf-8"
+				data-blog="36808550"
+				data-post_access_level="everybody"
+				id="subscribe-blog"
+			>
+								<p id="subscribe-email">
+					<label
+						id="subscribe-field-label"
+						for="subscribe-field"
+						class="screen-reader-text"
+					>
+						Email Address:					</label>
+
+					<input
+							type="email"
+							name="email"
+							autocomplete="email"
+							
+							style="width: 95%; padding: 1px 10px"
+							placeholder="Email Address"
+							value=""
+							id="subscribe-field"
+							required
+						/>				</p>
+
+				<p id="subscribe-submit"
+									>
+					<input type="hidden" name="action" value="subscribe"/>
+					<input type="hidden" name="blog_id" value="36808550"/>
+					<input type="hidden" name="source" value="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/"/>
+					<input type="hidden" name="sub-type" value="widget"/>
+					<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="08543c0a8a" />					<button type="submit"
+													class="wp-block-button__link"
+																	>
+						Follow					</button>
+				</p>
+			</form>
+							<div class="wp-block-jetpack-subscriptions__subscount">
+					Join 1,465 other subscribers				</div>
+						</div>
+			
+</aside><aside id="milestone_widget-3" class="widget milestone-widget"><h3 class="widget-title">International Septuagint Day</h3><div id="milestone_widget-3-content" class="milestone-content"><div class="milestone-header"><strong class="event"></strong><span class="date">February 8, 2026</span></div><div class="milestone-message">It's better than Valentine's Day.</div></div><!--milestone-content--></aside><aside id="archives-8" class="widget widget_archive"><h3 class="widget-title">Previous Posts</h3>		<label class="screen-reader-text" for="archives-dropdown-8">Previous Posts</label>
+		<select id="archives-dropdown-8" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://williamaross.com/2026/06/'> June 2026 </option>
+	<option value='https://williamaross.com/2026/05/'> May 2026 </option>
+	<option value='https://williamaross.com/2026/04/'> April 2026 </option>
+	<option value='https://williamaross.com/2026/03/'> March 2026 </option>
+	<option value='https://williamaross.com/2026/02/'> February 2026 </option>
+	<option value='https://williamaross.com/2025/12/'> December 2025 </option>
+	<option value='https://williamaross.com/2025/11/'> November 2025 </option>
+	<option value='https://williamaross.com/2025/10/'> October 2025 </option>
+	<option value='https://williamaross.com/2025/09/'> September 2025 </option>
+	<option value='https://williamaross.com/2025/08/'> August 2025 </option>
+	<option value='https://williamaross.com/2025/02/'> February 2025 </option>
+	<option value='https://williamaross.com/2025/01/'> January 2025 </option>
+	<option value='https://williamaross.com/2024/04/'> April 2024 </option>
+	<option value='https://williamaross.com/2024/02/'> February 2024 </option>
+	<option value='https://williamaross.com/2024/01/'> January 2024 </option>
+	<option value='https://williamaross.com/2023/10/'> October 2023 </option>
+	<option value='https://williamaross.com/2023/09/'> September 2023 </option>
+	<option value='https://williamaross.com/2023/08/'> August 2023 </option>
+	<option value='https://williamaross.com/2023/04/'> April 2023 </option>
+	<option value='https://williamaross.com/2023/03/'> March 2023 </option>
+	<option value='https://williamaross.com/2023/02/'> February 2023 </option>
+	<option value='https://williamaross.com/2023/01/'> January 2023 </option>
+	<option value='https://williamaross.com/2022/12/'> December 2022 </option>
+	<option value='https://williamaross.com/2022/11/'> November 2022 </option>
+	<option value='https://williamaross.com/2022/09/'> September 2022 </option>
+	<option value='https://williamaross.com/2022/08/'> August 2022 </option>
+	<option value='https://williamaross.com/2022/07/'> July 2022 </option>
+	<option value='https://williamaross.com/2022/06/'> June 2022 </option>
+	<option value='https://williamaross.com/2022/04/'> April 2022 </option>
+	<option value='https://williamaross.com/2022/03/'> March 2022 </option>
+	<option value='https://williamaross.com/2022/02/'> February 2022 </option>
+	<option value='https://williamaross.com/2022/01/'> January 2022 </option>
+	<option value='https://williamaross.com/2021/12/'> December 2021 </option>
+	<option value='https://williamaross.com/2021/11/'> November 2021 </option>
+	<option value='https://williamaross.com/2021/10/'> October 2021 </option>
+	<option value='https://williamaross.com/2021/09/'> September 2021 </option>
+	<option value='https://williamaross.com/2021/08/'> August 2021 </option>
+	<option value='https://williamaross.com/2021/06/'> June 2021 </option>
+	<option value='https://williamaross.com/2021/04/'> April 2021 </option>
+	<option value='https://williamaross.com/2021/03/'> March 2021 </option>
+	<option value='https://williamaross.com/2021/02/'> February 2021 </option>
+	<option value='https://williamaross.com/2021/01/'> January 2021 </option>
+	<option value='https://williamaross.com/2020/11/'> November 2020 </option>
+	<option value='https://williamaross.com/2020/10/'> October 2020 </option>
+	<option value='https://williamaross.com/2020/09/'> September 2020 </option>
+	<option value='https://williamaross.com/2020/08/'> August 2020 </option>
+	<option value='https://williamaross.com/2020/07/'> July 2020 </option>
+	<option value='https://williamaross.com/2020/06/'> June 2020 </option>
+	<option value='https://williamaross.com/2020/05/'> May 2020 </option>
+	<option value='https://williamaross.com/2020/04/'> April 2020 </option>
+	<option value='https://williamaross.com/2020/03/'> March 2020 </option>
+	<option value='https://williamaross.com/2020/02/'> February 2020 </option>
+	<option value='https://williamaross.com/2020/01/'> January 2020 </option>
+	<option value='https://williamaross.com/2019/12/'> December 2019 </option>
+	<option value='https://williamaross.com/2019/11/'> November 2019 </option>
+	<option value='https://williamaross.com/2019/10/'> October 2019 </option>
+	<option value='https://williamaross.com/2019/09/'> September 2019 </option>
+	<option value='https://williamaross.com/2019/08/'> August 2019 </option>
+	<option value='https://williamaross.com/2019/07/'> July 2019 </option>
+	<option value='https://williamaross.com/2019/06/'> June 2019 </option>
+	<option value='https://williamaross.com/2019/05/'> May 2019 </option>
+	<option value='https://williamaross.com/2019/03/'> March 2019 </option>
+	<option value='https://williamaross.com/2019/02/'> February 2019 </option>
+	<option value='https://williamaross.com/2019/01/'> January 2019 </option>
+	<option value='https://williamaross.com/2018/12/'> December 2018 </option>
+	<option value='https://williamaross.com/2018/11/'> November 2018 </option>
+	<option value='https://williamaross.com/2018/10/'> October 2018 </option>
+	<option value='https://williamaross.com/2018/09/'> September 2018 </option>
+	<option value='https://williamaross.com/2018/08/'> August 2018 </option>
+	<option value='https://williamaross.com/2018/07/'> July 2018 </option>
+	<option value='https://williamaross.com/2018/06/'> June 2018 </option>
+	<option value='https://williamaross.com/2018/05/'> May 2018 </option>
+	<option value='https://williamaross.com/2018/04/'> April 2018 </option>
+	<option value='https://williamaross.com/2018/02/'> February 2018 </option>
+	<option value='https://williamaross.com/2018/01/'> January 2018 </option>
+	<option value='https://williamaross.com/2017/12/'> December 2017 </option>
+	<option value='https://williamaross.com/2017/11/'> November 2017 </option>
+	<option value='https://williamaross.com/2017/10/'> October 2017 </option>
+	<option value='https://williamaross.com/2017/09/'> September 2017 </option>
+	<option value='https://williamaross.com/2017/08/'> August 2017 </option>
+	<option value='https://williamaross.com/2017/07/'> July 2017 </option>
+	<option value='https://williamaross.com/2017/06/'> June 2017 </option>
+	<option value='https://williamaross.com/2017/05/'> May 2017 </option>
+	<option value='https://williamaross.com/2017/04/'> April 2017 </option>
+	<option value='https://williamaross.com/2017/03/'> March 2017 </option>
+	<option value='https://williamaross.com/2017/02/'> February 2017 </option>
+	<option value='https://williamaross.com/2017/01/'> January 2017 </option>
+	<option value='https://williamaross.com/2016/12/'> December 2016 </option>
+	<option value='https://williamaross.com/2016/11/'> November 2016 </option>
+	<option value='https://williamaross.com/2016/10/'> October 2016 </option>
+	<option value='https://williamaross.com/2016/09/'> September 2016 </option>
+	<option value='https://williamaross.com/2016/08/'> August 2016 </option>
+	<option value='https://williamaross.com/2016/07/'> July 2016 </option>
+	<option value='https://williamaross.com/2016/06/'> June 2016 </option>
+	<option value='https://williamaross.com/2016/05/'> May 2016 </option>
+	<option value='https://williamaross.com/2016/04/'> April 2016 </option>
+	<option value='https://williamaross.com/2016/03/'> March 2016 </option>
+	<option value='https://williamaross.com/2016/02/'> February 2016 </option>
+	<option value='https://williamaross.com/2016/01/'> January 2016 </option>
+	<option value='https://williamaross.com/2015/12/'> December 2015 </option>
+	<option value='https://williamaross.com/2015/11/'> November 2015 </option>
+	<option value='https://williamaross.com/2015/10/'> October 2015 </option>
+	<option value='https://williamaross.com/2015/09/'> September 2015 </option>
+	<option value='https://williamaross.com/2015/08/'> August 2015 </option>
+	<option value='https://williamaross.com/2015/07/'> July 2015 </option>
+	<option value='https://williamaross.com/2015/06/'> June 2015 </option>
+	<option value='https://williamaross.com/2015/05/'> May 2015 </option>
+	<option value='https://williamaross.com/2015/04/'> April 2015 </option>
+	<option value='https://williamaross.com/2015/03/'> March 2015 </option>
+	<option value='https://williamaross.com/2015/02/'> February 2015 </option>
+	<option value='https://williamaross.com/2015/01/'> January 2015 </option>
+	<option value='https://williamaross.com/2014/12/'> December 2014 </option>
+	<option value='https://williamaross.com/2014/11/'> November 2014 </option>
+	<option value='https://williamaross.com/2014/10/'> October 2014 </option>
+	<option value='https://williamaross.com/2014/09/'> September 2014 </option>
+	<option value='https://williamaross.com/2014/08/'> August 2014 </option>
+	<option value='https://williamaross.com/2014/07/'> July 2014 </option>
+	<option value='https://williamaross.com/2014/06/'> June 2014 </option>
+	<option value='https://williamaross.com/2014/05/'> May 2014 </option>
+	<option value='https://williamaross.com/2014/04/'> April 2014 </option>
+	<option value='https://williamaross.com/2014/03/'> March 2014 </option>
+	<option value='https://williamaross.com/2014/02/'> February 2014 </option>
+	<option value='https://williamaross.com/2013/12/'> December 2013 </option>
+	<option value='https://williamaross.com/2013/09/'> September 2013 </option>
+	<option value='https://williamaross.com/2013/07/'> July 2013 </option>
+	<option value='https://williamaross.com/2013/06/'> June 2013 </option>
+	<option value='https://williamaross.com/2013/04/'> April 2013 </option>
+	<option value='https://williamaross.com/2012/11/'> November 2012 </option>
+	<option value='https://williamaross.com/2012/10/'> October 2012 </option>
+	<option value='https://williamaross.com/2012/06/'> June 2012 </option>
+
+		</select>
+
+			<script>
+( ( dropdownId ) => {
+	const dropdown = document.getElementById( dropdownId );
+	function onSelectChange() {
+		setTimeout( () => {
+			if ( 'escape' === dropdown.dataset.lastkey ) {
+				return;
+			}
+			if ( dropdown.value ) {
+				document.location.href = dropdown.value;
+			}
+		}, 250 );
+	}
+	function onKeyUp( event ) {
+		if ( 'Escape' === event.key ) {
+			dropdown.dataset.lastkey = 'escape';
+		} else {
+			delete dropdown.dataset.lastkey;
+		}
+	}
+	function onClick() {
+		delete dropdown.dataset.lastkey;
+	}
+	dropdown.addEventListener( 'keyup', onKeyUp );
+	dropdown.addEventListener( 'click', onClick );
+	dropdown.addEventListener( 'change', onSelectChange );
+})( "archives-dropdown-8" );
+
+//# sourceURL=WP_Widget_Archives%3A%3Awidget
+</script>
+</aside><aside id="blog-stats-3" class="widget widget_blog-stats"><h3 class="widget-title">Blog Stats</h3>		<ul>
+			<li>274,765 hits</li>
+		</ul>
+		</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary .sidebar-container -->
+
+
+		</div><!-- #main .site-main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+<div id="tertiary" class="sidebar-container" role="complementary">
+
+	<div class="sidebar-inner">
+
+				<div class="widget-area">
+			<aside id="top-posts-2" class="widget widget_top-posts"><h3 class="widget-title">Top Posts &amp; Pages</h3><ul class='widgets-list-layout no-grav'>
+<li><a href="https://williamaross.com/septuagint-bibliography-2012-onward/" title="LXX Bibliography (2012-2022)" class="bump-view" data-bump-view="tp"><img loading="lazy" width="40" height="40" src="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40" srcset="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40 1x" alt="LXX Bibliography (2012-2022)" data-pin-nopin="true" class="widgets-list-layout-blavatar" /></a><div class="widgets-list-layout-links">
+								<a href="https://williamaross.com/septuagint-bibliography-2012-onward/" title="LXX Bibliography (2012-2022)" class="bump-view" data-bump-view="tp">LXX Bibliography (2012-2022)</a>
+							</div>
+							</li><li><a href="https://williamaross.com/2026/03/03/virtual-oxford-septuagint-seminar-4-march/" title="(Virtual) Oxford Septuagint Seminar, 4 March" class="bump-view" data-bump-view="tp"><img loading="lazy" width="40" height="40" src="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40" srcset="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40 1x" alt="(Virtual) Oxford Septuagint Seminar, 4 March" data-pin-nopin="true" class="widgets-list-layout-blavatar" /></a><div class="widgets-list-layout-links">
+								<a href="https://williamaross.com/2026/03/03/virtual-oxford-septuagint-seminar-4-march/" title="(Virtual) Oxford Septuagint Seminar, 4 March" class="bump-view" data-bump-view="tp">(Virtual) Oxford Septuagint Seminar, 4 March</a>
+							</div>
+							</li><li><a href="https://williamaross.com/intro-to-lxx/" title="Intro to LXX Studies" class="bump-view" data-bump-view="tp"><img loading="lazy" width="40" height="40" src="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40" srcset="https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=40 1x" alt="Intro to LXX Studies" data-pin-nopin="true" class="widgets-list-layout-blavatar" /></a><div class="widgets-list-layout-links">
+								<a href="https://williamaross.com/intro-to-lxx/" title="Intro to LXX Studies" class="bump-view" data-bump-view="tp">Intro to LXX Studies</a>
+							</div>
+							</li></ul>
+</aside>		</div><!-- .widget-area -->
+		
+		
+				<div class="widget-area">
+			<aside id="blog-stats-2" class="widget widget_blog-stats"><h3 class="widget-title">Blog Stats</h3>		<ul>
+			<li>274,765 hits</li>
+		</ul>
+		</aside>		</div><!-- .widget-area -->
+		
+	</div><!-- .sidebar-inner -->
+
+</div><!-- #tertiary .sidebar-container -->
+			<div class="site-info-container">
+
+				<div class="site-info">
+										<a href="https://wordpress.com/?ref=footer_custom_powered" rel="nofollow">Website Powered by WordPress.com</a>.
+									</div><!-- .site-info -->
+
+			</div><!-- .site-info-container -->
+
+		</footer><!-- #colophon .site-footer -->
+
+	</div><!-- #page -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/suits/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="grofiles-cards-js" src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202644fffb5f6f8dc7a9c7ad08f16ba2e694fddff32cc1793b3fe3b32aaa232a52550e"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+			<div id="actionbar" dir="ltr" style="display: none;"
+				class="actnbr-pub-suits" role="region" aria-label="Site actions">
+			<span class="actnbr-live" aria-live="polite"></span>
+			<ul>
+										<li class="actnbr-btn">
+							<a class="actnbr-action actnbr-actn-comment" href="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/#respond">
+								<svg class="actnbr-icon actnbr-icon-comment" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path d="M18 4H6c-1.1 0-2 .9-2 2v12.9c0 .6.5 1.1 1.1 1.1.3 0 .5-.1.8-.3L8.5 17H18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm.5 11c0 .3-.2.5-.5.5H7.9l-2.4 2.4V6c0-.3.2-.5.5-.5h12c.3 0 .5.2.5.5v9z"/></svg>								<span>Comment							</span>
+							</a>
+						</li>
+											<li class="actnbr-btn">
+							<a class="actnbr-action actnbr-actn-reblog" href="" role="button">
+								<svg class="actnbr-icon actnbr-icon-reusable-block" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path d="M7 7.2h8.2L13.5 9l1.1 1.1 3.6-3.6-3.5-4-1.1 1 1.9 2.3H7c-.9 0-1.7.3-2.3.9-1.4 1.5-1.4 4.2-1.4 5.6v.2h1.5v-.3c0-1.1 0-3.5 1-4.5.3-.3.7-.5 1.2-.5zm13.8 4V11h-1.5v.3c0 1.1 0 3.5-1 4.5-.3.3-.7.5-1.3.5H8.8l1.7-1.7-1.1-1.1L5.9 17l3.5 4 1.1-1-1.9-2.3H17c.9 0 1.7-.3 2.3-.9 1.5-1.4 1.5-4.2 1.5-5.6z"/></svg><span>Reblog</span>
+							</a>
+						</li>
+											<li class="actnbr-btn actnbr-hidden">
+										<a class="actnbr-action actnbr-actn-follow " href="" role="button" aria-haspopup="dialog" aria-expanded="false">
+				<svg class="actnbr-icon actnbr-icon-bell" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 11.5c0 1.353.17 2.368.976 3 .266.209.602.376 1.024.5v1H5v-1c.422-.124.757-.291 1.024-.5.806-.632.976-1.647.976-3V9c0-2.8 2.2-5 5-5s5 2.2 5 5v2.5ZM15.5 9v2.5c0 .93.066 1.98.515 2.897l.053.103H7.932a4.018 4.018 0 0 0 .053-.103c.449-.917.515-1.967.515-2.897V9c0-1.972 1.528-3.5 3.5-3.5s3.5 1.528 3.5 3.5Zm-5.492 9.008c0-.176.023-.346.065-.508h3.854A1.996 1.996 0 0 1 12 20c-1.1 0-1.992-.892-1.992-1.992Z"/></svg>				<span>Subscribe</span>
+			</a>
+			<a class="actnbr-action actnbr-actn-following  no-display" href="" role="button">
+				<svg class="actnbr-icon actnbr-icon-check" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="fill: none" stroke="currentColor" stroke-width="1.5"><path d="M7 12L10 15L17 8" vector-effect="non-scaling-stroke"/></svg>				<span>Subscribed</span>
+			</a>
+									<div class="actnbr-popover actnbr-panel actnbr-notice" id="follow-bubble" role="dialog" aria-label="Subscribe to Septuaginta &amp;c.">
+								<div class="actnbr-follow-bubble">
+								<div class="actnbr-panel__group"><a class="actnbr-menu__item actnbr-sitename" href="https://williamaross.com"><img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=50&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=50&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=75&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=100&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=150&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=200&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' /><span class="actnbr-menu__label">Septuaginta &amp;c.</span></a></div>																	<div class="actnbr-panel__group">
+										<div class="actnbr-message no-display" aria-live="polite"></div>
+										<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" class="no-display">
+																							<div class="actnbr-follow-count">Join 442 other subscribers</div>
+																							<input type="email" name="email" placeholder="Want updates? Enter your email" class="actnbr-email-field" aria-label="Email address" />
+											<input type="hidden" name="action" value="subscribe" />
+											<input type="hidden" name="blog_id" value="36808550" />
+											<input type="hidden" name="source" value="https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/" />
+											<input type="hidden" name="sub-type" value="actionbar-follow" />
+											<input type="hidden" id="_wpnonce" name="_wpnonce" value="08543c0a8a" />											<button type="submit" class="actnbr-button">Sign me up</button>
+										</form>
+										<p class="actnbr-login-nudge">
+											Have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fwilliamaross.com%252F2014%252F03%252F27%252Fthe-leon-levy-dead-sea-scrolls-digital-library%252F">Log in now.</a>										</p>
+									</div>
+																	</div>
+							</div>
+						</li>
+									<li class="actnbr-ellipsis actnbr-hidden">
+					<button type="button" class="actnbr-more-toggle" aria-haspopup="true" aria-expanded="false" aria-label="More options">
+						<svg class="actnbr-icon actnbr-icon-more-horizontal" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path d="M11 13h2v-2h-2v2zm-6 0h2v-2H5v2zm12-2v2h2v-2h-2z"/></svg>					</button>
+					<div class="actnbr-popover actnbr-menu" role="menu" aria-label="Site options">
+						<div class="actnbr-menu__group" role="group"><a role="menuitem" class="actnbr-menu__item actnbr-sitename" href="https://williamaross.com"><img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=50&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=50&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=75&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=100&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=150&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/3644ae53c4e874072f62ed53015820e97fa129d379ce11edf1394bd008d1dabf?s=200&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' /><span class="actnbr-menu__label">Septuaginta &amp;c.</span></a></div><div class="actnbr-menu__group" role="group"><a role="menuitem" class="actnbr-menu__item actnbr-shortlink" href="https://wp.me/p2urAi-5l"><span class="actnbr-menu__label actnbr-shortlink__text">Copy shortlink</span><span class="actnbr-menu__icon actnbr-shortlink__icon"><svg class="actnbr-icon actnbr-icon-copy" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 4.5h11a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5ZM3 5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm17 3v10.75c0 .69-.56 1.25-1.25 1.25H6v1.5h12.75a2.75 2.75 0 0 0 2.75-2.75V8H20Z"/></svg></span><span class="actnbr-menu__icon actnbr-shortlink__icon-copied"><svg class="actnbr-icon actnbr-icon-check" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="fill: none" stroke="currentColor" stroke-width="1.5"><path d="M7 12L10 15L17 8" vector-effect="non-scaling-stroke"/></svg></span></a><a role="menuitem" class="actnbr-menu__item actnbr-reader" href="https://wordpress.com/reader/blogs/36808550/posts/331"><span class="actnbr-menu__label">View post in Reader</span></a></div><div class="actnbr-menu__group" role="group"><a role="menuitem" class="actnbr-menu__item actnbr-subs" href="https://subscribe.wordpress.com/"><span class="actnbr-menu__label">Manage subscriptions</span></a><a role="menuitem" class="actnbr-menu__item actnbr-signup" href="https://wordpress.com/start/"><span class="actnbr-menu__label">Sign up</span></a><a role="menuitem" class="actnbr-menu__item actnbr-login" href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fwilliamaross.com%252F2014%252F03%252F27%252Fthe-leon-levy-dead-sea-scrolls-digital-library%252F"><span class="actnbr-menu__label">Log in</span></a></div><div class="actnbr-menu__group" role="group"><a role="menuitem" class="actnbr-menu__item flb-report" href="https://wordpress.com/abuse/?report_url=https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/" target="_blank" rel="noopener noreferrer"><span class="actnbr-menu__label">Report this content</span><span class="actnbr-menu__icon"><svg class="actnbr-icon actnbr-icon-external" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentColor"><path d="M19.5 4.5h-7V6h4.44l-5.97 5.97 1.06 1.06L18 7.06v4.44h1.5v-7Zm-13 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3H17v3a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h3V5.5h-3Z"/></svg></span></a></div><div class="actnbr-menu__group" role="group"><a role="menuitem" class="actnbr-menu__item actnbr-fold" href=""><span class="actnbr-menu__label">Collapse this bar</span></a></div>					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+window.addEventListener( "DOMContentLoaded", function () {
+				var link = document.createElement( "link" );
+				link.href = "\/wp-content\/mu-plugins\/jetpack-plugin\/sun\/jetpack_vendor\/automattic\/jetpack-newsletter\/src\/..\/build\/action-bar.css?ver=35dd33285eb46dc308dd";
+				link.rel = "stylesheet";
+				document.head.appendChild( link );
+
+				var script = document.createElement( "script" );
+				script.src = "\/wp-content\/mu-plugins\/jetpack-plugin\/sun\/jetpack_vendor\/automattic\/jetpack-newsletter\/src\/..\/build\/action-bar.js?ver=35dd33285eb46dc308dd";
+				document.body.appendChild( script );
+			} );
+</script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/":331};
+	</script>
+				
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script id="milestone-js-extra">
+var MilestoneConfig = {"instances":[{"id":"milestone_widget-3","message":"\u003Cdiv class=\"milestone-message\"\u003EIt's better than Valentine's Day.\u003C/div\u003E","refresh":0,"content_id":"milestone_widget-3-content"}],"api_root":"https://public-api.wordpress.com/"};
+//# sourceURL=milestone-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJxdjtEKwjAMRX/ILSpC9UH8FNnauKVr07o0DP/eIhuKbwk5597AkhubuCAXiNrkoAOxQKAJBZ6KimPHLuDcetlBhYltUFePXsCmGKvYzJjDq43EG7QllhFjRbP2IErlIz2UbaHE8g//1HssubPTuleX4V6LoVcKDhZyA9awSAGlJMbvtD5xi9eDuRzNyezPxr8BqTVU8w=='></script>
+<script id="jetpack-comments-js-before">
+window.JetpackComments = {"version":"0.8.2-alpha","styleUrl":"/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-comments/build/comments.css?m=1792508237i\u0026minify=false\u0026ver=77e755fa88f890670e94-1792508237","requireNameEmail":true,"mustLogIn":false,"site":{"name":"Septuaginta \u0026amp;c.","iconUrl":""},"manageSubscriptionsUrl":"https://subscribe.wordpress.com/?site=williamaross.com","tracks":{"platform":"simple"},"strings":{"reply":"Reply","commentLabel":"Comment","replyLabel":"Reply","placeholder":"Write a comment...","replyPlaceholder":"Write a reply...","name":"Name","email":"Email","emailHint":"Address never made public","emailHasAccount":"That email belongs to a WordPress.com account. Log in with WordPress.com to use it, or enter a different email.","website":"Website (optional)","intro":"Enter your name and email to comment.","continueAsGuest":"Continue as a guest","postWithoutSaving":"No, thanks. I just want to post a comment","save":"Save","saveDetails":"Save my name, email, and website in this browser for the next time I comment.","close":"Close","manageSubscriptions":"Manage subscription","mustLogIn":"You must be logged in to post a comment.","logIn":"Log in","logInWithWordPress":"Log in with WordPress.com","logOut":"Log out","change":"Change","editProfile":"Edit profile","addYourName":"Add your name","cancel":"Cancel","signInFailed":"We could not sign you in. Please try again.","tooLong":"This comment is too long to post. Shorten it to send it.","signInRateLimited":"Too many sign-in attempts. Please wait a moment and try again."},"assetsUrl":"https://s0.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-comments/build/","loaderUrl":"https://s0.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-comments/build/editor-loader.js?m=1793391081i&amp;minify=false\u0026ver=b7a0f0fc3248173da3e0","maxLength":65525,"blocks":true,"editorLocale":{"block title\u0004Paragraph":["Paragraph"],"block title\u0004List":["List"],"block title\u0004List Item":["List Item"],"block title\u0004Quote":["Quote"],"block title\u0004Code":["Code"],"block title\u0004Embed":["Embed"],"block title\u0004Image":["Image"]},"editor":{"blockTools":"Block tools","addBlock":"Add block","embedUrl":"https://public-api.wordpress.com/wpcom/v2/sites/36808550/comments/embed","images":true,"imageError":"This image could not be loaded. Check its URL and try again."},"isLoggedIn":false,"avatarUrl":"https://0.gravatar.com/avatar/?s=80\u0026d=identicon\u0026forcedefault=y\u0026r=G","commenter":{"author":"","email":"","url":""},"user":null,"identity":{"blogId":36808550,"canSignIn":true,"connect":{"url":"https://public-api.wordpress.com/connect/?comment_identity=1\u0026blog_id=36808550\u0026challenge=EKsm28OoctJkFXvP9iEDA7c89x8ZnRaFFbj4g32gZ7Y\u0026origin=https%3A%2F%2Fwilliamaross.com\u0026expires=1793424563\u0026signature=756b99de849f1d13866f39102814d78ec73125cd8979d7618a01060822376839","expires":1793424563,"challenge":"EKsm28OoctJkFXvP9iEDA7c89x8ZnRaFFbj4g32gZ7Y"},"connectUrl":"https://public-api.wordpress.com/wpcom/v2/sites/36808550/comments/identity/connect","emailUrl":"https://public-api.wordpress.com/wpcom/v2/sites/36808550/comments/identity/email","origin":"https://public-api.wordpress.com","codeField":"jetpack_comment_identity_code","passportField":"jetpack_comment_identity_passport","displayCookie":"jetpack_comment_identity_display","cookieHash":"653166773dc88127bd3afe0b6dfe5ea7","cookiePath":"/","cookieDomain":"","defaultAvatar":"https://0.gravatar.com/avatar/?s=80\u0026d=identicon\u0026forcedefault=y\u0026r=G","logoutUrl":"/wp-admin/admin-ajax.php","logoutAction":"jetpack_comments_identity_logout"}};(function(){function n(){Array.prototype.forEach.call(document.forms,function(f){var i;if(f.querySelector(".jetpack-comments")&&!f.querySelector('[name="jetpack_comments_form_nonce"]')){i=document.createElement("input");i.type="hidden";i.name="jetpack_comments_form_nonce";i.value="7721b4672d";f.appendChild(i);}});}n();document.addEventListener("DOMContentLoaded",n);})();window.addEventListener("load",function(){Array.prototype.forEach.call(document.querySelectorAll(".jetpack-comments"),function(e){if(!/\bis-(mounted|plain)\b/.test(e.className)){e.className+=" is-plain";}});});
+//# sourceURL=jetpack-comments-js-before
+</script>
+<script data-wp-strategy="defer" defer id="jetpack-comments-js" src="/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-comments/build/comments.js?m=1793391081i&#038;minify=false&#038;ver=77e755fa88f890670e94-1792508237"></script>
+<script id="sharing-js-js-extra">
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??/wp-content/mu-plugins/akismet-3.0/_inc/akismet-frontend.js,/wp-content/mu-plugins/jetpack-plugin/sun/_inc/build/sharedaddy/sharing.min.js?m=1787944794j'></script>
+<script id="sharing-js-js-after">
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "twitter" ] = "menubar=1,resizable=1,width=600,height=350";
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "facebook" ] = "menubar=1,resizable=1,width=600,height=400";
+//# sourceURL=sharing-js-js-after
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1783090810i&ver=7.1.4-alpha-64893"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\udec8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20261031#ver=20261031' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script src="//stats.wp.com/w.js?71" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'36808550','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'36808550','v':'wpcom','tz':'-4','user_id':'0','post':'331','subd':'williamaross'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGRmSUtiM0o9cVRdTTV3M244LDJQYXNrd0F0PTcrMENpOUpxTTZrWmtTdHpYfH5CZzAtVXxxLEgsJVY3N0c5emV5JjhsdVNFR1tMUmc4bkVjJmZQSUY9a3MmcU5fdzMlbDM0cHpIZkYvekV2L01pWkZkM0NnWGRJQyUzYWguNl9ZbEYweS9pM2RhZmJyS3g0OFouTlNYRHRJP1Usbyx1NWtjLGdCZ1QyLXcsekNrUzZsS0QuUkFjcGEyV3plP1NddT9OSS1QWWJdT3hhWHdUUE1TOGF4LVAzJnBxb3JWQl83RU1yaVVZWFN4WzdCWGFkb2tbTFpEL255QUNRLm9pYWp0a2ptUVZCT2l2L19NVTd5bko5L09LQ3lpelhqam1ZaDh1'}]);
+_stq.push([ 'clickTrackerInit', '36808550', '331' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="America/New_York" data-custom-props="{&quot;enq_jquery&quot;:&quot;1&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/suits&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"   >
+		<script defer src="/wp-content/js/bilmur.min.js?i=19&amp;m=202644"></script> 	
+</body>
+</html>

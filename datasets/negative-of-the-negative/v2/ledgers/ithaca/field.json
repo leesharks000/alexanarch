@@ -1,0 +1,1323 @@
+{
+ "row": "ithaca",
+ "address": "Ithaca DeepMind",
+ "addresses": [
+  "Ithaca DeepMind"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the meta description of the JavaScript interface page, the card snippet of the unreachable repository, and the Wikipedia section and disambiguation page; 62/62 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), by origin: 'card', the four cards on T's rail, all the entity's (B1 the DeepMind post; B2 the GitHub repository, unreachable, its snippet the text; B3 Predicting the Past, the interface, also the census's own page ithaca--home; B4 the Nature paper, also the census's one source ithaca--nature); 'own_page', none outside the rail (both census sources are cards); 'wikipedia', no article, the model described in 'Google DeepMind' › 'Archaeology' and the bare name a disambiguation page (B5). Fetched with the census's agent string, 'alexanarch-seating/1.0 (https://www.alexanarch.org)', 2026-10-31.",
+ "lineage_note": "Lineages: what it is: a neural network that restores, places and dates Greek inscriptions (B1, B2, B3, B4, B5); the name: Homer's island (B1, B4, B5); reception: the encyclopedia and the bare name (B5); the makers: DeepMind, its academic partners and the paper's authors (B1, B4); the problem: damaged, moved and undatable inscriptions (B1, B4); the data: PHI and I.PHI (B1, B4); the architecture: characters and words, sparse attention, three heads (B1, B4); the outputs: ranked hypotheses, distributions, saliency (B1, B4); the headline figures: 62%, 71%, within 30 years (B1, B4, B5); the collaboration figure: 25% to 72%, and who the evaluators were (B1, B4, B5); redating Classical Athens (B1, B4); the stated limits: an assistive tool, plausible suggestions, the tradition in the data (B4); access and licences: the interface, the code, the weights, the article (B1, B3, B4); genealogy and successors: Pythia before, other languages and Aeneas after (B1, B4, B5); scope: other ancient texts and disciplines (B4). B1 and B4 are the same work's two first-party instances of 9 March 2022 (the post and the paper), kept as two sources; where they state one claim, both instances are carried in the lineage and the paper is listed first. The census's fields that restate the paper (kind, operator, method, findings, stated_limits) are one lineage with B4 (§3.6).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/ithaca-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2-403.html the refusal; B3-meta.txt the interface page's title and meta description; B4-census.html the census's copy of the paper; W1–W14 raw Wikipedia responses, B5.html/B5.txt the rendered 'Google DeepMind' (W13), W7.txt the rendered disambiguation; T1-ithaca-deepmind-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Google DeepMind — Predicting the past with Ithaca — Google DeepMind",
+   "url": "https://deepmind.google/discover/blog/predicting-the-past-with-ithaca/",
+   "kind": "Overview card (the operator's post of 9 March 2022, by Yannis Assael, Thea Sommerschield, Brendan Shillingford and Nando de Freitas)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B1.html",
+     "sha256": "832d3d6cfd97b40ad266c0fe64f28f9e9e3eabab66f1d73a47403462f5a5ff26"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B1.txt",
+     "sha256": "6de295b7663778e51d28c7260a573054deeb3011e09049ba59889c08f10f5292"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:12Z",
+    "http": 200,
+    "url": "https://deepmind.google/discover/blog/predicting-the-past-with-ithaca/",
+    "final_url": "https://deepmind.google/blog/predicting-the-past-with-ithaca/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B1.html",
+    "raw_sha256": "832d3d6cfd97b40ad266c0fe64f28f9e9e3eabab66f1d73a47403462f5a5ff26",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B1.txt"
+    ]
+   },
+   "names_operator": "yes ('DeepMind'; the authors Yannis Assael, Thea Sommerschield, Brendan Shillingford, Nando de Freitas; the partners Ca' Foscari, Oxford, AUEB; the web interface's developers at Google Cloud)",
+   "note": "URL by WebSearch on the card's title and site (deepmind.google/discover/blog/…, which redirects to deepmind.google/blog/…); the page's <title> is the card's title. Fetched once with the census's agent string. Not a census source.",
+   "surfaced_by_T": [
+    {
+     "slug": "ithaca-deepmind-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Predicting the past with Ithaca — Google DeepMind",
+   "card_snippet": "Core: Ithaca deep neural network (restores ancient Greek inscriptions, identifies geographic origins, establishes creation dates). Architecture: Sparse multi-he...",
+   "card_note": "the snippet ('Core: … Architecture: Sparse multi-he...') is a summary of the page, not its words",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "GitHub — GitHub - google-deepmind/ithaca: Restoring and attributing ancient texts using deep neural networks · GitHub",
+   "url": "https://github.com/google-deepmind/ithaca",
+   "kind": "Overview card (the code repository)",
+   "files": {
+    "B2-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B2-403.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:12Z",
+    "http": 403,
+    "url": "https://github.com/google-deepmind/ithaca",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B2-403.html",
+    "raw_sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "text": [],
+    "result": "unreachable: HTTP 403 from the build environment's GitHub gate (a JSON message that GitHub access to the repository is not enabled for this session), saved as B2-403.html; not retried with another agent string or by any other route (no gh, no API, no connector)"
+   },
+   "names_operator": "yes, in the snippet ('developed by DeepMind and academic partners')",
+   "note": "unreachable (BRIEF-NEW-ROW-FIELD §4): the URL from the card's title (repository google-deepmind/ithaca; the paper's Code availability gives github.com/deepmind/ithaca, the organisation's earlier name). The card's snippet stands as its only text (F4).",
+   "surfaced_by_T": [
+    {
+     "slug": "ithaca-deepmind-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "GitHub - google-deepmind/ithaca: Restoring and attributing ancient texts using deep neural networks · GitHub",
+   "card_snippet": "Overview: Ithaca is a deep neural network developed by DeepMind and academic partners for restoring, geographically attributing, and chronologically dating anci...",
+   "card_note": null,
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (also the census's own page ithaca--home, which redirects here)",
+   "card": "Predicting the Past — Predicting the Past",
+   "url": "https://predictingthepast.com/",
+   "kind": "Overview card (the public interface for Ithaca and Aeneas; ithaca.deepmind.com redirects to it)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3.html",
+     "sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3.txt",
+     "sha256": "06b41db902580a817c82f9842d473ba88f1965be698259d506dedf7a0c88e8f7"
+    },
+    "B3-meta.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3-meta.txt",
+     "sha256": "3f6895b72c46ded7bddb1adf2ba58a8838c1dce03f889e34d7f5e8d357529c74"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:13Z",
+    "http": 200,
+    "url": "https://predictingthepast.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3.html",
+    "raw_sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "census_copy": "ithaca--home (url https://ithaca.deepmind.com/, final https://predictingthepast.com/)",
+    "census_sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9",
+    "agrees": true,
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3.txt",
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B3-meta.txt"
+    ]
+   },
+   "names_operator": "no (the page's words name Ithaca and Aeneas, not their maker)",
+   "note": "The page is a JavaScript application: its extracted text (B3.txt, identical to the census's ithaca--home.txt) is the title and a browser notice; its words are the <title> and the description in its meta tags, extracted verbatim to B3-meta.txt (the card's snippet is title tail plus the description). Byte-identical to the census's saved copy of its own page ithaca--home, which the census lists among unread_sources (http 200; a JavaScript application); carried once, as a card. The application's script bundle was not fetched.",
+   "surfaced_by_T": [
+    {
+     "slug": "ithaca-deepmind-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Predicting the Past",
+   "card_snippet": "Contextualising, restoring, and attributing ancient texts Ithaca and Aeneas are generative AI models designed to assist historians in the study of ancient Greek...",
+   "card_note": null,
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (also the census's one source, ithaca--nature)",
+   "card": "Nature — Restoring and attributing ancient texts using deep neural networks | Nature",
+   "url": "https://www.nature.com/articles/s41586-022-04448-z",
+   "kind": "Overview card (the paper: Assael, Sommerschield et al., Nature 603, 280–283, 9 March 2022, open access)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B4.html",
+     "sha256": "7bab9e1b3786b154379e2f2cbf42bda24ffe81228e99404bcaea5af143217fcf"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B4.txt",
+     "sha256": "d10c3328114f85d4738563c21ee3136e6942603470b89e88ace9c0ee7b0dc9e1"
+    },
+    "B4-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B4-census.html",
+     "sha256": "d2b4df37a93252c3d44127e213464c4bed2ab3a26dbffde58a648645bcad7aed"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:15Z",
+    "http": 200,
+    "url": "https://www.nature.com/articles/s41586-022-04448-z",
+    "final_url": "https://www.nature.com/articles/s41586-022-04448-z?error=cookies_not_supported&code=bfb45777-eddd-4f7d-9a38-099aec6b358b",
+    "raw": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B4.html",
+    "raw_sha256": "7bab9e1b3786b154379e2f2cbf42bda24ffe81228e99404bcaea5af143217fcf",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "census_copy": "ithaca--nature",
+    "census_sha256": "d2b4df37a93252c3d44127e213464c4bed2ab3a26dbffde58a648645bcad7aed",
+    "census_fetched": "2026-10-31T02:52:07Z",
+    "agrees": "text identical (B4.txt equals the census's ithaca--nature.txt byte for byte); the raw HTML differs only in per-request tokens (ad-call cache-busters, a CSRF value, reference-anchor ids)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes (authors Yannis Assael, Thea Sommerschield, Brendan Shillingford, Mahyar Bordbar, John Pavlopoulos, Marita Chatzipanagiotou, Ion Androutsopoulos, Jonathan Prag, Nando de Freitas; affiliations DeepMind, Ca' Foscari, Harvard's Center for Hellenic Studies, AUEB, Oxford)",
+   "note": "The census's only source for the row (basis 'operator' for its four evidence quotes), surfaced by T as card 4; refetched with the census's agent string and carried once, as a card, with the census's copy saved beside it (B4-census.html, gunzipped from ithaca--nature.html.gz).",
+   "surfaced_by_T": [
+    {
+     "slug": "ithaca-deepmind-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "Restoring and attributing ancient texts using deep neural networks | Nature",
+   "card_snippet": "Model: Ithaca, a deep neural network trained on ancient Greek inscriptions (7th century BC to 5th century AD) from the I.PHI dataset (78,608 texts), simultaneou...",
+   "card_note": null,
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "id": "B5",
+   "origin": "wikipedia",
+   "role": "Wikipedia (no article on the entity; the section that describes it)",
+   "card": "Wikipedia — Google DeepMind §Others, 'Archaeology' (no article 'Ithaca (neural network)' or similar; 'Ithaca' a disambiguation page that does not list the model)",
+   "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+   "kind": "encyclopedia section (revision 1380412362) and the disambiguation page of the bare name",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B5.html",
+     "sha256": "4e7bfba0afa24409ab25ac687952cd2e16958d318b815e30cb45f07c1ec9a73f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B5.txt",
+     "sha256": "e0065367800a53a04e8c97d94eb089590cf83a02edd5f447159ed6358eec11c8"
+    },
+    "W7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W7.txt",
+     "sha256": "91ad081371380a52d1901b8e915b362e19b404b5bdfa6ce4f20ff8bdd12f21a5"
+    },
+    "W1.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W1.raw",
+     "sha256": "11567ee84c27a1249fbe65bff7a643b8ed0fe1bdc419109d83e7108c4cb6d227"
+    },
+    "W2.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W2.raw",
+     "sha256": "3732a8dc9c5a26a4246ec2e6f9107107e740d0f6f5a8b3645e0fd055ed277e8e"
+    },
+    "W3.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W3.raw",
+     "sha256": "edc480d3fce87911b4cee00b27527b08635403b219c839d18954bf8bac3d5794"
+    },
+    "W4.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W4.raw",
+     "sha256": "30fe3bb6eccd18d5339bb8caf4619e358f975e1cbaf76c2b3ad4409379006ebe"
+    },
+    "W5.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W5.raw",
+     "sha256": "20d07d161c01ef8385194b7a85730c73bd55d88bfefffcc031d166d1f5fc933f"
+    },
+    "W6.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W6.raw",
+     "sha256": "1ebc4422bd2be84f26549f2468098fcc7ad986cb4ccfe27465b2ad65e6756226"
+    },
+    "W7.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W7.raw",
+     "sha256": "97c959ea17bdaaa7f42833a0b80e1f5e447970b67cdfa1ac2a26a86efb11bb40"
+    },
+    "W8.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W8.raw",
+     "sha256": "d700293d0bd047ac312802ead90ab6a01168e8f6c1bcd63daa5d69e3855cd598"
+    },
+    "W9.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W9.raw",
+     "sha256": "133497d3b16d94d33e372b86f442d6cc9cf5299a15e996b1182603807f9abb0a"
+    },
+    "W10.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W10.raw",
+     "sha256": "0b776434b568a88e521e24556f10e9053f2de834e735c8cf9e8b6cc0ab8dfdfc"
+    },
+    "W11.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W11.raw",
+     "sha256": "f2610489fa927fd4f4c017d5067267fae04be4a13f4a556cd7bf869d85c6cb22"
+    },
+    "W12.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W12.raw",
+     "sha256": "c4c643ec29a42b7f9f1b0ee31f653f2f147ff1c9ed6fe671b26ca4579e54acb5"
+    },
+    "W13.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W13.raw",
+     "sha256": "4e7bfba0afa24409ab25ac687952cd2e16958d318b815e30cb45f07c1ec9a73f"
+    },
+    "W14.raw": {
+     "path": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W14.raw",
+     "sha256": "bf0bb48961467553aae2008971ff67fb64cc32aae0efc6a95b6fe71e57f2eae3"
+    }
+   },
+   "fetched": {
+    "responses": [
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W1.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(neural_network)&action=raw",
+      "http": 404,
+      "at": "2026-10-31T04:41:04Z",
+      "sha256": "11567ee84c27a1249fbe65bff7a643b8ed0fe1bdc419109d83e7108c4cb6d227"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W2.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(DeepMind)&action=raw",
+      "http": 404,
+      "at": "2026-10-31T04:41:04Z",
+      "sha256": "3732a8dc9c5a26a4246ec2e6f9107107e740d0f6f5a8b3645e0fd055ed277e8e"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W3.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(artificial_intelligence)&action=raw",
+      "http": 429,
+      "at": "2026-10-31T04:41:04Z",
+      "sha256": "edc480d3fce87911b4cee00b27527b08635403b219c839d18954bf8bac3d5794"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W4.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(machine_learning)&action=raw",
+      "http": 404,
+      "at": "2026-10-31T04:41:05Z",
+      "sha256": "30fe3bb6eccd18d5339bb8caf4619e358f975e1cbaf76c2b3ad4409379006ebe"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W5.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(model)&action=raw",
+      "http": 404,
+      "at": "2026-10-31T04:41:05Z",
+      "sha256": "20d07d161c01ef8385194b7a85730c73bd55d88bfefffcc031d166d1f5fc933f"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W6.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca&action=raw",
+      "http": 200,
+      "at": "2026-10-31T04:41:05Z",
+      "sha256": "1ebc4422bd2be84f26549f2468098fcc7ad986cb4ccfe27465b2ad65e6756226"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W7.raw",
+      "url": "https://en.wikipedia.org/wiki/Ithaca",
+      "http": 200,
+      "at": "2026-10-31T04:41:05Z",
+      "sha256": "97c959ea17bdaaa7f42833a0b80e1f5e447970b67cdfa1ac2a26a86efb11bb40"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W8.raw",
+      "url": "https://en.wikipedia.org/wiki/Ithaca_(neural_network)",
+      "http": 404,
+      "at": "2026-10-31T04:41:06Z",
+      "sha256": "d700293d0bd047ac312802ead90ab6a01168e8f6c1bcd63daa5d69e3855cd598"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W9.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Google_DeepMind&action=raw",
+      "http": 200,
+      "at": "2026-10-31T04:41:15Z",
+      "sha256": "133497d3b16d94d33e372b86f442d6cc9cf5299a15e996b1182603807f9abb0a"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W10.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Epigraphy&action=raw",
+      "http": 200,
+      "at": "2026-10-31T04:41:16Z",
+      "sha256": "0b776434b568a88e521e24556f10e9053f2de834e735c8cf9e8b6cc0ab8dfdfc"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W11.raw",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Ithaca+DeepMind+inscriptions&format=json&srlimit=20",
+      "http": 429,
+      "at": "2026-10-31T04:41:16Z",
+      "sha256": "f2610489fa927fd4f4c017d5067267fae04be4a13f4a556cd7bf869d85c6cb22"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W12.raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(artificial_intelligence)&action=raw",
+      "http": 404,
+      "at": "2026-10-31T04:41:16Z",
+      "sha256": "c4c643ec29a42b7f9f1b0ee31f653f2f147ff1c9ed6fe671b26ca4579e54acb5"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W13.raw",
+      "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+      "http": 200,
+      "at": "2026-10-31T04:41:24Z",
+      "sha256": "4e7bfba0afa24409ab25ac687952cd2e16958d318b815e30cb45f07c1ec9a73f"
+     },
+     {
+      "file": "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W14.raw",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Ithaca%22+DeepMind+inscriptions&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "at": "2026-10-31T04:41:44Z",
+      "sha256": "bf0bb48961467553aae2008971ff67fb64cc32aae0efc6a95b6fe71e57f2eae3"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/B5.txt",
+     "datasets/negative-of-the-negative/v2/intake/ithaca-20261031/W7.txt"
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "yes ('Google'; 'DeepMind'; the cited post's authors in the wikitext)",
+   "note": "No article for the entity: raw wikitext for 'Ithaca (neural network)', 'Ithaca (DeepMind)', 'Ithaca (artificial intelligence)', 'Ithaca (machine learning)', 'Ithaca (model)' HTTP 404 (one 429 rate-limit response for 'Ithaca (artificial intelligence)', retried once with the same agent: 404). 'Ithaca' is a disambiguation page (W6 wikitext, W7 rendered) that does not list the model. A full-text search (W14) finds the model only in 'Google DeepMind', section 'Others' › 'Archaeology' (W9 wikitext, W13 = B5.html rendered), which is ledgered; two API search calls returned HTTP 429 (W11 and an earlier unsaved one) and were not repeated. 'Epigraphy' (W10) does not mention it.",
+   "surfaced_by_T": [],
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": "not surfaced by T; admitted on the operator's ruling",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "Here we present Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions.",
+   "claim": "the paper's definition of its subject: Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "standfirst",
+   "quote": "Restoring, placing, and dating ancient texts through collaboration between AI and historians",
+   "claim": "the post's statement of the work: restoring, placing and dating ancient texts through collaboration between AI and historians",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s1",
+   "quote": "we jointly introduce Ithaca, the first deep neural network that can restore the missing text of damaged inscriptions, identify their original location, and help establish the date they were created.",
+   "claim": "Ithaca introduced as the first deep neural network that restores the missing text of damaged inscriptions, identifies their original location and helps establish their date",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (unreachable card)",
+   "quote": "Overview: Ithaca is a deep neural network developed by DeepMind and academic partners for restoring, geographically attributing, and chronologically dating anci...",
+   "claim": "the repository's overview as the card gives it: a deep neural network by DeepMind and academic partners for restoring, geographically attributing and chronologically dating ancient texts (snippet truncated)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2026-10-31 (the card as rendered; the page unreachable)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet (unreachable card), as in the registry's cite_list"
+  },
+  "F5": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "meta description s1",
+   "quote": "Ithaca and Aeneas are generative AI models designed to assist historians in the study of ancient Greek and Latin inscriptions.",
+   "claim": "the interface site's account: Ithaca and Aeneas as generative AI models designed to assist historians in the study of ancient Greek and Latin inscriptions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2026-10-31 (read; the page is undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B3-meta.txt (sha256 3f6895b72c46ded7…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "meta description s2",
+   "quote": "They are part of a wider initiative on developing collaborative AI for historical research.",
+   "claim": "the two models are part of a wider initiative on collaborative AI for historical research",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2026-10-31 (read; the page is undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B3-meta.txt (sha256 3f6895b72c46ded7…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s2",
+   "quote": "This deep neural network helps researchers restore the empty text of damaged Greek documents, and to identify their date and geographical origin.",
+   "claim": "the encyclopedia's account: a deep neural network that helps researchers restore the missing text of damaged Greek documents and identify their date and origin",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a neural network that restores, places and dates Greek inscriptions",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Deep learning for epigraphy' ¶2",
+   "quote": "Ithaca, which was named after the Greek island that eluded the hero Odysseus’ homecoming",
+   "claim": "the model is named after the Greek island that eluded Odysseus' homecoming",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name: Homer's island",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s2",
+   "quote": "Ithaca is named after the Greek island in Homer’s Odyssey and builds upon and extends Pythia , our previous system that focused on textual restoration.",
+   "claim": "named after the Greek island in Homer's Odyssey; builds on and extends Pythia, DeepMind's earlier system for textual restoration",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name: Homer's island",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s1",
+   "quote": "Google has unveiled a new archaeology document program, named Ithaca after the Greek island in Homer's Odyssey .",
+   "claim": "the encyclopedia: Google's archaeology document program, named after the Greek island in Homer's Odyssey",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name: Homer's island",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "we collaborated with the Department of Humanities of Ca' Foscari University of Venice , the Classics Faculty of the University of Oxford , and the Department of Informatics of the Athens University of Economics and Business",
+   "claim": "DeepMind's academic partners: Ca' Foscari University of Venice (Humanities), the University of Oxford (Classics), the Athens University of Economics and Business (Informatics)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: DeepMind, its academic partners and the paper's authors",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Author information, Author notes and Affiliations",
+   "quote": "These authors contributed equally: Yannis Assael, Thea Sommerschield … DeepMind, London, UK … Department of Humanities, Ca’ Foscari University of Venice, Venice, Italy … Department of Informatics, Athens University of Economics and Business, Athens, Greece … Faculty of Classics, University of Oxford, Oxford, UK",
+   "claim": "the paper's co-first authors, Yannis Assael and Thea Sommerschield, and its affiliations: DeepMind (London), Ca' Foscari, the Athens University of Economics and Business, the Oxford Faculty of Classics",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: DeepMind, its academic partners and the paper's authors",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "article header",
+   "quote": "Published: 09 March 2022 … Nature volume 603 , pages 280–283 ( 2022 )",
+   "claim": "the paper: Nature 603, 280–283, published 9 March 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the makers: DeepMind, its academic partners and the paper's authors",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "many inscriptions have been damaged to the point of illegibility, transported far from their original location and their date of writing is steeped in uncertainty.",
+   "claim": "the problem the paper addresses: inscriptions damaged to illegibility, moved from their original location, and uncertain in date",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the problem: damaged, moved and undatable inscriptions",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main ¶1",
+   "quote": "radiocarbon dating is unusable owing to the inorganic nature of most inscribed supports",
+   "claim": "radiocarbon dating cannot be used on most inscribed supports, which are inorganic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the problem: damaged, moved and undatable inscriptions",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "modern dating techniques, such as radiocarbon dating , cannot be used on these materials, making inscriptions difficult and time-consuming to interpret.",
+   "claim": "radiocarbon dating cannot be used on stone, pottery and metal, which makes inscriptions slow to interpret",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the problem: damaged, moved and undatable inscriptions",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Deep learning for epigraphy' ¶2",
+   "quote": "was trained on inscriptions written in the ancient Greek language and across the ancient Mediterranean world between the seventh century bc and the fifth century ad",
+   "claim": "trained on Greek inscriptions from across the ancient Mediterranean, seventh century BC to fifth century AD",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Working with Greek inscriptions'",
+   "quote": "dataset, which consists of the transcribed texts of 178,551 inscriptions … PHI lists a total of 84 ancient regions",
+   "claim": "the PHI dataset holds 178,551 transcribed inscriptions and lists 84 ancient regions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Working with Greek inscriptions'",
+   "quote": "the resulting dataset I.PHI is to our knowledge the largest multitask dataset of machine-actionable epigraphical text, containing 78,608 inscriptions.",
+   "claim": "the processed dataset I.PHI, 78,608 inscriptions, the largest multitask dataset of machine-actionable epigraphical text to the authors' knowledge",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Data availability",
+   "quote": "Ithaca was trained on The Packard Humanities Institute’s Searchable Greek Inscriptions public dataset, PHI",
+   "claim": "the training source: the Packard Humanities Institute's Searchable Greek Inscriptions public dataset (PHI)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collaborative tools' ¶1",
+   "quote": "Ithaca is trained on the largest digital dataset of Greek inscriptions from the Packard Humanities Institute .",
+   "claim": "trained on the largest digital dataset of Greek inscriptions, the Packard Humanities Institute's",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Data circularity'",
+   "quote": "Ithaca’s source dataset (PHI) is a synthesis of generations of scholarly research.",
+   "claim": "the source dataset is a synthesis of generations of scholarly research",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the data: PHI and I.PHI",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Ithaca is a model for epigraphic tasks' ¶1",
+   "quote": "we process the input text as character and word representations jointly",
+   "claim": "the input is processed as character and word representations jointly",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the architecture: characters and words, sparse attention, three heads",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Torso'",
+   "quote": "The architecture of Ithaca’s torso consists of eight stacked transformer decoder blocks, inspired by the large-scale transformer model BigBird 73 . Every block uses four sparse attention heads",
+   "claim": "the torso: eight stacked transformer decoder blocks after BigBird, each with four sparse attention heads",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the architecture: characters and words, sparse attention, three heads",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Ithaca is a model for epigraphic tasks' ¶2",
+   "quote": "The final output of the torso is passed to three different task heads that handle restoration, geographical attribution and chronological attribution, respectively.",
+   "claim": "three task heads, for restoration, geographical attribution and chronological attribution",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the architecture: characters and words, sparse attention, three heads",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collaborative tools' ¶1",
+   "quote": "we trained it using both words and the individual characters as inputs. The sparse self-attention mechanism at the model’s core evaluates these two inputs in parallel",
+   "claim": "trained on words and individual characters as inputs, evaluated in parallel by a sparse self-attention mechanism",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the architecture: characters and words, sparse attention, three heads",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Interpreting the outputs' ¶1",
+   "quote": "Ithaca offers a set of the top 20 decoded predictions ranked by probability",
+   "claim": "for restoration the model offers the top 20 predictions ranked by probability, not a single hypothesis",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the outputs: ranked hypotheses, distributions, saliency",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collaborative tools', visual aids (Restoration hypotheses)",
+   "quote": "Ithaca generates several prediction hypotheses for the text restoration task for historians to choose from using their expertise.",
+   "claim": "several restoration hypotheses for historians to choose from by their expertise",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the outputs: ranked hypotheses, distributions, saliency",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collaborative tools', visual aids (Geographical attribution)",
+   "quote": "Ithaca shows its uncertainty by giving historians a probability distribution over all possible predictions – instead of just a single output.",
+   "claim": "the model shows its uncertainty as a probability distribution over all predictions instead of a single output",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the outputs: ranked hypotheses, distributions, saliency",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Interpreting the outputs' ¶3",
+   "quote": "Ithaca discretizes all dates between 800 bc and ad 800 into 10-year bins, resulting in 160 decades.",
+   "claim": "dates are predicted as a distribution over 160 decades from 800 BC to AD 800",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the outputs: ranked hypotheses, distributions, saliency",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Collaborative tools', visual aids (Saliency maps)",
+   "quote": "Ithaca uses a technique commonly used in computer vision that identifies which input sequences contribute most to a prediction.",
+   "claim": "saliency maps show which input sequences contribute most to a prediction",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the outputs: ranked hypotheses, distributions, saliency",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract s7",
+   "quote": "Ithaca can attribute inscriptions to their original location with an accuracy of 71% and can date them to less than 30 years of their ground-truth ranges, redating key texts of Classical Athens and contributing to topical debates in ancient history.",
+   "claim": "71% accuracy in attributing location; dates to less than 30 years of the ground-truth ranges; redates key texts of Classical Athens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the headline figures: 62%, 71%, within 30 years",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s3",
+   "quote": "Our evaluations show that Ithaca achieves 62% accuracy in restoring damaged texts, 71% accuracy in identifying their original location, and can date texts to within 30 years of their ground-truth date ranges.",
+   "claim": "62% restoration accuracy, 71% location accuracy, dating within 30 years of the ground-truth date ranges",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the headline figures: 62%, 71%, within 30 years",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Experimental evaluation' ¶3",
+   "quote": "scoring a 26.3% CER and 61.8% top 1 accuracy … Ithaca has 70.8% top 1 and 82.1% top 3 predictive accuracy … have an average distance of 29.3 years from the target dating brackets, with a median distance of only 3 years.",
+   "claim": "the measured figures: restoration 26.3% character error rate and 61.8% top-1 accuracy; regions 70.8% top-1, 82.1% top-3; dating an average 29.3 years and a median 3 years from the target brackets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the headline figures: 62%, 71%, within 30 years",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F35": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s4",
+   "quote": "Ithaca achieves 62% accuracy in restoring damaged texts and 71% location accuracy, and has a dating precision of 30 years.",
+   "claim": "the encyclopedia: 62% restoration, 71% location, a dating precision of 30 years",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the headline figures: 62%, 71%, within 30 years",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract s6",
+   "quote": "While Ithaca alone achieves 62% accuracy when restoring damaged texts, the use of Ithaca by historians improved their accuracy from 25% to 72%, confirming the synergistic effect of this research tool.",
+   "claim": "the model alone restores at 62%; historians using it rose from 25% to 72%, which the paper reads as the tool's synergistic effect",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Experimental evaluation' ¶1",
+   "quote": "we evaluate the difficulty of the restoration task by assigning two evaluators with epigraphical expertise (‘ancient historian’) a set of damaged inscriptions to restore",
+   "claim": "the human baseline: two evaluators with epigraphical expertise ('ancient historian')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Contributing to historical debates' ¶1",
+   "quote": "The expert historians we worked with achieved 25% accuracy when working alone to restore ancient texts. But, when using Ithaca, their performance increases to 72%, surpassing the model’s individual performance",
+   "claim": "the post: expert historians at 25% alone and 72% with Ithaca, surpassing the model alone",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Acknowledgements",
+   "quote": "the student annotators and baseline evaluators of the Athens University of Economics and Business (MSc in Digital Methods for the Humanities) and the University of Oxford (Faculty of Classics)",
+   "claim": "the paper thanks student annotators and baseline evaluators of AUEB's MSc in Digital Methods for the Humanities and of the Oxford Faculty of Classics",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s5",
+   "quote": "The authors claimed that the use of Ithaca by \"expert historians\" raised the accuracy of their work from 25 to 72 percent.",
+   "claim": "the encyclopedia reports the authors' claim that 'expert historians' rose from 25 to 72 percent",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s6",
+   "quote": "However, Eleanor Dickey noted that this test was actually only made of students, saying that it wasn't clear how helpful Ithaca would be to \"genuinely qualified editors\".",
+   "claim": "Eleanor Dickey: the test was made only of students, and it was not clear how helpful Ithaca would be to genuinely qualified editors",
+   "modality": "contested",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collaboration figure: 25% to 72%, and who the evaluators were",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Contributing to historical debates' ¶3",
+   "quote": "whereas the I.PHI labels are on average 27 years off the ‘lower’ dating proposed by modern re-evaluations, Ithaca’s predictions are on average only 5 years off the newly proposed ground truths.",
+   "claim": "on the disputed Athenian decrees, held out of training, the dataset's labels are on average 27 years off the modern 'lower' dating and Ithaca's predictions 5 years off",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "redating Classical Athens",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Main, 'Contributing to historical debates' ¶4",
+   "quote": "Ithaca’s average predicted date for all of these decrees is 421 bc",
+   "claim": "the average predicted date for the decrees is 421 BC",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "redating Classical Athens",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶3 s4",
+   "quote": "Historians have already used the tool to reevaluate significant periods in Greek history.",
+   "claim": "historians have used the tool to reevaluate significant periods in Greek history",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "redating Classical Athens",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract s4–5",
+   "quote": "Ithaca is designed to assist and expand the historian’s workflow. The architecture of Ithaca focuses on collaboration, decision support and interpretability.",
+   "claim": "the stated frame: designed to assist and expand the historian's workflow, its architecture focused on collaboration, decision support and interpretability",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the stated limits: an assistive tool, plausible suggestions, the tradition in the data",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Data circularity'",
+   "quote": "Rather, Ithaca is an assistive tool aiming to improve on and facilitate a scholarly process of induction, model uncertainty and propose possible solutions for the scholar to consider.",
+   "claim": "an assistive tool that facilitates scholarly induction, models uncertainty and proposes possible solutions for the scholar to consider",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: an assistive tool, plausible suggestions, the tradition in the data",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Data circularity'",
+   "quote": "none of Ithaca’s proposed restorations are assumed to be objectively certain—instead, they are presented as plausible suggestions.",
+   "claim": "no proposed restoration is assumed objectively certain; they are presented as plausible suggestions",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: an assistive tool, plausible suggestions, the tradition in the data",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Contributing to historical debates' (the decrees)",
+   "quote": "The fact that Ithaca was trained on the largest available dataset of Greek epigraphic texts makes it possible to challenge or overcome individual biases or, indeed, errors in the existing academic tradition, notwithstanding the fact that the dataset in question is originally based on the accumulated academic tradition.",
+   "claim": "the scale of the dataset can challenge biases or errors in the academic tradition, though the dataset itself rests on that tradition",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: an assistive tool, plausible suggestions, the tradition in the data",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Training on epigraphic tasks'",
+   "quote": "The limitations of discretizing and amalgamating date ranges of different levels of precision based on past scholarship have been noted",
+   "claim": "the stated limit of discretizing and amalgamating date ranges of differing precision from past scholarship, which the authors hold their scale and attention to textual patterns at least partially meet",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated limits: an assistive tool, plausible suggestions, the tradition in the data",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "title",
+   "quote": "Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+   "claim": "the public interface's name and title: Predicting the Past, contextualising, restoring and attributing ancient texts (the site's name 'Ithaca')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2026-10-31 (read; the page is undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B3-meta.txt (sha256 3f6895b72c46ded7…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Conclusions ¶1",
+   "quote": "our interdisciplinary team created an open-source and publicly available interface ( https://ithaca.deepmind.com ), enabling historians to use Ithaca for their personal research",
+   "claim": "an open-source, publicly available interface at ithaca.deepmind.com for historians' own research",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "we partnered with Google Cloud and Google Arts & Culture to launch a free interactive version of Ithaca . And to aid further research, we have also open sourced our code, the pretrained model, and an interactive Colaboratory notebook.",
+   "claim": "a free interactive version with Google Cloud and Google Arts & Culture; the code, the pretrained model and a Colaboratory notebook open-sourced",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Notes",
+   "quote": "The Ithaca web interface was developed by Justin Grayston, Benjamin Maynard, and Ricardo Cardenas from Google Cloud.",
+   "claim": "the web interface developed by Justin Grayston, Benjamin Maynard and Ricardo Cardenas of Google Cloud",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Code availability",
+   "quote": "Ithaca’s training and inference source code is available at GitHub ( https://github.com/deepmind/ithaca ) under Apache License 2.0, along with the trained weights, licensed under Creative Commons Attribution-ShareAlike 4.0 International.",
+   "claim": "the code on GitHub under Apache License 2.0; the trained weights under CC BY-SA 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Rights and permissions",
+   "quote": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License",
+   "claim": "the article is open access under CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licences: the interface, the code, the weights, the article",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Methods, 'Previous work' ¶2",
+   "quote": "The closest work to Ithaca is our 2019 research on ancient text restoration: Pythia",
+   "claim": "its closest predecessor is the authors' 2019 restoration model Pythia",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy and successors: Pythia before, other languages and Aeneas after",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s3",
+   "quote": "The work builds on another text analysis network that DeepMind released in 2019, named Pythia.",
+   "claim": "the encyclopedia: it builds on Pythia, released by DeepMind in 2019",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy and successors: Pythia before, other languages and Aeneas after",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Conclusions ¶1",
+   "quote": "Ithaca is to our knowledge the first epigraphic restoration and attribution model of its kind.",
+   "claim": "the first epigraphic restoration and attribution model of its kind, to the authors' knowledge",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy and successors: Pythia before, other languages and Aeneas after",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Contributing to historical debates' ¶4",
+   "quote": "we are currently working on versions of Ithaca trained on other ancient languages and historians can already use their datasets in the current architecture to study other ancient writing systems, from Akkadian to Demotic and Hebrew to Mayan",
+   "claim": "versions for other ancient languages in progress; the architecture usable now on datasets of other writing systems, Akkadian to Demotic, Hebrew to Mayan",
+   "modality": "documented",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy and successors: Pythia before, other languages and Aeneas after",
+   "date": "2022-03-09 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 6de295b7663778e5…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind §Others, Archaeology s7",
+   "quote": "The team is working on extending the model to other ancient languages, including Demotic , Akkadian , Hebrew , and Mayan .",
+   "claim": "the encyclopedia: the team is extending the model to Demotic, Akkadian, Hebrew and Mayan",
+   "modality": "documented",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy and successors: Pythia before, other languages and Aeneas after",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 e0065367800a53a0…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Conclusions ¶2",
+   "quote": "the methods introduced in this research apply to all disciplines dealing with ancient text (papyrology, numismatics, codicology), to any language (ancient or modern)",
+   "claim": "the authors hold the methods applicable to every discipline of ancient text (papyrology, numismatics, codicology) and to any language",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope: other ancient texts and disciplines",
+   "date": "2022-03-09 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 d10c3328114f85d4…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B5",
+   "origin": "wikipedia",
+   "locus": "Wikipedia 'Ithaca' (disambiguation page), opening",
+   "quote": "Ithaca most commonly refers to: Homer's Ithaca , an island featured in Homer's Odyssey",
+   "claim": "on the encyclopedia the bare name is a disambiguation page that most commonly refers to Homer's island; it does not list the model, which has no article and is described only in the 'Google DeepMind' article",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the bare name",
+   "date": "2026-10-31 (read; Wikipedia revision 1380412362)",
+   "quote_ok": true,
+   "checked_against": "saved text W7.txt (sha256 91ad081371380a52…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Google DeepMind — Predicting the past with Ithaca — Google DeepMind",
+  "B2": "GitHub — GitHub - google-deepmind/ithaca: Restoring and attributing ancient texts using deep neural networks · GitHub",
+  "B3": "Predicting the Past — Predicting the Past",
+  "B4": "Nature — Restoring and attributing ancient texts using deep neural networks | Nature",
+  "B5": "Wikipedia — Google DeepMind §Others, 'Archaeology' (no article 'Ithaca (neural network)' or similar; 'Ithaca' a disambiguation page that does not list the model)"
+ }
+}

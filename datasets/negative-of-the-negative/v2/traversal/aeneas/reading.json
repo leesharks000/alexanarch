@@ -1,0 +1,1089 @@
+{
+ "row": "aeneas",
+ "address": "Aeneas DeepMind",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Aeneas (the model) with the entity named; R, a relation the archive states between the model and an archive object; O, an archive category applied to the model or to a class the field and the census source for it (AI models for ancient texts: B1, B5, B7, census intersection, evidence kind and worked question; parallels as evidence: B1, B2, B3, B5, census kind, unit, answers and does_not_answer; Latin inscriptions: B1, B3, B5, census text_object). A bare mention, a figural use, a keyword list or a reference line is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, every archive sentence matching a class pattern was read at its passage (scan over 1,716 texts: class (1) 3 sentences in 1 text, class (2) 20 sentences in 20 texts, class (3) 32 sentences in 24 texts; and the strings 'direction of dependence', 'literary dependence', 'dependence between', 9 sentences in 8 texts), and the admitted deposits read at the paragraphs named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "verdicts": [
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "Revelation First ≠ Revelation Early: the thesis's falsifier (b), that the literary-structural parallels run the other direction, and the midrashim transform defined as the mapping the record's reading names (O-class, parallels as evidence). Not a string-pass candidate; found by reading the class matches and the census's rf_intersection",
+   "claims": [
+    "O202-01",
+    "O202-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 832,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "REVELATION FIRST work plan v7.1: the WS-4 verification condition, that a parallel must be shown not reducible to shared background (the common-substrate confound) to establish direct inheritance rather than parallel derivation (O-class, parallels). Found by reading the class matches (its falsifier line carries 'literary parallels')",
+   "claims": [
+    "O832-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 828,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Inscription That Survives: the note's method claims no direct literary dependence between its five cases, reading them as instances of one inscriptional practice (O-class, parallels: parallel kept apart from dependence). Found by reading the 'literary dependence' matches",
+   "claims": [
+    "O828-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1458,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Echo and the Stamp: a gap's terms found in De sublimitate establish 'a convergence, not a chain of custody' (O-class, parallels as evidence of transmission). Hop candidate (forward from the admitted set), read and admitted",
+   "claims": [
+    "O1458-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1474,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "eeeeee, the sixth erratum: verbal parallels verifiable in the text, the claim of composed design interpretive (O-class, parallels as evidence). String-pass class match (\"verbal parallels\")",
+   "claims": [
+    "O1474-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Photograph of the Handwritten Original: the field survey's §2.3 on Ithaca, the model the field says Aeneas builds upon (B1, B7): the gain from interface design, ranked hypotheses not a verdict; differential register prioritization (#1406) a property of single-verdict interfaces; dataset construction the hidden achievement; machine readers of ancient texts work on authors who cannot be consulted (O-class, AI models for ancient texts). String-pass candidate only at its keyword line (Vesuvius Challenge); its §2.3 and Part VIII found by reading",
+   "claims": [
+    "O1443-01",
+    "O1443-02",
+    "O1443-03",
+    "O1443-04"
+   ],
+   "cands": []
+  }
+ ],
+ "hop": "94 hop candidates (forward and back from #202, #828, #832, #1211, #1216, #1217, #1400, #1443, #1474); #1458 admitted; #1406 and #1403 read and rejected (reasons above); the rest (navigation maps, capture registry editions, Sappho errata, the Josephus and SPXI lines, glyphic checksums, protocol and tether documents) read by title and abstract and rejected: none says anything of the model or of the three classes",
+ "summary": {
+  "D": 0,
+  "R": 0,
+  "O_admitted": [
+   202,
+   828,
+   832,
+   1443,
+   1458,
+   1474
+  ],
+  "instances": [
+   1211,
+   1216,
+   1217,
+   1400
+  ],
+  "hop_admitted": [
+   1458
+  ],
+  "deposit_claims": 10,
+  "note": "No archive text names the model: every D and R candidate (21 sentences in 8 deposits) is the hero, Virgil's Aeneas, a homonym. The archive bears on the classes the field sources: parallels as evidence, through the Revelation First thesis and its philological notes; AI models for ancient texts, through the field survey's reading of Ithaca. Latin inscriptions: no archive sentence (the archive's epigraphy is Greek)."
+ },
+ "records": "The archive's own records of the entity, ledgered beside the deposits: CAP-1-01–CAP-1-15 (the Capture Registry's findings, reading, analysis, PER note, PER read notes and basis, query note and score at aeneas-deepmind-aio-20261031) and RF-01–RF-30 (the Revelation First census record, its organizing question and correction, and the worked question 'machine-dating').",
+ "all_verdicts": [
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "Revelation First ≠ Revelation Early: the thesis's falsifier (b), that the literary-structural parallels run the other direction, and the midrashim transform defined as the mapping the record's reading names (O-class, parallels as evidence). Not a string-pass candidate; found by reading the class matches and the census's rf_intersection",
+   "claims": [
+    "O202-01",
+    "O202-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 832,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "REVELATION FIRST work plan v7.1: the WS-4 verification condition, that a parallel must be shown not reducible to shared background (the common-substrate confound) to establish direct inheritance rather than parallel derivation (O-class, parallels). Found by reading the class matches (its falsifier line carries 'literary parallels')",
+   "claims": [
+    "O832-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1211,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v1.2 (Claim 6)) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1216,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v1.2 self-audited) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1217,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v7.3) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1400,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v7.1 inscription chain) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 828,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Inscription That Survives: the note's method claims no direct literary dependence between its five cases, reading them as instances of one inscriptional practice (O-class, parallels: parallel kept apart from dependence). Found by reading the 'literary dependence' matches",
+   "claims": [
+    "O828-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1458,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Echo and the Stamp: a gap's terms found in De sublimitate establish 'a convergence, not a chain of custody' (O-class, parallels as evidence of transmission). Hop candidate (forward from the admitted set), read and admitted",
+   "claims": [
+    "O1458-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1474,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "eeeeee, the sixth erratum: verbal parallels verifiable in the text, the claim of composed design interpretive (O-class, parallels as evidence). String-pass class match (\"verbal parallels\")",
+   "claims": [
+    "O1474-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "verdict": "admitted",
+   "reason": "The Photograph of the Handwritten Original: the field survey's §2.3 on Ithaca, the model the field says Aeneas builds upon (B1, B7): the gain from interface design, ranked hypotheses not a verdict; differential register prioritization (#1406) a property of single-verdict interfaces; dataset construction the hidden achievement; machine readers of ancient texts work on authors who cannot be consulted (O-class, AI models for ancient texts). String-pass candidate only at its keyword line (Vesuvius Challenge); its §2.3 and Part VIII found by reading",
+   "claims": [
+    "O1443-01",
+    "O1443-02",
+    "O1443-03",
+    "O1443-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 288,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): 'Aeneas' obedience' — the hero (Virgil), a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1102,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero, a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1271,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero, a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1289,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/R): 'Aeneas/Feist' — the hero as a figure for a heteronym's fall; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1290,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/O): the Aeneid's ivory gate, the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1291,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1293,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/R): the Virgilian katabasis; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1684,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/O): an index line naming 'claims on Aeneas and the ivory gate'; the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 603,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): 'Literary Parallels' as a heading in a quoted composition about a heteronym; not the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 642,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): 'Epigraphy' in a heteronym's field list; a keyword",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 752,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): uses textual parallels as one line of evidence for Sappho–Plato influence; a use of parallels, not a category applied to the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 617,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): reports Flintoff's textual parallels (Pyrrho and India); attributed, no archive category applied",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 683,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'parallel passages' in an apparatus note; method line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1184,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same apparatus line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1362,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same apparatus line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1412,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'a literary parallel and is claimed as no more': a figural retention of a motif; read, not about parallels as evidence of the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1595,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): Van Raalte's lexical parallel, attributed",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1596,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1601,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'The textual parallel is the difference between a diplomatic edition and a normalised one': an analogy; and 'The direction of dependence is available for inspection' of the archive's own deposit chain, not of parallel texts",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1617,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'a verbal parallel rather than a structural one': a falsifier of a monetary–epistemic homology, not the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1678,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'parallel texts' in a comparison table of infrastructures",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1680,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1634,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): 'Provenance erasure therefore changes the apparent direction of dependence': of a company and a literary project's names, not of parallel texts",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 682,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): direction of dependence between heteronyms and their generator; not parallels",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 174,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): a disambiguation challenge condition; not parallels",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 934,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): physics anomaly detection",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1453,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): a sampling formula",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1558,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): the same formula",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1476,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek archaic epigraphy (the epigraphic habit of the future reader); the class is Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1483,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): a reference line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1484,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): a reference line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1548,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek epigraphic pragmatics; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1575,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek dramatic-festival inscriptions as external evidence for an authorship question; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1576,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the Delphic decree (Greek); not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1569,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1570,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1572,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1582,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree; keywords",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1585,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): royal Greek epigraphy in a corpus table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1589,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1594,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1605,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1658,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'any epigraphic or papyrological item for Plato or Theophrastus'; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1671,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same bound",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1690,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same bound (the specification)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 165,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): first-century epigraphic evidence for a name's reception; Greek, a verification note",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 860,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'epigraphic compression-persistence coefficient', a metric name",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1231,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1061,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'epigraphic apparatus' of music tracks; figural",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1406,
+   "strata": [],
+   "verdict": "rejected (hop)",
+   "reason": "hop candidate (forward from #1443): Differential Register Prioritization specifies machine reading of ambiguous human artifacts (handwritten pages, verse), not ancient inscriptions; its application to the class is #1443's own sentence (O1443-02), already admitted; rejected as a separate admission",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1403,
+   "strata": [],
+   "verdict": "rejected (hop)",
+   "reason": "hop candidate: a version of #832's plan (v7.2) without the parallels falsifier; rejected",
+   "claims": [],
+   "cands": []
+  }
+ ],
+ "instances": [
+  {
+   "dep": 1211,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v1.2 (Claim 6)) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1216,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v1.2 self-audited) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1217,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v7.3) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1400,
+   "strata": [
+    "O"
+   ],
+   "verdict": "instance of #832",
+   "reason": "a version of #832's work plan (v7.1 inscription chain) carrying the same falsifier on literary parallels; grouped with #832 as one lineage (S4, kept as an instance)",
+   "claims": [],
+   "cands": []
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 288,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): 'Aeneas' obedience' — the hero (Virgil), a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1102,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero, a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1271,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero, a homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1289,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/R): 'Aeneas/Feist' — the hero as a figure for a heteronym's fall; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1290,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/O): the Aeneid's ivory gate, the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1291,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D): the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1293,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/R): the Virgilian katabasis; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1684,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (D/O): an index line naming 'claims on Aeneas and the ivory gate'; the hero; homonym",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 603,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): 'Literary Parallels' as a heading in a quoted composition about a heteronym; not the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 642,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): 'Epigraphy' in a heteronym's field list; a keyword",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 752,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (O): uses textual parallels as one line of evidence for Sappho–Plato influence; a use of parallels, not a category applied to the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 617,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): reports Flintoff's textual parallels (Pyrrho and India); attributed, no archive category applied",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 683,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'parallel passages' in an apparatus note; method line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1184,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same apparatus line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1362,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same apparatus line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1412,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'a literary parallel and is claimed as no more': a figural retention of a motif; read, not about parallels as evidence of the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1595,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): Van Raalte's lexical parallel, attributed",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1596,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1601,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'The textual parallel is the difference between a diplomatic edition and a normalised one': an analogy; and 'The direction of dependence is available for inspection' of the archive's own deposit chain, not of parallel texts",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1617,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'a verbal parallel rather than a structural one': a falsifier of a monetary–epistemic homology, not the class",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1678,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): 'parallel texts' in a comparison table of infrastructures",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1680,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1634,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): 'Provenance erasure therefore changes the apparent direction of dependence': of a company and a literary project's names, not of parallel texts",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 682,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): direction of dependence between heteronyms and their generator; not parallels",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 174,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): a disambiguation challenge condition; not parallels",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 934,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): physics anomaly detection",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1453,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): a sampling formula",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1558,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (dependence): the same formula",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1476,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek archaic epigraphy (the epigraphic habit of the future reader); the class is Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1483,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): a reference line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1484,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): a reference line",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1548,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek epigraphic pragmatics; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1575,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): Greek dramatic-festival inscriptions as external evidence for an authorship question; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1576,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the Delphic decree (Greek); not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1569,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1570,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1572,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1582,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same decree; keywords",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1585,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): royal Greek epigraphy in a corpus table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1589,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1594,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1605,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same table",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1658,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'any epigraphic or papyrological item for Plato or Theophrastus'; not Latin inscriptions",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1671,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same bound",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1690,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same bound (the specification)",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 165,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): first-century epigraphic evidence for a name's reception; Greek, a verification note",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 860,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'epigraphic compression-persistence coefficient', a metric name",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1231,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): the same",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1061,
+   "strata": [],
+   "verdict": "rejected",
+   "reason": "rejected (class (3)): 'epigraphic apparatus' of music tracks; figural",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1406,
+   "strata": [],
+   "verdict": "rejected (hop)",
+   "reason": "hop candidate (forward from #1443): Differential Register Prioritization specifies machine reading of ambiguous human artifacts (handwritten pages, verse), not ancient inscriptions; its application to the class is #1443's own sentence (O1443-02), already admitted; rejected as a separate admission",
+   "claims": [],
+   "cands": []
+  },
+  {
+   "dep": 1403,
+   "strata": [],
+   "verdict": "rejected (hop)",
+   "reason": "hop candidate: a version of #832's plan (v7.2) without the parallels falsifier; rejected",
+   "claims": [],
+   "cands": []
+  }
+ ],
+ "normalized": "2026-10-31, session: verdicts split into verdicts (admitted), instances and not_admitted, the keys the page builder reads; the reader's whole list kept as all_verdicts"
+}

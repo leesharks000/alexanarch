@@ -1,0 +1,1244 @@
+{
+ "row": "vesuvius-challenge",
+ "address": "Vesuvius Challenge",
+ "addresses": [
+  "Vesuvius Challenge"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check, ’ and ' equated; multi-part quotes joined by ' … ', each part checked), or the card's title and snippet for the unreachable cards and the title for video cards; 56/56 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 scrollprize.org, the operator's home page; B2 Smithsonian Magazine, unreachable; B3 the University of Kentucky's media-kit page; B4 Wikipedia, 'Herculaneum papyri'; B5 the operator's X account; B6 the University of Nebraska–Lincoln, unreachable; B7 UKNow's release; B8–B11 four videos, title only, B9 refused); 'own_page', the census's own page T did not surface (B12 the prizes page; the census's home page is card B1, carried once); 'wikipedia', the entity's title, a redirect to a section of B4's article (B13). The census read no third-party source (its evidence all carries basis 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is (B1, B3, B5, B7); the scrolls (B1, B4, B7); origin and founders (B1, B3, B4, B7); the method (B3, B4, B9, B10); the method's stated limits (B1, B12); prizes (B1, B12); milestones (B4, B6); the 2026 reading (B2, B3, B4, B7, B8, B11, B12); after the machine (B7); review (B12); data and licence (B1, B7, B12); operator and team (B1, B12); news (B1, B5). B3 and B7 carry one release (25 June 2026): each sentence ledgered once, from the page whose card surfaced it at its snippet where one does (B3 'The Role of the Vesuvius Challenge'), otherwise from B7. The census's kind, operator, text_object, count, findings, stated_limits, lifecycle and evidence.grand restate B1 and B12 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 refetched as the card, its text identical to the census copy; B12 the census's saved copy, gunzipped; B2-403.html, B9-403.html the bot-check responses; B4.wiki, B13.wiki raw wikitext, B13.html the rendered redirect; T1-vesuvius-challenge-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census own page vesuvius-challenge--home, the same page)",
+   "card": "Vesuvius Challenge — Vesuvius Challenge — Reading the Herculaneum Scrolls with AI",
+   "url": "https://scrollprize.org/",
+   "kind": "Overview card (the operator's home page); the census's own page vesuvius-challenge--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B1.html",
+     "sha256": "2ef25107feb6d6950d6c129f5001ab6373a169ca013ae1344a1b2b3fe1c88e74"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B1.txt",
+     "sha256": "2d8945bf3c25fd2290c222ca0b91eab3660ac7f706f8310be5a91468c948fec7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:58Z",
+    "http": 200,
+    "url": "https://scrollprize.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B1.html",
+    "raw_sha256": "2ef25107feb6d6950d6c129f5001ab6373a169ca013ae1344a1b2b3fe1c88e74",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B1.txt"
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "census_copy": {
+     "src": "vesuvius-challenge--home",
+     "sha256": "f33ae8e4e07325a293724a00c3add697963ec56232b0440410ebda2779e6d7bb",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T02:52:05Z",
+     "agrees": "text identical; raw differs by script nonces only"
+    }
+   },
+   "names_operator": "yes ('Vesuvius Challenge is an open science research organization'; 'Created by')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the page's title verbatim). The fetch differs from the census's saved bytes only in Cloudflare's per-request script nonces (two attribute values); its extracted text is byte-identical to the census's vesuvius-challenge--home.txt, so the card and the census's own page are one page, carried once, as a card."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Smithsonian Magazine — Scientists Have Deciphered the Surviving Fragments of a 2,000 ...",
+   "url": "https://www.smithsonianmag.com/smart-news/scientists-have-deciphered-the-surviving-fragments-of-a-2000-year-old-philosophical-treatise-frozen-in-time-by-mount-vesuvius-eruption-180989036/",
+   "kind": "Overview card (a magazine news article)",
+   "files": {
+    "B2-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B2-403.html",
+     "sha256": "df2bbd5310fdf2a98ad5a59c2f225da6df984fb70f6c8edca101ac25f73074d8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:58Z",
+    "http": 403,
+    "url": "https://www.smithsonianmag.com/smart-news/scientists-have-deciphered-the-surviving-fragments-of-a-2000-year-old-philosophical-treatise-frozen-in-time-by-mount-vesuvius-eruption-180989036/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B2-403.html",
+    "raw_sha256": "df2bbd5310fdf2a98ad5a59c2f225da6df984fb70f6c8edca101ac25f73074d8",
+    "result": "unreachable: HTTP 403, a Cloudflare bot check ('Just a moment...') to the census agent; not retried with another agent string or by another route",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "n/a (card text only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on title and site; the article's full title and date (Ellen Wexler, 26 June 2026) are Wikipedia's citation of it (B4). Card title and snippet stand as its only text."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "University of Kentucky — Herculaneum | Pigman College of Engineering",
+   "url": "https://engr.uky.edu/herculaneum",
+   "kind": "Overview card (the university's media-kit page: the 25 June 2026 release, a timeline)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B3.html",
+     "sha256": "8513caf1cadb195315d0f1b8d50e6350d2ff722cbe39f2e60fe8824a3629539c"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B3.txt",
+     "sha256": "926bbc1a6a8fd70b0236aa029dd5bbb0d61515fb8c9eb29d35cfb103ed763b52"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:59Z",
+    "http": 200,
+    "url": "https://engr.uky.edu/herculaneum",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B3.html",
+    "raw_sha256": "8513caf1cadb195315d0f1b8d50e6350d2ff722cbe39f2e60fe8824a3629539c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B3.txt"
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "yes ('Vesuvius Challenge co-founder'; 'Giorgio Angelotti, project lead with the Vesuvius Challenge')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (the page's title verbatim); the card's snippet ('From Scanning to Scholarship … The Role of the Vesuvius Challenge Launched in 2023 …') is the page's headings and sentence. The page carries the same release as B7 (UKNow) with a timeline; 'Last updated: Sept. 30, 2026'."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4, and the entity's Wikipedia article by redirect (B13)",
+   "card": "Wikipedia — Herculaneum papyri",
+   "url": "https://en.wikipedia.org/wiki/Herculaneum_papyri",
+   "kind": "Overview card (the Wikipedia article 'Herculaneum papyri'); the article to which 'Vesuvius Challenge' redirects (section 'Vesuvius Challenge')",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.html",
+     "sha256": "6cc1d4a4af423ee7a5d98b5b370b05f5cdb53bffae3f5cf42de48c2510b662f0"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.txt",
+     "sha256": "614a24fdbbea7038bc988204d4fc33369644b0b17959d64874c41ece093dc909"
+    },
+    "B4.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.wiki",
+     "sha256": "638d74fc5f1184820f574d401d8f21de4bba8f3b78f37316fedf903566967eec"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:15Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Herculaneum_papyri",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.html",
+    "raw_sha256": "6cc1d4a4af423ee7a5d98b5b370b05f5cdb53bffae3f5cf42de48c2510b662f0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.txt"
+    ],
+    "wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Herculaneum_papyri&action=raw",
+     "at": "2026-10-31T04:39:14Z",
+     "http": 200,
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B4.wiki",
+     "sha256": "638d74fc5f1184820f574d401d8f21de4bba8f3b78f37316fedf903566967eec"
+    },
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "yes (section 'Vesuvius Challenge'; 'the Vesuvius Challenge team announced')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Quoted from the rendered text B4.txt (link boundaries leave spaces before some punctuation, kept verbatim); the wikitext B4.wiki saved beside it. Ledgered: the lead, Discovery ¶1, Virtual unrolling: Process, and the section 'Vesuvius Challenge'."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "X — Vesuvius Challenge (@scrollprize) / X",
+   "url": "https://x.com/scrollprize",
+   "kind": "Overview card (the operator's account on X: profile and recent posts as served to a signed-out reader)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B5.html",
+     "sha256": "be96a6323df4861b38419a804b25524db7850346e841913e57d470a1a645701b"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B5.txt",
+     "sha256": "7360056f6148f1af714ef3da09c50012a6ebd37984a55195eb91c648d0eab003"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:15Z",
+    "http": 200,
+    "url": "https://x.com/scrollprize",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B5.html",
+    "raw_sha256": "be96a6323df4861b38419a804b25524db7850346e841913e57d470a1a645701b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B5.txt"
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "yes (the operator's own account)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's title (the handle); the page served its profile and posts of 11 Aug–12 Oct to the census agent, the card's snippet the post of 29 September verbatim."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "University of Nebraska–Lincoln — Vesuvius Scrolls | University of Nebraska–Lincoln",
+   "url": "https://unl.edu/no-place-like/vesuvius-scrolls",
+   "kind": "Overview card (the university's feature page)",
+   "files": {},
+   "fetched": {
+    "at": "2026-10-31T04:39:40Z",
+    "http": null,
+    "url": "https://unl.edu/no-place-like/vesuvius-scrolls",
+    "result": "unreachable: curl exit 60, 'SSL certificate problem: unable to get local issuer certificate', at 04:39:16Z and again at 04:39:40Z; TLS verification not disabled, no other route tried",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "n/a (card text only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on title and site ('Husker Undergrad Decodes Ancient Scroll, Wins Global Competition', unl.edu/no-place-like/vesuvius-scrolls). Card title and snippet stand as its only text."
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "UKNow — The day the Herculaneum scrolls began speaking again | UKNow",
+   "url": "https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again",
+   "kind": "Overview card (the University of Kentucky's news release of 25 June 2026)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B7.html",
+     "sha256": "9d8b5b8950fe8633ba4bb219055faacbef28a61de8945e40ddfd43c7df4bfa0e"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B7.txt",
+     "sha256": "bf64af836f3b263b3f43da7a3d00fddfe17d1e8097d9ee3cba0c88da12bd5c9e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:16Z",
+    "http": 200,
+    "url": "https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B7.html",
+    "raw_sha256": "9d8b5b8950fe8633ba4bb219055faacbef28a61de8945e40ddfd43c7df4bfa0e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B7.txt"
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "yes ('The Vesuvius Challenge has achieved a historic breakthrough')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (the release is mirrored at research.uky.edu and cs.engr.uky.edu); the card's snippet ('Breakthroughs: … 20 columns of potential Stoic text/Chrysippus …') is the composition layer's summary of the page, not a span of it. The same release as B3's page."
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8 (video, 12:02)",
+   "card": "YouTube·The AI Daily Brief: Artificial Intelligence News — AI Reveals Text In Ancient Greek Scroll Destroyed in Vesuvius Eruption",
+   "url": null,
+   "kind": "Overview card (video)",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found (WebSearch on title and channel returned no video); video, title only (no snippet)"
+   },
+   "names_operator": "n/a (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Video card, admitted through its title (no snippet on the rail)."
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9 (video, 12m)",
+   "card": "Smithsonian Magazine·Smithsonian Magazine — How Artificial Intelligence Is Making 2000-Year-Old Scrolls Readable ...",
+   "url": "https://www.smithsonianmag.com/videos/how-artificial-intelligence-is-making-2000-ye/",
+   "kind": "Overview card (video)",
+   "files": {
+    "B9-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B9-403.html",
+     "sha256": "a393a6c38234759ff9d33b7bbbbc682e897d91a86cb4c0633e85c0e0b7429a3d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:40:00Z",
+    "http": 403,
+    "url": "https://www.smithsonianmag.com/videos/how-artificial-intelligence-is-making-2000-ye/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B9-403.html",
+    "raw_sha256": "a393a6c38234759ff9d33b7bbbbc682e897d91a86cb4c0633e85c0e0b7429a3d",
+    "result": "unreachable: HTTP 403 (bot check); title only",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "n/a (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (smithsonianmag.com/videos/…); refused the census agent (HTTP 403). Title only, no snippet."
+  },
+  {
+   "id": "B10",
+   "origin": "card",
+   "role": "Overview card 10 (video, 1:02)",
+   "card": "YouTube·AI Honeycove — AI decodes ancient Vesuvius scroll using x-rays #VesuviusChallenge ...",
+   "url": null,
+   "kind": "Overview card (video)",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found (WebSearch on title and channel returned no video); video, title only (no snippet)"
+   },
+   "names_operator": "n/a (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Video card, admitted through its title (no snippet on the rail)."
+  },
+  {
+   "id": "B11",
+   "origin": "card",
+   "role": "Overview card 11 (video, 6m)",
+   "card": "YouTube·MegalithHunter — We Can Finally Read a 2000-Year-Old Book That Nobody Can Open",
+   "url": null,
+   "kind": "Overview card (video)",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found (WebSearch on title and channel returned no video); video, title only (no snippet)"
+   },
+   "names_operator": "n/a (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Video card, admitted through its title (no snippet on the rail)."
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "role": "census own page vesuvius-challenge--overview (not surfaced by T)",
+   "card": "Vesuvius Challenge — Open Prizes | Vesuvius Challenge",
+   "url": "https://scrollprize.org/prizes",
+   "kind": "the operator's prizes page (rules, review, terms); the census's own page",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B12.html",
+     "sha256": "3e05dfa21dc14f4fa81ad47b5e87c92c1cce322eeb6ea25fd7e6312db8b9bf92"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B12.txt",
+     "sha256": "d379746a054d330486b818f528aa2f30f54c4827190ccaa90aab547820b6dbf0"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "vesuvius-challenge--overview",
+     "sha256": "3e05dfa21dc14f4fa81ad47b5e87c92c1cce322eeb6ea25fd7e6312db8b9bf92",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T02:52:45Z",
+     "agrees": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B12.html",
+    "raw_sha256": "3e05dfa21dc14f4fa81ad47b5e87c92c1cce322eeb6ea25fd7e6312db8b9bf92",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B12.txt"
+    ],
+    "note": "copied from the census's saved copy (gunzipped); sha256 matches the manifest; not refetched"
+   },
+   "names_operator": "yes ('Vesuvius Challenge is ongoing'; 'Scroll Prize, Inc.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted by the operator's ruling beside the cards; not surfaced by T. The census's other own page (vesuvius-challenge--home) is card B1, carried once."
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "card": "Wikipedia — Vesuvius Challenge (redirect to Herculaneum papyri#Vesuvius Challenge)",
+   "url": "https://en.wikipedia.org/wiki/Vesuvius_Challenge",
+   "kind": "Wikipedia: a redirect to a section ({{R to section}}), no article of its own",
+   "files": {
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B13.wiki",
+     "sha256": "7d0a02fb3565a9de56e55f821477382c9a66f14915c44e66e8d72a651a5c65bb"
+    },
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B13.html",
+     "sha256": "77dd2ae3e81d19085a69d0146a5c87e4e0b87d89b040a76edc1323298ce62638"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B13.txt",
+     "sha256": "1f8ef2f543df988faed94e6a3f7a3d4da077033b692d1abdcd36f8a72f7bb6a7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:16Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=Vesuvius_Challenge&action=raw",
+    "raw": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B13.wiki",
+    "raw_sha256": "7d0a02fb3565a9de56e55f821477382c9a66f14915c44e66e8d72a651a5c65bb",
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Vesuvius_Challenge",
+     "at": "2026-10-31T04:39:17Z",
+     "http": 200,
+     "path": "datasets/negative-of-the-negative/v2/intake/vesuvius-challenge-20261031/B13.html",
+     "sha256": "77dd2ae3e81d19085a69d0146a5c87e4e0b87d89b040a76edc1323298ce62638"
+    },
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "n/a (redirect)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The raw wikitext is '#REDIRECT [[Herculaneum papyri#Vesuvius Challenge]]' with {{R to section}}; the rendered page is the article 'Herculaneum papyri' '(Redirected from Vesuvius Challenge)'. The section is the card B4's article; its claims are ledgered once, under B4."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "hero ¶3",
+   "quote": "Vesuvius Challenge is an open science research organization reading the carbonized Herculaneum scrolls without unrolling them.",
+   "claim": "its self-definition: an open science research organization reading the carbonized Herculaneum scrolls without unrolling them",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an open science research organization and open competition reading the Herculaneum scrolls without unrolling them",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "hero ¶3",
+   "quote": "Anyone can help : we run a $2M competition , with prizes every month.",
+   "claim": "anyone can help: it runs a $2M competition with prizes every month",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "prizes and their terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "hero ¶1–2",
+   "quote": "Resurrecting an ancient library from the ashes of a volcano. Buried in 79 AD, now being revealed.",
+   "claim": "its motto: an ancient library resurrected from a volcano's ashes, buried in 79 AD and now being revealed",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the scrolls: the library of the Villa of the Papyri, carbonized in 79 AD",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Our story, 79 AD",
+   "quote": "Vesuvius erupts, burying a villa and its library of papyrus scrolls under twenty meters of ash. … The scrolls are carbonized by the heat, but also preserved. For centuries, as almost every other ancient text decays, the library of the Villa of the Papyri waits underground, intact.",
+   "claim": "in 79 AD the eruption buried a villa and its library under twenty meters of ash; the scrolls were carbonized and preserved, the library of the Villa of the Papyri intact underground",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the scrolls: the library of the Villa of the Papyri, carbonized in 79 AD",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Open problems: Virtual Unwrapping",
+   "quote": "We can trace a scroll's surface, but where sheets are crushed or torn it still needs human help. Help us make it fully automatic.",
+   "claim": "its stated limit on virtual unwrapping: where sheets are crushed or torn it still needs human help",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method's stated limits: human help, transfer, human input",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Open problems: Ink Detection",
+   "quote": "We can see ink in some scrolls, but models trained on one rarely transfer to the next. Help us make them work on every scroll.",
+   "claim": "its stated limit on ink detection: ink is seen in some scrolls, and models trained on one rarely transfer to the next",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method's stated limits: human help, transfer, human input",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Open problems",
+   "quote": "Win the $1,000,000 Grand Prize … Win the $500,000 First Letters Prizes",
+   "claim": "the home page offers a $1,000,000 Grand Prize and $500,000 in First Letters Prizes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "prizes and their terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Team: Created by",
+   "quote": "Nat Friedman Instigator, Director & Founding Sponsor … Daniel Gross Founding Sponsor … Brent Seales Principal Advisor",
+   "claim": "created by Nat Friedman (instigator, director, founding sponsor), Daniel Gross (founding sponsor) and Brent Seales (principal advisor)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and founders: launched in 2023",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Team: Led by; EduceLab Team (Partners)",
+   "quote": "Paul Henderson Technical Lead … Federica Nicolardi Papyrology Lead … EduceLab Team (Partners)",
+   "claim": "led by Paul Henderson (technical lead) and Federica Nicolardi (papyrology lead), with papyrology and annotation teams and EduceLab as partners",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, team, partners and sponsors",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Sponsors",
+   "quote": "Nat Friedman $2,750,000 Musk Foundation $2,084,000",
+   "claim": "its largest sponsors: Nat Friedman ($2,750,000) and the Musk Foundation ($2,084,000)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, team, partners and sponsors",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "News",
+   "quote": "$60,000 First Title Prize Awarded May 5 … First Letters Found in New Scroll February 5",
+   "claim": "its news lists a $60,000 First Title Prize awarded (5 May) and first letters found in a new scroll (5 February)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "news after the record: letters in new scrolls, monthly awards",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Copyright © 2026 Vesuvius Challenge · Content licensed CC BY-NC 4.0 unless otherwise specified",
+   "claim": "its content is licensed CC BY-NC 4.0 unless otherwise specified",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, code and licence",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2d8945bf3c25fd22…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet (Smithsonian Magazine unreachable: HTTP 403, bot check)",
+   "quote": "Scientists Have Deciphered the Surviving Fragments of a 2,000 ... The papyrus manuscript was part of a vast library preserved by volcanic ash. Now, the remaining passages—which examine ethics, knowledge and human nature—are ac...",
+   "claim": "Smithsonian reports the surviving fragments of a 2,000-year-old treatise deciphered, its passages on ethics, knowledge and human nature",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "undated on the card (2026-06-26 by Wikipedia's citation, B4)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Role of the Vesuvius Challenge ¶1 (the card's snippet)",
+   "quote": "Launched in 2023, the Vesuvius Challenge transformed a long-standing scholarly problem into a global, open competition — mobilizing researchers, engineers and citizen scientists to do what had never been done before: read the Herculaneum scrolls without physically opening them.",
+   "claim": "launched in 2023, it made a long-standing scholarly problem into a global, open competition to read the Herculaneum scrolls without physically opening them",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an open science research organization and open competition reading the Herculaneum scrolls without unrolling them",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)'); the page last updated 30 Sept. 2026",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 926bbc1a6a8fd70b…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Role of the Vesuvius Challenge ¶2",
+   "quote": "The initiative built on decades of work led by Seales — and a team of researchers with University of Kentucky’s EduceLab — who demonstrated machine learning could detect ink hidden within X-ray scans of carbonized papyri. With that proof of concept, Seales joined Silicon Valley leaders Nat Friedman and Daniel Gross to launch a $1 million global challenge aimed at accelerating progress.",
+   "claim": "it built on decades of work by Seales and EduceLab, who showed machine learning could detect ink in X-ray scans; Seales joined Nat Friedman and Daniel Gross to launch a $1 million global challenge",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and founders: launched in 2023",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 926bbc1a6a8fd70b…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "timeline, 2023 (March)",
+   "quote": "Following the successful extraction of characters from micro-CT X-ray imagery through the use of AI, Seales and co-founders Nat Friedman and Daniel Gross lauched The Vesuvius Challenge, a $1 million global competition to accelerate discoveries and read the scrolls. Seales’ team released software and thousands of 3D scans.",
+   "claim": "March 2023: Seales and co-founders Friedman and Gross launched it as a $1 million global competition; Seales' team released software and thousands of 3D scans",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders: launched in 2023",
+   "date": "2023-03 (the timeline's entry; the page last updated 30 Sept. 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 926bbc1a6a8fd70b…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "timeline, 2019 (early May)",
+   "quote": "Researchers confirmed that Herculaneum ink, made of carbon, is invisible in micro-CT scans. To address this, the team developed a neural network trained to detect subtle patterns associated with ink presence.",
+   "claim": "2019: Herculaneum's carbon ink is invisible in micro-CT, so the team trained a neural network to detect patterns associated with ink",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: CT scanning, virtual unwrapping, machine-learning ink detection",
+   "date": "2019-05 (the timeline's entry)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 926bbc1a6a8fd70b…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "timeline, the 2026 entry",
+   "quote": "The achievement establishes, for the first time, a scalable method for recovering complete texts from unopened scrolls — transforming a long-standing technical challenge into an active field of humanistic study.",
+   "claim": "the 2026 result establishes a scalable method for recovering complete texts from unopened scrolls",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "2026 (the timeline's entry)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 926bbc1a6a8fd70b…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "lead ¶1",
+   "quote": "The Herculaneum papyri are more than 1,800 scrolls of papyrus discovered in the 18th century in the Villa of the Papyri in Herculaneum . They had been carbonized when the villa was engulfed by the eruption of Mount Vesuvius in 79 AD .",
+   "claim": "the Herculaneum papyri are more than 1,800 scrolls found in the 18th century in the Villa of the Papyri, carbonized in the eruption of 79 AD",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the scrolls: the library of the Villa of the Papyri, carbonized in 79 AD",
+   "date": "current revision, fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "lead ¶2",
+   "quote": "In its current state, reading of the scrolls is extremely difficult and can risk destroying the information it holds. Techniques to decipher the writings on the scrolls are still being developed. For the first time, researchers recovered all the surviving text from a single scroll in 2026.",
+   "claim": "reading the scrolls is extremely difficult and risks destroying them; techniques are still being developed; in 2026 all the surviving text of a single scroll was recovered for the first time",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "current revision, fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Discovery ¶1",
+   "quote": "This intense parching took place over an extremely short period of time, in a room deprived of oxygen, resulting in the scrolls' carbonization into compact and highly fragile blocks.",
+   "claim": "the parching carbonized the scrolls into compact and highly fragile blocks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the scrolls: the library of the Villa of the Papyri, carbonized in 79 AD",
+   "date": "current revision, fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Virtual unrolling: Process ¶2",
+   "quote": "Herculaneum papyri were written using a carbon-based ink, the chemical composition of which is extremely similar to that of the surrounding carbonized parchment.",
+   "claim": "their carbon-based ink is chemically extremely similar to the carbonized surface it is on, which defeats standard CT contrast",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: CT scanning, virtual unwrapping, machine-learning ink detection",
+   "date": "current revision, fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Virtual unrolling: Process ¶4",
+   "quote": "In the same year, he demonstrated a readable unrolling of another Herculaneum scroll, with help of the particle accelerator Diamond Light Source ; through an X-ray imaging technique, ink containing trace amounts of lead was detected.",
+   "claim": "2018: Seales demonstrated a readable unrolling of a Herculaneum scroll with the particle accelerator Diamond Light Source",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: CT scanning, virtual unwrapping, machine-learning ink detection",
+   "date": "current revision, fetched 2026-10-31; the event 2018",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Vesuvius Challenge ¶1 (the card's snippet)",
+   "quote": "In 2023, Nat Friedman , Daniel Gross , and computer scientist Brent Seales announced the Vesuvius Challenge, a competition to \"decipher Herculaneum scrolls using 3D X-ray software\". … The Vesuvius Challenge offered a $700,000 grand prize to be awarded to the first team that could extract four passages of text from two intact scrolls using 3D X-ray scans.",
+   "claim": "Wikipedia: announced in 2023 by Nat Friedman, Daniel Gross and computer scientist Brent Seales as a competition to 'decipher Herculaneum scrolls using 3D X-ray software', with a $700,000 grand prize for four passages from two intact scrolls",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "origin and founders: launched in 2023",
+   "date": "current revision, fetched 2026-10-31; the event 2023",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Vesuvius Challenge ¶2",
+   "quote": "On 12 October 2023, the project awarded $40,000 to Luke Farritor , a 21-year-old computer science student at the University of Nebraska, for successfully detecting the first word in an unopened scroll: porphyras",
+   "claim": "12 October 2023: $40,000 to Luke Farritor for the first word detected in an unopened scroll, porphyras ('purple')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "milestones: the first word and the 2023 Grand Prize",
+   "date": "current revision; the event 2023-10-12",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Vesuvius Challenge ¶3",
+   "quote": "On 5 February 2024, the project awarded its 2023 Grand Prize of $700,000 to the winning team and $50,000 each to three runner-up teams for successfully revealing 5% of one scroll , and announced its goal for 2024 of revealing 90% of the four scrolls that it has fully scanned. … The uncovered text is believed to be a previously unknown text of Philodemus , \"centered on the pleasures of music and food and their effects on the senses\".",
+   "claim": "5 February 2024: the 2023 Grand Prize ($700,000) and three $50,000 runner-up prizes for revealing 5% of one scroll, believed a previously unknown text of Philodemus; the 2024 goal 90% of four scrolls",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "milestones: the first word and the 2023 Grand Prize",
+   "date": "current revision; the event 2024-02-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Vesuvius Challenge ¶5",
+   "quote": "In June 2026, the Vesuvius Challenge team announced that PHerc. 1667, known within the project as \"Scroll 4\", had been virtually unwrapped and read end-to-end. … A project preprint described the work as the first complete virtual unwrapping and extended reading of a rolled Herculaneum papyrus. In the PHerc. 1667, 22 columns of text were recovered, containing \"a Stoic philosophical treatise that may be attributable to Chrysippus \".",
+   "claim": "June 2026: PHerc. 1667 ('Scroll 4') virtually unwrapped and read end to end, the first complete virtual unwrapping of a rolled Herculaneum papyrus; 22 columns of a Stoic treatise that may be attributable to Chrysippus",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "current revision; the event 2026-06",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Vesuvius Challenge ¶5",
+   "quote": "Besides PHerc. 1667, the team were able to read the title and author of PHerc. 139: Philodemus , On Gods, Book 8 .",
+   "claim": "the title and author of PHerc. 139 read: Philodemus, On Gods, Book 8",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "current revision; the event 2026-06",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 614a24fdbbea7038…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "profile",
+   "quote": "The Vesuvius Challenge is a machine learning, geometry and computer vision competition to read the Herculaneum Papyri.",
+   "claim": "its account on X defines it as a machine learning, geometry and computer vision competition to read the Herculaneum Papyri",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an open science research organization and open competition reading the Herculaneum scrolls without unrolling them",
+   "date": "undated (profile; 'Joined February 2023'), fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 7360056f6148f1af…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "post of Sep 29 (the card's snippet)",
+   "quote": "WOW! Letters found in PHerc. 1447, a GRAND PRIZE eligible scroll. … This means ONE thing: the $1M Grand Prize pool is now a LOW HANGING FRUIT! … Nothing is impossible in the AI era, join our Discord and be the one to win the race. Only 270 days left!",
+   "claim": "its post of 29 September: letters found in PHerc. 1447, a Grand Prize-eligible scroll; the '$1M Grand Prize pool' now 'LOW HANGING FRUIT'; 270 days left",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "news after the record: letters in new scrolls, monthly awards",
+   "date": "2026-09-29 (post 'Sep 29'; the year by the 270 days to the 25 June 2027 deadline)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 7360056f6148f1af…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "post of Oct 8",
+   "quote": "$50K First Letters Prize awarded to Erwin Nieuwlaar for finding text in PHerc 343! This is the first time in nearly 2000 years that anyone has read text in this rolled scroll.",
+   "claim": "its post of 8 October: a $50K First Letters Prize to Erwin Nieuwlaar for text found in PHerc 343",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "news after the record: letters in new scrolls, monthly awards",
+   "date": "2026-10-08 (post 'Oct 8')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 7360056f6148f1af…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "post of Oct 12",
+   "quote": "Vesuvius Challenge just awarded another $40K in prizes this month, for progress across virtual unwrapping and ink detection, bringing us closer to reading the rest of the Herculaneum Papyri",
+   "claim": "its post of 12 October: another $40K in monthly prizes for virtual unwrapping and ink detection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "news after the record: letters in new scrolls, monthly awards",
+   "date": "2026-10-12 (post 'Oct 12')",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 7360056f6148f1af…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title and snippet (unl.edu unreachable: TLS certificate verification failed, twice)",
+   "quote": "Achievement: Luke Farritor, a University of Nebraska–Lincoln senior, co-won the $700,000 Grand Prize in February 2024 for the global Vesuvius Challenge by decod...",
+   "claim": "the University of Nebraska–Lincoln: Luke Farritor co-won the $700,000 Grand Prize in February 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "milestones: the first word and the 2023 Grand Prize",
+   "date": "undated on the card; the event 2024-02",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "NAPLES, Italy (June 25, 2026) — The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world.",
+   "claim": "the University of Kentucky's release: a historic breakthrough, new texts, titles and authors unknown to history",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "the breakthroughs listed",
+   "quote": "Full virtual unwrapping of the surviving portion of PHerc. 1667 — revealing nearly 1.5 meters of text across 20 columns … Recovery of more than 70 columns of text from PHerc. 172, housed at Oxford’s Bodleian Library … Identification of completely new books from the ancient world by Epicurean philosopher Philodemus, including On Vices, Book 1 and On Gods, Book 8",
+   "claim": "PHerc. 1667 fully unwrapped, nearly 1.5 m across 20 columns; more than 70 columns from PHerc. 172 (Bodleian); new books of Philodemus, On Vices 1 and On Gods 8",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "PHerc. 1667 ¶3",
+   "quote": "“This scroll was deemed completely unreadable when part of it was opened in the 1980s,” Federica Nicolardi, assistant professor in papyrology at the Università degli Studi di Napoli Federico II, said. “While a few isolated letters were visible, overlapping layers obscured the writing, and the scroll was assigned a readability score of zero. But now, with virtual unwrapping, we can follow sustained arguments across multiple columns.",
+   "claim": "Nicolardi: PHerc. 1667, partly opened in the 1980s, was assigned a readability score of zero; with virtual unwrapping its arguments can be followed across columns",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "PHerc. 1667 ¶4",
+   "quote": "Nicolardi leads a team of Vesuvius Challenge papyrologists whose contributions are essential to both the creation of machine learning models and to the interpretation of text from the scrolls.",
+   "claim": "its papyrologists are essential both to making the machine-learning models and to interpreting the text",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "after the machine: the papyrologists read",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "PHerc. 1667 ¶8–9",
+   "quote": "According to the papyrological team’s analysis, the text does appear to be a philosophical treatise concerned with ethics, arts and human behavior, likely reflecting Stoic thought. … “If this text had been found in Egypt or anywhere else, it would probably have been classified straight away as a Stoic text. The fact that it comes from a collection that is almost entirely Epicurean makes us more cautious in drawing conclusions,” Nicolardi added.",
+   "claim": "the papyrologists read a treatise on ethics, arts and human behavior, likely Stoic, and are cautious because the collection is almost entirely Epicurean",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "The Role of the Vesuvius Challenge ¶3",
+   "quote": "Through the competition, Seales’ team released open-source software and high-resolution 3D X-ray images from two intact scrolls and several fragments.",
+   "claim": "through the competition Seales' team released open-source software and 3D X-ray images of two intact scrolls and several fragments",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, code and licence",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "The Role of the Vesuvius Challenge ¶6–7",
+   "quote": "Today, the Vesuvius Challenge has a dedicated team of researchers and technical experts who support contestants with preconditioned data, new tools and improved access to the scroll scans. … At its core, the Vesuvius Challenge has become more than a competition. It’s a collaborative effort to recover a lost library — powered by shared data, open innovation and a global community united by a common goal: bringing ancient voices back to life.",
+   "claim": "it now has a dedicated team supporting contestants, and has become more than a competition: a collaborative effort to recover a lost library",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an open science research organization and open competition reading the Herculaneum scrolls without unrolling them",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "turning point ¶2–3",
+   "quote": "As new texts are emerging faster than ever from the carbonized papyri, the focus is shifting from the engineers and computer scientists designing high-tech tools to the experienced papyrologists, classicists and historians who can interpret, contextualize and ultimately bring these ancient works back into human knowledge. … “This is no longer just about imaging or machine learning,” Seales said. “Now we need experts who can read, edit and understand what they are saying.”",
+   "claim": "the focus shifts from the engineers to the papyrologists, classicists and historians; Seales: 'Now we need experts who can read, edit and understand what they are saying'",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "after the machine: the papyrologists read",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "turning point ¶4",
+   "quote": "More than 600 Herculaneum scrolls remain unopened.",
+   "claim": "more than 600 Herculaneum scrolls remain unopened",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the scrolls: the library of the Villa of the Papyri, carbonized in 79 AD",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶3 (Seales)",
+   "quote": "“For nearly two millennia, many of these texts have been physically preserved but intellectually inaccessible,” said Brent Seales, Vesuvius Challenge co-founder",
+   "claim": "Brent Seales, the challenge's co-founder: the texts were physically preserved but intellectually inaccessible",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and founders: launched in 2023",
+   "date": "2026-06-25 (the release, 'NAPLES, Italy (June 25, 2026)')",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 bf64af836f3b263b…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "video title (12:02; URL not found; no snippet)",
+   "quote": "AI Reveals Text In Ancient Greek Scroll Destroyed in Vesuvius Eruption",
+   "claim": "a video, The AI Daily Brief: AI reveals text in a Greek scroll destroyed in the eruption",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (video card: title only, no snippet)"
+  },
+  "F45": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "video title (12m; Smithsonian video page HTTP 403; no snippet)",
+   "quote": "How Artificial Intelligence Is Making 2000-Year-Old Scrolls Readable ...",
+   "claim": "a Smithsonian video: AI is making 2,000-year-old scrolls readable",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: CT scanning, virtual unwrapping, machine-learning ink detection",
+   "date": "'2 years ago' on the paste",
+   "quote_ok": true,
+   "checked_against": "card title (video card: title only, no snippet)"
+  },
+  "F46": {
+   "source": "B10",
+   "origin": "card",
+   "locus": "video title (1:02; URL not found; no snippet)",
+   "quote": "AI decodes ancient Vesuvius scroll using x-rays #VesuviusChallenge ...",
+   "claim": "a short video, AI Honeycove: AI decodes a Vesuvius scroll using x-rays",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: CT scanning, virtual unwrapping, machine-learning ink detection",
+   "date": "'3 months ago' on the paste",
+   "quote_ok": true,
+   "checked_against": "card title (video card: title only, no snippet)"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "card",
+   "locus": "video title (6m; URL not found; no snippet)",
+   "quote": "We Can Finally Read a 2000-Year-Old Book That Nobody Can Open",
+   "claim": "a video, MegalithHunter: a 2,000-year-old book that nobody can open can now be read",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "'3 months ago' on the paste",
+   "quote_ok": true,
+   "checked_against": "card title (video card: title only, no snippet)"
+  },
+  "F48": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Open Prizes",
+   "quote": "Open prize pool $2,140,000 Grand Prize deadline June 25th, 2027",
+   "claim": "the open prize pool is $2,140,000; the Grand Prize deadline 25 June 2027",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "prizes and their terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "2027 Grand Prize",
+   "quote": "$800,000 to the first team or individual to fully unroll and make readable a scroll from the set below. We also have prizes for second place ( $100,000 ) , third place ( $50,000 ) , and fourth place ( $50,000 ) — $1,000,000 in total.",
+   "claim": "the 2027 Grand Prize: $800,000 to the first to fully unroll and make readable an eligible scroll, with second to fourth places, $1,000,000 in total",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "prizes and their terms",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Compute and data conditions",
+   "quote": "The unrolling pipeline should be fully automated; up to 8 documented hours of human annotation / input are tolerated.",
+   "claim": "the Grand Prize pipeline should be fully automated, with up to 8 documented hours of human input tolerated",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method's stated limits: human help, transfer, human input",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "General conditions; Compute and data conditions",
+   "quote": "It does not have to be open source at the time of submission, but you have to make it open source under a permissive license, publicly on GitHub, to accept the prize. … Any dataset created or used to train ML models must be published publicly, under a CC-BY-NC 4.0 license.",
+   "claim": "winners must open-source their code under a permissive licence and publish their training data under CC-BY-NC 4.0",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "open data, code and licence",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Submitting your result: False-positive mitigation",
+   "quote": "The larger your model's window size, the easier it is for it to invent plausible letterforms instead of recovering real ink. Large windows are fine, but you must demonstrate that the text is not hallucinated",
+   "claim": "the larger an ink model's window, the easier it invents plausible letterforms; submissions must show the text is not hallucinated",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "review, verification and the bar against hallucinated text",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Review process",
+   "quote": "All submissions will be assessed by the Review Team, which consists of a Technical Team to review your methodology, and an independent Papyrology Team to review your results.",
+   "claim": "submissions are reviewed by a Technical Team (method) and an independent Papyrology Team (results)",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "review, verification and the bar against hallucinated text",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "First Letters Prizes",
+   "quote": "For these prizes, your mission is to prove that ink detection works on scrolls where nothing has been read yet. The review bar is deliberately high — we’d rather be slow than wrong. … First Letters prizes will be awarded for a maximum of 9 more scrolls — up to $450,000 in total.",
+   "claim": "First Letters prizes test ink detection where nothing has been read; 'we’d rather be slow than wrong'; up to $450,000 for at most 9 more scrolls",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "review, verification and the bar against hallucinated text",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "PHerc. Paris. 4’s Title Prize",
+   "quote": "We have already recovered the titles of PHerc. 172 and PHerc. 139 — but the title of Scroll 1, the scroll where the first passages were read, is still missing. … Scroll 1 is one of our most-read scrolls: substantial continuous Greek text of an Epicurean prose work has been recovered, yet its author and title remain unknown.",
+   "claim": "the titles of PHerc. 172 and PHerc. 139 are recovered; Scroll 1's Epicurean prose has author and title still unknown",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the 2026 reading: PHerc. 1667, PHerc. 172, PHerc. 139",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B12",
+   "origin": "own_page",
+   "locus": "Additional terms; Terms and Conditions",
+   "quote": "If no team meets the criteria by the deadline, we reserve the right to award the prizes to the teams that came closest. This is not a guarantee … Prizes are awarded at the sole discretion of Scroll Prize, Inc. and are subject to review by our Technical Team, Annotation Team, and Papyrological Team.",
+   "claim": "prizes are at the sole discretion of Scroll Prize, Inc.; if no team meets the criteria the closest may be awarded, without guarantee",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, team, partners and sponsors",
+   "date": "undated (the page as fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 d379746a054d3304…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Vesuvius Challenge — Vesuvius Challenge — Reading the Herculaneum Scrolls with AI",
+  "B2": "Smithsonian Magazine — Scientists Have Deciphered the Surviving Fragments of a 2,000 ...",
+  "B3": "University of Kentucky — Herculaneum | Pigman College of Engineering",
+  "B4": "Wikipedia — Herculaneum papyri",
+  "B5": "X — Vesuvius Challenge (@scrollprize) / X",
+  "B6": "University of Nebraska–Lincoln — Vesuvius Scrolls | University of Nebraska–Lincoln",
+  "B7": "UKNow — The day the Herculaneum scrolls began speaking again | UKNow",
+  "B8": "YouTube·The AI Daily Brief: Artificial Intelligence News — AI Reveals Text In Ancient Greek Scroll Destroyed in Vesuvius Eruption",
+  "B9": "Smithsonian Magazine·Smithsonian Magazine — How Artificial Intelligence Is Making 2000-Year-Old Scrolls Readable ...",
+  "B10": "YouTube·AI Honeycove — AI decodes ancient Vesuvius scroll using x-rays #VesuviusChallenge ...",
+  "B11": "YouTube·MegalithHunter — We Can Finally Read a 2000-Year-Old Book That Nobody Can Open",
+  "B12": "Vesuvius Challenge — Open Prizes | Vesuvius Challenge",
+  "B13": "Wikipedia — Vesuvius Challenge (redirect to Herculaneum papyri#Vesuvius Challenge)"
+ }
+}

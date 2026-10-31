@@ -1,0 +1,1048 @@
+{
+ "row": "early-christian-writings",
+ "address": "Early Christian Writings",
+ "addresses": [
+  "Early Christian Writings"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-10-31, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) and the Wikipedia summary with its verbatim lines; 41/41 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart (BRIEF-NEW-ROW-FIELD §5): T has no card rail, so no 'card' origin; 'own_page', the census's two saved pages (B1 the home page and dating table, B2 the Revelation page), not surfaced by T; 'wikipedia', no article (B3); 'inline link (homonym: the book)', T's three inline links resolved to the Penguin book's pages (B4 Amazon, B5 Penguin Random House, B6 Barnes & Noble), and 'source chip (homonym: the book)', 'Amazon.com +3' (B7), recorded with their sense and not ledgered. The census read no third-party source for the entity (both its sources carry basis 'operator'): no 'census_third_party' origin.",
+ "lineage_note": "Lineages: Revelation at 90-95: the estimated range and its rating; browsing by range of dating: the dating table; lifecycle, support and resources; reception: the encyclopedia; the Pauline letters at 50-60, first among the New Testament writings; the categories: Apocrypha, Gnostics, Church Fathers, Apostolic Fathers, hypothesized sources; the gospels and the later New Testament in the table; the operator and the terms of use; the quoted introduction: Kümmel's case for the Domitianic date; the quoted introduction: Perrin on the seer and the letter form; what it is: a collection of pre-Nicene Christian texts with translations and commentary. The census's operator, licence, findings, stated limit and evidence quotes restate B1 and B2 (one lineage each with the page; recorded in the archive ledger as 'restates').",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/ (Bn.html raw, Bn.txt text; B1 and B2 the census's saved copies, gunzipped; B3.txt a summary of Wikipedia codes and notices with verbatim lines, W1–W12 the raw responses; B4–B6 the homonym's pages with H1–H3 the redirect responses); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "own_page",
+   "role": "the census's own page early-christian-writings--home (not surfaced by T)",
+   "card": "Early Christian Writings — home page and chronological list (earlychristianwritings.com)",
+   "url": "https://www.earlychristianwritings.com/",
+   "kind": "own page (the home page: the dating table and the category menu), cited by the Revelation First census record; copied from the census's saved copy",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B1.html",
+     "sha256": "b386cdf3f2957036601cdfe55dae930c6363f32bb05bc905fee0fffdecfd5cbc"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B1.txt",
+     "sha256": "349c43b8790a39908204ef2372fd2105a6759c4fe38597528191f354ef32a7c2"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "early-christian-writings--home",
+    "read": "2026-10-31T02:52:04Z",
+    "http": "200",
+    "url": "https://www.earlychristianwritings.com/",
+    "final_url": "https://www.earlychristianwritings.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B1.html",
+    "raw_sha256": "b386cdf3f2957036601cdfe55dae930c6363f32bb05bc905fee0fffdecfd5cbc",
+    "census_sha256": "b386cdf3f2957036601cdfe55dae930c6363f32bb05bc905fee0fffdecfd5cbc",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--home.html.gz (gunzipped) and early-christian-writings--home.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B1.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('copyright © Peter Kirby'; 'Kirby, Peter. Early Christian Writings'; 'Peter Kirby's Blog')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "note": "Admitted beside the field by the operator's ruling ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (sha256 matches the manifest), so it was copied and not refetched. The text file is the census's extraction: the dating table's ranges stand on the line before each title."
+  },
+  {
+   "id": "B2",
+   "origin": "own_page",
+   "role": "the census's own page early-christian-writings--revelation (not surfaced by T)",
+   "card": "Early Christian Writings — The Book of Revelation (earlychristianwritings.com/revelation.html)",
+   "url": "https://www.earlychristianwritings.com/revelation.html",
+   "kind": "own page (the text page for Revelation: 'At a Glance', the quoted introductions of Kümmel and Perrin, resources and books), cited by the census; copied from the census's saved copy",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B2.html",
+     "sha256": "a5be64dbf07d9ae46a87f6ea35ef01c293bf41d843f405101ac79a6ae75c31da"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B2.txt",
+     "sha256": "6a9a058304341e108cca83a5a658e1094a359247eea9336eb097fc3003c928bb"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "early-christian-writings--revelation",
+    "read": "2026-10-31T02:52:04Z",
+    "http": "200",
+    "url": "https://www.earlychristianwritings.com/revelation.html",
+    "final_url": "https://www.earlychristianwritings.com/revelation.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B2.html",
+    "raw_sha256": "a5be64dbf07d9ae46a87f6ea35ef01c293bf41d843f405101ac79a6ae75c31da",
+    "census_sha256": "a5be64dbf07d9ae46a87f6ea35ef01c293bf41d843f405101ac79a6ae75c31da",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/early-christian-writings--revelation.html.gz (gunzipped) and early-christian-writings--revelation.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B2.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Early Christian Writings is copyright © Peter Kirby'; 'Kirby, Peter. \"The Book of Revelation.\"')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "note": "Admitted by the operator's ruling; not surfaced by T. In the 'At a Glance' box each value is floated beside its label in the HTML (line 222: '(4/5) ****' with 'Reliability of Dating'; line 223: '(3/5) ***' with 'Length of Text'); the census's text puts each value on the line before its label, and the HTML comments leak '-->' into it. Read from the HTML: reliability of dating 4/5."
+  },
+  {
+   "id": "B3",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none); the redirect of the lower-case name; the operator's name; the articles that link it",
+   "card": "Wikipedia — Early Christian Writings (no article; the lower-case name a redirect; linked from 223+ articles)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Early_Christian_Writings&action=raw&redirect=no",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B3.txt",
+     "sha256": "d92a284a71acac49732a9f61ff50665b859523733a0c598c3f06256b2146b04d"
+    },
+    "W1-Early_Christian_Writings.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W1-Early_Christian_Writings.wiki",
+     "sha256": "9faa3043119e75142c7a0732e8e6b0fe57b7e55a579923435c7eaaffc8bb447c"
+    },
+    "W10-rendered-Early_Christian_Writings.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W10-rendered-Early_Christian_Writings.html",
+     "sha256": "c401fd733f3a56cc3045a7a904254ed508483515cdaca07e4d2fc942279f8f16"
+    },
+    "W11-exturlusage.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W11-exturlusage.json",
+     "sha256": "60c78f7d319fbac377151d393e387aec8f38b1159224295da0c3fbba1a1f5800"
+    },
+    "W12-Book_of_Revelation.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W12-Book_of_Revelation.wiki",
+     "sha256": "3ee2a76d023404bd73a0ae9847c91a4a7492df4bb262f7de38e63cee7fa8d006"
+    },
+    "W2-Early_Christian_writings.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W2-Early_Christian_writings.wiki",
+     "sha256": "f2be230434a8308b425dafb1e674c74d4388c3c0b2e743ccc8cdd9570c89c1da"
+    },
+    "W3-Earlychristianwritings.com.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W3-Earlychristianwritings.com.wiki",
+     "sha256": "70eb160a49af60e220eef1c9de8ade9847cecb31166c5b3ec488e2245797de59"
+    },
+    "W4-EarlyChristianWritings.com.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W4-EarlyChristianWritings.com.wiki",
+     "sha256": "47dba20128082605c88ab16a2dd35b1691f2d7243903f27c32e82f0767d1fb55"
+    },
+    "W5-Early_Christian_Writings_website.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W5-Early_Christian_Writings_website.wiki",
+     "sha256": "542ff60f24ae960c4d5e5fcbc9f3292232068ca0cc5928b09ea0f39f6904f8f4"
+    },
+    "W6-Peter_Kirby.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W6-Peter_Kirby.wiki",
+     "sha256": "4adad1832ff3d3477a4480d3622033bec43a5f4359aa7b9a54956a8cb136aa7f"
+    },
+    "W7-Early_Christian_Writings_The_Apostolic_Fathers.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W7-Early_Christian_Writings_The_Apostolic_Fathers.wiki",
+     "sha256": "16272fcc2f04c212b322ed7561e76556882c6f522fb20406644f9ed58483e560"
+    },
+    "W8-List_of_early_Christian_writers.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W8-List_of_early_Christian_writers.wiki",
+     "sha256": "978b8cba7bb6dba775a6a7708a824b5829ba0379e04620e416c3cd8430ca0515"
+    },
+    "W9-try1-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W9-try1-429.html",
+     "sha256": "3c57ef7a310877a5b88461fd7df1228d250d76c64e37ee17fa01fa23095f4308"
+    },
+    "W9-try2-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/W9-try2-429.html",
+     "sha256": "1b32270e1ff9368d944052f506353f364bcd82558620f2998de911d63ad60dfc"
+    }
+   },
+   "fetched": {
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "tries": [
+     {
+      "at": "2026-10-31T04:38:57Z",
+      "url": "…title=Early_Christian_Writings&action=raw&redirect=no",
+      "http": 404,
+      "file": "W1-Early_Christian_Writings.wiki"
+     },
+     {
+      "at": "2026-10-31T04:38:59Z",
+      "url": "…title=Early_Christian_writings&action=raw&redirect=no",
+      "http": 200,
+      "file": "W2-Early_Christian_writings.wiki",
+      "result": "#REDIRECT [[List of early Christian writers]]"
+     },
+     {
+      "at": "2026-10-31T04:39:02Z",
+      "url": "…title=Earlychristianwritings.com&action=raw&redirect=no",
+      "http": 404,
+      "file": "W3-Earlychristianwritings.com.wiki"
+     },
+     {
+      "at": "2026-10-31T04:39:04Z",
+      "url": "…title=EarlyChristianWritings.com&action=raw&redirect=no",
+      "http": 404,
+      "file": "W4-EarlyChristianWritings.com.wiki"
+     },
+     {
+      "at": "2026-10-31T04:39:07Z",
+      "url": "…title=Early_Christian_Writings_(website)&action=raw&redirect=no",
+      "http": 404,
+      "file": "W5-Early_Christian_Writings_website.wiki"
+     },
+     {
+      "at": "2026-10-31T04:39:09Z",
+      "url": "…title=Peter_Kirby&action=raw&redirect=no",
+      "http": 200,
+      "file": "W6-Peter_Kirby.wiki",
+      "result": "disambiguation: three Peter Kirbys, none the site's operator"
+     },
+     {
+      "at": "2026-10-31T04:39:11Z",
+      "url": "…title=Early_Christian_Writings:_The_Apostolic_Fathers&action=raw&redirect=no",
+      "http": 404,
+      "file": "W7-Early_Christian_Writings_The_Apostolic_Fathers.wiki"
+     },
+     {
+      "at": "2026-10-31T04:39:23Z",
+      "url": "…title=List_of_early_Christian_writers&action=raw",
+      "http": 200,
+      "file": "W8-List_of_early_Christian_writers.wiki"
+     },
+     {
+      "at": "2026-10-31T04:39:25Z",
+      "url": "api.php?action=query&list=exturlusage&euquery=www.earlychristianwritings.com&eunamespace=0&eulimit=500",
+      "http": 429,
+      "file": "W9-try1-429.html"
+     },
+     {
+      "at": "2026-10-31T04:39:58Z",
+      "url": "(the same)",
+      "http": 429,
+      "file": "W9-try2-429.html"
+     },
+     {
+      "at": "2026-10-31T04:40:38Z",
+      "url": "https://en.wikipedia.org/wiki/Early_Christian_Writings (rendered)",
+      "http": 404,
+      "file": "W10-rendered-Early_Christian_Writings.html",
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T04:41:23Z",
+      "url": "(the exturlusage query, third try, same agent)",
+      "http": 200,
+      "file": "W11-exturlusage.json",
+      "result": "294 links in 223 articles in the first batch, continuation present"
+     },
+     {
+      "at": "2026-10-31T04:41:42Z",
+      "url": "…title=Book_of_Revelation&action=raw",
+      "http": 200,
+      "file": "W12-Book_of_Revelation.wiki",
+      "result": "External links: the site's Revelation page"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B3.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no (the 'Peter Kirby' disambiguation lists three others)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "note": "No article on the site. B3.txt is a summary of codes and notices with the verbatim lines quoted from the saved responses. The rate limit (HTTP 429) on the API was waited out with the same agent string; nothing was routed around."
+  },
+  {
+   "id": "B4",
+   "origin": "inline link (homonym: the book)",
+   "role": "T's inline link 1 ('Early Christian Writings: The Apostolic Fathers'), resolved from its Google redirect URL (HTTP 302, H1-goto-headers.txt) and fetched once",
+   "card": "Amazon.com — Early Christian Writings: The Apostolic Fathers: Andrew Louth, Maxwell Staniforth: 9780140444759",
+   "url": "https://www.amazon.com/Early-Christian-Writings-Apostolic-Fathers/dp/0140444750",
+   "kind": "the homonym's page, the Penguin Classics book Early Christian Writings: The Apostolic Fathers",
+   "sense": "the book's retail page: print length 208 pages, publisher Penguin Classics, publication date September 1, 1987, Kindle $10.99, list price $17.00",
+   "files": {
+    "B4-raw.gz": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B4-raw.gz",
+     "sha256": "e83d0d6afb8f3ca13dfd96b345de1df49bc40d6633c688be295eff1d05718217"
+    },
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B4.html",
+     "sha256": "f85e8998fb1540c8d6efca038a18e1b2669734813deb27759341fef840aaf171"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B4.txt",
+     "sha256": "b407259ce5966f31810042435ad121bc128624f097eda275172d13a6910d0685"
+    },
+    "H1-goto.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H1-goto.html",
+     "sha256": "45c6ffbfe2d7023b33c5626a1bbee7d88ce170bdd0785f2e2b8c2e0e92047cc9"
+    },
+    "H1-goto-headers.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H1-goto-headers.txt",
+     "sha256": "d47a2df69ab18dc7df17068eed50555c20db7643ccfcd0be77842efc89927f03"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:42:24Z",
+    "http": 200,
+    "url": "https://www.amazon.com/Early-Christian-Writings-Apostolic-Fathers/dp/0140444750",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "redirect_from": "https://www.google.com/goto?url=… (as pasted in T)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B4.html",
+    "raw_sha256": "f85e8998fb1540c8d6efca038a18e1b2669734813deb27759341fef840aaf171",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B4.txt"
+    ],
+    "note": "the response was gzip-encoded (saved as B4-raw.gz) and decompressed to B4.html"
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "surfaced_by_T": [
+    {
+     "slug": "early-christian-writings-aio-20261031",
+     "inline_link": 1
+    }
+   ],
+   "ledgered": "no: the homonym's page, recorded with its sense (BRIEF-NEW-ROW-FIELD §5); its spans that T composes are in delta.homonym_alignment"
+  },
+  {
+   "id": "B5",
+   "origin": "inline link (homonym: the book)",
+   "role": "T's inline link 2 ('Andrew Louth'), resolved from its Google redirect URL (HTTP 302, H2-goto-headers.txt) and fetched once",
+   "card": "PenguinRandomHouse.com — Early Christian Writings by Various: 9780140444759",
+   "url": "https://www.penguinrandomhouse.com/books/283901/early-christian-writings-by-various/",
+   "kind": "the homonym's page, the Penguin Classics book Early Christian Writings: The Apostolic Fathers",
+   "sense": "the publisher's page: 'Translated by Maxwell Staniforth', 'Revised by Andrew Louth', '$17.00', 'Published on Sep 01, 1987 | 208 Pages', and the book description the composition's contents and theme follow",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B5.html",
+     "sha256": "50471ab6c367294082662a840e33f02ba568dd73bfaeaf3261a8415560698826"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B5.txt",
+     "sha256": "e1e7e3aaa44c7c68d76a48de1edf6a879a358b7699018b78c2a9a9d1621b0176"
+    },
+    "H2-goto.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H2-goto.html",
+     "sha256": "e23ec11eaccbb13f26854c3b34a5f724530b844b2ae3e095109c96e5d182a5cb"
+    },
+    "H2-goto-headers.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H2-goto-headers.txt",
+     "sha256": "563dd9a50dc406891d46d213d8343a27e83f51ec7f6460ce5850bb2112589d81"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:42:28Z",
+    "http": 200,
+    "url": "https://www.penguinrandomhouse.com/books/283901/early-christian-writings-by-various/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "redirect_from": "https://www.google.com/goto?url=… (as pasted in T)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B5.html",
+    "raw_sha256": "50471ab6c367294082662a840e33f02ba568dd73bfaeaf3261a8415560698826",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B5.txt"
+    ],
+    "note": null
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "surfaced_by_T": [
+    {
+     "slug": "early-christian-writings-aio-20261031",
+     "inline_link": 2
+    }
+   ],
+   "ledgered": "no: the homonym's page, recorded with its sense (BRIEF-NEW-ROW-FIELD §5); its spans that T composes are in delta.homonym_alignment"
+  },
+  {
+   "id": "B6",
+   "origin": "inline link (homonym: the book)",
+   "role": "T's inline link 3 ('Penguin Classics'), resolved from its Google redirect URL (HTTP 302, H3-goto-headers.txt) and fetched once",
+   "card": "Barnes & Noble — Early Christian Writings: The Apostolic Fathers",
+   "url": "https://www.barnesandnoble.com/w/early-christian-writings-various/1111733617",
+   "kind": "the homonym's page, the Penguin Classics book Early Christian Writings: The Apostolic Fathers",
+   "sense": "a retailer's page: Staniforth (translator), Louth (revised by), $17.00",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B6.html",
+     "sha256": "e62be951ecfd6e2ce8ee9758afe1ed4426f7bb445a2469d6480cf6038a9a1ebe"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B6.txt",
+     "sha256": "103924af88e300fcbfaa1744a306b232061b5ff98186ed672e0186e170e406a7"
+    },
+    "H3-goto.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H3-goto.html",
+     "sha256": "feca85def575e7bcc5aab9a6155978e5054256021703e2dc2eb06839c0660ee8"
+    },
+    "H3-goto-headers.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/H3-goto-headers.txt",
+     "sha256": "c9e5996455cb3837bac81fa88e9d7c4d5a6b1a28d73463c0d6e722de95b840bc"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:42:32Z",
+    "http": 200,
+    "url": "https://www.barnesandnoble.com/w/early-christian-writings-various/1111733617",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "redirect_from": "https://www.google.com/goto?url=… (as pasted in T)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B6.html",
+    "raw_sha256": "e62be951ecfd6e2ce8ee9758afe1ed4426f7bb445a2469d6480cf6038a9a1ebe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/early-christian-writings-20261031/B6.txt"
+    ],
+    "note": null
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+   "surfaced_by_T": [
+    {
+     "slug": "early-christian-writings-aio-20261031",
+     "inline_link": 3
+    }
+   ],
+   "ledgered": "no: the homonym's page, recorded with its sense (BRIEF-NEW-ROW-FIELD §5); its spans that T composes are in delta.homonym_alignment"
+  },
+  {
+   "id": "B7",
+   "origin": "source chip (homonym: the book)",
+   "role": "T's source chip 'Amazon.com +3' after the price",
+   "card": "Amazon.com +3",
+   "url": null,
+   "kind": "a source chip with no titles: Amazon.com and three further sources the paste does not name",
+   "sense": "the book's price",
+   "files": {},
+   "fetched": {
+    "tries": [],
+    "note": "unreachable as a chip: its URL cannot be determined from the paste; Amazon.com is most likely the page of inline link 1 (B4), and the '+3' cannot be resolved. The chip's site is its only text."
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "surfaced_by_T": [
+    {
+     "slug": "early-christian-writings-aio-20261031",
+     "chip": 1
+    }
+   ],
+   "ledgered": "no: the homonym's chip"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "page title",
+   "quote": "Early Christian Writings: New Testament, Apocrypha, Gnostics, Church Fathers",
+   "claim": "the site's full name: Early Christian Writings, with its four divisions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "what it is: a collection of pre-Nicene Christian texts with translations and commentary",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "footer ¶1, s1",
+   "quote": "Early Christian Writings is the most complete collection of Christian texts before the Council of Nicaea in 325 AD.",
+   "claim": "the site's own account of itself: the most complete collection of Christian texts before Nicaea (325 AD)",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a collection of pre-Nicene Christian texts with translations and commentary",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "footer ¶1, s2",
+   "quote": "The site provides translations and commentary for these sources, including the New Testament, Apocrypha, Gnostics, Church Fathers, and some non-Christian references.",
+   "claim": "what it provides: translations and commentary for the New Testament, Apocrypha, Gnostics, Church Fathers and some non-Christian references",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a collection of pre-Nicene Christian texts with translations and commentary",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "header",
+   "quote": "Browse by range of dating or by category, New Testament — Apocrypha — Gnostics — Church Fathers — Other , or use the search box.",
+   "claim": "its two orders: by range of dating or by category",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "browsing by range of dating: the dating table",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table, first rows",
+   "quote": "30-60 Passion Narrative 40-80 Lost Sayings Gospel Q 50-60 1 Thessalonians",
+   "claim": "the table opens with hypothesized sources (the Passion Narrative at 30-60, Q at 40-80), then 1 Thessalonians at 50-60",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "browsing by range of dating: the dating table",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table, rows 3-9",
+   "quote": "50-60 1 Thessalonians 50-60 Philippians 50-60 Galatians 50-60 1 Corinthians 50-60 2 Corinthians 50-60 Romans 50-60 Philemon",
+   "claim": "seven Pauline letters at 50-60, before every other New Testament writing in the table",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Pauline letters at 50-60, first among the New Testament writings",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table",
+   "quote": "65-80 Gospel of Mark … 80-100 Gospel of Matthew … 80-130 Gospel of Luke … 80-130 Acts of the Apostles … 90-120 Gospel of John",
+   "claim": "the gospels and Acts: Mark 65-80, Matthew 80-100, Luke and Acts 80-130, John 90-120",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the gospels and the later New Testament in the table",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table",
+   "quote": "90-95 Revelation",
+   "claim": "Revelation at 90-95 in the table",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Revelation at 90-95: the estimated range and its rating",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table",
+   "quote": "100-150 1 Timothy … 100-150 2 Timothy … 100-150 Titus … 100-160 2 Peter",
+   "claim": "New Testament writings after Revelation in the table: the Pastorals at 100-150, 2 Peter at 100-160",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the gospels and the later New Testament in the table",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table",
+   "quote": "50-120 Didache … 80-120 Epistle of Barnabas … 80-140 1 Clement … 105-115 Ignatius of Antioch … 110-140 Polycarp to the Philippians",
+   "claim": "the Apostolic Fathers' writings dated in the same table: Didache 50-120, Barnabas 80-120, 1 Clement 80-140, Ignatius 105-115, Polycarp 110-140",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the categories: Apocrypha, Gnostics, Church Fathers, Apostolic Fathers, hypothesized sources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "the dating table",
+   "quote": "93 Flavius Josephus … 111-112 Pliny the Younger … 115 Suetonius … 115 Tacitus",
+   "claim": "non-Christian references dated among the texts: Josephus 93, Pliny 111-112, Suetonius and Tacitus 115",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the categories: Apocrypha, Gnostics, Church Fathers, Apostolic Fathers, hypothesized sources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "category menu, 'Apostolic Fathers' (lines 1177-1193)",
+   "quote": "Apostolic Fathers Didache Epistle of Barnabas First Clement Shepherd of Hermas Ignatius of Antioch Polycarp to the Philippians Second Clement Epistle of Mathetes to Diognetus Martyrdom of Polycarp",
+   "claim": "the site's 'Apostolic Fathers' category: Didache, Barnabas, 1 and 2 Clement, Hermas, Ignatius, Polycarp, Diognetus, the Martyrdom of Polycarp",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the categories: Apocrypha, Gnostics, Church Fathers, Apostolic Fathers, hypothesized sources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "category menu, 'Hypothesized Sources'",
+   "quote": "Hypothesized Sources Passion Narrative Sayings Gospel Q Signs Gospel",
+   "claim": "the site marks the Passion Narrative, Q and the Signs Gospel as hypothesized sources",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the categories: Apocrypha, Gnostics, Church Fathers, Apostolic Fathers, hypothesized sources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "footer ¶1, s3-s4",
+   "quote": "The \"Early Christian Writings: New Testament, Apocrypha, Gnostics, Church Fathers\" site is copyright © Peter Kirby < E-Mail > . Permission is given to link to any HTML file on the Early Christian Writings site.",
+   "claim": "the operator as the site names him, Peter Kirby (copyright holder), and its terms: permission to link to any HTML file",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator and the terms of use",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "citation block",
+   "quote": "Kirby, Peter. Early Christian Writings . <http://www.earlychristianwritings.com/>.",
+   "claim": "the site's own citation form: Kirby, Peter. Early Christian Writings",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the terms of use",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "header; special features",
+   "quote": "Intro - Jesus - Christian Origins - Online Books - My Blog - The Forum … Peter Kirby's Blog Biblical Criticism & History Forum",
+   "claim": "the site's menu with its operator's blog and the Biblical Criticism & History Forum",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle, support and resources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "own_page",
+   "locus": "footer ¶2-3",
+   "quote": "Visit the sister site, Early Jewish Writings , for Jewish texts from antiquity. Please buy the CD to support the site, view it without ads, and get bonus stuff!",
+   "claim": "a sister site, Early Jewish Writings; the site supported by sales of a CD",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle, support and resources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 349c43b8790a3990…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'At a Glance'",
+   "quote": "Estimated Range of Dating: 90-95 A.D.",
+   "claim": "the Revelation page's estimated range of dating: 90-95 A.D.",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Revelation at 90-95: the estimated range and its rating",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'At a Glance' (each value floated beside its label in the HTML)",
+   "quote": "(4/5) **** Reliability of Dating",
+   "claim": "the site rates the reliability of Revelation's dating 4 of 5",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Revelation at 90-95: the estimated range and its rating",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'At a Glance'",
+   "quote": "Apocalypse Genre",
+   "claim": "genre: Apocalypse",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Revelation at 90-95: the estimated range and its rating",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'Information on the Book of Revelation' ¶1",
+   "quote": "Kummel provides the following information on dating the Apocalypse of John ( Introduction to the New Testament , pp. 466-8):",
+   "claim": "the page's dating information is quoted from Kümmel's Introduction to the New Testament, pp. 466-8",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶1, s1",
+   "quote": "According to the oldest tradition [in Iren., Adv. Haer. 5.30.3] Rev was written toward the end of the reign of Domitian (81-96).",
+   "claim": "the oldest tradition (Irenaeus, Adv. Haer. 5.30.3) places Revelation toward the end of Domitian's reign (81-96)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶1, s2",
+   "quote": "The book's own testimony indicates that it originated in the province of Asia in a time of severe oppression of Christians, which is most readily conceivable under Domitian.",
+   "claim": "the internal testimony: Asia, severe oppression, most readily conceivable under Domitian",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶1",
+   "quote": "Christianity has collided with the state and with the state religion, the Christ cult with the imperial cult.",
+   "claim": "the collision with the imperial cult",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶2, s1-s2",
+   "quote": "Prior to Domitian, the state religion did not direct itself against the Christians. Nero's mad acts in Rome against the Christians had nothing to do with the imperial cult.",
+   "claim": "before Domitian the state religion did not act against Christians; Nero's acts had nothing to do with the imperial cult",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶2",
+   "quote": "the Antichrist, the \"beast\" (13:1 ff, etc.), does not bear the features of any specific ruler but rather those of the demonic form of Nero redivivus , which was still a popular expectation in that time.",
+   "claim": "the beast bears the features of Nero redivivus, not of a specific ruler",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation ¶3",
+   "quote": "Also favoring the end of the first century as the time of origin of Rev is the fact that according to 2:8-11, the church of Smyrna has been persevering for a long time, while according to Polycarp (Phil 11:3), at the time of Paul it did not even exist; and 3:17 describes the community of Laodicea as rich, while this city had been almost completely destroyed by an earthquake in A.D. 60/61.",
+   "claim": "further grounds for the end of the first century: Smyrna's long perseverance (Polycarp, Phil 11:3) and Laodicea's wealth after the earthquake of 60/61",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Kümmel quotation, conclusion",
+   "quote": "In all likelihood, therefore, Rev was in fact written toward the end of the reign of Domitian, i.e., ca. 90-95, in Asia Minor, in order to encourage Christian communities threatened by a destructive persecution to endure and to make them confident of the imminent victory of Christ over the powers of the Antichrist.",
+   "claim": "Kümmel's conclusion: in all likelihood written toward the end of Domitian's reign, ca. 90-95, in Asia Minor, to encourage persecuted communities",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the quoted introduction: Kümmel's case for the Domitianic date",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Perrin quotation ¶1",
+   "quote": "Traditionally it has been claimed that he is the John, son of Zebedee, known to us from the gospel stories, but this is most unlikely. It has also been claimed that he is the \"John\" of the fourth gospel, but the difference in language and style alone makes this identification quite impossible.",
+   "claim": "Perrin (The New Testament: An Introduction, pp. 81-2): the seer is most unlikely the son of Zebedee and cannot be the 'John' of the fourth gospel",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Perrin on the seer and the letter form",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Perrin quotation ¶2",
+   "quote": "This is unparalleled in apocalyptic writing and has to be due ultimately to the impact that Paul's letter writing made on the New Testament church. Paul's letters had become so important that the literary form was imitated even by an apocalyptic writer.",
+   "claim": "Perrin: the letters to seven churches are due to the impact of Paul's letter writing; the form was imitated by an apocalyptic writer",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Perrin on the seer and the letter form",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "Perrin quotation ¶3, last sentence",
+   "quote": "It is a reminder that for all its surface strangeness, the book of Revelation is not to be separated from the rest of the New Testament.",
+   "claim": "Perrin: Revelation is not to be separated from the rest of the New Testament",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the quoted introduction: Perrin on the seer and the letter form",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'Some Contemporary Texts'",
+   "quote": "1 Clement (80-140 A.D.) Gospel of the Egyptians (80-150 A.D.) Gospel of the Hebrews (80-150 A.D.) Christian Sibyllines (80-250 A.D.) Revelation (90-95 A.D.) Gospel of John (90-120 A.D.)",
+   "claim": "the page sets Revelation among contemporary texts by range: 1 Clement, the Gospels of the Egyptians and Hebrews, the Sibyllines, John",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "browsing by range of dating: the dating table",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'Text'; 'Resources'",
+   "quote": "Text American Standard Version King James Version World English Bible Resources e-Catena: References to the New Testament in the Church Fathers",
+   "claim": "the text given in three English versions, with patristic references (e-Catena)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle, support and resources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "'Books'",
+   "quote": "Raymond Edward Brown, An Introduction to the New Testament (New York: Doubleday, 1997), pp. 773-813.",
+   "claim": "its bibliography includes Brown's Introduction to the New Testament",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lifecycle, support and resources",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B2",
+   "origin": "own_page",
+   "locus": "citation block",
+   "quote": "Kirby, Peter. \"The Book of Revelation.\" Early Christian Writings .",
+   "claim": "the page's citation form, under Peter Kirby",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator and the terms of use",
+   "date": "2026-10-31 (undated page; read by the census 2026-10-31T02:52:04Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 6a9a058304341e10…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: titles 'Early Christian Writings', 'Earlychristianwritings.com', 'EarlyChristianWritings.com', 'Early Christian Writings (website)', 'Early Christian Writings: The Apostolic Fathers'; the rendered page",
+   "quote": "'Early Christian Writings' HTTP 404; 'Earlychristianwritings.com' HTTP 404; 'EarlyChristianWritings.com' HTTP 404; 'Early Christian Writings (website)' HTTP 404; 'Early Christian Writings: The Apostolic Fathers' HTTP 404. … \"Wikipedia does not have an article with this exact name.\"",
+   "claim": "Wikipedia has no article on the site, under its name or its host, nor on the Penguin book",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: 'Early Christian writings' (lower-case w)",
+   "quote": "#REDIRECT [[List of early Christian writers]]",
+   "claim": "the name in lower case redirects to 'List of early Christian writers': the class of authors, not the site",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: 'List of early Christian writers', lead and first entry",
+   "quote": "Dates given, if not otherwise specified, are of their writings or [[Episcopal see|bishopric]], not of their lives. *[[Paul of Tarsus]], \"Apostle to the Gentiles\", earliest New Testament author 45~65",
+   "claim": "the redirect's target lists writers with dates of their writings, opening with Paul as 'earliest New Testament author' (45~65)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: 'Peter Kirby' (disambiguation)",
+   "quote": "'''Peter Kirby''' may refer to: * [[Peter Kirby (bobsleigh)]] (born 1931), Canadian bobsledder * [[Peter Kirby (athlete)]] (born 1964/1965), Australian Paralympic athlete * [[Peter Kirby (pewtersmith)]], American pewtersmith",
+   "claim": "the operator's name disambiguates to three others; none is the site's operator",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: 'Book of Revelation', External links",
+   "quote": "* [http://www.earlychristianwritings.com/revelation.html Early Christian Writings:] Apocalypse of John: text, introduction, context",
+   "claim": "the encyclopedia's article on Revelation links the site's Revelation page as 'text, introduction, context'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B3",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: external-link usage (API exturlusage)",
+   "quote": "first batch 294 links in 223 articles, with a continuation (more follow; not paged further)",
+   "claim": "the encyclopedia links the site at least 294 times from at least 223 articles",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d92a284a71acac49…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Early Christian Writings — home page and chronological list (earlychristianwritings.com)",
+  "B2": "Early Christian Writings — The Book of Revelation (earlychristianwritings.com/revelation.html)",
+  "B3": "Wikipedia — Early Christian Writings (no article; the lower-case name a redirect; linked from 223+ articles)"
+ }
+}

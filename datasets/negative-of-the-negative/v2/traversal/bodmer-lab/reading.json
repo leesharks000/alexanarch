@@ -1,0 +1,485 @@
+{
+ "row": "bodmer-lab",
+ "pass": "first reading, 2026-10-31; string pass widened once before reading (config notes); third pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Bodmer Lab with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (the Bodmer papyri: B4, B10, B13, census kind and text_object; early New Testament papyri: B4 ¶2, B12, B13, census intersection 'papyrology-discovery' and question 'papyri-revelation-date'; digitized manuscript images and online catalogues: B1, B4, B7, B10, census evidence_kind and question 'seen-or-edited'). A bare mention, a table entry, a source credit or a keyword is not a claim. The string pass returned no D or R candidate and no class (1) candidate: no archive text names the Bodmer Lab, the Bodmer papyri, P66, P72 or P75 (a check grep of data/texts for 'Bodmer' returns nothing).",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 636,
+   "strata": [
+    "O"
+   ],
+   "reason": "Space Ark (2026-04-08), the evidence list: 'Papyrological record.' applies the archive's reading of the material record to the class of early New Testament papyri: Revelation 'among the earliest NT texts preserved in manuscript fragments (P18, P47, P98), contemporaneous with or preceding fragments of John and Paul'; 'The textual record does not contradict first-composition' (O-class). The archive's earliest instance of the lineage; the same paragraph in #639 (same date), #1101, #56, #969, #970, #971 grouped as instances (S4).",
+   "claims": [
+    "O636-01"
+   ],
+   "cands": [
+    "O0006"
+   ],
+   "instances": [
+    639,
+    1101,
+    56,
+    969,
+    970,
+    971
+   ]
+  },
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First ≠ Revelation Early (2026-06-14), the thesis's defining paper: the candidate (¶28) names the papyrological inversion; read at its passage, Claim 3 applies it to the class ('The earliest physical NT witness is Johannine ... not Pauline'; 'Papyrological dates are ranges, not certainties'), and the Falsification section states condition (a) on NT dating (O-class: a claim and its falsifier).",
+   "claims": [
+    "O202-01",
+    "O202-02"
+   ],
+   "cands": [
+    "O0003"
+   ]
+  },
+  {
+   "dep": 1217,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First work plan v7.3 (active), §9 'The Papyrological Inversion': the papyrological receipts in order of earliest physical copy and the epistemic inversion (O-class), with the section's stated limit 'The section does not argue that papyrological dating of copies establishes composition dates'. Instances with the same section: #832 (v7.1, 2026-06-14, earliest), #1211, #1400 (2026-06-14), #1216 (2026-06-17), grouped (S4); the lineage keeps #832's date.",
+   "claims": [
+    "O1217-01",
+    "O1217-02"
+   ],
+   "cands": [
+    "O0036",
+    "O0037",
+    "O0038",
+    "O0039",
+    "O0040"
+   ],
+   "instances": [
+    832,
+    1211,
+    1216,
+    1400
+   ]
+  },
+  {
+   "dep": 1680,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Living Academy v0.5 (active), the fair-comparison table: 'Digital libraries | collections, discovery, preservation and services evaluated as connected functions' states the archive's frame for the class of digital libraries, to which the field and the census assign the entity (B10 'Une bibliothèque numérique'; census evidence kinds) (O-class). #1678 (v0.4) the same row, grouped (S4).",
+   "claims": [
+    "O1680-01"
+   ],
+   "cands": [
+    "O0055",
+    "O0056",
+    "O0057",
+    "O0058",
+    "O0059"
+   ],
+   "instances": [
+    1678
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/bodmer-lab-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note, PER note and PER-dim reading notes and scores for the entity's capture (OBS-5c35e10b4e39, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15",
+    "CAP-1-16",
+    "CAP-1-17"
+   ]
+  },
+  {
+   "dep": "RF",
+   "url": "https://www.revelationfirst.com/aggregators/bodmer-lab/ (source: /home/claude/fleet/revelationfirst-com/data/rf-census/census.json rows[slug == 'bodmer-lab'], organizing_question, correction, intersections; questions.json; rendered aggregators/bodmer-lab/index.html)",
+   "reason": "the Revelation First census record of the entity (editor Lee Sharks, compiled 2026-10-30, licence field repaired 2026-10-31), the archive's record of the entity; its rf_intersection and correction are the archive's reading",
+   "claims": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-04",
+    "RF-05",
+    "RF-06",
+    "RF-07",
+    "RF-08",
+    "RF-09",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-14",
+    "RF-15",
+    "RF-16",
+    "RF-17",
+    "RF-18",
+    "RF-19",
+    "RF-20",
+    "RF-21",
+    "RF-22",
+    "RF-23",
+    "RF-24",
+    "RF-25",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-29",
+    "RF-30",
+    "RF-31",
+    "RF-32"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    203
+   ],
+   "reason": "Josephus thesis: 'papyrological evidence' an entry in a table of evidence types; a bare mention, no claim on the class",
+   "cands": [
+    "O0004"
+   ]
+  },
+  {
+   "dep": [
+    204
+   ],
+   "reason": "SPXI Self-Audit Protocol: the formalization line ('building on ... the papyrological inversion (P52/P98/P46)') restates #202's attribution; no claim of its own on the class (S4: adds nothing to #202's lineage)",
+   "cands": [
+    "O0005"
+   ]
+  },
+  {
+   "dep": [
+    828
+   ],
+   "reason": "The Inscription That Survives: 'the PGM papyri were recovered from the same Egyptian sites (Oxyrhynchus, Fayum, Thebes) that yielded Sappho's fragments and the earliest NT papyri (𝔓52, c. 125 CE)': the sentence's subject is the PGM papyri; the NT papyri enter as the reference point for the find sites, by 𝔓52 alone; read as making no claim on the class of its own",
+   "cands": [
+    "O0008"
+   ]
+  },
+  {
+   "dep": [
+    847
+   ],
+   "reason": "Revelation First staging document: the workstream list 'The Papyrological Inversion — earliest physical NT witnesses are Johannine, not Pauline' restates #1217 §9; S4 (adds nothing)",
+   "cands": [
+    "O0013"
+   ]
+  },
+  {
+   "dep": [
+    1025
+   ],
+   "reason": "keyword surface and baseline: the formalization line restating #202; S4",
+   "cands": [
+    "O0020"
+   ]
+  },
+  {
+   "dep": [
+    1044
+   ],
+   "reason": "EA-DATAHUB-01: 'a contribution to digital library science', the venue of a planned preprint; no claim on the class",
+   "cands": [
+    "O0021"
+   ]
+  },
+  {
+   "dep": [
+    1052
+   ],
+   "reason": "erratum front matter: a bare match",
+   "cands": [
+    "O0022"
+   ]
+  },
+  {
+   "dep": [
+    1213
+   ],
+   "reason": "Josephus thesis (superseded version): the same table entry; a bare mention",
+   "cands": [
+    "O0030"
+   ]
+  },
+  {
+   "dep": [
+    1226
+   ],
+   "reason": "Josephus thesis: the same table entry; a bare mention",
+   "cands": [
+    "O0041"
+   ]
+  },
+  {
+   "dep": [
+    1522
+   ],
+   "reason": "originals-library gathering: a licence table naming the GNT edition; a bare mention",
+   "cands": [
+    "O0046"
+   ]
+  },
+  {
+   "dep": [
+    1572
+   ],
+   "reason": "'On the papyrological record' for the Plato–Aristotle corpus (Corpus dei Papiri Filosofici): philosophical papyri, not the class",
+   "cands": [
+    "O0047"
+   ]
+  },
+  {
+   "dep": [
+    1575
+   ],
+   "reason": "the same, Many and One reading copy: philosophical papyri, not the class",
+   "cands": [
+    "O0048"
+   ]
+  },
+  {
+   "dep": [
+    1576
+   ],
+   "reason": "the same, Many and One: the papyrological record of the Plato–Aristotle corpus, not the class",
+   "cands": [
+    "O0049"
+   ]
+  },
+  {
+   "dep": [
+    1678
+   ],
+   "reason": "grouped under #1680 (S4)",
+   "cands": [
+    "O0050",
+    "O0051",
+    "O0052",
+    "O0053",
+    "O0054"
+   ]
+  },
+  {
+   "dep": [
+    1698
+   ],
+   "reason": "licence line: 'Perseus Digital Library' as a source credit; a bare mention",
+   "cands": [
+    "O0060"
+   ]
+  },
+  {
+   "dep": [
+    1699
+   ],
+   "reason": "edition credit: 'World Digital Library'; a bare mention",
+   "cands": [
+    "O0061"
+   ]
+  },
+  {
+   "dep": [
+    1707
+   ],
+   "reason": "edition credit: 'Digital Library of India'; a bare mention",
+   "cands": [
+    "O0062"
+   ]
+  },
+  {
+   "dep": [
+    1709
+   ],
+   "reason": "Originals Library: 'via Claremont Colleges Digital Library' a source credit; a bare mention",
+   "cands": [
+    "O0063"
+   ]
+  },
+  {
+   "dep": [
+    1711
+   ],
+   "reason": "Originals Library (version): the same source credit",
+   "cands": [
+    "O0064"
+   ]
+  },
+  {
+   "dep": [
+    1716
+   ],
+   "reason": "edition credit: 'Perseus Digital Library'; a bare mention",
+   "cands": [
+    "O0065",
+    "O0066"
+   ]
+  },
+  {
+   "dep": [
+    56
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0001",
+    "O0002"
+   ]
+  },
+  {
+   "dep": [
+    639
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0007"
+   ]
+  },
+  {
+   "dep": [
+    832
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #1217",
+   "cands": [
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0012"
+   ]
+  },
+  {
+   "dep": [
+    969
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0014",
+    "O0015"
+   ]
+  },
+  {
+   "dep": [
+    970
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0016",
+    "O0017"
+   ]
+  },
+  {
+   "dep": [
+    971
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0018",
+    "O0019"
+   ]
+  },
+  {
+   "dep": [
+    1101
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #636",
+   "cands": [
+    "O0023",
+    "O0024"
+   ]
+  },
+  {
+   "dep": [
+    1211
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #1217",
+   "cands": [
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029"
+   ]
+  },
+  {
+   "dep": [
+    1216
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #1217",
+   "cands": [
+    "O0031",
+    "O0032",
+    "O0033",
+    "O0034",
+    "O0035"
+   ]
+  },
+  {
+   "dep": [
+    1400
+   ],
+   "reason": "instance of an admitted lineage, grouped (S4) under #1217",
+   "cands": [
+    "O0042",
+    "O0043",
+    "O0044",
+    "O0045"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   202,
+   636,
+   1217,
+   1680
+  ],
+  "candidates": 162,
+  "admitted": 0,
+  "reading": "each hop candidate checked for any sentence on the entity or its classes: 33 of 162 contain 'papyr' or 'Bodmer' ('Bodmer' in none); those already read as O candidates keep their verdicts; the rest (#71 Thomas papyri of Oxyrhynchus, #136 and #1270/#1483/#1484/#1645/#1646/#1670 Sappho's papyrus, #165 a grammar of the papyri, #436, #683, #825, #833, #1068, #1099, #1671, #1684, #1032) make no claim on the Bodmer papyri, early New Testament papyri as a class or digital libraries beyond what #1217 states (#1032, revelationfirst.com's site, restates the workstream: S4); the other 129 name none of the classes. Rejected."
+ },
+ "class_pass": "O-class: 66 sentences in 34 texts matched the class patterns with an archive category; all read at their passages",
+ "observations": "No archive text names the Bodmer Lab, its site, its constellation, the Bodmer papyri or any of them by number. The archive's bearing on the entity runs through its class, early New Testament papyri, where the Revelation First line applies its papyrological inversion with a stated limit; and through the census record and the capture record, which name it directly.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 66,
+   "O_deposits": 34,
+   "H_candidates": 162
+  },
+  "class_sentences_read": 66,
+  "deposits_candidate": 34,
+  "deposits_admitted": 4,
+  "deposits_admitted_with_claims": 4,
+  "instances_grouped_S4": 11,
+  "hop_candidates": 162,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "deposit": 6,
+   "RF": 32,
+   "CAP": 17
+  }
+ }
+}

@@ -1,0 +1,396 @@
+{
+ "row": "ithaca",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Ithaca with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (AI models for ancient texts: B4, B1, B3, B5, census intersection 'ai-ancient-texts', evidence kind, worked question 'machine-dating'; Greek inscriptions: B4, B1, B3, census text_object and negative tags; machine assistance to historians: B4, B1, B3, census stated_limits and method). A bare mention, a reference-list entry, a homonym or a keyword is not a claim. Every candidate of the string pass was read (D 53, R 8, O 37 in 33 deposits) and every hop candidate (35) searched at its text for the entity's strings and the classes' terms, every hit read.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 1443,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "The Photograph of the Handwritten Original (EA-SPXI-ANALOG-01 field survey), §2.3 'Ithaca (2022) — the collaboration figure, and what produced it': the paper's figures (D1443-01), what it assumes and 'The dataset construction is the hidden achievement' (D1443-02), the reading that the 25→72 gain comes from interface design, ranked hypotheses not a verdict (D1443-03), the relation to the archive's Differential Register Prioritization (#1406), Ithaca as 'empirical evidence that the hazard is a property of single-verdict interfaces' (D1443-04, D1443-05: R to an archive work, O-direct, the archive's category applied to the entity); Part X 'the enabling condition': 'Vesuvius and Ithaca work on authors who cannot be consulted' (D1443-06). String-pass candidates D0045–D0050, O0021",
+   "claims": [
+    "D1443-01",
+    "D1443-02",
+    "D1443-03",
+    "D1443-04",
+    "D1443-05",
+    "D1443-06"
+   ],
+   "cands": [
+    "D0045",
+    "D0046",
+    "D0047",
+    "D0048",
+    "D0049",
+    "D0050",
+    "O0021"
+   ]
+  },
+  {
+   "dep": 1406,
+   "strata": [
+    "O"
+   ],
+   "reason": "Differential Register Prioritization in Machine-Mediated Reading: found by the hop from #1443 (H0027), which applies its category to the entity; the definition of the category (§1, O1406-01) and its own falsifier (Falsification Conditions, O1406-02), read as the category #1443 applies (O, with class membership stated by the archive at #1443 §2.3). It does not name Ithaca; its other claims (the four-layer architecture, the adoption clause) concern handwritten and multi-register text and are not admitted",
+   "claims": [
+    "O1406-01",
+    "O1406-02"
+   ],
+   "cands": [
+    "H0027"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/ithaca-deepmind-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note, PER note, PER-dim basis, reading notes and scores for the entity's capture (OBS-5e8377899856, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15",
+    "CAP-1-16",
+    "CAP-1-17"
+   ]
+  },
+  {
+   "dep": "RF",
+   "url": "https://www.revelationfirst.com/aggregators/ithaca/ (source: /home/claude/fleet/revelationfirst-com/data/rf-census/census.json rows[slug == 'ithaca'], organizing_question, correction, intersections; questions.json 'machine-dating'; rendered aggregators/ithaca/index.html read for agreement)",
+   "reason": "the Revelation First census record of the entity (editor Lee Sharks, compiled 2026-10-30, schema 1.0): its fields with their basis, and the worked question that names it; where a field restates a source ledgered in B (the paper, B4) it is one lineage with that source",
+   "claims": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-04",
+    "RF-05",
+    "RF-06",
+    "RF-07",
+    "RF-08",
+    "RF-09",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-14",
+    "RF-15",
+    "RF-16",
+    "RF-17",
+    "RF-18",
+    "RF-19",
+    "RF-20",
+    "RF-21",
+    "RF-22",
+    "RF-23",
+    "RF-24",
+    "RF-25",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-29",
+    "RF-30",
+    "RF-31",
+    "RF-32",
+    "RF-33",
+    "RF-34",
+    "RF-35"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    123,
+    134,
+    550,
+    605,
+    666,
+    752,
+    763,
+    816,
+    1270
+   ],
+   "reason": "D candidates (alias '\\bIthaca\\b'): 'Ithaca: Cornell University Press' and the like, the city of Ithaca, New York, as a place of publication in reference lists; the homonym's, no claim on the entity",
+   "cands": [
+    "D0009",
+    "D0010",
+    "D0011",
+    "D0012",
+    "D0022",
+    "D0023",
+    "D0024",
+    "D0025",
+    "D0026",
+    "D0027",
+    "D0039",
+    "D0040"
+   ]
+  },
+  {
+   "dep": [
+    43,
+    85,
+    331,
+    402,
+    404,
+    405,
+    406,
+    1138,
+    1187,
+    1197,
+    1252,
+    1277,
+    1278
+   ],
+   "reason": "D, R and O-direct candidates (alias '\\bIthaca\\b'): the archive's own figure from the Epistle to the Human Diaspora, 'Sleep now, and rise: Your words will bear you to Ithaca' (its editions, apparatus, ark and charter texts, the 'Ithaca Promise'), Homer's and Cavafy's Ithaca as the homecoming the archive's survival promise names (#85 ¶87: '◀ PAST: Homer, Odyssey'; #85 ¶15 and #1187 ¶30 link 'Ithaca_(poem)'); #1197 'Heaven-Ithaca Odysseus'. The homonym's: recorded in homonyms, never admitted as the entity's",
+   "cands": [
+    "D0001",
+    "D0002",
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016",
+    "D0017",
+    "D0018",
+    "D0019",
+    "D0020",
+    "D0021",
+    "D0028",
+    "D0029",
+    "D0030",
+    "D0031",
+    "D0032",
+    "D0033",
+    "D0034",
+    "D0035",
+    "D0036",
+    "D0037",
+    "D0038",
+    "D0041",
+    "D0042",
+    "D0043",
+    "D0044",
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0004",
+    "R0005",
+    "R0006",
+    "R0007",
+    "R0008",
+    "O0001",
+    "O0002",
+    "O0003",
+    "O0004",
+    "O0006",
+    "O0015",
+    "O0016",
+    "O0017"
+   ]
+  },
+  {
+   "dep": [
+    1443
+   ],
+   "reason": "D candidates at the reference list (¶283: the paper cited by authors, title and journal) and the I.PHI/ruleset sentence's duplicate hits: a reference-list entry is not a claim; the §2.3 and Part X sentences are admitted above",
+   "cands": [
+    "D0051",
+    "D0052",
+    "D0053"
+   ]
+  },
+  {
+   "dep": [
+    1476,
+    1483,
+    1484,
+    1548
+   ],
+   "reason": "O-class (Greek inscriptions): the archive's future reader applied to epigraphy ('the future reader precedes literature; it is the pragmatic condition of epigraphy', #1548 ¶64; the epigraphic comparanda of Sappho 31, #1476, #1483, #1484). The class here is the entity's text object, not a class the entity belongs to; the category is applied to inscriptions as addressed objects and says nothing of a model that reads, restores or dates them. Not admitted (§3.4 guard: the composer never applies an archive category on its own judgment)",
+   "cands": [
+    "O0023",
+    "O0024",
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028"
+   ]
+  },
+  {
+   "dep": [
+    642,
+    1575,
+    1585,
+    1589,
+    1594,
+    1605,
+    1658,
+    1671,
+    1684,
+    1690
+   ],
+   "reason": "O-class (Greek inscriptions): epigraphy as a heteronym's field (#642), royal Greek epigraphy as a witness row (#1585, #1589, #1594, #1605), and epigraphic items as external evidence for authorship questions (#1575, #1658, #1671, #1684, #1690); none says anything of AI models for inscriptions or of the entity",
+   "cands": [
+    "O0008",
+    "O0029",
+    "O0030",
+    "O0031",
+    "O0032",
+    "O0033",
+    "O0034",
+    "O0035",
+    "O0036",
+    "O0037"
+   ]
+  },
+  {
+   "dep": [
+    271,
+    500,
+    666,
+    825,
+    833,
+    932,
+    991,
+    1174,
+    1396,
+    1397,
+    1401,
+    1450
+   ],
+   "reason": "O-class (machine assistance to historians): 'human-machine collaboration', 'collaborative AI' and 'decision support' as the archive's own compositional method, a title in a capture transcript, or clinical decision support (#1450); none concerns historians' use of a machine or the entity",
+   "cands": [
+    "O0005",
+    "O0007",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0012",
+    "O0013",
+    "O0014",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0022"
+   ]
+  },
+  {
+   "dep": [
+    13,
+    15,
+    29,
+    51,
+    89,
+    123,
+    127,
+    185,
+    186,
+    215,
+    339,
+    504,
+    541,
+    548,
+    616,
+    941,
+    942,
+    943,
+    944,
+    1077,
+    1330,
+    1331,
+    1332,
+    1333,
+    1367,
+    1404,
+    1407,
+    1409,
+    1422,
+    1432,
+    1436,
+    1437,
+    1444,
+    1684
+   ],
+   "reason": "H (one hop forward and back from #1443): cited by or citing #1443 for its other parts (the analog deposit programme, provenance metadata, the glyphic checksum and the ark transforms, steganography, PID infrastructures, the Theophrastus and Socrates lines, the prediction index); each text searched for the entity's strings and the three classes' terms and every hit read at its passage (#1406 read at its description, abstract and §0–§1): no sentence says anything of Ithaca, of AI models for ancient texts, or of historians' use of a machine (#1409 and #186 use 'machine reading' of handwritten and training-layer texts, not of ancient-text models)",
+   "cands": [
+    "H0001",
+    "H0002",
+    "H0003",
+    "H0004",
+    "H0005",
+    "H0006",
+    "H0007",
+    "H0008",
+    "H0009",
+    "H0010",
+    "H0011",
+    "H0012",
+    "H0013",
+    "H0014",
+    "H0015",
+    "H0016",
+    "H0017",
+    "H0018",
+    "H0019",
+    "H0020",
+    "H0021",
+    "H0022",
+    "H0023",
+    "H0024",
+    "H0025",
+    "H0026",
+    "H0028",
+    "H0029",
+    "H0030",
+    "H0031",
+    "H0032",
+    "H0033",
+    "H0034",
+    "H0035"
+   ]
+  },
+  {
+   "dep": [
+    202
+   ],
+   "reason": "read outside the string pass (BRIEF-NEW-ROW-FIELD §7): the Revelation First thesis (#202, 'Revelation First ≠ Revelation Early') dates the writings by the midrashim transform and computational dependence, and says nothing of machine dating of inscriptions or manuscripts; its bearing on the entity is the census's reading (RF-21), ledgered as the archive's record, not a deposit claim"
+  }
+ ],
+ "counts": {
+  "string_pass": {
+   "D_sentences": 53,
+   "D_deposits": 23,
+   "R_sentences": 8,
+   "R_deposits": 5,
+   "O_direct": 9,
+   "O_class": 28,
+   "O_deposits": 32,
+   "H_candidates": 35
+  },
+  "deposits_admitted": 2,
+  "deposit_claims": 8,
+  "candidates_read": 133
+ }
+}

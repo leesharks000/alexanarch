@@ -1,0 +1,1204 @@
+{
+ "row": "aeneas",
+ "address": "Aeneas DeepMind",
+ "addresses": [
+  "Aeneas DeepMind"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw Wikipedia wikitext or the Wikipedia response summary, or the card's snippet for the unreachable card and for the interface page that carries no body text; 48/48 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 the DeepMind post, 23 July 2025, the census's own page aeneas--blog, byte-identical, carried once as a card; B2 Google's blog; B3 Oxford's Faculty of Classics; B4 the GitHub repository, unreachable; B5 the Nature paper, open access, read whole; B6 predictingthepast.com, the census's own page aeneas--site, byte-identical, a JavaScript application whose saved text is its title; B7 MIT Technology Review); 'own_page': the census's two own pages are cards B1 and B6, so no own page stands apart from the rail; 'wikipedia': no article on the model (B8). The census read no third-party source (its evidence carries basis 'operator' only), so there is no 'census_third_party' origin.",
+ "lineage_note": "Lineages: what it is: a model for contextualizing ancient inscriptions (B1, B5); who made it: DeepMind, the partners, the authors (B1, B3, B6); parallels: what they are and how the model retrieves them (B1, B2, B5); the tasks: multimodal provenance, restoration of unknown length, dating (B1, B5, B7); the corpus: the Latin Epigraphic Dataset (B1, B5, B7); the historians' study and its figures (B1, B5, B7); a tool in the historian's workflow (B1, B3, B7); the case studies: the Res Gestae and the Mainz altar (B1, B5); stated limits: data, bias, images, interpretation (B5, B7); the stated reach: other languages, scripts and media (B1, B2, B5); lineage and name: Ithaca, the hero (B1, B5); access: the interface, the code, the dataset, the licence (B1, B4, B5, B6); reception: the encyclopedia (B8). The census's kind, method and findings restate B1 ¶6 (evidence 'reasons', 'parallels'); its operator restates B1 ¶8 ('partners'); its text_object restates B1 ¶7 ('adapt'); its evidence 'intro' is B1 ¶4: one lineage each with the page, which keeps the earliest date (2025-07-23).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/aeneas-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped by the census's own rule; B1 and B6 the census's saved copies, gunzipped, with the census's text; B4-403.html the proxy's refusal; B8 .wiki raw Wikipedia wikitext (disambiguation, hero, Google DeepMind), B8-search1–3.html the search responses, B8.txt a summary of codes and notices; T1-aeneas-deepmind-aio-20261031.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Google DeepMind — Aeneas transforms how historians connect the past — Google DeepMind",
+   "url": "https://deepmind.google/discover/blog/aeneas-transforms-how-historians-connect-the-past/",
+   "kind": "Overview card 1 (the operator's announcement post, 'The Aeneas team', 23 July 2025); the census's own page aeneas--blog, byte-identical",
+   "id": "B1",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.html",
+     "sha256": "c53e5cf5b5336f473ea7c230ac43cc27ed2ddaaaf8d0701d68cb6646ca91b094"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt",
+     "sha256": "5713717f5d2cb7379e201fb8671be73c337e42196c55e7f015c661cd3a4064e8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38Z (check fetch, minute recorded; the census copy carried was fetched 2026-10-31T02:52:07Z)",
+    "http": 200,
+    "url": "https://deepmind.google/discover/blog/aeneas-transforms-how-historians-connect-the-past/",
+    "final_url": "https://deepmind.google/blog/aeneas-transforms-how-historians-connect-the-past/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.html",
+    "raw_sha256": "c53e5cf5b5336f473ea7c230ac43cc27ed2ddaaaf8d0701d68cb6646ca91b094",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "aeneas--blog",
+     "sha256": "c53e5cf5b5336f473ea7c230ac43cc27ed2ddaaaf8d0701d68cb6646ca91b094",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T02:52:07Z",
+     "agrees": true
+    },
+    "note": "check fetch with the census agent on 2026-10-31 (not kept) returned the same bytes as the census copy; the census copy is carried (gunzipped) with the census's text"
+   },
+   "names_operator": "yes ('Google DeepMind', 'The Aeneas team'; the partners)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Aeneas transforms how historians connect the past — Google DeepMind",
+   "card_snippet": "Model: Aeneas, a multimodal generative neural network trained on the Latin Epigraphic Dataset (LED) of over 176,000 inscriptions. Capabilities: Searches context...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 1
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "blog.google — Aeneas: Google DeepMind AI connects ancient inscriptions",
+   "url": "https://blog.google/technology/google-deepmind/aeneas/",
+   "kind": "Overview card 2 (Google's company blog, 'Contributing writer', Jul 23, 2025)",
+   "id": "B2",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.html",
+     "sha256": "bfea5da464bccc1585004e617dd4b331f74506632b321123a2012c54751a6aec"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.txt",
+     "sha256": "572d5f6f1fcb7cdac6c9e155214a014cbef1ff94b0d8734d9184fa4d42c778ff"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:17Z",
+    "http": 200,
+    "url": "https://blog.google/technology/google-deepmind/aeneas/",
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/aeneas/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.html",
+    "raw_sha256": "bfea5da464bccc1585004e617dd4b331f74506632b321123a2012c54751a6aec",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.txt"
+    ],
+    "note": "URL found by WebSearch on title and site; redirected to the blog's current path"
+   },
+   "names_operator": "yes ('Google DeepMind')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Aeneas: Google DeepMind AI connects ancient inscriptions",
+   "card_snippet": "Model: Aeneas by Google DeepMind (introduced July 23, 2025; published in Nature). Purpose: First AI model for contextualizing, interpreting, attributing, and re...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 2
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F19",
+    "F20"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "University of Oxford — Aeneas: an AI model for restoring and contextualizing Latin inscriptions | Faculty of Classics",
+   "url": "https://www.classics.ox.ac.uk/node/4577076",
+   "kind": "Overview card 3 (Oxford Faculty of Classics news item, 28 July 2025)",
+   "id": "B3",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.html",
+     "sha256": "772454851fa204cac0ff2d994219b32a0cab7ebe3b3e1d84dbe33cbea03800e0"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.txt",
+     "sha256": "be3f6946a38ae4975c2a9ea37da2f98bde65de8b39ddbe2f14a1d9bfe79158da"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:18Z",
+    "http": 200,
+    "url": "https://www.classics.ox.ac.uk/node/4577076",
+    "final_url": "https://www.classics.ox.ac.uk/node/4577076",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.html",
+    "raw_sha256": "772454851fa204cac0ff2d994219b32a0cab7ebe3b3e1d84dbe33cbea03800e0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.txt"
+    ],
+    "note": "URL found by WebSearch on title and site (classics.ox.ac.uk/node/4577076)"
+   },
+   "names_operator": "yes ('Google DeepMind which co-developed Aeneas with the University of Nottingham')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Aeneas: an AI model for restoring and contextualizing Latin inscriptions | Faculty of Classics",
+   "card_snippet": "Model: Aeneas, the first AI model for contextualizing, interpreting, attributing, and restoring ancient, fragmentary, weathered, or defaced Latin inscriptions. ...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 3
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F21",
+    "F22"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "GitHub — GitHub - google-deepmind/predictingthepast · GitHub",
+   "url": "https://github.com/google-deepmind/predictingthepast",
+   "kind": "Overview card 4 (the code repository; unreachable from the build environment)",
+   "id": "B4",
+   "files": {
+    "B4-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B4-403.html",
+     "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T04:38Z",
+      "url": "https://github.com/google-deepmind/predictingthepast",
+      "http": 403,
+      "sha256": "b3e03aaaff81d68730d67392a135ac3fdfdf022880c66632ab188d2fe084cda3",
+      "result": "the build environment's proxy refused the host ('GitHub access to this repository is not enabled for this session'), a connection-level refusal recorded as the brief's environment allowlist case; not retried with another agent string or by another route (the GitHub connector was not used)"
+     }
+    ],
+    "note": "unreachable; the card's title and snippet stand as its only text. The repository is named by B3 and B5 (code and dataset), which are read."
+   },
+   "names_operator": "yes, on the card ('developed by Google DeepMind')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "GitHub - google-deepmind/predictingthepast · GitHub",
+   "card_snippet": "Model: Aeneas is a generative neural network developed by Google DeepMind for contextualising ancient texts, performing arbitrary-length text restoration, visua...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 4
+    }
+   ],
+   "claims": [
+    "F23"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Nature — Contextualizing ancient texts with generative neural networks | Nature",
+   "url": "https://www.nature.com/articles/s41586-025-09292-5",
+   "kind": "Overview card 5 (the paper: Assael, Sommerschield et al., Nature 645, 141–147, open access, published 23 July 2025)",
+   "id": "B5",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.html",
+     "sha256": "07c431681107fad57f6710ff010c6052c2931c8dea94e1e04237ea1de9a37e28"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt",
+     "sha256": "37e5e9410948c084df8d27d5e328401d7b6fd9fcd0f46d5222924d2637261d55"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:20Z",
+    "http": 200,
+    "url": "https://www.nature.com/articles/s41586-025-09292-5",
+    "final_url": "https://www.nature.com/articles/s41586-025-09292-5?error=cookies_not_supported&code=ba7e1928-81fc-4085-abbb-c294e295113b",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.html",
+    "raw_sha256": "07c431681107fad57f6710ff010c6052c2931c8dea94e1e04237ea1de9a37e28",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+    ],
+    "note": "URL by DOI 10.1038/s41586-025-09292-5, confirmed by WebSearch (ideas.repec.org) and by the page title; open access, the full text in the page"
+   },
+   "names_operator": "yes (the authors and affiliations; Google DeepMind)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Contextualizing ancient texts with generative neural networks | Nature",
+   "card_snippet": "Model: Aeneas, a multimodal generative neural network for contextualizing Latin inscriptions using image and text inputs. Corpus: Latin Epigraphic Dataset (LED)",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 5
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Predicting the Past — Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+   "url": "https://predictingthepast.com/",
+   "kind": "Overview card 6 (the interface, a JavaScript application; the census's own page aeneas--site, byte-identical)",
+   "id": "B6",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B6.html",
+     "sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B6.txt",
+     "sha256": "06b41db902580a817c82f9842d473ba88f1965be698259d506dedf7a0c88e8f7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38Z (check fetch, minute recorded; the census copy carried was fetched 2026-10-31T02:52:08Z)",
+    "http": 200,
+    "url": "https://predictingthepast.com/",
+    "final_url": "https://predictingthepast.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B6.html",
+    "raw_sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B6.txt"
+    ],
+    "census_copy": {
+     "src": "aeneas--site",
+     "sha256": "08a11cf87711fe870d18b83f8adc34ec85b625bad14b3b646dab7052d6d393a9",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T02:52:08Z",
+     "agrees": true
+    },
+    "note": "check fetch with the census agent on 2026-10-31 (not kept) returned the same bytes as the census copy; the census copy is carried (gunzipped) with the census's text; the saved page is a JavaScript application whose text is its title and a browser notice, so the card's snippet (F45) is carried as the card's text for what the page does not hold"
+   },
+   "names_operator": "on the card only ('DeepMind, Durham University, Oxford, and partners'); the saved page names none",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+   "card_snippet": "System: Aeneas (generative neural network by DeepMind, Durham University, Oxford, and partners) for contextualising, restoring, and attributing Latin inscriptio...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 6
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F44",
+    "F45"
+   ]
+  },
+  {
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "MIT Technology Review — Google DeepMind’s new AI can help historians understand ancient Latin inscriptions | MIT Technology Review",
+   "url": "https://www.technologyreview.com/2025/07/23/1120574/deepmind-ai-aeneas-helps-historians-interpret-latin-inscriptions/",
+   "kind": "Overview card 7 (news article by Peter Hall, July 23, 2025)",
+   "id": "B7",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.html",
+     "sha256": "1526eaa5bd4dd61d272ebf0661bce2105616a9b89f668c9b65114c23c9c3f46d"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt",
+     "sha256": "80b89dcc484dee1cad08015312d1f3542e1950ea258363ac9988f10576957b64"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:21Z",
+    "http": 200,
+    "url": "https://www.technologyreview.com/2025/07/23/1120574/deepmind-ai-aeneas-helps-historians-interpret-latin-inscriptions/",
+    "final_url": "https://www.technologyreview.com/2025/07/23/1120574/deepmind-ai-aeneas-helps-historians-interpret-latin-inscriptions/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.html",
+    "raw_sha256": "1526eaa5bd4dd61d272ebf0661bce2105616a9b89f668c9b65114c23c9c3f46d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+    ],
+    "note": "URL found by WebSearch on title and site"
+   },
+   "names_operator": "yes ('Google DeepMind'; Assael, Sommerschield)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "card_title": "Google DeepMind’s new AI can help historians understand ancient Latin inscriptions | MIT Technology Review",
+   "card_snippet": "Software: Google DeepMind Aeneas open-source AI for ancient Latin inscriptions. Function: Analyzes partial text and scans to predict origin dates, locations, an...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "aeneas-deepmind-aio-20261031",
+     "card": 7
+    }
+   ],
+   "snippet_in_page": false,
+   "claims": [
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43"
+   ]
+  },
+  {
+   "origin": "wikipedia",
+   "role": "Wikipedia",
+   "card": "Wikipedia — Aeneas (the model) (no article)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Aeneas_(AI)&action=raw",
+   "kind": "Wikipedia: no article on the model; the disambiguation page, the hero's article and Google DeepMind's article read",
+   "id": "B8",
+   "files": {
+    "B8-deepmind.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-deepmind.wiki",
+     "sha256": "133497d3b16d94d33e372b86f442d6cc9cf5299a15e996b1182603807f9abb0a"
+    },
+    "B8-hero.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-hero.wiki",
+     "sha256": "393eb34757c8d1256a87cf9df294b4a8db89d306c91647f47e86b4bab143b226"
+    },
+    "B8-search1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-search1.html",
+     "sha256": "593b96487250aa984747d080675b260c66459b29d038d5e60c03cf16aa2ca072"
+    },
+    "B8-search2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-search2.html",
+     "sha256": "3795d3f51e5420dbc18945bde881336a3f5d1300feca009434cc37b322bb8e34"
+    },
+    "B8-search3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-search3.html",
+     "sha256": "af89dc90c58f56805a098896928eb0b9ab47f8a56dbd09badab7ddad316b7de4"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8.txt",
+     "sha256": "dab1678fd4253e4196372399aa38f8f4af30c68d2130fa556511010bdfa86b6a"
+    },
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8.wiki",
+     "sha256": "aaf2e5c37a5e9b09ac8e18c873ce0c7b11e3cf75822747e5d17d071fa87c5911"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39Z–04:41:11Z",
+    "tries": [
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Aeneas_(AI)&action=raw (and _(model), _(artificial_intelligence), _(AI_model), _(neural_network))",
+      "http": 404
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Ithaca_(AI)&action=raw",
+      "http": 404
+     },
+     {
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search …",
+      "http": 429,
+      "result": "rate limited twice (04:39Z, 04:40:44Z); not retried by the API; full-text search made through index.php Special:Search instead"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Aeneas_(disambiguation)&action=raw",
+      "http": 200,
+      "sha256": "aaf2e5c37a5e9b09ac8e18c873ce0c7b11e3cf75822747e5d17d071fa87c5911"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Aeneas&action=raw",
+      "http": 200,
+      "sha256": "393eb34757c8d1256a87cf9df294b4a8db89d306c91647f47e86b4bab143b226"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Google_DeepMind&action=raw",
+      "http": 200,
+      "sha256": "133497d3b16d94d33e372b86f442d6cc9cf5299a15e996b1182603807f9abb0a"
+     },
+     {
+      "url": "Special:Search (3 queries, article space)",
+      "http": 200,
+      "files": [
+       "B8-search1.html",
+       "B8-search2.html",
+       "B8-search3.html"
+      ]
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8.txt"
+    ],
+    "note": "no article on the model; B8.txt summarises the responses (codes, notices); quotes from the raw wikitext are checked against the .wiki files"
+   },
+   "names_operator": "no (the encyclopedia has no article; its Google DeepMind article names Ithaca, not Aeneas)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [],
+   "claims": [
+    "F46",
+    "F47",
+    "F48"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "subtitle",
+   "quote": "Introducing the first model for contextualizing ancient inscriptions, designed to help historians better interpret, attribute and restore fragmentary texts.",
+   "claim": "the operator's definition: the first model for contextualizing ancient inscriptions, to help historians interpret, attribute and restore fragmentary texts",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a model for contextualizing ancient inscriptions",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "Today, we’re publishing a paper in Nature introducing Aeneas , the first artificial intelligence (AI) model for contextualizing ancient inscriptions.",
+   "claim": "introduced in a Nature paper on the post's date as the first AI model for contextualizing ancient inscriptions",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a model for contextualizing ancient inscriptions",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "historians traditionally rely on their expertise and specialized resources to identify “parallels” — which are texts that share similarities in wording, syntax, standardized formulas or provenance.",
+   "claim": "parallels defined: texts sharing wording, syntax, standardized formulas or provenance, found by historians through expertise and specialized resources",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "It reasons across thousands of Latin inscriptions, retrieving textual and contextual parallels in seconds that allow historians to interpret and build upon the model’s findings.",
+   "claim": "the model retrieves textual and contextual parallels across thousands of Latin inscriptions in seconds, for historians to interpret and build on",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶7",
+   "quote": "Our model can also be adapted to other ancient languages, scripts and media, from papyri to coinage, expanding its capabilities to help draw connections across a wider range of historical evidence.",
+   "claim": "the model is stated to be adaptable to other ancient languages, scripts and media, from papyri to coinage",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated reach: other languages, scripts and media",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶8",
+   "quote": "We co-developed Aeneas with the University of Nottingham, and in partnership with researchers at the Universities of Warwick, Oxford and Athens University of Economics and Business (AUEB).",
+   "claim": "co-developed with the University of Nottingham, with researchers at Warwick, Oxford and AUEB",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it: DeepMind, the partners, the authors",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "¶9",
+   "quote": "we’re making an interactive version of Aeneas freely-available to researchers, students, educators, museum professionals and more at predictingthepast.com . To support further research, we’re also open-sourcing our code and dataset .",
+   "claim": "an interactive version is free at predictingthepast.com; code and dataset are open-sourced",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the interface, the code, the dataset, the licence",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Aeneas’ advanced capabilities ¶1",
+   "quote": "Named after the wandering hero of Graeco-Roman mythology, Aeneas builds upon Ithaca , our earlier work using AI to restore, date and place ancient Greek inscriptions.",
+   "claim": "named after the wandering hero; builds upon Ithaca, DeepMind's earlier model for ancient Greek inscriptions",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and name: Ithaca, the hero",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Aeneas’ advanced capabilities, Parallels search",
+   "quote": "Parallels search: It searches for parallels across a vast collection of Latin inscriptions. By turning each text into a kind of historical fingerprint, Aeneas identifies deep connections that can help historians situate inscriptions within their broader historical context.",
+   "claim": "parallels search across a vast collection of Latin inscriptions, each text a historical fingerprint",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Aeneas’ advanced capabilities, Processing multimodal input; Restoring gaps",
+   "quote": "Aeneas is the first model to determine a text's geographical provenance using multimodal inputs. … For the first time, Aeneas can restore gaps in texts where the missing length is unknown.",
+   "claim": "the first model to determine geographical provenance from multimodal input, and to restore gaps of unknown length",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tasks: multimodal provenance, restoration of unknown length, dating",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "How Aeneas works ¶1–2",
+   "quote": "drawing from decades of work by historians to create digital collections, especially the Epigraphic Database Roma (EDR), Epigraphic Database Heidelberg (EDH) and Epigraphic Database Clauss Slaby (EDCS-ELT). … We cleaned, harmonized and linked these records into a single machine-actionable dataset that we refer to as the Latin Epigraphic Dataset (LED), comprising over 176,000 Latin inscriptions from across the ancient Roman world.",
+   "claim": "the Latin Epigraphic Dataset: over 176,000 Latin inscriptions, cleaned, harmonized and linked from EDR, EDH and EDCS, the work of historians",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the corpus: the Latin Epigraphic Dataset",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "How Aeneas works ¶4",
+   "quote": "For each inscription, Aeneas’ contextualization mechanism retrieves a list of parallels using a technique called “embeddings” — encoding the textual and contextual information of each inscription into a kind of historical fingerprint",
+   "claim": "the contextualization mechanism retrieves parallels by embeddings, a historical fingerprint of each inscription",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "State-of-the-art performance ¶2",
+   "quote": "Aeneas restores damaged inscriptions with a Top-20 accuracy of 73% in gaps of up to ten characters. This only decreases to 58% when the restoration length is unknown … our model can attribute an inscription to one of 62 ancient Roman provinces with 72% accuracy. For dating, Aeneas places a text within 13 years of the date ranges provided by historians.",
+   "claim": "measured: top-20 restoration 73% (58% at unknown length); province among 62 at 72%; dating within 13 years of historians' ranges",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tasks: multimodal provenance, restoration of unknown length, dating",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "A new lens on historical debates ¶2",
+   "quote": "Rather than predicting a single fixed date, Aeneas produced a detailed distribution of possible dates, showing two distinct peaks, with one smaller peak around 10-1  BCE and a larger, more confident peak between 10-20 CE. These results captured both prevailing dating hypotheses in a quantitative way.",
+   "claim": "on the Res Gestae the model gives a distribution of dates with two peaks, capturing both prevailing hypotheses",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the case studies: the Res Gestae and the Mainz altar",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Advancing historical research collaboratively ¶1–2",
+   "quote": "We invited twenty-three historians who regularly work with inscriptions to restore, date and place a set of texts using Aeneas. … the most effective results were achieved when historians used Aeneas’ contextual information alongside its predictions",
+   "claim": "a study with twenty-three historians; best results with the model's context and predictions together",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the historians' study and its figures",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Sharing the tools, shaping the future ¶1",
+   "quote": "Aeneas is designed to integrate within historians' existing research workflows. By combining expert knowledge with machine learning, it opens up a collaborative process, offering interpretable suggestions that serve as valuable starting points for historical inquiry.",
+   "claim": "designed to integrate in historians' workflows, offering interpretable suggestions as starting points",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "a tool in the historian's workflow",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Sharing the tools, shaping the future ¶2",
+   "quote": "As part of today’s release, we’re upgrading Ithaca , our ancient Greek model, to be powered by Aeneas and include the contextualization function, restorations of unknown length and better performance overall.",
+   "claim": "Ithaca, the Greek model, is upgraded to be powered by Aeneas, with its contextualization function",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and name: Ithaca, the hero",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Acknowledgements",
+   "quote": "The research was co-led by Yannis Assael and Thea Sommerschield.",
+   "claim": "co-led by Yannis Assael and Thea Sommerschield",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it: DeepMind, the partners, the authors",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B1.txt"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "While trained for Latin, Aeneas can be adapted to other ancient languages, scripts and media, from papyri to coinage.",
+   "claim": "trained for Latin; adaptable to other languages, scripts and media",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated reach: other languages, scripts and media",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.txt"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Aeneas can search for parallels (texts that share similarities in wording, syntax, standardized formulas or provenance) across thousands of Latin inscriptions, process multimodal input (text and images) and restore gaps in text, setting a new state-of-the-art benchmark in the field.",
+   "claim": "Google's blog restates the parallels search, multimodal input and gap restoration",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B2.txt"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "A team of researchers, including Professor Jonathan Prag, an ancient historian in the Faculty of Classics, has just published a paper in Nature introducing Aeneas",
+   "claim": "Oxford's Faculty of Classics names Jonathan Prag among the paper's authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it: DeepMind, the partners, the authors",
+   "date": "2025-07-28",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.txt"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "¶7 (Prag)",
+   "quote": "In a field of this sort, the answers are not black and white, and the data is simultaneously rich and incomplete. Aeneas takes a leap beyond Ithaca to provide humanities researchers with a level of support – based upon previous scholarship - that we could only previously have dreamed of.",
+   "claim": "Prag: answers in the field are not black and white, the data rich and incomplete; Aeneas a leap beyond Ithaca, its support based on previous scholarship",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "a tool in the historian's workflow",
+   "date": "2025-07-28",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B3.txt"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (unreachable)",
+   "quote": "Model: Aeneas is a generative neural network developed by Google DeepMind for contextualising ancient texts, performing arbitrary-length text restoration, visua...",
+   "claim": "the repository card: a generative neural network by Google DeepMind for contextualising ancient texts and arbitrary-length restoration",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the interface, the code, the dataset, the licence",
+   "date": "2026-10-31 (card snippet; page unreachable)",
+   "quote_ok": true,
+   "checked_against": "the card snippet (cite_list[3].snip, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s4–6",
+   "quote": "However, current digital methods are restricted to literal matches and narrow historical scopes. Here we introduce Aeneas, a generative neural network for contextualizing ancient texts. Aeneas retrieves textual and contextual parallels, leverages visual inputs, handles arbitrary-length text restoration, and advances the state of the art in key tasks.",
+   "claim": "the paper's definition: a generative neural network for contextualizing ancient texts, against digital methods restricted to literal matches",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a model for contextualizing ancient inscriptions",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "Historians capture these insights by identifying parallels—inscriptions with shared phrasing, function or cultural setting—to enable the contextualization of texts within broader historical frameworks, and perform key tasks such as restoration and geographical or chronological attribution",
+   "claim": "the paper's definition of parallels: inscriptions with shared phrasing, function or cultural setting, used to contextualize, restore and attribute",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract s7–9",
+   "quote": "The historians find the parallels retrieved by Aeneas to be useful research starting points in 90% of cases, improving their confidence in key tasks by 44%. Restoration and geographical attribution tasks yielded superior results when historians were paired with Aeneas, outperforming both humans and artificial intelligence alone. For dating, Aeneas achieved a 13-year distance from ground-truth ranges.",
+   "claim": "headline findings: parallels useful starting points in 90% of cases, confidence up 44%; historian with Aeneas beats either alone; dating at 13 years",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the historians' study and its figures",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, historian study ¶3",
+   "quote": "when provided with Aeneas’ parallels, historians reported that these could serve as a starting point for historical inquiry 75% of the time. This increased to 90% when Aeneas’ predictions for the three epigraphic tasks were also included. Moreover, Aeneas’ parallels boosted historians’ confidence by an average of 23%, with an additional 21% increase when Aeneas’ predictions were also available.",
+   "claim": "the figures' qualification: parallels alone 75% and +23% confidence; 90% and +44% (23 + 21) only with the model's predictions added",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the historians' study and its figures",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, LED ¶",
+   "quote": "encompassing inscriptions from the seventh century bce to the eighth century ce … The final LED comprises 176,861 inscriptions (totalling 16 million characters), most of which have damaged sections, and we were able to obtain corresponding images of 5% of inscriptions.",
+   "claim": "the LED: 176,861 inscriptions, seventh century BCE to eighth century CE, 16 million characters, images for 5%",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the corpus: the Latin Epigraphic Dataset",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, architecture ¶2",
+   "quote": "only the geographical attribution head incorporates the additional inputs from the vision network—the restoration and chronological attribution tasks do not use the visual modality.",
+   "claim": "images enter only geographical attribution; restoration and dating are text-only",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tasks: multimodal provenance, restoration of unknown length, dating",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, contextualization ¶",
+   "quote": "Aeneas retrieves a list of the most relevant epigraphic parallels from the training set of LED. … This design enables the model to surpass traditional fuzzy string-matching methods, to include a wealth of epigraphic parallels from relevant places and periods, related concepts, synonymous terms, formulaic variations and analogous epigraphic practices.",
+   "claim": "parallels retrieved from the LED training set by historically enriched embeddings, beyond fuzzy string matching",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "parallels: what they are and how the model retrieves them",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, Mainz altar ¶2",
+   "quote": "This altar shares rare textual formulas and an identical iconographical type with Cogitatus’ dedication, supporting the hypothesis that the later inscription was directly influenced by the earlier one.",
+   "claim": "a retrieved parallel supports, by the authors' reading, the hypothesis that a later inscription was directly influenced by an earlier one",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the case studies: the Res Gestae and the Mainz altar",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Results, RGDA ¶2",
+   "quote": "Aeneas’ chronological attribution of the full text of the RGDA reflects prevailing scholarly hypotheses, with a distribution exhibiting a strong bimodal pattern",
+   "claim": "the RGDA dating reflects prevailing hypotheses in a bimodal distribution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the case studies: the Res Gestae and the Mainz altar",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F33": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Discussion ¶1",
+   "quote": "Aeneas’ architecture outperforms the previous state-of-the-art model, offers multimodal capabilities, enables restoration of text sequences of unknown lengths, and can also be adapted to any ancient language and written medium (such as papyri, manuscripts or coinage).",
+   "claim": "the paper's statement of reach: adaptable to any ancient language and written medium, papyri and manuscripts among them",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated reach: other languages, scripts and media",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Methods, LED limitations",
+   "quote": "the size of LED (16 million characters) remains a significant limitation compared with the scale of datasets typically used in state-of-the-art natural language processing research. … the available corpus is also subject to inherent biases, most significantly inscription survival bias, potentially skewing the data towards certain materials, locations, or historical contexts.",
+   "claim": "stated limits: the corpus is small for NLP and biased by inscription survival",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: data, bias, images, interpretation",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F35": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Methods, LED limitations ¶2",
+   "quote": "performance often tends to be weaker where data is limited",
+   "claim": "performance weaker where data is limited, by decade and province",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: data, bias, images, interpretation",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F36": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Code availability",
+   "quote": "The Aeneas source code is available at https://github.com/google-deepmind/predictingthepast under Apache License 2.0, along with the trained weights, licensed under a Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0).",
+   "claim": "code under Apache 2.0, weights under CC BY-SA 4.0, at the GitHub repository",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the interface, the code, the dataset, the licence",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶6",
+   "quote": "The name Aeneas is inspired by the wandering hero of Graeco-Roman mythology: like Aeneas, who journeyed from Troy across the Mediterranean seeking guidance on where to found the future city of Rome, our model seeks to uncover epigraphic parallels to ground historical research and link the past to the present.",
+   "claim": "the name: the wandering hero, as the model seeks parallels to ground research",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and name: Ithaca, the hero",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Introduction ¶7",
+   "quote": "We therefore focus on Latin inscriptions, as this gap offers a valuable opportunity for interdisciplinary research with broader scholarly impact.",
+   "claim": "Latin chosen because few machine-learning studies treat Latin inscriptions",
+   "modality": "stipulation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the stated reach: other languages, scripts and media",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B5.txt"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "To do this, Aeneas takes in partial transcriptions of an inscription alongside a scanned image of it. Using these, it gives possible dates and places of origins for the engraving, along with potential fill-ins for any missing text.",
+   "claim": "MIT Technology Review: from transcription and image the model gives possible dates, places and fill-ins",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the tasks: multimodal provenance, restoration of unknown length, dating",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "Aeneas also cross-references the text with a stored database of almost 150,000 inscriptions",
+   "claim": "MIT Technology Review's figure: a database of almost 150,000 inscriptions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the corpus: the Latin Epigraphic Dataset",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "Rather than seeking to automate epigraphy—the research field dealing with deciphering and understanding inscriptions—he and his colleagues are interested in “crafting a tool that will integrate with the workflow of a historian,” Assael said in a press briefing.",
+   "claim": "Assael: not to automate epigraphy but a tool for the historian's workflow",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "a tool in the historian's workflow",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶8",
+   "quote": "It doesn’t guess the meaning of texts, so it can’t interpret newly found engravings on its own, and it’s not clear yet how useful it will be to historians’ workflows in the long term, according to Kathleen Coleman, a professor of classics at Harvard. The Monumentum Ancyranum is considered to be one of the best-known and most well-studied inscriptions in epigraphy, raising the question of how Aeneas will fare on more obscure samples.",
+   "claim": "Coleman's limit: it does not guess meaning or interpret new finds alone, its long-term use unclear; the test case is among the best-studied inscriptions",
+   "modality": "attributed",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: data, bias, images, interpretation",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "¶7",
+   "quote": "showed that Aeneas helped spur research ideas among the historians for 90% of inscriptions",
+   "claim": "MIT Technology Review's restatement: research ideas for 90% of inscriptions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the historians' study and its figures",
+   "date": "2025-07-23",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B7.txt"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "page title",
+   "quote": "Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+   "claim": "the interface's own title: contextualising, restoring and attributing ancient texts",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the interface, the code, the dataset, the licence",
+   "date": "2026-10-31 (read; undated)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B6.txt"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card snippet (the saved page carries no body text)",
+   "quote": "System: Aeneas (generative neural network by DeepMind, Durham University, Oxford, and partners) for contextualising, restoring, and attributing Latin inscriptio...",
+   "claim": "the interface card names DeepMind, Durham University, Oxford and partners",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it: DeepMind, the partners, the authors",
+   "date": "2026-10-31 (card snippet)",
+   "quote_ok": true,
+   "checked_against": "the card snippet (cite_list[5].snip, data/EA-WG-CAPTURES-01.json)"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "state (B8.txt)",
+   "quote": "No article on the model.",
+   "claim": "Wikipedia has no article on the model; no title variant resolves",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8.txt"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Google DeepMind article (B8-deepmind.wiki)",
+   "quote": "Google has unveiled a new archaeology document program, named Ithaca after [[Homer's Ithaca|the Greek island]] in Homer's [[Odyssey]].",
+   "claim": "the encyclopedia's Google DeepMind article carries the predecessor, Ithaca, and names no Aeneas",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8-deepmind.wiki"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Aeneas (disambiguation) (B8.wiki)",
+   "quote": "'''[[Aeneas]]''' was a Trojan hero in Virgil's ''Aeneid'' and Homer's ''Iliad''.",
+   "claim": "the name's disambiguation opens with the hero and lists no model",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/aeneas-20261031/B8.wiki"
+  }
+ },
+ "field_sources": {
+  "B1": "Google DeepMind — Aeneas transforms how historians connect the past — Google DeepMind",
+  "B2": "blog.google — Aeneas: Google DeepMind AI connects ancient inscriptions",
+  "B3": "University of Oxford — Aeneas: an AI model for restoring and contextualizing Latin inscriptions | Faculty of Classics",
+  "B4": "GitHub — GitHub - google-deepmind/predictingthepast · GitHub",
+  "B5": "Nature — Contextualizing ancient texts with generative neural networks | Nature",
+  "B6": "Predicting the Past — Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+  "B7": "MIT Technology Review — Google DeepMind’s new AI can help historians understand ancient Latin inscriptions | MIT Technology Review",
+  "B8": "Wikipedia — Aeneas (the model) (no article)"
+ }
+}

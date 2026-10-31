@@ -1,0 +1,811 @@
+<html>
+
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta property="fb:pages" content="218913055181886" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["rum_v2"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ff743358ec",applicationID:"28933441",browserID:"28933616"};;/*! For license information please see nr-loader-rum-1.324.1.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zuv39xzZ8AH/HwpVrtkixvcBuOFo2ydcFzMtXjx+3Iwr5g++inX+6YDH7J/8fOCAtBetz8aDyaYCRkGy2nnG/w=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/research/day-herculaneum-scrolls-began-speaking-again" />
+<link rel="shortlink" href="/node/263831" />
+<meta name="description" content="The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world." />
+<meta itemprop="name" content="The day the Herculaneum scrolls began speaking again" />
+<meta itemprop="image" content="https://uknow.uky.edu/sites/default/files/styles/facebook/public/scroll%20text.jpg?itok=Q5FMqcpS" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@universityofky" />
+<meta name="twitter:title" content="The day the Herculaneum scrolls began speaking again" />
+<meta name="twitter:description" content="The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world." />
+<meta name="twitter:image:src" content="https://uknow.uky.edu/sites/default/files/styles/twitter_summary_large/public/scroll%20text.jpg?itok=3k3FsH1Z" />
+<meta property="og:title" content="The day the Herculaneum scrolls began speaking again" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again" />
+<meta property="og:image" content="https://uknow.uky.edu/sites/default/files/styles/facebook/public/scroll%20text.jpg?itok=Q5FMqcpS" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:description" content="The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world." />
+<meta property="og:site_name" content="UKNow" />
+<meta property="article:published_time" content="2026-06-26T08:00:00-04:00" />
+<meta property="article:modified_time" content="2026-06-26T09:00:01-04:00" />
+<meta property="article:section" content="Research" />
+<link rel="shortcut icon" href="https://uknow.uky.edu/sites/all/themes/uknow_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <title>The day the Herculaneum scrolls began speaking again | UKNow</title>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K55MNK');</script>
+      <!-- End Google Tag Manager -->
+
+      <link rel="mask-icon" href="/sites/all/themes/uknow_theme/img/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/uknow_theme/img/apple-touch-icon.png">
+
+    <link type="text/css" rel="stylesheet" href="https://uknow.uky.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://uknow.uky.edu/sites/default/files/css/css_931f0X00kV8e6nt-2_CRQvuIFYAPTo45zNmYWXaEHMM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://uknow.uky.edu/sites/default/files/css/css__AnA06v-oC191ciXWx5vfLgRNk_F_fmk7Otj9F-gG_o.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://uknow.uky.edu/sites/default/files/css/css_-nnUMIOvjoJ-qTm7BezOQTG9k0_05YcryNtoqdp5G4Q.css" media="all" />
+    <script type="text/javascript" src="https://uknow.uky.edu/sites/default/files/js/js_a8MyAHRjajLu6SNTDzhm_ZUhUeIq_Ao6d-T9QrOU9BI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://uknow.uky.edu/sites/default/files/js/js_Hfha9RCTNm8mqMDLXriIsKGMaghzs4ZaqJPLj2esi7s.js"></script>
+<script type="text/javascript" src="https://uknow.uky.edu/sites/default/files/js/js_rpNSt_iz67BdUOiX-6hgAw47qD1B085wu6TXjJUA5Ok.js"></script>
+<script type="text/javascript" src="https://uknow.uky.edu/sites/default/files/js/js_iQ-FsnoDJAxC0I2wYorhP7T2oX20HBPNfW8uOChy-MU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"uknow_theme","theme_token":"dUtsspWU5k5h_zLzP6uFZj-2JfldAPx1z7j5bkFzhIg","js":{"sites\/all\/modules\/contrib\/picture\/picturefill\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/fb_instant_articles\/modules\/fb_instant_articles_display\/js\/admin.js":1,"sites\/all\/themes\/uknow_theme\/js\/modernizr-custom.js":1,"sites\/all\/themes\/uknow_theme\/js\/picturefill.js":1,"sites\/all\/themes\/uknow_theme\/js\/uknow.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/uknow_theme\/css\/uknow.css":1}},"currentPath":"node\/263831","currentPathIsAdmin":false});
+//--><!]]>
+</script>
+  </head>
+
+  <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-263831 node-type-story" >
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K55MNK"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    
+<div class="uknow-searchbar" aria-hidden="true" id="uknow-searchbar">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <symbol id="x" Viewbox="-110.7 118.8 23.3 23.3">
+            <path d="M-87.3 121l-2.2-2.2-9.5 9.6-9.5-9.6-2.2 2.2 9.6 9.5-9.6 9.5 2.2 2.2 9.5-9.6 9.5 9.6 2.2-2.2-9.6-9.5"></path>
+        </symbol><!--end x-->
+
+        <symbol id="search" viewBox="0 0 16.7 16.8">
+            <path d="M9.7 0c-3.9 0-7 3.1-7 7 0 1.6.5 3.1 1.4 4.2L0 15.4l1.4 1.4 4.2-4.2c1.2.9 2.6 1.4 4.1 1.4 3.9 0 7-3.1 7-7s-3.1-7-7-7zm0 12c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z" class="st0"></path>
+        </symbol>
+    </svg>
+
+    <div class="uknow-searchbar__container">
+        <div class="uknow-searchbar__row">
+
+            <div class="uknow-searchbar__form">
+<!--                <form method="" action="">-->
+<!--                    <input class="uknow-searchbar__input" type="search" name="search-string" placeholder="Search UK Now">-->
+<!--                    <input  class="uknow-searchbar__submit" type="submit" name="submit" value="Search">-->
+                    <form action="/research/day-herculaneum-scrolls-began-speaking-again" method="post" id="search-block-form" accept-charset="UTF-8"><div> <input class="uknow-searchbar__input" title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value=""  placeholder="Search UKNow" maxlength="128" >
+    <input type="submit" id="edit-submit" name="op" value="Search" class="uknow-searchbar__submit">
+    <input type="hidden" name="form_build_id" value="form-BgZUFxGw979qp7z51F1Md969uRjhkrXM2_YzVA6d-2A" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div></form><!--                </form>-->
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div  class="uknow-searchbar__button uknow-searchbar__button--dropdown">
+        <button aria-expanded="false" aria-controls="uknow-searchbar" >
+
+            <svg class="uknow-searchbar__dismiss">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#x"></use>
+            </svg>
+
+            <svg id="search-button" class="uknow-searchbar__search">
+                <!--                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>-->
+            </svg>
+
+        </button>
+    </div>
+
+
+
+</div>
+
+
+<header role="banner" class="uknow-header ">
+
+    <div class="uknow-header__container">
+        <div class="uknow-header__row">
+
+            <div class="uknow-header__menu--left">
+                <ul class="uknow-buttons-inline">
+                    <li>
+                        <div class="uknow-uk-lockup">
+    
+    <a href="http://www.uky.edu" target="_blank">
+        <img class="uknow-uk-lockup--white hidden-xs" src="/sites/all/themes/uknow_theme/img/uk-lockup.svg" />
+
+        <img class="uknow-uk-lockup--white visible-xs-block" src="/sites/all/themes/uknow_theme/img/uk-logo.svg" />
+
+    </a>
+
+</div>                    </li>
+                </ul>
+            </div>
+
+
+            <div class="uknow-header__uk-branding">
+                <a href="/">
+                <img src="/sites/all/themes/uknow_theme/img/uknow-logo_large.svg" class="hidden-xs hidden-sm  hidden-md center-block"/>
+                    <img src="/sites/all/themes/uknow_theme/img/uknow-logo_medium.svg" class="hidden-xs  hidden-sm hidden-lg center-block"/>
+                    <img src="/sites/all/themes/uknow_theme/img/uknow-logo_small.svg" class=" hidden-md hidden-lg center-block"/>
+                </a>
+            </div>
+
+            <div class="uknow-header__menu--right">
+                <ul class="uknow-buttons-inline--right">
+                    <li>
+                        <div class="uknow-searchbar__button">
+                            <button aria-expanded="false" aria-controls="uknow-searchbar" >
+
+                                <svg class="uknow-searchbar__dismiss">
+                                    <!--                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#x"></use>-->
+                                </svg>
+
+                                <svg id="search-button" class="uknow-searchbar__search">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                                </svg>
+
+                            </button>
+
+
+                        </div>
+
+                    </li>
+                    <li>
+                        <button class="uknow-section-offcanvas__button"  title="Section navigation menu" aria-label="Section navigation menu" role="button" aria-controls="section-navigation" aria-expanded="false" >
+                            <span class="uknow-section-offcanvas__button-text">Sections</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    
+</header>
+
+    <div class="middle-container  ">
+        
+<div class="uknow-section-offcanvas uknow-section-offcanvas--right " id="section-navigation" aria-hidden="true">
+    <div class="uknow-section-offcanvas__inner">
+        
+        <ul class="uknow-section-offcanvas__list">
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/campus-news">Campus News</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/student-news">Student News</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/uk-healthcare">UK HealthCare</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/research">Research</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/uk-happenings">UK Happenings</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/arts-culture">Arts & Culture</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/professional-news">Professional News</a>
+            </li>
+                        <li class="uknow-section-offcanvas__list-item">
+                <a class="uknow-section-offcanvas__link" href="/blogs">Blogs</a>
+            </li>
+                    </ul>
+
+    </div>
+</div>
+        <div class="container uknow-section-offcanvas__content uknow-section-offcanvas__content--right">
+                    
+
+
+
+    
+
+        
+    
+<!--<div id="node-263831" class="node node-story clearfix" about="/research/day-herculaneum-scrolls-began-speaking-again" typeof="sioc:Item foaf:Document">-->
+<article class="uknow-story">
+    
+    <header class="uknow-story__header">
+       <div class="uknow-story__header-section-link">
+                      <a href="/research">
+                Research          </a>
+       </div>
+      <h1 itemprop="headline" class="uknow-story__title">The day the Herculaneum scrolls began speaking again</h1>
+    </header>
+
+    <section class="uknow-story__main-content">
+
+        <div class="uknow-story__byline-dateline">
+        <span class="uknow-story__byline">
+            By
+
+<a href="/authors/lindsey-piercy">
+    Lindsey Piercy</a>        </span>
+
+        <span class="uknow-story__dateline">
+                June 26, 2026        </span>
+        </div>
+
+        
+
+<div class="uknow-video-embed">
+
+<div class="uknow-video-embed--youtube"><iframe src="https://www.youtube.com/embed/ljOuej6Nt8s" frameborder="0" allowfullscreen></iframe></div>
+
+        <div class="uknow-photo__caption">
+       <div class="video-embed-description">Researchers have virtually unwrapped the surviving portion of the PHerc. 1667 scroll. Video by UK Pigman College of Engineering.</div>    </div>
+    
+<div>
+                
+        <div class="field field-name-field-story-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>A media kit is available at <a href="https://engr.uky.edu/herculaneum">https://engr.uky.edu/herculaneum</a>.</strong></p>
+
+<p><strong>NAPLES, Italy (June 25, 2026)</strong> <strong>—</strong> The <a href="http://www.scrollprize.org/">Vesuvius Challenge</a> has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world.</p>
+
+<p>On Thursday, at the <a href="https://www.bnnonline.it/it/1/home">Biblioteca Nazionale di Napoli Vittorio Emanuele III</a> — with Mount Vesuvius rising in the distance — lead researchers, collaborators and distinguished guests gathered to mark the milestone decades in the making.</p>
+
+<p>The achievement underscores both the scale of the scientific breakthrough and the extraordinary international collaboration that made it possible.</p>
+
+<p>It also marks a pivotal moment for a project the <a href="https://www.uky.edu/">University of Kentucky</a> has led for years — steadily advancing toward a goal many once thought impossible.</p>
+
+<p>“For nearly two millennia, many of these texts have been physically preserved but intellectually inaccessible,” said Brent Seales, Vesuvius Challenge co-founder and the Stanley and Karen Pigman Chair of Heritage Science at the University of Kentucky. “Today — after years of interdisciplinary work combining advanced imaging, artificial intelligence (AI), academic research and an innovation contest — we are finally able to read them.”</p>
+
+<p>“Through this work, the University of Kentucky and its partners have become global leaders in digital heritage science — proving what is possible when innovation, collaboration and purpose come together,” University of Kentucky Provost Robert S. DiPaola said. “This breakthrough shows that when we unite advanced technology with shared purpose, we can recover the past and open the door to discoveries that will shape the future.”</p>
+
+<p>Among the discoveries:</p>
+
+<ul>
+	<li>Full virtual unwrapping of the surviving portion of PHerc. 1667 — revealing nearly 1.5 meters of text across 20 columns</li>
+	<li>Recovery of more than 70 columns of text from PHerc. 172, housed at Oxford’s Bodleian Library</li>
+	<li>Identification of completely new books from the ancient world by Epicurean philosopher Philodemus, including <em>On Vices, Book 1</em> and <em>On Gods, Book 8</em></li>
+	<li>Recovery of sufficient text to support new critical scholarly editions</li>
+</ul>
+
+<p>The findings represent the most significant revelation of text since the earliest attempts to physically open the scrolls more than two centuries ago.</p>
+
+<p>Scholars can now follow arguments, trace ideas across multiple columns and understand these works as complete compositions — rather than archaeological fragments.</p>
+
+<h4><strong>A lost library begins to speak again</strong></h4>
+
+<p>Among the most significant breakthroughs announced is the recovery of substantial new text from PHerc. 1667 — a scroll housed in Naples, Italy.</p>
+
+<p><a href="https://youtu.be/ljOuej6Nt8s?si=I8hr0USWStxLbSwV">Researchers have now virtually unwrapped the surviving portion of the scroll </a>— revealing nearly 1.5 meters of continuous text and approximately 20 columns of writing.</p>
+
+<p>“This scroll was deemed completely unreadable when part of it was opened in the 1980s,” Federica Nicolardi, assistant professor in papyrology at the Università degli Studi di Napoli Federico II, said. “While a few isolated letters were visible, overlapping layers obscured the writing, and the scroll was assigned a readability score of zero. But now, with virtual unwrapping, we can follow sustained arguments across multiple columns. That's a transformational shift.”</p>
+
+<p>Nicolardi leads a team of Vesuvius Challenge papyrologists whose contributions are essential to both the creation of machine learning models and to the interpretation of text from the scrolls.</p>
+
+<p>Current team members include: Marzia D’Angelo, Killian Fleischer, Alessia Lavorante, Michael McOker, Maria Chiara Robustelli, Claudio Vergara, Rossella Villa.</p>
+
+<p>Nicolardi says PHerc. 1667 survives today as only part of a once-complete scroll. It measures approximately 8 centimeters in height — less than half the size of a typical Herculaneum roll — and about 2 centimeters in diameter. Historical records from 1782 describe it as a compressed but largely intact object, with the same height as today but with a diameter more than twice as large. Subsequent attempts to physically open it damaged its structure and reduced its size.</p>
+
+<p>“The scroll’s handwriting and internal references suggest the artifact dates from the second century B.C. or possibly from the late third century B.C. — making it one of the oldest scrolls in the collection,” she explained. “The date also places it firmly within the intellectual world of Hellenistic philosophy.”</p>
+
+<p>Although the title and author remain unknown, both the early dating and its contents suggest a writer other than Philodemus of Gadara — the Greek philosopher whose works predominate the discoveries from Herculaneum papyri to date.</p>
+
+<p>“The Herculaneum collection does include other authors, such as Epicurus himself and other Epicurean authors whose dates fit the proposed chronology,” Lavorante said. “There are also books by the Stoic philosopher Chrysippus. So, it could be one of them — or someone entirely new.”</p>
+
+<p>According to the papyrological team’s analysis, the text does appear to be a philosophical treatise concerned with ethics, arts and human behavior, likely reflecting Stoic thought.</p>
+
+<p>“If this text had been found in Egypt or anywhere else, it would probably have been classified straight away as a Stoic text. The fact that it comes from a collection that is almost entirely Epicurean makes us more cautious in drawing conclusions,” Nicolardi added. “But if the text is indeed a Stoic treatise, Chrysippus would be a good candidate for authorship, and the mention in the text of Aristocreon, Chrysippus’ nephew and pupil, might point in the same direction.”</p>
+
+<p>As the third head of the Stoic school and one of its most influential thinkers, Chrysippus played a major role in shaping Stoic doctrine — yet very little of his own work survives. A new text that could plausibly be attributed to him would therefore be extremely important for understanding of early Stoicism.</p>
+
+<p>“This is not just a technical recovery — it’s the return of a philosophical voice,” Nicolardi said.</p>
+
+<p>The recovered text preserves discussions of core Stoic concepts, including <strong>ὁρμή</strong> (<em>hormē)</em>, or impulse, understood as the drive to act common to both humans and animals. The author appears to warn against excessive impulse — <strong>ὁ πλεoνασμός κατὰ τὴν ὁρμήν </strong>(<em>ho pleonasmos kata tēn hormēn</em>)— when reason fails to regulate behavior and leads to a harmful passion or diversion from one’s goals.</p>
+
+<p>Another key concept is <strong>φρόνησις</strong> (<em>phronēsis</em>), or practical wisdom — the set of intellectual activities that guide one to make the right choices and to choose virtues over vices. “When framed in a Stoic context, phronesis is the highest virtue a person can possess, the means to distinguish what is good from what is evil, as well as what is neither good nor evil,” Robustelli explained.</p>
+
+<p>In another passage, the author writes:</p>
+
+<p>“We will inquire into something, but we will not grasp it, if in some way we depart from ourselves and from our own nature.”</p>
+
+<p>“By ‘our own nature,’ the author appears to refer to human rationality and our innate inclination toward goodness (echoing Stoic philosophy), perhaps suggesting the use of reason and listening to one’s inner drive are leading and crucial principles for seeking knowledge and virtue,” Vergara said. </p>
+
+<h4><strong>Additional discovery: New Philodemus text identified</strong></h4>
+
+<p>A second major breakthrough announced is the identification of a new book title within PHerc. 139.</p>
+
+<p>In the final portion of the virtually unwrapped surface, papyrologists from the Vesuvius Challenge were able to read: Φ̣ι[λοδ]ή̣μου | περὶ θεῶν Η̅ — “Philodemus, On Gods, Book 8.”</p>
+
+<p>The overlined Η is understood as a book number.</p>
+
+<p>The presence of Philodemus’ name — the most extensively attested Epicurean philosopher in the Herculaneum library — allows scholars to date the scroll to between the first century B.C. and the first century A.D.</p>
+
+<p>The discovery is significant. For the first time, it establishes that “On Gods” was a multibook work extending to at least eight books. Until now, only the first book was known (PHerc. 26).</p>
+
+<p>Scholars are now reassessing related texts within the Herculaneum collection that address similar theological themes. Some –– even if preserved under different titles –– may belong to the same series.</p>
+
+<p>Among these are:</p>
+
+<ul>
+	<li>“On the Lifestyle of the Gods” (Περὶ τῆς τῶν θεῶν διαγωγῆς), preserved in PHerc. 152/157</li>
+	<li>Works concerning the nature of divine knowledge (PHerc. 89/1301/1383)</li>
+	<li>Texts addressing providence (PHerc. 1670)</li>
+</ul>
+
+<p>In addition to the end-title, early readings from the virtually unwrapped surface have revealed key theological terms and phrases that offer initial insight into the work’s content.</p>
+
+<p>These include references to:</p>
+
+<ul>
+	<li>πρόνοια (“providence”) and χωρὶς προνο[ί]α̣ς̣ (“without providence”)</li>
+	<li>θεοῦ (“god”) and ἀόρατα (“invisible entities,” including the divine)</li>
+	<li>κατὰ φύσιν (“according to nature”)</li>
+	<li>θεωρήμασιν (“theories”)</li>
+	<li>ζῶια / ζώιων (“living beings”)</li>
+	<li>τὰ μέλλοντα (“future things”)</li>
+	<li>τ̣ὸ̣ νοερὸν (“the intellective principle”)</li>
+</ul>
+
+<p>Taken together, these elements point to a sustained philosophical treatment of Epicurean theology, including the nature of the gods, the role of providence and the structure of the universe.</p>
+
+<p>“This is a crucial piece of evidence for understanding Philodemus’ work,” D’Angelo  said. “For the first time, we can situate “On Gods” within a broader structure and begin to see how these texts relate to one another as part of a sustained philosophical inquiry of theological concepts in circulation in Ancient Rome.”</p>
+
+<h4><strong>From scanning to scholarship</strong></h4>
+
+<p>The breakthrough was made possible through high-resolution micro-CT scanning conducted at major international facilities, including Diamond Light Source in the United Kingdom and the European Synchrotron Radiation Facility (ESRF) in France.</p>
+
+<p>Diamond Light Source uses intense synchrotron-generated X-rays to perform imaging at a level of resolution not achievable with conventional laboratory-based instruments.</p>
+
+<p>“Using our I12 beamline — a high-energy beamline designed specifically for imaging — we worked in partnership with the Vesuvius Challenge and librarians from the University of Oxford to provide the first scan ever of a Herculaneum scroll housed in the Bodleian Libraries’ collection, producing exceptionally detailed images of its internal structure.” said Elizabeth Shotton, with Diamond Light Source.</p>
+
+<p>Vesuvius Challenge also capitalized on the increased capabilities of the first fourth-generation high-energy synchrotron at ESRF in Grenoble, France, which came online in 2020 after a 20-month shutdown and an investment of 150 million Euros from 21 nations.</p>
+
+<p>“The beam produced by the Extremely Brilliant Source is both exceptionally fine and remarkably stable. At the new BM18 flagship beamline, it enables us to detect extremely subtle variations and reconstruct high-quality tomographic images,” said Alessandro Mirone, with ESRF. “Our role is to provide the most precise three-dimensional representation possible. These data serve as the foundation for the virtual unwrapping pipeline developed by the Vesuvius Challenge team, as well as for their neural network analysis.”</p>
+
+<p>The Vesuvius Challenge scans represent the largest dataset ever produced by ESRF. Individual scans generated datasets measuring as much as 300 terabytes per scroll — creating the most detailed three-dimensional maps of the carbonized artifacts to date.</p>
+
+<h4><strong>The role of the Vesuvius Challenge</strong></h4>
+
+<p>Launched in 2023, the Vesuvius Challenge transformed a long-standing scholarly problem into a global, open competition — mobilizing researchers, engineers and citizen scientists to do what had never been done before: read the Herculaneum scrolls without physically opening them.</p>
+
+<p>The initiative built on decades of work led by Seales — and a team of researchers with <a href="https://educelab.engr.uky.edu/">University of Kentucky’s EduceLab</a> — who demonstrated machine learning could detect ink hidden within X-ray scans of carbonized papyri. With that proof of concept, Seales joined Silicon Valley leaders Nat Friedman and Daniel Gross to launch a $1 million global challenge aimed at accelerating progress.</p>
+
+<p>Through the competition, Seales’ team released open-source software and high-resolution 3D X-ray images from two intact scrolls and several fragments.</p>
+
+<p>The response was immediate and transformative.</p>
+
+<p>What began as an ambitious experiment quickly became a breakthrough — <a href="https://scrollprize.org/firstletters">reading the first letters from within the scrolls</a> within months and demonstrating that large-scale recovery was within reach.</p>
+
+<p>Today, the Vesuvius Challenge has a dedicated team of researchers and technical experts who support contestants with preconditioned data, new tools and improved access to the scroll scans.</p>
+
+<p>“The challenge is ongoing; we need everyone’s help to read the scrolls, and a new web interface at <a href="https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscrollprize.org%2F&amp;data=05%7C02%7Ccychapman%40uky.edu%7Ca0c816fb46bd4e57a16b08decb71fc9e%7C2b30530b69b64457b818481cb53d42ae%7C0%7C0%7C639171887731040625%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=aiPwiJL%2BYfypxB4%2F0YVXq6HR82CMQlK1vjFEqG72CGw%3D&amp;reserved=0" target="_blank" title="Original URL: http://scrollprize.org/. Click or tap if you trust this link.">scrollprize.org</a> makes it easier than ever for individuals to access the data and participate,” said Giorgio Angelotti, project lead with the Vesuvius Challenge.</p>
+
+<p>At its core, the Vesuvius Challenge has become more than a competition. It’s a collaborative effort to recover a lost library — powered by shared data, open innovation and a global community united by a common goal: bringing ancient voices back to life.</p>
+
+<p>“The scrolls have always been a passion project — bringing together people from all walks of life to recover pieces of our shared history,” said Sean Johnson, former contestant who now works on the Vesuvius Challenge technical team. “From the moment I read my first letter, I was hooked. There is nothing like uncovering text no one has seen in two millennia, alongside a community just as driven to see it through.”</p>
+
+<h4><strong>From breakthrough to cultural recovery</strong></h4>
+
+<p>For centuries, the study of ancient papyri has been constrained by fragmentary evidence and the physical limitations of fragile artifacts.</p>
+
+<p>Today’s breakthrough marks a turning point — not in technology, but in purpose.</p>
+
+<p>As new texts are emerging faster than ever from the carbonized papyri, the focus is shifting from the engineers and computer scientists designing high-tech tools to the experienced papyrologists, classicists and historians who can interpret, contextualize and ultimately bring these ancient works back into human knowledge.</p>
+
+<p>“This is no longer just about imaging or machine learning,” Seales said. “Now we need experts who can read, edit and understand what they are saying.”</p>
+
+<p>More than 600 Herculaneum scrolls remain unopened.</p>
+
+<p>Recovering them has become a truly international effort — uniting research institutions, libraries and cultural heritage organizations across Europe and the United States to restore one of the most important surviving libraries of the ancient world.</p>
+
+<p>The implication is profound.</p>
+
+<p>It’s about the enduring power of human connection. How far will we go to preserve it?</p>
+
+<p>Across 2,000 years, across languages, cultures and civilizations, people continue to reach for one another through words.</p>
+
+<p>“Today, we are hearing voices that have been silent for 2,000 years,” Seales said. “For the first time, we are uncovering and reading them — but most importantly — we are beginning to understand them.”</p>
+
+<p>The groundbreaking work has garnered widespread global media coverage, <a href="https://www.nationalgeographic.com/history/article/herculaneum-scrolls-mount-vesuvius-ai">with National Geographic among the outlets highlighting the announcement</a>.</p>
+
+<p>More information, including images and video, <a href="https://engr.uky.edu/herculaneum">is available on the Herculaneum discovery website</a>.</p>
+</div></div></div>
+        <div class="uknow-slideshow"><div class="uknow-slideshow__header"><div class="uknow-slideshow__state"><span class="uknow-slideshow__current"></span> of <span class="uknow-slideshow__total"></span></div><!-- end &__state --><div class="uknow-slideshow__controls"><span class="uknow-slideshow__previous"><i class="fa fa-chevron-left fa-1x"></i></span><span class="uknow-slideshow__next"> <i class="fa fa-chevron-right fa-1x"></i></span></div><!-- end &__controls --></div><!-- end &__header --><div class="uknow-slideshow__container"><div class="uknow-slideshow__previous--overlay"><i class="fa fa-chevron-left fa-1x"></i></div><div class="uknow-slideshow__next--overlay"><i class="fa fa-chevron-right fa-1x"></i></div><div class="uknow-slideshow__item"><img  src="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/scroll%20text.jpg" srcset="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/scroll%20text.jpg 718w, https://uknow.uky.edu/sites/default/files/styles/uknow_story_image_md/public/scroll%20text.jpg 592w, https://uknow.uky.edu/sites/default/files/styles/uknow_story_image_xs/public/scroll%20text.jpg 450w" sizes="(min-width:1200px) 718px, (min-width:992px)  592px, (min-width:481px)  718px, (max-width:480px)  450px" alt="Ancient stone fragment with several lines of worn Greek lettering carved into a rough, broken surface; the text is partially legible but faded and uneven, with irregular edges and a dark background." title="Image of text in a scroll" data-caption="The virtually unwrapped grand prize region of Pherc.Paris 4 from new high resolution data — revealing ancient Greek text. Image courtesy of Vesuvius Challenge" /></div><div class="uknow-slideshow__item"><img  src="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/MM10354_260324_000457%202.jpg" srcset="https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/MM10354_260324_000457%202.jpg 718w, https://uknow.uky.edu/sites/default/files/styles/uknow_story_image_md/public/MM10354_260324_000457%202.jpg 592w, https://uknow.uky.edu/sites/default/files/styles/uknow_story_image_xs/public/MM10354_260324_000457%202.jpg 450w" sizes="(min-width:1200px) 718px, (min-width:992px)  592px, (min-width:481px)  718px, (max-width:480px)  450px" alt="Herculaneum scroll 1667 on white background with person&#039;s hand next to it on the left." title="photo of Herculaneum scroll 1667" data-caption="Among the most significant breakthroughs announced is the recovery of substantial new text from PHerc. 1667 — a scroll housed in Naples, Italy. Paolo Verzone | National Geographic" /></div></div><!-- end &__container--><div class="uknow-photo__caption"></div></div><!-- end uknow-slideshow -->
+        
+
+    <div class="uknow-story-boilerplate">
+        <p><em>As the state’s flagship, land-grant institution, the University of Kentucky exists to advance the Commonwealth. We do that by preparing the next generation of leaders — placing students at the heart of everything we do — and transforming the lives of Kentuckians through education, research and creative work, service and healthcare. We pride ourselves on being a catalyst for breakthroughs and a force for healing, a place where ingenuity unfolds. It's all made possible by our people — visionaries, disruptors and pioneers — who make up 200 academic programs, a $1.02 billion research and development enterprise and a world-class medical center, all on one campus.</em></p>    </div>
+
+
+    </section>
+
+    <!--photos...-->
+    <section class="uknow-story__sidebar">
+
+                
+
+                <aside class="uknow-media-resources">
+            <h4 class="uknow-media-resources__title">Media Resources</h4>
+            
+<div class="uknow-media-resources__item">
+    <h4 class="uknow-media-resources__heading">Contact</h4>
+    
+        <div class="uknow-media-resources__contact">
+            <div class="uknow-media-resources__contact-name">
+                Lindsey Piercy<br/>
+                <a class="uknow-media-resources__contact-email" href="mailto:lindsey.piercy@uky.edu">
+                    lindsey.piercy@uky.edu                </a> <br/>
+                <span class="uknow-media-resources__contact-phone">859-323-5613</span>
+            </div>
+
+        </div>
+
+   
+</div>
+
+
+        </aside>
+        
+
+        <div class="uknow-share">
+            <h4 class="uknow-share__block-title">Share This</h4>
+            
+            <ul class="rrssb-buttons clearfix">
+                <li class="rrssb-facebook">
+                    <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again?utm_medium=social&utm_source=facebook.com" class="popup">
+                        <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg></span>
+                        <span class="rrssb-text">facebook</span>
+                    </a>
+                </li>
+                <li class="rrssb-twitter">
+                    <!-- Replace href with your Meta and URL information  -->
+                    <a href="https://twitter.com/intent/tweet?text=https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again?utm_medium=social&amp;utm_source=twitter.com"
+                       class="popup">
+                        <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"/></svg></span>
+                        <span class="rrssb-text">twitter</span>
+                    </a>
+                </li>
+                <li class="rrssb-email">
+                    <!-- Replace subject with your message using URL Encoding: http://meyerweb.com/eric/tools/dencoder/ -->
+                    <a href="mailto:?Subject=The day the Herculaneum scrolls began speaking again&body=https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again?utm_medium=social&utm_source=email">
+                        <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"/></svg></span>
+                        <span class="rrssb-text">email</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+        
+
+                <h2 class="uknow-story-list__list-title uknow-story-list__list-title--sidebar">Latest Stories</h2>
+        
+    <div class="content">
+        
+
+
+
+        
+
+<div class="uknow-story-list">
+    
+    
+        
+<div class="uknow-story-list__list-item" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+
+        <div class="uknow-story-list__kicker-date">
+            <span class="uknow-story-list__kicker"><div class="field-content">Campus News</div> </span>
+            <span class="uknow-story-list__date"><div class="field-content">Friday</div></span>
+        </div>
+
+        <h3 itemprop="headline" class="uknow-story-list__link"><span class="field-content"><a href="/campus-news/upcoming-lane-and-road-closures-cooper-and-university-drives">Upcoming lane and road closures: Cooper and University Drives</a></span></h3>
+
+
+
+</div>
+
+    
+        
+<div class="uknow-story-list__list-item" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+
+        <div class="uknow-story-list__kicker-date">
+            <span class="uknow-story-list__kicker"><div class="field-content">Campus News</div> </span>
+            <span class="uknow-story-list__date"><div class="field-content">Friday</div></span>
+        </div>
+
+        <h3 itemprop="headline" class="uknow-story-list__link"><span class="field-content"><a href="/campus-news/new-garage-spaces-opening-help-offset-anticipated-loss-orange-lot-spaces-0">New garage spaces opening to help offset anticipated loss of Orange Lot spaces  </a></span></h3>
+
+
+
+</div>
+
+    
+        
+<div class="uknow-story-list__list-item" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+
+        <div class="uknow-story-list__kicker-date">
+            <span class="uknow-story-list__kicker"><div class="field-content">UK HealthCare</div> </span>
+            <span class="uknow-story-list__date"><div class="field-content">Friday</div></span>
+        </div>
+
+        <h3 itemprop="headline" class="uknow-story-list__link"><span class="field-content"><a href="/uk-healthcare/how-keep-your-family-safe-halloween-season">How to keep your family safe this Halloween season </a></span></h3>
+
+
+
+</div>
+
+    
+        
+<div class="uknow-story-list__list-item" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+
+        <div class="uknow-story-list__kicker-date">
+            <span class="uknow-story-list__kicker"><div class="field-content">UK Happenings</div> </span>
+            <span class="uknow-story-list__date"><div class="field-content">Friday</div></span>
+        </div>
+
+        <h3 itemprop="headline" class="uknow-story-list__link"><span class="field-content"><a href="/uk-happenings/uk-partnership-helps-bring-people-opportunity-home-eastern-kentucky">UK partnership helps bring people, opportunity home to Eastern Kentucky</a></span></h3>
+
+
+
+</div>
+
+    
+        
+<div class="uknow-story-list__list-item" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+
+        <div class="uknow-story-list__kicker-date">
+            <span class="uknow-story-list__kicker"><div class="field-content">UK HealthCare</div> </span>
+            <span class="uknow-story-list__date"><div class="field-content">Thursday</div></span>
+        </div>
+
+        <h3 itemprop="headline" class="uknow-story-list__link"><span class="field-content"><a href="/uk-healthcare/coaches-kids-coach-stein-present-135-million-check-golisano-children-s-uk">Coaches for the Kids, Coach Stein, present $1.35 million check to Golisano Children’s at UK </a></span></h3>
+
+
+
+</div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+    </section>
+
+</article>
+
+
+
+
+
+          <script type="text/javascript" src="https://uknow.uky.edu/sites/default/files/js/js_7-q4xx5FaXgFWWma9tMCS9Q__822jcg6rhczPisS8LQ.js"></script>
+        </div>
+    </div>
+    <div class="footer-container">
+        <footer  role="" class="uknow-footer">
+    <div class="row">
+        <div class="uknow-footer__column col-sm-2">
+            <div class="uknow-social-media">
+    <svg style="display:none">
+        <symbol id="facebook" viewBox="0 0 68.4 14">
+            <path id="XMLID_14_" d="M36.5 6.8c-.6 0-1 .2-1.4.4v4.4h1c1.4 0 1.6-.6 1.6-1.5V8c0-.7-.2-1.2-1.2-1.2m-9.3-.2c-1 0-1.2.5-1.2 1.2v.4h2.4v-.4c0-.7-.3-1.2-1.2-1.2M9.1 11.2c0 .5.2.8.8.8.6 0 .9-.2 1.4-.4v-1H10c-.6-.1-.9 0-.9.6m36.5-4.4c-1 0-1.3.5-1.3 1.2v2.4c0 .7.3 1.2 1.3 1.2s1.3-.5 1.3-1.2V8c0-.7-.4-1.2-1.3-1.2M4.3 13.9H1.4v-7H0V4.5h1.4V3.1c0-1.9.8-3.1 3.1-3.1h1.9v2.4H5.3c-.9 0-1 .3-1 1v1.2h2.2l-.3 2.3H4.3v7zm9.8 0h-2.4l-.1-.6c-1.1.6-2.1.7-2.7.7-1.8 0-2.7-1.2-2.7-2.8 0-1.9 1.1-2.6 3-2.6h2v-.4c0-1-.1-1.3-1.6-1.3H7.2l.2-2.4h2.7c3.3 0 4 1 4 3.7v5.7zm8.1-6.8c-1.5-.3-1.9-.3-2.6-.3-1.3 0-1.7.3-1.7 1.4v2.1c0 1.1.4 1.4 1.7 1.4.7 0 1.1-.1 2.6-.3v2.3c-1.3.3-2.2.4-2.9.4-3.1 0-4.3-1.6-4.3-4V8.4c0-2.3 1.2-4 4.3-4 .7 0 1.6.1 2.9.4v2.3zm9 2.9H26v.2c0 1.1.4 1.4 1.7 1.4 1.2 0 1.9-.1 3.3-.3v2.3c-1.4.3-2.2.4-3.6.4-3.1 0-4.3-1.6-4.3-4V8.1c0-2 .9-3.7 4.1-3.7 3.2 0 4.1 1.7 4.1 3.7V10zm9.4.1c0 2.3-.6 3.9-4.6 3.9-1.4 0-2.2-.1-3.8-.4V.7l2.9-.5v4.5c.6-.2 1.4-.3 2.2-.3 2.9 0 3.3 1.3 3.3 3.3v2.4zm9.1 0c0 1.9-.8 3.8-4.2 3.8-3.4 0-4.2-1.9-4.2-3.8V8.3c0-1.9.8-3.8 4.2-3.8 3.4 0 4.2 1.9 4.2 3.8v1.8zm9.2 0c0 1.9-.8 3.8-4.2 3.8-3.4 0-4.2-1.9-4.2-3.8V8.3c0-1.9.8-3.8 4.2-3.8 3.4 0 4.2 1.9 4.2 3.8v1.8zm9.5 3.8h-3.1l-2.6-4.4v4.4h-2.9V.7l2.9-.5v8.5l2.6-4.2h3.1L65.5 9l2.9 4.9zM54.7 6.8c-1 0-1.3.5-1.3 1.2v2.4c0 .7.3 1.2 1.3 1.2s1.3-.5 1.3-1.2V8c.1-.7-.3-1.2-1.3-1.2" class="st0"/>
+        </symbol>
+        <symbol id="facebook-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_64_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm.1 9.1h-1.9c-1 0-2.3.9-2.3 2.5v.9h4.2V17h-4.2v13.2h-5.8V17h-3.5s-.1-4.5 0-4.5h3.6v-1.6c0-1.5.5-6.3 6-6.3h3.9v4.5z" class="st0"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 64.5 21.7">
+            <path d="M37.5 14.3c0 1.5.2 4.7-.6 5.8-.3.4-1 .9-1.4.3-1-1.4.8-5.5 2-6.1zm-1.1-8.9c.8-.3 1.1.5 1.2 1.2.1.9-.3 1.3-.3 2.1-.1 3.3-2.1 5.1-2.5 2.5-.2-1.6 0-5.2 1.6-5.8zm-7.5.2c1.1-.3 1.3 1.3 1.3 1.7-.1.6-.2-.3-.4 1.5-.1.9-.2 2.3-.6 3.1-.3.6-1.5 1.6-1.8-.5-.2-1.6-.1-5.4 1.5-5.8zM23.7.7C23.3.4 22.6.2 22 .2c-.2.9-.1 1.9-.2 2.9 0 .7-.2.5-1 .5-.5 0-1 0-1.3.2 0 .9 1.6.8 2.1 1 0 2.3-.5 5.1.3 7.2.3.8 1.1 1.9 2.3 1.4.9-.4 1.2-1.6 1.6-2.3.6 2.1.6 2 2.3 2.4 1.2.2 1.8-1.4 2.2-2.4.2.4.1.6.4 1.1.2.3.4.5.9.7 1 .2 1.5-.5 1.9-1l.1-.1c.3 1.5 1.2 1.5 2.1 1.7 1.2.3 1.5-1.1 1.9-1.7-.1 2.5.1 1.3-.9 2.4-.3.3-.5.5-.7.8-1.2 1.5-2.8 5.3-.7 6.3.6.3 2.1.5 2.7.2.6-.3.9-1.1 1.1-1.9.4-1.9 0-4 .2-5.9.5-.1.8.2 1-.3 0-.5-.6-.5-1-.5v-2.7c.1-2 .3-1.7.4-2.2-.2-.2-.1-.1-.4-.2-.3-.1-.2 0-.3-.2-.2-.6.4-1.6-.2-2.4-.5-.7-1.2-.6-2-1-1.8-.8-2.6 1-2.9 2.5-.5 2.5 0 4.1-.8 5-.8.9-1.1-.6-1.1-1.4-.1-2.5.8-2.5-.3-2.9-.2-1.2.2-2-.6-2.8-.2-.2-.8-.3-1.2-.5-.4-.2-.9-.3-1.5-.2-1.8.4-2 3.3-2.2 4.7-.1.6-.1-.2-.4 1.3-.5 2.3-1.6 3.1-2 1.5-.2-.8-.1-5.9.1-6.6.2-.2 1.9-.3 2.3-.3.4 0 .5.1.6 0 .7-.9-2.5-.8-2.9-.9L23.7.7z" class="st0"/>
+            <path d="M48.6 5.6c1-.3 1.3 1 1.3 1.7 0 .4 0 .2-.2.5-.4.6 0 4.1-1.4 4.8-1.5.8-1.3-2.5-1.3-3.5.2-1.2.4-3.2 1.6-3.5zm-8.5-.7c0 1 .1 2.1.1 3.2 0 .5 0 1.1-.1 1.6-.1.4-.3 1-.2 1.4.8.3.9-1.1 1-1.7.1-.7.2-1.8.4-2.4.1 0 .3-.1.4-.1.8.1.2 1.3.3 3 .1 1.3.6 4.2 2.4 3.5.7-.3 1-1 1.3-1.7.3.5.4 1.7 1.5 1.8 1.1.2 1.8.5 2.6-1.4.1-.1.1-.2.2-.4 0-.1.1-.1.1-.2.1-.1 0-.1.1-.1.1.8.7 1.6 1.5 1.7.9 0 1.4-.8 1.8-1.4.1.5 0 1.4.4 1.6.4.2 1.3.3 1.7.1.2-.3.1-1 .2-1.3 0-.4.1-.9.2-1.3s.3-2 .7-2.2c.2 1.5-.3 3.9.7 4.3.2.1.5.1.7.1.9 0 .6-.3.9-1.5.2-.8.8-2.9 1.3-3.4 0 1.2-.2 2.1 0 3.4.4 2.2 2.4 2.9 3.6.7.2-.4 1-2.2.6-2.7-.6-.6-.6 1.5-1.2 2.4-.3.4-.9.8-1.2.2-.2-.4-.3-1.1-.3-1.5-.1-3.7 1.2-3.5-.1-4.3-.5-.3-.8-.4-1.5-.3-.3.2-1.6 4.3-1.8 4.7-.1.1 0 .1-.1.1V8c0-.5.1-.9-.2-1.1-.3-.2-.7-.3-1.1-.2-.6.1-.8 1.1-1 1.7-.1.4-.6 1.8-.6 2V5.6C55 5 54 4.9 53.6 5c-.1.2-.1 2.9-.1 3.4 0 .7.1 1.1-.1 1.6-.2.3-.2.9-.4 1.3-.5 1.2-1.3 1.1-1.5-.3-.1-.5-.1-1.1 0-1.6 0-.5.3-1.1.2-1.4-.2-.3-.3-.2-.6-.4-.1-.8.1-1.6-.2-2.3-.3-.8-.7-.7-1.4-1-.6-.3-1.1-.6-2-.3-.6.2-.9.7-1.2 1.3-.3.5-.4 1.2-.6 1.9-.1.6-.1 1.7-.3 2.2-.3.9-.6 3.3-1.6 3.2-.6-.6-.5-2.1-.4-3.1 0-.5.1-1.1.2-1.6.1-.4.4-1 .4-1.5-.5-.8-1.8-.3-2.6-.7 0-.5 0-.8-.1-1.2-.4-.2-.8.1-1.2.4zM16.3 11.3c.2-.7.4-1 .4-1.9.5.5 2.2 1.6 2.4 2.2.3.9-.9.9-1.4.6-.3-.1-.5-.3-.7-.5-.3-.4-.3-.2-.7-.4zm-4.5 1.5c.3-.7.6-3.7 1.3-4.3.1 1.6-.5 4.2 1.5 4.1.7 0 1-.4 1.3-.6.3.4.4.6 1.1.8 1.4.5 4.3.3 4-1.3-.3-1.3-4.2-2.5-2.8-4.3.2-.3.9-.6 1.3-.3.1 0 .6.8 1.2 0 .2-.3.5-1.1.2-1.5-.6-.7-3.2 0-4.2.9-.9.9-.6 1.8 0 2.8-.7.2-.2.1-.7 1.4-.2.6-.5 1.1-1.1 1-.6-.9-.2-2.6-.2-3.9 0-.7-.3-1.6-1.2-1.4-.7.2-1.4 2.4-1.8 3.2-.1-.9.1-3.6 0-4.1-.2-.3-1.4-.5-1.6-.3-.1.1-.3 5.4-.3 5.8 0 .5 0 1.5.3 1.8.3.4 1.2.3 1.7.2zM6.8 7.9c-1.4.3-1.7-.9-1.9-2.2C4.5 2.3 6.3 1 6.8 1.9c.2.3 0 1.3 0 1.8v4.2zm0 1.3c.1 1.1-.7 2.3-1.2 2.8-.7.6-1.8 1.1-3.1.8-1.4-.3-1.7-1.6-1.3-2.3.3-.5.7-.7.9-1.2C2.9 7.4 0 7.6 0 10.4s2.1 3.5 4.5 3.4c4.3-.3 4.1-4.3 4.1-7.8V2.1c0-2.5.1-1.8-1.7-2-.8-.2-1.1 0-1.5.4-2.3 2.3-2.9 8.9 1.4 8.7z" class="st0"/>
+        </symbol>
+        <symbol id="instagram-mobile" viewBox="0 0 33.1 33.1">
+            <path d="M20.4 14.2h1.9c.4 0 .8-.3.8-.8v-1.8c0-.4-.3-.8-.8-.8h-1.9c-.4 0-.8.3-.8.8v1.8c0 .4.4.8.8.8zM16.5 20.8c1.9 0 3.4-1.5 3.4-3.4S18.4 14 16.5 14s-3.4 1.5-3.4 3.4 1.6 3.4 3.4 3.4z" class="st0"/>
+            <path d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm-2.6 23.8c0 1.2-.9 2.2-2.2 2.2H10.2C9 26 8 25 8 23.8V11.1c0-1.2 1-2.2 2.2-2.2h12.7c1.2 0 2.2.9 2.2 2.2v12.7z" class="st0"/>
+            <path d="M22 17.6c0 2.8-2.4 5.2-5.3 5.2s-5.3-2.3-5.3-5.2c0-.5.1-1 .3-1.5H9.9v7.2c0 .3.3.7.7.7h11.9c.3 0 .7-.3.7-.7v-7.2h-1.5c.2.5.3 1 .3 1.5z" class="st0"/>
+        </symbol>
+        <symbol id="tumblr" viewBox="0 0 67.6 14">
+            <g id="XMLID_14_">
+                <g id="XMLID_68_">
+                    <path id="XMLID_69_" d="M65.6 10.1c-1.1 0-2 .9-2 1.9 0 1.1.9 1.9 2 1.9s2-.9 2-1.9c0-1-.9-1.9-2-1.9zm-10.7 1.1V0h-1.2s-2 .7-3.4.9V3h.9c.3 0 .4.1.4.4v7.9c0 .3-.2.4-.4.4h-.7v2.1h5.6v-2.1h-.7c-.3 0-.5-.2-.5-.5zm11.3-5.5c-.1-2.4-3.3-2.5-5-.9l-.3-.9H57V6h.8c.3 0 .4.1.4.4v4.8c0 .3-.2.4-.4.4h-.7v2.1h5.5v-2.1h-.7c-.3 0-.4-.2-.4-.4V7.9c0-.6.1-1.6 1.2-1.9.1 1 1.1 1.3 1.6 1.3 1.2.1 1.9-.8 1.9-1.6zm-20.6-2c-.8 0-1.7.4-2.3.9V0h-1.2s-1.9.7-3.4.9V3h.9c.3 0 .4.1.4.4v10.5h2.7l.4-.9c.1 0 1.3 1.2 3.3 1 2.5-.3 3.8-2.2 3.8-5.2-.1-1.6-.6-5.2-4.6-5.1zm-.5 7.8c-.5 0-1.3 0-1.8-1V9.1 7.5c0-.7.6-1.3 1.6-1.3s1.9.6 1.9 2.6c0 2.6-1.1 2.7-1.7 2.7zm-7.2-.3v-3c0-1.1 0-2.2-.7-3.1-.7-.8-1.7-1.4-3.4-1.4-1.1.1-2.3.6-2.9 1.4l-.1.1-.1-.1c-.7-1-1.7-1.6-3.4-1.5-1.1.1-2.3.6-2.9 1.4l-.1-1.3h-4V6h.9c.3 0 .4.1.4.4v4.7c0 .3-.2.4-.4.4h-.7v2.1H26v-2.1h-.7c-.3 0-.4-.2-.4-.4V7.8c0-.5.4-1.7 1.9-1.7 1.1 0 1.4.7 1.4 1.5V11c0 .3-.2.4-.4.4h-.7v2.1h5.5v-2.1h-.7c-.3 0-.4-.2-.4-.4V7.7c0-.5.4-1.7 1.8-1.7 1.1 0 1.4.7 1.4 1.5v3.3c0 .3-.2.4-.4.4h-.7v2.1H39v-2.1h-.7c-.2.5-.4.3-.4 0zm-19.4.1V3.9H14V6h.9c.3 0 .4.1.4.4v3.4c0 .3-.2 1.6-1.9 1.6-1.1 0-1.4-.6-1.4-1.5v-6H8.7v6.2c0 1.6.7 4 4.1 3.9 1.1 0 2.3-.6 3-1.4v1.2h3.7v-2.1H19c-.3 0-.5-.2-.5-.4zm-12.3.2c-1.1 0-1.3-.8-1.3-1.3v-4h2.6V3.9H4.9V.4h-2s-.1 0-.1.1c-.2 1.1-.7 3-2.8 3.7v2h1.6v4.2c0 1.5.9 3.7 4 3.6 1 0 2.1-.4 2.4-.8l-.7-1.9c-.3.1-.8.2-1.1.2z" class="st0"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="tumblr-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_58_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.3v22.4C0 30.6 2.4 33 5.3 33h22.4c2.9 0 5.3-2.4 5.3-5.3V5.3c.1-2.9-2.3-5.3-5.3-5.3zm-8.6 27.6c-4.9.1-6.5-3.4-6.5-5.9v-6.8H10v-3.2c3.4-1.2 4.2-4.2 4.4-6 0-.1.1-.2.2-.2h3.3v5.6h4.2v3.8H18v6.5c0 .9.4 2.2 2.2 2.2.6 0 1.4-.2 1.8-.4l1.1 3.2c-.5.5-2.3 1.2-4 1.2z" class="st0"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 67.5 15.9">
+            <g id="XMLID_21_">
+                <g id="XMLID_142_">
+                    <path id="XMLID_143_" d="M9.8 7.9c.8-.1 1.4-1.1 1.2-1.9 0-.6-.6-1.1-1.2-1.2-1.6-.1-3.3 0-4.9 0 0-.6 0-1.3-.1-2-.1-.8-1.1-1.3-1.9-1.1-.8.1-1.4 1.1-1.2 1.9v6c0 2 1.4 3.8 3.3 4.4 1.2.4 2.6.2 3.8.2.7 0 1.6 0 2-.7.7-.8.2-2.3-.9-2.5-1.2-.1-2.5 0-3.8-.1-.6 0-1.1-.5-1.2-1.1-.1-.6-.1-1.2-.1-1.8 1.7 0 3.4.1 5-.1zm20.5-4.2c.4-1.1-.7-2.3-1.8-2-1.2.2-1.7 2-.7 2.7.7.8 2.2.4 2.5-.7zm5 7.2c-.6-.3-.6-1-.7-1.5h2.8c.8 0 1.6-.7 1.6-1.4.2-.8-.5-1.6-1.2-1.7-1.1-.1-2.2-.1-3.3-.1 0-1.2.1-2.4-.1-3.5-.4-1-1.8-1.3-2.5-.5-.7.5-.5 1.5-.6 2.3 0 2.5-.1 5.2.9 7.6.8 2 3.1 2.5 5.1 2.3.8.1 1.6-.4 1.8-1.3.1-.6-.1-1.1-.5-1.6-1.1-.7-2.3-.2-3.3-.6zm10.8-1.6c.7-.1 1.1-.8 1.2-1.4.1-.8-.5-1.5-1.2-1.6-1.1-.1-2.2-.1-3.3-.1 0-1.1 0-2.2-.1-3.3-.1-.4-.4-.7-.8-1-.6-.3-1.4-.1-1.9.3-.4.5-.5 1.1-.5 1.7-.1 1.6 0 3.2.1 4.7.2 1.4.3 3 1.3 4.2 1.3 1.5 3.4 1.7 5.2 1.4 1-.3 1.5-1.6.9-2.4-.9-1.1-2.5-.3-3.6-.9-.5-.3-.5-1-.5-1.5 1.1-.1 2.2 0 3.2-.1zM25.3 5.5c-.7-.4-1.6.1-1.9.8-.4 1.1-.1 2.4-.2 3.5.2.9-.8 1.5-1.6 1.4-.5 0-.9-.5-1.1-1-.3-1.4.4-3.1-.5-4.4-.4-.3-.9-.5-1.3-.4-.6.1-1.2.7-1.3 1.4 0 1.1 0 2.3-.1 3.4-.1.5-.5 1-1.1 1.1-.8.2-1.6-.6-1.7-1.4-.1-1.2.1-2.4-.1-3.5-.3-.6-1.1-1.1-1.8-.9-.8.1-1.2 1-1.1 1.7 0 1.3-.1 2.7.2 4 .6 2.1 2.8 3.5 4.9 3.1.8-.1 1.5-.6 2.3-1 .9.6 1.9 1.1 3 1.1 2.2 0 4.2-1.9 4.4-4.1.1-1.2.1-2.4 0-3.5-.1-.7-.5-1.1-1-1.3zM56 6.6c-1.5-1.2-3.7-1.4-5.6-.8-1.1.4-1.9 1.2-2.3 2.3-.7 1.8-.2 4.1 1.5 5.2 1.4 1.1 3.3 1.2 4.9.8.9-.2 1.9-.7 2.3-1.6.3-.5-.1-1.3-.8-1.4-.9-.2-1.6.5-2.4.6-.9.2-2.2.1-2.7-.9 1.7-.1 3.3 0 5-.1.5 0 1.1-.2 1.3-.8.3-1.2-.2-2.5-1.2-3.3zm-5 2c.6-1.2 2.6-1.2 3.2 0-1 .1-2.1.1-3.2 0zm13.5-3.1c-.9 0-1.9 0-2.8.1-1.9.2-3.6 1.9-3.7 3.8-.1 1.3-.1 2.5 0 3.8.1.5.5.8.9 1.1.9.4 1.9-.4 2-1.3 0-1.1 0-2.2.1-3.3 0-.7.5-1.2 1-1.2.9-.1 1.8 0 2.7-.1.5 0 .8-.5 1.1-.9.4-.9-.4-2-1.3-2zM28.6 6c-.6.1-1.2.5-1.3 1.2-.1 1.8-.1 3.6 0 5.5-.1 1 .9 1.8 1.8 1.6.7-.1 1.3-.8 1.3-1.5.1-1.8.1-3.6 0-5.4-.2-.9-1-1.6-1.8-1.4z" class="st0"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="twitter-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_61_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm-2.1 13.1v.5c0 5.6-4.3 12.1-12.1 12.1-2.4 0-4.6-.7-6.5-1.9.3 0 .7.1 1 .1 2 0 3.8-.7 5.3-1.8-1.9 0-3.4-1.3-4-2.9.3 0 .5.1.8.1.4 0 .8-.1 1.1-.1-1.9-.4-3.4-2.1-3.4-4.2v-.1c.6.3 1.2.5 1.9.5-1.1-.8-1.9-2.1-1.9-3.5 0-.8.2-1.5.6-2.1 2.1 2.6 5.2 4.3 8.7 4.4-.1-.3-.1-.6-.1-1 0-2.3 1.9-4.2 4.2-4.2 1.2 0 2.3.5 3.1 1.3 1-.2 1.9-.5 2.7-1-.3 1-1 1.8-1.9 2.3.9-.1 1.7-.3 2.4-.7-.3.9-1 1.6-1.9 2.2z" class="st0"/>
+        </symbol>
+        <symbol id="youtube" viewBox="0 0 59.6 17.1">
+            <path id="u_2_" d="M23.4 16.9H21v-1.4c-.9 1-1.7 1.6-2.5 1.6-.7 0-1.2-.3-1.5-1-.2-.4-.3-1-.3-1.8v-10h2.4v10.3c.1.4.2.5.5.5.5 0 .9-.4 1.4-1.1V4.3h2.4v12.6z" class="st0"/>
+            <path id="o_2_" d="M15 8.4c0-1.4-.3-2.4-.8-3-.6-.9-1.6-1.2-2.6-1.2-1.1 0-2 .4-2.6 1.2-.5.6-.7 1.7-.7 3v4.5c0 1.3.2 2.3.7 2.9.6.9 1.7 1.3 2.7 1.3s2-.5 2.7-1.3c.5-.6.7-1.6.7-2.9V8.4zm-2.3 4.8c.1 1.3-.3 1.9-1 1.9s-1.1-.6-1-1.9v-5c-.1-1.3.3-1.8 1-1.8s1.1.6 1 1.8v5z" class="st0"/>
+            <path id="y_2_" d="M5.6 10v6.9H3.1V10S.5 1.6 0 0h2.6l1.8 6.6L6.1 0h2.6L5.6 10z" class="st0"/>
+            <path id="e_1_" d="M59.6 11V8.4c0-1.3-.3-2.3-.7-3-.6-.9-1.5-1.3-2.7-1.3-1.2 0-2.1.5-2.7 1.3-.5.6-.8 1.7-.8 3v4.4c0 1.3.3 2.3.8 2.9.7.9 1.6 1.3 2.7 1.3 1.2 0 2.1-.4 2.7-1.4.3-.4.5-.9.5-1.4 0-.2.1-.7.1-1.5v-.4h-2.4v1.6c-.1.6-.5.9-1 .9-.8 0-1.1-.6-1.1-1.7V11h4.6zm-4.5-3.2c0-1.2.3-1.5 1.1-1.5s1.1.3 1.1 1.5v1.4h-2.1V7.8z" class="st0"/>
+            <path id="b_1_" d="M49.1 4.2c-.8 0-1.7.5-2.4 1.4V.1h-2.3v16.8h2.3v-1.3c.8.9 1.6 1.4 2.4 1.4.9 0 1.6-.5 1.9-1.4.2-.5.3-1.3.3-2.5v-5c0-1.2-.2-2-.3-2.5-.4-.9-1-1.4-1.9-1.4zm-.2 9.1c0 1.3-.3 1.7-.9 1.7-.4 0-.8-.2-1.2-.6V6.8c.4-.4.8-.6 1.2-.6.7 0 .9.4.9 1.6v5.5z" class="st0"/>
+            <path id="u_1_" d="M42.6 16.9h-2.4v-1.4c-.9 1-1.7 1.6-2.5 1.6-.7 0-1.2-.3-1.5-1-.2-.4-.3-1-.3-1.8V4.4h2.4V14.6c.1.4.2.5.5.5.5 0 .9-.4 1.4-1.1V4.4h2.4v12.5z" class="st0"/>
+            <path id="T" d="M33.6 16.9h-2.5V2.5h-2.7V.1h7.9v2.4h-2.7z" class="st0"/>
+        </symbol>
+        <symbol id="youtube-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_48_" d="M18.5 13.1h-3.1v1h1v5.6h1v-5.6h1.1z" class="st0"/>
+            <path id="XMLID_47_" d="M20 18.5c-.2.3-.4.4-.5.4-.1 0-.2-.1-.2-.2v-3.9h-.9v3.9c0 .3 0 .6.1.7.1.2.3.4.6.4s.6-.2 1-.6v.5h.9v-4.9h-1v3.7z" class="st0"/>
+            <path id="XMLID_41_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.3v22.4C0 30.6 2.4 33 5.3 33h22.4c2.9 0 5.3-2.4 5.3-5.3V5.3c.1-2.9-2.3-5.3-5.3-5.3zM6.4 19.7h-1V17s-1-3.3-1.2-3.9h1l.8 2.6.7-2.6h1L6.4 17v2.7zm3.7-1.6c0 .5-.1.9-.3 1.1-.2.3-.7.5-1.1.5s-.8-.2-1-.5c-.2-.2-.3-.6-.3-1.1v-1.8c0-.5.1-.9.3-1.2.2-.3.6-.5 1-.5s.8.1 1 .5c.2.3.3.6.3 1.2v1.8zm3.3 1.6h-.9v-.5c-.4.4-.7.6-1 .6-.3 0-.5-.1-.6-.4-.1-.1-.1-.4-.1-.7v-3.9h.9v4c0 .1.1.2.2.2.2 0 .3-.2.5-.4v-3.8h.9v4.9zm15.5-2.6c0 1.2-.1 2.4-.1 2.4s-.1 1-.6 1.5c-.6.6-1.2.6-1.5.6-2.1.1-5.1.2-5.1.2s-3.8 0-5-.1c-.3-.1-1.1 0-1.6-.6-.4-.4-.6-1.5-.6-1.5s-.1-1.2-.1-2.4V16c0-1.2.1-2.4.1-2.4s.1-1 .6-1.5c.6-.6 1.2-.6 1.5-.6 2.1-.1 5.1-.1 5.1-.1s3.1 0 5.1.1c.3 0 .9 0 1.5.6.4.4.6 1.5.6 1.5s.1 1.2.1 2.4v1.1z" class="st0"/>
+            <path id="XMLID_38_" d="M23.5 14.7c-.3 0-.7.2-.9.6v-2.1h-.9v6.6h.9v-.5c.3.4.6.6.9.6.4 0 .6-.2.7-.6.1-.2.1-.5.1-1v-2c0-.5-.1-.8-.1-1-.1-.4-.3-.6-.7-.6zm-.1 3.6c0 .5-.1.7-.4.7-.1 0-.3-.1-.5-.2v-3c.1-.1.3-.2.5-.2.3 0 .4.1.4.6v2.1z" class="st0"/>
+            <path id="XMLID_37_" d="M8.8 15.6c-.3 0-.4.2-.4.7v2c0 .5.1.7.4.7.3 0 .4-.2.4-.7v-2c0-.5-.1-.7-.4-.7z" class="st0"/>
+            <path id="XMLID_34_" d="M27.6 17.4v-1c0-.5-.1-.9-.3-1.2-.2-.3-.6-.5-1.1-.5-.5 0-.8.2-1.1.5-.2.2-.3.7-.3 1.2v1.7c0 .5.1.9.3 1.1.3.3.6.5 1.1.5.5 0 .8-.2 1.1-.5.1-.2.2-.3.2-.5V18h-.9v.6c-.1.2-.2.4-.4.4-.3 0-.4-.2-.4-.7v-.9h1.8zm-1.7-1.3c0-.5.1-.6.4-.6.3 0 .4.1.4.6v.5h-.8v-.5z" class="st0"/>
+        </symbol>
+    </svg>
+
+    <ul class="uknow-social-media__list">
+        <li class="uknow-social-media__list-item"><a href="https://www.youtube.com/user/universityofkentucky" target="_blank"><svg class="uknow-social-media__icon"><use xlink:href="#youtube"></use></svg></a></li>
+        <li class="uknow-social-media__list-item"><a href="https://twitter.com/universityofky" target="_blank"><svg class="uknow-social-media__icon"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="uknow-social-media__list-item"><a href="https://www.facebook.com/universityofky/" target="_blank"><svg class="uknow-social-media__icon"><use xlink:href="#facebook"></use></svg></a></li>
+        <li class="uknow-social-media__list-item"><a href="https://www.instagram.com/universityofky/" target="_blank"><svg class="uknow-social-media__icon"><use xlink:href="#instagram"></use></svg></a></li>
+    </ul>
+
+</div>
+        </div>
+        <div class="uknow-footer__column col-sm-2">
+            
+<nav class="uknow-footer-links">
+    <div class="uknow-footer-links__head" >
+        Sections
+    </div>
+    <ul class="uknow-footer-links__list">
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/campus-news">Campus News</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/student-news">Student News</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/uk-healthcare">UK HealthCare</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/research">Research</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/uk-happenings">UK Happenings</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/arts-culture">Arts & Culture</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/professional-news">Professional News</a>
+        </li>
+                <li class="uknow-footer-links__list-item">
+            <a class="uknow-footer-links__link" href="/blogs">Blogs</a>
+        </li>
+            </ul>
+</nav>        </div>
+
+        <div class="uknow-footer__column col-sm-2">
+            <div class="uknow-footer-links__head" >
+                More
+            </div>
+            <nav class="uknow-footer-links">
+                <ul class="uknow-footer-links__list">
+                    <li class="uknow-footer-links__list-item"><a href="/content/coronavirus-response">Coronavirus Response</a></li>
+                    <li class="uknow-footer-links__list-item"><a href="http://www.uky.edu/UKHome/subpages/contact.html">Contact UK</a></li>
+                    <li class="uknow-footer-links__list-item"><a href="http://www.uky.edu/UKHome/subpages/administration.html">Administration</a></li>
+                    <li class="uknow-footer-links__list-item"><a href="http://www.uky.edu/prmarketing">Public Relations & Marketing</a></li>
+                    <li class="uknow-footer-links__list-item"><a href="http://www.uky.edu/PR/Experts/">Experts Directory</a></li>
+                    <li class="uknow-footer-links__list-item"><a href="https://www.uky.edu/prmarketing/staff/">Media Contacts</a></li>
+<!--                    <li class="uknow-footer-links__list-item"><a href="http://www.uky.edu/PR/News/crisis_communication_plan.htm">Crisis Communication</a></li>-->
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="uknow-uk-lockup--scaled">
+
+            <a href="http://www.uky.edu" target="_blank">
+                <img class="uknow-uk-lockup__image" src="/sites/all/themes/uknow_theme/img/uk-lockup.svg" />
+
+<!--                <img class="uknow-uk-lockup--white visible-xs-block" src="/--><!--/img/uk-logo.svg" />-->
+
+            </a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="uknow-mobile-social">
+
+    <svg style="display:none">
+        <symbol id="facebook-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_64_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm.1 9.1h-1.9c-1 0-2.3.9-2.3 2.5v.9h4.2V17h-4.2v13.2h-5.8V17h-3.5s-.1-4.5 0-4.5h3.6v-1.6c0-1.5.5-6.3 6-6.3h3.9v4.5z" class="st0"/>
+        </symbol>
+        <symbol id="instagram-mobile" viewBox="0 0 33.1 33.1">
+            <path d="M20.4 14.2h1.9c.4 0 .8-.3.8-.8v-1.8c0-.4-.3-.8-.8-.8h-1.9c-.4 0-.8.3-.8.8v1.8c0 .4.4.8.8.8zM16.5 20.8c1.9 0 3.4-1.5 3.4-3.4S18.4 14 16.5 14s-3.4 1.5-3.4 3.4 1.6 3.4 3.4 3.4z" class="st0"/>
+            <path d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm-2.6 23.8c0 1.2-.9 2.2-2.2 2.2H10.2C9 26 8 25 8 23.8V11.1c0-1.2 1-2.2 2.2-2.2h12.7c1.2 0 2.2.9 2.2 2.2v12.7z" class="st0"/>
+            <path d="M22 17.6c0 2.8-2.4 5.2-5.3 5.2s-5.3-2.3-5.3-5.2c0-.5.1-1 .3-1.5H9.9v7.2c0 .3.3.7.7.7h11.9c.3 0 .7-.3.7-.7v-7.2h-1.5c.2.5.3 1 .3 1.5z" class="st0"/>
+        </symbol>
+        <symbol id="tumblr-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_58_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.3v22.4C0 30.6 2.4 33 5.3 33h22.4c2.9 0 5.3-2.4 5.3-5.3V5.3c.1-2.9-2.3-5.3-5.3-5.3zm-8.6 27.6c-4.9.1-6.5-3.4-6.5-5.9v-6.8H10v-3.2c3.4-1.2 4.2-4.2 4.4-6 0-.1.1-.2.2-.2h3.3v5.6h4.2v3.8H18v6.5c0 .9.4 2.2 2.2 2.2.6 0 1.4-.2 1.8-.4l1.1 3.2c-.5.5-2.3 1.2-4 1.2z" class="st0"/>
+        </symbol>
+        <symbol id="twitter-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_61_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.4v22.4c0 2.9 2.4 5.3 5.3 5.3h22.4c2.9 0 5.3-2.4 5.3-5.3V5.4c.1-3-2.3-5.4-5.3-5.4zm-2.1 13.1v.5c0 5.6-4.3 12.1-12.1 12.1-2.4 0-4.6-.7-6.5-1.9.3 0 .7.1 1 .1 2 0 3.8-.7 5.3-1.8-1.9 0-3.4-1.3-4-2.9.3 0 .5.1.8.1.4 0 .8-.1 1.1-.1-1.9-.4-3.4-2.1-3.4-4.2v-.1c.6.3 1.2.5 1.9.5-1.1-.8-1.9-2.1-1.9-3.5 0-.8.2-1.5.6-2.1 2.1 2.6 5.2 4.3 8.7 4.4-.1-.3-.1-.6-.1-1 0-2.3 1.9-4.2 4.2-4.2 1.2 0 2.3.5 3.1 1.3 1-.2 1.9-.5 2.7-1-.3 1-1 1.8-1.9 2.3.9-.1 1.7-.3 2.4-.7-.3.9-1 1.6-1.9 2.2z" class="st0"/>
+        </symbol>
+        <symbol id="youtube-mobile" viewBox="0 0 33.1 33.1">
+            <path id="XMLID_48_" d="M18.5 13.1h-3.1v1h1v5.6h1v-5.6h1.1z" class="st0"/>
+            <path id="XMLID_47_" d="M20 18.5c-.2.3-.4.4-.5.4-.1 0-.2-.1-.2-.2v-3.9h-.9v3.9c0 .3 0 .6.1.7.1.2.3.4.6.4s.6-.2 1-.6v.5h.9v-4.9h-1v3.7z" class="st0"/>
+            <path id="XMLID_41_" d="M27.7 0H5.3C2.4 0 0 2.4 0 5.3v22.4C0 30.6 2.4 33 5.3 33h22.4c2.9 0 5.3-2.4 5.3-5.3V5.3c.1-2.9-2.3-5.3-5.3-5.3zM6.4 19.7h-1V17s-1-3.3-1.2-3.9h1l.8 2.6.7-2.6h1L6.4 17v2.7zm3.7-1.6c0 .5-.1.9-.3 1.1-.2.3-.7.5-1.1.5s-.8-.2-1-.5c-.2-.2-.3-.6-.3-1.1v-1.8c0-.5.1-.9.3-1.2.2-.3.6-.5 1-.5s.8.1 1 .5c.2.3.3.6.3 1.2v1.8zm3.3 1.6h-.9v-.5c-.4.4-.7.6-1 .6-.3 0-.5-.1-.6-.4-.1-.1-.1-.4-.1-.7v-3.9h.9v4c0 .1.1.2.2.2.2 0 .3-.2.5-.4v-3.8h.9v4.9zm15.5-2.6c0 1.2-.1 2.4-.1 2.4s-.1 1-.6 1.5c-.6.6-1.2.6-1.5.6-2.1.1-5.1.2-5.1.2s-3.8 0-5-.1c-.3-.1-1.1 0-1.6-.6-.4-.4-.6-1.5-.6-1.5s-.1-1.2-.1-2.4V16c0-1.2.1-2.4.1-2.4s.1-1 .6-1.5c.6-.6 1.2-.6 1.5-.6 2.1-.1 5.1-.1 5.1-.1s3.1 0 5.1.1c.3 0 .9 0 1.5.6.4.4.6 1.5.6 1.5s.1 1.2.1 2.4v1.1z" class="st0"/>
+            <path id="XMLID_38_" d="M23.5 14.7c-.3 0-.7.2-.9.6v-2.1h-.9v6.6h.9v-.5c.3.4.6.6.9.6.4 0 .6-.2.7-.6.1-.2.1-.5.1-1v-2c0-.5-.1-.8-.1-1-.1-.4-.3-.6-.7-.6zm-.1 3.6c0 .5-.1.7-.4.7-.1 0-.3-.1-.5-.2v-3c.1-.1.3-.2.5-.2.3 0 .4.1.4.6v2.1z" class="st0"/>
+            <path id="XMLID_37_" d="M8.8 15.6c-.3 0-.4.2-.4.7v2c0 .5.1.7.4.7.3 0 .4-.2.4-.7v-2c0-.5-.1-.7-.4-.7z" class="st0"/>
+            <path id="XMLID_34_" d="M27.6 17.4v-1c0-.5-.1-.9-.3-1.2-.2-.3-.6-.5-1.1-.5-.5 0-.8.2-1.1.5-.2.2-.3.7-.3 1.2v1.7c0 .5.1.9.3 1.1.3.3.6.5 1.1.5.5 0 .8-.2 1.1-.5.1-.2.2-.3.2-.5V18h-.9v.6c-.1.2-.2.4-.4.4-.3 0-.4-.2-.4-.7v-.9h1.8zm-1.7-1.3c0-.5.1-.6.4-.6.3 0 .4.1.4.6v.5h-.8v-.5z" class="st0"/>
+        </symbol>
+    </svg>
+
+    <ul class="uknow-mobile-social__list">
+        <li class="uknow-mobile-social__list-item"><a href="https://www.facebook.com/universityofky/" target="_blank"><svg class="uknow-mobile-social__icon" height="40px" width="40px"><use xlink:href="#facebook-mobile"></use></svg></a></li>
+        <li class="uknow-mobile-social__list-item"><a href="https://twitter.com/universityofky" target="_blank"><svg class="uknow-mobile-social__icon" height="40px" width="40px"><use xlink:href="#twitter-mobile"></use></svg></a></li>
+         <li class="uknow-mobile-social__list-item"><a href="https://www.youtube.com/user/universityofkentucky" target="_blank"><svg class="uknow-mobile-social__icon" height="40px" width="40px"><use xlink:href="#youtube-mobile"></use></svg></a></li>
+        <li class="uknow-mobile-social__list-item"><a href="https://www.instagram.com/universityofky/" target="_blank"><svg class="uknow-mobile-social__icon" height="40px" width="40px"><use xlink:href="#instagram-mobile"></use></svg></a></li>
+    </ul>
+</div><!-- end row -->    </div>
+
+    <div class="uknow-footertext">
+        <ul class="uknow-footertext__list">
+            <li class="uknow-footertext__list-item">Public Relations &amp; Strategic Communications</li>
+            <li class="uknow-footertext__list-item">206E Mathews Building</li>
+            <li class="uknow-footertext__list-item">University of Kentucky</li>
+            <li class="uknow-footertext__list-item">Lexington, Kentucky 40506</li>
+            <li class="uknow-footertext__list-item">Phone: (859) 257-1754 </li>
+            <li class="uknow-footertext__list-item"><a href="mailto:andrew.shooner@uky.edu">Email</a></li>
+            <li class="uknow-footertext__list-item">
+                                   <a href="/user/login">Sign in</a>
+                 
+            </li>
+        </ul>
+    </div>
+
+    <div class="uknow-footertext">
+        <ul class="uknow-footertext__list">
+            <li class="uknow-footertext__list-item">© University of Kentucky</li>
+            <!--<li class="uknow-footertext__list-item">Lexington, Kentucky 40506</li>-->
+            <li class="uknow-footertext__list-item">An Equal Opportunity University</li>
+            <li class="uknow-footertext__list-item"><a href="http://www.uky.edu/accreditation/">Accreditation</a></li>
+            <li class="uknow-footertext__list-item"><a href="http://www.uky.edu/Directory/">Directory</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+    </div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ff743358ec","applicationID":"28933441","transactionName":"MgFRNUdSVkNZAkJcDAtLcgJBWldeFw9ZUQY6FFIGUGxOWV0W","queueTime":2,"applicationTime":226,"atts":"HkZSQw9IRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+
+</html>

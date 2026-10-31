@@ -1,0 +1,137 @@
+{
+ "row": "early-christian-writings",
+ "address": "Early Christian Writings",
+ "entity": "Early Christian Writings (earlychristianwritings.com), the website copyrighted by Peter Kirby: a collection of Christian texts before the Council of Nicaea (325 AD) with translations and commentary (New Testament, Apocrypha, Gnostics, Church Fathers and some non-Christian references), browsable by range of dating or by category, each text page giving an 'Estimated Range of Dating' and quoted published introductions; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/early-christian-writings/). Distinct from the Penguin Classics book Early Christian Writings: The Apostolic Fathers (translated by Maxwell Staniforth, revised by Andrew Louth, 1987), the homonym the composition at the bare name gives",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "early-christian-writings",
+  "address": "Early Christian Writings",
+  "entity": "Early Christian Writings (earlychristianwritings.com), the website copyrighted by Peter Kirby: a collection of Christian texts before the Council of Nicaea (325 AD) with translations and commentary (New Testament, Apocrypha, Gnostics, Church Fathers and some non-Christian references), browsable by range of dating or by category, each text page giving an 'Estimated Range of Dating' and quoted published introductions; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/early-christian-writings/). Distinct from the Penguin Classics book Early Christian Writings: The Apostolic Fathers (translated by Maxwell Staniforth, revised by Andrew Louth, 1987), the homonym the composition at the bare name gives",
+  "row_type": "C (a public entity on which the archive bears: an online collection of early Christian texts with a dating table; an entity of the Revelation First meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bEarly Christian Writings\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "earlychristianwritings",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPeter Kirby\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "the dating of the New Testament writings (dating tables, chronological lists, estimated ranges of composition)",
+    "pattern": "\\b(dating of (the )?(New Testament|NT|Revelation|the Apocalypse|Paul|the Pauline)|dat(e|es|ing)( of| for) (the )?(New Testament|NT) (writings|books|documents|texts|corpus)|(New Testament|NT) (dating|chronology)|chronolog(y|ical (order|list|table|sequence)) of (the )?(New Testament|NT|early Christian)|received chronology|range of dating|dating table|composition dates?|date of composition)\\b",
+    "flags": "i",
+    "basis": "field: B1 (home page: 'Browse by range of dating or by category'; the table opening '30-60 Passion Narrative … 50-60 1 Thessalonians'); B2 (Revelation page: 'Estimated Range of Dating: 90-95 A.D.'; 'Reliability of Dating'; 'Chronological List of Early Christian Writings'). The census's own intersection for the entity, 'nt-scholarship' ('New Testament scholarship: dating, authorship and literary dependence'), and its evidence_kind 'dating table' (census.json rows[slug == 'early-christian-writings'].intersections, .evidence_kind; intersections)."
+   },
+   {
+    "term": "the late (Domitianic) date of Revelation and its Irenaean anchor",
+    "pattern": "\\b(Domitianic|late[- ]date|reign of Domitian|under Domitian|end of (the reign of )?Domitian|Adv\\.? ?Haer\\.? ?5\\.30|90[–-]95|ca?\\.? ?95 ?(CE|AD|A\\.D\\.)|~ ?95 ?CE)",
+    "flags": "i",
+    "basis": "field: B2 (Revelation page: 'Estimated Range of Dating: 90-95 A.D.'; the quoted Kümmel introduction: 'According to the oldest tradition [in Iren., Adv. Haer. 5.30.3] Rev was written toward the end of the reign of Domitian (81-96)'; 'Rev was in fact written toward the end of the reign of Domitian, i.e., ca. 90-95, in Asia Minor'). The census's findings[1] ('it gives Revelation an estimated range of 90-95 A.D. and quotes an introduction placing it toward the end of Domitian's reign') and evidence rev_range, rev_domitian (census.json rows[slug == 'early-christian-writings'].findings, .evidence)."
+   },
+   {
+    "term": "the Pauline letters as the earliest New Testament writings (Pauline priority)",
+    "pattern": "\\b(Pauline (priority|timeline|chronology|chronological priority)|Paul['’]s (earliest )?letters (are|were|as) (the )?(earliest|first)|earliest (New Testament|NT) (document|writing|book|text)s?|first book (written|composed) in the New Testament)\\b",
+    "flags": "i",
+    "basis": "field: B1 (the dating table places Paul's letters first among the New Testament writings: '50-60 1 Thessalonians', '50-60 Philippians', '50-60 Galatians', '50-60 1 Corinthians', '50-60 2 Corinthians', '50-60 Romans', '50-60 Philemon', before every other New Testament book; Revelation at '90-95'). The census's findings[0] ('its dating table places Paul's earliest letters at 50-60') and does_not_answer[1] ('the priority question: the table orders writings by date, not by derivation') (census.json rows[slug == 'early-christian-writings'].findings, .does_not_answer)."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own intersection, evidence kind or finding for the entity, stated by field sources at the loci given: (1) the dating of the New Testament writings (census intersection 'nt-scholarship', evidence_kind 'dating table'; B1, B2); (2) the late (Domitianic) date of Revelation and its Irenaean anchor (census findings[1], evidence rev_range and rev_domitian; B2, the Revelation page and its quoted Kümmel introduction); (3) the Pauline letters as the earliest New Testament writings (census findings[0], does_not_answer[1]; B1, the dating table). The archive bears on these classes through the Revelation First thesis (#202, its claim ladder and falsifiers, and the deposits revelationfirst.com cites); a deposit enters only where its sentence says something of the entity or applies its category (the Domitianic consensus as an inferential settlement, Pauline priority as inferential, the received chronology, Revelation First) to one of these classes. The census's rf_intersection ('Dating, as the received order: Paul at 50-60 and Revelation at 90-95, the late date and the order Revelation First contests, laid out as a table') and its correction are the archive's reading, ledgered as RF-; they do not by themselves admit a deposit. Not classes: the census's kind 'an online collection of early Christian texts' (no field source sets the entity in a class the archive applies a category to; the archive's originals library seats texts in the original language and is a different object), and 'the Apostolic Fathers' (a category of B1's menu and the homonym's contents; no census field names it for the entity). Aliases: the name as a proper name, case-sensitive (lower-case 'early Christian writings' is the generic phrase, read as such), the site's host, and its operator as the site names him. Archive uses of the Penguin book's title are read as the homonym's and recorded, never admitted as the entity's. Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Early Christian Writings' (early-christian-writings-aio-20261031, OBS-213c923139dc, ADDR-f871f7ad0ada, AXN:0B34), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Revelation First census record) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass, same day: one citation hop forward and back from the deposits admitted by reading (#202, #542, #636, #832, #860, #1101, #1420, #1656).",
+  "hop_from": [
+   202,
+   542,
+   636,
+   832,
+   860,
+   1101,
+   1420,
+   1656
+  ]
+ },
+ "texts_scanned": 1716,
+ "counts": {
+  "D_sentences": 1,
+  "D_deposits": 1,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 174,
+  "O_deposits": 47,
+  "H_candidates": 145
+ },
+ "per_deposit": {
+  "D": {
+   "1656": 1
+  },
+  "R": {},
+  "O": {
+   "6": 1,
+   "25": 1,
+   "56": 12,
+   "85": 1,
+   "130": 1,
+   "202": 2,
+   "203": 3,
+   "402": 2,
+   "453": 1,
+   "528": 1,
+   "529": 1,
+   "530": 1,
+   "542": 4,
+   "636": 1,
+   "637": 1,
+   "639": 1,
+   "644": 2,
+   "829": 2,
+   "832": 14,
+   "837": 1,
+   "860": 1,
+   "921": 1,
+   "940": 1,
+   "969": 11,
+   "970": 2,
+   "971": 11,
+   "1025": 2,
+   "1101": 11,
+   "1119": 1,
+   "1138": 3,
+   "1160": 4,
+   "1187": 2,
+   "1211": 13,
+   "1213": 3,
+   "1216": 13,
+   "1217": 14,
+   "1226": 3,
+   "1231": 1,
+   "1249": 1,
+   "1350": 1,
+   "1399": 2,
+   "1400": 14,
+   "1420": 2,
+   "1441": 1,
+   "1442": 1,
+   "1460": 1,
+   "1702": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "abeb873a400965396596685f7f625a040a7e03dea4a97ac5b4b089f17df1ff43",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "c1e65f9d33b2fab87032253b76e929697941f7d689233a1ecc9d3cac413f1ce5",
+  "candidates-H.jsonl": "f9bac986d1fa0c58e1c211f383df0904bffe3710cd57c66ac85063d59b33d4b4"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11068
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,1505 @@
+{
+ "row": "bodmer-lab",
+ "address": "Bodmer Lab",
+ "addresses": [
+  "Bodmer Lab"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits, falsification conditions; from each of the entity's sources (cards 1, 4, 7; the own pages; Wikipedia)",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart, with the homonyms' cards recorded with their sense and not ledgered: cards (B1, B4, B7), homonym cards (B2, B3, B5, B6, B8, B9), own pages (B10, B11, copied from the census's saved copies), Wikipedia (B12, B13, B14).",
+ "lineage_note": "Lineages: what it is: a digital library, a research and digitization project of a partnership; who makes it: the direction and the support; the partner: the Fondation Martin Bodmer and its library; world literature: Martin Bodmer's library, its principle and lineage; the bets: materiality, selection, smart data, constellations, audiences; the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision; the papyri: holdings, acquisition, provenance, dispersal; the earliest New Testament papyri among them; the dating question: the papyri as evidence for when the New Testament was written; seen or edited: images, catalogue, the digital library; licence and lifecycle; the composition at the name; reception: the encyclopedia. The own page B10 keeps the earliest date in the lineages it shares with the census record (RF-04, RF-13, RF-14, RF-20).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/ (Bn.html raw, Bn.txt text; Bn.wiki raw wikitext; W-*.html the encyclopedia's responses; *-try*.html refused or wrong-path fetches)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (the entity's card)",
+   "card": "Université de Genève — About :: bodmerlab",
+   "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab",
+   "kind": "Overview card (the entity's own About page: the Lab, its choices, team, partners and scientific committee, English)",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1.html",
+     "sha256": "1aabdecbbf47e12cc3caa6935563de47286420cadfe1ecb7c27013f6c64dc03f"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1.txt",
+     "sha256": "d35535c54707854ac5a20f45fd31f899f0159fe6871c7ae69cbe7e64f203954e"
+    },
+    "B1-try0-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1-try0-404.html",
+     "sha256": "7cab344f571fc9dbdd0b928f101ee12e604e43ac1c2940fcc0cd101d373f73c3"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:42Z",
+    "http": 200,
+    "url": "https://bodmerlab.unige.ch/about/the-bodmer-lab",
+    "final_url": "https://bodmerlab.unige.ch/about/the-bodmer-lab",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1.html",
+    "raw_sha256": "1aabdecbbf47e12cc3caa6935563de47286420cadfe1ecb7c27013f6c64dc03f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1.txt"
+    ],
+    "text_rule": "tags, scripts and styles stripped (helper outside the repository), whitespace collapsed per line",
+    "tries": [
+     {
+      "at": "2026-10-31T04:38:30Z",
+      "http": 404,
+      "url": "https://bodmerlab.unige.ch/en/about/the-bodmer-lab",
+      "final_url": "https://bodmerlab.unige.ch/en/about/the-bodmer-lab",
+      "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B1-try0-404.html",
+      "note": "the /en/ path, HTTP 404 'Page Not Found :: bodmerlab'"
+     }
+    ]
+   },
+   "names_operator": "yes ('a partnership between the University of Geneva and the Martin Bodmer Foundation'; 'Supported by the Fondation Ernst and Lucie Schmidheiny'; the team by name)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the page's <title> is the card's ('About :: bodmerlab'). The census did not save this page (its own pages are the home page and the Fondation's). The snippet ('Overview: Partnership between University of Geneva, Martin Bodmer Foundation, and Fondation Ernst and Lucie Schmidheiny digitizing rare documents. Core Principl...') is a summary, not the page's words; the page names the Schmidheiny foundation as supporter ('Supported by'), not as partner.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "About :: bodmerlab",
+   "card_snippet": "Overview: Partnership between University of Geneva, Martin Bodmer Foundation, and Fondation Ernst and Lucie Schmidheiny digitizing rare documents. Core Principl...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card (homonym: Rolf Bodmer's cardiovascular laboratory)",
+   "role": "Overview card 2 (a homonym's)",
+   "card": "Sanford Burnham Prebys — Rolf Bodmer, PhD",
+   "url": "https://sbpdiscovery.org/team/rolf-bodmer-phd",
+   "kind": "Overview card of the homonym: the faculty page of Rolf Bodmer, Sanford Burnham Prebys Medical Discovery Institute",
+   "sense": "the Bodmer lab of Sanford Burnham Prebys: 'interested in the molecular mechanisms of organ formation', 'heart development' and 'heart performance in the Drosophila model'; Rolf Bodmer Professor and Director of the Center for Cardiovascular and Muscular Diseases",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B2.html",
+     "sha256": "cb13bef6981fe498d0235178b859898af4b4d05a7adfa2401c1d3ae0f1e19c69"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B2.txt",
+     "sha256": "d04fa5deb83a09616cf00b9db33a4127db40804652aff6cc245d038769f97816"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:33Z",
+    "http": 200,
+    "url": "https://sbpdiscovery.org/team/rolf-bodmer-phd",
+    "final_url": "https://sbpdiscovery.org/scientists/rolf-bodmer-phd/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B2.html",
+    "raw_sha256": "cb13bef6981fe498d0235178b859898af4b4d05a7adfa2401c1d3ae0f1e19c69",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on title and site; redirects to /scientists/rolf-bodmer-phd/; the page's <title> 'Rolf Bodmer, PhD - Sanford Burnham Prebys'.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Rolf Bodmer, PhD",
+   "card_snippet": "Related Disease Cancer, Cardiovascular Diseases, Heart Disease, Inherited Disorders, Metabolic Diseases, Metabolic Syndrome, Muscular Dystrophy, Neurodegenerati...",
+   "card_note": null,
+   "ledgered": "no: a homonym's card, recorded with its sense (BRIEF-NEW-ROW-FIELD §5); its spans that T composes are in delta.homonym_alignment"
+  },
+  {
+   "id": "B3",
+   "origin": "card (homonym: the University of Salford's Bodmer Laboratories)",
+   "role": "Overview card 3 (a homonym's)",
+   "card": "University of Salford — Bodmer Labs | University of Salford",
+   "url": "https://www.salford.ac.uk/our-facilities/bodmer-labs",
+   "kind": "Overview card of the homonym: the University of Salford's teaching laboratory page",
+   "sense": "an integrated teaching laboratory, 'a specialist, purpose built facility', with industry-standard instrumentation",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B3.html",
+     "sha256": "98416f0e441a06cd71e17e73eceb5685bc659c3556aa03579e45f39ebf08f0b9"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B3.txt",
+     "sha256": "28b4e0811d74c8f30c819e3165b8d56ebb9792c09c046d1b4e6b03d72adfeb19"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:34Z",
+    "http": 200,
+    "url": "https://www.salford.ac.uk/our-facilities/bodmer-labs",
+    "final_url": "https://www.salford.ac.uk/our-facilities/bodmer-labs",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B3.html",
+    "raw_sha256": "98416f0e441a06cd71e17e73eceb5685bc659c3556aa03579e45f39ebf08f0b9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on title and site; <title> 'Bodmer Labs | University of Salford'. The saved page does not say whom the laboratory is named after (no 'Walter' in the text).",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "Bodmer Labs | University of Salford",
+   "card_snippet": "We have recently invested in the development of a new, state-of-the-art, integrated teaching laboratory known as the Bodmer Lab. The Bodmer Lab is a specialist,",
+   "card_note": null,
+   "ledgered": "no: a homonym's card, recorded with its sense; spans in delta.homonym_alignment"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (the entity's card)",
+   "card": "Unige — Bodmer Papyri :: bodmerlab",
+   "url": "https://bodmerlab.unige.ch/constellations/papyri",
+   "kind": "Overview card (the entity's own page for the Bodmer Papyri constellation: description, numbering, supervisors and the catalogue's first listing page)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4.html",
+     "sha256": "da8649a7c9d58a38ae55ec7978787536c7bd506394d6bf5921fbb31823267c6a"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4.txt",
+     "sha256": "b261328a5b6d30e7f4afbc59bd85d9a6ee54e28238bd78bf04ae294a3cad30a5"
+    },
+    "B4-try0-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4-try0-404.html",
+     "sha256": "907658ed8580be64f909cbd8d8fa3c10bd1e511b9b6ef6c137f998cc938c4f28"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:44Z",
+    "http": 200,
+    "url": "https://bodmerlab.unige.ch/constellations/papyri",
+    "final_url": "https://bodmerlab.unige.ch/constellations/papyri",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4.html",
+    "raw_sha256": "da8649a7c9d58a38ae55ec7978787536c7bd506394d6bf5921fbb31823267c6a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4.txt"
+    ],
+    "tries": [
+     {
+      "at": "2026-10-31T04:38:31Z",
+      "http": 404,
+      "url": "https://bodmerlab.unige.ch/en/constellations/papyri",
+      "final_url": "https://bodmerlab.unige.ch/en/constellations/papyri",
+      "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B4-try0-404.html",
+      "note": "the /en/ path, HTTP 404"
+     }
+    ]
+   },
+   "names_operator": "yes ('the Fondation Martin Bodmer'; the footer 'Université de Genève, Faculté des lettres'; the supervisors by name)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch; <title> 'Bodmer Papyri :: bodmerlab'. The text extraction splits the drop-capital ('T he aim of this constellation'); the aim is ledgered from the home page (B10), where it is whole. The snippet's 'Greek and Coptic papyrus and parchment manuscripts' and 'acquired primarily in the 1950s-1960s' summarise the page; the page's catalogue entries were not opened (the census leaves them unchecked).",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "Bodmer Papyri :: bodmerlab",
+   "card_snippet": "Overview: Online catalog of Greek and Coptic papyrus and parchment manuscripts at the Fondation Martin Bodmer, acquired primarily in the 1950s-1960s. Content: C...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card (homonym: Rolf Bodmer's cardiovascular laboratory)",
+   "role": "Overview card 5 (a homonym's)",
+   "card": "bodmerlab.org — Bodmer Lab",
+   "url": "https://bodmerlab.org/",
+   "kind": "Overview card of the homonym: the laboratory's own site",
+   "sense": "the snippet: 'The Bodmer Laboratory is investigating in the cellular and molecular basis of heart development and function using the Drosophila melanogaster model system'",
+   "files": {
+    "B5-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B5-try1.html",
+     "sha256": "9ec18ef821be9e09419d066c669475357a17394c6f86680b0ac8b080880476a7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:35Z",
+    "http": 403,
+    "url": "https://bodmerlab.org/",
+    "final_url": "https://bodmerlab.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B5-try1.html",
+    "raw_sha256": "9ec18ef821be9e09419d066c669475357a17394c6f86680b0ac8b080880476a7",
+    "text": []
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: one fetch with the honest agent returned HTTP 403, a Cloudflare challenge page ('Just a moment...'), saved as B5-try1.html; not retried with another agent or route (BRIEF-NEW-ROW-FIELD §4). Title and snippet stand.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Bodmer Lab",
+   "card_snippet": "The Bodmer Laboratory is investigating in the cellular and molecular basis of heart development and function using the Drosophila melanogaster model system. One...",
+   "card_note": null,
+   "ledgered": "no: a homonym's card"
+  },
+  {
+   "id": "B6",
+   "origin": "card (homonym: Rolf Bodmer's cardiovascular laboratory)",
+   "role": "Overview card 6 (a homonym's)",
+   "card": "bodmerlab.org — Bodmer Lab | Research Team",
+   "url": null,
+   "kind": "Overview card of the homonym: the laboratory's team page",
+   "sense": "the snippet: 'Research Focus: Drosophila model system for molecular mechanisms of embryonic heart formation and adult heart function. Leadership: Rolf Bodmer, Ph.D., Professo...'",
+   "files": {
+    "B6-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B6-try1.html",
+     "sha256": "c9c5d5802b2fbb9e8101fa826f6f990535d54ccde5a494b7a4d94bf95f5ef663"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:45Z",
+    "http": 403,
+    "url": null,
+    "final_url": "https://bodmerlab.org/research-team",
+    "tried_url": "https://bodmerlab.org/research-team",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B6-try1.html",
+    "raw_sha256": "c9c5d5802b2fbb9e8101fa826f6f990535d54ccde5a494b7a4d94bf95f5ef663",
+    "text": []
+   },
+   "names_operator": "no (the entity's operator is not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: no URL found by WebSearch on title and site; one fetch of the host's path /research-team with the honest agent returned HTTP 403, the same Cloudflare challenge as B5, saved as B6-try1.html; not retried. Title and snippet stand.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "Bodmer Lab | Research Team",
+   "card_snippet": "Research Focus: Drosophila model system for molecular mechanisms of embryonic heart formation and adult heart function. Leadership: Rolf Bodmer, Ph.D., Professo...",
+   "card_note": null,
+   "ledgered": "no: a homonym's card"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (a third-party page on the entity)",
+   "card": "Storience — The Bodmer Lab, a Digital Library",
+   "url": null,
+   "kind": "Overview card: a third-party page on the entity",
+   "files": {
+    "B7-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B7-try1.html",
+     "sha256": "5b741c51f92331f742a2e6a885047321b6ad90ac62bf62af184225a27b52af0f"
+    },
+    "B7-try2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B7-try2.html",
+     "sha256": "9c4d0a5b5dc51982b1e752915dccbd2c8f2cf9fd72c55e88ad2d83bb3a4f8a3d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:38:58Z",
+    "http": 200,
+    "url": null,
+    "tried": [
+     "https://www.storience.com/",
+     "https://www.storience.com/blog/"
+    ],
+    "text": []
+   },
+   "names_operator": "no (the snippet does not name it)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "unreachable: no page URL found (three WebSearches on title, site and the snippet's first sentence returned none); storience.com's home page and blog index fetched with the honest agent (HTTP 200, a branding agency's site, B7-try1.html and B7-try2.html) carry no link to a Bodmer page. The card's title and snippet stand as its only text.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 7
+    }
+   ],
+   "card_title": "The Bodmer Lab, a Digital Library",
+   "card_snippet": "The Bodmer Lab, a Digital Library * Universities and academic institutions are huge troves of knowledge. The faculty and researchers who drive them often work t...",
+   "card_note": null
+  },
+  {
+   "id": "B8",
+   "origin": "card (homonym: the University of Salford's Bodmer Laboratories)",
+   "role": "Overview card 8 (a homonym's; video)",
+   "card": "YouTube·The School of Science, Engineering and Environment — The Bodmer Laboratories Opening",
+   "url": null,
+   "kind": "video card (2:17), admitted through title (no snippet)",
+   "sense": "the opening of Salford's Bodmer Laboratories",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "url": null,
+    "text": []
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video card: title only (no snippet on the rail); URL not found by WebSearch; not fetched.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 8
+    }
+   ],
+   "card_title": "The Bodmer Laboratories Opening",
+   "card_snippet": null,
+   "card_note": "video, 2:17",
+   "ledgered": "no: a homonym's card"
+  },
+  {
+   "id": "B9",
+   "origin": "card (homonym: Rolf Bodmer's cardiovascular laboratory)",
+   "role": "Overview card 9 (a homonym's; video)",
+   "card": "YouTube·Sanford Burnham Prebys — Insights: Unraveling the genetics of congenital heart defects to help save lives",
+   "url": null,
+   "kind": "video card (58:41), admitted through title (no snippet)",
+   "sense": "a Sanford Burnham Prebys talk on the genetics of congenital heart defects",
+   "files": {},
+   "fetched": {
+    "at": null,
+    "http": null,
+    "url": null,
+    "text": []
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video card: title only; WebSearch found the event's listing pages, not the video; not fetched.",
+   "surfaced_by_T": [
+    {
+     "slug": "bodmer-lab-aio-20261031",
+     "card": 9
+    }
+   ],
+   "card_title": "Insights: Unraveling the genetics of congenital heart defects to help save lives",
+   "card_snippet": null,
+   "card_note": "video, 58:41",
+   "ledgered": "no: a homonym's card"
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the census's own page bodmer-lab--home (the Lab's home page, French) (not surfaced by T)",
+   "card": "Bodmer Lab — Home :: bodmerlab",
+   "url": "https://bodmerlab.unige.ch/",
+   "kind": "own page, cited by the Revelation First census record; copied from the census's saved copy",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B10.html",
+     "sha256": "46040ed3eb84378362d8e6c8b66998a6634a2edfdbf08a63faa36d829b93d326"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B10.txt",
+     "sha256": "01301dd724ed11100b18bc7a0ccf97adcc045a5982ca487a9a9b4fd2ec6ee86d"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "bodmer-lab--home",
+    "read": "2026-10-31T02:51:57Z",
+    "http": "200",
+    "url": "https://bodmerlab.unige.ch/",
+    "final_url": "https://bodmerlab.unige.ch/fr",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B10.html",
+    "raw_sha256": "46040ed3eb84378362d8e6c8b66998a6634a2edfdbf08a63faa36d829b93d326",
+    "census_sha256": "46040ed3eb84378362d8e6c8b66998a6634a2edfdbf08a63faa36d829b93d326",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--home.html.gz (gunzipped) and bodmer-lab--home.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B10.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('la Faculté des lettres de l'Université de Genève et la Fondation Martin Bodmer'; footer 'Université de Genève, Faculté des lettres')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (sha256 matches the manifest), so it was copied, not refetched. The census row's sources list only this page; its evidence quotes are all from it."
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "role": "the census's saved page bodmer-lab--fondation (the partner's home page) (not surfaced by T)",
+   "card": "Fondation Martin Bodmer — Bibliothèque et musée",
+   "url": "https://www.fondationbodmer.ch/",
+   "kind": "own page of the partner (the Fondation Martin Bodmer), saved by the census beside the Lab's home page (manifest bodmer-lab--fondation; not in the row's sources)",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B11.html",
+     "sha256": "df208a75a5c8ed458fc7f39b06aea19d68f5aac14df57eb81abb2262d89567e7"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B11.txt",
+     "sha256": "b20b10f94e5d966333893dd7c0985e7e12504202af7cd937f555173a53ea5492"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "bodmer-lab--fondation",
+    "read": "2026-10-31T02:52:01Z",
+    "http": "200",
+    "url": "https://www.fondationbodmer.ch/",
+    "final_url": "https://fondationbodmer.ch/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B11.html",
+    "raw_sha256": "df208a75a5c8ed458fc7f39b06aea19d68f5aac14df57eb81abb2262d89567e7",
+    "census_sha256": "df208a75a5c8ed458fc7f39b06aea19d68f5aac14df57eb81abb2262d89567e7",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/bodmer-lab--fondation.html.gz (gunzipped) and bodmer-lab--fondation.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B11.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (it is the partner: 'La Fondation Martin Bodmer')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census's saved copy is intact (sha256 matches the manifest), so it was copied, not refetched. The census row's 'unchecked' names 'the Fondation's own collection pages (saved, navigation only)'; the saved home page carries the Fondation's self-definition, dates and access, ledgered here."
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "Wikipedia article 'Bodmer Library' ('Bibliotheca Bodmeriana' redirects here) (not surfaced by T)",
+   "card": "Wikipedia — Bodmer Library",
+   "url": "https://en.wikipedia.org/wiki/Bodmer_Library",
+   "kind": "encyclopedia article on the partner's library, which names the entity once",
+   "files": {
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.wiki",
+     "sha256": "67a7893d8f764bcf54bf3678a13a19df878dabe895780be4530723f46ab9a546"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.txt",
+     "sha256": "67a7893d8f764bcf54bf3678a13a19df878dabe895780be4530723f46ab9a546"
+    },
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.html",
+     "sha256": "362fc449bc74c4ac3ced9816fa9c77be7bdf8597b9a8fc6d99932d092c11e631"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "at": "2026-10-31T04:39:00Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Library&action=raw&redirect=no",
+     "final_url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Library&action=raw&redirect=no",
+     "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.wiki"
+    },
+    "rendered": {
+     "at": "2026-10-31T04:39:33Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Bodmer_Library",
+     "final_url": "https://en.wikipedia.org/wiki/Bodmer_Library",
+     "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B12.txt"
+    ],
+    "text_rule": "the raw wikitext, as fetched (B12.txt = B12.wiki)"
+   },
+   "names_operator": "no for the Lab's operator (it names Martin Bodmer and the Foundation)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [],
+   "note": "Fetched with the honest agent string, raw wikitext (action=raw, redirect=no) and rendered page; quotes are from the wikitext."
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "Wikipedia article 'Dishna Papers' ('Bodmer Papyri' redirects here) (not surfaced by T)",
+   "card": "Wikipedia — Dishna Papers",
+   "url": "https://en.wikipedia.org/wiki/Dishna_Papers",
+   "kind": "encyclopedia article on the papyri the constellation catalogues, which links the constellation",
+   "files": {
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.wiki",
+     "sha256": "1f024894b4a6ec48d6e3276822f7f1abeb6fafc2f88fc4b14536e780dec31f07"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.txt",
+     "sha256": "1f024894b4a6ec48d6e3276822f7f1abeb6fafc2f88fc4b14536e780dec31f07"
+    },
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.html",
+     "sha256": "5310ad666f0de7723c59f5fa248a740acb261a86c2e4dd486b0f65569d4c087a"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "at": "2026-10-31T04:39:10Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Dishna_Papers&action=raw&redirect=no",
+     "final_url": "https://en.wikipedia.org/w/index.php?title=Dishna_Papers&action=raw&redirect=no",
+     "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.wiki"
+    },
+    "rendered": {
+     "at": "2026-10-31T04:44:56Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Dishna_Papers",
+     "final_url": "https://en.wikipedia.org/wiki/Dishna_Papers",
+     "file": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.html"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B13.txt"
+    ],
+    "text_rule": "the raw wikitext, as fetched (B13.txt = B13.wiki)"
+   },
+   "names_operator": "no (it names Martin Bodmer and the Bodmer Library)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [],
+   "note": "Fetched with the honest agent string, raw wikitext (action=raw, redirect=no) and rendered page; quotes are from the wikitext."
+  },
+  {
+   "id": "B14",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the entity's titles (no article)",
+   "card": "Wikipedia — Bodmer Lab (no article)",
+   "url": "https://en.wikipedia.org/wiki/Bodmer_Lab",
+   "kind": "record of the encyclopedia's responses at the entity's titles",
+   "files": {
+    "B14.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B14.txt",
+     "sha256": "89ba8f5d5a3c0988c7d99a16799245469a24983d6bd0dce633b567edef43841d"
+    },
+    "W-Bodmer_Lab-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Bodmer_Lab-raw.html",
+     "sha256": "3947f1e80afd1d41d07b188f01289025704a8369a4043025cffdde6dec4d16f1"
+    },
+    "W-Bodmer_Lab-rendered.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Bodmer_Lab-rendered.html",
+     "sha256": "d54518a8abf1276b3f2b233e697efe662f6b768096036236f887174838148ec8"
+    },
+    "W-Bodmer_lab-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Bodmer_lab-raw.html",
+     "sha256": "23a3a6c2da65a07e2c894d4808c575a0cc3370ce0da9bda2c12fd974f26fd5a2"
+    },
+    "W-Fondation_Martin_Bodmer-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Fondation_Martin_Bodmer-raw.html",
+     "sha256": "7b4362993e0bb018b0f3b5c102b97550503c40c04b938c40395a5a9960d8ded4"
+    },
+    "W-Bibliotheca_Bodmeriana-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Bibliotheca_Bodmeriana-raw.html",
+     "sha256": "a9c00ab71064b309d711cbd17ebcd6bd2dc81667ab0b342af94361d14ecfb40e"
+    },
+    "W-Bodmer_Papyri-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Bodmer_Papyri-raw.html",
+     "sha256": "ef0815d8de68244fed1cf32cde7598351781847f9bee3701869648aad10b03d8"
+    },
+    "W-Martin_Bodmer-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-Martin_Bodmer-raw.html",
+     "sha256": "e82266cc3dd9c58d5a3d1c44c1c463736bb3e44aa2f4ef92d2c1549f1f47b4e1"
+    },
+    "W-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/W-search.html",
+     "sha256": "94df70aa8eddd0b28f8340920726a55a7d7985a716a94a83a047ec579487e87c"
+    }
+   },
+   "fetched": {
+    "responses": {
+     "W-Bodmer_Lab-raw": {
+      "at": "2026-10-31T04:38:59Z",
+      "http": 404,
+      "url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Lab&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Lab&action=raw&redirect=no"
+     },
+     "W-Bodmer_Lab-rendered": {
+      "at": "2026-10-31T04:44:57Z",
+      "http": 404,
+      "url": "https://en.wikipedia.org/wiki/Bodmer_Lab",
+      "final_url": "https://en.wikipedia.org/wiki/Bodmer_Lab"
+     },
+     "W-Bodmer_lab-raw": {
+      "at": "2026-10-31T04:39:00Z",
+      "http": 404,
+      "url": "https://en.wikipedia.org/w/index.php?title=Bodmer_lab&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Bodmer_lab&action=raw&redirect=no"
+     },
+     "W-Fondation_Martin_Bodmer-raw": {
+      "at": "2026-10-31T04:39:01Z",
+      "http": 404,
+      "url": "https://en.wikipedia.org/w/index.php?title=Fondation_Martin_Bodmer&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Fondation_Martin_Bodmer&action=raw&redirect=no"
+     },
+     "W-Bibliotheca_Bodmeriana-raw": {
+      "at": "2026-10-31T04:39:01Z",
+      "http": 200,
+      "url": "https://en.wikipedia.org/w/index.php?title=Bibliotheca_Bodmeriana&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Bibliotheca_Bodmeriana&action=raw&redirect=no"
+     },
+     "W-Bodmer_Papyri-raw": {
+      "at": "2026-10-31T04:39:00Z",
+      "http": 200,
+      "url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Papyri&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Bodmer_Papyri&action=raw&redirect=no"
+     },
+     "W-Martin_Bodmer-raw": {
+      "at": "2026-10-31T04:39:01Z",
+      "http": 200,
+      "url": "https://en.wikipedia.org/w/index.php?title=Martin_Bodmer&action=raw&redirect=no",
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Martin_Bodmer&action=raw&redirect=no"
+     },
+     "W-search": {
+      "at": "2026-10-31T04:39:10Z",
+      "http": 429,
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Bodmer+Lab%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "final_url": "https://en.wikipedia.org/w/index.php?search=%22Bodmer+Lab%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1"
+     }
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/bodmer-lab-20261031/B14.txt"
+    ],
+    "text_rule": "B14.txt states each response as received, with its file; the responses are the saved W-*.html files"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [],
+   "note": "No article at 'Bodmer Lab' or 'Bodmer lab' (HTTP 404, raw and rendered), nor at 'Fondation Martin Bodmer'; 'Bibliotheca Bodmeriana' redirects to 'Bodmer Library' (B12), 'Bodmer Papyri' to 'Dishna Papers' (B13); 'Martin Bodmer' is an article on the collector that does not name the Lab (not ledgered). The full-text search returned HTTP 429 and was not retried."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'About', 'The Bodmer Lab' ¶1 s2",
+   "quote": "The Bodmer Lab, a hub for research and digitisation born out of a partnership between the University of Geneva and the Martin Bodmer Foundation, has made a significant number of these rare and fragile documents available to the public.",
+   "claim": "the Lab by its own About page: a hub for research and digitisation from a partnership of the University of Geneva and the Martin Bodmer Foundation, which has made many rare and fragile documents of the collection public",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a digital library, a research and digitization project of a partnership",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'About' heading; 'Partners' ¶2",
+   "quote": "Supported by the Fondation Ernst and Lucie Schmidheiny. … It was able to grow thanks to the exceptional support of the Fondation Ernst and Lucie Schmidheiny.",
+   "claim": "the Lab supported by the Fondation Ernst and Lucie Schmidheiny, and grown by its exceptional support",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: the direction and the support",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'The Bodmer Lab' ¶1 s1",
+   "quote": "The Martin Bodmer Foundation maintains a unique collection of inscriptions, manuscripts and printed documents, from the oldest examples of writing up through the present day, chosen for their status as remarkable evidence of human thought and creativity.",
+   "claim": "the Foundation's collection: inscriptions, manuscripts and printed documents from the oldest writing to the present, chosen as evidence of human thought and creativity",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'The Bodmer Lab' ¶3",
+   "quote": "The Bodmer Lab uses new technology to bring to the fore the structure of this unique “library of world literature.”",
+   "claim": "the Lab uses new technology to bring out the structure of the 'library of world literature'",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'The Bodmer Lab' ¶4",
+   "quote": "Through videos, images libraries, digital stores and games, the Bodmer Lab also speaks to a wider audience, schoolchildren, explorers and lovers of learning.",
+   "claim": "it also addresses a wider audience through videos, image libraries, digital stories and games",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on world literature'",
+   "quote": "The Bibliotheca Bodmeriana was conceived by Martin Bodmer as a “library of world literature.” We decided to take this intellectual ambition seriously and make it the guiding principle of the Bodmer Lab.",
+   "claim": "the governing principle: Martin Bodmer's conception of the Bibliotheca Bodmeriana as a 'library of world literature', taken as the Lab's guiding principle",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on physical bibliography' ¶5",
+   "quote": "We have prioritised the materiality of the works, which is why we have planned to use Optical Character Recognition (OCR) later rather than sooner: this way, the texts come into view through the lens of their editorial editions.",
+   "claim": "materiality prioritised: OCR planned later rather than sooner, so the texts are seen through their editions",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on \"smart data\"' ¶3",
+   "quote": "The Bodmer collection is nearly endless, and it seemed unrealistic to us to begin to digitise it all straightaway. Exhaustiveness can actually be misleading when put into practice.",
+   "claim": "the stated limit: the collection is not digitised whole; exhaustiveness can mislead",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on \"smart data\"' ¶5",
+   "quote": "When commentaries which highlight the cultural significance of these data are added to the equation, we are instead dealing in the realm of “ smart data .”",
+   "claim": "the defined term 'smart data': digitised data with commentary on their cultural significance",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on the \"constellations\"' ¶3",
+   "quote": "In order to better appreciate the value of these strong points in the collection, we have approached them as “constellations,” partially autonomous and requiring specific subject knowledge. Consequently, we have decided to entrust the scientific supervision of each to internationally-recognised specialists in the given field.",
+   "claim": "the defined term 'constellations': strong points of the collection, partially autonomous, each under internationally recognised specialists",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Betting on \"smart data\"' ¶4",
+   "quote": "Each holding has its own particularities: papyri that are more than two thousand years old require different technological treatment than editions of Faust from the 19 th century.",
+   "claim": "papyri more than two thousand years old require different technological treatment from nineteenth-century editions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Team', Direction",
+   "quote": "Michel Jeanneret (1940-2019) … Radu Suciu … Jérôme David",
+   "claim": "the direction: Michel Jeanneret (1940–2019), Radu Suciu, Jérôme David",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: the direction and the support",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d35535c54707854a…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Online catalog of the papyrus and parchment manuscripts in the Bodmer collection",
+   "claim": "the Bodmer Papyri constellation: an online catalogue of the collection's papyrus and parchment manuscripts",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s2",
+   "quote": "The majority of these were acquired by Martin Bodmer in the 1950s and early 1960s.",
+   "claim": "most acquired by Martin Bodmer in the 1950s and early 1960s",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s3",
+   "quote": "Many of these items seem to have formed part of a larger ancient collection that included works in Greek, Coptic, and Latin (though only Greek and Coptic are represented in the Bodmer collection).",
+   "claim": "many seem to have formed part of a larger ancient collection in Greek, Coptic and Latin; only Greek and Coptic in the Bodmer collection",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s4",
+   "quote": "While a number of the books contain interesting combinations of Christian works (such as PB 3, a codex containing the Gospel According to John and part of Genesis in Coptic), there are also classical books, such as the Menander codex (PB M).",
+   "claim": "Christian works (PB 3: John and part of Genesis in Coptic) and classical books (PB M, the Menander codex)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1 s5",
+   "quote": "Other manuscripts contain both classical and Christian material, such as PB T, a codex that includes parts of the biblical book of Daniel in Greek along with book 6 of Thucydides, among other texts.",
+   "claim": "codices mixing classical and Christian material (PB T: Daniel in Greek with Thucydides book 6)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "These manuscripts are of course highly important for the history of early Christianity, and because of the excellent state of preservation of many of the codices, they are of exceptional interest for historians of the book as well.",
+   "claim": "the manuscripts highly important for the history of early Christianity and, by their preservation, for historians of the book",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "We employ a numbering system that uses the abbreviation PB (Papyrus Bodmer) and an Arabic number or a Latin letter. In most cases, these numbers correspond to the older system of Roman numerals: P.Bodmer I = PB1; P.Bodmer II = PB 2, etc.",
+   "claim": "the catalogue's numbering: PB with an Arabic number or a Latin letter, mostly matching the Roman P.Bodmer numerals",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "supervision",
+   "quote": "Dr. Daniel Sharp , Brigham Young University, Hawaii … Dr. Brent Nongbri , MF Norwegian School of Theology, Religion, and Society, Oslo, Norway",
+   "claim": "the constellation's specialists: Daniel Sharp (BYU–Hawaii) and Brent Nongbri (MF Norwegian School of Theology, Religion, and Society)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "facet 'Type'",
+   "quote": "Type Print 0 Manuscript 56",
+   "claim": "the catalogue lists 56 manuscripts and no prints",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b261328a5b6d30e7…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (card 7; page unreachable)",
+   "quote": "The Bodmer Lab, a Digital Library",
+   "claim": "a third-party page titles the entity 'The Bodmer Lab, a Digital Library'",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a digital library, a research and digitization project of a partnership",
+   "date": "undated (card snippet, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "card 7's title and snippet as on the rail (the page unreachable)",
+   "marks": {
+    "note": "card 7's page unreachable (no URL found); its title is its only ledgered text"
+   }
+  },
+  "F23": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "opening",
+   "quote": "Une bibliothèque numérique de la littérature mondiale",
+   "claim": "the Lab's own definition: a digital library of world literature",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a digital library, a research and digitization project of a partnership",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "opening, second statement",
+   "quote": "Le Bodmer Lab est un projet de recherche et de numérisation issu d'un partenariat entre la Faculté des lettres de l'Université de Genève et la Fondation Martin Bodmer.",
+   "claim": "a research and digitisation project from a partnership of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a digital library, a research and digitization project of a partnership",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'Constellations'",
+   "quote": "Sous-ensembles de la collection de Martin Bodmer, choisis pour leur intérêt et leur rareté",
+   "claim": "constellations: subsets of Martin Bodmer's collection chosen for interest and rarity",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the bets: materiality, selection, smart data, constellations, audiences",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'Bodmer Papyri' constellation tile",
+   "quote": "The aim of this constellation is to produce a detailed, online catalog of the papyrus and parchment manuscripts at the Fondation Martin Bodmer.",
+   "claim": "the constellation's aim: a detailed online catalogue of the Fondation's papyrus and parchment manuscripts",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'Bodmer Papyri' constellation tile",
+   "quote": "56 documents numérisés",
+   "claim": "56 documents digitised in the Bodmer Papyri constellation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Bodmer Papyri constellation: catalogue, aim, count, numbering, supervision",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'A propos du Bodmer Lab' ¶1",
+   "quote": "Le Bodmer Lab tâche de résoudre une équation à trois variables : comment valoriser une collection privée exceptionnelle en tenant compte de son projet intellectuel d’ensemble et avec l’appui des nouvelles technologies ?",
+   "claim": "the Lab's purpose: how to valorise an exceptional private collection with its intellectual project, with new technology",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'A propos du Bodmer Lab' ¶2",
+   "quote": "Les documents numérisés de la Bibliotheca Bodmeriana se trouvent ici accompagnés de savoirs et d’outils qui visent à les réinscrire dans leur époque et, plus largement, dans cette « bibliothèque de la littérature mondiale » dont rêvait Martin Bodmer.",
+   "claim": "the digitised documents accompanied by knowledge and tools to re-inscribe them in their time and in Bodmer's 'library of world literature'",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "footer, 'Conditions d'usage'",
+   "quote": "Sauf indication contraire, les contenus de ce site sont publiés sous une licence Creative commons CC-BY-NC, 4.0.",
+   "claim": "licence: CC BY-NC 4.0 unless otherwise stated (on every saved page of the site: B1, B4, B10)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence and lifecycle",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "'Publications', Jérôme David",
+   "quote": "Bodmer a d’abord envisagé sa collection comme une histoire de l’esprit humain sur quatre millénaires avant qu’il ne vienne à la considérer, dès l’avènement de Hitler au pouvoir, comme l’un des seuls refuges possibles d’un humanisme préservé des mythes nazis.",
+   "claim": "Jérôme David's essay: Bodmer first conceived the collection as a history of the human spirit over four millennia, then, from Hitler's coming to power, as a refuge of a humanism preserved from Nazi myths",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "undated essay announced on the home page (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 01301dd724ed1110…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "opening",
+   "quote": "La Fondation vous accueille pour un voyage à travers cinq millénaires d’histoire de l’écrit.",
+   "claim": "the Fondation's span: five millennia of the history of writing",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 b20b10f94e5d9663…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "'Qui sommes nous ?'",
+   "quote": "La Fondation Martin Bodmer est à la fois une bibliothèque patrimoniale exceptionnelle – inscrite au programme Mémoire du monde de l’UNESCO –, un lieu de recherche et de conservation, ainsi qu’un musée ouvert à tous, dédié à l’écrit, des origines de l’écriture jusqu’à nos jours.",
+   "claim": "the partner's self-definition: a heritage library on UNESCO's Memory of the World programme, a place of research and conservation, and a museum of writing",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 b20b10f94e5d9663…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "'Qui sommes nous ?', dates",
+   "quote": "Bibliothèque fondée en 1951 … Fondation Martin Bodmer créée en 1971",
+   "claim": "library founded 1951; Fondation created 1971",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "1951 and 1971 (as the page states; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 b20b10f94e5d9663…), whitespace-normalised; multi-part quote, each part checked",
+   "marks": {
+    "contested": "the Fondation's page gives 'Fondation Martin Bodmer créée en 1971' (F34); Wikipedia gives 'In 1970 ... the Bodmer Foundation was established' (F40); both composed (P_coh). The page's 'Bibliothèque fondée en 1951' and Wikipedia's 'established the library in the 1920s' (F39) are carried beside each other; Wikipedia also has the two houses in Cologny built in 1951"
+   }
+  },
+  "F35": {
+   "source": "B11",
+   "origin": "own_page",
+   "locus": "opening",
+   "quote": "sa bibliothèque patrimoniale est accessible exclusivement aux chercheurs.",
+   "claim": "the physical heritage library open to researchers only",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "undated (page read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 b20b10f94e5d9663…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "opening",
+   "quote": "The '''Bodmer Foundation''' (French: ''Fondation Bodmer'') is a library and museum specialised in manuscripts and precious editions. It is located in [[Cologny]], [[Switzerland]] just outside [[Geneva]].",
+   "claim": "Wikipedia: the Bodmer Foundation a library and museum of manuscripts and precious editions in Cologny, outside Geneva",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "opening ¶2",
+   "quote": "The library was established by [[Martin Bodmer]] and is famous as the home of the [[Bodmer Papyri]]. Some of these papyri are among the oldest remaining copies of the [[New Testament]].",
+   "claim": "the library the home of the Bodmer Papyri, some among the oldest remaining copies of the New Testament",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "opening ¶2",
+   "quote": "The first of the manuscripts was purchased in 1956 (''Papyrus Bodmer II'' — P<sup>66</sup>).",
+   "claim": "the first manuscript purchased in 1956: Papyrus Bodmer II, P66",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "1956 (as Wikipedia states; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "History ¶1",
+   "quote": "Martin Bodmer established the library in the 1920s. Bodmer selected the works centering on what he saw as the five pillars of [[world literature]]: the [[Bible]], [[Homer]], [[Dante Alighieri]], [[William Shakespeare]] and [[Johann Wolfgang von Goethe]].",
+   "claim": "established in the 1920s around the five pillars of world literature: the Bible, Homer, Dante, Shakespeare, Goethe",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "world literature: Martin Bodmer's library, its principle and lineage",
+   "date": "1920s (as Wikipedia states; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "History ¶2",
+   "quote": "In 1970, shortly before Bodmer's death, the Bodmer Foundation was established to make the collection accessible and conserve it.",
+   "claim": "the Foundation established in 1970 to make the collection accessible and conserve it",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "1970 (as Wikipedia states; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised",
+   "marks": {
+    "contested": "against F34 ('créée en 1971'); both composed (P_coh)"
+   }
+  },
+  "F41": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Items",
+   "quote": "The collection comprises some 160,000 items, including Sumerian clay tablets, Greek papyri and handwritten originals including music sheets.",
+   "claim": "some 160,000 items, Sumerian tablets, Greek papyri and autographs among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the partner: the Fondation Martin Bodmer and its library",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Items, First Folio",
+   "quote": "A copy of Shakespeare's [[First Folio]], 1623, in its original binding. Digitised by [http://bodmerlab.unige.ch The Bodmer Lab], this copy is available",
+   "claim": "the encyclopedia's one naming of the entity: the First Folio of 1623, digitised by The Bodmer Lab",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Items",
+   "quote": "[[Papyrus 66]] (near-complete codex of the Gospel of John), [[Papyrus 73]] and [[Papyrus 74]] (Acts and Catholic epistles)",
+   "claim": "among the items P66 (a near-complete codex of John), P73 and P74",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 67a7893d8f764bcf…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "opening",
+   "quote": "The '''Dishna Papers''', also often known as the '''Bodmer Papyri''', are a group of twenty-two [[papyri]] discovered in [[Dishna, Egypt]] in 1952. Later, they were purchased by [[Martin Bodmer]] and deposited at the [[Bodmer Library]] in Switzerland.",
+   "claim": "Wikipedia ('Bodmer Papyri' redirects here): the Dishna Papers, twenty-two papyri found at Dishna, Egypt, in 1952, bought by Martin Bodmer",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "1952 (discovery, as Wikipedia states; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "hatnote",
+   "quote": "{{about|22 papyri discovered in Egypt in 1952, purchased by Martin Bodmer|a list of the 58 papyri in Bodmer's collection|List of Bodmer Papyri}}",
+   "claim": "a list of 58 papyri in Bodmer's collection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "opening, s3–s4",
+   "quote": "The papyri contain segments from the Old and New Testaments, early Christian literature, [[Homer]], and [[Menander]]. The oldest, [[Papyrus 66|P<sup>66</sup>]], dates to {{circa|200 AD}}.",
+   "claim": "the papyri's contents (Old and New Testament, early Christian literature, Homer, Menander); the oldest, P66, c. 200 AD",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "opening ¶2 s2",
+   "quote": "Since the papers are held not only at the Bodmer Library, but also at the Vatican, Oslo, Barcelona, and other locations, many scholars have preferred the term ''Dishna Papers'' since the mid-2010s.",
+   "claim": "held also at the Vatican, Oslo, Barcelona and elsewhere; many scholars prefer 'Dishna Papers' since the mid-2010s",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "opening ¶2 s1",
+   "quote": "In 2007, the [[Vatican Library]] acquired Bodmer Papyrus 14–15 (known as [[Papyrus 75|P<sup>75</sup>]] and as the Mater Verbi ([[Frank Hanna III|Hanna]]) Papyrus).",
+   "claim": "P75 (Bodmer Papyrus 14–15) acquired by the Vatican Library in 2007",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "2007 (as Wikipedia states; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Overview ¶3",
+   "quote": "[[Papyrus 66]] (P<sup>66</sup>), is a text of the [[Gospel of John]], … dating around 200 AD, in the manuscript tradition called the [[Alexandrian text-type]].",
+   "claim": "P66 a text of John, c. 200 AD, Alexandrian text-type",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F50": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Overview ¶3",
+   "quote": "[[Papyrus 72|𝔓<sup>72</sup>]] is the earliest known copy of the [[Epistle of Jude]], and 1 and 2 Peter. … [[Papyrus 75]] (P<sup>75</sup>) is a partial codex containing most of Luke and John.",
+   "claim": "P72 the earliest known copy of Jude and 1–2 Peter; P75 a partial codex of most of Luke and John",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F51": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Overview ¶3",
+   "quote": "Comparison of the two versions of John in the Bodmer Papyri with the third-century [[Chester Beatty Papyri]] convinced Floyd V. Filson that \"...there was no uniform text of the Gospels in Egypt in the third century.\"",
+   "claim": "Filson: the two Bodmer texts of John against the Chester Beatty papyri show no uniform text of the Gospels in third-century Egypt",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Overview ¶6",
+   "quote": "The latest of the Bodmer Papyri (P<sup>74</sup>) dates to the sixth or seventh century.",
+   "claim": "the latest, P74, sixth or seventh century",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the earliest New Testament papyri among them",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "'Relationship with the Nag Hammadi library'",
+   "quote": "Lundhaug (2018) argues that the Dishna Papers in fact came from the same monastic library as the [[Nag Hammadi library]].",
+   "claim": "Lundhaug (2018): the Dishna Papers from the same monastic library as the Nag Hammadi codices",
+   "modality": "attributed",
+   "kind": "hypothesis",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papyri: holdings, acquisition, provenance, dispersal",
+   "date": "2018 (Lundhaug, as Wikipedia cites; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "External links",
+   "quote": "*[https://bodmerlab.unige.ch/fr/constellations/papyri Bodmer Papyri Home Page]",
+   "claim": "the encyclopedia links the entity's constellation as the 'Bodmer Papyri Home Page'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "as fetched 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 1f024894b4a6ec48…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "locus": "the entity's titles",
+   "quote": "'Bodmer Lab': raw wikitext HTTP 404 (2026-10-31T04:38:59Z, W-Bodmer_Lab-raw.html); rendered page HTTP 404, \"Wikipedia does not have an article with this exact name\"",
+   "claim": "Wikipedia has no article on the Bodmer Lab ('Bodmer Lab', 'Bodmer lab', 'Fondation Martin Bodmer' absent; 'Bibliotheca Bodmeriana' redirects to 'Bodmer Library', 'Bodmer Papyri' to 'Dishna Papers')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-31 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B14.txt (sha256 89ba8f5d5a3c0988…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Bodmer Lab — About :: bodmerlab (card 1)",
+  "B4": "Bodmer Lab — Bodmer Papyri :: bodmerlab (card 4)",
+  "B7": "Storience — The Bodmer Lab, a Digital Library (card 7; title and snippet)",
+  "B10": "Bodmer Lab — Home :: bodmerlab (own page)",
+  "B11": "Fondation Martin Bodmer — home page (the partner's own page)",
+  "B12": "Wikipedia — Bodmer Library",
+  "B13": "Wikipedia — Dishna Papers ('Bodmer Papyri')",
+  "B14": "Wikipedia — Bodmer Lab (no article)"
+ }
+}

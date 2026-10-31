@@ -1,0 +1,1606 @@
+{
+ "row": "enoch-dss-dating",
+ "address": "Enoch AI dating Dead Sea Scrolls",
+ "addresses": [
+  "Enoch AI dating Dead Sea Scrolls"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia rendered text and wikitext, or the card's title and snippet for the unreachable and title-only cards; 68/68 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), origins kept apart: 'card', every card on the transcript's rail (B1 the PLOS One article, also the census's own page; B2 BAS, Bible History Daily; B3 Reddit, unreachable, a script bot check; B4 the Jerusalem Post; B5 Haaretz, URL not found; B6 the article's NIH copy; B7 National Geographic UK on Facebook, B8 and B9 YouTube videos, URLs not found, title only); 'own_page', none beyond B1 (the census's only own page is the article, card 1); 'census_third_party', the ERC's news item (B10) and the scimex release the census could not read (B11, HTTP 403, no claim); 'wikipedia', no article on the model, its paragraphs in Dead Sea Scrolls (B12) and Carbon dating the Dead Sea Scrolls (B13), with the bare name's disambiguation (B12-enoch-disambiguation.wiki).",
+ "lineage_note": "Lineages: what it is (B1, B6, B4, B10, B12, B13); the dating problem (B1, B4, B10); the radiocarbon anchors (B1, B2); the method (B1, B2); accuracy and validation (B1, B6, B4, B10); the finding (B1, B12); the key texts (B1, B4, B10, B12); copying before the Hasmonaean expansion and Qumran (B1, B2, B4); stated limits (B1); what it offers palaeography (B1, B4, B10); reception, scholars (B2, B7, B8, B9); the magnitude in the press (B3, B4); operator, funding, licence and data (B1, B6, B10); lineage and sequel (B1, B4, B5, B12); the encyclopedia and the name (B1, B12). B6 is one work with B1 (one lineage, one card); B13's paragraph is B12's word for word. The census's kind, method, unit, count, findings and stated_limits restate B1's abstract, and its evidence 'palaeography' quotes B10: one lineage with those sources, which keep the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped by the census's own extractor; B1-census.* the census's saved copy beside this session's fetch, byte-identical; B3-botcheck.* and B5-search.* the refusal and the failed search; B10 and B11-403 copied from the census; B12/B13 .html, .txt and .wiki the Wikipedia pages, B12-enoch*.wiki the bare name's article and disambiguation, B12-enoch-ai-404.html the missing article, B12-search.* Wikipedia's search); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the census's own page enoch-dss-dating--plos (byte-identical)",
+   "card": "PLOS — Dating ancient manuscripts using radiocarbon and AI-based writing style analysis | PLOS One",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323185",
+   "kind": "Overview card (the study itself: PLOS One 20(6): e0323185, the article page); the census's own page",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1.html",
+     "sha256": "1bf06ab57a70bb15802eb4e4efa2d32a97d07e6ac3388debfa8f0e4031a7a818"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1.txt",
+     "sha256": "43ec0e66575ad39a990ec51e2b18e8be4b58322025eeea3543bb78e4c77282e6"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1-census.html",
+     "sha256": "1bf06ab57a70bb15802eb4e4efa2d32a97d07e6ac3388debfa8f0e4031a7a818"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1-census.txt",
+     "sha256": "43ec0e66575ad39a990ec51e2b18e8be4b58322025eeea3543bb78e4c77282e6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:27Z",
+    "http": 200,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323185",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1.html",
+    "raw_sha256": "1bf06ab57a70bb15802eb4e4efa2d32a97d07e6ac3388debfa8f0e4031a7a818",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "enoch-dss-dating--plos",
+     "sha256": "1bf06ab57a70bb15802eb4e4efa2d32a97d07e6ac3388debfa8f0e4031a7a818",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:52:09Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B1-census.txt"
+     ],
+     "agrees": "byte-identical: this session's fetch and the census's saved copy share the sha256 of the raw page, and the extracted texts are identical"
+    }
+   },
+   "names_operator": "yes (the authors, Popović et al.; the ERC funding line, HandsandBible)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the census record (sources.enoch-dss-dating--plos), confirmed by the card's title, the page's <title>. The card's snippet ('Model: Enoch, an AI date-prediction model …') is a labelled summary that does not occur in the page text. The page's text extraction drops the article's inline mathematics (σ, and the percentages of the Table 2 summary); the NIH copy (B6) keeps them.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "Dating ancient manuscripts using radiocarbon and AI-based writing style analysis | PLOS One",
+   "card_snippet": "Model: Enoch, an AI date-prediction model using Bayesian ridge regression on allographic and angular writing style feature vectors extracted from binarized manu...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "Biblical Archaeology Society — Can AI Date the Dead Sea Scrolls?",
+   "url": "https://www.biblicalarchaeology.org/daily/biblical-artifacts/dead-sea-scrolls/can-ai-date-the-dead-sea-scrolls/",
+   "kind": "Overview card (Bible History Daily, first published 20 June 2025; a news article with scholars' comments, and readers' comments below it, which are not ledgered)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B2.html",
+     "sha256": "a22ef9db2c0bc583695e2ad7184a5cc4897ac4662e6d2b9478ef3ef2ebcbee9c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B2.txt",
+     "sha256": "25bf22c849fee090b97341394ddef5a9ea5926389970005d72e945da1892f7ad"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:28Z",
+    "http": 200,
+    "url": "https://www.biblicalarchaeology.org/daily/biblical-artifacts/dead-sea-scrolls/can-ai-date-the-dead-sea-scrolls/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B2.html",
+    "raw_sha256": "a22ef9db2c0bc583695e2ad7184a5cc4897ac4662e6d2b9478ef3ef2ebcbee9c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('an international research team'; the PLOS One article)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the page's <title> is 'Biblical Archaeology Society - Can AI Date the Dead Sea Scrolls?'. The snippet's words are the page's ¶4.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Can AI Date the Dead Sea Scrolls?",
+   "card_snippet": "Enoch and the Dead Sea Scrolls To train their model, the researchers performed radiocarbon analysis on two dozen scrolls, from four different sites in the Judea...",
+   "card_note": null
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Reddit·r/AncientCivilizations — New AI Study Suggests Dead Sea Scrolls Are Older Than We Thought! - Reddit",
+   "url": null,
+   "kind": "Overview card (a Reddit post of 15 June 2025, by its snippet); unreachable",
+   "files": {
+    "B3-botcheck.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B3-botcheck.html",
+     "sha256": "b08525292c51d249d95a2c3aca75d64e3efd2f17d44014113b4439bfb84a373c"
+    },
+    "B3-botcheck.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B3-botcheck.txt",
+     "sha256": "eb0050f72303bcdbbdc071e2a3bf810c903be8d05cdf09f7c3106f2b6f9878bf"
+    }
+   },
+   "fetched": {
+    "result": "unreachable",
+    "tried": [
+     "WebSearch on the card's title and site, twice (no Reddit URL returned)",
+     "the subreddit's search page, https://www.reddit.com/r/AncientCivilizations/search/?q=Dead+Sea+Scrolls+older+AI&restrict_sr=1, with the honest agent: HTTP 200 serving a script bot-check page titled 'Reddit' (saved as B3-botcheck.html, 8,436 bytes; its text is the one word 'Reddit')"
+    ],
+    "at": "2026-10-31T04:39:36Z",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "not_retried": "not retried with another agent string or by any other route (BRIEF-NEW-ROW-FIELD §4)"
+   },
+   "names_operator": "no (the snippet says 'A new AI study')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's title and snippet stand as its only text (F43).",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "New AI Study Suggests Dead Sea Scrolls Are Older Than We Thought! - Reddit",
+   "card_snippet": "June 15, 2025 — AI Dating of Scrolls: A new AI study suggests some Dead Sea Scrolls, including parts of the Book of Daniel, may be up to 100 years older than previously thought...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "The Jerusalem Post — AI model 'Enoch' reveals Dead Sea Scrolls are older than believed | The Jerusalem Post",
+   "url": "https://www.jpost.com/archaeology/article-856627",
+   "kind": "Overview card (news, Jerusalem Post Staff, 5 June 2025; it cites Ars Technica, EurekAlert and Popular Science)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B4.html",
+     "sha256": "cd3042142867715bc454292376e5fdfdbf34d3aba2edbd92add798bfb8d6469f"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B4.txt",
+     "sha256": "7a9800e2d6706bab9d5c8c9e5fbdbd0b24212a82bdde8e987bffdd022e0ab7d8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:29Z",
+    "http": 200,
+    "url": "https://www.jpost.com/archaeology/article-856627",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B4.html",
+    "raw_sha256": "cd3042142867715bc454292376e5fdfdbf34d3aba2edbd92add798bfb8d6469f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B4.txt"
+    ]
+   },
+   "names_operator": "yes (Popović, 'study lead author'; Groningen)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (jpost.com/archaeology/article-856627), confirmed by the page's <title>, which is the card's title. The snippet ('Study: University of Groningen researchers developed …') is a labelled summary.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "AI model 'Enoch' reveals Dead Sea Scrolls are older than believed | The Jerusalem Post",
+   "card_snippet": "Study: University of Groningen researchers developed AI model Enoch, combining radiocarbon dating and machine-learning handwriting analysis, to date Dead Sea Sc...",
+   "card_note": null
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Haaretz — Dead Sea Scrolls May Be Older Than We Thought, AI-Based Study Says",
+   "url": null,
+   "kind": "Overview card (news); URL not found",
+   "files": {
+    "B5-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B5-search.html",
+     "sha256": "16905a35c25ab1e8b12ea562da60283f7d297ec0347f17f57f4d6c0bcb67a7c5"
+    },
+    "B5-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B5-search.txt",
+     "sha256": "d942deffc6f400b4633b4786f649dd81a2614cf848478a128b0ba2af6f03c817"
+    }
+   },
+   "fetched": {
+    "result": "URL not found",
+    "tried": [
+     "WebSearch on the card's title and site, three queries (the title; the snippet's 'From Ithaca to Judea'; Popović and the caution T quotes): no Haaretz URL returned",
+     "Haaretz's site search for 'Enoch Dead Sea Scrolls' with the honest agent: HTTP 200, a page that renders its results by script, no result in the saved text (B5-search.html)"
+    ],
+    "at": "2026-10-31T04:39:37Z",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+   },
+   "names_operator": "no (the snippet names neither the authors nor Groningen)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's title and snippet stand as its only text (F53). T's closing quotation, 'More research is needed to understand how Enoch's work will affect our understanding of the chronology of the Dead Sea Scrolls, Popovic cautions', is credited to this card and cannot be checked against it.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Dead Sea Scrolls May Be Older Than We Thought, AI-Based Study Says",
+   "card_snippet": "From Ithaca to Judea Enoch is not the first artificial intelligence used to study ancient texts in general or the Dead Sea Scrolls specifically. In 2022, a diff...",
+   "card_note": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6; the NIH (PMC) copy of the study, one work with B1",
+   "card": "National Institutes of Health (NIH) | (.gov) — Dating ancient manuscripts using radiocarbon and AI",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12136314/",
+   "kind": "Overview card (PubMed Central copy of the PLOS One article, PMC12136314)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B6.html",
+     "sha256": "2729f79cd0bfc60d11345d948d9b79949653979c62eb3b3e7935655f48c54ab8"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B6.txt",
+     "sha256": "8936fddae7ba36b059012268f9cc3d188b9d639cda9d553f5f638cb5b9b099c6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:29Z",
+    "http": 200,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12136314/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B6.html",
+    "raw_sha256": "2729f79cd0bfc60d11345d948d9b79949653979c62eb3b3e7935655f48c54ab8",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes (the authors and their affiliations: Qumran Institute, Bernoulli Institute, Center for Isotope Research, University of Groningen)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (www.ncbi.nlm.nih.gov/pmc/articles/PMC12136314/), fetched at pmc.ncbi.nlm.nih.gov. One work with B1 (§3.6, §5.2: one lineage, one card); its kernel falls in B1's lineage (F31), and it is ledgered for the figures the PLOS page's text drops (F32) and the affiliations (F33). The snippet is the abstract's first sentence.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "Dating ancient manuscripts using radiocarbon and AI",
+   "card_snippet": "Abstract Determining by means of palaeography the chronology of ancient handwritten manuscripts such as the Dead Sea Scrolls is essential for reconstructing the...",
+   "card_note": null
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "Facebook·National Geographic UK — the Dead Sea Scrolls. By combining time honoured excavation techniques ...",
+   "url": null,
+   "kind": "Overview card (video, 1m); URL not found; title only",
+   "files": {},
+   "fetched": {
+    "result": "URL not found",
+    "tried": [
+     "WebSearch on the card's title and site (one query each, and a second on the channel name for card 8): no URL returned for the video"
+    ],
+    "not_fetched": "a video card is admitted through title and snippet (§3.1(a)); no snippet on the card"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's title stands as its only text.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 7
+    }
+   ],
+   "card_title": "the Dead Sea Scrolls. By combining time honoured excavation techniques ...",
+   "card_snippet": null,
+   "card_note": "video, [1m](https://www.google.com/goto?url=CAESwwEB6zswFTgqvHyiuPUYKb3jfB9s6lEQYwTYix0POLVAnUWuWm6yVtgjtciV98Y2Vdw6s9kOOofSHoX2xj2S_Q1H1Q9GlXvqKiM6uUWNjijD4NoXUkzY-nl2oLm2T9QBLoHEiJnXCsp00F83BilQE0Wv5MSzl796EBVUkeCg51X2rOzzEaMAZZtV13-i_s9_sKXxWCyp8mUn0DLHRxYDZdEqZ3yBasa-1PBZ4BCtziFAvTrwcGf_XSvaPotyBwiz1dW7LP4)"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8",
+   "card": "YouTube·Religion For Everybody — How AI Redated the Dead Sea Scrolls: The Enoch Machine Revealed",
+   "url": null,
+   "kind": "Overview card (video, 14:09); URL not found; title only",
+   "files": {},
+   "fetched": {
+    "result": "URL not found",
+    "tried": [
+     "WebSearch on the card's title and site (one query each, and a second on the channel name for card 8): no URL returned for the video"
+    ],
+    "not_fetched": "a video card is admitted through title and snippet (§3.1(a)); no snippet on the card"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's title stands as its only text.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 8
+    }
+   ],
+   "card_title": "How AI Redated the Dead Sea Scrolls: The Enoch Machine Revealed",
+   "card_snippet": null,
+   "card_note": "video, 14:09"
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "role": "Overview card 9",
+   "card": "YouTube·Past Unsealed — AI Just Decoded the Dead Sea Scrolls — What It Found Changes Everything",
+   "url": null,
+   "kind": "Overview card (video, 4m); URL not found; title only",
+   "files": {},
+   "fetched": {
+    "result": "URL not found",
+    "tried": [
+     "WebSearch on the card's title and site (one query each, and a second on the channel name for card 8): no URL returned for the video"
+    ],
+    "not_fetched": "a video card is admitted through title and snippet (§3.1(a)); no snippet on the card"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's title stands as its only text.",
+   "surfaced_by_T": [
+    {
+     "slug": "enoch-ai-dating-dead-sea-scrolls-aio-20261031",
+     "card": 9
+    }
+   ],
+   "card_title": "AI Just Decoded the Dead Sea Scrolls — What It Found Changes Everything",
+   "card_snippet": null,
+   "card_note": "video, 4m"
+  },
+  {
+   "id": "B10",
+   "origin": "census_third_party",
+   "role": "the census's third-party source enoch-dss-dating--erc (basis 'third_party'); not surfaced by T",
+   "card": "European Research Council — Unlocking the timecode of the Dead Sea Scrolls (news, 5 June 2025)",
+   "url": "https://erc.europa.eu/news-events/news/unlocking-timecode-dead-sea-scrolls",
+   "kind": "the funder's news item on the study, saved by the census",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B10.html",
+     "sha256": "7a61ba2a49c69e2d87caa019fd37b65b5e1c89176c0eaf132eaf2defa8c2bb3b"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B10.txt",
+     "sha256": "74cbc3604778b53ddaed48226ea42160bc1ff18a9bd10d6d7121f79f6e7a62af"
+    }
+   },
+   "fetched": {
+    "copied_from_census": true,
+    "src": "enoch-dss-dating--erc",
+    "url": "https://erc.europa.eu/news-events/news/unlocking-timecode-dead-sea-scrolls",
+    "http": 200,
+    "census_fetched": "2026-10-31T02:52:08Z",
+    "sha256": "7a61ba2a49c69e2d87caa019fd37b65b5e1c89176c0eaf132eaf2defa8c2bb3b",
+    "read": "2026-10-31",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org) (the census's fetch)",
+    "note": "copied from the census's saved copy (gunzipped; sha256 matches); not refetched"
+   },
+   "names_operator": "yes (Popović, 'ERC grantee'; Groningen; the project The Hands That Wrote the Bible)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted under its own origin, kept apart from the cards (BRIEF-NEW-ROW-FIELD §3). The census quotes its ¶3 as evidence 'palaeography'.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B11",
+   "origin": "census_third_party",
+   "role": "the census's source enoch-dss-dating--scimex, recorded by the census as unread (HTTP 403); not surfaced by T",
+   "card": "Scimex — Are the Dead Sea Scrolls older than we thought? Enoch the AI thinks so (press release)",
+   "url": "https://www.scimex.org/newsfeed/are-the-dead-sea-scrolls-older-than-we-thought-enoch-the-ai-thinks-so",
+   "kind": "a press release the census tried and could not read",
+   "files": {
+    "B11-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B11-403.html",
+     "sha256": "b676f219e426d4d66215ad3c48debe58ca70e9d44a1d00506b4f76c59e0bccd0"
+    },
+    "B11-403.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B11-403.txt",
+     "sha256": "301dc171e5fa8c5fdeb69592a92a5c378f5f758f68d2338200235d60eb04b9ad"
+    }
+   },
+   "fetched": {
+    "result": "unread",
+    "src": "enoch-dss-dating--scimex",
+    "url": "https://www.scimex.org/newsfeed/are-the-dead-sea-scrolls-older-than-we-thought-enoch-the-ai-thinks-so",
+    "http": 403,
+    "census_fetched": "2026-10-31T02:52:10Z",
+    "sha256": "b676f219e426d4d66215ad3c48debe58ca70e9d44a1d00506b4f76c59e0bccd0",
+    "text": "'Just a moment...' (a bot-check page)",
+    "note": "copied from the census's saved refusal; unread, as the census records it (unread_sources; unchecked); not retried"
+   },
+   "names_operator": "unknown (unread)",
+   "names_archive": "unknown (unread)",
+   "note": "No claim is ledgered from it.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "Wikipedia: no article on the model; it is treated in the article Dead Sea Scrolls (§Dating: Radiocarbon dating ¶2; §Proposed older dates (2025)) and the article's later section on the 2026 ERC project",
+   "card": "Wikipedia — Dead Sea Scrolls (no article on Enoch; §Radiocarbon dating, §Proposed older dates (2025))",
+   "url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+   "kind": "encyclopedia sections (the entity has no article of its own)",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12.html",
+     "sha256": "097045e2253babd1db65a07cde13c0d0c5a564812267b23cd0ed0917c9551877"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12.txt",
+     "sha256": "ce7c6fc473956040d6a18f5abd0c7eb49a30a6ec315a3441b1dc6b072d66af1e"
+    },
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12.wiki",
+     "sha256": "788dc028ea34138bef6aebb8787d35f185b8f5f15c26cc3e03d3a1a21dd09fc1"
+    },
+    "B12-enoch.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch.wiki",
+     "sha256": "3854b9681e8b6980d402747415fc2154f2d64294f38b2d95462434ddb81fbbad"
+    },
+    "B12-enoch-disambiguation.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch-disambiguation.wiki",
+     "sha256": "aba0ea87d77db2af5c82658182861d55e39eef569f517f03f3ad2596b541f54f"
+    },
+    "B12-enoch-ai-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch-ai-404.html",
+     "sha256": "54cc28faa1fe7efc79214bde9ea9fcd0623930235440f01075966bd511815876"
+    },
+    "B12-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-search.html",
+     "sha256": "5d97b854ef344bfde5146c7fbe01bf3bbc1f82f4d607fd7aebe844a13f310b28"
+    },
+    "B12-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-search.txt",
+     "sha256": "4dccf44073d50181f7a483942ec08698f4d8801051e4c5fd73528fff07b83749"
+    }
+   },
+   "fetched": {
+    "rendered": {
+     "at": "2026-10-31T04:40:19Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+     "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+    },
+    "wikitext": {
+     "at": "2026-10-31T04:40:00Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Dead_Sea_Scrolls&action=raw",
+     "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+     "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12.wiki"
+    },
+    "no_article": {
+     "tried": "https://en.wikipedia.org/w/index.php?title=Enoch_(AI)&action=raw",
+     "http": 404,
+     "at": "2026-10-31T04:39:37Z",
+     "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch-ai-404.html"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=Enoch+Dead+Sea+Scrolls+radiocarbon+Bayesian&ns0=1&fulltext=1",
+     "http": 200,
+     "at": "2026-10-31T04:39:38Z",
+     "result": "'The page \" Enoch Dead Sea Scrolls radiocarbon Bayesian \" does not exist'; two results, Dead Sea Scrolls and Carbon dating the Dead Sea Scrolls",
+     "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-search.html"
+    },
+    "api_search": {
+     "tried": [
+      "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Enoch+Dead+Sea+Scrolls+radiocarbon+Popovi%C4%87",
+      "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Bayesian+ridge+regression%22+scrolls"
+     ],
+     "http": 429,
+     "at": "2026-10-31T04:39:51Z",
+     "note": "rate-limited; not retried; the rendered search above stands"
+    },
+    "bare_name": {
+     "Enoch": {
+      "at": "2026-10-31T04:40:22Z",
+      "http": 200,
+      "url": "https://en.wikipedia.org/w/index.php?title=Enoch&action=raw",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch.wiki",
+      "short_description": "Biblical figure prior to Noah's flood"
+     },
+     "Enoch (disambiguation)": {
+      "at": "2026-10-31T04:40:24Z",
+      "http": 200,
+      "url": "https://en.wikipedia.org/w/index.php?title=Enoch_(disambiguation)&action=raw",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B12-enoch-disambiguation.wiki",
+      "result": "no model, program or study of the name listed"
+     }
+    }
+   },
+   "names_operator": "yes (Popović, 'the lead author'; Groningen)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Ledgered: the §Radiocarbon dating paragraph on the 2025 study (F63, F64), §Proposed older dates (2025) (F65), the §Tracing Scribes and Scrolls paragraph (F66, a distinct successor project), and the disambiguation page's first line (F67, file B12-enoch-disambiguation.wiki). Quotes are from the rendered text, whose spacing ('AI -based') follows the page's link markup.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "role": "Wikipedia: Carbon dating the Dead Sea Scrolls, its paragraph on the 2025 study (the same paragraph as B12's; one lineage)",
+   "card": "Wikipedia — Carbon dating the Dead Sea Scrolls (¶ on the 2025 study)",
+   "url": "https://en.wikipedia.org/wiki/Carbon_dating_the_Dead_Sea_Scrolls",
+   "kind": "encyclopedia paragraph",
+   "files": {
+    "B13.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B13.html",
+     "sha256": "ab9fa4ff6c7286bd43446e4b9aa403fd60cdecf209a7de8c621ae4cb52c053af"
+    },
+    "B13.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B13.txt",
+     "sha256": "7ab376ea7dc88b3d768d801925cb9f07a24b51dd5b7b3ea739e7dba1985e92df"
+    },
+    "B13.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B13.wiki",
+     "sha256": "e563b06fa149a6e809f1d31946456f453dd81fdaf0cf796e379b417452a4afe5"
+    }
+   },
+   "fetched": {
+    "rendered": {
+     "at": "2026-10-31T04:40:44Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Carbon_dating_the_Dead_Sea_Scrolls",
+     "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"
+    },
+    "wikitext": {
+     "at": "2026-10-31T04:40:15Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Carbon_dating_the_Dead_Sea_Scrolls&action=raw",
+     "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+     "saved_as": "datasets/negative-of-the-negative/v2/intake/enoch-dss-dating-20261031/B13.wiki"
+    }
+   },
+   "names_operator": "yes (the citation: Popović et al., PLOS ONE)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, Revelation First, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The paragraph restates B12's §Radiocarbon dating ¶2 word for word in its first three sentences; one lineage (F68 under F63).",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "Determining by means of palaeography the chronology of ancient handwritten manuscripts such as the Dead Sea Scrolls is essential for reconstructing the evolution of ideas, but there is an almost complete lack of date-bearing manuscripts.",
+   "claim": "the study's problem: palaeographic dating of the scrolls is essential to the history of ideas, and there are almost no date-bearing manuscripts",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the dating problem: palaeography without date-bearing manuscripts",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "To overcome this problem, we present Enoch, an AI-based date-prediction model, trained on the basis of 24 14 C-dated scroll samples.",
+   "claim": "the study's definition of its object: Enoch, an AI-based date-prediction model trained on 24 radiocarbon-dated scroll samples",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "By applying Bayesian ridge regression on angular and allographic writing style feature vectors, Enoch could predict 14 C-based dates with varied mean absolute errors (MAEs) of 27.9 to 30.7 years.",
+   "claim": "by Bayesian ridge regression on angular and allographic writing-style features, Enoch predicts the radiocarbon-based dates with mean absolute errors of 27.9 to 30.7 years",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "In order to explore the viability of the character-shape based dating approach, the trained Enoch model then computed date predictions for 135 non-dated scrolls, aligning with 79% in palaeographic post-hoc evaluation.",
+   "claim": "to explore the approach's viability, the trained model dated 135 undated scrolls, 79% of its predictions aligning in a palaeographic post-hoc evaluation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "The 14 C ranges and Enoch’s style-based predictions are often older than traditionally assumed palaeographic estimates, leading to a new chronology of the scrolls and the re-dating of ancient Jewish key texts that contribute to current debates on Jewish and Christian origins.",
+   "claim": "the radiocarbon ranges and Enoch's predictions are often older than the palaeographic estimates, giving a new chronology and the re-dating of key texts in debates on Jewish and Christian origins",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the finding: dates older than the palaeographic estimates, a new chronology",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§1 Introduction ¶1",
+   "quote": "Palaeography—the study of ancient handwriting—is used to date manuscripts on the basis of their handwriting [ 2 – 4 ] but its subjectivity and the impossibility of measuring the significance of handwriting features poses a problem [ 5 , 6 ].",
+   "claim": "palaeography dates manuscripts by their handwriting, and its subjectivity and unmeasurable features are a problem (refs 2–4: Nongbri on early Christian codices; Orsini; Orsini and Clarysse on early New Testament manuscripts)",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dating problem: palaeography without date-bearing manuscripts",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§1 Introduction ¶2",
+   "quote": "Enoch, named after the ancient Jewish science hero, was trained as a machine-learning-based date-prediction model applying Bayesian ridge regression on established handwriting-style descriptors.",
+   "claim": "the model is named after the ancient Jewish science hero, and trained as a machine-learning date-prediction model on handwriting-style descriptors",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the name",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§1 Introduction ¶2",
+   "quote": "Thus, Enoch reduces palaeographic subjectivity and the role of implicit knowledge by offering date predictions as probability-based options, grounded in physical ( 14 C) and geometric (shape-based) evidences, that can aid palaeographers and historians in their decision-making and contribute to historical debates.",
+   "claim": "Enoch reduces palaeographic subjectivity by offering dates as probability-based options grounded in radiocarbon and shape-based evidence, to aid palaeographers and historians",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.1 ¶1–2",
+   "quote": "We performed 14 C dating on 30 manuscripts from 4 sites, spanning an estimated 5 centuries … The AMS results yielded 27 valid 14 C dates",
+   "claim": "the team radiocarbon-dated 30 manuscripts from four sites spanning about five centuries; 27 dates were valid",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the radiocarbon anchors: 30 manuscripts dated, 27 valid dates, 24 for training",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.1 ¶4",
+   "quote": "Sample 4Q114 is one of the most significant findings of the 14 C results. … The accepted 2 calibrated range for 4Q114, 230–160 BCE, overlaps with the period in which the final part of the biblical book of Daniel was presumably authored",
+   "claim": "4Q114 (Daniel 8–11) is a radiocarbon result: its range, 230–160 BCE, overlaps the period in which the end of Daniel was presumably written",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the key texts: 4Q114 by radiocarbon, 4Q109 by Enoch, copies from the time of their presumed authors",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.2 ¶3",
+   "quote": "We used 24 manuscripts from the 14 C samples with valid dates as a labeled dataset for the primary training set for Enoch",
+   "claim": "24 of the radiocarbon-dated manuscripts are the model's primary training set",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the radiocarbon anchors: 30 manuscripts dated, 27 valid dates, 24 for training",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.2 ¶2",
+   "quote": "It was decided to let the available data speak, not depending on a pre-trained model",
+   "claim": "no pre-trained model: only the scrolls' own data trains the predictor",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Bayesian ridge regression on writing-style features read from the ink trace, not the text",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.2.2 ¶1",
+   "quote": "In this study, ‘style’ is not related to textual content or wording.",
+   "claim": "the study's definition of style: shapes along the ink trace, unrelated to the text's content or wording",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Bayesian ridge regression on writing-style features read from the ink trace, not the text",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§2.2.2 ¶1",
+   "quote": "The feature vectors relate directly to the shape-based evidence of the ink traces in the manuscripts and have a solid basis in writer identification [ 28 – 30 ] and document dating [ 31 , 32 ].",
+   "claim": "the features come from the ink traces and rest on writer identification and document dating",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Bayesian ridge regression on writing-style features read from the ink trace, not the text",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§3 ¶1",
+   "quote": "14 C date ranges are evidently superior to style-based predictions.",
+   "claim": "the study's own limit: radiocarbon ranges are superior to the style-based predictions",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: radiocarbon superior, a first step, more research needed",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§3 ¶2",
+   "quote": "For Ithaca [ 39 ], AI and epigraphy were similarly used as two heterogeneous information sources to predict dates for ancient Greek inscriptions.",
+   "claim": "the study sets Enoch beside Ithaca, which combined AI and epigraphy to date Greek inscriptions",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and sequel: machine dating of ancient texts before and after Enoch",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§3 ¶3",
+   "quote": "In addition, 11Q5 shows that in the late date range, a fairly certain style-based date estimate above 100 CE can also be achieved. This may go against historical reconstructions according to which the scrolls were hidden in the Qumran caves before the summer of 68 CE [ 40 ].",
+   "claim": "for 11Q5 the model gives a fairly certain date after 100 CE, against the reconstruction that the scrolls were hidden before summer 68 CE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: radiocarbon superior, a first step, more research needed",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§4 ¶2",
+   "quote": "Expert palaeographers among the article’s authors evaluated the style-based date predictions, condensing the prediction into two main categories: realistic and unrealistic",
+   "claim": "the post-hoc evaluation of the 135 predictions was made by palaeographers among the article's own authors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§4 ¶1, ¶3",
+   "quote": "These are the first published results on date estimation for this collection of manuscripts. Future research, with more data and improved images, may be directed at further validation and refinement. … Now, Enoch shows that there is no temporal difference between the two halves of the manuscript",
+   "claim": "the first published date estimates for the collection, with further validation to come; for the Great Isaiah Scroll the two scribes' halves date to the same period",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limits: radiocarbon superior, a first step, more research needed",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§5 ¶1",
+   "quote": "To our knowledge, Enoch is the first complete machine-learning-based model that employs raw image inputs to deliver probabilistic date predictions for handwritten manuscripts utilizing the probability distribution from 14 C output, and that is completed by palaeographic input while ensuring transparency and interpretability through its explainable design.",
+   "claim": "the study's claim of priority: the first complete machine-learning model giving probabilistic dates for handwritten manuscripts from raw images and radiocarbon distributions, with an explainable design",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§5 ¶2",
+   "quote": "This study in style-based date prediction using the Enoch approach is a first step. The advantage of the Enoch model is that it provides quantified objectivity to palaeography, reducing the method’s subjectivity and the role of tacit expert knowledge",
+   "claim": "a first step, whose advantage is quantified objectivity for palaeography",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§5 ¶3",
+   "quote": "It could be argued that the style-based predictions are influenced by the 14 C-based training of the model. However, the leave-one-out validation results indicate that unseen samples obtain their interpolated position on the time axis based on the detected handwriting style in the images.",
+   "claim": "the objection that the predictions only echo the radiocarbon training is met by leave-one-out validation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§5 ¶4",
+   "quote": "we have avoided using palaeographic estimates as target values for machine learning because our goal is to provide physical (material) and geometric (shape-based) evidences for manuscript dating",
+   "claim": "the model is not trained on palaeographic estimates",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Bayesian ridge regression on writing-style features read from the ink trace, not the text",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§5 ¶6",
+   "quote": "If palaeographers are willing to accept the use of ‘black box’, pre-trained deep-learning models that are based on completely extraneous large image and photograph collections, future research may be directed at adapting the output of such models",
+   "claim": "black-box pre-trained models are named as a future option that depends on palaeographers' acceptance, not as the method used",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§6 ¶2–3",
+   "quote": "First, 14 C date ranges and Enoch’s style-based estimates are overall older than previous palaeographic estimates. These older dates for the scrolls are realistic. … Second, ‘Herodian’ script emerged earlier than previously thought.",
+   "claim": "the radiocarbon and style-based dates are overall older and realistic; the Herodian script emerged earlier, beside the Hasmonaean",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the finding: dates older than the palaeographic estimates, a new chronology",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§6 ¶4",
+   "quote": "Yet, the results of this study attest to the copying of multiple literary manuscripts before this period. One example is 4Q109, a copy of the biblical book of Ecclesiastes, a book which scholars tentatively date to the end of the third century BCE [ 15 ], for which Enoch gives a third-century BCE date prediction",
+   "claim": "literary manuscripts were copied before the Hasmonaean expansion; 4Q109, a copy of Ecclesiastes, gets a third-century BCE prediction from Enoch",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "copying before the Hasmonaean expansion and before Qumran",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§6 ¶5",
+   "quote": "Fourth, this study’s 14 C result for 4Q114 and Enoch’s date prediction for 4Q109 now establish these to be the first known fragments of a biblical book from the time of their presumed authors [ 15 ].",
+   "claim": "the radiocarbon result for 4Q114 and Enoch's prediction for 4Q109 make them the first known biblical fragments from the time of their presumed authors",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the key texts: 4Q114 by radiocarbon, 4Q109 by Enoch, copies from the time of their presumed authors",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "§6 ¶6",
+   "quote": "The results of this study thus dismantle unsubstantiated historical suppositions and chronological limitations, and call into question the validity of the default model’s relative typology. … More research is needed to solve this issue.",
+   "claim": "the results call the default relative typology into question; the Herodian-type dates challenge it, and more research is needed",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: radiocarbon superior, a first step, more research needed",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "front matter, Copyright and Data Availability",
+   "quote": "This is an open access article distributed under the terms of the Creative Commons Attribution License … All data, code, and test film associated with this article are publicly available on Zenodo",
+   "claim": "the article is open access under the Creative Commons Attribution License; data, code and test film are on Zenodo",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funding, licence and data",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "front matter, Citation, dates and Funding",
+   "quote": "Popović M, Dhali MA, Schomaker L, van der Plicht J, Lund Rasmussen K, La Nasa J, et al. (2025) Dating ancient manuscripts using radiocarbon and AI-based writing style analysis. … Published: June 4, 2025 … This project has received funding by the European Research Council under the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 640497 (HandsandBible).",
+   "claim": "the study: Popović, Dhali, Schomaker, van der Plicht, Lund Rasmussen, La Nasa et al., PLOS One, published 4 June 2025, funded by the ERC (grant 640497, HandsandBible)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator, funding, licence and data",
+   "date": "2025-06-04 (published; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 43ec0e66575ad39a…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "To overcome this problem, we present Enoch, an AI-based date-prediction model, trained on the basis of 24 14 C-dated scroll samples.",
+   "claim": "the NIH copy of the same article: the same definition (one work, one lineage with B1)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2025-06-04 (published; PMC copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 8936fddae7ba36b0…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "§4 ¶2 (Table 2 summary)",
+   "quote": "107 ( 79 % ) of the undated manuscripts were dated realistically and 28 unrealistic predictions ( 21 % ) were divided between too old ( 46 % ) and too young ( 39 % ), according to the palaeographers ( S7 Appendix ). With this sample size, the confidence margin is 7 % at α = 0.05 .",
+   "claim": "107 of 135 (79%) realistic, 28 (21%) unrealistic, divided between too old and too young; a 7% margin (the figures the PLOS page's text drops)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-04 (published; PMC copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 8936fddae7ba36b0…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "author affiliations",
+   "quote": "1 Qumran Institute, University of Groningen, Groningen, The Netherlands",
+   "claim": "the lead author's institute: the Qumran Institute, University of Groningen",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funding, licence and data",
+   "date": "2025-06-04 (published; PMC copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 8936fddae7ba36b0…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Publishing in the journal PLOS One , an international research team proposes a new method for dating individual scrolls using artificial intelligence. According to the team, this analysis reveals that many of the scrolls are likely older than previously thought. However, not all scholars are convinced.",
+   "claim": "BAS: an international team proposes AI dating of individual scrolls; many scrolls likely older, by the team's account; not all scholars are convinced",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "Enoch examines the shapes of letters from the scrolls and cross-references the writing style with scrolls of similar style that have been dated with carbon-14 dating. In effect, the model performs its own comparative paleographic analysis.",
+   "claim": "BAS: Enoch compares letter shapes with radiocarbon-dated scrolls of similar style, in effect its own comparative palaeography",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the method: Bayesian ridge regression on writing-style features read from the ink trace, not the text",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "To train their model, the researchers performed radiocarbon analysis on two dozen scrolls, from four different sites in the Judean Desert .",
+   "claim": "BAS: radiocarbon analysis on two dozen scrolls from four Judean Desert sites trained the model",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the radiocarbon anchors: 30 manuscripts dated, 27 valid dates, 24 for training",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "Nearly all dates proposed by Enoch were significantly older than previous estimates. Notably, several texts commonly associated with the Qumran community were dated earlier than the site’s first period of settlement, showing that the scrolls must have originated elsewhere.",
+   "claim": "BAS: nearly all of Enoch's dates significantly older; texts associated with the Qumran community dated before the site's first settlement, so the scrolls originated elsewhere",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "copying before the Hasmonaean expansion and before Qumran",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶6 (Christopher Rollston)",
+   "quote": "“The results of this study are very interesting, and presumably important, but not earth-shattering,” … “Most of the conclusions of the study dovetail with what the great paleographers in the field, such as the late Frank Moore Cross , had already stated more than 60 years ago.”",
+   "claim": "Rollston (George Washington University): interesting, not earth-shattering; most conclusions dovetail with what Frank Moore Cross had stated sixty years earlier",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶7 (Jonathan Ben-Dov)",
+   "quote": "“If anything, I think [the researchers’] work drew our attention to points we would have otherwise missed,” … “This is important evidence about the scripture scrolls and their character in the pre-Hasmonean period.”",
+   "claim": "Ben-Dov (Tel Aviv University): the work draws attention to missed points; 4Q52 and 4Q70 are evidence on scripture scrolls before the Hasmonaeans",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶8 (Yonatan Adler)",
+   "quote": "“This is a way to move forward,” said Adler. … Here, there is an attempt to actually procure new data.”",
+   "claim": "Adler (Ariel University): a way forward, an attempt to procure new data",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶9 (Christopher Rollston)",
+   "quote": "“Enoch’s calibrated date range for 4Q114 is: 230–160 BCE. … Thus, in this particular case, which is the one case where we can really fact-check Enoch, it is crystal clear that Enoch’s dates are much too high.”",
+   "claim": "Rollston: the 4Q114 range (230–160 BCE), which he calls Enoch's, is too high, since Daniel 7–12 cannot be dated before 167 BCE",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶11 (Jonathan Ben-Dov)",
+   "quote": "“Overall, the scholarly community faces a serious question: Is this study reliable enough to substantiate a re-shuffle of the entire chronological paradigm of Qumran?”",
+   "claim": "Ben-Dov: whether the study is reliable enough to re-shuffle the chronology of Qumran is the open question",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "2025-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 25bf22c849fee090…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (Reddit unreachable: a script bot-check page)",
+   "quote": "AI Dating of Scrolls: A new AI study suggests some Dead Sea Scrolls, including parts of the Book of Daniel, may be up to 100 years older than previously thought",
+   "claim": "the Reddit card (15 June 2025): some scrolls, parts of Daniel among them, may be up to 100 years older",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the magnitude in the press: 50 to 150 years, a century, up to 100 years",
+   "date": "2025-06-15 (on the card)",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F44": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "standfirst",
+   "quote": "Researchers establish two biblical scroll fragments come from the time of their presumed authors.",
+   "claim": "JPost: two biblical fragments from the time of their presumed authors",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the key texts: 4Q114 by radiocarbon, 4Q109 by Enoch, copies from the time of their presumed authors",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "An artificial intelligence program named Enoch has advanced the dating of many of the Dead Sea Scrolls by 50 to 150 years earlier than previously believed, according to a new study published in the journal PLOS One.",
+   "claim": "JPost: Enoch moved the dates of many scrolls 50 to 150 years earlier, according to the study",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the magnitude in the press: 50 to 150 years, a century, up to 100 years",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Researchers from the University of Groningen developed Enoch to analyze the handwriting styles of ancient manuscripts, combining radiocarbon dating and paleography to provide more accurate date estimates for individual Dead Sea Scrolls manuscripts.",
+   "claim": "JPost: Groningen researchers developed Enoch, combining radiocarbon dating and palaeography to date individual scrolls",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶3 (the authors, via Ars Technica)",
+   "quote": "\"With the Enoch tool we have opened a new door into the ancient world, like a time machine, that allows us to study the hands that wrote the Bible, especially now that we have established, for the first time, that two biblical scroll fragments come from the time of their presumed authors,\" the authors stated, according to Ars Technica.",
+   "claim": "the authors: Enoch opens the ancient world 'like a time machine', and two biblical fragments are from their presumed authors' time",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶7 (Popović)",
+   "quote": "\"In some cases we see dates that are 50 years older or maybe even a century older than previously assumed,\" Popović adds.",
+   "claim": "Popović: in some cases 50 years, or even a century, older",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the magnitude in the press: 50 to 150 years, a century, up to 100 years",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶6",
+   "quote": "The AI program analyzed the handwriting style of 135 scrolls with unknown dates spanning three centuries from around 200 BCE to 100 CE.",
+   "claim": "JPost: 135 undated scrolls analysed, spanning about 200 BCE to 100 CE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶5 (Popović)",
+   "quote": "\"Radiocarbon dating is a destructive method,\" said Professor Mladen Popović, an archaeologist at the University of Groningen and study lead author.",
+   "claim": "Popović, the lead author: radiocarbon dating destroys material, which the model is built to overcome",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dating problem: palaeography without date-bearing manuscripts",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶12 (Popović)",
+   "quote": "Popović plans to apply the Enoch model to more Dead Sea Scrolls, as well as other ancient Aramaic texts like the Elephantine Papyri.",
+   "claim": "Popović plans to apply the model to more scrolls and to Aramaic texts such as the Elephantine Papyri",
+   "modality": "attributed",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and sequel: machine dating of ancient texts before and after Enoch",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶15–16",
+   "quote": "\"The advantage of the [AI] model is that it provides quantified objectivity to paleography, reducing the method's subjectivity,\" the authors write. The study suggests that scribes were copying multiple literary manuscripts before this period, which could have major implications for our historical narratives.",
+   "claim": "JPost quotes the authors' 'quantified objectivity' and reports copying before the period",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "copying before the Hasmonaean expansion and before Qumran",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 7a9800e2d6706bab…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card snippet (Haaretz: URL not found)",
+   "quote": "From Ithaca to Judea Enoch is not the first artificial intelligence used to study ancient texts in general or the Dead Sea Scrolls specifically.",
+   "claim": "Haaretz's card: Enoch is not the first AI used on ancient texts or on the scrolls",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "lineage and sequel: machine dating of ancient texts before and after Enoch",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F54": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card title (Facebook, National Geographic UK, video 1m; URL not found)",
+   "quote": "the Dead Sea Scrolls. By combining time honoured excavation techniques",
+   "claim": "National Geographic UK's video post, by its title: excavation techniques combined (with what, the title is cut)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (no URL found; title only)"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "card title (YouTube, Religion For Everybody, 14:09; URL not found)",
+   "quote": "How AI Redated the Dead Sea Scrolls: The Enoch Machine Revealed",
+   "claim": "a video, by its title: AI re-dated the scrolls",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (no URL found; title only)"
+  },
+  "F56": {
+   "source": "B9",
+   "origin": "card",
+   "locus": "card title (YouTube, Past Unsealed, 4m; URL not found)",
+   "quote": "AI Just Decoded the Dead Sea Scrolls — What It Found Changes Everything",
+   "claim": "a video, by its title: AI decoded the scrolls and changes everything",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: scholars for and against",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title (no URL found; title only)"
+  },
+  "F57": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "¶1",
+   "quote": "An international research team led by the University of Groningen has developed a new method to date individual Dead Sea scrolls more precisely by combining radiocarbon analysis with artificial intelligence-based handwriting analysis.",
+   "claim": "the ERC: a Groningen-led team's method dates individual scrolls more precisely, combining radiocarbon with AI handwriting analysis",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "¶2",
+   "quote": "By analysing ink-trace patterns and character shapes using a neural network (BiNet), Enoch can predict manuscript dates with an uncertainty of around 30 years -more accurate than standalone radiocarbon dating in this period.",
+   "claim": "the ERC: Enoch predicts dates within about 30 years, more accurate than standalone radiocarbon dating in this period",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "accuracy and validation: errors of 27.9 to 30.7 years; 79% realistic on 135 undated scrolls",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "¶3",
+   "quote": "Until now, dating has largely relied on palaeography, the study of ancient handwriting, which lacks a solid empirical foundation due to the absence of securely dated reference materials.",
+   "claim": "the ERC: palaeography lacks an empirical foundation for want of securely dated reference materials",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dating problem: palaeography without date-bearing manuscripts",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "¶4",
+   "quote": "This provides, for the first time, a robust and objective framework for dating over a thousand manuscripts from the Dead Sea Scrolls collection.",
+   "claim": "the ERC: for the first time a robust, objective framework for dating over a thousand manuscripts",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it offers palaeography: probability-based options, quantified objectivity, explainable design",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "¶5",
+   "quote": "The study also provides the first material evidence that two biblical scrolls, 4QDanielc and 4QQoheleta , originate from the same periods as their presumed authors in the second and third centuries BCE.",
+   "claim": "the ERC: 4QDaniel-c and 4QQohelet-a from the same periods as their presumed authors",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the key texts: 4Q114 by radiocarbon, 4Q109 by Enoch, copies from the time of their presumed authors",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "locus": "project box",
+   "quote": "The Hands that Wrote the Bible: Digital Palaeography and Scribal Culture of the Dead Sea Scrolls … ERC-2014-STG 640497",
+   "claim": "the ERC project behind the study: The Hands that Wrote the Bible, starting grant 640497",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funding, licence and data",
+   "date": "2025-06-05",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 74cbc3604778b53d…), whitespace-normalised"
+  },
+  "F63": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, §Dating, Radiocarbon dating ¶2",
+   "quote": "The study also made use of an AI -based date-prediction model called \"Enoch\", which was trained by applying Bayesian ridge regression on the handwriting-style descriptors of 24 of the 14C-dated samples, for the paleographic dating of some 135 previously undated manuscripts.",
+   "claim": "Wikipedia: the 2025 study's AI date-prediction model 'Enoch', trained on 24 radiocarbon-dated samples, dated some 135 undated manuscripts",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2026-10-23 (article last edited; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 ce7c6fc473956040…), whitespace-normalised"
+  },
+  "F64": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, §Dating, Radiocarbon dating ¶2",
+   "quote": "The study found earlier dates and coexistence of the Herodian and Hasmonean scripts, into the 2nd and 3rd century BCE, and possible pre-Hasmonean evidence of scribal literacy.",
+   "claim": "Wikipedia: earlier dates, Herodian and Hasmonaean scripts side by side, possible pre-Hasmonaean scribal literacy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the finding: dates older than the palaeographic estimates, a new chronology",
+   "date": "2026-10-23 (article last edited; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 ce7c6fc473956040…), whitespace-normalised"
+  },
+  "F65": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, §Proposed older dates (2025) ¶1–2",
+   "quote": "This study proposes older dates for some of the scrolls. … The lead author is Mladen Popović from the University of Groningen in the Netherlands. … For example, the fragmentary scroll 4Q114 of the Book of Daniel is now dated to between 230 and 160 B.C.E., as much as 60 years earlier than previously thought.",
+   "claim": "Wikipedia: older dates for some scrolls; lead author Popović; 4Q114 now 230–160 BCE, up to 60 years earlier",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the key texts: 4Q114 by radiocarbon, 4Q109 by Enoch, copies from the time of their presumed authors",
+   "date": "2026-10-23 (article last edited; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 ce7c6fc473956040…), whitespace-normalised"
+  },
+  "F66": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, §Tracing Scribes and Scrolls",
+   "quote": "A five-year research project announced in June 2026 and led by Mladen Popović of the University of Groningen will work in conjunction with the Israel Antiquities Authority to look deeper into the history, transmission and cultural environment of the scrolls.",
+   "claim": "Wikipedia: a five-year ERC project led by Popović with the Israel Antiquities Authority, announced June 2026 (Tracing Scribes and Scrolls), a successor and a distinct entity",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lineage and sequel: machine dating of ancient texts before and after Enoch",
+   "date": "2026-10-23 (article last edited; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 ce7c6fc473956040…), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Enoch (disambiguation), wikitext line 2",
+   "quote": "'''[[Enoch]]''' is a biblical figure and the subject of the [[Book of Enoch]].",
+   "claim": "Wikipedia: the bare name is the biblical figure's, and the disambiguation page lists no model of the name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and the name",
+   "date": "2026-10-31 (read)",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B12-enoch-disambiguation.wiki, whitespace-normalised"
+  },
+  "F68": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "locus": "Carbon dating the Dead Sea Scrolls, ¶ on 2025",
+   "quote": "The study also made use of an AI -based date-prediction model called \"Enoch\", which was trained by applying Bayesian ridge regression on the handwriting-style descriptors of 24 of the 14C-dated samples, for the paleographic dating of some 135 previously undated manuscripts.",
+   "claim": "Wikipedia's article on carbon dating the scrolls carries the same paragraph (one lineage with B12)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an AI-based date-prediction model for the scrolls and the study that introduces it",
+   "date": "2026-08-08 (article last edited; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 7ab376ea7dc88b3d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "PLOS — Dating ancient manuscripts using radiocarbon and AI-based writing style analysis | PLOS One",
+  "B2": "Biblical Archaeology Society — Can AI Date the Dead Sea Scrolls?",
+  "B3": "Reddit·r/AncientCivilizations — New AI Study Suggests Dead Sea Scrolls Are Older Than We Thought! - Reddit",
+  "B4": "The Jerusalem Post — AI model 'Enoch' reveals Dead Sea Scrolls are older than believed | The Jerusalem Post",
+  "B5": "Haaretz — Dead Sea Scrolls May Be Older Than We Thought, AI-Based Study Says",
+  "B6": "National Institutes of Health (NIH) | (.gov) — Dating ancient manuscripts using radiocarbon and AI",
+  "B7": "Facebook·National Geographic UK — the Dead Sea Scrolls. By combining time honoured excavation techniques ...",
+  "B8": "YouTube·Religion For Everybody — How AI Redated the Dead Sea Scrolls: The Enoch Machine Revealed",
+  "B9": "YouTube·Past Unsealed — AI Just Decoded the Dead Sea Scrolls — What It Found Changes Everything",
+  "B10": "European Research Council — Unlocking the timecode of the Dead Sea Scrolls (news, 5 June 2025)",
+  "B11": "Scimex — Are the Dead Sea Scrolls older than we thought? Enoch the AI thinks so (press release)",
+  "B12": "Wikipedia — Dead Sea Scrolls (no article on Enoch; §Radiocarbon dating, §Proposed older dates (2025))",
+  "B13": "Wikipedia — Carbon dating the Dead Sea Scrolls (¶ on the 2025 study)"
+ }
+}

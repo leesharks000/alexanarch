@@ -1,0 +1,952 @@
+{
+ "row": "dss-digital-library",
+ "address": "Leon Levy Dead Sea Scrolls Digital Library",
+ "addresses": [
+  "Leon Levy Dead Sea Scrolls Digital Library"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw HTML for one label not in the extracted text (F5), the Wikipedia 404 page (F36), or the card's title for the one card admitted through it (F23); 38/38 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the library's home page; B2 a blog review, Septuaginta &c.; B3 the Orion Center, Hebrew University; B4 the IAA's video, title only; B5 the Friends of the IAA; B6 the IAA's video on YouTube, its description); 'own_page', the census's own page T did not surface (B7, the library's introduction, copied from the census's saved copy; the census's other own page, the home page, is card B1, carried once as a card); 'wikipedia', no article under the name or its variants (HTTP 404), the library treated and cited in the article Dead Sea Scrolls (B8). No census third-party source: the census read only the library's own pages for this entity.",
+ "lineage_note": "Lineages: what it is (B1, B2, B3, B4, B5, B6); holdings, the spectral images and the PAM negatives (B1, B8); operator, funders and partner (B1, B5, B8); the corpus (B7, B5); the dates (B7, B2, B8); the text, biblical scrolls, Masoretic text and canon (B7); contested communities, the Essenes (B7); access and search (B2, B3); conservation (B5); the journey (B1); reception, the encyclopedia (B8); distinct entities beside it, the Israel Museum's digital scrolls (B3, B8).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1-census.* the census's saved copy of the home page beside this session's fetch, byte-identical; B4-oembed.json the oEmbed record; B6.txt the title and description from the video page's data; B7 the census's saved copy; B8-404.*, -variant*.wiki and -search-429*.txt the raw Wikipedia responses, B8.wiki/.html/.txt the article Dead Sea Scrolls); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the census's own page dss-digital-library--home",
+   "card": "www.deadseascrolls.org.il — Leon Levy Dead Sea Scrolls Digital Library",
+   "url": "https://www.deadseascrolls.org.il/",
+   "kind": "Overview card (the library's home page, © 2026 Israel Antiquities Authority); the same page as the census's own page dss-digital-library--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1.html",
+     "sha256": "8e3eb0d196e3d11d9fe452e1e0ae8a2be57b99170777b94c90c14fb9f1e93750"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1.txt",
+     "sha256": "af9f5e4c44ccbfad60b447c0233e58f391bf5e2d8a42e22959bb4a2317ad9b1c"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1-census.html",
+     "sha256": "8e3eb0d196e3d11d9fe452e1e0ae8a2be57b99170777b94c90c14fb9f1e93750"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1-census.txt",
+     "sha256": "87f9688db9bd825eb004fff692ada551f243bb39222ca07dc7d541e2c0d5ec58"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:22Z",
+    "http": 200,
+    "url": "https://www.deadseascrolls.org.il/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1.html",
+    "raw_sha256": "8e3eb0d196e3d11d9fe452e1e0ae8a2be57b99170777b94c90c14fb9f1e93750",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1.txt"
+    ],
+    "census_copy": {
+     "src": "dss-digital-library--home",
+     "sha256": "8e3eb0d196e3d11d9fe452e1e0ae8a2be57b99170777b94c90c14fb9f1e93750",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:52:01Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B1-census.txt"
+     ],
+     "agrees": "byte-identical: this session's fetch and the census's saved copy have the same sha256"
+    }
+   },
+   "names_operator": "yes ('© 2026 Israel Antiquities Authority'; 'The Leon Levy and Arcadia Funds' as a project page; the footer's 'Powered by:' logo link labelled 'Google Arts and Culture' in the HTML)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site; the page's text is the card's snippet ('The Leon Levy Dead Sea Scrolls Digital Library offers an exceptional encounter with antiquity. Using the world's most advanced imaging technology, the Digital L...'). The home page carries three variants of its lede (responsive layouts); F1 ledgers the first, the others are the same lineage. The Google name is not in the extracted text: it is the aria-label of the footer's logo link (B1.html), the reason the census's text extraction does not show it."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "williamaross.com — The Leon Levy Dead Sea Scrolls Digital Library | Septuaginta &c.",
+   "url": "https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/",
+   "kind": "Overview card (a blog post, William A. Ross, Septuaginta &c., 27 March 2014, the first of his resource reviews)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B2.html",
+     "sha256": "ef3b14e9e23f79a0ca048f12a747d64b0a03297e4ab267cfa3e87169a64782b6"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B2.txt",
+     "sha256": "b372ee7e6d6e1477b9febbf2e1f04bb5aeefd924fb0083c66f93170f4f71c5dd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:23Z",
+    "http": 200,
+    "url": "https://williamaross.com/2014/03/27/the-leon-levy-dead-sea-scrolls-digital-library/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B2.html",
+    "raw_sha256": "ef3b14e9e23f79a0ca048f12a747d64b0a03297e4ab267cfa3e87169a64782b6",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B2.txt"
+    ]
+   },
+   "names_operator": "yes ('the Israel Antiquities Authority (IAA)')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the page's <title> is the card's title and its text begins with the card's snippet. It embeds the IAA's video (YouTube Yp6nLMPt-og), B6."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "האוניברסיטה העברית בירושלים — The Dead Sea Scrolls Digital Library",
+   "url": "https://orion.huji.ac.il/resources/DSS_online.shtml",
+   "kind": "Overview card (the Orion Center for the Study of the Dead Sea Scrolls, Hebrew University of Jerusalem: 'Dead Sea Scrolls online')",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B3.html",
+     "sha256": "adccde60317536d4f8f094948318da563870c8a8ca35f82111fdf0a175dbbf7a"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B3.txt",
+     "sha256": "47a7fd8db6224ed177804ff33f94e63894228d45ca422287e3590d56447f5b87"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:24Z",
+    "http": 200,
+    "url": "https://orion.huji.ac.il/resources/DSS_online.shtml",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B3.html",
+    "raw_sha256": "adccde60317536d4f8f094948318da563870c8a8ca35f82111fdf0a175dbbf7a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('The Israel Antiquities Authority (IAA) has developed the Leon Levy Dead Sea Scrolls Digital Library')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch; the page's <TITLE> is the card's title ('The Dead Sea Scrolls Digital Library') and its text carries the card's snippet. The page also lists the Israel Museum's Scrolls Online and Scripta Qumranica Electronica, distinct entities (homonyms)."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (video, 4m)",
+   "card": "YouTube·Israel Antiquities Authority Official Channel — The Leon Levy Dead Sea Scrolls Digital Library (video, 4m)",
+   "url": "https://www.youtube.com/watch?v=Yp6nLMPt-og (probable: the card's title and channel match this video's oEmbed record; the card carries no snippet to confirm it)",
+   "kind": "Overview card (a video of the IAA's official channel; title only)",
+   "files": {
+    "B4-oembed.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B4-oembed.json",
+     "sha256": "35572973e278afbcfd04963361c38a3d351226da149cf3f2190a9f41cc7066cc"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T04:40:20Z",
+      "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=Yp6nLMPt-og&format=json",
+      "http": 200,
+      "result": "title 'The Leon Levy Dead Sea Scrolls Digital Library', author 'Israel Antiquities Authority Official Channel'"
+     }
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "result": "admitted through the card's title (§3.1(a)); the URL found by the title and channel in the pages that embed the video (B2, B5); whether card 4 and card 6 are one video is not determined (the watch page's duration was not served under its bot check); two WebSearches for the video's URL returned no YouTube result"
+   },
+   "names_operator": "yes (the channel, 'Israel Antiquities Authority Official Channel')",
+   "names_archive": "no (card title and site)",
+   "note": "Title only; F23."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "www.friendsofiaa.org — Dead Sea Scrolls - The Friends of the Israel Antiquities Authority",
+   "url": "https://www.friendsofiaa.org/dead-sea-scrolls",
+   "kind": "Overview card (the Friends of the Israel Antiquities Authority, New York: 'Dead Sea Scrolls')",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B5.html",
+     "sha256": "4775590ce016603cd2f2e5debb66ca4840144c91289a4d2da528e7fec7e2fa41"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B5.txt",
+     "sha256": "1716c9be003214f0750d513b46f7a15491165ed19c1916aefb2cf0b36e8ee38d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:24Z",
+    "http": 200,
+    "url": "https://www.friendsofiaa.org/dead-sea-scrolls",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B5.html",
+    "raw_sha256": "4775590ce016603cd2f2e5debb66ca4840144c91289a4d2da528e7fec7e2fa41",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('the Leon Levy Foundation', 'the Arcadia Fund', 'the IAA and Google joined forces')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by its title on the Friends' site (https://www.friendsofiaa.org/ fetched first, then the page); its <title> is the card's title and its 'Digital Library' paragraph carries the card's snippet. The Friends is the IAA's American support organization; its statements are the operator's affiliate's."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (video)",
+   "card": "YouTube — The Leon Levy Dead Sea Scrolls Digital Library - YouTube",
+   "url": "https://www.youtube.com/watch?v=Yp6nLMPt-og",
+   "kind": "Overview card (the IAA's video on YouTube; its description is the card's snippet)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B6.html",
+     "sha256": "9dd183e71a64f3b08052a3114b8b683127dfc08806899353212712495d13a571"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B6.txt",
+     "sha256": "b3ab212826691e57b626628bf493b12d32be93da678cc824b74f48c3368c9544"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:40:19Z",
+    "http": 200,
+    "url": "https://www.youtube.com/watch?v=Yp6nLMPt-og",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B6.html",
+    "raw_sha256": "9dd183e71a64f3b08052a3114b8b683127dfc08806899353212712495d13a571",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B6.txt"
+    ],
+    "result": "partial: HTTP 200 with YouTube's bot check on playback ('Sign in to confirm you’re not a bot'); the page served the video's title and description in its page data, saved as B6.txt; no transcript; not retried with any other agent or route"
+   },
+   "names_operator": "yes ('The Israel Antiquities Authority (IAA) is very proud to present')",
+   "names_archive": "no",
+   "note": "The card's snippet ('The Israel Antiquities Authority (IAA) is very proud to present the Leon Levy Dead Sea Scrolls Digital Library, a free online digitized virtual library of the D...') is the description's opening, which identifies the video. The page shows the date 'Oct 9, 2012'. The operator should know: the page served a bot check, and the description was taken from the same response; if that is to be read as a refusal under BRIEF-NEW-ROW-FIELD §4, F30 rests on the card's snippet alone, which carries its first clause."
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the census's own page dss-digital-library--intro (not surfaced by T)",
+   "card": "deadseascrolls.org.il — The Dead Sea Scrolls - Introduction (own page, not a card)",
+   "url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/introduction",
+   "kind": "own page (the library's introduction to the scrolls)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B7.html",
+     "sha256": "ae5d817a344d183ab5097954ddc014a943bb1ebe7e93d3a01f63d50ab46edea0"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B7.txt",
+     "sha256": "6978a1d8de29913cb2ca348a6a3771c3bc4ba3674dd66447b752789e39b1d1be"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "dss-digital-library--intro",
+     "sha256": "ae5d817a344d183ab5097954ddc014a943bb1ebe7e93d3a01f63d50ab46edea0",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:52:02Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B7.html",
+      "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B7.txt"
+     ],
+     "agrees": "copied from the census's saved copy; sha256 of the gunzipped HTML matches the manifest"
+    },
+    "agent": "the census's (alexanarch-seating/1.0)",
+    "refetched": false
+   },
+   "names_operator": "yes ('© 2026 Israel Antiquities Authority')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Admitted beside the cards by the operator's ruling; T did not surface it."
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia article (none); the article that treats it, Dead Sea Scrolls",
+   "card": "Wikipedia — Leon Levy Dead Sea Scrolls Digital Library (no article; treated in Dead Sea Scrolls)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Leon_Levy_Dead_Sea_Scrolls_Digital_Library&action=raw",
+   "kind": "Wikipedia (no article; the library is cited and treated in the article Dead Sea Scrolls)",
+   "files": {
+    "B8-404.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-404.wiki",
+     "sha256": "5fe811f3ae3644c3ba02404d5968a890d0b49c7fbf40202d8e8ff445af9dd1cb"
+    },
+    "B8-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-404.html",
+     "sha256": "dc16580d971169d1aec4d9baf1d589fc7c39adc56b3df0d6810acbf5adc4f529"
+    },
+    "B8-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-variant1.wiki",
+     "sha256": "0970ec83f660b9989b3f9aba6af2f6f455d9730f13104aec0aec8010617006a3"
+    },
+    "B8-variant2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-variant2.wiki",
+     "sha256": "b0f43f30acd9cfbeae6363f2c53aad8a075e4741a034939083031aeb38916361"
+    },
+    "B8-search-429a.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-search-429a.txt",
+     "sha256": "6fd80e73c3a61b9e65fdde3aade90715f7b5634ddae83b419fa1cdda13193089"
+    },
+    "B8-search-429b.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-search-429b.txt",
+     "sha256": "a9f4c5f2b20677ea0047ab0f24bb87f811cbff064d9a62147e87f0e5d565d1e3"
+    },
+    "B8-search-429c.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8-search-429c.txt",
+     "sha256": "b946bc55b7ba572b42dde32d07b27d8cb02d1fd043561b4c41c1e7e774fe13ef"
+    },
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8.wiki",
+     "sha256": "788dc028ea34138bef6aebb8787d35f185b8f5f15c26cc3e03d3a1a21dd09fc1"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8.html",
+     "sha256": "316074820cda8b95a99ace0d0328c4b2930681c97a9bead3a67838872fef920e"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dss-digital-library-20261031/B8.txt",
+     "sha256": "60d188357d885b486a16ab37e583d9a2df7de6629d718ae9bc27a3412f323869"
+    }
+   },
+   "fetched": {
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "tries": [
+     {
+      "at": "2026-10-31T04:39:25Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Leon_Levy_Dead_Sea_Scrolls_Digital_Library&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T04:39:26Z",
+      "url": "https://en.wikipedia.org/wiki/Leon_Levy_Dead_Sea_Scrolls_Digital_Library",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name.'"
+     },
+     {
+      "at": "2026-10-31T04:39:35Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Dead_Sea_Scrolls_Digital_Library&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T04:39:35Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Leon_Levy_Dead_Sea_Scrolls_Digital_Library_Project&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-10-31T04:39:36Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Leon+Levy+Dead+Sea+Scrolls+Digital+Library%22",
+      "http": 429,
+      "result": "rate limit ('You are making too many requests to the API'); not retried"
+     },
+     {
+      "at": "2026-10-31T04:39:36Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Dead+Sea+Scrolls+Digital+Library%22",
+      "http": 429
+     },
+     {
+      "at": "2026-10-31T04:41:14Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Leon+Levy+Dead+Sea+Scrolls%22",
+      "http": 429,
+      "result": "one later try with the same agent; refused again; no further tries"
+     },
+     {
+      "at": "2026-10-31T04:39:43Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Dead_Sea_Scrolls&action=raw",
+      "http": 200,
+      "result": "B8.wiki: the article names and cites the library"
+     },
+     {
+      "at": "2026-10-31T04:41:14Z",
+      "url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+      "http": 200,
+      "result": "B8.html, text B8.txt"
+     }
+    ]
+   },
+   "names_operator": "yes (the article's citations give 'Leon Levy Dead Sea Scrolls Digital Library' as publisher; 'Israel Antiquities Authority' as publisher of the discovery page)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "No redirect: the name and its variants return 404. The search API refused the build environment with 429 three times (a shared rate limit), so the article-space search could not be run; the article Dead Sea Scrolls was read because the library's own pages are its cited sources there. Ledgered: the passages that cite or name the library (the dating sentence, the launch paragraph, 'Other sources') and the passage on the 1950s plates the library scans, in the same section ('Photography and assembly')."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, lede ¶1 s1–2",
+   "quote": "The Leon Levy Dead Sea Scrolls Digital Library offers an exceptional encounter with antiquity. Using the world's most advanced imaging technology, the Digital Library preserves thousands of scroll fragments, including the oldest known copies of biblical texts, now accessible to the public for the first time.",
+   "claim": "the library's own definition: an encounter with antiquity, by the most advanced imaging technology preserving thousands of scroll fragments, among them the oldest known copies of biblical texts, accessible to the public for the first time",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "undated (© 2026; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 af9f5e4c44ccbfad…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, 'Explore the Archive'",
+   "quote": "Examine high-resolution spectral images of manuscript fragments and browse scans of negatives (PAM) from the 1950s",
+   "claim": "what the library holds: high-resolution spectral images of the fragments and scans of the 1950s PAM negatives",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "holdings: spectral images and the 1950s PAM negatives",
+   "date": "undated (© 2026; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 af9f5e4c44ccbfad…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, 'Learn About the Scrolls'",
+   "quote": "Follow the journey of the Scrolls from ancient authors, to Bedouin shepherds, and finally to expert scholars and conservators",
+   "claim": "the library's introductions follow the scrolls from their ancient authors to the shepherds who found them and the scholars and conservators who hold them",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the journey of the scrolls",
+   "date": "undated (© 2026; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 af9f5e4c44ccbfad…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, 'About the Project' and its navigation",
+   "quote": "Read about the sponsors and innovators who have brought this unique digital library to life … A Note From the IAA Director The IAA The Digital Library The Leon Levy and Arcadia Funds",
+   "claim": "the library names its project pages: a note from the IAA's director, the IAA, the digital library, and the Leon Levy and Arcadia Funds, its sponsors",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator, funders and partner",
+   "date": "undated (© 2026; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 af9f5e4c44ccbfad…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, footer ('© 2026'; the 'Powered by:' logo group, whose link carries aria-label 'Google Arts and Culture' in B1.html)",
+   "quote": "© 2026 Israel Antiquities Authority … Powered by: … aria-label=\"Google Arts and Culture\"",
+   "claim": "the site is the Israel Antiquities Authority's, © 2026, and its footer states it is powered by Google Arts and Culture (the name is in the logo link's label, not in the visible text)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funders and partner",
+   "date": "undated (© 2026; read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved B1.html (raw HTML, sha256 8e3eb0d196e3d11d…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction ¶1",
+   "quote": "The most well-known texts among the Dead Sea Scrolls are the ancient religious writings found in eleven caves near the site of Qumran. … While some of these writings survived as nearly intact scrolls, most of the archive consists of thousands of parchment and papyrus fragments.",
+   "claim": "the corpus the library introduces: the religious writings of the eleven Qumran caves and the documents of other sites, mostly thousands of parchment and papyrus fragments",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "the corpus: the Dead Sea Scrolls of Qumran and the other sites",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F7": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Qumran Caves Scrolls' ¶2 s1",
+   "quote": "Scroll dates range from the third century bce (mid–Second Temple period) to the first century of the Common Era, before the destruction of the Second Temple in 70 ce .",
+   "claim": "the library's dates for the Qumran scrolls: from the third century BCE to the first century CE, before the destruction of the Second Temple in 70 CE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the dates of the scrolls",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F8": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Qumran Caves Scrolls' ¶2 s2–3",
+   "quote": "While Hebrew is the most frequently used language in the Scrolls, about 15 % were written in Aramaic and several in Greek. The Scrolls’ materials are made up mainly of parchment, although some are papyrus, and the text of one Scroll is engraved on copper.",
+   "claim": "languages and materials: mostly Hebrew, about 15% Aramaic, several Greek; mainly parchment, some papyrus, one scroll on copper",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the corpus: the Dead Sea Scrolls of Qumran and the other sites",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F9": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Biblical Manuscripts' ¶1–2",
+   "quote": "About 230 manuscripts are referred to as “biblical Scrolls”. … Among the Scrolls are partial or complete copies of every book in the Hebrew Bible (except the book of Esther).",
+   "claim": "about 230 biblical scrolls, with copies of every book of the Hebrew Bible except Esther",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the text: the biblical scrolls, the Masoretic text, the canon",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F10": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Biblical Manuscripts' ¶1 s3–4",
+   "quote": "Evidence suggests that the Scrolls' contemporary communities did not have a unified conception of an authoritative collection of scriptural works. The idea of a closed biblical “canon” only emerged later in the history of these sacred writings.",
+   "claim": "the scrolls' communities had no unified conception of an authoritative scriptural collection; a closed biblical canon emerged later",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the text: the biblical scrolls, the Masoretic text, the canon",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F11": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Biblical Manuscripts' ¶3–4",
+   "quote": "This similarity is quite remarkable, considering that the Qumran Scrolls are over a thousand years older than previously identified biblical manuscripts. … Additions and deletions in certain texts imply that the writers felt free to modify texts they were copying.",
+   "claim": "many biblical scrolls resemble the Masoretic Text though over a thousand years older than the biblical manuscripts known before; some differ, and their additions and deletions imply scribes free to modify what they copied",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the text: the biblical scrolls, the Masoretic text, the canon",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F12": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Non-Biblical Manuscripts' ¶1 s1",
+   "quote": "The Qumran Caves Scrolls preserve a large range of Jewish religious writings from the Second Temple period, including parabiblical texts, exegetical texts, hymns and prayers, wisdom texts, apocalyptic texts, calendrical texts, and others.",
+   "claim": "the non-biblical scrolls: a large range of Second Temple Jewish religious writings, apocalyptic texts among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the corpus: the Dead Sea Scrolls of Qumran and the other sites",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F13": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Non-Biblical Manuscripts' ¶3",
+   "quote": "There is disagreement, however, about many other aspects of these texts, including which communities are represented and how those communities may have interacted with one another.",
+   "claim": "the library's stated limit on the field: disagreement over which communities the texts represent and how they interacted",
+   "modality": "contested",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "contested: which communities, the Essenes",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F14": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Sectarian Manuscripts' s3–4",
+   "quote": "In the early days of Scrolls research, scholars attributed all of the Qumran scrolls to the Essene community, one of three main Jewish sects described in ancient sources. In recent years, however, this consensus has been challenged and modified, though many scholars still maintain a link between the Essenes and the Dead Sea Scrolls.",
+   "claim": "the Essene attribution: once the consensus, now challenged and modified, with many scholars keeping a link",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "contested: which communities, the Essenes",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F15": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'Scrolls from Additional Sites' s1",
+   "quote": "Dead Sea Scrolls discovered outside of the Qumran caves range from as early as the First Temple period (eighth century bce ) to as late as the 11 th century ce .",
+   "claim": "the scrolls of the other sites range from the eighth century BCE to the eleventh century CE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dates of the scrolls",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F16": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Introduction, 'The Bar Kokhba Refuge Caves' ¶3 s1",
+   "quote": "The biblical Scrolls from the refuge caves are significant for textual criticism because they are equivalent to the Masoretic (Hebrew Bible) Text, which suggests that the biblical text was stabilized by the second-century ce .",
+   "claim": "the refuge-cave biblical scrolls equal the Masoretic Text, suggesting the biblical text stabilized by the second century CE",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the text: the biblical scrolls, the Masoretic text, the canon",
+   "date": "undated (© 2026; read 2026-10-31 by the census)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 6978a1d8de29913c…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "post of 2014-03-27, 'The Digital Scrolls Library' ¶1 s2–3",
+   "quote": "The Leon Levy Dead Sea Scrolls Digital Library is the result of the work of the Israel Antiquities Authority (IAA), who have used the latest digital technology to provide high resolution images freely to the public. The site offers hundreds of manuscripts and thousands of fragments found in the Judean Desert between 1947 and the early 1960s.",
+   "claim": "a reviewer (William A. Ross, Septuaginta &c.) on the library: the IAA's work, high-resolution images free to the public, hundreds of manuscripts and thousands of fragments found in the Judean Desert between 1947 and the early 1960s",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "2014-03-27",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b372ee7e6d6e1477…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "post of 2014-03-27, ¶2",
+   "quote": "My favorite feature of the site (beside this interesting historical timeline) is the multi-criteria archive search page, where users can sort by archaeological site, language, scroll content, and even more technical filters like material, historic period, and manuscript type. The Greek manuscripts and fragments add up to just over 130 items, a remarkable resource for LXX and OT scholar alike.",
+   "claim": "the reviewer on the search: sorting by site, language, content, material, period and manuscript type; just over 130 Greek items, for Septuagint scholarship",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, search and linked resources",
+   "date": "2014-03-27",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b372ee7e6d6e1477…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "post of 2014-03-27, 'The Significance of Qumran for LXX Studies' ¶3 s1",
+   "quote": "Most of the DSS date between the 3rd century B.C.E. and the 1st century C.E.",
+   "claim": "the reviewer's date for most of the scrolls: the third century BCE to the first century CE",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dates of the scrolls",
+   "date": "2014-03-27",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b372ee7e6d6e1477…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Dead Sea Scrolls online', the library's entry",
+   "quote": "The Israel Antiquities Authority (IAA) has developed the Leon Levy Dead Sea Scrolls Digital Library, a free online digitized virtual library of the Dead Sea Scrolls. The high resolution images are extremely detailed and can be accessed through various search options on the site.",
+   "claim": "the Orion Center (Hebrew University) lists the library: developed by the IAA, a free online digitized virtual library of the scrolls, its images searchable",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 47a7fd8db6224ed1…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Dead Sea Scrolls online', the library's entry s3",
+   "quote": "The Leon Levy Library and the Orion Bibliography databases are linked with one another, so that users of each site have one-click access to the resources of the other.",
+   "claim": "the library and the Orion Bibliography are linked to each other",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, search and linked resources",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 47a7fd8db6224ed1…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Dead Sea Scrolls online', Scripta Qumranica Electronica entry s3",
+   "quote": "The project combines two major databases: the digital images of all known Qumran fragments at the Leon Levy Dead Sea Scrolls Digital Library, Israel Antiquities Authority, Jerusalem",
+   "claim": "Scripta Qumranica Electronica, a platform for digital editions, combines the library's images of all known Qumran fragments with the Göttingen Qumran dictionary's data",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access, search and linked resources",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 47a7fd8db6224ed1…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card title and site (the oEmbed record of the video the card's title and channel identify, Yp6nLMPt-og, gives the same title and author)",
+   "quote": "The Leon Levy Dead Sea Scrolls Digital Library",
+   "claim": "the IAA's official channel presents the library in a video of four minutes (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "2012-10-09 (the date the video's page shows)",
+   "quote_ok": true,
+   "checked_against": "the card's title and site on the transcript's rail (cite_list)"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Digital Library' ¶1",
+   "quote": "The Leon Levy Dead Sea Scrolls Digital Library is a free online digitized virtual library of the Dead Sea Scrolls which uses the most advanced technologies available to image a collection of more than 25,000 fragments.",
+   "claim": "the Friends of the IAA: a free online digitized virtual library of the scrolls imaging a collection of more than 25,000 fragments",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Digital Library' ¶2 s1",
+   "quote": "With the generous lead support of the Leon Levy Foundation and additional generous support of the Arcadia Fund, the IAA and Google joined forces to develop the most advanced imaging and web technologies to bring to the web hundreds of Dead Sea Scrolls images and supporting resources in a user-friendly platform intended for the public, students, and scholars alike.",
+   "claim": "the funders and the partner: lead support from the Leon Levy Foundation, further support from the Arcadia Fund; the IAA and Google joined forces on the imaging and web technologies, for the public, students and scholars",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator, funders and partner",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Digital Library' ¶2 s2–3",
+   "quote": "This digital library is another example of the IAA's vision and mission, to make the archaeology and heritage of Israel freely available and accessible to people around the world. The Leon Levy Dead Sea Scrolls Digital Library represents a new milestone in the annals of the story of one of the greatest manuscript finds of all times.",
+   "claim": "the IAA's mission as the library carries it: the archaeology and heritage of Israel freely accessible worldwide; the library a milestone in the story of the find",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funders and partner",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Digital Library', the quotation of Shuka Dorfman, General Director of the IAA (2000–2014)",
+   "quote": "We have succeeded in recruiting the best minds and technological means to preserve this unrivalled cultural heritage treasure which belongs to all of us, so that the public with a touch of the screen will be able to freely access history in its fullest glamour.",
+   "claim": "the IAA's general director on the library: the best minds and means recruited to preserve a heritage that belongs to all, freely accessible at a touch",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, funders and partner",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'The Find of the Century' ¶1 s1–2",
+   "quote": "Widely considered the archaeological find of the 20th century, the Dead Sea Scrolls collection is made up of tens of thousands of parchment and papyrus fragments belonging to approximately 1000 different texts. The scrolls were written about 2000 years ago and include the oldest known manuscripts of the five books of the Torah.",
+   "claim": "the Friends of the IAA on the collection: tens of thousands of fragments of about 1000 texts, written about 2000 years ago, with the oldest known manuscripts of the Torah",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the corpus: the Dead Sea Scrolls of Qumran and the other sites",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "'Conservation' ¶2–3",
+   "quote": "When the Israel Antiquities Authority (IAA) was created in 1990, one of their first projects was to create a climate-controlled storeroom and laboratory in the Rockefeller Museum building to house the scrolls. … Each fragment is photographed and mapped.",
+   "claim": "the IAA's conservation since 1990: a climate-controlled storeroom and laboratory in the Rockefeller Museum; each fragment photographed and mapped",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "conservation",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1716c9be003214f0…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "video description (B6.txt, 'Description')",
+   "quote": "The Israel Antiquities Authority (IAA) is very proud to present the Leon Levy Dead Sea Scrolls Digital Library, a free online digitized virtual library of the Dead Sea Scrolls. Hundreds of manuscripts made up of thousands of fragments -- discovered from 1947 and until the early 1960's in the Judean Desert along the western shore of the Dead Sea -- are now available to the public online. The high resolution images are extremely detailed and can be accessed through various search options on the site.",
+   "claim": "the IAA presents the library: a free online digitized virtual library of the scrolls; hundreds of manuscripts in thousands of fragments, discovered from 1947 to the early 1960s in the Judean Desert, online, searchable",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the IAA's free online library of the scrolls' images",
+   "date": "2012-10-09 (the date the video's page shows)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b3ab212826691e57…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F31": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, 'Scholarly examination' › 'Photography and assembly' › 'Digital infrared imaging (1993–2012)' ¶3",
+   "quote": "On 18 December 2012 … the first output of this project was launched together with Google on the dedicated site Deadseascrolls.org.il. … The site contains both digitizations of old images taken in the 1950s and about 1,000 images taken with multispectral imaging.",
+   "claim": "Wikipedia (the scrolls' article; the library has none of its own): launched on 18 December 2012 together with Google at deadseascrolls.org.il, with digitized images of the 1950s and about 1,000 multispectral images",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator, funders and partner",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F32": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, 'Photography and assembly' › 'Infrared photography and plate assembly (1952–1967)' s1, s4",
+   "quote": "A majority of the collection from the Qumran caves was acquired by the Palestine Archaeological Museum. … Najib and the team at the museum produced over 1,750 photographic plates of the scrolls and fragments.",
+   "claim": "Wikipedia on the negatives the library scans: the Palestine Archaeological Museum acquired most of the Qumran collection, and Najib Albina and the museum's team made over 1,750 infrared plates (1952–1967)",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: spectral images and the 1950s PAM negatives",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F33": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, 'Infrared photography and plate assembly (1952–1967)' last sentence",
+   "quote": "These are the earliest photographs of the museum's collection, which was the most complete in the world at the time, and they recorded the fragments and scrolls before their further decay in storage, so they are often considered the best recorded copies of the scrolls.",
+   "claim": "Wikipedia: the plates record the fragments before their later decay and are often considered the best recorded copies of the scrolls",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: spectral images and the 1950s PAM negatives",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, lead section ¶ on languages and materials, s4 (citing the library's introduction, ref. 'DSSDLintro')",
+   "quote": "Though scholarly consensus dates the Dead Sea Scrolls to have been made between the 3rd century BCE and the 1st century CE, … there are Arabic manuscripts from associated Judaean Desert sites that are dated between the 8th and 10th century CE.",
+   "claim": "Wikipedia, citing the library for both clauses: the consensus dates the scrolls from the third century BCE to the first century CE; Arabic manuscripts of associated sites are of the eighth to tenth century CE",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dates of the scrolls",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, 'Bibliography' › 'Other sources'",
+   "quote": "Leon Levy Dead Sea Scrolls Digital Library http://www.deadseascrolls.org.il/home",
+   "claim": "Wikipedia lists the library among the scrolls' online sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "the article title 'Leon Levy Dead Sea Scrolls Digital Library' (B8-404.html, HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article on the library under its name (nor under 'Dead Sea Scrolls Digital Library')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved B8-404.html (raw HTML, sha256 dc16580d971169d1…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "'Dead Sea Scrolls online', the Israel Museum's entry",
+   "quote": "Israel Museum Scrolls Online … Searchable digital photographs of the Great Isaiah Scroll, the Community Rule, the War Scroll, the Pesher on Habakkuk, and the Temple Scroll .",
+   "claim": "the Orion Center lists beside the library a distinct entity, the Israel Museum's Scrolls Online, with searchable photographs of the Great Isaiah Scroll, the Community Rule, the War Scroll, the Pesher on Habakkuk and the Temple Scroll",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "distinct entities beside it: the Israel Museum's digital scrolls",
+   "date": "undated (read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 47a7fd8db6224ed1…), whitespace-normalised; ' … ' joins parts, each checked"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "Dead Sea Scrolls, 'Digitization project (2011–2016)' s1",
+   "quote": "In partnership with Google, the Israel Museum photographed a number of the Dead Sea Scrolls and made them available to the public digitally, albeit not in the public domain.",
+   "claim": "Wikipedia: a distinct project, the Israel Museum's, photographed scrolls in partnership with Google and made them available digitally, not in the public domain",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "distinct entities beside it: the Israel Museum's digital scrolls",
+   "date": "the revision read 2026-10-31",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 60d188357d885b48…), whitespace-normalised; ' … ' joins parts, each checked"
+  }
+ },
+ "field_sources": {
+  "B1": "www.deadseascrolls.org.il — Leon Levy Dead Sea Scrolls Digital Library",
+  "B2": "williamaross.com — The Leon Levy Dead Sea Scrolls Digital Library | Septuaginta &c.",
+  "B3": "האוניברסיטה העברית בירושלים — The Dead Sea Scrolls Digital Library",
+  "B4": "YouTube·Israel Antiquities Authority Official Channel — The Leon Levy Dead Sea Scrolls Digital Library (video, 4m)",
+  "B5": "www.friendsofiaa.org — Dead Sea Scrolls - The Friends of the Israel Antiquities Authority",
+  "B6": "YouTube — The Leon Levy Dead Sea Scrolls Digital Library - YouTube",
+  "B7": "deadseascrolls.org.il — The Dead Sea Scrolls - Introduction (own page, not a card)",
+  "B8": "Wikipedia — Leon Levy Dead Sea Scrolls Digital Library (no article; treated in Dead Sea Scrolls)"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "row": "bodmer-lab",
+ "address": "Bodmer Lab",
+ "entity": "the Bodmer Lab (bodmerlab.unige.ch), a research and digitization project of the University of Geneva's Faculty of Letters and the Fondation Martin Bodmer, supported by the Fondation Ernst and Lucie Schmidheiny: a digital library of world literature from the Bibliotheca Bodmeriana, organized in 'constellations', one of them the Bodmer Papyri, an online catalogue of the Fondation's papyrus and parchment manuscripts; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/bodmer-lab/). Distinct from Rolf Bodmer's cardiovascular laboratory at Sanford Burnham Prebys (bodmerlab.org) and the University of Salford's Bodmer Laboratories, two homonyms the composition sets beside it",
+ "row_type": "C (a public entity on which the archive bears: a digital library and online papyrus catalogue; an entity of the Revelation First meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bBodmer ?Lab\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "bodmerlab\\.unige",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bBodmer Papyri constellation\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "the Bodmer papyri (the papyrus and parchment manuscripts the constellation catalogues, P66, P72, P75 among them)",
+   "pattern": "\\b(Bodmer [Pp]apyr(i|us)|P\\.? ?Bodmer|Papyrus Bodmer|Dishna Papers|(P|𝔓|\\\\mathfrak\\{P\\}\\^?\\{?)(66|72|75)\\b|Papyrus (66|72|75)\\b)",
+   "flags": "",
+   "basis": "field: B4 (the Bodmer Papyri constellation: 'Online catalog of the papyrus and parchment manuscripts in the Bodmer collection'; 'P.Bodmer I = PB1; P.Bodmer II = PB 2, etc.'); B10 (the home page: 'Bodmer Papyri ... 56 documents numérisés'); B12 (Wikipedia, 'Dishna Papers', to which 'Bodmer Papyri' redirects: 'Papyrus 66 (P66), is a text of the Gospel of John'; 'Papyrus 72 ... is the earliest known copy of the Epistle of Jude'; 'Papyrus 75 (P75) is a partial codex containing most of Luke and John'; external link 'Bodmer Papyri Home Page' to bodmerlab.unige.ch). The census's kind and text_object for the entity ('one of them the Bodmer Papyri'; 'the papyrus and parchment manuscripts of the Fondation Martin Bodmer') (census.json rows[slug == 'bodmer-lab'].kind, .text_object)."
+  },
+  {
+   "term": "early New Testament papyri (papyrological dating of the New Testament)",
+   "pattern": "\\b((early|earliest|oldest) (physical )?(New Testament|NT|Christian|gospel) (papyr(i|us)|manuscripts?|witness(es)?|texts? preserved|fragments|cop(y|ies))|earliest physical (copy|witness)|New Testament papyr(i|us)|papyrological (dating|dates?|evidence|inversion|record))\\b",
+   "flags": "i",
+   "basis": "field: B4 ('These manuscripts are of course highly important for the history of early Christianity'); B12 (Wikipedia, 'Bodmer Library': 'Some of these papyri are among the oldest remaining copies of the New Testament'; 'Dishna Papers' in 'Category:New Testament papyri'). The census's intersection for the entity, 'papyrology-discovery' ('Papyrology and textual discovery: manuscripts, editions, new finds and redatings') and its worked question 'papyri-revelation-date', which names the entity (census.json rows[slug == 'bodmer-lab'].intersections; intersections; questions.json 'papyri-revelation-date')."
+  },
+  {
+   "term": "digitized manuscript images and online catalogues (the digital library)",
+   "pattern": "\\b(digiti[sz]ed (manuscripts?|papyri|images?|collections?)|digital librar(y|ies)|online catalogu?e)\\b",
+   "flags": "i",
+   "basis": "field: B10 ('Une bibliothèque numérique de la littérature mondiale'; 'Le Bodmer Lab est un projet de recherche et de numérisation'); B1 ('a hub for research and digitisation'); B4 ('Online catalog'); B7 (the card's title, 'The Bodmer Lab, a Digital Library'). The census's evidence_kind for the entity, 'manuscript images' and 'catalogue or metadata', and its worked question 'seen-or-edited' (census.json rows[slug == 'bodmer-lab'].evidence_kind; questions.json 'seen-or-edited')."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own intersection, kind, text object or evidence kind for the entity, stated by field sources at the loci given: (1) the Bodmer papyri, the manuscripts the entity's constellation catalogues (census kind and text_object; B4, B10, B12), P66, P72 and P75 named among them by Wikipedia (B12), PB 2 = P.Bodmer II by the constellation's own numbering (B4); (2) early New Testament papyri (census intersection 'papyrology-discovery' and worked question 'papyri-revelation-date'; B4, B12); (3) digitized manuscript images and online catalogues (census evidence_kind 'manuscript images', 'catalogue or metadata', worked question 'seen-or-edited'; B1, B4, B7, B10). The archive bears on these classes through the Revelation First thesis (#202 and the deposits revelationfirst.com cites), its papyrological work (the Sappho papyri are Oxyrhynchus papyri, not Bodmer) and its machine-reading work; a deposit enters only where its sentence says something of the entity or applies its category to one of these classes. The census's rf_intersection ('Papyrological inversion: the Bodmer papyri include some of the earliest New Testament papyri ...') is the archive's reading, ledgered as RF-; it does not by itself admit a deposit. Aliases: the name with and without the space (the site's own 'bodmerlab'), the site's host, and the constellation's name. The bare 'Bodmer' is not an alias: it is Martin Bodmer, the Fondation, Rolf Bodmer and Sir Walter Bodmer; 'Bodmer Lab' at bodmerlab.org is the homonym, Rolf Bodmer's laboratory, and archive uses of that sense are read as the homonym's. Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Bodmer Lab' (bodmer-lab-aio-20261031, OBS-5c35e10b4e39, ADDR-ab104ab7d842), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Revelation First census record) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second string pass, same day, before reading: the class (2) pattern widened to the archive's own phrasings of the class ('papyrological record', 'papyrological dates', 'earliest physical NT witness', 'earliest NT texts preserved'), found by a check grep of data/texts for 'papyrolog' after the first pass returned no D, no R and no class (1) candidates; the first pass's 44 O candidates are a subset of the second's. Third pass: one citation hop forward and back from the deposits admitted by reading (#202, #636, #1217, #1680).",
+ "hop_from": [
+  202,
+  636,
+  1217,
+  1680
+ ]
+}

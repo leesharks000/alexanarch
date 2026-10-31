@@ -1,0 +1,282 @@
+{
+ "row": "enoch-dss-dating",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Enoch with the entity named; R, a relation the archive states between Enoch and an archive object; O, an archive category applied to Enoch or to a class the field and the census source for it (palaeographic dating: B1 Abstract and §1, B10, B2, B4, B12, census evidence_kind; radiocarbon dating: B1 §2.1, B2, B4, B10, B12, B13; machine reading, restoration and dating of ancient texts: B1 §3, B5, census intersection 'ai-ancient-texts'; the date of a copy against its composition: B1 §6, B4, B10, census negative tag and does_not_answer; computational writer identification and handwriting-style analysis: B1 §2.2.2 and §4, B2, B4, B10, census method and unit). A bare mention, a keyword line, a provenance kernel or a term in another sense is not a claim. The string pass returns an O-class candidate only where a sentence also carries a term of the archive's category vocabulary; beyond it, the archive's sentences on palaeography, papyrological dating, copies and composition, Ithaca and writer identification were read at their passages, and the admitted deposits at the sections named in each claim's locus.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First ≠ Revelation Early, the canonical thesis: claim 3, 'Papyrological dates are ranges, not certainties', with the papyrological inversion (𝔓52/𝔓98/𝔓46) by their received dates, and the first falsifier stated in terms of securely dating a New Testament document: the archive's claims on classes (1) palaeographic dating and (4) the date of a copy against its composition. The string pass returned only its provenance kernel (O0008); claim 3 and the falsifier were found by reading the class matches. #1025 (the keyword surface) carries claim 3 word for word and is grouped under S4 as an instance",
+   "claims": [
+    "O202-01",
+    "O202-02",
+    "O202-03"
+   ],
+   "cands": [
+    "O0008"
+   ]
+  },
+  {
+   "dep": 832,
+   "strata": [
+    "O"
+   ],
+   "reason": "the Revelation First work plan (v7.1): the Claim Ladder's third claim, 'Manuscript attestation does not equal composition date', and §9 'The Papyrological Inversion', with its receipts (𝔓52 by a 'Hadrianic handwriting baseline') and its limit ('does not argue that papyrological dating of copies establishes composition dates'): classes (1) and (4). Its other versions (#1211, #1216, #1217, #1400) and the Josephus-thesis papers (#203, #1213, #1226), which carry the Claim Ladder sentence word for word, are grouped under S4 as instances",
+   "claims": [
+    "O832-01",
+    "O832-02",
+    "O832-03"
+   ],
+   "cands": [
+    "O0022",
+    "O0023",
+    "O0024"
+   ]
+  },
+  {
+   "dep": 860,
+   "strata": [
+    "O"
+   ],
+   "reason": "the Revelation First mint block (Release 2): RF-M19 autograph inference ('All NT dating is autograph inference … copies of copies') and RF-M01 papyrological sovereignty, defined categories applied to classes (4) and (1). #1231 and #1249 are the same mint block in later deposits (S4 instances)",
+   "claims": [
+    "O860-01",
+    "O860-02"
+   ],
+   "cands": [
+    "O0028",
+    "O0029"
+   ]
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Photograph of the Handwritten Original, the field survey: §2.3 Ithaca, the hazard of a machine's early reading 'a property of single-verdict interfaces, not of machine reading as such', ranked alternatives as mitigation (the archive's Differential Register Prioritization, #1406, applied to machine reading of ancient texts, class 3), and that Ithaca and Vesuvius 'work on authors who cannot be consulted'; §5.1 writer identification, individuating at scale and weak on short samples (class 5; its literature includes He and Schomaker 2021, Schomaker being one of Enoch's authors). Found by reading the class matches (the string pass returned O0073, O0074)",
+   "claims": [
+    "O1443-01",
+    "O1443-02",
+    "O1443-03",
+    "O1443-04"
+   ],
+   "cands": [
+    "O0073",
+    "O0074"
+   ]
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-SPXI-ANALOG-01, §I.2: palaeography's writer identification descends from diplomatics and its computational validation shows handwriting's discriminating elements 'measurable and individuating', taken into the genealogy of the archive's substrate checksum (classes 1 and 5). Thin: a genealogy, not a claim on dating. The string pass's sentence (O0072, the machine layer stripping manuscripts) is about composition systems reading handwriting, not about machine dating, and is not the admitted claim",
+   "claims": [
+    "O1409-01"
+   ],
+   "cands": [
+    "O0072"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/enoch-ai-dating-dead-sea-scrolls-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note, title and reader's notes for the entity's capture (OBS-ff5da0726928, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "RF",
+   "url": "https://www.revelationfirst.com/aggregators/enoch-dss-dating/ (source: /home/claude/fleet/revelationfirst-com/data/rf-census/census.json rows[slug == 'enoch-dss-dating'], organizing_question and correction; questions.json papyri-revelation-date and machine-dating; rendered aggregators/enoch-dss-dating/index.html read for agreement)",
+   "reason": "the Revelation First census record of the entity (editor Lee Sharks, compiled 2026-10-30, schema field census 1.0): its fields with their basis; where a field restates a source ledgered in B (B1, B10) it is one lineage with that source; its rf_intersection is the archive's reading and is ledgered as such (RF-20)",
+   "claims": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-04",
+    "RF-05",
+    "RF-06",
+    "RF-07",
+    "RF-08",
+    "RF-09",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-14",
+    "RF-15",
+    "RF-16",
+    "RF-17",
+    "RF-18",
+    "RF-19",
+    "RF-20",
+    "RF-21",
+    "RF-22",
+    "RF-23",
+    "RF-24",
+    "RF-25",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-29",
+    "RF-30",
+    "RF-31",
+    "RF-32",
+    "RF-33",
+    "RF-34",
+    "RF-35"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    10,
+    31,
+    121,
+    175,
+    176,
+    186,
+    254,
+    400,
+    482,
+    483,
+    503,
+    516,
+    645,
+    907,
+    921,
+    1003,
+    1012,
+    1168,
+    1170,
+    1171,
+    1178,
+    1194,
+    1251,
+    1287,
+    1406,
+    1543,
+    1695,
+    1709,
+    1711
+   ],
+   "reason": "'machine reading' in the archive's sense of machines reading contemporary text (training-layer literature, its genre and journals, logotic hacking, the Assembly, the Originals Library's shelf, a register-loss cascade in a session): class (3)'s words in another sense, no claim on machine dating or reading of ancient texts"
+  },
+  {
+   "dep": [
+    6,
+    1119
+   ],
+   "reason": "'composition dates' of Antioch (2014–2015) in a navigation map's table: another sense"
+  },
+  {
+   "dep": [
+    204,
+    1025,
+    847,
+    1211,
+    1216,
+    1217,
+    1400,
+    832
+   ],
+   "reason": "provenance kernels and keyword lines naming 'the papyrological inversion (𝔓52/𝔓98/𝔓46)' or the seven workstreams (O0010, O0024, O0025, O0035, O0042, O0045, O0046, O0048, O0051–O0053, O0056, O0057, O0069): a bare mention, not a claim; the claims of #832 and its versions are admitted from §9 and the Claim Ladder"
+  },
+  {
+   "dep": [
+    858,
+    1219
+   ],
+   "reason": "the Sappho table ('what survives is copies of copies'): the archive's analogy for its own corpus, not a claim on dating"
+  },
+  {
+   "dep": [
+    859,
+    1218
+   ],
+   "reason": "Release 3's 'Autograph inference cost' (X.09 × X.04), the same definition as #860's RF-M19 under another coordinate: S4, an instance adding nothing; kept in the provenance graph under O860-01's lineage"
+  },
+  {
+   "dep": [
+    870
+   ],
+   "reason": "the forensic canary 'palaeographic jurisdictional precedence' listed as an example (O0030): a mention of #860's RF-M01 variant"
+  },
+  {
+   "dep": [
+    1422
+   ],
+   "reason": "'The paleographer supplies readings for damaged letters' (After the Obelus): palaeography as transmission that supplies relations, not palaeographic dating; read and not admitted (hop and class match)"
+  },
+  {
+   "dep": [
+    1698
+   ],
+   "reason": "1 Enoch seated in Ge'ez (EA-CORPORA-20): the homonym's book, not the model (recorded in homonyms)"
+  }
+ ],
+ "hop": {
+  "from": [
+   202,
+   203,
+   832,
+   860,
+   1211,
+   1213,
+   1216,
+   1217,
+   1226,
+   1231,
+   1249,
+   1400,
+   1409,
+   1443
+  ],
+  "candidates": 92,
+  "admitted": 0,
+  "read": "every hop candidate's text was searched for the classes' terms (palaeograph-, papyrolog-, papyrus/papyri with a date, composition date, writer identification, Ithaca, radiocarbon, date-prediction); sixteen matched and were read at their passages: #1025 is #202's keyword surface (claim 3 word for word, grouped under S4 with O202-01, O202-02); #204, #847 carry the provenance kernel or workstream list (mentions); #123's 'Ithaca' is the press (Cornell); #136, #436, #825, #828, #1054, #1068, #1483, #1484, #1684 name papyrus in Sappho's poetics, a translator's brackets, Zenodotus as a papyrus-age editor, the magical papyri or the Thomas papyri, not the dating of manuscripts; #1422 is read above; #1444 names 'Independent papyrology and DH' as a channel. None admitted"
+ },
+ "class_pass": "O-class: the string pass returned 80 candidates in 53 deposits; reading admitted #202, #832 and #860 (with their S4 instances #203, #1025, #1211, #1213, #1216, #1217, #1226, #1231, #1249, #1400); reading the class matches outside the pass admitted #1443 and #1409",
+ "observations": "No archive text names Enoch the model, its study, its DOI, Popović, Dhali or Schomaker as its authors, or the HandsandBible project (D 0, R 0); the archive's 'Enoch' is the patriarch's and his books'. The archive's bearing is ontological and by class: the Revelation First deposits' claims on the dates of New Testament papyri as palaeographic ranges and on copies against compositions (#202, #832, #860), the field survey's reading of machine reading of ancient texts and of writer identification (#1443), and the analog specification's genealogy of computational handwriting analysis (#1409). With these, the archive's records of the entity: the Revelation First census record and the capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 80,
+   "O_deposits": 53,
+   "H_candidates": 92
+  },
+  "deposits_candidate": 53,
+  "deposits_admitted": 5,
+  "deposits_admitted_with_claims": 5,
+  "instances_grouped_S4": 10,
+  "hop_candidates": 92,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 12,
+   "rf": 35,
+   "deposit": 13
+  }
+ }
+}

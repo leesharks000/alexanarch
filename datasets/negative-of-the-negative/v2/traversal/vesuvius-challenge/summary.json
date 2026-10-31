@@ -1,0 +1,97 @@
+{
+ "row": "vesuvius-challenge",
+ "address": "Vesuvius Challenge",
+ "entity": "the Vesuvius Challenge (scrollprize.org; also 'Scroll Prize'), which describes itself as an open science research organization reading the carbonized Herculaneum scrolls without unrolling them, created by Nat Friedman, Daniel Gross and Brent Seales and launched in 2023 as a global open competition with prizes for virtual unwrapping and ink detection on CT scans of the scrolls (prizes awarded by Scroll Prize, Inc.; EduceLab of the University of Kentucky its partner); formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/vesuvius-challenge/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "vesuvius-challenge",
+  "address": "Vesuvius Challenge",
+  "entity": "the Vesuvius Challenge (scrollprize.org; also 'Scroll Prize'), which describes itself as an open science research organization reading the carbonized Herculaneum scrolls without unrolling them, created by Nat Friedman, Daniel Gross and Brent Seales and launched in 2023 as a global open competition with prizes for virtual unwrapping and ink detection on CT scans of the scrolls (prizes awarded by Scroll Prize, Inc.; EduceLab of the University of Kentucky its partner); formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/vesuvius-challenge/)",
+  "row_type": "C (a public entity on which the archive bears: an open research competition and organization reading the carbonized Herculaneum scrolls by machine; an entity of the Revelation First meta-aggregator)",
+  "aliases": [
+   {
+    "pattern": "\\bVesuvius Challenge\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bscrollprize\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bScroll Prize\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "the Herculaneum papyri (the carbonized scrolls of the Villa of the Papyri, buried in 79 AD)",
+    "pattern": "\\b(Herculaneum|Villa of the Papyri|P\\.? ?Herc\\.?)",
+    "flags": "",
+    "basis": "field: B1 (home: 'Vesuvius Challenge is an open science research organization reading the carbonized Herculaneum scrolls without unrolling them'; 'the library of the Villa of the Papyri'); B4 (Wikipedia, 'Herculaneum papyri', to which 'Vesuvius Challenge' redirects, section 'Vesuvius Challenge'); B12 (prizes: 'one of the eligible CT scans of carbonized scrolls from Herculaneum'). The census's text_object for the entity ('the carbonized papyrus scrolls of Herculaneum, buried in 79 AD') and coverage (census.json rows[slug == 'vesuvius-challenge'].text_object, .coverage)."
+   },
+   {
+    "term": "machine reading of ancient texts: virtual unwrapping and ink detection on scans of damaged or unopened manuscripts",
+    "pattern": "\\b(virtual(ly)? (unwrap\\w*|unroll\\w*|unfold\\w*)|ink detection|machine[- ]read\\w* (of )?(ancient|papyr\\w*|scrolls?|manuscripts?|inscriptions?)|read\\w* (the )?(carbonized|carbonised|charred|unopened|unopenable) (scrolls?|papyr\\w*)|phase-contrast|micro-?CT|tomograph\\w*)\\b",
+    "flags": "i",
+    "basis": "field: B1 ('Virtual Unwrapping', 'Ink Detection', the two open problems); B12 (the Grand Prize: 'fully digitally unrolls and makes readable'; ink detection); B3 and B7 (the press release: 'read the Herculaneum scrolls without physically opening them'); B4 (Wikipedia, 'Virtual unrolling'). The census's intersection 'ai-ancient-texts' ('AI and ancient texts: machine reading, restoration and dating'), evidence_kind 'machine reading, restoration or dating', method and unit, and the worked question 'machine-dating' that names the entity (census.json rows[slug == 'vesuvius-challenge'].intersections, .evidence_kind, .method, .unit; intersections; questions.json 'machine-dating')."
+   },
+   {
+    "term": "papyrological discovery: new texts recovered from papyri, and what the papyrological record can contain",
+    "pattern": "\\b(papyrological (record|evidence|discover\\w*|finds?)|new(ly)? (recovered|discovered) (texts?|papyr\\w*|works?)|(unread|unopened) (scrolls?|papyri))\\b",
+    "flags": "i",
+    "basis": "field: B3 and B7 (the press release: 'revealing new texts, titles and authors unknown to history'; 'More than 600 Herculaneum scrolls remain unopened'); B4 (Wikipedia lead: 'For the first time, researchers recovered all the surviving text from a single scroll in 2026'). The census's intersection 'papyrology-discovery' ('Papyrology and textual discovery: manuscripts, editions, new finds and redatings') and its rf_intersection, the archive's reading ('the kind of result that would change what the papyrological record can contain') (census.json rows[slug == 'vesuvius-challenge'].intersections, .rf_intersection; intersections)."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own text object, intersection, method or evidence kind for the entity, stated by field sources at the loci given: (1) the Herculaneum papyri (census text_object, coverage; B1, B4, B12); (2) machine reading of ancient texts, virtual unwrapping and ink detection (census intersection 'ai-ancient-texts', evidence_kind 'machine reading, restoration or dating', method, unit, worked question 'machine-dating'; B1, B3, B4, B7, B12); (3) papyrological discovery, new texts recovered and what the papyrological record can contain (census intersection 'papyrology-discovery'; B3, B4, B7; the census's rf_intersection reads the entity here and is the archive's reading, ledgered as RF-, not a basis for admission by itself). The census's second evidence_kind, 'manuscript images', runs through class (2): the scans and renders are the images the field sources state. The Revelation First thesis (#202 and the deposits revelationfirst.com cites) bears on the entity only through class (3) and only where a sentence applies to papyri or papyrological evidence; the census's own does_not_answer ('anything on the New Testament: the Herculaneum library predates it and is not Christian') and the worked question's gap ('None of the four dates a New Testament papyrus or a composition') are ledgered as RF- claims. Aliases: the name, the domain and handle 'scrollprize', and 'Scroll Prize' (the census's aka; 'Scroll Prize, Inc.' is the prizes page's name for the awarding body). The bare 'Vesuvius' is not an alias (the volcano, the eruption of 79 AD); the 'Vesuvius' of #1443 Part X is the entity by context and is read at its paragraph. Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Vesuvius Challenge' (vesuvius-challenge-aio-20261031, OBS-c89c95b2cf7e, ADDR-aa8c146b3f4d, AXN:0B39), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Revelation First census record) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass, same day: one citation hop forward and back from the one deposit admitted by reading (#1443).",
+  "hop_from": [
+   1443
+  ]
+ },
+ "texts_scanned": 1716,
+ "counts": {
+  "D_sentences": 3,
+  "D_deposits": 1,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 19,
+  "O_deposits": 14,
+  "H_candidates": 35
+ },
+ "per_deposit": {
+  "D": {
+   "1443": 3
+  },
+  "R": {},
+  "O": {
+   "56": 2,
+   "203": 1,
+   "636": 1,
+   "639": 1,
+   "969": 2,
+   "970": 2,
+   "971": 2,
+   "1101": 2,
+   "1213": 1,
+   "1226": 1,
+   "1443": 1,
+   "1572": 1,
+   "1575": 1,
+   "1576": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "2ac0ee641d32721b791c13a653e9bfaa8506aef48753e702b95396f1b18a28c5",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "33d1316af964fc248364348e16a30ee6a6b921f93cf10e030e02bf00a294568a",
+  "candidates-H.jsonl": "3e3e3a1cd041a07e020fabae32a2e25f8bc8b17830736eb0508373931f7f947f"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11068
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

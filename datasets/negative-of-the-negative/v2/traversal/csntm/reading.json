@@ -1,0 +1,597 @@
+{
+ "row": "csntm",
+ "pass": "first reading, 2026-10-31; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the center with the entity named; R, a relation the archive states between the center and an archive object; O, an archive category applied to the center or to a class the field and the census source for it (Greek New Testament manuscripts and their digital images; early New Testament papyri, the Chester Beatty P45–P47; New Testament textual criticism; config classes_note). A bare mention is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-31",
+ "verdicts": [
+  {
+   "dep": 636,
+   "strata": [
+    "O"
+   ],
+   "reason": "Space Ark: the papyrological record, Revelation among the earliest NT texts in manuscript fragments (P18, P47, P98), applied to the class early New Testament papyri, which the field sources for the entity (B8, B9, B2); the instances #56, #639, #969, #970, #971 and #1101 carry the same sentence and are grouped under #636 (S4), #636 and #639 sharing the earliest date",
+   "claims": [
+    "O636-01"
+   ],
+   "cands": [
+    "p26s70"
+   ]
+  },
+  {
+   "dep": 202,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First ≠ Revelation Early: Claim 3, the material record (𝔓52, 𝔓46, 𝔓98) against the received confidence hierarchy, papyrological dates as ranges, and the falsifier (a): the archive's category, the papyrological inversion, applied to the class early New Testament papyri; #1025 and #203 restate Claim 3 (S4 instances)",
+   "claims": [
+    "O202-01",
+    "O202-02",
+    "O202-03"
+   ],
+   "cands": [
+    "p28s92"
+   ]
+  },
+  {
+   "dep": 832,
+   "strata": [
+    "O"
+   ],
+   "reason": "Revelation First work plan v7.1, § The Papyrological Inversion: 𝔓46 'Chester Beatty II codex' c. 175–225 CE, the section's stated limit (copy dates do not establish composition dates) and its reading of the discipline's asymmetry as consensus-maintenance; the later versions #1211, #1216, #1217, #1400 carry the same section (S4 instances)",
+   "claims": [
+    "O832-01",
+    "O832-02",
+    "O832-03"
+   ],
+   "cands": [
+    "p58s242",
+    "p61s259",
+    "p103s414",
+    "p169s554",
+    "p350s1262"
+   ]
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Photograph of the Handwritten Original: the photograph of a handwritten page as a new object, the identifier of a capture, and the surrogacy literature's finding (layered, lossy, a photograph of a microfilm) and limit (no account of machine reading; collections whose creators cannot be asked): archive categories applied to the class of digital images of manuscripts the field sources for the entity (B1 'high-resolution photographs'; B2 'digital photographs'; B8 image types). The p109 and p169 sentences are string candidates; the admitted §0, §3.6 and §4.1 sentences were found by reading the deposit",
+   "claims": [
+    "O1443-01",
+    "O1443-02",
+    "O1443-03",
+    "O1443-04"
+   ],
+   "cands": [
+    "p109s213",
+    "p169s319"
+   ]
+  },
+  {
+   "dep": 1422,
+   "strata": [
+    "O"
+   ],
+   "reason": "After the Obelus: textual criticism's technologies for marking interpretive supply set against the composition layer's unmarked supply, the archive's category (marked and unmarked supply) applied to the class New Testament textual criticism (B1, B2, B7; census nt-scholarship). Found by reading the hop candidate (its p0 metadata was the string candidate)",
+   "claims": [
+    "O1422-01"
+   ],
+   "cands": [
+    "p0s0"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/center-for-the-study-of-new-testament-manuscripts-aio-20261031/",
+   "reason": "the Capture Registry's findings, reading, analysis, PER notes and query note for the entity's capture (OBS-ec19a3fb208b, 2026-10-31), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14"
+   ]
+  },
+  {
+   "dep": "RF",
+   "url": "https://www.revelationfirst.com/aggregators/csntm/ (source: /home/claude/fleet/revelationfirst-com/data/rf-census/census.json rows[slug == 'csntm'], organizing_question, correction; questions.json papyri-revelation-date and seen-or-edited; rendered aggregators/csntm/index.html read for agreement)",
+   "reason": "the Revelation First census record of the entity (editor Lee Sharks, compiled 2026-10-30, schema field census 1.0): its fields with their basis, its rf_intersection (the archive's reading) and the worked questions that name it; where a field restates an evidence quote of an own page ledgered in B it is one lineage with that page",
+   "claims": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-04",
+    "RF-05",
+    "RF-06",
+    "RF-07",
+    "RF-08",
+    "RF-09",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-14",
+    "RF-15",
+    "RF-16",
+    "RF-17",
+    "RF-18",
+    "RF-19",
+    "RF-20",
+    "RF-21",
+    "RF-22",
+    "RF-23",
+    "RF-24",
+    "RF-25",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-29",
+    "RF-30"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 56,
+   "cands": [
+    "p309s503",
+    "p484s906",
+    "p901s1865"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 122,
+   "cands": [
+    "p95s311",
+    "p102s326"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 165,
+   "cands": [
+    "p83s293"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 185,
+   "cands": [
+    "p16s37"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 203,
+   "cands": [
+    "p7s18"
+   ],
+   "reason": "an instance of #202's lineage (S4): the same sentence or section; grouped under #202 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 204,
+   "cands": [
+    "p42s110"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 516,
+   "cands": [
+    "p17s22"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 542,
+   "cands": [
+    "p163s336"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 610,
+   "cands": [
+    "p42s100",
+    "p49s114",
+    "p153s540",
+    "p160s568"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 625,
+   "cands": [
+    "p38s96"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 639,
+   "cands": [
+    "p13s26"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 644,
+   "cands": [
+    "p27s48"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 700,
+   "cands": [
+    "p35s97"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 761,
+   "cands": [
+    "p84s126"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 825,
+   "cands": [
+    "p134s277"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 833,
+   "cands": [
+    "p307s772"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 847,
+   "cands": [
+    "p25s30"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 870,
+   "cands": [
+    "p108s184"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 902,
+   "cands": [
+    "p42s96"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 969,
+   "cands": [
+    "p258s454",
+    "p441s857",
+    "p825s1831"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 970,
+   "cands": [
+    "p251s413",
+    "p432s814",
+    "p652s1376"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 971,
+   "cands": [
+    "p256s445",
+    "p437s846",
+    "p810s1792"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1025,
+   "cands": [
+    "p111s264"
+   ],
+   "reason": "an instance of #202's lineage (S4): the same sentence or section; grouped under #202 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1051,
+   "cands": [
+    "p10s23"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1053,
+   "cands": [
+    "p0s0",
+    "p8s15"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1068,
+   "cands": [
+    "p26s121"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1101,
+   "cands": [
+    "p259s456",
+    "p442s859",
+    "p826s1833"
+   ],
+   "reason": "an instance of #636's lineage (S4): the same sentence or section; grouped under #636 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1160,
+   "cands": [
+    "p163s319"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1198,
+   "cands": [
+    "p95s128"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1211,
+   "cands": [
+    "p27s60",
+    "p82s307",
+    "p133s469",
+    "p213s630",
+    "p492s1573",
+    "p497s1590"
+   ],
+   "reason": "an instance of #832's lineage (S4): the same sentence or section; grouped under #832 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1213,
+   "cands": [
+    "p18s37"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1216,
+   "cands": [
+    "p27s60",
+    "p82s307",
+    "p133s469",
+    "p213s630",
+    "p492s1573",
+    "p497s1590"
+   ],
+   "reason": "an instance of #832's lineage (S4): the same sentence or section; grouped under #832 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1217,
+   "cands": [
+    "p30s63",
+    "p90s315",
+    "p141s477",
+    "p223s640",
+    "p502s1586",
+    "p507s1603"
+   ],
+   "reason": "an instance of #832's lineage (S4): the same sentence or section; grouped under #832 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1226,
+   "cands": [
+    "p7s18"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1350,
+   "cands": [
+    "p54s75"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1396,
+   "cands": [
+    "p135s278"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1397,
+   "cands": [
+    "p0s29"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1400,
+   "cands": [
+    "p58s242",
+    "p61s259",
+    "p103s414",
+    "p169s554",
+    "p350s1262"
+   ],
+   "reason": "an instance of #832's lineage (S4): the same sentence or section; grouped under #832 in the archive ledger, not a separate source"
+  },
+  {
+   "dep": 1401,
+   "cands": [
+    "p135s278"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1458,
+   "cands": [
+    "p152s279"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1460,
+   "cands": [
+    "p99s192",
+    "p360s608",
+    "p362s611",
+    "p371s646"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1527,
+   "cands": [
+    "p0s4",
+    "p5s18"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1528,
+   "cands": [
+    "p127s258"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1543,
+   "cands": [
+    "p55s165"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1569,
+   "cands": [
+    "p1571s2723"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1572,
+   "cands": [
+    "p215s376"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1575,
+   "cands": [
+    "p175s454",
+    "p887s1671"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1576,
+   "cands": [
+    "p188s595"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1658,
+   "cands": [
+    "p58s298"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1670,
+   "cands": [
+    "p32s77"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1671,
+   "cands": [
+    "p177s708"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  },
+  {
+   "dep": 1690,
+   "cands": [
+    "p183s751"
+   ],
+   "reason": "a bare mention of the class term (a list of disciplines or keywords, a reference line, a metadata block, an analogy drawn from textual criticism, or a papyrological record of another corpus: Sappho, Plato, Theophrastus); no archive category applied to the entity or to a class the field sources for it"
+  }
+ ],
+ "hop": {
+  "from": [
+   56,
+   202,
+   636,
+   639,
+   832,
+   969,
+   970,
+   971,
+   1101,
+   1211,
+   1216,
+   1217,
+   1400,
+   1443
+  ],
+  "candidates": 127,
+  "admitted": 1,
+  "admitted_deps": [
+   1422
+  ],
+  "reading": "each hop candidate read by title and by a scan of its text for the three class patterns and the aliases; #1422 admitted (O-class, textual criticism); #203 and #1025 are instances of #202's Claim 3 (S4); the Revelation First staging and site documents (#847, #1032), the baseline (#830) and the TANG of Revelation studies (#644, #1350) name the papyrological inversion or text-critical literature in lists or keywords only; the rest carry no class term in a claim"
+ },
+ "observations": "No archive text names the Center for the Study of New Testament Manuscripts, CSNTM or csntm.org (D 0, R 0). The archive's bearing is ontological and by class: the papyrological inversion on the early New Testament papyri the center images (#202, #636, #832), the photograph of a handwritten original as a new object (#1443), and marked against unmarked supply in textual criticism (#1422). The archive's own records of the entity are the capture (CAP-1-NN) and the Revelation First record (RF-NN).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 101,
+   "O_deposits": 57,
+   "H_candidates": 127
+  },
+  "deposits_candidate": 57,
+  "deposits_admitted": 5,
+  "instances_grouped_S4": 12,
+  "hop_candidates": 127,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 14,
+   "rf": 30,
+   "deposit": 12
+  }
+ }
+}

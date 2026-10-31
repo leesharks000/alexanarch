@@ -1,0 +1,3 @@
+Redaction, 2026-10-31
+
+B6.html (a YouTube page) embeds access-key strings in its scripts as served (18 occurrences: Google browser API keys, AIza…, and on the Amazon page an sk-… string). Each is replaced in the saved copy by [REDACTED-ACCESS-KEY], so the repository can be pushed past GitHub's secret scanning, on the precedent of 2026-10-29. Nothing else in the file is changed; the sha256 recorded in field.json is of the bytes as fetched, before this redaction.

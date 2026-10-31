@@ -1,0 +1,75 @@
+{
+ "row": "oxyrhynchus-online",
+ "address": "Oxyrhynchus Papyri",
+ "entity": "The Oxyrhynchus Papyri: the collection of texts on papyrus and parchment from the excavations of Bernard Grenfell and Arthur Hunt at Oxyrhynchus (modern Bahnasa, Egypt), 1896–1907, belonging to the Egypt Exploration Society and housed in Oxford's Art, Archaeology and Ancient World Library, with its collection site (oxyrhynchus.web.ox.ac.uk, formerly www.papyrology.ox.ac.uk/POxy/, 'Oxyrhynchus Online') and its publication series The Oxyrhynchus Papyri; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/oxyrhynchus-online/)",
+ "row_type": "C (a public entity on which the archive bears: a papyrus collection and its site; an entity of the Revelation First meta-aggregator, 'the field')",
+ "aliases": [
+  {
+   "pattern": "\\bOxyrhynch(us|ite)\\b[^.]{0,30}\\bpapyr\\w*",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bpapyr\\w*\\b[^.]{0,30}\\bOxyrhynchus\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bP\\.\\s?Oxy\\.?",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bPOxy\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bOxyrhynchus Online\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\boxyrhynchus\\.web\\.ox\\.ac\\.uk\\b|\\bpapyrology\\.ox\\.ac\\.uk\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bOxyrhynchus\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "New Testament papyri (early copies of the New Testament on papyrus and their dating)",
+   "pattern": "\\b(New Testament papyr\\w*|NT papyr\\w*|early Christian papyr\\w*|Christian papyr\\w*|biblical papyr\\w*|papyr\\w* of (Revelation|the Apocalypse|John|Paul)|Chester Beatty|Bodmer papyr\\w*|Rylands (fragment|papyrus)|𝔓\\s?\\d+|P\\s?(18|24|46|47|52|66|75|98|115)\\b)",
+   "flags": "i",
+   "basis": "field: B2 (Wikipedia, Oxyrhynchus Papyri, § New Testament: 'The Oxyrhynchus Papyri have provided the most numerous sub-group of the earliest copies of the New Testament'; 'Of the 127 registered New Testament papyri, 52 (41%) are from Oxyrhynchus'; the table lists 𝔓18, 𝔓24, 𝔓115 and the uncials 0163, 0169, 0308 of Revelation); B4 (the video card's title: 'The Oxyrhynchus Papyri | Early Christian Manuscripts'). The census for the entity: does_not_answer ('which New Testament papyri the collection holds (not listed on the saved page)'), unchecked ('which New Testament papyri the collection holds'), and the worked question papyri-revelation-date, which names it (RF record, census.json rows[slug == 'oxyrhynchus-online'].does_not_answer, .unchecked; questions.json)."
+  },
+  {
+   "term": "papyrus collections and the edition and dating of papyri (papyrology)",
+   "pattern": "\\b(papyrolog\\w*|papyrus collections?|collections? of (ancient )?papyri|edition of (the )?papyr\\w*|palaeograph\\w*|paleograph\\w*|papyri)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the collection site, Home: 'The Oxyrhynchus Papyri collection … comprises thousands of texts on papyrus and parchment and is the largest of its kind in the world'; 'scholars have worked continuously to catalogue, decipher, and publish this material'); B3 (the EES, The Oxyrhynchus Papyri: 'the custodian of the largest collection of ancient papyri in the world'); B2 (Wikipedia: 'papyrologists Bernard Pyne Grenfell and Arthur Surridge Hunt'). The census's own intersection ('papyrology-discovery': 'Papyrology and textual discovery: manuscripts, editions, new finds and redatings'), kind ('the collection site of the Oxyrhynchus Papyri') and evidence_kind ('manuscript images', 'catalogue or metadata', 'transcription or edition') for the entity (RF record, census.json rows[slug == 'oxyrhynchus-online'].intersections, .kind, .evidence_kind; intersections at the top)."
+  },
+  {
+   "term": "lost literary works recovered on papyrus (Sappho, Pindar, Menander and the lost plays)",
+   "pattern": "\\b(papyrus (fragments?|scraps?|finds?) of|fragments? of Sappho|Sappho'?s? (papyr\\w*|fragments?)|new Sappho|Tithonus poem|Brothers Poem|lost (plays?|poems?|works?) (recovered|found|on papyrus)|recovered from (the )?papyr\\w*|Ichneutae)\\b",
+   "flags": "i",
+   "basis": "field: B2 (Wikipedia, § Secular texts: 'the archaeologists succeeded in recovering a large corpus of literary works that had previously been thought to have been lost'; § Poetry: 'Fragments of Sappho'; § Drama: Menander, Sophocles' Ichneutae). T names the class ('lost plays, classical poetry (Sappho, Pindar)'), but class membership is sourced here from B2 only. The census's text_object for the entity ('literary, documentary and other texts, principally Greek') (RF record, census.json rows[slug == 'oxyrhynchus-online'].text_object)."
+  }
+ ],
+ "classes_note": "Three classes, each sourced from the field B or the census's own fields for the entity at the loci given: (1) New Testament papyri, the class B2 places the collection's finds in ('the most numerous sub-group of the earliest copies of the New Testament'), and the class the census names as what its saved page does not answer (does_not_answer, unchecked; the worked question papyri-revelation-date); (2) papyrus collections and papyrology, the census's own intersection ('papyrology-discovery'), kind and evidence kinds, stated by B1, B2 and B3; (3) lost literary works recovered on papyrus, B2's secular texts and poetry (Sappho among them) and the census's text_object. The census's rf_intersection ('Papyrological inversion and dating: Oxyrhynchus is a principal find-site of early Christian papyri …') and its correction ('Revelation First ≠ Revelation Early') are the archive's reading and are ledgered as RF-NN claims, never as a class. The aliases are the collection's names and sigla (Oxyrhynchus Papyri, P.Oxy., POxy, Oxyrhynchus Online), its hosts (oxyrhynchus.web.ox.ac.uk; www.papyrology.ox.ac.uk, the census's url), and the bare place-name Oxyrhynchus, case-sensitive, so that a sentence naming the find-site of a papyrus is read; the city of Oxyrhynchus (el-Bahnasa) is a distinct entity, its own site, and a sentence that names only the city is not a claim on the collection. The Egypt Exploration Society (the owner), Grenfell and Hunt (the excavators), the Bodleian Art, Archaeology and Ancient World Library (the house) and the Gospel of Thomas, Sappho or Papyrus 52 (texts) are persons, institutions and works distinct from the entity and are not aliases. Admission by reading (§3.4): D where a deposit names the collection or one of its papyri as such and says something of it (a papyrus's find, its date, its edition, its reading); O-class where a sentence applies an archive category (papyrological inversion, the Revelation-priority dating, provenance, the future reader, the Sappho fragments' transmission) to one of the three classes; a bare siglum in a reference list, a bibliography line or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md, BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-PROVENANCE.md; address 'Oxyrhynchus Papyri' (oxyrhynchus-papyri-aio-20261031, OBS-8402a9a9b9fb, ADDR-bd653222e3e4), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the Revelation First census record and the worked questions that name it) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#71, #179, #202, #567, #636, #683, #828, #832, #858, #1052, #1443, #1509, #1531, #1601).",
+ "hop_from": [
+  71,
+  179,
+  202,
+  567,
+  636,
+  683,
+  828,
+  832,
+  858,
+  1052,
+  1443,
+  1509,
+  1531,
+  1601
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "row": "enoch-dss-dating",
+ "address": "Enoch AI dating Dead Sea Scrolls",
+ "entity": "Enoch, the AI-based date-prediction model for the Dead Sea Scrolls (Bayesian ridge regression on angular and allographic writing-style feature vectors, trained on 24 radiocarbon-dated scroll samples, applied to 135 undated scrolls), and the study that introduces it: Popović, Dhali, Schomaker, van der Plicht, Lund Rasmussen, La Nasa, Degano, Perla Colombini and Tigchelaar, 'Dating ancient manuscripts using radiocarbon and AI-based writing style analysis', PLOS One 20(6): e0323185, published 4 June 2025 (doi 10.1371/journal.pone.0323185), University of Groningen and partners, ERC project HandsandBible (The Hands That Wrote the Bible, grant 640497); formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/enoch-dss-dating/)",
+ "row_type": "C (a public entity on which the archive bears: a machine-learning date-prediction model for manuscripts and the study that introduces it; an entity of the Revelation First meta-aggregator, 'the field')",
+ "aliases": [
+  {
+   "pattern": "\\bEnoch\\b(?=[^.\\n]{0,120}\\b(AI|A\\.I\\.|model|date-prediction|machine|Groningen|radiocarbon|Bayesian|handwriting|writing[- ]style))",
+   "flags": ""
+  },
+  {
+   "pattern": "\\b(AI|A\\.I\\.|model|tool|program|artificial intelligence)\\b[^.\\n]{0,40}\\bEnoch\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bPopovi[cćç]\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "journal\\.pone\\.0323185|PMC12136314|\\b40465545\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "Dating ancient manuscripts using radiocarbon",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bHandsandBible\\b|\\bHands [Tt]hat Wrote the Bible\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "palaeographic dating of ancient manuscripts: dating a copy by its handwriting",
+   "pattern": "\\bpal(a)?eograph\\w*",
+   "flags": "i",
+   "basis": "field: B1 (PLOS, Abstract s1: 'Determining by means of palaeography the chronology of ancient handwritten manuscripts such as the Dead Sea Scrolls is essential for reconstructing the evolution of ideas'; Introduction ¶1: 'Palaeography—the study of ancient handwriting—is used to date manuscripts on the basis of their handwriting [ 2 – 4 ] but its subjectivity and the impossibility of measuring the significance of handwriting features poses a problem', where refs 2–4 are Nongbri on early Christian codices and Orsini and Clarysse on early New Testament manuscripts); B10 (ERC, ¶3: 'Until now, dating has largely relied on palaeography'); B2 (BAS ¶2); B4 (JPost); B12 (Wikipedia, Dead Sea Scrolls, §Palaeographic dating). The census's evidence_kind for the entity, 'palaeographic dating' (census.json rows[slug == 'enoch-dss-dating'].evidence_kind), and the census evidence 'palaeography' (B10)."
+  },
+  {
+   "term": "radiocarbon (14C) dating of manuscripts",
+   "pattern": "\\b(radiocarbon|carbon[- ]?14|C-14|14 ?C[- ]dat\\w*)\\b",
+   "flags": "i",
+   "basis": "field: B1 (PLOS, §2.1 'Radiocarbon dating'; Abstract: 'trained on the basis of 24 14 C-dated scroll samples'); B2, B4, B10 (all three name the radiocarbon dating); B12 and B13 (Wikipedia, §Radiocarbon dating; Carbon dating the Dead Sea Scrolls). The census's evidence_kind for the entity, 'physical or radiocarbon dating'."
+  },
+  {
+   "term": "machine reading, restoration and dating of ancient texts (AI and ancient texts)",
+   "pattern": "\\b((machine|AI|A\\.I\\.|computational|neural)[- ](based )?(dating|date[- ]prediction|reading|restoration|palaeograph\\w*|paleograph\\w*|handwriting analysis)|date[- ]prediction model)\\b",
+   "flags": "i",
+   "basis": "field: B1 (PLOS §3: 'For Ithaca [ 39 ], AI and epigraphy were similarly used as two heterogeneous information sources to predict dates for ancient Greek inscriptions'); B5 (Haaretz card snippet: 'Enoch is not the first artificial intelligence used to study ancient texts in general or the Dead Sea Scrolls specifically'). The census's intersection for the entity, 'ai-ancient-texts' ('AI and ancient texts: machine reading, restoration and dating'), and its evidence_kind 'machine reading, restoration or dating'."
+  },
+  {
+   "term": "the date of a copy as distinct from the composition of the work it copies",
+   "pattern": "\\b(autograph inference|copies of copies|(dat(e|es|ing) of (the )?copies)|papyrological (dating|dates|inversion)|composition dates?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (PLOS §6, third and fourth insights: 'the results of this study attest to the copying of multiple literary manuscripts before this period'; 'this study’s 14 C result for 4Q114 and Enoch’s date prediction for 4Q109 now establish these to be the first known fragments of a biblical book from the time of their presumed authors'); B4 (JPost standfirst: 'two biblical scroll fragments come from the time of their presumed authors'); B10 (ERC ¶5). The census's negative tag for the entity, 'NOT a composition date: it dates the copies', and does_not_answer 'when any work copied on a scroll was composed' (the census's own terms for the entity)."
+  },
+  {
+   "term": "computational writer identification and handwriting-style analysis",
+   "pattern": "\\b(writer identification|handwriting(-| )(analysis|style|recognition)|writing[- ]style (analysis|features?|descriptors?)|handwritten text recognition)\\b",
+   "flags": "i",
+   "basis": "field: B1 (PLOS §2.2.2 'Extracting features for style attribution': 'The feature vectors relate directly to the shape-based evidence of the ink traces in the manuscripts and have a solid basis in writer identification [ 28 – 30 ] and document dating [ 31 , 32 ]'; §4 'Previously, we demonstrated that two scribes were at work in the Great Isaiah Scroll [ 6 ]'); B2 (BAS ¶4: 'Enoch examines the shapes of letters from the scrolls and cross-references the writing style with scrolls of similar style'); B4 (JPost: 'machine-learning-based handwriting analysis'); B10 (ERC ¶2). The census's method for the entity ('Bayesian ridge regression on writing-style feature vectors') and unit ('a scroll's predicted date from the angular and allographic features of its handwriting')."
+  }
+ ],
+ "classes_note": "Five classes, each the census's own intersection, evidence kind or negative tag for the entity, stated by field sources at the loci given: (1) palaeographic dating (census evidence_kind 'palaeographic dating'; B1 Abstract and Introduction, whose refs 2–4 are studies of the palaeographic dating of early Christian codices and early New Testament manuscripts; B10; B2; B4; B12); (2) radiocarbon dating (census evidence_kind 'physical or radiocarbon dating'; B1 §2.1; B2; B4; B10; B12; B13); (3) machine dating and reading of ancient texts (census intersection 'ai-ancient-texts' and evidence_kind 'machine reading, restoration or dating'; B1 §3 on Ithaca; B5); (4) the date of a copy against the composition of its work (census negative tag and does_not_answer; B1 §6; B4; B10); (5) computational writer identification and handwriting-style analysis (census method and unit; B1 §2.2.2 and §4; B2; B4; B10). The census's other two intersections for the entity, 'papyrology-discovery' and 'nt-scholarship', are stated by the field only through classes (1), (2) and (4): no field source says Enoch dates a papyrus or a New Testament manuscript, and B1 names New Testament manuscripts only in the references it cites for palaeography as a method; the census's rf_intersection ('New Testament papyri are dated by palaeography alone … the method the papyrological-inversion and dating workstreams would watch') is the archive's reading, ledgered as the record's claim (RF), and not a class. The archive's Revelation First thesis (#202, claim 3), its work plan's §9 'The Papyrological Inversion' (#1211, #1216, #1217, #1400, #832), and its Revelation First mint block (RF-M01 papyrological sovereignty, RF-M19 autograph inference: #860, #1231, #1249) apply the archive's categories to classes (1) and (4), and the archive's field survey of the analog deposit programme (#1443: §2.3 Ithaca, §5.1 writer identification) and its specification of the machine-eligible handwritten artifact (#1409, §I.2) to classes (3) and (5); all are read for admission. Aliases: the model's name only where it stands with a word of the model (AI, model, date-prediction, machine, Groningen, radiocarbon, Bayesian, handwriting, writing style) within the sentence, because the bare name is the patriarch's and his books' (1 Enoch is seated in the archive, #1698, and named throughout its Revelation and Secret Book of Walt deposits); the lead author's name; the article's DOI, PMC and PubMed ids and title; the ERC project's name. 'Groningen', 'the Dead Sea Scrolls' and 'Qumran' are not aliases: the first is the operator's institution, the others the model's text object, which the archive names in its Revelation and Ark deposits in another sense (the scrolls as texts, not their dating).",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-FIELD.md; address 'Enoch AI dating Dead Sea Scrolls' (enoch-ai-dating-dead-sea-scrolls-aio-20261031, OBS-ff5da0726928, ADDR-80645e150808, AXN:0B35), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis and reader's notes at the capture; the Revelation First census record) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#202, #203, #832, #860, #1211, #1213, #1216, #1217, #1226, #1231, #1249, #1400, #1409, #1443).",
+ "hop_from": [
+  202,
+  203,
+  832,
+  860,
+  1211,
+  1213,
+  1216,
+  1217,
+  1226,
+  1231,
+  1249,
+  1400,
+  1409,
+  1443
+ ]
+}

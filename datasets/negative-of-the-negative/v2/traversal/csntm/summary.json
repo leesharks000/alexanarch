@@ -1,0 +1,151 @@
+{
+ "row": "csntm",
+ "address": "Center for the Study of New Testament Manuscripts",
+ "entity": "The Center for the Study of New Testament Manuscripts (CSNTM), Plano, Texas, founded in September 2002 by Daniel B. Wallace (its founder and Executive Director), a non-profit that photographs Greek New Testament manuscripts held by libraries, monasteries and archives and publishes the images in its Digital Manuscript Collection (manuscripts.csntm.org); formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/csntm/)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "csntm",
+  "address": "Center for the Study of New Testament Manuscripts",
+  "entity": "The Center for the Study of New Testament Manuscripts (CSNTM), Plano, Texas, founded in September 2002 by Daniel B. Wallace (its founder and Executive Director), a non-profit that photographs Greek New Testament manuscripts held by libraries, monasteries and archives and publishes the images in its Digital Manuscript Collection (manuscripts.csntm.org); formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/csntm/)",
+  "row_type": "C (a public entity on which the archive bears: a center that digitizes Greek New Testament manuscripts and publishes their images; an entity of the Revelation First meta-aggregator, 'the field')",
+  "aliases": [
+   {
+    "pattern": "\\bCSNTM\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bCent(er|re) for the Study of New Testament Manuscripts\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(manuscripts\\.)?csntm\\.org\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "Greek New Testament manuscripts and their digital images (manuscript digitization, digital manuscript collections)",
+    "pattern": "\\b(Greek (New Testament |NT )?manuscripts?|New Testament manuscripts?|NT manuscripts?|manuscript images?|digiti[sz]\\w* (the )?manuscripts?|digital manuscript\\w*|manuscript digiti[sz]\\w*)\\b",
+    "flags": "i",
+    "basis": "field: B1 (csntm.org, history panel: 'to digitize all surviving Greek manuscripts of the New Testament'; 'Images are available online on the Digital Manuscript Collection website'); B2 (Wikipedia, lead: 'whose mission is to digitally preserve Greek New Testament manuscripts'); B4 (LinkedIn card snippet: 'exists to digitally preserve Greek New Testament manuscripts'); B5 (North Texas Giving Day, Mission); B8 (manuscripts.csntm.org, the search). The census's own kind ('a center that digitizes Greek New Testament manuscripts and publishes their images in a searchable digital manuscript collection'), text_object and evidence_kind ('manuscript images', 'catalogue or metadata') for the entity (RF record, census.json rows[slug == 'csntm'].kind, .text_object, .evidence_kind)."
+   },
+   {
+    "term": "early New Testament papyri (the Chester Beatty papyri P45, P46, P47; the papyri of Revelation and of Paul)",
+    "pattern": "(Chester Beatty|𝔓\\s?4[5-7]\\b|\\bP\\s?4[5-7]\\b|P⁴[5-7]|\\bNew Testament papyr\\w+|\\bpapyr(us|i) of (Revelation|Paul)\\b|\\bpapyrological\\b)",
+    "flags": "i",
+    "basis": "field: B9 (csntm.org, tag Chester Beatty Biblical Papyri: 'The Chester Beatty Papyrus of Revelation (P47): New Finds from an Old Treasure Trove'; 'New Discoveries on Every Page: P45, P46, P47'); B8 (manuscripts.csntm.org: 'P47 … Late third century manuscript of Revelation on papyrus'; 'P46 … Late second century or early third century (c. 200) manuscript of Paul on papyrus'); B2 (Wikipedia, Chester Beatty Library (2013): 'P46 (the oldest manuscript of Paul's letters—dated c. AD 200) … P47 (the oldest manuscript of Revelation—3rd century)'). The census's own intersection ('papyrology-discovery': 'Papyrology and textual discovery: manuscripts, editions, new finds and redatings') and findings ('images of the Chester Beatty papyri P45, P46 and P47') for the entity (RF record, census.json rows[slug == 'csntm'].intersections, .findings)."
+   },
+   {
+    "term": "New Testament textual criticism (the text the manuscripts carry, and its editions)",
+    "pattern": "\\b(textual critic\\w*|text-critic\\w*|critical edition\\w* of the (Greek )?New Testament|Nestle-?Aland|NA2[78]|Textus Receptus|original text of the New Testament)\\b",
+    "flags": "i",
+    "basis": "field: B1 (csntm.org, history panels: 'scholars continued to refine the discipline of New Testament Textual Criticism'; 'Scholars visit the website to study manuscript images as they edit the text that stands behind English translations of the New Testament'); B2 (Wikipedia, See also: 'Textual Criticism'); B7 (csntm.org, the Scribal Fellowship's objectives: 'modern publications of the New Testament accurately reflect the words first written in the first century'). The census's own intersection ('nt-scholarship': 'New Testament scholarship: dating, authorship and literary dependence') and negative tag ('NOT an edition: it publishes images and catalogue descriptions') for the entity (RF record, census.json rows[slug == 'csntm'].intersections, .negative_tags)."
+   }
+  ],
+  "classes_note": "Three classes, each the census's own kind, text object, evidence kind, intersection or finding for the entity, stated by field sources at the loci given: (1) Greek New Testament manuscripts and their digital images (census kind, text_object, evidence_kind; B1, B2, B4, B5, B8); (2) early New Testament papyri, the Chester Beatty P45, P46 and P47 (census intersection 'papyrology-discovery', findings; B2, B8, B9); (3) New Testament textual criticism (census intersection 'nt-scholarship', negative tag 'NOT an edition'; B1, B2, B7). The census's rf_intersection ('Papyrological inversion: P47 … and the Pauline P46 are among its imaged papyri') and its correction ('Revelation First ≠ Revelation Early') are the archive's reading, ledgered as RF-NN, not classes. The aliases are the entity's name, its abbreviation CSNTM and its hosts (csntm.org; manuscripts.csntm.org). Daniel B. Wallace, its founder, is a person distinct from the entity; the Chester Beatty Library, the holding institution of P45–P47, is an entity distinct from it; neither is an alias. The archive's Revelation First line (#202 and the work plans #832, #1211, #1216, #1217, #1400; the Ark #56, #636, #639, #969–971, #1101) enters only where a sentence applies its category (the papyrological inversion; the material record against the inferential chronology) to one of the three classes; a bare mention, a list of keywords or a reference line is not a claim. Admission by reading (§3.4): D where a deposit names the entity and says something of it; O-class where a sentence applies an archive category to a class above.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md with the addenda BRIEF-NEW-ROW-PROVENANCE.md, BRIEF-NEW-ROW-LABOR.md and BRIEF-NEW-ROW-FIELD.md; address 'Center for the Study of New Testament Manuscripts' (center-for-the-study-of-new-testament-manuscripts-aio-20261031, OBS-ec19a3fb208b, ADDR-437e33d37992), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis and PER notes at the capture; the Revelation First census record and the worked questions that name it) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#202, #636 with its instances #56, #639, #969, #970, #971, #1101, #832 with its instances #1211, #1216, #1217, #1400, and #1443).",
+  "hop_from": [
+   56,
+   202,
+   636,
+   639,
+   832,
+   969,
+   970,
+   971,
+   1101,
+   1211,
+   1216,
+   1217,
+   1400,
+   1443
+  ]
+ },
+ "texts_scanned": 1716,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 101,
+  "O_deposits": 57,
+  "H_candidates": 134
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "56": 3,
+   "122": 2,
+   "165": 1,
+   "185": 1,
+   "202": 1,
+   "203": 1,
+   "204": 1,
+   "516": 1,
+   "542": 1,
+   "610": 4,
+   "625": 1,
+   "636": 1,
+   "639": 1,
+   "644": 1,
+   "700": 1,
+   "761": 1,
+   "825": 1,
+   "832": 5,
+   "833": 1,
+   "847": 1,
+   "870": 1,
+   "902": 1,
+   "969": 3,
+   "970": 3,
+   "971": 3,
+   "1025": 1,
+   "1051": 1,
+   "1053": 2,
+   "1068": 1,
+   "1101": 3,
+   "1160": 1,
+   "1198": 1,
+   "1211": 6,
+   "1213": 1,
+   "1216": 6,
+   "1217": 6,
+   "1226": 1,
+   "1350": 1,
+   "1396": 1,
+   "1397": 1,
+   "1400": 5,
+   "1401": 1,
+   "1422": 1,
+   "1443": 2,
+   "1458": 1,
+   "1460": 4,
+   "1527": 2,
+   "1528": 1,
+   "1543": 1,
+   "1569": 1,
+   "1572": 1,
+   "1575": 2,
+   "1576": 1,
+   "1658": 1,
+   "1670": 1,
+   "1671": 1,
+   "1690": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "139e210e319c224b5bf43f6742c0bf49b1bbbdea7dd29d539cf1a640aad1f0b1",
+  "candidates-H.jsonl": "2904dcc2b8111fcd1136ec8cee3515f4703b62d87a2b786c5505fdf48a2c0d39"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11068
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

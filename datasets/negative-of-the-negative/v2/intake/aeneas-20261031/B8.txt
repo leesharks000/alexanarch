@@ -1,0 +1,9 @@
+Wikipedia (en), the entity's article: state at 2026-10-31, fetched with the agent "alexanarch-seating/1.0 (https://www.alexanarch.org)".
+No article on the model. Raw wikitext (index.php?action=raw) HTTP 404 for each of: Aeneas_(AI), Aeneas_(model), Aeneas_(artificial_intelligence), Aeneas_(AI_model), Aeneas_(neural_network) (2026-10-31T04:39Z); also Ithaca_(AI) HTTP 404 (04:40:53Z).
+The API search (api.php list=search) returned HTTP 429 (rate limit) twice (04:39Z, 04:40:44Z); not retried by another route. Full-text search through index.php (Special:Search, article space) instead:
+- '"Aeneas" DeepMind inscriptions': 37 results, none an article on the model (Virgil, Odysseus, Antony and Cleopatra ... ; the hero's) (B8-search1.html).
+- '"Latin Epigraphic Dataset" OR predictingthepast': There were no results matching the query. (B8-search2.html)
+- 'Aeneas "Google DeepMind" Latin inscriptions': There were no results matching the query. (B8-search3.html)
+Aeneas (disambiguation) (raw, HTTP 200, B8.wiki): opens "'''[[Aeneas]]''' was a Trojan hero in Virgil's ''Aeneid'' and Homer's ''Iliad''." and lists, among others, "[[Aeneas (biblical figure)]], a paralyzed man cured by Saint Peter in the Acts of the Apostles"; it lists no AI model.
+Aeneas (raw, HTTP 200, B8-hero.wiki): the article on the hero, short description "Trojan hero in Greco-Roman mythology", hatnote {{About|the Greco-Roman hero}}.
+Google DeepMind (raw, HTTP 200, B8-deepmind.wiki): names no Aeneas; it carries the predecessor: "Google has unveiled a new archaeology document program, named Ithaca after [[Homer's Ithaca|the Greek island]] in Homer's [[Odyssey]]." and "This deep neural network helps researchers restore the empty text of damaged Greek documents, and to identify their date and geographical origin."

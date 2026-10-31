@@ -1,0 +1,1213 @@
+{
+ "row": "csntm",
+ "address": "Center for the Study of New Testament Manuscripts",
+ "addresses": [
+  "Center for the Study of New Testament Manuscripts"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check), the Wikipedia rendered text or wikitext, or the card's snippet for the two unreachable cards; 51/51 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1 the center's home page, the census's own page csntm--home, carried once as a card; B2 Wikipedia, which is also the 'wikipedia' origin; B3 Facebook, unreachable, login redirect; B4 LinkedIn, unreachable, HTTP 403; B5 North Texas Giving Day, the center's profile; B6 the Associates for Biblical Research news item of 2016); 'own_page', the census's own pages T did not surface (B7 the Scribal Fellowship page the census saved as csntm--about, B8 the Digital Manuscript Collection search, B9 the blog tag Chester Beatty Biblical Papyri), copied from the census's saved copies; 'wikipedia', the article 'Center for the Study of New Testament Manuscripts' (B2; exists, no redirect). The census read no third-party source (every evidence basis is 'operator'), so there is no 'census_third_party' origin in this row.",
+ "lineage_note": "Lineages: what it is: a center that digitally preserves Greek New Testament manuscripts (B1, B2, B4, B7); founding: Daniel B. Wallace, September 2002 (B1, B2, B5); the method: high-resolution photographs where the microfilms are unclear (B1); scale: institutions, images, manuscripts (B1, B2, B5); discoveries: previously unknown manuscripts (B1, B2, B6); access: the Digital Manuscript Collection and its terms (B1, B2, B5, B8); purpose: the accuracy of the New Testament text (B1, B5, B7); imaging: multispectral, and work beyond the New Testament (B1, B2); the Chester Beatty papyri: P45, P46, P47 (B1, B2, B9); the official catalogue and the editions: the INTF (B1); operator, place and governance (B1, B2, B3, B7); holding: GA 2882, a manuscript the center acquired (B2); reception: the encyclopedia and its stated limit (B2); training: the internship (B5); support: the Scribal Fellowship and the scribal lineage (B7); purpose: evidence against the skeptics (B7); the collection: unit, classes and count (B8); the images: whose, and of what kind (B8); catalogue dates of the earliest papyri (B8). The census's operator, unit, text_object, count, findings, data_access and negative_tags[0] restate the evidence quotes of B7, B8 and B9 (one lineage each with the page; the page keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/csntm-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1, B7, B8, B9 the census's saved copies, gunzipped, with B1-fetch.* this session's check fetch of the home page; B2.wiki the raw wikitext, B2.html and B2.txt the rendered article, B2-429.html the first, rate-limited try; B3-login.html and B4-403.html the refusals); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the census own page csntm--home",
+   "card": "www.csntm.org — The Center for the Study of New Testament Manuscripts",
+   "url": "https://www.csntm.org/",
+   "kind": "Overview card (the center's home page, © 2021, with its blog posts to 24 September 2026 and the history-of-the-discipline panels it serves); the same page as the census's own page csntm--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1.html",
+     "sha256": "47f0e2ca737b2d224dad82c6919f802f3807108ccc024c953a67479ea561aef2"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1.txt",
+     "sha256": "c387aab234e06d5773248da8b4b66ca22dc958f8238d17292adb76d4dcacb492"
+    },
+    "B1-fetch.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1-fetch.html",
+     "sha256": "c406d75e9d263e96e6ab21b07d5e8b77eb24a17ab4c9abb6576ee7b4a6579103"
+    },
+    "B1-fetch.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1-fetch.txt",
+     "sha256": "e1a48ad5e26d7d4bd00cbeb25390c463f9919da3a686edea6931856c788f83e6"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "csntm--home",
+     "url": "https://www.csntm.org/",
+     "final_url": "https://www.csntm.org/",
+     "sha256": "47f0e2ca737b2d224dad82c6919f802f3807108ccc024c953a67479ea561aef2",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:50:50Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1.html",
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1.txt"
+     ],
+     "manifest": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/manifest.json"
+    },
+    "check_fetch": {
+     "at": "2026-10-31T04:39:01Z",
+     "http": 200,
+     "url": "https://www.csntm.org/",
+     "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B1-fetch.html",
+     "raw_sha256": "c406d75e9d263e96e6ab21b07d5e8b77eb24a17ab4c9abb6576ee7b4a6579103",
+     "agrees": "in text: the raw HTML differs from the census copy only in a stylesheet version string, a banner script's timestamps and the cache-generation comment; the ledger quotes are checked against the census text B1.txt"
+    }
+   },
+   "names_operator": "yes ('© 2021, Center for the Study of New Testament Manuscripts'; 'Daniel B. Wallace founds')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "URL from the card's site and snippet: the snippet ('Events In 2002, Daniel B. Wallace founds the Center …') is the menu item 'Events' followed by the history panel's sentence, which the home page serves (B1.txt L193). The card and the census's own page are one page, carried once, as a card; the census copy (sha256 47f0e2ca…) is the ledgered text.",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "The Center for the Study of New Testament Manuscripts",
+   "card_snippet": "Events In 2002, Daniel B. Wallace founds the Center for the Study of New Testament Manuscripts (CSNTM) to digitize all surviving Greek manuscripts of the New Te...",
+   "card_site": "www.csntm.org"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2; the entity's Wikipedia article (origin 'wikipedia' too)",
+   "card": "Wikipedia — Center for the Study of New Testament Manuscripts - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Center_for_the_Study_of_New_Testament_Manuscripts",
+   "kind": "Overview card and the Wikipedia article (revision 1341519538, last edited 3 March 2026)",
+   "files": {
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.wiki",
+     "sha256": "9729b8e0180d4306b3547ed928ec960c73f3d5f46fcf3a95690baf62095de5d4"
+    },
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.html",
+     "sha256": "4041fe62839efd92c11001d2ebbd8062345ca7089e6d4dc9f0a72db8417a7a65"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.txt",
+     "sha256": "13466f63a7aba7debb670841b5a79c21294cfc61abe0194028ad50b77743cab2"
+    },
+    "B2-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2-429.html",
+     "sha256": "4a5c997acf05da018957b99c87e27f94c76bff9a9e54e8d457855b3354333381"
+    }
+   },
+   "fetched": {
+    "tries": [
+     {
+      "at": "2026-10-31T04:39:02Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Center_for_the_Study_of_New_Testament_Manuscripts&action=raw",
+      "http": 200,
+      "sha256": "9729b8e0180d4306b3547ed928ec960c73f3d5f46fcf3a95690baf62095de5d4",
+      "result": "wikitext"
+     },
+     {
+      "at": "2026-10-31T04:39:02Z",
+      "url": "https://en.wikipedia.org/wiki/Center_for_the_Study_of_New_Testament_Manuscripts",
+      "http": 429,
+      "sha256": "4a5c997acf05da018957b99c87e27f94c76bff9a9e54e8d457855b3354333381",
+      "result": "'Too many requests' (Wikimedia error page)"
+     },
+     {
+      "at": "2026-10-31T04:40:10Z",
+      "url": "https://en.wikipedia.org/wiki/Center_for_the_Study_of_New_Testament_Manuscripts",
+      "http": 200,
+      "sha256": "4041fe62839efd92c11001d2ebbd8062345ca7089e6d4dc9f0a72db8417a7a65",
+      "result": "the rendered article, retried once with the same agent after the 429; no redirect"
+     }
+    ],
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.html",
+    "raw_sha256": "4041fe62839efd92c11001d2ebbd8062345ca7089e6d4dc9f0a72db8417a7a65",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.txt",
+     "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B2.wiki"
+    ]
+   },
+   "names_operator": "yes (founder and Executive Director Daniel B. Wallace; Chairman Michael W. Holmes; parent organization)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "The article exists under the entity's exact name, no redirect. It carries a {{refimprove}} notice (August 2025) and {{cn}} marks on its lead's user count and its Background's figures; those claims are ledgered with the marks in their loci. The card is the article: carried once, as card 2, and listed under the 'wikipedia' origin.",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Center for the Study of New Testament Manuscripts - Wikipedia",
+   "card_snippet": "New Testament scholar and professor Daniel B. Wallace founded CSNTM in September 2002 to utilize emerging technologies to photograph and fully archive all known...",
+   "card_site": "Wikipedia"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "Facebook — The Center for the Study of New Testament Manuscripts (CSNTM) | Plano TX",
+   "url": "https://www.facebook.com/CSNTM/",
+   "kind": "Overview card (the center's Facebook page; unreachable)",
+   "files": {
+    "B3-login.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B3-login.html",
+     "sha256": "4a2c9b6419b5f23e2628cbc157da65d62a3ced5d31b10d9f036e1bfc4ea5bd69"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T04:39:39Z",
+      "url": "https://www.facebook.com/CSNTM/",
+      "http": 200,
+      "final_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FCSNTM%2F",
+      "sha256": "4a2c9b6419b5f23e2628cbc157da65d62a3ced5d31b10d9f036e1bfc4ea5bd69",
+      "result": "a redirect to Facebook's login page ('Log into Facebook'); not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"The Center for the Study of New Testament Manuscripts (CSNTM)\" Plano TX Facebook'",
+     "WebSearch 'facebook.com CSNTM \"Center for the Study of New Testament Manuscripts\"'",
+     "the URL from the center's own home page link (facebook.com/CSNTM/, B1.html) and its 2011 post 'CSNTM is on Facebook'"
+    ],
+    "note": "The page refused the honest agent with a login wall. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes (the snippet names the organization, its address and contacts)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "The Center for the Study of New Testament Manuscripts (CSNTM) | Plano TX",
+   "card_snippet": "Organization: Center for the Study of New Testament Manuscripts (CSNTM), Plano, TX (2001 W Plano Pkwy; csntm.org; info@csntm.org; 972-941-4521). Mission: Non-pr...",
+   "card_site": "Facebook"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "LinkedIn — Center for the Study of New Testament Manuscripts | LinkedIn",
+   "url": "https://www.linkedin.com/company/2184469/",
+   "kind": "Overview card (the center's LinkedIn company page; unreachable)",
+   "files": {
+    "B4-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B4-403.html",
+     "sha256": "add65fa0bba5f82ee0088fcee97b6bb8e51764bbe6009ce1f30bec7c48a16375"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-31T04:39:39Z",
+      "url": "https://www.linkedin.com/company/2184469/",
+      "http": 403,
+      "final_url": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F2184469%2F",
+      "sha256": "add65fa0bba5f82ee0088fcee97b6bb8e51764bbe6009ce1f30bec7c48a16375",
+      "result": "HTTP 403 at LinkedIn's login wall ('Attention Required! | Cloudflare'); not retried with another agent string or by another route"
+     }
+    ],
+    "searches": [
+     "WebSearch '\"Center for the Study of New Testament Manuscripts\" LinkedIn \"exists to digitally preserve Greek New Testament manuscripts\"'",
+     "WebSearch 'linkedin.com/company \"Center for the Study of New Testament Manuscripts\"'",
+     "the company id from the center's own home page link (linkedin.com/company/2184469/…, B1.html)"
+    ],
+    "note": "The company id is the one the center's home page links to; the card's own URL was not shown. Recorded as unreachable; the card's title and snippet stand as its only text."
+   },
+   "names_operator": "yes (the snippet names the center)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "Center for the Study of New Testament Manuscripts | LinkedIn",
+   "card_snippet": "The Center for the Study of New Testament Manuscripts (CSNTM) exists to digitally preserve Greek New Testament manuscripts. Toward that end, CSNTM takes digital...",
+   "card_site": "LinkedIn"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "North Texas Giving Day — Center for the Study of New Testament Manuscripts",
+   "url": "https://www.northtexasgivingday.org/organization/csntm",
+   "kind": "Overview card (the center's profile on North Texas Giving Day, Communities Foundation of Texas, written in the center's first person)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B5.html",
+     "sha256": "049383e01f49257730264436adaaeffc7c2c240ab1f3a3187f3730a5cc984512"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B5.txt",
+     "sha256": "79af3f7139f6b0a8d572258699fb7b623e40de091c5ca8dba1f685ca533436d8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:30Z",
+    "http": 200,
+    "url": "https://www.northtexasgivingday.org/organization/csntm",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B5.html",
+    "raw_sha256": "049383e01f49257730264436adaaeffc7c2c240ab1f3a3187f3730a5cc984512",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B5.txt"
+    ]
+   },
+   "names_operator": "yes ('Dr. Daniel B. Wallace'; the organization's EIN and address)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "URL by WebSearch on the card's site and title; the snippet ('CSNTM was founded in September 2002 by noted New Testament scholar …') is the profile's About ¶1 s1, verbatim after the page's 'Small heading' label.",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Center for the Study of New Testament Manuscripts",
+   "card_snippet": "Small heading CSNTM was founded in September 2002 by noted New Testament scholar and professor, Dr. Daniel B. Wallace, to utilize emerging technologies to photo...",
+   "card_site": "North Texas Giving Day"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Associates For Biblical Research — Multiple New Testament Manuscripts Discovered | Associates For Biblical Research",
+   "url": "https://biblearchaeology.org/multiple-new-testament-manuscripts-discovered/",
+   "kind": "Overview card (a news item by Bryan Windle, Associates for Biblical Research, 28 January 2016)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B6.html",
+     "sha256": "d7a31eaa75ccbe19cf564762b2520a882eb29e785617b7e5f9539b1207589e6a"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B6.txt",
+     "sha256": "df318f58e02076880c8a67906c6ca672f68c35cf9e1118d316c3e01510d342cb"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:30Z",
+    "http": 200,
+    "url": "https://biblearchaeology.org/multiple-new-testament-manuscripts-discovered/",
+    "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B6.html",
+    "raw_sha256": "d7a31eaa75ccbe19cf564762b2520a882eb29e785617b7e5f9539b1207589e6a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B6.txt"
+    ]
+   },
+   "names_operator": "yes (the center's staff; links to the center's and Wallace's posts)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "URL by WebSearch on the card's title and site; the text matches the snippet ('Staff from the Center … found up to 17' in the card, 'have discovered as many as 17' on the page: the card's 'found up to' is the composition layer's paraphrase in the snippet).",
+   "surfaced_by_T": [
+    {
+     "slug": "center-for-the-study-of-new-testament-manuscripts-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "Multiple New Testament Manuscripts Discovered | Associates For Biblical Research",
+   "card_snippet": "Discovery: Center for the Study of New Testament Manuscripts (CSNTM) staff found up to 17 uncatalogued New Testament manuscripts at the National Library of Gree...",
+   "card_site": "Associates For Biblical Research"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "the census own page csntm--about (the address /about/ serves the Scribal Fellowship page)",
+   "card": "The Center for the Study of New Testament Manuscripts — the center's Scribal Fellowship page (the census's 'about', final URL https://www.csntm.org/about-scribal-fellowship/), with its three stated objectives",
+   "url": "https://www.csntm.org/about/",
+   "kind": "own page: the center's Scribal Fellowship page (the census's 'about', final URL https://www.csntm.org/about-scribal-fellowship/), with its three stated objectives",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B7.html",
+     "sha256": "01a1032e327c58cd6313b55c5f7e0cfd36c2a2af3b2747d41ca8732cd5fc69f1"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B7.txt",
+     "sha256": "ce0fe073a34dfe929f81df7876950403b6ae04e71ec31600b7640d5fddddcfef"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "csntm--about",
+     "url": "https://www.csntm.org/about/",
+     "final_url": "https://www.csntm.org/about-scribal-fellowship/",
+     "sha256": "01a1032e327c58cd6313b55c5f7e0cfd36c2a2af3b2747d41ca8732cd5fc69f1",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:50:52Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B7.html",
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B7.txt"
+     ],
+     "manifest": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/manifest.json"
+    },
+    "note": "copied from the census's saved copy (gunzipped) with its sha256 checked against the manifest; not refetched"
+   },
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "Not surfaced by T. The census saved https://www.csntm.org/about/, which redirected to /about-scribal-fellowship/ (manifest final_url); the census's evidence quotes objective_text, objective_skeptics, founder and address are from this page.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "the census own page csntm--manuscripts",
+   "card": "The Center for the Study of New Testament Manuscripts — the Digital Manuscript Collection search (manuscripts.csntm.org), with its notice, filters, count and result entries",
+   "url": "https://manuscripts.csntm.org/",
+   "kind": "own page: the Digital Manuscript Collection search (manuscripts.csntm.org), with its notice, filters, count and result entries",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B8.html",
+     "sha256": "522b51b14ad0e83eb835539a06a02fe94af97f8a02aec1bd2f666029fd2a4314"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B8.txt",
+     "sha256": "d2769be2282fea36c7134635339a9d019b794494d4359b6b2788438a6ac3ad61"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "csntm--manuscripts",
+     "url": "https://manuscripts.csntm.org/",
+     "final_url": "https://manuscripts.csntm.org/",
+     "sha256": "522b51b14ad0e83eb835539a06a02fe94af97f8a02aec1bd2f666029fd2a4314",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:50:57Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B8.html",
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B8.txt"
+     ],
+     "manifest": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/manifest.json"
+    },
+    "note": "copied from the census's saved copy (gunzipped) with its sha256 checked against the manifest; not refetched"
+   },
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "Not surfaced by T (T names the collection's website and links it through a Google redirect; no card is the collection). The census saved the search page only; the manuscript records themselves are unchecked (RF-24).",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the census own page csntm--beatty",
+   "card": "The Center for the Study of New Testament Manuscripts — the center's blog tag page Chester Beatty Biblical Papyri, with two posts",
+   "url": "https://www.csntm.org/tag/chester-beatty-biblical-papyri",
+   "kind": "own page: the center's blog tag page Chester Beatty Biblical Papyri, with two posts",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B9.html",
+     "sha256": "6dcb14477eaea9b3ef4932e99136157297dff3aaa18ced0f8b932af667bcf738"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B9.txt",
+     "sha256": "3658e231418e6e5237e025aa7a7f8adc0b94139ea9c6ae462bf568bd061a1674"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "csntm--beatty",
+     "url": "https://www.csntm.org/tag/chester-beatty-biblical-papyri",
+     "final_url": "https://www.csntm.org/tag/chester-beatty-biblical-papyri/",
+     "sha256": "6dcb14477eaea9b3ef4932e99136157297dff3aaa18ced0f8b932af667bcf738",
+     "read": "2026-10-31",
+     "fetched": "2026-10-31T02:50:59Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B9.html",
+      "datasets/negative-of-the-negative/v2/intake/csntm-20261031/B9.txt"
+     ],
+     "manifest": "/home/claude/fleet/revelationfirst-com/data/rf-census/sources/manifest.json"
+    },
+    "note": "copied from the census's saved copy (gunzipped) with its sha256 checked against the manifest; not refetched"
+   },
+   "names_operator": "yes",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet; B3's login page echoes only the fetching agent string)",
+   "note": "Not surfaced by T.",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "home, banner",
+   "quote": "Preserving the Ancient Text for Generation Next",
+   "claim": "the center's motto: preserving the ancient text for the next generation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a center that digitally preserves Greek New Testament manuscripts",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel (the text a reader opens from the home page), ¶ on CSNTM s1",
+   "quote": "In 2002, Daniel B. Wallace founds the Center for the Study of New Testament Manuscripts (CSNTM) to digitize all surviving Greek manuscripts of the New Testament.",
+   "claim": "Daniel B. Wallace founded the center in 2002 to digitize all surviving Greek manuscripts of the New Testament",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "founding: Daniel B. Wallace, September 2002",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on CSNTM s2–3",
+   "quote": "The microfilm images are helpful, but many times they are unclear. For this reason, CSNTM has been producing high-resolution photographs of these documents.",
+   "claim": "the center produces high-resolution photographs because the microfilm images of the manuscripts are often unclear",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the method: high-resolution photographs where the microfilms are unclear",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on CSNTM s4",
+   "quote": "Since 2002, the team has visited hundreds of institutions in more than 50 countries, digitally preserving their manuscripts.",
+   "claim": "since 2002 the team has visited hundreds of institutions in more than 50 countries",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: institutions, images, manuscripts",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on CSNTM s5",
+   "quote": "They have also discovered almost 60 previously unknown manuscripts that can now be found in the official catalog.",
+   "claim": "the team has discovered almost 60 previously unknown manuscripts now in the official catalogue",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "discoveries: previously unknown manuscripts",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on CSNTM s6–7",
+   "quote": "Images are available online on the Digital Manuscript Collection website. Scholars visit the website to study manuscript images as they edit the text that stands behind English translations of the New Testament.",
+   "claim": "the images are online in the Digital Manuscript Collection, where scholars study them as they edit the text behind English translations",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on CSNTM s8",
+   "quote": "Through this work, CSNTM helps ensure that readers of the New Testament today hold in their hands the most accurate text possible.",
+   "claim": "the center states that its work helps ensure readers hold the most accurate text possible",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: the accuracy of the New Testament text",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "blog post 'Meet the 2026-27 CSNTM Interns!' (25 August 2026), standfirst",
+   "quote": "At CSNTM, we are dedicated to ensuring that the New Testament you read most accurately reflects the original words of the apostles and early witnesses of Jesus Christ.",
+   "claim": "the center is dedicated to ensuring the New Testament read today reflects the original words of the apostles and early witnesses of Jesus Christ",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: the accuracy of the New Testament text",
+   "date": "2026-08-25",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "blog post 'What CSNTM Identified in the Schøyen Dead Sea Scroll Collection' (24 September 2026)",
+   "quote": "New findings from our Oslo expedition using multispectral imaging to examine the authenticity of 31 fragments",
+   "claim": "the center used multispectral imaging in Oslo to examine the authenticity of 31 fragments of the Schøyen Dead Sea Scroll collection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "imaging: multispectral, and work beyond the New Testament",
+   "date": "2026-09-24",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on P45, P46, P47 s2–4",
+   "quote": "P45 and P46 are rather significant because they indicate that already in the third century and at least in some locations, some New Testament writings were compiled into one book.",
+   "claim": "P45 and P46 show that by the third century, in some places, New Testament writings were compiled into one book",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Chester Beatty papyri: P45, P46, P47",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on P45, P46, P47 s5–7",
+   "quote": "Finally, P47 is one of the oldest manuscripts of Revelation with only ten leaves. In Revelation 13:18, P47 transmits “666” as the “number of the beast.” CSNTM photographed the images of the three manuscripts and produced this facsimile in partnership with the holding institutions and the publisher, Hendrickson.",
+   "claim": "P47 is one of the oldest manuscripts of Revelation, ten leaves, reading 666 at Rev 13:18; the center photographed P45–P47 and produced a facsimile with the holding institutions and Hendrickson",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Chester Beatty papyri: P45, P46, P47",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "history panel, ¶ on Kurt Aland and the INTF",
+   "quote": "INTF also carries out ongoing research into the Greek New Testament, maintains the official catalog of New Testament Greek manuscripts, and edits and publishes the standard critical editions of the Greek New Testament.",
+   "claim": "the INTF in Münster keeps the official catalogue of New Testament Greek manuscripts and publishes the standard critical editions",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the official catalogue and the editions: the INTF",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "2001 W. Plano Parkway STE 2450 Plano, TX 75075 USA",
+   "claim": "the center is at 2001 W. Plano Parkway, Plano, Texas",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, place and governance",
+   "date": "2026-10-31 (census copy read 2026-10-31T02:50:50Z; page © 2021, blog posts to 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 c387aab234e06d57…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1 s1–2",
+   "quote": "is a 501(c)(3) non-profit organization whose mission is to digitally preserve Greek New Testament manuscripts. Toward that end, CSNTM takes digital photographs of manuscripts at institutions, libraries, museums, monasteries, universities, and archives around the world.",
+   "claim": "Wikipedia: a 501(c)(3) non-profit whose mission is to digitally preserve Greek New Testament manuscripts, photographing them at institutions, libraries, museums, monasteries, universities and archives worldwide",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a center that digitally preserves Greek New Testament manuscripts",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1 s3",
+   "quote": "The images produced are freely accessible on the Center's website—a searchable library of Greek New Testament manuscripts.",
+   "claim": "Wikipedia: the images are freely accessible on the center's website, a searchable library",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1 s4 (marked {{cn}}, August 2025)",
+   "quote": "With more than 50,000 users examining manuscripts in their digital library each year",
+   "claim": "Wikipedia, unsourced: more than 50,000 users a year examine manuscripts in the digital library",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Background s1–2",
+   "quote": "New Testament scholar and professor Daniel B. Wallace founded CSNTM in September 2002 to utilize emerging technologies to photograph and fully archive all known Greek New Testament manuscripts. The Center is based in Plano, Texas.",
+   "claim": "Wikipedia: Daniel B. Wallace founded it in September 2002 to photograph and fully archive all known Greek New Testament manuscripts; it is based in Plano, Texas",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: Daniel B. Wallace, September 2002",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Background s3–5 (marked {{cn}}, August 2025)",
+   "quote": "As of 2019, the CSNTM has collaborated with more than 45 institutions on 4 continents to produce nearly 300,000 images from approximately 700 New Testament manuscripts. In the process, they have discovered over 75 New Testament manuscripts that were previously unknown. Their online library features images or links to more than 1,700 manuscripts.",
+   "claim": "Wikipedia, unsourced, as of 2019: more than 45 institutions on 4 continents, nearly 300,000 images from about 700 manuscripts, over 75 previously unknown manuscripts discovered, images or links to more than 1,700 manuscripts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale: institutions, images, manuscripts",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "infobox (wikitext)",
+   "quote": "| parent_organization = Center for the Research of Early Christian Documents",
+   "claim": "Wikipedia's infobox: formed 13 September 2002, founder and Executive Director Daniel B. Wallace, Chairman of the Board Michael W. Holmes, parent organization the Center for the Research of Early Christian Documents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, place and governance",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Equipment ¶2",
+   "quote": "In 2018, CSNTM acquired Multispectral Imaging (MSI) technology from MegaVision and has adapted the Graz system to make this technology portable as well.",
+   "claim": "Wikipedia: in 2018 the center acquired multispectral imaging and made it portable",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "imaging: multispectral, and work beyond the New Testament",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "GA 2882",
+   "quote": "In October 2005, the Center for the Study of New Testament Manuscripts acquired a tenth or eleventh century minuscule of the Gospel of Luke on parchment. It was later catalogued as Gregory–Aland 2882.",
+   "claim": "Wikipedia: in October 2005 the center acquired a tenth- or eleventh-century minuscule of Luke, later catalogued as GA 2882",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holding: GA 2882, a manuscript the center acquired",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Select major projects, Chester Beatty Library (2013) ¶2 s1",
+   "quote": "The New Testament papyri at the CBL include P46 (the oldest manuscript of Paul's letters—dated c. AD 200), P45 (the oldest manuscript of Mark's Gospel, with portions of the other Gospels and Acts—3rd century), and P47 (the oldest manuscript of Revelation—3rd century).",
+   "claim": "Wikipedia: in 2013 the center digitized the Chester Beatty papyri, among them P46 (Paul, c. AD 200), P45 (third century) and P47 (the oldest manuscript of Revelation, third century)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Chester Beatty papyri: P45, P46, P47",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Select major projects, National Library of Greece (2015–2016) ¶2 s2",
+   "quote": "In the process, 21 manuscripts unknown to the Institute for New Testament Textual Research (INTF) in Münster, Germany were digitized.",
+   "claim": "Wikipedia: at the National Library of Greece 21 manuscripts unknown to the INTF were digitized",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "discoveries: previously unknown manuscripts",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "maintenance notice ({{refimprove|date=August 2025}})",
+   "quote": "This article needs more citations.",
+   "claim": "Wikipedia marks the article as needing more citations (August 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia and its stated limit",
+   "date": "2026-03-03 (revision 1341519538, last edited 3 March 2026; fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 13466f63a7aba7de…) or wikitext B2.wiki (sha256 9729b8e0180d4306…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "card snippet (Facebook unreachable: login redirect)",
+   "quote": "Organization: Center for the Study of New Testament Manuscripts (CSNTM), Plano, TX (2001 W Plano Pkwy; csntm.org; info@csntm.org; 972-941-4521). Mission: Non-pr...",
+   "claim": "the Facebook card gives the organization, its Plano address and contacts, and a mission beginning \"Non-pr…\"",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator, place and governance",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (LinkedIn unreachable: HTTP 403, login wall)",
+   "quote": "The Center for the Study of New Testament Manuscripts (CSNTM) exists to digitally preserve Greek New Testament manuscripts. Toward that end, CSNTM takes digital...",
+   "claim": "the LinkedIn card: the center exists to digitally preserve Greek New Testament manuscripts and takes digital photographs toward that end",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a center that digitally preserves Greek New Testament manuscripts",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "card title and snippet (unreachable card)"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "About ¶1 s1",
+   "quote": "CSNTM was founded in September 2002 by noted New Testament scholar and professor, Dr. Daniel B. Wallace, to utilize emerging technologies to photograph and fully archive all known Greek New Testament manuscripts.",
+   "claim": "the center's profile: founded in September 2002 by Daniel B. Wallace to photograph and fully archive all known Greek New Testament manuscripts",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding: Daniel B. Wallace, September 2002",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "About ¶1 s3–4",
+   "quote": "As of 2022, we have collaborated with more than 45 institutions on 4 continents to produce nearly 300,000 images from approximately 700 New Testament manuscripts. In the process, we have discovered over 75 New Testament manuscripts that were previously unknown--more than any other organization in the 21st century.",
+   "claim": "the center's profile, as of 2022: more than 45 institutions on 4 continents, nearly 300,000 images from about 700 manuscripts, over 75 previously unknown manuscripts, more than any other organization this century",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: institutions, images, manuscripts",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "About ¶2 s1–2",
+   "quote": "Our online library features images or links to more than 2,000 manuscripts. These images can be freely accessed at csntm.org/Manuscript -- a searchable library of Greek New Testament manuscripts.",
+   "claim": "the profile: images or links to more than 2,000 manuscripts, freely accessed in a searchable library",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶1 s1",
+   "quote": "CSNTM exists to pursue the great and noble task of preserving the accuracy of the New Testament text and tracing its history through the ages.",
+   "claim": "the profile's mission: to preserve the accuracy of the New Testament text and trace its history",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: the accuracy of the New Testament text",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶2",
+   "quote": "Using conventional digital and multispectral technologies, CSNTM seeks to digitally preserve every known Greek New Testament manuscript and make them available to everyone via our freely accessible collection online at manuscripts.csntm.org. More than 50,000 people access our website every year, and our images are the foundation for the modern translations of the New Testament that people use everyday.",
+   "claim": "the profile: digital and multispectral preservation of every known manuscript, freely accessible to everyone; more than 50,000 visitors a year; its images the foundation of modern translations",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Mission ¶3 s2",
+   "quote": "Through this program, we have helped develop 30% of the rising New Testament textual scholars over the past ten years, right here in North Texas.",
+   "claim": "the profile: its internship has helped develop 30% of rising New Testament textual scholars over ten years",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "training: the internship",
+   "date": "2026-10-31 (read; undated profile, \"As of 2022\")",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 79af3f7139f6b0a8…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶1 (Bryan Windle, Breaking News, 28 January 2016)",
+   "quote": "Staff from the Center for the Study of New Testament Manuscripts (CSNTM) have discovered as many as 17 New Testament manuscripts at the National Library of Greece. While some were known to those at the library, these manuscripts had not been officially catalogued by the Institute for New Testament Textual Research (INTF) — the official cataloging house of all Greek New Testament manuscripts. The oldest one discovered dates from the seventh century.",
+   "claim": "ABR, 2016: the center's staff found as many as 17 manuscripts at the National Library of Greece not catalogued by the INTF, the oldest seventh-century",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "discoveries: previously unknown manuscripts",
+   "date": "2016-01-28",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 df318f58e0207688…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "¶1 s4",
+   "quote": "Since 2002, CSNTM staff have discovered more than 90 New Testament manuscripts with more than 20,000 pages of text.",
+   "claim": "ABR, 2016: since 2002 the staff have discovered more than 90 New Testament manuscripts, more than 20,000 pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "discoveries: previously unknown manuscripts",
+   "date": "2016-01-28",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 df318f58e0207688…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "What is Scribal Fellowship? ¶1",
+   "quote": "The Scribal Fellowship is a community of faithful supporters who partner with CSNTM in preserving ancient New Testament manuscripts through monthly giving of $25 or more. Modeled after the support once given to ancient scribes as they carefully copied and preserved Scripture, this fellowship provides the essential resources needed to continue that work today.",
+   "claim": "the Scribal Fellowship: supporters giving monthly, modelled on the support once given to the scribes who copied Scripture",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "support: the Scribal Fellowship and the scribal lineage",
+   "date": "2026-10-31 (census copy read; page © 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ce0fe073a34dfe92…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Why should I join? objective 1",
+   "quote": "ensure that modern publications of the New Testament accurately reflect the words first written in the first century",
+   "claim": "the first stated objective: that modern publications of the New Testament reflect the words first written in the first century",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: the accuracy of the New Testament text",
+   "date": "2026-10-31 (census copy read; page © 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ce0fe073a34dfe92…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Why should I join? objective 2",
+   "quote": "you digitally preserve ancient New Testament manuscripts against decay, loss, and destruction;",
+   "claim": "the second objective: digital preservation of the manuscripts against decay, loss and destruction",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a center that digitally preserves Greek New Testament manuscripts",
+   "date": "2026-10-31 (census copy read; page © 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ce0fe073a34dfe92…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Why should I join? objective 3",
+   "quote": "you provide scientific evidence (against the claims of skeptics) that what we have today is, indeed, what they wrote then.",
+   "claim": "the third objective: scientific evidence, against the claims of skeptics, that the present text is what was written",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "purpose: evidence against the skeptics",
+   "date": "2026-10-31 (census copy read; page © 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ce0fe073a34dfe92…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "What is included? item 1",
+   "quote": "Exclusive access to virtual interactive events with founder and Executive Director, Daniel B. Wallace",
+   "claim": "Daniel B. Wallace is the center's founder and Executive Director",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator, place and governance",
+   "date": "2026-10-31 (census copy read; page © 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ce0fe073a34dfe92…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search page, notice",
+   "quote": "If you would like information about using manuscript images in any way, please contact CSNTM . Your continued use of CSNTM.org demonstrates your willingness to agree to our Terms of Use and Copyright policy.",
+   "claim": "use of the images is governed: any use goes through the center, and continued use of the site is agreement to its Terms of Use and Copyright policy",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the Digital Manuscript Collection and its terms",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search page, filters",
+   "quote": "Classification Papyrus Majuscule Minuscule Lectionary",
+   "claim": "the collection classes each manuscript as papyrus, majuscule, minuscule or lectionary, filtered by century from the 2nd to the 17th",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection: unit, classes and count",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search page, result count",
+   "quote": "Search 2045 results found.",
+   "claim": "the search returns 2045 results",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collection: unit, classes and count",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search page, Image Type filter",
+   "quote": "Digital Facsimile (45034) --> Digital Microfilm (1511576) --> Digital MSI (9790)",
+   "claim": "the collection's image types include digital facsimile, digital microfilm and multispectral images beside its own digital photographs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the images: whose, and of what kind",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, P18; P45 (Vienna)",
+   "quote": "The images are made available by the British Library . For more recent digital images, please visit their website.",
+   "claim": "some images in the collection are made available by the holding institution, not taken by the center (P18, the British Library; P45 at Vienna, \"made available online by the institution\")",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the images: whose, and of what kind",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, P47",
+   "quote": "Late third century manuscript of Revelation on papyrus; 10 leaves, single column, 25–30 lines per column. Images are from the Chester Beatty Collection.",
+   "claim": "the catalogue dates P47, Revelation on papyrus, to the late third century; its images are from the Chester Beatty Collection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "catalogue dates of the earliest papyri",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, P46 (Dublin)",
+   "quote": "Late second century or early third century (c. 200) manuscript of Paul on papyrus; 86 leaves, single column, 23–26 lines per column. Images are from the Chester Beatty Collection.",
+   "claim": "the catalogue dates P46, Paul on papyrus, to the late second or early third century (c. 200)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue dates of the earliest papyri",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, P98",
+   "quote": "Possible second century manuscript of Revelation on papyrus; 1 fragment, single column, 19 lines per column.",
+   "claim": "the catalogue gives P98, Revelation on papyrus, as a possible second-century manuscript",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue dates of the earliest papyri",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, P52",
+   "quote": "Second century manuscript of the Gospels on papyrus; 1 fragment, single column, approximately 18 lines per column.",
+   "claim": "the catalogue dates P52, the Gospels on papyrus, to the second century",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue dates of the earliest papyri",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "search results, Rahlfs 961",
+   "quote": "Contents: LXX (Septuagint) Genesis 9–44.",
+   "claim": "the collection also holds Septuagint papyri (Rahlfs 961, Genesis)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection: unit, classes and count",
+   "date": "2026-10-31 (census copy read; the search as served)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d2769be2282fea36…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "tag page, post 1",
+   "quote": "The Chester Beatty Papyrus of Revelation (P47): New Finds from an Old Treasure Trove",
+   "claim": "a guest post on the center's blog, by Peter Malik, on new finds in P47, the Chester Beatty papyrus of Revelation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Chester Beatty papyri: P45, P46, P47",
+   "date": "2026-10-31 (census copy read; posts undated on the tag page)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 3658e231418e6e52…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "tag page, post 2 (Daniel B. Wallace, Executive Director)",
+   "quote": "Nearly nine decades ago, three of the earliest and most extensive New Testament papyri were made available to scholars through color photographs.",
+   "claim": "Wallace: nearly nine decades ago three of the earliest and most extensive New Testament papyri were made available through photographs; the post is titled \"New Discoveries on Every Page: P45, P46, P47\"",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Chester Beatty papyri: P45, P46, P47",
+   "date": "2026-10-31 (census copy read; posts undated on the tag page)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 3658e231418e6e52…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "www.csntm.org — The Center for the Study of New Testament Manuscripts",
+  "B2": "Wikipedia — Center for the Study of New Testament Manuscripts - Wikipedia",
+  "B3": "Facebook — The Center for the Study of New Testament Manuscripts (CSNTM) | Plano TX",
+  "B4": "LinkedIn — Center for the Study of New Testament Manuscripts | LinkedIn",
+  "B5": "North Texas Giving Day — Center for the Study of New Testament Manuscripts",
+  "B6": "Associates For Biblical Research — Multiple New Testament Manuscripts Discovered | Associates For Biblical Research",
+  "B7": "The Center for the Study of New Testament Manuscripts — the center's Scribal Fellowship page (the census's 'about', final URL https://www.csntm.org/about-scribal-fellowship/), with its three stated objectives",
+  "B8": "The Center for the Study of New Testament Manuscripts — the Digital Manuscript Collection search (manuscripts.csntm.org), with its notice, filters, count and result entries",
+  "B9": "The Center for the Study of New Testament Manuscripts — the center's blog tag page Chester Beatty Biblical Papyri, with two posts"
+ }
+}

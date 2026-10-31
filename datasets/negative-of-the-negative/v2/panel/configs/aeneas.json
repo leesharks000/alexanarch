@@ -1,0 +1,54 @@
+{
+ "row": "aeneas",
+ "address": "Aeneas DeepMind",
+ "entity": "Aeneas (predictingthepast.com), Google DeepMind's multimodal generative neural network for contextualizing Latin inscriptions, introduced in Nature on 23 July 2025 (Assael, Sommerschield et al.), co-developed with the University of Nottingham and with researchers at Warwick, Oxford and the Athens University of Economics and Business: it retrieves textual and contextual parallels from the Latin Epigraphic Dataset and restores, dates and places inscriptions; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/aeneas/). Distinct from Aeneas the Trojan hero, after whom it is named, and from Aeneas of Acts 9, homonyms of the bare name",
+ "row_type": "C (a public entity on which the archive bears: an AI model for ancient inscriptions; an entity of the Revelation First meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bAeneas\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bpredictingthepast\\b|\\bPredicting the Past\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bLatin Epigraphic Dataset\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "AI models for ancient texts (machine reading, restoration, dating and attribution of ancient inscriptions and manuscripts)",
+   "pattern": "\\b((machine|AI|neural|computational|automat\\w+) (reading|restoration|dating|decipherment|attribution) of (ancient|damaged|fragmentary)? ?(texts?|inscriptions?|manuscripts?|papyri|scrolls?)|(AI|machine[- ]learning|neural) (models?|networks?|systems?) (for|that (restore|date|read)) (ancient|damaged|fragmentary) (texts?|inscriptions?|manuscripts?|papyri)|machine dating|AI dating|epigraph\\w+ (AI|model)|Ithaca model|Vesuvius Challenge)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the DeepMind post: 'the first artificial intelligence (AI) model for contextualizing ancient inscriptions'; 'Aeneas builds upon Ithaca , our earlier work using AI to restore, date and place ancient Greek inscriptions'); B5 (Nature, Related work: 'the field of machine learning for ancient languages has gained remarkable momentum'); B7 (MIT Technology Review: 'Google’s previous archaeological tool Ithaca'). The census's intersection for the entity, 'ai-ancient-texts' ('AI and ancient texts: machine reading, restoration and dating'), its evidence_kind 'machine reading, restoration or dating', and its worked question 'machine-dating', which names it (census.json rows[slug == 'aeneas'].intersections, .evidence_kind; intersections; questions.json 'machine-dating')."
+  },
+  {
+   "term": "parallels (textual and contextual parallels between texts as evidence for interpretation, date and provenance)",
+   "pattern": "\\b((textual|contextual|verbal|epigraphic|linguistic|literary|lexical|formulaic) parallels?|parallels? (search|retrieval)|retriev\\w+ (of )?parallels|parallel (texts|passages|inscriptions))\\b",
+   "flags": "i",
+   "basis": "field: B1 ('historians traditionally rely on their expertise and specialized resources to identify “parallels” — which are texts that share similarities in wording, syntax, standardized formulas or provenance'; 'retrieving textual and contextual parallels in seconds'); B2, B3 (the same definition); B5 (Nature, Abstract: 'Historians capture these insights by identifying parallels—inscriptions with shared phrasing, function or cultural setting'). The census's kind ('an AI model that retrieves textual and contextual parallels for ancient inscriptions'), unit ('an inscription with its retrieved parallels'), answers and does_not_answer for the entity, and the worked question 'machine-dating' ('parallels for Latin inscriptions, the kind of evidence dependence arguments use') (census.json rows[slug == 'aeneas'].kind, .unit, .answers, .does_not_answer; questions.json)."
+  },
+  {
+   "term": "Latin inscriptions (Latin epigraphy)",
+   "pattern": "\\b(Latin (inscriptions?|epigraph\\w*)|Roman inscriptions?|epigraph(y|ic|ical|ers?|ists?))\\b",
+   "flags": "i",
+   "basis": "field: B1 ('It reasons across thousands of Latin inscriptions'; 'over 176,000 Latin inscriptions from across the ancient Roman world'); B3 (the Oxford card's title, 'restoring and contextualizing Latin inscriptions'); B5 ('a multimodal generative neural network for contextualizing Latin inscriptions'). The census's text_object for the entity ('Latin inscriptions; stated to be adaptable to other ancient languages, scripts and media, from papyri to coinage') (census.json rows[slug == 'aeneas'].text_object)."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own intersection, kind, unit, text object or evidence kind for the entity, stated by field sources at the loci given: (1) AI models for ancient texts (census intersection 'ai-ancient-texts', evidence_kind 'machine reading, restoration or dating', worked question 'machine-dating'; B1, B5, B7); (2) parallels as evidence (census kind, unit, answers, does_not_answer; B1, B2, B3, B5); (3) Latin inscriptions (census text_object; B1, B3, B5). The archive bears on these classes through the Revelation First thesis (#202 and the deposits revelationfirst.com cites: parallels between Revelation and the other New Testament writings and the direction of their dependence), its Sappho and papyrological work, and its machine-reading work; a deposit enters only where its sentence says something of the entity or applies its category to one of these classes. The census's rf_intersection ('Parallels as evidence: the model retrieves the kind of evidence the midrashim transform argues from ...') is the archive's reading, ledgered as RF-; it does not by itself admit a deposit. Aliases: the name (case-sensitive; every hit is read, and uses of the hero, Virgil's Aeneas, or Aeneas of Acts 9 are the homonyms' and rejected), the interface's name and host (Predicting the Past, predictingthepast.com, a census aka) and the model's dataset (Latin Epigraphic Dataset). Ithaca, DeepMind's earlier Greek model, is a neighbour entity (census relation), not an alias; its string enters only class (1). Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Aeneas DeepMind' (aeneas-deepmind-aio-20261031, OBS-ed654d93f896, ADDR-34f10c8ba70e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis and PER notes at the capture; the Revelation First census record and the worked question that names it) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#202, #828, #832 with its versions #1211, #1216, #1217, #1400, #1443, #1474).",
+ "hop_from": [
+  202,
+  828,
+  832,
+  1211,
+  1216,
+  1217,
+  1400,
+  1443,
+  1474
+ ]
+}

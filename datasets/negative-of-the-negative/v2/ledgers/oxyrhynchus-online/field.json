@@ -1,0 +1,978 @@
+{
+ "row": "oxyrhynchus-online",
+ "address": "Oxyrhynchus Papyri",
+ "addresses": [
+  "Oxyrhynchus Papyri"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the card's title and snippet; 42/42 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), by origin: 'card', every card on the transcript's rail (B1 the collection's site, one page with the census's own page oxyrhynchus-online--home; B2 the Wikipedia article, also the row's Wikipedia origin; B3 the EES's page on the collection; B4–B7 videos, titles only, B5's URL identified and its page bot-checked on playback); no own page of the census unsurfaced by T; no census third-party source.",
+ "lineage_note": "Lineages: what it is: the collection, its owner and its house (B1, B2, B3); the distribution of the finds (B2, B3); the excavation (B1, B3); the literary finds (B2); the date range and the languages (B1, B2, B3); the scale (B2, B3); the content mix (B2); the Christian texts and the New Testament papyri (B2); publication (B1, B2, B3); the videos (B4, B5, B6, B7); the site and its access (B1, B2); funding (B3)",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2.wiki the raw wikitext; B5-try1.html the video page served with a playback bot check; T1-oxyrhynchus-papyri-aio-20261031.txt the registry's transcript string)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 (and the census's own page oxyrhynchus-online--home, byte-identical)",
+   "card": "The Oxyrhynchus Papyri — The Oxyrhynchus Papyri: Home",
+   "url": "https://oxyrhynchus.web.ox.ac.uk/",
+   "kind": "the collection site's home page (Oxford); the census's own page oxyrhynchus-online--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B1.html",
+     "sha256": "1780c0dd2028f400efd075d923b6d2f24f17642e350f18b42acc282d864b59cf"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B1.txt",
+     "sha256": "cd1e24c277173a5a5b17682fe98f7fa02d2aa5486f4f728ebb03709fe4ae97cb"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:46Z",
+    "http": 200,
+    "url": "https://oxyrhynchus.web.ox.ac.uk/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B1.html",
+    "raw_sha256": "1780c0dd2028f400efd075d923b6d2f24f17642e350f18b42acc282d864b59cf",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B1.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'alexanarch-seating/1.0 (https://www.alexanarch.org)'; text by the census's extraction rule (scripts and styles stripped)",
+    "census_copy": {
+     "src": "oxyrhynchus-online--home",
+     "url": "http://www.papyrology.ox.ac.uk/POxy/",
+     "final_url": "https://oxyrhynchus.web.ox.ac.uk/",
+     "sha256": "1780c0dd2028f400efd075d923b6d2f24f17642e350f18b42acc282d864b59cf",
+     "read": "2026-10-31",
+     "http": "200",
+     "fetched": "2026-10-31T02:52:45Z",
+     "agrees": true,
+     "txt_agrees": true
+    }
+   },
+   "http": 200,
+   "names_operator": "yes ('belonging to the Egypt Exploration Society')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the collection's home; the card's snippet is the page's first sentence, verbatim). The fetch is byte-identical to the census's saved copy (sha256 1780c0dd…), whose url http://www.papyrology.ox.ac.uk/POxy/ redirects to this host (manifest final_url); B1.txt is identical to the census's text. The card and the census's own page are one page, carried once, as a card. The page embeds the AHRC film youtube.com/embed/dEJ0hqbu904 (card 5). The page carries no date.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 1
+    }
+   ],
+   "card_title": "The Oxyrhynchus Papyri: Home",
+   "card_snippet": "The Oxyrhynchus Papyri collection, belonging to the Egypt Exploration Society and housed in Oxford's Art, Archaeology and Ancient World Library, comprises thous...",
+   "card_note": null
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2; the English Wikipedia article (the row's Wikipedia origin)",
+   "card": "Wikipedia — Oxyrhynchus Papyri - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oxyrhynchus_Papyri",
+   "kind": "encyclopedia article (English Wikipedia, oldid 1381010183, last edited 19 October 2026)",
+   "files": {
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.wiki",
+     "sha256": "7ffb17bbd3f3d7922e37e7e182416153ac3cb5c4191c13e3de518f8b033b48a7"
+    },
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.html",
+     "sha256": "2216a16ab45dbc7caa5df97c7778a0b506f461bbcba913e152475d3eefc5af37"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.txt",
+     "sha256": "7415a56a5a2b09e3a830f0d80db5a77c99d758a42198f7e50b70c12a3e982f9f"
+    }
+   },
+   "fetched": {
+    "requests": [
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Oxyrhynchus_Papyri&action=raw",
+      "at": "2026-10-31T04:39:47Z",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.wiki",
+      "sha256": "7ffb17bbd3f3d7922e37e7e182416153ac3cb5c4191c13e3de518f8b033b48a7",
+      "note": "wikitext"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Oxyrhynchus_Papyri",
+      "at": "2026-10-31T04:39:48Z",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.html",
+      "sha256": "2216a16ab45dbc7caa5df97c7778a0b506f461bbcba913e152475d3eefc5af37",
+      "text": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B2.txt"
+     }
+    ],
+    "how": "curl -sSL -m 30 -A 'alexanarch-seating/1.0 (https://www.alexanarch.org)'; text from the rendered page, scripts and styles stripped; claims quoted from B2.txt (rendered spacing kept), the snippet from the card"
+   },
+   "http": 200,
+   "names_operator": "yes (the lead names no operator; the external links name 'Oxford University: Oxyrhynchus Papyri Project'; the wikitext's references name the Egypt Exploration Fund as the series' publisher)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "card 2 is English Wikipedia's article, carried once, as a card (origin 'card'), and it is also the row's Wikipedia origin (also_origin 'wikipedia'); the census read no third-party source for this row. The card's snippet ('Discovery: … Composition: 10% li...') is not a sentence of the article and is ledgered as the card's own text (F38). The article carries 'citation needed' (March 2024) and 'CN' (February 2025) tags and an 'as of' marker for its latest volume.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 2
+    }
+   ],
+   "card_title": "Oxyrhynchus Papyri - Wikipedia",
+   "card_snippet": "Discovery: Ancient rubbish dump at Oxyrhynchus, Egypt, by Grenfell and Hunt, dating from Ptolemaic/Roman periods (3rd century BC to 640 AD). Composition: 10% li...",
+   "card_note": null,
+   "also_origin": "wikipedia"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (the operator's own page; not among the census's sources)",
+   "card": "Egypt Exploration Society — The Oxyrhynchus Papyri | EES",
+   "url": "https://www.ees.ac.uk/collections/papyri.html",
+   "kind": "the operator's page on the collection",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B3.html",
+     "sha256": "913c24428da5e1f0034ebf72397d17b59a4551827d2346bd01bed1a163b1f3fe"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B3.txt",
+     "sha256": "7eb396a466561c1636bfb70bcc344800b7d77a4f57c9bebc8079700758c21000"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:39:48Z",
+    "http": 200,
+    "url": "https://www.ees.ac.uk/papyri",
+    "final_url": "https://www.ees.ac.uk/collections/papyri.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B3.html",
+    "raw_sha256": "913c24428da5e1f0034ebf72397d17b59a4551827d2346bd01bed1a163b1f3fe",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B3.txt"
+    ],
+    "how": "curl -sSL -m 30 -A 'alexanarch-seating/1.0 (https://www.alexanarch.org)'; https://www.ees.ac.uk/papyri (found by WebSearch on the card's title and snippet) redirects to the final url"
+   },
+   "http": 200,
+   "names_operator": "yes ('The Egypt Exploration Society is the custodian')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and snippet; the snippet is the page's first sentence and the opening of its second, verbatim. The census record does not cite this page; it is the operator's own, surfaced by T as card 3, and it states the third century BCE, 'over 500,000 fragments' and Hebrew and Aramaic among the languages. The page names a curator and an address for visits; neither is ledgered.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 3
+    }
+   ],
+   "card_title": "The Oxyrhynchus Papyri | EES",
+   "card_snippet": "The Oxyrhynchus Papyri The Egypt Exploration Society is the custodian of the largest collection of ancient papyri in the world. Housed at the University of Oxfo...",
+   "card_note": null
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 (video)",
+   "card": "YouTube·Wrestling with God — The Oxyrhynchus Papyri | Early Christian Manuscripts",
+   "url": null,
+   "kind": "video (2m), title only",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found",
+    "tried": [
+     "WebSearch: YouTube \"The Oxyrhynchus Papyri | Early Christian Manuscripts\" Wrestling with God",
+     "WebSearch: site:youtube.com Oxyrhynchus Papyri video",
+     "WebSearch: site:youtube.com \"Oxyrhynchus\" \"Wrestling with God\" OR …"
+    ]
+   },
+   "http": null,
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video card, no snippet; admitted through its title (§3.1(a)).",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 4
+    }
+   ],
+   "card_title": "The Oxyrhynchus Papyri | Early Christian Manuscripts",
+   "card_snippet": null,
+   "card_note": "video, 2m",
+   "unreachable": true,
+   "only_text": "the card title"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (video)",
+   "card": "YouTube·ahrcpress — Oxyrhynchus Papyri Project | Conserving and preserving ancient ...",
+   "url": "https://www.youtube.com/watch?v=dEJ0hqbu904",
+   "kind": "video (2m), title only (its transcript not fetched)",
+   "files": {
+    "B5-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B5-try1.html",
+     "sha256": "02af69b1286626e75931b7de7f687043e9c53fecbeea58dda099190bf51fa781"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-31T04:40:39Z",
+    "http": 200,
+    "url": "https://www.youtube.com/watch?v=dEJ0hqbu904",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oxyrhynchus-online-20261031/B5-try1.html",
+    "raw_sha256": "02af69b1286626e75931b7de7f687043e9c53fecbeea58dda099190bf51fa781",
+    "result": "page served (HTTP 200) with the video's metadata and a playback bot check ('Sign in to confirm you’re not a bot', playabilityStatus LOGIN_REQUIRED); not retried and not worked around; no transcript",
+    "how": "one fetch with the census agent"
+   },
+   "http": 200,
+   "names_operator": "yes (the channel ahrcpress; the film's description, not ledgered, names the AHRC)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified from the own page B1, which embeds youtube.com/embed/dEJ0hqbu904, and from Wikipedia's lead reference ('a film from the British Arts and Humanities Research Council on Oxyrhynchus Papyri Project', https://www.youtube.com/watch?v=dEJ0hqbu904); the served page's title, 'Oxyrhynchus Papyri Project | Conserving and preserving ancient Egypt', and channel, ahrcpress, match the card. A video is admitted through its transcript or else its title and snippet (§3.1(a)); the page's description (which says 'around 500,000 fragments of papyri') is neither and is not ledgered. B5-try1.html is kept as the record of the fetch.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 5
+    }
+   ],
+   "card_title": "Oxyrhynchus Papyri Project | Conserving and preserving ancient ...",
+   "card_snippet": null,
+   "card_note": "video, 2m",
+   "only_text": "the card title"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (video)",
+   "card": "YouTube·Bible & Archaeology — What are the Oxyrhynchus Papyri? | Bible & Archaeology",
+   "url": null,
+   "kind": "video (0:55), title only",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found",
+    "tried": [
+     "WebSearch: YouTube \"What are the Oxyrhynchus Papyri?\" Bible & Archaeology",
+     "WebSearch: site:youtube.com Oxyrhynchus Papyri video",
+     "WebSearch: site:youtube.com \"Oxyrhynchus\" … \"Bible & Archaeology\" …"
+    ]
+   },
+   "http": null,
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video card, no snippet; admitted through its title.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 6
+    }
+   ],
+   "card_title": "What are the Oxyrhynchus Papyri? | Bible & Archaeology",
+   "card_snippet": null,
+   "card_note": "video, 0:55",
+   "unreachable": true,
+   "only_text": "the card title"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7 (video)",
+   "card": "YouTube·The League of Biblical Enthusiasts — Ancient Manuscript Discoveries At Oxyrhynchus",
+   "url": null,
+   "kind": "video (18m), title only",
+   "files": {},
+   "fetched": {
+    "result": "unreachable: URL not found",
+    "tried": [
+     "WebSearch: YouTube \"Ancient Manuscript Discoveries At Oxyrhynchus\" League of Biblical Enthusiasts",
+     "WebSearch: site:youtube.com Oxyrhynchus Papyri video",
+     "WebSearch: site:youtube.com \"Oxyrhynchus\" … \"League of Biblical Enthusiasts\""
+    ]
+   },
+   "http": null,
+   "names_operator": "no (title only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, revelationfirst, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "video card, no snippet; admitted through its title.",
+   "surfaced_by_T": [
+    {
+     "slug": "oxyrhynchus-papyri-aio-20261031",
+     "card": 7
+    }
+   ],
+   "card_title": "Ancient Manuscript Discoveries At Oxyrhynchus",
+   "card_snippet": null,
+   "card_note": "video, 18m",
+   "unreachable": true,
+   "only_text": "the card title"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s1",
+   "quote": "The Oxyrhynchus Papyri collection, belonging to the Egypt Exploration Society and housed in Oxford's Art, Archaeology and Ancient World Library, comprises thousands of texts on papyrus and parchment and is the largest of its kind in the world.",
+   "claim": "the collection's own definition: owned by the EES, housed in Oxford's Art, Archaeology and Ancient World Library, thousands of texts on papyrus and parchment, the largest of its kind",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the collection, its owner and its house",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s2",
+   "quote": "It includes principally literary, documentary, and other texts in Greek, dating from the second century BCE to the seventh century CE; other languages represented include Latin, Demotic, Coptic, and Arabic.",
+   "claim": "principally literary, documentary and other Greek texts, second century BCE to seventh century CE; Latin, Demotic, Coptic and Arabic also represented",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s3",
+   "quote": "Most of the papyri come from excavations conducted at the site of Oxyrhynchus (modern Bahnasa) by Oxford classicists Bernard Grenfell and Arthur Hunt in 1896–1907 on behalf of the Egypt Exploration Fund (now Society).",
+   "claim": "most of the papyri come from Grenfell and Hunt's excavations at Oxyrhynchus (Bahnasa), 1896–1907, for the Egypt Exploration Fund",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the excavation",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Home ¶1 s4",
+   "quote": "Since then, scholars have worked continuously to catalogue, decipher, and publish this material.",
+   "claim": "scholars have worked continuously since to catalogue, decipher and publish the material",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "site navigation",
+   "quote": "Publications Images Current Project Location-List Virtual Exhibition",
+   "claim": "the site's sections: publications, images, the current project, a location list, a virtual exhibition",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the site and its access",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "site navigation, Virtual Exhibition",
+   "quote": "Virtual Exhibition Introduction The Site: Excavations and Finds Scribes and Scholars Daily Life A Millennium of Documents After Grenfell and Hunt",
+   "claim": "the virtual exhibition's chapters: the site, excavations and finds; scribes and scholars; daily life; a millennium of documents; after Grenfell and Hunt",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the site and its access",
+   "date": "undated (the page as fetched 2026-10-31; byte-identical with the census copy read 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 cd1e24c277173a5a…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶1 s1",
+   "quote": "The Egypt Exploration Society is the custodian of the largest collection of ancient papyri in the world.",
+   "claim": "the EES calls itself the custodian of the largest collection of ancient papyri in the world",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the collection, its owner and its house",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶1 s2",
+   "quote": "Housed at the University of Oxford, the collection comprises over 500,000 fragments of literary and documentary texts dating from the third century BCE to the seventh century CE.",
+   "claim": "housed at Oxford; over 500,000 fragments of literary and documentary texts, third century BCE to seventh century CE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the scale",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶1 s3",
+   "quote": "The texts are written in Greek, ancient Egyptian (hieroglyphic, hieratic, demotic), Coptic, Latin, Arabic, Hebrew, Aramaic, Syriac, and Pahlavi.",
+   "claim": "the languages: Greek, ancient Egyptian (hieroglyphic, hieratic, demotic), Coptic, Latin, Arabic, Hebrew, Aramaic, Syriac, Pahlavi",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶2 s1–2",
+   "quote": "Most of the papyri come from the excavations of Bernard Grenfell and Arthur Hunt on behalf of the Graeco-Roman Branch of the Egypt Exploration Society between 1896 and 1907. During this time they conducted investigations at sites around the Faiyum, and most prominently at the site of Oxyrhynchus (Bahnasa).",
+   "claim": "most of the papyri from Grenfell and Hunt's excavations for the EES's Graeco-Roman Branch, 1896–1907, at sites around the Faiyum and most prominently at Oxyrhynchus",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the excavation",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶2 s3",
+   "quote": "Other papyri come from the expedition of John de Monins Johnson to Antinoopolis in 1913-14.",
+   "claim": "other papyri of the collection come from John de Monins Johnson's expedition to Antinoopolis, 1913–14",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the excavation",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The Oxyrhynchus Papyri ¶2 s4",
+   "quote": "The Society also holds various records of the excavations and the distribution of the finds, including photographs taken by the Graeco-Roman Branch",
+   "claim": "the Society holds records of the excavations and of the distribution of the finds, with the Branch's photographs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the distribution of the finds",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Location",
+   "quote": "Papyrology Rooms, First Floor Bodleian Art, Archaeology, and Ancient World Library University of Oxford … Open by appointment only",
+   "claim": "the collection's location: the Papyrology Rooms of the Bodleian Art, Archaeology, and Ancient World Library, Oxford; open by appointment only",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the collection, its owner and its house",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Sponsors s1",
+   "quote": "Financial support for the care and publication of the collection, which is designated as a British Academy Major Project, is currently provided by the Arts and Humanities Research Council and the British Academy",
+   "claim": "care and publication funded by the AHRC and the British Academy; a British Academy Major Project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Sponsors s2",
+   "quote": "Publication of the texts is made available through the Graeco-Roman Memoirs which are available at a discounted price to Full Members of the EES",
+   "claim": "the texts are published through the Graeco-Roman Memoirs, discounted to Full Members of the EES",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Sponsors s3",
+   "quote": "So far 6000 texts have been published, all with translations and commentaries in English, making this the best published of the world’s major collections of papyri.",
+   "claim": "6000 texts published, all with English translation and commentary; the best published of the major papyrus collections",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the scale",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Reproduction permission and fees",
+   "quote": "High quality images of published papyri owned by the EES can be found on the website of the SDS Oxyrhynchus Papyri … Permission to use images of published papyri distributed to other institutions, and therefore not on this website, must be sought from that institution",
+   "claim": "images of published EES papyri on the SDS Oxyrhynchus Papyri site; papyri distributed to other institutions are not there, and permission lies with those institutions",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the distribution of the finds",
+   "date": "undated (the page as fetched 2026-10-31; footer '© 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7eb396a466561c16…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶1",
+   "quote": "The Oxyrhynchus Papyri are a group of manuscripts discovered during the late nineteenth and early twentieth centuries by papyrologists Bernard Pyne Grenfell and Arthur Surridge Hunt at an ancient rubbish dump near Oxyrhynchus in Egypt",
+   "claim": "the encyclopedia's definition: a group of manuscripts discovered by Grenfell and Hunt at an ancient rubbish dump near Oxyrhynchus",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the collection, its owner and its house",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "short description",
+   "quote": "Manuscript fragments from 32BC–640AD found in an Egyptian rubbish dump",
+   "claim": "the short description: manuscript fragments from 32 BC to 640 AD found in an Egyptian rubbish dump",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia",
+   "marks": [
+    "internally_inconsistent (with F20: the lead's 'Ptolemaic (3rd century BC)'; both loci in B2)"
+   ]
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶2",
+   "quote": "The manuscripts date from the time of the Ptolemaic (3rd century BC) and Roman periods of Egyptian history (from 32 BC to the Muslim conquest of Egypt in 640 AD).",
+   "claim": "the manuscripts date from the Ptolemaic (3rd century BC) and Roman periods, to 640 AD",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia",
+   "marks": [
+    "internally_inconsistent (with F19: 'from 32BC–640AD'; both loci in B2)"
+   ]
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶3",
+   "quote": "Only an estimated 10% are literary in nature. Most of the papyri found seem to consist mainly of public and private documents:",
+   "claim": "an estimated 10% literary; most are public and private documents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the content mix",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶4",
+   "quote": "Although most of the papyri were written in Greek , some texts written in Egyptian ( Egyptian hieroglyphics , Hieratic , Demotic , mostly Coptic ), Latin and Arabic were also found. Texts in Hebrew , Aramaic , Syriac and Pahlavi have so far represented only a small percentage of the total.",
+   "claim": "most in Greek; some Egyptian (hieroglyphic, hieratic, demotic, mostly Coptic), Latin, Arabic; Hebrew, Aramaic, Syriac and Pahlavi a small percentage",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶5 s1–2",
+   "quote": "Since 1898, academics have collated and transcribed over 5,000 documents from what were originally hundreds of boxes of papyrus fragments the size of large cornflakes. This is thought to represent only 1 to 2% of what is estimated to be at least half a million papyri still remaining to be conserved, transcribed, deciphered and catalogued.",
+   "claim": "over 5,000 documents transcribed since 1898, thought to be 1 to 2% of at least half a million papyri remaining",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the scale",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶5 s3",
+   "quote": "The most recent published volume was Vol. LXXXVIII, released on 1st of May 2025",
+   "claim": "the most recent volume of the series is LXXXVIII, released 1 May 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia",
+   "marks": [
+    "internally_inconsistent (with F32: 'the now 86-volume work'; both loci in B2)"
+   ]
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "lead ¶6",
+   "quote": "Oxyrhynchus Papyri are currently housed in institutions all over the world. A substantial number are housed in the Bodleian Art Library at Oxford University . There is an online table of contents briefly listing the type of contents of each papyrus or fragment.",
+   "claim": "the papyri are housed in institutions all over the world, a substantial number in the Bodleian Art Library at Oxford; an online table of contents lists each papyrus's contents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the distribution of the finds",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Administrative texts",
+   "quote": "Administrative documents assembled and transcribed from the Oxyrhynchus excavation encompass a wide variety of legal matters, such as marriages, employment contracts, and censuses.",
+   "claim": "the administrative documents cover marriages, employment contracts, censuses and other legal matters",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the content mix",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Secular texts",
+   "quote": "the archaeologists succeeded in recovering a large corpus of literary works that had previously been thought to have been lost. Many of these texts had previously been unknown to modern scholars. [ citation needed ]",
+   "claim": "a large corpus of literary works thought lost was recovered, many previously unknown; the article marks the claim 'citation needed'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the literary finds",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia",
+   "marks": [
+    "unsupported (the article's own 'citation needed', dated March 2024 in the wikitext)"
+   ]
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Poetry",
+   "quote": "Poems of Pindar . … Fragments of Sappho , Greek poet from the island of Lesbos famous for her poems about love.",
+   "claim": "the poetry found includes poems of Pindar and fragments of Sappho",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literary finds",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Drama",
+   "quote": "The classical author who has most benefited from the finds at Oxyrhynchus is the Athenian playwright Menander … Another notable text uncovered at Oxyrhynchus was Ichneutae , a previously unknown play written by Sophocles .",
+   "claim": "Menander the classical author who most benefited; Sophocles' Ichneutae, a previously unknown play",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literary finds",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Mathematics; § Latin",
+   "quote": "The findings at Oxyrhynchus also turned up the oldest and most complete diagrams from Euclid 's Elements . … An epitome of seven of the 107 lost books of Livy was the most important literary find in Latin .",
+   "claim": "the oldest and most complete diagrams of Euclid's Elements; an epitome of seven lost books of Livy, the most important Latin find",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the literary finds",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ New Testament ¶1",
+   "quote": "The Oxyrhynchus Papyri have provided the most numerous sub-group of the earliest copies of the New Testament . … Of the 127 registered New Testament papyri , 52 (41%) are from Oxyrhynchus. The earliest of the papyri are dated to the middle of the 2nd century, so were copied within about a century of the writing of the original New Testament documents.",
+   "claim": "the most numerous sub-group of the earliest New Testament copies: 52 of 127 registered NT papyri (41%) from Oxyrhynchus, the earliest dated to the mid-2nd century",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Christian texts and the New Testament papyri",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ New Testament ¶2",
+   "quote": "Grenfell and Hunt discovered the first New Testament papyrus ( 𝔓 1 ), on only the second day of excavation, in the winter of 1896–7. This, together with the other early discoveries, was published in 1898, in the first volume of the now 86-volume work, The Oxyrhynchus Papyri .",
+   "claim": "𝔓1 found on the second day of excavation, winter 1896–7, published in 1898 in volume I of the series, 'now 86-volume'",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia",
+   "marks": [
+    "internally_inconsistent (with F24: 'Vol. LXXXVIII, released on 1st of May 2025'; both loci in B2)"
+   ]
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ New Testament, table (rows for Revelation)",
+   "quote": "VI 848 0163 450 Revelation 16 … VIII 1079 𝔓 18 300 Revelation 1 British Library London UK … VIII 1080 0169 350 Revelation 3 –4 … X 1230 𝔓 24 350 Revelation 5 –6 … LXVI 4499 𝔓 115 300 Revelation 2 –3 , 5 –6 , 8 –15 Ashmolean Museum Oxford UK … LXVI 4500 0308 350 Revelation 11 :15–18",
+   "claim": "six Revelation witnesses from Oxyrhynchus in the table: 0163 (P.Oxy. 848, 450), 𝔓18 (P.Oxy. 1079, 300, British Library), 0169 (P.Oxy. 1080, 350), 𝔓24 (P.Oxy. 1230, 350), 𝔓115 (P.Oxy. 4499, 300, Ashmolean), 0308 (P.Oxy. 4500, 350); dates by the table's Date column, method not stated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Christian texts and the New Testament papyri",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ Christian texts",
+   "quote": "Among the Christian texts found at Oxyrhynchus, were fragments of early non- canonical Gospels, Oxyrhynchus 840 (3rd century AD) and Oxyrhynchus 1224 (4th century AD).",
+   "claim": "non-canonical gospel fragments among the Christian texts: P.Oxy. 840 (3rd c.) and 1224 (4th c.)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Christian texts and the New Testament papyri",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F35": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ New Testament apocrypha",
+   "quote": "The Oxyrhynchus Papyri collection contains around twenty manuscripts of New Testament apocrypha … The three manuscripts of Thomas represent the only known Greek manuscripts of this work",
+   "claim": "around twenty manuscripts of New Testament apocrypha; the three Thomas manuscripts the only known Greek ones",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Christian texts and the New Testament papyri",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F36": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ New Testament apocrypha, table and its note",
+   "quote": "I 1 200 Gospel of Thomas Bodleian Library … IV 654 200 Gospel of Thomas British Library … IV 655 200 Gospel of Thomas Houghton Library, Harvard … 2949?, 3525, 3529? 4705, and 4706 are rolls, the rest codices.",
+   "claim": "P.Oxy. 1, 654, 655 (Thomas), each dated 200, in Oxford, London and Harvard; of the apocrypha listed, only 2949?, 3525, 3529?, 4705 and 4706 are rolls, the rest codices",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Christian texts and the New Testament papyri",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F37": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "§ External links",
+   "quote": "Oxford University: Oxyrhynchus Papyri Project … Oxyrhynchus Online",
+   "claim": "the article links the Oxford project and Oxyrhynchus Online (the wikitext's link is http://www.papyrology.ox.ac.uk/POxy/, the census's url)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the site and its access",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7415a56a5a2b09e3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F38": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card 2 snippet (the rail)",
+   "quote": "Discovery: Ancient rubbish dump at Oxyrhynchus, Egypt, by Grenfell and Hunt, dating from Ptolemaic/Roman periods (3rd century BC to 640 AD). Composition: 10% li...",
+   "claim": "the card's own text: found in a rubbish dump by Grenfell and Hunt, 3rd century BC to 640 AD, 10% literary (truncated); not a sentence of the article",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the date range and the languages",
+   "date": "Wikipedia, oldid 1381010183, last edited 19 October 2026 (fetched 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry records them (cite_list)",
+   "also_origin": "wikipedia"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card 4 title",
+   "quote": "The Oxyrhynchus Papyri | Early Christian Manuscripts",
+   "claim": "a video titled as the papyri as early Christian manuscripts (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the videos",
+   "date": "undated (video card on the rail, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry records them (cite_list)"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card 5 title",
+   "quote": "Oxyrhynchus Papyri Project | Conserving and preserving ancient ...",
+   "claim": "a video of the AHRC on the Oxyrhynchus Papyri Project, conserving and preserving (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the videos",
+   "date": "undated (video card on the rail, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry records them (cite_list)"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card 6 title",
+   "quote": "What are the Oxyrhynchus Papyri? | Bible & Archaeology",
+   "claim": "a video asking what the papyri are (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the videos",
+   "date": "undated (video card on the rail, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry records them (cite_list)"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "card 7 title",
+   "quote": "Ancient Manuscript Discoveries At Oxyrhynchus",
+   "claim": "a video on manuscript discoveries at Oxyrhynchus (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the videos",
+   "date": "undated (video card on the rail, 2026-10-31)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry records them (cite_list)"
+  }
+ },
+ "field_sources": {
+  "B1": "The Oxyrhynchus Papyri — The Oxyrhynchus Papyri: Home",
+  "B2": "Wikipedia — Oxyrhynchus Papyri - Wikipedia",
+  "B3": "Egypt Exploration Society — The Oxyrhynchus Papyri | EES",
+  "B4": "YouTube·Wrestling with God — The Oxyrhynchus Papyri | Early Christian Manuscripts",
+  "B5": "YouTube·ahrcpress — Oxyrhynchus Papyri Project | Conserving and preserving ancient ...",
+  "B6": "YouTube·Bible & Archaeology — What are the Oxyrhynchus Papyri? | Bible & Archaeology",
+  "B7": "YouTube·The League of Biblical Enthusiasts — Ancient Manuscript Discoveries At Oxyrhynchus"
+ }
+}

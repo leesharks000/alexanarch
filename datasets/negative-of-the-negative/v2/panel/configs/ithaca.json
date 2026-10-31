@@ -1,0 +1,54 @@
+{
+ "row": "ithaca",
+ "address": "Ithaca DeepMind",
+ "entity": "Ithaca (ithaca.deepmind.com, now served at predictingthepast.com), the deep neural network of DeepMind and academic partners (Ca' Foscari University of Venice, the University of Oxford, the Athens University of Economics and Business) for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions, presented in Nature on 9 March 2022 (Assael, Sommerschield et al., 'Restoring and attributing ancient texts using deep neural networks', Nature 603, 280–283), trained on I.PHI (78,608 inscriptions from the Packard Humanities Institute's dataset), its code open under Apache 2.0; formalized in the Revelation First meta-aggregator record of 2026-10-30 (https://www.revelationfirst.com/aggregators/ithaca/). Distinct from Ithaca the island and Homer's Ithaca, after which it is named, from Ithaca, New York, and from the other homonyms of the bare name; the operator's address adds the disambiguator 'DeepMind'",
+ "row_type": "C (a public entity on which the archive bears: an AI model for ancient Greek inscriptions; an entity of the Revelation First meta-aggregator)",
+ "aliases": [
+  {
+   "pattern": "\\bIthaca\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bI\\.PHI\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bRestoring and attributing ancient texts\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bPredicting the past with Ithaca\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\b(Assael|Sommerschield)\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "AI models for ancient texts (machine reading, restoration, dating and attribution of ancient inscriptions and manuscripts)",
+   "pattern": "\\b((machine|AI|neural|computational|automat\\w+) (reading|restoration|dating|decipherment|attribution) of (ancient|damaged|fragmentary)? ?(texts?|inscriptions?|manuscripts?|papyri|scrolls?)|(AI|machine[- ]learning|neural) (models?|networks?|systems?) (for|that (restore|date|read)) (ancient|damaged|fragmentary) (texts?|inscriptions?|manuscripts?|papyri)|machine dating|AI dating|epigraph\\w+ (AI|model)|Vesuvius Challenge|Enoch model|Aeneas model)\\b",
+   "flags": "i",
+   "basis": "field: B4 (Nature, Abstract: 'Here we present Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions'; Conclusions: 'the methods introduced in this research apply to all disciplines dealing with ancient text (papyrology, numismatics, codicology)'); B1 (the DeepMind post: 'Restoring, placing, and dating ancient texts through collaboration between AI and historians'); B3 (Predicting the Past: 'Ithaca and Aeneas are generative AI models designed to assist historians in the study of ancient Greek and Latin inscriptions'); B5 (Wikipedia, Google DeepMind §Archaeology: 'a new archaeology document program'). The census's intersection for the entity, 'ai-ancient-texts' ('AI and ancient texts: machine reading, restoration and dating'), its evidence_kind 'machine reading, restoration or dating', and its worked question 'machine-dating', which names it (census.json rows[slug == 'ithaca'].intersections, .evidence_kind; intersections; questions.json 'machine-dating')."
+  },
+  {
+   "term": "Greek inscriptions (Greek epigraphy)",
+   "pattern": "\\b(Greek (inscriptions?|epigraph\\w*)|epigraph(y|ic|ical|ers?|ists?))\\b",
+   "flags": "i",
+   "basis": "field: B4 (Main: 'Epigraphy is the study of texts—inscriptions—written directly on durable materials'; 'trained on inscriptions written in the ancient Greek language'); B1 ('the largest digital dataset of Greek inscriptions from the Packard Humanities Institute'); B3 ('the study of ancient Greek and Latin inscriptions'). The census's text_object for the entity ('ancient Greek inscriptions') and its negative tag 'NOT a manuscript-dating model' (census.json rows[slug == 'ithaca'].text_object, .negative_tags)."
+  },
+  {
+   "term": "machine assistance to historians (human–machine collaboration in historical research)",
+   "pattern": "\\b(collaborative AI|human[- –]machine (cooperation|collaboration)|(assist|aid)(s|ing)? (the )?historians?|research aid|decision support)\\b",
+   "flags": "i",
+   "basis": "field: B4 (Abstract: 'Ithaca is designed to assist and expand the historian’s workflow. The architecture of Ithaca focuses on collaboration, decision support and interpretability'); B1 ('the potential for human-machine cooperation to advance historical interpretation'); B3 ('They are part of a wider initiative on developing collaborative AI for historical research'). The census's stated_limits and method for the entity ('designed to assist and expand the historian's workflow'; 'evaluated alone and with historians') (census.json rows[slug == 'ithaca'].stated_limits, .method)."
+  }
+ ],
+ "classes_note": "Three classes, each the census's own intersection, evidence kind, text object, method or stated limit for the entity, stated by field sources at the loci given: (1) AI models for ancient texts (census intersection 'ai-ancient-texts', evidence_kind 'machine reading, restoration or dating', worked question 'machine-dating'; B4, B1, B3, B5); (2) Greek inscriptions (census text_object, negative_tags; B4, B1, B3); (3) machine assistance to historians (census stated_limits, method; B4, B1, B3). The archive bears on these classes through the Revelation First thesis (#202 and the deposits revelationfirst.com cites: the dating and priority of the New Testament writings), its Sappho and papyrological work, and its machine-reading work; a deposit enters only where its sentence says something of the entity or applies its category to one of these classes. The census's rf_intersection ('Machine dating of Greek text: inscriptions, not manuscripts. A method the dating workstream can watch ...') and correction are the archive's reading, ledgered as RF-; they do not by themselves admit a deposit. Aliases: the name, case-sensitive (every hit is read; uses of the island, Homer's Ithaca, Cavafy's poem or the city are the homonyms' and rejected), the model's dataset (I.PHI), the paper's title, the DeepMind post's title and the paper's co-first authors. Aeneas, DeepMind's later Latin model, is a neighbour entity (census relation), not an alias; its string enters only class (1). Admission by reading (§3.4): a bare mention, a reference-list entry or a keyword is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-31, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-FIELD.md with BRIEF-NEW-ROW-AGGREGATOR.md and BRIEF-NEW-ROW-LABOR.md; address 'Ithaca DeepMind' (ithaca-deepmind-aio-20261031, OBS-5e8377899856, ADDR-665778bf9317), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading, analysis and PER notes at the capture; the Revelation First census record and the worked question that names it) are ledgered beside the deposits as CAP-1-NN and RF-NN. Second pass: one citation hop forward and back from the deposit admitted by reading (#1443).",
+ "hop_from": [
+  1443
+ ]
+}
