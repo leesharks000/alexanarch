@@ -117,7 +117,7 @@ parts = {
  "mt": "'AUTONOMOUS SEMANTIC WARFARE', FOUR MONTHS ON — REX FRACTION AND THE FIELD MANUAL NAMED, AS ONE FRAMEWORK UNDER A DEFINITION THAT INVERTS IT (AGENTS GENERATING NARRATIVES); THE REGISTRY'S OWN CAPTURE OF THE SAME OPENING AMONG THE CARDS",
  "d": ("THE TERM, SIGNED OUT, 2026-10-31, the Overview expanded: 'Autonomous semantic warfare is an emergent form of conflict where artificial intelligence agents independently generate and manipulate narratives, data streams, and communication networks.' "
        "Three core components (agentic AI influence; speed of command and data compression; 'Ontological and Structural Collisions: Frameworks like Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture by Rex Fraction analyze how networked platforms extract meaning-production capacity from users, turning communication spaces into structured battlegrounds of incompatible worldviews'), "
-       "strategic and military integration. Eight cards: Amazon (the manual), INSS, Homeland Security Today, the registry's capture page of 2026-06-15, the Scandinavian Journal of Military Studies, two videos."),
+       "strategic and military integration. Seven cards: Amazon (the manual), INSS, Homeland Security Today, the registry's capture page of 2026-06-15, the Scandinavian Journal of Military Studies, two videos."),
  "reading": ("The innocent reading first. Asked for the term, the Overview defines it as AI agents waging conflict through narratives and data, gives its components, names the Field Manual and its author as one framework, "
              "and sets the term beside military command and control, from the manual's page, two defence publications and the registry."),
  "findings": [
