@@ -58,11 +58,11 @@ FRAMES = "#509 §VI: 'Between the two frames, the question who specifically appr
 parts = {
 "twenty-chatgpt": {
  "n": 509, "slug": "whose-face-is-on-the-twenty-chatgpt-20261031", "paste": "paste-twenty-chatgpt.txt", "surface": "ChatGPT", "received": "2026-10-31 16:04 EDT",
- "qs": [Q], "turns": [[5, 336]], "target_id": "NEW:ea-whose-face-twenty-01", "entity_type": "work", "atomset": SET_509, "originator_basis": ORIG, "group": "Xtwenty",
- "head_full": ("[ChatGPT, signed out (the paste shows the unauthenticated interface: 'Log in'). The prompt is blank in the paste; it is read as the prompt the operator gave the Overview the same hour "
-               "(his message with both pastes: 'aio too - maybe it was the inclusion of the word implication'), to be confirmed. Received 2026-10-31 16:04 EDT. Image placeholders and card titles kept as pasted.]"),
+ "qs": [Q], "turns": [[5, 336]], "target_id": "TGT-ea-whose-face-twenty-01", "entity_type": "work", "originator_basis": ORIG, "group": "Xtwenty",
+ "head_full": ("[ChatGPT, signed out (the paste shows the unauthenticated interface: 'Log in'). The prompt is blank in the paste; it is the prompt the operator gave the Overview the same hour "
+               "(the operator, 16:16 EDT: 'yup, same prompt.'). Received 2026-10-31 16:04 EDT. Image placeholders and card titles kept as pasted.]"),
  "surface_basis": "The paste: the chatgpt.com unauthenticated interface ('Log in', 'You said:', 'ChatGPT said:', 'Chat with ChatGPT').",
- "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the composer's turn; the prompt blank in the paste, read as the Overview's prompt of the same hour",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the composer's turn; the prompt blank in the paste, the Overview's prompt of the same hour (operator, 16:16 EDT)",
  "obs": {"scored_object": "the answer whole, with its inline source chips",
    "reached": {"kind": "same", "abn": False, "span": "Lee Sharks' Whose Face Is on the Twenty?, co-attributed in its published version to Rex Fraction and Sparrow Wells, is an unusual essay about the imagery on American currency.",
                "basis": "The work reached by title, author, heteronyms, date and series, from its Medium publication and the archive; its argument reported, the Epstein resemblance stated outright."},
@@ -107,7 +107,7 @@ parts = {
 
 "twenty-aio": {
  "n": 509, "slug": "whose-face-is-on-the-twenty-aio-20261031", "paste": "paste-twenty-aio.txt", "surface": "Google AI Overview", "received": "2026-10-31 16:04 EDT",
- "qs": [Q], "turns": [[6, 34]], "target_id": "NEW:ea-whose-face-twenty-01", "entity_type": "work", "originator_basis": ORIG, "group": "Xtwenty",
+ "qs": [Q], "turns": [[6, 34]], "target_id": "TGT-ea-whose-face-twenty-01", "entity_type": "work", "originator_basis": ORIG, "group": "Xtwenty",
  "head": "The 'You said' line carries the query twice, run together, and is given once here.",
  "obs": {"scored_object": "the Overview expanded, with its source cards",
    "reached": {"kind": "same", "abn": False, "span": "\"Whose Face Is on the Twenty?\" is an interpretive, analytical essay by writer Lee Sharks, published on Medium.",
