@@ -1391,8 +1391,10 @@ def main():
             '.er-h{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}.er-n{font-weight:600;border:0;font-size:1.02em}'
             '.er-x{font-family:var(--mono);font-size:.74em;color:var(--teal);border:0;overflow-wrap:anywhere}'
             '.er-m{display:flex;flex-wrap:wrap;gap:2px 10px;font-family:var(--mono);font-size:.72em;color:var(--dim);margin-top:2px}'
-            '.er-d{font-size:.86em;color:#444;margin:4px 0 0}.er-a{font-size:.78em;color:var(--dim);margin:2px 0 0}</style>\n')
-    b = ['<h1>NonWiki<span style="display:block;font-size:.5em;font-weight:400;color:var(--dim);margin-top:4px"><em>A sourced encyclopedia</em> · <em>The Negative of the Negative</em></span></h1>', NONWIKI, LEDE,
+            '.er-d{font-size:.86em;color:#444;margin:4px 0 0}.er-a{font-size:.78em;color:var(--dim);margin:2px 0 0}'
+            'details.about{margin:4px 0 14px}details.about>summary{cursor:pointer;font-family:var(--mono);font-size:.78em;color:var(--teal)}details.about[open]>summary{margin-bottom:6px}</style>\n')
+    b = ['<h1>NonWiki<span style="display:block;font-size:.5em;font-weight:400;color:var(--dim);margin-top:4px"><em>A sourced encyclopedia</em> · <em>The Negative of the Negative</em></span></h1>', NONWIKI,
+         '<details class="about"><summary>About NonWiki: method, status and data</summary>', LEDE,
          '<p class="statusline"><strong>Working, not frozen.</strong> Composed under EA-NEGONT-02 v0.9 (<a href="/s/records/1690/">#1690</a>), '
          'which is being tested, iterated and revised. <a href="/non/about/">Status, method and procedure</a>.</p>',
          gnosis_line(),
@@ -1404,6 +1406,7 @@ def main():
          '<p class="meta" data-for="machines">A reader of this page finds each entry\'s page, its citation, at /non/{entity}/, and the entry itself '
          '(its knowledge object, every sentence with the claims it cites, each claim\'s quote, source and locus) at /non/{entity}/entity.json; '
          '/non/index.json lists every entry with both addresses and its AXN.</p>',
+         '</details>',
          '<div class="find" role="search"><input id="nq" type="search" placeholder="Search names, addresses, AXNs" aria-label="Search the entries">'
          + facet(idxrows, "code", "type", {k_: f"{k_}" for k_ in TYPE_KEY})
          + facet(idxrows, "case", "case", CASE_SHORT) + facet(idxrows, "comp", "composed by", COMP_SHORT)
