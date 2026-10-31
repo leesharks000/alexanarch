@@ -927,12 +927,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1722,
+     "value": 1723,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1482,
+      "ACTIVE": 1483,
       "SUPERSEDED": 225,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -948,7 +948,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 304
+      "undeclared": 305
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1000,9 +1000,9 @@
     },
     "fanout": {
      "value": {
-      "gh_releases": 1717,
-      "indexnow": 1717,
-      "wayback": 1603
+      "gh_releases": 1722,
+      "indexnow": 1722,
+      "wayback": 1604
      },
      "source": "/data/fanout-state.json"
     },
@@ -1055,11 +1055,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1722,
+     "value": 1723,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1722,
+     "value": 1723,
      "source": "registry wiki_article"
     }
    },
@@ -1101,7 +1101,7 @@
    "scale_at_snapshot": "11,506 internal citation edges (`/data/citation-graph.json`); 6,456 external citation edges to 2,539 external works (`/data/citation-graph-external.json`, `/data/external-works.json`).",
    "measured": {
     "internal_edges": {
-     "value": 13790,
+     "value": 13843,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
@@ -1126,25 +1126,25 @@
    "scale_at_snapshot": "633 addresses, 813 observations, 2026-06-07 to 2026-10-12 (`/data/EA-WG-CAPTURES-01.json` v12.167; deposit #1676, whose title says 811 captures); 2,388 semantic addresses (1,743 subjunctive, 628 observed, 17 verified non-address). Surfaces include Google AI Overview, Google AI Mode, ChatGPT, Grok, Bing Copilot, Claude and Perplexity.",
    "measured": {
     "addresses": {
-     "value": 890,
+     "value": 893,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "observations": {
-     "value": 1080,
+     "value": 1084,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "registry_version": {
-     "value": "12.446",
+     "value": "12.450",
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "semantic_addresses": {
-     "value": 2614,
+     "value": 2616,
      "source": "/data/semantic-addresses.json"
     },
     "semantic_address_classes": {
      "value": {
       "subjunctive": 1739,
-      "observed_address": 858,
+      "observed_address": 860,
       "verified_non_address": 17
      },
      "source": "/data/semantic-addresses.json observation_class"
@@ -1216,7 +1216,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1661,
+     "value": 1662,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1340,7 +1340,7 @@
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 378,
+     "value": 379,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1394,7 +1394,7 @@
    "scale_at_snapshot": "11,506 internal citation edges; one registry head declared per commit (`/.well-known/axn-node.json`); 31 entries in the fleet index across four sections (`/api/fleet.json`).",
    "measured": {
     "internal_edges": {
-     "value": 13790,
+     "value": 13843,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
@@ -1425,13 +1425,13 @@
   {
    "surface": "#1676 title",
    "header": 811,
-   "data": 1080,
+   "data": 1084,
    "note": "deposited title vs live observation_count"
   },
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1722,
+   "data": 1723,
    "note": "stated deposit count vs registry"
   },
   {
