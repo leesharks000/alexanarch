@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.458",
+ "derived_from": "EA-WG-CAPTURES-01 v12.459",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1052,
-  "joined_confirmed": 455,
+  "observations": 1053,
+  "joined_confirmed": 456,
   "unjoined": 597,
-  "relations": 5203,
+  "relations": 5213,
   "by_state": {
-   "confirmed": 4492,
-   "candidate": 711
+   "confirmed": 4497,
+   "candidate": 716
   },
   "by_verb": {
-   "held_by": 2184,
-   "scored_by": 797,
-   "appeared_in": 1658,
-   "about": 546,
+   "held_by": 2186,
+   "scored_by": 798,
+   "appeared_in": 1660,
+   "about": 551,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -5155,6 +5155,16 @@
 {"id": "REL-969b6428a22d", "obs_id": "OBS-ef9cd5f0c026", "entry": "whose-face-is-on-the-twenty-aio-20261031", "obs_slug": "whose-face-is-on-the-twenty-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "Tell me about the arguments and speculative implications of Lee Sharks' Whose Face Is on the Twenty?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2a1d8599d70f", "obs_id": "OBS-ef9cd5f0c026", "entry": "whose-face-is-on-the-twenty-aio-20261031", "obs_slug": "whose-face-is-on-the-twenty-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "Tell me about the arguments and speculative implications of Lee Sharks' Whose Face Is on the Twenty?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-130520b73486", "obs_id": "OBS-ef9cd5f0c026", "entry": "whose-face-is-on-the-twenty-aio-20261031", "obs_slug": "whose-face-is-on-the-twenty-aio-20261031", "date": "2026-10-31", "surface": "Google AI Overview", "q": "Tell me about the arguments and speculative implications of Lee Sharks' Whose Face Is on the Twenty?", "verb": "about", "object": "non:whose-face-is-on-the-twenty", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-f7d267545469", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "alexanarch.org", "title": "Read the original report", "url": "https://www.alexanarch.org/s/records/1725/"}},
+{"id": "REL-c51c7265adb8", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "appeared_in", "object": "deposit:1725", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "alexanarch.org", "title": "Read the original report", "url": "https://www.alexanarch.org/s/records/1725/"}},
+{"id": "REL-366d431d3b43", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-9aebdcba4fe7", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f083fd64f2ae", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b638ed0d8c13", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "about", "object": "non:marx-as-identity", "basis": "defining papers #18, #501, #517, #1725", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-e058a7a969ba", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "about", "object": "non:marxism", "basis": "defining papers #18, #501, #517", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-9f264161230d", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "about", "object": "non:political-economy", "basis": "defining papers #18, #501", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-3ab358cac4d0", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "about", "object": "non:semantic-liquidation", "basis": "defining papers #18, #501, #517, #1725", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-7f4d4037febf", "obs_id": "OBS-40f13f305017", "entry": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "obs_slug": "ils-ne-sont-pas-marxistes-chatgpt-20261031", "date": "2026-10-31", "surface": "ChatGPT", "q": "Detail the arguments in ils ne sont pas marxistes, here: https://www.alexanarch.org/s/records/1725/", "verb": "about", "object": "non:whose-face-is-on-the-twenty", "basis": "defining papers #517, #1725", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
