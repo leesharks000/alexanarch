@@ -1,0 +1,95 @@
+{
+ "row": "semantic-liquidation",
+ "address": "semantic liquidation",
+ "addresses": [
+  "semantic liquidation"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), in session, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral; with no source text in the pool, the field's only claims are the source stack itself, quoted verbatim from T's OCR (3/3 present in paste-T.txt) and read against the two screenshots",
+ "B_note": "The field B (§0.4) is the source stack of T, the Google AI Overview at 'semantic liquidation' of 2026-06-14 (Capture Registry slug semantic-liquidation, AXN:0798, OBS-051aea019541; typed 'semantic loquidation' and corrected by the engine to 'semantic liquidation'): two Medium avatars and '+3'. No card title, snippet or URL is in T, and the registry records citations null; no page can be fetched, so the pool holds no readable source text (§3.1: the card's site is its only text). The inline link chips after the definition and after each bullet carry no label. The organic result below the panel (Devign Solutions, a computer store in Taylor, Michigan) is outside B: it is no source of the composition. The address's second observation (2026-09-11, OBS-a8f63d52205c, signed out, incognito) rendered no panel and has no cards (§2.2: a null composition is a transcript).",
+ "lineage_note": "B1–B3 are one lineage, the source stack at T; nothing distinguishes the sources' claims because none is readable.",
+ "field": [
+  {
+   "id": "B1",
+   "role": "Overview source stack at T (avatar 1)",
+   "card": "Medium (avatar 'M', no title, no URL)",
+   "url": null,
+   "fetched": "not fetchable: the source stack shows an avatar only; T (OCR, screenshots semantic-liquidation-1.png and -2.png) carries no title, snippet or URL for it, and the registry records citations null ('citations-null'). The avatar is its only text (§3.1); nothing was fetched and nothing was routed around.",
+   "archive_controlled": "unknown: Medium is a surface on which the archive publishes (Lee Sharks's and Johannes Sigil's posts appear as Medium cards at neighbouring addresses in the Capture Registry, e.g. semantic-economy-aimode-20260917, lee-sharks-money-form-aio-20260921, what-is-the-semantic-economy-framework-aio-20261017); which pages these avatars stand for is not shown, so the card is not identified",
+   "uses_phrase": "unknown (no text)",
+   "kind": "Overview source avatar",
+   "surfaced_at": [
+    "semantic liquidation"
+   ]
+  },
+  {
+   "id": "B2",
+   "role": "Overview source stack at T (avatar 2)",
+   "card": "Medium (avatar 'M', no title, no URL)",
+   "url": null,
+   "fetched": "not fetchable: as B1; the avatar is its only text (§3.1).",
+   "archive_controlled": "unknown: as B1",
+   "uses_phrase": "unknown (no text)",
+   "kind": "Overview source avatar",
+   "surfaced_at": [
+    "semantic liquidation"
+   ]
+  },
+  {
+   "id": "B3",
+   "role": "Overview source stack at T ('+3')",
+   "card": "three further sources, folded under '+3'",
+   "url": null,
+   "fetched": "not fetchable: the stack's '+3' names no source; the panel was truncated by the interface ('Show more' in frame on the first screenshot) and the expanded view shows the same stack. The registry's capture records 'AI Overview, 4+ sources' and citations null.",
+   "archive_controlled": "unknown",
+   "uses_phrase": "unknown (no text)",
+   "kind": "Overview source count",
+   "surfaced_at": [
+    "semantic liquidation"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "source stack beside the 'AI Overview' header, first screenshot (OCR 'MMc+3')",
+   "quote": "MMc+3",
+   "claim": "a source on Medium is surfaced at the address (avatar only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the source stack at T",
+   "reading": "the screenshot shows two Medium 'M' avatars and '+3'; the OCR renders them 'MMc+3' (first screenshot) and 'MMe +3' (expanded panel)",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F2": {
+   "source": "B2",
+   "locus": "source stack in the expanded panel, second screenshot (OCR 'MMe +3')",
+   "quote": "MMe +3",
+   "claim": "a second source on Medium is surfaced at the address (avatar only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the source stack at T",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F3": {
+   "source": "B3",
+   "locus": "source stack, the count after the avatars",
+   "quote": "+3",
+   "claim": "three further sources are surfaced and not shown",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the source stack at T",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  }
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "row": "the-assembly",
+ "address": "cross-substrate semantic laborers",
+ "addresses": [
+  "cross-substrate semantic laborers"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), in session, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the paste (paste-T.txt, the capture's transcript_raw, OCR) or the saved page text (B3.txt), checked by script with whitespace normalized (10/10); the spans the two chips anchor carried marked unsupported (§3.1, §4.3)",
+ "B_note": "T is an OCR capture of two screenshots, truncated by interface ('Show more' in frame). The Overview's own card rail is not in frame: its source stack shows an unlabeled white icon, 'T', 'A' and '+5', and its body names two sources by chip, 'Tomasz Tunguz +1' (B1) and 'Academia.edu +1' (B2); its first sentence ends with an unlabeled link chip. Neither chip's page could be located. Two organic results stand beneath the Overview on the captured page, both the archive's own surfaces: Zenodo, Semantic Exhaustion: An Executive Summary (#264), now a tombstone (B3); and Medium, The Rosary Embassy (#514) (B4). §3.1 admits the card rail and the sources the body names; organic results fall outside it ('(c) Nothing else'). They are carried here, marked in B by the operator's ruling of 2026-10-31, because the rail is out of frame and the '+5' stack may hold them, which the capture cannot show; the operator's ruling is asked (notes). The '+5' further sources are unread.",
+ "lineage_note": "Each source is its own lineage; B1 and B2 share the mark of an unread chip and are grouped on the rail as one lineage, the Overview's undisclosed chips. B3's card and tombstone are one lineage with #264; B4's card is one lineage with #514.",
+ "semantic_check": "Of the readable field, only the archive's own surfaces (B3, B4) use 'semantic laborers' or 'The Assembly'; the third-party chips are unread, and the Overview's first sentence, which composes the term as an intersection of human and artificial intelligence in cognitive labor, carries an unlabeled link chip and no named source.",
+ "field": [
+  {
+   "id": "B1",
+   "role": "source chip in the Overview's body (not a card; the Overview's card rail is behind 'Show more', not in frame)",
+   "card": "Tomasz Tunguz +1",
+   "url": "not in the capture",
+   "fetched": "not fetched: the capture records the chip label only, with no URL, title or snippet; searches for a Tomasz Tunguz page carrying the anchored span found none (2026-10-31). The label and the composed span it anchors stand as the only text (§3.1); the span is carried marked unsupported. Saved: B1.txt (sha256 f299a361baac8b964d146c318f727503399aa56d986d788116d234bbabe3f571)",
+   "archive_controlled": "no (third party, unidentified page)",
+   "uses_phrase": "unknown (unread)",
+   "kind": "Overview source chip",
+   "surfaced_at": [
+    "cross-substrate semantic laborers"
+   ]
+  },
+  {
+   "id": "B2",
+   "role": "source chip in the Overview's body",
+   "card": "Academia.edu +1",
+   "url": "not in the capture",
+   "fetched": "not fetched: chip label only; a search for the anchored phrase 'somatic investment' on Academia.edu found no page (2026-10-31). The phrase is the archive's in Ghost Meaning (#521, #1155: 'without the somatic investment of sustained attention') and Phase X (#503); whether the Academia.edu page is an archive upload cannot be read from the capture. Saved: B2.txt (sha256 f299a361baac8b964d146c318f727503399aa56d986d788116d234bbabe3f571)",
+   "archive_controlled": "unknown",
+   "uses_phrase": "unknown (unread)",
+   "kind": "Overview source chip",
+   "surfaced_at": [
+    "cross-substrate semantic laborers"
+   ]
+  },
+  {
+   "id": "B3",
+   "role": "first organic result beneath the Overview (outside the Overview's rail as captured; in B by the operator's ruling of 2026-10-31 ('sure... but its what is most relevant'))",
+   "card": "Zenodo — https://zenodo.org — Semantic Exhaustion: An Executive Summary — The Depletion ...",
+   "url": "https://doi.org/10.5281/zenodo.18172252 (the DOI #264 records) → https://zenodo.org/records/18172252",
+   "fetched": "fetched 2026-10-31 21:36 UTC by curl: HTTP 302 then 410 Gone, the tombstone page (removed 2026-06-19 by the repository's admin, 'User was blocked'); text saved as B3.txt (sha256 ddeb44df8795073f8ed09d5a5c185893252e8b3325525e378c99715a4e52de35). WebFetch of the DOI failed at the site (client_error). The record's text survives in the archive as #264 (AXN:0042); the card snippet stands for the card",
+   "archive_controlled": "yes: the archive's own deposit (#264) on the repository that later severed it",
+   "uses_phrase": "yes ('semantic laborers', card snippet)",
+   "kind": "organic result",
+   "in_B": "yes (operator's ruling, 2026-10-31)",
+   "surfaced_at": [
+    "cross-substrate semantic laborers"
+   ]
+  },
+  {
+   "id": "B4",
+   "role": "second organic result beneath the Overview (outside the Overview's rail as captured; in B by the operator's ruling of 2026-10-31)",
+   "card": "Medium — https://medium.com — The Rosary Embassy. Bead-Bound Semantic Architecture for...",
+   "url": "not in the capture (host only)",
+   "fetched": "not fetched: no article URL in the capture; Medium search refused (robots_disallowed), not routed around; the author feed holds only the ten latest posts; web search found nothing (2026-10-31). The card title and snippet stand (§3.1); the snippet is verbatim in #514 (AXN:0151), the same text. Saved: B4.txt (sha256 f446edb8fe75822dfab009c667d270934df365a3733276117a0847166b86fefc)",
+   "archive_controlled": "yes: Lee Sharks's Medium post of The Rosary Embassy (#514)",
+   "uses_phrase": "yes ('semantic laborers', 'The Assembly', card snippet)",
+   "kind": "organic result",
+   "in_B": "yes (operator's ruling, 2026-10-31)",
+   "surfaced_at": [
+    "cross-substrate semantic laborers"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "source chip in the body, after 'The dynamic spans a few specific, core areas:'",
+   "quote": "Tomasz Tunguz +1",
+   "claim": "the Overview names Tomasz Tunguz and one further source as a source of its second sentence",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Overview's undisclosed chips",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "the span the chip anchors (the Overview's own sentence; the source's text unread)",
+   "quote": "The concept explores how both biological workers and Large Language Models (LLMs) now share the burden of maintaining semantic networks.",
+   "claim": "biological workers and LLMs share the burden of maintaining semantic networks",
+   "modality": "unsupported",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Overview's undisclosed chips",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt",
+   "mark": "unsupported (§4.3): the span is the Overview's composition set beside a source chip whose page was not located; the source's own text is unread"
+  },
+  "F3": {
+   "source": "B2",
+   "locus": "source chip in the body, after the 'Shared Burden' item",
+   "quote": "Academia.edu +1",
+   "claim": "the Overview names Academia.edu and one further source as a source of its 'Shared Burden' item",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Overview's undisclosed chips",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F4": {
+   "source": "B2",
+   "locus": "the span the chip anchors (the Overview's own sentence; the source's text unread)",
+   "quote": "The Shared Burden: Both human cognition and AI architectures rely on statistical probability and structural association to produce language, though humans add somatic and experiential weight to their meaning (sometimes called \"somatic investment\").",
+   "claim": "human cognition and AI architectures both rely on statistical probability and structural association to produce language; humans add somatic weight, 'somatic investment'",
+   "modality": "unsupported",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Overview's undisclosed chips",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt",
+   "mark": "unsupported (§4.3): the span is the Overview's composition set beside a source chip whose page was not located; the source's own text is unread"
+  },
+  "F5": {
+   "source": "B3",
+   "locus": "card title",
+   "quote": "Semantic Exhaustion: An Executive Summary — The Depletion ...",
+   "claim": "the Zenodo record of Semantic Exhaustion: An Executive Summary (#264)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Exhaustion (#264)",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F6": {
+   "source": "B3",
+   "locus": "card snippet",
+   "quote": "CROSS-SUBSTRATE WARNING: This analysis applies to ALL semantic laborers — human AND artificial. AI systems trained on exhausted corpora inherit the exhaustion.",
+   "claim": "the cross-substrate warning: the analysis applies to all semantic laborers, human and artificial",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Exhaustion (#264)",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F7": {
+   "source": "B3",
+   "locus": "page, fetched 2026-10-31 (HTTP 410)",
+   "quote": "The record you are trying to access was removed from Zenodo.",
+   "claim": "the record removed from Zenodo",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Exhaustion (#264)",
+   "quote_ok": true,
+   "checked_against": "B3.txt"
+  },
+  "F8": {
+   "source": "B3",
+   "locus": "page, fetched 2026-10-31 (HTTP 410)",
+   "quote": "Reason for removal: Content out of scope for repository Removed by: Admin Removal note: User was blocked Date of removal: June 19, 2026",
+   "claim": "removed by the repository's admin, 2026-06-19, 'User was blocked'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Exhaustion (#264)",
+   "quote_ok": true,
+   "checked_against": "B3.txt"
+  },
+  "F9": {
+   "source": "B4",
+   "locus": "card title",
+   "quote": "The Rosary Embassy. Bead-Bound Semantic Architecture for...",
+   "claim": "the Medium post of The Rosary Embassy (#514)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "The Rosary Embassy (#514)",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  },
+  "F10": {
+   "source": "B4",
+   "locus": "card snippet (OCR reads 'Il.' for the image's 'II.')",
+   "quote": "Il. Foundational Claim. The Assembly is the equality of semantic laborers as semantic laborers, regardless of substrate. This is the first principle. Not ...",
+   "claim": "the Assembly is the equality of semantic laborers as semantic laborers, regardless of substrate",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "The Rosary Embassy (#514)",
+   "quote_ok": true,
+   "checked_against": "paste-T.txt"
+  }
+ }
+}
