@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 484,
- "with_atom_set": 480,
+ "count": 498,
+ "with_atom_set": 494,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -167638,6 +167638,2655 @@
    "external": false,
    "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
    "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-amiel-melburn-trust-archive",
+   "name": "Amiel Melburn Trust Archive (banmarchive.org.uk)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an online database of socialist and radical writings. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Amiel Melburn Trust Archive (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt",
+     "origin": "primary"
+    },
+    {
+     "source": "Amiel Melburn Trust Archive (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--new-reasoner.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Amiel Melburn Trust Archive",
+      "Amiel Melburn Archive",
+      "Amiel & Melburn Trust"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Amiel Melburn Archive: an online database of socialist and radical writings.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Barry Amiel and Norman Melburn Trust",
+      "Barry Amiel & Norman Melburn Trust"
+     ],
+     "reference": "The Barry Amiel and Norman Melburn Trust, a registered charity.",
+     "evidence": [
+      {
+       "record_quote": "© Barry Amiel and Norman Melburn Trust",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      },
+      {
+       "record_quote": "Registered Charity No. 281239",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online database of socialist and radical writings.",
+     "evidence": [
+      {
+       "record_quote": "Amiel Melburn Archive: an online database of socialist and radical writings.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Runs of journals: The Reasoner, New Reasoner, Universities & Left Review, Marxism Today, Black Dwarf, 7 Days, Red Rag, Soundings and others.",
+     "evidence": [
+      {
+       "record_quote": "Marxism Today 145 issues 1978–1998",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      },
+      {
+       "record_quote": "New Reasoner 10 issues 1957–1959",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      },
+      {
+       "record_quote": "The Reasoner 3 issues 1956–1956",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      },
+      {
+       "record_quote": "Black Dwarf 26 issues 1968–1969",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Reasoner",
+      "Thompson",
+      "Saville",
+      "1956"
+     ],
+     "reference": "The Reasoner, the journal of two Communist Party members ordered to close it, relaunched as the New Reasoner after their suspension, later New Left Review.",
+     "evidence": [
+      {
+       "record_quote": "When E.P. Thompson and John Saville were instructed by the leadership of the Communist Party of Great Britain to close down their journal The Reasoner , which had been critical of what the editors saw as the Party’s dogmatism, they refused. Suspended form the party, from which they soon resigned in protest at the Soviet invasion of Hungary, they relaunched with the New Reasoner .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--new-reasoner.txt"
+      },
+      {
+       "record_quote": "Running to ten issues, the New Reasoner would later merge with the Universities and Left Review and become New Left Review .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/banmarchive--new-reasoner.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "corpus",
+    "lineage"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'banmarchive' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-bannedthought",
+   "name": "BannedThought.net",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a site against the suppression of progressive ideas. A site, read on the site template.",
+   "records": [
+    {
+     "source": "BannedThought.net (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "BannedThought.net",
+      "BANNEDTHOUGHT.NET",
+      "bannedthought"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "BANNEDTHOUGHT.NET is independent and unaffiliated with any political party. While our sympathies are of course with the struggles of the oppressed and exploited peoples of the world, our goal here is simply to expose attempts to censor or suppress progressive ideas and to make available publications and documents which have been suppressed in one or more countries.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Suppressed progressive documents and publications, posted to publicize their suppression.",
+     "evidence": [
+      {
+       "record_quote": "This site exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere in the world. We will attempt to publicize such suppression and—when possible—to post documents and publications that have been suppressed elsewhere.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Party documents by country, the parties of each split listed side by side (the CPI(M-L) of 1969, People's War, Satyanarayan Singh; the CPN Maoist and its successors), the Great Debate, Mao and MLM theory.",
+     "evidence": [
+      {
+       "record_quote": "CPI(M-L) [Original Party formed in 1969]",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      },
+      {
+       "record_quote": "Communist Party of India (Marxist-Leninist) [People’s War]",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      },
+      {
+       "record_quote": "The Communist Party of Nepal (Revolutionary Maoist) [Formerly: CPN Maoist]:",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      },
+      {
+       "record_quote": "The Great Debate between Revolutionary China and the Revisionist and Social-Imperialist Soviet Union",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To struggle against the suppression of progressive ideas and make suppressed documents available.",
+     "evidence": [
+      {
+       "record_quote": "This site exists to struggle against the fascist-like suppression of progressive ideas and thought by reactionary governments and their agents anywhere in the world. We will attempt to publicize such suppression and—when possible—to post documents and publications that have been suppressed elsewhere.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Independent and unaffiliated with any political party; sympathies stated; posting usually only in English.",
+     "evidence": [
+      {
+       "record_quote": "BANNEDTHOUGHT.NET is independent and unaffiliated with any political party. While our sympathies are of course with the struggles of the oppressed and exploited peoples of the world, our goal here is simply to expose attempts to censor or suppress progressive ideas and to make available publications and documents which have been suppressed in one or more countries.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      },
+      {
+       "record_quote": "At present, and because of our own language deficiencies, we are usually only posting items in English.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/bannedthought--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "claim boundary",
+    "corpus",
+    "purpose",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'bannedthought' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-crowd-counting-consortium",
+   "name": "Crowd Counting Consortium (Harvard Kennedy School and the University of Connecticut)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a public interest and scholarly project documenting protests. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Crowd Counting Consortium (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crowd Counting Consortium",
+      "CCC"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Crowd Counting Consortium (CCC) is a joint project of Harvard Kennedy School and the University of Connecticut that collects publicly available data on political protest events reported in the United States, including rallies, marches, demonstrations, and acts of civil disobedience.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Harvard",
+      "University of Connecticut",
+      "Chenoweth",
+      "Pressman"
+     ],
+     "reference": "Harvard Kennedy School and the University of Connecticut, part of the Nonviolent Action Lab; begun by Jeremy Pressman and Erica Chenoweth.",
+     "evidence": [
+      {
+       "record_quote": "The Crowd Counting Consortium (CCC) is a joint project of Harvard Kennedy School and the University of Connecticut that collects publicly available data on political protest events reported in the United States, including rallies, marches, demonstrations, and acts of civil disobedience.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      },
+      {
+       "record_quote": "The CCC first emerged from a collaborative effort by Jeremy Pressman (UConn) and Erica Chenoweth (HKS) to estimate the number of participants in the Women’s March on Washington (and its affiliated sister marches nationwide) on January 21, 2017.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2017"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The CCC first emerged from a collaborative effort by Jeremy Pressman (UConn) and Erica Chenoweth (HKS) to estimate the number of participants in the Women’s March on Washington (and its affiliated sister marches nationwide) on January 21, 2017.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A public interest and scholarly project to document protests and demonstrations in the United States.",
+     "evidence": [
+      {
+       "record_quote": "A public interest and scholarly project to document protests and demonstrations in the United States.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Publicly reported political crowds in the United States, in three phases from 2017, published monthly on Dataverse.",
+     "evidence": [
+      {
+       "record_quote": "We collect publicly available data on political crowds reported in the United States, including marches, protests, demonstrations, riots, and other actions.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      },
+      {
+       "record_quote": "Protest event data from CCC’s three phases — 2017-2020, 2021-2024, and 2025 to the present — can be downloaded from the project’s Dataverse.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      },
+      {
+       "record_quote": "CCC data are published monthly on a publicly accessible Dataverse, for use by scholars, journalists, movement leaders, and others.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Only records confirmed by fact-checking; no identifying information not already public.",
+     "evidence": [
+      {
+       "record_quote": "We only post records that we can confirm and verify through fact-checking.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      },
+      {
+       "record_quote": "We will never post, release, or share identifying information that has not already been reported in the public domain.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/crowd-counting-consortium--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'crowd-counting-consortium' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-erol",
+   "name": "Encyclopedia of anti-Revisionism On-Line (EROL)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an encyclopedia of primary documents from anti-revisionist movements. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Encyclopedia of anti-Revisionism On-Line (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Encyclopedia of anti-Revisionism On-Line",
+      "Encyclopedia of Anti-Revisionism On-Line",
+      "EROL"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Encyclopedia of anti-Revisionism On-Line",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Marxists Internet Archive",
+      "EROL Administrator"
+     ],
+     "reference": "An EROL Administrator, within the Marxists Internet Archive's History section.",
+     "evidence": [
+      {
+       "record_quote": "Contact EROL Administrator",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Information on and primary documents from anti-revisionist movements, organizations and parties, by country.",
+     "evidence": [
+      {
+       "record_quote": "INFORMATION ON AND PRIMARY DOCUMENTS FROM ANTI-REVISIONIST MOVEMENTS, ORGANIZATIONS AND PARTIES BY COUNTRY",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Country sections; for the United States the New Communist Movement in periods, including its crises, splits, failed unity and collapse; periodicals by country.",
+     "evidence": [
+      {
+       "record_quote": "The New Communist Movement: Origins and Early Groups, 1969-1974",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      },
+      {
+       "record_quote": "The New Communist Movement: Crises, Splits and More New Parties, 1977-1980",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      },
+      {
+       "record_quote": "The New Communist Movement: Anti-Dogmatists Unable to Unite, 1978-1980",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      },
+      {
+       "record_quote": "The New Communist Movement: Collapse and Aftermath",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      },
+      {
+       "record_quote": "Anti-Revisionist Periodicals, Magazines and Newspapers by Country",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/erol--intro2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "corpus"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'erol' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-gnad",
+   "name": "Global Nonviolent Action Database (Swarthmore College)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a database of nonviolent action campaigns. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Global Nonviolent Action Database (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Global Nonviolent Action Database",
+      "GNAD"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Global Nonviolent Action Database is a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Swarthmore College",
+      "Swarthmore"
+     ],
+     "reference": "Swarthmore College, with its Peace and Conflict Studies Program, the Peace Collection and the Lang Center.",
+     "evidence": [
+      {
+       "record_quote": "The Global Nonviolent Action Database is a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Campaigns of nonviolent action, not movements: 1,200+ cases, 100+ countries, 400+ years.",
+     "evidence": [
+      {
+       "record_quote": "Campaigns, Not Movements",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      },
+      {
+       "record_quote": "1,200+ cases",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      },
+      {
+       "record_quote": "400+ years covered",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "1,200+ case studies from 100+ countries.",
+     "evidence": [
+      {
+       "record_quote": "1,200+ cases",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      },
+      {
+       "record_quote": "100+ countries",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 unless otherwise noted; a page of the database's limitations.",
+     "evidence": [
+      {
+       "record_quote": "The Global Nonviolent Action Database is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license unless otherwise noted.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      },
+      {
+       "record_quote": "Limitations of the Database",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "corpus",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'gnad' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-iish",
+   "name": "International Institute of Social History (IISH, IISG)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an institute and archive of socio-economic history. A site, read on the site template.",
+   "records": [
+    {
+     "source": "International Institute of Social History (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--about.txt",
+     "origin": "primary"
+    },
+    {
+     "source": "International Institute of Social History (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "International Institute of Social History",
+      "IISH",
+      "IISG",
+      "Internationaal Instituut voor Sociale Geschiedenis"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The IISH manages a rich collection in the field of socio-economic history that is made available online and in the reading room as much as possible. The archives, publications and audiovisual collections cover more than 50 kilometres and offer (historical) information on organisations and persons in the field of labour and social and emancipatory movements.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Royal Netherlands Academy of Arts and Sciences",
+      "KNAW"
+     ],
+     "reference": "An Institute of the Royal Netherlands Academy of Arts and Sciences.",
+     "evidence": [
+      {
+       "record_quote": "An Institute of the Royal Netherlands Academy of Arts and Sciences",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1935"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The IISH was officially established in 1935, but its history goes back to the 1920s.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Collections in socio-economic history on organisations and persons in labour and social and emancipatory movements, online and in the reading room.",
+     "evidence": [
+      {
+       "record_quote": "The IISH manages a rich collection in the field of socio-economic history that is made available online and in the reading room as much as possible. The archives, publications and audiovisual collections cover more than 50 kilometres and offer (historical) information on organisations and persons in the field of labour and social and emancipatory movements.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "More than 50 kilometres of archives, publications and audiovisual collections; thousands of datasets on wages, prices and labour relations.",
+     "evidence": [
+      {
+       "record_quote": "The IISH manages a rich collection in the field of socio-economic history that is made available online and in the reading room as much as possible. The archives, publications and audiovisual collections cover more than 50 kilometres and offer (historical) information on organisations and persons in the field of labour and social and emancipatory movements.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt"
+      },
+      {
+       "record_quote": "View our thousands of datasets on demography, wages, life courses, inequality, prices, and labour relations here. The IISH is one of the world's leading data centres on socio-economic history.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/iish--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'iish' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-irish-left-archive",
+   "name": "Irish Left Archive (leftarchive.ie)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an online archive of materials relating to Irish left politics. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Irish Left Archive (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Irish Left Archive"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Irish Left Archive is an online archive of materials relating to Irish left politics , freely accessible and easy to download and reproduce .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Cedar Lounge Revolution"
+     ],
+     "reference": "Initiated by the Cedar Lounge Revolution.",
+     "evidence": [
+      {
+       "record_quote": "It was initiated by the Cedar Lounge Revolution .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online archive of materials relating to Irish left politics, freely accessible and easy to download and reproduce.",
+     "evidence": [
+      {
+       "record_quote": "The Irish Left Archive is an online archive of materials relating to Irish left politics , freely accessible and easy to download and reproduce .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "1231 documents, 436 organisations, 217 publications, 875 people; an interactive timeline of Irish left organisations from 1900.",
+     "evidence": [
+      {
+       "record_quote": "1231 Documents 436 Organisations 47 Internationals 217 Publications 875 People 20 Demonstrations 10 Collections 12 Articles",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      },
+      {
+       "record_quote": "An interactive timeline of Irish Left organisations and parties from 1900 to the present.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To collate first-hand political reminiscences from people involved, beside the documents.",
+     "evidence": [
+      {
+       "record_quote": "The Irish Left Archive hopes to collate first-hand political reminiscences or observations from people involved in Irish Left political activity over the years.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Freely accessible and easy to download and reproduce.",
+     "evidence": [
+      {
+       "record_quote": "The Irish Left Archive is an online archive of materials relating to Irish left politics , freely accessible and easy to download and reproduce .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/irish-left-archive--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "corpus",
+    "purpose",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'irish-left-archive' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-labor-notes",
+   "name": "Labor Notes",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a media and organizing project of union activists. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Labor Notes (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt",
+     "origin": "primary"
+    },
+    {
+     "source": "Labor Notes (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Labor Notes"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Labor Notes is a media and organizing project that has been the voice of union activists who want to put the movement back in the labor movement since 1979.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Labor Education and Research Project",
+      "Labor Notes"
+     ],
+     "reference": "Labor Notes; the site footer names the Labor Education and Research Project.",
+     "evidence": [
+      {
+       "record_quote": "Labor Education and Research Project © 2005-2023.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1979"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Labor Notes is a media and organizing project that has been the voice of union activists who want to put the movement back in the labor movement since 1979.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A media and organizing project, the voice of union activists who want to put the movement back in the labor movement.",
+     "evidence": [
+      {
+       "record_quote": "Labor Notes is a media and organizing project that has been the voice of union activists who want to put the movement back in the labor movement since 1979.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The monthly magazine (11 issues a year), books and manuals, a biennial national conference and Troublemakers Schools.",
+     "evidence": [
+      {
+       "record_quote": "Labor Notes is best known for our monthly magazine of the same name.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      },
+      {
+       "record_quote": "Labor news from labor's point of view. $30 for 11 issues.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      },
+      {
+       "record_quote": "Every two years Labor Notes holds a national conference that attracts thousands of activists, about a tenth of them from other countries.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      },
+      {
+       "record_quote": "Labor Notes works with local unions and community groups to organize Troublemakers Schools",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To promote organizing, aggressive strategies and union democracy through a rank-and-file network.",
+     "evidence": [
+      {
+       "record_quote": "Through our magazine, website, books, conferences, and workshops, we promote organizing, aggressive strategies to take on employers, labor-community solidarity, and unions that are run by their members.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      },
+      {
+       "record_quote": "Labor Notes is also a network of rank-and-file members, local union leaders, and labor activists who know the labor movement is worth fighting for.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An independent publication, free to print the voices who say the movement could be doing better.",
+     "evidence": [
+      {
+       "record_quote": "And as an independent publication, we’re free to include the voices who say we could be doing better—and tell how.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      },
+      {
+       "record_quote": "For the most part, our leaders are doing a poor job of navigating us through the crisis.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/labor-notes--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "purpose",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'labor-notes' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-labor-action-tracker",
+   "name": "Labor Action Tracker (Cornell ILR and Illinois LER)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a database of strike and labor protest activity. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Labor Action Tracker (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Labor Action Tracker",
+      "ILR Labor Action Tracker"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Tracker provides a comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Cornell",
+      "ILR School",
+      "University of Illinois",
+      "LER School"
+     ],
+     "reference": "Cornell University's ILR School and the University of Illinois' LER School, together since January 2024.",
+     "evidence": [
+      {
+       "record_quote": "Welcome to the Labor Action Tracker, a collaboration between Cornell University's ILR School and the University of Illinois' LER School.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      },
+      {
+       "record_quote": "In January 2024, the Tracker became a collaborative effort between Cornell ILR and Illinois LER and was rebranded the Labor Action Tracker.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2020",
+      "2021"
+     ],
+     "reference": "Begun at the ILR School in late 2020; public on 1 May 2021.",
+     "evidence": [
+      {
+       "record_quote": "Our project originated at the ILR School in late 2020 and went public on May 1, 2021, as the Cornell ILR Labor Action Tracker thanks to generous funding from the ILR School.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A comprehensive database of strike and labor protest activity across the United States.",
+     "evidence": [
+      {
+       "record_quote": "The Tracker provides a comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Strikes from late 2020 and labor protests from early 2021, from public sources entered by hand; strikes most accurate as of 2021.",
+     "evidence": [
+      {
+       "record_quote": "We began documenting strikes in late-2020 and labor protests in early-2021.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      },
+      {
+       "record_quote": "Information we gather is from public sources and manually inputted into our tracker.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      },
+      {
+       "record_quote": "Our database of strikes is most accurate as of 2021.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "China Labour Bulletin"
+     ],
+     "reference": "Thanks the China Labour Bulletin for inspiring the project.",
+     "evidence": [
+      {
+       "record_quote": "We also thank the staff of the China Labour Bulletin for inspiring and encouraging us to develop this project.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "lineage"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'cornell-labor-action-tracker' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-libcom-collections",
+   "name": "libcom.org Collections",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as the collections of an anarchist and libertarian communist library. A site, read on the site template.",
+   "records": [
+    {
+     "source": "libcom.org Collections (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "libcom.org",
+      "libcom",
+      "Libcom"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Collections Primary tabs Tags Archives Authors Reading guides Blogs Galleries",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Collections, tags, archives, authors, reading guides, blogs and galleries of libertarian communist and anarchist history.",
+     "evidence": [
+      {
+       "record_quote": "Collections Primary tabs Tags Archives Authors Reading guides Blogs Galleries",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Tagged collections on strikes and movements and on writers of the anarchist and left-communist currents (Bordiga, Pannekoek, Dauvé, Debord, the CNT).",
+     "evidence": [
+      {
+       "record_quote": "1926 general strike 1934 Minneapolis Teamsters strike 8-hour day",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      },
+      {
+       "record_quote": "Flint sit-down strike",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      },
+      {
+       "record_quote": "Amadeo Bordiga Ambalavaner Sivanandan anarchism Anti Fascist Action (AFA)",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      },
+      {
+       "record_quote": "Anton Pannekoek Antonio Negri",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      },
+      {
+       "record_quote": "Gilles Dauvé",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/libcom-library--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "claim boundary",
+    "corpus"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'libcom-library' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-megadigital",
+   "name": "MEGAdigital (the online division of the Marx-Engels-Gesamtausgabe, BBAW)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as the online division of the historical-critical Marx-Engels edition. A site, read on the site template.",
+   "records": [
+    {
+     "source": "MEGAdigital (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "MEGAdigital",
+      "Marx-Engels-Gesamtausgabe",
+      "MEGA"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Online-Abteilung der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Berlin-Brandenburgische Akademie der Wissenschaften",
+      "BBAW",
+      "Berlin-Brandenburg Academy"
+     ],
+     "reference": "The Berlin-Brandenburgische Akademie der Wissenschaften, as an academy project.",
+     "evidence": [
+      {
+       "record_quote": "Berlin-Brandenburgische Akademie der Wissenschaften",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      },
+      {
+       "record_quote": "Akademienvorhaben",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1970s",
+      "1970er"
+     ],
+     "reference": "Begun in the 1970s in Berlin and Moscow.",
+     "evidence": [
+      {
+       "record_quote": "Die Marx-Engels-Gesamtausgabe wurde in den 1970er Jahren in Berlin und Moskau begonnen. Sie erwarb in Fachkreisen hohes Ansehen und ist in allen großen Bibliotheken der Welt präsent.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The historical-critical edition of all the publications, manuscripts, drafts and correspondence of Marx and Engels; MEGAdigital its online division.",
+     "evidence": [
+      {
+       "record_quote": "Die Marx-Engels-Gesamtausgabe (MEGA) ist die historisch-kritische Ausgabe sämtlicher Veröffentlichungen, Manuskripte und Entwürfe sowie des Briefwechsels von Karl Marx und Friedrich Engels.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The edited texts of ten volumes of the Second Division (Capital and its preparatory works) online, and a growing digital continuation of the Third and Fourth Divisions.",
+     "evidence": [
+      {
+       "record_quote": "In der digitalen Ausgabe der MEGA sind die edierten Texte von zehn MEGA-Bänden der II. Abteilung (\"Das Kapital\" und Vorarbeiten) online abrufbar. Ab dem Jahrgang 1866 werden dort ebenfalls die Briefe von und an Marx und Engels digital dargeboten (III. Abteilung). Dies gilt auch für einen Großteil der Exzerpte und Notizen (IV. Abteilung).",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      },
+      {
+       "record_quote": "Ein wachsender Teil der Edition (III. und IV. Abteilung) wird inzwischen digital weitergeführt.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Moscow",
+      "Berlin",
+      "IMES",
+      "1989"
+     ],
+     "reference": "Begun in Berlin and Moscow; carried on after 1989 by scholars of many countries (IMES).",
+     "evidence": [
+      {
+       "record_quote": "Die Marx-Engels-Gesamtausgabe wurde in den 1970er Jahren in Berlin und Moskau begonnen. Sie erwarb in Fachkreisen hohes Ansehen und ist in allen großen Bibliotheken der Welt präsent.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      },
+      {
+       "record_quote": "Nach 1989 haben sich Wissenschaftler, Politiker und Verleger aus vielen europäischen Ländern, Japan und den USA nachdrücklich für die Fortführung der Ausgabe eingesetzt.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/mega-digital--mega.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "lineage"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'mega-digital' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-marxists-internet-archive",
+   "name": "Marxists Internet Archive (marxists.org)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an all-volunteer, non-profit public library. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Marxists Internet Archive (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Marxists Internet Archive",
+      "MIA",
+      "marxists.org"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Marxists Internet Archive (MIA, http://www.marxists.org/) is an all-volunteer, non-profit public library, established in its present form in 1998",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "volunteer",
+      "volunteers",
+      "volunteer-run",
+      "all-volunteer"
+     ],
+     "reference": "An all-volunteer non-profit with a Steering Committee and an Admin Committee; 76 active volunteers (July 2025).",
+     "evidence": [
+      {
+       "record_quote": "The Marxists Internet Archive (MIA, http://www.marxists.org/) is an all-volunteer, non-profit public library, established in its present form in 1998",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      },
+      {
+       "record_quote": "As of July 2025, MIA has 76 active volunteers from several dozen countries .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1998"
+     ],
+     "reference": "Established in its present form in 1998, with an earlier history on its history page (unread).",
+     "evidence": [
+      {
+       "record_quote": "The Marxists Internet Archive (MIA, http://www.marxists.org/) is an all-volunteer, non-profit public library, established in its present form in 1998",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The writings of close to 1000 authors, Marxist or relevant to the understanding of Marxism, in 83 languages.",
+     "evidence": [
+      {
+       "record_quote": "MIA contains the writings of close to 1000 authors representing a complete spectrum of political, philosophical, and scientific thought, generally spanning the past 200 years.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Over 400,000 documents and 1.1 TB of data in 83 languages (April 2026).",
+     "evidence": [
+      {
+       "record_quote": "MIA contains these writings in 83 different languages , comprising a total size of over 400,000 documents and 1.1 TB of data (April 2026), all created through the work of volunteers around the world.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To maintain an archive of any and all writings which are Marxist or relevant to the understanding of Marxism and can be lawfully published.",
+     "evidence": [
+      {
+       "record_quote": "The MIA aims to maintain an archive of any and all writings which are Marxist or relevant to the understanding of Marxism and can be lawfully published.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A seven-tenet Charter (free, non-profit, democratic, full disclosure, politically independent, does not 'judge' writers, archival priority); the 2007 end of the Marxist/non-Marxist division; public domain unless noted.",
+     "evidence": [
+      {
+       "record_quote": "MIA abides by seven fundamental tenets found in our Charter : (1) We will always be 100% Free; (2) We will always be a non-profit organization; (3) We will always be based on democratic decision making; (4) We will always have full disclosure; (5) We will always remain politically independent; (6) We do not ‘judge’ writers; (7) Our priority is to provide archival information.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      },
+      {
+       "record_quote": "In 2007, we terminated our former practice of dividing all writers into Marxists and non-Marxists , and instead offer an index of Selected Marxist Writers in most language sections.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      },
+      {
+       "record_quote": "All material within these Archives, unless noted otherwise, is public domain . MIA-created material is protected by the Creative Commons License .",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/marxists-internet-archive--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "purpose",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'marxists-internet-archive' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-reuther-library",
+   "name": "Walter P. Reuther Library, Archives of Labor and Urban Affairs (Wayne State University)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as the largest labor archives in North America. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Walter P. Reuther Library, Archives of Labor and Urban Affairs (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt",
+     "origin": "primary"
+    },
+    {
+     "source": "Walter P. Reuther Library, Archives of Labor and Urban Affairs (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--home.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Walter P. Reuther Library",
+      "Reuther Library",
+      "Archives of Labor and Urban Affairs"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs was established as the Labor History Archives at Wayne State University in 1960, with the goal of collecting and preserving original source materials relating to the development of the American labor movement.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Wayne State University"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs was established as the Labor History Archives at Wayne State University in 1960, with the goal of collecting and preserving original source materials relating to the development of the American labor movement.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1960"
+     ],
+     "reference": "Established as the Labor History Archives in 1960.",
+     "evidence": [
+      {
+       "record_quote": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs was established as the Labor History Archives at Wayne State University in 1960, with the goal of collecting and preserving original source materials relating to the development of the American labor movement.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The largest labor archives in North America, home to the collections of numerous unions, with Detroit's political and community life.",
+     "evidence": [
+      {
+       "record_quote": "The Reuther Library is the largest labor archives in North America and is home to the collections of numerous unions and labor-related organizations.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      },
+      {
+       "record_quote": "Its collection strengths extend to the political and community life of urban and metropolitan Detroit, the civil rights movement in Michigan and nationally, and women's struggles in the workplace.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Union collections (AFSCME, AFT, ALPA, IWW, SEIU, UAW, UFW and others) and the Wayne State University Archives.",
+     "evidence": [
+      {
+       "record_quote": "AFSCME AFT ALPA Damon J. Keith IWW JCA MDA NALC SEIU SWE UAW UFW WSU",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--home.txt"
+      },
+      {
+       "record_quote": "The Reuther Library is also the home of the Wayne State University Archives, established by the Board of Governors in 1958",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To collect and preserve original source materials relating to the development of the American labor movement.",
+     "evidence": [
+      {
+       "record_quote": "The Walter P. Reuther Library, Archives of Labor and Urban Affairs was established as the Labor History Archives at Wayne State University in 1960, with the goal of collecting and preserving original source materials relating to the development of the American labor movement.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Collections freely open to the public; appointments not required.",
+     "evidence": [
+      {
+       "record_quote": "The collections housed in the Reuther Library are freely open to the public. Appointments are not required",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "United Automobile",
+      "UAW",
+      "Woodcock"
+     ],
+     "reference": "The building constructed in 1975 with funds given by the UAW; the Leonard Woodcock Wing, a later UAW gift, 1991.",
+     "evidence": [
+      {
+       "record_quote": "In 1975, the Walter P. Reuther Library was constructed with funds given to Wayne State University by the United Automobile, Aerospace, and Agricultural Implement Workers of America, and through a supplementary grant from the Department of Health, Education, and Welfare.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      },
+      {
+       "record_quote": "A later gift from the UAW funded the construction of the library's Leonard Woodcock Wing, completed in 1991.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/reuther-library--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'reuther-library' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-ext-unionstats",
+   "name": "Union Membership and Coverage Database (Unionstats.com)",
+   "template": "site",
+   "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as an Internet data resource of union membership and coverage. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Union Membership and Coverage Database (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--contents.txt",
+     "origin": "primary"
+    },
+    {
+     "source": "Union Membership and Coverage Database (its own pages, saved 2026-10-31)",
+     "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt",
+     "origin": "primary"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Union Membership and Coverage Database",
+      "Unionstats"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Documentation for the Union Membership and Coverage Database",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Barry Hirsch",
+      "Hirsch",
+      "Macpherson",
+      "William Even"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "constructed by Barry Hirsch (Andrew Young School of Policy Studies, Georgia State University), David Macpherson (Department of Economics, Trinity University), and William Even (Department of Economics, Miami University),was created in 2002 and is updated annually.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Private and public sector union membership, coverage and density estimates compiled from the monthly household Current Population Survey.",
+     "evidence": [
+      {
+       "record_quote": "is an Internet data resource providing private and public sector labor union membership, coverage, and density estimates compiled from the monthly household Current Population Survey (CPS) using BLS methods.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Economy-wide estimates from 1973; by state, industry and occupation from 1983; by metropolitan area from 1986; the 2025 compilation completed 23 January 2026.",
+     "evidence": [
+      {
+       "record_quote": "Economy-wide estimates are provided beginning in 1973; estimates by state, detailed industry, and detailed occupation begin in 1983; and estimates by metropolitan area begin in 1986.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      },
+      {
+       "record_quote": "Union data compilations from the 2025 CPS completed January 23, 2026.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Use of the data requires citation; small cells to be used cautiously.",
+     "evidence": [
+      {
+       "record_quote": "Use of data requires citation.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--contents.txt"
+      },
+      {
+       "record_quote": "CPS sample sizes are very small for some cells. Use such estimates cautiously.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/unionstats--main.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "claim boundary",
+    "corpus",
+    "commitments"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-10-31 from the maryleelabor census row 'unionstats' (its quotes verified verbatim in the saved sources), for the operator's run of the census names.",
+   "external": true,
+   "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
   }
  ],
  "entity_pass": {
@@ -167871,6 +170520,27 @@
    "brief": "rebuild/capture-registry/intake-20261031-ils-chatgpt/build.py (the parts are authored in parts.py)",
    "new_sets": [
     "TGT-ea-ils-ne-sont-pas-marxistes-01"
+   ],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-10-31",
+   "brief": "rebuild/capture-registry/intake-20261031-left-aggregators/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-ext-amiel-melburn-trust-archive",
+    "TGT-ext-bannedthought",
+    "TGT-ext-crowd-counting-consortium",
+    "TGT-ext-erol",
+    "TGT-ext-gnad",
+    "TGT-ext-iish",
+    "TGT-ext-irish-left-archive",
+    "TGT-ext-labor-action-tracker",
+    "TGT-ext-labor-notes",
+    "TGT-ext-libcom-collections",
+    "TGT-ext-marxists-internet-archive",
+    "TGT-ext-megadigital",
+    "TGT-ext-reuther-library",
+    "TGT-ext-unionstats"
    ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }

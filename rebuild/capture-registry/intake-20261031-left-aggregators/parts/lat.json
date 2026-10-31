@@ -1,0 +1,324 @@
+{
+ "n": 1725,
+ "slug": "labor-action-tracker-aio-20261031",
+ "paste": "paste-labor-action-tracker.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-10-31 18:44 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "Labor Action Tracker"
+ ],
+ "turns": [
+  [
+   2,
+   32
+  ]
+ ],
+ "entity_type": "site",
+ "group": "Xagg-lat",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "is a joint research project by Cornell University's ILR School and the University of Illinois' LER School.",
+   "basis": "The tracker reached by name, with its operators, scope against the BLS and tools."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "ILR Labor Action Tracker"
+   },
+   {
+    "atom": "operator",
+    "present": true,
+    "span": "is a joint research project by Cornell University's ILR School and the University of Illinois' LER School."
+   },
+   {
+    "atom": "date",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "provides a comprehensive database and interactive map tracking labor strikes, lockouts, and worker protest activity across the United States."
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "the Labor Action Tracker captures work stoppages of all sizes (involving six or more workers) as well as non-strike labor protests."
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Faithful, and at its best where it sets the tracker against the BLS threshold. Its start date and its lineage from the China Labour Bulletin's strike map are not carried."
+ },
+ "mt": "'LABOR ACTION TRACKER' ON THE OVERVIEW — THE TRACKER AT ITS GRAIN, SET AGAINST THE BLS THRESHOLD; ITS DEBT TO THE CHINA LABOUR BULLETIN NOT CARRIED",
+ "d": "THE TRACKER, SIGNED OUT, 2026-10-31: 'The ILR Labor Action Tracker is a joint research project by Cornell University's ILR School and the University of Illinois' LER School.' Database scope (against the BLS's 1,000-worker threshold); tools; recent trends. Five cards: the tracker, Cornell ILR (two), Facebook·The Daily Illini, BLS.",
+ "reading": "The innocent reading first. Asked for the tracker, the Overview gives its operators, sets its scope against the federal statistics and points to its reports.",
+ "findings": [
+  "THE SCOPE AGAINST THE STATE'S COUNT. 'Unlike official federal statistics—such as the U.S. Bureau of Labor Statistics Work Stoppages Program, which only records large stoppages involving 1,000 or more workers'. The composition carries the tracker's reason to exist: the strikes the state's series does not count.",
+  "THE LINEAGE NOT CARRIED. 'We also thank the staff of the China Labour Bulletin for inspiring and encouraging us to develop this project.' (the tracker's About page)."
+ ],
+ "analysis": "Faithful, and at its best where it sets the tracker against the BLS threshold. Its start date and its lineage from the China Labour Bulletin's strike map are not carried.",
+ "q_kind": "the census name; NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": false,
+  "src": true
+ },
+ "per_note": "Both schools named; the tracker's own pages among the cards.",
+ "cite_list": [
+  {
+   "site": "ILR Labor Action Tracker",
+   "title": "ILR Labor Action Tracker",
+   "snip": null,
+   "rel": "third_party",
+   "note": null,
+   "n": 1,
+   "url": null
+  },
+  {
+   "site": "Cornell's ILR School",
+   "title": "Labor Action Tracker",
+   "snip": null,
+   "rel": "third_party",
+   "note": null,
+   "n": 2,
+   "url": null
+  },
+  {
+   "site": "Cornell ILR School",
+   "title": "Labor Action Tracker 2025",
+   "snip": null,
+   "rel": "third_party",
+   "note": null,
+   "n": 3,
+   "url": null
+  },
+  {
+   "site": "Facebook·The Daily Illini",
+   "title": "UI and Cornell launch labor action tracker in Illinois",
+   "snip": null,
+   "rel": "third_party",
+   "note": null,
+   "n": 4,
+   "url": null
+  },
+  {
+   "site": "Bureau of Labor Statistics (.gov)",
+   "title": "Work Stoppages Home Page : U.S. Bureau of Labor Statistics",
+   "snip": null,
+   "rel": "third_party",
+   "note": null,
+   "n": 5,
+   "url": null
+  }
+ ],
+ "related_deposits": [
+  1725
+ ],
+ "notes_operator": "with the pastes (18:44 EDT), the census names as printed for him at 18:21 EDT ('if you could present the aggregators in one line copyable blocks without their urls'; 'ill search those up so we can write their /nons'). His notes, in the paste: 'no aio popup - ai mode'; 'this one linked to wikipedia instead of popup, so ai mode'; 'linked to wikipedia in place of popup, so ai mode'; 'labor vector pulled up totally unrelated, so laborvector'.",
+ "atomset": {
+  "new": "ext-labor-action-tracker",
+  "name": "Labor Action Tracker (Cornell ILR and Illinois LER)",
+  "template": "site",
+  "external": true,
+  "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a database of strike and labor protest activity. A site, read on the site template.",
+  "records": [
+   {
+    "source": "Labor Action Tracker (its own pages, saved 2026-10-31)",
+    "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt",
+    "origin": "primary"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Labor Action Tracker",
+     "ILR Labor Action Tracker"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Tracker provides a comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Cornell",
+     "ILR School",
+     "University of Illinois",
+     "LER School"
+    ],
+    "reference": "Cornell University's ILR School and the University of Illinois' LER School, together since January 2024.",
+    "evidence": [
+     {
+      "record_quote": "Welcome to the Labor Action Tracker, a collaboration between Cornell University's ILR School and the University of Illinois' LER School.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     },
+     {
+      "record_quote": "In January 2024, the Tracker became a collaborative effort between Cornell ILR and Illinois LER and was rebranded the Labor Action Tracker.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2020",
+     "2021"
+    ],
+    "reference": "Begun at the ILR School in late 2020; public on 1 May 2021.",
+    "evidence": [
+     {
+      "record_quote": "Our project originated at the ILR School in late 2020 and went public on May 1, 2021, as the Cornell ILR Labor Action Tracker thanks to generous funding from the ILR School.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A comprehensive database of strike and labor protest activity across the United States.",
+    "evidence": [
+     {
+      "record_quote": "The Tracker provides a comprehensive database of strike and labor protest activity across the United States to better inform and support labor movement activists, policymakers, and scholars.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Strikes from late 2020 and labor protests from early 2021, from public sources entered by hand; strikes most accurate as of 2021.",
+    "evidence": [
+     {
+      "record_quote": "We began documenting strikes in late-2020 and labor protests in early-2021.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     },
+     {
+      "record_quote": "Information we gather is from public sources and manually inputted into our tracker.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     },
+     {
+      "record_quote": "Our database of strikes is most accurate as of 2021.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "China Labour Bulletin"
+    ],
+    "reference": "Thanks the China Labour Bulletin for inspiring the project.",
+    "evidence": [
+     {
+      "record_quote": "We also thank the staff of the China Labour Bulletin for inspiring and encouraging us to develop this project.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/cornell-labor-action-tracker--about.txt"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-10-31 from the maryleelabor census row 'cornell-labor-action-tracker' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+ },
+ "target_id": "NEW:ext-labor-action-tracker",
+ "originator": {
+  "name": "Labor Action Tracker",
+  "relation": "external",
+  "entity_type": "site",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: an external resource, entered in the maryleelabor left-and-labor census on 2026-10-31 (data/left-census, its own pages saved with hashes). Recorded 2026-10-31."
+ },
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted."
+}
