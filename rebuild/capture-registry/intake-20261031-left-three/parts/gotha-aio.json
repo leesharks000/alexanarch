@@ -1,0 +1,400 @@
+{
+ "n": 1725,
+ "slug": "critique-of-the-gotha-programme-aio-20261031",
+ "paste": "paste-gotha.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-10-31 17:40 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "Critique of the Gotha Programme"
+ ],
+ "turns": [
+  [
+   15,
+   105
+  ]
+ ],
+ "target_id": "NEW:ext-critique-of-the-gotha-programme",
+ "entity_type": "work",
+ "atomset": {
+  "new": "ext-critique-of-the-gotha-programme",
+  "name": "Critique of the Gotha Programme (Karl Marx, 1875; published by Engels, 1891)",
+  "template": "work",
+  "external": true,
+  "type_basis": "A work by Karl Marx (written April or early May 1875; first published, abridged, in Die Neue Zeit, 1890-91). A work, read on the work template.",
+  "records": [
+   {
+    "source": "Marxists Internet Archive",
+    "path": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt",
+    "origin": "primary text"
+   },
+   {
+    "source": "Engels's foreword (1891)",
+    "path": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt",
+    "origin": "primary text"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Karl Marx",
+     "Marx"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Karl Marx 1875",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+     }
+    ]
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Critique of the Gotha Programme",
+     "Critique of the Gotha Program"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Critique of the Gotha Programme",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "1875",
+     "1891"
+    ],
+    "reference": "Written April or early May 1875; first published, abridged, in Die Neue Zeit, 1890-91; Engels's foreword dated 6 January 1891.",
+    "evidence": [
+     {
+      "record_quote": "Written: April or early May, 1875",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A paragraph-by-paragraph critique of the draft programme of the party then uniting at Gotha, written for its leaders.",
+    "evidence": [
+     {
+      "record_quote": "Labor is the source of all wealth and all culture.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "lower phase",
+     "higher phase",
+     "dictatorship of the proletariat",
+     "bourgeois right",
+     "first phase",
+     "higher phase of communist society"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Critique of the Gotha Programme",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Marx and Engels's critique of the Lassallean current inside the German movement.",
+    "evidence": [
+     {
+      "record_quote": "Critique of the Gotha Programme",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Gotha Programme",
+     "draft programme",
+     "draft program"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Labor is the source of wealth and all culture",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To oppose the unity programme as written, addressed to the party's leaders through Bracke.",
+    "evidence": [
+     {
+      "record_quote": "Marx to Bracke",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Engels's publication over the leadership's silence: 'guilty of suppression if I any longer withheld'.",
+    "evidence": [
+     {
+      "record_quote": "I think I would be guilty of suppression if I any longer withheld from publicity",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Engels",
+     "Friedrich Engels",
+     "Lassalle",
+     "Die Neue Zeit"
+    ],
+    "reference": "Published by Engels in 1891, in Die Neue Zeit.",
+    "evidence": [
+     {
+      "record_quote": "London, January 6, 1891",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+ },
+ "group": "Xleft",
+ "originator": {
+  "name": "Karl Marx",
+  "relation": "external",
+  "entity_type": "work",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: Karl Marx, Critique of the Gotha Programme (1875), published by Friedrich Engels in 1891 (Marxists Internet Archive, saved with hashes). The archive's reading is #1725's. Recorded 2026-10-31."
+ },
+ "head_full": "[Google AI Overview at the query, signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). The paste opens on the page header ('Halloween 2026') and its tab row, with no 'You said' line; the query is the one proposed for this row at 17:20 EDT ('Critique of the Gotha Programme') and run by the operator with the two other addresses, to be confirmed. Received 2026-10-31 17:40 EDT. Chips kept as pasted.]",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the Overview's answer with its chips; the query not in the paste, read as the proposed address",
+ "obs": {
+  "scored_object": "the answer as pasted, with its source chips",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "The Critique of the Gotha Programme is a seminal political document written by Karl Marx in 1875.",
+   "basis": "The work reached by title, author, date, occasion and publication history; its arguments given section by section."
+  },
+  "atoms": [
+   {
+    "atom": "author",
+    "present": true,
+    "span": "written by Karl Marx in 1875"
+   },
+   {
+    "atom": "title",
+    "present": true,
+    "span": "The Critique of the Gotha Programme is a seminal political document"
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "written by Karl Marx in 1875"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "Marx penned this critique to voice his fierce opposition to the unified party's draft manifesto"
+   },
+   {
+    "atom": "framework",
+    "present": true,
+    "span": "the revolutionary dictatorship of the proletariat"
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "who were theoretically aligned with Marx and Engels"
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "The draft claimed that \"labor is the source of all wealth\""
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Originally drafted as a private letter to the leadership of the Social Democratic Workers' Party of Germany"
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "until Friedrich Engels released it publicly in 1891"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "A faithful composition of the work's arguments. Its circulation history is given as 'contemporary political friction'; Engels's own account ('guilty of suppression') and the Erfurt uptake are not carried; the answer closes on purchase options."
+ },
+ "mt": "'CRITIQUE OF THE GOTHA PROGRAMME' ON THE OVERVIEW — MARX'S CRITIQUE OF HIS OWN FOLLOWERS GIVEN; ITS SUPPRESSION SOFTENED TO 'POLITICAL FRICTION'; THE UPTAKE AT ERFURT NOT CARRIED; CLOSES ON EDITIONS FOR SALE",
+ "d": "THE WORK, SIGNED OUT, 2026-10-31: 'The Critique of the Gotha Programme is a seminal political document written by Karl Marx in 1875.' Then: 'The document remained largely unpublished due to contemporary political friction until Friedrich Engels released it publicly in 1891.' Sections: historical background (Eisenachers and Lassalleans); core theoretical critiques; the two phases of communist society; the dictatorship of the proletariat; access and reading options (Marxists Internet Archive, Foreign Languages Press, Amazon Kindle, Google Play, Everand, PM Press).",
+ "reading": "The innocent reading first. Asked for the work, the Overview gives its author, date, occasion, publication, arguments and the editions in which it can be read.",
+ "findings": [
+  "THE CRITIQUE OF ONE'S OWN SIDE, CARRIED. 'He argued that his own followers had conceded vital theoretical territory to Lassallean opportunism, creating a platform that was fundamentally unscientific and insufficiently revolutionary.' The composition keeps what #1725 reads as the type case of Marx's critique turned on his own party.",
+  "THE SUPPRESSION SOFTENED. 'The document remained largely unpublished due to contemporary political friction until Friedrich Engels released it publicly in 1891.' Engels's foreword names the act: 'I think I would be guilty of suppression if I any longer withheld from publicity' (sources/gotha-foreword.txt). The withholding by the party's leadership becomes 'friction', with no agent.",
+  "THE UPTAKE NOT CARRIED. #1725 reads the route from the critique to the Erfurt Programme (1891), partial and documented, as the tradition's model of sublation. The composition gives the 1891 publication and stops; Erfurt and the Lassallean planks dropped there are absent.",
+  "THE CLOSE IS A CATALOGUE. 'Ebook Editions: Formats for purchase include the Amazon Kindle Store ($0.99)'. The composition ends on editions and prices; the critique's afterlife in the party it criticized is replaced by its availability as a product."
+ ],
+ "analysis": "The Overview carries the work's arguments faithfully and keeps Marx's critique of his own followers. It removes the agent of the suppression and the route of the uptake, the two features #1725 reads as the mechanism of a critique held across sixteen years, and closes on the work as merchandise.",
+ "q_kind": "the work's title; NEW address (the query not in the paste; to be confirmed by the operator).",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": false,
+  "src": true
+ },
+ "per_note": "Marx and Engels named, the parties named; the Marxists Internet Archive among the chips.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Marxists Internet Archive",
+   "rel": "third_party",
+   "url": null,
+   "title": "Marxists Internet Archive +4",
+   "snip": null,
+   "note": "chip after the lede; the following titles listed in the paste"
+  },
+  {
+   "n": 2,
+   "site": "Foreign Languages Press",
+   "rel": "third_party",
+   "url": null,
+   "title": "Foreign Languages Press +1",
+   "snip": null,
+   "note": "chip"
+  },
+  {
+   "n": 3,
+   "site": "Wikipedia",
+   "rel": "third_party",
+   "url": null,
+   "title": "Wikipedia",
+   "snip": null,
+   "note": "chip, historical background"
+  },
+  {
+   "n": 4,
+   "site": "YouTube",
+   "rel": "third_party",
+   "url": null,
+   "title": "YouTube·Haymarket Books +2",
+   "snip": null,
+   "note": "chip"
+  },
+  {
+   "n": 5,
+   "site": "Goodreads",
+   "rel": "third_party",
+   "url": null,
+   "title": "Goodreads",
+   "snip": null,
+   "note": "chip"
+  },
+  {
+   "n": 6,
+   "site": "Amazon.com",
+   "rel": "third_party",
+   "url": null,
+   "title": "Amazon.com +1",
+   "snip": null,
+   "note": "chip"
+  },
+  {
+   "n": 7,
+   "site": "YouTube",
+   "rel": "third_party",
+   "url": null,
+   "title": "YouTube·Red Star",
+   "snip": null,
+   "note": "chip"
+  }
+ ],
+ "related_deposits": [
+  1725
+ ],
+ "notes_operator": "with the pastes (17:40 EDT), the addresses proposed at 17:20 for the NonWiki rows selected from #1725 ('Three need you to run a capture first, signed out on the Overview: r/LeftistsForAI ... Critique of the Gotha Programme ... ban on factions (1921)'); the operator: 'yes for the list'."
+}

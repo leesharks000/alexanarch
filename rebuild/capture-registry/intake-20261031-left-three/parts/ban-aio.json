@@ -1,0 +1,393 @@
+{
+ "n": 1725,
+ "slug": "ban-on-factions-1921-aio-20261031",
+ "paste": "paste-ban-on-factions.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-10-31 17:40 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "ban on factions 1921"
+ ],
+ "turns": [
+  [
+   2,
+   43
+  ]
+ ],
+ "target_id": "NEW:ext-ban-on-factions-1921",
+ "entity_type": "concept",
+ "atomset": {
+  "new": "ext-ban-on-factions-1921",
+  "name": "ban on factions (resolution 'On Party Unity', Tenth Congress of the R.C.P.(B.), March 1921)",
+  "template": "concept",
+  "external": true,
+  "type_basis": "A party rule: the resolution 'On Party Unity', moved by Lenin at the Tenth Congress of the R.C.P.(B.), March 1921. A concept-like object (a named rule with an originator and date), read on the concept template.",
+  "records": [
+   {
+    "source": "Marxists Internet Archive, Lenin, Part IV: Tenth Congress",
+    "path": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt",
+    "origin": "primary text"
+   },
+   {
+    "source": "Wikipedia",
+    "path": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt",
+    "origin": "third party"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lenin",
+     "Vladimir Lenin",
+     "Tenth Congress",
+     "10th Party Congress"
+    ],
+    "reference": "Moved by Lenin; adopted by the Tenth Congress of the R.C.P.(B.).",
+    "evidence": [
+     {
+      "record_quote": "On Party Unity",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     }
+    ]
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "On Party Unity",
+     "ban on factions"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "a ban on factions to eliminate factionalism within the party in 1921",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "March 1921",
+     "1921",
+     "March 16, 1921"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "March 16, 1921",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Dissolves all groups and factions under threat of expulsion; in the same text calls criticism necessary, provides for a discussion bulletin, and promises that the Workers' Opposition's concerns will be 'tested in practice'.",
+    "evidence": [
+     {
+      "record_quote": "factionalism of any kind is harmful and impermissible",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     },
+     {
+      "record_quote": "tested in practice",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     }
+    ]
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Bolshevik democratic centralism: free discussion, then unity of action.",
+    "evidence": [
+     {
+      "record_quote": "Lenin himself had held the position that a permanent ban on oppositional platforms was impossible to implement",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Party unity amid the crisis of 1921 (famine, Kronstadt, strikes).",
+    "evidence": [
+     {
+      "record_quote": "the unity and cohesion of the ranks of the Party",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Expulsion for non-compliance; the secret Point 7, by which the Central Committee could expel its own members by a two-thirds majority.",
+    "evidence": [
+     {
+      "record_quote": "by a two-thirds majority",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Trotsky",
+     "Zinoviev",
+     "Stalin",
+     "Left Opposition"
+    ],
+    "reference": "Used later to justify the expulsions of the oppositions (Trotsky and Zinoviev, 12 November 1927).",
+    "evidence": [
+     {
+      "record_quote": "When Trotsky and Zinoviev were expelled on November 12, 1927, the ban on factions was",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+ },
+ "group": "Xleft",
+ "originator": {
+  "name": "Lenin; the Tenth Congress of the R.C.P.(B.)",
+  "relation": "external",
+  "entity_type": "concept",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: the resolution 'On Party Unity', moved by Lenin and adopted by the Tenth Congress of the R.C.P.(B.), March 1921 (Marxists Internet Archive; Wikipedia, saved with hashes). The archive's reading is #1725's. Recorded 2026-10-31."
+ },
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted.",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "The ban on factions was introduced in March 1921 at the",
+   "basis": "The resolution reached by name, congress, date and mover; its penalty, targets, context and later use given; the Marxists Internet Archive text linked."
+  },
+  "atoms": [
+   {
+    "atom": "originator",
+    "present": true,
+    "span": "proposed by Vladimir Lenin"
+   },
+   {
+    "atom": "term",
+    "present": true,
+    "span": "through the resolution \"On Party Unity\""
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "The ban on factions was introduced in March 1921"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "the decree ordered the immediate dissolution of all organized groups and factions within the party that tended to weaken its unity"
+   },
+   {
+    "atom": "tradition",
+    "present": true,
+    "span": "It effectively dismantled the Bolshevik tradition of open internal debate, platform voting, and free discussion before reaching a party decision."
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Lenin argued that internal dissent and public criticism provided ammunition to foreign and counter-revolutionary enemies."
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "It authorized the Central Committee to use expulsion from the party as an extreme measure against any members, including its own, who engaged in factional activity."
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "It later provided Joseph Stalin with the institutional mechanism to purge rival political blocs"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "A faithful composition at the field's grain. The resolution's own provision for criticism (a discussion bulletin; the Workers' Opposition's concerns 'tested in practice') is not carried, and the secrecy of Point 7 is not stated."
+ },
+ "mt": "'BAN ON FACTIONS 1921' ON THE OVERVIEW — THE RULE, ITS PENALTY AND ITS LATER USE GIVEN; THE RESOLUTION'S OWN ABSORPTION OF CRITIQUE ON PAPER NOT CARRIED; A DSA CLASS ON THE BAN AMONG THE CARDS",
+ "d": "THE RULE, SIGNED OUT, 2026-10-31: 'The ban on factions was introduced in March 1921 at the Tenth Congress of the Russian Communist Party (Bolsheviks) through the resolution \"On Party Unity\", proposed by Vladimir Lenin.' Key details (resolution, penalty, targets, context), consequences ('End of Internal Debate'; 'Path to Stalinism'), and a link to the Marxists Internet Archive text. Nine cards: Wikipedia, Reddit, Indybay (a DSA class on the ban, 2026-08-31), Quizlet, Alpha History, the Marxists Internet Archive, Brill, Seventeen Moments in Soviet History, WordPress.",
+ "reading": "The innocent reading first. Asked for the rule and its year, the Overview gives its name, congress, mover, terms, penalty, targets, context and consequences, and points to the primary text.",
+ "findings": [
+  "THE RULE AND ITS PENALTY AT THE FIELD'S GRAIN. 'It authorized the Central Committee to use expulsion from the party as an extreme measure against any members, including its own, who engaged in factional activity.' The substance of Point 7 is carried; that Point 7 was secret, unpublished until January 1924, is not.",
+  "THE CONSEQUENCE #1725 DOCUMENTS. 'It effectively dismantled the Bolshevik tradition of open internal debate, platform voting, and free discussion before reaching a party decision.' and 'It later provided Joseph Stalin with the institutional mechanism to purge rival political blocs'. The composition states the conversion of critique into expulsion that #1725 reads in the rule.",
+  "THE ABSORPTION ON PAPER NOT CARRIED. The resolution itself called criticism necessary, ordered a discussion bulletin and promised that the Workers' Opposition's concerns would be 'tested in practice' (sources/party-unity.txt). #1725: the resolution 'absorbs the critique on paper and prohibits its organized form.' The composition gives the prohibition and leaves out the absorption, so the rule appears as plain suppression.",
+  "THE RULE IN A LIVE ORGANIZATION. The Indybay card records a DSA East Bay class on the ban (31 August 2026). The field is still reading the rule in a live organization; #1725's DSA case (R22, the 2028 endorsement fight) is the contemporary site."
+ ],
+ "analysis": "A faithful, field-grain composition of a rule whose consequence it states plainly. What it omits is the half of the text that makes the rule a model of the corrupted sublation #1725 describes: critique acknowledged in the same document that dissolves its organized form.",
+ "q_kind": "the rule's common name and year; NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": false,
+  "src": true
+ },
+ "per_note": "Lenin and the Tenth Congress named; the Marxists Internet Archive and Wikipedia among the cards.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Wikipedia",
+   "rel": "third_party",
+   "url": null,
+   "title": "Ban on factions in the Communist Party of the Soviet Union",
+   "snip": "The ban on factions after Lenin's death Lenin himself had held the position that a permanent ban on oppositional platforms was impossible to implement, noting t...",
+   "note": null
+  },
+  {
+   "n": 2,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Was the 1921 ban on factions in the Russian Communist Party ... - Reddit",
+   "snip": "One thing needs to be noted for sure - banning factions doesn't actually make factions disappear. It makes them go underground and become secretive all while ma...",
+   "note": null
+  },
+  {
+   "n": 3,
+   "site": "Indybay",
+   "rel": "third_party",
+   "url": null,
+   "title": "Class & Discussion On The Banning of Factions By Bolshevik Congress ...",
+   "snip": "Class & Discussion On The Banning of Factions By Bolshevik Congress of 1921. by repost. Mon, Aug 31, 2026 8:28PM. The DSA EB held a presentation and discussion ...",
+   "note": "a DSA East Bay class, 2026-08-31"
+  },
+  {
+   "n": 4,
+   "site": "Quizlet",
+   "rel": "third_party",
+   "url": null,
+   "title": "The Ban on Factions 1921 Flashcards - Quizlet",
+   "snip": "What happened to any existing organised groups within the party? - In 1921, at 10th Party Congress. - Establishment of factions within party was banned. - Those...",
+   "note": null
+  },
+  {
+   "n": 5,
+   "site": "Alpha History",
+   "rel": "third_party",
+   "url": null,
+   "title": "The 10th Party Congress",
+   "snip": "The 10th Party Congress Lenin's other main goal was to address the lack of unity within the party and prevent the schism that was fast approaching. He had been ...",
+   "note": null
+  },
+  {
+   "n": 6,
+   "site": "Marxists Internet Archive",
+   "rel": "third_party",
+   "url": null,
+   "title": "Tenth Congress of the R.C.P.(B.) - Marxists Internet Archive",
+   "snip": "The resolution “On Party Unity” adopted on Lenin's motion ordered the immediate dissolution of all factions and groups which tended to weaken the Party's unity.",
+   "note": "the primary text"
+  },
+  {
+   "n": 7,
+   "site": "Brill",
+   "rel": "third_party",
+   "url": null,
+   "title": "From the Ban on Factions through the Eleventh Party Congress, 1921–2",
+   "snip": "Page 2 from the ban on factions through the eleventh party congress 293 tionship between party and unions continued. The decree of the Tenth Party Congress bann...",
+   "note": null
+  },
+  {
+   "n": 8,
+   "site": "Seventeen Moments in Soviet History",
+   "rel": "third_party",
+   "url": null,
+   "title": "Tenth Party Congress | Seventeen Moments in Soviet History",
+   "snip": "Event: Tenth Congress of the Russian Communist Party (Bolsheviks) in Moscow (March 8–16, 1921), concurrent with the Kronstadt rebellion and Petrograd strikes. K...",
+   "note": null
+  },
+  {
+   "n": 9,
+   "site": "WordPress.com",
+   "rel": "third_party",
+   "url": null,
+   "title": "Establishing Communist Party control 1917",
+   "snip": "1921: Crisis and reform: At the end of February 1921, all Mensheviks in Petrograd and Moscow, including one of the Mensheviks' leaders, Fyodor Dan, were arreste...",
+   "note": null
+  }
+ ],
+ "related_deposits": [
+  1725
+ ],
+ "notes_operator": "with the pastes (17:40 EDT), the addresses proposed at 17:20 for the NonWiki rows selected from #1725 ('Three need you to run a capture first, signed out on the Overview: r/LeftistsForAI ... Critique of the Gotha Programme ... ban on factions (1921)'); the operator: 'yes for the list'."
+}

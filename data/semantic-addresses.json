@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-31T21:00:55Z",
+  "regenerated_at": "2026-10-31T21:50:32Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "19ac913b925d715e0646a8c3b377628534aa022a14738d5774c22734ee6c5eed",
+    "mm-main-capture": "0bb3a0dcba8459c7b1689e69029f6d0b7b663a7b60bfa0cc8b6ebc569b9c96aa",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2619,
-  "total_observations": 1160,
+  "total_addresses": 2622,
+  "total_observations": 1163,
   "class_counts": {
     "subjunctive": 1739,
-    "observed_address": 863,
+    "observed_address": 866,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1739,
+    "unmatched": 1742,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -14856,6 +14856,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "ban on factions 1921": {
+      "canonical_query": "ban on factions 1921",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "'BAN ON FACTIONS 1921' ON THE OVERVIEW — THE RULE, ITS PENALTY AND ITS LATER USE GIVEN; THE RESOLUTION'S OWN ABSORPTION OF CRITIQUE ON PAPER NOT CARRIED; A DSA CLASS ON THE BAN AMONG THE CARDS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ban-on-factions-1921-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#ban-on-factions-1921-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/ban-on-factions-1921-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ban-on-factions-1921-aio-20261031",
+          "details_excerpt": "THE RULE, SIGNED OUT, 2026-10-31: 'The ban on factions was introduced in March 1921 at the Tenth Congress of the Russian Communist Party (Bolsheviks) through the resolution \"On Party Unity\", proposed by Vladimir Lenin.' "
+        }
+      ],
+      "originator": {
+        "name": "Lenin; the Tenth Congress of the R.C.P.(B.)",
+        "relation": "external",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the resolution 'On Party Unity', moved by Lenin and adopted by the Tenth Congress of the R.C.P.(B.), March 1921 (Marxists Internet Archive; Wikipedia, saved with hashes). The archive's reading is #1725's. Recorded 2026-10-31."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "'BAN ON FACTIONS 1921' ON THE OVERVIEW — THE RULE, ITS PENALTY AND ITS LATER USE GIVEN; THE RESOLUTION'S OWN ABSORPTION OF CRITIQUE ON PAPER NOT CARRIED; A DSA CLASS ON THE BAN AMONG THE CARDS"
+    },
     "bank definition": {
       "canonical_query": "bank definition",
       "is_quoted": false,
@@ -21363,6 +21398,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "critique of the gotha programme": {
+      "canonical_query": "critique of the gotha programme",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "'CRITIQUE OF THE GOTHA PROGRAMME' ON THE OVERVIEW — MARX'S CRITIQUE OF HIS OWN FOLLOWERS GIVEN; ITS SUPPRESSION SOFTENED TO 'POLITICAL FRICTION'; THE UPTAKE AT ERFURT NOT CARRIED; CLOSES ON EDITIONS FOR SALE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "critique-of-the-gotha-programme-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#critique-of-the-gotha-programme-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/critique-of-the-gotha-programme-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#critique-of-the-gotha-programme-aio-20261031",
+          "details_excerpt": "THE WORK, SIGNED OUT, 2026-10-31: 'The Critique of the Gotha Programme is a seminal political document written by Karl Marx in 1875.' Then: 'The document remained largely unpublished due to contemporary political frictio"
+        }
+      ],
+      "originator": {
+        "name": "Karl Marx",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Karl Marx, Critique of the Gotha Programme (1875), published by Friedrich Engels in 1891 (Marxists Internet Archive, saved with hashes). The archive's reading is #1725's. Recorded 2026-10-31."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "'CRITIQUE OF THE GOTHA PROGRAMME' ON THE OVERVIEW — MARX'S CRITIQUE OF HIS OWN FOLLOWERS GIVEN; ITS SUPPRESSION SOFTENED TO 'POLITICAL FRICTION'; THE UPTAKE AT ERFURT NOT CARRIED; CLOSES ON EDITIONS FOR SALE"
     },
     "critique-turn": {
       "canonical_query": "critique-turn",
@@ -53293,6 +53363,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-11",
       "latest_status": "DEMAND SIGNAL (cross-language organic search)"
+    },
+    "r/leftistsforai": {
+      "canonical_query": "r/leftistsforai",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "'r/LeftistsForAI' ON THE OVERVIEW — THE SUBREDDIT'S CASE AT ITS OWN GRAIN; THE DISPUTE SET AS 'THE MATERIALIST APPROACH' AGAINST 'FEARS'; ITS CRITICS PRESENT ONLY AS CARD TITLES; THE REMOVAL OF LEFT CRITIQUE NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "r-leftistsforai-aio-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#r-leftistsforai-aio-20261031",
+          "record_url": "https://www.alexanarch.org/captures/r-leftistsforai-aio-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#r-leftistsforai-aio-20261031",
+          "details_excerpt": "THE SUBREDDIT, SIGNED OUT, 2026-10-31: 'r/LeftistsForAI is a growing Reddit community focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective.' Core focus: 'Chal"
+        }
+      ],
+      "originator": {
+        "name": "the subreddit's moderation team",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: r/LeftistsForAI, a Reddit community; its operator, as its sources give it, a moderation team including a co-moderator publishing economic analysis (Startup Fortune, 2026-04-19). The archive's record of it is #517 (the removal of two works under Rule 7, about 2026-02-25) and #1725. Recorded 2026-10-31."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "'r/LeftistsForAI' ON THE OVERVIEW — THE SUBREDDIT'S CASE AT ITS OWN GRAIN; THE DISPUTE SET AS 'THE MATERIALIST APPROACH' AGAINST 'FEARS'; ITS CRITICS PRESENT ONLY AS CARD TITLES; THE REMOVAL OF LEFT CRITIQUE NOT CARRIED"
     },
     "r1 r2 r3": {
       "canonical_query": "r1 r2 r3",

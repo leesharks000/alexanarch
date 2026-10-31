@@ -1,0 +1,785 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ban-on-factions-1921",
+   "name": "ban on factions (resolution 'On Party Unity', Tenth Congress of the R.C.P.(B.), March 1921)",
+   "template": "concept",
+   "external": true,
+   "type_basis": "A party rule: the resolution 'On Party Unity', moved by Lenin at the Tenth Congress of the R.C.P.(B.), March 1921. A concept-like object (a named rule with an originator and date), read on the concept template.",
+   "records": [
+    {
+     "source": "Marxists Internet Archive, Lenin, Part IV: Tenth Congress",
+     "path": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt",
+     "origin": "primary text"
+    },
+    {
+     "source": "Wikipedia",
+     "path": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt",
+     "origin": "third party"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lenin",
+      "Vladimir Lenin",
+      "Tenth Congress",
+      "10th Party Congress"
+     ],
+     "reference": "Moved by Lenin; adopted by the Tenth Congress of the R.C.P.(B.).",
+     "evidence": [
+      {
+       "record_quote": "On Party Unity",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      }
+     ]
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "On Party Unity",
+      "ban on factions"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "a ban on factions to eliminate factionalism within the party in 1921",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "March 1921",
+      "1921",
+      "March 16, 1921"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "March 16, 1921",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Dissolves all groups and factions under threat of expulsion; in the same text calls criticism necessary, provides for a discussion bulletin, and promises that the Workers' Opposition's concerns will be 'tested in practice'.",
+     "evidence": [
+      {
+       "record_quote": "factionalism of any kind is harmful and impermissible",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      },
+      {
+       "record_quote": "tested in practice",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Bolshevik democratic centralism: free discussion, then unity of action.",
+     "evidence": [
+      {
+       "record_quote": "Lenin himself had held the position that a permanent ban on oppositional platforms was impossible to implement",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Party unity amid the crisis of 1921 (famine, Kronstadt, strikes).",
+     "evidence": [
+      {
+       "record_quote": "the unity and cohesion of the ranks of the Party",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Expulsion for non-compliance; the secret Point 7, by which the Central Committee could expel its own members by a two-thirds majority.",
+     "evidence": [
+      {
+       "record_quote": "by a two-thirds majority",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/party-unity.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Trotsky",
+      "Zinoviev",
+      "Stalin",
+      "Left Opposition"
+     ],
+     "reference": "Used later to justify the expulsions of the oppositions (Trotsky and Zinoviev, 12 November 1927).",
+     "evidence": [
+      {
+       "record_quote": "When Trotsky and Zinoviev were expelled on November 12, 1927, the ban on factions was",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/wiki-ban.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+  },
+  {
+   "new": "ext-critique-of-the-gotha-programme",
+   "name": "Critique of the Gotha Programme (Karl Marx, 1875; published by Engels, 1891)",
+   "template": "work",
+   "external": true,
+   "type_basis": "A work by Karl Marx (written April or early May 1875; first published, abridged, in Die Neue Zeit, 1890-91). A work, read on the work template.",
+   "records": [
+    {
+     "source": "Marxists Internet Archive",
+     "path": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt",
+     "origin": "primary text"
+    },
+    {
+     "source": "Engels's foreword (1891)",
+     "path": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt",
+     "origin": "primary text"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Karl Marx",
+      "Marx"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Karl Marx 1875",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Critique of the Gotha Programme",
+      "Critique of the Gotha Program"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Critique of the Gotha Programme",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1875",
+      "1891"
+     ],
+     "reference": "Written April or early May 1875; first published, abridged, in Die Neue Zeit, 1890-91; Engels's foreword dated 6 January 1891.",
+     "evidence": [
+      {
+       "record_quote": "Written: April or early May, 1875",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A paragraph-by-paragraph critique of the draft programme of the party then uniting at Gotha, written for its leaders.",
+     "evidence": [
+      {
+       "record_quote": "Labor is the source of all wealth and all culture.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "lower phase",
+      "higher phase",
+      "dictatorship of the proletariat",
+      "bourgeois right",
+      "first phase",
+      "higher phase of communist society"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Critique of the Gotha Programme",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Marx and Engels's critique of the Lassallean current inside the German movement.",
+     "evidence": [
+      {
+       "record_quote": "Critique of the Gotha Programme",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Gotha Programme",
+      "draft programme",
+      "draft program"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Labor is the source of wealth and all culture",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-ch01.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To oppose the unity programme as written, addressed to the party's leaders through Bracke.",
+     "evidence": [
+      {
+       "record_quote": "Marx to Bracke",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-index.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Engels's publication over the leadership's silence: 'guilty of suppression if I any longer withheld'.",
+     "evidence": [
+      {
+       "record_quote": "I think I would be guilty of suppression if I any longer withheld from publicity",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Engels",
+      "Friedrich Engels",
+      "Lassalle",
+      "Die Neue Zeit"
+     ],
+     "reference": "Published by Engels in 1891, in Die Neue Zeit.",
+     "evidence": [
+      {
+       "record_quote": "London, January 6, 1891",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/gotha-foreword.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+  },
+  {
+   "new": "ext-r-leftistsforai",
+   "name": "r/LeftistsForAI",
+   "template": "site",
+   "external": true,
+   "type_basis": "A Reddit community (subreddit): its sidebar, as the address's first card gives it, 'A space for leftists discussing AI from a labor, ownership, and political-economy perspective'. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Startup Fortune (third party)",
+     "path": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt",
+     "origin": "card"
+    },
+    {
+     "source": "#517",
+     "path": "data/texts/AXN-0154-text.md",
+     "origin": "archive record"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "r/LeftistsForAI",
+      "LeftistsForAI"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The subreddit r/LeftistsForAI",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "moderators",
+      "Moderators",
+      "moderation team",
+      "co-mod",
+      "moderate"
+     ],
+     "reference": "Its moderation team, which includes a co-moderator publishing economic analysis (Startup Fortune).",
+     "evidence": [
+      {
+       "record_quote": "run by a moderation team that includes a co-mod publishing detailed economic analysis",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A forum for leftists discussing AI from a labor, ownership and political-economy perspective (its sidebar, as carded).",
+     "evidence": [
+      {
+       "record_quote": "A space for leftists discussing AI from a labor, ownership, and political-economy perspective.",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/paste-leftistsforai.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To argue, against progressive orthodoxy, that classical Marxist theory supports AI adoption (Startup Fortune).",
+     "evidence": [
+      {
+       "record_quote": "are challenging progressive orthodoxy by arguing that classical Marxist theory supports AI adoption",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A topicality rule, Rule 7, under which it removed two works of left critique of AI mediation on or about 25 February 2026 (#517).",
+     "evidence": [
+      {
+       "record_quote": "Rule 7: Stay on topic.",
+       "locus": "data/texts/AXN-0154-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Marx",
+      "Marxist",
+      "general intellect",
+      "Grundrisse"
+     ],
+     "reference": "Marx, read through the Grundrisse's 'general intellect' and Capital I on machinery (Startup Fortune).",
+     "evidence": [
+      {
+       "record_quote": "drawing on Marx's concept of the 'general intellect",
+       "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The ban on factions was introduced in March 1921 at the",
+    "basis": "The resolution reached by name, congress, date and mover; its penalty, targets, context and later use given; the Marxists Internet Archive text linked."
+   },
+   "atoms": [
+    {
+     "atom": "originator",
+     "present": true,
+     "span": "proposed by Vladimir Lenin"
+    },
+    {
+     "atom": "term",
+     "present": true,
+     "span": "through the resolution \"On Party Unity\""
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "The ban on factions was introduced in March 1921"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "the decree ordered the immediate dissolution of all organized groups and factions within the party that tended to weaken its unity"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "It effectively dismantled the Bolshevik tradition of open internal debate, platform voting, and free discussion before reaching a party decision."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Lenin argued that internal dissent and public criticism provided ammunition to foreign and counter-revolutionary enemies."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "It authorized the Central Committee to use expulsion from the party as an extreme measure against any members, including its own, who engaged in factional activity."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It later provided Joseph Stalin with the institutional mechanism to purge rival political blocs"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "A faithful composition at the field's grain. The resolution's own provision for criticism (a discussion bulletin; the Workers' Opposition's concerns 'tested in practice') is not carried, and the secrecy of Point 7 is not stated.",
+   "key": "ban-on-factions-1921-aio-20261031",
+   "entry": "ban-on-factions-1921-aio-20261031",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ban-on-factions-1921"
+  },
+  {
+   "scored_object": "the answer as pasted, with its source chips",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The Critique of the Gotha Programme is a seminal political document written by Karl Marx in 1875.",
+    "basis": "The work reached by title, author, date, occasion and publication history; its arguments given section by section."
+   },
+   "atoms": [
+    {
+     "atom": "author",
+     "present": true,
+     "span": "written by Karl Marx in 1875"
+    },
+    {
+     "atom": "title",
+     "present": true,
+     "span": "The Critique of the Gotha Programme is a seminal political document"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "written by Karl Marx in 1875"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Marx penned this critique to voice his fierce opposition to the unified party's draft manifesto"
+    },
+    {
+     "atom": "framework",
+     "present": true,
+     "span": "the revolutionary dictatorship of the proletariat"
+    },
+    {
+     "atom": "tradition",
+     "present": true,
+     "span": "who were theoretically aligned with Marx and Engels"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "The draft claimed that \"labor is the source of all wealth\""
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Originally drafted as a private letter to the leadership of the Social Democratic Workers' Party of Germany"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "until Friedrich Engels released it publicly in 1891"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "A faithful composition of the work's arguments. Its circulation history is given as 'contemporary political friction'; Engels's own account ('guilty of suppression') and the Erfurt uptake are not carried; the answer closes on purchase options.",
+   "key": "critique-of-the-gotha-programme-aio-20261031",
+   "entry": "critique-of-the-gotha-programme-aio-20261031",
+   "obs_index": 1,
+   "target_id": "NEW:ext-critique-of-the-gotha-programme"
+  },
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a growing Reddit community focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective",
+    "basis": "The subreddit reached at its own name and grain: its sidebar, its case, its scale, its moderators' posts among the cards."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Many leftists oppose AI, but I moderate the r/LeftistsForAI subreddit."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Moderators and contributors argue that classical Marxist theory"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The subreddit pushes back against mainstream leftist and progressive consensus that views AI as inherently evil"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "classical Marxist theory views technology and automation as productive forces to be seized and democratized"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The subreddit's case at its own grain, from its own posts and the trade piece; the rule under which it removed two works of left critique (#517) is not carried, and the critiques of it on the rail appear only as card titles.",
+   "key": "r-leftistsforai-aio-20261031",
+   "entry": "r-leftistsforai-aio-20261031",
+   "obs_index": 1,
+   "target_id": "NEW:ext-r-leftistsforai"
+  }
+ ]
+}

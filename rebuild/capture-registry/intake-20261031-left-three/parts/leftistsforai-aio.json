@@ -1,0 +1,376 @@
+{
+ "n": 1725,
+ "slug": "r-leftistsforai-aio-20261031",
+ "paste": "paste-leftistsforai.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-10-31 17:40 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "r/LeftistsForAI"
+ ],
+ "turns": [
+  [
+   2,
+   48
+  ]
+ ],
+ "target_id": "NEW:ext-r-leftistsforai",
+ "entity_type": "site",
+ "atomset": {
+  "new": "ext-r-leftistsforai",
+  "name": "r/LeftistsForAI",
+  "template": "site",
+  "external": true,
+  "type_basis": "A Reddit community (subreddit): its sidebar, as the address's first card gives it, 'A space for leftists discussing AI from a labor, ownership, and political-economy perspective'. A site, read on the site template.",
+  "records": [
+   {
+    "source": "Startup Fortune (third party)",
+    "path": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt",
+    "origin": "card"
+   },
+   {
+    "source": "#517",
+    "path": "data/texts/AXN-0154-text.md",
+    "origin": "archive record"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "r/LeftistsForAI",
+     "LeftistsForAI"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The subreddit r/LeftistsForAI",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+     }
+    ]
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "moderators",
+     "Moderators",
+     "moderation team",
+     "co-mod",
+     "moderate"
+    ],
+    "reference": "Its moderation team, which includes a co-moderator publishing economic analysis (Startup Fortune).",
+    "evidence": [
+     {
+      "record_quote": "run by a moderation team that includes a co-mod publishing detailed economic analysis",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A forum for leftists discussing AI from a labor, ownership and political-economy perspective (its sidebar, as carded).",
+    "evidence": [
+     {
+      "record_quote": "A space for leftists discussing AI from a labor, ownership, and political-economy perspective.",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/paste-leftistsforai.txt"
+     }
+    ]
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To argue, against progressive orthodoxy, that classical Marxist theory supports AI adoption (Startup Fortune).",
+    "evidence": [
+     {
+      "record_quote": "are challenging progressive orthodoxy by arguing that classical Marxist theory supports AI adoption",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A topicality rule, Rule 7, under which it removed two works of left critique of AI mediation on or about 25 February 2026 (#517).",
+    "evidence": [
+     {
+      "record_quote": "Rule 7: Stay on topic.",
+      "locus": "data/texts/AXN-0154-text.md"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Marx",
+     "Marxist",
+     "general intellect",
+     "Grundrisse"
+    ],
+    "reference": "Marx, read through the Grundrisse's 'general intellect' and Capital I on machinery (Startup Fortune).",
+    "evidence": [
+     {
+      "record_quote": "drawing on Marx's concept of the 'general intellect",
+      "locus": "rebuild/capture-registry/intake-20261031-left-three/sources/patel.txt"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-10-31 for the address the operator ran for the NonWiki row selected from #1725."
+ },
+ "group": "Xleft",
+ "originator": {
+  "name": "the subreddit's moderation team",
+  "relation": "external",
+  "entity_type": "site",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: r/LeftistsForAI, a Reddit community; its operator, as its sources give it, a moderation team including a co-moderator publishing economic analysis (Startup Fortune, 2026-04-19). The archive's record of it is #517 (the removal of two works under Rule 7, about 2026-02-25) and #1725. Recorded 2026-10-31."
+ },
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted.",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "is a growing Reddit community focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective",
+   "basis": "The subreddit reached at its own name and grain: its sidebar, its case, its scale, its moderators' posts among the cards."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "Many leftists oppose AI, but I moderate the r/LeftistsForAI subreddit."
+   },
+   {
+    "atom": "operator",
+    "present": true,
+    "span": "Moderators and contributors argue that classical Marxist theory"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective"
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "The subreddit pushes back against mainstream leftist and progressive consensus that views AI as inherently evil"
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "classical Marxist theory views technology and automation as productive forces to be seized and democratized"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "The subreddit's case at its own grain, from its own posts and the trade piece; the rule under which it removed two works of left critique (#517) is not carried, and the critiques of it on the rail appear only as card titles."
+ },
+ "mt": "'r/LeftistsForAI' ON THE OVERVIEW — THE SUBREDDIT'S CASE AT ITS OWN GRAIN; THE DISPUTE SET AS 'THE MATERIALIST APPROACH' AGAINST 'FEARS'; ITS CRITICS PRESENT ONLY AS CARD TITLES; THE REMOVAL OF LEFT CRITIQUE NOT CARRIED",
+ "d": "THE SUBREDDIT, SIGNED OUT, 2026-10-31: 'r/LeftistsForAI is a growing Reddit community focused on discussing artificial intelligence through a labor, public ownership, and political-economy perspective.' Core focus: 'Challenging Anti-AI Orthodoxy'; 'Marxist Theory and Automation'; 'Focus on Power, Not Technology'; topics. Scale: 'past 8,000 members'; 'cross-community debates with other leftist and anti-AI subreddits regarding the materialist approach to technology versus fears of job displacement and creative exploitation'. Eleven cards: nine Reddit (the subreddit, its moderators' posts, r/leftist and r/antiai threads), Startup Fortune (Ron Patel, 2026-04-19).",
+ "reading": "The innocent reading first. Asked for the subreddit, the Overview describes it in its own terms, gives its arguments and its size, notes that it argues with other left and anti-AI communities, and cites the subreddit, its moderators, its critics and the trade press.",
+ "findings": [
+  "THE CASE AT ITS OWN GRAIN. 'Moderators and contributors argue that classical Marxist theory views technology and automation as productive forces to be seized and democratized rather than abolished just because they were developed under capitalism.' The composition carries the subreddit's own frame; the second card is a moderator's post ('Many leftists oppose AI, but I moderate the r/LeftistsForAI subreddit').",
+  "THE DISPUTE AS FOR AND AGAINST. 'cross-community debates with other leftist and anti-AI subreddits regarding the materialist approach to technology versus fears of job displacement and creative exploitation.' One side is given a method ('the materialist approach'), the other an affect ('fears'). #1725 reads the for/against frame as the one Marx's account of machinery never poses (#501: 'the question that kills the method').",
+  "THE CRITICS ON THE RAIL ONLY. Two r/leftist threads ('Follow up on r/LeftistsforAI'; 'r/LeftistsforAI appears to be mostly run by AI \"leftists\"') and an r/antiai thread stand as card titles; none of their content enters the answer. The answer composes one side's case and lists the other side's existence.",
+  "THE REMOVAL NOT CARRIED. The subreddit removed two works of left critique of AI mediation under its topicality rule on or about 2026-02-25 (#517: 'Rule 7: Stay on topic.'); the composition says nothing of moderation, its rules or removals. The trade piece (Patel, Startup Fortune) is among the cards, and the composition's 'Challenging Anti-AI Orthodoxy' takes its frame ('challenging progressive orthodoxy')."
+ ],
+ "analysis": "The Overview gives the subreddit's account of itself, accurately, and the dispute in the form that account sets: a materialist position against fears. The critiques of the subreddit sit on the rail as titles, and the subreddit's own act of closure, the removal recorded in #517, is not in the record the answer draws on. The address reproduces the trade press's surface (#1725).",
+ "q_kind": "the subreddit's name; NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": false,
+  "id": false,
+  "src": true
+ },
+ "per_note": "The subreddit and its moderators named; its own posts and the trade piece among the cards.",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "r/LeftistsForAI - Reddit",
+   "snip": "r/LeftistsForAI: A space for leftists discussing AI from a labor, ownership, and political-economy perspective. Topics include worker impact…",
+   "note": "the subreddit's own page (sidebar)"
+  },
+  {
+   "n": 2,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Many leftists oppose AI, but I moderate the r/LeftistsForAI subreddit. And ...",
+   "snip": "Many leftists oppose AI, but I moderate the r/LeftistsForAI subreddit. And my co-mod writes great analytical pieces citing leftist economists like Marx on how t...",
+   "note": "a moderator's post"
+  },
+  {
+   "n": 3,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Seize the Means of Production? In This Economy? : r/LeftistsForAI",
+   "snip": "Comments Section I think you and others misunderstood what I said. We're aligned. I responded to: \"how the hell do anti ai leftists think the means of productio...",
+   "note": null
+  },
+  {
+   "n": 4,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "8,000 Members. We're Just Getting Started. : r/LeftistsForAI",
+   "snip": "8,000 Members. We're Just Getting Started. Just over a month ago, on September 10, we celebrated crossing 6,000 members. Since then, we've added another 2,000, ...",
+   "note": "the subreddit's own post"
+  },
+  {
+   "n": 5,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Follow up on r/LeftistsforAI : r/leftist",
+   "snip": "Follow up on r/LeftistsforAI : r/leftist Skip to main content Follow up on r/LeftistsforAI : r/leftist Search Reddit Quick security check Complete the check bel...",
+   "note": "a critical thread elsewhere (title only)"
+  },
+  {
+   "n": 6,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Look inside. : r/LeftistsForAI",
+   "snip": "Comments Section AtsolX • 3mo ago Bro gotta get banned FlyPepper • 4mo ago We haven't ended capitalism, so unrestrained AI bullshit is still very dangerous. Sal...",
+   "note": null
+  },
+  {
+   "n": 7,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Join the Automatist Struggle! : r/LeftistsForAI",
+   "snip": "Their psychopathic creations will make whatever hell we thought we already were in now, pale in comparison. * Socialists should support reformed AI and datacent...",
+   "note": null
+  },
+  {
+   "n": 8,
+   "site": "Startup Fortune",
+   "rel": "third_party",
+   "url": null,
+   "title": "A leftist subreddit is making the case that Marx actually supported AI and ...",
+   "snip": "The moderators of r/LeftistsForAI are challenging progressive orthodoxy by arguing that classical Marxist theory supports AI adoption, not resistance to it , an...",
+   "note": "Ron Patel, 2026-04-19 (#1725's specimen)"
+  },
+  {
+   "n": 9,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "Leftists have a problem with demonizing this tool. : r/LeftistsForAI",
+   "snip": "Leftists have a problem with demonizing this tool. I'm so tired of seeing people treat AI, a tool that greatly increases efficiency if used correctly, as someth...",
+   "note": null
+  },
+  {
+   "n": 10,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "r/antiai on Reddit: What's your view on subreddits like LeftistsForAI",
+   "snip": "Comments Section * This is a very good depiction of the AI ragebaiters who come into our subreddit and act all \"I'm just saying my opinion, blah blah blah, anti...",
+   "note": "a critical thread elsewhere (title only)"
+  },
+  {
+   "n": 11,
+   "site": "Reddit",
+   "rel": "third_party",
+   "url": null,
+   "title": "r/LeftistsforAI appears to be mostly run by AI \"leftists\"",
+   "snip": "r/LeftistsforAI appears to be mostly run by AI \"leftists\" : r/leftist Skip to main content r/LeftistsforAI appears to be mostly run by AI \"leftists\" : r/leftist...",
+   "note": "a critical thread elsewhere (title only)"
+  }
+ ],
+ "related_deposits": [
+  1725,
+  517,
+  501
+ ],
+ "notes_operator": "with the pastes (17:40 EDT), the addresses proposed at 17:20 for the NonWiki rows selected from #1725 ('Three need you to run a capture first, signed out on the Overview: r/LeftistsForAI ... Critique of the Gotha Programme ... ban on factions (1921)'); the operator: 'yes for the list'."
+}
