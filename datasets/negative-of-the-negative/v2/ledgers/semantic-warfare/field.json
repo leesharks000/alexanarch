@@ -1,0 +1,758 @@
+{
+ "row": "semantic-warfare",
+ "address": "semantic warfare",
+ "addresses": [
+  "semantic warfare"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), composer for the semantic-warfare row, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved texts (sw-Bn.txt) or, where a page was refused or not found, from the paste's snippets; every quote checked by script (whitespace normalised) against its saved text or the paste: 43/43; F3 is the one span from a summarising fetch (B1 refused), marked",
+ "B_note": "The field B is what T's page surfaced at \"semantic warfare\" (§0.4): the Overview's six cards (B1–B6) and the organic results on the same page (B4 and B2 again, then B7–B13), recorded on the page and not cited by the Overview. Only the six cards are the Overview's; the organic results are recorded with their role. B7 is archive-controlled (the archive's own book). The two AI Mode addresses are not part of B (they are recorded in the row's addresses).",
+ "lineage_note": "B1 and B3 state geopolitical semantic war (two lineages by source; B10 a third, political science). B5 and B11 state cognitive warfare; B13 the semantic attack and its reframing as cognitive attack, with NATO's 2021 cognitive warfare as its genealogy (F43). B6, B8, B9: interpersonal semantic abuse. B2: ASTRA MIRROR's mechanism set. B4: McLoughlin's theory. B7: the archive's own term. B12: a popular use.",
+ "files": "intake/battery-semantic-warfare-20261031/sw-B1.txt … sw-B13.txt (prefixed \"sw-\" so as not to collide with the neighbour row's fetched pages in the same intake folder)",
+ "fetch_failures": [
+  "B1 Worldcrunch: HTTP 403 (Cloudflare) to curl; WebFetch summary only",
+  "B3 Medium: not located",
+  "B9 The Covert Mind: not located",
+  "B11 cogrps.ir: not located",
+  "B12 American Heritage: letter body not located (heading only)",
+  "B6, B8 TikTok videos and B7 Google Books: no URL in the paste, not fetched"
+ ],
+ "field": [
+  {
+   "id": "B1",
+   "role": "Overview card 1",
+   "card": "Worldcrunch — Russia's Invasion Of Ukraine Is Also A \"Semantic War\"",
+   "url": "https://worldcrunch.com/focus/ukraine-russia-semantics-war",
+   "fetched": "REFUSED: curl (default user agent, honest agent) 2026-10-31T14:43Z, HTTP 403, Cloudflare block page (Ray ID a5336eec6fc4d66f), one attempt, not retried and not routed around (an amp URL returned by a search was not fetched). WebFetch reached the page through its own fetcher and returned a summary only; its one quoted span is carried as F3, marked as from a summarising fetch. The card snippet stands as the text (§3.1(a)). saved as intake/battery-semantic-warfare-20261031/sw-B1.txt (sha256 aed72da2175d44fd5f094c2db2c35d9c702d01562d714ecf13501b14e3eca0d6)",
+   "fetch_status": "refused (403); snippet stands; summarising fetch for F3",
+   "claims": [
+    "F1",
+    "F2",
+    "F3"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B2",
+   "role": "Overview card 2; also organic result 3",
+   "card": "ASTRA MIRROR — Semantic Warfare (concept page)",
+   "url": "https://www.astramirror.org/concept/semantic-warfare/",
+   "fetched": "page downloaded 2026-10-31T14:43Z (HTTP 200); html sha256 2fdd1b545488af89bf85cabb9ff9cfc3b10f2e7e88d9cd61a6f8eeaa6c6ebcdd; text sha256 3ee363f6ea76724b46b2a54ff2c4d292a5ef37b06526e78a976f2825b0204c79; saved as intake/battery-semantic-warfare-20261031/sw-B2.txt (sha256 183b8714238999b565a8e1530c9c610a424ecda5dbf8b9cc99611d22e3bfdf06)",
+   "fetch_status": "fetched verbatim",
+   "claims": [
+    "F4",
+    "F5",
+    "F6",
+    "F7"
+   ],
+   "note": "The concept page names the mechanisms and does not gloss asymmetric literalism or forced entailment; T's glosses of those two (\"Demanding hyper-literal adherence…\", \"Designing language where agreeing to a premise…\") are not in the saved text. The page links the C³ / g8+2 model page in its navigation; the model page was not surfaced by T and is outside B (§3.1(c)); #1723 §7 carries it.",
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B3",
+   "role": "Overview card 3",
+   "card": "Medium — Semantic Collapse: What Happens When a War Is Not Called a War? (Yaroslawww)",
+   "url": null,
+   "fetched": "NOT FOUND: no URL in the paste; two web searches on the title (2026-10-31) did not locate the page. The card snippet stands. saved as intake/battery-semantic-warfare-20261031/sw-B3.txt (sha256 94ab7992b0f1fd2df05b43430897cca7740b57eea37287774d3a4552c62e50e1)",
+   "fetch_status": "not found; snippet stands",
+   "claims": [
+    "F8"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B4",
+   "role": "Overview card 4 (the collapsed view's 'www.strategicadvocacy.com.au +1'); also organic result 1",
+   "card": "Strategic Advocacy Australia — Semantic War Theory (Sarah Ailish McLoughlin, Semantic Warfare Theory)",
+   "url": "https://www.strategicadvocacy.com.au/academic-foundation/semantic-war-theory/",
+   "fetched": "page downloaded 2026-10-31T14:43Z (HTTP 200); meta date.created 2025-12-11; html sha256 6566f268344797b87c79222311f9f5f9e02ba717b189c5d667eb91e3a14df65d; text sha256 77f97dc9388876858626510244560d43eef136573959616f5364ac898c8db8f6; saved as intake/battery-semantic-warfare-20261031/sw-B4.txt (sha256 3b7c9d0b2ab1f9be827e0e560be1caf1277013c4ba818182a3800344c9122610)",
+   "fetch_status": "fetched verbatim",
+   "claims": [
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+   ],
+   "note": "Its named concepts do not include frame control, asymmetric literalism, contamination by adjacency or forced entailment. Wikidata Q137324303; \"Described In: UNARMED: Pattern Theft & Semantic War\".",
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B5",
+   "role": "Overview card 5 (the body's \"Cognitive Warfare Defense\" link)",
+   "card": "Semantic Visions — NATO-aligned Cognitive Warfare Defense (Kile Sears, April 12, 2026)",
+   "url": "https://www.semantic-visions.com/insights/nato-aligned-cognitive-warfare-defense",
+   "fetched": "page downloaded 2026-10-31T14:43Z (HTTP 200); html sha256 b059d90ced7e3202020199b40e3197fa1771c16f3ccfdcfd10f6a8ffb885c693; text sha256 b535c81002bdd941bf2aaaad7d5c9cabea0bfad323c7efdb8cdf89df8d15d4b7; saved as intake/battery-semantic-warfare-20261031/sw-B5.txt (sha256 17e55b8e752c190ce88ea113cb2eed724c6300b1e42cfeefcd11b14ffb3eeb74)",
+   "fetch_status": "fetched verbatim",
+   "claims": [
+    "F21",
+    "F22",
+    "F23",
+    "F24"
+   ],
+   "note": "The phrase \"semantic warfare\" occurs nowhere in the saved text (0 occurrences); \"Semantic\" occurs only in the vendor's name.",
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B6",
+   "role": "Overview card 6 (video)",
+   "card": "TikTok — Semantic Warfare Examples (kerrymcavoyphd)",
+   "url": null,
+   "fetched": "NOT FETCHED: a video card with no URL in the paste; title and snippet stand. saved as intake/battery-semantic-warfare-20261031/sw-B6.txt (sha256 5ad8aaa3846d75f94e5b7f417e051acda05c20878a7406cd2744686c08dae02a)",
+   "fetch_status": "video; snippet stands",
+   "claims": [
+    "F25"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B7",
+   "role": "organic result 2 (archive-controlled: the archive's own book on Google Books)",
+   "card": "Google Books — Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform ... (Feb 20, 2026)",
+   "url": null,
+   "fetched": "NOT FETCHED: path not in the paste; the archive holds the book (#499; sampler #1326). The organic snippet stands. saved as intake/battery-semantic-warfare-20261031/sw-B7.txt (sha256 733896ce61e0a85a5fb0dc1a6b7aeb99a808aca7386941fc5741001e34a2712c)",
+   "fetch_status": "archive-controlled; snippet stands",
+   "claims": [
+    "F26"
+   ],
+   "archive_controlled": true,
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B8",
+   "role": "organic result 4 (video)",
+   "card": "TikTok · The doctor — Where semantic warfare comes from and why you shouldn't tolerate it (1:30, '2 days ago')",
+   "url": null,
+   "fetched": "NOT FETCHED: a video result with no URL in the paste; title and snippet stand. saved as intake/battery-semantic-warfare-20261031/sw-B8.txt (sha256 d0ad162dea83628a57fc905b5cfe63f259e3a3dcdf49c5b12902aa57b646fcd7)",
+   "fetch_status": "video; snippet stands",
+   "claims": [
+    "F27"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B9",
+   "role": "organic result 5",
+   "card": "thecovertmind.com — Semantic Warfare: Unmasking the Linguistic Traps of Master Manipulators (May 26, 2026)",
+   "url": null,
+   "fetched": "NOT FOUND: path not in the paste; two web searches (2026-10-31) did not locate the page. The snippet stands. saved as intake/battery-semantic-warfare-20261031/sw-B9.txt (sha256 cd948754f73d88accbf1fe5ea2b4c37536ca66e552d679d48f1dda4f9deb8e5b)",
+   "fetch_status": "not found; snippet stands",
+   "claims": [
+    "F28"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B10",
+   "role": "organic result 6 (marked on the page \"Missing: warfare\")",
+   "card": "RePEc/IDEAS — Semantic War In The Space Of A Key Symbol: Towards The Theory Of An Actual Phenomenon (S. P. Potseluev, A. A. Gaas, A. A. Letunovsky, 2022)",
+   "url": "https://ideas.repec.org/a/rnp/smmscn/s22224.html",
+   "fetched": "record page downloaded 2026-10-31T14:44Z (HTTP 200), located by search; the abstract read; html sha256 697a965bb49bbc958e278bb9ee8385ee42fde55b4ccd2b475941c0290b4eb010; text sha256 f8cd473d51dacfa1fa814b0a66d899e20c1eb977f6d0a846fe8a2fb9c4eb3fee; saved as intake/battery-semantic-warfare-20261031/sw-B10.txt (sha256 5d782fc66da7ecf8c23c03aef74aafe37e0bb69b5e55ac6e7f3c67d1d91cf1b2)",
+   "fetch_status": "fetched verbatim (record and abstract)",
+   "claims": [
+    "F29",
+    "F30",
+    "F31",
+    "F32"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B11",
+   "role": "organic result 7",
+   "card": "cogrps.ir — Semantic system of cognitive warfare and coping strategies (A. Rahbar, 2024)",
+   "url": null,
+   "fetched": "NOT FOUND: path not in the paste; one web search did not locate it. The snippet stands. saved as intake/battery-semantic-warfare-20261031/sw-B11.txt (sha256 ea278b91c19ad15b573a17809277f78662d477e4a6a3ef47c0a7e33840379f68)",
+   "fetch_status": "not found; snippet stands",
+   "claims": [
+    "F33"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B12",
+   "role": "organic result 8",
+   "card": "American Heritage — Semantic Warfare (Correspondence, August/September 2003, vol. 54, issue 4)",
+   "url": "https://americanheritage.com/correspondence-147",
+   "fetched": "the issue's Correspondence page downloaded 2026-10-31T14:44Z (HTTP 200), located by search; it carries the heading \"SEMANTIC WARFARE\" among the letters' headings and not the letter's body; the result's own page was not located. The snippet stands for the letter. html sha256 2511b5b2a0ae3c7511719b28d35afaffe041496597d8a31081242114d4b59e2a; text sha256 81df5bafca9726c7dc32415145a76a30d5bc601aa3d7a1acf51667b2632abb86; saved as intake/battery-semantic-warfare-20261031/sw-B12.txt (sha256 4d673fc3a7b7f302c2c9658ea7bcd849164b610e871a600ff590af8818db1baa)",
+   "fetch_status": "heading fetched; snippet stands for the letter",
+   "claims": [
+    "F34"
+   ],
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  },
+  {
+   "id": "B13",
+   "role": "organic result 9",
+   "card": "Frontiers in Artificial Intelligence — The history of the semantic hacking project and the lessons it teaches for modern cognitive security (P. Thompson and S. Guillory, 2025-09-24)",
+   "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1616447/full",
+   "fetched": "article downloaded 2026-10-31T14:43Z (HTTP 200), CC BY; html sha256 528a93127186b64faf6e33026229dc77a936ae5f3cad701066e234243ce497e0; text sha256 f6c568b30d28968745786785a81e97e48044c74120785e55741426ce2eb39d43; saved as intake/battery-semantic-warfare-20261031/sw-B13.txt (sha256 36ba9a37a966effd376ca63211ae0cfc1a63133dafd40f3598fa0fca10658463)",
+   "fetch_status": "fetched verbatim",
+   "claims": [
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43"
+   ],
+   "note": "The phrase \"semantic warfare\" occurs nowhere in the saved text; \"single-source contexts\" occurs (F39); \"epistemic autonomy\" does not (it is on B4, F19).",
+   "surfaced_at": [
+    "semantic warfare"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "card title (T page)",
+   "quote": "Russia's Invasion Of Ukraine Is Also A \"Semantic War\"",
+   "claim": "the invasion is also a semantic war",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic war in geopolitics",
+   "quote_ok": true
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "card snippet (T page)",
+   "quote": "Russia's semantic war against Ukraine aims to create a discourse and future in which Ukraine never was and never will be.",
+   "claim": "Russia's semantic war aims at a discourse in which Ukraine never was",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic war in geopolitics",
+   "quote_ok": true
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "WebFetch summary, its one quoted span (summarising fetch; page refused to curl, HTTP 403)",
+   "quote": "The West cannot imagine a world map without Russia.",
+   "claim": "Western imagination of the map as a stake of the semantic war",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "semantic war in geopolitics",
+   "quote_ok": true
+  },
+  "F4": {
+   "source": "B2",
+   "locus": "Explanation ¶, s.1",
+   "quote": "Semantic Warfare describes conflict conducted through labels, frame-control, asymmetric literalism, contamination by adjacency, and forced entailment rather than through slow argument about reality.",
+   "claim": "ASTRA MIRROR's definition: conflict through labels, frame-control, asymmetric literalism, contamination by adjacency, forced entailment",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "ASTRA MIRROR's mechanism set",
+   "quote_ok": true
+  },
+  "F5": {
+   "source": "B2",
+   "locus": "Explanation ¶, s.2",
+   "quote": "In this mode, words stop functioning mainly as descriptive tools and become routing devices for blame, status, expulsion, and moral sorting.",
+   "claim": "words as routing devices for blame, status, expulsion, moral sorting",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "ASTRA MIRROR's mechanism set",
+   "quote_ok": true
+  },
+  "F6": {
+   "source": "B2",
+   "locus": "Explanation ¶, s.3",
+   "quote": "it explains how institutions, media, and factions can reshape a field without fully proving their case: the frame hardens before correction, adjacency becomes guilt, and the label often does the work the argument never managed to do",
+   "claim": "institutions, media and factions reshape a field without proof: the frame hardens before correction",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "ASTRA MIRROR's mechanism set",
+   "quote_ok": true
+  },
+  "F7": {
+   "source": "B2",
+   "locus": "concept summary line",
+   "quote": "Labels replacing arguments, frames hardening early, contamination by adjacency, forced entailment, and reputational spread beyond originating facts.",
+   "claim": "the concept summarised, with reputational spread beyond originating facts",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "ASTRA MIRROR's mechanism set",
+   "quote_ok": true
+  },
+  "F8": {
+   "source": "B3",
+   "locus": "card snippet (T page; page not found)",
+   "quote": "The Semantic Sidestep: “The state is not the people,” “It's not a war, it's a [euphemism].” (Replacing concepts to avoid direct naming).",
+   "claim": "the semantic sidestep: replacing concepts to avoid naming a war",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic war in geopolitics",
+   "quote_ok": true
+  },
+  "F9": {
+   "source": "B4",
+   "locus": "Semantic Warfare Theory ¶",
+   "quote": "Semantic Warfare Theory explores how meaning is contested, extracted, or strategically shaped in digital, institutional, and cultural systems.",
+   "claim": "McLoughlin's Semantic Warfare Theory defined",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F10": {
+   "source": "B4",
+   "locus": "Semantic Warfare Theory ¶",
+   "quote": "It examines how interpretive frames influence power, communication, algorithmic decision-making, and the lived experience of marginalised communities.",
+   "claim": "its reach: power, communication, algorithmic decision-making, marginalised communities",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F11": {
+   "source": "B4",
+   "locus": "heading, subtitle and epigraph",
+   "quote": "Understanding how meaning is contested, weaponised, and redistributed across linguistic, digital, and cultural systems. “Control the meaning, and you control the momentum of a system.”",
+   "claim": "meaning contested, weaponised, redistributed; control the meaning, control the momentum",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F12": {
+   "source": "B4",
+   "locus": "Academic Foundation ¶",
+   "quote": "This framework draws from linguistics, systems theory, information ethics, and disability-justice scholarship to explain how meaning is shaped, controlled, or weaponised within digital and social environments.",
+   "claim": "its sources: linguistics, systems theory, information ethics, disability-justice scholarship",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F13": {
+   "source": "B4",
+   "locus": "Framework Metadata (page meta date.created 2025-12-11)",
+   "quote": "Author: Sarah Ailish McLoughlin Instance of: Theoretical Framework",
+   "claim": "the framework's author; page created 2025-12-11; described in UNARMED: Pattern Theft & Semantic War",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F14": {
+   "source": "B4",
+   "locus": "Core Concepts: Semantic Pressure Systems",
+   "quote": "How systems push meaning in particular directions, shaping interpretation through cultural force, power, and strategic framing.",
+   "claim": "Semantic Pressure Systems",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F15": {
+   "source": "B4",
+   "locus": "Core Concepts: Meaning Extraction",
+   "quote": "The removal, sanitisation, or repackaging of lived knowledge for use in systems that exclude the original meaning-makers.",
+   "claim": "Meaning Extraction",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F16": {
+   "source": "B4",
+   "locus": "Core Concepts: Interpretive Manipulation",
+   "quote": "Strategic shifts in framing that alter how events, identities, and behaviours are read or judged across social systems.",
+   "claim": "Interpretive Manipulation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F17": {
+   "source": "B4",
+   "locus": "Core Concepts: Cultural Knowledge Distortion",
+   "quote": "How dominant systems reshape marginalised knowledge into more palatable or profitable forms, removing relational context.",
+   "claim": "Cultural Knowledge Distortion",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F18": {
+   "source": "B4",
+   "locus": "Core Concepts: Symbolic Weaponisation",
+   "quote": "The use of signs, labels, or narratives to exert control, delegitimise groups, or direct public sentiment.",
+   "claim": "Symbolic Weaponisation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F19": {
+   "source": "B4",
+   "locus": "Core Concepts: Semantic Equity & Justice",
+   "quote": "Approaches that restore interpretive dignity, protect epistemic autonomy, and ensure meaning remains connected to its rightful authors.",
+   "claim": "Semantic Equity & Justice",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F20": {
+   "source": "B4",
+   "locus": "Practical Applications",
+   "quote": "How Semantic Warfare Theory informs advocacy, communication strategy, and systemic meaning integrity across individual, team, and organisational levels.",
+   "claim": "applied at individual, team and organisational levels",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "Semantic Warfare Theory (McLoughlin)",
+   "quote_ok": true
+  },
+  "F21": {
+   "source": "B5",
+   "locus": "Executive summary ¶1",
+   "quote": "NATO’s Chief Scientist research frames Cognitive Warfare as activity that exploits facets of cognition to disrupt, undermine, influence, or modify human decision-making, often leveraging modern technology as a force multiplier.",
+   "claim": "cognitive warfare defined, by NATO's Chief Scientist research",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  },
+  "F22": {
+   "source": "B5",
+   "locus": "Executive summary ¶1",
+   "quote": "It is treated as a cross-cutting “effect dimension” that spans military and civilian populations, and NATO’s publicly described posture in this research is defensive: detect, analyze, mitigate, and build resilience.",
+   "claim": "an effect dimension across military and civilian populations; the posture defensive",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  },
+  "F23": {
+   "source": "B5",
+   "locus": "§1",
+   "quote": "It targets how individuals and societies perceive, interpret, and decide, sometimes below the threshold of armed conflict, often aiming to create confusion, polarization, and degraded decision quality.",
+   "claim": "its targets: perception, interpretation, decision, below the threshold of armed conflict",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  },
+  "F24": {
+   "source": "B5",
+   "locus": "closing ¶",
+   "quote": "Semantic Visions aligns by delivering a defensive cognitive-warfare support stack: cross-lingual OSINT fusion, indicators and warning, actor and narrative analytics, and decision support that hardens the OODA loop against manipulation.",
+   "claim": "the vendor's defensive stack (the page does not use the phrase \"semantic warfare\")",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  },
+  "F25": {
+   "source": "B6",
+   "locus": "card title and snippet (T page)",
+   "quote": "Semantic Warfare Examples * 351.7K1w ago kerrymcavoyphd Watch out for these 8 red flags of semantic manipulation and abuse.",
+   "claim": "semantic warfare as semantic manipulation and abuse between persons",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic abuse (interpersonal)",
+   "quote_ok": true
+  },
+  "F26": {
+   "source": "B7",
+   "locus": "organic snippet (T page; archive-controlled)",
+   "quote": "Autonomous Semantic Warfare provides the first formal framework for analyzing structural conflict between incompatible meaning-systems in",
+   "claim": "the Field Manual's self-description on Google Books (Feb 20, 2026)",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the archive's term and its autonomous form",
+   "quote_ok": true
+  },
+  "F27": {
+   "source": "B8",
+   "locus": "organic result title and snippet (T page; video, The doctor)",
+   "quote": "Where semantic warfare comes from and why you shouldn't tolerate it 1:30 Making someone guess the exact right word in your head before you take them seriously and not just making the correction yourself",
+   "claim": "semantic warfare in conversation: making someone guess the exact word",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "semantic abuse (interpersonal)",
+   "quote_ok": true
+  },
+  "F28": {
+   "source": "B9",
+   "locus": "organic snippet (T page; page not found; May 26, 2026)",
+   "quote": "This tactic transforms once-clear concepts into ambiguous tools designed for control. When a person or entity deliberately broadens or narrows",
+   "claim": "manipulators broaden or narrow concepts into tools of control",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "semantic abuse (interpersonal)",
+   "quote_ok": true
+  },
+  "F29": {
+   "source": "B10",
+   "locus": "Abstract, s.1",
+   "quote": "The purpose of the article is to clarify the concept of semantic war as a special kind of symbolic politics, which should not be confused with the broader concept of propaganda (information) wars.",
+   "claim": "semantic war as symbolic politics, distinct from propaganda (information) wars",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic war in political science (Potseluev et al.)",
+   "quote_ok": true
+  },
+  "F30": {
+   "source": "B10",
+   "locus": "Abstract, s.2",
+   "quote": "Placing semantic wars on the lower levels of cognitive legitimation of power (according to the typology of P. Berger and T. Luckmann), the authors interpret them as a kind of semantic struggle waged in the space of the same key symbol (concept) (H. Lasswell).",
+   "claim": "semantic war as struggle in the space of one key symbol (Berger and Luckmann; Lasswell)",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "semantic war in political science (Potseluev et al.)",
+   "quote_ok": true
+  },
+  "F31": {
+   "source": "B10",
+   "locus": "Abstract, s.3",
+   "quote": "the main cognitive strategy of the semantic war is the management of polysemy/multivaluedness of the key concepts of public discourse, because of which the interpretation of the concept desired by a given political actor is «naturalized» as part of common sense.",
+   "claim": "its strategy: managing polysemy until one actor's reading is naturalized as common sense",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "semantic war in political science (Potseluev et al.)",
+   "quote_ok": true
+  },
+  "F32": {
+   "source": "B10",
+   "locus": "Suggested Citation",
+   "quote": "Sergey P. Potseluev (Поцелуев С.П.) & Alan A. Gaas (Гаас А.А.) & Alexander A. Letunovsky (Летуновский А.А.), 2022.",
+   "claim": "three authors, 2022, State and Municipal Management Scholar Notes, vol. 2, pp. 194–200",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "semantic war in political science (Potseluev et al.)",
+   "quote_ok": true
+  },
+  "F33": {
+   "source": "B11",
+   "locus": "organic snippet (T page; page not found)",
+   "quote": "The main goal of cognitive warfare, as one of the subjects related to cognitive science, is to change not only what people think, but also how",
+   "claim": "cognitive warfare changes what and how people think (Rahbar 2024)",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  },
+  "F34": {
+   "source": "B12",
+   "locus": "organic snippet (T page)",
+   "quote": "In World War II the song “The Japanese Sandman” vanished, as did the operetta The Mikado and the “Mr. Moto” stories and movies.",
+   "claim": "wartime renamings under the heading \"Semantic Warfare\" (American Heritage, Aug/Sep 2003, vol. 54, issue 4)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "popular uses",
+   "quote_ok": true
+  },
+  "F35": {
+   "source": "B13",
+   "locus": "Abstract",
+   "quote": "The Semantic Hacking Project ran from 2001 to 2003. It focused on how information systems (and the human decisions shaped by them) could be exploited through attacks not on code or infrastructure, but on meaning.",
+   "claim": "the Semantic Hacking Project, 2001–2003: attacks on meaning",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F36": {
+   "source": "B13",
+   "locus": "§2",
+   "quote": "The term “semantic attack” had previously been introduced by Libicki (1994), who categorized computer network attacks into three types: physical (targeting hardware), syntactic (targeting system functionality, e.g., with viruses or worms), and semantic.",
+   "claim": "the term introduced by Libicki (1994): physical, syntactic, semantic attacks",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F37": {
+   "source": "B13",
+   "locus": "§2",
+   "quote": "Semantic attacks aimed not to break systems, but to manipulate decision-making whether by a human, a software agent, or an organization.",
+   "claim": "semantic attacks manipulate the decisions of humans, software agents or organizations",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F38": {
+   "source": "B13",
+   "locus": "§2",
+   "quote": "reframe these semantic threats as “cognitive attacks,” emphasizing the human interpretive processes at risk. While primarily conceptual, the project did culminate in a working prototype of one of the proposed countermeasures.",
+   "claim": "the project reframed semantic threats as cognitive attacks; primarily conceptual, one prototype",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F39": {
+   "source": "B13",
+   "locus": "§2",
+   "quote": "categorized potential countermeasures into two types based on the structure of the information environment: those designed for single-source contexts and those designed for environments with multiple, redundant sources of information.",
+   "claim": "countermeasures for single-source and multiple-source environments",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F40": {
+   "source": "B13",
+   "locus": "Abstract",
+   "quote": "The project anticipated many of today’s challenges (disinformation campaigns, social media manipulation, AI-generated narratives) not just in technical terms, but in philosophical and linguistic terms.",
+   "claim": "the project anticipated today's challenges, AI-generated narratives among them",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F41": {
+   "source": "B13",
+   "locus": "§1, \"definitions as weapons\"",
+   "quote": "the battles over definitions themselves may be the most important because whatever is the definition of gender, genocide, A.I., and the like that are agreed upon by the participants and audience hold the power in defining a situation and what people think should happen next.",
+   "claim": "battles over definitions as the most important fights in the cognitive domain",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F42": {
+   "source": "B13",
+   "locus": "§1",
+   "quote": "For us, cognitive security is not just a new subset of cybersecurity or psychological operations; it is a foundational way to understand modern conflict itself.",
+   "claim": "cognitive security as a foundational way to understand modern conflict",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the semantic attack (security)",
+   "quote_ok": true
+  },
+  "F43": {
+   "source": "B13",
+   "locus": "§2.5",
+   "quote": "Its 2021 publication, “Countering Cognitive Warfare: Awareness and Resilience,” brought the term into broader use across allied military structures (NATO, 2021).",
+   "claim": "NATO's 2021 publication brought \"cognitive warfare\" into broader allied use",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "cognitive warfare (NATO)",
+   "quote_ok": true
+  }
+ }
+}

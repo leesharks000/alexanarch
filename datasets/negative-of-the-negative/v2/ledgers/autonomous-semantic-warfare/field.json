@@ -1,0 +1,583 @@
+{
+ "row": "autonomous-semantic-warfare",
+ "address": "autonomous semantic warfare",
+ "addresses": [
+  "autonomous semantic warfare"
+ ],
+ "extracted": "2026-10-31",
+ "extractor": "Claude (Opus 5.5), in session, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved texts or the paste's card titles and snippets, checked by script (33/33 present in the file named in checked_against); spans from the two summarising fetches (asw-B2.txt, asw-B3.txt) carried marked unsupported (§3.1, §4.3) and not composed",
+ "B_note": "The field B (§0.4) is the seven cards of T (Amazon; INSS; Homeland Security Today; the registry's capture page; the Scandinavian Journal of Military Studies; DW News and TeleSUR English videos). The paste carries no organic results. Two cards are archive-controlled (B1 the archive's own book on its seller's page; B4 the registry's own record page) and are marked so; the other five are third parties. Saved texts are in the intake folder as asw-B2.txt to asw-B5.txt (the 'asw-' prefix keeps them apart from the neighbour row's files in the shared folder).",
+ "lineage_note": "Each source is its own lineage; B2 and B3 share authors (Annett and Giordano, INSS) and stay two lineages, two objects (autonomous C2; autonomous narrative warfare). B4's June record (F16–F20) and its October header (F21, F22) are one lineage, the registry's record at this address.",
+ "semantic_check": "#1723 §5 found that the Homeland Security Today piece never uses the word 'semantic'. Checked 2026-10-31: the page could not be saved (HTTP 403, Cloudflare); WebFetch's extract reports 'The word \"semantic\" does not appear in the article text' (asw-B3.txt). Consistent with #1723; unverified against saved text. The INSS article, by WebFetch's report, uses 'semantic' once ('semantic understanding') and 'narrative' not at all; the journal's landing page does not use 'semantic'.",
+ "field": [
+  {
+   "id": "B1",
+   "role": "Overview card at T (card 1)",
+   "card": "Amazon.com — Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of ...",
+   "url": "https://www.amazon.com/gp/product/B0GPJD9HPS (ASIN as the archive records it, #75, #693; the card's own link is not in the paste)",
+   "fetched": "not fetched: WebFetch refused at the site (robots_disallowed), 2026-10-31 about 14:47 UTC, nothing retrieved; as the brief expected. A direct download had been attempted a minute before the refusal was known (HTTP 200); its bytes were deleted unread and are not used, so as not to route around the refusal. The card's snippet in T stands as the source's only text (§3.1).",
+   "archive_controlled": "yes: the seller's page of the archive's own book (#1107, #1326, #499); the page itself is Amazon's",
+   "uses_phrase": "yes (card title)",
+   "kind": "Overview card",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/paste-autonomous-semantic-warfare-aio.txt"
+  },
+  {
+   "id": "B2",
+   "role": "Overview card at T (card 2)",
+   "card": "Institute for National Strategic Studies (INSS) — The Agentic Database and Military Command: A Perspective on Autonomous C2 Systems",
+   "url": "https://inss.ndu.edu/news/Article/4333776/the-agentic-database-and-military-command-a-perspective-on-autonomous-c2-systems/ (located by web search 2026-10-31; the listing named in the brief, https://inss.ndu.edu/Media/News/Tag/74230/c2/, also tried)",
+   "fetched": "not fetched verbatim: direct download HTTP 403 for the listing (2026-10-31 14:45:20 UTC) and the article (14:46:05 UTC); WebFetch of the listing and of the article (summarising, about 14:46 UTC), the article extract saved as asw-B2.txt (sha256 21dfc164f63b080704edad2d48db7383157541c05689a78a704aac414e5730e6). Under §3.1 a summarising fetch is not a fetch: the card snippet stands as the source's text; spans the extract gives as quotations are carried marked unsupported and are not composed. Third party.",
+   "archive_controlled": "no",
+   "uses_phrase": "no (WebFetch's report: 'semantic' once, in 'semantic understanding'; 'narrative' absent)",
+   "kind": "Overview card",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/asw-B2.txt"
+  },
+  {
+   "id": "B3",
+   "role": "Overview card at T (card 3)",
+   "card": "Homeland Security Today — Autonomous Narrative Warfare: Engaging Agentic AI Within the Cognitive Battlespace",
+   "url": "https://www.hstoday.us/subject-matter-areas/narrative-strategy/autonomous-narrative-warfare-engaging-agentic-ai-within-the-cognitive-battlespace/",
+   "fetched": "not fetched verbatim: direct download HTTP 403, a Cloudflare challenge page ('Just a moment...'), 2026-10-31 14:45:19 UTC; WebFetch twice (summarising, about 14:45–14:47 UTC), declining a verbatim reproduction; both extracts saved as asw-B3.txt (sha256 2abe30e3c2eb776d0cc85660ab2963b371f2e794944bdab3a329c6d219996106). The card's title and snippet stand as the source's text (§3.1); the extract's quoted spans are carried marked unsupported and are not composed. Third party.",
+   "archive_controlled": "no",
+   "uses_phrase": "no (WebFetch's report: 'The word \"semantic\" does not appear in the article text', the finding of #1723 §5; not verified against saved text)",
+   "kind": "Overview card",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/asw-B3.txt"
+  },
+  {
+   "id": "B4",
+   "role": "Overview card at T (card 4): the registry's capture page",
+   "card": "www.alexanarch.org — autonomous semantic warfare — Google AI Overview, 2026-06-15 - Alexanarch",
+   "url": "https://www.alexanarch.org/captures/autonomous-semantic-warfare-expanded/",
+   "fetched": "page HTML downloaded 2026-10-31 14:45:20 UTC (HTTP 200); html sha256 fd7905e4d394b61a3a337e9870f0bd6b36b479c966dbe69f7d66302434893d4a; text saved as asw-B4.txt, sha256 3924a57a558d598298dbc8b24cb61ee740111e38ec4df16a1b7ec4edbac4f95c. The page as fetched is later than the card: its title now runs '2026-06-15 – 2026-10-31' and it carries the October observation that is T itself.",
+   "archive_controlled": "yes: the Capture Registry's own record page (an archive surface among the cards)",
+   "uses_phrase": "yes",
+   "kind": "Overview card",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/asw-B4.txt"
+  },
+  {
+   "id": "B5",
+   "role": "Overview card at T (card 5)",
+   "card": "Scandinavian Journal of Military Studies — Autonomous Systems and the Speed of Battle: Legal Risks and Strategic Adaptation in AI-Enabled Warfare",
+   "url": "https://reference-global.com/article/10.31374/sjms.441 (located by its title through web search, 2026-10-31)",
+   "fetched": "page HTML downloaded 2026-10-31 14:46:07 UTC (HTTP 200); html sha256 66c79b45f83cb6c9fbfbae1ed7a04604649d2c6acd6afa2587346ce3e0add5d3; text saved as asw-B5.txt, sha256 f403f87a7d5b85655982ad1e0fc9c83f807e8a0e2fa5605a01cfc13c23cfadd0 (the article landing page: abstract, authors, dates, keywords). The card's snippet ('Tactical Innovation: ...') is not on the landing page; it stands as the snippet. Third party; #1723 §5 recorded the article as not found by its title.",
+   "archive_controlled": "no",
+   "uses_phrase": "no ('semantic' absent from the saved text)",
+   "kind": "Overview card",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/asw-B5.txt"
+  },
+  {
+   "id": "B6",
+   "role": "Overview card at T (card 6, video)",
+   "card": "YouTube·DW News — Will autonomous weapons obey the laws of war?| DW News (9:25)",
+   "url": "not in the paste",
+   "fetched": "not fetched: a video card with no URL in the paste; admitted through its title and duration as T gives them (§3.1).",
+   "archive_controlled": "no",
+   "uses_phrase": "no",
+   "kind": "Overview card (video)",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/paste-autonomous-semantic-warfare-aio.txt"
+  },
+  {
+   "id": "B7",
+   "role": "Overview card at T (card 7, video)",
+   "card": "YouTube·TeleSUR English — AI Enters the Battlefield: The New Era of Autonomous Warfare (1:50)",
+   "url": "not in the paste",
+   "fetched": "not fetched: a video card with no URL in the paste; admitted through its title and duration as T gives them (§3.1).",
+   "archive_controlled": "no",
+   "uses_phrase": "no",
+   "kind": "Overview card (video)",
+   "surfaced_at": [
+    "autonomous semantic warfare"
+   ],
+   "text": "datasets/negative-of-the-negative/v2/intake/battery-semantic-warfare-20261031/paste-autonomous-semantic-warfare-aio.txt"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "card title and snippet in T",
+   "quote": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture (The Crimson Hexagon) * Opens the same content in full screen What's it a...",
+   "claim": "the Field Manual listed for sale, in The Crimson Hexagon",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Field Manual (E_A's own book)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F2": {
+   "source": "B2",
+   "locus": "card title and snippet in T",
+   "quote": "The Agentic Database and Military Command: A Perspective on Autonomous C2 Systems By Elise Annett and Dr. James Giordano Strategic Insights As recently noted by...",
+   "claim": "INSS publication by Annett and Giordano on autonomous command and control",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F3": {
+   "source": "B2",
+   "locus": "body (WebFetch extract, item 4)",
+   "quote": "the shift from passive databases to “active reasoning engines” in commercial agentic AI signals a fundamental transformation",
+   "claim": "commercial agentic AI turns databases into active reasoning engines",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B2.txt"
+  },
+  "F4": {
+   "source": "B2",
+   "locus": "body (WebFetch extract, item 5)",
+   "quote": "When an AI system exhibits genuinely emergent behavior (i.e., doing something not explicitly programmed or anticipated)",
+   "claim": "emergent behaviour in an AI system defined",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B2.txt"
+  },
+  "F5": {
+   "source": "B2",
+   "locus": "body (WebFetch extract, item 5)",
+   "quote": "We regard this as insubordination by algorithm.",
+   "claim": "insubordination by algorithm",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B2.txt"
+  },
+  "F6": {
+   "source": "B2",
+   "locus": "body (WebFetch extract, item 6)",
+   "quote": "The unification of transactional, analytical, and vector processing (HTAP+V) into a single architecture",
+   "claim": "transactional, analytical and vector processing unified",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B2.txt"
+  },
+  "F7": {
+   "source": "B2",
+   "locus": "byline and date (WebFetch extract, item 2)",
+   "quote": "Nov. 17, 2025",
+   "claim": "dated 17 November 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous C2 (INSS)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B2.txt"
+  },
+  "F8": {
+   "source": "B3",
+   "locus": "card title in T",
+   "quote": "Autonomous Narrative Warfare: Engaging Agentic AI Within the Cognitive ...",
+   "claim": "the piece's own name for its object: autonomous narrative warfare, agentic AI in the cognitive battlespace",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F9": {
+   "source": "B3",
+   "locus": "card snippet in T",
+   "quote": "Autonomous Narrative Warfare: Engaging Agentic AI Within the Cognitive Battlespace * The strategic implications of these developments extend across multiple asp...",
+   "claim": "the title in full and the opening of its strategic implications",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F10": {
+   "source": "B3",
+   "locus": "body (WebFetch extract 2, item 2)",
+   "quote": "In this way, autonomous aAI-based narrative warfare can be seen to be an emergent, defining feature of contemporary conflict.",
+   "claim": "autonomous aAI-based narrative warfare an emergent, defining feature of contemporary conflict",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F11": {
+   "source": "B3",
+   "locus": "body (WebFetch extract 2, item 3)",
+   "quote": "agentic AI (aAI) systems that are being employed to function with increasing autonomy in influence operations",
+   "claim": "agentic AI systems used with increasing autonomy in influence operations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F12": {
+   "source": "B3",
+   "locus": "body (WebFetch extract 2, item 1)",
+   "quote": "Cognition is becoming a focal domain of strategic competition of the twenty-first century battlespace.",
+   "claim": "cognition a focal domain of strategic competition",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F13": {
+   "source": "B3",
+   "locus": "recommendations (WebFetch extract 2, item 6)",
+   "quote": "Formal integration of cognitive security to national security strategy and defense planning.",
+   "claim": "recommendation: integrate cognitive security in national security strategy",
+   "modality": "hypothesis",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F14": {
+   "source": "B3",
+   "locus": "recommendations (WebFetch extract 2, item 6)",
+   "quote": "Establish protection of critical cognitive infrastructure as a strategic priority.",
+   "claim": "recommendation: protect critical cognitive infrastructure",
+   "modality": "hypothesis",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F15": {
+   "source": "B3",
+   "locus": "author note (WebFetch extract 2, item 5)",
+   "quote": "Dr. Elise Annett is a Research Fellow at the Institute for National Strategic Studies (INSS), National Defense University.",
+   "claim": "author's affiliation: INSS, National Defense University",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "Annett and Giordano, autonomous narrative warfare (Homeland Security Today)",
+   "marks": {
+    "unsupported": "§3.1/§4.3: from a summarising fetch (WebFetch extract, asw-B2.txt or asw-B3.txt); the page text could not be saved (HTTP 403); carried, not composed"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B3.txt"
+  },
+  "F16": {
+   "source": "B4",
+   "locus": "card title and snippet in T",
+   "quote": "autonomous semantic warfare — Google AI Overview, 2026-06-15 - Alexanarch",
+   "claim": "the registry's record of the Overview at this address on 2026-06-15",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F17": {
+   "source": "B4",
+   "locus": "observation 1 of 2, the record's quotation of the composition",
+   "quote": "'Autonomous semantic warfare is an emergent form of conflict where artificial intelligence agents independently generate and manipulate narratives, data streams, and communication networks to alter a target's perception, behavior, or operational reality.'",
+   "claim": "the June Overview's definition, as the record quotes it",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F18": {
+   "source": "B4",
+   "locus": "observation 1 of 2, the record's note",
+   "quote": "Blended with military/defense sources. Components: Agentic AI Influence, Semantic Coherence.",
+   "claim": "the June composition blended with defense sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F19": {
+   "source": "B4",
+   "locus": "observation 1 of 2, the record's note",
+   "quote": "Concept has crossed from archive into defense discourse.",
+   "claim": "the June record's reading: the concept crossed from the archive into defense discourse",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F20": {
+   "source": "B4",
+   "locus": "observation 1 of 2, header",
+   "quote": "2026-06-15 observation 1 of 2 Google AI Overview · signed in · ocr evidence · sources not captured · PER 1.00 (target absent: generic)",
+   "claim": "the June observation: signed in, OCR, sources not captured, target absent",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F21": {
+   "source": "B4",
+   "locus": "observation 2 of 2, header",
+   "quote": "2026-10-31 observation 2 of 2 Google AI Overview · signed out, incognito · paste evidence · 7 sources · PER 0.75",
+   "claim": "the page now also records the October observation (T), seven sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "marks": {
+    "internally_inconsistent": "the same record's description gives 'Eight cards' (F22) beside '7 sources' here and lists seven"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F22": {
+   "source": "B4",
+   "locus": "observation 2 of 2, description",
+   "quote": "Eight cards: Amazon (the manual), INSS, Homeland Security Today, the registry's capture page of 2026-06-15, the Scandinavian Journal of Military Studies, two videos.",
+   "claim": "the October record's card count",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Capture Registry's record of the June Overview",
+   "marks": {
+    "internally_inconsistent": "the list names seven cards, and the header (F21) gives 7 sources; the paste shows seven"
+   },
+   "quote_ok": true,
+   "checked_against": "asw-B4.txt"
+  },
+  "F23": {
+   "source": "B5",
+   "locus": "card title in T",
+   "quote": "Autonomous Systems and the Speed of Battle: Legal Risks and Strategic Adaptation in AI-Enabled Warfare | Scandinavian Journal of Military Studies",
+   "claim": "an article on autonomous systems, legal risks and AI-enabled warfare",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F24": {
+   "source": "B5",
+   "locus": "card snippet in T (not on the landing page)",
+   "quote": "Tactical Innovation: AI-enabled uncrewed systems (AI-UxS) and uncrewed water systems (UWS) accelerate target engagement, reconnaissance, and swarm coordination ...",
+   "claim": "AI-enabled uncrewed systems accelerate target engagement",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F25": {
+   "source": "B5",
+   "locus": "Abstract, sentence 1",
+   "quote": "This article investigates the strategic implications of deploying autonomous unmanned systems (AI-UxS) powered by artificial intelligence in contemporary military operations.",
+   "claim": "the article's object: AI-powered autonomous unmanned systems in military operations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F26": {
+   "source": "B5",
+   "locus": "Abstract, sentence 2",
+   "quote": "It focuses on the legal and operational challenges arising from delegating critical functions to algorithms capable of independently identifying, tracking, and engaging targets without direct human oversight.",
+   "claim": "delegation of targeting to algorithms without direct human oversight",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F27": {
+   "source": "B5",
+   "locus": "Abstract, sentence 4",
+   "quote": "Particular attention is paid to the phenomenon of decision-time compression, in which AI-driven systems operate on timescales that outpace human decision-making.",
+   "claim": "decision-time compression",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F28": {
+   "source": "B5",
+   "locus": "Abstract, sentence 6",
+   "quote": "Rather than proposing entirely new treaties, the article argues for a strengthened interpretation of existing international humanitarian law (IHL) focused on the challenge of decision-time compression.",
+   "claim": "the article's limit and remedy: a strengthened interpretation of existing IHL",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F29": {
+   "source": "B5",
+   "locus": "byline",
+   "quote": "By: Viacheslav Biletskyi , Viktor Tyshchuk and Oleksandr Mandziuk",
+   "claim": "the article's authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F33": {
+   "source": "B5",
+   "locus": "dates",
+   "quote": "Published on: Apr 17, 2026",
+   "claim": "published 17 April 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  },
+  "F30": {
+   "source": "B6",
+   "locus": "card title in T",
+   "quote": "Will autonomous weapons obey the laws of war?| DW News",
+   "claim": "a news video on autonomous weapons and the laws of war",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "videos on autonomous weapons",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F31": {
+   "source": "B7",
+   "locus": "card title in T",
+   "quote": "AI Enters the Battlefield: The New Era of Autonomous Warfare",
+   "claim": "a news video on AI on the battlefield",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "videos on autonomous weapons",
+   "quote_ok": true,
+   "checked_against": "paste-autonomous-semantic-warfare-aio.txt"
+  },
+  "F32": {
+   "source": "B5",
+   "locus": "Abstract, sentence 3",
+   "quote": "The analysis highlights concerns about disrupted accountability chains, vulnerabilities to cyber interference, and the risk of escalatory dynamics arising from interactions among multiple autonomous platforms.",
+   "claim": "accountability, cyber vulnerability and escalation among autonomous platforms",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Biletskyi, Tyshchuk and Mandziuk, AI-enabled uncrewed systems (SJMS)",
+   "quote_ok": true,
+   "checked_against": "asw-B5.txt"
+  }
+ }
+}
