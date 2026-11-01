@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 498,
- "with_atom_set": 494,
+ "count": 499,
+ "with_atom_set": 495,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -170287,6 +170287,266 @@
    "external": true,
    "state": "intake pass (rubric v1.1) 2026-10-31, reader in session",
    "state_d": "intake pass (rubric v1.1) 2026-10-31, reader in session"
+  },
+  {
+   "id": "TGT-asynthetic-synthesis",
+   "name": "asynthetic synthesis (the Asynthetic Principle), as the archive defines it",
+   "template": "concept",
+   "type_basis": "A concept of the archive's: named as the Asynthetic Principle in the Space Ark (#549, 2026-03-10; 'Operations, not doctrines') and defined as asynthetic synthesis in Operative Semiotics: A Grundrisse — Notebook X: The Gate (#1550, AXN:064B, 2026-08-26, Johannes Sigil and Lee Sharks). Read on the concept template.",
+   "records": [
+    {
+     "deposit": 1550,
+     "title_quote": "Operative Semiotics: A Grundrisse — Notebook X: The Gate (cut of 2026-08-26)"
+    },
+    {
+     "deposit": 549,
+     "title_quote": "🌑⬡ THE SPACE ARK What the Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture Hides 🌑 EA"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Johannes Sigil",
+      "Sigil"
+     ],
+     "reference": "Lee Sharks, with Johannes Sigil (heteronym with independent contributor standing) and the Assembly; Notebook X is credited 'Sigil, Johannes; Sharks, Lee'.",
+     "evidence": [
+      {
+       "record_quote": "creator: Sigil, Johannes; Sharks, Lee",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "asynthetic synthesis",
+      "Asynthetic synthesis",
+      "Asynthetic Principle",
+      "asynthetic"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Asynthetic synthesis, defined.",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-08-26",
+      "August 2026",
+      "March 2026",
+      "2026-03-10"
+     ],
+     "reference": "Named as the Asynthetic Principle in the Space Ark (2026-03-10); defined in Notebook X (cut of 2026-08-26).",
+     "evidence": [
+      {
+       "record_quote": "date: 2026-08-26",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A bearing-act aggregate that explicitly blocks machine integration (W₂), leaving Γ = 0: value is withheld from the circuit, refusal and not failure, a negative coherence debt in place of coherence value.",
+     "evidence": [
+      {
+       "record_quote": "an asynthetic synthesis is a bearing-act aggregate that explicitly blocks W₂, leaving Γ = 0. Value does not disappear; it is withheld from the circuit.",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "plate",
+      "plates",
+      "seam",
+      "seams",
+      "Γ",
+      "W₂",
+      "bearing",
+      "coherence debt",
+      "synthesis-status bit"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Where two plates collide, the collision is declared as a **seam** and left open",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The archive's Asynthetic Principle, 'Operations, not doctrines' (the Space Ark, March 2026), whose own shadow is that the principle is itself a doctrine.",
+     "evidence": [
+      {
+       "record_quote": "**Asynthetic Principle:** Operations, not doctrines. The shadow: the Asynthetic Principle IS a doctrine — the doctrine that doctrines are forbidden.",
+       "locus": "data/texts/AXN-017A-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Notebook X's plates and seams, and the archive constituted as an asynthetic object.",
+     "evidence": [
+      {
+       "record_quote": "Divergence is affirmed, not resolved.",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To refuse synthesis without refusing circulation: the archive constitutes itself as an asynthetic object, its contradictions held at full strength.",
+     "evidence": [
+      {
+       "record_quote": "constitute itself as an asynthetic object — refuse synthesis without refusing circulation",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Both sides of a seam stated at full strength and neither softened; a seam that closes was a misdescription; the absence of synthetic provenance is itself audited.",
+     "evidence": [
+      {
+       "record_quote": "with both sides stated at full strength and neither softened toward the other. A seam that closes was a misdescription",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Operative Semiotics",
+      "Grundrisse",
+      "Notebook X",
+      "Space Ark",
+      "Restored Academy"
+     ],
+     "reference": "Operative Semiotics: A Grundrisse, Notebook X; the Space Ark and the Restored Academy before it.",
+     "evidence": [
+      {
+       "record_quote": "Operative Semiotics: A Grundrisse — Notebook X: The Gate",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1550",
+      "AXN:064B",
+      "064B",
+      "#549",
+      "AXN:017A"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "hex: 064B",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "The Final Time",
+      "#1637",
+      "Tiger Leap",
+      "#1630",
+      "Space Ark",
+      "Transition in Entropic Systems"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "asynthetic synthesis",
+       "locus": "data/texts/AXN-064B-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "originator",
+    "term",
+    "date",
+    "claim boundary",
+    "framework",
+    "tradition",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-01 for the first captures of the concept (the operator's prompt on the asynthetic synthesis of Lee Sharks, The Final Time and Tiger Leap).",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-01, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-01, reader in session"
   }
  ],
  "entity_pass": {
@@ -170548,6 +170808,14 @@
    "date": "2026-10-31",
    "brief": "rebuild/capture-registry/intake-20261031-living-body-october/build.py (the parts are authored in parts.py)",
    "new_sets": [],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-11-01",
+   "brief": "rebuild/capture-registry/intake-20261101-asynthetic/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-asynthetic-synthesis"
+   ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }
  ]
