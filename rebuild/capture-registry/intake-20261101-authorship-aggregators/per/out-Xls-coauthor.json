@@ -1,0 +1,240 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-coauthor",
+   "name": "CoAuthor",
+   "template": "site",
+   "external": true,
+   "type_basis": "A dataset: its paper's arXiv page, saved 2026-11-01, describes it as a dataset designed for revealing GPT-3's capabilities in assisting creative and argumentative writing (the dataset's home page could not be read). Read on the site template.",
+   "records": [
+    {
+     "source": "CoAuthor (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "CoAuthor"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "we present CoAuthor, a dataset designed for revealing GPT-3's capabilities in assisting creative and argumentative writing.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Mina Lee",
+      "Percy Liang",
+      "Qian Yang"
+     ],
+     "reference": "Mina Lee, Percy Liang and Qian Yang, the paper's authors.",
+     "evidence": [
+      {
+       "record_quote": "Authors: Mina Lee , Percy Liang , Qian Yang",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2022"
+     ],
+     "reference": "Published at CHI 2022 (arXiv v1 18 January 2022).",
+     "evidence": [
+      {
+       "record_quote": "Published as a conference paper at CHI 2022",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      },
+      {
+       "record_quote": "[Submitted on 18 Jan 2022 ( v1 ), last revised 25 Jan 2022 (this version, v2)]",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A dataset designed for revealing GPT-3's capabilities in assisting creative and argumentative writing.",
+     "evidence": [
+      {
+       "record_quote": "we present CoAuthor, a dataset designed for revealing GPT-3's capabilities in assisting creative and argumentative writing.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Interactions between 63 writers and four instances of GPT-3 across 1445 writing sessions.",
+     "evidence": [
+      {
+       "record_quote": "CoAuthor captures rich interactions between 63 writers and four instances of GPT-3 across 1445 writing sessions.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To address questions about GPT-3's language, ideation and collaboration capabilities and reveal its contribution as a writing 'collaborator' under various definitions of good collaboration, since LMs' capabilities are difficult to grasp.",
+     "evidence": [
+      {
+       "record_quote": "We demonstrate that CoAuthor can address questions about GPT-3's language, ideation, and collaboration capabilities, and reveal its contribution as a writing \"collaborator\" under various definitions of good collaboration.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      },
+      {
+       "record_quote": "their highly context-dependent capabilities are difficult to grasp and are often subjectively interpreted.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The dataset and a replay interface publicly available.",
+     "evidence": [
+      {
+       "record_quote": "The dataset and an interface for replaying the writing sessions are publicly available at this https URL .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/coauthor--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'coauthor' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "process-oriented dataset capturing human-AI collaborative writing interactions",
+    "basis": "The dataset reached by name with its authors, venue, statistics, logging, interface and access points."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "CoAuthor records timestamped events"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "developed by researchers Mina Lee, Percy Liang, and Qian Yang"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Qian Yang (CHI 2022)"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "process-oriented dataset capturing human-AI collaborative writing interactions"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "63 qualified crowd workers from Amazon Mechanical Turk paired with 4 instances of GPT-3."
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Download the full dataset, metadata, and survey responses at"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The dataset composed more finely than the census's saved abstract allows, from the dataset's own site, which the census could not read. It counts the writers, recruits them from a crowd platform and divides the text by percentage; the abstract's frame, the model as 'collaborator' under definitions of collaboration, is not carried.",
+   "key": "coauthor-dataset-aio-20261101",
+   "entry": "coauthor-dataset-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-coauthor"
+  }
+ ]
+}

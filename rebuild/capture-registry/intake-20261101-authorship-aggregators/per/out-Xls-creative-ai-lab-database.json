@@ -1,0 +1,261 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-creative-ai-lab-database",
+   "name": "Creative AI Tools & Resources Database (Creative AI Lab)",
+   "template": "site",
+   "external": true,
+   "type_basis": "A database: its operators' pages (Serpentine, King's College London) and a third-party launch report (HOLO), saved 2026-11-01, describe it as an ongoing project to aggregate tools and resources for practitioners incorporating machine learning and AI (the database itself unread). Read on the site template.",
+   "records": [
+    {
+     "source": "Creative AI Tools & Resources Database (Creative AI Lab) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--holo.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Creative AI Tools & Resources Database (Creative AI Lab) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Creative AI Tools & Resources Database (Creative AI Lab) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--serpentine.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Creative AI Lab",
+      "Creative AI Tools & Resources Database"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "produce the Creative AI Tools & Resources Database , a database of tools for artists, designers, engineers, curators and researchers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--serpentine.txt"
+      },
+      {
+       "record_quote": "The Creative AI Lab database is an ongoing project to aggregate tools and resources for artists, engineers, curators & researchers interested in incorporating machine learning (ML) and other forms of artificial intelligence (AI) into their practice.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Serpentine",
+      "King's College London",
+      "King’s College London",
+      "Department of Digital Humanities",
+      "AHRC"
+     ],
+     "reference": "The Creative AI Lab, a partnership between Serpentine R&D Platform and the Department of Digital Humanities, King's College London; funded by the AHRC and a LAHP PhD scholarship.",
+     "evidence": [
+      {
+       "record_quote": "The Creative AI Lab is a partnership between Serpentine R&D Platform and the Department of Digital Humanities, King’s College London.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--serpentine.txt"
+      },
+      {
+       "record_quote": "Creative AI Lab is a collaboration of the Department of Digital Humanities at King’s College London with the Serpentine.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      },
+      {
+       "record_quote": "The project is supported by funding from the AHRC and by a LAHP funded PhD scholarship.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2020",
+      "9 July",
+      "July 9"
+     ],
+     "reference": "Launched 9 July 2020.",
+     "evidence": [
+      {
+       "record_quote": "9 Jul 2020 – Ongoing",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--serpentine.txt"
+      },
+      {
+       "record_quote": "On Thursday 9 July the Creative AI Lab launches its website presenting a database for software, research, theory and education at the intersection of art and AI.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A database of tools for artists, designers, engineers, curators and researchers: software, research, theory and education at the intersection of art and AI.",
+     "evidence": [
+      {
+       "record_quote": "produce the Creative AI Tools & Resources Database , a database of tools for artists, designers, engineers, curators and researchers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--serpentine.txt"
+      },
+      {
+       "record_quote": "On Thursday 9 July the Creative AI Lab launches its website presenting a database for software, research, theory and education at the intersection of art and AI.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "At launch, a list of 65 essential tools contributed by the curator and researcher Luba Elliott (HOLO, third party).",
+     "evidence": [
+      {
+       "record_quote": "One of the launch highlights is a list of 65 essential tools, contributed by creative AI curator and researcher Luba Elliott.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--holo.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To aggregate tools and resources for practitioners incorporating machine learning and other forms of AI into their practice.",
+     "evidence": [
+      {
+       "record_quote": "The Creative AI Lab database is an ongoing project to aggregate tools and resources for artists, engineers, curators & researchers interested in incorporating machine learning (ML) and other forms of artificial intelligence (AI) into their practice.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--kcl.txt"
+      },
+      {
+       "record_quote": "to aggregate tools and resources for artists, engineers, curators & researchers interested in incorporating machine learning and other forms of artificial intelligence into their practice.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/creative-ai-lab-database--holo.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'creative-ai-lab-database' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a joint research partnership between Serpentine Arts Technologies and the Department of Digital Humanities at King's College London.",
+    "basis": "The lab and its database reached by name with partners, funders, launch date, criteria and tool categories."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Creative AI Tools & Resources Database"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "is a joint research partnership between Serpentine Arts Technologies and the Department of Digital Humanities at King's College London."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Launch Date: July 9, 2020"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "tools for artists, designers, engineers, curators, and researchers."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Audio: Mustango, Synplant 2, Stable Audio, RAVE, Neutone, Semilla, DDSP"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Purpose: An ongoing online database aggregating machine learning and artificial intelligence tools"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The database composed in a state later than any saved source, from the lab's own site. The one person the launch credited, and the programme's question of authorship, are absent.",
+   "key": "creative-ai-lab-database-aio-20261101",
+   "entry": "creative-ai-lab-database-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-creative-ai-lab-database"
+  }
+ ]
+}

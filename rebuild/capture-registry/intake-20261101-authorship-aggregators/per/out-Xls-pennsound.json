@@ -1,0 +1,276 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-pennsound",
+   "name": "PennSound",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own home and about pages and a third-party account (Wikipedia), saved 2026-11-01, describe it as an ongoing project producing and preserving poetry audio. A site, read on the site template.",
+   "records": [
+    {
+     "source": "PennSound (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "PennSound (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "PennSound (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "PennSound"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "PennSound is an ongoing project, committed to producing new audio recordings and preserving existing audio archives.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Center for Programs in Contemporary Writing",
+      "CPCW",
+      "Charles Bernstein",
+      "Al Filreis",
+      "Chris Mustazza"
+     ],
+     "reference": "A project of the Center for Programs in Contemporary Writing (University of Pennsylvania); directors Charles Bernstein, Al Filreis and Chris Mustazza.",
+     "evidence": [
+      {
+       "record_quote": "PennSound is a project of the Center for Programs in Contemporary Writing.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      },
+      {
+       "record_quote": "Charles Bernstein , Al Filreis , and Chris Mustazza , Directors",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2005"
+     ],
+     "reference": "Launched 2005.",
+     "evidence": [
+      {
+       "record_quote": "Launched 2005",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An ongoing project producing new audio recordings and preserving existing audio archives; a poetry website and online archive of free recordings of poets reading their own work.",
+     "evidence": [
+      {
+       "record_quote": "PennSound is an ongoing project, committed to producing new audio recordings and preserving existing audio archives.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      },
+      {
+       "record_quote": "PennSound is a poetry website and online archive that hosts free and downloadable recordings of poets reading their own work.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Recordings from Apollinaire (1913) to the present, historic recordings of Pound, Stevens, Williams and H.D., well over 50,000 sound files; Charles Ruas's radio programming.",
+     "evidence": [
+      {
+       "record_quote": "Guillaume Apollinaire, \"Le Pont Mirabeau\" (1913) (1:14):",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--home.txt"
+      },
+      {
+       "record_quote": "including historic recordings by poets such as Ezra Pound , Wallace Stevens , Guillaume Apollinaire , William Carlos Williams and H.D. ,",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      },
+      {
+       "record_quote": "Well over 50,000 sound files [ 4 ] are available for streaming and downloading",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      },
+      {
+       "record_quote": "Today we're happy to announce a new home for Charles Ruas's radio programming from the 70s, 80s, and 00s.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Committed to producing new audio recordings and preserving existing audio archives, with as much documentation of each recording as possible.",
+     "evidence": [
+      {
+       "record_quote": "PennSound is an ongoing project, committed to producing new audio recordings and preserving existing audio archives.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      },
+      {
+       "record_quote": "We intend to provide as much documentation about individual recordings as possible; new bibliographic information will be added over time. Please contact us if you can supplement the information already provided.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Free, for non-commercial use; every file named and retrievable under the poet's name.",
+     "evidence": [
+      {
+       "record_quote": "The files are intended to be used non-commercially by anyone interested in listening to them, and are furthermore available for use by teachers and libraries.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      },
+      {
+       "record_quote": "Sound files must be indexed and retrievable from a library catalog under the poet’s name and from search engines on the web.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      },
+      {
+       "record_quote": "All files must be named.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/pennsound--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'pennsound' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is the world's largest free digital archive of poetry audio, featuring over 50,000 recordings spanning from 1913 to the present.",
+    "basis": "The archive reached by name; host, directors, format, scope and programs given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "PennSound is a poetry website and online archive that hosts free and downloadable recordings of poets reading their own work."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Directors: Co-directed by Al Filreis, Charles Bernstein, and Chris Mustazza."
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is the world's largest free digital archive of poetry audio, featuring over 50,000 recordings spanning from 1913 to the present."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Scope: Includes early canonical and modernist voices (such as William Carlos Williams, Wallace Stevens, Gertrude Stein, and T.S. Eliot) alongside contemporary, experimental, and international poets."
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Archive Access: All audio files are open-access and noncommercial."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The archive composed accurately at its grain, with its directors and its newest collection carried. The feature that makes it a census row, a performer and a co-composer credited beside the author, is absent.",
+   "key": "pennsound-aio-20261101",
+   "entry": "pennsound-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-pennsound"
+  }
+ ]
+}

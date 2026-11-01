@@ -1,0 +1,294 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-viaf",
+   "name": "Virtual International Authority File (VIAF)",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: a third-party account (Wikipedia; viaf.org refused the fetch, http 403), saved 2026-11-01, describes it as an international authority file operated by OCLC. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Virtual International Authority File (VIAF) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "VIAF",
+      "Virtual International Authority File"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Virtual International Authority File ( VIAF ) is an international authority file . It is a joint project of several national libraries, operated by the Online Computer Library Center (OCLC).",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "OCLC",
+      "Online Computer Library Center"
+     ],
+     "reference": "Operated by OCLC as a joint project of several national libraries; a service of OCLC since 4 April 2012.",
+     "evidence": [
+      {
+       "record_quote": "The Virtual International Authority File ( VIAF ) is an international authority file . It is a joint project of several national libraries, operated by the Online Computer Library Center (OCLC).",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "The project transitioned to being a service of OCLC on 4 April 2012.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1998",
+      "2003",
+      "2012"
+     ],
+     "reference": "Initiated April 1998 by the Library of Congress, the German National Library and OCLC; consortium of 6 August 2003; an OCLC service from 4 April 2012.",
+     "evidence": [
+      {
+       "record_quote": "The project was initiated by the American Library of Congress (LC), the German National Library (DNB), and the OCLC in April 1998 as a proof-of-concept that authority records can be linked.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "on 6 August 2003,",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "The project transitioned to being a service of OCLC on 4 April 2012.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An international authority file linking the national authority files into a single virtual authority file, identical records from different data sets linked together.",
+     "evidence": [
+      {
+       "record_quote": "The Virtual International Authority File ( VIAF ) is an international authority file . It is a joint project of several national libraries, operated by the Online Computer Library Center (OCLC).",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "The aim is to link the national authority files (such as the German Integrated Authority File ) to a single virtual authority file. In this file, identical records from the different data sets are linked together.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Authority records from participants among them the Library of Congress NACO, ISNI, the Getty Union List of Artist Names and Wikidata (citation needed).",
+     "evidence": [
+      {
+       "record_quote": "Library of Congress NACO consortium (Name Authority Cooperative Program) LCCN",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "International Standard Name Identifier ISNI – London United Kingdom",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "Union List of Artist Names – Getty Research Institute ULAN JPG",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "Wikidata [ citation needed ] WKP",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To link existing national authorities, after failed attempts to develop a unique joint authority file.",
+     "evidence": [
+      {
+       "record_quote": "After several failed attempts to develop a unique joint authority file, the new idea was to link existing national authorities.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The data made available online for research, data exchange and sharing; reciprocal updating by OAI-PMH.",
+     "evidence": [
+      {
+       "record_quote": "The data is made available online and is available for research and, data exchange and sharing. Reciprocal updating uses the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) protocol.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Library of Congress",
+      "German National Library",
+      "DNB"
+     ],
+     "reference": "A proof-of-concept of the Library of Congress, the German National Library and OCLC (1998).",
+     "evidence": [
+      {
+       "record_quote": "The project was initiated by the American Library of Congress (LC), the German National Library (DNB), and the OCLC in April 1998 as a proof-of-concept that authority records can be linked.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "standard data number",
+      "identifier",
+      "cluster"
+     ],
+     "reference": "A VIAF record receives a standard data number; clusters may coalesce or split as the monthly algorithm runs, so some identifiers fluctuate.",
+     "evidence": [
+      {
+       "record_quote": "A VIAF record receives a standard data number, contains the primary \"see\" and \"see also\" records from the original documents, and refers to the original authority records.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "VIAF's clustering algorithm is run every month. As more data are added from participating libraries, clusters of authority records may coalesce or split, leading to some fluctuation in the VIAF identifier of certain authority records.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'viaf' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an international name authority service that combines multiple national library authority files into a single online database.",
+    "basis": "The authority file reached by name; operator, origin, purpose, clusters and access given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "is an international name authority service that combines multiple national library authority files into a single online database."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Operator: Hosted and maintained by OCLC (Online Computer Library Center)."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Origin: Initiated in 1998 as a joint proof-of-concept by the U.S. Library of Congress, the German National Library (DNB), and OCLC, launching formally in August 2003."
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is an international name authority service that combines multiple national library authority files into a single online database."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Purpose: Solves author name disambiguation by linking variant names, pseudonyms, and corporate titles across different languages, scripts, and regional spelling rules."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Access: The service and its APIs are publicly available via the"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Initiated in 1998 as a joint proof-of-concept by the U.S. Library of Congress, the German National Library (DNB), and OCLC"
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Integration: Each cluster receives a unique standard identifier/URI that is widely used in library catalogs, Wikipedia biographical articles, and Wikidata."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The authority file composed accurately on origin, operator and integration. On names it states a linkage of pseudonyms the saved source does not, and it gives the cluster identifier as unique where the source records its fluctuation.",
+   "key": "viaf-aio-20261101",
+   "entry": "viaf-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-viaf"
+  }
+ ]
+}

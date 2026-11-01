@@ -1,0 +1,274 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-wordcraft",
+   "name": "Wordcraft Writers Workshop",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a collaboration between Google's PAIR and Magenta teams and 13 professional writers. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Wordcraft Writers Workshop (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wordcraft Writers Workshop (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--learn.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wordcraft Writers Workshop (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--paper.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Wordcraft Writers Workshop"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Wordcraft Writers Workshop is a collaboration between Google's PAIR and Magenta teams, and 13 professional writers from a diverse set of creative writing backgrounds.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "PAIR",
+      "Magenta",
+      "Google"
+     ],
+     "reference": "Google's PAIR and Magenta teams; conducted by Andy Coenen and Ann Yuan (PAIR), Daphne Ippolito and Sehmon Burnam (Magenta).",
+     "evidence": [
+      {
+       "record_quote": "The Wordcraft Writers Workshop is a collaboration between Google's PAIR and Magenta teams, and 13 professional writers from a diverse set of creative writing backgrounds.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "The Wordcraft Writers Workshop was conducted by Andy Coenen and Ann Yuan, research engineers on the PAIR team, Daphne Ippolito, a research scientist working with Magenta , and Sehmon Burnam, a product manager at Magenta .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--learn.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A collaboration of Google's PAIR and Magenta teams with 13 professional writers, who were given 8 weeks to use Wordcraft, a LaMDA-powered tool for writing stories with AI.",
+     "evidence": [
+      {
+       "record_quote": "The Wordcraft Writers Workshop is a collaboration between Google's PAIR and Magenta teams, and 13 professional writers from a diverse set of creative writing backgrounds.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "The workshop cohort consisted of 13 professional writers, who were given 8 weeks to use Wordcraft.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--learn.txt"
+      },
+      {
+       "record_quote": "Wordcraft is a tool built by researchers at Google PAIR for writing stories with AI. The application is powered by LaMDA",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--learn.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Thirteen stories, each under its writer's name (Robin Sloan, Allison Parrish, Aaron Winslow and others), of 1,000-1,500 words, with a whitepaper drawn from the writers' journals and interviews.",
+     "evidence": [
+      {
+       "record_quote": "Author's Note Robin Sloan",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "Further Frankenstein Variations Allison Parrish",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "Some Crimes Aaron Winslow",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "Participants were asked to write a story of 1,000-1,500 words using Wordcraft.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--paper.txt"
+      },
+      {
+       "record_quote": "Creative Writing with an AI-Powered Writing Assistant: Perspectives from Professional Writers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--paper.txt"
+      },
+      {
+       "record_quote": "We also conducted two 45 minute interviews with each participant",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To explore the limits of co-writing with LaMDA and foster an honest and earnest conversation about technology and creativity.",
+     "evidence": [
+      {
+       "record_quote": "Together we explore the limits of co-writing with LaMDA and foster an honest and earnest conversation about the rapidly changing relationship between technology and creativity.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "No instructions to the writers on how to use the tool or how much generated text to keep; the stories not authored under explicit guidance; Google does not endorse them; participants consented to publication and were compensated.",
+     "evidence": [
+      {
+       "record_quote": "We explicitly didn't give writers any instructions regarding how they should use the tool or how much of their final story text should be directly generated by Wordcraft.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--learn.txt"
+      },
+      {
+       "record_quote": "The writers featured here have used Wordcraft along with their own creative vision and have not authored these stories under any sort of explicit guidance or instruction.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "Google does not endorse the content of any of the stories contained on this website.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--home.txt"
+      },
+      {
+       "record_quote": "Participants consented to their stories being published in a digital literary magazine of human-AI collaborative stories, and to the use of their feedback in the journals and interviews in this whitepaper. Participants were compensated for participating in the study.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wordcraft--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'wordcraft' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The Wordcraft Writers Workshop was a 2022 research project",
+    "basis": "The workshop reached by name with its teams, tool, cohort and findings, and its reception in 2026."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Wordcraft Writers Workshop was a 2022 research project"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "by Google’s PAIR (People + AI Research) and Magenta teams"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Participants used Wordcraft, an experimental text editor powered by Google’s LaMDA language model."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Thirteen diverse professional authors (including Ken Liu, Robin Sloan, and Eugenia Triantafyllou) spent eight weeks writing short stories with the tool"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "that explored AI-augmented creative writing."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The workshop composed at its grain and dated, with a reception the census row does not record. The paper's account of each writer's share of the text, the census row's ground for reading authorship as held by the named writer, is absent.",
+   "key": "wordcraft-writers-workshop-aio-20261101",
+   "entry": "wordcraft-writers-workshop-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-wordcraft"
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-in2writing",
+   "name": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing)",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a workshop series whose proceedings are an ACL Anthology venue. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2022.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "In2Writing",
+      "Intelligent and Interactive Writing Assistants"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) Acronym: In2Writing Venue ID: in2writing",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Association for Computational Linguistics",
+      "Katy Gero",
+      "Mina Lee",
+      "Ting-Hao",
+      "Vishakh Padmakumar"
+     ],
+     "reference": "The editors named per volume (2022: Huang, Raheja, Kang, Chung, Gissin, Lee, Gero; 2025: Padmakumar, Gero, Wambsganss, Sterman, Huang, Zhou, Chung); published by the Association for Computational Linguistics.",
+     "evidence": [
+      {
+       "record_quote": "Ting-Hao 'Kenneth' Huang , Vipul Raheja , Dongyeop Kang , John Joon Young Chung , Daniel Gissin , Mina Lee , Katy Ilonka Gero (Editors)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2022.txt"
+      },
+      {
+       "record_quote": "Vishakh Padmakumar , Katy Gero , Thiemo Wambsganss , Sarah Sterman , Ting-Hao Huang , David Zhou , John Chung (Editors)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      },
+      {
+       "record_quote": "Publisher: Association for Computational Linguistics",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2022"
+     ],
+     "reference": "The First Workshop, Dublin, May 2022.",
+     "evidence": [
+      {
+       "record_quote": "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2022) 15 papers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "Month: May Year: 2022 Address: Dublin, Ireland",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2022.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A workshop series on intelligent and interactive writing assistants, its proceedings held as an ACL Anthology venue.",
+     "evidence": [
+      {
+       "record_quote": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) Acronym: In2Writing Venue ID: in2writing",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2022) 15 papers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "Proceedings of the Fourth Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2025) 11 papers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "15 papers in the first workshop (Dublin, May 2022, with ACL's 60th Annual Meeting) and 11 in the fourth (Albuquerque, May 2025, with NAACL), on human-AI co-writing, control and ownership, student writer voice, and reader judgements of AI-assisted literary text.",
+     "evidence": [
+      {
+       "record_quote": "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2022) 15 papers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "60th Annual Meeting of the Association for Computational Linguistics",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2022.txt"
+      },
+      {
+       "record_quote": "Proceedings of the Fourth Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2025) 11 papers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "Month: May Year: 2025 Address: Albuquerque, New Mexico, US",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      },
+      {
+       "record_quote": "Nations of the Americas Chapter of the Association for Computational Linguistics (2025)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      },
+      {
+       "record_quote": "Interaction-Required Suggestions for Control, Ownership, and Awareness in Human- AI Co-Writing",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      },
+      {
+       "record_quote": "The Pure Poet: How Good is the Subjective Credibility and Stylistic Quality of Literary Short Texts Written with an Artificial Intelligence Tool as Compared to Texts Written by Human Authors?",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2022.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Materials published in or after 2016 under CC BY 4.0; the Anthology built by a team of volunteers.",
+     "evidence": [
+      {
+       "record_quote": "Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "The ACL Anthology is managed and built by the ACL Anthology team of volunteers.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "in2writing",
+      "10.18653/v1/2025.in2writing-1",
+      "979-8-89176-239-8"
+     ],
+     "reference": "Venue ID in2writing; the 2025 volume DOI 10.18653/v1/2025.in2writing-1, ISBN 979-8-89176-239-8.",
+     "evidence": [
+      {
+       "record_quote": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing) Acronym: In2Writing Venue ID: in2writing",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--venue.txt"
+      },
+      {
+       "record_quote": "DOI: 10.18653/v1/2025.in2writing-1 ISBN: 979-8-89176-239-8",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/in2writing--p2025.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'in2writing' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The In2Writing workshop is an academic event focused on Intelligent and Interactive Writing Assistants.",
+    "basis": "The workshop series reached by name with its purpose, two of its editions and its website."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Name: Workshop on Intelligent and Interactive Writing Assistants (In2Writing)"
+    },
+    {
+     "atom": "operator",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "The In2Writing workshop is an academic event focused on Intelligent and Interactive Writing Assistants."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "featuring 11 papers on topics like scientific figure captions, Arabic write-and-improve tools, and AI writing assistants in universities."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Venue ID: in2writing"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The series composed by its latest editions, two of them at CHI and absent from the census row. The first workshop, whose reader study is the census row's reason for holding the series, and every editor are absent.",
+   "key": "in2writing-workshop-aio-20261101",
+   "entry": "in2writing-workshop-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-in2writing"
+  }
+ ]
+}
