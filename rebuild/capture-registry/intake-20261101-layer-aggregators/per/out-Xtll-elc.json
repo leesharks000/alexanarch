@@ -1,0 +1,267 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-elc",
+   "name": "Electronic Literature Collection",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages and its organization's Wikipedia account, saved 2026-11-01, describe it as a publication of the Electronic Literature Organization in four volumes, published on the Web and as a physical version. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Electronic Literature Collection (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Electronic Literature Collection (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Electronic Literature Collection",
+      "ELC"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Electronic Literature Collection A Publication of the Electronic Literature Organization",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Electronic Literature Organization",
+      "ELO"
+     ],
+     "reference": "The Electronic Literature Organization, c/o Washington State University Vancouver as the collection's mailing address; Wikipedia (third party) has the ELO hosted at York University, Toronto.",
+     "evidence": [
+      {
+       "record_quote": "Electronic Literature Collection A Publication of the Electronic Literature Organization",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "c/o Washington State University Vancouver",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "The ELO is currently hosted at York University , Toronto, Canada, under the leadership of Caitlin Fisher",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2006"
+     ],
+     "reference": "Volume 1, October 2006.",
+     "evidence": [
+      {
+       "record_quote": "Volume 1 (October 2006)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Curated, edited volumes of electronic literature, published on the Web and as a physical version.",
+     "evidence": [
+      {
+       "record_quote": "The ELO has curated and edited four volumes of electronic literature.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt"
+      },
+      {
+       "record_quote": "Electronic Literature Collection is published on the Web and as a physical version. The physical publication of the ELC3 is forthcoming.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Four volumes, October 2006, February 2011, February 2016 and June 2022; works named with their authors (Judd Morrissey's The Jew's Daughter, Michael Joyce's Twelve Blue, Wikipedia); ELC4's authors writing in some thirty languages, Mezangelle among them (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "Volume 1 (October 2006)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "Volume 2 (February 2011)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "Volume 3 (February 2016)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "Volume 4 (June 2022)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "Most notable among these would be Judd Morrissey ’s The Jew’s Daughter , Michael Joyce ’s Twelve Blue",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt"
+      },
+      {
+       "record_quote": "ELC4 presents the largest and most diverse group yet of elit authors writing in Afrikaans",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt"
+      },
+      {
+       "record_quote": "Korean, Mezangelle , Norwegian",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Free USB copies of volumes 1 and 2 by mail to libraries, educators and individuals; the physical ELC3 forthcoming.",
+     "evidence": [
+      {
+       "record_quote": "Libraries, educators, and individuals may request a free copy of the volume 1 and 2 USB by mail:",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      },
+      {
+       "record_quote": "Electronic Literature Collection is published on the Web and as a physical version. The physical publication of the ELC3 is forthcoming.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/elc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'elc' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "featuring current and historical digital-born literary works",
+    "basis": "The collection reached by name with its publisher, its four volumes and dates, its forms and its access."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Electronic Literature Collection is open-access and free to read online:"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "anthologies published by the Electronic Literature Organization."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Volume 1: Released in October 2006"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "featuring current and historical digital-born literary works"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Volume 4: Released in June 2022 (featuring 132 works across 31 languages from 42 nationalities, optimized for mobile)"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "with past volumes also distributed via physical media like USB drives or CD-ROMs."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The collection composed accurately at the level of its volumes and their dates, with counts from cards. No work, author or editor is named, and The Readers Project, the census row's reason for holding the collection in the layer, does not surface.",
+   "key": "electronic-literature-collection-aio-20261101",
+   "entry": "electronic-literature-collection-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-elc"
+  }
+ ]
+}

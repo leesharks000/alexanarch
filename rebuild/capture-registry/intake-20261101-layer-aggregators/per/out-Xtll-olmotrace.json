@@ -1,0 +1,293 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-olmotrace",
+   "name": "OLMoTrace",
+   "template": "site",
+   "external": true,
+   "type_basis": "A tool: its maker's blog and its paper's arXiv page, saved 2026-11-01, describe it as a feature in the Ai2 Playground that traces the outputs of language models back to their full training data in real time. Read on the site template.",
+   "records": [
+    {
+     "source": "OLMoTrace (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "OLMoTrace (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "OLMoTrace"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Today we introduce OLMoTrace, a one-of-a-kind feature in the Ai2 Playground that lets you trace the outputs of language models back to their full, multi-trillion-token training data in real time.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Ai2",
+      "Allen Institute",
+      "Jiacheng Liu"
+     ],
+     "reference": "Ai2 (The Allen Institute for Artificial Intelligence), as a feature of the Ai2 Playground; the blog signed 'Jiacheng Liu et al.', the paper by Jiacheng Liu and 30 others.",
+     "evidence": [
+      {
+       "record_quote": "© The Allen Institute for Artificial Intelligence - All Rights Reserved.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "Jiacheng Liu et al. - Ai2",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "by Jiacheng Liu and 30 other authors",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2025"
+     ],
+     "reference": "Introduced 9 April 2025 (the blog; arXiv v1 the same day); the paper in the ACL 2025 demo track.",
+     "evidence": [
+      {
+       "record_quote": "April 9, 2025",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "[v1] Wed, 9 Apr 2025 17:59:35 UTC (6,674 KB)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      },
+      {
+       "record_quote": "ACL 2025 demo track",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Verbatim matches between segments of language model output and documents in the training text corpora: long and unique spans that appear verbatim at least once in the model's training data.",
+     "evidence": [
+      {
+       "record_quote": "OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      },
+      {
+       "record_quote": "The highlights indicate long and unique spans that appear verbatim at least once in the training data of this model.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The full training data of Ai2's three flagship models (OLMo 2 32B Instruct, OLMo 2 13B Instruct, OLMoE 1B 7B Instruct), for the 32B model five datasets of about 3.2 billion documents and 4.6 trillion tokens; applicable to any model whose training data is accessible.",
+     "evidence": [
+      {
+       "record_quote": "OLMoTrace is available today with our three flagship models: OLMo 2 32B Instruct , OLMo 2 13B Instruct , and OLMoE 1B 7B Instruct , and it can be applied to any language model for which you have access to the training data.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "In total, these five datasets contain about 3.2 billion documents and 4.6 trillion tokens, and OLMoTrace matches against all of them.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To enable researchers, developers and the general public to inspect where and how language models may have learned to generate certain word sequences; shown for fact checking, hallucination and creativity.",
+     "evidence": [
+      {
+       "record_quote": "We developed OLMoTrace to enable researchers, developers, and the general public to inspect where and how language models may have learned to generate certain word sequences.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Publicly available and fully open-source, its source code released; the interpretation of matches called 'quite nuanced', and factual confidence left to the user's own verification of the documents' sources.",
+     "evidence": [
+      {
+       "record_quote": "OLMoTrace is publicly available and fully open-source.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--arxiv.txt"
+      },
+      {
+       "record_quote": "We also release our source code .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "The interpretation of text matches with training data is quite nuanced.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      },
+      {
+       "record_quote": "If you personally verify that these documents come from trusted sources, you can gain confidence that this piece of information generated by the model is factually correct.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "infini-gram"
+     ],
+     "reference": "Built on infini-gram, with which the training data is indexed.",
+     "evidence": [
+      {
+       "record_quote": "To speed up computation, we index the training data with infini-gram and develop a novel parallel algorithm, reducing the time complexity of span finding from the naive O(L^2 * N) to O(L * log N)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/olmotrace--ai2.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'olmotrace' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "OLMoTrace is the first real-time system that traces language model outputs back to multi-trillion-token training datasets.",
+    "basis": "The tool reached by name with its maker, mechanism, supported models and uses, from its blog, paper and listings."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "OLMoTrace is the first real-time system that traces language model outputs back to multi-trillion-token training datasets."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Developed by the Allen Institute for AI (Ai2)"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "winner of Best Demo at ACL 2025"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "It tokenizes the model's generated text and scans for maximal matching word spans against a massive training corpus within seconds."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "for open models like OLMo 2 32B Instruct, OLMo 2 13B Instruct, and OLMoE 1B 7B Instruct."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "it lets users inspect the exact training text that influenced a model's response."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "how to access the open-source code on GitHub"
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "It uses an extended infini-gram suffix array index"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The tool composed accurately at the level of its mechanism, from its own blog and paper. A verbatim match becomes 'the exact training text that influenced' a response, the user's verification becomes the match's, and creative tracing widens from expressions to styles; what a matched document is shown under is not reached.",
+   "key": "olmotrace-aio-20261101",
+   "entry": "olmotrace-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-olmotrace"
+  }
+ ]
+}

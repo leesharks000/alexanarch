@@ -1,0 +1,300 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-the-pile",
+   "name": "The Pile",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a 825 GiB diverse, open source language modelling data set of 22 smaller datasets. A site, read on the site template.",
+   "records": [
+    {
+     "source": "The Pile (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "The Pile (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "The Pile (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Pile",
+      "Pile"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt"
+      },
+      {
+       "record_quote": "An 800GB Dataset of Diverse Text for Language Modeling",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "EleutherAI",
+      "Leo Gao"
+     ],
+     "reference": "EleutherAI (the home page footer); the paper by Leo Gao and 11 other authors.",
+     "evidence": [
+      {
+       "record_quote": "EleutherAI 2021",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt"
+      },
+      {
+       "record_quote": "by Leo Gao and 11 other authors",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "It was constructed by EleutherAI in 2020 and publicly released on December 31 of that year.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2020",
+      "December 31",
+      "31 Dec 2020"
+     ],
+     "reference": "Submitted and released 31 December 2020.",
+     "evidence": [
+      {
+       "record_quote": "[Submitted on 31 Dec 2020]",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "It was constructed by EleutherAI in 2020 and publicly released on December 31 of that year.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An 825 GiB English text corpus targeted at training large-scale language models: an open source language modelling data set of 22 smaller datasets combined.",
+     "evidence": [
+      {
+       "record_quote": "an 825 GiB English text corpus targeted at training large-scale language models.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "22 diverse subsets, existing and newly constructed, many from academic or professional sources; books, movie transcripts and scientific papers among other media; per Wikipedia's table Pile-CC 243.87, Books3 108.40, GitHub 102.18, PubMed Central 96.93, Gutenberg (PG-19) 11.68, total 886.03 (GB).",
+     "evidence": [
+      {
+       "record_quote": "The Pile is constructed from 22 diverse high-quality subsets -- both existing and newly constructed -- many of which derive from academic or professional sources.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "It is composed of 22 sub-datasets, including books, movie transcripts, and scientific papers, among other media.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Pile-CC 243.87",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Books3 108.40",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "GitHub * 102.18",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "PubMed Central * 96.93",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Gutenberg (PG-19) 11.68",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Total 886.03",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A training set whose diversity improves models over Raw CC and CC-100 on all its components, and a benchmark, Pile BPB, of world knowledge and reasoning across its domains.",
+     "evidence": [
+      {
+       "record_quote": "models trained on the Pile improve significantly over both Raw CC and CC-100 on all components of the Pile",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "Pile BPB is a measure of world knowledge and reasoning ability in these domains",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The code used in its construction made public; potentially concerning aspects of the data documented for prospective users.",
+     "evidence": [
+      {
+       "record_quote": "We make publicly available the code used in its construction.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      },
+      {
+       "record_quote": "Through an in-depth exploratory analysis, we document potentially concerning aspects of the data for prospective users.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'the-pile' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The Pile is an 825 GiB to 886 GB open-source English text dataset created by EleutherAI",
+    "basis": "The dataset reached by name with its maker, date, size, all 22 components, the models trained on it and its successor."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The Pile is an 825 GiB to 886 GB open-source English text dataset created by EleutherAI"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "created by EleutherAI and released on December 31, 2020"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "released on December 31, 2020"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "open-source English text dataset created by EleutherAI and released on December 31, 2020, to train large language models (LLMs)."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Combines 22 diverse sub-datasets across academic, web, prose, and code domains."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Designed to improve cross-domain knowledge, reasoning, and generalization compared to raw web scrapes like Common Crawl."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The dataset composed at its grain and itemized to its twenty-two components, the training layer named as the census row names it. Its literary component is glossed by genre, and the pirated source, the removal and the authors' suit that put works in it under their authors' names are reduced to 'content adjustments'.",
+   "key": "the-pile-dataset-aio-20261101",
+   "entry": "the-pile-dataset-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-the-pile"
+  }
+ ]
+}

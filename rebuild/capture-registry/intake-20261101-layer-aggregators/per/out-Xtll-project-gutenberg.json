@@ -1,0 +1,337 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-project-gutenberg",
+   "name": "Project Gutenberg",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages and its Wikipedia account, saved 2026-11-01, describe it as an online library of more than 75,000 free eBooks. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Project Gutenberg (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Project Gutenberg (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Project Gutenberg (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Project Gutenberg"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Project Gutenberg is an online library of more than 75,000 free eBooks.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Project Gutenberg Literary Archive Foundation",
+      "Michael Hart",
+      "Michael S. Hart",
+      "Eric Hellman"
+     ],
+     "reference": "The Project Gutenberg Literary Archive Foundation, which operates it; founded by Michael Hart; per Wikipedia, the foundation a 501(c)(3) of 2000, Eric Hellman acting CEO after Gregory Newby died in 2025.",
+     "evidence": [
+      {
+       "record_quote": "The Project Gutenberg Literary Archive Foundation , which operates Project Gutenberg and accepts donations.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      },
+      {
+       "record_quote": "Michael Hart, founder of Project Gutenberg, invented eBooks in 1971",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      },
+      {
+       "record_quote": "In 2000, a 501(c)(3) non-profit corporation , the Project Gutenberg Literary Archive Foundation, Inc.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "After Newby died in 2025, Eric Hellman became acting CEO of the foundation.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1971"
+     ],
+     "reference": "Michael Hart invented eBooks in 1971.",
+     "evidence": [
+      {
+       "record_quote": "Michael Hart, founder of Project Gutenberg, invented eBooks in 1971",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online library of free eBooks, free and always to be.",
+     "evidence": [
+      {
+       "record_quote": "Project Gutenberg is an online library of more than 75,000 free eBooks.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      },
+      {
+       "record_quote": "All Project Gutenberg eBooks are completely free and always will be.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The world's literature, digitized and proofread by volunteers: more than 75,000 eBooks (its about page), nearly 78,000 as of 22 March 2026 (Wikipedia); mostly full texts in the public domain, primarily works of the Western cultural tradition.",
+     "evidence": [
+      {
+       "record_quote": "Project Gutenberg is an online library of more than 75,000 free eBooks.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      },
+      {
+       "record_quote": "Since then, thousands of volunteers have digitized and diligently proofread the world’s literature.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      },
+      {
+       "record_quote": "Project Gutenberg had reached nearly 78,000 items in its collection of free eBooks.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "As of 22 March 2026",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "Most items in its collection are full texts of books or individual stories in the public domain .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "These are primarily works of literature from the Western cultural tradition .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To encourage the creation and distribution of eBooks.",
+     "evidence": [
+      {
+       "record_quote": "To encourage the creation and distribution of eBooks.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The website for human users only, automated access blocked, bulk downloads through mirrors and a machine-readable catalog; no warranty on copyright status outside the United States; material added after copyright clearance; the trademark barred from commercial or modified redistributions (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "This website is intended for human users only. Any perceived use of automated tools to access this website will result in a temporary or permanent block of your IP address.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      },
+      {
+       "record_quote": "If you want to download many books [1] manually or using an automated download software, download them from one of our mirrors, not from the main site.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      },
+      {
+       "record_quote": "If you want a machine-readable database of all our books, read the Offline Catalogs and Feeds page.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      },
+      {
+       "record_quote": "Project Gutenberg offers no warranty or assurances about copyright status or freedom to access or use its materials outside of the United States.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      },
+      {
+       "record_quote": "Material is added to the Project Gutenberg archive only after it has received a copyright clearance, and records of these clearances are saved for future reference.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "\"Project Gutenberg\" is a trademark of the organization, and the mark cannot be used in commercial or modified redistributions of public domain texts from the project.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Distributed Proofreaders",
+      "Internet Archive"
+     ],
+     "reference": "Closely affiliated with Distributed Proofreaders; sister projects permitted the trademark; the Internet Archive a previous backup distribution site and main host (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "Project Gutenberg is closely affiliated with Distributed Proofreaders , an Internet-based community for proofreading scanned texts.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "All sister projects are independent organizations that share the same ideals and have been given permission to use the Project Gutenberg trademark.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      },
+      {
+       "record_quote": "The Internet Archive , previous long-time backup distribution site, and previous main host site.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "gutenberg.org/ebooks",
+      "landing page"
+     ],
+     "reference": "A permanent landing page for each item, such as www.gutenberg.org/ebooks/11.",
+     "evidence": [
+      {
+       "record_quote": "When linking to a Project Gutenberg item, link to the main landing page such as www.gutenberg.org/ebooks/11.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      },
+      {
+       "record_quote": "We intend the landing page to be permanent.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/project-gutenberg--policy.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'project-gutenberg' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the AI Mode answer, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is the world's oldest digital library, providing nearly 80,000 free eBooks primarily focused on public domain literature.",
+    "basis": "The library reached by name with its founder, count, method, formats and famous holdings."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "[Project Gutenberg]"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Founded in 1971 by American writer [Michael S. Hart]"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Founded in 1971"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "providing nearly 80,000 free eBooks primarily focused on public domain literature."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "the vast majority of its collection consists of books published more than a century ago whose copyrights have expired."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "dedicated to digitizing, proofreading, and archiving cultural works to encourage global literacy and open access to historical texts."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "100% Free Access: Everything is available completely free of charge, with no registration, library cards, special apps, or user accounts required."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "largely collaborating through [Distributed Proofreaders]"
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The library composed accurately as a reader's library, with a count above its own. What the census row reads it for, the division between its human readers and the machine access it routes to mirrors, and the stripping of its name from resold texts, is not carried; the operating foundation is unnamed.",
+   "key": "project-gutenberg-aimode-20261101",
+   "entry": "project-gutenberg-aimode-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-project-gutenberg"
+  }
+ ]
+}

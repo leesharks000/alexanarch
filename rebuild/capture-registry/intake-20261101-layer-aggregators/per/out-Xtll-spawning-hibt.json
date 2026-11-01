@@ -1,0 +1,189 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-spawning-hibt",
+   "name": "Have I Been Trained?",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web service: on 2026-11-01 its address and its FAQ address, saved, served a static Spawning maintenance page that names a Do-Not-Train registry; what the service is, the saved sources do not state. Read on the site template.",
+   "records": [
+    {
+     "source": "Have I Been Trained? (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--faq.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Have I Been Trained? (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Spawning"
+     ],
+     "reference": "Spawning, the wordmark on the page served at haveibeentrained.com and at its FAQ address.",
+     "evidence": [
+      {
+       "record_quote": "Spawning Under Maintenance Hacking the mainframe...",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--home.txt"
+      },
+      {
+       "record_quote": "Spawning Under Maintenance Hacking the mainframe... AI trainers looking to respect the Do-Not-Train registry",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A Do-Not-Train registry, which the page addresses to AI trainers looking to respect it.",
+     "evidence": [
+      {
+       "record_quote": "AI trainers looking to respect the Do-Not-Train registry, please reach out to us at",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--home.txt"
+      },
+      {
+       "record_quote": "Spawning Under Maintenance Hacking the mainframe... AI trainers looking to respect the Do-Not-Train registry",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/spawning-hibt--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'spawning-hibt' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "You can check if your visual artwork or photos were included in popular AI image-generation datasets by visiting",
+    "basis": "The service reached by name, described as a working search over LAION-5B, with Spawning's Do Not Train Registry beside it."
+   },
+   "atoms": [
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Spawning AI allows you to submit your work or domain"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "their Do Not Train Registry to block future inclusion."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The service composed as a working search over an image dataset, with its registry beside it, where the census's saved pages show a maintenance notice. The registry's address to trainers becomes an opt-out offered to makers, and literature falls outside the tool by the composition's own limitation.",
+   "key": "have-i-been-trained-aio-20261101",
+   "entry": "have-i-been-trained-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-spawning-hibt"
+  }
+ ]
+}

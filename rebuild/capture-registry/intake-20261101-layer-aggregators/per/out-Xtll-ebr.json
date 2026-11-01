@@ -1,0 +1,290 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-ebr",
+   "name": "electronic book review",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network. A site, read on the site template.",
+   "records": [
+    {
+     "source": "electronic book review (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "electronic book review (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "electronic book review",
+      "Electronic Book Review",
+      "ebr"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "electronic book review is a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Joseph Tabbi",
+      "Mark Amerika",
+      "digital literary network",
+      "Center for Digital Narrative",
+      "Electronic Literature Organization"
+     ],
+     "reference": "Produced and published by the digital literary network; Editor in Chief Joseph Tabbi (University of Bergen); Founding Publisher Mark Amerika; supported by the Center for Digital Narrative, University of Bergen, the Electronic Literature Organization and CELL among others.",
+     "evidence": [
+      {
+       "record_quote": "electronic book review is a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "Editor in Chief: Joseph Tabbi ( University of Bergen )",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "Founding Publisher: Mark Amerika",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "Center for Digital Narrative, University of Bergen",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "Electronic Literature Organization Consortium for Electronic Literature (CELL)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A peer-reviewed diamond open access journal of critical writing that charges no APCs or submission charges.",
+     "evidence": [
+      {
+       "record_quote": "electronic book review is a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "ebr does not charge APCs or submission charges.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Critical writing in threads from 1996 onward (Writing Postfeminism, fall 1996; Critical Ecologies, winter 1996/97); the current machine-writing thread carries essays on large language models and prompting (Heckman, Moulthrop, Lennon), and Deena Larsen's call on Wikipedia (30 June 2026).",
+     "evidence": [
+      {
+       "record_quote": "machine-writing fictions present first person technocapitalism writing (post)feminism electropoetics internet nation critical ecologies web arts end construction image + narrative music/sound/noise writing under constraint enfolded",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt"
+      },
+      {
+       "record_quote": "Writing Postfeminism was guest edited by Elizabeth Joyce and Gay Lynn Crossley in the fall of 1996.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "Critical Ecologies was launched by Cary Wolfe and Joseph Tabbi in the winter of 1996/97.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "AI: A Matter of Significance by Davin Heckman 01-Oct-2026",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt"
+      },
+      {
+       "record_quote": "Movie Laughed in Sprocket-Language, or: a Night at the Chatbot by Stuart Moulthrop",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt"
+      },
+      {
+       "record_quote": "The Prompt as Practice by Brian Lennon",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt"
+      },
+      {
+       "record_quote": "Electronic Literature and Wikipedia: A Call to Action by Deena Larsen 30-Jun-2026",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Critically savvy, in-depth work addressing the digital future of literature, theory, criticism and the arts.",
+     "evidence": [
+      {
+       "record_quote": "ebr ’s editors are particularly interested in critically savvy, in-depth work addressing the digital future of literature, theory, criticism, and the arts.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Diamond open access with no APCs or submission charges; licensed CC BY-ND 4.0.",
+     "evidence": [
+      {
+       "record_quote": "ebr does not charge APCs or submission charges.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      },
+      {
+       "record_quote": "ebr is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "1553-1139",
+      "1553 1139"
+     ],
+     "reference": "ISSN 1553-1139.",
+     "evidence": [
+      {
+       "record_quote": "ISSN: 1553-1139",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/ebr--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'ebr' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is an open-access, peer-reviewed scholarly journal focused on digital textuality, cyberculture, and the intersection of literature, technology, and the arts.",
+    "basis": "The journal reached by name with its kind, founders, format and support, and its ISSN on a card."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "electronic book review (ebr) is an online, open access, peer-reviewed journal of critical writing"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Established in 1995 by Joseph Tabbi and Mark Amerika"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is an open-access, peer-reviewed scholarly journal focused on digital textuality"
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "the intersection of literature, technology, and the arts"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "ISSN 1553 1139"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The journal composed at its kind and its two founding figures, with a founding year from Wikipedia and Open Humanities Press that the census row records as unstated, and the editor and publisher made co-founders. The machine-writing thread and the essays the census row reads it for are absent.",
+   "key": "electronic-book-review-aio-20261101",
+   "entry": "electronic-book-review-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-ebr"
+  }
+ ]
+}

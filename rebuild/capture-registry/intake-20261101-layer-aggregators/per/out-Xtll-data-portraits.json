@@ -1,0 +1,265 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-data-portraits",
+   "name": "Data Portraits",
+   "template": "site",
+   "external": true,
+   "type_basis": "A method: its paper's arXiv page, saved 2026-11-01, describes it as artifacts that record training data and allow for downstream inspection, implemented with data sketching (the live interface unread). Read on the site template.",
+   "records": [
+    {
+     "source": "Data Portraits (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Data Portraits"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Data Portraits: Recording Foundation Model Training Data",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "We therefore propose a widespread adoption of Data Portraits: artifacts that record training data and allow for downstream inspection.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Marc Marone",
+      "Benjamin Van Durme",
+      "Marone",
+      "Van Durme"
+     ],
+     "reference": "The paper's two authors, Marc Marone and Benjamin Van Durme.",
+     "evidence": [
+      {
+       "record_quote": "Authors: Marc Marone , Benjamin Van Durme",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2023"
+     ],
+     "reference": "arXiv v1 6 March 2023, v2 14 December 2023; NeurIPS 2023 Datasets and Benchmarks.",
+     "evidence": [
+      {
+       "record_quote": "[v1] Mon, 6 Mar 2023 04:22:33 UTC (651 KB)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "[v2] Thu, 14 Dec 2023 16:55:42 UTC (614 KB)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "NeurIPS 2023 Datasets and Benchmarks",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Artifacts that record training data and allow for downstream inspection, proposed for widespread adoption.",
+     "evidence": [
+      {
+       "record_quote": "We therefore propose a widespread adoption of Data Portraits: artifacts that record training data and allow for downstream inspection.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "First we outline the properties of such an artifact and discuss how existing solutions can be used to increase transparency.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Implemented for a popular language modeling corpus (The Pile) and a code modeling dataset (The Stack).",
+     "evidence": [
+      {
+       "record_quote": "Using our tools, we document a popular language modeling corpus (The Pile) and a recently released code modeling dataset (The Stack).",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To answer whether a model has already encountered a given example during training, and so questions of test set leakage and model plagiarism, for datasets grown immense and opaque.",
+     "evidence": [
+      {
+       "record_quote": "Foundation models are trained on increasingly immense and opaque datasets.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "it can be difficult to answer the straightforward question: has the model already encountered a given example during training?",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "We show that our solution enables answering questions about test set leakage and model plagiarism.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A data-sketching solution stressing fast and space-efficient querying at 3% of the dataset size in overhead; a live interface released, and dataset and model creators called on to release Data Portraits beside current documentation.",
+     "evidence": [
+      {
+       "record_quote": "We then propose and implement a solution based on data sketching, stressing fast and space efficient querying.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "Our tool is lightweight and fast, costing only 3% of the dataset size in overhead.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      },
+      {
+       "record_quote": "We release a live interface of our tools at this https URL and call on dataset and model creators to release Data Portraits as a complement to current documentation practices.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/data-portraits--arxiv.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'data-portraits' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "collision",
+    "abn": false,
+    "span": "Contemporary research groups use the term for lightweight inspection tools",
+    "basis": "The paper's artifact reached as the last of four senses of the name, beside Du Bois's charts, Donath's portraits and Lupi's TED project; one card of eight is its page."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "lightweight inspection tools (like [Data Portraits]"
+    },
+    {
+     "atom": "operator",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "that record dataset training traces"
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "A disambiguation in which the training-data record is the last of four senses, named by the term alone with no author, venue, corpus or question. The membership query the census row reads it for, whether a work is in a recorded corpus, is not carried.",
+   "key": "data-portraits-aio-20261101",
+   "entry": "data-portraits-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-data-portraits"
+  }
+ ]
+}

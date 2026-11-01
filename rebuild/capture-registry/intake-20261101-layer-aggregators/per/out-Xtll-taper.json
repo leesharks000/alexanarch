@@ -1,0 +1,222 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-taper",
+   "name": "Taper",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as an online literary magazine for small computational pieces, published by Bad Quarto. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Taper (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Taper"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "an online literary magazine for small computational pieces, published by Bad Quarto",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Bad Quarto"
+     ],
+     "reference": "Published by Bad Quarto.",
+     "evidence": [
+      {
+       "record_quote": "an online literary magazine for small computational pieces, published by Bad Quarto",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2018"
+     ],
+     "reference": "Taper #1, Spring 2018.",
+     "evidence": [
+      {
+       "record_quote": "Taper #1 : a minimal labyrinth, Spring 2018.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online literary magazine for small computational pieces.",
+     "evidence": [
+      {
+       "record_quote": "an online literary magazine for small computational pieces, published by Bad Quarto",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Small computational literary pieces in sixteen themed issues listed from Spring 2018 to Spring 2026 (Taper #14, sonnets, Spring 2025), with a call for issue #17.",
+     "evidence": [
+      {
+       "record_quote": "Taper #1 : a minimal labyrinth, Spring 2018.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      },
+      {
+       "record_quote": "Taper #14 : sonnets, Spring 2025.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      },
+      {
+       "record_quote": "Taper #16 : for good measure, Spring 2026.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      },
+      {
+       "record_quote": "The call for work for issue #17 is also available!",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/taper--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'taper' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Taper is an online literary magazine for small computational pieces",
+    "basis": "The magazine reached by name in its own words, with its publisher, first issue, size limit and latest issue."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Taper is an online literary magazine"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Published by Bad Quarto"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Launched in Spring 2018 with Issue #1 (a minimal labyrinth)"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "online literary magazine for small computational pieces:"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "has grown past 16 issues (such as Taper #16: For Good Measure)"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The magazine composed in its own words, with a size limit, a lab and a collective drawn from cards and from no saved page, and a sixteenth issue that a card dates to August 2025 and the index to Spring 2026. No piece or author is named.",
+   "key": "taper-magazine-aio-20261101",
+   "entry": "taper-magazine-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-taper"
+  }
+ ]
+}

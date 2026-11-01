@@ -1,0 +1,268 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-nanogenmo",
+   "name": "NaNoGenMo",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as an annual month-long activity of writing code that generates a novel of 50k+ words, organised as a community on GitHub. A site, read on the site template.",
+   "records": [
+    {
+     "source": "NaNoGenMo (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "NaNoGenMo",
+      "National Novel Generation Month"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "National Novel Generation Month - based on an idea Darius Kazemi tweeted on a whim .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Darius Kazemi",
+      "dariusk",
+      "hugovk"
+     ],
+     "reference": "Official admins @dariusk and @hugovk; based on an idea Darius Kazemi tweeted; the community organised in GitHub repositories.",
+     "evidence": [
+      {
+       "record_quote": "Official admins for NaNoGenMo are @dariusk and @hugovk.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "National Novel Generation Month - based on an idea Darius Kazemi tweeted on a whim .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "We're just using this repo as a place to organize the community.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2013"
+     ],
+     "reference": "Editions every November from 2013.",
+     "evidence": [
+      {
+       "record_quote": "Editions 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A month-long activity, 12:01am GMT on 1 November to 12:01am GMT on 1 December: write code that generates a novel of 50k+ words.",
+     "evidence": [
+      {
+       "record_quote": "Spend the month of November writing code that generates a novel of 50k+ words. This is in the spirit of National Novel Writing Month 's interesting definition of a novel as 50,000 words of fiction.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "This activity starts at 12:01am GMT on Nov 1st and ends at 12:01am GMT Dec 1st.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The generated novels and their source code shared by participants at the end of each edition, 2013 to 2025, with dev diaries and sample output in each edition's issues.",
+     "evidence": [
+      {
+       "record_quote": "The only rule is that you share at least one novel and also your source code at the end.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "Editions 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "Feel free to post dev diaries, sample output, etc.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The only rule is to share at least one novel and the source code; the code need not be licensed in a particular way; the 'novel' is defined however the participant wants, a random Project Gutenberg novel included; copyright to be respected and not policed.",
+     "evidence": [
+      {
+       "record_quote": "The only rule is that you share at least one novel and also your source code at the end.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "The source code does not have to be licensed in a particular way, so long as you share it. The code itself does not need to be on GitHub, either.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "The \"novel\" is defined however you want. It could be 50,000 repetitions of the word \"meow\". It could literally grab a random novel from Project Gutenberg.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      },
+      {
+       "record_quote": "Please try to respect copyright. We're not going to police it, as ultimately it's on your head if you want to just copy/paste a Stephen King novel or whatever",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "National Novel Writing Month",
+      "NaNoWriMo"
+     ],
+     "reference": "In the spirit of National Novel Writing Month's definition of a novel as 50,000 words of fiction.",
+     "evidence": [
+      {
+       "record_quote": "Spend the month of November writing code that generates a novel of 50k+ words. This is in the spirit of National Novel Writing Month 's interesting definition of a novel as 50,000 words of fiction.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/nanogenmo--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'nanogenmo' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "NaNoGenMo (National Novel Generation Month) is an annual programming challenge",
+    "basis": "The event reached by name with its period, its rule, its definition of a novel, its GitHub practice, its origin and its admins."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "NaNoGenMo (National Novel Generation Month) is an annual programming challenge"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "managed by maintainers like Darius Kazemi and Hugo van Kemenade"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "spanning from 2013 onward"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Write and run code between November 1 (12:01 am GMT) and December 1 (12:01 am GMT) to output a text work of 50,000+ words."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Participants share both the generated text and the source code at the end of the event."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Respect for copyright applies."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Created as a playful programming spoof of NaNoWriMo (National Novel Writing Month)"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The event composed at its grain from its own page, its period and its sharing rule exact. The Project Gutenberg example that marks a generated novel as made from existing text is replaced by a list of techniques, and the page's unpoliced copyright request is given as a rule.",
+   "key": "nanogenmo-aio-20261101",
+   "entry": "nanogenmo-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-nanogenmo"
+  }
+ ]
+}

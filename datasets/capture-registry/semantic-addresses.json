@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-01T06:17:03Z",
+  "regenerated_at": "2026-11-01T15:09:20Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "759e5b387039231ae822187ad247c64496b6f0aa4bba677076103b32aa2172e3",
+    "mm-main-capture": "bfb2699ef8d737b2540e8cf15f374e95ff279a762cd947b037c45ca52ff05d39",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2661,
-  "total_observations": 1205,
+  "total_addresses": 2677,
+  "total_observations": 1223,
   "class_counts": {
-    "subjunctive": 1737,
-    "observed_address": 907,
+    "subjunctive": 1736,
+    "observed_address": 924,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1781,
+    "unmatched": 1797,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -15663,6 +15663,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "books3": {
+      "canonical_query": "books3",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'BOOKS3' ON THE OVERVIEW — THE DATASET IN PLACE OF THE SEARCH TOOL OVER IT; THE TOOL A CARD AND A CLOSING OFFER; THE COLLECTION'S MAKER, SIZE IN BOOKS AND LAWSUITS FROM SOURCES THE CENSUS DID NOT SAVE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "books3-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#books3-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/books3-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#books3-aio-20261101",
+          "details_excerpt": "THE DATASET, SIGNED OUT, 2026-11-01: 'Books3 is a controversial open-source text dataset containing over 191,000 pirated copyrighted books used widely to train generative artificial intelligence models.' Overview and cre"
+        }
+      ],
+      "originator": {
+        "name": "Books3 search (The Atlantic)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'BOOKS3' ON THE OVERVIEW — THE DATASET IN PLACE OF THE SEARCH TOOL OVER IT; THE TOOL A CARD AND A CLOSING OFFER; THE COLLECTION'S MAKER, SIZE IN BOOKS AND LAWSUITS FROM SOURCES THE CENSUS DID NOT SAVE"
+    },
     "borges": {
       "canonical_query": "borges",
       "is_quoted": false,
@@ -17084,6 +17119,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "cell consortium on electronic literature": {
+      "canonical_query": "cell consortium on electronic literature",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'CELL CONSORTIUM ON ELECTRONIC LITERATURE' ON THE OVERVIEW — THE CONSORTIUM AND ITS SEVEN MEMBER ARCHIVES AT THEIR GRAIN; A FOUNDER AND A HOST FROM THE ABOUT PAGE THE CENSUS DID NOT SAVE; THE WORKS UNDER THEIR AUTHORS NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "cell-consortium-on-electronic-literature-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#cell-consortium-on-electronic-literature-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/cell-consortium-on-electronic-literature-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#cell-consortium-on-electronic-literature-aio-20261101",
+          "details_excerpt": "THE CONSORTIUM, SIGNED OUT, 2026-11-01: 'The Consortium on Electronic Literature (CELL) is an international, open-access collaboration that provides centralized access to digital literary databases, archives, and institu"
+        }
+      ],
+      "originator": {
+        "name": "CELL Project: Consortium on Electronic Literature",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'CELL CONSORTIUM ON ELECTRONIC LITERATURE' ON THE OVERVIEW — THE CONSORTIUM AND ITS SEVEN MEMBER ARCHIVES AT THEIR GRAIN; A FOUNDER AND A HOST FROM THE ABOUT PAGE THE CENSUS DID NOT SAVE; THE WORKS UNDER THEIR AUTHORS NOT CARRIED"
+    },
     "center for the study of new testament manuscripts": {
       "canonical_query": "center for the study of new testament manuscripts",
       "is_quoted": false,
@@ -18060,9 +18130,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'COMMON CRAWL' ON THE OVERVIEW — THE FOUNDATION, ITS FORMATS AND ITS CADENCE AT THEIR GRAIN; ITS TRAINING USE GIVEN BY COMPANY, ITS DONORS NOT; THE ATLANTIC'S FINDING THINNED TO PUBLISHERS' CONCERNS, THE MISLEADING INDEX RESULTS NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "common-crawl-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#common-crawl-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/common-crawl-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#common-crawl-aio-20261101",
+          "details_excerpt": "THE FOUNDATION, SIGNED OUT, 2026-11-01: 'Common Crawl is a 501(c)(3) non-profit organization founded in 2007 by Gil Elbaz that collects, preserves, and freely shares an open archive of internet data.' Core details and sc"
+        }
+      ],
       "termindex": {
         "tier": 1,
         "count": 15,
@@ -18073,9 +18158,16 @@
         "variants": [],
         "extraction_source": "file_content"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Common Crawl",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'COMMON CRAWL' ON THE OVERVIEW — THE FOUNDATION, ITS FORMATS AND ITS CADENCE AT THEIR GRAIN; ITS TRAINING USE GIVEN BY COMPANY, ITS DONORS NOT; THE ATLANTIC'S FINDING THINNED TO PUBLISHERS' CONCERNS, THE MISLEADING INDEX RESULTS NOT CARRIED"
     },
     "commons": {
       "canonical_query": "commons",
@@ -22358,6 +22450,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "data portraits": {
+      "canonical_query": "data portraits",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'DATA PORTRAITS' ON THE OVERVIEW — THE TRAINING-DATA RECORD THE LAST OF FOUR SENSES, WITH NO AUTHOR, CORPUS OR QUESTION; DU BOIS, DONATH AND LUPI COMPOSED AROUND IT; A PAGE UNDER ITS NAME INDEXED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "data-portraits-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#data-portraits-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/data-portraits-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#data-portraits-aio-20261101",
+          "details_excerpt": "THE NAME, SIGNED OUT, 2026-11-01: 'Data portraits are visual representations of people made by plotting their accumulated data rather than drawing or photographing their physical faces.' Key examples and meanings: W. E. "
+        }
+      ],
+      "originator": {
+        "name": "Data Portraits",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'DATA PORTRAITS' ON THE OVERVIEW — THE TRAINING-DATA RECORD THE LAST OF FOUR SENSES, WITH NO AUTHOR, CORPUS OR QUESTION; DU BOIS, DONATH AND LUPI COMPOSED AROUND IT; A PAGE UNDER ITS NAME INDEXED"
+    },
     "data provenance explorer": {
       "canonical_query": "data provenance explorer",
       "is_quoted": false,
@@ -25148,6 +25275,41 @@
       "latest_observation_date": "2026-06-24",
       "latest_status": "CAPTURE"
     },
+    "dolma dataset": {
+      "canonical_query": "dolma dataset",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'DOLMA DATASET' ON THE OVERVIEW — THE CORPUS AT ITS GRAIN AND PAST THE SAVED ABSTRACT; AI2 NAMED WHERE THE CENSUS NAMES NO INSTITUTION; WHETHER A DOCUMENT KEEPS ITS AUTHOR NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "dolma-dataset-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#dolma-dataset-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#dolma-dataset-aio-20261101",
+          "details_excerpt": "THE CORPUS, SIGNED OUT, 2026-11-01: 'Dolma is an open-source 3-trillion-token English corpus created by the Allen Institute for Artificial Intelligence (Ai2) to support language model pretraining and transparency.' Acces"
+        }
+      ],
+      "originator": {
+        "name": "Dolma",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'DOLMA DATASET' ON THE OVERVIEW — THE CORPUS AT ITS GRAIN AND PAST THE SAVED ABSTRACT; AI2 NAMED WHERE THE CENSUS NAMES NO INSTITUTION; WHETHER A DOCUMENT KEEPS ITS AUTHOR NOT CARRIED"
+    },
     "dolphindiana": {
       "canonical_query": "dolphindiana",
       "is_quoted": false,
@@ -25912,6 +26074,76 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "electronic book review": {
+      "canonical_query": "electronic book review",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ELECTRONIC BOOK REVIEW' ON THE OVERVIEW — THE JOURNAL AND ITS TWO FOUNDING FIGURES AT THEIR GRAIN; A FOUNDING YEAR THE CENSUS ROW CALLS UNSTATED, FROM WIKIPEDIA; THE MACHINE-WRITING THREAD NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "electronic-book-review-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#electronic-book-review-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/electronic-book-review-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#electronic-book-review-aio-20261101",
+          "details_excerpt": "THE JOURNAL, SIGNED OUT, 2026-11-01: 'The Electronic Book Review (ebr) is an open-access, peer-reviewed scholarly journal focused on digital textuality, cyberculture, and the intersection of literature, technology, and t"
+        }
+      ],
+      "originator": {
+        "name": "electronic book review",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ELECTRONIC BOOK REVIEW' ON THE OVERVIEW — THE JOURNAL AND ITS TWO FOUNDING FIGURES AT THEIR GRAIN; A FOUNDING YEAR THE CENSUS ROW CALLS UNSTATED, FROM WIKIPEDIA; THE MACHINE-WRITING THREAD NOT CARRIED"
+    },
+    "electronic literature collection": {
+      "canonical_query": "electronic literature collection",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ELECTRONIC LITERATURE COLLECTION' ON THE OVERVIEW — THE FOUR VOLUMES AT THEIR DATES; COUNTS OF WORKS FROM CARDS; NO WORK AND NO AUTHOR NAMED, THE READERS PROJECT OF VOLUME 3 AMONG THEM",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "electronic-literature-collection-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#electronic-literature-collection-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#electronic-literature-collection-aio-20261101",
+          "details_excerpt": "THE COLLECTION, SIGNED OUT, 2026-11-01: 'The Electronic Literature Collection is open-access and free to read online:' then 'a periodical publication produced by the Electronic Literature Organization (ELO) featuring cur"
+        }
+      ],
+      "originator": {
+        "name": "Electronic Literature Collection",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ELECTRONIC LITERATURE COLLECTION' ON THE OVERVIEW — THE FOUR VOLUMES AT THEIR DATES; COUNTS OF WORKS FROM CARDS; NO WORK AND NO AUTHOR NAMED, THE READERS PROJECT OF VOLUME 3 AMONG THEM"
+    },
     "electronic literature lab": {
       "canonical_query": "electronic literature lab",
       "is_quoted": false,
@@ -26053,6 +26285,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "elmcip electronic literature knowledge base": {
+      "canonical_query": "elmcip electronic literature knowledge base",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ELMCIP ELECTRONIC LITERATURE KNOWLEDGE BASE' ON THE OVERVIEW — THE FROZEN ARCHIVE AT ITS GRAIN AND ITS CLOSING MONTH; ITS COUNTS GIVEN AS THOUSANDS; NO RECORD NAMED, TAROKO GORGE AND THE 1952 GENERATOR AMONG THEM",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "elmcip-electronic-literature-knowledge-base-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#elmcip-electronic-literature-knowledge-base-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/elmcip-electronic-literature-knowledge-base-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#elmcip-electronic-literature-knowledge-base-aio-20261101",
+          "details_excerpt": "THE KNOWLEDGE BASE, SIGNED OUT, 2026-11-01: 'The ELMCIP Electronic Literature Knowledge Base is a comprehensive, cross-referenced digital humanities research resource for electronic literature, preserved as a frozen arch"
+        }
+      ],
+      "originator": {
+        "name": "ELMCIP Electronic Literature Knowledge Base",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ELMCIP ELECTRONIC LITERATURE KNOWLEDGE BASE' ON THE OVERVIEW — THE FROZEN ARCHIVE AT ITS GRAIN AND ITS CLOSING MONTH; ITS COUNTS GIVEN AS THOUSANDS; NO RECORD NAMED, TAROKO GORGE AND THE 1952 GENERATOR AMONG THEM"
     },
     "emily antioch": {
       "canonical_query": "emily antioch",
@@ -32131,6 +32398,111 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "hathitrust digital library": {
+      "canonical_query": "hathitrust digital library",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'HATHITRUST DIGITAL LIBRARY' IN AI MODE — THE REPOSITORY AND ITS ACCESS TIERS AT THEIR GRAIN; ITS RESEARCH CENTER OFFERED IN THE PRESENT TENSE A MONTH AFTER ITS SERVICES ENDED; THE FAIR-USE RULING NOT CARRIED",
+          "surface": "Google AI Mode",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "hathitrust-digital-library-aimode-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#hathitrust-digital-library-aimode-20261101",
+          "record_url": "https://www.alexanarch.org/captures/hathitrust-digital-library-aimode-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#hathitrust-digital-library-aimode-20261101",
+          "details_excerpt": "THE LIBRARY, SIGNED OUT, 2026-11-01, AI MODE: 'The HathiTrust Digital Library is a massive, large-scale collaborative digital repository containing more than 18 million digitized volumes. Founded in 2008 and administered"
+        }
+      ],
+      "originator": {
+        "name": "HathiTrust Digital Library",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'HATHITRUST DIGITAL LIBRARY' IN AI MODE — THE REPOSITORY AND ITS ACCESS TIERS AT THEIR GRAIN; ITS RESEARCH CENTER OFFERED IN THE PRESENT TENSE A MONTH AFTER ITS SERVICES ENDED; THE FAIR-USE RULING NOT CARRIED"
+    },
+    "hathitrust research center": {
+      "canonical_query": "hathitrust research center",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'HATHITRUST RESEARCH CENTER' ON THE OVERVIEW — THE CENTER GIVEN BY ITS CLOSING, DATED AS ITS OWN PAGE DATES IT; WHAT IT MADE AND WHAT OUTLASTS IT NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "hathitrust-research-center-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#hathitrust-research-center-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/hathitrust-research-center-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#hathitrust-research-center-aio-20261101",
+          "details_excerpt": "THE CENTER, SIGNED OUT, 2026-11-01: 'The HathiTrust Research Center (HTRC) is winding down its public services as HathiTrust suspends HTRC funding at the end of 2026.' Key status and details: closure timeline ('Announced"
+        }
+      ],
+      "originator": {
+        "name": "HathiTrust Research Center Analytics",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'HATHITRUST RESEARCH CENTER' ON THE OVERVIEW — THE CENTER GIVEN BY ITS CLOSING, DATED AS ITS OWN PAGE DATES IT; WHAT IT MADE AND WHAT OUTLASTS IT NOT CARRIED"
+    },
+    "have i been trained": {
+      "canonical_query": "have i been trained",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'HAVE I BEEN TRAINED' ON THE OVERVIEW — THE SERVICE GIVEN AS A WORKING SEARCH OF ONE IMAGE DATASET; THE MAINTENANCE PAGE THE CENSUS SAVED NOT CARRIED; TEXT PLACED OUTSIDE ITS REACH",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "have-i-been-trained-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#have-i-been-trained-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/have-i-been-trained-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#have-i-been-trained-aio-20261101",
+          "details_excerpt": "THE SERVICE, SIGNED OUT, 2026-11-01: 'You can check if your visual artwork or photos were included in popular AI image-generation datasets by visiting Have I Been Trained?.' What the tool does (the dataset searched, 'LAI"
+        }
+      ],
+      "originator": {
+        "name": "Have I Been Trained?",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'HAVE I BEEN TRAINED' ON THE OVERVIEW — THE SERVICE GIVEN AS A WORKING SEARCH OF ONE IMAGE DATASET; THE MAINTENANCE PAGE THE CENSUS SAVED NOT CARRIED; TEXT PLACED OUTSIDE ITS REACH"
+    },
     "heart vs star": {
       "canonical_query": "heart vs star",
       "is_quoted": false,
@@ -36398,6 +36770,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-31",
       "latest_status": "'INTERNATIONAL INSTITUTE OF SOCIAL HISTORY' IN AI MODE — THE INSTITUTE AT ITS GRAIN; THE PAPERS OF MARX, ENGELS AND BAKUNIN NAMED IN ONE CUSTODY"
+    },
+    "internet archive": {
+      "canonical_query": "internet archive",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'INTERNET ARCHIVE' ON THE OVERVIEW — THE LIBRARY AND ITS WAYBACK MACHINE AT THEIR GRAIN; ITS TAKEDOWN PRACTICE TAKEN FROM REDDIT; ITS LENDING WITHOUT THE JUDGMENT THAT LIMITS IT; NO WORD OF TRAINING",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "internet-archive-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#internet-archive-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/internet-archive-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#internet-archive-aio-20261101",
+          "details_excerpt": "THE LIBRARY, SIGNED OUT, 2026-11-01: 'The Internet Archive is a non-profit digital library founded in 1996 by Brewster Kahle and headquartered in San Francisco, California.' What it offers (the Wayback Machine, 'over 1 t"
+        }
+      ],
+      "originator": {
+        "name": "Internet Archive",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'INTERNET ARCHIVE' ON THE OVERVIEW — THE LIBRARY AND ITS WAYBACK MACHINE AT THEIR GRAIN; ITS TAKEDOWN PRACTICE TAKEN FROM REDDIT; ITS LENDING WITHOUT THE JUDGMENT THAT LIMITS IT; NO WORD OF TRAINING"
     },
     "interpretive elaboration": {
       "canonical_query": "interpretive elaboration",
@@ -45982,6 +46389,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "nanogenmo": {
+      "canonical_query": "nanogenmo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'NANOGENMO' ON THE OVERVIEW — THE EVENT, ITS PERIOD AND ITS RULE AT THEIR GRAIN; THE NOVEL FROM PROJECT GUTENBERG REPLACED BY TECHNIQUES; A COPYRIGHT REQUEST LEFT TO THE PARTICIPANT GIVEN AS A RULE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "nanogenmo-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#nanogenmo-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/nanogenmo-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#nanogenmo-aio-20261101",
+          "details_excerpt": "THE EVENT, SIGNED OUT, 2026-11-01: 'NaNoGenMo (National Novel Generation Month) is an annual programming challenge where participants spend the month of November writing computer code to procedurally generate a novel of "
+        }
+      ],
+      "originator": {
+        "name": "NaNoGenMo",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'NANOGENMO' ON THE OVERVIEW — THE EVENT, ITS PERIOD AND ITS RULE AT THEIR GRAIN; THE NOVEL FROM PROJECT GUTENBERG REPLACED BY TECHNIQUES; A COPYRIGHT REQUEST LEFT TO THE PARTICIPANT GIVEN AS A RULE"
+    },
     "nanopublications": {
       "canonical_query": "nanopublications",
       "is_quoted": false,
@@ -47619,6 +48061,19 @@
           "record_url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#olmotrace-aio-20261029",
           "details_excerpt": "OLMOTRACE, BY NAME, ON GOOGLE'S AI OVERVIEW, SIGNED OUT, 2026-10-29: 'an open-source system developed by the Allen Institute for Artificial Intelligence (Ai2) that traces language model outputs back to their multi-trilli"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE AUTHORS' USE GIVEN WITHOUT THEIR LIMIT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "olmotrace-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#olmotrace-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/olmotrace-aio-20261029/#olmotrace-aio-20261101",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#olmotrace-aio-20261101",
+          "details_excerpt": "THE TOOL, SIGNED OUT, 2026-11-01: 'OLMoTrace is the first real-time system that traces language model outputs back to multi-trillion-token training datasets. Developed by the Allen Institute for AI (Ai2) and winner of Be"
         }
       ],
       "originator": {
@@ -47629,7 +48084,7 @@
         "basis": "Not the archive's: OLMoTrace; its operator, as the record gives it: Allen Institute for AI (Ai2), with the University of Washington, UC Berkeley and Stanford. Formalized by the provenance meta-aggregator record of 2026-10-29 (https://www.provenanceerasure.org/aggregators/olmotrace/), editor Lee Sharks; the record's fields carry verbatim quotes from the sources it saved with sha256, each with its basis (the operator's own page or a third-party account). Recorded 2026-10-29; repaired the same day."
       },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-10-29",
+      "latest_observation_date": "2026-11-01",
       "latest_status": "OLMOTRACE ON THE OVERVIEW — AI2, REAL TIME, INFINI-GRAM; 'FACT-CHECKING: VERIFY WHETHER SPECIFIC CLAIMS … ARE BACKED BY REAL TRAINING DOCUMENTS', THE AUTHORS' USE GIVEN WITHOUT THEIR LIMIT"
     },
     "omega": {
@@ -52844,6 +53299,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "project gutenberg": {
+      "canonical_query": "project gutenberg",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'PROJECT GUTENBERG' IN AI MODE — THE LIBRARY AT ITS GRAIN, FOUNDER AND VOLUNTEERS NAMED, ITS COUNT ABOVE EVERY SAVED SOURCE; ITS FOUNDATION, ITS HUMAN-USERS RULE AND ITS PASSAGE INTO TRAINING DATA NOT CARRIED; FIVE WORKS UNDER THEIR AUTHORS",
+          "surface": "Google AI Mode",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "project-gutenberg-aimode-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#project-gutenberg-aimode-20261101",
+          "record_url": "https://www.alexanarch.org/captures/project-gutenberg-aimode-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#project-gutenberg-aimode-20261101",
+          "details_excerpt": "THE LIBRARY, SIGNED OUT, 2026-11-01, AI MODE: 'Project Gutenberg is the world's oldest digital library, providing nearly 80,000 free eBooks primarily focused on public domain literature. Founded in 1971 by American write"
+        }
+      ],
+      "originator": {
+        "name": "Project Gutenberg",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'PROJECT GUTENBERG' IN AI MODE — THE LIBRARY AT ITS GRAIN, FOUNDER AND VOLUNTEERS NAMED, ITS COUNT ABOVE EVERY SAVED SOURCE; ITS FOUNDATION, ITS HUMAN-USERS RULE AND ITS PASSAGE INTO TRAINING DATA NOT CARRIED; FIVE WORKS UNDER THEIR AUTHORS"
     },
     "projection test": {
       "canonical_query": "projection test",
@@ -68551,6 +69041,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "taper magazine": {
+      "canonical_query": "taper magazine",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'TAPER MAGAZINE' ON THE OVERVIEW — THE MAGAZINE IN ITS OWN WORDS; ITS SIZE LIMIT AND AN MIT LAB FROM CARDS; ITS SIXTEENTH ISSUE DATED BY A CARD A SEASON BEFORE THE INDEX DATES IT; NO PIECE AND NO AUTHOR",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "taper-magazine-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#taper-magazine-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/taper-magazine-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#taper-magazine-aio-20261101",
+          "details_excerpt": "THE MAGAZINE, SIGNED OUT, 2026-11-01: 'Taper is an online literary magazine for small computational pieces:' with a link to the site; what it is: format ('A browser-based, biannual online literary journal and digital zin"
+        }
+      ],
+      "originator": {
+        "name": "Taper",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'TAPER MAGAZINE' ON THE OVERVIEW — THE MAGAZINE IN ITS OWN WORDS; ITS SIZE LIMIT AND AN MIT LAB FROM CARDS; ITS SIXTEENTH ISSUE DATED BY A CARD A SEASON BEFORE THE INDEX DATES IT; NO PIECE AND NO AUTHOR"
+    },
     "taxonomic injury": {
       "canonical_query": "taxonomic injury",
       "is_quoted": false,
@@ -71654,6 +72179,41 @@
       "latest_observation_date": "2026-09-27",
       "latest_status": "THE MONTH READ AS A SYSTEM, THE SUPERSESSION CARRIED"
     },
+    "the literary history of artificial intelligence": {
+      "canonical_query": "the literary history of artificial intelligence",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'THE LITERARY HISTORY OF ARTIFICIAL INTELLIGENCE' ON THE OVERVIEW — THE EXHIBIT'S TITLE ANSWERED AS ITS TOPIC; THE EXHIBIT ONE BULLET, ITS TIMELINE AND ONE OF ITS ITEMS COMPOSED AS GENERAL HISTORY; ITS PLOT GENERATORS AND STRACHEY'S PROGRAM NOT NAMED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "the-literary-history-of-artificial-intelligence-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#the-literary-history-of-artificial-intelligence-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/the-literary-history-of-artificial-intelligence-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#the-literary-history-of-artificial-intelligence-aio-20261101",
+          "details_excerpt": "THE TITLE, SIGNED OUT, 2026-11-01: 'The literary history of artificial intelligence spans thousands of years of human storytelling, stretching from ancient mythological automata to modern algorithmic text generation.' Th"
+        }
+      ],
+      "originator": {
+        "name": "The Literary History of Artificial Intelligence",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'THE LITERARY HISTORY OF ARTIFICIAL INTELLIGENCE' ON THE OVERVIEW — THE EXHIBIT'S TITLE ANSWERED AS ITS TOPIC; THE EXHIBIT ONE BULLET, ITS TIMELINE AND ONE OF ITS ITEMS COMPOSED AS GENERAL HISTORY; ITS PLOT GENERATORS AND STRACHEY'S PROGRAM NOT NAMED"
+    },
     "the next electronic literature organization": {
       "canonical_query": "the next electronic literature organization",
       "is_quoted": false,
@@ -71741,6 +72301,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-20",
       "latest_status": "THE PARTICLE — THE QUALIFIER IT MEASURES, ADDED IN ITS OWN SUMMARY"
+    },
+    "the pile dataset": {
+      "canonical_query": "the pile dataset",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'THE PILE DATASET' ON THE OVERVIEW — THE DATASET ITEMIZED, ALL TWENTY-TWO COMPONENTS; BOOKS3 AS 'LONG-FORM LITERARY TEXT', ITS PIRATED SOURCE, ITS REMOVAL AND THE AUTHORS' SUIT GIVEN AS 'CONTENT ADJUSTMENTS'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "the-pile-dataset-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#the-pile-dataset-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/the-pile-dataset-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#the-pile-dataset-aio-20261101",
+          "details_excerpt": "THE DATASET, SIGNED OUT, 2026-11-01: 'The Pile is an 825 GiB to 886 GB open-source English text dataset created by EleutherAI and released on December 31, 2020, to train large language models (LLMs).' Key overview (size,"
+        }
+      ],
+      "originator": {
+        "name": "The Pile",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'THE PILE DATASET' ON THE OVERVIEW — THE DATASET ITEMIZED, ALL TWENTY-TWO COMPONENTS; BOOKS3 AS 'LONG-FORM LITERARY TEXT', ITS PIRATED SOURCE, ITS REMOVAL AND THE AUTHORS' SUIT GIVEN AS 'CONTENT ADJUSTMENTS'"
     },
     "the restored academy": {
       "canonical_query": "the restored academy",

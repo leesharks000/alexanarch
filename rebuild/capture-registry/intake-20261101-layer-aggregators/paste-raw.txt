@@ -1,0 +1,611 @@
+<system-reminder>The user's timezone is America/New_York (UTC-05:00). Message sent at Sun 2026-11-01 09:56 local time.</system-reminder>@"/mnt/user-data/attachments/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/38fca2b9-attachment.txt" @"/mnt/user-data/attachments/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/3affc695-attachment.txt" captures, then /nons, then single pages: AI Mode Conversation
+You said: OLMoTraceOLMoTrace
+OLMoTrace is the first real-time system that traces language model outputs back to multi-trillion-token training datasets. Developed by the Allen Institute for AI (Ai2) and winner of Best Demo at ACL 2025, it lets users inspect the exact training text that influenced a model's response. [[1](https://www.google.com/goto?url=CAESWAHrOzAVO0qGnctNVt5S-hsr44-KXZSQt3aQhexk5C-pNlE8QJ8ymrF9PkgAhsVM4u2GNGpI0Jkdo4kDg9j9nWgvv3v1du9XxsXwpEy2n3rNxK7suHMYvK4), [2](https://www.google.com/goto?url=CAESYgHrOzAVwZXrpqdVe9FbrwtjSc7eQZxpQMV1rW45fpmiYcEun6qtw5BkoUFZYGnw5BisqP15dw6xzeIBd-c5UZtymCKlPn3GdZsdjmSWuyAd3HUQoS63-eoB7id8WZ2i6xYm), [3](https://www.google.com/goto?url=CAESYwHrOzAVoBdCmgaMv_aVuPblFx2Fl1rTr5jRtpHjFt8bY9t3-kFUMnJHUCi4fKi9syj-czcVi4-vTzxH4_FgbW1u53Og3AFWYhVl8jdf6ShVbh-eNt1Txau2fsSjoPS_qA6cPg)]
+How OLMoTrace Works
+
+* Verbatim Matching: It tokenizes the model's generated text and scans for maximal matching word spans against a massive training corpus within seconds. [[1](https://www.google.com/goto?url=CAESZQHrOzAVxlEQh8DtUS6saF7_ir0WDWTt10oJOkUyoZLZ5V5YBJVgGvaRQHjFqplwzUNuPtXEMikcc4i3XR090HFesSg_GHHBxQB2LQXhKyuji5rI2Pb1BhQ4Ln80dBGmKiY1Avss), [2](https://www.google.com/goto?url=CAESWAHrOzAVO0qGnctNVt5S-hsr44-KXZSQt3aQhexk5C-pNlE8QJ8ymrF9PkgAhsVM4u2GNGpI0Jkdo4kDg9j9nWgvv3v1du9XxsXwpEy2n3rNxK7suHMYvK4)]
+* Infini-gram Technology: It uses an extended infini-gram suffix array index and parallel queries to scale across trillions of tokens with low complexity (\(O(L \log N)\)). [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESZQHrOzAVxlEQh8DtUS6saF7_ir0WDWTt10oJOkUyoZLZ5V5YBJVgGvaRQHjFqplwzUNuPtXEMikcc4i3XR090HFesSg_GHHBxQB2LQXhKyuji5rI2Pb1BhQ4Ln80dBGmKiY1Avss)]
+* Ranking and Retrieval: Spans are filtered by unigram probability and mapped to top context documents ranked by BM25 relevance. [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESZQHrOzAVxlEQh8DtUS6saF7_ir0WDWTt10oJOkUyoZLZ5V5YBJVgGvaRQHjFqplwzUNuPtXEMikcc4i3XR090HFesSg_GHHBxQB2LQXhKyuji5rI2Pb1BhQ4Ln80dBGmKiY1Avss)]
+* Supported Models: It is integrated directly into the [Ai2 Playground](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ) for open models like OLMo 2 32B Instruct, OLMo 2 13B Instruct, and OLMoE 1B 7B Instruct. [[1](https://www.google.com/goto?url=CAESYAHrOzAVpyKaMtIZur5fnzfVTAplbZKyOpgyO9XIi8wdceCKMztZClwJCIyrTk_htKDmhQXtZJjPy2SvfMSl7AlXo-nMIKvseTestuqaTvi2ZNgwjsENvLLvmNeRnWnVmA), [2](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ)]
+
+Main Use Cases
+
+* Fact-Checking: Verify whether a model's statement is grounded in authentic training data or synthesized from noise. [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESYwHrOzAVoBdCmgaMv_aVuPblFx2Fl1rTr5jRtpHjFt8bY9t3-kFUMnJHUCi4fKi9syj-czcVi4-vTzxH4_FgbW1u53Og3AFWYhVl8jdf6ShVbh-eNt1Txau2fsSjoPS_qA6cPg)]
+* Hallucination Diagnosis: Trace incorrect or fabricated claims back to misleading or contradictory passages in the pre-training data. [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESYwHrOzAVoBdCmgaMv_aVuPblFx2Fl1rTr5jRtpHjFt8bY9t3-kFUMnJHUCi4fKi9syj-czcVi4-vTzxH4_FgbW1u53Og3AFWYhVl8jdf6ShVbh-eNt1Txau2fsSjoPS_qA6cPg)]
+* Creative Tracing: Identify where distinctive phrases, styles, or patterns originated across training corpora. [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESYwHrOzAVoBdCmgaMv_aVuPblFx2Fl1rTr5jRtpHjFt8bY9t3-kFUMnJHUCi4fKi9syj-czcVi4-vTzxH4_FgbW1u53Og3AFWYhVl8jdf6ShVbh-eNt1Txau2fsSjoPS_qA6cPg)]
+* Arithmetic & Memory Analysis: Assess how much a model memorized verbatim versus how much it generalized. [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESZQHrOzAVxlEQh8DtUS6saF7_ir0WDWTt10oJOkUyoZLZ5V5YBJVgGvaRQHjFqplwzUNuPtXEMikcc4i3XR090HFesSg_GHHBxQB2LQXhKyuji5rI2Pb1BhQ4Ln80dBGmKiY1Avss)]
+
+You can test the tool or read the official technical breakdown via the [Ai2 OLMoTrace Blog Post](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ) or inspect the paper via the [arXiv OLMoTrace Listing](https://www.google.com/goto?url=CAESWAHrOzAVO0qGnctNVt5S-hsr44-KXZSQt3aQhexk5C-pNlE8QJ8ymrF9PkgAhsVM4u2GNGpI0Jkdo4kDg9j9nWgvv3v1du9XxsXwpEy2n3rNxK7suHMYvK4). [[1](https://www.google.com/goto?url=CAESWgHrOzAV2TsGUl5WhdMU4NJwXYWWAKbWBSxfDunhZNVIJMD4Iie4cv3nFosLCfK9TQwejdpmUMujOlw0uwzQvTCRiIJNkOLJUnTjQFj5ODjoocQBykGIYaZYnQ), [2](https://www.google.com/goto?url=CAESWAHrOzAVO0qGnctNVt5S-hsr44-KXZSQt3aQhexk5C-pNlE8QJ8ymrF9PkgAhsVM4u2GNGpI0Jkdo4kDg9j9nWgvv3v1du9XxsXwpEy2n3rNxK7suHMYvK4)]
+This video demonstrates how OLMoTrace highlights generated text and links it directly to training documents in real time:
+2:17
+OLMoTrace | Connecting a language model's response back to its training ...
+3K views · 1 year ago
+YouTube · Ai2
+Would you like to know how to access the open-source code on GitHub, or do you want more details on how infini-gram indexing works under the hood?
+Allen Institute for Artificial Intelligence
+Going beyond open data – increasing transparency and trust in language models with OLMoTrace | Ai2
+Feature: OLMoTrace in Ai2 Playground traces language model outputs to multi-trillion-token training data in real time. Supported Models: OLMo 2 32B Instruct, OL...
+arXiv
+[2504.07096] OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens
+System: OLMoTrace (first system tracing language model outputs to multi-trillion-token training data in real time). Functionality: Finds and displays verbatim m...
+ACL Anthology
+OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens - ACL Anthology
+System: OLMoTrace (Best Demo, ACL 2025) Core Function: First system tracing language model outputs back to multi-trillion-token training data in real time. Mech...
+ACL Anthology
+OLMOTRACE: Tracing Language Model Outputs Back to Trillions of Training Tokens
+System: OLMOTRACE, a real-time system tracing language model outputs verbatim back to multi-trillion-token training data within 4.5 seconds using infini-gram su...
+Hugging Face
+Paper page - OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens
+System: OLMoTrace, the first real-time system tracing language model outputs back to multi-trillion-token training corpora. Capabilities: Identifies and display...
+YouTube·Ai2
+2:17
+OLMoTrace | Connecting a language model's response back to its training ...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: Data PortraitsData Portraits
+Data portraits are visual representations of people made by plotting their accumulated data rather than drawing or photographing their physical faces. [[1](https://www.google.com/goto?url=CAESbgHrOzAV48fY-ioVS2i_-KTtcCw8TMzXFMkra9dwVTokNp4peHVUPwDRzZCob3TSbaNuO23IsiR1kW61Ga6clCtfQ1pgqNuMOXbPs7_CmnUFRlKx1c2zOGaHuhkRW9WPmyLlC9Pxnzh1Qvpxs5bP), [2](https://www.google.com/goto?url=CAESiQEB6zswFRzVgv4FoGchubdhr4mFlUFZHfi-BFWin10GPwFVe31MvlOd4B-kCNAwZy7FiRFXzgDt1JjJ8102YOT_PYIztVRlsJ26nsZeODMewZzJyNwBjJXbfWudXnP-R7s1E5bT3rCINZJtIiMqeTiDGaLlKsVxpIa3APm_6JwoGb46W2QXxVTNUQ)]
+Key Examples and Meanings
+
+* W. E. B. Du Bois's Visualizations (1900): Sociologist W. E. B. Du Bois and Atlanta University students created over 60 hand-drawn charts, graphs, and maps for the Paris Exposition to document Black American life, education, and property ownership. Read more in [W. E. B. Du Bois's Data Portraits](https://www.google.com/goto?url=CAESdwHrOzAVWwgnn_sEbLxW-F0funGVKvgdtJv-LLjZE8rA8UtvbDgXm6HQSD0oBUh6QKZT_9Wk7WKNac9sYoDjlN8COHh6Zm1VjP6WxA4kkZHeptxUu16rIRfQhuqD725Ve5WLv7nX8J_wtn7-xEw60YmzX13lgHB4). [[1](https://www.google.com/goto?url=CAESdwHrOzAVWwgnn_sEbLxW-F0funGVKvgdtJv-LLjZE8rA8UtvbDgXm6HQSD0oBUh6QKZT_9Wk7WKNac9sYoDjlN8COHh6Zm1VjP6WxA4kkZHeptxUu16rIRfQhuqD725Ve5WLv7nX8J_wtn7-xEw60YmzX13lgHB4), [2](https://www.google.com/goto?url=CAESdgHrOzAVofqbRlTcQjDBeRS3M-qj4kkAAPNgqdET2u_6AzEO3vmiGomCHC8U8UI8_KUOeAfq1h_0DNZOln3g4wu8dqFeakCIHJXlGdM9Txo3YkE51e0p1KIUn-EHHT6ZWH8n16VBi_a6qqOmUZl-Nqewe1lvjPY), [3](https://www.google.com/goto?url=CAESZwHrOzAVSWAvv9J07YjLT_yNGsQVAD7pqlpZjq7NCTcbuH7mpJdNr-KWj7GlT-3datZj-VNHQVt-72eGaHDDNbX93ePs8R_cpYE8Odwn3dxu5AuXviRz4bEEgR9mMZ9oHowj3ht6PYY)]
+* Personal & Digital Data Portraits: Digital media scholar Judith Donath defines them as subjective renderings using personal information—such as browsing histories, social networks, travel patterns, or discussion contributions. Explore examples via [10 Painstakingly Crafted Data Portraits](https://www.google.com/goto?url=CAESiQEB6zswFRzVgv4FoGchubdhr4mFlUFZHfi-BFWin10GPwFVe31MvlOd4B-kCNAwZy7FiRFXzgDt1JjJ8102YOT_PYIztVRlsJ26nsZeODMewZzJyNwBjJXbfWudXnP-R7s1E5bT3rCINZJtIiMqeTiDGaLlKsVxpIa3APm_6JwoGb46W2QXxVTNUQ). [[1](https://www.google.com/goto?url=CAESbgHrOzAV48fY-ioVS2i_-KTtcCw8TMzXFMkra9dwVTokNp4peHVUPwDRzZCob3TSbaNuO23IsiR1kW61Ga6clCtfQ1pgqNuMOXbPs7_CmnUFRlKx1c2zOGaHuhkRW9WPmyLlC9Pxnzh1Qvpxs5bP), [2](https://www.google.com/goto?url=CAESiQEB6zswFRzVgv4FoGchubdhr4mFlUFZHfi-BFWin10GPwFVe31MvlOd4B-kCNAwZy7FiRFXzgDt1JjJ8102YOT_PYIztVRlsJ26nsZeODMewZzJyNwBjJXbfWudXnP-R7s1E5bT3rCINZJtIiMqeTiDGaLlKsVxpIa3APm_6JwoGb46W2QXxVTNUQ)]
+* Live Interactive Art: Designers like Giorgia Lupi have created physical data portrait projects (such as wearable buttons at TED 2017) turning personal questionnaire answers into visual languages. [[1](https://www.google.com/goto?url=CAESaAHrOzAVwS8f8AhIPXVkLBUbP2WZEaVPmem5ebhcuifkyvOdWLGit73P0bxEpPl3OWJl8jNn7oKFKowisPLMpx0ZzpHTEHM6JzgtC_eRlsPT3ZCXA9CyFCVOFCSg2J_qbs1OlYxVEzzf), [2](https://www.google.com/goto?url=CAESaQHrOzAVc4J_o76cuTbertAjqNqCQNSbKYjOFgLJf2c-cKg6r-E7-sNuTXZbxiM3ATvys5-l13ENnpeMsRM5V_TV05SbOq6LnWOUJe6lVWuOWyoXqmMomQ6gUF1rXNOGM9Hr5fFGhWHT9w)]
+* AI & Machine Learning Artifacts: Contemporary research groups use the term for lightweight inspection tools (like [Data Portraits](https://www.google.com/goto?url=CAESUgHrOzAVtI396uBiStowFyw2imvdOyvI1wrEtm1WHuDFhJmtOViSAQupM54UJkz4aheR4-aIGH5gpG6BA42_BaQwq5IBMDcUgieI_b9y097E95w)) that record dataset training traces. [[1](https://www.google.com/goto?url=CAESUgHrOzAVtI396uBiStowFyw2imvdOyvI1wrEtm1WHuDFhJmtOViSAQupM54UJkz4aheR4-aIGH5gpG6BA42_BaQwq5IBMDcUgieI_b9y097E95w)]
+
+Would you like to focus on W. E. B. Du Bois's historical charts, modern artistic data selfies, or AI data tracking tools?
+giorgialupi
+Data Portraits at TED — giorgialupi
+Project: Data Portraits at TED 2017 (Vancouver) by Accurat, commissioned by TED and David Stark Design for Target's social space. Concept: Personal questionnair...
+Data Portraits
+Data Portraits
+Foundation models are trained on increasingly immense and opaque datasets. Even while these models are now key in AI system building, it can be difficult to ans...
+Zinn Education Project
+W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project
+Book: W. E. B. Du Bois's Data Portraits: Visualizing Black America (2018, 144 pages, Princeton Architectural Press). Creators: W. E. B. Du Bois Center at Univer...
+Pentagram
+TED Data Portraits - Pentagram
+Recognizing what they had in common at a glance, attendees found it easy to start. Recognizing what they had in common at a glance, attendees found it easy to s...
+SparkMap
+W.E.B. Du Bois & Data Visualization History - SparkMap
+Sociologist W.E.B. Du Bois created sixty hand-drawn "data portraits" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer...
+YouTube·University of Massachusetts Amherst Libraries
+5m
+W. E. B. Du Bois's Data Portraits: Visualizing Black America
+MIT Media Lab
+Data Portraits - MIT Media Lab
+Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci...
+ARTnews.com
+10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...
+Your tweets, your Instagrams, your Facebook status updates, your search history—it's all a part of your data portrait. And right now, by reading this article, y...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: Common CrawlCommon Crawl
+Common Crawl is a 501(c)(3) non-profit organization founded in 2007 by Gil Elbaz that collects, preserves, and freely shares an open archive of internet data. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+Core Details & Scale
+
+* Mission: To democratize access to web information for researchers, educators, and developers. [[1](https://www.google.com/goto?url=CAESZQHrOzAVMfEXxr0oNp6H8FoT5bN7m6YJoZoBYr914b601JI6UdQmZ6P4yvzngICxjHnJfK6Yec_P98GgmresQ7Dw3AEs6T3A53CVzDKKfWjtlybm3btrazlt2DvPmN7I_E8cU24E), [2](https://www.google.com/goto?url=CAESogEB6zswFRmw2uEC-2GocWte7CsiyCs5IzDqfmZ1vdjn4TuEvvrmv-9rZxi_iD2YDoiCnAHiAfWsTcVSApUtv2ZAUIucufgiwuJGJY47kvQxBVjxUvzdPPR_X6-hqmRCpQqFfF5lSkrZSydExsRIqMlq3dCOghVx3NcdWCi1VKpIFPaJLSxY20-ZbH2N-BMoxDdLLfknca_PaWgJHXj6vNR6kys)]
+* Archive Size: Contains over 10 to 11 petabytes of data spanning nearly two decades. [[1](https://www.google.com/goto?url=CAESaAHrOzAV6hSai_sUbgLZIrWUvd_1aLDcTFYfwudvpzAjt7Wiae0fyBsSxrYkAKjsdl6ySb6uy_tpA5v5xXShnpfXqAwWsY_H27rp_Y8cU2cMh3E4wmWYqXwnZGqApDT6GBOEet3F7Ihr), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+* Frequency: Adds roughly 3 to 5 billion new web pages each month. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI)]
+* Hosting: Stored for free on Amazon Web Services (AWS) via its Open Data Sponsorship Program (`s3://commoncrawl`). [[1](https://www.google.com/goto?url=CAESYgHrOzAV-kPJYYR5DzaDn3shoeQ65CeWL2DX80Q1HiWI-QCqFSyWcaVR4yjmL1DgZbAHeuuve3n-HHc5JBWTOagT1duzWywT40VHf0GKIvrLDLkOkavvEFO_V_IGtljJ-oDK), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+
+Data Formats
+Common Crawl distributes its monthly crawls in three primary file formats:
+
+* WARC (Web Archive): Raw HTTP responses, including full HTML content and headers. [[1](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj), [2](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg)]
+* WET (Web Extracted Text): Cleaned plain-text content with HTML and code stripped away. [[1](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg), [2](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj)]
+* WAT (Web Archive Transformations): Metadata summaries in JSON format containing link and header details. [[1](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj), [2](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg)]
+
+Use Cases & Controversies
+
+* AI Training: The dataset serves as a foundational training corpus for many modern large language models (LLMs) developed by companies like OpenAI, Anthropic, Google, and Meta. [[1](https://www.google.com/goto?url=CAESYgHrOzAVFRbye9kH3j9k6KLcvf-LWQvdPj7bt9r96H-e8E84FwHmg_yiMqdphgTRqZvUXhz98sAB-E5d3HUBV9bOkMOJJ3nBI88q_RRtc7hn_NcnELXmzeudkN_54USqck17), [2](https://www.google.com/goto?url=CAESjAEB6zswFTQRcKVuGaqp5j98KCjtP_jbImefZR_y44kC4DbcBO3LJe1qicrCaDxjJwprvKcG4qF-pMxJMC6tc2tzsOCUBXaXxvIGqIq7MLfUikkGXk7QjN1FAKZyNduuqR7HmVcdB1mQV5clJsFb2troud28MaMdyXB49EHcWJViOHUTngoBdIkab689lw)]
+* Research: Cited in over 10,000 academic and technical research papers. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI)]
+* Web Scraping & Paywalls: Because its scraper (`CCBot`) does not execute dynamic browser code or login scripts, it has faced criticism and pushback from news publishers and media organizations over copyright and paywall bypass concerns. [[1](https://www.google.com/goto?url=CAESbwHrOzAVeonNGGhs8vJ1yho5hdVB9fn-HN5yv195f0il9o3uwribREP-IVzKxaxhDEoEFbe7y21-p-1eSNDwcIKeD0Mb_3CIKJZbZZhESo67emmTxx3AZVfp5IpXwm6mJPseLdbKocz5y9gh7iEVZA), [2](https://www.google.com/goto?url=CAESjAEB6zswFTQRcKVuGaqp5j98KCjtP_jbImefZR_y44kC4DbcBO3LJe1qicrCaDxjJwprvKcG4qF-pMxJMC6tc2tzsOCUBXaXxvIGqIq7MLfUikkGXk7QjN1FAKZyNduuqR7HmVcdB1mQV5clJsFb2troud28MaMdyXB49EHcWJViOHUTngoBdIkab689lw)]
+
+Would you like to know how to query the Common Crawl index for a specific URL, or how to block CCBot using a `robots.txt` file?
+Common Crawl
+Common Crawl - Open Repository of Web Crawl Data
+Organization: Common Crawl (501(c)(3) non-profit founded 2007). Corpus Statistics: Over 300 billion web pages spanning 19 years; adds 3 to 5 billion new pages m...
+Wikipedia
+Common Crawl - Wikipedia
+Organization: Common Crawl Foundation (501(c)(3) non-profit, founded 2007 by Gil Elbaz, San Francisco/Los Angeles). Operations: Crawls the web, provides free pu...
+Common Crawl
+About
+Overview Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web and freely provides its archives and datasets to the public. Founded in 2007 by ...
+The Atlantic
+Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic
+Editor's note: This work is part of AI Watchdog, The Atlantic's ongoing investigation into the generative-AI industry. * The Common Crawl Foundation is little k...
+Registry of Open Data on AWS
+Common Crawl
+Resources on AWS Description Crawl data (WARC and ARC format) Resource type S3 Bucket Account Required Amazon Resource Name (ARN) arn:aws:s3:::commoncrawl AWS R...
+LinkedIn
+Common Crawl Foundation | LinkedIn
+The Common Crawl Foundation is a California 501(c)(3) registered non-profit founded by Gil Elbaz with the goal of democratizing access to web information by pro...
+DEV Community
+Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...
+What is Common Crawl? Common Crawl is a non profit organization that has been crawling the web since 2008. Its mission is to provide free, large scale, publicly...
+YouTube·PyTorch
+14m
+Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...
+YouTube·James Dooley
+6m
+Common Crawl for AI Visibility Explained (James Dooley ...
+YouTube·Extract Summit
+2m
+Exploring Common Crawl: The Web's Open Archive | Extract Data Live
+InfluenceWatch
+Common Crawl - Influence Watch
+Common Crawl is a nonprofit which maintains an open repository of “crawled” internet data. The group makes the information which it crawls from the internet fre... $ wikipedia in place of popup so ai mode: [Sign in](https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DProject%2BGutenberg%26client%3Dms-android-tmus-us-rvc3%26hs%3DJsFW%26sca_esv%3Dc4a0a25368e77353%26sxsrf%3DAKL5yDj279z7yjsTxYy9Art-iif_Sq7_dg:1793543182346%26udm%3D50%26source%3Dchrome.ob%26fbs%3DACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo%26vsint%3D%26aep%3D1%26ntc%3D1%26cs%3D1%26sa%3DX%26ved%3D2ahUKEwj4pJeC_eaXAxUznSsGHcA8GGsQ2J8OegQIDhAE%26biw%3D411%26bih%3D785%26dpr%3D2.63&ec=futura_srp_og_si_72236_p)
+AI Mode
+[All](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&source=lnms&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&sa=X&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQ0pQJegQIBxAG)
+[Shopping](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=28&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=1t:220175&ictx=111)
+[Images](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=2&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQtKgLegQIBxAK)
+[Videos](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=vids&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQtKgLegQIBxAM)
+[Forums](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=forums&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQs6gLegQIBxAO)
+[Short videos](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=short_vids&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQs6gLegQIBxAQ)
+[Books](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&udm=36&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&source=lnms&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&sa=X&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQ0pQJegQIBxAS)
+[News](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&tbm=nws&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&source=lnms&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&sa=X&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQ0pQJegQIBxAU)
+[Web](https://www.google.com/search?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sa=X&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&udm=web&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQs6gLegQIBxAW)
+[Maps](https://maps.google.com/maps?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=JsFW&sca_esv=c4a0a25368e77353&sxsrf=AKL5yDj279z7yjsTxYy9Art-iif_Sq7_dg:1793543182346&udm=50&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&vsint=&aep=1&ntc=1&cs=1&biw=411&bih=785&dpr=2.63&um=1&ie=UTF-8&ved=1t:200715&ictx=111)
+[Flights](https://www.google.com/travel/flights?q=Project+Gutenberg&client=ms-android-tmus-us-rvc3&hs=hsFW&sca_esv=c4a0a25368e77353&aep=1&cs=1&biw=411&bih=785&tbm=flm&sxsrf=AKL5yDideH1x8plv4Us52nXUBd0xa7zZhA:1793544624608&source=lnms&fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&ved=1t:200715&ictx=111)
+[Finance](https://www.google.com/finance?fbs=ACAhTvzZGz7vAJdimwh6CrmgWS3QYlZ4K_Psw-mZ6XP8P72zonLhX8cTOzg1E1aUkhOaZj62qc7z1UlxANYasbmh-IaVoOz7qccXE3mPKmuVEBW7-FydNC_xC2xbKYjkAQ_k6How_Mq6ke6kPyJxXl4Es4oCB_l6S6xLZErObkdzGkdBhUU5OYbaYZj8QIWlJ3ZVrT9rtQ2Ue3Ry5g2stCoYpJfZUPdCCAK234CBmX8GcfdPrRnQIQo&sa=X&ved=2ahUKEwiV9POxgueXAxXpCoAAHZF8L2gQ0pQJegQIBxAc)
+Quick results from the web:
+Project Gutenberg: Free eBooks
+Project Gutenberg is a library of over 75000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads.
+Project Gutenberg·https://www.gutenberg.org
+Project Gutenberg - Wikipedia
+Project Gutenberg. Article · Talk. Language; Save; Edit; Download PDF. For other uses, see Project Gutenberg (disambiguation). Project Gutenberg (PG) is a volunteer effort to digitize and archive cult
+Wikipedia·https://en.wikipedia.org
+[Project Gutenberg](https://www.google.com/goto?url=CAESUgHrOzAVyWjbsU6bEi-anSJiFR3ZtX3MFn3hiP-uuMzMP7bBE_mTXFed14x6g6aJSeirVSDH573yYBrrHn_7kehiq37oxq1wYp-KKWy7ApKa5P4) is the world's oldest digital library, providing nearly 80,000 free eBooks primarily focused on public domain literature. Founded in 1971 by American writer [Michael S. Hart](https://www.google.com/goto?url=CAESZQHrOzAVNO_y4G8O9GoZJlxcoHKmV2L3jnVXaOdHmt_VjJZRgk8Cp2j5D3842psqY3wsZt6CpDOdPgyW6Apee3_aKgV70K78jQS4jprWNhubeY_UsAKwGUdXWBNh44lfazsk7Djc), the project is a massive volunteer-driven effort dedicated to digitizing, proofreading, and archiving cultural works to encourage global literacy and open access to historical texts.
+Project Gutenberg +1
+Key Facts & Features
+
+* 
+* 100% Free Access: Everything is available completely free of charge, with no registration, library cards, special apps, or user accounts required.
+Project Gutenberg +1
+* Format Flexibility: Books can be read directly within your web browser or downloaded in open, long-lasting formats like EPUB, Kindle (MOBI), HTML, and plain text.
+OpenEd +1
+* US Public Domain Focus: Because it operates under United States copyright law, the vast majority of its collection consists of books published more than a century ago whose copyrights have expired.
+Wikipedia +1
+* Volunteer Driven: The digitization process relies on thousands of volunteers around the globe, largely collaborating through [Distributed Proofreaders](https://www.google.com/goto?url=CAESTQHrOzAVTPQZC0z9hY5WCD9x46ATZawus0cSIkr7V1EYvSZOeX7pknFQ8xhaQQcYEuY9J1akljPrYWQitp-OYI94uhNzEpyd8zWfsfDr) to clean up optical character recognition (OCR) errors, format files, and review submissions.
+Project Gutenberg +2
+* Audiobook Companions: The library is closely paired with platforms like [LibriVox](https://www.google.com/goto?url=CAESTQHrOzAVxqVF6xmhKBtip_9VBlZryucXl_CK4vjjr3mc7Dcm4BUFJ5qcs3u4-KAhPuB6u6ZvbfexDPkn75y-6afpRx8iy7DmE0QCZOH5) to provide volunteer-recorded audiobooks alongside written texts.
+YouTube·Microsoft Cloud +1
+* 
+
+Popular Works Available
+The platform features some of the most celebrated literary works in history, including:
+
+* 
+* Pride and Prejudice by Jane Austen
+* Frankenstein by Mary Shelley
+* The Adventures of Sherlock Holmes by Arthur Conan Doyle
+* Moby Dick by Herman Melville
+* The complete works of William Shakespeare
+* 
+
+If you are looking to dive into the collection, let me know:
+
+* Are you searching for a specific book or author?
+* Do you want to download books to a Kindle, tablet, or phone?
+* Would you like recommendations based on a particular genre or historical era?
+
+I can guide you through finding and downloading the exact texts you need.
+AI Mode response is ready
+Ask about $ AI Mode Conversation
+You said: Internet ArchiveInternet Archive
+The [Internet Archive](https://www.google.com/goto?url=CAESTAHrOzAVh0_ENoUY-zYK-L25amic5RRDdKSRemaVCpLtmeCER-rO0ohvoUpY0uHLXPcJjYhCnlZ4jnReAB3-s_wRCz_yLNemh3dYMtE) is a non-profit digital library founded in 1996 by Brewster Kahle and headquartered in San Francisco, California. [[1](https://www.google.com/goto?url=CAESTAHrOzAVh0_ENoUY-zYK-L25amic5RRDdKSRemaVCpLtmeCER-rO0ohvoUpY0uHLXPcJjYhCnlZ4jnReAB3-s_wRCz_yLNemh3dYMtE), [2](https://www.google.com/goto?url=CAESZgHrOzAVKk0kJyfnKhHp-BfYzQYRKnyroolmEkWINJAPoLyuvFaOuEtF69LTnZ27ltRO3YPzhCQ30MElh9GBEZJF2P3ox44NIhJqP23t2G4h4QmNtM27ZOdUk4XSUMylnUbmczKx2g)]
+What It Offers
+
+* Wayback Machine: A digital time capsule that stores over 1 trillion web captures, allowing you to see how websites looked in the past. [[1](https://www.google.com/goto?url=CAESTAHrOzAVh0_ENoUY-zYK-L25amic5RRDdKSRemaVCpLtmeCER-rO0ohvoUpY0uHLXPcJjYhCnlZ4jnReAB3-s_wRCz_yLNemh3dYMtE), [2](https://www.google.com/goto?url=CAESZgHrOzAVKk0kJyfnKhHp-BfYzQYRKnyroolmEkWINJAPoLyuvFaOuEtF69LTnZ27ltRO3YPzhCQ30MElh9GBEZJF2P3ox44NIhJqP23t2G4h4QmNtM27ZOdUk4XSUMylnUbmczKx2g)]
+* Free Digital Library: Access to millions of free books, texts, audio recordings (including live concert archives), movies, software, and TV/radio news broadcasts. [[1](https://www.google.com/goto?url=CAESZwHrOzAVPyhNJkyi65Dx8ttk9hgvC_e1rAyigX2LCc1knXs0S0ISqwSY1erQwS8AjoOww-LNYmZiIq-6WsuDGJLwK-PriJvowrw3E24lXCC8x4Nczcb850VXhndnQgFYYh9g7rbcatg), [2](https://www.google.com/goto?url=CAESTAHrOzAVh0_ENoUY-zYK-L25amic5RRDdKSRemaVCpLtmeCER-rO0ohvoUpY0uHLXPcJjYhCnlZ4jnReAB3-s_wRCz_yLNemh3dYMtE)]
+* Open Library: A project allowing users to borrow digitized physical books like a traditional library. [[1](https://www.google.com/goto?url=CAESZgHrOzAVKk0kJyfnKhHp-BfYzQYRKnyroolmEkWINJAPoLyuvFaOuEtF69LTnZ27ltRO3YPzhCQ30MElh9GBEZJF2P3ox44NIhJqP23t2G4h4QmNtM27ZOdUk4XSUMylnUbmczKx2g), [2](https://www.google.com/goto?url=CAESZwHrOzAVPyhNJkyi65Dx8ttk9hgvC_e1rAyigX2LCc1knXs0S0ISqwSY1erQwS8AjoOww-LNYmZiIq-6WsuDGJLwK-PriJvowrw3E24lXCC8x4Nczcb850VXhndnQgFYYh9g7rbcatg)]
+* Save Page Now: A tool that lets you manually snapshot and archive a live web page on demand. [[1](https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak), [2](https://www.google.com/goto?url=CAESZwHrOzAVPyhNJkyi65Dx8ttk9hgvC_e1rAyigX2LCc1knXs0S0ISqwSY1erQwS8AjoOww-LNYmZiIq-6WsuDGJLwK-PriJvowrw3E24lXCC8x4Nczcb850VXhndnQgFYYh9g7rbcatg)]
+
+Key Details
+
+* Status: 501(c)(3) non-profit organization. [[1](https://www.google.com/goto?url=CAESZgHrOzAVKk0kJyfnKhHp-BfYzQYRKnyroolmEkWINJAPoLyuvFaOuEtF69LTnZ27ltRO3YPzhCQ30MElh9GBEZJF2P3ox44NIhJqP23t2G4h4QmNtM27ZOdUk4XSUMylnUbmczKx2g)]
+* Preservation Work: Digitizes books page-by-page and archives cultural artifacts, government documents, and defunct websites to maintain public internet history. [[1](https://www.google.com/goto?url=CAESZAHrOzAVuwm1MWxrbjivh_jJuI3w1GcRheGrQtEWORxY1lFIP3kPPebjmzw6XUszO5j9NE4_l0RUbgHc9ZqRKlUadeZY0oo1LYSF1aiUazbWYebh62ZsnEd0LMHjLQThO81oP1Y), [2](https://www.google.com/goto?url=CAESXAHrOzAVXIzGe25tIG9ZVQcHnknG9t2tvn3mVVDVGWbFEdnR5lnLDBx4I3abXSw2tTUQS_Mo9CObM_zj0Z6uc8e1IaC2cqTxp-KkbS_Cf6dSMlceA91I_Wjia6jP), [3](https://www.google.com/goto?url=CAESzgEB6zswFSzboedHfMlMe1almrRvcSnELxfR45ii_Xtz2iImcEffVHbJ7xcPWYSJmaiBXMvkqyrrC44bJaMpdoI4IYpcwb6WHHayK54qoi488zQdPs_anA8xyLGYKZ_hBHEvXCi9Cns7csVjMAazmNcGJZD2ki6ciGToWwAXU4qzEt93HgUNKS_Kz5QyWahEr1W9f7sD6yl6H-Q88vlFJXVkwRPU_ATJAdVOKDocLN16Ry8aQhAKX1v-s0ULdffZnjcOJnwAVXaUDCYEDFKXJA)]
+* Copyright & Community: Most content focuses on public domain or archived material, and users on [Reddit](https://www.google.com/goto?url=CAESkgEB6zswFV0uHC4wLqv7Wt2rREk2-t2zhPY2i6XmH0aSZnd4aZ5cgD2yDGgZYI1prIRGRxe5uZi23BJyyjGcUR8S5CCRVzLuYOVMd-O5330odtZFMdRQq-9swiax7peXRV_-1xiDXS8uQadTjjhHZxCVJgKMR2MjA0jFNixFYGL95xOAcrX4NuMKUbl8K02G4N_Q8w) generally note that it honors DMCA takedown requests and site-exclusion preferences like `robots.txt`. [[1](https://www.google.com/goto?url=CAESkgEB6zswFV0uHC4wLqv7Wt2rREk2-t2zhPY2i6XmH0aSZnd4aZ5cgD2yDGgZYI1prIRGRxe5uZi23BJyyjGcUR8S5CCRVzLuYOVMd-O5330odtZFMdRQq-9swiax7peXRV_-1xiDXS8uQadTjjhHZxCVJgKMR2MjA0jFNixFYGL95xOAcrX4NuMKUbl8K02G4N_Q8w)]
+
+Would you like to know how to use a specific feature like the Wayback Machine, or are you looking for a particular archived website or book?
+Internet Archive
+Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine
+Internet Archive is a non-profit digital library containing millions of free texts, movies, software, music, websites, and audio items including 1 trillion web ...
+Wikipedia
+Internet Archive - Wikipedia
+Mission: Universal access to all knowledge via archive.org; founded 1996 by Brewster Kahle; non-profit library (501c3) headquartered in San Francisco. Services:
+Facebook
+Internet Archive | San Francisco CA
+Organization: Internet Archive (non-profit research library, San Francisco CA) Mission: Preserving web pages, books, movies, audio, and government records for p...
+YouTube·Internet Archive
+16m
+How to use the Internet Archive
+Reddit
+ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit
+Archival Purpose and Copyright: Archive.org primarily focuses on legitimate archival of abandoned or public domain content and respects DMCA takedown requests, ...
+Chrome Web Store
+Wayback Machine - Chrome Web Store
+The Official Wayback Machine Extension - by the Internet Archive. Welcome to the Official Internet Archive Wayback Machine Browser Extension! Go back in time to...
+The Library of Congress (.gov)
+Internet archive | Library of Congress
+Overview: Internet Archive founded in 1996 in San Francisco, CA, to provide permanent digital access to historical internet collections, websites, and cultural ...
+Facebook·Internet Archive
+[0:40](https://www.google.com/goto?url=CAESzgEB6zswFSzboedHfMlMe1almrRvcSnELxfR45ii_Xtz2iImcEffVHbJ7xcPWYSJmaiBXMvkqyrrC44bJaMpdoI4IYpcwb6WHHayK54qoi488zQdPs_anA8xyLGYKZ_hBHEvXCi9Cns7csVjMAazmNcGJZD2ki6ciGToWwAXU4qzEt93HgUNKS_Kz5QyWahEr1W9f7sD6yl6H-Q88vlFJXVkwRPU_ATJAdVOKDocLN16Ry8aQhAKX1v-s0ULdffZnjcOJnwAVXaUDCYEDFKXJA)
+We've been getting a lot of questions lately about how the Internet Archive ... $.    no popup. ai mode: Native American Heritage Month 2026
+Sign in
+AI Mode
+All
+Shopping
+Images
+Videos
+Forums
+Short videos
+Books
+News
+Web
+Maps
+Flights
+Finance
+Quick results from the web:
+HathiTrust Digital Library – Millions of books online
+Preserving knowledge. Empowering possibilities. 18 million and counting. At HathiTrust, we are stewards of the largest digitized collection of knowledge allowable by copyright law. Why? To empower sch
+
+HathiTrust
+·
+https://www.hathitrust.org
+HathiTrust Digital Library
+Access millions of books and journals digitized from libraries around the world.
+
+University of Michigan Library
+·
+https://www.lib.umich.edu
+The HathiTrust Digital Library is a massive, large-scale collaborative digital repository containing more than 18 million digitized volumes. Founded in 2008 and administered by the University of Michigan, it functions as a partnership between major global academic and research institutions to preserve the cultural record and provide long-term access to the public good.
+
+
+HathiTrust
+ +4
+Key Features and Content
+Collection Size: Over 18 million volumes, encompassing books, serials, journals, and musical scores.
+
+
+HathiTrust
+ +2
+Public Domain Access: Over a third of the collection (roughly 7 million volumes) is in the public domain and fully available for anyone worldwide to view, read, or print.
+
+
+Wikipedia
+ +2
+Copyrighted Materials: Items under copyright are still fully text-searchable. Users can search the entire corpus to see how many times a word or phrase appears and find corresponding page numbers.
+
+
+University of Michigan Library
+ +1
+Diverse Sourcing: Content is compiled from major digitization efforts, including the Google Books Project, the Internet Archive, Microsoft, and member institutions' local scanning projects.
+HathiTrust Research Center (HTRC): Offers text-mining and computational analysis tools for researchers to perform advanced data analysis across the entire digital corpus.
+
+
+YouTube
+ +1
+How Access Works
+Access permissions vary depending on your institutional affiliation and the copyright status of the material:
+
+
+University of Michigan Library
+User Status	Public Domain Material	Copyrighted Material
+General Public	Full-text online viewing and single-page printing	Snippet/text-search only (to locate relevant page numbers)
+Logged-in Member (Partner University)	Full-text viewing and complete book PDF downloading	Text-search only, except under specific institutional exemptions
+Important Tips for Users
+Log In Early: If you are a student, faculty member, or researcher at a partner university (e.g., University of Michigan, University of Wisconsin, University of Calgary, or even NYPL cardholders), always click Log In at the top right and select your institution. This unlocks complete PDF downloading and the "Collection Builder" tool to save your research lists.
+Accessibility Services: Patrons with certified print disabilities can request full downloadable copies of any item in the database via the HathiTrust Accessible Text Request Service.
+Bot Protection Measures: HathiTrust enforces security measures to reduce bot traffic, which can occasionally cause slowness. Logging in with your official institution or library card helps bypass these temporary blocks.
+
+
+HathiTrust
+ +5
+Are you looking to use HathiTrust for personal research, or trying to access it through a specific university credential? I can give you precise instructions on how to use their Advanced Search or text-mining tools if you have a project in mind.
+
+
+
+
+
+Ask anything
+
+
+
+AI Mode response is ready
+Ask about $ AI Mode Conversation
+You said: HathiTrust Research CenterHathiTrust Research Center
+The [HathiTrust Research Center](https://www.google.com/goto?url=CAESaQHrOzAVsxhV8SWKxmUSzDJO4DrNP0QLFK1MNP1zP9srwk7Q-SCUzjV5Tlr2rKRwnF53dopDlUk_o2wjv0xJ3ATRt50kKunUsUjcT7cc-pk6kc2ONQbwKLoeRHtPfMBMmGsw_AWRfpG_fg) (HTRC) is winding down its public services as HathiTrust suspends HTRC funding at the end of 2026. [[1](https://www.google.com/goto?url=CAESaQHrOzAVsxhV8SWKxmUSzDJO4DrNP0QLFK1MNP1zP9srwk7Q-SCUzjV5Tlr2rKRwnF53dopDlUk_o2wjv0xJ3ATRt50kKunUsUjcT7cc-pk6kc2ONQbwKLoeRHtPfMBMmGsw_AWRfpG_fg), [2](https://www.google.com/goto?url=CAESWQHrOzAV25gdkzrxD1SN3-ktDndgDpQvBv-dlpWgZPgVO6xdQOlD8vz64TOH6zO2FQwZ0uCu5xs6mxrn8ss6xaj49npoWZv5N2EFjOo-DgHQE_--uQC0tQ0Q)]
+Key Status & Details
+
+* Closure Timeline: Announced in October 2024, funding for the HTRC concludes at the end of 2026, and the center is scheduled to officially close. [[1](https://www.google.com/goto?url=CAESgwEB6zswFQKUNG-9F2Ql-hwGut3rTTxyA4V17nJ0iOvUdLyrI_rJ_eqkUcDukcSxPR4KDV-VMzyLL4AE28IQhPw745NZqm-G6Oi2TPInMdfJc9NEiCBTUceSA_k5Ir_1VSdna-RiKCGMF7SgbYsgBq0oM4BGJWzaYAsoua340jm3qOrbDg), [2](https://www.google.com/goto?url=CAESWQHrOzAV25gdkzrxD1SN3-ktDndgDpQvBv-dlpWgZPgVO6xdQOlD8vz64TOH6zO2FQwZ0uCu5xs6mxrn8ss6xaj49npoWZv5N2EFjOo-DgHQE_--uQC0tQ0Q)]
+* Unavailable Services: Public-facing HTRC services—including data capsules, analytics algorithms, and analytics gateway login—became unavailable as of September 30, 2026. [[1](https://www.google.com/goto?url=CAESewHrOzAVXNgs_Lcn1SgP1NGCskMWEDGHyxSdNPPglj7QlLJZFua1yR1Ugt4u3QxG5ag3EXcFhBcCMcQd_KFpSvkPHTix8192IHD4gzygrnfGrMEDF91lZju3Uy7LNVJsO-2yRYZJ6DOasHcafEc314EgNngLgU-lHwD-3Q), [2](https://www.google.com/goto?url=CAESaQHrOzAVsxhV8SWKxmUSzDJO4DrNP0QLFK1MNP1zP9srwk7Q-SCUzjV5Tlr2rKRwnF53dopDlUk_o2wjv0xJ3ATRt50kKunUsUjcT7cc-pk6kc2ONQbwKLoeRHtPfMBMmGsw_AWRfpG_fg)]
+* Purpose & Origin: Founded in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust, the center enabled large-scale text and data mining of the HathiTrust Digital Library. [[1](https://www.google.com/goto?url=CAESaQHrOzAVsxhV8SWKxmUSzDJO4DrNP0QLFK1MNP1zP9srwk7Q-SCUzjV5Tlr2rKRwnF53dopDlUk_o2wjv0xJ3ATRt50kKunUsUjcT7cc-pk6kc2ONQbwKLoeRHtPfMBMmGsw_AWRfpG_fg), [2](https://www.google.com/goto?url=CAESWQHrOzAV25gdkzrxD1SN3-ktDndgDpQvBv-dlpWgZPgVO6xdQOlD8vz64TOH6zO2FQwZ0uCu5xs6mxrn8ss6xaj49npoWZv5N2EFjOo-DgHQE_--uQC0tQ0Q)]
+* Future Direction: HathiTrust is reallocating resources toward emerging technologies and alternative modes of text/data access and machine learning support for its users. [[1](https://www.google.com/goto?url=CAESaQHrOzAVsxhV8SWKxmUSzDJO4DrNP0QLFK1MNP1zP9srwk7Q-SCUzjV5Tlr2rKRwnF53dopDlUk_o2wjv0xJ3ATRt50kKunUsUjcT7cc-pk6kc2ONQbwKLoeRHtPfMBMmGsw_AWRfpG_fg), [2](https://www.google.com/goto?url=CAESgwEB6zswFQKUNG-9F2Ql-hwGut3rTTxyA4V17nJ0iOvUdLyrI_rJ_eqkUcDukcSxPR4KDV-VMzyLL4AE28IQhPw745NZqm-G6Oi2TPInMdfJc9NEiCBTUceSA_k5Ir_1VSdna-RiKCGMF7SgbYsgBq0oM4BGJWzaYAsoua340jm3qOrbDg)]
+
+Would you like to know more about alternative ways to access the HathiTrust Digital Library collection or explore general library text-mining resources?
+HathiTrust
+HathiTrust Research Center – HathiTrust Digital Library
+Status: HTRC public services (data capsules, analytics algorithms, analytics gateway login) unavailable as of 9/30/26; HathiTrust suspending HTRC funding at end...
+HathiTrust
+HTRC Analytics
+# Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research The HathiTrust Research Center (HTRC) is a rese...
+HathiTrust
+HathiTrust Research Center
+As of 9/30/26, the following public-facing HTRC services are no longer available: data capsules, analytics algorithms, and analytics gateway login. More informa...
+HathiTrust
+Update on HathiTrust Research Center
+# Update on HathiTrust Research Center June 26, 2026 Since the founding of the HathiTrust Research Center in 2011, HTRC staff and researchers have led highly re... $ AI Mode Conversation
+You said: Dolma datasetDolma dataset
+Dolma is an open-source 3-trillion-token English corpus created by the [Allen Institute for Artificial Intelligence (Ai2)](https://www.google.com/goto?url=CAEShQEB6zswFdYTFzcT8iARHW7j2rb03Q9fzUvuXk92kI5vJW1ys8rU0ZyNqvi9nb9SEfxVE6GDLUXfzIOJ9Mdgxo_wLR3UpEXqPziCd7TsCkT04tfI3NGm7zbcWyRpgISmYcfpVr3bLZKfJFJXV2yp769te1gUIyCeAsDgwURFI-czaqs1Tqxx) to support language model pretraining and transparency. [[1](https://www.google.com/goto?url=CAESWAHrOzAVfuCTDUTg4GGhhC3F70zMJsaeToVocN310KpVcxm35YicdR3Yfao1ze76K1TcwOI70UkQvtYaIxXXlQS2YEUAPbNuGdAYtdcU3sz835DbRODiVjw)]
+You can access and download the files directly via the [AllenAI Dolma on Hugging Face](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy) hub or explore the curation pipeline using the Dolma GitHub Toolkit. [[1](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy), [2](https://www.google.com/goto?url=CAESWAHrOzAVLPcsYpsiFGKn0IOrMyoQK7Y1lvcTXMz2p8wmsK0D5ukuSnPSumjXvVgrgy5pvhwIre-i30P5hgiF_kqQNHI9UJXGv-ojqHUcg_DqhuzKfg5AHbo)]
+Key Features
+
+* Scale: Contains roughly 3 trillion tokens (version 1.7 utilizes about 1.715 trillion actual training tokens across ~5.2 billion documents totaling over 5,300 GB). [[1](https://www.google.com/goto?url=CAEShQEB6zswFdYTFzcT8iARHW7j2rb03Q9fzUvuXk92kI5vJW1ys8rU0ZyNqvi9nb9SEfxVE6GDLUXfzIOJ9Mdgxo_wLR3UpEXqPziCd7TsCkT04tfI3NGm7zbcWyRpgISmYcfpVr3bLZKfJFJXV2yp769te1gUIyCeAsDgwURFI-czaqs1Tqxx), [2](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy)]
+* Data Sources: Combines a diverse mix of web content (Common Crawl, C4, RefinedWeb), academic papers (arXiv, Semantic Scholar, peS2o), code (The Stack, StarCoder), public-domain books (Project Gutenberg), encyclopedic material (Wikipedia, Wikibooks), and social media discussions (Reddit, StackExchange). [[1](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy), [2](https://www.google.com/goto?url=CAEShQEB6zswFdYTFzcT8iARHW7j2rb03Q9fzUvuXk92kI5vJW1ys8rU0ZyNqvi9nb9SEfxVE6GDLUXfzIOJ9Mdgxo_wLR3UpEXqPziCd7TsCkT04tfI3NGm7zbcWyRpgISmYcfpVr3bLZKfJFJXV2yp769te1gUIyCeAsDgwURFI-czaqs1Tqxx)]
+* Curation Pipeline: Involves language filtering, Gopher/C4 quality heuristics, Bloom filter deduplication (by URL, paragraph, and document), PII/toxicity masking, and evaluation decontamination. [[1](https://www.google.com/goto?url=CAESfgHrOzAVf6rn5OZttIM0us6WvAir5Q1-WR0EyYm9ecTP7XBTIM-DinlhVME8i_KIkf8LZ3DAOz14u-sSPbfl_Pc4u7hcHYX6Q1oBjXL5hFzJgdfGrRKVE1UMINo78prcPEMu19EHqLlLGx8laR-2Dzu5RINQkc4u25jqyRpHwQ), [2](https://www.google.com/goto?url=CAEShQEB6zswFdYTFzcT8iARHW7j2rb03Q9fzUvuXk92kI5vJW1ys8rU0ZyNqvi9nb9SEfxVE6GDLUXfzIOJ9Mdgxo_wLR3UpEXqPziCd7TsCkT04tfI3NGm7zbcWyRpgISmYcfpVr3bLZKfJFJXV2yp769te1gUIyCeAsDgwURFI-czaqs1Tqxx)]
+* Licensing: Released under permissive research licenses (such as ODC-BY and Ai2's ImpACT license) alongside the [Dolma ACL Research Paper](https://www.google.com/goto?url=CAESYwHrOzAVvKhxmIIzUklJEDSJyWY8Ro1YnSpFLFxZhQ0EcW4hazs3O-L1Y8BHPxI9cIxyUxxa4A8aVoomoKlEYiUEFBtlTpFdl0qVShVTplvTAOrrsSsWQ_H2MW35T8flseiMVA). [[1](https://www.google.com/goto?url=CAESYwHrOzAVvKhxmIIzUklJEDSJyWY8Ro1YnSpFLFxZhQ0EcW4hazs3O-L1Y8BHPxI9cIxyUxxa4A8aVoomoKlEYiUEFBtlTpFdl0qVShVTplvTAOrrsSsWQ_H2MW35T8flseiMVA), [2](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy), [3](https://www.google.com/goto?url=CAEShQEB6zswFdYTFzcT8iARHW7j2rb03Q9fzUvuXk92kI5vJW1ys8rU0ZyNqvi9nb9SEfxVE6GDLUXfzIOJ9Mdgxo_wLR3UpEXqPziCd7TsCkT04tfI3NGm7zbcWyRpgISmYcfpVr3bLZKfJFJXV2yp769te1gUIyCeAsDgwURFI-czaqs1Tqxx)]
+* Primary Use: Designed and used specifically to pre-train the [OLMo](https://www.google.com/goto?url=CAESfgHrOzAVf6rn5OZttIM0us6WvAir5Q1-WR0EyYm9ecTP7XBTIM-DinlhVME8i_KIkf8LZ3DAOz14u-sSPbfl_Pc4u7hcHYX6Q1oBjXL5hFzJgdfGrRKVE1UMINo78prcPEMu19EHqLlLGx8laR-2Dzu5RINQkc4u25jqyRpHwQ) open-source language model family. [[1](https://www.google.com/goto?url=CAESZQHrOzAVqDGWZgFkNAiGOTr1a3I1Et4PFMQit55QdiU3kqPsTyA9okSIwbdfjlhNbKbOp0k5Zv-YXrOnL6SgaiaRrWOD1-DMaGhXR8JXgYW-jE3KNA8m5Y1C3hoIQbK8y1B0uWYy), [2](https://www.google.com/goto?url=CAESfgHrOzAVf6rn5OZttIM0us6WvAir5Q1-WR0EyYm9ecTP7XBTIM-DinlhVME8i_KIkf8LZ3DAOz14u-sSPbfl_Pc4u7hcHYX6Q1oBjXL5hFzJgdfGrRKVE1UMINo78prcPEMu19EHqLlLGx8laR-2Dzu5RINQkc4u25jqyRpHwQ)]
+
+If you'd like, let me know:
+
+* Are you planning to train or fine-tune an LLM using Dolma?
+* Are you looking for specific subsets or data processing scripts?
+
+I can provide the right code commands or pipeline details.
+Hugging Face
+allenai/dolma · Datasets at Hugging Face
+Overview: AllenAI Dolma is an open corpus dataset containing 3 trillion tokens (version 1.7 utilizing 1.715 trillion actual training tokens) designed for langua...
+GitHub Pages documentation
+dolma | Data and tools for generating and inspecting OLMo pre-training data.
+Dataset: Open 3-trillion-token corpus (web content, academic publications, code, books, encyclopedic materials) created as training data for OLMo by AI2; availa...
+Allen Institute for Artificial Intelligence
+Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2
+Dataset: Dolma (3 trillion tokens, 5,245M documents, 5,334 GB) developed by Ai2 for OLMo pretraining. Sources: CommonCrawl, C4, peS2o, The Stack, Project Gutenb...
+arXiv
+[2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research
+Overview: Dolma is an open-source, three-trillion-token English corpus designed for language model pretraining research, addressing the scarcity of publicly ava...
+Deep (Learning) Focus·Deep (Learning) Focus
+Dolma, OLMo, and the Future of Open-Source LLMs
+Overview: Dolma (3T-token open pretraining corpus) and OLMo (fully open-source LLM suite) demystify language model development by openly releasing training data...
+ACL Anthology
+Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology
+Resource: Dolma (ACL 2024 Best Resource Paper Award). Corpus: Open English dataset containing three trillion tokens for language model pretraining research. Con...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: Have I Been TrainedHave I Been Trained
+You can check if your visual artwork or photos were included in popular AI image-generation datasets by visiting [Have I Been Trained?](https://www.google.com/goto?url=CAESVQHrOzAV66hynBdGmhbi1fWwIh_2CBJW3oC3s4Z1nlzwj7gaIS20SAEDldBD3DBA1DAwsD6kF9YlQi9h_IfGPjLrAfiomtvo3h_6vbuh_qoT08IsFmU). [[1](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ), [2](https://www.google.com/goto?url=CAESYwHrOzAV4hiiEbKam_WjJlu8MxZrFtSazw91AYKZqiOEOza2tZANr5liTIYhlCuH7KVIJUmMi7wIz--cDkr67vQZaarC6J2mwCrLr7SOupQWBXo6UFtqP6qmdYB7nEiTMui36A)]
+What the Tool Does
+
+* Dataset Searched: It queries the LAION-5B dataset, a massive collection of roughly 5.8 billion image-text pairs used to train open-source image models like Stable Diffusion. [[1](https://www.google.com/goto?url=CAESfQHrOzAVq90zC71QhcygYkXaoT1D0X2ldmwMchqClJSN734U2q5Bh7w1tb2WB5oZPhJAkMyGJcT6mWM_iH77xFf6WTJ3RFODtIPcaqcwgPCQXbtWzF8ulGP_L3gXOnRFMFmA8W2YeJI6aOSg6IkNP9QTyaFTbDDbbrz6c1Jv), [2](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ)]
+* How to Check: You can search the database by typing in your name or keywords, or by uploading an image to look for visual matches. [[1](https://www.google.com/goto?url=CAESYwHrOzAV4hiiEbKam_WjJlu8MxZrFtSazw91AYKZqiOEOza2tZANr5liTIYhlCuH7KVIJUmMi7wIz--cDkr67vQZaarC6J2mwCrLr7SOupQWBXo6UFtqP6qmdYB7nEiTMui36A), [2](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ)]
+* Limitations: It only covers the LAION-5B image dataset. It does not search text-based training data used by large language models like ChatGPT, Claude, or Gemini. [[1](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ)]
+
+How to Opt Out
+
+* Do Not Train Registry: Spawning AI allows you to submit your work or domain to their Do Not Train Registry to block future inclusion. [[1](https://www.google.com/goto?url=CAESgAEB6zswFep9-Eoci7sqtrzO8h9gomdn5_hjZBW7loFGY-n7EktvYER-X0h311ImdHFJpg5KdL2JzXjz7cprnbPEVW44BAtiKpX_J-LcMhveQ0slrQHMWyS3-Mw-80eBad-Iq8YD8bDKY8XHOPiiLxohzMT6rDEQQrV24Ug_pZRqXQ), [2](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ)]
+* Text Content: For written text or websites, you can use a `robots.txt` file to block known AI scrapers (such as GPTBot or Google-Extended). [[1](https://www.google.com/goto?url=CAESdQHrOzAVpwIsr5WmrA10Ck_xGdtTHde7VblEtWFeWv1Ni1DI4y-DzkGJHz7_PlH4y837t96oBjJkZM4laHs1GfgyxKCoRkJFOW7zDxi8Bl69ODpWIqlrqSOiwduJrELrwXy5Nrm6EN2PXes_X0mG_NSafY3SeQ)]
+
+Would you like help setting up a robots.txt file for a website, or do you want to know more about opting your artwork out of AI training?
+Mentionable AI
+Have I Been Trained? Free Tool to Check AI Training Data (2026)
+Key Takeaways You publish an article. It gets indexed. It ranks on Google. Then one day you wonder: did an AI model just... learn from it? Is your content sitti...
+Facebook
+What happened to have i been trained website? - Facebook
+Have I Been Trained? Any AI system is only as good as the data it is given. AI image generation is only possible after “training” a model on vast amounts of ima...
+YouTube·AI Samson
+5:23
+99% of People Don't Know If They Are In The AI Art Database
+[www.toolcenter.ai](https://www.toolcenter.ai)
+Have I Been Trained? Review 2026
+What Is Have I Been Trained? Have I Been Trained? is a web-based search tool that lets you query the LAION-5B dataset — a collection of approximately 5.8 billio... $ AI Mode Conversation
+You said: Books3Books3
+Books3 is a controversial open-source text dataset containing over 191,000 pirated copyrighted books used widely to train generative artificial intelligence models. [[1](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR), [2](https://www.google.com/goto?url=CAESqwEB6zswFXqk9EE7r5N_GB7fZSf3iVGNa_lsGAGvAponECUZqiX5UKPv2yCvR0jcMw7DLW5kUjpbaMZKsk9KTQDOxCtcZ1noe7WmP_OinFrPVmzD_HP8M9VRHpok7hk-WNkPGmjpeKk0uT7CZKfxj43zcK8MQDkrPN9coUoaPiw4HBFq-9czQ7U7e7ei-X8dfTXbCovxuaGCUsGxl-p-tF3AA5AKn8-GmGATTLM), [3](https://www.google.com/goto?url=CAESZwHrOzAVfDRJFHrTbU56-RsMLAVxDpPgZfirsS1Z4Pe5Zrz-8yxuJew73ucq1RDK4fRiORC6-Zap1WSTfjrv351TeGUSGkSNHTsVcyycoJfrWdfeVGxrjHPcVXS20PMKMTASKx0d19c)]
+Overview & Creation
+
+* What it is: A collection of roughly 191,000 to 197,000 digital fiction and nonfiction e-books (many with verified ISBNs). [[1](https://www.google.com/goto?url=CAESewHrOzAVqzkrw0XjnMBmOqMw1iB7qcm370ySboJ24rdZnACATLYDPeC85A8B1rKfBjxwf4yk3FmHPUa0dLVRhUe33Ox47XTmL9IFoW-xByTpkg11PeVNPHp33_CEH0Fdk2WDqy4OX5UMyJrIJVScqiaUpauM7X7P38Bx6A), [2](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR)]
+* Origin: Created in October 2020 by independent AI developer Shawn Presser, who scraped the files from shadow libraries to help democratize open-source large language model (LLM) training data. [[1](https://www.google.com/goto?url=CAESZwHrOzAVfDRJFHrTbU56-RsMLAVxDpPgZfirsS1Z4Pe5Zrz-8yxuJew73ucq1RDK4fRiORC6-Zap1WSTfjrv351TeGUSGkSNHTsVcyycoJfrWdfeVGxrjHPcVXS20PMKMTASKx0d19c), [2](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR)]
+* The Pile: EleutherAI incorporated Books3 into The Pile, a massive 800GB+ open-source dataset released in late 2020 to train LLMs. [[1](https://www.google.com/goto?url=CAESaAHrOzAVXiL-LLqJ3_3uAk0hbjvgCmKS1iS56j1RyHs-3ZCBuOQwqk239OEzXh39TWPPENUOGou7iih2HKltDuPfFEgaFmNDg6JDgHFEqoEFRgofk8oI_KKdPoj5tfQiBftIlHCIYFF2), [2](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR), [3](https://www.google.com/goto?url=CAESewHrOzAVqzkrw0XjnMBmOqMw1iB7qcm370ySboJ24rdZnACATLYDPeC85A8B1rKfBjxwf4yk3FmHPUa0dLVRhUe33Ox47XTmL9IFoW-xByTpkg11PeVNPHp33_CEH0Fdk2WDqy4OX5UMyJrIJVScqiaUpauM7X7P38Bx6A)]
+
+AI Usage & Industry Impact
+
+* Adopted by tech giants: Books3 has been utilized or referenced in the training data for models from major companies and organizations—including Meta (LLaMA), Bloomberg, Nvidia, Apple, and Anthropic. [[1](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR), [2](https://www.google.com/goto?url=CAESewHrOzAVqzkrw0XjnMBmOqMw1iB7qcm370ySboJ24rdZnACATLYDPeC85A8B1rKfBjxwf4yk3FmHPUa0dLVRhUe33Ox47XTmL9IFoW-xByTpkg11PeVNPHp33_CEH0Fdk2WDqy4OX5UMyJrIJVScqiaUpauM7X7P38Bx6A)]
+* Alternative datasets: Developers looking for clean or legal training data often turn to open alternatives like Project Gutenberg, Dolma, or EleutherAI's later ethically curated Common Pile release. [[1](https://www.google.com/goto?url=CAESaAHrOzAVXiL-LLqJ3_3uAk0hbjvgCmKS1iS56j1RyHs-3ZCBuOQwqk239OEzXh39TWPPENUOGou7iih2HKltDuPfFEgaFmNDg6JDgHFEqoEFRgofk8oI_KKdPoj5tfQiBftIlHCIYFF2), [2](https://www.google.com/goto?url=CAESoQEB6zswFdNCGTMghIPOqyR8Vcf46FkMJfv-Diyl9yQ-vRx4gL03q3emYlxUuNjtKnOhDGfe3WMy6HCI-Tqeeu1LeHf7F5YS8o-Hpq9Z5N826jNaGRvpaT5r97iUb__kDjP54Y26GuATalHgzo3GOxNPPiPJB-lHPN7ynHy8XHEDwpSFrrn_KR3UpzIhRr3ZciPRPR29SVc5Io0CcpS0g1H8og)]
+
+Controversies & Legal Battles
+
+* Copyright infringement: Because the dataset was compiled from unauthorized shadow libraries, authors (such as Margaret Atwood, Stephen King, and Sarah Silverman) never consented or received compensation. [[1](https://www.google.com/goto?url=CAEShQEB6zswFeQMUHzTZDGrJ3m_PdMPJrSh59L4IZnbII4O_8jP4UZvnE6KZjoKvn5X6mXTE9cCnp5B9MBjDjYKG6JrV8ZCVkkNx9o-8FK0C1E7gEikewOCNnkqSvbNukkqfDpb6MTVzgxrJlFka5kLjFR6R3iKJxCJxDo1_TDhC7T61DKf66vR), [2](https://www.google.com/goto?url=CAESZwHrOzAVfDRJFHrTbU56-RsMLAVxDpPgZfirsS1Z4Pe5Zrz-8yxuJew73ucq1RDK4fRiORC6-Zap1WSTfjrv351TeGUSGkSNHTsVcyycoJfrWdfeVGxrjHPcVXS20PMKMTASKx0d19c), [3](https://www.google.com/goto?url=CAESYwHrOzAVh12kCQcbRDSLxi1QaMpOPZ2hoFy6R1FoCCKYiUyDeyvCpG3IEOOk2PFu7YGQuVH__b1QJVA2DSHjWWxAnr-KcKltE5IvgJcew8OWOOzOwMBxn8DcEWbHgg4XxWsZKw), [4](https://www.google.com/goto?url=CAESYwHrOzAVqM7KDfakEWHhFKDeBqtWv3J52_fuFsk3S01lOdKLIokBvIoRgDXeuU_K3CUprrTC6HmHhE0vMIDAZkXAikvYGoWRom_6cNHDWgYDjAkM2160kbXPksqEKQj77jN1IQ)]
+* Lawsuits: The discovery of Books3 triggered multiple class-action copyright lawsuits against tech companies and AI developers, including legal actions targeting Meta, Bloomberg, and Adobe. [[1](https://www.google.com/goto?url=CAESZwHrOzAVfDRJFHrTbU56-RsMLAVxDpPgZfirsS1Z4Pe5Zrz-8yxuJew73ucq1RDK4fRiORC6-Zap1WSTfjrv351TeGUSGkSNHTsVcyycoJfrWdfeVGxrjHPcVXS20PMKMTASKx0d19c), [2](https://www.google.com/goto?url=CAESYwHrOzAVh12kCQcbRDSLxi1QaMpOPZ2hoFy6R1FoCCKYiUyDeyvCpG3IEOOk2PFu7YGQuVH__b1QJVA2DSHjWWxAnr-KcKltE5IvgJcew8OWOOzOwMBxn8DcEWbHgg4XxWsZKw), [3](https://www.google.com/goto?url=CAESYgHrOzAVdletXMB1xEKfLj5EvdG-fuceKQRJNLrzwwt_L3Ru3CXMpGnqy1Z8QpTnxdgvPUZku0oSX64ghr_T-eTCb4uWch69EBzBBlBYL8rn4T1g-s9ATdXjNC28akQRQbPa)]
+* Takedowns: Rights groups issued DMCA notices, leading to the removal of components of the dataset from major hosting platforms like Hugging Face and The-Eye. [[1](https://www.google.com/goto?url=CAESewHrOzAVqzkrw0XjnMBmOqMw1iB7qcm370ySboJ24rdZnACATLYDPeC85A8B1rKfBjxwf4yk3FmHPUa0dLVRhUe33Ox47XTmL9IFoW-xByTpkg11PeVNPHp33_CEH0Fdk2WDqy4OX5UMyJrIJVScqiaUpauM7X7P38Bx6A), [2](https://www.google.com/goto?url=CAESZwHrOzAVfDRJFHrTbU56-RsMLAVxDpPgZfirsS1Z4Pe5Zrz-8yxuJew73ucq1RDK4fRiORC6-Zap1WSTfjrv351TeGUSGkSNHTsVcyycoJfrWdfeVGxrjHPcVXS20PMKMTASKx0d19c)]
+
+Would you like to know how to check if a specific author or book title was included in the Books3 dataset?
+The Atlantic
+AI Watchdog: Books3 - The Atlantic
+Dataset: Books3 (collection of >191,000 copyrighted fiction and nonfiction books published mostly in the past 25 years, including works by major authors like Ma...
+Reddit·r/LanguageTechnology
+Anybody have a mirror to the Books3 dataset? : r/LanguageTechnology - Reddit
+October 14, 2024 — Books3 Alternatives: The Books3 dataset is challenging to locate, but viable alternatives include Dolma, Pile v2, and Project Gutenberg. These open-source datas...
+Substack·AI and Copyright
+Has your book been used to train the AI?
+Dataset: Books3 containing 197,000 downloaded ebooks (125,000 ISBNs, 72,508 linked to titles) created in 2020 by Shawn Presser via BitTorrent, consisting of pir...
+WIRED
+The Battle Over Books3 Could Change AI Forever | WIRED
+Creation: Shawn Presser created Books3 in October 2020 by scraping ~196,000 pirated books from a shadow library using Aaron Swartz's script to democratize LLM t...
+Wikipedia
+The Pile (dataset) - Wikipedia
+Dataset: The Pile (886.03 GB, open-source, English text) created by EleutherAI, released December 31, 2020, to train large language models across 22 sub-dataset...
+literaryagentmarkgottlieb.com
+The Books3 Dataset: Controversy Surrounds Unauthorized Use in AI Training — Literary Agent Mark Gottlieb
+Overview: The Books3 dataset contains over 191,000 digitized copyrighted books used without authorization by companies like Meta and Bloomberg to train generati...
+YouTube·CBC News: The National
+2:02
+Authors shocked to find their books used to train AI without permission
+YouTube·bookswithzara
+41:25
+AI is destroying books. LEGALLY.
+YouTube·AI Tool Corner
+1:09
+Adobe AI lawsuit 😱 #ai #ainews #adobe
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: Electronic Literature CollectionElectronic Literature Collection
+The Electronic Literature Collection is open-access and free to read online:
+[⁠Electronic Literature Collection website](https://www.google.com/goto?url=CAESWwHrOzAV6JVL5OgTvnpDObr1KS85mDxNOgYJ8VeXuUvsGGBLYt01XMjNDQdKB4bUNyRysFNcR6imTXnyyGh9YKy6vTvXrNHUVHk-tmqukXWSmuLnOUJXQKVYLrI): Explore digital-born literature and anthologies published by the Electronic Literature Organization.
+Overview
+The [Electronic Literature Collection](https://www.google.com/goto?url=CAESWwHrOzAV6JVL5OgTvnpDObr1KS85mDxNOgYJ8VeXuUvsGGBLYt01XMjNDQdKB4bUNyRysFNcR6imTXnyyGh9YKy6vTvXrNHUVHk-tmqukXWSmuLnOUJXQKVYLrI) is a periodical publication produced by the [Electronic Literature Organization](https://www.google.com/goto?url=CAESZgHrOzAVPqrs1AzqTrxgqy6wE0XFmWqkF7_McVyzmjLEThghagib6F1--zVKdvcOVnpA_V3eif6CHNyOCeQ2bXxQ4i1gCrBapVk4LbJtzYiwCz_5kx9HrKWG9tZCgHbk9C4FZ1OELQ) (ELO) featuring current and historical digital-born literary works. These pieces are created on and designed for computers or mobile devices, utilizing formats that cannot be replicated in traditional print. [[1](https://www.google.com/goto?url=CAESWwHrOzAV6JVL5OgTvnpDObr1KS85mDxNOgYJ8VeXuUvsGGBLYt01XMjNDQdKB4bUNyRysFNcR6imTXnyyGh9YKy6vTvXrNHUVHk-tmqukXWSmuLnOUJXQKVYLrI), [2](https://www.google.com/goto?url=CAESfgHrOzAVrS6kU8fwwUuxms51fbhrLUHKW71qfr2zDhVz4-FLKxEy660iCGI51e1WE7-PNG6X0YAdHITlESTHgL_HuXzDgSrJ5eUOUOHN7uXvw7yjVK42mz0fOnAOvVFvZ2BMCz2F1ygyPwWhgXyi0BcvcKYDIMtY2XJjCMfAGw), [3](https://www.google.com/goto?url=CAESZwHrOzAVSEy_DzEMkXHwz7EUmpjGWCz2PRac0AwTkTYQarAEC6BrOPFZs3jBJ7oqNe9pdG8NcyGOjrlEJdsggHV1Xfut97_NwJJbz1QfCrHyjV56vFqFrgvgfdkIewu3yQ4j0ZTRlow), [4](https://www.google.com/goto?url=CAESaQHrOzAVhPrMhrfgP4Zk2GigrM66X-LRuxIVGzUBhR8GSfkc2LUr_FEFURa8F0i16beae_NIxxJR_uZDKv-nwR04VSG-q1i2purkALrZj9Eus5YVzQRJTLviRbe4eCZn4ZywqUDQmvX1EA)]
+Published Volumes
+
+* Volume 1: Released in October 2006
+* Volume 2: Released in February 2011 (81 works)
+* Volume 3: Released in February 2016
+* Volume 4: Released in June 2022 (featuring 132 works across 31 languages from 42 nationalities, optimized for mobile) [[1](https://www.google.com/goto?url=CAESWgHrOzAV_xn8QDkQtEVkMSwrS66NN-bRJgTP0336arsgMxgEKd_GPHnsvw6U0a73K5OBlIJmmxpB3br36sc2TsJf7tvHQkmErbGbtFDGt_mX1pn1RHDrzTypGg), [2](https://www.google.com/goto?url=CAESWwHrOzAV6JVL5OgTvnpDObr1KS85mDxNOgYJ8VeXuUvsGGBLYt01XMjNDQdKB4bUNyRysFNcR6imTXnyyGh9YKy6vTvXrNHUVHk-tmqukXWSmuLnOUJXQKVYLrI), [3](https://www.google.com/goto?url=CAESZwHrOzAVSEy_DzEMkXHwz7EUmpjGWCz2PRac0AwTkTYQarAEC6BrOPFZs3jBJ7oqNe9pdG8NcyGOjrlEJdsggHV1Xfut97_NwJJbz1QfCrHyjV56vFqFrgvgfdkIewu3yQ4j0ZTRlow)]
+
+Key Features
+
+* Formats: Includes hypertext fiction, kinetic poetry, generative and combinatory forms, network writing, codework, 3D, and narrative animations.
+* Access: Entirely open access and free to read online, with past volumes also distributed via physical media like USB drives or CD-ROMs. [[1](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:9469238376309101173&ibp=oshop), [2](https://www.google.com/goto?url=CAESWwHrOzAV6JVL5OgTvnpDObr1KS85mDxNOgYJ8VeXuUvsGGBLYt01XMjNDQdKB4bUNyRysFNcR6imTXnyyGh9YKy6vTvXrNHUVHk-tmqukXWSmuLnOUJXQKVYLrI), [3](https://www.google.com/goto?url=CAESZwHrOzAVSEy_DzEMkXHwz7EUmpjGWCz2PRac0AwTkTYQarAEC6BrOPFZs3jBJ7oqNe9pdG8NcyGOjrlEJdsggHV1Xfut97_NwJJbz1QfCrHyjV56vFqFrgvgfdkIewu3yQ4j0ZTRlow), [4](https://www.google.com/goto?url=CAESfgHrOzAVrS6kU8fwwUuxms51fbhrLUHKW71qfr2zDhVz4-FLKxEy660iCGI51e1WE7-PNG6X0YAdHITlESTHgL_HuXzDgSrJ5eUOUOHN7uXvw7yjVK42mz0fOnAOvVFvZ2BMCz2F1ygyPwWhgXyi0BcvcKYDIMtY2XJjCMfAGw)]
+
+Would you like to know more about how to submit a work to the ELO, or are you looking for specific types of e-lit (like hypertext fiction or kinetic poetry)?
+Electronic Literature Organization
+Electronic Literature Collection
+Electronic Literature Collection. A Publication of the Electronic Literature Organization · ELO. Volume 1 (October 2006). Volume 2 (February 2011). Volume 3 (Fe...
+PDXScholar
+Electronic Literature Collection Volume 4 - PDXScholar - Portland State University
+Kathi Inman Berens, Portland State UniversityFollow John Murray, University of Central Florida Lyle Skains, Bournemouth University Rui Torres, University Fernan...
+WIKI Creative Commons
+Electronic Literature Collection - Creative Commons Wiki
+The Electronic Literature Collection is a periodical publication of current and older electronic literature in a form suitable for individual, public library, a...
+the-next.org
+The Electronic Literature Collection Volume 2 - The NEXT
+The Electronic Literature Collection 2 is an anthology of 81 works of electronic literature published both on flash drive and the web by the Electronic Literatu...
+YouTube·Digital Humanities Initiative
+2m
+Electronic Literature: An Introduction
+Google
+25+ Copies Paperback Book Electronic Literature (New Horizons for the Literary), 9780268030858, Bulk Quantity
+A visible presence for some two decades, electronic literature has already produced many works that deserve the rigorous scrutiny critics have long practiced wi...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: ELMCIP Electronic Literature Knowledge BaseELMCIP Electronic Literature Knowledge Base
+The ELMCIP Electronic Literature Knowledge Base is a comprehensive, cross-referenced digital humanities research resource for electronic literature, preserved as a frozen archive on the [ELMCIP Official Website](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg). [[1](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg)]
+Key Details
+
+* Status: Frozen archive (active from June 2010 to October 2026; no longer open for new submissions or contributions). [[1](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg)]
+* Origin: Developed in Drupal 7 by the University of Bergen Electronic Literature Research Group as a core outcome of the six-nation ELMCIP project (Electronic Literature as a Model of Creativity and Innovation in Practice, 2010–2013) led by Scott Rettberg. [[1](https://www.google.com/goto?url=CAES5wEB6zswFUhj0VeRz8ZfhKSpa9h9SaBOMtQjqfvKY1DdoiA5HXPAza70US8nTlzmlcmrGfpWoHsDBJelMMA-OOFNykFfskPfPiAtXowShawYZNivvLJ7W8goEnZADyUzp67OJDKKMlI9sAj708yEya5gMOjbCf0fcFb9gY0i1g9vnG7DYzi_6aEFEAPnP-TW1eQCF-zaizPia87FpD4t2D-Z6uopcMN23k6b2xV50QWmoa17nyaaVqZGcRozsJeeAB_wyoFMFKUypXqybsJ33uhZSh0mg9BOxK7iLMTfqjL8_ggzPI_B-ao), [2](https://www.google.com/goto?url=CAESygEB6zswFXmNU0JFt4RDQl2ISITb8vxEinhwDk60SRk0bPzElY700Q2QiUA75E1NTRPnzYMG9aDAlJ-CwYb0KQ4nnLSXDRndZTyS1xeIb1pbg0Q-DDneveYeecz5DyaIQCan7ZERVDUH6oVTC6eN9BVsufzg8ng3jqAawwMAwOR5zbSK5uCr2DlRkSN7uLizdxwULT6veFaU2pkhB13QZuvgrT6mZdX7JdbIJGrhS-bo5EGMujV9JuLV_97qjvZ3Xxaoorrg_HtXdQUv), [3](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg)]
+* Content: Houses thousands of interconnected records covering authors, creative works, critical writing, platforms, events, organizations, publishers, and teaching resources. [[1](https://www.google.com/goto?url=CAESTgHrOzAVVsxdHU1b-FJmWdZ8gEPjyNHWa2GRr4_OVYCLWf5m9gD_oVANsvjzjYqY9VtkX79_pOS8tceg6jl9muyC6UTtWw7U8_m0FxME1w), [2](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg)]
+* Legacy: Its mission continues through the transition toward the Digital Narrative Knowledge Base. [[1](https://www.google.com/goto?url=CAEShQEB6zswFSeHY1Ut_vBfSDfp-7FqiINPKtkkLODJSG0grA5SaOVnkp51-5JZmfY27vP0-bUWv-B2wBEyRe4gzGcwTvZ22AYzN9CLeUAPZZu4_OmNPRVFSYQRIMckJVZl1Bn6vaT_pq0O4JHHdUp3sD7wUBYLPUnVGGa0FFGzaPMKPBsM6LY5), [2](https://www.google.com/goto?url=CAESSwHrOzAVA5WUU-Zdk5wraxfUdFLwA7_w6N7fFgi8nEKVGAVjHJrLFUdyRIprs6lcM2_VK_Ha24dexbHvJR0T6MTFewTateSj_3jRbg)]
+
+Would you like to know more about how to browse the frozen archive or information regarding the Digital Narrative Knowledge Base?
+ELMCIP Knowledge Base
+ELMCIP
+# Electronic Literature Knowledge Base June 2010 – October 2026 The ELMCIP Knowledge Base is a research resource for electronic literature, now preserved as a f...
+[www.elmcip.it](https://www.elmcip.it)
+ELMCIP | Electronic Literature as a Model of Creativity and Innovation in Practice
+The ELMCIP Electronic Literature Knowledge Base is a research resource for electronic literature. An open-access, contributory database developed in Drupal 7, i...
+electronic book review
+Documenting a Field: The Life and Afterlife of the ELMCIP Collaborative Research ...
+The ELMCIP Electronic Literature Knowledge Base is a large-scale digital humanities database that emerged from a six-nation European research project on electro...
+Arquivo Digital da PO.EX
+The ELMCIP Electronic Literature Knowledge Base: A Review
+# The ELMCIP Electronic Literature Knowledge Base: A Review Funded by the HERA Joint Research Programme and by the Socio-economic Sciences and Humanities Progra...
+Facebook·ELMCIP Knowledge Base
+ELMCIP knowledge base lessons learned and Digital Narrative Database plans
+# ELMCIP knowledge base lessons learned and Digital Narrative Database plans Our research group at the University of Bergen is beginning the process of shifting...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: CELL Consortium on Electronic LiteratureCELL Consortium on Electronic Literature
+The Consortium on Electronic Literature (CELL) is an international, open-access collaboration that provides centralized access to digital literary databases, archives, and institutional repositories. [[1](https://www.google.com/goto?url=CAESUAHrOzAVF7uSe5B_alMA-2Go6QMUnD9HCyULKTVhulpWHKCc_NqPQZ-nJwqJFpLMpHeKlCWC7XkywVozVKd7_8FZMbrNIEd39ljINNYpWYDw), [2](https://www.google.com/goto?url=CAESVQHrOzAV_XQRGvYPUHJb7vGqhRjmDva_yXkJuGfZ4V6Biu8FBpnZt4JZC1Im_rHVjVnZXYJ7xyxZsKqAYG1LVHShN2Hkibayq7jCfJaWjSqjpQMMvKI)]
+You can explore the project and its federated archive search engine directly through [The Index | CELL](https://www.google.com/goto?url=CAESUAHrOzAVF7uSe5B_alMA-2Go6QMUnD9HCyULKTVhulpWHKCc_NqPQZ-nJwqJFpLMpHeKlCWC7XkywVozVKd7_8FZMbrNIEd39ljINNYpWYDw) or read more about its background on [About CELL | Consortium on Electronic Literature](https://www.google.com/goto?url=CAESVQHrOzAV_XQRGvYPUHJb7vGqhRjmDva_yXkJuGfZ4V6Biu8FBpnZt4JZC1Im_rHVjVnZXYJ7xyxZsKqAYG1LVHShN2Hkibayq7jCfJaWjSqjpQMMvKI).
+Key Facts & History
+
+* Mission: Preserves born-digital creative works, hypertexts, kinetic poetry, and interactive media. [[1](https://www.google.com/goto?url=CAESUAHrOzAVF7uSe5B_alMA-2Go6QMUnD9HCyULKTVhulpWHKCc_NqPQZ-nJwqJFpLMpHeKlCWC7XkywVozVKd7_8FZMbrNIEd39ljINNYpWYDw)]
+* Initiation: Founded in 2009 by the [Electronic Literature Organization](https://www.google.com/goto?url=CAESXAHrOzAV4NiqYRcTWMB4GqAFLLpBonHEej_7JFt1IDn406HActTsQ_jL2WgSHcYuqqIEvzD2bd3ymTr3mJrJ8J4unsAobO-iPRbj02db0ri0_9_w0etVpGYV3NyH) (ELO). [[1](https://www.google.com/goto?url=CAESUAHrOzAVF7uSe5B_alMA-2Go6QMUnD9HCyULKTVhulpWHKCc_NqPQZ-nJwqJFpLMpHeKlCWC7XkywVozVKd7_8FZMbrNIEd39ljINNYpWYDw), [2](https://www.google.com/goto?url=CAESVQHrOzAV_XQRGvYPUHJb7vGqhRjmDva_yXkJuGfZ4V6Biu8FBpnZt4JZC1Im_rHVjVnZXYJ7xyxZsKqAYG1LVHShN2Hkibayq7jCfJaWjSqjpQMMvKI)]
+* Stewardship & Governance: Hosted at the Center for Digital Narrative, University of Bergen in Norway, in partnership with ELO and federated member archives. [[1](https://www.google.com/goto?url=CAESVQHrOzAV_XQRGvYPUHJb7vGqhRjmDva_yXkJuGfZ4V6Biu8FBpnZt4JZC1Im_rHVjVnZXYJ7xyxZsKqAYG1LVHShN2Hkibayq7jCfJaWjSqjpQMMvKI)]
+* Standards & Tools: Developed the CELL Element Set metadata standard (2012–2013) and launched its cross-database search engine ("The Index") using curated Wikibase and Wikidata infrastructure. [[1](https://www.google.com/goto?url=CAESVQHrOzAV_XQRGvYPUHJb7vGqhRjmDva_yXkJuGfZ4V6Biu8FBpnZt4JZC1Im_rHVjVnZXYJ7xyxZsKqAYG1LVHShN2Hkibayq7jCfJaWjSqjpQMMvKI)]
+* Federated Member Archives: Includes projects such as the ELMCIP Knowledge Base, Répertoire NT2, Digital Archive of PO.EX, Electronic Literature Directory (ELD), Archiv der deutschsprachigen elektronischen Literatur (ADEL), Ciberia Project, and Databank Digitale Literatuur (DLD). [[1](https://www.google.com/goto?url=CAESUAHrOzAVF7uSe5B_alMA-2Go6QMUnD9HCyULKTVhulpWHKCc_NqPQZ-nJwqJFpLMpHeKlCWC7XkywVozVKd7_8FZMbrNIEd39ljINNYpWYDw)]
+
+Would you like to know more about how to submit a database archive to CELL or explore specific examples of electronic literature cataloged in the index?
+cellproject.net
+The Index | CELL
+Federated Member Archives: ELMCIP Knowledge Base (ELMCIP), Répertoire NT2 (NT2), Digital Archive of PO.EX (PO.EX), Electronic Literature Directory (ELD), Archiv...
+cellproject.net
+About CELL | Consortium on Electronic Literature
+Overview: International, open-access collaboration providing centralized access to electronic literature databases via The Index in a curated Wikibase and Wikid...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: electronic book reviewelectronic book review
+The [Electronic Book Review](https://www.google.com/search?kgmid=%2Fg%2F11b8zg2vf7&q=Electronic+Book+Review) (`ebr`) is an open-access, peer-reviewed scholarly journal focused on digital textuality, cyberculture, and the intersection of literature, technology, and the arts. [[1](https://www.google.com/goto?url=CAESbAHrOzAVv0W8Nm6csjXmf097fjlxmFaRz5jubH4ynBJ0lJLl12nTW4MM5L1xJbVvm31JnzwN_SIqEjAKkOqAQhCxziN0J_bUMf_16OukU9HXPPUj1WzZTwlCXmVP1unj9ujOM7Vo2UgYFpbYlw), [2](https://www.google.com/goto?url=CAESggEB6zswFc4CoArGMpZX35Qwic7Qjyih6oNMRtVtXNhWH2KFeHSxSZ4w4IyhxmLocXo2FmdMp-ksX4p6IAsyx6eaMyzVXeD2cqqNdlArulJksvHzDUPylHSKjmMcR7o1lYTDnxnaOQ6iVLtpP8ASrY_7WN8skt7cpnmaBGw63vHP1O4Q)]
+Key Details
+
+* Founded & Focus: Established in 1995 by Joseph Tabbi and Mark Amerika, `ebr` explores critical writing, electronic literature, digital humanities, and peer-to-peer scholarly review alternatives. [[1](https://www.google.com/goto?url=CAESbAHrOzAVk0-B-Zuxnu7L63qNJ8c9kwl43Vb29XO-iYZ8_utLOm5K0GoSIWMBP1R8XWegZn82W0tYxx-7Yac12rK5B7VuX5ZIcdBGNb8EQsG0r3BAHKsiBX-SnOPiwKqcEocyI0w0-_ITLYTL9Q), [2](https://www.google.com/goto?url=CAESggEB6zswFc4CoArGMpZX35Qwic7Qjyih6oNMRtVtXNhWH2KFeHSxSZ4w4IyhxmLocXo2FmdMp-ksX4p6IAsyx6eaMyzVXeD2cqqNdlArulJksvHzDUPylHSKjmMcR7o1lYTDnxnaOQ6iVLtpP8ASrY_7WN8skt7cpnmaBGw63vHP1O4Q), [3](https://www.google.com/goto?url=CAESbAHrOzAVv0W8Nm6csjXmf097fjlxmFaRz5jubH4ynBJ0lJLl12nTW4MM5L1xJbVvm31JnzwN_SIqEjAKkOqAQhCxziN0J_bUMf_16OukU9HXPPUj1WzZTwlCXmVP1unj9ujOM7Vo2UgYFpbYlw)]
+* Format & Affiliations: It utilizes dynamic web architectures rather than static issues and is supported by several academic institutions and the Electronic Literature Organization. [[1](https://www.google.com/goto?url=CAESbAHrOzAVk0-B-Zuxnu7L63qNJ8c9kwl43Vb29XO-iYZ8_utLOm5K0GoSIWMBP1R8XWegZn82W0tYxx-7Yac12rK5B7VuX5ZIcdBGNb8EQsG0r3BAHKsiBX-SnOPiwKqcEocyI0w0-_ITLYTL9Q), [2](https://www.google.com/goto?url=CAESbAHrOzAVv0W8Nm6csjXmf097fjlxmFaRz5jubH4ynBJ0lJLl12nTW4MM5L1xJbVvm31JnzwN_SIqEjAKkOqAQhCxziN0J_bUMf_16OukU9HXPPUj1WzZTwlCXmVP1unj9ujOM7Vo2UgYFpbYlw)]
+
+Would you like to know more about recent essays published on the journal or how to submit a scholarly contribution?
+electronic book review
+electronic book review
+electronic book review (ebr) is an online, open access, peer-reviewed journal of critical writing produced and published by the emergent digital literary ...
+Wikipedia
+Electronic Book Review - Wikipedia
+Overview: Electronic Book Review (ebr) is an open-access, peer-reviewed monthly scholarly journal founded in 1995 by Joseph Tabbi and Mark Amerika, focusing on ...
+Open Humanities Press
+Electronic Book Review
+# Electronic Book Review Publishing open access since 1995 ISSN 1553 1139 Electronic Book Review (ebr) is a peer-reviewed journal of critical writing produced a...
+Electronic Literature Directory
+Electronic Book Review
+Combining elements of graphic design, database programming, and scholarly editing, The Electronic Book Review (ebr) participates in the media developments it cr...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: Taper magazineTaper magazine
+Taper is an online literary magazine for small computational pieces: [[1](https://www.google.com/goto?url=CAESUQHrOzAV-SJ_ArwRl4ByWo10fEeLBVZY-cZHdM-3IOdOopRrDQxHVAa-3Aj9ERu4pVbiaivaaREcmJUeA3a2XAJd9qGvftFNCKwYoD7ohmLcMw)]
+[⁠Taper Computational Poetry](https://www.google.com/goto?url=CAESTgHrOzAVguB-2htDzCLpcVeskYHmDDAvvoWPpRc2yUBYEtFNLrIJNXamV9O_jlCcnO3SsLvYxZYGmA1lKTuyoiw8W60R1CkCEBtj8YciJw): Explore digital poems and submission guidelines on the official site.
+What is Taper?
+
+* Format: A browser-based, biannual online literary journal and digital zine. [[1](https://www.google.com/goto?url=CAESXAHrOzAVrK_VMzFjYkYHbwGUzjyzOe95mqrYF5EDfp8KsYApEwr16B9Dd15FXdcrWdhwRo2kWpP1FZEi4RMWOSUE7_RGcBVxzchczJqBVQ8l9BpMUtpWvLTxyd8T), [2](https://www.google.com/goto?url=CAESZAHrOzAVlsSXwRYIz51OQEsiX_dUR97Y_NtjsGojlv7HWDjY8gfpYA4crZDJAwcwBgtReS6-p53k4Fw_mFZLlZZpfuu_5nCkZKfAqP0BZ9NdHzSokx2Up7B0tO3DI3PWHLGXTkE)]
+* Constraint: Publishes tiny computational poems and web art strictly under 2 kilobytes (2048 bytes) in size (HTML5/code-based). [[1](https://www.google.com/goto?url=CAESVAHrOzAVvZDUgQYl686ZlcTjMHBy2fBUnMQZikFzTkmsMM-MBgaga3JoN9dS5cwucTiyd8kJ9mswzPAP8-nvQHxjy6456Y08zg0Cef5TJw3e460crw), [2](https://www.google.com/goto?url=CAESXAHrOzAVrK_VMzFjYkYHbwGUzjyzOe95mqrYF5EDfp8KsYApEwr16B9Dd15FXdcrWdhwRo2kWpP1FZEi4RMWOSUE7_RGcBVxzchczJqBVQ8l9BpMUtpWvLTxyd8T)]
+* Publisher: Published by Bad Quarto, historically coordinated with MIT's The Trope Tank. [[1](https://www.google.com/goto?url=CAESUQHrOzAV-SJ_ArwRl4ByWo10fEeLBVZY-cZHdM-3IOdOopRrDQxHVAa-3Aj9ERu4pVbiaivaaREcmJUeA3a2XAJd9qGvftFNCKwYoD7ohmLcMw), [2](https://www.google.com/goto?url=CAESZAHrOzAVlsSXwRYIz51OQEsiX_dUR97Y_NtjsGojlv7HWDjY8gfpYA4crZDJAwcwBgtReS6-p53k4Fw_mFZLlZZpfuu_5nCkZKfAqP0BZ9NdHzSokx2Up7B0tO3DI3PWHLGXTkE)]
+* History: Launched in Spring 2018 with Issue #1 (a minimal labyrinth), and has grown past 16 issues (such as Taper #16: For Good Measure) managed by a volunteer editorial collective. [[1](https://www.google.com/goto?url=CAESWwHrOzAVmDRUI7MvG7Ao1T1LZ9exrq0cjJgIJ1U_OpoWLtYoApyBc3pS89A0qVELKlfZ_-1VPdWsz4NIDztf4QyA0vu1YJXE4E0kOB9QQIOknMoQysCevJwuzZU), [2](https://www.google.com/goto?url=CAESUQHrOzAV-SJ_ArwRl4ByWo10fEeLBVZY-cZHdM-3IOdOopRrDQxHVAa-3Aj9ERu4pVbiaivaaREcmJUeA3a2XAJd9qGvftFNCKwYoD7ohmLcMw), [3](https://www.google.com/goto?url=CAESZAHrOzAVlsSXwRYIz51OQEsiX_dUR97Y_NtjsGojlv7HWDjY8gfpYA4crZDJAwcwBgtReS6-p53k4Fw_mFZLlZZpfuu_5nCkZKfAqP0BZ9NdHzSokx2Up7B0tO3DI3PWHLGXTkE)]
+
+Would you like to browse past themes, or do you need help submitting a piece to an upcoming issue?
+taper.badquar.to
+Taper
+Taper. an online literary magazine for small computational pieces, published by Bad Quarto · Taper #1 : a minimal labyrinth, Spring 2018. Taper #2 : poems ...
+Helen Shewolfe Tseng
+Taper - Helen Shewolfe Tseng
+Taper is an online literary magazine for tiny computational poems (under 2 kilobytes), published by Bad Quarto. I have been a contributor since Spring 2022 ...
+Instagram·taperzine
+Taper (@taperzine) • Instagram photos and videos
+Taper is a browser-based literary magazine for computational poems under 2KB (2048 bytes). · Submit your 2Kb HTML5 digital poems to Taper 17: Prime Deadline: 8/
+[www.anjchang.com](https://www.anjchang.com)
+Taper Digital Zine – Sensorial Storytelling @ anjchang
+Publication: Taper Digital Zine, biannual online literary journal for computational poetry and literary art published by Bad Quarto in coordination with MIT's T...
+Facebook·Taper Zine
+Taper Zine (@taperzine) - Facebook
+Aug 6, 2025 — Taper #16: For Good Measure is out now! Dive into a fresh collection of creative size-coded digital works by 23 authors. Check it out at taper.badquar.to/16 ...
+taper.badquar.to
+Taper
+Taper. an online literary magazine for small computational pieces, published by Bad Quarto · Taper #1 : a minimal labyrinth, Spring 2018. Taper #2 : poems ...
+AI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews) $ AI Mode Conversation
+You said: NaNoGenMoNaNoGenMo
+NaNoGenMo (National Novel Generation Month) is an annual programming challenge where participants spend the month of November writing computer code to procedurally generate a novel of 50,000 or more words. [[1](https://www.google.com/goto?url=CAESVAHrOzAVwbZTJoE1oI4ewhgNQUXTROQKKirozF81UoHmRcjNlHhmsdUy1Mr6f7GGGxVIPBsAD2yfOlMF3_7uEV1I2cClpL9ohNloo9nbkVHcOa10dA), [2](https://www.google.com/goto?url=CAESdQHrOzAVv7GrzTcXQO2w0zQfJS7HEuMW7UdhbZeJxvIcqhZFgCZH3MLiMConJHgJnNJ_5TpdRfYXsXisPrNjkATpexW7GxAZlAybFYh1RJa4DUv4r7SROmZuMPNvQJI2XFc9PTs0riSno8710xb7iyRyDpwmTQ)]
+The Core Goal and Rules
+
+* The Goal: Write and run code between November 1 (12:01 am GMT) and December 1 (12:01 am GMT) to output a text work of 50,000+ words. [[1](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w)]
+* Definition of a Novel: The definition is flexible. Participants can use traditional procedural text, Markov chains, simulations, data mashups, or creative formatting (such as guides, collections, or repeated structures). Respect for copyright applies. [[1](https://www.google.com/goto?url=CAESowEB6zswFQ6gC1tH4Su-q7fyUcCPBOdjE88vff8obkwHK45UNfQzOeXkHq700eJ6O2TWSBs2dUibCTPMVZLFY2qUDlh47V5F5GkspbmeH2Nhno9QxxPPfeguqngTMu9DJvFs1TE-i1qDwCo3wO_5feHkkeC3bnwLJAytME-ErGsahn6YyTbMuX-0_4HPVTn00CiOMfYLHGHid-v3kd2NtbayIe_H), [2](https://www.google.com/goto?url=CAESfwHrOzAVlXn06rC8-qLjo92IiBL2-vsQYALVkcsktW7wHDNv0jZK_Z4Q49qomfN4nZV8yTd3SCbAnYiJyvkkXYG9QAzmGOnli5mI49g3JXHqQgnKl2hl1rCa2G22QwAPh5R7YAdLzH5V1rGhzbJLRbo5UiY3fPrT2_j1z5V9yCs), [3](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w)]
+* Sharing: Participants share both the generated text and the source code at the end of the event. [[1](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w)]
+* Participation: You join by opening and updating an issue on the official [NaNoGenMo GitHub Repository](https://www.google.com/goto?url=CAESVAHrOzAVwbZTJoE1oI4ewhgNQUXTROQKKirozF81UoHmRcjNlHhmsdUy1Mr6f7GGGxVIPBsAD2yfOlMF3_7uEV1I2cClpL9ohNloo9nbkVHcOa10dA) or following the community guidelines on the [NaNoGenMo Official Website](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w) to declare your intent and post progress. [[1](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w)]
+
+Background
+
+* Origin: Created as a playful programming spoof of NaNoWriMo (National Novel Writing Month), which challenges humans to write a 50,000-word manuscript manually. [[1](https://www.google.com/goto?url=CAESYwHrOzAVotYMMiYq1sr6ZX0l1-5Hhw5DCIPtD1UHNWYdznl6ES0XBJ9nN1Qdv1hk9-iDO75ExxyIDIthkyWsIW0DqA9lzhHNxRmB79A7SRXmNf9CaVBL2Ktwf60Zmwpp2K0bxA), [2](https://www.google.com/goto?url=CAESdQHrOzAVv7GrzTcXQO2w0zQfJS7HEuMW7UdhbZeJxvIcqhZFgCZH3MLiMConJHgJnNJ_5TpdRfYXsXisPrNjkATpexW7GxAZlAybFYh1RJa4DUv4r7SROmZuMPNvQJI2XFc9PTs0riSno8710xb7iyRyDpwmTQ)]
+* Community: The project uses GitHub issues and discussions across annual edition repositories spanning from 2013 onward, managed by maintainers like Darius Kazemi and Hugo van Kemenade. [[1](https://www.google.com/goto?url=CAESVAHrOzAVgZXxkjJBVzNfv2uQl3kz5_EOGJl7gQ7HgsqudGizQoSslR7Yc71Qxx-ZfmaEG1JL3pNcQIpIc37omSVn-_cchpUmkPBGr7yAJDA7TCa80w)]
+
+Are you planning to participate in an upcoming NaNoGenMo, or would you like to explore code examples or generation techniques (like Markov chains or template engines) to build your own?
+NaNoGenMo
+NaNoGenMo
+Goal: Write code during November (Nov 1st 12:01am GMT to Dec 1st 12:01am GMT) to generate a 50,000+ word novel (defined flexibly, respecting copyright). Rules: ...
+Reddit·r/proceduralgeneration
+What are your thoughts on NaNoGenMo (National Novel Generation Month)?
+June 30, 2022 — NaNoGenMo Word Count: The 50,000-word requirement in NaNoGenMo is not a strict literary goal; it frees participants to achieve the count through various unconve...
+GitHub
+NaNoGenMo - National Novel Generation Month - GitHub
+Oct 9, 2025 — National Novel Generation Month. Spend the month of November writing code that generates a novel of 50k+ words. 61 followers · https://nanogenmo.github.io ...
+Liza Daly
+Why I love National Novel Generation Month - Liza Daly
+NaNoGenMo 2017: Annual programming event where participants write code to generate 50,000-word novels and publish source code. Selected Entries: B-9 Indifferenc...
+[www.centerconsulting.com](https://www.centerconsulting.com)
+NaNoGenMo: a yearly contest to write code that writes a novel
+Jun 6, 2026 — A spoof of National Novel Writing Month, it challenges participants to spend November writing computer code that generates a novel rather than writing one by ..
+YouTube·Life As I Write
+15:17
+YouTube

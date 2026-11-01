@@ -1,0 +1,264 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-htrc",
+   "name": "HathiTrust Research Center Analytics",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a research center dedicated to enabling computational analysis of the HathiTrust Digital Library, its analytics services ended 30 September 2026. A site, read on the site template.",
+   "records": [
+    {
+     "source": "HathiTrust Research Center Analytics (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "HathiTrust Research Center",
+      "HTRC"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The HathiTrust Research Center (HTRC) is a research center dedicated to enabling computational analysis of the HathiTrust Digital Library.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Indiana University",
+      "University of Illinois Urbana-Champaign"
+     ],
+     "reference": "Established as a partnership between Indiana University, the University of Illinois Urbana-Champaign and HathiTrust.",
+     "evidence": [
+      {
+       "record_quote": "Established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust,",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2011"
+     ],
+     "reference": "Established 2011.",
+     "evidence": [
+      {
+       "record_quote": "Established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust,",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A research center dedicated to enabling computational analysis of the HathiTrust Digital Library, under a non-consumptive use research policy.",
+     "evidence": [
+      {
+       "record_quote": "The HathiTrust Research Center (HTRC) is a research center dedicated to enabling computational analysis of the HathiTrust Digital Library.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "Non-consumptive use research policy",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The HathiTrust corpus as studied by text and data mining through worksets, with derived datasets computed from the volumes (Extracted Features, BookNLP dataset, word frequencies, geographic locations).",
+     "evidence": [
+      {
+       "record_quote": "HTRC developed tools, datasets, and infrastructure that supported scholars using text and data mining methods to study the HathiTrust corpus.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "Create a workset Validate a workset",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "Extracted Features BookNLP dataset Word frequencies Geographic locations",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research.",
+     "evidence": [
+      {
+       "record_quote": "Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Services discontinued 30 September 2026, accounts and logins gone, algorithms and data capsules discontinued; funding ceasing at the end of 2026, as Mike Furlough announced in October 2024; some resources remaining available without an account; access to the Digital Library open.",
+     "evidence": [
+      {
+       "record_quote": "HTRC has discontinued its services as of September 30, 2026. HTRC accounts are no longer available.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "HTRC Analytics services have ended as of September 30, 2026. HTRC accounts and logins are no longer available.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "HTRC Algorithms and Data Capsule services have also been discontinued.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "In October 2024, HathiTrust Executive Director Mike Furlough announced that funding for the Research Center would cease at the end of 2026, at which time the center will be formally closed.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "Some HTRC resources remain available and can be used without an HTRC Analytics account:",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      },
+      {
+       "record_quote": "Access to the HathiTrust Digital Library remains open.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/htrc--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'htrc' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is winding down its public services as HathiTrust suspends HTRC funding at the end of 2026.",
+    "basis": "The center reached by name with its founders, year, purpose and closing, from its own pages."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "HathiTrust Research Center – HathiTrust Digital Library"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Founded in 2011"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "the center enabled large-scale text and data mining of the HathiTrust Digital Library."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "became unavailable as of September 30, 2026."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The center composed by its closing, accurately and at the dates its own page gives. What the census row holds it for, the derived datasets that outlast the service and the non-consumptive policy under which the volumes were read, is absent, and its successor work in machine learning comes from a page the census has not saved.",
+   "key": "hathitrust-research-center-aio-20261101",
+   "entry": "hathitrust-research-center-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-htrc"
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-books3-search",
+   "name": "Books3 search (The Atlantic)",
+   "template": "site",
+   "external": true,
+   "type_basis": "A search tool on The Atlantic, entered in the census as Books3 search (The Atlantic): its page was blocked on fetch (HTTP 403) and is unread; the collection it searches is known on record only from Wikipedia's article on the Pile (third party), saved 2026-11-01. Read on the site template, its one stated atom the collection.",
+   "records": [
+    {
+     "source": "Books3 search (The Atlantic) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The collection the tool is named for, known on record only from Wikipedia's article on the Pile (third party): the Pile's Books3 component (108.40 GB), copyrighted material compiled from Bibliotik, a piracy website, taken down in July 2023 through DMCA notices and removed from the Pile. The tool itself is unread.",
+     "evidence": [
+      {
+       "record_quote": "The Books3 component of the dataset contains copyrighted material compiled from Bibliotik, a piracy website.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Books3 108.40",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "In July 2023, the Danish anti-piracy group Rights Alliance took down Books3 through DMCA notices.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      },
+      {
+       "record_quote": "Books3 was removed from the Pile before a class action lawsuit was filed in 2024 by three authors seeking damages as copies of the original dataset were still copied and available on the web.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/the-pile--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'books3-search' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "proximal_substitute",
+    "abn": false,
+    "span": "Books3 is a controversial open-source text dataset containing over 191,000 pirated copyrighted books used widely to train generative artificial intelligence models.",
+    "basis": "At the bare name the composition answers about the Books3 dataset, the collection the census's search tool runs over; the tool appears only as The Atlantic's first card and as a closing offer to check a title."
+   },
+   "atoms": [
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "who scraped the files from shadow libraries"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "At the collection's name the composition gives the collection, at a grain the census's one saved account does not reach, and leaves the search tool to a card and a closing offer. The census's separation of collection, tool and reporting is not drawn.",
+   "key": "books3-aio-20261101",
+   "entry": "books3-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-books3-search"
+  }
+ ]
+}

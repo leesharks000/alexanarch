@@ -1,0 +1,395 @@
+{
+ "n": 1726,
+ "slug": "internet-archive-aio-20261101",
+ "paste": "paste-internet-archive.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-11-01 09:56 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "Internet Archive"
+ ],
+ "turns": [
+  [
+   2,
+   42
+  ]
+ ],
+ "entity_type": "site",
+ "group": "Xtll-internet-archive",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "is a non-profit digital library founded in 1996 by Brewster Kahle and headquartered in San Francisco, California.",
+   "basis": "The library reached by name with its founder, year, seat, four services and its legal status."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "Internet Archive is a non-profit digital library containing millions of free texts"
+   },
+   {
+    "atom": "operator",
+    "present": true,
+    "span": "founded in 1996 by Brewster Kahle and headquartered in San Francisco, California."
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "founded in 1996 by Brewster Kahle"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "is a non-profit digital library founded in 1996"
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "Access to millions of free books, texts, audio recordings (including live concert archives), movies, software, and TV/radio news broadcasts."
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Mission: Universal access to all knowledge via archive.org"
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "The library composed at its grain from Wikipedia and its own home page, the Wayback Machine as the census row reads it, the means of seeing a page as it was. Its lending appears without the 2023 judgment that bars it for books on sale, its takedown practice is reported from Reddit, and nothing ties its holdings to a training set, as nothing in the saved sources does."
+ },
+ "mt": "'INTERNET ARCHIVE' ON THE OVERVIEW — THE LIBRARY AND ITS WAYBACK MACHINE AT THEIR GRAIN; ITS TAKEDOWN PRACTICE TAKEN FROM REDDIT; ITS LENDING WITHOUT THE JUDGMENT THAT LIMITS IT; NO WORD OF TRAINING",
+ "d": "THE LIBRARY, SIGNED OUT, 2026-11-01: 'The Internet Archive is a non-profit digital library founded in 1996 by Brewster Kahle and headquartered in San Francisco, California.' What it offers (the Wayback Machine, 'over 1 trillion web captures'; the free digital library; Open Library, 'allowing users to borrow digitized physical books like a traditional library'; Save Page Now); key details ('Status: 501(c)(3) non-profit organization'; preservation work; 'users on Reddit generally note that it honors DMCA takedown requests and site-exclusion preferences like `robots.txt`'); a follow-up offer. Eight cards: archive.org, Wikipedia, Facebook, a YouTube video by the Internet Archive, Reddit, the Chrome Web Store, the Library of Congress, a Facebook video by the Internet Archive.",
+ "reading": "The innocent reading first. Asked for the Internet Archive by name, the Overview says what it is, who founded it, when and where, lists four services and two details of its status and practice, and offers help with the Wayback Machine or a particular site or book.",
+ "findings": [
+  "THE LIBRARY AT ITS GRAIN. Founder, year and seat agree with Wikipedia ('Brewster Kahle founded the Internet Archive in May 1996.'; 'The Archive is headquartered in San Francisco , California.'), and '501(c)(3) non-profit organization' with 'The Archive is a 501(c)(3) nonprofit operating in the United States.' The Wayback Machine's 'over 1 trillion web captures' agrees with Wikipedia's 'more than 1 trillion web captures' and its October 2025 announcement of 'one trillion webpages'. The mission stands on the Wikipedia card only ('Mission: Universal access to all knowledge via archive.org'); Wikipedia: 'Its mission is to provide \"universal access to all knowledge\".'",
+  "THE TAKEDOWN PRACTICE FROM REDDIT. 'users on Reddit generally note that it honors DMCA takedown requests and site-exclusion preferences like `robots.txt`', chipped to the Reddit card ('respects DMCA takedown requests'). Neither the DMCA nor robots.txt is on the saved Wikipedia article; the census row's account of how the library holds books is Wikipedia's lending record: 'is lent to patrons worldwide one at a time under the controlled digital lending (CDL) theory of the first-sale doctrine' and 'The negotiated judgment of August 11, 2023, barred the Internet Archive from digitally lending books for which electronic copies are on sale.' The composition's Open Library borrows 'like a traditional library', and the judgment, the appeal it lost on 4 September 2024 and the Great 78 settlement of September 2025 are absent.",
+  "WHOSE BOOKS. 'Digitizes books page-by-page and archives cultural artifacts, government documents, and defunct websites'. The census row records the library's holding of books digitized by others, 'more than 300,000 books that were contributed to the collection, between about 2006 and 2008, by Microsoft through its Live Search Books project' and Google's scans, 'identical to the copies found on Google, except without the Google watermarks', tagged 'scanner:google'. The composition gives the library as its own scanner and names no other source of its books.",
+  "NO WORD OF TRAINING. The census row: 'the saved sources say nothing of training use of its holdings', and its one relation to the layer is Wikipedia's statement that 'Common Crawl was designed to have more and fresher data that was more efficient to analyze and utilize than the Wayback Machine'. The composition carries no training use, no dataset made from the holdings and no relation to Common Crawl; it gives the Wayback Machine as a means 'to see how websites looked in the past', the readback the census row reads it for ('It can be used to see what previous versions of web sites used to look like')."
+ ],
+ "analysis": "The library composed at its grain from Wikipedia and its own home page, the Wayback Machine as the census row reads it, the means of seeing a page as it was. Its lending appears without the 2023 judgment that bars it for books on sale, its takedown practice is reported from Reddit, and nothing ties its holdings to a training set, as nothing in the saved sources does.",
+ "q_kind": "the census name; NEW address.",
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": false,
+  "src": true
+ },
+ "per_note": "Brewster Kahle and the Internet Archive named; its home page, Wikipedia and the Library of Congress carded.",
+ "cite_list": [
+  {
+   "site": "Internet Archive",
+   "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+   "snip": "Internet Archive is a non-profit digital library containing millions of free texts, movies, software, music, websites, and audio items including 1 trillion web ...",
+   "rel": "third_party",
+   "note": null,
+   "n": 1,
+   "url": null
+  },
+  {
+   "site": "Wikipedia",
+   "title": "Internet Archive - Wikipedia",
+   "snip": "Mission: Universal access to all knowledge via archive.org; founded 1996 by Brewster Kahle; non-profit library (501c3) headquartered in San Francisco. Services:",
+   "rel": "third_party",
+   "note": null,
+   "n": 2,
+   "url": null
+  },
+  {
+   "site": "Facebook",
+   "title": "Internet Archive | San Francisco CA",
+   "snip": "Organization: Internet Archive (non-profit research library, San Francisco CA) Mission: Preserving web pages, books, movies, audio, and government records for p...",
+   "rel": "third_party",
+   "note": null,
+   "n": 3,
+   "url": null
+  },
+  {
+   "site": "YouTube·Internet Archive",
+   "title": "How to use the Internet Archive",
+   "snip": null,
+   "rel": "third_party",
+   "note": "video card, 16m",
+   "n": 4,
+   "url": null
+  },
+  {
+   "site": "Reddit",
+   "title": "ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit",
+   "snip": "Archival Purpose and Copyright: Archive.org primarily focuses on legitimate archival of abandoned or public domain content and respects DMCA takedown requests, ...",
+   "rel": "third_party",
+   "note": null,
+   "n": 5,
+   "url": null
+  },
+  {
+   "site": "Chrome Web Store",
+   "title": "Wayback Machine - Chrome Web Store",
+   "snip": "The Official Wayback Machine Extension - by the Internet Archive. Welcome to the Official Internet Archive Wayback Machine Browser Extension! Go back in time to...",
+   "rel": "third_party",
+   "note": null,
+   "n": 6,
+   "url": null
+  },
+  {
+   "site": "The Library of Congress (.gov)",
+   "title": "Internet archive | Library of Congress",
+   "snip": "Overview: Internet Archive founded in 1996 in San Francisco, CA, to provide permanent digital access to historical internet collections, websites, and cultural ...",
+   "rel": "third_party",
+   "note": null,
+   "n": 7,
+   "url": null
+  },
+  {
+   "site": "Facebook·Internet Archive",
+   "title": "We've been getting a lot of questions lately about how the Internet Archive ...",
+   "snip": null,
+   "rel": "third_party",
+   "note": "video card, 0:40; the pasted line under the duration link",
+   "n": 8,
+   "url": null
+  }
+ ],
+ "related_deposits": [
+  1543
+ ],
+ "notes_operator": "with the pastes (09:56 EDT): 'captures, then /nons, then single pages'. The census names as printed for him for their /non rows. His notes in the paste: at Project Gutenberg, 'wikipedia in place of popup so ai mode:'; at HathiTrust, 'no popup. ai mode:'. The Literary History of Artificial Intelligence and The Pile came as two attached files.",
+ "atomset": {
+  "new": "ext-tll-internet-archive",
+  "name": "Internet Archive",
+  "template": "site",
+  "external": true,
+  "type_basis": "A web resource: its Wikipedia account, saved 2026-11-01 (its own about page saved its title only), describes it as an American non-profit library that runs a digital library website, archive.org. A site, read on the site template.",
+  "records": [
+   {
+    "source": "Internet Archive (its own pages or a third-party account, saved 2026-11-01)",
+    "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt",
+    "origin": "census source"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Internet Archive",
+     "archive.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Internet Archive is an American non-profit library founded in 1996 by Brewster Kahle that runs a digital library website, archive.org.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Brewster Kahle",
+     "Kahle",
+     "501(c)(3)"
+    ],
+    "reference": "An American 501(c)(3) non-profit library founded by Brewster Kahle (Wikipedia, third party; the own about page saved no text).",
+    "evidence": [
+     {
+      "record_quote": "The Internet Archive is an American non-profit library founded in 1996 by Brewster Kahle that runs a digital library website, archive.org.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "The Archive is a 501(c)(3) nonprofit operating in the United States.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "Brewster Kahle founded the Internet Archive in May 1996.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "1996"
+    ],
+    "reference": "Founded May 1996 (Wikipedia).",
+    "evidence": [
+     {
+      "record_quote": "Brewster Kahle founded the Internet Archive in May 1996.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A non-profit library running a digital library website, archive.org, that gives free access to collections of digitized media (Wikipedia).",
+    "evidence": [
+     {
+      "record_quote": "The Internet Archive is an American non-profit library founded in 1996 by Brewster Kahle that runs a digital library website, archive.org.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "It provides free access to collections of digitized media including websites , software applications , music , audiovisual , and print materials.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Websites, software applications, music, audiovisual and print materials; the public web as collected by its crawlers, the Wayback Machine at one trillion webpages (October 2025); over 47,000,000 texts; books digitized by others, among them more than 300,000 from Microsoft's Live Search Books and Google-digitized books (Wikipedia).",
+    "evidence": [
+     {
+      "record_quote": "It provides free access to collections of digitized media including websites , software applications , music , audiovisual , and print materials.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "The Internet Archive allows the public to upload and download digital material to its data cluster, but the bulk of its data is collected automatically by its web crawlers , which work to preserve as much of the public web as possible.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "In October 2025, the Internet Archive announced that the Wayback Machine had archived one trillion webpages, equivalent to more than 100,000 terabytes of data.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "At that time, the total content exceeded 47,000,000 texts.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "The material digitized by others includes more than 300,000 books that were contributed to the collection, between about 2006 and 2008, by Microsoft through its Live Search Books project",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "the books are identical to the copies found on Google, except without the Google watermarks, and are available for unrestricted use and download.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To provide 'universal access to all knowledge' (Wikipedia).",
+    "evidence": [
+     {
+      "record_quote": "Its mission is to provide \"universal access to all knowledge\".",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Files stored in items with metadata (description, tags); Google-digitized books available for unrestricted use without the Google watermarks and tagged scanner:google; books lent one at a time under controlled digital lending, barred by the judgment of 11 August 2023 for titles whose electronic copies are on sale (Wikipedia).",
+    "evidence": [
+     {
+      "record_quote": "The Archive stores files inside so-called items, which are similar to directories in that they can contain multiple files, but can have additional metadata such as a description and tags which make them more searchable.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "the books are identical to the copies found on Google, except without the Google watermarks, and are available for unrestricted use and download.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "Books imported from Google have a metadata tag of scanner:google for searching purposes.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "is lent to patrons worldwide one at a time under the controlled digital lending (CDL) theory of the first-sale doctrine .",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     },
+     {
+      "record_quote": "The negotiated judgment of August 11, 2023, barred the Internet Archive from digitally lending books for which electronic copies are on sale.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/internet-archive--wikipedia.txt"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'internet-archive' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+ },
+ "target_id": "NEW:ext-tll-internet-archive",
+ "originator": {
+  "name": "Internet Archive",
+  "relation": "external",
+  "entity_type": "site",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+ },
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted."
+}

@@ -1,0 +1,255 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-dolma",
+   "name": "Dolma",
+   "template": "site",
+   "external": true,
+   "type_basis": "A dataset: its paper's arXiv page, saved 2026-11-01, describes it as a three-trillion-token English corpus for language model pretraining research (the dataset card was rate-limited, HTTP 429, and is unread). Read on the site template.",
+   "records": [
+    {
+     "source": "Dolma (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Dolma"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Luca Soldaini",
+      "Soldaini"
+     ],
+     "reference": "The paper's 36 authors, Luca Soldaini and 35 others (arXiv:2402.00159); the dataset card, under the allenai namespace, was rate-limited and is unread, so the saved sources name no institution.",
+     "evidence": [
+      {
+       "record_quote": "by Luca Soldaini and 35 other authors",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2024"
+     ],
+     "reference": "Released with the paper, arXiv v1 31 January 2024, v2 6 June 2024; accepted at ACL 2024.",
+     "evidence": [
+      {
+       "record_quote": "[v1] Wed, 31 Jan 2024 20:29:50 UTC (7,715 KB)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "[v2] Thu, 6 Jun 2024 18:46:40 UTC (6,680 KB)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "Accepted at ACL 2024; Dataset: this https URL Code: this https URL",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A three-trillion-token English corpus for language model pretraining research.",
+     "evidence": [
+      {
+       "record_quote": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A diverse mixture of web content, scientific papers, code, public-domain books, social media and encyclopedic materials.",
+     "evidence": [
+      {
+       "record_quote": "we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To facilitate scientific research on language model pretraining, where commercial models rarely detail their data and open models are often released without training data or recipes.",
+     "evidence": [
+      {
+       "record_quote": "To facilitate scientific research on language model pretraining",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Extensive documentation (design principles, construction, a summary of contents), analyses of intermediate states, and an open-sourced data curation toolkit for reproduction.",
+     "evidence": [
+      {
+       "record_quote": "We extensively document Dolma, including its design principles, details about its construction, and a summary of its contents.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "We present analyses and experimental results on intermediate states of Dolma to share what we have learned about important data curation practices.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      },
+      {
+       "record_quote": "we open-source our data curation toolkit to enable reproduction of our work as well as support further research in large-scale data curation.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'dolma' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Dolma is an open-source 3-trillion-token English corpus created by the",
+    "basis": "The corpus reached by name with its maker, size, sources, curation pipeline, licences and the model family it trains."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Dolma is an open-source 3-trillion-token English corpus created by the"
+    },
+    {
+     "atom": "operator",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "ACL 2024 Best Resource Paper Award"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "open-source 3-trillion-token English corpus"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Combines a diverse mix of web content (Common Crawl, C4, RefinedWeb), academic papers (arXiv, Semantic Scholar, peS2o), code (The Stack, StarCoder), public-domain books (Project Gutenberg)"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "to support language model pretraining and transparency."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "explore the curation pipeline using the Dolma GitHub Toolkit."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The corpus composed accurately and more finely than the saved abstract, from the dataset's own pages, with Ai2 as maker where the census row names only the paper's authors. Whether a document in the corpus keeps its author's name, the census row's open question, is not reached.",
+   "key": "dolma-dataset-aio-20261101",
+   "entry": "dolma-dataset-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-dolma"
+  }
+ ]
+}

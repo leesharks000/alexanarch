@@ -1,0 +1,292 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-literary-ai",
+   "name": "The Literary History of Artificial Intelligence",
+   "template": "site",
+   "external": true,
+   "type_basis": "An exhibition: its about page, saved 2026-11-01, describes it as a Columbia RBML exhibit exploring the long, shared history of literature and computation through the Columbia Library's holdings (the eight cases unread). Read on the site template.",
+   "records": [
+    {
+     "source": "The Literary History of Artificial Intelligence (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Literary History of Artificial Intelligence",
+      "Literary AI",
+      "Literary History of AI"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Literary History of Artificial Intelligence is a collaboration between the Columbia English Department, the Columbia University Rare Books & Manuscript Library, and Columbia University’s Digital Scholarship department.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "showcases examples of algorithmic composition, such as prose and poetry written by machines, alongside literature written with the aid of algorithmic and combinatorial devices.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Columbia",
+      "Rare Books & Manuscript Library",
+      "RBML",
+      "Columbia English Department",
+      "Columbia University Libraries"
+     ],
+     "reference": "A collaboration of the Columbia English Department, the Columbia University Rare Books & Manuscript Library and Columbia University's Digital Scholarship department; a Columbia RBML exhibit, the site copyright Columbia University Libraries.",
+     "evidence": [
+      {
+       "record_quote": "The Literary History of Artificial Intelligence is a collaboration between the Columbia English Department, the Columbia University Rare Books & Manuscript Library, and Columbia University’s Digital Scholarship department.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "A Columbia RBML Exhibit",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "© Copyright 2022, Columbia University Libraries. Contents offered with a CC-BY 4.0 International License",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2022"
+     ],
+     "reference": "The site's copyright line, 2022.",
+     "evidence": [
+      {
+       "record_quote": "© Copyright 2022, Columbia University Libraries. Contents offered with a CC-BY 4.0 International License",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An exhibition, online in eight cases, of the long shared history of literature and computation through the Columbia Library's holdings.",
+     "evidence": [
+      {
+       "record_quote": "A Columbia RBML Exhibit",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "This exhibition explores the long, shared history of literature and computation through the Columbia Library’s holdings.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Case No. 8",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Professional manuals, devices and techniques that promised to make writing easier or to automate it, on a timeline from circa 1890 to 1970: Wycliffe Hill's Plot Genies, William Wallace Cook's Plotto, the patents of Arthur Blanchard and Henrietta Rose Montague, plot generators with spinning devices, Christopher Strachey's love letter program, Margaret Masterman's machine translation, Georges Polti's thirty-six situations (1895), Harry Stephen Keeler's web-word designs.",
+     "evidence": [
+      {
+       "record_quote": "Following a timeline from circa 1890–1970, this exhibition explores professional manuals, devices, and techniques that promised to make writing easier—and even to automate it.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "such as Wycliffe Hill’s Plot Genies, and plot generators such as William Wallace Cook’s Plotto series.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Automated text generation catalyzed a wave of early 20th-century patents, from Arthur Blanchard’s “movie-writer” machine and Henrietta Rose Montague’s “name selector.”",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Some how-to manuals incorporated simple plot generators, with spinning devices or automatic number generators that would guide would-be novelists past writers’ block.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "from Christopher Strachey, who wrote a love letter program in the 1940s, to Margaret Masterman, a linguist who pioneered the use of computers to aid automatic translation.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Georges Polti’s Les trente-six situations dramatiques (1895)",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Harry Stephen Keeler’s “web-word” designs",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To track two stories of the literary history of AI, production and analysis: algorithmic composition, prose and poetry written by machines beside literature written with algorithmic and combinatorial devices, and the use of algorithms to analyze literature.",
+     "evidence": [
+      {
+       "record_quote": "This exhibition broadly tracks two broad stories related to the literary history of AI: production and analysis.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "showcases examples of algorithmic composition, such as prose and poetry written by machines, alongside literature written with the aid of algorithmic and combinatorial devices.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "The second story tracks the use of algorithms to analyze literature",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Contents offered under a CC-BY 4.0 International License; built with Minicomp/Wax.",
+     "evidence": [
+      {
+       "record_quote": "© Copyright 2022, Columbia University Libraries. Contents offered with a CC-BY 4.0 International License",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      },
+      {
+       "record_quote": "Built with Minicomp/Wax",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/literary-ai--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'literary-ai' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "generic",
+    "abn": false,
+    "span": "The literary history of artificial intelligence spans thousands of years of human storytelling, stretching from ancient mythological automata to modern algorithmic text generation.",
+    "basis": "The exhibit's title answered as the general history it names, from Homer to transformers; the exhibit appears in one bullet, and its own about page is one card of ten."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "such as the Columbia University Literary AI Exhibition"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Collaborative research projects, such as the Columbia University Literary AI Exhibition"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "explore how early writing techniques and manuals laid the groundwork for machine-generated prose and poetry."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Early 20th-Century Writing Machines and Manuals (c. 1890–1970)"
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "A topic answer to the exhibit's title, in which the exhibit is one bullet and its own timeline heads a section of general history. Its holdings, its three departments and Strachey's program, the census row's machine as writer, are not carried; three curators surface on a card.",
+   "key": "the-literary-history-of-artificial-intelligence-aio-20261101",
+   "entry": "the-literary-history-of-artificial-intelligence-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-literary-ai"
+  }
+ ]
+}

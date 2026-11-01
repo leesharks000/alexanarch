@@ -1,0 +1,307 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-common-crawl",
+   "name": "Common Crawl",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages and its Wikipedia account, saved 2026-11-01, describe it as a free, open repository of web crawl data that can be used by anyone. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Common Crawl (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Common Crawl (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Common Crawl (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Common Crawl"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Common Crawl maintains a free, open repository of web crawl data that can be used by anyone.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Common Crawl Foundation",
+      "Gil Elbaz",
+      "Rich Skrenta"
+     ],
+     "reference": "The Common Crawl Foundation, a 501(c)(3) non-profit; Wikipedia (third party) names Gil Elbaz as founder and Rich Skrenta as executive director.",
+     "evidence": [
+      {
+       "record_quote": "Common Crawl is a 501(c)(3) non–profit founded in 2007.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      },
+      {
+       "record_quote": "Common Crawl was founded by Gil Elbaz .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--wikipedia.txt"
+      },
+      {
+       "record_quote": "Rich Skrenta is the executive director.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2007"
+     ],
+     "reference": "Founded 2007; a free and open corpus since 2007.",
+     "evidence": [
+      {
+       "record_quote": "Common Crawl is a 501(c)(3) non–profit founded in 2007.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      },
+      {
+       "record_quote": "Free and open corpus since 2007.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A free, open repository of web crawl data that can be used by anyone.",
+     "evidence": [
+      {
+       "record_quote": "Common Crawl maintains a free, open repository of web crawl data that can be used by anyone.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Over 300 billion pages spanning 15 years, 3 to 5 billion new pages each month; raw web page data, metadata extracts and text extracts; petabytes, regularly collected since 2008.",
+     "evidence": [
+      {
+       "record_quote": "Over 300 billion pages spanning 15 years.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      },
+      {
+       "record_quote": "3–5 billion new pages added each month.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      },
+      {
+       "record_quote": "The corpus contains raw web page data, metadata extracts, and text extracts.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      },
+      {
+       "record_quote": "The Common Crawl corpus contains petabytes of data, regularly collected since 2008.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To make wholesale extraction, transformation and analysis of open web data accessible to researchers.",
+     "evidence": [
+      {
+       "record_quote": "We make wholesale extraction, transformation, and analysis of open web data accessible to researchers.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Free access to the corpus hosted by Amazon, analysis in place or download whole or in part; storage on AWS Public Data Sets and academic cloud platforms; pages searchable by URL in the URL Index.",
+     "evidence": [
+      {
+       "record_quote": "Access to the corpus hosted by Amazon is free.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      },
+      {
+       "record_quote": "You may use Amazon’s cloud platform to run analysis jobs directly against it or you can download it, whole or in part.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      },
+      {
+       "record_quote": "Common Crawl data is stored on Amazon Web Services’ Public Data Sets and on multiple academic cloud platforms across the world.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      },
+      {
+       "record_quote": "You can search for pages in our corpus using the Common Crawl URL Index.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Blekko",
+      "Wayback Machine"
+     ],
+     "reference": "Started by crawling a list of URLs donated by the search engine Blekko, and designed for more and fresher data than the Internet Archive's Wayback Machine (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "which started by crawling a list of URLs donated by the search engine Blekko .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--wikipedia.txt"
+      },
+      {
+       "record_quote": "Common Crawl was designed to have more and fresher data that was more efficient to analyze and utilize than the Wayback Machine created by the Internet Archive .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "CC-MAIN"
+     ],
+     "reference": "Each crawl named by an identifier, the latest listed CC-MAIN-2026-43.",
+     "evidence": [
+      {
+       "record_quote": "CC-MAIN-2026-43",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/common-crawl--overview.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'common-crawl' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "Common Crawl is a 501(c)(3) non-profit organization founded in 2007 by Gil Elbaz that collects, preserves, and freely shares an open archive of internet data.",
+    "basis": "The foundation reached by name with its founder, scale, hosting, formats, uses and the criticism of its crawler."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Common Crawl is a 501(c)(3) non-profit organization founded in 2007 by Gil Elbaz"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "founded in 2007 by Gil Elbaz"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "non-profit organization founded in 2007"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "that collects, preserves, and freely shares an open archive of internet data."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Adds roughly 3 to 5 billion new web pages each month."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Mission: To democratize access to web information for researchers, educators, and developers."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Hosting: Stored for free on Amazon Web Services (AWS) via its Open Data Sponsorship Program"
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The foundation composed accurately at its grain from its own pages, Wikipedia and LinkedIn. The Atlantic's finding is reduced to publishers' concerns about how the crawler fetches pages, and the misleading index results, the census row's bound on the index as evidence of inclusion, are not carried.",
+   "key": "common-crawl-aio-20261101",
+   "entry": "common-crawl-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-common-crawl"
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+ "n": 1726,
+ "slug": "dolma-dataset-aio-20261101",
+ "paste": "paste-dolma.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-11-01 09:56 EDT",
+ "s": "Machine Reception",
+ "qs": [
+  "Dolma dataset"
+ ],
+ "turns": [
+  [
+   2,
+   38
+  ]
+ ],
+ "entity_type": "site",
+ "group": "Xtll-dolma",
+ "obs": {
+  "scored_object": "the Overview expanded, with its source cards",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "Dolma is an open-source 3-trillion-token English corpus created by the",
+   "basis": "The corpus reached by name with its maker, size, sources, curation pipeline, licences and the model family it trains."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "Dolma is an open-source 3-trillion-token English corpus created by the"
+   },
+   {
+    "atom": "operator",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "date",
+    "present": true,
+    "span": "ACL 2024 Best Resource Paper Award"
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "open-source 3-trillion-token English corpus"
+   },
+   {
+    "atom": "corpus",
+    "present": true,
+    "span": "Combines a diverse mix of web content (Common Crawl, C4, RefinedWeb), academic papers (arXiv, Semantic Scholar, peS2o), code (The Stack, StarCoder), public-domain books (Project Gutenberg)"
+   },
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "to support language model pretraining and transparency."
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "explore the curation pipeline using the Dolma GitHub Toolkit."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "The corpus composed accurately and more finely than the saved abstract, from the dataset's own pages, with Ai2 as maker where the census row names only the paper's authors. Whether a document in the corpus keeps its author's name, the census row's open question, is not reached."
+ },
+ "mt": "'DOLMA DATASET' ON THE OVERVIEW — THE CORPUS AT ITS GRAIN AND PAST THE SAVED ABSTRACT; AI2 NAMED WHERE THE CENSUS NAMES NO INSTITUTION; WHETHER A DOCUMENT KEEPS ITS AUTHOR NOT CARRIED",
+ "d": "THE CORPUS, SIGNED OUT, 2026-11-01: 'Dolma is an open-source 3-trillion-token English corpus created by the Allen Institute for Artificial Intelligence (Ai2) to support language model pretraining and transparency.' Access (Hugging Face, the GitHub toolkit); key features: scale ('version 1.7 utilizes about 1.715 trillion actual training tokens across ~5.2 billion documents totaling over 5,300 GB'), data sources by kind with their named sets, the curation pipeline ('Bloom filter deduplication (by URL, paragraph, and document), PII/toxicity masking'), licensing ('ODC-BY and Ai2's ImpACT license'), primary use (OLMo); two follow-up questions. Six cards: Hugging Face, the GitHub Pages documentation, Ai2, arXiv, Deep (Learning) Focus, ACL Anthology.",
+ "reading": "The innocent reading first. Asked for the dataset, the Overview says what it is, who made it and why, where to get it, what it holds, how it was cleaned, under what licences it is released and which models it trains, from the dataset's own pages and its paper.",
+ "findings": [
+  "THE CORPUS AT ITS GRAIN. 'Dolma is an open-source 3-trillion-token English corpus' and 'web content (Common Crawl, C4, RefinedWeb), academic papers (arXiv, Semantic Scholar, peS2o), code (The Stack, StarCoder), public-domain books (Project Gutenberg), encyclopedic material (Wikipedia, Wikibooks), and social media discussions (Reddit, StackExchange)'. The saved abstract: 'a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.' The abstract names the six kinds; the composition names a set for each, Project Gutenberg the one source of the books, from the Ai2 card ('Sources: CommonCrawl, C4, peS2o, The Stack, Project Gutenb...').",
+  "THE MAKER THE CENSUS DOES NOT HAVE. 'created by the Allen Institute for Artificial Intelligence (Ai2)'; three cards carry the same ('Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2'; 'created as training data for OLMo by AI2'). The census row's operator is 'the paper's 36 authors, Luca Soldaini and 35 others', its saved arXiv page reading 'by Luca Soldaini and 35 other authors', and it states that 'the saved sources name no institution', the Hugging Face card having returned HTTP 429 ('We had to rate limit your IP'). The composition names the institution and no author.",
+  "A LATER VERSION AND THE LICENCES. 'version 1.7 utilizes about 1.715 trillion actual training tokens across ~5.2 billion documents totaling over 5,300 GB' and 'Released under permissive research licenses (such as ODC-BY and Ai2's ImpACT license)'. The census row's lifecycle: 'later versions or the dataset's current state are unread'. Version 1.7, the document count and the licences are on no saved source; the Ai2 card gives '5,245M documents, 5,334 GB'. The date reaches the composition only on the ACL card ('ACL 2024 Best Resource Paper Award'), agreeing with the abstract's 'Accepted at ACL 2024'; the award is on no saved source.",
+  "THE PURPOSE NARROWED TO ONE MODEL FAMILY. The abstract: 'To facilitate scientific research on language model pretraining', against a field where 'commercial models rarely detail their data'. The composition: 'to support language model pretraining and transparency' and 'Designed and used specifically to pre-train the OLMo open-source language model family.' Research drops from the purpose; the openness the abstract argues for stands as 'transparency', and the toolkit as 'the Dolma GitHub Toolkit', agreeing with 'we open-source our data curation toolkit to enable reproduction of our work'.",
+  "THE AUTHOR OF A DOCUMENT NOT CARRIED. The census row: 'the saved abstract does not say whether a document in Dolma keeps its author's name, source or attribution metadata', and its reading asks whether a work is carried with 'the metadata that lets it be found and attributed' (#186). The composition's operations on a document are 'language filtering', 'Bloom filter deduplication (by URL, paragraph, and document)' and 'PII/toxicity masking'; nothing in it says what of a book's author or source survives into the corpus, and its follow-up offers 'specific subsets or data processing scripts'."
+ ],
+ "analysis": "The corpus composed accurately and more finely than the saved abstract, from the dataset's own pages, with Ai2 as maker where the census row names only the paper's authors. Whether a document in the corpus keeps its author's name, the census row's open question, is not reached.",
+ "q_kind": "the census name; NEW address.",
+ "per_v": {
+  "author": false,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Ai2 named and no author; arXiv 2402.00159 on a card; the dataset card, documentation, Ai2 page and paper carded.",
+ "cite_list": [
+  {
+   "site": "Hugging Face",
+   "title": "allenai/dolma · Datasets at Hugging Face",
+   "snip": "Overview: AllenAI Dolma is an open corpus dataset containing 3 trillion tokens (version 1.7 utilizing 1.715 trillion actual training tokens) designed for langua...",
+   "rel": "third_party",
+   "note": null,
+   "n": 1,
+   "url": null
+  },
+  {
+   "site": "GitHub Pages documentation",
+   "title": "dolma | Data and tools for generating and inspecting OLMo pre-training data.",
+   "snip": "Dataset: Open 3-trillion-token corpus (web content, academic publications, code, books, encyclopedic materials) created as training data for OLMo by AI2; availa...",
+   "rel": "third_party",
+   "note": null,
+   "n": 2,
+   "url": null
+  },
+  {
+   "site": "Allen Institute for Artificial Intelligence",
+   "title": "Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2",
+   "snip": "Dataset: Dolma (3 trillion tokens, 5,245M documents, 5,334 GB) developed by Ai2 for OLMo pretraining. Sources: CommonCrawl, C4, peS2o, The Stack, Project Gutenb...",
+   "rel": "third_party",
+   "note": null,
+   "n": 3,
+   "url": null
+  },
+  {
+   "site": "arXiv",
+   "title": "[2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+   "snip": "Overview: Dolma is an open-source, three-trillion-token English corpus designed for language model pretraining research, addressing the scarcity of publicly ava...",
+   "rel": "third_party",
+   "note": null,
+   "n": 4,
+   "url": null
+  },
+  {
+   "site": "Deep (Learning) Focus·Deep (Learning) Focus",
+   "title": "Dolma, OLMo, and the Future of Open-Source LLMs",
+   "snip": "Overview: Dolma (3T-token open pretraining corpus) and OLMo (fully open-source LLM suite) demystify language model development by openly releasing training data...",
+   "rel": "third_party",
+   "note": null,
+   "n": 5,
+   "url": null
+  },
+  {
+   "site": "ACL Anthology",
+   "title": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology",
+   "snip": "Resource: Dolma (ACL 2024 Best Resource Paper Award). Corpus: Open English dataset containing three trillion tokens for language model pretraining research. Con...",
+   "rel": "third_party",
+   "note": null,
+   "n": 6,
+   "url": null
+  }
+ ],
+ "related_deposits": [
+  1543
+ ],
+ "notes_operator": "with the pastes (09:56 EDT): 'captures, then /nons, then single pages'. The census names as printed for him for their /non rows. His notes in the paste: at Project Gutenberg, 'wikipedia in place of popup so ai mode:'; at HathiTrust, 'no popup. ai mode:'. The Literary History of Artificial Intelligence and The Pile came as two attached files.",
+ "atomset": {
+  "new": "ext-tll-dolma",
+  "name": "Dolma",
+  "template": "site",
+  "external": true,
+  "type_basis": "A dataset: its paper's arXiv page, saved 2026-11-01, describes it as a three-trillion-token English corpus for language model pretraining research (the dataset card was rate-limited, HTTP 429, and is unread). Read on the site template.",
+  "records": [
+   {
+    "source": "Dolma (its own pages or a third-party account, saved 2026-11-01)",
+    "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt",
+    "origin": "census source"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Dolma"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Luca Soldaini",
+     "Soldaini"
+    ],
+    "reference": "The paper's 36 authors, Luca Soldaini and 35 others (arXiv:2402.00159); the dataset card, under the allenai namespace, was rate-limited and is unread, so the saved sources name no institution.",
+    "evidence": [
+     {
+      "record_quote": "by Luca Soldaini and 35 other authors",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2024"
+    ],
+    "reference": "Released with the paper, arXiv v1 31 January 2024, v2 6 June 2024; accepted at ACL 2024.",
+    "evidence": [
+     {
+      "record_quote": "[v1] Wed, 31 Jan 2024 20:29:50 UTC (7,715 KB)",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "[v2] Thu, 6 Jun 2024 18:46:40 UTC (6,680 KB)",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "Accepted at ACL 2024; Dataset: this https URL Code: this https URL",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A three-trillion-token English corpus for language model pretraining research.",
+    "evidence": [
+     {
+      "record_quote": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A diverse mixture of web content, scientific papers, code, public-domain books, social media and encyclopedic materials.",
+    "evidence": [
+     {
+      "record_quote": "we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To facilitate scientific research on language model pretraining, where commercial models rarely detail their data and open models are often released without training data or recipes.",
+    "evidence": [
+     {
+      "record_quote": "To facilitate scientific research on language model pretraining",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Extensive documentation (design principles, construction, a summary of contents), analyses of intermediate states, and an open-sourced data curation toolkit for reproduction.",
+    "evidence": [
+     {
+      "record_quote": "We extensively document Dolma, including its design principles, details about its construction, and a summary of its contents.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "We present analyses and experimental results on intermediate states of Dolma to share what we have learned about important data curation practices.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     },
+     {
+      "record_quote": "we open-source our data curation toolkit to enable reproduction of our work as well as support further research in large-scale data curation.",
+      "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/dolma--paper.txt"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": []
+   }
+  ],
+  "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'dolma' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+ },
+ "target_id": "NEW:ext-tll-dolma",
+ "originator": {
+  "name": "Dolma",
+  "relation": "external",
+  "entity_type": "site",
+  "spxi_treatment": "partial",
+  "basis": "Not the archive's: an external resource, entered in the traininglayerliterature.org layer census on 2026-11-01 (data/layer-census, its own pages saved with hashes). Recorded 2026-11-01."
+ },
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted."
+}

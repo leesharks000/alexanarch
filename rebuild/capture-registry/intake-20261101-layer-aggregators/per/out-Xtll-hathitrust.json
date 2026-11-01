@@ -1,0 +1,274 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-tll-hathitrust",
+   "name": "HathiTrust Digital Library",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its Wikipedia account, saved 2026-11-01 (its own about page refused the fetch (HTTP 403)), describes it as a large-scale collaborative repository of digital content from research libraries, administered by the University of Michigan. A site, read on the site template.",
+   "records": [
+    {
+     "source": "HathiTrust Digital Library (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "HathiTrust"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "HathiTrust Digital Library is a large-scale collaborative repository of digital content from research libraries , administered by the University of Michigan .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "University of Michigan",
+      "Mike Furlough"
+     ],
+     "reference": "A university consortium of more than 219 research libraries (2024) under shared governance, administered by the University of Michigan; executive director Mike Furlough (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "HathiTrust Digital Library is a large-scale collaborative repository of digital content from research libraries , administered by the University of Michigan .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "As of 2024, members include more than 219 research libraries",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "across the United States, Canada, and Europe, and is based on a shared governance structure.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "The executive director of HathiTrust is Mike Furlough,",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2008"
+     ],
+     "reference": "Founded October 2008 (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "HathiTrust was founded in October 2008 by the twelve universities of the Committee on Institutional Cooperation and the eleven libraries of the University of California .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A large-scale collaborative repository of digital content from research libraries, restricting access where a work's copyright or permission status cannot be determined, and for users outside the United States to works published outside it from 1896 (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "HathiTrust Digital Library is a large-scale collaborative repository of digital content from research libraries , administered by the University of Michigan .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "if we cannot determine the copyright or permission status of a work, we restrict access to that work until we can establish its status.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "access is also restricted for users outside the United States to works published outside the United States after and including 1896.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "More than 18 million volumes, 6.7 million in the US public domain (September 2024), digitized via Google Books and the Internet Archive and locally by libraries (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "In September 2024, HathiTrust comprised more than 18 million volumes, including 6.7 million in the public domain in the United States.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "Its holdings include content digitized via Google Books and the Internet Archive digitization initiatives, as well as content digitized locally by libraries.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Full-text search across the whole repository; the Shared Print Program's retention of almost 18 million volumes for 25 years; lawful access for member libraries' users to copyright digital copies in place of the physical books; its use of books scanned by Google held fair use, search and accessibility for the visually impaired grounds for finding it transformative (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "HathiTrust provides a number of discovery and access services, notably, full-text search across the entire repository.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "The HathiTrust Shared Print Program is a distributed collective collection whose participating libraries have committed to retaining almost 18 million monograph volumes for 25 years",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "for users of HathiTrust member libraries to obtain lawful access to copyright digital materials in place of the corresponding physical books held by the same library.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "A federal court ruled against the Authors Guild in October 2012, finding that HathiTrust's use of books scanned by Google was fair use under US law.",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      },
+      {
+       "record_quote": "which found that providing search and accessibility for the visually impaired were grounds to consider the service transformative and fair use",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Committee on Institutional Cooperation",
+      "University of California"
+     ],
+     "reference": "Founded by the twelve universities of the Committee on Institutional Cooperation and the eleven libraries of the University of California (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "HathiTrust was founded in October 2008 by the twelve universities of the Committee on Institutional Cooperation and the eleven libraries of the University of California .",
+       "locus": "rebuild/capture-registry/intake-20261101-layer-aggregators/sources/hathitrust--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the traininglayerliterature.org layer census row 'hathitrust' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the AI Mode answer, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The HathiTrust Digital Library is a massive, large-scale collaborative digital repository containing more than 18 million digitized volumes.",
+    "basis": "The library reached by name with its administrator, year, size, sources, access tiers and accessibility service."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The HathiTrust Digital Library is a massive, large-scale collaborative digital repository"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "administered by the University of Michigan"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Founded in 2008"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "it functions as a partnership between major global academic and research institutions to preserve the cultural record"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Content is compiled from major digitization efforts, including the Google Books Project, the Internet Archive, Microsoft, and member institutions' local scanning projects."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Users can search the entire corpus to see how many times a word or phrase appears and find corresponding page numbers."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The repository composed at its grain, with its access tiers, from its own site and the Michigan library guide. Its research center is offered as a working service a month after its own home page records the end of its services, and the fair-use ruling the census row reads the search by is absent.",
+   "key": "hathitrust-digital-library-aimode-20261101",
+   "entry": "hathitrust-digital-library-aimode-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-tll-hathitrust"
+  }
+ ]
+}
