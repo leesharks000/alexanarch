@@ -56,17 +56,18 @@
   "src": true,
   "tombstone_pointer": false,
   "after_challenge": null,
-  "notes": "Faithful on host and scale. The composition joins the database's stated range to an older case in one sentence, and leaves out the database's own statement of its unit, limits and license."
+  "notes": "Faithful on host and scale. The composition gives as a tracked movement what the database's unit excludes, and leaves out the database's own statement of its unit, limits and license."
  },
  "mt": "'GLOBAL NONVIOLENT ACTION DATABASE' ON THE OVERVIEW — THE DATABASE AT ITS GRAIN; '400 YEARS' AND 'ANCIENT EGYPT' IN ONE SENTENCE; ITS LIMITS AND LICENSE NOT CARRIED",
  "d": "THE DATABASE, SIGNED OUT, 2026-10-31: 'The Global Nonviolent Action Database is a free online project hosted by Swarthmore College that catalogues more than 1,200 nonviolent campaign case studies from over 100 countries.' Scope and timeline; clusters; waves; search; origin (2011). Six cards: the database (two), CNCR, Discuss Data, Policy Commons, Swarthmore.",
  "reading": "The innocent reading first. Asked for the database, the Overview gives its host, its scale, its clusters and how to search it.",
  "findings": [
-  "THE RANGE IN ONE SENTENCE. 'Features historical and modern campaigns spanning over 400 years, with some records dating as far back as ancient Egypt and the 12th century BCE.' The database's home page gives '400+ years covered'.",
+  "THE RANGE IN ONE SENTENCE. 'Features historical and modern campaigns spanning over 400 years, with some records dating as far back as ancient Egypt and the 12th century BCE.' Both figures are on cards: '400+ years covered' (the home page) and the 12th-century-BCE case (cards 3 and 4); the sentence joins two sourced claims.",
+  "A MOVEMENT WHERE THE UNIT IS THE CAMPAIGN. 'Tracks specific historical movements like the U.S. Civil Rights Movement'. The CNCR card's rule excludes broad movements ('excluding broad moveme...'), and its page counts only campaigns that have reached completion; the completion rule is not carried.",
   "THE UNIT KEPT ON A CARD. The database's rule 'Campaigns, Not Movements' reaches the composition only through a card snippet ('excluding broad moveme...').",
   "THE LIMITS NOT CARRIED. The database links a page of its own 'Limitations of the Database' and a Creative Commons license (BY-NC-ND 4.0); the composition carries neither."
  ],
- "analysis": "Faithful on host and scale. The composition joins the database's stated range to an older case in one sentence, and leaves out the database's own statement of its unit, limits and license.",
+ "analysis": "Faithful on host and scale. The composition gives as a tracked movement what the database's unit excludes, and leaves out the database's own statement of its unit, limits and license.",
  "q_kind": "the census name; NEW address.",
  "per_v": {
   "author": false,
@@ -135,181 +136,7 @@
   1725
  ],
  "notes_operator": "with the pastes (18:44 EDT), the census names as printed for him at 18:21 EDT ('if you could present the aggregators in one line copyable blocks without their urls'; 'ill search those up so we can write their /nons'). His notes, in the paste: 'no aio popup - ai mode'; 'this one linked to wikipedia instead of popup, so ai mode'; 'linked to wikipedia in place of popup, so ai mode'; 'labor vector pulled up totally unrelated, so laborvector'.",
- "atomset": {
-  "new": "ext-gnad",
-  "name": "Global Nonviolent Action Database (Swarthmore College)",
-  "template": "site",
-  "external": true,
-  "type_basis": "A web resource: its own pages, saved 2026-10-31, describe it as a database of nonviolent action campaigns. A site, read on the site template.",
-  "records": [
-   {
-    "source": "Global Nonviolent Action Database (its own pages, saved 2026-10-31)",
-    "path": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt",
-    "origin": "primary"
-   }
-  ],
-  "atoms": [
-   {
-    "atom": "name",
-    "dim": "M",
-    "weight": 3,
-    "kind": "token",
-    "applicability": "required",
-    "tokens": [
-     "Global Nonviolent Action Database",
-     "GNAD"
-    ],
-    "reference": null,
-    "evidence": [
-     {
-      "record_quote": "The Global Nonviolent Action Database is a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     }
-    ]
-   },
-   {
-    "atom": "operator",
-    "dim": "M",
-    "weight": 3,
-    "kind": "role",
-    "applicability": "required",
-    "tokens": [
-     "Swarthmore College",
-     "Swarthmore"
-    ],
-    "reference": "Swarthmore College, with its Peace and Conflict Studies Program, the Peace Collection and the Lang Center.",
-    "evidence": [
-     {
-      "record_quote": "The Global Nonviolent Action Database is a project of Swarthmore College, including the Peace and Conflict Studies Program, the Peace Collection, and the Lang Center for Civic and Social Responsibility.",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     }
-    ]
-   },
-   {
-    "atom": "date",
-    "dim": "M",
-    "weight": 1,
-    "kind": "token",
-    "applicability": "unknown",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   },
-   {
-    "atom": "claim boundary",
-    "dim": "M",
-    "weight": 2,
-    "kind": "reading",
-    "applicability": "required",
-    "tokens": [],
-    "reference": "Campaigns of nonviolent action, not movements: 1,200+ cases, 100+ countries, 400+ years.",
-    "evidence": [
-     {
-      "record_quote": "Campaigns, Not Movements",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     },
-     {
-      "record_quote": "1,200+ cases",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     },
-     {
-      "record_quote": "400+ years covered",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     }
-    ]
-   },
-   {
-    "atom": "presents",
-    "dim": "C",
-    "weight": 2,
-    "kind": "token",
-    "applicability": "inapplicable",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   },
-   {
-    "atom": "corpus",
-    "dim": "C",
-    "weight": 2,
-    "kind": "reading",
-    "applicability": "required",
-    "tokens": [],
-    "reference": "1,200+ case studies from 100+ countries.",
-    "evidence": [
-     {
-      "record_quote": "1,200+ cases",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     },
-     {
-      "record_quote": "100+ countries",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     }
-    ]
-   },
-   {
-    "atom": "purpose",
-    "dim": "D",
-    "weight": 3,
-    "kind": "reading",
-    "applicability": "unknown",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   },
-   {
-    "atom": "commitments",
-    "dim": "D",
-    "weight": 2,
-    "kind": "reading",
-    "applicability": "required",
-    "tokens": [],
-    "reference": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 unless otherwise noted; a page of the database's limitations.",
-    "evidence": [
-     {
-      "record_quote": "The Global Nonviolent Action Database is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license unless otherwise noted.",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     },
-     {
-      "record_quote": "Limitations of the Database",
-      "locus": "rebuild/capture-registry/intake-20261031-left-aggregators/sources/gnad--home.txt"
-     }
-    ]
-   },
-   {
-    "atom": "lineage",
-    "dim": "D",
-    "weight": 2,
-    "kind": "role",
-    "applicability": "unknown",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   },
-   {
-    "atom": "identifier",
-    "dim": "D",
-    "weight": 1,
-    "kind": "role",
-    "applicability": "unknown",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 1,
-    "kind": "role",
-    "applicability": "inapplicable",
-    "tokens": [],
-    "reference": null,
-    "evidence": []
-   }
-  ],
-  "notes": "Built 2026-10-31 from the maryleelabor census row 'gnad' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
- },
- "target_id": "NEW:ext-gnad",
+ "target_id": "TGT-ext-gnad",
  "originator": {
   "name": "Global Nonviolent Action Database",
   "relation": "external",
